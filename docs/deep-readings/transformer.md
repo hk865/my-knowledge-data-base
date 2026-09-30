@@ -8,7 +8,7 @@ Transformer解决的是序列变换中的计算组织问题：用所有位置之
 
 ![Transformer原创机制图](../../assets/baselines/architecture/transformer-mechanism.svg)
 
-图解：蓝色区域是原始架构，绿色表示跨序列记忆或推理过程，黄色展开共享注意力算子。原文采用post-LN；现代pre-LN、RoPE和KV工程优化没有被混写成2017年的贡献。可用[PNG版](../../assets/baselines/architecture/transformer-mechanism.svg)检查细节。
+图解：蓝色区域是原始架构，绿色表示跨序列记忆或推理过程，黄色展开共享注意力算子。原文采用post-LN；现代pre-LN、RoPE和KV工程优化没有被混写成2017年的贡献。可用[SVG版](../../assets/baselines/architecture/transformer-mechanism.svg)检查细节。
 
 ## 1 问题和历史位置
 
@@ -89,6 +89,6 @@ Adam使用β₁=0.9、β₂=0.98、ε=10⁻⁹；学习率先4000步warmup，再
 
 ## 图解文件与证据索引
 
-[PNG高清图](../../assets/baselines/architecture/transformer-mechanism.svg) · [SVG可编辑图](../../assets/baselines/architecture/transformer-mechanism.svg) · [结构化证据](evidence/transformer.json)
+[SVG高清图](../../assets/baselines/architecture/transformer-mechanism.svg) · [SVG可编辑图](../../assets/baselines/architecture/transformer-mechanism.svg) · [结构化证据](evidence/transformer.json)
 
 来源类型：复用原目录 p113，保留原来源，不重复计数。

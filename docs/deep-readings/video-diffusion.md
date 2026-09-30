@@ -81,6 +81,6 @@ BAIR机器人推动数据在本文评测中给首帧、预测后15帧：ancestra
 
 ## 图解文件与证据索引
 
-[PNG高清图](../../assets/baselines/multimodal/video-diffusion.svg) · [SVG可编辑图](../../assets/baselines/multimodal/video-diffusion.svg) · [结构化证据](evidence/video-diffusion.json)
+[SVG高清图](../../assets/baselines/multimodal/video-diffusion.svg) · [SVG可编辑图](../../assets/baselines/multimodal/video-diffusion.svg) · [结构化证据](evidence/video-diffusion.json)
 
 来源类型：本次为细分方向新选择的 baseline，不是历史聊天提取。

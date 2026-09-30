@@ -8,7 +8,7 @@ Mamba的核心不是“把attention算快一点”，而是重新选择如何保
 
 ![Mamba原创机制图](../../assets/baselines/architecture/mamba-mechanism.svg)
 
-图解：先看输入生成的Δ、B、C如何进入状态更新，再看训练时scan与生成时逐步递推的区别。图中省略直接通路、残差及归一化等实现细节，可查看[PNG版](../../assets/baselines/architecture/mamba-mechanism.svg)。
+图解：先看输入生成的Δ、B、C如何进入状态更新，再看训练时scan与生成时逐步递推的区别。图中省略直接通路、残差及归一化等实现细节，可查看[SVG版](../../assets/baselines/architecture/mamba-mechanism.svg)。
 
 ## 1 先把经典SSM读懂
 
@@ -97,6 +97,6 @@ Mamba块把输入投影到扩展维度，一支经短因果卷积、SiLU和selec
 
 ## 图解文件与证据索引
 
-[PNG高清图](../../assets/baselines/architecture/mamba-mechanism.svg) · [SVG可编辑图](../../assets/baselines/architecture/mamba-mechanism.svg) · [结构化证据](evidence/mamba.json)
+[SVG高清图](../../assets/baselines/architecture/mamba-mechanism.svg) · [SVG可编辑图](../../assets/baselines/architecture/mamba-mechanism.svg) · [结构化证据](evidence/mamba.json)
 
 来源类型：复用原目录 p009，保留原来源，不重复计数。

@@ -8,7 +8,7 @@ V2把两项不同的资源问题放进同一个Transformer：MLA减少逐token�
 
 ![DeepSeek-V2原创机制图](../../assets/baselines/architecture/deepseek-v2-mechanism.svg)
 
-图解：上半图是MLA每个历史位置存什么，下半图是MoE每个当前位置算哪些FFN。不能把上面的缓存节省归功于下面的路由，或把下面的稀疏容量归功于低秩attention。[PNG版](../../assets/baselines/architecture/deepseek-v2-mechanism.svg)
+图解：上半图是MLA每个历史位置存什么，下半图是MoE每个当前位置算哪些FFN。不能把上面的缓存节省归功于下面的路由，或把下面的稀疏容量归功于低秩attention。[SVG版](../../assets/baselines/architecture/deepseek-v2-mechanism.svg)
 
 ## 1 KV缓存到底为什么贵
 
@@ -106,6 +106,6 @@ SFT用150万实例，其中120万helpfulness、30万safety，训练2轮。随后
 
 ## 图解文件与证据索引
 
-[PNG高清图](../../assets/baselines/architecture/deepseek-v2-mechanism.svg) · [SVG可编辑图](../../assets/baselines/architecture/deepseek-v2-mechanism.svg) · [结构化证据](evidence/deepseek-v2.json)
+[SVG高清图](../../assets/baselines/architecture/deepseek-v2-mechanism.svg) · [SVG可编辑图](../../assets/baselines/architecture/deepseek-v2-mechanism.svg) · [结构化证据](evidence/deepseek-v2.json)
 
 来源类型：复用原目录 p014，保留原来源，不重复计数。

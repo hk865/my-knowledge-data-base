@@ -75,6 +75,6 @@ ReAct 的最小学习价值是“语言上下文维护＋有限动作接口＋�
 
 ## 图解文件与证据索引
 
-[PNG高清图](../../assets/baselines/cross/react.svg) · [SVG可编辑图](../../assets/baselines/cross/react.svg) · [结构化证据](evidence/react.json)
+[SVG高清图](../../assets/baselines/cross/react.svg) · [SVG可编辑图](../../assets/baselines/cross/react.svg) · [结构化证据](evidence/react.json)
 
 来源类型：复用原目录 p040，保留原来源，不重复计数。

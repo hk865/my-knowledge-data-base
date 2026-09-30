@@ -75,6 +75,6 @@ ScienceQA用12,726/4,241/4,241个训练/验证/测试样本。LLaVA单独准确�
 
 ## 图解文件与证据索引
 
-[PNG高清图](../../assets/baselines/multimodal/llava.svg) · [SVG可编辑图](../../assets/baselines/multimodal/llava.svg) · [结构化证据](evidence/llava.json)
+[SVG高清图](../../assets/baselines/multimodal/llava.svg) · [SVG可编辑图](../../assets/baselines/multimodal/llava.svg) · [结构化证据](evidence/llava.json)
 
 来源类型：本次为细分方向新选择的 baseline，不是历史聊天提取。

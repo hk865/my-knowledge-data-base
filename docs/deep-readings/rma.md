@@ -73,6 +73,6 @@ RMA 把 PPO 基础策略、特权学习、在线历史估计及低层 PD 接成�
 
 ## 图解文件与证据索引
 
-[PNG高清图](../../assets/baselines/cross/rma.svg) · [SVG可编辑图](../../assets/baselines/cross/rma.svg) · [结构化证据](evidence/rma.json)
+[SVG高清图](../../assets/baselines/cross/rma.svg) · [SVG可编辑图](../../assets/baselines/cross/rma.svg) · [结构化证据](evidence/rma.json)
 
 来源类型：复用原目录 p116，保留原来源，不重复计数。

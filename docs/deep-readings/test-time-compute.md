@@ -8,7 +8,7 @@
 
 ![测试时计算原创机制图](../../assets/baselines/architecture/test-time-compute-mechanism.svg)
 
-图解：两条路线分别研究。左侧改变怎样筛选和扩展候选，右侧改变怎样产生下一个候选；难度估计本身有成本，不能从图上删掉这项开销。[PNG版](../../assets/baselines/architecture/test-time-compute-mechanism.svg)
+图解：两条路线分别研究。左侧改变怎样筛选和扩展候选，右侧改变怎样产生下一个候选；难度估计本身有成本，不能从图上删掉这项开销。[SVG版](../../assets/baselines/architecture/test-time-compute-mechanism.svg)
 
 ## 1 两个旋钮与一个必要前提
 
@@ -97,6 +97,6 @@ F=M+3\frac{D_{pre}}{D_{inf}}(M-1).
 
 ## 图解文件与证据索引
 
-[PNG高清图](../../assets/baselines/architecture/test-time-compute-mechanism.svg) · [SVG可编辑图](../../assets/baselines/architecture/test-time-compute-mechanism.svg) · [结构化证据](evidence/test-time-compute.json)
+[SVG高清图](../../assets/baselines/architecture/test-time-compute-mechanism.svg) · [SVG可编辑图](../../assets/baselines/architecture/test-time-compute-mechanism.svg) · [结构化证据](evidence/test-time-compute.json)
 
 来源类型：复用原目录 p001，保留原来源，不重复计数。

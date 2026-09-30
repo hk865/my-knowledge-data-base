@@ -69,6 +69,6 @@ ESKF或SLAM回答“我在哪、估计有多可靠”，RRT*回答“在给定�
 
 ## 图解文件与证据索引
 
-[PNG高清图](../../assets/baselines/robotics/rrt-star.svg) · [SVG可编辑图](../../assets/baselines/robotics/rrt-star.svg) · [结构化证据](evidence/rrt-star.json)
+[SVG高清图](../../assets/baselines/robotics/rrt-star.svg) · [SVG可编辑图](../../assets/baselines/robotics/rrt-star.svg) · [结构化证据](evidence/rrt-star.json)
 
 来源类型：本次为细分方向新选择的 baseline，不是历史聊天提取。

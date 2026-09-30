@@ -71,6 +71,6 @@ F 才是附带的裁判训练探索：Arena 抽 22K 单轮票，20K 训练、2K 
 
 ## 图解文件与证据索引
 
-[PNG高清图](../../assets/baselines/cross/llm-judge.svg) · [SVG可编辑图](../../assets/baselines/cross/llm-judge.svg) · [结构化证据](evidence/llm-judge.json)
+[SVG高清图](../../assets/baselines/cross/llm-judge.svg) · [SVG可编辑图](../../assets/baselines/cross/llm-judge.svg) · [结构化证据](evidence/llm-judge.json)
 
 来源类型：本次为细分方向新选择的 baseline，不是历史聊天提取。

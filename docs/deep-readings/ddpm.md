@@ -91,6 +91,6 @@ ViT是一种架构，CLIP是一种图文表征训练路线，DDPM是一种概率
 
 ## 图解文件与证据索引
 
-[PNG高清图](../../assets/baselines/multimodal/ddpm.svg) · [SVG可编辑图](../../assets/baselines/multimodal/ddpm.svg) · [结构化证据](evidence/ddpm.json)
+[SVG高清图](../../assets/baselines/multimodal/ddpm.svg) · [SVG可编辑图](../../assets/baselines/multimodal/ddpm.svg) · [结构化证据](evidence/ddpm.json)
 
 来源类型：本次为细分方向新选择的 baseline，不是历史聊天提取。

@@ -77,6 +77,6 @@ Table 1 的 val-seen，teacher-forcing 成功率 27.1%、误差 8.01 m，student
 
 ## 图解文件与证据索引
 
-[PNG高清图](../../assets/baselines/cross/r2r.svg) · [SVG可编辑图](../../assets/baselines/cross/r2r.svg) · [结构化证据](evidence/r2r.json)
+[SVG高清图](../../assets/baselines/cross/r2r.svg) · [SVG可编辑图](../../assets/baselines/cross/r2r.svg) · [结构化证据](evidence/r2r.json)
 
 来源类型：本次为细分方向新选择的 baseline，不是历史聊天提取。
