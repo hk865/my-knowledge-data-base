@@ -1,0 +1,122 @@
+{
+  "paper_id": "2010.11929",
+  "version": "v2",
+  "source_url": "https://arxiv.org/pdf/2010.11929v2",
+  "source_pdf_sha256": "8ce7b83971a14508ca711a27c875c9b6914c4f6767cf3150fb1ca6c07aa056d6",
+  "reading_coverage": {
+    "status": "full_main_text_and_appendices_read",
+    "pdf_pages": 22,
+    "main_text": "Sections 1–5, pages 1–9",
+    "appendices": "Appendices A, B.1–B.1.2, C, D.1–D.10, pages 13–22",
+    "references": "Bibliographic entries inspected as index; cited works not individually read",
+    "source_figure_visual_checks": [
+      "p3 Figure1 architecture",
+      "p6 Table2/Figure2",
+      "p17 Table8/Figure9",
+      "p21 Figure14 attention examples"
+    ],
+    "not_claimed": [
+      "No reimplementation",
+      "No reproduced training results",
+      "No verification of cited papers beyond this manuscript"
+    ]
+  },
+  "claims": [
+    {
+      "id": "vit-01",
+      "claim": "Patch projection N×P²C→N×D, prepend class token and learned position embeddings; pre-norm residual blocks",
+      "source_location": "§3.1 pp3–4; equations 1–4; Appendix A p13",
+      "kind": "paper_evidence",
+      "interpretation_limit": ""
+    },
+    {
+      "id": "vit-02",
+      "claim": "Transfer replaces pretraining MLP head with zero-initialized D×K linear head; spatial interpolation at higher resolution",
+      "source_location": "§3.2 p4; Appendix B.1.1 pp13–14",
+      "kind": "paper_evidence",
+      "interpretation_limit": ""
+    },
+    {
+      "id": "vit-03",
+      "claim": "Datasets ImageNet1k ~1.3M, ImageNet21k ~14M, JFT303M; test-set de-duplication",
+      "source_location": "§4.1 p4",
+      "kind": "paper_evidence",
+      "interpretation_limit": ""
+    },
+    {
+      "id": "vit-04",
+      "claim": "JFT ViT-H/14 ImageNet 88.55±0.04%; L/16 87.76±0.03%; BiT-L87.54±0.02%",
+      "source_location": "Table2 p6",
+      "kind": "paper_evidence",
+      "interpretation_limit": "System comparison; recipes and compute differ"
+    },
+    {
+      "id": "vit-05",
+      "claim": "Pretraining TPUv3-core-days H/14 2.5k, L/16 .68k, BiT-L9.9k",
+      "source_location": "Table2 p6",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Not architecture-only controlled measurement"
+    },
+    {
+      "id": "vit-06",
+      "claim": "Small-data B/16 77.91 and L/16 76.53; JFT84.15/87.12 at384",
+      "source_location": "Table5 p15; §4.3 pp6–7",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Do not mix with Table2 higher-resolution averaging results"
+    },
+    {
+      "id": "vit-07",
+      "claim": "Comparable average-five task accuracy at about2–4× less compute within tested regime",
+      "source_location": "§4.4 p8; Figure5 p7; Table6 p15",
+      "kind": "paper_evidence",
+      "interpretation_limit": ""
+    },
+    {
+      "id": "vit-08",
+      "claim": "No positional embedding .61382;1D .64206;2D .64001;relative .64032",
+      "source_location": "Table8 p17",
+      "kind": "paper_evidence",
+      "interpretation_limit": "ImageNet5-shot linear; not full-finetuning accuracy"
+    },
+    {
+      "id": "vit-09",
+      "claim": "GAP and class token perform similarly after learning-rate adjustment",
+      "source_location": "AppendixD.3 pp16–17; Figure9",
+      "kind": "paper_evidence",
+      "interpretation_limit": ""
+    },
+    {
+      "id": "vit-10",
+      "claim": "Early masked prediction uses50% corruption and discrete mean-color prediction;79.9 ImageNet",
+      "source_location": "§4.6 p9; AppendixB.1.2 p14",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Different architecture and target from MAE"
+    },
+    {
+      "id": "vit-11",
+      "claim": "Attention maps use attention rollout, mean across heads then recursive matrix products",
+      "source_location": "AppendixD.8 p20; Figures6,14",
+      "kind": "paper_evidence",
+      "interpretation_limit": ""
+    },
+    {
+      "id": "vit-12",
+      "claim": "Scaling and practical timing depend on depth,patch size and hardware",
+      "source_location": "AppendixD.2,D.5,D.6 pp16,18–20",
+      "kind": "paper_evidence",
+      "interpretation_limit": ""
+    }
+  ],
+  "diagram": {
+    "svg": "vit.svg",
+    "png": "vit.png",
+    "provenance": "Original vector diagram based on cited methods, not copied from source figure",
+    "visual_qa": "Rendered via Inkscape and visually inspected",
+    "dimension_policy": "Paper-defined symbolic dimensions or explicitly identified examples"
+  },
+  "deliverables": {
+    "reading": "vit.md",
+    "diagram_svg": "vit.svg",
+    "diagram_png": "vit.png"
+  }
+}

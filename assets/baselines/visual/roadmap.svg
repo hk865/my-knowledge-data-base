@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="1250" viewBox="0 0 1680 1250">
+<defs>
+<marker id="blue" markerWidth="10" markerHeight="10" refX="9" refY="4" orient="auto"><path d="M0,0 L9,4 L0,8" fill="#2563a6"/></marker>
+<marker id="orange" markerWidth="10" markerHeight="10" refX="9" refY="4" orient="auto"><path d="M0,0 L9,4 L0,8" fill="#c45b20"/></marker>
+<marker id="green" markerWidth="10" markerHeight="10" refX="9" refY="4" orient="auto"><path d="M0,0 L9,4 L0,8" fill="#19735e"/></marker>
+<marker id="purple" markerWidth="10" markerHeight="10" refX="9" refY="4" orient="auto"><path d="M0,0 L9,4 L0,8" fill="#7754a1"/></marker>
+</defs>
+<rect width="1680" height="1250" fill="#fff"/>
+<text x="55" y="64" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="38" fill="#172d42" font-weight="700" text-anchor="start">视觉基础路线图  |  骨干、学习信号、使用接口</text>
+<text x="55" y="110" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#172d42" font-weight="400" text-anchor="start">四项可组合的技术，不是四个互斥家族；箭头表示接口连接，不表示严格继承</text>
+<text x="55" y="170" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="27" fill="#172d42" font-weight="700" text-anchor="start">1  共同骨干层</text>
+<rect x="55" y="207" width="1570" height="125" rx="15" fill="#eff6fd" stroke="#2563a6" stroke-width="2"/>
+<text x="840.0" y="259.24" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="28" fill="#172d42" font-weight="400" text-anchor="middle">ViT：图像 → patch tokens → Transformer → 全局 / patch 表征</text>
+<text x="840.0" y="298.24" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="28" fill="#172d42" font-weight="400" text-anchor="middle">视觉先验较少；token 数由分辨率与 patch 大小决定</text>
+<text x="55" y="383" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="27" fill="#172d42" font-weight="700" text-anchor="start">2  预训练信号层：同一个 ViT 可以选择不同目标</text>
+<polyline points="1600,332 1600,400 240,400" fill="none" stroke="#2563a6" stroke-width="3"/>
+<polyline points="240.0,400 240.0,420" fill="none" stroke="#2563a6" stroke-width="3" marker-end="url(#blue)" />
+<rect x="55" y="420" width="370" height="145" rx="15" fill="#eff6fd" stroke="#2563a6" stroke-width="2"/>
+<text x="240.0" y="464.75" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="25" fill="#172d42" font-weight="400" text-anchor="middle">监督分类</text>
+<text x="240.0" y="500.75" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="25" fill="#172d42" font-weight="400" text-anchor="middle">ViT 原文主要设置</text>
+<text x="240.0" y="536.75" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="25" fill="#172d42" font-weight="400" text-anchor="middle">目标：类别标签</text>
+<polyline points="640.0,400 640.0,420" fill="none" stroke="#2563a6" stroke-width="3" marker-end="url(#blue)" />
+<rect x="455" y="420" width="370" height="145" rx="15" fill="#eff6fd" stroke="#2563a6" stroke-width="2"/>
+<text x="640.0" y="464.75" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="25" fill="#172d42" font-weight="400" text-anchor="middle">MAE</text>
+<text x="640.0" y="500.75" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="25" fill="#172d42" font-weight="400" text-anchor="middle">掩码重建</text>
+<text x="640.0" y="536.75" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="25" fill="#172d42" font-weight="400" text-anchor="middle">目标：缺失像素</text>
+<polyline points="1040.0,400 1040.0,420" fill="none" stroke="#2563a6" stroke-width="3" marker-end="url(#blue)" />
+<rect x="855" y="420" width="370" height="145" rx="15" fill="#eff6fd" stroke="#2563a6" stroke-width="2"/>
+<text x="1040.0" y="464.75" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="25" fill="#172d42" font-weight="400" text-anchor="middle">DINO</text>
+<text x="1040.0" y="500.75" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="25" fill="#172d42" font-weight="400" text-anchor="middle">跨视图自蒸馏</text>
+<text x="1040.0" y="536.75" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="25" fill="#172d42" font-weight="400" text-anchor="middle">目标：EMA 教师分布</text>
+<polyline points="1440.0,400 1440.0,420" fill="none" stroke="#2563a6" stroke-width="3" marker-end="url(#blue)" />
+<rect x="1255" y="420" width="370" height="145" rx="15" fill="#eff6fd" stroke="#2563a6" stroke-width="2"/>
+<text x="1440.0" y="464.75" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="25" fill="#172d42" font-weight="400" text-anchor="middle">CLIP</text>
+<text x="1440.0" y="500.75" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="25" fill="#172d42" font-weight="400" text-anchor="middle">图文配对对比</text>
+<text x="1440.0" y="536.75" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="25" fill="#172d42" font-weight="400" text-anchor="middle">目标：正确配对关系</text>
+<text x="55" y="614" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="27" fill="#172d42" font-weight="700" text-anchor="start">3  下游接口</text>
+<polyline points="240.0,565 240.0,658" fill="none" stroke="#19735e" stroke-width="3" marker-end="url(#green)" />
+<rect x="55" y="658" width="370" height="160" rx="15" fill="#edf8f4" stroke="#19735e" stroke-width="2"/>
+<text x="240.0" y="711.59" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#172d42" font-weight="400" text-anchor="middle">类别判别表征</text>
+<text x="240.0" y="745.59" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#172d42" font-weight="400" text-anchor="middle">替换或训练任务头</text>
+<text x="240.0" y="779.59" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#172d42" font-weight="400" text-anchor="middle">有标签微调</text>
+<polyline points="640.0,565 640.0,658" fill="none" stroke="#19735e" stroke-width="3" marker-end="url(#green)" />
+<rect x="455" y="658" width="370" height="160" rx="15" fill="#edf8f4" stroke="#19735e" stroke-width="2"/>
+<text x="640.0" y="711.59" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#172d42" font-weight="400" text-anchor="middle">可适配的视觉表征</text>
+<text x="640.0" y="745.59" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#172d42" font-weight="400" text-anchor="middle">丢弃重建解码器</text>
+<text x="640.0" y="779.59" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#172d42" font-weight="400" text-anchor="middle">部分 / 全量微调</text>
+<polyline points="1040.0,565 1040.0,658" fill="none" stroke="#19735e" stroke-width="3" marker-end="url(#green)" />
+<rect x="855" y="658" width="370" height="160" rx="15" fill="#edf8f4" stroke="#19735e" stroke-width="2"/>
+<text x="1040.0" y="711.59" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#172d42" font-weight="400" text-anchor="middle">全局与局部表征</text>
+<text x="1040.0" y="745.59" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#172d42" font-weight="400" text-anchor="middle">丢弃投影头和训练双塔</text>
+<text x="1040.0" y="779.59" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#172d42" font-weight="400" text-anchor="middle">近邻 / 检索 / 对应</text>
+<polyline points="1440.0,565 1440.0,658" fill="none" stroke="#19735e" stroke-width="3" marker-end="url(#green)" />
+<rect x="1255" y="658" width="370" height="160" rx="15" fill="#edf8f4" stroke="#19735e" stroke-width="2"/>
+<text x="1440.0" y="711.59" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#172d42" font-weight="400" text-anchor="middle">图文共享向量空间</text>
+<text x="1440.0" y="745.59" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#172d42" font-weight="400" text-anchor="middle">文本生成候选类别向量</text>
+<text x="1440.0" y="779.59" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#172d42" font-weight="400" text-anchor="middle">零样本匹配 / 检索</text>
+<line x1="55" y1="865" x2="1625" y2="865" stroke="#d6e0e9" stroke-width="2"/>
+<text x="55" y="918" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="27" fill="#172d42" font-weight="700" text-anchor="start">选路线时先问</text>
+<text x="55" y="968" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="25" fill="#172d42" font-weight="400" text-anchor="start">标签充足，比较骨干？先对齐监督训练配方</text>
+<text x="55" y="1004" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="25" fill="#172d42" font-weight="400" text-anchor="start">只有图像，允许微调？比较 MAE / DINO</text>
+<text x="55" y="1040" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="25" fill="#172d42" font-weight="400" text-anchor="start">要用自然语言指定任务？看 CLIP 的图文接口</text>
+<text x="900" y="968" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="25" fill="#172d42" font-weight="400" text-anchor="start">冻结特征做近邻？关注 DINO 的评估协议</text>
+<text x="900" y="1004" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="25" fill="#172d42" font-weight="400" text-anchor="start">要像素级输出或动作？仍需任务头 / 策略</text>
+<text x="900" y="1040" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="25" fill="#172d42" font-weight="400" text-anchor="start">跨方法比成绩？先对齐数据、算力与协议</text>
+<line x1="55" y1="1100" x2="1625" y2="1100" stroke="#d6e0e9" stroke-width="2"/>
+<text x="55" y="1147" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#172d42" font-weight="400" text-anchor="start">学习顺序建议：ViT → MAE → DINO → CLIP；不是按发表时间或“谁取代谁”排序</text>
+<text x="55" y="1197" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="21" fill="#172d42" font-weight="400" text-anchor="start">原创综合图依据：四篇原文方法与实验；CLIP / DINO 也可采用 ResNet，ViT 不限定训练目标</text>
+</svg>

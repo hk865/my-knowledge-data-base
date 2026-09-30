@@ -31,3 +31,8 @@
 [Qwen2.5-1M 精读](docs/deep-readings/qwen2.5-1m.md) · [长上下文路线图](docs/roadmaps/long-context.md) · [机制图](assets/qwen2.5-1m-mechanism.svg)
 
 本篇已完成报告v1全文分析，区分论文证据、解释与尚未公开的信息；未进行独立复现。其他目录条目的核验深度仍以各自记录为准。
+
+
+## Baseline 图解与精读
+
+[打开已发布的分方向精读目录](BASELINES.md)。本轮正在分批同步，目录仅列实际已提交文章。

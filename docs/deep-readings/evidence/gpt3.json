@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "paper": {
+    "title": "Language Models are Few-Shot Learners",
+    "arxiv": "2005.14165",
+    "version": "v4",
+    "version_date": "2020-07-22",
+    "pdf_pages": 75,
+    "source_url": "https://arxiv.org/pdf/2005.14165v4",
+    "local_pdf_sha256": "97fd272f1fdfc18677462d0292f5fbf26ca86b4d1b485c2dba03269b643a0e83"
+  },
+  "review_date": "2026-09-30",
+  "full_text_access": "success_pdf_and_text",
+  "coverage": "main body and relevant appendices; exclusions documented in coverage.md",
+  "claims": [
+    {
+      "id": "gpt3-scope",
+      "claim": "零/单/少样本评测不更新权重，预训练为自回归目标",
+      "locator": "§1–2, Figure 2.1",
+      "pdf_page": 6,
+      "url": "https://arxiv.org/pdf/2005.14165v4#page=6",
+      "kind": "method"
+    },
+    {
+      "id": "gpt3-architecture",
+      "claim": "175B模型96层、隐藏维12288、96头，八种规模均训练300B tokens",
+      "locator": "Table 2.1; §2.1",
+      "pdf_page": 8,
+      "url": "https://arxiv.org/pdf/2005.14165v4#page=8",
+      "kind": "numeric"
+    },
+    {
+      "id": "gpt3-mixture",
+      "claim": "数据混合权重非按语料大小；高质量来源重复采样",
+      "locator": "Table 2.2; §2.2",
+      "pdf_page": 9,
+      "url": "https://arxiv.org/pdf/2005.14165v4#page=9",
+      "kind": "method"
+    },
+    {
+      "id": "gpt3-filter",
+      "claim": "质量分类重采样与MinHashLSH模糊去重",
+      "locator": "Appendix A",
+      "pdf_page": 43,
+      "url": "https://arxiv.org/pdf/2005.14165v4#page=43",
+      "kind": "method"
+    },
+    {
+      "id": "gpt3-optimizer",
+      "claim": "Adam .9/.95、梯度裁剪1.0、权衰.1、375M token预热、2048序列打包",
+      "locator": "Appendix B",
+      "pdf_page": 43,
+      "url": "https://arxiv.org/pdf/2005.14165v4#page=43",
+      "kind": "method"
+    },
+    {
+      "id": "gpt3-eval",
+      "claim": "选择题概率评分与特殊任务无条件概率校正；beam 4、length penalty .6",
+      "locator": "§2.4",
+      "pdf_page": 10,
+      "url": "https://arxiv.org/pdf/2005.14165v4#page=10",
+      "kind": "method"
+    },
+    {
+      "id": "gpt3-lambada",
+      "claim": "LAMBADA 0/1/few shot准确率76.2/72.5/86.4",
+      "locator": "Table 3.2",
+      "pdf_page": 12,
+      "url": "https://arxiv.org/pdf/2005.14165v4#page=12",
+      "kind": "numeric"
+    },
+    {
+      "id": "gpt3-qa",
+      "claim": "TriviaQA 64.3/68.0/71.2；Natural Questions14.6/23.0/29.9",
+      "locator": "Table 3.3",
+      "pdf_page": 13,
+      "url": "https://arxiv.org/pdf/2005.14165v4#page=13",
+      "kind": "numeric"
+    },
+    {
+      "id": "gpt3-superglue",
+      "claim": "few-shot test 71.8，BERT-Large69.0；WiC49.4",
+      "locator": "Table 3.8",
+      "pdf_page": 19,
+      "url": "https://arxiv.org/pdf/2005.14165v4#page=19",
+      "kind": "numeric"
+    },
+    {
+      "id": "gpt3-arithmetic",
+      "claim": "3位加法表3.9为80.4，正文§3.9.1为80.2；采用表值",
+      "locator": "Table 3.9; §3.9.1",
+      "pdf_page": 23,
+      "url": "https://arxiv.org/pdf/2005.14165v4#page=23",
+      "kind": "numeric_with_internal_discrepancy"
+    },
+    {
+      "id": "gpt3-news",
+      "claim": "约200字新闻人机识别52%，95%区间49%–54%",
+      "locator": "Table 3.11",
+      "pdf_page": 26,
+      "url": "https://arxiv.org/pdf/2005.14165v4#page=26",
+      "kind": "numeric"
+    },
+    {
+      "id": "gpt3-contamination",
+      "claim": "过滤bug、clean子集审计、PIQA/Winograd星号；clean子集存在分布差异局限",
+      "locator": "§4; Appendix C; Table C.1",
+      "pdf_page": 31,
+      "url": "https://arxiv.org/pdf/2005.14165v4#page=31",
+      "kind": "limitation"
+    },
+    {
+      "id": "gpt3-compute",
+      "claim": "GPT-3估算训练3.14e23 FLOPs，忽略注意力等简化",
+      "locator": "Appendix D; Table D.1",
+      "pdf_page": 46,
+      "url": "https://arxiv.org/pdf/2005.14165v4#page=46",
+      "kind": "numeric"
+    },
+    {
+      "id": "gpt3-limits",
+      "claim": "缺乏双向/去噪目标对照，ICL新学与识别模糊，偏见与生成可靠性未解决",
+      "locator": "§5–6",
+      "pdf_page": 33,
+      "url": "https://arxiv.org/pdf/2005.14165v4#page=33",
+      "kind": "limitation"
+    }
+  ],
+  "diagram": {
+    "svg": "gpt3.svg",
+    "png": "gpt3.png",
+    "original": true,
+    "visual_inspection": "passed",
+    "description": "Original explanatory diagram based on cited method; not a reproduced paper figure"
+  },
+  "not_claimed": [
+    "independent experimental reproduction",
+    "exhaustive verification of every qualitative sample",
+    "coverage of every later variant"
+  ],
+  "artifact_note": "gpt3.md"
+}

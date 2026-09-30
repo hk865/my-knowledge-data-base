@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "paper_key": "orb-slam3",
+  "title": "ORB-SLAM3: An Accurate Open-Source Library for Visual, Visual-Inertial and Multi-Map SLAM",
+  "version": "arXiv:2007.11898v2; 2021-04-23",
+  "primary_source": "https://arxiv.org/abs/2007.11898",
+  "fulltext_url": "https://arxiv.org/pdf/2007.11898",
+  "source_sha256": "4d119517be7565c9651fbf1e36a330d605b7a534d738558858c96feca7b99156",
+  "read_at": "2026-09-30",
+  "page_numbering": "PDF pages, 1-based unless locator explicitly refers to printed page",
+  "status": "fulltext_read",
+  "independent_replication": false,
+  "claims": [
+    {
+      "id": "orb-slam3-01",
+      "claim": "State consists of body pose, velocity and IMU biases; visual-inertial optimization combines preintegrated inertial and robust reprojection terms",
+      "locator": "§V-A; eqs.1–4; pp.6–7",
+      "type": "mechanism"
+    },
+    {
+      "id": "orb-slam3-02",
+      "claim": "Three-stage initialization uses visual MAP, inertial-only MAP, then joint VI MAP; positive scale via multiplicative exp update",
+      "locator": "§V-B; eqs.5–10; Fig.2; pp.7–8",
+      "type": "mechanism"
+    },
+    {
+      "id": "orb-slam3-03",
+      "claim": "Weak motion excitation can delay accurate initialization; scale/gravity refinement is included",
+      "locator": "§V-B p.8 and §VIII p.16",
+      "type": "limitation"
+    },
+    {
+      "id": "orb-slam3-04",
+      "claim": "New place recognition checks geometric consistency and existing covisible keyframes before waiting for future frames",
+      "locator": "§VI-A pp.9–10",
+      "type": "mechanism"
+    },
+    {
+      "id": "orb-slam3-05",
+      "claim": "Map merging fuses duplicate points and performs welding BA plus essential-graph propagation",
+      "locator": "§VI-B–C; Fig.3 p.10",
+      "type": "mechanism"
+    },
+    {
+      "id": "orb-slam3-06",
+      "claim": "EuRoC stereo-inertial mean RMS ATE is 0.035 m and monocular-inertial 0.043 m",
+      "locator": "Table II p.12",
+      "type": "reported_result",
+      "conditions": "Median of 10 executions per sequence; average across 11 sequences; SE(3) alignment; original table comparators have footnoted protocol differences"
+    },
+    {
+      "id": "orb-slam3-07",
+      "claim": "TUM-VI room mean ATE 0.009 m stereo-inertial and 0.011 m monocular-inertial",
+      "locator": "Table IV p.13",
+      "type": "reported_result",
+      "conditions": "6 room sequences; medians of 3 executions; full ground truth available for room; not full-trajectory GT for most other TUM-VI sequences"
+    },
+    {
+      "id": "orb-slam3-08",
+      "claim": "EuRoC V202 stereo-inertial tracking takes 33.05±9.29 ms",
+      "locator": "Table VI p.15, §VII p.11",
+      "type": "reported_result",
+      "conditions": "i7-7700 3.6GHz CPU, 32GB; separate mapping/loop/global BA threads"
+    },
+    {
+      "id": "orb-slam3-09",
+      "claim": "Low texture and sparse nearby features are failure modes; outdoor sequences remove points farther than 20 m",
+      "locator": "§VII-B p.12, §VIII pp.15–16",
+      "type": "limitation"
+    },
+    {
+      "id": "orb-slam3-10",
+      "claim": "Learned features/depth or downstream policy can be interfaced with this estimator, but require renewed uncertainty and failure testing",
+      "locator": "Reader synthesis based on module interfaces; not a reported experiment",
+      "type": "interpretation"
+    }
+  ],
+  "scope_notes": [
+    "This is a MAP optimization-based SLAM library, not an ESKF implementation.",
+    "No new RGB-D benchmark reproduced in this note.",
+    "Source PDF and original figures are not redistributed."
+  ],
+  "diagram": {
+    "original": true,
+    "source_copy": false,
+    "png_visual_qa": "passed; checked text, connectors, margins at native resolution"
+  }
+}

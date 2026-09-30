@@ -1,0 +1,126 @@
+{
+  "paper_slug": "diffusion_policy",
+  "arxiv": "2303.04137",
+  "version": "v5",
+  "primary_url": "https://arxiv.org/pdf/2303.04137v5",
+  "checked_on": "2026-09-30",
+  "source_sha256": "b65c474b696a4802d8f1457d86b637ce2c5521412570d3aa928cd54563babc8f",
+  "reading_coverage": {
+    "status": "全文精读完成；非实验复现",
+    "main_text": "Sec.1–11全读；Eq.1–9及主要实验表核查",
+    "appendices": "A–D全读，动作归一化/旋转、超参、指标计算和硬件栈细读",
+    "references": "引用条目仅定位方法，不声称已阅读全文引用文献",
+    "visual_checks": [
+      "Fig.2 on PDF p.3",
+      "Table7/8 on PDF p.17"
+    ],
+    "version_note": "v5为期刊扩展版；arXiv摘要页12任务与PDF15任务不一致，按PDF解释新增3个双臂任务",
+    "pdf_extraction_note": "pdftotext中若干图表字体出现控制字符和额外form-feed，定位使用PDF印刷页码/章节，而非split后的伪页数"
+  },
+  "claim_evidence": [
+    {
+      "id": "dp-01",
+      "claim": "条件动作分布p(A_t|O_t)，预测T_p、执行T_a后重新观测",
+      "locator": "Sec.2.3; Fig.2 p.3",
+      "caveat": "不是生成未来观测，也不是显式动力学优化"
+    },
+    {
+      "id": "dp-02",
+      "claim": "噪声回归MSE；CNN+FiLM与时间序列Transformer两种去噪器",
+      "locator": "Eq.4–5; Sec.3.1",
+      "caveat": "本文标准DDPM展开式为教学性重写，不是逐字抄录原文简写"
+    },
+    {
+      "id": "dp-03",
+      "claim": "ResNet18，空间softmax替代全局池化，GroupNorm替代BatchNorm，端到端视觉条件",
+      "locator": "Sec.3.2 p.4",
+      "caveat": ""
+    },
+    {
+      "id": "dp-04",
+      "claim": "LQR线性系统例子说明未来动作隐含闭环动力学，并非一般稳定性证明",
+      "locator": "Sec.4.5 p.6",
+      "caveat": ""
+    },
+    {
+      "id": "dp-05",
+      "claim": "视觉Transport-PH CNN 1.00/0.93 vs LSTM-GMM 0.88/0.62；ToolHang 0.95/0.73 vs0.68/0.49",
+      "locator": "Table2 p.7",
+      "caveat": "斜杠前是最大checkpoint，后是最后10个checkpoint均值"
+    },
+    {
+      "id": "dp-06",
+      "claim": "BlockPush两块完成Transformer0.94 vsBET0.71；Kitchen四子任务CNN0.99 vsBET0.44",
+      "locator": "Table4 p.8",
+      "caveat": "不同指标、不同扩散变体不能视为单一同构实验"
+    },
+    {
+      "id": "dp-07",
+      "claim": "46.9%是按列取最强基线/扩散变体后相对增益平均，排除MH列",
+      "locator": "Appendix B.2 p.17",
+      "caveat": "不是绝对成功率百分点"
+    },
+    {
+      "id": "dp-08",
+      "claim": "RoboMimic实际22个初始状态，而主文设计为50，源于评估代码bug",
+      "locator": "Sec.5.2脚注 p.7",
+      "caveat": "同组baseline同样受影响"
+    },
+    {
+      "id": "dp-09",
+      "claim": "真实Push-T端到端CNN成功95%、IoU0.80，人类0.84；20trials；末态IoU",
+      "locator": "Table6 p.9; Appendix C.1 p.17",
+      "caveat": "不与仿真max覆盖混合"
+    },
+    {
+      "id": "dp-10",
+      "claim": "双臂打蛋55%/20trials/210demonstrations；垫子75%/20/162；折衣75%/20/284",
+      "locator": "Sec.7.3–7.5 pp.11–12",
+      "caveat": "v5新增实验，不属于原RSS版"
+    },
+    {
+      "id": "dp-11",
+      "claim": "Square-PH ViT scratch0.22/frozen0.70/finetune0.98；ResNet18 0.94/0.58/0.92",
+      "locator": "Table5 p.9",
+      "caveat": "限定该任务数据与训练设置，不能泛化为预训练优劣定律"
+    },
+    {
+      "id": "dp-12",
+      "claim": "主文DDIM推理10步而附录表7/8与A.4为16步，训练100步",
+      "locator": "Sec.3.4 p.4; Appendix A.4 p.16; Tables7–8 p.17",
+      "caveat": "复现需按官方配置固定，不静默选一个"
+    },
+    {
+      "id": "dp-13",
+      "claim": "Table3酱料90条示范；Appendix C.2写50条、90%训练；Kitchen正文566而Table3为656",
+      "locator": "Table3 p.7; Sec.5.1 p.7; Appendix C.2 p.17",
+      "caveat": "原文内部口径不一致，本文保留"
+    },
+    {
+      "id": "dp-14",
+      "claim": "真实控制10Hz；UR5插值125Hz有限速/工作区，Franka中层QP支持关节和碰撞约束",
+      "locator": "Appendix D p.18",
+      "caveat": "策略自身不提供约束保证；haptic teleop和非haptic inference控制器不同"
+    },
+    {
+      "id": "dp-15",
+      "claim": "每维min-max至[-1,1]；位置控制用6D旋转、速度用3D轴角",
+      "locator": "Appendix A.1–A.2 p.16",
+      "caveat": "更改动作约定会改变学习/部署分布"
+    }
+  ],
+  "reproduction_limits": [
+    "没有运行代码、训练或硬件rollout",
+    "没有确认当前仓库commit和数据下载快照",
+    "原论文的scheduler/示范数/评估样本数不一致已显式记录",
+    "曲线消融仅报告趋势，不进行低分辨率手工读数",
+    "不把论文中的实时推理速度当不同硬件的保证"
+  ],
+  "diagram": {
+    "svg": "diffusion_policy_mechanism.svg",
+    "png": "diffusion_policy_mechanism.png",
+    "original": true,
+    "visual_qa": "PNG opened and inspected; no clipped labels or overlaps",
+    "meaning": "Conceptual data flow; not a complete computational graph"
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "paper_id": "2104.14294",
+  "version": "v2",
+  "source_url": "https://arxiv.org/pdf/2104.14294v2",
+  "source_pdf_sha256": "aa464cfd59a428890190bea1065823a491a853478b4fb2a25f5eb44d442ce296",
+  "reading_coverage": {
+    "status": "full_main_text_and_appendices_read",
+    "pdf_pages": 21,
+    "main_text": "Sections1–6,pp1–10",
+    "appendices": "A AdditionalResults; B MethodologyComparison; C ProjectionHead; D AdditionalAblations; E Multi-crop; F EvaluationProtocols; G Self-AttentionVisualizations; H ClassRepresentation,pp13–21",
+    "references": "Bibliographic index read; cited papers not individually read",
+    "source_figure_visual_checks": [
+      "p8 Figure4 andTable7",
+      "p16 Figure9 projectionhead",
+      "p20 Figure10 additionalattention",
+      "p21 Figure11 class-level t-SNE overview"
+    ],
+    "not_claimed": [
+      "No training reproduction",
+      "No universal convergence proof",
+      "No unconditional semantic segmentation capability"
+    ]
+  },
+  "claims": [
+    {
+      "id": "dino-01",
+      "claim": "DINO is cross-view distribution matching with an EMA teacher, not a different visual backbone",
+      "source_location": "§3.1 pp3–4; Algorithm1 p3",
+      "kind": "paper_evidence",
+      "interpretation_limit": ""
+    },
+    {
+      "id": "dino-02",
+      "claim": "Student sees all crops, teacher sees two global crops, same-view pair excluded from CE",
+      "source_location": "Equation3 p3; §3.1",
+      "kind": "paper_evidence",
+      "interpretation_limit": ""
+    },
+    {
+      "id": "dino-03",
+      "claim": "Teacher logits centered before temperature softmax; gradient stopped; teacher parameter EMA separate from center EMA",
+      "source_location": "Algorithm1 p3; Equation4 p4",
+      "kind": "paper_evidence",
+      "interpretation_limit": ""
+    },
+    {
+      "id": "dino-04",
+      "claim": "3-layer MLP, 2048 hidden,256-dimensional L2 bottleneck,weight-normalized projection,K65536",
+      "source_location": "§3.1 p4; AppendixC p16",
+      "kind": "paper_evidence",
+      "interpretation_limit": ""
+    },
+    {
+      "id": "dino-05",
+      "claim": "No predictor and no BatchNorm in ViT implementation",
+      "source_location": "§3.1 p4; AppendixC p16",
+      "kind": "paper_evidence",
+      "interpretation_limit": ""
+    },
+    {
+      "id": "dino-06",
+      "claim": "EMA lambda .996→1;student temp .1;teacher .04→.07 during first30epochs",
+      "source_location": "§3.1 p4; §3.2 p5",
+      "kind": "paper_evidence",
+      "interpretation_limit": ""
+    },
+    {
+      "id": "dino-07",
+      "claim": "Table2 S/16 linear77.0,kNN74.5;S/8linear79.7,kNN78.3;B/8linear80.1,kNN77.4",
+      "source_location": "Table2 p5",
+      "kind": "paper_evidence",
+      "interpretation_limit": ""
+    },
+    {
+      "id": "dino-08",
+      "claim": "Patch sizes affect token count and compute:S/16 197tokens1007images/s;S/8 785tokens180images/s",
+      "source_location": "Table1 p4",
+      "kind": "paper_evidence",
+      "interpretation_limit": "V100,batch128,inference measurement"
+    },
+    {
+      "id": "dino-09",
+      "claim": "300epoch baseline72.8/76.1;no multicrop67.9/72.5;MSE52.6/62.4;predictor71.8/75.6;no momentum .1/.1",
+      "source_location": "Table7 p8",
+      "kind": "paper_evidence",
+      "interpretation_limit": "kNN/linear percentages;not claim all non-EMA methods collapse"
+    },
+    {
+      "id": "dino-10",
+      "claim": "Studentcopy andpreviousiterationteacher .1;previousepochteacher66.6;EMA72.8",
+      "source_location": "Figure6 p9",
+      "kind": "paper_evidence",
+      "interpretation_limit": "All kNN in stated300epoch setting"
+    },
+    {
+      "id": "dino-11",
+      "claim": "Centering and sharpening are complementary; center momentum .999 or fixedtemp .08 collapse",
+      "source_location": "§5.3 p9; Figure7 p9; AppendixD p17",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Empirical stability,not universal convergence theorem"
+    },
+    {
+      "id": "dino-12",
+      "claim": "PASCAL region masks:ViT-S/16 supervised27.3,DINO45.9Jaccard;mainfigure60%mass",
+      "source_location": "Figure4 p8",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Best-head visualization; AppendixD states80%threshold with overlapping numbers,not merged as identical protocol"
+    },
+    {
+      "id": "dino-13",
+      "claim": "DAVIS frozen patch nearest-neighbor propagation:B/1662.3,B/871.4(J&F)m",
+      "source_location": "Table5 and§4.2.2 p7",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Dense correspondence evidence,not unconditional segmentation system"
+    },
+    {
+      "id": "dino-14",
+      "claim": "DINO/SwAV/MoCo-v2 long main settings800epochs,BYOL300epochs",
+      "source_location": "AppendixD p17",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Controlled300epoch comparison separatelyTables7,13–15"
+    },
+    {
+      "id": "dino-15",
+      "claim": "kNN uses finalCLS,weighttemp .07,k20;linearS concatenateslast4CLS,B concatenateslastCLS andpooledpatches",
+      "source_location": "AppendixF.1–F.2 pp18–19",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Different representation extraction across evaluation protocols"
+    },
+    {
+      "id": "dino-16",
+      "claim": "2global300epochs72.5linear45.9h;2global10local100epochs74.6linear24.2h",
+      "source_location": "Table8 p9;§5.4 pp9–10",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Two8GPUmachines;differentepochs andhighermemory"
+    },
+    {
+      "id": "dino-17",
+      "claim": "Multi-crop not a universal add-on:BYOL degrades in authors setting",
+      "source_location": "AppendixE p18",
+      "kind": "paper_evidence",
+      "interpretation_limit": ""
+    },
+    {
+      "id": "dino-18",
+      "claim": "Self-supervised attention layout shared across several methods,not DINO exclusive",
+      "source_location": "AppendixD p17",
+      "kind": "paper_evidence",
+      "interpretation_limit": ""
+    },
+    {
+      "id": "dino-19",
+      "claim": "GLDv2 domain-matched unlabeled pretraining improves retrieval",
+      "source_location": "Table3 p6;§4.2.1",
+      "kind": "paper_evidence",
+      "interpretation_limit": ""
+    }
+  ],
+  "diagram": {
+    "svg": "dino.svg",
+    "png": "dino.png",
+    "provenance": "Original vector method diagram based on paper section3 and AppendixC; no copied source figure",
+    "visual_qa": "Rendered via Inkscape and visually checked; revised arrow and text positions",
+    "dimension_policy": "Symbolic batch/feature dimensions plus explicitly cited default projection head dimensions"
+  },
+  "deliverables": {
+    "reading": "dino.md",
+    "diagram_svg": "dino.svg",
+    "diagram_png": "dino.png"
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "paper_id": "2111.06377",
+  "version": "v3",
+  "source_url": "https://arxiv.org/pdf/2111.06377v3",
+  "source_pdf_sha256": "1b490443925c72a2b7c770f90dd797e248729ae34a57e1abfe9ed36751c4cc5b",
+  "reading_coverage": {
+    "status": "full_main_text_and_appendices_read",
+    "pdf_pages": 14,
+    "main_text": "Sections1–6, broader impacts, pages1–9",
+    "appendices": "Appendix A.1–A.5, B, C pages11–12; visual supplements Figures10–11 pp13–14",
+    "references": "Bibliographic entries inspected as index; cited works not individually read",
+    "source_figure_visual_checks": [
+      "p5 Tables1–2 all numerical ablations",
+      "p13 Figure10 randomImageNet reconstructions",
+      "p14 Figure11 COCO reconstructions"
+    ],
+    "not_claimed": [
+      "No reimplementation",
+      "No reproduced training results",
+      "No verification of cited papers beyond this manuscript"
+    ]
+  },
+  "claims": [
+    {
+      "id": "mae-01",
+      "claim": "Encoder processes visible patches only; mask tokens inserted only before lightweight decoder",
+      "source_location": "§3 pp3–4; Figure1 p1",
+      "kind": "paper_evidence",
+      "interpretation_limit": ""
+    },
+    {
+      "id": "mae-02",
+      "claim": "Loss is pixel MSE only on masked patches; optional per-patch normalized pixel targets",
+      "source_location": "§3 p4; footnote1",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Visible-patch outputs are not directly supervised; see Figure2 note"
+    },
+    {
+      "id": "mae-03",
+      "claim": "Default ablation isViT-L/16,75% masking,800epochs,8×512decoder,unnormalized targets",
+      "source_location": "Table1 caption p5",
+      "kind": "paper_evidence",
+      "interpretation_limit": ""
+    },
+    {
+      "id": "mae-04",
+      "claim": "Final stronger classification usesnormalized pixels1600epochs,83.6/85.9/86.9forB/L/Hat224;H44887.8",
+      "source_location": "Table3 p7",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Final model setting differs from Table1"
+    },
+    {
+      "id": "mae-05",
+      "claim": "Mask10% vs75% linear54.6vs73.5; fine-tuning broad40–80% stronger",
+      "source_location": "Figure5 p4",
+      "kind": "paper_evidence",
+      "interpretation_limit": ""
+    },
+    {
+      "id": "mae-06",
+      "claim": "Mask-token encoder84.2/59.6 vsvisible-only84.9/73.5 ft/linear;3.3×relativeFLOPs",
+      "source_location": "Table1c p5",
+      "kind": "paper_evidence",
+      "interpretation_limit": ""
+    },
+    {
+      "id": "mae-07",
+      "claim": "1-layer vs8-layerdecoder linear65.5vs73.5;fine-tuning84.8vs84.9",
+      "source_location": "Table1a p5",
+      "kind": "paper_evidence",
+      "interpretation_limit": ""
+    },
+    {
+      "id": "mae-08",
+      "claim": "Normalizedpixel85.4/73.9vsdVAE85.3/71.6",
+      "source_location": "Table1d p5;Table7 p8",
+      "kind": "paper_evidence",
+      "interpretation_limit": "No need for tokenizer in this system;not universal rejection of tokenization"
+    },
+    {
+      "id": "mae-09",
+      "claim": "Grid75% reconstructs more sharply but84.0/66.0vsrandom84.9/73.5",
+      "source_location": "Table1f p5;Figure6 p6",
+      "kind": "paper_evidence",
+      "interpretation_limit": ""
+    },
+    {
+      "id": "mae-10",
+      "claim": "ViT-L42.4h withmask vs15.4h without;2.8×;1block11.6h3.7×",
+      "source_location": "Table2 p5",
+      "kind": "paper_evidence",
+      "interpretation_limit": "128TPUv3,TensorFlow,800epochs;ViT-Hmaskedbaseline119.6h estimated from10epochs"
+    },
+    {
+      "id": "mae-11",
+      "claim": "COCO ViT-LboxAP49.3supervisedvs53.3MAE;ADE20K49.9vs53.6mIoU",
+      "source_location": "Tables4–5 p8;AppendixA.3–A.4 p12",
+      "kind": "paper_evidence",
+      "interpretation_limit": "End-to-end task adaptation and searched hyperparameters"
+    },
+    {
+      "id": "mae-12",
+      "claim": "MAE-Llinear73.5vsoneblocktuned81.0;MoCov3linearstrongerbutpartial-tuningweaker",
+      "source_location": "Figure9 p7;§4.3 pp7–8",
+      "kind": "paper_evidence",
+      "interpretation_limit": ""
+    },
+    {
+      "id": "mae-13",
+      "claim": "Pretrain optimizer recipe and symbolicencoder/decoder width projection, sincosPE, auxiliarytoken",
+      "source_location": "AppendixA.1 p11;Tables8–10",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Base learning rate scaled by batch/256"
+    },
+    {
+      "id": "mae-14",
+      "claim": "FinalMAE-Llinear75.8;robustnessdifferentImageNetvariants",
+      "source_location": "AppendicesB–C/Table12–13 p12",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Different from main800epochablation;higherresolutiondoesnothelpallsets"
+    }
+  ],
+  "diagram": {
+    "svg": "mae.svg",
+    "png": "mae.png",
+    "provenance": "Original vector diagram based on cited methods, not copied from source figure",
+    "visual_qa": "Rendered via Inkscape and visually inspected",
+    "dimension_policy": "Paper-defined symbolic dimensions or explicitly identified examples"
+  },
+  "deliverables": {
+    "reading": "mae.md",
+    "diagram_svg": "mae.svg",
+    "diagram_png": "mae.png"
+  }
+}

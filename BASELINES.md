@@ -1,8 +1,19 @@
 # Baseline 图解与精读
 
-本轮内容正分批提交。此页只列已实际发布的文章，其余稿件不会提前标为完成。
+以下仅列已提交到 main 的文章。其余批次继续发布。
 
-- [DreamerV3 世界模型与想象策略学习](docs/deep-readings/dreamerv3.md)
-- [既有 Qwen2.5-1M 全文精读](docs/deep-readings/qwen2.5-1m.md)
+- [dreamerv3](docs/deep-readings/dreamerv3.md)
+- [diffusion-policy](docs/deep-readings/diffusion-policy.md)
+- [openvla](docs/deep-readings/openvla.md)
+- [orb-slam3](docs/deep-readings/orb-slam3.md)
+- [gpt3](docs/deep-readings/gpt3.md)
+- [instructgpt](docs/deep-readings/instructgpt.md)
+- [dpo](docs/deep-readings/dpo.md)
+- [ppo](docs/deep-readings/ppo.md)
+- [vit](docs/deep-readings/vit.md)
+- [mae](docs/deep-readings/mae.md)
+- [clip](docs/deep-readings/clip.md)
+- [dino](docs/deep-readings/dino.md)
+- [Qwen2.5-1M](docs/deep-readings/qwen2.5-1m.md)
 
-文章包含原创机制图、原文证据与局限；没有独立训练复现。
+均包含正文、机制图与来源证据；未独立复现。

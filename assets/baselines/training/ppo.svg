@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1160" viewBox="0 0 1600 1160">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#526079"/></marker></defs>
+<rect width="1600" height="1160" fill="#f6f8fc"/>
+<g font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif">
+<text x="65" y="72" font-size="40" font-weight="700" fill="#152642">PPO-Clip：重用一批经验，但抑制过大的有利更新</text>
+<text x="65" y="118" font-size="23" font-weight="400" fill="#526079">通用在线策略优化基线  |  原创机制图；ρ是动作概率比，不是环境奖励</text>
+<rect x="65" y="177" width="635" height="183" rx="18" fill="white" stroke="#315bba" stroke-width="2"/>
+<rect x="65" y="177" width="635" height="54" rx="18" fill="#315bba"/><rect x="65" y="204" width="635" height="27" fill="#315bba"/>
+<text x="87" y="214" font-size="26" font-weight="700" fill="white">1  用旧策略采集轨迹</text>
+<text x="87" y="270" font-size="23" font-weight="400" fill="#152642">πold与环境交互 → 状态、动作、奖励</text>
+<text x="87" y="305" font-size="23" font-weight="400" fill="#152642">保存旧log概率；估计回报和优势Â</text>
+<text x="87" y="340" font-size="23" font-weight="400" fill="#152642">优势比较的是动作表现与状态通常水平</text>
+<rect x="65" y="411" width="635" height="218" rx="18" fill="white" stroke="#087e83" stroke-width="2"/>
+<rect x="65" y="411" width="635" height="54" rx="18" fill="#087e83"/><rect x="65" y="438" width="635" height="27" fill="#087e83"/>
+<text x="87" y="448" font-size="26" font-weight="700" fill="white">2  在这批经验上做小批量更新</text>
+<text x="87" y="504" font-size="23" font-weight="400" fill="#152642">ρ = πθ(a|s) / πold(a|s)</text>
+<text x="87" y="539" font-size="23" font-weight="400" fill="#152642">L = E min[ρÂ, clip(ρ,1−ε,1+ε)Â]</text>
+<text x="87" y="574" font-size="23" font-weight="400" fill="#152642">可加value误差项与熵奖励</text>
+<text x="87" y="609" font-size="23" font-weight="400" fill="#152642">本轮固定old，优化current θ</text>
+<rect x="65" y="680" width="635" height="151" rx="18" fill="white" stroke="#315bba" stroke-width="2"/>
+<rect x="65" y="680" width="635" height="54" rx="18" fill="#315bba"/><rect x="65" y="707" width="635" height="27" fill="#315bba"/>
+<text x="87" y="717" font-size="26" font-weight="700" fill="white">3  刷新数据分布</text>
+<text x="87" y="773" font-size="23" font-weight="400" fill="#152642">令 old ← current</text>
+<text x="87" y="808" font-size="23" font-weight="400" fill="#152642">重新采集轨迹，再进入下一轮</text>
+<path d="M376,363 L376,406" fill="none" stroke="#526079" stroke-width="3" marker-end="url(#arrow)" />
+<path d="M376,632 L376,675" fill="none" stroke="#526079" stroke-width="3" marker-end="url(#arrow)" />
+<path d="M62,750 L35,750 L35,267 L60,267" fill="none" stroke="#526079" stroke-width="3" marker-end="url(#arrow)" />
+<text x="785" y="202" font-size="25" font-weight="700" fill="#7550ad">裁剪单样本项的形状</text>
+<text x="785" y="250" font-size="24" font-weight="700" fill="#152642">Â &gt; 0：提高好动作，超过上界后不再奖励</text>
+<path d="M820,421 L820,287" fill="none" stroke="#526079" stroke-width="3" marker-end="url(#arrow)" />
+<path d="M820,421 L1455,421" fill="none" stroke="#526079" stroke-width="3" marker-end="url(#arrow)" />
+<text x="1467" y="426" font-size="23" font-weight="400" fill="#152642">ρ</text>
+<path d="M820,421 L1250,300 L1450,300" fill="none" stroke="#087e83" stroke-width="6"/>
+<path d="M1250,290 L1250,425" fill="none" stroke="#b8c7dc" stroke-width="2" stroke-dasharray="6 6"/>
+<text x="1197" y="454" font-size="22" font-weight="400" fill="#152642">1 + ε</text>
+<text x="870" y="322" font-size="22" font-weight="400" fill="#087e83">目标上升</text>
+<text x="1320" y="281" font-size="22" font-weight="400" fill="#087e83">平顶</text>
+<text x="785" y="529" font-size="24" font-weight="700" fill="#152642">Â &lt; 0：压低坏动作，低于下界后不再奖励</text>
+<path d="M820,582 L820,757" fill="none" stroke="#526079" stroke-width="3" marker-end="url(#arrow)" />
+<path d="M820,582 L1455,582" fill="none" stroke="#526079" stroke-width="3" marker-end="url(#arrow)" />
+<text x="1467" y="587" font-size="23" font-weight="400" fill="#152642">ρ</text>
+<path d="M820,660 L1035,660 L1450,760" fill="none" stroke="#7550ad" stroke-width="6"/>
+<path d="M1035,580 L1035,775" fill="none" stroke="#b8c7dc" stroke-width="2" stroke-dasharray="6 6"/>
+<text x="983" y="809" font-size="22" font-weight="400" fill="#152642">1 − ε</text>
+<text x="872" y="644" font-size="22" font-weight="400" fill="#7550ad">平顶</text>
+<text x="1250" y="685" font-size="22" font-weight="400" fill="#7550ad">变坏仍受惩罚</text>
+<rect x="65" y="888" width="1470" height="178" rx="18" fill="white" stroke="#b56119" stroke-width="2"/>
+<rect x="65" y="888" width="1470" height="54" rx="18" fill="#b56119"/><rect x="65" y="915" width="1470" height="27" fill="#b56119"/>
+<text x="87" y="925" font-size="26" font-weight="700" fill="white">clip不是硬限制，也不是整条RLHF管线</text>
+<text x="87" y="981" font-size="23" font-weight="400" fill="#152642">概率比可越过区间；这里只削弱特定方向的梯度激励，不保证每次真实回报都增加</text>
+<text x="87" y="1016" font-size="23" font-weight="400" fill="#152642">原论文还包含自适应KL版PPO；奖励可以来自环境、规则或模型，与人类偏好无必然绑定</text>
+<text x="87" y="1051" font-size="23" font-weight="400" fill="#152642">迁移到LLM：old是本轮采样策略；SFT reference是另一种跨轮行为正则对象</text>
+<text x="65" y="1125" font-size="20" font-weight="400" fill="#526079">来源：PPO §2–5、式7、图1、算法1；原实验为MuJoCo / Atari  |  arXiv:1707.06347v2</text>
+</g></svg>

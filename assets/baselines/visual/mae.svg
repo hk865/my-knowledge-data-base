@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="1170" viewBox="0 0 1680 1170">
+<defs>
+<marker id="blue" markerWidth="10" markerHeight="10" refX="9" refY="4" orient="auto"><path d="M0,0 L9,4 L0,8" fill="#2563a6"/></marker>
+<marker id="orange" markerWidth="10" markerHeight="10" refX="9" refY="4" orient="auto"><path d="M0,0 L9,4 L0,8" fill="#c45b20"/></marker>
+<marker id="green" markerWidth="10" markerHeight="10" refX="9" refY="4" orient="auto"><path d="M0,0 L9,4 L0,8" fill="#19735e"/></marker>
+<marker id="purple" markerWidth="10" markerHeight="10" refX="9" refY="4" orient="auto"><path d="M0,0 L9,4 L0,8" fill="#7754a1"/></marker>
+</defs>
+<rect width="1680" height="1170" fill="#fff"/>
+<text x="55" y="64" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="38" fill="#172d42" font-weight="700" text-anchor="start">MAE  |  重编码器只看可见 patch</text>
+<text x="55" y="110" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#172d42" font-weight="400" text-anchor="start">预训练：高比例随机遮挡 + 非对称编码器 / 解码器；下游使用完整图像</text>
+<text x="55" y="159" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="24" fill="#172d42" font-weight="700" text-anchor="start">训练路径（默认遮挡 m = 75%；数量仅计 patch，不计辅助 [CLS]）</text>
+<rect x="55" y="195" width="250" height="130" rx="15" fill="#eff6fd" stroke="#2563a6" stroke-width="2"/>
+<text x="180.0" y="232.92" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="24" fill="#172d42" font-weight="400" text-anchor="middle">图像切块</text>
+<text x="180.0" y="267.91999999999996" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="24" fill="#172d42" font-weight="400" text-anchor="middle">N × (P²C)</text>
+<text x="180.0" y="302.91999999999996" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="24" fill="#172d42" font-weight="400" text-anchor="middle">目标像素保留</text>
+<rect x="365" y="195" width="270" height="130" rx="15" fill="#eff6fd" stroke="#2563a6" stroke-width="2"/>
+<text x="500.0" y="232.92" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="24" fill="#172d42" font-weight="400" text-anchor="middle">线性嵌入 + 位置</text>
+<text x="500.0" y="267.91999999999996" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="24" fill="#172d42" font-weight="400" text-anchor="middle">随机置换 / 选择</text>
+<text x="500.0" y="302.91999999999996" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="24" fill="#172d42" font-weight="400" text-anchor="middle">保留 (1 − m)N 个</text>
+<rect x="695" y="195" width="285" height="130" rx="15" fill="#eff6fd" stroke="#2563a6" stroke-width="2"/>
+<text x="837.5" y="232.92" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="24" fill="#172d42" font-weight="400" text-anchor="middle">ViT 编码器</text>
+<text x="837.5" y="267.91999999999996" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="24" fill="#172d42" font-weight="400" text-anchor="middle">只输入可见 token</text>
+<text x="837.5" y="302.91999999999996" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="24" fill="#172d42" font-weight="400" text-anchor="middle">输出：(1 − m)N × De</text>
+<rect x="1040" y="195" width="270" height="130" rx="15" fill="#eff6fd" stroke="#2563a6" stroke-width="2"/>
+<text x="1175.0" y="232.92" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="24" fill="#172d42" font-weight="400" text-anchor="middle">线性投影</text>
+<text x="1175.0" y="267.91999999999996" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="24" fill="#172d42" font-weight="400" text-anchor="middle">De → Dd</text>
+<text x="1175.0" y="302.91999999999996" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="24" fill="#172d42" font-weight="400" text-anchor="middle">可见潜变量</text>
+<rect x="1370" y="195" width="255" height="130" rx="15" fill="#eff6fd" stroke="#2563a6" stroke-width="2"/>
+<text x="1497.5" y="232.92" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="24" fill="#172d42" font-weight="400" text-anchor="middle">补 mN 个 [MASK]</text>
+<text x="1497.5" y="267.91999999999996" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="24" fill="#172d42" font-weight="400" text-anchor="middle">逆置换恢复位置</text>
+<text x="1497.5" y="302.91999999999996" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="24" fill="#172d42" font-weight="400" text-anchor="middle">加 decoder 位置</text>
+<polyline points="305,260 365,260" fill="none" stroke="#2563a6" stroke-width="3" marker-end="url(#blue)" />
+<polyline points="635,260 695,260" fill="none" stroke="#2563a6" stroke-width="3" marker-end="url(#blue)" />
+<polyline points="980,260 1040,260" fill="none" stroke="#2563a6" stroke-width="3" marker-end="url(#blue)" />
+<polyline points="1310,260 1370,260" fill="none" stroke="#2563a6" stroke-width="3" marker-end="url(#blue)" />
+<text x="75" y="373" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#c45b20" font-weight="400" text-anchor="start">原图目标走旁路</text>
+<polyline points="180,325 180,425 260,425 260,485" fill="none" stroke="#c45b20" stroke-width="3" marker-end="url(#orange)" />
+<rect x="55" y="485" width="410" height="160" rx="15" fill="#fff4eb" stroke="#c45b20" stroke-width="2"/>
+<text x="260.0" y="538.59" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#172d42" font-weight="400" text-anchor="middle">仅遮挡位置 M 的 MSE</text>
+<text x="260.0" y="572.59" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#172d42" font-weight="400" text-anchor="middle">预测 patch 对齐真实 patch</text>
+<text x="260.0" y="606.59" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#172d42" font-weight="400" text-anchor="middle">可选：逐 patch 标准化目标</text>
+<rect x="560" y="485" width="365" height="160" rx="15" fill="#eff6fd" stroke="#2563a6" stroke-width="2"/>
+<text x="742.5" y="537.92" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="24" fill="#172d42" font-weight="400" text-anchor="middle">重建像素</text>
+<text x="742.5" y="572.92" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="24" fill="#172d42" font-weight="400" text-anchor="middle">N × (P²C)</text>
+<text x="742.5" y="607.92" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="24" fill="#172d42" font-weight="400" text-anchor="middle">由线性输出层产生</text>
+<rect x="1020" y="485" width="340" height="160" rx="15" fill="#eff6fd" stroke="#2563a6" stroke-width="2"/>
+<text x="1190.0" y="538.59" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#172d42" font-weight="400" text-anchor="middle">轻量 Transformer 解码器</text>
+<text x="1190.0" y="572.59" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#172d42" font-weight="400" text-anchor="middle">输入完整 N × Dd</text>
+<text x="1190.0" y="606.59" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#172d42" font-weight="400" text-anchor="middle">默认：8 层、宽 512</text>
+<polyline points="1495,325 1495,565 1360,565" fill="none" stroke="#2563a6" stroke-width="3" marker-end="url(#blue)" />
+<polyline points="1020,565 925,565" fill="none" stroke="#2563a6" stroke-width="3" marker-end="url(#blue)" />
+<polyline points="560,565 465,565" fill="none" stroke="#c45b20" stroke-width="3" marker-end="url(#orange)" />
+<text x="1060" y="397" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="22" fill="#172d42" font-weight="400" text-anchor="start">mask token 仅在解码前加入</text>
+<text x="1060" y="430" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="22" fill="#172d42" font-weight="400" text-anchor="start">encoder 始终只看真实 patch</text>
+<polyline points="260,645 260,710 985,710 985,380 840,380 840,325" fill="none" stroke="#c45b20" stroke-width="3" marker-end="url(#orange)" stroke-dasharray="9 6"/>
+<text x="55" y="752" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#c45b20" font-weight="400" text-anchor="start">损失反传穿过 decoder 与 encoder；原始像素作为目标，不经梯度更新</text>
+<line x1="55" y1="785" x2="1625" y2="785" stroke="#d6e0e9" stroke-width="2"/>
+<text x="55" y="827" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="27" fill="#172d42" font-weight="700" text-anchor="start">预训练完成后：丢弃 decoder，改变输入覆盖率</text>
+<rect x="55" y="875" width="330" height="135" rx="15" fill="#edf8f4" stroke="#19735e" stroke-width="2"/>
+<text x="220.0" y="932.92" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="24" fill="#172d42" font-weight="400" text-anchor="middle">完整图像</text>
+<text x="220.0" y="967.92" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="24" fill="#172d42" font-weight="400" text-anchor="middle">全部 N 个 patch</text>
+<rect x="450" y="875" width="395" height="135" rx="15" fill="#edf8f4" stroke="#19735e" stroke-width="2"/>
+<text x="647.5" y="932.92" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="24" fill="#172d42" font-weight="400" text-anchor="middle">保留的 ViT 编码器</text>
+<text x="647.5" y="967.92" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="24" fill="#172d42" font-weight="400" text-anchor="middle">不再做随机遮挡</text>
+<rect x="910" y="875" width="340" height="135" rx="15" fill="#edf8f4" stroke="#19735e" stroke-width="2"/>
+<text x="1080.0" y="932.92" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="24" fill="#172d42" font-weight="400" text-anchor="middle">下游任务头</text>
+<text x="1080.0" y="967.92" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="24" fill="#172d42" font-weight="400" text-anchor="middle">分类 / 检测 / 分割</text>
+<rect x="1315" y="875" width="310" height="135" rx="15" fill="#edf8f4" stroke="#19735e" stroke-width="2"/>
+<text x="1470.0" y="932.92" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="24" fill="#172d42" font-weight="400" text-anchor="middle">推理输出</text>
+<text x="1470.0" y="967.92" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="24" fill="#172d42" font-weight="400" text-anchor="middle">无需重建像素</text>
+<polyline points="385,942 450,942" fill="none" stroke="#19735e" stroke-width="3" marker-end="url(#green)" />
+<polyline points="845,942 910,942" fill="none" stroke="#19735e" stroke-width="3" marker-end="url(#green)" />
+<polyline points="1250,942 1315,942" fill="none" stroke="#19735e" stroke-width="3" marker-end="url(#green)" />
+<text x="55" y="1062" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="22" fill="#172d42" font-weight="400" text-anchor="start">下游训练可选择：冻结编码器的线性探测、部分微调、全量微调；这些评估协议不能混排</text>
+<text x="55" y="1112" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="21" fill="#172d42" font-weight="400" text-anchor="start">原创机制重绘依据：MAE §3、表1、附录A.1；De / Dd为符号宽度，特殊token从patch计数中省略</text>
+</svg>

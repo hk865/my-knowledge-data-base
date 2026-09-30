@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1160" viewBox="0 0 1600 1160">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#526079"/></marker></defs>
+<rect width="1600" height="1160" fill="#f6f8fc"/>
+<g font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif">
+<text x="65" y="72" font-size="40" font-weight="700" fill="#152642">InstructGPT：SFT → 奖励模型 → PPO策略优化</text>
+<text x="65" y="118" font-size="23" font-weight="400" fill="#526079">三类训练数据、四种模型角色  |  原创机制图；实验细节以附录为准</text>
+<rect x="65" y="178" width="435" height="313" rx="18" fill="white" stroke="#315bba" stroke-width="2"/>
+<rect x="65" y="178" width="435" height="54" rx="18" fill="#315bba"/><rect x="65" y="205" width="435" height="27" fill="#315bba"/>
+<text x="87" y="215" font-size="26" font-weight="700" fill="white">1  示范监督 SFT</text>
+<text x="87" y="271" font-size="23" font-weight="400" fill="#152642">数据：(提示x，理想回答y*)</text>
+<text x="87" y="306" font-size="23" font-weight="400" fill="#152642">预训练GPT-3 → 更新策略</text>
+<text x="87" y="341" font-size="23" font-weight="400" fill="#152642">目标：提高示范回答token似然</text>
+<text x="87" y="376" font-size="23" font-weight="400" fill="#152642"></text>
+<text x="87" y="411" font-size="23" font-weight="400" fill="#152642">展示SFT基线：16 epochs</text>
+<text x="87" y="446" font-size="23" font-weight="400" fill="#152642">PPO初始化：2 epochs + 10% ptx</text>
+<rect x="580" y="178" width="435" height="313" rx="18" fill="white" stroke="#7550ad" stroke-width="2"/>
+<rect x="580" y="178" width="435" height="54" rx="18" fill="#7550ad"/><rect x="580" y="205" width="435" height="27" fill="#7550ad"/>
+<text x="602" y="215" font-size="26" font-weight="700" fill="white">2  偏好学习 RM</text>
+<text x="602" y="271" font-size="23" font-weight="400" fill="#152642">同一提示采样4–9份回答</text>
+<text x="602" y="306" font-size="23" font-weight="400" fill="#152642">人排序 → 组成winner / loser</text>
+<text x="602" y="341" font-size="23" font-weight="400" fill="#152642">6B模型输出标量rφ(x,y)</text>
+<text x="602" y="376" font-size="23" font-weight="400" fill="#152642">L = −E log σ(r_w − r_l)</text>
+<text x="602" y="411" font-size="23" font-weight="400" fill="#152642">每个提示的所有比较一起训练</text>
+<text x="602" y="446" font-size="23" font-weight="400" fill="#152642">最终RM初始化详见附录C.2</text>
+<rect x="1095" y="178" width="440" height="313" rx="18" fill="white" stroke="#087e83" stroke-width="2"/>
+<rect x="1095" y="178" width="440" height="54" rx="18" fill="#087e83"/><rect x="1095" y="205" width="440" height="27" fill="#087e83"/>
+<text x="1117" y="215" font-size="26" font-weight="700" fill="white">3  在线优化 PPO</text>
+<text x="1117" y="271" font-size="23" font-weight="400" fill="#152642">提示 → 当前策略生成回答</text>
+<text x="1117" y="306" font-size="23" font-weight="400" fill="#152642">RM给奖励 + reference给KL项</text>
+<text x="1117" y="341" font-size="23" font-weight="400" fill="#152642">critic估计value / advantage</text>
+<text x="1117" y="376" font-size="23" font-weight="400" fill="#152642">PPO clip更新生成策略</text>
+<text x="1117" y="411" font-size="23" font-weight="400" fill="#152642">PPO-ptx另加入预训练梯度</text>
+<text x="1117" y="446" font-size="23" font-weight="400" fill="#152642">默认InstructGPT指PPO-ptx</text>
+<path d="M503,307 L577,307" fill="none" stroke="#526079" stroke-width="3" marker-end="url(#arrow)" />
+<path d="M1018,307 L1092,307" fill="none" stroke="#526079" stroke-width="3" marker-end="url(#arrow)" />
+<text x="65" y="559" font-size="25" font-weight="700" fill="#087e83">PPO阶段：不要把四个角色混在一起</text>
+<rect x="65" y="589" width="326" height="245" rx="18" fill="white" stroke="#087e83" stroke-width="2"/>
+<rect x="65" y="589" width="326" height="54" rx="18" fill="#087e83"/><rect x="65" y="616" width="326" height="27" fill="#087e83"/>
+<text x="87" y="626" font-size="26" font-weight="700" fill="white">Actor πθ</text>
+<text x="87" y="682" font-size="23" font-weight="400" fill="#152642">可训练</text>
+<text x="87" y="717" font-size="23" font-weight="400" fill="#152642">自回归生成回答</text>
+<text x="87" y="752" font-size="23" font-weight="400" fill="#152642">接收PPO策略梯度</text>
+<text x="87" y="787" font-size="23" font-weight="400" fill="#152642">另可加入预训练梯度</text>
+<rect x="446" y="589" width="326" height="245" rx="18" fill="white" stroke="#315bba" stroke-width="2"/>
+<rect x="446" y="589" width="326" height="54" rx="18" fill="#315bba"/><rect x="446" y="616" width="326" height="27" fill="#315bba"/>
+<text x="468" y="626" font-size="26" font-weight="700" fill="white">Reference πref</text>
+<text x="468" y="682" font-size="23" font-weight="400" fill="#152642">冻结</text>
+<text x="468" y="717" font-size="23" font-weight="400" fill="#152642">PPO起点的监督策略</text>
+<text x="468" y="752" font-size="23" font-weight="400" fill="#152642">计算相对SFT的log比</text>
+<text x="468" y="787" font-size="23" font-weight="400" fill="#152642">用于KL奖励惩罚</text>
+<rect x="827" y="589" width="326" height="245" rx="18" fill="white" stroke="#7550ad" stroke-width="2"/>
+<rect x="827" y="589" width="326" height="54" rx="18" fill="#7550ad"/><rect x="827" y="616" width="326" height="27" fill="#7550ad"/>
+<text x="849" y="626" font-size="26" font-weight="700" fill="white">Reward rφ</text>
+<text x="849" y="682" font-size="23" font-weight="400" fill="#152642">冻结</text>
+<text x="849" y="717" font-size="23" font-weight="400" fill="#152642">输入完整提示+回答</text>
+<text x="849" y="752" font-size="23" font-weight="400" fill="#152642">评估回答相对质量</text>
+<text x="849" y="787" font-size="23" font-weight="400" fill="#152642">提供终端标量奖励</text>
+<rect x="1208" y="589" width="327" height="245" rx="18" fill="white" stroke="#b56119" stroke-width="2"/>
+<rect x="1208" y="589" width="327" height="54" rx="18" fill="#b56119"/><rect x="1208" y="616" width="327" height="27" fill="#b56119"/>
+<text x="1230" y="626" font-size="26" font-weight="700" fill="white">Critic Vψ</text>
+<text x="1230" y="682" font-size="23" font-weight="400" fill="#152642">可训练</text>
+<text x="1230" y="717" font-size="23" font-weight="400" fill="#152642">由6B RM初始化</text>
+<text x="1230" y="752" font-size="23" font-weight="400" fill="#152642">估计后续回报</text>
+<text x="1230" y="787" font-size="23" font-weight="400" fill="#152642">用来构造低方差优势</text>
+<rect x="65" y="886" width="1470" height="180" rx="18" fill="white" stroke="#315bba" stroke-width="2"/>
+<rect x="65" y="886" width="1470" height="54" rx="18" fill="#315bba"/><rect x="65" y="913" width="1470" height="27" fill="#315bba"/>
+<text x="87" y="923" font-size="26" font-weight="700" fill="white">两个必须分开的对象</text>
+<text x="87" y="979" font-size="23" font-weight="400" fill="#152642">优化目标：E[rφ(x,y) − β log(πθ(y|x) / πref(y|x))] + γ E_pretrain[log πθ(z)]</text>
+<text x="87" y="1014" font-size="23" font-weight="400" fill="#152642">PPO的old策略：本轮采样快照，用于clip概率比；reference：固定SFT，用于行为正则</text>
+<text x="87" y="1049" font-size="23" font-weight="400" fill="#152642">推理通常只保留最终Actor；训练期有RM，不代表每次回答都在线打分和更新</text>
+<text x="65" y="1125" font-size="20" font-weight="400" fill="#526079">来源：InstructGPT 图2、式1–2、§3.5、附录C.1–C.4  |  arXiv:2203.02155v1</text>
+</g></svg>

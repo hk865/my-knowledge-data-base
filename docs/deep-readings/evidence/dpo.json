@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "paper": {
+    "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+    "arxiv": "2305.18290",
+    "version": "v3",
+    "version_date": "2024-07-29",
+    "pdf_pages": 27,
+    "source_url": "https://arxiv.org/pdf/2305.18290v3",
+    "local_pdf_sha256": "92cb3a2b71362acda98a789b03d88688fd33cf5fcf13f81d2b1de30ee7d3b67a"
+  },
+  "review_date": "2026-09-30",
+  "full_text_access": "success_pdf_and_text",
+  "coverage": "main body and relevant appendices; exclusions documented in coverage.md",
+  "claims": [
+    {
+      "id": "dpo-objective",
+      "claim": "固定奖励的KL正则最优策略pi*=piref exp(r/beta)/Z",
+      "locator": "Eq.3–4; Appendix A.1",
+      "pdf_page": 4,
+      "url": "https://arxiv.org/pdf/2305.18290v3#page=4",
+      "kind": "derivation"
+    },
+    {
+      "id": "dpo-cancel",
+      "claim": "奖励重参数化、同一提示Z抵消得到DPO损失",
+      "locator": "Eq.5–7; Appendix A.2",
+      "pdf_page": 4,
+      "url": "https://arxiv.org/pdf/2305.18290v3#page=4",
+      "kind": "derivation"
+    },
+    {
+      "id": "dpo-gradient",
+      "claim": "正确梯度为-beta sigma(r_l-r_w)[gradlogpi_w-gradlogpi_l]",
+      "locator": "§4; Eq.7; Appendix B code",
+      "pdf_page": 5,
+      "url": "https://arxiv.org/pdf/2305.18290v3#page=5",
+      "kind": "derivation"
+    },
+    {
+      "id": "dpo-appendix_sign",
+      "claim": "A.4中间式符号与主式7/实现不同；已视觉复核第17页",
+      "locator": "Appendix A.4 vs Eq.7 and Appendix B",
+      "pdf_page": 17,
+      "url": "https://arxiv.org/pdf/2305.18290v3#page=17",
+      "kind": "internal_consistency_check"
+    },
+    {
+      "id": "dpo-support",
+      "claim": "等价类表示条件包含piref正支持及beta>0，一般策略空间不代表有限网络最优",
+      "locator": "§5; Appendix A.6",
+      "pdf_page": 18,
+      "url": "https://arxiv.org/pdf/2305.18290v3#page=18",
+      "kind": "assumption"
+    },
+    {
+      "id": "dpo-config",
+      "claim": "默认beta.1/batch64/RMSprop/lr1e-6/150warmup；摘要beta.5",
+      "locator": "Appendix B",
+      "pdf_page": 20,
+      "url": "https://arxiv.org/pdf/2305.18290v3#page=20",
+      "kind": "numeric"
+    },
+    {
+      "id": "dpo-sentiment",
+      "claim": "25k前缀各4回答6对，分类器是实验groundtruth；比较reward-KL前沿",
+      "locator": "§6.1; Appendix C.1",
+      "pdf_page": 8,
+      "url": "https://arxiv.org/pdf/2305.18290v3#page=8",
+      "kind": "method"
+    },
+    {
+      "id": "dpo-summary",
+      "claim": "GPT4相对参考摘要胜率DPO约61% vsPPO57%，各最佳temp0",
+      "locator": "§6.2; Figure 2 right",
+      "pdf_page": 9,
+      "url": "https://arxiv.org/pdf/2305.18290v3#page=9",
+      "kind": "numeric_with_scope"
+    },
+    {
+      "id": "dpo-human",
+      "claim": "直接人工DPOtemp.25 vsPPOtemp0胜率58；GPT4C54/S47",
+      "locator": "§6.4; Table 2",
+      "pdf_page": 10,
+      "url": "https://arxiv.org/pdf/2305.18290v3#page=10",
+      "kind": "numeric"
+    },
+    {
+      "id": "dpo-ood",
+      "claim": "CNN/DM相对参考摘要win rate temp0 .36/.26，temp.25 .31/.23",
+      "locator": "§6.3; Table 1",
+      "pdf_page": 9,
+      "url": "https://arxiv.org/pdf/2305.18290v3#page=9",
+      "kind": "numeric"
+    },
+    {
+      "id": "dpo-dialogue",
+      "claim": "对话未获得强PPO直接对照，best-of128仅粗略proxy",
+      "locator": "§6.2",
+      "pdf_page": 9,
+      "url": "https://arxiv.org/pdf/2305.18290v3#page=9",
+      "kind": "limitation"
+    },
+    {
+      "id": "dpo-unlikelihood",
+      "claim": "朴素负向概率目标在摘要/对话退化，best-ofN约64–128平台",
+      "locator": "Appendix C.3, Table 3; D.1, Figure 4",
+      "pdf_page": 22,
+      "url": "https://arxiv.org/pdf/2305.18290v3#page=22",
+      "kind": "ablation"
+    },
+    {
+      "id": "dpo-judge",
+      "claim": "表10中GPT4错判7+2=11；样例展示裁判局限",
+      "locator": "Appendix D.2, Table 10",
+      "pdf_page": 26,
+      "url": "https://arxiv.org/pdf/2305.18290v3#page=26",
+      "kind": "limitation"
+    },
+    {
+      "id": "dpo-maxsize",
+      "claim": "实验最大约6B；规模、OOD、过优化与未标注提示利用仍待研究",
+      "locator": "§7",
+      "pdf_page": 10,
+      "url": "https://arxiv.org/pdf/2305.18290v3#page=10",
+      "kind": "limitation"
+    }
+  ],
+  "diagram": {
+    "svg": "dpo.svg",
+    "png": "dpo.png",
+    "original": true,
+    "visual_inspection": "passed",
+    "description": "Original explanatory diagram based on cited method; not a reproduced paper figure"
+  },
+  "not_claimed": [
+    "independent experimental reproduction",
+    "exhaustive verification of every qualitative sample",
+    "coverage of every later variant"
+  ],
+  "artifact_note": "dpo.md"
+}

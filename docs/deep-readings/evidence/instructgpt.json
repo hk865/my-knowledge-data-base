@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "paper": {
+    "title": "Training language models to follow instructions with human feedback",
+    "arxiv": "2203.02155",
+    "version": "v1",
+    "version_date": "2022-03-04",
+    "pdf_pages": 68,
+    "source_url": "https://arxiv.org/pdf/2203.02155v1",
+    "local_pdf_sha256": "c1984bb50a5b90fddb895fdc3a0f72e5bc977148c9f63ef6040cbe7a3e1f0d98"
+  },
+  "review_date": "2026-09-30",
+  "full_text_access": "success_pdf_and_text",
+  "coverage": "main body and relevant appendices; exclusions documented in coverage.md",
+  "claims": [
+    {
+      "id": "instructgpt-pipeline",
+      "claim": "三阶段SFT→RM→PPO；PPO-ptx额外混合预训练梯度",
+      "locator": "Figure 2; §3.1, §3.5; Eq.1–2",
+      "pdf_page": 3,
+      "url": "https://arxiv.org/pdf/2203.02155v1#page=3",
+      "kind": "method"
+    },
+    {
+      "id": "instructgpt-data",
+      "claim": "SFT训练12,725提示、RM33,207、PPO31,144；RM候选4–9",
+      "locator": "Table 6; Table 9; §3.5",
+      "pdf_page": 33,
+      "url": "https://arxiv.org/pdf/2203.02155v1#page=33",
+      "kind": "numeric"
+    },
+    {
+      "id": "instructgpt-split",
+      "claim": "按用户ID拆分，每用户上限200；生产API数据不用于本研究",
+      "locator": "§3.2",
+      "pdf_page": 6,
+      "url": "https://arxiv.org/pdf/2203.02155v1#page=6",
+      "kind": "method"
+    },
+    {
+      "id": "instructgpt-sft",
+      "claim": "展示SFT16 epochs；验证loss过拟合但偏好继续改善",
+      "locator": "§3.5; Appendix C.1",
+      "pdf_page": 8,
+      "url": "https://arxiv.org/pdf/2203.02155v1#page=8",
+      "kind": "method"
+    },
+    {
+      "id": "instructgpt-init",
+      "claim": "PPO起点2 epochs+10%预训练mix，不是展示用16 epoch基线",
+      "locator": "Appendix C.3",
+      "pdf_page": 42,
+      "url": "https://arxiv.org/pdf/2203.02155v1#page=42",
+      "kind": "method"
+    },
+    {
+      "id": "instructgpt-rm_init",
+      "claim": "最终6B RM由公开NLP任务微调的GPT-3初始化，其他初始化类似",
+      "locator": "Appendix C.2",
+      "pdf_page": 41,
+      "url": "https://arxiv.org/pdf/2203.02155v1#page=41",
+      "kind": "method"
+    },
+    {
+      "id": "instructgpt-ppo_config",
+      "claim": "256k episodes、batch512/minibatch64、1 inner epoch、clip.2、beta.02、gamma27.8",
+      "locator": "Appendix C.4",
+      "pdf_page": 42,
+      "url": "https://arxiv.org/pdf/2203.02155v1#page=42",
+      "kind": "numeric"
+    },
+    {
+      "id": "instructgpt-win",
+      "claim": "175B PPO-ptx vs GPT3 85±3%，vs promptedGPT3 71±4%",
+      "locator": "§4.1",
+      "pdf_page": 11,
+      "url": "https://arxiv.org/pdf/2203.02155v1#page=11",
+      "kind": "numeric"
+    },
+    {
+      "id": "instructgpt-hallucination",
+      "claim": "封闭域任务幻觉约21% vs41%；非通用事实错误率",
+      "locator": "§1; §4.1; Figure 4",
+      "pdf_page": 3,
+      "url": "https://arxiv.org/pdf/2203.02155v1#page=3",
+      "kind": "numeric_with_scope"
+    },
+    {
+      "id": "instructgpt-tax",
+      "claim": "175B fewshot SQuADv2 GPT/PPO/PPOptx69.75/51.95/69.93；DROP35.27/27.78/33.34",
+      "locator": "Table 14",
+      "pdf_page": 56,
+      "url": "https://arxiv.org/pdf/2203.02155v1#page=56",
+      "kind": "numeric"
+    },
+    {
+      "id": "instructgpt-ptx_ablation",
+      "claim": "1.3B gamma>=20修复所测回归；beta到2未完全修复",
+      "locator": "Appendix E.6; Figures 33–34",
+      "pdf_page": 53,
+      "url": "https://arxiv.org/pdf/2203.02155v1#page=53",
+      "kind": "ablation"
+    },
+    {
+      "id": "instructgpt-labelers",
+      "claim": "RM训练标注组72.4±.4、留出组69.6±.9；来自同供应渠道",
+      "locator": "§4.1; Appendix E.2",
+      "pdf_page": 12,
+      "url": "https://arxiv.org/pdf/2203.02155v1#page=12",
+      "kind": "numeric_with_scope"
+    },
+    {
+      "id": "instructgpt-safety",
+      "claim": "毒性收益依赖respectful提示；biased提示可更有毒，偏见未一致改善",
+      "locator": "§4.2; Figures 7,32,39",
+      "pdf_page": 14,
+      "url": "https://arxiv.org/pdf/2203.02155v1#page=14",
+      "kind": "limitation"
+    },
+    {
+      "id": "instructgpt-instructions",
+      "claim": "训练标注帮助性优先，最终评测真实性与无害性优先",
+      "locator": "Appendix B.2",
+      "pdf_page": 36,
+      "url": "https://arxiv.org/pdf/2203.02155v1#page=36",
+      "kind": "method"
+    },
+    {
+      "id": "instructgpt-cost",
+      "claim": "175B SFT4.9、PPOptx60、GPT3预训练3640 petaflop/s-days",
+      "locator": "§5.1",
+      "pdf_page": 17,
+      "url": "https://arxiv.org/pdf/2203.02155v1#page=17",
+      "kind": "numeric"
+    }
+  ],
+  "diagram": {
+    "svg": "instructgpt.svg",
+    "png": "instructgpt.png",
+    "original": true,
+    "visual_inspection": "passed",
+    "description": "Original explanatory diagram based on cited method; not a reproduced paper figure"
+  },
+  "not_claimed": [
+    "independent experimental reproduction",
+    "exhaustive verification of every qualitative sample",
+    "coverage of every later variant"
+  ],
+  "artifact_note": "instructgpt.md"
+}

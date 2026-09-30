@@ -1,0 +1,60 @@
+{
+  "paper_key": "orb-slam3",
+  "version": "arXiv:2007.11898v2; 2021-04-23",
+  "total_pdf_pages": 18,
+  "fulltext_obtained": true,
+  "reading_status": "fulltext_read",
+  "sections": [
+    {
+      "section": "I–II",
+      "pages": "2–5",
+      "status": "read",
+      "focus": "Contribution scope and antecedents"
+    },
+    {
+      "section": "III–IV",
+      "pages": "5–6",
+      "status": "read",
+      "focus": "Atlas, threads, camera models"
+    },
+    {
+      "section": "V",
+      "pages": "6–9",
+      "status": "read",
+      "focus": "State, MAP objective, initialization, tracking loss"
+    },
+    {
+      "section": "VI",
+      "pages": "9–11",
+      "status": "read",
+      "focus": "Place recognition, merging, loop closing"
+    },
+    {
+      "section": "VII",
+      "pages": "11–15",
+      "status": "read",
+      "focus": "All tables II–VII, metrics, configurations and failures"
+    },
+    {
+      "section": "VIII",
+      "pages": "14–16",
+      "status": "read",
+      "focus": "Limitations and future work"
+    },
+    {
+      "section": "Supplement in this PDF",
+      "pages": "16–18",
+      "status": "inspected",
+      "focus": "References and author biographies; no technical appendix"
+    }
+  ],
+  "references": "inspected for provenance, not a claim of reading cited works",
+  "unread_technical_sections": [],
+  "limitations": [
+    "No independent code execution or benchmark reproduction"
+  ],
+  "visual_qa": [
+    "Original SVG rendered to PNG and visually inspected"
+  ],
+  "cache_publication": "Raw PDFs and text caches are excluded from public manifest"
+}

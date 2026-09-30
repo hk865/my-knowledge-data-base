@@ -1,0 +1,124 @@
+{
+  "paper_slug": "openvla",
+  "arxiv": "2406.09246",
+  "version": "v1",
+  "primary_url": "https://arxiv.org/pdf/2406.09246v1",
+  "checked_on": "2026-09-30",
+  "source_sha256": "9d44351d8ca2aafc11b28949c99d9a99bd1403598fcf9cca042bbfda2dceb706",
+  "reading_coverage": {
+    "status": "全文精读完成；非实验复现",
+    "main_text": "Sec.1–6全部阅读，含训练、数据、硬件、实验、局限",
+    "appendices": "A数据混合，B所有任务定义与Tables4–6，C清洗与RT-2-X查询细节全文阅读",
+    "references": "pp.12–20引用条目用于前序方法定位，不声称被引论文全文覆盖",
+    "visual_checks": [
+      "Fig.2 architecture on PDF p.4"
+    ],
+    "version_note": "固定2024-06-13 v1；不把后续v3或OFT能力写入原基线"
+  },
+  "claim_evidence": [
+    {
+      "id": "ovla-01",
+      "claim": "单图像与语言输入，DINOv2+SigLIP patch特征通道拼接，2层MLP投影，Llama2动作token解码",
+      "locator": "Fig.2 p.4; Sec.3.1",
+      "caveat": "原版无多帧/本体/多相机接口；后续扩展不纳入"
+    },
+    {
+      "id": "ovla-02",
+      "claim": "每动作维256桶，覆盖1%至99%分位；覆盖词表末尾256低频token，动作位置交叉熵",
+      "locator": "Sec.3.2 p.5",
+      "caveat": "文中方程为教学性明确化；不把动作token当自然语言动作指令"
+    },
+    {
+      "id": "ovla-03",
+      "claim": "训练约970k真实机器人轨迹，单臂末端控制+第三人称视角；DROID10%只在前2/3训练保留",
+      "locator": "Sec.3.3 p.5; Appendix A Table3 p.21",
+      "caveat": "数据混合有时间变化，不是全程静态权重"
+    },
+    {
+      "id": "ovla-04",
+      "claim": "224×224，27epochs，学习率2e-5，batch2048，64A100×14天，约21500A100-hours",
+      "locator": "Sec.3.4–3.5 p.6",
+      "caveat": "算力为作者报告近似值；实际复现未执行"
+    },
+    {
+      "id": "ovla-05",
+      "claim": "BridgeData170rollouts，OpenVLA70.6±3.2% vsRT2X50.6±3.5%；Google60rollouts，85.0±4.6% vs78.3±5.4%",
+      "locator": "Tables4–5 pp.26,28",
+      "caveat": "BridgeData若干任务含0.5部分分；Google0/1；误差为StdErr"
+    },
+    {
+      "id": "ovla-06",
+      "claim": "16.5个百分点与两个平台共230rollouts加权汇总一致",
+      "locator": "Abstract; Tables4–5",
+      "caveat": "Table4积分120 vs86、Table5成功51 vs47；(171−133)/230=16.52pp；不是29任务等权平均"
+    },
+    {
+      "id": "ovla-07",
+      "claim": "OpenVLA语义泛化类别弱于RT2X，后者同时有互联网/机器人数据co-finetune",
+      "locator": "Sec.5.1 p.8; Fig.3",
+      "caveat": "作者提出原因，不能作为隔离因果消融结论"
+    },
+    {
+      "id": "ovla-08",
+      "claim": "Franka-Tabletop67.2±4.0% vsDP48.5±4.9%；DROID58.3±7.2% vs35.0±8.0%",
+      "locator": "Table6 p.31",
+      "caveat": "Tabletop部分任务含0.5分，DROID0/1/2评分再归一化"
+    },
+    {
+      "id": "ovla-09",
+      "claim": "倒玉米域内DP100% vsOpenVLA50%；移指定物到盘子域内25% vs75%",
+      "locator": "Table6 p.31",
+      "caveat": "DP在部分窄任务胜出；非全面替代"
+    },
+    {
+      "id": "ovla-10",
+      "claim": "完整DP含2帧历史、本体、动作块、绝对位置；matched版本去除这些并单步相对动作",
+      "locator": "Sec.5.2 footnote3 p.9",
+      "caveat": "OpenVLA(scratch)仍从预训练Prismatic VLM开始"
+    },
+    {
+      "id": "ovla-11",
+      "claim": "LoRA rank32为68.2±7.5%/97.6M可训练参数/59.7GB batch16；Full FT69.7±7.2%/163.3GB",
+      "locator": "Table1 p.10",
+      "caveat": "效率实验使用小数据混合、SigLIP-only模型，非最终融合视觉主模型"
+    },
+    {
+      "id": "ovla-12",
+      "claim": "bfloat16 71.3±4.8%/16.8GB；int8 58.1±5.1%/10.2GB；int4 71.9±4.7%/7.0GB",
+      "locator": "Table2 p.10; Sec.5.4 p.11",
+      "caveat": "同样使用SigLIP-only变体；80rollouts，8任务"
+    },
+    {
+      "id": "ovla-13",
+      "claim": "A5000上int8约1.2Hz、int4约3Hz，数据控制频率5Hz；作者将性能损失主要归为延迟",
+      "locator": "Sec.5.4 p.11",
+      "caveat": "作者解释，不是独立因果证明；离线token准确率相近"
+    },
+    {
+      "id": "ovla-14",
+      "claim": "过滤BridgeData每条示范首转移全零动作；RT2X用第二高概率动作查询减轻冻结",
+      "locator": "Appendix C pp.31–32",
+      "caveat": "对比存在数据预处理和接口差异，不能归因为架构单变量"
+    },
+    {
+      "id": "ovla-15",
+      "claim": "基础组件开放权重，不公开完整原始训练数据和训练代码",
+      "locator": "p.2 footnote1; Sec.3.1 p.4",
+      "caveat": "不把OpenVLA开放声称扩大到从头重建所有基础模型"
+    }
+  ],
+  "reproduction_limits": [
+    "没有代码commit级复现或环境依赖核验",
+    "没有实际训练、量化或真实机器人rollout",
+    "没有把摘要20.4%进一步推导成跨论文可比指标，正文采用可定位分平台表格",
+    "LoRA与量化结论不能保证所有GPU/批量/最终模型成立",
+    "模拟和实机安全约束需要独立控制系统；本文无部署保证"
+  ],
+  "diagram": {
+    "svg": "openvla_mechanism.svg",
+    "png": "openvla_mechanism.png",
+    "original": true,
+    "visual_qa": "PNG opened and inspected; no clipped labels or overlaps",
+    "meaning": "Conceptual data flow; not a complete computational graph"
+  }
+}

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1160" viewBox="0 0 1600 1160">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#526079"/></marker></defs>
+<rect width="1600" height="1160" fill="#f6f8fc"/>
+<g font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif">
+<text x="65" y="72" font-size="40" font-weight="700" fill="#152642">GPT-3：预训练更新权重，ICL改变输入条件</text>
+<text x="65" y="118" font-size="23" font-weight="400" fill="#526079">自回归预训练与上下文学习基线  |  原创机制图，非论文原图</text>
+<text x="65" y="177" font-size="25" font-weight="700" fill="#087e83">A  预训练：有梯度更新</text>
+<rect x="65" y="207" width="420" height="225" rx="18" fill="white" stroke="#315bba" stroke-width="2"/>
+<rect x="65" y="207" width="420" height="54" rx="18" fill="#315bba"/><rect x="65" y="234" width="420" height="27" fill="#315bba"/>
+<text x="87" y="244" font-size="26" font-weight="700" fill="white">语料与数据处理</text>
+<text x="87" y="300" font-size="23" font-weight="400" fill="#152642">Common Crawl + 高质量来源</text>
+<text x="87" y="335" font-size="23" font-weight="400" fill="#152642">质量重采样 → 模糊去重</text>
+<text x="87" y="370" font-size="23" font-weight="400" fill="#152642">按权重混合 → 打包2048 tokens</text>
+<text x="87" y="405" font-size="23" font-weight="400" fill="#152642">文档间以结束标记区分</text>
+<rect x="582" y="207" width="420" height="225" rx="18" fill="white" stroke="#315bba" stroke-width="2"/>
+<rect x="582" y="207" width="420" height="54" rx="18" fill="#315bba"/><rect x="582" y="234" width="420" height="27" fill="#315bba"/>
+<text x="604" y="244" font-size="26" font-weight="700" fill="white">因果语言模型</text>
+<text x="604" y="300" font-size="23" font-weight="400" fill="#152642">token前缀 → Transformer</text>
+<text x="604" y="335" font-size="23" font-weight="400" fill="#152642">交替稠密 / 局部稀疏注意力</text>
+<text x="604" y="370" font-size="23" font-weight="400" fill="#152642">pθ(zₜ | z＜ₜ)</text>
+<text x="604" y="405" font-size="23" font-weight="400" fill="#152642">teacher forcing并行算各位置</text>
+<rect x="1099" y="207" width="436" height="225" rx="18" fill="white" stroke="#315bba" stroke-width="2"/>
+<rect x="1099" y="207" width="436" height="54" rx="18" fill="#315bba"/><rect x="1099" y="234" width="436" height="27" fill="#315bba"/>
+<text x="1121" y="244" font-size="26" font-weight="700" fill="white">下一个token目标</text>
+<text x="1121" y="300" font-size="23" font-weight="400" fill="#152642">L = −E Σ log pθ(zₜ | z＜ₜ)</text>
+<text x="1121" y="335" font-size="23" font-weight="400" fill="#152642">Adam反向传播更新θ</text>
+<text x="1121" y="370" font-size="23" font-weight="400" fill="#152642">8种规模，125M → 175B</text>
+<text x="1121" y="405" font-size="23" font-weight="400" fill="#152642">每个模型训练300B tokens</text>
+<path d="M487,318 L578,318" fill="none" stroke="#526079" stroke-width="3" marker-end="url(#arrow)" />
+<path d="M1004,318 L1095,318" fill="none" stroke="#526079" stroke-width="3" marker-end="url(#arrow)" />
+<path d="M1315,436 L1315,470 L790,470 L790,438" fill="none" stroke="#526079" stroke-width="3" marker-end="url(#arrow)" />
+<text x="1000" y="500" font-size="23" font-weight="700" fill="#b56119">梯度更新：参数发生变化</text>
+<text x="65" y="564" font-size="25" font-weight="700" fill="#087e83">B  评测 / 使用：冻结权重，仅前向计算</text>
+<rect x="65" y="596" width="420" height="260" rx="18" fill="white" stroke="#087e83" stroke-width="2"/>
+<rect x="65" y="596" width="420" height="54" rx="18" fill="#087e83"/><rect x="65" y="623" width="420" height="27" fill="#087e83"/>
+<text x="87" y="633" font-size="26" font-weight="700" fill="white">把任务写进上下文</text>
+<text x="87" y="689" font-size="23" font-weight="400" fill="#152642">任务说明</text>
+<text x="87" y="724" font-size="23" font-weight="400" fill="#152642">示例1：输入 → 答案</text>
+<text x="87" y="759" font-size="23" font-weight="400" fill="#152642">… 示例K：输入 → 答案</text>
+<text x="87" y="794" font-size="23" font-weight="400" fill="#152642">新输入 → ？</text>
+<text x="87" y="829" font-size="23" font-weight="400" fill="#152642">K=0 / 1 / 多个示例</text>
+<rect x="582" y="596" width="420" height="260" rx="18" fill="white" stroke="#087e83" stroke-width="2"/>
+<rect x="582" y="596" width="420" height="54" rx="18" fill="#087e83"/><rect x="582" y="623" width="420" height="27" fill="#087e83"/>
+<text x="604" y="633" font-size="26" font-weight="700" fill="white">同一个预训练模型</text>
+<text x="604" y="689" font-size="23" font-weight="400" fill="#152642">固定θ，不做梯度微调</text>
+<text x="604" y="724" font-size="23" font-weight="400" fill="#152642">读取全部允许的前缀</text>
+<text x="604" y="759" font-size="23" font-weight="400" fill="#152642">生成下一个token</text>
+<text x="604" y="794" font-size="23" font-weight="400" fill="#152642">将新token拼回前缀</text>
+<text x="604" y="829" font-size="23" font-weight="400" fill="#152642">继续生成或比较候选概率</text>
+<rect x="1099" y="596" width="436" height="260" rx="18" fill="white" stroke="#087e83" stroke-width="2"/>
+<rect x="1099" y="596" width="436" height="54" rx="18" fill="#087e83"/><rect x="1099" y="623" width="436" height="27" fill="#087e83"/>
+<text x="1121" y="633" font-size="26" font-weight="700" fill="white">输出与任务评估</text>
+<text x="1121" y="689" font-size="23" font-weight="400" fill="#152642">生成：F1 / BLEU / exact match</text>
+<text x="1121" y="724" font-size="23" font-weight="400" fill="#152642">选择题：候选条件概率评分</text>
+<text x="1121" y="759" font-size="23" font-weight="400" fill="#152642">示例格式、抽样、K都会影响结果</text>
+<text x="1121" y="794" font-size="23" font-weight="400" fill="#152642">ICL ≠ 权重更新</text>
+<text x="1121" y="829" font-size="23" font-weight="400" fill="#152642">流畅 ≠ 真实 / 服从指令</text>
+<path d="M487,730 L578,730" fill="none" stroke="#526079" stroke-width="3" marker-end="url(#arrow)" />
+<path d="M1004,730 L1095,730" fill="none" stroke="#526079" stroke-width="3" marker-end="url(#arrow)" />
+<path d="M790,505 L790,588" fill="none" stroke="#526079" stroke-width="3" marker-end="url(#arrow)" stroke-dasharray="9 6"/>
+<text x="797.0" y="534.5" font-size="20" font-weight="400" fill="#526079">保留训练后的θ</text>
+<rect x="65" y="910" width="1470" height="150" rx="18" fill="white" stroke="#7550ad" stroke-width="2"/>
+<rect x="65" y="910" width="1470" height="54" rx="18" fill="#7550ad"/><rect x="65" y="937" width="1470" height="27" fill="#7550ad"/>
+<text x="87" y="947" font-size="26" font-weight="700" fill="white">读实验的边界</text>
+<text x="87" y="1003" font-size="23" font-weight="400" fill="#152642">LAMBADA few-shot 86.4%；SuperGLUE 71.8；WiC 49.4%，能力并不均匀</text>
+<text x="87" y="1038" font-size="23" font-weight="400" fill="#152642">测试污染需独立审计；本篇没有比较全部预训练目标，也没有训练RLHF助手</text>
+<text x="65" y="1125" font-size="20" font-weight="400" fill="#526079">来源：GPT-3 §2–5，表2.1–2.2、3.2、3.8，附录A–C  |  arXiv:2005.14165v4</text>
+</g></svg>

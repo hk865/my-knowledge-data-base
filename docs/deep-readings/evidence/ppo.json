@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "paper": {
+    "title": "Proximal Policy Optimization Algorithms",
+    "arxiv": "1707.06347",
+    "version": "v2",
+    "version_date": "2017-08-28",
+    "pdf_pages": 12,
+    "source_url": "https://arxiv.org/pdf/1707.06347v2",
+    "local_pdf_sha256": "e78feadadbdbb0b601b3c2bcc81404722cd431a489b307545f9b7bea1e8c4f5b"
+  },
+  "review_date": "2026-09-30",
+  "full_text_access": "success_pdf_and_text",
+  "coverage": "main body and relevant appendices; exclusions documented in coverage.md",
+  "claims": [
+    {
+      "id": "ppo-pg",
+      "claim": "策略梯度由log策略梯度乘优势构成",
+      "locator": "§2.1, Eq.1–2",
+      "pdf_page": 2,
+      "url": "https://arxiv.org/pdf/1707.06347v2#page=2",
+      "kind": "method"
+    },
+    {
+      "id": "ppo-trpo",
+      "claim": "旧新策略概率比与TRPO KL约束/惩罚背景",
+      "locator": "§2.2, Eq.3–6",
+      "pdf_page": 2,
+      "url": "https://arxiv.org/pdf/1707.06347v2#page=2",
+      "kind": "method"
+    },
+    {
+      "id": "ppo-clip",
+      "claim": "min(ratio*A,clip(ratio)*A)是未裁剪代理项的保守下界",
+      "locator": "§3, Eq.7, Figure 1",
+      "pdf_page": 3,
+      "url": "https://arxiv.org/pdf/1707.06347v2#page=3",
+      "kind": "derivation"
+    },
+    {
+      "id": "ppo-not_hard",
+      "claim": "裁剪目标不等于硬限制每个比值或保证真实回报单调",
+      "locator": "Analysis of Eq.7 and shared-parameter Eq.9",
+      "pdf_page": 3,
+      "url": "https://arxiv.org/pdf/1707.06347v2#page=3",
+      "kind": "original_analysis"
+    },
+    {
+      "id": "ppo-kl_variant",
+      "claim": "自适应KL版本按target/1.5与target*1.5阈值减半/翻倍beta",
+      "locator": "§4, Eq.8",
+      "pdf_page": 4,
+      "url": "https://arxiv.org/pdf/1707.06347v2#page=4",
+      "kind": "method"
+    },
+    {
+      "id": "ppo-gae",
+      "claim": "GAE、value误差和熵项、NT步采样后K轮优化",
+      "locator": "§5, Eq.9–12, Algorithm 1",
+      "pdf_page": 5,
+      "url": "https://arxiv.org/pdf/1707.06347v2#page=5",
+      "kind": "method"
+    },
+    {
+      "id": "ppo-ablation",
+      "claim": "7任务*3种子，1M步；no constraint-.39；clip.1/.2/.3=.76/.82/.70",
+      "locator": "§6.1, Table 1",
+      "pdf_page": 6,
+      "url": "https://arxiv.org/pdf/1707.06347v2#page=6",
+      "kind": "numeric"
+    },
+    {
+      "id": "ppo-atari",
+      "claim": "全程平均回报PPO胜30/ACER18；最终PPO19/ACER28/平1",
+      "locator": "§6.4, Table 2",
+      "pdf_page": 8,
+      "url": "https://arxiv.org/pdf/1707.06347v2#page=8",
+      "kind": "numeric"
+    },
+    {
+      "id": "ppo-hyperparams",
+      "claim": "MuJoCoT2048/10epochs/minibatch64；AtariT128/3epochs/minibatch256",
+      "locator": "Appendix A, Tables 3,5",
+      "pdf_page": 10,
+      "url": "https://arxiv.org/pdf/1707.06347v2#page=10",
+      "kind": "numeric"
+    },
+    {
+      "id": "ppo-games",
+      "claim": "40M帧10M步；EnduroPPO758.3；BreakoutPPO274.8 vsACER456.4",
+      "locator": "Appendix B, Table 6",
+      "pdf_page": 12,
+      "url": "https://arxiv.org/pdf/1707.06347v2#page=12",
+      "kind": "numeric"
+    },
+    {
+      "id": "ppo-scope",
+      "claim": "原始实验为MuJoCo/Roboschool/Atari，不是LLM；LLM说明为应用映射",
+      "locator": "§6; this note application mapping",
+      "pdf_page": 6,
+      "url": "https://arxiv.org/pdf/1707.06347v2#page=6",
+      "kind": "scope_with_original_analysis"
+    }
+  ],
+  "diagram": {
+    "svg": "ppo.svg",
+    "png": "ppo.png",
+    "original": true,
+    "visual_inspection": "passed",
+    "description": "Original explanatory diagram based on cited method; not a reproduced paper figure"
+  },
+  "not_claimed": [
+    "independent experimental reproduction",
+    "exhaustive verification of every qualitative sample",
+    "coverage of every later variant"
+  ],
+  "artifact_note": "ppo.md"
+}
