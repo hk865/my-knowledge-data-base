@@ -374,3 +374,20 @@
 - [ASE: Large-Scale Reusable Adversarial Skill Embeddings for Physically Simulated Characters](paper-catalog.md#p103)
 - [ExBody2: Advanced Expressive Humanoid Whole-Body Control](paper-catalog.md#p104)
 - [BeyondMimic: From Motion Tracking to Versatile Humanoid Control via Guided Diffusion](paper-catalog.md#p105)
+
+## 2026-09-30 细粒度问题导航补充
+
+- 预训练：训练目标与规模规律；数据选择与混合；课程与持续预训练；数据质量与配比；训练目标与监督位置；长上下文课程
+- 后训练 强化学习：策略优化算法；结果与过程奖励；轨迹采样与数据回流；奖励与验证器；长轨迹信用分配；探索与轨迹分布
+- 架构与效率：注意力与状态空间模型；稀疏专家与条件计算；KV cache 与压缩；线性与稀疏注意力；因果掩码与复杂度
+- 视觉生成：图像生成；视频生成；扩散与 Flow；理解与生成的联合学习
+- 视频与时序表征：时序对应与记忆；动作条件视频；预测与时间一致性
+- 世界模型：预测与潜在动力学；结构化与可干预表征；行动条件与规划；几何与物理约束
+- 感知与传感融合：视觉 深度 LiDAR；惯性与多传感器融合；传统 学习与混合方法
+- 导航与规划：几何与运动规划；视觉语言导航；VLA 与 VLN 的任务边界
+- 具身策略与 VLA：动作表示与生成；跨本体与数据；模型 规划与控制接口；模仿学习；机器人强化学习
+
+新维度表示检索入口，未逐篇补贴标签；没有已核验对应论文的子类仍是覆盖缺口。模态与任务作为正交标签。视频时序与世界模型可交叉，不重复计数。
+
+- Q-0930-context → [问题图](model-training-multimodal.md) → [Qwen2.5-1M](paper-catalog.md#p008)
+- Q-0930-sft → [问题图](model-training-multimodal.md) → [InstructGPT](paper-catalog.md#p115)

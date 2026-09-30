@@ -401,7 +401,19 @@
     "resource_kind": "paper",
     "method_tags": [],
     "evaluation_tags": [],
-    "catalog_anchor": "p008"
+    "catalog_anchor": "p008",
+    "research_note_2026_09_30": {
+      "problem": "长上下文能力如何由训练与部署共同支持？",
+      "method": "作者摘要描述长数据合成、渐进预训练、多阶段SFT与稀疏推理优化。",
+      "evidence_boundary": "官方摘要支持多阶段路线描述，不足以证明超长RL轨迹信用分配已解决；未全文精读或复现。",
+      "user_relevance": "2026-09-30 02:29、02:47 UTC关于注意力复杂度、长上下文与RL rollout的实际问题。",
+      "question_ids": [
+        "Q-0930-context"
+      ],
+      "verification_depth": "official_abstract_and_metadata",
+      "checked_at": "2026-09-30",
+      "provenance_note": "沿用已有助手聊天链接；本轮检索时间02:52:48与原记录02:52:50有秒级差异，保留原记录，不算新来源事件。"
+    }
   },
   {
     "original_chat_urls": [
@@ -5771,13 +5783,19 @@
     "doi": null,
     "year": "2022",
     "topic_paths": [
-      "llm/posttraining/preferences"
+      "llm/posttraining/preferences",
+      "llm/posttraining/sft",
+      "llm/posttraining/rl"
     ],
     "detail_topics": [
       "模型训练与多模态"
     ],
     "architecture_tags": [],
-    "supervision_tags": [],
+    "supervision_tags": [
+      "supervised fine-tuning",
+      "human preference",
+      "reinforcement-learning"
+    ],
     "provenance": [
       "previous-starter"
     ],
@@ -5796,7 +5814,19 @@
     },
     "method_tags": [],
     "evaluation_tags": [],
-    "catalog_anchor": "p115"
+    "catalog_anchor": "p115",
+    "research_note_2026_09_30": {
+      "problem": "预训练、示范监督与偏好反馈为何分阶段组织？",
+      "method": "作者使用示范数据监督微调，再使用模型输出排名进行RLHF。",
+      "evidence_boundary": "偏好结果限于作者评估的提示分布；不能推出SFT数据不可混入预训练，也不能直接比较不同定义的损失。未全文精读或复现。",
+      "user_relevance": "2026-09-30 03:10–03:11 UTC关于SFT损失和数据纳入时机的实际问题。",
+      "question_ids": [
+        "Q-0930-sft"
+      ],
+      "verification_depth": "official_abstract_and_metadata",
+      "checked_at": "2026-09-30",
+      "provenance_note": "原有starter；本轮未恢复其历史聊天链接，不标成聊天提取。"
+    }
   },
   {
     "original_chat_urls": [],

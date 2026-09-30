@@ -256,4 +256,22 @@
 
 以下只恢复名称、截断链接或其他不足信息，暂不作为已核验论文入库：Inference Scaling Laws: An Empirical Analysis of Compute-Optimal Inference for LLM Problem-Solving；Self-Refine；PromptAgent；Reflexion；Language Models Don’t Always Say What They Think: Unfaithful Explanations in Chain-of-Thought Prompting；AgentBench；τ-bench；Relational knowledge in attention (reported arXiv 2409.00617)；Later-layer factual formation (reported arXiv 2606.07978)；https://www.mdpi.com/1424-8220/26/17/5595；PointWorld (historical label)；名称与链接均待核；名称与链接均待核。
 
+## 2026年9月30日问题图更新
+
+证据来自可检索历史摘要，未取得原会话链接；以下是反复关注的学习机制之具体问题，不代表正式选题或训练项目。
+
+- **Q-0930-context：可读取长度与长程任务能力。** 用户02:29:14 UTC讨论线性/稀疏注意力与causal mask复杂度，02:47:21 UTC讨论128K任务、32K/64K RL rollout与信用分配。关联：预训练/长上下文数据 → 后训练/SFT适配 → RL/奖励与信用分配 → 推理/稀疏计算；这些维度需分别核验，不能用支持的窗口长度替代任务成功率。
+
+- **Q-0930-sft：阶段划分与数据使用。** 用户03:10:54和03:11:30 UTC询问SFT损失与示范数据为何不纳入较早训练。关联：预训练/数据配比与课程 ↔ SFT/监督位置与示范格式 ↔ 评估/同口径损失。整理建议：阅读时记录loss定义、数据分布和token掩码；不能从单个数值判断哪一阶段损害能力。
+
+- **Q-0930-evidence：能力来源的证据。** 延续对预训练能力与后训练塑造的追问；优先找同模型、同预算的阶段消融，区分作者声明、基准成绩和跨分布泛化。尚未取得足以分离所有因素的证据。
+
+### 本轮定向阅读（复用已有目录）
+
+- [Qwen2.5-1M Technical Report](https://arxiv.org/abs/2501.15383)，arXiv:2501.15383，2025-01-26。来源：历史助手于2026-09-30约02:52 UTC提供；现有记录02:52:50，本轮检索02:52:48，秒级时间有差异，保留原记录并注明，不当作两次讨论。作者摘要描述长数据合成、渐进预训练、多阶段SFT和稀疏推理优化；关联Q-0930-context。边界：摘要未构成长RL信用分配已解决的证据。
+
+- [Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155)，arXiv:2203.02155，2022-03-04。来源：原有starter，不冒充本轮聊天提取。示范监督后使用输出排序进行RLHF；关联Q-0930-sft。边界：作者偏好评测不能回答所有数据混合方案的优劣。
+
+核验深度：2026-09-30核对两篇官方摘要与身份；未全文精读或复现，用户阅读状态未知。没有新增已核验论文，不以重复条目填充目录。
+
 [细分类目录](topics.md) · [全部论文与来源](paper-catalog.md)

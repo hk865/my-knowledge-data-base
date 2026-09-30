@@ -142,5 +142,21 @@
     "title": "GEN-1.5 / MimicDroid / AIRSOUL",
     "reason": "Mentioned in physical ICL context without exact paper URLs.",
     "extraction_domain": "robotics"
+  },
+  {
+    "id": "doi:10.21203/rs.3.rs-9638576/v1",
+    "title": null,
+    "url": "https://doi.org/10.21203/rs.3.rs-9638576/v1",
+    "doi": "10.21203/rs.3.rs-9638576/v1",
+    "chat_date": "2026-09-03T16:11:26Z",
+    "provenance": "user-provided-exact-link",
+    "source_evidence": "2026-09-30定向历史检索恢复用户提供的精确DOI；相邻用户文字为文献链接。未取得原会话链接。",
+    "topic_paths": [
+      "cross-domain/biological-computing"
+    ],
+    "status": "unresolved_primary_identity",
+    "reason": "2026-09-30 DOI工具访问失败；Research Square入口返回403。二手索引不足以替代官方题名和身份核验。旧助手题名不作为事实。",
+    "reading_status": "未读取原文；用户阅读状态未知",
+    "last_checked_at": "2026-09-30T08:15:00Z"
   }
 ]
