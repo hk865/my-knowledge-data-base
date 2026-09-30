@@ -7,18 +7,18 @@
   "managed_files": [
     {
       "path": "docs/research-map.md",
-      "recorded_sha256": "4fb90ffff2b23d4e61f2b4d17083b59d5e7d07c957f447aab6c2851d93b6211c",
-      "git_blob_sha": "be66b92ac1ad7737f9c40c8432469282ffeb05b6"
+      "recorded_sha256": "7fb8ae5a637bd4314735da1b88749ec5a46a91e5643e82a6e61a33704b8fbe28",
+      "git_blob_sha": "4f3a6ad548a2110708c0f614749bb6b54e09f529"
     },
     {
       "path": "docs/model-training-multimodal.md",
-      "recorded_sha256": "91bc8f4cc1462cfd4a277b5dcd70957b7b5b2a60ad6608388e5b7a163190679e",
-      "git_blob_sha": "3e7e9aff1e8159459bfc2008fede15b24e84c0d6"
+      "recorded_sha256": "89c488ae20ff911e4d6432a4d5290fa7e3dca34a5a1f3debb26b22ad3e6351fb",
+      "git_blob_sha": "bdea63d9f864d53f9e63c9e7e834a38470a5bc72"
     },
     {
       "path": "docs/robotics-embodied.md",
-      "recorded_sha256": "9dbf2bec83ca8657259adba2ca59fe026ec0e5d708947b6c04c484563561b132",
-      "git_blob_sha": "0a69bd85ab8f53c2dee695ea0125fe9a5357ccbd"
+      "recorded_sha256": "9fcb9790061a6e7e301266fece940b9d01b69fb0f379a6aff942671dadb4bbe9",
+      "git_blob_sha": "d2729fa3bfbc78ec164439704a048a1e8cd41808"
     },
     {
       "path": "index.json",

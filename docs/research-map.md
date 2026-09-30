@@ -75,3 +75,89 @@
 首次整理：形成跨 Agent、模型学习、推理计算、上下文、传统机器人、具身模型、世界表征和探索性主题的兴趣地图；保留原有 VLA 手册，建立 6 篇基础论文卡。首批论文用于建立共同参考，不能视为覆盖全部兴趣或最新进展。
 
 后续每份合并短报先记录新增聊天带来的兴趣或问题变化，再给少量相关论文与推荐理由；无显著变化时保持简短。每条区分原文证据、关联判断和待验证假设。
+
+## GitHub 与导出
+
+本页面仍为私有；你已确认将面向你的完整学术知识库发布到公开仓库 [my knowledge data base](https://github.com/hk865/my-knowledge-data-base)。首次发布已核验：[提交 ba96193](https://github.com/hk865/my-knowledge-data-base/commit/ba96193055e928fb60962f5b0e1742a984a50e91)。公开仓库中的内容可被任何人访问。
+
+每日合并更新任务也会同步 GitHub，保留你的手动修改；遇到无法安全合并的冲突时通知你，不覆盖冲突内容。知识库更新按每日同步流程处理；每次发布状态以实际核验的 GitHub 提交为准。
+
+已提供的 ZIP 包含 Markdown 与 JSON、CSV 索引，是2026年9月30日的独立快照，不会随云端页面或 GitHub 自动更新。
+
+## 聊天论文提取与细分类
+
+2026年9月30日更新：已从可检索历史聊天恢复并核验 96 条独立资源链接，包括 95 篇论文和 1 个代码仓库。其中 1 条为用户提供的 Zero WAM，95 条由聊天中的助手提供；助手曾经推荐不等于你已经认可、读过或选定课题。
+
+合并去重后共有 117 条资源：包含上述聊天来源、16 条已有手册参考及6条初始推荐；来源集合存在重叠，不能直接相加。另有17条候选因名称、链接或身份不足而暂不入已核验清单。本次核验题名、标识与原始链接，不等于全文精读、复现或结果复核。聊天来源是检索摘要，没有可打开的原会话链接。
+
+分类按研究问题细分：大语言模型包含预训练、后训练的 SFT、偏好学习与 RL，以及架构效率和推理时计算；多模态包含视觉表征、图文对齐、VLM、视觉生成与世界模型；机器人包含感知融合、定位建图、导航规划、运动控制与具身策略。Agent、解释和生物计算保留为跨方向主题。
+
+ViT 属于架构标签，CLIP 是图文对齐方法与模型家族，WM 是世界模型方向；对比学习、掩码重建、自蒸馏、监督、偏好和 RL 是可交叉的监督标签。分类不互斥，跨主题展示不重复计入独立资源数。空栏目明确标为覆盖缺口，不以通用论文填充。
+
+完整模型及多模态链接见 [模型训练与多模态](model-training-multimodal.md)，机器人链接见 [机器人与具身智能](robotics-embodied.md)。
+
+### 跨方向方法与探索
+
+#### Agent 与上下文系统
+
+- [Recursive Introspection: Teaching Language Model Agents How to Self-Improve](https://arxiv.org/abs/2407.18219) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-23；标签：iterative fine-tuning, online imitation, environment feedback
+
+- [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](https://arxiv.org/abs/2405.15793) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-01
+
+- [ReAct: Synergizing Reasoning and Acting in Language Models](https://mlanthology.org/iclr/2023/yao2023iclr-react/) · 2022 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-01
+
+- [Voyager: An Open-Ended Embodied Agent with Large Language Models](https://mlanthology.org/tmlr/2024/wang2024tmlr-voyager/) · 2023 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-23
+
+#### 机制与可信解释
+
+- [OLMo: Accelerating the Science of Language Models](https://arxiv.org/abs/2402.00838) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-30；标签：self-supervised language modeling
+
+- [ShortGPT: Layers in Large Language Models are More Redundant Than You Expect](https://arxiv.org/abs/2403.03853) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18
+
+- [In-context Learning and Induction Heads](https://arxiv.org/abs/2209.11895) · 2022 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18
+
+- [Transformer Feed-Forward Layers Are Key-Value Memories](https://arxiv.org/abs/2012.14913) · 2020 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18
+
+- [Locating and Editing Factual Associations in GPT](https://arxiv.org/abs/2202.05262) · 2022 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18；标签：targeted factual editing
+
+- [Naturalness of Attention: Revisiting Attention in Code Language Models](https://arxiv.org/abs/2311.13508) · 2023 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18
+
+- [Probing Pretrained Models of Source Code](https://arxiv.org/abs/2202.08975) · 2022 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18
+
+- [INSPECT: Intrinsic and Systematic Probing Evaluation for Code Transformers](https://arxiv.org/abs/2312.05092) · 2023 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18
+
+- [Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity](https://arxiv.org/abs/2510.01171) · 2025 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-25
+
+- [PersonaEval: Are LLM Evaluators Human Enough to Judge Role-Play?](https://arxiv.org/abs/2508.10014) · 2025 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-25
+
+- [On scalable oversight with weak LLMs judging strong LLMs](https://arxiv.org/abs/2407.04622) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-25
+
+- [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](https://arxiv.org/abs/2405.15793) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-01
+
+- [Making Reasoning Matter: Measuring and Improving Faithfulness of Chain-of-Thought Reasoning](https://aclanthology.org/2024.findings-emnlp.882/) · 年份待核 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-01
+
+- [Measuring Chain of Thought Faithfulness by Unlearning Reasoning Steps](https://aclanthology.org/2025.emnlp-main.504/) · 年份待核 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-01
+
+- [Reasoning Does Not Necessarily Improve Role-Playing Ability](https://aclanthology.org/2025.findings-acl.537/) · 年份待核 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-25
+
+#### 生物计算探索
+
+覆盖缺口：本次没有恢复并核验到该细类的历史聊天论文链接；不据此判断你没有兴趣，也不补入通用推荐。
+
+#### 评估与监督可靠性
+
+- [INSPECT: Intrinsic and Systematic Probing Evaluation for Code Transformers](https://arxiv.org/abs/2312.05092) · 2023 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18
+
+- [PersonaEval: Are LLM Evaluators Human Enough to Judge Role-Play?](https://arxiv.org/abs/2508.10014) · 2025 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-25
+
+- [On scalable oversight with weak LLMs judging strong LLMs](https://arxiv.org/abs/2407.04622) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-25
+
+- [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](https://arxiv.org/abs/2405.15793) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-01
+
+- [Making Reasoning Matter: Measuring and Improving Faithfulness of Chain-of-Thought Reasoning](https://aclanthology.org/2024.findings-emnlp.882/) · 年份待核 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-01
+
+- [Measuring Chain of Thought Faithfulness by Unlearning Reasoning Steps](https://aclanthology.org/2025.emnlp-main.504/) · 年份待核 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-01
+
+- [Reasoning Does Not Necessarily Improve Role-Playing Ability](https://aclanthology.org/2025.findings-acl.537/) · 年份待核 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-25
+
+[细分类目录](topics.md) · [全部论文与来源](paper-catalog.md)
