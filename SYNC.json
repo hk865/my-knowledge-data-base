@@ -12,8 +12,8 @@
     },
     {
       "path": "docs/model-training-multimodal.md",
-      "recorded_sha256": "d07c478cea8bac858a19c35d33097f193391eb3426d426b21144207a7b5b7bf6",
-      "git_blob_sha": "c08481e0e1b952b63828a850aab575ee47008227"
+      "recorded_sha256": "8a9455e5501aec1b28570bda1762cedd6ce26044766dadd617a316f2f7fdb80b",
+      "git_blob_sha": "a6ffea39d2cede218450c3d05b886822dc108777"
     },
     {
       "path": "docs/robotics-embodied.md",
@@ -22,23 +22,23 @@
     },
     {
       "path": "index.json",
-      "recorded_sha256": "91ee67a0884ff7944e501b4f2de6d404b5b0809a42e26539ae4aa4db5358ae16",
-      "git_blob_sha": "4d67744178ffe570413c2d44757fe35df251743c"
+      "recorded_sha256": "d112a7a592e7fc7eb53a0b5d6326b7269912b822ec3aa1ef777fd4a09fd0f4e5",
+      "git_blob_sha": "36954862a1ca0cf212157f19fcb93d19a106938b"
     },
     {
       "path": "index.csv",
-      "recorded_sha256": "147641e5f27f1009c0004cf70036623dc5dae91ab9c995b331cda8c70e73fb8e",
-      "git_blob_sha": "bc901b13f3ff3738be40d54a5f5e4ceb9d914353"
+      "recorded_sha256": "c67f86bf0d53fbbad144d50bbb37e979f2a5554807bfb815a42872b77d6f43f3",
+      "git_blob_sha": "9c54497868253881c839d21f5d8da54de8a96306"
     },
     {
       "path": "papers.json",
-      "recorded_sha256": "69e4d6c2fbb208ce0b42531d03a992acec6a0aeaa368ad6c0dc0da31e61bda1a",
-      "git_blob_sha": "14bc304791248666524c62ef1a6308853cae73b7"
+      "recorded_sha256": "c9ffd8d844b6002f0d8f29da522bee7bcbdbe92c54033b66aea6af96bb94e54d",
+      "git_blob_sha": "5560c16ec5e4a3306d53ca2f77f62646c8c97f1c"
     },
     {
       "path": "papers.csv",
-      "recorded_sha256": "c24afa838185700e33992816bb618d3ee1409823c5feba4cec7190283f55a94b",
-      "git_blob_sha": "9bc5c3fc22c225a69295dccd634102ee7520627b"
+      "recorded_sha256": "feb42eab5cd876ccd9e5654a1bd457847d619d87e5d20eb92c1f2ede95d9a602",
+      "git_blob_sha": "48f9b5303753e6f19d0a7aaa5bb17c129286083e"
     },
     {
       "path": "daily/2026-09-30.md",
@@ -52,8 +52,8 @@
     },
     {
       "path": "README.md",
-      "recorded_sha256": "7fa01245dec8f960e4b5e73a5efa0422396cbd20c6454e0886b955e7c427697a",
-      "git_blob_sha": "ad9389a6954bdeee3507f9e83c57d5c2fb52e975"
+      "recorded_sha256": "1e02405c944bf3287e52464c78e04ef569809d013aeb04e62bdc69fc7bbb52dc",
+      "git_blob_sha": "bb6ca6a8110a2d9772318e4d29ea5aa91a27c98b"
     },
     {
       "path": "taxonomy.json",
@@ -67,18 +67,43 @@
     },
     {
       "path": "docs/paper-catalog.md",
-      "recorded_sha256": "38322321749d3573d8d9b0424b3c72f86bf31de55dd23fde007871fb5e5f3e03",
-      "git_blob_sha": "63469ef98cd2ab46caac437bae87b63ab8c4e1d8"
+      "recorded_sha256": "6906a7a11ed7aaea8d5ecb6385b19f118191826838ddcc6ae6c2d8de317fa25a",
+      "git_blob_sha": "dc14b0929484db1798ee37eb14096bc7229f4b82"
     },
     {
       "path": "docs/topics.md",
-      "recorded_sha256": "c5aeb9f667bbdb48883971fac25c44f492c8ec48a1eec10d755df72574da89d1",
-      "git_blob_sha": "4900bc5ebea46a1eeaaa37148350e53d9da66e5f"
+      "recorded_sha256": "afded4fb9226cda6ad2161582ab40f82d49cece7692eab35d23b97a93b53700c",
+      "git_blob_sha": "8e483605b2650b58e96ff9b5ded1431d7bf9f0d0"
     },
     {
       "path": "docs/unresolved.md",
       "recorded_sha256": "27cbb4d71ea26965917242baadc45057b33dba326a14533d00c14b1302a626db",
       "git_blob_sha": "08821a4821bfb9555e04bf59a340b48d6146cb29"
+    },
+    {
+      "path": "docs/deep-readings/qwen2.5-1m.md",
+      "recorded_sha256": "70486f807a639ec768558633c7b152f58739a14df5cff3aadbb1af807c3b7ef9",
+      "git_blob_sha": "c1c750e0f1f0972ba0a601a28171b539cc12ef0b"
+    },
+    {
+      "path": "docs/roadmaps/long-context.md",
+      "recorded_sha256": "acb1eb50b5bab47666d380f5e5d3e6f5fc9d3adc829361cd9b537ccd0c0b2661",
+      "git_blob_sha": "7586bd29c44361eb498e3831a5607288364a1ed1"
+    },
+    {
+      "path": "docs/roadmaps/long-context-graph.json",
+      "recorded_sha256": "4cac46a18750d044f58c9dc9627b661b321358366704475d85ef645b18bfdae5",
+      "git_blob_sha": "10a0fda2867febd11117e85a095b06fe87e12f6c"
+    },
+    {
+      "path": "assets/qwen2.5-1m-mechanism.svg",
+      "recorded_sha256": "6e17afb9f0c59d29a502d5a4509219255f7cb7c7a0f856f74ceed8dc10b1db3d",
+      "git_blob_sha": "c4f0fd918f3c871ffb20b11ccb5206faa462b484"
+    },
+    {
+      "path": "docs/deep-readings/qwen2.5-1m-evidence.json",
+      "recorded_sha256": "1331faabe4e1b53234743d178c5595d8e75052d4a3185ad917f1a41be0551c35",
+      "git_blob_sha": "9604518cafaaaaf564eb2b35819a37e26ed2d2ef"
     }
   ],
   "page_path_mapping": [
@@ -95,6 +120,16 @@
     {
       "page_id": "page_2ac2740d1ed88191a4b6b8ff416f53b9",
       "path": "docs/robotics-embodied.md",
+      "stream_kind": "content"
+    },
+    {
+      "page_id": "page_bba3bea77e788191ae879c518725b8f2",
+      "path": "docs/deep-readings/qwen2.5-1m.md",
+      "stream_kind": "content"
+    },
+    {
+      "page_id": "page_69f6c9706e008191bee71306deb23a92",
+      "path": "docs/roadmaps/long-context.md",
       "stream_kind": "content"
     }
   ],

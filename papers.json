@@ -365,7 +365,8 @@
       "llm/posttraining/sft",
       "llm/pretraining",
       "llm/architecture",
-      "llm/inference"
+      "llm/inference",
+      "llm/posttraining/preferences"
     ],
     "detail_topics": [
       "pretraining/long context",
@@ -377,7 +378,8 @@
     "supervision_tags": [
       "self-supervised pretraining",
       "synthetic data",
-      "supervised fine-tuning"
+      "supervised fine-tuning",
+      "offline preference optimization"
     ],
     "provenance": [
       "assistant-provided-exact-link"
@@ -393,11 +395,11 @@
     "verification_sources": [
       "https://arxiv.org/abs/2501.15383"
     ],
-    "verification_status": "verified_primary_title_and_identifier",
+    "verification_status": "full_report_v1_reading_and_evidence_audit",
     "caveats": [
       "Chat retrieval supplied timestamps but no stable conversation permalink."
     ],
-    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "reading_status": "已完成报告v1全文机制与证据分析；未独立复现；用户阅读状态待确认",
     "resource_kind": "paper",
     "method_tags": [],
     "evaluation_tags": [],
@@ -412,7 +414,22 @@
       ],
       "verification_depth": "official_abstract_and_metadata",
       "checked_at": "2026-09-30",
-      "provenance_note": "沿用已有助手聊天链接；本轮检索时间02:52:48与原记录02:52:50有秒级差异，保留原记录，不算新来源事件。"
+      "provenance_note": "沿用已有助手聊天链接；本轮检索时间02:52:48与原记录02:52:50有秒级差异，保留原记录，不算新来源事件。",
+      "superseded_by": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/deep-readings/qwen2.5-1m.md"
+    },
+    "deep_reading": {
+      "completed_at": "2026-09-30",
+      "paper_version": "arXiv:2501.15383v1",
+      "coverage": "完整正文§§1–7，公式、算法、图表与实验设置；PDF19页，正文到第15页，参考文献至第19页；论文无附录。",
+      "not_done": [
+        "独立复现实验",
+        "完整训练代码审计",
+        "外围引用论文的逐篇全文精读"
+      ],
+      "article_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/deep-readings/qwen2.5-1m.md",
+      "roadmap_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/roadmaps/long-context.md",
+      "source_url": "https://arxiv.org/html/2501.15383v1",
+      "user_reading_status": "待确认"
     }
   },
   {

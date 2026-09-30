@@ -160,6 +160,9 @@
 
 用户关联：2026-09-30 02:29、02:47 UTC关于注意力复杂度、长上下文与RL rollout的实际问题。 来源：沿用已有助手聊天链接；本轮检索时间02:52:48与原记录02:52:50有秒级差异，保留原记录，不算新来源事件。
 
+
+**全文精读已完成：** [Qwen2.5-1M机制与证据分析](deep-readings/qwen2.5-1m.md) · [长上下文路线图](roadmaps/long-context.md)。覆盖v1正文、公式、算法与图表；未独立复现。
+
 ### p009
 
 **[Mamba: Linear-Time Sequence Modeling with Selective State Spaces](https://arxiv.org/abs/2312.00752)**

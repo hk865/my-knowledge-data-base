@@ -391,3 +391,8 @@
 
 - Q-0930-context → [问题图](model-training-multimodal.md) → [Qwen2.5-1M](paper-catalog.md#p008)
 - Q-0930-sft → [问题图](model-training-multimodal.md) → [InstructGPT](paper-catalog.md#p115)
+
+## 已完成的全文精读与方向路线图
+
+- [Qwen2.5-1M 全文精读](deep-readings/qwen2.5-1m.md)：256K训练、1M外推、稀疏推理与实验边界
+- [长上下文 LLM 路线图](roadmaps/long-context.md)：位置、注意力执行、训练数据、推理资源、评测五条技术线

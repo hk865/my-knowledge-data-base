@@ -25,5 +25,21 @@
     "export_date": "2026-09-30",
     "source_access": "原账户权限控制；仓库内请使用 file 字段",
     "last_checked_at": "2026-09-30T08:17:00Z"
+  },
+  {
+    "title": "Qwen2.5-1M 全文精读",
+    "file": "docs/deep-readings/qwen2.5-1m.md",
+    "page_id": "page_bba3bea77e788191ae879c518725b8f2",
+    "url": "https://chatgpt.com/space/page_bba3bea77e788191ae879c518725b8f2",
+    "export_date": "2026-09-30",
+    "source_access": "原账户权限控制；仓库内请使用 file 字段"
+  },
+  {
+    "title": "长上下文 LLM 技术路线图",
+    "file": "docs/roadmaps/long-context.md",
+    "page_id": "page_69f6c9706e008191bee71306deb23a92",
+    "url": "https://chatgpt.com/space/page_69f6c9706e008191bee71306deb23a92",
+    "export_date": "2026-09-30",
+    "source_access": "原账户权限控制；仓库内请使用 file 字段"
   }
 ]

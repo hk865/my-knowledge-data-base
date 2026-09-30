@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1060" viewBox="0 0 1600 1060"><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#64748b"/></marker></defs><rect width="1600" height="1060" fill="#f8fafc"/>
+<text x="60" y="69" font-family="Noto Sans CJK SC, sans-serif" font-size="43" font-weight="bold" fill="#0f172a">Qwen2.5-1M：从 256K 训练到 1M 输入</text>
+<text x="60" y="111" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="normal" fill="#334155">位置外推、长序列训练与稀疏推理协同；不是把上下文长度简单调大</text>
+<text x="60" y="169" font-family="Noto Sans CJK SC, sans-serif" font-size="28" font-weight="bold" fill="#1d4ed8">01  训练权重</text>
+<rect x="60" y="192" width="460" height="253" rx="16" fill="white" stroke="#2563eb" stroke-width="2"/>
+<rect x="60" y="192" width="460" height="52" rx="16" fill="#2563eb"/>
+<text x="80" y="228" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="bold" fill="white">长上下文继续预训练</text>
+<text x="80" y="283" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="normal" fill="#334155">中间 base：4K → 32K</text>
+<text x="80" y="318" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="normal" fill="#334155">继续训练：64K → 128K → 256K</text>
+<text x="80" y="353" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="normal" fill="#334155">后三阶段：75% 最长序列 + 25% 短序列</text>
+<text x="80" y="388" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="normal" fill="#334155">自然长文 + 合成 FIM / 检索 / 重排</text>
+<text x="80" y="423" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="normal" fill="#334155">RoPE base：1M → 5M → 10M</text>
+<rect x="565" y="192" width="460" height="253" rx="16" fill="white" stroke="#2563eb" stroke-width="2"/>
+<rect x="565" y="192" width="460" height="52" rx="16" fill="#2563eb"/>
+<text x="585" y="228" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="bold" fill="white">分阶段监督微调</text>
+<text x="585" y="283" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="normal" fill="#334155">SFT 1：≤32K 短指令</text>
+<text x="585" y="318" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="normal" fill="#334155">SFT 2：短指令 + ≤256K 长指令</text>
+<text x="585" y="353" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="normal" fill="#334155">在训练成本与长短任务能力间平衡</text>
+<text x="585" y="388" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="normal" fill="#334155">训练长度上限是 256K</text>
+<text x="585" y="423" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="normal" fill="#334155">1M 不是该阶段的训练序列长度</text>
+<rect x="1070" y="192" width="470" height="253" rx="16" fill="white" stroke="#2563eb" stroke-width="2"/>
+<rect x="1070" y="192" width="470" height="52" rx="16" fill="#2563eb"/>
+<text x="1090" y="228" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="bold" fill="white">短序列偏好优化</text>
+<text x="1090" y="283" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="normal" fill="#334155">离线偏好优化，方法类似 DPO</text>
+<text x="1090" y="318" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="normal" fill="#334155">只使用 ≤8K 序列</text>
+<text x="1090" y="353" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="normal" fill="#334155">改善偏好对齐；不等于百万 token RL</text>
+<text x="1090" y="388" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="normal" fill="#334155">论文未建立长 rollout 信用分配结论</text>
+<text x="1090" y="423" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="normal" fill="#334155">输入窗口、生成长度、轨迹长度分开</text>
+<line x1="522" y1="320" x2="559" y2="320" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="1027" y1="320" x2="1064" y2="320" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="60" y="505" font-family="Noto Sans CJK SC, sans-serif" font-size="28" font-weight="bold" fill="#0f766e">02  固定权重：离线校准与在线推理</text>
+<rect x="60" y="530" width="345" height="265" rx="16" fill="white" stroke="#0f766e" stroke-width="2"/>
+<rect x="60" y="530" width="345" height="52" rx="16" fill="#0f766e"/>
+<text x="80" y="566" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="bold" fill="white">位置外推</text>
+<text x="80" y="621" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="normal" fill="#334155">DCA 重映射相对位置</text>
+<text x="80" y="656" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="normal" fill="#334155">YaRN 注意力温度缩放</text>
+<text x="80" y="691" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="normal" fill="#334155">把 256K 训练范围扩展到 1M</text>
+<text x="80" y="726" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="normal" fill="#334155">改变位置坐标的处理方式</text>
+<text x="80" y="761" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="normal" fill="#334155">不等于滑动窗口裁剪</text>
+<rect x="435" y="530" width="345" height="265" rx="16" fill="white" stroke="#0f766e" stroke-width="2"/>
+<rect x="435" y="530" width="345" height="52" rx="16" fill="#0f766e"/>
+<text x="455" y="566" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="bold" fill="white">稀疏预填充</text>
+<text x="455" y="621" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="normal" fill="#334155">修改 MInference 适配分块</text>
+<text x="455" y="656" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="normal" fill="#334155">每块 32,768 token</text>
+<text x="455" y="691" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="normal" fill="#334155">块末 64 个 query 选关键键</text>
+<text x="455" y="726" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="normal" fill="#334155">选择坐标为 DCA 做平滑</text>
+<text x="455" y="761" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="normal" fill="#334155">实际注意力仍用 DCA 坐标</text>
+<rect x="810" y="530" width="345" height="265" rx="16" fill="white" stroke="#0f766e" stroke-width="2"/>
+<rect x="810" y="530" width="345" height="52" rx="16" fill="#0f766e"/>
+<text x="830" y="566" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="bold" fill="white">部署前：1M 稀疏校准</text>
+<text x="830" y="621" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="normal" fill="#334155">无需重新训练模型权重</text>
+<text x="830" y="656" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="normal" fill="#334155">检查稀疏注意力质量</text>
+<text x="830" y="691" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="normal" fill="#334155">attention-mass recall 不足时</text>
+<text x="830" y="726" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="normal" fill="#334155">增加稀疏 token 预算</text>
+<text x="830" y="761" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="normal" fill="#334155">论文未公开具体阈值</text>
+<rect x="1185" y="530" width="355" height="265" rx="16" fill="white" stroke="#0f766e" stroke-width="2"/>
+<rect x="1185" y="530" width="355" height="52" rx="16" fill="#0f766e"/>
+<text x="1205" y="566" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="bold" fill="white">系统执行</text>
+<text x="1205" y="621" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="normal" fill="#334155">内核优化 + DCPP + TAG</text>
+<text x="1205" y="656" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="normal" fill="#334155">分块 prefill / 流水线分配</text>
+<text x="1205" y="691" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="normal" fill="#334155">分开管理执行与内存约束</text>
+<text x="1205" y="726" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="normal" fill="#334155">输入窗口最高 1M</text>
+<text x="1205" y="761" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="normal" fill="#334155">开源 7B / 14B 输出上限 8K</text>
+<line x1="406" y1="665" x2="429" y2="665" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="781" y1="665" x2="804" y2="665" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="1156" y1="665" x2="1179" y2="665" stroke="#64748b" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="60" y="839" width="1480" height="125" rx="14" fill="#e2e8f0"/>
+<text x="85" y="879" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="bold" fill="#0f172a">必须保留的三个边界</text>
+<text x="85" y="919" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="normal" fill="#334155">DCA 位置分块 ≠ prefill 内存分块 ≠ 流水线调度分块；因果约束 j ≤ i 不变；稀疏键从可见历史中选择</text>
+<text x="60" y="1007" font-family="Noto Sans CJK SC, sans-serif" font-size="20" font-weight="normal" fill="#64748b">原创机制图依据论文 §§3–5、表1；不是论文原图。仅表达论文机制，不表示独立复现。</text>
+</svg>

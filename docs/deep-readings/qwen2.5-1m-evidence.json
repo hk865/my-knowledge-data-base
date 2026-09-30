@@ -1,0 +1,505 @@
+{
+  "paper": {
+    "title": "Qwen2.5-1M Technical Report",
+    "arxiv": "2501.15383v1",
+    "html": "https://arxiv.org/html/2501.15383v1",
+    "pdf": "https://arxiv.org/pdf/2501.15383",
+    "pages": 19,
+    "appendices": "none",
+    "coverage": "All main sections, equations, algorithm, tables and figures; references inspected; figures2, tables4–6 and figure11 visually verified from locally rendered PDF",
+    "read_date": "2026-09-30",
+    "not_reproduced": true
+  },
+  "claims": [
+    {
+      "id": "architecture",
+      "claim": "7B/14B retain Qwen2.5 architecture; GQA, SwiGLU, RoPE, QKV bias, pre-RMSNorm",
+      "evidence_type": "author_report",
+      "section": "2",
+      "pdf_page": 3,
+      "locator": "Table 1",
+      "url": "https://arxiv.org/pdf/2501.15383#page=3",
+      "details": {
+        "7B": {
+          "layers": 28,
+          "q_heads": 28,
+          "kv_heads": 4
+        },
+        "14B": {
+          "layers": 48,
+          "q_heads": 40,
+          "kv_heads": 8
+        },
+        "tie_embeddings": false,
+        "generation_length": "8K (open-weight 7B/14B only)"
+      }
+    },
+    {
+      "id": "training_stages",
+      "claim": "Training length 4096→32768→65536→131072→262144",
+      "evidence_type": "author_report",
+      "section": "3",
+      "pdf_page": 3,
+      "locator": "Training Strategy",
+      "url": "https://arxiv.org/pdf/2501.15383#page=3",
+      "details": {
+        "rope_base": [
+          10000,
+          1000000,
+          1000000,
+          5000000,
+          10000000
+        ],
+        "last_three_stages_sequence_mix": {
+          "max_length": 0.75,
+          "shorter": 0.25
+        },
+        "unit": "sequence shares, not token shares"
+      }
+    },
+    {
+      "id": "pretrain_data",
+      "claim": "Natural long texts + FIM, keyword/position retrieval, paragraph reordering",
+      "evidence_type": "author_report",
+      "section": "3",
+      "pdf_page": 3,
+      "locator": "Natural and Synthetic Data",
+      "url": "https://arxiv.org/pdf/2501.15383#page=3",
+      "details": {
+        "natural_domains": [
+          "Common Crawl",
+          "arXiv",
+          "books",
+          "code repositories"
+        ],
+        "unreported": [
+          "data quantities",
+          "synthetic proportions",
+          "generation templates",
+          "training FLOPs"
+        ]
+      }
+    },
+    {
+      "id": "curriculum",
+      "claim": "RULER 128K scores increase across 14B pretraining stages",
+      "evidence_type": "reported_experiment",
+      "section": "3",
+      "pdf_page": 4,
+      "locator": "Table 2",
+      "url": "https://arxiv.org/pdf/2501.15383#page=4",
+      "details": {
+        "training_lengths": [
+          32768,
+          65536,
+          131072,
+          262144
+        ],
+        "ruler_avg": [
+          82.3,
+          86.8,
+          92.5,
+          92.7
+        ],
+        "ruler_64k": [
+          76.4,
+          86.7,
+          93.0,
+          91.9
+        ],
+        "ruler_128k": [
+          37.6,
+          56.0,
+          83.8,
+          87.6
+        ],
+        "limit": "Sequential checkpoints, not fixed-budget single-factor ablation"
+      }
+    },
+    {
+      "id": "sft_synthesis",
+      "claim": "Questions generated from random segment; Qwen-Agent answers using full document; final training triple is full document+query+answer",
+      "evidence_type": "author_report",
+      "section": "4",
+      "pdf_page": 4,
+      "locator": "Synthesizing Long Instruction Data",
+      "url": "https://arxiv.org/pdf/2501.15383#page=4",
+      "details": {
+        "teacher_methods": [
+          "retrieval-augmented generation",
+          "chunk-by-chunk reading",
+          "step-by-step reasoning"
+        ],
+        "limit": "Teacher agent use does not prove student tool-agent trajectory training"
+      }
+    },
+    {
+      "id": "sft_stages",
+      "claim": "SFT1 short only ≤32768; SFT2 mixed short and long ≤262144",
+      "evidence_type": "author_report",
+      "section": "4",
+      "pdf_page": 4,
+      "locator": "Two-stage Supervised Fine-tuning",
+      "url": "https://arxiv.org/pdf/2501.15383#page=4",
+      "details": {
+        "unreported": [
+          "exact mixture",
+          "step counts",
+          "learning rates",
+          "batch size",
+          "loss mask"
+        ]
+      }
+    },
+    {
+      "id": "rl_data",
+      "claim": "Offline RL similar to DPO uses only samples ≤8192",
+      "evidence_type": "author_report",
+      "section": "4",
+      "pdf_page": 4,
+      "locator": "Reinforcement Learning",
+      "url": "https://arxiv.org/pdf/2501.15383#page=4",
+      "details": {
+        "limit": "Not documented long-rollout online RL; exact DPO variant not given"
+      }
+    },
+    {
+      "id": "rl_scores",
+      "claim": "LongBench-Chat before/after offline preference optimization",
+      "evidence_type": "reported_experiment",
+      "section": "4",
+      "pdf_page": 4,
+      "locator": "Table 3",
+      "url": "https://arxiv.org/pdf/2501.15383#page=4",
+      "details": {
+        "7B": [
+          7.32,
+          8.08
+        ],
+        "14B": [
+          8.56,
+          8.76
+        ],
+        "Turbo": [
+          7.6,
+          8.34
+        ],
+        "discrepancy": "7B annotation +0.75 differs from displayed-endpoint subtraction +0.76"
+      }
+    },
+    {
+      "id": "dca",
+      "claim": "Relative-position remapping within/between/successive chunks",
+      "evidence_type": "author_report",
+      "section": "5.1",
+      "pdf_page": 5,
+      "locator": "Figure 2",
+      "url": "https://arxiv.org/pdf/2501.15383#page=5",
+      "details": {
+        "toy_figure_only": {
+          "training_length": 8,
+          "chunk_size": 5,
+          "local_window": 3
+        },
+        "limit": "Do not treat toy values as deployment hyperparameters"
+      }
+    },
+    {
+      "id": "yarn",
+      "claim": "Attention softmax(qTk/(t sqrt(D))); sqrt(1/t)=1+0.1 ln(s)",
+      "evidence_type": "author_report",
+      "section": "5.1",
+      "pdf_page": 6,
+      "locator": "Equation 1",
+      "url": "https://arxiv.org/pdf/2501.15383#page=6",
+      "details": {
+        "coupling": "Always used with DCA in reported experiments",
+        "original_calculation_s4": {
+          "inverse_temperature": 1.2964769927807063,
+          "temperature_approx": 0.7713
+        },
+        "limit": "Do not attribute coupled gain to DCA alone; no claim all YaRN mechanisms used"
+      }
+    },
+    {
+      "id": "extrapolation",
+      "claim": "32K-trained ordinary 7B/14B plus extrapolation exceed 80% simple passkey accuracy at up to1M",
+      "evidence_type": "reported_experiment",
+      "section": "5.1",
+      "pdf_page": 6,
+      "locator": "Figure 3 and text",
+      "url": "https://arxiv.org/pdf/2501.15383#page=6",
+      "details": {
+        "limit": "Simple retrieval does not establish arbitrary 1M reasoning"
+      }
+    },
+    {
+      "id": "minference",
+      "claim": "Vertical-slash sparse prefill with offline head budgets and dynamic key selection",
+      "evidence_type": "author_report",
+      "section": "5.2",
+      "pdf_page": 7,
+      "locator": "Figure 4",
+      "url": "https://arxiv.org/pdf/2501.15383#page=7"
+    },
+    {
+      "id": "chunked_prefill",
+      "claim": "32768-token prefill chunks; last64 queries per chunk select critical keys",
+      "evidence_type": "author_report",
+      "section": "5.2",
+      "pdf_page": 7,
+      "locator": "Integrating with Chunked prefill",
+      "url": "https://arxiv.org/pdf/2501.15383#page=7",
+      "details": {
+        "activation_example_7B_1M_GB": 71,
+        "activation_reduction_percent": 96.7,
+        "limit": "Reduction concerns activation example, not total VRAM or KV cache"
+      }
+    },
+    {
+      "id": "dca_sparse_coupling",
+      "claim": "Continuous relative positions used for selecting keys; final attention retains DCA remapping",
+      "evidence_type": "author_report",
+      "section": "5.2",
+      "pdf_page": 8,
+      "locator": "Figure5",
+      "url": "https://arxiv.org/pdf/2501.15383#page=8",
+      "details": {
+        "hypothesis": "Discontinuous DCA coordinates disrupt slash pattern",
+        "limit": "Mechanism hypothesis, not independently isolated causal result"
+      }
+    },
+    {
+      "id": "causality",
+      "claim": "Full attention denominator uses 0≤j≤i",
+      "evidence_type": "equation",
+      "section": "5.2",
+      "pdf_page": 8,
+      "locator": "Equation 2",
+      "url": "https://arxiv.org/pdf/2501.15383#page=8",
+      "details": {
+        "analysis": "Causal visibility retained; position mapping and sparsification are separate axes"
+      }
+    },
+    {
+      "id": "recall",
+      "claim": "Attention mass recall = exp(LSE_sparse−LSE_full)",
+      "evidence_type": "equation",
+      "section": "5.2",
+      "pdf_page": 8,
+      "locator": "Equations2–4 p8; Algorithm1 p9",
+      "url": "https://arxiv.org/pdf/2501.15383#page=8",
+      "details": {
+        "calibration_length": "1M",
+        "if_below_threshold": "Add vertical and slash budgets",
+        "unreported": [
+          "threshold",
+          "increment",
+          "aggregation across queries/samples",
+          "calibration composition",
+          "iteration termination"
+        ],
+        "limit": "Attention-mass recall is not task accuracy"
+      }
+    },
+    {
+      "id": "sparse_quality",
+      "claim": "Original sparse method can reach ≤60% NIAH beyond400K; combined refinements recover most performance with about4x prefill speedup",
+      "evidence_type": "reported_experiment",
+      "section": "5.2",
+      "pdf_page": 9,
+      "locator": "Figure6 and text",
+      "url": "https://arxiv.org/pdf/2501.15383#page=9",
+      "details": {
+        "model": "7B-Instruct-1M",
+        "limit": "Combined treatment, not complete2x2 ablation"
+      }
+    },
+    {
+      "id": "kernel_speed",
+      "claim": "A100 1M kernel speedups13.7x MInference /27.8x BladeLLM vs FlashAttention under same sparsity",
+      "evidence_type": "reported_experiment",
+      "section": "5.3.1",
+      "pdf_page": 10,
+      "locator": "Figure7 and text",
+      "url": "https://arxiv.org/pdf/2501.15383#page=10",
+      "details": {
+        "limit": "Kernel speedup, not end-to-end"
+      }
+    },
+    {
+      "id": "moe_kernel",
+      "claim": "H20 MoE peak bandwidth3.4TB/s,55% above vLLM FusedMoE",
+      "evidence_type": "reported_experiment",
+      "section": "5.3.1",
+      "pdf_page": 10,
+      "locator": "Figure8 and text",
+      "url": "https://arxiv.org/pdf/2501.15383#page=10",
+      "details": {
+        "limit": "Turbo MoE kernel result, not dense model general speedup"
+      }
+    },
+    {
+      "id": "dcpp",
+      "claim": "Dynamic chunk sizes reduce unequal historical-KV attention workloads and pipeline bubbles",
+      "evidence_type": "author_report",
+      "section": "5.3.2",
+      "pdf_page": 10,
+      "locator": "Figure9 p11",
+      "url": "https://arxiv.org/pdf/2501.15383#page=10"
+    },
+    {
+      "id": "tag",
+      "claim": "Scheduler, runner, decoder asynchronously process separate queues; shared-memory communication",
+      "evidence_type": "author_report",
+      "section": "5.3.3",
+      "pdf_page": 11,
+      "locator": "Section5.3.3 p11; Figure10 p12",
+      "url": "https://arxiv.org/pdf/2501.15383#page=11"
+    },
+    {
+      "id": "bench_coverage",
+      "claim": "RULER main table≤128K; LV-Eval≤256K; LongBench-Chat≤100K",
+      "evidence_type": "author_report",
+      "section": "6.1",
+      "pdf_page": 12,
+      "locator": "Benchmark descriptions",
+      "url": "https://arxiv.org/pdf/2501.15383#page=12",
+      "details": {
+        "limit": "Complex benchmarks do not demonstrate1M complex reasoning"
+      }
+    },
+    {
+      "id": "ruler_results",
+      "claim": "14B old RoPE53.0, old DCA+YaRN78.1,1M92.2 at128K",
+      "evidence_type": "reported_experiment",
+      "section": "6.1",
+      "pdf_page": 13,
+      "locator": "Table4",
+      "url": "https://arxiv.org/pdf/2501.15383#page=13",
+      "details": {
+        "7B_128K": [
+          31.4,
+          55.1,
+          84.4
+        ],
+        "14B_128K": [
+          53.0,
+          78.1,
+          92.2
+        ],
+        "14B_avg_1M": 95.7,
+        "gpt4o_mini_128K": 65.8,
+        "table_label_issue": "Table says GPT-4, baseline prose mentions GPT-4o"
+      }
+    },
+    {
+      "id": "lveval_results",
+      "claim": "LV-Eval256K:7B1M42.7,14B1M43.3,72B+DCA45.2",
+      "evidence_type": "reported_experiment",
+      "section": "6.1",
+      "pdf_page": 13,
+      "locator": "Table5",
+      "url": "https://arxiv.org/pdf/2501.15383#page=13",
+      "details": {
+        "72B_plus_DCA_all_lengths": [
+          60.4,
+          57.5,
+          53.9,
+          50.9,
+          45.2
+        ],
+        "14B1M_all_lengths": [
+          54.5,
+          53.5,
+          50.1,
+          47.6,
+          43.3
+        ],
+        "metric_warning": "Author modified original LV-Eval matching metrics"
+      }
+    },
+    {
+      "id": "short_tradeoffs",
+      "claim": "14B GPQA45.5→39.9; LiveCodeBench42.6→38.6; HumanEval83.5→88.4; IFEval81→84.3",
+      "evidence_type": "reported_experiment",
+      "section": "6.2",
+      "pdf_page": 14,
+      "locator": "Table6",
+      "url": "https://arxiv.org/pdf/2501.15383#page=14",
+      "details": {
+        "7B_math": [
+          75.5,
+          72.9
+        ],
+        "7B_arena_hard": [
+          52.0,
+          48.1
+        ],
+        "limit": "Not per-task lossless; no reported confidence intervals"
+      }
+    },
+    {
+      "id": "speed",
+      "claim": "1M TTFT speedup3.2–6.7x, batch1, TP4 for7B, TP8 for14B/Turbo",
+      "evidence_type": "reported_experiment",
+      "section": "6.3",
+      "pdf_page": 14,
+      "locator": "Figure11; conditions p15",
+      "url": "https://arxiv.org/pdf/2501.15383#page=14",
+      "details": {
+        "H20_speedups": {
+          "7B": 5.4,
+          "14B": 6.7,
+          "Turbo": 4.3
+        },
+        "A100_speedups": {
+          "7B": 4.2,
+          "14B": 5.1,
+          "Turbo": 3.2
+        },
+        "H20_14B_seconds": [
+          732,
+          109
+        ],
+        "H20_Turbo_seconds": [
+          294,
+          68
+        ],
+        "limit": "Not throughput, generation time, or training speed"
+      }
+    },
+    {
+      "id": "no_appendix",
+      "claim": "19-page PDF; conclusion and start of references p15, references throughp19; no appendix",
+      "evidence_type": "coverage_verification",
+      "section": "all",
+      "pdf_page": 19,
+      "locator": "Document end",
+      "url": "https://arxiv.org/pdf/2501.15383#page=19"
+    },
+    {
+      "id": "credit_assignment",
+      "claim": "Long-context accessibility does not itself solve delayed reward attribution in long action trajectories",
+      "evidence_type": "original_analysis",
+      "section": "4 and5",
+      "pdf_page": 4,
+      "locator": "Bounded inference from scope",
+      "url": "https://arxiv.org/pdf/2501.15383#page=4",
+      "details": {
+        "basis": "Short offline preference pairs only; no online trajectories, process-reward or long-horizon advantage-estimator experiments reported"
+      }
+    }
+  ],
+  "unavailable_parts": [],
+  "methodological_limits": [
+    "No controlled equal-compute curriculum ablation",
+    "No per-task synthetic data ablation",
+    "No one-vs-two-stage SFT controlled ablation",
+    "DCA and attention-temperature scaling coupled",
+    "Sparse selection fix and refinement coupled in headline accuracy comparison",
+    "No complete training budget or inference workload cost accounting",
+    "No reported statistical uncertainty",
+    "No1M complex-reasoning benchmark comparable to smaller-length complex evaluations"
+  ]
+}
