@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "paper_key": "deepseek-v2",
+  "title": "DeepSeek-V2: A Strong, Economical, and Efficient Mixture-of-Experts Language Model",
+  "arxiv_id": "2405.04434",
+  "version": "v5",
+  "source_url": "https://arxiv.org/abs/2405.04434v5",
+  "fulltext_url": "https://arxiv.org/pdf/2405.04434v5",
+  "accessed_at": "2026-09-30",
+  "source_pdf_sha256": "f149f9c09aa8b46ce6a740a255a99b7cc2317ac5b065989339919b7e6c329c9b",
+  "page_count": 52,
+  "reading_status": "main_text_and_relevant_appendices_read",
+  "reading_coverage": {
+    "main": [
+      "§1 Introduction",
+      "§2.1 MLA",
+      "§2.2 DeepSeekMoE",
+      "§3.1–3.2 Pretraining and Evaluation",
+      "§4.1–4.4 Alignment",
+      "§5 Limitations"
+    ],
+    "appendices": [
+      "B Lite",
+      "C Full MLA equations",
+      "D Attention ablations",
+      "E Data debiasing",
+      "F Math/code evaluation",
+      "G evaluation format templates"
+    ],
+    "references": "used for provenance; cited works not all separately read",
+    "visual_source_pages_checked": [
+      5,
+      7,
+      8,
+      13,
+      31,
+      32
+    ],
+    "method": "downloaded official PDF; extracted complete text and read sections; rendered figures where needed"
+  },
+  "claims": [
+    {
+      "id": "mla",
+      "claim": "cache latentKV512 + RoPE key64 per layer/token;60 layers",
+      "locator": "§2.1,§3.1.2,AppendixC",
+      "type": "paper_report"
+    },
+    {
+      "id": "moe",
+      "claim": "2 shared,160 routed,top6,at most3 devices;236B total21B active",
+      "locator": "§2.2,§3.1.2",
+      "type": "paper_report"
+    },
+    {
+      "id": "training",
+      "claim": "8.1T tokens;4K pretrain,32K extension1000steps,128K evaluated",
+      "locator": "§3.1",
+      "type": "paper_report"
+    },
+    {
+      "id": "efficiency",
+      "claim": "172.8K vs300.6K GPUh per1T;5.76x deployed throughput with FP8 and6bit cache",
+      "locator": "§3.2.3 p16",
+      "type": "paper_report"
+    },
+    {
+      "id": "ablation",
+      "claim": "large MoE MMLU57.5→59.0;KV860.2K→34.6K elements/token",
+      "locator": "AppendixD Table9 p32",
+      "type": "paper_report"
+    },
+    {
+      "id": "alignment",
+      "claim": "MATH52.7→53.9;BBH81.3→79.7 SFT→RL",
+      "locator": "Table3 p19",
+      "type": "paper_report"
+    }
+  ],
+  "boundaries": [
+    "Representative MLA+MoE system; not MoE origin",
+    "MLA compresses per-token latent; total cache remains linear in length and full attention quadratic overall",
+    "93.3% system comparison is not same denominator as within-architecture MLA dimensional ratio",
+    "Cultural debiasing causal explanation is authors interpretation, not controlled proof"
+  ],
+  "diagram": {
+    "original": true,
+    "format": [
+      "svg",
+      "png"
+    ],
+    "visual_qa": "rendered with Inkscape and inspected; no clipping or overlap",
+    "path": "assets/deepseek-v2-mechanism.svg"
+  },
+  "content_validation": {
+    "no_original_pdf_in_public_output": true,
+    "no_scraped_fulltext_in_public_output": true,
+    "not_a_verbatim_translation": true,
+    "original_explanatory_examples_labeled": true
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "paper_key": "rrt-star",
+  "version": "arXiv:1105.1186v1; 2011-05-05",
+  "total_pdf_pages": 76,
+  "fulltext_obtained": true,
+  "reading_status": "fulltext_read",
+  "sections": [
+    {
+      "section": "1",
+      "pages": "1–6",
+      "status": "read",
+      "focus": "Contribution hierarchy, scope excluding dynamics"
+    },
+    {
+      "section": "2",
+      "pages": "6–10",
+      "status": "read",
+      "focus": "Path/cost assumptions and random geometric graph background"
+    },
+    {
+      "section": "3",
+      "pages": "10–16",
+      "status": "read",
+      "focus": "All algorithms1–6, radius and k-nearest definitions"
+    },
+    {
+      "section": "4.1",
+      "pages": "16–20",
+      "status": "read",
+      "focus": "Robust feasibility and probabilistic completeness"
+    },
+    {
+      "section": "4.2",
+      "pages": "21–29",
+      "status": "read",
+      "focus": "Weak clearance, costs, assumptions, negative/positive theorems"
+    },
+    {
+      "section": "4.3",
+      "pages": "29–33",
+      "status": "read",
+      "focus": "Collision, neighbors, processing/query/memory complexity"
+    },
+    {
+      "section": "5",
+      "pages": "33–34; figures35–47",
+      "status": "read",
+      "focus": "Monte-Carlo counts, dimensions, costs, same sample sequences"
+    },
+    {
+      "section": "6",
+      "pages": "34–39",
+      "status": "read",
+      "focus": "Conclusions and deferred differential constraints"
+    },
+    {
+      "section": "A",
+      "pages": "50",
+      "status": "read",
+      "focus": "Notation"
+    },
+    {
+      "section": "B",
+      "pages": "51–54",
+      "status": "read",
+      "focus": "RRT non-optimality proof and root branches"
+    },
+    {
+      "section": "C",
+      "pages": "54–61",
+      "status": "read",
+      "focus": "PRM* covering-ball, summability and path-cost convergence proof"
+    },
+    {
+      "section": "D",
+      "pages": "61–66",
+      "status": "read",
+      "focus": "k-nearest PRM* occupancy bounds"
+    },
+    {
+      "section": "E",
+      "pages": "66–69",
+      "status": "read",
+      "focus": "RRG exploration/connection events"
+    },
+    {
+      "section": "F",
+      "pages": "69–72",
+      "status": "read",
+      "focus": "k-nearest RRG proof"
+    },
+    {
+      "section": "G",
+      "pages": "72–76",
+      "status": "read_with_later_caveat",
+      "focus": "RRT* marked-process proof; later identified sequencing gap explicitly disclosed"
+    }
+  ],
+  "references": "inspected for provenance, not a claim of reading cited works",
+  "unread_technical_sections": [],
+  "limitations": [
+    "No independent code execution or benchmark reproduction"
+  ],
+  "visual_qa": [
+    "Original SVG rendered to PNG and visually inspected"
+  ],
+  "cache_publication": "Raw PDFs and text caches are excluded from public manifest"
+}

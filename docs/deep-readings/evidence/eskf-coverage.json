@@ -1,0 +1,96 @@
+{
+  "paper_key": "eskf",
+  "version": "arXiv:1711.02508v1; PDF date 2017-11-08",
+  "total_pdf_pages": 95,
+  "fulltext_obtained": true,
+  "reading_status": "fulltext_read",
+  "sections": [
+    {
+      "section": "1",
+      "pages": "4–12",
+      "status": "read",
+      "focus": "Quaternion algebra, exponential/logarithm"
+    },
+    {
+      "section": "2",
+      "pages": "12–33",
+      "status": "read",
+      "focus": "SO(3), half angles, double cover, SLERP, isoclinic interpretation"
+    },
+    {
+      "section": "3",
+      "pages": "33–38",
+      "status": "read",
+      "focus": "Hamilton/JPL, component order and coordinate direction"
+    },
+    {
+      "section": "4",
+      "pages": "38–52",
+      "status": "read",
+      "focus": "Retraction, local/global perturbations, Jacobians, angular integration"
+    },
+    {
+      "section": "5",
+      "pages": "52–62",
+      "status": "read",
+      "focus": "True/nominal/error states, full dynamics derivation and discretization"
+    },
+    {
+      "section": "6",
+      "pages": "62–66",
+      "status": "read",
+      "focus": "Update, observation chain rule, injection, reset"
+    },
+    {
+      "section": "7",
+      "pages": "66–72",
+      "status": "read",
+      "focus": "Global errors and Table 4 changes"
+    },
+    {
+      "section": "A",
+      "pages": "72–75",
+      "status": "read",
+      "focus": "Euler, midpoint, RK4 and general RK"
+    },
+    {
+      "section": "B",
+      "pages": "75–82",
+      "status": "read",
+      "focus": "Closed-form transition blocks and Σn series"
+    },
+    {
+      "section": "C",
+      "pages": "82–86",
+      "status": "read",
+      "focus": "System-wise and block-wise truncation"
+    },
+    {
+      "section": "D",
+      "pages": "86–88",
+      "status": "read",
+      "focus": "Time-varying transition integration"
+    },
+    {
+      "section": "E",
+      "pages": "88–93",
+      "status": "read",
+      "focus": "Sample-held noise, continuous perturbations, impulse covariance"
+    },
+    {
+      "section": "References",
+      "pages": "93–95",
+      "status": "inspected",
+      "focus": "Provenance only; no claim to have read all cited works"
+    }
+  ],
+  "references": "inspected for provenance, not a claim of reading cited works",
+  "unread_technical_sections": [],
+  "limitations": [
+    "No independent code execution or benchmark reproduction"
+  ],
+  "visual_qa": [
+    "Original SVG rendered to PNG and visually inspected"
+  ],
+  "cache_publication": "Raw PDFs and text caches are excluded from public manifest"
+}

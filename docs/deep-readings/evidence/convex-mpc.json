@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "paper_key": "convex-mpc",
+  "title": "Dynamic Locomotion in the MIT Cheetah 3 Through Convex Model-Predictive Control",
+  "version": "IROS 2018 accepted author manuscript from MIT DSpace; DOI 10.1109/IROS.2018.8594448",
+  "primary_source": "https://dspace.mit.edu/entities/publication/bc8c7e1e-5830-443f-a879-787947111fcf",
+  "fulltext_url": "https://dspace.mit.edu/server/api/core/bitstreams/474e8173-7b22-46e6-a51b-3d8e8a383357/content",
+  "source_sha256": "171a191ca54eac90a7b02a765b641562e2f48b0ce57c252538b9acfda870ea33",
+  "read_at": "2026-09-30",
+  "page_numbering": "PDF pages, 1-based unless locator explicitly refers to printed page",
+  "status": "fulltext_read",
+  "independent_replication": false,
+  "claims": [
+    {
+      "id": "convex-mpc-01",
+      "claim": "12 motion states plus a constant gravity state; control inputs are 3D contact forces",
+      "locator": "§III-B eqs.16–17 p.4",
+      "type": "mechanism"
+    },
+    {
+      "id": "convex-mpc-02",
+      "claim": "Convex model fixes future yaw and foot positions and assumes small roll/pitch, negligible leg dynamics and angular gyroscopic term",
+      "locator": "§III pp.3–4, §IV-C pp.4–5",
+      "type": "assumption"
+    },
+    {
+      "id": "convex-mpc-03",
+      "claim": "Stance force constraints are normal-force bounds and a square pyramid; swing foot forces are zero",
+      "locator": "§IV-A eqs.20–24 p.4",
+      "type": "mechanism"
+    },
+    {
+      "id": "convex-mpc-04",
+      "claim": "Condensing X=Aqp x0+Bqp U gives H=2(Bqpᵀ L Bqp+K)",
+      "locator": "§IV-D eqs.27–32 p.5",
+      "type": "derivation"
+    },
+    {
+      "id": "convex-mpc-05",
+      "claim": "Experimental horizon 0.33–0.5 s, 10–16 steps, update 25–50 Hz, low-level state/swing/impedance 1 kHz",
+      "locator": "§V-A p.5; Fig.2 p.2",
+      "type": "reported_configuration",
+      "conditions": "Abstract separately summarizes 20–30 Hz and <1 ms solves; not conflated with all runtime settings"
+    },
+    {
+      "id": "convex-mpc-06",
+      "claim": "Text describes 45 kg robot, controller parameter table uses 43 kg",
+      "locator": "§II-A p.2; Table I p.5",
+      "type": "reported_configuration"
+    },
+    {
+      "id": "convex-mpc-07",
+      "claim": "Real hardware forward speed up to 3 m/s; modified-leg-speed simulation 6 m/s",
+      "locator": "§V-E–F p.7",
+      "type": "reported_result",
+      "conditions": "Hardware tests on treadmill; simulation increases joint-speed limit to 30 rad/s; not hardware 6 m/s"
+    },
+    {
+      "id": "convex-mpc-08",
+      "claim": "Three reported stairs attempts include only one fully successful ascent/descent and multiple incidents",
+      "locator": "§V-C p.6",
+      "type": "reported_result",
+      "conditions": "Debris-covered stairs, increased swing height, proprioceptive sensing; not a large statistical success-rate study"
+    },
+    {
+      "id": "convex-mpc-09",
+      "claim": "Square pyramid inequalities are not identical to the Euclidean circular Coulomb cone; their corner reaches sqrt(2) μ fz",
+      "locator": "Reader geometric deduction from eqs.23–24",
+      "type": "interpretation"
+    },
+    {
+      "id": "convex-mpc-10",
+      "claim": "Learning-based residuals, contact schedule or friction prediction could interface with the QP, but were not tested in this paper",
+      "locator": "Reader synthesis; §VI motivates higher-level contact planning",
+      "type": "interpretation"
+    }
+  ],
+  "scope_notes": [
+    "All 8 official PDF pages read; no supplementary video quantitatively audited.",
+    "QP optimum applies only to the fixed approximate model.",
+    "This is newly selected baseline provenance, not previous catalog p035.",
+    "No independent hardware or simulation replication."
+  ],
+  "diagram": {
+    "original": true,
+    "source_copy": false,
+    "png_visual_qa": "passed; checked text, connectors, margins at native resolution"
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "paper_key": "video-diffusion",
+  "title": "Video Diffusion Models",
+  "arxiv": "2204.03458v2",
+  "version_date": "2022-06-22",
+  "source_url": "https://arxiv.org/pdf/2204.03458v2",
+  "reading_date": "2026-09-30",
+  "claims": [
+    {
+      "id": "V1",
+      "claim": "Continuous-time Gaussian diffusion on fixed video blocks with log SNR; diffusion time and physical frame order are different axes",
+      "locator": "Section 2, Equation 1, PDF pp1-2; Section 3"
+    },
+    {
+      "id": "V2",
+      "claim": "Space-only 1x3x3 convolutions, per-frame spatial attention, per-location temporal attention, relative temporal positions",
+      "locator": "Section 3, Figure 1, PDF p3"
+    },
+    {
+      "id": "V3",
+      "claim": "Text-conditioned models use BERT-large embeddings with attention pooling",
+      "locator": "Section 4.3, PDF p6"
+    },
+    {
+      "id": "V4",
+      "claim": "UCF101 and text-to-video use epsilon prediction; BAIR and Kinetics use v prediction",
+      "locator": "Appendix A.1-A.4, PDF pp14-15",
+      "qualification": "Main text epsilon formulation does not describe every experiment"
+    },
+    {
+      "id": "V5",
+      "claim": "Independent image frames come from random videos in the same dataset; temporal attention masks separate them from the video and one another",
+      "locator": "Sections 3 and 4.3.1, PDF pp3,6-7"
+    },
+    {
+      "id": "V6",
+      "claim": "With 0,4,8 added images, text-video small-model train/validation FVD is202.28/205.42,68.11/70.74,57.84/60.72",
+      "locator": "Table 4, PDF p7",
+      "qualification": "Not controlled evidence that arbitrary external image data always improves arbitrary video models"
+    },
+    {
+      "id": "V7",
+      "claim": "Classifier-free guidance combines (1+w)conditional prediction minus w unconditional prediction",
+      "locator": "Equation 6, PDF p2"
+    },
+    {
+      "id": "V8",
+      "claim": "Frameskip1 validation FVD worsens43.70 to160.21 as CFG weight rises1 to5 despite rising IS-like metrics",
+      "locator": "Table 5, PDF p8"
+    },
+    {
+      "id": "V9",
+      "claim": "Replacement maintains known-component marginals but omits conditional-score information; reconstruction guidance adds gradient of known-frame reconstruction error",
+      "locator": "Section 3.1, Equation 7, PDF p4"
+    },
+    {
+      "id": "V10",
+      "claim": "Spatial super-resolution uses differentiable downsampling of high-resolution prediction in reconstruction error",
+      "locator": "Equation 8, PDF p4"
+    },
+    {
+      "id": "V11",
+      "claim": "UCF101 uses13,320 videos,16x64x64 blocks,10,000 generated samples and C3D features; FID295±3 and IS57±.62",
+      "locator": "Section 4.1, Table 1, PDF p5",
+      "qualification": "C3D-based video FID not numerically comparable to image-Inception FID"
+    },
+    {
+      "id": "V12",
+      "claim": "BAIR predicts15 frames from one initial frame; FVD68.19 ancestral512,66.92 Langevin256",
+      "locator": "Section 4.2, Table 2, PDF pp5-6"
+    },
+    {
+      "id": "V13",
+      "claim": "Kinetics predicts11 frames from5; FVD16.2±.34 and IS15.64; alternate evaluation protocol FVD16.9",
+      "locator": "Section 4.2, Table 3, PDF p6"
+    },
+    {
+      "id": "V14",
+      "claim": "BAIR256 and Kinetics128 Langevin sampling settings include equal numbers of correction steps",
+      "locator": "Appendix A.2-A.3, PDF pp14-15"
+    },
+    {
+      "id": "V15",
+      "claim": "Text experiments use10 million captioned videos; for64-frame extension at CFG2, validation FVD134.55 reconstruction versus436.16 replacement",
+      "locator": "Section 4.3, Table 6, PDF pp6,8"
+    },
+    {
+      "id": "V16",
+      "claim": "Paper states decision not to release models due to potential harms",
+      "locator": "Section 6, PDF p9",
+      "qualification": "Historical claim about paper, not current asset availability audit"
+    },
+    {
+      "id": "V17",
+      "claim": "Video quality and initial-frame prediction do not establish action-conditioned physical world modeling or planning/control performance",
+      "locator": "Benchmark conditions in Section 4 and architecture/objective in Sections2-3; reader inference",
+      "type": "reader_inference"
+    }
+  ],
+  "coverage": {
+    "status": "full_text_and_relevant_appendices_read",
+    "pdf_pages": 15,
+    "main_text": "Sections1-6,pp1-10",
+    "appendices": "A.1 UCF101,A.2 BAIR,A.3 Kinetics,A.4 text-to-video,pp14-15",
+    "references": "pp10-13 inspected for provenance only",
+    "equations_checked": "1-8",
+    "tables_checked": "1-6",
+    "figures_checked": "1-5",
+    "visual_source_pages_reviewed": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      14,
+      15
+    ],
+    "not_performed": [
+      "training reproduction",
+      "independent metric rerun",
+      "project-page video playback",
+      "current checkpoint availability audit"
+    ]
+  },
+  "diagram": {
+    "svg": "figures/video-diffusion.svg",
+    "png": "figures/video-diffusion.png",
+    "original": true,
+    "visual_qa": "PNG opened and inspected2026-09-30; adjusted condition-panel height for breathing room"
+  },
+  "source_sha256": "564428dc63dfe59725377fbcf0b108e1fcc3378b82f32c5b042ce861679da96f"
+}

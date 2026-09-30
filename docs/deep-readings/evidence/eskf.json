@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "paper_key": "eskf",
+  "title": "Quaternion kinematics for the error-state Kalman filter",
+  "version": "arXiv:1711.02508v1; PDF date 2017-11-08",
+  "primary_source": "https://arxiv.org/abs/1711.02508",
+  "fulltext_url": "https://arxiv.org/pdf/1711.02508",
+  "source_sha256": "6a3d3d3933c425eb6cef049290c2b48b71a90f5189e9810575d83d3a922faaca",
+  "read_at": "2026-09-30",
+  "page_numbering": "PDF pages, 1-based unless locator explicitly refers to printed page",
+  "status": "fulltext_read",
+  "independent_replication": false,
+  "claims": [
+    {
+      "id": "eskf-01",
+      "claim": "Nominal state stores a quaternion; error orientation is a minimal three-vector; total state 19 stored versus 18 error entries with gravity",
+      "locator": "§5.2–5.4; Table3; eq.266",
+      "type": "mechanism"
+    },
+    {
+      "id": "eskf-02",
+      "claim": "Local quaternion error right multiplies; global error left multiplies; coordinate and multiplication conventions must be consistent",
+      "locator": "§3, §4.4–4.5, §7, Table4",
+      "type": "mechanism"
+    },
+    {
+      "id": "eskf-03",
+      "claim": "Local error dynamics have velocity-orientation block −R[a_m−b_a]× and angular block −[ω_m−b_g]×",
+      "locator": "§5.3.3; eqs.238,247,259",
+      "type": "derivation"
+    },
+    {
+      "id": "eskf-04",
+      "claim": "Zero error mean does not permit skipping covariance prediction",
+      "locator": "§5.4.3 p.62",
+      "type": "implementation"
+    },
+    {
+      "id": "eskf-05",
+      "claim": "H is derivative with respect to error state; a 4×3 quaternion composition block enters the chain rule",
+      "locator": "§6.1.1; eqs.278–281",
+      "type": "mechanism"
+    },
+    {
+      "id": "eskf-06",
+      "claim": "Reset covariance via GPGᵀ; local rotational reset I−½[δθ_hat]×, global I+½[δθ_hat]×",
+      "locator": "§6.3; eqs.285–294; §7.3 eqs.315–323; Table4 p.72",
+      "type": "derivation"
+    },
+    {
+      "id": "eskf-07",
+      "claim": "Sample-held measurement noise and unsampled continuous perturbations have different Δt scaling in the tutorial convention",
+      "locator": "App.E eqs.427–440; Table5; §5.4.2 eqs.262–265",
+      "type": "assumption",
+      "conditions": "Discrete sampled variance is not interchangeable with continuous noise spectral density; general noise discretization may require transition-weighted integration"
+    },
+    {
+      "id": "eskf-08",
+      "claim": "Rotated noise can lose R only for isotropic covariance",
+      "locator": "§5.3.3 eqs.248–250; App.E.2.1 p.93",
+      "type": "assumption"
+    },
+    {
+      "id": "eskf-09",
+      "claim": "Closed forms assume A constant over interval; RK transition integration handles A(t); truncated blocks trade accuracy and cost",
+      "locator": "App.B–D eqs.342–424",
+      "type": "mechanism"
+    },
+    {
+      "id": "eskf-10",
+      "claim": "This is a tutorial, not a new empirical benchmark; proposed numerical tests and learned interfaces are reader recommendations",
+      "locator": "Full document structure and abstract; note sections8",
+      "type": "scope"
+    },
+    {
+      "id": "eskf-11",
+      "claim": "A constant 1° uncompensated tilt yields approximately 0.171 m/s² horizontal acceleration error and 8.56m in 10s under simple double integration",
+      "locator": "Reader calculation using g sin θ and 0.5at²; not a paper result",
+      "type": "interpretation"
+    }
+  ],
+  "scope_notes": [
+    "Full 95-page source inspected, all technical appendices read.",
+    "No benchmark results invented; no independent implementation executed.",
+    "Local/global ESKF variants are not automatically identical to invariant-EKF families.",
+    "General continuous covariance integral in note is an explanatory extension, not attributed as an exact appendix formula."
+  ],
+  "diagram": {
+    "original": true,
+    "source_copy": false,
+    "png_visual_qa": "passed; checked text, connectors, margins at native resolution"
+  }
+}

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1080" viewBox="0 0 1600 1080"><defs><marker id="a" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#42637c"/></marker></defs><rect width="1600" height="1080" fill="#f7fafc"/>
+<text x="60" y="68" font-family="Noto Sans CJK SC, sans-serif" font-size="36" fill="#102e46" font-weight="700">Video Diffusion：在时空张量上联合去噪</text>
+<text x="60" y="110" font-family="Noto Sans CJK SC, sans-serif" font-size="21" fill="#526777" font-weight="400">Video Diffusion Models · arXiv:2204.03458v2 · 扩散时间 t 与视频帧序号 f 是两根不同的轴</text>
+<text x="60" y="170" font-family="Noto Sans CJK SC, sans-serif" font-size="25" fill="#203849" font-weight="700">一块视频的所有帧一起建模</text>
+<rect x="60" y="215" width="340" height="170" rx="16" fill="#e8f2fb" stroke="#aac7df" stroke-width="2"/>
+<text x="82" y="255" font-family="Noto Sans CJK SC, sans-serif" font-size="24" fill="#203849" font-weight="700">x：F × H × W × C</text>
+<text x="82" y="293" font-family="Noto Sans CJK SC, sans-serif" font-size="21" fill="#203849" font-weight="400">zₜ = αₜ x + σₜ ε</text>
+<text x="82" y="326" font-family="Noto Sans CJK SC, sans-serif" font-size="21" fill="#203849" font-weight="400">t：扩散噪声时间</text>
+<text x="82" y="359" font-family="Noto Sans CJK SC, sans-serif" font-size="21" fill="#203849" font-weight="400">f：真实视频帧序号</text>
+<rect x="455" y="215" width="660" height="170" rx="16" fill="#e8f2fb" stroke="#aac7df" stroke-width="2"/>
+<text x="477" y="255" font-family="Noto Sans CJK SC, sans-serif" font-size="24" fill="#203849" font-weight="700">空间—时间分解 U-Net</text>
+<text x="477" y="293" font-family="Noto Sans CJK SC, sans-serif" font-size="21" fill="#203849" font-weight="400">1×3×3 空间卷积 → 帧内空间注意力</text>
+<text x="477" y="326" font-family="Noto Sans CJK SC, sans-serif" font-size="21" fill="#203849" font-weight="400">→ 同一空间位置的跨帧时间注意力</text>
+<text x="477" y="359" font-family="Noto Sans CJK SC, sans-serif" font-size="21" fill="#203849" font-weight="400">空间升降采样 + skip；保留帧轴</text>
+<rect x="1170" y="215" width="365" height="170" rx="16" fill="#e8f2fb" stroke="#aac7df" stroke-width="2"/>
+<text x="1192" y="255" font-family="Noto Sans CJK SC, sans-serif" font-size="24" fill="#203849" font-weight="700">预测噪声 / v</text>
+<text x="1192" y="293" font-family="Noto Sans CJK SC, sans-serif" font-size="21" fill="#203849" font-weight="400">UCF、文本视频：ε</text>
+<text x="1192" y="326" font-family="Noto Sans CJK SC, sans-serif" font-size="21" fill="#203849" font-weight="400">BAIR、Kinetics：v</text>
+<text x="1192" y="359" font-family="Noto Sans CJK SC, sans-serif" font-size="21" fill="#203849" font-weight="400">恢复整块干净视频</text>
+<path d="M400,300 L455,300" fill="none" stroke="#42637c" stroke-width="3" marker-end="url(#a)"/>
+<path d="M1115,300 L1170,300" fill="none" stroke="#42637c" stroke-width="3" marker-end="url(#a)"/>
+<rect x="60" y="430" width="670" height="165" rx="16" fill="#edf5ec" stroke="#aacba7" stroke-width="2"/>
+<text x="82" y="470" font-family="Noto Sans CJK SC, sans-serif" font-size="24" fill="#203849" font-weight="700">图像与视频联合训练</text>
+<text x="82" y="508" font-family="Noto Sans CJK SC, sans-serif" font-size="21" fill="#203849" font-weight="400">16 帧视频 + 0 / 4 / 8 张独立帧</text>
+<text x="82" y="541" font-family="Noto Sans CJK SC, sans-serif" font-size="21" fill="#203849" font-weight="400">时间attention mask隔开独立图片</text>
+<text x="82" y="574" font-family="Noto Sans CJK SC, sans-serif" font-size="21" fill="#203849" font-weight="400">独立帧来自同一个视频数据集</text>
+<rect x="785" y="430" width="750" height="165" rx="16" fill="#fff1dc" stroke="#d8bd8f" stroke-width="2"/>
+<text x="807" y="470" font-family="Noto Sans CJK SC, sans-serif" font-size="24" fill="#203849" font-weight="700">两种条件机制分开理解</text>
+<text x="807" y="508" font-family="Noto Sans CJK SC, sans-serif" font-size="21" fill="#203849" font-weight="400">文本 c：BERT-large → 池化嵌入 → 网络</text>
+<text x="807" y="541" font-family="Noto Sans CJK SC, sans-serif" font-size="21" fill="#203849" font-weight="400">CFG：联合条件 / 无条件预测，调节采样</text>
+<text x="807" y="574" font-family="Noto Sans CJK SC, sans-serif" font-size="21" fill="#203849" font-weight="400">已知帧 xa：用 reconstruction guidance 约束</text>
+<line x1="60" y1="620" x2="1540" y2="620" stroke="#cfdae2"/>
+<text x="60" y="668" font-family="Noto Sans CJK SC, sans-serif" font-size="25" fill="#203849" font-weight="700">长视频扩展：给定已知块 xa，生成后续块 xb</text>
+<rect x="60" y="710" width="380" height="185" rx="16" fill="#e8f2fb" stroke="#aac7df" stroke-width="2"/>
+<text x="82" y="750" font-family="Noto Sans CJK SC, sans-serif" font-size="24" fill="#203849" font-weight="700">已知帧 xa</text>
+<text x="82" y="788" font-family="Noto Sans CJK SC, sans-serif" font-size="21" fill="#203849" font-weight="400">对 xa 加匹配噪声</text>
+<text x="82" y="821" font-family="Noto Sans CJK SC, sans-serif" font-size="21" fill="#203849" font-weight="400">替换已知部分 latent</text>
+<text x="82" y="854" font-family="Noto Sans CJK SC, sans-serif" font-size="21" fill="#203849" font-weight="400">仅替换往往跨块不连贯</text>
+<rect x="495" y="710" width="590" height="185" rx="16" fill="#e8f2fb" stroke="#aac7df" stroke-width="2"/>
+<text x="517" y="750" font-family="Noto Sans CJK SC, sans-serif" font-size="24" fill="#203849" font-weight="700">额外重建梯度约束</text>
+<text x="517" y="788" font-family="Noto Sans CJK SC, sans-serif" font-size="21" fill="#203849" font-weight="400">让模型对已知帧的重建接近 xa</text>
+<text x="517" y="821" font-family="Noto Sans CJK SC, sans-serif" font-size="21" fill="#203849" font-weight="400">∇ zᵇ ||xa - x̂ᵃθ(zₜ)||²</text>
+<text x="517" y="854" font-family="Noto Sans CJK SC, sans-serif" font-size="21" fill="#203849" font-weight="400">沿此梯度修正未知帧的去噪预测</text>
+<rect x="1140" y="710" width="395" height="185" rx="16" fill="#e8f2fb" stroke="#aac7df" stroke-width="2"/>
+<text x="1162" y="750" font-family="Noto Sans CJK SC, sans-serif" font-size="24" fill="#203849" font-weight="700">生成下一块 xb</text>
+<text x="1162" y="788" font-family="Noto Sans CJK SC, sans-serif" font-size="21" fill="#203849" font-weight="400">逐块延长 / 插帧</text>
+<text x="1162" y="821" font-family="Noto Sans CJK SC, sans-serif" font-size="21" fill="#203849" font-weight="400">同理可约束低分辨率</text>
+<text x="1162" y="854" font-family="Noto Sans CJK SC, sans-serif" font-size="21" fill="#203849" font-weight="400">这是采样约束，非训练loss</text>
+<path d="M440,800 L495,800" fill="none" stroke="#42637c" stroke-width="3" marker-end="url(#a)"/>
+<path d="M1085,800 L1140,800" fill="none" stroke="#42637c" stroke-width="3" marker-end="url(#a)"/>
+<text x="65" y="963" font-family="Noto Sans CJK SC, sans-serif" font-size="28" fill="#a04426" font-weight="700">视频预测 ≠ 动作条件世界模型</text>
+<text x="65" y="1002" font-family="Noto Sans CJK SC, sans-serif" font-size="23" fill="#526777" font-weight="400">本篇未提供可控动作输入、奖励模型、规划闭环或物理一致性保证；BAIR 使用首帧条件</text>
+<text x="60" y="1040" font-family="Noto Sans CJK SC, sans-serif" font-size="18" fill="#657885" font-weight="400">原创教学图 · 结构与实验配置来自所标注论文；非原图复刻 · 2026-09-30</text></svg>

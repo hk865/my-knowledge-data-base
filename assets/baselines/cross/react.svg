@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="850" viewBox="0 0 1400 850">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#536477"/></marker></defs>
+<rect width="1400" height="850" fill="#f7fafc"/>
+<g font-family="Noto Sans CJK SC, Noto Sans, sans-serif" fill="#162b3e">
+<text x="48" y="62" font-size="34" font-weight="bold">ReAct：上下文更新与环境反馈</text>
+<text x="48" y="103" font-size="19" font-weight="normal">冻结语言模型的推理时闭环 ｜ 原创重绘：§2–4；不是新增网络架构或在线 RL</text>
+<rect x="48" y="160" width="320" height="172" rx="14" fill="white" stroke="#2663a5" stroke-width="2"/>
+<text x="70" y="200" font-size="24" font-weight="bold" fill="#2663a5">输入</text>
+<text x="70" y="238" font-size="20" font-weight="normal">任务 / 问题 / 命题</text>
+<text x="70" y="269" font-size="20" font-weight="normal">少量完整轨迹示例</text>
+<text x="70" y="300" font-size="20" font-weight="normal">当前环境 observation</text>
+<rect x="476" y="160" width="370" height="172" rx="14" fill="white" stroke="#2663a5" stroke-width="2"/>
+<text x="498" y="200" font-size="24" font-weight="bold" fill="#2663a5">上下文 cₜ → 语言模型</text>
+<text x="498" y="238" font-size="20" font-weight="normal">保留历史动作与观察</text>
+<text x="498" y="269" font-size="20" font-weight="normal">拆目标、记进度、改查询</text>
+<text x="498" y="300" font-size="20" font-weight="normal">π(âₜ | cₜ)，权重冻结</text>
+<rect x="954" y="160" width="398" height="172" rx="14" fill="white" stroke="#2663a5" stroke-width="2"/>
+<text x="976" y="200" font-size="24" font-weight="bold" fill="#2663a5">输出分支</text>
+<text x="976" y="238" font-size="20" font-weight="normal">thought：语言空间 L</text>
+<text x="976" y="269" font-size="20" font-weight="normal">action：工具动作空间 A</text>
+<text x="976" y="300" font-size="20" font-weight="normal">Â = A ∪ L</text>
+<polyline points="368,246 470,246" fill="none" stroke="#536477" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="846,246 948,246" fill="none" stroke="#536477" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="476" y="438" width="370" height="158" rx="14" fill="white" stroke="#2663a5" stroke-width="2"/>
+<text x="498" y="478" font-size="24" font-weight="bold" fill="#2663a5">文字思考</text>
+<text x="498" y="516" font-size="20" font-weight="normal">只追加到上下文</text>
+<text x="498" y="547" font-size="20" font-weight="normal">不改变外界，无新观测</text>
+<rect x="954" y="438" width="398" height="158" rx="14" fill="white" stroke="#b66a17" stroke-width="2"/>
+<text x="976" y="478" font-size="24" font-weight="bold" fill="#b66a17">执行器与环境</text>
+<text x="976" y="516" font-size="20" font-weight="normal">search / lookup / click …</text>
+<text x="976" y="547" font-size="20" font-weight="normal">执行后返回真实 observation</text>
+<polyline points="1080,332 1080,382 660,382 660,432" fill="none" stroke="#536477" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="765" y="372" font-size="18" font-weight="normal" fill="#536477">thought</text>
+<polyline points="1250,332 1250,432" fill="none" stroke="#536477" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="1263" y="389" font-size="18" font-weight="normal" fill="#536477">action</text>
+<polyline points="476,519 426,519 426,287 470,287" fill="none" stroke="#536477" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="373" y="421" font-size="18" font-weight="normal" fill="#536477">回写</text>
+<polyline points="1352,516 1375,516 1375,128 660,128 660,154" fill="none" stroke="#536477" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="970" y="119" font-size="18" font-weight="normal" fill="#536477">真实观察回写到上下文</text>
+<text x="48" y="725" font-size="23" font-weight="bold" fill="#17705e">评估反馈</text>
+<text x="238" y="725" font-size="21" font-weight="normal">答案 EM / 分类准确率 / 任务成功率；主提示实验没有梯度更新</text>
+<text x="48" y="774" font-size="23" font-weight="bold" fill="#17705e">额外微调</text>
+<text x="238" y="774" font-size="21" font-weight="normal">正确答案筛选轨迹 → 自回归监督训练；与上面的冻结推理闭环分开</text>
+</g></svg>

@@ -1,0 +1,116 @@
+{
+  "paper_id": "2306.05685",
+  "key": "llm-judge",
+  "version": "v4",
+  "source_url": "https://arxiv.org/pdf/2306.05685v4",
+  "source_pdf_sha256": "1574982845157569b85c1214bfa9987000384d7a5e3b5fbdcc5a29afec59cb81",
+  "reading_coverage": {
+    "status": "full_main_text_and_appendices_read",
+    "pdf_pages": 29,
+    "main_text": "§1–7 pp1–10",
+    "appendices": "A pp14–17; B pp18–22; C pp23–24; D.1–D.4 pp25–27; E p28; F.1–F.2 p29",
+    "references": "Bibliography used as index; cited works not individually read",
+    "source_figure_visual_checks": [
+      "p5 Tables2–4",
+      "p8 Tables5–7"
+    ],
+    "not_claimed": [
+      "No rerun",
+      "No current leaderboard or current judge reliability claim"
+    ]
+  },
+  "claims": [
+    {
+      "id": "llm-judge-01",
+      "claim": "80 two-turn questions, 8 categories; anonymous Arena first-month30K votes",
+      "source_location": "§2 pp3–4",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Historical snapshot, not current platform size"
+    },
+    {
+      "id": "llm-judge-02",
+      "claim": "Three judging forms; pairwise, single score, reference-guided",
+      "source_location": "§3.1 p4; A pp14–17",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Evaluation not training"
+    },
+    {
+      "id": "llm-judge-03",
+      "claim": "GPT4 order consistency65.0%; Claude23.8; GPT3.5 46.2",
+      "source_location": "Table2 p5",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Similar answers challenge; distinguish name effects"
+    },
+    {
+      "id": "llm-judge-04",
+      "claim": "Repetitive-list failures91.3/91.3/8.7 percent",
+      "source_location": "Table3 p5; Figure12 p19",
+      "kind": "paper_evidence",
+      "interpretation_limit": "23 constructed cases"
+    },
+    {
+      "id": "llm-judge-05",
+      "claim": "Math incorrect-answer validation14/20 default,6/20 CoT,3/20 reference",
+      "source_location": "Table4 p5",
+      "kind": "paper_evidence",
+      "interpretation_limit": "10 questions, swapped orders; small test"
+    },
+    {
+      "id": "llm-judge-06",
+      "claim": "Cannot determine causal self-enhancement bias",
+      "source_location": "§3.3 p5",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Authors explicitly leave uncertainty"
+    },
+    {
+      "id": "llm-judge-07",
+      "claim": "MT first-turn G4-pair human66% S1 1343;85% S2 859; human63/81",
+      "source_location": "Table5 p8",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Different sample filters; not universal accuracy"
+    },
+    {
+      "id": "llm-judge-08",
+      "claim": "Arena G4 human64% S1 3066;87% S2 1944",
+      "source_location": "Table6 p8",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Tie exclusion materially changes coverage"
+    },
+    {
+      "id": "llm-judge-09",
+      "claim": "Human-human vs majority math need care",
+      "source_location": "D.3 p26; Table13 p27",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Random individual agreement not competence ordering"
+    },
+    {
+      "id": "llm-judge-10",
+      "claim": "Selected Vicuna7B MT5.95 MMLU37.3 vs all6.00/47.1",
+      "source_location": "Table8 p9; E Table14 p28",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Training budgets differ; preference vs knowledge"
+    },
+    {
+      "id": "llm-judge-11",
+      "claim": "Arena fine-tuned Vicuna agreement56.8% all,85.5% no ties",
+      "source_location": "F p29; Table15",
+      "kind": "paper_evidence",
+      "interpretation_limit": "20K train2K validation; different output classification formulation"
+    },
+    {
+      "id": "llm-judge-12",
+      "claim": "Helpful dimension; safety largely neglected",
+      "source_location": "§6 p9",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Cannot infer safety or factual reliability from preference"
+    }
+  ],
+  "diagram": {
+    "svg": "llm-judge.svg",
+    "png": "llm-judge.png",
+    "type": "original protocol diagram",
+    "source": "§2–4; D.3",
+    "visual_qa": "PNG inspected: legible, no clipping or overlapping; roles and data paths distinct"
+  },
+  "chinese_character_count": 2540
+}

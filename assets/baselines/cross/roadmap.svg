@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1120" viewBox="0 0 1400 1120">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#536477"/></marker></defs>
+<rect width="1400" height="1120" fill="#f7fafc"/>
+<g font-family="Noto Sans CJK SC, Noto Sans, sans-serif" fill="#162b3e">
+<text x="48" y="62" font-size="34" font-weight="bold">四个互补方向：工具、评价、控制、导航</text>
+<text x="48" y="103" font-size="19" font-weight="normal">按输入 → 内部状态/方法 → 输出与证据定位 ｜ 每行独立，不表示跨行的历史继承链</text>
+<rect x="48" y="164" width="302" height="172" rx="14" fill="white" stroke="#2663a5" stroke-width="2"/>
+<text x="70" y="204" font-size="24" font-weight="bold" fill="#2663a5">Agent 工具</text>
+<text x="70" y="242" font-size="20" font-weight="normal">ReAct</text>
+<text x="70" y="273" font-size="20" font-weight="normal">任务 + 交互示例</text>
+<rect x="414" y="164" width="482" height="172" rx="14" fill="white" stroke="#2663a5" stroke-width="2"/>
+<text x="436" y="204" font-size="24" font-weight="bold" fill="#2663a5">内部状态与方法</text>
+<text x="436" y="242" font-size="20" font-weight="normal">上下文 cₜ：thought / action / observation</text>
+<text x="436" y="273" font-size="20" font-weight="normal">冻结 LM 决策 + 工具真实返回</text>
+<rect x="960" y="164" width="392" height="172" rx="14" fill="white" stroke="#2663a5" stroke-width="2"/>
+<text x="982" y="204" font-size="24" font-weight="bold" fill="#2663a5">输出与检验</text>
+<text x="982" y="242" font-size="20" font-weight="normal">输出动作、最终答案</text>
+<text x="982" y="273" font-size="20" font-weight="normal">核查任务完成、调用成本、循环</text>
+<polyline points="350,250 408,250" fill="none" stroke="#536477" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="896,250 954,250" fill="none" stroke="#536477" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="48" y="383" width="302" height="172" rx="14" fill="white" stroke="#17705e" stroke-width="2"/>
+<text x="70" y="423" font-size="24" font-weight="bold" fill="#17705e">偏好评估</text>
+<text x="70" y="461" font-size="20" font-weight="normal">MT-Bench / Arena</text>
+<text x="70" y="492" font-size="20" font-weight="normal">问题 + 模型回答 + 人类票</text>
+<rect x="414" y="383" width="482" height="172" rx="14" fill="white" stroke="#17705e" stroke-width="2"/>
+<text x="436" y="423" font-size="24" font-weight="bold" fill="#17705e">内部状态与方法</text>
+<text x="436" y="461" font-size="20" font-weight="normal">裁判上下文：标准 / 参考 / 对话历史</text>
+<text x="436" y="492" font-size="20" font-weight="normal">成对交换顺序或单答评分</text>
+<rect x="960" y="383" width="392" height="172" rx="14" fill="white" stroke="#17705e" stroke-width="2"/>
+<text x="982" y="423" font-size="24" font-weight="bold" fill="#17705e">输出与检验</text>
+<text x="982" y="461" font-size="20" font-weight="normal">输出偏好标签、均分</text>
+<text x="982" y="492" font-size="20" font-weight="normal">核查平局覆盖、偏差、人类一致</text>
+<polyline points="350,469 408,469" fill="none" stroke="#536477" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="896,469 954,469" fill="none" stroke="#536477" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="48" y="602" width="302" height="172" rx="14" fill="white" stroke="#b66a17" stroke-width="2"/>
+<text x="70" y="642" font-size="24" font-weight="bold" fill="#b66a17">四足适应</text>
+<text x="70" y="680" font-size="20" font-weight="normal">RMA</text>
+<text x="70" y="711" font-size="20" font-weight="normal">本体状态 + 过去动作</text>
+<rect x="414" y="602" width="482" height="172" rx="14" fill="white" stroke="#b66a17" stroke-width="2"/>
+<text x="436" y="642" font-size="24" font-weight="bold" fill="#b66a17">内部状态与方法</text>
+<text x="436" y="680" font-size="20" font-weight="normal">短历史 → 八维环境 latent 估计</text>
+<text x="436" y="711" font-size="20" font-weight="normal">PPO特权训练；部署10/100Hz双频</text>
+<rect x="960" y="602" width="392" height="172" rx="14" fill="white" stroke="#b66a17" stroke-width="2"/>
+<text x="982" y="642" font-size="24" font-weight="bold" fill="#b66a17">输出与检验</text>
+<text x="982" y="680" font-size="20" font-weight="normal">输出12维关节目标角</text>
+<text x="982" y="711" font-size="20" font-weight="normal">经PD执行，测成功/摔倒/代价</text>
+<polyline points="350,688 408,688" fill="none" stroke="#536477" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="896,688 954,688" fill="none" stroke="#536477" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="48" y="821" width="302" height="172" rx="14" fill="white" stroke="#2663a5" stroke-width="2"/>
+<text x="70" y="861" font-size="24" font-weight="bold" fill="#2663a5">语言导航</text>
+<text x="70" y="899" font-size="20" font-weight="normal">R2R + 原始 baseline</text>
+<text x="70" y="930" font-size="20" font-weight="normal">指令 + 第一人称 RGB</text>
+<rect x="414" y="821" width="482" height="172" rx="14" fill="white" stroke="#2663a5" stroke-width="2"/>
+<text x="436" y="861" font-size="24" font-weight="bold" fill="#2663a5">内部状态与方法</text>
+<text x="436" y="899" font-size="20" font-weight="normal">LSTM记忆 + 语言注意力</text>
+<text x="436" y="930" font-size="20" font-weight="normal">训练最短路教师；新建筑测试</text>
+<rect x="960" y="821" width="392" height="172" rx="14" fill="white" stroke="#2663a5" stroke-width="2"/>
+<text x="982" y="861" font-size="24" font-weight="bold" fill="#2663a5">输出与检验</text>
+<text x="982" y="899" font-size="20" font-weight="normal">输出六类导航动作</text>
+<text x="982" y="930" font-size="20" font-weight="normal">测图距离、自主停、oracle停</text>
+<polyline points="350,907 408,907" fill="none" stroke="#536477" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="896,907 954,907" fill="none" stroke="#536477" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="48" y="1062" font-size="22" font-weight="bold">共同分析框架不等于相同训练信号：上下文反馈、人类校准、物理反馈与教师动作需分别标记</text>
+</g></svg>

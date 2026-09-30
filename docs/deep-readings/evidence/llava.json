@@ -1,0 +1,130 @@
+{
+  "paper_key": "llava",
+  "title": "Visual Instruction Tuning",
+  "arxiv": "2304.08485v2",
+  "version_date": "2023-12-11",
+  "source_url": "https://arxiv.org/pdf/2304.08485v2",
+  "reading_date": "2026-09-30",
+  "claims": [
+    {
+      "id": "L1",
+      "claim": "Original LLaVA uses CLIP ViT-L/14, a linear projection and Vicuna; visual embeddings are continuous vectors of LLM embedding width",
+      "locator": "Section 4.1, Equation 1, Figure 1, PDF p4"
+    },
+    {
+      "id": "L2",
+      "claim": "Text-only GPT-4 receives COCO captions and bounding boxes, not image pixels, to generate visual instructions",
+      "locator": "Section 3, Table 1, PDF pp3-4; Appendix F pp22-25"
+    },
+    {
+      "id": "L3",
+      "claim": "158K examples: 58K conversations, 23K detailed descriptions, 77K complex reasoning",
+      "locator": "Section 3, PDF p4"
+    },
+    {
+      "id": "L4",
+      "claim": "Stage 1 trains only W on 595K filtered CC3M pairs; stage 2 trains W and LLM while image encoder remains frozen",
+      "locator": "Section 4.2, PDF p5"
+    },
+    {
+      "id": "L5",
+      "claim": "Autoregressive loss is applied only to assistant answer and stop tokens",
+      "locator": "Equation 3, Table 2, PDF pp4-5"
+    },
+    {
+      "id": "L6",
+      "claim": "CC-595K uses 1 epoch, lr .002, batch128; chat uses 3 epochs, lr .00002, batch32; Adam, cosine decay, 3% warmup",
+      "locator": "Section 5 p5; Appendix C p20"
+    },
+    {
+      "id": "L7",
+      "claim": "COCO benchmark uses 30 images and90 questions; full/only-conversation/no-instruction relative scores are85.1/73.8/21.5",
+      "locator": "Section5.1,Table4,PDFp7",
+      "qualification": "Relative GPT-4-judge score, not task accuracy or percentage of general GPT-4 ability"
+    },
+    {
+      "id": "L8",
+      "claim": "In-the-Wild uses24 images and60 questions; LLaVA67.3±2.0, BLIP-238.1±1.0, OpenFlamingo19.1±.4",
+      "locator": "Section5.1,Table5,PDFp7",
+      "qualification": "Different benchmark difficulty and a small sample; decoding variability is not complete evaluator validation"
+    },
+    {
+      "id": "L9",
+      "claim": "ScienceQA accuracy90.92 for LLaVA alone and92.53 for LLaVA+text-only GPT-4 judge ensemble",
+      "locator": "Section5.2,Table7,PDFpp8-9"
+    },
+    {
+      "id": "L10",
+      "claim": "Best13B90.92; skip alignment85.81; 7B89.84; last-layer visual features89.96",
+      "locator": "Table8,PDFp9",
+      "qualification": "Answer-first ablation is shown under last-layer column; do not attribute all table deltas to isolated CoT effect"
+    },
+    {
+      "id": "L11",
+      "claim": "Strawberries plus yogurt may be incorrectly bound into strawberry-flavored yogurt; fine-detail/high-resolution failures observed",
+      "locator": "Section5.1,Table6,PDFpp7-8"
+    },
+    {
+      "id": "L12",
+      "claim": "No action-conditioned transition, reward model or control-loop evaluation in this paper",
+      "locator": "Architecture and objectives in Sections4-5; analyst boundary inference",
+      "type": "reader_inference"
+    }
+  ],
+  "coverage": {
+    "status": "full_text_and_relevant_appendices_read",
+    "pdf_pages": 25,
+    "main_text": "Sections1-6, pp1-9",
+    "appendices": "A broader impact, B qualitative results, C training, D assets, E data, F prompts, pp14-25",
+    "references": "pp10-13 inspected for provenance; cited papers not independently deep-read",
+    "equations_checked": [
+      1,
+      2,
+      3
+    ],
+    "tables_checked": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "visual_source_pages_reviewed": [
+      4,
+      7,
+      9,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "not_performed": [
+      "training reproduction",
+      "benchmark rerun",
+      "live checkpoint audit"
+    ],
+    "version_boundary": "Original Visual Instruction Tuning paper v2; not LLaVA-1.5 Improved Baselines"
+  },
+  "diagram": {
+    "svg": "figures/llava.svg",
+    "png": "figures/llava.png",
+    "original": true,
+    "visual_qa": "PNG opened and inspected 2026-09-30; readable Chinese text, no overlap or clipping observed"
+  },
+  "source_sha256": "dc8bace378a282ea78caa9b5959306202fbfa3b8cedaf8a66541a9af18f4d3bf"
+}

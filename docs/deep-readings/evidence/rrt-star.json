@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "paper_key": "rrt-star",
+  "title": "Sampling-based Algorithms for Optimal Motion Planning",
+  "version": "arXiv:1105.1186v1; 2011-05-05",
+  "primary_source": "https://arxiv.org/abs/1105.1186",
+  "fulltext_url": "https://arxiv.org/pdf/1105.1186",
+  "source_sha256": "d06c76af8c0a3a941354aadfbf29378de50b569def1459f669a3cecc6e6a015b",
+  "read_at": "2026-09-30",
+  "page_numbering": "PDF pages, 1-based unless locator explicitly refers to printed page",
+  "status": "fulltext_read",
+  "independent_replication": false,
+  "claims": [
+    {
+      "id": "rrt-star-01",
+      "claim": "This paper studies geometric path planning in bounded Euclidean space without differential constraints",
+      "locator": "§1.3 pp.4–5; §2.1 p.6",
+      "type": "scope"
+    },
+    {
+      "id": "rrt-star-02",
+      "claim": "RRT* chooses a least-cost feasible parent and then rewires neighbors whose root-to-node cost improves",
+      "locator": "§3.3 pp.14–15; Algorithm6 p.16",
+      "type": "mechanism"
+    },
+    {
+      "id": "rrt-star-03",
+      "claim": "Original radius r_n=min{γ(log n/n)^(1/d),η}; k-nearest alternatives scale with log n, with different algorithm-specific constants",
+      "locator": "§3.3; Algorithms4–6; Theorems34–39 pp.28–29",
+      "type": "reported_algorithm",
+      "conditions": "Original RRT* asymptotic-optimality proof has known later caveat; not asserted as an independently validated proof"
+    },
+    {
+      "id": "rrt-star-04",
+      "claim": "Robust feasibility uses positive clearance; robust optimal solution adds weak clearance and local path-cost continuity",
+      "locator": "Definition14 p.17; §4.2 Definition24 pp.21–22",
+      "type": "assumption"
+    },
+    {
+      "id": "rrt-star-05",
+      "claim": "PRM* proof uses covering balls, union bounds, summability/Borel–Cantelli and convergence in bounded variation",
+      "locator": "AppendixC pp.54–61",
+      "type": "proof_outline"
+    },
+    {
+      "id": "rrt-star-06",
+      "claim": "Original AppendixG RRT* proof was later challenged for confusing pairwise ordering with a globally ordered chain and ignoring steering-induced sample distribution issues",
+      "locator": "Solovey et al., arXiv:1909.09688v2 §III-B, §IV Remark2 and appendix",
+      "type": "later_theory_audit",
+      "source_url": "https://arxiv.org/pdf/1909.09688v2"
+    },
+    {
+      "id": "rrt-star-07",
+      "claim": "Later alternative proof uses radius exponent 1/(d+1), theorem1 probability bound, while tightness relative to 1/d is left open in that paper",
+      "locator": "Solovey et al. §IV Theorem1 and §V",
+      "type": "later_theory_audit",
+      "source_url": "https://arxiv.org/pdf/1909.09688v2",
+      "conditions": "This is a sufficient-condition update, not a counterexample disproving asymptotic optimality at the original radius; not an exhaustive 2026 theory survey"
+    },
+    {
+      "id": "rrt-star-08",
+      "claim": "2D experiments use 500 runs of 20,000 iterations with same sample sequences for RRT/RRT*",
+      "locator": "§5 pp.33–34; Figs.12–16",
+      "type": "reported_configuration"
+    },
+    {
+      "id": "rrt-star-09",
+      "claim": "5D uses 100 trials; 10D obstacle experiment uses 25 trials",
+      "locator": "§5 p.34; Fig.20 p.44; Fig.22 p.46",
+      "type": "reported_configuration"
+    },
+    {
+      "id": "rrt-star-10",
+      "claim": "Original fixed-dimension complexity analysis yields O(log n) expected collision calls per iteration and O(n) tree storage",
+      "locator": "§4.3 pp.29–33; Lemma42; Table1",
+      "type": "complexity",
+      "conditions": "Specified near-neighbor/range-search models and fixed environment; does not imply a dimension-independent small wall-time constant or carry unchanged to later larger radius"
+    },
+    {
+      "id": "rrt-star-11",
+      "claim": "Learned sampling must retain coverage conditions and collision verification; geometric plans require a separate execution/control layer",
+      "locator": "Reader synthesis based on §2–3 and §6 scope",
+      "type": "interpretation"
+    }
+  ],
+  "scope_notes": [
+    "All original technical sections and appendices read; this is not formal proof verification.",
+    "Supplementary critical paper read selectively for its logical gap, theorem statement, conclusion and counterexample; not counted as a new full-reading baseline.",
+    "No claim that finite experiments prove asymptotic convergence.",
+    "No source PDF or original diagrams redistributed."
+  ],
+  "diagram": {
+    "original": true,
+    "source_copy": false,
+    "png_visual_qa": "passed; checked text, connectors, margins at native resolution"
+  },
+  "supplementary_sources": [
+    {
+      "title": "Revisiting the Asymptotic Optimality of RRT*",
+      "version": "arXiv:1909.09688v2; 2020-04-22",
+      "url": "https://arxiv.org/pdf/1909.09688v2",
+      "sha256": "26e9b50ffbfd31628f570b29ace1af2f594f9a5d43aa1d1a8b831ff8d7912178",
+      "coverage": "Targeted: §III, §IV theorem1/overview/Remark2, §V, counterexample appendix; not a full paper review"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "paper_id": "2210.03629",
+  "key": "react",
+  "version": "v3",
+  "source_url": "https://arxiv.org/pdf/2210.03629v3",
+  "source_pdf_sha256": "f285b0971ae4a790e402fb93966bed3adde2cf0a04977d08b2b40d6ab0cace69",
+  "reading_coverage": {
+    "status": "full_main_text_and_appendices_read",
+    "pdf_pages": 33,
+    "main_text": "§1–6 pp1–10; reproducibility and ethics p10",
+    "appendices": "A.1–A.3 pp14–15; B.1–B.2 p15; C.1–C.4 pp16–25; D.1–D.3 pp25–31; E.1 pp32–33",
+    "references": "Bibliography inspected as index, cited works not individually read",
+    "source_figure_visual_checks": [
+      "p23 Table7 original checked for remaining thought line"
+    ],
+    "not_claimed": [
+      "No training reproduction",
+      "No code audit",
+      "No current-model performance extrapolation"
+    ]
+  },
+  "claims": [
+    {
+      "id": "react-01",
+      "claim": "Interaction context and augmented action space A union L",
+      "source_location": "§2 pp3–4",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Thought updates context only; tool observations are external"
+    },
+    {
+      "id": "react-02",
+      "claim": "HotpotQA ReAct27.4 vs CoT29.4 and Act25.7; FEVER60.9 vs56.3/58.9",
+      "source_location": "Table1 p5",
+      "kind": "paper_evidence",
+      "interpretation_limit": "PaLM540B prompting"
+    },
+    {
+      "id": "react-03",
+      "claim": "Hybrid35.1 HotpotQA and64.6 FEVER",
+      "source_location": "Table1 p5; §3.2",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Different sampling/tool budgets"
+    },
+    {
+      "id": "react-04",
+      "claim": "200 manually reviewed trajectories; hallucination0% vs56% among sampled failures",
+      "source_location": "Table2 p6; §3.3",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Not population hallucination rate"
+    },
+    {
+      "id": "react-05",
+      "claim": "ALFWorld avg57 best71, Act best45, BUTLER best37",
+      "source_location": "Table3 p8; §4 p7",
+      "kind": "paper_evidence",
+      "interpretation_limit": "134 unseen games; 6 prompt permutations; different selection budgets"
+    },
+    {
+      "id": "react-06",
+      "claim": "WebShop ReAct66.6 score/40.0SR; Act62.3/30.1; human82.1/59.6",
+      "source_location": "Table4 p8",
+      "kind": "paper_evidence",
+      "interpretation_limit": "500 test instructions; benchmark purchases do not transact"
+    },
+    {
+      "id": "react-07",
+      "claim": "3000 correct-answer trajectories; batch64; Act/ReAct4000 steps",
+      "source_location": "§3.2 p5; B.1 p15",
+      "kind": "paper_evidence",
+      "interpretation_limit": "NLL formula is pedagogical restatement, not new numbered equation"
+    },
+    {
+      "id": "react-08",
+      "claim": "GPT3 comparison30.8 vs29.4 HotpotQA",
+      "source_location": "A.1 Table5 p14",
+      "kind": "paper_evidence",
+      "interpretation_limit": "500-question subset, not main-table full protocol"
+    },
+    {
+      "id": "react-09",
+      "claim": "IM constrained thoughts avg48 best53",
+      "source_location": "§4 Table3 p8; B.2 p15; C.4",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Specific prompt ablation, not full system comparison"
+    },
+    {
+      "id": "react-10",
+      "claim": "Table7 includes thought despite caption",
+      "source_location": "C.4 Table7 p23",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Visual PDF check; do not infer actual runs used it"
+    }
+  ],
+  "notes": [
+    "Table7 caption says no thoughts but printed trajectory includes a think line; PDF checked, experimental code not audited"
+  ],
+  "diagram": {
+    "svg": "react.svg",
+    "png": "react.png",
+    "type": "original conceptual reconstruction",
+    "source": "§2–4",
+    "visual_qa": "Rendered PNG inspected: readable labels, no clipping or overlapping, separated thought and environment paths"
+  },
+  "chinese_character_count": 2658
+}

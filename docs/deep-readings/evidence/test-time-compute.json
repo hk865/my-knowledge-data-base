@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "paper_key": "test-time-compute",
+  "title": "Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters",
+  "arxiv_id": "2408.03314",
+  "version": "v1",
+  "source_url": "https://arxiv.org/abs/2408.03314v1",
+  "fulltext_url": "https://arxiv.org/pdf/2408.03314v1",
+  "accessed_at": "2026-09-30",
+  "source_pdf_sha256": "ded7b20b51493258c5ce2a1a024cd33dd752de1fa3373d1207620da4cfe24545",
+  "page_count": 37,
+  "reading_status": "main_text_and_relevant_appendices_read",
+  "reading_coverage": {
+    "main": [
+      "§1 Introduction",
+      "§2 Proposer/Verifier",
+      "§3.1–3.2 Optimal policy and difficulty",
+      "§4 Setup",
+      "§5.1–5.3 PRM search",
+      "§6.1–6.2 Revisions",
+      "§7 Exchange rate",
+      "§8 Limitations"
+    ],
+    "appendices": [
+      "A Related work",
+      "B Additional revisions",
+      "C Predicted difficulty",
+      "D PRM training",
+      "E PRM aggregation",
+      "F PRM vs ORM",
+      "G Prompting",
+      "H Revision training",
+      "I Selection",
+      "J Revision verifier",
+      "K ReST negative result",
+      "L Examples Figures17–23",
+      "M Search examples Figures24–29"
+    ],
+    "references": "used for provenance; cited works not all separately read",
+    "visual_source_pages_checked": [
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37
+    ],
+    "method": "downloaded official PDF; extracted complete text and read sections; rendered figures where needed"
+  },
+  "claims": [
+    {
+      "id": "setup",
+      "claim": "PaLM2-S* Codey, MATH12Ktrain/500test",
+      "locator": "§4 p6",
+      "type": "paper_report"
+    },
+    {
+      "id": "difficulty",
+      "claim": "pass@1 or averaged verifier over2048 samples;2fold crossvalidation;cost excluded",
+      "locator": "§3.2 pp5–6,AppendixC",
+      "type": "paper_report"
+    },
+    {
+      "id": "prm",
+      "claim": "soft MC success target,16rollouts/step;last-score aggregation best",
+      "locator": "§5.1,AppendicesD/E",
+      "type": "paper_report"
+    },
+    {
+      "id": "search",
+      "claim": "low budget beam advantage;easy/highbudget PRM overoptimization;hardestlittleprogress",
+      "locator": "Fig3/4,§5.3",
+      "type": "paper_report"
+    },
+    {
+      "id": "revision",
+      "claim": "64samples training,0–4 wronghistory,closest editdistance;38% correct→wrong undernaive strategy",
+      "locator": "§6.1,AppendixH",
+      "type": "paper_report"
+    },
+    {
+      "id": "exchange",
+      "claim": "inferencefactor=M+3(Dpre/Dinf)(M−1);~14x params conditioned benefit",
+      "locator": "§7 Fig9",
+      "type": "paper_report"
+    },
+    {
+      "id": "negative",
+      "claim": "ReST revision training harmed continued revisions",
+      "locator": "AppendixK Fig16",
+      "type": "paper_report"
+    }
+  ],
+  "boundaries": [
+    "4x means particular generation-budget operating points, not universal end-to-end latency or costs",
+    "Difficulty estimator overhead omitted; idealized compute-optimal not online solved optimum",
+    "MC PRM is policy-dependent reward-to-go, not human binary proof checking",
+    "Search and revision systems are separately studied; combined PRMtree+revision not tested"
+  ],
+  "diagram": {
+    "original": true,
+    "format": [
+      "svg",
+      "png"
+    ],
+    "visual_qa": "rendered with Inkscape and inspected; no clipping or overlap",
+    "path": "assets/test-time-compute-mechanism.svg"
+  },
+  "content_validation": {
+    "no_original_pdf_in_public_output": true,
+    "no_scraped_fulltext_in_public_output": true,
+    "not_a_verbatim_translation": true,
+    "original_explanatory_examples_labeled": true
+  }
+}

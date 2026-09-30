@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "paper_key": "mamba",
+  "title": "Mamba: Linear-Time Sequence Modeling with Selective State Spaces",
+  "arxiv_id": "2312.00752",
+  "version": "v2",
+  "source_url": "https://arxiv.org/abs/2312.00752v2",
+  "fulltext_url": "https://arxiv.org/pdf/2312.00752v2",
+  "accessed_at": "2026-09-30",
+  "source_pdf_sha256": "adf70ed1803c85b1899dec3e21f3af0b124411439e8654b840ea65f7b9f52b2e",
+  "page_count": 36,
+  "reading_status": "main_text_and_relevant_appendices_read",
+  "reading_coverage": {
+    "main": [
+      "§1 Introduction",
+      "§2 State Space Models",
+      "§3.1–3.6 Selective SSMs",
+      "§4.1–4.6 Experiments",
+      "§5 Discussion",
+      "§6 Conclusion"
+    ],
+    "appendices": [
+      "A Selection",
+      "B.1–B.5 Related Work",
+      "C Gating proof",
+      "D Hardware-aware algorithm",
+      "E.1–E.5 experiments and efficiency"
+    ],
+    "references": "used for provenance; cited works not all separately read",
+    "visual_source_pages_checked": [
+      3,
+      6,
+      11,
+      15,
+      16,
+      35
+    ],
+    "method": "downloaded official PDF; extracted complete text and read sections; rendered figures where needed"
+  },
+  "claims": [
+    {
+      "id": "selection",
+      "claim": "input-dependent Delta,B,C; static structured A",
+      "locator": "Algorithm2 p6,§3.2–3.6",
+      "type": "paper_report"
+    },
+    {
+      "id": "ssm_scan",
+      "claim": "fusion,parallel scan,recomputation avoid writing full expanded states to HBM",
+      "locator": "§3.3 pp6–7,AppendixD pp28–29",
+      "type": "paper_report"
+    },
+    {
+      "id": "ablations",
+      "claim": "LM selective all8.71 vs none10.93 PPL; selective copy99.8",
+      "locator": "Tables1,7",
+      "type": "paper_report"
+    },
+    {
+      "id": "lm",
+      "claim": "Mamba2.8B avg63.3 vs Pythia2.8B59.1/Pythia6.9B61.7",
+      "locator": "Table3 p12",
+      "type": "paper_report"
+    },
+    {
+      "id": "audio_limit",
+      "claim": "selectivity can hurt raw long audio; complex SSM useful",
+      "locator": "AppendixE.4.1,Fig10 p35",
+      "type": "paper_report"
+    },
+    {
+      "id": "throughput",
+      "claim": "2048 prompt,128 generation, A10080GB PCIe, batch1–128;6.9B untrained",
+      "locator": "§4.5,AppendixE.5 pp35–36",
+      "type": "paper_report"
+    }
+  ],
+  "boundaries": [
+    "Not simply linear attention; overall input map nonlinear",
+    "million length evidence primarily synthetic/DNA/audio, not generic million-token language retrieval",
+    "4–5x throughput includes larger batch advantage and particular baseline implementation"
+  ],
+  "diagram": {
+    "original": true,
+    "format": [
+      "svg",
+      "png"
+    ],
+    "visual_qa": "rendered with Inkscape and inspected; no clipping or overlap",
+    "path": "assets/mamba-mechanism.svg"
+  },
+  "content_validation": {
+    "no_original_pdf_in_public_output": true,
+    "no_scraped_fulltext_in_public_output": true,
+    "not_a_verbatim_translation": true,
+    "original_explanatory_examples_labeled": true
+  }
+}

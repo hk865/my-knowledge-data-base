@@ -1,0 +1,126 @@
+{
+  "paper_id": "1711.07280",
+  "key": "r2r",
+  "version": "v3",
+  "source_url": "https://arxiv.org/pdf/1711.07280v3",
+  "source_pdf_sha256": "b7589865ee573d4753ee9e25bdc494cbbb199e6ec17d0a349091aed0fd86c420",
+  "reading_coverage": {
+    "status": "full_main_text_and_supplement_read",
+    "pdf_pages": 13,
+    "main_text": "§1–7 pp1–8",
+    "appendices": "unnumbered supplementary pp11–13: Figure9 scene montage, Figure10 AMT instructions/interface, Table2 full instruction examples",
+    "references": "Bibliography indexed; cited works not individually read",
+    "source_figure_visual_checks": [
+      "p7 Table1",
+      "p11 Figure9 scene montage",
+      "p12 Figure10 interface and task instructions",
+      "p13 Table2 examples"
+    ],
+    "not_claimed": [
+      "No implementation reproduction",
+      "No real-robot transfer test",
+      "Not state-of-the-art contemporary VLN"
+    ]
+  },
+  "claims": [
+    {
+      "id": "r2r-01",
+      "claim": "90 scenes10800 panoramas194400RGBD images;average spacing2.25m",
+      "source_location": "§3.1 p3",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Baseline observesRGB; real imagery does not imply real-robot experiments"
+    },
+    {
+      "id": "r2r-02",
+      "claim": "Graph edges<=5m;state-dependent visible adjacent viewpoints",
+      "source_location": "§3.2.2 Eq1 pp3–4",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Graph aids simulation, no test goal oracle input"
+    },
+    {
+      "id": "r2r-03",
+      "claim": "Original six actions;camera increments30degrees;forward center reachable viewpoint",
+      "source_location": "§5.1 p6",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Not later panoramic candidate-action models"
+    },
+    {
+      "id": "r2r-04",
+      "claim": "LSTM encoder/decoder with language attention and meanpooled ResNet152",
+      "source_location": "§5.1 pp6–7",
+      "kind": "paper_evidence",
+      "interpretation_limit": "No visual attention; Luong equations expanded pedagogically"
+    },
+    {
+      "id": "r2r-05",
+      "claim": "Crossentropy teacher and student forcing;target recomputed from actual current pose",
+      "source_location": "§5.2 p7",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Student executes sampled model action;labels remain shortest-path teacher"
+    },
+    {
+      "id": "r2r-06",
+      "claim": "7189 paths21567 instructions;avg29words;4–6edges >=5m",
+      "source_location": "§4.2–4.3 p5",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Path sample constraints can be exploited"
+    },
+    {
+      "id": "r2r-07",
+      "claim": "Train14025+valseen1020 in61scenes;valunseen2349/11;test4173/18",
+      "source_location": "§4.4 p6",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Building-level separation critical"
+    },
+    {
+      "id": "r2r-08",
+      "claim": "Success final shortestgraphdistance<3m;oracle closest point on executed trajectory",
+      "source_location": "§4.4 p6",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Original protocol not SPL/nDTW;must stop independently"
+    },
+    {
+      "id": "r2r-09",
+      "claim": "Studentvalseen38.6 vsvalunseen21.8;teacher27.1/19.6",
+      "source_location": "Table1 p7",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Separate training regimes and splits"
+    },
+    {
+      "id": "r2r-10",
+      "claim": "Teststudent20.4SR26.6oracle7.85mNE;random13.2",
+      "source_location": "Table1 p7",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Random uses5successfulforward moves;shortest isoracle"
+    },
+    {
+      "id": "r2r-11",
+      "claim": "Human86.4SR90.2oracle based1390instructions",
+      "source_location": "Table1 and§5.3 p7",
+      "kind": "paper_evidence",
+      "interpretation_limit": "One-third test subset,not fulltest"
+    },
+    {
+      "id": "r2r-12",
+      "claim": "Original scene selection clean luxurious,fewpeople,captureview bias",
+      "source_location": "§3.2.4 p4",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Generalization bound beyond static scans"
+    },
+    {
+      "id": "r2r-13",
+      "claim": "Supplement instructions prioritize goal not exact markedpath",
+      "source_location": "Figure10 p12;Table2 p13",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Marker hidden from agent;human language abstraction varies"
+    }
+  ],
+  "diagram": {
+    "svg": "r2r.svg",
+    "png": "r2r.png",
+    "type": "original interaction and training-protocol diagram",
+    "source": "§3–5",
+    "visual_qa": "Rendered PNG inspected: legible labels and no clipping; policy, environment and training teacher separated"
+  },
+  "chinese_character_count": 2738
+}

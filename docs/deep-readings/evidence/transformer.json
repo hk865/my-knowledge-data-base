@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "paper_key": "transformer",
+  "title": "Attention Is All You Need",
+  "arxiv_id": "1706.03762",
+  "version": "v7",
+  "source_url": "https://arxiv.org/abs/1706.03762v7",
+  "fulltext_url": "https://arxiv.org/pdf/1706.03762v7",
+  "accessed_at": "2026-09-30",
+  "source_pdf_sha256": "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697",
+  "page_count": 15,
+  "reading_status": "main_text_and_relevant_appendices_read",
+  "reading_coverage": {
+    "main": [
+      "§1 Introduction",
+      "§2 Background",
+      "§3.1–3.5 Architecture",
+      "§4 Why Self-Attention",
+      "§5 Training",
+      "§6.1–6.3 Results",
+      "§7 Conclusion"
+    ],
+    "appendices": [
+      "Attention Visualizations, Figures 3–5, pp13–15"
+    ],
+    "references": "used for provenance; cited works not all separately read",
+    "visual_source_pages_checked": [
+      3,
+      4,
+      9,
+      13,
+      14,
+      15
+    ],
+    "method": "downloaded official PDF; extracted complete text and read sections; rendered figures where needed"
+  },
+  "claims": [
+    {
+      "id": "scaled_attention",
+      "claim": "softmax(QK^T/sqrt(d_k))V",
+      "locator": "§3.2.1 Eq1 p4",
+      "type": "paper_report"
+    },
+    {
+      "id": "architecture",
+      "claim": "6 encoder and 6 decoder layers; post-LN; base d_model512, 8 heads",
+      "locator": "§3.1–3.3 pp3–5",
+      "type": "paper_report"
+    },
+    {
+      "id": "bleu",
+      "claim": "EN-DE base27.3/big28.4; EN-FR table41.8 vs prose41.0",
+      "locator": "Table2 and §6.1 p8",
+      "type": "paper_report"
+    },
+    {
+      "id": "ablation",
+      "claim": "heads1:24.9 vs heads8:25.8; no dropout24.6; no label smoothing25.3",
+      "locator": "Table3 p9",
+      "type": "paper_report"
+    },
+    {
+      "id": "parsing",
+      "claim": "91.3 WSJ-only,92.7 semisupervised",
+      "locator": "Table4 p10",
+      "type": "paper_report"
+    }
+  ],
+  "boundaries": [
+    "EN-FR 41.8 in abstract/Table2 versus41.0 in §6.1; preserved inconsistency",
+    "KV caching paragraph is an engineering derivation, not a claimed paper contribution",
+    "Attention visualizations are qualitative, not causal proof"
+  ],
+  "diagram": {
+    "original": true,
+    "format": [
+      "svg",
+      "png"
+    ],
+    "visual_qa": "rendered with Inkscape and inspected; no clipping or overlap",
+    "path": "assets/transformer-mechanism.svg"
+  },
+  "content_validation": {
+    "no_original_pdf_in_public_output": true,
+    "no_scraped_fulltext_in_public_output": true,
+    "not_a_verbatim_translation": true,
+    "original_explanatory_examples_labeled": true
+  }
+}

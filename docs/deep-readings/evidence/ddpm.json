@@ -1,0 +1,131 @@
+{
+  "paper_key": "ddpm",
+  "title": "Denoising Diffusion Probabilistic Models",
+  "arxiv": "2006.11239v2",
+  "version_date": "2020-12-16",
+  "source_url": "https://arxiv.org/pdf/2006.11239v2",
+  "reading_date": "2026-09-30",
+  "claims": [
+    {
+      "id": "D1",
+      "claim": "Forward Gaussian chain and closed-form marginal; latent states have the same dimensionality as data",
+      "locator": "Section2, Equations1-4, PDFp2"
+    },
+    {
+      "id": "D2",
+      "claim": "Negative ELBO decomposes into prior KL, posterior reverse KLs and discrete reconstruction term",
+      "locator": "Equation5, pp3; AppendixA, pp13-14"
+    },
+    {
+      "id": "D3",
+      "claim": "Posterior q(x[t-1]|x[t],x0) is tractable Gaussian; its variance is beta[t]*(1-alpha_bar[t-1])/(1-alpha_bar[t])",
+      "locator": "Equations6-7, p3"
+    },
+    {
+      "id": "D4",
+      "claim": "Epsilon prediction reparameterizes reverse mean; simplified MSE drops the original time-dependent coefficient",
+      "locator": "Equations11-14, pp4-5"
+    },
+    {
+      "id": "D5",
+      "claim": "Training samples one t; sampling uses T sequential denoiser calls with last-step noise set to zero",
+      "locator": "Algorithms1-2,p4"
+    },
+    {
+      "id": "D6",
+      "claim": "T1000; beta linear .0001 to .02; U-Net with groupnorm and attention at16x16",
+      "locator": "Section4,p5; AppendixB,p14"
+    },
+    {
+      "id": "D7",
+      "claim": "CIFAR10 IS9.46±.11; train-reference FID3.17; test-reference FID5.24; NLL upper bound3.75 bits/dim",
+      "locator": "Table1 and Section4.1,p5",
+      "qualification": "Unconditional CIFAR10, original evaluation protocol"
+    },
+    {
+      "id": "D8",
+      "claim": "Fixed-variance original variational objective FID13.22 for mu prediction,13.51 for epsilon prediction; simple epsilon loss3.17",
+      "locator": "Table2,p5",
+      "qualification": "Supports interaction of parameterization and objective, not a universal theorem about epsilon superiority"
+    },
+    {
+      "id": "D9",
+      "claim": "True variational objective NLL upper bound3.70, simple loss3.75; better samples do not imply better likelihood",
+      "locator": "Table1,p5"
+    },
+    {
+      "id": "D10",
+      "claim": "LSUN Bedroom large4.90, Church7.89, Cat19.75 FID",
+      "locator": "Extra information Table3,p13"
+    },
+    {
+      "id": "D11",
+      "claim": "CIFAR35.7M parameters; high-resolution114M; large Bedroom256M; EMA.9999; reported final experiments trained once and checkpoint selected by minimum FID",
+      "locator": "AppendixB,pp14-15"
+    },
+    {
+      "id": "D12",
+      "claim": "Progressive compression scheme is a proof of concept, not tractable high-dimensional compression implementation",
+      "locator": "Extra information,p13"
+    },
+    {
+      "id": "D13",
+      "claim": "No text conditioning, VAE compression, action-conditioned world model or physical-time dynamics is established by the original paper",
+      "locator": "Sections2-4 and analyst scope comparison",
+      "type": "reader_inference"
+    }
+  ],
+  "coverage": {
+    "status": "full_text_and_relevant_appendices_read",
+    "pdf_pages": 25,
+    "main_text": "Sections1-6,pp1-9",
+    "extra_information": "Tables3-4,p13",
+    "appendices": "A derivations,B experimental details,C related work,D samples,pp13-25",
+    "references": "pp9-12 inspected for provenance; not independently reproduced",
+    "equations_checked": "1-26",
+    "algorithms_checked": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "tables_checked": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "visual_source_pages_reviewed": [
+      3,
+      4,
+      5,
+      7,
+      8,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25
+    ],
+    "not_performed": [
+      "training reproduction",
+      "new sampling benchmark",
+      "memorization audit"
+    ]
+  },
+  "diagram": {
+    "svg": "figures/ddpm.svg",
+    "png": "figures/ddpm.png",
+    "original": true,
+    "visual_qa": "PNG opened and inspected2026-09-30; readable labels, no overlaps or clipping"
+  },
+  "source_sha256": "aee5e07a802e8dfd2a386374c94fd61d1d056cb7e1e0fec4f28e8120ff5d8505"
+}

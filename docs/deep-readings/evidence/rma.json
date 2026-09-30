@@ -1,0 +1,116 @@
+{
+  "paper_id": "2107.04034",
+  "key": "rma",
+  "version": "v1",
+  "source_url": "https://arxiv.org/pdf/2107.04034v1",
+  "source_pdf_sha256": "d8660da881851756287efab24d85f5c629ba97878f70297eb429a8e8a9a57846",
+  "reading_coverage": {
+    "status": "full_main_text_and_supplement_read",
+    "pdf_pages": 15,
+    "main_text": "I–VI pp1–9",
+    "appendices": "Supplementary pp12–15: metrics; training/deployment; Algorithm1–2; FigS2–S4; labels contain repeated S1 headings",
+    "references": "Bibliography indexed; cited works not individually read",
+    "source_figure_visual_checks": [
+      "p4 equations and reward definition",
+      "p5 TableI timing and state",
+      "p6 Figure3 table-versus-caption conflict"
+    ],
+    "not_claimed": [
+      "No robot deployment",
+      "No reproduced training",
+      "No resolution of source contradictions"
+    ]
+  },
+  "claims": [
+    {
+      "id": "rma-01",
+      "claim": "State30 action12 environment17 latent8; actions target joint angles",
+      "source_location": "III-A Eq1–2 p4; IV-A p5",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Not direct torque or visual-language policy"
+    },
+    {
+      "id": "rma-02",
+      "claim": "Joint encoder-policy PPO first phase, history MSE second",
+      "source_location": "III-A/B pp4–5; Alg1 p12",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Adaptation weights frozen at deployment"
+    },
+    {
+      "id": "rma-03",
+      "claim": "On-policy data for adaptation uses predicted latent to execute frozen base",
+      "source_location": "III-B p5; Alg1 p12",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Not training solely on expert history"
+    },
+    {
+      "id": "rma-04",
+      "claim": "History50 steps0.5s; adaptation10Hz base100Hz asynchronous",
+      "source_location": "III-B/C p5; Fig2 p2; Alg2 p13",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Real-time design does not imply gradient adaptation"
+    },
+    {
+      "id": "rma-05",
+      "claim": "1.2B policy simsteps24h;80M adaptation3h",
+      "source_location": "IV-B p6",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Not low-data training"
+    },
+    {
+      "id": "rma-06",
+      "claim": "Penalty schedulek0=.03 k_next=k^.997; PPOλ.95 γ.998",
+      "source_location": "Supplement p12",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Source notation restated with iteration index"
+    },
+    {
+      "id": "rma-07",
+      "claim": "RMA success73.5;Expert76.2;Robust62.4;SysID56.5;noadapt52.1;AWR41.7",
+      "source_location": "TableII p8",
+      "kind": "paper_evidence",
+      "interpretation_limit": "3 seeds1000 episodes each; changing test parameters"
+    },
+    {
+      "id": "rma-08",
+      "claim": "RMA adaptation samples0, AWR40k",
+      "source_location": "TableII p8; Supplement metrics p12",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Zero separate exploration samples, still uses streaming observations"
+    },
+    {
+      "id": "rma-09",
+      "claim": "Mattress100/100/0 RMA,A1,noadapt;8cm step60/20/0",
+      "source_location": "Fig3 p6; V-A p8",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Usually5 trials; stop after2 severe failures"
+    },
+    {
+      "id": "rma-10",
+      "claim": "Oil90%;outdoorstairs70%;cement/pebbles80%",
+      "source_location": "V-B/D pp8–9; Fig1/4",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Finite observed test outcomes, not guarantees"
+    },
+    {
+      "id": "rma-11",
+      "claim": "Blind sensing fails on large perturbations; vision future work",
+      "source_location": "VI p9",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Reactive adaptation not anticipatory terrain planning"
+    }
+  ],
+  "source_issues": [
+    "Figure3 internal rows give uneven foam80%, step-down15 100%; caption says foam100%, step-down80%; unresolved",
+    "p5 control100Hz alongside simulation timestep0.025s; relation not specified there",
+    "TableI center-of-mass units printed cm with ranges±0.15/±0.18; not silently converted"
+  ],
+  "diagram": {
+    "svg": "rma.svg",
+    "png": "rma.png",
+    "type": "original three-stage mechanism",
+    "source": "Fig2; Algorithms1–2",
+    "visual_qa": "Rendered PNG inspected: no clipping or overlap; training and deployment channels distinct"
+  },
+  "chinese_character_count": 2576
+}
