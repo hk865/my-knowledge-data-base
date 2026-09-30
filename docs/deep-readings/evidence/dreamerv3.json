@@ -1,0 +1,113 @@
+{
+  "paper_slug": "dreamerv3",
+  "arxiv": "2301.04104",
+  "version": "v1",
+  "primary_url": "https://arxiv.org/pdf/2301.04104v1",
+  "checked_on": "2026-09-30",
+  "source_sha256": "e7c75128590e5558b6eb88b225c5d3da7953ced4de31eb2e775150960e114d94",
+  "reading_coverage": {
+    "status": "全文精读完成；非实验复现",
+    "main_text": "pp.1–11 methods, equations, experiments, conclusion read",
+    "appendices": "A–G及W细读；H视频预测、I–V曲线与数表用于核查实验覆盖和关键指标",
+    "references": "pp.12–16引用条目用于方法归属核查，被引论文未计为全文精读",
+    "visual_checks": [
+      "Fig.5 p.5",
+      "Appendix D ablation curves p.20"
+    ],
+    "later_version": "Nature 2025正文核对版本/任务/硬件/Minecraft指标差异，未完整精读其补充材料"
+  },
+  "claim_evidence": [
+    {
+      "id": "dv3-01",
+      "claim": "RSSM包含确定性h与离散z；真实输入用q后验，想象用p先验",
+      "locator": "pp.4–5 Eq.3–5; Fig.3",
+      "caveat": ""
+    },
+    {
+      "id": "dv3-02",
+      "claim": "世界模型损失权重1.0/0.5/0.1；两个KL通过stop-gradient分流，free-bits阈值1 nat",
+      "locator": "p.5 Eq.4–5; Appendix W Table W.1",
+      "caveat": ""
+    },
+    {
+      "id": "dv3-03",
+      "claim": "潜变量32组×32类，分类分布混入1%均匀分布",
+      "locator": "p.6; Appendix C p.19; Table W.1 p.38",
+      "caveat": ""
+    },
+    {
+      "id": "dv3-04",
+      "claim": "actor和critic训练于想象轨迹，交互时actor直接采样，没有lookahead规划",
+      "locator": "p.6 Actor Critic Learning",
+      "caveat": "本文解释与MPC的区别，不声称控制稳定性证明"
+    },
+    {
+      "id": "dv3-05",
+      "claim": "critic和reward采用255桶symlog two-hot；返回分位差归一化且分母下限1",
+      "locator": "pp.6–8 Eq.8–12",
+      "caveat": "Appendix E说明输入symlog是向量观测，不能泛化到所有RGB输入"
+    },
+    {
+      "id": "dv3-06",
+      "claim": "视觉DMC均值739.6 vs DrQ-v2 677.4，1M steps；本体DMC均值743.1 vs D4PG 721.0，500K steps",
+      "locator": "Tables Q.1 p.32 and O.1 p.30",
+      "caveat": "视觉20任务，本体18任务，不可混合平均"
+    },
+    {
+      "id": "dv3-07",
+      "claim": "Atari200M中位数302% vs DreamerV2 219%；均值920% vs 1149%",
+      "locator": "Table V.1 p.37",
+      "caveat": "55游戏；中位数胜出不代表每个聚合指标都更强"
+    },
+    {
+      "id": "dv3-08",
+      "claim": "Atari100k人类归一化均值112%、中位数49%；EfficientZero更高",
+      "locator": "Tables S.1 p.34 and T.1 p.35",
+      "caveat": "设置不同，不能写成该基准全面SOTA"
+    },
+    {
+      "id": "dv3-09",
+      "claim": "Minecraft 40 seed各100M steps，24 seed至少一次最高里程碑分，共50 episodes，首次29.3M",
+      "locator": "p.10; Appendix G p.23",
+      "caveat": "最高分包括取得钻石；从箱子偶得钻石而未走完里程碑不计入此统计"
+    },
+    {
+      "id": "dv3-10",
+      "claim": "Minecraft含64×64RGB、库存等向量、25类动作、12里程碑奖励与生命小奖励、100倍破坏速度",
+      "locator": "Appendix F p.22",
+      "caveat": "不是原版纯视觉、单终点奖励设定"
+    },
+    {
+      "id": "dv3-11",
+      "claim": "去KL balancing/free bits及取消分母下限会破坏特定任务学习；two-hot优于连续回归趋势",
+      "locator": "Appendices D–E pp.20–21",
+      "caveat": "仅报告曲线与作者解释，不目测精确百分点"
+    },
+    {
+      "id": "dv3-12",
+      "claim": "固定算法超参数但每任务独立agent，模型规模与train ratio跨基准变化",
+      "locator": "Conclusion p.11; Tables A.1/B.1 p.18; Table W.1 p.38",
+      "caveat": ""
+    },
+    {
+      "id": "dv3-13",
+      "claim": "Nature后续版发表于2025-04-02，8领域，DMLab30任务，Atari57任务，A100；Minecraft全部训练run发现钻石",
+      "locator": "https://www.nature.com/articles/s41586-025-08744-2 — Results, Fig.5, Methods Seeds and error bars",
+      "caveat": "后续版Minecraft 10 seeds；不能与v1的40 seed结果混写"
+    }
+  ],
+  "reproduction_limits": [
+    "未运行官方代码或训练",
+    "未固定官方代码commit或验证依赖/许可证",
+    "源论文v1正文Eq.11的符号与stop-gradient表述需结合文字及实现核对；本文只给优化方向而未照抄为可执行loss",
+    "DMLab效率叙述与表格含步/帧口径细节，未采用单一精确倍数作结论",
+    "未提供真实机器人安全、稳定性或sim-to-real保证"
+  ],
+  "diagram": {
+    "svg": "dreamerv3_mechanism.svg",
+    "png": "dreamerv3_mechanism.png",
+    "original": true,
+    "visual_qa": "PNG opened and inspected; no clipped labels or overlaps",
+    "meaning": "Conceptual data flow; not a complete computational graph"
+  }
+}
