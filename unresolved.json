@@ -1,0 +1,146 @@
+[
+  {
+    "title": "Inference Scaling Laws: An Empirical Analysis of Compute-Optimal Inference for LLM Problem-Solving",
+    "url": null,
+    "chat_date": "2026-09-10T05:06:03Z",
+    "provenance": "assistant_suggested_in_chat",
+    "reason": "Only https://proceedings.iclr.cc/... retrieved.",
+    "extraction_domain": "training"
+  },
+  {
+    "title": "Self-Refine",
+    "url": null,
+    "chat_date": "2026-09-23T15:35:43Z",
+    "provenance": "assistant_suggested_in_chat",
+    "reason": "Named, only truncated NeurIPS URL.",
+    "extraction_domain": "training"
+  },
+  {
+    "title": "PromptAgent",
+    "url": null,
+    "chat_date": "2026-09-23T15:35:43Z",
+    "provenance": "assistant_suggested_in_chat",
+    "reason": "Named, only truncated ICLR URL.",
+    "extraction_domain": "training"
+  },
+  {
+    "title": "Reflexion",
+    "url": null,
+    "chat_date": "2026-09-23T15:35:43Z",
+    "provenance": "assistant_suggested_in_chat",
+    "reason": "Named, truncated URLs only.",
+    "extraction_domain": "training"
+  },
+  {
+    "title": "Language Models Don’t Always Say What They Think: Unfaithful Explanations in Chain-of-Thought Prompting",
+    "url": null,
+    "chat_date": "2026-08-25T15:00:25Z",
+    "provenance": "assistant_suggested_in_chat",
+    "reason": "Named, NeurIPS URL truncated.",
+    "extraction_domain": "training"
+  },
+  {
+    "title": "AgentBench",
+    "url": null,
+    "chat_date": "2026-09-01T11:44:47Z",
+    "provenance": "assistant_suggested_in_chat",
+    "reason": "Named, ICLR URL truncated.",
+    "extraction_domain": "training"
+  },
+  {
+    "title": "τ-bench",
+    "url": null,
+    "chat_date": "2026-09-01T11:44:47Z",
+    "provenance": "assistant_suggested_in_chat",
+    "reason": "Named, paperswithcode URL truncated.",
+    "extraction_domain": "training"
+  },
+  {
+    "title": "Relational knowledge in attention (reported arXiv 2409.00617)",
+    "url": null,
+    "chat_date": "2026-08-18T05:22:59Z",
+    "provenance": "assistant_suggested_in_chat",
+    "reason": "Identifier in initial retrieval; exact historical URL not recovered on targeted search. Not verified/promoted.",
+    "extraction_domain": "training"
+  },
+  {
+    "title": "Later-layer factual formation (reported arXiv 2606.07978)",
+    "url": null,
+    "chat_date": "2026-08-18T05:22:59Z",
+    "provenance": "assistant_suggested_in_chat",
+    "reason": "Identifier in initial retrieval; exact historical URL not recovered on targeted search. Not verified/promoted.",
+    "extraction_domain": "training"
+  },
+  {
+    "title": null,
+    "url": "https://www.mdpi.com/1424-8220/26/17/5595",
+    "arxiv": null,
+    "doi": null,
+    "source_date": "2026-09-04T11:35:25Z",
+    "provenance": "assistant_suggested_chat_link",
+    "source_evidence": "Exact MDPI URL returned by initial broad retrieval",
+    "status": "unresolved",
+    "caveats": [
+      "Publisher open failed; targeted search did not establish matching title. Retain for later resolution."
+    ],
+    "extraction_domain": "multimodal"
+  },
+  {
+    "title": "PointWorld (historical label)",
+    "url": null,
+    "arxiv": null,
+    "doi": null,
+    "source_date": "2026-09-04T11:35:25Z",
+    "provenance": "assistant_suggested_chat_link",
+    "source_evidence": "PointWorld: https://openaccess.thecvf.com/...",
+    "status": "unresolved_truncated_url",
+    "caveats": [
+      "Cannot safely recover exact cited paper from truncated URL."
+    ],
+    "extraction_domain": "multimodal"
+  },
+  {
+    "title": null,
+    "url": null,
+    "source_date": "2026-09-04T11:35:25Z",
+    "provenance": "assistant_suggested_chat_link",
+    "source_evidence": "https://www.frontiersin.org/...",
+    "status": "unresolved_truncated_url",
+    "caveats": [
+      "No exact identifier or title."
+    ],
+    "extraction_domain": "multimodal"
+  },
+  {
+    "title": null,
+    "url": null,
+    "source_date": "2026-09-23",
+    "provenance": "assistant_suggested_chat_link",
+    "source_evidence": "https://arxiv.org/abs/2605 [truncated after LARY in initial retrieval]",
+    "status": "unresolved_truncated_url",
+    "caveats": [
+      "Focused retrieval did not recover full identifier; not merged with another paper."
+    ],
+    "extraction_domain": "multimodal"
+  },
+  {
+    "title": "TLIO",
+    "reason": "Named in January 7 chat excerpt without exact URL; not counted as extracted link.",
+    "extraction_domain": "robotics"
+  },
+  {
+    "title": "Yan ICRA 2018",
+    "reason": "Name only; insufficient identity and no URL.",
+    "extraction_domain": "robotics"
+  },
+  {
+    "title": "Extreme Parkour",
+    "reason": "Only truncated GitHub URL; excluded.",
+    "extraction_domain": "robotics"
+  },
+  {
+    "title": "GEN-1.5 / MimicDroid / AIRSOUL",
+    "reason": "Mentioned in physical ICL context without exact paper URLs.",
+    "extraction_domain": "robotics"
+  }
+]

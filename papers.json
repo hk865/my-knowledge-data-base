@@ -1,68 +1,5873 @@
 [
   {
-    "title": "Attention Is All You Need",
-    "year": "2017",
-    "arxiv_id": "1706.03762",
-    "original_url": "https://arxiv.org/abs/1706.03762",
-    "topic": "模型训练与多模态",
-    "problem_method_evidence": "问题：如何摆脱序列模型中的循环与卷积瓶颈。方法：基于注意力的 Transformer。原文证据：机器翻译任务及句法分析验证；不能直接据此断言现代 LLM、视觉或机器人任务中的收益。",
-    "limitations_relevance_reading_status": "关联判断：理解注意力与后续缓存、结构改动的共同起点；本文不直接解决 KV cache 压缩。阅读状态：摘要与元数据已核验，全文精读待做；你的阅读状态待确认。",
-    "user_reading_status": "待确认",
-    "verification": "官方 arXiv 摘要与元数据已核验，全文精读待做"
-  },
-  {
-    "title": "Training Compute Optimal Large Language Models",
-    "year": "2022",
-    "arxiv_id": "2203.15556",
-    "original_url": "https://arxiv.org/abs/2203.15556",
-    "topic": "模型训练与多模态",
-    "problem_method_evidence": "问题：固定训练算力如何分配模型大小与训练 token。方法：训练多组模型拟合计算最优规模关系，再用 Chinchilla 验证。原文证据：在研究覆盖的训练设置中支持模型大小和 token 协同增长。",
-    "limitations_relevance_reading_status": "证据边界：关联判断，不应把其经验规律当作所有数据质量、多模态配比或包含推理成本的通用最优解。关联判断：为数据量与规模选型建立基线。阅读状态：摘要与元数据已核验，全文精读待做；你的阅读状态待确认。",
-    "user_reading_status": "待确认",
-    "verification": "官方 arXiv 摘要与元数据已核验，全文精读待做"
-  },
-  {
-    "title": "Training language models to follow instructions with human feedback",
-    "year": "2022",
-    "arxiv_id": "2203.02155",
-    "original_url": "https://arxiv.org/abs/2203.02155",
-    "topic": "模型训练与多模态",
-    "problem_method_evidence": "问题：语言预训练目标与用户意图不一致。方法：示范数据监督微调，再用人类输出排序进行强化学习微调。原文证据：作者提示分布上的人工偏好评估及部分 NLP 评测；模型仍会犯错。",
-    "limitations_relevance_reading_status": "关联判断：适合对照预训练、SFT、RL 各自使用的数据与优化目标；偏好改善不等于所有能力提高，也不直接证明机器人闭环可靠。阅读状态：摘要与元数据已核验，全文精读待做；你的阅读状态待确认。",
-    "user_reading_status": "待确认",
-    "verification": "官方 arXiv 摘要与元数据已核验，全文精读待做"
-  },
-  {
-    "title": "OpenVLA An Open Source Vision Language Action Model",
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2408.03314"
+    ],
+    "id": "arxiv:2408.03314",
+    "title": "Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters",
+    "url": "https://arxiv.org/abs/2408.03314",
+    "arxiv_id": "2408.03314",
+    "doi": null,
     "year": "2024",
-    "arxiv_id": "2406.09246",
-    "original_url": "https://arxiv.org/abs/2406.09246",
-    "topic": "机器人与具身智能",
-    "problem_method_evidence": "问题：VLA 的开放使用与新任务适配。方法：7B 语言模型结合视觉编码器，在机器人示范上训练，并研究高效微调。原文证据：多任务操纵和适配实验。",
-    "limitations_relevance_reading_status": "证据边界与关联判断：操纵评测不能替代移动导航或四足稳定性验证；适合从编码器、数据配比、动作接口、微调成本切入与你的多模态训练问题对照。阅读状态：摘要与元数据已核验，全文精读待做；你的阅读状态待确认。",
-    "user_reading_status": "待确认",
-    "verification": "官方 arXiv 摘要与元数据已核验，全文精读待做"
+    "topic_paths": [
+      "llm/inference"
+    ],
+    "detail_topics": [
+      "inference/test-time scaling",
+      "posttraining/rewards/process verification"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [
+      "process reward model"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-10T05:06:03Z",
+        "role": "assistant",
+        "evidence": "Prior assistant message explicitly linked https://arxiv.org/abs/2408.03314; recovered through historical conversation retrieval.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2408.03314"
+    ],
+    "verification_status": "verified_primary_title_and_identifier",
+    "caveats": [
+      "Chat retrieval supplied timestamps but no stable conversation permalink."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [
+      "inference-time search"
+    ],
+    "evaluation_tags": [],
+    "catalog_anchor": "p001"
   },
   {
-    "title": "RMA Rapid Motor Adaptation for Legged Robots",
-    "year": "2021",
-    "arxiv_id": "2107.04034",
-    "original_url": "https://arxiv.org/abs/2107.04034",
-    "topic": "机器人与具身智能",
-    "problem_method_evidence": "问题：四足机器人如何适应未见地形、负载等变化。方法：基础策略与适应模块组合，在仿真训练后部署到 A1。原文证据：仿真与多种真实地形实验，无真机微调。",
-    "limitations_relevance_reading_status": "证据边界与关联判断：不能由单一平台结果推出任何传感器组合都有效；与适应、特权信息及部署观测差异相关，可作为教师学生路线的比较入口，本文不等同于深度加 IMU 导航方案。阅读状态：摘要与元数据已核验，全文精读待做；你的阅读状态待确认。",
-    "user_reading_status": "待确认",
-    "verification": "官方 arXiv 摘要与元数据已核验，全文精读待做"
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2502.18080"
+    ],
+    "id": "arxiv:2502.18080",
+    "title": "Towards Thinking-Optimal Scaling of Test-Time Compute for LLM Reasoning",
+    "url": "https://arxiv.org/abs/2502.18080",
+    "arxiv_id": "2502.18080",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "llm/posttraining/sft",
+      "llm/inference"
+    ],
+    "detail_topics": [
+      "inference/test-time scaling",
+      "posttraining/SFT/self-training"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [
+      "teacher-generated reasoning",
+      "self-training"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-10T05:06:03Z",
+        "role": "assistant",
+        "evidence": "Prior assistant message explicitly linked https://arxiv.org/abs/2502.18080; recovered through historical conversation retrieval.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      },
+      {
+        "date": "2026-09-01T11:44:47Z",
+        "role": "assistant",
+        "evidence": "Towards Thinking-Optimal Scaling — https://arxiv.org/abs/2502.18080",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2502.18080"
+    ],
+    "verification_status": "verified_primary_title_and_identifier",
+    "caveats": [
+      "Chat retrieval supplied timestamps but no stable conversation permalink."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p002"
   },
   {
-    "title": "Mastering Diverse Domains through World Models",
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2501.19393"
+    ],
+    "id": "arxiv:2501.19393",
+    "title": "s1: Simple test-time scaling",
+    "url": "https://arxiv.org/abs/2501.19393",
+    "arxiv_id": "2501.19393",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "llm/posttraining/sft",
+      "llm/inference"
+    ],
+    "detail_topics": [
+      "posttraining/SFT/reasoning",
+      "inference/budget forcing",
+      "data/curated reasoning"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [
+      "supervised fine-tuning",
+      "synthetic reasoning traces"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-10T05:06:03Z",
+        "role": "assistant",
+        "evidence": "Prior assistant message explicitly linked https://arxiv.org/abs/2501.19393; recovered through historical conversation retrieval.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2501.19393"
+    ],
+    "verification_status": "verified_primary_title_and_identifier",
+    "caveats": [
+      "Chat retrieval supplied timestamps but no stable conversation permalink."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p003"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2407.21787"
+    ],
+    "id": "arxiv:2407.21787",
+    "title": "Large Language Monkeys: Scaling Inference Compute with Repeated Sampling",
+    "url": "https://arxiv.org/abs/2407.21787",
+    "arxiv_id": "2407.21787",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "llm/inference"
+    ],
+    "detail_topics": [
+      "inference/repeated sampling",
+      "inference/verification"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [
+      "verifiable outcomes"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-10T05:06:03Z",
+        "role": "assistant",
+        "evidence": "Prior assistant message explicitly linked https://arxiv.org/abs/2407.21787; recovered through historical conversation retrieval.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2407.21787"
+    ],
+    "verification_status": "verified_primary_title_and_identifier",
+    "caveats": [
+      "Chat retrieval supplied timestamps but no stable conversation permalink."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [
+      "inference-only sampling"
+    ],
+    "evaluation_tags": [],
+    "catalog_anchor": "p004"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2407.10671"
+    ],
+    "id": "arxiv:2407.10671",
+    "title": "Qwen2 Technical Report",
+    "url": "https://arxiv.org/abs/2407.10671",
+    "arxiv_id": "2407.10671",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "llm/posttraining/sft",
+      "llm/posttraining/preferences",
+      "llm/pretraining",
+      "llm/architecture"
+    ],
+    "detail_topics": [
+      "pretraining/general language",
+      "data/training pipeline",
+      "posttraining/SFT",
+      "posttraining/preference alignment",
+      "architecture/dense and MoE"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [
+      "self-supervised pretraining",
+      "supervised fine-tuning",
+      "preference alignment"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-30T02:52:50Z",
+        "role": "assistant",
+        "evidence": "Prior assistant message explicitly linked https://arxiv.org/abs/2407.10671; recovered through historical conversation retrieval.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2407.10671"
+    ],
+    "verification_status": "verified_primary_title_and_identifier",
+    "caveats": [
+      "Chat retrieval supplied timestamps but no stable conversation permalink."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p005"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2412.15115"
+    ],
+    "id": "arxiv:2412.15115",
+    "title": "Qwen2.5 Technical Report",
+    "url": "https://arxiv.org/abs/2412.15115",
+    "arxiv_id": "2412.15115",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "llm/posttraining/sft",
+      "llm/pretraining",
+      "llm/posttraining/rl"
+    ],
+    "detail_topics": [
+      "pretraining/general language",
+      "data/training pipeline",
+      "posttraining/SFT",
+      "posttraining/RL"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [
+      "self-supervised pretraining",
+      "supervised fine-tuning",
+      "reinforcement learning"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-30T02:52:50Z",
+        "role": "assistant",
+        "evidence": "Prior assistant message explicitly linked https://arxiv.org/abs/2412.15115; recovered through historical conversation retrieval.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2412.15115"
+    ],
+    "verification_status": "verified_primary_title_and_identifier",
+    "caveats": [
+      "Chat retrieval supplied timestamps but no stable conversation permalink."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p006"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2412.19437"
+    ],
+    "id": "arxiv:2412.19437",
+    "title": "DeepSeek-V3 Technical Report",
+    "url": "https://arxiv.org/abs/2412.19437",
+    "arxiv_id": "2412.19437",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "llm/posttraining/sft",
+      "llm/pretraining",
+      "llm/architecture",
+      "llm/posttraining/rl"
+    ],
+    "detail_topics": [
+      "pretraining/multi-token prediction",
+      "architecture/MoE",
+      "architecture/MLA",
+      "posttraining/SFT",
+      "posttraining/RL"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [
+      "self-supervised pretraining",
+      "supervised fine-tuning",
+      "reinforcement learning"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-30T02:52:50Z",
+        "role": "assistant",
+        "evidence": "Prior assistant message explicitly linked https://arxiv.org/abs/2412.19437; recovered through historical conversation retrieval.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2412.19437"
+    ],
+    "verification_status": "verified_primary_title_and_identifier",
+    "caveats": [
+      "Chat retrieval supplied timestamps but no stable conversation permalink."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p007"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2501.15383"
+    ],
+    "id": "arxiv:2501.15383",
+    "title": "Qwen2.5-1M Technical Report",
+    "url": "https://arxiv.org/abs/2501.15383",
+    "arxiv_id": "2501.15383",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "llm/posttraining/sft",
+      "llm/pretraining",
+      "llm/architecture",
+      "llm/inference"
+    ],
+    "detail_topics": [
+      "pretraining/long context",
+      "data/long-data synthesis",
+      "posttraining/SFT",
+      "inference/sparse attention and prefill"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [
+      "self-supervised pretraining",
+      "synthetic data",
+      "supervised fine-tuning"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-30T02:52:50Z",
+        "role": "assistant",
+        "evidence": "Prior assistant message explicitly linked https://arxiv.org/abs/2501.15383; recovered through historical conversation retrieval.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2501.15383"
+    ],
+    "verification_status": "verified_primary_title_and_identifier",
+    "caveats": [
+      "Chat retrieval supplied timestamps but no stable conversation permalink."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p008"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2312.00752"
+    ],
+    "id": "arxiv:2312.00752",
+    "title": "Mamba: Linear-Time Sequence Modeling with Selective State Spaces",
+    "url": "https://arxiv.org/abs/2312.00752",
+    "arxiv_id": "2312.00752",
+    "doi": null,
     "year": "2023",
+    "topic_paths": [
+      "llm/pretraining",
+      "llm/architecture",
+      "llm/inference"
+    ],
+    "detail_topics": [
+      "architecture/state space",
+      "pretraining/sequence modeling",
+      "inference/linear-time"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [
+      "self-supervised language modeling"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-30T03:03:00Z",
+        "role": "assistant",
+        "evidence": "Prior assistant message explicitly linked https://arxiv.org/abs/2312.00752; recovered through historical conversation retrieval.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2312.00752"
+    ],
+    "verification_status": "verified_primary_title_and_identifier",
+    "caveats": [
+      "Chat retrieval supplied timestamps but no stable conversation permalink."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p009"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/pdf/2402.00838"
+    ],
+    "id": "arxiv:2402.00838",
+    "title": "OLMo: Accelerating the Science of Language Models",
+    "url": "https://arxiv.org/abs/2402.00838",
+    "arxiv_id": "2402.00838",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "llm/pretraining",
+      "cross-domain/interpretability"
+    ],
+    "detail_topics": [
+      "pretraining/open pipeline",
+      "data/open corpus",
+      "model science/reproducibility"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [
+      "self-supervised language modeling"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-30T03:03:00Z",
+        "role": "assistant",
+        "evidence": "Prior assistant message explicitly linked https://arxiv.org/pdf/2402.00838; recovered through historical conversation retrieval.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2402.00838"
+    ],
+    "verification_status": "verified_primary_title_and_identifier",
+    "caveats": [
+      "Chat retrieval supplied timestamps but no stable conversation permalink."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p010"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2501.12948",
+      "https://www.nature.com/articles/s41586-025-09422-z"
+    ],
+    "id": "arxiv:2501.12948",
+    "title": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
+    "url": "https://arxiv.org/abs/2501.12948",
+    "arxiv_id": "2501.12948",
+    "doi": "10.1038/s41586-025-09422-z",
+    "year": "2025",
+    "topic_paths": [
+      "llm/posttraining/sft",
+      "llm/posttraining/rl",
+      "llm/inference"
+    ],
+    "detail_topics": [
+      "posttraining/RL/GRPO",
+      "posttraining/rewards/verifiable",
+      "posttraining/SFT/cold start",
+      "posttraining/distillation"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [
+      "reinforcement learning",
+      "verifiable reward",
+      "supervised fine-tuning",
+      "distillation"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-30T03:03:00Z",
+        "role": "assistant",
+        "evidence": "Prior assistant message explicitly linked https://arxiv.org/abs/2501.12948; recovered through historical conversation retrieval.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      },
+      {
+        "date": "2026-09-05T05:21:33Z",
+        "role": "assistant",
+        "evidence": "Explicit Nature paper URL cited for DeepSeek-R1/R1-Zero, RLVR, SFT, GRPO.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2501.12948",
+      "https://www.nature.com/articles/s41586-025-09422-z"
+    ],
+    "verification_status": "verified_primary_title_and_identifier",
+    "caveats": [
+      "Chat retrieval supplied timestamps but no stable conversation permalink.",
+      "Chat named DeepSeek-R1-Zero; this is the combined R1 paper, not a separate R1-Zero publication. Nature title: DeepSeek-R1 incentivizes reasoning in LLMs through reinforcement learning."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p011"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2101.03961"
+    ],
+    "id": "arxiv:2101.03961",
+    "title": "Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity",
+    "url": "https://arxiv.org/abs/2101.03961",
+    "arxiv_id": "2101.03961",
+    "doi": null,
+    "year": "2021",
+    "topic_paths": [
+      "llm/pretraining",
+      "llm/architecture"
+    ],
+    "detail_topics": [
+      "architecture/MoE/routing",
+      "pretraining/sparse scaling"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [
+      "self-supervised pretraining"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-12T13:58:53Z",
+        "role": "assistant",
+        "evidence": "Prior assistant message explicitly linked https://arxiv.org/abs/2101.03961; recovered through historical conversation retrieval.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2101.03961"
+    ],
+    "verification_status": "verified_primary_title_and_identifier",
+    "caveats": [
+      "Chat retrieval supplied timestamps but no stable conversation permalink."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p012"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2401.06066"
+    ],
+    "id": "arxiv:2401.06066",
+    "title": "DeepSeekMoE: Towards Ultimate Expert Specialization in Mixture-of-Experts Language Models",
+    "url": "https://arxiv.org/abs/2401.06066",
+    "arxiv_id": "2401.06066",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "llm/pretraining",
+      "llm/architecture"
+    ],
+    "detail_topics": [
+      "architecture/MoE/expert specialization",
+      "pretraining/sparse models"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [
+      "self-supervised pretraining"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-12T13:58:53Z",
+        "role": "assistant",
+        "evidence": "Prior assistant message explicitly linked https://arxiv.org/abs/2401.06066; recovered through historical conversation retrieval.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2401.06066"
+    ],
+    "verification_status": "verified_primary_title_and_identifier",
+    "caveats": [
+      "Chat retrieval supplied timestamps but no stable conversation permalink."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p013"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2405.04434"
+    ],
+    "id": "arxiv:2405.04434",
+    "title": "DeepSeek-V2: A Strong, Economical, and Efficient Mixture-of-Experts Language Model",
+    "url": "https://arxiv.org/abs/2405.04434",
+    "arxiv_id": "2405.04434",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "llm/posttraining/sft",
+      "llm/pretraining",
+      "llm/architecture",
+      "llm/posttraining/rl"
+    ],
+    "detail_topics": [
+      "architecture/MoE",
+      "architecture/MLA",
+      "pretraining/general language",
+      "posttraining/SFT",
+      "posttraining/RL"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [
+      "self-supervised pretraining",
+      "supervised fine-tuning",
+      "reinforcement learning"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-12T13:58:53Z",
+        "role": "assistant",
+        "evidence": "Prior assistant message explicitly linked https://arxiv.org/abs/2405.04434; recovered through historical conversation retrieval.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      },
+      {
+        "date": "2026-08-18T05:22:59Z",
+        "role": "assistant",
+        "evidence": "Exact URL https://arxiv.org/abs/2405.04434 also present.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2405.04434"
+    ],
+    "verification_status": "verified_primary_title_and_identifier",
+    "caveats": [
+      "Chat retrieval supplied timestamps but no stable conversation permalink."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p014"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2601.07372"
+    ],
+    "id": "arxiv:2601.07372",
+    "title": "Conditional Memory via Scalable Lookup: A New Axis of Sparsity for Large Language Models",
+    "url": "https://arxiv.org/abs/2601.07372",
+    "arxiv_id": "2601.07372",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "llm/pretraining",
+      "llm/architecture"
+    ],
+    "detail_topics": [
+      "architecture/conditional memory",
+      "pretraining/sparsity"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [
+      "self-supervised language modeling"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-08-26T13:59:17Z",
+        "role": "assistant",
+        "evidence": "Prior assistant message explicitly linked https://arxiv.org/abs/2601.07372; recovered through historical conversation retrieval.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2601.07372"
+    ],
+    "verification_status": "verified_primary_title_and_identifier",
+    "caveats": [
+      "Chat retrieval supplied timestamps but no stable conversation permalink."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p015"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2607.29065"
+    ],
+    "id": "arxiv:2607.29065",
+    "title": "Tokenizer-Agnostic Engram Module",
+    "url": "https://arxiv.org/abs/2607.29065",
+    "arxiv_id": "2607.29065",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "llm/architecture"
+    ],
+    "detail_topics": [
+      "architecture/conditional memory",
+      "architecture/tokenizer compatibility"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [
+      "language-model training"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-08-26T13:46:47Z",
+        "role": "assistant",
+        "evidence": "Prior assistant message explicitly linked https://arxiv.org/abs/2607.29065; recovered through historical conversation retrieval.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2607.29065"
+    ],
+    "verification_status": "verified_primary_title_and_identifier",
+    "caveats": [
+      "Chat retrieval supplied timestamps but no stable conversation permalink."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p016"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2608.17050"
+    ],
+    "id": "arxiv:2608.17050",
+    "title": "Cross-Model Memory Transfer via Target-Side Reader Adaptation",
+    "url": "https://arxiv.org/abs/2608.17050",
+    "arxiv_id": "2608.17050",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "llm/architecture"
+    ],
+    "detail_topics": [
+      "architecture/conditional memory",
+      "posttraining/parameter-efficient adaptation"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [
+      "reader adaptation"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-08-26T13:46:47Z",
+        "role": "assistant",
+        "evidence": "Prior assistant message explicitly linked https://arxiv.org/abs/2608.17050; recovered through historical conversation retrieval.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2608.17050"
+    ],
+    "verification_status": "verified_primary_title_and_identifier",
+    "caveats": [
+      "Chat retrieval supplied timestamps but no stable conversation permalink."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [
+      "frozen-memory transfer"
+    ],
+    "evaluation_tags": [],
+    "catalog_anchor": "p017"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2412.09078"
+    ],
+    "id": "arxiv:2412.09078",
+    "title": "Forest-of-Thought: Scaling Test-Time Compute for Enhancing LLM Reasoning",
+    "url": "https://arxiv.org/abs/2412.09078",
+    "arxiv_id": "2412.09078",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "llm/inference"
+    ],
+    "detail_topics": [
+      "inference/test-time scaling",
+      "inference/reasoning search"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-01T11:44:47Z",
+        "role": "assistant",
+        "evidence": "Prior assistant message explicitly linked https://arxiv.org/abs/2412.09078; recovered through historical conversation retrieval.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2412.09078"
+    ],
+    "verification_status": "verified_primary_title_and_identifier",
+    "caveats": [
+      "Chat retrieval supplied timestamps but no stable conversation permalink."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [
+      "inference-time reasoning search"
+    ],
+    "evaluation_tags": [],
+    "catalog_anchor": "p018"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2407.18219?utm_source=chatgpt.com"
+    ],
+    "id": "arxiv:2407.18219",
+    "title": "Recursive Introspection: Teaching Language Model Agents How to Self-Improve",
+    "url": "https://arxiv.org/abs/2407.18219",
+    "arxiv_id": "2407.18219",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "llm/posttraining/sft",
+      "llm/inference",
+      "cross-domain/agents"
+    ],
+    "detail_topics": [
+      "posttraining/SFT/self-correction",
+      "posttraining/RL/multi-turn formulation",
+      "inference/iterative reasoning"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [
+      "iterative fine-tuning",
+      "online imitation",
+      "environment feedback"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-23T15:35:43Z",
+        "role": "assistant",
+        "evidence": "Prior assistant message explicitly linked https://arxiv.org/abs/2407.18219?utm_source=chatgpt.com; recovered through historical conversation retrieval.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2407.18219"
+    ],
+    "verification_status": "verified_primary_title_and_identifier",
+    "caveats": [
+      "Chat retrieval supplied timestamps but no stable conversation permalink."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p019"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2002.10957"
+    ],
+    "id": "arxiv:2002.10957",
+    "title": "MiniLM: Deep Self-Attention Distillation for Task-Agnostic Compression of Pre-Trained Transformers",
+    "url": "https://arxiv.org/abs/2002.10957",
+    "arxiv_id": "2002.10957",
+    "doi": null,
+    "year": "2020",
+    "topic_paths": [
+      "llm/pretraining",
+      "llm/architecture"
+    ],
+    "detail_topics": [
+      "architecture/compression",
+      "pretraining/distillation"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [
+      "teacher-student attention distillation"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-08-18T05:22:59Z",
+        "role": "assistant",
+        "evidence": "Prior assistant message explicitly linked https://arxiv.org/abs/2002.10957; recovered through historical conversation retrieval.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2002.10957"
+    ],
+    "verification_status": "verified_primary_title_and_identifier",
+    "caveats": [
+      "Chat retrieval supplied timestamps but no stable conversation permalink."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p020"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/html/1910.01108v4"
+    ],
+    "id": "arxiv:1910.01108",
+    "title": "DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter",
+    "url": "https://arxiv.org/abs/1910.01108",
+    "arxiv_id": "1910.01108",
+    "doi": null,
+    "year": "2019",
+    "topic_paths": [
+      "llm/pretraining",
+      "llm/architecture"
+    ],
+    "detail_topics": [
+      "pretraining/distillation",
+      "architecture/compression"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [
+      "language modeling",
+      "teacher distillation"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-08-18T05:22:59Z",
+        "role": "assistant",
+        "evidence": "Prior assistant message explicitly linked https://arxiv.org/html/1910.01108v4; recovered through historical conversation retrieval.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/1910.01108"
+    ],
+    "verification_status": "verified_primary_title_and_identifier",
+    "caveats": [
+      "Chat retrieval supplied timestamps but no stable conversation permalink."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p021"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2403.03853"
+    ],
+    "id": "arxiv:2403.03853",
+    "title": "ShortGPT: Layers in Large Language Models are More Redundant Than You Expect",
+    "url": "https://arxiv.org/abs/2403.03853",
+    "arxiv_id": "2403.03853",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "llm/architecture",
+      "cross-domain/interpretability"
+    ],
+    "detail_topics": [
+      "architecture/compression/layer pruning",
+      "model science/layer redundancy"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-08-18T05:22:59Z",
+        "role": "assistant",
+        "evidence": "Prior assistant message explicitly linked https://arxiv.org/abs/2403.03853; recovered through historical conversation retrieval.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2403.03853"
+    ],
+    "verification_status": "verified_primary_title_and_identifier",
+    "caveats": [
+      "Chat retrieval supplied timestamps but no stable conversation permalink."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [
+      "post-hoc pruning"
+    ],
+    "evaluation_tags": [],
+    "catalog_anchor": "p022"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2403.13271"
+    ],
+    "id": "arxiv:2403.13271",
+    "title": "Enhancing Code Generation Performance of Smaller Models by Distilling the Reasoning Ability of LLMs",
+    "url": "https://arxiv.org/abs/2403.13271",
+    "arxiv_id": "2403.13271",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "llm/posttraining/sft",
+      "llm/inference"
+    ],
+    "detail_topics": [
+      "posttraining/SFT/code",
+      "posttraining/distillation",
+      "data/reasoning plans"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [
+      "teacher-generated plans",
+      "multi-task supervised learning"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-08-18T05:22:59Z",
+        "role": "assistant",
+        "evidence": "Prior assistant message explicitly linked https://arxiv.org/abs/2403.13271; recovered through historical conversation retrieval.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2403.13271"
+    ],
+    "verification_status": "verified_primary_title_and_identifier",
+    "caveats": [
+      "Chat retrieval supplied timestamps but no stable conversation permalink."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p023"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2009.08366"
+    ],
+    "id": "arxiv:2009.08366",
+    "title": "GraphCodeBERT: Pre-training Code Representations with Data Flow",
+    "url": "https://arxiv.org/abs/2009.08366",
+    "arxiv_id": "2009.08366",
+    "doi": null,
+    "year": "2020",
+    "topic_paths": [
+      "llm/pretraining",
+      "llm/architecture"
+    ],
+    "detail_topics": [
+      "pretraining/code",
+      "pretraining/structural objectives",
+      "architecture/graph-guided attention"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [
+      "masked language modeling",
+      "structure-aware self-supervision"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-08-18T05:22:59Z",
+        "role": "assistant",
+        "evidence": "Prior assistant message explicitly linked https://arxiv.org/abs/2009.08366; recovered through historical conversation retrieval.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2009.08366"
+    ],
+    "verification_status": "verified_primary_title_and_identifier",
+    "caveats": [
+      "Chat retrieval supplied timestamps but no stable conversation permalink."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p024"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2209.11895"
+    ],
+    "id": "arxiv:2209.11895",
+    "title": "In-context Learning and Induction Heads",
+    "url": "https://arxiv.org/abs/2209.11895",
+    "arxiv_id": "2209.11895",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "cross-domain/interpretability"
+    ],
+    "detail_topics": [
+      "model science/mechanistic interpretability",
+      "model science/in-context learning"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-08-18T05:22:59Z",
+        "role": "assistant",
+        "evidence": "Prior assistant message explicitly linked https://arxiv.org/abs/2209.11895; recovered through historical conversation retrieval.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2209.11895"
+    ],
+    "verification_status": "verified_primary_title_and_identifier",
+    "caveats": [
+      "Chat retrieval supplied timestamps but no stable conversation permalink."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [
+      "analysis of pretrained models"
+    ],
+    "catalog_anchor": "p025"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2012.14913"
+    ],
+    "id": "arxiv:2012.14913",
+    "title": "Transformer Feed-Forward Layers Are Key-Value Memories",
+    "url": "https://arxiv.org/abs/2012.14913",
+    "arxiv_id": "2012.14913",
+    "doi": null,
+    "year": "2020",
+    "topic_paths": [
+      "cross-domain/interpretability"
+    ],
+    "detail_topics": [
+      "model science/FFN",
+      "model science/knowledge representation"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-08-18T05:22:59Z",
+        "role": "assistant",
+        "evidence": "Prior assistant message explicitly linked https://arxiv.org/abs/2012.14913; recovered through historical conversation retrieval.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2012.14913"
+    ],
+    "verification_status": "verified_primary_title_and_identifier",
+    "caveats": [
+      "Chat retrieval supplied timestamps but no stable conversation permalink."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [
+      "analysis of pretrained models"
+    ],
+    "catalog_anchor": "p026"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2202.05262"
+    ],
+    "id": "arxiv:2202.05262",
+    "title": "Locating and Editing Factual Associations in GPT",
+    "url": "https://arxiv.org/abs/2202.05262",
+    "arxiv_id": "2202.05262",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "cross-domain/interpretability"
+    ],
+    "detail_topics": [
+      "model science/causal tracing",
+      "model science/knowledge editing"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [
+      "targeted factual editing"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-08-18T05:22:59Z",
+        "role": "assistant",
+        "evidence": "Prior assistant message explicitly linked https://arxiv.org/abs/2202.05262; recovered through historical conversation retrieval.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2202.05262"
+    ],
+    "verification_status": "verified_primary_title_and_identifier",
+    "caveats": [
+      "Chat retrieval supplied timestamps but no stable conversation permalink."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [
+      "causal analysis"
+    ],
+    "catalog_anchor": "p027"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/pdf/2311.13508"
+    ],
+    "id": "arxiv:2311.13508",
+    "title": "Naturalness of Attention: Revisiting Attention in Code Language Models",
+    "url": "https://arxiv.org/abs/2311.13508",
+    "arxiv_id": "2311.13508",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "llm/architecture",
+      "cross-domain/interpretability"
+    ],
+    "detail_topics": [
+      "model science/code attention"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-08-18T05:22:59Z",
+        "role": "assistant",
+        "evidence": "Prior assistant message explicitly linked https://arxiv.org/pdf/2311.13508; recovered through historical conversation retrieval.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2311.13508"
+    ],
+    "verification_status": "verified_primary_title_and_identifier",
+    "caveats": [
+      "Chat retrieval supplied timestamps but no stable conversation permalink."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [
+      "analysis of pretrained models"
+    ],
+    "catalog_anchor": "p028"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2202.08975"
+    ],
+    "id": "arxiv:2202.08975",
+    "title": "Probing Pretrained Models of Source Code",
+    "url": "https://arxiv.org/abs/2202.08975",
+    "arxiv_id": "2202.08975",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "llm/pretraining",
+      "cross-domain/interpretability"
+    ],
+    "detail_topics": [
+      "model science/code probing"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-08-18T05:22:59Z",
+        "role": "assistant",
+        "evidence": "Prior assistant message explicitly linked https://arxiv.org/abs/2202.08975; recovered through historical conversation retrieval.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2202.08975"
+    ],
+    "verification_status": "verified_primary_title_and_identifier",
+    "caveats": [
+      "Chat retrieval supplied timestamps but no stable conversation permalink."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [
+      "probing evaluation"
+    ],
+    "catalog_anchor": "p029"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/html/2312.05092v1"
+    ],
+    "id": "arxiv:2312.05092",
+    "title": "INSPECT: Intrinsic and Systematic Probing Evaluation for Code Transformers",
+    "url": "https://arxiv.org/abs/2312.05092",
+    "arxiv_id": "2312.05092",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "cross-domain/interpretability",
+      "cross-domain/evaluation"
+    ],
+    "detail_topics": [
+      "model science/code probing"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-08-18T05:22:59Z",
+        "role": "assistant",
+        "evidence": "Prior assistant message explicitly linked https://arxiv.org/html/2312.05092v1; recovered through historical conversation retrieval.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2312.05092"
+    ],
+    "verification_status": "verified_primary_title_and_identifier",
+    "caveats": [
+      "Chat retrieval supplied timestamps but no stable conversation permalink."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [
+      "probing evaluation"
+    ],
+    "catalog_anchor": "p030"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2510.01171"
+    ],
+    "id": "arxiv:2510.01171",
+    "title": "Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity",
+    "url": "https://arxiv.org/abs/2510.01171",
+    "arxiv_id": "2510.01171",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "llm/inference",
+      "cross-domain/interpretability"
+    ],
+    "detail_topics": [
+      "inference/sampling",
+      "model science/diversity and mode collapse"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-08-25T15:03:18Z",
+        "role": "assistant",
+        "evidence": "Prior assistant message explicitly linked https://arxiv.org/abs/2510.01171; recovered through historical conversation retrieval.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2510.01171"
+    ],
+    "verification_status": "verified_primary_title_and_identifier",
+    "caveats": [
+      "Chat retrieval supplied timestamps but no stable conversation permalink."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [
+      "inference prompting"
+    ],
+    "evaluation_tags": [],
+    "catalog_anchor": "p031"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2508.10014"
+    ],
+    "id": "arxiv:2508.10014",
+    "title": "PersonaEval: Are LLM Evaluators Human Enough to Judge Role-Play?",
+    "url": "https://arxiv.org/abs/2508.10014",
+    "arxiv_id": "2508.10014",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "cross-domain/interpretability",
+      "cross-domain/evaluation"
+    ],
+    "detail_topics": [
+      "model science/evaluation/roleplay"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-08-25T15:03:18Z",
+        "role": "assistant",
+        "evidence": "Prior assistant message explicitly linked https://arxiv.org/abs/2508.10014; recovered through historical conversation retrieval.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2508.10014"
+    ],
+    "verification_status": "verified_primary_title_and_identifier",
+    "caveats": [
+      "Chat retrieval supplied timestamps but no stable conversation permalink."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [
+      "evaluation",
+      "LLM judge"
+    ],
+    "catalog_anchor": "p032"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2407.04622"
+    ],
+    "id": "arxiv:2407.04622",
+    "title": "On scalable oversight with weak LLMs judging strong LLMs",
+    "url": "https://arxiv.org/abs/2407.04622",
+    "arxiv_id": "2407.04622",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "cross-domain/interpretability",
+      "cross-domain/evaluation"
+    ],
+    "detail_topics": [
+      "posttraining/rewards/scalable oversight",
+      "model science/evaluation/debate"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-08-25T15:00:25Z",
+        "role": "assistant",
+        "evidence": "Prior assistant message explicitly linked https://arxiv.org/abs/2407.04622; recovered through historical conversation retrieval.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2407.04622"
+    ],
+    "verification_status": "verified_primary_title_and_identifier",
+    "caveats": [
+      "Chat retrieval supplied timestamps but no stable conversation permalink."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [
+      "weak-model judging",
+      "debate evaluation"
+    ],
+    "catalog_anchor": "p033"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2405.15793"
+    ],
+    "id": "arxiv:2405.15793",
+    "title": "SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering",
+    "url": "https://arxiv.org/abs/2405.15793",
+    "arxiv_id": "2405.15793",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "llm/inference",
+      "cross-domain/agents",
+      "cross-domain/interpretability",
+      "cross-domain/evaluation"
+    ],
+    "detail_topics": [
+      "agents/code",
+      "inference/tool use",
+      "model science/evaluation"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-01T11:44:47Z",
+        "role": "assistant",
+        "evidence": "Prior assistant message explicitly linked https://arxiv.org/abs/2405.15793; recovered through historical conversation retrieval.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2405.15793"
+    ],
+    "verification_status": "verified_primary_title_and_identifier",
+    "caveats": [
+      "Chat retrieval supplied timestamps but no stable conversation permalink."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [
+      "inference-time agent interaction"
+    ],
+    "evaluation_tags": [],
+    "catalog_anchor": "p034"
+  },
+  {
+    "original_chat_urls": [
+      "https://proceedings.mlr.press/v267/chen25bx.html"
+    ],
+    "id": "url:https://proceedings.mlr.press/v267/chen25bx.html",
+    "title": "Do NOT Think That Much for 2+3=? On the Overthinking of Long Reasoning Models",
+    "url": "https://proceedings.mlr.press/v267/chen25bx.html",
+    "arxiv_id": null,
+    "doi": null,
+    "year": null,
+    "topic_paths": [
+      "llm/posttraining/sft",
+      "llm/inference"
+    ],
+    "detail_topics": [
+      "inference/reasoning efficiency",
+      "posttraining/SFT/self-training"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [
+      "self-training"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-01T11:44:47Z",
+        "role": "assistant",
+        "evidence": "Historical retrieval explicitly reports https://proceedings.mlr.press/v267/chen25bx.html",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://proceedings.mlr.press/v267/chen25bx.html"
+    ],
+    "verification_status": "verified_primary_title_and_identifier",
+    "caveats": [
+      "No stable conversation permalink returned."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p035"
+  },
+  {
+    "original_chat_urls": [
+      "https://aclanthology.org/2024.findings-emnlp.882/"
+    ],
+    "id": "url:https://aclanthology.org/2024.findings-emnlp.882/",
+    "title": "Making Reasoning Matter: Measuring and Improving Faithfulness of Chain-of-Thought Reasoning",
+    "url": "https://aclanthology.org/2024.findings-emnlp.882/",
+    "arxiv_id": null,
+    "doi": null,
+    "year": null,
+    "topic_paths": [
+      "llm/inference",
+      "cross-domain/interpretability",
+      "cross-domain/evaluation"
+    ],
+    "detail_topics": [
+      "model science/evaluation/CoT faithfulness"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-01T11:44:47Z",
+        "role": "assistant",
+        "evidence": "Historical retrieval explicitly reports https://aclanthology.org/2024.findings-emnlp.882/",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://aclanthology.org/2024.findings-emnlp.882/"
+    ],
+    "verification_status": "verified_primary_title_and_identifier",
+    "caveats": [
+      "No stable conversation permalink returned."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [
+      "evaluation",
+      "reasoning faithfulness"
+    ],
+    "catalog_anchor": "p036"
+  },
+  {
+    "original_chat_urls": [
+      "https://aclanthology.org/2025.emnlp-main.504/"
+    ],
+    "id": "url:https://aclanthology.org/2025.emnlp-main.504/",
+    "title": "Measuring Chain of Thought Faithfulness by Unlearning Reasoning Steps",
+    "url": "https://aclanthology.org/2025.emnlp-main.504/",
+    "arxiv_id": null,
+    "doi": null,
+    "year": null,
+    "topic_paths": [
+      "llm/inference",
+      "cross-domain/interpretability",
+      "cross-domain/evaluation"
+    ],
+    "detail_topics": [
+      "model science/evaluation/CoT faithfulness"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-01T11:44:47Z",
+        "role": "assistant",
+        "evidence": "Historical retrieval explicitly reports https://aclanthology.org/2025.emnlp-main.504/",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://aclanthology.org/2025.emnlp-main.504/"
+    ],
+    "verification_status": "verified_primary_title_and_identifier",
+    "caveats": [
+      "No stable conversation permalink returned."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [
+      "unlearning-based evaluation"
+    ],
+    "catalog_anchor": "p037"
+  },
+  {
+    "original_chat_urls": [
+      "https://aclanthology.org/2025.findings-acl.537/"
+    ],
+    "id": "url:https://aclanthology.org/2025.findings-acl.537/",
+    "title": "Reasoning Does Not Necessarily Improve Role-Playing Ability",
+    "url": "https://aclanthology.org/2025.findings-acl.537/",
+    "arxiv_id": null,
+    "doi": null,
+    "year": null,
+    "topic_paths": [
+      "llm/inference",
+      "cross-domain/interpretability",
+      "cross-domain/evaluation"
+    ],
+    "detail_topics": [
+      "model science/evaluation/roleplay"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-08-25T15:03:18Z",
+        "role": "assistant",
+        "evidence": "Historical retrieval explicitly reports https://aclanthology.org/2025.findings-acl.537/",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://aclanthology.org/2025.findings-acl.537/"
+    ],
+    "verification_status": "verified_primary_title_and_identifier",
+    "caveats": [
+      "No stable conversation permalink returned."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [
+      "evaluation"
+    ],
+    "catalog_anchor": "p038"
+  },
+  {
+    "original_chat_urls": [
+      "https://deepmind.google/research/publications/64816/?utm_source=chatgpt.com"
+    ],
+    "id": "arxiv:2402.03620",
+    "title": "Self-Discover: Large Language Models Self-Compose Reasoning Structures",
+    "url": "https://deepmind.google/research/publications/64816/",
+    "arxiv_id": "2402.03620",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "llm/inference"
+    ],
+    "detail_topics": [
+      "inference/reasoning structures",
+      "inference/compute efficiency"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-23T15:35:43Z",
+        "role": "assistant",
+        "evidence": "Historical retrieval explicitly reports https://deepmind.google/research/publications/64816/?utm_source=chatgpt.com",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://deepmind.google/research/publications/64816/",
+      "https://arxiv.org/abs/2402.03620"
+    ],
+    "verification_status": "verified_primary_title_and_identifier",
+    "caveats": [
+      "No stable conversation permalink returned.",
+      "arXiv link resolved by following the exact historical DeepMind publication page; do not claim arXiv URL was in the chat."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [
+      "inference prompting"
+    ],
+    "evaluation_tags": [],
+    "catalog_anchor": "p039"
+  },
+  {
+    "original_chat_urls": [
+      "https://mlanthology.org/iclr/2023/yao2023iclr-react/"
+    ],
+    "id": "arxiv:2210.03629",
+    "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+    "url": "https://mlanthology.org/iclr/2023/yao2023iclr-react/",
+    "arxiv_id": "2210.03629",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "llm/inference",
+      "cross-domain/agents"
+    ],
+    "detail_topics": [
+      "agents/reasoning and acting",
+      "inference/tool use"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-01T11:44:47Z",
+        "role": "assistant",
+        "evidence": "Exact historical URL recovered: https://mlanthology.org/iclr/2023/yao2023iclr-react/",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2210.03629"
+    ],
+    "verification_status": "verified_primary_title_and_identifier",
+    "caveats": [
+      "Original historical URL is ML Anthology; arXiv verified separately and is not claimed as chat URL.",
+      "OpenReview page browser challenge; arXiv primary source verification succeeded."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [
+      "inference prompting;environment feedback"
+    ],
+    "evaluation_tags": [],
+    "catalog_anchor": "p040"
+  },
+  {
+    "original_chat_urls": [
+      "https://mlanthology.org/tmlr/2024/wang2024tmlr-voyager/?utm_source=chatgpt.com"
+    ],
+    "id": "arxiv:2305.16291",
+    "title": "Voyager: An Open-Ended Embodied Agent with Large Language Models",
+    "url": "https://mlanthology.org/tmlr/2024/wang2024tmlr-voyager/",
+    "arxiv_id": "2305.16291",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "llm/inference",
+      "cross-domain/agents"
+    ],
+    "detail_topics": [
+      "agents/reasoning and acting",
+      "inference/tool use"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-23T15:35:43Z",
+        "role": "assistant",
+        "evidence": "Exact historical URL recovered: https://mlanthology.org/tmlr/2024/wang2024tmlr-voyager/?utm_source=chatgpt.com",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2305.16291"
+    ],
+    "verification_status": "verified_primary_title_and_identifier",
+    "caveats": [
+      "Original historical URL is ML Anthology; arXiv verified separately and is not claimed as chat URL.",
+      "OpenReview page browser challenge; arXiv primary source verification succeeded."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [
+      "inference prompting;environment feedback"
+    ],
+    "evaluation_tags": [],
+    "catalog_anchor": "p041"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2210.05861"
+    ],
+    "id": "arxiv:2210.05861",
+    "title": "SlotFormer: Unsupervised Visual Dynamics Simulation with Object-Centric Models",
+    "url": "https://arxiv.org/abs/2210.05861",
+    "arxiv_id": "2210.05861",
+    "doi": "10.48550/arXiv.2210.05861",
+    "year": "2022",
+    "topic_paths": [
+      "multimodal/world-models"
+    ],
+    "detail_topics": [
+      "multimodal",
+      "world-models",
+      "object-centric"
+    ],
+    "architecture_tags": [
+      "slot transformer",
+      "autoregressive dynamics"
+    ],
+    "supervision_tags": [
+      "unsupervised video prediction"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-23T00:58:23Z",
+        "role": "assistant",
+        "evidence": "Historical retrieval explicitly returned https://arxiv.org/abs/2210.05861 at 2026-09-23T00:58:23Z.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2210.05861"
+    ],
+    "verification_status": "verified",
+    "caveats": [
+      "Chat provenance comes from retrieved historical excerpts, not a full exported transcript; no conversation permalink was returned.",
+      "Tags summarize the primary-source abstract; they are not exhaustive architecture claims."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p042"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2206.07764"
+    ],
+    "id": "arxiv:2206.07764",
+    "title": "SAVi++: Towards End-to-End Object-Centric Learning from Real-World Videos",
+    "url": "https://arxiv.org/abs/2206.07764",
+    "arxiv_id": "2206.07764",
+    "doi": "10.48550/arXiv.2206.07764",
+    "year": "2022",
+    "topic_paths": [
+      "multimodal/world-models"
+    ],
+    "detail_topics": [
+      "multimodal",
+      "world-models",
+      "object-centric",
+      "geometry-assisted representation"
+    ],
+    "architecture_tags": [
+      "slot-based video encoder"
+    ],
+    "supervision_tags": [
+      "depth prediction",
+      "sparse LiDAR supervision",
+      "no segmentation labels"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-23T00:58:23Z",
+        "role": "assistant",
+        "evidence": "Historical retrieval explicitly returned https://arxiv.org/abs/2206.07764 at 2026-09-23T00:58:23Z.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2206.07764"
+    ],
+    "verification_status": "verified",
+    "caveats": [
+      "Chat provenance comes from retrieved historical excerpts, not a full exported transcript; no conversation permalink was returned.",
+      "Tags summarize the primary-source abstract; they are not exhaustive architecture claims."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p043"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2311.16038"
+    ],
+    "id": "arxiv:2311.16038",
+    "title": "OccWorld: Learning a 3D Occupancy World Model for Autonomous Driving",
+    "url": "https://arxiv.org/abs/2311.16038",
+    "arxiv_id": "2311.16038",
+    "doi": "10.48550/arXiv.2311.16038",
+    "year": "2023",
+    "topic_paths": [
+      "multimodal/world-models"
+    ],
+    "detail_topics": [
+      "multimodal",
+      "world-models",
+      "geometry",
+      "3D occupancy"
+    ],
+    "architecture_tags": [
+      "scene tokenizer",
+      "GPT-like spatiotemporal transformer"
+    ],
+    "supervision_tags": [
+      "occupancy reconstruction",
+      "future token prediction"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-23T00:58:23Z",
+        "role": "assistant",
+        "evidence": "Historical retrieval explicitly returned https://arxiv.org/abs/2311.16038 at 2026-09-23T00:58:23Z.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2311.16038"
+    ],
+    "verification_status": "verified",
+    "caveats": [
+      "Chat provenance comes from retrieved historical excerpts, not a full exported transcript; no conversation permalink was returned.",
+      "Tags summarize the primary-source abstract; they are not exhaustive architecture claims."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p044"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2408.14197"
+    ],
+    "id": "arxiv:2408.14197",
+    "title": "Driving in the Occupancy World: Vision-Centric 4D Occupancy Forecasting and Planning via World Models for Autonomous Driving",
+    "url": "https://arxiv.org/abs/2408.14197",
+    "arxiv_id": "2408.14197",
+    "doi": "10.48550/arXiv.2408.14197",
+    "year": "2024",
+    "topic_paths": [
+      "multimodal/world-models"
+    ],
+    "detail_topics": [
+      "multimodal",
+      "world-models",
+      "geometry",
+      "4D occupancy and flow"
+    ],
+    "architecture_tags": [
+      "BEV memory",
+      "world decoder",
+      "action conditioning"
+    ],
+    "supervision_tags": [
+      "occupancy forecasting",
+      "flow forecasting"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-23T00:58:23Z",
+        "role": "assistant",
+        "evidence": "Historical retrieval explicitly returned https://arxiv.org/abs/2408.14197 at 2026-09-23T00:58:23Z.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2408.14197"
+    ],
+    "verification_status": "verified",
+    "caveats": [
+      "Chat provenance comes from retrieved historical excerpts, not a full exported transcript; no conversation permalink was returned.",
+      "Tags summarize the primary-source abstract; they are not exhaustive architecture claims."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p045"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2411.04983"
+    ],
+    "id": "arxiv:2411.04983",
+    "title": "DINO-WM: World Models on Pre-trained Visual Features enable Zero-shot Planning",
+    "url": "https://arxiv.org/abs/2411.04983",
+    "arxiv_id": "2411.04983",
+    "doi": "10.48550/arXiv.2411.04983",
+    "year": "2024",
+    "topic_paths": [
+      "multimodal/world-models"
+    ],
+    "detail_topics": [
+      "multimodal",
+      "world-models",
+      "latent",
+      "visual-feature prediction"
+    ],
+    "architecture_tags": [
+      "DINOv2 patch encoder",
+      "action-conditioned predictor"
+    ],
+    "supervision_tags": [
+      "offline trajectory future-feature prediction",
+      "pretrained visual features"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-23T00:58:23Z",
+        "role": "assistant",
+        "evidence": "Historical retrieval explicitly returned https://arxiv.org/abs/2411.04983 at 2026-09-23T00:58:23Z.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2411.04983"
+    ],
+    "verification_status": "verified",
+    "caveats": [
+      "Chat provenance comes from retrieved historical excerpts, not a full exported transcript; no conversation permalink was returned.",
+      "Tags summarize the primary-source abstract; they are not exhaustive architecture claims."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p046"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2507.19468"
+    ],
+    "id": "arxiv:2507.19468",
+    "title": "Back to the Features: DINO as a Foundation for Video World Models",
+    "url": "https://arxiv.org/abs/2507.19468",
+    "arxiv_id": "2507.19468",
+    "doi": "10.48550/arXiv.2507.19468",
+    "year": "2025",
+    "topic_paths": [
+      "multimodal/world-models"
+    ],
+    "detail_topics": [
+      "multimodal",
+      "world-models",
+      "latent",
+      "generalist video prediction"
+    ],
+    "architecture_tags": [
+      "DINOv2 encoder",
+      "latent future predictor"
+    ],
+    "supervision_tags": [
+      "uncurated video predictive learning",
+      "action-conditioned finetuning"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-23T00:58:23Z",
+        "role": "assistant",
+        "evidence": "Historical retrieval explicitly returned https://arxiv.org/abs/2507.19468 at 2026-09-23T00:58:23Z.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2507.19468"
+    ],
+    "verification_status": "verified",
+    "caveats": [
+      "Chat provenance comes from retrieved historical excerpts, not a full exported transcript; no conversation permalink was returned.",
+      "Tags summarize the primary-source abstract; they are not exhaustive architecture claims."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p047"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2307.02427"
+    ],
+    "id": "arxiv:2307.02427",
+    "title": "FOCUS: Object-Centric World Models for Robotics Manipulation",
+    "url": "https://arxiv.org/abs/2307.02427",
+    "arxiv_id": "2307.02427",
+    "doi": "10.48550/arXiv.2307.02427",
+    "year": "2023",
+    "topic_paths": [
+      "multimodal/world-models"
+    ],
+    "detail_topics": [
+      "multimodal",
+      "world-models",
+      "object-centric",
+      "exploration for manipulation"
+    ],
+    "architecture_tags": [
+      "object-centric world model",
+      "model-based agent"
+    ],
+    "supervision_tags": [
+      "model-based reinforcement learning",
+      "exploration bonus"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-23T00:59:38Z",
+        "role": "assistant",
+        "evidence": "Historical retrieval explicitly returned https://arxiv.org/abs/2307.02427 at 2026-09-23T00:59:38Z.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2307.02427"
+    ],
+    "verification_status": "verified",
+    "caveats": [
+      "Chat provenance comes from retrieved historical excerpts, not a full exported transcript; no conversation permalink was returned.",
+      "Tags summarize the primary-source abstract; they are not exhaustive architecture claims."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p048"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2505.11528"
+    ],
+    "id": "arxiv:2505.11528",
+    "title": "LaDi-WM: A Latent Diffusion-based World Model for Predictive Manipulation",
+    "url": "https://arxiv.org/abs/2505.11528",
+    "arxiv_id": "2505.11528",
+    "doi": "10.48550/arXiv.2505.11528",
+    "year": "2025",
+    "topic_paths": [
+      "multimodal/world-models"
+    ],
+    "detail_topics": [
+      "multimodal",
+      "world-models",
+      "latent",
+      "diffusion prediction"
+    ],
+    "architecture_tags": [
+      "latent diffusion",
+      "DINO geometric features",
+      "CLIP semantic features",
+      "diffusion policy"
+    ],
+    "supervision_tags": [
+      "future latent prediction",
+      "pretrained visual feature alignment"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-23T04:45:19Z",
+        "role": "assistant",
+        "evidence": "Historical retrieval at 2026-09-23T04:45:19Z explicitly returned https://doi.org/10.48550/arXiv.2505.11528. An earlier retrieval gave inconsistent 00:45:19; focused retrieval supports 04:45:19.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2505.11528"
+    ],
+    "verification_status": "verified",
+    "caveats": [
+      "Chat provenance comes from retrieved historical excerpts, not a full exported transcript; no conversation permalink was returned.",
+      "Tags summarize the primary-source abstract; they are not exhaustive architecture claims."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p049"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2607.04546"
+    ],
+    "id": "arxiv:2607.04546",
+    "title": "Mask2Real-WM: Segmentation Masks as a Sim-to-Real Bridge for Controllable Dexterous World Models",
+    "url": "https://arxiv.org/abs/2607.04546",
+    "arxiv_id": "2607.04546",
+    "doi": "10.48550/arXiv.2607.04546",
+    "year": "2026",
+    "topic_paths": [
+      "multimodal/world-models"
+    ],
+    "detail_topics": [
+      "multimodal",
+      "world-models",
+      "action-conditioned",
+      "mask dynamics and rendering"
+    ],
+    "architecture_tags": [
+      "two-stage mask dynamics",
+      "ControlNet",
+      "Stable Video Diffusion"
+    ],
+    "supervision_tags": [
+      "simulation pretraining",
+      "real-demonstration finetuning",
+      "action-conditioned mask prediction"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-23T00:58:23Z",
+        "role": "assistant",
+        "evidence": "Historical retrieval explicitly returned https://arxiv.org/abs/2607.04546 at 2026-09-23T00:58:23Z.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2607.04546"
+    ],
+    "verification_status": "verified",
+    "caveats": [
+      "Chat provenance comes from retrieved historical excerpts, not a full exported transcript; no conversation permalink was returned.",
+      "Tags summarize the primary-source abstract; they are not exhaustive architecture claims."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p050"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2501.11260"
+    ],
+    "id": "arxiv:2501.11260",
+    "title": "A Survey of World Models for Autonomous Driving",
+    "url": "https://arxiv.org/abs/2501.11260",
+    "arxiv_id": "2501.11260",
+    "doi": "10.48550/arXiv.2501.11260",
+    "year": "2025",
+    "topic_paths": [
+      "multimodal/world-models"
+    ],
+    "detail_topics": [
+      "multimodal",
+      "world-models",
+      "surveys",
+      "autonomous driving"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [
+      "survey"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-23T00:59:38Z",
+        "role": "assistant",
+        "evidence": "Historical retrieval explicitly returned https://arxiv.org/abs/2501.11260 at 2026-09-23T00:59:38Z.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2501.11260"
+    ],
+    "verification_status": "verified",
+    "caveats": [
+      "Chat provenance comes from retrieved historical excerpts, not a full exported transcript; no conversation permalink was returned.",
+      "Tags summarize the primary-source abstract; they are not exhaustive architecture claims."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p051"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2503.06170"
+    ],
+    "id": "arxiv:2503.06170",
+    "title": "Object-Centric World Model for Language-Guided Manipulation",
+    "url": "https://arxiv.org/abs/2503.06170",
+    "arxiv_id": "2503.06170",
+    "doi": "10.48550/arXiv.2503.06170",
+    "year": "2025",
+    "topic_paths": [
+      "multimodal/world-models"
+    ],
+    "detail_topics": [
+      "multimodal",
+      "world-models",
+      "object-centric",
+      "language-conditioned prediction"
+    ],
+    "architecture_tags": [
+      "slot attention",
+      "language-conditioned latent predictor"
+    ],
+    "supervision_tags": [
+      "latent future-state prediction"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-04T11:35:25Z",
+        "role": "assistant",
+        "evidence": "Historical retrieval explicitly returned https://arxiv.org/abs/2503.06170 at 2026-09-04T11:35:25Z.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2503.06170"
+    ],
+    "verification_status": "verified",
+    "caveats": [
+      "Chat provenance comes from retrieved historical excerpts, not a full exported transcript; no conversation permalink was returned.",
+      "Tags summarize the primary-source abstract; they are not exhaustive architecture claims."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p052"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2607.13451"
+    ],
+    "id": "arxiv:2607.13451",
+    "title": "Learning Physics-Guided Residual Dynamics for Deformable Object Simulation",
+    "url": "https://arxiv.org/abs/2607.13451",
+    "arxiv_id": "2607.13451",
+    "doi": "10.48550/arXiv.2607.13451",
+    "year": "2026",
+    "topic_paths": [
+      "multimodal/world-models"
+    ],
+    "detail_topics": [
+      "multimodal",
+      "world-models",
+      "physics",
+      "hybrid residual deformable dynamics"
+    ],
+    "architecture_tags": [
+      "spring-mass simulator",
+      "sliding-window transformer",
+      "3D Gaussian Splatting"
+    ],
+    "supervision_tags": [
+      "physics-guided residual dynamics fitting"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-04T11:35:25Z",
+        "role": "assistant",
+        "evidence": "Historical retrieval explicitly returned https://arxiv.org/abs/2607.13451 at 2026-09-04T11:35:25Z.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2607.13451"
+    ],
+    "verification_status": "verified",
+    "caveats": [
+      "Chat provenance comes from retrieved historical excerpts, not a full exported transcript; no conversation permalink was returned.",
+      "Tags summarize the primary-source abstract; they are not exhaustive architecture claims."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p053"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2601.03200"
+    ],
+    "id": "arxiv:2601.03200",
+    "title": "A High-Fidelity Digital Twin for Robotic Manipulation Based on 3D Gaussian Splatting",
+    "url": "https://arxiv.org/abs/2601.03200",
+    "arxiv_id": "2601.03200",
+    "doi": "10.48550/arXiv.2601.03200",
+    "year": "2026",
+    "topic_paths": [
+      "multimodal/world-models"
+    ],
+    "detail_topics": [
+      "multimodal",
+      "world-models",
+      "geometry",
+      "executable digital twins"
+    ],
+    "architecture_tags": [
+      "3D Gaussian Splatting",
+      "semantic fusion",
+      "collision geometry",
+      "Unity-ROS2-MoveIt"
+    ],
+    "supervision_tags": [
+      "sparse RGB reconstruction"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-04T11:35:25Z",
+        "role": "assistant",
+        "evidence": "Historical retrieval explicitly returned https://arxiv.org/abs/2601.03200 at 2026-09-04T11:35:25Z.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2601.03200"
+    ],
+    "verification_status": "verified",
+    "caveats": [
+      "Chat provenance comes from retrieved historical excerpts, not a full exported transcript; no conversation permalink was returned.",
+      "Tags summarize the primary-source abstract; they are not exhaustive architecture claims.",
+      "Executable digital-twin reconstruction, distinct from latent predictive learning."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p054"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2506.07454"
+    ],
+    "id": "arxiv:2506.07454",
+    "title": "Language-Grounded Hierarchical Planning and Execution with Multi-Robot 3D Scene Graphs",
+    "url": "https://arxiv.org/abs/2506.07454",
+    "arxiv_id": "2506.07454",
+    "doi": "10.48550/arXiv.2506.07454",
+    "year": "2025",
+    "topic_paths": [
+      "multimodal/world-models"
+    ],
+    "detail_topics": [
+      "multimodal",
+      "world-models",
+      "geometry",
+      "scene graphs and planning"
+    ],
+    "architecture_tags": [
+      "3D scene graph",
+      "LLM-to-PDDL",
+      "multi-robot mapping"
+    ],
+    "supervision_tags": [
+      "not established from abstract"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-04T11:35:25Z",
+        "role": "assistant",
+        "evidence": "Historical retrieval explicitly returned https://arxiv.org/abs/2506.07454 at 2026-09-04T11:35:25Z.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2506.07454"
+    ],
+    "verification_status": "verified",
+    "caveats": [
+      "Chat provenance comes from retrieved historical excerpts, not a full exported transcript; no conversation permalink was returned.",
+      "Tags summarize the primary-source abstract; they are not exhaustive architecture claims.",
+      "Adjacent scene-graph planning paper, not a learned forward-dynamics world model; retained rather than silently dropped."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p055"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2603.17808"
+    ],
+    "id": "arxiv:2603.17808",
+    "title": "EVA: Aligning Video World Models with Executable Robot Actions via Inverse Dynamics Rewards",
+    "url": "https://arxiv.org/abs/2603.17808",
+    "arxiv_id": "2603.17808",
+    "doi": "10.48550/arXiv.2603.17808",
+    "year": "2026",
+    "topic_paths": [
+      "multimodal/world-models"
+    ],
+    "detail_topics": [
+      "multimodal",
+      "world-models",
+      "action-conditioned",
+      "executability alignment"
+    ],
+    "architecture_tags": [
+      "video generative model",
+      "inverse dynamics model"
+    ],
+    "supervision_tags": [
+      "reinforcement-learning post-training",
+      "inverse-dynamics action rewards"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-04T11:35:25Z",
+        "role": "assistant",
+        "evidence": "Historical retrieval explicitly returned https://arxiv.org/abs/2603.17808 at 2026-09-04T11:35:25Z.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2603.17808"
+    ],
+    "verification_status": "verified",
+    "caveats": [
+      "Chat provenance comes from retrieved historical excerpts, not a full exported transcript; no conversation permalink was returned.",
+      "Tags summarize the primary-source abstract; they are not exhaustive architecture claims."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p056"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2608.18077"
+    ],
+    "id": "arxiv:2608.18077",
+    "title": "Hydra-0: Action Flow for Generalist World Modeling and Control",
+    "url": "https://arxiv.org/abs/2608.18077",
+    "arxiv_id": "2608.18077",
+    "doi": "10.48550/arXiv.2608.18077",
+    "year": "2026",
+    "topic_paths": [
+      "multimodal/world-models"
+    ],
+    "detail_topics": [
+      "multimodal",
+      "world-models",
+      "action-conditioned",
+      "action-flow interface"
+    ],
+    "architecture_tags": [
+      "action-flow conditioned video model",
+      "action head"
+    ],
+    "supervision_tags": [
+      "cross-embodiment action-consequence learning"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-04T11:35:25Z",
+        "role": "assistant",
+        "evidence": "Historical retrieval explicitly returned https://arxiv.org/abs/2608.18077 at 2026-09-04T11:35:25Z.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2608.18077"
+    ],
+    "verification_status": "verified",
+    "caveats": [
+      "Chat provenance comes from retrieved historical excerpts, not a full exported transcript; no conversation permalink was returned.",
+      "Tags summarize the primary-source abstract; they are not exhaustive architecture claims."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p057"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2505.06111"
+    ],
+    "id": "arxiv:2505.06111",
+    "title": "UniVLA: Learning to Act Anywhere with Task-centric Latent Actions",
+    "url": "https://arxiv.org/abs/2505.06111",
+    "arxiv_id": "2505.06111",
+    "doi": "10.48550/arXiv.2505.06111",
+    "year": "2025",
+    "topic_paths": [
+      "multimodal/world-models"
+    ],
+    "detail_topics": [
+      "multimodal",
+      "world-models",
+      "latent-action",
+      "cross-embodiment policy"
+    ],
+    "architecture_tags": [
+      "DINO-space latent action model",
+      "language conditioning",
+      "action decoder"
+    ],
+    "supervision_tags": [
+      "internet-video pretraining",
+      "task-centric latent action learning"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-23T04:45:19Z",
+        "role": "assistant",
+        "evidence": "Historical retrieval explicitly returned https://arxiv.org/abs/2505.06111 at 2026-09-23T04:45:19Z.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2505.06111"
+    ],
+    "verification_status": "verified",
+    "caveats": [
+      "Chat provenance comes from retrieved historical excerpts, not a full exported transcript; no conversation permalink was returned.",
+      "Tags summarize the primary-source abstract; they are not exhaustive architecture claims."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p058"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2506.15691"
+    ],
+    "id": "arxiv:2506.15691",
+    "title": "What Do Latent Action Models Actually Learn?",
+    "url": "https://arxiv.org/abs/2506.15691",
+    "arxiv_id": "2506.15691",
+    "doi": "10.48550/arXiv.2506.15691",
+    "year": "2025",
+    "topic_paths": [
+      "multimodal/world-models"
+    ],
+    "detail_topics": [
+      "multimodal",
+      "world-models",
+      "latent-action",
+      "theory and identifiability"
+    ],
+    "architecture_tags": [
+      "linear latent-action analysis",
+      "PCA connection"
+    ],
+    "supervision_tags": [
+      "auxiliary action prediction"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-23T04:45:19Z",
+        "role": "assistant",
+        "evidence": "Historical retrieval explicitly returned https://arxiv.org/abs/2506.15691 at 2026-09-23T04:45:19Z.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2506.15691"
+    ],
+    "verification_status": "verified",
+    "caveats": [
+      "Chat provenance comes from retrieved historical excerpts, not a full exported transcript; no conversation permalink was returned.",
+      "Tags summarize the primary-source abstract; they are not exhaustive architecture claims."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [
+      "unlabeled-video representation analysis"
+    ],
+    "catalog_anchor": "p059"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2604.11689"
+    ],
+    "id": "arxiv:2604.11689",
+    "title": "LARY: A Latent Action Representation Yielding Benchmark for Generalizable Vision-to-Action Alignment",
+    "url": "https://arxiv.org/abs/2604.11689",
+    "arxiv_id": "2604.11689",
+    "doi": "10.48550/arXiv.2604.11689",
+    "year": "2026",
+    "topic_paths": [
+      "multimodal/world-models"
+    ],
+    "detail_topics": [
+      "multimodal",
+      "world-models",
+      "latent-action",
+      "benchmarks and evaluation"
+    ],
+    "architecture_tags": [
+      "benchmark",
+      "visual and latent-action representations"
+    ],
+    "supervision_tags": [],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-23T04:45:19Z",
+        "role": "assistant",
+        "evidence": "Historical retrieval explicitly returned https://arxiv.org/abs/2604.11689 at 2026-09-23T04:45:19Z.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2604.11689"
+    ],
+    "verification_status": "verified",
+    "caveats": [
+      "Chat provenance comes from retrieved historical excerpts, not a full exported transcript; no conversation permalink was returned.",
+      "Tags summarize the primary-source abstract; they are not exhaustive architecture claims."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [
+      "semantic-action evaluation",
+      "low-level control evaluation"
+    ],
+    "catalog_anchor": "p060"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2608.26103"
+    ],
+    "id": "arxiv:2608.26103",
+    "title": "Zero-WAM: In-Context World-Action Modeling from Human Videos for Open-Ended Task Generalization",
+    "url": "https://arxiv.org/abs/2608.26103",
+    "arxiv_id": "2608.26103",
+    "doi": "10.48550/arXiv.2608.26103",
+    "year": "2026",
+    "topic_paths": [
+      "multimodal/world-models"
+    ],
+    "detail_topics": [
+      "multimodal",
+      "world-models",
+      "action-conditioned",
+      "in-context human-video guidance"
+    ],
+    "architecture_tags": [
+      "causal video-action model"
+    ],
+    "supervision_tags": [
+      "paired human-robot video learning",
+      "in-context future chunk prediction"
+    ],
+    "provenance": [
+      "user-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-08-29T08:30:47Z",
+        "role": "user",
+        "evidence": "Historical retrieval explicitly returned https://arxiv.org/abs/2608.26103 at 2026-08-29T08:30:47Z.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2608.26103"
+    ],
+    "verification_status": "verified",
+    "caveats": [
+      "Chat provenance comes from retrieved historical excerpts, not a full exported transcript; no conversation permalink was returned.",
+      "Tags summarize the primary-source abstract; they are not exhaustive architecture claims."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p061"
+  },
+  {
+    "original_chat_urls": [
+      "https://www.roboticsproceedings.org/rss21/p153.html"
+    ],
+    "id": "doi:10.15607/rss.2025.xxi.153",
+    "title": "PIN-WM: Learning Physics-INformed World Models for Non-Prehensile Manipulation",
+    "url": "https://www.roboticsproceedings.org/rss21/p153.html",
+    "arxiv_id": null,
+    "doi": "10.15607/RSS.2025.XXI.153",
+    "year": null,
+    "topic_paths": [
+      "multimodal/world-models"
+    ],
+    "detail_topics": [
+      "multimodal",
+      "world-models",
+      "physics",
+      "differentiable rigid-body identification"
+    ],
+    "architecture_tags": [
+      "differentiable physics simulator",
+      "Gaussian Splatting",
+      "digital cousins"
+    ],
+    "supervision_tags": [
+      "visual observational loss",
+      "few-shot physical trajectories",
+      "physics-aware randomization",
+      "model-based reinforcement learning"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-04T11:35:25Z",
+        "role": "assistant",
+        "evidence": "PIN-WM DOI/URL: https://www.roboticsproceedings.org/rss21/p153.html",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://www.roboticsproceedings.org/rss21/p153.html"
+    ],
+    "verification_status": "verified",
+    "caveats": [
+      "No conversation permalink returned."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p062"
+  },
+  {
+    "original_chat_urls": [
+      "https://onlinelibrary.wiley.com/doi/10.1002/smb2.70053"
+    ],
+    "id": "doi:10.1002/smb2.70053",
+    "title": "World Models for Robotic Manipulation: A Survey",
+    "url": "https://onlinelibrary.wiley.com/doi/10.1002/smb2.70053",
+    "arxiv_id": null,
+    "doi": "10.1002/smb2.70053",
+    "year": null,
+    "topic_paths": [
+      "multimodal/world-models"
+    ],
+    "detail_topics": [
+      "multimodal",
+      "world-models",
+      "surveys",
+      "robot manipulation"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [
+      "survey"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-04T10:29:23Z",
+        "role": "assistant",
+        "evidence": "Historical retrieval explicitly returned https://onlinelibrary.wiley.com/doi/10.1002/smb2.70053; also cited at 11:35:25Z.",
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://onlinelibrary.wiley.com/doi/10.1002/smb2.70053"
+    ],
+    "verification_status": "verified",
+    "caveats": [
+      "No conversation permalink returned."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p063"
+  },
+  {
+    "original_chat_urls": [],
+    "id": "arxiv:2212.06817",
+    "title": "RT-1: Robotics Transformer for Real-World Control at Scale",
+    "url": "https://arxiv.org/abs/2212.06817",
+    "arxiv_id": "2212.06817",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [
+      "robotics",
+      "embodied-learning",
+      "VLA",
+      "generalist-policy"
+    ],
+    "architecture_tags": [
+      "transformer",
+      "discrete-action"
+    ],
+    "supervision_tags": [
+      "robot-demonstration",
+      "behavior-cloning"
+    ],
+    "provenance": [
+      "handbook-only"
+    ],
+    "chat_evidence": [
+      {
+        "file": "历史沿革.md",
+        "file_date": "2026-09-11",
+        "role": "file",
+        "evidence": "File's original-paper links section explicitly lists https://arxiv.org/abs/2212.06817",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2212.06817"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "Extracted from retrieved handbook file content; not evidence of a direct chat link.",
+      "Handbook author and exact upload/message association not established.",
+      "Architecture/supervision labels are editorial, not exhaustive."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p064"
+  },
+  {
+    "original_chat_urls": [],
+    "id": "arxiv:2307.15818",
+    "title": "RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control",
+    "url": "https://arxiv.org/abs/2307.15818",
+    "arxiv_id": "2307.15818",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [
+      "robotics",
+      "embodied-learning",
+      "VLA",
+      "vlm-to-policy"
+    ],
+    "architecture_tags": [
+      "VLM",
+      "action-as-text"
+    ],
+    "supervision_tags": [
+      "web-vision-language",
+      "robot-demonstration",
+      "co-training"
+    ],
+    "provenance": [
+      "handbook-only"
+    ],
+    "chat_evidence": [
+      {
+        "file": "历史沿革.md",
+        "file_date": "2026-09-11",
+        "role": "file",
+        "evidence": "File's original-paper links section explicitly lists https://arxiv.org/abs/2307.15818",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2307.15818"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "Extracted from retrieved handbook file content; not evidence of a direct chat link.",
+      "Handbook author and exact upload/message association not established.",
+      "Architecture/supervision labels are editorial, not exhaustive."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p065"
+  },
+  {
+    "original_chat_urls": [],
+    "id": "arxiv:2310.08864",
+    "title": "Open X-Embodiment: Robotic Learning Datasets and RT-X Models",
+    "url": "https://arxiv.org/abs/2310.08864",
+    "arxiv_id": "2310.08864",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [
+      "robotics",
+      "embodied-learning",
+      "VLA",
+      "cross-embodiment-data"
+    ],
+    "architecture_tags": [
+      "dataset",
+      "RT-X"
+    ],
+    "supervision_tags": [
+      "cross-embodiment-demonstrations"
+    ],
+    "provenance": [
+      "handbook-only"
+    ],
+    "chat_evidence": [
+      {
+        "file": "历史沿革.md",
+        "file_date": "2026-09-11",
+        "role": "file",
+        "evidence": "File's original-paper links section explicitly lists https://arxiv.org/abs/2310.08864",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2310.08864"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "Extracted from retrieved handbook file content; not evidence of a direct chat link.",
+      "Handbook author and exact upload/message association not established.",
+      "Architecture/supervision labels are editorial, not exhaustive."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p066"
+  },
+  {
+    "original_chat_urls": [],
+    "id": "arxiv:2303.04137",
+    "title": "Diffusion Policy: Visuomotor Policy Learning via Action Diffusion",
+    "url": "https://arxiv.org/abs/2303.04137",
+    "arxiv_id": "2303.04137",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [
+      "robotics",
+      "embodied-learning",
+      "VLA",
+      "action-generation",
+      "diffusion"
+    ],
+    "architecture_tags": [
+      "diffusion-policy"
+    ],
+    "supervision_tags": [
+      "robot-demonstration",
+      "behavior-cloning"
+    ],
+    "provenance": [
+      "handbook-only"
+    ],
+    "chat_evidence": [
+      {
+        "file": "历史沿革.md",
+        "file_date": "2026-09-11",
+        "role": "file",
+        "evidence": "File's original-paper links section explicitly lists https://arxiv.org/abs/2303.04137",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2303.04137"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "Extracted from retrieved handbook file content; not evidence of a direct chat link.",
+      "Handbook author and exact upload/message association not established.",
+      "Architecture/supervision labels are editorial, not exhaustive."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p067"
+  },
+  {
+    "original_chat_urls": [],
+    "id": "arxiv:2405.12213",
+    "title": "Octo: An Open-Source Generalist Robot Policy",
+    "url": "https://arxiv.org/abs/2405.12213",
+    "arxiv_id": "2405.12213",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [
+      "robotics",
+      "embodied-learning",
+      "VLA",
+      "generalist-policy"
+    ],
+    "architecture_tags": [
+      "transformer",
+      "diffusion-action-head"
+    ],
+    "supervision_tags": [
+      "robot-demonstration",
+      "cross-embodiment"
+    ],
+    "provenance": [
+      "handbook-only"
+    ],
+    "chat_evidence": [
+      {
+        "file": "历史沿革.md",
+        "file_date": "2026-09-11",
+        "role": "file",
+        "evidence": "File's original-paper links section explicitly lists https://arxiv.org/abs/2405.12213",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2405.12213"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "Extracted from retrieved handbook file content; not evidence of a direct chat link.",
+      "Handbook author and exact upload/message association not established.",
+      "Architecture/supervision labels are editorial, not exhaustive."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p068"
+  },
+  {
+    "original_chat_urls": [],
+    "id": "arxiv:2406.09246",
+    "title": "OpenVLA: An Open-Source Vision-Language-Action Model",
+    "url": "https://arxiv.org/abs/2406.09246",
+    "arxiv_id": "2406.09246",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [
+      "robotics",
+      "embodied-learning",
+      "VLA",
+      "vlm-to-policy",
+      "机器人与具身智能"
+    ],
+    "architecture_tags": [
+      "VLM",
+      "autoregressive-action"
+    ],
+    "supervision_tags": [
+      "robot-demonstration",
+      "fine-tuning"
+    ],
+    "provenance": [
+      "handbook-only",
+      "previous-starter"
+    ],
+    "chat_evidence": [
+      {
+        "file": "历史沿革.md",
+        "file_date": "2026-09-11",
+        "role": "file",
+        "evidence": "File's original-paper links section explicitly lists https://arxiv.org/abs/2406.09246",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2406.09246"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "Extracted from retrieved handbook file content; not evidence of a direct chat link.",
+      "Handbook author and exact upload/message association not established.",
+      "Architecture/supervision labels are editorial, not exhaustive."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "starter_notes": {
+      "problem_method_evidence": "问题：VLA 的开放使用与新任务适配。方法：7B 语言模型结合视觉编码器，在机器人示范上训练，并研究高效微调。原文证据：多任务操纵和适配实验。",
+      "limitations_relevance_reading_status": "证据边界与关联判断：操纵评测不能替代移动导航或四足稳定性验证；适合从编码器、数据配比、动作接口、微调成本切入与你的多模态训练问题对照。阅读状态：摘要与元数据已核验，全文精读待做；你的阅读状态待确认。",
+      "verification": "官方 arXiv 摘要与元数据已核验，全文精读待做"
+    },
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p069"
+  },
+  {
+    "original_chat_urls": [],
+    "id": "arxiv:2410.24164",
+    "title": "$π_0$: A Vision-Language-Action Flow Model for General Robot Control",
+    "url": "https://arxiv.org/abs/2410.24164",
+    "arxiv_id": "2410.24164",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [
+      "robotics",
+      "embodied-learning",
+      "VLA",
+      "action-generation",
+      "flow"
+    ],
+    "architecture_tags": [
+      "VLM",
+      "flow-matching"
+    ],
+    "supervision_tags": [
+      "robot-demonstration"
+    ],
+    "provenance": [
+      "handbook-only"
+    ],
+    "chat_evidence": [
+      {
+        "file": "历史沿革.md",
+        "file_date": "2026-09-11",
+        "role": "file",
+        "evidence": "File's original-paper links section explicitly lists https://arxiv.org/abs/2410.24164",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2410.24164"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "Extracted from retrieved handbook file content; not evidence of a direct chat link.",
+      "Handbook author and exact upload/message association not established.",
+      "Architecture/supervision labels are editorial, not exhaustive."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p070"
+  },
+  {
+    "original_chat_urls": [],
+    "id": "arxiv:2501.09747",
+    "title": "FAST: Efficient Action Tokenization for Vision-Language-Action Models",
+    "url": "https://arxiv.org/abs/2501.09747",
+    "arxiv_id": "2501.09747",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [
+      "robotics",
+      "embodied-learning",
+      "VLA",
+      "action-tokenization"
+    ],
+    "architecture_tags": [
+      "frequency-action-tokenizer"
+    ],
+    "supervision_tags": [
+      "action-reconstruction"
+    ],
+    "provenance": [
+      "handbook-only"
+    ],
+    "chat_evidence": [
+      {
+        "file": "历史沿革.md",
+        "file_date": "2026-09-11",
+        "role": "file",
+        "evidence": "File's original-paper links section explicitly lists https://arxiv.org/abs/2501.09747",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2501.09747"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "Extracted from retrieved handbook file content; not evidence of a direct chat link.",
+      "Handbook author and exact upload/message association not established.",
+      "Architecture/supervision labels are editorial, not exhaustive."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p071"
+  },
+  {
+    "original_chat_urls": [],
+    "id": "arxiv:2502.19645",
+    "title": "Fine-Tuning Vision-Language-Action Models: Optimizing Speed and Success",
+    "url": "https://arxiv.org/abs/2502.19645",
+    "arxiv_id": "2502.19645",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [
+      "robotics",
+      "embodied-learning",
+      "VLA",
+      "adaptation-efficiency"
+    ],
+    "architecture_tags": [
+      "parallel-decoding",
+      "action-chunking"
+    ],
+    "supervision_tags": [
+      "fine-tuning"
+    ],
+    "provenance": [
+      "handbook-only"
+    ],
+    "chat_evidence": [
+      {
+        "file": "历史沿革.md",
+        "file_date": "2026-09-11",
+        "role": "file",
+        "evidence": "File's original-paper links section explicitly lists https://arxiv.org/abs/2502.19645",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2502.19645"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "Extracted from retrieved handbook file content; not evidence of a direct chat link.",
+      "Handbook author and exact upload/message association not established.",
+      "Architecture/supervision labels are editorial, not exhaustive."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p072"
+  },
+  {
+    "original_chat_urls": [],
+    "id": "arxiv:2504.16054",
+    "title": "$π_{0.5}$: a Vision-Language-Action Model with Open-World Generalization",
+    "url": "https://arxiv.org/abs/2504.16054",
+    "arxiv_id": "2504.16054",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [
+      "robotics",
+      "embodied-learning",
+      "VLA",
+      "generalization",
+      "open-world"
+    ],
+    "architecture_tags": [
+      "VLA",
+      "hybrid-multimodal"
+    ],
+    "supervision_tags": [
+      "heterogeneous-co-training"
+    ],
+    "provenance": [
+      "handbook-only"
+    ],
+    "chat_evidence": [
+      {
+        "file": "历史沿革.md",
+        "file_date": "2026-09-11",
+        "role": "file",
+        "evidence": "File's original-paper links section explicitly lists https://arxiv.org/abs/2504.16054",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2504.16054"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "Extracted from retrieved handbook file content; not evidence of a direct chat link.",
+      "Handbook author and exact upload/message association not established.",
+      "Architecture/supervision labels are editorial, not exhaustive."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p073"
+  },
+  {
+    "original_chat_urls": [],
+    "id": "arxiv:2506.01844",
+    "title": "SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics",
+    "url": "https://arxiv.org/abs/2506.01844",
+    "arxiv_id": "2506.01844",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [
+      "robotics",
+      "embodied-learning",
+      "VLA",
+      "efficiency",
+      "small-VLA"
+    ],
+    "architecture_tags": [
+      "small-VLA"
+    ],
+    "supervision_tags": [
+      "robot-demonstration"
+    ],
+    "provenance": [
+      "handbook-only"
+    ],
+    "chat_evidence": [
+      {
+        "file": "历史沿革.md",
+        "file_date": "2026-09-11",
+        "role": "file",
+        "evidence": "File's original-paper links section explicitly lists https://arxiv.org/abs/2506.01844",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2506.01844"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "Extracted from retrieved handbook file content; not evidence of a direct chat link.",
+      "Handbook author and exact upload/message association not established.",
+      "Architecture/supervision labels are editorial, not exhaustive."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p074"
+  },
+  {
+    "original_chat_urls": [],
+    "id": "arxiv:2503.14734",
+    "title": "GR00T N1: An Open Foundation Model for Generalist Humanoid Robots",
+    "url": "https://arxiv.org/abs/2503.14734",
+    "arxiv_id": "2503.14734",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [
+      "robotics",
+      "embodied-learning",
+      "VLA",
+      "humanoid",
+      "generalist"
+    ],
+    "architecture_tags": [
+      "dual-system-VLA"
+    ],
+    "supervision_tags": [
+      "robot-demonstration",
+      "heterogeneous-data"
+    ],
+    "provenance": [
+      "handbook-only"
+    ],
+    "chat_evidence": [
+      {
+        "file": "历史沿革.md",
+        "file_date": "2026-09-11",
+        "role": "file",
+        "evidence": "File's original-paper links section explicitly lists https://arxiv.org/abs/2503.14734",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2503.14734"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "Extracted from retrieved handbook file content; not evidence of a direct chat link.",
+      "Handbook author and exact upload/message association not established.",
+      "Architecture/supervision labels are editorial, not exhaustive."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p075"
+  },
+  {
+    "original_chat_urls": [],
+    "id": "arxiv:2604.15483",
+    "title": "$π_{0.7}$: a Steerable Generalist Robotic Foundation Model with Emergent Capabilities",
+    "url": "https://arxiv.org/abs/2604.15483",
+    "arxiv_id": "2604.15483",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [
+      "robotics",
+      "embodied-learning",
+      "VLA",
+      "generalization",
+      "context-conditioning"
+    ],
+    "architecture_tags": [
+      "VLA",
+      "multimodal-context"
+    ],
+    "supervision_tags": [
+      "demonstrations",
+      "autonomous-data",
+      "non-robot-data"
+    ],
+    "provenance": [
+      "handbook-only"
+    ],
+    "chat_evidence": [
+      {
+        "file": "历史沿革.md",
+        "file_date": "2026-09-11",
+        "role": "file",
+        "evidence": "File's original-paper links section explicitly lists https://arxiv.org/abs/2604.15483",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2604.15483"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "Extracted from retrieved handbook file content; not evidence of a direct chat link.",
+      "Handbook author and exact upload/message association not established.",
+      "Architecture/supervision labels are editorial, not exhaustive."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p076"
+  },
+  {
+    "original_chat_urls": [],
+    "id": "arxiv:2605.30280",
+    "title": "Qwen-VLA: Unifying Vision-Language-Action Modeling across Tasks, Environments, and Robot Embodiments",
+    "url": "https://arxiv.org/abs/2605.30280",
+    "arxiv_id": "2605.30280",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [
+      "robotics",
+      "embodied-learning",
+      "VLA",
+      "cross-embodiment"
+    ],
+    "architecture_tags": [
+      "VLA"
+    ],
+    "supervision_tags": [
+      "multi-task-training"
+    ],
+    "provenance": [
+      "handbook-only"
+    ],
+    "chat_evidence": [
+      {
+        "file": "历史沿革.md",
+        "file_date": "2026-09-11",
+        "role": "file",
+        "evidence": "File's original-paper links section explicitly lists https://arxiv.org/abs/2605.30280",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2605.30280"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "Extracted from retrieved handbook file content; not evidence of a direct chat link.",
+      "Handbook author and exact upload/message association not established.",
+      "Architecture/supervision labels are editorial, not exhaustive."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p077"
+  },
+  {
+    "original_chat_urls": [],
+    "id": "arxiv:2606.14752",
+    "title": "X-Tokenizer: A Multimodal Action Tokenizer for Vision-Language-Action Pretraining",
+    "url": "https://arxiv.org/abs/2606.14752",
+    "arxiv_id": "2606.14752",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [
+      "robotics",
+      "embodied-learning",
+      "VLA",
+      "action-tokenization"
+    ],
+    "architecture_tags": [
+      "semantic-residual-quantization"
+    ],
+    "supervision_tags": [
+      "masked-action-modeling",
+      "contrastive-alignment",
+      "next-frame-feature-prediction"
+    ],
+    "provenance": [
+      "handbook-only"
+    ],
+    "chat_evidence": [
+      {
+        "file": "历史沿革.md",
+        "file_date": "2026-09-11",
+        "role": "file",
+        "evidence": "File's original-paper links section explicitly lists https://arxiv.org/abs/2606.14752",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2606.14752"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "Extracted from retrieved handbook file content; not evidence of a direct chat link.",
+      "Handbook author and exact upload/message association not established.",
+      "Architecture/supervision labels are editorial, not exhaustive."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p078"
+  },
+  {
+    "original_chat_urls": [],
+    "id": "arxiv:2505.22159",
+    "title": "ForceVLA: Enhancing VLA Models with a Force-aware MoE for Contact-rich Manipulation",
+    "url": "https://arxiv.org/abs/2505.22159",
+    "arxiv_id": "2505.22159",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [
+      "robotics",
+      "embodied-learning",
+      "VLA",
+      "contact-rich-manipulation"
+    ],
+    "architecture_tags": [
+      "force-aware-MoE",
+      "VLA"
+    ],
+    "supervision_tags": [
+      "multimodal-demonstrations"
+    ],
+    "provenance": [
+      "handbook-only"
+    ],
+    "chat_evidence": [
+      {
+        "file": "接触、力觉与灵巧操作.md",
+        "file_date": null,
+        "role": "file",
+        "evidence": "File's original-paper links section explicitly lists https://arxiv.org/abs/2505.22159",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2505.22159"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "Extracted from retrieved handbook file content; not evidence of a direct chat link.",
+      "Handbook author and exact upload/message association not established.",
+      "Architecture/supervision labels are editorial, not exhaustive.",
+      "ForceVLA file date was not individually returned; related handbook context is September 11."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p079"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/1609.05130?utm_source=chatgpt.com"
+    ],
+    "id": "arxiv:1609.05130",
+    "title": "SemanticFusion: Dense 3D Semantic Mapping with Convolutional Neural Networks",
+    "url": "https://arxiv.org/abs/1609.05130",
+    "arxiv_id": "1609.05130",
+    "doi": null,
+    "year": "2016",
+    "topic_paths": [
+      "robotics/perception",
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [
+      "robotics",
+      "traditional-pipeline",
+      "perception-mapping",
+      "semantic-mapping"
+    ],
+    "architecture_tags": [
+      "CNN",
+      "geometric-fusion"
+    ],
+    "supervision_tags": [
+      "semantic-labels"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-08T10:38:59Z",
+        "role": "assistant",
+        "evidence": "Retrieved history excerpt explicitly lists https://arxiv.org/abs/1609.05130?utm_source=chatgpt.com",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/1609.05130"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "History evidence is a retrieval excerpt, not a complete chat export; conversation title/permalink was not returned.",
+      "Taxonomy labels are editorial classifications; detailed architecture/recipe should be checked in the full paper."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p080"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/1903.01177?utm_source=chatgpt.com"
+    ],
+    "id": "arxiv:1903.01177",
+    "title": "PanopticFusion: Online Volumetric Semantic Mapping at the Level of Stuff and Things",
+    "url": "https://arxiv.org/abs/1903.01177",
+    "arxiv_id": "1903.01177",
+    "doi": null,
+    "year": "2019",
+    "topic_paths": [
+      "robotics/perception",
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [
+      "robotics",
+      "traditional-pipeline",
+      "perception-mapping",
+      "semantic-mapping"
+    ],
+    "architecture_tags": [
+      "CNN",
+      "geometric-fusion"
+    ],
+    "supervision_tags": [
+      "semantic-labels"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-08T10:38:59Z",
+        "role": "assistant",
+        "evidence": "Retrieved history excerpt explicitly lists https://arxiv.org/abs/1903.01177?utm_source=chatgpt.com",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/1903.01177"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "History evidence is a retrieval excerpt, not a complete chat export; conversation title/permalink was not returned.",
+      "Taxonomy labels are editorial classifications; detailed architecture/recipe should be checked in the full paper."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p081"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/1905.00684"
+    ],
+    "id": "arxiv:1905.00684",
+    "title": "DS-VIO: Robust and Efficient Stereo Visual Inertial Odometry based on Dual Stage EKF",
+    "url": "https://arxiv.org/abs/1905.00684",
+    "arxiv_id": "1905.00684",
+    "doi": null,
+    "year": "2019",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [
+      "robotics",
+      "traditional-pipeline",
+      "state-estimation",
+      "visual-inertial-odometry"
+    ],
+    "architecture_tags": [
+      "dual-stage-EKF"
+    ],
+    "supervision_tags": [
+      "model-based-estimation"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-01-07T09:57:51Z",
+        "role": "assistant",
+        "evidence": "Parallel history extraction returned exact URL https://arxiv.org/abs/1905.00684",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/1905.00684"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "History evidence is a retrieval excerpt, not a complete chat export; conversation title/permalink was not returned.",
+      "Taxonomy labels are editorial classifications; detailed architecture/recipe should be checked in the full paper."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p082"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2311.04477"
+    ],
+    "id": "arxiv:2311.04477",
+    "title": "PLV-IEKF: Consistent Visual-Inertial Odometry using Points, Lines, and Vanishing Points",
+    "url": "https://arxiv.org/abs/2311.04477",
+    "arxiv_id": "2311.04477",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [
+      "robotics",
+      "traditional-pipeline",
+      "state-estimation",
+      "visual-inertial-odometry"
+    ],
+    "architecture_tags": [
+      "IEKF"
+    ],
+    "supervision_tags": [
+      "model-based-estimation"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-01-07T09:57:51Z",
+        "role": "assistant",
+        "evidence": "Parallel history extraction returned exact URL https://arxiv.org/abs/2311.04477",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2311.04477"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "History evidence is a retrieval excerpt, not a complete chat export; conversation title/permalink was not returned.",
+      "Taxonomy labels are editorial classifications; detailed architecture/recipe should be checked in the full paper."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p083"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2205.01980"
+    ],
+    "id": "arxiv:2205.01980",
+    "title": "EqVIO: An Equivariant Filter for Visual Inertial Odometry",
+    "url": "https://arxiv.org/abs/2205.01980",
+    "arxiv_id": "2205.01980",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [
+      "robotics",
+      "traditional-pipeline",
+      "state-estimation",
+      "visual-inertial-odometry"
+    ],
+    "architecture_tags": [
+      "equivariant-filter"
+    ],
+    "supervision_tags": [
+      "model-based-estimation"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-01-07T09:57:51Z",
+        "role": "assistant",
+        "evidence": "Parallel history extraction returned exact URL https://arxiv.org/abs/2205.01980",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2205.01980"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "History evidence is a retrieval excerpt, not a complete chat export; conversation title/permalink was not returned.",
+      "Taxonomy labels are editorial classifications; detailed architecture/recipe should be checked in the full paper."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p084"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2203.07207"
+    ],
+    "id": "arxiv:2203.07207",
+    "title": "A Self-Supervised, Differentiable Kalman Filter for Uncertainty-Aware Visual-Inertial Odometry",
+    "url": "https://arxiv.org/abs/2203.07207",
+    "arxiv_id": "2203.07207",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [
+      "robotics",
+      "traditional-pipeline",
+      "state-estimation",
+      "visual-inertial-odometry"
+    ],
+    "architecture_tags": [
+      "differentiable-Kalman-filter"
+    ],
+    "supervision_tags": [
+      "self-supervised"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-01-07T09:57:51Z",
+        "role": "assistant",
+        "evidence": "Parallel history extraction returned exact URL https://arxiv.org/abs/2203.07207",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2203.07207"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "History evidence is a retrieval excerpt, not a complete chat export; conversation title/permalink was not returned.",
+      "Taxonomy labels are editorial classifications; detailed architecture/recipe should be checked in the full paper."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p085"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2505.06748"
+    ],
+    "id": "arxiv:2505.06748",
+    "title": "Learned IMU Bias Prediction for Invariant Visual Inertial Odometry",
+    "url": "https://arxiv.org/abs/2505.06748",
+    "arxiv_id": "2505.06748",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [
+      "robotics",
+      "traditional-pipeline",
+      "state-estimation",
+      "visual-inertial-odometry"
+    ],
+    "architecture_tags": [
+      "learned-IMU-bias"
+    ],
+    "supervision_tags": [
+      "learned-bias-prediction"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-01-07T09:57:51Z",
+        "role": "assistant",
+        "evidence": "Parallel history extraction returned exact URL https://arxiv.org/abs/2505.06748",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2505.06748"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "History evidence is a retrieval excerpt, not a complete chat export; conversation title/permalink was not returned.",
+      "Taxonomy labels are editorial classifications; detailed architecture/recipe should be checked in the full paper."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p086"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2607.15275"
+    ],
+    "id": "arxiv:2607.15275",
+    "title": "RoboTTT: Context Scaling for Robot Policies",
+    "url": "https://arxiv.org/abs/2607.15275",
+    "arxiv_id": "2607.15275",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [
+      "robotics",
+      "embodied-learning",
+      "physical-ICL"
+    ],
+    "architecture_tags": [
+      "context-scaling"
+    ],
+    "supervision_tags": [
+      "imitation-learning"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-08-24T08:13:40Z",
+        "role": "assistant",
+        "evidence": "Retrieved history excerpt explicitly lists https://arxiv.org/abs/2607.15275",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2607.15275"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "History evidence is a retrieval excerpt, not a complete chat export; conversation title/permalink was not returned.",
+      "Taxonomy labels are editorial classifications; detailed architecture/recipe should be checked in the full paper."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p087"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2408.15980"
+    ],
+    "id": "arxiv:2408.15980",
+    "title": "In-Context Imitation Learning via Next-Token Prediction",
+    "url": "https://arxiv.org/abs/2408.15980",
+    "arxiv_id": "2408.15980",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [
+      "robotics",
+      "embodied-learning",
+      "physical-ICL"
+    ],
+    "architecture_tags": [
+      "next-token-prediction"
+    ],
+    "supervision_tags": [
+      "imitation-learning"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-08-24T08:13:40Z",
+        "role": "assistant",
+        "evidence": "Retrieved history excerpt explicitly lists https://arxiv.org/abs/2408.15980",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2408.15980"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "History evidence is a retrieval excerpt, not a complete chat export; conversation title/permalink was not returned.",
+      "Taxonomy labels are editorial classifications; detailed architecture/recipe should be checked in the full paper."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p088"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2606.30457"
+    ],
+    "id": "arxiv:2606.30457",
+    "title": "Behavior Prompting Policy: Demonstrations as Prompts for Manipulation",
+    "url": "https://arxiv.org/abs/2606.30457",
+    "arxiv_id": "2606.30457",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [
+      "robotics",
+      "embodied-learning",
+      "physical-ICL"
+    ],
+    "architecture_tags": [
+      "demonstration-prompting"
+    ],
+    "supervision_tags": [
+      "imitation-learning"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-08-24T08:13:40Z",
+        "role": "assistant",
+        "evidence": "Retrieved history excerpt explicitly lists https://arxiv.org/abs/2606.30457",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2606.30457"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "History evidence is a retrieval excerpt, not a complete chat export; conversation title/permalink was not returned.",
+      "Taxonomy labels are editorial classifications; detailed architecture/recipe should be checked in the full paper."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p089"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2601.02456"
+    ],
+    "id": "arxiv:2601.02456",
+    "title": "InternVLA-A1: Unifying Understanding, Generation and Action for Robotic Manipulation",
+    "url": "https://arxiv.org/abs/2601.02456",
+    "arxiv_id": "2601.02456",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [
+      "robotics",
+      "embodied-learning",
+      "VLA"
+    ],
+    "architecture_tags": [
+      "unified-understanding-generation-action"
+    ],
+    "supervision_tags": [
+      "imitation-learning"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-08-24T08:13:40Z",
+        "role": "assistant",
+        "evidence": "Retrieved history excerpt explicitly lists https://arxiv.org/abs/2601.02456",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2601.02456"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "History evidence is a retrieval excerpt, not a complete chat export; conversation title/permalink was not returned.",
+      "Taxonomy labels are editorial classifications; detailed architecture/recipe should be checked in the full paper."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p090"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2211.00458"
+    ],
+    "id": "arxiv:2211.00458",
+    "title": "CPG-RL: Learning Central Pattern Generators for Quadruped Locomotion",
+    "url": "https://arxiv.org/abs/2211.00458",
+    "arxiv_id": "2211.00458",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [
+      "robotics",
+      "embodied-learning",
+      "legged-locomotion",
+      "gait-generation"
+    ],
+    "architecture_tags": [
+      "CPG"
+    ],
+    "supervision_tags": [
+      "reinforcement-learning"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-08-21T08:12:47Z",
+        "role": "assistant",
+        "evidence": "Retrieved history excerpt explicitly lists https://arxiv.org/abs/2211.00458",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2211.00458"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "History evidence is a retrieval excerpt, not a complete chat export; conversation title/permalink was not returned.",
+      "Taxonomy labels are editorial classifications; detailed architecture/recipe should be checked in the full paper."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p091"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/pdf/2305.07300"
+    ],
+    "id": "arxiv:2305.07300",
+    "title": "Learning Quadruped Locomotion using Bio-Inspired Neural Networks with Intrinsic Rhythmicity",
+    "url": "https://arxiv.org/abs/2305.07300",
+    "arxiv_id": "2305.07300",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [
+      "robotics",
+      "embodied-learning",
+      "legged-locomotion",
+      "gait-generation"
+    ],
+    "architecture_tags": [
+      "intrinsic-rhythmic-network"
+    ],
+    "supervision_tags": [
+      "reinforcement-learning"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-08-21T08:18:35Z",
+        "role": "assistant",
+        "evidence": "Retrieved history excerpt explicitly lists https://arxiv.org/pdf/2305.07300",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2305.07300"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "History evidence is a retrieval excerpt, not a complete chat export; conversation title/permalink was not returned.",
+      "Taxonomy labels are editorial classifications; detailed architecture/recipe should be checked in the full paper."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p092"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2201.00206"
+    ],
+    "id": "arxiv:2201.00206",
+    "title": "Learning Free Gait Transition for Quadruped Robots via Phase-Guided Controller",
+    "url": "https://arxiv.org/abs/2201.00206",
+    "arxiv_id": "2201.00206",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [
+      "robotics",
+      "embodied-learning",
+      "legged-locomotion",
+      "gait-generation"
+    ],
+    "architecture_tags": [
+      "phase-guided-controller"
+    ],
+    "supervision_tags": [
+      "reinforcement-learning"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-08-21T08:12:47Z",
+        "role": "assistant",
+        "evidence": "Retrieved history excerpt explicitly lists https://arxiv.org/abs/2201.00206",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2201.00206"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "History evidence is a retrieval excerpt, not a complete chat export; conversation title/permalink was not returned.",
+      "Taxonomy labels are editorial classifications; detailed architecture/recipe should be checked in the full paper."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p093"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2011.01387"
+    ],
+    "id": "arxiv:2011.01387",
+    "title": "Sim-to-Real Learning of All Common Bipedal Gaits via Periodic Reward Composition",
+    "url": "https://arxiv.org/abs/2011.01387",
+    "arxiv_id": "2011.01387",
+    "doi": null,
+    "year": "2020",
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [
+      "robotics",
+      "embodied-learning",
+      "legged-locomotion",
+      "gait-generation"
+    ],
+    "architecture_tags": [
+      "periodic-reward-composition"
+    ],
+    "supervision_tags": [
+      "reinforcement-learning"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-08-21T08:12:47Z",
+        "role": "assistant",
+        "evidence": "Retrieved history excerpt explicitly lists https://arxiv.org/abs/2011.01387",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2011.01387"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "History evidence is a retrieval excerpt, not a complete chat export; conversation title/permalink was not returned.",
+      "Taxonomy labels are editorial classifications; detailed architecture/recipe should be checked in the full paper."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p094"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2404.05695"
+    ],
+    "id": "arxiv:2404.05695",
+    "title": "Humanoid-Gym: Reinforcement Learning for Humanoid Robot with Zero-Shot Sim2Real Transfer",
+    "url": "https://arxiv.org/abs/2404.05695",
+    "arxiv_id": "2404.05695",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [
+      "robotics",
+      "embodied-learning",
+      "humanoid",
+      "whole-body-control"
+    ],
+    "architecture_tags": [
+      "sim-to-real"
+    ],
+    "supervision_tags": [
+      "reinforcement-learning"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-08-21T08:18:23Z",
+        "role": "assistant",
+        "evidence": "Retrieved history excerpt explicitly lists https://arxiv.org/abs/2404.05695",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2404.05695"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "History evidence is a retrieval excerpt, not a complete chat export; conversation title/permalink was not returned.",
+      "Taxonomy labels are editorial classifications; detailed architecture/recipe should be checked in the full paper."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p095"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2412.14172"
+    ],
+    "id": "arxiv:2412.14172",
+    "title": "Learning from Massive Human Videos for Universal Humanoid Pose Control",
+    "url": "https://arxiv.org/abs/2412.14172",
+    "arxiv_id": "2412.14172",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [
+      "robotics",
+      "embodied-learning",
+      "humanoid",
+      "whole-body-control"
+    ],
+    "architecture_tags": [
+      "video-to-pose-control"
+    ],
+    "supervision_tags": [
+      "human-videos"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-08-21T08:18:23Z",
+        "role": "assistant",
+        "evidence": "Retrieved history excerpt explicitly lists https://arxiv.org/abs/2412.14172",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2412.14172"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "History evidence is a retrieval excerpt, not a complete chat export; conversation title/permalink was not returned.",
+      "Taxonomy labels are editorial classifications; detailed architecture/recipe should be checked in the full paper."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p096"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2506.20487"
+    ],
+    "id": "arxiv:2506.20487",
+    "title": "A Survey of Behavior Foundation Model: Next-Generation Whole-Body Control System of Humanoid Robots",
+    "url": "https://arxiv.org/abs/2506.20487",
+    "arxiv_id": "2506.20487",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [
+      "robotics",
+      "embodied-learning",
+      "humanoid",
+      "survey"
+    ],
+    "architecture_tags": [
+      "survey"
+    ],
+    "supervision_tags": [
+      "mixed-or-not-applicable"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-08-21T08:18:23Z",
+        "role": "assistant",
+        "evidence": "Retrieved history excerpt explicitly lists https://arxiv.org/abs/2506.20487",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2506.20487"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "History evidence is a retrieval excerpt, not a complete chat export; conversation title/permalink was not returned.",
+      "Taxonomy labels are editorial classifications; detailed architecture/recipe should be checked in the full paper."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p097"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2607.15163"
+    ],
+    "id": "arxiv:2607.15163",
+    "title": "Scaling Behavior Foundation Model for Humanoid Robots",
+    "url": "https://arxiv.org/abs/2607.15163",
+    "arxiv_id": "2607.15163",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [
+      "robotics",
+      "embodied-learning",
+      "humanoid",
+      "whole-body-control"
+    ],
+    "architecture_tags": [
+      "behavior-foundation-model"
+    ],
+    "supervision_tags": [
+      "mixed-or-not-applicable"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-08-21T08:18:23Z",
+        "role": "assistant",
+        "evidence": "Retrieved history excerpt explicitly lists https://arxiv.org/abs/2607.15163",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2607.15163"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "History evidence is a retrieval excerpt, not a complete chat export; conversation title/permalink was not returned.",
+      "Taxonomy labels are editorial classifications; detailed architecture/recipe should be checked in the full paper."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p098"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2501.02116"
+    ],
+    "id": "arxiv:2501.02116",
+    "title": "Humanoid Locomotion and Manipulation: Current Progress and Challenges in Control, Planning, and Learning",
+    "url": "https://arxiv.org/abs/2501.02116",
+    "arxiv_id": "2501.02116",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [
+      "robotics",
+      "embodied-learning",
+      "humanoid",
+      "survey"
+    ],
+    "architecture_tags": [
+      "survey"
+    ],
+    "supervision_tags": [
+      "mixed-or-not-applicable"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-08-21T08:18:23Z",
+        "role": "assistant",
+        "evidence": "Retrieved history excerpt explicitly lists https://arxiv.org/abs/2501.02116",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2501.02116"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "History evidence is a retrieval excerpt, not a complete chat export; conversation title/permalink was not returned.",
+      "Taxonomy labels are editorial classifications; detailed architecture/recipe should be checked in the full paper."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p099"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/html/2506.09588v1"
+    ],
+    "id": "arxiv:2506.09588",
+    "title": "Attention-Based Map Encoding for Learning Generalized Legged Locomotion",
+    "url": "https://arxiv.org/abs/2506.09588",
+    "arxiv_id": "2506.09588",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [
+      "robotics",
+      "embodied-learning",
+      "legged-locomotion",
+      "perceptive-locomotion"
+    ],
+    "architecture_tags": [
+      "attention-map-encoder"
+    ],
+    "supervision_tags": [
+      "reinforcement-learning"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-08-22T11:49:26Z",
+        "role": "assistant",
+        "evidence": "Retrieved history excerpt explicitly lists https://arxiv.org/html/2506.09588v1",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2506.09588"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "History evidence is a retrieval excerpt, not a complete chat export; conversation title/permalink was not returned.",
+      "Taxonomy labels are editorial classifications; detailed architecture/recipe should be checked in the full paper."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p100"
+  },
+  {
+    "original_chat_urls": [
+      "https://arXiv.org/abs/2601.08485"
+    ],
+    "id": "arxiv:2601.08485",
+    "title": "Agile and Generalized Legged Locomotion via Attention-Based Neural Map Encoding",
+    "url": "https://arxiv.org/abs/2601.08485",
+    "arxiv_id": "2601.08485",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [
+      "robotics",
+      "embodied-learning",
+      "legged-locomotion",
+      "perceptive-locomotion"
+    ],
+    "architecture_tags": [
+      "attention-map-encoder"
+    ],
+    "supervision_tags": [
+      "reinforcement-learning"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-08-22T11:49:26Z",
+        "role": "assistant",
+        "evidence": "Retrieved history excerpt explicitly lists https://arXiv.org/abs/2601.08485",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2601.08485"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "History evidence is a retrieval excerpt, not a complete chat export; conversation title/permalink was not returned.",
+      "Taxonomy labels are editorial classifications; detailed architecture/recipe should be checked in the full paper."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p101"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/1804.02717"
+    ],
+    "id": "arxiv:1804.02717",
+    "title": "DeepMimic: Example-Guided Deep Reinforcement Learning of Physics-Based Character Skills",
+    "url": "https://arxiv.org/abs/1804.02717",
+    "arxiv_id": "1804.02717",
+    "doi": null,
+    "year": "2018",
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [
+      "robotics",
+      "embodied-learning",
+      "humanoid",
+      "motion-imitation"
+    ],
+    "architecture_tags": [
+      "physics-based-character-policy"
+    ],
+    "supervision_tags": [
+      "motion-reference-imitation"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-08-21T09:26:21Z",
+        "role": "assistant",
+        "evidence": "Retrieved history excerpt explicitly lists https://arxiv.org/abs/1804.02717",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/1804.02717"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "History evidence is a retrieval excerpt, not a complete chat export; conversation title/permalink was not returned.",
+      "Taxonomy labels are editorial classifications; detailed architecture/recipe should be checked in the full paper."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p102"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2205.01906"
+    ],
+    "id": "arxiv:2205.01906",
+    "title": "ASE: Large-Scale Reusable Adversarial Skill Embeddings for Physically Simulated Characters",
+    "url": "https://arxiv.org/abs/2205.01906",
+    "arxiv_id": "2205.01906",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [
+      "robotics",
+      "embodied-learning",
+      "humanoid",
+      "motion-imitation"
+    ],
+    "architecture_tags": [
+      "adversarial-skill-embedding"
+    ],
+    "supervision_tags": [
+      "adversarial-imitation"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-08-21T09:26:21Z",
+        "role": "assistant",
+        "evidence": "Retrieved history excerpt explicitly lists https://arxiv.org/abs/2205.01906",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2205.01906"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "History evidence is a retrieval excerpt, not a complete chat export; conversation title/permalink was not returned.",
+      "Taxonomy labels are editorial classifications; detailed architecture/recipe should be checked in the full paper."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p103"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2412.13196"
+    ],
+    "id": "arxiv:2412.13196",
+    "title": "ExBody2: Advanced Expressive Humanoid Whole-Body Control",
+    "url": "https://arxiv.org/abs/2412.13196",
+    "arxiv_id": "2412.13196",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [
+      "robotics",
+      "embodied-learning",
+      "humanoid",
+      "motion-imitation"
+    ],
+    "architecture_tags": [
+      "whole-body-controller"
+    ],
+    "supervision_tags": [
+      "motion-reference-imitation"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-08-21T09:26:21Z",
+        "role": "assistant",
+        "evidence": "Retrieved history excerpt explicitly lists https://arxiv.org/abs/2412.13196",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2412.13196"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "History evidence is a retrieval excerpt, not a complete chat export; conversation title/permalink was not returned.",
+      "Taxonomy labels are editorial classifications; detailed architecture/recipe should be checked in the full paper."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p104"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2508.08241"
+    ],
+    "id": "arxiv:2508.08241",
+    "title": "BeyondMimic: From Motion Tracking to Versatile Humanoid Control via Guided Diffusion",
+    "url": "https://arxiv.org/abs/2508.08241",
+    "arxiv_id": "2508.08241",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [
+      "robotics",
+      "embodied-learning",
+      "humanoid",
+      "motion-imitation"
+    ],
+    "architecture_tags": [
+      "guided-diffusion"
+    ],
+    "supervision_tags": [
+      "motion-reference-imitation"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-08-21T09:26:21Z",
+        "role": "assistant",
+        "evidence": "Retrieved history excerpt explicitly lists https://arxiv.org/abs/2508.08241",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2508.08241"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "History evidence is a retrieval excerpt, not a complete chat export; conversation title/permalink was not returned.",
+      "Taxonomy labels are editorial classifications; detailed architecture/recipe should be checked in the full paper."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p105"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2510.02252"
+    ],
+    "id": "arxiv:2510.02252",
+    "title": "Retargeting Matters: General Motion Retargeting for Humanoid Motion Tracking",
+    "url": "https://arxiv.org/abs/2510.02252",
+    "arxiv_id": "2510.02252",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [
+      "robotics",
+      "embodied-learning",
+      "humanoid",
+      "motion-imitation"
+    ],
+    "architecture_tags": [
+      "motion-retargeting"
+    ],
+    "supervision_tags": [
+      "motion-retargeting"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-08-21T09:26:21Z",
+        "role": "assistant",
+        "evidence": "Retrieved history excerpt explicitly lists https://arxiv.org/abs/2510.02252",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2510.02252"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "History evidence is a retrieval excerpt, not a complete chat export; conversation title/permalink was not returned.",
+      "Taxonomy labels are editorial classifications; detailed architecture/recipe should be checked in the full paper."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p106"
+  },
+  {
+    "original_chat_urls": [
+      "https://arxiv.org/pdf/2408.13740"
+    ],
+    "id": "arxiv:2408.13740",
+    "title": "PIE: Parkour with Implicit-Explicit Learning Framework for Legged Robots",
+    "url": "https://arxiv.org/abs/2408.13740",
+    "arxiv_id": "2408.13740",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [
+      "robotics",
+      "embodied-learning",
+      "legged-locomotion",
+      "perceptive-locomotion"
+    ],
+    "architecture_tags": [
+      "implicit-explicit-framework"
+    ],
+    "supervision_tags": [
+      "reinforcement-learning"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-08-21T14:17:35Z",
+        "role": "assistant",
+        "evidence": "Retrieved history excerpt explicitly lists https://arxiv.org/pdf/2408.13740",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2408.13740"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "History evidence is a retrieval excerpt, not a complete chat export; conversation title/permalink was not returned.",
+      "Taxonomy labels are editorial classifications; detailed architecture/recipe should be checked in the full paper."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p107"
+  },
+  {
+    "original_chat_urls": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC6164553/"
+    ],
+    "id": "doi:10.3390/s18093099",
+    "title": "Dense RGB-D Semantic Mapping with Pixel-Voxel Neural Network",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6164553/",
+    "arxiv_id": null,
+    "doi": "10.3390/s18093099",
+    "year": null,
+    "topic_paths": [
+      "robotics/perception",
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [
+      "robotics",
+      "traditional-pipeline",
+      "perception-mapping",
+      "semantic-mapping"
+    ],
+    "architecture_tags": [
+      "pixel-voxel-network",
+      "RGB-D-SLAM"
+    ],
+    "supervision_tags": [
+      "semantic-labels"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-08T10:38:59Z",
+        "role": "assistant",
+        "evidence": "Retrieved history excerpt explicitly lists https://pmc.ncbi.nlm.nih.gov/articles/PMC6164553/",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC6164553/"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "History evidence is a retrieval excerpt, not a complete chat export; conversation title/permalink was not returned."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p108"
+  },
+  {
+    "original_chat_urls": [
+      "https://github.com/HKUST-Aerial-Robotics/FM-Fusion"
+    ],
+    "id": "url:https://github.com/HKUST-Aerial-Robotics/FM-Fusion",
+    "title": "FM-Fusion: Instance-aware Semantic Mapping Boosted by Vision-Language Foundation Models",
+    "url": "https://github.com/HKUST-Aerial-Robotics/FM-Fusion",
+    "arxiv_id": null,
+    "doi": null,
+    "year": null,
+    "topic_paths": [
+      "robotics/perception",
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [
+      "robotics",
+      "traditional-pipeline",
+      "perception-mapping",
+      "open-vocabulary-instance-mapping"
+    ],
+    "architecture_tags": [
+      "vision-language-foundation-model",
+      "mapping"
+    ],
+    "supervision_tags": [
+      "pretrained-foundation-model"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-09-08T10:38:59Z",
+        "role": "assistant",
+        "evidence": "Retrieved history excerpt explicitly lists https://github.com/HKUST-Aerial-Robotics/FM-Fusion",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://github.com/HKUST-Aerial-Robotics/FM-Fusion"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "History evidence is a retrieval excerpt, not a complete chat export; conversation title/permalink was not returned.",
+      "Chat URL is the official code repository, not a direct paper URL."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "repository",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p109"
+  },
+  {
+    "original_chat_urls": [
+      "https://proceedings.mlr.press/v205/margolis23a/margolis23a.pdf"
+    ],
+    "id": "url:https://proceedings.mlr.press/v205/margolis23a/margolis23a.pdf",
+    "title": "Walk These Ways: Tuning Robot Control for Generalization with Multiplicity of Behavior",
+    "url": "https://proceedings.mlr.press/v205/margolis23a/margolis23a.pdf",
+    "arxiv_id": null,
+    "doi": null,
+    "year": null,
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [
+      "robotics",
+      "embodied-learning",
+      "legged-locomotion",
+      "gait-generation"
+    ],
+    "architecture_tags": [
+      "multiplicity-of-behavior"
+    ],
+    "supervision_tags": [
+      "reinforcement-learning"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-08-21T08:12:47Z",
+        "role": "assistant",
+        "evidence": "Retrieved history excerpt explicitly lists https://proceedings.mlr.press/v205/margolis23a/margolis23a.pdf",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://proceedings.mlr.press/v205/margolis23a.html"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "History evidence is a retrieval excerpt, not a complete chat export; conversation title/permalink was not returned."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p110"
+  },
+  {
+    "original_chat_urls": [
+      "https://proceedings.mlr.press/v205/agarwal23a/agarwal23a.pdf"
+    ],
+    "id": "url:https://proceedings.mlr.press/v205/agarwal23a/agarwal23a.pdf",
+    "title": "Legged Locomotion in Challenging Terrains using Egocentric Vision",
+    "url": "https://proceedings.mlr.press/v205/agarwal23a/agarwal23a.pdf",
+    "arxiv_id": null,
+    "doi": null,
+    "year": null,
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [
+      "robotics",
+      "embodied-learning",
+      "legged-locomotion",
+      "perceptive-locomotion"
+    ],
+    "architecture_tags": [
+      "depth-vision-policy"
+    ],
+    "supervision_tags": [
+      "reinforcement-learning",
+      "supervised-distillation"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-08-21T14:17:35Z",
+        "role": "assistant",
+        "evidence": "Retrieved history excerpt explicitly lists https://proceedings.mlr.press/v205/agarwal23a/agarwal23a.pdf",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://proceedings.mlr.press/v205/agarwal23a.html"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "History evidence is a retrieval excerpt, not a complete chat export; conversation title/permalink was not returned."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p111"
+  },
+  {
+    "original_chat_urls": [
+      "https://advanced.onlinelibrary.wiley.com/doi/10.1002/advs.202524345?af=R"
+    ],
+    "id": "doi:10.1002/advs.202524345",
+    "title": "MGDP: Mastering a Generalized Depth Perception Model for Quadruped Locomotion",
+    "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/advs.202524345?af=R",
+    "arxiv_id": null,
+    "doi": "10.1002/advs.202524345",
+    "year": null,
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [
+      "robotics",
+      "embodied-learning",
+      "legged-locomotion",
+      "perceptive-locomotion"
+    ],
+    "architecture_tags": [
+      "depth-perception-model"
+    ],
+    "supervision_tags": [
+      "recipe-needs-full-text-review"
+    ],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-08-21T14:17:35Z",
+        "role": "assistant",
+        "evidence": "Retrieved history excerpt explicitly lists https://advanced.onlinelibrary.wiley.com/doi/10.1002/advs.202524345?af=R",
+        "conversation_title": null,
+        "conversation_url": null,
+        "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      }
+    ],
+    "verification_sources": [
+      "https://advanced.onlinelibrary.wiley.com/doi/10.1002/advs.202524345?af=R"
+    ],
+    "verification_status": "verified_identity",
+    "caveats": [
+      "History evidence is a retrieval excerpt, not a complete chat export; conversation title/permalink was not returned."
+    ],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p112"
+  },
+  {
+    "original_chat_urls": [],
+    "id": "arxiv:1706.03762",
+    "title": "Attention Is All You Need",
+    "url": "https://arxiv.org/abs/1706.03762",
+    "arxiv_id": "1706.03762",
+    "doi": null,
+    "year": "2017",
+    "topic_paths": [
+      "llm/architecture"
+    ],
+    "detail_topics": [
+      "模型训练与多模态"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "previous-starter"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/1706.03762"
+    ],
+    "verification_status": "verified_starter_metadata",
+    "caveats": [],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "starter_notes": {
+      "problem_method_evidence": "问题：如何摆脱序列模型中的循环与卷积瓶颈。方法：基于注意力的 Transformer。原文证据：机器翻译任务及句法分析验证；不能直接据此断言现代 LLM、视觉或机器人任务中的收益。",
+      "limitations_relevance_reading_status": "关联判断：理解注意力与后续缓存、结构改动的共同起点；本文不直接解决 KV cache 压缩。阅读状态：摘要与元数据已核验，全文精读待做；你的阅读状态待确认。",
+      "verification": "官方 arXiv 摘要与元数据已核验，全文精读待做"
+    },
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p113"
+  },
+  {
+    "original_chat_urls": [],
+    "id": "arxiv:2203.15556",
+    "title": "Training Compute Optimal Large Language Models",
+    "url": "https://arxiv.org/abs/2203.15556",
+    "arxiv_id": "2203.15556",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "cross-domain/interpretability"
+    ],
+    "detail_topics": [
+      "模型训练与多模态"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "previous-starter"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2203.15556"
+    ],
+    "verification_status": "verified_starter_metadata",
+    "caveats": [],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "starter_notes": {
+      "problem_method_evidence": "问题：固定训练算力如何分配模型大小与训练 token。方法：训练多组模型拟合计算最优规模关系，再用 Chinchilla 验证。原文证据：在研究覆盖的训练设置中支持模型大小和 token 协同增长。",
+      "limitations_relevance_reading_status": "证据边界：关联判断，不应把其经验规律当作所有数据质量、多模态配比或包含推理成本的通用最优解。关联判断：为数据量与规模选型建立基线。阅读状态：摘要与元数据已核验，全文精读待做；你的阅读状态待确认。",
+      "verification": "官方 arXiv 摘要与元数据已核验，全文精读待做"
+    },
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p114"
+  },
+  {
+    "original_chat_urls": [],
+    "id": "arxiv:2203.02155",
+    "title": "Training language models to follow instructions with human feedback",
+    "url": "https://arxiv.org/abs/2203.02155",
+    "arxiv_id": "2203.02155",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "llm/posttraining/preferences"
+    ],
+    "detail_topics": [
+      "模型训练与多模态"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "previous-starter"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2203.02155"
+    ],
+    "verification_status": "verified_starter_metadata",
+    "caveats": [],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "starter_notes": {
+      "problem_method_evidence": "问题：语言预训练目标与用户意图不一致。方法：示范数据监督微调，再用人类输出排序进行强化学习微调。原文证据：作者提示分布上的人工偏好评估及部分 NLP 评测；模型仍会犯错。",
+      "limitations_relevance_reading_status": "关联判断：适合对照预训练、SFT、RL 各自使用的数据与优化目标；偏好改善不等于所有能力提高，也不直接证明机器人闭环可靠。阅读状态：摘要与元数据已核验，全文精读待做；你的阅读状态待确认。",
+      "verification": "官方 arXiv 摘要与元数据已核验，全文精读待做"
+    },
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p115"
+  },
+  {
+    "original_chat_urls": [],
+    "id": "arxiv:2107.04034",
+    "title": "RMA Rapid Motor Adaptation for Legged Robots",
+    "url": "https://arxiv.org/abs/2107.04034",
+    "arxiv_id": "2107.04034",
+    "doi": null,
+    "year": "2021",
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [
+      "机器人与具身智能"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "previous-starter"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2107.04034"
+    ],
+    "verification_status": "verified_starter_metadata",
+    "caveats": [],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "starter_notes": {
+      "problem_method_evidence": "问题：四足机器人如何适应未见地形、负载等变化。方法：基础策略与适应模块组合，在仿真训练后部署到 A1。原文证据：仿真与多种真实地形实验，无真机微调。",
+      "limitations_relevance_reading_status": "证据边界与关联判断：不能由单一平台结果推出任何传感器组合都有效；与适应、特权信息及部署观测差异相关，可作为教师学生路线的比较入口，本文不等同于深度加 IMU 导航方案。阅读状态：摘要与元数据已核验，全文精读待做；你的阅读状态待确认。",
+      "verification": "官方 arXiv 摘要与元数据已核验，全文精读待做"
+    },
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p116"
+  },
+  {
+    "original_chat_urls": [],
+    "id": "arxiv:2301.04104",
+    "title": "Mastering Diverse Domains through World Models",
+    "url": "https://arxiv.org/abs/2301.04104",
     "arxiv_id": "2301.04104",
-    "original_url": "https://arxiv.org/abs/2301.04104",
-    "topic": "机器人与具身智能",
-    "problem_method_evidence": "问题：RL 在跨任务应用时如何减少专门调参。方法：DreamerV3 学习环境模型，再通过想象轨迹改进行为，并用稳定化机制提高跨域训练适用性。原文证据：多种控制与游戏任务。",
-    "limitations_relevance_reading_status": "证据边界与关联判断：任务表现不能单独证明 latent 具有因果物理结构，也不能直接证明真机安全性；适合围绕可预测、可干预、等变性与长期控制分别设计检验。阅读状态：摘要与元数据已核验，全文精读待做；你的阅读状态待确认。",
-    "user_reading_status": "待确认",
-    "verification": "官方 arXiv 摘要与元数据已核验，全文精读待做"
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "multimodal/world-models"
+    ],
+    "detail_topics": [
+      "机器人与具身智能"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "previous-starter"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2301.04104"
+    ],
+    "verification_status": "verified_starter_metadata",
+    "caveats": [],
+    "reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+    "resource_kind": "paper",
+    "starter_notes": {
+      "problem_method_evidence": "问题：RL 在跨任务应用时如何减少专门调参。方法：DreamerV3 学习环境模型，再通过想象轨迹改进行为，并用稳定化机制提高跨域训练适用性。原文证据：多种控制与游戏任务。",
+      "limitations_relevance_reading_status": "证据边界与关联判断：任务表现不能单独证明 latent 具有因果物理结构，也不能直接证明真机安全性；适合围绕可预测、可干预、等变性与长期控制分别设计检验。阅读状态：摘要与元数据已核验，全文精读待做；你的阅读状态待确认。",
+      "verification": "官方 arXiv 摘要与元数据已核验，全文精读待做"
+    },
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p117"
   }
 ]

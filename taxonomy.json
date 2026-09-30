@@ -1,0 +1,232 @@
+{
+  "schema_version": 1,
+  "principle": "研究问题为主分类；架构、监督信号、模态和聊天来源为正交标签。一个条目可跨方向引用，不重复计数。",
+  "domains": [
+    {
+      "id": "llm",
+      "label": "大语言模型",
+      "topics": [
+        {
+          "id": "llm/pretraining",
+          "label": "预训练",
+          "subtopics": [
+            "训练目标与规模规律",
+            "数据选择与混合",
+            "课程与持续预训练"
+          ]
+        },
+        {
+          "id": "llm/posttraining/sft",
+          "label": "后训练 监督微调",
+          "subtopics": [
+            "指令与示范数据",
+            "轨迹监督与任务适配"
+          ]
+        },
+        {
+          "id": "llm/posttraining/preferences",
+          "label": "后训练 偏好学习",
+          "subtopics": [
+            "偏好数据与奖励模型",
+            "直接偏好优化"
+          ]
+        },
+        {
+          "id": "llm/posttraining/rl",
+          "label": "后训练 强化学习",
+          "subtopics": [
+            "策略优化算法",
+            "结果与过程奖励",
+            "轨迹采样与数据回流"
+          ]
+        },
+        {
+          "id": "llm/architecture",
+          "label": "架构与效率",
+          "subtopics": [
+            "注意力与状态空间模型",
+            "稀疏专家与条件计算",
+            "KV cache 与压缩"
+          ]
+        },
+        {
+          "id": "llm/inference",
+          "label": "推理时计算",
+          "subtopics": [
+            "搜索与验证",
+            "多路径与多 Agent",
+            "预算分配与 token 效率"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "multimodal",
+      "label": "多模态与世界表征",
+      "topics": [
+        {
+          "id": "multimodal/visual-representation",
+          "label": "视觉表征",
+          "subtopics": [
+            "视觉编码器",
+            "局部与全局表征",
+            "自监督视觉学习"
+          ]
+        },
+        {
+          "id": "multimodal/alignment",
+          "label": "图文对齐",
+          "subtopics": [
+            "联合嵌入与检索",
+            "对比学习",
+            "跨模态迁移"
+          ]
+        },
+        {
+          "id": "multimodal/vlm",
+          "label": "视觉语言模型",
+          "subtopics": [
+            "连接器与融合",
+            "多模态指令学习",
+            "空间与推理能力"
+          ]
+        },
+        {
+          "id": "multimodal/generation",
+          "label": "视觉生成",
+          "subtopics": [
+            "图像生成",
+            "视频生成",
+            "扩散与 Flow"
+          ]
+        },
+        {
+          "id": "multimodal/world-models",
+          "label": "世界模型",
+          "subtopics": [
+            "预测与潜在动力学",
+            "结构化与可干预表征",
+            "行动条件与规划"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "robotics",
+      "label": "机器人与具身系统",
+      "topics": [
+        {
+          "id": "robotics/perception",
+          "label": "感知与传感融合",
+          "subtopics": [
+            "视觉 深度 LiDAR",
+            "惯性与多传感器融合"
+          ]
+        },
+        {
+          "id": "robotics/localization-mapping",
+          "label": "定位与建图",
+          "subtopics": [
+            "里程计与状态估计",
+            "SLAM 与地图"
+          ]
+        },
+        {
+          "id": "robotics/navigation-planning",
+          "label": "导航与规划",
+          "subtopics": [
+            "几何与运动规划",
+            "视觉语言导航"
+          ]
+        },
+        {
+          "id": "robotics/control",
+          "label": "运动控制",
+          "subtopics": [
+            "经典与最优控制",
+            "腿足策略与适应",
+            "sim to real"
+          ]
+        },
+        {
+          "id": "robotics/embodied-policies",
+          "label": "具身策略与 VLA",
+          "subtopics": [
+            "动作表示与生成",
+            "跨本体与数据",
+            "模型 规划与控制接口"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cross-domain",
+      "label": "跨方向方法与探索",
+      "topics": [
+        {
+          "id": "cross-domain/agents",
+          "label": "Agent 与上下文系统"
+        },
+        {
+          "id": "cross-domain/interpretability",
+          "label": "机制与可信解释"
+        },
+        {
+          "id": "cross-domain/biological-computing",
+          "label": "生物计算探索"
+        },
+        {
+          "id": "cross-domain/evaluation",
+          "label": "评估与监督可靠性"
+        }
+      ]
+    }
+  ],
+  "orthogonal_tags": {
+    "architecture": [
+      "Transformer",
+      "ViT",
+      "state-space",
+      "MoE",
+      "dual-encoder",
+      "world-model",
+      "diffusion",
+      "flow"
+    ],
+    "supervision": [
+      "supervised",
+      "contrastive",
+      "masked-reconstruction",
+      "generative-prediction",
+      "self-distillation",
+      "preference",
+      "reinforcement-learning",
+      "imitation"
+    ],
+    "evidence_origin": [
+      "user-provided-exact-link",
+      "assistant-provided-exact-link",
+      "chat-name-resolved",
+      "previous-starter",
+      "handbook-only",
+      "unresolved"
+    ],
+    "method": [
+      "inference-time search",
+      "sampling",
+      "prompting",
+      "pruning"
+    ],
+    "evaluation": [
+      "probing",
+      "causal analysis",
+      "faithfulness",
+      "LLM judge"
+    ]
+  },
+  "notes": [
+    "ViT 是架构标签；CLIP 是图文对齐方法及模型家族；WM 是世界模型研究方向，三者不作为同级互斥分类。",
+    "目录中的细分项表达检索维度，不表示每项已有论文或用户已选定课题。",
+    "推理时搜索、采样和提示属于推理方法；探针与评估属于评估标签，不标为训练监督。"
+  ]
+}
