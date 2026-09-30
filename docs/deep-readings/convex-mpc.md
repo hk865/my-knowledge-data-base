@@ -64,11 +64,11 @@ IMU和关节编码器经状态估计器得到躯干状态、脚位及速度；�
 
 - [MIT 官方记录](https://dspace.mit.edu/entities/publication/bc8c7e1e-5830-443f-a879-787947111fcf)
 - [作者接受稿官方全文](https://dspace.mit.edu/server/api/core/bitstreams/474e8173-7b22-46e6-a51b-3d8e8a383357/content)，定位：§III–IV式5–32；§V表I、图4–10；§VI
-- [逐条证据与版本](evidence/convex-mpc.json) · [阅读覆盖](evidence/convex-mpc-coverage.json)
+- [逐条证据与版本](evidence/convex-mpc.json)
 
 
 ## 图解文件与证据索引
 
-机制图待公开确认 · 机制图待公开确认 · [结构化证据](evidence/convex-mpc.json)
+机制图待公开确认 · [结构化证据](evidence/convex-mpc.json)
 
 来源类型：本次为细分方向新选择的 baseline，不是历史聊天提取。
