@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "repository": "hk865/my-knowledge-data-base",
+  "branch": "main",
+  "export_date": "2026-09-30",
+  "source_direction": "Pages to GitHub with collision-preserving merges",
+  "managed_files": [
+    {
+      "path": "docs/research-map.md",
+      "recorded_sha256": "4fb90ffff2b23d4e61f2b4d17083b59d5e7d07c957f447aab6c2851d93b6211c",
+      "git_blob_sha": "be66b92ac1ad7737f9c40c8432469282ffeb05b6"
+    },
+    {
+      "path": "docs/model-training-multimodal.md",
+      "recorded_sha256": "91bc8f4cc1462cfd4a277b5dcd70957b7b5b2a60ad6608388e5b7a163190679e",
+      "git_blob_sha": "3e7e9aff1e8159459bfc2008fede15b24e84c0d6"
+    },
+    {
+      "path": "docs/robotics-embodied.md",
+      "recorded_sha256": "9dbf2bec83ca8657259adba2ca59fe026ec0e5d708947b6c04c484563561b132",
+      "git_blob_sha": "0a69bd85ab8f53c2dee695ea0125fe9a5357ccbd"
+    },
+    {
+      "path": "index.json",
+      "recorded_sha256": "3a338644cc6effc5623b32c7609112acbe5ae2fcdf9fd6d60ff7bb15ca714d33",
+      "git_blob_sha": "abde818be3a1d9cbde40fe9c0f7c53c5a528fe5d"
+    },
+    {
+      "path": "index.csv",
+      "recorded_sha256": "3a7b91935f68e254c40c02f47b1163747280cdbe8ee0f5d4005669eae158a0ca",
+      "git_blob_sha": "2c7b1ce1152e45578531fda77403334b2c5608d7"
+    },
+    {
+      "path": "papers.json",
+      "recorded_sha256": "f0e03c95ee8946a6c0014051f7295b15f123a71f2f126c1633dd9f1f21d78f4e",
+      "git_blob_sha": "b1c61928f2ff99618009ceac756ff7d7a1084e07"
+    },
+    {
+      "path": "papers.csv",
+      "recorded_sha256": "4c2319a55bafe2cbf0cf80baa14d1670d6ce5c435c609d27abcad51f60822e0a",
+      "git_blob_sha": "7cf503caa15643e5640117746724f1b3a03c2941"
+    },
+    {
+      "path": "daily/2026-09-30.md",
+      "recorded_sha256": "c261103c64f1b7f82cff993e7fa536453d7009458d4028849e14e5b9ded2c7e2",
+      "git_blob_sha": "ca7a5d30ecf907de957295e6672396e4b0aafe3c"
+    },
+    {
+      "path": "SYNC.md",
+      "recorded_sha256": "23ad8dec3348ada20a8cc4c23d402a11ab9bf0d14fbf9e29950a2a8057f9b2a4",
+      "git_blob_sha": "1c1afe7a036f1f77c045108273b976a6023dc351"
+    },
+    {
+      "path": "README.md",
+      "recorded_sha256": "0ce54606a9792107ceab4eeeb9f0057d6334cb1cb72222d3c5763b07e0b6e968",
+      "git_blob_sha": "9a4096c979b4518455d257f21e9998ab83802074"
+    }
+  ]
+}
