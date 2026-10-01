@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900"><defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#7890a8"/></marker></defs><rect width="1600" height="900" fill="#fbfcfe"/><g font-family="Noto Sans CJK SC, sans-serif">
+<text x="64" y="80" font-size="42" fill="#17324d" font-weight="700" text-anchor="start">回归目标总图</text>
+<text x="64" y="132" font-size="25" fill="#50657a" font-weight="400" text-anchor="start">先确认误差的含义，再选择怎样惩罚它</text>
+<rect x="64.0" y="192" width="456.0" height="245" rx="18" fill="#e7effa"/>
+<text x="90.0" y="232" font-size="22" fill="#50657a" font-weight="600" text-anchor="start">① 定义目标</text>
+<text x="90.0" y="274" font-size="30" fill="#17324d" font-weight="700" text-anchor="start">输出与标签</text>
+<text x="90.0" y="324" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">连续坐标 ŷ 与 y</text>
+<text x="90.0" y="366" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">同一时间和坐标系</text>
+<text x="90.0" y="408" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">先统一单位</text>
+<path d="M528.0 314.5 L563.0 314.5" stroke="#7890a8" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="572.0" y="192" width="456.0" height="245" rx="18" fill="#dff3eb"/>
+<text x="598.0" y="232" font-size="22" fill="#50657a" font-weight="600" text-anchor="start">② 定义误差</text>
+<text x="598.0" y="274" font-size="30" fill="#17324d" font-weight="700" text-anchor="start">形成残差</text>
+<text x="598.0" y="324" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">r = ŷ − y</text>
+<text x="598.0" y="366" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">向量逐坐标或取范数</text>
+<text x="598.0" y="408" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">两者需要说清楚</text>
+<path d="M1036.0 314.5 L1071.0 314.5" stroke="#7890a8" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="1080.0" y="192" width="456.0" height="245" rx="18" fill="#fff1d6"/>
+<text x="1106.0" y="232" font-size="22" fill="#50657a" font-weight="600" text-anchor="start">③ 定义惩罚</text>
+<text x="1106.0" y="274" font-size="30" fill="#17324d" font-weight="700" text-anchor="start">选择损失</text>
+<text x="1106.0" y="324" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">MSE / MAE / Huber</text>
+<text x="1106.0" y="366" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">异常点影响不同</text>
+<text x="1106.0" y="408" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">反映不同误差假设</text>
+<rect x="64.0" y="502" width="456.0" height="245" rx="18" fill="#e7effa"/>
+<text x="90.0" y="542" font-size="22" fill="#50657a" font-weight="600" text-anchor="start">④ 选择位置</text>
+<text x="90.0" y="584" font-size="30" fill="#17324d" font-weight="700" text-anchor="start">有效位置</text>
+<text x="90.0" y="634" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">m = 1 才有监督</text>
+<text x="90.0" y="676" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">无效深度和padding</text>
+<text x="90.0" y="718" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">不进入损失分母</text>
+<path d="M528.0 624.5 L563.0 624.5" stroke="#7890a8" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="572.0" y="502" width="456.0" height="245" rx="18" fill="#dff3eb"/>
+<text x="598.0" y="542" font-size="22" fill="#50657a" font-weight="600" text-anchor="start">⑤ 明确计数</text>
+<text x="598.0" y="584" font-size="30" fill="#17324d" font-weight="700" text-anchor="start">聚合与训练</text>
+<text x="598.0" y="634" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">按元素或样本平均</text>
+<text x="598.0" y="676" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">梯度传回参数 θ</text>
+<text x="598.0" y="718" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">归一化改变权重</text>
+<path d="M1036.0 624.5 L1071.0 624.5" stroke="#7890a8" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="1080.0" y="502" width="456.0" height="245" rx="18" fill="#fce6e3"/>
+<text x="1106.0" y="542" font-size="22" fill="#50657a" font-weight="600" text-anchor="start">⑥ 检验结果</text>
+<text x="1106.0" y="584" font-size="30" fill="#17324d" font-weight="700" text-anchor="start">独立评价</text>
+<text x="1106.0" y="634" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">米制误差与尾部失败</text>
+<text x="1106.0" y="676" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">测试新序列和新场景</text>
+<text x="1106.0" y="718" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">loss小不等于轨迹稳</text>
+<text x="64" y="844" font-size="24" fill="#50657a" font-weight="400" text-anchor="start">原创概念示意；不代表特定论文流程，也不报告训练结果</text>
+</g></svg>

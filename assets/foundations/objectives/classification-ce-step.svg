@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900"><defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#7890a8"/></marker></defs><rect width="1600" height="900" fill="#fbfcfe"/><g font-family="Noto Sans CJK SC, sans-serif">
+<text x="64" y="80" font-size="42" fill="#17324d" font-weight="700" text-anchor="start">步骤一 从类别概率算出交叉熵</text>
+<text x="64" y="132" font-size="25" fill="#50657a" font-weight="400" text-anchor="start">例：真值是第一类，模型给它0.7的概率</text>
+<rect x="64.0" y="192" width="456.0" height="245" rx="18" fill="#e7effa"/>
+<text x="90.0" y="232" font-size="22" fill="#50657a" font-weight="600" text-anchor="start">①</text>
+<text x="90.0" y="274" font-size="30" fill="#17324d" font-weight="700" text-anchor="start">网络输出 logits</text>
+<text x="90.0" y="324" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">可正可负的原始分数</text>
+<text x="90.0" y="366" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">不是已经校准的概率</text>
+<text x="90.0" y="408" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">本图从归一化后演算</text>
+<path d="M528.0 314.5 L563.0 314.5" stroke="#7890a8" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="572.0" y="192" width="456.0" height="245" rx="18" fill="#dff3eb"/>
+<text x="598.0" y="232" font-size="22" fill="#50657a" font-weight="600" text-anchor="start">②</text>
+<text x="598.0" y="274" font-size="30" fill="#17324d" font-weight="700" text-anchor="start">softmax 概率</text>
+<text x="598.0" y="324" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">类别1：0.7 ← 真值</text>
+<text x="598.0" y="366" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">类别2：0.2</text>
+<text x="598.0" y="408" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">类别3：0.1</text>
+<path d="M1036.0 314.5 L1071.0 314.5" stroke="#7890a8" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="1080.0" y="192" width="456.0" height="245" rx="18" fill="#fff1d6"/>
+<text x="1106.0" y="232" font-size="22" fill="#50657a" font-weight="600" text-anchor="start">③</text>
+<text x="1106.0" y="274" font-size="30" fill="#17324d" font-weight="700" text-anchor="start">取负对数</text>
+<text x="1106.0" y="324" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">−log(0.7) ≈ 0.357</text>
+<text x="1106.0" y="366" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">若真类只有0.01</text>
+<text x="1106.0" y="408" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">−log(0.01) ≈ 4.605</text>
+<rect x="64.0" y="502" width="456.0" height="245" rx="18" fill="#e7effa"/>
+<text x="90.0" y="542" font-size="22" fill="#50657a" font-weight="600" text-anchor="start">评价对比</text>
+<text x="90.0" y="584" font-size="30" fill="#17324d" font-weight="700" text-anchor="start">两次都预测正确</text>
+<text x="90.0" y="634" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">p真类 = 0.7</text>
+<text x="90.0" y="676" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">或 p真类 = 0.99</text>
+<text x="90.0" y="718" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">argmax准确率都为1</text>
+<path d="M528.0 624.5 L563.0 624.5" stroke="#7890a8" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="572.0" y="502" width="456.0" height="245" rx="18" fill="#dff3eb"/>
+<text x="598.0" y="542" font-size="22" fill="#50657a" font-weight="600" text-anchor="start">训练对比</text>
+<text x="598.0" y="584" font-size="30" fill="#17324d" font-weight="700" text-anchor="start">但损失不同</text>
+<text x="598.0" y="634" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">0.357 对约0.010</text>
+<text x="598.0" y="676" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">CE对概率敏感</text>
+<text x="598.0" y="718" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">不只检查最终类别</text>
+<path d="M1036.0 624.5 L1071.0 624.5" stroke="#7890a8" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="1080.0" y="502" width="456.0" height="245" rx="18" fill="#fce6e3"/>
+<text x="1106.0" y="542" font-size="22" fill="#50657a" font-weight="600" text-anchor="start">PyTorch</text>
+<text x="1106.0" y="584" font-size="30" fill="#17324d" font-weight="700" text-anchor="start">实现要看接口</text>
+<text x="1106.0" y="634" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">CrossEntropyLoss</text>
+<text x="1106.0" y="676" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">直接接收 logits</text>
+<text x="1106.0" y="718" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">不要再提前softmax</text>
+<text x="64" y="844" font-size="24" fill="#50657a" font-weight="400" text-anchor="start">取自然对数；手算只说明函数机制，不能跨任务用loss大小比较能力</text>
+</g></svg>

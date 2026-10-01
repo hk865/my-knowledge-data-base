@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760"><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 Z" fill="#2767b2"/></marker></defs><rect width="1400" height="760" fill="#fbfcfe"/>
+<text x="55" y="65" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="34" fill="#15304a" font-weight="700" text-anchor="start">ELBO：两个KL指向不同的分布</text>
+<text x="55" y="106" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="start">不要把训练时先验约束，与看不见的真实后验差距混为一项</text>
+<rect x="85" y="190" width="350" height="160" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="260.0" y="230" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">数据对数似然</text>
+<text x="260.0" y="270" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">log pθ(x)</text>
+<rect x="545" y="190" width="350" height="160" rx="16" fill="#e7f4ed" stroke="#aabccc" stroke-width="2"/>
+<text x="720.0" y="230" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">ELBO</text>
+<text x="720.0" y="270" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">可计算并优化的下界</text>
+<rect x="1005" y="190" width="300" height="160" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="1155.0" y="230" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">后验差距</text>
+<text x="1155.0" y="270" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">KL(qφ || pθ(z|x))</text>
+<text x="482" y="278" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="40" fill="#15304a" font-weight="400" text-anchor="middle">=</text>
+<text x="951" y="278" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="40" fill="#15304a" font-weight="400" text-anchor="middle">+</text>
+<rect x="270" y="445" width="390" height="170" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="465.0" y="485" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">解释观测</text>
+<text x="465.0" y="525" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">E_q log pθ(x|z)</text>
+<text x="465.0" y="556" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">让z足以帮助重建</text>
+<rect x="785" y="445" width="390" height="170" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="980.0" y="485" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">约束到先验</text>
+<text x="980.0" y="525" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">KL(qφ(z|x) || p(z))</text>
+<text x="980.0" y="556" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">训练时可计算的项</text>
+<text x="720" y="540" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="45" fill="#15304a" font-weight="400" text-anchor="middle">−</text>
+<line x1="720" y1="363" x2="720" y2="420" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="720.0" y="379.5" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="19" fill="#587086" font-weight="400" text-anchor="middle">ELBO展开</text>
+<text x="55" y="726" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="start">KL非负使ELBO成为下界；只把q拉回先验可能丢掉输入信息，不能省略解释观测的目标。</text>
+</svg>

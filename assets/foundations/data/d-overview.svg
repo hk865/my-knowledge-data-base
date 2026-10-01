@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700"><rect width="1200" height="700" fill="white"/>
+<text x="44" y="68.75999999999999" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="34" font-weight="700" fill="#182b3b">IMU 位移监督有两条独立数据路径</text>
+<text x="44" y="109.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#526578">绿色参考信息用于标签；蓝色输入路径必须在推理时可获得</text>
+<rect x="44" y="172" width="320" height="135" rx="12" fill="#e8f1fc" stroke="#8b9bad" stroke-width="2"/>
+<text x="62" y="211.36" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="24" font-weight="700" fill="#182b3b">六轴 IMU</text>
+<text x="62" y="248.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">[200,6]，rad/s 与 m/s²</text>
+<text x="62" y="280.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">原始机体系输入</text>
+<rect x="450" y="172" width="300" height="135" rx="12" fill="#e8f1fc" stroke="#8b9bad" stroke-width="2"/>
+<text x="468" y="211.36" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="24" font-weight="700" fill="#182b3b">小型时序网络</text>
+<text x="468" y="248.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">1D CNN 或 TCN</text>
+<text x="468" y="280.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">输出局部位移 [3]</text>
+<line x1="364" y1="236" x2="444" y2="236" stroke="#8b9bad" stroke-width="3"/>
+<polygon points="444,236 432.5914266954251,242.23253200185465 432.5914266954251,229.76746799814535" fill="#8b9bad"/>
+<rect x="44" y="398" width="320" height="140" rx="12" fill="#e4f4f0" stroke="#8b9bad" stroke-width="2"/>
+<text x="62" y="437.36" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="24" font-weight="700" fill="#182b3b">参考位置与姿态</text>
+<text x="62" y="474.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">仅用于构造 y</text>
+<text x="62" y="506.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">R(t0)^T [p(t1)−p(t0)]</text>
+<rect x="450" y="398" width="300" height="140" rx="12" fill="#e4f4f0" stroke="#8b9bad" stroke-width="2"/>
+<text x="468" y="437.36" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="24" font-weight="700" fill="#182b3b">监督标签</text>
+<text x="468" y="474.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">起点机体系 Δp[3]</text>
+<text x="468" y="506.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">单位 m</text>
+<line x1="364" y1="468" x2="444" y2="468" stroke="#8b9bad" stroke-width="3"/>
+<polygon points="444,468 432.5914266954251,474.2325320018546 432.5914266954251,461.7674679981454" fill="#8b9bad"/>
+<rect x="847" y="279" width="305" height="174" rx="12" fill="#fff4d7" stroke="#8b9bad" stroke-width="2"/>
+<text x="865" y="318.36" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="24" font-weight="700" fill="#182b3b">比较输出与标签</text>
+<text x="865" y="355.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">MSE 或 Huber</text>
+<text x="865" y="387.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">位移误差，单位 m</text>
+<text x="865" y="419.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">记录每序列表现</text>
+<line x1="750" y1="237" x2="841" y2="321" stroke="#8b9bad" stroke-width="3"/>
+<polygon points="841,321 828.3895385910081,317.8414777106491 836.8443434840183,308.6821057432214" fill="#8b9bad"/>
+<line x1="750" y1="468" x2="841" y2="407" stroke="#8b9bad" stroke-width="3"/>
+<polygon points="841,407 834.9938488613956,418.52936028148315 828.0532405401548,408.1753380317633" fill="#8b9bad"/>
+<line x1="44" y1="637" x2="1156" y2="637" stroke="#d8e1e9" stroke-width="2"/>
+<text x="44" y="674.52" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="18" font-weight="400" fill="#526578">参考姿态不能偷偷进入输入预处理；只给 IMU 一般不能唯一确定初速度</text>
+</svg>

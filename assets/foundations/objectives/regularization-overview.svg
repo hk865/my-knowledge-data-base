@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900"><defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#7890a8"/></marker></defs><rect width="1600" height="900" fill="#fbfcfe"/><g font-family="Noto Sans CJK SC, sans-serif">
+<text x="64" y="80" font-size="42" fill="#17324d" font-weight="700" text-anchor="start">参数正则化总图</text>
+<text x="64" y="132" font-size="25" fill="#50657a" font-weight="400" text-anchor="start">残差怎么罚、参数怎么约束、权重怎么更新是三个问题</text>
+<rect x="64.0" y="192" width="456.0" height="245" rx="18" fill="#e7effa"/>
+<text x="90.0" y="232" font-size="22" fill="#50657a" font-weight="600" text-anchor="start">误差对象</text>
+<text x="90.0" y="274" font-size="30" fill="#17324d" font-weight="700" text-anchor="start">数据损失</text>
+<text x="90.0" y="324" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">比较预测与标签</text>
+<text x="90.0" y="366" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">如MSE、CE或NLL</text>
+<text x="90.0" y="408" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">决定要学会什么</text>
+<path d="M528.0 314.5 L563.0 314.5" stroke="#7890a8" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="572.0" y="192" width="456.0" height="245" rx="18" fill="#dff3eb"/>
+<text x="598.0" y="232" font-size="22" fill="#50657a" font-weight="600" text-anchor="start">参数对象</text>
+<text x="598.0" y="274" font-size="30" fill="#17324d" font-weight="700" text-anchor="start">参数惩罚</text>
+<text x="598.0" y="324" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">L1：Σ |θⱼ|</text>
+<text x="598.0" y="366" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">L2：0.5 Σ θⱼ²</text>
+<text x="598.0" y="408" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">强度λ需验证集选择</text>
+<path d="M1036.0 314.5 L1071.0 314.5" stroke="#7890a8" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="1080.0" y="192" width="456.0" height="245" rx="18" fill="#fff1d6"/>
+<text x="1106.0" y="232" font-size="22" fill="#50657a" font-weight="600" text-anchor="start">目标函数</text>
+<text x="1106.0" y="274" font-size="30" fill="#17324d" font-weight="700" text-anchor="start">总训练目标</text>
+<text x="1106.0" y="324" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">J = 数据损失 + λΩ</text>
+<text x="1106.0" y="366" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">参数惩罚不是数据标签</text>
+<text x="1106.0" y="408" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">不能替代正确任务定义</text>
+<rect x="64.0" y="502" width="456.0" height="245" rx="18" fill="#e7effa"/>
+<text x="90.0" y="542" font-size="22" fill="#50657a" font-weight="600" text-anchor="start">数学性质</text>
+<text x="90.0" y="584" font-size="30" fill="#17324d" font-weight="700" text-anchor="start">L1与L2的偏好</text>
+<text x="90.0" y="634" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">L1更易产生稀疏最优解</text>
+<text x="90.0" y="676" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">L2通常连续缩小权重</text>
+<text x="90.0" y="718" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">不是每种训练都恰好归零</text>
+<path d="M528.0 624.5 L563.0 624.5" stroke="#7890a8" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="572.0" y="502" width="456.0" height="245" rx="18" fill="#dff3eb"/>
+<text x="598.0" y="542" font-size="22" fill="#50657a" font-weight="600" text-anchor="start">优化器接口</text>
+<text x="598.0" y="584" font-size="30" fill="#17324d" font-weight="700" text-anchor="start">weight decay</text>
+<text x="598.0" y="634" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">属于权重更新方式</text>
+<text x="598.0" y="676" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">普通SGD下可与L2等价</text>
+<text x="598.0" y="718" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">Adam下需区分</text>
+<path d="M1036.0 624.5 L1071.0 624.5" stroke="#7890a8" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="1080.0" y="502" width="456.0" height="245" rx="18" fill="#fce6e3"/>
+<text x="1106.0" y="542" font-size="22" fill="#50657a" font-weight="600" text-anchor="start">部署验证</text>
+<text x="1106.0" y="584" font-size="30" fill="#17324d" font-weight="700" text-anchor="start">实际压缩收益</text>
+<text x="1106.0" y="634" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">零权重未必改矩阵形状</text>
+<text x="1106.0" y="676" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">剪枝/稀疏执行另有步骤</text>
+<text x="1106.0" y="718" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">延迟与存储应实测</text>
+<text x="64" y="844" font-size="24" fill="#50657a" font-weight="400" text-anchor="start">这里讲目标含义；Adam与AdamW的详细优化推导见优化模块</text>
+</g></svg>

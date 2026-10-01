@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760"><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 Z" fill="#2767b2"/></marker></defs><rect width="1400" height="760" fill="#fbfcfe"/>
+<text x="55" y="65" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="34" fill="#15304a" font-weight="700" text-anchor="start">CNN：保留空间先验 学习任务特征</text>
+<text x="55" y="106" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="start">局部连接 + 权重共享 + 非线性层级</text>
+<rect x="77.5" y="250" width="270" height="205" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="212.5" y="290" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">图像输入</text>
+<text x="212.5" y="330" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">邻近像素有结构</text>
+<text x="212.5" y="361" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">H × W × Cin</text>
+<line x1="352.5" y1="350" x2="395.5" y2="350" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="402.5" y="250" width="270" height="205" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="537.5" y="290" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">共享小核</text>
+<text x="537.5" y="330" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">同一规则扫各位置</text>
+<text x="537.5" y="361" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">少量参数重复使用</text>
+<line x1="677.5" y1="350" x2="720.5" y2="350" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="727.5" y="250" width="270" height="205" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="862.5" y="290" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">多层组合</text>
+<text x="862.5" y="330" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">非线性 + 感受野增长</text>
+<text x="862.5" y="361" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">局部线索变成特征</text>
+<line x1="1002.5" y1="350" x2="1045.5" y2="350" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="1052.5" y="250" width="270" height="205" rx="16" fill="#e7f4ed" stroke="#aabccc" stroke-width="2"/>
+<text x="1187.5" y="290" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">任务输出</text>
+<text x="1187.5" y="330" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">分类 / 深度 / 分割</text>
+<text x="1187.5" y="361" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">损失反向调整各层</text>
+<text x="55" y="726" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="start">卷积骨架不决定监督方式；固定算子是数学入口，视觉层级是另一条真实历史线索。</text>
+</svg>

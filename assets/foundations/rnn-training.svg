@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760"><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 Z" fill="#2767b2"/></marker></defs><rect width="1400" height="760" fill="#fbfcfe"/>
+<text x="55" y="65" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="34" fill="#15304a" font-weight="700" text-anchor="start">RNN训练与推理：同一条递推 两种工作</text>
+<text x="55" y="106" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="start">训练更新共享参数；推理只更新当前状态</text>
+<rect x="150" y="235" width="200" height="130" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="250.0" y="275" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">h0</text>
+<text x="250.0" y="315" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">前向递推</text>
+<line x1="357" y1="295" x2="440" y2="295" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="450" y="235" width="200" height="130" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="550.0" y="275" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">h1</text>
+<text x="550.0" y="315" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">前向递推</text>
+<line x1="657" y1="295" x2="740" y2="295" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="440" y1="440" x2="360" y2="440" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="400.0" y="428.0" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="19" fill="#587086" font-weight="400" text-anchor="middle">梯度向前追溯</text>
+<rect x="750" y="235" width="200" height="130" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="850.0" y="275" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">h2</text>
+<text x="850.0" y="315" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">前向递推</text>
+<line x1="957" y1="295" x2="1040" y2="295" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="740" y1="440" x2="660" y2="440" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="700.0" y="428.0" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="19" fill="#587086" font-weight="400" text-anchor="middle">梯度向前追溯</text>
+<rect x="1050" y="235" width="200" height="130" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="1150.0" y="275" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">h3</text>
+<text x="1150.0" y="315" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">前向递推</text>
+<line x1="1040" y1="440" x2="960" y2="440" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="1000.0" y="428.0" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="19" fill="#587086" font-weight="400" text-anchor="middle">梯度向前追溯</text>
+<polyline points="135,400 1250,400" fill="none" stroke="#aabccc" stroke-width="1" stroke-dasharray="6,5"/>
+<rect x="145" y="535" width="480" height="120" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="385.0" y="575" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">训练 BPTT</text>
+<text x="385.0" y="615" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">展开时间后，汇总各时间的参数梯度</text>
+<rect x="765" y="535" width="490" height="120" rx="16" fill="#e7f4ed" stroke="#aabccc" stroke-width="2"/>
+<text x="1010.0" y="575" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">推理 Streaming</text>
+<text x="1010.0" y="615" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">只保存状态；来一帧，更新一步</text>
+<text x="55" y="726" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="start">截断BPTT节省训练内存，但也截断学习信号；不等于部署时不能继续维护状态。</text>
+</svg>

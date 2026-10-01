@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900"><defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#7890a8"/></marker></defs><rect width="1600" height="900" fill="#fbfcfe"/><g font-family="Noto Sans CJK SC, sans-serif">
+<text x="64" y="80" font-size="42" fill="#17324d" font-weight="700" text-anchor="start">步骤二 L2进入Adam统计，AdamW将衰减分开</text>
+<text x="64" y="132" font-size="25" fill="#50657a" font-weight="400" text-anchor="start">两种写法通常不是同一条更新路径</text>
+<rect x="64.0" y="192" width="456.0" height="245" rx="18" fill="#e7effa"/>
+<text x="90.0" y="232" font-size="22" fill="#50657a" font-weight="600" text-anchor="start">耦合路径</text>
+<text x="90.0" y="274" font-size="30" fill="#17324d" font-weight="700" text-anchor="start">Adam加L2惩罚</text>
+<text x="90.0" y="324" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">数据梯度 g</text>
+<text x="90.0" y="366" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">先计算 g + λθ</text>
+<text x="90.0" y="408" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">再交给Adam统计</text>
+<path d="M528.0 314.5 L563.0 314.5" stroke="#7890a8" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="572.0" y="192" width="456.0" height="245" rx="18" fill="#dff3eb"/>
+<text x="598.0" y="232" font-size="22" fill="#50657a" font-weight="600" text-anchor="start">Adam处理</text>
+<text x="598.0" y="274" font-size="30" fill="#17324d" font-weight="700" text-anchor="start">一阶与二阶统计</text>
+<text x="598.0" y="324" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">惩罚项也进入历史统计</text>
+<text x="598.0" y="366" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">各坐标自适应缩放</text>
+<text x="598.0" y="408" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">改变后续更新轨迹</text>
+<path d="M1036.0 314.5 L1071.0 314.5" stroke="#7890a8" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="1080.0" y="192" width="456.0" height="245" rx="18" fill="#fff1d6"/>
+<text x="1106.0" y="232" font-size="22" fill="#50657a" font-weight="600" text-anchor="start">结果</text>
+<text x="1106.0" y="274" font-size="30" fill="#17324d" font-weight="700" text-anchor="start">参数更新</text>
+<text x="1106.0" y="324" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">自适应变换后的更新</text>
+<text x="1106.0" y="366" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">通常不能直接写成</text>
+<text x="1106.0" y="408" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">统一比例的权重收缩</text>
+<rect x="64.0" y="502" width="456.0" height="245" rx="18" fill="#e7effa"/>
+<text x="90.0" y="542" font-size="22" fill="#50657a" font-weight="600" text-anchor="start">解耦路径</text>
+<text x="90.0" y="584" font-size="30" fill="#17324d" font-weight="700" text-anchor="start">AdamW</text>
+<text x="90.0" y="634" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">数据梯度 g</text>
+<text x="90.0" y="676" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">仅数据梯度进入统计</text>
+<text x="90.0" y="718" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">衰减单独处理</text>
+<path d="M528.0 624.5 L563.0 624.5" stroke="#7890a8" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="572.0" y="502" width="456.0" height="245" rx="18" fill="#dff3eb"/>
+<text x="598.0" y="542" font-size="22" fill="#50657a" font-weight="600" text-anchor="start">组合</text>
+<text x="598.0" y="584" font-size="30" fill="#17324d" font-weight="700" text-anchor="start">两个更新部分</text>
+<text x="598.0" y="634" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">Adam的数据更新</text>
+<text x="598.0" y="676" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">再加独立权重收缩</text>
+<text x="598.0" y="718" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">须与具体实现约定一致</text>
+<path d="M1036.0 624.5 L1071.0 624.5" stroke="#7890a8" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="1080.0" y="502" width="456.0" height="245" rx="18" fill="#fce6e3"/>
+<text x="1106.0" y="542" font-size="22" fill="#50657a" font-weight="600" text-anchor="start">复现信息</text>
+<text x="1106.0" y="584" font-size="30" fill="#17324d" font-weight="700" text-anchor="start">实验要写清楚</text>
+<text x="1106.0" y="634" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">优化器与版本</text>
+<text x="1106.0" y="676" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">λ、学习率、参数分组</text>
+<text x="1106.0" y="718" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">是否又额外加L2</text>
+<text x="64" y="844" font-size="24" fill="#50657a" font-weight="400" text-anchor="start">原论文证明边界是普通SGD等价性；不要无条件扩展到所有动量或自适应算法</text>
+</g></svg>

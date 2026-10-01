@@ -1,0 +1,174 @@
+{
+  "date": "2026-10-01",
+  "module_count": 24,
+  "modules": [
+    {
+      "title": "CNN 从固定滤波器到可学习视觉层级",
+      "path": "11-cnn.md",
+      "axis": "架构",
+      "reading_level": "基础概念讲义",
+      "diagram_count": 3
+    },
+    {
+      "title": "RNN 从历史观测到可学习状态",
+      "path": "12-rnn.md",
+      "axis": "架构",
+      "reading_level": "基础概念讲义",
+      "diagram_count": 3
+    },
+    {
+      "title": "LSTM 怎样选择记住 写入和读出",
+      "path": "13-lstm.md",
+      "axis": "架构",
+      "reading_level": "基础概念讲义",
+      "diagram_count": 3
+    },
+    {
+      "title": "Attention与Transformer 从软对齐到并行交互",
+      "path": "14-attention-transformer.md",
+      "axis": "架构",
+      "reading_level": "基础概念讲义",
+      "diagram_count": 3
+    },
+    {
+      "title": "QKV 为什么有匹配 还需要内容",
+      "path": "15-qkv-deep-dive.md",
+      "axis": "架构",
+      "reading_level": "基础概念讲义",
+      "diagram_count": 4
+    },
+    {
+      "title": "VAE 从潜变量模型到可训练后验推断",
+      "path": "16-vae.md",
+      "axis": "架构",
+      "reading_level": "基础概念讲义",
+      "diagram_count": 3
+    },
+    {
+      "title": "Diffusion 从逐步加噪到条件生成",
+      "path": "17-diffusion.md",
+      "axis": "架构",
+      "reading_level": "基础概念讲义",
+      "diagram_count": 3
+    },
+    {
+      "title": "SSM GNN与MoE 扩展导读",
+      "path": "18-ssm-gnn-moe.md",
+      "axis": "架构",
+      "reading_level": "扩展导读",
+      "diagram_count": 1
+    },
+    {
+      "title": "梯度 反向传播与 SGD",
+      "path": "modules/optimization/gradient-sgd.md",
+      "axis": "优化",
+      "reading_level": "基础概念讲义",
+      "diagram_count": 3
+    },
+    {
+      "title": "动量与逐坐标自适应优化",
+      "path": "modules/optimization/momentum.md",
+      "axis": "优化",
+      "reading_level": "基础概念讲义",
+      "diagram_count": 3
+    },
+    {
+      "title": "Adam 与 AdamW",
+      "path": "modules/optimization/adam.md",
+      "axis": "优化",
+      "reading_level": "基础概念讲义",
+      "diagram_count": 3
+    },
+    {
+      "title": "Muon 与矩阵更新正交化",
+      "path": "modules/optimization/muon.md",
+      "axis": "优化",
+      "reading_level": "基础概念讲义",
+      "diagram_count": 3
+    },
+    {
+      "title": "回归与鲁棒损失 从残差到训练分数",
+      "path": "modules/objectives/01-regression-robustness.md",
+      "axis": "任务与损失",
+      "reading_level": "基础概念讲义",
+      "diagram_count": 3
+    },
+    {
+      "title": "概率分类 从交叉熵到BCE NLL与KL",
+      "path": "modules/objectives/02-classification-probabilities.md",
+      "axis": "任务与损失",
+      "reading_level": "基础概念讲义",
+      "diagram_count": 3
+    },
+    {
+      "title": "自监督与生成目标 从可见信息到学习信号",
+      "path": "modules/objectives/03-pretraining-objectives.md",
+      "axis": "任务与损失",
+      "reading_level": "基础概念讲义",
+      "diagram_count": 3
+    },
+    {
+      "title": "机器人与IMU目标 从坐标约定到可观测性",
+      "path": "modules/objectives/04-robotics-imu.md",
+      "axis": "任务与损失",
+      "reading_level": "基础概念讲义",
+      "diagram_count": 3
+    },
+    {
+      "title": "参数正则化 从L1 L2到权重衰减",
+      "path": "modules/objectives/05-regularization.md",
+      "axis": "任务与损失",
+      "reading_level": "基础概念讲义",
+      "diagram_count": 3
+    },
+    {
+      "title": "样本接口与数据集选择",
+      "path": "modules/data/01-data-contracts.md",
+      "axis": "数据",
+      "reading_level": "基础概念讲义",
+      "diagram_count": 3
+    },
+    {
+      "title": "划分同步与最小数据管道",
+      "path": "modules/data/02-data-pipeline.md",
+      "axis": "数据",
+      "reading_level": "基础概念讲义",
+      "diagram_count": 3
+    },
+    {
+      "title": "图像与文本分类的小规模实践",
+      "path": "modules/data/03-classification-labs.md",
+      "axis": "数据",
+      "reading_level": "基础概念讲义",
+      "diagram_count": 3
+    },
+    {
+      "title": "IMU窗口怎样对应一个位移标签",
+      "path": "modules/data/04-imu-lab.md",
+      "axis": "数据",
+      "reading_level": "基础概念讲义",
+      "diagram_count": 3
+    },
+    {
+      "title": "05a 分布式训练导读",
+      "path": "05a-distributed-training.md",
+      "axis": "进阶",
+      "reading_level": "进阶导读",
+      "diagram_count": 3
+    },
+    {
+      "title": "05b 强化学习导读",
+      "path": "05b-reinforcement-learning.md",
+      "axis": "进阶",
+      "reading_level": "进阶导读",
+      "diagram_count": 2
+    },
+    {
+      "title": "05c 迁移与元学习导读",
+      "path": "05c-transfer-meta-learning.md",
+      "axis": "进阶",
+      "reading_level": "进阶导读",
+      "diagram_count": 2
+    }
+  ]
+}

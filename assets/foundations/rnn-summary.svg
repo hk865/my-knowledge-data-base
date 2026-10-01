@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760"><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 Z" fill="#2767b2"/></marker></defs><rect width="1400" height="760" fill="#fbfcfe"/>
+<text x="55" y="65" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="34" fill="#15304a" font-weight="700" text-anchor="start">RNN：用固定大小状态 接住不断到来的输入</text>
+<text x="55" y="106" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="start">同一更新函数跨时间共享参数，状态随观测而变化</text>
+<rect x="115" y="280" width="225" height="145" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="227.5" y="320" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">h1</text>
+<text x="227.5" y="360" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">可学习历史摘要</text>
+<rect x="142" y="145" width="170" height="90" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="227.0" y="185" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">x1</text>
+<line x1="225" y1="240" x2="225" y2="273" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="142" y="510" width="170" height="90" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="227.0" y="550" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">y1</text>
+<line x1="225" y1="431" x2="225" y2="504" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="345" y1="350" x2="425" y2="350" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="385.0" y="338.0" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="19" fill="#587086" font-weight="400" text-anchor="middle">共享 f</text>
+<rect x="435" y="280" width="225" height="145" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="547.5" y="320" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">h2</text>
+<text x="547.5" y="360" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">可学习历史摘要</text>
+<rect x="462" y="145" width="170" height="90" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="547.0" y="185" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">x2</text>
+<line x1="545" y1="240" x2="545" y2="273" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="462" y="510" width="170" height="90" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="547.0" y="550" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">y2</text>
+<line x1="545" y1="431" x2="545" y2="504" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="665" y1="350" x2="745" y2="350" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="705.0" y="338.0" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="19" fill="#587086" font-weight="400" text-anchor="middle">共享 f</text>
+<rect x="755" y="280" width="225" height="145" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="867.5" y="320" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">h3</text>
+<text x="867.5" y="360" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">可学习历史摘要</text>
+<rect x="782" y="145" width="170" height="90" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="867.0" y="185" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">x3</text>
+<line x1="865" y1="240" x2="865" y2="273" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="782" y="510" width="170" height="90" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="867.0" y="550" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">y3</text>
+<line x1="865" y1="431" x2="865" y2="504" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<line x1="985" y1="350" x2="1065" y2="350" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="1025.0" y="338.0" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="19" fill="#587086" font-weight="400" text-anchor="middle">共享 f</text>
+<rect x="1075" y="280" width="225" height="145" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="1187.5" y="320" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">h4</text>
+<text x="1187.5" y="360" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">可学习历史摘要</text>
+<rect x="1102" y="145" width="170" height="90" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="1187.0" y="185" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">x4</text>
+<line x1="1185" y1="240" x2="1185" y2="273" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="1102" y="510" width="170" height="90" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="1187.0" y="550" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">y4</text>
+<line x1="1185" y1="431" x2="1185" y2="504" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="55" y="726" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="start">h_t = f(h_(t−1), x_t)；像状态方程，不自动具有物理状态、协方差或最优滤波语义。</text>
+</svg>

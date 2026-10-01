@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900"><defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#7890a8"/></marker></defs><rect width="1600" height="900" fill="#fbfcfe"/><g font-family="Noto Sans CJK SC, sans-serif">
+<text x="64" y="80" font-size="42" fill="#17324d" font-weight="700" text-anchor="start">步骤二 有效掩码决定你到底在平均什么</text>
+<text x="64" y="132" font-size="25" fill="#50657a" font-weight="400" text-anchor="start">同一组数，错误分母会悄悄改变训练目标</text>
+<rect x="64.0" y="192" width="456.0" height="245" rx="18" fill="#e7effa"/>
+<text x="90.0" y="232" font-size="22" fill="#50657a" font-weight="600" text-anchor="start">输入</text>
+<text x="90.0" y="274" font-size="30" fill="#17324d" font-weight="700" text-anchor="start">原始残差</text>
+<text x="90.0" y="324" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">位置 A：1</text>
+<text x="90.0" y="366" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">位置 B：99（无效）</text>
+<text x="90.0" y="408" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">位置 C：3</text>
+<path d="M528.0 314.5 L563.0 314.5" stroke="#7890a8" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="572.0" y="192" width="456.0" height="245" rx="18" fill="#dff3eb"/>
+<text x="598.0" y="232" font-size="22" fill="#50657a" font-weight="600" text-anchor="start">逐元素</text>
+<text x="598.0" y="274" font-size="30" fill="#17324d" font-weight="700" text-anchor="start">平方再筛选</text>
+<text x="598.0" y="324" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">有效掩码 m = (1,0,1)</text>
+<text x="598.0" y="366" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">有效平方项：1 与 9</text>
+<text x="598.0" y="408" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">99² 应被排除</text>
+<path d="M1036.0 314.5 L1071.0 314.5" stroke="#7890a8" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="1080.0" y="192" width="456.0" height="245" rx="18" fill="#fff1d6"/>
+<text x="1106.0" y="232" font-size="22" fill="#50657a" font-weight="600" text-anchor="start">聚合</text>
+<text x="1106.0" y="274" font-size="30" fill="#17324d" font-weight="700" text-anchor="start">按有效元素平均</text>
+<text x="1106.0" y="324" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">(1 + 9) / 2 = 5</text>
+<text x="1106.0" y="366" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">不是 /3 得到3.333</text>
+<text x="1106.0" y="408" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">也不是把99计入</text>
+<rect x="64.0" y="502" width="456.0" height="245" rx="18" fill="#e7effa"/>
+<text x="90.0" y="542" font-size="22" fill="#50657a" font-weight="600" text-anchor="start">可选协议 A</text>
+<text x="90.0" y="584" font-size="30" fill="#17324d" font-weight="700" text-anchor="start">先平均每条序列</text>
+<text x="90.0" y="634" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">每条序列权重相同</text>
+<text x="90.0" y="676" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">长短序列各贡献一次</text>
+<text x="90.0" y="718" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">适合等样本权重定义</text>
+<path d="M528.0 624.5 L563.0 624.5" stroke="#7890a8" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="572.0" y="502" width="456.0" height="245" rx="18" fill="#dff3eb"/>
+<text x="598.0" y="542" font-size="22" fill="#50657a" font-weight="600" text-anchor="start">可选协议 B</text>
+<text x="598.0" y="584" font-size="30" fill="#17324d" font-weight="700" text-anchor="start">先累加所有词元</text>
+<text x="598.0" y="634" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">长序列贡献更多元素</text>
+<text x="598.0" y="676" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">再除以有效词元总数</text>
+<text x="598.0" y="718" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">适合等词元权重定义</text>
+<path d="M1036.0 624.5 L1071.0 624.5" stroke="#7890a8" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="1080.0" y="502" width="456.0" height="245" rx="18" fill="#fce6e3"/>
+<text x="1106.0" y="542" font-size="22" fill="#50657a" font-weight="600" text-anchor="start">不能省略</text>
+<text x="1106.0" y="584" font-size="30" fill="#17324d" font-weight="700" text-anchor="start">必须写进实验记录</text>
+<text x="1106.0" y="634" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">选择取决于任务</text>
+<text x="1106.0" y="676" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">不是哪一个永远正确</text>
+<text x="1106.0" y="718" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">空掩码需要显式处理</text>
+<text x="64" y="844" font-size="24" fill="#50657a" font-weight="400" text-anchor="start">所有数值为教学手算；统计单位应与数据集和评价协议一致</text>
+</g></svg>

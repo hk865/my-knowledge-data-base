@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700"><rect width="1200" height="700" fill="white"/>
+<text x="44" y="68.75999999999999" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="34" font-weight="700" fill="#182b3b">同样的图像可以定义不同任务</text>
+<text x="44" y="109.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#526578">变化的重点是标签、输出与评价，而不仅是网络名称</text>
+<rect x="44" y="208" width="350" height="235" rx="12" fill="#e8f1fc" stroke="#8b9bad" stroke-width="2"/>
+<text x="62" y="247.36" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="24" font-weight="700" fill="#182b3b">图像分类</text>
+<text x="62" y="284.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">标签：一个类别整数</text>
+<text x="62" y="316.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">输出：C 个 logits</text>
+<text x="62" y="348.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">CE → accuracy</text>
+<rect x="424" y="208" width="350" height="235" rx="12" fill="#e4f4f0" stroke="#8b9bad" stroke-width="2"/>
+<text x="442" y="247.36" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="24" font-weight="700" fill="#182b3b">目标检测</text>
+<text x="442" y="284.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">标签：N 个框与类别</text>
+<text x="442" y="316.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">输出：位置 + 类别</text>
+<text x="442" y="348.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">框回归 + 分类 → AP</text>
+<rect x="804" y="208" width="350" height="235" rx="12" fill="#fff4d7" stroke="#8b9bad" stroke-width="2"/>
+<text x="822" y="247.36" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="24" font-weight="700" fill="#182b3b">语义分割</text>
+<text x="822" y="284.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">标签：每像素类别</text>
+<text x="822" y="316.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">输出：H×W×C logits</text>
+<text x="822" y="348.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">像素 CE → mIoU</text>
+<line x1="44" y1="637" x2="1156" y2="637" stroke="#d8e1e9" stroke-width="2"/>
+<text x="44" y="674.52" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="18" font-weight="400" fill="#526578">三列是三个任务选择，并非必须顺序执行的模型层</text>
+</svg>

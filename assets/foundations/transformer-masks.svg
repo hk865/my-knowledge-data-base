@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760"><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 Z" fill="#2767b2"/></marker></defs><rect width="1400" height="760" fill="#fbfcfe"/>
+<text x="55" y="65" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="34" fill="#15304a" font-weight="700" text-anchor="start">Mask决定可见性：双向编码与因果预测</text>
+<text x="55" y="106" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="start">蓝色允许访问；浅灰色禁止访问。行是query位置，列是可读取的源位置。</text>
+<text x="360" y="185" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="28" fill="#15304a" font-weight="700" text-anchor="middle">双向可见</text>
+<rect x="230" y="240" width="62" height="62" rx="4" fill="#2767b2" stroke="#aabccc" stroke-width="2"/>
+<text x="261.0" y="280.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="296" y="240" width="62" height="62" rx="4" fill="#2767b2" stroke="#aabccc" stroke-width="2"/>
+<text x="327.0" y="280.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="362" y="240" width="62" height="62" rx="4" fill="#2767b2" stroke="#aabccc" stroke-width="2"/>
+<text x="393.0" y="280.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="428" y="240" width="62" height="62" rx="4" fill="#2767b2" stroke="#aabccc" stroke-width="2"/>
+<text x="459.0" y="280.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="494" y="240" width="62" height="62" rx="4" fill="#2767b2" stroke="#aabccc" stroke-width="2"/>
+<text x="525.0" y="280.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="230" y="306" width="62" height="62" rx="4" fill="#2767b2" stroke="#aabccc" stroke-width="2"/>
+<text x="261.0" y="346.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="296" y="306" width="62" height="62" rx="4" fill="#2767b2" stroke="#aabccc" stroke-width="2"/>
+<text x="327.0" y="346.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="362" y="306" width="62" height="62" rx="4" fill="#2767b2" stroke="#aabccc" stroke-width="2"/>
+<text x="393.0" y="346.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="428" y="306" width="62" height="62" rx="4" fill="#2767b2" stroke="#aabccc" stroke-width="2"/>
+<text x="459.0" y="346.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="494" y="306" width="62" height="62" rx="4" fill="#2767b2" stroke="#aabccc" stroke-width="2"/>
+<text x="525.0" y="346.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="230" y="372" width="62" height="62" rx="4" fill="#2767b2" stroke="#aabccc" stroke-width="2"/>
+<text x="261.0" y="412.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="296" y="372" width="62" height="62" rx="4" fill="#2767b2" stroke="#aabccc" stroke-width="2"/>
+<text x="327.0" y="412.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="362" y="372" width="62" height="62" rx="4" fill="#2767b2" stroke="#aabccc" stroke-width="2"/>
+<text x="393.0" y="412.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="428" y="372" width="62" height="62" rx="4" fill="#2767b2" stroke="#aabccc" stroke-width="2"/>
+<text x="459.0" y="412.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="494" y="372" width="62" height="62" rx="4" fill="#2767b2" stroke="#aabccc" stroke-width="2"/>
+<text x="525.0" y="412.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="230" y="438" width="62" height="62" rx="4" fill="#2767b2" stroke="#aabccc" stroke-width="2"/>
+<text x="261.0" y="478.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="296" y="438" width="62" height="62" rx="4" fill="#2767b2" stroke="#aabccc" stroke-width="2"/>
+<text x="327.0" y="478.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="362" y="438" width="62" height="62" rx="4" fill="#2767b2" stroke="#aabccc" stroke-width="2"/>
+<text x="393.0" y="478.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="428" y="438" width="62" height="62" rx="4" fill="#2767b2" stroke="#aabccc" stroke-width="2"/>
+<text x="459.0" y="478.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="494" y="438" width="62" height="62" rx="4" fill="#2767b2" stroke="#aabccc" stroke-width="2"/>
+<text x="525.0" y="478.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="230" y="504" width="62" height="62" rx="4" fill="#2767b2" stroke="#aabccc" stroke-width="2"/>
+<text x="261.0" y="544.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="296" y="504" width="62" height="62" rx="4" fill="#2767b2" stroke="#aabccc" stroke-width="2"/>
+<text x="327.0" y="544.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="362" y="504" width="62" height="62" rx="4" fill="#2767b2" stroke="#aabccc" stroke-width="2"/>
+<text x="393.0" y="544.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="428" y="504" width="62" height="62" rx="4" fill="#2767b2" stroke="#aabccc" stroke-width="2"/>
+<text x="459.0" y="544.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="494" y="504" width="62" height="62" rx="4" fill="#2767b2" stroke="#aabccc" stroke-width="2"/>
+<text x="525.0" y="544.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<text x="259" y="223" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="19" fill="#15304a" font-weight="400" text-anchor="middle">1</text>
+<text x="325" y="223" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="19" fill="#15304a" font-weight="400" text-anchor="middle">2</text>
+<text x="391" y="223" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="19" fill="#15304a" font-weight="400" text-anchor="middle">3</text>
+<text x="457" y="223" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="19" fill="#15304a" font-weight="400" text-anchor="middle">4</text>
+<text x="523" y="223" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="19" fill="#15304a" font-weight="400" text-anchor="middle">5</text>
+<text x="210" y="281" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="19" fill="#15304a" font-weight="400" text-anchor="end">1</text>
+<text x="210" y="347" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="19" fill="#15304a" font-weight="400" text-anchor="end">2</text>
+<text x="210" y="413" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="19" fill="#15304a" font-weight="400" text-anchor="end">3</text>
+<text x="210" y="479" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="19" fill="#15304a" font-weight="400" text-anchor="end">4</text>
+<text x="210" y="545" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="19" fill="#15304a" font-weight="400" text-anchor="end">5</text>
+<text x="385" y="630" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle">位置1 … 位置5</text>
+<text x="1010" y="185" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="28" fill="#15304a" font-weight="700" text-anchor="middle">因果可见</text>
+<rect x="880" y="240" width="62" height="62" rx="4" fill="#2767b2" stroke="#aabccc" stroke-width="2"/>
+<text x="911.0" y="280.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="946" y="240" width="62" height="62" rx="4" fill="#e5ebf0" stroke="#aabccc" stroke-width="2"/>
+<text x="977.0" y="280.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="1012" y="240" width="62" height="62" rx="4" fill="#e5ebf0" stroke="#aabccc" stroke-width="2"/>
+<text x="1043.0" y="280.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="1078" y="240" width="62" height="62" rx="4" fill="#e5ebf0" stroke="#aabccc" stroke-width="2"/>
+<text x="1109.0" y="280.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="1144" y="240" width="62" height="62" rx="4" fill="#e5ebf0" stroke="#aabccc" stroke-width="2"/>
+<text x="1175.0" y="280.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="880" y="306" width="62" height="62" rx="4" fill="#2767b2" stroke="#aabccc" stroke-width="2"/>
+<text x="911.0" y="346.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="946" y="306" width="62" height="62" rx="4" fill="#2767b2" stroke="#aabccc" stroke-width="2"/>
+<text x="977.0" y="346.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="1012" y="306" width="62" height="62" rx="4" fill="#e5ebf0" stroke="#aabccc" stroke-width="2"/>
+<text x="1043.0" y="346.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="1078" y="306" width="62" height="62" rx="4" fill="#e5ebf0" stroke="#aabccc" stroke-width="2"/>
+<text x="1109.0" y="346.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="1144" y="306" width="62" height="62" rx="4" fill="#e5ebf0" stroke="#aabccc" stroke-width="2"/>
+<text x="1175.0" y="346.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="880" y="372" width="62" height="62" rx="4" fill="#2767b2" stroke="#aabccc" stroke-width="2"/>
+<text x="911.0" y="412.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="946" y="372" width="62" height="62" rx="4" fill="#2767b2" stroke="#aabccc" stroke-width="2"/>
+<text x="977.0" y="412.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="1012" y="372" width="62" height="62" rx="4" fill="#2767b2" stroke="#aabccc" stroke-width="2"/>
+<text x="1043.0" y="412.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="1078" y="372" width="62" height="62" rx="4" fill="#e5ebf0" stroke="#aabccc" stroke-width="2"/>
+<text x="1109.0" y="412.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="1144" y="372" width="62" height="62" rx="4" fill="#e5ebf0" stroke="#aabccc" stroke-width="2"/>
+<text x="1175.0" y="412.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="880" y="438" width="62" height="62" rx="4" fill="#2767b2" stroke="#aabccc" stroke-width="2"/>
+<text x="911.0" y="478.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="946" y="438" width="62" height="62" rx="4" fill="#2767b2" stroke="#aabccc" stroke-width="2"/>
+<text x="977.0" y="478.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="1012" y="438" width="62" height="62" rx="4" fill="#2767b2" stroke="#aabccc" stroke-width="2"/>
+<text x="1043.0" y="478.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="1078" y="438" width="62" height="62" rx="4" fill="#2767b2" stroke="#aabccc" stroke-width="2"/>
+<text x="1109.0" y="478.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="1144" y="438" width="62" height="62" rx="4" fill="#e5ebf0" stroke="#aabccc" stroke-width="2"/>
+<text x="1175.0" y="478.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="880" y="504" width="62" height="62" rx="4" fill="#2767b2" stroke="#aabccc" stroke-width="2"/>
+<text x="911.0" y="544.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="946" y="504" width="62" height="62" rx="4" fill="#2767b2" stroke="#aabccc" stroke-width="2"/>
+<text x="977.0" y="544.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="1012" y="504" width="62" height="62" rx="4" fill="#2767b2" stroke="#aabccc" stroke-width="2"/>
+<text x="1043.0" y="544.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="1078" y="504" width="62" height="62" rx="4" fill="#2767b2" stroke="#aabccc" stroke-width="2"/>
+<text x="1109.0" y="544.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="1144" y="504" width="62" height="62" rx="4" fill="#2767b2" stroke="#aabccc" stroke-width="2"/>
+<text x="1175.0" y="544.92" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<text x="909" y="223" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="19" fill="#15304a" font-weight="400" text-anchor="middle">1</text>
+<text x="975" y="223" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="19" fill="#15304a" font-weight="400" text-anchor="middle">2</text>
+<text x="1041" y="223" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="19" fill="#15304a" font-weight="400" text-anchor="middle">3</text>
+<text x="1107" y="223" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="19" fill="#15304a" font-weight="400" text-anchor="middle">4</text>
+<text x="1173" y="223" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="19" fill="#15304a" font-weight="400" text-anchor="middle">5</text>
+<text x="860" y="281" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="19" fill="#15304a" font-weight="400" text-anchor="end">1</text>
+<text x="860" y="347" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="19" fill="#15304a" font-weight="400" text-anchor="end">2</text>
+<text x="860" y="413" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="19" fill="#15304a" font-weight="400" text-anchor="end">3</text>
+<text x="860" y="479" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="19" fill="#15304a" font-weight="400" text-anchor="end">4</text>
+<text x="860" y="545" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="19" fill="#15304a" font-weight="400" text-anchor="end">5</text>
+<text x="1035" y="630" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle">位置1 … 位置5</text>
+<text x="55" y="726" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="start">双向表示可利用完整已知上下文；因果mask避免偷看未来。名字“encoder/decoder”不是能力保证。</text>
+</svg>

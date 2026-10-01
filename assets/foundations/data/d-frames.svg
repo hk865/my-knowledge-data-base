@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700"><rect width="1200" height="700" fill="white"/>
+<text x="44" y="68.75999999999999" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="34" font-weight="700" fill="#182b3b">世界系位移转成起点机体系标签</text>
+<text x="44" y="109.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#526578">标签定义与推理输入是两件事</text>
+<rect x="44" y="160" width="460" height="185" rx="12" fill="#e8f1fc" stroke="#8b9bad" stroke-width="2"/>
+<text x="62" y="199.36" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="24" font-weight="700" fill="#182b3b">先在世界系作差</text>
+<text x="62" y="236.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">Δp_W = p_WB(t1) − p_WB(t0)</text>
+<text x="62" y="268.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">单位 m；两个位置同一原点约定</text>
+<text x="62" y="300.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">R_WB 把 B 中向量转到 W</text>
+<rect x="676" y="160" width="478" height="185" rx="12" fill="#e4f4f0" stroke="#8b9bad" stroke-width="2"/>
+<text x="694" y="199.36" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="24" font-weight="700" fill="#182b3b">再用起点姿态变换</text>
+<text x="694" y="236.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">Δp_B0 = R_WB(t0)^T Δp_W</text>
+<text x="694" y="268.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">标签只描述这一个短窗</text>
+<text x="694" y="300.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">不声称是全局轨迹</text>
+<line x1="510" y1="252" x2="670" y2="252" stroke="#8b9bad" stroke-width="3"/>
+<polygon points="670,252 658.5914266954252,258.2325320018546 658.5914266954252,245.76746799814535" fill="#8b9bad"/>
+<rect x="44" y="414" width="1110" height="162" rx="12" fill="#fff4d7" stroke="#8b9bad" stroke-width="2"/>
+<text x="62" y="453.36" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="24" font-weight="700" fill="#182b3b">扩展成轨迹时新增的条件</text>
+<text x="62" y="490.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">需要推理时可用的因果姿态与明确的积分步长</text>
+<text x="62" y="522.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">0.1 秒步长预测 1 秒位移，不能将所有重叠位移直接相加</text>
+<text x="62" y="554.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">用真值姿态转回世界系，应标为 oracle 诊断</text>
+<line x1="44" y1="637" x2="1156" y2="637" stroke="#d8e1e9" stroke-width="2"/>
+<text x="44" y="674.52" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="18" font-weight="400" fill="#526578">同一 IMU 读数可对应不同初速度；短窗回归学到的是数据分布中的先验</text>
+</svg>

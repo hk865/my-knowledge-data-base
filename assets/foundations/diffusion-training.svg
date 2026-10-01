@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760"><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 Z" fill="#2767b2"/></marker></defs><rect width="1400" height="760" fill="#fbfcfe"/>
+<text x="55" y="65" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="34" fill="#15304a" font-weight="700" text-anchor="start">扩散训练：抽一个t；扩散采样：反复调用网络</text>
+<text x="55" y="106" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="start">闭式加噪允许训练直接访问任意噪声级别</text>
+<rect x="70" y="215" width="250" height="145" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="195.0" y="255" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">数据 x₀</text>
+<text x="195.0" y="295" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">采样 t 与噪声 ε</text>
+<line x1="325" y1="290" x2="400" y2="290" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="410" y="215" width="250" height="145" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="535.0" y="255" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">构造 x_t</text>
+<text x="535.0" y="295" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">用闭式加噪公式</text>
+<line x1="665" y1="290" x2="740" y2="290" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="750" y="215" width="250" height="145" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="875.0" y="255" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">噪声预测</text>
+<text x="875.0" y="295" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">εθ(x_t,t,条件)</text>
+<line x1="1005" y1="290" x2="1080" y2="290" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="1090" y="215" width="250" height="145" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="1215.0" y="255" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">回归目标</text>
+<text x="1215.0" y="295" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">与已知 ε 比较</text>
+<text x="70" y="455" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="26" fill="#15304a" font-weight="700" text-anchor="start">生成时没有干净答案：从噪声开始逐步修正</text>
+<rect x="140" y="510" width="190" height="100" rx="16" fill="#e7f4ed" stroke="#aabccc" stroke-width="2"/>
+<text x="235.0" y="550" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">xT</text>
+<line x1="336" y1="560" x2="440" y2="560" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="388.0" y="548.0" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="19" fill="#587086" font-weight="400" text-anchor="middle">去噪器</text>
+<rect x="455" y="510" width="190" height="100" rx="16" fill="#e7f4ed" stroke="#aabccc" stroke-width="2"/>
+<text x="550.0" y="550" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">x(T−1)</text>
+<line x1="651" y1="560" x2="755" y2="560" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="703.0" y="548.0" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="19" fill="#587086" font-weight="400" text-anchor="middle">去噪器</text>
+<rect x="770" y="510" width="190" height="100" rx="16" fill="#e7f4ed" stroke="#aabccc" stroke-width="2"/>
+<text x="865.0" y="550" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">…</text>
+<line x1="966" y1="560" x2="1070" y2="560" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="1018.0" y="548.0" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="19" fill="#587086" font-weight="400" text-anchor="middle">去噪器</text>
+<rect x="1085" y="510" width="190" height="100" rx="16" fill="#e7f4ed" stroke="#aabccc" stroke-width="2"/>
+<text x="1180.0" y="550" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">x₀</text>
+<text x="55" y="726" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="start">一次训练更新只采一个噪声级别，不代表生成时只需要调用一次网络。</text>
+</svg>

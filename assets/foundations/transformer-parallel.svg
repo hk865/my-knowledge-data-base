@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820"><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 Z" fill="#2767b2"/></marker></defs><rect width="1400" height="820" fill="#fbfcfe"/>
+<text x="55" y="65" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="34" fill="#15304a" font-weight="700" text-anchor="start">训练能并行 不等于生成没有先后依赖</text>
+<text x="55" y="106" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="start">区别在于下一位置的输入是否已经知道</text>
+<text x="70" y="195" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="27" fill="#15304a" font-weight="700" text-anchor="start">训练：真值序列已知，各位置用mask并行算损失</text>
+<rect x="105" y="235" width="240" height="100" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="225.0" y="275" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">机器</text>
+<line x1="225" y1="340" x2="225" y2="397" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="105" y="405" width="240" height="105" rx="16" fill="#e7f4ed" stroke="#aabccc" stroke-width="2"/>
+<text x="225.0" y="445" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">预测“人”</text>
+<rect x="425" y="235" width="240" height="100" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="545.0" y="275" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">人</text>
+<line x1="545" y1="340" x2="545" y2="397" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="425" y="405" width="240" height="105" rx="16" fill="#e7f4ed" stroke="#aabccc" stroke-width="2"/>
+<text x="545.0" y="445" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">预测“看到”</text>
+<rect x="745" y="235" width="240" height="100" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="865.0" y="275" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">看到</text>
+<line x1="865" y1="340" x2="865" y2="397" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="745" y="405" width="240" height="105" rx="16" fill="#e7f4ed" stroke="#aabccc" stroke-width="2"/>
+<text x="865.0" y="445" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">预测“台阶”</text>
+<rect x="1065" y="235" width="240" height="100" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="1185.0" y="275" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">台阶</text>
+<line x1="1185" y1="340" x2="1185" y2="397" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="1065" y="405" width="240" height="105" rx="16" fill="#e7f4ed" stroke="#aabccc" stroke-width="2"/>
+<text x="1185.0" y="445" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">预测下一词</text>
+<text x="70" y="575" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="27" fill="#15304a" font-weight="700" text-anchor="start">生成：上一步产出的token，才成为下一步输入</text>
+<rect x="105" y="610" width="240" height="90" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="225.0" y="650" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">已知前缀</text>
+<line x1="350" y1="655" x2="415" y2="655" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="425" y="610" width="240" height="90" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="545.0" y="650" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">采样 token 1</text>
+<line x1="670" y1="655" x2="735" y2="655" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="745" y="610" width="240" height="90" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="865.0" y="650" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">采样 token 2</text>
+<line x1="990" y1="655" x2="1055" y2="655" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="1065" y="610" width="240" height="90" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="1185.0" y="650" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">采样 token 3</text>
+<text x="55" y="786" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="start">KV cache复用历史投影，减少每步成本；它不提前知道尚未生成的token。</text>
+</svg>

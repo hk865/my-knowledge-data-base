@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700"><rect width="1200" height="700" fill="white"/>
+<text x="44" y="68.75999999999999" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="34" font-weight="700" fill="#182b3b">200 个区间需要 201 个边界时刻</text>
+<text x="44" y="109.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#526578">固定 200Hz 教学网格；标签跨越 1.000 秒</text>
+<line x1="95" y1="290" x2="1105" y2="290" stroke="#8b9bad" stroke-width="3"/>
+<line x1="95" y1="270" x2="95" y2="310" stroke="#8b9bad" stroke-width="3"/>
+<text x="68" y="350.5" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="25" font-weight="700" fill="#182b3b">t0</text>
+<line x1="250" y1="270" x2="250" y2="310" stroke="#8b9bad" stroke-width="3"/>
+<text x="223" y="350.5" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="25" font-weight="700" fill="#182b3b">t1</text>
+<line x1="405" y1="270" x2="405" y2="310" stroke="#8b9bad" stroke-width="3"/>
+<text x="378" y="350.5" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="25" font-weight="700" fill="#182b3b">t2</text>
+<line x1="795" y1="270" x2="795" y2="310" stroke="#8b9bad" stroke-width="3"/>
+<text x="768" y="350.5" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="25" font-weight="700" fill="#182b3b">t198</text>
+<line x1="950" y1="270" x2="950" y2="310" stroke="#8b9bad" stroke-width="3"/>
+<text x="923" y="350.5" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="25" font-weight="700" fill="#182b3b">t199</text>
+<line x1="1105" y1="270" x2="1105" y2="310" stroke="#8b9bad" stroke-width="3"/>
+<text x="1078" y="350.5" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="25" font-weight="700" fill="#182b3b">t200</text>
+<text x="558" y="310.6" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="40" font-weight="700" fill="#182b3b">…</text>
+<rect x="68" y="184" width="80" height="50" rx="12" fill="#e8f1fc" stroke="#8b9bad" stroke-width="2"/>
+<text x="86" y="212.38" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="17" font-weight="400" fill="#182b3b">IMU</text>
+<rect x="223" y="184" width="80" height="50" rx="12" fill="#e8f1fc" stroke="#8b9bad" stroke-width="2"/>
+<text x="241" y="212.38" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="17" font-weight="400" fill="#182b3b">IMU</text>
+<rect x="378" y="184" width="80" height="50" rx="12" fill="#e8f1fc" stroke="#8b9bad" stroke-width="2"/>
+<text x="396" y="212.38" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="17" font-weight="400" fill="#182b3b">IMU</text>
+<rect x="768" y="184" width="80" height="50" rx="12" fill="#e8f1fc" stroke="#8b9bad" stroke-width="2"/>
+<text x="786" y="212.38" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="17" font-weight="400" fill="#182b3b">IMU</text>
+<rect x="923" y="184" width="80" height="50" rx="12" fill="#e8f1fc" stroke="#8b9bad" stroke-width="2"/>
+<text x="941" y="212.38" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="17" font-weight="400" fill="#182b3b">IMU</text>
+<line x1="95" y1="392" x2="1105" y2="392" stroke="#328879" stroke-width="4"/>
+<text x="319" y="444.5" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="25" font-weight="700" fill="#182b3b">y 使用 t0 与 t200 的参考状态</text>
+<text x="44" y="539.36" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="24" font-weight="400" fill="#182b3b">输入：200 条左端点读数；最后一条在 t199</text>
+<text x="44" y="583.08" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="22" font-weight="400" fill="#182b3b">200 个采样点本身的首尾跨度 = 199 / 200 秒</text>
+<line x1="44" y1="637" x2="1156" y2="637" stroke="#d8e1e9" stroke-width="2"/>
+<text x="44" y="674.52" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="18" font-weight="400" fill="#526578">示意图只画部分时刻；对齐和插值限定在可靠参考数据范围内</text>
+</svg>

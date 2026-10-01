@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760"><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 Z" fill="#2767b2"/></marker></defs><rect width="1400" height="760" fill="#fbfcfe"/>
+<text x="55" y="65" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="34" fill="#15304a" font-weight="700" text-anchor="start">Transformer：跨位置交互 与逐位置计算交替</text>
+<text x="55" y="106" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="start">位置、mask、训练目标与主干结构分别设计</text>
+<rect x="77.5" y="250" width="270" height="205" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="212.5" y="290" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">输入表示</text>
+<text x="212.5" y="330" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">token / patch / 传感器</text>
+<text x="212.5" y="361" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">加入位置或顺序机制</text>
+<line x1="352.5" y1="350" x2="395.5" y2="350" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="402.5" y="250" width="270" height="205" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="537.5" y="290" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">多头 Attention</text>
+<text x="537.5" y="330" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">跨位置读取与混合</text>
+<text x="537.5" y="361" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">残差保存原表示</text>
+<line x1="677.5" y1="350" x2="720.5" y2="350" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="727.5" y="250" width="270" height="205" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="862.5" y="290" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">逐位置 FFN</text>
+<text x="862.5" y="330" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">非线性特征变换</text>
+<text x="862.5" y="361" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">归一化与残差协作</text>
+<line x1="1002.5" y1="350" x2="1045.5" y2="350" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="1052.5" y="250" width="270" height="205" rx="16" fill="#e7f4ed" stroke="#aabccc" stroke-width="2"/>
+<text x="1187.5" y="290" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">堆叠与任务头</text>
+<text x="1187.5" y="330" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">分类 / 条件生成 / 去噪</text>
+<text x="1187.5" y="361" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">由训练目标决定用途</text>
+<text x="55" y="726" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="start">同样的Transformer骨架，可以服务自回归预测、双向编码或diffusion去噪。</text>
+</svg>

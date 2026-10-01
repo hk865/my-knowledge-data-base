@@ -1,0 +1,192 @@
+{
+  "checked_at": "2026-10-01",
+  "method": "公开官网、发布者仓库/数据卡、作者论文；不接受第三方转载作为许可证结论",
+  "sources": [
+    {
+      "id": "S01",
+      "title": "CIFAR official",
+      "url": "https://www.cs.toronto.edu/~kriz/cifar.html",
+      "checked_fields_or_reading_scope": "类别、图像尺寸、官方划分、下载；独立数据许可未确认"
+    },
+    {
+      "id": "S02",
+      "title": "ImageNet official access",
+      "url": "https://www.image-net.org/download.php",
+      "checked_fields_or_reading_scope": "ILSVRC2012类别/规模、获取方式、访问条款"
+    },
+    {
+      "id": "S03",
+      "title": "COCO official format",
+      "url": "https://github.com/cocodataset/cocodataset.github.io/blob/master/dataset/format-data.htm",
+      "checked_fields_or_reading_scope": "标注字段、bbox xywh、mask及关键点格式"
+    },
+    {
+      "id": "S04",
+      "title": "COCO official terms",
+      "url": "https://github.com/cocodataset/cocodataset.github.io/blob/master/dataset/termsofuse.htm",
+      "checked_fields_or_reading_scope": "标注、图像、代码权利分开"
+    },
+    {
+      "id": "S05",
+      "title": "IMDb official",
+      "url": "https://ai.stanford.edu/~amaas/data/sentiment/",
+      "checked_fields_or_reading_scope": "标签、划分、有标签/无标签部分；独立数据许可未确认"
+    },
+    {
+      "id": "S06",
+      "title": "WikiText publisher card",
+      "url": "https://huggingface.co/datasets/Salesforce/wikitext",
+      "checked_fields_or_reading_scope": "raw版本、任务、划分；许可元数据与正文冲突"
+    },
+    {
+      "id": "S07",
+      "title": "SQuAD official",
+      "url": "https://rajpurkar.github.io/SQuAD-explorer/",
+      "checked_fields_or_reading_scope": "任务、训练/开发集、隐藏测试、许可"
+    },
+    {
+      "id": "S08",
+      "title": "EuRoC official",
+      "url": "https://projects.asl.ethz.ch/datasets/euroc-mav/",
+      "checked_fields_or_reading_scope": "模态、速率、同步局限、迁移入口"
+    },
+    {
+      "id": "S09",
+      "title": "EuRoC ETH archive",
+      "url": "https://www.research-collection.ethz.ch/items/bcaf173e-5dac-484b-bc37-faf97a594f1f",
+      "checked_fields_or_reading_scope": "归档下载分组/大小、非商业许可标识；直读不稳定，官方搜索索引可核对"
+    },
+    {
+      "id": "S10",
+      "title": "TUM VI official",
+      "url": "https://cvg.cit.tum.de/data/datasets/visual-inertial-dataset",
+      "checked_fields_or_reading_scope": "速率、位深、GT覆盖、raw/calibrated、单位、许可"
+    },
+    {
+      "id": "S11",
+      "title": "KITTI odometry official",
+      "url": "https://www.cvlibs.net/datasets/kitti/eval_odometry.php",
+      "checked_fields_or_reading_scope": "任务与评价入口"
+    },
+    {
+      "id": "S12",
+      "title": "KITTI raw official",
+      "url": "https://www.cvlibs.net/datasets/kitti/raw_data.php",
+      "checked_fields_or_reading_scope": "raw多传感器与OXTS获取入口"
+    },
+    {
+      "id": "S13",
+      "title": "KITTI official terms",
+      "url": "https://www.cvlibs.net/datasets/kitti/index.php",
+      "checked_fields_or_reading_scope": "CC BY-NC-SA3.0"
+    },
+    {
+      "id": "S14",
+      "title": "RoNIN official",
+      "url": "https://ronin.cs.sfu.ca/",
+      "checked_fields_or_reading_scope": "两设备采集与人体标签、研究用途、评价"
+    },
+    {
+      "id": "S15",
+      "title": "RoNIN official README",
+      "url": "https://ronin.cs.sfu.ca/README.txt",
+      "checked_fields_or_reading_scope": "327公开序列、HDF5、200Hz、ns/秒、ekf_ori不可test"
+    },
+    {
+      "id": "S16",
+      "title": "OxIOD official",
+      "url": "https://deepio.cs.ox.ac.uk/",
+      "checked_fields_or_reading_scope": "作者入口/下载，直接访问失败但官方搜索索引可核对"
+    },
+    {
+      "id": "S17",
+      "title": "AMASS official",
+      "url": "https://amass.is.tue.mpg.de/",
+      "checked_fields_or_reading_scope": "人体运动参数而非原始IMU、注册"
+    },
+    {
+      "id": "S18",
+      "title": "AMASS official license",
+      "url": "https://amass.is.tue.mpg.de/license.html",
+      "checked_fields_or_reading_scope": "用途与再分发条款；搜索索引可读"
+    },
+    {
+      "id": "S19",
+      "title": "AMASS author code",
+      "url": "https://github.com/nghorbani/amass",
+      "checked_fields_or_reading_scope": "数据准备与模型使用入口"
+    },
+    {
+      "id": "S20",
+      "title": "Open X official repo",
+      "url": "https://github.com/google-deepmind/open_x_embodiment",
+      "checked_fields_or_reading_scope": "RLDS格式、各数据列表、模型动作语义、许可"
+    },
+    {
+      "id": "S21",
+      "title": "Open X official project",
+      "url": "https://robotics-transformer-x.github.io/",
+      "checked_fields_or_reading_scope": "跨机器人数据集与模型的区别"
+    },
+    {
+      "id": "S22",
+      "title": "robomimic official schema",
+      "url": "https://robomimic.github.io/docs/datasets/overview.html",
+      "checked_fields_or_reading_scope": "HDF5 demo/obs/action/mask、动作范围、图像布局"
+    },
+    {
+      "id": "S23",
+      "title": "robomimic official release",
+      "url": "https://robomimic.github.io/docs/datasets/robomimic_v0.1.html",
+      "checked_fields_or_reading_scope": "low_dim获取、dry run、PH/MH、环境版本差异"
+    },
+    {
+      "id": "S24",
+      "title": "robomimic official linked dataset repo",
+      "url": "https://huggingface.co/datasets/robomimic/robomimic_datasets/tree/main/v1.5",
+      "checked_fields_or_reading_scope": "数据仓库MIT标记；不等于框架所有外部数据统一许可"
+    },
+    {
+      "id": "S25",
+      "title": "D4RL maintainer",
+      "url": "https://github.com/Farama-Foundation/D4RL",
+      "checked_fields_or_reading_scope": "Minari迁移、transition字段、评价、默认数据许可"
+    },
+    {
+      "id": "P01",
+      "title": "Datasheets for Datasets",
+      "url": "https://arxiv.org/pdf/1803.09010",
+      "checked_fields_or_reading_scope": "精读范围：第3节问题框架，重点3.1/3.2/3.4；不是全文逐式复现"
+    },
+    {
+      "id": "P02",
+      "title": "Learning Word Vectors for Sentiment Analysis",
+      "url": "https://aclanthology.org/P11-1015.pdf",
+      "checked_fields_or_reading_scope": "精读范围：4.3.2数据设计；模型其他部分仅定位，不声称复现"
+    },
+    {
+      "id": "P03",
+      "title": "The EuRoC MAV Datasets author manuscript",
+      "url": "https://www.researchgate.net/profile/Michael_Burri2/publication/291954561_The_EuRoC_micro_aerial_vehicle_datasets/links/56af0c6008ae19a38516937c.pdf",
+      "checked_fields_or_reading_scope": "精读范围：4节接口、5节同步与参考状态、6节已知问题；作者上传稿，正式DOI 10.1177/0278364915620033"
+    },
+    {
+      "id": "P04",
+      "title": "RoNIN author paper",
+      "url": "https://arxiv.org/pdf/1905.12853",
+      "checked_fields_or_reading_scope": "精读范围：5.2姿态处理、5.3对齐、6.1评价；用于分析GT/输入边界"
+    },
+    {
+      "id": "P05",
+      "title": "OxIOD author paper",
+      "url": "https://arxiv.org/abs/1809.07491",
+      "checked_fields_or_reading_scope": "已核对摘要采集构成；未核对下载数据具体CSV字段"
+    },
+    {
+      "id": "P06",
+      "title": "Learning Multiple Layers of Features from Tiny Images",
+      "url": "https://www.cs.toronto.edu/~kriz/learning-features-2009-TR.pdf",
+      "checked_fields_or_reading_scope": "精读范围：第3章3.1标注子集；不声称全文RBM算法精读"
+    }
+  ]
+}

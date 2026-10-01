@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700"><rect width="1200" height="700" fill="white"/>
+<text x="44" y="68.75999999999999" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="34" font-weight="700" fill="#182b3b">从原始文件到模型</text>
+<text x="44" y="109.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#526578">先固定独立组，再拟合预处理，最后构造可训练 batch</text>
+<rect x="44" y="208" width="350" height="235" rx="12" fill="#e8f1fc" stroke="#8b9bad" stroke-width="2"/>
+<text x="62" y="247.36" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="24" font-weight="700" fill="#182b3b">分组与检查</text>
+<text x="62" y="284.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">版本 + ID + group + split</text>
+<text x="62" y="316.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">读取少量原始样本</text>
+<text x="62" y="348.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">检查标签和时间范围</text>
+<line x1="394" y1="324" x2="418" y2="324" stroke="#8b9bad" stroke-width="3"/>
+<polygon points="418,324 406.5914266954251,330.2325320018546 406.5914266954251,317.7674679981454" fill="#8b9bad"/>
+<rect x="424" y="208" width="350" height="235" rx="12" fill="#e4f4f0" stroke="#8b9bad" stroke-width="2"/>
+<text x="442" y="247.36" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="24" font-weight="700" fill="#182b3b">确定性的预处理</text>
+<text x="442" y="284.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">单位、坐标、时间同步</text>
+<text x="442" y="316.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">组内切窗和制标签</text>
+<text x="442" y="348.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">仅训练集拟合统计</text>
+<line x1="774" y1="324" x2="798" y2="324" stroke="#8b9bad" stroke-width="3"/>
+<polygon points="798,324 786.5914266954252,330.2325320018546 786.5914266954252,317.7674679981454" fill="#8b9bad"/>
+<rect x="804" y="208" width="350" height="235" rx="12" fill="#fff4d7" stroke="#8b9bad" stroke-width="2"/>
+<text x="822" y="247.36" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="24" font-weight="700" fill="#182b3b">每轮训练的处理</text>
+<text x="822" y="284.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">训练采样与随机增强</text>
+<text x="822" y="316.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">collate + 有效 mask</text>
+<text x="822" y="348.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">送入模型和 loss</text>
+<line x1="44" y1="637" x2="1156" y2="637" stroke="#d8e1e9" stroke-width="2"/>
+<text x="44" y="674.52" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="18" font-weight="400" fill="#526578">稳定结果可缓存；随机增强通常保留在线执行</text>
+</svg>

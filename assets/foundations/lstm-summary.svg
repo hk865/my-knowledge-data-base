@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760"><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 Z" fill="#2767b2"/></marker></defs><rect width="1400" height="760" fill="#fbfcfe"/>
+<text x="55" y="65" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="34" fill="#15304a" font-weight="700" text-anchor="start">LSTM：把记住 写入 读出分开</text>
+<text x="55" y="106" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="start">现代常用含遗忘门版本；不要把全套三门公式原样归给1997</text>
+<rect x="135.0" y="250" width="340" height="205" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="305.0" y="290" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">保留 f</text>
+<text x="305.0" y="330" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">旧记忆保留多少</text>
+<text x="305.0" y="361" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">f ⊙ c旧</text>
+<line x1="480.0" y1="350" x2="523.0" y2="350" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="530.0" y="250" width="340" height="205" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="700.0" y="290" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">写入 i</text>
+<text x="700.0" y="330" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">候选内容写入多少</text>
+<text x="700.0" y="361" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">i ⊙ g</text>
+<line x1="875.0" y1="350" x2="918.0" y2="350" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="925.0" y="250" width="340" height="205" rx="16" fill="#e7f4ed" stroke="#aabccc" stroke-width="2"/>
+<text x="1095.0" y="290" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">读出 o</text>
+<text x="1095.0" y="330" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">当前输出使用多少</text>
+<text x="1095.0" y="361" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">o ⊙ tanh(c新)</text>
+<text x="55" y="726" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="start">c新 = f ⊙ c旧 + i ⊙ g；门由输入与旧隐藏状态计算，不是人工编写的开关。</text>
+</svg>

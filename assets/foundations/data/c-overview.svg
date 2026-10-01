@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700"><rect width="1200" height="700" fill="white"/>
+<text x="44" y="68.75999999999999" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="34" font-weight="700" fill="#182b3b">两个分类实验共享一个训练闭环</text>
+<text x="44" y="109.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#526578">输入编码不同，输出都可以是类别 logits</text>
+<rect x="44" y="165" width="325" height="130" rx="12" fill="#e8f1fc" stroke="#8b9bad" stroke-width="2"/>
+<text x="62" y="204.36" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="24" font-weight="700" fill="#182b3b">CIFAR-10</text>
+<text x="62" y="241.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">RGB [B,3,32,32]</text>
+<rect x="449" y="165" width="310" height="130" rx="12" fill="#e4f4f0" stroke="#8b9bad" stroke-width="2"/>
+<text x="467" y="204.36" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="24" font-weight="700" fill="#182b3b">编码器</text>
+<text x="467" y="241.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">小 CNN</text>
+<rect x="839" y="165" width="315" height="130" rx="12" fill="#fff4d7" stroke="#8b9bad" stroke-width="2"/>
+<text x="857" y="204.36" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="24" font-weight="700" fill="#182b3b">分类输出</text>
+<text x="857" y="241.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">logits [B,10]</text>
+<text x="857" y="273.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">类别标签 → CE</text>
+<line x1="369" y1="230" x2="443" y2="230" stroke="#8b9bad" stroke-width="3"/>
+<polygon points="443,230 431.5914266954251,236.23253200185465 431.5914266954251,223.76746799814535" fill="#8b9bad"/>
+<line x1="759" y1="230" x2="833" y2="230" stroke="#8b9bad" stroke-width="3"/>
+<polygon points="833,230 821.5914266954252,236.23253200185465 821.5914266954252,223.76746799814535" fill="#8b9bad"/>
+<rect x="44" y="355" width="325" height="130" rx="12" fill="#e8f1fc" stroke="#8b9bad" stroke-width="2"/>
+<text x="62" y="394.36" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="24" font-weight="700" fill="#182b3b">IMDb</text>
+<text x="62" y="431.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">ids + mask [B,L]</text>
+<rect x="449" y="355" width="310" height="130" rx="12" fill="#e4f4f0" stroke="#8b9bad" stroke-width="2"/>
+<text x="467" y="394.36" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="24" font-weight="700" fill="#182b3b">编码器</text>
+<text x="467" y="431.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">Embedding + pooling</text>
+<rect x="839" y="355" width="315" height="130" rx="12" fill="#fff4d7" stroke="#8b9bad" stroke-width="2"/>
+<text x="857" y="394.36" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="24" font-weight="700" fill="#182b3b">分类输出</text>
+<text x="857" y="431.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">logits [B,2]</text>
+<text x="857" y="463.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">类别标签 → CE</text>
+<line x1="369" y1="420" x2="443" y2="420" stroke="#8b9bad" stroke-width="3"/>
+<polygon points="443,420 431.5914266954251,426.2325320018546 431.5914266954251,413.7674679981454" fill="#8b9bad"/>
+<line x1="759" y1="420" x2="833" y2="420" stroke="#8b9bad" stroke-width="3"/>
+<polygon points="833,420 821.5914266954252,426.2325320018546 821.5914266954252,413.7674679981454" fill="#8b9bad"/>
+<text x="44" y="588.36" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="24" font-weight="700" fill="#182b3b">验证集选择模型；测试集只用于冻结方案后的评价</text>
+<line x1="44" y1="637" x2="1156" y2="637" stroke="#d8e1e9" stroke-width="2"/>
+<text x="44" y="674.52" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="18" font-weight="400" fill="#526578">先跑通小子集；这不是训练完成或达到某个分数的报告</text>
+</svg>

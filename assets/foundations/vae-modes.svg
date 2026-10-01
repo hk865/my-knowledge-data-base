@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760"><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 Z" fill="#2767b2"/></marker></defs><rect width="1400" height="760" fill="#fbfcfe"/>
+<text x="55" y="65" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="34" fill="#15304a" font-weight="700" text-anchor="start">VAE：训练 推断 生成用到的模块不同</text>
+<text x="55" y="106" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="start">编码器是近似推断网络，不是生成新样本的必经入口</text>
+<text x="65" y="192" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="27" fill="#15304a" font-weight="700" text-anchor="start">训练 / 重建</text>
+<rect x="100" y="220" width="240" height="125" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="220.0" y="260" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">观测 x</text>
+<line x1="347" y1="280" x2="420" y2="280" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="430" y="220" width="240" height="125" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="550.0" y="260" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">编码 qφ</text>
+<line x1="677" y1="280" x2="750" y2="280" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="760" y="220" width="240" height="125" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="880.0" y="260" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">采样 z</text>
+<line x1="1007" y1="280" x2="1080" y2="280" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="1090" y="220" width="240" height="125" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="1210.0" y="260" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">解码 pθ</text>
+<text x="65" y="447" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="27" fill="#15304a" font-weight="700" text-anchor="start">生成新样本</text>
+<rect x="100" y="475" width="240" height="125" rx="16" fill="#e7f4ed" stroke="#aabccc" stroke-width="2"/>
+<text x="220.0" y="515" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">先验 p(z)</text>
+<line x1="347" y1="535" x2="420" y2="535" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="430" y="475" width="240" height="125" rx="16" fill="#e7f4ed" stroke="#aabccc" stroke-width="2"/>
+<text x="550.0" y="515" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">采样 z</text>
+<line x1="677" y1="535" x2="750" y2="535" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="760" y="475" width="240" height="125" rx="16" fill="#e7f4ed" stroke="#aabccc" stroke-width="2"/>
+<text x="880.0" y="515" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">解码 pθ</text>
+<line x1="1007" y1="535" x2="1080" y2="535" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="1090" y="475" width="240" height="125" rx="16" fill="#e7f4ed" stroke="#aabccc" stroke-width="2"/>
+<text x="1210.0" y="515" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">新观测样本</text>
+<text x="55" y="726" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="start">潜码可以用于世界模型，但单帧VAE本身没有动作条件转移，也不自动拥有物理可解释性。</text>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700"><rect width="1200" height="700" fill="white"/>
+<text x="44" y="68.75999999999999" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="34" font-weight="700" fill="#182b3b">四种规模影响四种问题</text>
+<text x="44" y="109.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#526578">10000 个重叠窗口，不等于 10000 次独立采集</text>
+<rect x="44" y="160" width="532" height="185" rx="12" fill="#e8f1fc" stroke="#8b9bad" stroke-width="2"/>
+<text x="62" y="199.36" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="24" font-weight="700" fill="#182b3b">磁盘</text>
+<text x="62" y="236.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">压缩包 + 解压 + 派生缓存</text>
+<text x="62" y="268.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">与下载粒度有关</text>
+<rect x="624" y="160" width="532" height="185" rx="12" fill="#e4f4f0" stroke="#8b9bad" stroke-width="2"/>
+<text x="642" y="199.36" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="24" font-weight="700" fill="#182b3b">内存</text>
+<text x="642" y="236.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">解码数据 + 读取工作进程</text>
+<text x="642" y="268.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">与缓存策略有关</text>
+<rect x="44" y="385" width="532" height="185" rx="12" fill="#fff4d7" stroke="#8b9bad" stroke-width="2"/>
+<text x="62" y="424.36" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="24" font-weight="700" fill="#182b3b">显存</text>
+<text x="62" y="461.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">参数 + 梯度 + 激活 + 优化器</text>
+<text x="62" y="493.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">与模型和 batch 有关</text>
+<rect x="624" y="385" width="532" height="185" rx="12" fill="#fbecec" stroke="#8b9bad" stroke-width="2"/>
+<text x="642" y="424.36" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="24" font-weight="700" fill="#182b3b">泛化证据</text>
+<text x="642" y="461.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">独立的人、设备、场景、轨迹</text>
+<text x="642" y="493.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">与划分设计有关</text>
+<line x1="44" y1="637" x2="1156" y2="637" stroke="#d8e1e9" stroke-width="2"/>
+<text x="44" y="674.52" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="18" font-weight="400" fill="#526578">估算资源与证明泛化是两件事；本讲义没有训练实测</text>
+</svg>

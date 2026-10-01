@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760"><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 Z" fill="#2767b2"/></marker></defs><rect width="1400" height="760" fill="#fbfcfe"/>
+<text x="55" y="65" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="34" fill="#15304a" font-weight="700" text-anchor="start">等变与不变：定位和分类需要不同东西</text>
+<text x="55" y="106" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="start">教学示意忽略边界效应；真实padding、步幅与采样会改变严格性质</text>
+<text x="60" y="250" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="start">原输入 / 原特征</text>
+<rect x="345" y="200" width="54" height="54" rx="4" fill="#e7edf3" stroke="#aabccc" stroke-width="2"/>
+<text x="372.0" y="235.96" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="403" y="200" width="54" height="54" rx="4" fill="#127c80" stroke="#aabccc" stroke-width="2"/>
+<text x="430.0" y="235.96" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="461" y="200" width="54" height="54" rx="4" fill="#e7edf3" stroke="#aabccc" stroke-width="2"/>
+<text x="488.0" y="235.96" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="519" y="200" width="54" height="54" rx="4" fill="#e7edf3" stroke="#aabccc" stroke-width="2"/>
+<text x="546.0" y="235.96" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="577" y="200" width="54" height="54" rx="4" fill="#e7edf3" stroke="#aabccc" stroke-width="2"/>
+<text x="604.0" y="235.96" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="635" y="200" width="54" height="54" rx="4" fill="#e7edf3" stroke="#aabccc" stroke-width="2"/>
+<text x="662.0" y="235.96" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="345" y="258" width="54" height="54" rx="4" fill="#e7edf3" stroke="#aabccc" stroke-width="2"/>
+<text x="372.0" y="293.96" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="403" y="258" width="54" height="54" rx="4" fill="#127c80" stroke="#aabccc" stroke-width="2"/>
+<text x="430.0" y="293.96" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="461" y="258" width="54" height="54" rx="4" fill="#127c80" stroke="#aabccc" stroke-width="2"/>
+<text x="488.0" y="293.96" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="519" y="258" width="54" height="54" rx="4" fill="#e7edf3" stroke="#aabccc" stroke-width="2"/>
+<text x="546.0" y="293.96" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="577" y="258" width="54" height="54" rx="4" fill="#e7edf3" stroke="#aabccc" stroke-width="2"/>
+<text x="604.0" y="293.96" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="635" y="258" width="54" height="54" rx="4" fill="#e7edf3" stroke="#aabccc" stroke-width="2"/>
+<text x="662.0" y="293.96" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<line x1="715" y1="255" x2="870" y2="255" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="792.5" y="243.0" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="19" fill="#587086" font-weight="400" text-anchor="middle">卷积特征</text>
+<rect x="920" y="190" width="380" height="130" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="1110.0" y="230" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">响应随位置移动</text>
+<text x="1110.0" y="270" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">等变：变化以相应方式保留</text>
+<text x="60" y="410" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="start">整体向右平移</text>
+<rect x="345" y="360" width="54" height="54" rx="4" fill="#e7edf3" stroke="#aabccc" stroke-width="2"/>
+<text x="372.0" y="395.96" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="403" y="360" width="54" height="54" rx="4" fill="#e7edf3" stroke="#aabccc" stroke-width="2"/>
+<text x="430.0" y="395.96" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="461" y="360" width="54" height="54" rx="4" fill="#127c80" stroke="#aabccc" stroke-width="2"/>
+<text x="488.0" y="395.96" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="519" y="360" width="54" height="54" rx="4" fill="#e7edf3" stroke="#aabccc" stroke-width="2"/>
+<text x="546.0" y="395.96" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="577" y="360" width="54" height="54" rx="4" fill="#e7edf3" stroke="#aabccc" stroke-width="2"/>
+<text x="604.0" y="395.96" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="635" y="360" width="54" height="54" rx="4" fill="#e7edf3" stroke="#aabccc" stroke-width="2"/>
+<text x="662.0" y="395.96" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="345" y="418" width="54" height="54" rx="4" fill="#e7edf3" stroke="#aabccc" stroke-width="2"/>
+<text x="372.0" y="453.96" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="403" y="418" width="54" height="54" rx="4" fill="#e7edf3" stroke="#aabccc" stroke-width="2"/>
+<text x="430.0" y="453.96" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="461" y="418" width="54" height="54" rx="4" fill="#127c80" stroke="#aabccc" stroke-width="2"/>
+<text x="488.0" y="453.96" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="519" y="418" width="54" height="54" rx="4" fill="#127c80" stroke="#aabccc" stroke-width="2"/>
+<text x="546.0" y="453.96" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="577" y="418" width="54" height="54" rx="4" fill="#e7edf3" stroke="#aabccc" stroke-width="2"/>
+<text x="604.0" y="453.96" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<rect x="635" y="418" width="54" height="54" rx="4" fill="#e7edf3" stroke="#aabccc" stroke-width="2"/>
+<text x="662.0" y="453.96" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="22" fill="#15304a" font-weight="400" text-anchor="middle"></text>
+<line x1="715" y1="415" x2="870" y2="415" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="792.5" y="403.0" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="19" fill="#587086" font-weight="400" text-anchor="middle">卷积特征</text>
+<rect x="920" y="350" width="380" height="130" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="1110.0" y="390" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">响应随位置移动</text>
+<text x="1110.0" y="430" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">等变：变化以相应方式保留</text>
+<rect x="220" y="570" width="960" height="105" rx="16" fill="#e7f4ed" stroke="#aabccc" stroke-width="2"/>
+<text x="700.0" y="610" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">再做全局汇聚：可能得到相同分类表示</text>
+<text x="700.0" y="650" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">更不敏感于位置，同时丢失部分定位细节</text>
+<text x="55" y="726" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="start">SLAM需要几何位置；“越不变越好”不是所有视觉任务的目标。</text>
+</svg>

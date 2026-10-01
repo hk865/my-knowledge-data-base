@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760"><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 Z" fill="#2767b2"/></marker></defs><rect width="1400" height="760" fill="#fbfcfe"/>
+<text x="55" y="65" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="34" fill="#15304a" font-weight="700" text-anchor="start">VAE：用概率潜变量连接观测与隐藏原因</text>
+<text x="55" y="106" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="start">模型先定义p(z)p(x|z)，再学习快速的近似后验q(z|x)</text>
+<rect x="135.0" y="250" width="340" height="205" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="305.0" y="290" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">编码 qφ(z|x)</text>
+<text x="305.0" y="330" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">观测x → μ、σ</text>
+<text x="305.0" y="361" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">给出潜变量分布</text>
+<line x1="480.0" y1="350" x2="523.0" y2="350" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="530.0" y="250" width="340" height="205" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="700.0" y="290" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">重参数化</text>
+<text x="700.0" y="330" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">ε ~ N(0,I)</text>
+<text x="700.0" y="361" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">z = μ + σ ⊙ ε</text>
+<line x1="875.0" y1="350" x2="918.0" y2="350" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="925.0" y="250" width="340" height="205" rx="16" fill="#e7f4ed" stroke="#aabccc" stroke-width="2"/>
+<text x="1095.0" y="290" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">解码 pθ(x|z)</text>
+<text x="1095.0" y="330" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">潜变量 → 观测分布</text>
+<text x="1095.0" y="361" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">学习解释原数据</text>
+<text x="55" y="726" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="start">训练最大化ELBO；生成时从先验采z再解码，不必先提供一份观测。</text>
+</svg>

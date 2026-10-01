@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700"><rect width="1200" height="700" fill="white"/>
+<text x="44" y="68.75999999999999" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="34" font-weight="700" fill="#182b3b">统计参数只从训练数据学习</text>
+<text x="44" y="109.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#526578">验证和测试复用训练统计；不重新拟合</text>
+<rect x="44" y="177" width="295" height="158" rx="12" fill="#e8f1fc" stroke="#8b9bad" stroke-width="2"/>
+<text x="62" y="216.36" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="24" font-weight="700" fill="#182b3b">训练数据</text>
+<text x="62" y="253.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">fit μ 和 σ</text>
+<text x="62" y="285.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">保存统计版本</text>
+<rect x="449" y="177" width="305" height="158" rx="12" fill="#e4f4f0" stroke="#8b9bad" stroke-width="2"/>
+<text x="467" y="216.36" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="24" font-weight="700" fill="#182b3b">固定归一化函数</text>
+<text x="467" y="253.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">z = (x − μ) / σ</text>
+<text x="467" y="285.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">单位转换先完成</text>
+<line x1="339" y1="255" x2="443" y2="255" stroke="#8b9bad" stroke-width="3"/>
+<polygon points="443,255 431.5914266954251,261.2325320018546 431.5914266954251,248.76746799814535" fill="#8b9bad"/>
+<rect x="854" y="145" width="300" height="111" rx="12" fill="#fff4d7" stroke="#8b9bad" stroke-width="2"/>
+<text x="872" y="184.36" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="24" font-weight="700" fill="#182b3b">训练归一化结果</text>
+<text x="872" y="221.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">复用同一 μ、σ</text>
+<line x1="757" y1="258" x2="848" y2="199" stroke="#8b9bad" stroke-width="3"/>
+<polygon points="848,199 841.8179460307945,210.43600492837555 835.0367556560889,199.97688079111774" fill="#8b9bad"/>
+<rect x="854" y="295" width="300" height="111" rx="12" fill="#fff4d7" stroke="#8b9bad" stroke-width="2"/>
+<text x="872" y="334.36" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="24" font-weight="700" fill="#182b3b">验证归一化结果</text>
+<text x="872" y="371.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">复用同一 μ、σ</text>
+<line x1="757" y1="258" x2="848" y2="349" stroke="#8b9bad" stroke-width="3"/>
+<polygon points="848,349 835.5258548101978,345.33998609514487 844.3399860951449,336.5258548101977" fill="#8b9bad"/>
+<rect x="854" y="445" width="300" height="111" rx="12" fill="#fff4d7" stroke="#8b9bad" stroke-width="2"/>
+<text x="872" y="484.36" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="24" font-weight="700" fill="#182b3b">测试归一化结果</text>
+<text x="872" y="521.8" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="20" font-weight="400" fill="#182b3b">复用同一 μ、σ</text>
+<line x1="757" y1="258" x2="848" y2="499" stroke="#8b9bad" stroke-width="3"/>
+<polygon points="848,499 838.1392110558852,490.5285868121297 849.8006413937276,486.1253081368448" fill="#8b9bad"/>
+<text x="44" y="448.36" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="24" font-weight="700" fill="#182b3b">词表、PCA、特征选择也有同样边界</text>
+<text x="44" y="498.08" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="22" font-weight="400" fill="#182b3b">清洗规则若按测试成绩反复修改，也会泄漏</text>
+<line x1="44" y1="637" x2="1156" y2="637" stroke="#d8e1e9" stroke-width="2"/>
+<text x="44" y="674.52" font-family="Noto Sans CJK SC, Noto Sans CJK JP, sans-serif" font-size="18" font-weight="400" fill="#526578">固定外部预训练 tokenizer 属于另一种已声明方案，不能隐瞒其来源</text>
+</svg>

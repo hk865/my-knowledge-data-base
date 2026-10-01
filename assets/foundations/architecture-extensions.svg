@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760"><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 Z" fill="#2767b2"/></marker></defs><rect width="1400" height="760" fill="#fbfcfe"/>
+<text x="55" y="65" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="34" fill="#15304a" font-weight="700" text-anchor="start">三条扩展路线：每条回答一个不同问题</text>
+<text x="55" y="106" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="start">本页为导读入口，不把三者冒充为完整同类架构课程</text>
+<rect x="135.0" y="250" width="340" height="205" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="305.0" y="290" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">SSM / Mamba</text>
+<text x="305.0" y="330" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">历史如何压入状态</text>
+<text x="305.0" y="361" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">结构化动态 + 内容选择</text>
+<rect x="530.0" y="250" width="340" height="205" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="700.0" y="290" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">GNN</text>
+<text x="700.0" y="330" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">谁是可交互的邻居</text>
+<text x="700.0" y="361" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">按图边聚合消息</text>
+<rect x="925.0" y="250" width="340" height="205" rx="16" fill="#e7f4ed" stroke="#aabccc" stroke-width="2"/>
+<text x="1095.0" y="290" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">MoE</text>
+<text x="1095.0" y="330" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">本次调用哪些参数</text>
+<text x="1095.0" y="361" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">路由到少量专家</text>
+<text x="55" y="726" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="start">它们能与Transformer、视觉编码器和不同生成目标组合；比较前先写清系统职责。</text>
+</svg>
