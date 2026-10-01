@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900"><defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#7890a8"/></marker></defs><rect width="1600" height="900" fill="#fbfcfe"/><g font-family="Noto Sans CJK SC, sans-serif">
+<text x="64" y="80" font-size="42" fill="#17324d" font-weight="700" text-anchor="start">从任务走到训练目标与评价</text>
+<text x="64" y="132" font-size="25" fill="#50657a" font-weight="400" text-anchor="start">用这条顺序读论文：先辨明输出空间，再解释训练分数</text>
+<rect x="64" y="210" width="268" height="255" rx="18" fill="#e7effa"/>
+<text x="90" y="250" font-size="22" fill="#50657a" font-weight="600" text-anchor="start">1</text>
+<text x="90" y="292" font-size="30" fill="#17324d" font-weight="700" text-anchor="start">任务假设</text>
+<text x="90" y="342" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">可见哪些信息？</text>
+<text x="90" y="384" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">要解决什么？</text>
+<path d="M336 337 L360 337" stroke="#7890a8" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="366" y="210" width="268" height="255" rx="18" fill="#dff3eb"/>
+<text x="392" y="250" font-size="22" fill="#50657a" font-weight="600" text-anchor="start">2</text>
+<text x="392" y="292" font-size="30" fill="#17324d" font-weight="700" text-anchor="start">输出变量</text>
+<text x="392" y="342" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">类别 / 连续量</text>
+<text x="392" y="384" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">集合 / 分布 / 姿态</text>
+<path d="M638 337 L662 337" stroke="#7890a8" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="668" y="210" width="268" height="255" rx="18" fill="#e7effa"/>
+<text x="694" y="250" font-size="22" fill="#50657a" font-weight="600" text-anchor="start">3</text>
+<text x="694" y="292" font-size="30" fill="#17324d" font-weight="700" text-anchor="start">概率或几何</text>
+<text x="694" y="342" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">分类概率？</text>
+<text x="694" y="384" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">欧氏残差或SO(3)？</text>
+<path d="M940 337 L964 337" stroke="#7890a8" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="970" y="210" width="268" height="255" rx="18" fill="#fff1d6"/>
+<text x="996" y="250" font-size="22" fill="#50657a" font-weight="600" text-anchor="start">4</text>
+<text x="996" y="292" font-size="30" fill="#17324d" font-weight="700" text-anchor="start">训练损失</text>
+<text x="996" y="342" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">CE / NLL / MSE</text>
+<text x="996" y="384" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">对比或去噪目标</text>
+<path d="M1242 337 L1266 337" stroke="#7890a8" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="1272" y="210" width="268" height="255" rx="18" fill="#fce6e3"/>
+<text x="1298" y="250" font-size="22" fill="#50657a" font-weight="600" text-anchor="start">5</text>
+<text x="1298" y="292" font-size="30" fill="#17324d" font-weight="700" text-anchor="start">任务评价</text>
+<text x="1298" y="342" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">准确率 / AP</text>
+<text x="1298" y="384" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">漂移 / 闭环成功率</text>
+<rect x="64" y="530" width="713" height="210" rx="18" fill="#e7effa"/>
+<text x="90" y="582" font-size="30" fill="#17324d" font-weight="700" text-anchor="start">同一架构可以改变目标</text>
+<text x="90" y="632" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">Transformer可做分类、重建或对比表征</text>
+<text x="90" y="674" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">输出头、掩码和训练数据也要匹配</text>
+<rect x="823" y="530" width="713" height="210" rx="18" fill="#dff3eb"/>
+<text x="849" y="582" font-size="30" fill="#17324d" font-weight="700" text-anchor="start">同一损失可以出现在不同任务</text>
+<text x="849" y="632" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">CE可用于图像分类、词元预测和配对竞争</text>
+<text x="849" y="674" font-size="25" fill="#17324d" font-weight="400" text-anchor="start">公式相似不代表条件信息与评价相同</text>
+<text x="64" y="844" font-size="24" fill="#50657a" font-weight="400" text-anchor="start">原创教学结构图；不是历史演化图，不包含未验证实验结果</text>
+</g></svg>

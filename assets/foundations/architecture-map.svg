@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760"><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 Z" fill="#2767b2"/></marker></defs><rect width="1400" height="760" fill="#fbfcfe"/>
+<text x="55" y="65" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="34" fill="#15304a" font-weight="700" text-anchor="start">先分问题层次 再选模型</text>
+<text x="55" y="106" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="start">这是一张教学分类图，不是单线的发明历史</text>
+<rect x="70" y="180" width="1250" height="190" rx="16" fill="#eaf2fa" stroke="#aabccc" stroke-width="2"/>
+<text x="695.0" y="220" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">计算结构：信息怎样流动</text>
+<text x="695.0" y="260" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">CNN：局部共享    RNN / LSTM / SSM：状态递推</text>
+<text x="695.0" y="291" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">Transformer：内容交互    GNN：图邻域消息    MoE：选择计算参数</text>
+<rect x="70" y="420" width="1250" height="190" rx="16" fill="#e7f4ed" stroke="#aabccc" stroke-width="2"/>
+<text x="695.0" y="460" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="25" fill="#15304a" font-weight="700" text-anchor="middle">生成建模：怎样定义并学习数据分布</text>
+<text x="695.0" y="500" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">VAE：潜变量 + 近似后验    Diffusion：加噪 + 反向生成</text>
+<text x="695.0" y="531" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="middle">自回归：按数据位置分解条件概率；可使用多种计算骨架</text>
+<line x1="700" y1="375" x2="700" y2="410" stroke="#2767b2" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="700.0" y="380.5" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="19" fill="#587086" font-weight="400" text-anchor="middle">可组合</text>
+<text x="55" y="726" font-family="Noto Sans CJK SC,Noto Sans,sans-serif" font-size="20" fill="#587086" font-weight="400" text-anchor="start">例子：CNN编码的VAE；Transformer去噪的Diffusion Policy；自回归的RNN或Transformer。</text>
+</svg>
