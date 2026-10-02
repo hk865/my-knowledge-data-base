@@ -1,65 +1,65 @@
 {
-  "date": "2026-10-01",
+  "date": "2026-10-02",
   "module_count": 24,
   "modules": [
     {
-      "title": "CNN 从固定滤波器到可学习视觉层级",
+      "title": "CNN 从像素窗口到可学习视觉特征",
       "path": "11-cnn.md",
       "axis": "架构",
       "reading_level": "基础概念讲义",
       "diagram_count": 3
     },
     {
-      "title": "RNN 从历史观测到可学习状态",
+      "title": "RNN 从连续输入到可学习的历史记忆",
       "path": "12-rnn.md",
       "axis": "架构",
       "reading_level": "基础概念讲义",
       "diagram_count": 3
     },
     {
-      "title": "LSTM 怎样选择记住 写入和读出",
+      "title": "LSTM 从长期记忆问题到门控更新",
       "path": "13-lstm.md",
       "axis": "架构",
       "reading_level": "基础概念讲义",
       "diagram_count": 3
     },
     {
-      "title": "Attention与Transformer 从软对齐到并行交互",
+      "title": "Attention 与 Transformer：从“到哪里找信息”开始理解",
       "path": "14-attention-transformer.md",
       "axis": "架构",
       "reading_level": "基础概念讲义",
-      "diagram_count": 3
+      "diagram_count": 4
     },
     {
-      "title": "QKV 为什么有匹配 还需要内容",
+      "title": "QKV 为什么已经算出匹配 还要传递内容",
       "path": "15-qkv-deep-dive.md",
       "axis": "架构",
       "reading_level": "基础概念讲义",
       "diagram_count": 4
     },
     {
-      "title": "VAE 从潜变量模型到可训练后验推断",
+      "title": "VAE 从隐藏原因到可训练的生成模型",
       "path": "16-vae.md",
       "axis": "架构",
       "reading_level": "基础概念讲义",
       "diagram_count": 3
     },
     {
-      "title": "Diffusion 从逐步加噪到条件生成",
+      "title": "Diffusion 从加噪练习到逐步生成",
       "path": "17-diffusion.md",
       "axis": "架构",
       "reading_level": "基础概念讲义",
       "diagram_count": 3
     },
     {
-      "title": "SSM GNN与MoE 扩展导读",
+      "title": "SSM GNN 与 MoE 的三个独立入门问题",
       "path": "18-ssm-gnn-moe.md",
       "axis": "架构",
       "reading_level": "扩展导读",
       "diagram_count": 1
     },
     {
-      "title": "梯度 反向传播与 SGD",
+      "title": "梯度、反向传播与SGD：模型到底怎样改正一次错误",
       "path": "modules/optimization/gradient-sgd.md",
       "axis": "优化",
       "reading_level": "基础概念讲义",
@@ -73,14 +73,14 @@
       "diagram_count": 3
     },
     {
-      "title": "Adam 与 AdamW",
+      "title": "Adam与AdamW",
       "path": "modules/optimization/adam.md",
       "axis": "优化",
       "reading_level": "基础概念讲义",
       "diagram_count": 3
     },
     {
-      "title": "Muon 与矩阵更新正交化",
+      "title": "Muon与矩阵更新正交化",
       "path": "modules/optimization/muon.md",
       "axis": "优化",
       "reading_level": "基础概念讲义",
@@ -122,53 +122,54 @@
       "diagram_count": 3
     },
     {
-      "title": "样本接口与数据集选择",
+      "title": "样本接口与数据集选择：先说清楚我们要让模型做什么",
       "path": "modules/data/01-data-contracts.md",
       "axis": "数据",
       "reading_level": "基础概念讲义",
       "diagram_count": 3
     },
     {
-      "title": "划分同步与最小数据管道",
+      "title": "划分同步与最小数据管道：让模型读到正确的题目",
       "path": "modules/data/02-data-pipeline.md",
       "axis": "数据",
       "reading_level": "基础概念讲义",
       "diagram_count": 3
     },
     {
-      "title": "图像与文本分类的小规模实践",
+      "title": "图像与文本分类的小规模实践：把一条样本走完整个训练闭环",
       "path": "modules/data/03-classification-labs.md",
       "axis": "数据",
       "reading_level": "基础概念讲义",
       "diagram_count": 3
     },
     {
-      "title": "IMU窗口怎样对应一个位移标签",
+      "title": "IMU 窗口怎样对应一个位移标签：从传感器读数到可解释的回归实验",
       "path": "modules/data/04-imu-lab.md",
       "axis": "数据",
       "reading_level": "基础概念讲义",
       "diagram_count": 3
     },
     {
-      "title": "05a 分布式训练导读",
+      "title": "05a 分布式训练：多张卡怎样仍然完成同一次学习",
       "path": "05a-distributed-training.md",
       "axis": "进阶",
       "reading_level": "进阶导读",
       "diagram_count": 3
     },
     {
-      "title": "05b 强化学习导读",
+      "title": "05b 强化学习：怎样从行动的后果学会更好的选择",
       "path": "05b-reinforcement-learning.md",
       "axis": "进阶",
       "reading_level": "进阶导读",
       "diagram_count": 2
     },
     {
-      "title": "05c 迁移与元学习导读",
+      "title": "05c 迁移与元学习：已有知识怎样帮助新任务",
       "path": "05c-transfer-meta-learning.md",
       "axis": "进阶",
       "reading_level": "进阶导读",
       "diagram_count": 2
     }
-  ]
+  ],
+  "edition": "逐步展开版"
 }
