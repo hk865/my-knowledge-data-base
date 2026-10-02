@@ -1,0 +1,43 @@
+<svg style="font-family: Noto Sans CJK SC, sans-serif; fill: #142a43" xmlns="http://www.w3.org/2000/svg" width="1440" height="960" viewBox="0 0 1440 960"><defs><marker id="a" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9Z" fill="#6c8294"/></marker></defs><rect width="1440" height="960" fill="#f8fbfd"/>
+<text x="55" y="63" font-size="34" font-weight="700">Mamba：让写入、保留和读出依赖当前输入</text>
+<text x="55" y="103" font-size="21" fill="#596d80">原创机制图 · selective SSM 是输入条件化的状态递推；线性时间并不意味着“简单线性注意力”</text>
+<rect x="55" y="160" width="240" height="90" rx="14" fill="#e5f1fc" stroke="#b7c9d7" stroke-width="1.5"/>
+<text x="77" y="198" font-size="23" fill="#142a43" font-weight="400">输入 token xₜ</text>
+<rect x="385" y="160" width="340" height="140" rx="14" fill="#e5f1fc" stroke="#b7c9d7" stroke-width="1.5"/>
+<text x="407" y="198" font-size="22" fill="#142a43" font-weight="400">输入投影 + 局部因果卷积</text>
+<text x="407" y="232" font-size="22" fill="#142a43" font-weight="400">SiLU 激活得到 uₜ</text>
+<text x="407" y="266" font-size="22" fill="#142a43" font-weight="400">另一路产生门控 zₜ</text>
+<rect x="835" y="160" width="550" height="140" rx="14" fill="#fff0cc" stroke="#b7c9d7" stroke-width="1.5"/>
+<text x="857" y="198" font-size="22" fill="#142a43" font-weight="400">由 uₜ 产生 Bₜ、Cₜ、Δₜ</text>
+<text x="857" y="232" font-size="22" fill="#142a43" font-weight="400">A 是学习到的对角结构参数</text>
+<text x="857" y="266" font-size="22" fill="#142a43" font-weight="400">Δₜ = softplus(b + 低秩投影(uₜ))</text>
+<path d="M295,205 L385,205" fill="none" stroke="#6c8294" stroke-width="3" marker-end="url(#a)"/>
+<path d="M725,230 L835,230" fill="none" stroke="#6c8294" stroke-width="3" marker-end="url(#a)"/>
+<rect x="55" y="390" width="240" height="105" rx="14" fill="#dff4ed" stroke="#b7c9d7" stroke-width="1.5"/>
+<text x="77" y="428" font-size="22" fill="#142a43" font-weight="400">旧状态 hₜ₋₁</text>
+<text x="77" y="462" font-size="22" fill="#142a43" font-weight="400">固定大小的记忆</text>
+<rect x="385" y="370" width="550" height="145" rx="14" fill="#dff4ed" stroke="#b7c9d7" stroke-width="1.5"/>
+<text x="407" y="408" font-size="24" fill="#142a43" font-weight="400">离散化 + 状态更新</text>
+<text x="407" y="444" font-size="24" fill="#142a43" font-weight="400">Āₜ = exp(Δₜ A)</text>
+<text x="407" y="480" font-size="24" fill="#142a43" font-weight="400">hₜ = Āₜ hₜ₋₁ + B̄ₜ uₜ</text>
+<rect x="1040" y="370" width="345" height="145" rx="14" fill="#e5f1fc" stroke="#b7c9d7" stroke-width="1.5"/>
+<text x="1062" y="408" font-size="21" fill="#142a43" font-weight="400">读出与门控</text>
+<text x="1062" y="441" font-size="21" fill="#142a43" font-weight="400">yₜ = Cₜ hₜ</text>
+<text x="1062" y="474" font-size="21" fill="#142a43" font-weight="400">→ × SiLU(zₜ) → 输出投影</text>
+<path d="M295,443 L385,443" fill="none" stroke="#6c8294" stroke-width="3" marker-end="url(#a)"/>
+<path d="M935,443 L1040,443" fill="none" stroke="#6c8294" stroke-width="3" marker-end="url(#a)"/>
+<polyline points="1110,300 1110,333 660,333 660,370" fill="none" stroke="#6c8294" stroke-width="3" marker-end="url(#a)"/>
+<path d="M550,300 L550,370" fill="none" stroke="#6c8294" stroke-width="3" marker-end="url(#a)"/>
+<text x="75" y="565" font-size="24" fill="#142a43" font-weight="400">选择性：Δ 管保留/刷新；B 管写入；C 管读出。整个映射对输入是非线性的</text>
+<rect x="55" y="640" width="600" height="180" rx="14" fill="#e5f1fc" stroke="#b7c9d7" stroke-width="1.5"/>
+<text x="77" y="678" font-size="22" fill="#142a43" font-weight="400">训练：硬件感知 parallel scan</text>
+<text x="77" y="712" font-size="22" fill="#142a43" font-weight="400">仿射递推可组合，已知整段输入时并行计算</text>
+<text x="77" y="746" font-size="22" fill="#142a43" font-weight="400">HBM → SRAM 内离散化与scan → HBM</text>
+<text x="77" y="780" font-size="22" fill="#142a43" font-weight="400">分块 + 反向重计算，避免写回全部扩展状态</text>
+<rect x="735" y="640" width="650" height="180" rx="14" fill="#fff0cc" stroke="#b7c9d7" stroke-width="1.5"/>
+<text x="757" y="678" font-size="22" fill="#142a43" font-weight="400">生成：只更新当前状态</text>
+<text x="757" y="712" font-size="22" fill="#142a43" font-weight="400">每步保留每层状态与短卷积缓冲</text>
+<text x="757" y="746" font-size="22" fill="#142a43" font-weight="400">状态大小不随上下文长度增长</text>
+<text x="757" y="780" font-size="22" fill="#142a43" font-weight="400">代价是压缩历史，不能无损随机访问所有旧 token</text>
+<text x="55" y="910" font-size="18" fill="#596d80" font-weight="400">依据：Mamba v2，算法2、§3.2–3.6、附录C–D；图中省略残差、归一化与直接通路等实现细节</text>
+</svg>

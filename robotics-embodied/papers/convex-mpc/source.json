@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "resource_id": "doi:10.1109/IROS.2018.8594448",
+  "title": "Dynamic Locomotion in the MIT Cheetah 3 Through Convex Model-Predictive Control",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/convex-mpc",
+  "official_url": "https://dspace.mit.edu/entities/publication/bc8c7e1e-5830-443f-a879-787947111fcf",
+  "official_fulltext_url": "https://dspace.mit.edu/server/api/core/bitstreams/474e8173-7b22-46e6-a51b-3d8e8a383357/content",
+  "read_version": "IROS 2018 accepted author manuscript from MIT DSpace; DOI 10.1109/IROS.2018.8594448",
+  "version_status": "specified_in_existing_reading",
+  "reading_depth": "full_text_reading_and_evidence_audit",
+  "teaching_status": "existing_technical_reading",
+  "content_kind": "reading",
+  "reading_path": "reading.md",
+  "reading_boundary": "本篇保留现有技术精读，范围与残余边界见正文和证据档案；未独立复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-02",
+  "legacy_paths": [
+    "docs/deep-readings/convex-mpc.md",
+    "robotics-embodied/baselines/convex-mpc.md"
+  ],
+  "evidence_paths": [
+    "docs/deep-readings/evidence/convex-mpc.json",
+    "../../../docs/deep-readings/evidence/convex-mpc.json"
+  ],
+  "topic_paths": [
+    "multimodal/world-models",
+    "robotics/control",
+    "robotics/embodied-policies",
+    "robotics/navigation-planning"
+  ],
+  "figure_paths": [
+    "figures/convex-mpc.svg"
+  ],
+  "figure_format": "original_svg"
+}

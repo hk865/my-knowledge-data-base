@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1050" viewBox="0 0 1400 1050">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#536477"/></marker></defs>
+<rect width="1400" height="1050" fill="#f7fafc"/>
+<g font-family="Noto Sans CJK SC, Noto Sans, sans-serif" fill="#162b3e">
+<text x="48" y="62" font-size="34" font-weight="bold">R2R：指令驱动的视点导航闭环</text>
+<text x="48" y="103" font-size="19" font-weight="normal">原创重绘：§3–5 ｜ 原始六动作 LSTM baseline；任务/环境与策略分开，非当前最强 VLN 模型</text>
+<rect x="48" y="157" width="385" height="166" rx="14" fill="white" stroke="#2663a5" stroke-width="2"/>
+<text x="70" y="197" font-size="24" font-weight="bold" fill="#2663a5">语言输入</text>
+<text x="70" y="235" font-size="20" font-weight="normal">指令 tokens → Encoder LSTM</text>
+<text x="70" y="266" font-size="20" font-weight="normal">词级上下文 h₁…hL</text>
+<text x="70" y="297" font-size="20" font-weight="normal">注意力读取当前相关指令</text>
+<rect x="504" y="157" width="387" height="166" rx="14" fill="white" stroke="#2663a5" stroke-width="2"/>
+<text x="526" y="197" font-size="24" font-weight="bold" fill="#2663a5">历史状态 + 语言注意力</text>
+<text x="526" y="235" font-size="20" font-weight="normal">Decoder LSTM 记住交互历史</text>
+<text x="526" y="266" font-size="20" font-weight="normal">cₜ = Σᵢ αₜᵢ hᵢ</text>
+<text x="526" y="297" font-size="20" font-weight="normal">当前图像与前动作更新状态</text>
+<rect x="962" y="157" width="390" height="166" rx="14" fill="white" stroke="#2663a5" stroke-width="2"/>
+<text x="984" y="197" font-size="24" font-weight="bold" fill="#2663a5">输出六动作分布</text>
+<text x="984" y="235" font-size="20" font-weight="normal">left / right / up / down</text>
+<text x="984" y="266" font-size="20" font-weight="normal">forward / stop</text>
+<text x="984" y="297" font-size="20" font-weight="normal">测试采用 greedy decoding</text>
+<polyline points="433,240 498,240" fill="none" stroke="#536477" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="891,240 956,240" fill="none" stroke="#536477" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="48" y="434" width="385" height="166" rx="14" fill="white" stroke="#2663a5" stroke-width="2"/>
+<text x="70" y="474" font-size="24" font-weight="bold" fill="#2663a5">新的视觉观测</text>
+<text x="70" y="512" font-size="20" font-weight="normal">第一人称 RGB → ResNet-152</text>
+<text x="70" y="543" font-size="20" font-weight="normal">平均池化图像特征</text>
+<text x="70" y="574" font-size="20" font-weight="normal">拼接上一步动作 embedding</text>
+<rect x="504" y="434" width="387" height="166" rx="14" fill="white" stroke="#b66a17" stroke-width="2"/>
+<text x="526" y="474" font-size="24" font-weight="bold" fill="#b66a17">环境状态 sₜ</text>
+<text x="526" y="512" font-size="20" font-weight="normal">扫描视点 + 朝向 + 俯仰</text>
+<text x="526" y="543" font-size="20" font-weight="normal">图上移动，转动每次30°</text>
+<text x="526" y="574" font-size="20" font-weight="normal">返回新图像，仍为部分可见</text>
+<rect x="962" y="434" width="390" height="166" rx="14" fill="white" stroke="#b66a17" stroke-width="2"/>
+<text x="984" y="474" font-size="24" font-weight="bold" fill="#b66a17">动作执行</text>
+<text x="984" y="512" font-size="20" font-weight="normal">forward：视野中央可达点</text>
+<text x="984" y="543" font-size="20" font-weight="normal">其余转动或选择 stop</text>
+<text x="984" y="574" font-size="20" font-weight="normal">stop 结束本回合</text>
+<polyline points="1158,323 1158,428" fill="none" stroke="#536477" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="962,517 897,517" fill="none" stroke="#536477" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="504,517 439,517" fill="none" stroke="#536477" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="242,434 242,379 697,379 697,329" fill="none" stroke="#536477" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="395" y="369" font-size="18" font-weight="normal" fill="#536477">图像 + 前动作</text>
+<text x="48" y="683" font-size="24" font-weight="bold" fill="#17705e">仅训练可用的教师</text>
+<text x="48" y="726" font-size="22" font-weight="normal">从当前真实位置重算到目标的最短路下一动作 a*；交叉熵监督，不是 PPO</text>
+<text x="48" y="770" font-size="21" font-weight="normal">Teacher-forcing 执行 a*；Student-forcing 执行模型采样动作，再重新标注下一步</text>
+<text x="48" y="848" font-size="24" font-weight="bold" fill="#b66a17">评估重点：新建筑泛化 + 自主停止</text>
+<text x="48" y="894" font-size="22" font-weight="normal">Success：最终图距离 &lt; 3m；Oracle Success：轨迹曾到达目标附近</text>
+<text x="48" y="943" font-size="21" font-weight="normal">原始 test：Student-forcing 20.4% success / 26.6% oracle；人类86.4%（子集）</text>
+<text x="48" y="997" font-size="18" font-weight="normal">来源：§4.4、§5.2；Table 1，p7。导航图负责环境可达性，测试策略不可获得目标教师。</text>
+</g></svg>

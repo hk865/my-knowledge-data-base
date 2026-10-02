@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:1711.02508",
+  "title": "Quaternion kinematics for the error-state Kalman filter",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/eskf",
+  "official_url": "https://arxiv.org/abs/1711.02508",
+  "official_fulltext_url": "https://arxiv.org/pdf/1711.02508v1",
+  "read_version": "v1",
+  "version_status": "specified_in_existing_reading",
+  "reading_depth": "full_text_reading_and_evidence_audit",
+  "teaching_status": "existing_technical_reading",
+  "content_kind": "reading",
+  "reading_path": "reading.md",
+  "reading_boundary": "本篇保留现有技术精读，范围与残余边界见正文和证据档案；未独立复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-02",
+  "legacy_paths": [
+    "docs/deep-readings/eskf.md",
+    "robotics-embodied/baselines/eskf.md"
+  ],
+  "evidence_paths": [
+    "docs/deep-readings/evidence/eskf.json",
+    "../../../docs/deep-readings/evidence/eskf.json",
+    "../../../docs/deep-readings/evidence/eskf-coverage.json"
+  ],
+  "topic_paths": [
+    "robotics/control",
+    "robotics/localization-mapping",
+    "robotics/perception"
+  ]
+}

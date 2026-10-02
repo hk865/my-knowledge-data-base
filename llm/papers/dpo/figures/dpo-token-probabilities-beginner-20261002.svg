@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100">
+<rect width="1600" height="1100" fill="#f6f8fc"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#526079"/></marker></defs>
+<g font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif">
+<text x="64" y="76" font-size="40" font-weight="700" fill="#152642">DPO 第一步  把同一份回答交给两套模型评分</text>
+<text x="64" y="124" font-size="23" font-weight="400" fill="#526079">教学用虚构分词器与人工概率；不是实际中文 tokenizer，也不是论文实验测量</text>
+<rect x="64" y="168" width="1472" height="110" rx="16" fill="white" stroke="#d6deea" stroke-width="2"/>
+<text x="88" y="208" font-size="27" font-weight="700" fill="#152642">提示：周六原定公园野餐，预报有雨，改到家里聚餐，每人带一道菜。</text>
+<text x="88" y="250" font-size="26" font-weight="400" fill="#152642">固定回答 A：因预报有雨改在家聚餐，每人带菜。</text>
+<text x="64" y="345" font-size="26" font-weight="700" fill="#152642">逐步条件</text>
+<rect x="260" y="304" width="220" height="76" rx="16" fill="#edf2fb" stroke="#d6deea" stroke-width="2"/>
+<text x="280" y="352" font-size="25" font-weight="700" fill="#152642">因预报有雨</text>
+<path d="M482 342 L505 342" stroke="#526079" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="510" y="304" width="220" height="76" rx="16" fill="#edf2fb" stroke="#d6deea" stroke-width="2"/>
+<text x="530" y="352" font-size="25" font-weight="700" fill="#152642">改在家</text>
+<path d="M732 342 L755 342" stroke="#526079" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="760" y="304" width="220" height="76" rx="16" fill="#edf2fb" stroke="#d6deea" stroke-width="2"/>
+<text x="780" y="352" font-size="25" font-weight="700" fill="#152642">聚餐，</text>
+<path d="M982 342 L1005 342" stroke="#526079" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="1010" y="304" width="220" height="76" rx="16" fill="#edf2fb" stroke="#d6deea" stroke-width="2"/>
+<text x="1030" y="352" font-size="25" font-weight="700" fill="#152642">每人带菜。</text>
+<path d="M1232 342 L1255 342" stroke="#526079" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="1260" y="304" width="220" height="76" rx="16" fill="#edf2fb" stroke="#d6deea" stroke-width="2"/>
+<text x="1280" y="352" font-size="25" font-weight="700" fill="#152642">EOS 结束符</text>
+<text x="64" y="453" font-size="26" font-weight="700" fill="#087e83">当前 policy</text>
+<text x="64" y="490" font-size="22" font-weight="400" fill="#526079">参数可更新</text>
+<text x="64" y="623" font-size="25" font-weight="700" fill="#7550ad">冻结 reference</text>
+<text x="64" y="660" font-size="22" font-weight="400" fill="#526079">参数不更新</text>
+<rect x="260" y="414" width="220" height="105" rx="16" fill="white" stroke="#087e83" stroke-width="2"/>
+<text x="332" y="479" font-size="34" font-weight="700" fill="#087e83">0.5</text>
+<rect x="510" y="414" width="220" height="105" rx="16" fill="white" stroke="#087e83" stroke-width="2"/>
+<text x="582" y="479" font-size="34" font-weight="700" fill="#087e83">0.4</text>
+<rect x="760" y="414" width="220" height="105" rx="16" fill="white" stroke="#087e83" stroke-width="2"/>
+<text x="832" y="479" font-size="34" font-weight="700" fill="#087e83">0.5</text>
+<rect x="1010" y="414" width="220" height="105" rx="16" fill="white" stroke="#087e83" stroke-width="2"/>
+<text x="1082" y="479" font-size="34" font-weight="700" fill="#087e83">0.5</text>
+<rect x="1260" y="414" width="220" height="105" rx="16" fill="white" stroke="#087e83" stroke-width="2"/>
+<text x="1332" y="479" font-size="34" font-weight="700" fill="#087e83">0.8</text>
+<text x="260" y="556" font-size="23" font-weight="400" fill="#526079">每格都是 P(当前 token | 提示与本行回答的已有前缀)</text>
+<rect x="260" y="584" width="220" height="105" rx="16" fill="white" stroke="#7550ad" stroke-width="2"/>
+<text x="332" y="649" font-size="34" font-weight="700" fill="#7550ad">0.5</text>
+<rect x="510" y="584" width="220" height="105" rx="16" fill="white" stroke="#7550ad" stroke-width="2"/>
+<text x="582" y="649" font-size="34" font-weight="700" fill="#7550ad">0.4</text>
+<rect x="760" y="584" width="220" height="105" rx="16" fill="white" stroke="#7550ad" stroke-width="2"/>
+<text x="832" y="649" font-size="34" font-weight="700" fill="#7550ad">0.5</text>
+<rect x="1010" y="584" width="220" height="105" rx="16" fill="white" stroke="#7550ad" stroke-width="2"/>
+<text x="1082" y="649" font-size="34" font-weight="700" fill="#7550ad">0.25</text>
+<rect x="1260" y="584" width="220" height="105" rx="16" fill="white" stroke="#7550ad" stroke-width="2"/>
+<text x="1332" y="649" font-size="34" font-weight="700" fill="#7550ad">0.8</text>
+<text x="260" y="726" font-size="23" font-weight="400" fill="#526079">每格都是 P(当前 token | 提示与本行回答的已有前缀)</text>
+<rect x="64" y="796" width="700" height="160" rx="16" fill="white" stroke="#087e83" stroke-width="2"/>
+<rect x="804" y="796" width="732" height="160" rx="16" fill="white" stroke="#7550ad" stroke-width="2"/>
+<text x="88" y="839" font-size="27" font-weight="700" fill="#087e83">当前整段概率</text>
+<text x="88" y="882" font-size="25" font-weight="400" fill="#152642">0.5 × 0.4 × 0.5 × 0.5 × 0.8 = 0.04</text>
+<text x="88" y="927" font-size="23" font-weight="400" fill="#152642">log πθ(A|x) = 各步 log 概率之和 ≈ −3.218876</text>
+<text x="828" y="839" font-size="27" font-weight="700" fill="#7550ad">参考整段概率</text>
+<text x="828" y="882" font-size="25" font-weight="400" fill="#152642">0.5 × 0.4 × 0.5 × 0.25 × 0.8 = 0.02</text>
+<text x="828" y="927" font-size="25" font-weight="400" fill="#152642">log πref(A|x) ≈ −3.912023</text>
+<text x="64" y="1012" font-size="25" font-weight="700" fill="#152642">只给回答位置计分，提示与 padding 不计入这份序列 log 概率。EOS 的计分约定需一致。</text>
+<text x="64" y="1060" font-size="21" font-weight="400" fill="#526079">图 1  本文自拟教学算例  |  原理对应 DPO 式 7 中的序列条件概率</text>
+</g>
+</svg>

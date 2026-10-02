@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="920" viewBox="0 0 1440 920"><defs>
+<marker id="blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2469a5"/></marker>
+<marker id="green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#258163"/></marker>
+<marker id="purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8853a4"/></marker>
+<marker id="orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#b67824"/></marker>
+<marker id="muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#516578"/></marker>
+</defs><rect width="100%" height="100%" fill="#ffffff"/>
+<style>text{font-family:"Noto Sans CJK SC","Noto Sans CJK",sans-serif;fill:#172b42} .sub{fill:#516578}</style>
+<text x="44" y="58" font-size="34" font-weight="700" text-anchor="start" style="fill:#172b42">Zero-WAM 先生成机器人未来 再解码动作</text>
+<text x="44" y="99" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">视频是动作计算的中间条件 不是已经发生的测量</text>
+<rect x="45" y="170" width="305" height="180" rx="16" fill="#edf5fb" stroke="#2469a5" stroke-width="2"/>
+<text x="65" y="209" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">任务条件与训练记录</text>
+<text x="65" y="249" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">人类示范视频 h</text>
+<text x="65" y="280" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">机器人完整视频与动作</text>
+<text x="65" y="311" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">当前历史与真实未来</text>
+<rect x="450" y="170" width="355" height="180" rx="16" fill="#f5eef9" stroke="#8853a4" stroke-width="2"/>
+<text x="470" y="209" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">训练视频分支</text>
+<text x="470" y="249" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">带噪真实视频 → 速度预测</text>
+<text x="470" y="280" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">视频flow-matching损失</text>
+<text x="470" y="311" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">IFP辅助预测更远片段</text>
+<rect x="945" y="170" width="445" height="180" rx="16" fill="#f5eef9" stroke="#8853a4" stroke-width="2"/>
+<text x="965" y="209" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">训练动作分支</text>
+<text x="965" y="249" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">条件包含真实下一视频</text>
+<text x="965" y="280" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">动作flow-matching损失</text>
+<text x="965" y="311" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">不直接读取人类示范</text>
+<polyline points="350,250 450,250" fill="none" stroke="#2469a5" stroke-width="3" stroke-dasharray="0" marker-end="url(#blue)"/>
+<polyline points="200,350 200,379 1170,379 1170,350" fill="none" stroke="#258163" stroke-width="3" stroke-dasharray="0" marker-end="url(#green)"/>
+<text x="530" y="372" font-size="20" font-weight="400" text-anchor="start" style="fill:#258163">真实下一视频来自数据</text>
+<text x="45" y="411" font-size="20" font-weight="400" text-anchor="start" style="fill:#8853a4">训练目标来自配对的机器人记录。IFP梯度督促主视频表示利用示范。</text>
+<rect x="45" y="505" width="305" height="180" rx="16" fill="#edf5fb" stroke="#2469a5" stroke-width="2"/>
+<text x="65" y="544" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">部署任务条件</text>
+<text x="65" y="584" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">人类视频编码并缓存</text>
+<text x="65" y="615" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">当前机器人历史</text>
+<text x="65" y="646" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">参数不因新示范而更新</text>
+<rect x="450" y="505" width="355" height="180" rx="16" fill="#f5eef9" stroke="#8853a4" stroke-width="2"/>
+<text x="470" y="544" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">先生成下一机器人视频</text>
+<text x="470" y="584" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">从噪声沿学到速度场生成</text>
+<text x="470" y="615" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">当前没有真实未来</text>
+<text x="470" y="646" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">部署移除IFP辅助模块</text>
+<rect x="945" y="505" width="445" height="180" rx="16" fill="#eef8f1" stroke="#258163" stroke-width="2"/>
+<text x="965" y="544" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">再生成并执行动作片段</text>
+<text x="965" y="584" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">条件换成生成的视频</text>
+<text x="965" y="615" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">真实机器人执行</text>
+<text x="965" y="646" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">新观测验证实际结果</text>
+<polyline points="350,590 450,590" fill="none" stroke="#2469a5" stroke-width="3" stroke-dasharray="0" marker-end="url(#blue)"/>
+<polyline points="805,590 945,590" fill="none" stroke="#8853a4" stroke-width="3" stroke-dasharray="0" marker-end="url(#purple)"/>
+<text x="816" y="557" font-size="20" font-weight="400" text-anchor="start" style="fill:#8853a4">生成未来</text>
+<polyline points="1160,685 1160,760 195,760 195,685" fill="none" stroke="#258163" stroke-width="3" stroke-dasharray="0" marker-end="url(#green)"/>
+<text x="45" y="845" font-size="20" font-weight="400" text-anchor="start" style="fill:#516578">不同于Dreamer：这里没有凭上述机制自动产生的critic或想象奖励RL。</text>
+<text x="45" y="881" font-size="20" font-weight="400" text-anchor="start" style="fill:#516578">不同于DINO-WM：不是在部署时显式比较一批候选动作的前向预测。</text>
+</svg>

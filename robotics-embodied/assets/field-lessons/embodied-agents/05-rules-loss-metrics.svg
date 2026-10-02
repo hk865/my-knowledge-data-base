@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="825" viewBox="0 0 1440 825"><defs>
+<marker id="blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2469a5"/></marker>
+<marker id="green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#258163"/></marker>
+<marker id="purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8853a4"/></marker>
+<marker id="orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#b67824"/></marker>
+<marker id="muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#516578"/></marker>
+</defs><rect width="100%" height="100%" fill="#ffffff"/>
+<style>text{font-family:"Noto Sans CJK SC","Noto Sans CJK",sans-serif;fill:#172b42} .sub{fill:#516578}</style>
+<text x="44" y="58" font-size="34" font-weight="700" text-anchor="start" style="fill:#172b42">门控 损失 与评估分数 三种数字三种用途</text>
+<text x="44" y="99" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">先问它决定什么 再问它来自哪里 最后追踪是否进入参数更新</text>
+<rect x="45" y="180" width="420" height="390" rx="16" fill="#fff5e7" stroke="#b67824" stroke-width="2"/>
+<text x="65" y="219" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">运行时规则</text>
+<text x="65" y="259" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">例：G=I类型 × I依赖 × I动作</text>
+<text x="65" y="290" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">每项为0或1</text>
+<text x="65" y="321" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">一项失败 → 这次调用被阻止</text>
+<text x="65" y="352" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578"></text>
+<text x="65" y="383" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">输入：当前参数与证据依赖</text>
+<text x="65" y="414" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">输出：允许 / 阻塞原因</text>
+<text x="65" y="445" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578"></text>
+<text x="65" y="476" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">通常是确定性程序检查</text>
+<text x="65" y="507" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">通过不代表所有物理风险消失</text>
+<rect x="510" y="180" width="420" height="390" rx="16" fill="#f5eef9" stroke="#8853a4" stroke-width="2"/>
+<text x="530" y="219" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">训练损失</text>
+<text x="530" y="259" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">例：L = −log πθ(参考操作)</text>
+<text x="530" y="290" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">参考概率0.2 → L约1.609</text>
+<text x="530" y="321" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">用梯度改变指定网络参数</text>
+<text x="530" y="352" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578"></text>
+<text x="530" y="383" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">输入：预测与标签 / 回报</text>
+<text x="530" y="414" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">输出：优化目标与梯度</text>
+<text x="530" y="445" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578"></text>
+<text x="530" y="476" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">需要数据构造和优化器</text>
+<text x="530" y="507" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">不能仅凭写了日志就声称训练</text>
+<rect x="975" y="180" width="420" height="390" rx="16" fill="#eef8f1" stroke="#258163" stroke-width="2"/>
+<text x="995" y="219" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">事后评价</text>
+<text x="995" y="259" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">例：100次试验成功80次</text>
+<text x="995" y="290" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">成功率80%是一组结果统计</text>
+<text x="995" y="321" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">通常不直接参与本次反传</text>
+<text x="995" y="352" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578"></text>
+<text x="995" y="383" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">输入：独立判据和全部试次</text>
+<text x="995" y="414" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">输出：成功率 时间等指标</text>
+<text x="995" y="445" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578"></text>
+<text x="995" y="476" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">文本计划分数 ≠ 真机成功率</text>
+<text x="995" y="507" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">条件子集 ≠ 全量评测</text>
+<text x="45" y="650" font-size="20" font-weight="400" text-anchor="start" style="fill:#516578">规则产生的结果可以另行用作RL奖励或监督标签，但必须再说明怎样进入训练目标。</text>
+<text x="45" y="695" font-size="20" font-weight="400" text-anchor="start" style="fill:#516578">EmbodiedSkills的前提检查、MEMORA的文本规划评分，不应被自动改写为端到端神经loss。</text>
+<text x="45" y="759" font-size="20" font-weight="400" text-anchor="start" style="fill:#516578">评价最终任务时，最好让独立的环境判据或可信证据检查结果，避免只相信模型自己说“完成”。</text>
+</svg>

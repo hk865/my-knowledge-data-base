@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="850" viewBox="0 0 1440 850"><defs>
+<marker id="blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2469a5"/></marker>
+<marker id="green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#258163"/></marker>
+<marker id="purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8853a4"/></marker>
+<marker id="orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#b67824"/></marker>
+<marker id="muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#516578"/></marker>
+</defs><rect width="100%" height="100%" fill="#ffffff"/>
+<style>text{font-family:"Noto Sans CJK SC","Noto Sans CJK",sans-serif;fill:#172b42} .sub{fill:#516578}</style>
+<text x="44" y="58" font-size="34" font-weight="700" text-anchor="start" style="fill:#172b42">世界模型怎样影响行动 两条不同路线</text>
+<text x="44" y="99" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">训练actor参数与在线优化动作序列 必须分清</text>
+<text x="45" y="155" font-size="27" font-weight="700" text-anchor="start" style="fill:#172b42">A  Dreamer：把想象成果写进策略</text>
+<rect x="45" y="185" width="280" height="155" rx="16" fill="#edf5fb" stroke="#2469a5" stroke-width="2"/>
+<text x="65" y="224" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">真实状态起点</text>
+<text x="65" y="264" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">从回放推断后验</text>
+<text x="65" y="295" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">锚定真实经验</text>
+<rect x="385" y="185" width="300" height="155" rx="16" fill="#f5eef9" stroke="#8853a4" stroke-width="2"/>
+<text x="405" y="224" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">模型内展开轨迹</text>
+<text x="405" y="264" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">actor选动作</text>
+<text x="405" y="295" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">模型预测状态与奖励</text>
+<rect x="745" y="185" width="300" height="155" rx="16" fill="#f5eef9" stroke="#8853a4" stroke-width="2"/>
+<text x="765" y="224" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">训练actor和critic</text>
+<text x="765" y="264" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">回报 → 策略梯度</text>
+<text x="765" y="295" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">价值目标 → critic</text>
+<rect x="1105" y="185" width="285" height="155" rx="16" fill="#eef8f1" stroke="#258163" stroke-width="2"/>
+<text x="1125" y="224" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">真实部署</text>
+<text x="1125" y="264" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">读取已训练actor</text>
+<text x="1125" y="295" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">执行后再观察</text>
+<polyline points="325,260 385,260" fill="none" stroke="#8853a4" stroke-width="3" stroke-dasharray="0" marker-end="url(#purple)"/>
+<polyline points="685,260 745,260" fill="none" stroke="#8853a4" stroke-width="3" stroke-dasharray="0" marker-end="url(#purple)"/>
+<polyline points="1045,260 1105,260" fill="none" stroke="#8853a4" stroke-width="3" stroke-dasharray="0" marker-end="url(#purple)"/>
+<text x="45" y="390" font-size="20" font-weight="400" text-anchor="start" style="fill:#8853a4">更新对象：actor θ、critic ψ。世界模型 φ 的真实性仍由真实数据损失约束。</text>
+<text x="45" y="470" font-size="27" font-weight="700" text-anchor="start" style="fill:#172b42">B  DINO-WM：当前目标下搜索动作</text>
+<rect x="45" y="505" width="280" height="155" rx="16" fill="#edf5fb" stroke="#2469a5" stroke-width="2"/>
+<text x="65" y="544" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">当前图 + 目标图</text>
+<text x="65" y="584" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">编码得到 zₜ、z目标</text>
+<text x="65" y="615" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">模型权重保持固定</text>
+<rect x="385" y="505" width="300" height="155" rx="16" fill="#edf5fb" stroke="#2469a5" stroke-width="2"/>
+<text x="405" y="544" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">多条候选动作</text>
+<text x="405" y="584" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">经模型预测各终点</text>
+<text x="405" y="615" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">计算到目标的距离</text>
+<rect x="745" y="505" width="300" height="155" rx="16" fill="#edf5fb" stroke="#2469a5" stroke-width="2"/>
+<text x="765" y="544" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">CEM挑选并更新</text>
+<text x="765" y="584" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">保留低代价候选</text>
+<text x="765" y="615" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">优化动作采样分布</text>
+<rect x="1105" y="505" width="285" height="155" rx="16" fill="#eef8f1" stroke="#258163" stroke-width="2"/>
+<text x="1125" y="544" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">执行一小段</text>
+<text x="1125" y="584" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">读取新的真实观测</text>
+<text x="1125" y="615" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">重新规划</text>
+<polyline points="325,580 385,580" fill="none" stroke="#2469a5" stroke-width="3" stroke-dasharray="0" marker-end="url(#blue)"/>
+<polyline points="685,580 745,580" fill="none" stroke="#2469a5" stroke-width="3" stroke-dasharray="0" marker-end="url(#blue)"/>
+<polyline points="1045,580 1105,580" fill="none" stroke="#2469a5" stroke-width="3" stroke-dasharray="0" marker-end="url(#blue)"/>
+<polyline points="1230,660 1230,716 185,716 185,660" fill="none" stroke="#258163" stroke-width="3" stroke-dasharray="0" marker-end="url(#green)"/>
+<text x="45" y="800" font-size="20" font-weight="400" text-anchor="start" style="fill:#516578">更新对象：候选动作或其采样分布。即使对动作求梯度，也不等于重新训练模型。</text>
+</svg>

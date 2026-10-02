@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1080" viewBox="0 0 1400 1080">
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#536477"/></marker></defs>
+<rect width="1400" height="1080" fill="#f7fafc"/>
+<g font-family="Noto Sans CJK SC, Noto Sans, sans-serif" fill="#162b3e">
+<text x="48" y="62" font-size="34" font-weight="bold">RMA：特权训练、历史适应与双频控制</text>
+<text x="48" y="103" font-size="19" font-weight="normal">原创重绘：Figure 2、Algorithm 1–2 ｜ 部署“适应”是推断 ẑ，不是在线更新网络权重</text>
+<text x="48" y="155" font-size="23" font-weight="bold" fill="#2663a5">阶段 1  仿真强化学习：联合训练 μ 与 π</text>
+<rect x="48" y="183" width="358" height="137" rx="14" fill="white" stroke="#2663a5" stroke-width="2"/>
+<text x="70" y="223" font-size="24" font-weight="bold" fill="#2663a5">特权环境 eₜ（17维）</text>
+<text x="70" y="261" font-size="20" font-weight="normal">载荷 / 摩擦 / 电机强度…</text>
+<text x="70" y="292" font-size="20" font-weight="normal">仿真可知，真实部署不可见</text>
+<rect x="478" y="183" width="340" height="137" rx="14" fill="white" stroke="#2663a5" stroke-width="2"/>
+<text x="500" y="223" font-size="24" font-weight="bold" fill="#2663a5">环境编码 μ → zₜ</text>
+<text x="500" y="261" font-size="20" font-weight="normal">八维控制相关隐变量</text>
+<text x="500" y="292" font-size="20" font-weight="normal">与基础策略一起 PPO 更新</text>
+<rect x="890" y="183" width="462" height="137" rx="14" fill="white" stroke="#2663a5" stroke-width="2"/>
+<text x="912" y="223" font-size="24" font-weight="bold" fill="#2663a5">基础策略 π → 目标关节角</text>
+<text x="912" y="261" font-size="20" font-weight="normal">输入：xₜ(30) + aₜ₋₁(12) + zₜ(8)</text>
+<text x="912" y="292" font-size="20" font-weight="normal">环境执行 → 奖励 → PPO</text>
+<polyline points="406,250 472,250" fill="none" stroke="#536477" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="818,250 884,250" fill="none" stroke="#536477" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="48" y="386" font-size="23" font-weight="bold" fill="#17705e">阶段 2  仿真监督学习：冻结 μ 与 π，只训练 φ</text>
+<rect x="48" y="414" width="358" height="137" rx="14" fill="white" stroke="#17705e" stroke-width="2"/>
+<text x="70" y="454" font-size="24" font-weight="bold" fill="#17705e">当前 φ 驱动的轨迹</text>
+<text x="70" y="492" font-size="20" font-weight="normal">最近50步状态和动作</text>
+<text x="70" y="523" font-size="20" font-weight="normal">不只收集专家完美轨迹</text>
+<rect x="478" y="414" width="340" height="137" rx="14" fill="white" stroke="#17705e" stroke-width="2"/>
+<text x="500" y="454" font-size="24" font-weight="bold" fill="#17705e">适应网络 φ → ẑₜ</text>
+<text x="500" y="492" font-size="20" font-weight="normal">MLP + 时间一维 CNN</text>
+<text x="500" y="523" font-size="20" font-weight="normal">预测八维隐变量</text>
+<rect x="890" y="414" width="462" height="137" rx="14" fill="white" stroke="#17705e" stroke-width="2"/>
+<text x="912" y="454" font-size="24" font-weight="bold" fill="#17705e">监督与执行分开</text>
+<text x="912" y="492" font-size="20" font-weight="normal">损失：‖ẑₜ − μ(eₜ)‖²</text>
+<text x="912" y="523" font-size="20" font-weight="normal">以 ẑₜ 执行 π，迭代收集新历史</text>
+<polyline points="406,481 472,481" fill="none" stroke="#536477" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="818,481 884,481" fill="none" stroke="#536477" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="48" y="617" font-size="23" font-weight="bold" fill="#b66a17">部署  无特权环境输入，无梯度更新</text>
+<rect x="48" y="646" width="358" height="158" rx="14" fill="white" stroke="#b66a17" stroke-width="2"/>
+<text x="70" y="686" font-size="24" font-weight="bold" fill="#b66a17">传感历史 → φ（10 Hz）</text>
+<text x="70" y="724" font-size="20" font-weight="normal">关节角 / 速度 / 姿态 / 接触</text>
+<text x="70" y="755" font-size="20" font-weight="normal">最近约0.5秒历史</text>
+<text x="70" y="786" font-size="20" font-weight="normal">更新最新可用 ẑ</text>
+<rect x="478" y="646" width="340" height="158" rx="14" fill="white" stroke="#b66a17" stroke-width="2"/>
+<text x="500" y="686" font-size="24" font-weight="bold" fill="#b66a17">基础 π（100 Hz）</text>
+<text x="500" y="724" font-size="20" font-weight="normal">当前 xₜ + 前动作 aₜ₋₁</text>
+<text x="500" y="755" font-size="20" font-weight="normal">读取最新 ẑ</text>
+<text x="500" y="786" font-size="20" font-weight="normal">输出12维目标关节角</text>
+<rect x="890" y="646" width="462" height="158" rx="14" fill="white" stroke="#b66a17" stroke-width="2"/>
+<text x="912" y="686" font-size="24" font-weight="bold" fill="#b66a17">PD → 力矩 → 机器人</text>
+<text x="912" y="724" font-size="20" font-weight="normal">τ = Kp(q̂−q) + Kd(0−q̇)</text>
+<text x="912" y="755" font-size="20" font-weight="normal">传感器返回新观测</text>
+<text x="912" y="786" font-size="20" font-weight="normal">快速状态反馈 + 慢速环境适应</text>
+<polyline points="406,725 472,725" fill="none" stroke="#536477" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="818,725 884,725" fill="none" stroke="#536477" stroke-width="3" marker-end="url(#arrow)"/>
+<polyline points="1120,804 1120,864 218,864 218,810" fill="none" stroke="#536477" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="480" y="850" font-size="18" font-weight="normal" fill="#536477">真实状态与动作历史回写</text>
+<text x="48" y="932" font-size="23" font-weight="bold">必须分开：目标角 ≠ 力矩；环境 latent ≠ 精确物理参数；不摔倒 ≠ 完成任务</text>
+<text x="48" y="983" font-size="20" font-weight="normal">来源：III-A/B/C、IV-A/B；图为信息流摘要，不代表系统的全部安全与实时实现。</text>
+</g></svg>

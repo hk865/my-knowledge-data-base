@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="910" viewBox="0 0 1440 910"><defs>
+<marker id="blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2469a5"/></marker>
+<marker id="green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#258163"/></marker>
+<marker id="purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8853a4"/></marker>
+<marker id="orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#b67824"/></marker>
+<marker id="muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#516578"/></marker>
+</defs><rect width="100%" height="100%" fill="#ffffff"/>
+<style>text{font-family:"Noto Sans CJK SC","Noto Sans CJK",sans-serif;fill:#172b42} .sub{fill:#516578}</style>
+<text x="44" y="58" font-size="34" font-weight="700" text-anchor="start" style="fill:#172b42">同一段真实轨迹 可以产生不同监督样本</text>
+<text x="44" y="99" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">先按决策时间切开 再确定输入和标签 禁止提前看到未来</text>
+<rect x="45" y="175" width="230" height="150" rx="16" fill="#edf5fb" stroke="#2469a5" stroke-width="2"/>
+<text x="65" y="214" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">O18 目标已定位</text>
+<text x="65" y="254" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">看到杯子 C17</text>
+<text x="65" y="285" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">尚未知道抓取结果</text>
+<rect x="325" y="175" width="230" height="150" rx="16" fill="#edf5fb" stroke="#2469a5" stroke-width="2"/>
+<text x="345" y="214" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">A2 第一次抓取</text>
+<text x="345" y="254" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">真实执行动作</text>
+<text x="345" y="285" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">不能事后改成成功</text>
+<rect x="605" y="175" width="230" height="150" rx="16" fill="#fff5e7" stroke="#b67824" stroke-width="2"/>
+<text x="625" y="214" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">O20 验证空夹</text>
+<text x="625" y="254" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">杯子仍在台面</text>
+<text x="625" y="285" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">恢复证据出现</text>
+<rect x="885" y="175" width="230" height="150" rx="16" fill="#edf5fb" stroke="#2469a5" stroke-width="2"/>
+<text x="905" y="214" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">O21 与 A4</text>
+<text x="905" y="254" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">重新定位</text>
+<text x="905" y="285" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">再执行调整动作</text>
+<rect x="1165" y="175" width="230" height="150" rx="16" fill="#eef8f1" stroke="#258163" stroke-width="2"/>
+<text x="1185" y="214" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">O22 持杯证据</text>
+<text x="1185" y="254" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">新图 + 夹爪反馈</text>
+<text x="1185" y="285" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">允许推进任务</text>
+<polyline points="275,250 325,250" fill="none" stroke="#2469a5" stroke-width="3" stroke-dasharray="0" marker-end="url(#blue)"/>
+<polyline points="555,250 605,250" fill="none" stroke="#2469a5" stroke-width="3" stroke-dasharray="0" marker-end="url(#blue)"/>
+<polyline points="835,250 885,250" fill="none" stroke="#2469a5" stroke-width="3" stroke-dasharray="0" marker-end="url(#blue)"/>
+<polyline points="1115,250 1165,250" fill="none" stroke="#2469a5" stroke-width="3" stroke-dasharray="0" marker-end="url(#blue)"/>
+<rect x="45" y="485" width="420" height="245" rx="16" fill="#f5eef9" stroke="#8853a4" stroke-width="2"/>
+<text x="65" y="524" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">调度器训练样本</text>
+<text x="65" y="564" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">输入：截至该决策的图与历史</text>
+<text x="65" y="595" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">允许技能、阶段、空夹报告</text>
+<text x="65" y="626" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">标签：审核后的下一操作</text>
+<text x="65" y="657" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">只学习模型生成的决策token</text>
+<text x="65" y="688" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">未来O22不能漏进早期输入</text>
+<rect x="510" y="485" width="420" height="245" rx="16" fill="#f5eef9" stroke="#8853a4" stroke-width="2"/>
+<text x="530" y="524" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">动作策略训练样本</text>
+<text x="530" y="564" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">输入：O21 + 机器人状态</text>
+<text x="530" y="595" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">当前子目标</text>
+<text x="530" y="626" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">标签：正确示范动作片段</text>
+<text x="530" y="657" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">失败动作不能无条件当专家</text>
+<text x="530" y="688" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">不同VLA可有不同动作loss</text>
+<rect x="975" y="485" width="420" height="245" rx="16" fill="#f5eef9" stroke="#8853a4" stroke-width="2"/>
+<text x="995" y="524" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">验证器训练样本</text>
+<text x="995" y="564" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">输入：子目标 + 执行报告</text>
+<text x="995" y="595" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">执行后的新图 O20</text>
+<text x="995" y="626" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">标签：未持握 / 需要重看</text>
+<text x="995" y="657" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">来源：规则 人工或可信标注</text>
+<text x="995" y="688" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">不由原计划直接生成真值</text>
+<polyline points="720,325 720,380 255,380 255,485" fill="none" stroke="#8853a4" stroke-width="3" stroke-dasharray="8" marker-end="url(#purple)"/>
+<polyline points="1000,325 1000,420 720,420 720,485" fill="none" stroke="#8853a4" stroke-width="3" stroke-dasharray="8" marker-end="url(#purple)"/>
+<polyline points="720,325 720,360 1185,360 1185,485" fill="none" stroke="#8853a4" stroke-width="3" stroke-dasharray="8" marker-end="url(#purple)"/>
+<text x="45" y="812" font-size="20" font-weight="400" text-anchor="start" style="fill:#516578">保存日志 → 审核与切片 → 指定标签与损失 → 优化器更新。中间环节不会自动发生。</text>
+<text x="45" y="851" font-size="20" font-weight="400" text-anchor="start" style="fill:#516578">同一空夹事件既可成为恢复输入，也可成为验证负例，但不是所有模块共享同一个目标。</text>
+</svg>

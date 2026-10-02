@@ -1,146 +1,16 @@
 {
-  "schema_version": 1,
+  "schema_version": 3,
   "repository": "hk865/my-knowledge-data-base",
   "branch": "main",
-  "export_date": "2026-09-30",
-  "source_direction": "Curated Pages and extracted paper catalog to GitHub with collision-preserving merges",
-  "managed_files": [
-    {
-      "path": "docs/research-map.md",
-      "recorded_sha256": "5774d4e187e6fa81cc737f0a88b668b104d588fa3d440cbb8ab4fae856771678",
-      "git_blob_sha": "f49c6a76cd5d7a44c87e56b9d2ed64ca773fe64f"
-    },
-    {
-      "path": "docs/model-training-multimodal.md",
-      "recorded_sha256": "8a9455e5501aec1b28570bda1762cedd6ce26044766dadd617a316f2f7fdb80b",
-      "git_blob_sha": "a6ffea39d2cede218450c3d05b886822dc108777"
-    },
-    {
-      "path": "docs/robotics-embodied.md",
-      "recorded_sha256": "9fcb9790061a6e7e301266fece940b9d01b69fb0f379a6aff942671dadb4bbe9",
-      "git_blob_sha": "d2729fa3bfbc78ec164439704a048a1e8cd41808"
-    },
-    {
-      "path": "index.json",
-      "recorded_sha256": "d112a7a592e7fc7eb53a0b5d6326b7269912b822ec3aa1ef777fd4a09fd0f4e5",
-      "git_blob_sha": "36954862a1ca0cf212157f19fcb93d19a106938b"
-    },
-    {
-      "path": "index.csv",
-      "recorded_sha256": "c67f86bf0d53fbbad144d50bbb37e979f2a5554807bfb815a42872b77d6f43f3",
-      "git_blob_sha": "9c54497868253881c839d21f5d8da54de8a96306"
-    },
-    {
-      "path": "papers.json",
-      "recorded_sha256": "c9ffd8d844b6002f0d8f29da522bee7bcbdbe92c54033b66aea6af96bb94e54d",
-      "git_blob_sha": "5560c16ec5e4a3306d53ca2f77f62646c8c97f1c"
-    },
-    {
-      "path": "papers.csv",
-      "recorded_sha256": "feb42eab5cd876ccd9e5654a1bd457847d619d87e5d20eb92c1f2ede95d9a602",
-      "git_blob_sha": "48f9b5303753e6f19d0a7aaa5bb17c129286083e"
-    },
-    {
-      "path": "daily/2026-09-30.md",
-      "recorded_sha256": "8e6af4485e545b7e2dcc2be6f9aac3cd9e16bf3c277b54cf7066183fcef0accd",
-      "git_blob_sha": "3e770bd151115df62341d50f964d271417844e33"
-    },
-    {
-      "path": "SYNC.md",
-      "recorded_sha256": "cfc51666b0431e8964dcd53e935db6b3692fc1941d9efee54c846555c9538f6e",
-      "git_blob_sha": "e25849c330bfa359111b15753c1fdb1f6c943fce"
-    },
-    {
-      "path": "README.md",
-      "recorded_sha256": "1e02405c944bf3287e52464c78e04ef569809d013aeb04e62bdc69fc7bbb52dc",
-      "git_blob_sha": "bb6ca6a8110a2d9772318e4d29ea5aa91a27c98b"
-    },
-    {
-      "path": "taxonomy.json",
-      "recorded_sha256": "69b20892aa445939beb8da5c55b8c16d0b4eba9fc26cb12e77b2bb439439b96e",
-      "git_blob_sha": "a887360a1b7cec0b8f77f3495c5fba0c12ef5803"
-    },
-    {
-      "path": "unresolved.json",
-      "recorded_sha256": "046ff4f1b229588b7825bb0c9408cf377b5d63f8ddfb5919e3c69d22baeb45f5",
-      "git_blob_sha": "e337730bd68bee55418a9a7c5526e5e0f1be9d3a"
-    },
-    {
-      "path": "docs/paper-catalog.md",
-      "recorded_sha256": "6906a7a11ed7aaea8d5ecb6385b19f118191826838ddcc6ae6c2d8de317fa25a",
-      "git_blob_sha": "dc14b0929484db1798ee37eb14096bc7229f4b82"
-    },
-    {
-      "path": "docs/topics.md",
-      "recorded_sha256": "afded4fb9226cda6ad2161582ab40f82d49cece7692eab35d23b97a93b53700c",
-      "git_blob_sha": "8e483605b2650b58e96ff9b5ded1431d7bf9f0d0"
-    },
-    {
-      "path": "docs/unresolved.md",
-      "recorded_sha256": "27cbb4d71ea26965917242baadc45057b33dba326a14533d00c14b1302a626db",
-      "git_blob_sha": "08821a4821bfb9555e04bf59a340b48d6146cb29"
-    },
-    {
-      "path": "docs/deep-readings/qwen2.5-1m.md",
-      "recorded_sha256": "70486f807a639ec768558633c7b152f58739a14df5cff3aadbb1af807c3b7ef9",
-      "git_blob_sha": "c1c750e0f1f0972ba0a601a28171b539cc12ef0b"
-    },
-    {
-      "path": "docs/roadmaps/long-context.md",
-      "recorded_sha256": "acb1eb50b5bab47666d380f5e5d3e6f5fc9d3adc829361cd9b537ccd0c0b2661",
-      "git_blob_sha": "7586bd29c44361eb498e3831a5607288364a1ed1"
-    },
-    {
-      "path": "docs/roadmaps/long-context-graph.json",
-      "recorded_sha256": "4cac46a18750d044f58c9dc9627b661b321358366704475d85ef645b18bfdae5",
-      "git_blob_sha": "10a0fda2867febd11117e85a095b06fe87e12f6c"
-    },
-    {
-      "path": "assets/qwen2.5-1m-mechanism.svg",
-      "recorded_sha256": "6e17afb9f0c59d29a502d5a4509219255f7cb7c7a0f856f74ceed8dc10b1db3d",
-      "git_blob_sha": "c4f0fd918f3c871ffb20b11ccb5206faa462b484"
-    },
-    {
-      "path": "docs/deep-readings/qwen2.5-1m-evidence.json",
-      "recorded_sha256": "1331faabe4e1b53234743d178c5595d8e75052d4a3185ad917f1a41be0551c35",
-      "git_blob_sha": "9604518cafaaaaf564eb2b35819a37e26ed2d2ef"
-    }
-  ],
-  "page_path_mapping": [
-    {
-      "page_id": "page_247ddd1100e881919dd3c1174b352e92",
-      "path": "docs/research-map.md",
-      "stream_kind": "content"
-    },
-    {
-      "page_id": "page_dc8d589957448191bb8d49223db799e8",
-      "path": "docs/model-training-multimodal.md",
-      "stream_kind": "content"
-    },
-    {
-      "page_id": "page_2ac2740d1ed88191a4b6b8ff416f53b9",
-      "path": "docs/robotics-embodied.md",
-      "stream_kind": "content"
-    },
-    {
-      "page_id": "page_bba3bea77e788191ae879c518725b8f2",
-      "path": "docs/deep-readings/qwen2.5-1m.md",
-      "stream_kind": "content"
-    },
-    {
-      "page_id": "page_69f6c9706e008191bee71306deb23a92",
-      "path": "docs/roadmaps/long-context.md",
-      "stream_kind": "content"
-    }
-  ],
-  "last_successful_check": {
-    "checked_through": "2026-09-30T08:13:00Z",
-    "incremental_window_start": "2026-09-30T06:14:00Z",
-    "scope": "有限个人上下文检索；另补查2026-09-30 02:29–03:11以及2026-09-03 DOI；非全量聊天档案",
-    "new_verified_resources": 0,
-    "new_unresolved_candidates": 1,
-    "verified_resources": 117,
-    "verified_chat_resources": 96,
-    "unresolved_candidates": 18
-  }
+  "export_date": "2026-10-02",
+  "scope": "Public academic content, directory navigation, official paper links and original illustrations",
+  "content_index": "index.json",
+  "paper_catalog": "papers.json",
+  "sync_policy": {
+    "direction": "Curated academic content to GitHub",
+    "preserve_manual_edits": true,
+    "force_push": false,
+    "source_deletion_does_not_delete_repository_files": true
+  },
+  "privacy": "Private source addresses, identifiers and internal synchronization baselines are not included in the public export."
 }

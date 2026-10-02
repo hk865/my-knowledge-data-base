@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2609.01281",
+  "title": "EmbodiedSkills: A Unified Framework for Orchestrating, Training, and Deploying VLA Agents",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/embodiedskills",
+  "official_url": "https://arxiv.org/abs/2609.01281v1",
+  "official_fulltext_url": "https://arxiv.org/pdf/2609.01281v1",
+  "read_version": "v1",
+  "version_status": "specified_in_existing_reading",
+  "reading_depth": "selected_fulltext_sections_teaching",
+  "teaching_status": "selected_sections_teaching",
+  "content_kind": "reading",
+  "reading_path": "reading.md",
+  "reading_boundary": "已阅读选定章节并完成独立讲解；具体范围见正文，不能视为全部附录和图表审计。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "verified_link_only",
+    "identifier": "arXiv-nonexclusive-distrib-1.0",
+    "license_url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/license.html",
+    "evidence_url": "https://arxiv.org/abs/2609.01281v1",
+    "verification_method": "Opened this version’s Access Paper > view license link and read the destination license; applies to deposited full text, not merely site metadata",
+    "checked_at": "2026-10-02",
+    "note": "The arXiv non-exclusive submission license grants distribution to arXiv, not a public repository mirror; no separate full-text redistribution license verified."
+  },
+  "fulltext_local_status": "official_link_only_redistribution_not_granted",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-02",
+  "legacy_paths": [
+    "robotics-embodied/papers/2026/embodiedskills.md"
+  ],
+  "evidence_paths": [],
+  "authors": [
+    "Wei Wang",
+    "Wenqiao Zhang",
+    "Yutong Lin",
+    "Yuqian Yuan",
+    "Tianwei Lin",
+    "Jinhao Mao",
+    "Zhenxuan Fan",
+    "Mingjian Gao",
+    "Yang Dai",
+    "Wentong Li",
+    "Zheqi Lv",
+    "Zheng Dong",
+    "Yingjie Niu",
+    "Jiaqi Zhu",
+    "Jun Xiao",
+    "Chao Li",
+    "Yueting Zhuang"
+  ],
+  "original_pdf_url": "https://arxiv.org/pdf/2609.01281v1",
+  "topic_paths": [
+    "robotics/embodied-agents",
+    "cross-domain/agents"
+  ]
+}

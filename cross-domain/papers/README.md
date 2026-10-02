@@ -1,0 +1,19 @@
+# 跨方向方法与探索：规范单篇目录
+
+[回到领域](../README.md) · [含跨方向引用的目录](../PAPERS.md)
+
+以下每项链接到唯一的单篇目录。跨方向出现是交叉引用，不重复计算资源。
+
+- [ReAct: Synergizing Reasoning and Acting in Language Models](react/README.md) · 2022 · 技术精读
+- [Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena](llm-judge/README.md) · 2023 · 技术精读
+- [In-context Learning and Induction Heads](arxiv-2209.11895/README.md) · 2022 · 文献卡，暂无独立精读
+- [Transformer Feed-Forward Layers Are Key-Value Memories](arxiv-2012.14913/README.md) · 2020 · 文献卡，暂无独立精读
+- [Locating and Editing Factual Associations in GPT](arxiv-2202.05262/README.md) · 2022 · 文献卡，暂无独立精读
+- [INSPECT: Intrinsic and Systematic Probing Evaluation for Code Transformers](arxiv-2312.05092/README.md) · 2023 · 文献卡，暂无独立精读
+- [PersonaEval: Are LLM Evaluators Human Enough to Judge Role-Play?](arxiv-2508.10014/README.md) · 2025 · 文献卡，暂无独立精读
+- [On scalable oversight with weak LLMs judging strong LLMs](arxiv-2407.04622/README.md) · 2024 · 文献卡，暂无独立精读
+- [Training Compute Optimal Large Language Models](arxiv-2203.15556/README.md) · 2022 · 文献卡，暂无独立精读
+- [Model Compression](url-cornell-compression.kdd06/README.md) · 2006 · 文献卡，暂无独立精读
+- [Do Deep Nets Really Need to be Deep?](arxiv-1312.6184/README.md) · 2013 · 文献卡，暂无独立精读
+- [FitNets: Hints for Thin Deep Nets](arxiv-1412.6550/README.md) · 2014 · 文献卡，暂无独立精读
+- [Distilling the Knowledge in a Neural Network](arxiv-1503.02531/README.md) · 2015 · 文献卡，暂无独立精读

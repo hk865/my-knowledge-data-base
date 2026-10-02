@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="890" viewBox="0 0 1440 890"><defs>
+<marker id="blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2469a5"/></marker>
+<marker id="green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#258163"/></marker>
+<marker id="purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8853a4"/></marker>
+<marker id="orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#b67824"/></marker>
+<marker id="muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#516578"/></marker>
+</defs><rect width="100%" height="100%" fill="#ffffff"/>
+<style>text{font-family:"Noto Sans CJK SC","Noto Sans CJK",sans-serif;fill:#172b42} .sub{fill:#516578}</style>
+<text x="44" y="58" font-size="34" font-weight="700" text-anchor="start" style="fill:#172b42">训练误差从哪里来 梯度允许更新谁</text>
+<text x="44" y="99" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">两种论文路线分列 · 不是把所有损失加进同一个网络</text>
+<text x="45" y="156" font-size="27" font-weight="700" text-anchor="start" style="fill:#172b42">Dreamer 路线</text>
+<rect x="45" y="185" width="330" height="180" rx="16" fill="#edf5fb" stroke="#2469a5" stroke-width="2"/>
+<text x="65" y="224" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">真实轨迹 → 后验状态</text>
+<text x="65" y="264" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">图像与历史得到 sₜ</text>
+<text x="65" y="295" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">编码器与RSSM可学习</text>
+<text x="65" y="326" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">世界模型参数 φ</text>
+<rect x="460" y="185" width="370" height="180" rx="16" fill="#edf5fb" stroke="#2469a5" stroke-width="2"/>
+<text x="480" y="224" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">观测 奖励 继续预测</text>
+<text x="480" y="264" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">预测目标来自真实记录</text>
+<text x="480" y="295" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">负对数似然 Lpred</text>
+<text x="480" y="326" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">反传到相应预测与表征路径</text>
+<rect x="925" y="185" width="465" height="180" rx="16" fill="#f5eef9" stroke="#8853a4" stroke-width="2"/>
+<text x="945" y="224" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">先验与后验的一致性</text>
+<text x="945" y="264" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">KL[sg(q)‖p]：预测追上表征</text>
+<text x="945" y="295" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">KL[q‖sg(p)]：表征可预测</text>
+<text x="945" y="326" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">sg只阻断被包住的梯度路径</text>
+<polyline points="375,270 460,270" fill="none" stroke="#2469a5" stroke-width="3" stroke-dasharray="0" marker-end="url(#blue)"/>
+<polyline points="640,365 640,410 190,410 190,365" fill="none" stroke="#8853a4" stroke-width="3" stroke-dasharray="8" marker-end="url(#purple)"/>
+<polyline points="925,275 875,275 875,432 245,432 245,365" fill="none" stroke="#8853a4" stroke-width="3" stroke-dasharray="8" marker-end="url(#purple)"/>
+<text x="45" y="498" font-size="27" font-weight="700" text-anchor="start" style="fill:#172b42">DINO-WM 路线</text>
+<rect x="45" y="530" width="330" height="175" rx="16" fill="#eef8f1" stroke="#258163" stroke-width="2"/>
+<text x="65" y="569" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">冻结视觉编码器 E</text>
+<text x="65" y="609" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">E(oₜ) 与 E(oₜ₊₁)</text>
+<text x="65" y="640" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">前向计算仍正常进行</text>
+<text x="65" y="671" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">本次训练不更新E</text>
+<rect x="460" y="530" width="370" height="175" rx="16" fill="#edf5fb" stroke="#2469a5" stroke-width="2"/>
+<text x="480" y="569" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">动作编码 + 转移预测</text>
+<text x="480" y="609" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">输入特征历史与动作</text>
+<text x="480" y="640" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">输出预测特征 ẑₜ₊₁</text>
+<text x="480" y="671" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">训练可更新这些参数</text>
+<rect x="925" y="530" width="465" height="175" rx="16" fill="#f5eef9" stroke="#8853a4" stroke-width="2"/>
+<text x="945" y="569" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">潜特征预测误差</text>
+<text x="945" y="609" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">标签：真实下一帧 E(oₜ₊₁)</text>
+<text x="945" y="640" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">L = ‖ẑₜ₊₁ − E(oₜ₊₁)‖²</text>
+<text x="945" y="671" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">可选图像解码器独立训练</text>
+<polyline points="375,610 460,610" fill="none" stroke="#2469a5" stroke-width="3" stroke-dasharray="0" marker-end="url(#blue)"/>
+<polyline points="830,610 925,610" fill="none" stroke="#2469a5" stroke-width="3" stroke-dasharray="0" marker-end="url(#blue)"/>
+<polyline points="1155,705 1155,757 645,757 645,705" fill="none" stroke="#8853a4" stroke-width="3" stroke-dasharray="8" marker-end="url(#purple)"/>
+<text x="45" y="831" font-size="20" font-weight="400" text-anchor="start" style="fill:#516578">蓝色为前向数据 · 紫色虚线为学习信号 · 冻结目标不因当前损失而漂移</text>
+</svg>

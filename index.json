@@ -1,45 +1,346 @@
 [
   {
     "title": "研究兴趣与论文知识库",
-    "file": "docs/research-map.md",
-    "page_id": "page_247ddd1100e881919dd3c1174b352e92",
-    "url": "https://chatgpt.com/space/page_247ddd1100e881919dd3c1174b352e92",
-    "export_date": "2026-09-30",
-    "source_access": "原账户权限控制；仓库内请使用 file 字段",
-    "last_checked_at": "2026-09-30T08:17:00Z"
+    "file": "docs/research-map.md"
   },
   {
     "title": "模型训练与多模态",
-    "file": "docs/model-training-multimodal.md",
-    "page_id": "page_dc8d589957448191bb8d49223db799e8",
-    "url": "https://chatgpt.com/space/page_dc8d589957448191bb8d49223db799e8",
-    "export_date": "2026-09-30",
-    "source_access": "原账户权限控制；仓库内请使用 file 字段",
-    "last_checked_at": "2026-09-30T08:17:00Z"
+    "file": "docs/model-training-multimodal.md"
   },
   {
     "title": "机器人与具身智能",
-    "file": "docs/robotics-embodied.md",
-    "page_id": "page_2ac2740d1ed88191a4b6b8ff416f53b9",
-    "url": "https://chatgpt.com/space/page_2ac2740d1ed88191a4b6b8ff416f53b9",
-    "export_date": "2026-09-30",
-    "source_access": "原账户权限控制；仓库内请使用 file 字段",
-    "last_checked_at": "2026-09-30T08:17:00Z"
+    "file": "docs/robotics-embodied.md"
   },
   {
     "title": "Qwen2.5-1M 全文精读",
-    "file": "docs/deep-readings/qwen2.5-1m.md",
-    "page_id": "page_bba3bea77e788191ae879c518725b8f2",
-    "url": "https://chatgpt.com/space/page_bba3bea77e788191ae879c518725b8f2",
-    "export_date": "2026-09-30",
-    "source_access": "原账户权限控制；仓库内请使用 file 字段"
+    "file": "llm/papers/qwen2.5-1m/reading.md"
   },
   {
     "title": "长上下文 LLM 技术路线图",
-    "file": "docs/roadmaps/long-context.md",
-    "page_id": "page_69f6c9706e008191bee71306deb23a92",
-    "url": "https://chatgpt.com/space/page_69f6c9706e008191bee71306deb23a92",
-    "export_date": "2026-09-30",
-    "source_access": "原账户权限控制；仓库内请使用 file 字段"
+    "file": "docs/roadmaps/long-context.md"
+  },
+  {
+    "title": "Baseline 全文精读与技术路线图",
+    "file": "BASELINES.md"
+  },
+  {
+    "title": "Transformer 全文精读",
+    "file": "llm/papers/transformer/reading.md"
+  },
+  {
+    "title": "Mamba 全文精读",
+    "file": "llm/papers/mamba/reading.md"
+  },
+  {
+    "title": "DeepSeek V2 全文精读",
+    "file": "llm/papers/deepseek-v2/reading.md"
+  },
+  {
+    "title": "测试时计算预算 全文精读",
+    "file": "llm/papers/test-time-compute/reading.md"
+  },
+  {
+    "title": "ReAct 精读 把工具反馈放回语言模型的决策上下文",
+    "file": "cross-domain/papers/react/reading.md"
+  },
+  {
+    "title": "MT Bench 与 Chatbot Arena 精读 怎样检验语言模型裁判",
+    "file": "cross-domain/papers/llm-judge/reading.md"
+  },
+  {
+    "title": "RMA 精读 用短期运动历史适应四足机器人的未知环境",
+    "file": "robotics-embodied/papers/rma/reading.md"
+  },
+  {
+    "title": "R2R 精读 把语言指令落到未见过建筑中的导航动作",
+    "file": "robotics-embodied/papers/r2r/reading.md"
+  },
+  {
+    "title": "DreamerV3 精读 从真实经验到想象中的练习",
+    "file": "multimodal/papers/dreamerv3/reading.md"
+  },
+  {
+    "title": "Diffusion Policy 精读 从人类示范到机器人动作",
+    "file": "robotics-embodied/papers/diffusion-policy/reading.md"
+  },
+  {
+    "title": "OpenVLA 精读 视觉语言预训练如何落到机器人动作",
+    "file": "robotics-embodied/papers/openvla/reading.md"
+  },
+  {
+    "title": "LLaVA 原版精读 把视觉特征接入会回答问题的语言模型",
+    "file": "multimodal/papers/llava/reading.md"
+  },
+  {
+    "title": "DDPM 精读 为什么预测噪声能够生成图像",
+    "file": "multimodal/papers/ddpm/reading.md"
+  },
+  {
+    "title": "Video Diffusion Models 精读 从单张图像到连续视频块",
+    "file": "multimodal/papers/video-diffusion/reading.md"
+  },
+  {
+    "title": "ORB-SLAM3 全文精读与机制图解",
+    "file": "robotics-embodied/papers/orb-slam3/reading.md"
+  },
+  {
+    "title": "MIT Cheetah 3 Convex MPC 全文精读与机制图解",
+    "file": "robotics-embodied/papers/convex-mpc/reading.md"
+  },
+  {
+    "title": "Solà ESKF 全文精读与机制图解",
+    "file": "robotics-embodied/papers/eskf/reading.md"
+  },
+  {
+    "title": "RRT星 全文精读与机制图解",
+    "file": "robotics-embodied/papers/rrt-star/reading.md"
+  },
+  {
+    "title": "GPT-3 自回归预训练与上下文学习的基线",
+    "file": "llm/papers/gpt3/reading.md"
+  },
+  {
+    "title": "InstructGPT 如何把会续写的语言模型训练成更有用的助手",
+    "file": "llm/papers/instructgpt/reading.md"
+  },
+  {
+    "title": "从一对回答读懂 DPO",
+    "file": "llm/papers/dpo/reading.md"
+  },
+  {
+    "title": "PPO 用裁剪代理目标稳定策略梯度更新",
+    "file": "llm/papers/ppo/reading.md"
+  },
+  {
+    "title": "ViT 精读 一张图片怎样变成序列并学会分类",
+    "file": "multimodal/papers/vit/reading.md"
+  },
+  {
+    "title": "MAE 全文精读",
+    "file": "multimodal/papers/mae/reading.md"
+  },
+  {
+    "title": "CLIP 精读 从一张图片和一句话到零样本分类",
+    "file": "multimodal/papers/clip/reading.md"
+  },
+  {
+    "title": "DINO 精读 没有人工标签的教师从哪里来",
+    "file": "multimodal/papers/dino/reading.md"
+  },
+  {
+    "title": "模型架构与推理计算 Baseline",
+    "file": "docs/roadmaps/architecture-baselines.md"
+  },
+  {
+    "title": "智能体评测适应与导航 Baseline",
+    "file": "docs/roadmaps/cross-baselines.md"
+  },
+  {
+    "title": "世界模型与具身策略 Baseline",
+    "file": "docs/roadmaps/embodied-baselines.md"
+  },
+  {
+    "title": "多模态理解与扩散生成 Baseline",
+    "file": "docs/roadmaps/multimodal-baselines.md"
+  },
+  {
+    "title": "状态估计运动规划与机器人控制 Baseline",
+    "file": "docs/roadmaps/robotics-baselines.md"
+  },
+  {
+    "title": "语言模型训练与策略优化 Baseline",
+    "file": "docs/roadmaps/training-baselines.md"
+  },
+  {
+    "title": "视觉表征与图文对齐 Baseline",
+    "file": "docs/roadmaps/visual-baselines.md"
+  },
+  {
+    "title": "深度学习基础学习导航",
+    "file": "docs/foundations/00-learning-navigation.md"
+  },
+  {
+    "title": "QKV 为什么已经算出匹配 还要传递内容",
+    "file": "docs/foundations/15-qkv-deep-dive.md"
+  },
+  {
+    "title": "梯度 反向传播与 SGD",
+    "file": "docs/foundations/modules/optimization/gradient-sgd.md"
+  },
+  {
+    "title": "05b 强化学习导读",
+    "file": "docs/foundations/05b-reinforcement-learning.md"
+  },
+  {
+    "title": "05c 迁移与元学习导读",
+    "file": "docs/foundations/05c-transfer-meta-learning.md"
+  },
+  {
+    "title": "05a 分布式训练导读",
+    "file": "docs/foundations/05a-distributed-training.md"
+  },
+  {
+    "title": "CNN 从像素窗口到可学习视觉特征",
+    "file": "docs/foundations/11-cnn.md"
+  },
+  {
+    "title": "RNN 从连续输入到可学习的历史记忆",
+    "file": "docs/foundations/12-rnn.md"
+  },
+  {
+    "title": "Attention 与 Transformer 从信息读取到完整模型",
+    "file": "docs/foundations/14-attention-transformer.md"
+  },
+  {
+    "title": "LSTM 从长期记忆问题到门控更新",
+    "file": "docs/foundations/13-lstm.md"
+  },
+  {
+    "title": "SSM GNN 与 MoE 的三个独立入门问题",
+    "file": "docs/foundations/18-ssm-gnn-moe.md"
+  },
+  {
+    "title": "VAE 从隐藏原因到可训练的生成模型",
+    "file": "docs/foundations/16-vae.md"
+  },
+  {
+    "title": "Diffusion 从加噪练习到逐步生成",
+    "file": "docs/foundations/17-diffusion.md"
+  },
+  {
+    "title": "动量与逐坐标自适应优化",
+    "file": "docs/foundations/modules/optimization/momentum.md"
+  },
+  {
+    "title": "Adam 与 AdamW",
+    "file": "docs/foundations/modules/optimization/adam.md"
+  },
+  {
+    "title": "Muon 与矩阵更新正交化",
+    "file": "docs/foundations/modules/optimization/muon.md"
+  },
+  {
+    "title": "回归与鲁棒损失 从残差到训练分数",
+    "file": "docs/foundations/modules/objectives/01-regression-robustness.md"
+  },
+  {
+    "title": "概率分类 从交叉熵到BCE NLL与KL",
+    "file": "docs/foundations/modules/objectives/02-classification-probabilities.md"
+  },
+  {
+    "title": "自监督与生成目标 从可见信息到学习信号",
+    "file": "docs/foundations/modules/objectives/03-pretraining-objectives.md"
+  },
+  {
+    "title": "机器人与IMU目标 从坐标约定到可观测性",
+    "file": "docs/foundations/modules/objectives/04-robotics-imu.md"
+  },
+  {
+    "title": "参数正则化 从L1 L2到权重衰减",
+    "file": "docs/foundations/modules/objectives/05-regularization.md"
+  },
+  {
+    "title": "样本接口与数据集选择",
+    "file": "docs/foundations/modules/data/01-data-contracts.md"
+  },
+  {
+    "title": "划分同步与最小数据管道",
+    "file": "docs/foundations/modules/data/02-data-pipeline.md"
+  },
+  {
+    "title": "图像与文本分类的小规模实践",
+    "file": "docs/foundations/modules/data/03-classification-labs.md"
+  },
+  {
+    "title": "IMU窗口怎样对应一个位移标签",
+    "file": "docs/foundations/modules/data/04-imu-lab.md"
+  },
+  {
+    "title": "架构与生成模型 学习地图",
+    "file": "docs/foundations/01-architectures.md"
+  },
+  {
+    "title": "优化与训练基础模块导航",
+    "file": "docs/foundations/02-optimization.md"
+  },
+  {
+    "title": "任务与训练目标 学习模块导航",
+    "file": "docs/foundations/03-tasks-losses.md"
+  },
+  {
+    "title": "数据与数据集模块导航",
+    "file": "docs/foundations/04-data-and-datasets.md"
+  },
+  {
+    "title": "从基础进入进阶",
+    "file": "docs/foundations/05-advanced-bridges.md"
+  },
+  {
+    "title": "十五个代表数据集的选型目录",
+    "file": "docs/foundations/catalog/dataset-selection.md"
+  },
+  {
+    "title": "机器人与具身分领域阅读",
+    "file": "robotics-embodied/README.md"
+  },
+  {
+    "title": "运动控制 怎样把想去的位置变成稳定运动",
+    "file": "robotics-embodied/fields/control-locomotion.md"
+  },
+  {
+    "title": "具身 Agents 从一句指令到可验证的行动",
+    "file": "robotics-embodied/fields/embodied-agents.md"
+  },
+  {
+    "title": "模仿学习与机器人强化学习 怎样学会一个动作",
+    "file": "robotics-embodied/fields/imitation-reinforcement-learning.md"
+  },
+  {
+    "title": "状态估计与建图 机器人怎样知道自己在哪里",
+    "file": "robotics-embodied/fields/localization-mapping.md"
+  },
+  {
+    "title": "导航与规划 从目标地点到可执行路线",
+    "file": "robotics-embodied/fields/navigation-planning.md"
+  },
+  {
+    "title": "感知 从传感器数值到可用的环境信息",
+    "file": "robotics-embodied/fields/perception.md"
+  },
+  {
+    "title": "VLA 从图片与指令到机器人的动作",
+    "file": "robotics-embodied/fields/vla.md"
+  },
+  {
+    "title": "世界模型 行动之前能不能预测后果",
+    "file": "robotics-embodied/fields/world-models.md"
+  },
+  {
+    "title": "SayCan 从语言建议到机器人能够执行的技能",
+    "file": "robotics-embodied/papers/saycan/reading.md"
+  },
+  {
+    "title": "EmbodiedSkills 如何把动作模型放进可检查的执行循环",
+    "file": "robotics-embodied/papers/embodiedskills/reading.md"
+  },
+  {
+    "title": "HoloAgent 0 空间记忆怎样接到机器人执行系统",
+    "file": "robotics-embodied/papers/holoagent-0/reading.md"
+  },
+  {
+    "title": "MEMORA 如何把看过的经历变成以后可用的记忆",
+    "file": "robotics-embodied/papers/memora/reading.md"
+  },
+  {
+    "title": "RoboSkill 为什么机器人需要保存真正执行过的技能",
+    "file": "robotics-embodied/papers/roboskill/reading.md"
+  },
+  {
+    "title": "Zero WAM 如何把人类示范视频变成机器人动作",
+    "file": "robotics-embodied/papers/zero-wam/reading.md"
+  },
+  {
+    "title": "具身 Agents 从技能选择到持续执行的研究路线",
+    "file": "robotics-embodied/roadmaps/embodied-agents.md"
   }
 ]

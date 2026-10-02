@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="840" viewBox="0 0 1440 840"><defs>
+<marker id="blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2469a5"/></marker>
+<marker id="green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#258163"/></marker>
+<marker id="purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8853a4"/></marker>
+<marker id="orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#b67824"/></marker>
+<marker id="muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#516578"/></marker>
+</defs><rect width="100%" height="100%" fill="#ffffff"/>
+<style>text{font-family:"Noto Sans CJK SC","Noto Sans CJK",sans-serif;fill:#172b42} .sub{fill:#516578}</style>
+<text x="44" y="58" font-size="34" font-weight="700" text-anchor="start" style="fill:#172b42">对象绑定逐步完成 不能从一句话跳到电机</text>
+<text x="44" y="99" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">每个中间结果都保留对象身份 观测版本和坐标系</text>
+<rect x="45" y="175" width="300" height="175" rx="16" fill="#edf5fb" stroke="#2469a5" stroke-width="2"/>
+<text x="65" y="214" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">语言目标</text>
+<text x="65" y="254" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">“厨房里的蓝杯”</text>
+<text x="65" y="285" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">先检查是否有歧义</text>
+<text x="65" y="316" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">不靠猜测选两只相似杯</text>
+<rect x="425" y="175" width="350" height="175" rx="16" fill="#edf5fb" stroke="#2469a5" stroke-width="2"/>
+<text x="445" y="214" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">现场实体与像素</text>
+<text x="445" y="254" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">当前观测 O18</text>
+<text x="445" y="285" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">实例 C17；像素 (400,250)</text>
+<text x="445" y="316" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">深度 Z = 0.80 米</text>
+<rect x="865" y="175" width="525" height="175" rx="16" fill="#edf5fb" stroke="#2469a5" stroke-width="2"/>
+<text x="885" y="214" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">针孔反投影得到表面点</text>
+<text x="885" y="254" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">X=(u−cₓ)Z/fₓ；Y=(v−cᵧ)Z/fᵧ</text>
+<text x="885" y="285" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">fₓ=fᵧ=600；主点 (320,240)</text>
+<text x="885" y="316" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">p相机 ≈ (0.1067,0.0133,0.80) 米</text>
+<polyline points="345,260 425,260" fill="none" stroke="#2469a5" stroke-width="3" stroke-dasharray="0" marker-end="url(#blue)"/>
+<polyline points="775,260 865,260" fill="none" stroke="#2469a5" stroke-width="3" stroke-dasharray="0" marker-end="url(#blue)"/>
+<rect x="865" y="470" width="525" height="190" rx="16" fill="#edf5fb" stroke="#2469a5" stroke-width="2"/>
+<text x="885" y="509" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">转换到机械臂基座坐标</text>
+<text x="885" y="549" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">p基座 = R p相机 + t</text>
+<text x="885" y="580" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">教学取 R=I，t=(0.40,−0.20,0.30)</text>
+<text x="885" y="611" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">p基座 ≈ (0.5067,−0.1867,1.10)</text>
+<text x="885" y="642" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">真实系统必须使用实际标定</text>
+<rect x="425" y="470" width="350" height="190" rx="16" fill="#fff5e7" stroke="#b67824" stroke-width="2"/>
+<text x="445" y="509" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">还要形成可执行抓取</text>
+<text x="445" y="549" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">表面一点 ≠ 完整抓取</text>
+<text x="445" y="580" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">姿态 接近方向与接触</text>
+<text x="445" y="611" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">可达性 碰撞与执行约束</text>
+<rect x="45" y="470" width="300" height="190" rx="16" fill="#eef8f1" stroke="#258163" stroke-width="2"/>
+<text x="65" y="509" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">绑定会失效</text>
+<text x="65" y="549" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">人移动杯子 → 新位置</text>
+<text x="65" y="580" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">相机移动 → 新变换</text>
+<text x="65" y="611" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">旧数值合法也可能过时</text>
+<polyline points="1125,350 1125,470" fill="none" stroke="#2469a5" stroke-width="3" stroke-dasharray="0" marker-end="url(#blue)"/>
+<polyline points="865,565 775,565" fill="none" stroke="#2469a5" stroke-width="3" stroke-dasharray="0" marker-end="url(#blue)"/>
+<polyline points="425,565 345,565" fill="none" stroke="#258163" stroke-width="3" stroke-dasharray="0" marker-end="url(#green)"/>
+<text x="45" y="778" font-size="20" font-weight="400" text-anchor="start" style="fill:#516578">数值为教学算例。类别识别、实例关联、深度估计、姿态规划分别可能出错。</text>
+</svg>

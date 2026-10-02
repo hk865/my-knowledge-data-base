@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2210.03629",
+  "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+  "resource_kind": "paper",
+  "canonical_folder": "cross-domain/papers/react",
+  "official_url": "https://arxiv.org/abs/2210.03629",
+  "official_fulltext_url": "https://arxiv.org/pdf/2210.03629v3",
+  "read_version": "v3",
+  "version_status": "specified_in_existing_reading",
+  "reading_depth": "full_text_reading_and_evidence_audit",
+  "teaching_status": "existing_technical_reading",
+  "content_kind": "reading",
+  "reading_path": "reading.md",
+  "reading_boundary": "本篇保留现有技术精读，范围与残余边界见正文和证据档案；未独立复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-02",
+  "legacy_paths": [
+    "docs/deep-readings/react.md",
+    "robotics-embodied/baselines/react.md"
+  ],
+  "evidence_paths": [
+    "docs/deep-readings/evidence/react.json",
+    "../../../docs/deep-readings/evidence/react.json"
+  ],
+  "topic_paths": [
+    "llm/inference",
+    "cross-domain/agents"
+  ]
+}

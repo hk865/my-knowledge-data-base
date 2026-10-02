@@ -179,6 +179,17 @@
             "模仿学习",
             "机器人强化学习"
           ]
+        },
+        {
+          "id": "robotics/embodied-agents",
+          "label": "具身 Agents 与闭环系统",
+          "subtopics": [
+            "任务理解与技能选择",
+            "行动记忆与空间记忆",
+            "规划—执行—反馈",
+            "技能获取与复用",
+            "VLA策略编排与部署"
+          ]
         }
       ]
     },
@@ -188,19 +199,33 @@
       "topics": [
         {
           "id": "cross-domain/agents",
-          "label": "Agent 与上下文系统"
+          "label": "Agent 与上下文系统",
+          "subtopics": []
         },
         {
           "id": "cross-domain/interpretability",
-          "label": "机制与可信解释"
+          "label": "机制与可信解释",
+          "subtopics": []
         },
         {
           "id": "cross-domain/biological-computing",
-          "label": "生物计算探索"
+          "label": "生物计算探索",
+          "subtopics": []
         },
         {
           "id": "cross-domain/evaluation",
-          "label": "评估与监督可靠性"
+          "label": "评估与监督可靠性",
+          "subtopics": []
+        },
+        {
+          "id": "cross-domain/knowledge-distillation",
+          "label": "知识蒸馏与模型压缩",
+          "subtopics": [
+            "输出分布与软目标",
+            "中间特征与提示监督",
+            "教师学生迁移",
+            "模型压缩历史与来源边界"
+          ]
         }
       ]
     }
@@ -224,7 +249,9 @@
       "self-distillation",
       "preference",
       "reinforcement-learning",
-      "imitation"
+      "imitation",
+      "distillation",
+      "feature-hint supervision"
     ],
     "evidence_origin": [
       "user-provided-exact-link",
@@ -232,7 +259,8 @@
       "chat-name-resolved",
       "previous-starter",
       "handbook-only",
-      "unresolved"
+      "unresolved",
+      "new-baseline-selection"
     ],
     "method": [
       "inference-time search",
@@ -270,6 +298,8 @@
   "notes": [
     "ViT 是架构标签；CLIP 是图文对齐方法及模型家族；WM 是世界模型研究方向，三者不作为同级互斥分类。",
     "目录中的细分项表达检索维度，不表示每项已有论文或用户已选定课题。",
-    "推理时搜索、采样和提示属于推理方法；探针与评估属于评估标签，不标为训练监督。"
+    "推理时搜索、采样和提示属于推理方法；探针与评估属于评估标签，不标为训练监督。",
+    "具身Agents强调规划、技能与环境反馈闭环；VLA是策略接口与动作建模方向，两者可交叉。",
+    "教学讲义与图表不重复计为论文；教学进度与用户阅读状态分开记录。"
   ]
 }

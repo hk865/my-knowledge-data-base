@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:1910.01108",
+  "title": "DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter",
+  "resource_kind": "paper",
+  "canonical_folder": "llm/papers/arxiv-1910.01108",
+  "official_url": "https://arxiv.org/abs/1910.01108",
+  "official_fulltext_url": "https://arxiv.org/pdf/1910.01108",
+  "read_version": null,
+  "version_status": "not_pinned",
+  "reading_depth": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "这是文献卡，目前没有该论文的独立精读正文。标题、标识或摘要层面的核验不等于全文阅读。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-02",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "topic_paths": [
+    "llm/pretraining",
+    "llm/architecture"
+  ]
+}

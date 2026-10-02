@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2301.04104",
+  "title": "Mastering Diverse Domains through World Models",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/dreamerv3",
+  "official_url": "https://arxiv.org/abs/2301.04104v1",
+  "official_fulltext_url": "https://arxiv.org/pdf/2301.04104v1",
+  "read_version": "v1",
+  "version_status": "specified_in_existing_reading",
+  "reading_depth": "full_text_reading_and_evidence_audit",
+  "teaching_status": "expanded_beginner_lesson",
+  "content_kind": "reading",
+  "reading_path": "reading.md",
+  "reading_boundary": "本篇保留现有技术精读，范围与残余边界见正文和证据档案；未独立复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "verified_redistributable",
+    "identifier": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidence_url": "https://arxiv.org/abs/2301.04104v1",
+    "verification_method": "Opened this version’s Access Paper > view license link and read the destination license; applies to deposited full text, not merely site metadata",
+    "checked_at": "2026-10-02",
+    "note": "已核验该版本许可；本仓库仍仅提供官方原文链接，没有公开镜像PDF。论文许可不等于本库其他内容的许可。"
+  },
+  "fulltext_local_status": "link_only_not_mirrored",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-02",
+  "legacy_paths": [
+    "docs/deep-readings/dreamerv3.md",
+    "robotics-embodied/baselines/dreamerv3.md"
+  ],
+  "evidence_paths": [
+    "docs/deep-readings/evidence/dreamerv3.json"
+  ],
+  "authors": [
+    "Danijar Hafner",
+    "Jurgis Pasukonis",
+    "Jimmy Ba",
+    "Timothy Lillicrap"
+  ],
+  "original_pdf_url": "https://arxiv.org/pdf/2301.04104v1",
+  "topic_paths": [
+    "multimodal/world-models"
+  ],
+  "fulltext_publication_note": "本仓库仅提供官方原文链接，不公开保存论文PDF。许可核验记录不代表已镜像或已上传。",
+  "verified_original_version": "2301.04104v1"
+}

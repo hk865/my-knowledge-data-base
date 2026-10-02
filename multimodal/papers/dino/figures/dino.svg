@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="1280" viewBox="0 0 1680 1280">
+<defs>
+<marker id="blue" markerWidth="10" markerHeight="10" refX="9" refY="4" orient="auto"><path d="M0,0 L9,4 L0,8" fill="#2563a6"/></marker>
+<marker id="orange" markerWidth="10" markerHeight="10" refX="9" refY="4" orient="auto"><path d="M0,0 L9,4 L0,8" fill="#c45b20"/></marker>
+<marker id="green" markerWidth="10" markerHeight="10" refX="9" refY="4" orient="auto"><path d="M0,0 L9,4 L0,8" fill="#19735e"/></marker>
+<marker id="purple" markerWidth="10" markerHeight="10" refX="9" refY="4" orient="auto"><path d="M0,0 L9,4 L0,8" fill="#7754a1"/></marker>
+</defs>
+<rect width="1680" height="1280" fill="#fff"/>
+<text x="55" y="64" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="38" fill="#172d42" font-weight="700" text-anchor="start">DINO  |  用另一个视图的教师分布训练学生</text>
+<text x="55" y="110" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#172d42" font-weight="400" text-anchor="start">不使用人工类别标签预训练；K 维分布是训练空间，不是预定义类别表</text>
+<rect x="55" y="315" width="215" height="140" rx="15" fill="#eff6fd" stroke="#2563a6" stroke-width="2"/>
+<text x="162.5" y="375.25" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="25" fill="#172d42" font-weight="400" text-anchor="middle">同一张图 x</text>
+<text x="162.5" y="411.25" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="25" fill="#172d42" font-weight="400" text-anchor="middle">随机增强</text>
+<rect x="330" y="175" width="285" height="130" rx="15" fill="#eff6fd" stroke="#2563a6" stroke-width="2"/>
+<text x="472.5" y="213.59" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#172d42" font-weight="400" text-anchor="middle">学生视图集合 V</text>
+<text x="472.5" y="247.59" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#172d42" font-weight="400" text-anchor="middle">2 global + 多个 local</text>
+<text x="472.5" y="281.59000000000003" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#172d42" font-weight="400" text-anchor="middle">224² / 96²</text>
+<rect x="330" y="465" width="285" height="130" rx="15" fill="#eff6fd" stroke="#2563a6" stroke-width="2"/>
+<text x="472.5" y="503.59" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#172d42" font-weight="400" text-anchor="middle">教师视图</text>
+<text x="472.5" y="537.5899999999999" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#172d42" font-weight="400" text-anchor="middle">仅 2 个 global</text>
+<text x="472.5" y="571.5899999999999" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#172d42" font-weight="400" text-anchor="middle">224²</text>
+<polyline points="270,385 295,385 295,240 330,240" fill="none" stroke="#2563a6" stroke-width="3" marker-end="url(#blue)" />
+<polyline points="270,385 295,385 295,530 330,530" fill="none" stroke="#2563a6" stroke-width="3" marker-end="url(#blue)" />
+<rect x="675" y="175" width="280" height="130" rx="15" fill="#eff6fd" stroke="#2563a6" stroke-width="2"/>
+<text x="815.0" y="214.93" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="21" fill="#172d42" font-weight="400" text-anchor="middle">学生骨干 fₛ</text>
+<text x="815.0" y="246.93" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="21" fill="#172d42" font-weight="400" text-anchor="middle">patch + position + [CLS]</text>
+<text x="815.0" y="278.93" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="21" fill="#172d42" font-weight="400" text-anchor="middle">Transformer → D 维</text>
+<rect x="675" y="465" width="280" height="130" rx="15" fill="#eff6fd" stroke="#2563a6" stroke-width="2"/>
+<text x="815.0" y="504.26" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="22" fill="#172d42" font-weight="400" text-anchor="middle">教师骨干 fₜ</text>
+<text x="815.0" y="537.26" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="22" fill="#172d42" font-weight="400" text-anchor="middle">同结构、不同参数</text>
+<text x="815.0" y="570.26" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="22" fill="#172d42" font-weight="400" text-anchor="middle">Transformer → D 维</text>
+<rect x="1015" y="175" width="260" height="130" rx="15" fill="#eff6fd" stroke="#2563a6" stroke-width="2"/>
+<text x="1145.0" y="214.26" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="22" fill="#172d42" font-weight="400" text-anchor="middle">学生投影头 hₛ</text>
+<text x="1145.0" y="247.26" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="22" fill="#172d42" font-weight="400" text-anchor="middle">MLP + L2 + linear</text>
+<text x="1145.0" y="280.26" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="22" fill="#172d42" font-weight="400" text-anchor="middle">B × K logits</text>
+<rect x="1015" y="465" width="260" height="130" rx="15" fill="#eff6fd" stroke="#2563a6" stroke-width="2"/>
+<text x="1145.0" y="504.26" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="22" fill="#172d42" font-weight="400" text-anchor="middle">教师投影头 hₜ</text>
+<text x="1145.0" y="537.26" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="22" fill="#172d42" font-weight="400" text-anchor="middle">同结构、不同参数</text>
+<text x="1145.0" y="570.26" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="22" fill="#172d42" font-weight="400" text-anchor="middle">B × K logits</text>
+<rect x="1335" y="175" width="290" height="130" rx="15" fill="#eff6fd" stroke="#2563a6" stroke-width="2"/>
+<text x="1480.0" y="214.26" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="22" fill="#172d42" font-weight="400" text-anchor="middle">学生概率 pₛ</text>
+<text x="1480.0" y="247.26" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="22" fill="#172d42" font-weight="400" text-anchor="middle">softmax(logits / τₛ)</text>
+<text x="1480.0" y="280.26" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="22" fill="#172d42" font-weight="400" text-anchor="middle">τₛ = 0.1</text>
+<rect x="1335" y="465" width="290" height="130" rx="15" fill="#f4effa" stroke="#7754a1" stroke-width="2"/>
+<text x="1480.0" y="504.93" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="21" fill="#172d42" font-weight="400" text-anchor="middle">教师概率 pₜ</text>
+<text x="1480.0" y="536.9300000000001" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="21" fill="#172d42" font-weight="400" text-anchor="middle">减 center c；低温 softmax</text>
+<text x="1480.0" y="568.9300000000001" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="21" fill="#172d42" font-weight="400" text-anchor="middle">stop-gradient</text>
+<polyline points="615,240 675,240" fill="none" stroke="#2563a6" stroke-width="3" marker-end="url(#blue)" />
+<polyline points="955,240 1015,240" fill="none" stroke="#2563a6" stroke-width="3" marker-end="url(#blue)" />
+<polyline points="1275,240 1335,240" fill="none" stroke="#2563a6" stroke-width="3" marker-end="url(#blue)" />
+<polyline points="615,530 675,530" fill="none" stroke="#2563a6" stroke-width="3" marker-end="url(#blue)" />
+<polyline points="955,530 1015,530" fill="none" stroke="#2563a6" stroke-width="3" marker-end="url(#blue)" />
+<polyline points="1275,530 1335,530" fill="none" stroke="#2563a6" stroke-width="3" marker-end="url(#blue)" />
+<polyline points="815,305 815,465" fill="none" stroke="#7754a1" stroke-width="3" marker-end="url(#purple)" stroke-dasharray="9 6"/>
+<polyline points="1145,305 1145,465" fill="none" stroke="#7754a1" stroke-width="3" marker-end="url(#purple)" stroke-dasharray="9 6"/>
+<text x="365" y="354" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="21" fill="#7754a1" font-weight="400" text-anchor="start">两个 EMA 各司其职</text>
+<text x="365" y="386" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="21" fill="#7754a1" font-weight="400" text-anchor="start">1. 教师骨干 + 投影头参数</text>
+<text x="365" y="418" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="21" fill="#7754a1" font-weight="400" text-anchor="start">2. 教师输出的运行中心 c</text>
+<text x="860" y="350" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="20" fill="#7754a1" font-weight="400" text-anchor="start">参数 EMA</text>
+<text x="860" y="381" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="20" fill="#7754a1" font-weight="400" text-anchor="start">θₜ ← λθₜ + (1−λ)θₛ</text>
+<text x="860" y="412" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="20" fill="#7754a1" font-weight="400" text-anchor="start">教师不接收反向梯度</text>
+<text x="1335" y="370" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="21" fill="#7754a1" font-weight="400" text-anchor="start">c 用教师 batch logits</text>
+<text x="1335" y="402" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="21" fill="#7754a1" font-weight="400" text-anchor="start">均值做 EMA 更新</text>
+<rect x="1080" y="705" width="545" height="125" rx="15" fill="#fff4eb" stroke="#c45b20" stroke-width="2"/>
+<text x="1352.5" y="740.42" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="24" fill="#172d42" font-weight="400" text-anchor="middle">跨视图交叉熵 H(pₜ, pₛ)</text>
+<text x="1352.5" y="775.42" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="24" fill="#172d42" font-weight="400" text-anchor="middle">教师 global 对其他学生视图</text>
+<text x="1352.5" y="810.42" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="24" fill="#172d42" font-weight="400" text-anchor="middle">排除相同视图配对</text>
+<polyline points="1480,595 1480,705" fill="none" stroke="#7754a1" stroke-width="3" marker-end="url(#purple)" />
+<polyline points="1625,240 1650,240 1650,664 1240,664 1240,705" fill="none" stroke="#2563a6" stroke-width="3" marker-end="url(#blue)" />
+<text x="80" y="630" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#172d42" font-weight="400" text-anchor="start">匹配概率分布，无负样本队列</text>
+<text x="80" y="664" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#172d42" font-weight="400" text-anchor="start">local 学生预测 global 教师</text>
+<polyline points="1080,770 790,770 790,660 650,660 650,340 715,340 715,305" fill="none" stroke="#c45b20" stroke-width="3" marker-end="url(#orange)" stroke-dasharray="9 6"/>
+<text x="55" y="740" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#c45b20" font-weight="400" text-anchor="start">梯度仅更新学生</text>
+<text x="55" y="774" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#c45b20" font-weight="400" text-anchor="start">经过其 softmax、投影头、骨干</text>
+<text x="55" y="808" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#c45b20" font-weight="400" text-anchor="start">教师通过参数 EMA 跟随</text>
+<line x1="55" y1="875" x2="1625" y2="875" stroke="#d6e0e9" stroke-width="2"/>
+<text x="55" y="925" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="27" fill="#172d42" font-weight="700" text-anchor="start">下游表征接口：训练目标不等于部署接口</text>
+<rect x="55" y="980" width="365" height="145" rx="15" fill="#edf8f4" stroke="#19735e" stroke-width="2"/>
+<text x="237.5" y="1042.92" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="24" fill="#172d42" font-weight="400" text-anchor="middle">完整图像</text>
+<text x="237.5" y="1077.92" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="24" fill="#172d42" font-weight="400" text-anchor="middle">选定训练后 backbone</text>
+<rect x="500" y="980" width="495" height="145" rx="15" fill="#edf8f4" stroke="#19735e" stroke-width="2"/>
+<text x="747.5" y="1025.42" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="24" fill="#172d42" font-weight="400" text-anchor="middle">去掉投影头与训练损失</text>
+<text x="747.5" y="1060.42" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="24" fill="#172d42" font-weight="400" text-anchor="middle">全局特征 / patch 特征</text>
+<text x="747.5" y="1095.42" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="24" fill="#172d42" font-weight="400" text-anchor="middle">不再多视图双塔训练</text>
+<rect x="1075" y="980" width="550" height="145" rx="15" fill="#edf8f4" stroke="#19735e" stroke-width="2"/>
+<text x="1350.0" y="1026.09" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#172d42" font-weight="400" text-anchor="middle">检索 / k-NN / 线性探测 / 微调</text>
+<text x="1350.0" y="1060.09" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#172d42" font-weight="400" text-anchor="middle">k-NN 的类别投票仍需参考标签</text>
+<text x="1350.0" y="1094.09" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="23" fill="#172d42" font-weight="400" text-anchor="middle">attention 区域图不是完整分割器</text>
+<polyline points="420,1050 500,1050" fill="none" stroke="#19735e" stroke-width="3" marker-end="url(#green)" />
+<polyline points="995,1050 1075,1050" fill="none" stroke="#19735e" stroke-width="3" marker-end="url(#green)" />
+<text x="55" y="1180" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="21" fill="#172d42" font-weight="400" text-anchor="start">原创机制重绘依据：DINO §3、式1–4、算法1、附录C；不同分辨率对应不同patch token数</text>
+<text x="55" y="1225" font-family="Noto Sans CJK SC,DejaVu Sans,sans-serif" font-size="21" fill="#172d42" font-weight="400" text-anchor="start">默认投影头：3层MLP → 256维L2瓶颈 → weight-normalized linear；K = 65536（附录C）</text>
+</svg>

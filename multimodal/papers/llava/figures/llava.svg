@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1080" viewBox="0 0 1600 1080"><defs><marker id="a" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#42637c"/></marker></defs><rect width="1600" height="1080" fill="#f7fafc"/>
+<text x="60" y="68" font-family="Noto Sans CJK SC, sans-serif" font-size="36" fill="#102e46" font-weight="700">LLaVA 原版：视觉连续 token → 条件文本生成</text>
+<text x="60" y="110" font-family="Noto Sans CJK SC, sans-serif" font-size="21" fill="#526777" font-weight="400">Visual Instruction Tuning · arXiv:2304.08485v2 · 图中所有训练阶段均冻结视觉编码器</text>
+<text x="60" y="170" font-family="Noto Sans CJK SC, sans-serif" font-size="25" fill="#203849" font-weight="700">运行时：图像提供证据，语言模型输出文字</text>
+<rect x="60" y="215" width="210" height="160" rx="16" fill="#e8f2fb" stroke="#aac7df" stroke-width="2"/>
+<text x="82" y="255" font-family="Noto Sans CJK SC, sans-serif" font-size="24" fill="#203849" font-weight="700">输入图像 Xv</text>
+<text x="82" y="293" font-family="Noto Sans CJK SC, sans-serif" font-size="21" fill="#203849" font-weight="400">像素 / patches</text>
+<text x="82" y="326" font-family="Noto Sans CJK SC, sans-serif" font-size="21" fill="#203849" font-weight="400">不是输出目标</text>
+<rect x="330" y="215" width="280" height="160" rx="16" fill="#e8f2fb" stroke="#aac7df" stroke-width="2"/>
+<text x="352" y="255" font-family="Noto Sans CJK SC, sans-serif" font-size="24" fill="#203849" font-weight="700">CLIP ViT-L/14</text>
+<text x="352" y="293" font-family="Noto Sans CJK SC, sans-serif" font-size="21" fill="#203849" font-weight="400">Zv = g(Xv)</text>
+<text x="352" y="326" font-family="Noto Sans CJK SC, sans-serif" font-size="21" fill="#203849" font-weight="400">N 个视觉网格向量</text>
+<rect x="675" y="215" width="235" height="160" rx="16" fill="#e8f2fb" stroke="#aac7df" stroke-width="2"/>
+<text x="697" y="255" font-family="Noto Sans CJK SC, sans-serif" font-size="24" fill="#203849" font-weight="700">线性投影 W</text>
+<text x="697" y="293" font-family="Noto Sans CJK SC, sans-serif" font-size="21" fill="#203849" font-weight="400">Hv = W Zv</text>
+<text x="697" y="326" font-family="Noto Sans CJK SC, sans-serif" font-size="21" fill="#203849" font-weight="400">宽度变为 d_LLM</text>
+<rect x="980" y="215" width="550" height="160" rx="16" fill="#e8f2fb" stroke="#aac7df" stroke-width="2"/>
+<text x="1002" y="255" font-family="Noto Sans CJK SC, sans-serif" font-size="24" fill="#203849" font-weight="700">Vicuna 因果语言模型</text>
+<text x="1002" y="293" font-family="Noto Sans CJK SC, sans-serif" font-size="21" fill="#203849" font-weight="400">视觉 token + 问题 + 对话历史</text>
+<text x="1002" y="326" font-family="Noto Sans CJK SC, sans-serif" font-size="21" fill="#203849" font-weight="400">逐个预测文本 token；输出回答</text>
+<path d="M270,292 L330,292" fill="none" stroke="#42637c" stroke-width="3" marker-end="url(#a)"/>
+<path d="M610,292 L675,292" fill="none" stroke="#42637c" stroke-width="3" marker-end="url(#a)"/>
+<path d="M910,292 L980,292" fill="none" stroke="#42637c" stroke-width="3" marker-end="url(#a)"/>
+<rect x="60" y="415" width="850" height="105" rx="16" fill="#ffffff" stroke="#aac7df" stroke-width="2"/>
+<text x="82" y="455" font-family="Noto Sans CJK SC, sans-serif" font-size="24" fill="#203849" font-weight="700">视觉 token 是连续嵌入，不是离散词表编号</text>
+<rect x="980" y="415" width="550" height="105" rx="16" fill="#ffffff" stroke="#aac7df" stroke-width="2"/>
+<text x="1002" y="455" font-family="Noto Sans CJK SC, sans-serif" font-size="24" fill="#203849" font-weight="700">用户问题 → 文本 tokenizer → 嵌入</text>
+<path d="M1255,415 L1255,375" fill="none" stroke="#42637c" stroke-width="3" marker-end="url(#a)"/>
+<text x="85" y="495" font-family="Noto Sans CJK SC, sans-serif" font-size="22" fill="#526777" font-weight="400">无扩散噪声、无图像解码器、无动作执行头</text>
+<line x1="60" y1="550" x2="1540" y2="550" stroke="#cfdae2"/>
+<text x="60" y="600" font-family="Noto Sans CJK SC, sans-serif" font-size="25" fill="#203849" font-weight="700">训练时：同一自回归 loss，两种可训练参数集合</text>
+<rect x="60" y="630" width="715" height="170" rx="16" fill="#edf5ec" stroke="#aacba7" stroke-width="2"/>
+<text x="82" y="670" font-family="Noto Sans CJK SC, sans-serif" font-size="24" fill="#203849" font-weight="700">阶段 1：接口对齐</text>
+<text x="82" y="708" font-family="Noto Sans CJK SC, sans-serif" font-size="21" fill="#203849" font-weight="400">CC-595K：描述指令 → 原 caption</text>
+<text x="82" y="741" font-family="Noto Sans CJK SC, sans-serif" font-size="21" fill="#203849" font-weight="400">冻结 g、冻结 Vicuna；只更新 W</text>
+<text x="82" y="774" font-family="Noto Sans CJK SC, sans-serif" font-size="21" fill="#203849" font-weight="400">1 epoch · batch 128 · lr 2e-3</text>
+<rect x="820" y="630" width="715" height="170" rx="16" fill="#fff1dc" stroke="#d8bd8f" stroke-width="2"/>
+<text x="842" y="670" font-family="Noto Sans CJK SC, sans-serif" font-size="24" fill="#203849" font-weight="700">阶段 2：视觉指令微调</text>
+<text x="842" y="708" font-family="Noto Sans CJK SC, sans-serif" font-size="21" fill="#203849" font-weight="400">聊天用 158K 指令；ScienceQA 为另一设置</text>
+<text x="842" y="741" font-family="Noto Sans CJK SC, sans-serif" font-size="21" fill="#203849" font-weight="400">冻结 g；更新 W + Vicuna</text>
+<text x="842" y="774" font-family="Noto Sans CJK SC, sans-serif" font-size="21" fill="#203849" font-weight="400">聊天：3 epochs · batch 32 · lr 2e-5</text>
+<rect x="60" y="845" width="715" height="130" rx="16" fill="#ffffff" stroke="#aac7df" stroke-width="2"/>
+<text x="82" y="885" font-family="Noto Sans CJK SC, sans-serif" font-size="24" fill="#203849" font-weight="700">监督从哪里来</text>
+<text x="82" y="923" font-family="Noto Sans CJK SC, sans-serif" font-size="21" fill="#203849" font-weight="400">COCO captions + boxes → 文本 GPT-4</text>
+<text x="82" y="956" font-family="Noto Sans CJK SC, sans-serif" font-size="21" fill="#203849" font-weight="400">生成 58K 对话 + 23K 描述 + 77K 推理</text>
+<rect x="820" y="845" width="715" height="130" rx="16" fill="#ffffff" stroke="#aac7df" stroke-width="2"/>
+<text x="842" y="885" font-family="Noto Sans CJK SC, sans-serif" font-size="24" fill="#203849" font-weight="700">loss 只覆盖助手答案与停止符</text>
+<text x="842" y="923" font-family="Noto Sans CJK SC, sans-serif" font-size="21" fill="#203849" font-weight="400">问题 / 图片 / 历史作为条件</text>
+<text x="842" y="956" font-family="Noto Sans CJK SC, sans-serif" font-size="21" fill="#203849" font-weight="400">推理时不需要在线调用 GPT-4</text>
+<text x="60" y="1040" font-family="Noto Sans CJK SC, sans-serif" font-size="18" fill="#657885" font-weight="400">原创教学图 · 结构与实验配置来自所标注论文；非原图复刻 · 2026-09-30</text></svg>

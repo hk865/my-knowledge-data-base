@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2111.06377",
+  "title": "Masked Autoencoders Are Scalable Vision Learners",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/mae",
+  "official_url": "https://arxiv.org/abs/2111.06377",
+  "official_fulltext_url": "https://arxiv.org/pdf/2111.06377v3",
+  "read_version": "v3",
+  "version_status": "specified_in_existing_reading",
+  "reading_depth": "full_text_reading_and_evidence_audit",
+  "teaching_status": "existing_technical_reading",
+  "content_kind": "reading",
+  "reading_path": "reading.md",
+  "reading_boundary": "本篇保留现有技术精读，范围与残余边界见正文和证据档案；未独立复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-02",
+  "legacy_paths": [
+    "docs/deep-readings/mae.md"
+  ],
+  "evidence_paths": [
+    "docs/deep-readings/evidence/mae.json",
+    "../../../docs/deep-readings/evidence/mae.json"
+  ],
+  "topic_paths": [
+    "multimodal/visual-representation"
+  ]
+}

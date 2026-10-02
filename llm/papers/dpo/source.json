@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2305.18290",
+  "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+  "resource_kind": "paper",
+  "canonical_folder": "llm/papers/dpo",
+  "official_url": "https://arxiv.org/abs/2305.18290v3",
+  "official_fulltext_url": "https://arxiv.org/pdf/2305.18290v3",
+  "read_version": "v3",
+  "version_status": "specified_in_existing_reading",
+  "reading_depth": "full_text_reading_and_evidence_audit",
+  "teaching_status": "expanded_beginner_lesson",
+  "content_kind": "reading",
+  "reading_path": "reading.md",
+  "reading_boundary": "本篇保留现有技术精读，范围与残余边界见正文和证据档案；未独立复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "verified_redistributable",
+    "identifier": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidence_url": "https://arxiv.org/abs/2305.18290v3",
+    "verification_method": "Opened this version’s Access Paper > view license link and read the destination license; applies to deposited full text, not merely site metadata",
+    "checked_at": "2026-10-02",
+    "note": "已核验该版本许可；本仓库仍仅提供官方原文链接，没有公开镜像PDF。论文许可不等于本库其他内容的许可。"
+  },
+  "fulltext_local_status": "link_only_not_mirrored",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-02",
+  "legacy_paths": [
+    "docs/deep-readings/dpo.md"
+  ],
+  "evidence_paths": [
+    "docs/deep-readings/evidence/dpo.json"
+  ],
+  "authors": [
+    "Rafael Rafailov",
+    "Archit Sharma",
+    "Eric Mitchell",
+    "Stefano Ermon",
+    "Christopher D. Manning",
+    "Chelsea Finn"
+  ],
+  "original_pdf_url": "https://arxiv.org/pdf/2305.18290v3",
+  "topic_paths": [
+    "llm/posttraining/preferences"
+  ],
+  "fulltext_publication_note": "本仓库仅提供官方原文链接，不公开保存论文PDF。许可核验记录不代表已镜像或已上传。",
+  "verified_original_version": "2305.18290v3"
+}

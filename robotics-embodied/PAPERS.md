@@ -1,0 +1,105 @@
+# 机器人与具身系统：论文与资源
+
+[领域总目录](README.md) · [Baseline](BASELINES.md) · [路线图](ROADMAP.md)
+
+以下每项链接到唯一的单篇目录。跨方向出现是交叉引用，不重复计算资源。
+
+- [Qwen2.5 Technical Report](../llm/papers/arxiv-2412.15115/README.md) · 2024 · 文献卡，暂无独立精读
+- [DeepSeek-V3 Technical Report](../llm/papers/arxiv-2412.19437/README.md) · 2024 · 文献卡，暂无独立精读
+- [DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](../llm/papers/arxiv-2501.12948/README.md) · 2025 · 文献卡，暂无独立精读
+- [DeepSeek-V2: A Strong, Economical, and Efficient Mixture-of-Experts Language Model](../llm/papers/deepseek-v2/README.md) · 2024 · 技术精读
+- [Recursive Introspection: Teaching Language Model Agents How to Self-Improve](../llm/papers/arxiv-2407.18219/README.md) · 2024 · 文献卡，暂无独立精读
+- [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](../llm/papers/arxiv-2405.15793/README.md) · 2024 · 文献卡，暂无独立精读
+- [ReAct: Synergizing Reasoning and Acting in Language Models](../cross-domain/papers/react/README.md) · 2022 · 技术精读
+- [Voyager: An Open-Ended Embodied Agent with Large Language Models](../llm/papers/arxiv-2305.16291/README.md) · 2023 · 文献卡，暂无独立精读
+- [SlotFormer: Unsupervised Visual Dynamics Simulation with Object-Centric Models](../multimodal/papers/arxiv-2210.05861/README.md) · 2022 · 文献卡，暂无独立精读
+- [SAVi++: Towards End-to-End Object-Centric Learning from Real-World Videos](../multimodal/papers/arxiv-2206.07764/README.md) · 2022 · 文献卡，暂无独立精读
+- [OccWorld: Learning a 3D Occupancy World Model for Autonomous Driving](../multimodal/papers/arxiv-2311.16038/README.md) · 2023 · 文献卡，暂无独立精读
+- [Driving in the Occupancy World: Vision-Centric 4D Occupancy Forecasting and Planning via World Models for Autonomous Driving](../multimodal/papers/arxiv-2408.14197/README.md) · 2024 · 文献卡，暂无独立精读
+- [DINO-WM: World Models on Pre-trained Visual Features enable Zero-shot Planning](../multimodal/papers/arxiv-2411.04983/README.md) · 2024 · 文献卡，暂无独立精读
+- [Back to the Features: DINO as a Foundation for Video World Models](../multimodal/papers/arxiv-2507.19468/README.md) · 2025 · 文献卡，暂无独立精读
+- [FOCUS: Object-Centric World Models for Robotics Manipulation](../multimodal/papers/arxiv-2307.02427/README.md) · 2023 · 文献卡，暂无独立精读
+- [LaDi-WM: A Latent Diffusion-based World Model for Predictive Manipulation](../multimodal/papers/arxiv-2505.11528/README.md) · 2025 · 文献卡，暂无独立精读
+- [Mask2Real-WM: Segmentation Masks as a Sim-to-Real Bridge for Controllable Dexterous World Models](../multimodal/papers/arxiv-2607.04546/README.md) · 2026 · 文献卡，暂无独立精读
+- [A Survey of World Models for Autonomous Driving](../multimodal/papers/arxiv-2501.11260/README.md) · 2025 · 文献卡，暂无独立精读
+- [Object-Centric World Model for Language-Guided Manipulation](../multimodal/papers/arxiv-2503.06170/README.md) · 2025 · 文献卡，暂无独立精读
+- [Learning Physics-Guided Residual Dynamics for Deformable Object Simulation](../multimodal/papers/arxiv-2607.13451/README.md) · 2026 · 文献卡，暂无独立精读
+- [A High-Fidelity Digital Twin for Robotic Manipulation Based on 3D Gaussian Splatting](../multimodal/papers/arxiv-2601.03200/README.md) · 2026 · 文献卡，暂无独立精读
+- [Language-Grounded Hierarchical Planning and Execution with Multi-Robot 3D Scene Graphs](../multimodal/papers/arxiv-2506.07454/README.md) · 2025 · 文献卡，暂无独立精读
+- [EVA: Aligning Video World Models with Executable Robot Actions via Inverse Dynamics Rewards](../multimodal/papers/arxiv-2603.17808/README.md) · 2026 · 文献卡，暂无独立精读
+- [Hydra-0: Action Flow for Generalist World Modeling and Control](../multimodal/papers/arxiv-2608.18077/README.md) · 2026 · 文献卡，暂无独立精读
+- [UniVLA: Learning to Act Anywhere with Task-centric Latent Actions](../multimodal/papers/arxiv-2505.06111/README.md) · 2025 · 文献卡，暂无独立精读
+- [What Do Latent Action Models Actually Learn?](../multimodal/papers/arxiv-2506.15691/README.md) · 2025 · 文献卡，暂无独立精读
+- [LARY: A Latent Action Representation Yielding Benchmark for Generalizable Vision-to-Action Alignment](../multimodal/papers/arxiv-2604.11689/README.md) · 2026 · 文献卡，暂无独立精读
+- [Zero-WAM: In-Context World-Action Modeling from Human Videos for Open-Ended Task Generalization](papers/zero-wam/README.md) · 2026 · 选定章节讲解
+- [PIN-WM: Learning Physics-INformed World Models for Non-Prehensile Manipulation](../multimodal/papers/doi-10.15607-rss.2025.xxi.153/README.md) · 年份见原文 · 文献卡，暂无独立精读
+- [World Models for Robotic Manipulation: A Survey](../multimodal/papers/doi-10.1002-smb2.70053/README.md) · 年份见原文 · 文献卡，暂无独立精读
+- [RT-1: Robotics Transformer for Real-World Control at Scale](papers/arxiv-2212.06817/README.md) · 2022 · 文献卡，暂无独立精读
+- [RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control](papers/arxiv-2307.15818/README.md) · 2023 · 文献卡，暂无独立精读
+- [Open X-Embodiment: Robotic Learning Datasets and RT-X Models](papers/arxiv-2310.08864/README.md) · 2023 · 文献卡，暂无独立精读
+- [Diffusion Policy: Visuomotor Policy Learning via Action Diffusion](papers/diffusion-policy/README.md) · 2023 · 逐步教学版
+- [Octo: An Open-Source Generalist Robot Policy](papers/arxiv-2405.12213/README.md) · 2024 · 文献卡，暂无独立精读
+- [OpenVLA: An Open-Source Vision-Language-Action Model](papers/openvla/README.md) · 2024 · 技术精读
+- [$π_0$: A Vision-Language-Action Flow Model for General Robot Control](papers/arxiv-2410.24164/README.md) · 2024 · 文献卡，暂无独立精读
+- [FAST: Efficient Action Tokenization for Vision-Language-Action Models](papers/arxiv-2501.09747/README.md) · 2025 · 文献卡，暂无独立精读
+- [Fine-Tuning Vision-Language-Action Models: Optimizing Speed and Success](papers/arxiv-2502.19645/README.md) · 2025 · 文献卡，暂无独立精读
+- [$π_{0.5}$: a Vision-Language-Action Model with Open-World Generalization](papers/arxiv-2504.16054/README.md) · 2025 · 文献卡，暂无独立精读
+- [SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics](papers/arxiv-2506.01844/README.md) · 2025 · 文献卡，暂无独立精读
+- [GR00T N1: An Open Foundation Model for Generalist Humanoid Robots](papers/arxiv-2503.14734/README.md) · 2025 · 文献卡，暂无独立精读
+- [$π_{0.7}$: a Steerable Generalist Robotic Foundation Model with Emergent Capabilities](papers/arxiv-2604.15483/README.md) · 2026 · 文献卡，暂无独立精读
+- [Qwen-VLA: Unifying Vision-Language-Action Modeling across Tasks, Environments, and Robot Embodiments](papers/arxiv-2605.30280/README.md) · 2026 · 文献卡，暂无独立精读
+- [X-Tokenizer: A Multimodal Action Tokenizer for Vision-Language-Action Pretraining](papers/arxiv-2606.14752/README.md) · 2026 · 文献卡，暂无独立精读
+- [ForceVLA: Enhancing VLA Models with a Force-aware MoE for Contact-rich Manipulation](papers/arxiv-2505.22159/README.md) · 2025 · 文献卡，暂无独立精读
+- [SemanticFusion: Dense 3D Semantic Mapping with Convolutional Neural Networks](papers/arxiv-1609.05130/README.md) · 2016 · 文献卡，暂无独立精读
+- [PanopticFusion: Online Volumetric Semantic Mapping at the Level of Stuff and Things](papers/arxiv-1903.01177/README.md) · 2019 · 文献卡，暂无独立精读
+- [DS-VIO: Robust and Efficient Stereo Visual Inertial Odometry based on Dual Stage EKF](papers/arxiv-1905.00684/README.md) · 2019 · 文献卡，暂无独立精读
+- [PLV-IEKF: Consistent Visual-Inertial Odometry using Points, Lines, and Vanishing Points](papers/arxiv-2311.04477/README.md) · 2023 · 文献卡，暂无独立精读
+- [EqVIO: An Equivariant Filter for Visual Inertial Odometry](papers/arxiv-2205.01980/README.md) · 2022 · 文献卡，暂无独立精读
+- [A Self-Supervised, Differentiable Kalman Filter for Uncertainty-Aware Visual-Inertial Odometry](papers/arxiv-2203.07207/README.md) · 2022 · 文献卡，暂无独立精读
+- [Learned IMU Bias Prediction for Invariant Visual Inertial Odometry](papers/arxiv-2505.06748/README.md) · 2025 · 文献卡，暂无独立精读
+- [RoboTTT: Context Scaling for Robot Policies](papers/arxiv-2607.15275/README.md) · 2026 · 文献卡，暂无独立精读
+- [In-Context Imitation Learning via Next-Token Prediction](papers/arxiv-2408.15980/README.md) · 2024 · 文献卡，暂无独立精读
+- [Behavior Prompting Policy: Demonstrations as Prompts for Manipulation](papers/arxiv-2606.30457/README.md) · 2026 · 文献卡，暂无独立精读
+- [InternVLA-A1: Unifying Understanding, Generation and Action for Robotic Manipulation](papers/arxiv-2601.02456/README.md) · 2026 · 文献卡，暂无独立精读
+- [CPG-RL: Learning Central Pattern Generators for Quadruped Locomotion](papers/arxiv-2211.00458/README.md) · 2022 · 文献卡，暂无独立精读
+- [Learning Quadruped Locomotion using Bio-Inspired Neural Networks with Intrinsic Rhythmicity](papers/arxiv-2305.07300/README.md) · 2023 · 文献卡，暂无独立精读
+- [Learning Free Gait Transition for Quadruped Robots via Phase-Guided Controller](papers/arxiv-2201.00206/README.md) · 2022 · 文献卡，暂无独立精读
+- [Sim-to-Real Learning of All Common Bipedal Gaits via Periodic Reward Composition](papers/arxiv-2011.01387/README.md) · 2020 · 文献卡，暂无独立精读
+- [Humanoid-Gym: Reinforcement Learning for Humanoid Robot with Zero-Shot Sim2Real Transfer](papers/arxiv-2404.05695/README.md) · 2024 · 文献卡，暂无独立精读
+- [Learning from Massive Human Videos for Universal Humanoid Pose Control](papers/arxiv-2412.14172/README.md) · 2024 · 文献卡，暂无独立精读
+- [A Survey of Behavior Foundation Model: Next-Generation Whole-Body Control System of Humanoid Robots](papers/arxiv-2506.20487/README.md) · 2025 · 文献卡，暂无独立精读
+- [Scaling Behavior Foundation Model for Humanoid Robots](papers/arxiv-2607.15163/README.md) · 2026 · 文献卡，暂无独立精读
+- [Humanoid Locomotion and Manipulation: Current Progress and Challenges in Control, Planning, and Learning](papers/arxiv-2501.02116/README.md) · 2025 · 文献卡，暂无独立精读
+- [Attention-Based Map Encoding for Learning Generalized Legged Locomotion](papers/arxiv-2506.09588/README.md) · 2025 · 文献卡，暂无独立精读
+- [Agile and Generalized Legged Locomotion via Attention-Based Neural Map Encoding](papers/arxiv-2601.08485/README.md) · 2026 · 文献卡，暂无独立精读
+- [DeepMimic: Example-Guided Deep Reinforcement Learning of Physics-Based Character Skills](papers/arxiv-1804.02717/README.md) · 2018 · 文献卡，暂无独立精读
+- [ASE: Large-Scale Reusable Adversarial Skill Embeddings for Physically Simulated Characters](papers/arxiv-2205.01906/README.md) · 2022 · 文献卡，暂无独立精读
+- [ExBody2: Advanced Expressive Humanoid Whole-Body Control](papers/arxiv-2412.13196/README.md) · 2024 · 文献卡，暂无独立精读
+- [BeyondMimic: From Motion Tracking to Versatile Humanoid Control via Guided Diffusion](papers/arxiv-2508.08241/README.md) · 2025 · 文献卡，暂无独立精读
+- [Retargeting Matters: General Motion Retargeting for Humanoid Motion Tracking](papers/arxiv-2510.02252/README.md) · 2025 · 文献卡，暂无独立精读
+- [PIE: Parkour with Implicit-Explicit Learning Framework for Legged Robots](papers/arxiv-2408.13740/README.md) · 2024 · 文献卡，暂无独立精读
+- [Dense RGB-D Semantic Mapping with Pixel-Voxel Neural Network](papers/doi-10.3390-s18093099/README.md) · 年份见原文 · 文献卡，暂无独立精读
+- [FM-Fusion: Instance-aware Semantic Mapping Boosted by Vision-Language Foundation Models](papers/url-https-github.com-hkust-aerial-robotics-fm-fusion/README.md) · 年份见原文 · 代码仓库卡，不计为论文
+- [Walk These Ways: Tuning Robot Control for Generalization with Multiplicity of Behavior](papers/url-https-proceedings.mlr.press-v205-margolis23a-margolis23a/README.md) · 年份见原文 · 文献卡，暂无独立精读
+- [Legged Locomotion in Challenging Terrains using Egocentric Vision](papers/url-https-proceedings.mlr.press-v205-agarwal23a-agarwal23a/README.md) · 年份见原文 · 文献卡，暂无独立精读
+- [MGDP: Mastering a Generalized Depth Perception Model for Quadruped Locomotion](papers/doi-10.1002-advs.202524345/README.md) · 年份见原文 · 文献卡，暂无独立精读
+- [Training language models to follow instructions with human feedback](../llm/papers/instructgpt/README.md) · 2022 · 逐步教学版
+- [RMA: Rapid Motor Adaptation for Legged Robots](papers/rma/README.md) · 2021 · 技术精读
+- [Mastering Diverse Domains through World Models](../multimodal/papers/dreamerv3/README.md) · 2023 · 逐步教学版
+- [Vision-and-Language Navigation: Interpreting visually-grounded navigation instructions in real environments](papers/r2r/README.md) · 2017 · 技术精读
+- [Visual Instruction Tuning](../multimodal/papers/llava/README.md) · 2023 · 技术精读
+- [Denoising Diffusion Probabilistic Models](../multimodal/papers/ddpm/README.md) · 2020 · 技术精读
+- [ORB-SLAM3: An Accurate Open-Source Library for Visual, Visual-Inertial and Multi-Map SLAM](papers/orb-slam3/README.md) · 2020 · 技术精读
+- [Dynamic Locomotion in the MIT Cheetah 3 Through Convex Model-Predictive Control](papers/convex-mpc/README.md) · 年份见原文 · 技术精读
+- [Quaternion kinematics for the error-state Kalman filter](papers/eskf/README.md) · 2017 · 技术精读
+- [Sampling-based Algorithms for Optimal Motion Planning](papers/rrt-star/README.md) · 2011 · 技术精读
+- [Language Models are Few-Shot Learners](../llm/papers/gpt3/README.md) · 2020 · 技术精读
+- [Proximal Policy Optimization Algorithms](../llm/papers/ppo/README.md) · 2017 · 技术精读
+- [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](../multimodal/papers/vit/README.md) · 2020 · 逐步教学版
+- [Learning Transferable Visual Models From Natural Language Supervision](../multimodal/papers/clip/README.md) · 2021 · 逐步教学版
+- [Reconstruction or Semantics? What Makes a Latent Space Useful for Robotic World Models](../multimodal/papers/arxiv-2605.06388/README.md) · 年份见原文 · 文献卡，暂无独立精读
+- [Do As I Can, Not As I Say: Grounding Language in Robotic Affordances](papers/saycan/README.md) · 年份见原文 · 选定章节讲解
+- [Explore, Execute, Evolve: A Skill Acquisition and Reuse Loop for Embodied Agents](papers/roboskill/README.md) · 年份见原文 · 选定章节讲解
+- [EmbodiedSkills: A Unified Framework for Orchestrating, Training, and Deploying VLA Agents](papers/embodiedskills/README.md) · 年份见原文 · 选定章节讲解
+- [MEMORA: Embodied Action Memory from Egocentric Videos for Reasoning and Planning](papers/memora/README.md) · 年份见原文 · 选定章节讲解
+- [HoloAgent-0: A Unified Embodied Agent Framework with 3D Spatial Memory](papers/holoagent-0/README.md) · 年份见原文 · 选定章节讲解

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1160" viewBox="0 0 1600 1160">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#526079"/></marker></defs>
+<rect width="1600" height="1160" fill="#f6f8fc"/>
+<g font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif">
+<text x="65" y="72" font-size="40" font-weight="700" fill="#152642">DPO：将奖励差改写为策略与参考的概率比</text>
+<text x="65" y="118" font-size="23" font-weight="400" fill="#526079">离线成对偏好优化基线  |  原创机制图；不需要PPO的old策略或critic</text>
+<text x="65" y="178" font-size="25" font-weight="700" fill="#087e83">A  理论连接：同一提示下，配分函数抵消</text>
+<rect x="65" y="207" width="435" height="194" rx="18" fill="white" stroke="#7550ad" stroke-width="2"/>
+<rect x="65" y="207" width="435" height="54" rx="18" fill="#7550ad"/><rect x="65" y="234" width="435" height="27" fill="#7550ad"/>
+<text x="87" y="244" font-size="26" font-weight="700" fill="white">KL正则奖励目标</text>
+<text x="87" y="300" font-size="23" font-weight="400" fill="#152642">最大化 Eπ[r] − β KL(π || πref)</text>
+<text x="87" y="335" font-size="23" font-weight="400" fill="#152642">固定奖励r时，最优策略为</text>
+<text x="87" y="370" font-size="23" font-weight="400" fill="#152642">π* ∝ πref exp(r / β)</text>
+<rect x="580" y="207" width="435" height="194" rx="18" fill="white" stroke="#7550ad" stroke-width="2"/>
+<rect x="580" y="207" width="435" height="54" rx="18" fill="#7550ad"/><rect x="580" y="234" width="435" height="27" fill="#7550ad"/>
+<text x="602" y="244" font-size="26" font-weight="700" fill="white">重写奖励</text>
+<text x="602" y="300" font-size="23" font-weight="400" fill="#152642">r(x,y) = β log(π* / πref)</text>
+<text x="602" y="335" font-size="23" font-weight="400" fill="#152642">             + β log Z(x)</text>
+<text x="602" y="370" font-size="23" font-weight="400" fill="#152642">同一x的两回答相减，Z抵消</text>
+<rect x="1095" y="207" width="440" height="194" rx="18" fill="white" stroke="#7550ad" stroke-width="2"/>
+<rect x="1095" y="207" width="440" height="54" rx="18" fill="#7550ad"/><rect x="1095" y="234" width="440" height="27" fill="#7550ad"/>
+<text x="1117" y="244" font-size="26" font-weight="700" fill="white">Bradley–Terry比较</text>
+<text x="1117" y="300" font-size="23" font-weight="400" fill="#152642">P(yw ≻ yl | x) = σ(r_w − r_l)</text>
+<text x="1117" y="335" font-size="23" font-weight="400" fill="#152642">用πθ参数化隐式奖励</text>
+<text x="1117" y="370" font-size="23" font-weight="400" fill="#152642">直接最大化偏好对似然</text>
+<path d="M502,310 L577,310" fill="none" stroke="#526079" stroke-width="3" marker-end="url(#arrow)" />
+<path d="M1017,310 L1092,310" fill="none" stroke="#526079" stroke-width="3" marker-end="url(#arrow)" />
+<text x="65" y="474" font-size="25" font-weight="700" fill="#087e83">B  训练计算：同一份离线数据，送入两套模型</text>
+<rect x="65" y="516" width="350" height="302" rx="18" fill="white" stroke="#315bba" stroke-width="2"/>
+<rect x="65" y="516" width="350" height="54" rx="18" fill="#315bba"/><rect x="65" y="543" width="350" height="27" fill="#315bba"/>
+<text x="87" y="553" font-size="26" font-weight="700" fill="white">偏好数据</text>
+<text x="87" y="609" font-size="23" font-weight="400" fill="#152642">提示 x</text>
+<text x="87" y="644" font-size="23" font-weight="400" fill="#152642">winner yw</text>
+<text x="87" y="679" font-size="23" font-weight="400" fill="#152642">loser yl</text>
+<text x="87" y="714" font-size="23" font-weight="400" fill="#152642"></text>
+<text x="87" y="749" font-size="23" font-weight="400" fill="#152642">固定数据集内读取</text>
+<text x="87" y="784" font-size="23" font-weight="400" fill="#152642">采集数据时可曾需要采样</text>
+<rect x="493" y="516" width="427" height="132" rx="18" fill="white" stroke="#087e83" stroke-width="2"/>
+<rect x="493" y="516" width="427" height="54" rx="18" fill="#087e83"/><rect x="493" y="543" width="427" height="27" fill="#087e83"/>
+<text x="515" y="553" font-size="26" font-weight="700" fill="white">当前policy πθ</text>
+<text x="515" y="609" font-size="22" font-weight="400" fill="#152642">计算 logπθ(yw|x)、logπθ(yl|x)</text>
+<rect x="493" y="686" width="427" height="132" rx="18" fill="white" stroke="#315bba" stroke-width="2"/>
+<rect x="493" y="686" width="427" height="54" rx="18" fill="#315bba"/><rect x="493" y="713" width="427" height="27" fill="#315bba"/>
+<text x="515" y="723" font-size="26" font-weight="700" fill="white">冻结reference πref</text>
+<text x="515" y="779" font-size="22" font-weight="400" fill="#152642">计算 logπref(yw|x)、logπref(yl|x)</text>
+<rect x="1010" y="516" width="525" height="302" rx="18" fill="white" stroke="#087e83" stroke-width="2"/>
+<rect x="1010" y="516" width="525" height="54" rx="18" fill="#087e83"/><rect x="1010" y="543" width="525" height="27" fill="#087e83"/>
+<text x="1032" y="553" font-size="26" font-weight="700" fill="white">差上差 → 二元损失</text>
+<text x="1032" y="609" font-size="22" font-weight="400" fill="#152642">u(y) = logπθ(y|x) − logπref(y|x)</text>
+<text x="1032" y="644" font-size="22" font-weight="400" fill="#152642">m = β [u(yw) − u(yl)]</text>
+<text x="1032" y="679" font-size="22" font-weight="400" fill="#152642">L_DPO = −log σ(m)</text>
+<text x="1032" y="714" font-size="22" font-weight="400" fill="#152642"></text>
+<text x="1032" y="749" font-size="22" font-weight="400" fill="#152642">反向传播只更新当前policy</text>
+<text x="1032" y="784" font-size="22" font-weight="400" fill="#152642">判断越错，更新权重越大</text>
+<path d="M418,655 L451,655 L451,580 L488,580" fill="none" stroke="#526079" stroke-width="3" marker-end="url(#arrow)" />
+<path d="M451,655 L451,750 L488,750" fill="none" stroke="#526079" stroke-width="3" marker-end="url(#arrow)" />
+<path d="M923,580 L1005,580" fill="none" stroke="#526079" stroke-width="3" marker-end="url(#arrow)" />
+<path d="M923,750 L1005,750" fill="none" stroke="#526079" stroke-width="3" marker-end="url(#arrow)" />
+<path d="M1269,514 L1269,491 L710,491 L710,513" fill="none" stroke="#526079" stroke-width="3" marker-end="url(#arrow)" />
+<text x="965" y="477" font-size="22" font-weight="700" fill="#087e83">更新θ；reference不更新</text>
+<rect x="65" y="925" width="1470" height="152" rx="18" fill="white" stroke="#b56119" stroke-width="2"/>
+<rect x="65" y="925" width="1470" height="54" rx="18" fill="#b56119"/><rect x="65" y="952" width="1470" height="27" fill="#b56119"/>
+<text x="87" y="962" font-size="26" font-weight="700" fill="white">成立条件与范围</text>
+<text x="87" y="1018" font-size="23" font-weight="400" fill="#152642">β＞0、参考支持覆盖、偏好模型假设；有限数据与有限容量不保证真实最优</text>
+<text x="87" y="1053" font-size="23" font-weight="400" fill="#152642">训练循环无在线rollout / 独立RM / critic；推理只需最终policy；不是所有RL的替代品</text>
+<text x="65" y="1125" font-size="20" font-weight="400" fill="#526079">来源：DPO §3–5、式3–7、附录A–B  |  arXiv:2305.18290v3</text>
+</g></svg>

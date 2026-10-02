@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="860" viewBox="0 0 1440 860"><defs>
+<marker id="blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2469a5"/></marker>
+<marker id="green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#258163"/></marker>
+<marker id="purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8853a4"/></marker>
+<marker id="orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#b67824"/></marker>
+<marker id="muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#516578"/></marker>
+</defs><rect width="100%" height="100%" fill="#ffffff"/>
+<style>text{font-family:"Noto Sans CJK SC","Noto Sans CJK",sans-serif;fill:#172b42} .sub{fill:#516578}</style>
+<text x="44" y="58" font-size="34" font-weight="700" text-anchor="start" style="fill:#172b42">拿杯子不是一份清单 而是一轮轮闭环</text>
+<text x="44" y="99" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">目标：厨房蓝杯 → 客厅指定区域 · 完成条件必须由新证据确认</text>
+<rect x="45" y="170" width="270" height="160" rx="16" fill="#edf5fb" stroke="#2469a5" stroke-width="2"/>
+<text x="65" y="209" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">① 观察</text>
+<text x="65" y="249" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">拍图与读机器人状态</text>
+<text x="65" y="280" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">记录时间和来源</text>
+<rect x="405" y="170" width="270" height="160" rx="16" fill="#edf5fb" stroke="#2469a5" stroke-width="2"/>
+<text x="425" y="209" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">② 对象绑定</text>
+<text x="425" y="249" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">蓝杯 → 实例 C17</text>
+<text x="425" y="280" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">像素 → 几何位置</text>
+<rect x="765" y="170" width="270" height="160" rx="16" fill="#edf5fb" stroke="#2469a5" stroke-width="2"/>
+<text x="785" y="209" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">③ 更新任务状态</text>
+<text x="785" y="249" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">事实 计划 历史分开</text>
+<text x="785" y="280" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">旧位姿可被新证据失效</text>
+<rect x="1125" y="170" width="270" height="160" rx="16" fill="#edf5fb" stroke="#2469a5" stroke-width="2"/>
+<text x="1145" y="209" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">④ 选择下一子目标</text>
+<text x="1145" y="249" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">现在能做哪个技能</text>
+<text x="1145" y="280" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">目标必须可验证</text>
+<polyline points="315,250 405,250" fill="none" stroke="#2469a5" stroke-width="3" stroke-dasharray="0" marker-end="url(#blue)"/>
+<polyline points="675,250 765,250" fill="none" stroke="#2469a5" stroke-width="3" stroke-dasharray="0" marker-end="url(#blue)"/>
+<polyline points="1035,250 1125,250" fill="none" stroke="#2469a5" stroke-width="3" stroke-dasharray="0" marker-end="url(#blue)"/>
+<rect x="1125" y="475" width="270" height="160" rx="16" fill="#edf5fb" stroke="#2469a5" stroke-width="2"/>
+<text x="1145" y="514" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">⑤ 检查并调用</text>
+<text x="1145" y="554" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">参数类型 依赖与阶段</text>
+<text x="1145" y="585" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">检查通过才进入执行</text>
+<rect x="765" y="475" width="270" height="160" rx="16" fill="#edf5fb" stroke="#2469a5" stroke-width="2"/>
+<text x="785" y="514" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">⑥ 执行有限片段</text>
+<text x="785" y="554" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">底层策略给出动作</text>
+<text x="785" y="585" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">控制器跟踪并反馈</text>
+<rect x="405" y="475" width="270" height="160" rx="16" fill="#eef8f1" stroke="#258163" stroke-width="2"/>
+<text x="425" y="514" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">⑦ 读取新证据</text>
+<text x="425" y="554" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">是否真的持杯或放好</text>
+<text x="425" y="585" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">命令完成 ≠ 目标完成</text>
+<rect x="45" y="475" width="270" height="160" rx="16" fill="#eef8f1" stroke="#258163" stroke-width="2"/>
+<text x="65" y="514" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">⑧ 恢复或推进</text>
+<text x="65" y="554" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">定位错 → 重新观察</text>
+<text x="65" y="585" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">证据足 → 下一子目标</text>
+<polyline points="1260,330 1260,475" fill="none" stroke="#2469a5" stroke-width="3" stroke-dasharray="0" marker-end="url(#blue)"/>
+<polyline points="1125,555 1035,555" fill="none" stroke="#2469a5" stroke-width="3" stroke-dasharray="0" marker-end="url(#blue)"/>
+<polyline points="765,555 675,555" fill="none" stroke="#258163" stroke-width="3" stroke-dasharray="0" marker-end="url(#green)"/>
+<polyline points="405,555 315,555" fill="none" stroke="#258163" stroke-width="3" stroke-dasharray="0" marker-end="url(#green)"/>
+<polyline points="180,475 180,330" fill="none" stroke="#258163" stroke-width="3" stroke-dasharray="0" marker-end="url(#green)"/>
+<text x="204" y="409" font-size="20" font-weight="400" text-anchor="start" style="fill:#258163">修正假设</text>
+<polyline points="540,635 540,720 1180,720" fill="none" stroke="#258163" stroke-width="3" stroke-dasharray="0" marker-end="url(#green)"/>
+<text x="650" y="706" font-size="20" font-weight="400" text-anchor="start" style="fill:#258163">最终条件都满足 → 记录完成</text>
+<text x="45" y="802" font-size="20" font-weight="400" text-anchor="start" style="fill:#516578">这是一张教学系统图：不同论文只实现或评测其中一部分，不应把全部能力自动归给任一模型。</text>
+</svg>

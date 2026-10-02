@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1370" viewBox="0 0 1600 1370">
+<rect width="1600" height="1370" fill="#f6f8fc"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#526079"/></marker></defs>
+<g font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif">
+<text x="64" y="76" font-size="40" font-weight="700" fill="#152642">DPO 第二步  为什么不必先训练独立奖励模型</text>
+<text x="64" y="124" font-size="23" font-weight="400" fill="#526079">先推导固定奖励的最优策略，再把奖励差换成策略与参考的 log 概率比</text>
+<rect x="64" y="168" width="1472" height="190" rx="16" fill="white" stroke="#315bba" stroke-width="2"/>
+<text x="90" y="215" font-size="30" font-weight="700" fill="#315bba">1  起点：固定奖励 r，最大化正则目标</text>
+<text x="90" y="269" font-size="26" font-weight="400" fill="#152642">J(π) = Eπ[r] − β KL(π || πref)         β &gt; 0</text>
+<text x="90" y="315" font-size="26" font-weight="400" fill="#152642">奖励推动行为改变；KL 对偏离参考分布施加软惩罚。</text>
+<path d="M800 366 L800 398" stroke="#526079" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="64" y="408" width="1472" height="190" rx="16" fill="white" stroke="#315bba" stroke-width="2"/>
+<text x="90" y="455" font-size="30" font-weight="700" fill="#315bba">2  配成一个 KL，得到最优分布</text>
+<text x="90" y="509" font-size="26" font-weight="400" fill="#152642">J(π) = β log Z(x) − β KL(π || π*)</text>
+<text x="90" y="555" font-size="26" font-weight="400" fill="#152642">π*(y|x) = πref(y|x) exp[r(x,y)/β] / Z(x)</text>
+<path d="M800 606 L800 638" stroke="#526079" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="64" y="648" width="1472" height="190" rx="16" fill="white" stroke="#7550ad" stroke-width="2"/>
+<text x="90" y="695" font-size="30" font-weight="700" fill="#7550ad">3  倒过来写奖励；同一个提示下相减</text>
+<text x="90" y="749" font-size="26" font-weight="400" fill="#152642">r(x,y) = β log[π*(y|x)/πref(y|x)] + β log Z(x)</text>
+<text x="90" y="795" font-size="26" font-weight="400" fill="#152642">r(x,A) − r(x,B)：两项 β log Z(x) 抵消，不需要显式求 Z。</text>
+<path d="M800 846 L800 878" stroke="#526079" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="64" y="888" width="1472" height="190" rx="16" fill="white" stroke="#087e83" stroke-width="2"/>
+<text x="90" y="935" font-size="30" font-weight="700" fill="#087e83">4  放入 BT 偏好模型，用可训练 πθ 来拟合</text>
+<text x="90" y="989" font-size="26" font-weight="400" fill="#152642">P(A ≻ B|x) = σ(rA − rB) = σ(mθ)</text>
+<text x="90" y="1035" font-size="24" font-weight="400" fill="#152642">mθ = β{[log πθ(A|x) − log πref(A|x)] − [log πθ(B|x) − log πref(B|x)]}</text>
+<path d="M800 1086 L800 1120" stroke="#526079" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="64" y="1130" width="1472" height="112" rx="16" fill="#e9f6f4" stroke="#087e83" stroke-width="2"/>
+<text x="90" y="1176" font-size="30" font-weight="700" fill="#087e83">5  实际训练：ℓ = −log σ(mθ)，只对当前 policy 反向传播</text>
+<text x="90" y="1218" font-size="25" font-weight="400" fill="#152642">读固定偏好对并评分；不在每次更新中计算 π*、Z 或在线采样新的候选回答。</text>
+<text x="64" y="1293" font-size="23" font-weight="400" fill="#b56119">成立条件：BT 偏好假设、β &gt; 0、参考支持与可归一化；一般分布空间推导不保证有限网络最优。</text>
+<text x="64" y="1340" font-size="21" font-weight="400" fill="#526079">图 2  根据 DPO §3–5 与附录 A.1–A.2 原创重绘  |  π* 是理论最优策略，πθ 是待训练模型</text>
+</g>
+</svg>

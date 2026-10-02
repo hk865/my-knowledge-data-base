@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810"><defs>
+<marker id="blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#2469a5"/></marker>
+<marker id="green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#258163"/></marker>
+<marker id="purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#8853a4"/></marker>
+<marker id="orange" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#b67824"/></marker>
+<marker id="muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#516578"/></marker>
+</defs><rect width="100%" height="100%" fill="#ffffff"/>
+<style>text{font-family:"Noto Sans CJK SC","Noto Sans CJK",sans-serif;fill:#172b42} .sub{fill:#516578}</style>
+<text x="44" y="58" font-size="34" font-weight="700" text-anchor="start" style="fill:#172b42">一轮真实执行 怎样产生可学习的数据</text>
+<text x="44" y="99" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">数据流蓝色 · 真实反馈绿色 · 参数学习紫色</text>
+<rect x="45" y="155" width="290" height="155" rx="16" fill="#edf5fb" stroke="#2469a5" stroke-width="2"/>
+<text x="65" y="194" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">① 当前观测</text>
+<text x="65" y="234" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">相机图像 oₜ</text>
+<text x="65" y="265" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">关节与夹爪状态 bₜ</text>
+<rect x="410" y="155" width="290" height="155" rx="16" fill="#edf5fb" stroke="#2469a5" stroke-width="2"/>
+<text x="430" y="194" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">② 发出并执行动作</text>
+<text x="430" y="234" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">动作 aₜ 有单位与坐标系</text>
+<text x="430" y="265" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">命令 ≠ 物体已移动</text>
+<rect x="775" y="155" width="290" height="155" rx="16" fill="#eef8f1" stroke="#258163" stroke-width="2"/>
+<text x="795" y="194" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">③ 新的真实测量</text>
+<text x="795" y="234" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">下一图像 oₜ₊₁</text>
+<text x="795" y="265" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">奖励与终止（若有）</text>
+<rect x="1110" y="155" width="280" height="155" rx="16" fill="#eef8f1" stroke="#258163" stroke-width="2"/>
+<text x="1130" y="194" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">④ 修正下一轮选择</text>
+<text x="1130" y="234" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">真实结果返回决策</text>
+<text x="1130" y="265" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">不把预测当作测量</text>
+<polyline points="335,232 410,232" fill="none" stroke="#2469a5" stroke-width="3" stroke-dasharray="0" marker-end="url(#blue)"/>
+<polyline points="700,232 775,232" fill="none" stroke="#2469a5" stroke-width="3" stroke-dasharray="0" marker-end="url(#blue)"/>
+<polyline points="1065,232 1110,232" fill="none" stroke="#2469a5" stroke-width="3" stroke-dasharray="0" marker-end="url(#blue)"/>
+<polyline points="1260,310 1260,370 190,370 190,310" fill="none" stroke="#258163" stroke-width="3" stroke-dasharray="0" marker-end="url(#green)"/>
+<text x="730" y="358" font-size="20" font-weight="400" text-anchor="start" style="fill:#258163">执行后再观察 形成闭环</text>
+<rect x="115" y="450" width="535" height="175" rx="16" fill="#edf5fb" stroke="#2469a5" stroke-width="2"/>
+<text x="135" y="489" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">按时间保存一段真实轨迹</text>
+<text x="135" y="529" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">oₜ、bₜ、aₜ、oₜ₊₁、bₜ₊₁</text>
+<text x="135" y="560" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">可选：奖励 rₜ₊₁、继续标志 cₜ₊₁</text>
+<text x="135" y="591" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">记录实际动作 不只是计划动作</text>
+<rect x="790" y="450" width="535" height="175" rx="16" fill="#f5eef9" stroke="#8853a4" stroke-width="2"/>
+<text x="810" y="489" font-size="25" font-weight="700" text-anchor="start" style="fill:#172b42">训练时从轨迹取连续片段</text>
+<text x="810" y="529" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">预测值与真实目标比较 → 损失</text>
+<text x="810" y="560" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">反向传播 → 更新网络参数 φ</text>
+<text x="810" y="591" font-size="21" font-weight="400" text-anchor="start" style="fill:#516578">日志保存与参数更新是两件事</text>
+<polyline points="550,310 550,410 380,410 380,450" fill="none" stroke="#2469a5" stroke-width="3" stroke-dasharray="0" marker-end="url(#blue)"/>
+<polyline points="650,535 790,535" fill="none" stroke="#8853a4" stroke-width="3" stroke-dasharray="8" marker-end="url(#purple)"/>
+<text x="45" y="737" font-size="20" font-weight="400" text-anchor="start" style="fill:#516578">教学任务：把蓝杯移到托盘。示意接口并非任何一篇论文的完整机器人配置。</text>
+</svg>

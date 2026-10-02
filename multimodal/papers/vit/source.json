@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2010.11929",
+  "title": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/vit",
+  "official_url": "https://arxiv.org/abs/2010.11929",
+  "official_fulltext_url": "https://arxiv.org/pdf/2010.11929v2",
+  "read_version": "v2",
+  "version_status": "specified_in_existing_reading",
+  "reading_depth": "full_text_reading_and_evidence_audit",
+  "teaching_status": "expanded_beginner_lesson",
+  "content_kind": "reading",
+  "reading_path": "reading.md",
+  "reading_boundary": "本篇保留现有技术精读，范围与残余边界见正文和证据档案；未独立复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-02",
+  "legacy_paths": [
+    "docs/deep-readings/vit.md"
+  ],
+  "evidence_paths": [
+    "docs/deep-readings/evidence/vit.json",
+    "../../../docs/deep-readings/evidence/vit.json",
+    "../../../docs/deep-readings/evidence/vit.beginner-revision.json"
+  ],
+  "topic_paths": [
+    "multimodal/alignment",
+    "multimodal/visual-representation",
+    "robotics/perception"
+  ]
+}

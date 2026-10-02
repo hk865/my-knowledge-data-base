@@ -1,134 +1,212 @@
-# 待核实的聊天线索
+# 待核实清单
 
-以下18项没有完整可核验标识，或题名与链接尚未建立可靠对应，不计入已核验论文数，也不根据猜测补齐链接。日期和描述是历史检索摘要。
+29 条。保留历史身份与链接缺口；新目录或教学文章不自动清除待核实状态。
 
-## 01 Inference Scaling Laws: An Empirical Analysis of Compute-Optimal Inference for LLM Problem-Solving
+## 1. Inference Scaling Laws: An Empirical Analysis of Compute-Optimal Inference for LLM Problem-Solving
 
-日期：2026-09-10T05:06:03Z
+- 原记录入口：未恢复完整链接
+- 状态：unresolved
+- 缺口：Only https://proceedings.iclr.cc/... retrieved.
+- 来源类型：assistant_suggested_in_chat
 
-待核实原因：Only https://proceedings.iclr.cc/... retrieved.
+## 2. Self-Refine
 
-## 02 Self-Refine
+- 原记录入口：未恢复完整链接
+- 状态：unresolved
+- 缺口：Named, only truncated NeurIPS URL.
+- 来源类型：assistant_suggested_in_chat
 
-日期：2026-09-23T15:35:43Z
+## 3. PromptAgent
 
-待核实原因：Named, only truncated NeurIPS URL.
+- 原记录入口：未恢复完整链接
+- 状态：unresolved
+- 缺口：Named, only truncated ICLR URL.
+- 来源类型：assistant_suggested_in_chat
 
-## 03 PromptAgent
+## 4. Reflexion
 
-日期：2026-09-23T15:35:43Z
+- 原记录入口：未恢复完整链接
+- 状态：unresolved
+- 缺口：Named, truncated URLs only.
+- 来源类型：assistant_suggested_in_chat
 
-待核实原因：Named, only truncated ICLR URL.
+## 5. Language Models Don’t Always Say What They Think: Unfaithful Explanations in Chain-of-Thought Prompting
 
-## 04 Reflexion
+- 原记录入口：未恢复完整链接
+- 状态：unresolved
+- 缺口：Named, NeurIPS URL truncated.
+- 来源类型：assistant_suggested_in_chat
 
-日期：2026-09-23T15:35:43Z
+## 6. AgentBench
 
-待核实原因：Named, truncated URLs only.
+- 原记录入口：未恢复完整链接
+- 状态：unresolved
+- 缺口：Named, ICLR URL truncated.
+- 来源类型：assistant_suggested_in_chat
 
-## 05 Language Models Don’t Always Say What They Think: Unfaithful Explanations in Chain-of-Thought Prompting
+## 7. τ-bench
 
-日期：2026-08-25T15:00:25Z
+- 原记录入口：未恢复完整链接
+- 状态：unresolved
+- 缺口：Named, paperswithcode URL truncated.
+- 来源类型：assistant_suggested_in_chat
 
-待核实原因：Named, NeurIPS URL truncated.
+## 8. Relational knowledge in attention (reported arXiv 2409.00617)
 
-## 06 AgentBench
+- 原记录入口：未恢复完整链接
+- 状态：unresolved
+- 缺口：Identifier in initial retrieval; exact historical URL not recovered on targeted search. Not verified/promoted.
+- 来源类型：assistant_suggested_in_chat
 
-日期：2026-09-01T11:44:47Z
+## 9. Later-layer factual formation (reported arXiv 2606.07978)
 
-待核实原因：Named, ICLR URL truncated.
+- 原记录入口：未恢复完整链接
+- 状态：unresolved
+- 缺口：Identifier in initial retrieval; exact historical URL not recovered on targeted search. Not verified/promoted.
+- 来源类型：assistant_suggested_in_chat
 
-## 07 τ-bench
+## 10. https://www.mdpi.com/1424-8220/26/17/5595
 
-日期：2026-09-01T11:44:47Z
+- 原记录入口：https://www.mdpi.com/1424-8220/26/17/5595
+- 状态：unresolved
+- 缺口：Publisher open failed; targeted search did not establish matching title. Retain for later resolution.
+- 来源类型：assistant_suggested_chat_link
 
-待核实原因：Named, paperswithcode URL truncated.
+## 11. PointWorld (historical label)
 
-## 08 Relational knowledge in attention (reported arXiv 2409.00617)
+- 原记录入口：未恢复完整链接
+- 状态：unresolved_truncated_url
+- 缺口：Cannot safely recover exact cited paper from truncated URL.
+- 来源类型：assistant_suggested_chat_link
 
-日期：2026-08-18T05:22:59Z
+## 12. 身份未确定
 
-待核实原因：Identifier in initial retrieval; exact historical URL not recovered on targeted search. Not verified/promoted.
+- 原记录入口：未恢复完整链接
+- 状态：unresolved_truncated_url
+- 缺口：No exact identifier or title.
+- 来源类型：assistant_suggested_chat_link
 
-## 09 Later-layer factual formation (reported arXiv 2606.07978)
+## 13. 身份未确定
 
-日期：2026-08-18T05:22:59Z
+- 原记录入口：未恢复完整链接
+- 状态：unresolved_truncated_url
+- 缺口：Focused retrieval did not recover full identifier; not merged with another paper.
+- 来源类型：assistant_suggested_chat_link
 
-待核实原因：Identifier in initial retrieval; exact historical URL not recovered on targeted search. Not verified/promoted.
+## 14. TLIO
 
-## 10 https://www.mdpi.com/1424-8220/26/17/5595
+- 原记录入口：未恢复完整链接
+- 状态：unresolved
+- 缺口：Named in January 7 chat excerpt without exact URL; not counted as extracted link.
+- 来源类型：原记录所述历史来源
 
-日期：2026-09-04T11:35:25Z
+## 15. Yan ICRA 2018
 
-原始链接：https://www.mdpi.com/1424-8220/26/17/5595
+- 原记录入口：未恢复完整链接
+- 状态：unresolved
+- 缺口：Name only; insufficient identity and no URL.
+- 来源类型：原记录所述历史来源
 
-检索摘要：Exact MDPI URL returned by initial broad retrieval
+## 16. Extreme Parkour
 
-限制：Publisher open failed; targeted search did not establish matching title. Retain for later resolution.
+- 原记录入口：未恢复完整链接
+- 状态：unresolved
+- 缺口：Only truncated GitHub URL; excluded.
+- 来源类型：原记录所述历史来源
 
-状态：unresolved
+## 17. GEN-1.5 / MimicDroid / AIRSOUL
 
-## 11 PointWorld (historical label)
+- 原记录入口：未恢复完整链接
+- 状态：unresolved
+- 缺口：Mentioned in physical ICL context without exact paper URLs.
+- 来源类型：原记录所述历史来源
 
-日期：2026-09-04T11:35:25Z
+## 18. doi:10.21203/rs.3.rs-9638576/v1
 
-检索摘要：PointWorld: https://openaccess.thecvf.com/...
+- 原记录入口：https://doi.org/10.21203/rs.3.rs-9638576/v1
+- 状态：unresolved_primary_identity
+- 缺口：2026-09-30 DOI工具访问失败；Research Square入口返回403。二手索引不足以替代官方题名和身份核验。旧助手题名不作为事实。
+- 来源类型：user-provided-exact-link
 
-限制：Cannot safely recover exact cited paper from truncated URL.
+## 19. A survey on knowledge distillation: Recent advancements
 
-状态：unresolved_truncated_url
+- 原记录入口：https://doi.org/10.1016/j.mlwa.2024.100605
+- 状态：pending_primary_page_verification
+- 缺口：原消息只称现代综述；标题来自当前出版社搜索索引，直接页面403。不能标为已阅读全文。
+- 来源类型：assistant-recommended-or-discussion-citation
 
-## 12 未完整识别的链接
+## 20. Stealing Machine Learning Models via Prediction APIs
 
-日期：2026-09-04T11:35:25Z
+- 原记录入口：https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/tramer
+- 状态：pending_historical_exact_link
+- 缺口：历史仅恢复标题和截断 https://www.usenix.org/...；当前官方核验URL不是恢复的历史原链接，因此不计入严格实际链接增量。
+- 来源类型：assistant-recommended-or-discussion-citation
 
-检索摘要：https://www.frontiersin.org/...
+## 21. FOCUS
 
-限制：No exact identifier or title.
+- 原记录入口：未恢复完整链接
+- 状态：pending_historical_exact_link
+- 缺口：当前目录已有同名FOCUS论文正式标识；该历史提及的完整原URL尚未恢复，不视为新增论文或精确历史链接。
+- 来源类型：assistant-mentioned
 
-状态：unresolved_truncated_url
+## 22. ATP-VPDSG
 
-## 13 未完整识别的链接
+- 原记录入口：未恢复完整链接
+- 状态：unresolved_identity_or_historical_link
+- 缺口：历史标题命中，但完整原URL/标识缺失；暂不补造论文身份
+- 来源类型：assistant-mentioned
 
-日期：2026-09-23
+## 23. ECoT
 
-检索摘要：https://arxiv.org/abs/2605 [truncated after LARY in initial retrieval]
+- 原记录入口：未恢复完整链接
+- 状态：unresolved_identity_or_historical_link
+- 缺口：仅站内论文笔记入口；原论文URL/arXiv/DOI在已检索片段缺失
+- 来源类型：old-file-reference
 
-限制：Focused retrieval did not recover full identifier; not merged with another paper.
+## 24. MemoryVLA
 
-状态：unresolved_truncated_url
+- 原记录入口：未恢复完整链接
+- 状态：unresolved_identity_or_historical_link
+- 缺口：仅站内论文笔记入口；原论文URL/arXiv/DOI在已检索片段缺失
+- 来源类型：old-file-reference
 
-## 14 TLIO
+## 25. MemoryVLA++
 
-待核实原因：Named in January 7 chat excerpt without exact URL; not counted as extracted link.
+- 原记录入口：未恢复完整链接
+- 状态：unresolved_identity_or_historical_link
+- 缺口：仅站内论文笔记入口；原论文URL/arXiv/DOI在已检索片段缺失
+- 来源类型：old-file-reference
 
-## 15 Yan ICRA 2018
+## 26. Reflective VLA
 
-待核实原因：Name only; insufficient identity and no URL.
+- 原记录入口：未恢复完整链接
+- 状态：unresolved_identity_or_historical_link
+- 缺口：仅站内论文笔记入口；原论文URL/arXiv/DOI在已检索片段缺失
+- 来源类型：old-file-reference
 
-## 16 Extreme Parkour
+## 27. V-JEPA 2
 
-待核实原因：Only truncated GitHub URL; excluded.
+- 原记录入口：未恢复完整链接
+- 状态：unresolved_identity_or_historical_link
+- 缺口：名称出现，原始链接缺失
+- 来源类型：assistant-mentioned
 
-## 17 GEN-1.5 / MimicDroid / AIRSOUL
+## 28. Gemini Robotics
 
-待核实原因：Mentioned in physical ICL context without exact paper URLs.
+- 原记录入口：未恢复完整链接
+- 状态：unresolved_identity_or_historical_link
+- 缺口：项目或公司/实验室资料提及，未恢复完整原论文身份
+- 来源类型：assistant-mentioned
 
-## 18. 用户提供的生物计算 DOI
+## 29. Skild Brain
 
-{
-  "id": "doi:10.21203/rs.3.rs-9638576/v1",
-  "title": null,
-  "url": "https://doi.org/10.21203/rs.3.rs-9638576/v1",
-  "doi": "10.21203/rs.3.rs-9638576/v1",
-  "chat_date": "2026-09-03T16:11:26Z",
-  "provenance": "user-provided-exact-link",
-  "source_evidence": "2026-09-30定向历史检索恢复用户提供的精确DOI；相邻用户文字为文献链接。未取得原会话链接。",
-  "topic_paths": [
-    "cross-domain/biological-computing"
-  ],
-  "status": "unresolved_primary_identity",
-  "reason": "2026-09-30 DOI工具访问失败；Research Square入口返回403。二手索引不足以替代官方题名和身份核验。旧助手题名不作为事实。",
-  "reading_status": "未读取原文；用户阅读状态未知",
-  "last_checked_at": "2026-09-30T08:15:00Z"
-}
+- 原记录入口：未恢复完整链接
+- 状态：unresolved_identity_or_historical_link
+- 缺口：项目或公司/实验室资料提及，未恢复完整原论文身份
+- 来源类型：assistant-mentioned
+
+## 仅概念，不计论文
+
+任务分解、记忆、skill/tool executor、终止/超时、重规划与恢复，以及VLA / World Model / 具身Agent / VLN兴趣讨论仅作为概念来源；不补造具体论文。
+
+[完整专题历史来源与限制](../robotics-embodied/catalog/history-recovery.json)

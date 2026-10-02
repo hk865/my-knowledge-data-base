@@ -1,0 +1,41 @@
+<svg style="font-family: Noto Sans CJK SC, sans-serif; fill: #142a43" xmlns="http://www.w3.org/2000/svg" width="1440" height="960" viewBox="0 0 1440 960"><defs><marker id="a" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9Z" fill="#6c8294"/></marker></defs><rect width="1440" height="960" fill="#f8fbfd"/>
+<text x="55" y="63" font-size="34" font-weight="700">Test-Time Compute：预算怎样分，取决于问题与模型</text>
+<text x="55" y="103" font-size="21" fill="#596d80">原创机制图 · 固定模型之后调搜索/修订策略；“compute-optimal”是候选方法集合内的经验近似</text>
+<rect x="55" y="160" width="270" height="110" rx="14" fill="#e5f1fc" stroke="#b7c9d7" stroke-width="1.5"/>
+<text x="77" y="198" font-size="24" fill="#142a43" font-weight="400">输入题目 q</text>
+<text x="77" y="234" font-size="24" fill="#142a43" font-weight="400">固定推理预算 B</text>
+<rect x="435" y="160" width="445" height="110" rx="14" fill="#fff0cc" stroke="#b7c9d7" stroke-width="1.5"/>
+<text x="457" y="198" font-size="24" fill="#142a43" font-weight="400">估计模型相对难度 d(q)</text>
+<text x="457" y="234" font-size="24" fill="#142a43" font-weight="400">在验证数据选择策略 θ(d, B)</text>
+<rect x="990" y="160" width="395" height="110" rx="14" fill="#fde8e7" stroke="#b7c9d7" stroke-width="1.5"/>
+<text x="1012" y="198" font-size="22" fill="#142a43" font-weight="400">注意：难度估计有成本</text>
+<text x="1012" y="232" font-size="22" fill="#142a43" font-weight="400">论文2048样本成本未计入</text>
+<path d="M325,216 L435,216" fill="none" stroke="#6c8294" stroke-width="3" marker-end="url(#a)"/>
+<path d="M880,216 L990,216" fill="none" stroke="#6c8294" stroke-width="3" marker-end="url(#a)"/>
+<rect x="55" y="385" width="600" height="170" rx="14" fill="#e5f1fc" stroke="#b7c9d7" stroke-width="1.5"/>
+<text x="77" y="423" font-size="23" fill="#142a43" font-weight="400">路线1：固定生成器，用 PRM 搜索</text>
+<text x="77" y="458" font-size="23" fill="#142a43" font-weight="400">best-of-N：独立生成完整解答 → 评分</text>
+<text x="77" y="493" font-size="23" fill="#142a43" font-weight="400">beam：逐步扩展 → PRM评分 → 剪枝</text>
+<text x="77" y="528" font-size="23" fill="#142a43" font-weight="400">lookahead：再往前试 k 步，消耗额外预算</text>
+<rect x="785" y="385" width="600" height="170" rx="14" fill="#dff4ed" stroke="#b7c9d7" stroke-width="1.5"/>
+<text x="807" y="423" font-size="23" fill="#142a43" font-weight="400">路线2：训练过的修订模型</text>
+<text x="807" y="458" font-size="23" fill="#142a43" font-weight="400">K 条并行起点 × 每条 S 个连续候选</text>
+<text x="807" y="493" font-size="23" fill="#142a43" font-weight="400">顺序增加局部修正；并行增加路径多样性</text>
+<text x="807" y="528" font-size="23" fill="#142a43" font-weight="400">各链内选答案，再跨链聚合</text>
+<polyline points="655,270 655,330 350,330 350,385" fill="none" stroke="#6c8294" stroke-width="3" marker-end="url(#a)"/>
+<polyline points="655,270 655,330 1080,330 1080,385" fill="none" stroke="#6c8294" stroke-width="3" marker-end="url(#a)"/>
+<rect x="55" y="615" width="600" height="160" rx="14" fill="#fff0cc" stroke="#b7c9d7" stroke-width="1.5"/>
+<text x="77" y="653" font-size="23" fill="#142a43" font-weight="400">实验边界</text>
+<text x="77" y="688" font-size="23" fill="#142a43" font-weight="400">低预算/中等难题：beam常更有帮助</text>
+<text x="77" y="723" font-size="23" fill="#142a43" font-weight="400">简单题/高预算：独立采样更稳</text>
+<text x="77" y="758" font-size="23" fill="#142a43" font-weight="400">过度搜索会利用验证器漏洞</text>
+<rect x="785" y="615" width="600" height="160" rx="14" fill="#fff0cc" stroke="#b7c9d7" stroke-width="1.5"/>
+<text x="807" y="653" font-size="23" fill="#142a43" font-weight="400">实验边界</text>
+<text x="807" y="688" font-size="23" fill="#142a43" font-weight="400">简单题偏向顺序修订；难题需要混合</text>
+<text x="807" y="723" font-size="23" fill="#142a43" font-weight="400">修订会改错原本正确的答案</text>
+<text x="807" y="758" font-size="23" fill="#142a43" font-weight="400">不能默认最后一次就是最好的</text>
+<path d="M350,555 L350,615" fill="none" stroke="#6c8294" stroke-width="3" marker-end="url(#a)"/>
+<path d="M1080,555 L1080,615" fill="none" stroke="#6c8294" stroke-width="3" marker-end="url(#a)"/>
+<text x="55" y="849" font-size="25" fill="#142a43" font-weight="700">最终目标：计入生成、验证、难度估计与延迟后，提高同等预算下的正确率</text>
+<text x="55" y="910" font-size="18" fill="#596d80" font-weight="400">依据：Scaling LLM Test-Time Compute Optimally v1，§3–7、附录C、I–K；本图对两条路线分别解释</text>
+</svg>

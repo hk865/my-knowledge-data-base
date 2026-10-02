@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2606.23565",
+  "title": "HoloAgent-0: A Unified Embodied Agent Framework with 3D Spatial Memory",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/holoagent-0",
+  "official_url": "https://arxiv.org/abs/2606.23565",
+  "official_fulltext_url": "https://arxiv.org/pdf/2606.23565v1",
+  "read_version": "v1",
+  "version_status": "specified_in_existing_reading",
+  "reading_depth": "key_sections_exploratory_note",
+  "teaching_status": "selected_sections_teaching",
+  "content_kind": "reading",
+  "reading_path": "reading.md",
+  "reading_boundary": "已阅读选定章节并完成独立讲解；具体范围见正文，不能视为全部附录和图表审计。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-02",
+  "legacy_paths": [
+    "robotics-embodied/papers/2026/holoagent-0.md"
+  ],
+  "evidence_paths": [],
+  "topic_paths": [
+    "robotics/embodied-agents",
+    "cross-domain/agents"
+  ]
+}

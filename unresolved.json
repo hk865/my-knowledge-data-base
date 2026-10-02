@@ -158,5 +158,220 @@
     "reason": "2026-09-30 DOI工具访问失败；Research Square入口返回403。二手索引不足以替代官方题名和身份核验。旧助手题名不作为事实。",
     "reading_status": "未读取原文；用户阅读状态未知",
     "last_checked_at": "2026-09-30T08:15:00Z"
+  },
+  {
+    "id": "doi:10.1016/j.mlwa.2024.100605",
+    "title": "A survey on knowledge distillation: Recent advancements",
+    "arxiv_id": null,
+    "doi": "10.1016/j.mlwa.2024.100605",
+    "url": "https://doi.org/10.1016/j.mlwa.2024.100605",
+    "year": "2024",
+    "provenance": "assistant-recommended-or-discussion-citation",
+    "original_chat_urls": [
+      "https://doi.org/10.1016/j.mlwa.2024.100605?utm_source=chatgpt.com"
+    ],
+    "conversation_url": null,
+    "chat_evidence": [
+      {
+        "date": "2026-10-01T15:48:42Z",
+        "role": "assistant",
+        "evidence_type": "Personal Context retrieval summary; not original verbatim transcript; no conversation permalink returned"
+      }
+    ],
+    "verification": {
+      "status": "publisher_search_index_title_verified_direct_page_403",
+      "sources": [
+        "https://doi.org/10.1016/j.mlwa.2024.100605"
+      ],
+      "scope": "Identity only, not full-text reading or replication"
+    },
+    "eligible_exact_link_increment": true,
+    "new_vs_local": true,
+    "dedup_matches": [],
+    "caveat": "原消息只称现代综述；标题来自当前出版社搜索索引，直接页面403。不能标为已阅读全文。",
+    "reading_status": "identity_checked_not_full_read",
+    "user_reading_status": "unknown",
+    "topic_paths": [
+      "llm/pretraining",
+      "cross-domain/interpretability",
+      "cross-domain/knowledge-distillation"
+    ],
+    "supervision_tags": [
+      "distillation"
+    ],
+    "architecture_tags": [],
+    "status": "pending_primary_page_verification",
+    "reason": "原消息只称现代综述；标题来自当前出版社搜索索引，直接页面403。不能标为已阅读全文。"
+  },
+  {
+    "id": "usenix:security16:tramer",
+    "title": "Stealing Machine Learning Models via Prediction APIs",
+    "arxiv_id": null,
+    "doi": null,
+    "url": "https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/tramer",
+    "year": "2016",
+    "provenance": "assistant-recommended-or-discussion-citation",
+    "original_chat_urls": [],
+    "conversation_url": null,
+    "chat_evidence": [
+      {
+        "date": "2026-10-01T15:48:42Z",
+        "role": "assistant",
+        "evidence_type": "Personal Context retrieval summary; not original verbatim transcript; no conversation permalink returned"
+      }
+    ],
+    "verification": {
+      "status": "primary_usenix_identity_verified_historical_exact_url_unrecovered",
+      "sources": [
+        "https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/tramer"
+      ],
+      "scope": "Identity only, not full-text reading or replication"
+    },
+    "eligible_exact_link_increment": false,
+    "new_vs_local": true,
+    "dedup_matches": [],
+    "caveat": "历史仅恢复标题和截断 https://www.usenix.org/...；当前官方核验URL不是恢复的历史原链接，因此不计入严格实际链接增量。",
+    "reading_status": "identity_checked_not_full_read",
+    "user_reading_status": "unknown",
+    "topic_paths": [
+      "llm/pretraining",
+      "cross-domain/interpretability",
+      "cross-domain/knowledge-distillation"
+    ],
+    "supervision_tags": [
+      "distillation"
+    ],
+    "architecture_tags": [],
+    "status": "pending_historical_exact_link",
+    "reason": "历史仅恢复标题和截断 https://www.usenix.org/...；当前官方核验URL不是恢复的历史原链接，因此不计入严格实际链接增量。"
+  },
+  {
+    "title": "FOCUS",
+    "url": null,
+    "status": "pending_historical_exact_link",
+    "reason": "当前目录已有同名FOCUS论文正式标识；该历史提及的完整原URL尚未恢复，不视为新增论文或精确历史链接。",
+    "provenance": "assistant-mentioned",
+    "source_evidence": {
+      "provenance": "assistant-mentioned",
+      "date": "2026-09-04T11:35:25Z",
+      "status": "历史标题命中，但完整原URL/标识缺失；暂不补造论文身份"
+    },
+    "source_catalog": "robotics-embodied/catalog/history-recovery.json",
+    "evidence_type": "历史检索摘要或旧文件引用，不是原聊天逐字引文；未取得原会话链接",
+    "related_catalog_id": "arxiv:2307.02427"
+  },
+  {
+    "title": "ATP-VPDSG",
+    "url": null,
+    "status": "unresolved_identity_or_historical_link",
+    "reason": "历史标题命中，但完整原URL/标识缺失；暂不补造论文身份",
+    "provenance": "assistant-mentioned",
+    "source_evidence": {
+      "provenance": "assistant-mentioned",
+      "date": "2026-09-04T11:35:25Z",
+      "status": "历史标题命中，但完整原URL/标识缺失；暂不补造论文身份"
+    },
+    "source_catalog": "robotics-embodied/catalog/history-recovery.json",
+    "evidence_type": "历史检索摘要或旧文件引用，不是原聊天逐字引文；未取得原会话链接"
+  },
+  {
+    "title": "ECoT",
+    "url": null,
+    "status": "unresolved_identity_or_historical_link",
+    "reason": "仅站内论文笔记入口；原论文URL/arXiv/DOI在已检索片段缺失",
+    "provenance": "old-file-reference",
+    "source_evidence": {
+      "provenance": "old-file-reference",
+      "source_file_label": "长程任务、记忆与规划.md",
+      "status": "仅站内论文笔记入口；原论文URL/arXiv/DOI在已检索片段缺失"
+    },
+    "source_catalog": "robotics-embodied/catalog/history-recovery.json",
+    "evidence_type": "历史检索摘要或旧文件引用，不是原聊天逐字引文；未取得原会话链接"
+  },
+  {
+    "title": "MemoryVLA",
+    "url": null,
+    "status": "unresolved_identity_or_historical_link",
+    "reason": "仅站内论文笔记入口；原论文URL/arXiv/DOI在已检索片段缺失",
+    "provenance": "old-file-reference",
+    "source_evidence": {
+      "provenance": "old-file-reference",
+      "source_file_label": "长程任务、记忆与规划.md",
+      "status": "仅站内论文笔记入口；原论文URL/arXiv/DOI在已检索片段缺失"
+    },
+    "source_catalog": "robotics-embodied/catalog/history-recovery.json",
+    "evidence_type": "历史检索摘要或旧文件引用，不是原聊天逐字引文；未取得原会话链接"
+  },
+  {
+    "title": "MemoryVLA++",
+    "url": null,
+    "status": "unresolved_identity_or_historical_link",
+    "reason": "仅站内论文笔记入口；原论文URL/arXiv/DOI在已检索片段缺失",
+    "provenance": "old-file-reference",
+    "source_evidence": {
+      "provenance": "old-file-reference",
+      "source_file_label": "长程任务、记忆与规划.md",
+      "status": "仅站内论文笔记入口；原论文URL/arXiv/DOI在已检索片段缺失"
+    },
+    "source_catalog": "robotics-embodied/catalog/history-recovery.json",
+    "evidence_type": "历史检索摘要或旧文件引用，不是原聊天逐字引文；未取得原会话链接"
+  },
+  {
+    "title": "Reflective VLA",
+    "url": null,
+    "status": "unresolved_identity_or_historical_link",
+    "reason": "仅站内论文笔记入口；原论文URL/arXiv/DOI在已检索片段缺失",
+    "provenance": "old-file-reference",
+    "source_evidence": {
+      "provenance": "old-file-reference",
+      "source_file_label": "长程任务、记忆与规划.md",
+      "status": "仅站内论文笔记入口；原论文URL/arXiv/DOI在已检索片段缺失"
+    },
+    "source_catalog": "robotics-embodied/catalog/history-recovery.json",
+    "evidence_type": "历史检索摘要或旧文件引用，不是原聊天逐字引文；未取得原会话链接"
+  },
+  {
+    "title": "V-JEPA 2",
+    "url": null,
+    "status": "unresolved_identity_or_historical_link",
+    "reason": "名称出现，原始链接缺失",
+    "provenance": "assistant-mentioned",
+    "source_evidence": {
+      "provenance": "assistant-mentioned",
+      "date": "2026-09-23T04:45:19Z",
+      "status": "名称出现，原始链接缺失"
+    },
+    "source_catalog": "robotics-embodied/catalog/history-recovery.json",
+    "evidence_type": "历史检索摘要或旧文件引用，不是原聊天逐字引文；未取得原会话链接"
+  },
+  {
+    "title": "Gemini Robotics",
+    "url": null,
+    "status": "unresolved_identity_or_historical_link",
+    "reason": "项目或公司/实验室资料提及，未恢复完整原论文身份",
+    "provenance": "assistant-mentioned",
+    "source_evidence": {
+      "provenance": "assistant-mentioned",
+      "date": "2026-08-24T08:13:40Z",
+      "status": "项目或公司/实验室资料提及，未恢复完整原论文身份"
+    },
+    "source_catalog": "robotics-embodied/catalog/history-recovery.json",
+    "evidence_type": "历史检索摘要或旧文件引用，不是原聊天逐字引文；未取得原会话链接",
+    "resource_kind": "project_or_model_mention_not_identified_paper"
+  },
+  {
+    "title": "Skild Brain",
+    "url": null,
+    "status": "unresolved_identity_or_historical_link",
+    "reason": "项目或公司/实验室资料提及，未恢复完整原论文身份",
+    "provenance": "assistant-mentioned",
+    "source_evidence": {
+      "provenance": "assistant-mentioned",
+      "date": "2026-08-24T08:13:40Z",
+      "status": "项目或公司/实验室资料提及，未恢复完整原论文身份"
+    },
+    "source_catalog": "robotics-embodied/catalog/history-recovery.json",
+    "evidence_type": "历史检索摘要或旧文件引用，不是原聊天逐字引文；未取得原会话链接",
+    "resource_kind": "project_or_model_mention_not_identified_paper"
   }
 ]

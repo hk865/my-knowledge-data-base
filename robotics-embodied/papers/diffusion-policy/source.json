@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2303.04137",
+  "title": "Diffusion Policy: Visuomotor Policy Learning via Action Diffusion",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/diffusion-policy",
+  "official_url": "https://arxiv.org/abs/2303.04137v5",
+  "official_fulltext_url": "https://arxiv.org/pdf/2303.04137v5",
+  "read_version": "v5",
+  "version_status": "specified_in_existing_reading",
+  "reading_depth": "full_text_reading_and_evidence_audit",
+  "teaching_status": "expanded_beginner_lesson",
+  "content_kind": "reading",
+  "reading_path": "reading.md",
+  "reading_boundary": "本篇保留现有技术精读，范围与残余边界见正文和证据档案；未独立复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "verified_link_only",
+    "identifier": "arXiv-nonexclusive-distrib-1.0",
+    "license_url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/license.html",
+    "evidence_url": "https://arxiv.org/abs/2303.04137v5",
+    "verification_method": "Opened this version’s Access Paper > view license link and read the destination license; applies to deposited full text, not merely site metadata",
+    "checked_at": "2026-10-02",
+    "note": "The arXiv non-exclusive submission license grants distribution to arXiv, not a public repository mirror; no separate full-text redistribution license verified."
+  },
+  "fulltext_local_status": "official_link_only_redistribution_not_granted",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-02",
+  "legacy_paths": [
+    "docs/deep-readings/diffusion-policy.md",
+    "robotics-embodied/baselines/diffusion-policy.md"
+  ],
+  "evidence_paths": [
+    "docs/deep-readings/evidence/diffusion-policy.json"
+  ],
+  "authors": [
+    "Cheng Chi",
+    "Zhenjia Xu",
+    "Siyuan Feng",
+    "Eric Cousineau",
+    "Yilun Du",
+    "Benjamin Burchfiel",
+    "Russ Tedrake",
+    "Shuran Song"
+  ],
+  "original_pdf_url": "https://arxiv.org/pdf/2303.04137v5",
+  "topic_paths": [
+    "robotics/embodied-policies"
+  ]
+}

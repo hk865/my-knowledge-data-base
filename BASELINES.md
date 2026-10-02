@@ -1,43 +1,16 @@
-# Baseline 图解与精读
+# Baseline与已有讲解导航
 
-27篇正文均已发布；Convex MPC机制图仍待公开确认，其余机制图已附在正文。完整同步清单与索引更新仍待授权确认。
+[回到全库](README.md)
 
-- [clip](docs/deep-readings/clip.md)
-- [convex-mpc](docs/deep-readings/convex-mpc.md)
-- [ddpm](docs/deep-readings/ddpm.md)
-- [deepseek-v2](docs/deep-readings/deepseek-v2.md)
-- [diffusion-policy](docs/deep-readings/diffusion-policy.md)
-- [dino](docs/deep-readings/dino.md)
-- [dpo](docs/deep-readings/dpo.md)
-- [dreamerv3](docs/deep-readings/dreamerv3.md)
-- [eskf](docs/deep-readings/eskf.md)
-- [gpt3](docs/deep-readings/gpt3.md)
-- [instructgpt](docs/deep-readings/instructgpt.md)
-- [llava](docs/deep-readings/llava.md)
-- [llm-judge](docs/deep-readings/llm-judge.md)
-- [mae](docs/deep-readings/mae.md)
-- [mamba](docs/deep-readings/mamba.md)
-- [openvla](docs/deep-readings/openvla.md)
-- [orb-slam3](docs/deep-readings/orb-slam3.md)
-- [ppo](docs/deep-readings/ppo.md)
-- [qwen2.5-1m](docs/deep-readings/qwen2.5-1m.md)
-- [r2r](docs/deep-readings/r2r.md)
-- [react](docs/deep-readings/react.md)
-- [rma](docs/deep-readings/rma.md)
-- [rrt-star](docs/deep-readings/rrt-star.md)
-- [test-time-compute](docs/deep-readings/test-time-compute.md)
-- [training-coverage](docs/deep-readings/training-coverage.md)
-- [transformer](docs/deep-readings/transformer.md)
-- [video-diffusion](docs/deep-readings/video-diffusion.md)
-- [vit](docs/deep-readings/vit.md)
+## 按领域进入
 
-## 方向路线图
+- [大语言模型](llm/BASELINES.md)
+- [多模态与世界表征](multimodal/BASELINES.md)
+- [机器人与具身系统](robotics-embodied/BASELINES.md)
+- [跨方向方法](cross-domain/BASELINES.md)
 
-- [architecture-baselines](docs/roadmaps/architecture-baselines.md)
-- [cross-baselines](docs/roadmaps/cross-baselines.md)
-- [embodied-baselines](docs/roadmaps/embodied-baselines.md)
-- [long-context](docs/roadmaps/long-context.md)
-- [multimodal-baselines](docs/roadmaps/multimodal-baselines.md)
-- [robotics-baselines](docs/roadmaps/robotics-baselines.md)
-- [training-baselines](docs/roadmaps/training-baselines.md)
-- [visual-baselines](docs/roadmaps/visual-baselines.md)
+## 覆盖说明
+
+已有27篇指定版本技术精读，其中6篇已展开成逐步教学版。SayCan与5篇近期具身研究另有实际章节或机制讲解，阅读范围在单篇目录标明。33篇讲解不是33篇同等深度的全文审计，也没有把143项文献资源全部标成已读。
+
+每篇论文在领域的papers/下只有一个规范正文。已有8份路线图与具身Agents专题路线继续可访问；跨领域baseline通过导航交叉引用。
