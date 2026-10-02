@@ -1,0 +1,56 @@
+[
+  {
+    "paper": "clip",
+    "reading_status": "expanded_beginner_teaching",
+    "source_markdown_sha256": "24c13432a77a037af993b25b659cf43f243122f32801fed22f0cfa34078e61ba",
+    "public_markdown_sha256": "0279ec08b4f906639708b3c83b12082baddbac824d6b2b852e65f92e08e82993",
+    "figures": 4,
+    "verification_depth": "原文和重要实验复核加教学算例核算，未独立复现；具体版本与阅读范围见正文",
+    "date": "2026-10-02"
+  },
+  {
+    "paper": "vit",
+    "reading_status": "expanded_beginner_teaching",
+    "source_markdown_sha256": "c4341a4bce4816a232f7e4a0a5940f3b0ed98b047f12481230ae9443996042dc",
+    "public_markdown_sha256": "45b3cf93d2a5c094f70e98d7e5276e8fa46b5911a6450d805be169210f4701cf",
+    "figures": 4,
+    "verification_depth": "原文和重要实验复核加教学算例核算，未独立复现；具体版本与阅读范围见正文",
+    "date": "2026-10-02"
+  },
+  {
+    "paper": "instructgpt",
+    "reading_status": "expanded_beginner_teaching",
+    "source_markdown_sha256": "0a14237523f8fffc22b88c796998d63d870dceb4474f30e11c4ff3c96f111aaf",
+    "public_markdown_sha256": "66c10b5c45c2e2ed53c241b1028f84cef33ac6467ca89cb812def4d097dc035e",
+    "figures": 5,
+    "verification_depth": "原文和重要实验复核加教学算例核算，未独立复现；具体版本与阅读范围见正文",
+    "date": "2026-10-02"
+  },
+  {
+    "paper": "dpo",
+    "reading_status": "expanded_beginner_teaching",
+    "source_markdown_sha256": "124b73e6c37f10b77c91d8e6099bc65824f755c12026b93b9bf42bbbcaea2605",
+    "public_markdown_sha256": "82911a7b8051b7ace3c5c0ed7ba8d416e123974de7295b0768a5be21f8e01c5f",
+    "figures": 4,
+    "verification_depth": "原文和重要实验复核加教学算例核算，未独立复现；具体版本与阅读范围见正文",
+    "date": "2026-10-02"
+  },
+  {
+    "paper": "diffusion-policy",
+    "reading_status": "expanded_beginner_teaching",
+    "source_markdown_sha256": "40c31635b30cc7ebabb0811a1dbf313b0aa93a228aaa0bb778987c890fbbd9a3",
+    "public_markdown_sha256": "9663901475a1edc01d3628db59ec1c2071485cf22d9630b5c407e644a6f4e4f0",
+    "figures": 3,
+    "verification_depth": "原文和重要实验复核加教学算例核算，未独立复现；具体版本与阅读范围见正文",
+    "date": "2026-10-02"
+  },
+  {
+    "paper": "dreamerv3",
+    "reading_status": "expanded_beginner_teaching",
+    "source_markdown_sha256": "29ebf727e850510edf3313da0ebc6bed919e04292528a7458deb725d2652089e",
+    "public_markdown_sha256": "7f99d4c3daab9537e1aa14981a8efe329b6a9bc0ed3745c36920d84327e23773",
+    "figures": 4,
+    "verification_depth": "原文和重要实验复核加教学算例核算，未独立复现；具体版本与阅读范围见正文",
+    "date": "2026-10-02"
+  }
+]

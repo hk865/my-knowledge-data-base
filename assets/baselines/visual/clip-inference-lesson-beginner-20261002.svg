@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="740" viewBox="0 0 1280 740"><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#2365ad"/></marker></defs><rect width="1280" height="740" fill="#fff"/>
+<text x="40" y="58" fill="#18334f" font-family="Noto Sans CJK SC, sans-serif" font-size="34" font-weight="700" text-anchor="start">CLIP 从候选名称到一次预测</text>
+<text x="40" y="98" fill="#66788a" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" text-anchor="start">预训练已经结束：图像塔和文本塔都不更新；下面是独立于训练批次的三分类例子</text>
+<rect x="40" y="150" width="360" height="140" rx="12" fill="#edf9f5" stroke="#167b67" stroke-width="2"/>
+<text x="220.0" y="194.0" fill="#167b67" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="middle">候选类别：猫 / 狗 / 汽车</text>
+<text x="220.0" y="228.0" fill="#167b67" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="middle">各自填进同一个模板</text>
+<text x="220.0" y="262.0" fill="#167b67" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="middle">A photo of a {label}.</text>
+<path d="M410 220L470 220" fill="none" stroke="#2365ad" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="490" y="150" width="330" height="140" rx="12" fill="#edf9f5" stroke="#167b67" stroke-width="2"/>
+<text x="655.0" y="194.0" fill="#167b67" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="middle">文本编码 + 归一化</text>
+<text x="655.0" y="228.0" fill="#167b67" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="middle">得到 3 个类别向量</text>
+<text x="655.0" y="262.0" fill="#167b67" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="middle">固定候选集时可以缓存</text>
+<rect x="40" y="360" width="360" height="120" rx="12" fill="#edf5ff" stroke="#2365ad" stroke-width="2"/>
+<text x="220.0" y="411.0" fill="#2365ad" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="middle">一张新的测试图像</text>
+<text x="220.0" y="445.0" fill="#2365ad" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="middle">图像编码 + 归一化</text>
+<path d="M410 420L470 420" fill="none" stroke="#2365ad" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="490" y="360" width="330" height="120" rx="12" fill="#edf5ff" stroke="#2365ad" stroke-width="2"/>
+<text x="655.0" y="411.0" fill="#2365ad" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="middle">得到一个图像向量 u</text>
+<text x="655.0" y="445.0" fill="#2365ad" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="middle">与每个类别向量点积</text>
+<path d="M845 220L880 320" fill="none" stroke="#2365ad" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M845 420L880 320" fill="none" stroke="#2365ad" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M881 320L900 320" fill="none" stroke="#2365ad" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="910" y="240" width="325" height="170" rx="12" fill="#fff4e8" stroke="#b86412" stroke-width="2"/>
+<text x="1072.5" y="282.0" fill="#b86412" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="middle">假设 3 个得分为</text>
+<text x="1072.5" y="316.0" fill="#b86412" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="middle">2.0 / 0.5 / −1.0</text>
+<text x="1072.5" y="350.0" fill="#b86412" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="middle">softmax 后约为</text>
+<text x="1072.5" y="384.0" fill="#b86412" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="middle">78.6% / 17.5% / 3.9%</text>
+<rect x="40" y="535" width="1195" height="105" rx="12" fill="#fff4e8" stroke="#b86412" stroke-width="2"/>
+<text x="637.5" y="578.5" fill="#b86412" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="middle">最大值对应“猫”，但 78.6% 只是在这三个候选之间的相对分数</text>
+<text x="637.5" y="612.5" fill="#b86412" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="middle">若候选只剩“狗 / 汽车”，模型依然会选一个；系统需另做拒识与校准</text>
+<text x="40" y="694" fill="#66788a" font-family="Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="start">原创教学图；数值为手算示例，零样本分类流程依据 CLIP v1 §3.1</text>
+</svg>

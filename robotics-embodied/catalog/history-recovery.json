@@ -1,0 +1,843 @@
+{
+  "retrieved_at": "2026-10-02",
+  "scope": "Embodied Agents and robotic enabling models; historical recovery only",
+  "limitations": [
+    "所有对话记录均为历史检索摘要，未取得可打开原会话链接，不冒充逐字引文",
+    "检索遗漏不表示未聊过",
+    "论文身份已核验不等于全文精读；旧助手分析不自动视为论文结论",
+    "本地baseline仅用于去重，不代表完整远端基线"
+  ],
+  "papers": [
+    {
+      "id": "arxiv:2608.26103",
+      "arxiv_id": "2608.26103",
+      "title": "Zero-WAM: In-Context World-Action Modeling from Human Videos for Open-Ended Task Generalization",
+      "historical_name": "Zero-WAM",
+      "url": "https://arxiv.org/abs/2608.26103",
+      "provenance": "user-provided",
+      "chat_evidence": [
+        {
+          "date": "2026-08-29T08:30:47Z",
+          "role": "user / assistant",
+          "evidence": "历史检索结果返回该名称及arXiv标识；检索摘要，不是原始聊天逐字引文",
+          "user_question_summary": "总结创新、做法、呈现方式，提供模块图/架构图/数据流图",
+          "conversation_url": null
+        }
+      ],
+      "verification": {
+        "status": "official-identity-verified",
+        "date": "2026-10-02",
+        "sources": [
+          "https://arxiv.org/abs/2608.26103"
+        ],
+        "scope": "官方摘要页标题/身份核验，不代表全文精读或复现"
+      },
+      "topic": "human-video-conditioned-world-action",
+      "original_chat_urls": [
+        "https://arxiv.org/abs/2608.26103",
+        "https://robbyant-research.github.io/Zero-WAM/",
+        "https://github.com/robbyant-research/Zero-WAM"
+      ],
+      "present_in_local_baseline": true
+    },
+    {
+      "id": "arxiv:2506.09588",
+      "arxiv_id": "2506.09588",
+      "title": "Attention-Based Map Encoding for Learning Generalized Legged Locomotion",
+      "historical_name": "Attention-Based Map Encoding",
+      "url": "https://arxiv.org/abs/2506.09588",
+      "provenance": "user-named-assistant-linked",
+      "chat_evidence": [
+        {
+          "date": "2026-08-22T11:49:26Z",
+          "role": "user / assistant",
+          "evidence": "历史检索结果返回该名称及arXiv标识；检索摘要，不是原始聊天逐字引文",
+          "user_question_summary": "用户在11:48:48Z问该论文讲什么，随后问与VLA的关系",
+          "conversation_url": null
+        }
+      ],
+      "verification": {
+        "status": "official-identity-verified",
+        "date": "2026-10-02",
+        "sources": [
+          "https://arxiv.org/abs/2506.09588"
+        ],
+        "scope": "官方摘要页标题/身份核验，不代表全文精读或复现"
+      },
+      "topic": "locomotion",
+      "original_chat_urls": [
+        "https://arxiv.org/html/2506.09588v1"
+      ],
+      "present_in_local_baseline": true
+    },
+    {
+      "id": "arxiv:2601.08485",
+      "arxiv_id": "2601.08485",
+      "title": "Agile and Generalized Legged Locomotion via Attention-Based Neural Map Encoding",
+      "historical_name": "AME-2",
+      "url": "https://arxiv.org/abs/2601.08485",
+      "provenance": "assistant-recommended",
+      "chat_evidence": [
+        {
+          "date": "2026-08-22T11:49:26Z",
+          "role": "assistant",
+          "evidence": "历史检索结果返回该名称及arXiv标识；检索摘要，不是原始聊天逐字引文",
+          "user_question_summary": "前述腿式控制/VLA关系讨论",
+          "conversation_url": null
+        }
+      ],
+      "verification": {
+        "status": "official-identity-verified",
+        "date": "2026-10-02",
+        "sources": [
+          "https://arxiv.org/abs/2601.08485"
+        ],
+        "scope": "官方摘要页标题/身份核验，不代表全文精读或复现"
+      },
+      "topic": "locomotion",
+      "present_in_local_baseline": true
+    },
+    {
+      "id": "arxiv:2607.15275",
+      "arxiv_id": "2607.15275",
+      "title": "RoboTTT: Context Scaling for Robot Policies",
+      "historical_name": "RoboTTT",
+      "url": "https://arxiv.org/abs/2607.15275",
+      "provenance": "assistant-recommended",
+      "chat_evidence": [
+        {
+          "date": "2026-08-24T08:13:40Z",
+          "role": "assistant",
+          "evidence": "历史检索结果返回该名称及arXiv标识；检索摘要，不是原始聊天逐字引文",
+          "user_question_summary": null,
+          "conversation_url": null
+        }
+      ],
+      "verification": {
+        "status": "official-identity-verified",
+        "date": "2026-10-02",
+        "sources": [
+          "https://arxiv.org/abs/2607.15275"
+        ],
+        "scope": "官方摘要页标题/身份核验，不代表全文精读或复现"
+      },
+      "topic": "long-context-memory",
+      "present_in_local_baseline": true
+    },
+    {
+      "id": "arxiv:2408.15980",
+      "arxiv_id": "2408.15980",
+      "title": "In-Context Imitation Learning via Next-Token Prediction",
+      "historical_name": "ICRT",
+      "url": "https://arxiv.org/abs/2408.15980",
+      "provenance": "assistant-recommended",
+      "chat_evidence": [
+        {
+          "date": "2026-08-24T08:13:40Z",
+          "role": "assistant",
+          "evidence": "历史检索结果返回该名称及arXiv标识；检索摘要，不是原始聊天逐字引文",
+          "user_question_summary": null,
+          "conversation_url": null
+        }
+      ],
+      "verification": {
+        "status": "official-identity-verified",
+        "date": "2026-10-02",
+        "sources": [
+          "https://arxiv.org/abs/2408.15980"
+        ],
+        "scope": "官方摘要页标题/身份核验，不代表全文精读或复现"
+      },
+      "topic": "in-context-policy",
+      "present_in_local_baseline": true
+    },
+    {
+      "id": "arxiv:2606.30457",
+      "arxiv_id": "2606.30457",
+      "title": "Behavior Prompting Policy: Demonstrations as Prompts for Manipulation",
+      "historical_name": "Behavior Prompting Policy",
+      "url": "https://arxiv.org/abs/2606.30457",
+      "provenance": "assistant-recommended",
+      "chat_evidence": [
+        {
+          "date": "2026-08-24T08:13:40Z",
+          "role": "assistant",
+          "evidence": "历史检索结果返回该名称及arXiv标识；检索摘要，不是原始聊天逐字引文",
+          "user_question_summary": null,
+          "conversation_url": null
+        }
+      ],
+      "verification": {
+        "status": "official-identity-verified",
+        "date": "2026-10-02",
+        "sources": [
+          "https://arxiv.org/abs/2606.30457"
+        ],
+        "scope": "官方摘要页标题/身份核验，不代表全文精读或复现"
+      },
+      "topic": "in-context-policy",
+      "present_in_local_baseline": true
+    },
+    {
+      "id": "arxiv:2601.02456",
+      "arxiv_id": "2601.02456",
+      "title": "InternVLA-A1: Unifying Understanding, Generation and Action for Robotic Manipulation",
+      "historical_name": "InternVLA-A1",
+      "url": "https://arxiv.org/abs/2601.02456",
+      "provenance": "assistant-recommended",
+      "chat_evidence": [
+        {
+          "date": "2026-08-24T08:13:40Z",
+          "role": "assistant",
+          "evidence": "历史检索结果返回该名称及arXiv标识；检索摘要，不是原始聊天逐字引文",
+          "user_question_summary": null,
+          "conversation_url": null
+        }
+      ],
+      "verification": {
+        "status": "official-identity-verified",
+        "date": "2026-10-02",
+        "sources": [
+          "https://arxiv.org/abs/2601.02456"
+        ],
+        "scope": "官方摘要页标题/身份核验，不代表全文精读或复现"
+      },
+      "topic": "vla",
+      "present_in_local_baseline": true
+    },
+    {
+      "id": "arxiv:2411.04983",
+      "arxiv_id": "2411.04983",
+      "title": "DINO-WM: World Models on Pre-trained Visual Features enable Zero-shot Planning",
+      "historical_name": "DINO-WM",
+      "url": "https://arxiv.org/abs/2411.04983",
+      "provenance": "assistant-recommended",
+      "chat_evidence": [
+        {
+          "date": "2026-09-23T04:45:19Z",
+          "role": "assistant",
+          "evidence": "历史检索结果返回该名称及arXiv标识；检索摘要，不是原始聊天逐字引文",
+          "user_question_summary": "用户04:44:21Z要求查latent论文是否验证等变性、对象恒常性、可干预性、动力学预测、跨任务复用，而非仅benchmark/特征分析",
+          "conversation_url": null
+        }
+      ],
+      "verification": {
+        "status": "official-identity-verified",
+        "date": "2026-10-02",
+        "sources": [
+          "https://arxiv.org/abs/2411.04983"
+        ],
+        "scope": "官方摘要页标题/身份核验，不代表全文精读或复现"
+      },
+      "topic": "latent-world-model",
+      "present_in_local_baseline": true
+    },
+    {
+      "id": "arxiv:2505.11528",
+      "arxiv_id": "2505.11528",
+      "title": "LaDi-WM: A Latent Diffusion-based World Model for Predictive Manipulation",
+      "historical_name": "LaDi-WM",
+      "url": "https://arxiv.org/abs/2505.11528",
+      "provenance": "assistant-recommended",
+      "chat_evidence": [
+        {
+          "date": "2026-09-23T04:45:19Z",
+          "role": "assistant",
+          "evidence": "历史检索结果返回该名称及arXiv标识；检索摘要，不是原始聊天逐字引文",
+          "user_question_summary": "同日latent结构性验证问题",
+          "conversation_url": null
+        }
+      ],
+      "verification": {
+        "status": "official-identity-verified",
+        "date": "2026-10-02",
+        "sources": [
+          "https://arxiv.org/abs/2505.11528"
+        ],
+        "scope": "官方摘要页标题/身份核验，不代表全文精读或复现"
+      },
+      "topic": "latent-world-model",
+      "original_chat_urls": [
+        "https://doi.org/10.48550/arXiv.2505.11528"
+      ],
+      "present_in_local_baseline": true
+    },
+    {
+      "id": "arxiv:2505.06111",
+      "arxiv_id": "2505.06111",
+      "title": "UniVLA: Learning to Act Anywhere with Task-centric Latent Actions",
+      "historical_name": "UniVLA",
+      "url": "https://arxiv.org/abs/2505.06111",
+      "provenance": "assistant-recommended",
+      "chat_evidence": [
+        {
+          "date": "2026-09-23T04:45:19Z",
+          "role": "assistant",
+          "evidence": "历史检索结果返回该名称及arXiv标识；检索摘要，不是原始聊天逐字引文",
+          "user_question_summary": "同日latent结构性验证问题",
+          "conversation_url": null
+        }
+      ],
+      "verification": {
+        "status": "official-identity-verified",
+        "date": "2026-10-02",
+        "sources": [
+          "https://arxiv.org/abs/2505.06111"
+        ],
+        "scope": "官方摘要页标题/身份核验，不代表全文精读或复现"
+      },
+      "topic": "latent-action",
+      "present_in_local_baseline": true
+    },
+    {
+      "id": "arxiv:2506.15691",
+      "arxiv_id": "2506.15691",
+      "title": "What Do Latent Action Models Actually Learn?",
+      "historical_name": "What Do Latent Action Models Actually Learn?",
+      "url": "https://arxiv.org/abs/2506.15691",
+      "provenance": "assistant-recommended",
+      "chat_evidence": [
+        {
+          "date": "2026-09-23T04:45:19Z",
+          "role": "assistant",
+          "evidence": "历史检索结果返回该名称及arXiv标识；检索摘要，不是原始聊天逐字引文",
+          "user_question_summary": "同日latent结构性验证问题",
+          "conversation_url": null
+        }
+      ],
+      "verification": {
+        "status": "official-identity-verified",
+        "date": "2026-10-02",
+        "sources": [
+          "https://arxiv.org/abs/2506.15691"
+        ],
+        "scope": "官方摘要页标题/身份核验，不代表全文精读或复现"
+      },
+      "topic": "latent-action-analysis",
+      "present_in_local_baseline": true
+    },
+    {
+      "id": "arxiv:2604.11689",
+      "arxiv_id": "2604.11689",
+      "title": "LARY: A Latent Action Representation Yielding Benchmark for Generalizable Vision-to-Action Alignment",
+      "historical_name": "LARY benchmark",
+      "url": "https://arxiv.org/abs/2604.11689",
+      "provenance": "assistant-recommended",
+      "chat_evidence": [
+        {
+          "date": "2026-09-23T04:45:19Z",
+          "role": "assistant",
+          "evidence": "历史检索结果返回该名称及arXiv标识；检索摘要，不是原始聊天逐字引文",
+          "user_question_summary": "同日latent结构性验证问题",
+          "conversation_url": null
+        }
+      ],
+      "verification": {
+        "status": "official-identity-verified",
+        "date": "2026-10-02",
+        "sources": [
+          "https://arxiv.org/abs/2604.11689"
+        ],
+        "scope": "官方摘要页标题/身份核验，不代表全文精读或复现"
+      },
+      "topic": "latent-action-evaluation",
+      "present_in_local_baseline": true
+    },
+    {
+      "id": "arxiv:2605.06388",
+      "arxiv_id": "2605.06388",
+      "title": "Reconstruction or Semantics? What Makes a Latent Space Useful for Robotic World Models",
+      "historical_name": "Reconstruction or Semantics?",
+      "url": "https://arxiv.org/abs/2605.06388",
+      "provenance": "assistant-recommended",
+      "chat_evidence": [
+        {
+          "date": "2026-09-23T04:45:19Z",
+          "role": "assistant",
+          "evidence": "历史检索结果返回该名称及arXiv标识；检索摘要，不是原始聊天逐字引文",
+          "user_question_summary": "同日latent结构性验证问题",
+          "conversation_url": null
+        }
+      ],
+      "verification": {
+        "status": "official-identity-verified",
+        "date": "2026-10-02",
+        "sources": [
+          "https://arxiv.org/abs/2605.06388"
+        ],
+        "scope": "官方摘要页标题/身份核验，不代表全文精读或复现"
+      },
+      "topic": "latent-world-model-analysis",
+      "present_in_local_baseline": false
+    },
+    {
+      "id": "arxiv:2503.06170",
+      "arxiv_id": "2503.06170",
+      "title": "Object-Centric World Model for Language-Guided Manipulation",
+      "historical_name": "Object-Centric World Model",
+      "url": "https://arxiv.org/abs/2503.06170",
+      "provenance": "assistant-recommended",
+      "chat_evidence": [
+        {
+          "date": "2026-09-04T11:35:25Z",
+          "role": "assistant",
+          "evidence": "历史检索结果返回该名称及arXiv标识；检索摘要，不是原始聊天逐字引文",
+          "user_question_summary": "用户11:35:15Z要求先查论文，再分路线说明方法与评估，2500字以内",
+          "conversation_url": null
+        }
+      ],
+      "verification": {
+        "status": "official-identity-verified",
+        "date": "2026-10-02",
+        "sources": [
+          "https://arxiv.org/abs/2503.06170"
+        ],
+        "scope": "官方摘要页标题/身份核验，不代表全文精读或复现"
+      },
+      "topic": "object-centric-world-model",
+      "present_in_local_baseline": true
+    },
+    {
+      "id": "arxiv:2607.13451",
+      "arxiv_id": "2607.13451",
+      "title": "Learning Physics-Guided Residual Dynamics for Deformable Object Simulation",
+      "historical_name": "PGRD",
+      "url": "https://arxiv.org/abs/2607.13451",
+      "provenance": "assistant-recommended",
+      "chat_evidence": [
+        {
+          "date": "2026-09-04T11:35:25Z",
+          "role": "assistant",
+          "evidence": "历史检索结果返回该名称及arXiv标识；检索摘要，不是原始聊天逐字引文",
+          "user_question_summary": "同日分路线方法与评估问题",
+          "conversation_url": null
+        }
+      ],
+      "verification": {
+        "status": "official-identity-verified",
+        "date": "2026-10-02",
+        "sources": [
+          "https://arxiv.org/abs/2607.13451"
+        ],
+        "scope": "官方摘要页标题/身份核验，不代表全文精读或复现"
+      },
+      "topic": "physics-world-model",
+      "present_in_local_baseline": true
+    },
+    {
+      "id": "arxiv:2601.03200",
+      "arxiv_id": "2601.03200",
+      "title": "A High-Fidelity Digital Twin for Robotic Manipulation Based on 3D Gaussian Splatting",
+      "historical_name": "3DGS Digital Twin",
+      "url": "https://arxiv.org/abs/2601.03200",
+      "provenance": "assistant-recommended",
+      "chat_evidence": [
+        {
+          "date": "2026-09-04T11:35:25Z",
+          "role": "assistant",
+          "evidence": "历史检索结果返回该名称及arXiv标识；检索摘要，不是原始聊天逐字引文",
+          "user_question_summary": "同日分路线方法与评估问题",
+          "conversation_url": null
+        }
+      ],
+      "verification": {
+        "status": "official-identity-verified",
+        "date": "2026-10-02",
+        "sources": [
+          "https://arxiv.org/abs/2601.03200"
+        ],
+        "scope": "官方摘要页标题/身份核验，不代表全文精读或复现"
+      },
+      "topic": "digital-twin",
+      "present_in_local_baseline": true
+    },
+    {
+      "id": "arxiv:2506.07454",
+      "arxiv_id": "2506.07454",
+      "title": "Language-Grounded Hierarchical Planning and Execution with Multi-Robot 3D Scene Graphs",
+      "historical_name": "Language-Grounded Hierarchical Planning",
+      "url": "https://arxiv.org/abs/2506.07454",
+      "provenance": "assistant-recommended",
+      "chat_evidence": [
+        {
+          "date": "2026-09-04T11:35:25Z",
+          "role": "assistant",
+          "evidence": "历史检索结果返回该名称及arXiv标识；检索摘要，不是原始聊天逐字引文",
+          "user_question_summary": "同日分路线方法与评估问题",
+          "conversation_url": null
+        }
+      ],
+      "verification": {
+        "status": "official-identity-verified",
+        "date": "2026-10-02",
+        "sources": [
+          "https://arxiv.org/abs/2506.07454"
+        ],
+        "scope": "官方摘要页标题/身份核验，不代表全文精读或复现"
+      },
+      "topic": "hierarchical-embodied-agent",
+      "present_in_local_baseline": true
+    },
+    {
+      "id": "arxiv:2603.17808",
+      "arxiv_id": "2603.17808",
+      "title": "EVA: Aligning Video World Models with Executable Robot Actions via Inverse Dynamics Rewards",
+      "historical_name": "EVA",
+      "url": "https://arxiv.org/abs/2603.17808",
+      "provenance": "assistant-recommended",
+      "chat_evidence": [
+        {
+          "date": "2026-09-04T11:35:25Z",
+          "role": "assistant",
+          "evidence": "历史检索结果返回该名称及arXiv标识；检索摘要，不是原始聊天逐字引文",
+          "user_question_summary": "同日分路线方法与评估问题",
+          "conversation_url": null
+        }
+      ],
+      "verification": {
+        "status": "official-identity-verified",
+        "date": "2026-10-02",
+        "sources": [
+          "https://arxiv.org/abs/2603.17808"
+        ],
+        "scope": "官方摘要页标题/身份核验，不代表全文精读或复现"
+      },
+      "topic": "world-model-action-grounding",
+      "present_in_local_baseline": true
+    },
+    {
+      "id": "arxiv:2608.18077",
+      "arxiv_id": "2608.18077",
+      "title": "Hydra-0: Action Flow for Generalist World Modeling and Control",
+      "historical_name": "Hydra-0",
+      "url": "https://arxiv.org/abs/2608.18077",
+      "provenance": "assistant-recommended",
+      "chat_evidence": [
+        {
+          "date": "2026-09-04T11:35:25Z",
+          "role": "assistant",
+          "evidence": "历史检索结果返回该名称及arXiv标识；检索摘要，不是原始聊天逐字引文",
+          "user_question_summary": "同日分路线方法与评估问题",
+          "conversation_url": null
+        }
+      ],
+      "verification": {
+        "status": "official-identity-verified",
+        "date": "2026-10-02",
+        "sources": [
+          "https://arxiv.org/abs/2608.18077"
+        ],
+        "scope": "官方摘要页标题/身份核验，不代表全文精读或复现"
+      },
+      "topic": "world-model-control",
+      "present_in_local_baseline": true
+    },
+    {
+      "id": "doi:10.15607/RSS.2025.XXI.153",
+      "title": "PIN-WM: Learning Physics-INformed World Models for Non-Prehensile Manipulation",
+      "historical_name": "PIN-WM",
+      "url": "https://www.roboticsproceedings.org/rss21/p153.html",
+      "doi": "10.15607/RSS.2025.XXI.153",
+      "provenance": "assistant-recommended",
+      "chat_evidence": [
+        {
+          "date": "2026-09-04T11:35:25Z",
+          "role": "assistant",
+          "evidence": "检索返回RSS Proceedings rss21/p153标识片段；非原始逐字引文",
+          "conversation_url": null,
+          "user_question_summary": "先查相关论文，之后分路线说明方法与评估"
+        }
+      ],
+      "verification": {
+        "status": "official-identity-verified",
+        "date": "2026-10-02",
+        "sources": [
+          "https://www.roboticsproceedings.org/rss21/p153.html"
+        ],
+        "scope": "RSS官方题名与DOI"
+      },
+      "topic": "physics-world-model",
+      "present_in_local_baseline": true
+    }
+  ],
+  "old_file_references": [
+    {
+      "id": "arxiv:2212.06817",
+      "title": "RT-1: Robotics Transformer for Real-World Control at Scale",
+      "url": "https://arxiv.org/abs/2212.06817",
+      "provenance": "old-file-reference",
+      "source_file_label": "历史沿革.md",
+      "source_url": null,
+      "conversation_url": null,
+      "date": null,
+      "evidence": "历史文件检索明确返回论文与原文入口；不视为用户主动提供或对话推荐",
+      "present_in_local_baseline": true,
+      "verification_status": "existing-local-baseline-entry; not-reverified-this-pass"
+    },
+    {
+      "id": "arxiv:2307.15818",
+      "title": "RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control",
+      "url": "https://arxiv.org/abs/2307.15818",
+      "provenance": "old-file-reference",
+      "source_file_label": "历史沿革.md",
+      "source_url": null,
+      "conversation_url": null,
+      "date": null,
+      "evidence": "历史文件检索明确返回论文与原文入口；不视为用户主动提供或对话推荐",
+      "present_in_local_baseline": true,
+      "verification_status": "existing-local-baseline-entry; not-reverified-this-pass"
+    },
+    {
+      "id": "arxiv:2310.08864",
+      "title": "Open X-Embodiment: Robotic Learning Datasets and RT-X Models",
+      "url": "https://arxiv.org/abs/2310.08864",
+      "provenance": "old-file-reference",
+      "source_file_label": "历史沿革.md",
+      "source_url": null,
+      "conversation_url": null,
+      "date": null,
+      "evidence": "历史文件检索明确返回论文与原文入口；不视为用户主动提供或对话推荐",
+      "present_in_local_baseline": true,
+      "verification_status": "existing-local-baseline-entry; not-reverified-this-pass"
+    },
+    {
+      "id": "arxiv:2303.04137",
+      "title": "Diffusion Policy: Visuomotor Policy Learning via Action Diffusion",
+      "url": "https://arxiv.org/abs/2303.04137",
+      "provenance": "old-file-reference",
+      "source_file_label": "历史沿革.md",
+      "source_url": null,
+      "conversation_url": null,
+      "date": null,
+      "evidence": "历史文件检索明确返回论文与原文入口；不视为用户主动提供或对话推荐",
+      "present_in_local_baseline": true,
+      "verification_status": "existing-local-baseline-entry; not-reverified-this-pass"
+    },
+    {
+      "id": "arxiv:2405.12213",
+      "title": "Octo: An Open-Source Generalist Robot Policy",
+      "url": "https://arxiv.org/abs/2405.12213",
+      "provenance": "old-file-reference",
+      "source_file_label": "历史沿革.md",
+      "source_url": null,
+      "conversation_url": null,
+      "date": null,
+      "evidence": "历史文件检索明确返回论文与原文入口；不视为用户主动提供或对话推荐",
+      "present_in_local_baseline": true,
+      "verification_status": "existing-local-baseline-entry; not-reverified-this-pass"
+    },
+    {
+      "id": "arxiv:2406.09246",
+      "title": "OpenVLA: An Open-Source Vision-Language-Action Model",
+      "url": "https://arxiv.org/abs/2406.09246",
+      "provenance": "old-file-reference",
+      "source_file_label": "历史沿革.md",
+      "source_url": null,
+      "conversation_url": null,
+      "date": null,
+      "evidence": "历史文件检索明确返回论文与原文入口；不视为用户主动提供或对话推荐",
+      "present_in_local_baseline": true,
+      "verification_status": "existing-local-baseline-entry; not-reverified-this-pass"
+    },
+    {
+      "id": "arxiv:2410.24164",
+      "title": "$π_0$: A Vision-Language-Action Flow Model for General Robot Control",
+      "url": "https://arxiv.org/abs/2410.24164",
+      "provenance": "old-file-reference",
+      "source_file_label": "历史沿革.md",
+      "source_url": null,
+      "conversation_url": null,
+      "date": null,
+      "evidence": "历史文件检索明确返回论文与原文入口；不视为用户主动提供或对话推荐",
+      "present_in_local_baseline": true,
+      "verification_status": "existing-local-baseline-entry; not-reverified-this-pass"
+    },
+    {
+      "id": "arxiv:2501.09747",
+      "title": "FAST: Efficient Action Tokenization for Vision-Language-Action Models",
+      "url": "https://arxiv.org/abs/2501.09747",
+      "provenance": "old-file-reference",
+      "source_file_label": "历史沿革.md",
+      "source_url": null,
+      "conversation_url": null,
+      "date": null,
+      "evidence": "历史文件检索明确返回论文与原文入口；不视为用户主动提供或对话推荐",
+      "present_in_local_baseline": true,
+      "verification_status": "existing-local-baseline-entry; not-reverified-this-pass"
+    },
+    {
+      "id": "arxiv:2502.19645",
+      "title": "Fine-Tuning Vision-Language-Action Models: Optimizing Speed and Success",
+      "url": "https://arxiv.org/abs/2502.19645",
+      "provenance": "old-file-reference",
+      "source_file_label": "历史沿革.md",
+      "source_url": null,
+      "conversation_url": null,
+      "date": null,
+      "evidence": "历史文件检索明确返回论文与原文入口；不视为用户主动提供或对话推荐",
+      "present_in_local_baseline": true,
+      "verification_status": "existing-local-baseline-entry; not-reverified-this-pass"
+    },
+    {
+      "id": "arxiv:2504.16054",
+      "title": "$π_{0.5}$: a Vision-Language-Action Model with Open-World Generalization",
+      "url": "https://arxiv.org/abs/2504.16054",
+      "provenance": "old-file-reference",
+      "source_file_label": "历史沿革.md",
+      "source_url": null,
+      "conversation_url": null,
+      "date": null,
+      "evidence": "历史文件检索明确返回论文与原文入口；不视为用户主动提供或对话推荐",
+      "present_in_local_baseline": true,
+      "verification_status": "existing-local-baseline-entry; not-reverified-this-pass"
+    },
+    {
+      "id": "arxiv:2506.01844",
+      "title": "SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics",
+      "url": "https://arxiv.org/abs/2506.01844",
+      "provenance": "old-file-reference",
+      "source_file_label": "历史沿革.md",
+      "source_url": null,
+      "conversation_url": null,
+      "date": null,
+      "evidence": "历史文件检索明确返回论文与原文入口；不视为用户主动提供或对话推荐",
+      "present_in_local_baseline": true,
+      "verification_status": "existing-local-baseline-entry; not-reverified-this-pass"
+    },
+    {
+      "id": "arxiv:2503.14734",
+      "title": "GR00T N1: An Open Foundation Model for Generalist Humanoid Robots",
+      "url": "https://arxiv.org/abs/2503.14734",
+      "provenance": "old-file-reference",
+      "source_file_label": "历史沿革.md",
+      "source_url": null,
+      "conversation_url": null,
+      "date": null,
+      "evidence": "历史文件检索明确返回论文与原文入口；不视为用户主动提供或对话推荐",
+      "present_in_local_baseline": true,
+      "verification_status": "existing-local-baseline-entry; not-reverified-this-pass"
+    },
+    {
+      "id": "arxiv:2604.15483",
+      "title": "$π_{0.7}$: a Steerable Generalist Robotic Foundation Model with Emergent Capabilities",
+      "url": "https://arxiv.org/abs/2604.15483",
+      "provenance": "old-file-reference",
+      "source_file_label": "历史沿革.md",
+      "source_url": null,
+      "conversation_url": null,
+      "date": null,
+      "evidence": "历史文件检索明确返回论文与原文入口；不视为用户主动提供或对话推荐",
+      "present_in_local_baseline": true,
+      "verification_status": "official-identity-verified-this-pass"
+    },
+    {
+      "id": "arxiv:2605.30280",
+      "title": "Qwen-VLA: Unifying Vision-Language-Action Modeling across Tasks, Environments, and Robot Embodiments",
+      "url": "https://arxiv.org/abs/2605.30280",
+      "provenance": "old-file-reference",
+      "source_file_label": "历史沿革.md",
+      "source_url": null,
+      "conversation_url": null,
+      "date": null,
+      "evidence": "历史文件检索明确返回论文与原文入口；不视为用户主动提供或对话推荐",
+      "present_in_local_baseline": true,
+      "verification_status": "official-identity-verified-this-pass"
+    },
+    {
+      "id": "arxiv:2606.14752",
+      "title": "X-Tokenizer: A Multimodal Action Tokenizer for Vision-Language-Action Pretraining",
+      "url": "https://arxiv.org/abs/2606.14752",
+      "provenance": "old-file-reference",
+      "source_file_label": "历史沿革.md",
+      "source_url": null,
+      "conversation_url": null,
+      "date": null,
+      "evidence": "历史文件检索明确返回论文与原文入口；不视为用户主动提供或对话推荐",
+      "present_in_local_baseline": true,
+      "verification_status": "official-identity-verified-this-pass"
+    }
+  ],
+  "unresolved_mentions": [
+    {
+      "names": [
+        "FOCUS",
+        "PointWorld",
+        "ATP-VPDSG"
+      ],
+      "provenance": "assistant-mentioned",
+      "date": "2026-09-04T11:35:25Z",
+      "status": "历史标题命中，但完整原URL/标识缺失；暂不补造论文身份"
+    },
+    {
+      "names": [
+        "ECoT",
+        "MemoryVLA",
+        "MemoryVLA++",
+        "Reflective VLA"
+      ],
+      "provenance": "old-file-reference",
+      "source_file_label": "长程任务、记忆与规划.md",
+      "status": "仅站内论文笔记入口；原论文URL/arXiv/DOI在已检索片段缺失"
+    },
+    {
+      "names": [
+        "V-JEPA 2"
+      ],
+      "provenance": "assistant-mentioned",
+      "date": "2026-09-23T04:45:19Z",
+      "status": "名称出现，原始链接缺失"
+    },
+    {
+      "names": [
+        "GEN-1/GEN-1.5",
+        "MimicDroid",
+        "AIRSOUL",
+        "Gemini Robotics",
+        "Skild Brain"
+      ],
+      "provenance": "assistant-mentioned",
+      "date": "2026-08-24T08:13:40Z",
+      "status": "项目或公司/实验室资料提及，未恢复完整原论文身份"
+    }
+  ],
+  "concept_only": [
+    {
+      "source_file_label": "VLA、WAM、Agent与控制系统.md",
+      "concepts": [
+        "任务分解",
+        "记忆",
+        "skill/tool executor",
+        "终止/超时",
+        "重规划与恢复"
+      ],
+      "status": "架构概念与职责矩阵，不当作具体论文"
+    },
+    {
+      "date": "2026-09-29",
+      "concepts": [
+        "VLA",
+        "World Model",
+        "具身Agent",
+        "VLN"
+      ],
+      "status": "研究方向兴趣讨论，未回收该段具体论文"
+    }
+  ],
+  "excluded_as_not_physical_embodied_robotics": [
+    {
+      "names": [
+        "OSWorld",
+        "OSWorld 2.0",
+        "OSWorld-MCP"
+      ],
+      "arxiv_ids": [
+        "2404.07972",
+        "2606.29537",
+        "2510.24563"
+      ],
+      "date": "2026-09-06T05:58:42Z",
+      "reason": "computer-use / GUI agents；本轮不混入机器人具身Agents主清单"
+    }
+  ],
+  "negative_search_caveat": "定向补查SayCan、PaLM-E、Inner Monologue、Code as Policies、VoxPoser、SayPlan、ConceptGraphs、OpenEQA、NaVILA未回收可核实历史论文记录；这不是没聊过的证明，也不禁止另立新增探索清单。"
+}

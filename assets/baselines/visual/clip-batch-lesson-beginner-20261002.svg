@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="740" viewBox="0 0 1280 740"><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#2365ad"/></marker></defs><rect width="1280" height="740" fill="#fff"/>
+<text x="40" y="58" fill="#18334f" font-family="Noto Sans CJK SC, sans-serif" font-size="34" font-weight="700" text-anchor="start">CLIP 细看一批两对样本</text>
+<text x="40" y="98" fill="#66788a" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" text-anchor="start">教学算例：数值人工设定；图文各只有 2 维，缩放倍数 a = 2，并非论文实测结果</text>
+<rect x="40" y="145" width="360" height="100" rx="12" fill="#edf5ff" stroke="#2365ad" stroke-width="2"/>
+<text x="220.0" y="186.0" fill="#2365ad" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="middle">图像 1：猫  u₁ = (1, 0)</text>
+<text x="220.0" y="220.0" fill="#2365ad" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="middle">图像 2：狗  u₂ = (0, 1)</text>
+<rect x="40" y="295" width="360" height="100" rx="12" fill="#edf9f5" stroke="#167b67" stroke-width="2"/>
+<text x="220.0" y="336.0" fill="#167b67" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="middle">文本 1：猫  v₁ = (1, 0)</text>
+<text x="220.0" y="370.0" fill="#167b67" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="middle">文本 2：狗  v₂ = (0, 1)</text>
+<path d="M410 270L450 270" fill="none" stroke="#2365ad" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="535" y="168" fill="#18334f" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" text-anchor="start">列：候选文本</text>
+<text x="590" y="212" fill="#18334f" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="start">猫</text>
+<text x="745" y="212" fill="#18334f" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="start">狗</text>
+<rect x="535" y="235" width="140" height="85" rx="12" fill="#fff1db" stroke="#b86412" stroke-width="2"/>
+<text x="605.0" y="285.5" fill="#b86412" font-family="Noto Sans CJK SC, sans-serif" font-size="32" font-weight="400" text-anchor="middle">2</text>
+<rect x="685" y="235" width="140" height="85" rx="12" fill="#edf5ff" stroke="#2365ad" stroke-width="2"/>
+<text x="755.0" y="285.5" fill="#2365ad" font-family="Noto Sans CJK SC, sans-serif" font-size="32" font-weight="400" text-anchor="middle">0</text>
+<rect x="535" y="330" width="140" height="85" rx="12" fill="#edf5ff" stroke="#2365ad" stroke-width="2"/>
+<text x="605.0" y="380.5" fill="#2365ad" font-family="Noto Sans CJK SC, sans-serif" font-size="32" font-weight="400" text-anchor="middle">0</text>
+<rect x="685" y="330" width="140" height="85" rx="12" fill="#fff1db" stroke="#b86412" stroke-width="2"/>
+<text x="755.0" y="380.5" fill="#b86412" font-family="Noto Sans CJK SC, sans-serif" font-size="32" font-weight="400" text-anchor="middle">2</text>
+<text x="487" y="285" fill="#18334f" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="start">猫</text>
+<text x="487" y="380" fill="#18334f" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="start">狗</text>
+<text x="520" y="461" fill="#18334f" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" text-anchor="start">Sᵢⱼ = a × uᵢ·vⱼ</text>
+<path d="M850 275L915 275" fill="none" stroke="#2365ad" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="942" y="190" width="295" height="155" rx="12" fill="#fff4e8" stroke="#b86412" stroke-width="2"/>
+<text x="1089.5" y="241.5" fill="#b86412" font-family="Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" text-anchor="middle">每一行：图找文</text>
+<text x="1089.5" y="275.5" fill="#b86412" font-family="Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" text-anchor="middle">每一列：文找图</text>
+<text x="1089.5" y="309.5" fill="#b86412" font-family="Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" text-anchor="middle">正确配对都在对角线</text>
+<rect x="40" y="505" width="1195" height="105" rx="12" fill="#fff4e8" stroke="#b86412" stroke-width="2"/>
+<text x="637.5" y="548.5" fill="#b86412" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" text-anchor="middle">猫图这一行 softmax：p(猫文) = e² / (e² + e⁰) ≈ 0.881</text>
+<text x="637.5" y="582.5" fill="#b86412" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" text-anchor="middle">这一项损失 −ln(0.881) ≈ 0.127；行与列的损失再取平均</text>
+<text x="40" y="661" fill="#66788a" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="start">不要误读：非对角线表示“本批未配对”，不保证在语义上完全不相关</text>
+<text x="40" y="700" fill="#66788a" font-family="Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="start">原创教学图，机制依据 CLIP v1 §2.3 与图3；符号和手算见正文</text>
+</svg>

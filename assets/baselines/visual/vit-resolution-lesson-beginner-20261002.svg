@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="740" viewBox="0 0 1280 740"><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#2365ad"/></marker></defs><rect width="1280" height="740" fill="#fff"/>
+<text x="40" y="58" fill="#18334f" font-family="Noto Sans CJK SC, sans-serif" font-size="34" font-weight="700" text-anchor="start">ViT 升高分辨率为什么要多花计算</text>
+<text x="40" y="98" fill="#66788a" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" text-anchor="start">patch 边长 P 固定为 16；这里计数的是每个注意力头的打分矩阵元素，并非模型总 FLOPs</text>
+<rect x="40" y="160" width="525" height="245" rx="12" fill="#edf5ff" stroke="#2365ad" stroke-width="2"/>
+<text x="302.5" y="222.5" fill="#2365ad" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" text-anchor="middle">预训练示例：224 × 224</text>
+<text x="302.5" y="256.5" fill="#2365ad" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" text-anchor="middle">14 × 14 = 196 个 patch</text>
+<text x="302.5" y="290.5" fill="#2365ad" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" text-anchor="middle">加 [CLS] → 197 个 token</text>
+<text x="302.5" y="324.5" fill="#2365ad" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" text-anchor="middle">注意力矩阵：197 × 197</text>
+<text x="302.5" y="358.5" fill="#2365ad" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" text-anchor="middle">共 38,809 个得分</text>
+<path d="M587 282L680 282" fill="none" stroke="#2365ad" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="705" y="160" width="525" height="245" rx="12" fill="#edf9f5" stroke="#167b67" stroke-width="2"/>
+<text x="967.5" y="222.5" fill="#167b67" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" text-anchor="middle">微调示例：384 × 384</text>
+<text x="967.5" y="256.5" fill="#167b67" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" text-anchor="middle">24 × 24 = 576 个 patch</text>
+<text x="967.5" y="290.5" fill="#167b67" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" text-anchor="middle">加 [CLS] → 577 个 token</text>
+<text x="967.5" y="324.5" fill="#167b67" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" text-anchor="middle">注意力矩阵：577 × 577</text>
+<text x="967.5" y="358.5" fill="#167b67" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" text-anchor="middle">共 332,929 个得分</text>
+<rect x="40" y="458" width="1195" height="118" rx="12" fill="#fff4e8" stroke="#b86412" stroke-width="2"/>
+<text x="637.5" y="491.0" fill="#b86412" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="middle">序列长度约 2.93 倍；注意力得分数量约 8.58 倍</text>
+<text x="637.5" y="525.0" fill="#b86412" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="middle">旧位置向量按原二维网格插值到新网格；[CLS] 的位置项单独保留</text>
+<text x="637.5" y="559.0" fill="#b86412" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="middle">可以沿用编码器参数，但更长序列仍会增加计算与显存需求</text>
+<text x="40" y="641" fill="#66788a" font-family="Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" text-anchor="start">这不等于实测耗时一定增长 8.58 倍：MLP、投影、并行度与硬件也影响运行时间</text>
+<text x="40" y="695" fill="#66788a" font-family="Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="start">原创教学图；计数由 ViT v2 §3.1–3.2 公式推得，非论文跑分</text>
+</svg>

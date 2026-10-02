@@ -1,0 +1,52 @@
+{
+  "principle": "领域按问题分，架构/监督/模态/任务为正交标签，允许跨类；空类不冒充论文覆盖",
+  "updated": "2026-10-02",
+  "domains": [
+    {
+      "id": "robotics/perception",
+      "path": "fields/perception.md"
+    },
+    {
+      "id": "robotics/localization-mapping",
+      "path": "fields/localization-mapping.md"
+    },
+    {
+      "id": "robotics/navigation-planning",
+      "path": "fields/navigation-planning.md"
+    },
+    {
+      "id": "robotics/control",
+      "path": "fields/control-locomotion.md"
+    },
+    {
+      "id": "robotics/embodied-policies/imitation-rl",
+      "path": "fields/imitation-reinforcement-learning.md"
+    },
+    {
+      "id": "robotics/embodied-policies/vla",
+      "path": "fields/vla.md"
+    },
+    {
+      "id": "multimodal/world-models",
+      "path": "fields/world-models.md"
+    },
+    {
+      "id": "robotics/embodied-agents",
+      "path": "fields/embodied-agents.md",
+      "cross_refs": [
+        "cross-domain/agents",
+        "robotics/navigation-planning",
+        "robotics/embodied-policies"
+      ]
+    }
+  ],
+  "orthogonal_axes": [
+    "architecture_tags",
+    "supervision_tags",
+    "modality_tags",
+    "task_tags",
+    "method_tags",
+    "evaluation_tags"
+  ],
+  "new_evidence": "2026-10-02用户明确提出具身Agents专题，并纠正AGI笔误；不据此认定实施中的机器人项目"
+}

@@ -36,3 +36,8 @@
 ## Baseline 图解与精读
 
 [打开27篇精读及8份路线图](BASELINES.md)。Convex MPC机制图与完整同步索引仍待公开确认。
+
+
+## 机器人与具身分领域阅读
+
+[机器人与具身独立专题](robotics-embodied/README.md)已按领域讲解、baseline长文、具身Agents近期论文、路线图和结构化索引组织。旧入口保留；各篇阅读与教学改写状态见专题索引。

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1400" viewBox="0 0 1600 1400">
+<rect width="1600" height="1400" fill="#f6f8fc"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#526079"/></marker></defs>
+<g font-family="Noto Sans CJK SC, DejaVu Sans, sans-serif">
+<text x="64" y="76" font-size="40" font-weight="700" fill="#152642">DPO 第三步  从四个分数到一次参数更新</text>
+<text x="64" y="124" font-size="23" font-weight="400" fill="#526079">同一摘要偏好：A 为 winner，B 为 loser；β = 0.5；所有数值为教学构造</text>
+<rect x="64" y="168" width="708" height="186" rx="16" fill="white" stroke="#087e83" stroke-width="2"/>
+<rect x="812" y="168" width="724" height="186" rx="16" fill="white" stroke="#7550ad" stroke-width="2"/>
+<text x="88" y="214" font-size="30" font-weight="700" fill="#087e83">当前 policy  参与梯度</text>
+<text x="88" y="265" font-size="26" font-weight="400" fill="#152642">a = log πθ(A|x) = log 0.04 ≈ −3.218876</text>
+<text x="88" y="312" font-size="26" font-weight="400" fill="#152642">b = log πθ(B|x) = log 0.02 ≈ −3.912023</text>
+<text x="836" y="214" font-size="30" font-weight="700" fill="#7550ad">冻结 reference  不更新</text>
+<text x="836" y="265" font-size="25" font-weight="400" fill="#152642">c = log πref(A|x) = log 0.02 ≈ −3.912023</text>
+<text x="836" y="312" font-size="25" font-weight="400" fill="#152642">d = log πref(B|x) = log 0.04 ≈ −3.218876</text>
+<path d="M417 363 L417 409" stroke="#526079" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<path d="M1174 363 L1174 409" stroke="#526079" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="64" y="422" width="1472" height="180" rx="16" fill="white" stroke="#315bba" stroke-width="2"/>
+<text x="88" y="468" font-size="30" font-weight="700" fill="#315bba">差上差  m = β[(a − b) − (c − d)] = 0.5 × log 4 = log 2</text>
+<text x="88" y="520" font-size="28" font-weight="400" fill="#152642">偏好预测 σ(m) = 2/3       单对损失 ℓ = −log(2/3) ≈ 0.405465</text>
+<text x="88" y="568" font-size="24" font-weight="400" fill="#526079">注意：2/3 是“偏好 A”的拟合概率；生成 A 这条字符串的概率仍是 0.04。</text>
+<path d="M800 611 L800 654" stroke="#526079" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="64" y="666" width="1472" height="173" rx="16" fill="white" stroke="#087e83" stroke-width="2"/>
+<text x="88" y="711" font-size="28" font-weight="700" fill="#087e83">链式法则  ∇θℓ = −βσ(−m)[∇θ log πθ(A|x) − ∇θ log πθ(B|x)]</text>
+<text x="88" y="761" font-size="26" font-weight="400" fill="#152642">此时 βσ(−m) = 1/6；希望上调 A、下调 B，但真实模型参数由所有回答共享。</text>
+<text x="88" y="809" font-size="25" font-weight="400" fill="#526079">下面用 A / B / 其余回答 O 的三分类 softmax，展示一整步可复算更新。</text>
+<path d="M800 848 L800 891" stroke="#526079" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="64" y="903" width="1472" height="219" rx="16" fill="white" stroke="#b56119" stroke-width="2"/>
+<text x="88" y="947" font-size="28" font-weight="700" fill="#b56119">教学参数更新  η = 0.6；z 是三分类 softmax 前的参数</text>
+<text x="88" y="992" font-size="27" font-weight="400" fill="#152642">梯度：(−1/6, +1/6, 0)       参数改变：Δz = (+0.1, −0.1, 0)</text>
+<text x="88" y="1037" font-size="27" font-weight="400" fill="#152642">新概率：(A, B, O) ≈ (0.044105, 0.018055, 0.937840)</text>
+<text x="88" y="1082" font-size="27" font-weight="700" fill="#152642">新 m ≈ 0.793147；新损失 ≈ 0.373230       reference 始终不变</text>
+<rect x="64" y="1170" width="1472" height="116" rx="16" fill="#edf2fb" stroke="#315bba" stroke-width="2"/>
+<text x="88" y="1217" font-size="29" font-weight="700" fill="#315bba">推理：新提示 → 训练后的 policy → 逐 token 生成 → EOS 或长度上限</text>
+<text x="88" y="1258" font-size="25" font-weight="400" fill="#152642">不需要训练偏好对、reference、独立奖励模型或 critic 一起上线。</text>
+<text x="64" y="1352" font-size="21" font-weight="400" fill="#526079">图 3  本文自拟数值算例  |  公式依据 DPO 正文式 7 与梯度；不是 Transformer 训练复现</text>
+</g>
+</svg>

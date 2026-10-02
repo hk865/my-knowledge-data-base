@@ -1,0 +1,96 @@
+{
+  "paper": "ViT",
+  "version": "arXiv:2010.11929v2",
+  "revision_date": "2026-10-02",
+  "operation": "Pedagogical rewrite of an existing library reading; no new training replication",
+  "primary_pdf_sha256": "8ce7b83971a14508ca711a27c875c9b6914c4f6767cf3150fb1ca6c07aa056d6",
+  "reading_scope": {
+    "inherited_record": "Main text pp1–9, appendicesA–D pp13–22",
+    "current_check": "Targeted primary-PDF and extracted-text rechecks; key table rendering checked in source-verification pass; predecessor abstracts and directly relevant sections only"
+  },
+  "checks": [
+    {
+      "claim": "Patch sequence, shared projection, class token, 1D positions, Pre-LN, QKV attention",
+      "locator": "§3.1, Eq1–8, AppendixA",
+      "source": "https://arxiv.org/pdf/2010.11929v2#page=3",
+      "result": "verified; synthetic examples separately marked"
+    },
+    {
+      "claim": "Training resolutions and dataset-specific optimizer/regularization schedules",
+      "locator": "§4.1, Tables3–4, AppendixB.1–B.1.1",
+      "source": "https://arxiv.org/pdf/2010.11929v2#page=13",
+      "result": "Avoids applying JFT weight decay0.1 and linear decay to all datasets; mentions ImageNet cosine schedule"
+    },
+    {
+      "claim": "Table2 88.55/87.76/87.54 ImageNet,2500/680/9900 TPU-core-days",
+      "locator": "Table2 PDFp6",
+      "source": "https://arxiv.org/pdf/2010.11929v2#page=6",
+      "result": "verified; ± values are across3 fine-tuning runs; ViT-L/16 is not strictly ahead of BiT on every task"
+    },
+    {
+      "claim": "Table5 data scale results and distinction from Table2",
+      "locator": "Table5 PDFp15",
+      "source": "https://arxiv.org/pdf/2010.11929v2#page=15",
+      "result": "verified; B/16 77.91→84.15,L/16 76.53→87.12; H/14Table5 88.04 vsTable6 88.08 retained rather than reconciled"
+    },
+    {
+      "claim": "Position encoding and CLS/GAP ablations",
+      "locator": "AppendixD.3–D.4,Fig9,Table8 PDFpp16–17",
+      "source": "https://arxiv.org/pdf/2010.11929v2#page=17",
+      "result": "explicitly ImageNet5-shot linear; 61.382/64.206/64.001/64.032%; GAP improvement depends on tuning LR8e-4→3e-4"
+    },
+    {
+      "claim": "Early masked-patch objective and79.9%ImageNet",
+      "locator": "§4.6,AppendixB.1.2",
+      "source": "https://arxiv.org/pdf/2010.11929v2#page=14",
+      "result": "50%selected,80/10/10 corruption within selection; discrete mean color target; distinguished from later MAE"
+    },
+    {
+      "claim": "Historical prior works",
+      "locator": "ViT§2; official abstracts and relevant sections of Cordonnier/BiT/JFT-scale papers",
+      "source": "https://arxiv.org/pdf/2010.11929v2#page=2",
+      "result": "Does not claim first image attention, first patch Transformer, first JFT data, or invention of QKV"
+    }
+  ],
+  "teaching_examples": [
+    {
+      "name": "patch projection",
+      "calculation": "x=(1,2,5,6),E rows[(1,0),(0,1),(1,0),(0,1)] gives(6,8)",
+      "status": "synthetic"
+    },
+    {
+      "name": "attention",
+      "calculation": "softmax(1,0)=(.731059,.268941),weighted values(2,0),(0,4) gives(1.462118,1.075766)",
+      "status": "synthetic"
+    },
+    {
+      "name": "single-label classification loss",
+      "calculation": "softmax(2,1,0)=(.665241,.244728,.090031),CE correctclass0=.407606",
+      "status": "synthetic; not universal JFT loss specification"
+    },
+    {
+      "name": "resolution counting",
+      "calculation": "197^2=38809,577^2=332929,ratio8.57865",
+      "status": "derived token-pair count, not FLOP/time benchmark"
+    }
+  ],
+  "figures": {
+    "inherited": [
+      "vit.png",
+      "vit.svg"
+    ],
+    "new": [
+      "vit-patches-lesson",
+      "vit-attention-lesson",
+      "vit-resolution-lesson"
+    ],
+    "method": "Original SVG diagrams rendered with Inkscape, no paper figure copied"
+  },
+  "qa": {
+    "image_count": 4,
+    "diagram_png_visual_inspection": "completed",
+    "source_link_placement": "All external references in final section",
+    "training_replication": false,
+    "pages_or_github_write": false
+  }
+}

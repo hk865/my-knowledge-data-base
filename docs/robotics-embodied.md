@@ -181,3 +181,8 @@
 以下只恢复名称、截断链接或其他不足信息，暂不作为已核验论文入库：TLIO；Yan ICRA 2018；Extreme Parkour；GEN-1.5 / MimicDroid / AIRSOUL。
 
 [细分类目录](topics.md) · [全部论文与来源](paper-catalog.md)
+
+
+## 机器人与具身分领域阅读
+
+[机器人与具身独立专题](../robotics-embodied/README.md)已按领域讲解、baseline长文、具身Agents近期论文、路线图和结构化索引组织。旧入口保留；各篇阅读与教学改写状态见专题索引。

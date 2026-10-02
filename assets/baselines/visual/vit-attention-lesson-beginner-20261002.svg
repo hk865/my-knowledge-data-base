@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="740" viewBox="0 0 1280 740"><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#2365ad"/></marker></defs><rect width="1280" height="740" fill="#fff"/>
+<text x="40" y="58" fill="#18334f" font-family="Noto Sans CJK SC, sans-serif" font-size="34" font-weight="700" text-anchor="start">ViT 一次注意力如何把远处信息搬过来</text>
+<text x="40" y="98" fill="#66788a" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" text-anchor="start">简化成一个查询与两个候选；省略 LayerNorm、其他 token 和多头，仅解释加权汇总</text>
+<rect x="40" y="155" width="340" height="105" rx="12" fill="#edf5ff" stroke="#2365ad" stroke-width="2"/>
+<text x="210.0" y="198.5" fill="#2365ad" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="middle">查询 q = (1, 0)</text>
+<text x="210.0" y="232.5" fill="#2365ad" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="middle">它决定当前 token 要找什么</text>
+<rect x="40" y="305" width="340" height="160" rx="12" fill="#edf5ff" stroke="#2365ad" stroke-width="2"/>
+<text x="210.0" y="359.0" fill="#2365ad" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="middle">键 k₁ = (√2, 0)</text>
+<text x="210.0" y="393.0" fill="#2365ad" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="middle">键 k₂ = (0, √2)</text>
+<text x="210.0" y="427.0" fill="#2365ad" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="middle">q·k / √2 → 得分 (1, 0)</text>
+<path d="M400 300L462 300" fill="none" stroke="#2365ad" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="485" y="185" width="290" height="180" rx="12" fill="#fff4e8" stroke="#b86412" stroke-width="2"/>
+<text x="630.0" y="232.0" fill="#b86412" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="middle">softmax(1, 0)</text>
+<text x="630.0" y="266.0" fill="#b86412" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="middle">权重约 (0.731, 0.269)</text>
+<text x="630.0" y="300.0" fill="#b86412" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="middle">两项都是非负数</text>
+<text x="630.0" y="334.0" fill="#b86412" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="middle">相加等于 1</text>
+<rect x="820" y="155" width="410" height="105" rx="12" fill="#edf9f5" stroke="#167b67" stroke-width="2"/>
+<text x="1025.0" y="198.5" fill="#167b67" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="middle">值 v₁ = (2, 0)</text>
+<text x="1025.0" y="232.5" fill="#167b67" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="middle">值 v₂ = (0, 4)</text>
+<path d="M786 335L815 375" fill="none" stroke="#2365ad" stroke-width="3" marker-end="url(#arrow)"/>
+<path d="M1025 270L1025 322" fill="none" stroke="#2365ad" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="830" y="340" width="400" height="145" rx="12" fill="#edf9f5" stroke="#167b67" stroke-width="2"/>
+<text x="1030.0" y="386.5" fill="#167b67" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="middle">0.731 × (2, 0)</text>
+<text x="1030.0" y="420.5" fill="#167b67" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="middle">+ 0.269 × (0, 4)</text>
+<text x="1030.0" y="454.5" fill="#167b67" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="middle">≈ (1.462, 1.076)</text>
+<rect x="40" y="535" width="1195" height="100" rx="12" fill="#edf5ff" stroke="#2365ad" stroke-width="2"/>
+<text x="637.5" y="576.0" fill="#2365ad" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="middle">注意力权重用于混合 value 向量；它不是最终的类别概率</text>
+<text x="637.5" y="610.0" fill="#2365ad" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" text-anchor="middle">真实 ViT 中，Q、K、V 来自可训练投影，多头并行后还要拼接与输出投影</text>
+<text x="40" y="695" fill="#66788a" font-family="Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" text-anchor="start">原创教学图；数值为人工手算例，公式依据 ViT v2 附录A 与 Transformer 原文</text>
+</svg>

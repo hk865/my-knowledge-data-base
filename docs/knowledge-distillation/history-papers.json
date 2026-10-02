@@ -1,0 +1,270 @@
+{
+  "checked_through": "2026-10-02T08:46:00Z",
+  "scope": "bounded ChatGPT historical link recovery",
+  "papers": [
+    {
+      "id": "url:cornell:compression.kdd06",
+      "title": "Model Compression",
+      "arxiv_id": null,
+      "doi": null,
+      "url": "https://www.cs.cornell.edu/~caruana/compression.kdd06.pdf",
+      "year": "2006",
+      "provenance": "assistant-recommended-or-discussion-citation",
+      "original_chat_urls": [
+        "https://www.cs.cornell.edu/~caruana/compression.kdd06.pdf?utm_source=chatgpt.com"
+      ],
+      "conversation_url": null,
+      "chat_evidence": [
+        {
+          "date": "2026-10-01T15:48:42Z",
+          "role": "assistant",
+          "evidence_type": "Personal Context retrieval summary; not original verbatim transcript; no conversation permalink returned"
+        }
+      ],
+      "verification": {
+        "status": "primary_pdf_title_authors_venue_verified",
+        "sources": [
+          "https://www.cs.cornell.edu/~caruana/compression.kdd06.pdf"
+        ],
+        "scope": "Identity only, not full-text reading or replication"
+      },
+      "eligible_exact_link_increment": true,
+      "new_vs_local": true,
+      "dedup_matches": [],
+      "reading_status": "identity_checked_not_full_read",
+      "user_reading_status": "unknown",
+      "topic_paths": [
+        "llm/pretraining",
+        "cross-domain/interpretability"
+      ],
+      "supervision_tags": [
+        "distillation"
+      ],
+      "architecture_tags": []
+    },
+    {
+      "id": "arxiv:1312.6184",
+      "title": "Do Deep Nets Really Need to be Deep?",
+      "arxiv_id": "1312.6184",
+      "doi": null,
+      "url": "https://arxiv.org/abs/1312.6184",
+      "year": "2013",
+      "provenance": "assistant-recommended-or-discussion-citation",
+      "original_chat_urls": [
+        "https://arxiv.org/abs/1312.6184?utm_source=chatgpt.com"
+      ],
+      "conversation_url": null,
+      "chat_evidence": [
+        {
+          "date": "2026-10-01T15:48:42Z",
+          "role": "assistant",
+          "evidence_type": "Personal Context retrieval summary; not original verbatim transcript; no conversation permalink returned"
+        }
+      ],
+      "verification": {
+        "status": "primary_arxiv_identity_verified",
+        "sources": [
+          "https://arxiv.org/abs/1312.6184"
+        ],
+        "scope": "Identity only, not full-text reading or replication"
+      },
+      "eligible_exact_link_increment": true,
+      "new_vs_local": true,
+      "dedup_matches": [],
+      "reading_status": "identity_checked_not_full_read",
+      "user_reading_status": "unknown",
+      "topic_paths": [
+        "llm/pretraining",
+        "cross-domain/interpretability"
+      ],
+      "supervision_tags": [
+        "distillation"
+      ],
+      "architecture_tags": []
+    },
+    {
+      "id": "arxiv:1412.6550",
+      "title": "FitNets: Hints for Thin Deep Nets",
+      "arxiv_id": "1412.6550",
+      "doi": null,
+      "url": "https://arxiv.org/abs/1412.6550",
+      "year": "2014",
+      "provenance": "assistant-recommended-or-discussion-citation",
+      "original_chat_urls": [
+        "https://arxiv.org/abs/1412.6550?utm_source=chatgpt.com"
+      ],
+      "conversation_url": null,
+      "chat_evidence": [
+        {
+          "date": "2026-10-01T15:48:42Z",
+          "role": "assistant",
+          "evidence_type": "Personal Context retrieval summary; not original verbatim transcript; no conversation permalink returned"
+        }
+      ],
+      "verification": {
+        "status": "primary_arxiv_identity_verified",
+        "sources": [
+          "https://arxiv.org/abs/1412.6550"
+        ],
+        "scope": "Identity only, not full-text reading or replication"
+      },
+      "eligible_exact_link_increment": true,
+      "new_vs_local": true,
+      "dedup_matches": [],
+      "reading_status": "identity_checked_not_full_read",
+      "user_reading_status": "unknown",
+      "topic_paths": [
+        "llm/pretraining",
+        "cross-domain/interpretability"
+      ],
+      "supervision_tags": [
+        "distillation"
+      ],
+      "architecture_tags": []
+    },
+    {
+      "id": "arxiv:1503.02531",
+      "title": "Distilling the Knowledge in a Neural Network",
+      "arxiv_id": "1503.02531",
+      "doi": "10.48550/arXiv.1503.02531",
+      "url": "https://arxiv.org/abs/1503.02531",
+      "year": "2015",
+      "provenance": "assistant-recommended-or-discussion-citation",
+      "original_chat_urls": [
+        "https://www.cs.toronto.edu/~hinton/absps/distillation.pdf?utm_source=chatgpt.com",
+        "https://doi.org/10.48550/arXiv.1503.02531?utm_source=chatgpt.com"
+      ],
+      "conversation_url": null,
+      "chat_evidence": [
+        {
+          "date": "2026-10-01T15:54:57Z",
+          "role": "assistant",
+          "evidence_type": "Personal Context retrieval summary; not original verbatim transcript; no conversation permalink returned"
+        }
+      ],
+      "verification": {
+        "status": "primary_arxiv_identity_verified",
+        "sources": [
+          "https://arxiv.org/abs/1503.02531"
+        ],
+        "scope": "Identity only, not full-text reading or replication"
+      },
+      "eligible_exact_link_increment": true,
+      "new_vs_local": true,
+      "dedup_matches": [],
+      "reading_status": "identity_checked_not_full_read",
+      "user_reading_status": "unknown",
+      "topic_paths": [
+        "llm/pretraining",
+        "cross-domain/interpretability"
+      ],
+      "supervision_tags": [
+        "distillation"
+      ],
+      "architecture_tags": []
+    }
+  ],
+  "pending": [
+    {
+      "id": "doi:10.1016/j.mlwa.2024.100605",
+      "title": "A survey on knowledge distillation: Recent advancements",
+      "arxiv_id": null,
+      "doi": "10.1016/j.mlwa.2024.100605",
+      "url": "https://doi.org/10.1016/j.mlwa.2024.100605",
+      "year": "2024",
+      "provenance": "assistant-recommended-or-discussion-citation",
+      "original_chat_urls": [
+        "https://doi.org/10.1016/j.mlwa.2024.100605?utm_source=chatgpt.com"
+      ],
+      "conversation_url": null,
+      "chat_evidence": [
+        {
+          "date": "2026-10-01T15:48:42Z",
+          "role": "assistant",
+          "evidence_type": "Personal Context retrieval summary; not original verbatim transcript; no conversation permalink returned"
+        }
+      ],
+      "verification": {
+        "status": "publisher_search_index_title_verified_direct_page_403",
+        "sources": [
+          "https://doi.org/10.1016/j.mlwa.2024.100605"
+        ],
+        "scope": "Identity only, not full-text reading or replication"
+      },
+      "eligible_exact_link_increment": true,
+      "new_vs_local": true,
+      "dedup_matches": [],
+      "caveat": "原消息只称现代综述；标题来自当前出版社搜索索引，直接页面403。不能标为已阅读全文。",
+      "reading_status": "identity_checked_not_full_read",
+      "user_reading_status": "unknown",
+      "topic_paths": [
+        "llm/pretraining",
+        "cross-domain/interpretability"
+      ],
+      "supervision_tags": [
+        "distillation"
+      ],
+      "architecture_tags": []
+    },
+    {
+      "id": "usenix:security16:tramer",
+      "title": "Stealing Machine Learning Models via Prediction APIs",
+      "arxiv_id": null,
+      "doi": null,
+      "url": "https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/tramer",
+      "year": "2016",
+      "provenance": "assistant-recommended-or-discussion-citation",
+      "original_chat_urls": [],
+      "conversation_url": null,
+      "chat_evidence": [
+        {
+          "date": "2026-10-01T15:48:42Z",
+          "role": "assistant",
+          "evidence_type": "Personal Context retrieval summary; not original verbatim transcript; no conversation permalink returned"
+        }
+      ],
+      "verification": {
+        "status": "primary_usenix_identity_verified_historical_exact_url_unrecovered",
+        "sources": [
+          "https://www.usenix.org/conference/usenixsecurity16/technical-sessions/presentation/tramer"
+        ],
+        "scope": "Identity only, not full-text reading or replication"
+      },
+      "eligible_exact_link_increment": false,
+      "new_vs_local": true,
+      "dedup_matches": [],
+      "caveat": "历史仅恢复标题和截断 https://www.usenix.org/...；当前官方核验URL不是恢复的历史原链接，因此不计入严格实际链接增量。",
+      "reading_status": "identity_checked_not_full_read",
+      "user_reading_status": "unknown",
+      "topic_paths": [
+        "llm/pretraining",
+        "cross-domain/interpretability"
+      ],
+      "supervision_tags": [
+        "distillation"
+      ],
+      "architecture_tags": []
+    }
+  ],
+  "unverified": [
+    {
+      "claim": "知识蒸馏2011起源/相关论文",
+      "status": "未取得明确论文身份，不作为历史事实"
+    },
+    {
+      "claim": "Stealing历史完整URL",
+      "status": "仅截断USENIX链接，严格链接增量排除"
+    },
+    {
+      "claim": "综述完整出版社页面",
+      "status": "403；只核对出版社索引题名"
+    }
+  ],
+  "limitations": [
+    "Personal Context为检索式摘要，非全部聊天导出；负检索不证明没有讨论",
+    "无可打开的原会话链接；时间和角色为检索返回值",
+    "三次检索：全窗口论文身份、已定位蒸馏条目的完整链接、截断链接与角色复核",
+    "所有检出论文均为助手引用，不可写成用户自己提供或已读",
+    "教学展开与具身Agents是当前关注点；蒸馏增量只作一般机器学习来源补充，不混作具身新增"
+  ]
+}
