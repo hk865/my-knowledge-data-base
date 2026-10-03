@@ -8,10 +8,11 @@
 - [官方全文入口](https://arxiv.org/pdf/2405.04434v5)
 - 阅读版本：v5
 - 方向：llm/posttraining/sft、llm/pretraining、llm/architecture、llm/posttraining/rl
+- 关系页：[注意力与 FFN 的分工谱系](../../../foundations/relations/attention-ffn-division.md)第 7 节"MoE"节点（在整个模型中采用 DeepSeekMoE 稀疏化 FFN，对注意力的改动 MLA 则用于压缩 KV 缓存）
 
 ## 阅读内容与边界
 
-本篇保留现有技术精读，范围与残余边界见正文和证据档案；未独立复现。 用户本人是否已读未作推断。
+本篇保留现有技术精读，范围与残余边界见正文和证据档案；未独立复现。
 
 - [打开完整技术精读](reading.md)
 - [本篇图解与说明](figures/README.md)

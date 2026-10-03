@@ -8,10 +8,11 @@
 - [官方全文入口](https://arxiv.org/pdf/2312.00752v2)
 - 阅读版本：v2
 - 方向：llm/pretraining、llm/architecture、llm/inference
+- 关系页：[递推状态谱系](../../../foundations/relations/recurrent-state.md)第 4 节"Mamba"节点（转移随输入变化、不随状态变化，因而既能按内容选择又能并行 scan）
 
 ## 阅读内容与边界
 
-本篇保留现有技术精读，范围与残余边界见正文和证据档案；未独立复现。 用户本人是否已读未作推断。
+本篇保留现有技术精读，范围与残余边界见正文和证据档案；未独立复现。
 
 - [打开完整技术精读](reading.md)
 - [本篇图解与说明](figures/README.md)
