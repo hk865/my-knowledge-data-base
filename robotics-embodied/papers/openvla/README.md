@@ -1,29 +1,19 @@
 # OpenVLA: An Open-Source Vision-Language-Action Model
 
-[返回机器人与具身目录](../../README.md) · [原文与阅读记录](source.json)
+> 状态：文献卡 · 2024 · [原文](https://arxiv.org/abs/2406.09246v1)
 
-- 稳定标识：arxiv:2406.09246
-- 年份：2024
-- [官方原文页面](https://arxiv.org/abs/2406.09246)
-- [官方全文入口](https://arxiv.org/pdf/2406.09246v1)
-- 阅读版本：v1
-- 方向：robotics/embodied-policies
+[返回机器人与具身目录](../../README.md)
 
-## 阅读内容与边界
+- **解决什么**：开放、可在新机器人上微调的通用操作策略。
+- **核心方法**：沿用 RT-2 的离散动作 token 路线，换成 7B 开放底座 Prismatic（DINOv2 + SigLIP 视觉特征接入 Llama 2）和清洗过的 Open X-Embodiment 数据（约 97 万条轨迹），训练时连视觉编码器一起微调。
+- **为什么在这个库里**：Baseline 表中"动作表示 = 离散 token"一格的开放代表，比较 π0、FAST、OpenVLA-OFT 时的参照物。优先级：必读。
 
-本篇保留现有技术精读，范围与残余边界见正文和证据档案；未独立复现。 用户本人是否已读未作推断。
+## 阅读入口
 
-- [打开完整技术精读](reading.md)
-- [本篇图解与说明](figures/README.md)
+- [技术精读](reading.md)
+- [图解与说明](figures/README.md)
+- [原文版本与阅读记录](source.json) · [作者归属与许可](ATTRIBUTION.md)
 
-## 可选的阅读顺序
+## 阅读顺序
 
-[Visual Instruction Tuning](../../../multimodal/papers/llava/README.md) → [Learning Transferable Visual Models From Natural Language Supervision](../../../multimodal/papers/clip/README.md) → [Emerging Properties in Self-Supervised Vision Transformers](../../../multimodal/papers/dino/README.md) → 本篇。这个顺序是教学建议，不表示论文之间的直接历史继承。
-
-## 原文与许可
-
-- [官方原文页面](https://arxiv.org/abs/2406.09246v1)
-- [官方全文PDF](https://arxiv.org/pdf/2406.09246v1)
-- [作者归属与许可记录](ATTRIBUTION.md)
-
-本仓库仅提供官方原文链接，没有公开保存论文PDF。版本、许可与阅读深度见 [source.json](source.json)；许可已核验不代表PDF已上传或镜像。
+[CLIP](../../../multimodal/papers/clip/README.md)（图文对比学习，SigLIP 的来源路线）→ [LLaVA](../../../multimodal/papers/llava/README.md)（视觉特征投影进语言模型的接口）→ [DINO](../../../multimodal/papers/dino/README.md)（自监督视觉特征，DINOv2 的前身）→ 本篇。
