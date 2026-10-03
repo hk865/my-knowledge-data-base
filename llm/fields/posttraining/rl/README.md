@@ -1,7 +1,5 @@
 # 语言模型强化学习 阅读导航
 
-本页是阅读导航，汇集已有讲解、论文与阅读路线；它本身不是本方向的独立教学讲义。
-
 [返回领域总目录](../../../README.md) · [Baseline](BASELINES.md) · [路线图](ROADMAP.md) · [论文目录](PAPERS.md)
 
 ## 先理解什么
@@ -18,7 +16,7 @@
 
 ## 具体讲解入口
 
-[打开已有独立讲解](../../../../docs/foundations/05b-reinforcement-learning.md)。保留原讲义位置和完整正文，不把此导航页计为新的精读。
+[打开已有独立讲解](../../../../docs/foundations/05b-reinforcement-learning.md)。
 
 ## 从已有讲解开始
 

@@ -1,7 +1,5 @@
 # 视觉表征 阅读导航
 
-本页是阅读导航，汇集已有讲解、论文与阅读路线；它本身不是本方向的独立教学讲义。
-
 [返回领域总目录](../../README.md) · [Baseline](BASELINES.md) · [路线图](ROADMAP.md) · [论文目录](PAPERS.md)
 
 ## 先理解什么
@@ -18,7 +16,7 @@ ViT是架构；MAE和DINO体现不同学习信号。好看的特征可视化不�
 
 ## 具体讲解入口
 
-[打开已有独立讲解](../../../docs/foundations/14-attention-transformer.md)。保留原讲义位置和完整正文，不把此导航页计为新的精读。
+[打开已有独立讲解](../../../docs/foundations/14-attention-transformer.md)。
 
 ## 从已有讲解开始
 

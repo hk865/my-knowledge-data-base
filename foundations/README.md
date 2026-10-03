@@ -2,7 +2,7 @@
 
 [回到全库](../README.md) · [完整学习导航](../docs/foundations/00-learning-navigation.md)
 
-这里是24个基础与进阶模块的分层入口。完整讲义仍在原有 docs/foundations/ 路径，不移动、不替换已展开的教学正文。
+这里是24个基础与进阶模块的分层入口。完整讲义在 docs/foundations/ 路径。
 
 ## 五个分区
 
@@ -17,5 +17,3 @@
 - [Baseline入口](BASELINES.md)
 - [学习路线](ROADMAP.md)
 - [论文原文与讲解目录](PAPERS.md)
-
-24个模块不等于24篇全文精读。原始论文重点段落研读与已有独立精读分别标明；尚未重跑模型训练。
