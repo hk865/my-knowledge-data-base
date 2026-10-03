@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2303.06349",
+  "title": "Resurrecting Recurrent Neural Networks for Long Sequences",
+  "resource_kind": "paper",
+  "canonical_folder": "llm/papers/arxiv-2303.06349",
+  "official_url": "https://arxiv.org/abs/2303.06349",
+  "official_fulltext_url": "https://arxiv.org/pdf/2303.06349",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "selected_method_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了摘要、§1 主要步骤、§2.1、§3.3–3.4、§4 与 Table 3；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Antonio Orvieto",
+    "Samuel L Smith",
+    "Albert Gu",
+    "Anushan Fernando",
+    "Caglar Gulcehre",
+    "Razvan Pascanu",
+    "Soham De"
+  ],
+  "year": 2023,
+  "topic_paths": [
+    "llm/architecture"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v1 PDF 选段：§1 主要步骤（线性递推、复对角化、稳定指数参数化、归一化）、§2.1、§3.3–3.4、§4、Table 3",
+    "mechanism_summary": "从 tanh RNN 出发：去掉递推非线性；转移矩阵复对角化并用并行 scan；Λ=diag(exp(-exp(ν_log)+i·exp(θ_log))) 保证 |λ|<1，初始化在单位圆附近的环上；按 γ=sqrt(1-|λ|²) 归一化输入（式 7）。Table 3：LRU 在 LRA 各任务上与 S4/S4D/S5 相近，PathX 94.2%（S4 原文报告 96.4%）。§4 认为离散化带来的参数共享与连续时间解释不是 S4 性能的必要条件。",
+    "evidence_boundary": "未复现实验；数字取自论文 Table 3。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2303.06349",
+      "https://arxiv.org/pdf/2303.06349v1"
+    ],
+    "source_origin": "style_guide_relation_page_node",
+    "relation_pages": [
+      "foundations/relations/recurrent-state.md"
+    ]
+  }
+}
