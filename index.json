@@ -350,5 +350,17 @@
   {
     "title": "2026年10月3日研究短报",
     "file": "daily/2026-10-03.md"
+  },
+  {
+    "title": "跨模块关系页索引",
+    "file": "foundations/relations/README.md"
+  },
+  {
+    "title": "递推状态谱系",
+    "file": "foundations/relations/recurrent-state.md"
+  },
+  {
+    "title": "注意力与 FFN 的分工谱系",
+    "file": "foundations/relations/attention-ffn-division.md"
   }
 ]

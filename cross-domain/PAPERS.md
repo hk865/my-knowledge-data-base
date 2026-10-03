@@ -9,6 +9,7 @@
 - [ShortGPT: Layers in Large Language Models are More Redundant Than You Expect](../llm/papers/arxiv-2403.03853/README.md) · 2024 · 文献卡，暂无独立精读
 - [In-context Learning and Induction Heads](papers/arxiv-2209.11895/README.md) · 2022 · 文献卡，暂无独立精读
 - [Transformer Feed-Forward Layers Are Key-Value Memories](papers/arxiv-2012.14913/README.md) · 2020 · 文献卡，暂无独立精读
+- [Dissecting Recall of Factual Associations in Auto-Regressive Language Models](papers/arxiv-2304.14767/README.md) · 2023 · 文献卡，暂无独立精读
 - [Locating and Editing Factual Associations in GPT](papers/arxiv-2202.05262/README.md) · 2022 · 文献卡，暂无独立精读
 - [Naturalness of Attention: Revisiting Attention in Code Language Models](../llm/papers/arxiv-2311.13508/README.md) · 2023 · 文献卡，暂无独立精读
 - [Probing Pretrained Models of Source Code](../llm/papers/arxiv-2202.08975/README.md) · 2022 · 文献卡，暂无独立精读

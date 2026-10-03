@@ -1136,7 +1136,7 @@
       "https://arxiv.org/abs/2608.17050"
     ],
     "id": "arxiv:2608.17050",
-    "title": "Cross-Model Memory Transfer via Target-Side Reader Adaptation",
+    "title": "Frozen Memory Is Not Enough: Rethinking External Memory as Extraction",
     "url": "https://arxiv.org/abs/2608.17050",
     "arxiv_id": "2608.17050",
     "doi": null,
@@ -1185,7 +1185,10 @@
     "canonical_readme": "llm/papers/arxiv-2608.17050/README.md",
     "source_path": "llm/papers/arxiv-2608.17050/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "previous_titles": [
+      "Cross-Model Memory Transfer via Target-Side Reader Adaptation"
+    ]
   },
   {
     "original_chat_urls": [
@@ -11231,5 +11234,92 @@
     "source_path": "robotics-embodied/papers/fastrlap/source.json",
     "legacy_paths": [],
     "catalog_anchor": "p162"
+  },
+  {
+    "id": "arxiv:2303.06349",
+    "title": "Resurrecting Recurrent Neural Networks for Long Sequences",
+    "url": "https://arxiv.org/abs/2303.06349",
+    "arxiv_id": "2303.06349",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "llm/architecture"
+    ],
+    "detail_topics": [
+      "architecture/linear recurrence",
+      "architecture/state space models"
+    ],
+    "architecture_tags": [
+      "linear recurrent unit",
+      "state space model"
+    ],
+    "supervision_tags": [],
+    "provenance": [
+      "style-guide-relation-page-node"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2303.06349",
+      "https://arxiv.org/pdf/2303.06349"
+    ],
+    "verification_status": "selected_sections_checked",
+    "caveats": [],
+    "reading_status": "bibliographic_card_selected_sections_checked",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p163",
+    "user_reading_status": "unknown",
+    "modality_tags": [],
+    "task_tags": [],
+    "canonical_folder": "llm/papers/arxiv-2303.06349",
+    "canonical_path": "llm/papers/arxiv-2303.06349/README.md",
+    "canonical_readme": "llm/papers/arxiv-2303.06349/README.md",
+    "source_path": "llm/papers/arxiv-2303.06349/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "related_paper": "foundations/relations/recurrent-state.md"
+  },
+  {
+    "id": "arxiv:2304.14767",
+    "title": "Dissecting Recall of Factual Associations in Auto-Regressive Language Models",
+    "url": "https://arxiv.org/abs/2304.14767",
+    "arxiv_id": "2304.14767",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "cross-domain/interpretability"
+    ],
+    "detail_topics": [
+      "model science/knowledge representation",
+      "model science/attention"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "style-guide-relation-page-node"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2304.14767",
+      "https://arxiv.org/pdf/2304.14767"
+    ],
+    "verification_status": "selected_sections_checked",
+    "caveats": [],
+    "reading_status": "bibliographic_card_selected_sections_checked",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p164",
+    "user_reading_status": "unknown",
+    "modality_tags": [],
+    "task_tags": [],
+    "canonical_folder": "cross-domain/papers/arxiv-2304.14767",
+    "canonical_path": "cross-domain/papers/arxiv-2304.14767/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2304.14767/README.md",
+    "source_path": "cross-domain/papers/arxiv-2304.14767/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "related_paper": "foundations/relations/attention-ffn-division.md"
   }
 ]

@@ -64,7 +64,7 @@
 - [Training language models to follow instructions with human feedback](paper-catalog.md#p115)
 - [Proximal Policy Optimization Algorithms](paper-catalog.md#p129)
 
-### 架构与效率（17）
+### 架构与效率（18）
 
 细分：注意力与状态空间模型；稀疏专家与条件计算；KV cache 与压缩；线性与稀疏注意力；因果掩码与复杂度
 
@@ -77,7 +77,7 @@
 - [DeepSeek-V2: A Strong, Economical, and Efficient Mixture-of-Experts Language Model](paper-catalog.md#p014)
 - [Conditional Memory via Scalable Lookup: A New Axis of Sparsity for Large Language Models](paper-catalog.md#p015)
 - [Tokenizer-Agnostic Engram Module](paper-catalog.md#p016)
-- [Cross-Model Memory Transfer via Target-Side Reader Adaptation](paper-catalog.md#p017)
+- [Frozen Memory Is Not Enough: Rethinking External Memory as Extraction](paper-catalog.md#p017)
 - [MiniLM: Deep Self-Attention Distillation for Task-Agnostic Compression of Pre-Trained Transformers](paper-catalog.md#p020)
 - [DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter](paper-catalog.md#p021)
 - [ShortGPT: Layers in Large Language Models are More Redundant Than You Expect](paper-catalog.md#p022)
@@ -85,6 +85,7 @@
 - [Naturalness of Attention: Revisiting Attention in Code Language Models](paper-catalog.md#p028)
 - [Attention Is All You Need](paper-catalog.md#p113)
 - [Language Models are Few-Shot Learners](paper-catalog.md#p127)
+- [Resurrecting Recurrent Neural Networks for Long Sequences](paper-catalog.md#p163)
 
 ### 推理时计算（29）
 
@@ -331,7 +332,7 @@
 - [Metamorphic Testing of Multi-Agent LLM Systems: A Trace-Based Behavioral Oracle Framework](paper-catalog.md#p161)
 
 
-### 机制与可信解释（18）
+### 机制与可信解释（19）
 
 细分：
 
@@ -353,6 +354,7 @@
 - [Training Compute Optimal Large Language Models](paper-catalog.md#p114)
 - [Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena](paper-catalog.md#p118)
 - [Language Models are Few-Shot Learners](paper-catalog.md#p127)
+- [Dissecting Recall of Factual Associations in Auto-Regressive Language Models](paper-catalog.md#p164)
 
 ### 生物计算探索（0）
 

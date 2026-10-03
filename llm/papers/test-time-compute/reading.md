@@ -98,5 +98,3 @@ F=M+3\frac{D_{pre}}{D_{inf}}(M-1).
 ## 图解文件与证据索引
 
 [SVG高清图](figures/test-time-compute-mechanism.svg) · [SVG可编辑图](figures/test-time-compute-mechanism.svg) · [结构化证据](../../../docs/deep-readings/evidence/test-time-compute.json)
-
-来源类型：复用原目录 p001，保留原来源，不重复计数。

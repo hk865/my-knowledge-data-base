@@ -136,7 +136,7 @@
 
 - [Tokenizer-Agnostic Engram Module](https://arxiv.org/abs/2607.29065) · 2026 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-26；标签：language-model training
 
-- [Cross-Model Memory Transfer via Target-Side Reader Adaptation](https://arxiv.org/abs/2608.17050) · 2026 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-26；标签：reader adaptation
+- [Frozen Memory Is Not Enough: Rethinking External Memory as Extraction](https://arxiv.org/abs/2608.17050) · 2026 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-26；标签：reader adaptation
 
 - [MiniLM: Deep Self-Attention Distillation for Task-Agnostic Compression of Pre-Trained Transformers](https://arxiv.org/abs/2002.10957) · 2020 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18；标签：teacher-student attention distillation
 

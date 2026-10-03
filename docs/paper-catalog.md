@@ -1,6 +1,6 @@
 # 全库论文总目录
 
-共 162 个去重资源（159 篇论文、1 个代码仓库、2 篇官方博客）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
+共 164 个去重资源（161 篇论文、1 个代码仓库、2 篇官方博客）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
 
 身份核验、助手教学进度和用户阅读状态分开。历史来源保留原角色与证据局限，不将助手推荐写成用户提供，也不将教学完成写成用户已读。
 
@@ -199,7 +199,7 @@
 - [文献卡（尚无独立精读）](../llm/papers/arxiv-2607.29065/README.md)
 
 <a id="p017"></a>
-## p017 · Cross-Model Memory Transfer via Target-Side Reader Adaptation
+## p017 · Frozen Memory Is Not Enough: Rethinking External Memory as Extraction
 
 - 标识：arxiv:2608.17050
 - 原文 / 官方入口：https://arxiv.org/abs/2608.17050
@@ -1968,6 +1968,30 @@
 - 阅读范围：Relevant full-text sections reviewed, not exhaustive deep read
 - 用户阅读状态：unknown
 - [文献卡，暂无独立精读](../robotics-embodied/papers/fastrlap/README.md)
+
+<a id="p163"></a>
+## p163 · Resurrecting Recurrent Neural Networks for Long Sequences
+
+- 标识：arxiv:2303.06349
+- 原文 / 官方入口：https://arxiv.org/abs/2303.06349
+- 主题：llm/architecture
+- 来源：style-guide-relation-page-node
+- 身份核验：selected_sections_checked
+- 助手教学 / 阅读进度：文献卡，核对了方法相关章节
+- 用户阅读状态：unknown
+- [文献卡（尚无独立精读）](../llm/papers/arxiv-2303.06349/README.md)
+
+<a id="p164"></a>
+## p164 · Dissecting Recall of Factual Associations in Auto-Regressive Language Models
+
+- 标识：arxiv:2304.14767
+- 原文 / 官方入口：https://arxiv.org/abs/2304.14767
+- 主题：cross-domain/interpretability
+- 来源：style-guide-relation-page-node
+- 身份核验：selected_sections_checked
+- 助手教学 / 阅读进度：文献卡，核对了方法相关章节
+- 用户阅读状态：unknown
+- [文献卡（尚无独立精读）](../cross-domain/papers/arxiv-2304.14767/README.md)
 
 ## 2026年10月3日既有条目更新
 

@@ -7,5 +7,5 @@
 - [Qwen2.5-1M Technical Report](../../papers/qwen2.5-1m/README.md) · 2025 · 技术精读
 - [Mamba: Linear-Time Sequence Modeling with Selective State Spaces](../../papers/mamba/README.md) · 2023 · 技术精读
 - [Conditional Memory via Scalable Lookup: A New Axis of Sparsity for Large Language Models](../../papers/arxiv-2601.07372/README.md) · 2026 · 文献卡，暂无独立精读
-- [Cross-Model Memory Transfer via Target-Side Reader Adaptation](../../papers/arxiv-2608.17050/README.md) · 2026 · 文献卡，暂无独立精读
+- [Frozen Memory Is Not Enough: Rethinking External Memory as Extraction](../../papers/arxiv-2608.17050/README.md) · 2026 · 文献卡，暂无独立精读
 - [Attention Is All You Need](../../papers/transformer/README.md) · 2017 · 技术精读

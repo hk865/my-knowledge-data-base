@@ -8,6 +8,7 @@
 - [Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena](llm-judge/README.md) · 2023 · 技术精读
 - [In-context Learning and Induction Heads](arxiv-2209.11895/README.md) · 2022 · 文献卡，暂无独立精读
 - [Transformer Feed-Forward Layers Are Key-Value Memories](arxiv-2012.14913/README.md) · 2020 · 文献卡，暂无独立精读
+- [Dissecting Recall of Factual Associations in Auto-Regressive Language Models](arxiv-2304.14767/README.md) · 2023 · 文献卡，暂无独立精读
 - [Locating and Editing Factual Associations in GPT](arxiv-2202.05262/README.md) · 2022 · 文献卡，暂无独立精读
 - [INSPECT: Intrinsic and Systematic Probing Evaluation for Code Transformers](arxiv-2312.05092/README.md) · 2023 · 文献卡，暂无独立精读
 - [PersonaEval: Are LLM Evaluators Human Enough to Judge Role-Play?](arxiv-2508.10014/README.md) · 2025 · 文献卡，暂无独立精读

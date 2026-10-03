@@ -102,8 +102,8 @@
     },
     {
       "id": "ovla-15",
-      "claim": "基础组件开放权重，不公开完整原始训练数据和训练代码",
-      "locator": "p.2 footnote1; Sec.3.1 p.4",
+      "claim": "OpenVLA 公开模型权重、部署与微调 notebook 以及 PyTorch 训练代码库；脚注 1 所说未公开训练数据和代码的，是上游的 SigLIP、DinoV2 与 Llama 2 三个组件",
+      "locator": "Abstract; Sec.1; p.2 footnote1; Sec.3.1 p.4",
       "caveat": "不把OpenVLA开放声称扩大到从头重建所有基础模型"
     }
   ],

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "resource_id": "arxiv:2608.17050",
-  "title": "Cross-Model Memory Transfer via Target-Side Reader Adaptation",
+  "title": "Frozen Memory Is Not Enough: Rethinking External Memory as Extraction",
   "resource_kind": "paper",
   "canonical_folder": "llm/papers/arxiv-2608.17050",
   "official_url": "https://arxiv.org/abs/2608.17050",
@@ -27,5 +27,8 @@
   "evidence_paths": [],
   "topic_paths": [
     "llm/architecture"
+  ],
+  "previous_titles": [
+    "Cross-Model Memory Transfer via Target-Side Reader Adaptation"
   ]
 }

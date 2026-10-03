@@ -87,3 +87,6 @@ Zero WAM 如何把人类示范视频变成机器人动作,robotics-embodied/pape
 具身 Agents 从技能选择到持续执行的研究路线,robotics-embodied/roadmaps/embodied-agents.md
 大小模型草拟与验证：精确分布、质量判断与关键段接管,llm/fields/inference/draft-verification-guide.md
 2026年10月3日研究短报,daily/2026-10-03.md
+跨模块关系页索引,foundations/relations/README.md
+递推状态谱系,foundations/relations/recurrent-state.md
+注意力与 FFN 的分工谱系,foundations/relations/attention-ffn-division.md

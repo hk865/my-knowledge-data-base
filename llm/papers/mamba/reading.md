@@ -98,5 +98,3 @@ Mamba块把输入投影到扩展维度，一支经短因果卷积、SiLU和selec
 ## 图解文件与证据索引
 
 [SVG高清图](figures/mamba-mechanism.svg) · [SVG可编辑图](figures/mamba-mechanism.svg) · [结构化证据](../../../docs/deep-readings/evidence/mamba.json)
-
-来源类型：复用原目录 p009，保留原来源，不重复计数。

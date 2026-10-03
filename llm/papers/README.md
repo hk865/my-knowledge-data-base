@@ -22,10 +22,11 @@
 - [OLMo: Accelerating the Science of Language Models](arxiv-2402.00838/README.md) · 2024 · 文献卡，暂无独立精读
 - [DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](arxiv-2501.12948/README.md) · 2025 · 文献卡，暂无独立精读
 - [Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity](arxiv-2101.03961/README.md) · 2021 · 文献卡，暂无独立精读
+- [Resurrecting Recurrent Neural Networks for Long Sequences](arxiv-2303.06349/README.md) · 2023 · 文献卡，暂无独立精读
 - [DeepSeekMoE: Towards Ultimate Expert Specialization in Mixture-of-Experts Language Models](arxiv-2401.06066/README.md) · 2024 · 文献卡，暂无独立精读
 - [Conditional Memory via Scalable Lookup: A New Axis of Sparsity for Large Language Models](arxiv-2601.07372/README.md) · 2026 · 文献卡，暂无独立精读
 - [Tokenizer-Agnostic Engram Module](arxiv-2607.29065/README.md) · 2026 · 文献卡，暂无独立精读
-- [Cross-Model Memory Transfer via Target-Side Reader Adaptation](arxiv-2608.17050/README.md) · 2026 · 文献卡，暂无独立精读
+- [Frozen Memory Is Not Enough: Rethinking External Memory as Extraction](arxiv-2608.17050/README.md) · 2026 · 文献卡，暂无独立精读
 - [Forest-of-Thought: Scaling Test-Time Compute for Enhancing LLM Reasoning](arxiv-2412.09078/README.md) · 2024 · 文献卡，暂无独立精读
 - [Recursive Introspection: Teaching Language Model Agents How to Self-Improve](arxiv-2407.18219/README.md) · 2024 · 文献卡，暂无独立精读
 - [MiniLM: Deep Self-Attention Distillation for Task-Agnostic Compression of Pre-Trained Transformers](arxiv-2002.10957/README.md) · 2020 · 文献卡，暂无独立精读
