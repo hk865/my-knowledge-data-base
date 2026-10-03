@@ -98,11 +98,11 @@ $$
 
 假设模型要理解“他已经读完了”中的“他”。仅凭“他”的初始向量，只能知道这是一个代词，不能知道它在本句指谁。模型需要结合前面的“小林”等信息，形成“这个语境中的他”的新表示。
 
-一种办法是从左到右逐步处理，把已读内容压进一个状态，再交给下一个位置。循环神经网络采用了这种按序更新状态的思路。另一个历史问题出现在早期的编码器—解码器翻译模型中：编码器先把整个源句压成一个固定长度向量，解码器再依靠这个向量逐步生成译文。源句变长时，所有细节都要经过这一个信息瓶颈。
+一种办法是从左到右逐步处理，把已读内容压进一个状态，再交给下一个位置。循环神经网络采用了这种按序更新状态的思路。2014 年 Sutskever 等人的序列到序列模型把它用到翻译上：一个 LSTM 把整个源句读成一个固定长度向量，另一个 LSTM 再依靠这个向量逐步生成译文。[13] 源句变长时，所有细节都要经过这一个信息瓶颈。
 
-Bahdanau 等人提出的软对齐机制，让解码器在不同生成步骤，以不同权重读取源句不同位置的表示。其预印本发表于 2014 年，论文发表于 ICLR 2015。[2] 翻译到某个词时，可以重点读取与它有关的部分，而不必只依赖同一份固定句子摘要。这时的模型仍然包含循环网络；出现 attention，并不等于已经出现 Transformer。
+Bahdanau 等人在引言中把这个固定长度向量看作瓶颈，提出软对齐机制：解码器在不同生成步骤，以不同权重读取源句不同位置的表示。其预印本发表于 2014 年，论文发表于 ICLR 2015。[2] 翻译到某个词时，可以重点读取与它有关的部分，而不必只依赖同一份固定句子摘要。这时注意力是挂在循环网络上的读取模块，编码和解码本身仍要沿位置逐步递推。
 
-Transformer 在 2017 年进一步把注意力作为序列内部和序列之间交互的主体，减少沿着 token 位置一步步递推的计算。[3] 两个相距很远的位置，可以在一次允许它们互相访问的注意力计算中直接联系。这改变的是信息传递路径和计算组织方式，不保证模型一定能正确理解所有远距离关系。
+Transformer 在 2017 年处理的正是这个递推：循环模型沿位置逐步计算，同一个训练样本内部无法并行。它把注意力作为序列内部和序列之间交互的主体，减少沿着 token 位置一步步递推的计算。[3] 两个相距很远的位置，可以在一次允许它们互相访问的注意力计算中直接联系。这改变的是信息传递路径和计算组织方式，不保证模型一定能正确理解所有远距离关系。
 
 理解这段历史，只需要抓住一个实际需求：**当前位置需要的上下文应当随内容而变。** “他”可能要找人物，“读完”可能要找对象，而不是所有位置都拿同一个平均摘要。
 
@@ -806,7 +806,17 @@ $$
 
 堆叠并非机械重复同一组参数。通常不同层有不同参数；上一层得到的新表示，会成为下一层的输入，下一层再据此重新生成 QKV 和注意力权重。“他”的表示先融入某些人物信息后，后续层就可能基于这个更丰富的状态提出新的查询。
 
-也不应把模块职责硬划成“attention 只管语法、FFN 才存知识”。跨位置读取与局部非线性加工是可观察的计算差别；语法、事实和推理行为往往由参数与表示跨层协作形成，不能仅凭部件名字分配。
+FFN 本身也可以读成一次“按匹配程度读取内容”的操作，只是读取对象换成了固定参数。省去偏置，写成 $\operatorname{FFN}(x)=f(xW_1)W_2$。$W_1$ 的形状是 $d\times d_{\text{ff}}$，它的第 $i$ 列记作 $k_i$；$W_2$ 的形状是 $d_{\text{ff}}\times d$，它的第 $i$ 行记作 $v_i$。按矩阵乘法展开：
+
+$$
+\operatorname{FFN}(x)=\sum_{i=1}^{d_{\text{ff}}} f(x\cdot k_i)\,v_i
+$$
+
+这和注意力输出 $\sum_j A_j v_j$ 是同一种形式：$x\cdot k_i$ 是匹配分数，$f(x\cdot k_i)$ 是读取权重，$v_i$ 是被读取的内容。$W_1$ 的列相当于 key，$W_2$ 的行相当于 value，ReLU 代替了 softmax，权重也不再归一化。区别在于注意力的 key、value 由当前上下文的各位置临时算出，FFN 的 key、value 是训练后固定下来的参数。
+
+用 10.1 的手算例子验证：$W_1$ 的三列是 $k_1=[1,0]$、$k_2=[0,1]$、$k_3=[1,1]$，与 $x=[1,-2]$ 的匹配分数是 $[1,-2,-1]$，ReLU 后权重为 $[1,0,0]$；$W_2$ 的三行是 $v_1=[1,1]$、$v_2=[1,0]$、$v_3=[0,1]$。只有第一条记忆被读出，结果 $1\times v_1=[1,1]$，与 10.1 算出的 $\operatorname{FFN}(x)$ 相同。
+
+Geva 等人（2021）把这种读法称为键值记忆，并在一个 16 层、在 WikiText-103 上训练的语言模型里检查了每个 key 和 value：key 对应人能读懂的输入模式，低层偏字面的浅层模式，高层偏语义模式；value 在高层倾向于提高这些模式之后下一个词的概率。[14] 于是一个块里的两个子层有了一种训练中形成的分工倾向：注意力在位置之间搬运信息，FFN 在每个位置上用固定参数做键值查找。后续的可解释性研究把它推进为“事实主要存于 MLP，由注意力参与读出”（Geva 等 2023）；这条分工与 MoE 为什么多替换 FFN 之间的联系，以及相应的证据和判断，见[注意力与 FFN 的分工谱系](../../foundations/relations/attention-ffn-division.md)。
 
 ## 11. 最后的向量怎样变成下一个 token
 
@@ -932,9 +942,7 @@ $\prod$ 表示把各项相乘，竖线表示“在前面的 token 已知的条�
 
 ### 13.2 Decoder-only：用前缀不断预测后续
 
-典型 decoder-only 语言模型使用因果自注意力，依靠前缀预测后续 token。用户的指令、提供的资料和已生成回答可以放在同一串 token 中，后面的位置读取前面的信息。
-
-这里的“decoder-only”是架构家族名称。它不表示网络只能做“解码密码”，也不表示只能进行低层文字转换。不同任务可以被组织为条件文本生成，但效果仍取决于数据、目标、规模和训练，而非名字赋予的能力。
+典型 decoder-only 语言模型使用因果自注意力，依靠前缀预测后续 token。用户的指令、提供的资料和已生成回答可以放在同一串 token 中，后面的位置读取前面的信息。这样，翻译、问答、摘要都可以写成“给定前缀，生成后续文本”的同一种任务。
 
 还要区分：现代 decoder-only 块通常没有原始翻译模型 decoder 中的那一个独立 cross-attention 子层。所以“decoder 就是 encoder 加一个因果 mask”最多描述部分近似结构，不能准确概括原始 encoder–decoder 的完整 decoder。
 
@@ -984,6 +992,22 @@ ViT 将图像切成 patches，把每块像素整理成向量后线性映射为 t
 机器人系统中，也可以让当前本体状态形成 query，让地图单元提供 keys 和 values。某个 query 可以读取对当前动作更相关的地形信息。这与“用描述子找对应”有相似之处，但普通 attention 得到的是软信息混合，不自动给出严格几何对应，也没有自带的物理正确性保证。
 
 跨模态使用时，最重要的往往是输入单位怎样定义、时间如何同步、位置信息怎样表示，以及输出任务需要什么约束。把数据塞进相同矩阵形状，只解决了计算接口问题，没有自动解决任务建模问题。
+
+### 13.5 三条路线后来怎样了
+
+13.1–13.3 按信息可见性区分了三种结构。它们在历史上各自对应一个团队和一组目标，后来又发生了收敛：
+
+- 原始 Transformer（2017，Google）是 encoder–decoder，目标是 WMT14 机器翻译。在英→德任务上它得到 28.4 BLEU，比此前最好的集成模型高 2 BLEU 以上。[3]
+- GPT（2018，OpenAI）只保留 decoder 一侧：12 层、带掩码自注意力的 decoder-only Transformer。它先在 BooksCorpus 上做下一词预训练，再逐个任务微调，在 12 个数据集中的 9 个上达到当时最好。[15]
+- BERT（2018，Google）在引言里指出这种从左到右结构的问题：每个 token 只能看前面，对问答这类需要两侧上下文的任务不利。它改用 encoder-only 加遮蔽语言模型，在 GLUE 上平均 82.1 分，GPT 为 75.1 分。[6] 它的目标是 GLUE（一组句子级理解任务的合集）、SQuAD（从给定段落中找出答案片段）这类“读完输入，输出标签或片段”的 benchmark。
+- GPT-2（2019，OpenAI）继续 decoder-only，把问题换成：不改参数、不做微调（zero-shot），语言模型能完成多少下游任务。[16]
+- T5（2019，Google）在统一的文本到文本框架下系统比较了三种结构。在它的任务组合上，encoder–decoder 加去噪目标（把输入中随机的片段换成占位符，让模型生成被盖住的内容）在所有任务上都最好；只用 decoder 的语言模型，换哪种目标都不是最好。[7]
+- GPT-3（2020，OpenAI）把 decoder-only 扩到 1750 亿参数，在上下文里放几个示例就能完成新任务，不更新权重（in-context learning，上下文学习）。它在局限一节自述：只研究了自回归模型，没有双向结构和去噪目标，这可能是它在完形填空、需要回看比较两段文字的任务上较弱的原因。[17]
+- 2022 年，BigScience 的对照实验把这两种结论放进同一张表。只做无监督预训练、直接 zero-shot 评测时，因果 decoder-only 加下一词目标最好；再加多任务微调，用遮蔽目标训练的 encoder–decoder 最好。[18] 同年 Google 的 PaLM（5400 亿参数）采用 decoder-only，[19] 2023 年 Meta 的 LLaMA 同样是因果语言模型，并把权重开放给研究社区。[20]
+
+[判断] 通用大模型收敛到 decoder-only，原因是目标变了；T5 的比较在它自己的目标上仍然成立。T5 和 BERT 追求的是固定任务集合上的微调成绩；GPT-2 以后，目标变成不微调的 zero-shot 和 few-shot。BigScience 的实验显示，后一种目标上 decoder-only 占优，前一种目标上 encoder–decoder 占优。decoder-only 还有两个便利：任意文本都能用同一个下一词目标训练；训练形式与生成形式一致，12.2–12.4 讲的因果并行训练和 KV cache 都直接适用。
+
+[判断] OpenAI 从 GPT 到 GPT-3 一直押注 decoder-only 加扩大规模；Google 在 2018–2019 年用 BERT、T5 走另外两条路线，2022 年训练 PaLM 时也换成 decoder-only。同一团队换路线的时间，与领域目标从微调转向少样本的时间一致。支撑论文见文末批注。
 
 ## 14. 它为什么有用，成本又为什么会变大
 
@@ -1057,6 +1081,42 @@ Multi-Query Attention，即 MQA，让多个 query 头共享同一组 K/V；Group
 
 缓存复用的是稳定的来源表示，不是声称每一步“关注哪些位置”都不变。能分清这两者，就同时理解了 KV cache 的收益和它不能消除生成依赖的原因。
 
+## 17. 与其他概念的关系
+
+- `[结构]` **FFN 与注意力是同一种键值读取。** 10.4 节已经把 $\operatorname{FFN}(x)=f(xW_1)W_2$ 展开成 $\sum_i f(x\cdot k_i)v_i$，并用 10.1 的数字验证：$W_1$ 的列是 key，$W_2$ 的行是 value，key 和 value 是固定参数。Geva 等人在语言模型中检查了这些 key 与 value 的含义。[14] 这条关系向后延伸到事实定位、MoE 和 Engram，汇总在[注意力与 FFN 的分工谱系](../../foundations/relations/attention-ffn-division.md)。
+- `[结构]` **FFN 是核大小为 1 的卷积。** 原始论文 3.3 节就把逐位置 FFN 描述为两个核大小为 1 的卷积。[3] 用 [CNN 讲义](11-cnn.md) 第 3 节的公式验证：令核高、核宽都为 1，位置 $i$ 的输出是 $Z[i,o]=b[o]+\sum_c K[c,o]X[i,c]$，这正是对每一行做 $XW+b$。“逐位置”和“权重共享”是同一件事：每个位置都用同一套 $W_1,W_2$。
+- `[结构]` **ViT 的 patch 嵌入是核大小与步幅都为 16 的卷积。** 13.4 节把每个 $16\times16\times3$ 的块展开成 768 维再乘同一个矩阵 $E$。把 $E$ 的第 $o$ 列按 $16\times16\times3$ 重新排好，就是一个卷积核；块之间不重叠，相当于步幅 16。按 [CNN 讲义](11-cnn.md) 第 2 节的输出尺寸公式，$32\times32$ 的图像得到 $\lfloor(32-16)/16\rfloor+1=2$，即 $2\times2=4$ 个位置，与 13.4 节的四个 patch 一致。ViT 与 CNN 的差别因此集中在后续层：CNN 继续用局部核，ViT 让每个 patch 通过注意力读取所有 patch。CNN 讲义第 6 节写了两者在数据规模上的对照。
+- `[历史]` **残差连接来自 ResNet。** 原始论文 3.1 节在每个子层外加残差连接，并直接引用 He 等人的 ResNet。[3] ResNet 要解决的是网络加深后训练误差反而上升的退化问题（见 [CNN 讲义](11-cnn.md) 第 6 节），10.2 节的 $y=x+f(x)$ 就是同一个结构。
+- `[结构]` **线性注意力可以写成 RNN 式的状态递推。** 把相似度换成特征点积 $\phi(q)^\top\phi(k)$ 之后，因果读取可以改写为累积状态 $T_t=T_{t-1}+\phi(k_t)v_t^\top$ 的逐步更新，推导和一维算例见 [QKV 讲义](15-qkv-deep-dive.md) 第 10.1 节。它与 [RNN](12-rnn.md) 的状态更新属于同一类递推，整条谱系见[递推状态谱系](../../foundations/relations/recurrent-state.md)。
+- `[结构]` **注意力是带可学习匹配的核回归。** “用相似度给历史样本加权、平均它们的结果”就是 Nadaraya–Watson 核回归；Q、K 负责匹配，V 是被平均的结果。推导见 [QKV 讲义](15-qkv-deep-dive.md) 第 8 节。
+
+## 批注
+
+**易误读**
+
+- 10.4 节的“键值记忆”是对 FFN 计算形式的读法；key 与 value 的可解释性，是 Geva 等人在一个 16 层、WikiText-103 上训练的语言模型里的统计观察（原文第 3–4 节）。Geva 等 2023 进一步发现，读出事实的注意力头参数里也编码了主语到属性的映射，所以“FFN 存知识、注意力搬运”是训练形成的倾向，不是架构规定的边界，细节见[关系页](../../foundations/relations/attention-ffn-division.md)第 6 节。
+- T5 的“encoder–decoder 加去噪目标最好”，是在它的任务组合与微调设定下的结论（原文 3.2.4 节）；它与后来 decoder-only 在 zero-shot、few-shot 目标上占优并不矛盾（13.5 节）。
+- 13.5 节把 LLaMA 归入 decoder-only，依据是原文 2.4 节使用因果多头注意力、训练方式沿用 GPT-3 与 PaLM；原文本身没有用 decoder 一词。
+
+**判断的支撑论文（13.5 节）**
+
+- 目标改变决定收敛：T5 第 3.2.4 节（固定任务微调下 encoder–decoder 最好）；GPT-3 第 5 节（作者自述缺少双向结构与去噪目标的代价）；Wang 等 2022 第 4–5 节（同一实验中，zero-shot 时因果 decoder-only 最好，多任务微调后 encoder–decoder 最好）。
+- 团队路线：GPT（4.1 节）、GPT-2（2.3 节）、GPT-3（2.1 节）都沿用 decoder-only；Google 的 BERT、T5 之后，PaLM 第 2 节采用 decoder-only。
+- 两种判断都只依据这几篇论文；“训练形式与生成形式一致”属于工程上的解释，没有哪篇论文做过单独的对照实验。
+
+**与其他论文的关联**
+
+- [Attention Is All You Need 精读](../../llm/papers/transformer/README.md)：本讲义第 2、13.5 节中 encoder–decoder 节点的原文。
+- [GPT-3 精读](../../llm/papers/gpt3/README.md)：13.5 节 decoder-only 加规模这条路线的节点，其局限一节是“收敛原因”判断的直接证据。
+- [ViT](../../multimodal/papers/vit/README.md)：第 17 节 patch 嵌入与卷积关系的原文。
+- [FFN 键值记忆（Geva 等 2021）](../../cross-domain/papers/arxiv-2012.14913/README.md) 与 [Dissecting Recall（Geva 等 2023）](../../cross-domain/papers/arxiv-2304.14767/README.md)：10.4 节结构对应的经验证据，以及“由注意力参与读出”的补充。
+- [架构方向入门页](../../foundations/fields/architectures/README.md)：把本讲义 13.5 节和 CNN 讲义第 6 节合成一张领域地图，并附逐篇综合表。
+
+**未核实 / 待验证**
+
+- GPT-2 完整模型的发布时间线：论文正文只给出小模型代码链接，代码仓库 README 说明是分阶段发布，OpenAI 博客原文未能打开。
+- PaLM 自述局限各条的精确节号。
+
 ## 参考文献
 
 以下是机制与历史说明所依据的原始论文。正文中的手算矩阵、教学句子和数值练习是为解释运算而构造的例子，不是论文实验结果。首次阅读不需要跳出正文；读完后可按需要核查原文。
@@ -1084,6 +1144,22 @@ Multi-Query Attention，即 MQA，让多个 query 头共享同一组 K/V；Group
 [11] Tri Dao, Daniel Y. Fu, Stefano Ermon, Atri Rudra, Christopher Ré. “FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness.” Advances in Neural Information Processing Systems 35, 2022. [论文原文](https://arxiv.org/abs/2205.14135)
 
 [12] Ruibin Xiong, Yunchang Yang, Di He, Kai Zheng, Shuxin Zheng, Chen Xing, Huishuai Zhang, Yanyan Lan, Liwei Wang, Tieyan Liu. “On Layer Normalization in the Transformer Architecture.” Proceedings of the 37th International Conference on Machine Learning, PMLR 119:10524–10533, 2020. [论文页面](https://proceedings.mlr.press/v119/xiong20b.html)
+
+[13] Ilya Sutskever, Oriol Vinyals, Quoc V. Le. “Sequence to Sequence Learning with Neural Networks.” arXiv:1409.3215, 2014. [论文原文](https://arxiv.org/abs/1409.3215)
+
+[14] Mor Geva, Roei Schuster, Jonathan Berant, Omer Levy. “Transformer Feed-Forward Layers Are Key-Value Memories.” EMNLP, 2021; arXiv 预印本发表于 2020 年. 重点对应第 2–5 节. [论文原文](https://arxiv.org/abs/2012.14913)
+
+[15] Alec Radford, Karthik Narasimhan, Tim Salimans, Ilya Sutskever. “Improving Language Understanding by Generative Pre-Training.” OpenAI, 2018. [论文原文](https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf)
+
+[16] Alec Radford, Jeffrey Wu, Rewon Child, David Luan, Dario Amodei, Ilya Sutskever. “Language Models are Unsupervised Multitask Learners.” OpenAI, 2019. [论文原文](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)
+
+[17] Tom B. Brown 等. “Language Models are Few-Shot Learners.” arXiv:2005.14165, 2020. 重点对应第 2 节与第 5 节. [论文原文](https://arxiv.org/abs/2005.14165)
+
+[18] Thomas Wang 等. “What Language Model Architecture and Pretraining Objective Work Best for Zero-Shot Generalization?” arXiv:2204.05832, 2022. [论文原文](https://arxiv.org/abs/2204.05832)
+
+[19] Aakanksha Chowdhery 等. “PaLM: Scaling Language Modeling with Pathways.” arXiv:2204.02311, 2022. [论文原文](https://arxiv.org/abs/2204.02311)
+
+[20] Hugo Touvron 等. “LLaMA: Open and Efficient Foundation Language Models.” arXiv:2302.13971, 2023. [论文原文](https://arxiv.org/abs/2302.13971)
 
 ## 读后导航
 
