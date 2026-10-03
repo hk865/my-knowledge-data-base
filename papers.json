@@ -400,7 +400,8 @@
   },
   {
     "original_chat_urls": [
-      "https://arxiv.org/abs/2412.19437"
+      "https://arxiv.org/abs/2412.19437",
+      "https://arxiv.org/html/2412.19437v2"
     ],
     "id": "arxiv:2412.19437",
     "title": "DeepSeek-V3 Technical Report",
@@ -412,14 +413,16 @@
       "llm/posttraining/sft",
       "llm/pretraining",
       "llm/architecture",
-      "llm/posttraining/rl"
+      "llm/posttraining/rl",
+      "llm/inference"
     ],
     "detail_topics": [
       "pretraining/multi-token prediction",
       "architecture/MoE",
       "architecture/MLA",
       "posttraining/SFT",
-      "posttraining/RL"
+      "posttraining/RL",
+      "MTP草拟与验证接口"
     ],
     "architecture_tags": [],
     "supervision_tags": [
@@ -428,7 +431,8 @@
       "reinforcement learning"
     ],
     "provenance": [
-      "assistant-provided-exact-link"
+      "assistant-provided-exact-link",
+      "historical_assistant_recommendation"
     ],
     "chat_evidence": [
       {
@@ -436,10 +440,16 @@
         "role": "assistant",
         "evidence": "Prior assistant message explicitly linked https://arxiv.org/abs/2412.19437; recovered through historical conversation retrieval.",
         "evidence_type": "检索结果摘要，不是原始聊天逐字引文；无可打开的原会话链接"
+      },
+      {
+        "date": "2026-10-03T04:17:45Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接"
       }
     ],
     "verification_sources": [
-      "https://arxiv.org/abs/2412.19437"
+      "https://arxiv.org/abs/2412.19437",
+      "https://arxiv.org/html/2412.19437v2"
     ],
     "verification_status": "verified_primary_title_and_identifier",
     "caveats": [
@@ -458,7 +468,16 @@
     "canonical_readme": "llm/papers/arxiv-2412.19437/README.md",
     "source_path": "llm/papers/arxiv-2412.19437/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "verification_2026_10_03": {
+      "reading_scope": "§2.2 MTP、§5.4.3 Multi-Token Prediction Evaluation；不是技术报告全文阅读",
+      "mechanism_summary": "顺序 MTP 模块融合前一深度表示与后续 token embedding，共享 embedding 和输出头，保留因果链；主目标是增强训练，推理可丢弃模块或将其作为草拟模块复用。",
+      "evidence_boundary": "不能写成独立小模型给任意大模型做 draft，也不能写成多个独立预测头；报告实验第二 token 接受率 85–90%、1.8× TPS 为特定配置。",
+      "distribution_guarantee": "MTP 本身不构成精确分布保证；与标准验证结合才可",
+      "read_version": "v2 2025-02-18",
+      "verification_status": "official_identity_and_selected_method_sections_verified",
+      "source_origin": "historical_assistant_recommendation"
+    }
   },
   {
     "original_chat_urls": [
@@ -10099,5 +10118,1118 @@
     "source_path": "cross-domain/papers/arxiv-1503.02531/source.json",
     "legacy_paths": [],
     "content_kind": "bibliographic_card"
+  },
+  {
+    "id": "arxiv:2211.17192",
+    "title": "Fast Inference from Transformers via Speculative Decoding",
+    "url": "https://arxiv.org/abs/2211.17192",
+    "arxiv_id": "2211.17192",
+    "doi": "10.48550/arXiv.2211.17192",
+    "year": "2022",
+    "resource_kind": "paper",
+    "topic_paths": [
+      "llm/inference"
+    ],
+    "detail_topics": [
+      "精确目标分布与投机验证"
+    ],
+    "reading_status": "selected_method_sections_checked_not_full_read",
+    "reading_scope": "方法 §2.1–2.3、Algorithm 1；未逐行复核附录证明",
+    "mechanism_summary": "小模型顺序草拟 K 个 token；大模型并行计算 K+1 个条件分布；从左向右按 min(1,target/draft) 接受。首拒绝处丢弃后缀，按归一化 max(target−draft,0) 补一个 token；全接受则从目标末位分布再采一个尾 token。",
+    "evidence_boundary": "必须能访问两者分布并使用兼容 token 空间；收益取决于接受率、draft 开销与硬件；相同分布不代表相同随机种子的逐字输出。",
+    "distribution_guarantee": "精确目标分布（理想算术），不是语义判卷",
+    "read_version": "v2 2023-05-18; ICML 2023 / PMLR 202:19274–19286, 2023-07-23–29",
+    "verification_status": "official_identity_and_selected_method_sections_verified",
+    "verification_sources": [
+      "https://arxiv.org/abs/2211.17192",
+      "https://arxiv.org/html/2211.17192v2"
+    ],
+    "original_chat_urls": [
+      "https://proceedings.mlr.press/v202/leviathan23a.html"
+    ],
+    "source_origin": "historical_assistant_recommendation",
+    "user_reading_status": "unknown",
+    "content_kind": "bibliographic_card",
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "independently_reproduced": false,
+    "checked_at": "2026-10-03",
+    "method_tags": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "evaluation_tags": [],
+    "modality_tags": [],
+    "task_tags": [],
+    "caveats": [
+      "必须能访问两者分布并使用兼容 token 空间；收益取决于接受率、draft 开销与硬件；相同分布不代表相同随机种子的逐字输出。"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-03T04:17:45Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接"
+      }
+    ],
+    "canonical_folder": "llm/papers/arxiv-2211.17192",
+    "canonical_path": "llm/papers/arxiv-2211.17192/README.md",
+    "canonical_readme": "llm/papers/arxiv-2211.17192/README.md",
+    "source_path": "llm/papers/arxiv-2211.17192/source.json",
+    "legacy_paths": [],
+    "catalog_anchor": "p144"
+  },
+  {
+    "id": "arxiv:2302.01318",
+    "title": "Accelerating Large Language Model Decoding with Speculative Sampling",
+    "url": "https://arxiv.org/abs/2302.01318",
+    "arxiv_id": "2302.01318",
+    "doi": "10.48550/arXiv.2302.01318",
+    "year": "2023",
+    "resource_kind": "paper",
+    "topic_paths": [
+      "llm/inference"
+    ],
+    "detail_topics": [
+      "精确目标分布与投机验证"
+    ],
+    "reading_status": "selected_method_sections_checked_not_full_read",
+    "reading_scope": "Algorithm 2、§4.1–4.2、§5、§6.1；未逐行复核证明",
+    "mechanism_summary": "与 Leviathan 独立同期提出同一核心拒绝采样机制；明确 K+1 logits 并行验草稿、首拒绝残差重采样、全接受 bonus token。分布先应用 temperature/top-k/nucleus 再验证。",
+    "evidence_boundary": "论文 p=draft、q=target，与 Leviathan 符号相反；低 batch、memory-bound 是批验接近单步成本的条件；benchmark 提升不是通用常数。",
+    "distribution_guarantee": "精确目标分布，论文限定 hardware numerics",
+    "read_version": "v1 2023-02-02",
+    "verification_status": "official_identity_and_selected_method_sections_verified",
+    "verification_sources": [
+      "https://arxiv.org/abs/2302.01318",
+      "https://arxiv.org/html/2302.01318v1"
+    ],
+    "original_chat_urls": [
+      "https://arxiv.org/html/2302.01318v1"
+    ],
+    "source_origin": "historical_assistant_recommendation",
+    "user_reading_status": "unknown",
+    "content_kind": "bibliographic_card",
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "independently_reproduced": false,
+    "checked_at": "2026-10-03",
+    "method_tags": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "evaluation_tags": [],
+    "modality_tags": [],
+    "task_tags": [],
+    "caveats": [
+      "论文 p=draft、q=target，与 Leviathan 符号相反；低 batch、memory-bound 是批验接近单步成本的条件；benchmark 提升不是通用常数。"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-03T04:17:45Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接"
+      }
+    ],
+    "canonical_folder": "llm/papers/arxiv-2302.01318",
+    "canonical_path": "llm/papers/arxiv-2302.01318/README.md",
+    "canonical_readme": "llm/papers/arxiv-2302.01318/README.md",
+    "source_path": "llm/papers/arxiv-2302.01318/source.json",
+    "legacy_paths": [],
+    "catalog_anchor": "p145"
+  },
+  {
+    "id": "arxiv:2503.01840",
+    "title": "EAGLE-3: Scaling up Inference Acceleration of Large Language Models via Training-Time Test",
+    "url": "https://arxiv.org/abs/2503.01840",
+    "arxiv_id": "2503.01840",
+    "doi": "10.48550/arXiv.2503.01840",
+    "year": "2025",
+    "resource_kind": "paper",
+    "topic_paths": [
+      "llm/inference"
+    ],
+    "detail_topics": [
+      "精确目标分布与投机验证"
+    ],
+    "reading_status": "selected_method_sections_checked_not_full_read",
+    "reading_scope": "§2.1–2.2、§3.1；训练细节未全文核验",
+    "mechanism_summary": "融合目标低/中/高层特征，经 FC 压缩，与采样 token embedding 一起输入轻量 decoder；直接预测 token，自回归后续步使用 draft 输出替代尚未取得的 target 特征；采用动态 draft tree 和 tree attention 并行验证。",
+    "evidence_boundary": "需训练目标专用 drafter 并访问内部特征；不是任意黑箱小模型 API；本轮未重现实验。",
+    "distribution_guarantee": "沿用精确 speculative verification",
+    "read_version": "恢复 v1 2025-03-03；最新 v3 2025-04-23",
+    "verification_status": "official_identity_and_selected_method_sections_verified",
+    "verification_sources": [
+      "https://arxiv.org/abs/2503.01840",
+      "https://arxiv.org/html/2503.01840v1"
+    ],
+    "original_chat_urls": [
+      "https://arxiv.org/html/2503.01840v1"
+    ],
+    "source_origin": "historical_assistant_recommendation",
+    "user_reading_status": "unknown",
+    "content_kind": "bibliographic_card",
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "independently_reproduced": false,
+    "checked_at": "2026-10-03",
+    "method_tags": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "evaluation_tags": [],
+    "modality_tags": [],
+    "task_tags": [],
+    "caveats": [
+      "需训练目标专用 drafter 并访问内部特征；不是任意黑箱小模型 API；本轮未重现实验。"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-03T04:17:45Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接"
+      }
+    ],
+    "canonical_folder": "llm/papers/arxiv-2503.01840",
+    "canonical_path": "llm/papers/arxiv-2503.01840/README.md",
+    "canonical_readme": "llm/papers/arxiv-2503.01840/README.md",
+    "source_path": "llm/papers/arxiv-2503.01840/source.json",
+    "legacy_paths": [],
+    "catalog_anchor": "p146"
+  },
+  {
+    "id": "arxiv:2602.06036",
+    "title": "DFlash: Block Diffusion for Flash Speculative Decoding",
+    "url": "https://arxiv.org/abs/2602.06036",
+    "arxiv_id": "2602.06036",
+    "doi": "10.48550/arXiv.2602.06036",
+    "year": "2026",
+    "resource_kind": "paper",
+    "topic_paths": [
+      "llm/inference"
+    ],
+    "detail_topics": [
+      "精确目标分布与投机验证"
+    ],
+    "reading_status": "selected_method_sections_checked_not_full_read",
+    "reading_scope": "§3、§4.1–4.2、Table 1；未审实现级验证代码",
+    "mechanism_summary": "小型 block diffusion 一次前向并行填整块 mask；融合目标多层 hidden states，并注入每一 draft 层的 K/V、缓存复用；以目标 bonus token 为块起点。",
+    "evidence_boundary": "需 target 内部特征与专门训练；不是“无需验证的 diffusion”；加速表随模型/任务/温度变化。",
+    "distribution_guarantee": "论文宣称 lossless；本轮确认草拟方法，未独立审计验证实现",
+    "read_version": "恢复 v1 2026-02-05；最新 v2 2026-05-28（ICML 2026 camera-ready）",
+    "verification_status": "official_identity_and_selected_method_sections_verified",
+    "verification_sources": [
+      "https://arxiv.org/abs/2602.06036",
+      "https://arxiv.org/html/2602.06036v1"
+    ],
+    "original_chat_urls": [
+      "https://arxiv.org/html/2602.06036v1"
+    ],
+    "source_origin": "historical_assistant_recommendation",
+    "user_reading_status": "unknown",
+    "content_kind": "bibliographic_card",
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "independently_reproduced": false,
+    "checked_at": "2026-10-03",
+    "method_tags": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "evaluation_tags": [],
+    "modality_tags": [],
+    "task_tags": [],
+    "caveats": [
+      "需 target 内部特征与专门训练；不是“无需验证的 diffusion”；加速表随模型/任务/温度变化。"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-03T04:17:45Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接"
+      }
+    ],
+    "canonical_folder": "llm/papers/arxiv-2602.06036",
+    "canonical_path": "llm/papers/arxiv-2602.06036/README.md",
+    "canonical_readme": "llm/papers/arxiv-2602.06036/README.md",
+    "source_path": "llm/papers/arxiv-2602.06036/source.json",
+    "legacy_paths": [],
+    "catalog_anchor": "p147"
+  },
+  {
+    "id": "arxiv:2302.07863",
+    "title": "Speculative Decoding with Big Little Decoder",
+    "url": "https://arxiv.org/abs/2302.07863",
+    "arxiv_id": "2302.07863",
+    "doi": "10.48550/arXiv.2302.07863",
+    "year": "2023",
+    "resource_kind": "paper",
+    "topic_paths": [
+      "llm/inference"
+    ],
+    "detail_topics": [
+      "近似质量协作与关键段接管"
+    ],
+    "reading_status": "selected_method_sections_checked_not_full_read",
+    "reading_scope": "§3.2–3.4、§2.3 对比与实验摘要",
+    "mechanism_summary": "fallback：小模型最大预测概率低于阈值才调用大模型；大模型并行回看已有草稿；rollback：找到分布距离超阈值的最早位置，删除该处及后缀并由大模型替换。",
+    "evidence_boundary": "小模型过度自信仍可能出错；rollback 有重算成本；阈值需要任务权衡。",
+    "distribution_guarantee": "阈值质量—延迟折中，不保大模型原分布",
+    "read_version": "v4 2023-10-12; NeurIPS 2023",
+    "verification_status": "official_identity_and_selected_method_sections_verified",
+    "verification_sources": [
+      "https://arxiv.org/abs/2302.07863",
+      "https://arxiv.org/html/2302.07863v4"
+    ],
+    "original_chat_urls": [
+      "https://arxiv.org/html/2302.07863v4"
+    ],
+    "source_origin": "historical_assistant_recommendation",
+    "user_reading_status": "unknown",
+    "content_kind": "bibliographic_card",
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "independently_reproduced": false,
+    "checked_at": "2026-10-03",
+    "method_tags": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "evaluation_tags": [],
+    "modality_tags": [],
+    "task_tags": [],
+    "caveats": [
+      "小模型过度自信仍可能出错；rollback 有重算成本；阈值需要任务权衡。"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-03T04:17:45Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接"
+      }
+    ],
+    "canonical_folder": "llm/papers/arxiv-2302.07863",
+    "canonical_path": "llm/papers/arxiv-2302.07863/README.md",
+    "canonical_readme": "llm/papers/arxiv-2302.07863/README.md",
+    "source_path": "llm/papers/arxiv-2302.07863/source.json",
+    "legacy_paths": [],
+    "catalog_anchor": "p148"
+  },
+  {
+    "id": "arxiv:2601.05167",
+    "title": "RelayLLM: Efficient Reasoning via Collaborative Decoding",
+    "url": "https://arxiv.org/abs/2601.05167",
+    "arxiv_id": "2601.05167",
+    "doi": "10.48550/arXiv.2601.05167",
+    "year": "2026",
+    "resource_kind": "paper",
+    "topic_paths": [
+      "llm/inference"
+    ],
+    "detail_topics": [
+      "近似质量协作与关键段接管"
+    ],
+    "reading_status": "selected_method_sections_checked_not_full_read",
+    "reading_scope": "§2.1–2.3、训练流程摘要；未全文审训练消融",
+    "mechanism_summary": "小模型输出 <call>n</call> 暂停，交给大模型续写 n token（或 EOS 提前结束）；调用标记从大模型上下文删除，小模型保留标记及大模型续写后接回；warm-up+GRPO 学习求助。",
+    "evidence_boundary": "大模型在接管时真实生成，不是批量裁决所有小模型 token；训练及数学 benchmark 范围有限；低调用比例不等于通用端到端省时比例。",
+    "distribution_guarantee": "经验准确率—调用成本折中，无精确目标分布保证",
+    "read_version": "无版本 URL 当前解析 v1 2026-01-08",
+    "verification_status": "official_identity_and_selected_method_sections_verified",
+    "verification_sources": [
+      "https://arxiv.org/abs/2601.05167",
+      "https://arxiv.org/html/2601.05167"
+    ],
+    "original_chat_urls": [
+      "https://arxiv.org/html/2601.05167"
+    ],
+    "source_origin": "historical_assistant_recommendation",
+    "user_reading_status": "unknown",
+    "content_kind": "bibliographic_card",
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "independently_reproduced": false,
+    "checked_at": "2026-10-03",
+    "method_tags": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "evaluation_tags": [],
+    "modality_tags": [],
+    "task_tags": [],
+    "caveats": [
+      "大模型在接管时真实生成，不是批量裁决所有小模型 token；训练及数学 benchmark 范围有限；低调用比例不等于通用端到端省时比例。"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-03T04:17:45Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接"
+      }
+    ],
+    "canonical_folder": "llm/papers/arxiv-2601.05167",
+    "canonical_path": "llm/papers/arxiv-2601.05167/README.md",
+    "canonical_readme": "llm/papers/arxiv-2601.05167/README.md",
+    "source_path": "llm/papers/arxiv-2601.05167/source.json",
+    "legacy_paths": [],
+    "catalog_anchor": "p149"
+  },
+  {
+    "id": "arxiv:2501.19309",
+    "title": "Judge Decoding: Faster Speculative Sampling Requires Going Beyond Model Alignment",
+    "url": "https://arxiv.org/abs/2501.19309",
+    "arxiv_id": "2501.19309",
+    "doi": "10.48550/arXiv.2501.19309",
+    "year": "2025",
+    "resource_kind": "paper",
+    "topic_paths": [
+      "llm/inference"
+    ],
+    "detail_topics": [
+      "近似质量协作与关键段接管"
+    ],
+    "reading_status": "selected_method_sections_checked_not_full_read",
+    "reading_scope": "§4.1、§5.1、Table 1",
+    "mechanism_summary": "在冻结目标模型最后 hidden embedding 上训练线性 judge head，预测当前草稿 token 正确性；标准 SD 接受 mask 与 judge 阈值接受 mask 作 OR。δ=1 才退化回标准 SD。",
+    "evidence_boundary": "judge 可误接受；论文明确必须测生成质量；8B/405B 的 9.7× 是 HuggingFace 基线，优化 GPT-fast 对照为 3.9×，不可混用。",
+    "distribution_guarantee": "放宽接受规则，经验质量保持，不保目标原分布",
+    "read_version": "v1 2025-01-31",
+    "verification_status": "official_identity_and_selected_method_sections_verified",
+    "verification_sources": [
+      "https://arxiv.org/abs/2501.19309",
+      "https://arxiv.org/html/2501.19309v1"
+    ],
+    "original_chat_urls": [
+      "https://arxiv.org/html/2501.19309v1"
+    ],
+    "source_origin": "historical_assistant_recommendation",
+    "user_reading_status": "unknown",
+    "content_kind": "bibliographic_card",
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "independently_reproduced": false,
+    "checked_at": "2026-10-03",
+    "method_tags": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "evaluation_tags": [],
+    "modality_tags": [],
+    "task_tags": [],
+    "caveats": [
+      "judge 可误接受；论文明确必须测生成质量；8B/405B 的 9.7× 是 HuggingFace 基线，优化 GPT-fast 对照为 3.9×，不可混用。"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-03T04:17:45Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接"
+      }
+    ],
+    "canonical_folder": "llm/papers/arxiv-2501.19309",
+    "canonical_path": "llm/papers/arxiv-2501.19309/README.md",
+    "canonical_readme": "llm/papers/arxiv-2501.19309/README.md",
+    "source_path": "llm/papers/arxiv-2501.19309/source.json",
+    "legacy_paths": [],
+    "catalog_anchor": "p150"
+  },
+  {
+    "id": "url:https://inco.ai/blog/dflash2",
+    "title": "DFlash 2: Keep Drafting Parallel",
+    "url": "https://inco.ai/blog/dflash2/",
+    "arxiv_id": null,
+    "doi": null,
+    "year": "2026",
+    "resource_kind": "official_blog",
+    "topic_paths": [
+      "llm/inference"
+    ],
+    "detail_topics": [
+      "精确目标分布与投机验证"
+    ],
+    "reading_status": "selected_method_sections_checked_not_full_read",
+    "reading_scope": "官方博客 path selector 和 local convolution 方法段；非同行评议全文",
+    "mechanism_summary": "每位置保留 top-16 候选，并行算相邻候选双线性分数，再沿预计算分数选/采路径；加两点动态 depthwise convolution 改善块尾局部依赖，不改验证。",
+    "evidence_boundary": "厂商自报结果；不是 DFlash arXiv v2 的同义名称；博客称 DFlash January 发布而 arXiv v1 为 February，不能混作同一日期。",
+    "distribution_guarantee": "官方称 rejection sampling 恢复精确目标分布；未审代码证明",
+    "read_version": "官方博客，无 arXiv/DOI 在该页核实",
+    "verification_status": "official_identity_and_selected_method_sections_verified",
+    "verification_sources": [
+      "https://inco.ai/blog/dflash2/"
+    ],
+    "original_chat_urls": [
+      "https://inco.ai/blog/dflash2/"
+    ],
+    "source_origin": "historical_assistant_recommendation",
+    "user_reading_status": "unknown",
+    "content_kind": "bibliographic_card",
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "independently_reproduced": false,
+    "checked_at": "2026-10-03",
+    "method_tags": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "evaluation_tags": [],
+    "modality_tags": [],
+    "task_tags": [],
+    "caveats": [
+      "厂商自报结果；不是 DFlash arXiv v2 的同义名称；博客称 DFlash January 发布而 arXiv v1 为 February，不能混作同一日期。"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-03T04:17:45Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接"
+      }
+    ],
+    "canonical_folder": "llm/papers/dflash-2",
+    "canonical_path": "llm/papers/dflash-2/README.md",
+    "canonical_readme": "llm/papers/dflash-2/README.md",
+    "source_path": "llm/papers/dflash-2/source.json",
+    "legacy_paths": [],
+    "catalog_anchor": "p151"
+  },
+  {
+    "id": "arxiv:2405.19261",
+    "title": "Faster Cascades via Speculative Decoding",
+    "url": "https://arxiv.org/abs/2405.19261",
+    "arxiv_id": "2405.19261",
+    "doi": "10.48550/arXiv.2405.19261",
+    "year": "2024",
+    "resource_kind": "paper",
+    "topic_paths": [
+      "llm/inference"
+    ],
+    "detail_topics": [
+      "近似质量协作与关键段接管"
+    ],
+    "reading_status": "selected_method_sections_checked_not_full_read",
+    "reading_scope": "§4.1–4.3、Algorithms 4–5、Lemma 3–5；未逐行审全部证明",
+    "mechanism_summary": "令 π=(1−r)q+r p，用 min(1,π/q) 接受与 max(π−q,0) 残差补采；批量算大模型后应用 deferral。最优规则把质量收益与 TV 距离导致的拒绝成本权衡，实际用概率峰值作 plug-in 估计。",
+    "evidence_boundary": "有理论目标与估计误差界，不等于所有任务质量不降；r 选择改变输出分布。",
+    "distribution_guarantee": "精确采样所定义的混合/级联分布 π；不一般等于大模型 p",
+    "read_version": "v2 2024-10-21",
+    "verification_status": "official_identity_and_selected_method_sections_verified",
+    "verification_sources": [
+      "https://arxiv.org/abs/2405.19261",
+      "https://arxiv.org/html/2405.19261v2"
+    ],
+    "original_chat_urls": [
+      "https://arxiv.org/html/2405.19261v2"
+    ],
+    "source_origin": "historical_assistant_recommendation",
+    "user_reading_status": "unknown",
+    "content_kind": "bibliographic_card",
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "independently_reproduced": false,
+    "checked_at": "2026-10-03",
+    "method_tags": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "evaluation_tags": [],
+    "modality_tags": [],
+    "task_tags": [],
+    "caveats": [
+      "有理论目标与估计误差界，不等于所有任务质量不降；r 选择改变输出分布。"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-03T04:17:45Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接"
+      }
+    ],
+    "canonical_folder": "llm/papers/arxiv-2405.19261",
+    "canonical_path": "llm/papers/arxiv-2405.19261/README.md",
+    "canonical_readme": "llm/papers/arxiv-2405.19261/README.md",
+    "source_path": "llm/papers/arxiv-2405.19261/source.json",
+    "legacy_paths": [],
+    "catalog_anchor": "p152"
+  },
+  {
+    "id": "arxiv:2010.11251",
+    "title": "Learning Quadrupedal Locomotion over Challenging Terrain",
+    "url": "https://arxiv.org/abs/2010.11251",
+    "arxiv_id": "2010.11251",
+    "doi": "10.1126/scirobotics.abc5986",
+    "year": "2020",
+    "resource_kind": "paper",
+    "authors": "Joonho Lee; Jemin Hwangbo; Lorenz Wellhausen; Vladlen Koltun; Marco Hutter",
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [
+      "风险敏感策略与恢复控制"
+    ],
+    "reading_status": "identity_and_abstract_checked_not_full_read",
+    "reading_scope": "官方身份与摘要核验；未完成全文精读",
+    "mechanism_summary": "鲁棒本体感知步态的背景文献；摘要支持复杂地形泛化，不直接验证持续受阻后的脱困或递增惩罚。",
+    "evidence_boundary": "未独立复现实验；摘要级证据不扩大为完整方法或实验结论。",
+    "verification_status": "official_page_identity_and_abstract_verified",
+    "verification_sources": [
+      "https://arxiv.org/abs/2010.11251"
+    ],
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2010.11251"
+    ],
+    "source_origin": "historical_assistant_recommendation",
+    "related_paper": null,
+    "user_reading_status": "unknown",
+    "content_kind": "bibliographic_card",
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "independently_reproduced": false,
+    "checked_at": "2026-10-03",
+    "method_tags": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "evaluation_tags": [],
+    "modality_tags": [],
+    "task_tags": [],
+    "caveats": [
+      "未独立复现实验；摘要级证据不扩大为完整方法或实验结论。"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-02T10:57:55Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接"
+      }
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2010.11251",
+    "canonical_path": "robotics-embodied/papers/arxiv-2010.11251/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2010.11251/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2010.11251/source.json",
+    "legacy_paths": [],
+    "catalog_anchor": "p153"
+  },
+  {
+    "id": "arxiv:1901.07517",
+    "title": "Robust Recovery Controller for a Quadrupedal Robot using Deep Reinforcement Learning",
+    "url": "https://arxiv.org/abs/1901.07517",
+    "arxiv_id": "1901.07517",
+    "doi": null,
+    "year": "2019",
+    "resource_kind": "paper",
+    "authors": "Joonho Lee; Jemin Hwangbo; Marco Hutter",
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [
+      "风险敏感策略与恢复控制"
+    ],
+    "reading_status": "identity_and_abstract_checked_not_full_read",
+    "reading_scope": "官方身份与摘要核验；未完成全文精读",
+    "mechanism_summary": "跌倒起身恢复：3个行为策略和1个选择器分别训练；与站立受阻后的脱困有差异。摘要报告ANYmal恢复试验，不能外推为当前策略的保证。",
+    "evidence_boundary": "未独立复现实验；摘要级证据不扩大为完整方法或实验结论。",
+    "verification_status": "official_page_identity_and_abstract_verified",
+    "verification_sources": [
+      "https://arxiv.org/abs/1901.07517"
+    ],
+    "original_chat_urls": [
+      "https://arxiv.org/abs/1901.07517"
+    ],
+    "source_origin": "historical_assistant_recommendation",
+    "related_paper": null,
+    "user_reading_status": "unknown",
+    "content_kind": "bibliographic_card",
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "independently_reproduced": false,
+    "checked_at": "2026-10-03",
+    "method_tags": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "evaluation_tags": [],
+    "modality_tags": [],
+    "task_tags": [],
+    "caveats": [
+      "未独立复现实验；摘要级证据不扩大为完整方法或实验结论。"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-02T10:57:55Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接"
+      }
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-1901.07517",
+    "canonical_path": "robotics-embodied/papers/arxiv-1901.07517/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-1901.07517/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-1901.07517/source.json",
+    "legacy_paths": [],
+    "catalog_anchor": "p154"
+  },
+  {
+    "id": "arxiv:2010.15920",
+    "title": "Recovery RL: Safe Reinforcement Learning With Learned Recovery Zones",
+    "url": "https://ieeexplore.ieee.org/document/9392290/",
+    "arxiv_id": "2010.15920",
+    "doi": "10.1109/LRA.2021.3070252",
+    "year": "2021",
+    "resource_kind": "paper",
+    "authors": "Brijen Thananjeyan; Ashwin Balakrishna; Suraj Nair; Michael Luo; Krishnan Srinivasan; Minho Hwang; Joseph E. Gonzalez; Julian Ibarz; Chelsea Finn; Ken Goldberg",
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [
+      "风险敏感策略与恢复控制"
+    ],
+    "reading_status": "identity_and_abstract_checked_not_full_read",
+    "reading_scope": "官方身份与摘要核验；未完成全文精读",
+    "mechanism_summary": "任务策略与恢复策略分离，离线约束违例数据帮助学习危险区域；与约束安全相关，但不证明任意障碍卡死均可恢复。",
+    "evidence_boundary": "未独立复现实验；摘要级证据不扩大为完整方法或实验结论。 IEEE直开受限，本轮依据官方索引摘要。",
+    "verification_status": "official_indexed_abstract_verified",
+    "verification_sources": [
+      "https://ieeexplore.ieee.org/document/9392290/",
+      "https://arxiv.org/abs/2010.15920"
+    ],
+    "original_chat_urls": [
+      "https://ieeexplore.ieee.org/document/9392290/",
+      "https://ieeexplore.ieee.org/document/9392290/?utm_source=chatgpt.com"
+    ],
+    "source_origin": "historical_assistant_recommendation",
+    "related_paper": null,
+    "user_reading_status": "unknown",
+    "content_kind": "bibliographic_card",
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "independently_reproduced": false,
+    "checked_at": "2026-10-03",
+    "method_tags": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "evaluation_tags": [],
+    "modality_tags": [],
+    "task_tags": [],
+    "caveats": [
+      "未独立复现实验；摘要级证据不扩大为完整方法或实验结论。 IEEE直开受限，本轮依据官方索引摘要。"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-02T10:57:55Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接"
+      }
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2010.15920",
+    "canonical_path": "robotics-embodied/papers/arxiv-2010.15920/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2010.15920/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2010.15920/source.json",
+    "legacy_paths": [],
+    "catalog_anchor": "p155"
+  },
+  {
+    "id": "arxiv:2201.08117",
+    "title": "Learning robust perceptive locomotion for quadrupedal robots in the wild",
+    "url": "https://arxiv.org/abs/2201.08117",
+    "arxiv_id": "2201.08117",
+    "doi": "10.1126/scirobotics.abk2822",
+    "year": "2022",
+    "resource_kind": "paper",
+    "authors": "Takahiro Miki; Joonho Lee; Jemin Hwangbo; Lorenz Wellhausen; Vladlen Koltun; Marco Hutter",
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [
+      "风险敏感策略与恢复控制"
+    ],
+    "reading_status": "identity_and_abstract_checked_not_full_read",
+    "reading_scope": "官方身份与摘要核验；未完成全文精读",
+    "mechanism_summary": "循环注意力编码器融合内外感知，提高自然环境鲁棒性；适合检查观测缺失假设，并非持续卡死专项恢复方案。",
+    "evidence_boundary": "未独立复现实验；摘要级证据不扩大为完整方法或实验结论。",
+    "verification_status": "official_page_identity_and_abstract_verified",
+    "verification_sources": [
+      "https://arxiv.org/abs/2201.08117"
+    ],
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2201.08117"
+    ],
+    "source_origin": "historical_assistant_recommendation",
+    "related_paper": null,
+    "user_reading_status": "unknown",
+    "content_kind": "bibliographic_card",
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "independently_reproduced": false,
+    "checked_at": "2026-10-03",
+    "method_tags": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "evaluation_tags": [],
+    "modality_tags": [],
+    "task_tags": [],
+    "caveats": [
+      "未独立复现实验；摘要级证据不扩大为完整方法或实验结论。"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-02T10:57:55Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接"
+      }
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2201.08117",
+    "canonical_path": "robotics-embodied/papers/arxiv-2201.08117/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2201.08117/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2201.08117/source.json",
+    "legacy_paths": [],
+    "catalog_anchor": "p156"
+  },
+  {
+    "id": "arxiv:2010.03934",
+    "title": "Prioritized Level Replay",
+    "url": "https://arxiv.org/abs/2010.03934",
+    "arxiv_id": "2010.03934",
+    "doi": null,
+    "year": "2020",
+    "resource_kind": "paper",
+    "authors": "Minqi Jiang; Edward Grefenstette; Tim Rocktäschel",
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [
+      "风险敏感策略与恢复控制"
+    ],
+    "reading_status": "identity_and_abstract_checked_not_full_read",
+    "reading_scope": "官方身份与摘要核验；未完成全文精读",
+    "mechanism_summary": "按估计学习潜力优先重放关卡、形成课程；Procgen证据，迁移到四足失败状态采样是推断而非论文已证实。",
+    "evidence_boundary": "未独立复现实验；摘要级证据不扩大为完整方法或实验结论。",
+    "verification_status": "official_page_identity_and_abstract_verified",
+    "verification_sources": [
+      "https://arxiv.org/abs/2010.03934"
+    ],
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2010.03934"
+    ],
+    "source_origin": "historical_assistant_recommendation",
+    "related_paper": null,
+    "user_reading_status": "unknown",
+    "content_kind": "bibliographic_card",
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "independently_reproduced": false,
+    "checked_at": "2026-10-03",
+    "method_tags": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "evaluation_tags": [],
+    "modality_tags": [],
+    "task_tags": [],
+    "caveats": [
+      "未独立复现实验；摘要级证据不扩大为完整方法或实验结论。"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-02T10:57:55Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接"
+      }
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2010.03934",
+    "canonical_path": "robotics-embodied/papers/arxiv-2010.03934/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2010.03934/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2010.03934/source.json",
+    "legacy_paths": [],
+    "catalog_anchor": "p157"
+  },
+  {
+    "id": "arxiv:2308.09405",
+    "title": "Robust Quadrupedal Locomotion via Risk-Averse Policy Learning",
+    "url": "https://arxiv.org/abs/2308.09405",
+    "arxiv_id": "2308.09405",
+    "doi": null,
+    "year": "2023",
+    "resource_kind": "paper",
+    "authors": "Jiyuan Shi; Chenjia Bai; Haoran He; Lei Han; Dong Wang; Bin Zhao; Mingguo Zhao; Xiu Li; Xuelong Li",
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [
+      "风险敏感策略与恢复控制"
+    ],
+    "reading_status": "identity_and_abstract_checked_not_full_read",
+    "reading_scope": "官方身份与摘要核验；未完成全文精读",
+    "mechanism_summary": "分位数回归分布价值与风险扭曲，实机Aliengo；低概率高风险鲁棒性相关，不等价于增加卡死惩罚。",
+    "evidence_boundary": "未独立复现实验；摘要级证据不扩大为完整方法或实验结论。",
+    "verification_status": "official_page_identity_and_abstract_verified",
+    "verification_sources": [
+      "https://arxiv.org/abs/2308.09405"
+    ],
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2308.09405?utm_source=chatgpt.com"
+    ],
+    "source_origin": "historical_assistant_recommendation",
+    "related_paper": null,
+    "user_reading_status": "unknown",
+    "content_kind": "bibliographic_card",
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "independently_reproduced": false,
+    "checked_at": "2026-10-03",
+    "method_tags": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "evaluation_tags": [],
+    "modality_tags": [],
+    "task_tags": [],
+    "caveats": [
+      "未独立复现实验；摘要级证据不扩大为完整方法或实验结论。"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-02T10:57:55Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接"
+      }
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2308.09405",
+    "canonical_path": "robotics-embodied/papers/arxiv-2308.09405/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2308.09405/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2308.09405/source.json",
+    "legacy_paths": [],
+    "catalog_anchor": "p158"
+  },
+  {
+    "id": "arxiv:2309.14246",
+    "title": "Learning Risk-Aware Quadrupedal Locomotion using Distributional Reinforcement Learning",
+    "url": "https://arxiv.org/abs/2309.14246",
+    "arxiv_id": "2309.14246",
+    "doi": null,
+    "year": "2023",
+    "resource_kind": "paper",
+    "authors": "Lukas Schneider; Jonas Frey; Takahiro Miki; Marco Hutter",
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [
+      "风险敏感策略与恢复控制"
+    ],
+    "reading_status": "identity_and_abstract_checked_not_full_read",
+    "reading_scope": "官方身份与摘要核验；未完成全文精读",
+    "mechanism_summary": "提出Distributional Proximal Policy Optimization，DPPO是合法方法别名；风险参数可调，论文说明无需额外奖励调参实现风险敏感。与2308.09405是不同论文。",
+    "evidence_boundary": "未独立复现实验；摘要级证据不扩大为完整方法或实验结论。",
+    "verification_status": "official_page_identity_and_abstract_verified",
+    "verification_sources": [
+      "https://arxiv.org/abs/2309.14246"
+    ],
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2309.14246?utm_source=chatgpt.com"
+    ],
+    "source_origin": "historical_assistant_recommendation",
+    "related_paper": null,
+    "user_reading_status": "unknown",
+    "content_kind": "bibliographic_card",
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "independently_reproduced": false,
+    "checked_at": "2026-10-03",
+    "method_tags": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "evaluation_tags": [],
+    "modality_tags": [],
+    "task_tags": [],
+    "caveats": [
+      "未独立复现实验；摘要级证据不扩大为完整方法或实验结论。"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-02T10:57:55Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接"
+      }
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2309.14246",
+    "canonical_path": "robotics-embodied/papers/arxiv-2309.14246/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2309.14246/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2309.14246/source.json",
+    "legacy_paths": [],
+    "catalog_anchor": "p159"
+  },
+  {
+    "id": "url:https://www.anthropic.com/research/property-based-testing",
+    "title": "Finding bugs across the Python ecosystem with Claude and property-based testing",
+    "url": "https://www.anthropic.com/research/property-based-testing",
+    "arxiv_id": null,
+    "doi": null,
+    "year": "2026",
+    "resource_kind": "official_blog",
+    "authors": "Muhammad Maaz; Liam DeVoe; Zac Hatfield-Dodds; Nicholas Carlini",
+    "topic_paths": [
+      "cross-domain/agents",
+      "cross-domain/evaluation"
+    ],
+    "detail_topics": [
+      "Agent轨迹与性质验证"
+    ],
+    "reading_status": "official_article_read",
+    "reading_scope": "官方文章已读；关联论文仅身份与摘要核验",
+    "mechanism_summary": "官方文章：从代码与文档推断性质、用Hypothesis找反例、反思并人工核验；测试断言错误仍会造成误报，测试通过不能证明开放式语义任务正确。",
+    "evidence_boundary": "未独立复现实验；摘要级证据不扩大为完整方法或实验结论。",
+    "verification_status": "official_article_read",
+    "verification_sources": [
+      "https://www.anthropic.com/research/property-based-testing"
+    ],
+    "original_chat_urls": [
+      "https://www.anthropic.com/research/property-based-testing?utm_source=chatgpt.com"
+    ],
+    "source_origin": "historical_assistant_recommendation",
+    "related_paper": {
+      "title": "Agentic Property-Based Testing: Finding Bugs Across the Python Ecosystem",
+      "url": "https://arxiv.org/abs/2510.09907",
+      "relationship": "direct paper link in official article; same research, not new historical recommendation",
+      "verification": "official arXiv identity and abstract verified"
+    },
+    "user_reading_status": "unknown",
+    "content_kind": "bibliographic_card",
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "independently_reproduced": false,
+    "checked_at": "2026-10-03",
+    "method_tags": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "evaluation_tags": [],
+    "modality_tags": [],
+    "task_tags": [],
+    "caveats": [
+      "未独立复现实验；摘要级证据不扩大为完整方法或实验结论。"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-02T12:16:24Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接"
+      }
+    ],
+    "canonical_folder": "cross-domain/papers/agentic-property-based-testing",
+    "canonical_path": "cross-domain/papers/agentic-property-based-testing/README.md",
+    "canonical_readme": "cross-domain/papers/agentic-property-based-testing/README.md",
+    "source_path": "cross-domain/papers/agentic-property-based-testing/source.json",
+    "legacy_paths": [],
+    "catalog_anchor": "p160"
+  },
+  {
+    "id": "doi:10.1109/aitest70988.2026.00036",
+    "title": "Metamorphic Testing of Multi-Agent LLM Systems: A Trace-Based Behavioral Oracle Framework",
+    "url": "https://ieeexplore.ieee.org/abstract/document/11662476/",
+    "arxiv_id": null,
+    "doi": "10.1109/AITest70988.2026.00036",
+    "year": "2026",
+    "resource_kind": "paper",
+    "authors": null,
+    "topic_paths": [
+      "cross-domain/agents",
+      "cross-domain/evaluation"
+    ],
+    "detail_topics": [
+      "Agent轨迹与性质验证"
+    ],
+    "reading_status": "identity_and_abstract_checked_not_full_read",
+    "reading_scope": "官方身份与摘要核验；未完成全文精读",
+    "mechanism_summary": "MORPHAGENT以目标保持、协作一致性、工具使用完整性关系检验结构化执行轨迹；与Agent行为验证相关。仅官方索引摘要，作者与实验细节未读全文核实。",
+    "evidence_boundary": "未独立复现实验；摘要级证据不扩大为完整方法或实验结论。 IEEE直开受限，本轮依据官方索引摘要。",
+    "verification_status": "official_indexed_abstract_verified",
+    "verification_sources": [
+      "https://ieeexplore.ieee.org/abstract/document/11662476/"
+    ],
+    "original_chat_urls": [
+      "https://ieeexplore.ieee.org/abstract/document/11662476/?utm_source=chatgpt.com"
+    ],
+    "source_origin": "historical_assistant_recommendation",
+    "related_paper": null,
+    "user_reading_status": "unknown",
+    "content_kind": "bibliographic_card",
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "independently_reproduced": false,
+    "checked_at": "2026-10-03",
+    "method_tags": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "evaluation_tags": [],
+    "modality_tags": [],
+    "task_tags": [],
+    "caveats": [
+      "未独立复现实验；摘要级证据不扩大为完整方法或实验结论。 IEEE直开受限，本轮依据官方索引摘要。"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-02T12:16:24Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接"
+      }
+    ],
+    "canonical_folder": "cross-domain/papers/morphagent",
+    "canonical_path": "cross-domain/papers/morphagent/README.md",
+    "canonical_readme": "cross-domain/papers/morphagent/README.md",
+    "source_path": "cross-domain/papers/morphagent/source.json",
+    "legacy_paths": [],
+    "catalog_anchor": "p161"
+  },
+  {
+    "id": "url:https://proceedings.mlr.press/v229/stachowicz23a.html",
+    "title": "FastRLAP: A System for Learning High-Speed Driving via Deep RL and Autonomous Practicing",
+    "url": "https://proceedings.mlr.press/v229/stachowicz23a.html",
+    "arxiv_id": null,
+    "doi": null,
+    "year": "2023",
+    "resource_kind": "paper",
+    "authors": "Kyle Stachowicz; Dhruv Shah; Arjun Bhorkar; Ilya Kostrikov; Sergey Levine",
+    "topic_paths": [
+      "robotics/control",
+      "robotics/navigation-planning"
+    ],
+    "detail_topics": [
+      "恢复控制与自主练习"
+    ],
+    "reading_status": "selected_method_sections_checked_not_full_read",
+    "reading_scope": "Relevant full-text sections reviewed, not exhaustive deep read",
+    "mechanism_summary": "固定stuck penalty配合FSM pseudo-reset；移除pseudo-reset的消融会卡住。实证为RC车，不是四足。",
+    "evidence_boundary": "RC车实验，不是四足验证；原历史OpenReview ID与该论文关系仍未知，不标为错配或已恢复原链接。",
+    "verification_status": "publisher_identity_and_selected_sections_verified",
+    "verification_sources": [
+      "https://proceedings.mlr.press/v229/stachowicz23a.html",
+      "https://proceedings.mlr.press/v229/stachowicz23a/stachowicz23a.pdf"
+    ],
+    "original_chat_urls": [],
+    "source_origin": "official_related_discovery_2026_10_03",
+    "related_unresolved_original_url": "https://openreview.net/pdf?id=z3eGhFTTaQ",
+    "user_reading_status": "unknown",
+    "content_kind": "bibliographic_card",
+    "provenance": [
+      "official_related_discovery_2026_10_03"
+    ],
+    "independently_reproduced": false,
+    "checked_at": "2026-10-03",
+    "method_tags": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "evaluation_tags": [],
+    "modality_tags": [],
+    "task_tags": [],
+    "caveats": [
+      "RC车实验，不是四足验证；原历史OpenReview ID与该论文关系仍未知，不标为错配或已恢复原链接。"
+    ],
+    "chat_evidence": [],
+    "canonical_folder": "robotics-embodied/papers/fastrlap",
+    "canonical_path": "robotics-embodied/papers/fastrlap/README.md",
+    "canonical_readme": "robotics-embodied/papers/fastrlap/README.md",
+    "source_path": "robotics-embodied/papers/fastrlap/source.json",
+    "legacy_paths": [],
+    "catalog_anchor": "p162"
   }
 ]

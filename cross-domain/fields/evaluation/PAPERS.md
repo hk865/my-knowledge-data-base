@@ -12,3 +12,8 @@
 - [Measuring Chain of Thought Faithfulness by Unlearning Reasoning Steps](../../../llm/papers/url-https-aclanthology.org-2025.emnlp-main.504/README.md) · 年份见原文 · 文献卡，暂无独立精读
 - [Reasoning Does Not Necessarily Improve Role-Playing Ability](../../../llm/papers/url-https-aclanthology.org-2025.findings-acl.537/README.md) · 年份见原文 · 文献卡，暂无独立精读
 - [Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena](../../papers/llm-judge/README.md) · 2023 · 技术精读
+
+## 2026年10月3日文献增量
+
+- [Finding bugs across the Python ecosystem with Claude and property-based testing](../../papers/agentic-property-based-testing/README.md) · 2026 · 官方博客，非独立全文精读
+- [Metamorphic Testing of Multi-Agent LLM Systems: A Trace-Based Behavioral Oracle Framework](../../papers/morphagent/README.md) · 2026 · 文献卡，非独立全文精读

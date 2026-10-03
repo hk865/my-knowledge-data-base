@@ -63,7 +63,11 @@
           "subtopics": [
             "搜索与验证",
             "多路径与多 Agent",
-            "预算分配与 token 效率"
+            "预算分配与 token 效率",
+            "精确目标分布与投机验证",
+            "近似质量协作与关键段接管",
+            "MTP草拟与验证接口",
+            "精确级联混合分布"
           ]
         }
       ]
@@ -166,7 +170,9 @@
           "subtopics": [
             "经典与最优控制",
             "腿足策略与适应",
-            "sim to real"
+            "sim to real",
+            "风险敏感策略与恢复控制",
+            "恢复控制与自主练习"
           ]
         },
         {
@@ -200,7 +206,9 @@
         {
           "id": "cross-domain/agents",
           "label": "Agent 与上下文系统",
-          "subtopics": []
+          "subtopics": [
+            "Agent轨迹与性质验证"
+          ]
         },
         {
           "id": "cross-domain/interpretability",
@@ -215,7 +223,9 @@
         {
           "id": "cross-domain/evaluation",
           "label": "评估与监督可靠性",
-          "subtopics": []
+          "subtopics": [
+            "性质测试、变形测试与行为验证边界"
+          ]
         },
         {
           "id": "cross-domain/knowledge-distillation",

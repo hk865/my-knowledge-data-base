@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2302.01318",
+  "title": "Accelerating Large Language Model Decoding with Speculative Sampling",
+  "resource_kind": "paper",
+  "canonical_folder": "llm/papers/arxiv-2302.01318",
+  "official_url": "https://arxiv.org/abs/2302.01318",
+  "official_fulltext_url": "https://arxiv.org/pdf/2302.01318",
+  "read_version": "v1 2023-02-02",
+  "version_status": "see_read_version",
+  "reading_depth": "selected_method_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡与选段核验，不是独立全文精读。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "只保留官方链接；未获明确再分发许可，不镜像论文PDF。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "topic_paths": [
+    "llm/inference"
+  ],
+  "source_record_updated": "2026-10-03",
+  "verification_2026_10_03": {
+    "reading_scope": "Algorithm 2、§4.1–4.2、§5、§6.1；未逐行复核证明",
+    "mechanism_summary": "与 Leviathan 独立同期提出同一核心拒绝采样机制；明确 K+1 logits 并行验草稿、首拒绝残差重采样、全接受 bonus token。分布先应用 temperature/top-k/nucleus 再验证。",
+    "evidence_boundary": "论文 p=draft、q=target，与 Leviathan 符号相反；低 batch、memory-bound 是批验接近单步成本的条件；benchmark 提升不是通用常数。",
+    "distribution_guarantee": "精确目标分布，论文限定 hardware numerics",
+    "read_version": "v1 2023-02-02",
+    "verification_status": "official_identity_and_selected_method_sections_verified",
+    "verification_sources": [
+      "https://arxiv.org/abs/2302.01318",
+      "https://arxiv.org/html/2302.01318v1"
+    ],
+    "source_origin": "historical_assistant_recommendation"
+  }
+}

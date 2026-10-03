@@ -43,3 +43,15 @@
 - [Reasoning Does Not Necessarily Improve Role-Playing Ability](url-https-aclanthology.org-2025.findings-acl.537/README.md) · 年份见原文 · 文献卡，暂无独立精读
 - [Self-Discover: Large Language Models Self-Compose Reasoning Structures](arxiv-2402.03620/README.md) · 2024 · 文献卡，暂无独立精读
 - [Voyager: An Open-Ended Embodied Agent with Large Language Models](arxiv-2305.16291/README.md) · 2023 · 文献卡，暂无独立精读
+
+## 2026年10月3日文献增量
+
+- [Fast Inference from Transformers via Speculative Decoding](arxiv-2211.17192/README.md) · 2022 · 文献卡，非独立全文精读
+- [Accelerating Large Language Model Decoding with Speculative Sampling](arxiv-2302.01318/README.md) · 2023 · 文献卡，非独立全文精读
+- [EAGLE-3: Scaling up Inference Acceleration of Large Language Models via Training-Time Test](arxiv-2503.01840/README.md) · 2025 · 文献卡，非独立全文精读
+- [DFlash: Block Diffusion for Flash Speculative Decoding](arxiv-2602.06036/README.md) · 2026 · 文献卡，非独立全文精读
+- [Speculative Decoding with Big Little Decoder](arxiv-2302.07863/README.md) · 2023 · 文献卡，非独立全文精读
+- [RelayLLM: Efficient Reasoning via Collaborative Decoding](arxiv-2601.05167/README.md) · 2026 · 文献卡，非独立全文精读
+- [Judge Decoding: Faster Speculative Sampling Requires Going Beyond Model Alignment](arxiv-2501.19309/README.md) · 2025 · 文献卡，非独立全文精读
+- [DFlash 2: Keep Drafting Parallel](dflash-2/README.md) · 2026 · 文献卡，非独立全文精读
+- [Faster Cascades via Speculative Decoding](arxiv-2405.19261/README.md) · 2024 · 文献卡，非独立全文精读

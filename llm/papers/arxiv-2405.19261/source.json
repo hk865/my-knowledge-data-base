@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2405.19261",
+  "title": "Faster Cascades via Speculative Decoding",
+  "resource_kind": "paper",
+  "canonical_folder": "llm/papers/arxiv-2405.19261",
+  "official_url": "https://arxiv.org/abs/2405.19261",
+  "official_fulltext_url": "https://arxiv.org/pdf/2405.19261",
+  "read_version": "v2 2024-10-21",
+  "version_status": "see_read_version",
+  "reading_depth": "selected_method_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡与选段核验，不是独立全文精读。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "只保留官方链接；未获明确再分发许可，不镜像论文PDF。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "topic_paths": [
+    "llm/inference"
+  ],
+  "source_record_updated": "2026-10-03",
+  "verification_2026_10_03": {
+    "reading_scope": "§4.1–4.3、Algorithms 4–5、Lemma 3–5；未逐行审全部证明",
+    "mechanism_summary": "令 π=(1−r)q+r p，用 min(1,π/q) 接受与 max(π−q,0) 残差补采；批量算大模型后应用 deferral。最优规则把质量收益与 TV 距离导致的拒绝成本权衡，实际用概率峰值作 plug-in 估计。",
+    "evidence_boundary": "有理论目标与估计误差界，不等于所有任务质量不降；r 选择改变输出分布。",
+    "distribution_guarantee": "精确采样所定义的混合/级联分布 π；不一般等于大模型 p",
+    "read_version": "v2 2024-10-21",
+    "verification_status": "official_identity_and_selected_method_sections_verified",
+    "verification_sources": [
+      "https://arxiv.org/abs/2405.19261",
+      "https://arxiv.org/html/2405.19261v2"
+    ],
+    "source_origin": "historical_assistant_recommendation"
+  }
+}

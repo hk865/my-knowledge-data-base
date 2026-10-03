@@ -34,3 +34,14 @@
 - [Dynamic Locomotion in the MIT Cheetah 3 Through Convex Model-Predictive Control](../../papers/convex-mpc/README.md) · 年份见原文 · 技术精读
 - [Proximal Policy Optimization Algorithms](../../../llm/papers/ppo/README.md) · 2017 · 技术精读
 - [Reconstruction or Semantics? What Makes a Latent Space Useful for Robotic World Models](../../../multimodal/papers/arxiv-2605.06388/README.md) · 年份见原文 · 文献卡，暂无独立精读
+
+## 2026年10月3日文献增量
+
+- [Learning Quadrupedal Locomotion over Challenging Terrain](../../papers/arxiv-2010.11251/README.md) · 2020 · 文献卡，非独立全文精读
+- [Robust Recovery Controller for a Quadrupedal Robot using Deep Reinforcement Learning](../../papers/arxiv-1901.07517/README.md) · 2019 · 文献卡，非独立全文精读
+- [Recovery RL: Safe Reinforcement Learning With Learned Recovery Zones](../../papers/arxiv-2010.15920/README.md) · 2021 · 文献卡，非独立全文精读
+- [Learning robust perceptive locomotion for quadrupedal robots in the wild](../../papers/arxiv-2201.08117/README.md) · 2022 · 文献卡，非独立全文精读
+- [Prioritized Level Replay](../../papers/arxiv-2010.03934/README.md) · 2020 · 文献卡，非独立全文精读
+- [Robust Quadrupedal Locomotion via Risk-Averse Policy Learning](../../papers/arxiv-2308.09405/README.md) · 2023 · 文献卡，非独立全文精读
+- [Learning Risk-Aware Quadrupedal Locomotion using Distributional Reinforcement Learning](../../papers/arxiv-2309.14246/README.md) · 2023 · 文献卡，非独立全文精读
+- [FastRLAP: A System for Learning High-Speed Driving via Deep RL and Autonomous Practicing](../../papers/fastrlap/README.md) · 2023 · 文献卡，非独立全文精读

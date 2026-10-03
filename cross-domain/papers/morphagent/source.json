@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "resource_id": "doi:10.1109/aitest70988.2026.00036",
+  "title": "Metamorphic Testing of Multi-Agent LLM Systems: A Trace-Based Behavioral Oracle Framework",
+  "resource_kind": "paper",
+  "canonical_folder": "cross-domain/papers/morphagent",
+  "official_url": "https://ieeexplore.ieee.org/abstract/document/11662476/",
+  "official_fulltext_url": "https://ieeexplore.ieee.org/abstract/document/11662476/",
+  "read_version": null,
+  "version_status": "not_pinned",
+  "reading_depth": "identity_and_abstract_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡与选段核验，不是独立全文精读。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "只保留官方链接；未获明确再分发许可，不镜像论文PDF。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "topic_paths": [
+    "cross-domain/agents",
+    "cross-domain/evaluation"
+  ],
+  "source_record_updated": "2026-10-03",
+  "verification_2026_10_03": {
+    "reading_scope": "官方身份与摘要核验；未完成全文精读",
+    "mechanism_summary": "MORPHAGENT以目标保持、协作一致性、工具使用完整性关系检验结构化执行轨迹；与Agent行为验证相关。仅官方索引摘要，作者与实验细节未读全文核实。",
+    "evidence_boundary": "未独立复现实验；摘要级证据不扩大为完整方法或实验结论。 IEEE直开受限，本轮依据官方索引摘要。",
+    "verification_status": "official_indexed_abstract_verified",
+    "verification_sources": [
+      "https://ieeexplore.ieee.org/abstract/document/11662476/"
+    ],
+    "source_origin": "historical_assistant_recommendation",
+    "related_paper": null
+  }
+}

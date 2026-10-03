@@ -1,6 +1,6 @@
 # 全库论文总目录
 
-共 143 个去重资源（142 篇论文、1 个代码仓库）；另有 29 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
+共 162 个去重资源（159 篇论文、1 个代码仓库、2 篇官方博客）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
 
 身份核验、助手教学进度和用户阅读状态分开。历史来源保留原角色与证据局限，不将助手推荐写成用户提供，也不将教学完成写成用户已读。
 
@@ -1721,3 +1721,254 @@
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
 - 用户阅读状态：unknown
 - [文献卡（尚无独立精读）](../cross-domain/papers/arxiv-1503.02531/README.md)
+
+<a id="p144"></a>
+## p144 · Fast Inference from Transformers via Speculative Decoding
+
+- 标识：arxiv:2211.17192
+- 类型：paper
+- 官方入口：https://arxiv.org/abs/2211.17192
+- 主题：llm/inference
+- 来源：historical_assistant_recommendation
+- 身份核验：official_identity_and_selected_method_sections_verified
+- 阅读范围：方法 §2.1–2.3、Algorithm 1；未逐行复核附录证明
+- 用户阅读状态：unknown
+- [文献卡，暂无独立精读](../llm/papers/arxiv-2211.17192/README.md)
+
+<a id="p145"></a>
+## p145 · Accelerating Large Language Model Decoding with Speculative Sampling
+
+- 标识：arxiv:2302.01318
+- 类型：paper
+- 官方入口：https://arxiv.org/abs/2302.01318
+- 主题：llm/inference
+- 来源：historical_assistant_recommendation
+- 身份核验：official_identity_and_selected_method_sections_verified
+- 阅读范围：Algorithm 2、§4.1–4.2、§5、§6.1；未逐行复核证明
+- 用户阅读状态：unknown
+- [文献卡，暂无独立精读](../llm/papers/arxiv-2302.01318/README.md)
+
+<a id="p146"></a>
+## p146 · EAGLE-3: Scaling up Inference Acceleration of Large Language Models via Training-Time Test
+
+- 标识：arxiv:2503.01840
+- 类型：paper
+- 官方入口：https://arxiv.org/abs/2503.01840
+- 主题：llm/inference
+- 来源：historical_assistant_recommendation
+- 身份核验：official_identity_and_selected_method_sections_verified
+- 阅读范围：§2.1–2.2、§3.1；训练细节未全文核验
+- 用户阅读状态：unknown
+- [文献卡，暂无独立精读](../llm/papers/arxiv-2503.01840/README.md)
+
+<a id="p147"></a>
+## p147 · DFlash: Block Diffusion for Flash Speculative Decoding
+
+- 标识：arxiv:2602.06036
+- 类型：paper
+- 官方入口：https://arxiv.org/abs/2602.06036
+- 主题：llm/inference
+- 来源：historical_assistant_recommendation
+- 身份核验：official_identity_and_selected_method_sections_verified
+- 阅读范围：§3、§4.1–4.2、Table 1；未审实现级验证代码
+- 用户阅读状态：unknown
+- [文献卡，暂无独立精读](../llm/papers/arxiv-2602.06036/README.md)
+
+<a id="p148"></a>
+## p148 · Speculative Decoding with Big Little Decoder
+
+- 标识：arxiv:2302.07863
+- 类型：paper
+- 官方入口：https://arxiv.org/abs/2302.07863
+- 主题：llm/inference
+- 来源：historical_assistant_recommendation
+- 身份核验：official_identity_and_selected_method_sections_verified
+- 阅读范围：§3.2–3.4、§2.3 对比与实验摘要
+- 用户阅读状态：unknown
+- [文献卡，暂无独立精读](../llm/papers/arxiv-2302.07863/README.md)
+
+<a id="p149"></a>
+## p149 · RelayLLM: Efficient Reasoning via Collaborative Decoding
+
+- 标识：arxiv:2601.05167
+- 类型：paper
+- 官方入口：https://arxiv.org/abs/2601.05167
+- 主题：llm/inference
+- 来源：historical_assistant_recommendation
+- 身份核验：official_identity_and_selected_method_sections_verified
+- 阅读范围：§2.1–2.3、训练流程摘要；未全文审训练消融
+- 用户阅读状态：unknown
+- [文献卡，暂无独立精读](../llm/papers/arxiv-2601.05167/README.md)
+
+<a id="p150"></a>
+## p150 · Judge Decoding: Faster Speculative Sampling Requires Going Beyond Model Alignment
+
+- 标识：arxiv:2501.19309
+- 类型：paper
+- 官方入口：https://arxiv.org/abs/2501.19309
+- 主题：llm/inference
+- 来源：historical_assistant_recommendation
+- 身份核验：official_identity_and_selected_method_sections_verified
+- 阅读范围：§4.1、§5.1、Table 1
+- 用户阅读状态：unknown
+- [文献卡，暂无独立精读](../llm/papers/arxiv-2501.19309/README.md)
+
+<a id="p151"></a>
+## p151 · DFlash 2: Keep Drafting Parallel
+
+- 标识：url:https://inco.ai/blog/dflash2
+- 类型：official_blog
+- 官方入口：https://inco.ai/blog/dflash2/
+- 主题：llm/inference
+- 来源：historical_assistant_recommendation
+- 身份核验：official_identity_and_selected_method_sections_verified
+- 阅读范围：官方博客 path selector 和 local convolution 方法段；非同行评议全文
+- 用户阅读状态：unknown
+- [文献卡，暂无独立精读](../llm/papers/dflash-2/README.md)
+
+<a id="p152"></a>
+## p152 · Faster Cascades via Speculative Decoding
+
+- 标识：arxiv:2405.19261
+- 类型：paper
+- 官方入口：https://arxiv.org/abs/2405.19261
+- 主题：llm/inference
+- 来源：historical_assistant_recommendation
+- 身份核验：official_identity_and_selected_method_sections_verified
+- 阅读范围：§4.1–4.3、Algorithms 4–5、Lemma 3–5；未逐行审全部证明
+- 用户阅读状态：unknown
+- [文献卡，暂无独立精读](../llm/papers/arxiv-2405.19261/README.md)
+
+<a id="p153"></a>
+## p153 · Learning Quadrupedal Locomotion over Challenging Terrain
+
+- 标识：arxiv:2010.11251
+- 类型：paper
+- 官方入口：https://arxiv.org/abs/2010.11251
+- 主题：robotics/control
+- 来源：historical_assistant_recommendation
+- 身份核验：official_page_identity_and_abstract_verified
+- 阅读范围：官方身份与摘要核验；未完成全文精读
+- 用户阅读状态：unknown
+- [文献卡，暂无独立精读](../robotics-embodied/papers/arxiv-2010.11251/README.md)
+
+<a id="p154"></a>
+## p154 · Robust Recovery Controller for a Quadrupedal Robot using Deep Reinforcement Learning
+
+- 标识：arxiv:1901.07517
+- 类型：paper
+- 官方入口：https://arxiv.org/abs/1901.07517
+- 主题：robotics/control
+- 来源：historical_assistant_recommendation
+- 身份核验：official_page_identity_and_abstract_verified
+- 阅读范围：官方身份与摘要核验；未完成全文精读
+- 用户阅读状态：unknown
+- [文献卡，暂无独立精读](../robotics-embodied/papers/arxiv-1901.07517/README.md)
+
+<a id="p155"></a>
+## p155 · Recovery RL: Safe Reinforcement Learning With Learned Recovery Zones
+
+- 标识：arxiv:2010.15920
+- 类型：paper
+- 官方入口：https://ieeexplore.ieee.org/document/9392290/
+- 主题：robotics/control
+- 来源：historical_assistant_recommendation
+- 身份核验：official_indexed_abstract_verified
+- 阅读范围：官方身份与摘要核验；未完成全文精读
+- 用户阅读状态：unknown
+- [文献卡，暂无独立精读](../robotics-embodied/papers/arxiv-2010.15920/README.md)
+
+<a id="p156"></a>
+## p156 · Learning robust perceptive locomotion for quadrupedal robots in the wild
+
+- 标识：arxiv:2201.08117
+- 类型：paper
+- 官方入口：https://arxiv.org/abs/2201.08117
+- 主题：robotics/control
+- 来源：historical_assistant_recommendation
+- 身份核验：official_page_identity_and_abstract_verified
+- 阅读范围：官方身份与摘要核验；未完成全文精读
+- 用户阅读状态：unknown
+- [文献卡，暂无独立精读](../robotics-embodied/papers/arxiv-2201.08117/README.md)
+
+<a id="p157"></a>
+## p157 · Prioritized Level Replay
+
+- 标识：arxiv:2010.03934
+- 类型：paper
+- 官方入口：https://arxiv.org/abs/2010.03934
+- 主题：robotics/control
+- 来源：historical_assistant_recommendation
+- 身份核验：official_page_identity_and_abstract_verified
+- 阅读范围：官方身份与摘要核验；未完成全文精读
+- 用户阅读状态：unknown
+- [文献卡，暂无独立精读](../robotics-embodied/papers/arxiv-2010.03934/README.md)
+
+<a id="p158"></a>
+## p158 · Robust Quadrupedal Locomotion via Risk-Averse Policy Learning
+
+- 标识：arxiv:2308.09405
+- 类型：paper
+- 官方入口：https://arxiv.org/abs/2308.09405
+- 主题：robotics/control
+- 来源：historical_assistant_recommendation
+- 身份核验：official_page_identity_and_abstract_verified
+- 阅读范围：官方身份与摘要核验；未完成全文精读
+- 用户阅读状态：unknown
+- [文献卡，暂无独立精读](../robotics-embodied/papers/arxiv-2308.09405/README.md)
+
+<a id="p159"></a>
+## p159 · Learning Risk-Aware Quadrupedal Locomotion using Distributional Reinforcement Learning
+
+- 标识：arxiv:2309.14246
+- 类型：paper
+- 官方入口：https://arxiv.org/abs/2309.14246
+- 主题：robotics/control
+- 来源：historical_assistant_recommendation
+- 身份核验：official_page_identity_and_abstract_verified
+- 阅读范围：官方身份与摘要核验；未完成全文精读
+- 用户阅读状态：unknown
+- [文献卡，暂无独立精读](../robotics-embodied/papers/arxiv-2309.14246/README.md)
+
+<a id="p160"></a>
+## p160 · Finding bugs across the Python ecosystem with Claude and property-based testing
+
+- 标识：url:https://www.anthropic.com/research/property-based-testing
+- 类型：official_blog
+- 官方入口：https://www.anthropic.com/research/property-based-testing
+- 主题：cross-domain/agents, cross-domain/evaluation
+- 来源：historical_assistant_recommendation
+- 身份核验：official_article_read
+- 阅读范围：官方文章已读；关联论文仅身份与摘要核验
+- 用户阅读状态：unknown
+- [文献卡，暂无独立精读](../cross-domain/papers/agentic-property-based-testing/README.md)
+
+<a id="p161"></a>
+## p161 · Metamorphic Testing of Multi-Agent LLM Systems: A Trace-Based Behavioral Oracle Framework
+
+- 标识：doi:10.1109/aitest70988.2026.00036
+- 类型：paper
+- 官方入口：https://ieeexplore.ieee.org/abstract/document/11662476/
+- 主题：cross-domain/agents, cross-domain/evaluation
+- 来源：historical_assistant_recommendation
+- 身份核验：official_indexed_abstract_verified
+- 阅读范围：官方身份与摘要核验；未完成全文精读
+- 用户阅读状态：unknown
+- [文献卡，暂无独立精读](../cross-domain/papers/morphagent/README.md)
+
+<a id="p162"></a>
+## p162 · FastRLAP: A System for Learning High-Speed Driving via Deep RL and Autonomous Practicing
+
+- 标识：url:https://proceedings.mlr.press/v229/stachowicz23a.html
+- 类型：paper
+- 官方入口：https://proceedings.mlr.press/v229/stachowicz23a.html
+- 主题：robotics/control, robotics/navigation-planning
+- 来源：official_related_discovery_2026_10_03
+- 身份核验：publisher_identity_and_selected_sections_verified
+- 阅读范围：Relevant full-text sections reviewed, not exhaustive deep read
+- 用户阅读状态：unknown
+- [文献卡，暂无独立精读](../robotics-embodied/papers/fastrlap/README.md)
+
+## 2026年10月3日既有条目更新
+
+DeepSeek-V3 的MTP相关方法段获得复核，原条目与旧元数据保留；没有将章节复核升级为整份技术报告全文精读。

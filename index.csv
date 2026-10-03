@@ -85,3 +85,5 @@ MEMORA 如何把看过的经历变成以后可用的记忆,robotics-embodied/pap
 RoboSkill 为什么机器人需要保存真正执行过的技能,robotics-embodied/papers/roboskill/reading.md
 Zero WAM 如何把人类示范视频变成机器人动作,robotics-embodied/papers/zero-wam/reading.md
 具身 Agents 从技能选择到持续执行的研究路线,robotics-embodied/roadmaps/embodied-agents.md
+大小模型草拟与验证：精确分布、质量判断与关键段接管,llm/fields/inference/draft-verification-guide.md
+2026年10月3日研究短报,daily/2026-10-03.md

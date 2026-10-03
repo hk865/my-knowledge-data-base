@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2010.15920",
+  "title": "Recovery RL: Safe Reinforcement Learning With Learned Recovery Zones",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2010.15920",
+  "official_url": "https://ieeexplore.ieee.org/document/9392290/",
+  "official_fulltext_url": "https://arxiv.org/pdf/2010.15920",
+  "read_version": null,
+  "version_status": "not_pinned",
+  "reading_depth": "identity_and_abstract_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡与选段核验，不是独立全文精读。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "只保留官方链接；未获明确再分发许可，不镜像论文PDF。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "topic_paths": [
+    "robotics/control"
+  ],
+  "source_record_updated": "2026-10-03",
+  "verification_2026_10_03": {
+    "reading_scope": "官方身份与摘要核验；未完成全文精读",
+    "mechanism_summary": "任务策略与恢复策略分离，离线约束违例数据帮助学习危险区域；与约束安全相关，但不证明任意障碍卡死均可恢复。",
+    "evidence_boundary": "未独立复现实验；摘要级证据不扩大为完整方法或实验结论。 IEEE直开受限，本轮依据官方索引摘要。",
+    "verification_status": "official_indexed_abstract_verified",
+    "verification_sources": [
+      "https://ieeexplore.ieee.org/document/9392290/",
+      "https://arxiv.org/abs/2010.15920"
+    ],
+    "source_origin": "historical_assistant_recommendation",
+    "related_paper": null
+  }
+}

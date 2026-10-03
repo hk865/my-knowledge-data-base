@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "resource_id": "url:https://proceedings.mlr.press/v229/stachowicz23a.html",
+  "title": "FastRLAP: A System for Learning High-Speed Driving via Deep RL and Autonomous Practicing",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/fastrlap",
+  "official_url": "https://proceedings.mlr.press/v229/stachowicz23a.html",
+  "official_fulltext_url": "https://proceedings.mlr.press/v229/stachowicz23a.html",
+  "read_version": null,
+  "version_status": "not_pinned",
+  "reading_depth": "selected_method_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡与选段核验，不是独立全文精读。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "只保留官方链接；未获明确再分发许可，不镜像论文PDF。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "topic_paths": [
+    "robotics/control",
+    "robotics/navigation-planning"
+  ],
+  "source_record_updated": "2026-10-03",
+  "verification_2026_10_03": {
+    "reading_scope": "Relevant full-text sections reviewed, not exhaustive deep read",
+    "mechanism_summary": "固定stuck penalty配合FSM pseudo-reset；移除pseudo-reset的消融会卡住。实证为RC车，不是四足。",
+    "evidence_boundary": "RC车实验，不是四足验证；原历史OpenReview ID与该论文关系仍未知，不标为错配或已恢复原链接。",
+    "verification_status": "publisher_identity_and_selected_sections_verified",
+    "verification_sources": [
+      "https://proceedings.mlr.press/v229/stachowicz23a.html",
+      "https://proceedings.mlr.press/v229/stachowicz23a/stachowicz23a.pdf"
+    ],
+    "source_origin": "official_related_discovery_2026_10_03",
+    "related_unresolved_original_url": "https://openreview.net/pdf?id=z3eGhFTTaQ"
+  }
+}

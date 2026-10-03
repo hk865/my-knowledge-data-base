@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2211.17192",
+  "title": "Fast Inference from Transformers via Speculative Decoding",
+  "resource_kind": "paper",
+  "canonical_folder": "llm/papers/arxiv-2211.17192",
+  "official_url": "https://arxiv.org/abs/2211.17192",
+  "official_fulltext_url": "https://arxiv.org/pdf/2211.17192",
+  "read_version": "v2 2023-05-18; ICML 2023 / PMLR 202:19274–19286, 2023-07-23–29",
+  "version_status": "see_read_version",
+  "reading_depth": "selected_method_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡与选段核验，不是独立全文精读。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "只保留官方链接；未获明确再分发许可，不镜像论文PDF。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "topic_paths": [
+    "llm/inference"
+  ],
+  "source_record_updated": "2026-10-03",
+  "verification_2026_10_03": {
+    "reading_scope": "方法 §2.1–2.3、Algorithm 1；未逐行复核附录证明",
+    "mechanism_summary": "小模型顺序草拟 K 个 token；大模型并行计算 K+1 个条件分布；从左向右按 min(1,target/draft) 接受。首拒绝处丢弃后缀，按归一化 max(target−draft,0) 补一个 token；全接受则从目标末位分布再采一个尾 token。",
+    "evidence_boundary": "必须能访问两者分布并使用兼容 token 空间；收益取决于接受率、draft 开销与硬件；相同分布不代表相同随机种子的逐字输出。",
+    "distribution_guarantee": "精确目标分布（理想算术），不是语义判卷",
+    "read_version": "v2 2023-05-18; ICML 2023 / PMLR 202:19274–19286, 2023-07-23–29",
+    "verification_status": "official_identity_and_selected_method_sections_verified",
+    "verification_sources": [
+      "https://arxiv.org/abs/2211.17192",
+      "https://arxiv.org/html/2211.17192v2"
+    ],
+    "source_origin": "historical_assistant_recommendation"
+  }
+}

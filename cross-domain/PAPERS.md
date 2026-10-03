@@ -34,3 +34,8 @@
 - [Do Deep Nets Really Need to be Deep?](papers/arxiv-1312.6184/README.md) · 2013 · 文献卡，暂无独立精读
 - [FitNets: Hints for Thin Deep Nets](papers/arxiv-1412.6550/README.md) · 2014 · 文献卡，暂无独立精读
 - [Distilling the Knowledge in a Neural Network](papers/arxiv-1503.02531/README.md) · 2015 · 文献卡，暂无独立精读
+
+## 2026年10月3日文献增量
+
+- [Finding bugs across the Python ecosystem with Claude and property-based testing](papers/agentic-property-based-testing/README.md) · 2026 · 官方博客，非独立全文精读
+- [Metamorphic Testing of Multi-Agent LLM Systems: A Trace-Based Behavioral Oracle Framework](papers/morphagent/README.md) · 2026 · 文献卡，非独立全文精读

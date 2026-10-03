@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2501.19309",
+  "title": "Judge Decoding: Faster Speculative Sampling Requires Going Beyond Model Alignment",
+  "resource_kind": "paper",
+  "canonical_folder": "llm/papers/arxiv-2501.19309",
+  "official_url": "https://arxiv.org/abs/2501.19309",
+  "official_fulltext_url": "https://arxiv.org/pdf/2501.19309",
+  "read_version": "v1 2025-01-31",
+  "version_status": "see_read_version",
+  "reading_depth": "selected_method_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡与选段核验，不是独立全文精读。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "只保留官方链接；未获明确再分发许可，不镜像论文PDF。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "topic_paths": [
+    "llm/inference"
+  ],
+  "source_record_updated": "2026-10-03",
+  "verification_2026_10_03": {
+    "reading_scope": "§4.1、§5.1、Table 1",
+    "mechanism_summary": "在冻结目标模型最后 hidden embedding 上训练线性 judge head，预测当前草稿 token 正确性；标准 SD 接受 mask 与 judge 阈值接受 mask 作 OR。δ=1 才退化回标准 SD。",
+    "evidence_boundary": "judge 可误接受；论文明确必须测生成质量；8B/405B 的 9.7× 是 HuggingFace 基线，优化 GPT-fast 对照为 3.9×，不可混用。",
+    "distribution_guarantee": "放宽接受规则，经验质量保持，不保目标原分布",
+    "read_version": "v1 2025-01-31",
+    "verification_status": "official_identity_and_selected_method_sections_verified",
+    "verification_sources": [
+      "https://arxiv.org/abs/2501.19309",
+      "https://arxiv.org/html/2501.19309v1"
+    ],
+    "source_origin": "historical_assistant_recommendation"
+  }
+}

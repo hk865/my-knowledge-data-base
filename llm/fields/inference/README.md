@@ -24,3 +24,9 @@
 
 1. [Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters](../../papers/test-time-compute/README.md)
 2. [ReAct: Synergizing Reasoning and Acting in Language Models](../../../cross-domain/papers/react/README.md)
+
+## 大小模型协作：先分清验证保证
+
+[两图机制导读与手算示例](draft-verification-guide.md)覆盖精确目标分布、近似协作及关键片段接管；这是方向导读，不增加单篇全文精读计数。
+
+[本轮文献卡](PAPERS.md)逐条标记实际核验版本、方法段和限制。

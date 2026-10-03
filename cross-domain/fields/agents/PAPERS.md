@@ -14,3 +14,8 @@
 - [EmbodiedSkills: A Unified Framework for Orchestrating, Training, and Deploying VLA Agents](../../../robotics-embodied/papers/embodiedskills/README.md) · 年份见原文 · 选定章节讲解
 - [MEMORA: Embodied Action Memory from Egocentric Videos for Reasoning and Planning](../../../robotics-embodied/papers/memora/README.md) · 年份见原文 · 选定章节讲解
 - [HoloAgent-0: A Unified Embodied Agent Framework with 3D Spatial Memory](../../../robotics-embodied/papers/holoagent-0/README.md) · 年份见原文 · 选定章节讲解
+
+## 2026年10月3日文献增量
+
+- [Finding bugs across the Python ecosystem with Claude and property-based testing](../../papers/agentic-property-based-testing/README.md) · 2026 · 官方博客，非独立全文精读
+- [Metamorphic Testing of Multi-Agent LLM Systems: A Trace-Based Behavioral Oracle Framework](../../papers/morphagent/README.md) · 2026 · 文献卡，非独立全文精读

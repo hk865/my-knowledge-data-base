@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2010.03934",
+  "title": "Prioritized Level Replay",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2010.03934",
+  "official_url": "https://arxiv.org/abs/2010.03934",
+  "official_fulltext_url": "https://arxiv.org/pdf/2010.03934",
+  "read_version": null,
+  "version_status": "not_pinned",
+  "reading_depth": "identity_and_abstract_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡与选段核验，不是独立全文精读。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "只保留官方链接；未获明确再分发许可，不镜像论文PDF。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "topic_paths": [
+    "robotics/control"
+  ],
+  "source_record_updated": "2026-10-03",
+  "verification_2026_10_03": {
+    "reading_scope": "官方身份与摘要核验；未完成全文精读",
+    "mechanism_summary": "按估计学习潜力优先重放关卡、形成课程；Procgen证据，迁移到四足失败状态采样是推断而非论文已证实。",
+    "evidence_boundary": "未独立复现实验；摘要级证据不扩大为完整方法或实验结论。",
+    "verification_status": "official_page_identity_and_abstract_verified",
+    "verification_sources": [
+      "https://arxiv.org/abs/2010.03934"
+    ],
+    "source_origin": "historical_assistant_recommendation",
+    "related_paper": null
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2602.06036",
+  "title": "DFlash: Block Diffusion for Flash Speculative Decoding",
+  "resource_kind": "paper",
+  "canonical_folder": "llm/papers/arxiv-2602.06036",
+  "official_url": "https://arxiv.org/abs/2602.06036",
+  "official_fulltext_url": "https://arxiv.org/pdf/2602.06036",
+  "read_version": "恢复 v1 2026-02-05；最新 v2 2026-05-28（ICML 2026 camera-ready）",
+  "version_status": "see_read_version",
+  "reading_depth": "selected_method_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡与选段核验，不是独立全文精读。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "只保留官方链接；未获明确再分发许可，不镜像论文PDF。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "topic_paths": [
+    "llm/inference"
+  ],
+  "source_record_updated": "2026-10-03",
+  "verification_2026_10_03": {
+    "reading_scope": "§3、§4.1–4.2、Table 1；未审实现级验证代码",
+    "mechanism_summary": "小型 block diffusion 一次前向并行填整块 mask；融合目标多层 hidden states，并注入每一 draft 层的 K/V、缓存复用；以目标 bonus token 为块起点。",
+    "evidence_boundary": "需 target 内部特征与专门训练；不是“无需验证的 diffusion”；加速表随模型/任务/温度变化。",
+    "distribution_guarantee": "论文宣称 lossless；本轮确认草拟方法，未独立审计验证实现",
+    "read_version": "恢复 v1 2026-02-05；最新 v2 2026-05-28（ICML 2026 camera-ready）",
+    "verification_status": "official_identity_and_selected_method_sections_verified",
+    "verification_sources": [
+      "https://arxiv.org/abs/2602.06036",
+      "https://arxiv.org/html/2602.06036v1"
+    ],
+    "source_origin": "historical_assistant_recommendation"
+  }
+}

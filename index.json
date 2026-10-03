@@ -342,5 +342,13 @@
   {
     "title": "具身 Agents 从技能选择到持续执行的研究路线",
     "file": "robotics-embodied/roadmaps/embodied-agents.md"
+  },
+  {
+    "title": "大小模型草拟与验证：精确分布、质量判断与关键段接管",
+    "file": "llm/fields/inference/draft-verification-guide.md"
+  },
+  {
+    "title": "2026年10月3日研究短报",
+    "file": "daily/2026-10-03.md"
   }
 ]

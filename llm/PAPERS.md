@@ -45,3 +45,15 @@
 - [Language Models are Few-Shot Learners](papers/gpt3/README.md) · 2020 · 技术精读
 - [Direct Preference Optimization: Your Language Model is Secretly a Reward Model](papers/dpo/README.md) · 2023 · 逐步教学版
 - [Proximal Policy Optimization Algorithms](papers/ppo/README.md) · 2017 · 技术精读
+
+## 2026年10月3日文献增量
+
+- [Fast Inference from Transformers via Speculative Decoding](papers/arxiv-2211.17192/README.md) · 2022 · 文献卡，非独立全文精读
+- [Accelerating Large Language Model Decoding with Speculative Sampling](papers/arxiv-2302.01318/README.md) · 2023 · 文献卡，非独立全文精读
+- [EAGLE-3: Scaling up Inference Acceleration of Large Language Models via Training-Time Test](papers/arxiv-2503.01840/README.md) · 2025 · 文献卡，非独立全文精读
+- [DFlash: Block Diffusion for Flash Speculative Decoding](papers/arxiv-2602.06036/README.md) · 2026 · 文献卡，非独立全文精读
+- [Speculative Decoding with Big Little Decoder](papers/arxiv-2302.07863/README.md) · 2023 · 文献卡，非独立全文精读
+- [RelayLLM: Efficient Reasoning via Collaborative Decoding](papers/arxiv-2601.05167/README.md) · 2026 · 文献卡，非独立全文精读
+- [Judge Decoding: Faster Speculative Sampling Requires Going Beyond Model Alignment](papers/arxiv-2501.19309/README.md) · 2025 · 文献卡，非独立全文精读
+- [DFlash 2: Keep Drafting Parallel](papers/dflash-2/README.md) · 2026 · 官方博客，非独立全文精读
+- [Faster Cascades via Speculative Decoding](papers/arxiv-2405.19261/README.md) · 2024 · 文献卡，非独立全文精读

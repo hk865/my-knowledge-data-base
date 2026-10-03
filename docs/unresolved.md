@@ -1,6 +1,6 @@
 # 待核实清单
 
-29 条。保留历史身份与链接缺口；新目录或教学文章不自动清除待核实状态。
+34 条。保留历史身份与链接缺口；新目录或教学文章不自动清除待核实状态。
 
 ## 1. Inference Scaling Laws: An Empirical Analysis of Compute-Optimal Inference for LLM Problem-Solving
 
@@ -210,3 +210,38 @@
 任务分解、记忆、skill/tool executor、终止/超时、重规划与恢复，以及VLA / World Model / 具身Agent / VLN兴趣讨论仅作为概念来源；不补造具体论文。
 
 [完整专题历史来源与限制](../robotics-embodied/catalog/history-recovery.json)
+
+## 30. FastRLAP 历史OpenReview链接
+
+- 原记录入口：https://openreview.net/pdf?id=z3eGhFTTaQ
+- 状态：unresolved_historical_identifier
+- 缺口：原ID无法取得元数据；PMLR已确认同名研究，但与原ID关系未知。不是已确认错配。
+- 来源类型：historical-assistant-recommendation
+
+## 31. Speculative cascades — A hybrid approach for smarter, faster LLM inference
+
+- 原记录入口：https://research.google/...
+- 状态：unresolved_truncated_historical_link
+- 缺口：URL truncated; not a recovered full URL
+- 来源类型：historical-assistant-recommendation
+
+## 32. Lost in the Middle
+
+- 原记录入口：https://direct.mit.edu/...
+- 状态：unresolved_truncated_historical_link
+- 缺口：URL truncated
+- 来源类型：historical-assistant-recommendation
+
+## 33. Anthropic context engineering / long-running coding agents / eval / multi-agent cost / sandbox
+
+- 原记录入口：https://www.anthropic.com/...
+- 状态：unresolved_truncated_historical_link
+- 缺口：Only concept labels and truncated URLs; Sep 20 file full URLs excluded from this increment
+- 来源类型：historical-assistant-recommendation
+
+## 34. LangGraph durable execution / checkpoint / HITL
+
+- 原记录入口：https://github.com/...
+- 状态：unresolved_truncated_historical_link
+- 缺口：URL truncated
+- 来源类型：historical-assistant-recommendation

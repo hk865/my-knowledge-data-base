@@ -86,9 +86,9 @@
 - [Attention Is All You Need](paper-catalog.md#p113)
 - [Language Models are Few-Shot Learners](paper-catalog.md#p127)
 
-### 推理时计算（19）
+### 推理时计算（29）
 
-细分：搜索与验证；多路径与多 Agent；预算分配与 token 效率
+细分：搜索与验证；多路径与多 Agent；预算分配与 token 效率；精确目标分布与投机验证；近似质量协作与关键段接管；MTP草拟与验证接口；精确级联混合分布
 
 - [Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters](paper-catalog.md#p001)
 - [Towards Thinking-Optimal Scaling of Test-Time Compute for LLM Reasoning](paper-catalog.md#p002)
@@ -109,6 +109,16 @@
 - [Self-Discover: Large Language Models Self-Compose Reasoning Structures](paper-catalog.md#p039)
 - [ReAct: Synergizing Reasoning and Acting in Language Models](paper-catalog.md#p040)
 - [Voyager: An Open-Ended Embodied Agent with Large Language Models](paper-catalog.md#p041)
+- [Fast Inference from Transformers via Speculative Decoding](paper-catalog.md#p144)
+- [Accelerating Large Language Model Decoding with Speculative Sampling](paper-catalog.md#p145)
+- [EAGLE-3: Scaling up Inference Acceleration of Large Language Models via Training-Time Test](paper-catalog.md#p146)
+- [DFlash: Block Diffusion for Flash Speculative Decoding](paper-catalog.md#p147)
+- [Speculative Decoding with Big Little Decoder](paper-catalog.md#p148)
+- [RelayLLM: Efficient Reasoning via Collaborative Decoding](paper-catalog.md#p149)
+- [Judge Decoding: Faster Speculative Sampling Requires Going Beyond Model Alignment](paper-catalog.md#p150)
+- [DFlash 2: Keep Drafting Parallel](paper-catalog.md#p151)
+- [Faster Cascades via Speculative Decoding](paper-catalog.md#p152)
+
 
 ## 多模态与世界表征
 
@@ -210,17 +220,19 @@
 - [ORB-SLAM3: An Accurate Open-Source Library for Visual, Visual-Inertial and Multi-Map SLAM](paper-catalog.md#p123)
 - [Quaternion kinematics for the error-state Kalman filter](paper-catalog.md#p125)
 
-### 导航与规划（3）
+### 导航与规划（4）
 
 细分：几何与运动规划；视觉语言导航；VLA 与 VLN 的任务边界
 
 - [Vision-and-Language Navigation: Interpreting visually-grounded navigation instructions in real environments](paper-catalog.md#p119)
 - [Dynamic Locomotion in the MIT Cheetah 3 Through Convex Model-Predictive Control](paper-catalog.md#p124)
 - [Sampling-based Algorithms for Optimal Motion Planning](paper-catalog.md#p126)
+- [FastRLAP: A System for Learning High-Speed Driving via Deep RL and Autonomous Practicing](paper-catalog.md#p162)
 
-### 运动控制（26）
 
-细分：经典与最优控制；腿足策略与适应；sim to real
+### 运动控制（34）
+
+细分：经典与最优控制；腿足策略与适应；sim to real；风险敏感策略与恢复控制；恢复控制与自主练习
 
 - [GR00T N1: An Open Foundation Model for Generalist Humanoid Robots](paper-catalog.md#p075)
 - [CPG-RL: Learning Central Pattern Generators for Quadruped Locomotion](paper-catalog.md#p091)
@@ -248,6 +260,15 @@
 - [Quaternion kinematics for the error-state Kalman filter](paper-catalog.md#p125)
 - [Sampling-based Algorithms for Optimal Motion Planning](paper-catalog.md#p126)
 - [Proximal Policy Optimization Algorithms](paper-catalog.md#p129)
+- [Learning Quadrupedal Locomotion over Challenging Terrain](paper-catalog.md#p153)
+- [Robust Recovery Controller for a Quadrupedal Robot using Deep Reinforcement Learning](paper-catalog.md#p154)
+- [Recovery RL: Safe Reinforcement Learning With Learned Recovery Zones](paper-catalog.md#p155)
+- [Learning robust perceptive locomotion for quadrupedal robots in the wild](paper-catalog.md#p156)
+- [Prioritized Level Replay](paper-catalog.md#p157)
+- [Robust Quadrupedal Locomotion via Risk-Averse Policy Learning](paper-catalog.md#p158)
+- [Learning Risk-Aware Quadrupedal Locomotion using Distributional Reinforcement Learning](paper-catalog.md#p159)
+- [FastRLAP: A System for Learning High-Speed Driving via Deep RL and Autonomous Practicing](paper-catalog.md#p162)
+
 
 ### 具身策略与 VLA（25）
 
@@ -292,9 +313,9 @@
 
 ## 跨方向方法与探索
 
-### Agent 与上下文系统（10）
+### Agent 与上下文系统（12）
 
-细分：
+细分：Agent轨迹与性质验证
 
 - [Recursive Introspection: Teaching Language Model Agents How to Self-Improve](paper-catalog.md#p019)
 - [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](paper-catalog.md#p034)
@@ -306,6 +327,9 @@
 - [EmbodiedSkills: A Unified Framework for Orchestrating, Training, and Deploying VLA Agents](paper-catalog.md#p137)
 - [MEMORA: Embodied Action Memory from Egocentric Videos for Reasoning and Planning](paper-catalog.md#p138)
 - [HoloAgent-0: A Unified Embodied Agent Framework with 3D Spatial Memory](paper-catalog.md#p139)
+- [Finding bugs across the Python ecosystem with Claude and property-based testing](paper-catalog.md#p160)
+- [Metamorphic Testing of Multi-Agent LLM Systems: A Trace-Based Behavioral Oracle Framework](paper-catalog.md#p161)
+
 
 ### 机制与可信解释（18）
 
@@ -335,9 +359,9 @@
 细分：
 
 
-### 评估与监督可靠性（8）
+### 评估与监督可靠性（10）
 
-细分：
+细分：性质测试、变形测试与行为验证边界
 
 - [INSPECT: Intrinsic and Systematic Probing Evaluation for Code Transformers](paper-catalog.md#p030)
 - [PersonaEval: Are LLM Evaluators Human Enough to Judge Role-Play?](paper-catalog.md#p032)
@@ -347,6 +371,9 @@
 - [Measuring Chain of Thought Faithfulness by Unlearning Reasoning Steps](paper-catalog.md#p037)
 - [Reasoning Does Not Necessarily Improve Role-Playing Ability](paper-catalog.md#p038)
 - [Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena](paper-catalog.md#p118)
+- [Finding bugs across the Python ecosystem with Claude and property-based testing](paper-catalog.md#p160)
+- [Metamorphic Testing of Multi-Agent LLM Systems: A Trace-Based Behavioral Oracle Framework](paper-catalog.md#p161)
+
 
 ### 知识蒸馏与模型压缩（4）
 
