@@ -722,9 +722,11 @@
 |---|---|---|
 | 领域入门页（§3，目标驱动） | `llm/fields/pretraining/README.md` | 先讲与后训练的分工和预训练的目的，再按"问题 × 手段"组织；每个阶段写出做不好的场景 |
 | 领域入门页变体（§3.6，研究对象） | `multimodal/fields/visual-representation/README.md` | 先界定（定义、任务、测量、内部），再讲方法谱系与历史 |
-| 观点页（§13） | `perspectives/scaling.md` | 驱动力与阶段的结构；每条 [判断] 在批注里有支撑与反例 |
+| 观点页（§13） | `perspectives/scaling.md`；`perspectives/eval-shapes-models.md` | 驱动力与阶段的结构；每条 [判断] 在批注里有支撑与反例；后者示范跨领域（LLM 与机器人）对照 |
 | 思考笔记（§9） | `perspectives/notes/quadruped-recovery.md` | [我] 忠实原话；[建议] 与 [我] 的关系写清；四类解法各配论文 |
 | 基础分区页（§14） | `foundations/fields/architectures/README.md` | 只讲机制与依赖，领域史放在别处 |
-| 论文精读（§5） | 待用户从 OpenVLA、ORB-SLAM3、PPO 三篇中选定 | — |
+| 论文精读（§5，系统 / 模型） | `robotics-embodied/papers/openvla/reading.md` | 一句话、问题、核心想法、机制（带示例数值）、证据表、局限与后续的完整结构；看一个模型系统时怎样拆部件 |
+| 论文精读（§5，经典方法） | `robotics-embodied/papers/orb-slam3/reading.md` | 经典算法（几何、优化、滤波）怎样从问题与约束讲到机制，再用后来的工作反推当年没写的坑 |
+| 论文精读（§5，算法） | `llm/papers/ppo/reading.md` | 一个训练算法怎样从目标函数手算到实现细节，以及它在别的领域（LLM 后训练）里的变形 |
 
 用户认可新的页面后，在这里追加或替换。
