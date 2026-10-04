@@ -22,9 +22,9 @@
 
 ## 第三步：看腿足上的组合，RL 出教师、模仿出学生
 
-读 [Lee 2020](../../papers/arxiv-2010.11251/README.md)，再读[运动控制入门页](../control-locomotion/README.md)第 3 节与第 6 节。
+读 [Lee 2020](../../papers/arxiv-2010.11251/README.md)，再读[运动控制入门页](../control-locomotion/README.md)第 3 节与第 6 节，以及"[为什么绕不开模仿学习](../control-locomotion/README.md#为什么绕不开模仿学习)"一节；可选 [OmniH2O](../../papers/arxiv-2406.08858/README.md)（人形上模仿教师与直接 RL 的对照）和 [AMP](../../papers/arxiv-2104.02180/README.md)（只用状态的动作模仿）。
 
-为什么在这里：这是 DAgger 在机器人上最成功的落地形式，专家换成了仿真里的特权教师；也是四足 RL 实践中最常见的部署结构。
+为什么在这里：这是 DAgger 在机器人上最成功的落地形式，专家换成了仿真里的特权教师；也是四足 RL 实践中最常见的部署结构。读完会看到，腿足"以 RL 为主"只说对了一半：RL 的起点和学生一侧都靠模仿。
 
 ## 第四步：看模仿怎样规模化，以及它的上限
 

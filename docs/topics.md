@@ -351,7 +351,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [ABot-N1: Toward a General Visual Language Navigation Foundation Model](paper-catalog.md#p268)
 
 
-### 运动控制（47）
+### 运动控制（53）
 
 细分：经典与最优控制；腿足策略与适应；sim to real；风险敏感策略与恢复控制；恢复控制与自主练习
 
@@ -402,9 +402,15 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [DayDreamer: World Models for Physical Robot Learning](paper-catalog.md#p225)
 - [DTC: Deep Tracking Control](paper-catalog.md#p236)
 - [TD-MPC2: Scalable, Robust World Models for Continuous Control](paper-catalog.md#p239)
+- [AMP: Adversarial Motion Priors for Stylized Physics-Based Character Control](paper-catalog.md#p272)
+- [Adversarial Motion Priors Make Good Substitutes for Complex Reward Functions](paper-catalog.md#p273)
+- [Learning Agile Robotic Locomotion Skills by Imitating Animals](paper-catalog.md#p274)
+- [Expressive Whole-Body Control for Humanoid Robots](paper-catalog.md#p275)
+- [Learning Human-to-Humanoid Real-Time Whole-Body Teleoperation](paper-catalog.md#p276)
+- [OmniH2O: Universal and Dexterous Human-to-Humanoid Whole-Body Teleoperation and Learning](paper-catalog.md#p277)
 
 
-### 具身策略与 VLA（43）
+### 具身策略与 VLA（44）
 
 细分：动作表示与生成；跨本体与数据；模型 规划与控制接口；模仿学习；机器人强化学习
 
@@ -451,6 +457,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Ctrl-World: A Controllable Generative World Model for Robot Manipulation](paper-catalog.md#p262)
 - [π*0.6: a VLA That Learns From Experience](paper-catalog.md#p263)
 - [Evaluating Gemini Robotics Policies in a Veo World Simulator](paper-catalog.md#p266)
+- [OmniH2O: Universal and Dexterous Human-to-Humanoid Whole-Body Teleoperation and Learning](paper-catalog.md#p277)
 
 ### 具身 Agents 与闭环系统（14）
 
@@ -576,13 +583,13 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 | 模态 \ 任务 | understanding | generation | decision | evaluation | analysis |
 |---|---:|---:|---:|---:|---:|
 | text | [14](#x-text-understanding) | [58](#x-text-generation) | [54](#x-text-decision) | [11](#x-text-evaluation) | [20](#x-text-analysis) |
-| image | [58](#x-image-understanding) | [12](#x-image-generation) | [77](#x-image-decision) | [7](#x-image-evaluation) | [3](#x-image-analysis) |
+| image | [58](#x-image-understanding) | [12](#x-image-generation) | [79](#x-image-decision) | [7](#x-image-evaluation) | [3](#x-image-analysis) |
 | video | [7](#x-video-understanding) | [29](#x-video-generation) | [19](#x-video-decision) | [5](#x-video-evaluation) | [2](#x-video-analysis) |
 | audio | [2](#x-audio-understanding) | [3](#x-audio-generation) | · | · | · |
-| action | [9](#x-action-understanding) | [27](#x-action-generation) | [118](#x-action-decision) | [9](#x-action-evaluation) | [2](#x-action-analysis) |
-| state | [15](#x-state-understanding) | [2](#x-state-generation) | [57](#x-state-decision) | [1](#x-state-evaluation) | · |
+| action | [9](#x-action-understanding) | [27](#x-action-generation) | [124](#x-action-decision) | [9](#x-action-evaluation) | [2](#x-action-analysis) |
+| state | [15](#x-state-understanding) | [2](#x-state-generation) | [63](#x-state-decision) | [1](#x-state-evaluation) | · |
 | code | [1](#x-code-understanding) | [7](#x-code-generation) | [7](#x-code-decision) | [2](#x-code-evaluation) | [3](#x-code-analysis) |
-| multimodal | [11](#x-multimodal-understanding) | [13](#x-multimodal-generation) | [30](#x-multimodal-decision) | [1](#x-multimodal-evaluation) | · |
+| multimodal | [11](#x-multimodal-understanding) | [13](#x-multimodal-generation) | [31](#x-multimodal-decision) | [1](#x-multimodal-evaluation) | · |
 | tabular | [1](#x-tabular-understanding) | · | · | · | · |
 
 <a id="x-text-understanding"></a>
@@ -849,7 +856,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-image-decision"></a>
 
-### image × decision（77）
+### image × decision（79）
 
 - [DINO-WM: World Models on Pre-trained Visual Features enable Zero-shot Planning](paper-catalog.md#p046)
 - [FOCUS: Object-Centric World Models for Robotics Manipulation](paper-catalog.md#p048)
@@ -928,6 +935,8 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [π*0.6: a VLA That Learns From Experience](paper-catalog.md#p263)
 - [Ground Slow, Move Fast: A Dual-System Foundation Model for Generalizable Vision-and-Language Navigation](paper-catalog.md#p265)
 - [ABot-N1: Toward a General Visual Language Navigation Foundation Model](paper-catalog.md#p268)
+- [Learning Human-to-Humanoid Real-Time Whole-Body Teleoperation](paper-catalog.md#p276)
+- [OmniH2O: Universal and Dexterous Human-to-Humanoid Whole-Body Teleoperation and Learning](paper-catalog.md#p277)
 
 <a id="x-image-evaluation"></a>
 
@@ -1099,7 +1108,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-action-decision"></a>
 
-### action × decision（118）
+### action × decision（124）
 
 - [OccWorld: Learning a 3D Occupancy World Model for Autonomous Driving](paper-catalog.md#p044)
 - [Driving in the Occupancy World: Vision-Centric 4D Occupancy Forecasting and Planning via World Models for Autonomous Driving](paper-catalog.md#p045)
@@ -1219,6 +1228,12 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [π*0.6: a VLA That Learns From Experience](paper-catalog.md#p263)
 - [Ground Slow, Move Fast: A Dual-System Foundation Model for Generalizable Vision-and-Language Navigation](paper-catalog.md#p265)
 - [ABot-N1: Toward a General Visual Language Navigation Foundation Model](paper-catalog.md#p268)
+- [AMP: Adversarial Motion Priors for Stylized Physics-Based Character Control](paper-catalog.md#p272)
+- [Adversarial Motion Priors Make Good Substitutes for Complex Reward Functions](paper-catalog.md#p273)
+- [Learning Agile Robotic Locomotion Skills by Imitating Animals](paper-catalog.md#p274)
+- [Expressive Whole-Body Control for Humanoid Robots](paper-catalog.md#p275)
+- [Learning Human-to-Humanoid Real-Time Whole-Body Teleoperation](paper-catalog.md#p276)
+- [OmniH2O: Universal and Dexterous Human-to-Humanoid Whole-Body Teleoperation and Learning](paper-catalog.md#p277)
 
 <a id="x-action-evaluation"></a>
 
@@ -1270,7 +1285,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-state-decision"></a>
 
-### state × decision（57）
+### state × decision（63）
 
 - [Diffusion Policy: Visuomotor Policy Learning via Action Diffusion](paper-catalog.md#p067)
 - [$π_0$: A Vision-Language-Action Flow Model for General Robot Control](paper-catalog.md#p070)
@@ -1329,6 +1344,12 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Gemini Robotics: Bringing AI into the Physical World](paper-catalog.md#p253)
 - [Knowledge Insulating Vision-Language-Action Models: Train Fast, Run Fast, Generalize Better](paper-catalog.md#p255)
 - [Gemini Robotics 1.5: Pushing the Frontier of Generalist Robots with Advanced Embodied Reasoning, Thinking, and Motion Transfer](paper-catalog.md#p261)
+- [AMP: Adversarial Motion Priors for Stylized Physics-Based Character Control](paper-catalog.md#p272)
+- [Adversarial Motion Priors Make Good Substitutes for Complex Reward Functions](paper-catalog.md#p273)
+- [Learning Agile Robotic Locomotion Skills by Imitating Animals](paper-catalog.md#p274)
+- [Expressive Whole-Body Control for Humanoid Robots](paper-catalog.md#p275)
+- [Learning Human-to-Humanoid Real-Time Whole-Body Teleoperation](paper-catalog.md#p276)
+- [OmniH2O: Universal and Dexterous Human-to-Humanoid Whole-Body Teleoperation and Learning](paper-catalog.md#p277)
 
 <a id="x-state-evaluation"></a>
 
@@ -1417,7 +1438,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-multimodal-decision"></a>
 
-### multimodal × decision（30）
+### multimodal × decision（31）
 
 - [Object-Centric World Model for Language-Guided Manipulation](paper-catalog.md#p052)
 - [Language-Grounded Hierarchical Planning and Execution with Multi-Robot 3D Scene Graphs](paper-catalog.md#p055)
@@ -1449,6 +1470,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Gemini Robotics: Bringing AI into the Physical World](paper-catalog.md#p253)
 - [Knowledge Insulating Vision-Language-Action Models: Train Fast, Run Fast, Generalize Better](paper-catalog.md#p255)
 - [Gemini Robotics 1.5: Pushing the Frontier of Generalist Robots with Advanced Embodied Reasoning, Thinking, and Motion Transfer](paper-catalog.md#p261)
+- [OmniH2O: Universal and Dexterous Human-to-Humanoid Whole-Body Teleoperation and Learning](paper-catalog.md#p277)
 
 <a id="x-multimodal-evaluation"></a>
 

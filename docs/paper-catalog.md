@@ -1,6 +1,6 @@
 # 全库论文总目录
 
-共 271 个去重资源（264 篇论文、4 篇官方技术报告、1 个代码仓库、2 篇官方博客）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
+共 277 个去重资源（270 篇论文、4 篇官方技术报告、1 个代码仓库、2 篇官方博客）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
 
 身份核验、助手教学进度和用户阅读状态分开。历史来源保留原角色与证据局限，不将助手推荐写成用户提供，也不将教学完成写成用户已读。
 
@@ -3076,6 +3076,66 @@
 - 身份核验：selected_sections_checked_not_full_read
 - 用户阅读状态：unknown
 - [文献卡](../robotics-embodied/papers/ptam/README.md)
+
+<a id="p272"></a>
+## p272 · AMP: Adversarial Motion Priors for Stylized Physics-Based Character Control
+
+- 标识：arxiv:2104.02180
+- 原文 / 官方入口：https://arxiv.org/abs/2104.02180
+- 主题：robotics/control
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2104.02180/README.md)
+
+<a id="p273"></a>
+## p273 · Adversarial Motion Priors Make Good Substitutes for Complex Reward Functions
+
+- 标识：arxiv:2203.15103
+- 原文 / 官方入口：https://arxiv.org/abs/2203.15103
+- 主题：robotics/control
+- 身份核验：full_text_checked_not_reproduced
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2203.15103/README.md)
+
+<a id="p274"></a>
+## p274 · Learning Agile Robotic Locomotion Skills by Imitating Animals
+
+- 标识：arxiv:2004.00784
+- 原文 / 官方入口：https://arxiv.org/abs/2004.00784
+- 主题：robotics/control
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2004.00784/README.md)
+
+<a id="p275"></a>
+## p275 · Expressive Whole-Body Control for Humanoid Robots
+
+- 标识：arxiv:2402.16796
+- 原文 / 官方入口：https://arxiv.org/abs/2402.16796
+- 主题：robotics/control
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2402.16796/README.md)
+
+<a id="p276"></a>
+## p276 · Learning Human-to-Humanoid Real-Time Whole-Body Teleoperation
+
+- 标识：arxiv:2403.04436
+- 原文 / 官方入口：https://arxiv.org/abs/2403.04436
+- 主题：robotics/control
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2403.04436/README.md)
+
+<a id="p277"></a>
+## p277 · OmniH2O: Universal and Dexterous Human-to-Humanoid Whole-Body Teleoperation and Learning
+
+- 标识：arxiv:2406.08858
+- 原文 / 官方入口：https://arxiv.org/abs/2406.08858
+- 主题：robotics/control, robotics/embodied-policies
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2406.08858/README.md)
 
 ## 2026年10月3日既有条目更新
 

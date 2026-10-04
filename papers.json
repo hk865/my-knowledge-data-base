@@ -19019,5 +19019,313 @@
       "Georg Klein",
       "David Murray"
     ]
+  },
+  {
+    "id": "arxiv:2104.02180",
+    "title": "AMP: Adversarial Motion Priors for Stylized Physics-Based Character Control",
+    "url": "https://arxiv.org/abs/2104.02180",
+    "arxiv_id": "2104.02180",
+    "doi": null,
+    "year": "2021",
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2104.02180"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p272",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "state",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2104.02180",
+    "canonical_path": "robotics-embodied/papers/arxiv-2104.02180/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2104.02180/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2104.02180/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Xue Bin Peng",
+      "Ze Ma",
+      "Pieter Abbeel",
+      "Sergey Levine",
+      "Angjoo Kanazawa"
+    ]
+  },
+  {
+    "id": "arxiv:2203.15103",
+    "title": "Adversarial Motion Priors Make Good Substitutes for Complex Reward Functions",
+    "url": "https://arxiv.org/abs/2203.15103",
+    "arxiv_id": "2203.15103",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2203.15103"
+    ],
+    "verification_status": "full_text_checked_not_reproduced",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p273",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "state",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2203.15103",
+    "canonical_path": "robotics-embodied/papers/arxiv-2203.15103/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2203.15103/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2203.15103/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Alejandro Escontrela",
+      "Xue Bin Peng",
+      "Wenhao Yu",
+      "Tingnan Zhang",
+      "Atil Iscen",
+      "Ken Goldberg",
+      "Pieter Abbeel"
+    ]
+  },
+  {
+    "id": "arxiv:2004.00784",
+    "title": "Learning Agile Robotic Locomotion Skills by Imitating Animals",
+    "url": "https://arxiv.org/abs/2004.00784",
+    "arxiv_id": "2004.00784",
+    "doi": null,
+    "year": "2020",
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2004.00784"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p274",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "state",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2004.00784",
+    "canonical_path": "robotics-embodied/papers/arxiv-2004.00784/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2004.00784/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2004.00784/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Xue Bin Peng",
+      "Erwin Coumans",
+      "Tingnan Zhang",
+      "Tsang-Wei Lee",
+      "Jie Tan",
+      "Sergey Levine"
+    ]
+  },
+  {
+    "id": "arxiv:2402.16796",
+    "title": "Expressive Whole-Body Control for Humanoid Robots",
+    "url": "https://arxiv.org/abs/2402.16796",
+    "arxiv_id": "2402.16796",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2402.16796"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p275",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "state",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2402.16796",
+    "canonical_path": "robotics-embodied/papers/arxiv-2402.16796/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2402.16796/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2402.16796/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Xuxin Cheng",
+      "Yandong Ji",
+      "Junming Chen",
+      "Ruihan Yang",
+      "Ge Yang",
+      "Xiaolong Wang"
+    ]
+  },
+  {
+    "id": "arxiv:2403.04436",
+    "title": "Learning Human-to-Humanoid Real-Time Whole-Body Teleoperation",
+    "url": "https://arxiv.org/abs/2403.04436",
+    "arxiv_id": "2403.04436",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2403.04436"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p276",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2403.04436",
+    "canonical_path": "robotics-embodied/papers/arxiv-2403.04436/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2403.04436/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2403.04436/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Tairan He",
+      "Zhengyi Luo",
+      "Wenli Xiao",
+      "Chong Zhang",
+      "Kris Kitani",
+      "Changliu Liu",
+      "Guanya Shi"
+    ]
+  },
+  {
+    "id": "arxiv:2406.08858",
+    "title": "OmniH2O: Universal and Dexterous Human-to-Humanoid Whole-Body Teleoperation and Learning",
+    "url": "https://arxiv.org/abs/2406.08858",
+    "arxiv_id": "2406.08858",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "robotics/control",
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2406.08858"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p277",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state",
+      "action",
+      "multimodal"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2406.08858",
+    "canonical_path": "robotics-embodied/papers/arxiv-2406.08858/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2406.08858/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2406.08858/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Tairan He",
+      "Zhengyi Luo",
+      "Xialin He",
+      "Wenli Xiao",
+      "Chong Zhang",
+      "Weinan Zhang",
+      "Kris Kitani",
+      "Changliu Liu",
+      "Guanya Shi"
+    ]
   }
 ]

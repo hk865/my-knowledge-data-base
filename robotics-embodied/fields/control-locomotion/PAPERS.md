@@ -47,10 +47,21 @@
 - [CPG-RL: Learning Central Pattern Generators for Quadruped Locomotion](../../papers/arxiv-2211.00458/README.md) · 2022 · 文献卡 · 策略输出 CPG 振荡器参数而非关节目标
 - [Learning Quadruped Locomotion using Bio-Inspired Neural Networks with Intrinsic Rhythmicity](../../papers/arxiv-2305.07300/README.md) · 2023 · 文献卡 · 网络自带节律
 
+## 动作模仿：参考动作、风格先验与人形重定向
+
+与[入门页](README.md#为什么绕不开模仿学习)"为什么绕不开模仿学习"一节对应。
+
+- [DeepMimic: Example-Guided Deep Reinforcement Learning of Physics-Based Character Skills](../../papers/arxiv-1804.02717/README.md) · 2018 · 文献卡 · 用 RL 跟踪参考动作（仿真角色）；去掉参考状态初始化学不会空翻
+- [Learning Agile Robotic Locomotion Skills by Imitating Animals](../../papers/arxiv-2004.00784/README.md) · 2020 · 文献卡 · 四足模仿真狗动作捕捉，真机上在隐变量空间用 RL 适应
+- [AMP: Adversarial Motion Priors for Stylized Physics-Based Character Control](../../papers/arxiv-2104.02180/README.md) · 2021 · 文献卡 · 判别器风格奖励代替逐帧跟踪
+- [ASE: Large-Scale Reusable Adversarial Skill Embeddings for Physically Simulated Characters](../../papers/arxiv-2205.01906/README.md) · 2022 · 文献卡 · 对抗式技能嵌入，模仿预训练低层技能、RL 训高层
+- [Adversarial Motion Priors Make Good Substitutes for Complex Reward Functions](../../papers/arxiv-2203.15103/README.md) · 2022 · 文献卡 · AMP 搬上 A1，替代 13 项手调风格惩罚
+- [Expressive Whole-Body Control for Humanoid Robots](../../papers/arxiv-2402.16796/README.md) · 2024 · 文献卡 · ExBody：上半身模仿动作捕捉，腿只跟根部运动命令
+- [Learning Human-to-Humanoid Real-Time Whole-Body Teleoperation](../../papers/arxiv-2403.04436/README.md) · 2024 · 文献卡 · H2O：用特权模仿器筛掉人形做不到的人体动作
+- [OmniH2O: Universal and Dexterous Human-to-Humanoid Whole-Body Teleoperation and Learning](../../papers/arxiv-2406.08858/README.md) · 2024 · 文献卡 · 稀疏输入学生按 DAgger 模仿特权教师，比直接 RL 高约 47 个百分点
+
 ## 人形与全身控制（运动跟踪）
 
-- [DeepMimic: Example-Guided Deep Reinforcement Learning of Physics-Based Character Skills](../../papers/arxiv-1804.02717/README.md) · 2018 · 文献卡 · 用 RL 跟踪参考动作（仿真角色）
-- [ASE: Large-Scale Reusable Adversarial Skill Embeddings for Physically Simulated Characters](../../papers/arxiv-2205.01906/README.md) · 2022 · 文献卡 · 对抗式技能嵌入
 - [Humanoid-Gym: Reinforcement Learning for Humanoid Robot with Zero-Shot Sim2Real Transfer](../../papers/arxiv-2404.05695/README.md) · 2024 · 文献卡 · 人形 RL 训练框架与 sim-to-sim 验证
 - [ExBody2: Advanced Expressive Humanoid Whole-Body Control](../../papers/arxiv-2412.13196/README.md) · 2024 · 文献卡 · 表现力全身动作跟踪
 - [Learning from Massive Human Videos for Universal Humanoid Pose Control](../../papers/arxiv-2412.14172/README.md) · 2024 · 文献卡 · 从人类视频得到大规模姿态数据
@@ -69,3 +80,17 @@
 - [Prioritized Experience Replay](../../papers/arxiv-1511.05952/README.md) · 2016 · 文献卡 · 按 TD 误差排优先级
 - [First return, then explore](../../papers/arxiv-2004.12919/README.md) · 2021 · 文献卡 · Go-Explore：先回到罕见状态再探索
 - [FastRLAP: A System for Learning High-Speed Driving via Deep RL and Autonomous Practicing](../../papers/fastrlap/README.md) · 2023 · 文献卡 · 轮式平台上的真机自主练习与自动重置
+
+## 工业界官方材料（外部链接，不建卡）
+
+对照见[入门页的工业界方案](README.md#工业界方案成熟在哪里没公开什么)。
+
+- [unitree_rl_gym](https://github.com/unitreerobotics/unitree_rl_gym) · Unitree 官方仓库 · 训练 → 回放 → Sim2Sim → Sim2Real 的完整流水线；另有 [unitree_rl_lab](https://github.com/unitreerobotics/unitree_rl_lab)（Isaac Lab）
+- [Isaac Gym](https://arxiv.org/abs/2108.10470) · 2021 · NVIDIA 论文 · GPU 上的物理仿真与策略训练
+- [Isaac Lab](https://arxiv.org/abs/2511.04831) · 2025 · NVIDIA 论文 · 执行器模型、随机化事件与多种腿足机器人的训练环境
+- [Eureka](https://arxiv.org/abs/2310.12931) · 2023 · 论文（NVIDIA 等）· 大语言模型写奖励
+- [DrEureka](https://arxiv.org/abs/2406.01967) · 2024 · 论文（UPenn、NVIDIA 等）· 大语言模型写奖励与域随机化范围，Go1 上真机
+- [Starting on the Right Foot with Reinforcement Learning](https://bostondynamics.com/blog/starting-on-the-right-foot-with-reinforcement-learning/) · Boston Dynamics 官方博客 · Spot 的 RL 策略与 MPC 配合、车队验证与上线
+- [Superior Robot Mobility – Where AI Meets the Real World](https://www.anybotics.com/news/superior-robot-mobility-where-ai-meets-the-real-world/) · 2023 · ANYbotics 官方新闻 · ANYmal 的 RL 运动控制产品化
+- [Training a Whole-Body Control Foundation Model](https://www.agilityrobotics.com/content/training-a-whole-body-control-foundation-model) · 2025 · Agility Robotics 官方博客 · Digit 的全身控制模型
+- [Design and Control of a Bipedal Robotic Character](https://arxiv.org/abs/2501.05204) · 2025 · Disney Research 论文 · 动画参考 + 模仿奖励，执行器辨识

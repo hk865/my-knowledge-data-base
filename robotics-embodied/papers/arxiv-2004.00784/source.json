@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2004.00784",
+  "title": "Learning Agile Robotic Locomotion Skills by Imitating Animals",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2004.00784",
+  "official_url": "https://arxiv.org/abs/2004.00784",
+  "official_fulltext_url": "https://arxiv.org/pdf/2004.00784",
+  "read_version": null,
+  "version_status": "checked_current_arxiv_version",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核对了摘要、引言、方法（重定向、模仿训练、隐空间适应）、实机结果与结论；附录表格的列布局在 PDF 文本中错乱，未引用表中数值；不是独立精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Xue Bin Peng",
+    "Erwin Coumans",
+    "Tingnan Zhang",
+    "Tsang-Wei Lee",
+    "Jie Tan",
+    "Sergey Levine"
+  ],
+  "year": 2020,
+  "topic_paths": [
+    "robotics/control"
+  ],
+  "modality_tags": [
+    "state",
+    "action"
+  ],
+  "task_tags": [
+    "decision"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv API 元数据与 v3 PDF：摘要、§I–II、§IV–VIII 与表 IV",
+    "publication_note": "arXiv 页面与 PDF 未写会议；正式发表信息未核实",
+    "code_release": "论文只给出视频与项目页，未声明代码",
+    "evidence_boundary": "未复现实验；数字取自论文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2004.00784",
+      "https://arxiv.org/pdf/2004.00784"
+    ],
+    "source_origin": "assistant_recommendation_for_user_review_2026_10_04",
+    "relation_pages": [
+      "robotics-embodied/fields/control-locomotion/README.md",
+      "robotics-embodied/fields/control-locomotion/BASELINES.md",
+      "robotics-embodied/fields/imitation-reinforcement-learning/README.md"
+    ]
+  }
+}

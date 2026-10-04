@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2203.15103",
+  "title": "Adversarial Motion Priors Make Good Substitutes for Complex Reward Functions",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2203.15103",
+  "official_url": "https://arxiv.org/abs/2203.15103",
+  "official_fulltext_url": "https://arxiv.org/pdf/2203.15103",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "full_text_checked_not_reproduced",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。v1 全文 8 页（含附录表 III）均已核对；不是独立精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": ["Alejandro Escontrela", "Xue Bin Peng", "Wenhao Yu", "Tingnan Zhang", "Atil Iscen", "Ken Goldberg", "Pieter Abbeel"],
+  "year": 2022,
+  "topic_paths": [
+    "robotics/control"
+  ],
+  "modality_tags": [
+    "state",
+    "action"
+  ],
+  "task_tags": [
+    "decision"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv API 元数据与 v1 PDF 全文（§I–V、表 I–III、图 1–6）",
+    "mechanism_summary": "UC Berkeley 与 Google Brain。任务奖励为线速度与偏航角速度的指数跟踪两项（式 1）；总奖励 w_g r_g + w_s r_s，w_s=0.65、w_g=0.35；判别器作用于状态转移 (s,s′)，沿用 AMP 的 LSGAN 损失与零中心梯度惩罚（w_gp=10，式 3）；风格奖励 max[0,1−0.25(D−1)²]（式 4）。数据为 4.5 s 德国牧羊犬动捕（溜蹄、小跑、跑步、原地转），按 DeepMimic 流程重定向到 A1，使用参考状态初始化。策略 MLP [512,256,128]，30 Hz 输出 PD 目标角，观测为关节角、关节速度、姿态、上一步动作；域随机化摩擦、基座质量、PD 增益与速度扰动（表 I）。Isaac Gym 5280 个环境、40 亿步、单张 V100 约 16 小时。对照的复杂奖励取自 Rudin 2021，文中称 13 项风格项（表 III）。",
+    "results_checked": "表 II（仿真）：命令 0.4/0.8/1.2/1.6 m/s 下，AMP 实测 0.36/0.77/1.11/1.52，复杂奖励 0.41/0.88/1.28/1.67，无风格 0.42/0.82/1.22/1.61；机械 COT：AMP 1.07/0.93/1.02/1.12，复杂奖励 1.54/1.37/1.40/1.41，无风格 14.03/8.00/6.05/5.18。图 2：真机命令 1→2 m/s 时溜蹄切换到跑步（canter）；图 3：0.8 m/s 溜蹄、1.7 m/s 小跑。",
+    "publication_note": "arXiv 注释只写 8 页、6 图、3 表，未写会议；正式发表信息未核实。",
+    "text_table_discrepancy": "§IV-A 正文称复杂奖励组 COT 在 1.37–1.65 之间，表 II 中最大值为 1.54；卡片按表 II 写。",
+    "evidence_boundary": "未复现实验；论文没有局限一节；真机部分为定性展示与图 6 的跟踪曲线。",
+    "verification_status": "full_text_checked",
+    "verification_sources": ["https://arxiv.org/abs/2203.15103", "https://arxiv.org/pdf/2203.15103v1"],
+    "source_origin": "assistant_recommendation_for_user_question",
+    "relation_pages": [
+      "robotics-embodied/fields/control-locomotion/README.md",
+      "robotics-embodied/fields/control-locomotion/BASELINES.md",
+      "perspectives/notes/quadruped-recovery.md"
+    ]
+  }
+}

@@ -193,3 +193,9 @@
 - [A Multi-State Constraint Kalman Filter for Vision-aided Inertial Navigation](papers/msckf/README.md) · 2007 · 文献卡，暂无独立精读
 - [OpenVINS: A Research Platform for Visual-Inertial Estimation](papers/openvins/README.md) · 2020 · 文献卡，暂无独立精读
 - [Parallel Tracking and Mapping for Small AR Workspaces](papers/ptam/README.md) · 2007 · 文献卡，暂无独立精读
+- [AMP: Adversarial Motion Priors for Stylized Physics-Based Character Control](papers/arxiv-2104.02180/README.md) · 2021 · 文献卡，暂无独立精读
+- [Adversarial Motion Priors Make Good Substitutes for Complex Reward Functions](papers/arxiv-2203.15103/README.md) · 2022 · 文献卡，暂无独立精读
+- [Learning Agile Robotic Locomotion Skills by Imitating Animals](papers/arxiv-2004.00784/README.md) · 2020 · 文献卡，暂无独立精读
+- [Expressive Whole-Body Control for Humanoid Robots](papers/arxiv-2402.16796/README.md) · 2024 · 文献卡，暂无独立精读
+- [Learning Human-to-Humanoid Real-Time Whole-Body Teleoperation](papers/arxiv-2403.04436/README.md) · 2024 · 文献卡，暂无独立精读
+- [OmniH2O: Universal and Dexterous Human-to-Humanoid Whole-Body Teleoperation and Learning](papers/arxiv-2406.08858/README.md) · 2024 · 文献卡，暂无独立精读

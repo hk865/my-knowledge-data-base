@@ -28,6 +28,13 @@
   "topic_paths": [
     "robotics/control"
   ],
+  "modality_tags": [
+    "state",
+    "action"
+  ],
+  "task_tags": [
+    "decision"
+  ],
   "year": 2022,
   "authors": [
     "Xue Bin Peng",

@@ -25,7 +25,20 @@
 - [Robust Quadrupedal Locomotion via Risk-Averse Policy Learning](../../papers/arxiv-2308.09405/README.md) · 2023 · 文献卡 · 风险规避
 - [Learning Risk-Aware Quadrupedal Locomotion using Distributional Reinforcement Learning](../../papers/arxiv-2309.14246/README.md) · 2023 · 文献卡 · 风险敏感 PPO
 
+- [OmniH2O: Universal and Dexterous Human-to-Humanoid Whole-Body Teleoperation and Learning](../../papers/arxiv-2406.08858/README.md) · 2024 · 文献卡 · 人形学生按 DAgger 模仿特权教师（交叉引用运动控制）
+
 更多腿足论文见[运动控制方向](../control-locomotion/PAPERS.md)。
+
+## 运动控制中的动作模仿（交叉引用）
+
+只有状态、没有动作的示范（动作捕捉、动画、人体视频），用作 RL 的跟踪目标或风格奖励。详见[运动控制方向](../control-locomotion/README.md#为什么绕不开模仿学习)。
+
+- [DeepMimic: Example-Guided Deep Reinforcement Learning of Physics-Based Character Skills](../../papers/arxiv-1804.02717/README.md) · 2018 · 文献卡 · 跟踪参考动作 + 参考状态初始化
+- [Learning Agile Robotic Locomotion Skills by Imitating Animals](../../papers/arxiv-2004.00784/README.md) · 2020 · 文献卡 · 四足模仿真狗，真机上用 RL 适应
+- [AMP: Adversarial Motion Priors for Stylized Physics-Based Character Control](../../papers/arxiv-2104.02180/README.md) · 2021 · 文献卡 · 判别器风格奖励
+- [Adversarial Motion Priors Make Good Substitutes for Complex Reward Functions](../../papers/arxiv-2203.15103/README.md) · 2022 · 文献卡 · AMP 用于四足 A1
+- [Expressive Whole-Body Control for Humanoid Robots](../../papers/arxiv-2402.16796/README.md) · 2024 · 文献卡 · ExBody：上半身模仿动作捕捉
+- [Learning Human-to-Humanoid Real-Time Whole-Body Teleoperation](../../papers/arxiv-2403.04436/README.md) · 2024 · 文献卡 · H2O：筛掉人形做不到的动作
 
 ## 大规模模仿（真实示范）
 
