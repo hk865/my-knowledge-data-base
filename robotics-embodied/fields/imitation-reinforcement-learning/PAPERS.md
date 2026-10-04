@@ -71,6 +71,15 @@
 - [Precise and Dexterous Robotic Manipulation via Human-in-the-Loop Reinforcement Learning](../../papers/arxiv-2410.21845/README.md) · 2024 · 文献卡 · HIL-SERL：示范 + 人工纠正 + 真机离策略 RL
 - [π*0.6: a VLA That Learns From Experience](../../papers/arxiv-2511.14759/README.md) · 2025 · 文献卡 · RECAP：优势条件化，把部署经验与纠正喂回 VLA
 - [SimpleVLA-RL: Scaling VLA Training via Reinforcement Learning](../../papers/arxiv-2509.09674/README.md) · 2025 · 文献卡 · 仿真中用结果奖励对 VLA 做 RL
+- [RL Token: Bootstrapping Online RL with Vision-Language-Action Models](../../papers/arxiv-2604.23073/README.md) · 2026 · 文献卡 · 冻结 π0.6，在 RL token 上在线训练小 actor-critic
+
+## 2026 年：模仿的数据源变大（人类视频、全身遥操作、动作捕捉）
+
+- [EgoScale: Scaling Dexterous Manipulation with Diverse Egocentric Human Data](../../papers/arxiv-2602.16710/README.md) · 2026 · 文献卡 · 2 万小时第一视角人类视频，对数线性尺度律（交叉引用 VLA）
+- [Large Behavior Models and Atlas Find New Footing](../../papers/boston-dynamics-atlas-lbm/README.md) · 2025 · 官方博客卡 · Boston Dynamics 与 TRI，人形全身遥操作示范 + 扩散 Transformer
+- [SONIC: Supersizing Motion Tracking for Natural Humanoid Whole-Body Control](../../papers/arxiv-2511.07820/README.md) · 2025 · 文献卡 · 700 小时动作捕捉的通用跟踪器（交叉引用运动控制）
+- [Introducing Helix 02: Full-Body Autonomy](../../papers/figure-helix-02/README.md) · 2026 · 官方博客卡 · 人体动作数据 + 仿真 RL 训练的全身控制器（交叉引用运动控制）
+- [Learning Agile Perceptive Traversal of Sparse 3D Structures for Humanoids](../../papers/arxiv-2608.29769/README.md) · 2026 · 文献卡 · DAgger 模仿特权教师 → 带行为锚定的 PPO（交叉引用运动控制）
 
 ## 世界模型（交叉引用）
 

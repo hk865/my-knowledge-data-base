@@ -1,6 +1,6 @@
 # 导航与规划
 
-> 状态：领域入门页 · v2 · 依据 [synthesis.csv](synthesis.csv)（15 篇）
+> 状态：领域入门页 · v2（2026-10-04 追加阶段 6 的 2026 年补充） · 依据 [synthesis.csv](synthesis.csv)（16 行）
 >
 > 速览：
 > 1. 导航要回答两件事：去哪里（把"厨房桌边""第二个门左转"落成地图上的目标或航点），怎样安全到达（在机器人的体积、速度和制动约束下避开障碍）。经典规划解决后者，学习式与基础模型方法主要在改前者。
@@ -96,6 +96,7 @@ Georgia Tech、FAIR、Oregon State 一系在这一阶段做了两件事：把仿
 
 - **慢推理、快执行**。[DualVLN](../../papers/arxiv-2512.08186/README.md)（上海人工智能实验室等，2025 年 12 月）把端到端 VLN 的问题写成：直接从视觉语言输入映射到短时离散动作，动作碎、延迟高、躲不开动态障碍。它让 7B 的 Qwen-VL-2.5 以约 2 Hz 预测图像上的"最远像素目标"，再由轻量扩散 Transformer 以约 30 Hz 生成 32 个航点的平滑轨迹；R2R-CE 未见环境成功率 64.3%、SPL 58.5（StreamVLN 为 56.9%、51.9），并在轮式、四足、人形上做了真机测试。
 - **更大规模、更多任务**。[ABot-N1](../../papers/arxiv-2607.10383/README.md)（2026 年 7 月）用 3000 万样本覆盖点目标、指令跟随、物体目标、POI 目标、跟人五类任务，同样分成慢的视觉语言推理器（输出像素目标）和快的动作专家（输出连续航点）；城市尺度的 POI 到达率 77.3%，比此前最好的方法高 35 个百分点，并开放了两个真实场景 benchmark。
+- **大模型公司入场、纯仿真数据**（2026 年补充）。Mistral AI 的 [Robostral Navigate](../../papers/arxiv-2607.20785/README.md)（2026 年 7 月）只看单目 RGB：8B 的视觉语言模型约 0.5 Hz 在图像上指出目标位置与朝向（目标不在视野内时退回位移指令），121M 的扩散策略以 10 Hz 生成稠密轨迹，再由运动控制器转成 100 Hz 电机指令；训练数据全部来自仿真（240 万条轨迹、35 万个场景），最后用 CISPO 做在线 RL。R2R-CE 未见验证集成功率 77.4%（arXiv v3），DualVLN 为 64.3%；在两台形态差别很大的机器人上用同一权重演示。NVIDIA 在 [GR00T N1.6 的仿真到真机流程](https://developer.nvidia.com/blog/building-generalist-humanoid-capabilities-with-nvidia-isaac-gr00t-n1-6-using-a-sim-to-real-workflow)（2026-01）里用合成数据训练导航策略 COMPASS，零样本部署到新的真实环境，导航策略只给人形的全身控制器发速度指令。
 
 做不好的场景：
 
@@ -103,6 +104,8 @@ Georgia Tech、FAIR、Oregon State 一系在这一阶段做了两件事：把仿
 - **坐标漂移**。ABot-N1 的引言写明：目标坐标以机器人自身为参照给出，标准精度地图的路线或定位一有误差，目标就会被推到物理上不可达的地方；端到端策略把探索与接近混在一起，不同目标的梯度互相冲突。
 
 `[判断]` 站在现在看过去：两篇论文不约而同地把系统拆回两层。差别在于中间接口：经典栈传的是几何路径，NaVILA 传的是语言，DualVLN 与 ABot-N1 传的是图像上的像素目标加一个可学习的潜变量。DualVLN 的消融显示，局部策略只用 System 2 训练数据的 10% 就已饱和，说明难点在上层定目标，而不是下层走过去。与此同时，自建 benchmark 越来越多（VLN-PE、Social-VLN、ABotN-PointBench），跨论文的数字更难直接比较。
+
+`[判断]` 2026 年的补充：Robostral Navigate 是第三个独立团队给出同一种两层接口（上层在图像上指点、下层扩散策略出轨迹），而且频率比 DualVLN 更悬殊（0.5 Hz 对 10 Hz），说明"慢定目标、快走过去"的分层已经跨团队收敛。另一个变化是数据来源：Mistral 与 NVIDIA 的导航模型都只用仿真数据训练再零样本上真机，这接回了第 4 阶段 DD-PPO 一系的仿真规模化，只是现在的仿真场景数（35 万个）与模型规模都大得多；没有真机成功率的报告，仿真规模化能否兑现到真机仍要看后续评测。
 
 ## 技术地基
 
@@ -124,6 +127,8 @@ Georgia Tech、FAIR、Oregon State 一系在这一阶段做了两件事：把仿
 | UCSD、NVIDIA | VLA 输出中层语言动作，接足式 RL 运动策略 | NaVILA | 两层接口是语言，偏航后缺少纠错 |
 | 上海人工智能实验室、AMAP 等（2025–2026） | 大规模数据上的双系统基础模型，自建 benchmark 与开源工具链 | DualVLN（InternNav）、ABot-N1 | 动态人群仍有三分之一以上的撞人率；各自的 benchmark 难以横向比较 |
 | 经典规划（MIT、Bonn/CMU、SRI） | 可证明的性质与实时性 | A*、DWA、RRT* | 语义目标进不来；狭窄通道与局部极小靠补丁 |
+| Mistral AI（2026 年补充） | 单目 RGB、纯仿真数据、大模型指点 + 小扩散策略，同一权重跨轮式、足式、飞行平台 | Robostral Navigate | 只有一篇，没有真机成功率；目标在视野外时只能退回位移指令 |
+| NVIDIA（2026 年补充，工业界） | 合成数据训练导航策略，给人形全身控制器发速度指令，定位交给 cuVSLAM | GR00T N1.6 流程中的 COMPASS（官方博客） | 博客没有给出导航成功率 |
 
 `[判断]` 收敛的部分：2025 年后都把"定目标"与"走过去"分成两个频率不同的模块，都报告连续环境而非导航图的结果，都在真机上做少量（每条件 20 次左右）测试。分化的部分：两层之间传语言（NaVILA）、像素目标加潜变量（DualVLN、ABot-N1）还是地标与拓扑图（LM-Nav、ViNT）；底层是学习的轨迹策略还是经典局部规划器。
 
@@ -171,6 +176,8 @@ Georgia Tech、FAIR、Oregon State 一系在这一阶段做了两件事：把仿
 - NaVILA 的 88% 是 25 条真机指令上的成功率；按环境与难度分开后，家庭场景复杂指令为 67%。
 - DualVLN 的撞人率与成功率来自作者自建的 Social-VLN；ABot-N1 的 77.3% 与 95.4%/92.9% 同样来自作者自建或整理的 benchmark。
 - DWA 原文 PDF 的数字在文本提取中丢失，本页没有引用其中的速度数值。
+- Robostral Navigate 的 R2R-CE 成功率：arXiv v3 为 77.4%（比最好的单目方法高 10.5 个百分点），Mistral 官方博客为 76.6%（高 9.7 个百分点），两者对应不同版本；部分媒体写"40 万条轨迹、6000 个场景"，与官方的 240 万条、35 万个不符，以官方为准。
+- Robostral Navigate 与 DualVLN 的成功率都是作者自报的 R2R-CE 未见验证集结果，传感器设置不同（前者只用单目 RGB）。
 
 **判断的支撑论文**（各行见 [synthesis.csv](synthesis.csv)）
 
@@ -178,6 +185,7 @@ Georgia Tech、FAIR、Oregon State 一系在这一阶段做了两件事：把仿
 - "导航图与完美定位让成绩虚高"：VLN-CE 第 1 节与 Table 4；DD-PPO 无 GPS+Compass 的 0.15；Sim-to-Real VLN Table 2。
 - 团队偏好：Georgia Tech/FAIR 一系见 DD-PPO、VLN-CE、Sim-to-Real VLN 的作者列表（Batra、Lee、Wijmans、Anderson 重复出现）；Berkeley 一系见 LM-Nav、ViNT、NoMaD（Shah、Levine）。2025–2026 年的中国团队只有 DualVLN 与 ABot-N1 两篇，证据偏弱。
 - "难点在上层定目标"：DualVLN §5.3 中 System 1 用 10% 数据即饱和。边界：这是一篇论文的消融，Social-VLN 的撞人率说明下层的动态避障同样没有解决。
+- "两层接口跨团队收敛"（2026 年补充）：DualVLN、ABot-N1、Robostral Navigate 的结构描述。反例：NoMaD 仍是单一扩散策略；GR00T N1.6 的导航策略直接输出速度指令，没有像素目标这一层。
 
 **与其他论文的关联**
 
@@ -193,3 +201,5 @@ Georgia Tech、FAIR、Oregon State 一系在这一阶段做了两件事：把仿
 - DWA 原文 PDF 文字提取不完整（数字缺失），引用的是能读出的相关工作、第 5 节与 Discussion 的文字。
 - ABot-N1 的作者单位未在原文中逐一核对，"AMAP"依据其项目页域名 amap-cvlab.github.io。
 - Speaker-Follower 的单位依据 ar5iv 首页；DualVLN、ABot-N1 的真机测试细节（每个条件的成功率）本轮没有逐表核对。
+- NVIDIA COMPASS 只读了 GR00T N1.6 技术博客中的描述，原论文未打开；Robostral Navigate 是否开放权重，官方博客没有写。
+- 2026 年其他导航基础模型与世界模型导航工作本轮未系统检索。

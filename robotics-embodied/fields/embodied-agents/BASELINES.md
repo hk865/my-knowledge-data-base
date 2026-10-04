@@ -39,6 +39,8 @@
 | ② 技能库 | 保存实际执行过的代码与视觉触觉经验，选择后适配 | [RoboSkill](../../papers/roboskill/reading.md) | 首回合成功与用时改善；跨任务迁移有时变差 |
 | ⑤ 记忆 | 四种记忆存储，在线编辑、离线整理 | [MEMORA](../../papers/memora/reading.md) | 记忆支持规划；全量 QA 不优于最强基线，真机只定性 |
 | ⑤ 记忆 + ④ | 三维层级场景图记忆 + Agent 运行时 + 多类技能 | [HoloAgent-0](../../papers/holoagent-0/reading.md) | 物体导航 82.6%；长程任务只有定性演示 |
+| ① + ③ + ④（2026 年补充） | 具身推理模型作编排器，以工具调用调 VLA；按 VLA 训练指令的摘要判断可行性，另有安全工具负责停机 | [Gemini Robotics 1.5](../../papers/arxiv-2510.03342/README.md)、[Gemini Robotics 2 安全评测](../../papers/gemini-robotics-2-safety/README.md) | ER 1.5 编排总失败率 22%（通用 Gemini 2.5 Flash 44.5%）；可行性判断 62.0% → 95.8% / 人员接近监测的漏报与误报不可兼得，多轮重规划常失败 |
+| ⑤ 记忆（2026 年补充） | 高层策略自己改写一段文字摘要作长时记忆，配合视频短时记忆 | [MEM](../../papers/arxiv-2603.03596/README.md) | 约 15 分钟的真机任务 / 只在一个回合内 |
 | ② 技能接口 | 用人类视频作为新任务说明，预测机器人视频再解码动作 | [Zero-WAM](../../papers/zero-wam/reading.md) | 未见任务 47.0%；属于[世界模型方向](../world-models/README.md)的动作生成底座 |
 
 ## 批注

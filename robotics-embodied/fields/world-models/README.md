@@ -1,6 +1,6 @@
 # 世界模型（机器人侧）
 
-> 状态：领域入门页（§3.6 研究对象型） · v2 · 依据 [synthesis.csv](synthesis.csv)（14 篇）
+> 状态：领域入门页（§3.6 研究对象型） · v2（2026-10-04 追加 Cosmos 一线） · 依据 [synthesis.csv](synthesis.csv)（15 行）
 >
 > 速览：
 > 1. 机器人里的世界模型是一个学到的预测器：给定历史观测和一段动作，预测之后会看到什么（像素、潜变量或预训练特征），有时还预测奖励。它没有专属的任务和 benchmark，好坏由它被拿去做什么来定义：在想象中学策略、部署时规划、当仿真器产生数据、评估别人的策略，或者先预测视频再反解动作。
@@ -131,6 +131,8 @@ Ctrl-World 给出第三个提醒：策略在世界模型里的高层指令遵循
 
 做不好的场景：Veo 评估器自述难以模拟与小物体的接触，只能生成约 8 秒（任务需要 60 秒以上），操作中物体会凭空出现或消失，仍依赖人工给视频打分。Ctrl-World 自述在精细交互、长程推理、碰撞、物体滑走与旋转上有差距，成功轨迹要靠人挑选。Genie Envisioner 只用自家一种数据源，只覆盖平行夹爪的桌面上半身操作，任务成功的自动评估仍未解决。Cosmos 自述缺乏物体永久性、接触丰富的动力学不准、物理对齐不足。
 
+2025 年 10 月，NVIDIA 发布 Cosmos 的下一版 [Cosmos-Predict2.5](https://arxiv.org/abs/2511.00062)（官方技术报告，本页未建卡）：基于 flow matching，把文本、图像、视频到世界的生成统一进一个模型，用 Cosmos-Reason1 做文本条件，在 2 亿段筛选过的视频上训练、再用强化学习后训练，2B 与 14B 两档按 NVIDIA Open Model License 开放；报告列出的机器人用途包括动作条件的视频生成（用于策略验证）与相机可控的多视角操作视频。
+
 `[判断]` 站在现在看过去：世界模型在这一阶段找到了一个不需要"完美物理"的用途：评估只要求排名对，不要求每段视频都对，所以 Pearson 0.92 的评估器可以在接触物理不准的情况下仍然有用。这也解释了为什么做这件事的多是同时拥有大视频模型和大 VLA 的团队（Google DeepMind、NVIDIA、智元）。
 
 ### 6 世界模型与动作模型合并（2026）
@@ -138,8 +140,11 @@ Ctrl-World 给出第三个提醒：策略在世界模型里的高层指令遵循
 - [Zero-WAM](../../papers/zero-wam/reading.md)（2026 年 8 月）把人类示范视频作为上下文，先预测机器人接下来的视频，再由动作分支解码动作；在 RoboTwin 2.0 的 7 个未见任务上平均 47.0%，比最强的视频—动作基线高 29.5 个百分点。它的 IFP 目标（训练时额外预测更远的未来片段）消融显示从 28.55% 升到 46.95%。
 - [EVA](../../../multimodal/papers/arxiv-2603.17808/README.md)（2026）指出视觉上连贯的生成视频可能违反刚体与运动学一致性，用逆动力学模型把生成视频解成动作、以动作的可执行性作为强化学习奖励来对齐视频世界模型。
 - [Hydra-0](../../../multimodal/papers/arxiv-2608.18077/README.md)（2026）用"像素运动"作为跨本体的统一接口，同时做世界建模与控制，在 RoboLab 上预测成功率与实际成功率相关 r = 0.96。
+- [Cosmos Policy](../../papers/arxiv-2601.16163/README.md)（NVIDIA、Stanford，2026 年 1 月，补充）把 2B 的视频扩散模型 Cosmos-Predict2 直接后训练成策略、不改结构：动作块、本体状态、未来图像和价值都编码成"潜在帧"排进同一段扩散序列，同一个模型既出动作、又预测未来和价值，可以对候选动作块做 best-of-N 规划。LIBERO 98.5%、RoboCasa 67.1%；真机 ALOHA 四个双臂任务平均 93.6 分，作者报告整体高于 π0.5；加规划后两个最难任务再提高约 12.5 分。
 
-做不好的场景：Zero-WAM 训练时动作分支以真实的未来视频为条件（teacher forcing），部署时只能用生成的视频，视频错了动作跟着错；7 个任务里放空杯 84.87%、叠三个方块只有 9%（[Zero-WAM 精读](../../papers/zero-wam/reading.md)）。
+做不好的场景：Zero-WAM 训练时动作分支以真实的未来视频为条件（teacher forcing），部署时只能用生成的视频，视频错了动作跟着错；7 个任务里放空杯 84.87%、叠三个方块只有 9%（[Zero-WAM 精读](../../papers/zero-wam/reading.md)）。Cosmos Policy 加规划时约 5 秒才出一个动作块，作者写明难用于动态任务，有效规划需要大量 rollout 数据，目前只做一层 best-of-N。
+
+`[判断]` 站在现在看（2026 年补充）：Cosmos 平台论文（2025 年 1 月）只列出世界模型的五种机器人用途、没有实证；一年后 NVIDIA 自己用 Cosmos Policy 给出了"策略初始化"与"规划"两种用途的实证，并在 GR00T N1.7 里用同一平台的 Cosmos-Reason2 当 VLA 的视觉语言骨干（见 [VLA 方向](../vla/README.md)第 7 阶段）。Physical Intelligence 的 π0.7 用一个轻量世界模型生成子目标图像放进提示，是另一种"世界模型服务策略"的接法。规划仍然慢：Cosmos Policy 的 5 秒一个动作块，与 V-JEPA 2-AC 的每个动作 16 秒是同一个数量级的问题。
 
 ## 趋势
 
@@ -147,7 +152,7 @@ Ctrl-World 给出第三个提醒：策略在世界模型里的高层指令遵循
 
 1. **规划用的表示从像素走向语义特征，评估用的表示留在像素。** DINO-WM、V-JEPA 2、Reconstruction or Semantics?、LARY 都指向语义潜空间更适合规划与动作对齐；Veo 评估器、Ctrl-World、Genie Envisioner 仍生成多视角像素，因为评估结果要由人或 VLM 看懂。表示的选择由用法决定。
 2. **用法从"替代真实环境"转向"为 VLA 服务"。** 2018–2023 年的主流用法是在模型里学策略（World Models、Dreamer 一线）；2025 年后的主要用法是评估 VLA、给 VLA 合成数据（Veo 评估器、Ctrl-World、Cosmos 列出的用途）。驱动力是机器人策略的主流变成了模仿学习训练的 VLA，它没有奖励函数可以在想象中优化，却很需要便宜的评估。
-3. **世界模型与策略合并。** UniPi 的"视频 + 逆动力学"、Genie Envisioner 的 GE-Act、Zero-WAM、Hydra-0 都让同一个模型既预测未来又输出动作。
+3. **世界模型与策略合并。** UniPi 的"视频 + 逆动力学"、Genie Envisioner 的 GE-Act、Zero-WAM、Hydra-0 都让同一个模型既预测未来又输出动作。2026 年的 Cosmos Policy 连价值也放进同一个视频模型，并在 LIBERO、RoboCasa 与真机 ALOHA 上与 π0.5 一类 VLA 直接比较。
 4. **薄弱环节一直没变。** 接触丰富的物理、长时记忆、推理速度，从 UniSim（2023）到 Veo 评估器（2025）都被自述为局限；视频生成一侧的同样问题见观点页[《生成收敛》](../../../perspectives/generative-convergence.md#从视频生成到世界模型)。
 
 ## 主要路线与团队偏好
@@ -159,6 +164,7 @@ Ctrl-World 给出第三个提醒：策略在世界模型里的高层指令遵循
 | Google DeepMind（Yilun Du、Sherry Yang 等） | 视频生成作为策略、仿真器与评估器 | UniPi、UniSim、Veo 评估器（Du 也参与 Hydra-0） | 生成慢、幻觉、时长短；需要人工判定 |
 | NVIDIA、智元（AgiBot） | 世界基础模型平台：视频模型 + 动作头 + 仿真评估 | Cosmos、Genie Envisioner | Cosmos 未给出机器人用途的实证；GE 只用自家数据 |
 | UCSD（Hansen、Wang） | 不要解码器，只学对规划有用的潜变量 | TD-MPC2 | 只有一篇代表，偏好证据弱 |
+| NVIDIA（2026 年补充） | 同一个 Cosmos 平台同时供给世界模型（Cosmos-Predict2.5）、策略（Cosmos Policy）与 VLA 骨干（GR00T N1.7 的 Cosmos-Reason2） | Cosmos、Cosmos-Predict2.5、Cosmos Policy | 带规划时约 5 秒一个动作块；Predict2.5 报告本页未逐节核读 |
 
 `[判断]` 收敛的部分：都用某种潜空间而非原始像素做动力学；2025 年后都在 DROID、Bridge、AgiBot World 这类大规模机器人数据上微调。分化的部分：生成像素（DeepMind、NVIDIA、智元、Stanford）还是只预测特征（Meta）；模型用来规划、评估还是直接出动作。
 
@@ -168,7 +174,7 @@ Ctrl-World 给出第三个提醒：策略在世界模型里的高层指令遵循
 - **长程预测怎样不漂？** V-JEPA 2 的误差累积、Veo 的 8 秒上限、UniSim 的短记忆。入口：[V-JEPA 2](../../papers/arxiv-2506.09985/README.md)、[Ctrl-World](../../papers/arxiv-2510.10125/README.md) 的位姿条件记忆检索。
 - **怎样挑世界模型？** 视觉保真度不足以作为标准。入口：[Reconstruction or Semantics?](../../../multimodal/papers/arxiv-2605.06388/README.md)、[LARY](../../../multimodal/papers/arxiv-2604.11689/README.md)。
 - **生成的未来能否被机器人执行？** 入口：[EVA](../../../multimodal/papers/arxiv-2603.17808/README.md)、[Zero-WAM](../../papers/zero-wam/reading.md)。
-- **规划能否快到闭环可用？** DINO-WM 53 秒、V-JEPA 2-AC 16 秒每个动作。入口：[DINO-WM](../../../multimodal/papers/arxiv-2411.04983/README.md)、[TD-MPC2](../../papers/arxiv-2310.16828/README.md)。
+- **规划能否快到闭环可用？** DINO-WM 53 秒、V-JEPA 2-AC 16 秒每个动作。入口：[DINO-WM](../../../multimodal/papers/arxiv-2411.04983/README.md)、[TD-MPC2](../../papers/arxiv-2310.16828/README.md)。2026 年补充：Cosmos Policy 带规划时约 5 秒一个动作块，入口 [Cosmos Policy](../../papers/arxiv-2601.16163/README.md)。
 
 ## 阅读顺序
 
@@ -177,6 +183,7 @@ Ctrl-World 给出第三个提醒：策略在世界模型里的高层指令遵循
 3. [DINO-WM](../../../multimodal/papers/arxiv-2411.04983/README.md) 与 [V-JEPA 2](../../papers/arxiv-2506.09985/README.md)：在特征空间里规划，对照读规划耗时与目标形式。
 4. [Veo 评估器](../../papers/arxiv-2512.10675/README.md) 与 [Ctrl-World](../../papers/arxiv-2510.10125/README.md)：世界模型怎样为 VLA 做评估与数据，注意相关系数说明了什么、没说明什么。
 5. [Zero-WAM 精读](../../papers/zero-wam/reading.md)：世界模型与动作模型合并的当前形态，注意训练与部署时视频来源的不同。
+6. （2026 年补充）[Cosmos Policy](../../papers/arxiv-2601.16163/README.md)：把一个现成的视频世界模型直接后训练成策略加价值函数，对照 [Cosmos](../../../multimodal/papers/arxiv-2501.03575/README.md) 平台论文列出、但没有实证的用途。
 
 基线拆分见 [Baseline 页](BASELINES.md)，按问题排列的学习路线见[路线图](ROADMAP.md)，本方向收录的论文见[论文目录](PAPERS.md)。
 
@@ -195,12 +202,15 @@ Ctrl-World 给出第三个提醒：策略在世界模型里的高层指令遵循
 - Ctrl-World 的 38.7% → 83.4% 是在新物体与新指令上、用想象中筛出的成功轨迹微调 π0.5 后的结果，成功轨迹由人挑选。
 - Cosmos 列出的五种机器人用途，原文写明没有实证结果。
 - Zero-WAM 的 47.0% 是 7 个留出任务的宏平均，各任务从 9% 到 84.87% 不等。
+- Cosmos Policy 的 ALOHA 93.6 是四个任务的平均得分；对 π0.5 并非每项都高（装糖果进碗 89.6 对 95.2），"约 12.5 分"只在两个最难的任务上、加规划之后。
+- Cosmos-Predict2.5 的描述只取自 arXiv 摘要页（v2，2026-02），没有核读正文的机器人实验。
 
 **判断的支撑论文**（各行见 [synthesis.csv](synthesis.csv)）
 
 - 趋势 1：DINO-WM 局限与规划设置；V-JEPA 2-AC；Reconstruction or Semantics? 摘要；LARY 摘要。反例：Ctrl-World、Veo 评估器、Genie Envisioner 保留像素且效果好，说明在评估用途上像素有必要。
 - 趋势 2：Cosmos §2.1 的用途列表；Veo 评估器；Ctrl-World；DreamerV3 精读中"每任务单独训练"的说明。反例：TD-MPC2 与 DayDreamer 仍在用模型学策略；Zero-WAM 直接出动作。
-- 趋势 3：UniPi、GE-Act、Zero-WAM、Hydra-0 摘要。
+- 趋势 3：UniPi、GE-Act、Zero-WAM、Hydra-0 摘要；2026 年补充 Cosmos Policy 摘要与 ALOHA 表。
+- NVIDIA 用一个平台供给世界模型、策略与 VLA 骨干（2026 年补充）：Cosmos-Predict2.5 摘要、Cosmos Policy 摘要、GR00T N1.7 官方博客（VLM 为 Cosmos-Reason2-2B）。边界：三者是否共享训练数据与权重，官方材料没有写。
 - 团队偏好：Hafner 出现在 PlaNet、DayDreamer、DreamerV3 的作者列表；Abbeel 出现在 DayDreamer、UniPi、UniSim；Yilun Du 出现在 UniPi、UniSim、Veo 评估器、Hydra-0，Sherry Yang 出现在 UniSim 与 Veo 评估器；LeCun 出现在 DINO-WM。V-JEPA 2 的作者列表本轮只核对了单位（Meta FAIR、Mila、Polytechnique Montréal）。
 
 **与其他论文的关联**
@@ -216,3 +226,4 @@ Ctrl-World 给出第三个提醒：策略在世界模型里的高层指令遵循
 - Genie Envisioner 的真机成功率表格没有逐项核对；"1 小时适配"来自其跨本体实验的描述。
 - WorldGym、WorldEval、dWorldEval、RoboWorld 等其他用世界模型评估策略的工作本轮只看到检索结果，未打开原文，未收录。
 - 多模态目录下的 SlotFormer、SAVi++、FOCUS、OccWorld 等卡片目前只有题录，本页只按摘要在 [Baseline 页](BASELINES.md)中归位。
+- Cosmos-Predict2.5（arXiv:2511.00062）未建卡，可能由[多模态世界模型方向](../../../multimodal/fields/world-models/README.md)收录；NVIDIA DreamGen / GR00T Dreams、1X 世界模型、Genie 3 在机器人评估中的用法本轮未打开原文。

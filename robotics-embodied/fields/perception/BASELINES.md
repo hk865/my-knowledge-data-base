@@ -43,6 +43,9 @@
 | 与下游的接口 | 面向四足运动的泛化深度感知模型 | [MGDP](../../papers/doi-10.1002-advs.202524345/README.md) | 原文未打开，位置待核实 |
 | 预测网络的主干 | ViT、CLIP 编码器作为主干或语义来源 | [ViT](../../../multimodal/papers/vit/README.md)、[CLIP](../../../multimodal/papers/clip/README.md) | 表征的性质与取舍见[视觉表征方向](../../../multimodal/fields/visual-representation/README.md) |
 | 位姿来源（上游） | 语义地图依赖的位姿由 SLAM 或 VIO 提供 | [ORB-SLAM3](../../papers/orb-slam3/reading.md)、[ESKF](../../papers/eskf/reading.md) | 见[定位与建图的基线](../localization-mapping/BASELINES.md) |
+| 预测网络（2026 年补充） | 按名词短语或示例图提示的概念分割：检测器与记忆式视频跟踪器共享骨干，存在头分开"有没有"与"在哪里" | [SAM 3](../../papers/arxiv-2511.16719/README.md) | 识别、检测、分割、跨帧 ID 一个模型完成，单图约 30 ms（H200）/ 视频中物体多时不实时；细粒度领域外概念与长短语做不好 |
+| 预测网络（2026 年补充） | 任意视图、有无位姿的统一几何：普通 DINO 编码器 + "深度 + 射线"单一目标；另有度量深度版本 | [Depth Anything 3](../../papers/arxiv-2511.10647/README.md) | 位姿与几何超过 VGGT，单目深度超过 V2，可作 SLAM 前端 / 无局限一节，动态场景留作未来 |
+| 传感器与输入表示（2026 年补充） | 双目匹配的基础模型：百万对合成图像 + 侧调接入的单目先验，零样本 | [FoundationStereo](../../papers/arxiv-2501.09898/README.md) | 无需目标域微调，进入 NVIDIA 人形参考栈 / A100 上单帧约 0.7 s；透明物体训练样本少 |
 
 ## 批注
 

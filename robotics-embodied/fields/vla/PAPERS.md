@@ -47,6 +47,23 @@
 - [RoboTTT: Context Scaling for Robot Policies](../../papers/arxiv-2607.15275/README.md) · 2026 · NVIDIA、Stanford、UT Austin · 文献卡 · 格：观测表示 = 长上下文
 - [Zero-WAM: In-Context World-Action Modeling from Human Videos for Open-Ended Task Generalization](../../papers/zero-wam/README.md) · 2026 · 选定章节讲解 · 格：任务条件 = 示教作提示；训练目标 = 预测未来
 
+## 7 全身、记忆与人类视频（2026）
+
+- [EgoScale: Scaling Dexterous Manipulation with Diverse Egocentric Human Data](../../papers/arxiv-2602.16710/README.md) · 2026 · NVIDIA、UC Berkeley、UMD 等 · 文献卡 · 格：数据 = 大规模第一视角人类视频
+- [MEM: Multi-Scale Embodied Memory for Vision Language Action Models](../../papers/arxiv-2603.03596/README.md) · 2026 · Physical Intelligence · 文献卡 · 格：观测表示 = 视频短时记忆 + 文字长时记忆
+- [RL Token: Bootstrapping Online RL with Vision-Language-Action Models](../../papers/arxiv-2604.23073/README.md) · 2026 · Physical Intelligence · 文献卡（归属模仿与强化学习方向，在此交叉引用） · 格：训练目标 = 冻结 VLA 上的在线 RL 精修
+- [Introducing Helix 02: Full-Body Autonomy](../../papers/figure-helix-02/README.md) · 2026 · Figure AI · 官方博客卡（归属运动控制方向，在此交叉引用） · 格：推理调度 = VLA + 1 kHz 全身控制器
+- [Gemini Robotics 2 brings whole body intelligence to robots](../../papers/gemini-robotics-2/README.md) · 2026 · Google DeepMind · 官方博客卡 · 格：推理调度 = 全身；整体缩放 = 机载版 On-Device 2
+- [Gemini Robotics 2: Safety Evaluations](../../papers/gemini-robotics-2-safety/README.md) · 2026 · Google DeepMind · 官方技术报告卡（归属具身 Agent 方向，在此交叉引用）
+- [UnifoLM-WLA-1.0](../../papers/unifolm-wla/README.md) · 2026 · Unitree · 官方仓库卡 · 格：数据 = 约 2500 小时真机数据，开放权重与训练代码
+- [Cosmos Policy: Fine-Tuning Video Models for Visuomotor Control and Planning](../../papers/arxiv-2601.16163/README.md) · 2026 · NVIDIA、Stanford · 文献卡（归属世界模型方向，在此交叉引用）
+
+## 公司官方材料（外部链接，不建卡）
+
+- [Building Generalist Humanoid Capabilities with NVIDIA Isaac GR00T N1.6 Using a Sim-to-Real Workflow](https://developer.nvidia.com/blog/building-generalist-humanoid-capabilities-with-nvidia-isaac-gr00t-n1-6-using-a-sim-to-real-workflow) · 2026-01 · NVIDIA 技术博客 · VLA 接 RL 训练的全身控制器，导航给速度指令
+- [NVIDIA Isaac GR00T N1.7](https://huggingface.co/blog/nvidia/gr00t-n1-7) · 2026-04 · NVIDIA 官方 Hugging Face 博客；代码与版本记录见 [Isaac-GR00T](https://github.com/NVIDIA/Isaac-GR00T)
+- [UnifoLM-VLA-0](https://github.com/unitreerobotics/unifolm-vla) 与 [UnifoLM-WMA-0](https://github.com/unitreerobotics/unifolm-world-model-action) · Unitree 官方仓库 · UnifoLM-WLA-1.0 的前作
+
 ## 跨方向的前置与参照
 
 - [Learning Transferable Visual Models From Natural Language Supervision](../../../multimodal/papers/clip/README.md)（CLIP） · 2021 · 技术精读 · 阅读顺序第 1 篇：SigLIP 的来源路线

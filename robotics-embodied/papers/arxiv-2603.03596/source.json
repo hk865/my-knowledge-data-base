@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2603.03596",
+  "title": "MEM: Multi-Scale Embodied Memory for Vision Language Action Models",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2603.03596",
+  "official_url": "https://arxiv.org/abs/2603.03596",
+  "official_fulltext_url": "https://arxiv.org/pdf/2603.03596",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。arXiv 摘要页与 v2 HTML 选段：方法（视频编码器、语言记忆的标签生成）、实验图 4–9 的文字结论；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Marcel Torne",
+    "Karl Pertsch",
+    "Homer Walke",
+    "Kyle Vedder",
+    "Suraj Nair",
+    "Brian Ichter",
+    "Allen Z. Ren",
+    "Haohuan Wang",
+    "Jiaming Tang",
+    "Kyle Stachowicz",
+    "Karan Dhabalia",
+    "Michael Equi",
+    "Quan Vuong",
+    "Jost Tobias Springenberg",
+    "Sergey Levine",
+    "Chelsea Finn",
+    "Danny Driess"
+  ],
+  "year": 2026,
+  "topic_paths": [
+    "robotics/embodied-policies",
+    "robotics/embodied-agents"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v2 HTML 选段：方法（视频编码器、语言记忆的标签生成）、实验图 4–9 的文字结论；",
+    "mechanism_summary": "基座 π0.6；短时视频记忆：每 4 层时间注意力、无新增参数，预训练 6 帧间隔 1 s，推理最多 18 帧 54 s；长时文字记忆：高层策略更新摘要，标签由现成 LLM 生成并压缩；任务最长约 15 分钟；消融：去视频记忆卡住、去语言记忆遗忘、朴素语言记忆更差；灵巧任务与无记忆 π0.6 持平。原文无单独局限一节，未来工作为跨回合记忆。",
+    "evidence_boundary": "未复现实验；数字取自原文或官方页面的正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2603.03596",
+      "https://arxiv.org/html/2603.03596v2"
+    ],
+    "source_origin": "robotics_recency_audit_2026_10_04",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "image",
+    "video",
+    "text",
+    "action"
+  ],
+  "task_tags": [
+    "decision"
+  ]
+}

@@ -31780,5 +31780,932 @@
       "Akanksha Shukla",
       "等 357 位作者"
     ]
+  },
+  {
+    "id": "url:https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
+    "title": "Gemini Robotics 2 brings whole body intelligence to robots",
+    "url": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
+    "arxiv_id": null,
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/embodied-policies",
+      "robotics/control"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "official_blog",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p501",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/gemini-robotics-2",
+    "canonical_path": "robotics-embodied/papers/gemini-robotics-2/README.md",
+    "canonical_readme": "robotics-embodied/papers/gemini-robotics-2/README.md",
+    "source_path": "robotics-embodied/papers/gemini-robotics-2/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Carolina Parada",
+      "Gemini Robotics Team"
+    ]
+  },
+  {
+    "id": "url:https://github.com/unitreerobotics/unifolm-wla",
+    "title": "UnifoLM-WLA-1.0",
+    "url": "https://github.com/unitreerobotics/unifolm-wla",
+    "arxiv_id": null,
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://github.com/unitreerobotics/unifolm-wla"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "repository",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p502",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/unifolm-wla",
+    "canonical_path": "robotics-embodied/papers/unifolm-wla/README.md",
+    "canonical_readme": "robotics-embodied/papers/unifolm-wla/README.md",
+    "source_path": "robotics-embodied/papers/unifolm-wla/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Unitree Robotics"
+    ]
+  },
+  {
+    "id": "url:https://www.figure.ai/news/helix-02",
+    "title": "Introducing Helix 02: Full-Body Autonomy",
+    "url": "https://www.figure.ai/news/helix-02",
+    "arxiv_id": null,
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/control",
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://www.figure.ai/news/helix-02"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "official_blog",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p503",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/figure-helix-02",
+    "canonical_path": "robotics-embodied/papers/figure-helix-02/README.md",
+    "canonical_readme": "robotics-embodied/papers/figure-helix-02/README.md",
+    "source_path": "robotics-embodied/papers/figure-helix-02/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Figure AI"
+    ]
+  },
+  {
+    "id": "url:https://bostondynamics.com/blog/large-behavior-models-atlas-find-new-footing/",
+    "title": "Large Behavior Models and Atlas Find New Footing",
+    "url": "https://bostondynamics.com/blog/large-behavior-models-atlas-find-new-footing/",
+    "arxiv_id": null,
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/embodied-policies",
+      "robotics/control"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://bostondynamics.com/blog/large-behavior-models-atlas-find-new-footing/"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "official_blog",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p504",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state",
+      "text",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/boston-dynamics-atlas-lbm",
+    "canonical_path": "robotics-embodied/papers/boston-dynamics-atlas-lbm/README.md",
+    "canonical_readme": "robotics-embodied/papers/boston-dynamics-atlas-lbm/README.md",
+    "source_path": "robotics-embodied/papers/boston-dynamics-atlas-lbm/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Boston Dynamics",
+      "Toyota Research Institute"
+    ]
+  },
+  {
+    "id": "url:https://storage.googleapis.com/deepmind-media/gemini-robotics/Gemini-Robotics-2-Safety.pdf",
+    "title": "Gemini Robotics 2: Safety Evaluations",
+    "url": "https://storage.googleapis.com/deepmind-media/gemini-robotics/Gemini-Robotics-2-Safety.pdf",
+    "arxiv_id": null,
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/embodied-agents",
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://storage.googleapis.com/deepmind-media/gemini-robotics/Gemini-Robotics-2-Safety.pdf"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "official_technical_report",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p505",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "video",
+      "text",
+      "action"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/gemini-robotics-2-safety",
+    "canonical_path": "robotics-embodied/papers/gemini-robotics-2-safety/README.md",
+    "canonical_readme": "robotics-embodied/papers/gemini-robotics-2-safety/README.md",
+    "source_path": "robotics-embodied/papers/gemini-robotics-2-safety/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Gemini Robotics Team"
+    ]
+  },
+  {
+    "id": "arxiv:2603.03596",
+    "title": "MEM: Multi-Scale Embodied Memory for Vision Language Action Models",
+    "url": "https://arxiv.org/abs/2603.03596",
+    "arxiv_id": "2603.03596",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/embodied-policies",
+      "robotics/embodied-agents"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2603.03596"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p506",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "video",
+      "text",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2603.03596",
+    "canonical_path": "robotics-embodied/papers/arxiv-2603.03596/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2603.03596/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2603.03596/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Marcel Torne",
+      "Karl Pertsch",
+      "Homer Walke",
+      "Kyle Vedder",
+      "Suraj Nair",
+      "Brian Ichter",
+      "Allen Z. Ren",
+      "Haohuan Wang",
+      "Jiaming Tang",
+      "Kyle Stachowicz",
+      "Karan Dhabalia",
+      "Michael Equi",
+      "Quan Vuong",
+      "Jost Tobias Springenberg",
+      "Sergey Levine",
+      "Chelsea Finn",
+      "Danny Driess"
+    ]
+  },
+  {
+    "id": "arxiv:2602.16710",
+    "title": "EgoScale: Scaling Dexterous Manipulation with Diverse Egocentric Human Data",
+    "url": "https://arxiv.org/abs/2602.16710",
+    "arxiv_id": "2602.16710",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2602.16710"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p507",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "video",
+      "image",
+      "text",
+      "action"
+    ],
+    "task_tags": [
+      "decision",
+      "analysis"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2602.16710",
+    "canonical_path": "robotics-embodied/papers/arxiv-2602.16710/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2602.16710/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2602.16710/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Ruijie Zheng",
+      "Dantong Niu",
+      "Yuqi Xie",
+      "Jing Wang",
+      "Mengda Xu",
+      "Yunfan Jiang",
+      "Fernando Castañeda",
+      "Fengyuan Hu",
+      "You Liang Tan",
+      "Letian Fu",
+      "Trevor Darrell",
+      "Furong Huang",
+      "Yuke Zhu",
+      "Danfei Xu",
+      "Linxi Fan"
+    ]
+  },
+  {
+    "id": "arxiv:2511.07820",
+    "title": "SONIC: Supersizing Motion Tracking for Natural Humanoid Whole-Body Control",
+    "url": "https://arxiv.org/abs/2511.07820",
+    "arxiv_id": "2511.07820",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2511.07820"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p508",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "state",
+      "action",
+      "video"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2511.07820",
+    "canonical_path": "robotics-embodied/papers/arxiv-2511.07820/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2511.07820/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2511.07820/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Zhengyi Luo",
+      "Ye Yuan",
+      "Tingwu Wang",
+      "Chenran Li",
+      "Fernando Castañeda",
+      "Sirui Chen",
+      "Zi-Ang Cao",
+      "Jiefeng Li",
+      "等 28 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2608.29769",
+    "title": "Learning Agile Perceptive Traversal of Sparse 3D Structures for Humanoids",
+    "url": "https://arxiv.org/abs/2608.29769",
+    "arxiv_id": "2608.29769",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/control",
+      "robotics/perception"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2608.29769"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p509",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2608.29769",
+    "canonical_path": "robotics-embodied/papers/arxiv-2608.29769/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2608.29769/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2608.29769/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Efe Ongan",
+      "Chong Zhang",
+      "Boyang Sun",
+      "Andrei Cramariuc",
+      "Cesar Cadena",
+      "Marco Hutter"
+    ]
+  },
+  {
+    "id": "arxiv:2604.23073",
+    "title": "RL Token: Bootstrapping Online RL with Vision-Language-Action Models",
+    "url": "https://arxiv.org/abs/2604.23073",
+    "arxiv_id": "2604.23073",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2604.23073"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p510",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2604.23073",
+    "canonical_path": "robotics-embodied/papers/arxiv-2604.23073/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2604.23073/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2604.23073/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Charles Xu",
+      "Jost Tobias Springenberg",
+      "Michael Equi",
+      "Ali Amin",
+      "Adnan Esmail",
+      "Sergey Levine",
+      "Liyiming Ke"
+    ]
+  },
+  {
+    "id": "arxiv:2511.16719",
+    "title": "SAM 3: Segment Anything with Concepts",
+    "url": "https://arxiv.org/abs/2511.16719",
+    "arxiv_id": "2511.16719",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/perception"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2511.16719"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p511",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "video",
+      "text"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2511.16719",
+    "canonical_path": "robotics-embodied/papers/arxiv-2511.16719/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2511.16719/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2511.16719/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Nicolas Carion",
+      "Laura Gustafson",
+      "Yuan-Ting Hu",
+      "Shoubhik Debnath",
+      "Ronghang Hu",
+      "等 38 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2511.10647",
+    "title": "Depth Anything 3: Recovering the Visual Space from Any Views",
+    "url": "https://arxiv.org/abs/2511.10647",
+    "arxiv_id": "2511.10647",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/perception",
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2511.10647"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p512",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2511.10647",
+    "canonical_path": "robotics-embodied/papers/arxiv-2511.10647/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2511.10647/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2511.10647/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Haotong Lin",
+      "Sili Chen",
+      "Junhao Liew",
+      "Donny Y. Chen",
+      "Zhenyu Li",
+      "等 8 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2501.09898",
+    "title": "FoundationStereo: Zero-Shot Stereo Matching",
+    "url": "https://arxiv.org/abs/2501.09898",
+    "arxiv_id": "2501.09898",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/perception"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2501.09898"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p513",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2501.09898",
+    "canonical_path": "robotics-embodied/papers/arxiv-2501.09898/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2501.09898/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2501.09898/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Bowen Wen",
+      "Matthew Trepte",
+      "Joseph Aribido",
+      "Jan Kautz",
+      "Orazio Gallo",
+      "Stan Birchfield"
+    ]
+  },
+  {
+    "id": "arxiv:2509.13414",
+    "title": "MapAnything: Universal Feed-Forward Metric 3D Reconstruction",
+    "url": "https://arxiv.org/abs/2509.13414",
+    "arxiv_id": "2509.13414",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2509.13414"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p514",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2509.13414",
+    "canonical_path": "robotics-embodied/papers/arxiv-2509.13414/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2509.13414/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2509.13414/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Nikhil Keetha",
+      "Norman Müller",
+      "Johannes Schönberger",
+      "Lorenzo Porzi",
+      "Yuchen Zhang",
+      "等 17 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2609.19518",
+    "title": "AMB3R-SLAM: Kilometer-scale SLAM with Hierarchical Backend",
+    "url": "https://arxiv.org/abs/2609.19518",
+    "arxiv_id": "2609.19518",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2609.19518"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p515",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2609.19518",
+    "canonical_path": "robotics-embodied/papers/arxiv-2609.19518/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2609.19518/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2609.19518/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Hengyi Wang",
+      "Lourdes Agapito"
+    ]
+  },
+  {
+    "id": "arxiv:2506.04359",
+    "title": "cuVSLAM: CUDA accelerated visual odometry and mapping",
+    "url": "https://arxiv.org/abs/2506.04359",
+    "arxiv_id": "2506.04359",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2506.04359"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p516",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2506.04359",
+    "canonical_path": "robotics-embodied/papers/arxiv-2506.04359/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2506.04359/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2506.04359/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Alexander Korovko",
+      "Dmitry Slepichev",
+      "Alexander Efitorov",
+      "Aigul Dzhumamuratova",
+      "Viktor Kuznetsov",
+      "等 8 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2607.20785",
+    "title": "Robostral Navigate",
+    "url": "https://arxiv.org/abs/2607.20785",
+    "arxiv_id": "2607.20785",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/navigation-planning"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2607.20785"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p517",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2607.20785",
+    "canonical_path": "robotics-embodied/papers/arxiv-2607.20785/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2607.20785/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2607.20785/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Abdelaziz Bounhar",
+      "Abhijeet Somani",
+      "Aditi Kabra",
+      "Adrian Valente",
+      "Adrien Petralia",
+      "等 276 位作者（Mistral AI）"
+    ]
+  },
+  {
+    "id": "arxiv:2601.16163",
+    "title": "Cosmos Policy: Fine-Tuning Video Models for Visuomotor Control and Planning",
+    "url": "https://arxiv.org/abs/2601.16163",
+    "arxiv_id": "2601.16163",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/embodied-policies",
+      "multimodal/world-models"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2601.16163"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p518",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "video",
+      "image",
+      "action"
+    ],
+    "task_tags": [
+      "decision",
+      "generation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2601.16163",
+    "canonical_path": "robotics-embodied/papers/arxiv-2601.16163/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2601.16163/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2601.16163/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Moo Jin Kim",
+      "Yihuai Gao",
+      "Tsung-Yi Lin",
+      "Yen-Chen Lin",
+      "Yunhao Ge",
+      "Grace Lam",
+      "Percy Liang",
+      "Shuran Song",
+      "Ming-Yu Liu",
+      "Chelsea Finn",
+      "Jinwei Gu"
+    ]
   }
 ]

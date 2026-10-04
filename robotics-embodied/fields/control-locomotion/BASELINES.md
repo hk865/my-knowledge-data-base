@@ -66,6 +66,9 @@
 | 系统结构 | 真机自主练习 + 自动重置（轮式） | [FastRLAP](../../papers/fastrlap/README.md) | 20 分钟内学会高速驾驶 / 轮式平台，不直接适用于腿足 |
 | 系统结构 | Isaac Gym 训练 + MuJoCo sim-to-sim 校验 | [Humanoid-Gym](../../papers/arxiv-2404.05695/README.md) | 上真机前多一道检查 / 未述局限 |
 | 系统结构 | 行为基础模型：大规模预训练的全身控制 | [行为基础模型综述](../../papers/arxiv-2506.20487/README.md)、[规模化 BFM](../../papers/arxiv-2607.15163/README.md) | 一个模型覆盖多种全身任务 / 跟踪接口是否合适仍不清楚 |
+| 训练信号（数据，2026 年补充） | 把动作跟踪放大：700 小时动作捕捉、模型 1.2M → 42M，上接运动学规划器与统一 token 接口 | [SONIC](../../papers/arxiv-2511.07820/README.md) | 数据量增益最大，真机 50 条动作全部成功，VR、人体视频、VLA 共用一个策略 / 安全、柔顺、能效与输入噪声未处理 |
+| 系统结构（2026 年补充） | 公司的分层：VLA 或导航策略在上，单独训练的高频全身控制器在下（人体动作数据 + 仿真 RL），或下层保留 MPC | [Helix 02](../../papers/figure-helix-02/README.md)（S0 1 kHz）、[GR00T N1.6 博客](https://developer.nvidia.com/blog/building-generalist-humanoid-capabilities-with-nvidia-isaac-gr00t-n1-6-using-a-sim-to-real-workflow)、[Atlas 大行为模型](../../papers/boston-dynamics-atlas-lbm/README.md)（MPC） | 行走、平衡与操作连成一个系统，替换手写控制代码 / 只有演示，没有成功率与同条件对比 |
+| 观测（2026 年补充） | 原始激光回波按扫描网格保留，AME-2 式注意力编码 + GRU 记忆，不建高程图 | [人形稀疏三维结构穿越](../../papers/arxiv-2608.29769/README.md) | 处理 2.5D 高程图表示不了的单杠与头顶横杆，真机 14/15 / 只有几个分开训练的任务策略 |
 | （接口之外的模块） | 机身状态估计 | [ESKF 精读](../../papers/eskf/reading.md) | MPC 的初始状态与 RL 的观测都来自它 |
 | （接口之外的模块） | 几何路径规划 | [RRT* 精读](../../papers/rrt-star/reading.md) | 回答走哪条路，与本方向的"每只脚用多大力"分层 |
 | （参照） | 人形综述；人形通用 VLA | [人形运动与操作综述](../../papers/arxiv-2501.02116/README.md)、[GR00T N1](../../papers/arxiv-2503.14734/README.md) | GR00T N1 只做桌面双臂操作，不含行走控制器，放在这里作为边界参照 |

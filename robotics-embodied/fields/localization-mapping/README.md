@@ -1,12 +1,12 @@
 # 定位与建图
 
-> 状态：领域入门页 · v1 · 依据 [synthesis.csv](synthesis.csv)（15 篇）
+> 状态：领域入门页 · v1（2026-10-04 追加阶段 5 的 2026 年补充） · 依据 [synthesis.csv](synthesis.csv)（18 行）
 >
 > 速览：
 > 1. 本方向回答机器人"在哪里"和"周围是什么"。做法分三代：滤波式把历史压进当前的均值与协方差；关键帧优化式保留多帧状态，用 BA 和回环让过去的估计也能被修正；学习式与稠密表示让网络提供对应关系或直接给出几何，地图从稀疏点变成可渲染的稠密场。机制与手算见[定位与建图讲义](../localization-mapping.md)。
 > 2. 每一代都从上一代的失败出发：EKF-SLAM 的地图只能放一百多个点（PTAM 的对比实验中是 114 个）→ PTAM 与 MSCKF；PTAM 只能在小场景、没有回环 → ORB-SLAM；单目尺度会漂移（ORB-SLAM 在 KITTI 08 无回环时误差 46.58 m）→ 视觉惯性融合；特征法在模糊、卷帘快门、大旋转的 TUM 序列上丢跟踪（ORB-SLAM3 单目 9 条中失败 5 条）→ DROID-SLAM；稀疏地图只够定位 → NeRF 与 3DGS 式稠密 SLAM；需要标定相机 → MASt3R-SLAM。
 > 3. `[判断]` 后来的系统大多在旧系统的主场之外取胜，在主场里仍然输：iMAP、NICE-SLAM、SplaTAM、Gaussian Splatting SLAM 都承认在 TUM 常规序列上位姿精度不如 ORB-SLAM2。新系统赢在鲁棒、稠密、免标定，经典系统的精度在常规场景里还没有被取代。
-> 4. 2024–2026 年的主线是把前馈 3D 重建模型（DUSt3R、MASt3R、VGGT）当前端，再把经典后端接回来修它的毛病：VGGT 在 24 GB 显卡上只能处理约 60 帧，MASt3R-SLAM 在 KITTI 上约 100 帧后跟丢，单目没有公制尺度；修补手段是子图加位姿图、回环、IMU 与 GNSS 因子。
+> 4. 2024–2026 年的主线是把前馈 3D 重建模型（DUSt3R、MASt3R、VGGT）当前端，再把经典后端接回来修它的毛病：VGGT 在 24 GB 显卡上只能处理约 60 帧，MASt3R-SLAM 在 KITTI 上约 100 帧后跟丢，单目没有公制尺度；修补手段是子图加位姿图、回环、IMU 与 GNSS 因子。2026 年 9 月的 AMB3R-SLAM 用 Depth Anything 3 做前端、DBoW2 回环加分层位姿图做后端，KITTI 单目平均误差 13.11 m（同表 VGGT-SLAM 2.0 为 92.72 m）；NVIDIA 给人形的参考栈仍用经典特征法的 cuVSLAM。
 > 5. `[判断]` 团队押注清楚：Zaragoza 押特征法加完整开源系统，TUM 押直接法，HKUST 与 HKU 押紧耦合多传感器加开源，Imperial（Davison 组）押"一种稠密表示同时用于跟踪和建图"，MIT SPARK 押因子图后端去接新的前端。
 
 本页属于[机器人与具身](../../README.md)领域。定位与建图给[感知](../perception/README.md)提供位姿（把检测结果放进地图需要它），给[导航与规划](../navigation-planning/README.md)提供地图（占据地图怎样从这里来，见讲义第十节）。按部件拆分的基线见 [Baseline 页](BASELINES.md)，学习路线见[路线图](ROADMAP.md)，论文列表见[论文目录](PAPERS.md)。
@@ -104,10 +104,15 @@
 | [VGGT-SLAM 2.0](../../papers/arxiv-2601.19887/README.md)（MIT，2026） | 自家 v1 的 15 自由度对齐在回环之间快速漂移、平面退化 | 利用重叠帧共享位姿和内参，只解标定与尺度；用 VGGT 的注意力做回环验证 | 白墙等无纹理场景发散；后端只优化位姿不优化点 |
 | [MASt3R-Fusion](../../papers/arxiv-2509.20757/README.md)（武汉大学，2025） | 前馈视觉流水线没有公制尺度，丢掉了概率多传感器融合 | 把 Sim(3) 视觉约束放进公制 SE(3) 因子图，滑窗 VIO 加 GNSS | 需要 IMU；尚未见正式发表 |
 | [π³ 动态 SLAM](../../papers/arxiv-2512.06868/README.md)（Bonn，2025） | 动态物体破坏位姿估计；离线方法 MegaSaM 在 16 GB 显存上处理不完整序列 | 在前馈模型上加运动物体分割头，剔除动态区域后做 BA | 每帧都要多帧前馈推理，RTX 5000 上只有 2 fps |
+| [MapAnything](../../papers/arxiv-2509.13414/README.md)（Meta Reality Labs、CMU，2025；补充） | VGGT 一类只吃图像、没有公制尺度；机器人已有的内参、位姿、深度用不上 | 可选输入内参、位姿、深度或部分重建，输出分解的深度、射线、位姿与全局公制尺度 | 不建模输入的噪声与不确定性；不处理动态；逐像素对应限制大场景 |
+| [Depth Anything 3](../../papers/arxiv-2511.10647/README.md)（ByteDance Seed，2025；补充） | 单目深度、多视图几何、位姿各用一种模型 | 普通 DINO 编码器 + "深度 + 射线"单一目标，任意视图、有无位姿；摘要称位姿精度平均比 VGGT 高 44.3% | 没有局限一节；动态场景留作未来 |
+| [AMB3R-SLAM](../../papers/arxiv-2609.19518/README.md)（UCL，2026-09；补充） | 前馈 SLAM 在 KITTI 长序列上误差大、撑不住公里级 | 80M 的 DA3-Small 做前端，分层 Sim(3) 位姿图（子图内、跨子图、DBoW2 回环），不做 BA；可接双目、RGB-D、激光雷达 | 点云地图有重复表面与重影；RTX 4090 上单目 17.6 fps、峰值显存 10–14 GB |
 
 另一条线把学习放进滤波器而不是替换它：[学习式 IMU 偏置预测](../../papers/arxiv-2505.06748/README.md)让不变 MSCKF 在视觉中断 1–4 秒时仍优于原版 MSCKF。
 
 **站在现在看。** `[判断]` 这一阶段重演了阶段 4 的模式：新前端免标定、对低纹理更宽容，但长序列、回环、尺度、动态物体仍要靠子图、位姿图、因子图这些经典后端兜底；而在 KITTI-360 这类大尺度序列上，MASt3R-Fusion 报告纯视觉的 VGGT-Long 误差为轨迹长度的 2.91%，ORB-SLAM3 为 0.63%。前馈模型目前替换的是前端，没有替换后端。
+
+**2026 年的补充。** `[判断]` 最新的 AMB3R-SLAM（2026-09）直接印证了上面的判断：它在 KITTI 单目上平均 ATE 13.11 m，作者表中 VGGT-SLAM 2.0 为 92.72 m、MASt3R-SLAM 为 186.64 m，而它的公里级能力来自 DBoW2 回环加分层 Sim(3) 位姿图这一经典后端，后端只优化位姿、不优化点。前端本身则在合并：Depth Anything 3 一个模型同时给深度与位姿，MapAnything 把内参、位姿、深度这些机器人本来就有的量作为可选输入，直接输出公制尺度。工业一侧，NVIDIA 给人形的参考栈（GR00T N1.6，2026-01）用的是 [cuVSLAM](../../papers/arxiv-2506.04359/README.md)：角点加 LK 光流、滑窗稀疏 BA、位姿图与回环，Jetson Orin 上双目每帧 1.8 ms；作者表中 EuRoC、KITTI 上的相对平移误差略低于 ORB-SLAM3。产品选的仍是经典特征法，前馈 3D 模型还停留在研究一侧。
 
 ## 站在现在看过去：五类失败场景的接力
 
@@ -142,6 +147,8 @@
 | Imperial College（Davison 组） | 一种稠密表示同时用于跟踪与建图，从语义 surfel、神经场、高斯到 3D 重建先验 | SemanticFusion、iMAP、Gaussian Splatting SLAM、MASt3R-SLAM | 房间尺度、实时性不足；常规序列上位姿精度不如特征法 |
 | Minnesota、Delaware（Roumeliotis、黄国权） | 滤波式 VIO 的一致性与在线标定 | MSCKF、OpenVINS | 线性化与不一致需要 FEJ 等修正 |
 | MIT SPARK（Carlone） | 因子图与流形上的优化做后端，换上新前端 | VGGT-SLAM、VGGT-SLAM 2.0 | v1 的 SL(4) 对齐漂移与平面退化，由 2.0 自己修正 |
+| NVIDIA（2026 年补充，工业界） | 经典特征法用 CUDA 实现，面向边缘设备与多相机，作为自家人形参考栈的一部分 | cuVSLAM | 快速六自由度运动误差变大；多双目要硬件同步 |
+| UCL（Agapito）、Meta Reality Labs 与 CMU、ByteDance Seed（2025–2026 年补充） | 分别押注：前馈前端 + 分层位姿图后端（AMB3R-SLAM）；接受可选几何输入的公制前馈模型（MapAnything）；统一深度与位姿的几何模型（Depth Anything 3） | AMB3R-SLAM、MapAnything、Depth Anything 3 | 各只有一篇，写的是该论文的选择 |
 
 `[判断]` 收敛与分化：2020 年以后的开源系统几乎都是"前端 + 关键帧 + 位姿图或因子图 + 回环"的结构，滤波与优化之争收敛成"滤波做高频里程计、优化做全局一致"的分工（ORB-SLAM3 与 VINS-Mono 都把回环交给单独的位姿图，FAST-LIO2 只做里程计）；分化在前端：特征点、稠密光度、学习式对应、前馈点图四种并存，各自守住不同的失败场景。
 
@@ -161,6 +168,7 @@
 - **学习式组件怎样进入概率估计器而不破坏一致性？** 网络输出需要可信的协方差，滤波器需要保持对称性。入口：[自监督可微卡尔曼滤波 VIO](../../papers/arxiv-2203.07207/README.md)、[学习式 IMU 偏置预测](../../papers/arxiv-2505.06748/README.md)、[MASt3R-Fusion](../../papers/arxiv-2509.20757/README.md)。
 - **动态与变化的环境。** 动态物体的处理刚开始与前馈模型结合，速度只有 2 fps；场景在几天、几个季节里的变化在本页论文中都没有系统评测。入口：[π³ 动态 SLAM](../../papers/arxiv-2512.06868/README.md)、[ORB-SLAM3](../../papers/orb-slam3/reading.md) 的 Atlas。
 - **地图给谁用。** 稀疏点给定位，稠密场给渲染，导航要占据，操作要物体与语义；语义地图见[感知方向](../perception/README.md)，占据地图见[导航与规划](../navigation-planning/README.md)。
+- **（2026 年补充）前馈前端怎样吃进机器人已有的几何量与不确定性？** MapAnything 能吃内参、位姿、深度，但不建模它们的噪声；MASt3R-Fusion 走后端因子图的路。入口：[MapAnything](../../papers/arxiv-2509.13414/README.md)、[MASt3R-Fusion](../../papers/arxiv-2509.20757/README.md)、[AMB3R-SLAM](../../papers/arxiv-2609.19518/README.md)。
 
 ## 阅读顺序
 
@@ -170,6 +178,7 @@
 4. [VINS-Mono](../../papers/arxiv-1708.03852/README.md) 与 [EqVIO](../../papers/arxiv-2205.01980/README.md)：视觉惯性的优化与滤波两种实现，对照它们各自怎样处理线性化与初始化。
 5. [DROID-SLAM](../../papers/arxiv-2108.10869/README.md) → [SplaTAM](../../papers/arxiv-2312.02126/README.md)：学习式对应与稠密地图，重点看它们在哪些序列上赢、在哪些序列上输给 ORB-SLAM。
 6. [MASt3R-SLAM](../../papers/arxiv-2412.12392/README.md) → [VGGT-SLAM 2.0](../../papers/arxiv-2601.19887/README.md)：当前的前馈前端路线，对照阶段 5 的表格看每一篇修的是谁。
+7. （2026 年补充）[AMB3R-SLAM](../../papers/arxiv-2609.19518/README.md) 对照 [cuVSLAM](../../papers/arxiv-2506.04359/README.md)：研究一侧的前馈前端加经典后端，与产品一侧的纯经典栈。
 
 ## 批注
 
@@ -183,11 +192,14 @@
 - MASt3R-Fusion 的 0.05% 对 ORB-SLAM3 0.63% 是 KITTI-360 上按轨迹长度归一化的全局误差，且 MASt3R-Fusion 用了 IMU 与回环（Table II）；它尚未见正式发表。
 - VINS-Mono 的 arXiv 版本在 EuRoC 上只用 MH_03、MH_05 两条序列与 OKVIS 做图形比较，结论是纯 VIO 精度相近；"ORB-SLAM3 约为 VINS-Mono 的 2.6 倍"出自 ORB-SLAM3 的表 II。
 - MSCKF 的 0.31% 没有 GPS 真值，终点误差由地图和起止停车位推算（MSCKF §IV）。
+- AMB3R-SLAM 的 13.11 m 与 VGGT-Long 表中 ORB-SLAM2 的 9.464 m 来自不同论文、不同序列子集与对齐方式，不能直接相减；AMB3R-SLAM 主表没有列 ORB-SLAM 系对照。
+- cuVSLAM 与 ORB-SLAM3 的比较是相对平移误差（%），出自 cuVSLAM 自己的表；Depth Anything 3 的 44.3% 取自摘要，正文位姿一节写 35.7%。
 
 **判断的支撑论文**
 
 - "新系统在主场之外取胜、在主场里输"：iMAP Tab.3、NICE-SLAM Tab.2、SplaTAM Tab.1、Gaussian Splatting SLAM Tab.1 与补充 Tab.14、MASt3R-SLAM 补充 §12（EuRoC 输给 DROID-SLAM）、自监督可微 KF Table I–II。反例：DROID-SLAM 在 EuRoC 双目上平均 0.024 m，ORB-SLAM3 为 0.084 m，常规序列上也更准，代价是两张 RTX 3090。
-- "前馈模型替换前端、没有替换后端"：MASt3R-SLAM、VGGT-SLAM、VGGT-Long、VGGT-SLAM 2.0、MASt3R-Fusion 都保留了位姿图或因子图与回环。边界：VGGT-SLAM 2.0 已用模型的注意力层做回环验证，后端开始吸收网络的信号。
+- "前馈模型替换前端、没有替换后端"：MASt3R-SLAM、VGGT-SLAM、VGGT-Long、VGGT-SLAM 2.0、MASt3R-Fusion 都保留了位姿图或因子图与回环。边界：VGGT-SLAM 2.0 已用模型的注意力层做回环验证，后端开始吸收网络的信号。2026 年补充：AMB3R-SLAM（DBoW2 回环 + 分层 Sim(3) 位姿图）是到目前为止最强的支撑；MapAnything 把位姿作为前馈模型的输入，是"前端吸收后端信息"的反方向尝试。
+- "产品仍选经典特征法"：cuVSLAM 原文与 GR00T N1.6 技术博客（定位栈为 cuVSLAM、cuVGL、FoundationStereo、nvblox）。边界：只有 NVIDIA 一家的材料；其他公司的定位栈未公开。
 - 团队偏好按"同一团队在两篇以上论文中、存在替代方案时重复同一选择"判断：Zaragoza 在 ORB-SLAM、ORB-SLAM2、ORB-SLAM3 中都用 ORB 特征并开源，同期已有直接法 LSD-SLAM 与 DSO；Imperial Davison 组在 SemanticFusion（ElasticFusion surfel）、iMAP（MLP）、Gaussian Splatting SLAM（3DGS）、MASt3R-SLAM（点图）中都让一种稠密表示同时承担跟踪与建图；HKUST 在 VINS-Mono 与 FM-Fusion 中都开源完整系统；MIT SPARK 在 VGGT-SLAM 两个版本中都以因子图后端接 VGGT。只有一篇的团队（TUM 的 DSO、HKU 的 FAST-LIO2、Minnesota 与 Delaware 各一篇）写的是该论文的选择，证据偏弱。
 - "滤波做里程计、优化做全局"：ORB-SLAM3 §V–VI、VINS-Mono §VIII、FAST-LIO2 §VI-C。反例：OpenVINS 在滤波框架内维护 SLAM 路标。
 - 跨领域共性（前端换大模型、后端保留精确模块）：与 [OpenVLA 精读](../../papers/openvla/reading.md)中 Diffusion Policy 在窄任务上胜过 VLA 的现象对照，属于类比，没有直接实验证据。
@@ -206,3 +218,5 @@
 - DUSt3R 与 VGGT 只核实了题名、团队、方法一句话与局限；π³ 原文只核实了元数据，未引用其结果。
 - 开放词汇的 3D 场景图建图（ConceptGraphs、HOV-SG、Clio 等）与终身建图没有在本轮核实，阶段 5 没有写这一支。
 - MASt3R-Fusion 的 Table I、Table III 的列对应只经过一次抽取，本页未引用这两张表。
+- π³（arXiv:2507.13347）、AMB3R（arXiv:2511.20343）、LASER、Scal3R、VGGT-GS SLAM 等 2025–2026 年的前馈重建与 SLAM 工作只看到检索结果，未打开原文，未收录。
+- MapAnything 与 VGGT、π³ 的逐项数值只经过一次 HTML 抽取，本页只写趋势。

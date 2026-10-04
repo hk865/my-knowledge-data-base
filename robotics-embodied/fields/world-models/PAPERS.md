@@ -43,6 +43,8 @@
 - [EVA: Aligning Video World Models with Executable Robot Actions via Inverse Dynamics Rewards](../../../multimodal/papers/arxiv-2603.17808/README.md) · 2026 · 文献卡
 - [Hydra-0: Action Flow for Generalist World Modeling and Control](../../../multimodal/papers/arxiv-2608.18077/README.md) · 2026 · 文献卡
 - [Zero-WAM: In-Context World-Action Modeling from Human Videos for Open-Ended Task Generalization](../../papers/zero-wam/README.md) · 2026 · 选定章节讲解
+- [Cosmos Policy: Fine-Tuning Video Models for Visuomotor Control and Planning](../../papers/arxiv-2601.16163/README.md) · 2026 · 文献卡 · 视频模型直接后训练成策略 + 价值，兼作 (b) 规划
+- [World Simulation with Video Foundation Models for Physical AI](https://arxiv.org/abs/2511.00062) · 2025 · NVIDIA 官方技术报告（Cosmos-Predict2.5，外部链接，未建卡） · 属于 (c)(d)
 
 ## 表示与评测分析
 

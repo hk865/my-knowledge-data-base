@@ -27,6 +27,7 @@
 - [Attention-Based Map Encoding for Learning Generalized Legged Locomotion](../../papers/arxiv-2506.09588/README.md) · 2025 · 文献卡 · 以本体感知为查询的注意力地图编码，面向稀疏落脚地形
 - [Agile and Generalized Legged Locomotion via Attention-Based Neural Map Encoding](../../papers/arxiv-2601.08485/README.md) · 2026 · 文献卡 · 加入带不确定性的神经建图与目标到达，四足与双足
 - [MGDP: Mastering a Generalized Depth Perception Model for Quadruped Locomotion](../../papers/doi-10.1002-advs.202524345/README.md) · 2026 · 文献卡 · 对比式深度模型与深度去噪，单阶段训练（只核实了元数据）
+- [Learning Agile Perceptive Traversal of Sparse 3D Structures for Humanoids](../../papers/arxiv-2608.29769/README.md) · 2026 · 文献卡 · ETH，AME-2 式注意力编码器处理原始激光回波，人形单杠攀爬；DAgger 后接带行为锚定的 PPO
 
 ## 恢复、鲁棒与约束
 
@@ -71,6 +72,10 @@
 - [BeyondMimic: From Motion Tracking to Versatile Humanoid Control via Guided Diffusion](../../papers/arxiv-2508.08241/README.md) · 2025 · 文献卡 · 动作跟踪 + 引导扩散
 - [Retargeting Matters: General Motion Retargeting for Humanoid Motion Tracking](../../papers/arxiv-2510.02252/README.md) · 2025 · 文献卡 · 重定向质量对跟踪的影响
 - [Scaling Behavior Foundation Model for Humanoid Robots](../../papers/arxiv-2607.15163/README.md) · 2026 · 文献卡 · 行为基础模型的规模化
+- [SONIC: Supersizing Motion Tracking for Natural Humanoid Whole-Body Control](../../papers/arxiv-2511.07820/README.md) · 2025 · 文献卡 · NVIDIA，700 小时动作捕捉的通用跟踪器，上接运动学规划器与 VLA
+- [Introducing Helix 02: Full-Body Autonomy](../../papers/figure-helix-02/README.md) · 2026 · 官方博客卡 · Figure 的 1 kHz 全身控制器 S0（人体动作数据 + 仿真 RL）
+- [Large Behavior Models and Atlas Find New Footing](../../papers/boston-dynamics-atlas-lbm/README.md) · 2025 · 官方博客卡（归属模仿与强化学习方向，在此交叉引用） · 扩散 Transformer 输出脚的位姿，MPC 稳定
+- [Gemini Robotics 2 brings whole body intelligence to robots](../../papers/gemini-robotics-2/README.md) · 2026 · 官方博客卡（归属 VLA 方向，在此交叉引用） · Apollo 2 上的全身移动操作
 
 ## 跨方向的工具与算法（交叉引用）
 
@@ -94,3 +99,6 @@
 - [Superior Robot Mobility – Where AI Meets the Real World](https://www.anybotics.com/news/superior-robot-mobility-where-ai-meets-the-real-world/) · 2023 · ANYbotics 官方新闻 · ANYmal 的 RL 运动控制产品化
 - [Training a Whole-Body Control Foundation Model](https://www.agilityrobotics.com/content/training-a-whole-body-control-foundation-model) · 2025 · Agility Robotics 官方博客 · Digit 的全身控制模型
 - [Design and Control of a Bipedal Robotic Character](https://arxiv.org/abs/2501.05204) · 2025 · Disney Research 论文 · 动画参考 + 模仿奖励，执行器辨识
+- [Building Generalist Humanoid Capabilities with NVIDIA Isaac GR00T N1.6 Using a Sim-to-Real Workflow](https://developer.nvidia.com/blog/building-generalist-humanoid-capabilities-with-nvidia-isaac-gr00t-n1-6-using-a-sim-to-real-workflow) · 2026-01 · NVIDIA 技术博客 · Isaac Lab 中 RL 训练的全身控制器 GR00T-WholeBodyControl，VLA 与导航给它发指令
+- [Atlas' Evolution From Research Robot to Industrial Humanoid](https://bostondynamics.com/blog/atlas-evolution-from-research-robot-to-industrial-humanoid/) · Boston Dynamics 官方博客 · 与 RAI Institute 共建的动作捕捉与动画 RL 流水线；大行为模型做全身控制
+- [Agility Unveils Digit 5](https://www.agilityrobotics.com/content/agility-unveils-digit-5-humanoid-robot-built-for-cooperatively-safe-work-at-scale) · 2026-09 · Agility Robotics 官方新闻 · 65,000 小时客户现场运行、独立安全控制器

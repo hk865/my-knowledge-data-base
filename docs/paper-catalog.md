@@ -1,6 +1,6 @@
 # 全库论文总目录
 
-共 500 个去重资源（462 篇论文、28 篇官方技术报告、2 个代码仓库、8 篇官方博客）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
+共 518 个去重资源（475 篇论文、29 篇官方技术报告、3 个代码仓库、11 篇官方博客）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
 
 身份核验、助手教学进度和用户阅读状态分开。历史来源保留原角色与证据局限，不将助手推荐写成用户提供，也不将教学完成写成用户已读。
 
@@ -5366,6 +5366,186 @@
 - 身份核验：selected_sections_checked_not_full_read
 - 用户阅读状态：unknown
 - [文献卡](../llm/papers/arxiv-2512.20856/README.md)
+
+<a id="p501"></a>
+## p501 · Gemini Robotics 2 brings whole body intelligence to robots
+
+- 标识：url:https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/
+- 原文 / 官方入口：https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/
+- 主题：robotics/embodied-policies, robotics/control
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/gemini-robotics-2/README.md)
+
+<a id="p502"></a>
+## p502 · UnifoLM-WLA-1.0
+
+- 标识：url:https://github.com/unitreerobotics/unifolm-wla
+- 原文 / 官方入口：https://github.com/unitreerobotics/unifolm-wla
+- 主题：robotics/embodied-policies
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/unifolm-wla/README.md)
+
+<a id="p503"></a>
+## p503 · Introducing Helix 02: Full-Body Autonomy
+
+- 标识：url:https://www.figure.ai/news/helix-02
+- 原文 / 官方入口：https://www.figure.ai/news/helix-02
+- 主题：robotics/control, robotics/embodied-policies
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/figure-helix-02/README.md)
+
+<a id="p504"></a>
+## p504 · Large Behavior Models and Atlas Find New Footing
+
+- 标识：url:https://bostondynamics.com/blog/large-behavior-models-atlas-find-new-footing/
+- 原文 / 官方入口：https://bostondynamics.com/blog/large-behavior-models-atlas-find-new-footing/
+- 主题：robotics/embodied-policies, robotics/control
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/boston-dynamics-atlas-lbm/README.md)
+
+<a id="p505"></a>
+## p505 · Gemini Robotics 2: Safety Evaluations
+
+- 标识：url:https://storage.googleapis.com/deepmind-media/gemini-robotics/Gemini-Robotics-2-Safety.pdf
+- 原文 / 官方入口：https://storage.googleapis.com/deepmind-media/gemini-robotics/Gemini-Robotics-2-Safety.pdf
+- 主题：robotics/embodied-agents, robotics/embodied-policies
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/gemini-robotics-2-safety/README.md)
+
+<a id="p506"></a>
+## p506 · MEM: Multi-Scale Embodied Memory for Vision Language Action Models
+
+- 标识：arxiv:2603.03596
+- 原文 / 官方入口：https://arxiv.org/abs/2603.03596
+- 主题：robotics/embodied-policies, robotics/embodied-agents
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2603.03596/README.md)
+
+<a id="p507"></a>
+## p507 · EgoScale: Scaling Dexterous Manipulation with Diverse Egocentric Human Data
+
+- 标识：arxiv:2602.16710
+- 原文 / 官方入口：https://arxiv.org/abs/2602.16710
+- 主题：robotics/embodied-policies
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2602.16710/README.md)
+
+<a id="p508"></a>
+## p508 · SONIC: Supersizing Motion Tracking for Natural Humanoid Whole-Body Control
+
+- 标识：arxiv:2511.07820
+- 原文 / 官方入口：https://arxiv.org/abs/2511.07820
+- 主题：robotics/control
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2511.07820/README.md)
+
+<a id="p509"></a>
+## p509 · Learning Agile Perceptive Traversal of Sparse 3D Structures for Humanoids
+
+- 标识：arxiv:2608.29769
+- 原文 / 官方入口：https://arxiv.org/abs/2608.29769
+- 主题：robotics/control, robotics/perception
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2608.29769/README.md)
+
+<a id="p510"></a>
+## p510 · RL Token: Bootstrapping Online RL with Vision-Language-Action Models
+
+- 标识：arxiv:2604.23073
+- 原文 / 官方入口：https://arxiv.org/abs/2604.23073
+- 主题：robotics/embodied-policies
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2604.23073/README.md)
+
+<a id="p511"></a>
+## p511 · SAM 3: Segment Anything with Concepts
+
+- 标识：arxiv:2511.16719
+- 原文 / 官方入口：https://arxiv.org/abs/2511.16719
+- 主题：robotics/perception
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2511.16719/README.md)
+
+<a id="p512"></a>
+## p512 · Depth Anything 3: Recovering the Visual Space from Any Views
+
+- 标识：arxiv:2511.10647
+- 原文 / 官方入口：https://arxiv.org/abs/2511.10647
+- 主题：robotics/perception, robotics/localization-mapping
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2511.10647/README.md)
+
+<a id="p513"></a>
+## p513 · FoundationStereo: Zero-Shot Stereo Matching
+
+- 标识：arxiv:2501.09898
+- 原文 / 官方入口：https://arxiv.org/abs/2501.09898
+- 主题：robotics/perception
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2501.09898/README.md)
+
+<a id="p514"></a>
+## p514 · MapAnything: Universal Feed-Forward Metric 3D Reconstruction
+
+- 标识：arxiv:2509.13414
+- 原文 / 官方入口：https://arxiv.org/abs/2509.13414
+- 主题：robotics/localization-mapping
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2509.13414/README.md)
+
+<a id="p515"></a>
+## p515 · AMB3R-SLAM: Kilometer-scale SLAM with Hierarchical Backend
+
+- 标识：arxiv:2609.19518
+- 原文 / 官方入口：https://arxiv.org/abs/2609.19518
+- 主题：robotics/localization-mapping
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2609.19518/README.md)
+
+<a id="p516"></a>
+## p516 · cuVSLAM: CUDA accelerated visual odometry and mapping
+
+- 标识：arxiv:2506.04359
+- 原文 / 官方入口：https://arxiv.org/abs/2506.04359
+- 主题：robotics/localization-mapping
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2506.04359/README.md)
+
+<a id="p517"></a>
+## p517 · Robostral Navigate
+
+- 标识：arxiv:2607.20785
+- 原文 / 官方入口：https://arxiv.org/abs/2607.20785
+- 主题：robotics/navigation-planning
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2607.20785/README.md)
+
+<a id="p518"></a>
+## p518 · Cosmos Policy: Fine-Tuning Video Models for Visuomotor Control and Planning
+
+- 标识：arxiv:2601.16163
+- 原文 / 官方入口：https://arxiv.org/abs/2601.16163
+- 主题：robotics/embodied-policies, multimodal/world-models
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2601.16163/README.md)
 
 ## 2026年10月3日既有条目更新
 

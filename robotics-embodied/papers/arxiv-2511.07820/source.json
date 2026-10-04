@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2511.07820",
+  "title": "SONIC: Supersizing Motion Tracking for Natural Humanoid Whole-Body Control",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2511.07820",
+  "official_url": "https://arxiv.org/abs/2511.07820",
+  "official_fulltext_url": "https://arxiv.org/pdf/2511.07820",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。arXiv 摘要页（v4）与 v1 HTML 选段：数据、观测与动作接口、规模化实验、真机结果、运动学规划器、VLA 接口、局限；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Zhengyi Luo",
+    "Ye Yuan",
+    "Tingwu Wang",
+    "Chenran Li",
+    "Fernando Castañeda",
+    "Sirui Chen",
+    "Zi-Ang Cao",
+    "Jiefeng Li",
+    "等 28 位作者"
+  ],
+  "year": 2025,
+  "topic_paths": [
+    "robotics/control"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页（v4）与 v1 HTML 选段：数据、观测与动作接口、规模化实验、真机结果、运动学规划器、VLA 接口、局限；",
+    "mechanism_summary": "700 h、170 人、>1 亿帧 50 Hz 动捕，GMR 重定向到 G1；1.2M→42M 参数；本体感知观测、关节目标 + PD；数据量增益最大；真机 50 条动作 100%；运动学规划器（掩码 token 预测，<5 ms 笔记本、12 ms Orin，0–6 m/s）；GR00T N1.5 用 300 条 VR 轨迹微调，抓苹果 20 次 95%。摘要写算力 21k GPU 小时，正文规模化实验写 128 张 GPU 约 3 天（约 9000 GPU 小时），口径不同，卡片不引用 GPU 小时数。Science Robotics 信息只见于 arXiv 页，期刊页未核对。",
+    "evidence_boundary": "未复现实验；数字取自原文或官方页面的正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2511.07820",
+      "https://arxiv.org/html/2511.07820v1"
+    ],
+    "source_origin": "robotics_recency_audit_2026_10_04",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "state",
+    "action",
+    "video"
+  ],
+  "task_tags": [
+    "decision"
+  ]
+}

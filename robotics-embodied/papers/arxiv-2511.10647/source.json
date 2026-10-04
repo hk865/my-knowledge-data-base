@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2511.10647",
+  "title": "Depth Anything 3: Recovering the Visual Space from Any Views",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2511.10647",
+  "official_url": "https://arxiv.org/abs/2511.10647",
+  "official_fulltext_url": "https://arxiv.org/pdf/2511.10647",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。arXiv 摘要页与 v1 HTML 选段：设计、模型规模、DA3-Metric、前馈 3DGS、位姿对比、未来工作；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Haotong Lin",
+    "Sili Chen",
+    "Junhao Liew",
+    "Donny Y. Chen",
+    "Zhenyu Li",
+    "等 8 位作者"
+  ],
+  "year": 2025,
+  "topic_paths": [
+    "robotics/perception",
+    "robotics/localization-mapping"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v1 HTML 选段：设计、模型规模、DA3-Metric、前馈 3DGS、位姿对比、未来工作；",
+    "mechanism_summary": "任意视图、有无位姿；普通 DINO 编码器；深度 + 射线单一目标；教师-学生；只用公开数据；摘要：位姿 +44.3%、几何 +25.1%（对 VGGT），单目深度优于 DA2；正文位姿一节写平均 35.7% 提升，与摘要口径不同，卡片取摘要并在方向页批注；规模 0.03B/0.11B/0.36B/1.10B；DA3-Metric 按 Metric3Dv2；无局限一节。",
+    "evidence_boundary": "未复现实验；数字取自原文或官方页面的正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2511.10647",
+      "https://arxiv.org/html/2511.10647v1"
+    ],
+    "source_origin": "robotics_recency_audit_2026_10_04",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "image"
+  ],
+  "task_tags": [
+    "understanding"
+  ]
+}

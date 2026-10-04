@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2601.16163",
+  "title": "Cosmos Policy: Fine-Tuning Video Models for Visuomotor Control and Planning",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2601.16163",
+  "official_url": "https://arxiv.org/abs/2601.16163",
+  "official_fulltext_url": "https://arxiv.org/pdf/2601.16163",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。arXiv 摘要页与 v1 HTML 选段：潜在帧编码、规划、LIBERO/RoboCasa、ALOHA 表、局限；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Moo Jin Kim",
+    "Yihuai Gao",
+    "Tsung-Yi Lin",
+    "Yen-Chen Lin",
+    "Yunhao Ge",
+    "Grace Lam",
+    "Percy Liang",
+    "Shuran Song",
+    "Ming-Yu Liu",
+    "Chelsea Finn",
+    "Jinwei Gu"
+  ],
+  "year": 2026,
+  "topic_paths": [
+    "robotics/embodied-policies",
+    "multimodal/world-models"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v1 HTML 选段：潜在帧编码、规划、LIBERO/RoboCasa、ALOHA 表、局限；",
+    "mechanism_summary": "Cosmos-Predict2-2B 一阶段后训练、不改结构；动作、本体、未来图像、价值编码为潜在帧（双相机 + 本体时 11 帧）；best-of-N 规划；LIBERO 98.5、RoboCasa 67.1；ALOHA 平均 93.6（π0.5 逐项：放盘 98.3 对 100、叠衫 99.5 对 99.5、糖进碗 95.2 对 89.6、糖进自封袋 61.5 对 85.4），OFT+ 62.0、DP 33.6；规划在两项最难任务 +12.5；带规划约 5 s/动作块；局限：动态任务、规划需大量 rollout、只有一层 best-of-N。ICLR 2026 收录见于 ICLR 论文集 PDF 链接，arXiv 页未注明，未核对。",
+    "evidence_boundary": "未复现实验；数字取自原文或官方页面的正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2601.16163",
+      "https://arxiv.org/html/2601.16163v1"
+    ],
+    "source_origin": "robotics_recency_audit_2026_10_04",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "video",
+    "image",
+    "action"
+  ],
+  "task_tags": [
+    "decision",
+    "generation"
+  ]
+}

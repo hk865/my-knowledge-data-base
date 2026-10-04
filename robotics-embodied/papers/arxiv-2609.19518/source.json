@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2609.19518",
+  "title": "AMB3R-SLAM: Kilometer-scale SLAM with Hierarchical Backend",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2609.19518",
+  "official_url": "https://arxiv.org/abs/2609.19518",
+  "official_fulltext_url": "https://arxiv.org/pdf/2609.19518",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。arXiv 摘要页与 v1 HTML 选段：前端、分层后端、运行时间、KITTI 主表、局限；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Hengyi Wang",
+    "Lourdes Agapito"
+  ],
+  "year": 2026,
+  "topic_paths": [
+    "robotics/localization-mapping"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v1 HTML 选段：前端、分层后端、运行时间、KITTI 主表、局限；",
+    "mechanism_summary": "前端 DA3-Small（80M）；后端分层 Sim(3) 位姿图（span-2 局部边、跨子图稀疏边、DBoW2 回环），无 BA；KITTI 单目 ATE 13.11 m（VGGT-SLAM2 92.72、MASt3R-SLAM 186.64、DA3-Long 16.83）；VBR、Oxford Spires ATE 降 >70%（摘要）；4090 单目 17.6 fps、+LiDAR 47.8 fps，峰值 10–14 GB；局限：点云地图有重复表面与重影。本表未含 ORB-SLAM 系对照。",
+    "evidence_boundary": "未复现实验；数字取自原文或官方页面的正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2609.19518",
+      "https://arxiv.org/html/2609.19518v1"
+    ],
+    "source_origin": "robotics_recency_audit_2026_10_04",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "image",
+    "state"
+  ],
+  "task_tags": [
+    "understanding"
+  ]
+}

@@ -38,6 +38,7 @@
 | ① + ② | 前沿地图 + BLIP-2 价值图，零样本找物体 | [VLFM](../../papers/arxiv-2312.03275/README.md) | 不训练即可在 HM3D 上 SR 52.5%；只做单层 |
 | ③ + ④ | VLA 输出中层语言动作，足式 RL 策略执行 | [NaVILA](../../papers/arxiv-2412.04453/README.md) | R2R-CE 54%，真机 88%；两层接口是语言，偏航后缺少纠错 |
 | ③ + ④ | 慢 VLM 预测像素目标，快扩散策略出轨迹 | [DualVLN](../../papers/arxiv-2512.08186/README.md) | R2R-CE 64.3%；Social-VLN 撞人率仍有 35.4% |
+| ③ + ④ + ⑤（2026 年补充） | 单目 RGB 的 8B VLM 在图像上指点（0.5 Hz），121M 扩散策略出轨迹（10 Hz）；纯仿真 240 万条轨迹 + 在线 RL | [Robostral Navigate](../../papers/arxiv-2607.20785/README.md) | R2R-CE 77.4%（arXiv v3），不用深度与多相机 / 没有真机成功率；目标在视野外时退回位移指令 |
 | ① + ③ + ⑤ | 五类任务 3000 万样本训练的双通路模型 | [ABot-N1](../../papers/arxiv-2607.10383/README.md) | POI 到达率 77.3%；坐标漂移与城市尺度评测是作者自建 benchmark |
 
 ## 批注

@@ -50,6 +50,7 @@
 | ③ 动作接口 | 从无标注视频学潜在动作 | [UniVLA](../../../multimodal/papers/arxiv-2505.06111/README.md) | 预训练算力少于 OpenVLA 的 1/20 |
 | ⑥ 评估与分析 | 潜在动作模型学到什么；潜在动作表示的 benchmark | [What Do LAMs Learn?](../../../multimodal/papers/arxiv-2506.15691/README.md)、[LARY](../../../multimodal/papers/arxiv-2604.11689/README.md) | 指出可能学到外部噪声；语义表示优于像素表示 |
 | ⑥ 评估 | 比较重建型与语义型潜空间 | [Reconstruction or Semantics?](../../../multimodal/papers/arxiv-2605.06388/README.md) | 视觉保真度不足以挑选世界模型 |
+| ③ 动作条件 + ④ 输出头与用法（2026 年补充） | 不改结构，把动作、本体状态、未来图像与价值编码成"潜在帧"放进视频扩散序列；同一模型出动作、预测未来与价值，best-of-N 规划 | [Cosmos Policy](../../papers/arxiv-2601.16163/README.md) | LIBERO 98.5%、RoboCasa 67.1%，真机 ALOHA 平均 93.6 / 带规划约 5 秒一个动作块，规划需大量 rollout |
 
 ## 批注
 

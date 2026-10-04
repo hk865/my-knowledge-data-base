@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "resource_id": "url:https://storage.googleapis.com/deepmind-media/gemini-robotics/Gemini-Robotics-2-Safety.pdf",
+  "title": "Gemini Robotics 2: Safety Evaluations",
+  "resource_kind": "official_technical_report",
+  "canonical_folder": "robotics-embodied/papers/gemini-robotics-2-safety",
+  "official_url": "https://storage.googleapis.com/deepmind-media/gemini-robotics/Gemini-Robotics-2-Safety.pdf",
+  "official_fulltext_url": "https://storage.googleapis.com/deepmind-media/gemini-robotics/Gemini-Robotics-2-Safety.pdf",
+  "read_version": null,
+  "version_status": "not_pinned",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。官方 PDF 全文文字抽取（PyMuPDF）：§1 系统设定、§2 各基准组成与结果文字、Apollo 2 安全停机实验；图中柱值未估读；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Gemini Robotics Team"
+  ],
+  "year": 2026,
+  "topic_paths": [
+    "robotics/embodied-agents",
+    "robotics/embodied-policies"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "官方 PDF 全文文字抽取（PyMuPDF）：§1 系统设定、§2 各基准组成与结果文字、Apollo 2 安全停机实验；图中柱值未估读；",
+    "mechanism_summary": "Agent（ER 2）以工具调用调 VLA，另有安全工具；ASIMOV-Agentic：约束遵守（文本 ≥96.0%，指点/框选/工具调用差距大）、人员接近（FPR<5% 时 FNR>40%；FNR 10–15% 时 15–25% 无谓停机）、VLA 可行性（DI0 62.0% → DI3 95.8%）、多轮置信度模拟（重规划失败）、指令含糊求助；Apollo 2：人员检测 99%、安全姿态 96%；不评估功能安全架构。",
+    "evidence_boundary": "未复现实验；数字取自原文或官方页面的正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://storage.googleapis.com/deepmind-media/gemini-robotics/Gemini-Robotics-2-Safety.pdf"
+    ],
+    "source_origin": "robotics_recency_audit_2026_10_04",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "image",
+    "video",
+    "text",
+    "action"
+  ],
+  "task_tags": [
+    "decision",
+    "evaluation"
+  ]
+}

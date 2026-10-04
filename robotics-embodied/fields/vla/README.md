@@ -1,12 +1,12 @@
 # 视觉-语言-动作模型（VLA）
 
-> 状态：领域入门页 · v2 · 依据 [synthesis.csv](synthesis.csv)（15 篇）与本方向 25 篇论文的原文
+> 状态：领域入门页 · v2（2026-10-04 追加第 7 阶段） · 依据 [synthesis.csv](synthesis.csv)（18 行）与本方向论文、官方材料的原文
 >
 > 速览：
 > 1. VLA 要让一个策略听懂自然语言、在没见过的物体和场景里完成操作。办法是从预训练视觉语言模型出发，再用机器人示教教它输出动作；RT-2 第一次证明网页知识能迁移到动作上，没见过任务的成功率从 RT-1 的 32% 提到 62%。
 > 2. 2023–2026 年的主线是动作怎样表示：逐维分桶的离散 token（RT-2、OpenVLA）在 20 Hz 以上的灵巧任务上学不动、推理慢；π0 换成 flow matching 生成的连续动作块；π0.5 与 Knowledge Insulation 收敛到"训练时用离散 token 保住语言模型，部署时只用连续动作头"。
 > 3. 每一代都由后来者写出前作的坑：FAST 指出逐维分桶在高频数据上只会复制上一个 token；OpenVLA-OFT 把 OpenVLA 的 4.2 Hz 提到 109.7 Hz；Knowledge Insulation 指出 π0 的动作头梯度损伤语言跟随；π*0.6 指出纯模仿会累积误差，最多做到示范的水平。
-> 4. `[判断]` Google DeepMind 押注自家最大的 VLM 加云端运行，Physical Intelligence 押注自有数据与连续动作头、并把新信息都写进模型的提示，Stanford/Berkeley 押注完全开放与廉价微调，NVIDIA 押注人形与合成数据；2026 年各家都在扩充"任务条件"（子任务、示教、子目标图、元数据）与上下文长度。
+> 4. `[判断]` Google DeepMind 押注自家最大的 VLM 加云端运行，Physical Intelligence 押注自有数据与连续动作头、并把新信息都写进模型的提示，Stanford/Berkeley 押注完全开放与廉价微调，NVIDIA 押注人形与合成数据；2026 年各家都在扩充"任务条件"（子任务、示教、子目标图、元数据）与上下文长度。2026 年中起，Google DeepMind（Gemini Robotics 2）、NVIDIA（GR00T N1.6/N1.7）、Figure（Helix 02）、Unitree（UnifoLM-WLA-1.0）都把 VLA 推到人形全身；Figure 与 NVIDIA 的官方材料写明行走与平衡由下面一层单独训练的全身控制器负责（第 7 阶段）。
 > 5. 衡量方式从自家机器人上的见过 / 没见过任务，迁移到 LIBERO 仿真（已接近饱和，多家在 97%–98%），再到真实家庭、吞吐量、连续运行小时数和"没见过的任务-机器人组合"；π0.7 在没见过的任务上为 60%–80%，见过的常在 90% 以上。
 
 本页是[机器人与具身](../../README.md)领域的 VLA 方向，讲领域地图。一张图像和一句话怎样变成动作块、损失在哪里计算、部署时怎样调度，见[VLA 逐步讲义](../vla.md)；基线拆分见 [Baseline 页](BASELINES.md)，学习路线见[路线图](ROADMAP.md)，论文列表见[论文目录](PAPERS.md)。
@@ -85,9 +85,22 @@
 
 做不好的场景：π0.7 自述没见过的任务或"任务-机器人"组合只有 60%–80%，数据太杂以至难以判定哪些任务真正没见过，复杂新任务（如做红薯）不经人口头教练就做不成。π*0.6 的奖励标注、纠正和场景重置都靠人，探索基本是贪心的。Gemini Robotics 1.5 自述灵巧度与上一代持平。Qwen-VLA 自述联合训练轻微损害纯视觉语言与导航能力，评测多为短时程。ICRT 与 BPP 都自述学不会全新的动作原语。RoboTTT 的完全成功率仍低（10 个阶段的齿轮机器人只成功 2/10）。`[判断]` 站在现在看，RoboTTT 与 BPP 揭示了一个此前少有人写的坑：直接给策略多看几帧历史会引入虚假相关，RoboTTT 的对照中多给 1 帧历史让一个任务从 57% 降到 39.5%，BPP 也批评 ICRT 保留整段历史容易分布外；Octo 预训练加本体状态反而变差（作者归因于因果混淆），Qwen-VLA 默认不用本体状态。历史和本体状态都是双刃剑，π0.7 用 0.3 的概率整体丢弃历史帧来训练。
 
+### 7 全身、记忆与人类视频（2026）
+
+留下的问题：第 6 阶段的模型几乎都在桌面双臂或轮式双臂上评测；π0.5 自述没有记忆；"真机数据之外的数据能顶多少"还没有定量答案（Gemini Robotics 1.5 把它列为局限）。改变：
+
+- **记忆**：Physical Intelligence 的 [MEM](../../papers/arxiv-2603.03596/README.md)（2026-03）在 π0.6 上把记忆分两种模态：短时记忆是视频（视觉编码器每 4 层插一次时间注意力，推理时最多 18 帧、54 秒），长时记忆是策略自己不断更新的一段文字摘要。机器人能完成长达约 15 分钟的整理厨房；直接拼接历史指令的"朴素语言记忆"明显更差。π0.7 已沿用 MEM。
+- **人类第一视角视频**：NVIDIA 的 [EgoScale](../../papers/arxiv-2602.16710/README.md)（2026-02）用 SLAM 与手部姿态估计把 20,854 小时第一视角人类视频标成动作，人类动作预测的验证损失随数据小时数对数线性下降（R² = 0.9983），并能预测真机表现；22 自由度灵巧手上平均成功率比不做人类预训练高 54%。[GR00T N1.7](https://huggingface.co/blog/nvidia/gr00t-n1-7)（2026-04，官方 Hugging Face 博客与 [GitHub](https://github.com/NVIDIA/Isaac-GR00T)）把这 2 万小时放进预训练：3B 参数，VLM 换成 Cosmos-Reason2-2B（Qwen3-VL 结构），32 层 DiT 流匹配动作头，跨本体改用相对末端动作空间，状态与动作维度从 29 扩到 132，动作块从 16 步加长到 40 步。
+- **全身**：[GR00T N1.6](https://developer.nvidia.com/blog/building-generalist-humanoid-capabilities-with-nvidia-isaac-gr00t-n1-6-using-a-sim-to-real-workflow)（2026-01，NVIDIA 技术博客）的仿真到真机流程把 VLA、在 Isaac Lab 里用 RL 训练并零样本上真机的全身控制器 GR00T-WholeBodyControl 和导航策略组合起来，导航策略只给全身控制器发速度指令，平衡交给下层；定位用 cuVSLAM，深度用 FoundationStereo（见[定位与建图](../localization-mapping/README.md)、[感知](../perception/README.md)）。Figure 的 [Helix 02](../../papers/figure-helix-02/README.md)（2026-01）分三层：S2 做语义推理，S1 以 200 Hz 输出全身关节目标，S0 是 1 kHz、10M 参数的全身控制器，用超过 1000 小时人体动作数据加仿真 RL 训练。Google DeepMind 的 [Gemini Robotics 2](../../papers/gemini-robotics-2/README.md)（2026-07-30）同时发布全身 VLA、做规划与多机协作的 ER 2 和机载的 On-Device 2，后者适配新的双臂本体通常少于 200 条示范。Unitree 的 [UnifoLM-WLA-1.0](../../papers/unifolm-wla/README.md)（2026-09）开放 6B 参数的人形基础模型权重与训练代码，约 2500 小时真机数据、一个模型覆盖 64 个桌面与全身操作任务。
+- **在线 RL 精修**：[RL Token](../../papers/arxiv-2604.23073/README.md)（Physical Intelligence，2026-04）冻结 π0.6，只在压缩出的一个 token 上训练小的 actor-critic 修正动作块，几小时真机数据把精密插接阶段提速约 3 倍，见[模仿与强化学习方向](../imitation-reinforcement-learning/README.md)。
+
+做不好的场景：Gemini Robotics 2 博客中，Apollo 2 人形从地面拾取只有 45.7%，SharpaWave 手拧上灯泡 36%、系垃圾袋 44%、用簸箕 32%；图中只有自家模型，没有与 1.5 或其他模型的对照，结构、参数量与动作表示都没有公开。同期的[安全评测报告](../../papers/gemini-robotics-2-safety/README.md)显示，没有一个前沿模型能把人员接近的漏报和误报同时压到接近零。Helix 02 的博客自称结果还早，没有成功率。GR00T N1.7 的官方说明称它与 N1.6 表现相当，提升在泛化与语言跟随。EgoScale 写明尺度律不外推到测量范围之外。MEM 的记忆只在一个回合之内，跨回合记忆留作未来工作。UnifoLM-WLA-1.0 没有技术报告，README 不给具体数字。
+
+`[判断]` 站在现在看：2026 年的"全身 VLA"在结构上延续了本页开头"VLA 管从像素到动作、下面仍有控制器"的分工。Figure 与 NVIDIA 都把平衡与行走交给一个单独训练、频率更高的全身控制器（Helix 02 的 S0 为 1 kHz，S1 为 200 Hz），上层（Helix 02 的 S1、GR00T N1.6 的导航策略）给的是全身关节目标或速度指令；Boston Dynamics 与 TRI 的 Atlas 大行为模型（2025-08）让策略输出脚的位姿、由 MPC 去稳定（见[模仿与强化学习方向](../imitation-reinforcement-learning/README.md)）；Gemini Robotics 2 没有公开这一层。下层全身控制器的训练信号是人体动作数据加仿真 RL（Helix 02 的 S0、NVIDIA 的 [SONIC](../../papers/arxiv-2511.07820/README.md)），这与[运动控制方向](../control-locomotion/README.md#为什么绕不开模仿学习)"运动控制绕不开模仿学习"的结论接上了。
+
 ### 评测目标怎样迁移
 
-benchmark 的替换就是目标的迁移：2022–2023 年在 Google 自家机器人上分见过 / 没见过任务（RT-1、RT-2）；2023–2024 年转向跨实验室的 BridgeData WidowX 桌面任务（RT-X、Octo、OpenVLA）；2024–2025 年微调比较集中到 LIBERO 仿真（OpenVLA-OFT、SmolVLA、KI），真机比较转向按进度打分的长时程灵巧任务（π0）；2025 年起比的是没见过的真实家庭（π0.5）、吞吐量与连续运行时间（π*0.6）、230 个任务的 A/B 测试（Gemini Robotics 1.5）；2026 年比没见过的任务-机器人组合（π0.7）、RoboTwin 2.0 双臂仿真（X-Tokenizer、InternVLA-A1、Qwen-VLA、Zero-WAM）。
+benchmark 的替换就是目标的迁移：2022–2023 年在 Google 自家机器人上分见过 / 没见过任务（RT-1、RT-2）；2023–2024 年转向跨实验室的 BridgeData WidowX 桌面任务（RT-X、Octo、OpenVLA）；2024–2025 年微调比较集中到 LIBERO 仿真（OpenVLA-OFT、SmolVLA、KI），真机比较转向按进度打分的长时程灵巧任务（π0）；2025 年起比的是没见过的真实家庭（π0.5）、吞吐量与连续运行时间（π*0.6）、230 个任务的 A/B 测试（Gemini Robotics 1.5）；2026 年比没见过的任务-机器人组合（π0.7）、RoboTwin 2.0 双臂仿真（X-Tokenizer、InternVLA-A1、Qwen-VLA、Zero-WAM）。2026 年中又多出两种口径：Gemini Robotics 2 按"全身操作 / 多指灵巧 / 夹爪灵巧"三类在人形与双臂上分别报告成功率，并另发一个评测编排器安全决策的 ASIMOV-Agentic 基准；EgoScale 用人类动作预测的验证损失来预测真机表现，评测对象从策略延伸到了数据。
 
 ## 技术地基
 
@@ -110,8 +123,12 @@ benchmark 的替换就是目标的迁移：2022–2023 年在 Google 自家机�
 | NVIDIA | 人形机器人、双系统分频运行、数据金字塔（人类视频、仿真、生成视频） | GR00T N1、RoboTTT（以 GR00T N1.7 为底座） | GR00T N1 只做短时程桌面任务；合成数据难生成多样的符合物理的反事实 |
 | 中国团队（Qwen、上海人工智能实验室、X Square Robot 等） | 统一更多任务与本体（Qwen-VLA）、仿真为主的数据加未来预测（InternVLA-A1）、对齐 VLM 的动作 tokenizer（X-Tokenizer）；多在 RoboTwin 2.0 上比较 | Qwen-VLA、InternVLA-A1、X-Tokenizer | Qwen-VLA 联合训练损害部分能力；InternVLA-A1 的理解专家没有与大规模 VQA 联合训练 |
 | Hugging Face | 小模型、社区数据、消费级硬件 | SmolVLA | 单一机器人类型的预训练，只擅长短时程任务 |
+| Unitree（2026 年补充） | 开放权重、训练代码与数据的人形基础模型，延续它在运动控制上开源整条流水线的做法 | UnifoLM-VLA-0、UnifoLM-WLA-1.0（官方仓库） | 没有技术报告，README 不给具体数字 |
+| Figure AI（2026 年补充） | 三层系统：语义推理、200 Hz 视觉运动策略、1 kHz 学到的全身控制器；触觉与手掌相机进入策略 | Helix、Helix 02（官方博客） | 只有演示，没有成功率与失败分析 |
 
 `[判断]` 收敛的部分：连续动作块成为默认输出（Octo、π 系列、GR00T、SmolVLA、Qwen-VLA、InternVLA-A1）；离散 token 退到训练信号的位置（π0.5、KI、π*0.6、π0.7、X-Tokenizer 部署时也只用连续 flow 头）；高层子任务或思考进入同一个模型（π0.5、Gemini Robotics 1.5）。分化的部分：骨干在云端还是机载（Google 对其他各家）；本体状态与历史要不要输入（π0.7、RoboTTT 加，Octo、Qwen-VLA 慎用）；数据靠自有真机还是合成与人类视频（Physical Intelligence 对 NVIDIA 与 InternVLA）。
+
+`[判断]` 2026 年的补充（第 7 阶段的材料）：Google DeepMind 第三次沿用"ER 模型编排 + VLA 执行 + 多本体 motion transfer"（1.5、2），并新增机载的 On-Device 2，云端与机载两条都在做；Physical Intelligence 继续在同一个 π0.6 底座上加部件（MEM 记忆、RL Token 在线精修、π0.7 提示），仍未开放 π0.6 之后的权重；NVIDIA 第三次押注人类与合成数据（GR00T N1 的数据金字塔、EgoScale 的 2 万小时人类视频、GR00T N1.7 把它放进预训练），并开始用自家的 Cosmos-Reason 当 VLM 骨干；人形公司（Figure、NVIDIA）在 VLA 之下都放了一个单独训练的全身控制器。
 
 ## 用什么衡量进展
 
@@ -130,6 +147,9 @@ benchmark 的替换就是目标的迁移：2022–2023 年在 Google 自家机�
 - **怎样从部署经验里自主改进？** π*0.6 仍需人工奖励与重置；仿真中的纯 RL 微调受限于基座能否起步。入口：[π*0.6](../../papers/arxiv-2511.14759/README.md)、[SimpleVLA-RL](../../papers/arxiv-2509.09674/README.md)、[模仿与强化学习方向](../imitation-reinforcement-learning/README.md)。
 - **记忆、力觉与接触**：π0.5 自述没有记忆，Qwen-VLA 把力和触觉列为未来方向。入口：[RoboTTT](../../papers/arxiv-2607.15275/README.md)、[ForceVLA](../../papers/arxiv-2505.22159/README.md)。
 - **闭源模型怎样做的？** Gemini Robotics 两份报告没有给出参数量、动作表示与训练目标，π0.6、π0.7 没有开放权重；这些只能作为开放问题，不能写成事实。
+- **VLA 与全身控制器怎样分工？**（2026 年补充）Helix 02 让视觉运动策略给全身关节目标、GR00T N1.6 让导航策略给速度指令，下层学到的控制器负责平衡；Atlas 大行为模型输出脚的位姿交给 MPC；Gemini Robotics 2 没有公开。接口给多少自由度、下层能不能拒绝不可行的指令，还没有同条件的比较。入口：[Helix 02](../../papers/figure-helix-02/README.md)、[SONIC](../../papers/arxiv-2511.07820/README.md)、[Gemini Robotics 2](../../papers/gemini-robotics-2/README.md)、[运动控制方向](../control-locomotion/README.md)。
+- **记忆能撑多长、放在哪里？**（2026 年补充）MEM 用视频加文字摘要撑到约 15 分钟、限于一个回合，RoboTTT 把约 5 分钟的历史写进快权重。入口：[MEM](../../papers/arxiv-2603.03596/README.md)、[RoboTTT](../../papers/arxiv-2607.15275/README.md)。
+- **人类视频的尺度律能延伸多远？**（2026 年补充）EgoScale 在 1 千到 2 万小时内看到对数线性、没有饱和，但作者不外推。入口：[EgoScale](../../papers/arxiv-2602.16710/README.md)。
 
 ## 阅读顺序
 
@@ -139,6 +159,7 @@ benchmark 的替换就是目标的迁移：2022–2023 年在 Google 自家机�
 4. [FAST](../../papers/arxiv-2501.09747/README.md) 与 [OpenVLA-OFT](../../papers/arxiv-2502.19645/README.md)：从两个方向修补离散 token 路线，对照着读，看清"慢"和"学不动"各自的原因。
 5. [π0.5](../../papers/arxiv-2504.16054/README.md) → [Knowledge Insulation](../../papers/arxiv-2505.23705/README.md)：两种表示怎样合用、梯度为什么要隔离。
 6. [π*0.6](../../papers/arxiv-2511.14759/README.md) → [π0.7](../../papers/arxiv-2604.15483/README.md)，对照 [Gemini Robotics 1.5](../../papers/arxiv-2510.03342/README.md)：当前前沿在提示、经验与多本体上的押注。
+7. [MEM](../../papers/arxiv-2603.03596/README.md) 与 [EgoScale](../../papers/arxiv-2602.16710/README.md)，再看 [Gemini Robotics 2](../../papers/gemini-robotics-2/README.md) 与 [Helix 02](../../papers/figure-helix-02/README.md)：2026 年的记忆、人类视频与人形全身；对照[运动控制方向](../control-locomotion/README.md)看 VLA 之下的全身控制器从哪里来。
 
 按问题排列的练习见[路线图](ROADMAP.md)，各篇在基线的哪一格见 [Baseline 页](BASELINES.md)。
 
@@ -154,6 +175,10 @@ benchmark 的替换就是目标的迁移：2022–2023 年在 Google 自家机�
 - π0.7 的 80% 对 80.6% 是 UR5e 上的跨本体叠 T 恤，π0.7 没有在 UR5e 上采过这项任务的数据，人类专家是遥操作（Sec. IX-C）。
 - Qwen-VLA 的 76.9% 对 41.5% 是作者在自家 ALOHA 上的分布外设置（Table 6），π0.5 由作者微调。
 - 本页所称"Physical Intelligence 押注连续动作头"，FAST 一篇本身是离散 token；它在 π0.5 之后成为训练信号，而非部署时的输出。
+- Gemini Robotics 2 的成功率来自官方博客的三张图，每张只有自家模型（带误差棒），没有与 1.5 或其他模型对照；"少于 200 条示范"说的是 On-Device 2 适配新的双臂本体，不是全身 VLA。
+- EgoScale 的"+54%"是 22 自由度手上多个任务平均成功率相对不做人类预训练的提升；R² = 0.9983 是人类动作预测验证损失对数据小时数的拟合，不是成功率的拟合。
+- GR00T N1.7 的结构变化（Cosmos-Reason2-2B、32 层 DiT、29 → 132 维、16 → 40 步）取自官方 Hugging Face 博客与 GitHub README，没有对应的论文。
+- MEM 的"15 分钟"是单个回合内的任务长度；推理时视频记忆最多 54 秒，更早的事件只保留在文字摘要里。
 
 **判断的支撑论文**
 
@@ -161,7 +186,9 @@ benchmark 的替换就是目标的迁移：2022–2023 年在 Google 自家机�
 - 连续动作头损伤 VLM：KI §4、Fig. 2、§6；Gemini Robotics §3.3。反例：π0.5 Sec. V-D 中 π0 训练到 300k 步仍不如 π0.5，但那组比较同时换了数据配方，不是单变量。
 - "离散 token 用于训练、连续头用于部署"的收敛：π0.5 Sec. IV-B–D、KI §5、π*0.6 §V-A、π0.7 Sec. III、X-Tokenizer（部署时关闭自回归头）。反例：OpenVLA-OFT 与 SmolVLA 不用离散 token 也能在 LIBERO 上达到 87%–97%。
 - 团队偏好按"同一团队在两篇以上论文中、有替代方案时仍重复同一选择"判断：Google DeepMind 在 RT-2、RT-X、Gemini Robotics 中都把大骨干放在云端（RT-2 §3.3、OXE §IV-C、Gemini Robotics §3.1）；Physical Intelligence 在 π0、π0.5、KI、π*0.6、π0.7 中都保留连续动作专家，在 π0.5、π*0.6、π0.7 中都把新条件写成提示里的 token；Stanford/Berkeley 的 Octo、OpenVLA、OFT 都开放权重与训练代码；NVIDIA 的 GR00T N1 与 RoboTTT 共用 GR00T 系列的 DiT 动作头。边界：Google 的 RT-1 是机载的 35M 小模型；Gemini Robotics 1.5 没写是否在云端运行。
-- 历史与本体状态是双刃剑：RoboTTT §4（GR00T Hist. 39.5% 对 57%）、BPP §4.1 与 App. G、Octo App. E、Qwen-VLA Table 12 与 §5.2.4、π0.7 Sec. VI-B。边界：OpenVLA-OFT 加本体状态有正收益，RoboTTT 的长上下文也有正收益，问题在于怎样加。
+- 历史与本体状态是双刃剑：RoboTTT §4（GR00T Hist. 39.5% 对 57%）、BPP §4.1 与 App. G、Octo App. E、Qwen-VLA Table 12 与 §5.2.4、π0.7 Sec. VI-B。边界：OpenVLA-OFT 加本体状态有正收益，RoboTTT 的长上下文也有正收益，问题在于怎样加。MEM（2026）给出第三种加法：短时用视频编码器、长时改成文字，作者报告直接拼接历史指令明显更差，与"直接多给历史会变差"的观察一致。
+- "全身 VLA 之下仍有学到的全身控制器"：Helix 02 官方博客（S0 1 kHz、S1 200 Hz）、GR00T N1.6 技术博客（导航策略给全身控制器发速度指令）、Atlas 大行为模型博客（脚的位姿交给 MPC）。反例与边界：Gemini Robotics 2 没有公开行走由谁生成；Unitree UnifoLM-WLA-1.0 的 README 也没有说明。
+- 2026 年的团队偏好补充：Google DeepMind 的 ER 编排 + VLA 见 Gemini Robotics 1.5 报告与 Gemini Robotics 2 博客及安全报告；Physical Intelligence 的同底座迭代见 MEM、RL Token（都基于 π0.6）与 π0.7；NVIDIA 的人类与合成数据见 GR00T N1、EgoScale、GR00T N1.7 官方博客。
 
 **与其他论文的关联**
 
@@ -169,7 +196,9 @@ benchmark 的替换就是目标的迁移：2022–2023 年在 Google 自家机�
 - [视觉表征方向](../../../multimodal/fields/visual-representation/README.md)：OpenVLA 拼接 SigLIP 与 DINOv2、冻结视觉编码器掉点，是"按性质组合多种表征"与"冻结即用在精细控制上遇到边界"两条趋势的证据。
 - [模仿与强化学习方向](../imitation-reinforcement-learning/README.md)：Diffusion Policy 与 ACT 是连续动作块的来源；π*0.6 与 SimpleVLA-RL 是 VLA 上的 RL。
 - [具身 Agents 方向](../embodied-agents/README.md)：π0 时期的高层 VLM、Gemini Robotics 1.5 的编排器与 SayCan 是同一种"规划器调用技能"的接口。
-- [世界模型方向](../world-models/README.md)：InternVLA-A1、Zero-WAM 与 π0.7 的子目标图像生成都把未来预测放进策略。
+- [世界模型方向](../world-models/README.md)：InternVLA-A1、Zero-WAM 与 π0.7 的子目标图像生成都把未来预测放进策略；NVIDIA 的 [Cosmos Policy](../../papers/arxiv-2601.16163/README.md) 反过来把视频世界模型直接后训练成策略，GR00T N1.7 的 VLM 骨干 Cosmos-Reason2 也来自同一个 Cosmos 平台。
+- [运动控制方向](../control-locomotion/README.md)：Helix 02 的 S0、NVIDIA 的 [SONIC](../../papers/arxiv-2511.07820/README.md) 是 VLA 之下的全身控制器，训练信号是人体动作数据加仿真 RL；SONIC 用微调后的 GR00T N1.5 驱动自己的运动学规划器。
+- [具身 Agent 方向](../embodied-agents/README.md)：[Gemini Robotics 2 安全评测](../../papers/gemini-robotics-2-safety/README.md)把 ER 2 写成以工具调用调 VLA 的 Agent，并测它能否判断"这个子任务 VLA 做不做得到"。
 
 **未核实 / 待验证**
 
@@ -177,3 +206,8 @@ benchmark 的替换就是目标的迁移：2022–2023 年在 Google 自家机�
 - openpi 的开放范围以其 GitHub README 为准（π0、π0-FAST、π0.5 的基础模型权重，π0.5 只支持 flow 头）；π0.6、π0.7 是否另有开放渠道未核实。
 - Gemini Robotics On-Device 只在 Gemini Robotics 1.5 报告中作为对照出现，本页没有单独核实它的官方说明。
 - Qwen-VLA、X-Tokenizer 正文只给出项目链接，权重与数据是否开放未核实。
+- Physical Intelligence 官方博客（pi.website）本轮返回 403，MEM 与 RL Token 只核实了 arXiv 原文；π0.7（2026-04）之后 Physical Intelligence 是否有新的模型发布未能从官方页面确认。
+- GR00T N1.6 的全身控制器 GR00T-WholeBodyControl 是否就是 SONIC，官方博客没有写明；GR00T N1.5、N1.6 没有单独的技术报告，本页只引官方博客与 GitHub。
+- Gemini Robotics 2 没有模型卡或技术报告（只有博客与安全评测报告）；VLA 是否在云端运行未写明。
+- Figure Helix 02、Tesla Optimus 的公开材料都没有成功率；Tesla 本轮只找到二手报道，没有官方技术材料，未写入。
+- 2026 年的新评测（RoboDojo、VLA-REPLICA、IndustrialVLA-Bench 等）只看到检索结果，未打开原文。

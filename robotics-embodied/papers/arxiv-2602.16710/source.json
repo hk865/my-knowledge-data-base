@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2602.16710",
+  "title": "EgoScale: Scaling Dexterous Manipulation with Diverse Egocentric Human Data",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2602.16710",
+  "official_url": "https://arxiv.org/abs/2602.16710",
+  "official_fulltext_url": "https://arxiv.org/pdf/2602.16710",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。arXiv 摘要页与 v1 HTML 选段：动作标注流程、模型结构、三阶段训练、尺度律、主要结果与局限；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Ruijie Zheng",
+    "Dantong Niu",
+    "Yuqi Xie",
+    "Jing Wang",
+    "Mengda Xu",
+    "Yunfan Jiang",
+    "Fernando Castañeda",
+    "Fengyuan Hu",
+    "You Liang Tan",
+    "Letian Fu",
+    "Trevor Darrell",
+    "Furong Huang",
+    "Yuke Zhu",
+    "Danfei Xu",
+    "Linxi Fan"
+  ],
+  "year": 2026,
+  "topic_paths": [
+    "robotics/embodied-policies"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v1 HTML 选段：动作标注流程、模型结构、三阶段训练、尺度律、主要结果与局限；",
+    "mechanism_summary": "20,854 h 第一视角人类视频（另 829 h EgoDex/Vision Pro），SLAM + 21 手部关键点优化重定向；VLM + DiT 流匹配动作专家，按本体换 MLP 适配层；三阶段：人类预训练（100K 步）、约 50 h 人机对齐中期训练、机器人后训练；L = 0.024 − 0.003·ln(D)，R² = 0.9983；22 自由度手平均成功率 +54%；单示范叠衬衫 88%；主平台 Galaxea R1Pro + Sharpa 手，另有 Unitree G1 三指手。作者单位据检索结果与作者列表，未逐一核对首页。",
+    "evidence_boundary": "未复现实验；数字取自原文或官方页面的正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2602.16710",
+      "https://arxiv.org/html/2602.16710v1"
+    ],
+    "source_origin": "robotics_recency_audit_2026_10_04",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "video",
+    "image",
+    "text",
+    "action"
+  ],
+  "task_tags": [
+    "decision",
+    "analysis"
+  ]
+}

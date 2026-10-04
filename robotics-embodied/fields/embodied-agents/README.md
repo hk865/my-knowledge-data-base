@@ -1,13 +1,13 @@
 # 具身 Agent
 
-> 状态：领域入门页 · v2 · 依据 [synthesis.csv](synthesis.csv)（13 篇）
+> 状态：领域入门页 · v2（2026-10-04 追加第 6 阶段） · 依据 [synthesis.csv](synthesis.csv)（14 行）
 >
 > 速览：
 > 1. 具身 Agent 把长程任务拆成两层：大模型在高层理解指令、拆子任务、选技能；底层技能（RL 策略、VLA（视觉语言动作模型，一句话：从图像和指令直接输出机器人动作的模型）、运动规划器或一段程序）把每个子任务做出来。本方向的难点几乎都在两层之间：技能库覆盖不到、执行后没验证、长程错误累积、记忆过期。
 > 2. 主线五步：长程任务基准（ALFRED）→ 语言打分乘可行性打分（SayCan）→ 闭环反馈与重规划（Inner Monologue、LLM-Planner）→ 用代码和价值图绕过固定技能库（Code as Policies、Voyager、VoxPoser）→ 训练出来的分层 VLA（Hi Robot、π0.5）→ 2026 年的 Agent 运行时、技能积累与记忆（EmbodiedSkills、RoboSkill、MEMORA、HoloAgent-0）。
 > 3. 每一步的失败都有数字：SayCan 规划成功 84%、执行成功 74%，长程指令执行只有 47%，错误中 65% 来自语言模型；同一批扰动下开环 SayCan 30.8%，加闭环反馈 60.4%；EmbodiedBench 中最强模型从基础子集 96% 降到长程子集 58%；EmbodiedSkills 去掉中间验证，成功率从 86.2% 跌到 48.2%；依赖记忆的任务只有 12.5%。
 > 4. `[判断]` 分工在移动：技能库从人写的固定集合，变成代码生成、执行后积累；验证从可选的反馈变成运行时的必经步骤；高层从冻结的通用大模型，变成与底层同一家族、在机器人数据上训练的 VLM。
-> 5. `[判断]` Google 机器人团队与后来的 Physical Intelligence 一线（Ichter 等）从"冻结 LLM + 技能库"走到"分层 VLA"；Wenlong Huang 一线（Inner Monologue、Code as Policies、VoxPoser）押注让大模型生成可执行的结构；2026 年的中国团队押注 Agent 运行时、技能积累与记忆这些"中间层"。
+> 5. `[判断]` Google 机器人团队与后来的 Physical Intelligence 一线（Ichter 等）从"冻结 LLM + 技能库"走到"分层 VLA"；Wenlong Huang 一线（Inner Monologue、Code as Policies、VoxPoser）押注让大模型生成可执行的结构；2026 年的中国团队押注 Agent 运行时、技能积累与记忆这些"中间层"。Google DeepMind 在 Gemini Robotics 1.5 与 2 中两次采用"具身推理模型编排、VLA 当工具"的结构，2026 年 7 月的安全评测又把"这个子任务该不该交给 VLA"交给编排器判断（第 6 阶段）。
 
 本页是[机器人与具身](../../README.md)领域的具身 Agent 方向。机制与手算（目标写成可验证的物理状态、像素到三维点、SayCan 的选择、执行后的证据、调度器与验证器样本怎样训练）在[具身 Agent 讲义](../embodied-agents.md)，本页不重复，只讲领域地图。不限于机器人的 Agent 方法（ReAct、工具调用、轨迹验证）在[跨方向 Agent 页](../../../cross-domain/fields/agents/README.md)；单个技能怎样从图像和语言出动作在 [VLA](../vla/README.md)；按指令走到某处在[导航与规划](../navigation-planning/README.md)。
 
@@ -103,6 +103,24 @@
 
 `[判断]` 站在现在看过去：这四篇各自修 SayCan 留下的一个问题，但都没有给出真实机器人上长程任务的定量 benchmark。2022 年 SayCan 用 101 条指令同时报告规划与执行成功率，这种"两层分开计分"的口径在 2026 年的论文里反而少见了。
 
+### 6 公司系统里的编排器：调用 VLA、判断可行性、负责安全（2025 年底–2026）
+
+上一阶段的学术工作补的是中间层；同一时期，有自家 VLA 的公司把"高层调用底层"做成了产品结构：
+
+- **ER 模型当编排器**：Google DeepMind 的 [Gemini Robotics 1.5](../../papers/arxiv-2510.03342/README.md)（2025 年 10 月）让具身推理模型 ER 1.5 负责任务分解、成功判定与调用工具，把 VLA 当作工具调用；长时程实验中用 ER 1.5 编排的总失败率 22%，换成通用的 Gemini 2.5 Flash 编排为 44.5%。[Gemini Robotics 2](../../papers/gemini-robotics-2/README.md)（2026-07-30）的 ER 2 增加了任务起止与关键事件的时间定位、多机器人协作；博客称 ER 2 可在 Google AI Studio 上使用，VLA 与机载版只对早期合作伙伴开放。
+- **编排器负责安全与可行性**：同期的 [Gemini Robotics 2 安全评测](../../papers/gemini-robotics-2-safety/README.md)把系统写成"system 2 / system 1"：ER 2 当 Agent，以工具调用调 VLA，另有一个安全工具让机器人回到安全姿态。它发布的 ASIMOV-Agentic 基准测四件事：按安全约束拒绝任务、监测人员接近与硬件状态并触发停机、判断子任务是否超出 VLA 的训练分布、指令含糊时向人求助。告诉 ER 2 的 VLA 训练指令摘要越详细，它判断"VLA 做不做得到"的准确率从 62.0% 升到 95.8%；Apollo 2 人形的实验室测试中，人员检测 99%、转入安全姿态 96%。
+- **记忆进入策略本身**：Physical Intelligence 的 [MEM](../../papers/arxiv-2603.03596/README.md)（2026-03）让高层策略在执行中不断改写一段文字摘要作为长时记忆，配合视频短时记忆完成约 15 分钟的任务；这是第 5 阶段 MEMORA 一类外部记忆的另一种做法：记忆由同一个 VLA 家族写、自己读。
+- **人形公司的三层结构**：Figure 的 [Helix 02](../../papers/figure-helix-02/README.md)（2026-01）把 System 2 写成负责场景理解与语言、给出潜在目标的一层，下面是 200 Hz 的视觉运动策略和 1 kHz 的全身控制器。
+
+做不好的场景：
+
+- **漏报与误报不可兼得**。安全评测中，人员接近监测的误报率压到 5% 以下的模型漏报率超过 40%，漏报压到 10%–15% 的模型有 15%–25% 的时间无谓停机，没有模型同时做到两者都接近零；报告建议与确定性的低层安全护栏一起用。
+- **约束懂了，落到动作上就差**。纯文本形式的安全约束判断各模型都在 96.0% 以上，落到指点、框选、工具调用时模型之间差距变大。
+- **长程重规划**。多轮变体中，Agent 会按要求先查 VLA 置信度，但常在收到反馈后重规划失败，或在长任务里调用了低置信度的 VLA。
+- **评测范围**。报告写明不评估认证硬件、冗余与实时保证；多轮评测里的 VLA 是用 Gemini 模拟的置信度评分器，不是真机。
+
+`[判断]` 站在现在看过去：公司系统回到了 SayCan 的结构，只是三件事都换了实现。SayCan 用价值函数估计"这个技能现在能不能成功"，ER 2 改为读 VLA 训练指令的摘要来判断可行性（62.0% → 95.8%），这是同一个"可行性打分"问题的工具调用形式；Inner Monologue 的闭环反馈变成了编排器对任务进度和关键事件的时间定位；而 SayCan 没有的"安全"成了编排器的必备职责。依据是 Gemini Robotics 1.5 报告、Gemini Robotics 2 博客与安全评测报告；反例是 π0.5 与 MEM 把高层和底层放进同一个模型，不经过工具调用。
+
 ## 技术地基
 
 - **大语言模型与上下文学习**：SayCan、Inner Monologue、LLM-Planner 都靠少样本提示让冻结的 LLM 输出计划。见 [GPT-3 精读](../../../llm/papers/gpt3/reading.md)。
@@ -120,6 +138,7 @@
 | NVIDIA 等（Voyager） | 代码技能库 + 自动课程 + 自我验证，在开放世界里终身学习 | Voyager | 只在 Minecraft，没有视觉感知；GPT-4 调用成本高 |
 | 学术评测团队（Ohio State、UIUC 等） | 少样本规划与系统化评测 | LLM-Planner、EmbodiedBench | 只在仿真；评测高层与低层分开，真实部署的耦合没测到 |
 | 浙江大学、复旦大学、地平线、WashU 等（2026） | Agent 运行时、技能积累、空间与经验记忆 | EmbodiedSkills、RoboSkill、HoloAgent-0、MEMORA | 底层多为逐任务适配；长程与真机结果多为定性 |
+| Google DeepMind（2026 年补充） | 具身推理模型（ER）作编排器、VLA 作工具，编排器同时负责成功判定、安全与可行性；ER 模型对开发者开放 | Gemini Robotics 1.5、Gemini Robotics 2 与其安全评测 | 漏报与误报不可兼得；多轮重规划失败；VLA 与 ER 都不开放权重 |
 
 `[判断]` 收敛的部分：都承认分层，都在两层之间加验证或反馈，都把技能写成带类型或带代码的接口。分化的部分：高层是冻结的通用模型（SayCan、Code as Policies、EmbodiedBench 测的对象）还是训练过的 VLM（Hi Robot、π0.5）；技能是人写的固定集合、生成的代码，还是可替换的 VLA 专家。
 
@@ -135,6 +154,7 @@
 | EmbodiedBench（2025） | 多模态大模型当 Agent：高层 2 个环境、低层 2 个环境、6 个能力子集 | 只在仿真；结果随版本更新（本页引用 v3） |
 | RoboTwin 2.0、LIBERO、RMBench（2026 年多篇使用） | 机械臂操作与依赖记忆的任务 | EmbodiedSkills 的 RoboTwin 结果是逐任务微调的专家策略 |
 | MEMORA-Bench（2026） | 第一人称视频上的记忆问答与规划 | 规划分数是文本规则指标，不是机器人成功率；主 QA 数字来自条件子集 |
+| ASIMOV-Agentic（2026，Google DeepMind） | 编排器的安全决策：约束遵守、人员接近与硬件状态监测、VLA 可行性判断、含糊指令求助 | 离线单步与多轮；多轮中的 VLA 由模拟器代替；不测功能安全架构 |
 
 读数时要分清三对口径：规划成功与执行成功，首回合成功与允许重试的最终成功（RoboSkill），全量与条件子集（MEMORA）。
 
@@ -145,6 +165,8 @@
 - **记忆什么时候该更新、什么时候该怀疑？** 入口：[MEMORA](../../papers/memora/reading.md)、[HoloAgent-0](../../papers/holoagent-0/reading.md)；语言模型一侧的外部记忆见 [Frozen Memory Is Not Enough](../../../llm/papers/arxiv-2608.17050/README.md)。
 - **看不见时怎样验证？** 盒子有盖时一张外部图像无法判断海绵是否在里面（EmbodiedSkills 精读中的例子）；成功检测器的误报会被当成事实（Inner Monologue）。入口：[Inner Monologue](../../papers/arxiv-2207.05608/README.md)。
 - **真实机器人上的长程定量 benchmark 在哪里？** 2026 年的四篇都只有少量真机试验或定性演示。
+- **（2026 年补充）编排器怎样知道 VLA 做得到什么？** ER 2 靠读 VLA 训练指令的摘要判断可行性，摘要越详细越准；但多轮任务里收到置信度反馈后的重规划仍常失败。入口：[Gemini Robotics 2 安全评测](../../papers/gemini-robotics-2-safety/README.md)、[SayCan 精读](../../papers/saycan/reading.md)。
+- **（2026 年补充）安全停机的漏报与误报怎样取舍？** 入口：[Gemini Robotics 2 安全评测](../../papers/gemini-robotics-2-safety/README.md)；功能安全一侧见[运动控制方向](../control-locomotion/README.md)中 Agility Digit 5 的独立安全控制器。
 
 ## 阅读顺序
 
@@ -153,6 +175,7 @@
 3. [Inner Monologue](../../papers/arxiv-2207.05608/README.md) 与 [ReAct 精读](../../../cross-domain/papers/react/reading.md)：闭环的两种写法，一个在真机，一个在文本环境。
 4. [VoxPoser](../../papers/arxiv-2307.05973/README.md) 与 [Hi Robot](../../papers/arxiv-2502.19417/README.md)：绕过技能库与训练高层，两种对 SayCan 瓶颈的回答。
 5. [EmbodiedSkills 精读](../../papers/embodiedskills/reading.md) → [RoboSkill 精读](../../papers/roboskill/reading.md) → [MEMORA 精读](../../papers/memora/reading.md)：2026 年的中间层，注意每篇实验口径的限定。
+6. （2026 年补充）[Gemini Robotics 1.5](../../papers/arxiv-2510.03342/README.md) → [Gemini Robotics 2 安全评测](../../papers/gemini-robotics-2-safety/README.md)：公司系统里的编排器，对照 SayCan 看"可行性打分"变成了什么。
 
 基线拆分见 [Baseline 页](BASELINES.md)，按问题排列的学习路线见[路线图](ROADMAP.md)，本方向收录的论文见[论文目录](PAPERS.md)。
 
@@ -167,6 +190,8 @@
 - EmbodiedSkills 的 86.2% 来自 50 个任务各自微调的 π0.5 专家；去掉验证与去掉子任务条件时保持总动作预算不变，"每子任务一个片段"的 19.5% 改变了执行机会，需分开解读（表 5）。
 - RoboSkill 的真机用时只统计成功试验；MEMORA 的 16.6% 是相对提升，规划指标是文本规则分数（见各自精读）。
 - HoloAgent-0 的 82.6% 是 HM3D 物体导航仿真结果，长程任务只有定性演示。
+- Gemini Robotics 1.5 的 22% 对 44.5% 是长时程 agent 实验的总失败率（报告 Table 1）。
+- ASIMOV-Agentic 的 62.0% → 95.8% 是 ER 2 在单步可行性判断上、随"VLA 训练指令摘要"详细程度（DI0 → DI3）的变化；99% 与 96% 是 Apollo 2 实验室测试中 ER 的人员检测与 VLA 的转入安全姿态，分属两个模型。
 
 **判断的支撑论文**（各行见 [synthesis.csv](synthesis.csv)）
 
@@ -174,6 +199,8 @@
 - Google → PI 一线：作者列表中 Brian Ichter 出现在 SayCan、Inner Monologue、Code as Policies、LM-Nav、RT-2、π0.5、Hi Robot；Karol Hausman 出现在 SayCan、Inner Monologue、Code as Policies、RT-2、π0.5。
 - Wenlong Huang 一线：Inner Monologue、Code as Policies、VoxPoser 的作者列表。
 - "通用大模型高层够用、低层不够"：EmbodiedBench 的高低层对比与视觉消融。边界：EmbodiedBench 只在仿真，低层动作是离散化的 7 维向量。
+- "公司系统回到 SayCan 结构"（2026 年补充）：Gemini Robotics 1.5 报告（ER 1.5 编排、VLA 当工具，Table 1）、Gemini Robotics 2 安全评测 §1 与 §2。反例：π0.5、MEM 把高层与底层放在同一个模型里；Helix 02 的 System 2 给的是潜在目标而不是工具调用。边界：Google 的结构只有官方报告与博客，没有开放权重可供检验。
+- Google DeepMind 的团队偏好：ER 编排 + VLA 工具在 Gemini Robotics 1.5 与 2 两代中重复出现，满足"两篇以上"的条件。
 
 **与其他论文的关联**
 
@@ -188,3 +215,5 @@
 - ProgPrompt 与 2025–2026 年其他带失败分类统计的长程评测本轮未核读。
 - HoloAgent-0 的长程任务没有定量结果；本页只引用其物体导航与语义建图的表格。
 - EmbodiedSkills 摘要页与 HTML 版首页列出的作者人数不一致，本页只引用 HTML 版的单位信息。
+- Gemini Robotics 2 安全评测报告的各模型对比图只读了正文文字，图中各模型的柱值没有估读；报告点名的对照模型（Claude Opus 4.8、GPT 5.5）只在一项任务的文字中出现。
+- Gemini Robotics ER 2 没有单独的模型卡；它的"实时视频理解""Gemini Live API 编排"等说法只见于二手报道，未写入。

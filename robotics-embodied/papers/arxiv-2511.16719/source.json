@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2511.16719",
+  "title": "SAM 3: Segment Anything with Concepts",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2511.16719",
+  "official_url": "https://arxiv.org/abs/2511.16719",
+  "official_fulltext_url": "https://arxiv.org/pdf/2511.16719",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。arXiv 摘要页与 v2 HTML 选段：任务定义、结构、数据引擎、SA-Co 主结果、推理速度、SAM 3 Agent、局限；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Nicolas Carion",
+    "Laura Gustafson",
+    "Yuan-Ting Hu",
+    "Shoubhik Debnath",
+    "Ronghang Hu",
+    "等 38 位作者"
+  ],
+  "year": 2025,
+  "topic_paths": [
+    "robotics/perception"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v2 HTML 选段：任务定义、结构、数据引擎、SA-Co 主结果、推理速度、SAM 3 Agent、局限；",
+    "mechanism_summary": "PCS：名词短语/示例图提示 → 实例掩码 + 跨帧 ID；检测器与记忆式跟踪器共享骨干，presence head 解耦识别与定位；4M 概念标签含困难负样本；SA-Co/Gold cgF1 54.1（OWLv2 24.6，人类 72.8）；H200 单图 100+ 物体约 30 ms；视频随物体数增长；局限：细粒度领域外概念、长短语、推理。参数量原文未写。",
+    "evidence_boundary": "未复现实验；数字取自原文或官方页面的正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2511.16719",
+      "https://arxiv.org/html/2511.16719v2"
+    ],
+    "source_origin": "robotics_recency_audit_2026_10_04",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "image",
+    "video",
+    "text"
+  ],
+  "task_tags": [
+    "understanding"
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2607.20785",
+  "title": "Robostral Navigate",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2607.20785",
+  "official_url": "https://arxiv.org/abs/2607.20785",
+  "official_fulltext_url": "https://arxiv.org/pdf/2607.20785",
+  "read_version": "v3",
+  "version_status": "checked_v3",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。arXiv 摘要页（v3）、v3 HTML 选段（双系统结构、频率、表 1 主结果、真机平台、CISPO）与 Mistral 官方博客；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Abdelaziz Bounhar",
+    "Abhijeet Somani",
+    "Aditi Kabra",
+    "Adrian Valente",
+    "Adrien Petralia",
+    "等 276 位作者（Mistral AI）"
+  ],
+  "year": 2026,
+  "topic_paths": [
+    "robotics/navigation-planning"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页（v3）、v3 HTML 选段（双系统结构、频率、表 1 主结果、真机平台、CISPO）与 Mistral 官方博客；",
+    "mechanism_summary": "8B VLM 0.5 Hz，指点航点 + 朝向，视野外退回位移指令；121M 扩散策略 10 Hz，运动控制 100 Hz；仿真 2.4M 轨迹、35 万场景，前缀缓存；CISPO 在线 RL。R2R-CE val-unseen SR：arXiv v3 77.4%（+10.5 / +5.3），官方博客写 76.6%（+9.7 / +4.5）、CISPO +3.2%，arXiv 写 +4%，版本不同；部分媒体写 40 万轨迹、6000 场景，与官方不符，以官方为准。真机无成功率；无局限一节。",
+    "evidence_boundary": "未复现实验；数字取自原文或官方页面的正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2607.20785",
+      "https://arxiv.org/html/2607.20785v3",
+      "https://mistral.ai/news/robostral-navigate"
+    ],
+    "source_origin": "robotics_recency_audit_2026_10_04",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "image",
+    "text",
+    "action"
+  ],
+  "task_tags": [
+    "decision"
+  ]
+}

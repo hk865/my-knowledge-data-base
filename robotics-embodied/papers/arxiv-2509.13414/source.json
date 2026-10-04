@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2509.13414",
+  "title": "MapAnything: Universal Feed-Forward Metric 3D Reconstruction",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2509.13414",
+  "official_url": "https://arxiv.org/abs/2509.13414",
+  "official_fulltext_url": "https://arxiv.org/pdf/2509.13414",
+  "read_version": "v3",
+  "version_status": "checked_v3",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。arXiv 摘要页（v3）与 HTML 选段：结构、尺度预测、可选输入的消融、与 VGGT 的对比、局限；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Nikhil Keetha",
+    "Norman Müller",
+    "Johannes Schönberger",
+    "Lorenzo Porzi",
+    "Yuchen Zhang",
+    "等 17 位作者"
+  ],
+  "year": 2025,
+  "topic_paths": [
+    "robotics/localization-mapping"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页（v3）与 HTML 选段：结构、尺度预测、可选输入的消融、与 VGGT 的对比、局限；",
+    "mechanism_summary": "可选输入（内参、位姿、深度、部分重建）；分解输出：深度、射线、位姿、公制尺度（stop-gradient 解耦）；DINOv2 ViT-G + 16 层交替注意力；64 张 H200 约 10 天；两视图消融：只图像点误差 0.08 → 全部输入 0.02（HTML 抽取，卡片只写趋势）；图像-only 多视图点图误差低于 VGGT；局限：不建模输入噪声与不确定性、不处理动态、逐像素对应限制大场景。",
+    "evidence_boundary": "未复现实验；数字取自原文或官方页面的正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2509.13414",
+      "https://arxiv.org/html/2509.13414v3"
+    ],
+    "source_origin": "robotics_recency_audit_2026_10_04",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "image"
+  ],
+  "task_tags": [
+    "understanding"
+  ]
+}

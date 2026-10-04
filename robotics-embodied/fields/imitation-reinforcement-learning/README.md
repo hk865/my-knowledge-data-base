@@ -1,12 +1,12 @@
 # 模仿学习与机器人强化学习
 
-> 状态：领域入门页 · v3 · 依据 [synthesis.csv](synthesis.csv)（13 篇）
+> 状态：领域入门页 · v3（2026-10-04 追加 RL Token 与模仿数据源的补充） · 依据 [synthesis.csv](synthesis.csv)（14 行）
 >
 > 速览：
 > 1. 机器人策略有两种训练信号：模仿用示范（"人在这个状态下这样做"），强化用奖励（"这样做的结果有多好"）。`[判断]` 操作任务以模仿为主，因为示范容易给、奖励难写；腿足以仿真强化学习为主，因为奖励容易写、关节力矩的示范给不出。但腿足同样绕不开模仿：从零开始的 RL 探索不到好状态、奖励写不出自然，于是动作捕捉的运动学轨迹被用作跟踪目标或风格奖励，仿真里的特权教师被学生模仿。同一个人形学生，模仿教师成功率 94.1%，直接做 RL 只有 47.1%（OmniH2O）。
 > 2. 模仿的坑是复合误差与分布外。DAgger 证明行为克隆的代价上界随任务长度的平方增长；ACT 不分块时成功率 1%，分块后 44%；RT-1 只能组合已见过的概念，做不出全新动作。
 > 3. 强化的坑是奖励设计与样本效率。HIL-SERL 不给示范、从零做 RL，三项真机任务全部 0%；SimpleVLA-RL 在基座成功率为 0 的任务上无法起步；Extreme Parkour 换成普通速度奖励后，策略学成"撞上去再重试"。
-> 4. 2024–2026 年，RL 回到了模仿之上。同样多的人类数据，HIL-SERL 平均成功率 100%，人工纠正版 DAgger 为 49.7%；π*0.6 把最难任务的吞吐量提高一倍以上；SimpleVLA-RL 在 LIBERO-Long 单示范设定下从 17.3% 提到 91.7%。`[判断]` RL 补的是模仿的两个短板：示范之外的状态，以及超过示范者的速度。
+> 4. 2024–2026 年，RL 回到了模仿之上。同样多的人类数据，HIL-SERL 平均成功率 100%，人工纠正版 DAgger 为 49.7%；π*0.6 把最难任务的吞吐量提高一倍以上；SimpleVLA-RL 在 LIBERO-Long 单示范设定下从 17.3% 提到 91.7%。`[判断]` RL 补的是模仿的两个短板：示范之外的状态，以及超过示范者的速度。2026 年的 RL Token 更进一步，只在冻结 VLA 的一个压缩 token 上在线训练小的 actor-critic，每任务几小时真机数据把精密插接阶段提速最高约 3 倍。
 > 5. 评测目标在迁移：仿真 benchmark（RoboMimic、LIBERO）接近饱和，SimpleVLA-RL 在 LIBERO 上平均 99.1%；2025 年以后的工作改报真机吞吐量（每小时成功次数）和连续运行时长。
 
 本页是[机器人与具身](../../README.md)领域的模仿与强化学习方向。机制与算例在讲义[模仿学习与机器人强化学习入门](../imitation-reinforcement-learning.md)（行为克隆的数据怎么来、为什么误差越走越大、多峰动作的平均为什么错、扩散策略怎样训练与部署、回报与优势、PPO 限制了什么、六类工作怎样分开诊断）；回报、价值、优势与 PPO 的基础在 [05b 强化学习](../../../foundations/lessons/05b-reinforcement-learning.md)。本页只讲领域地图。腿足的强化学习主线在[运动控制方向](../control-locomotion/README.md)，VLA（视觉语言动作模型，一句话：以图像和语言指令为输入、直接输出机器人动作的大模型）的模型结构在 [VLA 方向](../vla/README.md)。
@@ -186,18 +186,33 @@
 | [HIL-SERL](../../papers/arxiv-2410.21845/README.md)（Berkeley，2024） | 20–30 条示范 | 奖励分类器 + 人工纠正，真机离策略 RL | 同等人类数据下成功率 100% 对 49.7%，完成时间 5.4 s 对 9.6 s |
 | [SimpleVLA-RL](../../papers/arxiv-2509.09674/README.md)（清华、上海 AI Lab 等，2025） | 监督微调后的 OpenVLA-OFT | 仿真 0/1 成功奖励 + GRPO（一句话：同一任务采多条轨迹，以组内平均成绩为基线算优势，不需要价值网络） | LIBERO-Long 单示范 17.3% → 91.7%；真机 4 任务 17.5% → 38.5% |
 | [π*0.6](../../papers/arxiv-2511.14759/README.md)（Physical Intelligence，2025） | 离线 RL 预训练 + 监督微调的 VLA | 价值函数算优势，作为条件输入；数据含自主执行与人工纠正 | 多样衣物与咖啡任务吞吐量翻倍以上、失败率降到一半以下；连续做咖啡 13 小时 |
+| [RL Token](../../papers/arxiv-2604.23073/README.md)（Physical Intelligence，2026，补充） | 冻结的 π0.6；从它的内部表示压出一个"RL token" | 类 TD3 的在线离策略 actor-critic，只训一个小头，修正 VLA 提出的动作块并正则到它附近；回放池含人工干预 | 每任务约 15 分钟到 5 小时真机数据，精密阶段提速最高约 3 倍，装螺丝 20% → 65%，插网线快于专家遥操作 |
 
 做不好的场景：
 - **DPPO**：样本效率低于离策略方法；在需要激进探索的任务上略低于高斯策略。
 - **HIL-SERL**：作者不确定能否扩展到长得多的时域，每个任务从零训练。
 - **SimpleVLA-RL**：基座成功率为 0 的任务上 RL 无法起步；真机绝对成功率仍低，放空杯 10%。
 - **π*0.6**：依赖人工标签、干预与重置；纸箱任务第一轮迭代吞吐量先降后升；把策略提取换成 AWR（优势加权回归，一句话：按优势的指数给示范动作加权做监督回归）或 PPO 后，两者都难以超过起点。
+- **RL Token**：训练时仍要人给奖励信号、做干预，并在 RL（关键阶段）与基座策略之间手动切换；对照中，单步残差方法因信用分配的时域太长学不动，DAgger 式微调的速度受限于人类示范。
 
 站在现在看过去：`[判断]` 这一阶段与 LLM 后训练同构：先用监督数据得到一个有非零成功率的策略，再用结果奖励强化。证据有两条：
 - SimpleVLA-RL 直接搬用了 [DeepSeek-R1](../../../llm/papers/arxiv-2501.12948/README.md) 一类的 GRPO 配方，并把 pushcut 类比为 R1 的"顿悟时刻"；
 - 它的失败条件（基座零能力时 RL 起不了步）也是结果奖励 RL 的共同前提：没有成功样本就没有正的优势。
 
 区别在奖励来源。LLM 的数学、代码有自动验证器；机器人要么在仿真里，要么靠奖励分类器和人工标签，这是机器人 RL 扩展的瓶颈（π*0.6 自述）。
+
+`[判断]` 2026 年的补充：Physical Intelligence 在同一个 π0.6 底座上同时走了两条 RL 路：π*0.6 的 RECAP 是离线、分轮、对整个 VLA 做优势条件化，RL Token 是在线、只训小头、贴着 VLA 先验做局部修正。两者共同的前提仍是"先有一个能用的模仿策略"；RL Token 的对照里，从头在像素上做 RL 的 HIL-SERL 式方法提速明显更少。
+
+### 2026 年的补充：模仿的数据源在变大
+
+同一时期，模仿一侧的变化不在算法，而在数据从哪里来、规模多大：
+
+- **人类第一视角视频**：[EgoScale](../../papers/arxiv-2602.16710/README.md)（NVIDIA 等，2026-02）用 SLAM 与手部姿态估计把 20,854 小时人类视频标成腕部与手指动作，模仿的是人手而不是机器人；验证损失随小时数对数线性下降，22 自由度手上平均成功率比不做人类预训练高 54%。
+- **人形全身的遥操作示范**：Boston Dynamics 与 TRI 的 [Atlas 大行为模型](../../papers/boston-dynamics-atlas-lbm/README.md)（2025-08）用 VR 全身遥操作采集示范，训练 450M 参数的扩散 Transformer，输出手、躯干和脚的位姿，脚交给 MPC 稳定；作者把"对 VLA 做 RL"列为后续工作。
+- **动作捕捉作为全身控制器的模仿信号**：NVIDIA 的 [SONIC](../../papers/arxiv-2511.07820/README.md) 用 700 小时动作捕捉训练通用跟踪器；Figure 的 [Helix 02](../../papers/figure-helix-02/README.md) 用超过 1000 小时人体动作数据加仿真 RL 训练全身控制器。
+- **腿足的"先模仿再强化"**：ETH 的[人形稀疏三维结构穿越](../../papers/arxiv-2608.29769/README.md)（2026-08）让学生先用 DAgger 模仿三个特权教师，再预热 critic，最后做带衰减行为锚定的 PPO，正是本页"仿真 RL 出教师、模仿出学生"再接 RL 的组合。
+
+`[判断]` 站在现在看：操作一侧的"大规模真实示范"（第 4、5 阶段）和腿足一侧的"动作模仿"（[运动控制方向](../control-locomotion/README.md#为什么绕不开模仿学习)）在人形上合到了一起：上层模仿遥操作或人类视频，下层模仿动作捕捉，两层都在规模化；RL 仍然只出现在已有能力之上（RL Token、SONIC 与 Helix 02 的仿真 RL 都以模仿信号为起点）。反例：Atlas 大行为模型的下层是 MPC，不是学到的控制器。
 
 ## 技术地基
 
@@ -221,6 +236,8 @@
 | Columbia / TRI（Song、Tedrake 等） | 生成式动作分布 | Diffusion Policy、DPPO（TRI 参与） | 推理延迟；示范不足时欠佳 |
 | 清华、上海 AI Lab 等 | 把 LLM 的结果奖励 RL 搬到 VLA | SimpleVLA-RL | 仿真奖励；基座零能力时无效 |
 | CMU（Ross、Bagnell） | 交互式模仿的理论 | DAgger | 需要在线专家 |
+| NVIDIA（2026 年补充） | 用人类数据的规模做模仿：第一视角视频（EgoScale，2 万小时）、动作捕捉（SONIC，700 小时），再放进 GR00T 系列 | EgoScale、SONIC、GR00T N1/N1.7 | 人类数据要靠姿态估计或重定向转成机器人动作，有噪声；尺度律不外推 |
+| Boston Dynamics 与 TRI（2025 年补充） | 人形全身的遥操作示范 + 扩散 Transformer，下层保留 MPC | Atlas 大行为模型（官方博客） | 只有一篇官方博客，没有量化对比；RL 留作后续 |
 
 `[判断]` 团队偏好的依据：
 - Google 在 RT-1、RT-2、Open X-Embodiment 中都选择扩大真实示范数据；
@@ -258,6 +275,8 @@
 3. **人工纠正该怎样用。** DAgger 理论假设专家给最优标签；π*0.6 发现人工纠正质量不一致、改善不了速度，所以只把它当作一种数据来源。
 4. **不更新权重的适应。** 上下文模仿把示范当作提示（[ICRT](../../papers/arxiv-2408.15980/README.md)、[Behavior Prompting Policy](../../papers/arxiv-2606.30457/README.md)、[RoboTTT](../../papers/arxiv-2607.15275/README.md)），它与 RL 微调是"在推理时适应"还是"在训练时改进"两条路。
 5. **失败后的恢复。** 示范里很少有失败后怎样恢复的片段，RL 的失败重置又让这些状态进不了数据；与用户的四足卡住问题同源，见[思考笔记](../../../perspectives/notes/quadruped-recovery.md)。
+6. **（2026 年补充）人类数据能替代多少机器人示范。** EgoScale 在 1 千到 2 万小时内看到对数线性、没有饱和，但仍需约 50 小时人-机对齐数据过渡；SONIC 的数据量增益最大。入口：[EgoScale](../../papers/arxiv-2602.16710/README.md)、[SONIC](../../papers/arxiv-2511.07820/README.md)。
+7. **（2026 年补充）在线 RL 能否不靠人。** RL Token 把真机数据压到几小时，但奖励、干预、何时切换到 RL 仍由人决定，作者把自动化列为后续。入口：[RL Token](../../papers/arxiv-2604.23073/README.md)、[π*0.6](../../papers/arxiv-2511.14759/README.md)。
 
 ## 阅读顺序
 
@@ -267,6 +286,7 @@
 4. [Diffusion Policy 精读](../../papers/diffusion-policy/reading.md)与 [ACT](../../papers/arxiv-2304.13705/README.md)：模仿一侧的两个基线，一个解决多峰，一个解决复合误差。
 5. [HIL-SERL](../../papers/arxiv-2410.21845/README.md)：同样多的人类数据，用来模仿和用来做 RL 的直接对照。
 6. [π*0.6](../../papers/arxiv-2511.14759/README.md)与 [DPPO](../../papers/arxiv-2409.00588/README.md)：RL 怎样接到大模型或生成式策略上。
+7. （2026 年补充）[RL Token](../../papers/arxiv-2604.23073/README.md) 对照 π*0.6，看在线与离线两种 RL 怎样接到同一个 VLA 上；再读 [EgoScale](../../papers/arxiv-2602.16710/README.md) 与 [Atlas 大行为模型](../../papers/boston-dynamics-atlas-lbm/README.md)，看模仿的数据源怎样变大。
 
 [Baseline 页](BASELINES.md)把本方向论文按"改了哪个部件"排成一张表，[路线图](ROADMAP.md)给出带理由的学习步骤。
 
@@ -281,6 +301,8 @@
 - SimpleVLA-RL 的 17.3% → 91.7% 是每任务只给 1 条示范的设定；正常数据量下 LIBERO-Long 是 86.5% → 98.5%（Table 2、Table 5）。
 - RT-1 与 Gato、BC-Z 的比较中，基线也在 RT-1 的数据上训练，作者自己说这种比较对基线"相当有利"（§6.2）。
 - DPPO 的 16/20 是零样本 sim-to-real；高斯策略加行为克隆正则后，仿真 53%、真机 50%（§5.4）。
+- RL Token 的"约 3 倍"是关键阶段（如对准、插入）的速度，不是整段任务；四个任务中插网线、插充电器的基座成功率本来就高，提升主要在速度。
+- EgoScale 的"+54%"是对"不做人类预训练"的基线，两者都经过机器人后训练；它不说明人类数据可以完全替代机器人数据。
 
 **判断的支撑论文**
 
@@ -289,7 +311,8 @@
 - RL 补的是示范之外的状态与超过示范者的速度：HIL-SERL Table 1(a)（成功率与完成时间）与 §4.5（示范加 10 倍不改善）；π*0.6 §II 与 §VI-C1；RT-1 §7。边界：SimpleVLA-RL 的提升主要在少示范设定下，数据充足时提升较小（98.5% 对 86.5%）。
 - 与 LLM 后训练同构：SimpleVLA-RL §1、§6.1–6.2；对照 [DeepSeek-R1](../../../llm/papers/arxiv-2501.12948/README.md)。边界：π*0.6 不用 GRPO，而用价值函数加优势条件化，作者明确报告 PPO 类方法难以改进。
 - 教师-学生的蒸馏步骤有时可以省掉：PIE Introduction、DTC Methods（非对称 actor-critic）、AME-1（单网络两段 PPO）。反例：AME-2（2026）在深度建图输入下又用回教师-学生加表征对齐；OmniH2O 在稀疏输入下 RL 训练的学生只有 47.11%。
-- 团队偏好：Google 在 RT-1、RT-2、Open X-Embodiment 中都扩大示范；Berkeley 在 SERL、HIL-SERL 中都做真机离策略 RL；Physical Intelligence 在 π0、π*0.6 中沿用同一底座。SERL 本身未收录，依据是 HIL-SERL §2 的自述。
+- 团队偏好：Google 在 RT-1、RT-2、Open X-Embodiment 中都扩大示范；Berkeley 在 SERL、HIL-SERL 中都做真机离策略 RL；Physical Intelligence 在 π0、π*0.6 中沿用同一底座。SERL 本身未收录，依据是 HIL-SERL §2 的自述。2026 年补充：Physical Intelligence 在 π*0.6、MEM、RL Token 中都以 π0.6 为底座；NVIDIA 在 GR00T N1、EgoScale、SONIC 中都押注人类或合成数据的规模（三篇的作者与单位见各卡）。
+- 2026 年"模仿的数据源在变大"：EgoScale 摘要与 §尺度律、Atlas 大行为模型博客、SONIC 规模实验、Helix 02 博客。反例：RL Token 说明精密阶段的速度仍要靠 RL，不靠更多示范。
 
 **与其他论文的关联**
 
@@ -305,3 +328,5 @@
 - π*0.6 官方博客无法访问，代码与权重是否开放未核实；HIL-SERL 的正式发表期刊未核实；ACT、DPPO 的正式会议未核实。
 - Open X-Embodiment 的参与机构数在不同版本与页面上表述不一（21 家与 34 家）。
 - Octo、π0 的对照只核对了主要图表中的方法名，没有逐项核对数值。
+- Physical Intelligence 博客"Precise Manipulation with Efficient Online RL"（2026-03-19）返回 403，RL Token 只核实了 arXiv 原文；RL Token 各任务的完整成功率与速度只在图中，本页只引正文写出的数字。
+- Atlas 大行为模型博客没有给出成功率；它与 TRI 的 LBM 论文（未收录）之间的对应关系未核实。

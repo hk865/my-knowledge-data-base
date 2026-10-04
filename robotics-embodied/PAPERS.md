@@ -199,3 +199,21 @@
 - [Expressive Whole-Body Control for Humanoid Robots](papers/arxiv-2402.16796/README.md) · 2024 · 文献卡，暂无独立精读
 - [Learning Human-to-Humanoid Real-Time Whole-Body Teleoperation](papers/arxiv-2403.04436/README.md) · 2024 · 文献卡，暂无独立精读
 - [OmniH2O: Universal and Dexterous Human-to-Humanoid Whole-Body Teleoperation and Learning](papers/arxiv-2406.08858/README.md) · 2024 · 文献卡，暂无独立精读
+- [Gemini Robotics 2 brings whole body intelligence to robots](papers/gemini-robotics-2/README.md) · 2026 · 文献卡，暂无独立精读
+- [UnifoLM-WLA-1.0](papers/unifolm-wla/README.md) · 2026 · 文献卡，暂无独立精读
+- [Introducing Helix 02: Full-Body Autonomy](papers/figure-helix-02/README.md) · 2026 · 文献卡，暂无独立精读
+- [Large Behavior Models and Atlas Find New Footing](papers/boston-dynamics-atlas-lbm/README.md) · 2025 · 文献卡，暂无独立精读
+- [Gemini Robotics 2: Safety Evaluations](papers/gemini-robotics-2-safety/README.md) · 2026 · 文献卡，暂无独立精读
+- [MEM: Multi-Scale Embodied Memory for Vision Language Action Models](papers/arxiv-2603.03596/README.md) · 2026 · 文献卡，暂无独立精读
+- [EgoScale: Scaling Dexterous Manipulation with Diverse Egocentric Human Data](papers/arxiv-2602.16710/README.md) · 2026 · 文献卡，暂无独立精读
+- [SONIC: Supersizing Motion Tracking for Natural Humanoid Whole-Body Control](papers/arxiv-2511.07820/README.md) · 2025 · 文献卡，暂无独立精读
+- [Learning Agile Perceptive Traversal of Sparse 3D Structures for Humanoids](papers/arxiv-2608.29769/README.md) · 2026 · 文献卡，暂无独立精读
+- [RL Token: Bootstrapping Online RL with Vision-Language-Action Models](papers/arxiv-2604.23073/README.md) · 2026 · 文献卡，暂无独立精读
+- [SAM 3: Segment Anything with Concepts](papers/arxiv-2511.16719/README.md) · 2025 · 文献卡，暂无独立精读
+- [Depth Anything 3: Recovering the Visual Space from Any Views](papers/arxiv-2511.10647/README.md) · 2025 · 文献卡，暂无独立精读
+- [FoundationStereo: Zero-Shot Stereo Matching](papers/arxiv-2501.09898/README.md) · 2025 · 文献卡，暂无独立精读
+- [MapAnything: Universal Feed-Forward Metric 3D Reconstruction](papers/arxiv-2509.13414/README.md) · 2025 · 文献卡，暂无独立精读
+- [AMB3R-SLAM: Kilometer-scale SLAM with Hierarchical Backend](papers/arxiv-2609.19518/README.md) · 2026 · 文献卡，暂无独立精读
+- [cuVSLAM: CUDA accelerated visual odometry and mapping](papers/arxiv-2506.04359/README.md) · 2025 · 文献卡，暂无独立精读
+- [Robostral Navigate](papers/arxiv-2607.20785/README.md) · 2026 · 文献卡，暂无独立精读
+- [Cosmos Policy: Fine-Tuning Video Models for Visuomotor Control and Planning](papers/arxiv-2601.16163/README.md) · 2026 · 文献卡，暂无独立精读

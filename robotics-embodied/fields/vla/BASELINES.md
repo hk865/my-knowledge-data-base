@@ -57,6 +57,11 @@
 | 任务条件 | 可引导的提示：子目标图像（由世界模型生成）、片段元数据（速度、质量、是否犯错）、控制模式 | [π0.7](../../papers/arxiv-2604.15483/README.md) | 能用好质量参差的数据（有元数据时数据越多越好，无元数据时反而下降）；开箱即用追平 RL 专用模型。代价：没见过的任务 60–80%，复杂新任务要人口头教练 |
 | 任务条件 | 用示教作提示：给一条或几条示教，不改权重就做新任务 | [ICRT](../../papers/arxiv-2408.15980/README.md)、[Behavior Prompting Policy](../../papers/arxiv-2606.30457/README.md)、[RoboTTT](../../papers/arxiv-2607.15275/README.md)（人类视频进上下文）、[Zero-WAM](../../papers/zero-wam/reading.md) | ICRT 在没见过的任务上 79.2%，同设定下 OpenVLA 7.5%、Octo 9.2%。代价：ICRT 与 BPP 都自述学不会全新的动作原语 |
 | 整体缩放 | 换更小的底座 / 统一更多任务与本体 | [SmolVLA](../../papers/arxiv-2506.01844/README.md)（0.45B）、[Qwen-VLA](../../papers/arxiv-2605.30280/README.md)（4B VLM + 1.15B 动作专家，统一操作、导航、轨迹预测） | Qwen-VLA 在 ALOHA 分布外设置上 76.9%，π0.5 为 41.5%。代价：见上 |
+| 观测表示（2026 年补充） | 多尺度记忆：短时用视频编码器（每 4 层一次时间注意力，推理最多 18 帧、54 秒），长时由策略自己更新一段文字摘要 | [MEM](../../papers/arxiv-2603.03596/README.md)（π0.6 底座，π0.7 沿用） | 能做约 15 分钟的整理厨房；朴素地拼接历史指令明显更差；灵巧任务上与无记忆版本持平。代价：记忆只在一个回合内；文字摘要的训练标签要靠大语言模型从带子任务标注的回合里生成 |
+| 数据（2026 年补充） | 大规模第一视角人类视频，用 SLAM 与手部姿态估计标出腕部与手指动作，再经少量人-机对齐数据过渡 | [EgoScale](../../papers/arxiv-2602.16710/README.md)；[GR00T N1.7](https://huggingface.co/blog/nvidia/gr00t-n1-7)（官方博客，把这 2 万小时放进预训练） | 验证损失随人类数据小时数对数线性下降并能预测真机表现；22 自由度手上平均成功率比不做人类预训练高 54%。代价：手部姿态估计有噪声，另需高精度数据与对齐阶段；尺度律不外推 |
+| 推理调度（2026 年补充） | 全身：上层策略（VLA、视觉运动策略或导航策略）输出全身关节目标或速度指令，下面接单独训练、频率更高的全身控制器 | [Helix 02](../../papers/figure-helix-02/README.md)（S1 200 Hz → S0 1 kHz）、[GR00T N1.6](https://developer.nvidia.com/blog/building-generalist-humanoid-capabilities-with-nvidia-isaac-gr00t-n1-6-using-a-sim-to-real-workflow)（速度指令 → GR00T-WholeBodyControl）、[Gemini Robotics 2](../../papers/gemini-robotics-2/README.md)（未公开下层） | 行走、平衡与操作在一个系统里连起来（Helix 02 的 4 分钟洗碗机任务）。代价：Gemini Robotics 2 地面拾取 45.7%；两层之间的接口各家不同，没有同条件比较 |
+| 训练目标（2026 年补充） | 冻结 VLA，从内部表示压出一个 RL token，只在它上面在线训练小 actor-critic，修正 VLA 提出的动作块 | [RL Token](../../papers/arxiv-2604.23073/README.md) | 每任务约 15 分钟到 5 小时真机数据，精密阶段提速最高约 3 倍，装螺丝 20% → 65%。代价：仍要人给奖励、做干预、切换 RL 与基座策略 |
+| 整体缩放（2026 年补充） | 机载小模型 + 少量示范适配新本体 | [Gemini Robotics On-Device 2](../../papers/gemini-robotics-2/README.md) | 新的双臂本体通常少于 200 条示范、几小时适配。代价：官方没有给出机载版与完整版的对比数字 |
 
 [OpenVLA 精读](../../papers/openvla/reading.md)位于"动作表示 = 离散 token"与"观测表示 = 拼接两种视觉编码器"两格；它的三个限制（单帧、无本体状态、无动作块）分别对应"观测表示 = 加腕部相机与本体状态"和"动作表示 = 连续动作块 + 并行解码"两行。
 
@@ -82,3 +87,4 @@
 - Gemini Robotics 两份报告没有给出参数量、动作表示与训练目标，表中只写报告明确写出的调度与数据。
 - X-Tokenizer 的每块 token 数与编码延迟只在图中，pdftotext 抽取错位，本页未引用。
 - π0.7、Qwen-VLA 的训练数据总小时数与混合比例原文未写全，表中只写原文给出的部分。
+- 2026 年补充的五行中，GR00T N1.6/N1.7、Helix 02、Gemini Robotics 2 都只有官方博客或仓库，没有论文；表中只写官方页面明确写出的结构与数字。

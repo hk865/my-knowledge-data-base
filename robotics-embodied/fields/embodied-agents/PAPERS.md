@@ -35,6 +35,13 @@
 - [Explore, Execute, Evolve: A Skill Acquisition and Reuse Loop for Embodied Agents](../../papers/roboskill/README.md) · 2026 · 选定章节讲解
 - [Zero-WAM: In-Context World-Action Modeling from Human Videos for Open-Ended Task Generalization](../../papers/zero-wam/README.md) · 2026 · 选定章节讲解（主要属于世界模型方向）
 
+## 公司系统中的编排器（2025 年底–2026）
+
+- [Gemini Robotics 1.5: Pushing the Frontier of Generalist Robots with Advanced Embodied Reasoning, Thinking, and Motion Transfer](../../papers/arxiv-2510.03342/README.md) · 2025 · 文献卡（主要属于 VLA 方向） · ER 1.5 编排、VLA 当工具
+- [Gemini Robotics 2: Safety Evaluations](../../papers/gemini-robotics-2-safety/README.md) · 2026 · 官方技术报告卡 · ASIMOV-Agentic：编排器的安全与可行性决策
+- [Gemini Robotics 2 brings whole body intelligence to robots](../../papers/gemini-robotics-2/README.md) · 2026 · 官方博客卡（主要属于 VLA 方向） · ER 2 的任务进度与多机协作
+- [MEM: Multi-Scale Embodied Memory for Vision Language Action Models](../../papers/arxiv-2603.03596/README.md) · 2026 · 文献卡（主要属于 VLA 方向） · 策略自己写的文字长时记忆
+
 ## 跨方向参照（LLM 侧）
 
 - [Language Models are Few-Shot Learners](../../../llm/papers/gpt3/README.md) · 2020 · 技术精读

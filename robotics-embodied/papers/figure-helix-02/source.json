@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "resource_id": "url:https://www.figure.ai/news/helix-02",
+  "title": "Introducing Helix 02: Full-Body Autonomy",
+  "resource_kind": "official_blog",
+  "canonical_folder": "robotics-embodied/papers/figure-helix-02",
+  "official_url": "https://www.figure.ai/news/helix-02",
+  "official_fulltext_url": "https://www.figure.ai/news/helix-02",
+  "read_version": null,
+  "version_status": "not_pinned",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。官方博客全文（三层结构、S0 训练、传感器、演示任务、作者对结果的说明）；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Figure AI"
+  ],
+  "year": 2026,
+  "topic_paths": [
+    "robotics/control",
+    "robotics/embodied-policies"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "官方博客全文（三层结构、S0 训练、传感器、演示任务、作者对结果的说明）；",
+    "mechanism_summary": "S0：10M 参数、1 kHz、关节状态与机身运动 → 关节级执行器指令；>1,000 h 关节级重定向人体动作数据，>20 万并行仿真环境 RL + 域随机化，替换 109,504 行 C++。S1：200 Hz，头部与手掌相机、指尖触觉（约 3 g）、全身本体感知，以 S2 潜变量为条件输出全身关节目标。S2：语义推理与语言。演示：4 分钟、61 个动作的洗碗机任务，无重置无干预；博客称 results are early，无成功率。",
+    "evidence_boundary": "未复现实验；数字取自原文或官方页面的正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://www.figure.ai/news/helix-02"
+    ],
+    "source_origin": "robotics_recency_audit_2026_10_04",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "image",
+    "state",
+    "action"
+  ],
+  "task_tags": [
+    "decision"
+  ]
+}

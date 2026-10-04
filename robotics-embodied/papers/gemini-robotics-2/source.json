@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "resource_id": "url:https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
+  "title": "Gemini Robotics 2 brings whole body intelligence to robots",
+  "resource_kind": "official_blog",
+  "canonical_folder": "robotics-embodied/papers/gemini-robotics-2",
+  "official_url": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
+  "official_fulltext_url": "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
+  "read_version": null,
+  "version_status": "not_pinned",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。官方博客全文（含三张成功率图的数值与图注）与 Gemini Robotics 模型页；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Carolina Parada",
+    "Gemini Robotics Team"
+  ],
+  "year": 2026,
+  "topic_paths": [
+    "robotics/embodied-policies",
+    "robotics/control"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "官方博客全文（含三张成功率图的数值与图注）与 Gemini Robotics 模型页；",
+    "mechanism_summary": "三个模型：GR2 VLA（人形全身与双臂）、ER 2（规划、进度、多机协作）、On-Device 2（本地运行，双臂新本体通常 <200 条示范、几小时适配，沿用 1.5 的 motion transfer）。成功率只报自家模型：Apollo 2 + Inspire 桌面 68.4、地面 45.7、货架 76.3；SharpaWave 拧下灯泡 92、拧上 36、系袋 44、簸箕 32、自封袋 40；Franka Duo 通用抓放 74.2、工具配套 78.9、精密插入 89.6。未公开参数量、动作表示、训练目标、VLA 是否在云端、行走由谁生成。",
+    "evidence_boundary": "未复现实验；数字取自原文或官方页面的正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/",
+      "https://deepmind.google/models/gemini-robotics/"
+    ],
+    "source_origin": "robotics_recency_audit_2026_10_04",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "image",
+    "text",
+    "action"
+  ],
+  "task_tags": [
+    "decision"
+  ]
+}

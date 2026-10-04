@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2506.04359",
+  "title": "cuVSLAM: CUDA accelerated visual odometry and mapping",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2506.04359",
+  "official_url": "https://arxiv.org/abs/2506.04359",
+  "official_fulltext_url": "https://arxiv.org/pdf/2506.04359",
+  "read_version": "v3",
+  "version_status": "checked_v3",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。arXiv 摘要页（v3）与 HTML 选段：前端、后端、多相机、Jetson 运行时间（表 1）、与 ORB-SLAM3/DPVO 对比（表 2）、局限；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Alexander Korovko",
+    "Dmitry Slepichev",
+    "Alexander Efitorov",
+    "Aigul Dzhumamuratova",
+    "Viktor Kuznetsov",
+    "等 8 位作者"
+  ],
+  "year": 2025,
+  "topic_paths": [
+    "robotics/localization-mapping"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页（v3）与 HTML 选段：前端、后端、多相机、Jetson 运行时间（表 1）、与 ORB-SLAM3/DPVO 对比（表 2）、局限；",
+    "mechanism_summary": "Shi-Tomasi + 金字塔 LK + NCC 验证；异步滑窗 SBA；位姿图 + 回环（kd 树空间检索）；视锥相交图；Orin 双目 1.8 ms、双目惯性 3.8 ms、单目深度 15.1 ms；EuRoC 双目 0.17% 对 ORB-SLAM3 0.21%，KITTI 0.27% 对 0.31%；局限：多双目要硬件同步、TartanAir V2 Hard 2.26%、720p 单目深度 37.7 ms。",
+    "evidence_boundary": "未复现实验；数字取自原文或官方页面的正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2506.04359",
+      "https://arxiv.org/html/2506.04359v3"
+    ],
+    "source_origin": "robotics_recency_audit_2026_10_04",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "image",
+    "state"
+  ],
+  "task_tags": [
+    "understanding"
+  ]
+}

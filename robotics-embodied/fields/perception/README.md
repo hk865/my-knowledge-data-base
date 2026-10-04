@@ -1,13 +1,13 @@
 # 机器人感知
 
-> 状态：领域入门页 · v1 · 依据 [synthesis.csv](synthesis.csv)（14 篇）
+> 状态：领域入门页 · v1（2026-10-04 追加第 7 阶段） · 依据 [synthesis.csv](synthesis.csv)（17 行）
 >
 > 速览：
 > 1. 本方向研究机器人上的感知任务：检测、分割、深度、多传感器融合，以及怎样把它们的输出变成控制和规划能用的、带时间和不确定性的环境估计。视觉编码器本身怎样训练、怎样评价，在[视觉表征方向](../../../multimodal/fields/visual-representation/README.md)；本页只在它被机器人使用时讨论它。
 > 2. 主线是五步，每一步修上一步在部署中暴露的问题：单帧检测与分割做到视频速率 → 用 SLAM 位姿把逐帧预测融合进 3D 地图（修帧间不一致）→ 深度与激光雷达检测（修单目无几何）→ 多传感器在统一的鸟瞰空间里融合（修单一传感器各自的失效）→ 开放词汇基础模型（修固定类别与换场景就掉点）。
 > 3. 部署约束常常比精度更决定方案：SemanticFusion 每 10 帧才跑一次 CNN，才能到 25 Hz；PanopticFusion 的瓶颈是 Mask R-CNN，吞吐 4.3 Hz；接上 SAM、Grounding DINO 的 FM-Fusion 每帧约 1 秒；ConceptFusion 提取一张图的开放词汇特征要 10–15 秒。这些语义地图系统的评测都用数据集给的相机位姿。
 > 4. `[判断]` 感知误差无法在感知模块内消除，腿足机器人一侧给出两种处理：ETH 在训练中给高程图注入漂移、偏移和失效噪声，让策略学会何时不信外感知；CMU 与 Berkeley 干脆不建高程图，直接从深度图到关节角。
-> 5. `[判断]` 基础模型把"类别是固定的"换成了"速度与一致性不够"：同一物体在不同视角下得到不一致的掩码（FM-Fusion），透明物体的深度在真实标注中本身就是错的（Depth Anything V2 因此改用合成标注）。
+> 5. `[判断]` 基础模型把"类别是固定的"换成了"速度与一致性不够"：同一物体在不同视角下得到不一致的掩码（FM-Fusion），透明物体的深度在真实标注中本身就是错的（Depth Anything V2 因此改用合成标注）。2025 年底起这两点都有了新进展：SAM 3 把按名词短语的检测、分割与跨帧跟踪收进一个模型（H200 上单图约 30 ms），Depth Anything 3 与 FoundationStereo 把深度从单目扩到多视图与双目；NVIDIA 的人形参考流程已把 FoundationStereo 放进感知栈（第 7 阶段）。
 
 本页属于[机器人与具身](../../README.md)领域。感知需要的位姿来自[定位与建图](../localization-mapping/README.md)，它输出的物体与地图交给[导航与规划](../navigation-planning/README.md)、[具身 Agent](../embodied-agents/README.md) 和[运动控制](../control-locomotion/README.md)。从像素到地图系物体记录的机制、手算和排错清单见[感知讲义](../perception.md)，本页不重复。按部件拆分的基线见 [Baseline 页](BASELINES.md)，学习路线见[路线图](ROADMAP.md)，论文列表见[论文目录](PAPERS.md)。
 
@@ -120,6 +120,22 @@
 - **位姿**：FM-Fusion 与 ConceptFusion 的评测都使用数据集提供的位姿或独立的 SLAM。
 - **度量深度**：Depth Anything 输出相对深度（仿射不变的视差），要得到米制距离需要在 NYUv2、KITTI 一类数据上微调；V2 写明在这些真实数据上训练的度量模型对透明物体不鲁棒。
 
+### 7 一个模型做"概念级"分割与跟踪，深度从单目扩到多视图与双目（2025 年底–2026）
+
+**留下的问题。** 第 6 阶段的开放词汇系统要把识别（RAM）、按文字检测（Grounding DINO）、分割（SAM）串起来，每帧约 1 秒，跨视角的掩码还不一致；深度一侧，Depth Anything 只给单目相对深度，机器人上的双目相机在无纹理、反光处本来就给不出可靠深度。
+
+**改变。**
+- [SAM 3](../../papers/arxiv-2511.16719/README.md)（Meta Superintelligence Labs，2025 年 11 月）定义"可提示概念分割"：用名词短语或示例图片作提示，输出图像和视频里该概念的所有实例掩码，并带跨帧一致的 ID；检测器与基于记忆的视频跟踪器共享一个骨干，用一个"存在头"把"有没有"和"在哪里"分开。SA-Co/Gold 上 cgF1 54.1，开放词汇检测器 OWLv2 为 24.6，人类 72.8；H200 上一张含 100 多个物体的图约 30 ms。
+- [Depth Anything 3](../../papers/arxiv-2511.10647/README.md)（ByteDance Seed，2025 年 11 月）从任意数量的图像（已知或未知位姿）预测空间一致的几何，骨干就是普通的 DINO 编码器、只预测"深度 + 射线"；作者基准上相机位姿精度平均比 VGGT 高 44.3%（摘要），单目深度超过 V2，另有度量深度版本。
+- [FoundationStereo](../../papers/arxiv-2501.09898/README.md)（NVIDIA，CVPR 2025）用 100 万对 Omniverse 路径追踪渲染的合成双目图像，加上侧调接入的冻结 Depth Anything V2 单目先验，做零样本双目匹配。NVIDIA 在 [GR00T N1.6 的仿真到真机流程](https://developer.nvidia.com/blog/building-generalist-humanoid-capabilities-with-nvidia-isaac-gr00t-n1-6-using-a-sim-to-real-workflow)（2026-01）里把它与 cuVSLAM、nvblox 一起列为人形的感知与定位栈。
+
+**做不好的场景。**
+- **视频与拥挤场景的速度**：SAM 3 写明视频推理时间随物体数增长，拥挤场景做不到实时；细粒度的领域外概念、长短语、需要推理的查询不在能力范围内。
+- **双目的速度与透明物体**：FoundationStereo 在 A100 上处理 375×1242 的图约 0.7 秒，作者写明还没为效率优化，训练集里透明物体很少。
+- **动态场景**：Depth Anything 3 原文没有局限一节，只把动态场景列为未来工作。
+
+**站在现在看。** `[判断]` 速览第 5 条"基础模型把类别固定换成了速度与一致性不够"在 2D 一侧被修了一大块：SAM 3 把 FM-Fusion 里要三个模型拼起来的事做成一个约 30 ms 的模型，并自带视频里的跨帧 ID；但跨视角、跨时间的 3D 一致性仍要靠建图（第 2 阶段的做法没有过时），视频里物体一多仍不实时。深度一侧，Depth Anything V2"用合成标注修真实标注的失效"的思路被搬到了双目（FoundationStereo）和多视图（DA3），而 DA3 又被[定位与建图方向](../localization-mapping/README.md)的 AMB3R-SLAM 用作前端，感知里的深度与定位里的几何前端正在合成同一类模型。
+
 ## 站在现在看过去：后来者专门修了什么
 
 | 当时的做法 | 后来暴露的坑 | 谁修、怎样修 | 依据 |
@@ -133,6 +149,8 @@
 | 用传感器深度做真值训练深度网络 | 传感器在透明物体上给出错误真值 | Depth Anything V2 改用合成标注加伪标签 | DA V2 §2 |
 | 单目自监督深度用中值缩放评测 | 掩盖了尺度不稳定 | `[判断]` 机器人上仍用深度相机、双目或激光雷达提供公制尺度；Depth Anything 在度量数据上微调 | Monodepth2 附录 D.2；DA §4.3 |
 | 开放词汇语义地图离线运行 | 每帧 1 秒到 15 秒，不能闭环使用 | 尚未解决；定位方向的 VGGT-SLAM 2.0 报告接入 CLIP 开放集检测后 6.3 fps | FM-Fusion 运行时分析；见[定位与建图](../localization-mapping/README.md)阶段 5 |
+| 识别、按文字检测、分割、跟踪分别用不同模型串起来（2026 年补充） | 串联慢，跨帧身份不稳 | SAM 3 用一个共享骨干同时做概念检测、分割与视频跟踪，单图约 30 ms | SAM 3 摘要与速度说明；视频中物体多时仍不实时 |
+| 学习式双目要在目标域微调（2026 年补充） | 换场景掉点，无纹理处失效 | FoundationStereo 用百万对合成图像加单目先验做零样本双目 | FoundationStereo 摘要与局限；单帧约 0.7 秒 |
 
 `[判断]` 跨领域的共性：一是"训练时注入感知噪声让策略学会不信它"与[运动控制方向](../control-locomotion/README.md)里的域随机化是同一个思路，作用对象从动力学参数换成了感知输入；二是"网络给语义、几何模块给位置"的分工，在[定位与建图](../localization-mapping/README.md)里表现为前馈模型做前端、因子图做后端，在 [VLA 方向](../vla/README.md)里表现为预训练模型给语义、动作头负责精度（见 [OpenVLA 精读](../../papers/openvla/reading.md)与 Diffusion Policy 的对比）。
 
@@ -155,6 +173,8 @@
 | 感知误差交给策略 | ETH RSL（Miki 等）；CMU 与 Berkeley（Agarwal 等） | ETH 保留显式高程图并训练对它的不信任；CMU 与 Berkeley 去掉中间表示 | 前者遮挡处仍会踩空；后者每遇到新的仿真-现实差异都要回仿真重训 |
 | 开放词汇基础模型 | MIT 等（ConceptFusion）；HKUST（FM-Fusion）；HKU 与 TikTok（Depth Anything） | 不针对机器人训练，直接组合网络规模预训练的模型 | 秒级延迟、百万点乘高维嵌入的内存、跨视角不一致 |
 
+`[判断]` 2026 年的补充：Meta 一系第三次发布通用 2D 模型（Mask R-CNN、SAM、SAM 3），并且 SAM 3 第一次把视频跟踪和速度放进设计目标；NVIDIA 在机器人感知上押注"合成数据 + 基础模型先验 + 给自家人形的参考栈"（FoundationStereo 与 cuVSLAM、nvblox 一起出现在 GR00T N1.6 流程中），这是本页第一次出现的公司感知栈，证据目前只有一篇论文和一篇官方博客。
+
 `[判断]` 收敛与分化：逐帧网络加 3D 累积的结构已经是语义建图的共同做法，分化在累积的载体（surfel、TSDF 体素、带特征的点）和语义的来源（固定类别的 CNN、开放词汇基础模型）。感知到控制这一支没有收敛：显式地图与端到端两种做法在本页的证据里各有失败场景，没有同条件的对照实验。
 
 ## 用什么衡量进展
@@ -174,6 +194,7 @@
 - **度量深度在透明、反光、低光下是否可靠？** 入口：[Depth Anything V2](../../papers/arxiv-2406.09414/README.md)、[Monodepth2](../../papers/arxiv-1806.01260/README.md)、[Miki 等](../../papers/arxiv-2201.08117/README.md)对传感器失效的描述。
 - **感知不确定性怎样显式地传给控制？** Miki 等写明不确定性只被隐式使用。入口：[Miki 等](../../papers/arxiv-2201.08117/README.md)、[Agarwal 等](../../papers/url-https-proceedings.mlr.press-v205-agarwal23a-agarwal23a/README.md)、[MGDP](../../papers/doi-10.1002-advs.202524345/README.md)。
 - **标定与时间同步能否在线检验和修正？** 融合论文把它当前提（[BEVFusion](../../papers/arxiv-2205.13542/README.md)），定位一侧已有在线标定内外参与时间偏移的做法（OpenVINS、VINS-Mono，见[定位与建图](../localization-mapping/README.md)）。
+- **（2026 年补充）快的 2D 概念分割怎样变成一致的 3D 物体记录？** SAM 3 给出了视频里的跨帧 ID，但没有跨视角的 3D 一致性；视频中物体一多仍不实时。入口：[SAM 3](../../papers/arxiv-2511.16719/README.md)、[FM-Fusion](../../papers/arxiv-2402.04555/README.md)、[Depth Anything 3](../../papers/arxiv-2511.10647/README.md)。
 
 ## 阅读顺序
 
@@ -183,6 +204,7 @@
 4. [PointPillars](../../papers/arxiv-1812.05784/README.md) → [BEVFusion](../../papers/arxiv-2205.13542/README.md)（配合 [nuScenes](../../papers/arxiv-1903.11027/README.md)）：激光雷达与多传感器融合，重点看延迟分解和雨天、夜间实验。
 5. [Miki 等](../../papers/arxiv-2201.08117/README.md) 与 [Agarwal 等](../../papers/url-https-proceedings.mlr.press-v205-agarwal23a-agarwal23a/README.md)：对照阅读，两种处理感知误差的思路。
 6. [FM-Fusion](../../papers/arxiv-2402.04555/README.md) 与 [Depth Anything V2](../../papers/arxiv-2406.09414/README.md)：基础模型进入机器人感知后，修了什么、新暴露了什么。
+7. （2026 年补充）[SAM 3](../../papers/arxiv-2511.16719/README.md) 对照 FM-Fusion，[FoundationStereo](../../papers/arxiv-2501.09898/README.md) 与 [Depth Anything 3](../../papers/arxiv-2511.10647/README.md) 对照 Depth Anything V2：看第 6 阶段的拼接与单目深度怎样被统一。
 
 ## 批注
 
@@ -196,6 +218,9 @@
 - Depth Anything V2 的透明表面 δ1 来自 NTIRE 2024 透明表面挑战（Table 12）；它在常规基准上与 V1 相当，在两个数据集上略差（§7.2）。
 - Miki 等"78 分钟对 76 分钟"的比较对象是徒步规划软件给出的建议用时，不是人类实测；数字经 arXiv HTML 页抽取，未与 Science Robotics 正式版逐字比对。
 - Agarwal 等对噪声高程图基线的 60–90% 优势来自仿真（Table 1），基线是作者按 Miki 等的噪声模型复现的。
+- SAM 3 的"约 30 ms"是 H200 上单张图（100 多个物体）的时间，不是机载 GPU；cgF1 是 SA-Co 基准上的概念级指标，与 COCO AP 不可直接比较。
+- Depth Anything 3 的"位姿精度高 44.3%"取自摘要；正文位姿一节写平均提升 35.7%，两处口径不同，本页按摘要并在此注明。
+- FoundationStereo 的 0.7 秒是 A100 上 375×1242 的图，零样本结果是作者表中与此前方法的比较，本页没有逐项引用对照数值。
 
 **判断的支撑论文**
 
@@ -203,12 +228,16 @@
 - "基础模型把类别固定换成速度与一致性不够"：FM-Fusion 运行时分析与局限、ConceptFusion 局限、SAM 局限、Depth Anything V2 §2。边界：VGGT-SLAM 2.0 报告带 CLIP 开放集检测的系统达到 6.3 fps（见定位与建图页），速度问题在改善。
 - 团队偏好按"两篇以上、存在替代方案时重复同一选择"判断：FAIR 在 Mask R-CNN 与 SAM 中都发布通用 2D 模型并开源，都不针对实时；nuTonomy 在 PointPillars 与 nuScenes 中都把完整车载传感器与部署速度作为出发点。ETH 与 CMU/Berkeley、ConceptFusion、Depth Anything 在本页各只有一篇，写的是该论文的选择，不足以称为团队偏好。
 - 跨领域共性（感知噪声注入与域随机化、网络给语义而几何模块给位置）是类比，没有直接对照实验；域随机化的证据以运动控制方向页为准。
+- 第 7 阶段"2D 一侧被修了一大块"：SAM 3 摘要（检测、分割、跟踪共享骨干）与速度说明；对照 FM-Fusion 的运行时分解。反例与边界：SAM 3 自述视频中物体多时不实时；跨视角 3D 一致性没有在 SAM 3 中评测。
+- "感知的深度与定位的几何前端在合成同一类模型"：DA3 同时报告单目深度与相机位姿；AMB3R-SLAM 用 DA3-Small 做前端（见[定位与建图](../localization-mapping/README.md)）；FoundationStereo 用 DA V2 做先验。边界：这是跨三篇的类比，没有一篇论文直接论证。
 
 **与其他论文的关联**
 
 - [SemanticFusion](../../papers/arxiv-1609.05130/README.md) 与 [ORB-SLAM3](../../papers/orb-slam3/reading.md) 是同一条接口的两端：后者精读写明它只输出稀疏几何点，语义要由这类工作叠加。
 - [OpenVLA 精读](../../papers/openvla/reading.md)拼接 DINOv2 与 SigLIP 两种视觉特征，并发现冻结视觉编码器会使成功率从约 70% 降到 47%：感知特征是否够用，在端到端策略里同样是开放问题，表征一侧的讨论见[视觉表征方向](../../../multimodal/fields/visual-representation/README.md)。
 - [CLIP](../../../multimodal/papers/clip/README.md) 是 ConceptFusion 的语义来源；[ViT](../../../multimodal/papers/vit/README.md) 是 SAM、Depth Anything 编码器的结构。
+- [Depth Anything 3](../../papers/arxiv-2511.10647/README.md) 的对照对象是 [VGGT](../../papers/arxiv-2503.11651/README.md)，它被 [AMB3R-SLAM](../../papers/arxiv-2609.19518/README.md) 用作前端；[FoundationStereo](../../papers/arxiv-2501.09898/README.md) 与 [cuVSLAM](../../papers/arxiv-2506.04359/README.md) 同属 NVIDIA 给 GR00T N1.6 的参考栈，见[定位与建图](../localization-mapping/README.md)与 [VLA 方向](../vla/README.md)第 7 阶段。
+- [SAM 3](../../papers/arxiv-2511.16719/README.md) 也被 NVIDIA 的 C-RADIOv4 当作蒸馏教师之一，表征一侧的讨论见[视觉表征方向](../../../multimodal/fields/visual-representation/README.md)。
 - [ESKF 精读](../../papers/eskf/reading.md)与[感知讲义](../perception.md)第七节：跨传感器融合的统计前提是误差独立、时间对齐，与 BEVFusion 把标定当作前提相对照。
 
 **未核实 / 待验证**
@@ -218,3 +247,4 @@
 - Pixel-Voxel 网络的数字经 PMC 页面抽取，正式版 PDF 未逐表核对；其代码在论文中写的是"接收后发布"，实际发布情况未查。
 - 多传感器时空标定的原始论文（Furgale 等 IROS 2013，Kalibr）没有找到可打开的官方全文，本页没有引用。
 - Depth Anything V2 各模型的许可证未核实。
+- SAM 3、Depth Anything 3 的许可证与权重开放范围未核实；SAM 2（2024）与 Video Depth Anything 等相关工作未收录；Gemini Robotics-ER 系列的指点与检测能力属于具身推理模型，本页未展开。

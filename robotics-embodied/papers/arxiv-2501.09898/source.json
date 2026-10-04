@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2501.09898",
+  "title": "FoundationStereo: Zero-Shot Stereo Matching",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2501.09898",
+  "official_url": "https://arxiv.org/abs/2501.09898",
+  "official_fulltext_url": "https://arxiv.org/pdf/2501.09898",
+  "read_version": "v4",
+  "version_status": "checked_v4",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。arXiv 摘要页（v4，CVPR 2025）与 HTML 选段：数据集、结构、零样本结果、运行时间、局限；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Bowen Wen",
+    "Matthew Trepte",
+    "Joseph Aribido",
+    "Jan Kautz",
+    "Orazio Gallo",
+    "Stan Birchfield"
+  ],
+  "year": 2025,
+  "topic_paths": [
+    "robotics/perception"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页（v4，CVPR 2025）与 HTML 选段：数据集、结构、零样本结果、运行时间、局限；",
+    "mechanism_summary": "FSD：Omniverse 路径追踪 100 万对，域随机化与自动筛选；侧调适配器接冻结 DA V2 + EdgeNeXt-S CNN；零样本 Middlebury BP-2 1.1%、ETH3D D1 2.3%、KITTI-12/15 D1 2.3%/2.8%（对照方法数值未逐表核对，卡片只写'低于此前方法'）；A100 375×1242 约 0.7 s；局限：效率、透明物体少。",
+    "evidence_boundary": "未复现实验；数字取自原文或官方页面的正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2501.09898",
+      "https://arxiv.org/html/2501.09898v4"
+    ],
+    "source_origin": "robotics_recency_audit_2026_10_04",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "image"
+  ],
+  "task_tags": [
+    "understanding"
+  ]
+}

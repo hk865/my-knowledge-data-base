@@ -26,6 +26,12 @@
 - [Depth Anything: Unleashing the Power of Large-Scale Unlabeled Data](../../papers/arxiv-2401.10891/README.md) · 2024 · 文献卡
 - [Depth Anything V2](../../papers/arxiv-2406.09414/README.md) · 2024 · 文献卡
 
+## 2025–2026：概念分割、多视图几何与双目基础模型
+
+- [SAM 3: Segment Anything with Concepts](../../papers/arxiv-2511.16719/README.md) · 2025 · 文献卡 · 名词短语提示的检测、分割与视频跟踪
+- [Depth Anything 3: Recovering the Visual Space from Any Views](../../papers/arxiv-2511.10647/README.md) · 2025 · 文献卡 · 任意视图的几何与位姿，另有度量深度版（与定位与建图方向共享）
+- [FoundationStereo: Zero-Shot Stereo Matching](../../papers/arxiv-2501.09898/README.md) · 2025 · 文献卡 · NVIDIA，合成数据 + 单目先验的零样本双目
+
 ## 多传感器融合与评测
 
 - [nuScenes: A multimodal dataset for autonomous driving](../../papers/arxiv-1903.11027/README.md) · 2019 · 文献卡

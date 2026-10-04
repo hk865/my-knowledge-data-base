@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "resource_id": "url:https://bostondynamics.com/blog/large-behavior-models-atlas-find-new-footing/",
+  "title": "Large Behavior Models and Atlas Find New Footing",
+  "resource_kind": "official_blog",
+  "canonical_folder": "robotics-embodied/papers/boston-dynamics-atlas-lbm",
+  "official_url": "https://bostondynamics.com/blog/large-behavior-models-atlas-find-new-footing/",
+  "official_fulltext_url": "https://bostondynamics.com/blog/large-behavior-models-atlas-find-new-footing/",
+  "read_version": null,
+  "version_status": "not_pinned",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。官方博客全文（数据采集、策略结构、动作空间、训练数据、推理加速、后续工作）；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Boston Dynamics",
+    "Toyota Research Institute"
+  ],
+  "year": 2025,
+  "topic_paths": [
+    "robotics/embodied-policies",
+    "robotics/control"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "官方博客全文（数据采集、策略结构、动作空间、训练数据、推理加速、后续工作）；",
+    "mechanism_summary": "VR 全身遥操作建在 BD 的 MPC 上；450M 参数扩散 Transformer，flow matching；输入 30 Hz 头部立体图像、本体感知、语言；输出夹爪、颈部偏航、躯干位姿、手位姿、脚位姿；块长 48（1.6 s），执行约 24；MPC 稳定；数据来自 Atlas（50 DoF）、测试台（29 DoF）、TRI Ramen，含仿真；推理加速 1.5–2 倍；后续：力控、数据源、VLA 的 RL。博客具体日期（8 月某日）未从页面读出，只记月份。",
+    "evidence_boundary": "未复现实验；数字取自原文或官方页面的正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://bostondynamics.com/blog/large-behavior-models-atlas-find-new-footing/"
+    ],
+    "source_origin": "robotics_recency_audit_2026_10_04",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "image",
+    "state",
+    "text",
+    "action"
+  ],
+  "task_tags": [
+    "decision"
+  ]
+}

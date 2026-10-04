@@ -49,6 +49,9 @@
 | （参照）世界模型 | 在学到的潜在动力学中想象训练 | [DreamerV3](../../../multimodal/papers/dreamerv3/reading.md)、[潜空间选择](../../../multimodal/papers/arxiv-2605.06388/README.md) | 用模型代替真实交互 / 模型误差与多步预测偏差 |
 | （参照）生成机制与 LLM 后训练 | 扩散生成、视觉指令微调、RLHF、可验证奖励 RL | [DDPM](../../../multimodal/papers/ddpm/README.md)、[LLaVA](../../../multimodal/papers/llava/README.md)、[InstructGPT](../../../llm/papers/instructgpt/README.md)、[DeepSeek-R1](../../../llm/papers/arxiv-2501.12948/README.md) | 本方向借用的机制来源；DeepSeek-V2/V3、Qwen2.5 技术报告只作交叉引用 |
 | （参照）专家来源 | 模型控制器作为示范来源 | [Convex MPC](../../papers/convex-mpc/reading.md) | 讲义第 8 节讨论过用 MPC 生成示范；接口要与学生一致 |
+| 训练目标（2026 年补充） | 冻结 VLA，在压缩出的 RL token 上在线训练小 actor-critic，修正动作块并正则到 VLA 动作附近 | [RL Token](../../papers/arxiv-2604.23073/README.md) | 每任务几小时真机数据，精密阶段提速最高约 3 倍 / 奖励、干预与切换仍靠人 |
+| 数据（2026 年补充） | 第一视角人类视频经姿态估计转成动作，作为模仿的主数据源 | [EgoScale](../../papers/arxiv-2602.16710/README.md) | 2 万小时、对数线性尺度律，灵巧手成功率 +54% / 需要人-机对齐数据；尺度律不外推 |
+| 数据（2025 年补充） | 人形全身的 VR 遥操作示范，扩散 Transformer 输出手、躯干和脚的位姿，下层 MPC | [Atlas 大行为模型](../../papers/boston-dynamics-atlas-lbm/README.md) | 边走边操作的长任务，推理时可提速 1.5–2 倍 / 没有量化对比，RL 留作后续 |
 
 ## 批注
 

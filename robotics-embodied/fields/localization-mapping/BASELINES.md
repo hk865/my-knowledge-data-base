@@ -54,6 +54,10 @@
 | 估计器 + 回环 | 重叠帧共享位姿与内参，只解标定与尺度；注意力层做回环验证 | [VGGT-SLAM 2.0](../../papers/arxiv-2601.19887/README.md) | 修 v1 的漂移与平面退化，8.4 fps / 白墙场景发散 |
 | 传感器配置 + 估计器 | 前馈视觉约束进入公制 SE(3) 因子图，加 IMU 与 GNSS | [MASt3R-Fusion](../../papers/arxiv-2509.20757/README.md) | 公制尺度，大尺度误差远低于纯视觉前馈方法 / 需要 IMU，尚未见正式发表 |
 | 前端 + 数据关联 | 前馈 3D 先验加运动物体分割头，剔除动态区域 | [π³ 动态 SLAM](../../papers/arxiv-2512.06868/README.md) | 动态场景误差低于 DROID-SLAM 与 DynaSLAM / 只有 2 fps |
+| 前端 + 传感器配置（2026 年补充） | 前馈模型接受可选的内参、位姿、深度输入，输出分解的深度、射线、位姿与公制尺度 | [MapAnything](../../papers/arxiv-2509.13414/README.md) | 一个模型做 SfM、多视图立体、单目深度、定位与深度补全，有公制尺度 / 不建模输入噪声与不确定性，不处理动态 |
+| 前端（2026 年补充） | 任意视图的统一几何模型，"深度 + 射线"单一目标 | [Depth Anything 3](../../papers/arxiv-2511.10647/README.md) | 位姿与几何超过 VGGT / 作为模型本身没有回环与长序列机制 |
+| 估计器 + 回环（2026 年补充） | DA3-Small 前端 + 分层 Sim(3) 位姿图（局部、跨子图、DBoW2 回环），不做 BA | [AMB3R-SLAM](../../papers/arxiv-2609.19518/README.md) | KITTI 单目 ATE 13.11 m（作者表中 VGGT-SLAM 2.0 为 92.72 m），实时、公里级 / 点云地图有重复表面与重影 |
+| （参照）工业界 | CUDA 实现的经典栈：角点 + LK 光流、滑窗稀疏 BA、位姿图与回环，1–32 个相机 | [cuVSLAM](../../papers/arxiv-2506.04359/README.md) | Jetson Orin 上双目每帧 1.8 ms，进入 NVIDIA 人形参考栈 / 多双目需硬件同步，快速运动误差变大 |
 | 地图表示（语义层） | 在 SLAM 位姿上叠加语义：surfel、体素、实例 | [SemanticFusion](../../papers/arxiv-1609.05130/README.md)、[Pixel-Voxel](../../papers/doi-10.3390-s18093099/README.md)、[PanopticFusion](../../papers/arxiv-1903.01177/README.md)、[FM-Fusion](../../papers/arxiv-2402.04555/README.md)（[代码仓库卡](../../papers/url-https-github.com-hkust-aerial-robotics-fm-fusion/README.md)） | 地图带上类别与实例 / 依赖外部位姿，详见[感知方向](../perception/BASELINES.md) |
 
 ## 批注

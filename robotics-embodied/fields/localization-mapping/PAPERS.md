@@ -43,6 +43,13 @@
 - [MASt3R-Fusion: Integrating Feed-Forward Visual Model with IMU, GNSS for High-Functionality SLAM](../../papers/arxiv-2509.20757/README.md) · 2025 · 文献卡
 - [Dynamic Visual SLAM using a General 3D Prior](../../papers/arxiv-2512.06868/README.md) · 2025 · 文献卡
 - [VGGT-SLAM 2.0: Real-time Dense Feed-forward Scene Reconstruction](../../papers/arxiv-2601.19887/README.md) · 2026 · 文献卡
+- [MapAnything: Universal Feed-Forward Metric 3D Reconstruction](../../papers/arxiv-2509.13414/README.md) · 2025 · 文献卡 · 可选几何输入、输出公制尺度
+- [Depth Anything 3: Recovering the Visual Space from Any Views](../../papers/arxiv-2511.10647/README.md) · 2025 · 文献卡 · 任意视图的深度与位姿（与感知方向共享）
+- [AMB3R-SLAM: Kilometer-scale SLAM with Hierarchical Backend](../../papers/arxiv-2609.19518/README.md) · 2026 · 文献卡 · DA3 前端 + 分层 Sim(3) 位姿图
+
+## 工业界
+
+- [cuVSLAM: CUDA accelerated visual odometry and mapping](../../papers/arxiv-2506.04359/README.md) · 2025 · 文献卡 · NVIDIA，GPU 上的经典视觉 SLAM，进入 GR00T N1.6 参考栈
 
 ## 语义地图（与感知方向共享）
 
