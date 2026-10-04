@@ -22,6 +22,7 @@
 
 - [Resurrecting Recurrent Neural Networks for Long Sequences](../../papers/arxiv-2303.06349/README.md)（LRU） · 2023 · DeepMind（另有 ETH Zurich 作者） · 文献卡 · 格：序列混合 = 线性递推
 - [Mamba: Linear-Time Sequence Modeling with Selective State Spaces](../../papers/mamba/README.md) · 2023 · CMU、Princeton · 技术精读 · 格：序列混合 = 选择性 SSM
+- [Transformers are SSMs: Generalized Models and Efficient Algorithms Through Structured State Space Duality](../../papers/arxiv-2405.21060/README.md)（Mamba-2） · 2024 · Princeton、CMU · 文献卡 · 格：序列混合 = 状态空间对偶（A 为标量乘单位阵，约 10% 注意力层的混合最好）
 - [GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints](../../papers/arxiv-2305.13245/README.md) · 2023 · Google Research · 文献卡 · 格：KV 缓存 = 分组共享
 
 ## 5 混合架构与 DeepSeek 的稀疏栈（2024）

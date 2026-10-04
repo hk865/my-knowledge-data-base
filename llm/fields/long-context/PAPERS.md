@@ -52,3 +52,7 @@
 - [Conditional Memory via Scalable Lookup: A New Axis of Sparsity for Large Language Models](../../papers/arxiv-2601.07372/README.md) · 2026 · 预训练方向 · 文献卡 · 格：推理外推与执行 = 查表记忆
 - [Frozen Memory Is Not Enough: Rethinking External Memory as Extraction](../../papers/arxiv-2608.17050/README.md) · 2026 · 预训练方向 · 文献卡 · 格：推理外推与执行 = 外部记忆
 - [GQA](../../papers/arxiv-2305.13245/README.md)、[KIVI](../../papers/arxiv-2402.02750/README.md)、[vLLM](../../papers/arxiv-2309.06180/README.md) · 2023–2024 · 推理时计算方向 · 文献卡 · 格：推理外推与执行 = KV 缓存的头数、精度与分页
+
+## 交叉引用（2026-10-04 补）
+
+- [Transformers are SSMs: Generalized Models and Efficient Algorithms Through Structured State Space Duality](../../papers/arxiv-2405.21060/README.md)（Mamba-2） · 2024 · Princeton、CMU · 文献卡 · 格：序列混合 = 状态空间对偶（A 为标量乘单位阵，约 10% 注意力层的混合最好）
