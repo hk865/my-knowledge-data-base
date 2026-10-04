@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2405.09818",
+  "title": "Chameleon: Mixed-Modal Early-Fusion Foundation Models",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2405.09818",
+  "official_url": "https://arxiv.org/abs/2405.09818",
+  "official_fulltext_url": "https://arxiv.org/pdf/2405.09818v2",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Chameleon Team"
+  ],
+  "year": 2024,
+  "topic_paths": [
+    "multimodal/vlm",
+    "multimodal/generation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "Abstract、Sec.1、Sec.2.1（分词器）、Sec.2.3（稳定性、Fig.5–6）、Sec.4 人评局限、Sec.5.2 图生文、结论",
+    "mechanism_summary": "图像 512×512 → 1024 token、码本 8192；BPE 词表 65,536；约 10T token 从零训练；QK-Norm 解决范数增长导致的发散；14 亿图文对；34B 人评偏好率对 Gemini-Pro 60.4%、对 GPT-4V 51.6%，Krippendorff α 约 0.34；分词器对文字多的图像重建差。",
+    "evidence_boundary": "数字取自 arXiv PDF 抽取的原文；公司模型只写官方报告明写的内容；未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2405.09818",
+      "https://arxiv.org/pdf/2405.09818v2"
+    ],
+    "source_origin": "phase3_multimodal_vlm_cards",
+    "relation_pages": [
+      "multimodal/fields/vlm/README.md"
+    ]
+  },
+  "modality_tags": [
+    "image",
+    "text",
+    "multimodal"
+  ],
+  "task_tags": [
+    "understanding",
+    "generation"
+  ]
+}

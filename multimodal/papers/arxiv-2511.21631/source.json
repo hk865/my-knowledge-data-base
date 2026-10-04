@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2511.21631",
+  "title": "Qwen3-VL Technical Report",
+  "resource_kind": "official_technical_report",
+  "canonical_folder": "multimodal/papers/arxiv-2511.21631",
+  "official_url": "https://arxiv.org/abs/2511.21631",
+  "official_fulltext_url": "https://arxiv.org/pdf/2511.21631v2",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Shuai Bai",
+    "Yuxuan Cai",
+    "Ruizhe Chen",
+    "Keqin Chen",
+    "Xionghui Chen",
+    "Zesen Cheng",
+    "Lianghao Deng",
+    "Wei Ding",
+    "Chang Gao",
+    "Chunjiang Ge",
+    "等 64 位作者"
+  ],
+  "year": 2025,
+  "topic_paths": [
+    "multimodal/vlm",
+    "multimodal/video-temporal",
+    "llm/posttraining/rl"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "Abstract、Sec.1、Sec.2（结构、交错 M-RoPE、DeepStack、时间戳）、Sec.3.1 预训练阶段 Table 1、Sec.4（后训练、蒸馏、推理与通用 RL、用图思考）、Sec.6 结论",
+    "mechanism_summary": "SigLIP-2 SO-400M（小模型用 Large 300M）继续训练；2×2 MLP 合并；交错 M-RoPE；DeepStack 三层注入 LLM 前三层；文字时间戳；平方根归一化逐 token 损失；S0 67B/S1 约 1T/S2 约 1T/S3 100B（256K）；SFT → 强到弱蒸馏（纯文本）→ SAPO 推理 RL（约 3 万查询，过滤通过率 >90% 的题）+ 通用 RL（规则与模型奖励）；工具 RL 中出现只调用一次工具的奖励投机；Apache 2.0。",
+    "evidence_boundary": "数字取自 arXiv PDF 抽取的原文；公司模型只写官方报告明写的内容；未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2511.21631",
+      "https://arxiv.org/pdf/2511.21631v2"
+    ],
+    "source_origin": "phase3_multimodal_vlm_cards",
+    "relation_pages": [
+      "multimodal/fields/vlm/README.md"
+    ]
+  },
+  "modality_tags": [
+    "image",
+    "video",
+    "text",
+    "multimodal"
+  ],
+  "task_tags": [
+    "understanding",
+    "decision"
+  ]
+}

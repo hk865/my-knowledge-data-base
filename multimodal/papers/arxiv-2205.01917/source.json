@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2205.01917",
+  "title": "CoCa: Contrastive Captioners are Image-Text Foundation Models",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2205.01917",
+  "official_url": "https://arxiv.org/abs/2205.01917",
+  "official_fulltext_url": "https://arxiv.org/pdf/2205.01917v2",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Jiahui Yu",
+    "Zirui Wang",
+    "Vijay Vasudevan",
+    "Legg Yeung",
+    "Mojtaba Seyedhosseini",
+    "Yonghui Wu"
+  ],
+  "year": 2022,
+  "topic_paths": [
+    "multimodal/alignment",
+    "multimodal/vlm"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "Abstract、Sec.1、Sec.3（结构与两个损失）、Sec.4.3 消融（Table 8）、Sec.5 Broader Impacts、Sec.6",
+    "mechanism_summary": "单模态解码器 + 多模态解码器；对比 + 描述损失（描述:对比 = 2:1 最好）；JFT-3B + ALIGN 数据；零样本 ImageNet 86.3%、冻结 90.6%、微调 91.0%；消融 LCon 70.7/59.2，LCoCa 71.6/69.0，成本 1.18×；自述可能对未覆盖的图像损坏脆弱。",
+    "evidence_boundary": "数字取自 arXiv PDF 正文与表格（PyMuPDF 抽取）；未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2205.01917",
+      "https://arxiv.org/pdf/2205.01917v2"
+    ],
+    "source_origin": "phase3_multimodal_alignment_cards",
+    "relation_pages": [
+      "multimodal/fields/alignment/README.md"
+    ]
+  },
+  "modality_tags": [
+    "image",
+    "text",
+    "multimodal"
+  ],
+  "task_tags": [
+    "understanding",
+    "generation"
+  ]
+}

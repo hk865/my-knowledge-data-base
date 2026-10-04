@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2209.06794",
+  "title": "PaLI: A Jointly-Scaled Multilingual Language-Image Model",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2209.06794",
+  "official_url": "https://arxiv.org/abs/2209.06794",
+  "official_fulltext_url": "https://arxiv.org/pdf/2209.06794v4",
+  "read_version": "v4",
+  "version_status": "checked_v4",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Xi Chen",
+    "Xiao Wang",
+    "Soravit Changpinyo",
+    "AJ Piergiovanni",
+    "Piotr Padlewski",
+    "Daniel Salz",
+    "Sebastian Goodman",
+    "Adam Grycner",
+    "Basil Mustafa",
+    "Lucas Beyer",
+    "等 29 位作者"
+  ],
+  "year": 2022,
+  "topic_paths": [
+    "multimodal/vlm"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "Abstract、Sec.1、Sec.3（训练阶段与冻结）、Sec.4 部分结果、附录 A.1、C.3 消融、附录 E 局限、WebLI 数据卡",
+    "mechanism_summary": "mT5-XXL 13B + ViT-e 4B（PaLI-17B，视觉约 25%）；WebLI 100 亿图，取图文分最高 10% 约 10 亿对；主预训练 16 亿样本、224 分辨率、冻结 ViT；17B 另做 588 分辨率 1 万步全参数训练；VQAv2 84.3、COCO CIDEr 149.1；ViT-e ImageNet 微调 90.9%；局限见附录 E。",
+    "evidence_boundary": "数字取自 arXiv PDF 抽取的原文；公司模型只写官方报告明写的内容；未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2209.06794",
+      "https://arxiv.org/pdf/2209.06794v4"
+    ],
+    "source_origin": "phase3_multimodal_vlm_cards",
+    "relation_pages": [
+      "multimodal/fields/vlm/README.md"
+    ]
+  },
+  "modality_tags": [
+    "image",
+    "text",
+    "multimodal"
+  ],
+  "task_tags": [
+    "understanding",
+    "generation"
+  ]
+}

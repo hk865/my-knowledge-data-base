@@ -70,7 +70,7 @@ DiT 的作者把"架构统一"列为用 Transformer 替换 U-Net 的理由（[�
 
 - 语言收敛到 decoder-only。GPT-3（2020）只靠提示中的几个示例完成任务（in-context learning，不更新权重）。BigScience 的对照实验（Wang 等 2022）解开了 T5 与 GPT-3 看起来矛盾的结论：只做无监督预训练后直接零样本评测，因果 decoder-only 最好；加多任务微调后，encoder–decoder 最好（[预训练领域页](../llm/fields/pretraining/README.md)）。
 - 图像收敛到扩散。DDPM（2020）用逐级去噪替代对抗训练，CIFAR10 无条件生成的 FID 为 3.17；去噪网络是 PixelCNN++ 式的 U-Net（对称的编码–解码卷积网络，跨层拼接补回细节）。LDM（2021）在潜空间里保留这种卷积主干，用交叉注意力接入文本等条件。
-- 视频沿用图像的配方。Video Diffusion Models（2022）把图像扩散的 U-Net 扩成在空间和时间上分解的 3D U-Net，同一个网络把时间注意力屏蔽掉就能当图像模型，于是可以图像、视频联合训练；在 BAIR 视频预测上，它的 FVD（视频版的 FID，用视频动作识别网络 I3D 的特征计算，越低越好）为 66.92，对照表中此前最好的 NUWA 为 86.9。同年的 Imagen Video 把这一结构做成 7 个模型的级联，用 1400 万对视频–文本加 6000 万对图像–文本的内部数据，再加 LAION-400M 训练（[视频与时序领域页](../multimodal/fields/video-temporal/README.md)）。
+- 视频沿用图像的配方。Video Diffusion Models（2022）把图像扩散的 U-Net 扩成在空间和时间上分解的 3D U-Net，同一个网络把时间注意力屏蔽掉就能当图像模型，于是可以图像、视频联合训练；在 BAIR 视频预测上，它的 FVD（视频版的 FID，用视频动作识别网络 I3D 的特征计算，越低越好）为 66.92，对照表中此前最好的 NUWA 为 86.9。同年的 Imagen Video 把这一结构做成 7 个模型的级联，用 1400 万对视频–文本加 6000 万对图像–文本的内部数据，再加 LAION-400M 训练（[Imagen Video](../multimodal/papers/arxiv-2210.02303/README.md)）。
 
 **做不好的场景**：采样慢，DDPM 生成一张图要调用网络 1000 次；视频只有几秒、低分辨率（Video Diffusion 以 64×64 为主，Imagen Video 约 5.3 秒）；文本条件下的属性绑定、计数和文字渲染差（DALL·E 2、Imagen、Parti 的自述，见[视觉生成领域页](../multimodal/fields/generation/README.md)第 7 个节点）。LDM 的作者还认为，扩散模型的生成能力部分来自 U-Net 对图像类数据的归纳偏置，留下"卷积主干是否必要"的问题。
 
@@ -173,7 +173,7 @@ DiT 的作者把"架构统一"列为用 Transformer 替换 U-Net 的理由（[�
 **与其他页面的关联**
 
 - [深度学习的规模化](scaling.md) 的阶段三是本页的上层总线；[CNN 与 Transformer](cnn-vs-transformer.md) 讨论主干转向的结构原因。
-- [视觉生成领域页](../multimodal/fields/generation/README.md) 是本页图像部分的证据来源，"先看这里"一节解释三大家族；[视频与时序领域页](../multimodal/fields/video-temporal/README.md) 接视频理解一侧。
+- [视觉生成领域页](../multimodal/fields/generation/README.md) 是本页图像部分的证据来源，"先看这里"一节解释三大家族；[视频生成的卡片](../multimodal/fields/generation/PAPERS.md)（Imagen Video、Sora、Veo、Seedance、Wan 等）是视频一类的证据来源；[视频与时序领域页](../multimodal/fields/video-temporal/README.md) 讲视频理解，与本页的"时间怎样进入模型"互为对照。
 - [DDPM 精读](../multimodal/papers/ddpm/reading.md) 与[扩散讲义](../foundations/lessons/17-diffusion.md) 讲去噪目标怎么算；[Video Diffusion 精读](../multimodal/papers/video-diffusion/reading.md) 第 2 节有分解时空注意力的计算量推导，是"四种基本做法"第一种的细节。
 - [多模态世界模型方向](../multimodal/fields/world-models/README.md)、[机器人世界模型讲义](../robotics-embodied/fields/world-models.md) 与 [DreamerV3](../multimodal/papers/dreamerv3/README.md) 是"从视频生成到世界模型"一节的另一端。
 - [VLA 领域页](../robotics-embodied/fields/vla.md) 是"离散与连续两种生成过程在一个模型里共存"的实例。

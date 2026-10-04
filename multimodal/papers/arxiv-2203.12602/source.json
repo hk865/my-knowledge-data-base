@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2203.12602",
+  "title": "VideoMAE: Masked Autoencoders are Data-Efficient Learners for Self-Supervised Video Pre-Training",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2203.12602",
+  "official_url": "https://arxiv.org/abs/2203.12602",
+  "official_fulltext_url": "https://arxiv.org/pdf/2203.12602v3",
+  "read_version": "v3",
+  "version_status": "checked_v3",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了Abstract、Sec.1、Sec.3（时间冗余与相关、管道遮蔽、立方块嵌入）、Sec.4.2（Table 1 消融）、Sec.4.3（数据效率、迁移、Fig.4、AVA）、Sec.5（结论、未来工作、Broader impact）；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Zhan Tong",
+    "Yibing Song",
+    "Jue Wang",
+    "Limin Wang"
+  ],
+  "year": 2022,
+  "topic_paths": [
+    "multimodal/video-temporal",
+    "multimodal/visual-representation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v3 PDF 选段：Abstract、Sec.1、Sec.3（时间冗余与相关、管道遮蔽、立方块嵌入）、Sec.4.2（Table 1 消融）、Sec.4.3（数据效率、迁移、Fig.4、AVA）、Sec.5（结论、未来工作、Broader impact）",
+    "mechanism_summary": "管道遮蔽 90%；立方块 2×16×16；ViT-B SSv2/K400：从零 32.6/68.8，IN21K 61.8/78.9，VideoMAE 69.6/80.0；K400 上遮蔽策略差距小于 SSv2（作者：Kinetics 多静止）；SSv2 42k 自预训练 68.7 > K400 24 万迁移 68.5；摘要 K400 87.4、SSv2 75.4。",
+    "evidence_boundary": "未复现实验；数字取自论文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2203.12602",
+      "https://arxiv.org/pdf/2203.12602v3"
+    ],
+    "source_origin": "phase3_video_temporal_cards",
+    "relation_pages": [
+      "multimodal/fields/video-temporal/README.md"
+    ]
+  },
+  "modality_tags": [
+    "video"
+  ],
+  "task_tags": [
+    "understanding"
+  ]
+}

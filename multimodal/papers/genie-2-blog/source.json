@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "resource_id": "url:https://deepmind.google/discover/blog/genie-2-a-large-scale-foundation-world-model/",
+  "title": "Genie 2: A large-scale foundation world model",
+  "resource_kind": "official_blog",
+  "canonical_folder": "multimodal/papers/genie-2-blog",
+  "official_url": "https://deepmind.google/discover/blog/genie-2-a-large-scale-foundation-world-model/",
+  "official_fulltext_url": "https://deepmind.google/discover/blog/genie-2-a-large-scale-foundation-world-model/",
+  "read_version": null,
+  "version_status": "not_pinned_official_page",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Jack Parker-Holder",
+    "Philip Ball",
+    "Jake Bruce",
+    "Vibhavari Dasagi",
+    "Kristian Holsheimer",
+    "Christos Kaplanis",
+    "Alexandre Moufarek",
+    "Guy Scully",
+    "Jeremy Shar",
+    "Jimmy Shi",
+    "等 32 位作者"
+  ],
+  "year": 2024,
+  "topic_paths": [
+    "multimodal/world-models",
+    "multimodal/generation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "Google DeepMind 官方博客全文（2024-12-04），含能力示例、SIMA 实验、Diffusion world model 一节、花絮与致谢",
+    "mechanism_summary": "以 Imagen 3 生成的单张图为提示，生成可用键盘鼠标操作的 3D 世界，人或智能体每步给一个动作、模型生成下一帧；能识别该移动的是角色而不是树和云；同一起始帧可生成不同动作下的反事实轨迹；能记住离开视野的部分并在回来时正确渲染；一致的世界最长约一分钟，多数示例 10–20 秒；展示物体交互、角色动画、NPC、水、烟、重力、光照与反射；用 SIMA 智能体在生成的世界里执行开蓝门、去房子后面等指令，并用它检验一致性；结构：自编码器得到潜帧，带因果 mask 的大 Transformer 动力学模型，即自回归的潜空间扩散模型，推理时逐帧采样并用无分类器引导增强动作可控性；博客样例来自未蒸馏的基础模型，实时版本是蒸馏模型、输出质量下降；花絮中不做动作时花园里出现幽灵；未公开参数量、数据规模。",
+    "evidence_boundary": "只写原文明确写出的内容；未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://deepmind.google/discover/blog/genie-2-a-large-scale-foundation-world-model/"
+    ],
+    "source_origin": "phase3_multimodal_world_models_field_page",
+    "field_pages": [
+      "multimodal/fields/world-models/README.md"
+    ]
+  },
+  "modality_tags": [
+    "video",
+    "action"
+  ],
+  "task_tags": [
+    "generation"
+  ]
+}

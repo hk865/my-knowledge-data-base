@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2103.15691",
+  "title": "ViViT: A Video Vision Transformer",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2103.15691",
+  "official_url": "https://arxiv.org/abs/2103.15691",
+  "official_fulltext_url": "https://arxiv.org/pdf/2103.15691v2",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了Abstract、Sec.1、Sec.3（管道嵌入、四种模型、初始化）、Sec.4.2（Table 1–4 消融）、Sec.4.3（与 SOTA 比较及 SSv2 讨论）、Sec.5；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Anurag Arnab",
+    "Mostafa Dehghani",
+    "Georg Heigold",
+    "Chen Sun",
+    "Mario Lučić",
+    "Cordelia Schmid"
+  ],
+  "year": 2021,
+  "topic_paths": [
+    "multimodal/video-temporal"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v2 PDF 选段：Abstract、Sec.1、Sec.3（管道嵌入、四种模型、初始化）、Sec.4.2（Table 1–4 消融）、Sec.4.3（与 SOTA 比较及 SSv2 讨论）、Sec.5",
+    "mechanism_summary": "管道嵌入 16×16×2；Model 1–4 与平均池化基线：K400 80.0/78.8/77.4/76.3/75.8，EK 43.1/43.7/39.1/39.5/38.8；中心帧初始化比膨胀高 1.6；JFT ViViT-H K400 84.9、K600 85.8；未来工作：去掉对图像预训练的依赖。",
+    "evidence_boundary": "未复现实验；数字取自论文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2103.15691",
+      "https://arxiv.org/pdf/2103.15691v2"
+    ],
+    "source_origin": "phase3_video_temporal_cards",
+    "relation_pages": [
+      "multimodal/fields/video-temporal/README.md"
+    ]
+  },
+  "modality_tags": [
+    "video"
+  ],
+  "task_tags": [
+    "understanding"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2501.09038",
+  "title": "Do generative video models understand physical principles?",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2501.09038",
+  "official_url": "https://arxiv.org/abs/2501.09038",
+  "official_fulltext_url": "https://arxiv.org/pdf/2501.09038v3",
+  "read_version": "v3",
+  "version_status": "checked_v3",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Saman Motamed",
+    "Laura Culp",
+    "Kevin Swersky",
+    "Priyank Jaini",
+    "Robert Geirhos"
+  ],
+  "year": 2025,
+  "topic_paths": [
+    "multimodal/world-models",
+    "multimodal/generation",
+    "cross-domain/evaluation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "v3 PDF：摘要、引言、Physics-IQ 数据集与四项指标、Fig.4–5 结果、Discussion",
+    "mechanism_summary": "Google DeepMind（第一作者工作期间在 GDM，署名 INSAIT）；Physics-IQ：66 个物理场景、396 段 8 秒真实拍摄视频（三个视角，每个场景录两次以测物理随机性），覆盖固体力学、流体、光学、热学、磁学；模型看开头（单帧或 3 秒）预测后 5 秒；四项指标（Spatial IoU、Spatiotemporal IoU、Weighted spatial IoU、MSE）合成 Physics-IQ 分数，以两次真实录制之间的差异为 100%；被测 Sora、Runway Gen 3、Pika 1.0、Lumiere、Stable Video Diffusion、VideoPoet，最好的 VideoPoet（multiframe）29.5%；用 Gemini 1.5 Pro 做二选一辨真伪测视觉真实感，Sora 最难分辨（55.6%，50% 为机会水平），但真实感与 Physics-IQ 不显著相关（Pearson r = -0.46，p = .249）；例：火柴伸进水里时凭空生成并点燃一支蜡烛；Sora 常加入转场切镜，被指标惩罚；作者认为不排除继续扩大规模可学到更多物理。",
+    "evidence_boundary": "只写原文明确写出的内容；未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2501.09038",
+      "https://arxiv.org/pdf/2501.09038v3"
+    ],
+    "source_origin": "phase3_multimodal_world_models_field_page",
+    "field_pages": [
+      "multimodal/fields/world-models/README.md"
+    ]
+  },
+  "modality_tags": [
+    "video"
+  ],
+  "task_tags": [
+    "generation",
+    "evaluation"
+  ]
+}

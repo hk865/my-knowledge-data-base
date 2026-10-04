@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2111.07991",
+  "title": "LiT: Zero-Shot Transfer with Locked-image text Tuning",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2111.07991",
+  "official_url": "https://arxiv.org/abs/2111.07991",
+  "official_fulltext_url": "https://arxiv.org/pdf/2111.07991v3",
+  "read_version": "v3",
+  "version_status": "checked_v3",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Xiaohua Zhai",
+    "Xiao Wang",
+    "Basil Mustafa",
+    "Andreas Steiner",
+    "Daniel Keysers",
+    "Alexander Kolesnikov",
+    "Lucas Beyer"
+  ],
+  "year": 2021,
+  "topic_paths": [
+    "multimodal/alignment"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "Abstract、Sec.1、Sec.3（对比微调与锁定设置）、Sec.4（数据）、Sec.5.1–5.3（Table 2、Fig.3–4）、Sec.6 局限",
+    "mechanism_summary": "Lu（锁定图像塔、训练文本塔）最好；ViT-g/14 零样本 ImageNet 85.2%、ObjectNet 82.5%（比 CLIP 高 10.2）；40 亿对私有数据沿用 ALIGN 流程；解冻使图像表征专门化；局限：只测分类与检索，检索上 Lu 优势不明显，长训练时 Uu/UU 反超。",
+    "evidence_boundary": "数字取自 arXiv PDF 正文与表格（PyMuPDF 抽取）；未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2111.07991",
+      "https://arxiv.org/pdf/2111.07991v3"
+    ],
+    "source_origin": "phase3_multimodal_alignment_cards",
+    "relation_pages": [
+      "multimodal/fields/alignment/README.md"
+    ]
+  },
+  "modality_tags": [
+    "image",
+    "text",
+    "multimodal"
+  ],
+  "task_tags": [
+    "understanding"
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2304.14108",
+  "title": "DataComp: In search of the next generation of multimodal datasets",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2304.14108",
+  "official_url": "https://arxiv.org/abs/2304.14108",
+  "official_fulltext_url": "https://arxiv.org/pdf/2304.14108v5",
+  "read_version": "v5",
+  "version_status": "checked_v5",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Samir Yitzhak Gadre",
+    "Gabriel Ilharco",
+    "Alex Fang",
+    "Jonathan Hayase",
+    "Georgios Smyrnis",
+    "Thao Nguyen",
+    "Ryan Marten",
+    "Mitchell Wortsman",
+    "Dhruba Ghosh",
+    "Jieyu Zhang",
+    "等 34 位作者"
+  ],
+  "year": 2023,
+  "topic_paths": [
+    "multimodal/alignment",
+    "cross-domain/evaluation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "Abstract、Sec.1（Table 1）、Sec.3（池与评测）、Sec.4.1 过滤基线、Sec.5.1–5.3（Table 3、Fig.2、评测趋势、稳健性与公平性）、Sec.6",
+    "mechanism_summary": "CommonPool 12.8B（CC-BY-4.0 URL 索引）；四个规模 12.8M–12.8B；DataComp-1B（Image-based ∩ CLIP score L/14 30%）ViT-L/14 13B 样本 79.2% 对 WIT 75.5%、LAION-2B 73.1%；12.8B 规模最佳过滤比不过滤高 6.9 个百分点；ImageNet 与均值相关 0.99，与单个数据集相关性差异大；局限：不安全内容与偏差需进一步研究。",
+    "evidence_boundary": "数字取自 arXiv PDF 正文与表格（PyMuPDF 抽取）；未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2304.14108",
+      "https://arxiv.org/pdf/2304.14108v5"
+    ],
+    "source_origin": "phase3_multimodal_alignment_cards",
+    "relation_pages": [
+      "multimodal/fields/alignment/README.md"
+    ]
+  },
+  "modality_tags": [
+    "image",
+    "text",
+    "multimodal"
+  ],
+  "task_tags": [
+    "understanding",
+    "evaluation"
+  ]
+}

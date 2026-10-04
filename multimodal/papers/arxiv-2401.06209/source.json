@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2401.06209",
+  "title": "Eyes Wide Shut? Exploring the Visual Shortcomings of Multimodal LLMs",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2401.06209",
+  "official_url": "https://arxiv.org/abs/2401.06209",
+  "official_fulltext_url": "https://arxiv.org/pdf/2401.06209v2",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Shengbang Tong",
+    "Zhuang Liu",
+    "Yuexiang Zhai",
+    "Yi Ma",
+    "Yann LeCun",
+    "Saining Xie"
+  ],
+  "year": 2024,
+  "topic_paths": [
+    "multimodal/alignment",
+    "multimodal/vlm",
+    "multimodal/visual-representation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "Abstract、Sec.1、Sec.2.1–2.2（CLIP 盲对与 MMVP 构造）、Fig.4、Sec.3 概览（9 类模式与缩放）、Sec.4 概览（A-MoF 与 I-MoF）",
+    "mechanism_summary": "CLIP-blind pair：CLIP 相似度 >0.95、DINOv2 <0.6；MMVP 150 对 300 题；人 95.7、Gemini 40.7、GPT-4V 38.7、随机 25、LLaVA-1.5 24.7；9 类模式中 7 类缩放解决不了；A-MoF 提升定位但损指令遵循，I-MoF 两者兼顾；论文正文未声明代码发布。",
+    "evidence_boundary": "数字取自 arXiv PDF 正文与表格（PyMuPDF 抽取）；未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2401.06209",
+      "https://arxiv.org/pdf/2401.06209v2"
+    ],
+    "source_origin": "phase3_multimodal_alignment_cards",
+    "relation_pages": [
+      "multimodal/fields/alignment/README.md"
+    ]
+  },
+  "modality_tags": [
+    "image",
+    "text",
+    "multimodal"
+  ],
+  "task_tags": [
+    "evaluation",
+    "analysis"
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2309.17080",
+  "title": "GAIA-1: A Generative World Model for Autonomous Driving",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2309.17080",
+  "official_url": "https://arxiv.org/abs/2309.17080",
+  "official_fulltext_url": "https://arxiv.org/pdf/2309.17080v1",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Anthony Hu",
+    "Lloyd Russell",
+    "Hudson Yeo",
+    "Zak Murez",
+    "George Fedoseev",
+    "Alex Kendall",
+    "Jamie Shotton",
+    "Gianluca Corrado"
+  ],
+  "year": 2023,
+  "topic_paths": [
+    "multimodal/world-models",
+    "multimodal/generation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "v1 PDF（技术报告）：摘要、§1、§2（图像分词器、世界模型、视频扩散解码器）、§3 数据、§4 训练设置、§5.1 采样、§6 规模定律、§7 定性能力、结论与局限",
+    "mechanism_summary": "Wayve；视频、文本、动作都映射成离散 token，用 6.5B 自回归 Transformer 预测下一个图像 token，再由 2.6B 视频扩散解码器还原像素；0.3B 图像分词器下采样 16 倍，并回归 DINO 特征让 token 更偏语义；训练数据为伦敦 4700 小时、25Hz 自有驾驶数据；世界模型在 6.25Hz、4 秒片段上训练；用参数 0.65M–650M 的小模型拟合幂律，预测了最终交叉熵；argmax 采样会陷入重复循环，直接按 logits 采样会取到尾部 token 使模型分布外，因此用 top-k；可用动作把自车开出车道、用文本改天气等，生成训练数据之外的场景；局限：自回归生成不是实时。评测以定性示例与验证集交叉熵为主。",
+    "evidence_boundary": "只写原文明确写出的内容；未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2309.17080",
+      "https://arxiv.org/pdf/2309.17080v1"
+    ],
+    "source_origin": "phase3_multimodal_world_models_field_page",
+    "field_pages": [
+      "multimodal/fields/world-models/README.md"
+    ]
+  },
+  "modality_tags": [
+    "video",
+    "action",
+    "multimodal"
+  ],
+  "task_tags": [
+    "generation"
+  ]
+}

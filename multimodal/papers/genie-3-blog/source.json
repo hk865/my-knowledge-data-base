@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "resource_id": "url:https://deepmind.google/discover/blog/genie-3-a-new-frontier-for-world-models/",
+  "title": "Genie 3: A new frontier for world models",
+  "resource_kind": "official_blog",
+  "canonical_folder": "multimodal/papers/genie-3-blog",
+  "official_url": "https://deepmind.google/discover/blog/genie-3-a-new-frontier-for-world-models/",
+  "official_fulltext_url": "https://deepmind.google/discover/blog/genie-3-a-new-frontier-for-world-models/",
+  "read_version": null,
+  "version_status": "not_pinned_official_page",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Jack Parker-Holder",
+    "Shlomi Fruchter"
+  ],
+  "year": 2025,
+  "topic_paths": [
+    "multimodal/world-models",
+    "multimodal/generation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "Google DeepMind 官方博客全文（2025-08-05），含实时交互、长时一致、可提示的世界事件、SIMA、Limitations 与致谢",
+    "mechanism_summary": "文本提示生成可实时导航的世界，720p、24 帧/秒，数分钟内基本保持一致，视觉记忆可回溯约一分钟；每帧自回归生成时要参考随时间增长的轨迹，回到一分钟前的位置需要取回当时信息，并在每秒内完成多次；作者写明自回归生成环境比一次生成整段视频更难，误差会累积；一致性是涌现的，不依赖 NeRF、高斯泼溅这类显式 3D 表示；可提示的世界事件：交互中用文字改天气、加入物体与角色；SIMA 智能体在其中执行目标，Genie 3 不知道目标；把 Veo 2、Veo 3 与 Genie 1、2 并列为世界模拟的不同能力；局限：智能体能直接执行的动作有限、多智能体交互难、真实地点地理不准、清晰文字通常只在描述里写明时才出现、连续交互只支撑几分钟；以有限研究预览方式提供；未写结构细节、参数量与数据。",
+    "evidence_boundary": "只写原文明确写出的内容；未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://deepmind.google/discover/blog/genie-3-a-new-frontier-for-world-models/"
+    ],
+    "source_origin": "phase3_multimodal_world_models_field_page",
+    "field_pages": [
+      "multimodal/fields/world-models/README.md"
+    ]
+  },
+  "modality_tags": [
+    "video",
+    "action",
+    "text"
+  ],
+  "task_tags": [
+    "generation"
+  ]
+}

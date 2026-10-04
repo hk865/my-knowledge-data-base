@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2404.08471",
+  "title": "Revisiting Feature Prediction for Learning Visual Representations from Video",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2404.08471",
+  "official_url": "https://arxiv.org/abs/2404.08471",
+  "official_fulltext_url": "https://arxiv.org/pdf/2404.08471v1",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了Abstract、Sec.1、Sec.3（目标、multi-block 遮蔽、2 帧×16×16 块）、Sec.4（Table 3 注意力探针、Table 4 遮蔽策略）、Sec.5（Table 5–7，与像素预测和图像模型比较）、Sec.7；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Adrien Bardes",
+    "Quentin Garrido",
+    "Jean Ponce",
+    "Xinlei Chen",
+    "Michael Rabbat",
+    "Yann LeCun",
+    "Mahmoud Assran",
+    "Nicolas Ballas"
+  ],
+  "year": 2024,
+  "topic_paths": [
+    "multimodal/video-temporal",
+    "multimodal/visual-representation",
+    "multimodal/world-models"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v1 PDF 选段：Abstract、Sec.1、Sec.3（目标、multi-block 遮蔽、2 帧×16×16 块）、Sec.4（Table 3 注意力探针、Table 4 遮蔽策略）、Sec.5（Table 5–7，与像素预测和图像模型比较）、Sec.7",
+    "mechanism_summary": "特征空间预测 + EMA 目标编码器 + L1；multi-block 遮蔽约 90%；VideoMix2M 约 200 万段；冻结注意力探针 K400/SSv2/IN1K：V-JEPA H/16 82.0/71.4/75.9，DINOv2 g/14 83.4/50.6/86.2，OpenCLIP 81.8/34.8/85.3，VideoMAE H/16 79.8/66.2/72.3；注意力探针比平均池化 K400 +17、SSv2 +16.1；作者推测视频数据缺少多样性。",
+    "evidence_boundary": "未复现实验；数字取自论文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2404.08471",
+      "https://arxiv.org/pdf/2404.08471v1"
+    ],
+    "source_origin": "phase3_video_temporal_cards",
+    "relation_pages": [
+      "multimodal/fields/video-temporal/README.md"
+    ]
+  },
+  "modality_tags": [
+    "video",
+    "image"
+  ],
+  "task_tags": [
+    "understanding"
+  ]
+}

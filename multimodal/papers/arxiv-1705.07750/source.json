@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:1705.07750",
+  "title": "Quo Vadis, Action Recognition? A New Model and the Kinetics Dataset",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-1705.07750",
+  "official_url": "https://arxiv.org/abs/1705.07750",
+  "official_fulltext_url": "https://arxiv.org/pdf/1705.07750v3",
+  "read_version": "v3",
+  "version_status": "checked_v3",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了Abstract、Sec.1、Sec.2.3–2.4（双流与膨胀、boring-video 不动点）、Sec.3（Kinetics）、Sec.4（Table 2–3）、Sec.5（Table 4–5）、Sec.6；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "João Carreira",
+    "Andrew Zisserman"
+  ],
+  "year": 2017,
+  "topic_paths": [
+    "multimodal/video-temporal"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v3 PDF 选段：Abstract、Sec.1、Sec.2.3–2.4（双流与膨胀、boring-video 不动点）、Sec.3（Kinetics）、Sec.4（Table 2–3）、Sec.5（Table 4–5）、Sec.6",
+    "mechanism_summary": "2D→3D 膨胀（权重复制并除以 N）；64 帧训练；Kinetics 400 类约 24 万训练段；Kinetics 测试 I3D RGB 71.1 / Flow 63.4 / 双流 74.2（ImageNet 初始化）；逐帧平均基线 RGB 62.2；UCF-101 98.0、HMDB-51 80.9；Sec.4 自述光流在 Kinetics 上贡献低于 RGB，归因相机运动。",
+    "evidence_boundary": "未复现实验；数字取自论文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/1705.07750",
+      "https://arxiv.org/pdf/1705.07750v3"
+    ],
+    "source_origin": "phase3_video_temporal_cards",
+    "relation_pages": [
+      "multimodal/fields/video-temporal/README.md"
+    ]
+  },
+  "modality_tags": [
+    "video"
+  ],
+  "task_tags": [
+    "understanding"
+  ]
+}

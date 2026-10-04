@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2305.10355",
+  "title": "Evaluating Object Hallucination in Large Vision-Language Models",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2305.10355",
+  "official_url": "https://arxiv.org/abs/2305.10355",
+  "official_fulltext_url": "https://arxiv.org/pdf/2305.10355v3",
+  "read_version": "v3",
+  "version_status": "checked_v3",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Yifan Li",
+    "Yifan Du",
+    "Kun Zhou",
+    "Jinpeng Wang",
+    "Wayne Xin Zhao",
+    "Ji-Rong Wen"
+  ],
+  "year": 2023,
+  "topic_paths": [
+    "multimodal/vlm"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "Abstract、Sec.1、Sec.3（CHAIR 结果）、Sec.5（POPE 定义、Table 3 结果）、Limitations",
+    "mechanism_summary": "是非题轮询；正负 1:1；random/popular/adversarial 三种负采样；每图 6 题、500 张 COCO 图；LLaVA、MultiModal-GPT、mPLUG-Owl 的\"是\"比例约 95%–100%；InstructBLIP random F1 89.29；CHAIRs 上 LLaVA 32.7 对 OSCAR-base 13.0；代码在 GitHub RUCAIBox/POPE（arXiv 页）。",
+    "evidence_boundary": "数字取自 arXiv PDF 抽取的原文；公司模型只写官方报告明写的内容；未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2305.10355",
+      "https://arxiv.org/pdf/2305.10355v3"
+    ],
+    "source_origin": "phase3_multimodal_vlm_cards",
+    "relation_pages": [
+      "multimodal/fields/vlm/README.md"
+    ]
+  },
+  "modality_tags": [
+    "image",
+    "text",
+    "multimodal"
+  ],
+  "task_tags": [
+    "evaluation"
+  ]
+}

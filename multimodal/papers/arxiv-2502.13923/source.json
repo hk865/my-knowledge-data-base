@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2502.13923",
+  "title": "Qwen2.5-VL Technical Report",
+  "resource_kind": "official_technical_report",
+  "canonical_folder": "multimodal/papers/arxiv-2502.13923",
+  "official_url": "https://arxiv.org/abs/2502.13923",
+  "official_fulltext_url": "https://arxiv.org/pdf/2502.13923v1",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Shuai Bai",
+    "Keqin Chen",
+    "Xuejing Liu",
+    "Jialin Wang",
+    "Wenbin Ge",
+    "Sibo Song",
+    "Kai Dang",
+    "Peng Wang",
+    "Shijie Wang",
+    "Jun Tang",
+    "等 27 位作者"
+  ],
+  "year": 2025,
+  "topic_paths": [
+    "multimodal/vlm",
+    "multimodal/video-temporal"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "Abstract、Sec.1、Sec.2.1（ViT、动态分辨率与帧率、时间对齐 M-RoPE）、Sec.2.2（数据、Table 2 训练阶段）、Sec.2.3（SFT、拒绝采样、DPO）",
+    "mechanism_summary": "ViT 32 层、全局注意力层 {7,15,23,31}，其余窗口 112×112；从零训练（DataComp 与内部数据）；2×2 合并 + 两层 MLP；绝对像素坐标；M-RoPE 对齐绝对时间；4.1T token（1.5T/2T/0.6T）；SFT + DPO 冻 ViT；CoT 拒绝采样与视觉步骤过滤，自述模态对齐仍是挑战。",
+    "evidence_boundary": "数字取自 arXiv PDF 抽取的原文；公司模型只写官方报告明写的内容；未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2502.13923",
+      "https://arxiv.org/pdf/2502.13923v1"
+    ],
+    "source_origin": "phase3_multimodal_vlm_cards",
+    "relation_pages": [
+      "multimodal/fields/vlm/README.md"
+    ]
+  },
+  "modality_tags": [
+    "image",
+    "video",
+    "text",
+    "multimodal"
+  ],
+  "task_tags": [
+    "understanding",
+    "decision"
+  ]
+}

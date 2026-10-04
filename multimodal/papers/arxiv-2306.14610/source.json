@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2306.14610",
+  "title": "SugarCrepe: Fixing Hackable Benchmarks for Vision-Language Compositionality",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2306.14610",
+  "official_url": "https://arxiv.org/abs/2306.14610",
+  "official_fulltext_url": "https://arxiv.org/pdf/2306.14610v1",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Cheng-Yu Hsieh",
+    "Jieyu Zhang",
+    "Zixian Ma",
+    "Aniruddha Kembhavi",
+    "Ranjay Krishna"
+  ],
+  "year": 2023,
+  "topic_paths": [
+    "multimodal/alignment",
+    "cross-domain/evaluation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "Abstract、Sec.1、Sec.3（盲模型与两类偏差）、Sec.4（构造方法）概览、对 NegCLIP 的重新评估结论",
+    "mechanism_summary": "现有组合性考题负样本不合理、不通顺；Vera 与语法模型等盲模型胜过 CLIP；用 ChatGPT 生成负样本 + 对抗式精炼；NegCLIP 类方法提升被高估；评测 17 个预训练 CLIP；代码与数据开放。",
+    "evidence_boundary": "数字取自 arXiv PDF 正文与表格（PyMuPDF 抽取）；未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2306.14610",
+      "https://arxiv.org/pdf/2306.14610v1"
+    ],
+    "source_origin": "phase3_multimodal_alignment_cards",
+    "relation_pages": [
+      "multimodal/fields/alignment/README.md"
+    ]
+  },
+  "modality_tags": [
+    "image",
+    "text",
+    "multimodal"
+  ],
+  "task_tags": [
+    "evaluation"
+  ]
+}

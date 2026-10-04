@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2406.03520",
+  "title": "VideoPhy: Evaluating Physical Commonsense for Video Generation",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2406.03520",
+  "official_url": "https://arxiv.org/abs/2406.03520",
+  "official_fulltext_url": "https://arxiv.org/pdf/2406.03520v2",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Hritik Bansal",
+    "Zongyu Lin",
+    "Tianyi Xie",
+    "Zeshun Zong",
+    "Michal Yarom",
+    "Yonatan Bitton",
+    "Chenfanfu Jiang",
+    "Yizhou Sun",
+    "Kai-Wei Chang",
+    "Aditya Grover"
+  ],
+  "year": 2024,
+  "topic_paths": [
+    "multimodal/world-models",
+    "multimodal/generation",
+    "cross-domain/evaluation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "v2 PDF：摘要、§1、数据构建（688 条描述）、评测相关工作（FVD 的局限）、人工评测结果与失败模式、Limitations",
+    "mechanism_summary": "UCLA、Google Research；688 条经人工核验的文本描述，按固体—固体、固体—流体、流体—流体三类材料交互组织；人工评测语义遵循与物理常识两项，两项同时满足的比例最好的是 CogVideoX-5B，39.6%；固体—固体交互（球落地弹起、锤子敲钉）最差；常见失败：认不清物体与材料性质（刚体随时间变形）、质量守恒与牛顿定律被违反；提出自动评估器 VideoCon-Physics；指出 FVD 需要参考视频、偏向画质、检测不出不现实的运动；局限：只覆盖部分物理分支，评测者主要来自美国和加拿大。",
+    "evidence_boundary": "只写原文明确写出的内容；未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2406.03520",
+      "https://arxiv.org/pdf/2406.03520v2"
+    ],
+    "source_origin": "phase3_multimodal_world_models_field_page",
+    "field_pages": [
+      "multimodal/fields/world-models/README.md"
+    ]
+  },
+  "modality_tags": [
+    "video",
+    "text"
+  ],
+  "task_tags": [
+    "generation",
+    "evaluation"
+  ]
+}

@@ -133,7 +133,7 @@ benchmark 的替换就是目标的迁移：2022–2023 年在 Google 自家机�
 
 ## 阅读顺序
 
-1. [CLIP](../../../multimodal/papers/clip/README.md) → [LLaVA](../../../multimodal/papers/llava/README.md) → [DINO](../../../multimodal/papers/dino/README.md)：先弄清 VLM 的视觉输入从哪来（图文对比、自监督两条路线）、怎样接进语言模型；这三篇正是 OpenVLA 视觉骨干的两条来源和它的投影接口。
+1. [CLIP](../../../multimodal/papers/clip/README.md) → [LLaVA](../../../multimodal/papers/llava/README.md) → [DINO](../../../multimodal/papers/dino/README.md)：先弄清 VLM 的视觉输入从哪来（图文对比、自监督两条路线）、怎样接进语言模型；这三篇正是 OpenVLA 视觉骨干的两条来源和它的投影接口。VLM 本身怎样从 Flamingo、BLIP-2 走到 Qwen-VL、InternVL，以及幻觉、分辨率、"不看图也能答"这些坑，见[视觉语言模型方向页](../../../multimodal/fields/vlm/README.md)。
 2. [OpenVLA 精读](../../papers/openvla/reading.md)：离散 token 基线的全部细节，配合 [RT-2](../../papers/arxiv-2307.15818/README.md) 看它继承了什么。
 3. [VLA 逐步讲义](../vla.md)与 [π0](../../papers/arxiv-2410.24164/README.md)：连续动作块与 flow matching 怎样训练、怎样调度；讲义以 π0.5 为例。
 4. [FAST](../../papers/arxiv-2501.09747/README.md) 与 [OpenVLA-OFT](../../papers/arxiv-2502.19645/README.md)：从两个方向修补离散 token 路线，对照着读，看清"慢"和"学不动"各自的原因。

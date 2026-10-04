@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2405.12399",
+  "title": "Diffusion for World Modeling: Visual Details Matter in Atari",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2405.12399",
+  "official_url": "https://arxiv.org/abs/2405.12399",
+  "official_fulltext_url": "https://arxiv.org/pdf/2405.12399v2",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Eloi Alonso",
+    "Adam Jelley",
+    "Vincent Micheli",
+    "Anssi Kanervisto",
+    "Amos Storkey",
+    "Tim Pearce",
+    "François Fleuret"
+  ],
+  "year": 2024,
+  "topic_paths": [
+    "multimodal/world-models",
+    "multimodal/generation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "v2 PDF（NeurIPS 2024）：摘要、§1、§3（EDM 形式的扩散世界模型）、§4 Atari 100k 结果、§5（DDPM 与 EDM 对比、单步与多步去噪、与 IRIS 的视觉一致性对比）、CS:GO 一节、Limitations",
+    "mechanism_summary": "Geneva、Edinburgh、Microsoft Research；指出 DreamerV2/V3、IRIS 等把环境压成离散潜变量会丢掉对决策重要的视觉细节（远处的红绿灯、行人），改用扩散模型以过去帧（帧堆叠）和动作为条件生成下一帧，智能体完全在其中训练；Atari 100k 平均人类归一化分 1.46，为当时完全在世界模型内训练的智能体最好，在 Asterix、Breakout、Road Runner 这类小细节重要的游戏上尤其好；IRIS 生成的轨迹中敌人与奖励来回互换、Breakout 的砖块与分数前后不一致，DIAMOND 没有，分数能按规则正确加 7；DDPM 在少步去噪时快速累积误差漂出分布，EDM 一步也稳定，因多峰而取 3 步；CS:GO（87 小时人类录像、381M 参数、RTX 3090 上 10Hz）可交互，但靠近墙或视野丢失时会忘记当前状态并生成新武器或新区域，会错误地允许空中连跳，作者预期规模能修复多数问题、记忆除外；局限：只测离散控制，帧堆叠记忆短，奖励与终止预测未并入扩散模型；代码、智能体与可玩世界模型开放。",
+    "evidence_boundary": "只写原文明确写出的内容；未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2405.12399",
+      "https://arxiv.org/pdf/2405.12399v2"
+    ],
+    "source_origin": "phase3_multimodal_world_models_field_page",
+    "field_pages": [
+      "multimodal/fields/world-models/README.md"
+    ]
+  },
+  "modality_tags": [
+    "video",
+    "action"
+  ],
+  "task_tags": [
+    "generation",
+    "decision"
+  ]
+}

@@ -129,7 +129,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [The Llama 3 Herd of Models](paper-catalog.md#p319)
 - [Tulu 3: Pushing Frontiers in Open Language Model Post-Training](paper-catalog.md#p322)
 
-### 后训练 强化学习（26）
+### 后训练 强化学习（28）
 
 细分：策略优化算法；结果与过程奖励；轨迹采样与数据回流；奖励与验证器；长轨迹信用分配；探索与轨迹分布
 
@@ -159,6 +159,8 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [The Entropy Mechanism of Reinforcement Learning for Reasoning Language Models](paper-catalog.md#p333)
 - [DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models](paper-catalog.md#p334)
 - [Learning to reason with LLMs](paper-catalog.md#p336)
+- [Kimi-VL Technical Report](paper-catalog.md#p390)
+- [Qwen3-VL Technical Report](paper-catalog.md#p392)
 
 ### 架构与效率（39）
 
@@ -249,33 +251,86 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 ## 多模态与世界表征
 
-### 视觉表征（3）
+### 视觉表征（10）
 
 细分：视觉编码器；局部与全局表征；自监督视觉学习
 
 - [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](paper-catalog.md#p130)
 - [Masked Autoencoders Are Scalable Vision Learners](paper-catalog.md#p131)
 - [Emerging Properties in Self-Supervised Vision Transformers](paper-catalog.md#p133)
+- [Scaling Up Visual and Vision-Language Representation Learning With Noisy Text Supervision](paper-catalog.md#p337)
+- [Sigmoid Loss for Language Image Pre-Training](paper-catalog.md#p340)
+- [SigLIP 2: Multilingual Vision-Language Encoders with Improved Semantic Understanding, Localization, and Dense Features](paper-catalog.md#p341)
+- [Eyes Wide Shut? Exploring the Visual Shortcomings of Multimodal LLMs](paper-catalog.md#p351)
+- [VideoMAE: Masked Autoencoders are Data-Efficient Learners for Self-Supervised Video Pre-Training](paper-catalog.md#p358)
+- [Revisiting Feature Prediction for Learning Visual Representations from Video](paper-catalog.md#p361)
+- [Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs](paper-catalog.md#p384)
 
-### 图文对齐（2）
+### 图文对齐（19）
 
 细分：联合嵌入与检索；对比学习；跨模态迁移
 
 - [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](paper-catalog.md#p130)
 - [Learning Transferable Visual Models From Natural Language Supervision](paper-catalog.md#p132)
+- [Scaling Up Visual and Vision-Language Representation Learning With Noisy Text Supervision](paper-catalog.md#p337)
+- [LiT: Zero-Shot Transfer with Locked-image text Tuning](paper-catalog.md#p338)
+- [Reproducible scaling laws for contrastive language-image learning](paper-catalog.md#p339)
+- [Sigmoid Loss for Language Image Pre-Training](paper-catalog.md#p340)
+- [SigLIP 2: Multilingual Vision-Language Encoders with Improved Semantic Understanding, Localization, and Dense Features](paper-catalog.md#p341)
+- [EVA-CLIP: Improved Training Techniques for CLIP at Scale](paper-catalog.md#p342)
+- [CoCa: Contrastive Captioners are Image-Text Foundation Models](paper-catalog.md#p343)
+- [BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation](paper-catalog.md#p344)
+- [LAION-5B: An open large-scale dataset for training next generation image-text models](paper-catalog.md#p345)
+- [DataComp: In search of the next generation of multimodal datasets](paper-catalog.md#p346)
+- [Demystifying CLIP Data](paper-catalog.md#p347)
+- [Winoground: Probing Vision and Language Models for Visio-Linguistic Compositionality](paper-catalog.md#p348)
+- [When and why vision-language models behave like bags-of-words, and what to do about it?](paper-catalog.md#p349)
+- [SugarCrepe: Fixing Hackable Benchmarks for Vision-Language Compositionality](paper-catalog.md#p350)
+- [Eyes Wide Shut? Exploring the Visual Shortcomings of Multimodal LLMs](paper-catalog.md#p351)
+- [Revealing Single Frame Bias for Video-and-Language Learning](paper-catalog.md#p359)
+- [InternVideo2: Scaling Foundation Models for Multimodal Video Understanding](paper-catalog.md#p362)
 
-### 视觉语言模型（2）
+### 视觉语言模型（32）
 
 细分：连接器与融合；多模态指令学习；空间与推理能力
 
 - [Visual Instruction Tuning](paper-catalog.md#p120)
 - [Learning Transferable Visual Models From Natural Language Supervision](paper-catalog.md#p132)
+- [Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context](paper-catalog.md#p313)
+- [SigLIP 2: Multilingual Vision-Language Encoders with Improved Semantic Understanding, Localization, and Dense Features](paper-catalog.md#p341)
+- [CoCa: Contrastive Captioners are Image-Text Foundation Models](paper-catalog.md#p343)
+- [BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation](paper-catalog.md#p344)
+- [Winoground: Probing Vision and Language Models for Visio-Linguistic Compositionality](paper-catalog.md#p348)
+- [Eyes Wide Shut? Exploring the Visual Shortcomings of Multimodal LLMs](paper-catalog.md#p351)
+- [Video-LLaVA: Learning United Visual Representation by Alignment Before Projection](paper-catalog.md#p363)
+- [LLaVA-Video: Video Instruction Tuning With Synthetic Data](paper-catalog.md#p364)
+- [Video-MME: The First-Ever Comprehensive Evaluation Benchmark of Multi-modal LLMs in Video Analysis](paper-catalog.md#p365)
+- [Flamingo: a Visual Language Model for Few-Shot Learning](paper-catalog.md#p372)
+- [PaLI: A Jointly-Scaled Multilingual Language-Image Model](paper-catalog.md#p373)
+- [BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models](paper-catalog.md#p374)
+- [Improved Baselines with Visual Instruction Tuning](paper-catalog.md#p375)
+- [Evaluating Object Hallucination in Large Vision-Language Models](paper-catalog.md#p376)
+- [Qwen-VL: A Versatile Vision-Language Model for Understanding, Localization, Text Reading, and Beyond](paper-catalog.md#p377)
+- [InternVL: Scaling up Vision Foundation Models and Aligning for Generic Visual-Linguistic Tasks](paper-catalog.md#p378)
+- [Gemini: A Family of Highly Capable Multimodal Models](paper-catalog.md#p379)
+- [DeepSeek-VL: Towards Real-World Vision-Language Understanding](paper-catalog.md#p380)
+- [Are We on the Right Way for Evaluating Large Vision-Language Models?](paper-catalog.md#p381)
+- [How Far Are We to GPT-4V? Closing the Gap to Commercial Multimodal Models with Open-Source Suites](paper-catalog.md#p382)
+- [Chameleon: Mixed-Modal Early-Fusion Foundation Models](paper-catalog.md#p383)
+- [Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs](paper-catalog.md#p384)
+- [Qwen2-VL: Enhancing Vision-Language Model's Perception of the World at Any Resolution](paper-catalog.md#p385)
+- [Molmo and PixMo: Open Weights and Open Data for State-of-the-Art Vision-Language Models](paper-catalog.md#p386)
+- [Expanding Performance Boundaries of Open-Source Multimodal Models with Model, Data, and Test-Time Scaling](paper-catalog.md#p387)
+- [DeepSeek-VL2: Mixture-of-Experts Vision-Language Models for Advanced Multimodal Understanding](paper-catalog.md#p388)
+- [Qwen2.5-VL Technical Report](paper-catalog.md#p389)
+- [Kimi-VL Technical Report](paper-catalog.md#p390)
+- [InternVL3: Exploring Advanced Training and Test-Time Recipes for Open-Source Multimodal Models](paper-catalog.md#p391)
+- [Qwen3-VL Technical Report](paper-catalog.md#p392)
 
-### 视觉生成（13）
+### 视觉生成（22）
 
 细分：图像生成；视频生成；扩散与 Flow；理解与生成的联合学习
 
-- [Visual Instruction Tuning](paper-catalog.md#p120)
 - [Denoising Diffusion Probabilistic Models](paper-catalog.md#p121)
 - [Video Diffusion Models](paper-catalog.md#p122)
 - [Imagen Video: High Definition Video Generation with Diffusion Models](paper-catalog.md#p190)
@@ -288,11 +343,24 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Seedance 2.0: Advancing Video Generation for World Complexity](paper-catalog.md#p197)
 - [Video generation models as world simulators](paper-catalog.md#p198)
 - [Veo: a text-to-video generation system](paper-catalog.md#p199)
+- [LAION-5B: An open large-scale dataset for training next generation image-text models](paper-catalog.md#p345)
+- [Diffusion Models Are Real-Time Game Engines](paper-catalog.md#p366)
+- [GAIA-1: A Generative World Model for Autonomous Driving](paper-catalog.md#p367)
+- [Do generative video models understand physical principles?](paper-catalog.md#p368)
+- [How Far is Video Generation from World Model: A Physical Law Perspective](paper-catalog.md#p369)
+- [VideoPhy: Evaluating Physical Commonsense for Video Generation](paper-catalog.md#p370)
+- [Diffusion for World Modeling: Visual Details Matter in Atari](paper-catalog.md#p371)
+- [Chameleon: Mixed-Modal Early-Fusion Foundation Models](paper-catalog.md#p383)
+- [Genie 2: A large-scale foundation world model](paper-catalog.md#p393)
+- [Genie 3: A new frontier for world models](paper-catalog.md#p394)
 
-### 视频与时序表征（9）
+### 视频与时序表征（29）
 
 细分：时序对应与记忆；动作条件视频；预测与时间一致性
 
+- [SlotFormer: Unsupervised Visual Dynamics Simulation with Object-Centric Models](paper-catalog.md#p042)
+- [SAVi++: Towards End-to-End Object-Centric Learning from Real-World Videos](paper-catalog.md#p043)
+- [Back to the Features: DINO as a Foundation for Video World Models](paper-catalog.md#p047)
 - [Video Diffusion Models](paper-catalog.md#p122)
 - [Imagen Video: High Definition Video Generation with Diffusion Models](paper-catalog.md#p190)
 - [HunyuanVideo: A Systematic Framework For Large Video Generative Models](paper-catalog.md#p192)
@@ -302,8 +370,25 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Seedance 2.0: Advancing Video Generation for World Complexity](paper-catalog.md#p197)
 - [Video generation models as world simulators](paper-catalog.md#p198)
 - [Veo: a text-to-video generation system](paper-catalog.md#p199)
+- [Two-Stream Convolutional Networks for Action Recognition in Videos](paper-catalog.md#p352)
+- [Quo Vadis, Action Recognition? A New Model and the Kinetics Dataset](paper-catalog.md#p353)
+- [The "something something" video database for learning and evaluating visual common sense](paper-catalog.md#p354)
+- [SlowFast Networks for Video Recognition](paper-catalog.md#p355)
+- [Is Space-Time Attention All You Need for Video Understanding?](paper-catalog.md#p356)
+- [ViViT: A Video Vision Transformer](paper-catalog.md#p357)
+- [VideoMAE: Masked Autoencoders are Data-Efficient Learners for Self-Supervised Video Pre-Training](paper-catalog.md#p358)
+- [Revealing Single Frame Bias for Video-and-Language Learning](paper-catalog.md#p359)
+- [EgoSchema: A Diagnostic Benchmark for Very Long-form Video Language Understanding](paper-catalog.md#p360)
+- [Revisiting Feature Prediction for Learning Visual Representations from Video](paper-catalog.md#p361)
+- [InternVideo2: Scaling Foundation Models for Multimodal Video Understanding](paper-catalog.md#p362)
+- [Video-LLaVA: Learning United Visual Representation by Alignment Before Projection](paper-catalog.md#p363)
+- [LLaVA-Video: Video Instruction Tuning With Synthetic Data](paper-catalog.md#p364)
+- [Video-MME: The First-Ever Comprehensive Evaluation Benchmark of Multi-modal LLMs in Video Analysis](paper-catalog.md#p365)
+- [Qwen2-VL: Enhancing Vision-Language Model's Perception of the World at Any Resolution](paper-catalog.md#p385)
+- [Qwen2.5-VL Technical Report](paper-catalog.md#p389)
+- [Qwen3-VL Technical Report](paper-catalog.md#p392)
 
-### 世界模型（39）
+### 世界模型（48）
 
 细分：预测与潜在动力学；结构化与可干预表征；行动条件与规划；几何与物理约束
 
@@ -346,13 +431,23 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Genie Envisioner: A Unified World Foundation Platform for Robotic Manipulation](paper-catalog.md#p258)
 - [Ctrl-World: A Controllable Generative World Model for Robot Manipulation](paper-catalog.md#p262)
 - [Evaluating Gemini Robotics Policies in a Veo World Simulator](paper-catalog.md#p266)
+- [Revisiting Feature Prediction for Learning Visual Representations from Video](paper-catalog.md#p361)
+- [Diffusion Models Are Real-Time Game Engines](paper-catalog.md#p366)
+- [GAIA-1: A Generative World Model for Autonomous Driving](paper-catalog.md#p367)
+- [Do generative video models understand physical principles?](paper-catalog.md#p368)
+- [How Far is Video Generation from World Model: A Physical Law Perspective](paper-catalog.md#p369)
+- [VideoPhy: Evaluating Physical Commonsense for Video Generation](paper-catalog.md#p370)
+- [Diffusion for World Modeling: Visual Details Matter in Atari](paper-catalog.md#p371)
+- [Genie 2: A large-scale foundation world model](paper-catalog.md#p393)
+- [Genie 3: A new frontier for world models](paper-catalog.md#p394)
 
 ## 机器人与具身系统
 
-### 感知与传感融合（21）
+### 感知与传感融合（22）
 
 细分：视觉 深度 LiDAR；惯性与多传感器融合；传统 学习与混合方法
 
+- [A High-Fidelity Digital Twin for Robotic Manipulation Based on 3D Gaussian Splatting](paper-catalog.md#p054)
 - [SemanticFusion: Dense 3D Semantic Mapping with Convolutional Neural Networks](paper-catalog.md#p080)
 - [PanopticFusion: Online Volumetric Semantic Mapping at the Level of Stuff and Things](paper-catalog.md#p081)
 - [Dense RGB-D Semantic Mapping with Pixel-Voxel Neural Network](paper-catalog.md#p108)
@@ -375,10 +470,11 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [FM-Fusion: Instance-aware Semantic Mapping Boosted by Vision-Language Foundation Models](paper-catalog.md#p244)
 - [Depth Anything V2](paper-catalog.md#p245)
 
-### 定位与建图（34）
+### 定位与建图（35）
 
 细分：里程计与状态估计；SLAM 与地图
 
+- [Language-Grounded Hierarchical Planning and Execution with Multi-Robot 3D Scene Graphs](paper-catalog.md#p055)
 - [SemanticFusion: Dense 3D Semantic Mapping with Convolutional Neural Networks](paper-catalog.md#p080)
 - [PanopticFusion: Online Volumetric Semantic Mapping at the Level of Stuff and Things](paper-catalog.md#p081)
 - [DS-VIO: Robust and Efficient Stereo Visual Inertial Odometry based on Dual Stage EKF](paper-catalog.md#p082)
@@ -414,10 +510,13 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [OpenVINS: A Research Platform for Visual-Inertial Estimation](paper-catalog.md#p270)
 - [Parallel Tracking and Mapping for Small AR Workspaces](paper-catalog.md#p271)
 
-### 导航与规划（16）
+### 导航与规划（19）
 
 细分：几何与运动规划；视觉语言导航；VLA 与 VLN 的任务边界
 
+- [OccWorld: Learning a 3D Occupancy World Model for Autonomous Driving](paper-catalog.md#p044)
+- [Driving in the Occupancy World: Vision-Centric 4D Occupancy Forecasting and Planning via World Models for Autonomous Driving](paper-catalog.md#p045)
+- [A Survey of World Models for Autonomous Driving](paper-catalog.md#p051)
 - [Vision-and-Language Navigation: Interpreting visually-grounded navigation instructions in real environments](paper-catalog.md#p119)
 - [Dynamic Locomotion in the MIT Cheetah 3 Through Convex Model-Predictive Control](paper-catalog.md#p124)
 - [Sampling-based Algorithms for Optimal Motion Planning](paper-catalog.md#p126)
@@ -436,10 +535,11 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [ABot-N1: Toward a General Visual Language Navigation Foundation Model](paper-catalog.md#p268)
 
 
-### 运动控制（53）
+### 运动控制（54）
 
 细分：经典与最优控制；腿足策略与适应；sim to real；风险敏感策略与恢复控制；恢复控制与自主练习
 
+- [PIN-WM: Learning Physics-INformed World Models for Non-Prehensile Manipulation](paper-catalog.md#p062)
 - [GR00T N1: An Open Foundation Model for Generalist Humanoid Robots](paper-catalog.md#p075)
 - [CPG-RL: Learning Central Pattern Generators for Quadruped Locomotion](paper-catalog.md#p091)
 - [Learning Quadruped Locomotion using Bio-Inspired Neural Networks with Intrinsic Rhythmicity](paper-catalog.md#p092)
@@ -495,10 +595,16 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [OmniH2O: Universal and Dexterous Human-to-Humanoid Whole-Body Teleoperation and Learning](paper-catalog.md#p277)
 
 
-### 具身策略与 VLA（44）
+### 具身策略与 VLA（51）
 
 细分：动作表示与生成；跨本体与数据；模型 规划与控制接口；模仿学习；机器人强化学习
 
+- [FOCUS: Object-Centric World Models for Robotics Manipulation](paper-catalog.md#p048)
+- [LaDi-WM: A Latent Diffusion-based World Model for Predictive Manipulation](paper-catalog.md#p049)
+- [Object-Centric World Model for Language-Guided Manipulation](paper-catalog.md#p052)
+- [EVA: Aligning Video World Models with Executable Robot Actions via Inverse Dynamics Rewards](paper-catalog.md#p056)
+- [Hydra-0: Action Flow for Generalist World Modeling and Control](paper-catalog.md#p057)
+- [UniVLA: Learning to Act Anywhere with Task-centric Latent Actions](paper-catalog.md#p058)
 - [Zero-WAM: In-Context World-Action Modeling from Human Videos for Open-Ended Task Generalization](paper-catalog.md#p061)
 - [RT-1: Robotics Transformer for Real-World Control at Scale](paper-catalog.md#p064)
 - [RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control](paper-catalog.md#p065)
@@ -520,6 +626,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [In-Context Imitation Learning via Next-Token Prediction](paper-catalog.md#p088)
 - [Behavior Prompting Policy: Demonstrations as Prompts for Manipulation](paper-catalog.md#p089)
 - [InternVLA-A1: Unifying Understanding, Generation and Action for Robotic Manipulation](paper-catalog.md#p090)
+- [Mastering Diverse Domains through World Models](paper-catalog.md#p117)
 - [Visual Instruction Tuning](paper-catalog.md#p120)
 - [Denoising Diffusion Probabilistic Models](paper-catalog.md#p121)
 - [Dynamic Locomotion in the MIT Cheetah 3 Through Convex Model-Predictive Control](paper-catalog.md#p124)
@@ -544,10 +651,11 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Evaluating Gemini Robotics Policies in a Veo World Simulator](paper-catalog.md#p266)
 - [OmniH2O: Universal and Dexterous Human-to-Humanoid Whole-Body Teleoperation and Learning](paper-catalog.md#p277)
 
-### 具身 Agents 与闭环系统（14）
+### 具身 Agents 与闭环系统（15）
 
 细分：任务理解与技能选择；行动记忆与空间记忆；规划—执行—反馈；技能获取与复用；VLA策略编排与部署
 
+- [Language-Grounded Hierarchical Planning and Execution with Multi-Robot 3D Scene Graphs](paper-catalog.md#p055)
 - [Zero-WAM: In-Context World-Action Modeling from Human Videos for Open-Ended Task Generalization](paper-catalog.md#p061)
 - [Do As I Can, Not As I Say: Grounding Language in Robotic Affordances](paper-catalog.md#p135)
 - [Explore, Execute, Evolve: A Skill Acquisition and Reuse Loop for Embodied Agents](paper-catalog.md#p136)
@@ -629,7 +737,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 细分：
 
 
-### 评估与监督可靠性（12）
+### 评估与监督可靠性（17）
 
 细分：性质测试、变形测试与行为验证边界
 
@@ -645,6 +753,11 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Metamorphic Testing of Multi-Agent LLM Systems: A Trace-Based Behavioral Oracle Framework](paper-catalog.md#p161)
 - [Lost in the Middle: How Language Models Use Long Contexts](paper-catalog.md#p299)
 - [RULER: What's the Real Context Size of Your Long-Context Language Models?](paper-catalog.md#p315)
+- [DataComp: In search of the next generation of multimodal datasets](paper-catalog.md#p346)
+- [SugarCrepe: Fixing Hackable Benchmarks for Vision-Language Compositionality](paper-catalog.md#p350)
+- [Do generative video models understand physical principles?](paper-catalog.md#p368)
+- [How Far is Video Generation from World Model: A Physical Law Perspective](paper-catalog.md#p369)
+- [VideoPhy: Evaluating Physical Commonsense for Video Generation](paper-catalog.md#p370)
 
 
 ### 知识蒸馏与模型压缩（7）
@@ -675,19 +788,19 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 | 模态 \ 任务 | understanding | generation | decision | evaluation | analysis |
 |---|---:|---:|---:|---:|---:|
-| text | [18](#x-text-understanding) | [110](#x-text-generation) | [55](#x-text-decision) | [15](#x-text-evaluation) | [35](#x-text-analysis) |
-| image | [59](#x-image-understanding) | [15](#x-image-generation) | [81](#x-image-decision) | [7](#x-image-evaluation) | [5](#x-image-analysis) |
-| video | [8](#x-video-understanding) | [30](#x-video-generation) | [19](#x-video-decision) | [5](#x-video-evaluation) | [2](#x-video-analysis) |
-| audio | [4](#x-audio-understanding) | [5](#x-audio-generation) | · | · | · |
-| action | [9](#x-action-understanding) | [27](#x-action-generation) | [125](#x-action-decision) | [9](#x-action-evaluation) | [2](#x-action-analysis) |
+| text | [55](#x-text-understanding) | [121](#x-text-generation) | [59](#x-text-decision) | [28](#x-text-evaluation) | [41](#x-text-analysis) |
+| image | [91](#x-image-understanding) | [25](#x-image-generation) | [85](#x-image-decision) | [15](#x-image-evaluation) | [10](#x-image-analysis) |
+| video | [31](#x-video-understanding) | [39](#x-video-generation) | [25](#x-video-decision) | [12](#x-video-evaluation) | [4](#x-video-analysis) |
+| audio | [7](#x-audio-understanding) | [6](#x-audio-generation) | · | [1](#x-audio-evaluation) | · |
+| action | [8](#x-action-understanding) | [33](#x-action-generation) | [127](#x-action-decision) | [9](#x-action-evaluation) | [2](#x-action-analysis) |
 | state | [15](#x-state-understanding) | [2](#x-state-generation) | [64](#x-state-decision) | [1](#x-state-evaluation) | · |
 | code | [1](#x-code-understanding) | [15](#x-code-generation) | [7](#x-code-decision) | [2](#x-code-evaluation) | [4](#x-code-analysis) |
-| multimodal | [12](#x-multimodal-understanding) | [18](#x-multimodal-generation) | [32](#x-multimodal-decision) | [1](#x-multimodal-evaluation) | [1](#x-multimodal-analysis) |
+| multimodal | [48](#x-multimodal-understanding) | [28](#x-multimodal-generation) | [36](#x-multimodal-decision) | [12](#x-multimodal-evaluation) | [7](#x-multimodal-analysis) |
 | tabular | [1](#x-tabular-understanding) | · | · | · | · |
 
 <a id="x-text-understanding"></a>
 
-### text × understanding（18）
+### text × understanding（55）
 
 - [MiniLM: Deep Self-Attention Distillation for Task-Agnostic Compression of Pre-Trained Transformers](paper-catalog.md#p020)
 - [DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter](paper-catalog.md#p021)
@@ -707,10 +820,47 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Transformers are RNNs: Fast Autoregressive Transformers with Linear Attention](paper-catalog.md#p282)
 - [RoFormer: Enhanced Transformer with Rotary Position Embedding](paper-catalog.md#p284)
 - [Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context](paper-catalog.md#p313)
+- [Scaling Up Visual and Vision-Language Representation Learning With Noisy Text Supervision](paper-catalog.md#p337)
+- [LiT: Zero-Shot Transfer with Locked-image text Tuning](paper-catalog.md#p338)
+- [Reproducible scaling laws for contrastive language-image learning](paper-catalog.md#p339)
+- [Sigmoid Loss for Language Image Pre-Training](paper-catalog.md#p340)
+- [SigLIP 2: Multilingual Vision-Language Encoders with Improved Semantic Understanding, Localization, and Dense Features](paper-catalog.md#p341)
+- [EVA-CLIP: Improved Training Techniques for CLIP at Scale](paper-catalog.md#p342)
+- [CoCa: Contrastive Captioners are Image-Text Foundation Models](paper-catalog.md#p343)
+- [BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation](paper-catalog.md#p344)
+- [LAION-5B: An open large-scale dataset for training next generation image-text models](paper-catalog.md#p345)
+- [DataComp: In search of the next generation of multimodal datasets](paper-catalog.md#p346)
+- [Demystifying CLIP Data](paper-catalog.md#p347)
+- [The "something something" video database for learning and evaluating visual common sense](paper-catalog.md#p354)
+- [Revealing Single Frame Bias for Video-and-Language Learning](paper-catalog.md#p359)
+- [EgoSchema: A Diagnostic Benchmark for Very Long-form Video Language Understanding](paper-catalog.md#p360)
+- [InternVideo2: Scaling Foundation Models for Multimodal Video Understanding](paper-catalog.md#p362)
+- [Video-LLaVA: Learning United Visual Representation by Alignment Before Projection](paper-catalog.md#p363)
+- [LLaVA-Video: Video Instruction Tuning With Synthetic Data](paper-catalog.md#p364)
+- [Video-MME: The First-Ever Comprehensive Evaluation Benchmark of Multi-modal LLMs in Video Analysis](paper-catalog.md#p365)
+- [Flamingo: a Visual Language Model for Few-Shot Learning](paper-catalog.md#p372)
+- [PaLI: A Jointly-Scaled Multilingual Language-Image Model](paper-catalog.md#p373)
+- [BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models](paper-catalog.md#p374)
+- [Improved Baselines with Visual Instruction Tuning](paper-catalog.md#p375)
+- [Qwen-VL: A Versatile Vision-Language Model for Understanding, Localization, Text Reading, and Beyond](paper-catalog.md#p377)
+- [InternVL: Scaling up Vision Foundation Models and Aligning for Generic Visual-Linguistic Tasks](paper-catalog.md#p378)
+- [Gemini: A Family of Highly Capable Multimodal Models](paper-catalog.md#p379)
+- [DeepSeek-VL: Towards Real-World Vision-Language Understanding](paper-catalog.md#p380)
+- [How Far Are We to GPT-4V? Closing the Gap to Commercial Multimodal Models with Open-Source Suites](paper-catalog.md#p382)
+- [Chameleon: Mixed-Modal Early-Fusion Foundation Models](paper-catalog.md#p383)
+- [Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs](paper-catalog.md#p384)
+- [Qwen2-VL: Enhancing Vision-Language Model's Perception of the World at Any Resolution](paper-catalog.md#p385)
+- [Molmo and PixMo: Open Weights and Open Data for State-of-the-Art Vision-Language Models](paper-catalog.md#p386)
+- [Expanding Performance Boundaries of Open-Source Multimodal Models with Model, Data, and Test-Time Scaling](paper-catalog.md#p387)
+- [DeepSeek-VL2: Mixture-of-Experts Vision-Language Models for Advanced Multimodal Understanding](paper-catalog.md#p388)
+- [Qwen2.5-VL Technical Report](paper-catalog.md#p389)
+- [Kimi-VL Technical Report](paper-catalog.md#p390)
+- [InternVL3: Exploring Advanced Training and Test-Time Recipes for Open-Source Multimodal Models](paper-catalog.md#p391)
+- [Qwen3-VL Technical Report](paper-catalog.md#p392)
 
 <a id="x-text-generation"></a>
 
-### text × generation（110）
+### text × generation（121）
 
 - [Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters](paper-catalog.md#p001)
 - [Towards Thinking-Optimal Scaling of Test-Time Compute for LLM Reasoning](paper-catalog.md#p002)
@@ -822,10 +972,21 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models](paper-catalog.md#p334)
 - [DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression](paper-catalog.md#p335)
 - [Learning to reason with LLMs](paper-catalog.md#p336)
+- [CoCa: Contrastive Captioners are Image-Text Foundation Models](paper-catalog.md#p343)
+- [BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation](paper-catalog.md#p344)
+- [LAION-5B: An open large-scale dataset for training next generation image-text models](paper-catalog.md#p345)
+- [VideoPhy: Evaluating Physical Commonsense for Video Generation](paper-catalog.md#p370)
+- [PaLI: A Jointly-Scaled Multilingual Language-Image Model](paper-catalog.md#p373)
+- [BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models](paper-catalog.md#p374)
+- [Improved Baselines with Visual Instruction Tuning](paper-catalog.md#p375)
+- [Qwen-VL: A Versatile Vision-Language Model for Understanding, Localization, Text Reading, and Beyond](paper-catalog.md#p377)
+- [Gemini: A Family of Highly Capable Multimodal Models](paper-catalog.md#p379)
+- [Chameleon: Mixed-Modal Early-Fusion Foundation Models](paper-catalog.md#p383)
+- [Genie 3: A new frontier for world models](paper-catalog.md#p394)
 
 <a id="x-text-decision"></a>
 
-### text × decision（55）
+### text × decision（59）
 
 - [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](paper-catalog.md#p034)
 - [ReAct: Synergizing Reasoning and Acting in Language Models](paper-catalog.md#p040)
@@ -882,10 +1043,14 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Ground Slow, Move Fast: A Dual-System Foundation Model for Generalizable Vision-and-Language Navigation](paper-catalog.md#p265)
 - [ABot-N1: Toward a General Visual Language Navigation Foundation Model](paper-catalog.md#p268)
 - [SFT Memorizes, RL Generalizes: A Comparative Study of Foundation Model Post-training](paper-catalog.md#p326)
+- [Qwen2-VL: Enhancing Vision-Language Model's Perception of the World at Any Resolution](paper-catalog.md#p385)
+- [Qwen2.5-VL Technical Report](paper-catalog.md#p389)
+- [Kimi-VL Technical Report](paper-catalog.md#p390)
+- [Qwen3-VL Technical Report](paper-catalog.md#p392)
 
 <a id="x-text-evaluation"></a>
 
-### text × evaluation（15）
+### text × evaluation（28）
 
 - [PersonaEval: Are LLM Evaluators Human Enough to Judge Role-Play?](paper-catalog.md#p032)
 - [On scalable oversight with weak LLMs judging strong LLMs](paper-catalog.md#p033)
@@ -902,10 +1067,23 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Let's Verify Step by Step](paper-catalog.md#p297)
 - [Lost in the Middle: How Language Models Use Long Contexts](paper-catalog.md#p299)
 - [RULER: What's the Real Context Size of Your Long-Context Language Models?](paper-catalog.md#p315)
+- [DataComp: In search of the next generation of multimodal datasets](paper-catalog.md#p346)
+- [Winoground: Probing Vision and Language Models for Visio-Linguistic Compositionality](paper-catalog.md#p348)
+- [When and why vision-language models behave like bags-of-words, and what to do about it?](paper-catalog.md#p349)
+- [SugarCrepe: Fixing Hackable Benchmarks for Vision-Language Compositionality](paper-catalog.md#p350)
+- [Eyes Wide Shut? Exploring the Visual Shortcomings of Multimodal LLMs](paper-catalog.md#p351)
+- [The "something something" video database for learning and evaluating visual common sense](paper-catalog.md#p354)
+- [Revealing Single Frame Bias for Video-and-Language Learning](paper-catalog.md#p359)
+- [EgoSchema: A Diagnostic Benchmark for Very Long-form Video Language Understanding](paper-catalog.md#p360)
+- [Video-MME: The First-Ever Comprehensive Evaluation Benchmark of Multi-modal LLMs in Video Analysis](paper-catalog.md#p365)
+- [VideoPhy: Evaluating Physical Commonsense for Video Generation](paper-catalog.md#p370)
+- [Evaluating Object Hallucination in Large Vision-Language Models](paper-catalog.md#p376)
+- [Are We on the Right Way for Evaluating Large Vision-Language Models?](paper-catalog.md#p381)
+- [Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs](paper-catalog.md#p384)
 
 <a id="x-text-analysis"></a>
 
-### text × analysis（35）
+### text × analysis（41）
 
 - [OLMo: Accelerating the Science of Language Models](paper-catalog.md#p010)
 - [ShortGPT: Layers in Large Language Models are More Redundant Than You Expect](paper-catalog.md#p022)
@@ -942,12 +1120,17 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Understanding R1-Zero-Like Training: A Critical Perspective](paper-catalog.md#p330)
 - [Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?](paper-catalog.md#p331)
 - [The Entropy Mechanism of Reinforcement Learning for Reasoning Language Models](paper-catalog.md#p333)
+- [Reproducible scaling laws for contrastive language-image learning](paper-catalog.md#p339)
+- [Demystifying CLIP Data](paper-catalog.md#p347)
+- [When and why vision-language models behave like bags-of-words, and what to do about it?](paper-catalog.md#p349)
+- [Eyes Wide Shut? Exploring the Visual Shortcomings of Multimodal LLMs](paper-catalog.md#p351)
+- [Revealing Single Frame Bias for Video-and-Language Learning](paper-catalog.md#p359)
+- [Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs](paper-catalog.md#p384)
 
 <a id="x-image-understanding"></a>
 
-### image × understanding（59）
+### image × understanding（91）
 
-- [FOCUS: Object-Centric World Models for Robotics Manipulation](paper-catalog.md#p048)
 - [A High-Fidelity Digital Twin for Robotic Manipulation Based on 3D Gaussian Splatting](paper-catalog.md#p054)
 - [Language-Grounded Hierarchical Planning and Execution with Multi-Robot 3D Scene Graphs](paper-catalog.md#p055)
 - [SemanticFusion: Dense 3D Semantic Mapping with Convolutional Neural Networks](paper-catalog.md#p080)
@@ -1006,12 +1189,46 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [OpenVINS: A Research Platform for Visual-Inertial Estimation](paper-catalog.md#p270)
 - [Parallel Tracking and Mapping for Small AR Workspaces](paper-catalog.md#p271)
 - [Transformers are RNNs: Fast Autoregressive Transformers with Linear Attention](paper-catalog.md#p282)
+- [Scaling Up Visual and Vision-Language Representation Learning With Noisy Text Supervision](paper-catalog.md#p337)
+- [LiT: Zero-Shot Transfer with Locked-image text Tuning](paper-catalog.md#p338)
+- [Reproducible scaling laws for contrastive language-image learning](paper-catalog.md#p339)
+- [Sigmoid Loss for Language Image Pre-Training](paper-catalog.md#p340)
+- [SigLIP 2: Multilingual Vision-Language Encoders with Improved Semantic Understanding, Localization, and Dense Features](paper-catalog.md#p341)
+- [EVA-CLIP: Improved Training Techniques for CLIP at Scale](paper-catalog.md#p342)
+- [CoCa: Contrastive Captioners are Image-Text Foundation Models](paper-catalog.md#p343)
+- [BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation](paper-catalog.md#p344)
+- [LAION-5B: An open large-scale dataset for training next generation image-text models](paper-catalog.md#p345)
+- [DataComp: In search of the next generation of multimodal datasets](paper-catalog.md#p346)
+- [Demystifying CLIP Data](paper-catalog.md#p347)
+- [Revisiting Feature Prediction for Learning Visual Representations from Video](paper-catalog.md#p361)
+- [Video-LLaVA: Learning United Visual Representation by Alignment Before Projection](paper-catalog.md#p363)
+- [LLaVA-Video: Video Instruction Tuning With Synthetic Data](paper-catalog.md#p364)
+- [Flamingo: a Visual Language Model for Few-Shot Learning](paper-catalog.md#p372)
+- [PaLI: A Jointly-Scaled Multilingual Language-Image Model](paper-catalog.md#p373)
+- [BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models](paper-catalog.md#p374)
+- [Improved Baselines with Visual Instruction Tuning](paper-catalog.md#p375)
+- [Qwen-VL: A Versatile Vision-Language Model for Understanding, Localization, Text Reading, and Beyond](paper-catalog.md#p377)
+- [InternVL: Scaling up Vision Foundation Models and Aligning for Generic Visual-Linguistic Tasks](paper-catalog.md#p378)
+- [Gemini: A Family of Highly Capable Multimodal Models](paper-catalog.md#p379)
+- [DeepSeek-VL: Towards Real-World Vision-Language Understanding](paper-catalog.md#p380)
+- [How Far Are We to GPT-4V? Closing the Gap to Commercial Multimodal Models with Open-Source Suites](paper-catalog.md#p382)
+- [Chameleon: Mixed-Modal Early-Fusion Foundation Models](paper-catalog.md#p383)
+- [Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs](paper-catalog.md#p384)
+- [Qwen2-VL: Enhancing Vision-Language Model's Perception of the World at Any Resolution](paper-catalog.md#p385)
+- [Molmo and PixMo: Open Weights and Open Data for State-of-the-Art Vision-Language Models](paper-catalog.md#p386)
+- [Expanding Performance Boundaries of Open-Source Multimodal Models with Model, Data, and Test-Time Scaling](paper-catalog.md#p387)
+- [DeepSeek-VL2: Mixture-of-Experts Vision-Language Models for Advanced Multimodal Understanding](paper-catalog.md#p388)
+- [Qwen2.5-VL Technical Report](paper-catalog.md#p389)
+- [Kimi-VL Technical Report](paper-catalog.md#p390)
+- [InternVL3: Exploring Advanced Training and Test-Time Recipes for Open-Source Multimodal Models](paper-catalog.md#p391)
+- [Qwen3-VL Technical Report](paper-catalog.md#p392)
 
 <a id="x-image-generation"></a>
 
-### image × generation（15）
+### image × generation（25）
 
 - [DINO-WM: World Models on Pre-trained Visual Features enable Zero-shot Planning](paper-catalog.md#p046)
+- [FOCUS: Object-Centric World Models for Robotics Manipulation](paper-catalog.md#p048)
 - [LaDi-WM: A Latent Diffusion-based World Model for Predictive Manipulation](paper-catalog.md#p049)
 - [Object-Centric World Model for Language-Guided Manipulation](paper-catalog.md#p052)
 - [InternVLA-A1: Unifying Understanding, Generation and Action for Robotic Manipulation](paper-catalog.md#p090)
@@ -1026,10 +1243,19 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Transformers are RNNs: Fast Autoregressive Transformers with Linear Attention](paper-catalog.md#p282)
 - [Hyper-Connections](paper-catalog.md#p321)
 - [Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?](paper-catalog.md#p331)
+- [CoCa: Contrastive Captioners are Image-Text Foundation Models](paper-catalog.md#p343)
+- [BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation](paper-catalog.md#p344)
+- [LAION-5B: An open large-scale dataset for training next generation image-text models](paper-catalog.md#p345)
+- [PaLI: A Jointly-Scaled Multilingual Language-Image Model](paper-catalog.md#p373)
+- [BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models](paper-catalog.md#p374)
+- [Improved Baselines with Visual Instruction Tuning](paper-catalog.md#p375)
+- [Qwen-VL: A Versatile Vision-Language Model for Understanding, Localization, Text Reading, and Beyond](paper-catalog.md#p377)
+- [Gemini: A Family of Highly Capable Multimodal Models](paper-catalog.md#p379)
+- [Chameleon: Mixed-Modal Early-Fusion Foundation Models](paper-catalog.md#p383)
 
 <a id="x-image-decision"></a>
 
-### image × decision（81）
+### image × decision（85）
 
 - [DINO-WM: World Models on Pre-trained Visual Features enable Zero-shot Planning](paper-catalog.md#p046)
 - [FOCUS: Object-Centric World Models for Robotics Manipulation](paper-catalog.md#p048)
@@ -1112,10 +1338,14 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [OmniH2O: Universal and Dexterous Human-to-Humanoid Whole-Body Teleoperation and Learning](paper-catalog.md#p277)
 - [Deep reinforcement learning from human preferences](paper-catalog.md#p278)
 - [SFT Memorizes, RL Generalizes: A Comparative Study of Foundation Model Post-training](paper-catalog.md#p326)
+- [Qwen2-VL: Enhancing Vision-Language Model's Perception of the World at Any Resolution](paper-catalog.md#p385)
+- [Qwen2.5-VL Technical Report](paper-catalog.md#p389)
+- [Kimi-VL Technical Report](paper-catalog.md#p390)
+- [Qwen3-VL Technical Report](paper-catalog.md#p392)
 
 <a id="x-image-evaluation"></a>
 
-### image × evaluation（7）
+### image × evaluation（15）
 
 - [LARY: A Latent Action Representation Yielding Benchmark for Generalizable Vision-to-Action Alignment](paper-catalog.md#p060)
 - [Vision-and-Language Navigation: Interpreting visually-grounded navigation instructions in real environments](paper-catalog.md#p119)
@@ -1124,20 +1354,33 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [ALFRED: A Benchmark for Interpreting Grounded Instructions for Everyday Tasks](paper-catalog.md#p216)
 - [Beyond the Nav-Graph: Vision-and-Language Navigation in Continuous Environments](paper-catalog.md#p217)
 - [EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents](paper-catalog.md#p250)
+- [DataComp: In search of the next generation of multimodal datasets](paper-catalog.md#p346)
+- [Winoground: Probing Vision and Language Models for Visio-Linguistic Compositionality](paper-catalog.md#p348)
+- [When and why vision-language models behave like bags-of-words, and what to do about it?](paper-catalog.md#p349)
+- [SugarCrepe: Fixing Hackable Benchmarks for Vision-Language Compositionality](paper-catalog.md#p350)
+- [Eyes Wide Shut? Exploring the Visual Shortcomings of Multimodal LLMs](paper-catalog.md#p351)
+- [Evaluating Object Hallucination in Large Vision-Language Models](paper-catalog.md#p376)
+- [Are We on the Right Way for Evaluating Large Vision-Language Models?](paper-catalog.md#p381)
+- [Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs](paper-catalog.md#p384)
 
 <a id="x-image-analysis"></a>
 
-### image × analysis（5）
+### image × analysis（10）
 
 - [In-Datacenter Performance Analysis of a Tensor Processing Unit](paper-catalog.md#p172)
 - [The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks](paper-catalog.md#p173)
 - [The Hardware Lottery](paper-catalog.md#p174)
 - [SFT Memorizes, RL Generalizes: A Comparative Study of Foundation Model Post-training](paper-catalog.md#p326)
 - [Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?](paper-catalog.md#p331)
+- [Reproducible scaling laws for contrastive language-image learning](paper-catalog.md#p339)
+- [Demystifying CLIP Data](paper-catalog.md#p347)
+- [When and why vision-language models behave like bags-of-words, and what to do about it?](paper-catalog.md#p349)
+- [Eyes Wide Shut? Exploring the Visual Shortcomings of Multimodal LLMs](paper-catalog.md#p351)
+- [Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs](paper-catalog.md#p384)
 
 <a id="x-video-understanding"></a>
 
-### video × understanding（8）
+### video × understanding（31）
 
 - [SlotFormer: Unsupervised Visual Dynamics Simulation with Object-Centric Models](paper-catalog.md#p042)
 - [SAVi++: Towards End-to-End Object-Centric Learning from Real-World Videos](paper-catalog.md#p043)
@@ -1147,10 +1390,33 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [nuScenes: A multimodal dataset for autonomous driving](paper-catalog.md#p214)
 - [V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning](paper-catalog.md#p256)
 - [Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context](paper-catalog.md#p313)
+- [Two-Stream Convolutional Networks for Action Recognition in Videos](paper-catalog.md#p352)
+- [Quo Vadis, Action Recognition? A New Model and the Kinetics Dataset](paper-catalog.md#p353)
+- [The "something something" video database for learning and evaluating visual common sense](paper-catalog.md#p354)
+- [SlowFast Networks for Video Recognition](paper-catalog.md#p355)
+- [Is Space-Time Attention All You Need for Video Understanding?](paper-catalog.md#p356)
+- [ViViT: A Video Vision Transformer](paper-catalog.md#p357)
+- [VideoMAE: Masked Autoencoders are Data-Efficient Learners for Self-Supervised Video Pre-Training](paper-catalog.md#p358)
+- [Revealing Single Frame Bias for Video-and-Language Learning](paper-catalog.md#p359)
+- [EgoSchema: A Diagnostic Benchmark for Very Long-form Video Language Understanding](paper-catalog.md#p360)
+- [Revisiting Feature Prediction for Learning Visual Representations from Video](paper-catalog.md#p361)
+- [InternVideo2: Scaling Foundation Models for Multimodal Video Understanding](paper-catalog.md#p362)
+- [Video-LLaVA: Learning United Visual Representation by Alignment Before Projection](paper-catalog.md#p363)
+- [LLaVA-Video: Video Instruction Tuning With Synthetic Data](paper-catalog.md#p364)
+- [Video-MME: The First-Ever Comprehensive Evaluation Benchmark of Multi-modal LLMs in Video Analysis](paper-catalog.md#p365)
+- [Flamingo: a Visual Language Model for Few-Shot Learning](paper-catalog.md#p372)
+- [InternVL: Scaling up Vision Foundation Models and Aligning for Generic Visual-Linguistic Tasks](paper-catalog.md#p378)
+- [Gemini: A Family of Highly Capable Multimodal Models](paper-catalog.md#p379)
+- [Qwen2-VL: Enhancing Vision-Language Model's Perception of the World at Any Resolution](paper-catalog.md#p385)
+- [Expanding Performance Boundaries of Open-Source Multimodal Models with Model, Data, and Test-Time Scaling](paper-catalog.md#p387)
+- [Qwen2.5-VL Technical Report](paper-catalog.md#p389)
+- [Kimi-VL Technical Report](paper-catalog.md#p390)
+- [InternVL3: Exploring Advanced Training and Test-Time Recipes for Open-Source Multimodal Models](paper-catalog.md#p391)
+- [Qwen3-VL Technical Report](paper-catalog.md#p392)
 
 <a id="x-video-generation"></a>
 
-### video × generation（30）
+### video × generation（39）
 
 - [SlotFormer: Unsupervised Visual Dynamics Simulation with Object-Centric Models](paper-catalog.md#p042)
 - [OccWorld: Learning a 3D Occupancy World Model for Autonomous Driving](paper-catalog.md#p044)
@@ -1182,16 +1448,26 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Ctrl-World: A Controllable Generative World Model for Robot Manipulation](paper-catalog.md#p262)
 - [Evaluating Gemini Robotics Policies in a Veo World Simulator](paper-catalog.md#p266)
 - [Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context](paper-catalog.md#p313)
+- [Diffusion Models Are Real-Time Game Engines](paper-catalog.md#p366)
+- [GAIA-1: A Generative World Model for Autonomous Driving](paper-catalog.md#p367)
+- [Do generative video models understand physical principles?](paper-catalog.md#p368)
+- [How Far is Video Generation from World Model: A Physical Law Perspective](paper-catalog.md#p369)
+- [VideoPhy: Evaluating Physical Commonsense for Video Generation](paper-catalog.md#p370)
+- [Diffusion for World Modeling: Visual Details Matter in Atari](paper-catalog.md#p371)
+- [Gemini: A Family of Highly Capable Multimodal Models](paper-catalog.md#p379)
+- [Genie 2: A large-scale foundation world model](paper-catalog.md#p393)
+- [Genie 3: A new frontier for world models](paper-catalog.md#p394)
 
 <a id="x-video-decision"></a>
 
-### video × decision（19）
+### video × decision（25）
 
 - [OccWorld: Learning a 3D Occupancy World Model for Autonomous Driving](paper-catalog.md#p044)
 - [Driving in the Occupancy World: Vision-Centric 4D Occupancy Forecasting and Planning via World Models for Autonomous Driving](paper-catalog.md#p045)
 - [Back to the Features: DINO as a Foundation for Video World Models](paper-catalog.md#p047)
 - [A Survey of World Models for Autonomous Driving](paper-catalog.md#p051)
 - [Learning Physics-Guided Residual Dynamics for Deformable Object Simulation](paper-catalog.md#p053)
+- [EVA: Aligning Video World Models with Executable Robot Actions via Inverse Dynamics Rewards](paper-catalog.md#p056)
 - [Hydra-0: Action Flow for Generalist World Modeling and Control](paper-catalog.md#p057)
 - [UniVLA: Learning to Act Anywhere with Task-centric Latent Actions](paper-catalog.md#p058)
 - [Zero-WAM: In-Context World-Action Modeling from Human Videos for Open-Ended Task Generalization](paper-catalog.md#p061)
@@ -1206,48 +1482,71 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Learning Interactive Real-World Simulators](paper-catalog.md#p237)
 - [V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning](paper-catalog.md#p256)
 - [Genie Envisioner: A Unified World Foundation Platform for Robotic Manipulation](paper-catalog.md#p258)
+- [Diffusion for World Modeling: Visual Details Matter in Atari](paper-catalog.md#p371)
+- [Qwen2-VL: Enhancing Vision-Language Model's Perception of the World at Any Resolution](paper-catalog.md#p385)
+- [Qwen2.5-VL Technical Report](paper-catalog.md#p389)
+- [Kimi-VL Technical Report](paper-catalog.md#p390)
+- [Qwen3-VL Technical Report](paper-catalog.md#p392)
 
 <a id="x-video-evaluation"></a>
 
-### video × evaluation（5）
+### video × evaluation（12）
 
 - [LARY: A Latent Action Representation Yielding Benchmark for Generalizable Vision-to-Action Alignment](paper-catalog.md#p060)
 - [nuScenes: A multimodal dataset for autonomous driving](paper-catalog.md#p214)
 - [Genie Envisioner: A Unified World Foundation Platform for Robotic Manipulation](paper-catalog.md#p258)
 - [Ctrl-World: A Controllable Generative World Model for Robot Manipulation](paper-catalog.md#p262)
 - [Evaluating Gemini Robotics Policies in a Veo World Simulator](paper-catalog.md#p266)
+- [The "something something" video database for learning and evaluating visual common sense](paper-catalog.md#p354)
+- [Revealing Single Frame Bias for Video-and-Language Learning](paper-catalog.md#p359)
+- [EgoSchema: A Diagnostic Benchmark for Very Long-form Video Language Understanding](paper-catalog.md#p360)
+- [Video-MME: The First-Ever Comprehensive Evaluation Benchmark of Multi-modal LLMs in Video Analysis](paper-catalog.md#p365)
+- [Do generative video models understand physical principles?](paper-catalog.md#p368)
+- [How Far is Video Generation from World Model: A Physical Law Perspective](paper-catalog.md#p369)
+- [VideoPhy: Evaluating Physical Commonsense for Video Generation](paper-catalog.md#p370)
 
 <a id="x-video-analysis"></a>
 
-### video × analysis（2）
+### video × analysis（4）
 
 - [What Do Latent Action Models Actually Learn?](paper-catalog.md#p059)
 - [Reconstruction or Semantics? What Makes a Latent Space Useful for Robotic World Models](paper-catalog.md#p134)
+- [Revealing Single Frame Bias for Video-and-Language Learning](paper-catalog.md#p359)
+- [How Far is Video Generation from World Model: A Physical Law Perspective](paper-catalog.md#p369)
 
 <a id="x-audio-understanding"></a>
 
-### audio × understanding（4）
+### audio × understanding（7）
 
 - [Do Deep Nets Really Need to be Deep?](paper-catalog.md#p141)
 - [Distilling the Knowledge in a Neural Network](paper-catalog.md#p143)
 - [Transformers are RNNs: Fast Autoregressive Transformers with Linear Attention](paper-catalog.md#p282)
 - [Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context](paper-catalog.md#p313)
+- [InternVideo2: Scaling Foundation Models for Multimodal Video Understanding](paper-catalog.md#p362)
+- [Video-MME: The First-Ever Comprehensive Evaluation Benchmark of Multi-modal LLMs in Video Analysis](paper-catalog.md#p365)
+- [Gemini: A Family of Highly Capable Multimodal Models](paper-catalog.md#p379)
 
 <a id="x-audio-generation"></a>
 
-### audio × generation（5）
+### audio × generation（6）
 
 - [Mamba: Linear-Time Sequence Modeling with Selective State Spaces](paper-catalog.md#p009)
 - [Seedance 2.0: Advancing Video Generation for World Complexity](paper-catalog.md#p197)
 - [Veo: a text-to-video generation system](paper-catalog.md#p199)
 - [Transformers are RNNs: Fast Autoregressive Transformers with Linear Attention](paper-catalog.md#p282)
 - [Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context](paper-catalog.md#p313)
+- [Gemini: A Family of Highly Capable Multimodal Models](paper-catalog.md#p379)
+
+<a id="x-audio-evaluation"></a>
+
+### audio × evaluation（1）
+
+- [Video-MME: The First-Ever Comprehensive Evaluation Benchmark of Multi-modal LLMs in Video Analysis](paper-catalog.md#p365)
 
 <a id="x-action-understanding"></a>
 
-### action × understanding（9）
+### action × understanding（8）
 
-- [FOCUS: Object-Centric World Models for Robotics Manipulation](paper-catalog.md#p048)
 - [A High-Fidelity Digital Twin for Robotic Manipulation Based on 3D Gaussian Splatting](paper-catalog.md#p054)
 - [Language-Grounded Hierarchical Planning and Execution with Multi-Robot 3D Scene Graphs](paper-catalog.md#p055)
 - [PIN-WM: Learning Physics-INformed World Models for Non-Prehensile Manipulation](paper-catalog.md#p062)
@@ -1259,12 +1558,13 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-action-generation"></a>
 
-### action × generation（27）
+### action × generation（33）
 
 - [OccWorld: Learning a 3D Occupancy World Model for Autonomous Driving](paper-catalog.md#p044)
 - [Driving in the Occupancy World: Vision-Centric 4D Occupancy Forecasting and Planning via World Models for Autonomous Driving](paper-catalog.md#p045)
 - [DINO-WM: World Models on Pre-trained Visual Features enable Zero-shot Planning](paper-catalog.md#p046)
 - [Back to the Features: DINO as a Foundation for Video World Models](paper-catalog.md#p047)
+- [FOCUS: Object-Centric World Models for Robotics Manipulation](paper-catalog.md#p048)
 - [LaDi-WM: A Latent Diffusion-based World Model for Predictive Manipulation](paper-catalog.md#p049)
 - [Mask2Real-WM: Segmentation Masks as a Sim-to-Real Bridge for Controllable Dexterous World Models](paper-catalog.md#p050)
 - [A Survey of World Models for Autonomous Driving](paper-catalog.md#p051)
@@ -1288,10 +1588,15 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Genie Envisioner: A Unified World Foundation Platform for Robotic Manipulation](paper-catalog.md#p258)
 - [Ctrl-World: A Controllable Generative World Model for Robot Manipulation](paper-catalog.md#p262)
 - [Evaluating Gemini Robotics Policies in a Veo World Simulator](paper-catalog.md#p266)
+- [Diffusion Models Are Real-Time Game Engines](paper-catalog.md#p366)
+- [GAIA-1: A Generative World Model for Autonomous Driving](paper-catalog.md#p367)
+- [Diffusion for World Modeling: Visual Details Matter in Atari](paper-catalog.md#p371)
+- [Genie 2: A large-scale foundation world model](paper-catalog.md#p393)
+- [Genie 3: A new frontier for world models](paper-catalog.md#p394)
 
 <a id="x-action-decision"></a>
 
-### action × decision（125）
+### action × decision（127）
 
 - [OccWorld: Learning a 3D Occupancy World Model for Autonomous Driving](paper-catalog.md#p044)
 - [Driving in the Occupancy World: Vision-Centric 4D Occupancy Forecasting and Planning via World Models for Autonomous Driving](paper-catalog.md#p045)
@@ -1304,6 +1609,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Learning Physics-Guided Residual Dynamics for Deformable Object Simulation](paper-catalog.md#p053)
 - [A High-Fidelity Digital Twin for Robotic Manipulation Based on 3D Gaussian Splatting](paper-catalog.md#p054)
 - [Language-Grounded Hierarchical Planning and Execution with Multi-Robot 3D Scene Graphs](paper-catalog.md#p055)
+- [EVA: Aligning Video World Models with Executable Robot Actions via Inverse Dynamics Rewards](paper-catalog.md#p056)
 - [Hydra-0: Action Flow for Generalist World Modeling and Control](paper-catalog.md#p057)
 - [UniVLA: Learning to Act Anywhere with Task-centric Latent Actions](paper-catalog.md#p058)
 - [Zero-WAM: In-Context World-Action Modeling from Human Videos for Open-Ended Task Generalization](paper-catalog.md#p061)
@@ -1418,6 +1724,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Learning Human-to-Humanoid Real-Time Whole-Body Teleoperation](paper-catalog.md#p276)
 - [OmniH2O: Universal and Dexterous Human-to-Humanoid Whole-Body Teleoperation and Learning](paper-catalog.md#p277)
 - [Deep reinforcement learning from human preferences](paper-catalog.md#p278)
+- [Diffusion for World Modeling: Visual Details Matter in Atari](paper-catalog.md#p371)
 
 <a id="x-action-evaluation"></a>
 
@@ -1598,7 +1905,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-multimodal-understanding"></a>
 
-### multimodal × understanding（12）
+### multimodal × understanding（48）
 
 - [Language-Grounded Hierarchical Planning and Execution with Multi-Robot 3D Scene Graphs](paper-catalog.md#p055)
 - [InternVLA-A1: Unifying Understanding, Generation and Action for Robotic Manipulation](paper-catalog.md#p090)
@@ -1612,10 +1919,46 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Gemini Robotics: Bringing AI into the Physical World](paper-catalog.md#p253)
 - [Gemini Robotics 1.5: Pushing the Frontier of Generalist Robots with Advanced Embodied Reasoning, Thinking, and Motion Transfer](paper-catalog.md#p261)
 - [Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context](paper-catalog.md#p313)
+- [Scaling Up Visual and Vision-Language Representation Learning With Noisy Text Supervision](paper-catalog.md#p337)
+- [LiT: Zero-Shot Transfer with Locked-image text Tuning](paper-catalog.md#p338)
+- [Reproducible scaling laws for contrastive language-image learning](paper-catalog.md#p339)
+- [Sigmoid Loss for Language Image Pre-Training](paper-catalog.md#p340)
+- [SigLIP 2: Multilingual Vision-Language Encoders with Improved Semantic Understanding, Localization, and Dense Features](paper-catalog.md#p341)
+- [EVA-CLIP: Improved Training Techniques for CLIP at Scale](paper-catalog.md#p342)
+- [CoCa: Contrastive Captioners are Image-Text Foundation Models](paper-catalog.md#p343)
+- [BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation](paper-catalog.md#p344)
+- [LAION-5B: An open large-scale dataset for training next generation image-text models](paper-catalog.md#p345)
+- [DataComp: In search of the next generation of multimodal datasets](paper-catalog.md#p346)
+- [Demystifying CLIP Data](paper-catalog.md#p347)
+- [Revealing Single Frame Bias for Video-and-Language Learning](paper-catalog.md#p359)
+- [EgoSchema: A Diagnostic Benchmark for Very Long-form Video Language Understanding](paper-catalog.md#p360)
+- [InternVideo2: Scaling Foundation Models for Multimodal Video Understanding](paper-catalog.md#p362)
+- [Video-LLaVA: Learning United Visual Representation by Alignment Before Projection](paper-catalog.md#p363)
+- [LLaVA-Video: Video Instruction Tuning With Synthetic Data](paper-catalog.md#p364)
+- [Video-MME: The First-Ever Comprehensive Evaluation Benchmark of Multi-modal LLMs in Video Analysis](paper-catalog.md#p365)
+- [Flamingo: a Visual Language Model for Few-Shot Learning](paper-catalog.md#p372)
+- [PaLI: A Jointly-Scaled Multilingual Language-Image Model](paper-catalog.md#p373)
+- [BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models](paper-catalog.md#p374)
+- [Improved Baselines with Visual Instruction Tuning](paper-catalog.md#p375)
+- [Qwen-VL: A Versatile Vision-Language Model for Understanding, Localization, Text Reading, and Beyond](paper-catalog.md#p377)
+- [InternVL: Scaling up Vision Foundation Models and Aligning for Generic Visual-Linguistic Tasks](paper-catalog.md#p378)
+- [Gemini: A Family of Highly Capable Multimodal Models](paper-catalog.md#p379)
+- [DeepSeek-VL: Towards Real-World Vision-Language Understanding](paper-catalog.md#p380)
+- [How Far Are We to GPT-4V? Closing the Gap to Commercial Multimodal Models with Open-Source Suites](paper-catalog.md#p382)
+- [Chameleon: Mixed-Modal Early-Fusion Foundation Models](paper-catalog.md#p383)
+- [Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs](paper-catalog.md#p384)
+- [Qwen2-VL: Enhancing Vision-Language Model's Perception of the World at Any Resolution](paper-catalog.md#p385)
+- [Molmo and PixMo: Open Weights and Open Data for State-of-the-Art Vision-Language Models](paper-catalog.md#p386)
+- [Expanding Performance Boundaries of Open-Source Multimodal Models with Model, Data, and Test-Time Scaling](paper-catalog.md#p387)
+- [DeepSeek-VL2: Mixture-of-Experts Vision-Language Models for Advanced Multimodal Understanding](paper-catalog.md#p388)
+- [Qwen2.5-VL Technical Report](paper-catalog.md#p389)
+- [Kimi-VL Technical Report](paper-catalog.md#p390)
+- [InternVL3: Exploring Advanced Training and Test-Time Recipes for Open-Source Multimodal Models](paper-catalog.md#p391)
+- [Qwen3-VL Technical Report](paper-catalog.md#p392)
 
 <a id="x-multimodal-generation"></a>
 
-### multimodal × generation（18）
+### multimodal × generation（28）
 
 - [Object-Centric World Model for Language-Guided Manipulation](paper-catalog.md#p052)
 - [InternVLA-A1: Unifying Understanding, Generation and Action for Robotic Manipulation](paper-catalog.md#p090)
@@ -1635,10 +1978,20 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Kimi k1.5: Scaling Reinforcement Learning with LLMs](paper-catalog.md#p325)
 - [Gemma 3 Technical Report](paper-catalog.md#p329)
 - [DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression](paper-catalog.md#p335)
+- [CoCa: Contrastive Captioners are Image-Text Foundation Models](paper-catalog.md#p343)
+- [BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation](paper-catalog.md#p344)
+- [LAION-5B: An open large-scale dataset for training next generation image-text models](paper-catalog.md#p345)
+- [GAIA-1: A Generative World Model for Autonomous Driving](paper-catalog.md#p367)
+- [PaLI: A Jointly-Scaled Multilingual Language-Image Model](paper-catalog.md#p373)
+- [BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models](paper-catalog.md#p374)
+- [Improved Baselines with Visual Instruction Tuning](paper-catalog.md#p375)
+- [Qwen-VL: A Versatile Vision-Language Model for Understanding, Localization, Text Reading, and Beyond](paper-catalog.md#p377)
+- [Gemini: A Family of Highly Capable Multimodal Models](paper-catalog.md#p379)
+- [Chameleon: Mixed-Modal Early-Fusion Foundation Models](paper-catalog.md#p383)
 
 <a id="x-multimodal-decision"></a>
 
-### multimodal × decision（32）
+### multimodal × decision（36）
 
 - [Object-Centric World Model for Language-Guided Manipulation](paper-catalog.md#p052)
 - [Language-Grounded Hierarchical Planning and Execution with Multi-Robot 3D Scene Graphs](paper-catalog.md#p055)
@@ -1672,18 +2025,39 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Gemini Robotics 1.5: Pushing the Frontier of Generalist Robots with Advanced Embodied Reasoning, Thinking, and Motion Transfer](paper-catalog.md#p261)
 - [OmniH2O: Universal and Dexterous Human-to-Humanoid Whole-Body Teleoperation and Learning](paper-catalog.md#p277)
 - [SFT Memorizes, RL Generalizes: A Comparative Study of Foundation Model Post-training](paper-catalog.md#p326)
+- [Qwen2-VL: Enhancing Vision-Language Model's Perception of the World at Any Resolution](paper-catalog.md#p385)
+- [Qwen2.5-VL Technical Report](paper-catalog.md#p389)
+- [Kimi-VL Technical Report](paper-catalog.md#p390)
+- [Qwen3-VL Technical Report](paper-catalog.md#p392)
 
 <a id="x-multimodal-evaluation"></a>
 
-### multimodal × evaluation（1）
+### multimodal × evaluation（12）
 
 - [Vision-and-Language Navigation: Interpreting visually-grounded navigation instructions in real environments](paper-catalog.md#p119)
+- [DataComp: In search of the next generation of multimodal datasets](paper-catalog.md#p346)
+- [Winoground: Probing Vision and Language Models for Visio-Linguistic Compositionality](paper-catalog.md#p348)
+- [When and why vision-language models behave like bags-of-words, and what to do about it?](paper-catalog.md#p349)
+- [SugarCrepe: Fixing Hackable Benchmarks for Vision-Language Compositionality](paper-catalog.md#p350)
+- [Eyes Wide Shut? Exploring the Visual Shortcomings of Multimodal LLMs](paper-catalog.md#p351)
+- [Revealing Single Frame Bias for Video-and-Language Learning](paper-catalog.md#p359)
+- [EgoSchema: A Diagnostic Benchmark for Very Long-form Video Language Understanding](paper-catalog.md#p360)
+- [Video-MME: The First-Ever Comprehensive Evaluation Benchmark of Multi-modal LLMs in Video Analysis](paper-catalog.md#p365)
+- [Evaluating Object Hallucination in Large Vision-Language Models](paper-catalog.md#p376)
+- [Are We on the Right Way for Evaluating Large Vision-Language Models?](paper-catalog.md#p381)
+- [Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs](paper-catalog.md#p384)
 
 <a id="x-multimodal-analysis"></a>
 
-### multimodal × analysis（1）
+### multimodal × analysis（7）
 
 - [SFT Memorizes, RL Generalizes: A Comparative Study of Foundation Model Post-training](paper-catalog.md#p326)
+- [Reproducible scaling laws for contrastive language-image learning](paper-catalog.md#p339)
+- [Demystifying CLIP Data](paper-catalog.md#p347)
+- [When and why vision-language models behave like bags-of-words, and what to do about it?](paper-catalog.md#p349)
+- [Eyes Wide Shut? Exploring the Visual Shortcomings of Multimodal LLMs](paper-catalog.md#p351)
+- [Revealing Single Frame Bias for Video-and-Language Learning](paper-catalog.md#p359)
+- [Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs](paper-catalog.md#p384)
 
 <a id="x-tabular-understanding"></a>
 

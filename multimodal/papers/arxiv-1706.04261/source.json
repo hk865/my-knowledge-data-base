@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:1706.04261",
+  "title": "The \"something something\" video database for learning and evaluating visual common sense",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-1706.04261",
+  "official_url": "https://arxiv.org/abs/1706.04261",
+  "official_fulltext_url": "https://arxiv.org/pdf/1706.04261v2",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了Abstract、Sec.1、Sec.3–4（数据采集、模板、4.4 动作组与假装动作）、Sec.5（基线与 Table 4）；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Raghav Goyal",
+    "Samira Ebrahimi Kahou",
+    "Vincent Michalski",
+    "Joanna Materzyńska",
+    "Susanne Westphal",
+    "Heuna Kim",
+    "Valentin Haenel",
+    "Ingo Fruend",
+    "Peter Yianilos",
+    "Moritz Mueller-Freitag",
+    "等 14 位作者"
+  ],
+  "year": 2017,
+  "topic_paths": [
+    "multimodal/video-temporal"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v2 PDF 选段：Abstract、Sec.1、Sec.3–4（数据采集、模板、4.4 动作组与假装动作）、Sec.5（基线与 Table 4）",
+    "mechanism_summary": "众包按模板录制，动作组与假装动作减少外观偏差；108,499 段、174 类、2–6 秒；基线错误率：10 类子集 2D+3D 44.9%，174 类 3D-CNN top-1 88.5%、top-5 70.3%；标签有歧义需 top-K。",
+    "evidence_boundary": "未复现实验；数字取自论文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/1706.04261",
+      "https://arxiv.org/pdf/1706.04261v2"
+    ],
+    "source_origin": "phase3_video_temporal_cards",
+    "relation_pages": [
+      "multimodal/fields/video-temporal/README.md"
+    ]
+  },
+  "modality_tags": [
+    "video",
+    "text"
+  ],
+  "task_tags": [
+    "understanding",
+    "evaluation"
+  ]
+}

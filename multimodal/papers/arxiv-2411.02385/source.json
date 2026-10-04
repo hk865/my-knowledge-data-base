@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2411.02385",
+  "title": "How Far is Video Generation from World Model: A Physical Law Perspective",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2411.02385",
+  "official_url": "https://arxiv.org/abs/2411.02385",
+  "official_fulltext_url": "https://arxiv.org/pdf/2411.02385v2",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Bingyi Kang",
+    "Yang Yue",
+    "Rui Lu",
+    "Zhijie Lin",
+    "Yang Zhao",
+    "Kaixin Wang",
+    "Gao Huang",
+    "Jiashi Feng"
+  ],
+  "year": 2024,
+  "topic_paths": [
+    "multimodal/world-models",
+    "multimodal/generation",
+    "cross-domain/evaluation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "v2 PDF（ICML 2025）：摘要、§1、§2 设置（2D 模拟器、VAE 与 DiT）、§3 分布内与分布外结果、§4 组合泛化、§5 案例式泛化与属性优先级、§7 结论与讨论",
+    "mechanism_summary": "ByteDance Research、清华、Technion；用 2D 物理模拟器生成由匀速运动、弹性碰撞、抛体等经典力学规律决定的视频，按 Sora 的 VAE + DiT 结构训练视频扩散模型，数据 30K–3M、参数 22M–310M；从像素中解析出物体位置与大小以算速度误差；分布内随规模提升（DiT-L、3M 数据匀速运动速度误差 0.012，真值视频 0.010），分布外误差高一个数量级（0.427）且不随规模下降；组合泛化中扩大数据使人工判定异常的比例从 67% 降到 10%；模型按最相近的训练样例泛化，属性优先级为颜色 > 大小 > 速度 > 形状（训练中只有红球和蓝方块时，红方块会变成球），作者认为这可以解释现有视频模型难以保持物体一致；结论：单纯扩大规模不足以发现物理规律，组合多样的数据更有用。",
+    "evidence_boundary": "只写原文明确写出的内容；未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2411.02385",
+      "https://arxiv.org/pdf/2411.02385v2"
+    ],
+    "source_origin": "phase3_multimodal_world_models_field_page",
+    "field_pages": [
+      "multimodal/fields/world-models/README.md"
+    ]
+  },
+  "modality_tags": [
+    "video"
+  ],
+  "task_tags": [
+    "generation",
+    "evaluation",
+    "analysis"
+  ]
+}

@@ -3073,7 +3073,8 @@
     "doi": "10.48550/arXiv.2210.05861",
     "year": "2022",
     "topic_paths": [
-      "multimodal/world-models"
+      "multimodal/world-models",
+      "multimodal/video-temporal"
     ],
     "detail_topics": [
       "multimodal",
@@ -3124,7 +3125,14 @@
     "canonical_readme": "multimodal/papers/arxiv-2210.05861/README.md",
     "source_path": "multimodal/papers/arxiv-2210.05861/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Ziyi Wu",
+      "Nikita Dvornik",
+      "Klaus Greff",
+      "Thomas Kipf",
+      "Animesh Garg"
+    ]
   },
   {
     "original_chat_urls": [
@@ -3137,7 +3145,8 @@
     "doi": "10.48550/arXiv.2206.07764",
     "year": "2022",
     "topic_paths": [
-      "multimodal/world-models"
+      "multimodal/world-models",
+      "multimodal/video-temporal"
     ],
     "detail_topics": [
       "multimodal",
@@ -3189,7 +3198,15 @@
     "canonical_readme": "multimodal/papers/arxiv-2206.07764/README.md",
     "source_path": "multimodal/papers/arxiv-2206.07764/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Gamaleldin F. Elsayed",
+      "Aravindh Mahendran",
+      "Sjoerd van Steenkiste",
+      "Klaus Greff",
+      "Michael C. Mozer",
+      "Thomas Kipf"
+    ]
   },
   {
     "original_chat_urls": [
@@ -3202,7 +3219,8 @@
     "doi": "10.48550/arXiv.2311.16038",
     "year": "2023",
     "topic_paths": [
-      "multimodal/world-models"
+      "multimodal/world-models",
+      "robotics/navigation-planning"
     ],
     "detail_topics": [
       "multimodal",
@@ -3256,7 +3274,15 @@
     "canonical_readme": "multimodal/papers/arxiv-2311.16038/README.md",
     "source_path": "multimodal/papers/arxiv-2311.16038/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Wenzhao Zheng",
+      "Weiliang Chen",
+      "Yuanhui Huang",
+      "Borui Zhang",
+      "Yueqi Duan",
+      "Jiwen Lu"
+    ]
   },
   {
     "original_chat_urls": [
@@ -3269,7 +3295,8 @@
     "doi": "10.48550/arXiv.2408.14197",
     "year": "2024",
     "topic_paths": [
-      "multimodal/world-models"
+      "multimodal/world-models",
+      "robotics/navigation-planning"
     ],
     "detail_topics": [
       "multimodal",
@@ -3324,7 +3351,17 @@
     "canonical_readme": "multimodal/papers/arxiv-2408.14197/README.md",
     "source_path": "multimodal/papers/arxiv-2408.14197/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Yu Yang",
+      "Jianbiao Mei",
+      "Yukai Ma",
+      "Siliang Du",
+      "Wenqing Chen",
+      "Yijie Qian",
+      "Yuxiang Feng",
+      "Yong Liu"
+    ]
   },
   {
     "original_chat_urls": [
@@ -3417,7 +3454,13 @@
     "canonical_readme": "multimodal/papers/arxiv-2411.04983/README.md",
     "source_path": "multimodal/papers/arxiv-2411.04983/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Gaoyue Zhou",
+      "Hengkai Pan",
+      "Yann LeCun",
+      "Lerrel Pinto"
+    ]
   },
   {
     "original_chat_urls": [
@@ -3430,7 +3473,8 @@
     "doi": "10.48550/arXiv.2507.19468",
     "year": "2025",
     "topic_paths": [
-      "multimodal/world-models"
+      "multimodal/world-models",
+      "multimodal/video-temporal"
     ],
     "detail_topics": [
       "multimodal",
@@ -3484,7 +3528,18 @@
     "canonical_readme": "multimodal/papers/arxiv-2507.19468/README.md",
     "source_path": "multimodal/papers/arxiv-2507.19468/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Federico Baldassarre",
+      "Marc Szafraniec",
+      "Basile Terver",
+      "Vasil Khalidov",
+      "Francisco Massa",
+      "Yann LeCun",
+      "Patrick Labatut",
+      "Maximilian Seitzer",
+      "Piotr Bojanowski"
+    ]
   },
   {
     "original_chat_urls": [
@@ -3497,7 +3552,8 @@
     "doi": "10.48550/arXiv.2307.02427",
     "year": "2023",
     "topic_paths": [
-      "multimodal/world-models"
+      "multimodal/world-models",
+      "robotics/embodied-policies"
     ],
     "detail_topics": [
       "multimodal",
@@ -3543,7 +3599,7 @@
       "action"
     ],
     "task_tags": [
-      "understanding",
+      "generation",
       "decision"
     ],
     "canonical_folder": "multimodal/papers/arxiv-2307.02427",
@@ -3551,7 +3607,13 @@
     "canonical_readme": "multimodal/papers/arxiv-2307.02427/README.md",
     "source_path": "multimodal/papers/arxiv-2307.02427/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Stefano Ferraro",
+      "Pietro Mazzaglia",
+      "Tim Verbelen",
+      "Bart Dhoedt"
+    ]
   },
   {
     "original_chat_urls": [
@@ -3564,7 +3626,8 @@
     "doi": "10.48550/arXiv.2505.11528",
     "year": "2025",
     "topic_paths": [
-      "multimodal/world-models"
+      "multimodal/world-models",
+      "robotics/embodied-policies"
     ],
     "detail_topics": [
       "multimodal",
@@ -3646,7 +3709,15 @@
     "canonical_readme": "multimodal/papers/arxiv-2505.11528/README.md",
     "source_path": "multimodal/papers/arxiv-2505.11528/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Yuhang Huang",
+      "Jiazhao Zhang",
+      "Shilong Zou",
+      "Xinwang Liu",
+      "Ruizhen Hu",
+      "Kai Xu"
+    ]
   },
   {
     "original_chat_urls": [
@@ -3714,7 +3785,13 @@
     "canonical_readme": "multimodal/papers/arxiv-2607.04546/README.md",
     "source_path": "multimodal/papers/arxiv-2607.04546/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Riccardo O. Feingold",
+      "Davide Liconti",
+      "Chenyu Yang",
+      "Robert K. Katzschmann"
+    ]
   },
   {
     "original_chat_urls": [
@@ -3727,7 +3804,8 @@
     "doi": "10.48550/arXiv.2501.11260",
     "year": "2025",
     "topic_paths": [
-      "multimodal/world-models"
+      "multimodal/world-models",
+      "robotics/navigation-planning"
     ],
     "detail_topics": [
       "multimodal",
@@ -3777,7 +3855,12 @@
     "canonical_readme": "multimodal/papers/arxiv-2501.11260/README.md",
     "source_path": "multimodal/papers/arxiv-2501.11260/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Tuo Feng",
+      "Wenguan Wang",
+      "Yi Yang"
+    ]
   },
   {
     "original_chat_urls": [
@@ -3790,7 +3873,8 @@
     "doi": "10.48550/arXiv.2503.06170",
     "year": "2025",
     "topic_paths": [
-      "multimodal/world-models"
+      "multimodal/world-models",
+      "robotics/embodied-policies"
     ],
     "detail_topics": [
       "multimodal",
@@ -3871,7 +3955,13 @@
     "canonical_readme": "multimodal/papers/arxiv-2503.06170/README.md",
     "source_path": "multimodal/papers/arxiv-2503.06170/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Youngjoon Jeong",
+      "Junha Chun",
+      "Soonwoo Cha",
+      "Taesup Kim"
+    ]
   },
   {
     "original_chat_urls": [
@@ -3964,7 +4054,14 @@
     "canonical_readme": "multimodal/papers/arxiv-2607.13451/README.md",
     "source_path": "multimodal/papers/arxiv-2607.13451/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Shivansh Patel",
+      "Kaifeng Zhang",
+      "Sanjay Pokkali",
+      "Svetlana Lazebnik",
+      "Yunzhu Li"
+    ]
   },
   {
     "original_chat_urls": [
@@ -3977,7 +4074,8 @@
     "doi": "10.48550/arXiv.2601.03200",
     "year": "2026",
     "topic_paths": [
-      "multimodal/world-models"
+      "multimodal/world-models",
+      "robotics/perception"
     ],
     "detail_topics": [
       "multimodal",
@@ -4059,7 +4157,14 @@
     "canonical_readme": "multimodal/papers/arxiv-2601.03200/README.md",
     "source_path": "multimodal/papers/arxiv-2601.03200/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Ziyang Sun",
+      "Lingfan Bao",
+      "Tianhu Peng",
+      "Jingcheng Sun",
+      "Chengxu Zhou"
+    ]
   },
   {
     "original_chat_urls": [
@@ -4072,7 +4177,9 @@
     "doi": "10.48550/arXiv.2506.07454",
     "year": "2025",
     "topic_paths": [
-      "multimodal/world-models"
+      "multimodal/world-models",
+      "robotics/embodied-agents",
+      "robotics/localization-mapping"
     ],
     "detail_topics": [
       "multimodal",
@@ -4155,7 +4262,20 @@
     "canonical_readme": "multimodal/papers/arxiv-2506.07454/README.md",
     "source_path": "multimodal/papers/arxiv-2506.07454/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Jared Strader",
+      "Aaron Ray",
+      "Jacob Arkin",
+      "Mason B. Peterson",
+      "Yun Chang",
+      "Nathan Hughes",
+      "Christopher Bradley",
+      "Yi Xuan Jia",
+      "Carlos Nieto-Granda",
+      "Rajat Talak",
+      "等 14 位作者"
+    ]
   },
   {
     "original_chat_urls": [
@@ -4168,7 +4288,8 @@
     "doi": "10.48550/arXiv.2603.17808",
     "year": "2026",
     "topic_paths": [
-      "multimodal/world-models"
+      "multimodal/world-models",
+      "robotics/embodied-policies"
     ],
     "detail_topics": [
       "multimodal",
@@ -4222,7 +4343,8 @@
       "action"
     ],
     "task_tags": [
-      "generation"
+      "generation",
+      "decision"
     ],
     "note": null,
     "verification": [
@@ -4247,7 +4369,15 @@
     "canonical_readme": "multimodal/papers/arxiv-2603.17808/README.md",
     "source_path": "multimodal/papers/arxiv-2603.17808/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Ruixiang Wang",
+      "Qingming Liu",
+      "Yueci Deng",
+      "Guiliang Liu",
+      "Zhen Liu",
+      "Kui Jia"
+    ]
   },
   {
     "original_chat_urls": [
@@ -4260,7 +4390,8 @@
     "doi": "10.48550/arXiv.2608.18077",
     "year": "2026",
     "topic_paths": [
-      "multimodal/world-models"
+      "multimodal/world-models",
+      "robotics/embodied-policies"
     ],
     "detail_topics": [
       "multimodal",
@@ -4339,7 +4470,20 @@
     "canonical_readme": "multimodal/papers/arxiv-2608.18077/README.md",
     "source_path": "multimodal/papers/arxiv-2608.18077/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Hongyu Li",
+      "Bowen Wen",
+      "Xinghao Zhu",
+      "Yixuan Wang",
+      "Yilun Du",
+      "Yunzhu Li",
+      "George Konidaris",
+      "Stan Birchfield",
+      "Soha Pouya",
+      "Chenran Li",
+      "Yan Chang"
+    ]
   },
   {
     "original_chat_urls": [
@@ -4352,7 +4496,8 @@
     "doi": "10.48550/arXiv.2505.06111",
     "year": "2025",
     "topic_paths": [
-      "multimodal/world-models"
+      "multimodal/world-models",
+      "robotics/embodied-policies"
     ],
     "detail_topics": [
       "multimodal",
@@ -4435,7 +4580,17 @@
     "canonical_readme": "multimodal/papers/arxiv-2505.06111/README.md",
     "source_path": "multimodal/papers/arxiv-2505.06111/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Qingwen Bu",
+      "Yanting Yang",
+      "Jisong Cai",
+      "Shenyuan Gao",
+      "Guanghui Ren",
+      "Maoqing Yao",
+      "Ping Luo",
+      "Hongyang Li"
+    ]
   },
   {
     "original_chat_urls": [
@@ -4528,7 +4683,17 @@
     "canonical_readme": "multimodal/papers/arxiv-2506.15691/README.md",
     "source_path": "multimodal/papers/arxiv-2506.15691/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Chuheng Zhang",
+      "Tim Pearce",
+      "Pushi Zhang",
+      "Kaixin Wang",
+      "Xiaoyu Chen",
+      "Wei Shen",
+      "Li Zhao",
+      "Jiang Bian"
+    ]
   },
   {
     "original_chat_urls": [
@@ -4621,7 +4786,16 @@
     "canonical_readme": "multimodal/papers/arxiv-2604.11689/README.md",
     "source_path": "multimodal/papers/arxiv-2604.11689/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Dujun Nie",
+      "Fengjiao Chen",
+      "Qi Lv",
+      "Jun Kuang",
+      "Xiaoyu Li",
+      "Xuezhi Cao",
+      "Xunliang Cai"
+    ]
   },
   {
     "original_chat_urls": [
@@ -4748,9 +4922,10 @@
     "url": "https://www.roboticsproceedings.org/rss21/p153.html",
     "arxiv_id": null,
     "doi": "10.15607/RSS.2025.XXI.153",
-    "year": null,
+    "year": "2025",
     "topic_paths": [
-      "multimodal/world-models"
+      "multimodal/world-models",
+      "robotics/control"
     ],
     "detail_topics": [
       "multimodal",
@@ -4832,7 +5007,16 @@
     "canonical_readme": "multimodal/papers/doi-10.15607-rss.2025.xxi.153/README.md",
     "source_path": "multimodal/papers/doi-10.15607-rss.2025.xxi.153/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Wenxuan Li",
+      "Hang Zhao",
+      "Zhiyuan Yu",
+      "Yu Du",
+      "Qin Zou",
+      "Ruizhen Hu",
+      "Kai Xu"
+    ]
   },
   {
     "original_chat_urls": [
@@ -4843,7 +5027,7 @@
     "url": "https://onlinelibrary.wiley.com/doi/10.1002/smb2.70053",
     "arxiv_id": null,
     "doi": "10.1002/smb2.70053",
-    "year": null,
+    "year": "2026",
     "topic_paths": [
       "multimodal/world-models"
     ],
@@ -4894,7 +5078,20 @@
     "canonical_readme": "multimodal/papers/doi-10.1002-smb2.70053/README.md",
     "source_path": "multimodal/papers/doi-10.1002-smb2.70053/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Fangyuan Wang",
+      "Ziyuan Wang",
+      "Guorui Pei",
+      "Mengshi Zhang",
+      "Canxi Liang",
+      "Jun Hu",
+      "Zhongxuan Li",
+      "Jinsong Wu",
+      "Ning Han",
+      "Zeqing Zhang",
+      "等 18 位作者"
+    ]
   },
   {
     "original_chat_urls": [],
@@ -10145,7 +10342,8 @@
     "doi": null,
     "year": "2023",
     "topic_paths": [
-      "multimodal/world-models"
+      "multimodal/world-models",
+      "robotics/embodied-policies"
     ],
     "detail_topics": [
       "机器人与具身智能"
@@ -10446,7 +10644,6 @@
     "year": "2023",
     "resource_kind": "paper",
     "topic_paths": [
-      "multimodal/generation",
       "multimodal/vlm",
       "robotics/embodied-policies"
     ],
@@ -10523,7 +10720,13 @@
     "legacy_paths": [
       "docs/deep-readings/llava.md"
     ],
-    "content_kind": "reading"
+    "content_kind": "reading",
+    "authors": [
+      "Haotian Liu",
+      "Chunyuan Li",
+      "Qingyang Wu",
+      "Yong Jae Lee"
+    ]
   },
   {
     "id": "arxiv:2006.11239",
@@ -10602,7 +10805,12 @@
     "legacy_paths": [
       "docs/deep-readings/ddpm.md"
     ],
-    "content_kind": "reading"
+    "content_kind": "reading",
+    "authors": [
+      "Jonathan Ho",
+      "Ajay Jain",
+      "Pieter Abbeel"
+    ]
   },
   {
     "id": "arxiv:2204.03458",
@@ -10685,7 +10893,15 @@
     "legacy_paths": [
       "docs/deep-readings/video-diffusion.md"
     ],
-    "content_kind": "reading"
+    "content_kind": "reading",
+    "authors": [
+      "Jonathan Ho",
+      "Tim Salimans",
+      "Alexey Gritsenko",
+      "William Chan",
+      "Mohammad Norouzi",
+      "David J. Fleet"
+    ]
   },
   {
     "id": "arxiv:2007.11898",
@@ -11439,7 +11655,21 @@
     "legacy_paths": [
       "docs/deep-readings/vit.md"
     ],
-    "content_kind": "reading"
+    "content_kind": "reading",
+    "authors": [
+      "Alexey Dosovitskiy",
+      "Lucas Beyer",
+      "Alexander Kolesnikov",
+      "Dirk Weissenborn",
+      "Xiaohua Zhai",
+      "Thomas Unterthiner",
+      "Mostafa Dehghani",
+      "Matthias Minderer",
+      "Georg Heigold",
+      "Sylvain Gelly",
+      "Jakob Uszkoreit",
+      "Neil Houlsby"
+    ]
   },
   {
     "id": "arxiv:2111.06377",
@@ -11518,7 +11748,15 @@
     "legacy_paths": [
       "docs/deep-readings/mae.md"
     ],
-    "content_kind": "reading"
+    "content_kind": "reading",
+    "authors": [
+      "Kaiming He",
+      "Xinlei Chen",
+      "Saining Xie",
+      "Yanghao Li",
+      "Piotr Dollár",
+      "Ross Girshick"
+    ]
   },
   {
     "id": "arxiv:2103.00020",
@@ -11616,7 +11854,21 @@
     "legacy_paths": [
       "docs/deep-readings/clip.md"
     ],
-    "content_kind": "reading"
+    "content_kind": "reading",
+    "authors": [
+      "Alec Radford",
+      "Jong Wook Kim",
+      "Chris Hallacy",
+      "Aditya Ramesh",
+      "Gabriel Goh",
+      "Sandhini Agarwal",
+      "Girish Sastry",
+      "Amanda Askell",
+      "Pamela Mishkin",
+      "Jack Clark",
+      "Gretchen Krueger",
+      "Ilya Sutskever"
+    ]
   },
   {
     "id": "arxiv:2104.14294",
@@ -11696,7 +11948,16 @@
     "legacy_paths": [
       "docs/deep-readings/dino.md"
     ],
-    "content_kind": "reading"
+    "content_kind": "reading",
+    "authors": [
+      "Mathilde Caron",
+      "Hugo Touvron",
+      "Ishan Misra",
+      "Hervé Jégou",
+      "Julien Mairal",
+      "Piotr Bojanowski",
+      "Armand Joulin"
+    ]
   },
   {
     "id": "arxiv:2605.06388",
@@ -11765,7 +12026,14 @@
     "canonical_readme": "multimodal/papers/arxiv-2605.06388/README.md",
     "source_path": "multimodal/papers/arxiv-2605.06388/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "year": "2026",
+    "authors": [
+      "Nilaksh",
+      "Saurav Jha",
+      "Artem Zholus",
+      "Sarath Chandar"
+    ]
   },
   {
     "id": "arxiv:2204.01691",
@@ -15317,21 +15585,7 @@
       "Aditi Mavalankar",
       "Richie Steigerwald",
       "Chris Apps",
-      "Yusuf Aytar",
-      "Sarah Bechtle",
-      "Feryal Behbahani",
-      "Stephanie Chan",
-      "Nicolas Heess",
-      "Lucy Gonzalez",
-      "Simon Osindero",
-      "Sherjil Ozair",
-      "Scott Reed",
-      "Jingwei Zhang",
-      "Konrad Zolna",
-      "Jeff Clune",
-      "Nando de Freitas",
-      "Satinder Singh",
-      "Tim Rocktäschel"
+      "等 25 位作者"
     ]
   },
   {
@@ -15378,7 +15632,17 @@
     "legacy_paths": [],
     "content_kind": "bibliographic_card",
     "authors": [
-      "Hunyuan Foundation Model Team (Tencent)"
+      "Weijie Kong",
+      "Qi Tian",
+      "Zijian Zhang",
+      "Rox Min",
+      "Zuozhuo Dai",
+      "Jin Zhou",
+      "Jiangfeng Xiong",
+      "Xin Li",
+      "Bo Wu",
+      "Jianwei Zhang",
+      "等 52 位作者"
     ]
   },
   {
@@ -15424,7 +15688,17 @@
     "legacy_paths": [],
     "content_kind": "bibliographic_card",
     "authors": [
-      "NVIDIA"
+      "NVIDIA",
+      "Niket Agarwal",
+      "Arslan Ali",
+      "Maciej Bala",
+      "Yogesh Balaji",
+      "Erik Barker",
+      "Tiffany Cai",
+      "Prithvijit Chattopadhyay",
+      "Yongxin Chen",
+      "Yin Cui",
+      "等 77 位作者"
     ]
   },
   {
@@ -15471,7 +15745,17 @@
     "legacy_paths": [],
     "content_kind": "bibliographic_card",
     "authors": [
-      "Wan Team, Alibaba Group"
+      "Team Wan",
+      "Ang Wang",
+      "Baole Ai",
+      "Bin Wen",
+      "Chaojie Mao",
+      "Chen-Wei Xie",
+      "Di Chen",
+      "Feiwu Yu",
+      "Haiming Zhao",
+      "Jianxiao Yang",
+      "等 61 位作者"
     ]
   },
   {
@@ -15517,7 +15801,17 @@
     "legacy_paths": [],
     "content_kind": "bibliographic_card",
     "authors": [
-      "ByteDance Seed"
+      "Yu Gao",
+      "Haoyuan Guo",
+      "Tuyen Hoang",
+      "Weilin Huang",
+      "Lu Jiang",
+      "Fangyuan Kong",
+      "Huixia Li",
+      "Jiashi Li",
+      "Liang Li",
+      "Xiaojie Li",
+      "等 44 位作者"
     ]
   },
   {
@@ -15564,7 +15858,17 @@
     "legacy_paths": [],
     "content_kind": "bibliographic_card",
     "authors": [
-      "Kling Team, Kuaishou Technology"
+      "Kling Team",
+      "Jialu Chen",
+      "Yuanzheng Ci",
+      "Xiangyu Du",
+      "Zipeng Feng",
+      "Kun Gai",
+      "Sainan Guo",
+      "Feng Han",
+      "Jingbin He",
+      "Kang He",
+      "等 67 位作者"
     ]
   },
   {
@@ -15611,7 +15915,17 @@
     "legacy_paths": [],
     "content_kind": "bibliographic_card",
     "authors": [
-      "ByteDance Seed"
+      "Team Seedance",
+      "De Chen",
+      "Liyang Chen",
+      "Xin Chen",
+      "Ying Chen",
+      "Zhuo Chen",
+      "Zhuowei Chen",
+      "Feng Cheng",
+      "Tianheng Cheng",
+      "Yufeng Cheng",
+      "等 170 位作者"
     ]
   },
   {
@@ -15668,9 +15982,7 @@
       "Joe Taylor",
       "Troy Luhman",
       "Eric Luhman",
-      "Clarence Ng",
-      "Ricky Wang",
-      "Aditya Ramesh"
+      "等 13 位作者"
     ]
   },
   {
@@ -21575,7 +21887,8 @@
     "doi": null,
     "year": "2024",
     "topic_paths": [
-      "llm/long-context"
+      "llm/long-context",
+      "multimodal/vlm"
     ],
     "detail_topics": [],
     "architecture_tags": [],
@@ -22871,6 +23184,3130 @@
     "content_kind": "bibliographic_card",
     "authors": [
       "OpenAI"
+    ]
+  },
+  {
+    "id": "arxiv:2102.05918",
+    "title": "Scaling Up Visual and Vision-Language Representation Learning With Noisy Text Supervision",
+    "url": "https://arxiv.org/abs/2102.05918",
+    "arxiv_id": "2102.05918",
+    "doi": null,
+    "year": "2021",
+    "topic_paths": [
+      "multimodal/alignment",
+      "multimodal/visual-representation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2102.05918"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p337",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2102.05918",
+    "canonical_path": "multimodal/papers/arxiv-2102.05918/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2102.05918/README.md",
+    "source_path": "multimodal/papers/arxiv-2102.05918/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Chao Jia",
+      "Yinfei Yang",
+      "Ye Xia",
+      "Yi-Ting Chen",
+      "Zarana Parekh",
+      "Hieu Pham",
+      "Quoc V. Le",
+      "Yunhsuan Sung",
+      "Zhen Li",
+      "Tom Duerig"
+    ]
+  },
+  {
+    "id": "arxiv:2111.07991",
+    "title": "LiT: Zero-Shot Transfer with Locked-image text Tuning",
+    "url": "https://arxiv.org/abs/2111.07991",
+    "arxiv_id": "2111.07991",
+    "doi": null,
+    "year": "2021",
+    "topic_paths": [
+      "multimodal/alignment"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2111.07991"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p338",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2111.07991",
+    "canonical_path": "multimodal/papers/arxiv-2111.07991/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2111.07991/README.md",
+    "source_path": "multimodal/papers/arxiv-2111.07991/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Xiaohua Zhai",
+      "Xiao Wang",
+      "Basil Mustafa",
+      "Andreas Steiner",
+      "Daniel Keysers",
+      "Alexander Kolesnikov",
+      "Lucas Beyer"
+    ]
+  },
+  {
+    "id": "arxiv:2212.07143",
+    "title": "Reproducible scaling laws for contrastive language-image learning",
+    "url": "https://arxiv.org/abs/2212.07143",
+    "arxiv_id": "2212.07143",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "multimodal/alignment"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2212.07143"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p339",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding",
+      "analysis"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2212.07143",
+    "canonical_path": "multimodal/papers/arxiv-2212.07143/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2212.07143/README.md",
+    "source_path": "multimodal/papers/arxiv-2212.07143/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Mehdi Cherti",
+      "Romain Beaumont",
+      "Ross Wightman",
+      "Mitchell Wortsman",
+      "Gabriel Ilharco",
+      "Cade Gordon",
+      "Christoph Schuhmann",
+      "Ludwig Schmidt",
+      "Jenia Jitsev"
+    ]
+  },
+  {
+    "id": "arxiv:2303.15343",
+    "title": "Sigmoid Loss for Language Image Pre-Training",
+    "url": "https://arxiv.org/abs/2303.15343",
+    "arxiv_id": "2303.15343",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "multimodal/alignment",
+      "multimodal/visual-representation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2303.15343"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p340",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2303.15343",
+    "canonical_path": "multimodal/papers/arxiv-2303.15343/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2303.15343/README.md",
+    "source_path": "multimodal/papers/arxiv-2303.15343/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Xiaohua Zhai",
+      "Basil Mustafa",
+      "Alexander Kolesnikov",
+      "Lucas Beyer"
+    ]
+  },
+  {
+    "id": "arxiv:2502.14786",
+    "title": "SigLIP 2: Multilingual Vision-Language Encoders with Improved Semantic Understanding, Localization, and Dense Features",
+    "url": "https://arxiv.org/abs/2502.14786",
+    "arxiv_id": "2502.14786",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "multimodal/alignment",
+      "multimodal/vlm",
+      "multimodal/visual-representation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2502.14786"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p341",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2502.14786",
+    "canonical_path": "multimodal/papers/arxiv-2502.14786/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2502.14786/README.md",
+    "source_path": "multimodal/papers/arxiv-2502.14786/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Michael Tschannen",
+      "Alexey Gritsenko",
+      "Xiao Wang",
+      "Muhammad Ferjad Naeem",
+      "Ibrahim Alabdulmohsin",
+      "Nikhil Parthasarathy",
+      "Talfan Evans",
+      "Lucas Beyer",
+      "Ye Xia",
+      "Basil Mustafa",
+      "等 14 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2303.15389",
+    "title": "EVA-CLIP: Improved Training Techniques for CLIP at Scale",
+    "url": "https://arxiv.org/abs/2303.15389",
+    "arxiv_id": "2303.15389",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "multimodal/alignment"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2303.15389"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p342",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2303.15389",
+    "canonical_path": "multimodal/papers/arxiv-2303.15389/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2303.15389/README.md",
+    "source_path": "multimodal/papers/arxiv-2303.15389/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Quan Sun",
+      "Yuxin Fang",
+      "Ledell Wu",
+      "Xinlong Wang",
+      "Yue Cao"
+    ]
+  },
+  {
+    "id": "arxiv:2205.01917",
+    "title": "CoCa: Contrastive Captioners are Image-Text Foundation Models",
+    "url": "https://arxiv.org/abs/2205.01917",
+    "arxiv_id": "2205.01917",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "multimodal/alignment",
+      "multimodal/vlm"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2205.01917"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p343",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding",
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2205.01917",
+    "canonical_path": "multimodal/papers/arxiv-2205.01917/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2205.01917/README.md",
+    "source_path": "multimodal/papers/arxiv-2205.01917/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Jiahui Yu",
+      "Zirui Wang",
+      "Vijay Vasudevan",
+      "Legg Yeung",
+      "Mojtaba Seyedhosseini",
+      "Yonghui Wu"
+    ]
+  },
+  {
+    "id": "arxiv:2201.12086",
+    "title": "BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation",
+    "url": "https://arxiv.org/abs/2201.12086",
+    "arxiv_id": "2201.12086",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "multimodal/alignment",
+      "multimodal/vlm"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2201.12086"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p344",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding",
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2201.12086",
+    "canonical_path": "multimodal/papers/arxiv-2201.12086/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2201.12086/README.md",
+    "source_path": "multimodal/papers/arxiv-2201.12086/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Junnan Li",
+      "Dongxu Li",
+      "Caiming Xiong",
+      "Steven Hoi"
+    ]
+  },
+  {
+    "id": "arxiv:2210.08402",
+    "title": "LAION-5B: An open large-scale dataset for training next generation image-text models",
+    "url": "https://arxiv.org/abs/2210.08402",
+    "arxiv_id": "2210.08402",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "multimodal/alignment",
+      "multimodal/generation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2210.08402"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p345",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding",
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2210.08402",
+    "canonical_path": "multimodal/papers/arxiv-2210.08402/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2210.08402/README.md",
+    "source_path": "multimodal/papers/arxiv-2210.08402/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Christoph Schuhmann",
+      "Romain Beaumont",
+      "Richard Vencu",
+      "Cade Gordon",
+      "Ross Wightman",
+      "Mehdi Cherti",
+      "Theo Coombes",
+      "Aarush Katta",
+      "Clayton Mullis",
+      "Mitchell Wortsman",
+      "等 16 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2304.14108",
+    "title": "DataComp: In search of the next generation of multimodal datasets",
+    "url": "https://arxiv.org/abs/2304.14108",
+    "arxiv_id": "2304.14108",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "multimodal/alignment",
+      "cross-domain/evaluation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2304.14108"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p346",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding",
+      "evaluation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2304.14108",
+    "canonical_path": "multimodal/papers/arxiv-2304.14108/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2304.14108/README.md",
+    "source_path": "multimodal/papers/arxiv-2304.14108/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Samir Yitzhak Gadre",
+      "Gabriel Ilharco",
+      "Alex Fang",
+      "Jonathan Hayase",
+      "Georgios Smyrnis",
+      "Thao Nguyen",
+      "Ryan Marten",
+      "Mitchell Wortsman",
+      "Dhruba Ghosh",
+      "Jieyu Zhang",
+      "等 34 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2309.16671",
+    "title": "Demystifying CLIP Data",
+    "url": "https://arxiv.org/abs/2309.16671",
+    "arxiv_id": "2309.16671",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "multimodal/alignment"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2309.16671"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p347",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding",
+      "analysis"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2309.16671",
+    "canonical_path": "multimodal/papers/arxiv-2309.16671/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2309.16671/README.md",
+    "source_path": "multimodal/papers/arxiv-2309.16671/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Hu Xu",
+      "Saining Xie",
+      "Xiaoqing Ellen Tan",
+      "Po-Yao Huang",
+      "Russell Howes",
+      "Vasu Sharma",
+      "Shang-Wen Li",
+      "Gargi Ghosh",
+      "Luke Zettlemoyer",
+      "Christoph Feichtenhofer"
+    ]
+  },
+  {
+    "id": "arxiv:2204.03162",
+    "title": "Winoground: Probing Vision and Language Models for Visio-Linguistic Compositionality",
+    "url": "https://arxiv.org/abs/2204.03162",
+    "arxiv_id": "2204.03162",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "multimodal/alignment",
+      "multimodal/vlm"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2204.03162"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p348",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "evaluation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2204.03162",
+    "canonical_path": "multimodal/papers/arxiv-2204.03162/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2204.03162/README.md",
+    "source_path": "multimodal/papers/arxiv-2204.03162/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Tristan Thrush",
+      "Ryan Jiang",
+      "Max Bartolo",
+      "Amanpreet Singh",
+      "Adina Williams",
+      "Douwe Kiela",
+      "Candace Ross"
+    ]
+  },
+  {
+    "id": "arxiv:2210.01936",
+    "title": "When and why vision-language models behave like bags-of-words, and what to do about it?",
+    "url": "https://arxiv.org/abs/2210.01936",
+    "arxiv_id": "2210.01936",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "multimodal/alignment"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2210.01936"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p349",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "evaluation",
+      "analysis"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2210.01936",
+    "canonical_path": "multimodal/papers/arxiv-2210.01936/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2210.01936/README.md",
+    "source_path": "multimodal/papers/arxiv-2210.01936/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Mert Yuksekgonul",
+      "Federico Bianchi",
+      "Pratyusha Kalluri",
+      "Dan Jurafsky",
+      "James Zou"
+    ]
+  },
+  {
+    "id": "arxiv:2306.14610",
+    "title": "SugarCrepe: Fixing Hackable Benchmarks for Vision-Language Compositionality",
+    "url": "https://arxiv.org/abs/2306.14610",
+    "arxiv_id": "2306.14610",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "multimodal/alignment",
+      "cross-domain/evaluation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2306.14610"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p350",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "evaluation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2306.14610",
+    "canonical_path": "multimodal/papers/arxiv-2306.14610/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2306.14610/README.md",
+    "source_path": "multimodal/papers/arxiv-2306.14610/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Cheng-Yu Hsieh",
+      "Jieyu Zhang",
+      "Zixian Ma",
+      "Aniruddha Kembhavi",
+      "Ranjay Krishna"
+    ]
+  },
+  {
+    "id": "arxiv:2401.06209",
+    "title": "Eyes Wide Shut? Exploring the Visual Shortcomings of Multimodal LLMs",
+    "url": "https://arxiv.org/abs/2401.06209",
+    "arxiv_id": "2401.06209",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "multimodal/alignment",
+      "multimodal/vlm",
+      "multimodal/visual-representation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2401.06209"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p351",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "evaluation",
+      "analysis"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2401.06209",
+    "canonical_path": "multimodal/papers/arxiv-2401.06209/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2401.06209/README.md",
+    "source_path": "multimodal/papers/arxiv-2401.06209/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Shengbang Tong",
+      "Zhuang Liu",
+      "Yuexiang Zhai",
+      "Yi Ma",
+      "Yann LeCun",
+      "Saining Xie"
+    ]
+  },
+  {
+    "id": "arxiv:1406.2199",
+    "title": "Two-Stream Convolutional Networks for Action Recognition in Videos",
+    "url": "https://arxiv.org/abs/1406.2199",
+    "arxiv_id": "1406.2199",
+    "doi": null,
+    "year": "2014",
+    "topic_paths": [
+      "multimodal/video-temporal"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/1406.2199"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p352",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "video"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-1406.2199",
+    "canonical_path": "multimodal/papers/arxiv-1406.2199/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-1406.2199/README.md",
+    "source_path": "multimodal/papers/arxiv-1406.2199/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Karen Simonyan",
+      "Andrew Zisserman"
+    ]
+  },
+  {
+    "id": "arxiv:1705.07750",
+    "title": "Quo Vadis, Action Recognition? A New Model and the Kinetics Dataset",
+    "url": "https://arxiv.org/abs/1705.07750",
+    "arxiv_id": "1705.07750",
+    "doi": null,
+    "year": "2017",
+    "topic_paths": [
+      "multimodal/video-temporal"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/1705.07750"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p353",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "video"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-1705.07750",
+    "canonical_path": "multimodal/papers/arxiv-1705.07750/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-1705.07750/README.md",
+    "source_path": "multimodal/papers/arxiv-1705.07750/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "João Carreira",
+      "Andrew Zisserman"
+    ]
+  },
+  {
+    "id": "arxiv:1706.04261",
+    "title": "The \"something something\" video database for learning and evaluating visual common sense",
+    "url": "https://arxiv.org/abs/1706.04261",
+    "arxiv_id": "1706.04261",
+    "doi": null,
+    "year": "2017",
+    "topic_paths": [
+      "multimodal/video-temporal"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/1706.04261"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p354",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "video",
+      "text"
+    ],
+    "task_tags": [
+      "understanding",
+      "evaluation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-1706.04261",
+    "canonical_path": "multimodal/papers/arxiv-1706.04261/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-1706.04261/README.md",
+    "source_path": "multimodal/papers/arxiv-1706.04261/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Raghav Goyal",
+      "Samira Ebrahimi Kahou",
+      "Vincent Michalski",
+      "Joanna Materzyńska",
+      "Susanne Westphal",
+      "Heuna Kim",
+      "Valentin Haenel",
+      "Ingo Fruend",
+      "Peter Yianilos",
+      "Moritz Mueller-Freitag",
+      "等 14 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:1812.03982",
+    "title": "SlowFast Networks for Video Recognition",
+    "url": "https://arxiv.org/abs/1812.03982",
+    "arxiv_id": "1812.03982",
+    "doi": null,
+    "year": "2018",
+    "topic_paths": [
+      "multimodal/video-temporal"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/1812.03982"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p355",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "video"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-1812.03982",
+    "canonical_path": "multimodal/papers/arxiv-1812.03982/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-1812.03982/README.md",
+    "source_path": "multimodal/papers/arxiv-1812.03982/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Christoph Feichtenhofer",
+      "Haoqi Fan",
+      "Jitendra Malik",
+      "Kaiming He"
+    ]
+  },
+  {
+    "id": "arxiv:2102.05095",
+    "title": "Is Space-Time Attention All You Need for Video Understanding?",
+    "url": "https://arxiv.org/abs/2102.05095",
+    "arxiv_id": "2102.05095",
+    "doi": null,
+    "year": "2021",
+    "topic_paths": [
+      "multimodal/video-temporal"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2102.05095"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p356",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "video"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2102.05095",
+    "canonical_path": "multimodal/papers/arxiv-2102.05095/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2102.05095/README.md",
+    "source_path": "multimodal/papers/arxiv-2102.05095/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Gedas Bertasius",
+      "Heng Wang",
+      "Lorenzo Torresani"
+    ]
+  },
+  {
+    "id": "arxiv:2103.15691",
+    "title": "ViViT: A Video Vision Transformer",
+    "url": "https://arxiv.org/abs/2103.15691",
+    "arxiv_id": "2103.15691",
+    "doi": null,
+    "year": "2021",
+    "topic_paths": [
+      "multimodal/video-temporal"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2103.15691"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p357",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "video"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2103.15691",
+    "canonical_path": "multimodal/papers/arxiv-2103.15691/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2103.15691/README.md",
+    "source_path": "multimodal/papers/arxiv-2103.15691/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Anurag Arnab",
+      "Mostafa Dehghani",
+      "Georg Heigold",
+      "Chen Sun",
+      "Mario Lučić",
+      "Cordelia Schmid"
+    ]
+  },
+  {
+    "id": "arxiv:2203.12602",
+    "title": "VideoMAE: Masked Autoencoders are Data-Efficient Learners for Self-Supervised Video Pre-Training",
+    "url": "https://arxiv.org/abs/2203.12602",
+    "arxiv_id": "2203.12602",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "multimodal/video-temporal",
+      "multimodal/visual-representation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2203.12602"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p358",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "video"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2203.12602",
+    "canonical_path": "multimodal/papers/arxiv-2203.12602/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2203.12602/README.md",
+    "source_path": "multimodal/papers/arxiv-2203.12602/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Zhan Tong",
+      "Yibing Song",
+      "Jue Wang",
+      "Limin Wang"
+    ]
+  },
+  {
+    "id": "arxiv:2206.03428",
+    "title": "Revealing Single Frame Bias for Video-and-Language Learning",
+    "url": "https://arxiv.org/abs/2206.03428",
+    "arxiv_id": "2206.03428",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "multimodal/video-temporal",
+      "multimodal/alignment"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2206.03428"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p359",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "video",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding",
+      "analysis",
+      "evaluation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2206.03428",
+    "canonical_path": "multimodal/papers/arxiv-2206.03428/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2206.03428/README.md",
+    "source_path": "multimodal/papers/arxiv-2206.03428/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Jie Lei",
+      "Tamara L. Berg",
+      "Mohit Bansal"
+    ]
+  },
+  {
+    "id": "arxiv:2308.09126",
+    "title": "EgoSchema: A Diagnostic Benchmark for Very Long-form Video Language Understanding",
+    "url": "https://arxiv.org/abs/2308.09126",
+    "arxiv_id": "2308.09126",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "multimodal/video-temporal"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2308.09126"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p360",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "video",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding",
+      "evaluation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2308.09126",
+    "canonical_path": "multimodal/papers/arxiv-2308.09126/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2308.09126/README.md",
+    "source_path": "multimodal/papers/arxiv-2308.09126/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Karttikeya Mangalam",
+      "Raiymbek Akshulakov",
+      "Jitendra Malik"
+    ]
+  },
+  {
+    "id": "arxiv:2404.08471",
+    "title": "Revisiting Feature Prediction for Learning Visual Representations from Video",
+    "url": "https://arxiv.org/abs/2404.08471",
+    "arxiv_id": "2404.08471",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "multimodal/video-temporal",
+      "multimodal/visual-representation",
+      "multimodal/world-models"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2404.08471"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p361",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "video",
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2404.08471",
+    "canonical_path": "multimodal/papers/arxiv-2404.08471/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2404.08471/README.md",
+    "source_path": "multimodal/papers/arxiv-2404.08471/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Adrien Bardes",
+      "Quentin Garrido",
+      "Jean Ponce",
+      "Xinlei Chen",
+      "Michael Rabbat",
+      "Yann LeCun",
+      "Mahmoud Assran",
+      "Nicolas Ballas"
+    ]
+  },
+  {
+    "id": "arxiv:2403.15377",
+    "title": "InternVideo2: Scaling Foundation Models for Multimodal Video Understanding",
+    "url": "https://arxiv.org/abs/2403.15377",
+    "arxiv_id": "2403.15377",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "multimodal/video-temporal",
+      "multimodal/alignment"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2403.15377"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p362",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "video",
+      "audio",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2403.15377",
+    "canonical_path": "multimodal/papers/arxiv-2403.15377/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2403.15377/README.md",
+    "source_path": "multimodal/papers/arxiv-2403.15377/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Yi Wang",
+      "Kunchang Li",
+      "Xinhao Li",
+      "Jiashuo Yu",
+      "Yinan He",
+      "Chenting Wang",
+      "Guo Chen",
+      "Baoqi Pei",
+      "Ziang Yan",
+      "Rongkun Zheng",
+      "等 20 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2311.10122",
+    "title": "Video-LLaVA: Learning United Visual Representation by Alignment Before Projection",
+    "url": "https://arxiv.org/abs/2311.10122",
+    "arxiv_id": "2311.10122",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "multimodal/video-temporal",
+      "multimodal/vlm"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2311.10122"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p363",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "video",
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2311.10122",
+    "canonical_path": "multimodal/papers/arxiv-2311.10122/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2311.10122/README.md",
+    "source_path": "multimodal/papers/arxiv-2311.10122/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Bin Lin",
+      "Yang Ye",
+      "Bin Zhu",
+      "Jiaxi Cui",
+      "Munan Ning",
+      "Peng Jin",
+      "Li Yuan"
+    ]
+  },
+  {
+    "id": "arxiv:2410.02713",
+    "title": "LLaVA-Video: Video Instruction Tuning With Synthetic Data",
+    "url": "https://arxiv.org/abs/2410.02713",
+    "arxiv_id": "2410.02713",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "multimodal/video-temporal",
+      "multimodal/vlm"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2410.02713"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p364",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "video",
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2410.02713",
+    "canonical_path": "multimodal/papers/arxiv-2410.02713/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2410.02713/README.md",
+    "source_path": "multimodal/papers/arxiv-2410.02713/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Yuanhan Zhang",
+      "Jinming Wu",
+      "Wei Li",
+      "Bo Li",
+      "Zejun Ma",
+      "Ziwei Liu",
+      "Chunyuan Li"
+    ],
+    "previous_titles": [
+      "Video Instruction Tuning With Synthetic Data"
+    ]
+  },
+  {
+    "id": "arxiv:2405.21075",
+    "title": "Video-MME: The First-Ever Comprehensive Evaluation Benchmark of Multi-modal LLMs in Video Analysis",
+    "url": "https://arxiv.org/abs/2405.21075",
+    "arxiv_id": "2405.21075",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "multimodal/video-temporal",
+      "multimodal/vlm"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2405.21075"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p365",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "video",
+      "audio",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding",
+      "evaluation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2405.21075",
+    "canonical_path": "multimodal/papers/arxiv-2405.21075/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2405.21075/README.md",
+    "source_path": "multimodal/papers/arxiv-2405.21075/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Chaoyou Fu",
+      "Yuhan Dai",
+      "Yongdong Luo",
+      "Lei Li",
+      "Shuhuai Ren",
+      "Renrui Zhang",
+      "Zihan Wang",
+      "Chenyu Zhou",
+      "Yunhang Shen",
+      "Mengdan Zhang",
+      "等 21 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2408.14837",
+    "title": "Diffusion Models Are Real-Time Game Engines",
+    "url": "https://arxiv.org/abs/2408.14837",
+    "arxiv_id": "2408.14837",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "multimodal/world-models",
+      "multimodal/generation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2408.14837"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p366",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "video",
+      "action"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2408.14837",
+    "canonical_path": "multimodal/papers/arxiv-2408.14837/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2408.14837/README.md",
+    "source_path": "multimodal/papers/arxiv-2408.14837/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Dani Valevski",
+      "Yaniv Leviathan",
+      "Moab Arar",
+      "Shlomi Fruchter"
+    ]
+  },
+  {
+    "id": "arxiv:2309.17080",
+    "title": "GAIA-1: A Generative World Model for Autonomous Driving",
+    "url": "https://arxiv.org/abs/2309.17080",
+    "arxiv_id": "2309.17080",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "multimodal/world-models",
+      "multimodal/generation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2309.17080"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p367",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "video",
+      "action",
+      "multimodal"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2309.17080",
+    "canonical_path": "multimodal/papers/arxiv-2309.17080/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2309.17080/README.md",
+    "source_path": "multimodal/papers/arxiv-2309.17080/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Anthony Hu",
+      "Lloyd Russell",
+      "Hudson Yeo",
+      "Zak Murez",
+      "George Fedoseev",
+      "Alex Kendall",
+      "Jamie Shotton",
+      "Gianluca Corrado"
+    ]
+  },
+  {
+    "id": "arxiv:2501.09038",
+    "title": "Do generative video models understand physical principles?",
+    "url": "https://arxiv.org/abs/2501.09038",
+    "arxiv_id": "2501.09038",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "multimodal/world-models",
+      "multimodal/generation",
+      "cross-domain/evaluation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2501.09038"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p368",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "video"
+    ],
+    "task_tags": [
+      "generation",
+      "evaluation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2501.09038",
+    "canonical_path": "multimodal/papers/arxiv-2501.09038/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2501.09038/README.md",
+    "source_path": "multimodal/papers/arxiv-2501.09038/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Saman Motamed",
+      "Laura Culp",
+      "Kevin Swersky",
+      "Priyank Jaini",
+      "Robert Geirhos"
+    ]
+  },
+  {
+    "id": "arxiv:2411.02385",
+    "title": "How Far is Video Generation from World Model: A Physical Law Perspective",
+    "url": "https://arxiv.org/abs/2411.02385",
+    "arxiv_id": "2411.02385",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "multimodal/world-models",
+      "multimodal/generation",
+      "cross-domain/evaluation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2411.02385"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p369",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "video"
+    ],
+    "task_tags": [
+      "generation",
+      "evaluation",
+      "analysis"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2411.02385",
+    "canonical_path": "multimodal/papers/arxiv-2411.02385/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2411.02385/README.md",
+    "source_path": "multimodal/papers/arxiv-2411.02385/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Bingyi Kang",
+      "Yang Yue",
+      "Rui Lu",
+      "Zhijie Lin",
+      "Yang Zhao",
+      "Kaixin Wang",
+      "Gao Huang",
+      "Jiashi Feng"
+    ]
+  },
+  {
+    "id": "arxiv:2406.03520",
+    "title": "VideoPhy: Evaluating Physical Commonsense for Video Generation",
+    "url": "https://arxiv.org/abs/2406.03520",
+    "arxiv_id": "2406.03520",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "multimodal/world-models",
+      "multimodal/generation",
+      "cross-domain/evaluation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2406.03520"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p370",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "video",
+      "text"
+    ],
+    "task_tags": [
+      "generation",
+      "evaluation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2406.03520",
+    "canonical_path": "multimodal/papers/arxiv-2406.03520/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2406.03520/README.md",
+    "source_path": "multimodal/papers/arxiv-2406.03520/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Hritik Bansal",
+      "Zongyu Lin",
+      "Tianyi Xie",
+      "Zeshun Zong",
+      "Michal Yarom",
+      "Yonatan Bitton",
+      "Chenfanfu Jiang",
+      "Yizhou Sun",
+      "Kai-Wei Chang",
+      "Aditya Grover"
+    ]
+  },
+  {
+    "id": "arxiv:2405.12399",
+    "title": "Diffusion for World Modeling: Visual Details Matter in Atari",
+    "url": "https://arxiv.org/abs/2405.12399",
+    "arxiv_id": "2405.12399",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "multimodal/world-models",
+      "multimodal/generation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2405.12399"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p371",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "video",
+      "action"
+    ],
+    "task_tags": [
+      "generation",
+      "decision"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2405.12399",
+    "canonical_path": "multimodal/papers/arxiv-2405.12399/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2405.12399/README.md",
+    "source_path": "multimodal/papers/arxiv-2405.12399/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Eloi Alonso",
+      "Adam Jelley",
+      "Vincent Micheli",
+      "Anssi Kanervisto",
+      "Amos Storkey",
+      "Tim Pearce",
+      "François Fleuret"
+    ]
+  },
+  {
+    "id": "arxiv:2204.14198",
+    "title": "Flamingo: a Visual Language Model for Few-Shot Learning",
+    "url": "https://arxiv.org/abs/2204.14198",
+    "arxiv_id": "2204.14198",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "multimodal/vlm"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2204.14198"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p372",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "video",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2204.14198",
+    "canonical_path": "multimodal/papers/arxiv-2204.14198/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2204.14198/README.md",
+    "source_path": "multimodal/papers/arxiv-2204.14198/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Jean-Baptiste Alayrac",
+      "Jeff Donahue",
+      "Pauline Luc",
+      "Antoine Miech",
+      "Iain Barr",
+      "Yana Hasson",
+      "Karel Lenc",
+      "Arthur Mensch",
+      "Katie Millican",
+      "Malcolm Reynolds",
+      "等 27 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2209.06794",
+    "title": "PaLI: A Jointly-Scaled Multilingual Language-Image Model",
+    "url": "https://arxiv.org/abs/2209.06794",
+    "arxiv_id": "2209.06794",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "multimodal/vlm"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2209.06794"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p373",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding",
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2209.06794",
+    "canonical_path": "multimodal/papers/arxiv-2209.06794/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2209.06794/README.md",
+    "source_path": "multimodal/papers/arxiv-2209.06794/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Xi Chen",
+      "Xiao Wang",
+      "Soravit Changpinyo",
+      "AJ Piergiovanni",
+      "Piotr Padlewski",
+      "Daniel Salz",
+      "Sebastian Goodman",
+      "Adam Grycner",
+      "Basil Mustafa",
+      "Lucas Beyer",
+      "等 29 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2301.12597",
+    "title": "BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models",
+    "url": "https://arxiv.org/abs/2301.12597",
+    "arxiv_id": "2301.12597",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "multimodal/vlm"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2301.12597"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p374",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding",
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2301.12597",
+    "canonical_path": "multimodal/papers/arxiv-2301.12597/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2301.12597/README.md",
+    "source_path": "multimodal/papers/arxiv-2301.12597/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Junnan Li",
+      "Dongxu Li",
+      "Silvio Savarese",
+      "Steven Hoi"
+    ]
+  },
+  {
+    "id": "arxiv:2310.03744",
+    "title": "Improved Baselines with Visual Instruction Tuning",
+    "url": "https://arxiv.org/abs/2310.03744",
+    "arxiv_id": "2310.03744",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "multimodal/vlm"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2310.03744"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p375",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding",
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2310.03744",
+    "canonical_path": "multimodal/papers/arxiv-2310.03744/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2310.03744/README.md",
+    "source_path": "multimodal/papers/arxiv-2310.03744/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Haotian Liu",
+      "Chunyuan Li",
+      "Yuheng Li",
+      "Yong Jae Lee"
+    ]
+  },
+  {
+    "id": "arxiv:2305.10355",
+    "title": "Evaluating Object Hallucination in Large Vision-Language Models",
+    "url": "https://arxiv.org/abs/2305.10355",
+    "arxiv_id": "2305.10355",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "multimodal/vlm"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2305.10355"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p376",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "evaluation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2305.10355",
+    "canonical_path": "multimodal/papers/arxiv-2305.10355/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2305.10355/README.md",
+    "source_path": "multimodal/papers/arxiv-2305.10355/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Yifan Li",
+      "Yifan Du",
+      "Kun Zhou",
+      "Jinpeng Wang",
+      "Wayne Xin Zhao",
+      "Ji-Rong Wen"
+    ]
+  },
+  {
+    "id": "arxiv:2308.12966",
+    "title": "Qwen-VL: A Versatile Vision-Language Model for Understanding, Localization, Text Reading, and Beyond",
+    "url": "https://arxiv.org/abs/2308.12966",
+    "arxiv_id": "2308.12966",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "multimodal/vlm"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2308.12966"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p377",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding",
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2308.12966",
+    "canonical_path": "multimodal/papers/arxiv-2308.12966/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2308.12966/README.md",
+    "source_path": "multimodal/papers/arxiv-2308.12966/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Jinze Bai",
+      "Shuai Bai",
+      "Shusheng Yang",
+      "Shijie Wang",
+      "Sinan Tan",
+      "Peng Wang",
+      "Junyang Lin",
+      "Chang Zhou",
+      "Jingren Zhou"
+    ],
+    "previous_titles": [
+      "Qwen-VL: A Frontier Large Vision-Language Model with Versatile Abilities"
+    ]
+  },
+  {
+    "id": "arxiv:2312.14238",
+    "title": "InternVL: Scaling up Vision Foundation Models and Aligning for Generic Visual-Linguistic Tasks",
+    "url": "https://arxiv.org/abs/2312.14238",
+    "arxiv_id": "2312.14238",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "multimodal/vlm"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2312.14238"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p378",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "video",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2312.14238",
+    "canonical_path": "multimodal/papers/arxiv-2312.14238/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2312.14238/README.md",
+    "source_path": "multimodal/papers/arxiv-2312.14238/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Zhe Chen",
+      "Jiannan Wu",
+      "Wenhai Wang",
+      "Weijie Su",
+      "Guo Chen",
+      "Sen Xing",
+      "Muyan Zhong",
+      "Qinglong Zhang",
+      "Xizhou Zhu",
+      "Lewei Lu",
+      "等 15 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2312.11805",
+    "title": "Gemini: A Family of Highly Capable Multimodal Models",
+    "url": "https://arxiv.org/abs/2312.11805",
+    "arxiv_id": "2312.11805",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "multimodal/vlm"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2312.11805"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "official_technical_report",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p379",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "video",
+      "audio",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding",
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2312.11805",
+    "canonical_path": "multimodal/papers/arxiv-2312.11805/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2312.11805/README.md",
+    "source_path": "multimodal/papers/arxiv-2312.11805/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Gemini Team",
+      "Rohan Anil",
+      "Sebastian Borgeaud",
+      "Jean-Baptiste Alayrac",
+      "Jiahui Yu",
+      "Radu Soricut",
+      "Johan Schalkwyk",
+      "Andrew M. Dai",
+      "Anja Hauth",
+      "Katie Millican",
+      "等 1351 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2403.05525",
+    "title": "DeepSeek-VL: Towards Real-World Vision-Language Understanding",
+    "url": "https://arxiv.org/abs/2403.05525",
+    "arxiv_id": "2403.05525",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "multimodal/vlm"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2403.05525"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "official_technical_report",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p380",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2403.05525",
+    "canonical_path": "multimodal/papers/arxiv-2403.05525/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2403.05525/README.md",
+    "source_path": "multimodal/papers/arxiv-2403.05525/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Haoyu Lu",
+      "Wen Liu",
+      "Bo Zhang",
+      "Bingxuan Wang",
+      "Kai Dong",
+      "Bo Liu",
+      "Jingxiang Sun",
+      "Tongzheng Ren",
+      "Zhuoshu Li",
+      "Hao Yang",
+      "等 15 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2403.20330",
+    "title": "Are We on the Right Way for Evaluating Large Vision-Language Models?",
+    "url": "https://arxiv.org/abs/2403.20330",
+    "arxiv_id": "2403.20330",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "multimodal/vlm"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2403.20330"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p381",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "evaluation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2403.20330",
+    "canonical_path": "multimodal/papers/arxiv-2403.20330/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2403.20330/README.md",
+    "source_path": "multimodal/papers/arxiv-2403.20330/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Lin Chen",
+      "Jinsong Li",
+      "Xiaoyi Dong",
+      "Pan Zhang",
+      "Yuhang Zang",
+      "Zehui Chen",
+      "Haodong Duan",
+      "Jiaqi Wang",
+      "Yu Qiao",
+      "Dahua Lin",
+      "Feng Zhao"
+    ]
+  },
+  {
+    "id": "arxiv:2404.16821",
+    "title": "How Far Are We to GPT-4V? Closing the Gap to Commercial Multimodal Models with Open-Source Suites",
+    "url": "https://arxiv.org/abs/2404.16821",
+    "arxiv_id": "2404.16821",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "multimodal/vlm"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2404.16821"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "official_technical_report",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p382",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2404.16821",
+    "canonical_path": "multimodal/papers/arxiv-2404.16821/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2404.16821/README.md",
+    "source_path": "multimodal/papers/arxiv-2404.16821/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Zhe Chen",
+      "Weiyun Wang",
+      "Hao Tian",
+      "Shenglong Ye",
+      "Zhangwei Gao",
+      "Erfei Cui",
+      "Wenwen Tong",
+      "Kongzhi Hu",
+      "Jiapeng Luo",
+      "Zheng Ma",
+      "等 35 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2405.09818",
+    "title": "Chameleon: Mixed-Modal Early-Fusion Foundation Models",
+    "url": "https://arxiv.org/abs/2405.09818",
+    "arxiv_id": "2405.09818",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "multimodal/vlm",
+      "multimodal/generation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2405.09818"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p383",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding",
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2405.09818",
+    "canonical_path": "multimodal/papers/arxiv-2405.09818/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2405.09818/README.md",
+    "source_path": "multimodal/papers/arxiv-2405.09818/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Chameleon Team"
+    ]
+  },
+  {
+    "id": "arxiv:2406.16860",
+    "title": "Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs",
+    "url": "https://arxiv.org/abs/2406.16860",
+    "arxiv_id": "2406.16860",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "multimodal/vlm",
+      "multimodal/visual-representation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2406.16860"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p384",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding",
+      "evaluation",
+      "analysis"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2406.16860",
+    "canonical_path": "multimodal/papers/arxiv-2406.16860/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2406.16860/README.md",
+    "source_path": "multimodal/papers/arxiv-2406.16860/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Shengbang Tong",
+      "Ellis Brown",
+      "Penghao Wu",
+      "Sanghyun Woo",
+      "Manoj Middepogu",
+      "Sai Charitha Akula",
+      "Jihan Yang",
+      "Shusheng Yang",
+      "Adithya Iyer",
+      "Xichen Pan",
+      "等 14 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2409.12191",
+    "title": "Qwen2-VL: Enhancing Vision-Language Model's Perception of the World at Any Resolution",
+    "url": "https://arxiv.org/abs/2409.12191",
+    "arxiv_id": "2409.12191",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "multimodal/vlm",
+      "multimodal/video-temporal"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2409.12191"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p385",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "video",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding",
+      "decision"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2409.12191",
+    "canonical_path": "multimodal/papers/arxiv-2409.12191/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2409.12191/README.md",
+    "source_path": "multimodal/papers/arxiv-2409.12191/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Peng Wang",
+      "Shuai Bai",
+      "Sinan Tan",
+      "Shijie Wang",
+      "Zhihao Fan",
+      "Jinze Bai",
+      "Keqin Chen",
+      "Xuejing Liu",
+      "Jialin Wang",
+      "Wenbin Ge",
+      "等 19 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2409.17146",
+    "title": "Molmo and PixMo: Open Weights and Open Data for State-of-the-Art Vision-Language Models",
+    "url": "https://arxiv.org/abs/2409.17146",
+    "arxiv_id": "2409.17146",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "multimodal/vlm"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2409.17146"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p386",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2409.17146",
+    "canonical_path": "multimodal/papers/arxiv-2409.17146/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2409.17146/README.md",
+    "source_path": "multimodal/papers/arxiv-2409.17146/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Matt Deitke",
+      "Christopher Clark",
+      "Sangho Lee",
+      "Rohun Tripathi",
+      "Yue Yang",
+      "Jae Sung Park",
+      "Mohammadreza Salehi",
+      "Niklas Muennighoff",
+      "Kyle Lo",
+      "Luca Soldaini",
+      "等 50 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2412.05271",
+    "title": "Expanding Performance Boundaries of Open-Source Multimodal Models with Model, Data, and Test-Time Scaling",
+    "url": "https://arxiv.org/abs/2412.05271",
+    "arxiv_id": "2412.05271",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "multimodal/vlm"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2412.05271"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "official_technical_report",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p387",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "video",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2412.05271",
+    "canonical_path": "multimodal/papers/arxiv-2412.05271/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2412.05271/README.md",
+    "source_path": "multimodal/papers/arxiv-2412.05271/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Zhe Chen",
+      "Weiyun Wang",
+      "Yue Cao",
+      "Yangzhou Liu",
+      "Zhangwei Gao",
+      "Erfei Cui",
+      "Jinguo Zhu",
+      "Shenglong Ye",
+      "Hao Tian",
+      "Zhaoyang Liu",
+      "等 42 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2412.10302",
+    "title": "DeepSeek-VL2: Mixture-of-Experts Vision-Language Models for Advanced Multimodal Understanding",
+    "url": "https://arxiv.org/abs/2412.10302",
+    "arxiv_id": "2412.10302",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "multimodal/vlm"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2412.10302"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "official_technical_report",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p388",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2412.10302",
+    "canonical_path": "multimodal/papers/arxiv-2412.10302/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2412.10302/README.md",
+    "source_path": "multimodal/papers/arxiv-2412.10302/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Zhiyu Wu",
+      "Xiaokang Chen",
+      "Zizheng Pan",
+      "Xingchao Liu",
+      "Wen Liu",
+      "Damai Dai",
+      "Huazuo Gao",
+      "Yiyang Ma",
+      "Chengyue Wu",
+      "Bingxuan Wang",
+      "等 27 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2502.13923",
+    "title": "Qwen2.5-VL Technical Report",
+    "url": "https://arxiv.org/abs/2502.13923",
+    "arxiv_id": "2502.13923",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "multimodal/vlm",
+      "multimodal/video-temporal"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2502.13923"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "official_technical_report",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p389",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "video",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding",
+      "decision"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2502.13923",
+    "canonical_path": "multimodal/papers/arxiv-2502.13923/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2502.13923/README.md",
+    "source_path": "multimodal/papers/arxiv-2502.13923/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Shuai Bai",
+      "Keqin Chen",
+      "Xuejing Liu",
+      "Jialin Wang",
+      "Wenbin Ge",
+      "Sibo Song",
+      "Kai Dang",
+      "Peng Wang",
+      "Shijie Wang",
+      "Jun Tang",
+      "等 27 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2504.07491",
+    "title": "Kimi-VL Technical Report",
+    "url": "https://arxiv.org/abs/2504.07491",
+    "arxiv_id": "2504.07491",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "multimodal/vlm",
+      "llm/posttraining/rl"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2504.07491"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "official_technical_report",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p390",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "video",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding",
+      "decision"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2504.07491",
+    "canonical_path": "multimodal/papers/arxiv-2504.07491/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2504.07491/README.md",
+    "source_path": "multimodal/papers/arxiv-2504.07491/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Kimi Team",
+      "Angang Du",
+      "Bohong Yin",
+      "Bowei Xing",
+      "Bowen Qu",
+      "Bowen Wang",
+      "Cheng Chen",
+      "Chenlin Zhang",
+      "Chenzhuang Du",
+      "Chu Wei",
+      "等 95 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2504.10479",
+    "title": "InternVL3: Exploring Advanced Training and Test-Time Recipes for Open-Source Multimodal Models",
+    "url": "https://arxiv.org/abs/2504.10479",
+    "arxiv_id": "2504.10479",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "multimodal/vlm"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2504.10479"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "official_technical_report",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p391",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "video",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2504.10479",
+    "canonical_path": "multimodal/papers/arxiv-2504.10479/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2504.10479/README.md",
+    "source_path": "multimodal/papers/arxiv-2504.10479/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Jinguo Zhu",
+      "Weiyun Wang",
+      "Zhe Chen",
+      "Zhaoyang Liu",
+      "Shenglong Ye",
+      "Lixin Gu",
+      "Hao Tian",
+      "Yuchen Duan",
+      "Weijie Su",
+      "Jie Shao",
+      "等 51 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2511.21631",
+    "title": "Qwen3-VL Technical Report",
+    "url": "https://arxiv.org/abs/2511.21631",
+    "arxiv_id": "2511.21631",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "multimodal/vlm",
+      "multimodal/video-temporal",
+      "llm/posttraining/rl"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2511.21631"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "official_technical_report",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p392",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "video",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding",
+      "decision"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2511.21631",
+    "canonical_path": "multimodal/papers/arxiv-2511.21631/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2511.21631/README.md",
+    "source_path": "multimodal/papers/arxiv-2511.21631/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Shuai Bai",
+      "Yuxuan Cai",
+      "Ruizhe Chen",
+      "Keqin Chen",
+      "Xionghui Chen",
+      "Zesen Cheng",
+      "Lianghao Deng",
+      "Wei Ding",
+      "Chang Gao",
+      "Chunjiang Ge",
+      "等 64 位作者"
+    ]
+  },
+  {
+    "id": "url:https://deepmind.google/discover/blog/genie-2-a-large-scale-foundation-world-model/",
+    "title": "Genie 2: A large-scale foundation world model",
+    "url": "https://deepmind.google/discover/blog/genie-2-a-large-scale-foundation-world-model/",
+    "arxiv_id": null,
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "multimodal/world-models",
+      "multimodal/generation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://deepmind.google/discover/blog/genie-2-a-large-scale-foundation-world-model/"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "official_blog",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p393",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "video",
+      "action"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/genie-2-blog",
+    "canonical_path": "multimodal/papers/genie-2-blog/README.md",
+    "canonical_readme": "multimodal/papers/genie-2-blog/README.md",
+    "source_path": "multimodal/papers/genie-2-blog/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Jack Parker-Holder",
+      "Philip Ball",
+      "Jake Bruce",
+      "Vibhavari Dasagi",
+      "Kristian Holsheimer",
+      "Christos Kaplanis",
+      "Alexandre Moufarek",
+      "Guy Scully",
+      "Jeremy Shar",
+      "Jimmy Shi",
+      "等 32 位作者"
+    ]
+  },
+  {
+    "id": "url:https://deepmind.google/discover/blog/genie-3-a-new-frontier-for-world-models/",
+    "title": "Genie 3: A new frontier for world models",
+    "url": "https://deepmind.google/discover/blog/genie-3-a-new-frontier-for-world-models/",
+    "arxiv_id": null,
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "multimodal/world-models",
+      "multimodal/generation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://deepmind.google/discover/blog/genie-3-a-new-frontier-for-world-models/"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "official_blog",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p394",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "video",
+      "action",
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/genie-3-blog",
+    "canonical_path": "multimodal/papers/genie-3-blog/README.md",
+    "canonical_readme": "multimodal/papers/genie-3-blog/README.md",
+    "source_path": "multimodal/papers/genie-3-blog/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Jack Parker-Holder",
+      "Shlomi Fruchter"
     ]
   }
 ]

@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2311.10122",
+  "title": "Video-LLaVA: Learning United Visual Representation by Alignment Before Projection",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2311.10122",
+  "official_url": "https://arxiv.org/abs/2311.10122",
+  "official_fulltext_url": "https://arxiv.org/pdf/2311.10122v3",
+  "read_version": "v3",
+  "version_status": "checked_v3",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了Abstract、Sec.1、Sec.3（LanguageBind、共享投影、联合训练）、Sec.4.1.3（8 帧采样）、Sec.4.2（Table 2，GPT-3.5 评分）、Sec.4.4（Table 6 联合训练）、Sec.5（局限与未来方向）；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Bin Lin",
+    "Yang Ye",
+    "Bin Zhu",
+    "Jiaxi Cui",
+    "Munan Ning",
+    "Peng Jin",
+    "Li Yuan"
+  ],
+  "year": 2023,
+  "topic_paths": [
+    "multimodal/video-temporal",
+    "multimodal/vlm"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v3 PDF 选段：Abstract、Sec.1、Sec.3（LanguageBind、共享投影、联合训练）、Sec.4.1.3（8 帧采样）、Sec.4.2（Table 2，GPT-3.5 评分）、Sec.4.4（Table 6 联合训练）、Sec.5（局限与未来方向）",
+    "mechanism_summary": "LanguageBind 预对齐图像/视频编码器 + 共享 2 层 MLP 投影 + Vicuna v1.5 7B；8 帧均匀采样；GPT-3.5-turbo 评分；比 Video-ChatGPT 在 MSRVTT/MSVD/TGIF/ActivityNet 高 5.8/9.9/18.6/10.1；联合训练 MSVD-QA 64.8→70.7；局限：长视频、8 帧、训练 3–4 天 8×A100。",
+    "evidence_boundary": "未复现实验；数字取自论文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2311.10122",
+      "https://arxiv.org/pdf/2311.10122v3"
+    ],
+    "source_origin": "phase3_video_temporal_cards",
+    "relation_pages": [
+      "multimodal/fields/video-temporal/README.md"
+    ]
+  },
+  "modality_tags": [
+    "video",
+    "image",
+    "text",
+    "multimodal"
+  ],
+  "task_tags": [
+    "understanding"
+  ]
+}

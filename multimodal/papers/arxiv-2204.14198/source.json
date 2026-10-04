@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2204.14198",
+  "title": "Flamingo: a Visual Language Model for Few-Shot Learning",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2204.14198",
+  "official_url": "https://arxiv.org/abs/2204.14198",
+  "official_fulltext_url": "https://arxiv.org/pdf/2204.14198v2",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Jean-Baptiste Alayrac",
+    "Jeff Donahue",
+    "Pauline Luc",
+    "Antoine Miech",
+    "Iain Barr",
+    "Yana Hasson",
+    "Karel Lenc",
+    "Arthur Mensch",
+    "Katie Millican",
+    "Malcolm Reynolds",
+    "等 27 位作者"
+  ],
+  "year": 2022,
+  "topic_paths": [
+    "multimodal/vlm"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "Abstract、Sec.1–2（结构、M3W 数据）、Sec.3.3 消融与 Table 3、Sec.5 局限、附录 B.2.2（微调设置）、附录 D.1、NeurIPS 检查表",
+    "mechanism_summary": "冻结 Chinchilla 70B 与 NFNet-F6；Perceiver Resampler 输出 64 个视觉 token；GATED XATTN-DENSE，tanh 门控 α 初始化 0；80B 每 7 层插一层；M3W 约 4300 万网页，每序列最多 5 张图，推理可用 32 张；ALIGN 18 亿对 + LTIP 3.12 亿对 + VTP 2700 万视频；消融：去 M3W 降 17% 以上、去图文对降 9.8%、无门控降 4.2%、微调 LM 降 8.0%、从零 LM 降 12.9%；VQAv2 32-shot 67.3、微调 82.0（解冻视觉、480 分辨率）；最大模型 1536 TPU 训练 15 天；代码与数据专有。",
+    "evidence_boundary": "数字取自 arXiv PDF 抽取的原文；公司模型只写官方报告明写的内容；未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2204.14198",
+      "https://arxiv.org/pdf/2204.14198v2"
+    ],
+    "source_origin": "phase3_multimodal_vlm_cards",
+    "relation_pages": [
+      "multimodal/fields/vlm/README.md"
+    ]
+  },
+  "modality_tags": [
+    "image",
+    "video",
+    "text",
+    "multimodal"
+  ],
+  "task_tags": [
+    "understanding"
+  ]
+}

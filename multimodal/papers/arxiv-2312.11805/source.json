@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2312.11805",
+  "title": "Gemini: A Family of Highly Capable Multimodal Models",
+  "resource_kind": "official_technical_report",
+  "canonical_folder": "multimodal/papers/arxiv-2312.11805",
+  "official_url": "https://arxiv.org/abs/2312.11805",
+  "official_fulltext_url": "https://arxiv.org/pdf/2312.11805v5",
+  "read_version": "v5",
+  "version_status": "checked_v5",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Gemini Team",
+    "Rohan Anil",
+    "Sebastian Borgeaud",
+    "Jean-Baptiste Alayrac",
+    "Jiahui Yu",
+    "Radu Soricut",
+    "Johan Schalkwyk",
+    "Andrew M. Dai",
+    "Anja Hauth",
+    "Katie Millican",
+    "等 1351 位作者"
+  ],
+  "year": 2023,
+  "topic_paths": [
+    "multimodal/vlm"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "Sec.1、Sec.2 模型结构、Sec.5.2 多模态评测开头与 MMMU、结语中的局限段",
+    "mechanism_summary": "Transformer 解码器、32K、MQA；视觉编码受 Flamingo、CoCa、PaLI 启发，'multimodal from the beginning'，可输出离散图像 token；可变输入分辨率；Nano 1.8B/3.25B 蒸馏、4-bit；Ultra MMMU 62.4%；结构与数据细节未公开。",
+    "evidence_boundary": "数字取自 arXiv PDF 抽取的原文；公司模型只写官方报告明写的内容；未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2312.11805",
+      "https://arxiv.org/pdf/2312.11805v5"
+    ],
+    "source_origin": "phase3_multimodal_vlm_cards",
+    "relation_pages": [
+      "multimodal/fields/vlm/README.md"
+    ]
+  },
+  "modality_tags": [
+    "image",
+    "video",
+    "audio",
+    "text",
+    "multimodal"
+  ],
+  "task_tags": [
+    "understanding",
+    "generation"
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2102.05918",
+  "title": "Scaling Up Visual and Vision-Language Representation Learning With Noisy Text Supervision",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2102.05918",
+  "official_url": "https://arxiv.org/abs/2102.05918",
+  "official_fulltext_url": "https://arxiv.org/pdf/2102.05918v2",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Chao Jia",
+    "Yinfei Yang",
+    "Ye Xia",
+    "Yi-Ting Chen",
+    "Zarana Parekh",
+    "Hieu Pham",
+    "Quoc V. Le",
+    "Yunhsuan Sung",
+    "Zhen Li",
+    "Tom Duerig"
+  ],
+  "year": 2021,
+  "topic_paths": [
+    "multimodal/alignment",
+    "multimodal/visual-representation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "Abstract、Sec.1–4（数据过滤与训练设置）、Sec.5.1–5.2（检索、零样本，Table 1、Table 4）、Sec.6.2（Table 9–10 数据规模与质量）、Sec.9–10",
+    "mechanism_summary": "18 亿对最少过滤 alt-text；EfficientNet-L2 + BERT-Large 从头训练，批 16384，温度可学；零样本 ImageNet 76.4%；3M 噪声数据 COCO I2T R@1 8.1 对 CC-3M 18.9，12M 时 23.8；提示集成 +2.9；自述同模态相似度略差、社会影响。",
+    "evidence_boundary": "数字取自 arXiv PDF 正文与表格（PyMuPDF 抽取）；未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2102.05918",
+      "https://arxiv.org/pdf/2102.05918v2"
+    ],
+    "source_origin": "phase3_multimodal_alignment_cards",
+    "relation_pages": [
+      "multimodal/fields/alignment/README.md"
+    ]
+  },
+  "modality_tags": [
+    "image",
+    "text",
+    "multimodal"
+  ],
+  "task_tags": [
+    "understanding"
+  ]
+}

@@ -1,6 +1,6 @@
 # 全库论文总目录
 
-共 336 个去重资源（326 篇论文、6 篇官方技术报告、1 个代码仓库、3 篇官方博客）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
+共 394 个去重资源（373 篇论文、15 篇官方技术报告、1 个代码仓库、5 篇官方博客）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
 
 身份核验、助手教学进度和用户阅读状态分开。历史来源保留原角色与证据局限，不将助手推荐写成用户提供，也不将教学完成写成用户已读。
 
@@ -503,7 +503,7 @@
 
 - 标识：arxiv:2210.05861
 - 原文 / 官方入口：https://arxiv.org/abs/2210.05861
-- 主题：multimodal/world-models
+- 主题：multimodal/world-models, multimodal/video-temporal
 - 来源：assistant-provided-exact-link
 - 身份核验：verified
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
@@ -515,7 +515,7 @@
 
 - 标识：arxiv:2206.07764
 - 原文 / 官方入口：https://arxiv.org/abs/2206.07764
-- 主题：multimodal/world-models
+- 主题：multimodal/world-models, multimodal/video-temporal
 - 来源：assistant-provided-exact-link
 - 身份核验：verified
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
@@ -527,7 +527,7 @@
 
 - 标识：arxiv:2311.16038
 - 原文 / 官方入口：https://arxiv.org/abs/2311.16038
-- 主题：multimodal/world-models
+- 主题：multimodal/world-models, robotics/navigation-planning
 - 来源：assistant-provided-exact-link
 - 身份核验：verified
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
@@ -539,7 +539,7 @@
 
 - 标识：arxiv:2408.14197
 - 原文 / 官方入口：https://arxiv.org/abs/2408.14197
-- 主题：multimodal/world-models
+- 主题：multimodal/world-models, robotics/navigation-planning
 - 来源：assistant-provided-exact-link
 - 身份核验：verified
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
@@ -563,7 +563,7 @@
 
 - 标识：arxiv:2507.19468
 - 原文 / 官方入口：https://arxiv.org/abs/2507.19468
-- 主题：multimodal/world-models
+- 主题：multimodal/world-models, multimodal/video-temporal
 - 来源：assistant-provided-exact-link
 - 身份核验：verified
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
@@ -575,7 +575,7 @@
 
 - 标识：arxiv:2307.02427
 - 原文 / 官方入口：https://arxiv.org/abs/2307.02427
-- 主题：multimodal/world-models
+- 主题：multimodal/world-models, robotics/embodied-policies
 - 来源：assistant-provided-exact-link
 - 身份核验：verified
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
@@ -587,7 +587,7 @@
 
 - 标识：arxiv:2505.11528
 - 原文 / 官方入口：https://arxiv.org/abs/2505.11528
-- 主题：multimodal/world-models
+- 主题：multimodal/world-models, robotics/embodied-policies
 - 来源：assistant-provided-exact-link, assistant-recommended
 - 身份核验：verified
 - 助手教学 / 阅读进度：identity_verified_or_existing_catalog_only
@@ -611,7 +611,7 @@
 
 - 标识：arxiv:2501.11260
 - 原文 / 官方入口：https://arxiv.org/abs/2501.11260
-- 主题：multimodal/world-models
+- 主题：multimodal/world-models, robotics/navigation-planning
 - 来源：assistant-provided-exact-link
 - 身份核验：verified
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
@@ -623,7 +623,7 @@
 
 - 标识：arxiv:2503.06170
 - 原文 / 官方入口：https://arxiv.org/abs/2503.06170
-- 主题：multimodal/world-models
+- 主题：multimodal/world-models, robotics/embodied-policies
 - 来源：assistant-provided-exact-link, assistant-recommended
 - 身份核验：verified
 - 助手教学 / 阅读进度：identity_verified_or_existing_catalog_only
@@ -647,7 +647,7 @@
 
 - 标识：arxiv:2601.03200
 - 原文 / 官方入口：https://arxiv.org/abs/2601.03200
-- 主题：multimodal/world-models
+- 主题：multimodal/world-models, robotics/perception
 - 来源：assistant-provided-exact-link, assistant-recommended
 - 身份核验：verified
 - 助手教学 / 阅读进度：identity_verified_or_existing_catalog_only
@@ -659,7 +659,7 @@
 
 - 标识：arxiv:2506.07454
 - 原文 / 官方入口：https://arxiv.org/abs/2506.07454
-- 主题：multimodal/world-models
+- 主题：multimodal/world-models, robotics/embodied-agents, robotics/localization-mapping
 - 来源：assistant-provided-exact-link, assistant-recommended
 - 身份核验：verified
 - 助手教学 / 阅读进度：identity_verified_or_existing_catalog_only
@@ -671,7 +671,7 @@
 
 - 标识：arxiv:2603.17808
 - 原文 / 官方入口：https://arxiv.org/abs/2603.17808
-- 主题：multimodal/world-models
+- 主题：multimodal/world-models, robotics/embodied-policies
 - 来源：assistant-provided-exact-link, assistant-recommended
 - 身份核验：verified
 - 助手教学 / 阅读进度：identity_verified_or_existing_catalog_only
@@ -683,7 +683,7 @@
 
 - 标识：arxiv:2608.18077
 - 原文 / 官方入口：https://arxiv.org/abs/2608.18077
-- 主题：multimodal/world-models
+- 主题：multimodal/world-models, robotics/embodied-policies
 - 来源：assistant-provided-exact-link, assistant-recommended
 - 身份核验：verified
 - 助手教学 / 阅读进度：identity_verified_or_existing_catalog_only
@@ -695,7 +695,7 @@
 
 - 标识：arxiv:2505.06111
 - 原文 / 官方入口：https://arxiv.org/abs/2505.06111
-- 主题：multimodal/world-models
+- 主题：multimodal/world-models, robotics/embodied-policies
 - 来源：assistant-provided-exact-link, assistant-recommended
 - 身份核验：verified
 - 助手教学 / 阅读进度：identity_verified_or_existing_catalog_only
@@ -743,7 +743,7 @@
 
 - 标识：doi:10.15607/rss.2025.xxi.153
 - 原文 / 官方入口：https://www.roboticsproceedings.org/rss21/p153.html
-- 主题：multimodal/world-models
+- 主题：multimodal/world-models, robotics/control
 - 来源：assistant-provided-exact-link, assistant-recommended
 - 身份核验：verified
 - 助手教学 / 阅读进度：identity_verified_or_existing_catalog_only
@@ -1403,7 +1403,7 @@
 
 - 标识：arxiv:2301.04104
 - 原文 / 官方入口：https://arxiv.org/abs/2301.04104
-- 主题：multimodal/world-models
+- 主题：multimodal/world-models, robotics/embodied-policies
 - 来源：previous-starter, existing_baseline_selection
 - 身份核验：full_text_reading_and_evidence_audit
 - 助手教学 / 阅读进度：expanded_beginner_teaching
@@ -1439,7 +1439,7 @@
 
 - 标识：arxiv:2304.08485
 - 原文 / 官方入口：https://arxiv.org/abs/2304.08485
-- 主题：multimodal/generation, multimodal/vlm, robotics/embodied-policies
+- 主题：multimodal/vlm, robotics/embodied-policies
 - 来源：new-baseline-selection
 - 身份核验：full_text_reading_and_evidence_audit
 - 助手教学 / 阅读进度：existing_technical_reading
@@ -3492,7 +3492,7 @@
 
 - 标识：arxiv:2403.05530
 - 原文 / 官方入口：https://arxiv.org/abs/2403.05530
-- 主题：llm/long-context
+- 主题：llm/long-context, multimodal/vlm
 - 身份核验：selected_sections_checked_not_full_read
 - 用户阅读状态：unknown
 - [文献卡](../llm/papers/arxiv-2403.05530/README.md)
@@ -3726,6 +3726,586 @@
 - 身份核验：selected_sections_checked_not_full_read
 - 用户阅读状态：unknown
 - [文献卡](../llm/papers/openai-o1/README.md)
+
+<a id="p337"></a>
+## p337 · Scaling Up Visual and Vision-Language Representation Learning With Noisy Text Supervision
+
+- 标识：arxiv:2102.05918
+- 原文 / 官方入口：https://arxiv.org/abs/2102.05918
+- 主题：multimodal/alignment, multimodal/visual-representation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2102.05918/README.md)
+
+<a id="p338"></a>
+## p338 · LiT: Zero-Shot Transfer with Locked-image text Tuning
+
+- 标识：arxiv:2111.07991
+- 原文 / 官方入口：https://arxiv.org/abs/2111.07991
+- 主题：multimodal/alignment
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2111.07991/README.md)
+
+<a id="p339"></a>
+## p339 · Reproducible scaling laws for contrastive language-image learning
+
+- 标识：arxiv:2212.07143
+- 原文 / 官方入口：https://arxiv.org/abs/2212.07143
+- 主题：multimodal/alignment
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2212.07143/README.md)
+
+<a id="p340"></a>
+## p340 · Sigmoid Loss for Language Image Pre-Training
+
+- 标识：arxiv:2303.15343
+- 原文 / 官方入口：https://arxiv.org/abs/2303.15343
+- 主题：multimodal/alignment, multimodal/visual-representation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2303.15343/README.md)
+
+<a id="p341"></a>
+## p341 · SigLIP 2: Multilingual Vision-Language Encoders with Improved Semantic Understanding, Localization, and Dense Features
+
+- 标识：arxiv:2502.14786
+- 原文 / 官方入口：https://arxiv.org/abs/2502.14786
+- 主题：multimodal/alignment, multimodal/vlm, multimodal/visual-representation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2502.14786/README.md)
+
+<a id="p342"></a>
+## p342 · EVA-CLIP: Improved Training Techniques for CLIP at Scale
+
+- 标识：arxiv:2303.15389
+- 原文 / 官方入口：https://arxiv.org/abs/2303.15389
+- 主题：multimodal/alignment
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2303.15389/README.md)
+
+<a id="p343"></a>
+## p343 · CoCa: Contrastive Captioners are Image-Text Foundation Models
+
+- 标识：arxiv:2205.01917
+- 原文 / 官方入口：https://arxiv.org/abs/2205.01917
+- 主题：multimodal/alignment, multimodal/vlm
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2205.01917/README.md)
+
+<a id="p344"></a>
+## p344 · BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation
+
+- 标识：arxiv:2201.12086
+- 原文 / 官方入口：https://arxiv.org/abs/2201.12086
+- 主题：multimodal/alignment, multimodal/vlm
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2201.12086/README.md)
+
+<a id="p345"></a>
+## p345 · LAION-5B: An open large-scale dataset for training next generation image-text models
+
+- 标识：arxiv:2210.08402
+- 原文 / 官方入口：https://arxiv.org/abs/2210.08402
+- 主题：multimodal/alignment, multimodal/generation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2210.08402/README.md)
+
+<a id="p346"></a>
+## p346 · DataComp: In search of the next generation of multimodal datasets
+
+- 标识：arxiv:2304.14108
+- 原文 / 官方入口：https://arxiv.org/abs/2304.14108
+- 主题：multimodal/alignment, cross-domain/evaluation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2304.14108/README.md)
+
+<a id="p347"></a>
+## p347 · Demystifying CLIP Data
+
+- 标识：arxiv:2309.16671
+- 原文 / 官方入口：https://arxiv.org/abs/2309.16671
+- 主题：multimodal/alignment
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2309.16671/README.md)
+
+<a id="p348"></a>
+## p348 · Winoground: Probing Vision and Language Models for Visio-Linguistic Compositionality
+
+- 标识：arxiv:2204.03162
+- 原文 / 官方入口：https://arxiv.org/abs/2204.03162
+- 主题：multimodal/alignment, multimodal/vlm
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2204.03162/README.md)
+
+<a id="p349"></a>
+## p349 · When and why vision-language models behave like bags-of-words, and what to do about it?
+
+- 标识：arxiv:2210.01936
+- 原文 / 官方入口：https://arxiv.org/abs/2210.01936
+- 主题：multimodal/alignment
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2210.01936/README.md)
+
+<a id="p350"></a>
+## p350 · SugarCrepe: Fixing Hackable Benchmarks for Vision-Language Compositionality
+
+- 标识：arxiv:2306.14610
+- 原文 / 官方入口：https://arxiv.org/abs/2306.14610
+- 主题：multimodal/alignment, cross-domain/evaluation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2306.14610/README.md)
+
+<a id="p351"></a>
+## p351 · Eyes Wide Shut? Exploring the Visual Shortcomings of Multimodal LLMs
+
+- 标识：arxiv:2401.06209
+- 原文 / 官方入口：https://arxiv.org/abs/2401.06209
+- 主题：multimodal/alignment, multimodal/vlm, multimodal/visual-representation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2401.06209/README.md)
+
+<a id="p352"></a>
+## p352 · Two-Stream Convolutional Networks for Action Recognition in Videos
+
+- 标识：arxiv:1406.2199
+- 原文 / 官方入口：https://arxiv.org/abs/1406.2199
+- 主题：multimodal/video-temporal
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-1406.2199/README.md)
+
+<a id="p353"></a>
+## p353 · Quo Vadis, Action Recognition? A New Model and the Kinetics Dataset
+
+- 标识：arxiv:1705.07750
+- 原文 / 官方入口：https://arxiv.org/abs/1705.07750
+- 主题：multimodal/video-temporal
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-1705.07750/README.md)
+
+<a id="p354"></a>
+## p354 · The "something something" video database for learning and evaluating visual common sense
+
+- 标识：arxiv:1706.04261
+- 原文 / 官方入口：https://arxiv.org/abs/1706.04261
+- 主题：multimodal/video-temporal
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-1706.04261/README.md)
+
+<a id="p355"></a>
+## p355 · SlowFast Networks for Video Recognition
+
+- 标识：arxiv:1812.03982
+- 原文 / 官方入口：https://arxiv.org/abs/1812.03982
+- 主题：multimodal/video-temporal
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-1812.03982/README.md)
+
+<a id="p356"></a>
+## p356 · Is Space-Time Attention All You Need for Video Understanding?
+
+- 标识：arxiv:2102.05095
+- 原文 / 官方入口：https://arxiv.org/abs/2102.05095
+- 主题：multimodal/video-temporal
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2102.05095/README.md)
+
+<a id="p357"></a>
+## p357 · ViViT: A Video Vision Transformer
+
+- 标识：arxiv:2103.15691
+- 原文 / 官方入口：https://arxiv.org/abs/2103.15691
+- 主题：multimodal/video-temporal
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2103.15691/README.md)
+
+<a id="p358"></a>
+## p358 · VideoMAE: Masked Autoencoders are Data-Efficient Learners for Self-Supervised Video Pre-Training
+
+- 标识：arxiv:2203.12602
+- 原文 / 官方入口：https://arxiv.org/abs/2203.12602
+- 主题：multimodal/video-temporal, multimodal/visual-representation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2203.12602/README.md)
+
+<a id="p359"></a>
+## p359 · Revealing Single Frame Bias for Video-and-Language Learning
+
+- 标识：arxiv:2206.03428
+- 原文 / 官方入口：https://arxiv.org/abs/2206.03428
+- 主题：multimodal/video-temporal, multimodal/alignment
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2206.03428/README.md)
+
+<a id="p360"></a>
+## p360 · EgoSchema: A Diagnostic Benchmark for Very Long-form Video Language Understanding
+
+- 标识：arxiv:2308.09126
+- 原文 / 官方入口：https://arxiv.org/abs/2308.09126
+- 主题：multimodal/video-temporal
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2308.09126/README.md)
+
+<a id="p361"></a>
+## p361 · Revisiting Feature Prediction for Learning Visual Representations from Video
+
+- 标识：arxiv:2404.08471
+- 原文 / 官方入口：https://arxiv.org/abs/2404.08471
+- 主题：multimodal/video-temporal, multimodal/visual-representation, multimodal/world-models
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2404.08471/README.md)
+
+<a id="p362"></a>
+## p362 · InternVideo2: Scaling Foundation Models for Multimodal Video Understanding
+
+- 标识：arxiv:2403.15377
+- 原文 / 官方入口：https://arxiv.org/abs/2403.15377
+- 主题：multimodal/video-temporal, multimodal/alignment
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2403.15377/README.md)
+
+<a id="p363"></a>
+## p363 · Video-LLaVA: Learning United Visual Representation by Alignment Before Projection
+
+- 标识：arxiv:2311.10122
+- 原文 / 官方入口：https://arxiv.org/abs/2311.10122
+- 主题：multimodal/video-temporal, multimodal/vlm
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2311.10122/README.md)
+
+<a id="p364"></a>
+## p364 · LLaVA-Video: Video Instruction Tuning With Synthetic Data
+
+- 标识：arxiv:2410.02713
+- 原文 / 官方入口：https://arxiv.org/abs/2410.02713
+- 主题：multimodal/video-temporal, multimodal/vlm
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2410.02713/README.md)
+
+<a id="p365"></a>
+## p365 · Video-MME: The First-Ever Comprehensive Evaluation Benchmark of Multi-modal LLMs in Video Analysis
+
+- 标识：arxiv:2405.21075
+- 原文 / 官方入口：https://arxiv.org/abs/2405.21075
+- 主题：multimodal/video-temporal, multimodal/vlm
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2405.21075/README.md)
+
+<a id="p366"></a>
+## p366 · Diffusion Models Are Real-Time Game Engines
+
+- 标识：arxiv:2408.14837
+- 原文 / 官方入口：https://arxiv.org/abs/2408.14837
+- 主题：multimodal/world-models, multimodal/generation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2408.14837/README.md)
+
+<a id="p367"></a>
+## p367 · GAIA-1: A Generative World Model for Autonomous Driving
+
+- 标识：arxiv:2309.17080
+- 原文 / 官方入口：https://arxiv.org/abs/2309.17080
+- 主题：multimodal/world-models, multimodal/generation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2309.17080/README.md)
+
+<a id="p368"></a>
+## p368 · Do generative video models understand physical principles?
+
+- 标识：arxiv:2501.09038
+- 原文 / 官方入口：https://arxiv.org/abs/2501.09038
+- 主题：multimodal/world-models, multimodal/generation, cross-domain/evaluation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2501.09038/README.md)
+
+<a id="p369"></a>
+## p369 · How Far is Video Generation from World Model: A Physical Law Perspective
+
+- 标识：arxiv:2411.02385
+- 原文 / 官方入口：https://arxiv.org/abs/2411.02385
+- 主题：multimodal/world-models, multimodal/generation, cross-domain/evaluation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2411.02385/README.md)
+
+<a id="p370"></a>
+## p370 · VideoPhy: Evaluating Physical Commonsense for Video Generation
+
+- 标识：arxiv:2406.03520
+- 原文 / 官方入口：https://arxiv.org/abs/2406.03520
+- 主题：multimodal/world-models, multimodal/generation, cross-domain/evaluation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2406.03520/README.md)
+
+<a id="p371"></a>
+## p371 · Diffusion for World Modeling: Visual Details Matter in Atari
+
+- 标识：arxiv:2405.12399
+- 原文 / 官方入口：https://arxiv.org/abs/2405.12399
+- 主题：multimodal/world-models, multimodal/generation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2405.12399/README.md)
+
+<a id="p372"></a>
+## p372 · Flamingo: a Visual Language Model for Few-Shot Learning
+
+- 标识：arxiv:2204.14198
+- 原文 / 官方入口：https://arxiv.org/abs/2204.14198
+- 主题：multimodal/vlm
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2204.14198/README.md)
+
+<a id="p373"></a>
+## p373 · PaLI: A Jointly-Scaled Multilingual Language-Image Model
+
+- 标识：arxiv:2209.06794
+- 原文 / 官方入口：https://arxiv.org/abs/2209.06794
+- 主题：multimodal/vlm
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2209.06794/README.md)
+
+<a id="p374"></a>
+## p374 · BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models
+
+- 标识：arxiv:2301.12597
+- 原文 / 官方入口：https://arxiv.org/abs/2301.12597
+- 主题：multimodal/vlm
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2301.12597/README.md)
+
+<a id="p375"></a>
+## p375 · Improved Baselines with Visual Instruction Tuning
+
+- 标识：arxiv:2310.03744
+- 原文 / 官方入口：https://arxiv.org/abs/2310.03744
+- 主题：multimodal/vlm
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2310.03744/README.md)
+
+<a id="p376"></a>
+## p376 · Evaluating Object Hallucination in Large Vision-Language Models
+
+- 标识：arxiv:2305.10355
+- 原文 / 官方入口：https://arxiv.org/abs/2305.10355
+- 主题：multimodal/vlm
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2305.10355/README.md)
+
+<a id="p377"></a>
+## p377 · Qwen-VL: A Versatile Vision-Language Model for Understanding, Localization, Text Reading, and Beyond
+
+- 标识：arxiv:2308.12966
+- 原文 / 官方入口：https://arxiv.org/abs/2308.12966
+- 主题：multimodal/vlm
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2308.12966/README.md)
+
+<a id="p378"></a>
+## p378 · InternVL: Scaling up Vision Foundation Models and Aligning for Generic Visual-Linguistic Tasks
+
+- 标识：arxiv:2312.14238
+- 原文 / 官方入口：https://arxiv.org/abs/2312.14238
+- 主题：multimodal/vlm
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2312.14238/README.md)
+
+<a id="p379"></a>
+## p379 · Gemini: A Family of Highly Capable Multimodal Models
+
+- 标识：arxiv:2312.11805
+- 原文 / 官方入口：https://arxiv.org/abs/2312.11805
+- 主题：multimodal/vlm
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2312.11805/README.md)
+
+<a id="p380"></a>
+## p380 · DeepSeek-VL: Towards Real-World Vision-Language Understanding
+
+- 标识：arxiv:2403.05525
+- 原文 / 官方入口：https://arxiv.org/abs/2403.05525
+- 主题：multimodal/vlm
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2403.05525/README.md)
+
+<a id="p381"></a>
+## p381 · Are We on the Right Way for Evaluating Large Vision-Language Models?
+
+- 标识：arxiv:2403.20330
+- 原文 / 官方入口：https://arxiv.org/abs/2403.20330
+- 主题：multimodal/vlm
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2403.20330/README.md)
+
+<a id="p382"></a>
+## p382 · How Far Are We to GPT-4V? Closing the Gap to Commercial Multimodal Models with Open-Source Suites
+
+- 标识：arxiv:2404.16821
+- 原文 / 官方入口：https://arxiv.org/abs/2404.16821
+- 主题：multimodal/vlm
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2404.16821/README.md)
+
+<a id="p383"></a>
+## p383 · Chameleon: Mixed-Modal Early-Fusion Foundation Models
+
+- 标识：arxiv:2405.09818
+- 原文 / 官方入口：https://arxiv.org/abs/2405.09818
+- 主题：multimodal/vlm, multimodal/generation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2405.09818/README.md)
+
+<a id="p384"></a>
+## p384 · Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs
+
+- 标识：arxiv:2406.16860
+- 原文 / 官方入口：https://arxiv.org/abs/2406.16860
+- 主题：multimodal/vlm, multimodal/visual-representation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2406.16860/README.md)
+
+<a id="p385"></a>
+## p385 · Qwen2-VL: Enhancing Vision-Language Model's Perception of the World at Any Resolution
+
+- 标识：arxiv:2409.12191
+- 原文 / 官方入口：https://arxiv.org/abs/2409.12191
+- 主题：multimodal/vlm, multimodal/video-temporal
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2409.12191/README.md)
+
+<a id="p386"></a>
+## p386 · Molmo and PixMo: Open Weights and Open Data for State-of-the-Art Vision-Language Models
+
+- 标识：arxiv:2409.17146
+- 原文 / 官方入口：https://arxiv.org/abs/2409.17146
+- 主题：multimodal/vlm
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2409.17146/README.md)
+
+<a id="p387"></a>
+## p387 · Expanding Performance Boundaries of Open-Source Multimodal Models with Model, Data, and Test-Time Scaling
+
+- 标识：arxiv:2412.05271
+- 原文 / 官方入口：https://arxiv.org/abs/2412.05271
+- 主题：multimodal/vlm
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2412.05271/README.md)
+
+<a id="p388"></a>
+## p388 · DeepSeek-VL2: Mixture-of-Experts Vision-Language Models for Advanced Multimodal Understanding
+
+- 标识：arxiv:2412.10302
+- 原文 / 官方入口：https://arxiv.org/abs/2412.10302
+- 主题：multimodal/vlm
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2412.10302/README.md)
+
+<a id="p389"></a>
+## p389 · Qwen2.5-VL Technical Report
+
+- 标识：arxiv:2502.13923
+- 原文 / 官方入口：https://arxiv.org/abs/2502.13923
+- 主题：multimodal/vlm, multimodal/video-temporal
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2502.13923/README.md)
+
+<a id="p390"></a>
+## p390 · Kimi-VL Technical Report
+
+- 标识：arxiv:2504.07491
+- 原文 / 官方入口：https://arxiv.org/abs/2504.07491
+- 主题：multimodal/vlm, llm/posttraining/rl
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2504.07491/README.md)
+
+<a id="p391"></a>
+## p391 · InternVL3: Exploring Advanced Training and Test-Time Recipes for Open-Source Multimodal Models
+
+- 标识：arxiv:2504.10479
+- 原文 / 官方入口：https://arxiv.org/abs/2504.10479
+- 主题：multimodal/vlm
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2504.10479/README.md)
+
+<a id="p392"></a>
+## p392 · Qwen3-VL Technical Report
+
+- 标识：arxiv:2511.21631
+- 原文 / 官方入口：https://arxiv.org/abs/2511.21631
+- 主题：multimodal/vlm, multimodal/video-temporal, llm/posttraining/rl
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2511.21631/README.md)
+
+<a id="p393"></a>
+## p393 · Genie 2: A large-scale foundation world model
+
+- 标识：url:https://deepmind.google/discover/blog/genie-2-a-large-scale-foundation-world-model/
+- 原文 / 官方入口：https://deepmind.google/discover/blog/genie-2-a-large-scale-foundation-world-model/
+- 主题：multimodal/world-models, multimodal/generation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/genie-2-blog/README.md)
+
+<a id="p394"></a>
+## p394 · Genie 3: A new frontier for world models
+
+- 标识：url:https://deepmind.google/discover/blog/genie-3-a-new-frontier-for-world-models/
+- 原文 / 官方入口：https://deepmind.google/discover/blog/genie-3-a-new-frontier-for-world-models/
+- 主题：multimodal/world-models, multimodal/generation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/genie-3-blog/README.md)
 
 ## 2026年10月3日既有条目更新
 

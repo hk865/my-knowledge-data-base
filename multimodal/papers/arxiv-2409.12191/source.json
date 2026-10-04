@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2409.12191",
+  "title": "Qwen2-VL: Enhancing Vision-Language Model's Perception of the World at Any Resolution",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2409.12191",
+  "official_url": "https://arxiv.org/abs/2409.12191",
+  "official_fulltext_url": "https://arxiv.org/pdf/2409.12191v2",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Peng Wang",
+    "Shuai Bai",
+    "Sinan Tan",
+    "Shijie Wang",
+    "Zhihao Fan",
+    "Jinze Bai",
+    "Keqin Chen",
+    "Xuejing Liu",
+    "Jialin Wang",
+    "Wenbin Ge",
+    "等 19 位作者"
+  ],
+  "year": 2024,
+  "topic_paths": [
+    "multimodal/vlm",
+    "multimodal/video-temporal"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "Abstract、Sec.1、Sec.2.1–2.2（结构、M-RoPE、训练）、Sec.3.3 消融（Table 7–8、Fig.4–5）、导航实验段",
+    "mechanism_summary": "ViT 675M（DFN 初始化，2D-RoPE）；2×2 MLP 合并；M-RoPE（时间、高、宽）；视频 2 fps、每视频最多 16384 token，推理可外推到 80K；2B/8B/72B；三段训练 600B + 800B token；Table 7 InfoVQA 28.85/65.72/74.99/77.27 与动态 75.89；Table 8 M-RoPE 视频 benchmark 提升；VLN 落后专用模型。",
+    "evidence_boundary": "数字取自 arXiv PDF 抽取的原文；公司模型只写官方报告明写的内容；未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2409.12191",
+      "https://arxiv.org/pdf/2409.12191v2"
+    ],
+    "source_origin": "phase3_multimodal_vlm_cards",
+    "relation_pages": [
+      "multimodal/fields/vlm/README.md"
+    ]
+  },
+  "modality_tags": [
+    "image",
+    "video",
+    "text",
+    "multimodal"
+  ],
+  "task_tags": [
+    "understanding",
+    "decision"
+  ]
+}

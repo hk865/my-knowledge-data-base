@@ -1,18 +1,58 @@
-# 图文对齐：Baseline与对照阅读
+# 图文对齐的基线
 
 [回到入门](README.md) · [阅读路线](ROADMAP.md) · [全部文献](PAPERS.md)
 
-这些条目用于建立问题、机制或评估的参照。跨方向辅助阅读不是对本方向的完整覆盖，也不代表这些方法在所有任务上都构成可直接比较的实验baseline。
+## 基线是谁、为什么是它
 
-## vit
+**[CLIP](../../papers/clip/README.md)（2021，OpenAI）** 是本方向的基线，[ALIGN](../../papers/arxiv-2102.05918/README.md)（2021，Google Research）是同一接口下的另一种数据选择。两篇一起定义了三件事：
 
-[An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](../../papers/vit/README.md)
+- **接口**：图像塔与文本塔各把输入变成一个归一化向量，图文之间只用余弦相似度比较，两座塔互不通信，向量可以提前算好缓存。
+- **训练范式**：一批 N 对图文组成 N×N 相似度矩阵，沿行、沿列各做一次 softmax 交叉熵（对比损失），温度可学习；数据是网页上天然配对的图文，CLIP 用 50 万个查询词平衡出 4 亿对，ALIGN 只做词频过滤得到 18 亿对。
+- **评估方式**：零样本分类（类别名套进提示模板，文本向量当分类器权重）和图文检索（Flickr30K、MS-COCO 的 R@K）。
 
-视觉patch序列和Transformer编码器基线；它是架构而不是一种自监督目标。
+后续工作几乎都保留这个接口，只替换其中一个部件，所以它是合适的对照物。CLIP 公开了权重，后来又成为 LAION 过滤数据时的打分模型，这让它同时出现在"被比较"和"参与构造对手数据"两个位置上。
 
-## clip
+## 基线的结构拆分
 
-[Learning Transferable Visual Models From Natural Language Supervision](../../papers/clip/README.md)
+| 部件 | CLIP / ALIGN 的取法 | 这个部件决定什么 |
+|---|---|---|
+| 数据（来源与筛选） | 私有；CLIP 按查询词平衡，ALIGN 最少过滤 | 模型见过哪些概念、每个概念多少次，零样本能覆盖的范围 |
+| 训练目标 | 批级 softmax 对比 | 学到的是整体匹配还是细节、组合；对批大小的依赖 |
+| 图像塔（结构与初始化） | ResNet / ViT / EfficientNet，从头训练 | 算力成本、图像特征的通用性 |
+| 文本侧接口 | 英文 BPE / WordPiece，提示模板集成 | 能用哪些语言、怎样措辞来指定类别 |
+| 输出与用法 | 每张图一个全局向量 | 能否给检测、分割、VLM 提供逐块特征 |
 
-双编码器、图文对比目标、零样本分类/检索构成清晰的图文对齐基线。
+## 后续工作在改哪个部件
 
+| 部件 | 改法 | 代表论文 | 改进了什么 / 付出了什么 |
+|---|---|---|---|
+| 数据 | 用 CLIP 打分过滤 Common Crawl 并公开 | [LAION-5B](../../papers/arxiv-2210.08402/README.md) | 第一个数十亿规模的公开图文集，外部可复现 / 继承过滤模型的偏差；发布后才发现需要删除的不安全链接 |
+| 数据 | 固定训练代码，只比数据；更严的 CLIP 分数加图像聚类过滤 | [DataComp](../../papers/arxiv-2304.14108/README.md) | 同算力 ViT-L/14 比 CLIP 高 3.7 个百分点 / 最好的过滤以 ImageNet 聚类为锚，可能偏向考题 |
+| 数据 | 重建 CLIP 的元数据，按条目上限平衡，不用模型过滤 | [MetaCLIP](../../papers/arxiv-2309.16671/README.md) | 公开了 CLIP 式选数方法，同设置下超过 WIT / 元数据仍是英文维基与 WordNet，长尾条目无匹配 |
+| 数据 | 描述器重写描述，过滤器去掉不匹配的文字 | [BLIP](../../papers/arxiv-2201.12086/README.md)（CapFilt） | 噪声 alt-text 变成可用的训练信号 / 依赖描述器本身的质量 |
+| 数据（规模测量） | 在公开数据上测幂律 | [OpenCLIP 缩放定律](../../papers/arxiv-2212.07143/README.md) | 发现数据分布决定分类与检索的缩放曲线 / 采样点稀疏，大规模未充分调参 |
+| 训练目标 | 批级 softmax 改成逐对 sigmoid 加偏置 | [SigLIP](../../papers/arxiv-2303.15343/README.md) | 小批更好、省内存、对噪声更稳 / 大批时与 softmax 差距消失 |
+| 训练目标 | 对比加描述生成，解码器前半不看图 | [CoCa](../../papers/arxiv-2205.01917/README.md) | 零样本与 VQA 同时提升，成本只多 18% / 模型大，未声明发布 |
+| 训练目标 | 对比、图文匹配、描述生成三个目标共享参数 | [BLIP](../../papers/arxiv-2201.12086/README.md) | 一个模型同时做检索和描述 / 多一套交叉注意力与匹配头；词序考题上接近随机 |
+| 训练目标 | 加入打乱词序的句子和最近邻图片作难负样本 | [ARO / NegCLIP](../../papers/arxiv-2210.01936/README.md) | 词序与关系题大幅提升，下游基本不掉 / [SugarCrepe](../../papers/arxiv-2306.14610/README.md) 显示提升在旧考题上被高估 |
+| 训练目标 | sigmoid 加描述与定位解码器、自蒸馏、遮蔽预测、主动数据筛选 | [SigLIP 2](../../papers/arxiv-2502.14786/README.md) | 定位、密集特征、多语言、VLM 迁移都提升 / 训练流程分阶段，复杂得多 |
+| 图像塔 | 冻结有监督预训练的图像塔，只训文本塔 | [LiT](../../papers/arxiv-2111.07991/README.md) | 零样本分类与分布外更强，算力省 / 依赖私有 JFT 预训练；检索上优势不明显 |
+| 图像塔 | 用遮蔽图像建模预训练的 EVA 初始化，加 LAMB 与随机丢图块 | [EVA-CLIP](../../papers/arxiv-2303.15389/README.md) | 同尺寸下少用约 8 倍样本超过 OpenCLIP / 多一个预训练阶段 |
+| 文本侧接口 | 多语言分词器与 10% 非英文数据；去偏过滤 | [SigLIP 2](../../papers/arxiv-2502.14786/README.md) | 36 种语言检索大幅提升，表示偏差下降 / 不同收入、地区之间的差距几乎没变 |
+| 输出与用法 | 保留长宽比、可变序列长度（NaFlex）；作为 VLM 视觉塔评测 | [SigLIP 2](../../papers/arxiv-2502.14786/README.md) | 文档、屏幕类检索更好 / 外推到更大分辨率效果不好 |
+| 输出与用法 | 把 CLIP 与 DINOv2 的逐块特征交错送进 VLM | [Eyes Wide Shut](../../papers/arxiv-2401.06209/README.md) | 补上 CLIP 盲区（朝向、计数、视角）/ 两个视觉塔，属于 [VLM 方向](../vlm/README.md)的设计 |
+| 评测 | 词相同、顺序不同的双图双句 | [Winoground](../../papers/arxiv-2204.03162/README.md) | 暴露组合推理接近随机 / 只有 400 组，统计功效有限（ARO 的批评） |
+
+## 批注
+
+**易误读**
+
+- "后续工作在改哪个部件"一表按每篇的主要贡献归类；SigLIP 2 同时改了目标、文本接口和用法，所以出现三次。
+- CLIP 与 ALIGN 的数字相近（零样本 ImageNet 76.2% 与 76.4%），但结构与数据都不同，不是受控比较（ALIGN Table 4）。
+- EVA-CLIP 的"少用约 8 倍样本"是 EVA-02-CLIP-L/14（40 亿样本，79.8%）与 OpenCLIP-L/14（320 亿样本，74.0%）的比较（EVA-CLIP Table 1）。
+
+**与其他论文的关联**
+
+- 视觉表征方向把 CLIP 放在"图文对齐"这一种训练信号下讨论（[视觉表征 Baseline 页](../visual-representation/BASELINES.md)、[入门页](../visual-representation/README.md)的方法谱系），本页的图像塔部件与那里的"训练信号 × 架构 × 数据"三轴对应。
+- 用作 VLM 视觉塔之后的连接器、分辨率与训练阶段，见[视觉语言模型方向](../vlm/README.md)；[LLaVA](../../papers/llava/README.md) 是其中以 CLIP 为视觉塔的代表。
+- 本方向的论文行与出处见 [synthesis.csv](synthesis.csv)。

@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2410.02713",
+  "title": "LLaVA-Video: Video Instruction Tuning With Synthetic Data",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2410.02713",
+  "official_url": "https://arxiv.org/abs/2410.02713",
+  "official_fulltext_url": "https://arxiv.org/pdf/2410.02713v3",
+  "read_version": "v3",
+  "version_status": "checked_v3",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了Abstract、Sec.1、Sec.3（数据来源、动态视频筛选、递归描述、问题类型）、Sec.4（Table 2 主结果、Table 3–4 数据消融）、Sec.5–6、附录（LLaVA-Video SlowFast、Table 8 帧数与 token 数）；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Yuanhan Zhang",
+    "Jinming Wu",
+    "Wei Li",
+    "Bo Li",
+    "Zejun Ma",
+    "Ziwei Liu",
+    "Chunyuan Li"
+  ],
+  "year": 2024,
+  "topic_paths": [
+    "multimodal/video-temporal",
+    "multimodal/vlm"
+  ],
+  "previous_titles": [
+    "Video Instruction Tuning With Synthetic Data"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v3 PDF 选段：Abstract、Sec.1、Sec.3（数据来源、动态视频筛选、递归描述、问题类型）、Sec.4（Table 2 主结果、Table 3–4 数据消融）、Sec.5–6、附录（LLaVA-Video SlowFast、Table 8 帧数与 token 数）",
+    "mechanism_summary": "LLaVA-Video-178K：178,510 段视频、1.3M 指令、1 fps、GPT-4o；SigLIP + Qwen2；SlowFast 表示（慢帧 p×p、快帧 2p×2p 池化）；Table 8：32→110 帧 VideoMME 59.1→60.4、EgoSchema 56.3→59.1；110×169 优于 32×729；440×64 下降；推理帧数远超训练帧数时下降；72B VideoMME 70.5/76.9；局限：来源偏差、问答受标注者视角影响。",
+    "evidence_boundary": "未复现实验；数字取自论文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2410.02713",
+      "https://arxiv.org/pdf/2410.02713v3"
+    ],
+    "source_origin": "phase3_video_temporal_cards",
+    "relation_pages": [
+      "multimodal/fields/video-temporal/README.md"
+    ]
+  },
+  "modality_tags": [
+    "video",
+    "image",
+    "text",
+    "multimodal"
+  ],
+  "task_tags": [
+    "understanding"
+  ]
+}
