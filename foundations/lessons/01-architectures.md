@@ -47,7 +47,7 @@ VAE 和扩散模型提供不同的生成建模办法。“怎样生成”与“�
 | [CNN](11-cnn.md#9-与其他概念的关系) | 从手工特征到可学习特征（HOG、DPM、学到的 Gabor 状卷积核）；RNN 与卷积的权重共享；FFN 与 1×1 卷积 |
 | [RNN](12-rnn.md#与其他概念的关系) | 非线性状态方程与稳定性；BPTT 与最优控制的伴随方程；去掉非线性得到 SSM |
 | [LSTM](13-lstm.md#与其他概念的关系) | 遗忘门与 Mamba 的选择机制；GRU 与 Mamba 定理 1；门控更新与 Kalman 更新 |
-| [Attention与Transformer](14-attention-transformer.md#17-与其他概念的关系) | FFN 与注意力是同一种键值读取；FFN 与 ViT patch 嵌入是卷积；残差连接来自 ResNet；线性注意力与核回归 |
+| [Attention与Transformer](14-attention-transformer.md#16-与其他概念的关系) | FFN 与注意力是同一种键值读取；FFN 与 ViT patch 嵌入是卷积；残差连接来自 ResNet；线性注意力与核回归 |
 | [QKV](15-qkv-deep-dive.md#与其他概念的关系) | 核回归；记忆网络中 K、V 的分离；word2vec 的低秩双线性打分；线性注意力 |
 | [VAE](16-vae.md#与其他概念的关系) | 扩散模型是固定编码器的多层 VAE；ELBO 与 EM；潜变量世界模型 |
 | [Diffusion](17-diffusion.md#与其他概念的关系) | 扩散、score 与 SDE；flow matching；VAE 的变分下界 |

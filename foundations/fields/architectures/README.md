@@ -43,11 +43,11 @@
   - 自注意力：全连接图上的消息传递，权重由 Q、K 匹配给出；GAT（图注意力网络）把同一机制限制在图的邻居上 `[结构]`（同上第 3.6 节）。
 - **键值读取** Σ_i w(q, k_i)·v_i：用查询和每个键的匹配程度给值加权求和。
   - 注意力：键和值来自输入，权重是 softmax(qKᵀ/√d_k)（softmax 把一组分数变成非负、和为 1 的权重）。单个查询的注意力就是以指数点积为核的 Nadaraya–Watson 核回归（用相似度给已知样本加权、平均它们的结果） `[结构]`（QKV 第 8 节）。
-  - FFN（Transformer 中逐位置的两层前馈网络）：FFN(x) = f(xW_1)W_2 = Σ_i f(x·k_i)v_i，W_1 的列是键、W_2 的行是值，都是固定参数 `[结构]`（Attention 与 Transformer 第 10.4、17 节）。
+  - FFN（Transformer 中逐位置的两层前馈网络）：FFN(x) = f(xW_1)W_2 = Σ_i f(x·k_i)v_i，W_1 的列是键、W_2 的行是值，都是固定参数 `[结构]`（Attention 与 Transformer 第 10.4、16 节）。
     - MoE：把 FFN 切成多个专家，路由器按打分只读其中几个；路由打分与注意力打分形式相同 `[结构]`（SSM、GNN 与 MoE 第 4.3、4.5 节）。
 - **卷积的特例**
-  - FFN 是核大小为 1 的卷积：令卷积公式中的核高、核宽为 1，每个位置的输出就是 XW + b `[结构]`（Attention 与 Transformer 第 17 节）。
-  - ViT（把图像切成小块、每块当作一个 token 交给 Transformer 的视觉模型）的切块嵌入是核大小与步幅都等于块边长的卷积：把每块展平后乘同一个矩阵 E，E 的每一列重排后就是一个卷积核 `[结构]`（同上第 17 节）。
+  - FFN 是核大小为 1 的卷积：令卷积公式中的核高、核宽为 1，每个位置的输出就是 XW + b `[结构]`（Attention 与 Transformer 第 16 节）。
+  - ViT（把图像切成小块、每块当作一个 token 交给 Transformer 的视觉模型）的切块嵌入是核大小与步幅都等于块边长的卷积：把每块展平后乘同一个矩阵 E，E 的每一列重排后就是一个卷积核 `[结构]`（同上第 16 节）。
 - **潜变量模型与变分下界**
   - VAE：编码器 q_φ(z|x) 可学习。
   - 扩散模型：编码器固定为逐步加高斯噪声的马尔可夫链、潜变量与数据同维的多层 VAE，训练优化的仍是变分下界 `[结构]`（VAE 与 Diffusion 的"与其他概念的关系"）。去噪网络可以是卷积 U-Net（先逐级缩小、再逐级放大并跨层拼接的编码–解码网络），也可以是 Transformer。
@@ -55,14 +55,14 @@
 几种部件在多个模块里重复出现：
 
 - **权重共享**：CNN 在空间上共享卷积核，RNN 在时间上共享 W_h、W_x，两者的参数量都与输入长度无关 `[结构]`（CNN 第 9 节）。
-- **残差通路**：y = x + F(x) 对 x 求导得 I + ∂F/∂x，恒等项给梯度留出一条不经过 F 的路。ResNet（残差网络）用它解决网络加深后训练误差反而上升的问题（CNN 第 6 节）；Transformer 每个子层都加残差连接，原文直接引用 ResNet `[历史]`（Attention 与 Transformer 第 10.2、17 节）；LSTM 中 f=1 的记忆通路起同样的作用 `[结构]`（LSTM 的"与其他概念的关系"）。
+- **残差通路**：y = x + F(x) 对 x 求导得 I + ∂F/∂x，恒等项给梯度留出一条不经过 F 的路。ResNet（残差网络）用它解决网络加深后训练误差反而上升的问题（CNN 第 6 节）；Transformer 每个子层都加残差连接，原文直接引用 ResNet `[历史]`（Attention 与 Transformer 第 10.2、16 节）；LSTM 中 f=1 的记忆通路起同样的作用 `[结构]`（LSTM 的"与其他概念的关系"）。
 - **看到多大范围**：L 层 3×3、步幅 1 的卷积，每层向外多看 1 个像素，感受野（能影响一个输出的输入区域）是 (2L+1)×(2L+1)，靠堆层和下采样扩大（CNN 第 4 节）；自注意力在第一层就让每个位置读取全部位置（Attention 与 Transformer 第 2 节）。这一差别在不同数据规模下的后果，见[观点页](../../../perspectives/cnn-vs-transformer.md)。
 
 ## 与其他分区和关系页的连接
 
 - [递推状态谱系](../../relations/recurrent-state.md)：把 RNN、LSTM、SSM、Mamba、线性注意力串成一条链，核心问题是状态转移怎样同时做到稳定、按内容选择、可以并行。
 - [注意力与 FFN 的分工谱系](../../relations/attention-ffn-division.md)：从注意力的 A 与 V 走到 FFN 键值记忆、MoE 与 Engram（把静态模式改成查表的记忆模块），说明读取位置与存放知识怎样在模块之间分工。
-- 只涉及两个模块的关系写在各篇末尾：[CNN](../../lessons/11-cnn.md#9-与其他概念的关系)、[RNN](../../lessons/12-rnn.md#与其他概念的关系)、[LSTM](../../lessons/13-lstm.md#与其他概念的关系)、[Attention 与 Transformer](../../lessons/14-attention-transformer.md#17-与其他概念的关系)、[QKV](../../lessons/15-qkv-deep-dive.md#与其他概念的关系)、[VAE](../../lessons/16-vae.md#与其他概念的关系)、[Diffusion](../../lessons/17-diffusion.md#与其他概念的关系)、[SSM、GNN 与 MoE](../../lessons/18-ssm-gnn-moe.md#与其他概念的关系)。
+- 只涉及两个模块的关系写在各篇末尾：[CNN](../../lessons/11-cnn.md#9-与其他概念的关系)、[RNN](../../lessons/12-rnn.md#与其他概念的关系)、[LSTM](../../lessons/13-lstm.md#与其他概念的关系)、[Attention 与 Transformer](../../lessons/14-attention-transformer.md#16-与其他概念的关系)、[QKV](../../lessons/15-qkv-deep-dive.md#与其他概念的关系)、[VAE](../../lessons/16-vae.md#与其他概念的关系)、[Diffusion](../../lessons/17-diffusion.md#与其他概念的关系)、[SSM、GNN 与 MoE](../../lessons/18-ssm-gnn-moe.md#与其他概念的关系)。
 - [优化分区](../optimization/README.md)：梯度沿深度或时间传递时要连乘每层的局部导数（[梯度与 SGD](../../lessons/modules/optimization/gradient-sgd.md)第 8 节），RNN 第 5 节、LSTM 第 4 节和残差通路都是在改这个连乘。
 - [目标分区](../objectives/README.md)：架构决定网络怎样计算，训练目标决定让它做什么题。因果 mask 让同一个 Transformer 可以用下一词目标并行训练（[自监督与生成目标](../../lessons/modules/objectives/03-pretraining-objectives.md)第 2–4 节）。
 - [进阶分区](../advanced/README.md)：LoRA 加在 Transformer 的线性层上；上下文学习发生在注意力的计算里，不改权重（[迁移与元学习](../../lessons/05c-transfer-meta-learning.md)第 4、10 节）。
