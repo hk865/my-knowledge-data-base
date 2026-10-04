@@ -81,8 +81,9 @@
 3. 写 `source.json`，至少包含下表字段（参照 `llm/papers/arxiv-2303.06349/source.json`）。
 4. 运行 `python tools/register_paper.py`。它会登记 `papers.json`、`papers.csv`、`docs/paper-catalog.md`、领域的论文列表与计数，并重新生成 `docs/topics.md`。先加 `--dry` 看一遍它准备写入的标签。
 5. 手动把论文加到它所属方向的 `fields/<方向>/PAPERS.md`，并在相关领域页、关系页或思考笔记里引用它。
+6. 运行 `python tools/relink_cards.py`：把方向页、精读、观点页和关系页里指向这篇论文 arXiv 页面的链接改成指向新卡（先加 `--dry` 看一遍；别人正在改的目录可以作为参数跳过）。
 
-**修改已登记论文的身份信息时**（题名、年份、作者、方向、标签），只改它的 `source.json`，然后运行 `python tools/sync_registry.py`，由它同步 `papers.json`、`papers.csv`、`docs/paper-catalog.md` 和 `docs/topics.md`。source.json 是论文身份的唯一来源。
+**修改已登记论文的身份信息时**（题名、年份、作者、方向、标签），只改它的 `source.json`，然后运行 `python tools/sync_registry.py`，由它同步 `papers.json`、`papers.csv`、`docs/paper-catalog.md` 和 `docs/topics.md`；它同时把新增了精读的论文在领域论文列表中标为"技术精读"，并刷新仓库首页与各领域首页的资源数、精读数。给已有卡片新增精读（`content_kind` 改为 `reading`）后也要运行它。source.json 是论文身份的唯一来源。
 
 | source.json 字段 | 含义 |
 |---|---|

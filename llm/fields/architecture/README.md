@@ -316,8 +316,8 @@ benchmark 的替换就是这个方向目标的迁移：WMT 机器翻译的 BLEU�
 **与其他论文的关联**
 
 - [预训练方向](../pretraining/README.md)：本页第 1、2 条谱系对应那里的"注意力不丢失""更长更大的注意力"，第 4、5 条对应"损失稳定""更深更大的网络"；那里有 MoE 各代配置表与 MuonClip、FP8 等训练侧细节。
-- [递推状态谱系](../../../foundations/relations/recurrent-state.md)：第 3 条谱系的数学底座。该页"未核实"一栏把门控线性注意力的后续工作留空，Kimi Linear 的 KDA（逐通道遗忘门）可以作为线性注意力节点之后的新节点补入。
-- [注意力与 FFN 的分工谱系](../../../foundations/relations/attention-ffn-division.md)：第 4、6 条谱系的解释链；DeepSeekMoE 的选择题短板与 Kimi K2 减半注意力头，可作为"注意力容量被 MoE 挤压"的新证据补入第 7 节。
+- [递推状态谱系](../../../foundations/relations/recurrent-state.md)：第 3 条谱系的数学底座；该页已补入 Mamba-2（SSD）与 KDA（Kimi Linear）两个节点，以及 2026 年的混合结构（Kimi K3、Qwen3.5）。
+- [注意力与 FFN 的分工谱系](../../../foundations/relations/attention-ffn-division.md)：第 4、6 条谱系的解释链；第 7 节已收入 DeepSeekMoE 的选择题短板、DeepSeek-V2 附录 D 的对照与 Kimi K2 减半注意力头，作为"注意力容量被 MoE 挤压"的证据。
 - [模型科学](../../../cross-domain/fields/model-science/README.md)：Jamba 在混合模型中找到 induction head，是该页"大模型上 induction head 只有相关性证据"之外的一条架构侧观察。
 - [长上下文方向](../long-context/README.md)与[推理时计算方向](../inference/README.md)：前者讲稀疏与线性结构怎样被评测为长上下文能力，后者讲 KV 量化、投机解码等推理系统手段；DeepSeek-V4.1-Flash 的 DSpark 与 V3 的 MTP 属于后者。
 
@@ -325,7 +325,7 @@ benchmark 的替换就是这个方向目标的迁移：WMT 机器翻译的 BLEU�
 
 - Gemma 2/3/4 的局部/全局配置取自预训练方向已核实的报告段落，本页只额外核对了 Gemma 3 §5.2 与 Gemma 4 摘要附近的 key 复用 value 一句；Gemini、GPT 系列等闭源模型的结构不写入正文。
 - H2O、Quest、MInference、Wortsman 等未单独打开原文，本页只引用 NSA、预训练方向对它们的转述与测量。
-- Mamba-2、Gated DeltaNet 等 KDA 的直接前作未打开；KDA"在 Gated DeltaNet 基础上改为逐通道遗忘门"取自 Kimi Linear 卡片。
+- Gated DeltaNet 原文未打开；Mamba-2 已在[递推状态谱系](../../../foundations/relations/recurrent-state.md)按原文核对（A 为标量乘单位阵、SSD 比 Mamba 的 scan 快 2–8 倍、约 10% 注意力层最好）。KDA"在 Gated DeltaNet 基础上改为逐通道遗忘门"取自 Kimi Linear 原文 §1、§3。
 - Based 的发表信息以 arXiv v2 页脚为准（ICML 2024 研讨会），是否另有会议正式版未核实。
 - Kimi K2 与 K3 的注意力头数、专家配置取自卡片与预训练方向，本轮未重新打开原文。
 - 2025-10 以后新增的表格行（GLM-5、Qwen3.5/3.6、Nemotron 3、MiniMax-M2、gpt-oss）依据各篇卡片中核对过的章节；Qwen3.5 只有模型卡，Nemotron 3 只读了总览白皮书，Super 与 Ultra 的单独报告（arXiv 2604.12374、2606.15007）未打开；Gemma 4 的 MoE 版本与 Llama 4 的原始发布材料未打开。
