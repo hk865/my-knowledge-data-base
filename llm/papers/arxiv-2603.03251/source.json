@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2603.03251",
+  "title": "Speculative Speculative Decoding",
+  "resource_kind": "paper",
+  "canonical_folder": "llm/papers/arxiv-2603.03251",
+  "official_url": "https://arxiv.org/abs/2603.03251",
+  "official_fulltext_url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/1b96f01343ff10150e6719eb163e1536-Paper-Conference.pdf",
+  "read_version": "ICLR 2026 正式 PDF；并核对 arXiv v3",
+  "version_status": "official_identity_and_selected_sections_checked",
+  "reading_depth": "selected_method_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "ICLR 正式 PDF 摘要、§1–3.1；arXiv v3 §3.1、§4.3、§5–6；作者代码仓库 README。未全文精读、未审计代码、未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "仅保留官方链接；未镜像全文。"
+  },
+  "fulltext_local_status": "official_link_only",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "first_submitted_date": "2026-03-03",
+  "latest_arxiv_revision_date": "2026-05-04",
+  "legacy_paths": [],
+  "evidence_paths": [
+    "llm/papers/arxiv-2603.03251/evidence.json"
+  ],
+  "authors": [
+    "Tanishq Kumar",
+    "Tri Dao",
+    "Avner May"
+  ],
+  "year": 2026,
+  "topic_paths": [
+    "llm/inference"
+  ],
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "generation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "ICLR 正式 PDF 摘要、§1–3.1；arXiv v3 §3.1、§4.3、§5–6；作者代码仓库 README。未全文精读、未审计代码、未复现。",
+    "verification_status": "identity_and_selected_method_sections_checked",
+    "verification_sources": [
+      "https://proceedings.iclr.cc/paper_files/paper/2026/hash/1b96f01343ff10150e6719eb163e1536-Abstract-Conference.html",
+      "https://proceedings.iclr.cc/paper_files/paper/2026/file/1b96f01343ff10150e6719eb163e1536-Paper-Conference.pdf",
+      "https://arxiv.org/abs/2603.03251",
+      "https://arxiv.org/html/2603.03251v3",
+      "https://github.com/tanishqkumar/ssd"
+    ],
+    "evidence_boundary": "未复现、未审计生产实现；文献卡不等于全文精读。"
+  }
+}

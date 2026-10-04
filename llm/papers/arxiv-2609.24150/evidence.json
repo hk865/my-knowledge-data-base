@@ -1,0 +1,26 @@
+{
+  "resource_id": "arxiv:2609.24150",
+  "checked_at": "2026-10-04",
+  "read_version": "arXiv v1",
+  "sources": [
+    "https://arxiv.org/abs/2609.24150",
+    "https://arxiv.org/html/2609.24150v1"
+  ],
+  "claims": [
+    {
+      "claim_id": "two_objectives",
+      "location": "§2.4 / §3.2–3.3",
+      "supported_summary": "EAL 面向贪心目标 token 的连续一致；WTV 用温度缩放分布的 TV 重叠形成窗口目标。"
+    },
+    {
+      "claim_id": "surrogate_boundary",
+      "location": "§3.1 / §3.3 Figure 1",
+      "supported_summary": "原文明确固定训练前缀与条件独立假设；不扩大到任意生成轨迹的无条件期望保证。"
+    },
+    {
+      "claim_id": "evaluation_boundary",
+      "location": "§4.1 / Tables 1–3",
+      "supported_summary": "单 H100、batch 1、链/树草稿与多个采样温度；主要报接受长度而非端到端服务延迟。"
+    }
+  ]
+}

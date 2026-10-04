@@ -56,3 +56,7 @@
 ## 交叉引用（2026-10-04 补）
 
 - [Transformers are SSMs: Generalized Models and Efficient Algorithms Through Structured State Space Duality](../../papers/arxiv-2405.21060/README.md)（Mamba-2） · 2024 · Princeton、CMU · 文献卡 · 格：序列混合 = 状态空间对偶（A 为标量乘单位阵，约 10% 注意力层的混合最好）
+
+## 2026年10月4日补充
+
+- [On the Design of Qwen3.8-Next Architecture: Evaluation, Efficiency, and Training Stability](../../papers/arxiv-2608.30320/README.md) · 2026 · 文献卡

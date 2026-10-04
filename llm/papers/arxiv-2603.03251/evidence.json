@@ -1,0 +1,34 @@
+{
+  "resource_id": "arxiv:2603.03251",
+  "checked_at": "2026-10-04",
+  "read_version": "ICLR 2026 正式 PDF；并核对 arXiv v3",
+  "sources": [
+    "https://proceedings.iclr.cc/paper_files/paper/2026/hash/1b96f01343ff10150e6719eb163e1536-Abstract-Conference.html",
+    "https://proceedings.iclr.cc/paper_files/paper/2026/file/1b96f01343ff10150e6719eb163e1536-Paper-Conference.pdf",
+    "https://arxiv.org/abs/2603.03251",
+    "https://arxiv.org/html/2603.03251v3",
+    "https://github.com/tanishqkumar/ssd"
+  ],
+  "claims": [
+    {
+      "claim_id": "asynchronous_execution",
+      "location": "§3.1 / Algorithm 1",
+      "supported_summary": "草稿与验证在独立硬件并行；预测多个验证结果并缓存对应的后续候选。"
+    },
+    {
+      "claim_id": "fallback_and_correctness",
+      "location": "§3.1",
+      "supported_summary": "命中时取缓存，未命中时回退；候选仍由常规投机验证处理。"
+    },
+    {
+      "claim_id": "cost_boundary",
+      "location": "§1 / §3.1 / §4.3",
+      "supported_summary": "额外硬件、缓存命中与备用草稿策略是成本因素，不能仅比较目标模型调用次数。"
+    },
+    {
+      "claim_id": "version_difference",
+      "location": "ICLR 会议摘要页与正式 PDF 摘要",
+      "supported_summary": "会议网页写 up to 2x；正式 PDF 写 on average 30% faster。未在概览或导读转引倍数。"
+    }
+  ]
+}

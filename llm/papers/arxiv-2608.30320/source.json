@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2608.30320",
+  "title": "On the Design of Qwen3.8-Next Architecture: Evaluation, Efficiency, and Training Stability",
+  "resource_kind": "paper",
+  "canonical_folder": "llm/papers/arxiv-2608.30320",
+  "official_url": "https://arxiv.org/abs/2608.30320",
+  "official_fulltext_url": "https://arxiv.org/html/2608.30320v1",
+  "read_version": "arXiv v1, 2026-08-31",
+  "version_status": "checked_v1",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "2026-10-04 打开摘要与 HTML；核对 §1、§2.1.1–2.1.2 的混合结构、NoPE 边界、QSA 索引和训练流程、Table 2–4、Figure 6 的效率口径；未全文精读，不据此断言部署吞吐或全系列结构。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "仅保留官方链接与原创机制图，不镜像原图或全文。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [
+    "llm/papers/arxiv-2608.30320/evidence.json"
+  ],
+  "authors": [
+    "Qwen Team"
+  ],
+  "year": 2026,
+  "topic_paths": [
+    "llm/architecture",
+    "llm/long-context"
+  ],
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "generation"
+  ]
+}

@@ -70,3 +70,8 @@
 - [ReAct: Synergizing Reasoning and Acting in Language Models](../../../cross-domain/papers/react/README.md) · 2022 · 智能体方向 · 技术精读 · 推理与工具调用交替
 - [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](../../papers/arxiv-2405.15793/README.md) · 2024 · 普林斯顿 · 智能体方向 · 代码智能体
 - [Voyager: An Open-Ended Embodied Agent with Large Language Models](../../papers/arxiv-2305.16291/README.md) · 2023 · NVIDIA 等 · 智能体方向 · 技能库与迭代提示
+
+## 2026年10月4日补充
+
+- [Speculative Speculative Decoding](../../papers/arxiv-2603.03251/README.md) · 2026 · 文献卡
+- [Acceptance-Aware Draft Model Training for Speculative Decoding](../../papers/arxiv-2609.24150/README.md) · 2026 · 文献卡

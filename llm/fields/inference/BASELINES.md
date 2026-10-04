@@ -67,6 +67,9 @@
 | 解码执行 | 草稿模块在预训练时就长在目标模型里（MTP） | [DeepSeek-V3](../../papers/arxiv-2412.19437/README.md)（见[预训练方向](../pretraining/README.md)⑥） | **改进**：第二个 token 接受率 85%–90%，生成速度 1.8 倍。<br>**代价**：只多预测一个 token |
 | 解码执行 | MTP 推广：多层共享参数的 MTP、预训练只训 1 层再复制成 3 层 | [GLM-5](../../papers/arxiv-2602.15763/README.md)、[MiniMax-M2](../../papers/arxiv-2605.26494/README.md)、[Nemotron 3](../../papers/arxiv-2512.20856/README.md) | **改进**：GLM-5 的 4 步投机平均接受长度 2.76（V3.2 为 2.55）。<br>**代价**：对比只在各家私有测试集上 |
 | 解码执行 | 块扩散模型一次并行写完整块草稿 | [DFlash](../../papers/arxiv-2602.06036/README.md)、[DFlash 2](../../papers/dflash-2/README.md) | **改进**：草稿长度不再受串行步数限制。<br>**代价**：要读目标模型隐状态并专门训练；加速随模型、任务、温度变化 |
+| 解码执行 | 预测可能的验证结果，在独立设备上提前写下一轮草稿 | [SSD](../../papers/arxiv-2603.03251/README.md) | **改进**：命中时隐藏草稿等待，取出的候选仍按通常规则验证。<br>**代价**：额外设备、缓存与未命中回退成本 |
+| 解码执行 | 用条件接受概率和引擎吞吐曲线动态选择验证长度 | [DeepSeek-V4.1-Flash](../../papers/arxiv-2609.19969/README.md) §2.4.3（DSpark） | **改进**：让预期推进长度适应服务负载。<br>**代价**：专用草稿器训练和引擎成本测量 |
+| 草稿训练 | 按贪心一致或随机采样分布重叠优化连续接受窗口 | [Acceptance-Aware Draft Model Training](../../papers/arxiv-2609.24150/README.md) | **改进**：训练目标对齐部署时的接受方式。<br>**代价**：固定前缀上的代理目标；接受长度提升仍需换算为端到端耗时 |
 | 解码执行 | 放宽验证：按置信度回退、训练判别头接受"足够好"的 token、精确采样一个混合分布 | [BiLD](../../papers/arxiv-2302.07863/README.md)、[Judge Decoding](../../papers/arxiv-2501.19309/README.md)、[Faster Cascades](../../papers/arxiv-2405.19261/README.md) | **改进**：比精确验证更快，Judge Decoding 相对优化过的实现为 3.9 倍。<br>**代价**：不再保证与目标模型同分布，必须另测质量（[导读](draft-verification-guide.md)第 6 节） |
 | 解码执行 | 小模型主写，遇难点发信号请大模型接管一段 | [RelayLLM](../../papers/arxiv-2601.05167/README.md) | **改进**：大模型只在部分位置调用。<br>**代价**：没有分布保证，收益要按任务实测 |
 | 显存与批处理 | KV 缓存分页存放、按需分配、可共享 | [vLLM](../../papers/arxiv-2309.06180/README.md) | **改进**：KV 有效占比从 20%–38% 到 96%，吞吐 2–4 倍。<br>**代价**：attention kernel 慢 20%–26% |

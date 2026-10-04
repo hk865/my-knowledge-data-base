@@ -1,0 +1,37 @@
+{
+  "checked_on": "2026-10-04",
+  "version": "2608.30320v1",
+  "source": "https://arxiv.org/html/2608.30320v1",
+  "claims": [
+    {
+      "location": "§2.1.1",
+      "claim": "三层 GDN 接一层全局注意力；全局层保留 RoPE；NoPE 后训练出现更多无尽生成。"
+    },
+    {
+      "location": "§2.1.2, Eq.13–16,19; Implementation Details",
+      "claim": "索引键每4个token平均池化后施加位置编码；选择最多512个完整块并展开原token，额外包含未完成末块。主注意力没有因此改为读取块均值。"
+    },
+    {
+      "location": "§2.1.2, Training Details",
+      "claim": "256K继续预训练分索引器稠密蒸馏与联合稀疏训练；不是推理时直接删边。"
+    },
+    {
+      "location": "Table 3",
+      "claim": "QSA 的 RULER 512K–1M区间均值93.00；八针 MRCR 1M为26.44。Full Attn 对应90.08与20.71。分数支持区分任务和汇总方式，不构成跨论文排行榜。"
+    },
+    {
+      "location": "Figure 6; Efficiency Analysis",
+      "claim": "1M时7.6× prefill与4.9× decode均为注意力模块/kernel级加速；不能视为模型端到端吞吐。"
+    }
+  ],
+  "original_diagrams": [
+    "assets/long-context/memory-routes-20261004.svg",
+    "assets/long-context/qsa-microblocks-20261004.svg"
+  ],
+  "not_verified": [
+    "完整训练数据配方",
+    "端到端部署吞吐",
+    "Qwen3.8-Max与Flash-Next具有相同结构",
+    "独立复现"
+  ]
+}

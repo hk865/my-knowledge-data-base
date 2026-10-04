@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="860" viewBox="0 0 1320 860" role="img" aria-labelledby="title desc">
+<title id="title">接受率相同，也可能变得更慢</title>
+<desc id="desc">人工设定 K 等于 4、每个到达位置的条件接受率为 0.8，每轮期望输出 3.3616 个 token。普通目标解码一个 token 耗时设为 1。草稿 0.4、验证 1、杂项 0.1 时加速约 2.24 倍；仅把验证时间改成 3 后约 0.96 倍。</desc>
+<rect width="1320" height="860" fill="#f7f9fc"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#71889a"/></marker></defs>
+<g font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif">
+<text x="40" y="56" fill="#18324f" font-size="31" font-weight="bold" text-anchor="start">接受率相同，也可能变得更慢</text>
+<text x="40" y="93" fill="#536b80" font-size="20" font-weight="normal" text-anchor="start">教学假设：K = 4，条件接受率 a = 0.8；普通目标解码 1 个 token 的时间 = 1</text>
+<text x="40" y="147" fill="#18324f" font-size="23" font-weight="bold" text-anchor="start">收益：每轮期望推进多少个位置？</text>
+<rect x="40" y="169" width="183" height="111" rx="12" fill="#e1f3ec" stroke="#cbd6e0"/>
+<text x="131" y="213" fill="#18324f" font-size="28" font-weight="bold" text-anchor="middle">1</text>
+<text x="131" y="252" fill="#536b80" font-size="15" font-weight="normal" text-anchor="middle">末尾补样或奖励 token</text>
+<text x="231" y="220" fill="#536b80" font-size="21" font-weight="bold" text-anchor="middle">+</text>
+<rect x="243" y="169" width="183" height="111" rx="12" fill="#e4efff" stroke="#cbd6e0"/>
+<text x="334" y="213" fill="#18324f" font-size="28" font-weight="bold" text-anchor="middle">0.8</text>
+<text x="334" y="252" fill="#536b80" font-size="15" font-weight="normal" text-anchor="middle">至少接受 1 个草稿</text>
+<text x="434" y="220" fill="#536b80" font-size="21" font-weight="bold" text-anchor="middle">+</text>
+<rect x="446" y="169" width="183" height="111" rx="12" fill="#e4efff" stroke="#cbd6e0"/>
+<text x="537" y="213" fill="#18324f" font-size="28" font-weight="bold" text-anchor="middle">0.64</text>
+<text x="537" y="252" fill="#536b80" font-size="15" font-weight="normal" text-anchor="middle">至少接受 2 个草稿</text>
+<text x="637" y="220" fill="#536b80" font-size="21" font-weight="bold" text-anchor="middle">+</text>
+<rect x="649" y="169" width="183" height="111" rx="12" fill="#e4efff" stroke="#cbd6e0"/>
+<text x="740" y="213" fill="#18324f" font-size="28" font-weight="bold" text-anchor="middle">0.512</text>
+<text x="740" y="252" fill="#536b80" font-size="15" font-weight="normal" text-anchor="middle">至少接受 3 个草稿</text>
+<text x="840" y="220" fill="#536b80" font-size="21" font-weight="bold" text-anchor="middle">+</text>
+<rect x="852" y="169" width="183" height="111" rx="12" fill="#e4efff" stroke="#cbd6e0"/>
+<text x="943" y="213" fill="#18324f" font-size="28" font-weight="bold" text-anchor="middle">0.4096</text>
+<text x="943" y="252" fill="#536b80" font-size="15" font-weight="normal" text-anchor="middle">至少接受 4 个草稿</text>
+<text x="1072" y="206" fill="#18324f" font-size="27" font-weight="bold" text-anchor="start">= 3.3616</text>
+<text x="1072" y="246" fill="#536b80" font-size="20" font-weight="normal" text-anchor="start">token / 轮</text>
+<text x="40" y="331" fill="#18324f" font-size="23" font-weight="bold" text-anchor="start">代价：推进同样数量的位置，要花多少时间？</text>
+<rect x="690" y="307" width="19" height="19" rx="3" fill="#8aaee2" stroke="#cbd6e0"/>
+<text x="719" y="324" fill="#536b80" font-size="17" font-weight="normal" text-anchor="start">草稿</text>
+<rect x="850" y="307" width="19" height="19" rx="3" fill="#58a58d" stroke="#cbd6e0"/>
+<text x="879" y="324" fill="#536b80" font-size="17" font-weight="normal" text-anchor="start">目标计算</text>
+<rect x="1050" y="307" width="19" height="19" rx="3" fill="#bdc5cc" stroke="#cbd6e0"/>
+<text x="1079" y="324" fill="#536b80" font-size="17" font-weight="normal" text-anchor="start">调度 / 缓存</text>
+<text x="40" y="420" fill="#18324f" font-size="20" font-weight="bold" text-anchor="start">普通自回归</text>
+<rect x="285" y="392" width="672.32" height="40" rx="4" fill="#58a58d" stroke="#cbd6e0"/>
+<text x="975" y="420" fill="#18324f" font-size="19" font-weight="normal" text-anchor="start">3.3616 时间单位</text>
+<text x="285" y="465" fill="#536b80" font-size="18" font-weight="normal" text-anchor="start">逐个位置执行目标模型，作为对照</text>
+<text x="40" y="538" fill="#18324f" font-size="20" font-weight="bold" text-anchor="start">投机：验证较便宜</text>
+<rect x="285" y="510" width="80" height="40" rx="4" fill="#8aaee2" stroke="#cbd6e0"/>
+<rect x="365" y="510" width="200" height="40" rx="4" fill="#58a58d" stroke="#cbd6e0"/>
+<rect x="565" y="510" width="20" height="40" rx="3" fill="#bdc5cc" stroke="#cbd6e0"/>
+<text x="608" y="538" fill="#18324f" font-size="19" font-weight="normal" text-anchor="start">0.4 + 1 + 0.1 = 1.5</text>
+<text x="985" y="538" fill="#287d63" font-size="25" font-weight="bold" text-anchor="start">约 2.24×</text>
+<text x="285" y="583" fill="#536b80" font-size="18" font-weight="normal" text-anchor="start">相同接受率，草稿与验证的成本得到摊薄</text>
+<text x="40" y="658" fill="#18324f" font-size="20" font-weight="bold" text-anchor="start">投机：验证变昂贵</text>
+<rect x="285" y="630" width="80" height="40" rx="4" fill="#8aaee2" stroke="#cbd6e0"/>
+<rect x="365" y="630" width="600" height="40" rx="4" fill="#58a58d" stroke="#cbd6e0"/>
+<rect x="965" y="630" width="20" height="40" rx="3" fill="#bdc5cc" stroke="#cbd6e0"/>
+<text x="1010" y="658" fill="#9e5825" font-size="25" font-weight="bold" text-anchor="start">约 0.96×</text>
+<text x="285" y="703" fill="#536b80" font-size="18" font-weight="normal" text-anchor="start">0.4 + 3 + 0.1 = 3.5；只改变验证耗时，收益就消失</text>
+<text x="40" y="777" fill="#18324f" font-size="22" font-weight="bold" text-anchor="start">看两笔账：接受前缀带来的推进量 ÷ 草稿、验证与调度的总时间</text>
+<text x="40" y="818" fill="#536b80" font-size="16" font-weight="normal" text-anchor="start">原创手算示意 · 所有数值均为人工设定 · 不含预填充、排队与结束符 · 串行实现，未计异步重叠</text>
+</g></svg>

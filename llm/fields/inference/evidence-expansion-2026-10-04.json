@@ -1,0 +1,80 @@
+{
+  "checked_at": "2026-10-04",
+  "scope": "概览过时结论修正、机制导读扩充与原创图示",
+  "new_resources": [
+    "arxiv:2603.03251",
+    "arxiv:2609.24150"
+  ],
+  "checked_sources": [
+    {
+      "url": "https://arxiv.org/html/2508.10925v1",
+      "sections": [
+        "2.2",
+        "2.5.1",
+        "2.5.2"
+      ],
+      "supports": "结构、Harmony、低中高推理档位已公开；RL 仅概述与 o3 类似。"
+    },
+    {
+      "url": "https://arxiv.org/html/2606.19348v1",
+      "sections": [
+        "5.1.1"
+      ],
+      "supports": "专家 RL 使用不同长度惩罚和上下文窗口，对应三种模式。"
+    },
+    {
+      "url": "https://arxiv.org/html/2609.19969v1",
+      "sections": [
+        "2.1",
+        "2.4.3"
+      ],
+      "supports": "预训练移除 MTP；专训 DSpark；条件接受概率结合引擎吞吐曲线选验证长度。"
+    },
+    {
+      "url": "https://arxiv.org/html/2602.06036",
+      "sections": [
+        "3",
+        "4",
+        "5.5.2",
+        "5.5.4"
+      ],
+      "supports": "块并行草稿、目标特征 KV 注入、草稿成本与接受长度权衡。"
+    }
+  ],
+  "original_diagrams": [
+    {
+      "path": "llm/assets/inference/inference-verification-guarantees.svg",
+      "kind": "原创机制对照图",
+      "measurement": false
+    },
+    {
+      "path": "llm/assets/inference/inference-latency-budget.svg",
+      "kind": "原创教学手算图",
+      "measurement": false,
+      "assumptions": {
+        "K": 4,
+        "constant_conditional_acceptance": 0.8,
+        "t_AR": 1,
+        "t_draft": 0.4,
+        "t_overhead": 0.1,
+        "t_verify": [
+          1,
+          3
+        ]
+      },
+      "computed": {
+        "expected_output_tokens": 3.3616,
+        "speedups": [
+          2.2410666666666668,
+          0.9604571428571429
+        ]
+      }
+    }
+  ],
+  "boundaries": [
+    "没有复现性能",
+    "没有审计生产代码",
+    "旧有未改动性能表保留既有证据边界",
+    "新预印本的训练代理目标与部署保真分开解释"
+  ]
+}

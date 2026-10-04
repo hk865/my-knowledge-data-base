@@ -139,3 +139,6 @@
 - [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](arxiv-1810.04805/README.md) · 2018 · 文献卡，暂无独立精读
 - [TinyBERT: Distilling BERT for Natural Language Understanding](arxiv-1909.10351/README.md) · 2019 · 文献卡，暂无独立精读
 - [Transformers are SSMs: Generalized Models and Efficient Algorithms Through Structured State Space Duality](arxiv-2405.21060/README.md) · 2024 · 文献卡，暂无独立精读
+- [Speculative Speculative Decoding](arxiv-2603.03251/README.md) · 2026 · 文献卡，暂无独立精读
+- [On the Design of Qwen3.8-Next Architecture: Evaluation, Efficiency, and Training Stability](arxiv-2608.30320/README.md) · 2026 · 文献卡，暂无独立精读
+- [Acceptance-Aware Draft Model Training for Speculative Decoding](arxiv-2609.24150/README.md) · 2026 · 文献卡，暂无独立精读
