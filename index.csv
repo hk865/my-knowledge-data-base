@@ -103,7 +103,7 @@ Zero WAM 如何把人类示范视频变成机器人动作,robotics-embodied/pape
 Agent权限、沙箱与协作：从一次工具调用理解边界,cross-domain/fields/agents/permissions-isolation-collaboration.md
 2026年10月4日研究短报,daily/2026-10-04.md
 工程文档、作者文章与代码仓库,cross-domain/resources/README.md
-工程探索：高速电子器件设计与应用,cross-domain/fields/engineering-exploration/README.md
+临时兴趣：高速电子机制探索,perspectives/notes/engineering-exploration.md
 2026年10月4日公开来源档案,daily/2026-10-04-sources.json
 2026年10月4日原始URL来源缺口,daily/2026-10-04-source-gaps.json
 2026年10月4日 phase3 内容扩展,daily/2026-10-04-phase3-expansion.md
@@ -111,7 +111,7 @@ CaMeL：把提示注入防御变成可执行的信息流约束,cross-domain/pape
 视觉语言动作模型：动作表示与实时执行,robotics-embodied/fields/vla/README.md
 LLM 推理：计算预算、草拟与验证,llm/fields/inference/README.md
 长上下文：结构、利用与执行成本,llm/fields/long-context/README.md
-2026-10-04：各方向从经典基线读到 2025–2026,daily/2026-10-04-direction-recency.md
+2026-10-04：从经典基线读到新问题,daily/2026-10-04-direction-recency.md
 架构与效率,llm/fields/architecture/README.md
 后训练,llm/fields/posttraining/README.md
 监督微调 SFT,llm/fields/posttraining/sft/README.md
@@ -137,3 +137,4 @@ Agent：语言模型智能体,cross-domain/fields/agents/README.md
 进阶连接,foundations/fields/advanced/README.md
 数据与实验流程,foundations/fields/data/README.md
 优化与参数更新,foundations/fields/optimization/README.md
+2026年10月4日审核修订说明,daily/2026-10-04-review.md

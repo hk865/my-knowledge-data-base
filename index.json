@@ -416,8 +416,8 @@
     "file": "cross-domain/resources/README.md"
   },
   {
-    "title": "工程探索：高速电子器件设计与应用",
-    "file": "cross-domain/fields/engineering-exploration/README.md"
+    "title": "临时兴趣：高速电子机制探索",
+    "file": "perspectives/notes/engineering-exploration.md"
   },
   {
     "title": "2026年10月4日公开来源档案",
@@ -448,7 +448,7 @@
     "file": "llm/fields/long-context/README.md"
   },
   {
-    "title": "2026-10-04：各方向从经典基线读到 2025–2026",
+    "title": "2026-10-04：从经典基线读到新问题",
     "file": "daily/2026-10-04-direction-recency.md"
   },
   {
@@ -550,5 +550,9 @@
   {
     "title": "优化与参数更新",
     "file": "foundations/fields/optimization/README.md"
+  },
+  {
+    "title": "2026年10月4日审核修订说明",
+    "file": "daily/2026-10-04-review.md"
   }
 ]

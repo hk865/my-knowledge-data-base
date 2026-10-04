@@ -554,7 +554,7 @@
       "generation"
     ],
     "canonical_folder": "llm/papers/arxiv-2412.19437",
-    "canonical_path": "llm/papers/arxiv-2412.19437/README.md",
+    "canonical_path": "llm/papers/arxiv-2412.19437/reading.md",
     "canonical_readme": "llm/papers/arxiv-2412.19437/README.md",
     "source_path": "llm/papers/arxiv-2412.19437/source.json",
     "legacy_paths": [],
@@ -1062,7 +1062,7 @@
       "generation"
     ],
     "canonical_folder": "llm/papers/arxiv-2401.06066",
-    "canonical_path": "llm/papers/arxiv-2401.06066/README.md",
+    "canonical_path": "llm/papers/arxiv-2401.06066/reading.md",
     "canonical_readme": "llm/papers/arxiv-2401.06066/README.md",
     "source_path": "llm/papers/arxiv-2401.06066/source.json",
     "legacy_paths": [],
@@ -1259,7 +1259,7 @@
       "generation"
     ],
     "canonical_folder": "llm/papers/arxiv-2601.07372",
-    "canonical_path": "llm/papers/arxiv-2601.07372/README.md",
+    "canonical_path": "llm/papers/arxiv-2601.07372/reading.md",
     "canonical_readme": "llm/papers/arxiv-2601.07372/README.md",
     "source_path": "llm/papers/arxiv-2601.07372/source.json",
     "legacy_paths": [],
@@ -15221,7 +15221,8 @@
     "topic_paths": [
       "llm/pretraining",
       "llm/posttraining/rl",
-      "cross-domain/agents"
+      "cross-domain/agents",
+      "cross-domain/training-science"
     ],
     "detail_topics": [],
     "architecture_tags": [],
@@ -15361,7 +15362,7 @@
       "generation"
     ],
     "canonical_folder": "llm/papers/arxiv-2512.24880",
-    "canonical_path": "llm/papers/arxiv-2512.24880/README.md",
+    "canonical_path": "llm/papers/arxiv-2512.24880/reading.md",
     "canonical_readme": "llm/papers/arxiv-2512.24880/README.md",
     "source_path": "llm/papers/arxiv-2512.24880/source.json",
     "legacy_paths": [],
@@ -15473,7 +15474,7 @@
       "generation"
     ],
     "canonical_folder": "llm/papers/arxiv-2606.19348",
-    "canonical_path": "llm/papers/arxiv-2606.19348/README.md",
+    "canonical_path": "llm/papers/arxiv-2606.19348/reading.md",
     "canonical_readme": "llm/papers/arxiv-2606.19348/README.md",
     "source_path": "llm/papers/arxiv-2606.19348/source.json",
     "legacy_paths": [],
@@ -35286,7 +35287,8 @@
     "doi": null,
     "year": "2026",
     "topic_paths": [
-      "robotics/embodied-policies"
+      "robotics/embodied-policies",
+      "cross-domain/evaluation"
     ],
     "detail_topics": [],
     "architecture_tags": [],
@@ -35314,7 +35316,8 @@
       "multimodal"
     ],
     "task_tags": [
-      "decision"
+      "decision",
+      "evaluation"
     ],
     "canonical_folder": "robotics-embodied/papers/arxiv-2605.20774",
     "canonical_path": "robotics-embodied/papers/arxiv-2605.20774/README.md",
@@ -35391,7 +35394,8 @@
     "doi": null,
     "year": "2026",
     "topic_paths": [
-      "robotics/embodied-policies"
+      "robotics/embodied-policies",
+      "cross-domain/evaluation"
     ],
     "detail_topics": [],
     "architecture_tags": [],
@@ -35419,7 +35423,8 @@
       "multimodal"
     ],
     "task_tags": [
-      "decision"
+      "decision",
+      "evaluation"
     ],
     "canonical_folder": "robotics-embodied/papers/arxiv-2607.04434",
     "canonical_path": "robotics-embodied/papers/arxiv-2607.04434/README.md",
@@ -35482,7 +35487,8 @@
     "doi": null,
     "year": "2026",
     "topic_paths": [
-      "robotics/embodied-policies"
+      "robotics/embodied-policies",
+      "cross-domain/evaluation"
     ],
     "detail_topics": [],
     "architecture_tags": [],
@@ -35510,7 +35516,8 @@
       "multimodal"
     ],
     "task_tags": [
-      "decision"
+      "decision",
+      "evaluation"
     ],
     "canonical_folder": "robotics-embodied/papers/arxiv-2609.25562",
     "canonical_path": "robotics-embodied/papers/arxiv-2609.25562/README.md",
@@ -35699,7 +35706,8 @@
     "doi": null,
     "year": "2026",
     "topic_paths": [
-      "llm/posttraining/sft"
+      "llm/posttraining/sft",
+      "cross-domain/knowledge-distillation"
     ],
     "detail_topics": [],
     "architecture_tags": [],
@@ -35756,7 +35764,8 @@
     "doi": null,
     "year": "2026",
     "topic_paths": [
-      "llm/posttraining/sft"
+      "llm/posttraining/sft",
+      "cross-domain/knowledge-distillation"
     ],
     "detail_topics": [],
     "architecture_tags": [],

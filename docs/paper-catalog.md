@@ -88,7 +88,7 @@
 - 身份核验：verified_primary_title_and_identifier
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
 - 用户阅读状态：unknown
-- [文献卡（尚无独立精读）](../llm/papers/arxiv-2412.19437/README.md)
+- [独立讲解](../llm/papers/arxiv-2412.19437/reading.md)
 
 <a id="p008"></a>
 ## p008 · Qwen2.5-1M Technical Report
@@ -160,7 +160,7 @@
 - 身份核验：verified_primary_title_and_identifier
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
 - 用户阅读状态：unknown
-- [文献卡（尚无独立精读）](../llm/papers/arxiv-2401.06066/README.md)
+- [独立讲解](../llm/papers/arxiv-2401.06066/reading.md)
 
 <a id="p014"></a>
 ## p014 · DeepSeek-V2: A Strong, Economical, and Efficient Mixture-of-Experts Language Model
@@ -184,7 +184,7 @@
 - 身份核验：verified_primary_title_and_identifier
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
 - 用户阅读状态：unknown
-- [文献卡（尚无独立精读）](../llm/papers/arxiv-2601.07372/README.md)
+- [独立讲解](../llm/papers/arxiv-2601.07372/reading.md)
 
 <a id="p016"></a>
 ## p016 · Tokenizer-Agnostic Engram Module
@@ -1312,7 +1312,7 @@
 - 身份核验：verified_identity
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
 - 用户阅读状态：unknown
-- [文献卡（尚无独立精读）](../robotics-embodied/papers/url-https-github.com-hkust-aerial-robotics-fm-fusion/README.md)
+- [资料卡（尚无独立精读）](../robotics-embodied/papers/url-https-github.com-hkust-aerial-robotics-fm-fusion/README.md)
 
 <a id="p110"></a>
 ## p110 · Walk These Ways: Tuning Robot Control for Generalization with Multiplicity of Behavior
@@ -1824,7 +1824,7 @@
 - 身份核验：official_identity_and_selected_method_sections_verified
 - 阅读范围：官方博客 path selector 和 local convolution 方法段；非同行评议全文
 - 用户阅读状态：unknown
-- [文献卡，暂无独立精读](../llm/papers/dflash-2/README.md)
+- [资料卡，暂无独立精读](../llm/papers/dflash-2/README.md)
 
 <a id="p152"></a>
 ## p152 · Faster Cascades via Speculative Decoding
@@ -1941,7 +1941,7 @@
 - 身份核验：official_article_read
 - 阅读范围：官方文章已读；关联论文仅身份与摘要核验
 - 用户阅读状态：unknown
-- [文献卡，暂无独立精读](../cross-domain/papers/agentic-property-based-testing/README.md)
+- [资料卡，暂无独立精读](../cross-domain/papers/agentic-property-based-testing/README.md)
 
 <a id="p161"></a>
 ## p161 · Metamorphic Testing of Multi-Agent LLM Systems: A Trace-Based Behavioral Oracle Framework
@@ -2202,7 +2202,7 @@
 
 - 标识：arxiv:2507.20534
 - 原文 / 官方入口：https://arxiv.org/abs/2507.20534
-- 主题：llm/pretraining, llm/posttraining/rl, cross-domain/agents
+- 主题：llm/pretraining, llm/posttraining/rl, cross-domain/agents, cross-domain/training-science
 - 身份核验：selected_sections_checked_not_full_read
 - 用户阅读状态：unknown
 - [文献卡](../llm/papers/arxiv-2507.20534/README.md)
@@ -2225,7 +2225,7 @@
 - 主题：llm/pretraining, llm/architecture
 - 身份核验：selected_sections_checked_not_full_read
 - 用户阅读状态：unknown
-- [文献卡](../llm/papers/arxiv-2512.24880/README.md)
+- [独立讲解](../llm/papers/arxiv-2512.24880/reading.md)
 
 <a id="p187"></a>
 ## p187 · Attention Residuals
@@ -2245,7 +2245,7 @@
 - 主题：llm/pretraining, llm/architecture, llm/long-context
 - 身份核验：selected_sections_checked_not_full_read
 - 用户阅读状态：unknown
-- [文献卡](../llm/papers/arxiv-2606.19348/README.md)
+- [独立讲解](../llm/papers/arxiv-2606.19348/reading.md)
 
 <a id="p189"></a>
 ## p189 · Kimi K3: Open Frontier Intelligence
@@ -3725,7 +3725,7 @@
 - 主题：llm/inference, llm/posttraining/rl
 - 身份核验：selected_sections_checked_not_full_read
 - 用户阅读状态：unknown
-- [文献卡](../llm/papers/openai-o1/README.md)
+- [资料卡](../llm/papers/openai-o1/README.md)
 
 <a id="p337"></a>
 ## p337 · Scaling Up Visual and Vision-Language Representation Learning With Noisy Text Supervision
@@ -4295,7 +4295,7 @@
 - 主题：multimodal/world-models, multimodal/generation
 - 身份核验：selected_sections_checked_not_full_read
 - 用户阅读状态：unknown
-- [文献卡](../multimodal/papers/genie-2-blog/README.md)
+- [资料卡](../multimodal/papers/genie-2-blog/README.md)
 
 <a id="p394"></a>
 ## p394 · Genie 3: A new frontier for world models
@@ -4305,7 +4305,7 @@
 - 主题：multimodal/world-models, multimodal/generation
 - 身份核验：selected_sections_checked_not_full_read
 - 用户阅读状态：unknown
-- [文献卡](../multimodal/papers/genie-3-blog/README.md)
+- [资料卡](../multimodal/papers/genie-3-blog/README.md)
 
 <a id="p395"></a>
 ## p395 · System Card: Claude Opus 4 & Claude Sonnet 4
@@ -4715,7 +4715,7 @@
 - 主题：cross-domain/evaluation, cross-domain/agents
 - 身份核验：selected_sections_checked_not_full_read
 - 用户阅读状态：unknown
-- [文献卡](../cross-domain/papers/openai-swe-bench-verified/README.md)
+- [资料卡](../cross-domain/papers/openai-swe-bench-verified/README.md)
 
 <a id="p436"></a>
 ## p436 · Why SWE-bench Verified no longer measures frontier coding capabilities
@@ -4725,7 +4725,7 @@
 - 主题：cross-domain/evaluation, cross-domain/agents
 - 身份核验：selected_sections_checked_not_full_read
 - 用户阅读状态：unknown
-- [文献卡](../cross-domain/papers/openai-swe-bench-verified-retired/README.md)
+- [资料卡](../cross-domain/papers/openai-swe-bench-verified-retired/README.md)
 
 <a id="p437"></a>
 ## p437 · Histograms of Oriented Gradients for Human Detection
@@ -5265,7 +5265,7 @@
 - 主题：llm/architecture, llm/long-context, multimodal/vlm
 - 身份核验：selected_sections_checked_not_full_read
 - 用户阅读状态：unknown
-- [文献卡](../llm/papers/qwen3.5/README.md)
+- [资料卡](../llm/papers/qwen3.5/README.md)
 
 <a id="p491"></a>
 ## p491 · On-Policy Distillation
@@ -5275,7 +5275,7 @@
 - 主题：llm/posttraining/sft, llm/posttraining/rl
 - 身份核验：selected_sections_checked_not_full_read
 - 用户阅读状态：unknown
-- [文献卡](../llm/papers/thinking-machines-on-policy-distillation/README.md)
+- [资料卡](../llm/papers/thinking-machines-on-policy-distillation/README.md)
 
 <a id="p492"></a>
 ## p492 · The Art of Scaling Reinforcement Learning Compute for LLMs
@@ -5375,7 +5375,7 @@
 - 主题：robotics/embodied-policies, robotics/control
 - 身份核验：selected_sections_checked_not_full_read
 - 用户阅读状态：unknown
-- [文献卡](../robotics-embodied/papers/gemini-robotics-2/README.md)
+- [资料卡](../robotics-embodied/papers/gemini-robotics-2/README.md)
 
 <a id="p502"></a>
 ## p502 · UnifoLM-WLA-1.0
@@ -5385,7 +5385,7 @@
 - 主题：robotics/embodied-policies
 - 身份核验：selected_sections_checked_not_full_read
 - 用户阅读状态：unknown
-- [文献卡](../robotics-embodied/papers/unifolm-wla/README.md)
+- [资料卡](../robotics-embodied/papers/unifolm-wla/README.md)
 
 <a id="p503"></a>
 ## p503 · Introducing Helix 02: Full-Body Autonomy
@@ -5395,7 +5395,7 @@
 - 主题：robotics/control, robotics/embodied-policies
 - 身份核验：selected_sections_checked_not_full_read
 - 用户阅读状态：unknown
-- [文献卡](../robotics-embodied/papers/figure-helix-02/README.md)
+- [资料卡](../robotics-embodied/papers/figure-helix-02/README.md)
 
 <a id="p504"></a>
 ## p504 · Large Behavior Models and Atlas Find New Footing
@@ -5405,7 +5405,7 @@
 - 主题：robotics/embodied-policies, robotics/control
 - 身份核验：selected_sections_checked_not_full_read
 - 用户阅读状态：unknown
-- [文献卡](../robotics-embodied/papers/boston-dynamics-atlas-lbm/README.md)
+- [资料卡](../robotics-embodied/papers/boston-dynamics-atlas-lbm/README.md)
 
 <a id="p505"></a>
 ## p505 · Gemini Robotics 2: Safety Evaluations
@@ -5625,7 +5625,7 @@
 - 主题：cross-domain/engineering-exploration
 - 身份核验：technical_tutorial_text_reading
 - 用户阅读状态：unknown
-- [文献卡](../cross-domain/resources/adi-mt-046/README.md)
+- [资料卡](../cross-domain/resources/adi-mt-046/README.md)
 
 <a id="p527"></a>
 ## p527 · MT-097: Dealing with High-Speed Logic
@@ -5635,7 +5635,7 @@
 - 主题：cross-domain/engineering-exploration
 - 身份核验：technical_tutorial_focused_reading
 - 用户阅读状态：unknown
-- [文献卡](../cross-domain/resources/adi-mt-097/README.md)
+- [资料卡](../cross-domain/resources/adi-mt-097/README.md)
 
 <a id="p528"></a>
 ## p528 · Agent approvals & security
@@ -5645,7 +5645,7 @@
 - 主题：cross-domain/agents
 - 身份核验：body_sandbox_approvals_network_isolation_sections
 - 用户阅读状态：unknown
-- [文献卡](../cross-domain/resources/agent-approvals-security/README.md)
+- [资料卡](../cross-domain/resources/agent-approvals-security/README.md)
 
 <a id="p529"></a>
 ## p529 · The Architect Elevator — Visiting the upper floors
@@ -5655,7 +5655,7 @@
 - 主题：cross-domain/agents
 - 身份核验：engineering_article_focused_reading
 - 用户阅读状态：unknown
-- [文献卡](../cross-domain/resources/architect-elevator/README.md)
+- [资料卡](../cross-domain/resources/architect-elevator/README.md)
 
 <a id="p530"></a>
 ## p530 · Branch By Abstraction
@@ -5665,7 +5665,7 @@
 - 主题：cross-domain/agents
 - 身份核验：short_engineering_article_read
 - 用户阅读状态：unknown
-- [文献卡](../cross-domain/resources/branch-by-abstraction/README.md)
+- [资料卡](../cross-domain/resources/branch-by-abstraction/README.md)
 
 <a id="p531"></a>
 ## p531 · Bubblewrap
@@ -5675,7 +5675,7 @@
 - 主题：cross-domain/agents
 - 身份核验：repository_readme_security_usage_limitations
 - 用户阅读状态：unknown
-- [文献卡](../cross-domain/resources/bubblewrap/README.md)
+- [资料卡](../cross-domain/resources/bubblewrap/README.md)
 
 <a id="p532"></a>
 ## p532 · Building multi-agent systems: When and how to use them
@@ -5685,7 +5685,7 @@
 - 主题：cross-domain/agents
 - 身份核验：engineering_article_focused_reading
 - 用户阅读状态：unknown
-- [文献卡](../cross-domain/resources/building-multi-agent-systems/README.md)
+- [资料卡](../cross-domain/resources/building-multi-agent-systems/README.md)
 
 <a id="p533"></a>
 ## p533 · How Cedar authorization works
@@ -5695,7 +5695,7 @@
 - 主题：cross-domain/agents
 - 身份核验：authorization_algorithm_and_diagnostics_sections
 - 用户阅读状态：unknown
-- [文献卡](../cross-domain/resources/cedar-authorization/README.md)
+- [资料卡](../cross-domain/resources/cedar-authorization/README.md)
 
 <a id="p534"></a>
 ## p534 · Continuous Integration
@@ -5705,7 +5705,7 @@
 - 主题：cross-domain/agents
 - 身份核验：engineering_article_focused_reading
 - 用户阅读状态：unknown
-- [文献卡](../cross-domain/resources/continuous-integration/README.md)
+- [资料卡](../cross-domain/resources/continuous-integration/README.md)
 
 <a id="p535"></a>
 ## p535 · Docker Engine security
@@ -5715,7 +5715,7 @@
 - 主题：cross-domain/agents
 - 身份核验：namespaces_cgroups_daemon_capabilities_security_sections
 - 用户阅读状态：unknown
-- [文献卡](../cross-domain/resources/docker-engine-security/README.md)
+- [资料卡](../cross-domain/resources/docker-engine-security/README.md)
 
 <a id="p536"></a>
 ## p536 · NanmiCoder/dsh-agent-teams — AgentTeams plugin for DeepSeek Harness
@@ -5725,7 +5725,7 @@
 - 主题：cross-domain/agents
 - 身份核验：repository_documentation_read_only
 - 用户阅读状态：unknown
-- [文献卡](../cross-domain/resources/dsh-agent-teams/README.md)
+- [资料卡](../cross-domain/resources/dsh-agent-teams/README.md)
 
 <a id="p537"></a>
 ## p537 · git-worktree - Manage multiple working trees
@@ -5735,7 +5735,7 @@
 - 主题：cross-domain/agents
 - 身份核验：name_description_commands_shared_repository
 - 用户阅读状态：unknown
-- [文献卡](../cross-domain/resources/git-worktree/README.md)
+- [资料卡](../cross-domain/resources/git-worktree/README.md)
 
 <a id="p538"></a>
 ## p538 · Security Model
@@ -5745,7 +5745,7 @@
 - 主题：cross-domain/agents
 - 身份核验：threat_model_goals_defense_in_depth_faq
 - 用户阅读状态：unknown
-- [文献卡](../cross-domain/resources/gvisor-security/README.md)
+- [资料卡](../cross-domain/resources/gvisor-security/README.md)
 
 <a id="p539"></a>
 ## p539 · Control Group v2
@@ -5755,7 +5755,7 @@
 - 主题：cross-domain/agents
 - 身份核验：authoritative_intro_core_controller_model
 - 用户阅读状态：unknown
-- [文献卡](../cross-domain/resources/linux-cgroup-v2/README.md)
+- [资料卡](../cross-domain/resources/linux-cgroup-v2/README.md)
 
 <a id="p540"></a>
 ## p540 · Landlock: unprivileged access control
@@ -5765,7 +5765,7 @@
 - 主题：cross-domain/agents
 - 身份核验：introduction_rules_layering_inheritance_and_abi_caveats
 - 用户阅读状态：unknown
-- [文献卡](../cross-domain/resources/linux-landlock/README.md)
+- [资料卡](../cross-domain/resources/linux-landlock/README.md)
 
 <a id="p541"></a>
 ## p541 · namespaces(7) — Linux manual page
@@ -5775,7 +5775,7 @@
 - 主题：cross-domain/agents
 - 身份核验：description_namespace_types_and_colophon
 - 用户阅读状态：unknown
-- [文献卡](../cross-domain/resources/linux-namespaces/README.md)
+- [资料卡](../cross-domain/resources/linux-namespaces/README.md)
 
 <a id="p542"></a>
 ## p542 · Seccomp BPF (SECure COMPuting with filters)
@@ -5785,7 +5785,7 @@
 - 主题：cross-domain/agents
 - 身份核验：introduction_what_it_isnt_usage
 - 用户阅读状态：unknown
-- [文献卡](../cross-domain/resources/linux-seccomp-bpf/README.md)
+- [资料卡](../cross-domain/resources/linux-seccomp-bpf/README.md)
 
 <a id="p543"></a>
 ## p543 · How we built our multi-agent research system
@@ -5795,7 +5795,7 @@
 - 主题：cross-domain/agents
 - 身份核验：engineering_report_focused_reading
 - 用户阅读状态：unknown
-- [文献卡](../cross-domain/resources/multi-agent-research-system/README.md)
+- [资料卡](../cross-domain/resources/multi-agent-research-system/README.md)
 
 <a id="p544"></a>
 ## p544 · Mitigating the risk of prompt injections in browser use
@@ -5805,7 +5805,7 @@
 - 主题：cross-domain/agents
 - 身份核验：article_body_and_metadata
 - 用户阅读状态：unknown
-- [文献卡](../cross-domain/resources/prompt-injection-defenses/README.md)
+- [资料卡](../cross-domain/resources/prompt-injection-defenses/README.md)
 
 <a id="p545"></a>
 ## p545 · Running Codex safely at OpenAI
@@ -5815,7 +5815,7 @@
 - 主题：cross-domain/agents
 - 身份核验：article_body_and_metadata
 - 用户阅读状态：unknown
-- [文献卡](../cross-domain/resources/running-codex-safely/README.md)
+- [资料卡](../cross-domain/resources/running-codex-safely/README.md)
 
 <a id="p546"></a>
 ## p546 · Scaling the Practice of Architecture, Conversationally
@@ -5825,7 +5825,7 @@
 - 主题：cross-domain/agents
 - 身份核验：engineering_article_focused_reading
 - 用户阅读状态：unknown
-- [文献卡](../cross-domain/resources/scaling-architecture-conversationally/README.md)
+- [资料卡](../cross-domain/resources/scaling-architecture-conversationally/README.md)
 
 <a id="p547"></a>
 ## p547 · SPIFFE Overview
@@ -5835,7 +5835,7 @@
 - 主题：cross-domain/agents
 - 身份核验：overview_body_and_identity
 - 用户阅读状态：unknown
-- [文献卡](../cross-domain/resources/spiffe-overview/README.md)
+- [资料卡](../cross-domain/resources/spiffe-overview/README.md)
 
 <a id="p548"></a>
 ## p548 · High-Speed Layout Guidelines (SCAA082A)
@@ -5845,7 +5845,7 @@
 - 主题：cross-domain/engineering-exploration
 - 身份核验：application_report_selected_sections
 - 用户阅读状态：unknown
-- [文献卡](../cross-domain/resources/ti-scaa082a/README.md)
+- [资料卡](../cross-domain/resources/ti-scaa082a/README.md)
 
 <a id="p549"></a>
 ## p549 · High-Speed Interface Layout Guidelines (SPRAAR7J, Rev. J)
@@ -5855,7 +5855,7 @@
 - 主题：cross-domain/engineering-exploration
 - 身份核验：application_note_selected_sections
 - 用户阅读状态：unknown
-- [文献卡](../cross-domain/resources/ti-spraar7j/README.md)
+- [资料卡](../cross-domain/resources/ti-spraar7j/README.md)
 
 <a id="p550"></a>
 ## p550 · Security
@@ -5865,7 +5865,7 @@
 - 主题：cross-domain/agents
 - 身份核验：webassembly_core_defense_in_depth_filesystem_access
 - 用户阅读状态：unknown
-- [文献卡](../cross-domain/resources/wasmtime-security/README.md)
+- [资料卡](../cross-domain/resources/wasmtime-security/README.md)
 
 <a id="p551"></a>
 ## p551 · The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions
@@ -5942,7 +5942,7 @@
 
 - 标识：arxiv:2605.20774
 - 原文 / 官方入口：https://arxiv.org/abs/2605.20774
-- 主题：robotics/embodied-policies
+- 主题：robotics/embodied-policies, cross-domain/evaluation
 - 身份核验：selected_sections_checked_not_full_read
 - 用户阅读状态：unknown
 - [文献卡](../robotics-embodied/papers/arxiv-2605.20774/README.md)
@@ -5962,7 +5962,7 @@
 
 - 标识：arxiv:2607.04434
 - 原文 / 官方入口：https://arxiv.org/abs/2607.04434
-- 主题：robotics/embodied-policies
+- 主题：robotics/embodied-policies, cross-domain/evaluation
 - 身份核验：selected_sections_checked_not_full_read
 - 用户阅读状态：unknown
 - [文献卡](../robotics-embodied/papers/arxiv-2607.04434/README.md)
@@ -5972,7 +5972,7 @@
 
 - 标识：arxiv:2609.25562
 - 原文 / 官方入口：https://arxiv.org/abs/2609.25562
-- 主题：robotics/embodied-policies
+- 主题：robotics/embodied-policies, cross-domain/evaluation
 - 身份核验：selected_sections_checked_not_full_read
 - 用户阅读状态：unknown
 - [文献卡](../robotics-embodied/papers/arxiv-2609.25562/README.md)
@@ -6012,7 +6012,7 @@
 
 - 标识：arxiv:2609.04172
 - 原文 / 官方入口：https://arxiv.org/abs/2609.04172
-- 主题：llm/posttraining/sft
+- 主题：llm/posttraining/sft, cross-domain/knowledge-distillation
 - 身份核验：selected_sections_checked_not_full_read
 - 用户阅读状态：unknown
 - [文献卡](../llm/papers/arxiv-2609.04172/README.md)
@@ -6022,7 +6022,7 @@
 
 - 标识：arxiv:2609.37326
 - 原文 / 官方入口：https://arxiv.org/abs/2609.37326
-- 主题：llm/posttraining/sft
+- 主题：llm/posttraining/sft, cross-domain/knowledge-distillation
 - 身份核验：selected_sections_checked_not_full_read
 - 用户阅读状态：unknown
 - [文献卡](../llm/papers/arxiv-2609.37326/README.md)

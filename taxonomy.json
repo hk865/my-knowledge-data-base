@@ -259,7 +259,9 @@
           "subtopics": [
             "高速电子器件设计与应用（探索）"
           ],
-          "status": "exploratory_not_committed_project"
+          "status": "temporary_interest_not_committed_project",
+          "navigation_path": "perspectives/notes/engineering-exploration.md",
+          "directory_role": "legacy_resource_tag_for_temporary_exploration"
         }
       ]
     }

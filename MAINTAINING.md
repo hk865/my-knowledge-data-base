@@ -76,6 +76,8 @@
 
 ## 5 新增一篇论文
 
+非论文资料按 STYLE §6、§15 使用资料卡与 `resources/`；下列登记流程同时适用，独立资源数与论文数分别统计。已有路径不为更新卡型搬家。
+
 1. 在所属领域建目录：`<领域>/papers/arxiv-<编号>/`；没有 arXiv 编号的，用 `<领域>/papers/<短名>/`。论文目录建好后不再搬家（STYLE 第 15 节）。
 2. 写 `README.md`：按 STYLE 第 6 节的三行模板。
 3. 写 `source.json`，至少包含下表字段（参照 `llm/papers/arxiv-2303.06349/source.json`）。
@@ -83,20 +85,20 @@
 5. 手动把论文加到它所属方向的 `fields/<方向>/PAPERS.md`，并在相关领域页、关系页或思考笔记里引用它。
 6. 运行 `python tools/relink_cards.py`：把方向页、精读、观点页和关系页里指向这篇论文 arXiv 页面的链接改成指向新卡（先加 `--dry` 看一遍；别人正在改的目录可以作为参数跳过）。
 
-**修改已登记论文的身份信息时**（题名、年份、作者、方向、标签），只改它的 `source.json`，然后运行 `python tools/sync_registry.py`，由它同步 `papers.json`、`papers.csv`、`docs/paper-catalog.md` 和 `docs/topics.md`；它同时把新增了精读的论文在领域论文列表中标为"技术精读"，并刷新仓库首页与各领域首页的资源数、精读数。给已有卡片新增精读（`content_kind` 改为 `reading`）后也要运行它。source.json 是论文身份的唯一来源。
+**修改已登记论文的身份信息时**（题名、年份、作者、方向、标签），只改它的 `source.json`，然后运行 `python tools/sync_registry.py`，由它同步 `papers.json`、`papers.csv`、`docs/paper-catalog.md` 和 `docs/topics.md`；它同时把新增了精读的论文在领域论文列表中标为"技术精读"，并刷新仓库首页与各领域首页的资源数、精读数。给已有卡片新增精读（`content_kind` 改为 `reading`）后也要运行它。列表的卡型、年份和讲解状态应从元信息刷新；占位年份不能使后续更新失效。分日期的增量列表必须按当前日期归节，不能追加到最后一个旧日期标题下。source.json 是论文身份的唯一来源。
 
 | source.json 字段 | 含义 |
 |---|---|
 | `resource_id` | `arxiv:<编号>`、`doi:<DOI>` 或 `url:<官方地址>` |
 | `title` | 原文页面当前题名；改过名的，旧题名放进 `previous_titles` |
-| `resource_kind` | `paper`、`official_technical_report`、`official_blog`、`repository` |
+| `resource_kind` | `paper`、`official_technical_report`、`official_blog`、`repository`、`official_documentation`（官方文档）、`author_article`（作者文章） |
 | `canonical_folder` | 论文目录的仓库相对路径 |
 | `official_url`、`official_fulltext_url` | 官方页面与全文链接 |
 | `year` | 年份 |
 | `authors` | 作者列表 |
 | `topic_paths` | 所属方向，取值见 `taxonomy.json` |
 | `modality_tags`、`task_tags` | 标签，词表见 `docs/topics.md` 开头（STYLE 第 15 节） |
-| `content_kind` | `bibliographic_card`（文献卡）或 `reading`（有精读） |
+| `content_kind` | `bibliographic_card`（文献卡或资料卡）或 `reading`（有独立讲解） |
 | `reading_depth`、`reading_boundary` | 核对了哪些章节，是否全文精读 |
 | `license` | 许可核验状态；未核验写 `not_audited` |
 | `evidence_paths` | 有证据档案时指向本目录的 `evidence.json` |

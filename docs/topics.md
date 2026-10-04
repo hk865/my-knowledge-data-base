@@ -974,7 +974,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Proving Test Set Contamination in Black Box Language Models](paper-catalog.md#p406)
 - [GPQA: A Graduate-Level Google-Proof Q&A Benchmark](paper-catalog.md#p409)
 
-### 训练科学（17）
+### 训练科学（18）
 
 细分：规模定律；优化地形；训练动态；双下降；本征维度与参数有效性；遗忘
 
@@ -988,6 +988,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [TPU v4: An Optically Reconfigurable Supercomputer for Machine Learning with Hardware Support for Embeddings](paper-catalog.md#p178)
 - [How Do Large Language Models Acquire Factual Knowledge During Pretraining?](paper-catalog.md#p179)
 - [Muon is Scalable for LLM Training](paper-catalog.md#p182)
+- [Kimi K2: Open Agentic Intelligence](paper-catalog.md#p184)
 - [Kimi K3: Open Frontier Intelligence](paper-catalog.md#p189)
 - [On Layer Normalization in the Transformer Architecture](paper-catalog.md#p281)
 - [Small-scale proxies for large-scale Transformer training instabilities](paper-catalog.md#p303)
@@ -1002,7 +1003,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 细分：
 
 
-### 评估与监督可靠性（61）
+### 评估与监督可靠性（64）
 
 细分：性质测试、变形测试与行为验证边界
 
@@ -1067,9 +1068,12 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [System Card: Claude Opus 5.5](paper-catalog.md#p487)
 - [Gemini 3.8 Flash Model Card](paper-catalog.md#p488)
 - [Seed2.0 Model Card: Towards Intelligence Frontier for Real-World Complexity](paper-catalog.md#p489)
+- [VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World Evaluation of Vision-Language-Action Models](paper-catalog.md#p558)
+- [RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies](paper-catalog.md#p560)
+- [IndustrialVLA-Bench: A Traceable Multi-Axis Evaluation of Open Robot Policy Models](paper-catalog.md#p561)
 
 
-### 知识蒸馏与模型压缩（13）
+### 知识蒸馏与模型压缩（15）
 
 细分：输出分布与软目标；中间特征与提示监督；教师学生迁移；模型压缩历史与来源边界
 
@@ -1084,6 +1088,8 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [AM-RADIO: Agglomerative Vision Foundation Model -- Reduce All Domains Into One](paper-catalog.md#p479)
 - [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](paper-catalog.md#p519)
 - [TinyBERT: Distilling BERT for Natural Language Understanding](paper-catalog.md#p520)
+- [Rethinking On-Policy Distillation of Large Language Models II: One Training Example](paper-catalog.md#p565)
+- [Solving Without Stopping: On-Policy Distillation at Small Scale](paper-catalog.md#p566)
 - [Fast-FoundationStereo: Real-Time Zero-Shot Stereo Matching](paper-catalog.md#p577)
 - [Lite Any Stereo V2: Faster and Stronger Efficient Zero-Shot Stereo Matching](paper-catalog.md#p579)
 
@@ -1113,14 +1119,14 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 | 模态 \ 任务 | understanding | generation | decision | evaluation | analysis |
 |---|---:|---:|---:|---:|---:|
-| text | [65](#x-text-understanding) | [169](#x-text-generation) | [105](#x-text-decision) | [71](#x-text-evaluation) | [82](#x-text-analysis) |
-| image | [127](#x-image-understanding) | [60](#x-image-generation) | [110](#x-image-decision) | [19](#x-image-evaluation) | [16](#x-image-analysis) |
+| text | [65](#x-text-understanding) | [169](#x-text-generation) | [105](#x-text-decision) | [74](#x-text-evaluation) | [82](#x-text-analysis) |
+| image | [127](#x-image-understanding) | [60](#x-image-generation) | [110](#x-image-decision) | [22](#x-image-evaluation) | [16](#x-image-analysis) |
 | video | [38](#x-video-understanding) | [44](#x-video-generation) | [36](#x-video-decision) | [15](#x-video-evaluation) | [6](#x-video-analysis) |
 | audio | [9](#x-audio-understanding) | [7](#x-audio-generation) | [2](#x-audio-decision) | [1](#x-audio-evaluation) | · |
-| action | [9](#x-action-understanding) | [37](#x-action-generation) | [150](#x-action-decision) | [12](#x-action-evaluation) | [3](#x-action-analysis) |
-| state | [17](#x-state-understanding) | [3](#x-state-generation) | [77](#x-state-decision) | [3](#x-state-evaluation) | · |
+| action | [9](#x-action-understanding) | [37](#x-action-generation) | [150](#x-action-decision) | [15](#x-action-evaluation) | [3](#x-action-analysis) |
+| state | [17](#x-state-understanding) | [3](#x-state-generation) | [77](#x-state-decision) | [6](#x-state-evaluation) | · |
 | code | [1](#x-code-understanding) | [27](#x-code-generation) | [27](#x-code-decision) | [20](#x-code-evaluation) | [28](#x-code-analysis) |
-| multimodal | [54](#x-multimodal-understanding) | [45](#x-multimodal-generation) | [49](#x-multimodal-decision) | [20](#x-multimodal-evaluation) | [9](#x-multimodal-analysis) |
+| multimodal | [54](#x-multimodal-understanding) | [45](#x-multimodal-generation) | [49](#x-multimodal-decision) | [23](#x-multimodal-evaluation) | [9](#x-multimodal-analysis) |
 | tabular | [1](#x-tabular-understanding) | · | · | · | · |
 
 <a id="x-text-understanding"></a>
@@ -1479,7 +1485,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-text-evaluation"></a>
 
-### text × evaluation（71）
+### text × evaluation（74）
 
 - [PersonaEval: Are LLM Evaluators Human Enough to Judge Role-Play?](paper-catalog.md#p032)
 - [On scalable oversight with weak LLMs judging strong LLMs](paper-catalog.md#p033)
@@ -1552,6 +1558,9 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Seed2.0 Model Card: Towards Intelligence Frontier for Real-World Complexity](paper-catalog.md#p489)
 - [DeepSeekMath-V2: Towards Self-Verifiable Mathematical Reasoning](paper-catalog.md#p497)
 - [Gemini Robotics 2: Safety Evaluations](paper-catalog.md#p505)
+- [VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World Evaluation of Vision-Language-Action Models](paper-catalog.md#p558)
+- [RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies](paper-catalog.md#p560)
+- [IndustrialVLA-Bench: A Traceable Multi-Axis Evaluation of Open Robot Policy Models](paper-catalog.md#p561)
 
 <a id="x-text-analysis"></a>
 
@@ -1954,7 +1963,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-image-evaluation"></a>
 
-### image × evaluation（19）
+### image × evaluation（22）
 
 - [LARY: A Latent Action Representation Yielding Benchmark for Generalizable Vision-to-Action Alignment](paper-catalog.md#p060)
 - [Vision-and-Language Navigation: Interpreting visually-grounded navigation instructions in real environments](paper-catalog.md#p119)
@@ -1973,6 +1982,9 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs](paper-catalog.md#p384)
 - [OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments](paper-catalog.md#p416)
 - [Gemini Robotics 2: Safety Evaluations](paper-catalog.md#p505)
+- [VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World Evaluation of Vision-Language-Action Models](paper-catalog.md#p558)
+- [RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies](paper-catalog.md#p560)
+- [IndustrialVLA-Bench: A Traceable Multi-Axis Evaluation of Open Robot Policy Models](paper-catalog.md#p561)
 - [What Drives Success in Physical Planning with Joint-Embedding Predictive World Models?](paper-catalog.md#p578)
 - [The Planning Limits of Latent World Models](paper-catalog.md#p581)
 
@@ -2413,7 +2425,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-action-evaluation"></a>
 
-### action × evaluation（12）
+### action × evaluation（15）
 
 - [LARY: A Latent Action Representation Yielding Benchmark for Generalizable Vision-to-Action Alignment](paper-catalog.md#p060)
 - [Vision-and-Language Navigation: Interpreting visually-grounded navigation instructions in real environments](paper-catalog.md#p119)
@@ -2425,6 +2437,9 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Ctrl-World: A Controllable Generative World Model for Robot Manipulation](paper-catalog.md#p262)
 - [Evaluating Gemini Robotics Policies in a Veo World Simulator](paper-catalog.md#p266)
 - [Gemini Robotics 2: Safety Evaluations](paper-catalog.md#p505)
+- [VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World Evaluation of Vision-Language-Action Models](paper-catalog.md#p558)
+- [RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies](paper-catalog.md#p560)
+- [IndustrialVLA-Bench: A Traceable Multi-Axis Evaluation of Open Robot Policy Models](paper-catalog.md#p561)
 - [What Drives Success in Physical Planning with Joint-Embedding Predictive World Models?](paper-catalog.md#p578)
 - [The Planning Limits of Latent World Models](paper-catalog.md#p581)
 
@@ -2550,9 +2565,12 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-state-evaluation"></a>
 
-### state × evaluation（3）
+### state × evaluation（6）
 
 - [Rethinking Robustness Assessment: Adversarial Attacks on Learning-based Quadrupedal Locomotion Controllers](paper-catalog.md#p166)
+- [VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World Evaluation of Vision-Language-Action Models](paper-catalog.md#p558)
+- [RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies](paper-catalog.md#p560)
+- [IndustrialVLA-Bench: A Traceable Multi-Axis Evaluation of Open Robot Policy Models](paper-catalog.md#p561)
 - [What Drives Success in Physical Planning with Joint-Embedding Predictive World Models?](paper-catalog.md#p578)
 - [The Planning Limits of Latent World Models](paper-catalog.md#p581)
 
@@ -2849,7 +2867,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-multimodal-evaluation"></a>
 
-### multimodal × evaluation（20）
+### multimodal × evaluation（23）
 
 - [On scalable oversight with weak LLMs judging strong LLMs](paper-catalog.md#p033)
 - [Vision-and-Language Navigation: Interpreting visually-grounded navigation instructions in real environments](paper-catalog.md#p119)
@@ -2871,6 +2889,9 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Humanity's Last Exam](paper-catalog.md#p425)
 - [Gemini 3.8 Flash Model Card](paper-catalog.md#p488)
 - [Seed2.0 Model Card: Towards Intelligence Frontier for Real-World Complexity](paper-catalog.md#p489)
+- [VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World Evaluation of Vision-Language-Action Models](paper-catalog.md#p558)
+- [RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies](paper-catalog.md#p560)
+- [IndustrialVLA-Bench: A Traceable Multi-Axis Evaluation of Open Robot Policy Models](paper-catalog.md#p561)
 
 <a id="x-multimodal-analysis"></a>
 

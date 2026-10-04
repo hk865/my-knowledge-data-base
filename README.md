@@ -26,7 +26,7 @@
 
 每篇论文或资源有唯一文件夹：
 
-- README：文献卡，写明论文身份、官方原文入口和阅读深度
+- README：文献卡或资料卡，说明问题、方法、阅读理由并提供官方原文入口
 - reading.md：独立讲解，只在有讲解的论文中出现
 - figures/：讲解中的原创图示
 - source.json：原文地址、阅读版本、许可与规范路径
@@ -55,9 +55,11 @@
 
 ## 最新短报与机制导读
 
-[各方向读到 2025–2026](daily/2026-10-04-direction-recency.md)：从旧基线的问题出发选择后继论文，逐方向说明缺口、优先级和保留理由。
+[10月4日修订说明](daily/2026-10-04-review.md)：事实勘误、证据边界、目录修复与临时兴趣归档。
 
-[10月4日 phase3 内容扩展](daily/2026-10-04-phase3-expansion.md)：新增材料、阅读入口与本轮改动。
+[最新研究短报：从经典基线读到新问题](daily/2026-10-04-direction-recency.md)：机器人闭环、语言模型数据与蒸馏、多模态表示与生成。具体阅读顺序由各方向页维护。
+
+[同日机制讲义更新记录](daily/2026-10-04-phase3-expansion.md)：VLA、长上下文与 CaMeL 的讲义和配图。
 
 [2026年10月4日研究短报](daily/2026-10-04.md) · [Agent 权限、隔离与协作](cross-domain/fields/agents/permissions-isolation-collaboration.md) · [工程资源](cross-domain/resources/README.md)
 

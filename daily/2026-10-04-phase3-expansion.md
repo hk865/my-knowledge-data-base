@@ -16,9 +16,9 @@
 
 [权限、隔离与协作讲义](../cross-domain/fields/agents/permissions-isolation-collaboration.md) 用一次代码修复串起任务契约、授权、操作系统隔离和集成验收。[CaMeL 精读](../cross-domain/papers/camel/reading.md) 再用日历与文档共享的算例展开数据依赖和信息流策略。
 
-今天的工程资料也保留在库内。[高速电路机制导读](../cross-domain/fields/engineering-exploration/README.md) 从边沿时间、传播延迟、回流与建立时间展开，新增一幅原创对照图。
+今天的工程资料也保留在库内。[高速电路机制导读](../perspectives/notes/engineering-exploration.md) 从边沿时间、传播延迟、回流与建立时间展开，新增一幅原创对照图。
 
-## 建议先读这三处
+## 本次讲义的三个入口
 
 1. [VLA 入门](../robotics-embodied/fields/vla/README.md)：看新增证据怎样修正“路线已经合流”的简单概括。
 2. [CaMeL 精读](../cross-domain/papers/camel/reading.md)：看每一步中哪个值带着什么权限，以及为什么分支依赖也重要。
