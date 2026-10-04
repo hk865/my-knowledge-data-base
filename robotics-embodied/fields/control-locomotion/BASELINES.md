@@ -73,6 +73,7 @@
 | （接口之外的模块） | 几何路径规划 | [RRT* 精读](../../papers/rrt-star/reading.md) | 回答走哪条路，与本方向的"每只脚用多大力"分层 |
 | （参照） | 人形综述；人形通用 VLA | [人形运动与操作综述](../../papers/arxiv-2501.02116/README.md)、[GR00T N1](../../papers/arxiv-2503.14734/README.md) | GR00T N1 只做桌面双臂操作，不含行走控制器，放在这里作为边界参照 |
 | （参照）工业界工具链 | 公司开源的训练与部署流水线、仿真器中的执行器与随机化部件 | [unitree_rl_gym](https://github.com/unitreerobotics/unitree_rl_gym)、[Isaac Lab](https://arxiv.org/abs/2511.04831)；对照见[入门页的工业界方案](README.md#工业界方案成熟在哪里没公开什么) | 把执行器网络、延迟、随机化、sim2sim 校验变成默认步骤 / 产品控制器的奖励、随机化范围与验证数据都未公开 |
+| 系统结构 + 训练信号 | 感知参考生成器与跟踪器分层，用优势加权回归改进生成器 | [Generate, Track, Improve](../../papers/arxiv-2609.31577/README.md) | 在参考选择处修地形与技能组合失配 / 手工奖励与动作数据选择，纯深度缺少语义 |
 
 ## 批注
 

@@ -49,3 +49,8 @@
 - [Quaternion kinematics for the error-state Kalman filter](../../papers/eskf/README.md) · 2017 · 技术精读（融合的统计基础）
 - [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](../../../multimodal/papers/vit/README.md) · 2020 · 精读（编码器结构，见[视觉表征方向](../../../multimodal/fields/visual-representation/README.md)）
 - [Learning Transferable Visual Models From Natural Language Supervision](../../../multimodal/papers/clip/README.md) · 2021 · 精读（开放词汇语义的来源）
+
+## 后续问题与近期方法
+
+- [Fast-FoundationStereo：实时零样本双目](../../papers/arxiv-2512.11130/README.md) · 2025；CVPR 2026 · 文献卡
+- [Lite Any Stereo V2：面向边缘延迟的双目模型](../../papers/arxiv-2606.24457/README.md) · 2026 · 文献卡

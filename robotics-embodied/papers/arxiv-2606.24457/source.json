@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2606.24457",
+  "title": "Lite Any Stereo V2: Faster and Stronger Efficient Zero-Shot Stereo Matching",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2606.24457",
+  "official_url": "https://arxiv.org/abs/2606.24457",
+  "official_fulltext_url": "https://arxiv.org/pdf/2606.24457v1",
+  "year": 2026,
+  "authors": [
+    "Junpeng Jing",
+    "Ronglai Zuo",
+    "Zhelun Shen",
+    "Shangchen Zhou",
+    "Rolandos Alexandros Potamias",
+    "Stefanos Zafeiriou",
+    "Krystian Mikolajczyk",
+    "Jiankang Deng"
+  ],
+  "topic_paths": [
+    "robotics/perception",
+    "cross-domain/knowledge-distillation"
+  ],
+  "modality_tags": [
+    "image"
+  ],
+  "task_tags": [
+    "understanding"
+  ],
+  "content_kind": "bibliographic_card",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "reading_boundary": "arXiv 摘要及 v1 §I、§III-A–C、§IV-E、§V。核对方法、硬件测时口径与局限，未逐表复核全部精度数字。 不是独立全文精读，未复现。",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "latest_checked_version_date": "2026-06-23",
+  "publication_status": "预印本；本卡不把旧版 LAS 的发表状态转给 LAS2",
+  "teaching_status": "not_created",
+  "reading_path": null,
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "未进行再分发许可审计，仅链接原文。"
+  },
+  "fulltext_local_status": "official_link_only",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "verification_2026_10_04": {
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2606.24457",
+      "https://arxiv.org/html/2606.24457v1"
+    ],
+    "reading_scope": "arXiv 摘要及 v1 §I、§III-A–C、§IV-E、§V。核对方法、硬件测时口径与局限，未逐表复核全部精度数字。",
+    "evidence_boundary": "作者实验与公开原文；未独立运行；不把预印本/修订年份改成首发年份。"
+  }
+}

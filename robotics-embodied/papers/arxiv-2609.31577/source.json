@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2609.31577",
+  "title": "Generate, Track, Improve: Perceptive Multi-Skill Humanoid Locomotion with RL-Fine-Tuned Motion Generators",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2609.31577",
+  "official_url": "https://arxiv.org/abs/2609.31577",
+  "official_fulltext_url": "https://arxiv.org/pdf/2609.31577v1",
+  "year": 2026,
+  "authors": [
+    "Zachary Olkin",
+    "William D. Compton",
+    "Aaron D. Ames"
+  ],
+  "topic_paths": [
+    "robotics/control",
+    "robotics/embodied-policies"
+  ],
+  "modality_tags": [
+    "image",
+    "state",
+    "action"
+  ],
+  "task_tags": [
+    "decision",
+    "generation"
+  ],
+  "content_kind": "bibliographic_card",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "reading_boundary": "arXiv 摘要与 v1 §II-E–F、§III-A/D/F、§IV-A–B；作者项目页。未全文精读、未运行代码。 不是独立全文精读，未复现。",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "latest_checked_version_date": "2026-09-25",
+  "publication_status": "预印本",
+  "teaching_status": "not_created",
+  "reading_path": null,
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "未进行再分发许可审计，仅链接原文。"
+  },
+  "fulltext_local_status": "official_link_only",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "verification_2026_10_04": {
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2609.31577",
+      "https://arxiv.org/html/2609.31577v1",
+      "https://zolkin1.github.io/generate-track-improve/"
+    ],
+    "reading_scope": "arXiv 摘要与 v1 §II-E–F、§III-A/D/F、§IV-A–B；作者项目页。未全文精读、未运行代码。",
+    "evidence_boundary": "作者实验与公开原文；未独立运行；不把预印本/修订年份改成首发年份。"
+  }
+}

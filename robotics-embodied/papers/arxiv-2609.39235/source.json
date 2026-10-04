@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2609.39235",
+  "title": "The Planning Limits of Latent World Models",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2609.39235",
+  "official_url": "https://arxiv.org/abs/2609.39235",
+  "official_fulltext_url": "https://arxiv.org/pdf/2609.39235v1",
+  "year": 2026,
+  "authors": [
+    "Ali Alrasheed",
+    "Basim Azam",
+    "Naveed Akhtar"
+  ],
+  "topic_paths": [
+    "robotics/embodied-policies",
+    "multimodal/world-models"
+  ],
+  "modality_tags": [
+    "image",
+    "video",
+    "state",
+    "action"
+  ],
+  "task_tags": [
+    "decision",
+    "evaluation"
+  ],
+  "content_kind": "bibliographic_card",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "reading_boundary": "arXiv 摘要、v1 §3–7、Appendix B/C/N/P；核对规划范围定义、仿真闭环与真实离线数据之别、专家子目标及状态输入。未全文精读、未复现。 不是独立全文精读，未复现。",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "latest_checked_version_date": "2026-09-30",
+  "publication_status": "预印本",
+  "teaching_status": "not_created",
+  "reading_path": null,
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "未进行再分发许可审计，仅链接原文。"
+  },
+  "fulltext_local_status": "official_link_only",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "verification_2026_10_04": {
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2609.39235",
+      "https://arxiv.org/html/2609.39235v1"
+    ],
+    "reading_scope": "arXiv 摘要、v1 §3–7、Appendix B/C/N/P；核对规划范围定义、仿真闭环与真实离线数据之别、专家子目标及状态输入。未全文精读、未复现。",
+    "evidence_boundary": "作者实验与公开原文；未独立运行；不把预印本/修订年份改成首发年份。"
+  }
+}

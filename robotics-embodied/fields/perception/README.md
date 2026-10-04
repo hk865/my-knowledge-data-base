@@ -1,6 +1,6 @@
 # 机器人感知
 
-> 状态：领域入门页 · v1（2026-10-04 追加第 7 阶段） · 依据 [synthesis.csv](synthesis.csv)（17 行）
+> 状态：领域入门页 · v2 · 依据 [synthesis.csv](synthesis.csv)（19 行）
 >
 > 速览：
 > 1. 本方向研究机器人上的感知任务：检测、分割、深度、多传感器融合，以及怎样把它们的输出变成控制和规划能用的、带时间和不确定性的环境估计。视觉编码器本身怎样训练、怎样评价，在[视觉表征方向](../../../multimodal/fields/visual-representation/README.md)；本页只在它被机器人使用时讨论它。
@@ -136,6 +136,12 @@
 
 **站在现在看。** `[判断]` 速览第 5 条"基础模型把类别固定换成了速度与一致性不够"在 2D 一侧被修了一大块：SAM 3 把 FM-Fusion 里要三个模型拼起来的事做成一个约 30 ms 的模型，并自带视频里的跨帧 ID；但跨视角、跨时间的 3D 一致性仍要靠建图（第 2 阶段的做法没有过时），视频里物体一多仍不实时。深度一侧，Depth Anything V2"用合成标注修真实标注的失效"的思路被搬到了双目（FoundationStereo）和多视图（DA3），而 DA3 又被[定位与建图方向](../localization-mapping/README.md)的 AMB3R-SLAM 用作前端，感知里的深度与定位里的几何前端正在合成同一类模型。
 
+### 8 从通用深度到闭环可用的深度（2025–2026）
+
+[FoundationStereo](../../papers/arxiv-2501.09898/README.md) 修的是跨域误差，后续两篇把延迟纳入问题本身。[Fast-FoundationStereo](../../papers/arxiv-2512.11130/README.md)（2025 年预印本，CVPR 2026）按三个计算瓶颈分别蒸馏、搜索和剪枝；[LAS2](../../papers/arxiv-2606.24457/README.md)（2026-06）从边缘设备实测延迟出发重设计轻量双目网络。两篇都把大模型知识移到部署模型，但压缩路径不同。
+
+`[判断]` 对机器人更值得追的增量是“跨域误差 × 延迟预算”，而不是只看深度排行榜。部署时把曝光、传输、深度计算和地图更新一起计时；模型帧率只是其中一项。两篇仍报告透明或半透明物体等困难表面失效，快了以后仍需要下游处理不可靠测量。
+
 ## 站在现在看过去：后来者专门修了什么
 
 | 当时的做法 | 后来暴露的坑 | 谁修、怎样修 | 依据 |
@@ -205,6 +211,13 @@
 5. [Miki 等](../../papers/arxiv-2201.08117/README.md) 与 [Agarwal 等](../../papers/url-https-proceedings.mlr.press-v205-agarwal23a-agarwal23a/README.md)：对照阅读，两种处理感知误差的思路。
 6. [FM-Fusion](../../papers/arxiv-2402.04555/README.md) 与 [Depth Anything V2](../../papers/arxiv-2406.09414/README.md)：基础模型进入机器人感知后，修了什么、新暴露了什么。
 7. （2026 年补充）[SAM 3](../../papers/arxiv-2511.16719/README.md) 对照 FM-Fusion，[FoundationStereo](../../papers/arxiv-2501.09898/README.md) 与 [Depth Anything 3](../../papers/arxiv-2511.10647/README.md) 对照 Depth Anything V2：看第 6 阶段的拼接与单目深度怎样被统一。
+
+### 已有基础后，优先读这四篇
+
+- **必读：[Fast-FoundationStereo](../../papers/arxiv-2512.11130/README.md)（2025/2026）**。接 FoundationStereo，抓住“高质量深度赶不上控制”的问题；看三种压缩分别作用在哪个部件。
+- **选读：[LAS2](../../papers/arxiv-2606.24457/README.md)（2026）**。与上篇对照，重点看真实硬件上的速度–误差曲线和伪标签过滤；适合算力受限的机器人。
+- **选读：[SAM 3](../../papers/arxiv-2511.16719/README.md)（2025，2026 年修订）**。接 FM-Fusion 的模型串联问题，关注概念提示与跨帧身份；3D 一致性仍需建图层提供。
+- **选读：[Depth Anything 3](../../papers/arxiv-2511.10647/README.md)（2025）**。接 DA2 的单目深度接口，关注多视图一致几何怎样成为 SLAM 前端；再去读 [AMB3R-SLAM](../../papers/arxiv-2609.19518/README.md)。
 
 ## 批注
 

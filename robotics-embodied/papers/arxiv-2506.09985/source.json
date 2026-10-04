@@ -60,7 +60,8 @@
   "year": 2025,
   "topic_paths": [
     "multimodal/world-models",
-    "robotics/embodied-policies"
+    "robotics/embodied-policies",
+    "multimodal/video-temporal"
   ],
   "modality_tags": [
     "video",

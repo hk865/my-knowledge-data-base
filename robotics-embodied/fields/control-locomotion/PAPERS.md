@@ -102,3 +102,7 @@
 - [Building Generalist Humanoid Capabilities with NVIDIA Isaac GR00T N1.6 Using a Sim-to-Real Workflow](https://developer.nvidia.com/blog/building-generalist-humanoid-capabilities-with-nvidia-isaac-gr00t-n1-6-using-a-sim-to-real-workflow) · 2026-01 · NVIDIA 技术博客 · Isaac Lab 中 RL 训练的全身控制器 GR00T-WholeBodyControl，VLA 与导航给它发指令
 - [Atlas' Evolution From Research Robot to Industrial Humanoid](https://bostondynamics.com/blog/atlas-evolution-from-research-robot-to-industrial-humanoid/) · Boston Dynamics 官方博客 · 与 RAI Institute 共建的动作捕捉与动画 RL 流水线；大行为模型做全身控制
 - [Agility Unveils Digit 5](https://www.agilityrobotics.com/content/agility-unveils-digit-5-humanoid-robot-built-for-cooperatively-safe-work-at-scale) · 2026-09 · Agility Robotics 官方新闻 · 65,000 小时客户现场运行、独立安全控制器
+
+## 后续问题与近期方法
+
+- [Generate, Track, Improve：感知参考生成与 RL 精修](../../papers/arxiv-2609.31577/README.md) · 2026 · 文献卡

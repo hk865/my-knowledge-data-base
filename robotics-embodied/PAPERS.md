@@ -223,3 +223,8 @@
 - [Real-Time Execution with Autoregressive Policies](papers/arxiv-2606.13355/README.md) · 2026 · 文献卡，暂无独立精读
 - [RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies](papers/arxiv-2607.04434/README.md) · 2026 · 文献卡，暂无独立精读
 - [IndustrialVLA-Bench: A Traceable Multi-Axis Evaluation of Open Robot Policy Models](papers/arxiv-2609.25562/README.md) · 2026 · 文献卡，暂无独立精读
+- [Fast-FoundationStereo: Real-Time Zero-Shot Stereo Matching](papers/arxiv-2512.11130/README.md) · 2025 · 文献卡，暂无独立精读
+- [What Drives Success in Physical Planning with Joint-Embedding Predictive World Models?](papers/arxiv-2512.24497/README.md) · 2025 · 文献卡，暂无独立精读
+- [Lite Any Stereo V2: Faster and Stronger Efficient Zero-Shot Stereo Matching](papers/arxiv-2606.24457/README.md) · 2026 · 文献卡，暂无独立精读
+- [Generate, Track, Improve: Perceptive Multi-Skill Humanoid Locomotion with RL-Fine-Tuned Motion Generators](papers/arxiv-2609.31577/README.md) · 2026 · 文献卡，暂无独立精读
+- [The Planning Limits of Latent World Models](papers/arxiv-2609.39235/README.md) · 2026 · 文献卡，暂无独立精读

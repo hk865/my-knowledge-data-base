@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2512.24497",
+  "title": "What Drives Success in Physical Planning with Joint-Embedding Predictive World Models?",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2512.24497",
+  "official_url": "https://arxiv.org/abs/2512.24497",
+  "official_fulltext_url": "https://arxiv.org/pdf/2512.24497v4",
+  "year": 2025,
+  "authors": [
+    "Basile Terver",
+    "Tsung-Yen Yang",
+    "Jean Ponce",
+    "Adrien Bardes",
+    "Yann LeCun"
+  ],
+  "topic_paths": [
+    "robotics/embodied-policies",
+    "multimodal/world-models"
+  ],
+  "modality_tags": [
+    "image",
+    "video",
+    "action",
+    "state"
+  ],
+  "task_tags": [
+    "decision",
+    "evaluation"
+  ],
+  "content_kind": "bibliographic_card",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "reading_boundary": "arXiv 摘要、v4 §1、§4–6、Table 1–2；官方仓库与 TMLR 目录。正式发表 PDF 被 OpenReview 浏览器验证拦截；不引述正式版性能数字。v4 说明仅增加致谢。 不是独立全文精读，未复现。",
+  "read_version": "v4",
+  "version_status": "checked_v4",
+  "latest_checked_version_date": "2026-09-02",
+  "publication_status": "TMLR 2026-05，官方目录列 Reproducibility certification；首次预印本为 2025-12-30",
+  "teaching_status": "not_created",
+  "reading_path": null,
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "未进行再分发许可审计，仅链接原文。"
+  },
+  "fulltext_local_status": "official_link_only",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "verification_2026_10_04": {
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2512.24497",
+      "https://arxiv.org/html/2512.24497v4",
+      "https://github.com/facebookresearch/jepa-wms",
+      "https://jmlr.org/tmlr/papers/"
+    ],
+    "reading_scope": "arXiv 摘要、v4 §1、§4–6、Table 1–2；官方仓库与 TMLR 目录。正式发表 PDF 被 OpenReview 浏览器验证拦截；不引述正式版性能数字。v4 说明仅增加致谢。",
+    "evidence_boundary": "作者实验与公开原文；未独立运行；不把预印本/修订年份改成首发年份。"
+  }
+}

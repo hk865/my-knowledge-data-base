@@ -98,3 +98,7 @@
 - [DeepSeek-V3 Technical Report](../../../llm/papers/arxiv-2412.19437/README.md) · 2024 · 文献卡 · 交叉引用
 - [Qwen2.5 Technical Report](../../../llm/papers/arxiv-2412.15115/README.md) · 2024 · 文献卡 · 交叉引用
 - [Dynamic Locomotion in the MIT Cheetah 3 Through Convex Model-Predictive Control](../../papers/convex-mpc/README.md) · 2018 · 技术精读 · 模型控制对照，可作为模仿学习的专家来源
+
+## 后续问题与近期方法
+
+- [Generate, Track, Improve：用 RL 改进流匹配运动生成器](../../papers/arxiv-2609.31577/README.md) · 2026 · 文献卡

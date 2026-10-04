@@ -63,3 +63,8 @@
 - [Language-Grounded Hierarchical Planning and Execution with Multi-Robot 3D Scene Graphs](../../../multimodal/papers/arxiv-2506.07454/README.md) · 2025 · 文献卡
 - [ORB-SLAM3: An Accurate Open-Source Library for Visual, Visual-Inertial and Multi-Map SLAM](../../papers/orb-slam3/README.md) · 2020 · 技术精读（显式地图的对照）
 - [Dynamic Locomotion in the MIT Cheetah 3 Through Convex Model-Predictive Control](../../papers/convex-mpc/README.md) · 2018 · 技术精读（显式物理模型的对照）
+
+## 后续问题与近期方法
+
+- [What Drives Success in Physical Planning with Joint-Embedding Predictive World Models?](../../papers/arxiv-2512.24497/README.md) · 2025；TMLR 2026 · 文献卡
+- [The Planning Limits of Latent World Models](../../papers/arxiv-2609.39235/README.md) · 2026 · 文献卡
