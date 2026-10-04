@@ -1,0 +1,18 @@
+{
+  "resource_id": "arxiv:2510.11690",
+  "checked_on": "2026-10-04",
+  "read_version": "v1",
+  "source_url": "https://arxiv.org/html/2510.11690v1",
+  "scope": "arXiv v1摘要、§1、§3、§4.1–4.3与高维潜空间分析；ICLR 2026正式PDF出现验证页，未取得全文",
+  "claims": [
+    {
+      "claim": "冻结表示编码器+训练解码器形成RAE",
+      "location": "§3"
+    },
+    {
+      "claim": "高维潜空间需要专门适配噪声尺度与网络",
+      "location": "方法与分析章节"
+    }
+  ],
+  "boundary": "机制依据arXiv v1选段；正式版全文未取得，因此不引FID或理论数值。主要实验为ImageNet，不将作者建议推广到所有任务。"
+}

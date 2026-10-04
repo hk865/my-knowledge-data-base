@@ -1,6 +1,6 @@
 # 图文对齐
 
-> 状态：领域入门页 · v2 · 依据 [synthesis.csv](synthesis.csv)（15 篇）
+> 状态：领域入门页 · v2
 >
 > 速览：
 > - 图文对齐训练一座图像编码器和一座文本编码器，把图和句子放进同一个向量空间，配对的图文靠得近。训练好之后，一句话就能检索图片，也能当场把类别名变成分类器（零样本分类）；它的图像编码器后来成了视觉语言模型（VLM）和文生图的视觉入口。
@@ -73,6 +73,16 @@
 
 [判断] 把这七个节点连起来看，图文对齐的瓶颈依次落在三处：先是数据规模（清洗卡住规模），再是数据分布（同样的规模、不同的整理方式给出不同的缩放曲线），最后是目标本身（整体对比学不到组合与空间细节）。前两处靠数据工程推进，第三处要改训练目标，并且是在下游 VLM 暴露问题之后才被重视。
 
+### 后继节点：全球数据、内部特征与混合模态检索（2025–2026）
+
+CLIP 的整体图文匹配接口留下了三件事：数据覆盖谁、局部特征是否被输出层掩盖、查询是否只能是一段短文字。接着读以下三篇，各自改变一个问题：
+
+- **[Meta CLIP 2](../../papers/arxiv-2507.22062/README.md)，必读。** 旧 MetaCLIP 用英文元数据控制训练分布；后继把匹配和平衡扩到多语言，同时补足英语样本曝光与模型容量。关键证据是不同容量下结果不同：数据覆盖变广，并不自动保证原语言能力不掉。
+- **[Perception Encoder](../../papers/arxiv-2504.13181/README.md)，必读。** SigLIP 2 用更多训练目标补局部信息，PE 则先追问“信息是不是已在中间层，只是最后一层不适合读”。它强化对比训练，再分别做语言与空间对齐，使“读哪一层、怎样读出”成为单独的设计变量。
+- **[Qwen3-VL-Embedding / Reranker](../../papers/arxiv-2601.04720/README.md)，选读。** VLM 反过来充当检索编码器：查询与文档都可混合文字、图片和视频，先独立编码做大库召回，再联合编码逐对重排。它继承双塔的缓存优势，同时把精细匹配的额外计算留给少数候选。
+
+`[判断]` 对齐方向的推进不能只写成“更大的 CLIP”：全球覆盖依赖数据与容量，局部迁移依赖读出，而复杂检索重新引入查询–候选交互。三个问题的评测也不同，应分别看分语言结果、冻结局部任务与检索/重排协议。
+
 ## 技术地基
 
 - **交叉熵与 softmax、sigmoid 的区别**：对比损失是"在一批候选里选对的那个"的交叉熵；sigmoid 损失是每一格独立的二分类。见[分类与概率讲义](../../../foundations/lessons/modules/objectives/02-classification-probabilities.md)第 2–5 节。
@@ -98,7 +108,7 @@
 
 [判断] **LAION 与华盛顿大学一系在三篇中重复"公开数据加受控测量"**：LAION-5B 公开数据；缩放定律论文公开模型与评测流程，并把 OpenAI 与 OpenCLIP 的差异归于数据；DataComp 干脆把数据当成唯一的变量。它的自我修正也在同一系里发生：LAION-5B 自述用小 CLIP 过滤是局限，DataComp 改用 ViT-L/14 打分并证明更严的过滤更好。
 
-[判断] **OpenAI 与 Meta 的分歧在"选数据用不用模型"**：CLIP 的 WIT 只用查询词匹配和计数平衡，MetaCLIP 认为这是 CLIP 成功的主因，并指出 LAION、DataComp 用 CLIP 过滤，本质上是在蒸馏 WIT 的信息；DataComp 一侧则用实验说明模型打分过滤有效。两者在 ViT-L/14 上的结果接近（MetaCLIP 2.5B 数据 79.2%，DataComp-1B 79.2%），所以这场分歧目前没有分出胜负，差别在于可控性：MetaCLIP 的分布可以按元数据检查和调整，模型过滤的偏差藏在过滤模型里。
+[判断] **MetaCLIP 与模型打分筛选路线的分歧在"选数据用不用模型"**：CLIP 的 WIT 只用查询词匹配和计数平衡，MetaCLIP 认为这是 CLIP 成功的主因，并指出 LAION、DataComp 用 CLIP 过滤，本质上是在蒸馏 WIT 的信息；DataComp 一侧则用实验说明模型打分过滤有效。两者在 ViT-L/14 上的结果接近（MetaCLIP 2.5B 数据 79.2%，DataComp-1B 79.2%），所以这组当时的结果没有给这场分歧分出胜负，差别在于可控性：MetaCLIP 的分布可以按元数据检查和调整，模型过滤的偏差藏在过滤模型里。
 
 其他团队：北京智源研究院的 EVA-CLIP 押注"先用遮蔽图像建模预训练图像塔，再做对比"，以少得多的样本追平或超过同尺寸模型；Salesforce 的 BLIP 押注"用模型自己写描述来清洗数据"，SigLIP 2 的相关工作一节把"用 VLM 重写训练图像的描述"列为提高训练信号质量的一类做法。
 
@@ -126,8 +136,8 @@
 
 - **对比目标能否学到组合与空间关系，还是必须加别的目标？** NegCLIP 的难负样本在 ARO 上有效，SugarCrepe 却显示提升被高估；SigLIP 2 加入描述与指代表达预测后定位变好，但 MMVP 一类的盲区是否消失还没有在同一协议下检验。入口：[ARO](../../papers/arxiv-2210.01936/README.md)、[SugarCrepe](../../papers/arxiv-2306.14610/README.md)、[SigLIP 2](../../papers/arxiv-2502.14786/README.md)、[Eyes Wide Shut](../../papers/arxiv-2401.06209/README.md)。
 - **数据筛选在优化通用性，还是在优化考题？** DataComp-1B 以 ImageNet 聚类为锚，DFN 的过滤器在主要考题上微调过，MetaCLIP 则刻意不用模型。入口：[DataComp](../../papers/arxiv-2304.14108/README.md)、[MetaCLIP](../../papers/arxiv-2309.16671/README.md)、[缩放定律](../../papers/arxiv-2212.07143/README.md)。
-- **长尾概念与非英语世界怎样覆盖？** MetaCLIP 的 50 万个条目中 11.4 万个无匹配；SigLIP 2 的多语言检索大幅提升，不同收入水平、不同地区之间的识别差距却几乎没有缩小。入口：[SigLIP 2](../../papers/arxiv-2502.14786/README.md)、[LAION-5B](../../papers/arxiv-2210.08402/README.md)。
-- **VLM 需要什么样的视觉塔？** 对比编码器负责语义，自监督编码器补细节：Eyes Wide Shut 交错 CLIP 与 DINOv2，OpenVLA 拼接 SigLIP 与 DINOv2，SigLIP 2 则试图在一个编码器里兼顾。入口：[视觉语言模型方向](../vlm/README.md)、[视觉表征方向](../visual-representation/README.md)的"从任务看"一节。
+- **长尾概念与非英语世界怎样覆盖？** MetaCLIP 的 50 万个条目中 11.4 万个无匹配；[Meta CLIP 2](../../papers/arxiv-2507.22062/README.md)开始控制多语言覆盖、曝光量与模型容量；SigLIP 2 的多语言检索大幅提升，不同收入水平、不同地区之间的识别差距却几乎没有缩小。入口：[SigLIP 2](../../papers/arxiv-2502.14786/README.md)、[LAION-5B](../../papers/arxiv-2210.08402/README.md)。
+- **VLM 需要什么样的视觉塔？** 早期系统常用对比编码器提供语义、自监督编码器补细节：Eyes Wide Shut 交错 CLIP 与 DINOv2，OpenVLA 拼接 SigLIP 与 DINOv2，SigLIP 2 则试图在一个编码器里兼顾；[Perception Encoder](../../papers/arxiv-2504.13181/README.md)进一步表明，对比模型中间层也可提供强局部特征，输出层的表现不代表整个编码器。入口：[视觉语言模型方向](../vlm/README.md)、[视觉表征方向](../visual-representation/README.md)的"从任务看"一节。
 
 ## 阅读顺序
 
@@ -135,8 +145,8 @@
 2. [CLIP 精读](../../papers/clip/reading.md)：本方向的基线。重点读第五节的数据、第六节的零样本分类器怎样由文本生成，以及第九节的边界。读完可以做一个检验：把 N 个训练配对改成 K 个候选类别，说出哪些向量可以缓存。
 3. [SigLIP](../../papers/arxiv-2303.15343/README.md)，对照 [LiT](../../papers/arxiv-2111.07991/README.md)：只改损失或只改图像塔初始化，各换来什么。
 4. [CoCa](../../papers/arxiv-2205.01917/README.md) 与 [BLIP](../../papers/arxiv-2201.12086/README.md)：加回生成目标的两种做法。
-5. [DataComp](../../papers/arxiv-2304.14108/README.md) 与 [MetaCLIP](../../papers/arxiv-2309.16671/README.md)：同一个问题（怎样选数据）的两种答案，对照读。
-6. [Winoground](../../papers/arxiv-2204.03162/README.md)、[ARO](../../papers/arxiv-2210.01936/README.md) 与 [Eyes Wide Shut](../../papers/arxiv-2401.06209/README.md)：对齐空间做不到什么，以及这些缺陷怎样传进 VLM；之后转到[视觉语言模型方向](../vlm/README.md)。
+5. [DataComp](../../papers/arxiv-2304.14108/README.md) 与 [MetaCLIP](../../papers/arxiv-2309.16671/README.md)：同一个问题（怎样选数据）的两种答案，对照读；接 [Meta CLIP 2](../../papers/arxiv-2507.22062/README.md) 看全球数据如何改变配方。
+6. [Winoground](../../papers/arxiv-2204.03162/README.md)、[ARO](../../papers/arxiv-2210.01936/README.md) 与 [Eyes Wide Shut](../../papers/arxiv-2401.06209/README.md)：对齐空间做不到什么，以及这些缺陷怎样传进 VLM；接着对照 [SigLIP 2](../../papers/arxiv-2502.14786/README.md) 与 [Perception Encoder](../../papers/arxiv-2504.13181/README.md)，再转到[视觉语言模型方向](../vlm/README.md)；做检索时续读 [Qwen3-VL-Embedding](../../papers/arxiv-2601.04720/README.md)。
 
 ## 批注
 
@@ -153,12 +163,17 @@
 - LAION 的 0.28 阈值只用于英文对，多语言与无特定语言的对阈值为 0.26（LAION-5B §3.1）。
 - SigLIP 2 的 83.2%→84.1% 与 XM3600 的 26.6%→57.5% 均为 So400m/14、384 像素、729 个 token 的同配置比较（Table 1）；XM3600 一列是图到文 R@1。
 
+**后继节点的边界**
+
+- Meta CLIP 2 的语言收益依赖容量；正式版 §3.4、Table 1 与 Appendix G 保留了较小模型的反例。PE 的“纯对比预训练”与后续语言/空间对齐分开理解，PEspatial 还使用额外空间教师。
+- Qwen3-VL-Embedding 的训练包含相关性监督与排序器蒸馏，不能拿它的检索成绩直接论证 CLIP 零样本分类被替代；重排也要计入逐对推理成本。
+
 **判断的支撑论文与反例**（各行见 [synthesis.csv](synthesis.csv)）
 
 - "瓶颈依次是规模、分布、目标"：ALIGN §1 与 Table 10（规模弥补噪声）；缩放定律论文 Discussion（分布决定缩放曲线）；Fang 等 2022（稳健性来自训练分布）；ARO §3、Winoground Table 3、Eyes Wide Shut §3（目标学不到组合与细节）。反例：CLIP §6 早在 2021 年就把计数、细粒度列为局限，并建议联合生成目标，"目标"这一瓶颈并非事后才被意识到，只是事后才被系统测量。
 - Google Zürich 的效率偏好：LiT Abstract 与 §5.2、SigLIP Abstract 与 Table 1、SigLIP 2 §1（向后兼容、四种尺寸）；作者列表中 Zhai、Beyer、Mustafa 三篇均署名，Kolesnikov 署名前两篇。边界：SigLIP 2 的训练流程比 SigLIP 复杂得多，效率偏好在第三篇中让位给能力。
 - LAION 与华盛顿大学一系的开放偏好：LAION-5B §1、缩放定律 Abstract、DataComp §1 与 §6；三篇作者重叠（Schmidt、Jitsev、Cherti、Beaumont、Wortsman）。边界：DataComp 的作者来自十余个单位，团队边界较松。
-- OpenAI 与 Meta 的分歧：CLIP §2.2；MetaCLIP §1、§2、§3.4。边界：OpenAI 在本方向只有一篇，按"两篇以上"的标准不能称为团队偏好，只能说是一次选择。
+- 元数据筛选与模型打分筛选的分歧：CLIP §2.2；MetaCLIP §1、§2、§3.4；DataComp 的数据筛选比较。CLIP/WIT 与 MetaCLIP 同属元数据匹配一侧，DataComp/LAION 使用模型打分。边界：这里只比较选数方法，不能据此推断公司整体偏好。
 - "评测迁移因旧指标掩盖失败"：ARO §3.1（检索掩盖组合缺陷）、SugarCrepe §1（组合考题被盲模型刷分）、Eyes Wide Shut §1（VLM 的视觉缺陷来自 CLIP）。
 
 **与其他论文的关联**

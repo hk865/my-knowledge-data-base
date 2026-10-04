@@ -60,3 +60,10 @@
 - [SAVi++: Towards End-to-End Object-Centric Learning from Real-World Videos](../../papers/arxiv-2206.07764/README.md) · 2022 · 文献卡 · 主归属[世界模型方向](../world-models/README.md)
 - [SlotFormer: Unsupervised Visual Dynamics Simulation with Object-Centric Models](../../papers/arxiv-2210.05861/README.md) · 2022 · 文献卡 · 主归属世界模型方向
 - [Back to the Features: DINO as a Foundation for Video World Models](../../papers/arxiv-2507.19468/README.md) · 2025 · 文献卡 · 主归属世界模型方向
+
+## 规模化视频表征与长视频取证（2025–2026）
+
+- [V-JEPA 2](../../../robotics-embodied/papers/arxiv-2506.09985/README.md) → [V-JEPA 2.1](../../papers/arxiv-2603.14482/README.md)：从规模化表征到密集时空特征，必读
+- [Qwen3-VL](../../papers/arxiv-2511.21631/README.md)：Qwen2.5-VL 时间位置方案的直接后继，必读
+- [InternVideo3](../../papers/arxiv-2606.12195/README.md)：缓存压缩与多轮视频取证，选读
+- [Qwen3.8-Omni](../../papers/arxiv-2609.25611/README.md)：需要声音与工具闭环时交叉阅读，选读

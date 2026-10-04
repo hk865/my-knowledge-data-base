@@ -1,0 +1,22 @@
+{
+  "resource_id": "arxiv:2606.02800",
+  "checked_on": "2026-10-04",
+  "read_version": "v4",
+  "source_url": "https://arxiv.org/html/2606.02800v4",
+  "scope": "摘要、§2.2–2.3 token 组织与双流架构、机器人策略评估相关段落与 Table 19、Fig.4–5",
+  "claims": [
+    {
+      "claim": "AR/DM 子序列有独立参数和不同注意力可见性",
+      "location": "§2.3，Fig.5"
+    },
+    {
+      "claim": "以加噪对象区分正向/逆向动力学与policy mode",
+      "location": "§2.2.2，Fig.4"
+    },
+    {
+      "claim": "机器人策略报告DROID微调后的RoboLab与RoboArena结果",
+      "location": "Table 19及邻近正文"
+    }
+  ],
+  "boundary": "统一训练接口、离线动力学误差、特定机器人平台成功率是不同主张；论文中的榜单名次只代表报告写作时。"
+}

@@ -43,6 +43,14 @@
 | 输出与用法 | 把 CLIP 与 DINOv2 的逐块特征交错送进 VLM | [Eyes Wide Shut](../../papers/arxiv-2401.06209/README.md) | 补上 CLIP 盲区（朝向、计数、视角）/ 两个视觉塔，属于 [VLM 方向](../vlm/README.md)的设计 |
 | 评测 | 词相同、顺序不同的双图双句 | [Winoground](../../papers/arxiv-2204.03162/README.md) | 暴露组合推理接近随机 / 只有 400 组，统计功效有限（ARO 的批评） |
 
+## 后继：数据、读出与检索接口分别推进
+
+| 部件 | 改法 | 代表 | 收益与代价 |
+|---|---|---|---|
+| 数据与文本接口 | 全球元数据与逐语言平衡，同时调整曝光量和容量 | [Meta CLIP 2](../../papers/arxiv-2507.22062/README.md) | 覆盖非英语；小模型仍可能出现多语言代价 |
+| 输出与用法 | 逐层诊断，再做语言/空间对齐 | [Perception Encoder](../../papers/arxiv-2504.13181/README.md) | 读出隐藏的通用特征；空间分支还依赖额外监督 |
+| 输出与用法 | VLM 独立编码召回 + 联合编码重排 | [Qwen3-VL-Embedding / Reranker](../../papers/arxiv-2601.04720/README.md) | 查询与候选可混合模态；重排增加逐对计算，评测不同于CLIP零样本 |
+
 ## 批注
 
 **易误读**

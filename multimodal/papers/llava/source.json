@@ -60,5 +60,22 @@
     ],
     "source_origin": "multimodal_phase3_card_rewrite",
     "identity_check": "2026-10-04 多模态文献卡身份核对：题名、年份、作者对照 arXiv API（2304.08485v2 为当前最新版本）与 PDF 首页机构；只改身份字段，精读范围与阅读深度字段未动。"
+  },
+  "recency_bridge_2026_10_04": {
+    "scope": "仅新增局限与后续中的阅读桥接，不改变原论文讲解版本，不将后继论文标为全文精读。",
+    "sources": [
+      {
+        "url": "https://arxiv.org/html/2602.02276v2",
+        "sections": "§2.1–2.3"
+      },
+      {
+        "url": "https://arxiv.org/html/2607.24653v2",
+        "sections": "§2.4"
+      },
+      {
+        "url": "https://arxiv.org/html/2609.25611v1",
+        "sections": "§2–7选段"
+      }
+    ]
   }
 }

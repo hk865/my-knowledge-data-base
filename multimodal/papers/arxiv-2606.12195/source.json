@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2606.12195",
+  "title": "InternVideo3: Agentify Foundation Models with Multimodal Contextual Reasoning",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2606.12195",
+  "official_url": "https://arxiv.org/abs/2606.12195",
+  "official_fulltext_url": "https://arxiv.org/html/2606.12195v1",
+  "authors": [
+    "Ziang Yan",
+    "Sheng Xia",
+    "Jiashuo Yu",
+    "Yue Wu",
+    "Tianxiang Jiang",
+    "Songze Li",
+    "Kanghui Tian",
+    "Yicheng Xu",
+    "Yinan He",
+    "Kai Chen",
+    "Limin Wang",
+    "Yu Qiao",
+    "Yi Wang"
+  ],
+  "year": 2026,
+  "read_version": "v1",
+  "version_status": "selected_sections_checked",
+  "content_kind": "bibliographic_card",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "reading_boundary": "摘要、§3方法、§5.2–5.3评估、§7局限；官方InternVideo3发布页；不是独立全文精读，未复现。",
+  "reading_path": null,
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "topic_paths": [
+    "multimodal/video-temporal",
+    "multimodal/vlm"
+  ],
+  "modality_tags": [
+    "image",
+    "video",
+    "text"
+  ],
+  "task_tags": [
+    "understanding",
+    "decision"
+  ],
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "未核验再分发许可，仅链接官方原文。"
+  },
+  "source_record_updated": "2026-10-04",
+  "evidence_paths": [
+    "multimodal/papers/arxiv-2606.12195/evidence.json"
+  ],
+  "verification_2026_10_04": {
+    "version_date": "2026-06-10",
+    "reading_scope": "摘要、§3方法、§5.2–5.3评估、§7局限；官方InternVideo3发布页",
+    "verification_sources": [
+      "https://arxiv.org/abs/2606.12195",
+      "https://arxiv.org/html/2606.12195v1"
+    ],
+    "evidence_boundary": "视频agent部分主要是定性案例；作者明确未主张总体开放模型SOTA，GQA转换路线不直接覆盖原生MLA/线性注意力。"
+  }
+}

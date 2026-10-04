@@ -41,6 +41,9 @@
 | ⑥ | 文本描述 + 人工判物理常识，自动评估器 | [VideoPhy](../../papers/arxiv-2406.03520/README.md) | 覆盖材料交互；人工评测有文化偏差 |
 | ⑥ + ⑤ | 合成物理规律，分布内、分布外、组合泛化分开测 | [PhyWorld](../../papers/arxiv-2411.02385/README.md) | 揭示案例式泛化与属性优先级；只在 2D 简单场景 |
 | ⑥ | 综述驾驶世界模型的生成、规划与评测 | [驾驶世界模型综述](../../papers/arxiv-2501.11260/README.md) | 列出时序记忆、安全验证等开放问题 |
+| ①②⑤ | 因果视频分词器 + Transformer 动力学；shortcut forcing 支持少步、带噪历史生成 | [Dreamer 4](../../papers/arxiv-2509.24527/README.md) | 连接离线视频模型与想象强化学习；证据来自 Minecraft 离线协议 |
+| ②③⑤ | 统一多种视频生成条件、视频奖励后训练；空间控制支路做外观转移 | [Cosmos-Predict2.5 / Transfer2.5](../../papers/arxiv-2511.00062/README.md) | 控制性与领域适配增强；奖励/偏好不直接测通用物理准确性 |
+| ①②③ | AR 推理与扩散生成双流；以加噪对象统一正向动力学、逆动力学与策略 | [Cosmos 3](../../papers/arxiv-2606.02800/README.md) | 共用多模态接口；最终作用仍须在各具身平台和任务上检验 |
 
 以机器人操作为对象的部件改法（冻结 DINOv2 特征规划、潜在动作、物理参数、掩码中间表示、动作可执行性奖励等）见[机器人侧的基线页](../../../robotics-embodied/fields/world-models/BASELINES.md)。
 

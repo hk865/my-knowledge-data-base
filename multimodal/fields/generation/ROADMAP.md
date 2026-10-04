@@ -52,6 +52,12 @@
 2. 256 个 token 的自注意力要算多少对，64 个呢？既然 p = 2 最贵，DiT 为什么还选它？（答案：65,536 对与 4,096 对；DiT 的 12 个模型里计算量与 FID 的相关系数为 −0.93，算得越多样本越好，切块越小正是增加计算量的一种方式。）
 3. VQGAN 把下采样倍数从 16 再加大会怎样？LDM 与 SD3 各在哪一节写了同一个上限？（答案：重建误差变得严重，作者写明重建能力是可达质量的上界；LDM 第 5 节、SD3 第 5.2.1 节。）
 
+## 机制续篇：三个基线选择还在变化
+
+第二步后读 [MeanFlow](../../papers/arxiv-2505.13447/README.md)（必读）。把“当前速度”与“从 t 到 r 的平均速度”分别画成切线和割线；若网络预测后者，为什么一次跨区间与把普通 Euler 步数强行设为1不同？先在图像类条件实验理解这个问题。
+
+第四步后读 [RAE](../../papers/arxiv-2510.11690/README.md)（必读），再读 [Scaling T2I RAE](../../papers/arxiv-2601.16208/README.md)（选读）。画出冻结编码器、训练解码器、训练扩散网络三个模块，与 LDM 对照。检验：语义特征好、重建好、扩散容易这三种性质是否总一致？从后继的消融找出一个随规模放大仍重要的设计（维度相关噪声调度）和一个收益变小的设计（宽扩散头），再写清对照VAE、分辨率与token预算。
+
 ## 第五步：加上时间轴——视频生成
 
 读 [Video Diffusion 精读](../../papers/video-diffusion/reading.md) → [Imagen Video](../../papers/arxiv-2210.02303/README.md) → [Sora 技术报告](../../papers/sora-tech-report/README.md) → [HunyuanVideo](../../papers/arxiv-2412.03603/README.md)、[Wan](../../papers/arxiv-2503.20314/README.md) → [观点页：生成收敛](../../../perspectives/generative-convergence.md)"视频生成的四种基本做法"与阶段四的表。

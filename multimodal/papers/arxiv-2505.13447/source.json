@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2505.13447",
+  "title": "Mean Flows for One-step Generative Modeling",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2505.13447",
+  "official_url": "https://arxiv.org/abs/2505.13447",
+  "official_fulltext_url": "https://arxiv.org/html/2505.13447v1",
+  "authors": [
+    "Zhengyang Geng",
+    "Mingyang Deng",
+    "Xingjian Bai",
+    "J. Zico Kolter",
+    "Kaiming He"
+  ],
+  "year": 2025,
+  "read_version": "v1",
+  "version_status": "selected_sections_checked",
+  "content_kind": "bibliographic_card",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "reading_boundary": "摘要、§1、§3平均速度恒等式、§4.1、§5.2实验；通过协作核验；不是独立全文精读，未复现。",
+  "reading_path": null,
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "topic_paths": [
+    "multimodal/generation"
+  ],
+  "modality_tags": [
+    "image"
+  ],
+  "task_tags": [
+    "generation"
+  ],
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "未核验再分发许可，仅链接官方原文。"
+  },
+  "source_record_updated": "2026-10-04",
+  "evidence_paths": [
+    "multimodal/papers/arxiv-2505.13447/evidence.json"
+  ],
+  "verification_2026_10_04": {
+    "version_date": "2025-05-19",
+    "reading_scope": "摘要、§1、§3平均速度恒等式、§4.1、§5.2实验；通过协作核验",
+    "verification_sources": [
+      "https://arxiv.org/abs/2505.13447",
+      "https://arxiv.org/html/2505.13447v1"
+    ],
+    "evidence_boundary": "主要证据为ImageNet类条件生成与CIFAR；一步网络调用不是整套部署零成本，不外推至复杂文本、视频或机器人。"
+  }
+}

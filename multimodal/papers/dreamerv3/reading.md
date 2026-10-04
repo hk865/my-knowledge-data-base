@@ -267,6 +267,10 @@ NoDenomMax 消融直接除以分位范围（加一个很小的数防止除零）
 
 **5 世界模型的主线换了出发点。** `[判断]` 2024 年后受关注的大规模世界模型多出自视频生成团队，目标是可交互、长时一致、可编辑（[观点页：生成收敛](../../../perspectives/generative-convergence.md)"从视频生成到世界模型"、[Genie](../arxiv-2402.15391/README.md)），用法也从"在模型里训练策略"转向"为模仿学习训练的 VLA 做评估和数据合成"（[机器人世界模型方向](../../../robotics-embodied/fields/world-models/README.md)趋势 2）。原因之一正是本篇的局限：每个任务单独训练、需要人写奖励，而 VLA 没有可以在想象中优化的奖励函数。Dreamer 一线的 RSSM、两个 KL 的平衡和尺度处理，仍是"在想象中学策略"这条路线的基线。
 
+### 直接后继：从在线 RSSM 到离线可扩展视频动力学
+
+[Dreamer 4](../arxiv-2509.24527/README.md)（2025）保留“在模型内学习行为”，把动力学改成 Transformer 与连续视频 token，并用 shortcut forcing 兼顾少步生成和抗历史误差；其关键验证变为纯离线 Minecraft 数据训练。它适合接在本篇后读：先比较表示与动力学，再比较训练数据是否来自当前策略，最后比较控制结果。更广的统一视频–动作接口见 [Cosmos 3](../arxiv-2606.02800/README.md) 与[世界模型方向](../../fields/world-models/README.md)。
+
 ## 批注
 
 **易误读**

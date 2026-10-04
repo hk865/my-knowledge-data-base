@@ -1,0 +1,18 @@
+{
+  "resource_id": "arxiv:2601.16208",
+  "checked_on": "2026-10-04",
+  "read_version": "v1",
+  "source_url": "https://arxiv.org/html/2601.16208v1",
+  "scope": "摘要、§3.1–3.3、§4实验协议、§7结论；通过协作核验",
+  "claims": [
+    {
+      "claim": "维度相关噪声调度仍重要，宽head等收益随规模减小",
+      "location": "§3.1–3.3"
+    },
+    {
+      "claim": "扩展到自由文本生成并与FLUX VAE比较",
+      "location": "§4、§7"
+    }
+  ],
+  "boundary": "同token预算比较存在RAE224/VAE256分辨率差；主要对照为所选SigLIP2 RAE与FLUX VAE，不推广到所有VAE。"
+}

@@ -59,6 +59,12 @@
 2. DeepSeek-VL 与 DeepSeek-VL2 的文本比例为什么不同？两者的基座有什么区别？
 3. Qwen3-VL 为什么要用通用 RL 去"纠正"计数和读表？这说明 SFT 数据可能有什么问题？
 
+## 2026 续篇：四篇分别检查训练、初始化和工具闭环
+
+先读 [Kimi K2.5](../../../llm/papers/arxiv-2602.02276/README.md) §2.1–2.3（必读），与 [Qwen3.5](../../../llm/papers/qwen3.5/README.md) 模型卡对照（选读）；再读 [Kimi K3](../../../llm/papers/arxiv-2607.24653/README.md) §2.4（必读）。需要音视频应用时，再读 [Qwen3.8-Omni](../../papers/arxiv-2609.25611/README.md)（选读）。前三篇接第五步的“保住语言、训好视觉”，最后一篇接“用证据完成任务”。
+
+检验：画出四个互相独立的开关：视觉何时进入、视觉塔从哪里初始化、SFT 用哪种模态、推理时是否调用工具。说明为什么“文本 SFT”可以接在“图文联合预训练”之后；再给一个必须重新截取视频片段才能回答的问题，并设计无图、只读字幕、带工具三组对照。Kimi K3 的消融只能回答其自身配方下的初始化问题，不能替所有小模型决定是否丢掉预训练视觉塔。
+
 ## 第六步：接到机器人
 
 读 [OpenVLA 精读](../../../robotics-embodied/papers/openvla/reading.md)与 [VLA 方向](../../../robotics-embodied/fields/vla/README.md)主线历史第 2–5 节。

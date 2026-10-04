@@ -1,0 +1,18 @@
+{
+  "resource_id": "arxiv:2507.22062",
+  "checked_on": "2026-10-04",
+  "read_version": "NeurIPS 2025",
+  "source_url": "https://papers.neurips.cc/paper_files/paper/2025/file/449fb670956a93b3d4d95167f72093e1-Paper-Conference.pdf",
+  "scope": "arXiv身份；NeurIPS 2025正式版§3.4、Table 1、§4.6、Appendix G",
+  "claims": [
+    {
+      "claim": "全球元数据、分语言平衡和容量/曝光量共同构成缩放配方",
+      "location": "§3–4"
+    },
+    {
+      "claim": "较小模型仍受多语言代价影响",
+      "location": "§3.4、Table 1、Appendix G"
+    }
+  ],
+  "boundary": "英语曝光量相同仍可能有容量不足导致的退化；不能将大模型的双向收益推广到所有模型尺寸。"
+}

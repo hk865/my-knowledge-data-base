@@ -102,3 +102,9 @@
 - [Diffusion Policy: Visuomotor Policy Learning via Action Diffusion](../../../robotics-embodied/papers/diffusion-policy/README.md) · 2023 · DDPM 的训练与采样用于动作序列
 - [π0: A Vision-Language-Action Flow Model for General Robot Control](../../../robotics-embodied/papers/arxiv-2410.24164/README.md) · 2024 · 流匹配动作头
 - [Evaluating Gemini Robotics Policies in a Veo World Simulator](../../../robotics-embodied/papers/arxiv-2512.10675/README.md) · 2025 · 视频生成模型用作机器人策略的评估器
+
+## 预测目标与潜空间的方法后继（2025–2026）
+
+- [MeanFlow](../../papers/arxiv-2505.13447/README.md)：学区间平均速度，必读
+- [RAE](../../papers/arxiv-2510.11690/README.md)：冻结语义编码器配生成解码器，必读
+- [Scaling T2I RAE](../../papers/arxiv-2601.16208/README.md)：从类条件实验扩到自由文本生成，选读

@@ -152,3 +152,13 @@
 - [A ConvNet for the 2020s](papers/arxiv-2201.03545/README.md) · 2022 · 文献卡，暂无独立精读
 - [Very Deep Convolutional Networks for Large-Scale Image Recognition](papers/arxiv-1409.1556/README.md) · 2014 · 文献卡，暂无独立精读
 - [Rich feature hierarchies for accurate object detection and semantic segmentation](papers/arxiv-1311.2524/README.md) · 2013 · 文献卡，暂无独立精读
+- [Mean Flows for One-step Generative Modeling](papers/arxiv-2505.13447/README.md) · 2025 · 文献卡，暂无独立精读
+- [Meta CLIP 2: A Worldwide Scaling Recipe](papers/arxiv-2507.22062/README.md) · 2025 · 文献卡，暂无独立精读
+- [Training Agents Inside of Scalable World Models](papers/arxiv-2509.24527/README.md) · 2025 · 文献卡，暂无独立精读
+- [Diffusion Transformers with Representation Autoencoders](papers/arxiv-2510.11690/README.md) · 2025 · 文献卡，暂无独立精读
+- [World Simulation with Video Foundation Models for Physical AI](papers/arxiv-2511.00062/README.md) · 2025 · 文献卡，暂无独立精读
+- [Qwen3-VL-Embedding and Qwen3-VL-Reranker: A Unified Framework for State-of-the-Art Multimodal Retrieval and Ranking](papers/arxiv-2601.04720/README.md) · 2026 · 文献卡，暂无独立精读
+- [Scaling Text-to-Image Diffusion Transformers with Representation Autoencoders](papers/arxiv-2601.16208/README.md) · 2026 · 文献卡，暂无独立精读
+- [Cosmos 3: Omnimodal World Models for Physical AI](papers/arxiv-2606.02800/README.md) · 2026 · 文献卡，暂无独立精读
+- [InternVideo3: Agentify Foundation Models with Multimodal Contextual Reasoning](papers/arxiv-2606.12195/README.md) · 2026 · 文献卡，暂无独立精读
+- [Qwen3.8-Omni: Towards Native Omni-Modal Agents](papers/arxiv-2609.25611/README.md) · 2026 · 文献卡，暂无独立精读

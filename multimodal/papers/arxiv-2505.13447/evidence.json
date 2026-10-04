@@ -1,0 +1,18 @@
+{
+  "resource_id": "arxiv:2505.13447",
+  "checked_on": "2026-10-04",
+  "read_version": "v1",
+  "source_url": "https://arxiv.org/html/2505.13447v1",
+  "scope": "摘要、§1、§3平均速度恒等式、§4.1、§5.2实验；通过协作核验",
+  "claims": [
+    {
+      "claim": "区间平均速度与瞬时速度的恒等式作为训练目标",
+      "location": "§3"
+    },
+    {
+      "claim": "从零训练的一步图像生成，不需要教师蒸馏",
+      "location": "Abstract、§4–5"
+    }
+  ],
+  "boundary": "主要证据为ImageNet类条件生成与CIFAR；一步网络调用不是整套部署零成本，不外推至复杂文本、视频或机器人。"
+}

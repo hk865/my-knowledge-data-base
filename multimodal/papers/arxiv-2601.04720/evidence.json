@@ -1,0 +1,18 @@
+{
+  "resource_id": "arxiv:2601.04720",
+  "checked_on": "2026-10-04",
+  "read_version": "v2",
+  "source_url": "https://arxiv.org/html/2601.04720v2",
+  "scope": "arXiv v2摘要、§2架构、§4–5训练与评估；官方实现仓库",
+  "claims": [
+    {
+      "claim": "独立编码的embedding与联合编码的reranker形成两阶段检索",
+      "location": "§2"
+    },
+    {
+      "claim": "对比学习与排序器蒸馏",
+      "location": "§4–5"
+    }
+  ],
+  "boundary": "重排需要逐对计算；不把任务监督的检索结果当作CLIP零样本分类对照。摘要榜单日期存在2025/2026笔误，未复述排名。"
+}

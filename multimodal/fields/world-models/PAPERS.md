@@ -64,3 +64,9 @@
 - [World Models for Robotic Manipulation: A Survey](../../papers/doi-10.1002-smb2.70053/README.md) · 年份见原文 · 文献卡
 - [Zero-WAM: In-Context World-Action Modeling from Human Videos for Open-Ended Task Generalization](../../../robotics-embodied/papers/zero-wam/README.md) · 2026 · 选定章节讲解
 - 显式模型的对照物：[ORB-SLAM3](../../../robotics-embodied/papers/orb-slam3/README.md)（显式几何地图） · 2020 · 技术精读；[Convex MPC](../../../robotics-embodied/papers/convex-mpc/README.md)（显式简化刚体动力学） · 技术精读
+
+## 视频动力学与动作接口的后继
+
+- [Dreamer 4](../../papers/arxiv-2509.24527/README.md)（2025）：从离线视频动力学到想象强化学习，必读
+- [Cosmos-Predict2.5 / Transfer2.5](../../papers/arxiv-2511.00062/README.md)（2025，2026 修订）：多条件生成与空间控制的桥接，选读
+- [Cosmos 3](../../papers/arxiv-2606.02800/README.md)（2026）：统一推理、生成、正向/逆向动力学与动作，必读

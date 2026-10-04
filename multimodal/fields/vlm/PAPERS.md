@@ -41,3 +41,10 @@
 - [Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context](../../../llm/papers/arxiv-2403.05530/README.md) · 2024 · 长上下文方向的卡片
 - [OpenVLA: An Open-Source Vision-Language-Action Model](../../../robotics-embodied/papers/openvla/README.md) · 2024 · VLM 骨干用于机器人，见 [VLA 方向](../../../robotics-embodied/fields/vla/README.md)
 - [RT-2](../../../robotics-embodied/papers/arxiv-2307.15818/README.md)、[π0](../../../robotics-embodied/papers/arxiv-2410.24164/README.md)、[InternVLA-A1](../../../robotics-embodied/papers/arxiv-2601.02456/README.md)、[Qwen-VLA](../../../robotics-embodied/papers/arxiv-2605.30280/README.md) · 以 PaLI-X / PaLM-E、PaliGemma、InternVL3 与 Qwen3-VL、Qwen VLM 为底座的 VLA
+
+## 联合训练、视觉初始化与音视频智能体（2026）
+
+- [Kimi K2.5](../../../llm/papers/arxiv-2602.02276/README.md)：必读固定预算下的视觉注入时机对照
+- [Qwen3.5](../../../llm/papers/qwen3.5/README.md)：选读另一团队的早融合与混合注意力配方
+- [Kimi K3](../../../llm/papers/arxiv-2607.24653/README.md)：必读从零视觉塔与预训练视觉塔的稳定性对照
+- [Qwen3.8-Omni](../../papers/arxiv-2609.25611/README.md)：选读从音视频理解到工具闭环的接口变化

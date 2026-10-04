@@ -1,0 +1,18 @@
+{
+  "resource_id": "arxiv:2606.12195",
+  "checked_on": "2026-10-04",
+  "read_version": "v1",
+  "source_url": "https://arxiv.org/html/2606.12195v1",
+  "scope": "摘要、§3方法、§5.2–5.3评估、§7局限；官方InternVideo3发布页",
+  "claims": [
+    {
+      "claim": "token保持的KV状态压缩与多模态上下文推理",
+      "location": "§3"
+    },
+    {
+      "claim": "agent定量评测仍待未来完成",
+      "location": "§5.3、§7"
+    }
+  ],
+  "boundary": "视频agent部分主要是定性案例；作者明确未主张总体开放模型SOTA，GQA转换路线不直接覆盖原生MLA/线性注意力。"
+}

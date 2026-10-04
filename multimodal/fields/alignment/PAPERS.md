@@ -39,3 +39,9 @@
 ## 交叉引用
 
 - [Visual Instruction Tuning](../../papers/llava/README.md)（LLaVA）· 2023 · 技术精读 · 以 CLIP ViT-L/14 为视觉塔的 VLM，主属[视觉语言模型方向](../vlm/README.md)
+
+## 全球覆盖、特征读出与 VLM 检索（2025–2026）
+
+- [Meta CLIP 2](../../papers/arxiv-2507.22062/README.md)：MetaCLIP 英文数据配方的直接后继，必读
+- [Perception Encoder](../../papers/arxiv-2504.13181/README.md)：与 SigLIP 2 对照目标和读出的作用，必读
+- [Qwen3-VL-Embedding / Reranker](../../papers/arxiv-2601.04720/README.md)：独立编码与联合编码的两阶段检索，选读
