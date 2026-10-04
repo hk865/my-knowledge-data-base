@@ -1,6 +1,6 @@
 # 全库论文总目录
 
-共 164 个去重资源（161 篇论文、1 个代码仓库、2 篇官方博客）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
+共 171 个去重资源（168 篇论文、1 个代码仓库、2 篇官方博客）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
 
 身份核验、助手教学进度和用户阅读状态分开。历史来源保留原角色与证据局限，不将助手推荐写成用户提供，也不将教学完成写成用户已读。
 
@@ -1992,6 +1992,90 @@
 - 助手教学 / 阅读进度：文献卡，核对了方法相关章节
 - 用户阅读状态：unknown
 - [文献卡（尚无独立精读）](../cross-domain/papers/arxiv-2304.14767/README.md)
+
+<a id="p165"></a>
+## p165 · Learning to Walk in Minutes Using Massively Parallel Deep Reinforcement Learning
+
+- 标识：arxiv:2109.11978
+- 原文 / 官方入口：https://arxiv.org/abs/2109.11978
+- 主题：robotics/control
+- 来源：assistant-recommendation-for-thinking-note
+- 身份核验：selected_sections_checked
+- 助手教学 / 阅读进度：文献卡，核对了方法相关章节
+- 用户阅读状态：unknown
+- [文献卡（尚无独立精读）](../robotics-embodied/papers/arxiv-2109.11978/README.md)
+
+<a id="p166"></a>
+## p166 · Rethinking Robustness Assessment: Adversarial Attacks on Learning-based Quadrupedal Locomotion Controllers
+
+- 标识：arxiv:2405.12424
+- 原文 / 官方入口：https://arxiv.org/abs/2405.12424
+- 主题：robotics/control
+- 来源：assistant-recommendation-for-thinking-note
+- 身份核验：selected_sections_checked
+- 助手教学 / 阅读进度：文献卡，核对了方法相关章节
+- 用户阅读状态：unknown
+- [文献卡（尚无独立精读）](../robotics-embodied/papers/arxiv-2405.12424/README.md)
+
+<a id="p167"></a>
+## p167 · Extreme Parkour with Legged Robots
+
+- 标识：arxiv:2309.14341
+- 原文 / 官方入口：https://arxiv.org/abs/2309.14341
+- 主题：robotics/control
+- 来源：assistant-recommendation-for-thinking-note
+- 身份核验：selected_sections_checked
+- 助手教学 / 阅读进度：文献卡，核对了方法相关章节
+- 用户阅读状态：unknown
+- [文献卡（尚无独立精读）](../robotics-embodied/papers/arxiv-2309.14341/README.md)
+
+<a id="p168"></a>
+## p168 · Robot Parkour Learning
+
+- 标识：arxiv:2309.05665
+- 原文 / 官方入口：https://arxiv.org/abs/2309.05665
+- 主题：robotics/control
+- 来源：assistant-recommendation-for-thinking-note
+- 身份核验：selected_sections_checked
+- 助手教学 / 阅读进度：文献卡，核对了方法相关章节
+- 用户阅读状态：unknown
+- [文献卡（尚无独立精读）](../robotics-embodied/papers/arxiv-2309.05665/README.md)
+
+<a id="p169"></a>
+## p169 · CaT: Constraints as Terminations for Legged Locomotion Reinforcement Learning
+
+- 标识：arxiv:2403.18765
+- 原文 / 官方入口：https://arxiv.org/abs/2403.18765
+- 主题：robotics/control
+- 来源：assistant-recommendation-for-thinking-note
+- 身份核验：selected_sections_checked
+- 助手教学 / 阅读进度：文献卡，核对了方法相关章节
+- 用户阅读状态：unknown
+- [文献卡（尚无独立精读）](../robotics-embodied/papers/arxiv-2403.18765/README.md)
+
+<a id="p170"></a>
+## p170 · Prioritized Experience Replay
+
+- 标识：arxiv:1511.05952
+- 原文 / 官方入口：https://arxiv.org/abs/1511.05952
+- 主题：robotics/control
+- 来源：assistant-recommendation-for-thinking-note
+- 身份核验：selected_sections_checked
+- 助手教学 / 阅读进度：文献卡，核对了方法相关章节
+- 用户阅读状态：unknown
+- [文献卡（尚无独立精读）](../robotics-embodied/papers/arxiv-1511.05952/README.md)
+
+<a id="p171"></a>
+## p171 · First return, then explore
+
+- 标识：arxiv:2004.12919
+- 原文 / 官方入口：https://arxiv.org/abs/2004.12919
+- 主题：robotics/control
+- 来源：assistant-recommendation-for-thinking-note
+- 身份核验：selected_sections_checked
+- 助手教学 / 阅读进度：文献卡，核对了方法相关章节
+- 用户阅读状态：unknown
+- [文献卡（尚无独立精读）](../robotics-embodied/papers/arxiv-2004.12919/README.md)
 
 ## 2026年10月3日既有条目更新
 

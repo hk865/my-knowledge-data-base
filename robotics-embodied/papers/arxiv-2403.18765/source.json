@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2403.18765",
+  "title": "CaT: Constraints as Terminations for Legged Locomotion Reinforcement Learning",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2403.18765",
+  "official_url": "https://arxiv.org/abs/2403.18765",
+  "official_fulltext_url": "https://arxiv.org/pdf/2403.18765",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "selected_method_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了摘要、§I、§II、§III-B、§IV、§V-A；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": ["Elliot Chane-Sane", "Pierre-Alexandre Leziart", "Thomas Flayols", "Olivier Stasse", "Philippe Souères", "Nicolas Mansard"],
+  "year": 2024,
+  "topic_paths": [
+    "robotics/control"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v1 PDF：摘要、§I、§II、§III-B（式 6、7，算法 1）、§IV、§V-A",
+    "mechanism_summary": "δ = max_i p_i^max · clip(c_i^+ / c_i^max, 0, 1)，c_i^max 为最大违反量的指数滑动平均；奖励乘 (1-δ)，δ 作为 done；终止只截断未来奖励，不重置环境；δ∈(0,1) 提供从违反中恢复的稠密信号并允许在违反区域探索；Solo-12 实机，高度扫描由动捕得到。",
+    "publication_note": "arXiv 页面未列出会议；正式发表版本未核实。",
+    "evidence_boundary": "未复现实验；数字取自论文正文或摘要。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": ["https://arxiv.org/abs/2403.18765", "https://arxiv.org/pdf/2403.18765v1"],
+    "source_origin": "assistant_recommendation_for_thinking_note",
+    "relation_pages": [
+      "perspectives/notes/quadruped-recovery.md"
+    ]
+  }
+}

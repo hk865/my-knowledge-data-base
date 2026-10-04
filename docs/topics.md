@@ -255,7 +255,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [FastRLAP: A System for Learning High-Speed Driving via Deep RL and Autonomous Practicing](paper-catalog.md#p162)
 
 
-### 运动控制（34）
+### 运动控制（41）
 
 细分：经典与最优控制；腿足策略与适应；sim to real；风险敏感策略与恢复控制；恢复控制与自主练习
 
@@ -293,6 +293,13 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Robust Quadrupedal Locomotion via Risk-Averse Policy Learning](paper-catalog.md#p158)
 - [Learning Risk-Aware Quadrupedal Locomotion using Distributional Reinforcement Learning](paper-catalog.md#p159)
 - [FastRLAP: A System for Learning High-Speed Driving via Deep RL and Autonomous Practicing](paper-catalog.md#p162)
+- [Learning to Walk in Minutes Using Massively Parallel Deep Reinforcement Learning](paper-catalog.md#p165)
+- [Rethinking Robustness Assessment: Adversarial Attacks on Learning-based Quadrupedal Locomotion Controllers](paper-catalog.md#p166)
+- [Extreme Parkour with Legged Robots](paper-catalog.md#p167)
+- [Robot Parkour Learning](paper-catalog.md#p168)
+- [CaT: Constraints as Terminations for Legged Locomotion Reinforcement Learning](paper-catalog.md#p169)
+- [Prioritized Experience Replay](paper-catalog.md#p170)
+- [First return, then explore](paper-catalog.md#p171)
 
 
 ### 具身策略与 VLA（25）
@@ -433,11 +440,11 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 | 模态 \ 任务 | understanding | generation | decision | evaluation | analysis |
 |---|---:|---:|---:|---:|---:|
 | text | [11](#x-text-understanding) | [45](#x-text-generation) | [30](#x-text-decision) | [7](#x-text-evaluation) | [12](#x-text-analysis) |
-| image | [24](#x-image-understanding) | [7](#x-image-generation) | [42](#x-image-decision) | [2](#x-image-evaluation) | · |
+| image | [24](#x-image-understanding) | [7](#x-image-generation) | [48](#x-image-decision) | [3](#x-image-evaluation) | · |
 | video | [4](#x-video-understanding) | [13](#x-video-generation) | [15](#x-video-decision) | [1](#x-video-evaluation) | [2](#x-video-analysis) |
 | audio | [2](#x-audio-understanding) | [1](#x-audio-generation) | · | · | · |
-| action | [6](#x-action-understanding) | [17](#x-action-generation) | [74](#x-action-decision) | [2](#x-action-evaluation) | [2](#x-action-analysis) |
-| state | [7](#x-state-understanding) | [2](#x-state-generation) | [41](#x-state-decision) | · | · |
+| action | [6](#x-action-understanding) | [17](#x-action-generation) | [81](#x-action-decision) | [3](#x-action-evaluation) | [2](#x-action-analysis) |
+| state | [7](#x-state-understanding) | [2](#x-state-generation) | [46](#x-state-decision) | [1](#x-state-evaluation) | · |
 | code | [1](#x-code-understanding) | [3](#x-code-generation) | [3](#x-code-decision) | [2](#x-code-evaluation) | [3](#x-code-analysis) |
 | multimodal | [7](#x-multimodal-understanding) | [4](#x-multimodal-generation) | [26](#x-multimodal-decision) | [1](#x-multimodal-evaluation) | · |
 | tabular | [1](#x-tabular-understanding) | · | · | · | · |
@@ -615,7 +622,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-image-decision"></a>
 
-### image × decision（42）
+### image × decision（48）
 
 - [DINO-WM: World Models on Pre-trained Visual Features enable Zero-shot Planning](paper-catalog.md#p046)
 - [FOCUS: Object-Centric World Models for Robotics Manipulation](paper-catalog.md#p048)
@@ -659,13 +666,20 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Learning robust perceptive locomotion for quadrupedal robots in the wild](paper-catalog.md#p156)
 - [Prioritized Level Replay](paper-catalog.md#p157)
 - [FastRLAP: A System for Learning High-Speed Driving via Deep RL and Autonomous Practicing](paper-catalog.md#p162)
+- [Learning to Walk in Minutes Using Massively Parallel Deep Reinforcement Learning](paper-catalog.md#p165)
+- [Rethinking Robustness Assessment: Adversarial Attacks on Learning-based Quadrupedal Locomotion Controllers](paper-catalog.md#p166)
+- [Extreme Parkour with Legged Robots](paper-catalog.md#p167)
+- [Robot Parkour Learning](paper-catalog.md#p168)
+- [Prioritized Experience Replay](paper-catalog.md#p170)
+- [First return, then explore](paper-catalog.md#p171)
 
 <a id="x-image-evaluation"></a>
 
-### image × evaluation（2）
+### image × evaluation（3）
 
 - [LARY: A Latent Action Representation Yielding Benchmark for Generalizable Vision-to-Action Alignment](paper-catalog.md#p060)
 - [Vision-and-Language Navigation: Interpreting visually-grounded navigation instructions in real environments](paper-catalog.md#p119)
+- [Rethinking Robustness Assessment: Adversarial Attacks on Learning-based Quadrupedal Locomotion Controllers](paper-catalog.md#p166)
 
 <a id="x-video-understanding"></a>
 
@@ -775,7 +789,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-action-decision"></a>
 
-### action × decision（74）
+### action × decision（81）
 
 - [OccWorld: Learning a 3D Occupancy World Model for Autonomous Driving](paper-catalog.md#p044)
 - [Driving in the Occupancy World: Vision-Centric 4D Occupancy Forecasting and Planning via World Models for Autonomous Driving](paper-catalog.md#p045)
@@ -851,13 +865,21 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Robust Quadrupedal Locomotion via Risk-Averse Policy Learning](paper-catalog.md#p158)
 - [Learning Risk-Aware Quadrupedal Locomotion using Distributional Reinforcement Learning](paper-catalog.md#p159)
 - [FastRLAP: A System for Learning High-Speed Driving via Deep RL and Autonomous Practicing](paper-catalog.md#p162)
+- [Learning to Walk in Minutes Using Massively Parallel Deep Reinforcement Learning](paper-catalog.md#p165)
+- [Rethinking Robustness Assessment: Adversarial Attacks on Learning-based Quadrupedal Locomotion Controllers](paper-catalog.md#p166)
+- [Extreme Parkour with Legged Robots](paper-catalog.md#p167)
+- [Robot Parkour Learning](paper-catalog.md#p168)
+- [CaT: Constraints as Terminations for Legged Locomotion Reinforcement Learning](paper-catalog.md#p169)
+- [Prioritized Experience Replay](paper-catalog.md#p170)
+- [First return, then explore](paper-catalog.md#p171)
 
 <a id="x-action-evaluation"></a>
 
-### action × evaluation（2）
+### action × evaluation（3）
 
 - [LARY: A Latent Action Representation Yielding Benchmark for Generalizable Vision-to-Action Alignment](paper-catalog.md#p060)
 - [Vision-and-Language Navigation: Interpreting visually-grounded navigation instructions in real environments](paper-catalog.md#p119)
+- [Rethinking Robustness Assessment: Adversarial Attacks on Learning-based Quadrupedal Locomotion Controllers](paper-catalog.md#p166)
 
 <a id="x-action-analysis"></a>
 
@@ -887,7 +909,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-state-decision"></a>
 
-### state × decision（41）
+### state × decision（46）
 
 - [Diffusion Policy: Visuomotor Policy Learning via Action Diffusion](paper-catalog.md#p067)
 - [$π_0$: A Vision-Language-Action Flow Model for General Robot Control](paper-catalog.md#p070)
@@ -930,6 +952,17 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Robust Quadrupedal Locomotion via Risk-Averse Policy Learning](paper-catalog.md#p158)
 - [Learning Risk-Aware Quadrupedal Locomotion using Distributional Reinforcement Learning](paper-catalog.md#p159)
 - [FastRLAP: A System for Learning High-Speed Driving via Deep RL and Autonomous Practicing](paper-catalog.md#p162)
+- [Learning to Walk in Minutes Using Massively Parallel Deep Reinforcement Learning](paper-catalog.md#p165)
+- [Rethinking Robustness Assessment: Adversarial Attacks on Learning-based Quadrupedal Locomotion Controllers](paper-catalog.md#p166)
+- [Extreme Parkour with Legged Robots](paper-catalog.md#p167)
+- [Robot Parkour Learning](paper-catalog.md#p168)
+- [CaT: Constraints as Terminations for Legged Locomotion Reinforcement Learning](paper-catalog.md#p169)
+
+<a id="x-state-evaluation"></a>
+
+### state × evaluation（1）
+
+- [Rethinking Robustness Assessment: Adversarial Attacks on Learning-based Quadrupedal Locomotion Controllers](paper-catalog.md#p166)
 
 <a id="x-code-understanding"></a>
 

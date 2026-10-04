@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2004.12919",
+  "title": "First return, then explore",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2004.12919",
+  "official_url": "https://arxiv.org/abs/2004.12919",
+  "official_fulltext_url": "https://arxiv.org/pdf/2004.12919",
+  "read_version": "v6",
+  "version_status": "checked_v6",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了摘要、图 1、机器人实验段与图 4；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": ["Adrien Ecoffet", "Joost Huizinga", "Joel Lehman", "Kenneth O. Stanley", "Jeff Clune"],
+  "year": 2021,
+  "topic_paths": [
+    "robotics/control"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v6 PDF：摘要、图 1、Atari 稳健化段、机器人抓放实验段、图 4",
+    "mechanism_summary": "Go-Explore：档案记录状态，选择后先返回（恢复仿真器状态或目标条件策略）再探索；detachment 与 derailment；稳健化阶段用 backward algorithm 以轨迹为示范训练鲁棒策略；Fetch 机械臂抓放任务中 PPO 十亿帧无奖励，稳健化策略四个目标均 99% 成功。",
+    "publication_note": "arXiv 注释：Nature 590, 580–586 (2021)；卡片年份取正式发表年。",
+    "evidence_boundary": "未复现实验；数字取自论文正文或摘要。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": ["https://arxiv.org/abs/2004.12919", "https://arxiv.org/pdf/2004.12919v6"],
+    "source_origin": "assistant_recommendation_for_thinking_note",
+    "relation_pages": [
+      "perspectives/notes/quadruped-recovery.md"
+    ]
+  }
+}

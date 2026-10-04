@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2405.12424",
+  "title": "Rethinking Robustness Assessment: Adversarial Attacks on Learning-based Quadrupedal Locomotion Controllers",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2405.12424",
+  "official_url": "https://arxiv.org/abs/2405.12424",
+  "official_fulltext_url": "https://arxiv.org/pdf/2405.12424",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_method_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了摘要、§IV-A 至 IV-C、§V-B 与 Table III；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": ["Fan Shi", "Chong Zhang", "Takahiro Miki", "Joonho Lee", "Marco Hutter", "Stelian Coros"],
+  "year": 2024,
+  "topic_paths": [
+    "robotics/control"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v2 PDF：摘要、§II-C、§IV-A、IV-B、IV-C、§V-B、Table III、§VI-H",
+    "mechanism_summary": "用 PPO 训练对抗策略，在观测、命令、未观测外力三类空间施加幅度与变化率受限的扰动，Lipschitz 正则使扰动平滑；攻击 Miki 等 2022 的感知策略；以 5% 概率遇到对抗者微调，实机湿滑白板与软垫上更稳，Table III 显示跟踪精度无显著变化。",
+    "publication_note": "arXiv 注释：RSS 2024。",
+    "evidence_boundary": "未复现实验；数字取自论文正文或摘要。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": ["https://arxiv.org/abs/2405.12424", "https://arxiv.org/pdf/2405.12424v2"],
+    "source_origin": "assistant_recommendation_for_thinking_note",
+    "relation_pages": [
+      "perspectives/notes/quadruped-recovery.md"
+    ]
+  }
+}

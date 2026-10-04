@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2309.05665",
+  "title": "Robot Parkour Learning",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2309.05665",
+  "official_url": "https://arxiv.org/abs/2309.05665",
+  "official_fulltext_url": "https://arxiv.org/pdf/2309.05665",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_method_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了摘要、§3.1、§3.2、§4.1；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": ["Ziwen Zhuang", "Zipeng Fu", "Jianren Wang", "Christopher Atkeson", "Soeren Schwertfeger", "Chelsea Finn", "Hang Zhao"],
+  "year": 2023,
+  "topic_paths": [
+    "robotics/control"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v2 PDF：摘要、§1、§3.1、§3.2、§4.1",
+    "mechanism_summary": "两阶段 RL：软动力学约束预训练（障碍可穿透，穿透奖励 = -(体积项 + 深度项) × 前进速度，自动课程按穿透表现提升难度），再在硬动力学约束下微调；DAgger 蒸馏为深度输入的 GRU 策略，部署于 A1 与 Go1；消融：无软约束与 RND 学不会攀爬和跳跃，MLP 学不会攀爬和跳跃。",
+    "publication_note": "arXiv 注释：CoRL 2023（Oral）。",
+    "evidence_boundary": "未复现实验；数字取自论文正文或摘要。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": ["https://arxiv.org/abs/2309.05665", "https://arxiv.org/pdf/2309.05665v2"],
+    "source_origin": "assistant_recommendation_for_thinking_note",
+    "relation_pages": [
+      "perspectives/notes/quadruped-recovery.md"
+    ]
+  }
+}

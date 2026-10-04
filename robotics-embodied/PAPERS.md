@@ -107,6 +107,13 @@
 ## 2026年10月3日文献增量
 
 - [Learning Quadrupedal Locomotion over Challenging Terrain](papers/arxiv-2010.11251/README.md) · 2020 · 文献卡，非独立全文精读
+- [Learning to Walk in Minutes Using Massively Parallel Deep Reinforcement Learning](papers/arxiv-2109.11978/README.md) · 2021 · 文献卡，暂无独立精读
+- [Rethinking Robustness Assessment: Adversarial Attacks on Learning-based Quadrupedal Locomotion Controllers](papers/arxiv-2405.12424/README.md) · 2024 · 文献卡，暂无独立精读
+- [Extreme Parkour with Legged Robots](papers/arxiv-2309.14341/README.md) · 2023 · 文献卡，暂无独立精读
+- [Robot Parkour Learning](papers/arxiv-2309.05665/README.md) · 2023 · 文献卡，暂无独立精读
+- [CaT: Constraints as Terminations for Legged Locomotion Reinforcement Learning](papers/arxiv-2403.18765/README.md) · 2024 · 文献卡，暂无独立精读
+- [Prioritized Experience Replay](papers/arxiv-1511.05952/README.md) · 2016 · 文献卡，暂无独立精读
+- [First return, then explore](papers/arxiv-2004.12919/README.md) · 2021 · 文献卡，暂无独立精读
 - [Robust Recovery Controller for a Quadrupedal Robot using Deep Reinforcement Learning](papers/arxiv-1901.07517/README.md) · 2019 · 文献卡，非独立全文精读
 - [Recovery RL: Safe Reinforcement Learning With Learned Recovery Zones](papers/arxiv-2010.15920/README.md) · 2021 · 文献卡，非独立全文精读
 - [Learning robust perceptive locomotion for quadrupedal robots in the wild](papers/arxiv-2201.08117/README.md) · 2022 · 文献卡，非独立全文精读

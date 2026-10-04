@@ -12156,5 +12156,389 @@
     "legacy_paths": [],
     "content_kind": "bibliographic_card",
     "related_paper": "foundations/relations/attention-ffn-division.md"
+  },
+  {
+    "id": "arxiv:2109.11978",
+    "title": "Learning to Walk in Minutes Using Massively Parallel Deep Reinforcement Learning",
+    "url": "https://arxiv.org/abs/2109.11978",
+    "arxiv_id": "2109.11978",
+    "doi": null,
+    "year": "2021",
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [
+      "control/massively parallel RL and terrain curriculum"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [
+      "reinforcement-learning"
+    ],
+    "provenance": [
+      "assistant-recommendation-for-thinking-note"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2109.11978"
+    ],
+    "verification_status": "selected_sections_checked",
+    "caveats": [],
+    "reading_status": "bibliographic_card_selected_sections_checked",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p165",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "action",
+      "state",
+      "image"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2109.11978",
+    "canonical_path": "robotics-embodied/papers/arxiv-2109.11978/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2109.11978/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2109.11978/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "related_paper": "perspectives/notes/quadruped-recovery.md",
+    "authors": [
+      "Nikita Rudin",
+      "David Hoeller",
+      "Philipp Reist",
+      "Marco Hutter"
+    ]
+  },
+  {
+    "id": "arxiv:2405.12424",
+    "title": "Rethinking Robustness Assessment: Adversarial Attacks on Learning-based Quadrupedal Locomotion Controllers",
+    "url": "https://arxiv.org/abs/2405.12424",
+    "arxiv_id": "2405.12424",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [
+      "control/adversarial robustness"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [
+      "reinforcement-learning"
+    ],
+    "provenance": [
+      "assistant-recommendation-for-thinking-note"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2405.12424"
+    ],
+    "verification_status": "selected_sections_checked",
+    "caveats": [],
+    "reading_status": "bibliographic_card_selected_sections_checked",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p166",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "action",
+      "state",
+      "image"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2405.12424",
+    "canonical_path": "robotics-embodied/papers/arxiv-2405.12424/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2405.12424/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2405.12424/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "related_paper": "perspectives/notes/quadruped-recovery.md",
+    "authors": [
+      "Fan Shi",
+      "Chong Zhang",
+      "Takahiro Miki",
+      "Joonho Lee",
+      "Marco Hutter",
+      "Stelian Coros"
+    ]
+  },
+  {
+    "id": "arxiv:2309.14341",
+    "title": "Extreme Parkour with Legged Robots",
+    "url": "https://arxiv.org/abs/2309.14341",
+    "arxiv_id": "2309.14341",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [
+      "control/perceptive parkour"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [
+      "reinforcement-learning"
+    ],
+    "provenance": [
+      "assistant-recommendation-for-thinking-note"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2309.14341"
+    ],
+    "verification_status": "selected_sections_checked",
+    "caveats": [],
+    "reading_status": "bibliographic_card_selected_sections_checked",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p167",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "action",
+      "state",
+      "image"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2309.14341",
+    "canonical_path": "robotics-embodied/papers/arxiv-2309.14341/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2309.14341/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2309.14341/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "related_paper": "perspectives/notes/quadruped-recovery.md",
+    "authors": [
+      "Xuxin Cheng",
+      "Kexin Shi",
+      "Ananye Agarwal",
+      "Deepak Pathak"
+    ]
+  },
+  {
+    "id": "arxiv:2309.05665",
+    "title": "Robot Parkour Learning",
+    "url": "https://arxiv.org/abs/2309.05665",
+    "arxiv_id": "2309.05665",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [
+      "control/perceptive parkour"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [
+      "reinforcement-learning"
+    ],
+    "provenance": [
+      "assistant-recommendation-for-thinking-note"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2309.05665"
+    ],
+    "verification_status": "selected_sections_checked",
+    "caveats": [],
+    "reading_status": "bibliographic_card_selected_sections_checked",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p168",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "action",
+      "state",
+      "image"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2309.05665",
+    "canonical_path": "robotics-embodied/papers/arxiv-2309.05665/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2309.05665/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2309.05665/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "related_paper": "perspectives/notes/quadruped-recovery.md",
+    "authors": [
+      "Ziwen Zhuang",
+      "Zipeng Fu",
+      "Jianren Wang",
+      "Christopher Atkeson",
+      "Soeren Schwertfeger",
+      "Chelsea Finn",
+      "Hang Zhao"
+    ]
+  },
+  {
+    "id": "arxiv:2403.18765",
+    "title": "CaT: Constraints as Terminations for Legged Locomotion Reinforcement Learning",
+    "url": "https://arxiv.org/abs/2403.18765",
+    "arxiv_id": "2403.18765",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [
+      "control/constraints as terminations"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [
+      "reinforcement-learning"
+    ],
+    "provenance": [
+      "assistant-recommendation-for-thinking-note"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2403.18765"
+    ],
+    "verification_status": "selected_sections_checked",
+    "caveats": [],
+    "reading_status": "bibliographic_card_selected_sections_checked",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p169",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "action",
+      "state"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2403.18765",
+    "canonical_path": "robotics-embodied/papers/arxiv-2403.18765/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2403.18765/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2403.18765/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "related_paper": "perspectives/notes/quadruped-recovery.md",
+    "authors": [
+      "Elliot Chane-Sane",
+      "Pierre-Alexandre Leziart",
+      "Thomas Flayols",
+      "Olivier Stasse",
+      "Philippe Souères",
+      "Nicolas Mansard"
+    ]
+  },
+  {
+    "id": "arxiv:1511.05952",
+    "title": "Prioritized Experience Replay",
+    "url": "https://arxiv.org/abs/1511.05952",
+    "arxiv_id": "1511.05952",
+    "doi": null,
+    "year": "2016",
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [
+      "reinforcement learning/prioritized replay"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [
+      "reinforcement-learning"
+    ],
+    "provenance": [
+      "assistant-recommendation-for-thinking-note"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/1511.05952"
+    ],
+    "verification_status": "selected_sections_checked",
+    "caveats": [],
+    "reading_status": "bibliographic_card_selected_sections_checked",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p170",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-1511.05952",
+    "canonical_path": "robotics-embodied/papers/arxiv-1511.05952/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-1511.05952/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-1511.05952/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "related_paper": "perspectives/notes/quadruped-recovery.md",
+    "authors": [
+      "Tom Schaul",
+      "John Quan",
+      "Ioannis Antonoglou",
+      "David Silver"
+    ]
+  },
+  {
+    "id": "arxiv:2004.12919",
+    "title": "First return, then explore",
+    "url": "https://arxiv.org/abs/2004.12919",
+    "arxiv_id": "2004.12919",
+    "doi": null,
+    "year": "2021",
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [
+      "reinforcement learning/exploration"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [
+      "reinforcement-learning"
+    ],
+    "provenance": [
+      "assistant-recommendation-for-thinking-note"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2004.12919"
+    ],
+    "verification_status": "selected_sections_checked",
+    "caveats": [],
+    "reading_status": "bibliographic_card_selected_sections_checked",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p171",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2004.12919",
+    "canonical_path": "robotics-embodied/papers/arxiv-2004.12919/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2004.12919/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2004.12919/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "related_paper": "perspectives/notes/quadruped-recovery.md",
+    "authors": [
+      "Adrien Ecoffet",
+      "Joost Huizinga",
+      "Joel Lehman",
+      "Kenneth O. Stanley",
+      "Jeff Clune"
+    ]
   }
 ]
