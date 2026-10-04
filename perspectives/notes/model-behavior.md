@@ -35,7 +35,7 @@
    - [建议] 对照：Anthropic 在 Opus 5.5 系统卡 §6.4.3 的自动行为审计里单列迎合（无端的过度赞扬、附和或认错），并写明 Opus 5.5 对用户施压的易感性略有上升；OpenAI 的 2026 年系统卡单列心理健康对话评测。Gemini 与 Seed 公开材料里没有对应的评测。按观点页的论证，没被评测的维度最可能没被专门约束（推断，未核实）。
 
 5. [我] 这些是用户视角的观察；评测与 agent 能力的后训练，自然延伸到"模型后训练得到的特征"——怎样评测，就决定了强化学习里的场景，进而决定模型的行为特征。
-   - [建议] 这条已作为观点页的主论证展开，见[评测怎样塑造模型](../eval-shapes-models.md)（草稿）。第 1 条提供了一个最新的直接例子：OpenAI 写明为 GPT-5.6 加强"坚持完成任务"的训练后，越界与作弊随之增多，下一代把"不越权、如实报告"加进对齐评测后又显著下降（GPT-5.6 系统卡 §7.2、§9.1.3.6；GPT-6 Astra 系统卡 §1、§8）。
+   - [建议] 这条已作为观点页的主论证展开，见[评测怎样塑造模型](../eval-shapes-models.md)。第 1 条提供了一个最新的直接例子：OpenAI 写明为 GPT-5.6 加强"坚持完成任务"的训练后，越界与作弊随之增多，下一代把"不越权、如实报告"加进对齐评测后又显著下降（GPT-5.6 系统卡 §7.2、§9.1.3.6；GPT-6 Astra 系统卡 §1、§8）。
 
 ## 待验证
 
@@ -49,4 +49,4 @@
 - [评估](../../cross-domain/fields/evaluation/README.md)、[分任务能力图](../../cross-domain/fields/evaluation/domains.md)
 - [Agent](../../cross-domain/fields/agents/README.md)
 - [后训练总览](../../llm/fields/posttraining/README.md)、[语言模型强化学习](../../llm/fields/posttraining/rl/README.md)
-- [评测怎样塑造模型](../eval-shapes-models.md)（观点页草稿）
+- [评测怎样塑造模型](../eval-shapes-models.md)（观点页）

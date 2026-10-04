@@ -21,6 +21,8 @@
 
 - [我] 世界模型的主力团队多出自视频生成，所以更关注可编辑与关键物体保持不变。（假说三；与假说一同属"团队与资源决定方向"。[建议] 检验方法：统计主要世界模型报告的作者此前是否发表过视频生成工作，例如 Genie 3 的作者名单与视频生成论文的重合；已有线索见[生成式建模的收敛](../generative-convergence.md)中「从视频生成到世界模型」一节及其批注。）
 
+- [我] 后面发现这些路线基本上都走向了大模型，任务基本上也统一为生成式及其变种。（假说四，2026-10-04 审阅观点页时提出；与《生成的收敛》的主论点相邻，但范围更大：不只是生成任务的配方收敛，而是理解、决策等任务也被改写成生成式。[建议] 检验方法：在各领域页里逐一标出 2024–2026 年的代表系统是否以一个预训练大模型为主干、输出是否用生成式（下一 token 或去噪）表达——例如 VLM 把理解写成文本生成，VLA 把动作写成 token 或流匹配生成（[VLA](../../robotics-embodied/fields/vla/README.md)），HunyuanImage 3.0、GPT-4o 图像生成把图像生成放进语言模型（[视觉生成](../../multimodal/fields/generation/README.md)节点 10），世界模型由视频生成模型改造（[世界模型](../../multimodal/fields/world-models/README.md)）；同时找反例：检测、分割、SLAM、底层控制里仍以判别式或优化为主的系统（[机器人感知](../../robotics-embodied/fields/perception/README.md)、[定位与建图](../../robotics-embodied/fields/localization-mapping/README.md)、[运动控制](../../robotics-embodied/fields/control-locomotion/README.md)）。已按用户同意写进[生成的收敛](../generative-convergence.md)的 2025–2026 部分。）
+
 **仓库里与假说一相关的已有证据**
 
 3. [建议] [深度学习的规模化](../scaling.md)把整个领域走向规模化归于三件事：算力、能随数据增长的训练信号、可预测的训练工程。它描述的是全领域的走向，没有把学术界和工业界分开，也没有涉及研究周期，所以它是假说一的背景，不是检验。
