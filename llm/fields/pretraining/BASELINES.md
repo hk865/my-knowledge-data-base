@@ -81,6 +81,9 @@
 | 数值精度 | FP8 训练：小块缩放加定期 FP32 累加 | [DeepSeek-V3](../../papers/arxiv-2412.19437/README.md) | 约 16B 与约 230B 两个规模上相对 BF16 的损失相对误差低于 0.25%。代价：激活梯度也按 128×128 块量化时，约 16B 的 MoE 在约 300B token 后发散 |
 | 数值精度 | 更低精度的权重与 KV 缓存；局部回到高精度 | [DeepSeek-V4](../../papers/arxiv-2606.19348/README.md)（路由专家 FP4 量化感知训练，KV 缓存 FP8）、[DeepSeek-V4.1-Flash](../../papers/arxiv-2609.19969/README.md)（FP4 KV 缓存）、[Kimi K3](../../papers/arxiv-2607.24653/README.md)（注意力输出保留 FP32） | 显存与带宽下降。代价：K3 发现 flash attention 中有偏的舍入误差，只能在这一处回到 FP32 |
 | 数值精度 | FP4（NVFP4）预训练：权重、激活、梯度 4 位，最后约 15% 的层与注意力、MTP 等投影保留 BF16 | [Nemotron 3](../../papers/arxiv-2512.20856/README.md)（Super、Ultra） | Nano 上与 BF16 的损失相对差不到 1%。代价：依赖 NVIDIA 新硬件；Super、Ultra 的完整对照在单独报告中 |
+| 数据组成 | 按语言适配清洗、去重与质量重加权 | [FineWeb2](../../papers/arxiv-2506.20920/README.md)（2025） | 把多语言数据质量拆成可消融步骤；代价：每种语言需要可靠的早期评测，单语言消融不直接代表联合训练 |
+| 损失与任务 | 有限语料多遍训练时，附加掩码输入的下一词损失 | [MIR / SoftQ](../../papers/arxiv-2606.06888/README.md)（2026） | 减轻记忆性拟合；代价：每批两次前向，需与强权重衰减基线比较 |
+| 中途评估 | 把选对数据配方作为小实验的目标 | [DataDecide](../../papers/arxiv-2504.11393/README.md)（2025） | 比较简单排名与规模律预测的决策效率；代价：目标规模与 token/参数比限制外推范围 |
 
 几篇精读的位置：[DeepSeek-V2 精读](../../papers/deepseek-v2/reading.md)占"注意力 = MLA"与"FFN = 细粒度与共享专家"两格；[Qwen2.5-1M 精读](../../papers/qwen2.5-1m/reading.md)占"损失与任务 = 合成必须读远处的任务"与"课程 = 分级加长"两格；[GPT-3 精读](../../papers/gpt3/reading.md)与 [Transformer 精读](../../papers/transformer/reading.md)属于基线之前的节点；[Mamba 精读](../../papers/mamba/reading.md)是"线性注意力混合"一路的前作，在[架构与效率方向](../architecture/README.md)展开。
 

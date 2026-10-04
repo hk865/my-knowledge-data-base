@@ -40,7 +40,8 @@
   "year": 2026,
   "topic_paths": [
     "llm/inference",
-    "llm/posttraining/rl"
+    "llm/posttraining/rl",
+    "multimodal/vlm"
   ],
   "verification_2026_10_04": {
     "reading_scope": "arXiv 摘要页与 v1 HTML 选段",

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2606.06888",
+  "title": "Data-Constrained Language Model Pretraining: Improved Regularization and Scaling Laws",
+  "resource_kind": "paper",
+  "canonical_folder": "llm/papers/arxiv-2606.06888",
+  "official_url": "https://arxiv.org/abs/2606.06888",
+  "official_fulltext_url": "https://arxiv.org/pdf/2606.06888",
+  "year": 2026,
+  "authors": [
+    "Zhiwei Xu",
+    "Shihao Wu",
+    "Hanseul Cho",
+    "Wei Hu",
+    "Yixin Wang"
+  ],
+  "topic_paths": [
+    "llm/pretraining"
+  ],
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "generation",
+    "analysis"
+  ],
+  "content_kind": "bibliographic_card",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "reading_boundary": "arXiv v2 摘要、§3.2 MIR、§3.4 对照与数据设定、§4 概述、§6 讨论；未核验附录理论证明，未全文精读，未复现。",
+  "reading_path": null,
+  "teaching_status": "not_created",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "仅链接官方原文，未镜像全文。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "verification_2026_10_04": {
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2606.06888",
+      "https://arxiv.org/html/2606.06888v2"
+    ],
+    "latest_source_date": "2026-06-09",
+    "reading_scope": "arXiv v2 摘要、§3.2 MIR、§3.4 对照与数据设定、§4 概述、§6 讨论；未核验附录理论证明，未全文精读，未复现。",
+    "evidence_boundary": "MIR 每批需要两次前向，改进的是有限独立数据下的利用率；实验到 1.4B 参数、400M 独立 token，且依赖逐配置调参。",
+    "source_origin": "llm_direction_recency_gap_update_2026_10_04"
+  }
+}

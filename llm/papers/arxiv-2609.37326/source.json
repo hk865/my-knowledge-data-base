@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2609.37326",
+  "title": "Solving Without Stopping: On-Policy Distillation at Small Scale",
+  "resource_kind": "paper",
+  "canonical_folder": "llm/papers/arxiv-2609.37326",
+  "official_url": "https://arxiv.org/abs/2609.37326",
+  "official_fulltext_url": "https://arxiv.org/pdf/2609.37326",
+  "year": 2026,
+  "authors": [
+    "Hongyang Li",
+    "Yiming Zhu",
+    "Xiao Li",
+    "Caesar Wu",
+    "Said Mammar",
+    "Pascal Bouvry"
+  ],
+  "topic_paths": [
+    "llm/posttraining/sft"
+  ],
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "generation",
+    "analysis"
+  ],
+  "content_kind": "bibliographic_card",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "reading_boundary": "arXiv v1 摘要、§2 设置、正文停止行为分析、§7 结论；未完整复核附录、置信区间与全部消融，未全文精读，未复现。",
+  "reading_path": null,
+  "teaching_status": "not_created",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "仅链接官方原文，未镜像全文。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "verification_2026_10_04": {
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2609.37326",
+      "https://arxiv.org/html/2609.37326v1"
+    ],
+    "latest_source_date": "2026-09-29",
+    "reading_scope": "arXiv v1 摘要、§2 设置、正文停止行为分析、§7 结论；未完整复核附录、置信区间与全部消融，未全文精读，未复现。",
+    "evidence_boundary": "证据限于同一家族小模型与数学蒸馏；不能外推为所有 OPD 模型都会丧失停止能力。",
+    "source_origin": "llm_direction_recency_gap_update_2026_10_04"
+  }
+}

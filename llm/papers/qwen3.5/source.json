@@ -31,7 +31,8 @@
   "year": 2026,
   "topic_paths": [
     "llm/architecture",
-    "llm/long-context"
+    "llm/long-context",
+    "multimodal/vlm"
   ],
   "verification_2026_10_04": {
     "reading_scope": "Hugging Face 模型卡（Qwen3.5-397B-A17B、Qwen3.6-35B-A3B、Qwen3.6-27B）与 GitHub QwenLM/Qwen3.5 README",

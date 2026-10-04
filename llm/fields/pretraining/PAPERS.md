@@ -87,6 +87,14 @@
 
 只读了官方博客、未建卡：[Introducing Muse Spark](https://ai.meta.com/blog/introducing-muse-spark-msl/)（Meta，2026-04，称算力比 Llama 4 Maverick 少一个数量级以上，无结构与配方）。
 
+## 数据选择、处理与重复利用（2025–2026）
+
+这条支线接在“更多知识”的问题之后：从决定用哪份语料，到跨语言清洗，再到数据耗尽后的重复训练。
+
+- [DataDecide: How to Predict Best Pretraining Data with Small Experiments](../../papers/arxiv-2504.11393/README.md) · 2025 · 文献卡 · 格：中途评估 = 小实验是否选对数据
+- [FineWeb2: One Pipeline to Scale Them All -- Adapting Pre-Training Data Processing to Every Language](../../papers/arxiv-2506.20920/README.md) · 2025 · 文献卡 · 格：数据组成 = 按语言适配过滤、去重与重加权
+- [Data-Constrained Language Model Pretraining: Improved Regularization and Scaling Laws](../../papers/arxiv-2606.06888/README.md) · 2026 · 文献卡 · 格：损失与任务 = 有限数据多遍训练的正则化
+
 ## 存档与跨方向
 
 以下单篇目录登记在预训练方向下，但不在入门页的主线上：

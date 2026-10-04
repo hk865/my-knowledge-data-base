@@ -144,3 +144,8 @@
 - [Speculative Speculative Decoding](papers/arxiv-2603.03251/README.md) · 2026 · 文献卡，暂无独立精读
 - [On the Design of Qwen3.8-Next Architecture: Evaluation, Efficiency, and Training Stability](papers/arxiv-2608.30320/README.md) · 2026 · 文献卡，暂无独立精读
 - [Acceptance-Aware Draft Model Training for Speculative Decoding](papers/arxiv-2609.24150/README.md) · 2026 · 文献卡，暂无独立精读
+- [DataDecide: How to Predict Best Pretraining Data with Small Experiments](papers/arxiv-2504.11393/README.md) · 2025 · 文献卡，暂无独立精读
+- [FineWeb2: One Pipeline to Scale Them All -- Adapting Pre-Training Data Processing to Every Language](papers/arxiv-2506.20920/README.md) · 2025 · 文献卡，暂无独立精读
+- [Data-Constrained Language Model Pretraining: Improved Regularization and Scaling Laws](papers/arxiv-2606.06888/README.md) · 2026 · 文献卡，暂无独立精读
+- [Rethinking On-Policy Distillation of Large Language Models II: One Training Example](papers/arxiv-2609.04172/README.md) · 2026 · 文献卡，暂无独立精读
+- [Solving Without Stopping: On-Policy Distillation at Small Scale](papers/arxiv-2609.37326/README.md) · 2026 · 文献卡，暂无独立精读

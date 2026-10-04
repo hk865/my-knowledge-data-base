@@ -54,6 +54,13 @@
 
 已知存在、只读了摘要：[Self-Distilled Reasoner: On-Policy Self-Distillation for Large Language Models](https://arxiv.org/abs/2601.18734)（2026，同一模型兼任师生，教师看特权信息）；[Ministral 3](https://arxiv.org/abs/2601.08584)（2026，Mistral，级联剪枝与蒸馏）。
 
+## 7 OPD 的状态覆盖与停止能力（2026-09）
+
+接续第 6 节的成败条件：先问少量提示能触达哪些监督状态，再检查学生是否能正确结束思考。
+
+- [Rethinking On-Policy Distillation of Large Language Models II: One Training Example](../../../papers/arxiv-2609.04172/README.md) · 2026 · 文献卡 · 格：示范来源 = 学生访问的状态覆盖
+- [Solving Without Stopping: On-Policy Distillation at Small Scale](../../../papers/arxiv-2609.37326/README.md) · 2026 · 文献卡 · 格：评测 = 答案标记、正确性与停止的分离
+
 ## 相关但不在主线
 
 - [Recursive Introspection: Teaching Language Model Agents How to Self-Improve](../../../papers/arxiv-2407.18219/README.md) · 2024 · 文献卡 · RISE：迭代微调，教模型在失败尝试之后修改回答，与智能体方向交叉

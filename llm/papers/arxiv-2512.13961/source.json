@@ -42,7 +42,8 @@
     "llm/pretraining",
     "llm/posttraining/sft",
     "llm/posttraining/preferences",
-    "llm/posttraining/rl"
+    "llm/posttraining/rl",
+    "cross-domain/training-science"
   ],
   "verification_2026_10_04": {
     "reading_scope": "arXiv 摘要页与 v2 HTML 选段：§2.4、数据三阶段、§4.3、§4.4.1、§4.5、§6、Olmo 3.1",

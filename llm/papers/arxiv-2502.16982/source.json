@@ -40,7 +40,8 @@
   ],
   "year": 2025,
   "topic_paths": [
-    "llm/pretraining"
+    "llm/pretraining",
+    "cross-domain/training-science"
   ],
   "verification_2026_10_04": {
     "reading_scope": "arXiv 摘要页与 v1 PDF 选段：摘要、§1、§2.2（权重衰减、更新 RMS 一致、与 AdamW 匹配）、§2.3、§3.1–3.5（规模定律 Table 3、Moonlight 训练阶段、SVD 熵、SFT 消融）、§4 讨论",

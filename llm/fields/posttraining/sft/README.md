@@ -1,6 +1,6 @@
 # 监督微调 SFT
 
-> 状态：领域入门页 · v1 · 依据 [synthesis.csv](synthesis.csv)（16 篇）
+> 状态：领域入门页 · v1 · 依据 [synthesis.csv](synthesis.csv)（18 篇）
 >
 > 速览：
 > 1. SFT（监督微调，一句话：在"指令 + 示范回答"上做下一词预测，只在回答 token 上计算损失）主要教格式、角色与"调用哪一部分已有能力"，很少教新知识：LIMA 用 1,000 条、Llama 2 用 27,540 条高质量示范就够。
@@ -106,6 +106,15 @@
 
 `[判断]` 第 5、6 两个节点合起来看，SFT 在 2025 年以后分成了两个角色：给 RL 打格式底子的冷启动（越少越好），以及把能力从强模型搬到弱模型的蒸馏（越像 on-policy 越好）。[SFT Memorizes, RL Generalizes](../../../papers/arxiv-2501.17161/README.md) 在规则游戏与导航上给出对应的对照：SFT 倾向记忆、换规则就不会，RL 能泛化，但没有 SFT 稳定输出格式，RL 根本训不起来。
 
+### 7 数据足够之后：状态覆盖与停止能力（2026-09）
+
+留下的问题：Qwen3 与 2026 年的专家合并报告证明 OPD 可以搬运能力，4 月的 [Rethinking OPD](../../../papers/arxiv-2604.13016/README.md)又指出师生兼容与长前缀反馈的限制。接下来要分清两件事：学生缺的是可学的状态，还是把已有监督变成完整答案的能力。
+
+- **数据量改看状态覆盖。** [Rethinking OPD II](../../../papers/arxiv-2609.04172/README.md)（9 月 3 日）让学生围绕极少提示反复生成，检查它访问了多少“提示 + 已生成前缀”的状态。多样的少量提示在论文设定中可接近全量提示训练；每步吸收教师信号的速度却仍逐渐变慢。这里的样本单位从一道题变成了一条轨迹上的许多监督位置（少提示仍需反复采样和教师计算）。
+- **解得出还要交得出。** [Solving Without Stopping](../../../papers/arxiv-2609.37326/README.md)（9 月 29 日）用同一家族的大教师教小学生，分别测是否标出答案、是否正确、是否停止。其数学实验中，思考模式的学生能改善解题，却可能更少结束思考；教师在学生走到的前缀上未必提供有效的停止信号。
+
+`[判断]` 两篇合起来把 OPD 的验收拆得更细：先看采样到哪些状态，再看监督是否改善正确性，最后看模型能否在预算内交付答案。这也解释了为什么只报蒸馏后的准确率与平均长度，会漏掉训练中的不同退化。尚待解决的是：覆盖更多状态的选题法，怎样同时覆盖正确结束推理的状态。
+
 ## 技术地基
 
 - **下一词预测与损失掩码**：SFT 与预训练用同一个交叉熵，区别是只在回答 token 上计算。[自监督与生成目标](../../../../foundations/lessons/modules/objectives/03-pretraining-objectives.md)第 2–3 节。
@@ -152,7 +161,7 @@
 3. [Gekhman 等](../../../papers/arxiv-2405.05904/README.md)：SFT 不该教什么。
 4. [DeepSeek-R1](../../../papers/arxiv-2501.12948/README.md)第 3 节与附录 F → [Qwen3](../../../papers/arxiv-2505.09388/README.md)第 4.1、4.5 节：SFT 变成冷启动与蒸馏。
 5. [SFT Memorizes, RL Generalizes](../../../papers/arxiv-2501.17161/README.md)：SFT 与 RL 的分工在受控实验里是什么样。
-6. [On-Policy Distillation](../../../papers/thinking-machines-on-policy-distillation/README.md) → [Li 等](../../../papers/arxiv-2604.13016/README.md)：on-policy 蒸馏的做法、成本，以及它什么时候失效。
+6. [On-Policy Distillation](../../../papers/thinking-machines-on-policy-distillation/README.md) → [Li 等](../../../papers/arxiv-2604.13016/README.md) → [Rethinking OPD II](../../../papers/arxiv-2609.04172/README.md) 与 [Solving Without Stopping](../../../papers/arxiv-2609.37326/README.md)：从做法与成败条件，走到状态覆盖和停止能力。
 
 ## 批注
 
@@ -164,6 +173,8 @@
 - FLAN"8B 及以下受损"是在其 40 个训练任务、按任务簇留出的设定下（§4.2）；Flan-PaLM 用 1,836 个任务时，各尺寸模型都有提升。
 
 **判断的支撑论文**
+
+- OPD 的状态覆盖、正确性与交付三层验收：Rethinking OPD II §4–6 与 §9，Solving Without Stopping §2 与 §7。前者的覆盖是相对参考轨迹的语义聚类代理；后者只验证同一家族小模型的数学任务。
 
 - SFT 角色的转变：R1 §3 与附录 F.1、Qwen3 §4.1 与 §4.5、V4 §5.1.2、K3 §4.1.1 与 §4.1.3、SFT Memorizes §5.4 与 §6。边界：Llama 3 仍以 SFT（加拒绝采样）为主体，DeepSeek-V3 的 SFT 数据有 150 万条。
 - "模型写、再筛"的收敛：Llama 2 §3.1 与 Llama 3 §4.1.3、§4.3；V3 §5.1；Qwen3 §4.1。反例：LIMA 与 Llama 2 都报告人工少量数据更好，s1 也只用 1,000 条，只是它们的"人工"多已变成"人工挑选模型写的东西"。

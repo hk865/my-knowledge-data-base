@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2506.20920",
+  "title": "FineWeb2: One Pipeline to Scale Them All -- Adapting Pre-Training Data Processing to Every Language",
+  "resource_kind": "paper",
+  "canonical_folder": "llm/papers/arxiv-2506.20920",
+  "official_url": "https://arxiv.org/abs/2506.20920",
+  "official_fulltext_url": "https://arxiv.org/pdf/2506.20920",
+  "year": 2025,
+  "authors": [
+    "Guilherme Penedo",
+    "Hynek Kydlíček",
+    "Vinko Sabolčec",
+    "Bettina Messmer",
+    "Negar Foroutan",
+    "Amir Hossein Kargaran",
+    "Colin Raffel",
+    "Martin Jaggi",
+    "Leandro Von Werra",
+    "Thomas Wolf"
+  ],
+  "topic_paths": [
+    "llm/pretraining"
+  ],
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "generation",
+    "analysis"
+  ],
+  "content_kind": "bibliographic_card",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "reading_boundary": "arXiv v1 摘要、§3 实验设置与早期评测、§4 数据流水线、§5 跨语言验证的选定段落。未逐表复核，未全文精读，未复现。",
+  "reading_path": null,
+  "teaching_status": "not_created",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "仅链接官方原文，未镜像全文。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "verification_2026_10_04": {
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2506.20920",
+      "https://arxiv.org/html/2506.20920v1"
+    ],
+    "latest_source_date": "2025-06-26",
+    "reading_scope": "arXiv v1 摘要、§3 实验设置与早期评测、§4 数据流水线、§5 跨语言验证的选定段落。未逐表复核，未全文精读，未复现。",
+    "evidence_boundary": "主要消融按语言分别训练模型；语料覆盖范围大于下游验证范围，不能由此推出一个联合多语言模型在所有语言上都同样受益。",
+    "source_origin": "llm_direction_recency_gap_update_2026_10_04"
+  }
+}

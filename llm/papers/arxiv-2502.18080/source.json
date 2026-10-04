@@ -27,7 +27,8 @@
   "evidence_paths": [],
   "topic_paths": [
     "llm/inference",
-    "llm/posttraining/sft"
+    "llm/posttraining/sft",
+    "cross-domain/training-science"
   ],
   "year": 2025,
   "authors": [
