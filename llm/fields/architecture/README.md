@@ -255,7 +255,7 @@ benchmark 的替换就是这个方向目标的迁移：WMT 机器翻译的 BLEU�
 | DeepSeek | 保留 Transformer 主体，在内部做压缩与稀疏，并把 KV 字节数当作跨代指标 | DeepSeekMoE、V2（MLA）、V3、NSA、V3.2（DSA）、mHC、Engram、V4（CSA/HCA）、V4.1-Flash | 部件越叠越多，V4 自述结构偏复杂；稳定技巧原理不明；V3 部署单元大 |
 | Kimi（Moonshot AI） | 改造序列方向（KDA 线性注意力混合）与深度方向（跨层注意力）的信息流；注意力的全局层沿用 DeepSeek 的 MLA | K2、Kimi Linear、Attention Residuals、K3 | 线性部分召回受限，保留 1/4 全注意力；近千个专家时激活爆炸 |
 | Google（含 Gemma 团队） | 在注意力上省 KV（MQA → GQA → Gemma 4 的 key 兼作 value）；稀疏专家；开放模型坚持局部/全局交错 | MQA、Switch、GQA、Gemma 2/3/4 | MQA 质量与稳定；Switch-XXL 不稳；Gemini 等闭源模型不公开结构细节 |
-| Meta | 稠密结构加 GQA，换取稳定与简单 | Llama 3 | 稠密模型每 token 计算随参数增长 |
+| Meta | 到 Llama 3 为止：稠密结构加 GQA，换取稳定与简单；Llama 4 起改为 MoE | Llama 3；[ScaleRL](../../papers/arxiv-2510.13786/README.md)（Llama-4 Scout） | 稠密模型每 token 计算随参数增长 |
 | 阿里巴巴 Qwen | GQA 加 QK-Norm 的稠密/MoE 模型；研究注意力内部的门控 | Qwen2.5、Qwen3、Gated Attention | 门控的作用机制尚无理论解释 |
 | 学界与 AI21（CMU、Princeton、Stanford、Harvard、AI21） | 用递推状态替代或部分替代注意力，并用合成任务测量代价 | LRU、Mamba、Based、Repeat After Me、Jamba | 规模多在 3B 以下；纯 SSM 召回与上下文学习弱 |
 | ByteDance Seed | 改造残差连接 | Hyper-Connections | 无约束的混合在更大规模上不稳（mHC 的测量） |
@@ -332,6 +332,6 @@ benchmark 的替换就是这个方向目标的迁移：WMT 机器翻译的 BLEU�
 
 **与原结论的张力（2025-10 以后的材料）**
 
-- 主要路线表中 Meta 一行写"稠密结构加 GQA"，依据是 Llama 3。ScaleRL（Meta 等，2025-10）的实验用的是"17B×16 专家的 Llama-4 Scout MoE"，说明 Llama 4 已是 MoE；这一行描述的是 2024 年的 Llama 3。Meta 2026-04 的 Muse Spark 博客只说重建了结构、优化与数据，没有给出结构。
+- 历史：2026-10-04 之前，主要路线表中 Meta 一行只写"稠密结构加 GQA"，依据是 Llama 3；巡检后正文已改正。ScaleRL（Meta 等，2025-10）的实验用的是"17B×16 专家的 Llama-4 Scout MoE"，说明 Llama 4 已是 MoE；这一行描述的是 2024 年的 Llama 3。Meta 2026-04 的 Muse Spark 博客只说重建了结构、优化与数据，没有给出结构。
 - 主要路线表中阿里巴巴 Qwen 一行写"GQA 加 QK-Norm 的稠密/MoE 模型"，依据是 Qwen2.5 与 Qwen3；2026 年的 Qwen3.5 与 Qwen3.6 已改为 Gated DeltaNet 与门控注意力 3:1 的混合，与 Kimi 的线性混合同一方向。
 - 收敛判断"少量全局层 + 大量省 KV 的层已是开源大模型的共同选择"有一个明确的反例：MiniMax-M2 全部层用全注意力，并写明试过的滑窗混合在多跳推理上变差。"分化：训练时稀疏（DeepSeek）还是线性混合（Kimi）"在 2026 年扩展到其他团队：GLM-5 选了前者，Qwen3.5 与 Nemotron 3 选了后者一侧。

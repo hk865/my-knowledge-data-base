@@ -143,7 +143,7 @@
 - **学习率调度**。DeepSeek LLM 用三段阶梯学习率替代余弦衰减，效果相当，第一段可直接复用于继续训练；DeepSeek-V3 先恒定到 10T token，再余弦衰减 4.3T；Kimi K2 用 WSD（预热、长时间恒定、末段衰减）。Kimi K3 发现 WSD 与余弦的最优超参差别很大，各自独立调参后余弦衰减的最终损失更低，于是改回余弦。
 - **批量与超参**。DeepSeek-V3 在前 469B token 把批量从 3072 增到 15360；Llama 3 早期用小批量以求稳定，再分两次加倍。DeepSeek LLM 拟合了最优批量与学习率随算力的幂律；Qwen2.5、Qwen3 为每个预训练阶段拟合超参规模定律；Kimi K3 的结构改动改变了最优区域，于是重新调批量、学习率、每参数 token 数与模型形状。
 
-`[判断]` Meta 把简单本身当作押注：Llama 3 选稠密结构是为了稳定，后训练也选 SFT、拒绝采样、DPO 这类较简单的流程，而不用更难扩展的强化学习算法。
+`[判断]` Meta 在 Llama 3 之前把简单本身当作押注：Llama 3 选稠密结构是为了稳定，后训练也选 SFT、拒绝采样、DPO 这类较简单的流程，而不用更难扩展的强化学习算法。这一押注在 Llama 4 改变：Llama 4 已是 MoE（ScaleRL 实验所用的 Llama-4 Scout 为 17B×16 专家），2026-04 的 Muse Spark 博客没有公开结构。
 
 ### 优化器：从 AdamW 到 Muon
 
@@ -233,14 +233,14 @@ FP4 预训练在 2025 年底有了第一份公开配方：NVIDIA 的 [Nemotron 3
 | Kimi（Moonshot AI） | token 效率：更好的优化器、改写数据，并改造序列方向（线性注意力）与深度方向（跨层注意力）的信息流 | Moonlight、K2、Kimi Linear、Attention Residuals、K3 | Muon 带来 logit 爆炸与优化器错配；K3 仍落后最强闭源模型 |
 | OpenAI | decoder-only、扩大规模、可预测地扩大规模 | GPT 系列、Scaling Laws、GPT-3、GPT-4 | 从 GPT-4 起不公开结构、算力、数据与训练方法 |
 | Google | 系统比较与稳定性工程；MoE 的长期研究延续到 Gemini 1.5；开放的 Gemma 线押注局部/全局交错与知识蒸馏 | T5、PaLM、Wortsman 等、Gemma 2/3/4、Gemini 1.5 | Gemini 报告只给出 MoE 与长上下文结果，不给预训练配方；Gemma 2 自述小模型仍训练不足 |
-| Meta | 稠密结构、公开权重，在数据配比与退火上做文章，以换取稳定与简单 | LLaMA、Llama 3 | 稠密模型每 token 计算随参数增长，Llama 3 405B 用了 3.8×10²⁵ FLOPs |
+| Meta | 到 Llama 3 为止：稠密结构、公开权重，在数据配比与退火上做文章，以换取稳定与简单；Llama 4 起改为 MoE | LLaMA、Llama 3；[ScaleRL](../../papers/arxiv-2510.13786/README.md)（Llama-4 Scout） | 稠密模型每 token 计算随参数增长，Llama 3 405B 用了 3.8×10²⁵ FLOPs |
 | Qwen（阿里巴巴） | 扩大数据规模、超参规模定律、分阶段预训练，并研究注意力的稳定性 | Qwen2.5、Qwen3、Gated Attention、Qwen2.5-1M | 报告未单列预训练局限 |
 | AI2（2025-12） | 完全公开：数据、代码、中间检查点与评测，三段训练（预训练、中段、长上下文） | OLMo 2、[Olmo 3](../../papers/arxiv-2512.13961/README.md) | 规模停在 32B |
 | NVIDIA | Mamba-2 为主的混合加 LatentMoE，FP4 预训练，公开数据与配方 | [Nemotron 3](../../papers/arxiv-2512.20856/README.md) | 白皮书未给出层比例与完整消融 |
 | 智谱（GLM） | 大规模 MoE（744B/40B，28.5T token），注意力直接采用 DeepSeek 的 DSA | [GLM-5](../../papers/arxiv-2602.15763/README.md) | 预训练配方细节本轮未展开核对 |
 | MiniMax | 极低激活比的 MoE（229.9B/9.8B），全注意力 | [MiniMax-M2](../../papers/arxiv-2605.26494/README.md) | 长序列成本按平方增长 |
 
-`[判断]` 收敛的部分：MoE 成为开源大模型的常用结构（DeepSeek、Kimi、Qwen3，Gemma 4 也有 MoE 版本），Gemini 1.5 Pro 同样是稀疏 MoE；QK 归一化或等价约束成为常用部件；长上下文都放在预训练末段；Muon 从 Kimi 传到 DeepSeek。分化的部分：注意力汇聚是消除还是显式提供（Qwen 对 DeepSeek-V4），残差流怎样改（mHC 对 Attention Residuals），长上下文是稀疏还是线性混合（DeepSeek 对 Kimi），以及 Meta 坚持稠密结构。
+`[判断]` 收敛的部分：MoE 成为开源大模型的常用结构（DeepSeek、Kimi、Qwen3，Gemma 4 也有 MoE 版本），Gemini 1.5 Pro 同样是稀疏 MoE；QK 归一化或等价约束成为常用部件；长上下文都放在预训练末段；Muon 从 Kimi 传到 DeepSeek。分化的部分：注意力汇聚是消除还是显式提供（Qwen 对 DeepSeek-V4），残差流怎样改（mHC 对 Attention Residuals），长上下文是稀疏还是线性混合（DeepSeek 对 Kimi），以及 Meta 在 Llama 3 之前坚持稠密结构（Llama 4 已改为 MoE）。
 
 ## 用什么衡量进展
 
@@ -312,5 +312,5 @@ FP4 预训练在 2025 年底有了第一份公开配方：NVIDIA 的 [Nemotron 3
 
 **与原结论的张力（2025-10 以后的材料）**
 
-- 主要路线表中 Meta 一行写"稠密结构、公开权重"，收敛判断中写"Meta 坚持稠密结构"，依据是 LLaMA 与 Llama 3。ScaleRL（Meta 等，2025-10）的实验用的是"17B×16 专家的 Llama-4 Scout MoE"，说明 Llama 4 已改为 MoE；2026-04 的 Muse Spark 博客没有写结构，也没有写是否发布权重。这两处描述的是 2024 年以前的 Meta。
+- 历史：2026-10-04 之前，主要路线表中 Meta 一行写"稠密结构、公开权重"，收敛判断中写"Meta 坚持稠密结构"，依据是 LLaMA 与 Llama 3；巡检后正文已改正。ScaleRL（Meta 等，2025-10）的实验用的是"17B×16 专家的 Llama-4 Scout MoE"，说明 Llama 4 已改为 MoE；2026-04 的 Muse Spark 博客没有写结构，也没有写是否发布权重。这两处描述的是 2024 年以前的 Meta。
 - 速览第 5 条"DeepSeek 押注稀疏与压缩，Kimi 押注 token 效率；2026 年两条线开始交汇"仍成立，但 2026 年的交汇不只在这两家之间：GLM-5 直接采用了 DSA，Qwen3.5 转向与 Kimi 同一方向的线性注意力混合，MiniMax-M2 则公开反对两者、回到全注意力。
