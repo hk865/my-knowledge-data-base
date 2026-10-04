@@ -14,5 +14,31 @@
       "location": "§3.4、Table 1、Appendix G"
     }
   ],
-  "boundary": "英语曝光量相同仍可能有容量不足导致的退化；不能将大模型的双向收益推广到所有模型尺寸。"
+  "boundary": "英语曝光量相同仍可能有容量不足导致的退化；不能将大模型的双向收益推广到所有模型尺寸。",
+  "field_checks": [
+    {
+      "checked_on": "2026-10-04",
+      "purpose": "按方向补充问题链与阅读优先级；原有奠基论文保留",
+      "boundary": "只核所列章节或摘要，未复现实验；新卡均为bibliographic_card；原始正式版不可达时不引定量结果。",
+      "field_page": "multimodal/fields/alignment/README.md",
+      "source": {
+        "resource_id": "arxiv:2507.22062",
+        "version": "NeurIPS2025",
+        "selected_sections": "§3.4/Table1/§4.6/AppendixG",
+        "official_url": "https://arxiv.org/abs/2507.22062"
+      }
+    }
+  ],
+  "review_verification_2026_10_04": {
+    "sources": [
+      "https://arxiv.org/html/2507.22062v1"
+    ],
+    "scope": "arXiv v1 首页作者单位；原综合表的性能依据仍为 NeurIPS 正式版。",
+    "verified_facts": [
+      "单位为 Meta FAIR、MIT、Princeton University、New York University。"
+    ],
+    "checked_on": "2026-10-04",
+    "reading_depth": "selected_sections_checked_not_full_read",
+    "independently_reproduced": false
+  }
 }

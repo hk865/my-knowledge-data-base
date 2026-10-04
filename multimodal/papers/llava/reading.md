@@ -85,7 +85,7 @@ Liu、Li、Wu、Lee（2023，UW–Madison、Microsoft Research、Columbia）把�
 
 ### 接着看：训练接口怎样变成联合训练与工具闭环
 
-LLaVA 留下的是一个可拆的“视觉编码器 → 投影 → 语言模型”接口。[Kimi K2.5](../../../llm/papers/arxiv-2602.02276/README.md) 把问题移到视觉何时加入联合训练，[Kimi K3](../../../llm/papers/arxiv-2607.24653/README.md) 又用从零视觉塔检验对比预训练初始化的作用；需要多轮音视频证据时，再读 [Qwen3.8-Omni](../arxiv-2609.25611/README.md)。三者分别改变训练日程、初始化与执行接口，先读 [VLM 方向的后继节点](../../fields/vlm/README.md)再决定精读哪篇。
+LLaVA 留下的是一个可拆的"视觉编码器 → 投影 → 语言模型"接口。[Kimi K2.5](../../../llm/papers/arxiv-2602.02276/README.md) 把问题移到视觉何时加入联合训练，[Kimi K3](../../../llm/papers/arxiv-2607.24653/README.md) 又用从零视觉塔检验对比预训练初始化的作用；需要多轮音视频证据时，再读 [Qwen3.8-Omni](../arxiv-2609.25611/README.md)。三者分别改变训练日程、初始化与执行接口，先读 [VLM 方向的后继节点](../../fields/vlm/README.md)再决定精读哪篇。
 
 ## 批注
 

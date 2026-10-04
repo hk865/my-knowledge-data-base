@@ -108,3 +108,8 @@
 - [MeanFlow](../../papers/arxiv-2505.13447/README.md)：学区间平均速度，必读
 - [RAE](../../papers/arxiv-2510.11690/README.md)：冻结语义编码器配生成解码器，必读
 - [Scaling T2I RAE](../../papers/arxiv-2601.16208/README.md)：从类条件实验扩到自由文本生成，选读
+
+## 世界模型的条件生成接口
+
+- [World Simulation with Video Foundation Models for Physical AI](../../papers/arxiv-2511.00062/README.md)（Cosmos-Predict2.5 / Transfer2.5） · 2025 · 文献卡 · 多条件视频生成、奖励后训练与空间控制；主归属[世界模型](../world-models/README.md)
+- [Cosmos 3: Omnimodal World Models for Physical AI](../../papers/arxiv-2606.02800/README.md) · 2026 · 文献卡 · 自回归推理与扩散生成的双流接口；主归属[世界模型](../world-models/README.md)

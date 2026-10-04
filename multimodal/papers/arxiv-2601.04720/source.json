@@ -25,7 +25,7 @@
   "version_status": "selected_sections_checked",
   "content_kind": "bibliographic_card",
   "reading_depth": "selected_sections_checked_not_full_read",
-  "reading_boundary": "arXiv v2摘要、§2架构、§4–5训练与评估；官方实现仓库；不是独立全文精读，未复现。",
+  "reading_boundary": "arXiv v2摘要、§2架构、§4–5训练；§6.1评估；官方实现仓库；不是独立全文精读，未复现。",
   "reading_path": null,
   "user_reading_status": "not_asserted",
   "independently_reproduced": false,
@@ -52,7 +52,7 @@
   ],
   "verification_2026_10_04": {
     "version_date": "2026-01-19",
-    "reading_scope": "arXiv v2摘要、§2架构、§4–5训练与评估；官方实现仓库",
+    "reading_scope": "arXiv v2摘要、§2架构、§4–5训练；§6.1评估；官方实现仓库",
     "verification_sources": [
       "https://arxiv.org/abs/2601.04720",
       "https://arxiv.org/html/2601.04720v2"

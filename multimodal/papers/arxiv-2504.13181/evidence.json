@@ -1,0 +1,35 @@
+{
+  "resource_id": "arxiv:2504.13181",
+  "checked_on": "2026-10-04",
+  "read_version": "v2",
+  "source_url": "https://arxiv.org/abs/2504.13181",
+  "scope": "§3–5",
+  "claims": [],
+  "boundary": "只核所列章节或摘要，未复现实验；新卡均为bibliographic_card；原始正式版不可达时不引定量结果。",
+  "field_checks": [
+    {
+      "checked_on": "2026-10-04",
+      "purpose": "按方向补充问题链与阅读优先级；原有奠基论文保留",
+      "boundary": "只核所列章节或摘要，未复现实验；新卡均为bibliographic_card；原始正式版不可达时不引定量结果。",
+      "field_page": "multimodal/fields/alignment/README.md",
+      "source": {
+        "resource_id": "arxiv:2504.13181",
+        "version": "v2",
+        "selected_sections": "§3–5",
+        "official_url": "https://arxiv.org/abs/2504.13181"
+      }
+    }
+  ],
+  "review_verification_2026_10_04": {
+    "sources": [
+      "https://arxiv.org/html/2504.13181v2"
+    ],
+    "scope": "首页与摘要；单位核对。",
+    "verified_facts": [
+      "单位包括 Meta FAIR、Meta Reality Labs、UT Austin、MBZUAI、Fudan University。"
+    ],
+    "checked_on": "2026-10-04",
+    "reading_depth": "selected_sections_checked_not_full_read",
+    "independently_reproduced": false
+  }
+}

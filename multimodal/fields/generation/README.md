@@ -1,6 +1,6 @@
 # 视觉生成
 
-> 状态：领域入门页 · v2
+> 状态：领域入门页 · v2 · 依据 [synthesis.csv](synthesis.csv)（20 篇）
 >
 > 速览：
 > - 视觉生成要从随机噪声（加上文字、类别等条件）造出一张从没存在过、看起来却真实的图或一段视频。主流做法分三大家族：GAN（生成器与判别器对抗）、扩散与流匹配（学会一步步去噪）、自回归（把图切成 token，像写字一样逐个写出来）。
@@ -69,10 +69,10 @@
 产品报告里的写字、编辑和偏好优化之外，基线还有两处基本选择仍在变化：模型预测瞬时变化还是整个区间的变化，以及扩散究竟在哪一种潜空间里进行。以下三篇接在流匹配与 LDM/DiT 后阅读。
 
 1. **[MeanFlow](../../papers/arxiv-2505.13447/README.md)，必读。** Flow Matching 学瞬时速度，再由采样器做多步积分；MeanFlow 改学区间平均速度，利用它与瞬时速度的恒等式训练，目标就是一次跨完整区间。它改变的是预测目标，和先训多步教师再蒸馏成少步模型是两种路线。
-2. **[RAE](../../papers/arxiv-2510.11690/README.md)，必读。** LDM 的潜空间为重建而学；表示自编码器 RAE 冻结已经学到语义的 DINO、SigLIP、MAE 等编码器，只训练对应解码器，再让 DiT 在这些高维特征里生成。新难点变成高维潜空间的噪声尺度与网络容量，而不只是压缩率。
+2. **[RAE](../../papers/arxiv-2510.11690/README.md)，必读。** LDM 的潜空间为重建而学；表示自编码器 RAE 冻结已经学到视觉特征的编码器：DINOv2（用图像不同视图之间的自蒸馏学习）、SigLIP 2（以图文匹配学习语义）或 MAE（遮住图块、从其余图块重建像素），只训练对应解码器，再让 DiT 在这些高维特征里生成。新难点变成高维潜空间的噪声尺度与网络容量，而不只是压缩率。
 3. **[Scaling T2I RAE](../../papers/arxiv-2601.16208/README.md)，选读。** 原 RAE 主要在 ImageNet 类条件生成上验证，后继把解码器与扩散模型扩到自由文本生成。结果保留维度相关噪声调度，却重新检验宽扩散头等补丁：在更大规模下，部分复杂设计收益减弱。
 
-`[判断]` 这两条线让“潜空间 + Transformer + 流匹配”从固定配方重新变成可检验的选择：一步方法检验目标是否直接适合部署，RAE 检验用于理解的特征是否也适合生成。它们与公司报告的文字、编辑、强化学习改进是不同层面的增量。
+`[判断]` 这两条线让"潜空间 + Transformer + 流匹配"从固定配方重新变成可检验的选择：一步方法检验目标是否直接适合部署，RAE 检验用于理解的特征是否也适合生成。它们与公司报告的文字、编辑、强化学习改进是不同层面的增量。
 
 ## 技术地基
 
@@ -132,11 +132,12 @@ benchmark 的替换就是这个领域目标的迁移：
 
 **方法后继的边界**
 
-- MeanFlow 的一步生成主要在 ImageNet/CIFAR 类条件图像上验证，不把一步网络调用解释为任意文本视频任务均可一步完成。
-- RAE 的冻结编码器与可训练解码器见论文方法部分；Scaling T2I RAE 的主对照是 SigLIP 2 RAE 与 FLUX VAE，同token预算包含不同输入分辨率，不能据此推出所有 VAE 被替代。
+- MeanFlow 的 ImageNet 256×256 实验是类条件生成，CIFAR-10 实验是无条件生成（[NeurIPS 2025 正式版 §5.2、Table 2–3](https://papers.nips.cc/paper_files/paper/2025/file/6d13e085b79d454da5910e4ca82a3d9d-Paper-Conference.pdf)）；这些图像实验不支持任意文本或视频任务均可一步完成的推论。
+- RAE 的冻结编码器与可训练解码器见论文方法部分；Scaling T2I RAE 的主对照是 SigLIP 2 RAE 与 FLUX VAE（FLUX 文生图模型使用的变分自编码器，把像素压缩为生成用潜变量），同 token 预算包含不同输入分辨率，不能据此推出所有 VAE 被替代。
 
 **判断的支撑论文与反例**（各行见 [synthesis.csv](synthesis.csv)）
 
+- "一步预测目标与语义潜空间是两个可检验的选择"：MeanFlow §4.1 的平均速度恒等式及正式版 §5.2；RAE §3–4 的冻结表征编码器、高维噪声和网络设计；Scaling T2I RAE §3–4 的规模化对照。边界：MeanFlow 只验证了指定图像设置；RAE 原作主要研究 ImageNet；Scaling T2I RAE 仍用多步采样，且其 Table 2 中 FLUX VAE 的重建优于所测 RAE。因此这些证据支持分开比较目标与潜空间，不支持一种配方全面取代另一种。
 - "三个家族今天的分工"：支撑——SD3、Veo 3、Wan 等用扩散或流匹配生成连续信号；Genie 2 是"自回归的潜空间扩散模型"，逐帧生成（官方博客"Diffusion world model"一节）；LDM Sec.3.1、Seedance 1.0 Sec.2.1 与 Sec.5.1、ADD 都把判别器用作损失项。反例：VAR 在 ImageNet 类条件生成上用纯自回归报告了最好的 FID；VideoPoet 用纯自回归生成视频。所以这是 2024 年前后大系统的常见组合，不是唯一可行的组合。
 - "判别器以损失项留在自编码器里"（速览第 4 条与"三个家族的分工"）的反例：Qwen-Image Sec.2.3 报告重建变好后判别器给不出有效指导，只留重建与感知损失；Qwen-Image-2.0 Sec.3.1 认为大规模 VAE 训练中对抗损失基本多余，去掉以求稳定，改加语义对齐损失。边界：两例都出自 Qwen 团队；Seedream 4.0 的蒸馏仍用混合判别器与基于扩散的判别器（Sec.2.3），LongCat-Image 把 AIGC 检测器当奖励模型，"挑错"的判别信号换了位置继续存在。原判断保留，它描述的是 2024 年前后的常见做法。
 - "语言模型负责理解、扩散负责画"：支撑——Qwen-Image Sec.2.2（选 Qwen2.5-VL 的三条理由）、Qwen-Image-2.0 Sec.1（近期框架普遍以视觉语言模型作条件编码器）、HunyuanImage 3.0 Sec.3.1（同一 MoE 语言模型里自回归文字、扩散图像）、GPT-4o 系统卡 Sec.2.1（原生嵌入的自回归模型）。边界：GPT-4o 与 Gemini 图像模型的结构没有公开，"在同一网络中"只能按官方措辞理解；ERNIE-Image 只用 30 亿参数的 Ministral-3 作文本编码器，报告称足以支撑长提示。
@@ -154,11 +155,6 @@ benchmark 的替换就是这个领域目标的迁移：
 - 视频与世界模型方向的新卡：[Imagen Video](../../papers/arxiv-2210.02303/README.md)、[Sora 技术报告](../../papers/sora-tech-report/README.md)、[Veo 3](../../papers/veo3-tech-report/README.md)、[HunyuanVideo](../../papers/arxiv-2412.03603/README.md)、[Wan](../../papers/arxiv-2503.20314/README.md)、[Seedance 1.0](../../papers/arxiv-2506.09113/README.md)、[Seedance 2.0](../../papers/arxiv-2604.14148/README.md)、[Kling-Omni](../../papers/arxiv-2512.16776/README.md)、[Genie](../../papers/arxiv-2402.15391/README.md)、[Cosmos](../../papers/arxiv-2501.03575/README.md)，论证见观点页。
 - HunyuanImage 3.0 延续了[视觉语言模型方向](../vlm/README.md)的早融合路线（[Chameleon](../../papers/arxiv-2405.09818/README.md)），把离散图像 token 换成连续潜变量加扩散。
 
-**出处（本库没有单篇目录的论文）**
-
-- DALL·E：https://arxiv.org/abs/2102.12092 ；Parti：https://arxiv.org/abs/2206.10789 ；Flow Matching：https://arxiv.org/abs/2210.02747 ；SD3：https://arxiv.org/abs/2403.03206 ；VAR：https://arxiv.org/abs/2404.02905 ；ADD：https://arxiv.org/abs/2311.17042
-- Seedream 3.0：https://arxiv.org/abs/2504.11346 ；ERNIE-Image：https://arxiv.org/abs/2605.25347 ；ChatGPT Images 2.0 系统卡（2026-04-21）：https://deploymentsafety.openai.com/chatgpt-images-2-0 ；Gemini 3 Pro Image 模型卡（2025-11）：https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Pro-Image-Model-Card.pdf
-- GAN：https://arxiv.org/abs/1406.2661 ；DCGAN：https://arxiv.org/abs/1511.06434 ；LDM：https://arxiv.org/abs/2112.10752 ；DiT：https://arxiv.org/abs/2212.09748 ；Imagen：https://arxiv.org/abs/2205.11487 ；DALL·E 2：https://arxiv.org/abs/2204.06125
 
 **未核实 / 待验证**
 
@@ -169,3 +165,9 @@ benchmark 的替换就是这个领域目标的迁移：
 - GLIDE、DDIM、无分类器引导原文（Ho 与 Salimans）、DALL·E 3 技术报告本轮没有打开，本页只引用其他论文对它们的描述（DALL·E 3 的 GenEval 0.67 来自 SD3 Table 5）。
 - VAR"超过 DiT"是 VAR 作者在 ImageNet 类条件生成上的自述，本页没有找到第三方在同一设置下的复现。
 - GPT-4o 图像生成、ChatGPT Images 2.0（GPT Image 2）、Gemini 3 Pro Image、Gemini 3.1 Flash Image、Seedream 4.0/4.5 的结构、参数与数据均未公开；Qwen-Image-2.0 未写参数量。Seedream 5.0 Lite、Gemini 3.1 Flash-Lite Image（2026 年 6 月）、FLUX.2、Z-Image、GLM-Image 的官方材料没有打开；竞技场榜单只按各报告的引用。
+
+**参考文献**
+
+- DALL·E：https://arxiv.org/abs/2102.12092 ；Parti：https://arxiv.org/abs/2206.10789 ；Flow Matching：https://arxiv.org/abs/2210.02747 ；SD3：https://arxiv.org/abs/2403.03206 ；VAR：https://arxiv.org/abs/2404.02905 ；ADD：https://arxiv.org/abs/2311.17042
+- Seedream 3.0：https://arxiv.org/abs/2504.11346 ；ERNIE-Image：https://arxiv.org/abs/2605.25347 ；ChatGPT Images 2.0 系统卡（2026-04-21）：https://deploymentsafety.openai.com/chatgpt-images-2-0 ；Gemini 3 Pro Image 模型卡（2025-11）：https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Pro-Image-Model-Card.pdf
+- GAN：https://arxiv.org/abs/1406.2661 ；DCGAN：https://arxiv.org/abs/1511.06434 ；LDM：https://arxiv.org/abs/2112.10752 ；DiT：https://arxiv.org/abs/2212.09748 ；Imagen：https://arxiv.org/abs/2205.11487 ；DALL·E 2：https://arxiv.org/abs/2204.06125

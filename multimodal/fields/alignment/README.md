@@ -1,6 +1,6 @@
 # 图文对齐
 
-> 状态：领域入门页 · v2
+> 状态：领域入门页 · v2 · 依据 [synthesis.csv](synthesis.csv)（18 篇）
 >
 > 速览：
 > - 图文对齐训练一座图像编码器和一座文本编码器，把图和句子放进同一个向量空间，配对的图文靠得近。训练好之后，一句话就能检索图片，也能当场把类别名变成分类器（零样本分类）；它的图像编码器后来成了视觉语言模型（VLM）和文生图的视觉入口。
@@ -78,10 +78,10 @@
 CLIP 的整体图文匹配接口留下了三件事：数据覆盖谁、局部特征是否被输出层掩盖、查询是否只能是一段短文字。接着读以下三篇，各自改变一个问题：
 
 - **[Meta CLIP 2](../../papers/arxiv-2507.22062/README.md)，必读。** 旧 MetaCLIP 用英文元数据控制训练分布；后继把匹配和平衡扩到多语言，同时补足英语样本曝光与模型容量。关键证据是不同容量下结果不同：数据覆盖变广，并不自动保证原语言能力不掉。
-- **[Perception Encoder](../../papers/arxiv-2504.13181/README.md)，必读。** SigLIP 2 用更多训练目标补局部信息，PE 则先追问“信息是不是已在中间层，只是最后一层不适合读”。它强化对比训练，再分别做语言与空间对齐，使“读哪一层、怎样读出”成为单独的设计变量。
+- **[Perception Encoder](../../papers/arxiv-2504.13181/README.md)，必读。** SigLIP 2 用更多训练目标补局部信息，PE 则先追问"信息是不是已在中间层，只是最后一层不适合读"。它强化对比训练，再分别做语言与空间对齐，使"读哪一层、怎样读出"成为单独的设计变量。
 - **[Qwen3-VL-Embedding / Reranker](../../papers/arxiv-2601.04720/README.md)，选读。** VLM 反过来充当检索编码器：查询与文档都可混合文字、图片和视频，先独立编码做大库召回，再联合编码逐对重排。它继承双塔的缓存优势，同时把精细匹配的额外计算留给少数候选。
 
-`[判断]` 对齐方向的推进不能只写成“更大的 CLIP”：全球覆盖依赖数据与容量，局部迁移依赖读出，而复杂检索重新引入查询–候选交互。三个问题的评测也不同，应分别看分语言结果、冻结局部任务与检索/重排协议。
+`[判断]` 对齐方向的推进不能只写成"更大的 CLIP"：全球覆盖依赖数据与容量，局部迁移依赖读出，而复杂检索重新引入查询–候选交互。三个问题的评测也不同，应分别看分语言结果、冻结局部任务与检索/重排协议。
 
 ## 技术地基
 
@@ -165,15 +165,16 @@ CLIP 的整体图文匹配接口留下了三件事：数据覆盖谁、局部特
 
 **后继节点的边界**
 
-- Meta CLIP 2 的语言收益依赖容量；正式版 §3.4、Table 1 与 Appendix G 保留了较小模型的反例。PE 的“纯对比预训练”与后续语言/空间对齐分开理解，PEspatial 还使用额外空间教师。
+- Meta CLIP 2 的语言收益依赖容量；正式版 §3.4、Table 1 与 Appendix G 保留了较小模型的反例。PE 的"纯对比预训练"与后续语言/空间对齐分开理解，PEspatial 还使用额外空间教师。
 - Qwen3-VL-Embedding 的训练包含相关性监督与排序器蒸馏，不能拿它的检索成绩直接论证 CLIP 零样本分类被替代；重排也要计入逐对推理成本。
 
 **判断的支撑论文与反例**（各行见 [synthesis.csv](synthesis.csv)）
 
+- "全球覆盖、内部读出与混合模态检索是不同改进轴"：Meta CLIP 2 正式版 §3.4、Table 1 与 Appendix G 比较语言曝光与容量；Perception Encoder §3–5 比较中间层和两类对齐；Qwen3-VL-Embedding §2、§4–6 区分独立召回、逐对重排和监督训练。边界：Meta CLIP 2 的小模型仍有多语言代价；PE 的空间对齐引入额外教师；检索监督与零样本分类不是同一协议。
 - "瓶颈依次是规模、分布、目标"：ALIGN §1 与 Table 10（规模弥补噪声）；缩放定律论文 Discussion（分布决定缩放曲线）；Fang 等 2022（稳健性来自训练分布）；ARO §3、Winoground Table 3、Eyes Wide Shut §3（目标学不到组合与细节）。反例：CLIP §6 早在 2021 年就把计数、细粒度列为局限，并建议联合生成目标，"目标"这一瓶颈并非事后才被意识到，只是事后才被系统测量。
 - Google Zürich 的效率偏好：LiT Abstract 与 §5.2、SigLIP Abstract 与 Table 1、SigLIP 2 §1（向后兼容、四种尺寸）；作者列表中 Zhai、Beyer、Mustafa 三篇均署名，Kolesnikov 署名前两篇。边界：SigLIP 2 的训练流程比 SigLIP 复杂得多，效率偏好在第三篇中让位给能力。
 - LAION 与华盛顿大学一系的开放偏好：LAION-5B §1、缩放定律 Abstract、DataComp §1 与 §6；三篇作者重叠（Schmidt、Jitsev、Cherti、Beaumont、Wortsman）。边界：DataComp 的作者来自十余个单位，团队边界较松。
-- 元数据筛选与模型打分筛选的分歧：CLIP §2.2；MetaCLIP §1、§2、§3.4；DataComp 的数据筛选比较。CLIP/WIT 与 MetaCLIP 同属元数据匹配一侧，DataComp/LAION 使用模型打分。边界：这里只比较选数方法，不能据此推断公司整体偏好。
+- 元数据筛选与模型打分筛选的分歧：CLIP §2.2；MetaCLIP §1、§2、§3.4；DataComp 的数据筛选比较。CLIP/WIT 与 MetaCLIP 同属元数据匹配一侧，DataComp/LAION 使用模型打分。边界：这里只比较选数方法，不能据此推断公司整体偏好；OpenAI 在本方向只有 CLIP 一篇，按两篇以上的标准只能称为一次选择。
 - "评测迁移因旧指标掩盖失败"：ARO §3.1（检索掩盖组合缺陷）、SugarCrepe §1（组合考题被盲模型刷分）、Eyes Wide Shut §1（VLM 的视觉缺陷来自 CLIP）。
 
 **与其他论文的关联**
@@ -184,12 +185,6 @@ CLIP 的整体图文匹配接口留下了三件事：数据覆盖谁、局部特
 - SigLIP 2 的自蒸馏与遮蔽预测来自 DINO、iBOT 一系（[DINO 精读](../../papers/dino/README.md)），EVA-CLIP 的初始化来自遮蔽图像建模（[MAE 精读](../../papers/mae/README.md)是同类方法）：对比学习与视觉自监督在 2023 年后合流。
 - DataComp、缩放定律与 LAION 的"数据决定缩放曲线"，与[观点页：深度学习的规模化](../../../perspectives/scaling.md)中数据质量的讨论相呼应。
 
-**出处（本库没有单篇目录的论文与材料）**
-
-- Fang 等 2022，Data Determines Distributional Robustness in CLIP：https://arxiv.org/abs/2205.01397
-- Goh 等 2021，Multimodal Neurons in Artificial Neural Networks（Distill，排版攻击一节）：https://distill.pub/2021/multimodal-neurons/
-- Minderer 等 2021，Revisiting the Calibration of Modern Neural Networks：https://arxiv.org/abs/2106.07998 ；LeVine 等 2023，Enabling Calibration in the Zero-Shot Inference of Large Vision-Language Models：https://arxiv.org/abs/2303.12748
-- LAION 官方博客，Re-LAION-5B（2024-08-30）：https://laion.ai/blog/relaion-5b/
 
 **未核实 / 待验证**
 
@@ -198,3 +193,10 @@ CLIP 的整体图文匹配接口留下了三件事：数据覆盖谁、局部特
 - ALIGN、CoCa 是否公开权重，论文未声明，没有另查；LiT 的公开模型见其脚注中的仓库链接，未逐一核对发布了哪些尺寸。
 - 各论文的正式发表会议：ALIGN（ICML 2021）、ARO（ICLR 2023）、DataComp（NeurIPS 2023 数据集与 benchmark 赛道）取自 PDF 首页，其余只核对了 arXiv 版本。
 - Stanford Internet Observatory 2023 年 12 月的报告本身没有打开，相关事实只取自 LAION 官方博客。
+
+**参考文献**
+
+- Fang 等 2022，Data Determines Distributional Robustness in CLIP：https://arxiv.org/abs/2205.01397
+- Goh 等 2021，Multimodal Neurons in Artificial Neural Networks（Distill，排版攻击一节）：https://distill.pub/2021/multimodal-neurons/
+- Minderer 等 2021，Revisiting the Calibration of Modern Neural Networks：https://arxiv.org/abs/2106.07998 ；LeVine 等 2023，Enabling Calibration in the Zero-Shot Inference of Large Vision-Language Models：https://arxiv.org/abs/2303.12748
+- LAION 官方博客，Re-LAION-5B（2024-08-30）：https://laion.ai/blog/relaion-5b/

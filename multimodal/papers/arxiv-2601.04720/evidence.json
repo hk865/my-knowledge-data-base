@@ -3,7 +3,7 @@
   "checked_on": "2026-10-04",
   "read_version": "v2",
   "source_url": "https://arxiv.org/html/2601.04720v2",
-  "scope": "arXiv v2摘要、§2架构、§4–5训练与评估；官方实现仓库",
+  "scope": "arXiv v2摘要、§2架构、§4–5训练；§6.1评估；官方实现仓库",
   "claims": [
     {
       "claim": "独立编码的embedding与联合编码的reranker形成两阶段检索",
@@ -14,5 +14,32 @@
       "location": "§4–5"
     }
   ],
-  "boundary": "重排需要逐对计算；不把任务监督的检索结果当作CLIP零样本分类对照。摘要榜单日期存在2025/2026笔误，未复述排名。"
+  "boundary": "重排需要逐对计算；不把任务监督的检索结果当作CLIP零样本分类对照。摘要榜单日期存在2025/2026笔误，未复述排名。",
+  "field_checks": [
+    {
+      "checked_on": "2026-10-04",
+      "purpose": "按方向补充问题链与阅读优先级；原有奠基论文保留",
+      "boundary": "只核所列章节或摘要，未复现实验；新卡均为bibliographic_card；原始正式版不可达时不引定量结果。",
+      "field_page": "multimodal/fields/alignment/README.md",
+      "source": {
+        "resource_id": "arxiv:2601.04720",
+        "version": "v2",
+        "selected_sections": "§2、4–5",
+        "official_url": "https://arxiv.org/abs/2601.04720"
+      }
+    }
+  ],
+  "review_verification_2026_10_04": {
+    "sources": [
+      "https://arxiv.org/html/2601.04720v2"
+    ],
+    "scope": "首页、§5 训练目标、§6.1 Table 2。",
+    "verified_facts": [
+      "单位为 Alibaba Group, Tongyi Lab。",
+      "评估在 §6，§5 为训练目标。"
+    ],
+    "checked_on": "2026-10-04",
+    "reading_depth": "selected_sections_checked_not_full_read",
+    "independently_reproduced": false
+  }
 }

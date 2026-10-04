@@ -1,0 +1,17 @@
+{
+  "resource_id": "arxiv:2502.13923",
+  "checked_on": "2026-10-04",
+  "claims": [],
+  "review_verification_2026_10_04": {
+    "sources": [
+      "https://arxiv.org/html/2502.13923v1"
+    ],
+    "scope": "§2.2.1 Pre-Training Data 与 Video Data 段。",
+    "verified_facts": [
+      "Video Data 段描述动态帧率与长视频描述，没有单列视频训练规模与占比。"
+    ],
+    "checked_on": "2026-10-04",
+    "reading_depth": "selected_sections_checked_not_full_read",
+    "independently_reproduced": false
+  }
+}

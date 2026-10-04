@@ -1,0 +1,35 @@
+{
+  "resource_id": "arxiv:2511.21631",
+  "checked_on": "2026-10-04",
+  "read_version": "v2",
+  "source_url": "https://arxiv.org/abs/2511.21631",
+  "scope": "§2.1–2.3",
+  "claims": [],
+  "boundary": "只核所列章节或摘要，未复现实验；新卡均为bibliographic_card；原始正式版不可达时不引定量结果。",
+  "field_checks": [
+    {
+      "checked_on": "2026-10-04",
+      "purpose": "按方向补充问题链与阅读优先级；原有奠基论文保留",
+      "boundary": "只核所列章节或摘要，未复现实验；新卡均为bibliographic_card；原始正式版不可达时不引定量结果。",
+      "field_page": "multimodal/fields/video-temporal/README.md",
+      "source": {
+        "resource_id": "arxiv:2511.21631",
+        "version": "v2",
+        "selected_sections": "§2.1–2.3",
+        "official_url": "https://arxiv.org/abs/2511.21631"
+      }
+    }
+  ],
+  "review_verification_2026_10_04": {
+    "sources": [
+      "https://arxiv.org/html/2511.21631v2"
+    ],
+    "scope": "摘要、§1、首页发布链接；视频评估表未系统复核。",
+    "verified_facts": [
+      "交错位置编码与文字时间戳为不同的结构改进。"
+    ],
+    "checked_on": "2026-10-04",
+    "reading_depth": "selected_sections_checked_not_full_read",
+    "independently_reproduced": false
+  }
+}

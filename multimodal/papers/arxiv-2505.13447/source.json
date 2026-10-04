@@ -18,7 +18,7 @@
   "version_status": "selected_sections_checked",
   "content_kind": "bibliographic_card",
   "reading_depth": "selected_sections_checked_not_full_read",
-  "reading_boundary": "摘要、§1、§3平均速度恒等式、§4.1、§5.2实验；通过协作核验；不是独立全文精读，未复现。",
+  "reading_boundary": "摘要、§1、§3 流匹配背景、§4.1 平均速度恒等式、§5.2 实验；通过协作核验；不是独立全文精读，未复现。",
   "reading_path": null,
   "user_reading_status": "not_asserted",
   "independently_reproduced": false,
@@ -42,11 +42,14 @@
   ],
   "verification_2026_10_04": {
     "version_date": "2025-05-19",
-    "reading_scope": "摘要、§1、§3平均速度恒等式、§4.1、§5.2实验；通过协作核验",
+    "reading_scope": "摘要、§1、§3 流匹配背景、§4.1 平均速度恒等式、§5.2 实验；通过协作核验",
     "verification_sources": [
       "https://arxiv.org/abs/2505.13447",
       "https://arxiv.org/html/2505.13447v1"
     ],
-    "evidence_boundary": "主要证据为ImageNet类条件生成与CIFAR；一步网络调用不是整套部署零成本，不外推至复杂文本、视频或机器人。"
+    "evidence_boundary": "主要证据为 ImageNet 256×256 类条件生成与 CIFAR-10 无条件生成；一步网络调用不是整套部署零成本，不外推至复杂文本、视频或机器人。",
+    "formal_publication_url": "https://papers.nips.cc/paper_files/paper/2025/file/6d13e085b79d454da5910e4ca82a3d9d-Paper-Conference.pdf",
+    "formal_fulltext_status": "selected_sections_checked",
+    "formal_reading_scope": "§5.2、Table 2–3 的类条件与无条件实验口径；未通读正式版。"
   }
 }

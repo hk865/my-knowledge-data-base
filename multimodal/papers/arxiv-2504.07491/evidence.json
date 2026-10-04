@@ -1,0 +1,18 @@
+{
+  "resource_id": "arxiv:2504.07491",
+  "checked_on": "2026-10-04",
+  "claims": [],
+  "review_verification_2026_10_04": {
+    "sources": [
+      "https://arxiv.org/html/2504.07491v1"
+    ],
+    "scope": "§2.1 原生分辨率、长思维链相关段、§5 局限与未来工作。",
+    "verified_facts": [
+      "Kimi-VL 包含原生分辨率、MoE 与长思维链 RL。",
+      "§5 明确容量及注意力参数限制，并提出扩规模计划；没有证明 K2.5/K3 每项设计的因果来源。"
+    ],
+    "checked_on": "2026-10-04",
+    "reading_depth": "selected_sections_checked_not_full_read",
+    "independently_reproduced": false
+  }
+}

@@ -24,19 +24,19 @@
 - [What Do Latent Action Models Actually Learn?](papers/arxiv-2506.15691/README.md) · 2025 · 文献卡，暂无独立精读
 - [LARY: A Latent Action Representation Yielding Benchmark for Generalizable Vision-to-Action Alignment](papers/arxiv-2604.11689/README.md) · 2026 · 文献卡，暂无独立精读
 - [Zero-WAM: In-Context World-Action Modeling from Human Videos for Open-Ended Task Generalization](../robotics-embodied/papers/zero-wam/README.md) · 2026 · 选定章节讲解
-- [PIN-WM: Learning Physics-INformed World Models for Non-Prehensile Manipulation](papers/doi-10.15607-rss.2025.xxi.153/README.md) · 年份见原文 · 文献卡，暂无独立精读
-- [World Models for Robotic Manipulation: A Survey](papers/doi-10.1002-smb2.70053/README.md) · 年份见原文 · 文献卡，暂无独立精读
+- [PIN-WM: Learning Physics-INformed World Models for Non-Prehensile Manipulation](papers/doi-10.15607-rss.2025.xxi.153/README.md) · 2025 · 文献卡，暂无独立精读
+- [World Models for Robotic Manipulation: A Survey](papers/doi-10.1002-smb2.70053/README.md) · 2026 · 文献卡，暂无独立精读
 - [Mastering Diverse Domains through World Models](papers/dreamerv3/README.md) · 2023 · 逐步教学版
 - [Visual Instruction Tuning](papers/llava/README.md) · 2023 · 技术精读
 - [Denoising Diffusion Probabilistic Models](papers/ddpm/README.md) · 2020 · 技术精读
 - [Video Diffusion Models](papers/video-diffusion/README.md) · 2022 · 技术精读
 - [ORB-SLAM3: An Accurate Open-Source Library for Visual, Visual-Inertial and Multi-Map SLAM](../robotics-embodied/papers/orb-slam3/README.md) · 2020 · 技术精读
-- [Dynamic Locomotion in the MIT Cheetah 3 Through Convex Model-Predictive Control](../robotics-embodied/papers/convex-mpc/README.md) · 年份见原文 · 技术精读
+- [Dynamic Locomotion in the MIT Cheetah 3 Through Convex Model-Predictive Control](../robotics-embodied/papers/convex-mpc/README.md) · 2018 · 技术精读
 - [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](papers/vit/README.md) · 2020 · 逐步教学版
 - [Masked Autoencoders Are Scalable Vision Learners](papers/mae/README.md) · 2021 · 技术精读
 - [Learning Transferable Visual Models From Natural Language Supervision](papers/clip/README.md) · 2021 · 逐步教学版
 - [Emerging Properties in Self-Supervised Vision Transformers](papers/dino/README.md) · 2021 · 技术精读
-- [Reconstruction or Semantics? What Makes a Latent Space Useful for Robotic World Models](papers/arxiv-2605.06388/README.md) · 年份见原文 · 文献卡，暂无独立精读
+- [Reconstruction or Semantics? What Makes a Latent Space Useful for Robotic World Models](papers/arxiv-2605.06388/README.md) · 2026 · 文献卡，暂无独立精读
 - [Imagen Video: High Definition Video Generation with Diffusion Models](papers/arxiv-2210.02303/README.md) · 2022 · 文献卡，暂无独立精读
 - [Genie: Generative Interactive Environments](papers/arxiv-2402.15391/README.md) · 2024 · 文献卡，暂无独立精读
 - [HunyuanVideo: A Systematic Framework For Large Video Generative Models](papers/arxiv-2412.03603/README.md) · 2024 · 文献卡，暂无独立精读
@@ -103,8 +103,8 @@
 - [Kimi-VL Technical Report](papers/arxiv-2504.07491/README.md) · 2025 · 文献卡，暂无独立精读
 - [InternVL3: Exploring Advanced Training and Test-Time Recipes for Open-Source Multimodal Models](papers/arxiv-2504.10479/README.md) · 2025 · 文献卡，暂无独立精读
 - [Qwen3-VL Technical Report](papers/arxiv-2511.21631/README.md) · 2025 · 文献卡，暂无独立精读
-- [Genie 2: A large-scale foundation world model](papers/genie-2-blog/README.md) · 2024 · 文献卡，暂无独立精读
-- [Genie 3: A new frontier for world models](papers/genie-3-blog/README.md) · 2025 · 文献卡，暂无独立精读
+- [Genie 2: A large-scale foundation world model](papers/genie-2-blog/README.md) · 2024 · 资料卡，暂无独立精读
+- [Genie 3: A new frontier for world models](papers/genie-3-blog/README.md) · 2025 · 资料卡，暂无独立精读
 - [Histograms of Oriented Gradients for Human Detection](papers/hog/README.md) · 2005 · 文献卡，暂无独立精读
 - [ImageNet Classification with Deep Convolutional Neural Networks](papers/alexnet/README.md) · 2012 · 文献卡，暂无独立精读
 - [Deep Residual Learning for Image Recognition](papers/arxiv-1512.03385/README.md) · 2015 · 文献卡，暂无独立精读

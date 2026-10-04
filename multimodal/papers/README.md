@@ -31,9 +31,9 @@
 - [UniVLA: Learning to Act Anywhere with Task-centric Latent Actions](arxiv-2505.06111/README.md) · 2025 · 文献卡，暂无独立精读
 - [What Do Latent Action Models Actually Learn?](arxiv-2506.15691/README.md) · 2025 · 文献卡，暂无独立精读
 - [LARY: A Latent Action Representation Yielding Benchmark for Generalizable Vision-to-Action Alignment](arxiv-2604.11689/README.md) · 2026 · 文献卡，暂无独立精读
-- [PIN-WM: Learning Physics-INformed World Models for Non-Prehensile Manipulation](doi-10.15607-rss.2025.xxi.153/README.md) · 年份见原文 · 文献卡，暂无独立精读
-- [World Models for Robotic Manipulation: A Survey](doi-10.1002-smb2.70053/README.md) · 年份见原文 · 文献卡，暂无独立精读
-- [Reconstruction or Semantics? What Makes a Latent Space Useful for Robotic World Models](arxiv-2605.06388/README.md) · 年份见原文 · 文献卡，暂无独立精读
+- [PIN-WM: Learning Physics-INformed World Models for Non-Prehensile Manipulation](doi-10.15607-rss.2025.xxi.153/README.md) · 2025 · 文献卡，暂无独立精读
+- [World Models for Robotic Manipulation: A Survey](doi-10.1002-smb2.70053/README.md) · 2026 · 文献卡，暂无独立精读
+- [Reconstruction or Semantics? What Makes a Latent Space Useful for Robotic World Models](arxiv-2605.06388/README.md) · 2026 · 文献卡，暂无独立精读
 - [Imagen Video: High Definition Video Generation with Diffusion Models](arxiv-2210.02303/README.md) · 2022 · 文献卡，暂无独立精读
 - [Genie: Generative Interactive Environments](arxiv-2402.15391/README.md) · 2024 · 文献卡，暂无独立精读
 - [HunyuanVideo: A Systematic Framework For Large Video Generative Models](arxiv-2412.03603/README.md) · 2024 · 文献卡，暂无独立精读
@@ -100,8 +100,8 @@
 - [Kimi-VL Technical Report](arxiv-2504.07491/README.md) · 2025 · 文献卡，暂无独立精读
 - [InternVL3: Exploring Advanced Training and Test-Time Recipes for Open-Source Multimodal Models](arxiv-2504.10479/README.md) · 2025 · 文献卡，暂无独立精读
 - [Qwen3-VL Technical Report](arxiv-2511.21631/README.md) · 2025 · 文献卡，暂无独立精读
-- [Genie 2: A large-scale foundation world model](genie-2-blog/README.md) · 2024 · 文献卡，暂无独立精读
-- [Genie 3: A new frontier for world models](genie-3-blog/README.md) · 2025 · 文献卡，暂无独立精读
+- [Genie 2: A large-scale foundation world model](genie-2-blog/README.md) · 2024 · 资料卡，暂无独立精读
+- [Genie 3: A new frontier for world models](genie-3-blog/README.md) · 2025 · 资料卡，暂无独立精读
 - [Histograms of Oriented Gradients for Human Detection](hog/README.md) · 2005 · 文献卡，暂无独立精读
 - [ImageNet Classification with Deep Convolutional Neural Networks](alexnet/README.md) · 2012 · 文献卡，暂无独立精读
 - [Deep Residual Learning for Image Recognition](arxiv-1512.03385/README.md) · 2015 · 文献卡，暂无独立精读

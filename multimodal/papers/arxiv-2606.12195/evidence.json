@@ -14,5 +14,32 @@
       "location": "§5.3、§7"
     }
   ],
-  "boundary": "视频agent部分主要是定性案例；作者明确未主张总体开放模型SOTA，GQA转换路线不直接覆盖原生MLA/线性注意力。"
+  "boundary": "视频agent部分主要是定性案例；作者明确未主张总体开放模型SOTA，GQA转换路线不直接覆盖原生MLA/线性注意力。",
+  "field_checks": [
+    {
+      "checked_on": "2026-10-04",
+      "purpose": "按方向补充问题链与阅读优先级；原有奠基论文保留",
+      "boundary": "只核所列章节或摘要，未复现实验；新卡均为bibliographic_card；原始正式版不可达时不引定量结果。",
+      "field_page": "multimodal/fields/video-temporal/README.md",
+      "source": {
+        "resource_id": "arxiv:2606.12195",
+        "version": "v1",
+        "selected_sections": "§3、5.2–5.3、7",
+        "official_url": "https://arxiv.org/abs/2606.12195"
+      }
+    }
+  ],
+  "review_verification_2026_10_04": {
+    "sources": [
+      "https://arxiv.org/html/2606.12195v1"
+    ],
+    "scope": "首页、摘要、§7 局限。",
+    "verified_facts": [
+      "单位包括 Shanghai AI Laboratory、Shanghai Innovation Institute、Nanjing University。",
+      "完整多模态 agent 的评估仍受限；工具错误可能传播。"
+    ],
+    "checked_on": "2026-10-04",
+    "reading_depth": "selected_sections_checked_not_full_read",
+    "independently_reproduced": false
+  }
 }

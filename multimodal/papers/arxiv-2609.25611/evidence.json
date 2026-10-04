@@ -22,5 +22,19 @@
       "location": "§6.1.2"
     }
   ],
-  "boundary": "区分默认推理与带代码解释器的评测，区分模型与外部执行框架；报告开放工具框架，不据此推断全部模型权重或训练数据开放。"
+  "boundary": "区分默认推理与带代码解释器的评测，区分模型与外部执行框架；报告开放工具框架，不据此推断全部模型权重或训练数据开放。",
+  "field_checks": [
+    {
+      "checked_on": "2026-10-04",
+      "purpose": "按方向补充问题链与阅读优先级；原有奠基论文保留",
+      "boundary": "只核所列章节或摘要，未复现实验；新卡均为bibliographic_card；原始正式版不可达时不引定量结果。",
+      "field_page": "multimodal/fields/vlm/README.md",
+      "source": {
+        "resource_id": "arxiv:2609.25611",
+        "version": "v1",
+        "selected_sections": "§2.2、3–4、5.1、6.1.2、7.3",
+        "official_url": "https://arxiv.org/abs/2609.25611"
+      }
+    }
+  ]
 }

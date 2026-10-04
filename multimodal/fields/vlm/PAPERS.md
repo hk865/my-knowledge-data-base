@@ -48,3 +48,9 @@
 - [Qwen3.5](../../../llm/papers/qwen3.5/README.md)：选读另一团队的早融合与混合注意力配方
 - [Kimi K3](../../../llm/papers/arxiv-2607.24653/README.md)：必读从零视觉塔与预训练视觉塔的稳定性对照
 - [Qwen3.8-Omni](../../papers/arxiv-2609.25611/README.md)：选读从音视频理解到工具闭环的接口变化
+
+## 检索、视频取证与世界模型的交叉接口
+
+- [Qwen3-VL-Embedding and Qwen3-VL-Reranker](../../papers/arxiv-2601.04720/README.md) · 2026 · 文献卡 · VLM 用于独立召回与逐对重排；主归属[图文对齐](../alignment/README.md)
+- [InternVideo3](../../papers/arxiv-2606.12195/README.md) · 2026 · 文献卡 · 长视频上下文、缓存压缩与多轮取证；主归属[视频与时序](../video-temporal/README.md)
+- [Cosmos 3](../../papers/arxiv-2606.02800/README.md) · 2026 · 文献卡 · VLM 推理流与视频、动作生成流连接；主归属[世界模型](../world-models/README.md)

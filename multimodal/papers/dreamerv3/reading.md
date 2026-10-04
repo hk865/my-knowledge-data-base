@@ -269,7 +269,7 @@ NoDenomMax 消融直接除以分位范围（加一个很小的数防止除零）
 
 ### 直接后继：从在线 RSSM 到离线可扩展视频动力学
 
-[Dreamer 4](../arxiv-2509.24527/README.md)（2025）保留“在模型内学习行为”，把动力学改成 Transformer 与连续视频 token，并用 shortcut forcing 兼顾少步生成和抗历史误差；其关键验证变为纯离线 Minecraft 数据训练。它适合接在本篇后读：先比较表示与动力学，再比较训练数据是否来自当前策略，最后比较控制结果。更广的统一视频–动作接口见 [Cosmos 3](../arxiv-2606.02800/README.md) 与[世界模型方向](../../fields/world-models/README.md)。
+[Dreamer 4](../arxiv-2509.24527/README.md)（2025）保留"在模型内学习行为"，把动力学改成 Transformer 与连续视频 token，并用 shortcut forcing 兼顾少步生成和抗历史误差；其关键验证变为纯离线 Minecraft 数据训练。它适合接在本篇后读：先比较表示与动力学，再比较训练数据是否来自当前策略，最后比较控制结果。更广的统一视频–动作接口见 [Cosmos 3](../arxiv-2606.02800/README.md) 与[世界模型方向](../../fields/world-models/README.md)。
 
 ## 批注
 

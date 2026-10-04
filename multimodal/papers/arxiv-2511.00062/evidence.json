@@ -18,5 +18,19 @@
       "location": "§6.2–6.3"
     }
   ],
-  "boundary": "奖励提升、人类偏好与特定任务的数据增强结果分别对应不同证据；不将其合并成通用物理仿真准确性。"
+  "boundary": "奖励提升、人类偏好与特定任务的数据增强结果分别对应不同证据；不将其合并成通用物理仿真准确性。",
+  "field_checks": [
+    {
+      "checked_on": "2026-10-04",
+      "purpose": "按方向补充问题链与阅读优先级；原有奠基论文保留",
+      "boundary": "只核所列章节或摘要，未复现实验；新卡均为bibliographic_card；原始正式版不可达时不引定量结果。",
+      "field_page": "multimodal/fields/world-models/README.md",
+      "source": {
+        "resource_id": "arxiv:2511.00062",
+        "version": "v2",
+        "selected_sections": "摘要、§4.2、6.2–6.3",
+        "official_url": "https://arxiv.org/abs/2511.00062"
+      }
+    }
+  ]
 }

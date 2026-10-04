@@ -1,0 +1,36 @@
+{
+  "resource_id": "arxiv:2603.14482",
+  "checked_on": "2026-10-04",
+  "read_version": "v3",
+  "source_url": "https://arxiv.org/abs/2603.14482",
+  "scope": "§1、方法与结论",
+  "claims": [],
+  "boundary": "只核所列章节或摘要，未复现实验；新卡均为bibliographic_card；原始正式版不可达时不引定量结果。",
+  "field_checks": [
+    {
+      "checked_on": "2026-10-04",
+      "purpose": "按方向补充问题链与阅读优先级；原有奠基论文保留",
+      "boundary": "只核所列章节或摘要，未复现实验；新卡均为bibliographic_card；原始正式版不可达时不引定量结果。",
+      "field_page": "multimodal/fields/video-temporal/README.md",
+      "source": {
+        "resource_id": "arxiv:2603.14482",
+        "version": "v3",
+        "selected_sections": "§1、方法与结论",
+        "official_url": "https://arxiv.org/abs/2603.14482"
+      }
+    }
+  ],
+  "review_verification_2026_10_04": {
+    "sources": [
+      "https://arxiv.org/html/2603.14482v3"
+    ],
+    "scope": "首页、摘要、§3.3 机器人规划段、§5 结论与未来工作；不扩大至全文阅读。",
+    "verified_facts": [
+      "单位为 Meta FAIR 与 Universidad de Zaragoza。",
+      "机器人规划另训动作条件预测器。"
+    ],
+    "checked_on": "2026-10-04",
+    "reading_depth": "selected_sections_checked_not_full_read",
+    "independently_reproduced": false
+  }
+}

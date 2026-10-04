@@ -24,7 +24,9 @@
   "fulltext_local_path": null,
   "source_record_updated": "2026-10-04",
   "legacy_paths": [],
-  "evidence_paths": [],
+  "evidence_paths": [
+    "multimodal/papers/arxiv-2511.21631/evidence.json"
+  ],
   "authors": [
     "Shuai Bai",
     "Yuxuan Cai",

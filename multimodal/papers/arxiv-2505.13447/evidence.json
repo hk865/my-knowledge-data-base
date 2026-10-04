@@ -3,16 +3,76 @@
   "checked_on": "2026-10-04",
   "read_version": "v1",
   "source_url": "https://arxiv.org/html/2505.13447v1",
-  "scope": "摘要、§1、§3平均速度恒等式、§4.1、§5.2实验；通过协作核验",
+  "scope": "摘要、§1、§3 流匹配背景、§4.1 平均速度恒等式、§5.2 实验；通过协作核验",
   "claims": [
     {
       "claim": "区间平均速度与瞬时速度的恒等式作为训练目标",
-      "location": "§3"
+      "location": "§4.1"
     },
     {
       "claim": "从零训练的一步图像生成，不需要教师蒸馏",
       "location": "Abstract、§4–5"
     }
   ],
-  "boundary": "主要证据为ImageNet类条件生成与CIFAR；一步网络调用不是整套部署零成本，不外推至复杂文本、视频或机器人。"
+  "boundary": "主要证据为 ImageNet 256×256 类条件生成与 CIFAR-10 无条件生成；一步网络调用不是整套部署零成本，不外推至复杂文本、视频或机器人。",
+  "field_checks": [
+    {
+      "checked_on": "2026-10-04",
+      "purpose": "按方向补充问题链与阅读优先级；原有奠基论文保留",
+      "boundary": "只核所列章节或摘要，未复现实验；新卡均为bibliographic_card；原始正式版不可达时不引定量结果。",
+      "field_page": "multimodal/fields/generation/README.md",
+      "source": {
+        "resource_id": "arxiv:2505.13447",
+        "version": "v1",
+        "selected_sections": "§1、3–4、5.2",
+        "official_url": "https://arxiv.org/abs/2505.13447"
+      }
+    }
+  ],
+  "foundations_extension_2026_10_04": {
+    "scope": [
+      "foundations/fields/architectures/README.md",
+      "foundations/lessons/14-attention-transformer.md",
+      "foundations/lessons/16-vae.md",
+      "foundations/lessons/17-diffusion.md"
+    ],
+    "verified_on": "2026-10-04",
+    "reading_kind": "selected_primary_sections_not_full_read",
+    "new_claim_limits": "不改VAE/DDPM历史定义；不宣称2025方法为当前SOTA；没有复现实验",
+    "source": {
+      "resource_id": "arxiv:2505.13447",
+      "version": "v1",
+      "date": "2025-05-19",
+      "url": "https://arxiv.org/html/2505.13447v1",
+      "sections": [
+        "abstract",
+        "1",
+        "3",
+        "4.1 equations3-10",
+        "5 experiment setup"
+      ],
+      "supports": [
+        "区间平均速度替代瞬时速度作为学习对象",
+        "平均速度恒等式构造训练目标",
+        "一步指生成模型NFE"
+      ],
+      "boundary": "ImageNet/CIFAR图像范围；潜空间还要解码；未读正式版全文，不引数字"
+    }
+  },
+  "review_verification_2026_10_04": {
+    "sources": [
+      "https://papers.nips.cc/paper_files/paper/2025/file/6d13e085b79d454da5910e4ca82a3d9d-Paper-Conference.pdf",
+      "https://arxiv.org/html/2505.13447v1"
+    ],
+    "scope": "正式版首页、§5.2、Table 2–3；arXiv v1 首页与 §4.1。未通读正式版全文。",
+    "verified_facts": [
+      "ImageNet 256×256 为类条件；CIFAR-10 为无条件。",
+      "平均速度恒等式在 §4.1，不在 §3。",
+      "作者单位为 Carnegie Mellon University 与 MIT。",
+      "正式版首页给出公开代码链接；权重与数据发布范围未核实。"
+    ],
+    "checked_on": "2026-10-04",
+    "reading_depth": "selected_sections_checked_not_full_read",
+    "independently_reproduced": false
+  }
 }

@@ -38,7 +38,7 @@
 - [InternVideo2: Scaling Foundation Models for Multimodal Video Understanding](../../papers/arxiv-2403.15377/README.md) · 2024 · 上海人工智能实验室等 · 文献卡 · 格：预训练信号 / 数据 = 三阶段
 - [Video-MME: The First-Ever Comprehensive Evaluation Benchmark of Multi-modal LLMs in Video Analysis](../../papers/arxiv-2405.21075/README.md) · 2024 · 南京大学等 · 文献卡 · 格：评测协议 = 分时长档 + 字幕与音频
 - [LLaVA-Video: Video Instruction Tuning With Synthetic Data](../../papers/arxiv-2410.02713/README.md) · 2024 · ByteDance、南洋理工大学 · 文献卡 · 格：数据 / 每帧表示 = 合成指令数据 + 慢快帧 token 分配（基线）
-- [Qwen2.5-VL Technical Report](../../papers/arxiv-2502.13923/README.md) · 2025 · 阿里巴巴 Qwen 团队 · 暂无单篇目录 · 格：帧采样 / 时间位置 = 动态帧率 + 绝对时间 MRoPE
+- [Qwen2.5-VL Technical Report](../../papers/arxiv-2502.13923/README.md) · 2025 · 阿里巴巴 Qwen 团队 · 文献卡 · 格：帧采样 / 时间位置 = 动态帧率 + 绝对时间 MRoPE
 
 ## 交叉引用（主归属在其他方向）
 

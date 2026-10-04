@@ -18,5 +18,31 @@
       "location": "Table 19及邻近正文"
     }
   ],
-  "boundary": "统一训练接口、离线动力学误差、特定机器人平台成功率是不同主张；论文中的榜单名次只代表报告写作时。"
+  "boundary": "统一训练接口、离线动力学误差、特定机器人平台成功率是不同主张；论文中的榜单名次只代表报告写作时。",
+  "field_checks": [
+    {
+      "checked_on": "2026-10-04",
+      "purpose": "按方向补充问题链与阅读优先级；原有奠基论文保留",
+      "boundary": "只核所列章节或摘要，未复现实验；新卡均为bibliographic_card；原始正式版不可达时不引定量结果。",
+      "field_page": "multimodal/fields/world-models/README.md",
+      "source": {
+        "resource_id": "arxiv:2606.02800",
+        "version": "v4",
+        "selected_sections": "§2.2–2.3、Table19相关评估",
+        "official_url": "https://arxiv.org/abs/2606.02800"
+      }
+    }
+  ],
+  "review_verification_2026_10_04": {
+    "sources": [
+      "https://arxiv.org/html/2606.02800v4"
+    ],
+    "scope": "§2.2–2.3、Fig.4–5。",
+    "verified_facts": [
+      "参数按自回归推理流与扩散生成流分为两套，并非每个模态各一套。"
+    ],
+    "checked_on": "2026-10-04",
+    "reading_depth": "selected_sections_checked_not_full_read",
+    "independently_reproduced": false
+  }
 }

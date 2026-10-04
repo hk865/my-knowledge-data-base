@@ -90,3 +90,7 @@
 - [OpenVLA 精读](../../../robotics-embodied/papers/openvla/reading.md) · 2024 · 技术精读（[VLA 方向](../../../robotics-embodied/fields/vla/README.md)） · 格：读出接口 = 两种编码器拼接并微调
 - [DINO-WM](../../papers/arxiv-2411.04983/README.md)、[Back to the Features](../../papers/arxiv-2507.19468/README.md)、[Reconstruction or Semantics?](../../papers/arxiv-2605.06388/README.md) · 2024–2026 · 文献卡（[世界模型方向](../world-models/README.md)） · 格：读出接口 = 冻结特征作为世界模型状态空间
 - [Depth Anything](../../../robotics-embodied/papers/arxiv-2401.10891/README.md) · 2024 · 文献卡（机器人感知方向） · 用 DINOv2 特征对齐损失训练深度模型，是冻结大编码器在几何任务上的下游
+
+## 生成任务对表征的使用
+
+- [Diffusion Transformers with Representation Autoencoders](../../papers/arxiv-2510.11690/README.md)（RAE） · 2025 · New York University · 文献卡 · 冻结视觉表征并训练解码器，把表征用作扩散潜空间；主归属[视觉生成](../generation/README.md)

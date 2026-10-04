@@ -123,7 +123,7 @@ Lsimple = E ‖ε − εθ(√ᾱₜx₀ + √(1−ᾱₜ)ε, t)‖²
 
 ### 再往后读：目标和表示两处基本选择
 
-读完 Flow Matching 后接 [MeanFlow](../arxiv-2505.13447/README.md)，区分“回归瞬时速度再积分”与“学习跨区间平均速度”；读完 LDM 后接 [RAE](../arxiv-2510.11690/README.md)及其[自由文本后继](../arxiv-2601.16208/README.md)，区分“重建型潜变量”与“冻结语义编码器的特征”。它们分别改变本篇延伸线的训练目标与生成空间，阅读定位见[生成路线图](../../fields/generation/ROADMAP.md)。
+读完 Flow Matching 后接 [MeanFlow](../arxiv-2505.13447/README.md)，区分"回归瞬时速度再积分"与"学习跨区间平均速度"；读完 LDM 后接 [RAE](../arxiv-2510.11690/README.md)及其[自由文本后继](../arxiv-2601.16208/README.md)，区分"重建型潜变量"与"冻结语义编码器的特征"。它们分别改变本篇延伸线的训练目标与生成空间，阅读定位见[生成路线图](../../fields/generation/ROADMAP.md)。
 
 ## 批注
 
