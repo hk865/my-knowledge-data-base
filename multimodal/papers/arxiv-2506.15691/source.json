@@ -6,13 +6,13 @@
   "canonical_folder": "multimodal/papers/arxiv-2506.15691",
   "official_url": "https://arxiv.org/abs/2506.15691",
   "official_fulltext_url": "https://arxiv.org/pdf/2506.15691",
-  "read_version": null,
-  "version_status": "not_pinned",
-  "reading_depth": "identity_verified_or_existing_catalog_only",
+  "read_version": "v3",
+  "version_status": "checked_v3",
+  "reading_depth": "selected_sections_checked_not_full_read",
   "teaching_status": "not_created",
   "content_kind": "bibliographic_card",
   "reading_path": null,
-  "reading_boundary": "这是文献卡，目前没有该论文的独立精读正文。标题、标识或摘要层面的核验不等于全文阅读。",
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
   "user_reading_status": "not_asserted",
   "independently_reproduced": false,
   "license": {
@@ -22,10 +22,44 @@
   },
   "fulltext_local_status": "official_link_only_pending_license_verification",
   "fulltext_local_path": null,
-  "source_record_updated": "2026-10-02",
+  "source_record_updated": "2026-10-04",
   "legacy_paths": [],
   "evidence_paths": [],
   "topic_paths": [
     "multimodal/world-models"
-  ]
+  ],
+  "year": 2025,
+  "authors": [
+    "Chuheng Zhang",
+    "Tim Pearce",
+    "Pushi Zhang",
+    "Kaixin Wang",
+    "Xiaoyu Chen",
+    "Wei Shen",
+    "Li Zhao",
+    "Jiang Bian"
+  ],
+  "modality_tags": [
+    "video",
+    "action"
+  ],
+  "task_tags": [
+    "analysis"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v3 PDF 选段：摘要、§1、非线性 LAM 实验一节（4×4 图像、CNN、向量量化）、§6 结论；首页机构",
+    "mechanism_summary": "线性 LAM 分析：特定假设下等价于 PCA；低噪声时恢复真实动作；主要变化来源非可控信号时学到噪声；数据采集策略随机性不足有害；为数据增强、清洗、辅助动作预测提供理论依据；4×4 合成图像上的非线性 LAM 验证。arXiv 注明 NeurIPS 2025 接收。",
+    "evidence_boundary": "未复现实验；数字取自论文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2506.15691",
+      "https://arxiv.org/pdf/2506.15691v3",
+      "https://export.arxiv.org/api/query?id_list=2506.15691"
+    ],
+    "source_origin": "multimodal_phase3_card_rewrite",
+    "relation_pages": [
+      "robotics-embodied/fields/world-models/BASELINES.md",
+      "robotics-embodied/fields/world-models/README.md"
+    ]
+  }
 }

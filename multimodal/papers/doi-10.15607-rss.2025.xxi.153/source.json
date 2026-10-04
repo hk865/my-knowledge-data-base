@@ -6,13 +6,13 @@
   "canonical_folder": "multimodal/papers/doi-10.15607-rss.2025.xxi.153",
   "official_url": "https://www.roboticsproceedings.org/rss21/p153.html",
   "official_fulltext_url": "https://www.roboticsproceedings.org/rss21/p153.html",
-  "read_version": null,
-  "version_status": "not_pinned",
-  "reading_depth": "identity_verified_or_existing_catalog_only",
+  "read_version": "RSS 2025 正式版页面；细节取自 arXiv 2504.16693v2",
+  "version_status": "checked_official_page_and_preprint",
+  "reading_depth": "selected_sections_checked_not_full_read",
   "teaching_status": "not_created",
   "content_kind": "bibliographic_card",
   "reading_path": null,
-  "reading_boundary": "这是文献卡，目前没有该论文的独立精读正文。标题、标识或摘要层面的核验不等于全文阅读。",
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
   "user_reading_status": "not_asserted",
   "independently_reproduced": false,
   "license": {
@@ -22,10 +22,46 @@
   },
   "fulltext_local_status": "official_link_only_pending_license_verification",
   "fulltext_local_path": null,
-  "source_record_updated": "2026-10-02",
+  "source_record_updated": "2026-10-04",
   "legacy_paths": [],
   "evidence_paths": [],
   "topic_paths": [
-    "multimodal/world-models"
-  ]
+    "multimodal/world-models",
+    "robotics/control"
+  ],
+  "year": 2025,
+  "authors": [
+    "Wenxuan Li",
+    "Hang Zhao",
+    "Zhiyuan Yu",
+    "Yu Du",
+    "Qin Zou",
+    "Ruizhen Hu",
+    "Kai Xu"
+  ],
+  "modality_tags": [
+    "video",
+    "action"
+  ],
+  "task_tags": [
+    "understanding",
+    "decision"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "RSS 2025 正式版页面（题名、作者、摘要、BibTeX）；正式版 PDF 无文字层，细节取自 arXiv 2504.16693v2：§1 贡献（Push 75%、Flip 65%）、§3 策略学习（PPO）、§4 Table I 段（DreamerV2 对照）、§5 结论与 Limitation；首页机构",
+    "mechanism_summary": "可微刚体物理 + 高斯泼溅观测损失端到端辨识物理参数；物理感知的\"数字表亲\"域随机化；PPO 训练后直接部署；真机 Push 75%、Flip 65%，优于 Real2Sim2Real 方法；局限：阴影干扰渲染损失、仅刚体。",
+    "evidence_boundary": "未复现实验；数字取自论文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://www.roboticsproceedings.org/rss21/p153.html",
+      "https://www.roboticsproceedings.org/rss21/p153.pdf",
+      "https://arxiv.org/abs/2504.16693",
+      "https://arxiv.org/pdf/2504.16693v2"
+    ],
+    "source_origin": "multimodal_phase3_card_rewrite",
+    "relation_pages": [
+      "robotics-embodied/fields/world-models/BASELINES.md",
+      "robotics-embodied/fields/world-models/README.md"
+    ]
+  }
 }

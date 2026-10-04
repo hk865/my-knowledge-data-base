@@ -154,6 +154,76 @@
       "source_location": "Table3 p6;§4.2.1",
       "kind": "paper_evidence",
       "interpretation_limit": ""
+    },
+    {
+      "id": "dino-20",
+      "claim": "Intro motivation: ViTs not yet clearly beneficial vs convnets (more compute, more data, no unique feature properties); asks whether supervision explains muted success",
+      "source_location": "§1 p1",
+      "kind": "paper_evidence",
+      "interpretation_limit": ""
+    },
+    {
+      "id": "dino-21",
+      "claim": "Conclusion plans pretraining a large ViT with DINO on random uncurated images",
+      "source_location": "§6 p10",
+      "kind": "paper_evidence",
+      "interpretation_limit": ""
+    },
+    {
+      "id": "dino-22",
+      "claim": "Appendix D 80%-mass Jaccard on VOC12 ViT-S/16: random 22.0, supervised 27.3, DINO 45.9, MoCo-v2 46.3, BYOL 47.8, SwAV 46.8",
+      "source_location": "Appendix D p17",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Main Figure 4 uses 60% mass; numbers overlap"
+    },
+    {
+      "id": "dino-23",
+      "claim": "DINOv2 Table 2 (ViT-g, same iterations): uncurated 142M random images INet-1k 83.3, iNat2018 68.0, ADE20k 48.5; LVD-142M 85.8, 82.3, 47.7",
+      "source_location": "DINOv2 (arXiv:2304.07193) §6.2, Table 2 p8",
+      "kind": "later_work_evidence",
+      "interpretation_limit": "Shorter schedule than final run, no high-res adaptation"
+    },
+    {
+      "id": "dino-24",
+      "claim": "DINOv2 loss = DINO image-level + iBOT patch-level, Sinkhorn-Knopp centering replacing softmax centering, KoLeo regularizer, untied heads",
+      "source_location": "DINOv2 §4 pp5-6",
+      "kind": "later_work_evidence",
+      "interpretation_limit": ""
+    },
+    {
+      "id": "dino-25",
+      "claim": "Registers: DINO ViT-B/16 has no high-norm artifacts while DINOv2 does; LOST corloc on VOC2007 DINOv2 35.3, +registers 55.4, original DINO 61.9 (cited from LOST)",
+      "source_location": "Registers (arXiv:2309.16588v2) §1, Fig.3, Table 3",
+      "kind": "later_work_evidence",
+      "interpretation_limit": "DINO 61.9 quoted by Registers, LOST paper not opened"
+    },
+    {
+      "id": "dino-26",
+      "claim": "DINOv3: classification improves monotonically but VOC linear segmentation declines after ~200k iterations for ViT-g and ViT-7B; patch-[CLS] similarity grows; Gram anchoring pulls student patch Gram matrix toward early teacher; observed mildly in DINOv2",
+      "source_location": "DINOv3 (arXiv:2508.10104) §4.1-4.2 pp11-12",
+      "kind": "later_work_evidence",
+      "interpretation_limit": ""
+    },
+    {
+      "id": "dino-27",
+      "claim": "I-JEPA: invariance-based methods rely on hand-crafted augmentations whose biases may hurt some downstream tasks and do not generalize to other modalities",
+      "source_location": "I-JEPA (arXiv:2301.08243v3) §1 p1",
+      "kind": "later_work_evidence",
+      "interpretation_limit": ""
+    },
+    {
+      "id": "dino-28",
+      "claim": "MMVP: CLIP-blind pairs (CLIP cosine >0.95, DINOv2 <0.6); MoF mixing DINOv2 features improves MLLM visual grounding",
+      "source_location": "MMVP (arXiv:2401.06209v2) abstract, §2.1",
+      "kind": "later_work_evidence",
+      "interpretation_limit": ""
+    },
+    {
+      "id": "dino-29",
+      "claim": "Web-SSL: DINOv2-style models trained on MC-2B reach CLIP-level average VQA at 7B; CLIP excels at OCR & Chart, Web-DINO at vision-centric",
+      "source_location": "Web-SSL (arXiv:2504.01017) abstract, Fig.3",
+      "kind": "later_work_evidence",
+      "interpretation_limit": ""
     }
   ],
   "diagram": {

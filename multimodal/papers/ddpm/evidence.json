@@ -73,6 +73,63 @@
       "claim": "No text conditioning, VAE compression, action-conditioned world model or physical-time dynamics is established by the original paper",
       "locator": "Sections2-4 and analyst scope comparison",
       "type": "reader_inference"
+    },
+    {
+      "id": "D14",
+      "claim": "Linear schedule (beta 1e-4 to 0.02, T=1000): sqrt(alpha_bar) is 0.9999/0.947/0.724/0.280/0.058/0.0064 at t=1/100/250/500/750/1000; worked example x0=0.8, eps=-0.5, t=500 gives x_t=-0.256 and mu=-0.2517 from both Eq.11 and Eq.7",
+      "locator": "Computed from Section 4 schedule and Equations 4, 7, 11",
+      "type": "reader_calculation"
+    },
+    {
+      "id": "D15",
+      "claim": "With sigma_t^2=beta_t the Eq.12 weight is 0.50 at t=1, 0.074 at t=10, 0.010 at t=100, 0.0055 at t=500, 0.010 at t=1000; Lsimple sets all to 1, so t=500 is up-weighted about 90x relative to t=1",
+      "locator": "Computed from Equation 12 and Section 4 schedule; direction stated in Section 3.4, p5",
+      "type": "reader_calculation"
+    },
+    {
+      "id": "D16",
+      "claim": "Rate-distortion: after 900 reverse steps cumulative rate 0.11994 bits/dim with RMSE 12.02; at 1000 steps 1.77581 bits/dim with RMSE 0.95, so the last 100 steps use about 93% of the rate",
+      "locator": "Extra information Table 4, p13; Section 4.3, p6",
+      "type": "reader_calculation"
+    },
+    {
+      "id": "D17",
+      "claim": "Table 1 baselines: original diffusion (Sohl-Dickstein) NLL <=5.40; NCSN FID 25.32; unconditional StyleGAN2+ADA FID 3.26; Sparse Transformer NLL 2.80; Gated PixelCNN 3.03",
+      "locator": "Table 1, p5"
+    },
+    {
+      "id": "D18",
+      "claim": "LSUN Table 3: DDPM Bedroom 6.36 (large 4.90), Church 7.89, Cat 19.75; ProgressiveGAN 8.34/6.42/37.52; StyleGAN2 Church 3.86",
+      "locator": "Extra information Table 3, p13"
+    },
+    {
+      "id": "D19",
+      "claim": "TPU v3-8: sampling 256 CIFAR images takes 17 s, 128 images at 256x256 takes 300 s; hyperparameters mostly searched on CIFAR10 then transferred; T=1000 not swept",
+      "locator": "Appendix B, pp14-15"
+    },
+    {
+      "id": "D20",
+      "claim": "Follow-up DDIM uses the released DDPM CIFAR10 checkpoint; CIFAR10 FID with 10/50/100 steps: DDIM (eta=0) 13.36/4.67/4.16 vs DDPM sigma-hat 367.43/32.72/9.99; DDPM sampling 50k 32x32 images takes about 20 hours on a 2080 Ti",
+      "locator": "arXiv:2010.02502v4 Table 1 p7; Section 1 p1; Appendix D.1",
+      "type": "follow_up_paper"
+    },
+    {
+      "id": "D21",
+      "claim": "Follow-up Improved DDPM: last quarter of linear schedule nearly pure noise; skipping up to 20% of reverse process barely hurts FID on ImageNet 64; cosine schedule; linear schedule better at 256x256; learned variances with Lhybrid (lambda=0.001) give near-optimal FID with 100 steps; DDIM better below 50 steps; CIFAR10 NLL 2.94 with Lvlb (FID 11.47) vs Lhybrid 3.17 (FID 3.19)",
+      "locator": "arXiv:2102.09672 Sections 3.1-3.2, Figures 3-4, Table 2, Section 4, Appendix C",
+      "type": "follow_up_paper"
+    },
+    {
+      "id": "D22",
+      "claim": "Follow-up LDM: strongest pixel DMs take 150-1000 V100 days and about 5 days on one A100 for 50k samples; builds on the rate-distortion analysis (perceptual vs semantic compression); FID gap of 38 between LDM-1 and LDM-8 after 2M steps on a single A100",
+      "locator": "arXiv:2112.10752v2 Section 1 pp1-2; Section 4.1",
+      "type": "follow_up_paper"
+    },
+    {
+      "id": "D23",
+      "claim": "Follow-ups on backbone and path: DiT FID 2.27 on ImageNet 256 with Gflops-FID correlation -0.93; Flow Matching OT path needs roughly 60% of the NFEs of diffusion for the same error (ImageNet-32); distilled 2-rectified flow one-step FID 4.85 on CIFAR10",
+      "locator": "arXiv:2212.09748v2 abstract and Fig.2; arXiv:2210.02747 Section 6 Figure 7; arXiv:2209.03003v1 Table 1",
+      "type": "follow_up_paper"
     }
   ],
   "coverage": {

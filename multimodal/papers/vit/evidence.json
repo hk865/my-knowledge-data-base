@@ -105,6 +105,69 @@
       "source_location": "AppendixD.2,D.5,D.6 pp16,18–20",
       "kind": "paper_evidence",
       "interpretation_limit": ""
+    },
+    {
+      "id": "vit-13",
+      "claim": "Intro: on mid-sized data without strong regularization ViT is a few points below comparable ResNets; conclusion lists three open challenges (detection/segmentation, self-supervision gap, further scaling)",
+      "source_location": "§1 pp1-2; §5 p9",
+      "kind": "paper_evidence",
+      "interpretation_limit": ""
+    },
+    {
+      "id": "vit-14",
+      "claim": "Masked patch prediction: 50% corrupted with 80/10/10 split, setup described as very similar to BERT; self-supervised model trained on JFT ~14 epochs; ViT-B/16 79.9% ImageNet",
+      "source_location": "§4.6 p8; Appendix B.1.2 p14",
+      "kind": "paper_evidence",
+      "interpretation_limit": ""
+    },
+    {
+      "id": "vit-15",
+      "claim": "Attention Rollout averages heads of ViT-L/16 and recursively multiplies attention matrices of all layers",
+      "source_location": "Appendix D.8 p21",
+      "kind": "paper_evidence",
+      "interpretation_limit": ""
+    },
+    {
+      "id": "vit-16",
+      "claim": "DeiT (arXiv:2012.12877v2): ImageNet-only, single 8-GPU node, 53h pretraining; DeiT-B (ViT-B architecture) 81.8% at 224, 83.1% at 384; timm recipe had moved ViT-B from 77.91 to 79.35",
+      "source_location": "DeiT abstract, §1 p2, footnote p14, Table 5",
+      "kind": "later_work_evidence",
+      "interpretation_limit": "DeiT 81.8 is 224px, ViT 77.91 is 384px fine-tuned"
+    },
+    {
+      "id": "vit-17",
+      "claim": "DeiT ablation: without random erasing 4.3*, without stochastic depth 3.4* (did not train well); without mixup+cutmix 75.8; SGD instead of AdamW 74.5",
+      "source_location": "DeiT Table 8 p15 (rendered and visually checked)",
+      "kind": "later_work_evidence",
+      "interpretation_limit": "Hyperparameters fixed per DeiT Table 9, may be suboptimal"
+    },
+    {
+      "id": "vit-18",
+      "claim": "AugReg (arXiv:2106.10270v2, TMLR 2022): AugReg plus more compute matches ~10x more data; ImageNet-21k models match or beat JFT-300M counterparts; >50,000 models released",
+      "source_location": "AugReg abstract and footnote 1 p1",
+      "kind": "later_work_evidence",
+      "interpretation_limit": ""
+    },
+    {
+      "id": "vit-19",
+      "claim": "MAE: ViT-L supervised from scratch 76.5 (original ViT) vs 82.5 with strong regularization recipe",
+      "source_location": "MAE (arXiv:2111.06377v3) §4 p4; Appendix A.2",
+      "kind": "later_work_evidence",
+      "interpretation_limit": ""
+    },
+    {
+      "id": "vit-20",
+      "claim": "SigLIP 2 NaFlex variant supports multiple resolutions and native aspect ratio, aimed at aspect-sensitive tasks such as document understanding",
+      "source_location": "SigLIP 2 (arXiv:2502.14786v1) abstract, §1 p2",
+      "kind": "later_work_evidence",
+      "interpretation_limit": ""
+    },
+    {
+      "id": "vit-21",
+      "claim": "Registers: large ViTs (DeiT-III, OpenCLIP, DINOv2) show ~2% high-norm tokens with ~10x norm in low-information background patches, holding global info; appear in ViT-L and larger after ~1/3 of training; register tokens remove them",
+      "source_location": "Registers (arXiv:2309.16588v2) §1 p2, §2 Fig.3-4 pp3-4",
+      "kind": "later_work_evidence",
+      "interpretation_limit": ""
     }
   ],
   "diagram": {

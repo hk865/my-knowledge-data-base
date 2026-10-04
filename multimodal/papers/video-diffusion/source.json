@@ -33,5 +33,33 @@
   "topic_paths": [
     "multimodal/generation",
     "multimodal/video-temporal"
-  ]
+  ],
+  "year": 2022,
+  "authors": [
+    "Jonathan Ho",
+    "Tim Salimans",
+    "Alexey Gritsenko",
+    "William Chan",
+    "Mohammad Norouzi",
+    "David J. Fleet"
+  ],
+  "modality_tags": [
+    "text",
+    "video",
+    "multimodal"
+  ],
+  "task_tags": [
+    "generation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 API 元数据；PDF 首页（作者与机构）",
+    "verification_status": "identity_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2204.03458",
+      "https://export.arxiv.org/api/query?id_list=2204.03458",
+      "https://arxiv.org/pdf/2204.03458v2"
+    ],
+    "source_origin": "multimodal_phase3_card_rewrite",
+    "identity_check": "2026-10-04 多模态文献卡身份核对：题名、年份、作者对照 arXiv API（2204.03458v2 为当前最新版本）与 PDF 首页机构；只改身份字段，精读范围与阅读深度字段未动。"
+  }
 }

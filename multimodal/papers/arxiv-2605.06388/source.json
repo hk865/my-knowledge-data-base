@@ -6,13 +6,13 @@
   "canonical_folder": "multimodal/papers/arxiv-2605.06388",
   "official_url": "https://arxiv.org/abs/2605.06388",
   "official_fulltext_url": "https://arxiv.org/pdf/2605.06388",
-  "read_version": null,
-  "version_status": "not_pinned",
-  "reading_depth": "identity_verified_or_existing_catalog_only",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "selected_sections_checked_not_full_read",
   "teaching_status": "not_created",
   "content_kind": "bibliographic_card",
   "reading_path": null,
-  "reading_boundary": "这是文献卡，目前没有该论文的独立精读正文。标题、标识或摘要层面的核验不等于全文阅读。",
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
   "user_reading_status": "not_asserted",
   "independently_reproduced": false,
   "license": {
@@ -22,11 +22,45 @@
   },
   "fulltext_local_status": "official_link_only_pending_license_verification",
   "fulltext_local_path": null,
-  "source_record_updated": "2026-10-02",
+  "source_record_updated": "2026-10-04",
   "legacy_paths": [],
   "evidence_paths": [],
   "topic_paths": [
     "multimodal/world-models",
     "robotics/embodied-policies"
-  ]
+  ],
+  "year": 2026,
+  "authors": [
+    "Nilaksh",
+    "Saurav Jha",
+    "Artem Zholus",
+    "Sarath Chandar"
+  ],
+  "modality_tags": [
+    "video",
+    "action"
+  ],
+  "task_tags": [
+    "generation",
+    "analysis"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v1 PDF 选段：摘要、§7 Future Work and Limitations、§8 结论；首页作者与机构",
+    "mechanism_summary": "BridgeV2 上六种编码器（重建型 VAE、Cosmos；语义型 V-JEPA 2.1、Web-DINO、SigLIP 2 等）潜空间的动作条件 LDM 对比；三轴评估：视觉保真、规划与下游策略、潜表示质量；结论：视觉保真不足以选模型，语义潜空间更利于策略，V-JEPA 2.1 策略最强；局限：仅 BridgeV2 与单一本体、策略在环只用一个固定 VLA。",
+    "evidence_boundary": "未复现实验；数字取自论文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2605.06388",
+      "https://arxiv.org/pdf/2605.06388v1",
+      "https://export.arxiv.org/api/query?id_list=2605.06388"
+    ],
+    "source_origin": "multimodal_phase3_card_rewrite",
+    "relation_pages": [
+      "multimodal/fields/visual-representation/README.md",
+      "multimodal/fields/world-models/README.md",
+      "robotics-embodied/fields/imitation-reinforcement-learning/BASELINES.md",
+      "robotics-embodied/fields/world-models/BASELINES.md",
+      "robotics-embodied/fields/world-models/README.md"
+    ]
+  }
 }

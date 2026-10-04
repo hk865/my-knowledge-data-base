@@ -697,6 +697,178 @@
         "相邻论文仅按CLIP正文与参考文献定位，不声称在本任务中精读这些论文"
       ],
       "source_url": "https://arxiv.org/pdf/2103.00020v1"
+    },
+    {
+      "id": "C33",
+      "claim_zh": "引言：VirTex、ICMLM、ConVIRT只训练加速器天、10万–20万张图像；CLIP为从头训练的简化版ConVIRT",
+      "type": "paper_context",
+      "section": "1",
+      "pdf_pages": [
+        2
+      ],
+      "figure_or_table": [],
+      "qualifiers": [],
+      "source_url": "https://arxiv.org/pdf/2103.00020v1"
+    },
+    {
+      "id": "C34",
+      "claim_zh": "作者估计零样本CLIP要达到总体最佳约需1000倍算力；零样本整体与ResNet-50线性基线相当；MNIST 88%；开发中使用完整验证集；未过滤数据带来社会偏差",
+      "type": "paper_result",
+      "section": "6",
+      "pdf_pages": [
+        19,
+        20
+      ],
+      "figure_or_table": [],
+      "qualifiers": [],
+      "source_url": "https://arxiv.org/pdf/2103.00020v1"
+    },
+    {
+      "id": "C35",
+      "claim_zh": "最大ResNet RN50x64用592张V100训练18天，最大ViT用256张V100训练12天",
+      "type": "paper_result",
+      "section": "2.5",
+      "pdf_pages": [
+        5
+      ],
+      "figure_or_table": [],
+      "qualifiers": [],
+      "source_url": "https://arxiv.org/pdf/2103.00020v1"
+    },
+    {
+      "id": "C36",
+      "claim_zh": "MetaCLIP：认为CLIP成功主因是数据；50万元数据条目、每条目上限t=20k；16亿对池中匹配数超2万的条目占3.2%却占94.5%匹配；photo 5400万→2万；400M ViT-B零样本ImageNet 70.8对CLIP数据68.3",
+      "type": "later_work",
+      "section": "MetaCLIP abstract; 3.3–3.4",
+      "pdf_pages": [
+        1,
+        5,
+        6
+      ],
+      "figure_or_table": [],
+      "qualifiers": [
+        "后续工作证据，非CLIP原文；arXiv v6"
+      ],
+      "source_url": "https://arxiv.org/abs/2309.16671"
+    },
+    {
+      "id": "C37",
+      "claim_zh": "DataComp：128亿对候选池；DataComp-1B训练ViT-L/14零样本ImageNet 79.2%，相同流程与算力下比OpenAI CLIP高3.7点",
+      "type": "later_work",
+      "section": "DataComp abstract",
+      "pdf_pages": [
+        1
+      ],
+      "figure_or_table": [],
+      "qualifiers": [
+        "后续工作证据，非CLIP原文"
+      ],
+      "source_url": "https://arxiv.org/abs/2304.14108"
+    },
+    {
+      "id": "C38",
+      "claim_zh": "OpenCLIP规模律：结构相同、配方相近的OpenAI与OpenCLIP模型扩展规律不同，训练分布起关键作用",
+      "type": "later_work",
+      "section": "abstract",
+      "pdf_pages": [
+        1
+      ],
+      "figure_or_table": [],
+      "qualifiers": [
+        "后续工作证据，非CLIP原文"
+      ],
+      "source_url": "https://arxiv.org/abs/2212.07143"
+    },
+    {
+      "id": "C39",
+      "claim_zh": "SigLIP：逐对sigmoid损失无需全局归一化；批量约32k饱和；SigLiT四块TPUv4两天84.5%零样本ImageNet；t′=log10、b=−10初始化以抑制负对不平衡",
+      "type": "later_work",
+      "section": "abstract; 3.2; 4.4; 4.9",
+      "pdf_pages": [
+        1,
+        3,
+        6,
+        9
+      ],
+      "figure_or_table": [],
+      "qualifiers": [
+        "后续工作证据，非CLIP原文"
+      ],
+      "source_url": "https://arxiv.org/abs/2303.15343"
+    },
+    {
+      "id": "C40",
+      "claim_zh": "ARO（ICLR 2023）：二选一随机50%，CLIP属性62%、空间关系56%、动词61%；现有检索不需组合信息即可做好，对比预训练缺乏学习组合的动力；NegCLIP难负例改善",
+      "type": "later_work",
+      "section": "2.3; 3; 4",
+      "pdf_pages": [
+        4,
+        5,
+        7
+      ],
+      "figure_or_table": [],
+      "qualifiers": [
+        "后续工作证据，非CLIP原文"
+      ],
+      "source_url": "https://arxiv.org/abs/2210.01936"
+    },
+    {
+      "id": "C41",
+      "claim_zh": "MMVP：CLIP相似度>0.95且DINOv2<0.6的CLIP-blind对，150对300题；MLLM含GPT-4V常错；混入DINOv2特征改善定位",
+      "type": "later_work",
+      "section": "abstract; 2.1–2.2",
+      "pdf_pages": [
+        1,
+        3
+      ],
+      "figure_or_table": [],
+      "qualifiers": [
+        "后续工作证据，非CLIP原文"
+      ],
+      "source_url": "https://arxiv.org/abs/2401.06209"
+    },
+    {
+      "id": "C42",
+      "claim_zh": "Perception Encoder：对比训练的最佳通用嵌入在中间层，需对齐方法取出",
+      "type": "later_work",
+      "section": "title; abstract",
+      "pdf_pages": [
+        1
+      ],
+      "figure_or_table": [],
+      "qualifiers": [
+        "后续工作证据，非CLIP原文"
+      ],
+      "source_url": "https://arxiv.org/abs/2504.13181"
+    },
+    {
+      "id": "C43",
+      "claim_zh": "Web-SSL：同一MC-2B数据上CLIP在OCR与图表见长但中等规模后饱和，纯视觉自监督扩到7B追平VQA",
+      "type": "later_work",
+      "section": "Figure 3",
+      "pdf_pages": [
+        4
+      ],
+      "figure_or_table": [],
+      "qualifiers": [
+        "后续工作证据，非CLIP原文"
+      ],
+      "source_url": "https://arxiv.org/abs/2504.01017"
+    },
+    {
+      "id": "C44",
+      "claim_zh": "SigLIP 2：加入描述生成预训练、自蒸馏、遮蔽预测与在线数据筛选，改善定位与密集特征；NaFlex支持原始宽高比",
+      "type": "later_work",
+      "section": "abstract; 1",
+      "pdf_pages": [
+        1,
+        2
+      ],
+      "figure_or_table": [],
+      "qualifiers": [
+        "后续工作证据，非CLIP原文"
+      ],
+      "source_url": "https://arxiv.org/abs/2502.14786"
     }
   ],
   "diagram": {

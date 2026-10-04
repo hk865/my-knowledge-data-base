@@ -95,6 +95,46 @@
       "claim": "Video quality and initial-frame prediction do not establish action-conditioned physical world modeling or planning/control performance",
       "locator": "Benchmark conditions in Section 4 and architecture/objective in Sections2-3; reader inference",
       "type": "reader_inference"
+    },
+    {
+      "id": "V18",
+      "claim": "Table 5 frameskip1 validation FID-avg 12.39/10.47/13.52 at w=1/2/5; Table 6 FID-first validation 16.46 for both reconstruction guidance and replacement",
+      "locator": "Tables 5-6, PDF p8"
+    },
+    {
+      "id": "V19",
+      "claim": "BAIR sampler uses 256 steps plus 256 Langevin corrections, matching the 512-step ancestral baseline in network calls; Kinetics 128 plus 128; reconstruction guidance weight 50 (BAIR) and 9 (Kinetics)",
+      "locator": "Tables 2-3 PDF pp5-6; Appendix A.2-A.3 pp14-15"
+    },
+    {
+      "id": "V20",
+      "claim": "At 32x32 feature resolution with 16 frames, full space-time attention has about 2.7e8 pairs vs about 1.7e7 for factorized attention (ratio F*S/(F+S) about 15.8)",
+      "locator": "Computed from Section 3 architecture and Appendix A attention resolutions",
+      "type": "reader_calculation"
+    },
+    {
+      "id": "V21",
+      "claim": "Follow-up Imagen Video: cascade of 7 sub-models, 11.6B parameters, frozen T5-XXL, 1280x768 at 24 fps for 128 frames (about 5.3 s); v-prediction for all models avoids color shifting seen with epsilon prediction at high resolution; highest-resolution SSR is fully convolutional; progressive distillation to 8 steps per model; 14M video-text plus 60M image-text pairs plus LAION-400M",
+      "locator": "arXiv:2210.02303 Sections 1-3",
+      "type": "follow_up_paper"
+    },
+    {
+      "id": "V22",
+      "claim": "Follow-up Wan: Wan-VAE compresses to [1+T/4, H/8, W/8]; flow matching; 14B inference about 30 minutes on a single high-end GPU without optimization",
+      "locator": "arXiv:2503.20314 Wan-VAE section; Limitation section",
+      "type": "follow_up_paper"
+    },
+    {
+      "id": "V23",
+      "claim": "Follow-up Seedance 1.0: VAE (rt, rh, rw)=(4,16,16), C=48; diffusion transformer with decoupled spatial and temporal layers for efficiency, text tokens only in spatial layers; fine-tuned decoder-only LLM text encoder; flow matching with velocity prediction; about 10x speedup via multi-stage distillation",
+      "locator": "arXiv:2506.09113 Sections 2.1-2.2; abstract",
+      "type": "follow_up_paper"
+    },
+    {
+      "id": "V24",
+      "claim": "Follow-up HunyuanVideo: unified full attention chosen partly because it outperforms divided spatiotemporal attention; images treated as single-frame videos; decoder-only MLLM text encoder; 13B; flow matching",
+      "locator": "arXiv:2412.03603 Sections 4.2-4.3; abstract",
+      "type": "follow_up_paper"
     }
   ],
   "coverage": {

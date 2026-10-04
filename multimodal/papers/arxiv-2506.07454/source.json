@@ -6,13 +6,13 @@
   "canonical_folder": "multimodal/papers/arxiv-2506.07454",
   "official_url": "https://arxiv.org/abs/2506.07454",
   "official_fulltext_url": "https://arxiv.org/pdf/2506.07454",
-  "read_version": null,
-  "version_status": "not_pinned",
-  "reading_depth": "identity_verified_or_existing_catalog_only",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_sections_checked_not_full_read",
   "teaching_status": "not_created",
   "content_kind": "bibliographic_card",
   "reading_path": null,
-  "reading_boundary": "这是文献卡，目前没有该论文的独立精读正文。标题、标识或摘要层面的核验不等于全文阅读。",
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
   "user_reading_status": "not_asserted",
   "independently_reproduced": false,
   "license": {
@@ -22,10 +22,52 @@
   },
   "fulltext_local_status": "official_link_only_pending_license_verification",
   "fulltext_local_path": null,
-  "source_record_updated": "2026-10-02",
+  "source_record_updated": "2026-10-04",
   "legacy_paths": [],
   "evidence_paths": [],
   "topic_paths": [
-    "multimodal/world-models"
-  ]
+    "multimodal/world-models",
+    "robotics/embodied-agents",
+    "robotics/localization-mapping"
+  ],
+  "year": 2025,
+  "authors": [
+    "Jared Strader",
+    "Aaron Ray",
+    "Jacob Arkin",
+    "Mason B. Peterson",
+    "Yun Chang",
+    "Nathan Hughes",
+    "Christopher Bradley",
+    "Yi Xuan Jia",
+    "Carlos Nieto-Granda",
+    "Rajat Talak",
+    "等 14 位作者"
+  ],
+  "modality_tags": [
+    "text",
+    "image",
+    "action",
+    "multimodal"
+  ],
+  "task_tags": [
+    "understanding",
+    "decision"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v2 PDF 选段：摘要、§1–§2（系统流程、PDDL 规划器）、§3（Hydra、ROMAN、Hydra-Multi 融合与重定位）、§4 语言到 PDDL、§5 实验中的落地失败例与 Table 4、§7 结论；首页作者与机构",
+    "mechanism_summary": "Hydra 场景图 + ROMAN 开放词表物体地图 + Hydra-Multi 融合；物体地图重定位；LLM 把指令译为 PDDL 目标（含多机分工），分层场景图规划器求解；Table 4：GPT-4.1 54/70；局限：只能在已融合地图中运行、未用开放词表支持更开放任务。",
+    "evidence_boundary": "未复现实验；数字取自论文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2506.07454",
+      "https://arxiv.org/pdf/2506.07454v2",
+      "https://export.arxiv.org/api/query?id_list=2506.07454"
+    ],
+    "source_origin": "multimodal_phase3_card_rewrite",
+    "relation_pages": [
+      "robotics-embodied/fields/world-models/BASELINES.md",
+      "robotics-embodied/papers/holoagent-0/reading.md"
+    ]
+  }
 }

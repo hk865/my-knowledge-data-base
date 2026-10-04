@@ -2,18 +2,16 @@
 
 [返回多模态目录](../../README.md) · [原文与阅读记录](source.json)
 
-- 稳定标识：arxiv:2301.04104
+- 稳定标识：arxiv:2301.04104 · Google DeepMind、多伦多大学
 - 年份：2023
 - [官方原文页面](https://arxiv.org/abs/2301.04104)
 - [官方全文入口](https://arxiv.org/pdf/2301.04104v1)
 - 阅读版本：v1
-- 方向：multimodal/world-models
+- 方向：multimodal/world-models、robotics/embodied-policies
 
-## 阅读内容与边界
+## 阅读入口
 
-本篇保留现有技术精读，范围与残余边界见正文和证据档案；未独立复现。
-
-- [打开完整逐步教学版](reading.md)
+- [逐步教学版精读](reading.md)：世界模型、想象训练与稳健化技巧；"局限与后续"补了 DayDreamer 真机与 TD-MPC2 的对照
 - [本篇图解与说明](figures/README.md)
 
 ## 可选的阅读顺序

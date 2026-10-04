@@ -35,5 +35,37 @@
     "multimodal/alignment",
     "multimodal/visual-representation",
     "robotics/perception"
-  ]
+  ],
+  "year": 2020,
+  "authors": [
+    "Alexey Dosovitskiy",
+    "Lucas Beyer",
+    "Alexander Kolesnikov",
+    "Dirk Weissenborn",
+    "Xiaohua Zhai",
+    "Thomas Unterthiner",
+    "Mostafa Dehghani",
+    "Matthias Minderer",
+    "Georg Heigold",
+    "Sylvain Gelly",
+    "Jakob Uszkoreit",
+    "Neil Houlsby"
+  ],
+  "modality_tags": [
+    "image"
+  ],
+  "task_tags": [
+    "understanding"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 API 元数据；PDF 首页（作者与机构）",
+    "verification_status": "identity_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2010.11929",
+      "https://export.arxiv.org/api/query?id_list=2010.11929",
+      "https://arxiv.org/pdf/2010.11929v2"
+    ],
+    "source_origin": "multimodal_phase3_card_rewrite",
+    "identity_check": "2026-10-04 多模态文献卡身份核对：题名、年份、作者对照 arXiv API（2010.11929v2 为当前最新版本）与 PDF 首页机构；只改身份字段，精读范围与阅读深度字段未动。"
+  }
 }

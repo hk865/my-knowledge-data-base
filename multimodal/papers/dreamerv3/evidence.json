@@ -94,6 +94,36 @@
       "claim": "Nature后续版发表于2025-04-02，8领域，DMLab30任务，Atari57任务，A100；Minecraft全部训练run发现钻石",
       "locator": "https://www.nature.com/articles/s41586-025-08744-2 — Results, Fig.5, Methods Seeds and error bars",
       "caveat": "后续版Minecraft 10 seeds；不能与v1的40 seed结果混写"
+    },
+    {
+      "id": "dv3-14",
+      "claim": "v1自述局限：100M步内只是有时取得钻石，人类专家通常在所有世界都能取得；提高了方块破坏速度；规模外推需更大实现；每任务单独训练，多任务大模型为后续方向",
+      "locator": "Conclusion p.11",
+      "caveat": ""
+    },
+    {
+      "id": "dv3-15",
+      "claim": "DayDreamer（基于DreamerV2官方实现）：A1约5分钟翻身落地、再约20分钟站立、约1小时跳跃步态前进，10分钟适应推搡；SAC只学会翻身且需人工解开卡死的腿；20Hz关节角+硬件PD、Butterworth滤波、5项逐级门控奖励(阈值0.7)、到边界人工干预；自述局限为硬件磨损",
+      "locator": "arXiv:2206.14176v1 §3.1, Fig.4, Eq.5, Limitations p.8",
+      "caveat": "相关后续论文，不属于DreamerV3 v1"
+    },
+    {
+      "id": "dv3-16",
+      "claim": "TD-MPC2对照：DreamerV3在Dog上偶有数值不稳定，精细操作(lift/pick/stack)吃力，Meta-World难任务常不收敛；DreamerV3基线约20M参数、UTD 512；视觉DMC 10任务两者相当；TD-MPC2扩展到离散动作仍是开放问题",
+      "locator": "arXiv:2310.16828 §4.1, Fig.5, Fig.10, Fig.13, §5",
+      "caveat": "竞争团队的评测设置"
+    },
+    {
+      "id": "dv3-17",
+      "claim": "arXiv v2(2024-04-17)：Minecraft 10 seeds，全部在100M步内发现钻石；VPT用人类数据、720 GPU 9天，Dreamer 1 GPU 9天；结论列出从互联网视频学世界知识、跨领域单一世界模型",
+      "locator": "arXiv:2301.04104v2 Results (Minecraft), Previous work, Conclusion",
+      "caveat": "与v1的40 seed统计不可混写"
+    },
+    {
+      "id": "dv3-18",
+      "claim": "train ratio是回放步数与策略步数之比，不感知action repeat；每个智能体在1张V100上训练",
+      "locator": "Table A.1 note p.18",
+      "caveat": ""
     }
   ],
   "reproduction_limits": [
@@ -104,7 +134,7 @@
     "未提供真实机器人安全、稳定性或sim-to-real保证"
   ],
   "diagram": {
-    "svg": "dreamerv3_mechanism.svg",
+    "svg": "figures/dreamerv3_mechanism-beginner-20261002.svg",
     "png": "dreamerv3_mechanism.png",
     "original": true,
     "visual_qa": "PNG opened and inspected; no clipped labels or overlaps",

@@ -6,13 +6,13 @@
   "canonical_folder": "multimodal/papers/arxiv-2607.04546",
   "official_url": "https://arxiv.org/abs/2607.04546",
   "official_fulltext_url": "https://arxiv.org/pdf/2607.04546",
-  "read_version": null,
-  "version_status": "not_pinned",
-  "reading_depth": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_sections_checked_not_full_read",
   "teaching_status": "not_created",
   "content_kind": "bibliographic_card",
   "reading_path": null,
-  "reading_boundary": "这是文献卡，目前没有该论文的独立精读正文。标题、标识或摘要层面的核验不等于全文阅读。",
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
   "user_reading_status": "not_asserted",
   "independently_reproduced": false,
   "license": {
@@ -22,10 +22,40 @@
   },
   "fulltext_local_status": "official_link_only_pending_license_verification",
   "fulltext_local_path": null,
-  "source_record_updated": "2026-10-02",
+  "source_record_updated": "2026-10-04",
   "legacy_paths": [],
   "evidence_paths": [],
   "topic_paths": [
     "multimodal/world-models"
-  ]
+  ],
+  "year": 2026,
+  "authors": [
+    "Riccardo O. Feingold",
+    "Davide Liconti",
+    "Chenyu Yang",
+    "Robert K. Katzschmann"
+  ],
+  "modality_tags": [
+    "video",
+    "action"
+  ],
+  "task_tags": [
+    "generation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v2 PDF 选段：摘要与首页概述（23 维动作构成、>50 h 仿真、≈2.5 h 真实）、相关工作中 Ctrl-World 与 Cosmos 段、Limitations 段、§6 结论；首页机构",
+    "mechanism_summary": "两段式：掩码动力学模型（WM1，过去掩码 + 23 维动作）+ ControlNet 增强的 SVD 渲染模型（WM2）；>50 h 仿真预训练、<2.5 h 真实微调；掩码条件与仿真预训练是逐维可控的必要条件；局限：无深度致遮挡丢物体、掩码无物体身份绑定致漂移、合成动作覆盖不足、固定相机。",
+    "evidence_boundary": "未复现实验；数字取自论文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2607.04546",
+      "https://arxiv.org/pdf/2607.04546v2",
+      "https://export.arxiv.org/api/query?id_list=2607.04546"
+    ],
+    "source_origin": "multimodal_phase3_card_rewrite",
+    "relation_pages": [
+      "robotics-embodied/fields/world-models/BASELINES.md",
+      "robotics-embodied/fields/world-models/README.md"
+    ]
+  }
 }

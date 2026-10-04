@@ -6,13 +6,13 @@
   "canonical_folder": "multimodal/papers/arxiv-2210.05861",
   "official_url": "https://arxiv.org/abs/2210.05861",
   "official_fulltext_url": "https://arxiv.org/pdf/2210.05861",
-  "read_version": null,
-  "version_status": "not_pinned",
-  "reading_depth": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_sections_checked_not_full_read",
   "teaching_status": "not_created",
   "content_kind": "bibliographic_card",
   "reading_path": null,
-  "reading_boundary": "这是文献卡，目前没有该论文的独立精读正文。标题、标识或摘要层面的核验不等于全文阅读。",
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
   "user_reading_status": "not_asserted",
   "independently_reproduced": false,
   "license": {
@@ -22,10 +22,42 @@
   },
   "fulltext_local_status": "official_link_only_pending_license_verification",
   "fulltext_local_path": null,
-  "source_record_updated": "2026-10-02",
+  "source_record_updated": "2026-10-04",
   "legacy_paths": [],
   "evidence_paths": [],
   "topic_paths": [
-    "multimodal/world-models"
-  ]
+    "multimodal/world-models",
+    "multimodal/video-temporal"
+  ],
+  "year": 2022,
+  "authors": [
+    "Ziyi Wu",
+    "Nikita Dvornik",
+    "Klaus Greff",
+    "Thomas Kipf",
+    "Animesh Garg"
+  ],
+  "modality_tags": [
+    "video"
+  ],
+  "task_tags": [
+    "understanding",
+    "generation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v2 PDF 选段：摘要、§2 末段（与网格 token 两阶段方法的区别）、§3 开头与 §3.1（槽表示）、§4 数据集说明（OBJ3D、CLEVRER、Physion、PHYRE）、§5 结论、附录 F 局限；首页机构",
+    "mechanism_summary": "冻结的槽注意力模型（视频为 SAVi）+ 自回归 Transformer 预测未来槽；OBJ3D、CLEVRER 视频预测，CLEVRER VQA、Physion、PHYRE 规划；局限：基础对象中心模型不能扩展到真实视频，两阶段训练损害前几步预测。ICLR 2023。",
+    "evidence_boundary": "未复现实验；数字取自论文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2210.05861",
+      "https://arxiv.org/pdf/2210.05861v2",
+      "https://export.arxiv.org/api/query?id_list=2210.05861"
+    ],
+    "source_origin": "multimodal_phase3_card_rewrite",
+    "relation_pages": [
+      "multimodal/fields/world-models/README.md",
+      "robotics-embodied/fields/world-models/BASELINES.md"
+    ]
+  }
 }

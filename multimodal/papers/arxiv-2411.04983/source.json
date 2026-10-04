@@ -6,13 +6,13 @@
   "canonical_folder": "multimodal/papers/arxiv-2411.04983",
   "official_url": "https://arxiv.org/abs/2411.04983",
   "official_fulltext_url": "https://arxiv.org/pdf/2411.04983",
-  "read_version": null,
-  "version_status": "not_pinned",
-  "reading_depth": "identity_verified_or_existing_catalog_only",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_sections_checked_not_full_read",
   "teaching_status": "not_created",
   "content_kind": "bibliographic_card",
   "reading_path": null,
-  "reading_boundary": "这是文献卡，目前没有该论文的独立精读正文。标题、标识或摘要层面的核验不等于全文阅读。",
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
   "user_reading_status": "not_asserted",
   "independently_reproduced": false,
   "license": {
@@ -22,10 +22,45 @@
   },
   "fulltext_local_status": "official_link_only_pending_license_verification",
   "fulltext_local_path": null,
-  "source_record_updated": "2026-10-02",
+  "source_record_updated": "2026-10-04",
   "legacy_paths": [],
   "evidence_paths": [],
   "topic_paths": [
     "multimodal/world-models"
-  ]
+  ],
+  "year": 2024,
+  "authors": [
+    "Gaoyue Zhou",
+    "Hengkai Pan",
+    "Yann LeCun",
+    "Lerrel Pinto"
+  ],
+  "modality_tags": [
+    "image",
+    "action"
+  ],
+  "task_tags": [
+    "generation",
+    "decision"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v2 PDF 选段：摘要、§1、§3 预测器（与 IRIS 的区别）与 CEM 规划、§4.1 环境、§4.2 基线（离线无奖励训练）、Table 1、§5 结论与 Limitations；首页脚注机构",
+    "mechanism_summary": "冻结 DINOv2 块特征 + 因果 ViT 预测器（帧级注意力掩码）；CEM 模型预测控制，以目标图像特征的 MSE 为代价；六个环境（Maze、Wall、Reach、PushT、Rope、Granular）；Table 1：PushT 0.90 vs DreamerV3 0.30、TD-MPC2 0.00；局限：需动作覆盖充分的离线数据、需真实动作标注、仅动作空间规划。",
+    "evidence_boundary": "未复现实验；数字取自论文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2411.04983",
+      "https://arxiv.org/pdf/2411.04983v2",
+      "https://export.arxiv.org/api/query?id_list=2411.04983"
+    ],
+    "source_origin": "multimodal_phase3_card_rewrite",
+    "relation_pages": [
+      "multimodal/fields/visual-representation/README.md",
+      "perspectives/generative-convergence.md",
+      "robotics-embodied/fields/world-models/BASELINES.md",
+      "robotics-embodied/fields/world-models/README.md",
+      "robotics-embodied/fields/world-models/ROADMAP.md",
+      "robotics-embodied/papers/arxiv-2506.09985/README.md"
+    ]
+  }
 }

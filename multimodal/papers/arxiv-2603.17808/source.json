@@ -6,13 +6,13 @@
   "canonical_folder": "multimodal/papers/arxiv-2603.17808",
   "official_url": "https://arxiv.org/abs/2603.17808",
   "official_fulltext_url": "https://arxiv.org/pdf/2603.17808",
-  "read_version": null,
-  "version_status": "not_pinned",
-  "reading_depth": "identity_verified_or_existing_catalog_only",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_sections_checked_not_full_read",
   "teaching_status": "not_created",
   "content_kind": "bibliographic_card",
   "reading_path": null,
-  "reading_boundary": "这是文献卡，目前没有该论文的独立精读正文。标题、标识或摘要层面的核验不等于全文阅读。",
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
   "user_reading_status": "not_asserted",
   "independently_reproduced": false,
   "license": {
@@ -22,10 +22,47 @@
   },
   "fulltext_local_status": "official_link_only_pending_license_verification",
   "fulltext_local_path": null,
-  "source_record_updated": "2026-10-02",
+  "source_record_updated": "2026-10-04",
   "legacy_paths": [],
   "evidence_paths": [],
   "topic_paths": [
-    "multimodal/world-models"
-  ]
+    "multimodal/world-models",
+    "robotics/embodied-policies"
+  ],
+  "year": 2026,
+  "authors": [
+    "Ruixiang Wang",
+    "Qingming Liu",
+    "Yueci Deng",
+    "Guiliang Liu",
+    "Zhen Liu",
+    "Kui Jia"
+  ],
+  "modality_tags": [
+    "video",
+    "action"
+  ],
+  "task_tags": [
+    "generation",
+    "decision"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v2 PDF 选段：摘要、§1（可执行性定义）、§2 相关工作（GRPO、Cosmos-Predict 的奖励）、§4 方法（IDM 奖励）、§5.1 设置（LVP 初始化、GRPO、LoRA）、Table 2（RoboTwin 2.0）、Table 3（真机）、§6 结论与 Limitations；首页机构",
+    "mechanism_summary": "IDM 奖励（平滑、本体约束）+ GRPO/LoRA 后训练视频世界模型（LVP 初始化 + SFT）；RoboTwin 2.0 21 任务平均 46.2% → 52.6%（π0 45.7%）；真机已见 52% → 64%、OOD 42% → 60%（π0 OOD 11%）；局限：不建模接触力、生成慢。PDF 首页题名无 \"EVA:\" 前缀，arXiv 页面题名有。",
+    "evidence_boundary": "未复现实验；数字取自论文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2603.17808",
+      "https://arxiv.org/pdf/2603.17808v2",
+      "https://export.arxiv.org/api/query?id_list=2603.17808"
+    ],
+    "source_origin": "multimodal_phase3_card_rewrite",
+    "relation_pages": [
+      "multimodal/fields/generation/README.md",
+      "perspectives/generative-convergence.md",
+      "robotics-embodied/fields/world-models/BASELINES.md",
+      "robotics-embodied/fields/world-models/README.md",
+      "robotics-embodied/fields/world-models/ROADMAP.md"
+    ]
+  }
 }

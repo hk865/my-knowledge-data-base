@@ -6,13 +6,13 @@
   "canonical_folder": "multimodal/papers/arxiv-2307.02427",
   "official_url": "https://arxiv.org/abs/2307.02427",
   "official_fulltext_url": "https://arxiv.org/pdf/2307.02427",
-  "read_version": null,
-  "version_status": "not_pinned",
-  "reading_depth": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_sections_checked_not_full_read",
   "teaching_status": "not_created",
   "content_kind": "bibliographic_card",
   "reading_path": null,
-  "reading_boundary": "这是文献卡，目前没有该论文的独立精读正文。标题、标识或摘要层面的核验不等于全文阅读。",
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
   "user_reading_status": "not_asserted",
   "independently_reproduced": false,
   "license": {
@@ -22,10 +22,41 @@
   },
   "fulltext_local_status": "official_link_only_pending_license_verification",
   "fulltext_local_path": null,
-  "source_record_updated": "2026-10-02",
+  "source_record_updated": "2026-10-04",
   "legacy_paths": [],
   "evidence_paths": [],
   "topic_paths": [
-    "multimodal/world-models"
-  ]
+    "multimodal/world-models",
+    "robotics/embodied-policies"
+  ],
+  "year": 2023,
+  "authors": [
+    "Stefano Ferraro",
+    "Pietro Mazzaglia",
+    "Tim Verbelen",
+    "Bart Dhoedt"
+  ],
+  "modality_tags": [
+    "image",
+    "action"
+  ],
+  "task_tags": [
+    "generation",
+    "decision"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v2 PDF 选段：摘要、§1 贡献列表（物体潜表示熵作探索奖励）、§4 开头（对照 DreamerV2）与环境设置（ManiSkill2、robosuite）、§5 结论、§6 Limitations；首页机构",
+    "mechanism_summary": "DreamerV2 式模型化 RL 智能体 + 按物体分解的潜状态与掩码解码；以物体潜表示熵为探索奖励；ManiSkill2、robosuite 上比 DreamerV2 更高效，Franka 真机演示；局限：需要分割掩码、需预知物体数量与身份。",
+    "evidence_boundary": "未复现实验；数字取自论文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2307.02427",
+      "https://arxiv.org/pdf/2307.02427v2",
+      "https://export.arxiv.org/api/query?id_list=2307.02427"
+    ],
+    "source_origin": "multimodal_phase3_card_rewrite",
+    "relation_pages": [
+      "robotics-embodied/fields/world-models/BASELINES.md"
+    ]
+  }
 }

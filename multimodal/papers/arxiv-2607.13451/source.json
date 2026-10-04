@@ -6,13 +6,13 @@
   "canonical_folder": "multimodal/papers/arxiv-2607.13451",
   "official_url": "https://arxiv.org/abs/2607.13451",
   "official_fulltext_url": "https://arxiv.org/pdf/2607.13451",
-  "read_version": null,
-  "version_status": "not_pinned",
-  "reading_depth": "identity_verified_or_existing_catalog_only",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "selected_sections_checked_not_full_read",
   "teaching_status": "not_created",
   "content_kind": "bibliographic_card",
   "reading_path": null,
-  "reading_boundary": "这是文献卡，目前没有该论文的独立精读正文。标题、标识或摘要层面的核验不等于全文阅读。",
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
   "user_reading_status": "not_asserted",
   "independently_reproduced": false,
   "license": {
@@ -22,10 +22,42 @@
   },
   "fulltext_local_status": "official_link_only_pending_license_verification",
   "fulltext_local_path": null,
-  "source_record_updated": "2026-10-02",
+  "source_record_updated": "2026-10-04",
   "legacy_paths": [],
   "evidence_paths": [],
   "topic_paths": [
     "multimodal/world-models"
-  ]
+  ],
+  "year": 2026,
+  "authors": [
+    "Shivansh Patel",
+    "Kaifeng Zhang",
+    "Sanjay Pokkali",
+    "Svetlana Lazebnik",
+    "Yunzhu Li"
+  ],
+  "modality_tags": [
+    "video",
+    "action"
+  ],
+  "task_tags": [
+    "generation",
+    "decision"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v1 PDF 选段：摘要、§1（穿槽 8/10 vs 2/10）、§2 相关工作（PhysTwin、GBND、PGND）、§4.A 数据采集（六种物体、xArm 7、4 台 RealSense D455）、基线说明、MPC/MPPI 规划段、§6 结论；首页机构",
+    "mechanism_summary": "可优化弹簧—质点骨干 + 速度残差网络 + 滑动窗口 Transformer；六种真实可变形物体上优于 PhysTwin、MPM、GBND、PGND；MPPI 规划绳穿窄槽 8/10（调参弹簧—质点 2/10）；结合 3DGS 做动作条件视频预测。",
+    "evidence_boundary": "未复现实验；数字取自论文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2607.13451",
+      "https://arxiv.org/pdf/2607.13451v1",
+      "https://export.arxiv.org/api/query?id_list=2607.13451"
+    ],
+    "source_origin": "multimodal_phase3_card_rewrite",
+    "relation_pages": [
+      "robotics-embodied/fields/world-models/BASELINES.md",
+      "robotics-embodied/fields/world-models/README.md"
+    ]
+  }
 }

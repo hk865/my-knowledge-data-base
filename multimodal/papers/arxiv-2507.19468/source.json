@@ -6,13 +6,13 @@
   "canonical_folder": "multimodal/papers/arxiv-2507.19468",
   "official_url": "https://arxiv.org/abs/2507.19468",
   "official_fulltext_url": "https://arxiv.org/pdf/2507.19468",
-  "read_version": null,
-  "version_status": "not_pinned",
-  "reading_depth": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "selected_sections_checked_not_full_read",
   "teaching_status": "not_created",
   "content_kind": "bibliographic_card",
   "reading_path": null,
-  "reading_boundary": "这是文献卡，目前没有该论文的独立精读正文。标题、标识或摘要层面的核验不等于全文阅读。",
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
   "user_reading_status": "not_asserted",
   "independently_reproduced": false,
   "license": {
@@ -22,10 +22,49 @@
   },
   "fulltext_local_status": "official_link_only_pending_license_verification",
   "fulltext_local_path": null,
-  "source_record_updated": "2026-10-02",
+  "source_record_updated": "2026-10-04",
   "legacy_paths": [],
   "evidence_paths": [],
   "topic_paths": [
-    "multimodal/world-models"
-  ]
+    "multimodal/world-models",
+    "multimodal/video-temporal"
+  ],
+  "year": 2025,
+  "authors": [
+    "Federico Baldassarre",
+    "Marc Szafraniec",
+    "Basile Terver",
+    "Vasil Khalidov",
+    "Francisco Massa",
+    "Yann LeCun",
+    "Patrick Labatut",
+    "Maximilian Seitzer",
+    "Piotr Bojanowski"
+  ],
+  "modality_tags": [
+    "video",
+    "action"
+  ],
+  "task_tags": [
+    "generation",
+    "decision"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v1 PDF 选段：摘要、§1（约 6000 万网络视频、VSPW +6.3% mIoU）、§3.3 动作模块（与 DINO-WM 插 token 方式的区别）、§4.1 基线与数据、直觉物理基准、§4.3 与 Table 4（PushT、Wall、PointMaze）、§5 结论；首页机构",
+    "mechanism_summary": "冻结 DINOv2 + 未来特征预测器，约 6000 万未筛选网络视频；VSPW 0.5 s 分割预测 mIoU 领先第二名 6.3%；IntPhys、GRASP、InfLevel 直觉物理；后训练动作模块用于规划，Table 4：PushT 46.9%（从头）→ 59.4%（微调），Wall 87.1 → 93.8，PointMaze 59.4 → 68.7。",
+    "evidence_boundary": "未复现实验；数字取自论文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2507.19468",
+      "https://arxiv.org/pdf/2507.19468v1",
+      "https://export.arxiv.org/api/query?id_list=2507.19468"
+    ],
+    "source_origin": "multimodal_phase3_card_rewrite",
+    "relation_pages": [
+      "multimodal/fields/visual-representation/README.md",
+      "multimodal/fields/world-models/README.md",
+      "robotics-embodied/fields/world-models/BASELINES.md",
+      "robotics-embodied/fields/world-models/README.md"
+    ]
+  }
 }

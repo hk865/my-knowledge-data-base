@@ -36,9 +36,7 @@
     "Joe Taylor",
     "Troy Luhman",
     "Eric Luhman",
-    "Clarence Ng",
-    "Ricky Wang",
-    "Aditya Ramesh"
+    "等 13 位作者"
   ],
   "year": 2024,
   "topic_paths": [
@@ -59,7 +57,8 @@
     "relation_pages": [
       "perspectives/generative-convergence.md",
       "multimodal/fields/generation/README.md"
-    ]
+    ],
+    "identity_check": "2026-10-04 多模态文献卡重写：题名、年份与作者对照 官方页面；作者超过 12 人时取前 10 位加\"等 N 位作者\"（N 为个人作者数，不含团队署名）。"
   },
   "published_date": "2024-02-15",
   "modality_tags": [

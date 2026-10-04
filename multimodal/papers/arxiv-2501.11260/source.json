@@ -6,13 +6,13 @@
   "canonical_folder": "multimodal/papers/arxiv-2501.11260",
   "official_url": "https://arxiv.org/abs/2501.11260",
   "official_fulltext_url": "https://arxiv.org/pdf/2501.11260",
-  "read_version": null,
-  "version_status": "not_pinned",
-  "reading_depth": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+  "read_version": "v4",
+  "version_status": "checked_v4",
+  "reading_depth": "selected_sections_checked_not_full_read",
   "teaching_status": "not_created",
   "content_kind": "bibliographic_card",
   "reading_path": null,
-  "reading_boundary": "这是文献卡，目前没有该论文的独立精读正文。标题、标识或摘要层面的核验不等于全文阅读。",
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
   "user_reading_status": "not_asserted",
   "independently_reproduced": false,
   "license": {
@@ -22,10 +22,41 @@
   },
   "fulltext_local_status": "official_link_only_pending_license_verification",
   "fulltext_local_path": null,
-  "source_record_updated": "2026-10-02",
+  "source_record_updated": "2026-10-04",
   "legacy_paths": [],
   "evidence_paths": [],
   "topic_paths": [
-    "multimodal/world-models"
-  ]
+    "multimodal/world-models",
+    "robotics/navigation-planning"
+  ],
+  "year": 2025,
+  "authors": [
+    "Tuo Feng",
+    "Wenguan Wang",
+    "Yi Yang"
+  ],
+  "modality_tags": [
+    "video",
+    "action"
+  ],
+  "task_tags": [
+    "generation",
+    "decision"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v4 PDF 首页（作者、机构、ACM 投稿格式说明）、§8 结论开头",
+    "mechanism_summary": "三层分类：未来物理世界生成（图像、BEV、占据、点云）、行为规划、预测与规划交互；训练范式与性能比较；持续更新项目（arXiv comment）。浙江大学 CCAI。",
+    "evidence_boundary": "未复现实验；数字取自论文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2501.11260",
+      "https://arxiv.org/pdf/2501.11260v4",
+      "https://export.arxiv.org/api/query?id_list=2501.11260"
+    ],
+    "source_origin": "multimodal_phase3_card_rewrite",
+    "relation_pages": [
+      "multimodal/fields/world-models/README.md",
+      "robotics-embodied/fields/world-models/BASELINES.md"
+    ]
+  }
 }

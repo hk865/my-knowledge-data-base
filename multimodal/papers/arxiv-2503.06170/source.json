@@ -6,13 +6,13 @@
   "canonical_folder": "multimodal/papers/arxiv-2503.06170",
   "official_url": "https://arxiv.org/abs/2503.06170",
   "official_fulltext_url": "https://arxiv.org/pdf/2503.06170",
-  "read_version": null,
-  "version_status": "not_pinned",
-  "reading_depth": "identity_verified_or_existing_catalog_only",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_sections_checked_not_full_read",
   "teaching_status": "not_created",
   "content_kind": "bibliographic_card",
   "reading_path": null,
-  "reading_boundary": "这是文献卡，目前没有该论文的独立精读正文。标题、标识或摘要层面的核验不等于全文阅读。",
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
   "user_reading_status": "not_asserted",
   "independently_reproduced": false,
   "license": {
@@ -22,10 +22,43 @@
   },
   "fulltext_local_status": "official_link_only_pending_license_verification",
   "fulltext_local_path": null,
-  "source_record_updated": "2026-10-02",
+  "source_record_updated": "2026-10-04",
   "legacy_paths": [],
   "evidence_paths": [],
   "topic_paths": [
-    "multimodal/world-models"
-  ]
+    "multimodal/world-models",
+    "robotics/embodied-policies"
+  ],
+  "year": 2025,
+  "authors": [
+    "Youngjoon Jeong",
+    "Junha Chun",
+    "Soonwoo Cha",
+    "Taesup Kim"
+  ],
+  "modality_tags": [
+    "text",
+    "image",
+    "action",
+    "multimodal"
+  ],
+  "task_tags": [
+    "generation",
+    "decision"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v2 PDF 选段：摘要、§1 贡献、§2（SAVi、SlotFormer）、§4.3 评测设置（Language Table，200 回合）、Table 1、§5 结论、附录 A.1 局限；首页机构",
+    "mechanism_summary": "SAVi 槽表示 + 语言条件的 SlotFormer 式动力学 + 动作解码；Language Table 仿真：阈值 0.05 成功率 50.0%，Susie+SAVi 13.0%、Susie+VAE 12.0%、Seer 系列 ≤0.5%；局限：仅仿真、槽注意力对物体数量不鲁棒、确定性模型。",
+    "evidence_boundary": "未复现实验；数字取自论文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2503.06170",
+      "https://arxiv.org/pdf/2503.06170v2",
+      "https://export.arxiv.org/api/query?id_list=2503.06170"
+    ],
+    "source_origin": "multimodal_phase3_card_rewrite",
+    "relation_pages": [
+      "robotics-embodied/fields/world-models/BASELINES.md"
+    ]
+  }
 }

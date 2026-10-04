@@ -118,6 +118,69 @@
       "source_location": "AppendicesB–C/Table12–13 p12",
       "kind": "paper_evidence",
       "interpretation_limit": "Different from main800epochablation;higherresolutiondoesnothelpallsets"
+    },
+    {
+      "id": "mae-15",
+      "claim": "Intro attributes vision-language gap in masked autoencoding to architecture, information density, and decoder role",
+      "source_location": "§1 pp1-2",
+      "kind": "paper_evidence",
+      "interpretation_limit": ""
+    },
+    {
+      "id": "mae-16",
+      "claim": "Default decoder (8 blocks, 512-d) has 9% FLOPs per token vs ViT-L",
+      "source_location": "§4.1 p5",
+      "kind": "paper_evidence",
+      "interpretation_limit": "Reading-page hand estimate with 24d^2 gives ~8% per token and ~3.2x total ratio vs Table 1c 3.3x"
+    },
+    {
+      "id": "mae-17",
+      "claim": "Table 1e: no augmentation 84.0/65.7; random-size crop 84.9/73.5; + color jitter 84.3/71.9",
+      "source_location": "Table 1e p5",
+      "kind": "paper_evidence",
+      "interpretation_limit": ""
+    },
+    {
+      "id": "mae-18",
+      "claim": "Appendix A.4: relative position bias turned on only during ADE20K transfer, zero-initialized",
+      "source_location": "Appendix A.4 p12",
+      "kind": "paper_evidence",
+      "interpretation_limit": ""
+    },
+    {
+      "id": "mae-19",
+      "claim": "DINOv2 related work: MAE features require supervised finetuning; property validated on video, audio, other modalities",
+      "source_location": "DINOv2 (arXiv:2304.07193) §2 p3",
+      "kind": "later_work_evidence",
+      "interpretation_limit": ""
+    },
+    {
+      "id": "mae-20",
+      "claim": "Registers Appendix E: no artifacts in MAE feature maps, hypothesized due to local patch loss; MAE ViT-L ~75% linear makes fine-tuning a requirement",
+      "source_location": "Registers (arXiv:2309.16588v2) Appendix E p16",
+      "kind": "later_work_evidence",
+      "interpretation_limit": ""
+    },
+    {
+      "id": "mae-21",
+      "claim": "I-JEPA: pixel/token reconstruction yields lower semantic level, underperforms in linear probing and low-shot, needs end-to-end fine-tuning; predicts in representation space",
+      "source_location": "I-JEPA (arXiv:2301.08243v3) §1 pp1-2",
+      "kind": "later_work_evidence",
+      "interpretation_limit": ""
+    },
+    {
+      "id": "mae-22",
+      "claim": "Web-MAE 1B-5B on MC-2B: VQA improves with size; well-suited for OCR & Chart, underperforms in other domains",
+      "source_location": "Web-SSL (arXiv:2504.01017) §4 Question 1, Fig.5",
+      "kind": "later_work_evidence",
+      "interpretation_limit": ""
+    },
+    {
+      "id": "mae-23",
+      "claim": "DeiT-B reaches 81.8% on ImageNet-1k only at 224 vs ViT-B 77.91% at 384",
+      "source_location": "DeiT (arXiv:2012.12877v2) Table 5, footnote p14",
+      "kind": "later_work_evidence",
+      "interpretation_limit": ""
     }
   ],
   "diagram": {

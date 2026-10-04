@@ -6,13 +6,13 @@
   "canonical_folder": "multimodal/papers/arxiv-2408.14197",
   "official_url": "https://arxiv.org/abs/2408.14197",
   "official_fulltext_url": "https://arxiv.org/pdf/2408.14197",
-  "read_version": null,
-  "version_status": "not_pinned",
-  "reading_depth": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
+  "read_version": "v3",
+  "version_status": "checked_v3",
+  "reading_depth": "selected_sections_checked_not_full_read",
   "teaching_status": "not_created",
   "content_kind": "bibliographic_card",
   "reading_path": null,
-  "reading_boundary": "这是文献卡，目前没有该论文的独立精读正文。标题、标识或摘要层面的核验不等于全文阅读。",
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
   "user_reading_status": "not_asserted",
   "independently_reproduced": false,
   "license": {
@@ -22,10 +22,46 @@
   },
   "fulltext_local_status": "official_link_only_pending_license_verification",
   "fulltext_local_path": null,
-  "source_record_updated": "2026-10-02",
+  "source_record_updated": "2026-10-04",
   "legacy_paths": [],
   "evidence_paths": [],
   "topic_paths": [
-    "multimodal/world-models"
-  ]
+    "multimodal/world-models",
+    "robotics/navigation-planning"
+  ],
+  "year": 2024,
+  "authors": [
+    "Yu Yang",
+    "Jianbiao Mei",
+    "Yukai Ma",
+    "Siliang Du",
+    "Wenqing Chen",
+    "Yijie Qian",
+    "Yuxiang Feng",
+    "Yong Liu"
+  ],
+  "modality_tags": [
+    "video",
+    "action"
+  ],
+  "task_tags": [
+    "generation",
+    "decision"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v3 PDF 选段：摘要、§4.1 评测指标、§4.2 开头（Drive-OccWorld-A / -P 两种条件）、规划结果段（相对 UniAD 的 L2 降幅）、§5 结论；首页作者与机构",
+    "mechanism_summary": "相机输入的 4D 占据与流预测世界模型；记忆模块的语义与运动条件归一化；速度、转向角、轨迹、指令等动作条件注入；基于占据代价的规划器；nuScenes L2@1/2/3s 相对 UniAD 降 33%/22%/9.7%。arXiv 注明 AAAI 2025 接收。",
+    "evidence_boundary": "未复现实验；数字取自论文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2408.14197",
+      "https://arxiv.org/pdf/2408.14197v3",
+      "https://export.arxiv.org/api/query?id_list=2408.14197"
+    ],
+    "source_origin": "multimodal_phase3_card_rewrite",
+    "relation_pages": [
+      "multimodal/fields/world-models/README.md",
+      "robotics-embodied/fields/world-models/BASELINES.md"
+    ]
+  }
 }

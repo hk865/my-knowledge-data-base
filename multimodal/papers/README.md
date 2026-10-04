@@ -44,3 +44,61 @@
 - [Seedance 2.0: Advancing Video Generation for World Complexity](arxiv-2604.14148/README.md) · 2026 · 文献卡，暂无独立精读
 - [Video generation models as world simulators](sora-tech-report/README.md) · 2024 · 文献卡，暂无独立精读
 - [Veo: a text-to-video generation system](veo3-tech-report/README.md) · 2025 · 文献卡，暂无独立精读
+- [Scaling Up Visual and Vision-Language Representation Learning With Noisy Text Supervision](arxiv-2102.05918/README.md) · 2021 · 文献卡，暂无独立精读
+- [LiT: Zero-Shot Transfer with Locked-image text Tuning](arxiv-2111.07991/README.md) · 2021 · 文献卡，暂无独立精读
+- [Reproducible scaling laws for contrastive language-image learning](arxiv-2212.07143/README.md) · 2022 · 文献卡，暂无独立精读
+- [Sigmoid Loss for Language Image Pre-Training](arxiv-2303.15343/README.md) · 2023 · 文献卡，暂无独立精读
+- [SigLIP 2: Multilingual Vision-Language Encoders with Improved Semantic Understanding, Localization, and Dense Features](arxiv-2502.14786/README.md) · 2025 · 文献卡，暂无独立精读
+- [EVA-CLIP: Improved Training Techniques for CLIP at Scale](arxiv-2303.15389/README.md) · 2023 · 文献卡，暂无独立精读
+- [CoCa: Contrastive Captioners are Image-Text Foundation Models](arxiv-2205.01917/README.md) · 2022 · 文献卡，暂无独立精读
+- [BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation](arxiv-2201.12086/README.md) · 2022 · 文献卡，暂无独立精读
+- [LAION-5B: An open large-scale dataset for training next generation image-text models](arxiv-2210.08402/README.md) · 2022 · 文献卡，暂无独立精读
+- [DataComp: In search of the next generation of multimodal datasets](arxiv-2304.14108/README.md) · 2023 · 文献卡，暂无独立精读
+- [Demystifying CLIP Data](arxiv-2309.16671/README.md) · 2023 · 文献卡，暂无独立精读
+- [Winoground: Probing Vision and Language Models for Visio-Linguistic Compositionality](arxiv-2204.03162/README.md) · 2022 · 文献卡，暂无独立精读
+- [When and why vision-language models behave like bags-of-words, and what to do about it?](arxiv-2210.01936/README.md) · 2022 · 文献卡，暂无独立精读
+- [SugarCrepe: Fixing Hackable Benchmarks for Vision-Language Compositionality](arxiv-2306.14610/README.md) · 2023 · 文献卡，暂无独立精读
+- [Eyes Wide Shut? Exploring the Visual Shortcomings of Multimodal LLMs](arxiv-2401.06209/README.md) · 2024 · 文献卡，暂无独立精读
+- [Two-Stream Convolutional Networks for Action Recognition in Videos](arxiv-1406.2199/README.md) · 2014 · 文献卡，暂无独立精读
+- [Quo Vadis, Action Recognition? A New Model and the Kinetics Dataset](arxiv-1705.07750/README.md) · 2017 · 文献卡，暂无独立精读
+- [The "something something" video database for learning and evaluating visual common sense](arxiv-1706.04261/README.md) · 2017 · 文献卡，暂无独立精读
+- [SlowFast Networks for Video Recognition](arxiv-1812.03982/README.md) · 2018 · 文献卡，暂无独立精读
+- [Is Space-Time Attention All You Need for Video Understanding?](arxiv-2102.05095/README.md) · 2021 · 文献卡，暂无独立精读
+- [ViViT: A Video Vision Transformer](arxiv-2103.15691/README.md) · 2021 · 文献卡，暂无独立精读
+- [VideoMAE: Masked Autoencoders are Data-Efficient Learners for Self-Supervised Video Pre-Training](arxiv-2203.12602/README.md) · 2022 · 文献卡，暂无独立精读
+- [Revealing Single Frame Bias for Video-and-Language Learning](arxiv-2206.03428/README.md) · 2022 · 文献卡，暂无独立精读
+- [EgoSchema: A Diagnostic Benchmark for Very Long-form Video Language Understanding](arxiv-2308.09126/README.md) · 2023 · 文献卡，暂无独立精读
+- [Revisiting Feature Prediction for Learning Visual Representations from Video](arxiv-2404.08471/README.md) · 2024 · 文献卡，暂无独立精读
+- [InternVideo2: Scaling Foundation Models for Multimodal Video Understanding](arxiv-2403.15377/README.md) · 2024 · 文献卡，暂无独立精读
+- [Video-LLaVA: Learning United Visual Representation by Alignment Before Projection](arxiv-2311.10122/README.md) · 2023 · 文献卡，暂无独立精读
+- [LLaVA-Video: Video Instruction Tuning With Synthetic Data](arxiv-2410.02713/README.md) · 2024 · 文献卡，暂无独立精读
+- [Video-MME: The First-Ever Comprehensive Evaluation Benchmark of Multi-modal LLMs in Video Analysis](arxiv-2405.21075/README.md) · 2024 · 文献卡，暂无独立精读
+- [Diffusion Models Are Real-Time Game Engines](arxiv-2408.14837/README.md) · 2024 · 文献卡，暂无独立精读
+- [GAIA-1: A Generative World Model for Autonomous Driving](arxiv-2309.17080/README.md) · 2023 · 文献卡，暂无独立精读
+- [Do generative video models understand physical principles?](arxiv-2501.09038/README.md) · 2025 · 文献卡，暂无独立精读
+- [How Far is Video Generation from World Model: A Physical Law Perspective](arxiv-2411.02385/README.md) · 2024 · 文献卡，暂无独立精读
+- [VideoPhy: Evaluating Physical Commonsense for Video Generation](arxiv-2406.03520/README.md) · 2024 · 文献卡，暂无独立精读
+- [Diffusion for World Modeling: Visual Details Matter in Atari](arxiv-2405.12399/README.md) · 2024 · 文献卡，暂无独立精读
+- [Flamingo: a Visual Language Model for Few-Shot Learning](arxiv-2204.14198/README.md) · 2022 · 文献卡，暂无独立精读
+- [PaLI: A Jointly-Scaled Multilingual Language-Image Model](arxiv-2209.06794/README.md) · 2022 · 文献卡，暂无独立精读
+- [BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image Encoders and Large Language Models](arxiv-2301.12597/README.md) · 2023 · 文献卡，暂无独立精读
+- [Improved Baselines with Visual Instruction Tuning](arxiv-2310.03744/README.md) · 2023 · 文献卡，暂无独立精读
+- [Evaluating Object Hallucination in Large Vision-Language Models](arxiv-2305.10355/README.md) · 2023 · 文献卡，暂无独立精读
+- [Qwen-VL: A Versatile Vision-Language Model for Understanding, Localization, Text Reading, and Beyond](arxiv-2308.12966/README.md) · 2023 · 文献卡，暂无独立精读
+- [InternVL: Scaling up Vision Foundation Models and Aligning for Generic Visual-Linguistic Tasks](arxiv-2312.14238/README.md) · 2023 · 文献卡，暂无独立精读
+- [Gemini: A Family of Highly Capable Multimodal Models](arxiv-2312.11805/README.md) · 2023 · 文献卡，暂无独立精读
+- [DeepSeek-VL: Towards Real-World Vision-Language Understanding](arxiv-2403.05525/README.md) · 2024 · 文献卡，暂无独立精读
+- [Are We on the Right Way for Evaluating Large Vision-Language Models?](arxiv-2403.20330/README.md) · 2024 · 文献卡，暂无独立精读
+- [How Far Are We to GPT-4V? Closing the Gap to Commercial Multimodal Models with Open-Source Suites](arxiv-2404.16821/README.md) · 2024 · 文献卡，暂无独立精读
+- [Chameleon: Mixed-Modal Early-Fusion Foundation Models](arxiv-2405.09818/README.md) · 2024 · 文献卡，暂无独立精读
+- [Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs](arxiv-2406.16860/README.md) · 2024 · 文献卡，暂无独立精读
+- [Qwen2-VL: Enhancing Vision-Language Model's Perception of the World at Any Resolution](arxiv-2409.12191/README.md) · 2024 · 文献卡，暂无独立精读
+- [Molmo and PixMo: Open Weights and Open Data for State-of-the-Art Vision-Language Models](arxiv-2409.17146/README.md) · 2024 · 文献卡，暂无独立精读
+- [Expanding Performance Boundaries of Open-Source Multimodal Models with Model, Data, and Test-Time Scaling](arxiv-2412.05271/README.md) · 2024 · 文献卡，暂无独立精读
+- [DeepSeek-VL2: Mixture-of-Experts Vision-Language Models for Advanced Multimodal Understanding](arxiv-2412.10302/README.md) · 2024 · 文献卡，暂无独立精读
+- [Qwen2.5-VL Technical Report](arxiv-2502.13923/README.md) · 2025 · 文献卡，暂无独立精读
+- [Kimi-VL Technical Report](arxiv-2504.07491/README.md) · 2025 · 文献卡，暂无独立精读
+- [InternVL3: Exploring Advanced Training and Test-Time Recipes for Open-Source Multimodal Models](arxiv-2504.10479/README.md) · 2025 · 文献卡，暂无独立精读
+- [Qwen3-VL Technical Report](arxiv-2511.21631/README.md) · 2025 · 文献卡，暂无独立精读
+- [Genie 2: A large-scale foundation world model](genie-2-blog/README.md) · 2024 · 文献卡，暂无独立精读
+- [Genie 3: A new frontier for world models](genie-3-blog/README.md) · 2025 · 文献卡，暂无独立精读

@@ -26,7 +26,17 @@
   "legacy_paths": [],
   "evidence_paths": [],
   "authors": [
-    "Kling Team, Kuaishou Technology"
+    "Kling Team",
+    "Jialu Chen",
+    "Yuanzheng Ci",
+    "Xiangyu Du",
+    "Zipeng Feng",
+    "Kun Gai",
+    "Sainan Guo",
+    "Feng Han",
+    "Jingbin He",
+    "Kang He",
+    "等 67 位作者"
   ],
   "year": 2025,
   "topic_paths": [
@@ -46,7 +56,8 @@
     "relation_pages": [
       "perspectives/generative-convergence.md",
       "multimodal/fields/generation/README.md"
-    ]
+    ],
+    "identity_check": "2026-10-04 多模态文献卡重写：题名、年份与作者对照 arXiv API 与 PDF 首页；作者超过 12 人时取前 10 位加\"等 N 位作者\"（N 为个人作者数，不含团队署名）。"
   },
   "modality_tags": [
     "video",
