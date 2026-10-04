@@ -1,6 +1,6 @@
 # 架构与效率
 
-> 状态：领域入门页（研究对象变体）· v2 · 依据 [synthesis.csv](synthesis.csv)（21 篇）
+> 状态：领域入门页（研究对象变体）· v2 · 依据 [synthesis.csv](synthesis.csv)（23 篇）
 >
 > 速览：
 > 1. 本方向研究网络结构本身：token 之间怎样交换信息（注意力及其替代），每个 token 怎样被加工（FFN、MoE、查表记忆），几十上百层怎样串起来（归一化与残差），生成时缓存什么（KV 缓存）。它没有专属的 benchmark，好坏只能写成"某类工作负载下、花多少成本、得到多少质量"，所以本页先讲任务和测量，再讲方法谱系与历史。
@@ -109,8 +109,10 @@ benchmark 的替换就是这个方向目标的迁移：WMT 机器翻译的 BLEU�
 | 路线 | 代表 | 怎样省 | 做不好的地方 |
 |---|---|---|---|
 | 局部窗口与局部/全局交错 | Transformer §7 把"局部、受限的注意力"列为未来方向；Gemma 2（局部:全局 1:1，窗口 4096）→ Gemma 3（5:1，窗口 1024）→ Gemma 4（5:1，全局层的 key 兼作 value） | 只有全局层看全长；Gemma 3 的消融中局部:全局到 7:1 验证困惑度变化也很小 | 全局层仍按全长计算；窗口外的信息只能经全局层传递 |
+| 局部窗口（2025–2026 的两种相反选择） | [gpt-oss](https://arxiv.org/abs/2508.10925)（OpenAI 2025-08）：带宽 128 token 的窗口层与稠密层交替，每个头带一个可学习的 softmax 分母偏置（作用同 sink）；[MiniMax-M2](../../papers/arxiv-2605.26494/README.md)（2026-05）：试过多种滑窗混合后全部改回全注意力 | gpt-oss 只有一半层看全长 | MiniMax-M2 报告滑窗混合在多跳推理、检索、上下文学习上变差，SFT 后 32K 以上更明显（§2.2.2） |
 | 推理期事后稀疏与 KV 逐出 | H2O（按累计注意力逐出 KV）、Quest、[StreamingLLM](../../papers/arxiv-2309.17453/README.md) | 不改训练，推理时只保留或只读一部分 KV | 每查询约 2560 个 token 的同等预算下，LongBench 平均 H2O 0.303、全注意力 0.437（NSA Table 2）；StreamingLLM 作者写明不适合需要长程记忆的任务 |
 | 训练时稀疏 | [NSA](../../papers/arxiv-2502.11089/README.md)（2025）→ DSA（[DeepSeek-V3.2](../../papers/arxiv-2512.02556/README.md)）→ CSA/HCA（DeepSeek-V4）→ CSA2（V4.1-Flash） | 压缩块、选块、滑窗三路合并，从预训练起端到端训练；64K 长度解码最多快 11.6 倍，LongBench 0.469 高于全注意力 | DSA 的索引器本身仍随长度平方增长（V3.2 §2）；NSA 为训练稳定把第一层的 MoE 换回普通 MLP；V4.1-Flash 自述选择误差可能在未测试的边界情形下损害能力 |
+| 训练时稀疏被其他团队采用 | [GLM-5](../../papers/arxiv-2602.15763/README.md)（智谱 2026-02）在中段训练后从 MLA 转成 DSA：1000 步稠密预热 + 20B token 稀疏适应 | 长序列注意力计算省 1.5–2 倍；128K RULER 78.86，稠密 MLA 79.21 | RL 中非确定性的 top-k 会让训练几步内崩溃，要冻结索引器、改用确定性实现 |
 
 做不好的场景：NSA §2 引用的研究显示，事后取 top 20% 的注意力只覆盖约 70% 的注意力分数，预训练中形成的检索头容易在推理时被剪掉；只稀疏化预填充（如 MInference）或只稀疏化解码（如 H2O）的方法，在另一阶段仍与全注意力一样贵。
 
@@ -129,6 +131,8 @@ benchmark 的替换就是这个方向目标的迁移：WMT 机器翻译的 BLEU�
 | [Based](../../papers/arxiv-2402.18668/README.md)（Stanford 2024） | 泰勒近似的线性注意力 + 64–128 宽的滑动窗口 | 1.3B 上召回密集任务比 Mamba 高 10.36 个百分点；生成吞吐为 FlashAttention-2 的 24 倍 | 原文证明任何递推模型解联想召回都需要随长度线性增长的状态 |
 | [Jamba](../../papers/arxiv-2403.19887/README.md)（AI21 2024） | 注意力:Mamba = 1:7，加 MoE | 256K 上下文 KV 缓存 4GB，Mixtral 为 32GB | 7B 级时 Mamba 层内部出现大激活值与损失尖峰，加 RMSNorm 才稳定 |
 | [Kimi Linear](../../papers/arxiv-2510.26692/README.md)（2025）→ [Kimi K3](../../papers/arxiv-2607.24653/README.md)（2026） | KDA（带逐通道遗忘门的线性注意力）:MLA = 3:1，全局层不用位置编码；K3 最后一层固定为全局注意力 | 相同 1.4T token 配方下超过全 MLA 基线；KV 缓存最多少 75% | 7:1 时分布外验证明显变差；作者把长上下文检索列为纯线性结构的主要瓶颈 |
+| [Qwen3.5](../../papers/qwen3.5/README.md)（2026-02）→ Qwen3.6（2026-04） | Gated DeltaNet:门控注意力 = 3:1（沿用 Qwen3-Next），稠密的 27B 与 MoE 都用 | 原生 262K，可扩展到约 1M | 只有模型卡，没有消融 |
+| [Nemotron 3](../../papers/arxiv-2512.20856/README.md)（NVIDIA 2025-12） | Mamba-2 与 MoE 交错为主，只留少数注意力层，注意力层不用 RoPE | Nano 吞吐为 Qwen3-30B-A3B 的 3.3 倍（8K 入、16K 出）；1M RULER 54.19 | 白皮书未给出层比例；1M 上仍只有约一半 |
 
 做不好的场景：[Repeat After Me](../../papers/arxiv-2402.01032/README.md) 证明固定状态的模型无法准确复制比状态比特数更长的串，学会复制长度 300 的串所需样本是 Transformer 的 100 倍以上；Jamba 中 1.3B 的纯 Mamba 在 IMDB 上常不按"Positive / Negative"作答，得分 48.8，纯注意力 84.1，混合 90.9；Based 测得召回密集任务上注意力比 Mamba 高 32.2 个百分点。
 
@@ -148,6 +152,7 @@ benchmark 的替换就是这个方向目标的迁移：WMT 机器翻译的 BLEU�
 | [DeepSeekMoE](../../papers/arxiv-2401.06066/README.md)（2024） | 专家切细（更多更小的专家、每 token 激活更多个），并隔离出所有 token 共用的共享专家 | 2B 规模与专家参数和计算量都是其 1.5 倍的 GShard 相当 | 16B 在选择题上偏弱，作者归因于注意力参数只有约 0.5B |
 | [无辅助损失均衡](../../papers/arxiv-2408.15664/README.md)（DeepSeek 2024）→ [DeepSeek-V3](../../papers/arxiv-2412.19437/README.md) | 用按负载调整的路由偏置代替负载均衡辅助损失 | 1B 模型验证困惑度 9.56 → 9.50，全局负载偏离 0.72 → 0.04 | 验证只到 3B；V3 仍保留极小的序列级损失 |
 | Kimi K2、K3；DeepSeek-V4 | K2 按稀疏度规模定律把专家增到 384；K3 用 896 个专家、在半宽潜空间里计算，按分位数设定偏置；V4 前 3 个 MoE 层按 token ID 哈希路由 | 固定激活参数时，专家越多损失越低（K2） | V4 训练中 MoE 层离群值引发损失尖峰，两种修补的原理不明；K3 的路由分支出现内部激活爆炸，近千个专家超出逐步调偏置的适用范围 |
+| Qwen3.5、MiniMax-M2、Nemotron 3（2025-12 – 2026） | Qwen3.5 用 512 个专家、每 token 激活 10 个路由专家加 1 个共享专家；MiniMax-M2 用 256 个专家激活 8 个、sigmoid 门控加可学习的逐专家偏置；Nemotron 3 的 LatentMoE 把 token 投到更小的潜空间里路由与计算，路由参数与 all-to-all 通信约省 4 倍 | 极低激活比（MiniMax-M2 每 token 激活 4.3%）；LatentMoE 省下的预算用于更多专家 | 三家都未给出与本表前几代的同条件对照 |
 
 各代的专家数、激活数与均衡方式的对照表在[预训练方向](../pretraining/README.md)"更深更大的网络"一节。
 
@@ -254,6 +259,11 @@ benchmark 的替换就是这个方向目标的迁移：WMT 机器翻译的 BLEU�
 | 阿里巴巴 Qwen | GQA 加 QK-Norm 的稠密/MoE 模型；研究注意力内部的门控 | Qwen2.5、Qwen3、Gated Attention | 门控的作用机制尚无理论解释 |
 | 学界与 AI21（CMU、Princeton、Stanford、Harvard、AI21） | 用递推状态替代或部分替代注意力，并用合成任务测量代价 | LRU、Mamba、Based、Repeat After Me、Jamba | 规模多在 3B 以下；纯 SSM 召回与上下文学习弱 |
 | ByteDance Seed | 改造残差连接 | Hyper-Connections | 无约束的混合在更大规模上不稳（mHC 的测量） |
+| 智谱（GLM） | 不自研注意力，直接采用 DeepSeek 的 DSA，并在 9B 上比较了滑窗与线性注意力 | [GLM-5](../../papers/arxiv-2602.15763/README.md) | 128K 上比稠密低 0.35 分 |
+| MiniMax | 从 Lightning Attention 混合（MiniMax-Text-01）退回全注意力，等基础设施与评测成熟 | [MiniMax-M2](../../papers/arxiv-2605.26494/README.md) | 长序列成本按平方增长 |
+| NVIDIA | Mamba-2 为主的混合加 LatentMoE，全部公开 | [Nemotron 3](../../papers/arxiv-2512.20856/README.md) | 层比例与消融在白皮书中未量化 |
+| 阿里巴巴 Qwen（2026 起） | 从 GQA 稠密/MoE 转为 Gated DeltaNet 3:1 混合 | [Qwen3.5](../../papers/qwen3.5/README.md) | 只有模型卡 |
+| OpenAI（开放权重） | 窗口层与稠密层交替、GQA、可学习的 sink 偏置、MoE 权重 4 位（MXFP4）后训练量化 | [gpt-oss 模型卡](https://arxiv.org/abs/2508.10925) | 闭源主力模型的结构仍不公开 |
 
 `[判断]` 收敛与分化：MoE 与"少量全局层 + 大量省 KV 的层"已是开源大模型的共同选择；KV 缓存压缩各家都做。分化在三处：长上下文用训练时稀疏（DeepSeek）还是线性混合（Kimi）；注意力汇聚是消除（Qwen）还是显式提供（DeepSeek-V4）；残差流用约束混合（DeepSeek）还是跨层注意力（Kimi）。
 
@@ -318,3 +328,10 @@ benchmark 的替换就是这个方向目标的迁移：WMT 机器翻译的 BLEU�
 - Mamba-2、Gated DeltaNet 等 KDA 的直接前作未打开；KDA"在 Gated DeltaNet 基础上改为逐通道遗忘门"取自 Kimi Linear 卡片。
 - Based 的发表信息以 arXiv v2 页脚为准（ICML 2024 研讨会），是否另有会议正式版未核实。
 - Kimi K2 与 K3 的注意力头数、专家配置取自卡片与预训练方向，本轮未重新打开原文。
+- 2025-10 以后新增的表格行（GLM-5、Qwen3.5/3.6、Nemotron 3、MiniMax-M2、gpt-oss）依据各篇卡片中核对过的章节；Qwen3.5 只有模型卡，Nemotron 3 只读了总览白皮书，Super 与 Ultra 的单独报告（arXiv 2604.12374、2606.15007）未打开；Gemma 4 的 MoE 版本与 Llama 4 的原始发布材料未打开。
+
+**与原结论的张力（2025-10 以后的材料）**
+
+- 主要路线表中 Meta 一行写"稠密结构加 GQA"，依据是 Llama 3。ScaleRL（Meta 等，2025-10）的实验用的是"17B×16 专家的 Llama-4 Scout MoE"，说明 Llama 4 已是 MoE；这一行描述的是 2024 年的 Llama 3。Meta 2026-04 的 Muse Spark 博客只说重建了结构、优化与数据，没有给出结构。
+- 主要路线表中阿里巴巴 Qwen 一行写"GQA 加 QK-Norm 的稠密/MoE 模型"，依据是 Qwen2.5 与 Qwen3；2026 年的 Qwen3.5 与 Qwen3.6 已改为 Gated DeltaNet 与门控注意力 3:1 的混合，与 Kimi 的线性混合同一方向。
+- 收敛判断"少量全局层 + 大量省 KV 的层已是开源大模型的共同选择"有一个明确的反例：MiniMax-M2 全部层用全注意力，并写明试过的滑窗混合在多跳推理上变差。"分化：训练时稀疏（DeepSeek）还是线性混合（Kimi）"在 2026 年扩展到其他团队：GLM-5 选了前者，Qwen3.5 与 Nemotron 3 选了后者一侧。

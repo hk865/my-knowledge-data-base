@@ -1,6 +1,6 @@
 # 后训练
 
-> 状态：领域总览 · v1 · 依据三个子方向的综合表（[SFT](sft/synthesis.csv)、[偏好学习](preferences/synthesis.csv)、[强化学习](rl/synthesis.csv)，共 44 行）
+> 状态：领域总览 · v1 · 依据三个子方向的综合表（[SFT](sft/synthesis.csv)、[偏好学习](preferences/synthesis.csv)、[强化学习](rl/synthesis.csv)，共 52 行）
 >
 > 速览：
 > 1. 预训练给出结构先验与世界知识，后训练决定模型怎样使用它们：SFT 教格式与指令遵循，偏好学习按人的比较调整取舍与风格，强化学习在可验证的奖励上把"偶尔做对"变成"稳定做对"，并学会花更多 token 思考。三者都很少增加知识：LIMA 只用 1,000 条示范，Llama 3 把"让模型知道自己知道什么，而不是添加知识"写成原则，DeepSeek-V3.2 把知识广度的差距推回预训练。
@@ -148,6 +148,11 @@
 
 `[判断]` 从这一阶段回看，2025 年初"纯 RL"的叙事已被修正：大规模 RL 主要用来造出各领域的专家和数据，最终模型更多靠蒸馏得到。这与 Qwen3、DeepSeek-R1、Yue 等的观察一致：蒸馏比 RL 更省、更能扩大 pass@k。
 
+同一时期（2025-10 – 2026-09）其他团队的报告补充了三点，其中一点与上面的判断相反：
+- **RL 开始有规模规律。** [ScaleRL](../../papers/arxiv-2510.13786/README.md)（Meta 等）用 S 形曲线拟合 RL 算力与验证通过率，发现多数稳定性补丁只改变效率、不改上限，稳定的配方可从小规模外推；输出层 logits 改用 FP32 这类"训练与推理数值一致"的修补能抬高上限。
+- **智能体 RL 变成异步系统。** [GLM-5](../../papers/arxiv-2602.15763/README.md)（智谱）与 [MiniMax-M2](../../papers/arxiv-2605.26494/README.md) 都把推理与训练分开部署，用重要性采样容忍过期数据，并为长短悬殊的智能体轨迹专门设计调度；AI2 的 [Olmo 3](../../papers/arxiv-2512.13961/README.md) 给出了完全公开的同类配方（GRPO 变体、异步、RL-Zero）。
+- **合并多领域并不只有"专家加蒸馏"一种做法。** GLM-5 顺序做推理、智能体、通用三段 RL，再用前面阶段的检查点作教师做跨阶段 on-policy 蒸馏；NVIDIA 的 [Nemotron 3](../../papers/arxiv-2512.20856/README.md) 在所有环境上同时 RL，并写明这比它以前的分阶段做法更稳、更少奖励黑客。on-policy 蒸馏本身也被单独研究：Thinking Machines 的[博客](../../papers/thinking-machines-on-policy-distillation/README.md)给出成本对比，[Li 等](../../papers/arxiv-2604.13016/README.md)给出它失效的条件（师生思考模式不相容、教师没有新能力、回答过长）。
+
 ## 技术地基
 
 结论：读后训练需要五个概念，其中三个读者在机器人 RL 中已经用过，只是对象换成了 token。
@@ -171,6 +176,11 @@
 | Kimi（月之暗面） | 不用价值网络的策略优化（k1.5 的镜像下降变体沿用到 K2）；长上下文 RL 与部分 rollout；把长度当显式预算；自我批评的 rubric 奖励 | k1.5、K2、K3 | 难题上 token 过多；智能体环境里的奖励黑客 |
 | Qwen（阿里巴巴） | 一个模型两种模式；大模型多阶段训练，小模型靠强到弱蒸馏 | Qwen3 | 融合后思考模式的竞赛分数下降 |
 | AI2 | 完全公开数据、代码与评测，作为可复现的对照 | Tulu 3 | 规模与闭源配方有差距 |
+| AI2（2025-12 起） | 同上；RL 从 PPO 改为 GRPO 变体，保留 DPO，并发布 RL-Zero 作研究基线 | [Olmo 3](../../papers/arxiv-2512.13961/README.md) | 7B/32B 规模；预训练占总算力九成以上 |
+| 智谱（GLM） | 异步智能体 RL；顺序多阶段 RL 后跨阶段蒸馏 | [GLM-5](../../papers/arxiv-2602.15763/README.md) | 训练—推理不一致要逐个修补 |
+| MiniMax | 小激活模型上的长程智能体 RL（CISPO、Forge） | [MiniMax-M2](../../papers/arxiv-2605.26494/README.md) | 系统补丁多针对智能体轨迹的形态 |
+| NVIDIA | 权重、数据、配方全部公开；多环境同时 RL | [Nemotron 3](../../papers/arxiv-2512.20856/README.md) | 白皮书未给出与专家加蒸馏的对照 |
+| Meta（2025-10 起） | 研究 RL 的规模规律（ScaleRL）；2026-04 的 Muse Spark 只公开博客 | [ScaleRL](../../papers/arxiv-2510.13786/README.md) | Llama 之后的产品模型不公开后训练配方 |
 
 `[判断]` 收敛的部分：
 - 去掉价值模型的 RL：DeepSeek 的 GRPO 与 Kimi 的镜像下降变体都不用 critic，Qwen3 也用 GRPO；
@@ -214,7 +224,8 @@
 - **不可验证的任务，奖励从哪来？** R1 的局限一节写明写作这类任务难以构造可靠的奖励，纯 RL 的规模化仍是开放问题；K2 的自我批评 rubric、V4 让策略自己当评委、K3 的智能体评委是三种在用的答案。入口：[Kimi K2](../../papers/arxiv-2507.20534/README.md)、[DeepSeek-V4](../../papers/arxiv-2606.19348/README.md)、[Kimi K3](../../papers/arxiv-2607.24653/README.md)。
 - **怎样想得少一点？** 长度惩罚（k1.5）、token 预算（K2、K3）、去掉长度归一化（Dr. GRPO）都能缩短回答，代价是可能削弱探索；k1.5 的结论写明要在不损害探索的前提下减少过度思考。入口：[Kimi k1.5](../../papers/arxiv-2501.12599/README.md)、[过度思考](../../papers/url-https-proceedings.mlr.press-v267-chen25bx.html/README.md)、[DeepSeek-V3.2](../../papers/arxiv-2512.02556/README.md)。
 - **多领域怎样合并？** 混合 RL（V3.2）与 on-policy 蒸馏（V4、K3）各有理由，逐 token 与全词表的蒸馏目标也有分歧。入口：[Qwen3](../../papers/arxiv-2505.09388/README.md)、[DeepSeek-V4](../../papers/arxiv-2606.19348/README.md)、[Kimi K3](../../papers/arxiv-2607.24653/README.md)。
-- **闭源团队 2024 年以后怎样后训练？** o1 只公开到"大规模 RL + 长思维链"；Gemini 系列本轮未检索到后训练的官方细节。这一部分只能作为开放问题。
+- **闭源团队 2024 年以后怎样后训练？** o1 只公开到"大规模 RL + 长思维链"；Gemini 系列本轮未检索到后训练的官方细节。这一部分只能作为开放问题。2025-08 以后能读到的官方说法只有零星几句：OpenAI 的开放权重模型 [gpt-oss 模型卡](https://arxiv.org/abs/2508.10925)写明用与 o3 相似的思维链 RL 后训练，并训练了低、中、高三档推理强度；Meta 的 [Muse Spark 博客](https://ai.meta.com/blog/introducing-muse-spark-msl/)（2026-04）称新的 RL 栈带来平滑、可预测的收益，长度惩罚让模型"压缩思考"。
+- **多领域合并哪种做法更好？** 专家加 on-policy 蒸馏（DeepSeek-V4、Kimi K3）、顺序 RL 加跨阶段蒸馏（GLM-5）、所有环境同时 RL（Nemotron 3）都只与本团队的旧做法比较过。入口：[DeepSeek-V4](../../papers/arxiv-2606.19348/README.md)、[GLM-5](../../papers/arxiv-2602.15763/README.md)、[Nemotron 3](../../papers/arxiv-2512.20856/README.md)。
 
 ## 阅读顺序
 
@@ -224,6 +235,7 @@
 4. [DeepSeekMath](../../papers/arxiv-2402.03300/README.md) → [DeepSeek-R1](../../papers/arxiv-2501.12948/README.md) 与 [Kimi k1.5](../../papers/arxiv-2501.12599/README.md)：从 GRPO 到大规模 RLVR，对照两家的同一组选择。
 5. [DAPO](../../papers/arxiv-2503.14476/README.md) → [Dr. GRPO](../../papers/arxiv-2503.20783/README.md) → [Yue 等](../../papers/arxiv-2504.13837/README.md)：后来者补出的坑与边界。
 6. [Qwen3](../../papers/arxiv-2505.09388/README.md) → [DeepSeek-V3.2](../../papers/arxiv-2512.02556/README.md) → [DeepSeek-V4](../../papers/arxiv-2606.19348/README.md) 与 [Kimi K3](../../papers/arxiv-2607.24653/README.md)：专家与蒸馏合并的当前形态。
+7. [ScaleRL](../../papers/arxiv-2510.13786/README.md) → [GLM-5](../../papers/arxiv-2602.15763/README.md) 与 [Nemotron 3](../../papers/arxiv-2512.20856/README.md)：RL 的规模规律，以及与"专家加蒸馏"不同的两种合并做法。
 
 三个子方向各有 Baseline 页、路线图与论文目录：[SFT](sft/README.md)、[偏好学习](preferences/README.md)、[强化学习](rl/README.md)。
 
@@ -259,3 +271,10 @@
 - Kimi K2 的 RL 目标中正则项的具体形式（原文式中的系数与平方项）本轮没有逐符号核对，正文只写"用自己的正则项"。
 - DeepSeek-V2 的 BBH 81.3 → 79.7 沿用预训练页与 V2 精读，本轮只核对了 V2 原文中"对齐税"的文字描述。
 - 本页与三个子方向没有覆盖的后训练主题：参数高效微调（LoRA 一类，只改少量参数，可与 SFT、DPO 组合）、持续预训练与遗忘、多轮智能体 RL 的专门基线。它们需要各自的基础方法、关键改进与可复现实验，目前不能用本页的论文代替。
+- gpt-oss 模型卡（2025-08）本轮只核对了 §2.5 的后训练描述与图 3 的推理强度曲线；Muse Spark 只有官方博客，没有结构与配方；Gemini 3 系列的后训练细节仍未检索到官方材料。
+
+**与原结论的张力（2025-10 以后的材料）**
+
+- 第 6 节的 `[判断]`"最终模型更多靠蒸馏得到"有反例：Nemotron 3 在所有环境上同时 RL（§2.6），GLM-5 以顺序 RL 为主、蒸馏只用于找回能力。这一判断目前只在 DeepSeek、Kimi、Qwen 三家的报告上成立。
+- 主要路线表中 AI2 一行（Tulu 3）与"分化：是否保留 KL""是否先做 SFT"两条仍成立，但 AI2 的 RL 已从 PPO 换成 GRPO 变体（Olmo 3），机器人共性一节"反例是 Tulu 3 的 RLVR 仍用 PPO 和价值模型"描述的是 2024 年。
+- 速览第 5 条"后训练的算力占比在上升"：Olmo 3（7B/32B）的预训练占总 GPU 时间九成以上，后训练约 9 天；它与 DeepSeek-V3.2 的口径、规模都不同，不构成反证，但说明"超过 10%"不是普遍比例。

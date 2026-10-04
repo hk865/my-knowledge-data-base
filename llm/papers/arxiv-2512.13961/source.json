@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2512.13961",
+  "title": "Olmo 3",
+  "resource_kind": "paper",
+  "canonical_folder": "llm/papers/arxiv-2512.13961",
+  "official_url": "https://arxiv.org/abs/2512.13961",
+  "official_fulltext_url": "https://arxiv.org/pdf/2512.13961",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了摘要、§2.4（算力与时长）、数据三阶段（Dolma 3、Dolmino、Longmino）、§4.3（Delta Learning）、§4.4.1（OlmoRL 的修改）、§4.5、§6（RL-Zero）、v2 中 Olmo 3.1 的延长 RL；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "arXiv 页面标注 CC BY 4.0，未单独审计；仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Team Olmo",
+    "Allyson Ettinger",
+    "Amanda Bertsch",
+    "Bailey Kuehl",
+    "David Graham",
+    "David Heineman",
+    "Dirk Groeneveld",
+    "Faeze Brahman",
+    "Finbarr Timbers",
+    "等 66 位作者"
+  ],
+  "year": 2025,
+  "topic_paths": [
+    "llm/pretraining",
+    "llm/posttraining/sft",
+    "llm/posttraining/preferences",
+    "llm/posttraining/rl"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v2 HTML 选段：§2.4、数据三阶段、§4.3、§4.4.1、§4.5、§6、Olmo 3.1",
+    "mechanism_summary": "7B/32B 完全公开；Dolma 3 约 5.93T，Dolmino 100B，Longmino 50B/100B，8K→约 65K；Think：SFT→Delta Learning DPO→OlmoRL（零梯度过滤、主动采样、token 级损失、不除标准差、放宽裁剪、无 KL、截断 IS；异步、连续批处理、中途更新，约 4 倍提速）；RL-Zero 研究预训练数据与伪奖励；约 56 天、1024 H100，预训练 >90%，后训练约 9 天；Olmo 3.1 Think 32B 额外 21 天、224 GPU 的 RL。",
+    "evidence_boundary": "未复现实验；数字取自论文正文。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2512.13961",
+      "https://arxiv.org/html/2512.13961v2"
+    ],
+    "source_origin": "llm_recency_audit_2026_10_04",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "text",
+    "code"
+  ],
+  "task_tags": [
+    "generation"
+  ]
+}

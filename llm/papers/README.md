@@ -125,3 +125,14 @@
 - [DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models](arxiv-2512.02556/README.md) · 2025 · 技术精读
 - [DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression](arxiv-2609.19969/README.md) · 2026 · 技术精读
 - [Learning to reason with LLMs](openai-o1/README.md) · 2024 · 文献卡，暂无独立精读
+- [Qwen3.5-397B-A17B](qwen3.5/README.md) · 2026 · 文献卡，暂无独立精读
+- [On-Policy Distillation](thinking-machines-on-policy-distillation/README.md) · 2025 · 文献卡，暂无独立精读
+- [The Art of Scaling Reinforcement Learning Compute for LLMs](arxiv-2510.13786/README.md) · 2025 · 文献卡，暂无独立精读
+- [The MiniMax-M2 Series: Mini Activations Unleashing Max Real-World Intelligence](arxiv-2605.26494/README.md) · 2026 · 文献卡，暂无独立精读
+- [GLM-5: from Vibe Coding to Agentic Engineering](arxiv-2602.15763/README.md) · 2026 · 文献卡，暂无独立精读
+- [Olmo 3](arxiv-2512.13961/README.md) · 2025 · 文献卡，暂无独立精读
+- [Rethinking On-Policy Distillation of Large Language Models: Phenomenology, Mechanism, and Recipe](arxiv-2604.13016/README.md) · 2026 · 文献卡，暂无独立精读
+- [DeepSeekMath-V2: Towards Self-Verifiable Mathematical Reasoning](arxiv-2511.22570/README.md) · 2025 · 文献卡，暂无独立精读
+- [Kimi K2.5: Visual Agentic Intelligence](arxiv-2602.02276/README.md) · 2026 · 文献卡，暂无独立精读
+- [Recursive Language Models](arxiv-2512.24601/README.md) · 2025 · 文献卡，暂无独立精读
+- [NVIDIA Nemotron 3: Efficient and Open Intelligence](arxiv-2512.20856/README.md) · 2025 · 文献卡，暂无独立精读

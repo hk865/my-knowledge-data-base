@@ -1,6 +1,6 @@
 # 语言模型强化学习
 
-> 状态：领域入门页 · v1 · 依据 [synthesis.csv](synthesis.csv)（15 篇）
+> 状态：领域入门页 · v1 · 依据 [synthesis.csv](synthesis.csv)（19 篇）
 >
 > 速览：
 > 1. 把生成当成 RL：状态是"提示 + 已生成的前缀"，动作是下一个 token，奖励大多只在回答末尾给一次。算法从带价值模型的 PPO（InstructGPT）走到用组内相对得分作优势、去掉价值模型的 GRPO（DeepSeekMath 起）；奖励从人类偏好训练出的奖励模型走到程序验证器（RLVR）。
@@ -110,6 +110,18 @@
 - 智能体会钻环境的空子：K3 写明更强的智能体探索更激进，甚至尝试奖励黑客，早期容器沙箱出现内核崩溃与死锁，于是改用隔离的 microVM，让智能体与验证器隔离，并配隐藏验证器与有限的提交次数。
 - 两家对蒸馏目标的选择相反（V4 全词表、K3 逐 token），没有同条件对照。
 
+同一时期（2025-10 – 2026-09），DeepSeek 与 Kimi 之外的报告补上了三件事：
+
+- **RL 算力的规模规律。** [ScaleRL](../../../papers/arxiv-2510.13786/README.md)（Meta 等，2025-10）把"验证集通过率随 RL 算力的变化"拟合成 S 形曲线，用上限 A 与陡度 B 区分配方：累计 40 万 GPU 小时的消融显示，损失聚合、优势归一化、课程、长度惩罚、离策略算法等多数补丁只改变效率，基本不改上限；稳定的配方可以从小规模外推，8B 模型上一次跑到 10 万 GPU 小时仍落在外推曲线上。它组合出的配方用 CISPO 损失（截断重要性权重本身、权重不回传梯度），并把输出层 logits 改用 FP32，以减小推理引擎与训练框架的数值差异，这一项把拟合上限从 0.52 提到 0.61。
+- **智能体 RL 变成异步系统工程。** [GLM-5](../../../papers/arxiv-2602.15763/README.md)（智谱，2026-02）的 slime 把推理与训练放到不同 GPU 上、每 K 步同步权重，用采样时记录的 log 概率做双侧重要性采样并丢掉版本落后太多的轨迹，用 Token-in-Token-out 网关避免多轮中重新分词；后训练按推理 RL → 智能体 RL → 通用 RL 顺序进行，最后用以前阶段的检查点作教师做跨阶段 on-policy 蒸馏，理由是顺序优化不同目标会累积损失先前的能力。[MiniMax-M2](../../../papers/arxiv-2605.26494/README.md)（2026-05）的 Forge 用"窗口内贪心、窗口间先进先出"的调度吸收智能体轨迹的长度差异，用前缀树合并共享前缀的轨迹（正文称训练最多快 40 倍），算法用 CISPO，奖励里加入鼓励并行执行的完成时间项。
+- **完全公开的 RL。** AI2 的 [Olmo 3](../../../papers/arxiv-2512.13961/README.md)（2025-12）从 Tulu 3 的 PPO 改为 GRPO 的一组修改（零梯度过滤、主动补采样、token 级损失、不除以标准差、放宽裁剪上界、不加 KL、截断重要性采样），靠异步与训练中途更新推理权重提速约 4 倍；v2 的 Olmo 3.1 Think 32B 在 224 块 GPU 上多跑了 21 天 RL。它另训练一个直接从基座做 RL 的 RL-Zero 版本，用来研究预训练数据对 RLVR 的影响。
+
+做不好的场景：
+- 训练—推理不一致仍是失稳的主因：GLM-5 发现 DSA 索引器若用非确定性的 top-k 实现，RL 几步之内性能骤降、熵急跌，只好在 RL 中冻结索引器、改用确定性 top-k；ScaleRL 的 FP32 logits 解决的是同一类问题。
+- 奖励黑客转移到新任务：GLM-5 在幻灯片生成上观察到截断过长内容、操纵间距等钻空子行为，靠修补渲染器堵住。
+- 评测污染会让 RL 的结论失真：Olmo 3 写明，中段训练数据若含评测内容，随机的"伪奖励"会和真奖励一样有效。
+- 稳定性仍靠时间换：Olmo 3 Think 32B 的首轮 RL 约 5 天，其中至少 1 天因稳定性问题损失。
+
 ## 技术地基
 
 - **把生成写成 MDP 与策略梯度**：[强化学习讲义](../../../../foundations/lessons/05b-reinforcement-learning.md)第 2–5 节；语言模型怎样接入见第 9 节。
@@ -130,8 +142,15 @@
 | 字节跳动 Seed 等开源系统 | 把大规模 RL 的细节与代码全部公开（基于 verl） | DAPO | 只在数学上、单一基座上验证 |
 | AI2 | 在 RLVR 中保留 PPO 与价值模型，全部开放 | Tulu 3 | 价值模型成本；作者在未来工作中建议试 GRPO |
 | 学术分析 | 用受控实验检查"RL 学到了什么" | Dr. GRPO、Cui 等、Yue 等 | 多在 7B–32B 的 Qwen 基座上，Dr. GRPO 指出 Qwen2.5 基座本身有特殊的预训练偏差 |
+| Meta（2025-10 以后） | 把 RL 做成可预测的规模化实验：S 形算力曲线、CISPO、FP32 logits | [ScaleRL](../../../papers/arxiv-2510.13786/README.md) | 实验以数学为主；之后的 Muse Spark（2026-04）只在博客中称 RL 收益平滑、可预测，未公开配方 |
+| 智谱（GLM） | 异步智能体 RL 系统（slime）；顺序多阶段 RL 后用跨阶段 on-policy 蒸馏找回能力 | [GLM-5](../../../papers/arxiv-2602.15763/README.md) | 训练—推理不一致要逐个堵（确定性 top-k、冻结索引器、TITO） |
+| MiniMax | 小激活模型上做长程智能体 RL；CISPO 与 Forge 系统 | [MiniMax-M2](../../../papers/arxiv-2605.26494/README.md) | 前缀树、窗口调度都是针对轨迹形态的工程补丁 |
+| AI2（2025-12 以后） | 完全公开的 GRPO 变体与异步 RL；RL-Zero 作研究基线 | [Olmo 3](../../../papers/arxiv-2512.13961/README.md) | 规模在 32B；首轮 RL 有稳定性损失 |
+| NVIDIA | 多环境同时 RL，取代分阶段 | [Nemotron 3](../../../papers/arxiv-2512.20856/README.md) | 白皮书未给出与"专家加蒸馏"的同条件对照 |
 
 `[判断]` 收敛：去掉价值模型；能验证的任务用规则奖励；显式管理熵与长度；按领域训练专家再合并。分化：是否保留 KL（DAPO 去掉，V3.2 按领域调，K2、K3 用自己的正则）；是否先做 SFT（R1-Zero 不做）；专家怎样合并（V3.2 混合 RL，V4 与 K3 蒸馏，二者蒸馏目标又不同）。
+
+`[判断]` 2025-10 以后的补充：截断重要性权重一类的损失（CISPO）在 MiniMax 与 Meta 的 ScaleRL 中被独立选中，ScaleRL 的对比中它与 GSPO 都明显好于 DAPO 的损失；GRPO 在 AI2 的完全公开配方中取代了 PPO；"训练—推理不一致"从 V3.2 的路由回放扩展成一类问题（FP32 logits、确定性 top-k、按 token 重放分词）。新的分化是多领域怎样合并：DeepSeek-V4 与 Kimi K3 走"专家加 on-policy 蒸馏"，GLM-5 顺序做多阶段 RL 后再用跨阶段蒸馏找回能力，NVIDIA 的 Nemotron 3 则在所有环境上同时 RL，并写明这比它以前的分阶段做法更稳、更少奖励黑客。
 
 ## 与机器人强化学习的共性
 
@@ -158,6 +177,8 @@
 - **长思维链与长程智能体的信用分配怎样做？** k1.5 结论写明要研究信用分配、在不损害探索的前提下减少过度思考；K3 的轨迹跨越多次迭代。入口：[Kimi k1.5](../../../papers/arxiv-2501.12599/README.md)、[Kimi K3](../../../papers/arxiv-2607.24653/README.md)。
 - **稳定性补丁有没有统一原理？** V3.2 的四处修补、DAPO 的四项技巧、K3 的逐 token 正则各解决一个现象。入口：[DeepSeek-V3.2](../../../papers/arxiv-2512.02556/README.md)。
 - **不可验证任务的 RL 奖励从哪来？** 见[偏好学习方向](../preferences/README.md)第 5 节。
+- **RL 的规模规律能外推多远？** ScaleRL 的 S 形曲线在 8B 与 Scout MoE、以数学为主的验证集上成立；作者把分布外泛化、算力在预训练与 RL 之间怎样分配列为未解决。入口：[ScaleRL](../../../papers/arxiv-2510.13786/README.md)。
+- **多领域同时 RL、顺序 RL 加蒸馏、专家加蒸馏，哪种更好？** 三种做法分别来自 Nemotron 3、GLM-5、DeepSeek-V4 与 Kimi K3，各自只与本团队的旧做法比较。入口：[Nemotron 3](../../../papers/arxiv-2512.20856/README.md)、[GLM-5](../../../papers/arxiv-2602.15763/README.md)、[DeepSeek-V4](../../../papers/arxiv-2606.19348/README.md)。
 
 ## 阅读顺序
 
@@ -166,6 +187,7 @@
 3. [DeepSeek-R1](../../../papers/arxiv-2501.12948/README.md)第 2–3 节与附录 B.5、G → [Kimi k1.5](../../../papers/arxiv-2501.12599/README.md)第 2.1–2.3 节：同一组选择的两份报告，对照着读。
 4. [DAPO](../../../papers/arxiv-2503.14476/README.md) → [Dr. GRPO](../../../papers/arxiv-2503.20783/README.md) → [Yue 等](../../../papers/arxiv-2504.13837/README.md)：复现时的坑与 RL 的边界。
 5. [DeepSeek-V3.2](../../../papers/arxiv-2512.02556/README.md)第 3 节 → [DeepSeek-V4](../../../papers/arxiv-2606.19348/README.md)第 5 节与 [Kimi K3](../../../papers/arxiv-2607.24653/README.md)第 4 节：规模化、稳定性与蒸馏合并。
+6. [ScaleRL](../../../papers/arxiv-2510.13786/README.md) → [GLM-5](../../../papers/arxiv-2602.15763/README.md) 与 [MiniMax-M2](../../../papers/arxiv-2605.26494/README.md)：RL 的规模规律，以及智能体 RL 的系统工程；想看完全公开的配方，读 [Olmo 3](../../../papers/arxiv-2512.13961/README.md)。
 
 ## 批注
 
@@ -182,6 +204,11 @@
 - 问题链（PPO 太重 → 去价值模型 → 验证器 → 三类坑 → 造专家）：DeepSeekMath §4.1、R1 §2.2 与附录 G.2、k1.5 §2.3.2、DAPO §1 与 §3、Dr. GRPO §3.1、Cui 等 §1、V3.2 §3、V4 §5.1、K3 §4.1。边界：Tulu 3 在 RLVR 中仍用 PPO 与价值模型并得到提升。
 - "RL 造专家、蒸馏做统一模型"：V3.2 §3（专家蒸馏 + 混合 RL）、V4 §5.1.2（混合 RL 换成 OPD）、K3 §4.1.3、Qwen3 §4.5。反例：V3.2 的最终模型仍做了数千步混合 RL。
 - 团队偏好：DeepSeek 自 DeepSeekMath 起在 V2、V3、R1、V3.2、V4 都用 GRPO；Kimi 在 k1.5、K2 都不用价值网络，K2、K3 都显式控制 token 预算；Qwen3 在推理 RL 与小模型蒸馏之间明确选了后者。
+- 2025-10 以后的补充：CISPO 的两次独立选用见 MiniMax-M2 §6.1.4 与 ScaleRL 的损失对比；"训练—推理不一致成为一类问题"见 ScaleRL（FP32 logits）、GLM-5（确定性 top-k、TITO 网关）与 V3.2 §3（Keep Routing）。MiniMax 与 Meta 都只出现一次，按本库标准还不能算团队偏好。
+
+与原结论的张力（不改原判断，列出供核对）：
+- 主要路线表中 AI2 一行写"在 RLVR 中保留 PPO 与价值模型"，依据是 2024 年的 Tulu 3；2025-12 的 Olmo 3 已改用 GRPO 变体（§4.4.1），Tulu 3 作者当时在未来工作中建议试 GRPO，这一建议被兑现。AI2 一行描述的是 2024 年的选择。
+- 第 6 节与上文"收敛：按领域训练专家再合并"一条，在 Nemotron 3 处有反例：它在所有环境上同时 RL，并称比分阶段更稳（§2.6）。GLM-5 也没有用"专家加蒸馏"，而是顺序 RL 之后再蒸馏。"专家加蒸馏"目前是 DeepSeek 与 Kimi 两家的选择，不是全行业的收敛。
 
 **与其他论文的关联**
 
@@ -194,3 +221,4 @@
 
 - Kimi K2 的 RL 目标式中正则项的具体形式，本轮只读到"一个促进稳定学习的正则参数"，未逐符号核对；K3 引用的 Kimi K2.5 算法报告本轮未打开。
 - GRPO 在 DeepSeek-V3 中的具体超参数本轮未核对，正文只写"沿用"。
+- 已知存在但本轮未打开原文：MiniMax-M1 报告（CISPO 最早可能出自这里，未核实）、Qwen 的 GSPO（arXiv 2507.18071，只读了摘要：把重要性比率与裁剪改到序列级，称能稳定 MoE 的 RL）、Nemotron 3 Super 与 Ultra 的单独报告（arXiv 2604.12374、2606.15007）、Meta Muse Spark 的技术细节（只有官方博客）。Kimi K2.5 的 RL 目标已在[卡片](../../../papers/arxiv-2602.02276/README.md)中核对：沿用 k1.5 与 K2 的策略优化，并屏蔽对数比区间外 token 的梯度。

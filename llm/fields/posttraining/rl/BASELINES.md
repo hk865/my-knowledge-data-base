@@ -53,6 +53,13 @@
 | 长度与多领域 | 长度奖励、按任务的 token 预算、按推理强度训练专家 | [Kimi k1.5](../../../papers/arxiv-2501.12599/README.md)、[Kimi K2](../../../papers/arxiv-2507.20534/README.md)、[DeepSeek-V4](../../../papers/arxiv-2606.19348/README.md)、[Kimi K3](../../../papers/arxiv-2607.24653/README.md) | token 效率 / 预算太紧会抑制探索 |
 | 长度与多领域 | 领域专家 → 蒸馏 → 混合 RL | [DeepSeek-V3.2](../../../papers/arxiv-2512.02556/README.md) | 避免多阶段的灾难性遗忘 / 仍需数千步 RL |
 | 长度与多领域 | 领域专家 → 多教师 on-policy 蒸馏（替代混合 RL） | [DeepSeek-V4](../../../papers/arxiv-2606.19348/README.md)、[Kimi K3](../../../papers/arxiv-2607.24653/README.md)、[Qwen3](../../../papers/arxiv-2505.09388/README.md)（小模型） | 合并时不掉点，省算力 / 需同时服务多个教师；两家目标不同 |
+| 裁剪与离策略 | 截断重要性权重本身、权重不回传梯度（CISPO） | [MiniMax-M2](../../../papers/arxiv-2605.26494/README.md)、[ScaleRL](../../../papers/arxiv-2510.13786/README.md) | 所有 token 都保留梯度，ScaleRL 对比中好于 DAPO 的损失 / 上界仍需调 |
+| 裁剪与离策略 | 异步 RL：推理与训练分开部署，双侧重要性采样，丢掉版本落后太多的轨迹 | [GLM-5](../../../papers/arxiv-2602.15763/README.md)、[Olmo 3](../../../papers/arxiv-2512.13961/README.md)、ScaleRL（PipelineRL，最多落后 8 步） | 长程智能体轨迹不再拖住整批，Olmo 3 提速约 4 倍 / 数据更"旧"，要靠重要性采样与过滤兜底 |
+| 数值与实现一致 | 输出层 logits 用 FP32；稀疏注意力的 top-k 用确定性实现并在 RL 中冻结索引器；按 token 原样回传、不重新分词 | [ScaleRL](../../../papers/arxiv-2510.13786/README.md)、[GLM-5](../../../papers/arxiv-2602.15763/README.md) | ScaleRL 的拟合上限 0.52 → 0.61；GLM-5 避免了几步内的熵骤降 / 多一份精度与确定性的开销 |
+| 损失聚合与采样 | 按提示平均损失、按批量归一化优势、已稳定答对的题不再采样 | [ScaleRL](../../../papers/arxiv-2510.13786/README.md) | 主要提高效率（陡度 B），基本不改上限 / — |
+| 长度与多领域 | 所有环境同时 RL（不分阶段） | [Nemotron 3](../../../papers/arxiv-2512.20856/README.md) | 作者称比分阶段更稳、更少奖励黑客 / 无与专家加蒸馏的同条件对照 |
+| 长度与多领域 | 顺序多阶段 RL → 以前阶段检查点作教师的跨阶段 on-policy 蒸馏 | [GLM-5](../../../papers/arxiv-2602.15763/README.md) | 找回顺序优化中累积损失的能力 / 多一轮蒸馏 |
+| 奖励来源 | 过程奖励（语言混杂、工具格式）+ 完成时间奖励 + 结果奖励 | [MiniMax-M2](../../../papers/arxiv-2605.26494/README.md) | 鼓励并行执行、减少格式错误 / 奖励项权重要调 |
 | 评测口径 | 大 k 的 pass@k 测能力边界 | [Yue 等](../../../papers/arxiv-2504.13837/README.md)、DeepSeekMath §5.2.2 | 揭示 RL 主要提高采样效率 / — |
 | 对照 | 同一初始化下比较 SFT 与 RL 的泛化 | [SFT Memorizes, RL Generalizes](../../../papers/arxiv-2501.17161/README.md) | RL 泛化、SFT 记忆 / 只在规则游戏与导航上 |
 
@@ -74,3 +81,4 @@
 **未核实 / 待验证**
 
 - Kimi k1.5 与 K2 的策略优化目标中"平方形式的正则"按 K2 第 3.2.3 节公式的结构描述，系数与推导本轮未逐项核对。
+- 2025-10 以后新增的几行（CISPO、异步 RL、数值一致、跨阶段蒸馏、同时 RL）依据各篇卡片中核对过的章节；GSPO（序列级重要性比率）只读了摘要，未列入表中。

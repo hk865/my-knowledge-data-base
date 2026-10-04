@@ -37,6 +37,15 @@
 - [DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression](../../papers/arxiv-2609.19969/README.md) · 2026 · DeepSeek · 文献卡（主归属预训练方向） · 格：注意力结构 = 层间复用全局 KV、FP4 KV 缓存
 - [Kimi K3: Open Frontier Intelligence](../../papers/arxiv-2607.24653/README.md) · 2026 · Kimi（Moonshot AI） · 文献卡 · 格：长依赖数据 = 读遍 1M 的合成任务；注意力结构 = 线性注意力混合
 
+同期其他团队与窗口之外的做法（2025-12 – 2026）：
+
+- [NVIDIA Nemotron 3: Efficient and Open Intelligence](../../papers/arxiv-2512.20856/README.md) · 2025 · NVIDIA · 文献卡（主要归架构） · 格：注意力结构 = Mamba-2 为主的混合，注意力层不用 RoPE
+- [Recursive Language Models](../../papers/arxiv-2512.24601/README.md) · 2025 · MIT · 文献卡 · 格：推理外推与执行 = 递归调用自己
+- [Kimi K2.5: Visual Agentic Intelligence](../../papers/arxiv-2602.02276/README.md) · 2026 · Kimi（Moonshot AI） · 文献卡（主要归推理时计算） · 格：推理外推与执行 = 并行子智能体的上下文分片
+- [GLM-5: from Vibe Coding to Agentic Engineering](../../papers/arxiv-2602.15763/README.md) · 2026 · 智谱、清华 · 文献卡（主要归强化学习） · 格：注意力结构 = 转换为 DSA
+- [Qwen3.5-397B-A17B（官方模型卡）](../../papers/qwen3.5/README.md) · 2026 · 阿里巴巴 Qwen 团队 · 文献卡 · 格：注意力结构 = Gated DeltaNet 3:1 混合
+- [The MiniMax-M2 Series: Mini Activations Unleashing Max Real-World Intelligence](../../papers/arxiv-2605.26494/README.md) · 2026 · MiniMax · 文献卡（主要归强化学习） · 格：注意力结构 = 全注意力（反例）
+
 ## 交叉引用（主归属在其他方向）
 
 - [Mamba: Linear-Time Sequence Modeling with Selective State Spaces](../../papers/mamba/reading.md) · 2023 · 架构方向 · 技术精读 · 格：注意力结构 = 换序列算子

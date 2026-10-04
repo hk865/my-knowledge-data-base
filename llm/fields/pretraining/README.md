@@ -1,6 +1,6 @@
 # 预训练
 
-> 状态：领域入门页 · v2 · 依据 [synthesis.csv](synthesis.csv)（42 篇）
+> 状态：领域入门页 · v2 · 依据 [synthesis.csv](synthesis.csv)（44 篇）
 >
 > 速览：
 > 1. 预训练用下一词预测在数万亿到数十万亿 token 上学到语言结构与世界知识；后训练（SFT、偏好学习、强化学习）把这些先验变成按指令、按目标行动的行为。GPT-4 报告称考试能力主要来自预训练，DeepSeek-V3.2 把自己知识广度的差距归因于预训练算力不足。
@@ -161,6 +161,8 @@ DeepSeek LLM 已用 BF16 训练、FP32 累加梯度。[DeepSeek-V3](../../papers
 
 做不好的场景：DeepSeek-V3 尝试对激活梯度也按 128×128 块量化，约 16B 的 MoE 在约 300B token 后发散；作者推测原因是激活梯度在不同 token 之间极不均衡，形成与 token 相关的离群值。
 
+FP4 预训练在 2025 年底有了第一份公开配方：NVIDIA 的 [Nemotron 3](../../papers/arxiv-2512.20856/README.md) 让 Super 与 Ultra 用 NVFP4 预训练（白皮书称已验证到 25T token），权重、激活、梯度都量化到 4 位，但最后约 15% 的层、潜空间投影、MTP 与注意力投影保留 BF16，Mamba 的输出投影用 MXFP8；在 Nano 上对照，NVFP4 与 BF16 的损失相对差不到 1%。它保留高精度的位置，与 DeepSeek-V3 的经验指向同一件事：离群值集中的地方不能降精度。
+
 ### 中途评估：在花掉大部分算力之前看到结果
 
 结论：大模型通常只训练一次，各家都在开训前用小模型预测终点，在训练中盯几个先兆量，并用便宜的实验评估新数据。
@@ -210,6 +212,8 @@ DeepSeek LLM 已用 BF16 训练、FP32 累加梯度。[DeepSeek-V3](../../papers
 
 留下的问题：推理模型与智能体需要很长的上下文，原始注意力的平方复杂度成为瓶颈（DeepSeek-V4 第 1 节）；网络更深后，残差流的放大与稀释成为新瓶颈。改变：DeepSeek 一线从 NSA 到 DSA（V3.2）再到 CSA/HCA（V4，1M 上下文），加 mHC，V4.1-Flash 接入 Engram；Kimi 一线从 Kimi Linear 到 Attention Residuals 再到 K3；Qwen 用门控消除注意力汇聚；DeepSeek-V4 采用 Muon。评测目标也在迁移：基座评测加入 SimpleQA 一类事实问答、LongBench-V2 一类长文理解。做不好的场景：DeepSeek-V4 重新出现损失尖峰，稳定技巧原理不明，作者自述结构偏复杂；V4.1-Flash 自述新结构的鲁棒性边界尚未刻画清楚；DeepSeek-V3.2 自述知识广度落后；Kimi K3 自述总体仍落后于最强的闭源模型。
 
+同一时期其他团队的报告（2025-12 – 2026-05）补充了三点。一是完全公开的预训练继续存在：AI2 的 [Olmo 3](../../papers/arxiv-2512.13961/README.md) 公开了 Dolma 3 数据与中间检查点，按"约 5.93T token 预训练 → 100B 中段训练 → 50B/100B 长上下文"三段训练，预训练占全部 GPU 时间九成以上；NVIDIA 的 [Nemotron 3](../../papers/arxiv-2512.20856/README.md) 承诺公开权重、配方与可再分发的数据，并给出 FP4 预训练配方。二是 DeepSeek 的部件开始被别家直接采用：智谱的 [GLM-5](../../papers/arxiv-2602.15763/README.md)（744B/40B，28.5T token）在中段训练后把 MLA 转成 DSA。三是对高效注意力出现公开的反对：[MiniMax-M2](../../papers/arxiv-2605.26494/README.md) 在数千亿到数万亿 token 上试过滑动窗口混合，标准评测上看似持平，多跳推理却变差，最终全部层用全注意力。Meta 在 2026-04 的 [Muse Spark 博客](https://ai.meta.com/blog/introducing-muse-spark-msl/)中称改进了结构、优化与数据整理，用比 Llama 4 Maverick 少一个数量级以上的算力达到同等能力，但没有公开结构或配方。
+
 ## 技术地基
 
 - **下一词预测与因果 mask**：每个位置只能读之前的位置，一次前向就能并行计算所有位置的损失。[Transformer 讲义](../../../foundations/lessons/14-attention-transformer.md)第 7、12 节，[自监督与生成目标](../../../foundations/lessons/modules/objectives/03-pretraining-objectives.md)。
@@ -231,6 +235,10 @@ DeepSeek LLM 已用 BF16 训练、FP32 累加梯度。[DeepSeek-V3](../../papers
 | Google | 系统比较与稳定性工程；MoE 的长期研究延续到 Gemini 1.5；开放的 Gemma 线押注局部/全局交错与知识蒸馏 | T5、PaLM、Wortsman 等、Gemma 2/3/4、Gemini 1.5 | Gemini 报告只给出 MoE 与长上下文结果，不给预训练配方；Gemma 2 自述小模型仍训练不足 |
 | Meta | 稠密结构、公开权重，在数据配比与退火上做文章，以换取稳定与简单 | LLaMA、Llama 3 | 稠密模型每 token 计算随参数增长，Llama 3 405B 用了 3.8×10²⁵ FLOPs |
 | Qwen（阿里巴巴） | 扩大数据规模、超参规模定律、分阶段预训练，并研究注意力的稳定性 | Qwen2.5、Qwen3、Gated Attention、Qwen2.5-1M | 报告未单列预训练局限 |
+| AI2（2025-12） | 完全公开：数据、代码、中间检查点与评测，三段训练（预训练、中段、长上下文） | OLMo 2、[Olmo 3](../../papers/arxiv-2512.13961/README.md) | 规模停在 32B |
+| NVIDIA | Mamba-2 为主的混合加 LatentMoE，FP4 预训练，公开数据与配方 | [Nemotron 3](../../papers/arxiv-2512.20856/README.md) | 白皮书未给出层比例与完整消融 |
+| 智谱（GLM） | 大规模 MoE（744B/40B，28.5T token），注意力直接采用 DeepSeek 的 DSA | [GLM-5](../../papers/arxiv-2602.15763/README.md) | 预训练配方细节本轮未展开核对 |
+| MiniMax | 极低激活比的 MoE（229.9B/9.8B），全注意力 | [MiniMax-M2](../../papers/arxiv-2605.26494/README.md) | 长序列成本按平方增长 |
 
 `[判断]` 收敛的部分：MoE 成为开源大模型的常用结构（DeepSeek、Kimi、Qwen3，Gemma 4 也有 MoE 版本），Gemini 1.5 Pro 同样是稀疏 MoE；QK 归一化或等价约束成为常用部件；长上下文都放在预训练末段；Muon 从 Kimi 传到 DeepSeek。分化的部分：注意力汇聚是消除还是显式提供（Qwen 对 DeepSeek-V4），残差流怎样改（mHC 对 Attention Residuals），长上下文是稀疏还是线性混合（DeepSeek 对 Kimi），以及 Meta 坚持稠密结构。
 
@@ -300,3 +308,9 @@ DeepSeek LLM 已用 BF16 训练、FP32 累加梯度。[DeepSeek-V3](../../papers
 - 本轮未检索到 Meta 在 Llama 3 之后发布的官方技术报告，Meta 的路线只写到 Llama 3；OpenAI 在 GPT-4 之后的预训练细节同样没有官方材料可引。
 - DeepSeek-V4.1-Flash 的摘要写明检查点在 Hugging Face 发布；模型页本身未打开。
 - 沿用旧版的待验证项：GPT-2 完整模型的发布时间线；PaLM 自述局限的精确节号；Chinchilla 的 NeurIPS 正式版题名为 *An empirical analysis of compute-optimal large language model training*，与 arXiv 题名不同，本页数字两版一致、表号不同。
+- 2025-10 以后新增的内容（Olmo 3、Nemotron 3、GLM-5、MiniMax-M2、Muse Spark）依据各篇卡片中核对过的章节与 Meta 官方博客；Nemotron 3 的 NVFP4 只读了总览白皮书 §2.4，Super 与 Ultra 的单独报告未打开；Qwen3.5 与 Qwen3.6 的预训练 token 数与数据，模型卡没有写；Llama 4 的原始发布材料本轮未打开。
+
+**与原结论的张力（2025-10 以后的材料）**
+
+- 主要路线表中 Meta 一行写"稠密结构、公开权重"，收敛判断中写"Meta 坚持稠密结构"，依据是 LLaMA 与 Llama 3。ScaleRL（Meta 等，2025-10）的实验用的是"17B×16 专家的 Llama-4 Scout MoE"，说明 Llama 4 已改为 MoE；2026-04 的 Muse Spark 博客没有写结构，也没有写是否发布权重。这两处描述的是 2024 年以前的 Meta。
+- 速览第 5 条"DeepSeek 押注稀疏与压缩，Kimi 押注 token 效率；2026 年两条线开始交汇"仍成立，但 2026 年的交汇不只在这两家之间：GLM-5 直接采用了 DSA，Qwen3.5 转向与 Kimi 同一方向的线性注意力混合，MiniMax-M2 则公开反对两者、回到全注意力。

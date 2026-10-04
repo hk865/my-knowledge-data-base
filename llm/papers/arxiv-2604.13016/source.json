@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2604.13016",
+  "title": "Rethinking On-Policy Distillation of Large Language Models: Phenomenology, Mechanism, and Recipe",
+  "resource_kind": "paper",
+  "canonical_folder": "llm/papers/arxiv-2604.13016",
+  "official_url": "https://arxiv.org/abs/2604.13016",
+  "official_fulltext_url": "https://arxiv.org/pdf/2604.13016",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了摘要、作者单位、实验设置（师生组合与 benchmark）、§6 的代价分析；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Yaxuan Li",
+    "Yuxin Zuo",
+    "Bingxiang He",
+    "Jinqian Zhang",
+    "Chaojun Xiao",
+    "Cheng Qian",
+    "Tianyu Yu",
+    "Huan-ang Gao",
+    "Wenkai Yang",
+    "Zhiyuan Liu",
+    "Ning Ding"
+  ],
+  "year": 2026,
+  "topic_paths": [
+    "llm/posttraining/sft"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v2 HTML 选段：摘要、作者单位、实验设置、§6",
+    "mechanism_summary": "OPD 成功的两个条件（思考模式相容、教师带来新能力）；同族 1.5B 与 7B 教师对学生不可区分；成功时在学生到达状态上对齐高概率 token，共享 token 集占 97%–99% 概率；补救：离线冷启动、按教师选提示；代价：3K–7K 最好、10K 以上持平或下降，高熵从末尾向前蔓延，教师优势 +0.37（1K 前缀）→ +0.02（16K）。",
+    "evidence_boundary": "未复现实验；数字取自论文正文。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2604.13016",
+      "https://arxiv.org/html/2604.13016v2"
+    ],
+    "source_origin": "llm_recency_audit_2026_10_04",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "generation",
+    "analysis"
+  ]
+}

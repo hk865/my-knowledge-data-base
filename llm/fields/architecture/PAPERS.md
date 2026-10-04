@@ -55,6 +55,15 @@
 - [Frozen Memory Is Not Enough: Rethinking External Memory as Extraction](../../papers/arxiv-2608.17050/README.md) · 2026 · 文献卡 · 格：通道混合 = 条件记忆的后续（跨模型读取器）
 - [DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression](../../papers/arxiv-2609.19969/README.md) · 2026 · DeepSeek-AI · 技术精读 · 格：KV 缓存 = CSA2 + FP4 · DeepSeek 架构线第 9 步
 
+## 8 其他团队的选择（2025-12 – 2026）
+
+- [NVIDIA Nemotron 3: Efficient and Open Intelligence](../../papers/arxiv-2512.20856/README.md) · 2025 · NVIDIA · 文献卡 · 格：层排布 = Mamba-2 为主的混合；通道混合 = LatentMoE
+- [GLM-5: from Vibe Coding to Agentic Engineering](../../papers/arxiv-2602.15763/README.md) · 2026 · 智谱、清华 · 文献卡（主要归强化学习） · 格：序列混合 = 转换为 DSA
+- [Qwen3.5-397B-A17B（官方模型卡）](../../papers/qwen3.5/README.md) · 2026 · 阿里巴巴 · 文献卡 · 格：层排布 = Gated DeltaNet 3:1 混合
+- [The MiniMax-M2 Series: Mini Activations Unleashing Max Real-World Intelligence](../../papers/arxiv-2605.26494/README.md) · 2026 · MiniMax · 文献卡（主要归强化学习） · 格：序列混合 = 全注意力（反例）
+
+只读了模型卡、未建卡：[gpt-oss-120b & gpt-oss-20b Model Card](https://arxiv.org/abs/2508.10925)（2025-08，窗口层与稠密层交替、可学习 sink 偏置、MoE 权重 MXFP4）。
+
 ## 推理期方法（在其他方向详述）
 
 - [Efficient Streaming Language Models with Attention Sinks](../../papers/arxiv-2309.17453/README.md)（StreamingLLM） · 2023 · 文献卡 · 格：序列混合 = 推理期保留开头 token 加滑窗；主页面在[长上下文方向](../long-context/README.md)

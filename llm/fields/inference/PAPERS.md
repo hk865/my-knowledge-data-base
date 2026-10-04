@@ -46,6 +46,18 @@
 - [DFlash: Block Diffusion for Flash Speculative Decoding](../../papers/arxiv-2602.06036/README.md) · 2026 · 文献卡 · 格：解码执行 = 块扩散草稿器
 - [DFlash 2: Keep Drafting Parallel](../../papers/dflash-2/README.md) · 2026 · 官方博客 · 格：解码执行 = 块扩散草稿器
 
+## 6 档位化的思考、自我验证与并行思考（2025-08 – 2026）
+
+- [DeepSeekMath-V2: Towards Self-Verifiable Mathematical Reasoning](../../papers/arxiv-2511.22570/README.md) · 2025 · DeepSeek · 文献卡 · 格：选择与验证 = 训练出的验证器 + 元验证器
+- [Kimi K2.5: Visual Agentic Intelligence](../../papers/arxiv-2602.02276/README.md) · 2026 · 月之暗面 · 文献卡 · 格：预算分配 = 并行子智能体（PARL）；停止与长度 = Toggle
+- [The MiniMax-M2 Series: Mini Activations Unleashing Max Real-World Intelligence](../../papers/arxiv-2605.26494/README.md) · 2026 · MiniMax · 文献卡（主要归强化学习） · 格：生成器（多轮）= 跨轮保留思考；解码执行 = MTP
+- [NVIDIA Nemotron 3: Efficient and Open Intelligence](../../papers/arxiv-2512.20856/README.md) · 2025 · NVIDIA · 文献卡（主要归架构） · 格：停止与长度 = 推理预算控制；解码执行 = MTP
+- [GLM-5: from Vibe Coding to Agentic Engineering](../../papers/arxiv-2602.15763/README.md) · 2026 · 智谱、清华 · 文献卡（主要归强化学习） · 格：解码执行 = 共享参数的 MTP
+- [Qwen3.5-397B-A17B（官方模型卡）](../../papers/qwen3.5/README.md) · 2026 · 阿里巴巴 · 文献卡（主要归架构） · 格：生成器（多轮）= Qwen3.6 的思考保留
+- [Recursive Language Models](../../papers/arxiv-2512.24601/README.md) · 2025 · MIT · 文献卡（主要归长上下文） · 格：预算分配 = 递归调用自己处理长输入
+
+只读了官方页面、未建卡：[gpt-oss-120b & gpt-oss-20b Model Card](https://arxiv.org/abs/2508.10925)（2025-08，推理强度档位）；[Gemini 3 Deep Think](https://blog.google/products/gemini/gemini-3-deep-think/)（2025-12，并行推理）；[Introducing Muse Spark](https://ai.meta.com/blog/introducing-muse-spark-msl/)（2026-04，Contemplating 模式与思考压缩）。
+
 ## 交叉引用（主归属在其他方向）
 
 - [DeepSeek-V3 Technical Report](../../papers/arxiv-2412.19437/README.md) · 2024 · 预训练方向 · 格：解码执行 = MTP 草稿

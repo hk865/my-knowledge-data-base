@@ -39,6 +39,8 @@
 | 数据与策略的关系 | 加入从自家 SFT 模型采样的 on-policy 偏好 | [Tulu 3](../../../papers/arxiv-2411.15124/README.md) | DPO 效果更好 / 需要额外采样与打分 |
 | 奖励形式 | 奖励模型连同给分理由一起学 | [DeepSeek-V3](../../../papers/arxiv-2412.19437/README.md) | 降低奖励黑客 / 推理开销 |
 | 奖励形式 | 逐题 rubric 的生成式奖励模型；策略自己兼任评委 | [DeepSeek-V3.2](../../../papers/arxiv-2512.02556/README.md)、[DeepSeek-V4](../../../papers/arxiv-2606.19348/README.md) | 去掉标量奖励模型，少量人工标注 / 评委与策略一起变化，公开的失败分析少 |
+| 偏好来源 | 被选回答来自强模型、落选回答来自弱模型（Delta Learning） | [Olmo 3](../../../papers/arxiv-2512.13961/README.md) | 同样数据上 DPO 带来 SFT 带不来的提升 / 偏好只反映模型强弱之差 |
+| 奖励形式 | 先指出问题再打分的验证器 + 检查"问题是否真实"的元验证器；生成器自评一致也计奖励 | [DeepSeekMath-V2](../../../papers/arxiv-2511.22570/README.md) | 没有参考答案的证明也能给奖励 / 验证器会编造问题，需再加一层 |
 | 优化方式 | 拒绝采样（best-of-K 后 SFT），可接 PPO | [Llama 2](../../../papers/arxiv-2307.09288/README.md) | 稳定、易实现 / 只从上一轮样本里挑会遗忘 |
 | 优化方式 | 用 DPO 替代 PPO | [Llama 3](../../../papers/arxiv-2407.21783/README.md)、[Zephyr](../../../papers/arxiv-2310.16944/README.md)、[Tulu 3](../../../papers/arxiv-2411.15124/README.md) | 算力省、易调 / 分布外、过拟合、似然下降 |
 | 优化方式 | 调好的 PPO（优势归一化、大批量、参考模型滑动更新） | [Xu 等](../../../papers/arxiv-2404.10719/README.md) | 对话与代码竞赛上超过 DPO / 实现与调参更难 |

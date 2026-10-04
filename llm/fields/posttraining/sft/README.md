@@ -1,6 +1,6 @@
 # 监督微调 SFT
 
-> 状态：领域入门页 · v1 · 依据 [synthesis.csv](synthesis.csv)（14 篇）
+> 状态：领域入门页 · v1 · 依据 [synthesis.csv](synthesis.csv)（16 篇）
 >
 > 速览：
 > 1. SFT（监督微调，一句话：在"指令 + 示范回答"上做下一词预测，只在回答 token 上计算损失）主要教格式、角色与"调用哪一部分已有能力"，很少教新知识：LIMA 用 1,000 条、Llama 2 用 27,540 条高质量示范就够。
@@ -95,6 +95,15 @@
 
 做不好的场景：教师的上限就是学生的上限；V4 与 K3 对蒸馏目标（全词表 logit 还是逐 token 估计）的选择相反，见 [RL 方向](../rl/README.md)。
 
+2025-10 以后，on-policy 蒸馏（OPD）从各家报告里的一个步骤，变成被单独研究和推广的方法：
+
+- **方法说明与成本。** Thinking Machines 的[博客](../../../papers/thinking-machines-on-policy-distillation/README.md)（2025-10）把它写成"学生采样、教师给每个 token 打分"：以逐 token 的反向 KL 为负奖励、折扣取 0。Qwen3-8B-Base 经 40 万条 SFT 到 AIME'24 的 60% 后，以 Qwen3-32B 为教师做 OPD，约 150 步到 70%，作者估计比继续扩大离线 SFT 便宜约 9 倍，算上教师生成数据约 30 倍。它也能用来找回能力：在内部文档上中段训练后下降的指令遵循，用原模型作教师做 OPD 后 IF-eval 回到 83%（原为 85%），新知识保留。
+- **用来找回顺序训练丢掉的能力。** [GLM-5](../../../papers/arxiv-2602.15763/README.md)（2026-02）在推理、智能体、通用三段 RL 之后，以前面阶段的检查点为教师做跨阶段 OPD，理由是顺序优化不同目标会累积损失先前的能力。
+- **什么时候失效。** [Li 等](../../../papers/arxiv-2604.13016/README.md)（2026-04）在 1.5B–7B 的数学设定下发现两个前提：师生思考模式相容；教师要带来学生没见过的能力（同一家族的 1.5B 与 7B 教师，在学生看来分布上几乎无法区分）。密集的逐 token 奖励也不免费：回答超过约 10K token 后效果持平或下降，教师相对学生的优势从 1K 前缀时的 +0.37 降到 16K 时的 +0.02。
+- **同一时期出现的变体**：让同一个模型兼任教师与学生，教师额外看到参考解等特权信息（on-policy 自蒸馏，例如 2026-01 的 Self-Distilled Reasoner，本轮只读了摘要）。
+
+与之平行，冷启动 SFT 的数据来源仍在向"模型写"收敛：AI2 的 [Olmo 3](../../../papers/arxiv-2512.13961/README.md)（2025-12）用公开的 Dolci 推理数据做 SFT，再接 DPO 与 RL，并报告同样的数据用 DPO 能带来 SFT 带不来的提升。
+
 `[判断]` 第 5、6 两个节点合起来看，SFT 在 2025 年以后分成了两个角色：给 RL 打格式底子的冷启动（越少越好），以及把能力从强模型搬到弱模型的蒸馏（越像 on-policy 越好）。[SFT Memorizes, RL Generalizes](../../../papers/arxiv-2501.17161/README.md) 在规则游戏与导航上给出对应的对照：SFT 倾向记忆、换规则就不会，RL 能泛化，但没有 SFT 稳定输出格式，RL 根本训不起来。
 
 ## 技术地基
@@ -116,6 +125,8 @@
 | DeepSeek | 用自家推理模型生成数据，再蒸馏给下一代与小模型 | DeepSeek LLM、V3、R1、V3.2 | 推理数据过长、过度思考，要先训专家再筛 |
 | Qwen | 冷启动少而精；小模型靠强到弱蒸馏 | Qwen3 | 学生上限受教师限制 |
 | AI2、UW、Stanford 等学术团队 | 公开数据与配方，研究"多少数据够用" | Self-Instruct、Tulu 3、s1 | 依赖闭源模型写的数据（s1 的推理过程来自 Gemini） |
+| Thinking Machines Lab（2025-10） | 把 on-policy 蒸馏作为后训练与持续学习的通用工具 | [On-Policy Distillation](../../../papers/thinking-machines-on-policy-distillation/README.md) | 需要教师逐 token 的对数概率与兼容分词；官方博客，未经同行评议 |
+| 智谱（GLM-5） | 顺序多阶段 RL 后用跨阶段 OPD 找回能力 | [GLM-5](../../../papers/arxiv-2602.15763/README.md) | 多一轮蒸馏；未给出不做蒸馏的完整对照 |
 
 `[判断]` 收敛的方向是"模型写、规则或奖励模型筛"：Meta 从 Llama 2 的人工标注走到 Llama 3 的拒绝采样与合成数据，DeepSeek 从 V3 起用自家推理模型写推理数据，Qwen3 的冷启动数据由 QwQ-32B 生成、经多重过滤，QwQ-32B 一直答错的题由人工核对。人工数据留在两处：冷启动的少量高质量样本，以及难以自动判断的安全与事实性数据。
 
@@ -132,6 +143,7 @@
 - **SFT 数据里的新知识怎样识别和处理？** Gekhman 等的方法只在闭卷问答上验证；Llama 3 用知识探针生成拒答。长文本与推理数据中怎样做，仍未解决。入口：[Gekhman 等](../../../papers/arxiv-2405.05904/README.md)、[Llama 3](../../../papers/arxiv-2407.21783/README.md)。
 - **冷启动该多少？** R1 的冷启动少到会掉 AIME，Qwen3 主张刻意少，SFT Memorizes 说明完全不做 RL 训不起来。入口：[DeepSeek-R1](../../../papers/arxiv-2501.12948/README.md)、[Qwen3](../../../papers/arxiv-2505.09388/README.md)、[SFT Memorizes, RL Generalizes](../../../papers/arxiv-2501.17161/README.md)。
 - **蒸馏能把学生带到哪里？** 蒸馏比 RL 省，也能扩大 pass@k，但学生的上限是教师；超越教师是否只能靠 RL 与更强基座（R1 附录 F.1 的说法）。入口：[Yue 等](../../../papers/arxiv-2504.13837/README.md)、[s1](../../../papers/arxiv-2501.19393/README.md)。
+- **on-policy 蒸馏能否扩展到长程智能体？** Li 等在 10K token 以上看到效果持平或下降、教师在长前缀上变得不可靠；而 DeepSeek-V4、Kimi K3、GLM-5 都在长程智能体模型上用它。入口：[Li 等](../../../papers/arxiv-2604.13016/README.md)、[On-Policy Distillation](../../../papers/thinking-machines-on-policy-distillation/README.md)、[GLM-5](../../../papers/arxiv-2602.15763/README.md)。
 
 ## 阅读顺序
 
@@ -140,6 +152,7 @@
 3. [Gekhman 等](../../../papers/arxiv-2405.05904/README.md)：SFT 不该教什么。
 4. [DeepSeek-R1](../../../papers/arxiv-2501.12948/README.md)第 3 节与附录 F → [Qwen3](../../../papers/arxiv-2505.09388/README.md)第 4.1、4.5 节：SFT 变成冷启动与蒸馏。
 5. [SFT Memorizes, RL Generalizes](../../../papers/arxiv-2501.17161/README.md)：SFT 与 RL 的分工在受控实验里是什么样。
+6. [On-Policy Distillation](../../../papers/thinking-machines-on-policy-distillation/README.md) → [Li 等](../../../papers/arxiv-2604.13016/README.md)：on-policy 蒸馏的做法、成本，以及它什么时候失效。
 
 ## 批注
 
@@ -165,3 +178,9 @@
 **未核实 / 待验证**
 
 - Alpaca、Vicuna 等 2023 年社区 SFT 数据集本轮没有打开原文（Alpaca 只有博客与仓库），正文只写了 Self-Instruct。
+- on-policy 自蒸馏（[Self-Distilled Reasoner](https://arxiv.org/abs/2601.18734)，2026-01）及其后续（2026 年有多篇讨论特权信息泄漏的工作）只读了摘要；Mistral 的 Ministral 3（arXiv 2601.08584，用"剪枝 + 蒸馏"的级联从 24B 父模型得到 3B–14B）只读了摘要，均未写入正文结论。
+- 博客中 IF-eval 中途下降到多少，取决于中段训练里文档所占比例，本页只引用恢复后的 83%。
+
+**与原结论的张力**
+
+- 第 6 节写"on-policy 蒸馏取代一部分 RL"。2026 年的材料给出一个限定：Li 等的实验显示师生思考模式不相容、或教师没有新能力时 OPD 会失败，长回答上收益下降；这些条件在 V4、K3 的千亿级合并中是否成立，没有公开对照。

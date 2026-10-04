@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "resource_id": "url:https://thinkingmachines.ai/blog/on-policy-distillation",
+  "title": "On-Policy Distillation",
+  "resource_kind": "official_blog",
+  "canonical_folder": "llm/papers/thinking-machines-on-policy-distillation",
+  "official_url": "https://thinkingmachines.ai/blog/on-policy-distillation/",
+  "official_fulltext_url": "https://thinkingmachines.ai/blog/on-policy-distillation/",
+  "read_version": "官方博客 2025-10-27 版本",
+  "version_status": "see_read_version",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了方法定义（逐 token 反向 KL、折扣 0）、数学推理实验（60%→约 150 步 70%，9 倍/30 倍成本）、对 Qwen3 报告的引用、持续学习实验、O(1) 与 O(N) 比特的类比；不是全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "只保留官方链接；未获明确再分发许可。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Kevin Lu",
+    "Thinking Machines Lab"
+  ],
+  "year": 2025,
+  "topic_paths": [
+    "llm/posttraining/sft",
+    "llm/posttraining/rl"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "官方博客全文选段",
+    "mechanism_summary": "学生采样，教师给逐 token 对数概率，逐 token 反向 KL 作负奖励，折扣 0；Qwen3-8B-Base SFT-400K 60% → OPD 约 150 步 70%（教师 Qwen3-32B）；比继续离线 SFT 便宜约 9 倍，计入教师成本约 30 倍；引用 Qwen3：RL 17,920 GPU 小时 67.6%，OPD 约 1/10 算力 74.4%；持续学习：IF-eval 恢复到 83%（原 85%），内部知识 18%→41%。",
+    "evidence_boundary": "厂商博客自报；未复现。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://thinkingmachines.ai/blog/on-policy-distillation/"
+    ],
+    "source_origin": "llm_recency_audit_2026_10_04",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "generation"
+  ]
+}

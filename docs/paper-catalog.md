@@ -1,6 +1,6 @@
 # 全库论文总目录
 
-共 489 个去重资源（457 篇论文、24 篇官方技术报告、1 个代码仓库、7 篇官方博客）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
+共 500 个去重资源（462 篇论文、28 篇官方技术报告、2 个代码仓库、8 篇官方博客）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
 
 身份核验、助手教学进度和用户阅读状态分开。历史来源保留原角色与证据局限，不将助手推荐写成用户提供，也不将教学完成写成用户已读。
 
@@ -5256,6 +5256,116 @@
 - 身份核验：selected_sections_checked_not_full_read
 - 用户阅读状态：unknown
 - [文献卡](../cross-domain/papers/arxiv-2607.00248/README.md)
+
+<a id="p490"></a>
+## p490 · Qwen3.5-397B-A17B
+
+- 标识：url:https://huggingface.co/Qwen/Qwen3.5-397B-A17B
+- 原文 / 官方入口：https://huggingface.co/Qwen/Qwen3.5-397B-A17B
+- 主题：llm/architecture, llm/long-context
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/qwen3.5/README.md)
+
+<a id="p491"></a>
+## p491 · On-Policy Distillation
+
+- 标识：url:https://thinkingmachines.ai/blog/on-policy-distillation
+- 原文 / 官方入口：https://thinkingmachines.ai/blog/on-policy-distillation/
+- 主题：llm/posttraining/sft, llm/posttraining/rl
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/thinking-machines-on-policy-distillation/README.md)
+
+<a id="p492"></a>
+## p492 · The Art of Scaling Reinforcement Learning Compute for LLMs
+
+- 标识：arxiv:2510.13786
+- 原文 / 官方入口：https://arxiv.org/abs/2510.13786
+- 主题：llm/posttraining/rl
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2510.13786/README.md)
+
+<a id="p493"></a>
+## p493 · The MiniMax-M2 Series: Mini Activations Unleashing Max Real-World Intelligence
+
+- 标识：arxiv:2605.26494
+- 原文 / 官方入口：https://arxiv.org/abs/2605.26494
+- 主题：llm/posttraining/rl, llm/architecture, llm/inference
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2605.26494/README.md)
+
+<a id="p494"></a>
+## p494 · GLM-5: from Vibe Coding to Agentic Engineering
+
+- 标识：arxiv:2602.15763
+- 原文 / 官方入口：https://arxiv.org/abs/2602.15763
+- 主题：llm/posttraining/rl, llm/long-context, llm/architecture
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2602.15763/README.md)
+
+<a id="p495"></a>
+## p495 · Olmo 3
+
+- 标识：arxiv:2512.13961
+- 原文 / 官方入口：https://arxiv.org/abs/2512.13961
+- 主题：llm/pretraining, llm/posttraining/sft, llm/posttraining/preferences, llm/posttraining/rl
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2512.13961/README.md)
+
+<a id="p496"></a>
+## p496 · Rethinking On-Policy Distillation of Large Language Models: Phenomenology, Mechanism, and Recipe
+
+- 标识：arxiv:2604.13016
+- 原文 / 官方入口：https://arxiv.org/abs/2604.13016
+- 主题：llm/posttraining/sft
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2604.13016/README.md)
+
+<a id="p497"></a>
+## p497 · DeepSeekMath-V2: Towards Self-Verifiable Mathematical Reasoning
+
+- 标识：arxiv:2511.22570
+- 原文 / 官方入口：https://arxiv.org/abs/2511.22570
+- 主题：llm/inference, llm/posttraining/rl, llm/posttraining/preferences
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2511.22570/README.md)
+
+<a id="p498"></a>
+## p498 · Kimi K2.5: Visual Agentic Intelligence
+
+- 标识：arxiv:2602.02276
+- 原文 / 官方入口：https://arxiv.org/abs/2602.02276
+- 主题：llm/inference, llm/posttraining/rl
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2602.02276/README.md)
+
+<a id="p499"></a>
+## p499 · Recursive Language Models
+
+- 标识：arxiv:2512.24601
+- 原文 / 官方入口：https://arxiv.org/abs/2512.24601
+- 主题：llm/long-context, llm/inference
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2512.24601/README.md)
+
+<a id="p500"></a>
+## p500 · NVIDIA Nemotron 3: Efficient and Open Intelligence
+
+- 标识：arxiv:2512.20856
+- 原文 / 官方入口：https://arxiv.org/abs/2512.20856
+- 主题：llm/architecture, llm/long-context, llm/pretraining, llm/posttraining/rl
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2512.20856/README.md)
 
 ## 2026年10月3日既有条目更新
 

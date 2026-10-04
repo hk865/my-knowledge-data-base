@@ -44,17 +44,22 @@
 | 序列混合 | 推理时保留开头 token 加滑动窗口 | [StreamingLLM](../../papers/arxiv-2309.17453/README.md) | 不微调稳定处理 400 万 token；代价：不扩展可用上下文，不适合需要长程记忆的任务 |
 | 序列混合 | 训练时就稀疏：压缩块 + 选块 + 滑窗；DeepSeek 架构线第 4 步 | [NSA](../../papers/arxiv-2502.11089/README.md) | LongBench 0.469 对全注意力 0.437，64K 解码最多快 11.6 倍；代价：第一层要换回 MLP 才稳定 |
 | 序列混合 | 轻量索引器选 top-k KV（DSA），建在 MLA 上；DeepSeek 架构线第 5 步 | [DeepSeek-V3.2](../../papers/arxiv-2512.02556/README.md) | 每查询只读 2048 个 KV；代价：索引器仍随长度平方增长，需要稠密预热 |
+| 序列混合 | 已有模型经继续训练转成 DSA（DeepSeek 以外的首次采用） | [GLM-5](../../papers/arxiv-2602.15763/README.md) | 长序列注意力计算省 1.5–2 倍，128K RULER 与稠密差 0.35；代价：RL 中须冻结索引器、用确定性 top-k |
+| 序列混合 | 反例：全部层用全注意力，弃用滑窗与 Lightning Attention 混合 | [MiniMax-M2](../../papers/arxiv-2605.26494/README.md) | 避开多跳推理、检索、上下文学习上的退化；代价：长序列成本按平方增长 |
 | 序列混合 | 线性注意力：核特征映射，因果版即 RNN | [线性注意力](../../papers/arxiv-2006.16236/README.md) | 复杂度降到线性，CIFAR-10 生成吞吐 4462 倍；代价：WSJ 音素错误率 8.08 对 softmax 5.12 |
 | 序列混合 | 线性递推、固定转移 | [LRU](../../papers/arxiv-2303.06349/README.md) | 从 RNN 一侧追平 S4（LRA 上）；代价：转移不随内容变化 |
 | 序列混合 | 选择性 SSM，无注意力 | [Mamba](../../papers/mamba/reading.md) | 生成吞吐 5 倍；代价：复制与召回差（[Repeat After Me](../../papers/arxiv-2402.01032/README.md)：电话簿查找中 Pythia-410M 胜过 Mamba-2.8B） |
 | 序列混合 | 泰勒线性注意力 + 小滑动窗口 | [Based](../../papers/arxiv-2402.18668/README.md) | 召回密集任务比 Mamba 高 10.36 个百分点；代价：固定状态的召回有下界，仍落后于全注意力 |
 | 层排布 | 注意力:Mamba = 1:7，加 MoE | [Jamba](../../papers/arxiv-2403.19887/README.md) | 256K KV 缓存 4GB 对 Mixtral 32GB；代价：Mamba 层在 7B 级需要内部 RMSNorm |
 | 层排布 | KDA 线性注意力:MLA = 3:1，全局层不用位置编码；最后一层固定为全局 | [Kimi Linear](../../papers/arxiv-2510.26692/README.md)、[Kimi K3](../../papers/arxiv-2607.24653/README.md) | KV 最多少 75%，1M 解码吞吐最多 6 倍；代价：7:1 时分布外验证变差 |
+| 层排布 | Gated DeltaNet:门控注意力 = 3:1 | [Qwen3.5](../../papers/qwen3.5/README.md) | 原生 262K；只有模型卡，无消融 |
+| 层排布 | Mamba-2 与 MoE 交错为主，少数注意力层，注意力层不用 RoPE | [Nemotron 3](../../papers/arxiv-2512.20856/README.md) | Nano 吞吐为 Qwen3-30B-A3B 的 3.3 倍，1M RULER 54.19；层比例未量化 |
 | 层排布 | 前 3 个 MoE 层按 token ID 哈希路由；V4-Flash 前两层只用滑窗 | [DeepSeek-V4](../../papers/arxiv-2606.19348/README.md) | 早期层做静态、局部的处理；代价：未见单独消融 |
 | 通道混合 | top-1 路由的稀疏 MoE，路由器 float32 | [Switch Transformer](../../papers/arxiv-2101.03961/README.md) | 相同计算下预训练最多快 7 倍；代价：最大模型不稳、丢 token、微调过拟合 |
 | 通道混合 | 细粒度专家 + 共享专家；DeepSeek 架构线第 1 步 | [DeepSeekMoE](../../papers/arxiv-2401.06066/README.md) | 2B 与 1.5 倍规模的 GShard 相当；代价：16B 选择题偏弱 |
 | 通道混合 | 无辅助损失的偏置均衡；多 token 预测（MTP）；DeepSeek 架构线第 3 步 | [无辅助损失均衡](../../papers/arxiv-2408.15664/README.md)、[DeepSeek-V3](../../papers/arxiv-2412.19437/README.md) | 1B 验证困惑度 9.56 → 9.50、全局负载偏离 0.72 → 0.04；MTP 推理时可丢弃或用作投机解码草稿；代价：V3 推荐部署单元大 |
 | 通道混合 | 在 MoE 旁加 N-gram 哈希查表（条件记忆）；DeepSeek 架构线第 7 步 | [Engram](../../papers/arxiv-2601.07372/README.md)；后续 [Tokenizer-Agnostic Engram](../../papers/arxiv-2607.29065/README.md)、[Frozen Memory Is Not Enough](../../papers/arxiv-2608.17050/README.md) | 同参数、同计算下 BBH +5.0，多查询大海捞针 84.2 → 97.0；代价：分配比例呈 U 形，表与分词器绑定 |
+| 通道混合 | 在潜空间里路由与计算专家（LatentMoE） | [Nemotron 3](../../papers/arxiv-2512.20856/README.md)（Super、Ultra） | 路由参数与 all-to-all 通信约省 4 倍，用于更多专家；Kimi K3 的 Stable LatentMoE 是同类做法 |
 | 深度方向 | 归一化移到子层输入（Pre-LN） | [Pre-LN](../../papers/arxiv-2002.04745/README.md) | 去掉学习率预热；代价：深层冗余（[ShortGPT](../../papers/arxiv-2403.03853/README.md)） |
 | 深度方向 | 残差流扩成多条、可学习连接；DeepSeek 架构线第 6 步的前作 | [Hyper-Connections](../../papers/arxiv-2409.19606/README.md) | OLMoE 上收敛快 1.8 倍；代价：混合矩阵无约束，27B 上不稳 |
 | 深度方向 | 混合矩阵约束为双随机矩阵；DeepSeek 架构线第 6 步 | [mHC](../../papers/arxiv-2512.24880/README.md) | 27B 上 BBH 51.0 对 HC 48.9、基线 43.8，额外开销 6.7% |

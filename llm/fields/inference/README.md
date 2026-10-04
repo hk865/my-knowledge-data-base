@@ -1,6 +1,6 @@
 # 推理时计算与解码
 
-> 状态：领域入门页 · v2 · 依据 [synthesis.csv](synthesis.csv)（14 篇）
+> 状态：领域入门页 · v2 · 依据 [synthesis.csv](synthesis.csv)（16 篇）
 >
 > 速览：
 > 1. 本方向研究模型训练好之后，回答问题时怎样花算力：一类是多花算力换准确率（多写推理步骤、多次采样再选、验证器引导的搜索、训练出来的长思考），另一类是把同样的输出算得更快更省（投机解码、KV 缓存管理、量化、批处理）。
@@ -8,6 +8,7 @@
 > 3. 多算有效的条件是答案能被验证、题目难度在模型能力的中段：Large Language Monkeys 在 SWE-bench Lite 上把单次 15.9% 的模型采样 250 次，覆盖率到 56%。失效有三种：没有可靠验证器时，多数投票和奖励模型在约 100 次采样后就进入平台；搜索会钻验证器的空子（Snell 等的简单题）；思考过长反而掉点或浪费（回答"2 加 3"时比普通模型多用 1,953% 的 token；最长一档的思维链在 GSM8K 上反而最差）。
 > 4. 投机解码让小模型写草稿、大模型一次验证，在严格保持目标分布的前提下得到 2–3 倍加速，EAGLE-3 把草稿器训练成读目标模型内部特征的小网络，单请求最高约 6.5 倍；它和 vLLM 的分页 KV 缓存、GQA、KV 量化一起，决定推理模型那几万 token 的思考付不付得起。
 > 5. `[判断]` 团队押注：Google 早期提供了思维链、自洽和投机解码这些基本件；OpenAI 用 o1 定义了"推理模型"但不公开方法；DeepSeek 与 Kimi 公开了 RL 配方，都放弃过程奖励模型与搜索，Kimi 额外把"思考长度"当作训练目标（long2short）。
+> 6. 2025 年下半年到 2026 年，"多算"分成三个可调的量：思考长度变成用户可选的档位（gpt-oss 的低、中、高，DeepSeek-V4 与 Kimi K3 的三档）；并行的路数（Gemini 3 Deep Think、Kimi K2.5 的 Agent Swarm）；验证的强度（DeepSeekMath-V2 用训练出的验证器反复检查证明）。智能体模型还把以前各轮的思考留在上下文里（MiniMax-M2、Qwen3.6），与 2025 年 gpt-oss"删掉以前推理"的做法相反。
 
 本页是[大语言模型](../../README.md)领域的推理时计算方向。怎样用强化学习训练出长思考，在[强化学习方向](../posttraining/rl/README.md)；长上下文怎样获得与评测，在[长上下文方向](../long-context/README.md)；注意力与 KV 缓存的结构改造，在[预训练方向](../pretraining/README.md)问题③与[架构与效率方向](../architecture/README.md)。投机解码的概率机制有一篇带手算的导读：[小模型写草稿，大模型究竟验证什么？](draft-verification-guide.md)
 
@@ -106,9 +107,25 @@
 | [vLLM](../../papers/arxiv-2309.06180/README.md)（2023，UC Berkeley 等） | KV 缓存按块分页存放，按需分配、可在采样分支间共享；有效显存占比从 20%–38% 提到 96%，同等延迟下吞吐 2–4 倍 | attention kernel 本身比 FasterTransformer 慢 20%–26% |
 | [GQA](../../papers/arxiv-2305.13245/README.md)（2023，Google）、[KIVI](../../papers/arxiv-2402.02750/README.md)（2024） | 前者让一组查询头共用一组 K、V；后者把 KV 缓存量化到 2 比特，批量放大 4 倍，吞吐 2.35–3.47 倍 | GQA 只在 encoder–decoder 上评估；KIVI 在已用 MQA 的 Falcon-7B 上需要 4 比特 |
 | [EAGLE-3](../../papers/arxiv-2503.01840/README.md)（2025，北京大学、微软研究院等） | 草稿器不再是独立的小模型，而是读取目标模型多层内部特征的轻量网络，直接预测 token；单请求加速 3.0–6.5 倍，约为 EAGLE-2 的 1.4 倍；在 SGLang 中批量 64 时吞吐仍提高 38% | 需要访问目标模型内部特征并专门训练草稿器；vLLM 中批量 56 时只有 1.01 倍 |
+| MTP 成为开放模型的标配（2025-12 – 2026） | [Nemotron 3](../../papers/arxiv-2512.20856/README.md) 的 Super 与 Ultra、[GLM-5](../../papers/arxiv-2602.15763/README.md)、[Qwen3.5](../../papers/qwen3.5/README.md)、[MiniMax-M2](../../papers/arxiv-2605.26494/README.md) 都在预训练中带 MTP 模块供投机解码使用；GLM-5 让 3 个 MTP 层共享参数，4 步投机的平均接受长度 2.76，DeepSeek-V3.2 为 2.55；MiniMax-M2 预训练时只训 1 个 MTP 模块，衰减期复制成 3 个 | 接受长度的对比用的是各家的私有测试集；草稿模块仍与目标模型绑定 |
 | DeepSeek-V3 的 MTP、[DFlash](../../papers/arxiv-2602.06036/README.md)（2026） | 预训练时就带一个预测再下一个 token 的模块，推理时当草稿用，第二个 token 接受率 85%–90%，生成速度 1.8 倍（见[预训练方向](../pretraining/README.md)⑥）；DFlash 用块扩散模型一次并行写完整块草稿 | 草稿器与目标模型绑定；DFlash 的加速随模型、任务与温度变化 |
 
 `[判断]` 站在现在看，投机解码一线的演进是"草稿器离目标模型越来越近"：独立小模型 → 读目标模型特征的小网络（EAGLE 系列）→ 训练时就长在目标模型里（MTP）。原因是加速倍数主要由接受率决定，而接受率取决于草稿与目标的分布有多接近。另一条是批量问题：投机解码靠闲置算力换速度，服务端批量越大闲置越少，EAGLE-3 在 vLLM 大批量下几乎没有收益，这也是它特意报告 SGLang 大批量结果的原因。放宽验证规则（BiLD、Judge Decoding）或只让大模型接管关键片段（RelayLLM）能更快，但不再保证输出与大模型同分布，比较时要看质量，见[导读](draft-verification-guide.md)第 6 节。
+
+### 6 档位化的思考、自我验证与并行思考（2025-08 – 2026）
+
+留下的问题：长度控制靠外加信号（第 4 节），用户无法按任务挑预算；没有可靠验证器的任务（证明、开放搜索）多采样也选不出好答案；单条思维链越长，墙钟时间越长；智能体在多轮工具调用之间要不要记住自己之前的思考，没有定论。
+
+改变：
+
+- **推理强度成为档位。** OpenAI 的 [gpt-oss 模型卡](https://arxiv.org/abs/2508.10925)（2025-08）训练低、中、高三档推理强度，用系统提示切换，图 3 显示 AIME、GPQA 的准确率随平均思维链长度近似对数线性增长。此后公开报告的模型都带档位或预算：DeepSeek-V4 用三档长度惩罚训练三种模式，Kimi K3 训练 3 档推理强度的专家，[Nemotron 3](../../papers/arxiv-2512.20856/README.md) 允许用户指定思考 token 上限、到达后插入思考结束符转入作答。训练侧也在压长度：[Kimi K2.5](../../papers/arxiv-2602.02276/README.md) 的 Toggle 每隔若干步在"限定预算内解题"与"放开长度"之间切换，在 K2 Thinking 上把输出 token 减少 25%–30%，性能几乎不降；Meta 的 [Muse Spark 博客](https://ai.meta.com/blog/introducing-muse-spark-msl/)（2026-04）称长度惩罚让模型"压缩思考"。
+- **没有答案时用训练出来的验证器多算。** [DeepSeekMath-V2](../../papers/arxiv-2511.22570/README.md)（2025-11）训练能指出问题的证明验证器（再用元验证器检查它没有编造问题），推理时每题先写 64 份证明、每份验证 64 次，再挑出最好的 64 份迭代修改最多 16 轮，直到某份通过全部验证；IMO 2025 解出 6 题中的 5 题，Putnam 2024 得 118/120。这是对第 2 节"没有可靠验证器就进入平台"的直接回应：把验证器本身训练出来。
+- **并行地多算。** Google 的 [Gemini 3 Deep Think](https://blog.google/products/gemini/gemini-3-deep-think/)（2025-12）称用"并行推理同时探索多个假设"，Meta 的 Muse Spark 推出让多个智能体并行推理的 Contemplating 模式，二者都没有公开方法。Kimi K2.5 公开了一种训练方法：编排器把任务拆开、并行派出子智能体，用鼓励并行与子任务完成率的奖励训练（PARL），以"关键步数"（编排器步数加每批并行子智能体中最长的一个）衡量延迟；WideSearch 上达到同样效果的执行时间快 3–4.5 倍，BrowseComp 从 60.6% 提到 78.4%。
+- **思考跨轮保留。** gpt-oss 的模型卡写明多轮对话中应删除以前各轮的推理内容；2026 年的智能体模型反过来保留：[MiniMax-M2](../../papers/arxiv-2605.26494/README.md) 的"交错思考"把每轮的思考与工具调用都留在历史里，消融显示剥掉以前各轮的思考块会在智能体评测上一致变差；[GLM-5](../../papers/arxiv-2602.15763/README.md) 的 SFT 数据含交错思考；Qwen3.6（2026-04，见 [Qwen3.5 卡片](../../papers/qwen3.5/README.md)）新增"思考保留"选项，模型卡称它让智能体决策更一致、减少重复推理的 token。
+
+做不好的场景：DeepSeekMath-V2 的成绩建立在每题数千次生成与验证之上，作者写明最难的 IMO 级题仍然困难；Agent Swarm 的"快 3–4.5 倍"是墙钟意义上的，并行子智能体合起来可能花更多 token；Gemini Deep Think 与 Muse Spark 的并行做法不公开，无法检查它们怎样在多条思路之间选择；保留思考会让上下文更快变长，与长上下文成本直接冲突（见[长上下文方向](../long-context/README.md)）。
+
+`[判断]` 2026 年的变化是"多算"从一个维度变成三个：串行的思考长度（档位化）、并行的路数（Deep Think、Contemplating、Agent Swarm）、以及验证的强度（DeepSeekMath-V2 的多次验证）。公开配方的只有 Kimi 的并行智能体与 DeepSeek 的自我验证，闭源团队只公开到"有这个模式"。依据见批注。
 
 ## 技术地基
 
@@ -130,6 +147,11 @@
 | Kimi（Moonshot AI） | 长上下文 RL（128K）、不用价值函数，把思考长度当作训练目标 | k1.5 | 未声明开放代码与权重；长上下文 RL 的效率仍是问题 |
 | 学术界（Stanford、人大与微软、腾讯等） | 用小数据、可复现的实验刻画规律：覆盖率、预算强制、过度思考、最优长度 | Monkeys、s1、Thinking-Optimal、Overthinking | 多在 32B 以下、以数学为主；Thinking-Optimal 只做 SFT |
 | 系统社区（Berkeley 的 vLLM、北大等的 EAGLE） | 不改模型输出、只改执行：分页 KV、训练专用草稿器 | vLLM、EAGLE-3 | 加速随批量、硬件、任务变化，倍数不能跨配置搬用 |
+| OpenAI（2025-08 以后） | 推理强度分档；开放权重的 gpt-oss 公开了档位训练与推理格式 | [gpt-oss 模型卡](https://arxiv.org/abs/2508.10925) | 只公开到"与 o3 相似的思维链 RL"；多轮中删掉以前的推理 |
+| Google（2025-12 以后） | 并行推理的 Deep Think 模式 | [Gemini 3 Deep Think 博客](https://blog.google/products/gemini/gemini-3-deep-think/) | 方法不公开，只能看到评测数字 |
+| DeepSeek（2025-11 以后） | 训练验证器，推理时生成—验证—修改循环；三档推理强度 | [DeepSeekMath-V2](../../papers/arxiv-2511.22570/README.md)、[DeepSeek-V4](../../papers/arxiv-2606.19348/README.md) | 每题数千次生成与验证，成本高 |
+| Kimi（2026） | 把并行与长度都做成 RL 的训练目标（PARL、Toggle） | [Kimi K2.5](../../papers/arxiv-2602.02276/README.md)、[Kimi K3](../../papers/arxiv-2607.24653/README.md) | 并行省墙钟时间、不一定省 token |
+| MiniMax、Qwen、智谱 | 智能体场景下跨轮保留思考；预训练带 MTP 供投机解码 | [MiniMax-M2](../../papers/arxiv-2605.26494/README.md)、[Qwen3.5](../../papers/qwen3.5/README.md)、[GLM-5](../../papers/arxiv-2602.15763/README.md) | 上下文更快变长；MTP 接受长度只在各家私有集上报告 |
 
 `[判断]` 路线收敛的部分：R1 与 k1.5 都不用 PRM 与 MCTS；R1、k1.5、Overthinking、Thinking-Optimal 都把"简单题想太多"列为问题。分化的部分：DeepSeek 把长度控制留给未来，Kimi 在训练里直接加长度奖励；投机解码一侧，Google 与 DeepMind 的原始方法保持分布不变，后续的 BiLD、Judge Decoding、RelayLLM 用质量换速度。依据见批注。
 
@@ -151,6 +173,8 @@
 - **思维链是不是真实的推理过程？** CoT 原文把"网络是否真的在推理"留作开放问题；o1 隐藏原始思维链以便监控。入口：[Making Reasoning Matter](../../papers/url-https-aclanthology.org-2024.findings-emnlp.882/README.md)、[Measuring CoT Faithfulness by Unlearning](../../papers/url-https-aclanthology.org-2025.emnlp-main.504/README.md)。
 - **测试时计算与预训练怎样分配？** Snell 等的 14 倍对比只在固定训练数据量下增大参数，没有覆盖推理模型；DeepSeek-V4 把"推理模型靠更长的思考提升能力"列为改造注意力的动因（见[长上下文方向](../long-context/README.md)）。入口：[Snell 等精读](../../papers/test-time-compute/reading.md)、[DeepSeek-V4](../../papers/arxiv-2606.19348/README.md)。
 - **投机解码在大批量服务下还剩多少收益？** 入口：[EAGLE-3](../../papers/arxiv-2503.01840/README.md)、[DFlash](../../papers/arxiv-2602.06036/README.md)、[DFlash 2](../../papers/dflash-2/README.md)。
+- **串行思考、并行路数、验证强度三者怎样分配同一份算力？** 闭源团队的并行模式不公开选择规则；Kimi K2.5 只优化墙钟时间，DeepSeekMath-V2 只在数学证明上验证。入口：[Kimi K2.5](../../papers/arxiv-2602.02276/README.md)、[DeepSeekMath-V2](../../papers/arxiv-2511.22570/README.md)。
+- **以前各轮的思考该留还是该删？** gpt-oss 要求删除，MiniMax-M2 与 Qwen3.6 选择保留并报告智能体任务受益；保留的代价是上下文增长，没有同条件对照。入口：[MiniMax-M2](../../papers/arxiv-2605.26494/README.md)、[Qwen3.5](../../papers/qwen3.5/README.md)。
 
 ## 阅读顺序
 
@@ -159,6 +183,7 @@
 3. [OpenAI o1](../../papers/openai-o1/README.md) → [DeepSeek-R1](../../papers/arxiv-2501.12948/README.md) → [Kimi k1.5](../../papers/arxiv-2501.12599/README.md)：推理模型的出现与两份公开配方；对照读 R1 附录 G.2 与 k1.5 第 2.3 节，看两家为什么都不用 PRM 与搜索。RL 算法本身接着读[强化学习方向](../posttraining/rl/README.md)。
 4. [s1](../../papers/arxiv-2501.19393/README.md) → [Overthinking](../../papers/url-https-proceedings.mlr.press-v267-chen25bx.html/README.md) → [Thinking-Optimal](../../papers/arxiv-2502.18080/README.md)：思考长度怎样延长、怎样测量浪费、怎样找最优长度。
 5. [草稿—验证导读](draft-verification-guide.md) → [投机解码](../../papers/arxiv-2211.17192/README.md) → [EAGLE-3](../../papers/arxiv-2503.01840/README.md) → [vLLM](../../papers/arxiv-2309.06180/README.md)：先用手算弄懂为什么输出分布不变，再看草稿器怎样改进、服务系统怎样把批量做大。
+6. [DeepSeekMath-V2](../../papers/arxiv-2511.22570/README.md) → [Kimi K2.5](../../papers/arxiv-2602.02276/README.md)：没有答案时怎样靠验证多算，以及怎样把并行做成训练目标；再看 [MiniMax-M2](../../papers/arxiv-2605.26494/README.md) §7.1 的交错思考。
 
 基线拆分见 [Baseline 页](BASELINES.md)，按问题排列的练习见[路线图](ROADMAP.md)，本方向收录的论文见[论文目录](PAPERS.md)。
 
@@ -200,3 +225,15 @@
 - k1.5 中 DPO、模型合并等 long2short 方法的具体数值只在图中，正文未给出。
 - CoT"约 100B 参数"中的约等号来自 PDF 文本抽取，以原 PDF 为准。
 - BiLD、Judge Decoding、RelayLLM、Faster Cascades 的结论沿用 2026-10-03 的文献卡核验，本轮未重新打开原文。
+- 第 6 节中 gpt-oss 的内容取自模型卡 §2.5（"与 o3 相似的思维链 RL"、harmony 格式中"以前各轮的推理应删除"）与图 3；Gemini 3 Deep Think 只有官方博客一句方法描述（并行推理、同时探索多个假设）与 HLE 41.0%、ARC-AGI-2 45.1% 两个数；Muse Spark 只有官方博客。三者都没有可核对的方法细节。
+- 已知存在但本轮未打开：Gemini 3 Pro 模型卡与 Frontier Safety 报告、Nemotron 3 Super/Ultra 的单独报告、Kimi K2 Thinking 的官方博客、GPT-5 系列系统卡中关于推理强度的部分（库中已有 [GPT-5.6 系统卡](../../../cross-domain/papers/openai-gpt-5-6-system-card/README.md)，归评估方向）。
+
+**第 6 节的判断依据与反例**
+
+- "多算分成三个量"：gpt-oss §2.5.2 与图 3（档位）、DeepSeek-V4 与 Kimi K3 的三档（见[强化学习方向](../posttraining/rl/README.md)第 6 节）、Nemotron 3 的推理预算控制；Gemini 3 Deep Think 博客与 Kimi K2.5 的 Agent Swarm（并行）；DeepSeekMath-V2 §3.3.3（验证强度）。反例与边界：并行与验证的公开配方各只有一家，闭源团队的做法只能看到产品层面的描述。
+- "跨轮保留思考"：gpt-oss §2.5.1（删除）、MiniMax-M2 §7.1（保留，消融变差）、Qwen3.6 模型卡（保留，作为选项）、GLM-5 的 SFT（交错思考）。这是一次方向上的反转，但 gpt-oss 面向的是一般多轮对话，MiniMax 与 Qwen 面向的是智能体，场景不完全相同。
+
+**与原结论的张力**
+
+- 速览第 5 条与主要路线表把 OpenAI 写成"不公开方法"。2025-08 的 gpt-oss 模型卡公开了开放权重模型的结构、推理档位训练与对话格式，但对 RL 本身仍只写到"与 o3 相似"；原判断对 RL 方法仍成立，对推理形态（档位、格式）已不成立。
+- "主要路线与团队偏好"一节的判断"DeepSeek 把长度控制留给未来，Kimi 在训练里直接加长度奖励"描述的是 R1 与 k1.5 的时点；DeepSeek-V4 已用三档长度惩罚训练，两家在"把长度作为训练目标"上已经收敛。

@@ -47,6 +47,13 @@
 - [DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence](../../../papers/arxiv-2606.19348/README.md) · 2026 · DeepSeek · 文献卡（主要归预训练） · 格：损失 = 多教师 on-policy 蒸馏
 - [Kimi K3: Open Frontier Intelligence](../../../papers/arxiv-2607.24653/README.md) · 2026 · 月之暗面 · 文献卡（主要归预训练） · 格：位置 = 冷启动；损失 = 多教师 on-policy 蒸馏
 
+- [On-Policy Distillation](../../../papers/thinking-machines-on-policy-distillation/README.md) · 2025 · Thinking Machines Lab · 官方博客 · 格：损失 = on-policy 蒸馏（方法说明与成本）
+- [Olmo 3](../../../papers/arxiv-2512.13961/README.md) · 2025 · AI2 · 文献卡（主要归强化学习） · 格：示范来源 = 推理模型写的公开数据（Dolci）；位置 = SFT → DPO → RL
+- [GLM-5: from Vibe Coding to Agentic Engineering](../../../papers/arxiv-2602.15763/README.md) · 2026 · 智谱、清华 · 文献卡（主要归强化学习） · 格：位置 = 跨阶段 on-policy 蒸馏
+- [Rethinking On-Policy Distillation of Large Language Models: Phenomenology, Mechanism, and Recipe](../../../papers/arxiv-2604.13016/README.md) · 2026 · 清华大学等 · 文献卡 · 格：损失 = OPD 的成败条件与长度代价
+
+已知存在、只读了摘要：[Self-Distilled Reasoner: On-Policy Self-Distillation for Large Language Models](https://arxiv.org/abs/2601.18734)（2026，同一模型兼任师生，教师看特权信息）；[Ministral 3](https://arxiv.org/abs/2601.08584)（2026，Mistral，级联剪枝与蒸馏）。
+
 ## 相关但不在主线
 
 - [Recursive Introspection: Teaching Language Model Agents How to Self-Improve](../../../papers/arxiv-2407.18219/README.md) · 2024 · 文献卡 · RISE：迭代微调，教模型在失败尝试之后修改回答，与智能体方向交叉

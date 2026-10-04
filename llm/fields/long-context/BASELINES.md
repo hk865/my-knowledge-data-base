@@ -54,12 +54,18 @@
 | 注意力结构 | 训练时就稀疏：压缩、选块、窗口三路 | [NSA](../../papers/arxiv-2502.11089/README.md) | **改进**：LongBench 0.469 对全注意力 0.437；64K 解码快 11.6 倍。<br>**代价**：只验证到 64K |
 | 注意力结构 | 索引器选 top-2048 → 压缩后再稀疏（CSA）与重度压缩（HCA）交错 | [DeepSeek-V3.2](../../papers/arxiv-2512.02556/README.md)、[DeepSeek-V4](../../papers/arxiv-2606.19348/README.md) | **改进**：1M 下单 token FLOPs 为 V3.2 的 27%、KV 为 10%；MRCR 1M 83.5。<br>**代价**：128K 以后检索下降；结构复杂；V3.2 的索引器仍是平方复杂度 |
 | 注意力结构 | 3:1 线性注意力（KDA）与全注意力混合 | [Kimi Linear](../../papers/arxiv-2510.26692/README.md)、[Kimi K3](../../papers/arxiv-2607.24653/README.md) | **改进**：KV 缓存最多少 75%，1M 解码最多快 6 倍。<br>**代价**：LongBench v2 略低于全注意力；纯线性检索弱，7:1 时泛化变差 |
+| 注意力结构 | 用继续训练把已有模型转成 DSA（MLA → 稠密预热 → 稀疏适应） | [GLM-5](../../papers/arxiv-2602.15763/README.md) | **改进**：长序列注意力计算省 1.5–2 倍，128K RULER 78.86 对稠密 79.21。<br>**代价**：RL 中要冻结索引器、用确定性 top-k |
+| 注意力结构 | 3:1 的 Gated DeltaNet 与门控注意力混合 | [Qwen3.5](../../papers/qwen3.5/README.md) | **改进**：原生 262K、可扩展到约 1M。<br>**代价**：只有模型卡，缺少长上下文消融 |
+| 注意力结构 | Mamba-2 为主、少数注意力层且不用 RoPE | [Nemotron 3](../../papers/arxiv-2512.20856/README.md) | **改进**：1M RULER 54.19（上一代 23.43）；Nano 吞吐为 Qwen3-30B-A3B 的 3.3 倍。<br>**代价**：1M 上仍只有约一半 |
+| 注意力结构 | 反例：全部层用全注意力 | [MiniMax-M2](../../papers/arxiv-2605.26494/README.md) | **改进**：避开滑窗混合在多跳推理、检索、上下文学习上的退化。<br>**代价**：长序列成本按平方增长 |
 | 注意力结构 | 消除注意力汇聚的输出门 | [Gated Attention](../../papers/arxiv-2505.06708/README.md) | **改进**：YaRN 扩到 128K 后，RULER 128K 从 31.65 到 58.82。<br>**代价**：原训练长度内差别很小 |
 | 注意力结构 | 换序列算子：选择性状态空间模型 | [Mamba](../../papers/mamba/reading.md) | **改进**：状态大小固定，不随长度增长。<br>**代价**：精确检索弱，同一缺点推动了 Kimi 的混合结构（见[递推状态谱系](../../../foundations/relations/recurrent-state.md)） |
 | 推理外推与执行 | DCA 加 YaRN 温度，免训练外推 | [Qwen2.5-1M](../../papers/qwen2.5-1m/reading.md)（引用 [DCA](https://arxiv.org/abs/2402.17463)） | **改进**：原版 14B 加外推后 RULER 128K 从 53.0 到 78.1。<br>**代价**：DCA 与温度总是一起用，各自贡献未拆开 |
 | 推理外推与执行 | 稀疏 prefill，在目标长度上重新校准 | [Qwen2.5-1M](../../papers/qwen2.5-1m/reading.md)（引用 [MInference](https://arxiv.org/abs/2407.02490)） | **改进**：1M 首 token 延迟降低 3.2–6.7 倍。<br>**代价**：不重新校准时，400K 以上的检索掉到 60% 以下 |
 | 推理外推与执行 | KV 缓存量化、分页管理 | [KIVI](../../papers/arxiv-2402.02750/README.md)、[vLLM](../../papers/arxiv-2309.06180/README.md)（见[推理时计算方向](../inference/BASELINES.md)） | **改进**：同样显存放下更长的上下文或更多请求。<br>**代价**：量化有精度损失；不改变模型学过的长度 |
 | 推理外推与执行 | 把记忆移到上下文之外：查表记忆、外部记忆 | [Engram](../../papers/arxiv-2601.07372/README.md)、[Frozen Memory Is Not Enough](../../papers/arxiv-2608.17050/README.md) | **改进**：Engram 的多查询大海捞针从 84.2 到 97.0。<br>**代价**：解决的是静态知识，不是读当前输入 |
+| 推理外推与执行 | 长输入放进代码环境，模型写代码切分并递归调用自己 | [Recursive Language Models](../../papers/arxiv-2512.24601/README.md) | **改进**：处理超出窗口两个数量级的输入，OOLONG-Pairs 上 GPT-5 从 0.1% 到 58.0%。<br>**代价**：依赖写代码能力；子调用串行、成本方差大 |
+| 推理外推与执行 | 并行子智能体各持局部上下文，只交回相关结果 | [Kimi K2.5](../../papers/arxiv-2602.02276/README.md) | **改进**：主动的上下文管理，WideSearch 执行时间快 3–4.5 倍。<br>**代价**：子智能体冻结，不联合训练 |
 | 评测 | 证据位置 × 文档数的受控实验 | [Lost in the Middle](../../papers/arxiv-2307.03172/README.md) | **改进**：发现 U 形位置效应。<br>**代价**：输入最长约 16K token（30 篇文档；键值检索 300 对） |
 | 评测 | 多模态大海捞针、多针、从语法书学翻译 | [Gemini 1.5](../../papers/arxiv-2403.05530/README.md) | **改进**：测到 10M。<br>**代价**：单针接近满分、多针 1M 约 60%，报告自己承认单针不够 |
 | 评测 | 合成多任务，定义有效长度 | [RULER](../../papers/arxiv-2404.06654/README.md) | **改进**：区分出声称长度与有效长度。<br>**代价**：不控制位置；与真实任务的相关性未验证 |

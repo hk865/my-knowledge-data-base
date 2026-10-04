@@ -50,6 +50,18 @@
 - [DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence](../../../papers/arxiv-2606.19348/README.md) · 2026 · DeepSeek · 文献卡（主要归预训练） · 格：多领域 = 多教师 on-policy 蒸馏（全词表）；三档推理强度
 - [Kimi K3: Open Frontier Intelligence](../../../papers/arxiv-2607.24653/README.md) · 2026 · 月之暗面 · 文献卡（主要归预训练） · 格：部分 rollout 与逐 token 正则；多领域 = 多教师 on-policy 蒸馏（逐 token）
 
+## 6（续）规模规律、异步智能体 RL 与完全公开的配方（2025-10 – 2026）
+
+- [The Art of Scaling Reinforcement Learning Compute for LLMs](../../../papers/arxiv-2510.13786/README.md)（ScaleRL） · 2025 · Meta、UT Austin 等 · 文献卡 · 格：评测口径 = 算力—通过率的 S 形曲线；裁剪 = CISPO；数值 = FP32 logits
+- [Olmo 3](../../../papers/arxiv-2512.13961/README.md) · 2025 · AI2 · 文献卡 · 格：GRPO 变体 + 异步；RL-Zero 作研究基线
+- [NVIDIA Nemotron 3: Efficient and Open Intelligence](../../../papers/arxiv-2512.20856/README.md) · 2025 · NVIDIA · 文献卡（主要归架构） · 格：多领域 = 所有环境同时 RL
+- [Kimi K2.5: Visual Agentic Intelligence](../../../papers/arxiv-2602.02276/README.md) · 2026 · 月之暗面 · 文献卡（主要归推理时计算） · 格：长度 = Toggle 预算切换；并行智能体 RL（PARL）
+- [GLM-5: from Vibe Coding to Agentic Engineering](../../../papers/arxiv-2602.15763/README.md) · 2026 · 智谱、清华 · 文献卡 · 格：异步 RL（slime）；数值一致（确定性 top-k、TITO）；跨阶段 on-policy 蒸馏
+- [The MiniMax-M2 Series: Mini Activations Unleashing Max Real-World Intelligence](../../../papers/arxiv-2605.26494/README.md) · 2026 · MiniMax · 文献卡 · 格：裁剪 = CISPO；Forge 系统；复合奖励
+- [On-Policy Distillation](../../../papers/thinking-machines-on-policy-distillation/README.md) · 2025 · Thinking Machines Lab · 官方博客（主要归 SFT） · 格：多领域 = on-policy 蒸馏的方法说明
+
+已知存在、只读了摘要：[Group Sequence Policy Optimization](https://arxiv.org/abs/2507.18071)（GSPO，2025-07，Qwen，序列级重要性比率与裁剪）。
+
 ## 跨领域的对照
 
 - [SimpleVLA-RL: Scaling VLA Training via Reinforcement Learning](../../../../robotics-embodied/papers/arxiv-2509.09674/README.md) · 2025 · 文献卡（归机器人与具身） · 把 GRPO 与 DAPO 式的探索技巧搬到 VLA 上

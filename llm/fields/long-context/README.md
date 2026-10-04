@@ -1,6 +1,6 @@
 # 长上下文
 
-> 状态：领域入门页 · v2 · 依据 [synthesis.csv](synthesis.csv)（14 篇）
+> 状态：领域入门页 · v2 · 依据 [synthesis.csv](synthesis.csv)（18 篇）
 >
 > 速览：
 > 1. 长上下文要分四项验收：位置编码在更远的距离上仍可用；模型真的会用远处的信息；能按指令处理长文；推理时显存和等待时间承受得住。窗口开到多大，只说明了第一项。
@@ -15,6 +15,7 @@
 >    - DeepSeek：训练时稀疏（NSA → DSA → CSA/HCA）。
 >    - Kimi：线性注意力混合，全局层去掉位置编码。
 >    - Qwen：在推理端做外推和稀疏 prefill。
+> 6. 2026 年其他团队的选择让这条分化更宽：GLM-5 采用 DeepSeek 的 DSA，Qwen3.5 与 NVIDIA 的 Nemotron 3 改为线性或状态空间层为主的混合，MiniMax-M2 则退回全注意力，理由是滑动窗口混合在多跳推理上变差。窗口之外，Recursive Language Models 把长输入交给推理时的程序去切分、递归调用。
 
 本页是[大语言模型](../../README.md)领域的长上下文方向。它与[预训练方向](../pretraining/README.md)的分工如下：
 - 预训练页的问题②"注意力不丢失"、问题③"更长更大的注意力"，讲预训练怎样让注意力稳定、怎样降低长序列的计算。
@@ -148,6 +149,17 @@
 | [DeepSeek-V4](../../papers/arxiv-2606.19348/README.md)（2026-04） | CSA（KV 压缩 4 倍后稀疏选 top-k）与 HCA（压缩 128 倍、稠密）交错，加滑动窗口分支与可学习的 sink。1M 下单 token 推理 FLOPs 为 V3.2 的 27%，KV 缓存为 10%；1M 长度的 MRCR 83.5，Gemini-3.1-Pro 为 76.3 | 128K 以后检索准确率可见下降；MRCR 1M 落后 Claude Opus 4.6（92.9）；作者自述结构偏复杂 |
 | [Kimi K3](../../papers/arxiv-2607.24653/README.md)（2026-07） | 沿用 3:1 的 KDA 与 MLA 混合，全局层不用位置编码，直接外推到 1M；上下文在预训练中从 8K 加到 64K，在冷却期从 256K 加到 1M；合成只有读遍整个 1M 上下文才能解出的任务 | 报告写明仅有长度不能带来长程能力；正文没有 RULER、MRCR 这类可与他家对照的长上下文评测，只有第三方的 AA-LCR（74.7）与 BrowseComp |
 
+同期 DeepSeek 与 Kimi 之外的团队做了三种不同的选择：
+
+| 节点 | 改变了什么 | 做不好的场景（原文） |
+|---|---|---|
+| [Nemotron 3](../../papers/arxiv-2512.20856/README.md)（2025-12，NVIDIA） | 以 Mamba-2（固定大小状态的序列层）与 MoE 交错为主，只留少数注意力层，注意力层不用 RoPE；512K 继续预训练、256K SFT，支持 1M。Nano 在 1M 长度的 RULER 为 54.19，上一代 Nemotron 2 Nano 为 23.43 | 1M 上的 RULER 仍只有约一半；白皮书没有给出 Mamba 与注意力层的确切比例 |
+| [GLM-5](../../papers/arxiv-2602.15763/README.md)（2026-02，智谱） | 把 DeepSeek 的 DSA 搬到自己的模型上：中段训练后从 MLA 出发，1000 步稠密预热加 20B token 稀疏适应；长序列注意力计算约省 1.5–2 倍，128K 的 RULER 78.86，稠密 MLA 为 79.21 | 在 GLM-9B 上试过的滑动窗口与 Gated DeltaNet 类线性注意力，128K 上都比 DSA 掉得多（滑窗模式 69.59，全注意力 75.28） |
+| [Qwen3.5](../../papers/qwen3.5/README.md)（2026-02，阿里巴巴） | 改为 Gated DeltaNet 与门控注意力 3:1 的混合（来自 Qwen3-Next），原生 262K，可扩展到约 1M；2026-04 的 Qwen3.6 保留这一结构 | 只有模型卡，没有长上下文的消融与评测细节 |
+| [MiniMax-M2](../../papers/arxiv-2605.26494/README.md)（2026-05，MiniMax） | 反方向：全部 62 层用全注意力，放弃前代 MiniMax-Text-01 的 Lightning Attention 混合；在数千亿到数万亿 token 上试过的滑动窗口混合，标准评测上看似持平，多跳推理、检索与上下文学习却变差，SFT 后 32K 以上差距更大 | 作者写明随上下文变长、GPU 算力增长放缓，次平方注意力会越来越重要，结论可能在更大规模上改变 |
+
+窗口之外还有一条推理时的路：[Recursive Language Models](../../papers/arxiv-2512.24601/README.md)（MIT，2025-12）不把长输入送进网络，而是放进 Python 环境作为一个变量，模型写代码查看、切分，并在片段上递归调用自己，能处理超出窗口两个数量级的输入；在需要两两配对的 OOLONG-Pairs 上，GPT-5 直接作答 0.1%，套上这一框架为 58.0%。[Kimi K2.5](../../papers/arxiv-2602.02276/README.md) 把并行子智能体也看作上下文管理：每个子智能体只持有有限的局部上下文，只把相关结果交回编排器。
+
 另一个数字值得留意：Kimi K3 在 BrowseComp（网页搜索智能体任务）上，在 300K 处触发上下文压缩时为 91.2%，用满 1M、不做上下文管理时为 90.4%（§6.1.3）。
 
 `[判断]` 站在现在看，第 4、5 阶段的分歧都落在一个问题上：长上下文的成本由谁来付。
@@ -186,6 +198,10 @@
 | 阿里巴巴 Qwen | 训练到 256K，推理端外推到 1M，再用稀疏 prefill 与推理引擎降成本；开放 7B、14B 权重 | Qwen2.5-1M、Gated Attention | 1M 上只有检索类证据；短任务有回退 |
 | DeepSeek | 注意力在训练时就稀疏，每一代压缩更多 KV | NSA、V3.2、V4 | 结构越来越复杂；128K 以后检索下降 |
 | Kimi（Moonshot AI） | 线性注意力为主、全注意力为辅；全局层不用位置编码，扩上下文不必调 RoPE | Kimi Linear、K3 | 纯线性检索弱，仍要保留四分之一全注意力；K3 缺少可对照的公开长上下文评测 |
+| 阿里巴巴 Qwen（2026 起） | 结构上改为 Gated DeltaNet 与门控注意力 3:1 混合 | [Qwen3.5](../../papers/qwen3.5/README.md)、Qwen3.6 | 只公开模型卡，缺少长上下文消融 |
+| NVIDIA | Mamba-2 为主的混合，注意力层不用 RoPE，1M 窗口 | [Nemotron 3](../../papers/arxiv-2512.20856/README.md) | 1M 上 RULER 约一半 |
+| 智谱（GLM） | 采用 DeepSeek 的 DSA，用继续训练从 MLA 转换 | [GLM-5](../../papers/arxiv-2602.15763/README.md) | 128K 上比稠密低 0.35 分；RL 中要冻结索引器 |
+| MiniMax | 回到全注意力，等基础设施与评测成熟再换 | [MiniMax-M2](../../papers/arxiv-2605.26494/README.md) | 长序列成本按平方增长 |
 
 `[判断]` 收敛与分化：
 - 收敛的部分：
@@ -220,6 +236,8 @@
 - **稀疏与线性，哪条路在 1M 上保留的检索能力更多？** 两家没有同条件对照：V4 在 128K 后检索下降；Kimi Linear 在 LongBench v2 上低于全注意力。入口：[NSA](../../papers/arxiv-2502.11089/README.md)、[DeepSeek-V4](../../papers/arxiv-2606.19348/README.md)、[Kimi Linear](../../papers/arxiv-2510.26692/README.md)、[递推状态谱系](../../../foundations/relations/recurrent-state.md)。
 - **中段信息为什么被忽略，能否从结构上消除？** Lost in the Middle 只给出现象。注意力汇聚的两种处理（Gated Attention 消除，V4 显式保留）对中段利用的影响没有测量。入口：[Lost in the Middle](../../papers/arxiv-2307.03172/README.md)、[Gated Attention](../../papers/arxiv-2505.06708/README.md)、[预训练页问题②](../pretraining/README.md)。
 - **长上下文与智能体的记忆怎样分工？** K3 在 BrowseComp 上压缩上下文不差于用满 1M；外部记忆一线认为冻结的记忆还不够。入口：[Kimi K3](../../papers/arxiv-2607.24653/README.md)、[Frozen Memory Is Not Enough](../../papers/arxiv-2608.17050/README.md)、[Engram](../../papers/arxiv-2601.07372/README.md)。
+- **高效注意力的代价能被标准评测看到吗？** MiniMax-M2 报告滑动窗口混合在标准评测上看似持平、在多跳推理上变差，GLM-5 在 9B 上测到滑窗与线性注意力在 128K 掉分，Qwen3.5 与 Nemotron 3 却以线性或状态空间层为主。各家用的评测不同，没有同条件对照。入口：[MiniMax-M2](../../papers/arxiv-2605.26494/README.md)、[GLM-5](../../papers/arxiv-2602.15763/README.md)、[Nemotron 3](../../papers/arxiv-2512.20856/README.md)。
+- **窗口之外交给推理时程序，还是继续加长窗口？** 入口：[Recursive Language Models](../../papers/arxiv-2512.24601/README.md)、[Kimi K2.5](../../papers/arxiv-2602.02276/README.md)。
 - **长上下文怎样评测才不被单一分数误导？** 入口：[RULER](../../papers/arxiv-2404.06654/README.md)（局限一节）、[Gemini 1.5](../../papers/arxiv-2403.05530/README.md)（第 10 节的呼吁）、[评估方向](../../../cross-domain/fields/evaluation/README.md)。
 
 ## 阅读顺序
@@ -229,6 +247,7 @@
 3. [Lost in the Middle](../../papers/arxiv-2307.03172/README.md) → [RULER](../../papers/arxiv-2404.06654/README.md)：在读任何"支持 1M"的报告之前，先知道窗口和能力为什么要分开测。
 4. [Qwen2.5-1M 精读](../../papers/qwen2.5-1m/reading.md)：四个环节在一份报告里怎样配合，精读第九节列出了哪些因果关系还缺对照实验。
 5. [NSA](../../papers/arxiv-2502.11089/README.md) → [DeepSeek-V4](../../papers/arxiv-2606.19348/README.md) 与 [Kimi Linear](../../papers/arxiv-2510.26692/README.md) → [Kimi K3](../../papers/arxiv-2607.24653/README.md)：两条结构路线，对照着读，结合[预训练页问题③](../pretraining/README.md)的成本表。
+6. [GLM-5](../../papers/arxiv-2602.15763/README.md) 与 [MiniMax-M2](../../papers/arxiv-2605.26494/README.md) §2.2.2 → [Recursive Language Models](../../papers/arxiv-2512.24601/README.md)：其他团队怎样在稀疏、线性与全注意力之间选，以及窗口之外的推理时做法。
 
 基线拆分见 [Baseline 页](BASELINES.md)，按问题排列的练习见[路线图](ROADMAP.md)，本方向收录的论文见[论文目录](PAPERS.md)。
 
@@ -276,3 +295,10 @@
 - YaRN 最新版为 2026-02 的 v3，改动内容未找到说明；"所需 token 少 10 倍、训练步数少 2.5 倍"只在摘要中确认，对照对象未在正文核实。
 - Effective Long-Context Scaling 是否开放模型权重，未核实。
 - Kimi Linear 原文没有单列局限；本页"做不好的场景"取自它的混合比消融（见预训练页）与表 5。
+- Qwen3.5 的官方博客为动态页面未能读取，第三方转述的"32K/256K 下解码吞吐为 Qwen3-Max 的 8.6/19.0 倍"未核实；Nemotron 3 Super 与 Ultra 的单独报告、Qwen3-Next 的发布说明、Gemma 4 的长上下文一节本轮未打开。
+- GLM-5 的滑窗与线性注意力对照在 GLM-9B 上、64K 继续训练 190B token，不是 744B 主模型；MiniMax-M2 的滑窗混合实验没有给出逐项分数，本页只引用其文字结论。
+
+**与原结论的张力（2025-10 以后的材料）**
+
+- 速览第 5 条把 Qwen 写成"在推理端做外推和稀疏 prefill"，依据是 Qwen2.5-1M。2026-02 起 Qwen3.5 在结构上改为 Gated DeltaNet 与门控注意力 3:1 的混合，Qwen 的押注已从推理端移到结构上，与 Kimi 的线性混合一侧靠拢。原判断描述的是 2025 年上半年。
+- 速览第 5 条与主要路线一节把"稀疏还是线性"写成 DeepSeek 与 Kimi 两家的分化。2026 年的材料显示这条分化跨越了团队：GLM-5 选了 DeepSeek 的 DSA，Qwen3.5 与 Nemotron 3 选了线性或状态空间混合，MiniMax-M2 则退回全注意力，并以多跳推理变差为由反对两者。"2025 年以后比的是成本"仍成立，但"以质量换成本是否值得"在团队之间出现了公开的反对意见。

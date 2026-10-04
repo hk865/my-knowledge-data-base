@@ -78,6 +78,15 @@
 - [Tokenizer-Agnostic Engram Module](../../papers/arxiv-2607.29065/README.md) · 2026 · 文献卡 · 格：FFN = 查表记忆的后续（开放问题"知识能否从 FFN 里再拆出去"）
 - [Frozen Memory Is Not Enough: Rethinking External Memory as Extraction](../../papers/arxiv-2608.17050/README.md) · 2026 · 文献卡 · 格：同上
 
+同期其他团队（2025-12 – 2026）：
+
+- [Olmo 3](../../papers/arxiv-2512.13961/README.md) · 2025 · AI2 · 文献卡（主要归强化学习） · 格：数据 = 完全公开的三段数据（Dolma 3、Dolmino、Longmino）
+- [NVIDIA Nemotron 3: Efficient and Open Intelligence](../../papers/arxiv-2512.20856/README.md) · 2025 · NVIDIA · 文献卡（主要归架构） · 格：数值精度 = NVFP4 预训练；注意力 = Mamba-2 为主的混合
+- [GLM-5: from Vibe Coding to Agentic Engineering](../../papers/arxiv-2602.15763/README.md) · 2026 · 智谱、清华 · 文献卡（主要归强化学习） · 格：注意力 = 中段训练后转成 DSA
+- [The MiniMax-M2 Series: Mini Activations Unleashing Max Real-World Intelligence](../../papers/arxiv-2605.26494/README.md) · 2026 · MiniMax · 文献卡（主要归强化学习） · 格：注意力 = 全注意力（滑窗混合的反例）
+
+只读了官方博客、未建卡：[Introducing Muse Spark](https://ai.meta.com/blog/introducing-muse-spark-msl/)（Meta，2026-04，称算力比 Llama 4 Maverick 少一个数量级以上，无结构与配方）。
+
 ## 存档与跨方向
 
 以下单篇目录登记在预训练方向下，但不在入门页的主线上：

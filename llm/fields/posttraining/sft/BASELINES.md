@@ -43,6 +43,9 @@
 | 位置 | RL 之前的冷启动，刻意少样本、少步数 | [DeepSeek-R1](../../../papers/arxiv-2501.12948/README.md)、[Qwen3](../../../papers/arxiv-2505.09388/README.md)、[Kimi K3](../../../papers/arxiv-2607.24653/README.md) | 可读、给 RL 一个稳定的格式 / 太少会掉分：R1 Dev1 的 AIME 从 77.9% 降到 59.0% |
 | 位置 | RL 之后再 SFT，融合两种模式 | [Qwen3](../../../papers/arxiv-2505.09388/README.md) | 一个模型兼具思考与非思考 / 思考模式的竞赛分数下降 |
 | 损失 | on-policy 的 logit 级蒸馏 | [Qwen3](../../../papers/arxiv-2505.09388/README.md)、[DeepSeek-V4](../../../papers/arxiv-2606.19348/README.md)、[Kimi K3](../../../papers/arxiv-2607.24653/README.md) | 8B 上约 1/10 的 GPU 小时超过 RL，pass@64 提高 / 学生上限是教师；需要同时在线运行多个教师 |
+| 损失 | 逐 token 反向 KL 作负奖励、折扣为 0 的 on-policy 蒸馏（方法的公开说明） | [On-Policy Distillation](../../../papers/thinking-machines-on-policy-distillation/README.md) | 8B 学生约 150 步从 60% 到 70%，比继续离线 SFT 便宜约 9–30 倍 / 需教师逐 token 对数概率与兼容分词 |
+| 位置 | RL 各阶段之后，以前阶段检查点为教师做跨阶段 on-policy 蒸馏 | [GLM-5](../../../papers/arxiv-2602.15763/README.md) | 找回顺序训练中丢掉的能力 / 多一轮训练 |
+| 损失（边界） | 检验 OPD 的成败条件：思考模式相容、教师有新能力；长回答上收益递减 | [Li 等](../../../papers/arxiv-2604.13016/README.md) | 给出离线冷启动与按教师选提示两种补救 / 实验在 1.5B–7B、数学 |
 | 评测 | 开发集与未见集分离；严格去污染 | [Tulu 3](../../../papers/arxiv-2411.15124/README.md) | 防止对开发集过拟合 / 评测成本 |
 | 对照 | SFT 与 RL 在同一初始化下比泛化 | [SFT Memorizes, RL Generalizes](../../../papers/arxiv-2501.17161/README.md) | 说明 SFT 记忆、RL 泛化，SFT 是 RL 的前提 / 只在规则游戏与导航上 |
 

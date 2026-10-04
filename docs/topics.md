@@ -29,7 +29,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 ## 大语言模型
 
-### 预训练（43）
+### 预训练（45）
 
 细分：训练目标与规模规律；数据选择与混合；课程与持续预训练；数据质量与配比；训练目标与监督位置；长上下文课程
 
@@ -76,8 +76,10 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression](paper-catalog.md#p335)
 - [Measuring Massive Multitask Language Understanding](paper-catalog.md#p396)
 - [Evaluating Large Language Models Trained on Code](paper-catalog.md#p397)
+- [Olmo 3](paper-catalog.md#p495)
+- [NVIDIA Nemotron 3: Efficient and Open Intelligence](paper-catalog.md#p500)
 
-### 后训练 监督微调（25）
+### 后训练 监督微调（28）
 
 细分：指令与示范数据；轨迹监督与任务适配
 
@@ -106,8 +108,11 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Toolformer: Language Models Can Teach Themselves to Use Tools](paper-catalog.md#p400)
 - [Instruction-Following Evaluation for Large Language Models](paper-catalog.md#p407)
 - [Training Software Engineering Agents and Verifiers with SWE-Gym](paper-catalog.md#p424)
+- [On-Policy Distillation](paper-catalog.md#p491)
+- [Olmo 3](paper-catalog.md#p495)
+- [Rethinking On-Policy Distillation of Large Language Models: Phenomenology, Mechanism, and Recipe](paper-catalog.md#p496)
 
-### 后训练 偏好学习（28）
+### 后训练 偏好学习（30）
 
 细分：偏好数据与奖励模型；直接偏好优化
 
@@ -139,8 +144,10 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Length-Controlled AlpacaEval: A Simple Way to Debias Automatic Evaluators](paper-catalog.md#p415)
 - [LLM Critics Help Catch LLM Bugs](paper-catalog.md#p421)
 - [The Leaderboard Illusion](paper-catalog.md#p429)
+- [Olmo 3](paper-catalog.md#p495)
+- [DeepSeekMath-V2: Towards Self-Verifiable Mathematical Reasoning](paper-catalog.md#p497)
 
-### 后训练 强化学习（40）
+### 后训练 强化学习（48）
 
 细分：策略优化算法；结果与过程奖励；轨迹采样与数据回流；奖励与验证器；长轨迹信用分配；探索与轨迹分布
 
@@ -184,8 +191,16 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [OpenAI GPT-5.6 System Card](paper-catalog.md#p485)
 - [OpenAI GPT-6 Astra System Card](paper-catalog.md#p486)
 - [System Card: Claude Opus 5.5](paper-catalog.md#p487)
+- [On-Policy Distillation](paper-catalog.md#p491)
+- [The Art of Scaling Reinforcement Learning Compute for LLMs](paper-catalog.md#p492)
+- [The MiniMax-M2 Series: Mini Activations Unleashing Max Real-World Intelligence](paper-catalog.md#p493)
+- [GLM-5: from Vibe Coding to Agentic Engineering](paper-catalog.md#p494)
+- [Olmo 3](paper-catalog.md#p495)
+- [DeepSeekMath-V2: Towards Self-Verifiable Mathematical Reasoning](paper-catalog.md#p497)
+- [Kimi K2.5: Visual Agentic Intelligence](paper-catalog.md#p498)
+- [NVIDIA Nemotron 3: Efficient and Open Intelligence](paper-catalog.md#p500)
 
-### 架构与效率（39）
+### 架构与效率（43）
 
 细分：注意力与状态空间模型；稀疏专家与条件计算；KV cache 与压缩；线性与稀疏注意力；因果掩码与复杂度
 
@@ -228,8 +243,12 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Gemma 3 Technical Report](paper-catalog.md#p329)
 - [DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models](paper-catalog.md#p334)
 - [DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression](paper-catalog.md#p335)
+- [Qwen3.5-397B-A17B](paper-catalog.md#p490)
+- [The MiniMax-M2 Series: Mini Activations Unleashing Max Real-World Intelligence](paper-catalog.md#p493)
+- [GLM-5: from Vibe Coding to Agentic Engineering](paper-catalog.md#p494)
+- [NVIDIA Nemotron 3: Efficient and Open Intelligence](paper-catalog.md#p500)
 
-### 推理时计算（38）
+### 推理时计算（42）
 
 细分：搜索与验证；多路径与多 Agent；预算分配与 token 效率；精确目标分布与投机验证；近似质量协作与关键段接管；MTP草拟与验证接口；精确级联混合分布
 
@@ -271,6 +290,10 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Kimi k1.5: Scaling Reinforcement Learning with LLMs](paper-catalog.md#p325)
 - [Learning to reason with LLMs](paper-catalog.md#p336)
 - [Reflexion: Language Agents with Verbal Reinforcement Learning](paper-catalog.md#p401)
+- [The MiniMax-M2 Series: Mini Activations Unleashing Max Real-World Intelligence](paper-catalog.md#p493)
+- [DeepSeekMath-V2: Towards Self-Verifiable Mathematical Reasoning](paper-catalog.md#p497)
+- [Kimi K2.5: Visual Agentic Intelligence](paper-catalog.md#p498)
+- [Recursive Language Models](paper-catalog.md#p499)
 
 
 ## 多模态与世界表征
@@ -942,14 +965,14 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 | 模态 \ 任务 | understanding | generation | decision | evaluation | analysis |
 |---|---:|---:|---:|---:|---:|
-| text | [57](#x-text-understanding) | [142](#x-text-generation) | [79](#x-text-decision) | [69](#x-text-evaluation) | [47](#x-text-analysis) |
+| text | [57](#x-text-understanding) | [153](#x-text-generation) | [85](#x-text-decision) | [70](#x-text-evaluation) | [49](#x-text-analysis) |
 | image | [113](#x-image-understanding) | [51](#x-image-generation) | [86](#x-image-decision) | [16](#x-image-evaluation) | [13](#x-image-analysis) |
 | video | [33](#x-video-understanding) | [39](#x-video-generation) | [25](#x-video-decision) | [12](#x-video-evaluation) | [4](#x-video-analysis) |
 | audio | [7](#x-audio-understanding) | [6](#x-audio-generation) | · | [1](#x-audio-evaluation) | · |
 | action | [8](#x-action-understanding) | [33](#x-action-generation) | [127](#x-action-decision) | [9](#x-action-evaluation) | [2](#x-action-analysis) |
 | state | [15](#x-state-understanding) | [2](#x-state-generation) | [64](#x-state-decision) | [1](#x-state-evaluation) | · |
-| code | [1](#x-code-understanding) | [20](#x-code-generation) | [21](#x-code-decision) | [20](#x-code-evaluation) | [7](#x-code-analysis) |
-| multimodal | [54](#x-multimodal-understanding) | [42](#x-multimodal-generation) | [41](#x-multimodal-decision) | [19](#x-multimodal-evaluation) | [8](#x-multimodal-analysis) |
+| code | [1](#x-code-understanding) | [27](#x-code-generation) | [27](#x-code-decision) | [20](#x-code-evaluation) | [7](#x-code-analysis) |
+| multimodal | [54](#x-multimodal-understanding) | [44](#x-multimodal-generation) | [43](#x-multimodal-decision) | [19](#x-multimodal-evaluation) | [8](#x-multimodal-analysis) |
 | tabular | [1](#x-tabular-understanding) | · | · | · | · |
 
 <a id="x-text-understanding"></a>
@@ -1016,7 +1039,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-text-generation"></a>
 
-### text × generation（142）
+### text × generation（153）
 
 - [Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters](paper-catalog.md#p001)
 - [Towards Thinking-Optimal Scaling of Test-Time Compute for LLM Reasoning](paper-catalog.md#p002)
@@ -1160,10 +1183,21 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [LongCat-Image Technical Report](paper-catalog.md#p474)
 - [Addendum to GPT-4o System Card: Native image generation](paper-catalog.md#p475)
 - [Gemini 3.1 Flash Image Model Card](paper-catalog.md#p476)
+- [Qwen3.5-397B-A17B](paper-catalog.md#p490)
+- [On-Policy Distillation](paper-catalog.md#p491)
+- [The Art of Scaling Reinforcement Learning Compute for LLMs](paper-catalog.md#p492)
+- [The MiniMax-M2 Series: Mini Activations Unleashing Max Real-World Intelligence](paper-catalog.md#p493)
+- [GLM-5: from Vibe Coding to Agentic Engineering](paper-catalog.md#p494)
+- [Olmo 3](paper-catalog.md#p495)
+- [Rethinking On-Policy Distillation of Large Language Models: Phenomenology, Mechanism, and Recipe](paper-catalog.md#p496)
+- [DeepSeekMath-V2: Towards Self-Verifiable Mathematical Reasoning](paper-catalog.md#p497)
+- [Kimi K2.5: Visual Agentic Intelligence](paper-catalog.md#p498)
+- [Recursive Language Models](paper-catalog.md#p499)
+- [NVIDIA Nemotron 3: Efficient and Open Intelligence](paper-catalog.md#p500)
 
 <a id="x-text-decision"></a>
 
-### text × decision（79）
+### text × decision（85）
 
 - [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](paper-catalog.md#p034)
 - [ReAct: Synergizing Reasoning and Acting in Language Models](paper-catalog.md#p040)
@@ -1244,10 +1278,16 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [System Card: Claude Opus 5.5](paper-catalog.md#p487)
 - [Gemini 3.8 Flash Model Card](paper-catalog.md#p488)
 - [Seed2.0 Model Card: Towards Intelligence Frontier for Real-World Complexity](paper-catalog.md#p489)
+- [Qwen3.5-397B-A17B](paper-catalog.md#p490)
+- [The MiniMax-M2 Series: Mini Activations Unleashing Max Real-World Intelligence](paper-catalog.md#p493)
+- [GLM-5: from Vibe Coding to Agentic Engineering](paper-catalog.md#p494)
+- [Kimi K2.5: Visual Agentic Intelligence](paper-catalog.md#p498)
+- [Recursive Language Models](paper-catalog.md#p499)
+- [NVIDIA Nemotron 3: Efficient and Open Intelligence](paper-catalog.md#p500)
 
 <a id="x-text-evaluation"></a>
 
-### text × evaluation（69）
+### text × evaluation（70）
 
 - [PersonaEval: Are LLM Evaluators Human Enough to Judge Role-Play?](paper-catalog.md#p032)
 - [On scalable oversight with weak LLMs judging strong LLMs](paper-catalog.md#p033)
@@ -1318,10 +1358,11 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [System Card: Claude Opus 5.5](paper-catalog.md#p487)
 - [Gemini 3.8 Flash Model Card](paper-catalog.md#p488)
 - [Seed2.0 Model Card: Towards Intelligence Frontier for Real-World Complexity](paper-catalog.md#p489)
+- [DeepSeekMath-V2: Towards Self-Verifiable Mathematical Reasoning](paper-catalog.md#p497)
 
 <a id="x-text-analysis"></a>
 
-### text × analysis（47）
+### text × analysis（49）
 
 - [OLMo: Accelerating the Science of Language Models](paper-catalog.md#p010)
 - [ShortGPT: Layers in Large Language Models are More Redundant Than You Expect](paper-catalog.md#p022)
@@ -1370,6 +1411,8 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [The Leaderboard Illusion](paper-catalog.md#p429)
 - [Natural Emergent Misalignment from Reward Hacking in Production RL](paper-catalog.md#p433)
 - [Why SWE-bench Verified no longer measures frontier coding capabilities](paper-catalog.md#p436)
+- [The Art of Scaling Reinforcement Learning Compute for LLMs](paper-catalog.md#p492)
+- [Rethinking On-Policy Distillation of Large Language Models: Phenomenology, Mechanism, and Recipe](paper-catalog.md#p496)
 
 <a id="x-image-understanding"></a>
 
@@ -2156,7 +2199,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-code-generation"></a>
 
-### code × generation（20）
+### code × generation（27）
 
 - [Large Language Monkeys: Scaling Inference Compute with Repeated Sampling](paper-catalog.md#p004)
 - [Enhancing Code Generation Performance of Smaller Models by Distilling the Reasoning Ability of LLMs](paper-catalog.md#p023)
@@ -2178,10 +2221,17 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [SciCode: A Research Coding Benchmark Curated by Scientists](paper-catalog.md#p423)
 - [SWE-RL: Advancing LLM Reasoning via Reinforcement Learning on Open Software Evolution](paper-catalog.md#p426)
 - [MaintainCoder: Maintainable Code Generation Under Dynamic Requirements](paper-catalog.md#p428)
+- [Qwen3.5-397B-A17B](paper-catalog.md#p490)
+- [The MiniMax-M2 Series: Mini Activations Unleashing Max Real-World Intelligence](paper-catalog.md#p493)
+- [GLM-5: from Vibe Coding to Agentic Engineering](paper-catalog.md#p494)
+- [Olmo 3](paper-catalog.md#p495)
+- [Kimi K2.5: Visual Agentic Intelligence](paper-catalog.md#p498)
+- [Recursive Language Models](paper-catalog.md#p499)
+- [NVIDIA Nemotron 3: Efficient and Open Intelligence](paper-catalog.md#p500)
 
 <a id="x-code-decision"></a>
 
-### code × decision（21）
+### code × decision（27）
 
 - [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](paper-catalog.md#p034)
 - [Voyager: An Open-Ended Embodied Agent with Large Language Models](paper-catalog.md#p041)
@@ -2204,6 +2254,12 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [OpenAI GPT-6 Astra System Card](paper-catalog.md#p486)
 - [System Card: Claude Opus 5.5](paper-catalog.md#p487)
 - [Gemini 3.8 Flash Model Card](paper-catalog.md#p488)
+- [Qwen3.5-397B-A17B](paper-catalog.md#p490)
+- [The MiniMax-M2 Series: Mini Activations Unleashing Max Real-World Intelligence](paper-catalog.md#p493)
+- [GLM-5: from Vibe Coding to Agentic Engineering](paper-catalog.md#p494)
+- [Kimi K2.5: Visual Agentic Intelligence](paper-catalog.md#p498)
+- [Recursive Language Models](paper-catalog.md#p499)
+- [NVIDIA Nemotron 3: Efficient and Open Intelligence](paper-catalog.md#p500)
 
 <a id="x-code-evaluation"></a>
 
@@ -2303,7 +2359,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-multimodal-generation"></a>
 
-### multimodal × generation（42）
+### multimodal × generation（44）
 
 - [Object-Centric World Model for Language-Guided Manipulation](paper-catalog.md#p052)
 - [InternVLA-A1: Unifying Understanding, Generation and Action for Robotic Manipulation](paper-catalog.md#p090)
@@ -2347,10 +2403,12 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [LongCat-Image Technical Report](paper-catalog.md#p474)
 - [Addendum to GPT-4o System Card: Native image generation](paper-catalog.md#p475)
 - [Gemini 3.1 Flash Image Model Card](paper-catalog.md#p476)
+- [Qwen3.5-397B-A17B](paper-catalog.md#p490)
+- [Kimi K2.5: Visual Agentic Intelligence](paper-catalog.md#p498)
 
 <a id="x-multimodal-decision"></a>
 
-### multimodal × decision（41）
+### multimodal × decision（43）
 
 - [Object-Centric World Model for Language-Guided Manipulation](paper-catalog.md#p052)
 - [Language-Grounded Hierarchical Planning and Execution with Multi-Robot 3D Scene Graphs](paper-catalog.md#p055)
@@ -2393,6 +2451,8 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments](paper-catalog.md#p416)
 - [Gemini 3.8 Flash Model Card](paper-catalog.md#p488)
 - [Seed2.0 Model Card: Towards Intelligence Frontier for Real-World Complexity](paper-catalog.md#p489)
+- [Qwen3.5-397B-A17B](paper-catalog.md#p490)
+- [Kimi K2.5: Visual Agentic Intelligence](paper-catalog.md#p498)
 
 <a id="x-multimodal-evaluation"></a>
 

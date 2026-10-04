@@ -41,6 +41,10 @@
 - [DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models](../../../papers/arxiv-2512.02556/README.md) · 2025 · DeepSeek · 文献卡 · 格：奖励形式 = 逐题 rubric 的生成式奖励模型
 - [DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence](../../../papers/arxiv-2606.19348/README.md) · 2026 · DeepSeek · 文献卡（主要归预训练） · 格：奖励形式 = 策略兼任生成式奖励模型
 
+- [DeepSeekMath-V2: Towards Self-Verifiable Mathematical Reasoning](../../../papers/arxiv-2511.22570/README.md) · 2025 · DeepSeek · 文献卡（主要归推理时计算） · 格：奖励形式 = 验证器 + 元验证器
+- [Olmo 3](../../../papers/arxiv-2512.13961/README.md) · 2025 · AI2 · 文献卡（主要归强化学习） · 格：偏好来源 = 强弱模型对比（Delta Learning）；优化方式 = DPO
+- [Kimi K2.5: Visual Agentic Intelligence](../../../papers/arxiv-2602.02276/README.md) · 2026 · 月之暗面 · 文献卡（主要归推理时计算） · 格：奖励形式 = 细粒度生成式奖励模型
+
 ## 相关的评测研究
 
 - [Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena](../../../../cross-domain/papers/llm-judge/README.md) · 2023 · 技术精读（归评估方向） · LLM 评委与人类偏好的一致性及位置、冗长等偏差

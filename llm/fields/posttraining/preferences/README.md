@@ -1,6 +1,6 @@
 # 偏好学习与奖励模型
 
-> 状态：领域入门页 · v1 · 依据 [synthesis.csv](synthesis.csv)（15 篇）
+> 状态：领域入门页 · v1 · 依据 [synthesis.csv](synthesis.csv)（17 篇）
 >
 > 速览：
 > 1. 偏好学习用"同一提示下两个回答哪个更好"的比较作训练信号，学的是取舍：帮助性、无害性、风格与长度。有两种实现：先训练奖励模型再用 RL 优化（RLHF，InstructGPT、Llama 2），或直接在偏好对上训练策略（DPO，Llama 3、Zephyr、Tulu 3）。
@@ -98,6 +98,14 @@
 - 奖励黑客没有消失：R1 用帮助性奖励模型训练更多步时，奖励上升而 Codeforces 成绩下降（附录 B.5）；K3 的智能体评委也要专门的长度控制。
 - 写作这类任务难以构造可靠的奖励，R1 写明对这类任务的纯 RL 规模化仍是开放问题，只做几百步 RL（§6）。
 
+2025-10 以后的补充：
+
+- **评委要先被检查。** [DeepSeekMath-V2](../../../papers/arxiv-2511.22570/README.md)（2025-11）给定理证明训练验证器：先指出证明中的问题，再打 0、0.5、1 三档分。只用分数作奖励时，验证器会给对分数却编造不存在的问题，于是再训练一个元验证器检查"指出的问题是否真实"；生成器以验证器为奖励模型，并要对自己的证明做自我评估，自评与验证器一致也计入奖励（权重 0.24，证明得分 0.76）。这是"评委变成会推理的模型"在没有参考答案的任务上的一种完整做法。
+- **开放团队仍以 DPO 为主。** AI2 的 [Olmo 3](../../../papers/arxiv-2512.13961/README.md)（2025-12）在 SFT 与 RL 之间保留 DPO，用"Delta Learning"构造偏好对：被选回答来自较强的模型，落选回答来自较弱的模型；作者报告同样的数据用 DPO 能带来 SFT 带不来的提升。
+- **生成式奖励模型成为 Kimi 的标准件。** [Kimi K2.5](../../../papers/arxiv-2602.02276/README.md)（2026-02）在通用任务上用细粒度的生成式奖励模型评估帮助性、相关性与指令遵循，而不只判对错。
+
+做不好的场景（补充）：DeepSeekMath-V2 的验证器编造问题，说明会推理的评委也会钻自己奖励的空子，需要再加一层检查；GLM-5 在幻灯片生成的视觉奖励上遇到截断内容、操纵间距等奖励黑客，靠修补渲染器堵住（见 [RL 方向](../rl/README.md)第 6 节）。
+
 ## 技术地基
 
 - **Bradley–Terry 模型与逻辑回归**：奖励模型的损失就是"被选回答得分更高"这一二分类的负对数似然。[概率分类讲义](../../../../foundations/lessons/modules/objectives/02-classification-probabilities.md)第 5–6 节；DPO 精读第 5 节。
@@ -118,6 +126,8 @@
 | Hugging Face、AI2 | 开源 SFT + DPO 配方，公开数据与代码 | Zephyr、Tulu 3 | 依赖 GPT-4 一类闭源模型打分 |
 | DeepSeek | DeepSeek LLM 用 DPO；V2 起改为奖励模型 + GRPO；V3 起奖励模型带推理、自我奖励，V4 用生成式奖励模型 | DeepSeek LLM、V2、V3、R1、V3.2、V4 | 偏好奖励仍会被钻空子，只能限制步数 |
 | Kimi | 自我批评的 rubric 奖励，用可验证信号校准评委 | K2、K3 | 评委本身的偏差与长度偏好需要额外控制 |
+| AI2（2025-12） | 继续用 DPO，偏好对由强弱两个模型的回答构成（Delta Learning） | [Olmo 3](../../../papers/arxiv-2512.13961/README.md) | 偏好信号只来自模型强弱之差，不含人的判断 |
+| DeepSeek（数学证明，2025-11） | 训练验证器与元验证器作奖励，生成器自我验证 | [DeepSeekMath-V2](../../../papers/arxiv-2511.22570/README.md) | 验证器会编造问题；只在数学证明上验证 |
 
 `[判断]` 收敛的方向：偏好数据与当前策略对齐（每轮重采、on-policy 偏好）；长度显式控制（长度归一化、长度相当的偏好对、长度预算）；评委从标量打分器换成会写理由、按 rubric 判断的生成模型。分化在于是否保留在线 RL：Meta 与 AI2 的主力是 DPO，DeepSeek、Kimi、Qwen 把偏好信号放进 RL 作为奖励的一部分。
 
@@ -132,7 +142,7 @@
 
 - **奖励模型怎样在策略的新分布上保持准确？** 入口：[Llama 2](../../../papers/arxiv-2307.09288/README.md)（每轮重采）、[Xu 等](../../../papers/arxiv-2404.10719/README.md)（DPO 的分布外问题）、[Gao 等](../../../papers/arxiv-2210.10760/README.md)（过度优化的规律）。
 - **长度与风格偏差怎样从根上去掉？** 入口：[Singhal 等](../../../papers/arxiv-2310.03716/README.md)、[SimPO](../../../papers/arxiv-2405.14734/README.md)、[Kimi K3](../../../papers/arxiv-2607.24653/README.md)（智能体评委的长度预算）。
-- **不可验证任务的评委能否被 RL 一起训练而不崩？** DeepSeek-V4 让策略兼任评委并一起优化，K2 用可验证任务校准评委，都缺少公开的失败分析。入口：[DeepSeek-V4](../../../papers/arxiv-2606.19348/README.md)、[Kimi K2](../../../papers/arxiv-2507.20534/README.md)。
+- **不可验证任务的评委能否被 RL 一起训练而不崩？** DeepSeek-V4 让策略兼任评委并一起优化，K2 用可验证任务校准评委，都缺少公开的失败分析。入口：[DeepSeek-V4](../../../papers/arxiv-2606.19348/README.md)、[Kimi K2](../../../papers/arxiv-2507.20534/README.md)。DeepSeekMath-V2 给出了一个失败模式（验证器编造问题）和对应的修补（元验证），入口：[DeepSeekMath-V2](../../../papers/arxiv-2511.22570/README.md)。
 - **"人类偏好"是谁的偏好？** InstructGPT 约 40 名标注员；CAI 换成书面原则；生成式奖励模型换成模型自己的判断。入口：[InstructGPT 精读](../../../papers/instructgpt/reading.md)第 14 节、[Constitutional AI](../../../papers/arxiv-2212.08073/README.md)。
 
 ## 阅读顺序
@@ -171,4 +181,9 @@
 
 - RewardBench 等专门的奖励模型评测本轮没有打开原文，正文没有引用其数字。
 - Llama 2 中两个奖励模型的具体准确率（Table 7–8）本轮只读到表题，未引用数字。
-- Kimi K3 智能体评委的"锦标赛式二元比较"沿用自 Kimi K2.5，K2.5 报告本轮未打开。
+- Kimi K3 智能体评委的"锦标赛式二元比较"沿用自 Kimi K2.5，K2.5 报告本轮未打开。（补记：K2.5 报告已在[卡片](../../../papers/arxiv-2602.02276/README.md)中核对了生成式奖励模型的用途，"锦标赛式二元比较"一句仍未在 K2.5 原文中找到对应段落。）
+- Anthropic 在 Constitutional AI 之后的偏好训练做法，本轮没有检索核对（库中已有的 [Claude Opus 5.5 系统卡](../../../../cross-domain/papers/anthropic-claude-opus-5-5-system-card/README.md)归评估方向，未据它写训练事实）；Olmo 3 中 Delta Learning 的单独消融数字未核对。
+
+**与原结论的张力**
+
+- 第 5 节标题"偏好退居不可验证任务"与收敛判断"Meta 与 AI2 的主力是 DPO"在 2025-12 仍成立：Olmo 3 在推理模型上也保留了 DPO 一步，并报告它带来 SFT 带不来的提升。偏好学习在开放团队里并没有被 RL 完全取代，只是偏好对越来越多地由模型强弱之差构造，而不是由人标注。

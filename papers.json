@@ -31196,5 +31196,589 @@
     "authors": [
       "ByteDance Seed"
     ]
+  },
+  {
+    "id": "url:https://huggingface.co/Qwen/Qwen3.5-397B-A17B",
+    "title": "Qwen3.5-397B-A17B",
+    "url": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B",
+    "arxiv_id": null,
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "llm/architecture",
+      "llm/long-context"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://huggingface.co/Qwen/Qwen3.5-397B-A17B"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "repository",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p490",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code",
+      "multimodal"
+    ],
+    "task_tags": [
+      "generation",
+      "decision"
+    ],
+    "canonical_folder": "llm/papers/qwen3.5",
+    "canonical_path": "llm/papers/qwen3.5/README.md",
+    "canonical_readme": "llm/papers/qwen3.5/README.md",
+    "source_path": "llm/papers/qwen3.5/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Qwen Team"
+    ]
+  },
+  {
+    "id": "url:https://thinkingmachines.ai/blog/on-policy-distillation",
+    "title": "On-Policy Distillation",
+    "url": "https://thinkingmachines.ai/blog/on-policy-distillation/",
+    "arxiv_id": null,
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "llm/posttraining/sft",
+      "llm/posttraining/rl"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://thinkingmachines.ai/blog/on-policy-distillation/"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "official_blog",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p491",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/thinking-machines-on-policy-distillation",
+    "canonical_path": "llm/papers/thinking-machines-on-policy-distillation/README.md",
+    "canonical_readme": "llm/papers/thinking-machines-on-policy-distillation/README.md",
+    "source_path": "llm/papers/thinking-machines-on-policy-distillation/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Kevin Lu",
+      "Thinking Machines Lab"
+    ]
+  },
+  {
+    "id": "arxiv:2510.13786",
+    "title": "The Art of Scaling Reinforcement Learning Compute for LLMs",
+    "url": "https://arxiv.org/abs/2510.13786",
+    "arxiv_id": "2510.13786",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "llm/posttraining/rl"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2510.13786"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p492",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation",
+      "analysis"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2510.13786",
+    "canonical_path": "llm/papers/arxiv-2510.13786/README.md",
+    "canonical_readme": "llm/papers/arxiv-2510.13786/README.md",
+    "source_path": "llm/papers/arxiv-2510.13786/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Devvrit Khatri",
+      "Lovish Madaan",
+      "Rishabh Tiwari",
+      "Rachit Bansal",
+      "Sai Surya Duvvuri",
+      "Manzil Zaheer",
+      "Inderjit S. Dhillon",
+      "David Brandfonbrener",
+      "Rishabh Agarwal"
+    ]
+  },
+  {
+    "id": "arxiv:2605.26494",
+    "title": "The MiniMax-M2 Series: Mini Activations Unleashing Max Real-World Intelligence",
+    "url": "https://arxiv.org/abs/2605.26494",
+    "arxiv_id": "2605.26494",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "llm/posttraining/rl",
+      "llm/architecture",
+      "llm/inference"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2605.26494"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "official_technical_report",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p493",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "generation",
+      "decision"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2605.26494",
+    "canonical_path": "llm/papers/arxiv-2605.26494/README.md",
+    "canonical_readme": "llm/papers/arxiv-2605.26494/README.md",
+    "source_path": "llm/papers/arxiv-2605.26494/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "MiniMax",
+      "Aili Chen",
+      "等 218 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2602.15763",
+    "title": "GLM-5: from Vibe Coding to Agentic Engineering",
+    "url": "https://arxiv.org/abs/2602.15763",
+    "arxiv_id": "2602.15763",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "llm/posttraining/rl",
+      "llm/long-context",
+      "llm/architecture"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2602.15763"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "official_technical_report",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p494",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "generation",
+      "decision"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2602.15763",
+    "canonical_path": "llm/papers/arxiv-2602.15763/README.md",
+    "canonical_readme": "llm/papers/arxiv-2602.15763/README.md",
+    "source_path": "llm/papers/arxiv-2602.15763/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Aohan Zeng",
+      "Xin Lv",
+      "Zhenyu Hou",
+      "Zhengxiao Du",
+      "Qinkai Zheng",
+      "Bin Chen",
+      "Da Yin",
+      "Chendi Ge",
+      "等 185 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2512.13961",
+    "title": "Olmo 3",
+    "url": "https://arxiv.org/abs/2512.13961",
+    "arxiv_id": "2512.13961",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "llm/pretraining",
+      "llm/posttraining/sft",
+      "llm/posttraining/preferences",
+      "llm/posttraining/rl"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2512.13961"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p495",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2512.13961",
+    "canonical_path": "llm/papers/arxiv-2512.13961/README.md",
+    "canonical_readme": "llm/papers/arxiv-2512.13961/README.md",
+    "source_path": "llm/papers/arxiv-2512.13961/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Team Olmo",
+      "Allyson Ettinger",
+      "Amanda Bertsch",
+      "Bailey Kuehl",
+      "David Graham",
+      "David Heineman",
+      "Dirk Groeneveld",
+      "Faeze Brahman",
+      "Finbarr Timbers",
+      "等 66 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2604.13016",
+    "title": "Rethinking On-Policy Distillation of Large Language Models: Phenomenology, Mechanism, and Recipe",
+    "url": "https://arxiv.org/abs/2604.13016",
+    "arxiv_id": "2604.13016",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "llm/posttraining/sft"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2604.13016"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p496",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation",
+      "analysis"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2604.13016",
+    "canonical_path": "llm/papers/arxiv-2604.13016/README.md",
+    "canonical_readme": "llm/papers/arxiv-2604.13016/README.md",
+    "source_path": "llm/papers/arxiv-2604.13016/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Yaxuan Li",
+      "Yuxin Zuo",
+      "Bingxiang He",
+      "Jinqian Zhang",
+      "Chaojun Xiao",
+      "Cheng Qian",
+      "Tianyu Yu",
+      "Huan-ang Gao",
+      "Wenkai Yang",
+      "Zhiyuan Liu",
+      "Ning Ding"
+    ]
+  },
+  {
+    "id": "arxiv:2511.22570",
+    "title": "DeepSeekMath-V2: Towards Self-Verifiable Mathematical Reasoning",
+    "url": "https://arxiv.org/abs/2511.22570",
+    "arxiv_id": "2511.22570",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "llm/inference",
+      "llm/posttraining/rl",
+      "llm/posttraining/preferences"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2511.22570"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p497",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation",
+      "evaluation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2511.22570",
+    "canonical_path": "llm/papers/arxiv-2511.22570/README.md",
+    "canonical_readme": "llm/papers/arxiv-2511.22570/README.md",
+    "source_path": "llm/papers/arxiv-2511.22570/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Zhihong Shao",
+      "Yuxiang Luo",
+      "Chengda Lu",
+      "Z.Z. Ren",
+      "Jiewen Hu",
+      "Tian Ye",
+      "Zhibin Gou",
+      "Shirong Ma",
+      "Xiaokang Zhang"
+    ]
+  },
+  {
+    "id": "arxiv:2602.02276",
+    "title": "Kimi K2.5: Visual Agentic Intelligence",
+    "url": "https://arxiv.org/abs/2602.02276",
+    "arxiv_id": "2602.02276",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "llm/inference",
+      "llm/posttraining/rl"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2602.02276"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "official_technical_report",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p498",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code",
+      "multimodal"
+    ],
+    "task_tags": [
+      "generation",
+      "decision"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2602.02276",
+    "canonical_path": "llm/papers/arxiv-2602.02276/README.md",
+    "canonical_readme": "llm/papers/arxiv-2602.02276/README.md",
+    "source_path": "llm/papers/arxiv-2602.02276/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Kimi Team",
+      "Tongtong Bai",
+      "Yifan Bai",
+      "Yiping Bao",
+      "S.H. Cai",
+      "Yuan Cao",
+      "Ziwei Chai",
+      "Y. Charles",
+      "H.S. Che",
+      "等 336 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2512.24601",
+    "title": "Recursive Language Models",
+    "url": "https://arxiv.org/abs/2512.24601",
+    "arxiv_id": "2512.24601",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "llm/long-context",
+      "llm/inference"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2512.24601"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p499",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "generation",
+      "decision"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2512.24601",
+    "canonical_path": "llm/papers/arxiv-2512.24601/README.md",
+    "canonical_readme": "llm/papers/arxiv-2512.24601/README.md",
+    "source_path": "llm/papers/arxiv-2512.24601/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Alex L. Zhang",
+      "Tim Kraska",
+      "Omar Khattab"
+    ]
+  },
+  {
+    "id": "arxiv:2512.20856",
+    "title": "NVIDIA Nemotron 3: Efficient and Open Intelligence",
+    "url": "https://arxiv.org/abs/2512.20856",
+    "arxiv_id": "2512.20856",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "llm/architecture",
+      "llm/long-context",
+      "llm/pretraining",
+      "llm/posttraining/rl"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2512.20856"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "official_technical_report",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p500",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "generation",
+      "decision"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2512.20856",
+    "canonical_path": "llm/papers/arxiv-2512.20856/README.md",
+    "canonical_readme": "llm/papers/arxiv-2512.20856/README.md",
+    "source_path": "llm/papers/arxiv-2512.20856/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "NVIDIA",
+      "Aaron Blakeman",
+      "Aaron Grattafiori",
+      "Aarti Basant",
+      "Abhibha Gupta",
+      "Abhinav Khattar",
+      "Adi Renduchintala",
+      "Aditya Vavre",
+      "Akanksha Shukla",
+      "等 357 位作者"
+    ]
   }
 ]

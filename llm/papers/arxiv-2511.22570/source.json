@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2511.22570",
+  "title": "DeepSeekMath-V2: Towards Self-Verifiable Mathematical Reasoning",
+  "resource_kind": "paper",
+  "canonical_folder": "llm/papers/arxiv-2511.22570",
+  "official_url": "https://arxiv.org/abs/2511.22570",
+  "official_fulltext_url": "https://arxiv.org/pdf/2511.22570",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了摘要、§1 动机、§2.1（验证器与元验证）、§2.2（生成器与自我验证奖励）、§2.3（自动标注）、§3.3.3（推理时扩展）、主要结果；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Zhihong Shao",
+    "Yuxiang Luo",
+    "Chengda Lu",
+    "Z.Z. Ren",
+    "Jiewen Hu",
+    "Tian Ye",
+    "Zhibin Gou",
+    "Shirong Ma",
+    "Xiaokang Zhang"
+  ],
+  "year": 2025,
+  "topic_paths": [
+    "llm/inference",
+    "llm/posttraining/rl",
+    "llm/posttraining/preferences"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 HTML 选段：§1、§2.1–2.3、§3.3.3、结果",
+    "mechanism_summary": "基座 DeepSeek-V3.2-Exp-Base；验证器 0/0.5/1 打分并指出问题，元验证器检查问题是否真实；生成器奖励 = 0.76×证明分 + 0.24×自评一致；多次验证与元验证自动标注难证明；推理时 64 证明 × 64 验证，挑 64 份配 8 次分析迭代修改最多 16 轮；IMO 2025 5/6、CMO 2024 金牌、Putnam 2024 118/120。",
+    "evidence_boundary": "未复现实验；数字取自论文正文。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2511.22570",
+      "https://arxiv.org/html/2511.22570"
+    ],
+    "source_origin": "llm_recency_audit_2026_10_04",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "generation",
+    "evaluation"
+  ]
+}

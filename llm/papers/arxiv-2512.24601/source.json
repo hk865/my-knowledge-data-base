@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2512.24601",
+  "title": "Recursive Language Models",
+  "resource_kind": "paper",
+  "canonical_folder": "llm/papers/arxiv-2512.24601",
+  "official_url": "https://arxiv.org/abs/2512.24601",
+  "official_fulltext_url": "https://arxiv.org/pdf/2512.24601",
+  "read_version": "v3",
+  "version_status": "checked_v3",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了摘要、机制描述、四个任务与 Table 1 的 GPT-5 行、图 1 的长度退化、成本讨论、RLM-Qwen3-8B 的训练与结果、局限；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Alex L. Zhang",
+    "Tim Kraska",
+    "Omar Khattab"
+  ],
+  "year": 2025,
+  "topic_paths": [
+    "llm/long-context",
+    "llm/inference"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v3 HTML 选段",
+    "mechanism_summary": "长提示作为 REPL 中的字符串变量，模型只见元信息、写代码查看与切分，经 llm_query() 递归调用；S-NIAH、BrowseComp-Plus(1K 文档)、OOLONG、OOLONG-Pairs；GPT-5 随长度与复杂度退化，RLM 在 2^20 token 以上保持；OOLONG-Pairs 0.1%→58.0%；中位成本相当或更低、方差大；RLM-Qwen3-8B 用 1000 条轨迹 SFT，中位 +28.3%。",
+    "evidence_boundary": "未复现实验；数字取自论文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2512.24601",
+      "https://arxiv.org/html/2512.24601"
+    ],
+    "source_origin": "llm_recency_audit_2026_10_04",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "text",
+    "code"
+  ],
+  "task_tags": [
+    "generation",
+    "decision"
+  ]
+}
