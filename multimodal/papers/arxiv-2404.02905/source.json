@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2404.02905",
+  "title": "Visual Autoregressive Modeling: Scalable Image Generation via Next-Scale Prediction",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2404.02905",
+  "official_url": "https://arxiv.org/abs/2404.02905",
+  "official_fulltext_url": "https://arxiv.org/pdf/2404.02905v2",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Keyu Tian",
+    "Yi Jiang",
+    "Zehuan Yuan",
+    "Bingyue Peng",
+    "Liwei Wang"
+  ],
+  "year": 2024,
+  "topic_paths": [
+    "multimodal/generation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页（v2）与 PDF：Abstract、Sec.1、Sec.3（自回归的四个问题）、Sec.4（下一尺度预测、多尺度 VQVAE）、Sec.5（与 DiT 比较、缩放）、Limitations and Future Work",
+    "mechanism_summary": "多尺度 VQ token、下一尺度预测、同尺度并行；ImageNet256 自回归基线 FID 18.65→1.73（2B），IS 80.4→350.2，约 20 倍快；DiT-XL/2 耗时 45 倍；超过 L-DiT-3B/7B；缩放相关系数约 −0.998；分词器沿用基线；未做文本到图像与视频；代码与模型公开。",
+    "evidence_boundary": "数字取自 arXiv PDF 正文与表格（PyMuPDF 抽取）；未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2404.02905",
+      "https://arxiv.org/pdf/2404.02905v2"
+    ],
+    "source_origin": "phase3_multimodal_generation_cards",
+    "relation_pages": [
+      "multimodal/fields/generation/README.md",
+      "multimodal/fields/generation/BASELINES.md"
+    ]
+  },
+  "modality_tags": [
+    "image"
+  ],
+  "task_tags": [
+    "generation"
+  ]
+}

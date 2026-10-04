@@ -102,3 +102,35 @@
 - [Qwen3-VL Technical Report](arxiv-2511.21631/README.md) · 2025 · 文献卡，暂无独立精读
 - [Genie 2: A large-scale foundation world model](genie-2-blog/README.md) · 2024 · 文献卡，暂无独立精读
 - [Genie 3: A new frontier for world models](genie-3-blog/README.md) · 2025 · 文献卡，暂无独立精读
+- [Histograms of Oriented Gradients for Human Detection](hog/README.md) · 2005 · 文献卡，暂无独立精读
+- [ImageNet Classification with Deep Convolutional Neural Networks](alexnet/README.md) · 2012 · 文献卡，暂无独立精读
+- [Deep Residual Learning for Image Recognition](arxiv-1512.03385/README.md) · 2015 · 文献卡，暂无独立精读
+- [Momentum Contrast for Unsupervised Visual Representation Learning](arxiv-1911.05722/README.md) · 2019 · 文献卡，暂无独立精读
+- [A Simple Framework for Contrastive Learning of Visual Representations](arxiv-2002.05709/README.md) · 2020 · 文献卡，暂无独立精读
+- [Training data-efficient image transformers & distillation through attention](arxiv-2012.12877/README.md) · 2020 · 文献卡，暂无独立精读
+- [How to train your ViT? Data, Augmentation, and Regularization in Vision Transformers](arxiv-2106.10270/README.md) · 2021 · 文献卡，暂无独立精读
+- [BEiT: BERT Pre-Training of Image Transformers](arxiv-2106.08254/README.md) · 2021 · 文献卡，暂无独立精读
+- [Self-Supervised Learning from Images with a Joint-Embedding Predictive Architecture](arxiv-2301.08243/README.md) · 2023 · 文献卡，暂无独立精读
+- [DINOv2: Learning Robust Visual Features without Supervision](arxiv-2304.07193/README.md) · 2023 · 文献卡，暂无独立精读
+- [Vision Transformers Need Registers](arxiv-2309.16588/README.md) · 2023 · 文献卡，暂无独立精读
+- [Scaling Language-Free Visual Representation Learning](arxiv-2504.01017/README.md) · 2025 · 文献卡，暂无独立精读
+- [Perception Encoder: The best visual embeddings are not at the output of the network](arxiv-2504.13181/README.md) · 2025 · 文献卡，暂无独立精读
+- [DINOv3](arxiv-2508.10104/README.md) · 2025 · 文献卡，暂无独立精读
+- [Auto-Encoding Variational Bayes](arxiv-1312.6114/README.md) · 2013 · 文献卡，暂无独立精读
+- [Generative Adversarial Networks](arxiv-1406.2661/README.md) · 2014 · 文献卡，暂无独立精读
+- [Denoising Diffusion Implicit Models](arxiv-2010.02502/README.md) · 2020 · 文献卡，暂无独立精读
+- [Score-Based Generative Modeling through Stochastic Differential Equations](arxiv-2011.13456/README.md) · 2020 · 文献卡，暂无独立精读
+- [Taming Transformers for High-Resolution Image Synthesis](arxiv-2012.09841/README.md) · 2020 · 文献卡，暂无独立精读
+- [Improved Denoising Diffusion Probabilistic Models](arxiv-2102.09672/README.md) · 2021 · 文献卡，暂无独立精读
+- [Zero-Shot Text-to-Image Generation](arxiv-2102.12092/README.md) · 2021 · 文献卡，暂无独立精读
+- [Diffusion Models Beat GANs on Image Synthesis](arxiv-2105.05233/README.md) · 2021 · 文献卡，暂无独立精读
+- [High-Resolution Image Synthesis with Latent Diffusion Models](arxiv-2112.10752/README.md) · 2021 · 文献卡，暂无独立精读
+- [Hierarchical Text-Conditional Image Generation with CLIP Latents](arxiv-2204.06125/README.md) · 2022 · 文献卡，暂无独立精读
+- [Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding](arxiv-2205.11487/README.md) · 2022 · 文献卡，暂无独立精读
+- [Classifier-Free Diffusion Guidance](arxiv-2207.12598/README.md) · 2022 · 文献卡，暂无独立精读
+- [Flow Straight and Fast: Learning to Generate and Transfer Data with Rectified Flow](arxiv-2209.03003/README.md) · 2022 · 文献卡，暂无独立精读
+- [Flow Matching for Generative Modeling](arxiv-2210.02747/README.md) · 2022 · 文献卡，暂无独立精读
+- [Scalable Diffusion Models with Transformers](arxiv-2212.09748/README.md) · 2022 · 文献卡，暂无独立精读
+- [Adversarial Diffusion Distillation](arxiv-2311.17042/README.md) · 2023 · 文献卡，暂无独立精读
+- [Scaling Rectified Flow Transformers for High-Resolution Image Synthesis](arxiv-2403.03206/README.md) · 2024 · 文献卡，暂无独立精读
+- [Visual Autoregressive Modeling: Scalable Image Generation via Next-Scale Prediction](arxiv-2404.02905/README.md) · 2024 · 文献卡，暂无独立精读

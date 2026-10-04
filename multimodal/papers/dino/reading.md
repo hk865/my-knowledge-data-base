@@ -85,17 +85,17 @@ Caron 等（2021，Facebook AI Research 与 Inria）把同一张图的不同裁�
 
 站在现在看，同一团队的后续版本和其他团队的工作，暴露了 DINO 没有写出来的几处坑。
 
-**1. 随机未筛选的数据会伤特征。** DINOv2（Oquab 等 2023，Meta AI Research 与 Inria，[arXiv:2304.07193](https://arxiv.org/abs/2304.07193)）在同样迭代数下训练 ViT-g：从同一来源随机抽 1.42 亿张未筛选图像时，ImageNet-1k 线性 83.3、iNaturalist 2018 为 68.0；换成按已有数据集检索筛选出的 LVD-142M，分别为 85.8 和 82.3（DINOv2 表 2）。ADE20k 分割是例外，未筛选数据略高（48.5 对 47.7）。`[判断]` DINO 结论里"随机未筛选"的设想被同一团队改成了"筛选"：自监督去掉了标注，没有去掉人对数据分布的选择。
+**1. 随机未筛选的数据会伤特征。** DINOv2（Oquab 等 2023，Meta AI Research 与 Inria，[arXiv:2304.07193](../arxiv-2304.07193/README.md)）在同样迭代数下训练 ViT-g：从同一来源随机抽 1.42 亿张未筛选图像时，ImageNet-1k 线性 83.3、iNaturalist 2018 为 68.0；换成按已有数据集检索筛选出的 LVD-142M，分别为 85.8 和 82.3（DINOv2 表 2）。ADE20k 分割是例外，未筛选数据略高（48.5 对 47.7）。`[判断]` DINO 结论里"随机未筛选"的设想被同一团队改成了"筛选"：自监督去掉了标注，没有去掉人对数据分布的选择。
 
 **2. 只监督 [CLS]，密集特征靠"涌现"。** DINOv2 的损失是 DINO 的图像级项加 iBOT 的 patch 级项（学生输入里遮住一些 patch，让它在这些位置匹配教师的 patch 输出），再把中心化换成 SwAV 的 Sinkhorn-Knopp，并加 KoLeo 正则让一批特征分布得更均匀（DINOv2 §4）。`[判断]` 这三处替换各对着 DINO 的一项：目标只在图像级、中心化只减均值、特征可能挤在一起。
 
-**3. 干净的注意力图其实是例外。** Darcet 等（"Vision Transformers Need Registers"，2023，FAIR 与 Inria，[arXiv:2309.16588](https://arxiv.org/abs/2309.16588)）发现，有监督（DeiT-III）、图文对比（OpenCLIP）、自监督（DINOv2）训练的大 ViT 都会在信息量低的背景处出现少量高范数 token：约占 2%，范数约为其他 token 的 10 倍，被模型挪去存放全局信息；它们只在 ViT-L 及更大的模型、训练进行到约三分之一之后出现。原始 DINO（ViT-B/16）没有这种伪影。依赖注意力图的无监督物体发现方法 LOST，在 DINOv2 上 VOC2007 的 corloc 只有 35.3，给模型加入几个专门存放全局信息的 register token 后升到 55.4，仍低于原始 DINO 的 61.9（Registers §1、图 4、表 3）。`[判断]` DINO 标题里的"涌现性质"与它的规模和训练长度绑在一起；模型更大、训练更长之后，要额外的 token 才能保住。
+**3. 干净的注意力图其实是例外。** Darcet 等（"Vision Transformers Need Registers"，2023，FAIR 与 Inria，[arXiv:2309.16588](../arxiv-2309.16588/README.md)）发现，有监督（DeiT-III）、图文对比（OpenCLIP）、自监督（DINOv2）训练的大 ViT 都会在信息量低的背景处出现少量高范数 token：约占 2%，范数约为其他 token 的 10 倍，被模型挪去存放全局信息；它们只在 ViT-L 及更大的模型、训练进行到约三分之一之后出现。原始 DINO（ViT-B/16）没有这种伪影。依赖注意力图的无监督物体发现方法 LOST，在 DINOv2 上 VOC2007 的 corloc 只有 35.3，给模型加入几个专门存放全局信息的 register token 后升到 55.4，仍低于原始 DINO 的 61.9（Registers §1、图 4、表 3）。`[判断]` DINO 标题里的"涌现性质"与它的规模和训练长度绑在一起；模型更大、训练更长之后，要额外的 token 才能保住。
 
-**4. 训练越久，密集特征反而退化。** DINOv3（Siméoni 等 2025，Meta AI Research，[arXiv:2508.10104](https://arxiv.org/abs/2508.10104)）报告：ViT-g 和 7B 模型的 ImageNet 线性分类随训练单调上升，Pascal VOC 上逐 patch 线性分割却在约 20 万次迭代后下降，7B 模型甚至跌到早期水平以下；原因是 patch 特征与 [CLS] 的相似度逐渐升高、局部性下降。他们用 Gram anchoring（让学生 patch 特征之间的相似度矩阵贴近早期教师的相似度矩阵）修复，并写明这一现象在 DINOv2 训练中已以较轻程度出现过；加入 iBOT 的局部损失只是开始解决，随着训练推进，全局表示仍会占上风（DINOv3 §4.1–4.2）。`[判断]` DINO 的图像级目标与密集特征之间存在张力，300–800 epoch、ViT-B 以下的规模还看不出来。
+**4. 训练越久，密集特征反而退化。** DINOv3（Siméoni 等 2025，Meta AI Research，[arXiv:2508.10104](../arxiv-2508.10104/README.md)）报告：ViT-g 和 7B 模型的 ImageNet 线性分类随训练单调上升，Pascal VOC 上逐 patch 线性分割却在约 20 万次迭代后下降，7B 模型甚至跌到早期水平以下；原因是 patch 特征与 [CLS] 的相似度逐渐升高、局部性下降。他们用 Gram anchoring（让学生 patch 特征之间的相似度矩阵贴近早期教师的相似度矩阵）修复，并写明这一现象在 DINOv2 训练中已以较轻程度出现过；加入 iBOT 的局部损失只是开始解决，随着训练推进，全局表示仍会占上风（DINOv3 §4.1–4.2）。`[判断]` DINO 的图像级目标与密集特征之间存在张力，300–800 epoch、ViT-B 以下的规模还看不出来。
 
-**5. 不变性由人选的增强决定。** I-JEPA（Assran 等 2023，Meta FAIR，[arXiv:2301.08243](https://arxiv.org/abs/2301.08243)）的引言指出：基于手工增强的不变性方法能得到语义层次高的表征，但引入的偏置可能对某些下游任务有害，也很难推广到音频等其他模态（§1）。I-JEPA 改为在表示空间里预测被遮块的表示，不用视图增强。相比之下，MAE 不做任何增强时微调仍有 84.0（MAE 表 1e）。`[判断]` DINO 学到的是对颜色抖动、裁剪缩放的不变性，需要颜色或精确位置的任务要靠 patch 级目标补回来。
+**5. 不变性由人选的增强决定。** I-JEPA（Assran 等 2023，Meta FAIR，[arXiv:2301.08243](../arxiv-2301.08243/README.md)）的引言指出：基于手工增强的不变性方法能得到语义层次高的表征，但引入的偏置可能对某些下游任务有害，也很难推广到音频等其他模态（§1）。I-JEPA 改为在表示空间里预测被遮块的表示，不用视图增强。相比之下，MAE 不做任何增强时微调仍有 84.0（MAE 表 1e）。`[判断]` DINO 学到的是对颜色抖动、裁剪缩放的不变性，需要颜色或精确位置的任务要靠 patch 级目标补回来。
 
-**6. 没有语言接口，但差距不全在语言。** MMVP（Tong 等 2024，NYU 等，[arXiv:2401.06209](../arxiv-2401.06209/README.md)）反过来用 DINOv2 找 CLIP 的盲区：CLIP 余弦相似度高于 0.95、DINOv2 低于 0.6 的图像对，多模态大模型在上面经常答错；把 DINOv2 特征混入视觉输入能明显改善视觉定位。Web-SSL（Fan 等 2025，Meta FAIR 与 NYU，[arXiv:2504.01017](https://arxiv.org/abs/2504.01017)）在与 CLIP 相同的 MetaCLIP 20 亿张图像上训练 DINOv2 式模型，扩到 7B 参数时在 16 项 VQA 上平均追平 CLIP；同等条件下 CLIP 在 OCR 与图表类见长，DINO 式模型在以视觉为中心的类别见长（Web-SSL 图 3）。`[判断]` "自监督特征不适合做视觉语言模型的输入"，很大一部分是训练数据与规模的差别。
+**6. 没有语言接口，但差距不全在语言。** MMVP（Tong 等 2024，NYU 等，[arXiv:2401.06209](../arxiv-2401.06209/README.md)）反过来用 DINOv2 找 CLIP 的盲区：CLIP 余弦相似度高于 0.95、DINOv2 低于 0.6 的图像对，多模态大模型在上面经常答错；把 DINOv2 特征混入视觉输入能明显改善视觉定位。Web-SSL（Fan 等 2025，Meta FAIR 与 NYU，[arXiv:2504.01017](../arxiv-2504.01017/README.md)）在与 CLIP 相同的 MetaCLIP 20 亿张图像上训练 DINOv2 式模型，扩到 7B 参数时在 16 项 VQA 上平均追平 CLIP；同等条件下 CLIP 在 OCR 与图表类见长，DINO 式模型在以视觉为中心的类别见长（Web-SSL 图 3）。`[判断]` "自监督特征不适合做视觉语言模型的输入"，很大一部分是训练数据与规模的差别。
 
 ## 批注
 
@@ -117,6 +117,6 @@ Caron 等（2021，Facebook AI Research 与 Inria）把同一张图的不同裁�
 
 **未核实 / 待验证**
 
-- DINOv2、Registers、DINOv3、I-JEPA、MMVP、Web-SSL 只核对了本页引用的段落与表格，未做全文精读；它们在本库还没有文献卡。
+- DINOv2、Registers、DINOv3、I-JEPA、MMVP、Web-SSL 只核对了本页引用的段落与表格；文献卡见正文中的链接。
 - LOST 的 61.9 由 Registers 表 3 的正文转引自 LOST 原文，未打开 LOST 原文核对。
 - 数值出处与页码见[证据档案](evidence.json)。

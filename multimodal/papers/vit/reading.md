@@ -278,7 +278,7 @@ ViT-B/16 经这一预训练后在 ImageNet 上为 79.9%，比从头训练约高 
 
 站在现在看，后续工作接手了这三个挑战，也暴露了几处原文没写明的坑。
 
-**1. "需要大数据"有很大一部分是"需要好配方"。** DeiT（Touvron 等 2020，Facebook AI 与 Sorbonne，[arXiv:2012.12877](https://arxiv.org/abs/2012.12877)）只用 ImageNet，在一台 8 卡机器上预训练 53 小时，结构与 ViT-B 相同的 DeiT-B 在 224 分辨率达到 81.8%，384 分辨率微调后 83.1%；ViT 原文同一结构只用 ImageNet 为 77.91%（384 分辨率）。DeiT 的消融显示配方极其敏感：去掉随机擦除或随机深度，训练直接失败（4.3%、3.4%）；同时去掉 mixup 与 cutmix 降到 75.8%；优化器从 AdamW 换成 SGD 降到 74.5%（DeiT 表 8）。Google 自己的 AugReg（Steiner 等，TMLR 2022，[arXiv:2106.10270](https://arxiv.org/abs/2106.10270)）系统研究后结论是：增加计算并配合数据增强与正则化，效果相当于把训练数据扩大一个数量级；在公开的 ImageNet-21k 上训练的 ViT 已能追平或超过 JFT-300M 上的同规模模型。MAE 也把 ViT-L 从零训练从原文的 76.5% 提到 82.5%（MAE 附录 A.2）。`[判断]` "大规模训练压过归纳偏置"成立，但数据门槛有多高，取决于配方；ViT 只调了三个正则化参数、没有调数据增强，把一部分配方问题算成了架构问题。卷积一侧的对称结果（ConvNeXt 用现代配方追平）见[观点页：CNN 与 Transformer](../../../perspectives/cnn-vs-transformer.md)。
+**1. "需要大数据"有很大一部分是"需要好配方"。** DeiT（Touvron 等 2020，Facebook AI 与 Sorbonne，[arXiv:2012.12877](../arxiv-2012.12877/README.md)）只用 ImageNet，在一台 8 卡机器上预训练 53 小时，结构与 ViT-B 相同的 DeiT-B 在 224 分辨率达到 81.8%，384 分辨率微调后 83.1%；ViT 原文同一结构只用 ImageNet 为 77.91%（384 分辨率）。DeiT 的消融显示配方极其敏感：去掉随机擦除或随机深度，训练直接失败（4.3%、3.4%）；同时去掉 mixup 与 cutmix 降到 75.8%；优化器从 AdamW 换成 SGD 降到 74.5%（DeiT 表 8）。Google 自己的 AugReg（Steiner 等，TMLR 2022，[arXiv:2106.10270](../arxiv-2106.10270/README.md)）系统研究后结论是：增加计算并配合数据增强与正则化，效果相当于把训练数据扩大一个数量级；在公开的 ImageNet-21k 上训练的 ViT 已能追平或超过 JFT-300M 上的同规模模型。MAE 也把 ViT-L 从零训练从原文的 76.5% 提到 82.5%（MAE 附录 A.2）。`[判断]` "大规模训练压过归纳偏置"成立，但数据门槛有多高，取决于配方；ViT 只调了三个正则化参数、没有调数据增强，把一部分配方问题算成了架构问题。卷积一侧的对称结果（ConvNeXt 用现代配方追平）见[观点页：CNN 与 Transformer](../../../perspectives/cnn-vs-transformer.md)。
 
 **2. 最强结果依赖不公开的 JFT。** 外部团队无法重建同一数据条件。AugReg 发布了 5 万多个在不同设置下训练的 ViT 模型，并证明公开数据足以达到同等水平，基本消除了这个复现障碍（AugReg §1）。
 
@@ -286,7 +286,7 @@ ViT-B/16 经这一预训练后在 ImageNet 上为 79.9%，比从头训练约高 
 
 **4. token 数随分辨率平方增长。** 第六节算过，224 到 384 时注意力分数增加到 8.58 倍；切块从 16 缩到 8 也是同样的代价。DINO 报告 ViT-S/16 每图 197 个 token、约 1007 图/秒，ViT-S/8 为 785 个 token、约 180 图/秒（[DINO 精读](../dino/reading.md)表 1）。patch 大小因此是精度与成本之间最直接的旋钮。
 
-**5. 只有一个 [CLS] 做全局汇总，大模型会自己挪用背景 token。** Darcet 等（"Vision Transformers Need Registers"，2023，[arXiv:2309.16588](https://arxiv.org/abs/2309.16588)）发现，有监督的 DeiT-III、图文对比的 OpenCLIP、自监督的 DINOv2 训练出的大 ViT，都会在信息量低的背景处出现约 2% 的高范数 token，范数约为其他 token 的 10 倍，被用来存放全局信息、丢掉了原 patch 的局部信息；它们只在 ViT-L 及更大、训练到约三分之一之后出现。在输入序列里加几个与图像无关的 register token 后，伪影消失，密集预测变好（Registers §1–3）。`[判断]` 有监督模型也有这个现象，说明它是 ViT 结构在规模变大后的共性，ViT 原文的规模和可视化方式还看不出来。
+**5. 只有一个 [CLS] 做全局汇总，大模型会自己挪用背景 token。** Darcet 等（"Vision Transformers Need Registers"，2023，[arXiv:2309.16588](../arxiv-2309.16588/README.md)）发现，有监督的 DeiT-III、图文对比的 OpenCLIP、自监督的 DINOv2 训练出的大 ViT，都会在信息量低的背景处出现约 2% 的高范数 token，范数约为其他 token 的 10 倍，被用来存放全局信息、丢掉了原 patch 的局部信息；它们只在 ViT-L 及更大、训练到约三分之一之后出现。在输入序列里加几个与图像无关的 register token 后，伪影消失，密集预测变好（Registers §1–3）。`[判断]` 有监督模型也有这个现象，说明它是 ViT 结构在规模变大后的共性，ViT 原文的规模和可视化方式还看不出来。
 
 **6. 检测、分割与自监督在一年内被接手。** MAE 把单尺度的 ViT 适配成多尺度特征接检测器，COCO 上 ViT-L 的检测 box AP 从有监督预训练的 49.3 提到 53.3；MAE 与 DINO 分别用遮蔽重建和自蒸馏补上了自监督的差距（[MAE 精读](../mae/reading.md)、[DINO 精读](../dino/reading.md)）。
 
@@ -310,6 +310,6 @@ ViT-B/16 经这一预训练后在 ImageNet 上为 79.9%，比从头训练约高 
 
 **未核实 / 待验证**
 
-- DeiT、AugReg、SigLIP 2、Registers 只核对了本页引用的段落与表格；它们在本库还没有文献卡。
+- DeiT、AugReg、SigLIP 2、Registers 只核对了本页引用的段落与表格；文献卡见正文中的链接。
 - Cordonnier 等、Sun 等、BiT 只按 ViT §2 的描述引用，未打开原文。
 - 数值出处与页码见[证据档案](evidence.json)与[教学改写核验记录](evidence-beginner-revision.json)。

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2311.17042",
+  "title": "Adversarial Diffusion Distillation",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2311.17042",
+  "official_url": "https://arxiv.org/abs/2311.17042",
+  "official_fulltext_url": "https://arxiv.org/pdf/2311.17042v1",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Axel Sauer",
+    "Dominik Lorenz",
+    "Andreas Blattmann",
+    "Robin Rombach"
+  ],
+  "year": 2023,
+  "topic_paths": [
+    "multimodal/generation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 PDF：Abstract、Sec.1、Sec.3（分数蒸馏 + 判别器损失、学生时间步）、Sec.4.1（Table 1 消融、教师类型）、Sec.4.2（人评、Fig.5–7）、Sec.4.3（Fig.8）、Sec.5",
+    "mechanism_summary": "分数蒸馏（冻结教师）+ 对抗损失（冻结 DINOv2 ViT-S 特征上的判别器，文本与图像条件）；学生 4 个时间步；单步 ADD-XL 胜 4 步 LCM-XL，4 步在多数比较中胜 50 步 SDXL；单步仍不及 SDXL；真实感提升以多样性略降为代价；SDXL FID 更高而人评更好；代码与权重公开。",
+    "evidence_boundary": "数字取自 arXiv PDF 正文与表格（PyMuPDF 抽取）；未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2311.17042",
+      "https://arxiv.org/pdf/2311.17042v1"
+    ],
+    "source_origin": "phase3_multimodal_generation_cards",
+    "relation_pages": [
+      "multimodal/fields/generation/README.md",
+      "multimodal/fields/generation/BASELINES.md"
+    ]
+  },
+  "modality_tags": [
+    "image",
+    "text",
+    "multimodal"
+  ],
+  "task_tags": [
+    "generation"
+  ]
+}

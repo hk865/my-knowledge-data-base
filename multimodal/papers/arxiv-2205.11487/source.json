@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2205.11487",
+  "title": "Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2205.11487",
+  "official_url": "https://arxiv.org/abs/2205.11487",
+  "official_fulltext_url": "https://arxiv.org/pdf/2205.11487v1",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Chitwan Saharia",
+    "William Chan",
+    "Saurabh Saxena",
+    "Lala Li",
+    "Jay Whang",
+    "Emily Denton",
+    "Seyed Kamyar Seyed Ghasemipour",
+    "Burcu Karagol Ayan",
+    "S. Sara Mahdavi",
+    "Rapha Gontijo Lopes",
+    "等 14 位作者"
+  ],
+  "year": 2022,
+  "topic_paths": [
+    "multimodal/generation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 PDF：Abstract、Sec.1、Sec.2（T5-XXL、级联、动态阈值、Efficient U-Net）、Sec.3（DrawBench、评测局限）、Sec.4.1–4.4（训练数据、Table 1–2、规模消融）、Sec.6",
+    "mechanism_summary": "冻结 T5-XXL + 2B 64×64 基础模型 + 600M、400M 两级超分；动态阈值；文本编码器扩大比 U-Net 扩大更重要；COCO 零样本 FID-30K 7.27；DrawBench；人评写实度 39.2%、去人物 43.6%；约 4.6 亿内部 + 4 亿 LAION；不发布代码与演示。",
+    "evidence_boundary": "数字取自 arXiv PDF 正文与表格（PyMuPDF 抽取）；未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2205.11487",
+      "https://arxiv.org/pdf/2205.11487v1"
+    ],
+    "source_origin": "phase3_multimodal_generation_cards",
+    "relation_pages": [
+      "multimodal/fields/generation/README.md",
+      "multimodal/fields/generation/BASELINES.md"
+    ]
+  },
+  "modality_tags": [
+    "image",
+    "text",
+    "multimodal"
+  ],
+  "task_tags": [
+    "generation"
+  ]
+}

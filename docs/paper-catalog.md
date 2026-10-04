@@ -1,6 +1,6 @@
 # 全库论文总目录
 
-共 436 个去重资源（412 篇论文、16 篇官方技术报告、1 个代码仓库、7 篇官方博客）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
+共 468 个去重资源（444 篇论文、16 篇官方技术报告、1 个代码仓库、7 篇官方博客）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
 
 身份核验、助手教学进度和用户阅读状态分开。历史来源保留原角色与证据局限，不将助手推荐写成用户提供，也不将教学完成写成用户已读。
 
@@ -4726,6 +4726,326 @@
 - 身份核验：selected_sections_checked_not_full_read
 - 用户阅读状态：unknown
 - [文献卡](../cross-domain/papers/openai-swe-bench-verified-retired/README.md)
+
+<a id="p437"></a>
+## p437 · Histograms of Oriented Gradients for Human Detection
+
+- 标识：doi:10.1109/CVPR.2005.177
+- 原文 / 官方入口：https://doi.org/10.1109/CVPR.2005.177
+- 主题：multimodal/visual-representation, robotics/perception
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/hog/README.md)
+
+<a id="p438"></a>
+## p438 · ImageNet Classification with Deep Convolutional Neural Networks
+
+- 标识：url:https://papers.nips.cc/paper_files/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html
+- 原文 / 官方入口：https://papers.nips.cc/paper_files/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html
+- 主题：multimodal/visual-representation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/alexnet/README.md)
+
+<a id="p439"></a>
+## p439 · Deep Residual Learning for Image Recognition
+
+- 标识：arxiv:1512.03385
+- 原文 / 官方入口：https://arxiv.org/abs/1512.03385
+- 主题：multimodal/visual-representation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-1512.03385/README.md)
+
+<a id="p440"></a>
+## p440 · Momentum Contrast for Unsupervised Visual Representation Learning
+
+- 标识：arxiv:1911.05722
+- 原文 / 官方入口：https://arxiv.org/abs/1911.05722
+- 主题：multimodal/visual-representation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-1911.05722/README.md)
+
+<a id="p441"></a>
+## p441 · A Simple Framework for Contrastive Learning of Visual Representations
+
+- 标识：arxiv:2002.05709
+- 原文 / 官方入口：https://arxiv.org/abs/2002.05709
+- 主题：multimodal/visual-representation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2002.05709/README.md)
+
+<a id="p442"></a>
+## p442 · Training data-efficient image transformers & distillation through attention
+
+- 标识：arxiv:2012.12877
+- 原文 / 官方入口：https://arxiv.org/abs/2012.12877
+- 主题：multimodal/visual-representation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2012.12877/README.md)
+
+<a id="p443"></a>
+## p443 · How to train your ViT? Data, Augmentation, and Regularization in Vision Transformers
+
+- 标识：arxiv:2106.10270
+- 原文 / 官方入口：https://arxiv.org/abs/2106.10270
+- 主题：multimodal/visual-representation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2106.10270/README.md)
+
+<a id="p444"></a>
+## p444 · BEiT: BERT Pre-Training of Image Transformers
+
+- 标识：arxiv:2106.08254
+- 原文 / 官方入口：https://arxiv.org/abs/2106.08254
+- 主题：multimodal/visual-representation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2106.08254/README.md)
+
+<a id="p445"></a>
+## p445 · Self-Supervised Learning from Images with a Joint-Embedding Predictive Architecture
+
+- 标识：arxiv:2301.08243
+- 原文 / 官方入口：https://arxiv.org/abs/2301.08243
+- 主题：multimodal/visual-representation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2301.08243/README.md)
+
+<a id="p446"></a>
+## p446 · DINOv2: Learning Robust Visual Features without Supervision
+
+- 标识：arxiv:2304.07193
+- 原文 / 官方入口：https://arxiv.org/abs/2304.07193
+- 主题：multimodal/visual-representation, robotics/perception
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2304.07193/README.md)
+
+<a id="p447"></a>
+## p447 · Vision Transformers Need Registers
+
+- 标识：arxiv:2309.16588
+- 原文 / 官方入口：https://arxiv.org/abs/2309.16588
+- 主题：multimodal/visual-representation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2309.16588/README.md)
+
+<a id="p448"></a>
+## p448 · Scaling Language-Free Visual Representation Learning
+
+- 标识：arxiv:2504.01017
+- 原文 / 官方入口：https://arxiv.org/abs/2504.01017
+- 主题：multimodal/visual-representation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2504.01017/README.md)
+
+<a id="p449"></a>
+## p449 · Perception Encoder: The best visual embeddings are not at the output of the network
+
+- 标识：arxiv:2504.13181
+- 原文 / 官方入口：https://arxiv.org/abs/2504.13181
+- 主题：multimodal/visual-representation, multimodal/alignment
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2504.13181/README.md)
+
+<a id="p450"></a>
+## p450 · DINOv3
+
+- 标识：arxiv:2508.10104
+- 原文 / 官方入口：https://arxiv.org/abs/2508.10104
+- 主题：multimodal/visual-representation, robotics/perception
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2508.10104/README.md)
+
+<a id="p451"></a>
+## p451 · Auto-Encoding Variational Bayes
+
+- 标识：arxiv:1312.6114
+- 原文 / 官方入口：https://arxiv.org/abs/1312.6114
+- 主题：multimodal/generation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-1312.6114/README.md)
+
+<a id="p452"></a>
+## p452 · Generative Adversarial Networks
+
+- 标识：arxiv:1406.2661
+- 原文 / 官方入口：https://arxiv.org/abs/1406.2661
+- 主题：multimodal/generation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-1406.2661/README.md)
+
+<a id="p453"></a>
+## p453 · Denoising Diffusion Implicit Models
+
+- 标识：arxiv:2010.02502
+- 原文 / 官方入口：https://arxiv.org/abs/2010.02502
+- 主题：multimodal/generation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2010.02502/README.md)
+
+<a id="p454"></a>
+## p454 · Score-Based Generative Modeling through Stochastic Differential Equations
+
+- 标识：arxiv:2011.13456
+- 原文 / 官方入口：https://arxiv.org/abs/2011.13456
+- 主题：multimodal/generation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2011.13456/README.md)
+
+<a id="p455"></a>
+## p455 · Taming Transformers for High-Resolution Image Synthesis
+
+- 标识：arxiv:2012.09841
+- 原文 / 官方入口：https://arxiv.org/abs/2012.09841
+- 主题：multimodal/generation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2012.09841/README.md)
+
+<a id="p456"></a>
+## p456 · Improved Denoising Diffusion Probabilistic Models
+
+- 标识：arxiv:2102.09672
+- 原文 / 官方入口：https://arxiv.org/abs/2102.09672
+- 主题：multimodal/generation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2102.09672/README.md)
+
+<a id="p457"></a>
+## p457 · Zero-Shot Text-to-Image Generation
+
+- 标识：arxiv:2102.12092
+- 原文 / 官方入口：https://arxiv.org/abs/2102.12092
+- 主题：multimodal/generation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2102.12092/README.md)
+
+<a id="p458"></a>
+## p458 · Diffusion Models Beat GANs on Image Synthesis
+
+- 标识：arxiv:2105.05233
+- 原文 / 官方入口：https://arxiv.org/abs/2105.05233
+- 主题：multimodal/generation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2105.05233/README.md)
+
+<a id="p459"></a>
+## p459 · High-Resolution Image Synthesis with Latent Diffusion Models
+
+- 标识：arxiv:2112.10752
+- 原文 / 官方入口：https://arxiv.org/abs/2112.10752
+- 主题：multimodal/generation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2112.10752/README.md)
+
+<a id="p460"></a>
+## p460 · Hierarchical Text-Conditional Image Generation with CLIP Latents
+
+- 标识：arxiv:2204.06125
+- 原文 / 官方入口：https://arxiv.org/abs/2204.06125
+- 主题：multimodal/generation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2204.06125/README.md)
+
+<a id="p461"></a>
+## p461 · Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding
+
+- 标识：arxiv:2205.11487
+- 原文 / 官方入口：https://arxiv.org/abs/2205.11487
+- 主题：multimodal/generation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2205.11487/README.md)
+
+<a id="p462"></a>
+## p462 · Classifier-Free Diffusion Guidance
+
+- 标识：arxiv:2207.12598
+- 原文 / 官方入口：https://arxiv.org/abs/2207.12598
+- 主题：multimodal/generation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2207.12598/README.md)
+
+<a id="p463"></a>
+## p463 · Flow Straight and Fast: Learning to Generate and Transfer Data with Rectified Flow
+
+- 标识：arxiv:2209.03003
+- 原文 / 官方入口：https://arxiv.org/abs/2209.03003
+- 主题：multimodal/generation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2209.03003/README.md)
+
+<a id="p464"></a>
+## p464 · Flow Matching for Generative Modeling
+
+- 标识：arxiv:2210.02747
+- 原文 / 官方入口：https://arxiv.org/abs/2210.02747
+- 主题：multimodal/generation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2210.02747/README.md)
+
+<a id="p465"></a>
+## p465 · Scalable Diffusion Models with Transformers
+
+- 标识：arxiv:2212.09748
+- 原文 / 官方入口：https://arxiv.org/abs/2212.09748
+- 主题：multimodal/generation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2212.09748/README.md)
+
+<a id="p466"></a>
+## p466 · Adversarial Diffusion Distillation
+
+- 标识：arxiv:2311.17042
+- 原文 / 官方入口：https://arxiv.org/abs/2311.17042
+- 主题：multimodal/generation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2311.17042/README.md)
+
+<a id="p467"></a>
+## p467 · Scaling Rectified Flow Transformers for High-Resolution Image Synthesis
+
+- 标识：arxiv:2403.03206
+- 原文 / 官方入口：https://arxiv.org/abs/2403.03206
+- 主题：multimodal/generation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2403.03206/README.md)
+
+<a id="p468"></a>
+## p468 · Visual Autoregressive Modeling: Scalable Image Generation via Next-Scale Prediction
+
+- 标识：arxiv:2404.02905
+- 原文 / 官方入口：https://arxiv.org/abs/2404.02905
+- 主题：multimodal/generation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2404.02905/README.md)
 
 ## 2026年10月3日既有条目更新
 

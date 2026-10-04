@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2403.03206",
+  "title": "Scaling Rectified Flow Transformers for High-Resolution Image Synthesis",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2403.03206",
+  "official_url": "https://arxiv.org/abs/2403.03206",
+  "official_fulltext_url": "https://arxiv.org/pdf/2403.03206v1",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Patrick Esser",
+    "Sumith Kulal",
+    "Andreas Blattmann",
+    "Rahim Entezari",
+    "Jonas Müller",
+    "Harry Saini",
+    "Yam Levi",
+    "Dominik Lorenz",
+    "Axel Sauer",
+    "Frederic Boesel",
+    "等 17 位作者"
+  ],
+  "year": 2024,
+  "topic_paths": [
+    "multimodal/generation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 PDF：Abstract、Sec.1、Sec.2–3（整流流、logit-normal 时间采样）、Sec.4（MM-DiT）、Sec.5.1（61 种组合）、Sec.5.2（自编码器通道数、合成描述）、Sec.5.3（Table 5 GenEval、规模、去掉 T5）、Sec.6",
+    "mechanism_summary": "潜空间（f=8，通道 16）+ 整流流 + logit-normal 时间采样；61 种组合中只有改了时间采样的 RF 优于 eps/linear；MM-DiT 两套权重双向注意力；CLIP-L、CLIP-G、T5-XXL；50% 合成描述；8B 1024² + DPO GenEval 0.74（DALL·E 3 0.67），位置 0.33；去掉 T5：美学 50%、遵循 46%、写字 38%；验证损失随规模平滑下降；自编码器重建为上限；承诺开放。",
+    "evidence_boundary": "数字取自 arXiv PDF 正文与表格（PyMuPDF 抽取）；未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2403.03206",
+      "https://arxiv.org/pdf/2403.03206v1"
+    ],
+    "source_origin": "phase3_multimodal_generation_cards",
+    "relation_pages": [
+      "multimodal/fields/generation/README.md",
+      "multimodal/fields/generation/BASELINES.md"
+    ]
+  },
+  "modality_tags": [
+    "image",
+    "text",
+    "multimodal"
+  ],
+  "task_tags": [
+    "generation"
+  ]
+}

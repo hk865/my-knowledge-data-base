@@ -28546,5 +28546,1581 @@
     "authors": [
       "OpenAI"
     ]
+  },
+  {
+    "id": "doi:10.1109/CVPR.2005.177",
+    "title": "Histograms of Oriented Gradients for Human Detection",
+    "url": "https://doi.org/10.1109/CVPR.2005.177",
+    "arxiv_id": null,
+    "doi": "10.1109/CVPR.2005.177",
+    "year": "2005",
+    "topic_paths": [
+      "multimodal/visual-representation",
+      "robotics/perception"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://doi.org/10.1109/CVPR.2005.177"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p437",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "multimodal/papers/hog",
+    "canonical_path": "multimodal/papers/hog/README.md",
+    "canonical_readme": "multimodal/papers/hog/README.md",
+    "source_path": "multimodal/papers/hog/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Navneet Dalal",
+      "Bill Triggs"
+    ]
+  },
+  {
+    "id": "url:https://papers.nips.cc/paper_files/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
+    "title": "ImageNet Classification with Deep Convolutional Neural Networks",
+    "url": "https://papers.nips.cc/paper_files/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html",
+    "arxiv_id": null,
+    "doi": null,
+    "year": "2012",
+    "topic_paths": [
+      "multimodal/visual-representation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://papers.nips.cc/paper_files/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p438",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "multimodal/papers/alexnet",
+    "canonical_path": "multimodal/papers/alexnet/README.md",
+    "canonical_readme": "multimodal/papers/alexnet/README.md",
+    "source_path": "multimodal/papers/alexnet/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Alex Krizhevsky",
+      "Ilya Sutskever",
+      "Geoffrey E. Hinton"
+    ]
+  },
+  {
+    "id": "arxiv:1512.03385",
+    "title": "Deep Residual Learning for Image Recognition",
+    "url": "https://arxiv.org/abs/1512.03385",
+    "arxiv_id": "1512.03385",
+    "doi": null,
+    "year": "2015",
+    "topic_paths": [
+      "multimodal/visual-representation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/1512.03385"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p439",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-1512.03385",
+    "canonical_path": "multimodal/papers/arxiv-1512.03385/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-1512.03385/README.md",
+    "source_path": "multimodal/papers/arxiv-1512.03385/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Kaiming He",
+      "Xiangyu Zhang",
+      "Shaoqing Ren",
+      "Jian Sun"
+    ]
+  },
+  {
+    "id": "arxiv:1911.05722",
+    "title": "Momentum Contrast for Unsupervised Visual Representation Learning",
+    "url": "https://arxiv.org/abs/1911.05722",
+    "arxiv_id": "1911.05722",
+    "doi": null,
+    "year": "2019",
+    "topic_paths": [
+      "multimodal/visual-representation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/1911.05722"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p440",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-1911.05722",
+    "canonical_path": "multimodal/papers/arxiv-1911.05722/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-1911.05722/README.md",
+    "source_path": "multimodal/papers/arxiv-1911.05722/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Kaiming He",
+      "Haoqi Fan",
+      "Yuxin Wu",
+      "Saining Xie",
+      "Ross Girshick"
+    ]
+  },
+  {
+    "id": "arxiv:2002.05709",
+    "title": "A Simple Framework for Contrastive Learning of Visual Representations",
+    "url": "https://arxiv.org/abs/2002.05709",
+    "arxiv_id": "2002.05709",
+    "doi": null,
+    "year": "2020",
+    "topic_paths": [
+      "multimodal/visual-representation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2002.05709"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p441",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2002.05709",
+    "canonical_path": "multimodal/papers/arxiv-2002.05709/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2002.05709/README.md",
+    "source_path": "multimodal/papers/arxiv-2002.05709/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Ting Chen",
+      "Simon Kornblith",
+      "Mohammad Norouzi",
+      "Geoffrey Hinton"
+    ]
+  },
+  {
+    "id": "arxiv:2012.12877",
+    "title": "Training data-efficient image transformers & distillation through attention",
+    "url": "https://arxiv.org/abs/2012.12877",
+    "arxiv_id": "2012.12877",
+    "doi": null,
+    "year": "2020",
+    "topic_paths": [
+      "multimodal/visual-representation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2012.12877"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p442",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2012.12877",
+    "canonical_path": "multimodal/papers/arxiv-2012.12877/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2012.12877/README.md",
+    "source_path": "multimodal/papers/arxiv-2012.12877/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Hugo Touvron",
+      "Matthieu Cord",
+      "Matthijs Douze",
+      "Francisco Massa",
+      "Alexandre Sablayrolles",
+      "Hervé Jégou"
+    ]
+  },
+  {
+    "id": "arxiv:2106.10270",
+    "title": "How to train your ViT? Data, Augmentation, and Regularization in Vision Transformers",
+    "url": "https://arxiv.org/abs/2106.10270",
+    "arxiv_id": "2106.10270",
+    "doi": null,
+    "year": "2021",
+    "topic_paths": [
+      "multimodal/visual-representation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2106.10270"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p443",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding",
+      "analysis"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2106.10270",
+    "canonical_path": "multimodal/papers/arxiv-2106.10270/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2106.10270/README.md",
+    "source_path": "multimodal/papers/arxiv-2106.10270/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Andreas Steiner",
+      "Alexander Kolesnikov",
+      "Xiaohua Zhai",
+      "Ross Wightman",
+      "Jakob Uszkoreit",
+      "Lucas Beyer"
+    ]
+  },
+  {
+    "id": "arxiv:2106.08254",
+    "title": "BEiT: BERT Pre-Training of Image Transformers",
+    "url": "https://arxiv.org/abs/2106.08254",
+    "arxiv_id": "2106.08254",
+    "doi": null,
+    "year": "2021",
+    "topic_paths": [
+      "multimodal/visual-representation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2106.08254"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p444",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2106.08254",
+    "canonical_path": "multimodal/papers/arxiv-2106.08254/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2106.08254/README.md",
+    "source_path": "multimodal/papers/arxiv-2106.08254/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Hangbo Bao",
+      "Li Dong",
+      "Songhao Piao",
+      "Furu Wei"
+    ]
+  },
+  {
+    "id": "arxiv:2301.08243",
+    "title": "Self-Supervised Learning from Images with a Joint-Embedding Predictive Architecture",
+    "url": "https://arxiv.org/abs/2301.08243",
+    "arxiv_id": "2301.08243",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "multimodal/visual-representation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2301.08243"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p445",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2301.08243",
+    "canonical_path": "multimodal/papers/arxiv-2301.08243/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2301.08243/README.md",
+    "source_path": "multimodal/papers/arxiv-2301.08243/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Mahmoud Assran",
+      "Quentin Duval",
+      "Ishan Misra",
+      "Piotr Bojanowski",
+      "Pascal Vincent",
+      "Michael Rabbat",
+      "Yann LeCun",
+      "Nicolas Ballas"
+    ]
+  },
+  {
+    "id": "arxiv:2304.07193",
+    "title": "DINOv2: Learning Robust Visual Features without Supervision",
+    "url": "https://arxiv.org/abs/2304.07193",
+    "arxiv_id": "2304.07193",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "multimodal/visual-representation",
+      "robotics/perception"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2304.07193"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p446",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2304.07193",
+    "canonical_path": "multimodal/papers/arxiv-2304.07193/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2304.07193/README.md",
+    "source_path": "multimodal/papers/arxiv-2304.07193/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Maxime Oquab",
+      "Timothée Darcet",
+      "Théo Moutakanni",
+      "Huy V. Vo",
+      "Marc Szafraniec",
+      "Vasil Khalidov",
+      "Pierre Fernandez",
+      "Daniel Haziza",
+      "Francisco Massa",
+      "Alaaeldin El-Nouby",
+      "等 26 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2309.16588",
+    "title": "Vision Transformers Need Registers",
+    "url": "https://arxiv.org/abs/2309.16588",
+    "arxiv_id": "2309.16588",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "multimodal/visual-representation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2309.16588"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p447",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding",
+      "analysis"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2309.16588",
+    "canonical_path": "multimodal/papers/arxiv-2309.16588/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2309.16588/README.md",
+    "source_path": "multimodal/papers/arxiv-2309.16588/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Timothée Darcet",
+      "Maxime Oquab",
+      "Julien Mairal",
+      "Piotr Bojanowski"
+    ]
+  },
+  {
+    "id": "arxiv:2504.01017",
+    "title": "Scaling Language-Free Visual Representation Learning",
+    "url": "https://arxiv.org/abs/2504.01017",
+    "arxiv_id": "2504.01017",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "multimodal/visual-representation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2504.01017"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p448",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding",
+      "analysis"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2504.01017",
+    "canonical_path": "multimodal/papers/arxiv-2504.01017/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2504.01017/README.md",
+    "source_path": "multimodal/papers/arxiv-2504.01017/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "David Fan",
+      "Shengbang Tong",
+      "Jiachen Zhu",
+      "Koustuv Sinha",
+      "Zhuang Liu",
+      "Xinlei Chen",
+      "Michael Rabbat",
+      "Nicolas Ballas",
+      "Yann LeCun",
+      "Amir Bar",
+      "Saining Xie"
+    ]
+  },
+  {
+    "id": "arxiv:2504.13181",
+    "title": "Perception Encoder: The best visual embeddings are not at the output of the network",
+    "url": "https://arxiv.org/abs/2504.13181",
+    "arxiv_id": "2504.13181",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "multimodal/visual-representation",
+      "multimodal/alignment"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2504.13181"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p449",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "video",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2504.13181",
+    "canonical_path": "multimodal/papers/arxiv-2504.13181/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2504.13181/README.md",
+    "source_path": "multimodal/papers/arxiv-2504.13181/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Daniel Bolya",
+      "Po-Yao Huang",
+      "Peize Sun",
+      "Jang Hyun Cho",
+      "Andrea Madotto",
+      "Chen Wei",
+      "Tengyu Ma",
+      "Jiale Zhi",
+      "Jathushan Rajasegaran",
+      "Hanoona Rasheed",
+      "等 18 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2508.10104",
+    "title": "DINOv3",
+    "url": "https://arxiv.org/abs/2508.10104",
+    "arxiv_id": "2508.10104",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "multimodal/visual-representation",
+      "robotics/perception"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2508.10104"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p450",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2508.10104",
+    "canonical_path": "multimodal/papers/arxiv-2508.10104/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2508.10104/README.md",
+    "source_path": "multimodal/papers/arxiv-2508.10104/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Oriane Siméoni",
+      "Huy V. Vo",
+      "Maximilian Seitzer",
+      "Federico Baldassarre",
+      "Maxime Oquab",
+      "Cijo Jose",
+      "Vasil Khalidov",
+      "Marc Szafraniec",
+      "Seungeun Yi",
+      "Michaël Ramamonjisoa",
+      "等 26 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:1312.6114",
+    "title": "Auto-Encoding Variational Bayes",
+    "url": "https://arxiv.org/abs/1312.6114",
+    "arxiv_id": "1312.6114",
+    "doi": null,
+    "year": "2013",
+    "topic_paths": [
+      "multimodal/generation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/1312.6114"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p451",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-1312.6114",
+    "canonical_path": "multimodal/papers/arxiv-1312.6114/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-1312.6114/README.md",
+    "source_path": "multimodal/papers/arxiv-1312.6114/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Diederik P Kingma",
+      "Max Welling"
+    ]
+  },
+  {
+    "id": "arxiv:1406.2661",
+    "title": "Generative Adversarial Networks",
+    "url": "https://arxiv.org/abs/1406.2661",
+    "arxiv_id": "1406.2661",
+    "doi": null,
+    "year": "2014",
+    "topic_paths": [
+      "multimodal/generation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/1406.2661"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p452",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-1406.2661",
+    "canonical_path": "multimodal/papers/arxiv-1406.2661/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-1406.2661/README.md",
+    "source_path": "multimodal/papers/arxiv-1406.2661/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Ian J. Goodfellow",
+      "Jean Pouget-Abadie",
+      "Mehdi Mirza",
+      "Bing Xu",
+      "David Warde-Farley",
+      "Sherjil Ozair",
+      "Aaron Courville",
+      "Yoshua Bengio"
+    ]
+  },
+  {
+    "id": "arxiv:2010.02502",
+    "title": "Denoising Diffusion Implicit Models",
+    "url": "https://arxiv.org/abs/2010.02502",
+    "arxiv_id": "2010.02502",
+    "doi": null,
+    "year": "2020",
+    "topic_paths": [
+      "multimodal/generation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2010.02502"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p453",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2010.02502",
+    "canonical_path": "multimodal/papers/arxiv-2010.02502/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2010.02502/README.md",
+    "source_path": "multimodal/papers/arxiv-2010.02502/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Jiaming Song",
+      "Chenlin Meng",
+      "Stefano Ermon"
+    ]
+  },
+  {
+    "id": "arxiv:2011.13456",
+    "title": "Score-Based Generative Modeling through Stochastic Differential Equations",
+    "url": "https://arxiv.org/abs/2011.13456",
+    "arxiv_id": "2011.13456",
+    "doi": null,
+    "year": "2020",
+    "topic_paths": [
+      "multimodal/generation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2011.13456"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p454",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2011.13456",
+    "canonical_path": "multimodal/papers/arxiv-2011.13456/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2011.13456/README.md",
+    "source_path": "multimodal/papers/arxiv-2011.13456/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Yang Song",
+      "Jascha Sohl-Dickstein",
+      "Diederik P. Kingma",
+      "Abhishek Kumar",
+      "Stefano Ermon",
+      "Ben Poole"
+    ]
+  },
+  {
+    "id": "arxiv:2012.09841",
+    "title": "Taming Transformers for High-Resolution Image Synthesis",
+    "url": "https://arxiv.org/abs/2012.09841",
+    "arxiv_id": "2012.09841",
+    "doi": null,
+    "year": "2020",
+    "topic_paths": [
+      "multimodal/generation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2012.09841"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p455",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2012.09841",
+    "canonical_path": "multimodal/papers/arxiv-2012.09841/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2012.09841/README.md",
+    "source_path": "multimodal/papers/arxiv-2012.09841/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Patrick Esser",
+      "Robin Rombach",
+      "Björn Ommer"
+    ]
+  },
+  {
+    "id": "arxiv:2102.09672",
+    "title": "Improved Denoising Diffusion Probabilistic Models",
+    "url": "https://arxiv.org/abs/2102.09672",
+    "arxiv_id": "2102.09672",
+    "doi": null,
+    "year": "2021",
+    "topic_paths": [
+      "multimodal/generation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2102.09672"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p456",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2102.09672",
+    "canonical_path": "multimodal/papers/arxiv-2102.09672/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2102.09672/README.md",
+    "source_path": "multimodal/papers/arxiv-2102.09672/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Alex Nichol",
+      "Prafulla Dhariwal"
+    ]
+  },
+  {
+    "id": "arxiv:2102.12092",
+    "title": "Zero-Shot Text-to-Image Generation",
+    "url": "https://arxiv.org/abs/2102.12092",
+    "arxiv_id": "2102.12092",
+    "doi": null,
+    "year": "2021",
+    "topic_paths": [
+      "multimodal/generation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2102.12092"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p457",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2102.12092",
+    "canonical_path": "multimodal/papers/arxiv-2102.12092/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2102.12092/README.md",
+    "source_path": "multimodal/papers/arxiv-2102.12092/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Aditya Ramesh",
+      "Mikhail Pavlov",
+      "Gabriel Goh",
+      "Scott Gray",
+      "Chelsea Voss",
+      "Alec Radford",
+      "Mark Chen",
+      "Ilya Sutskever"
+    ]
+  },
+  {
+    "id": "arxiv:2105.05233",
+    "title": "Diffusion Models Beat GANs on Image Synthesis",
+    "url": "https://arxiv.org/abs/2105.05233",
+    "arxiv_id": "2105.05233",
+    "doi": null,
+    "year": "2021",
+    "topic_paths": [
+      "multimodal/generation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2105.05233"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p458",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2105.05233",
+    "canonical_path": "multimodal/papers/arxiv-2105.05233/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2105.05233/README.md",
+    "source_path": "multimodal/papers/arxiv-2105.05233/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Prafulla Dhariwal",
+      "Alex Nichol"
+    ]
+  },
+  {
+    "id": "arxiv:2112.10752",
+    "title": "High-Resolution Image Synthesis with Latent Diffusion Models",
+    "url": "https://arxiv.org/abs/2112.10752",
+    "arxiv_id": "2112.10752",
+    "doi": null,
+    "year": "2021",
+    "topic_paths": [
+      "multimodal/generation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2112.10752"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p459",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2112.10752",
+    "canonical_path": "multimodal/papers/arxiv-2112.10752/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2112.10752/README.md",
+    "source_path": "multimodal/papers/arxiv-2112.10752/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Robin Rombach",
+      "Andreas Blattmann",
+      "Dominik Lorenz",
+      "Patrick Esser",
+      "Björn Ommer"
+    ]
+  },
+  {
+    "id": "arxiv:2204.06125",
+    "title": "Hierarchical Text-Conditional Image Generation with CLIP Latents",
+    "url": "https://arxiv.org/abs/2204.06125",
+    "arxiv_id": "2204.06125",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "multimodal/generation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2204.06125"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p460",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2204.06125",
+    "canonical_path": "multimodal/papers/arxiv-2204.06125/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2204.06125/README.md",
+    "source_path": "multimodal/papers/arxiv-2204.06125/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Aditya Ramesh",
+      "Prafulla Dhariwal",
+      "Alex Nichol",
+      "Casey Chu",
+      "Mark Chen"
+    ]
+  },
+  {
+    "id": "arxiv:2205.11487",
+    "title": "Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding",
+    "url": "https://arxiv.org/abs/2205.11487",
+    "arxiv_id": "2205.11487",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "multimodal/generation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2205.11487"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p461",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2205.11487",
+    "canonical_path": "multimodal/papers/arxiv-2205.11487/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2205.11487/README.md",
+    "source_path": "multimodal/papers/arxiv-2205.11487/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Chitwan Saharia",
+      "William Chan",
+      "Saurabh Saxena",
+      "Lala Li",
+      "Jay Whang",
+      "Emily Denton",
+      "Seyed Kamyar Seyed Ghasemipour",
+      "Burcu Karagol Ayan",
+      "S. Sara Mahdavi",
+      "Rapha Gontijo Lopes",
+      "等 14 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2207.12598",
+    "title": "Classifier-Free Diffusion Guidance",
+    "url": "https://arxiv.org/abs/2207.12598",
+    "arxiv_id": "2207.12598",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "multimodal/generation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2207.12598"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p462",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2207.12598",
+    "canonical_path": "multimodal/papers/arxiv-2207.12598/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2207.12598/README.md",
+    "source_path": "multimodal/papers/arxiv-2207.12598/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Jonathan Ho",
+      "Tim Salimans"
+    ]
+  },
+  {
+    "id": "arxiv:2209.03003",
+    "title": "Flow Straight and Fast: Learning to Generate and Transfer Data with Rectified Flow",
+    "url": "https://arxiv.org/abs/2209.03003",
+    "arxiv_id": "2209.03003",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "multimodal/generation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2209.03003"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p463",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2209.03003",
+    "canonical_path": "multimodal/papers/arxiv-2209.03003/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2209.03003/README.md",
+    "source_path": "multimodal/papers/arxiv-2209.03003/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Xingchao Liu",
+      "Chengyue Gong",
+      "Qiang Liu"
+    ]
+  },
+  {
+    "id": "arxiv:2210.02747",
+    "title": "Flow Matching for Generative Modeling",
+    "url": "https://arxiv.org/abs/2210.02747",
+    "arxiv_id": "2210.02747",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "multimodal/generation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2210.02747"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p464",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2210.02747",
+    "canonical_path": "multimodal/papers/arxiv-2210.02747/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2210.02747/README.md",
+    "source_path": "multimodal/papers/arxiv-2210.02747/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Yaron Lipman",
+      "Ricky T. Q. Chen",
+      "Heli Ben-Hamu",
+      "Maximilian Nickel",
+      "Matt Le"
+    ]
+  },
+  {
+    "id": "arxiv:2212.09748",
+    "title": "Scalable Diffusion Models with Transformers",
+    "url": "https://arxiv.org/abs/2212.09748",
+    "arxiv_id": "2212.09748",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "multimodal/generation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2212.09748"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p465",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2212.09748",
+    "canonical_path": "multimodal/papers/arxiv-2212.09748/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2212.09748/README.md",
+    "source_path": "multimodal/papers/arxiv-2212.09748/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "William Peebles",
+      "Saining Xie"
+    ]
+  },
+  {
+    "id": "arxiv:2311.17042",
+    "title": "Adversarial Diffusion Distillation",
+    "url": "https://arxiv.org/abs/2311.17042",
+    "arxiv_id": "2311.17042",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "multimodal/generation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2311.17042"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p466",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2311.17042",
+    "canonical_path": "multimodal/papers/arxiv-2311.17042/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2311.17042/README.md",
+    "source_path": "multimodal/papers/arxiv-2311.17042/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Axel Sauer",
+      "Dominik Lorenz",
+      "Andreas Blattmann",
+      "Robin Rombach"
+    ]
+  },
+  {
+    "id": "arxiv:2403.03206",
+    "title": "Scaling Rectified Flow Transformers for High-Resolution Image Synthesis",
+    "url": "https://arxiv.org/abs/2403.03206",
+    "arxiv_id": "2403.03206",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "multimodal/generation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2403.03206"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p467",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2403.03206",
+    "canonical_path": "multimodal/papers/arxiv-2403.03206/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2403.03206/README.md",
+    "source_path": "multimodal/papers/arxiv-2403.03206/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Patrick Esser",
+      "Sumith Kulal",
+      "Andreas Blattmann",
+      "Rahim Entezari",
+      "Jonas Müller",
+      "Harry Saini",
+      "Yam Levi",
+      "Dominik Lorenz",
+      "Axel Sauer",
+      "Frederic Boesel",
+      "等 17 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2404.02905",
+    "title": "Visual Autoregressive Modeling: Scalable Image Generation via Next-Scale Prediction",
+    "url": "https://arxiv.org/abs/2404.02905",
+    "arxiv_id": "2404.02905",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "multimodal/generation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2404.02905"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p468",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2404.02905",
+    "canonical_path": "multimodal/papers/arxiv-2404.02905/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2404.02905/README.md",
+    "source_path": "multimodal/papers/arxiv-2404.02905/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Keyu Tian",
+      "Yi Jiang",
+      "Zehuan Yuan",
+      "Bingyue Peng",
+      "Liwei Wang"
+    ]
   }
 ]

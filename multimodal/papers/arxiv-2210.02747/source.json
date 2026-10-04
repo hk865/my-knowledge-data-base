@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2210.02747",
+  "title": "Flow Matching for Generative Modeling",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2210.02747",
+  "official_url": "https://arxiv.org/abs/2210.02747",
+  "official_fulltext_url": "https://arxiv.org/pdf/2210.02747v2",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Yaron Lipman",
+    "Ricky T. Q. Chen",
+    "Heli Ben-Hamu",
+    "Maximilian Nickel",
+    "Matt Le"
+  ],
+  "year": 2022,
+  "topic_paths": [
+    "multimodal/generation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页（v2）与 PDF：Abstract、Sec.1、Sec.3–4（条件流匹配、高斯路径、OT 路径）、Sec.6.1–6.2（Table 1、训练步数、Fig.7 NFE）",
+    "mechanism_summary": "无需模拟的流匹配，回归条件路径的向量场；扩散路径为特例，OT 路径为直线恒速；ImageNet32 上达同样误差约需扩散 60% NFE；ImageNet128 无条件 FID 20.9；训练 500k 步批量 1.5k 对 ADM 4.36M 步批量 256；CIFAR-10 FID 不如以往；未声明代码。",
+    "evidence_boundary": "数字取自 arXiv PDF 正文与表格（PyMuPDF 抽取）；未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2210.02747",
+      "https://arxiv.org/pdf/2210.02747v2"
+    ],
+    "source_origin": "phase3_multimodal_generation_cards",
+    "relation_pages": [
+      "multimodal/fields/generation/README.md",
+      "multimodal/fields/generation/BASELINES.md"
+    ]
+  },
+  "modality_tags": [
+    "image"
+  ],
+  "task_tags": [
+    "generation"
+  ]
+}

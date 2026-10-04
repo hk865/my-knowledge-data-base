@@ -272,7 +272,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 ## 多模态与世界表征
 
-### 视觉表征（10）
+### 视觉表征（24）
 
 细分：视觉编码器；局部与全局表征；自监督视觉学习
 
@@ -286,8 +286,22 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [VideoMAE: Masked Autoencoders are Data-Efficient Learners for Self-Supervised Video Pre-Training](paper-catalog.md#p358)
 - [Revisiting Feature Prediction for Learning Visual Representations from Video](paper-catalog.md#p361)
 - [Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs](paper-catalog.md#p384)
+- [Histograms of Oriented Gradients for Human Detection](paper-catalog.md#p437)
+- [ImageNet Classification with Deep Convolutional Neural Networks](paper-catalog.md#p438)
+- [Deep Residual Learning for Image Recognition](paper-catalog.md#p439)
+- [Momentum Contrast for Unsupervised Visual Representation Learning](paper-catalog.md#p440)
+- [A Simple Framework for Contrastive Learning of Visual Representations](paper-catalog.md#p441)
+- [Training data-efficient image transformers & distillation through attention](paper-catalog.md#p442)
+- [How to train your ViT? Data, Augmentation, and Regularization in Vision Transformers](paper-catalog.md#p443)
+- [BEiT: BERT Pre-Training of Image Transformers](paper-catalog.md#p444)
+- [Self-Supervised Learning from Images with a Joint-Embedding Predictive Architecture](paper-catalog.md#p445)
+- [DINOv2: Learning Robust Visual Features without Supervision](paper-catalog.md#p446)
+- [Vision Transformers Need Registers](paper-catalog.md#p447)
+- [Scaling Language-Free Visual Representation Learning](paper-catalog.md#p448)
+- [Perception Encoder: The best visual embeddings are not at the output of the network](paper-catalog.md#p449)
+- [DINOv3](paper-catalog.md#p450)
 
-### 图文对齐（19）
+### 图文对齐（20）
 
 细分：联合嵌入与检索；对比学习；跨模态迁移
 
@@ -310,6 +324,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Eyes Wide Shut? Exploring the Visual Shortcomings of Multimodal LLMs](paper-catalog.md#p351)
 - [Revealing Single Frame Bias for Video-and-Language Learning](paper-catalog.md#p359)
 - [InternVideo2: Scaling Foundation Models for Multimodal Video Understanding](paper-catalog.md#p362)
+- [Perception Encoder: The best visual embeddings are not at the output of the network](paper-catalog.md#p449)
 
 ### 视觉语言模型（32）
 
@@ -348,7 +363,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [InternVL3: Exploring Advanced Training and Test-Time Recipes for Open-Source Multimodal Models](paper-catalog.md#p391)
 - [Qwen3-VL Technical Report](paper-catalog.md#p392)
 
-### 视觉生成（22）
+### 视觉生成（40）
 
 细分：图像生成；视频生成；扩散与 Flow；理解与生成的联合学习
 
@@ -374,6 +389,24 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Chameleon: Mixed-Modal Early-Fusion Foundation Models](paper-catalog.md#p383)
 - [Genie 2: A large-scale foundation world model](paper-catalog.md#p393)
 - [Genie 3: A new frontier for world models](paper-catalog.md#p394)
+- [Auto-Encoding Variational Bayes](paper-catalog.md#p451)
+- [Generative Adversarial Networks](paper-catalog.md#p452)
+- [Denoising Diffusion Implicit Models](paper-catalog.md#p453)
+- [Score-Based Generative Modeling through Stochastic Differential Equations](paper-catalog.md#p454)
+- [Taming Transformers for High-Resolution Image Synthesis](paper-catalog.md#p455)
+- [Improved Denoising Diffusion Probabilistic Models](paper-catalog.md#p456)
+- [Zero-Shot Text-to-Image Generation](paper-catalog.md#p457)
+- [Diffusion Models Beat GANs on Image Synthesis](paper-catalog.md#p458)
+- [High-Resolution Image Synthesis with Latent Diffusion Models](paper-catalog.md#p459)
+- [Hierarchical Text-Conditional Image Generation with CLIP Latents](paper-catalog.md#p460)
+- [Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding](paper-catalog.md#p461)
+- [Classifier-Free Diffusion Guidance](paper-catalog.md#p462)
+- [Flow Straight and Fast: Learning to Generate and Transfer Data with Rectified Flow](paper-catalog.md#p463)
+- [Flow Matching for Generative Modeling](paper-catalog.md#p464)
+- [Scalable Diffusion Models with Transformers](paper-catalog.md#p465)
+- [Adversarial Diffusion Distillation](paper-catalog.md#p466)
+- [Scaling Rectified Flow Transformers for High-Resolution Image Synthesis](paper-catalog.md#p467)
+- [Visual Autoregressive Modeling: Scalable Image Generation via Next-Scale Prediction](paper-catalog.md#p468)
 
 ### 视频与时序表征（29）
 
@@ -464,7 +497,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 ## 机器人与具身系统
 
-### 感知与传感融合（22）
+### 感知与传感融合（25）
 
 细分：视觉 深度 LiDAR；惯性与多传感器融合；传统 学习与混合方法
 
@@ -490,6 +523,9 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Depth Anything: Unleashing the Power of Large-Scale Unlabeled Data](paper-catalog.md#p243)
 - [FM-Fusion: Instance-aware Semantic Mapping Boosted by Vision-Language Foundation Models](paper-catalog.md#p244)
 - [Depth Anything V2](paper-catalog.md#p245)
+- [Histograms of Oriented Gradients for Human Detection](paper-catalog.md#p437)
+- [DINOv2: Learning Robust Visual Features without Supervision](paper-catalog.md#p446)
+- [DINOv3](paper-catalog.md#p450)
 
 ### 定位与建图（35）
 
@@ -867,19 +903,19 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 | 模态 \ 任务 | understanding | generation | decision | evaluation | analysis |
 |---|---:|---:|---:|---:|---:|
-| text | [55](#x-text-understanding) | [128](#x-text-generation) | [73](#x-text-decision) | [63](#x-text-evaluation) | [47](#x-text-analysis) |
-| image | [91](#x-image-understanding) | [25](#x-image-generation) | [86](#x-image-decision) | [16](#x-image-evaluation) | [10](#x-image-analysis) |
-| video | [31](#x-video-understanding) | [39](#x-video-generation) | [25](#x-video-decision) | [12](#x-video-evaluation) | [4](#x-video-analysis) |
+| text | [56](#x-text-understanding) | [134](#x-text-generation) | [73](#x-text-decision) | [63](#x-text-evaluation) | [47](#x-text-analysis) |
+| image | [105](#x-image-understanding) | [43](#x-image-generation) | [86](#x-image-decision) | [16](#x-image-evaluation) | [13](#x-image-analysis) |
+| video | [32](#x-video-understanding) | [39](#x-video-generation) | [25](#x-video-decision) | [12](#x-video-evaluation) | [4](#x-video-analysis) |
 | audio | [7](#x-audio-understanding) | [6](#x-audio-generation) | · | [1](#x-audio-evaluation) | · |
 | action | [8](#x-action-understanding) | [33](#x-action-generation) | [127](#x-action-decision) | [9](#x-action-evaluation) | [2](#x-action-analysis) |
 | state | [15](#x-state-understanding) | [2](#x-state-generation) | [64](#x-state-decision) | [1](#x-state-evaluation) | · |
 | code | [1](#x-code-understanding) | [20](#x-code-generation) | [16](#x-code-decision) | [15](#x-code-evaluation) | [7](#x-code-analysis) |
-| multimodal | [48](#x-multimodal-understanding) | [28](#x-multimodal-generation) | [39](#x-multimodal-decision) | [17](#x-multimodal-evaluation) | [7](#x-multimodal-analysis) |
+| multimodal | [50](#x-multimodal-understanding) | [34](#x-multimodal-generation) | [39](#x-multimodal-decision) | [17](#x-multimodal-evaluation) | [8](#x-multimodal-analysis) |
 | tabular | [1](#x-tabular-understanding) | · | · | · | · |
 
 <a id="x-text-understanding"></a>
 
-### text × understanding（55）
+### text × understanding（56）
 
 - [MiniLM: Deep Self-Attention Distillation for Task-Agnostic Compression of Pre-Trained Transformers](paper-catalog.md#p020)
 - [DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter](paper-catalog.md#p021)
@@ -936,10 +972,11 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Kimi-VL Technical Report](paper-catalog.md#p390)
 - [InternVL3: Exploring Advanced Training and Test-Time Recipes for Open-Source Multimodal Models](paper-catalog.md#p391)
 - [Qwen3-VL Technical Report](paper-catalog.md#p392)
+- [Perception Encoder: The best visual embeddings are not at the output of the network](paper-catalog.md#p449)
 
 <a id="x-text-generation"></a>
 
-### text × generation（128）
+### text × generation（134）
 
 - [Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters](paper-catalog.md#p001)
 - [Towards Thinking-Optimal Scaling of Test-Time Compute for LLM Reasoning](paper-catalog.md#p002)
@@ -1069,6 +1106,12 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [SWE-RL: Advancing LLM Reasoning via Reinforcement Learning on Open Software Evolution](paper-catalog.md#p426)
 - [MaintainCoder: Maintainable Code Generation Under Dynamic Requirements](paper-catalog.md#p428)
 - [Generalizing Verifiable Instruction Following](paper-catalog.md#p431)
+- [Zero-Shot Text-to-Image Generation](paper-catalog.md#p457)
+- [High-Resolution Image Synthesis with Latent Diffusion Models](paper-catalog.md#p459)
+- [Hierarchical Text-Conditional Image Generation with CLIP Latents](paper-catalog.md#p460)
+- [Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding](paper-catalog.md#p461)
+- [Adversarial Diffusion Distillation](paper-catalog.md#p466)
+- [Scaling Rectified Flow Transformers for High-Resolution Image Synthesis](paper-catalog.md#p467)
 
 <a id="x-text-decision"></a>
 
@@ -1270,7 +1313,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-image-understanding"></a>
 
-### image × understanding（91）
+### image × understanding（105）
 
 - [A High-Fidelity Digital Twin for Robotic Manipulation Based on 3D Gaussian Splatting](paper-catalog.md#p054)
 - [Language-Grounded Hierarchical Planning and Execution with Multi-Robot 3D Scene Graphs](paper-catalog.md#p055)
@@ -1363,10 +1406,24 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Kimi-VL Technical Report](paper-catalog.md#p390)
 - [InternVL3: Exploring Advanced Training and Test-Time Recipes for Open-Source Multimodal Models](paper-catalog.md#p391)
 - [Qwen3-VL Technical Report](paper-catalog.md#p392)
+- [Histograms of Oriented Gradients for Human Detection](paper-catalog.md#p437)
+- [ImageNet Classification with Deep Convolutional Neural Networks](paper-catalog.md#p438)
+- [Deep Residual Learning for Image Recognition](paper-catalog.md#p439)
+- [Momentum Contrast for Unsupervised Visual Representation Learning](paper-catalog.md#p440)
+- [A Simple Framework for Contrastive Learning of Visual Representations](paper-catalog.md#p441)
+- [Training data-efficient image transformers & distillation through attention](paper-catalog.md#p442)
+- [How to train your ViT? Data, Augmentation, and Regularization in Vision Transformers](paper-catalog.md#p443)
+- [BEiT: BERT Pre-Training of Image Transformers](paper-catalog.md#p444)
+- [Self-Supervised Learning from Images with a Joint-Embedding Predictive Architecture](paper-catalog.md#p445)
+- [DINOv2: Learning Robust Visual Features without Supervision](paper-catalog.md#p446)
+- [Vision Transformers Need Registers](paper-catalog.md#p447)
+- [Scaling Language-Free Visual Representation Learning](paper-catalog.md#p448)
+- [Perception Encoder: The best visual embeddings are not at the output of the network](paper-catalog.md#p449)
+- [DINOv3](paper-catalog.md#p450)
 
 <a id="x-image-generation"></a>
 
-### image × generation（25）
+### image × generation（43）
 
 - [DINO-WM: World Models on Pre-trained Visual Features enable Zero-shot Planning](paper-catalog.md#p046)
 - [FOCUS: Object-Centric World Models for Robotics Manipulation](paper-catalog.md#p048)
@@ -1393,6 +1450,24 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Qwen-VL: A Versatile Vision-Language Model for Understanding, Localization, Text Reading, and Beyond](paper-catalog.md#p377)
 - [Gemini: A Family of Highly Capable Multimodal Models](paper-catalog.md#p379)
 - [Chameleon: Mixed-Modal Early-Fusion Foundation Models](paper-catalog.md#p383)
+- [Auto-Encoding Variational Bayes](paper-catalog.md#p451)
+- [Generative Adversarial Networks](paper-catalog.md#p452)
+- [Denoising Diffusion Implicit Models](paper-catalog.md#p453)
+- [Score-Based Generative Modeling through Stochastic Differential Equations](paper-catalog.md#p454)
+- [Taming Transformers for High-Resolution Image Synthesis](paper-catalog.md#p455)
+- [Improved Denoising Diffusion Probabilistic Models](paper-catalog.md#p456)
+- [Zero-Shot Text-to-Image Generation](paper-catalog.md#p457)
+- [Diffusion Models Beat GANs on Image Synthesis](paper-catalog.md#p458)
+- [High-Resolution Image Synthesis with Latent Diffusion Models](paper-catalog.md#p459)
+- [Hierarchical Text-Conditional Image Generation with CLIP Latents](paper-catalog.md#p460)
+- [Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding](paper-catalog.md#p461)
+- [Classifier-Free Diffusion Guidance](paper-catalog.md#p462)
+- [Flow Straight and Fast: Learning to Generate and Transfer Data with Rectified Flow](paper-catalog.md#p463)
+- [Flow Matching for Generative Modeling](paper-catalog.md#p464)
+- [Scalable Diffusion Models with Transformers](paper-catalog.md#p465)
+- [Adversarial Diffusion Distillation](paper-catalog.md#p466)
+- [Scaling Rectified Flow Transformers for High-Resolution Image Synthesis](paper-catalog.md#p467)
+- [Visual Autoregressive Modeling: Scalable Image Generation via Next-Scale Prediction](paper-catalog.md#p468)
 
 <a id="x-image-decision"></a>
 
@@ -1508,7 +1583,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-image-analysis"></a>
 
-### image × analysis（10）
+### image × analysis（13）
 
 - [In-Datacenter Performance Analysis of a Tensor Processing Unit](paper-catalog.md#p172)
 - [The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks](paper-catalog.md#p173)
@@ -1520,10 +1595,13 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [When and why vision-language models behave like bags-of-words, and what to do about it?](paper-catalog.md#p349)
 - [Eyes Wide Shut? Exploring the Visual Shortcomings of Multimodal LLMs](paper-catalog.md#p351)
 - [Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs](paper-catalog.md#p384)
+- [How to train your ViT? Data, Augmentation, and Regularization in Vision Transformers](paper-catalog.md#p443)
+- [Vision Transformers Need Registers](paper-catalog.md#p447)
+- [Scaling Language-Free Visual Representation Learning](paper-catalog.md#p448)
 
 <a id="x-video-understanding"></a>
 
-### video × understanding（31）
+### video × understanding（32）
 
 - [SlotFormer: Unsupervised Visual Dynamics Simulation with Object-Centric Models](paper-catalog.md#p042)
 - [SAVi++: Towards End-to-End Object-Centric Learning from Real-World Videos](paper-catalog.md#p043)
@@ -1556,6 +1634,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Kimi-VL Technical Report](paper-catalog.md#p390)
 - [InternVL3: Exploring Advanced Training and Test-Time Recipes for Open-Source Multimodal Models](paper-catalog.md#p391)
 - [Qwen3-VL Technical Report](paper-catalog.md#p392)
+- [Perception Encoder: The best visual embeddings are not at the output of the network](paper-catalog.md#p449)
 
 <a id="x-video-generation"></a>
 
@@ -2078,7 +2157,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-multimodal-understanding"></a>
 
-### multimodal × understanding（48）
+### multimodal × understanding（50）
 
 - [Language-Grounded Hierarchical Planning and Execution with Multi-Robot 3D Scene Graphs](paper-catalog.md#p055)
 - [InternVLA-A1: Unifying Understanding, Generation and Action for Robotic Manipulation](paper-catalog.md#p090)
@@ -2128,10 +2207,12 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Kimi-VL Technical Report](paper-catalog.md#p390)
 - [InternVL3: Exploring Advanced Training and Test-Time Recipes for Open-Source Multimodal Models](paper-catalog.md#p391)
 - [Qwen3-VL Technical Report](paper-catalog.md#p392)
+- [Scaling Language-Free Visual Representation Learning](paper-catalog.md#p448)
+- [Perception Encoder: The best visual embeddings are not at the output of the network](paper-catalog.md#p449)
 
 <a id="x-multimodal-generation"></a>
 
-### multimodal × generation（28）
+### multimodal × generation（34）
 
 - [Object-Centric World Model for Language-Guided Manipulation](paper-catalog.md#p052)
 - [InternVLA-A1: Unifying Understanding, Generation and Action for Robotic Manipulation](paper-catalog.md#p090)
@@ -2161,6 +2242,12 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Qwen-VL: A Versatile Vision-Language Model for Understanding, Localization, Text Reading, and Beyond](paper-catalog.md#p377)
 - [Gemini: A Family of Highly Capable Multimodal Models](paper-catalog.md#p379)
 - [Chameleon: Mixed-Modal Early-Fusion Foundation Models](paper-catalog.md#p383)
+- [Zero-Shot Text-to-Image Generation](paper-catalog.md#p457)
+- [High-Resolution Image Synthesis with Latent Diffusion Models](paper-catalog.md#p459)
+- [Hierarchical Text-Conditional Image Generation with CLIP Latents](paper-catalog.md#p460)
+- [Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding](paper-catalog.md#p461)
+- [Adversarial Diffusion Distillation](paper-catalog.md#p466)
+- [Scaling Rectified Flow Transformers for High-Resolution Image Synthesis](paper-catalog.md#p467)
 
 <a id="x-multimodal-decision"></a>
 
@@ -2230,7 +2317,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-multimodal-analysis"></a>
 
-### multimodal × analysis（7）
+### multimodal × analysis（8）
 
 - [SFT Memorizes, RL Generalizes: A Comparative Study of Foundation Model Post-training](paper-catalog.md#p326)
 - [Reproducible scaling laws for contrastive language-image learning](paper-catalog.md#p339)
@@ -2239,6 +2326,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Eyes Wide Shut? Exploring the Visual Shortcomings of Multimodal LLMs](paper-catalog.md#p351)
 - [Revealing Single Frame Bias for Video-and-Language Learning](paper-catalog.md#p359)
 - [Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs](paper-catalog.md#p384)
+- [Scaling Language-Free Visual Representation Learning](paper-catalog.md#p448)
 
 <a id="x-tabular-understanding"></a>
 

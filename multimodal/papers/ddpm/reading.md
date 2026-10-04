@@ -105,17 +105,17 @@ Lsimple = E ‖ε − εθ(√ᾱₜx₀ + √(1−ᾱₜ)ε, t)‖²
 
 站在现在看，后续工作几乎逐项改掉了本篇的默认选择，只有"抽 t、加噪、回归噪声"这个训练配方留了下来。
 
-**1 采样要 1000 步。** DDIM（Song、Meng、Ermon，Stanford，[arXiv:2010.02502](https://arxiv.org/abs/2010.02502)，ICLR 2021）证明同一个训练好的模型可以换一条非马尔可夫、确定性的生成路径。其引言写道：在一张 2080 Ti 上从 DDPM 采样 5 万张 32×32 图约需 20 小时，GAN 不到 1 分钟。它的 CIFAR10 实验直接用本篇公开的检查点（附录 D），表 1 中 DDIM 用 10、50、100 步的 FID 为 13.36、4.67、4.16；按原 DDPM 方差设定只走同样步数时为 367.43、32.72、9.99，走满 1000 步才是 3.17。Improved DDPM（Nichol、Dhariwal，OpenAI，[arXiv:2102.09672](https://arxiv.org/abs/2102.09672)）让网络学反向方差（在 β 与 β̃ 之间插值，配 Lsimple + 0.001×变分下界的混合目标），100 步即接近最优 FID；同文对照发现 50 步以下 DDIM 更好（§4）。
+**1 采样要 1000 步。** DDIM（Song、Meng、Ermon，Stanford，[arXiv:2010.02502](../arxiv-2010.02502/README.md)，ICLR 2021）证明同一个训练好的模型可以换一条非马尔可夫、确定性的生成路径。其引言写道：在一张 2080 Ti 上从 DDPM 采样 5 万张 32×32 图约需 20 小时，GAN 不到 1 分钟。它的 CIFAR10 实验直接用本篇公开的检查点（附录 D），表 1 中 DDIM 用 10、50、100 步的 FID 为 13.36、4.67、4.16；按原 DDPM 方差设定只走同样步数时为 367.43、32.72、9.99，走满 1000 步才是 3.17。Improved DDPM（Nichol、Dhariwal，OpenAI，[arXiv:2102.09672](../arxiv-2102.09672/README.md)）让网络学反向方差（在 β 与 β̃ 之间插值，配 Lsimple + 0.001×变分下界的混合目标），100 步即接近最优 FID；同文对照发现 50 步以下 DDIM 更好（§4）。
 
 **2 线性日程浪费了后段。** Improved DDPM 指出，线性日程在 64×64 和 32×32 上后四分之一几乎是纯噪声，跳过反向过程开头的 20% 在 ImageNet 64×64 上 FID 几乎不变（§3.2，图 3–4），于是改用余弦日程；附录 C 又写明 256×256 上线性日程更好。`[判断]` 噪声日程的好坏依赖分辨率，本篇在 CIFAR10 上选定日程后直接迁到其他数据集（附录 B），这个隐含的坑要到下一篇才暴露；上面手算的 t = 750 信号系数 0.058 与此一致。
 
 **3 似然。** Improved DDPM 在 CIFAR10 上把似然上界从 3.70 降到 2.94 bits/dim，但这一行的 FID 为 11.47；兼顾两者的混合目标为 3.17 与 3.19（表 2）。样本质量与似然的取舍没有消失，只是被推到更好的位置。
 
-**4 像素空间太贵。** LDM（Rombach 等，[arXiv:2112.10752](https://arxiv.org/abs/2112.10752)）引言引用当时最强的像素扩散训练要 150–1000 个 V100 日、在一张 A100 上采样 5 万张约 5 天，并直接借用本篇 §4.3 的码率–失真观察：学习先做"感知压缩"（去掉高频细节），再做"语义压缩"，所以先用自编码器去掉不可感知的细节、在潜空间里扩散。同等算力下训练 200 万步后，像素扩散与 8 倍降采样潜空间的 FID 相差 38（§4.1）。
+**4 像素空间太贵。** LDM（Rombach 等，[arXiv:2112.10752](../arxiv-2112.10752/README.md)）引言引用当时最强的像素扩散训练要 150–1000 个 V100 日、在一张 A100 上采样 5 万张约 5 天，并直接借用本篇 §4.3 的码率–失真观察：学习先做"感知压缩"（去掉高频细节），再做"语义压缩"，所以先用自编码器去掉不可感知的细节、在潜空间里扩散。同等算力下训练 200 万步后，像素扩散与 8 倍降采样潜空间的 FID 相差 38（§4.1）。
 
-**5 卷积 U-Net 主干。** DiT（Peebles、Xie，[arXiv:2212.09748](https://arxiv.org/abs/2212.09748)）在 LDM 的潜空间里把 U-Net 换成 Transformer，12 个模型的计算量与 FID 相关系数 −0.93，ImageNet 256×256 类条件 FID 2.27。
+**5 卷积 U-Net 主干。** DiT（Peebles、Xie，[arXiv:2212.09748](../arxiv-2212.09748/README.md)）在 LDM 的潜空间里把 U-Net 换成 Transformer，12 个模型的计算量与 FID 相关系数 −0.93，ImageNet 256×256 类条件 FID 2.27。
 
-**6 弯曲的去噪路径。** Flow Matching（Lipman 等，Meta FAIR 与 Weizmann，[arXiv:2210.02747](https://arxiv.org/abs/2210.02747)）直接回归从噪声到数据的速度场，最优传输路径是直线，达到同样误差约只需扩散路径 60% 的网络调用；Rectified Flow（Liu、Gong、Liu，UT Austin，[arXiv:2209.03003](https://arxiv.org/abs/2209.03003)）反复把路径"拉直"，蒸馏后的 2-rectified flow 在 CIFAR10 上一步生成 FID 4.85。2024 年后的开源视频报告（HunyuanVideo、Wan、Seedance 1.0）都写明用流匹配训练，见 [Video Diffusion 精读](../video-diffusion/reading.md)"局限与后续"。
+**6 弯曲的去噪路径。** Flow Matching（Lipman 等，Meta FAIR 与 Weizmann，[arXiv:2210.02747](../arxiv-2210.02747/README.md)）直接回归从噪声到数据的速度场，最优传输路径是直线，达到同样误差约只需扩散路径 60% 的网络调用；Rectified Flow（Liu、Gong、Liu，UT Austin，[arXiv:2209.03003](../arxiv-2209.03003/README.md)）反复把路径"拉直"，蒸馏后的 2-rectified flow 在 CIFAR10 上一步生成 FID 4.85。2024 年后的开源视频报告（HunyuanVideo、Wan、Seedance 1.0）都写明用流匹配训练，见 [Video Diffusion 精读](../video-diffusion/reading.md)"局限与后续"。
 
 **7 没有条件。** 本篇只做无条件生成。类别、文字条件和引导（一句话：采样时把条件预测与无条件预测按权重外推，以多样性换保真度与条件遵循）是后来加上的，公式与数值例子见 [Video Diffusion 精读](../video-diffusion/reading.md)机制第 5 节。
 

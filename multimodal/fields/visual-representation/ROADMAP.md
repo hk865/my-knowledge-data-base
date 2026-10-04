@@ -1,23 +1,82 @@
-# 视觉表征：阅读与问题路线
+# 视觉表征路线图
 
-[回到入门](README.md) · [Baseline](BASELINES.md) · [全部文献](PAPERS.md)
+> 状态：路线图 · v2
 
-## 第一步：限定问题
+[入门页](README.md) · [Baseline](BASELINES.md) · [论文目录](PAPERS.md)
 
-视觉表征把像素转成后续任务可用的特征。要把网络架构与学习目标分开：同一个视觉Transformer可以用标签监督、遮挡重建或自蒸馏学习。
+结论：开始前先读入门页的两节，弄清好坏由谁定义；之后六步，按"有监督主干 → 拿掉标签 → 换架构时分清配方 → 同一骨干上比信号 → 冻结即用与它的代价 → 当作 VLM 的眼睛"排列。每一步都配一个能手算的检验题，数字都出自原文。
 
-## 第二步：沿具体文章拆机制
+## 开始前：先弄清"好"由谁定义
 
-[An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](../../papers/vit/README.md) → [Masked Autoencoders Are Scalable Vision Learners](../../papers/mae/README.md) → [Emerging Properties in Self-Supervised Vision Transformers](../../papers/dino/README.md)
+读[入门页](README.md)"从任务看"与"从测量看"两节，再读 [Baseline 页](BASELINES.md)的"跨论文比较前的检查单"。
 
-这个次序是教学建议，表示先理解的概念与后续比较对象，不表示作者之间存在直接技术继承。
+为什么在这里：这个方向没有专属 benchmark，后面每一篇的数字都要先问"在哪个协议下"。不先建立这个习惯，读到 MAE 的 87.8% 和 DINO 的 78.3% 时会以为前者更好，其实一个是微调、一个是 k 近邻。
 
-## 第三步：做能检验理解的工作
+检验：同为 ViT-L，MoCo v3 线性评测 77.6%、MAE 75.8%；全量微调 MAE 85.9%、MoCo v3 84.1%。分别算出两种协议下 MAE 减 MoCo v3 的差（−1.8 与 +1.8 个百分点），再用一句话说出 MAE 作者对这个翻转的解释（线性评测错过了强但非线性的特征）。
 
-把一张图分成patch，再比较三个目标分别要求模型预测什么、哪些分支参与梯度更新。
+## 第 1 步：有监督主干（HOG → AlexNet → ResNet）
 
-## 第四步：保留边界
+读 [HOG](../../papers/hog/README.md) → [AlexNet](../../papers/alexnet/README.md) → [ResNet](../../papers/arxiv-1512.03385/README.md)；机制部分见 [CNN 讲义](../../../foundations/lessons/11-cnn.md)第 6 节。
 
-ViT是架构；MAE和DINO体现不同学习信号。好看的特征可视化不等于所有下游任务都更好。
+为什么在这里：HOG 是"固定特征 + 线性分类器"的原点，线性评测就是把它的特征换成学到的；ResNet-50 是 Baseline 页第一个基线，后面所有自监督论文的第一行对照。读这三篇能看清改变局面的先是数据与算力，然后才是架构。
 
-记录原文支持的事实、自己的解释和仍需实验验证的假设；没有独立运行实验时，不写成已复现。
+检验：
+- HOG 用一维模板 [−1, 0, 1] 求水平梯度。一行像素是 [10, 20, 50]，中间像素的水平梯度是多少（50 − 10 = 40）？为什么作者发现不做平滑、用最简单的模板反而最好？
+- ResNet Table 2 的 ImageNet 验证集 top-1 错误率：普通网络 18 层 27.94%、34 层 28.54%；残差网络 18 层 27.88%、34 层 25.03%。分别算"加深 16 层"带来的变化（普通网络变差 0.60，残差网络变好 2.85 个百分点），说明为什么这不是过拟合（34 层普通网络的训练误差也更高）。
+
+## 第 2 步：拿掉标签（MoCo、SimCLR）
+
+读 [MoCo](../../papers/arxiv-1911.05722/README.md) 与 [SimCLR](../../papers/arxiv-2002.05709/README.md)，对照着读。
+
+为什么在这里：这是训练信号第一次从人工标签移到图像本身，也是"线性评测"与"迁移"两种协议开始给出不同排序的地方。两篇解决的是同一个问题（负样本从哪里来），选择相反：MoCo 用队列，SimCLR 用大批量。
+
+检验：
+- SimCLR 批大小 N = 8192 时，每个正样本对有多少个负样本（2(N − 1) = 16382）？批大小 256 时呢（510）？MoCo 批大小 256、队列 K = 65536，负样本是 SimCLR 同批大小时的多少倍（65536 / 510 ≈ 128）？
+- 标准宽度 ResNet-50 上，SimCLR 线性 69.3%、有监督 76.3%，差 7.0 个百分点；MoCo 线性 60.6%，却在 7 个检测与分割任务上超过有监督。用一句话说明这两件事为什么不矛盾。
+
+## 第 3 步：换架构时分清配方（ViT → DeiT → AugReg）
+
+读 [ViT 精读](../../papers/vit/reading.md) → [DeiT](../../papers/arxiv-2012.12877/README.md) → [AugReg](../../papers/arxiv-2106.10270/README.md)，旁读[观点页：CNN 与 Transformer](../../../perspectives/cnn-vs-transformer.md)。
+
+为什么在这里：ViT 是后面所有自监督方法共用的骨干，它"需要大数据"的结论一年内就被 DeiT 与 AugReg 部分改写。先学会把"架构的差别"和"配方、数据的差别"分开，第 4 步在同一个 ViT 上比较信号时才不会混。
+
+检验：
+- 224×224 的图切成 16×16 的块，有多少个块（(224 / 16)² = 14² = 196），加 [CLS] 后序列长度是多少（197）？384 分辨率呢（24² + 1 = 577）？自注意力的计算随长度平方增长，384 分辨率大约是 224 的几倍（(577 / 197)² ≈ 8.6）？
+- DeiT Table 8：默认配方 81.8%；换成 SGD 74.5%（−7.3）；去掉 Mixup 与 CutMix 75.8%（−6.0）；去掉随机擦除 4.3%（不收敛）。ViT 原文只调了三个正则化参数、没有调数据增强，这说明它的哪个结论需要打折扣？
+
+## 第 4 步：同一骨干上比训练信号（BEiT → MAE → DINO → I-JEPA）
+
+读 [BEiT](../../papers/arxiv-2106.08254/README.md) → [MAE 精读](../../papers/mae/reading.md) → [DINO 精读](../../papers/dino/reading.md) → [I-JEPA](../../papers/arxiv-2301.08243/README.md)；目标函数的统一视角见[自监督与生成目标讲义](../../../foundations/lessons/modules/objectives/03-pretraining-objectives.md)第 5–9 节。
+
+为什么在这里：第 3 步固定了骨干，这一步只变信号。四篇的预测对象依次是离散视觉 token、像素、教师的输出分布、目标块的表示，正好覆盖 Baseline 页"训练信号"各行；它们在线性评测与微调上的排名差别，是"开始前"那道题中排名翻转的来源。
+
+检验：
+- MAE 遮住 75% 的块：196 个块中编码器只处理几个（196 × 0.25 = 49）？若只看注意力（随长度平方增长），编码器的注意力计算是处理全部块的几分之一（(49 / 196)² = 1/16）？
+- DINO ViT-S/8：224 / 8 = 28，28² + 1 = 785 个 token；ViT-S/16 为 197 个。吞吐 180 对 1007 图/秒，比值约 5.6；token 数之比约 4.0，注意力按平方算约 15.9。为什么实际吞吐比值落在两者之间？
+- BEiT-B 线性 56.7%、微调 83.2%；MoCo v3-B 线性 76.7%、微调 83.2%。算两者在两种协议下的差（20.0 与 0），并说出 BEiT 作者给的原因（没有预训练全局聚合）。
+- I-JEPA 在 Clevr 距离预测上 72.4，DINO 53.4，MAE 72.4。为什么依赖颜色抖动、随机裁剪这类增强的方法在这里吃亏？
+
+## 第 5 步：冻结即用与它的代价（CLIP → DINOv2 → Registers → DINOv3）
+
+读 [CLIP 精读](../../papers/clip/reading.md) → [DINOv2](../../papers/arxiv-2304.07193/README.md) → [Registers](../../papers/arxiv-2309.16588/README.md) → [DINOv3](../../papers/arxiv-2508.10104/README.md)。
+
+为什么在这里：使用方式从"逐任务微调"移到"一个冻结编码器服务多个任务"（入门页趋势 3）。DINO 系三代正好是"站在现在看过去"的样本：每一代都在修上一代扩大规模后才暴露的问题（筛选数据、高范数伪影、密集特征退化）。
+
+检验：
+- ViT-g/14 在 224 分辨率下有 (224 / 14)² = 256 个块。约 2% 是伪影 token，大约几个（约 5 个）？加 4 个寄存器后序列从 257 变成 261，token 数增加约 1.6%（论文报告 FLOPs 增加不到 2%）。
+- LOST 物体发现在 DINOv2 上 VOC2007 corloc 35.3，加寄存器后 55.4，原始 DINO 为 61.9。加寄存器收回了 DINOv2 相对 DINO 差距的百分之多少（(55.4 − 35.3) / (61.9 − 35.3) ≈ 76%）？
+- DINOv2 的筛选实验：同样迭代数，未筛选数据 ImageNet 线性 83.3、iNaturalist 68.0；筛选后 85.8、82.3。哪个任务受益大得多（iNaturalist +14.3 对 ImageNet +2.5）？为什么细粒度任务对数据分布更敏感？
+
+## 第 6 步：当作 VLM 的眼睛（LLaVA → MMVP → Cambrian-1 → Web-SSL → Perception Encoder）
+
+读 [LLaVA](../../papers/llava/README.md) 第 4–5 节 → [MMVP](../../papers/arxiv-2401.06209/README.md) → [Cambrian-1](../../papers/arxiv-2406.16860/README.md) → [Web-SSL](../../papers/arxiv-2504.01017/README.md) → [Perception Encoder](../../papers/arxiv-2504.13181/README.md)，旁读 [SigLIP 2](../../papers/arxiv-2502.14786/README.md)。之后可以接 [VLM 方向](../vlm/README.md)。
+
+为什么在这里：这是最新的评测协议（经语言模型的问答），也是"与语言对齐"趋势的检验场。五篇依次回答：取哪一层（LLaVA）、CLIP 的盲区在哪（MMVP）、哪些 benchmark 真在测视觉（Cambrian-1）、差距来自语言还是数据（Web-SSL）、对比学习的通用特征藏在哪一层（Perception Encoder）。
+
+检验：
+- Web-SSL 只保留含图表、表格、文档的 1.3% 图像：20 亿 × 1.3% ≈ 2600 万张；训练仍见 20 亿个样本，相当于每张图被看多少遍（约 77 遍）？这个子集上的 2B 模型 OCR 与图表问答比全量数据的 CLIP 高 4.3 个百分点，它支持还是反驳"OCR 能力必须来自语言监督"？
+- Perception Encoder 的 PElang 取第 47 层（共 50 层），丢掉最后 3 层；LLaVA 取倒数第二层，ScienceQA 90.92% 对 89.96%。用"训练目标只约束输出层"解释为什么两者都不取最后一层。
+
+## 读完之后
+
+把 [Baseline 页](BASELINES.md)"后续工作在改哪个部件"一表从上到下过一遍：每一行能说出它改的是五个部件中的哪一个、代价从哪篇后续工作里看出来，这一方向就读通了。2026 年的新材料（[V-JEPA 2.1](https://arxiv.org/abs/2603.14482)、[C-RADIOv4](https://arxiv.org/abs/2601.17237)、[RADIO1D](https://arxiv.org/abs/2607.03624)）可以用同一张表定位：前两者改训练信号，后者改读出接口。

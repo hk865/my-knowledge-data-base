@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2012.12877",
+  "title": "Training data-efficient image transformers & distillation through attention",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2012.12877",
+  "official_url": "https://arxiv.org/abs/2012.12877",
+  "official_fulltext_url": "https://arxiv.org/pdf/2012.12877v2",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Hugo Touvron",
+    "Matthieu Cord",
+    "Matthijs Douze",
+    "Francisco Massa",
+    "Alexandre Sablayrolles",
+    "Hervé Jégou"
+  ],
+  "year": 2020,
+  "topic_paths": [
+    "multimodal/visual-representation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv v2 PDF：Abstract、§1、§5.1–5.2（蒸馏、CNN 教师、Table 2–5）、§6（Table 8 训练方法消融，对照页面图像核对，Table 9 超参）、§7 结论",
+    "mechanism_summary": "ViT-B 结构只用 ImageNet-1K，8 卡 53 小时；DeiT-B 81.8（224）/83.1（384）；Table 8：无随机擦除 4.3*、无随机深度 3.4*、无 Mixup+CutMix 75.8、SGD 74.5；蒸馏 token + RegNetY-16GF 教师（82.9）最好 85.2，对 JFT ViT-B 384 的 84.15；CNN 教师优于 Transformer 教师。",
+    "evidence_boundary": "数字取自原文 PDF 正文与表格（PyMuPDF 抽取，个别表格对照页面图像核对）；未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2012.12877",
+      "https://arxiv.org/pdf/2012.12877v2"
+    ],
+    "source_origin": "phase3_multimodal_visual_representation_cards",
+    "relation_pages": [
+      "multimodal/fields/visual-representation/README.md",
+      "multimodal/fields/visual-representation/BASELINES.md"
+    ]
+  },
+  "modality_tags": [
+    "image"
+  ],
+  "task_tags": [
+    "understanding"
+  ],
+  "venue_note": "ICML 2021，见 PMLR v139 页面 https://proceedings.mlr.press/v139/touvron21a.html"
+}

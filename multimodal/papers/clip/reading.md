@@ -189,7 +189,7 @@ WIT 包含 4 亿个网上图像–文本对。收集时使用约 50 万个查询
 
 **3. 一个全局向量装不下组合关系。** ARO（Yuksekgonul 等，ICLR 2023，Stanford，[arXiv:2210.01936](../arxiv-2210.01936/README.md)）用 5 万多个测试检查属性绑定、关系与词序：两句话选一句，随机水平 50%，CLIP 在属性上 62%，空间关系 56%，动词关系 61%（§2.3）。作者进一步说明，在现有检索数据集上不用词序和组合信息也能做好检索，而对比预训练恰恰在优化这种检索，所以模型没有动力学组合信息（§3）；在训练中加入交换名词、形容词或动词短语得到的"组合难负例"，就能明显改善（§4，NegCLIP）。`[判断]` 第三节"两座塔只在最后点积"的结构，加上第四节的批内目标，共同造成了这个短板。
 
-**4. 做视觉语言模型的眼睛时有盲区。** MMVP（Tong 等 2024，NYU 等，[arXiv:2401.06209](../arxiv-2401.06209/README.md)）收集 CLIP 余弦相似度高于 0.95、DINOv2 相似度低于 0.6 的图像对，设计了 150 对、300 个问题；包括 GPT-4V 在内的多模态大模型经常答错，难住 CLIP 的视觉模式与难住大模型的高度相关；把自监督的 DINOv2 特征混入视觉输入，定位能力明显提升。Perception Encoder（Bolya 等 2025，Meta FAIR，[arXiv:2504.13181](https://arxiv.org/abs/2504.13181)）的标题直说"最好的视觉嵌入不在网络的输出层"：对比训练得到的通用特征藏在中间层，要额外对齐才能拿出来。[LLaVA](../llava/README.md) 取 CLIP 倒数第二层而不是最后一层，是同一现象在下游的用法。Web-SSL（Fan 等 2025，[arXiv:2504.01017](https://arxiv.org/abs/2504.01017)）在同一份 MetaCLIP 数据上比较：CLIP 在 OCR 与图表类问答见长，但模型增大到中等规模后提升趋于饱和；纯视觉自监督模型扩到 7B 后追平（图 3）。
+**4. 做视觉语言模型的眼睛时有盲区。** MMVP（Tong 等 2024，NYU 等，[arXiv:2401.06209](../arxiv-2401.06209/README.md)）收集 CLIP 余弦相似度高于 0.95、DINOv2 相似度低于 0.6 的图像对，设计了 150 对、300 个问题；包括 GPT-4V 在内的多模态大模型经常答错，难住 CLIP 的视觉模式与难住大模型的高度相关；把自监督的 DINOv2 特征混入视觉输入，定位能力明显提升。Perception Encoder（Bolya 等 2025，Meta FAIR，[arXiv:2504.13181](../arxiv-2504.13181/README.md)）的标题直说"最好的视觉嵌入不在网络的输出层"：对比训练得到的通用特征藏在中间层，要额外对齐才能拿出来。[LLaVA](../llava/README.md) 取 CLIP 倒数第二层而不是最后一层，是同一现象在下游的用法。Web-SSL（Fan 等 2025，[arXiv:2504.01017](../arxiv-2504.01017/README.md)）在同一份 MetaCLIP 数据上比较：CLIP 在 OCR 与图表类问答见长，但模型增大到中等规模后提升趋于饱和；纯视觉自监督模型扩到 7B 后追平（图 3）。
 
 **5. 密集特征与原生分辨率靠后续补。** SigLIP 2（Tschannen 等 2025，Google DeepMind，[arXiv:2502.14786](../arxiv-2502.14786/README.md)）在图文对比之外加入基于描述生成的预训练、自蒸馏与遮蔽预测，并做在线数据筛选，改善定位与分割、深度等密集任务；NaFlex 变体支持多分辨率并保持原始宽高比（摘要、§1）。Registers 论文发现 OpenCLIP 的大 ViT 也有高范数伪影 token（[DINO 精读](../dino/reading.md)"局限与后续"第 3 条）。`[判断]` CLIP 式编码器后来的改进，基本都在往"只对齐全局语义"的目标上补局部信息。
 
@@ -215,7 +215,7 @@ WIT 包含 4 亿个网上图像–文本对。收集时使用约 50 万个查询
 
 **未核实 / 待验证**
 
-- MetaCLIP、DataComp、OpenCLIP 规模律、SigLIP、ARO、MMVP、Perception Encoder、Web-SSL、SigLIP 2 只核对了本页引用的段落与表格；它们在本库还没有文献卡。
+- MetaCLIP、DataComp、OpenCLIP 规模律、SigLIP、ARO、MMVP、Perception Encoder、Web-SSL、SigLIP 2 只核对了本页引用的段落与表格；文献卡见正文中的链接。
 - MetaCLIP 引用的是 arXiv v6（2025 年 11 月），数字以该版本为准。
 - SigLIP 示例中"logit = 分数 + b"是本页为手算采用的写法；原文式 1 的印刷形式与此等价与否未逐字核对。
 - 前作（Visual N-Grams、VirTex、ConVIRT、N-pair loss、InfoNCE）只按 CLIP 原文 §2 的描述引用。

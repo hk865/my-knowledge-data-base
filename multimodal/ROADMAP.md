@@ -13,7 +13,6 @@
 
 ## 已有完整技术路线
 
-- [visual-baselines](../docs/roadmaps/visual-baselines.md)
 - [embodied-baselines](../docs/roadmaps/embodied-baselines.md)
 
 路线中的相邻关系通常表示学习顺序、共享问题或可比较的机制。除非原文与证据明确说明，不解释为直接算法继承。

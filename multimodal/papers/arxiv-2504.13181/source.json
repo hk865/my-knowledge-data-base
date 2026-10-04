@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2504.13181",
+  "title": "Perception Encoder: The best visual embeddings are not at the output of the network",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2504.13181",
+  "official_url": "https://arxiv.org/abs/2504.13181",
+  "official_fulltext_url": "https://arxiv.org/pdf/2504.13181v2",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Daniel Bolya",
+    "Po-Yao Huang",
+    "Peize Sun",
+    "Jang Hyun Cho",
+    "Andrea Madotto",
+    "Chen Wei",
+    "Tengyu Ma",
+    "Jiale Zhi",
+    "Jathushan Rajasegaran",
+    "Hanoona Rasheed",
+    "等 18 位作者"
+  ],
+  "year": 2025,
+  "topic_paths": [
+    "multimodal/visual-representation",
+    "multimodal/alignment"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv v2 PDF：Abstract、§1、§2.1（对比配方逐项消融）、§2.2–2.3（5.4B 图文、2B 模型、视频数据引擎）、§3（逐层冻结特征分析 Fig.8–10，对齐问题）、§4（PElang 第 47 层）、§5（PEspatial：对齐第 41 层与 SAM 2.1）、§7 结论",
+    "mechanism_summary": "强化的纯对比配方（渐进分辨率、LAMB、RoPE、注意力池化等），5.4B 图文、2B 参数 PEcore，视频合成描述微调；中间层特征可比 AIMv2（语言）与 DINOv2（空间），最后一层变差；PElang 用第 47/50 层，PEspatial 对齐第 41 层与 SAM 2.1；零样本 IN 鲁棒性 86.6、K400 76.9；DocVQA 94.6（8B LLM）；COCO 66.0。",
+    "evidence_boundary": "数字取自原文 PDF 正文与表格（PyMuPDF 抽取，个别表格对照页面图像核对）；未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2504.13181",
+      "https://arxiv.org/pdf/2504.13181v2"
+    ],
+    "source_origin": "phase3_multimodal_visual_representation_cards",
+    "relation_pages": [
+      "multimodal/fields/visual-representation/README.md",
+      "multimodal/fields/visual-representation/BASELINES.md"
+    ]
+  },
+  "modality_tags": [
+    "image",
+    "video",
+    "text",
+    "multimodal"
+  ],
+  "task_tags": [
+    "understanding"
+  ]
+}

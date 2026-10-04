@@ -1,6 +1,6 @@
 # 视觉表征
 
-> 状态：领域入门页 · v2 · 依据 [synthesis.csv](synthesis.csv)（28 篇）
+> 状态：领域入门页 · v2 · 依据 [synthesis.csv](synthesis.csv)（36 篇）
 >
 > 速览：
 > - 视觉表征是编码器对一张图的输出 z = f(x)；这个方向没有专属 benchmark，好坏由使用它的任务和评测协议定义，换一个协议排名会翻转（例如 ViT-L 上 MAE 的线性评测低于 MoCo v3，全量微调却高于它）。
@@ -58,7 +58,7 @@
 
 **性质诊断**换一个问法：先构造专门的测试，问表征依赖哪种线索。Geirhos 等（2019，ICLR，University of Tübingen）用风格迁移把一张图的形状和另一张图的纹理合成"线索冲突"图像，让人和 CNN 分类。人类 95.9% 的判断按形状；ImageNet 训练的 ResNet-50 只有 22.1% 按形状（VGG-16 为 17.2%，AlexNet 为 42.9%）。把训练集换成用风格迁移去掉局部纹理线索的 Stylized-ImageNet 后，ResNet-50 按形状的比例升到 81%；与 ImageNet 混合训练的 Shape-ResNet 作为 Faster R-CNN（R-CNN 的后续检测器）主干，VOC2007 检测 mAP50（预测框与真值重叠过半即算检出时的平均精度）从 70.7 升到 75.1，ImageNet-C 平均损坏误差从 76.7 降到 69.3。作者据此认为纹理偏向由 ImageNet 训练数据诱导，而非由 CNN 结构决定。所以表征依赖什么线索，要靠这类专门构造的诊断测试来回答。
 
-benchmark 的替换就是这个方向目标的迁移：MIT 行人库（HOG 近乎完美分离后饱和）→ INRIA 行人库 → PASCAL VOC 检测 → ILSVRC 分类 → COCO 检测、ADE20K 分割等迁移任务 → 30 多个数据集上的零样本（CLIP）→ 冻结特征同时覆盖图像级与像素级任务（DINOv2）。跨论文比较时，骨干与分辨率、预训练数据（是否非公开、是否带文本或标签）、训练计算量和评测协议都要对齐，逐项清单见[视觉基础路线图](../../../docs/roadmaps/visual-baselines.md)第四节。
+benchmark 的替换就是这个方向目标的迁移：MIT 行人库（HOG 近乎完美分离后饱和）→ INRIA 行人库 → PASCAL VOC 检测 → ILSVRC 分类 → COCO 检测、ADE20K 分割等迁移任务 → 30 多个数据集上的零样本（CLIP）→ 冻结特征同时覆盖图像级与像素级任务（DINOv2）。跨论文比较时，骨干与分辨率、预训练数据（是否非公开、是否带文本或标签）、训练计算量和评测协议都要对齐，逐项清单见 [Baseline 页的检查单](BASELINES.md#跨论文比较前的检查单)。
 
 ## 从内部看
 
@@ -140,7 +140,7 @@ benchmark 的替换就是这个方向目标的迁移：MIT 行人库（HOG 近�
 ## 当前开放问题
 
 - **架构的差别与数据、训练配方、计算量怎样分开？** ViT 与 ConvNeXt 两组结果都说明，主干之争必须和数据规模、训练配方一起看。入口：[ViT 精读](../../papers/vit/reading.md)、[ConvNeXt 原文](https://arxiv.org/abs/2201.03545)、[观点页：CNN 与 Transformer](../../../perspectives/cnn-vs-transformer.md)。
-- **哪种训练信号最适合哪类下游，一个编码器能否兼顾？** 遮蔽重建、对比学习、自蒸馏和图文对比在线性评测、微调、检索、局部对应上各有长处；DINOv2 押注单个冻结编码器，OpenVLA 选择拼接两个。入口：[MAE 精读](../../papers/mae/reading.md)、[DINO 精读](../../papers/dino/reading.md)、[CLIP 精读](../../papers/clip/reading.md)、[DINOv2 原文](https://arxiv.org/abs/2304.07193)。
+- **哪种训练信号最适合哪类下游，一个编码器能否兼顾？** 遮蔽重建、对比学习、自蒸馏和图文对比在线性评测、微调、检索、局部对应上各有长处；DINOv2 押注单个冻结编码器，OpenVLA 选择拼接两个。入口：[MAE 精读](../../papers/mae/reading.md)、[DINO 精读](../../papers/dino/reading.md)、[CLIP 精读](../../papers/clip/reading.md)、[DINOv2 原文](../../papers/arxiv-2304.07193/README.md)。
 - **网上预训练的视觉特征够不够支撑机器人？** OpenVLA 的消融中，冻结视觉编码器使成功率从约 70% 降到 47%（较小的 SigLIP-only 变体上的结果）；世界模型一侧则在比较以重建为目标和以语义为目标的潜空间。入口：[OpenVLA 精读](../../../robotics-embodied/papers/openvla/reading.md)、[DINO-WM](../../papers/arxiv-2411.04983/README.md)、[Reconstruction or Semantics? What Makes a Latent Space Useful for Robotic World Models](../../papers/arxiv-2605.06388/README.md)，以及[世界模型方向](../world-models/README.md)。
 - **视觉模型内部的机制能否推进到干预层面？** 视觉一侧的证据目前以可视化、注意力距离、CKA 和探针为主，语言一侧已经能定位并编辑事实所在的 MLP。ViT 的 MLP 能否读成键值记忆、视觉中有没有可干预的电路，入口见[模型科学](../../../cross-domain/fields/model-science/README.md)的"不同模态的差异"与开放问题两节。
 
@@ -153,7 +153,7 @@ benchmark 的替换就是这个方向目标的迁移：MIT 行人库（HOG 近�
 5. [CLIP 精读](../../papers/clip/README.md)：从单模态转到图文配对，理解零样本分类怎样由文本编码器生成分类权重。
 6. [模型科学](../../../cross-domain/fields/model-science/README.md)的"不同模态的差异"一节：把"从内部看"放回视觉与语言的对照中。
 
-读完 2–4 篇后可以做一个检验：把同一张图切成块，分别写出监督分类、MAE、DINO 三种目标要求模型预测什么、哪些分支参与梯度更新。按问题组织的阅读步骤见[路线图](ROADMAP.md)，四篇的横向对照表在[视觉基础路线图](../../../docs/roadmaps/visual-baselines.md)，本方向收录的全部论文见[论文目录](PAPERS.md)。
+读完 2–4 篇后可以做一个检验：把同一张图切成块，分别写出监督分类、MAE、DINO 三种目标要求模型预测什么、哪些分支参与梯度更新。按问题组织的阅读步骤见[路线图](ROADMAP.md)，四篇的横向对照表在 [Baseline 页](BASELINES.md#四篇奠基论文的分类轴)，本方向收录的全部论文见[论文目录](PAPERS.md)。
 
 ## 批注
 

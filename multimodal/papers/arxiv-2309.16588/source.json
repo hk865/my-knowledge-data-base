@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2309.16588",
+  "title": "Vision Transformers Need Registers",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2309.16588",
+  "official_url": "https://arxiv.org/abs/2309.16588",
+  "official_fulltext_url": "https://arxiv.org/pdf/2309.16588v2",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Timothée Darcet",
+    "Maxime Oquab",
+    "Julien Mairal",
+    "Piotr Bojanowski"
+  ],
+  "year": 2023,
+  "topic_paths": [
+    "multimodal/visual-representation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv v2（ICLR 2024 版）PDF：Abstract、§1、§2（高范数 token：约 2%、约 10 倍范数、ViT-L 及以上、训练约三分之一后）、§3.2（寄存器数量，Fig.8）、§3.3（LOST，Table 3）、§5 结论、附录（FLOPs 增加不到 2%；MAE 无伪影）",
+    "mechanism_summary": "DeiT-III、OpenCLIP、DINOv2 大 ViT 在背景处出现约 2%、范数约 10 倍的 token，存放全局信息；加 4 个寄存器 token 消除，FLOPs 增加 <2%；LOST VOC07 corloc 35.3→55.4；1 个寄存器拿到密集任务大部分收益。",
+    "evidence_boundary": "数字取自原文 PDF 正文与表格（PyMuPDF 抽取，个别表格对照页面图像核对）；未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2309.16588",
+      "https://arxiv.org/pdf/2309.16588v2"
+    ],
+    "source_origin": "phase3_multimodal_visual_representation_cards",
+    "relation_pages": [
+      "multimodal/fields/visual-representation/README.md",
+      "multimodal/fields/visual-representation/BASELINES.md"
+    ]
+  },
+  "modality_tags": [
+    "image"
+  ],
+  "task_tags": [
+    "understanding",
+    "analysis"
+  ]
+}
