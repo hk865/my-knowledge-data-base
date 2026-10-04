@@ -1,27 +1,49 @@
-# 运动控制与腿足运动：阅读与问题路线
+# 运动控制与腿足运动：学习路线
 
 [回到入门](README.md) · [Baseline](BASELINES.md) · [全部文献](PAPERS.md)
 
-## 第一步：限定问题
+五步。前两步建立两条基线，第三步看它们各自在真机上坏在哪里，第四步看两条路线怎样合流，第五步回到自己的问题。
 
-本方向已经有可独立阅读的领域讲解，按具体问题解释模块职责、方法边界与研究接口。此页把领域讲解、已有baseline、阅读路线和单篇论文目录汇到一起。
+## 第一步：把接口和误差层次理顺
 
-## 第二步：沿具体文章拆机制
+读[运动控制讲义](../control-locomotion.md)第 5–10 节，以及 [05b 强化学习](../../../foundations/lessons/05b-reinforcement-learning.md)第 3–7 节。
 
-[Dynamic Locomotion in the MIT Cheetah 3 Through Convex Model-Predictive Control](../../papers/convex-mpc/README.md) → [RMA Rapid Motor Adaptation for Legged Robots](../../papers/rma/README.md) → [Proximal Policy Optimization Algorithms](../../../llm/papers/ppo/README.md)
+为什么在这里：后面每篇论文都在改"观测 → 动作接口 → 执行"链条上的某一层。不先分清动作是关节角、接触力还是落脚点，就看不出一篇论文改的是哪个部件。
 
-这个次序是教学建议，表示先理解的概念与后续比较对象，不表示作者之间存在直接技术继承。
+## 第二步：读两条基线
 
-## 第三步：做能检验理解的工作
+先读 [Convex MPC 精读](../../papers/convex-mpc/reading.md)，再读 [Rudin 2021](../../papers/arxiv-2109.11978/README.md)，对照 [PPO 精读](../../../llm/papers/ppo/reading.md)。
 
-先阅读已有领域讲解，再从下面的阅读顺序中选择一篇，与自己的任务输入、输出和评估条件对照。
+为什么在这里：
+- MPC 把接触时序、摩擦、地形当作已知；
+- 仿真 RL 流水线把它们交给随机化和课程。
 
-## 第四步：保留边界
+记下两者各自假设了什么，后面的失败几乎都出在这些假设上。
 
-真实机器人中的观察、状态估计、计划与执行各有误差。跨方向的方法关联不表示相同实验环境或直接历史继承。
+## 第三步：沿 sim-to-real 的差距读学习控制
 
-记录原文支持的事实、自己的解释和仍需实验验证的假设；没有独立运行实验时，不写成已复现。
+按顺序读：
+1. [Hwangbo 2019](../../papers/arxiv-1901.08652/README.md)：执行器差距；
+2. [Lee 2020](../../papers/arxiv-2010.11251/README.md) 与 [RMA 精读](../../papers/rma/reading.md)：接触与地面差距，以及盲走的极限；
+3. [Miki 2022](../../papers/arxiv-2201.08117/README.md) 与 [Agarwal 2022](../../papers/url-https-proceedings.mlr.press-v205-agarwal23a-agarwal23a/README.md)：感知差距。
 
-## 2026年10月3日：风险与恢复
+为什么在这里：这四篇各修一项差距，又各自暴露出下一项。读的时候对照[入门页](README.md)的"sim-to-real 的差距从哪里来"一表，把每篇的失败场景归到对应的行。
 
-[新增文献卡](PAPERS.md)分开对照鲁棒步态、跌倒起身、风险敏感策略和主动恢复。FastRLAP实证为RC车，Recovery RL关注约束安全，不能视为四足持续卡死的现成修复。先明确失败状态、有效进展和退出恢复条件，再提出可证伪的实验。
+## 第四步：看两条路线怎样合流
+
+先读 [DTC](../../papers/arxiv-2309.15462/README.md)，再读 [AME-1](../../papers/arxiv-2506.09588/README.md) 与 [AME-2](../../papers/arxiv-2601.08485/README.md)；可选 [Extreme Parkour](../../papers/arxiv-2309.14341/README.md) 作为不用规划器的对照。
+
+为什么在这里：只有知道纯 RL 在稀疏落脚点上学不会（DTC 的引言）、纯模型方法在打滑和遮挡下会摔（DTC 图 4），才能理解为什么同一个团队把规划放回来，又把它蒸馏进注意力。
+
+## 第五步：回到恢复与鲁棒
+
+读[四足故障后恢复思考笔记](../../../perspectives/notes/quadruped-recovery.md)，按笔记"待验证"第 1–3 步补齐实验记录。相关论文按需读：
+- 先读 [Lee 2019](../../papers/arxiv-1901.07517/README.md)（倒地起身）与 [CaT](../../papers/arxiv-2403.18765/README.md)（失败后不重置）；
+- 再读 [Shi 2024](../../papers/arxiv-2405.12424/README.md)（主动搜长尾失败）。
+
+为什么在这里：恢复问题依赖前四步的全部概念，包括终止条件怎样设、策略看到了什么、仿真里有没有这种状态。前四步读完，笔记里第 8 条的排查顺序就有了论文依据。
+
+## 可选支线
+
+- **人形与全身控制**：[Humanoid-Gym](../../papers/arxiv-2404.05695/README.md) → [BeyondMimic](../../papers/arxiv-2508.08241/README.md) → [规模化行为基础模型](../../papers/arxiv-2607.15163/README.md)。看四足的流水线搬到人形后哪些部件要换。
+- **步态先验**：[CPG-RL](../../papers/arxiv-2211.00458/README.md) 与 [相位引导的步态切换](../../papers/arxiv-2201.00206/README.md)。动作接口的另一种设计，对应思考笔记"背景"中提到的 CPG。

@@ -1,23 +1,13 @@
-# 导航与规划：阅读与问题路线
+# 导航与规划：学习路线
 
 [回到入门](README.md) · [Baseline](BASELINES.md) · [全部文献](PAPERS.md)
 
-## 第一步：限定问题
+五步，从你熟悉的优化与控制出发，逐步换上学习的部件。每一步都先读材料，再做一个能检验理解的小练习。
 
-本方向已经有可独立阅读的领域讲解，按具体问题解释模块职责、方法边界与研究接口。此页把领域讲解、已有baseline、阅读路线和单篇论文目录汇到一起。
+1. **先把经典栈手算一遍。** 读[讲义](../navigation-planning.md)第三至七节：A* 的 f = g + h、RRT* 的一次重连、DWA 的速度窗口、制动距离。放在第一步，因为后面每一篇学习方法都只替换其中某一层，先知道每层的输入输出，才看得出它换了什么。练习：在讲义图 2 的网格上把障碍挖成 U 形，说明 A* 与 DWA 各会怎样表现。
+2. **读经典规划的保证与前提。** 读 [RRT* 精读](../../papers/rrt-star/reading.md)。放在这里，因为它是本方向唯一给出可证明性质的工作，读完才能判断后面"学到的导航"缺少的是什么。练习：列出 RRT* 渐近最优所需的假设，标出哪些在真机上会被打破（静态自由空间、准确地图、直线可连接）。
+3. **语言怎样变成导航目标，以及它省掉了什么。** 读 [R2R 精读](../../papers/r2r/reading.md)，再读 [VLN-CE](../../papers/arxiv-2004.02857/README.md) 与 [Sim-to-Real VLN](../../papers/arxiv-2011.03807/README.md) 两张卡。放在这里，因为同一个任务被收回三次假设、成功率一路下降，这是本方向最重要的一课：成绩建立在什么上。练习：把 R2R 的 6 个离散动作与你四足策略的速度指令接口对比，写出中间缺了哪几层。
+4. **学习式导航的两条路。** 读 [DD-PPO](../../papers/arxiv-1911.00357/README.md)（仿真规模化）与 [ViNT](../../papers/arxiv-2306.14846/README.md)、[NoMaD](../../papers/arxiv-2310.07896/README.md)（跨机器人的真实数据）。放在这里，因为它们代表了"在仿真里练"与"从真实轨迹学"两种取舍，与你训练四足策略时的 sim-to-real 经验直接对应。练习：DD-PPO 去掉 GPS+Compass 后 SPL 从 0.948 降到 0.15，对照四足训练中的特权信息，说明这两件事是不是同一类问题。
+5. **基础模型怎样接进来。** 读 [LM-Nav](../../papers/arxiv-2207.04429/README.md) → [NaVILA](../../papers/arxiv-2412.04453/README.md) → [DualVLN](../../papers/arxiv-2512.08186/README.md)。放在最后，因为这三篇的区别集中在两层之间的接口（地标、语言动作、像素目标），只有前四步建立了分层的概念才看得清。练习：给 DualVLN 的 Social-VLN 结果（撞人率 35.4%）设计一个改进方案，说明你会改上层、下层还是接口，并对照[入门页](README.md)第 2 步的 CrowdNav。
 
-## 第二步：沿具体文章拆机制
-
-[Sampling-based Algorithms for Optimal Motion Planning](../../papers/rrt-star/README.md) → [Vision-and-Language Navigation: Interpreting visually-grounded navigation instructions in real environments](../../papers/r2r/README.md)
-
-这个次序是教学建议，表示先理解的概念与后续比较对象，不表示作者之间存在直接技术继承。
-
-## 第三步：做能检验理解的工作
-
-先阅读已有领域讲解，再从下面的阅读顺序中选择一篇，与自己的任务输入、输出和评估条件对照。
-
-## 第四步：保留边界
-
-真实机器人中的观察、状态估计、计划与执行各有误差。跨方向的方法关联不表示相同实验环境或直接历史继承。
-
-记录原文支持的事实、自己的解释和仍需实验验证的假设；没有独立运行实验时，不写成已复现。
+读完后可以接着看[具身 Agent](../embodied-agents/README.md)（同样的分层出现在长程操作任务里）与[世界模型](../world-models/README.md)（先预测再选动作）。

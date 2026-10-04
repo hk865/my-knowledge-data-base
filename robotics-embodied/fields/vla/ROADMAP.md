@@ -1,23 +1,51 @@
-# 视觉语言动作模型：阅读与问题路线
+# VLA 路线图
 
-[回到入门](README.md) · [Baseline](BASELINES.md) · [全部文献](PAPERS.md)
+> 状态：路线图 · v2
 
-## 第一步：限定问题
+[入门页](README.md) · [Baseline](BASELINES.md) · [论文目录](PAPERS.md) · [逐步讲义](../vla.md)
 
-本方向已经有可独立阅读的领域讲解，按具体问题解释模块职责、方法边界与研究接口。此页把领域讲解、已有baseline、阅读路线和单篇论文目录汇到一起。
+结论：五步，按"先弄清 VLM 怎样看图 → 读透一个离散 token 基线 → 换成连续动作块 → 看两条路线怎样合流 → 看前沿在扩充什么"排列。每一步都有一个能动手检验的问题。阅读顺序与 [OpenVLA 文献卡](../../papers/openvla/README.md)一致：CLIP → LLaVA → DINO → OpenVLA。
 
-## 第二步：沿具体文章拆机制
+## 第 1 步：VLM 的视觉输入从哪里来
 
-[Learning Transferable Visual Models From Natural Language Supervision](../../../multimodal/papers/clip/README.md) → [Visual Instruction Tuning](../../../multimodal/papers/llava/README.md) → [OpenVLA: An Open-Source Vision-Language-Action Model](../../papers/openvla/README.md) → [Diffusion Policy: Visuomotor Policy Learning via Action Diffusion](../../papers/diffusion-policy/README.md)
+读 [CLIP](../../../multimodal/papers/clip/reading.md) → [LLaVA](../../../multimodal/papers/llava/reading.md) → [DINO](../../../multimodal/papers/dino/reading.md)。
 
-这个次序是教学建议，表示先理解的概念与后续比较对象，不表示作者之间存在直接技术继承。
+为什么在这里：OpenVLA 的视觉骨干是 SigLIP（CLIP 式图文对比）与 DINOv2（DINO 式自监督）的拼接，投影进语言模型的接口与 LLaVA 相同；不先读这三篇，后面"冻结视觉编码器为什么掉点""视觉 token 为什么占大部分推理时间"都无从谈起。两种特征各自擅长什么，见[视觉表征方向](../../../multimodal/fields/visual-representation/README.md)"从任务看"一节。
 
-## 第三步：做能检验理解的工作
+检验：说出 224×224 的图在 patch 14 下产生多少个视觉 token，它们怎样和文字 token 排进同一个序列（答案在 [VLA 讲义](../vla.md)第三节）。
 
-先阅读已有领域讲解，再从下面的阅读顺序中选择一篇，与自己的任务输入、输出和评估条件对照。
+## 第 2 步：读透离散 token 基线
 
-## 第四步：保留边界
+读 [OpenVLA 精读](../../papers/openvla/reading.md)，对照 [RT-2](../../papers/arxiv-2307.15818/README.md) 与 [RT-1](../../papers/arxiv-2212.06817/README.md)。
 
-真实机器人中的观察、状态估计、计划与执行各有误差。跨方向的方法关联不表示相同实验环境或直接历史继承。
+为什么在这里：这是 [Baseline 页](BASELINES.md)"动作表示 = 离散 token"一格的开放代表，接口、数据清洗、评测口径都能在一篇里看全；后面每一篇都在改它的某个部件。
 
-记录原文支持的事实、自己的解释和仍需实验验证的假设；没有独立运行实验时，不写成已复现。
+检验：手算一个动作维度的分桶与还原（精读"机制"第 2 小节）；再算一次 50 Hz、14 维、1 秒的动作块逐维分桶要多少个 token（700，FAST Table I），解释为什么这样的序列学不动。
+
+## 第 3 步：换成连续动作块
+
+读 [VLA 逐步讲义](../vla.md)第六、十节与 [π0](../../papers/arxiv-2410.24164/README.md)；动作块与扩散动作头的来源见 [Diffusion Policy 精读](../../papers/diffusion-policy/reading.md)，机制见[扩散讲义](../../../foundations/lessons/17-diffusion.md)第 6.1、7 节；跨模态的背景见[生成配方的收敛](../../../perspectives/generative-convergence.md)。
+
+为什么在这里：π0 把"动作当词"换成 flow matching 生成的 50 步动作块，解决的正是第 2 步算出来的高频问题；讲义以 π0.5 为例，把一次训练前向和推理时的十步积分分开讲。
+
+检验：解释为什么输出 50 步动作不等于每秒运行大模型 50 次（讲义 10.3–10.4 节）；对照 π0 的 73 ms 机载推理与 OpenVLA 在 RTX 4090 上约 6 Hz，算各自能支持的控制频率。
+
+## 第 4 步：两条路线怎样合流
+
+读 [FAST](../../papers/arxiv-2501.09747/README.md) 与 [OpenVLA-OFT](../../papers/arxiv-2502.19645/README.md)（对照着读），再读 [π0.5](../../papers/arxiv-2504.16054/README.md) → [Knowledge Insulation](../../papers/arxiv-2505.23705/README.md)。
+
+为什么在这里：FAST 修离散 token "学不动"，OFT 修它"太慢"，两篇合起来说明离散 token 的两个坑原因不同；π0.5 与 KI 再说明连续动作头会伤 VLM，于是收敛到"离散 token 当训练信号、连续头负责部署"。
+
+检验：用 OpenVLA-OFT 的消融（76.5% → 90.2% → 95.3% → 97.1%）分别说出并行解码与动作块、连续表示、腕部图像与本体状态各贡献多少；说出 KI 的 stop-gradient 加在哪里、为什么部署时不需要离散分支。
+
+## 第 5 步：前沿在扩充什么
+
+读 [π*0.6](../../papers/arxiv-2511.14759/README.md) → [π0.7](../../papers/arxiv-2604.15483/README.md)，对照 [Gemini Robotics](../../papers/arxiv-2503.20020/README.md) 与 [Gemini Robotics 1.5](../../papers/arxiv-2510.03342/README.md)；按兴趣选读 [GR00T N1](../../papers/arxiv-2503.14734/README.md)（双系统与数据金字塔）、[RoboTTT](../../papers/arxiv-2607.15275/README.md)（长上下文）、[ForceVLA](../../papers/arxiv-2505.22159/README.md)（力觉）、[Behavior Prompting Policy](../../papers/arxiv-2606.30457/README.md)（示教作提示）。
+
+为什么在这里：2025 年底以后的工作不再主要改动作表示，而是改训练信号（从经验学）、任务条件（子任务、子目标图、元数据、示教）和上下文长度；把它们放在 [Baseline 表](BASELINES.md)里逐行对照，能看出各家押注的差别。有四足 RL 背景的话，π*0.6 的价值函数与优势可以直接对照 PPO 的做法，看它为什么在 flow matching 策略上改用优势条件化（原文 §IV-B：flow matching 没有可处理的对数似然）。
+
+检验：给定一个自己的任务（例如四足机器人按语言指令推门），按 Baseline 表的六个部件写出要做的选择，并为每个选择指出一篇论文里的失败案例。
+
+## 动手时先查什么
+
+接一个开源 VLA（openpi 中的 π0 / π0.5、OpenVLA、SmolVLA）到自己的机器人上时，先核对动作字段的顺序、单位、绝对还是增量、坐标系和归一化统计量，再谈调模型；OpenVLA 精读里的"过滤全零首帧"、讲义 13.2 节的清单都属于这一类。离线损失和闭环成功率分开测：OpenVLA 的 int8 量化离线准确率接近，闭环成功率却从 71% 掉到 58%。
