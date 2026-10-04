@@ -36,6 +36,11 @@ def broken_links(path):
 
 
 def main():
+    if hasattr(sys.stdout, 'reconfigure'):
+        sys.stdout.reconfigure(encoding='utf-8')
+    if '-h' in sys.argv or '--help' in sys.argv:
+        print(__doc__)
+        return
     files = sys.argv[1:] or markdown_files()
     bad = [(f, t) for f in files for t in broken_links(f)]
     for f, t in bad:

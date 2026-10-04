@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2405.21060",
+  "title": "Transformers are SSMs: Generalized Models and Efficient Algorithms Through Structured State Space Duality",
+  "resource_kind": "paper",
+  "canonical_folder": "llm/papers/arxiv-2405.21060",
+  "official_url": "https://arxiv.org/abs/2405.21060",
+  "official_fulltext_url": "https://arxiv.org/pdf/2405.21060",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了摘要、§1（贡献与效率数字）、§2.4（SSD 相对 Mamba 的两处改动）、§3 与 §5.1 的主要结论（半可分矩阵、推论 5.1）、§9.1（MQAR，Figure 8）、§9.2.3（混合，Table 2–3）、§9.3（速度，Figure 10）；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Tri Dao",
+    "Albert Gu"
+  ],
+  "year": 2024,
+  "topic_paths": [
+    "llm/architecture",
+    "llm/long-context"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页（题名、作者、v1 2024-05-31、评注 ICML 2024）、PMLR 235 页面（题名、作者、页码 10041–10071）与 v1 PDF 选段：摘要、§1、§2.4、§3、§5.1（推论 5.1）、§9.1（Figure 8）、§9.2.3（Table 2–3）、§9.3（Figure 10）",
+    "mechanism_summary": "SSD：A_t 由对角阵简化为标量乘单位阵，头维度 P 从 1 增到 64/128（§2.4）；SSM 等价于半可分矩阵（§3）；专用实现比 Mamba 选择性 scan 快 2–8 倍，状态可达 Mamba 8 倍以上，2K 起快于 FlashAttention-2、16K 快 6 倍（§1、Figure 10）；350M/48 层/7B token：0 层注意力 8.60、6 层 8.26、24 层 8.50、Transformer++ 8.68，约 10% 注意力层最好（Table 2）；2.7B/300B：Mamba-2-Attention Pile ppl 5.95、平均 61.0，Mamba-2 6.09/60.2，Transformer++ 6.13/60.2（Table 3）；短序列整模型训练可能不如 Transformer（§9.3）。",
+    "evidence_boundary": "未复现实验；数字取自论文正文与表格；未与 PMLR 会议版 PDF 逐项比对。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2405.21060",
+      "https://arxiv.org/pdf/2405.21060v1",
+      "https://proceedings.mlr.press/v235/dao24a.html"
+    ],
+    "source_origin": "architecture_field_phase3_cards",
+    "relation_pages": [
+      "foundations/relations/recurrent-state.md"
+    ]
+  },
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "generation"
+  ]
+}

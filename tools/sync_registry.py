@@ -37,6 +37,11 @@ def wr(f, t):
 
 
 def main():
+    if hasattr(sys.stdout, 'reconfigure'):
+        sys.stdout.reconfigure(encoding='utf-8')
+    if '-h' in sys.argv or '--help' in sys.argv:
+        print(__doc__)
+        return
     dry = '--dry' in sys.argv
     raw = rd('papers.json')
     papers = json.loads(raw)

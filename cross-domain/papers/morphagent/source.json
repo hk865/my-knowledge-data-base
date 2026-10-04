@@ -28,7 +28,7 @@
     "cross-domain/agents",
     "cross-domain/evaluation"
   ],
-  "source_record_updated": "2026-10-03",
+  "source_record_updated": "2026-10-04",
   "verification_2026_10_03": {
     "reading_scope": "官方身份与摘要核验；未完成全文精读",
     "mechanism_summary": "MORPHAGENT以目标保持、协作一致性、工具使用完整性关系检验结构化执行轨迹；与Agent行为验证相关。仅官方索引摘要，作者与实验细节未读全文核实。",
@@ -39,5 +39,28 @@
     ],
     "source_origin": "historical_assistant_recommendation",
     "related_paper": null
+  },
+  "year": 2026,
+  "authors": [
+    "Gopalakrishnan Marimuthu"
+  ],
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "evaluation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "IEEE 计算机学会数字图书馆摘要页（题名、作者与单位、AITest 2026、pp. 185–192、DOI、完整摘要）；IEEE Xplore 页面对自动抓取返回 HTTP 418，全文需付费，未打开",
+    "mechanism_summary": "MORPHAGENT：记录规划、工具调用、消息、最终输出的结构化轨迹，施加蜕变变换，检查目标保持、协作一致、工具使用完整三类关系；四个多智能体基准（代码生成、研究综述、客服、数据分析）、三个 LLM 后端、2,840 对源—后续运行；注入故障检出 82.0%（协作 90.3%、目标偏离 81.7%），误报 6.1%；14 个此前未报告的行为异常。",
+    "evidence_boundary": "仅摘要；基准与后端名称、故障注入方式、异常所在框架未核实。",
+    "verification_status": "official_abstract_page_verified",
+    "affiliation": "Independent Researcher, Atlanta, Georgia, USA",
+    "venue": "2026 IEEE International Conference on Artificial Intelligence Testing (AITest), pp. 185-192",
+    "verification_sources": [
+      "https://www.computer.org/csdl/proceedings-article/aitest/2026/056200a185/2jgwiWf2kU0",
+      "https://ieeexplore.ieee.org/abstract/document/11662476/"
+    ],
+    "note": "2026-10-03 记录中\"作者未核实\"一项已由摘要页解决。"
   }
 }

@@ -2,6 +2,7 @@
 """Step 2: regenerate docs/topics.md from papers.json (topic sections, tag vocabulary,
 modality x task cross directory). Idempotent: re-running on its own output gives the same file.
 Run from anywhere: python tools/gen_topics.py"""
+import sys
 import json, os, re
 
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -42,6 +43,11 @@ SUBTOPICS_NEW = {
 
 
 def main():
+    if hasattr(sys.stdout, 'reconfigure'):
+        sys.stdout.reconfigure(encoding='utf-8')
+    if '-h' in sys.argv or '--help' in sys.argv:
+        print(__doc__)
+        return
     papers = json.load(open(os.path.join(REPO, "papers.json"), encoding="utf-8"))
     tax = json.load(open(os.path.join(REPO, "taxonomy.json"), encoding="utf-8"))
     label2id = {}

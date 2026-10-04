@@ -6,7 +6,7 @@
 
 结论：有两个基线。经典基线是 Hinton 等 2015 的"温度软目标 + 硬标签"，它定义了"教师传什么、怎样算损失"；LLM 时代的基线是"学生自己生成、教师逐 token 打分"的 on-policy 蒸馏（GKD 与 MiniLLM 提出，Qwen3 用于生产），它定义了"在谁写出的数据上传"。后来的工作都在替换这两个基线的部件。
 
-- **[Distilling the Knowledge in a Neural Network](../../papers/arxiv-1503.02531/README.md)（Hinton、Vinyals、Dean，Google，2015）**。接口：教师与学生在同一批迁移数据上各自输出 logit，都除以温度 T 后做 softmax，学生的损失 = 与教师软分布的交叉熵 × T² + 与硬标签的交叉熵（较小权重）。它统一了前作：[Model Compression](../../papers/url-cornell-compression.kdd06/README.md)（2006）的"教师打标签"是 T → 0 的特例，[Ba & Caruana](../../papers/arxiv-1312.6184/README.md)（2014）的 logit 回归是 T → ∞ 的极限（原文 §2.1）。评估方式：学生对教师（或集成）保留多少提升，对同结构从头训练强多少。
+- **[Distilling the Knowledge in a Neural Network](../../papers/arxiv-1503.02531/README.md)（Hinton、Vinyals、Dean，Google，2015）**。接口：教师与学生在同一批迁移数据上各自输出 logit，都除以温度 T 后做 softmax，学生的损失 = 与教师软分布的交叉熵 × T² + 与硬标签的交叉熵（较小权重）。它统一了前作：[Ba & Caruana](../../papers/arxiv-1312.6184/README.md)（2014）的 logit 回归是 T → ∞ 的极限（原文 §2.1）；[Model Compression](../../papers/url-cornell-compression.kdd06/README.md)（2006）用教师的硬标签训练学生，相当于 T → 0 的另一端（`[判断]`，原文 §2.1 只写了高温极限）。评估方式：学生对教师（或集成）保留多少提升，对同结构从头训练强多少。
 - **on-policy 蒸馏**：[GKD](https://arxiv.org/abs/2306.13649)（Google DeepMind，ICLR 2024）与 [MiniLLM](https://arxiv.org/abs/2306.08543)（清华、Microsoft Research，ICLR 2024）同年提出，[Qwen3](../../../llm/papers/arxiv-2505.09388/README.md)（2025）在 6 个小模型上用作后训练主干。接口：给定提示，学生采样整段回答；教师在学生写出的每个前缀上给出下一个 token 的分布；学生最小化两者的散度（通常是反向 KL）。它针对的是离线蒸馏的暴露偏差：学生训练时只见过教师写好的前缀。评估方式：与同起点的 RL、离线蒸馏比较分数与 GPU 小时（Qwen3 Table 21）。
 
 ## 基线的结构拆分

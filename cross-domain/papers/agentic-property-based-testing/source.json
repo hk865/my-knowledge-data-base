@@ -28,7 +28,7 @@
     "cross-domain/agents",
     "cross-domain/evaluation"
   ],
-  "source_record_updated": "2026-10-03",
+  "source_record_updated": "2026-10-04",
   "verification_2026_10_03": {
     "reading_scope": "官方文章已读；关联论文仅身份与摘要核验",
     "mechanism_summary": "官方文章：从代码与文档推断性质、用Hypothesis找反例、反思并人工核验；测试断言错误仍会造成误报，测试通过不能证明开放式语义任务正确。",
@@ -44,5 +44,33 @@
       "relationship": "direct paper link in official article; same research, not new historical recommendation",
       "verification": "official arXiv identity and abstract verified"
     }
+  },
+  "year": 2026,
+  "authors": [
+    "Muhammad Maaz",
+    "Liam DeVoe",
+    "Zac Hatfield-Dodds",
+    "Nicholas Carlini"
+  ],
+  "modality_tags": [
+    "text",
+    "code"
+  ],
+  "task_tags": [
+    "decision",
+    "evaluation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "官方博客全文各节（Introduction、Our Property-Based Testing Agent、Searching for bugs in real PyPI packages、Evaluating the agent、Maintainer validation、Conclusion）；关联论文 arXiv:2510.09907 摘要页（题名、作者、v1 2025-10-10、NeurIPS 2025 DL4Code Workshop）",
+    "mechanism_summary": "Claude Code 自定义命令，五步：读代码→提性质→Hypothesis 写测试→运行并反思→结构化报告；Opus 4.1 跑 100+ 包得 984 份报告，抽查 50 份 56% 有效、32% 值得上报；15 分细则排序后最高者 86% 有效、81% 有效且可上报；第二阶段 Sonnet 4.5 跑 10 个包，评估 agent 与 3 位专家复核；上报 5 个 bug，3 个补丁合并、1 个已提交、dateutil easter() 被判为有意行为。",
+    "evidence_boundary": "未复现；第二阶段的发现数量博客未给出明确数字，README 未写。",
+    "verification_status": "official_article_read",
+    "publication_date": "2026-01-14",
+    "affiliations": "Muhammad Maaz（MATS、Anthropic）、Liam DeVoe（Northeastern University）、Zac Hatfield-Dodds、Nicholas Carlini（Anthropic）",
+    "verification_sources": [
+      "https://www.anthropic.com/research/property-based-testing",
+      "https://arxiv.org/abs/2510.09907"
+    ],
+    "readme_rewrite": "README 按 STYLE §6 重写；原 README 中\"测试断言错误仍会造成误报\"一句本轮未在原文找到对应表述，已删去。"
   }
 }

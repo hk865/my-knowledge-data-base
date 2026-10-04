@@ -1,6 +1,6 @@
 # 全库论文总目录
 
-共 523 个去重资源（480 篇论文、29 篇官方技术报告、3 个代码仓库、11 篇官方博客）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
+共 524 个去重资源（481 篇论文、29 篇官方技术报告、3 个代码仓库、11 篇官方博客）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
 
 身份核验、助手教学进度和用户阅读状态分开。历史来源保留原角色与证据局限，不将助手推荐写成用户提供，也不将教学完成写成用户已读。
 
@@ -5596,6 +5596,16 @@
 - 身份核验：selected_sections_checked_not_full_read
 - 用户阅读状态：unknown
 - [文献卡](../cross-domain/papers/arxiv-2106.04560/README.md)
+
+<a id="p524"></a>
+## p524 · Transformers are SSMs: Generalized Models and Efficient Algorithms Through Structured State Space Duality
+
+- 标识：arxiv:2405.21060
+- 原文 / 官方入口：https://arxiv.org/abs/2405.21060
+- 主题：llm/architecture, llm/long-context
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2405.21060/README.md)
 
 ## 2026年10月3日既有条目更新
 

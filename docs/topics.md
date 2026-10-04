@@ -203,7 +203,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Kimi K2.5: Visual Agentic Intelligence](paper-catalog.md#p498)
 - [NVIDIA Nemotron 3: Efficient and Open Intelligence](paper-catalog.md#p500)
 
-### 架构与效率（44）
+### 架构与效率（45）
 
 细分：注意力与状态空间模型；稀疏专家与条件计算；KV cache 与压缩；线性与稀疏注意力；因果掩码与复杂度
 
@@ -251,6 +251,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [GLM-5: from Vibe Coding to Agentic Engineering](paper-catalog.md#p494)
 - [NVIDIA Nemotron 3: Efficient and Open Intelligence](paper-catalog.md#p500)
 - [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](paper-catalog.md#p519)
+- [Transformers are SSMs: Generalized Models and Efficient Algorithms Through Structured State Space Duality](paper-catalog.md#p524)
 
 ### 推理时计算（42）
 
@@ -1001,14 +1002,14 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 | 模态 \ 任务 | understanding | generation | decision | evaluation | analysis |
 |---|---:|---:|---:|---:|---:|
-| text | [60](#x-text-understanding) | [154](#x-text-generation) | [93](#x-text-decision) | [71](#x-text-evaluation) | [52](#x-text-analysis) |
+| text | [60](#x-text-understanding) | [155](#x-text-generation) | [93](#x-text-decision) | [71](#x-text-evaluation) | [52](#x-text-analysis) |
 | image | [120](#x-image-understanding) | [53](#x-image-generation) | [97](#x-image-decision) | [17](#x-image-evaluation) | [16](#x-image-analysis) |
 | video | [34](#x-video-understanding) | [41](#x-video-generation) | [30](#x-video-decision) | [13](#x-video-evaluation) | [6](#x-video-analysis) |
 | audio | [7](#x-audio-understanding) | [6](#x-audio-generation) | · | [1](#x-audio-evaluation) | · |
 | action | [8](#x-action-understanding) | [34](#x-action-generation) | [139](#x-action-decision) | [10](#x-action-evaluation) | [3](#x-action-analysis) |
 | state | [17](#x-state-understanding) | [2](#x-state-generation) | [68](#x-state-decision) | [1](#x-state-evaluation) | · |
 | code | [1](#x-code-understanding) | [27](#x-code-generation) | [27](#x-code-decision) | [20](#x-code-evaluation) | [7](#x-code-analysis) |
-| multimodal | [54](#x-multimodal-understanding) | [45](#x-multimodal-generation) | [43](#x-multimodal-decision) | [19](#x-multimodal-evaluation) | [9](#x-multimodal-analysis) |
+| multimodal | [54](#x-multimodal-understanding) | [45](#x-multimodal-generation) | [43](#x-multimodal-decision) | [20](#x-multimodal-evaluation) | [9](#x-multimodal-analysis) |
 | tabular | [1](#x-tabular-understanding) | · | · | · | · |
 
 <a id="x-text-understanding"></a>
@@ -1078,7 +1079,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-text-generation"></a>
 
-### text × generation（154）
+### text × generation（155）
 
 - [Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters](paper-catalog.md#p001)
 - [Towards Thinking-Optimal Scaling of Test-Time Compute for LLM Reasoning](paper-catalog.md#p002)
@@ -1234,6 +1235,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Recursive Language Models](paper-catalog.md#p499)
 - [NVIDIA Nemotron 3: Efficient and Open Intelligence](paper-catalog.md#p500)
 - [Scaling Laws for Autoregressive Generative Modeling](paper-catalog.md#p522)
+- [Transformers are SSMs: Generalized Models and Efficient Algorithms Through Structured State Space Duality](paper-catalog.md#p524)
 
 <a id="x-text-decision"></a>
 
@@ -2565,8 +2567,9 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-multimodal-evaluation"></a>
 
-### multimodal × evaluation（19）
+### multimodal × evaluation（20）
 
+- [On scalable oversight with weak LLMs judging strong LLMs](paper-catalog.md#p033)
 - [Vision-and-Language Navigation: Interpreting visually-grounded navigation instructions in real environments](paper-catalog.md#p119)
 - [DataComp: In search of the next generation of multimodal datasets](paper-catalog.md#p346)
 - [Winoground: Probing Vision and Language Models for Visio-Linguistic Compositionality](paper-catalog.md#p348)

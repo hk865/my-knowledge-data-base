@@ -6,13 +6,13 @@
   "canonical_folder": "cross-domain/papers/arxiv-1312.6184",
   "official_url": "https://arxiv.org/abs/1312.6184",
   "official_fulltext_url": "https://arxiv.org/pdf/1312.6184",
-  "read_version": null,
-  "version_status": "not_pinned",
-  "reading_depth": "identity_checked_not_full_read",
+  "read_version": "v7",
+  "version_status": "checked_v7",
+  "reading_depth": "selected_sections_checked_not_full_read",
   "teaching_status": "not_created",
   "content_kind": "bibliographic_card",
   "reading_path": null,
-  "reading_boundary": "这是文献卡，目前没有该论文的独立精读正文。标题、标识或摘要层面的核验不等于全文阅读。",
+  "reading_boundary": "文献卡。核验了arXiv 摘要页（题名、作者、v1–v7 日期）与 v7 PDF 的摘要、§1、§2.2–2.3、§3.2–3.3（Table 1）、§4.1（Table 2）；不是独立全文精读，未复现。",
   "user_reading_status": "not_asserted",
   "independently_reproduced": false,
   "license": {
@@ -22,10 +22,33 @@
   },
   "fulltext_local_status": "official_link_only_pending_license_verification",
   "fulltext_local_path": null,
-  "source_record_updated": "2026-10-02",
+  "source_record_updated": "2026-10-04",
   "legacy_paths": [],
   "evidence_paths": [],
   "topic_paths": [
     "cross-domain/knowledge-distillation"
-  ]
+  ],
+  "year": 2013,
+  "authors": [
+    "Lei Jimmy Ba",
+    "Rich Caruana"
+  ],
+  "modality_tags": [
+    "image",
+    "audio"
+  ],
+  "task_tags": [
+    "understanding"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页（题名、作者、v1–v7 日期）与 v7 PDF 的摘要、§1、§2.2–2.3、§3.2–3.3（Table 1）、§4.1（Table 2）",
+    "mechanism_summary": "浅网络 L2 回归教师 logit（§2.2），加线性层提速（§2.3）；TIMIT PER：ECNN 18.5、CNN 19.5、DNN 21.9、SNN 23.0–23.6、SNN-MIMIC-8k 21.6、-400k 20.0（Table 1）；迁移集只能用训练集导致差距拉大（§3.2）；CIFAR-10 无卷积网络学不好（§4.1）。v7 首页标注 Draft for NIPS 2014。",
+    "evidence_boundary": "未复现实验；数字取自论文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/1312.6184",
+      "https://arxiv.org/pdf/1312.6184v7"
+    ],
+    "source_origin": "knowledge_distillation_phase3_cards"
+  }
 }

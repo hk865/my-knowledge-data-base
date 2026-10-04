@@ -22,7 +22,7 @@
   },
   "fulltext_local_status": "official_link_only_pending_license_verification",
   "fulltext_local_path": null,
-  "source_record_updated": "2026-10-02",
+  "source_record_updated": "2026-10-04",
   "legacy_paths": [
     "docs/deep-readings/react.md",
     "robotics-embodied/baselines/react.md"
@@ -34,5 +34,31 @@
   "topic_paths": [
     "llm/inference",
     "cross-domain/agents"
-  ]
+  ],
+  "year": 2022,
+  "authors": [
+    "Shunyu Yao",
+    "Jeffrey Zhao",
+    "Dian Yu",
+    "Nan Du",
+    "Izhak Shafran",
+    "Karthik Narasimhan",
+    "Yuan Cao"
+  ],
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "generation",
+    "decision"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "README 重写时复核 arXiv 摘要页（题名、7 位作者、v1–v3 日期、v3 为 ICLR 相机就绪版）与 v3 PDF 第 1 页单位、Table 1、Table 3、Table 4 数字；其余内容沿用既有精读与 evidence.json",
+    "evidence_boundary": "未复现。",
+    "verification_status": "identity_and_cited_tables_rechecked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2210.03629",
+      "https://arxiv.org/pdf/2210.03629v3"
+    ]
+  }
 }

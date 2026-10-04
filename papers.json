@@ -2387,7 +2387,14 @@
     "canonical_readme": "cross-domain/papers/arxiv-2508.10014/README.md",
     "source_path": "cross-domain/papers/arxiv-2508.10014/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Lingfeng Zhou",
+      "Jialing Zhang",
+      "Jin Gao",
+      "Mohan Jiang",
+      "Dequan Wang"
+    ]
   },
   {
     "original_chat_urls": [
@@ -2437,7 +2444,8 @@
     "catalog_anchor": "p033",
     "user_reading_status": "unknown",
     "modality_tags": [
-      "text"
+      "text",
+      "multimodal"
     ],
     "task_tags": [
       "evaluation"
@@ -2447,7 +2455,20 @@
     "canonical_readme": "cross-domain/papers/arxiv-2407.04622/README.md",
     "source_path": "cross-domain/papers/arxiv-2407.04622/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Zachary Kenton",
+      "Noah Y. Siegel",
+      "János Kramár",
+      "Jonah Brown-Cohen",
+      "Samuel Albanie",
+      "Jannis Bulian",
+      "Rishabh Agarwal",
+      "David Lindner",
+      "Yunhao Tang",
+      "Noah D. Goodman",
+      "等 11 位作者"
+    ]
   },
   {
     "original_chat_urls": [
@@ -2989,7 +3010,16 @@
       "docs/deep-readings/react.md",
       "robotics-embodied/baselines/react.md"
     ],
-    "content_kind": "reading"
+    "content_kind": "reading",
+    "authors": [
+      "Shunyu Yao",
+      "Jeffrey Zhao",
+      "Dian Yu",
+      "Nan Du",
+      "Izhak Shafran",
+      "Karthik Narasimhan",
+      "Yuan Cao"
+    ]
   },
   {
     "original_chat_urls": [
@@ -10532,7 +10562,20 @@
     "legacy_paths": [
       "docs/deep-readings/llm-judge.md"
     ],
-    "content_kind": "reading"
+    "content_kind": "reading",
+    "authors": [
+      "Lianmin Zheng",
+      "Wei-Lin Chiang",
+      "Ying Sheng",
+      "Siyuan Zhuang",
+      "Zhanghao Wu",
+      "Yonghao Zhuang",
+      "Zi Lin",
+      "Zhuohan Li",
+      "Dacheng Li",
+      "Eric P. Xing",
+      "等 13 位作者"
+    ]
   },
   {
     "id": "arxiv:1711.07280",
@@ -12497,7 +12540,12 @@
     "canonical_readme": "cross-domain/papers/url-cornell-compression.kdd06/README.md",
     "source_path": "cross-domain/papers/url-cornell-compression.kdd06/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Cristian Buciluă",
+      "Rich Caruana",
+      "Alexandru Niculescu-Mizil"
+    ]
   },
   {
     "id": "arxiv:1312.6184",
@@ -12568,7 +12616,11 @@
     "canonical_readme": "cross-domain/papers/arxiv-1312.6184/README.md",
     "source_path": "cross-domain/papers/arxiv-1312.6184/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Lei Jimmy Ba",
+      "Rich Caruana"
+    ]
   },
   {
     "id": "arxiv:1412.6550",
@@ -12638,7 +12690,15 @@
     "canonical_readme": "cross-domain/papers/arxiv-1412.6550/README.md",
     "source_path": "cross-domain/papers/arxiv-1412.6550/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Adriana Romero",
+      "Nicolas Ballas",
+      "Samira Ebrahimi Kahou",
+      "Antoine Chassang",
+      "Carlo Gatta",
+      "Yoshua Bengio"
+    ]
   },
   {
     "id": "arxiv:1503.02531",
@@ -12710,7 +12770,12 @@
     "canonical_readme": "cross-domain/papers/arxiv-1503.02531/README.md",
     "source_path": "cross-domain/papers/arxiv-1503.02531/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Geoffrey Hinton",
+      "Oriol Vinyals",
+      "Jeff Dean"
+    ]
   },
   {
     "id": "arxiv:2211.17192",
@@ -13843,7 +13908,12 @@
     "doi": null,
     "year": "2026",
     "resource_kind": "official_blog",
-    "authors": "Muhammad Maaz; Liam DeVoe; Zac Hatfield-Dodds; Nicholas Carlini",
+    "authors": [
+      "Muhammad Maaz",
+      "Liam DeVoe",
+      "Zac Hatfield-Dodds",
+      "Nicholas Carlini"
+    ],
     "topic_paths": [
       "cross-domain/agents",
       "cross-domain/evaluation"
@@ -13913,7 +13983,9 @@
     "doi": "10.1109/AITest70988.2026.00036",
     "year": "2026",
     "resource_kind": "paper",
-    "authors": null,
+    "authors": [
+      "Gopalakrishnan Marimuthu"
+    ],
     "topic_paths": [
       "cross-domain/agents",
       "cross-domain/evaluation"
@@ -32976,6 +33048,52 @@
       "Alexander Kolesnikov",
       "Neil Houlsby",
       "Lucas Beyer"
+    ]
+  },
+  {
+    "id": "arxiv:2405.21060",
+    "title": "Transformers are SSMs: Generalized Models and Efficient Algorithms Through Structured State Space Duality",
+    "url": "https://arxiv.org/abs/2405.21060",
+    "arxiv_id": "2405.21060",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "llm/architecture",
+      "llm/long-context"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2405.21060"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p524",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2405.21060",
+    "canonical_path": "llm/papers/arxiv-2405.21060/README.md",
+    "canonical_readme": "llm/papers/arxiv-2405.21060/README.md",
+    "source_path": "llm/papers/arxiv-2405.21060/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Tri Dao",
+      "Albert Gu"
     ]
   }
 ]

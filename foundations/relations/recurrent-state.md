@@ -95,7 +95,7 @@ T_t = T_{t−1} + φ(k_t) v_tᵀ，z_t = z_{t−1} + φ(k_t)，输出 o_tᵀ = �
 
 ### 6 Mamba-2（SSD）：同一层既是 SSM，也是带衰减 mask 的注意力
 
-**它是什么。** Mamba-2（Dao、Gu，*Transformers are SSMs*，[arXiv:2405.21060](https://arxiv.org/abs/2405.21060)，ICML 2024）的核心层叫 SSD（structured state space duality，结构化状态空间对偶）。它在 Mamba 的选择性 SSM 上只改两处（原文 §2.4）：每一步的转移 A_t 从对角阵进一步简化为"标量乘单位阵" A_t = a_t I，同一个头里所有状态分量用同一个衰减 a_t ∈ [0, 1]；每个头的宽度 P 从 Mamba 的 1 加大到 64 或 128，与 Transformer 的头宽相当。这样的层有两种等价的算法：
+**它是什么。** Mamba-2（Dao、Gu，*Transformers are SSMs*，[arXiv:2405.21060](../../llm/papers/arxiv-2405.21060/README.md)，ICML 2024）的核心层叫 SSD（structured state space duality，结构化状态空间对偶）。它在 Mamba 的选择性 SSM 上只改两处（原文 §2.4）：每一步的转移 A_t 从对角阵进一步简化为"标量乘单位阵" A_t = a_t I，同一个头里所有状态分量用同一个衰减 a_t ∈ [0, 1]；每个头的宽度 P 从 Mamba 的 1 加大到 64 或 128，与 Transformer 的头宽相当。这样的层有两种等价的算法：
 
 - 递推形式：S_t = a_t S_{t−1} + k_t v_tᵀ，输出 o_t = S_tᵀ q_t（原文用 B、C、X 记 k、q、v，这里换成注意力的写法）；
 - 二次形式：Y = (L ∘ QKᵀ) V，L_ij = a_i × a_{i−1} × … × a_{j+1}（i ≥ j），i < j 时为 0。∘ 是逐元素相乘。
@@ -111,7 +111,7 @@ T_t = T_{t−1} + φ(k_t) v_tᵀ，z_t = z_{t−1} + φ(k_t)，输出 o_tᵀ = �
 - `[经验]` 混合：350M、48 层的模型在 Pile 上训练 7B token，全部用 SSD 时验证困惑度 8.60，Transformer++（现代配方的 Transformer）8.68；把其中 6 层换成注意力（6/48，即 12.5%）时最低，为 8.26，再多加注意力反而变差，24 层注意力时为 8.50（原文 Table 2）。作者的概括是"注意力层约占总层数 10% 时最好"，并推测 SSM 层承担一般的序列变换，注意力层充当检索机制，让模型不必把全部上下文压进状态（§9.2.3）。2.7B 规模、300B token 时，58 层 SSD 加 6 层注意力的 Pile 困惑度为 5.95，纯 Mamba-2 为 6.09，Transformer++ 为 6.13（Table 3）。
 - `[历史]` 题名有意呼应第 5 节的 *Transformers are RNNs*，作者在脚注 1 写明这一点，并把线性注意力的"对偶形式"列为本文的出发点（§1）。原文还指出，RetNet 的固定衰减 mask L_ij = γ^{i−j} 是 SSD 的特例，GateLoop 同时期独立提出了随输入变化的衰减（§4、§10）。
 
-**支撑证据。** 原文 [arXiv:2405.21060](https://arxiv.org/abs/2405.21060) §1、§2.4、§5.1–5.2（推论 5.1）、§9.1–9.3、Figure 8、Table 2–3。
+**支撑证据。** 原文 [arXiv:2405.21060](../../llm/papers/arxiv-2405.21060/README.md) §1、§2.4、§5.1–5.2（推论 5.1）、§9.1–9.3、Figure 8、Table 2–3。
 
 ### 7 KDA（Kimi Linear）：矩阵状态上的"按 key 改写"与逐通道遗忘
 

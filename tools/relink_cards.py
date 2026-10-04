@@ -27,6 +27,11 @@ def norm(p):
 
 
 def main():
+    if hasattr(sys.stdout, 'reconfigure'):
+        sys.stdout.reconfigure(encoding='utf-8')
+    if '-h' in sys.argv or '--help' in sys.argv:
+        print(__doc__)
+        return
     dry = '--dry' in sys.argv
     skip = [a.replace('\\', '/').rstrip('/') for a in sys.argv[1:] if a != '--dry']
     os.chdir(ROOT)

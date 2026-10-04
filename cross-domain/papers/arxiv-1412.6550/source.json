@@ -6,13 +6,13 @@
   "canonical_folder": "cross-domain/papers/arxiv-1412.6550",
   "official_url": "https://arxiv.org/abs/1412.6550",
   "official_fulltext_url": "https://arxiv.org/pdf/1412.6550",
-  "read_version": null,
-  "version_status": "not_pinned",
-  "reading_depth": "identity_checked_not_full_read",
+  "read_version": "v4",
+  "version_status": "checked_v4",
+  "reading_depth": "selected_sections_checked_not_full_read",
   "teaching_status": "not_created",
   "content_kind": "bibliographic_card",
   "reading_path": null,
-  "reading_boundary": "这是文献卡，目前没有该论文的独立精读正文。标题、标识或摘要层面的核验不等于全文阅读。",
+  "reading_boundary": "文献卡。核验了arXiv 摘要页（题名、作者、v1–v4 日期）与 v4 PDF 的摘要、§1、§2.2、§4.1–4.2（Table 1、Table 5、Figure 2）；不是独立全文精读，未复现。",
   "user_reading_status": "not_asserted",
   "independently_reproduced": false,
   "license": {
@@ -22,10 +22,36 @@
   },
   "fulltext_local_status": "official_link_only_pending_license_verification",
   "fulltext_local_path": null,
-  "source_record_updated": "2026-10-02",
+  "source_record_updated": "2026-10-04",
   "legacy_paths": [],
   "evidence_paths": [],
   "topic_paths": [
     "cross-domain/knowledge-distillation"
-  ]
+  ],
+  "year": 2014,
+  "authors": [
+    "Adriana Romero",
+    "Nicolas Ballas",
+    "Samira Ebrahimi Kahou",
+    "Antoine Chassang",
+    "Carlo Gatta",
+    "Yoshua Bengio"
+  ],
+  "modality_tags": [
+    "image"
+  ],
+  "task_tags": [
+    "understanding"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页（题名、作者、v1–v4 日期）与 v4 PDF 的摘要、§1、§2.2、§4.1–4.2（Table 1、Table 5、Figure 2）",
+    "mechanism_summary": "提示层/被引导层 + 回归器，两段训练（§2.2）；Table 5：教师 5 层约 9M 90.18%，FitNet 2 11 层约 862K 91.06%、快 4.64 倍、压缩 10.44 倍，FitNet 4 19 层约 2.5M 91.61%；过度正则与只取中间层（§2.2）；30M 乘法预算下反传 5 层、KD 7 层、提示 13 层（§4.1）。v4 首页标注 ICLR 2015。",
+    "evidence_boundary": "未复现实验；数字取自论文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/1412.6550",
+      "https://arxiv.org/pdf/1412.6550v4"
+    ],
+    "source_origin": "knowledge_distillation_phase3_cards"
+  }
 }
