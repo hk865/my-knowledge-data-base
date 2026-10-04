@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2503.18813",
+  "title": "Defeating Prompt Injections by Design",
+  "checked_on": "2026-10-04",
+  "read_version": "arXiv:2503.18813v2",
+  "primary_fulltext": "https://arxiv.org/html/2503.18813v2",
+  "reading_scope": "arXiv v2 主文 §§1–11；Appendix B Table 2、Appendix C Table 7、Appendix D Tables 8–9、Appendix E 策略和 Figure 20、Appendix F 开销口径；非全文逐页审计",
+  "independently_reproduced": false,
+  "claims": [
+    {
+      "id": "identity",
+      "claim": "arXiv v1 2025-03-24；v2 2025-06-24；当前题名及十位作者",
+      "location": "arXiv abstract / submission history",
+      "url": "https://arxiv.org/abs/2503.18813"
+    },
+    {
+      "id": "venue",
+      "claim": "SaTML 2026 收录；最终正式全文尚未与 v2 逐页比较",
+      "location": "Conference program and author publication page",
+      "urls": [
+        "https://satml.org/2026/program/",
+        "https://www.floriantramer.com/publications/camel25/"
+      ]
+    },
+    {
+      "id": "threat_model",
+      "claim": "用户请求可信、非复制攻击者指令、记忆未被攻陷；无受保护数据流后果的错误摘要/钓鱼是非目标",
+      "location": "§3–3.1"
+    },
+    {
+      "id": "mechanism",
+      "claim": "P-LLM 与 Q-LLM 分离；Q 无工具权；P 看代码与变量名而非原始工具输出；解释器维护依赖并执行政策",
+      "location": "§5.1–5.4"
+    },
+    {
+      "id": "calendar_policy",
+      "claim": "日历参会人能读所有事件字段，或全部参会人源于可信用户；正文集合算例采用前一种路径",
+      "location": "§5.2 Figure 6; Appendix E"
+    },
+    {
+      "id": "label_semantics",
+      "claim": "值记录 provenance 与允许读者；代码字面量标为 User；变换保留依赖",
+      "location": "§5.3–5.4"
+    },
+    {
+      "id": "implicit_flow",
+      "claim": "STRICT 追踪条件/循环依赖；Q-LLM 后继语句关联其输入以缓解异常侧信道",
+      "location": "§5.4; §7 Figures 14–16"
+    },
+    {
+      "id": "utility_o3",
+      "claim": "o3 High 正常 utility：native84.5%，CaMeL77.3%，差7.2个百分点；非所有模型或无人审批完成率",
+      "location": "Appendix B Table 2; §6.1; §6.2.2"
+    },
+    {
+      "id": "attacks_sonnet35",
+      "claim": "Claude3.5Sonnet 的949次基准攻击：CaMeL0，无策略1，tool filter8",
+      "location": "§6.3; Appendix C Table 7"
+    },
+    {
+      "id": "cheap_parser",
+      "claim": "Claude4Sonnet规划、Claude3.5Haiku解析时原文报告utility约减1%、中位估计成本约降12%；未自行改写为统计显著性结论",
+      "location": "§6.1.3"
+    },
+    {
+      "id": "overhead",
+      "claim": "受攻击、Claude3.5Sonnet，中位输入2.82倍/输出2.73倍；用GPT4o tokenizer且排除工具文档",
+      "location": "§6.5 Figure 13; Appendix F"
+    },
+    {
+      "id": "policy_denominators",
+      "claim": "Figure10分母为成功任务；Figure20分母为全部任务；utility与触发频率分报",
+      "location": "§6.2.2; Appendix E"
+    },
+    {
+      "id": "limits",
+      "claim": "无原子性/自动回滚；侧信道残留；政策覆盖和审批疲劳；解释器形式化验证为未来工作",
+      "location": "§5.4; §7; §9–10"
+    },
+    {
+      "id": "future_fides",
+      "claim": "FIDES的选择性隐藏/受约束查看用于扩大安全规划表达能力；2026工程集成为experimental",
+      "locations": [
+        "FIDES v2 §1, §5",
+        "Microsoft developer article introduction"
+      ],
+      "urls": [
+        "https://arxiv.org/html/2505.23643v2",
+        "https://devblogs.microsoft.com/agent-framework/fides/"
+      ]
+    }
+  ],
+  "original_teaching_artifacts": [
+    {
+      "path": "figures/camel-dataflow.svg",
+      "description": "原创流程图，依据主文角色分离与策略检查，自定义日历任务"
+    },
+    {
+      "path": "figures/camel-implicit-flow.svg",
+      "description": "原创二值秘密1bit算例，解释直接与隐式流，非实验测量"
+    }
+  ],
+  "unverified": [
+    "SaTML 正式出版版全文与 arXiv v2 的逐项差异",
+    "原型完整源代码及策略逐行审计",
+    "AgentDojo 独立复现与真实成本/延迟",
+    "全部附录逐页阅读",
+    "代码许可审计"
+  ],
+  "license": {
+    "status": "verified_primary_license_link",
+    "identifier": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "note": "arXiv 摘要页 view license 明确链接 CC BY 4.0；原作者与题名列于本文件，精读为原创中文解释及教学改编，未镜像论文全文或复用原图。代码许可未在本轮审计。"
+  }
+}

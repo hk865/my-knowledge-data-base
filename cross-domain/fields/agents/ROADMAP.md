@@ -39,3 +39,7 @@
 - 奖励黑客与"奖励从哪来"的一般机制：[语言模型强化学习](../../../llm/fields/posttraining/rl/README.md)。
 - 评测的效度、污染与隐藏数据：[评估方向](../evaluation/README.md)。
 - 机器人上的 agent：[具身 Agent](../../../robotics-embodied/fields/embodied-agents/README.md)。
+
+## 工程安全与集成
+
+先读[权限、隔离与协作](permissions-isolation-collaboration.md)，再比较[CaMeL](../../papers/camel/README.md)的数据流策略、[Cedar](../../resources/cedar-authorization/README.md)的工具授权与[持续集成](../../resources/continuous-integration/README.md)的结果验证：三者解决不同层次的问题。

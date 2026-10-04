@@ -67,3 +67,31 @@
 - [System Card: Claude Opus 5.5](../../papers/anthropic-claude-opus-5-5-system-card/README.md) · 2026 · 文献卡 · Anthropic 2026-09 系统卡：奖励黑客与判分器意识
 - [Gemini 3.8 Flash Model Card](../../papers/google-gemini-3-8-flash-model-card/README.md) · 2026 · 文献卡 · Google 2026-09 模型卡
 - [Seed2.0 Model Card: Towards Intelligence Frontier for Real-World Complexity](../../papers/arxiv-2607.00248/README.md) · 2026 · 文献卡 · 字节跳动 Seed2.0 模型卡（2026-06）
+
+## 权限隔离与软件协作
+
+- [Defeating Prompt Injections by Design](../../papers/camel/README.md) · 2025
+- [Agent approvals & security](../../resources/agent-approvals-security/README.md) · 动态资料
+- [The Architect Elevator — Visiting the upper floors](../../resources/architect-elevator/README.md) · 2017
+- [Branch By Abstraction](../../resources/branch-by-abstraction/README.md) · 2014
+- [Bubblewrap](../../resources/bubblewrap/README.md) · 动态资料
+- [Building multi-agent systems: When and how to use them](../../resources/building-multi-agent-systems/README.md) · 2026
+- [How Cedar authorization works](../../resources/cedar-authorization/README.md) · 动态资料
+- [Continuous Integration](../../resources/continuous-integration/README.md) · 2000
+- [Docker Engine security](../../resources/docker-engine-security/README.md) · 动态资料
+- [NanmiCoder/dsh-agent-teams — AgentTeams plugin for DeepSeek Harness](../../resources/dsh-agent-teams/README.md) · 动态资料
+- [git-worktree - Manage multiple working trees](../../resources/git-worktree/README.md) · 动态资料
+- [Security Model](../../resources/gvisor-security/README.md) · 动态资料
+- [Control Group v2](../../resources/linux-cgroup-v2/README.md) · 动态资料
+- [Landlock: unprivileged access control](../../resources/linux-landlock/README.md) · 动态资料
+- [namespaces(7) — Linux manual page](../../resources/linux-namespaces/README.md) · 动态资料
+- [Seccomp BPF (SECure COMPuting with filters)](../../resources/linux-seccomp-bpf/README.md) · 动态资料
+- [How we built our multi-agent research system](../../resources/multi-agent-research-system/README.md) · 2025
+- [Mitigating the risk of prompt injections in browser use](../../resources/prompt-injection-defenses/README.md) · 2025
+- [Running Codex safely at OpenAI](../../resources/running-codex-safely/README.md) · 2026
+- [Scaling the Practice of Architecture, Conversationally](../../resources/scaling-architecture-conversationally/README.md) · 2021
+- [SPIFFE Overview](../../resources/spiffe-overview/README.md) · 动态资料
+- [Security](../../resources/wasmtime-security/README.md) · 动态资料
+
+- [The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions](../../papers/arxiv-2404.13208/README.md) · 2024 · 文献卡
+- [Securing AI Agents with Information-Flow Control](../../papers/arxiv-2505.23643/README.md) · 2025 · 文献卡

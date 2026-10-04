@@ -82,3 +82,6 @@
 - [Scaling Laws for Neural Language Models](arxiv-2001.08361/README.md) · 2020 · 文献卡，暂无独立精读
 - [Scaling Laws for Autoregressive Generative Modeling](arxiv-2010.14701/README.md) · 2020 · 文献卡，暂无独立精读
 - [Scaling Vision Transformers](arxiv-2106.04560/README.md) · 2021 · 文献卡，暂无独立精读
+- [Defeating Prompt Injections by Design](camel/README.md) · 年份见原文 · 文献卡，暂无独立精读
+- [The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions](arxiv-2404.13208/README.md) · 2024 · 文献卡，暂无独立精读
+- [Securing AI Agents with Information-Flow Control](arxiv-2505.23643/README.md) · 2025 · 文献卡，暂无独立精读

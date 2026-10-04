@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2505.23643",
+  "title": "Securing AI Agents with Information-Flow Control",
+  "resource_kind": "paper",
+  "canonical_folder": "cross-domain/papers/arxiv-2505.23643",
+  "official_url": "https://arxiv.org/abs/2505.23643",
+  "official_fulltext_url": "https://arxiv.org/html/2505.23643v2",
+  "year": 2025,
+  "authors": [
+    "Manuel Costa",
+    "Boris Köpf",
+    "Aashish Kolluri",
+    "Andrew Paverd",
+    "Mark Russinovich",
+    "Ahmed Salem",
+    "Shruti Tople",
+    "Lukas Wutschitz",
+    "Santiago Zanella-Béguelin"
+  ],
+  "topic_paths": [
+    "cross-domain/agents"
+  ],
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "generation",
+    "decision"
+  ],
+  "content_kind": "bibliographic_card",
+  "read_version": "arXiv:2505.23643v2",
+  "version_status": "latest_arxiv_version_observed_on_2026_10_04",
+  "version_date": "2025-09-03",
+  "reading_depth": "abstract_and_targeted_method_context",
+  "reading_scope": "摘要、版本历史、v2 HTML 引言与方案定位；未全文精读、未独立对照所有实验、未复现。",
+  "reading_boundary": "摘要、版本历史、v2 HTML 引言与方案定位；未全文精读、未独立对照所有实验、未复现。",
+  "reading_path": null,
+  "teaching_status": "bibliographic_card_only",
+  "independently_reproduced": false,
+  "user_reading_status": "not_asserted",
+  "license": {
+    "status": "not_audited"
+  },
+  "evidence_paths": [],
+  "source_record_updated": "2026-10-04",
+  "verification_2026_10_04": {
+    "verification_status": "identity_and_method_position_verified_primary",
+    "verification_sources": [
+      "https://arxiv.org/abs/2505.23643",
+      "https://arxiv.org/html/2505.23643v2"
+    ],
+    "evidence_boundary": "摘要、版本历史、v2 HTML 引言与方案定位；未全文精读、未独立对照所有实验、未复现。"
+  }
+}

@@ -99,3 +99,31 @@
 - [Scaling Laws for Neural Language Models](papers/arxiv-2001.08361/README.md) · 2020 · 文献卡，暂无独立精读
 - [Scaling Laws for Autoregressive Generative Modeling](papers/arxiv-2010.14701/README.md) · 2020 · 文献卡，暂无独立精读
 - [Scaling Vision Transformers](papers/arxiv-2106.04560/README.md) · 2021 · 文献卡，暂无独立精读
+- [Defeating Prompt Injections by Design](papers/camel/README.md) · 年份见原文 · 文献卡，暂无独立精读
+- [MT-046: Op Amp Settling Time](resources/adi-mt-046/README.md) · 2008 · 文献卡，暂无独立精读
+- [MT-097: Dealing with High-Speed Logic](resources/adi-mt-097/README.md) · 2009 · 文献卡，暂无独立精读
+- [Agent approvals & security](resources/agent-approvals-security/README.md) · 年份见原文 · 文献卡，暂无独立精读
+- [The Architect Elevator — Visiting the upper floors](resources/architect-elevator/README.md) · 2017 · 文献卡，暂无独立精读
+- [Branch By Abstraction](resources/branch-by-abstraction/README.md) · 2014 · 文献卡，暂无独立精读
+- [Bubblewrap](resources/bubblewrap/README.md) · 年份见原文 · 文献卡，暂无独立精读
+- [Building multi-agent systems: When and how to use them](resources/building-multi-agent-systems/README.md) · 2026 · 文献卡，暂无独立精读
+- [How Cedar authorization works](resources/cedar-authorization/README.md) · 年份见原文 · 文献卡，暂无独立精读
+- [Continuous Integration](resources/continuous-integration/README.md) · 2000 · 文献卡，暂无独立精读
+- [Docker Engine security](resources/docker-engine-security/README.md) · 年份见原文 · 文献卡，暂无独立精读
+- [NanmiCoder/dsh-agent-teams — AgentTeams plugin for DeepSeek Harness](resources/dsh-agent-teams/README.md) · 年份见原文 · 文献卡，暂无独立精读
+- [git-worktree - Manage multiple working trees](resources/git-worktree/README.md) · 年份见原文 · 文献卡，暂无独立精读
+- [Security Model](resources/gvisor-security/README.md) · 年份见原文 · 文献卡，暂无独立精读
+- [Control Group v2](resources/linux-cgroup-v2/README.md) · 年份见原文 · 文献卡，暂无独立精读
+- [Landlock: unprivileged access control](resources/linux-landlock/README.md) · 年份见原文 · 文献卡，暂无独立精读
+- [namespaces(7) — Linux manual page](resources/linux-namespaces/README.md) · 年份见原文 · 文献卡，暂无独立精读
+- [Seccomp BPF (SECure COMPuting with filters)](resources/linux-seccomp-bpf/README.md) · 年份见原文 · 文献卡，暂无独立精读
+- [How we built our multi-agent research system](resources/multi-agent-research-system/README.md) · 2025 · 文献卡，暂无独立精读
+- [Mitigating the risk of prompt injections in browser use](resources/prompt-injection-defenses/README.md) · 2025 · 文献卡，暂无独立精读
+- [Running Codex safely at OpenAI](resources/running-codex-safely/README.md) · 2026 · 文献卡，暂无独立精读
+- [Scaling the Practice of Architecture, Conversationally](resources/scaling-architecture-conversationally/README.md) · 2021 · 文献卡，暂无独立精读
+- [SPIFFE Overview](resources/spiffe-overview/README.md) · 年份见原文 · 文献卡，暂无独立精读
+- [High-Speed Layout Guidelines (SCAA082A)](resources/ti-scaa082a/README.md) · 2006 · 文献卡，暂无独立精读
+- [High-Speed Interface Layout Guidelines (SPRAAR7J, Rev. J)](resources/ti-spraar7j/README.md) · 2018 · 文献卡，暂无独立精读
+- [Security](resources/wasmtime-security/README.md) · 年份见原文 · 文献卡，暂无独立精读
+- [The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions](papers/arxiv-2404.13208/README.md) · 2024 · 文献卡，暂无独立精读
+- [Securing AI Agents with Information-Flow Control](papers/arxiv-2505.23643/README.md) · 2025 · 文献卡，暂无独立精读

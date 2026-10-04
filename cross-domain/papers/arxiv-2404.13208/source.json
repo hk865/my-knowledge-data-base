@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2404.13208",
+  "title": "The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions",
+  "resource_kind": "paper",
+  "canonical_folder": "cross-domain/papers/arxiv-2404.13208",
+  "official_url": "https://arxiv.org/abs/2404.13208",
+  "official_fulltext_url": "https://arxiv.org/html/2404.13208v1",
+  "year": 2024,
+  "authors": [
+    "Eric Wallace",
+    "Kai Xiao",
+    "Reimar Leike",
+    "Lilian Weng",
+    "Johannes Heidecke",
+    "Alex Beutel"
+  ],
+  "topic_paths": [
+    "cross-domain/agents"
+  ],
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "generation",
+    "decision"
+  ],
+  "content_kind": "bibliographic_card",
+  "read_version": "arXiv:2404.13208v1",
+  "version_status": "latest_arxiv_version_observed_on_2026_10_04",
+  "version_date": "2024-04-19",
+  "reading_depth": "abstract_and_targeted_method_context",
+  "reading_scope": "摘要、版本信息及 HTML 主文的动机与方法定位；未逐项核对实验表、未复现。",
+  "reading_boundary": "摘要、版本信息及 HTML 主文的动机与方法定位；未逐项核对实验表、未复现。",
+  "reading_path": null,
+  "teaching_status": "bibliographic_card_only",
+  "independently_reproduced": false,
+  "user_reading_status": "not_asserted",
+  "license": {
+    "status": "not_audited"
+  },
+  "evidence_paths": [],
+  "source_record_updated": "2026-10-04",
+  "verification_2026_10_04": {
+    "verification_status": "identity_and_method_position_verified_primary",
+    "verification_sources": [
+      "https://arxiv.org/abs/2404.13208",
+      "https://arxiv.org/html/2404.13208v1"
+    ],
+    "evidence_boundary": "摘要、版本信息及 HTML 主文的动机与方法定位；未逐项核对实验表、未复现。"
+  }
+}

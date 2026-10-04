@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2503.18813",
+  "title": "Defeating Prompt Injections by Design",
+  "resource_kind": "paper",
+  "resource_subtype": "author_preprint",
+  "canonical_folder": "cross-domain/papers/camel",
+  "official_url": "https://arxiv.org/abs/2503.18813",
+  "official_fulltext_url": "https://arxiv.org/html/2503.18813v2",
+  "read_version": "arXiv:2503.18813v2",
+  "version_status": "pinned_arxiv_v2",
+  "reading_depth": "main_text_mechanism_evaluation_and_limitations_with_targeted_appendices",
+  "reading_scope": "arXiv v2 主文 §§1–11；Appendix B Table 2、Appendix C Table 7、Appendix D Tables 8–9、Appendix E 策略和 Figure 20、Appendix F 开销口径；非全文逐页审计",
+  "teaching_status": "technical_reading_created",
+  "content_kind": "reading",
+  "reading_path": "reading.md",
+  "reading_boundary": "独立教学精读，固定 arXiv v2 机制和实验口径；主文与相关附录针对性核查，未对全部附录逐页精读、未审计完整代码、未复现。SaTML 2026 发表状态已由会议信息及作者页面确认，尚未取得与出版记录逐页对照的最终全文，不主张其与 v2 数字完全一致。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "verified_primary_license_link",
+    "identifier": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "note": "arXiv 摘要页 view license 明确链接 CC BY 4.0；原作者与题名列于本文件，精读为原创中文解释及教学改编，未镜像论文全文或复用原图。代码许可未在本轮审计。"
+  },
+  "fulltext_local_status": "official_link_only_not_mirrored_in_repository",
+  "fulltext_local_path": null,
+  "legacy_paths": [],
+  "evidence_paths": [
+    "evidence.json"
+  ],
+  "topic_paths": [
+    "cross-domain/agents"
+  ],
+  "source_record_updated": "2026-10-04",
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv v2 主文 §§1–11；Appendix B Table 2、Appendix C Table 7、Appendix D Tables 8–9、Appendix E 策略和 Figure 20、Appendix F 开销口径；非全文逐页审计",
+    "verification_status": "primary_fulltext_targeted_reading_and_metadata_update",
+    "verification_sources": [
+      "https://arxiv.org/abs/2503.18813",
+      "https://arxiv.org/html/2503.18813v2",
+      "https://satml.org/2026/program/",
+      "https://www.floriantramer.com/publications/camel25/",
+      "https://github.com/google-research/camel-prompt-injection"
+    ],
+    "mechanism_summary": "CaMeL 分离只看可信请求的 P-LLM 与处理不可信数据、无工具权的 Q-LLM；受限 Python 解释器传播数据来源/读者标签，并在工具调用前执行策略。",
+    "evidence_boundary": "独立教学精读，固定 arXiv v2 机制和实验口径；主文与相关附录针对性核查，未对全部附录逐页精读、未审计完整代码、未复现。SaTML 2026 发表状态已由会议信息及作者页面确认，尚未取得与出版记录逐页对照的最终全文，不主张其与 v2 数字完全一致。",
+    "read_version": "arXiv:2503.18813v2",
+    "source_origin": "historical_assistant_recommendation",
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2503.18813"
+    ],
+    "latest_related_primary_materials": [
+      {
+        "title": "FIDES engineering integration",
+        "date": "2026-05-20",
+        "url": "https://devblogs.microsoft.com/agent-framework/fides/"
+      },
+      {
+        "title": "How we contain Claude across products",
+        "date": "2026-05-25",
+        "url": "https://www.anthropic.com/engineering/how-we-contain-claude"
+      },
+      {
+        "title": "Patterns and problems in emerging multiagent systems",
+        "date": "2026-08-13",
+        "url": "https://www.anthropic.com/research/multiagent-systems"
+      }
+    ],
+    "known_related_updates_not_fulltext_read": [
+      {
+        "title": "Adaptive Evaluation of Out-of-Band Defenses Against Prompt Injection in LLM Agents",
+        "arxiv_id": "2606.26479",
+        "version": "v1",
+        "date": "2026-06-25",
+        "url": "https://arxiv.org/abs/2606.26479",
+        "scope": "摘要已打开，全文尚未阅读；摘要所述独立实验对象为 Progent，不作为 CaMeL 被攻破或被独立复现的证据。"
+      }
+    ]
+  },
+  "year": 2025,
+  "authors": [
+    "Edoardo Debenedetti",
+    "Ilia Shumailov",
+    "Tianqi Fan",
+    "Jamie Hayes",
+    "Nicholas Carlini",
+    "Daniel Fabian",
+    "Christoph Kern",
+    "Chongyang Shi",
+    "Andreas Terzis",
+    "Florian Tramèr"
+  ],
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "decision",
+    "generation"
+  ],
+  "publication_venue": "IEEE Conference on Secure and Trustworthy Machine Learning (SaTML)",
+  "publication_year": 2026,
+  "publication_status": "conference_listing_verified_final_text_not_compared",
+  "latest_arxiv_version_checked": "v2",
+  "latest_arxiv_version_date": "2025-06-24"
+}

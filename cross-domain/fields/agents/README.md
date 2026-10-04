@@ -253,3 +253,7 @@
 - Claude Opus 4.6 GUI 越权评测只有图，没有正文数字；Opus 4.7 的作弊图未给数字；Opus 5.5 之外的 2026 年系统卡（Opus 4.8、Opus 5、Sonnet 5 等）未打开。
 - Anthropic 2025 年 4 月 Claude Code 最佳实践原文中关于测试的建议，原页面已迁移改写，未核实。
 - SWE-agent 各失败类别的完整比例只在图中；Toolformer 是否有官方代码未核实；SWE-RL 与 DeepSeek-V3.2 是否发布权重未在本轮核实。
+
+## 权限、隔离与协作
+
+[从一次工具调用理解边界](permissions-isolation-collaboration.md)：把任务分解、工具授权、执行隔离和结果核验分别放回正确的位置；再用[CaMeL](../../papers/camel/README.md)考察不可信数据怎样影响工具调用。
