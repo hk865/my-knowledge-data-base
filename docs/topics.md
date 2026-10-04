@@ -128,7 +128,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence](paper-catalog.md#p188)
 - [Kimi K3: Open Frontier Intelligence](paper-catalog.md#p189)
 
-### 推理时计算（29）
+### 推理时计算（28）
 
 细分：搜索与验证；多路径与多 Agent；预算分配与 token 效率；精确目标分布与投机验证；近似质量协作与关键段接管；MTP草拟与验证接口；精确级联混合分布
 
@@ -136,7 +136,6 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Towards Thinking-Optimal Scaling of Test-Time Compute for LLM Reasoning](paper-catalog.md#p002)
 - [s1: Simple test-time scaling](paper-catalog.md#p003)
 - [Large Language Monkeys: Scaling Inference Compute with Repeated Sampling](paper-catalog.md#p004)
-- [DeepSeek-V3 Technical Report](paper-catalog.md#p007)
 - [Qwen2.5-1M Technical Report](paper-catalog.md#p008)
 - [Mamba: Linear-Time Sequence Modeling with Selective State Spaces](paper-catalog.md#p009)
 - [DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](paper-catalog.md#p011)
@@ -219,7 +218,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Video generation models as world simulators](paper-catalog.md#p198)
 - [Veo: a text-to-video generation system](paper-catalog.md#p199)
 
-### 世界模型（29）
+### 世界模型（39）
 
 细分：预测与潜在动力学；结构化与可干预表征；行动条件与规划；几何与物理约束
 
@@ -252,10 +251,20 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Genie: Generative Interactive Environments](paper-catalog.md#p191)
 - [Cosmos World Foundation Model Platform for Physical AI](paper-catalog.md#p193)
 - [Video generation models as world simulators](paper-catalog.md#p198)
+- [World Models](paper-catalog.md#p207)
+- [Learning Latent Dynamics for Planning from Pixels](paper-catalog.md#p211)
+- [DayDreamer: World Models for Physical Robot Learning](paper-catalog.md#p225)
+- [Learning Universal Policies via Text-Guided Video Generation](paper-catalog.md#p230)
+- [Learning Interactive Real-World Simulators](paper-catalog.md#p237)
+- [TD-MPC2: Scalable, Robust World Models for Continuous Control](paper-catalog.md#p239)
+- [V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning](paper-catalog.md#p256)
+- [Genie Envisioner: A Unified World Foundation Platform for Robotic Manipulation](paper-catalog.md#p258)
+- [Ctrl-World: A Controllable Generative World Model for Robot Manipulation](paper-catalog.md#p262)
+- [Evaluating Gemini Robotics Policies in a Veo World Simulator](paper-catalog.md#p266)
 
 ## 机器人与具身系统
 
-### 感知与传感融合（8）
+### 感知与传感融合（21）
 
 细分：视觉 深度 LiDAR；惯性与多传感器融合；传统 学习与混合方法
 
@@ -263,12 +272,25 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [PanopticFusion: Online Volumetric Semantic Mapping at the Level of Stuff and Things](paper-catalog.md#p081)
 - [Dense RGB-D Semantic Mapping with Pixel-Voxel Neural Network](paper-catalog.md#p108)
 - [FM-Fusion: Instance-aware Semantic Mapping Boosted by Vision-Language Foundation Models](paper-catalog.md#p109)
+- [Legged Locomotion in Challenging Terrains using Egocentric Vision](paper-catalog.md#p111)
 - [ORB-SLAM3: An Accurate Open-Source Library for Visual, Visual-Inertial and Multi-Map SLAM](paper-catalog.md#p123)
 - [Quaternion kinematics for the error-state Kalman filter](paper-catalog.md#p125)
 - [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](paper-catalog.md#p130)
 - [Learning Transferable Visual Models From Natural Language Supervision](paper-catalog.md#p132)
+- [Learning robust perceptive locomotion for quadrupedal robots in the wild](paper-catalog.md#p156)
+- [You Only Look Once: Unified, Real-Time Object Detection](paper-catalog.md#p202)
+- [Mask R-CNN](paper-catalog.md#p205)
+- [Digging Into Self-Supervised Monocular Depth Estimation](paper-catalog.md#p208)
+- [PointPillars: Fast Encoders for Object Detection from Point Clouds](paper-catalog.md#p212)
+- [nuScenes: A multimodal dataset for autonomous driving](paper-catalog.md#p214)
+- [BEVFusion: Multi-Task Multi-Sensor Fusion with Unified Bird's-Eye View Representation](paper-catalog.md#p224)
+- [ConceptFusion: Open-set Multimodal 3D Mapping](paper-catalog.md#p231)
+- [Segment Anything](paper-catalog.md#p232)
+- [Depth Anything: Unleashing the Power of Large-Scale Unlabeled Data](paper-catalog.md#p243)
+- [FM-Fusion: Instance-aware Semantic Mapping Boosted by Vision-Language Foundation Models](paper-catalog.md#p244)
+- [Depth Anything V2](paper-catalog.md#p245)
 
-### 定位与建图（11）
+### 定位与建图（34）
 
 细分：里程计与状态估计；SLAM 与地图
 
@@ -283,8 +305,31 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [FM-Fusion: Instance-aware Semantic Mapping Boosted by Vision-Language Foundation Models](paper-catalog.md#p109)
 - [ORB-SLAM3: An Accurate Open-Source Library for Visual, Visual-Inertial and Multi-Map SLAM](paper-catalog.md#p123)
 - [Quaternion kinematics for the error-state Kalman filter](paper-catalog.md#p125)
+- [ORB-SLAM: a Versatile and Accurate Monocular SLAM System](paper-catalog.md#p201)
+- [Direct Sparse Odometry](paper-catalog.md#p203)
+- [ORB-SLAM2: an Open-Source SLAM System for Monocular, Stereo and RGB-D Cameras](paper-catalog.md#p204)
+- [VINS-Mono: A Robust and Versatile Monocular Visual-Inertial State Estimator](paper-catalog.md#p206)
+- [LIO-SAM: Tightly-coupled Lidar Inertial Odometry via Smoothing and Mapping](paper-catalog.md#p218)
+- [iMAP: Implicit Mapping and Positioning in Real-Time](paper-catalog.md#p220)
+- [FAST-LIO2: Fast Direct LiDAR-inertial Odometry](paper-catalog.md#p221)
+- [DROID-SLAM: Deep Visual SLAM for Monocular, Stereo, and RGB-D Cameras](paper-catalog.md#p222)
+- [NICE-SLAM: Neural Implicit Scalable Encoding for SLAM](paper-catalog.md#p223)
+- [ConceptFusion: Open-set Multimodal 3D Mapping](paper-catalog.md#p231)
+- [SplaTAM: Splat, Track & Map 3D Gaussians for Dense RGB-D SLAM](paper-catalog.md#p240)
+- [Gaussian Splatting SLAM](paper-catalog.md#p242)
+- [FM-Fusion: Instance-aware Semantic Mapping Boosted by Vision-Language Foundation Models](paper-catalog.md#p244)
+- [MASt3R-SLAM: Real-Time Dense SLAM with 3D Reconstruction Priors](paper-catalog.md#p249)
+- [VGGT: Visual Geometry Grounded Transformer](paper-catalog.md#p252)
+- [VGGT-SLAM: Dense RGB SLAM Optimized on the SL(4) Manifold](paper-catalog.md#p254)
+- [VGGT-Long: Chunk it, Loop it, Align it -- Pushing VGGT's Limits on Kilometer-scale Long RGB Sequences](paper-catalog.md#p257)
+- [MASt3R-Fusion: Integrating Feed-Forward Visual Model with IMU, GNSS for High-Functionality SLAM](paper-catalog.md#p260)
+- [Dynamic Visual SLAM using a General 3D Prior](paper-catalog.md#p264)
+- [VGGT-SLAM 2.0: Real-time Dense Feed-forward Scene Reconstruction](paper-catalog.md#p267)
+- [A Multi-State Constraint Kalman Filter for Vision-aided Inertial Navigation](paper-catalog.md#p269)
+- [OpenVINS: A Research Platform for Visual-Inertial Estimation](paper-catalog.md#p270)
+- [Parallel Tracking and Mapping for Small AR Workspaces](paper-catalog.md#p271)
 
-### 导航与规划（4）
+### 导航与规划（16）
 
 细分：几何与运动规划；视觉语言导航；VLA 与 VLN 的任务边界
 
@@ -292,9 +337,21 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Dynamic Locomotion in the MIT Cheetah 3 Through Convex Model-Predictive Control](paper-catalog.md#p124)
 - [Sampling-based Algorithms for Optimal Motion Planning](paper-catalog.md#p126)
 - [FastRLAP: A System for Learning High-Speed Driving via Deep RL and Autonomous Practicing](paper-catalog.md#p162)
+- [Speaker-Follower Models for Vision-and-Language Navigation](paper-catalog.md#p209)
+- [Crowd-Robot Interaction: Crowd-aware Robot Navigation with Attention-based Deep Reinforcement Learning](paper-catalog.md#p210)
+- [DD-PPO: Learning Near-Perfect PointGoal Navigators from 2.5 Billion Frames](paper-catalog.md#p215)
+- [Beyond the Nav-Graph: Vision-and-Language Navigation in Continuous Environments](paper-catalog.md#p217)
+- [Sim-to-Real Transfer for Vision-and-Language Navigation](paper-catalog.md#p219)
+- [LM-Nav: Robotic Navigation with Large Pre-Trained Models of Language, Vision, and Action](paper-catalog.md#p226)
+- [ViNT: A Foundation Model for Visual Navigation](paper-catalog.md#p234)
+- [NoMaD: Goal Masked Diffusion Policies for Navigation and Exploration](paper-catalog.md#p238)
+- [VLFM: Vision-Language Frontier Maps for Zero-Shot Semantic Navigation](paper-catalog.md#p241)
+- [NaVILA: Legged Robot Vision-Language-Action Model for Navigation](paper-catalog.md#p248)
+- [Ground Slow, Move Fast: A Dual-System Foundation Model for Generalizable Vision-and-Language Navigation](paper-catalog.md#p265)
+- [ABot-N1: Toward a General Visual Language Navigation Foundation Model](paper-catalog.md#p268)
 
 
-### 运动控制（41）
+### 运动控制（47）
 
 细分：经典与最优控制；腿足策略与适应；sim to real；风险敏感策略与恢复控制；恢复控制与自主练习
 
@@ -326,7 +383,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Proximal Policy Optimization Algorithms](paper-catalog.md#p129)
 - [Learning Quadrupedal Locomotion over Challenging Terrain](paper-catalog.md#p153)
 - [Robust Recovery Controller for a Quadrupedal Robot using Deep Reinforcement Learning](paper-catalog.md#p154)
-- [Recovery RL: Safe Reinforcement Learning With Learned Recovery Zones](paper-catalog.md#p155)
+- [Recovery RL: Safe Reinforcement Learning with Learned Recovery Zones](paper-catalog.md#p155)
 - [Learning robust perceptive locomotion for quadrupedal robots in the wild](paper-catalog.md#p156)
 - [Prioritized Level Replay](paper-catalog.md#p157)
 - [Robust Quadrupedal Locomotion via Risk-Averse Policy Learning](paper-catalog.md#p158)
@@ -339,9 +396,15 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [CaT: Constraints as Terminations for Legged Locomotion Reinforcement Learning](paper-catalog.md#p169)
 - [Prioritized Experience Replay](paper-catalog.md#p170)
 - [First return, then explore](paper-catalog.md#p171)
+- [World Models](paper-catalog.md#p207)
+- [Learning Latent Dynamics for Planning from Pixels](paper-catalog.md#p211)
+- [Learning agile and dynamic motor skills for legged robots](paper-catalog.md#p213)
+- [DayDreamer: World Models for Physical Robot Learning](paper-catalog.md#p225)
+- [DTC: Deep Tracking Control](paper-catalog.md#p236)
+- [TD-MPC2: Scalable, Robust World Models for Continuous Control](paper-catalog.md#p239)
 
 
-### 具身策略与 VLA（25）
+### 具身策略与 VLA（43）
 
 细分：动作表示与生成；跨本体与数据；模型 规划与控制接口；模仿学习；机器人强化学习
 
@@ -357,6 +420,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Fine-Tuning Vision-Language-Action Models: Optimizing Speed and Success](paper-catalog.md#p072)
 - [$π_{0.5}$: a Vision-Language-Action Model with Open-World Generalization](paper-catalog.md#p073)
 - [SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics](paper-catalog.md#p074)
+- [GR00T N1: An Open Foundation Model for Generalist Humanoid Robots](paper-catalog.md#p075)
 - [$π_{0.7}$: a Steerable Generalist Robotic Foundation Model with Emergent Capabilities](paper-catalog.md#p076)
 - [Qwen-VLA: Unifying Vision-Language-Action Modeling across Tasks, Environments, and Robot Embodiments](paper-catalog.md#p077)
 - [X-Tokenizer: A Multimodal Action Tokenizer for Vision-Language-Action Pretraining](paper-catalog.md#p078)
@@ -370,8 +434,25 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Dynamic Locomotion in the MIT Cheetah 3 Through Convex Model-Predictive Control](paper-catalog.md#p124)
 - [Proximal Policy Optimization Algorithms](paper-catalog.md#p129)
 - [Reconstruction or Semantics? What Makes a Latent Space Useful for Robotic World Models](paper-catalog.md#p134)
+- [A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning](paper-catalog.md#p200)
+- [Learning Universal Policies via Text-Guided Video Generation](paper-catalog.md#p230)
+- [Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware](paper-catalog.md#p233)
+- [Learning Interactive Real-World Simulators](paper-catalog.md#p237)
+- [Diffusion Policy Policy Optimization](paper-catalog.md#p246)
+- [Precise and Dexterous Robotic Manipulation via Human-in-the-Loop Reinforcement Learning](paper-catalog.md#p247)
+- [NaVILA: Legged Robot Vision-Language-Action Model for Navigation](paper-catalog.md#p248)
+- [Hi Robot: Open-Ended Instruction Following with Hierarchical Vision-Language-Action Models](paper-catalog.md#p251)
+- [Gemini Robotics: Bringing AI into the Physical World](paper-catalog.md#p253)
+- [Knowledge Insulating Vision-Language-Action Models: Train Fast, Run Fast, Generalize Better](paper-catalog.md#p255)
+- [V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning](paper-catalog.md#p256)
+- [Genie Envisioner: A Unified World Foundation Platform for Robotic Manipulation](paper-catalog.md#p258)
+- [SimpleVLA-RL: Scaling VLA Training via Reinforcement Learning](paper-catalog.md#p259)
+- [Gemini Robotics 1.5: Pushing the Frontier of Generalist Robots with Advanced Embodied Reasoning, Thinking, and Motion Transfer](paper-catalog.md#p261)
+- [Ctrl-World: A Controllable Generative World Model for Robot Manipulation](paper-catalog.md#p262)
+- [π*0.6: a VLA That Learns From Experience](paper-catalog.md#p263)
+- [Evaluating Gemini Robotics Policies in a Veo World Simulator](paper-catalog.md#p266)
 
-### 具身 Agents 与闭环系统（6）
+### 具身 Agents 与闭环系统（14）
 
 细分：任务理解与技能选择；行动记忆与空间记忆；规划—执行—反馈；技能获取与复用；VLA策略编排与部署
 
@@ -381,6 +462,14 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [EmbodiedSkills: A Unified Framework for Orchestrating, Training, and Deploying VLA Agents](paper-catalog.md#p137)
 - [MEMORA: Embodied Action Memory from Egocentric Videos for Reasoning and Planning](paper-catalog.md#p138)
 - [HoloAgent-0: A Unified Embodied Agent Framework with 3D Spatial Memory](paper-catalog.md#p139)
+- [ALFRED: A Benchmark for Interpreting Grounded Instructions for Everyday Tasks](paper-catalog.md#p216)
+- [LM-Nav: Robotic Navigation with Large Pre-Trained Models of Language, Vision, and Action](paper-catalog.md#p226)
+- [Inner Monologue: Embodied Reasoning through Planning with Language Models](paper-catalog.md#p227)
+- [Code as Policies: Language Model Programs for Embodied Control](paper-catalog.md#p228)
+- [LLM-Planner: Few-Shot Grounded Planning for Embodied Agents with Large Language Models](paper-catalog.md#p229)
+- [VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models](paper-catalog.md#p235)
+- [EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents](paper-catalog.md#p250)
+- [Hi Robot: Open-Ended Instruction Following with Hierarchical Vision-Language-Action Models](paper-catalog.md#p251)
 
 ## 跨方向方法与探索
 
@@ -486,19 +575,19 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 | 模态 \ 任务 | understanding | generation | decision | evaluation | analysis |
 |---|---:|---:|---:|---:|---:|
-| text | [11](#x-text-understanding) | [55](#x-text-generation) | [32](#x-text-decision) | [7](#x-text-evaluation) | [20](#x-text-analysis) |
-| image | [24](#x-image-understanding) | [10](#x-image-generation) | [48](#x-image-decision) | [3](#x-image-evaluation) | [3](#x-image-analysis) |
-| video | [4](#x-video-understanding) | [23](#x-video-generation) | [15](#x-video-decision) | [1](#x-video-evaluation) | [2](#x-video-analysis) |
+| text | [14](#x-text-understanding) | [58](#x-text-generation) | [54](#x-text-decision) | [11](#x-text-evaluation) | [20](#x-text-analysis) |
+| image | [58](#x-image-understanding) | [12](#x-image-generation) | [77](#x-image-decision) | [7](#x-image-evaluation) | [3](#x-image-analysis) |
+| video | [7](#x-video-understanding) | [29](#x-video-generation) | [19](#x-video-decision) | [5](#x-video-evaluation) | [2](#x-video-analysis) |
 | audio | [2](#x-audio-understanding) | [3](#x-audio-generation) | · | · | · |
-| action | [6](#x-action-understanding) | [19](#x-action-generation) | [81](#x-action-decision) | [3](#x-action-evaluation) | [2](#x-action-analysis) |
-| state | [7](#x-state-understanding) | [2](#x-state-generation) | [46](#x-state-decision) | [1](#x-state-evaluation) | · |
-| code | [1](#x-code-understanding) | [7](#x-code-generation) | [5](#x-code-decision) | [2](#x-code-evaluation) | [3](#x-code-analysis) |
-| multimodal | [7](#x-multimodal-understanding) | [13](#x-multimodal-generation) | [27](#x-multimodal-decision) | [1](#x-multimodal-evaluation) | · |
+| action | [9](#x-action-understanding) | [27](#x-action-generation) | [118](#x-action-decision) | [9](#x-action-evaluation) | [2](#x-action-analysis) |
+| state | [15](#x-state-understanding) | [2](#x-state-generation) | [57](#x-state-decision) | [1](#x-state-evaluation) | · |
+| code | [1](#x-code-understanding) | [7](#x-code-generation) | [7](#x-code-decision) | [2](#x-code-evaluation) | [3](#x-code-analysis) |
+| multimodal | [11](#x-multimodal-understanding) | [13](#x-multimodal-generation) | [30](#x-multimodal-decision) | [1](#x-multimodal-evaluation) | · |
 | tabular | [1](#x-tabular-understanding) | · | · | · | · |
 
 <a id="x-text-understanding"></a>
 
-### text × understanding（11）
+### text × understanding（14）
 
 - [MiniLM: Deep Self-Attention Distillation for Task-Agnostic Compression of Pre-Trained Transformers](paper-catalog.md#p020)
 - [DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter](paper-catalog.md#p021)
@@ -511,10 +600,13 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [MEMORA: Embodied Action Memory from Egocentric Videos for Reasoning and Planning](paper-catalog.md#p138)
 - [HoloAgent-0: A Unified Embodied Agent Framework with 3D Spatial Memory](paper-catalog.md#p139)
 - [Resurrecting Recurrent Neural Networks for Long Sequences](paper-catalog.md#p163)
+- [ConceptFusion: Open-set Multimodal 3D Mapping](paper-catalog.md#p231)
+- [Gemini Robotics: Bringing AI into the Physical World](paper-catalog.md#p253)
+- [Gemini Robotics 1.5: Pushing the Frontier of Generalist Robots with Advanced Embodied Reasoning, Thinking, and Motion Transfer](paper-catalog.md#p261)
 
 <a id="x-text-generation"></a>
 
-### text × generation（55）
+### text × generation（58）
 
 - [Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters](paper-catalog.md#p001)
 - [Towards Thinking-Optimal Scaling of Test-Time Compute for LLM Reasoning](paper-catalog.md#p002)
@@ -571,10 +663,13 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Attention Residuals](paper-catalog.md#p187)
 - [DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence](paper-catalog.md#p188)
 - [Kimi K3: Open Frontier Intelligence](paper-catalog.md#p189)
+- [Learning Universal Policies via Text-Guided Video Generation](paper-catalog.md#p230)
+- [Learning Interactive Real-World Simulators](paper-catalog.md#p237)
+- [Genie Envisioner: A Unified World Foundation Platform for Robotic Manipulation](paper-catalog.md#p258)
 
 <a id="x-text-decision"></a>
 
-### text × decision（32）
+### text × decision（54）
 
 - [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](paper-catalog.md#p034)
 - [ReAct: Synergizing Reasoning and Acting in Language Models](paper-catalog.md#p040)
@@ -608,10 +703,32 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Finding bugs across the Python ecosystem with Claude and property-based testing](paper-catalog.md#p160)
 - [Kimi K2: Open Agentic Intelligence](paper-catalog.md#p184)
 - [Kimi K3: Open Frontier Intelligence](paper-catalog.md#p189)
+- [Speaker-Follower Models for Vision-and-Language Navigation](paper-catalog.md#p209)
+- [ALFRED: A Benchmark for Interpreting Grounded Instructions for Everyday Tasks](paper-catalog.md#p216)
+- [Beyond the Nav-Graph: Vision-and-Language Navigation in Continuous Environments](paper-catalog.md#p217)
+- [Sim-to-Real Transfer for Vision-and-Language Navigation](paper-catalog.md#p219)
+- [LM-Nav: Robotic Navigation with Large Pre-Trained Models of Language, Vision, and Action](paper-catalog.md#p226)
+- [Inner Monologue: Embodied Reasoning through Planning with Language Models](paper-catalog.md#p227)
+- [Code as Policies: Language Model Programs for Embodied Control](paper-catalog.md#p228)
+- [LLM-Planner: Few-Shot Grounded Planning for Embodied Agents with Large Language Models](paper-catalog.md#p229)
+- [Learning Universal Policies via Text-Guided Video Generation](paper-catalog.md#p230)
+- [VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models](paper-catalog.md#p235)
+- [Learning Interactive Real-World Simulators](paper-catalog.md#p237)
+- [VLFM: Vision-Language Frontier Maps for Zero-Shot Semantic Navigation](paper-catalog.md#p241)
+- [NaVILA: Legged Robot Vision-Language-Action Model for Navigation](paper-catalog.md#p248)
+- [Hi Robot: Open-Ended Instruction Following with Hierarchical Vision-Language-Action Models](paper-catalog.md#p251)
+- [Gemini Robotics: Bringing AI into the Physical World](paper-catalog.md#p253)
+- [Knowledge Insulating Vision-Language-Action Models: Train Fast, Run Fast, Generalize Better](paper-catalog.md#p255)
+- [Genie Envisioner: A Unified World Foundation Platform for Robotic Manipulation](paper-catalog.md#p258)
+- [SimpleVLA-RL: Scaling VLA Training via Reinforcement Learning](paper-catalog.md#p259)
+- [Gemini Robotics 1.5: Pushing the Frontier of Generalist Robots with Advanced Embodied Reasoning, Thinking, and Motion Transfer](paper-catalog.md#p261)
+- [π*0.6: a VLA That Learns From Experience](paper-catalog.md#p263)
+- [Ground Slow, Move Fast: A Dual-System Foundation Model for Generalizable Vision-and-Language Navigation](paper-catalog.md#p265)
+- [ABot-N1: Toward a General Visual Language Navigation Foundation Model](paper-catalog.md#p268)
 
 <a id="x-text-evaluation"></a>
 
-### text × evaluation（7）
+### text × evaluation（11）
 
 - [PersonaEval: Are LLM Evaluators Human Enough to Judge Role-Play?](paper-catalog.md#p032)
 - [On scalable oversight with weak LLMs judging strong LLMs](paper-catalog.md#p033)
@@ -620,6 +737,10 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Vision-and-Language Navigation: Interpreting visually-grounded navigation instructions in real environments](paper-catalog.md#p119)
 - [Finding bugs across the Python ecosystem with Claude and property-based testing](paper-catalog.md#p160)
 - [Metamorphic Testing of Multi-Agent LLM Systems: A Trace-Based Behavioral Oracle Framework](paper-catalog.md#p161)
+- [ALFRED: A Benchmark for Interpreting Grounded Instructions for Everyday Tasks](paper-catalog.md#p216)
+- [Beyond the Nav-Graph: Vision-and-Language Navigation in Continuous Environments](paper-catalog.md#p217)
+- [EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents](paper-catalog.md#p250)
+- [Genie Envisioner: A Unified World Foundation Platform for Robotic Manipulation](paper-catalog.md#p258)
 
 <a id="x-text-analysis"></a>
 
@@ -648,7 +769,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-image-understanding"></a>
 
-### image × understanding（24）
+### image × understanding（58）
 
 - [FOCUS: Object-Centric World Models for Robotics Manipulation](paper-catalog.md#p048)
 - [A High-Fidelity Digital Twin for Robotic Manipulation Based on 3D Gaussian Splatting](paper-catalog.md#p054)
@@ -674,10 +795,44 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [FitNets: Hints for Thin Deep Nets](paper-catalog.md#p142)
 - [Distilling the Knowledge in a Neural Network](paper-catalog.md#p143)
 - [Resurrecting Recurrent Neural Networks for Long Sequences](paper-catalog.md#p163)
+- [ORB-SLAM: a Versatile and Accurate Monocular SLAM System](paper-catalog.md#p201)
+- [You Only Look Once: Unified, Real-Time Object Detection](paper-catalog.md#p202)
+- [Direct Sparse Odometry](paper-catalog.md#p203)
+- [ORB-SLAM2: an Open-Source SLAM System for Monocular, Stereo and RGB-D Cameras](paper-catalog.md#p204)
+- [Mask R-CNN](paper-catalog.md#p205)
+- [VINS-Mono: A Robust and Versatile Monocular Visual-Inertial State Estimator](paper-catalog.md#p206)
+- [Digging Into Self-Supervised Monocular Depth Estimation](paper-catalog.md#p208)
+- [PointPillars: Fast Encoders for Object Detection from Point Clouds](paper-catalog.md#p212)
+- [nuScenes: A multimodal dataset for autonomous driving](paper-catalog.md#p214)
+- [LIO-SAM: Tightly-coupled Lidar Inertial Odometry via Smoothing and Mapping](paper-catalog.md#p218)
+- [iMAP: Implicit Mapping and Positioning in Real-Time](paper-catalog.md#p220)
+- [FAST-LIO2: Fast Direct LiDAR-inertial Odometry](paper-catalog.md#p221)
+- [DROID-SLAM: Deep Visual SLAM for Monocular, Stereo, and RGB-D Cameras](paper-catalog.md#p222)
+- [NICE-SLAM: Neural Implicit Scalable Encoding for SLAM](paper-catalog.md#p223)
+- [BEVFusion: Multi-Task Multi-Sensor Fusion with Unified Bird's-Eye View Representation](paper-catalog.md#p224)
+- [ConceptFusion: Open-set Multimodal 3D Mapping](paper-catalog.md#p231)
+- [Segment Anything](paper-catalog.md#p232)
+- [SplaTAM: Splat, Track & Map 3D Gaussians for Dense RGB-D SLAM](paper-catalog.md#p240)
+- [Gaussian Splatting SLAM](paper-catalog.md#p242)
+- [Depth Anything: Unleashing the Power of Large-Scale Unlabeled Data](paper-catalog.md#p243)
+- [FM-Fusion: Instance-aware Semantic Mapping Boosted by Vision-Language Foundation Models](paper-catalog.md#p244)
+- [Depth Anything V2](paper-catalog.md#p245)
+- [MASt3R-SLAM: Real-Time Dense SLAM with 3D Reconstruction Priors](paper-catalog.md#p249)
+- [VGGT: Visual Geometry Grounded Transformer](paper-catalog.md#p252)
+- [Gemini Robotics: Bringing AI into the Physical World](paper-catalog.md#p253)
+- [VGGT-SLAM: Dense RGB SLAM Optimized on the SL(4) Manifold](paper-catalog.md#p254)
+- [VGGT-Long: Chunk it, Loop it, Align it -- Pushing VGGT's Limits on Kilometer-scale Long RGB Sequences](paper-catalog.md#p257)
+- [MASt3R-Fusion: Integrating Feed-Forward Visual Model with IMU, GNSS for High-Functionality SLAM](paper-catalog.md#p260)
+- [Gemini Robotics 1.5: Pushing the Frontier of Generalist Robots with Advanced Embodied Reasoning, Thinking, and Motion Transfer](paper-catalog.md#p261)
+- [Dynamic Visual SLAM using a General 3D Prior](paper-catalog.md#p264)
+- [VGGT-SLAM 2.0: Real-time Dense Feed-forward Scene Reconstruction](paper-catalog.md#p267)
+- [A Multi-State Constraint Kalman Filter for Vision-aided Inertial Navigation](paper-catalog.md#p269)
+- [OpenVINS: A Research Platform for Visual-Inertial Estimation](paper-catalog.md#p270)
+- [Parallel Tracking and Mapping for Small AR Workspaces](paper-catalog.md#p271)
 
 <a id="x-image-generation"></a>
 
-### image × generation（10）
+### image × generation（12）
 
 - [DINO-WM: World Models on Pre-trained Visual Features enable Zero-shot Planning](paper-catalog.md#p046)
 - [LaDi-WM: A Latent Diffusion-based World Model for Predictive Manipulation](paper-catalog.md#p049)
@@ -689,10 +844,12 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [HunyuanVideo: A Systematic Framework For Large Video Generative Models](paper-catalog.md#p192)
 - [Wan: Open and Advanced Large-Scale Video Generative Models](paper-catalog.md#p194)
 - [Kling-Omni Technical Report](paper-catalog.md#p196)
+- [World Models](paper-catalog.md#p207)
+- [Learning Latent Dynamics for Planning from Pixels](paper-catalog.md#p211)
 
 <a id="x-image-decision"></a>
 
-### image × decision（48）
+### image × decision（77）
 
 - [DINO-WM: World Models on Pre-trained Visual Features enable Zero-shot Planning](paper-catalog.md#p046)
 - [FOCUS: Object-Centric World Models for Robotics Manipulation](paper-catalog.md#p048)
@@ -732,7 +889,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Explore, Execute, Evolve: A Skill Acquisition and Reuse Loop for Embodied Agents](paper-catalog.md#p136)
 - [EmbodiedSkills: A Unified Framework for Orchestrating, Training, and Deploying VLA Agents](paper-catalog.md#p137)
 - [HoloAgent-0: A Unified Embodied Agent Framework with 3D Spatial Memory](paper-catalog.md#p139)
-- [Recovery RL: Safe Reinforcement Learning With Learned Recovery Zones](paper-catalog.md#p155)
+- [Recovery RL: Safe Reinforcement Learning with Learned Recovery Zones](paper-catalog.md#p155)
 - [Learning robust perceptive locomotion for quadrupedal robots in the wild](paper-catalog.md#p156)
 - [Prioritized Level Replay](paper-catalog.md#p157)
 - [FastRLAP: A System for Learning High-Speed Driving via Deep RL and Autonomous Practicing](paper-catalog.md#p162)
@@ -742,14 +899,47 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Robot Parkour Learning](paper-catalog.md#p168)
 - [Prioritized Experience Replay](paper-catalog.md#p170)
 - [First return, then explore](paper-catalog.md#p171)
+- [A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning](paper-catalog.md#p200)
+- [World Models](paper-catalog.md#p207)
+- [Speaker-Follower Models for Vision-and-Language Navigation](paper-catalog.md#p209)
+- [Learning Latent Dynamics for Planning from Pixels](paper-catalog.md#p211)
+- [DD-PPO: Learning Near-Perfect PointGoal Navigators from 2.5 Billion Frames](paper-catalog.md#p215)
+- [ALFRED: A Benchmark for Interpreting Grounded Instructions for Everyday Tasks](paper-catalog.md#p216)
+- [Beyond the Nav-Graph: Vision-and-Language Navigation in Continuous Environments](paper-catalog.md#p217)
+- [Sim-to-Real Transfer for Vision-and-Language Navigation](paper-catalog.md#p219)
+- [DayDreamer: World Models for Physical Robot Learning](paper-catalog.md#p225)
+- [LM-Nav: Robotic Navigation with Large Pre-Trained Models of Language, Vision, and Action](paper-catalog.md#p226)
+- [Inner Monologue: Embodied Reasoning through Planning with Language Models](paper-catalog.md#p227)
+- [LLM-Planner: Few-Shot Grounded Planning for Embodied Agents with Large Language Models](paper-catalog.md#p229)
+- [Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware](paper-catalog.md#p233)
+- [ViNT: A Foundation Model for Visual Navigation](paper-catalog.md#p234)
+- [VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models](paper-catalog.md#p235)
+- [NoMaD: Goal Masked Diffusion Policies for Navigation and Exploration](paper-catalog.md#p238)
+- [TD-MPC2: Scalable, Robust World Models for Continuous Control](paper-catalog.md#p239)
+- [VLFM: Vision-Language Frontier Maps for Zero-Shot Semantic Navigation](paper-catalog.md#p241)
+- [Diffusion Policy Policy Optimization](paper-catalog.md#p246)
+- [Precise and Dexterous Robotic Manipulation via Human-in-the-Loop Reinforcement Learning](paper-catalog.md#p247)
+- [NaVILA: Legged Robot Vision-Language-Action Model for Navigation](paper-catalog.md#p248)
+- [Hi Robot: Open-Ended Instruction Following with Hierarchical Vision-Language-Action Models](paper-catalog.md#p251)
+- [Gemini Robotics: Bringing AI into the Physical World](paper-catalog.md#p253)
+- [Knowledge Insulating Vision-Language-Action Models: Train Fast, Run Fast, Generalize Better](paper-catalog.md#p255)
+- [SimpleVLA-RL: Scaling VLA Training via Reinforcement Learning](paper-catalog.md#p259)
+- [Gemini Robotics 1.5: Pushing the Frontier of Generalist Robots with Advanced Embodied Reasoning, Thinking, and Motion Transfer](paper-catalog.md#p261)
+- [π*0.6: a VLA That Learns From Experience](paper-catalog.md#p263)
+- [Ground Slow, Move Fast: A Dual-System Foundation Model for Generalizable Vision-and-Language Navigation](paper-catalog.md#p265)
+- [ABot-N1: Toward a General Visual Language Navigation Foundation Model](paper-catalog.md#p268)
 
 <a id="x-image-evaluation"></a>
 
-### image × evaluation（3）
+### image × evaluation（7）
 
 - [LARY: A Latent Action Representation Yielding Benchmark for Generalizable Vision-to-Action Alignment](paper-catalog.md#p060)
 - [Vision-and-Language Navigation: Interpreting visually-grounded navigation instructions in real environments](paper-catalog.md#p119)
 - [Rethinking Robustness Assessment: Adversarial Attacks on Learning-based Quadrupedal Locomotion Controllers](paper-catalog.md#p166)
+- [nuScenes: A multimodal dataset for autonomous driving](paper-catalog.md#p214)
+- [ALFRED: A Benchmark for Interpreting Grounded Instructions for Everyday Tasks](paper-catalog.md#p216)
+- [Beyond the Nav-Graph: Vision-and-Language Navigation in Continuous Environments](paper-catalog.md#p217)
+- [EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents](paper-catalog.md#p250)
 
 <a id="x-image-analysis"></a>
 
@@ -761,16 +951,19 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-video-understanding"></a>
 
-### video × understanding（4）
+### video × understanding（7）
 
 - [SlotFormer: Unsupervised Visual Dynamics Simulation with Object-Centric Models](paper-catalog.md#p042)
 - [SAVi++: Towards End-to-End Object-Centric Learning from Real-World Videos](paper-catalog.md#p043)
 - [PIN-WM: Learning Physics-INformed World Models for Non-Prehensile Manipulation](paper-catalog.md#p062)
 - [MEMORA: Embodied Action Memory from Egocentric Videos for Reasoning and Planning](paper-catalog.md#p138)
+- [Digging Into Self-Supervised Monocular Depth Estimation](paper-catalog.md#p208)
+- [nuScenes: A multimodal dataset for autonomous driving](paper-catalog.md#p214)
+- [V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning](paper-catalog.md#p256)
 
 <a id="x-video-generation"></a>
 
-### video × generation（23）
+### video × generation（29）
 
 - [SlotFormer: Unsupervised Visual Dynamics Simulation with Object-Centric Models](paper-catalog.md#p042)
 - [OccWorld: Learning a 3D Occupancy World Model for Autonomous Driving](paper-catalog.md#p044)
@@ -795,10 +988,16 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Seedance 2.0: Advancing Video Generation for World Complexity](paper-catalog.md#p197)
 - [Video generation models as world simulators](paper-catalog.md#p198)
 - [Veo: a text-to-video generation system](paper-catalog.md#p199)
+- [Learning Universal Policies via Text-Guided Video Generation](paper-catalog.md#p230)
+- [Learning Interactive Real-World Simulators](paper-catalog.md#p237)
+- [V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning](paper-catalog.md#p256)
+- [Genie Envisioner: A Unified World Foundation Platform for Robotic Manipulation](paper-catalog.md#p258)
+- [Ctrl-World: A Controllable Generative World Model for Robot Manipulation](paper-catalog.md#p262)
+- [Evaluating Gemini Robotics Policies in a Veo World Simulator](paper-catalog.md#p266)
 
 <a id="x-video-decision"></a>
 
-### video × decision（15）
+### video × decision（19）
 
 - [OccWorld: Learning a 3D Occupancy World Model for Autonomous Driving](paper-catalog.md#p044)
 - [Driving in the Occupancy World: Vision-Centric 4D Occupancy Forecasting and Planning via World Models for Autonomous Driving](paper-catalog.md#p045)
@@ -815,12 +1014,20 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Behavior Prompting Policy: Demonstrations as Prompts for Manipulation](paper-catalog.md#p089)
 - [Learning from Massive Human Videos for Universal Humanoid Pose Control](paper-catalog.md#p096)
 - [MEMORA: Embodied Action Memory from Egocentric Videos for Reasoning and Planning](paper-catalog.md#p138)
+- [Learning Universal Policies via Text-Guided Video Generation](paper-catalog.md#p230)
+- [Learning Interactive Real-World Simulators](paper-catalog.md#p237)
+- [V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning](paper-catalog.md#p256)
+- [Genie Envisioner: A Unified World Foundation Platform for Robotic Manipulation](paper-catalog.md#p258)
 
 <a id="x-video-evaluation"></a>
 
-### video × evaluation（1）
+### video × evaluation（5）
 
 - [LARY: A Latent Action Representation Yielding Benchmark for Generalizable Vision-to-Action Alignment](paper-catalog.md#p060)
+- [nuScenes: A multimodal dataset for autonomous driving](paper-catalog.md#p214)
+- [Genie Envisioner: A Unified World Foundation Platform for Robotic Manipulation](paper-catalog.md#p258)
+- [Ctrl-World: A Controllable Generative World Model for Robot Manipulation](paper-catalog.md#p262)
+- [Evaluating Gemini Robotics Policies in a Veo World Simulator](paper-catalog.md#p266)
 
 <a id="x-video-analysis"></a>
 
@@ -846,7 +1053,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-action-understanding"></a>
 
-### action × understanding（6）
+### action × understanding（9）
 
 - [FOCUS: Object-Centric World Models for Robotics Manipulation](paper-catalog.md#p048)
 - [A High-Fidelity Digital Twin for Robotic Manipulation Based on 3D Gaussian Splatting](paper-catalog.md#p054)
@@ -854,10 +1061,13 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [PIN-WM: Learning Physics-INformed World Models for Non-Prehensile Manipulation](paper-catalog.md#p062)
 - [InternVLA-A1: Unifying Understanding, Generation and Action for Robotic Manipulation](paper-catalog.md#p090)
 - [HoloAgent-0: A Unified Embodied Agent Framework with 3D Spatial Memory](paper-catalog.md#p139)
+- [Gemini Robotics: Bringing AI into the Physical World](paper-catalog.md#p253)
+- [V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning](paper-catalog.md#p256)
+- [Gemini Robotics 1.5: Pushing the Frontier of Generalist Robots with Advanced Embodied Reasoning, Thinking, and Motion Transfer](paper-catalog.md#p261)
 
 <a id="x-action-generation"></a>
 
-### action × generation（19）
+### action × generation（27）
 
 - [OccWorld: Learning a 3D Occupancy World Model for Autonomous Driving](paper-catalog.md#p044)
 - [Driving in the Occupancy World: Vision-Centric 4D Occupancy Forecasting and Planning via World Models for Autonomous Driving](paper-catalog.md#p045)
@@ -878,10 +1088,18 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Reconstruction or Semantics? What Makes a Latent Space Useful for Robotic World Models](paper-catalog.md#p134)
 - [Genie: Generative Interactive Environments](paper-catalog.md#p191)
 - [Cosmos World Foundation Model Platform for Physical AI](paper-catalog.md#p193)
+- [World Models](paper-catalog.md#p207)
+- [Learning Latent Dynamics for Planning from Pixels](paper-catalog.md#p211)
+- [Learning Universal Policies via Text-Guided Video Generation](paper-catalog.md#p230)
+- [Learning Interactive Real-World Simulators](paper-catalog.md#p237)
+- [V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning](paper-catalog.md#p256)
+- [Genie Envisioner: A Unified World Foundation Platform for Robotic Manipulation](paper-catalog.md#p258)
+- [Ctrl-World: A Controllable Generative World Model for Robot Manipulation](paper-catalog.md#p262)
+- [Evaluating Gemini Robotics Policies in a Veo World Simulator](paper-catalog.md#p266)
 
 <a id="x-action-decision"></a>
 
-### action × decision（81）
+### action × decision（118）
 
 - [OccWorld: Learning a 3D Occupancy World Model for Autonomous Driving](paper-catalog.md#p044)
 - [Driving in the Occupancy World: Vision-Centric 4D Occupancy Forecasting and Planning via World Models for Autonomous Driving](paper-catalog.md#p045)
@@ -951,7 +1169,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [HoloAgent-0: A Unified Embodied Agent Framework with 3D Spatial Memory](paper-catalog.md#p139)
 - [Learning Quadrupedal Locomotion over Challenging Terrain](paper-catalog.md#p153)
 - [Robust Recovery Controller for a Quadrupedal Robot using Deep Reinforcement Learning](paper-catalog.md#p154)
-- [Recovery RL: Safe Reinforcement Learning With Learned Recovery Zones](paper-catalog.md#p155)
+- [Recovery RL: Safe Reinforcement Learning with Learned Recovery Zones](paper-catalog.md#p155)
 - [Learning robust perceptive locomotion for quadrupedal robots in the wild](paper-catalog.md#p156)
 - [Prioritized Level Replay](paper-catalog.md#p157)
 - [Robust Quadrupedal Locomotion via Risk-Averse Policy Learning](paper-catalog.md#p158)
@@ -964,14 +1182,57 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [CaT: Constraints as Terminations for Legged Locomotion Reinforcement Learning](paper-catalog.md#p169)
 - [Prioritized Experience Replay](paper-catalog.md#p170)
 - [First return, then explore](paper-catalog.md#p171)
+- [A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning](paper-catalog.md#p200)
+- [World Models](paper-catalog.md#p207)
+- [Speaker-Follower Models for Vision-and-Language Navigation](paper-catalog.md#p209)
+- [Crowd-Robot Interaction: Crowd-aware Robot Navigation with Attention-based Deep Reinforcement Learning](paper-catalog.md#p210)
+- [Learning Latent Dynamics for Planning from Pixels](paper-catalog.md#p211)
+- [Learning agile and dynamic motor skills for legged robots](paper-catalog.md#p213)
+- [DD-PPO: Learning Near-Perfect PointGoal Navigators from 2.5 Billion Frames](paper-catalog.md#p215)
+- [ALFRED: A Benchmark for Interpreting Grounded Instructions for Everyday Tasks](paper-catalog.md#p216)
+- [Beyond the Nav-Graph: Vision-and-Language Navigation in Continuous Environments](paper-catalog.md#p217)
+- [Sim-to-Real Transfer for Vision-and-Language Navigation](paper-catalog.md#p219)
+- [DayDreamer: World Models for Physical Robot Learning](paper-catalog.md#p225)
+- [LM-Nav: Robotic Navigation with Large Pre-Trained Models of Language, Vision, and Action](paper-catalog.md#p226)
+- [Inner Monologue: Embodied Reasoning through Planning with Language Models](paper-catalog.md#p227)
+- [Code as Policies: Language Model Programs for Embodied Control](paper-catalog.md#p228)
+- [LLM-Planner: Few-Shot Grounded Planning for Embodied Agents with Large Language Models](paper-catalog.md#p229)
+- [Learning Universal Policies via Text-Guided Video Generation](paper-catalog.md#p230)
+- [Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware](paper-catalog.md#p233)
+- [ViNT: A Foundation Model for Visual Navigation](paper-catalog.md#p234)
+- [VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models](paper-catalog.md#p235)
+- [DTC: Deep Tracking Control](paper-catalog.md#p236)
+- [Learning Interactive Real-World Simulators](paper-catalog.md#p237)
+- [NoMaD: Goal Masked Diffusion Policies for Navigation and Exploration](paper-catalog.md#p238)
+- [TD-MPC2: Scalable, Robust World Models for Continuous Control](paper-catalog.md#p239)
+- [VLFM: Vision-Language Frontier Maps for Zero-Shot Semantic Navigation](paper-catalog.md#p241)
+- [Diffusion Policy Policy Optimization](paper-catalog.md#p246)
+- [Precise and Dexterous Robotic Manipulation via Human-in-the-Loop Reinforcement Learning](paper-catalog.md#p247)
+- [NaVILA: Legged Robot Vision-Language-Action Model for Navigation](paper-catalog.md#p248)
+- [Hi Robot: Open-Ended Instruction Following with Hierarchical Vision-Language-Action Models](paper-catalog.md#p251)
+- [Gemini Robotics: Bringing AI into the Physical World](paper-catalog.md#p253)
+- [Knowledge Insulating Vision-Language-Action Models: Train Fast, Run Fast, Generalize Better](paper-catalog.md#p255)
+- [V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning](paper-catalog.md#p256)
+- [Genie Envisioner: A Unified World Foundation Platform for Robotic Manipulation](paper-catalog.md#p258)
+- [SimpleVLA-RL: Scaling VLA Training via Reinforcement Learning](paper-catalog.md#p259)
+- [Gemini Robotics 1.5: Pushing the Frontier of Generalist Robots with Advanced Embodied Reasoning, Thinking, and Motion Transfer](paper-catalog.md#p261)
+- [π*0.6: a VLA That Learns From Experience](paper-catalog.md#p263)
+- [Ground Slow, Move Fast: A Dual-System Foundation Model for Generalizable Vision-and-Language Navigation](paper-catalog.md#p265)
+- [ABot-N1: Toward a General Visual Language Navigation Foundation Model](paper-catalog.md#p268)
 
 <a id="x-action-evaluation"></a>
 
-### action × evaluation（3）
+### action × evaluation（9）
 
 - [LARY: A Latent Action Representation Yielding Benchmark for Generalizable Vision-to-Action Alignment](paper-catalog.md#p060)
 - [Vision-and-Language Navigation: Interpreting visually-grounded navigation instructions in real environments](paper-catalog.md#p119)
 - [Rethinking Robustness Assessment: Adversarial Attacks on Learning-based Quadrupedal Locomotion Controllers](paper-catalog.md#p166)
+- [ALFRED: A Benchmark for Interpreting Grounded Instructions for Everyday Tasks](paper-catalog.md#p216)
+- [Beyond the Nav-Graph: Vision-and-Language Navigation in Continuous Environments](paper-catalog.md#p217)
+- [EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents](paper-catalog.md#p250)
+- [Genie Envisioner: A Unified World Foundation Platform for Robotic Manipulation](paper-catalog.md#p258)
+- [Ctrl-World: A Controllable Generative World Model for Robot Manipulation](paper-catalog.md#p262)
+- [Evaluating Gemini Robotics Policies in a Veo World Simulator](paper-catalog.md#p266)
 
 <a id="x-action-analysis"></a>
 
@@ -982,7 +1243,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-state-understanding"></a>
 
-### state × understanding（7）
+### state × understanding（15）
 
 - [DS-VIO: Robust and Efficient Stereo Visual Inertial Odometry based on Dual Stage EKF](paper-catalog.md#p082)
 - [PLV-IEKF: Consistent Visual-Inertial Odometry using Points, Lines, and Vanishing Points](paper-catalog.md#p083)
@@ -991,6 +1252,14 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Learned IMU Bias Prediction for Invariant Visual Inertial Odometry](paper-catalog.md#p086)
 - [ORB-SLAM3: An Accurate Open-Source Library for Visual, Visual-Inertial and Multi-Map SLAM](paper-catalog.md#p123)
 - [Quaternion kinematics for the error-state Kalman filter](paper-catalog.md#p125)
+- [VINS-Mono: A Robust and Versatile Monocular Visual-Inertial State Estimator](paper-catalog.md#p206)
+- [LIO-SAM: Tightly-coupled Lidar Inertial Odometry via Smoothing and Mapping](paper-catalog.md#p218)
+- [FAST-LIO2: Fast Direct LiDAR-inertial Odometry](paper-catalog.md#p221)
+- [Gemini Robotics: Bringing AI into the Physical World](paper-catalog.md#p253)
+- [MASt3R-Fusion: Integrating Feed-Forward Visual Model with IMU, GNSS for High-Functionality SLAM](paper-catalog.md#p260)
+- [Gemini Robotics 1.5: Pushing the Frontier of Generalist Robots with Advanced Embodied Reasoning, Thinking, and Motion Transfer](paper-catalog.md#p261)
+- [A Multi-State Constraint Kalman Filter for Vision-aided Inertial Navigation](paper-catalog.md#p269)
+- [OpenVINS: A Research Platform for Visual-Inertial Estimation](paper-catalog.md#p270)
 
 <a id="x-state-generation"></a>
 
@@ -1001,7 +1270,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-state-decision"></a>
 
-### state × decision（46）
+### state × decision（57）
 
 - [Diffusion Policy: Visuomotor Policy Learning via Action Diffusion](paper-catalog.md#p067)
 - [$π_0$: A Vision-Language-Action Flow Model for General Robot Control](paper-catalog.md#p070)
@@ -1039,7 +1308,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Proximal Policy Optimization Algorithms](paper-catalog.md#p129)
 - [Learning Quadrupedal Locomotion over Challenging Terrain](paper-catalog.md#p153)
 - [Robust Recovery Controller for a Quadrupedal Robot using Deep Reinforcement Learning](paper-catalog.md#p154)
-- [Recovery RL: Safe Reinforcement Learning With Learned Recovery Zones](paper-catalog.md#p155)
+- [Recovery RL: Safe Reinforcement Learning with Learned Recovery Zones](paper-catalog.md#p155)
 - [Learning robust perceptive locomotion for quadrupedal robots in the wild](paper-catalog.md#p156)
 - [Robust Quadrupedal Locomotion via Risk-Averse Policy Learning](paper-catalog.md#p158)
 - [Learning Risk-Aware Quadrupedal Locomotion using Distributional Reinforcement Learning](paper-catalog.md#p159)
@@ -1049,6 +1318,17 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Extreme Parkour with Legged Robots](paper-catalog.md#p167)
 - [Robot Parkour Learning](paper-catalog.md#p168)
 - [CaT: Constraints as Terminations for Legged Locomotion Reinforcement Learning](paper-catalog.md#p169)
+- [Crowd-Robot Interaction: Crowd-aware Robot Navigation with Attention-based Deep Reinforcement Learning](paper-catalog.md#p210)
+- [Learning agile and dynamic motor skills for legged robots](paper-catalog.md#p213)
+- [DD-PPO: Learning Near-Perfect PointGoal Navigators from 2.5 Billion Frames](paper-catalog.md#p215)
+- [DayDreamer: World Models for Physical Robot Learning](paper-catalog.md#p225)
+- [DTC: Deep Tracking Control](paper-catalog.md#p236)
+- [TD-MPC2: Scalable, Robust World Models for Continuous Control](paper-catalog.md#p239)
+- [Diffusion Policy Policy Optimization](paper-catalog.md#p246)
+- [Precise and Dexterous Robotic Manipulation via Human-in-the-Loop Reinforcement Learning](paper-catalog.md#p247)
+- [Gemini Robotics: Bringing AI into the Physical World](paper-catalog.md#p253)
+- [Knowledge Insulating Vision-Language-Action Models: Train Fast, Run Fast, Generalize Better](paper-catalog.md#p255)
+- [Gemini Robotics 1.5: Pushing the Frontier of Generalist Robots with Advanced Embodied Reasoning, Thinking, and Motion Transfer](paper-catalog.md#p261)
 
 <a id="x-state-evaluation"></a>
 
@@ -1076,13 +1356,15 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-code-decision"></a>
 
-### code × decision（5）
+### code × decision（7）
 
 - [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](paper-catalog.md#p034)
 - [Voyager: An Open-Ended Embodied Agent with Large Language Models](paper-catalog.md#p041)
 - [Finding bugs across the Python ecosystem with Claude and property-based testing](paper-catalog.md#p160)
 - [Kimi K2: Open Agentic Intelligence](paper-catalog.md#p184)
 - [Kimi K3: Open Frontier Intelligence](paper-catalog.md#p189)
+- [Code as Policies: Language Model Programs for Embodied Control](paper-catalog.md#p228)
+- [VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models](paper-catalog.md#p235)
 
 <a id="x-code-evaluation"></a>
 
@@ -1101,7 +1383,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-multimodal-understanding"></a>
 
-### multimodal × understanding（7）
+### multimodal × understanding（11）
 
 - [Language-Grounded Hierarchical Planning and Execution with Multi-Robot 3D Scene Graphs](paper-catalog.md#p055)
 - [InternVLA-A1: Unifying Understanding, Generation and Action for Robotic Manipulation](paper-catalog.md#p090)
@@ -1110,6 +1392,10 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Learning Transferable Visual Models From Natural Language Supervision](paper-catalog.md#p132)
 - [MEMORA: Embodied Action Memory from Egocentric Videos for Reasoning and Planning](paper-catalog.md#p138)
 - [HoloAgent-0: A Unified Embodied Agent Framework with 3D Spatial Memory](paper-catalog.md#p139)
+- [ConceptFusion: Open-set Multimodal 3D Mapping](paper-catalog.md#p231)
+- [FM-Fusion: Instance-aware Semantic Mapping Boosted by Vision-Language Foundation Models](paper-catalog.md#p244)
+- [Gemini Robotics: Bringing AI into the Physical World](paper-catalog.md#p253)
+- [Gemini Robotics 1.5: Pushing the Frontier of Generalist Robots with Advanced Embodied Reasoning, Thinking, and Motion Transfer](paper-catalog.md#p261)
 
 <a id="x-multimodal-generation"></a>
 
@@ -1131,7 +1417,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-multimodal-decision"></a>
 
-### multimodal × decision（27）
+### multimodal × decision（30）
 
 - [Object-Centric World Model for Language-Guided Manipulation](paper-catalog.md#p052)
 - [Language-Grounded Hierarchical Planning and Execution with Multi-Robot 3D Scene Graphs](paper-catalog.md#p055)
@@ -1160,6 +1446,9 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [MEMORA: Embodied Action Memory from Egocentric Videos for Reasoning and Planning](paper-catalog.md#p138)
 - [HoloAgent-0: A Unified Embodied Agent Framework with 3D Spatial Memory](paper-catalog.md#p139)
 - [Kimi K3: Open Frontier Intelligence](paper-catalog.md#p189)
+- [Gemini Robotics: Bringing AI into the Physical World](paper-catalog.md#p253)
+- [Knowledge Insulating Vision-Language-Action Models: Train Fast, Run Fast, Generalize Better](paper-catalog.md#p255)
+- [Gemini Robotics 1.5: Pushing the Frontier of Generalist Robots with Advanced Embodied Reasoning, Thinking, and Motion Transfer](paper-catalog.md#p261)
 
 <a id="x-multimodal-evaluation"></a>
 

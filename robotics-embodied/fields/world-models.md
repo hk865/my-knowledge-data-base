@@ -299,7 +299,7 @@ Zero-WAM v2在RoboTwin 2.0（Chen等2025的双臂操作数据生成器与benchma
 
 [2] Zhou等. DINO-WM World Models on Pre-trained Visual Features enable Zero-shot Planning. arXiv:2411.04983v2，2025。核对§3.1编码器冻结、latent预测、可选独立解码器，§3.2与附录A.5规划。https://arxiv.org/html/2411.04983v2
 
-[3] Zero-WAM In-Context World Action Models for Zero-Shot Cross-Task Manipulation. arXiv:2608.26103v2，2026。核对§2–4，特别是视频动作分解、teacher forcing、flow matching与IFP；版本按v2固定。https://arxiv.org/html/2608.26103v2
+[3] Zero-WAM Zero-WAM: In-Context World-Action Modeling from Human Videos for Open-Ended Task Generalization. arXiv:2608.26103v2，2026。核对§2–4，特别是视频动作分解、teacher forcing、flow matching与IFP；版本按v2固定。https://arxiv.org/html/2608.26103v2
 
 [4] Hafner等. Mastering diverse control tasks through world models. Nature，2025。仅用于标明后续发表版本，本文不混用其配置与成绩。https://www.nature.com/articles/s41586-025-08744-2
 

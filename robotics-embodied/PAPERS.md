@@ -121,3 +121,75 @@
 - [Robust Quadrupedal Locomotion via Risk-Averse Policy Learning](papers/arxiv-2308.09405/README.md) · 2023 · 文献卡，非独立全文精读
 - [Learning Risk-Aware Quadrupedal Locomotion using Distributional Reinforcement Learning](papers/arxiv-2309.14246/README.md) · 2023 · 文献卡，非独立全文精读
 - [FastRLAP: A System for Learning High-Speed Driving via Deep RL and Autonomous Practicing](papers/fastrlap/README.md) · 2023 · 文献卡，非独立全文精读
+- [A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning](papers/arxiv-1011.0686/README.md) · 2011 · 文献卡，暂无独立精读
+- [ORB-SLAM: a Versatile and Accurate Monocular SLAM System](papers/arxiv-1502.00956/README.md) · 2015 · 文献卡，暂无独立精读
+- [You Only Look Once: Unified, Real-Time Object Detection](papers/arxiv-1506.02640/README.md) · 2015 · 文献卡，暂无独立精读
+- [Direct Sparse Odometry](papers/arxiv-1607.02565/README.md) · 2016 · 文献卡，暂无独立精读
+- [ORB-SLAM2: an Open-Source SLAM System for Monocular, Stereo and RGB-D Cameras](papers/arxiv-1610.06475/README.md) · 2016 · 文献卡，暂无独立精读
+- [Mask R-CNN](papers/arxiv-1703.06870/README.md) · 2017 · 文献卡，暂无独立精读
+- [VINS-Mono: A Robust and Versatile Monocular Visual-Inertial State Estimator](papers/arxiv-1708.03852/README.md) · 2017 · 文献卡，暂无独立精读
+- [World Models](papers/arxiv-1803.10122/README.md) · 2018 · 文献卡，暂无独立精读
+- [Digging Into Self-Supervised Monocular Depth Estimation](papers/arxiv-1806.01260/README.md) · 2018 · 文献卡，暂无独立精读
+- [Speaker-Follower Models for Vision-and-Language Navigation](papers/arxiv-1806.02724/README.md) · 2018 · 文献卡，暂无独立精读
+- [Crowd-Robot Interaction: Crowd-aware Robot Navigation with Attention-based Deep Reinforcement Learning](papers/arxiv-1809.08835/README.md) · 2018 · 文献卡，暂无独立精读
+- [Learning Latent Dynamics for Planning from Pixels](papers/arxiv-1811.04551/README.md) · 2018 · 文献卡，暂无独立精读
+- [PointPillars: Fast Encoders for Object Detection from Point Clouds](papers/arxiv-1812.05784/README.md) · 2018 · 文献卡，暂无独立精读
+- [Learning agile and dynamic motor skills for legged robots](papers/arxiv-1901.08652/README.md) · 2019 · 文献卡，暂无独立精读
+- [nuScenes: A multimodal dataset for autonomous driving](papers/arxiv-1903.11027/README.md) · 2019 · 文献卡，暂无独立精读
+- [DD-PPO: Learning Near-Perfect PointGoal Navigators from 2.5 Billion Frames](papers/arxiv-1911.00357/README.md) · 2019 · 文献卡，暂无独立精读
+- [ALFRED: A Benchmark for Interpreting Grounded Instructions for Everyday Tasks](papers/arxiv-1912.01734/README.md) · 2019 · 文献卡，暂无独立精读
+- [Beyond the Nav-Graph: Vision-and-Language Navigation in Continuous Environments](papers/arxiv-2004.02857/README.md) · 2020 · 文献卡，暂无独立精读
+- [LIO-SAM: Tightly-coupled Lidar Inertial Odometry via Smoothing and Mapping](papers/arxiv-2007.00258/README.md) · 2020 · 文献卡，暂无独立精读
+- [Sim-to-Real Transfer for Vision-and-Language Navigation](papers/arxiv-2011.03807/README.md) · 2020 · 文献卡，暂无独立精读
+- [iMAP: Implicit Mapping and Positioning in Real-Time](papers/arxiv-2103.12352/README.md) · 2021 · 文献卡，暂无独立精读
+- [FAST-LIO2: Fast Direct LiDAR-inertial Odometry](papers/arxiv-2107.06829/README.md) · 2021 · 文献卡，暂无独立精读
+- [DROID-SLAM: Deep Visual SLAM for Monocular, Stereo, and RGB-D Cameras](papers/arxiv-2108.10869/README.md) · 2021 · 文献卡，暂无独立精读
+- [NICE-SLAM: Neural Implicit Scalable Encoding for SLAM](papers/arxiv-2112.12130/README.md) · 2021 · 文献卡，暂无独立精读
+- [BEVFusion: Multi-Task Multi-Sensor Fusion with Unified Bird's-Eye View Representation](papers/arxiv-2205.13542/README.md) · 2022 · 文献卡，暂无独立精读
+- [DayDreamer: World Models for Physical Robot Learning](papers/arxiv-2206.14176/README.md) · 2022 · 文献卡，暂无独立精读
+- [LM-Nav: Robotic Navigation with Large Pre-Trained Models of Language, Vision, and Action](papers/arxiv-2207.04429/README.md) · 2022 · 文献卡，暂无独立精读
+- [Inner Monologue: Embodied Reasoning through Planning with Language Models](papers/arxiv-2207.05608/README.md) · 2022 · 文献卡，暂无独立精读
+- [Code as Policies: Language Model Programs for Embodied Control](papers/arxiv-2209.07753/README.md) · 2022 · 文献卡，暂无独立精读
+- [LLM-Planner: Few-Shot Grounded Planning for Embodied Agents with Large Language Models](papers/arxiv-2212.04088/README.md) · 2022 · 文献卡，暂无独立精读
+- [Learning Universal Policies via Text-Guided Video Generation](papers/arxiv-2302.00111/README.md) · 2023 · 文献卡，暂无独立精读
+- [ConceptFusion: Open-set Multimodal 3D Mapping](papers/arxiv-2302.07241/README.md) · 2023 · 文献卡，暂无独立精读
+- [Segment Anything](papers/arxiv-2304.02643/README.md) · 2023 · 文献卡，暂无独立精读
+- [Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware](papers/arxiv-2304.13705/README.md) · 2023 · 文献卡，暂无独立精读
+- [ViNT: A Foundation Model for Visual Navigation](papers/arxiv-2306.14846/README.md) · 2023 · 文献卡，暂无独立精读
+- [VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models](papers/arxiv-2307.05973/README.md) · 2023 · 文献卡，暂无独立精读
+- [DTC: Deep Tracking Control](papers/arxiv-2309.15462/README.md) · 2024 · 文献卡，暂无独立精读
+- [Learning Interactive Real-World Simulators](papers/arxiv-2310.06114/README.md) · 2023 · 文献卡，暂无独立精读
+- [NoMaD: Goal Masked Diffusion Policies for Navigation and Exploration](papers/arxiv-2310.07896/README.md) · 2023 · 文献卡，暂无独立精读
+- [TD-MPC2: Scalable, Robust World Models for Continuous Control](papers/arxiv-2310.16828/README.md) · 2023 · 文献卡，暂无独立精读
+- [SplaTAM: Splat, Track & Map 3D Gaussians for Dense RGB-D SLAM](papers/arxiv-2312.02126/README.md) · 2023 · 文献卡，暂无独立精读
+- [VLFM: Vision-Language Frontier Maps for Zero-Shot Semantic Navigation](papers/arxiv-2312.03275/README.md) · 2023 · 文献卡，暂无独立精读
+- [Gaussian Splatting SLAM](papers/arxiv-2312.06741/README.md) · 2023 · 文献卡，暂无独立精读
+- [Depth Anything: Unleashing the Power of Large-Scale Unlabeled Data](papers/arxiv-2401.10891/README.md) · 2024 · 文献卡，暂无独立精读
+- [FM-Fusion: Instance-aware Semantic Mapping Boosted by Vision-Language Foundation Models](papers/arxiv-2402.04555/README.md) · 2024 · 文献卡，暂无独立精读
+- [Depth Anything V2](papers/arxiv-2406.09414/README.md) · 2024 · 文献卡，暂无独立精读
+- [Diffusion Policy Policy Optimization](papers/arxiv-2409.00588/README.md) · 2024 · 文献卡，暂无独立精读
+- [Precise and Dexterous Robotic Manipulation via Human-in-the-Loop Reinforcement Learning](papers/arxiv-2410.21845/README.md) · 2024 · 文献卡，暂无独立精读
+- [NaVILA: Legged Robot Vision-Language-Action Model for Navigation](papers/arxiv-2412.04453/README.md) · 2024 · 文献卡，暂无独立精读
+- [MASt3R-SLAM: Real-Time Dense SLAM with 3D Reconstruction Priors](papers/arxiv-2412.12392/README.md) · 2024 · 文献卡，暂无独立精读
+- [EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents](papers/arxiv-2502.09560/README.md) · 2025 · 文献卡，暂无独立精读
+- [Hi Robot: Open-Ended Instruction Following with Hierarchical Vision-Language-Action Models](papers/arxiv-2502.19417/README.md) · 2025 · 文献卡，暂无独立精读
+- [VGGT: Visual Geometry Grounded Transformer](papers/arxiv-2503.11651/README.md) · 2025 · 文献卡，暂无独立精读
+- [Gemini Robotics: Bringing AI into the Physical World](papers/arxiv-2503.20020/README.md) · 2025 · 文献卡，暂无独立精读
+- [VGGT-SLAM: Dense RGB SLAM Optimized on the SL(4) Manifold](papers/arxiv-2505.12549/README.md) · 2025 · 文献卡，暂无独立精读
+- [Knowledge Insulating Vision-Language-Action Models: Train Fast, Run Fast, Generalize Better](papers/arxiv-2505.23705/README.md) · 2025 · 文献卡，暂无独立精读
+- [V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning](papers/arxiv-2506.09985/README.md) · 2025 · 文献卡，暂无独立精读
+- [VGGT-Long: Chunk it, Loop it, Align it -- Pushing VGGT's Limits on Kilometer-scale Long RGB Sequences](papers/arxiv-2507.16443/README.md) · 2025 · 文献卡，暂无独立精读
+- [Genie Envisioner: A Unified World Foundation Platform for Robotic Manipulation](papers/arxiv-2508.05635/README.md) · 2025 · 文献卡，暂无独立精读
+- [SimpleVLA-RL: Scaling VLA Training via Reinforcement Learning](papers/arxiv-2509.09674/README.md) · 2025 · 文献卡，暂无独立精读
+- [MASt3R-Fusion: Integrating Feed-Forward Visual Model with IMU, GNSS for High-Functionality SLAM](papers/arxiv-2509.20757/README.md) · 2025 · 文献卡，暂无独立精读
+- [Gemini Robotics 1.5: Pushing the Frontier of Generalist Robots with Advanced Embodied Reasoning, Thinking, and Motion Transfer](papers/arxiv-2510.03342/README.md) · 2025 · 文献卡，暂无独立精读
+- [Ctrl-World: A Controllable Generative World Model for Robot Manipulation](papers/arxiv-2510.10125/README.md) · 2025 · 文献卡，暂无独立精读
+- [π*0.6: a VLA That Learns From Experience](papers/arxiv-2511.14759/README.md) · 2025 · 文献卡，暂无独立精读
+- [Dynamic Visual SLAM using a General 3D Prior](papers/arxiv-2512.06868/README.md) · 2025 · 文献卡，暂无独立精读
+- [Ground Slow, Move Fast: A Dual-System Foundation Model for Generalizable Vision-and-Language Navigation](papers/arxiv-2512.08186/README.md) · 2025 · 文献卡，暂无独立精读
+- [Evaluating Gemini Robotics Policies in a Veo World Simulator](papers/arxiv-2512.10675/README.md) · 2025 · 文献卡，暂无独立精读
+- [VGGT-SLAM 2.0: Real-time Dense Feed-forward Scene Reconstruction](papers/arxiv-2601.19887/README.md) · 2026 · 文献卡，暂无独立精读
+- [ABot-N1: Toward a General Visual Language Navigation Foundation Model](papers/arxiv-2607.10383/README.md) · 2026 · 文献卡，暂无独立精读
+- [A Multi-State Constraint Kalman Filter for Vision-aided Inertial Navigation](papers/msckf/README.md) · 2007 · 文献卡，暂无独立精读
+- [OpenVINS: A Research Platform for Visual-Inertial Estimation](papers/openvins/README.md) · 2020 · 文献卡，暂无独立精读
+- [Parallel Tracking and Mapping for Small AR Workspaces](papers/ptam/README.md) · 2007 · 文献卡，暂无独立精读

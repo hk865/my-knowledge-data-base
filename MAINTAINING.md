@@ -80,6 +80,8 @@
 4. 运行 `python tools/register_paper.py`。它会登记 `papers.json`、`papers.csv`、`docs/paper-catalog.md`、领域的论文列表与计数，并重新生成 `docs/topics.md`。先加 `--dry` 看一遍它准备写入的标签。
 5. 手动把论文加到它所属方向的 `fields/<方向>/PAPERS.md`，并在相关领域页、关系页或思考笔记里引用它。
 
+**修改已登记论文的身份信息时**（题名、年份、作者、方向、标签），只改它的 `source.json`，然后运行 `python tools/sync_registry.py`，由它同步 `papers.json`、`papers.csv`、`docs/paper-catalog.md` 和 `docs/topics.md`。source.json 是论文身份的唯一来源。
+
 | source.json 字段 | 含义 |
 |---|---|
 | `resource_id` | `arxiv:<编号>`、`doi:<DOI>` 或 `url:<官方地址>` |

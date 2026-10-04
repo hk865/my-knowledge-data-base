@@ -438,8 +438,7 @@
       "llm/posttraining/sft",
       "llm/pretraining",
       "llm/architecture",
-      "llm/posttraining/rl",
-      "llm/inference"
+      "llm/posttraining/rl"
     ],
     "detail_topics": [
       "pretraining/multi-token prediction",
@@ -710,7 +709,11 @@
     "legacy_paths": [
       "docs/deep-readings/mamba.md"
     ],
-    "content_kind": "reading"
+    "content_kind": "reading",
+    "authors": [
+      "Albert Gu",
+      "Tri Dao"
+    ]
   },
   {
     "original_chat_urls": [
@@ -4420,7 +4423,21 @@
     "legacy_paths": [
       "robotics-embodied/papers/2026/zero-wam.md"
     ],
-    "content_kind": "reading"
+    "content_kind": "reading",
+    "authors": [
+      "Jiaming Zhou",
+      "Qihang Zhang",
+      "Gangwei Xu",
+      "Cunxin Fan",
+      "Yujie Zhao",
+      "Ruilin Wang",
+      "Yiming Luo",
+      "Shuai Yang",
+      "Xing Zhu",
+      "Yujun Shen",
+      "Junwei Liang",
+      "Yinghao Xu"
+    ]
   },
   {
     "original_chat_urls": [
@@ -4659,7 +4676,60 @@
     "canonical_readme": "robotics-embodied/papers/arxiv-2212.06817/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2212.06817/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Anthony Brohan",
+      "Noah Brown",
+      "Justice Carbajal",
+      "Yevgen Chebotar",
+      "Joseph Dabis",
+      "Chelsea Finn",
+      "Keerthana Gopalakrishnan",
+      "Karol Hausman",
+      "Alex Herzog",
+      "Jasmine Hsu",
+      "Julian Ibarz",
+      "Brian Ichter",
+      "Alex Irpan",
+      "Tomas Jackson",
+      "Sally Jesmonth",
+      "Nikhil J Joshi",
+      "Ryan Julian",
+      "Dmitry Kalashnikov",
+      "Yuheng Kuang",
+      "Isabel Leal",
+      "Kuang-Huei Lee",
+      "Sergey Levine",
+      "Yao Lu",
+      "Utsav Malla",
+      "Deeksha Manjunath",
+      "Igor Mordatch",
+      "Ofir Nachum",
+      "Carolina Parada",
+      "Jodilyn Peralta",
+      "Emily Perez",
+      "Karl Pertsch",
+      "Jornell Quiambao",
+      "Kanishka Rao",
+      "Michael Ryoo",
+      "Grecia Salazar",
+      "Pannag Sanketi",
+      "Kevin Sayed",
+      "Jaspiar Singh",
+      "Sumedh Sontakke",
+      "Austin Stone",
+      "Clayton Tan",
+      "Huong Tran",
+      "Vincent Vanhoucke",
+      "Steve Vega",
+      "Quan Vuong",
+      "Fei Xia",
+      "Ted Xiao",
+      "Peng Xu",
+      "Sichun Xu",
+      "Tianhe Yu",
+      "Brianna Zitkovich"
+    ]
   },
   {
     "original_chat_urls": [],
@@ -4742,7 +4812,63 @@
     "canonical_readme": "robotics-embodied/papers/arxiv-2307.15818/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2307.15818/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Anthony Brohan",
+      "Noah Brown",
+      "Justice Carbajal",
+      "Yevgen Chebotar",
+      "Xi Chen",
+      "Krzysztof Choromanski",
+      "Tianli Ding",
+      "Danny Driess",
+      "Avinava Dubey",
+      "Chelsea Finn",
+      "Pete Florence",
+      "Chuyuan Fu",
+      "Montse Gonzalez Arenas",
+      "Keerthana Gopalakrishnan",
+      "Kehang Han",
+      "Karol Hausman",
+      "Alexander Herzog",
+      "Jasmine Hsu",
+      "Brian Ichter",
+      "Alex Irpan",
+      "Nikhil Joshi",
+      "Ryan Julian",
+      "Dmitry Kalashnikov",
+      "Yuheng Kuang",
+      "Isabel Leal",
+      "Lisa Lee",
+      "Tsang-Wei Edward Lee",
+      "Sergey Levine",
+      "Yao Lu",
+      "Henryk Michalewski",
+      "Igor Mordatch",
+      "Karl Pertsch",
+      "Kanishka Rao",
+      "Krista Reymann",
+      "Michael Ryoo",
+      "Grecia Salazar",
+      "Pannag Sanketi",
+      "Pierre Sermanet",
+      "Jaspiar Singh",
+      "Anikait Singh",
+      "Radu Soricut",
+      "Huong Tran",
+      "Vincent Vanhoucke",
+      "Quan Vuong",
+      "Ayzaan Wahid",
+      "Stefan Welker",
+      "Paul Wohlhart",
+      "Jialin Wu",
+      "Fei Xia",
+      "Ted Xiao",
+      "Peng Xu",
+      "Sichun Xu",
+      "Tianhe Yu",
+      "Brianna Zitkovich"
+    ]
   },
   {
     "original_chat_urls": [],
@@ -4823,7 +4949,303 @@
     "canonical_readme": "robotics-embodied/papers/arxiv-2310.08864/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2310.08864/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Open X-Embodiment Collaboration",
+      "Abby O'Neill",
+      "Abdul Rehman",
+      "Abhinav Gupta",
+      "Abhiram Maddukuri",
+      "Abhishek Gupta",
+      "Abhishek Padalkar",
+      "Abraham Lee",
+      "Acorn Pooley",
+      "Agrim Gupta",
+      "Ajay Mandlekar",
+      "Ajinkya Jain",
+      "Albert Tung",
+      "Alex Bewley",
+      "Alex Herzog",
+      "Alex Irpan",
+      "Alexander Khazatsky",
+      "Anant Rai",
+      "Anchit Gupta",
+      "Andrew Wang",
+      "Andrey Kolobov",
+      "Anikait Singh",
+      "Animesh Garg",
+      "Aniruddha Kembhavi",
+      "Annie Xie",
+      "Anthony Brohan",
+      "Antonin Raffin",
+      "Archit Sharma",
+      "Arefeh Yavary",
+      "Arhan Jain",
+      "Ashwin Balakrishna",
+      "Ayzaan Wahid",
+      "Ben Burgess-Limerick",
+      "Beomjoon Kim",
+      "Bernhard Schölkopf",
+      "Blake Wulfe",
+      "Brian Ichter",
+      "Cewu Lu",
+      "Charles Xu",
+      "Charlotte Le",
+      "Chelsea Finn",
+      "Chen Wang",
+      "Chenfeng Xu",
+      "Cheng Chi",
+      "Chenguang Huang",
+      "Christine Chan",
+      "Christopher Agia",
+      "Chuer Pan",
+      "Chuyuan Fu",
+      "Coline Devin",
+      "Danfei Xu",
+      "Daniel Morton",
+      "Danny Driess",
+      "Daphne Chen",
+      "Deepak Pathak",
+      "Dhruv Shah",
+      "Dieter Büchler",
+      "Dinesh Jayaraman",
+      "Dmitry Kalashnikov",
+      "Dorsa Sadigh",
+      "Edward Johns",
+      "Ethan Foster",
+      "Fangchen Liu",
+      "Federico Ceola",
+      "Fei Xia",
+      "Feiyu Zhao",
+      "Felipe Vieira Frujeri",
+      "Freek Stulp",
+      "Gaoyue Zhou",
+      "Gaurav S. Sukhatme",
+      "Gautam Salhotra",
+      "Ge Yan",
+      "Gilbert Feng",
+      "Giulio Schiavi",
+      "Glen Berseth",
+      "Gregory Kahn",
+      "Guangwen Yang",
+      "Guanzhi Wang",
+      "Hao Su",
+      "Hao-Shu Fang",
+      "Haochen Shi",
+      "Henghui Bao",
+      "Heni Ben Amor",
+      "Henrik I Christensen",
+      "Hiroki Furuta",
+      "Homanga Bharadhwaj",
+      "Homer Walke",
+      "Hongjie Fang",
+      "Huy Ha",
+      "Igor Mordatch",
+      "Ilija Radosavovic",
+      "Isabel Leal",
+      "Jacky Liang",
+      "Jad Abou-Chakra",
+      "Jaehyung Kim",
+      "Jaimyn Drake",
+      "Jan Peters",
+      "Jan Schneider",
+      "Jasmine Hsu",
+      "Jay Vakil",
+      "Jeannette Bohg",
+      "Jeffrey Bingham",
+      "Jeffrey Wu",
+      "Jensen Gao",
+      "Jiaheng Hu",
+      "Jiajun Wu",
+      "Jialin Wu",
+      "Jiankai Sun",
+      "Jianlan Luo",
+      "Jiayuan Gu",
+      "Jie Tan",
+      "Jihoon Oh",
+      "Jimmy Wu",
+      "Jingpei Lu",
+      "Jingyun Yang",
+      "Jitendra Malik",
+      "João Silvério",
+      "Joey Hejna",
+      "Jonathan Booher",
+      "Jonathan Tompson",
+      "Jonathan Yang",
+      "Jordi Salvador",
+      "Joseph J. Lim",
+      "Junhyek Han",
+      "Kaiyuan Wang",
+      "Kanishka Rao",
+      "Karl Pertsch",
+      "Karol Hausman",
+      "Keegan Go",
+      "Keerthana Gopalakrishnan",
+      "Ken Goldberg",
+      "Kendra Byrne",
+      "Kenneth Oslund",
+      "Kento Kawaharazuka",
+      "Kevin Black",
+      "Kevin Lin",
+      "Kevin Zhang",
+      "Kiana Ehsani",
+      "Kiran Lekkala",
+      "Kirsty Ellis",
+      "Krishan Rana",
+      "Krishnan Srinivasan",
+      "Kuan Fang",
+      "Kunal Pratap Singh",
+      "Kuo-Hao Zeng",
+      "Kyle Hatch",
+      "Kyle Hsu",
+      "Laurent Itti",
+      "Lawrence Yunliang Chen",
+      "Lerrel Pinto",
+      "Li Fei-Fei",
+      "Liam Tan",
+      "Linxi \"Jim\" Fan",
+      "Lionel Ott",
+      "Lisa Lee",
+      "Luca Weihs",
+      "Magnum Chen",
+      "Marion Lepert",
+      "Marius Memmel",
+      "Masayoshi Tomizuka",
+      "Masha Itkina",
+      "Mateo Guaman Castro",
+      "Max Spero",
+      "Maximilian Du",
+      "Michael Ahn",
+      "Michael C. Yip",
+      "Mingtong Zhang",
+      "Mingyu Ding",
+      "Minho Heo",
+      "Mohan Kumar Srirama",
+      "Mohit Sharma",
+      "Moo Jin Kim",
+      "Muhammad Zubair Irshad",
+      "Naoaki Kanazawa",
+      "Nicklas Hansen",
+      "Nicolas Heess",
+      "Nikhil J Joshi",
+      "Niko Suenderhauf",
+      "Ning Liu",
+      "Norman Di Palo",
+      "Nur Muhammad Mahi Shafiullah",
+      "Oier Mees",
+      "Oliver Kroemer",
+      "Osbert Bastani",
+      "Pannag R Sanketi",
+      "Patrick \"Tree\" Miller",
+      "Patrick Yin",
+      "Paul Wohlhart",
+      "Peng Xu",
+      "Peter David Fagan",
+      "Peter Mitrano",
+      "Pierre Sermanet",
+      "Pieter Abbeel",
+      "Priya Sundaresan",
+      "Qiuyu Chen",
+      "Quan Vuong",
+      "Rafael Rafailov",
+      "Ran Tian",
+      "Ria Doshi",
+      "Roberto Martín-Martín",
+      "Rohan Baijal",
+      "Rosario Scalise",
+      "Rose Hendrix",
+      "Roy Lin",
+      "Runjia Qian",
+      "Ruohan Zhang",
+      "Russell Mendonca",
+      "Rutav Shah",
+      "Ryan Hoque",
+      "Ryan Julian",
+      "Samuel Bustamante",
+      "Sean Kirmani",
+      "Sergey Levine",
+      "Shan Lin",
+      "Sherry Moore",
+      "Shikhar Bahl",
+      "Shivin Dass",
+      "Shubham Sonawani",
+      "Shubham Tulsiani",
+      "Shuran Song",
+      "Sichun Xu",
+      "Siddhant Haldar",
+      "Siddharth Karamcheti",
+      "Simeon Adebola",
+      "Simon Guist",
+      "Soroush Nasiriany",
+      "Stefan Schaal",
+      "Stefan Welker",
+      "Stephen Tian",
+      "Subramanian Ramamoorthy",
+      "Sudeep Dasari",
+      "Suneel Belkhale",
+      "Sungjae Park",
+      "Suraj Nair",
+      "Suvir Mirchandani",
+      "Takayuki Osa",
+      "Tanmay Gupta",
+      "Tatsuya Harada",
+      "Tatsuya Matsushima",
+      "Ted Xiao",
+      "Thomas Kollar",
+      "Tianhe Yu",
+      "Tianli Ding",
+      "Todor Davchev",
+      "Tony Z. Zhao",
+      "Travis Armstrong",
+      "Trevor Darrell",
+      "Trinity Chung",
+      "Vidhi Jain",
+      "Vikash Kumar",
+      "Vincent Vanhoucke",
+      "Vitor Guizilini",
+      "Wei Zhan",
+      "Wenxuan Zhou",
+      "Wolfram Burgard",
+      "Xi Chen",
+      "Xiangyu Chen",
+      "Xiaolong Wang",
+      "Xinghao Zhu",
+      "Xinyang Geng",
+      "Xiyuan Liu",
+      "Xu Liangwei",
+      "Xuanlin Li",
+      "Yansong Pang",
+      "Yao Lu",
+      "Yecheng Jason Ma",
+      "Yejin Kim",
+      "Yevgen Chebotar",
+      "Yifan Zhou",
+      "Yifeng Zhu",
+      "Yilin Wu",
+      "Ying Xu",
+      "Yixuan Wang",
+      "Yonatan Bisk",
+      "Yongqiang Dou",
+      "Yoonyoung Cho",
+      "Youngwoon Lee",
+      "Yuchen Cui",
+      "Yue Cao",
+      "Yueh-Hua Wu",
+      "Yujin Tang",
+      "Yuke Zhu",
+      "Yunchu Zhang",
+      "Yunfan Jiang",
+      "Yunshuang Li",
+      "Yunzhu Li",
+      "Yusuke Iwasawa",
+      "Yutaka Matsuo",
+      "Zehan Ma",
+      "Zhuo Xu",
+      "Zichen Jeff Cui",
+      "Zichen Zhang",
+      "Zipeng Fu",
+      "Zipeng Lin"
+    ]
   },
   {
     "original_chat_urls": [],
@@ -4958,7 +5380,17 @@
       "docs/deep-readings/diffusion-policy.md",
       "robotics-embodied/baselines/diffusion-policy.md"
     ],
-    "content_kind": "reading"
+    "content_kind": "reading",
+    "authors": [
+      "Cheng Chi",
+      "Zhenjia Xu",
+      "Siyuan Feng",
+      "Eric Cousineau",
+      "Yilun Du",
+      "Benjamin Burchfiel",
+      "Russ Tedrake",
+      "Shuran Song"
+    ]
   },
   {
     "original_chat_urls": [],
@@ -5040,7 +5472,28 @@
     "canonical_readme": "robotics-embodied/papers/arxiv-2405.12213/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2405.12213/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Octo Model Team",
+      "Dibya Ghosh",
+      "Homer Walke",
+      "Karl Pertsch",
+      "Kevin Black",
+      "Oier Mees",
+      "Sudeep Dasari",
+      "Joey Hejna",
+      "Tobias Kreiman",
+      "Charles Xu",
+      "Jianlan Luo",
+      "You Liang Tan",
+      "Lawrence Yunliang Chen",
+      "Pannag Sanketi",
+      "Quan Vuong",
+      "Ted Xiao",
+      "Dorsa Sadigh",
+      "Chelsea Finn",
+      "Sergey Levine"
+    ]
   },
   {
     "original_chat_urls": [],
@@ -5174,7 +5627,27 @@
       "docs/deep-readings/openvla.md",
       "robotics-embodied/baselines/openvla.md"
     ],
-    "content_kind": "reading"
+    "content_kind": "reading",
+    "authors": [
+      "Moo Jin Kim",
+      "Karl Pertsch",
+      "Siddharth Karamcheti",
+      "Ted Xiao",
+      "Ashwin Balakrishna",
+      "Suraj Nair",
+      "Rafael Rafailov",
+      "Ethan Foster",
+      "Grace Lam",
+      "Pannag Sanketi",
+      "Quan Vuong",
+      "Thomas Kollar",
+      "Benjamin Burchfiel",
+      "Russ Tedrake",
+      "Dorsa Sadigh",
+      "Sergey Levine",
+      "Percy Liang",
+      "Chelsea Finn"
+    ]
   },
   {
     "original_chat_urls": [],
@@ -5257,7 +5730,33 @@
     "canonical_readme": "robotics-embodied/papers/arxiv-2410.24164/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2410.24164/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Kevin Black",
+      "Noah Brown",
+      "Danny Driess",
+      "Adnan Esmail",
+      "Michael Equi",
+      "Chelsea Finn",
+      "Niccolo Fusai",
+      "Lachy Groom",
+      "Karol Hausman",
+      "Brian Ichter",
+      "Szymon Jakubczak",
+      "Tim Jones",
+      "Liyiming Ke",
+      "Sergey Levine",
+      "Adrian Li-Bell",
+      "Mohith Mothukuri",
+      "Suraj Nair",
+      "Karl Pertsch",
+      "Lucy Xiaoyang Shi",
+      "James Tanner",
+      "Quan Vuong",
+      "Anna Walling",
+      "Haohuan Wang",
+      "Ury Zhilinsky"
+    ]
   },
   {
     "original_chat_urls": [],
@@ -5337,7 +5836,18 @@
     "canonical_readme": "robotics-embodied/papers/arxiv-2501.09747/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2501.09747/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Karl Pertsch",
+      "Kyle Stachowicz",
+      "Brian Ichter",
+      "Danny Driess",
+      "Suraj Nair",
+      "Quan Vuong",
+      "Oier Mees",
+      "Chelsea Finn",
+      "Sergey Levine"
+    ]
   },
   {
     "original_chat_urls": [],
@@ -5419,7 +5929,12 @@
     "canonical_readme": "robotics-embodied/papers/arxiv-2502.19645/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2502.19645/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Moo Jin Kim",
+      "Chelsea Finn",
+      "Percy Liang"
+    ]
   },
   {
     "original_chat_urls": [],
@@ -5502,7 +6017,45 @@
     "canonical_readme": "robotics-embodied/papers/arxiv-2504.16054/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2504.16054/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Physical Intelligence",
+      "Kevin Black",
+      "Noah Brown",
+      "James Darpinian",
+      "Karan Dhabalia",
+      "Danny Driess",
+      "Adnan Esmail",
+      "Michael Equi",
+      "Chelsea Finn",
+      "Niccolo Fusai",
+      "Manuel Y. Galliker",
+      "Dibya Ghosh",
+      "Lachy Groom",
+      "Karol Hausman",
+      "Brian Ichter",
+      "Szymon Jakubczak",
+      "Tim Jones",
+      "Liyiming Ke",
+      "Devin LeBlanc",
+      "Sergey Levine",
+      "Adrian Li-Bell",
+      "Mohith Mothukuri",
+      "Suraj Nair",
+      "Karl Pertsch",
+      "Allen Z. Ren",
+      "Lucy Xiaoyang Shi",
+      "Laura Smith",
+      "Jost Tobias Springenberg",
+      "Kyle Stachowicz",
+      "James Tanner",
+      "Quan Vuong",
+      "Homer Walke",
+      "Anna Walling",
+      "Haohuan Wang",
+      "Lili Yu",
+      "Ury Zhilinsky"
+    ]
   },
   {
     "original_chat_urls": [],
@@ -5584,7 +6137,23 @@
     "canonical_readme": "robotics-embodied/papers/arxiv-2506.01844/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2506.01844/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Mustafa Shukor",
+      "Dana Aubakirova",
+      "Francesco Capuano",
+      "Pepijn Kooijmans",
+      "Steven Palma",
+      "Adil Zouitine",
+      "Michel Aractingi",
+      "Caroline Pascal",
+      "Martino Russi",
+      "Andres Marafioti",
+      "Simon Alibert",
+      "Matthieu Cord",
+      "Thomas Wolf",
+      "Remi Cadene"
+    ]
   },
   {
     "original_chat_urls": [],
@@ -5595,7 +6164,8 @@
     "doi": null,
     "year": "2025",
     "topic_paths": [
-      "robotics/control"
+      "robotics/control",
+      "robotics/embodied-policies"
     ],
     "detail_topics": [
       "robotics",
@@ -5667,7 +6237,51 @@
     "canonical_readme": "robotics-embodied/papers/arxiv-2503.14734/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2503.14734/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "NVIDIA",
+      "Johan Bjorck",
+      "Fernando Castañeda",
+      "Nikita Cherniadev",
+      "Xingye Da",
+      "Runyu Ding",
+      "Linxi \"Jim\" Fan",
+      "Yu Fang",
+      "Dieter Fox",
+      "Fengyuan Hu",
+      "Spencer Huang",
+      "Joel Jang",
+      "Zhenyu Jiang",
+      "Jan Kautz",
+      "Kaushil Kundalia",
+      "Lawrence Lao",
+      "Zhiqi Li",
+      "Zongyu Lin",
+      "Kevin Lin",
+      "Guilin Liu",
+      "Edith Llontop",
+      "Loic Magne",
+      "Ajay Mandlekar",
+      "Avnish Narayan",
+      "Soroush Nasiriany",
+      "Scott Reed",
+      "You Liang Tan",
+      "Guanzhi Wang",
+      "Zu Wang",
+      "Jing Wang",
+      "Qi Wang",
+      "Jiannan Xiang",
+      "Yuqi Xie",
+      "Yinzhen Xu",
+      "Zhenjia Xu",
+      "Seonghyeon Ye",
+      "Zhiding Yu",
+      "Ao Zhang",
+      "Hao Zhang",
+      "Yizhou Zhao",
+      "Ruijie Zheng",
+      "Yuke Zhu"
+    ]
   },
   {
     "original_chat_urls": [],
@@ -5752,7 +6366,97 @@
     "canonical_readme": "robotics-embodied/papers/arxiv-2604.15483/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2604.15483/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Physical Intelligence",
+      "Bo Ai",
+      "Ali Amin",
+      "Raichelle Aniceto",
+      "Ashwin Balakrishna",
+      "Greg Balke",
+      "Kevin Black",
+      "George Bokinsky",
+      "Shihao Cao",
+      "Thomas Charbonnier",
+      "Vedant Choudhary",
+      "Foster Collins",
+      "Ken Conley",
+      "Grace Connors",
+      "James Darpinian",
+      "Karan Dhabalia",
+      "Maitrayee Dhaka",
+      "Jared DiCarlo",
+      "Danny Driess",
+      "Michael Equi",
+      "Adnan Esmail",
+      "Yunhao Fang",
+      "Chelsea Finn",
+      "Catherine Glossop",
+      "Thomas Godden",
+      "Ivan Goryachev",
+      "Lachlan Groom",
+      "Haroun Habeeb",
+      "Hunter Hancock",
+      "Karol Hausman",
+      "Gashon Hussein",
+      "Victor Hwang",
+      "Brian Ichter",
+      "Connor Jacobsen",
+      "Szymon Jakubczak",
+      "Rowan Jen",
+      "Tim Jones",
+      "Gregg Kammerer",
+      "Ben Katz",
+      "Liyiming Ke",
+      "Mairbek Khadikov",
+      "Chandra Kuchi",
+      "Marinda Lamb",
+      "Devin LeBlanc",
+      "Brendon LeCount",
+      "Sergey Levine",
+      "Xinyu Li",
+      "Adrian Li-Bell",
+      "Vladislav Lialin",
+      "Zhonglin Liang",
+      "Wallace Lim",
+      "Yao Lu",
+      "Enyu Luo",
+      "Vishnu Mano",
+      "Nandan Marwaha",
+      "Aikys Mongush",
+      "Liam Murphy",
+      "Suraj Nair",
+      "Tyler Patterson",
+      "Karl Pertsch",
+      "Allen Z. Ren",
+      "Gavin Schelske",
+      "Charvi Sharma",
+      "Baifeng Shi",
+      "Lucy Xiaoyang Shi",
+      "Laura Smith",
+      "Jost Tobias Springenberg",
+      "Kyle Stachowicz",
+      "Will Stoeckle",
+      "Jiaming Tang",
+      "Jimmy Tanner",
+      "Shalom Tekeste",
+      "Marcel Torne",
+      "Kyle Vedder",
+      "Quan Vuong",
+      "Anna Walling",
+      "Haohuan Wang",
+      "Jason Wang",
+      "XuDong Wang",
+      "Chris Whalen",
+      "Samuel Whitmore",
+      "Blake Williams",
+      "Charles Xu",
+      "Sukwon Yoo",
+      "Lili Yu",
+      "Wuming Zhang",
+      "Zhuoyang Zhang",
+      "Ury Zhilinsky"
+    ]
   },
   {
     "original_chat_urls": [],
@@ -5832,7 +6536,49 @@
     "canonical_readme": "robotics-embodied/papers/arxiv-2605.30280/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2605.30280/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Qiuyue Wang",
+      "Mingsheng Li",
+      "Jian Guan",
+      "Jinhui Ye",
+      "Sicheng Xie",
+      "Yitao Liu",
+      "Junhao Chen",
+      "Zhixuan Liang",
+      "Jie Zhang",
+      "Xintong Hu",
+      "Xuhong Huang",
+      "Pei Lin",
+      "Junyang Lin",
+      "Dayiheng Liu",
+      "Shuai Bai",
+      "Jingren Zhou",
+      "Jiazhao Zhang",
+      "Haoqi Yuan",
+      "Gengze Zhou",
+      "Hang Yin",
+      "Ye Wang",
+      "Yiyang Huang",
+      "Zixing Lei",
+      "Wujian Peng",
+      "Delin Chen",
+      "Yingming Zheng",
+      "Jingyang Fan",
+      "Xianwei Zhuang",
+      "Xin Zhou",
+      "Haoyang Li",
+      "Anzhe Chen",
+      "Tong Zhang",
+      "Xuejing Liu",
+      "Yuchong Sun",
+      "Ruizhe Chen",
+      "Zhaohai Li",
+      "Chenxu Lü",
+      "Zhibo Yang",
+      "Tao Yu",
+      "Xionghui Chen"
+    ]
   },
   {
     "original_chat_urls": [],
@@ -5914,7 +6660,22 @@
     "canonical_readme": "robotics-embodied/papers/arxiv-2606.14752/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2606.14752/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Miracle Kang",
+      "Lights Shi",
+      "Lucy Liang",
+      "Roy Gan",
+      "Dongxiu Liu",
+      "Pushi Zhang",
+      "Sylas Chen",
+      "Shawn Qin",
+      "Yinan Zheng",
+      "Jinliang Zheng",
+      "Hao Wang",
+      "Xianyuan Zhan",
+      "Hang Su"
+    ]
   },
   {
     "original_chat_urls": [],
@@ -5985,7 +6746,21 @@
     "canonical_readme": "robotics-embodied/papers/arxiv-2505.22159/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2505.22159/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Jiawen Yu",
+      "Hairuo Liu",
+      "Qiaojun Yu",
+      "Jieji Ren",
+      "Ce Hao",
+      "Haitong Ding",
+      "Guangyu Huang",
+      "Guofan Huang",
+      "Yan Song",
+      "Panpan Cai",
+      "Cewu Lu",
+      "Wenqiang Zhang"
+    ]
   },
   {
     "original_chat_urls": [
@@ -6052,7 +6827,13 @@
     "canonical_readme": "robotics-embodied/papers/arxiv-1609.05130/README.md",
     "source_path": "robotics-embodied/papers/arxiv-1609.05130/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "John McCormac",
+      "Ankur Handa",
+      "Andrew Davison",
+      "Stefan Leutenegger"
+    ]
   },
   {
     "original_chat_urls": [
@@ -6119,7 +6900,13 @@
     "canonical_readme": "robotics-embodied/papers/arxiv-1903.01177/README.md",
     "source_path": "robotics-embodied/papers/arxiv-1903.01177/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Gaku Narita",
+      "Takashi Seno",
+      "Tomoya Ishikawa",
+      "Yohsuke Kaji"
+    ]
   },
   {
     "original_chat_urls": [
@@ -6185,7 +6972,13 @@
     "canonical_readme": "robotics-embodied/papers/arxiv-1905.00684/README.md",
     "source_path": "robotics-embodied/papers/arxiv-1905.00684/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Xiaogang Xiong",
+      "Wenqing Chen",
+      "Zhichao Liu",
+      "Qiang Shen"
+    ]
   },
   {
     "original_chat_urls": [
@@ -6251,7 +7044,16 @@
     "canonical_readme": "robotics-embodied/papers/arxiv-2311.04477/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2311.04477/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Tong Hua",
+      "Tao Li",
+      "Liang Pang",
+      "Guoqing Liu",
+      "Wencheng Xuanyuan",
+      "Chang Shu",
+      "Ling Pei"
+    ]
   },
   {
     "original_chat_urls": [
@@ -6317,7 +7119,11 @@
     "canonical_readme": "robotics-embodied/papers/arxiv-2205.01980/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2205.01980/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Pieter van Goor",
+      "Robert Mahony"
+    ]
   },
   {
     "original_chat_urls": [
@@ -6383,7 +7189,12 @@
     "canonical_readme": "robotics-embodied/papers/arxiv-2203.07207/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2203.07207/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Brandon Wagstaff",
+      "Emmett Wise",
+      "Jonathan Kelly"
+    ]
   },
   {
     "original_chat_urls": [
@@ -6449,7 +7260,14 @@
     "canonical_readme": "robotics-embodied/papers/arxiv-2505.06748/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2505.06748/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Abdullah Altawaitan",
+      "Jason Stanley",
+      "Sambaran Ghosal",
+      "Thai Duong",
+      "Nikolay Atanasov"
+    ]
   },
   {
     "original_chat_urls": [
@@ -6541,7 +7359,20 @@
     "canonical_readme": "robotics-embodied/papers/arxiv-2607.15275/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2607.15275/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Yunfan Jiang",
+      "Yevgen Chebotar",
+      "Ruijie Zheng",
+      "Fengyuan Hu",
+      "Yunhao Ge",
+      "Jimmy Wu",
+      "Tianyuan Dai",
+      "Scott Reed",
+      "Li Fei-Fei",
+      "Yuke Zhu",
+      "Linxi \"Jim\" Fan"
+    ]
   },
   {
     "original_chat_urls": [
@@ -6633,7 +7464,17 @@
     "canonical_readme": "robotics-embodied/papers/arxiv-2408.15980/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2408.15980/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Letian Fu",
+      "Huang Huang",
+      "Gaurav Datta",
+      "Lawrence Yunliang Chen",
+      "William Chung-Ho Panitch",
+      "Fangchen Liu",
+      "Hui Li",
+      "Ken Goldberg"
+    ]
   },
   {
     "original_chat_urls": [
@@ -6725,7 +7566,13 @@
     "canonical_readme": "robotics-embodied/papers/arxiv-2606.30457/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2606.30457/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Austin Patel",
+      "Ben Pekarek",
+      "Joel Enrique Castro Hernandez",
+      "Shuran Song"
+    ]
   },
   {
     "original_chat_urls": [
@@ -6820,7 +7667,51 @@
     "canonical_readme": "robotics-embodied/papers/arxiv-2601.02456/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2601.02456/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Junhao Cai",
+      "Zetao Cai",
+      "Jiafei Cao",
+      "Yilun Chen",
+      "Zeyu He",
+      "Lei Jiang",
+      "Hang Li",
+      "Hengjie Li",
+      "Yang Li",
+      "Yufei Liu",
+      "Yanan Lu",
+      "Qi Lv",
+      "Haoxiang Ma",
+      "Jiangmiao Pang",
+      "Yu Qiao",
+      "Zherui Qiu",
+      "Yanqing Shen",
+      "Xu Shi",
+      "Yang Tian",
+      "Bolun Wang",
+      "Hanqing Wang",
+      "Jiaheng Wang",
+      "Tai Wang",
+      "Xueyuan Wei",
+      "Chao Wu",
+      "Yiman Xie",
+      "Boyang Xing",
+      "Yuqiang Yang",
+      "Yuyin Yang",
+      "Qiaojun Yu",
+      "Feng Yuan",
+      "Jia Zeng",
+      "Jingjing Zhang",
+      "Shenghan Zhang",
+      "Shi Zhang",
+      "Zhuoma Zhaxi",
+      "Bowen Zhou",
+      "Yuanzhen Zhou",
+      "Yunsong Zhou",
+      "Hongrui Zhu",
+      "Yangkun Zhu",
+      "Yuchen Zhu"
+    ]
   },
   {
     "original_chat_urls": [
@@ -6886,7 +7777,11 @@
     "canonical_readme": "robotics-embodied/papers/arxiv-2211.00458/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2211.00458/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Guillaume Bellegarda",
+      "Auke Ijspeert"
+    ]
   },
   {
     "original_chat_urls": [
@@ -6952,7 +7847,14 @@
     "canonical_readme": "robotics-embodied/papers/arxiv-2305.07300/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2305.07300/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Chuanyu Yang",
+      "Can Pu",
+      "Tianqi Wei",
+      "Cong Wang",
+      "Zhibin Li"
+    ]
   },
   {
     "original_chat_urls": [
@@ -7018,7 +7920,15 @@
     "canonical_readme": "robotics-embodied/papers/arxiv-2201.00206/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2201.00206/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Yecheng Shao",
+      "Yongbin Jin",
+      "Xianwei Liu",
+      "Weiyan He",
+      "Hongtao Wang",
+      "Wei Yang"
+    ]
   },
   {
     "original_chat_urls": [
@@ -7084,7 +7994,13 @@
     "canonical_readme": "robotics-embodied/papers/arxiv-2011.01387/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2011.01387/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Jonah Siekmann",
+      "Yesh Godse",
+      "Alan Fern",
+      "Jonathan Hurst"
+    ]
   },
   {
     "original_chat_urls": [
@@ -7150,7 +8066,12 @@
     "canonical_readme": "robotics-embodied/papers/arxiv-2404.05695/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2404.05695/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Xinyang Gu",
+      "Yen-Jen Wang",
+      "Jianyu Chen"
+    ]
   },
   {
     "original_chat_urls": [
@@ -7219,7 +8140,19 @@
     "canonical_readme": "robotics-embodied/papers/arxiv-2412.14172/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2412.14172/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Jiageng Mao",
+      "Siheng Zhao",
+      "Siqi Song",
+      "Tianheng Shi",
+      "Junjie Ye",
+      "Mingtong Zhang",
+      "Haoran Geng",
+      "Jitendra Malik",
+      "Vitor Guizilini",
+      "Yue Wang"
+    ]
   },
   {
     "original_chat_urls": [
@@ -7285,7 +8218,20 @@
     "canonical_readme": "robotics-embodied/papers/arxiv-2506.20487/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2506.20487/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Mingqi Yuan",
+      "Tao Yu",
+      "Wenqi Ge",
+      "Xiuyong Yao",
+      "Huijiang Wang",
+      "Jiayu Chen",
+      "Bo Li",
+      "Wei Zhang",
+      "Wenjun Zeng",
+      "Hua Chen",
+      "Xin Jin"
+    ]
   },
   {
     "original_chat_urls": [
@@ -7351,7 +8297,27 @@
     "canonical_readme": "robotics-embodied/papers/arxiv-2607.15163/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2607.15163/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Weishuai Zeng",
+      "Kangning Yin",
+      "Xiaojie Niu",
+      "Shunlin Lu",
+      "Weixiang Zhong",
+      "Jiahe Chen",
+      "Feiyu Jia",
+      "Xiao Chen",
+      "Zirui Wang",
+      "Furui Xu",
+      "Ming Zhou",
+      "Kailin Li",
+      "Weinan Zhang",
+      "He Wang",
+      "Li Yi",
+      "Dahua Lin",
+      "Jiangmiao Pang",
+      "Jingbo Wang"
+    ]
   },
   {
     "original_chat_urls": [
@@ -7417,7 +8383,27 @@
     "canonical_readme": "robotics-embodied/papers/arxiv-2501.02116/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2501.02116/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Zhaoyuan Gu",
+      "Junheng Li",
+      "Wenlan Shen",
+      "Wenhao Yu",
+      "Zhaoming Xie",
+      "Stephen McCrory",
+      "Xianyi Cheng",
+      "Abdulaziz Shamsah",
+      "Robert Griffin",
+      "C. Karen Liu",
+      "Abderrahmane Kheddar",
+      "Xue Bin Peng",
+      "Yuke Zhu",
+      "Guanya Shi",
+      "Quan Nguyen",
+      "Gordon Cheng",
+      "Huijun Gao",
+      "Ye Zhao"
+    ]
   },
   {
     "original_chat_urls": [
@@ -7510,7 +8496,15 @@
     "canonical_readme": "robotics-embodied/papers/arxiv-2506.09588/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2506.09588/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Junzhe He",
+      "Chong Zhang",
+      "Fabian Jenelten",
+      "Ruben Grandia",
+      "Moritz BÄcher",
+      "Marco Hutter"
+    ]
   },
   {
     "original_chat_urls": [
@@ -7603,7 +8597,13 @@
     "canonical_readme": "robotics-embodied/papers/arxiv-2601.08485/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2601.08485/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Chong Zhang",
+      "Victor Klemm",
+      "Fan Yang",
+      "Marco Hutter"
+    ]
   },
   {
     "original_chat_urls": [
@@ -7669,7 +8669,13 @@
     "canonical_readme": "robotics-embodied/papers/arxiv-1804.02717/README.md",
     "source_path": "robotics-embodied/papers/arxiv-1804.02717/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Xue Bin Peng",
+      "Pieter Abbeel",
+      "Sergey Levine",
+      "Michiel van de Panne"
+    ]
   },
   {
     "original_chat_urls": [
@@ -7735,7 +8741,14 @@
     "canonical_readme": "robotics-embodied/papers/arxiv-2205.01906/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2205.01906/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Xue Bin Peng",
+      "Yunrong Guo",
+      "Lina Halper",
+      "Sergey Levine",
+      "Sanja Fidler"
+    ]
   },
   {
     "original_chat_urls": [
@@ -7801,7 +8814,16 @@
     "canonical_readme": "robotics-embodied/papers/arxiv-2412.13196/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2412.13196/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Mazeyu Ji",
+      "Xuanbin Peng",
+      "Fangchen Liu",
+      "Jialong Li",
+      "Ge Yang",
+      "Xuxin Cheng",
+      "Xiaolong Wang"
+    ]
   },
   {
     "original_chat_urls": [
@@ -7868,7 +8890,16 @@
     "canonical_readme": "robotics-embodied/papers/arxiv-2508.08241/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2508.08241/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Qiayuan Liao",
+      "Takara E. Truong",
+      "Xiaoyu Huang",
+      "Yuman Gao",
+      "Guy Tevet",
+      "Koushil Sreenath",
+      "C. Karen Liu"
+    ]
   },
   {
     "original_chat_urls": [
@@ -7934,7 +8965,14 @@
     "canonical_readme": "robotics-embodied/papers/arxiv-2510.02252/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2510.02252/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Joao Pedro Araujo",
+      "Yanjie Ze",
+      "Pei Xu",
+      "Jiajun Wu",
+      "C. Karen Liu"
+    ]
   },
   {
     "original_chat_urls": [
@@ -8001,7 +9039,15 @@
     "canonical_readme": "robotics-embodied/papers/arxiv-2408.13740/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2408.13740/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Shixin Luo",
+      "Songbo Li",
+      "Ruiqi Yu",
+      "Zhicheng Wang",
+      "Jun Wu",
+      "Qiuguo Zhu"
+    ]
   },
   {
     "original_chat_urls": [
@@ -8012,7 +9058,7 @@
     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6164553/",
     "arxiv_id": null,
     "doi": "10.3390/s18093099",
-    "year": null,
+    "year": "2018",
     "topic_paths": [
       "robotics/perception",
       "robotics/localization-mapping"
@@ -8067,7 +9113,14 @@
     "canonical_readme": "robotics-embodied/papers/doi-10.3390-s18093099/README.md",
     "source_path": "robotics-embodied/papers/doi-10.3390-s18093099/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Cheng Zhao",
+      "Li Sun",
+      "Pulak Purkait",
+      "Tom Duckett",
+      "Rustam Stolkin"
+    ]
   },
   {
     "original_chat_urls": [
@@ -8078,7 +9131,7 @@
     "url": "https://github.com/HKUST-Aerial-Robotics/FM-Fusion",
     "arxiv_id": null,
     "doi": null,
-    "year": null,
+    "year": "2024",
     "topic_paths": [
       "robotics/perception",
       "robotics/localization-mapping"
@@ -8136,7 +9189,14 @@
     "canonical_readme": "robotics-embodied/papers/url-https-github.com-hkust-aerial-robotics-fm-fusion/README.md",
     "source_path": "robotics-embodied/papers/url-https-github.com-hkust-aerial-robotics-fm-fusion/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Chuhao Liu",
+      "Ke Wang",
+      "Jieqi Shi",
+      "Zhijian Qiao",
+      "Shaojie Shen"
+    ]
   },
   {
     "original_chat_urls": [
@@ -8147,7 +9207,7 @@
     "url": "https://proceedings.mlr.press/v205/margolis23a/margolis23a.pdf",
     "arxiv_id": null,
     "doi": null,
-    "year": null,
+    "year": "2023",
     "topic_paths": [
       "robotics/control"
     ],
@@ -8201,7 +9261,11 @@
     "canonical_readme": "robotics-embodied/papers/url-https-proceedings.mlr.press-v205-margolis23a-margolis23a/README.md",
     "source_path": "robotics-embodied/papers/url-https-proceedings.mlr.press-v205-margolis23a-margolis23a/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Gabriel B Margolis",
+      "Pulkit Agrawal"
+    ]
   },
   {
     "original_chat_urls": [
@@ -8212,9 +9276,10 @@
     "url": "https://proceedings.mlr.press/v205/agarwal23a/agarwal23a.pdf",
     "arxiv_id": null,
     "doi": null,
-    "year": null,
+    "year": "2023",
     "topic_paths": [
-      "robotics/control"
+      "robotics/control",
+      "robotics/perception"
     ],
     "detail_topics": [
       "robotics",
@@ -8268,7 +9333,13 @@
     "canonical_readme": "robotics-embodied/papers/url-https-proceedings.mlr.press-v205-agarwal23a-agarwal23a/README.md",
     "source_path": "robotics-embodied/papers/url-https-proceedings.mlr.press-v205-agarwal23a-agarwal23a/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Ananye Agarwal",
+      "Ashish Kumar",
+      "Jitendra Malik",
+      "Deepak Pathak"
+    ]
   },
   {
     "original_chat_urls": [
@@ -8279,7 +9350,7 @@
     "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/advs.202524345?af=R",
     "arxiv_id": null,
     "doi": "10.1002/advs.202524345",
-    "year": null,
+    "year": "2026",
     "topic_paths": [
       "robotics/control"
     ],
@@ -8334,7 +9405,19 @@
     "canonical_readme": "robotics-embodied/papers/doi-10.1002-advs.202524345/README.md",
     "source_path": "robotics-embodied/papers/doi-10.1002-advs.202524345/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Yinzhao Dong",
+      "Ji Ma",
+      "Yidan Lu",
+      "Jiahui Zhang",
+      "Wanyue Li",
+      "Yeke Chen",
+      "Teng Zhang",
+      "Xuechao Chen",
+      "Zhangguo Yu",
+      "Peng Lu"
+    ]
   },
   {
     "original_chat_urls": [],
@@ -8713,7 +9796,13 @@
       "docs/deep-readings/rma.md",
       "robotics-embodied/baselines/rma.md"
     ],
-    "content_kind": "reading"
+    "content_kind": "reading",
+    "authors": [
+      "Ashish Kumar",
+      "Zipeng Fu",
+      "Deepak Pathak",
+      "Jitendra Malik"
+    ]
   },
   {
     "original_chat_urls": [],
@@ -8828,7 +9917,13 @@
       "docs/deep-readings/dreamerv3.md",
       "robotics-embodied/baselines/dreamerv3.md"
     ],
-    "content_kind": "reading"
+    "content_kind": "reading",
+    "authors": [
+      "Danijar Hafner",
+      "Jurgis Pasukonis",
+      "Jimmy Ba",
+      "Timothy Lillicrap"
+    ]
   },
   {
     "id": "arxiv:2306.05685",
@@ -8997,7 +10092,18 @@
       "docs/deep-readings/r2r.md",
       "robotics-embodied/baselines/r2r.md"
     ],
-    "content_kind": "reading"
+    "content_kind": "reading",
+    "authors": [
+      "Peter Anderson",
+      "Qi Wu",
+      "Damien Teney",
+      "Jake Bruce",
+      "Mark Johnson",
+      "Niko Sünderhauf",
+      "Ian Reid",
+      "Stephen Gould",
+      "Anton van den Hengel"
+    ]
   },
   {
     "id": "arxiv:2304.08485",
@@ -9335,7 +10441,14 @@
       "docs/deep-readings/orb-slam3.md",
       "robotics-embodied/baselines/orb-slam3.md"
     ],
-    "content_kind": "reading"
+    "content_kind": "reading",
+    "authors": [
+      "Carlos Campos",
+      "Richard Elvira",
+      "Juan J. Gómez Rodríguez",
+      "José M. M. Montiel",
+      "Juan D. Tardós"
+    ]
   },
   {
     "id": "doi:10.1109/IROS.2018.8594448",
@@ -9343,7 +10456,7 @@
     "url": "https://dspace.mit.edu/entities/publication/bc8c7e1e-5830-443f-a879-787947111fcf",
     "arxiv_id": null,
     "doi": "10.1109/IROS.2018.8594448",
-    "year": null,
+    "year": "2018",
     "resource_kind": "paper",
     "topic_paths": [
       "multimodal/world-models",
@@ -9428,7 +10541,14 @@
       "docs/deep-readings/convex-mpc.md",
       "robotics-embodied/baselines/convex-mpc.md"
     ],
-    "content_kind": "reading"
+    "content_kind": "reading",
+    "authors": [
+      "Jared Di Carlo",
+      "Patrick M. Wensing",
+      "Benjamin Katz",
+      "Gerardo Bledt",
+      "Sangbae Kim"
+    ]
   },
   {
     "id": "arxiv:1711.02508",
@@ -9513,7 +10633,10 @@
       "docs/deep-readings/eskf.md",
       "robotics-embodied/baselines/eskf.md"
     ],
-    "content_kind": "reading"
+    "content_kind": "reading",
+    "authors": [
+      "Joan Solà"
+    ]
   },
   {
     "id": "arxiv:1105.1186",
@@ -9598,7 +10721,11 @@
       "docs/deep-readings/rrt-star.md",
       "robotics-embodied/baselines/rrt-star.md"
     ],
-    "content_kind": "reading"
+    "content_kind": "reading",
+    "authors": [
+      "Sertac Karaman",
+      "Emilio Frazzoli"
+    ]
   },
   {
     "id": "arxiv:2005.14165",
@@ -9772,7 +10899,15 @@
     "legacy_paths": [
       "docs/deep-readings/dpo.md"
     ],
-    "content_kind": "reading"
+    "content_kind": "reading",
+    "authors": [
+      "Rafael Rafailov",
+      "Archit Sharma",
+      "Eric Mitchell",
+      "Stefano Ermon",
+      "Christopher D. Manning",
+      "Chelsea Finn"
+    ]
   },
   {
     "id": "arxiv:1707.06347",
@@ -10337,7 +11472,55 @@
     "legacy_paths": [
       "robotics-embodied/baselines/saycan.md"
     ],
-    "content_kind": "reading"
+    "content_kind": "reading",
+    "year": "2022",
+    "authors": [
+      "Michael Ahn",
+      "Anthony Brohan",
+      "Noah Brown",
+      "Yevgen Chebotar",
+      "Omar Cortes",
+      "Byron David",
+      "Chelsea Finn",
+      "Chuyuan Fu",
+      "Keerthana Gopalakrishnan",
+      "Karol Hausman",
+      "Alex Herzog",
+      "Daniel Ho",
+      "Jasmine Hsu",
+      "Julian Ibarz",
+      "Brian Ichter",
+      "Alex Irpan",
+      "Eric Jang",
+      "Rosario Jauregui Ruano",
+      "Kyle Jeffrey",
+      "Sally Jesmonth",
+      "Nikhil J Joshi",
+      "Ryan Julian",
+      "Dmitry Kalashnikov",
+      "Yuheng Kuang",
+      "Kuang-Huei Lee",
+      "Sergey Levine",
+      "Yao Lu",
+      "Linda Luu",
+      "Carolina Parada",
+      "Peter Pastor",
+      "Jornell Quiambao",
+      "Kanishka Rao",
+      "Jarek Rettinghouse",
+      "Diego Reyes",
+      "Pierre Sermanet",
+      "Nicolas Sievers",
+      "Clayton Tan",
+      "Alexander Toshev",
+      "Vincent Vanhoucke",
+      "Fei Xia",
+      "Ted Xiao",
+      "Peng Xu",
+      "Sichun Xu",
+      "Mengyuan Yan",
+      "Andy Zeng"
+    ]
   },
   {
     "id": "arxiv:2609.37810",
@@ -10396,7 +11579,16 @@
     "legacy_paths": [
       "robotics-embodied/papers/2026/roboskill.md"
     ],
-    "content_kind": "reading"
+    "content_kind": "reading",
+    "year": "2026",
+    "authors": [
+      "Sicheng Xie",
+      "Yitong Chen",
+      "Haidong Cao",
+      "Shunlin Lu",
+      "Zuxuan Wu",
+      "Yu-Gang Jiang"
+    ]
   },
   {
     "id": "arxiv:2609.01281",
@@ -10455,7 +11647,27 @@
     "legacy_paths": [
       "robotics-embodied/papers/2026/embodiedskills.md"
     ],
-    "content_kind": "reading"
+    "content_kind": "reading",
+    "year": "2026",
+    "authors": [
+      "Wei Wang",
+      "Wenqiao Zhang",
+      "Yutong Lin",
+      "Yuqian Yuan",
+      "Tianwei Lin",
+      "Jinhao Mao",
+      "Zhenxuan Fan",
+      "Mingjian Gao",
+      "Yang Dai",
+      "Wentong Li",
+      "Zheqi Lv",
+      "Zheng Dong",
+      "Yingjie Niu",
+      "Jiaqi Zhu",
+      "Jun Xiao",
+      "Chao Li",
+      "Yueting Zhuang"
+    ]
   },
   {
     "id": "arxiv:2607.14252",
@@ -10514,7 +11726,13 @@
     "legacy_paths": [
       "robotics-embodied/papers/2026/memora.md"
     ],
-    "content_kind": "reading"
+    "content_kind": "reading",
+    "year": "2026",
+    "authors": [
+      "Zihao Yu",
+      "Xiu Yuan",
+      "Chongjie Zhang"
+    ]
   },
   {
     "id": "arxiv:2606.23565",
@@ -10574,7 +11792,22 @@
     "legacy_paths": [
       "robotics-embodied/papers/2026/holoagent-0.md"
     ],
-    "content_kind": "reading"
+    "content_kind": "reading",
+    "year": "2026",
+    "authors": [
+      "Xiaolin Zhou",
+      "Liu Liu",
+      "Tingyang Xiao",
+      "Wei Feng",
+      "Fa Fu",
+      "Xinrui Meng",
+      "Xinjie Wang",
+      "Jialiang Han",
+      "Boyang Yu",
+      "Yun Du",
+      "Wei Sui",
+      "Zhizhong Su"
+    ]
   },
   {
     "id": "url:cornell:compression.kdd06",
@@ -11433,7 +12666,13 @@
     "doi": "10.1126/scirobotics.abc5986",
     "year": "2020",
     "resource_kind": "paper",
-    "authors": "Joonho Lee; Jemin Hwangbo; Lorenz Wellhausen; Vladlen Koltun; Marco Hutter",
+    "authors": [
+      "Joonho Lee",
+      "Jemin Hwangbo",
+      "Lorenz Wellhausen",
+      "Vladlen Koltun",
+      "Marco Hutter"
+    ],
     "topic_paths": [
       "robotics/control"
     ],
@@ -11496,7 +12735,11 @@
     "doi": null,
     "year": "2019",
     "resource_kind": "paper",
-    "authors": "Joonho Lee; Jemin Hwangbo; Marco Hutter",
+    "authors": [
+      "Joonho Lee",
+      "Jemin Hwangbo",
+      "Marco Hutter"
+    ],
     "topic_paths": [
       "robotics/control"
     ],
@@ -11553,13 +12796,24 @@
   },
   {
     "id": "arxiv:2010.15920",
-    "title": "Recovery RL: Safe Reinforcement Learning With Learned Recovery Zones",
+    "title": "Recovery RL: Safe Reinforcement Learning with Learned Recovery Zones",
     "url": "https://ieeexplore.ieee.org/document/9392290/",
     "arxiv_id": "2010.15920",
     "doi": "10.1109/LRA.2021.3070252",
     "year": "2021",
     "resource_kind": "paper",
-    "authors": "Brijen Thananjeyan; Ashwin Balakrishna; Suraj Nair; Michael Luo; Krishnan Srinivasan; Minho Hwang; Joseph E. Gonzalez; Julian Ibarz; Chelsea Finn; Ken Goldberg",
+    "authors": [
+      "Brijen Thananjeyan",
+      "Ashwin Balakrishna",
+      "Suraj Nair",
+      "Michael Luo",
+      "Krishnan Srinivasan",
+      "Minho Hwang",
+      "Joseph E. Gonzalez",
+      "Julian Ibarz",
+      "Chelsea Finn",
+      "Ken Goldberg"
+    ],
     "topic_paths": [
       "robotics/control"
     ],
@@ -11625,9 +12879,17 @@
     "doi": "10.1126/scirobotics.abk2822",
     "year": "2022",
     "resource_kind": "paper",
-    "authors": "Takahiro Miki; Joonho Lee; Jemin Hwangbo; Lorenz Wellhausen; Vladlen Koltun; Marco Hutter",
+    "authors": [
+      "Takahiro Miki",
+      "Joonho Lee",
+      "Jemin Hwangbo",
+      "Lorenz Wellhausen",
+      "Vladlen Koltun",
+      "Marco Hutter"
+    ],
     "topic_paths": [
-      "robotics/control"
+      "robotics/control",
+      "robotics/perception"
     ],
     "detail_topics": [
       "风险敏感策略与恢复控制"
@@ -11689,7 +12951,11 @@
     "doi": null,
     "year": "2020",
     "resource_kind": "paper",
-    "authors": "Minqi Jiang; Edward Grefenstette; Tim Rocktäschel",
+    "authors": [
+      "Minqi Jiang",
+      "Edward Grefenstette",
+      "Tim Rocktäschel"
+    ],
     "topic_paths": [
       "robotics/control"
     ],
@@ -11752,7 +13018,17 @@
     "doi": null,
     "year": "2023",
     "resource_kind": "paper",
-    "authors": "Jiyuan Shi; Chenjia Bai; Haoran He; Lei Han; Dong Wang; Bin Zhao; Mingguo Zhao; Xiu Li; Xuelong Li",
+    "authors": [
+      "Jiyuan Shi",
+      "Chenjia Bai",
+      "Haoran He",
+      "Lei Han",
+      "Dong Wang",
+      "Bin Zhao",
+      "Mingguo Zhao",
+      "Xiu Li",
+      "Xuelong Li"
+    ],
     "topic_paths": [
       "robotics/control"
     ],
@@ -11815,7 +13091,12 @@
     "doi": null,
     "year": "2023",
     "resource_kind": "paper",
-    "authors": "Lukas Schneider; Jonas Frey; Takahiro Miki; Marco Hutter",
+    "authors": [
+      "Lukas Schneider",
+      "Jonas Frey",
+      "Takahiro Miki",
+      "Marco Hutter"
+    ],
     "topic_paths": [
       "robotics/control"
     ],
@@ -12011,7 +13292,13 @@
     "doi": null,
     "year": "2023",
     "resource_kind": "paper",
-    "authors": "Kyle Stachowicz; Dhruv Shah; Arjun Bhorkar; Ilya Kostrikov; Sergey Levine",
+    "authors": [
+      "Kyle Stachowicz",
+      "Dhruv Shah",
+      "Arjun Bhorkar",
+      "Ilya Kostrikov",
+      "Sergey Levine"
+    ],
     "topic_paths": [
       "robotics/control",
       "robotics/navigation-planning"
@@ -12109,7 +13396,16 @@
     "source_path": "llm/papers/arxiv-2303.06349/source.json",
     "legacy_paths": [],
     "content_kind": "bibliographic_card",
-    "related_paper": "foundations/relations/recurrent-state.md"
+    "related_paper": "foundations/relations/recurrent-state.md",
+    "authors": [
+      "Antonio Orvieto",
+      "Samuel L Smith",
+      "Albert Gu",
+      "Anushan Fernando",
+      "Caglar Gulcehre",
+      "Razvan Pascanu",
+      "Soham De"
+    ]
   },
   {
     "id": "arxiv:2304.14767",
@@ -12155,7 +13451,13 @@
     "source_path": "cross-domain/papers/arxiv-2304.14767/source.json",
     "legacy_paths": [],
     "content_kind": "bibliographic_card",
-    "related_paper": "foundations/relations/attention-ffn-division.md"
+    "related_paper": "foundations/relations/attention-ffn-division.md",
+    "authors": [
+      "Mor Geva",
+      "Jasmijn Bastings",
+      "Katja Filippova",
+      "Amir Globerson"
+    ]
   },
   {
     "id": "arxiv:2109.11978",
@@ -14000,6 +15302,3722 @@
     "content_kind": "bibliographic_card",
     "authors": [
       "Google DeepMind"
+    ]
+  },
+  {
+    "id": "arxiv:1011.0686",
+    "title": "A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning",
+    "url": "https://arxiv.org/abs/1011.0686",
+    "arxiv_id": "1011.0686",
+    "doi": null,
+    "year": "2011",
+    "topic_paths": [
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/1011.0686"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p200",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-1011.0686",
+    "canonical_path": "robotics-embodied/papers/arxiv-1011.0686/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-1011.0686/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-1011.0686/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Stéphane Ross",
+      "Geoffrey J. Gordon",
+      "J. Andrew Bagnell"
+    ]
+  },
+  {
+    "id": "arxiv:1502.00956",
+    "title": "ORB-SLAM: a Versatile and Accurate Monocular SLAM System",
+    "url": "https://arxiv.org/abs/1502.00956",
+    "arxiv_id": "1502.00956",
+    "doi": null,
+    "year": "2015",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/1502.00956"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p201",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-1502.00956",
+    "canonical_path": "robotics-embodied/papers/arxiv-1502.00956/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-1502.00956/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-1502.00956/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Raúl Mur-Artal",
+      "J. M. M. Montiel",
+      "Juan D. Tardós"
+    ]
+  },
+  {
+    "id": "arxiv:1506.02640",
+    "title": "You Only Look Once: Unified, Real-Time Object Detection",
+    "url": "https://arxiv.org/abs/1506.02640",
+    "arxiv_id": "1506.02640",
+    "doi": null,
+    "year": "2015",
+    "topic_paths": [
+      "robotics/perception"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/1506.02640"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p202",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-1506.02640",
+    "canonical_path": "robotics-embodied/papers/arxiv-1506.02640/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-1506.02640/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-1506.02640/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Joseph Redmon",
+      "Santosh Divvala",
+      "Ross Girshick",
+      "Ali Farhadi"
+    ]
+  },
+  {
+    "id": "arxiv:1607.02565",
+    "title": "Direct Sparse Odometry",
+    "url": "https://arxiv.org/abs/1607.02565",
+    "arxiv_id": "1607.02565",
+    "doi": null,
+    "year": "2016",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/1607.02565"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p203",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-1607.02565",
+    "canonical_path": "robotics-embodied/papers/arxiv-1607.02565/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-1607.02565/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-1607.02565/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Jakob Engel",
+      "Vladlen Koltun",
+      "Daniel Cremers"
+    ]
+  },
+  {
+    "id": "arxiv:1610.06475",
+    "title": "ORB-SLAM2: an Open-Source SLAM System for Monocular, Stereo and RGB-D Cameras",
+    "url": "https://arxiv.org/abs/1610.06475",
+    "arxiv_id": "1610.06475",
+    "doi": null,
+    "year": "2016",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/1610.06475"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p204",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-1610.06475",
+    "canonical_path": "robotics-embodied/papers/arxiv-1610.06475/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-1610.06475/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-1610.06475/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Raúl Mur-Artal",
+      "Juan D. Tardós"
+    ]
+  },
+  {
+    "id": "arxiv:1703.06870",
+    "title": "Mask R-CNN",
+    "url": "https://arxiv.org/abs/1703.06870",
+    "arxiv_id": "1703.06870",
+    "doi": null,
+    "year": "2017",
+    "topic_paths": [
+      "robotics/perception"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/1703.06870"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p205",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-1703.06870",
+    "canonical_path": "robotics-embodied/papers/arxiv-1703.06870/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-1703.06870/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-1703.06870/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Kaiming He",
+      "Georgia Gkioxari",
+      "Piotr Dollár",
+      "Ross Girshick"
+    ]
+  },
+  {
+    "id": "arxiv:1708.03852",
+    "title": "VINS-Mono: A Robust and Versatile Monocular Visual-Inertial State Estimator",
+    "url": "https://arxiv.org/abs/1708.03852",
+    "arxiv_id": "1708.03852",
+    "doi": null,
+    "year": "2017",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/1708.03852"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p206",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-1708.03852",
+    "canonical_path": "robotics-embodied/papers/arxiv-1708.03852/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-1708.03852/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-1708.03852/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Tong Qin",
+      "Peiliang Li",
+      "Shaojie Shen"
+    ]
+  },
+  {
+    "id": "arxiv:1803.10122",
+    "title": "World Models",
+    "url": "https://arxiv.org/abs/1803.10122",
+    "arxiv_id": "1803.10122",
+    "doi": null,
+    "year": "2018",
+    "topic_paths": [
+      "multimodal/world-models",
+      "robotics/control"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/1803.10122"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p207",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "action"
+    ],
+    "task_tags": [
+      "generation",
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-1803.10122",
+    "canonical_path": "robotics-embodied/papers/arxiv-1803.10122/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-1803.10122/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-1803.10122/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "David Ha",
+      "Jürgen Schmidhuber"
+    ]
+  },
+  {
+    "id": "arxiv:1806.01260",
+    "title": "Digging Into Self-Supervised Monocular Depth Estimation",
+    "url": "https://arxiv.org/abs/1806.01260",
+    "arxiv_id": "1806.01260",
+    "doi": null,
+    "year": "2018",
+    "topic_paths": [
+      "robotics/perception"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/1806.01260"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p208",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "video"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-1806.01260",
+    "canonical_path": "robotics-embodied/papers/arxiv-1806.01260/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-1806.01260/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-1806.01260/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Clément Godard",
+      "Oisin Mac Aodha",
+      "Michael Firman",
+      "Gabriel J. Brostow"
+    ]
+  },
+  {
+    "id": "arxiv:1806.02724",
+    "title": "Speaker-Follower Models for Vision-and-Language Navigation",
+    "url": "https://arxiv.org/abs/1806.02724",
+    "arxiv_id": "1806.02724",
+    "doi": null,
+    "year": "2018",
+    "topic_paths": [
+      "robotics/navigation-planning"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/1806.02724"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p209",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-1806.02724",
+    "canonical_path": "robotics-embodied/papers/arxiv-1806.02724/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-1806.02724/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-1806.02724/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Daniel Fried",
+      "Ronghang Hu",
+      "Volkan Cirik",
+      "Anna Rohrbach",
+      "Jacob Andreas",
+      "Louis-Philippe Morency",
+      "Taylor Berg-Kirkpatrick",
+      "Kate Saenko",
+      "Dan Klein",
+      "Trevor Darrell"
+    ]
+  },
+  {
+    "id": "arxiv:1809.08835",
+    "title": "Crowd-Robot Interaction: Crowd-aware Robot Navigation with Attention-based Deep Reinforcement Learning",
+    "url": "https://arxiv.org/abs/1809.08835",
+    "arxiv_id": "1809.08835",
+    "doi": null,
+    "year": "2018",
+    "topic_paths": [
+      "robotics/navigation-planning"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/1809.08835"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p210",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "state",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-1809.08835",
+    "canonical_path": "robotics-embodied/papers/arxiv-1809.08835/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-1809.08835/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-1809.08835/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Changan Chen",
+      "Yuejiang Liu",
+      "Sven Kreiss",
+      "Alexandre Alahi"
+    ]
+  },
+  {
+    "id": "arxiv:1811.04551",
+    "title": "Learning Latent Dynamics for Planning from Pixels",
+    "url": "https://arxiv.org/abs/1811.04551",
+    "arxiv_id": "1811.04551",
+    "doi": null,
+    "year": "2018",
+    "topic_paths": [
+      "multimodal/world-models",
+      "robotics/control"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/1811.04551"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p211",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "action"
+    ],
+    "task_tags": [
+      "generation",
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-1811.04551",
+    "canonical_path": "robotics-embodied/papers/arxiv-1811.04551/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-1811.04551/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-1811.04551/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Danijar Hafner",
+      "Timothy Lillicrap",
+      "Ian Fischer",
+      "Ruben Villegas",
+      "David Ha",
+      "Honglak Lee",
+      "James Davidson"
+    ]
+  },
+  {
+    "id": "arxiv:1812.05784",
+    "title": "PointPillars: Fast Encoders for Object Detection from Point Clouds",
+    "url": "https://arxiv.org/abs/1812.05784",
+    "arxiv_id": "1812.05784",
+    "doi": null,
+    "year": "2018",
+    "topic_paths": [
+      "robotics/perception"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/1812.05784"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p212",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-1812.05784",
+    "canonical_path": "robotics-embodied/papers/arxiv-1812.05784/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-1812.05784/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-1812.05784/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Alex H. Lang",
+      "Sourabh Vora",
+      "Holger Caesar",
+      "Lubing Zhou",
+      "Jiong Yang",
+      "Oscar Beijbom"
+    ]
+  },
+  {
+    "id": "arxiv:1901.08652",
+    "title": "Learning agile and dynamic motor skills for legged robots",
+    "url": "https://arxiv.org/abs/1901.08652",
+    "arxiv_id": "1901.08652",
+    "doi": null,
+    "year": "2019",
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/1901.08652"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p213",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "state",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-1901.08652",
+    "canonical_path": "robotics-embodied/papers/arxiv-1901.08652/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-1901.08652/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-1901.08652/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Jemin Hwangbo",
+      "Joonho Lee",
+      "Alexey Dosovitskiy",
+      "Dario Bellicoso",
+      "Vassilios Tsounis",
+      "Vladlen Koltun",
+      "Marco Hutter"
+    ]
+  },
+  {
+    "id": "arxiv:1903.11027",
+    "title": "nuScenes: A multimodal dataset for autonomous driving",
+    "url": "https://arxiv.org/abs/1903.11027",
+    "arxiv_id": "1903.11027",
+    "doi": null,
+    "year": "2019",
+    "topic_paths": [
+      "robotics/perception"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/1903.11027"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p214",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "video"
+    ],
+    "task_tags": [
+      "understanding",
+      "evaluation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-1903.11027",
+    "canonical_path": "robotics-embodied/papers/arxiv-1903.11027/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-1903.11027/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-1903.11027/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Holger Caesar",
+      "Varun Bankiti",
+      "Alex H. Lang",
+      "Sourabh Vora",
+      "Venice Erin Liong",
+      "Qiang Xu",
+      "Anush Krishnan",
+      "Yu Pan",
+      "Giancarlo Baldan",
+      "Oscar Beijbom"
+    ]
+  },
+  {
+    "id": "arxiv:1911.00357",
+    "title": "DD-PPO: Learning Near-Perfect PointGoal Navigators from 2.5 Billion Frames",
+    "url": "https://arxiv.org/abs/1911.00357",
+    "arxiv_id": "1911.00357",
+    "doi": null,
+    "year": "2019",
+    "topic_paths": [
+      "robotics/navigation-planning"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/1911.00357"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p215",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-1911.00357",
+    "canonical_path": "robotics-embodied/papers/arxiv-1911.00357/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-1911.00357/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-1911.00357/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Erik Wijmans",
+      "Abhishek Kadian",
+      "Ari Morcos",
+      "Stefan Lee",
+      "Irfan Essa",
+      "Devi Parikh",
+      "Manolis Savva",
+      "Dhruv Batra"
+    ]
+  },
+  {
+    "id": "arxiv:1912.01734",
+    "title": "ALFRED: A Benchmark for Interpreting Grounded Instructions for Everyday Tasks",
+    "url": "https://arxiv.org/abs/1912.01734",
+    "arxiv_id": "1912.01734",
+    "doi": null,
+    "year": "2019",
+    "topic_paths": [
+      "robotics/embodied-agents"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/1912.01734"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p216",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "action"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-1912.01734",
+    "canonical_path": "robotics-embodied/papers/arxiv-1912.01734/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-1912.01734/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-1912.01734/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Mohit Shridhar",
+      "Jesse Thomason",
+      "Daniel Gordon",
+      "Yonatan Bisk",
+      "Winson Han",
+      "Roozbeh Mottaghi",
+      "Luke Zettlemoyer",
+      "Dieter Fox"
+    ]
+  },
+  {
+    "id": "arxiv:2004.02857",
+    "title": "Beyond the Nav-Graph: Vision-and-Language Navigation in Continuous Environments",
+    "url": "https://arxiv.org/abs/2004.02857",
+    "arxiv_id": "2004.02857",
+    "doi": null,
+    "year": "2020",
+    "topic_paths": [
+      "robotics/navigation-planning"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2004.02857"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p217",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "action"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2004.02857",
+    "canonical_path": "robotics-embodied/papers/arxiv-2004.02857/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2004.02857/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2004.02857/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Jacob Krantz",
+      "Erik Wijmans",
+      "Arjun Majumdar",
+      "Dhruv Batra",
+      "Stefan Lee"
+    ]
+  },
+  {
+    "id": "arxiv:2007.00258",
+    "title": "LIO-SAM: Tightly-coupled Lidar Inertial Odometry via Smoothing and Mapping",
+    "url": "https://arxiv.org/abs/2007.00258",
+    "arxiv_id": "2007.00258",
+    "doi": null,
+    "year": "2020",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2007.00258"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p218",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2007.00258",
+    "canonical_path": "robotics-embodied/papers/arxiv-2007.00258/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2007.00258/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2007.00258/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Tixiao Shan",
+      "Brendan Englot",
+      "Drew Meyers",
+      "Wei Wang",
+      "Carlo Ratti",
+      "Daniela Rus"
+    ]
+  },
+  {
+    "id": "arxiv:2011.03807",
+    "title": "Sim-to-Real Transfer for Vision-and-Language Navigation",
+    "url": "https://arxiv.org/abs/2011.03807",
+    "arxiv_id": "2011.03807",
+    "doi": null,
+    "year": "2020",
+    "topic_paths": [
+      "robotics/navigation-planning"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2011.03807"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p219",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2011.03807",
+    "canonical_path": "robotics-embodied/papers/arxiv-2011.03807/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2011.03807/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2011.03807/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Peter Anderson",
+      "Ayush Shrivastava",
+      "Joanne Truong",
+      "Arjun Majumdar",
+      "Devi Parikh",
+      "Dhruv Batra",
+      "Stefan Lee"
+    ]
+  },
+  {
+    "id": "arxiv:2103.12352",
+    "title": "iMAP: Implicit Mapping and Positioning in Real-Time",
+    "url": "https://arxiv.org/abs/2103.12352",
+    "arxiv_id": "2103.12352",
+    "doi": null,
+    "year": "2021",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2103.12352"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p220",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2103.12352",
+    "canonical_path": "robotics-embodied/papers/arxiv-2103.12352/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2103.12352/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2103.12352/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Edgar Sucar",
+      "Shikun Liu",
+      "Joseph Ortiz",
+      "Andrew J. Davison"
+    ]
+  },
+  {
+    "id": "arxiv:2107.06829",
+    "title": "FAST-LIO2: Fast Direct LiDAR-inertial Odometry",
+    "url": "https://arxiv.org/abs/2107.06829",
+    "arxiv_id": "2107.06829",
+    "doi": null,
+    "year": "2021",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2107.06829"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p221",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2107.06829",
+    "canonical_path": "robotics-embodied/papers/arxiv-2107.06829/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2107.06829/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2107.06829/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Wei Xu",
+      "Yixi Cai",
+      "Dongjiao He",
+      "Jiarong Lin",
+      "Fu Zhang"
+    ]
+  },
+  {
+    "id": "arxiv:2108.10869",
+    "title": "DROID-SLAM: Deep Visual SLAM for Monocular, Stereo, and RGB-D Cameras",
+    "url": "https://arxiv.org/abs/2108.10869",
+    "arxiv_id": "2108.10869",
+    "doi": null,
+    "year": "2021",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2108.10869"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p222",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2108.10869",
+    "canonical_path": "robotics-embodied/papers/arxiv-2108.10869/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2108.10869/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2108.10869/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Zachary Teed",
+      "Jia Deng"
+    ]
+  },
+  {
+    "id": "arxiv:2112.12130",
+    "title": "NICE-SLAM: Neural Implicit Scalable Encoding for SLAM",
+    "url": "https://arxiv.org/abs/2112.12130",
+    "arxiv_id": "2112.12130",
+    "doi": null,
+    "year": "2021",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2112.12130"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p223",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2112.12130",
+    "canonical_path": "robotics-embodied/papers/arxiv-2112.12130/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2112.12130/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2112.12130/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Zihan Zhu",
+      "Songyou Peng",
+      "Viktor Larsson",
+      "Weiwei Xu",
+      "Hujun Bao",
+      "Zhaopeng Cui",
+      "Martin R. Oswald",
+      "Marc Pollefeys"
+    ]
+  },
+  {
+    "id": "arxiv:2205.13542",
+    "title": "BEVFusion: Multi-Task Multi-Sensor Fusion with Unified Bird's-Eye View Representation",
+    "url": "https://arxiv.org/abs/2205.13542",
+    "arxiv_id": "2205.13542",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "robotics/perception"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2205.13542"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p224",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2205.13542",
+    "canonical_path": "robotics-embodied/papers/arxiv-2205.13542/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2205.13542/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2205.13542/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Zhijian Liu",
+      "Haotian Tang",
+      "Alexander Amini",
+      "Xinyu Yang",
+      "Huizi Mao",
+      "Daniela Rus",
+      "Song Han"
+    ]
+  },
+  {
+    "id": "arxiv:2206.14176",
+    "title": "DayDreamer: World Models for Physical Robot Learning",
+    "url": "https://arxiv.org/abs/2206.14176",
+    "arxiv_id": "2206.14176",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "multimodal/world-models",
+      "robotics/control"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2206.14176"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p225",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2206.14176",
+    "canonical_path": "robotics-embodied/papers/arxiv-2206.14176/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2206.14176/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2206.14176/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Philipp Wu",
+      "Alejandro Escontrela",
+      "Danijar Hafner",
+      "Ken Goldberg",
+      "Pieter Abbeel"
+    ]
+  },
+  {
+    "id": "arxiv:2207.04429",
+    "title": "LM-Nav: Robotic Navigation with Large Pre-Trained Models of Language, Vision, and Action",
+    "url": "https://arxiv.org/abs/2207.04429",
+    "arxiv_id": "2207.04429",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "robotics/navigation-planning",
+      "robotics/embodied-agents"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2207.04429"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p226",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2207.04429",
+    "canonical_path": "robotics-embodied/papers/arxiv-2207.04429/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2207.04429/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2207.04429/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Dhruv Shah",
+      "Blazej Osinski",
+      "Brian Ichter",
+      "Sergey Levine"
+    ]
+  },
+  {
+    "id": "arxiv:2207.05608",
+    "title": "Inner Monologue: Embodied Reasoning through Planning with Language Models",
+    "url": "https://arxiv.org/abs/2207.05608",
+    "arxiv_id": "2207.05608",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "robotics/embodied-agents"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2207.05608"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p227",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2207.05608",
+    "canonical_path": "robotics-embodied/papers/arxiv-2207.05608/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2207.05608/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2207.05608/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Wenlong Huang",
+      "Fei Xia",
+      "Ted Xiao",
+      "Harris Chan",
+      "Jacky Liang",
+      "Pete Florence",
+      "Andy Zeng",
+      "Jonathan Tompson",
+      "Igor Mordatch",
+      "Yevgen Chebotar",
+      "Pierre Sermanet",
+      "Noah Brown",
+      "Tomas Jackson",
+      "Linda Luu",
+      "Sergey Levine",
+      "Karol Hausman",
+      "Brian Ichter"
+    ]
+  },
+  {
+    "id": "arxiv:2209.07753",
+    "title": "Code as Policies: Language Model Programs for Embodied Control",
+    "url": "https://arxiv.org/abs/2209.07753",
+    "arxiv_id": "2209.07753",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "robotics/embodied-agents"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2209.07753"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p228",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2209.07753",
+    "canonical_path": "robotics-embodied/papers/arxiv-2209.07753/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2209.07753/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2209.07753/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Jacky Liang",
+      "Wenlong Huang",
+      "Fei Xia",
+      "Peng Xu",
+      "Karol Hausman",
+      "Brian Ichter",
+      "Pete Florence",
+      "Andy Zeng"
+    ]
+  },
+  {
+    "id": "arxiv:2212.04088",
+    "title": "LLM-Planner: Few-Shot Grounded Planning for Embodied Agents with Large Language Models",
+    "url": "https://arxiv.org/abs/2212.04088",
+    "arxiv_id": "2212.04088",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "robotics/embodied-agents"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2212.04088"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p229",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2212.04088",
+    "canonical_path": "robotics-embodied/papers/arxiv-2212.04088/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2212.04088/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2212.04088/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Chan Hee Song",
+      "Jiaman Wu",
+      "Clayton Washington",
+      "Brian M. Sadler",
+      "Wei-Lun Chao",
+      "Yu Su"
+    ]
+  },
+  {
+    "id": "arxiv:2302.00111",
+    "title": "Learning Universal Policies via Text-Guided Video Generation",
+    "url": "https://arxiv.org/abs/2302.00111",
+    "arxiv_id": "2302.00111",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "multimodal/world-models",
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2302.00111"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p230",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "video",
+      "text",
+      "action"
+    ],
+    "task_tags": [
+      "generation",
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2302.00111",
+    "canonical_path": "robotics-embodied/papers/arxiv-2302.00111/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2302.00111/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2302.00111/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Yilun Du",
+      "Mengjiao Yang",
+      "Bo Dai",
+      "Hanjun Dai",
+      "Ofir Nachum",
+      "Joshua B. Tenenbaum",
+      "Dale Schuurmans",
+      "Pieter Abbeel"
+    ]
+  },
+  {
+    "id": "arxiv:2302.07241",
+    "title": "ConceptFusion: Open-set Multimodal 3D Mapping",
+    "url": "https://arxiv.org/abs/2302.07241",
+    "arxiv_id": "2302.07241",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "robotics/perception",
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2302.07241"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p231",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2302.07241",
+    "canonical_path": "robotics-embodied/papers/arxiv-2302.07241/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2302.07241/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2302.07241/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Krishna Murthy Jatavallabhula",
+      "Alihusein Kuwajerwala",
+      "Qiao Gu",
+      "Mohd Omama",
+      "Tao Chen",
+      "等 17 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2304.02643",
+    "title": "Segment Anything",
+    "url": "https://arxiv.org/abs/2304.02643",
+    "arxiv_id": "2304.02643",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "robotics/perception"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2304.02643"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p232",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2304.02643",
+    "canonical_path": "robotics-embodied/papers/arxiv-2304.02643/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2304.02643/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2304.02643/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Alexander Kirillov",
+      "Eric Mintun",
+      "Nikhila Ravi",
+      "Hanzi Mao",
+      "Chloe Rolland",
+      "等（总人数未核实）"
+    ]
+  },
+  {
+    "id": "arxiv:2304.13705",
+    "title": "Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware",
+    "url": "https://arxiv.org/abs/2304.13705",
+    "arxiv_id": "2304.13705",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2304.13705"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p233",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2304.13705",
+    "canonical_path": "robotics-embodied/papers/arxiv-2304.13705/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2304.13705/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2304.13705/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Tony Z. Zhao",
+      "Vikash Kumar",
+      "Sergey Levine",
+      "Chelsea Finn"
+    ]
+  },
+  {
+    "id": "arxiv:2306.14846",
+    "title": "ViNT: A Foundation Model for Visual Navigation",
+    "url": "https://arxiv.org/abs/2306.14846",
+    "arxiv_id": "2306.14846",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "robotics/navigation-planning"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2306.14846"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p234",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2306.14846",
+    "canonical_path": "robotics-embodied/papers/arxiv-2306.14846/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2306.14846/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2306.14846/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Dhruv Shah",
+      "Ajay Sridhar",
+      "Nitish Dashora",
+      "Kyle Stachowicz",
+      "Kevin Black",
+      "Noriaki Hirose",
+      "Sergey Levine"
+    ]
+  },
+  {
+    "id": "arxiv:2307.05973",
+    "title": "VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models",
+    "url": "https://arxiv.org/abs/2307.05973",
+    "arxiv_id": "2307.05973",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "robotics/embodied-agents"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2307.05973"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p235",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "code",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2307.05973",
+    "canonical_path": "robotics-embodied/papers/arxiv-2307.05973/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2307.05973/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2307.05973/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Wenlong Huang",
+      "Chen Wang",
+      "Ruohan Zhang",
+      "Yunzhu Li",
+      "Jiajun Wu",
+      "Li Fei-Fei"
+    ]
+  },
+  {
+    "id": "arxiv:2309.15462",
+    "title": "DTC: Deep Tracking Control",
+    "url": "https://arxiv.org/abs/2309.15462",
+    "arxiv_id": "2309.15462",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2309.15462"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p236",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "state",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2309.15462",
+    "canonical_path": "robotics-embodied/papers/arxiv-2309.15462/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2309.15462/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2309.15462/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Fabian Jenelten",
+      "Junzhe He",
+      "Farbod Farshidian",
+      "Marco Hutter"
+    ]
+  },
+  {
+    "id": "arxiv:2310.06114",
+    "title": "Learning Interactive Real-World Simulators",
+    "url": "https://arxiv.org/abs/2310.06114",
+    "arxiv_id": "2310.06114",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "multimodal/world-models",
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2310.06114"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p237",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "video",
+      "text",
+      "action"
+    ],
+    "task_tags": [
+      "generation",
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2310.06114",
+    "canonical_path": "robotics-embodied/papers/arxiv-2310.06114/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2310.06114/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2310.06114/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Sherry Yang",
+      "Yilun Du",
+      "Kamyar Ghasemipour",
+      "Jonathan Tompson",
+      "Leslie Kaelbling",
+      "Dale Schuurmans",
+      "Pieter Abbeel"
+    ]
+  },
+  {
+    "id": "arxiv:2310.07896",
+    "title": "NoMaD: Goal Masked Diffusion Policies for Navigation and Exploration",
+    "url": "https://arxiv.org/abs/2310.07896",
+    "arxiv_id": "2310.07896",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "robotics/navigation-planning"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2310.07896"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p238",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2310.07896",
+    "canonical_path": "robotics-embodied/papers/arxiv-2310.07896/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2310.07896/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2310.07896/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Ajay Sridhar",
+      "Dhruv Shah",
+      "Catherine Glossop",
+      "Sergey Levine"
+    ]
+  },
+  {
+    "id": "arxiv:2310.16828",
+    "title": "TD-MPC2: Scalable, Robust World Models for Continuous Control",
+    "url": "https://arxiv.org/abs/2310.16828",
+    "arxiv_id": "2310.16828",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "multimodal/world-models",
+      "robotics/control"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2310.16828"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p239",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "state",
+      "image",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2310.16828",
+    "canonical_path": "robotics-embodied/papers/arxiv-2310.16828/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2310.16828/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2310.16828/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Nicklas Hansen",
+      "Hao Su",
+      "Xiaolong Wang"
+    ]
+  },
+  {
+    "id": "arxiv:2312.02126",
+    "title": "SplaTAM: Splat, Track & Map 3D Gaussians for Dense RGB-D SLAM",
+    "url": "https://arxiv.org/abs/2312.02126",
+    "arxiv_id": "2312.02126",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2312.02126"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p240",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2312.02126",
+    "canonical_path": "robotics-embodied/papers/arxiv-2312.02126/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2312.02126/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2312.02126/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Nikhil Keetha",
+      "Jay Karhade",
+      "Krishna Murthy Jatavallabhula",
+      "Gengshan Yang",
+      "Sebastian Scherer",
+      "Deva Ramanan",
+      "Jonathon Luiten"
+    ]
+  },
+  {
+    "id": "arxiv:2312.03275",
+    "title": "VLFM: Vision-Language Frontier Maps for Zero-Shot Semantic Navigation",
+    "url": "https://arxiv.org/abs/2312.03275",
+    "arxiv_id": "2312.03275",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "robotics/navigation-planning"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2312.03275"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p241",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2312.03275",
+    "canonical_path": "robotics-embodied/papers/arxiv-2312.03275/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2312.03275/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2312.03275/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Naoki Yokoyama",
+      "Sehoon Ha",
+      "Dhruv Batra",
+      "Jiuguang Wang",
+      "Bernadette Bucher"
+    ]
+  },
+  {
+    "id": "arxiv:2312.06741",
+    "title": "Gaussian Splatting SLAM",
+    "url": "https://arxiv.org/abs/2312.06741",
+    "arxiv_id": "2312.06741",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2312.06741"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p242",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2312.06741",
+    "canonical_path": "robotics-embodied/papers/arxiv-2312.06741/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2312.06741/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2312.06741/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Hidenobu Matsuki",
+      "Riku Murai",
+      "Paul H. J. Kelly",
+      "Andrew J. Davison"
+    ]
+  },
+  {
+    "id": "arxiv:2401.10891",
+    "title": "Depth Anything: Unleashing the Power of Large-Scale Unlabeled Data",
+    "url": "https://arxiv.org/abs/2401.10891",
+    "arxiv_id": "2401.10891",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "robotics/perception"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2401.10891"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p243",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2401.10891",
+    "canonical_path": "robotics-embodied/papers/arxiv-2401.10891/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2401.10891/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2401.10891/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Lihe Yang",
+      "Bingyi Kang",
+      "Zilong Huang",
+      "Xiaogang Xu",
+      "Jiashi Feng",
+      "Hengshuang Zhao"
+    ]
+  },
+  {
+    "id": "arxiv:2402.04555",
+    "title": "FM-Fusion: Instance-aware Semantic Mapping Boosted by Vision-Language Foundation Models",
+    "url": "https://arxiv.org/abs/2402.04555",
+    "arxiv_id": "2402.04555",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "robotics/perception",
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2402.04555"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p244",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2402.04555",
+    "canonical_path": "robotics-embodied/papers/arxiv-2402.04555/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2402.04555/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2402.04555/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Chuhao Liu",
+      "Ke Wang",
+      "Jieqi Shi",
+      "Zhijian Qiao",
+      "Shaojie Shen"
+    ]
+  },
+  {
+    "id": "arxiv:2406.09414",
+    "title": "Depth Anything V2",
+    "url": "https://arxiv.org/abs/2406.09414",
+    "arxiv_id": "2406.09414",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "robotics/perception"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2406.09414"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p245",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2406.09414",
+    "canonical_path": "robotics-embodied/papers/arxiv-2406.09414/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2406.09414/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2406.09414/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Lihe Yang",
+      "Bingyi Kang",
+      "Zilong Huang",
+      "Zhen Zhao",
+      "Xiaogang Xu",
+      "Jiashi Feng",
+      "Hengshuang Zhao"
+    ]
+  },
+  {
+    "id": "arxiv:2409.00588",
+    "title": "Diffusion Policy Policy Optimization",
+    "url": "https://arxiv.org/abs/2409.00588",
+    "arxiv_id": "2409.00588",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2409.00588"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p246",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2409.00588",
+    "canonical_path": "robotics-embodied/papers/arxiv-2409.00588/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2409.00588/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2409.00588/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Allen Z. Ren",
+      "Justin Lidard",
+      "Lars L. Ankile",
+      "Anthony Simeonov",
+      "Pulkit Agrawal",
+      "Anirudha Majumdar",
+      "Benjamin Burchfiel",
+      "Hongkai Dai",
+      "Max Simchowitz"
+    ]
+  },
+  {
+    "id": "arxiv:2410.21845",
+    "title": "Precise and Dexterous Robotic Manipulation via Human-in-the-Loop Reinforcement Learning",
+    "url": "https://arxiv.org/abs/2410.21845",
+    "arxiv_id": "2410.21845",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2410.21845"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p247",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2410.21845",
+    "canonical_path": "robotics-embodied/papers/arxiv-2410.21845/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2410.21845/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2410.21845/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Jianlan Luo",
+      "Charles Xu",
+      "Jeffrey Wu",
+      "Sergey Levine"
+    ]
+  },
+  {
+    "id": "arxiv:2412.04453",
+    "title": "NaVILA: Legged Robot Vision-Language-Action Model for Navigation",
+    "url": "https://arxiv.org/abs/2412.04453",
+    "arxiv_id": "2412.04453",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "robotics/navigation-planning",
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2412.04453"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p248",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2412.04453",
+    "canonical_path": "robotics-embodied/papers/arxiv-2412.04453/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2412.04453/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2412.04453/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "An-Chieh Cheng",
+      "Yandong Ji",
+      "Zhaojing Yang",
+      "Zaitian Gongye",
+      "Xueyan Zou",
+      "Jan Kautz",
+      "Erdem Bıyık",
+      "Hongxu Yin",
+      "Sifei Liu",
+      "Xiaolong Wang"
+    ]
+  },
+  {
+    "id": "arxiv:2412.12392",
+    "title": "MASt3R-SLAM: Real-Time Dense SLAM with 3D Reconstruction Priors",
+    "url": "https://arxiv.org/abs/2412.12392",
+    "arxiv_id": "2412.12392",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2412.12392"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p249",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2412.12392",
+    "canonical_path": "robotics-embodied/papers/arxiv-2412.12392/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2412.12392/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2412.12392/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Riku Murai",
+      "Eric Dexheimer",
+      "Andrew J. Davison"
+    ]
+  },
+  {
+    "id": "arxiv:2502.09560",
+    "title": "EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents",
+    "url": "https://arxiv.org/abs/2502.09560",
+    "arxiv_id": "2502.09560",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/embodied-agents"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2502.09560"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p250",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "action"
+    ],
+    "task_tags": [
+      "evaluation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2502.09560",
+    "canonical_path": "robotics-embodied/papers/arxiv-2502.09560/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2502.09560/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2502.09560/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Rui Yang",
+      "Hanyang Chen",
+      "Junyu Zhang",
+      "Mark Zhao",
+      "Cheng Qian",
+      "Kangrui Wang",
+      "Qineng Wang",
+      "Teja Venkat Koripella",
+      "Marziyeh Movahedi",
+      "Manling Li",
+      "Heng Ji",
+      "Huan Zhang",
+      "Tong Zhang"
+    ]
+  },
+  {
+    "id": "arxiv:2502.19417",
+    "title": "Hi Robot: Open-Ended Instruction Following with Hierarchical Vision-Language-Action Models",
+    "url": "https://arxiv.org/abs/2502.19417",
+    "arxiv_id": "2502.19417",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/embodied-agents",
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2502.19417"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p251",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2502.19417",
+    "canonical_path": "robotics-embodied/papers/arxiv-2502.19417/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2502.19417/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2502.19417/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Lucy Xiaoyang Shi",
+      "Brian Ichter",
+      "Michael Equi",
+      "Liyiming Ke",
+      "Karl Pertsch",
+      "Quan Vuong",
+      "James Tanner",
+      "Anna Walling",
+      "Haohuan Wang",
+      "Niccolo Fusai",
+      "Adrian Li-Bell",
+      "Danny Driess",
+      "Lachy Groom",
+      "Sergey Levine",
+      "Chelsea Finn"
+    ]
+  },
+  {
+    "id": "arxiv:2503.11651",
+    "title": "VGGT: Visual Geometry Grounded Transformer",
+    "url": "https://arxiv.org/abs/2503.11651",
+    "arxiv_id": "2503.11651",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2503.11651"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p252",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2503.11651",
+    "canonical_path": "robotics-embodied/papers/arxiv-2503.11651/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2503.11651/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2503.11651/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Jianyuan Wang",
+      "Minghao Chen",
+      "Nikita Karaev",
+      "Andrea Vedaldi",
+      "Christian Rupprecht",
+      "David Novotny"
+    ]
+  },
+  {
+    "id": "arxiv:2503.20020",
+    "title": "Gemini Robotics: Bringing AI into the Physical World",
+    "url": "https://arxiv.org/abs/2503.20020",
+    "arxiv_id": "2503.20020",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2503.20020"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "official_technical_report",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p253",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "state",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding",
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2503.20020",
+    "canonical_path": "robotics-embodied/papers/arxiv-2503.20020/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2503.20020/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2503.20020/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Gemini Robotics Team (Google DeepMind)"
+    ]
+  },
+  {
+    "id": "arxiv:2505.12549",
+    "title": "VGGT-SLAM: Dense RGB SLAM Optimized on the SL(4) Manifold",
+    "url": "https://arxiv.org/abs/2505.12549",
+    "arxiv_id": "2505.12549",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2505.12549"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p254",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2505.12549",
+    "canonical_path": "robotics-embodied/papers/arxiv-2505.12549/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2505.12549/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2505.12549/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Dominic Maggio",
+      "Hyungtae Lim",
+      "Luca Carlone"
+    ]
+  },
+  {
+    "id": "arxiv:2505.23705",
+    "title": "Knowledge Insulating Vision-Language-Action Models: Train Fast, Run Fast, Generalize Better",
+    "url": "https://arxiv.org/abs/2505.23705",
+    "arxiv_id": "2505.23705",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2505.23705"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p255",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "state",
+      "multimodal"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2505.23705",
+    "canonical_path": "robotics-embodied/papers/arxiv-2505.23705/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2505.23705/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2505.23705/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Danny Driess",
+      "Jost Tobias Springenberg",
+      "Brian Ichter",
+      "Lili Yu",
+      "Adrian Li-Bell",
+      "Karl Pertsch",
+      "Allen Z. Ren",
+      "Homer Walke",
+      "Quan Vuong",
+      "Lucy Xiaoyang Shi",
+      "Sergey Levine"
+    ]
+  },
+  {
+    "id": "arxiv:2506.09985",
+    "title": "V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning",
+    "url": "https://arxiv.org/abs/2506.09985",
+    "arxiv_id": "2506.09985",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "multimodal/world-models",
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2506.09985"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p256",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "video",
+      "action"
+    ],
+    "task_tags": [
+      "understanding",
+      "generation",
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2506.09985",
+    "canonical_path": "robotics-embodied/papers/arxiv-2506.09985/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2506.09985/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2506.09985/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Mido Assran",
+      "Adrien Bardes",
+      "David Fan",
+      "Quentin Garrido",
+      "Russell Howes",
+      " Mojtaba",
+      " Komeili",
+      "Matthew Muckley",
+      "Ammar Rizvi",
+      "Claire Roberts",
+      "Koustuv Sinha",
+      "Artem Zholus",
+      "Sergio Arnaud",
+      "Abha Gejji",
+      "Ada Martin",
+      "Francois Robert Hogan",
+      "Daniel Dugas",
+      "Piotr Bojanowski",
+      "Vasil Khalidov",
+      "Patrick Labatut",
+      "Francisco Massa",
+      "Marc Szafraniec",
+      "Kapil Krishnakumar",
+      "Yong Li",
+      "Xiaodong Ma",
+      "Sarath Chandar",
+      "Franziska Meier",
+      "Yann LeCun",
+      "Michael Rabbat",
+      "Nicolas Ballas"
+    ]
+  },
+  {
+    "id": "arxiv:2507.16443",
+    "title": "VGGT-Long: Chunk it, Loop it, Align it -- Pushing VGGT's Limits on Kilometer-scale Long RGB Sequences",
+    "url": "https://arxiv.org/abs/2507.16443",
+    "arxiv_id": "2507.16443",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2507.16443"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p257",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2507.16443",
+    "canonical_path": "robotics-embodied/papers/arxiv-2507.16443/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2507.16443/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2507.16443/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Kai Deng",
+      "Zexin Ti",
+      "Jiawei Xu",
+      "Jian Yang",
+      "Jin Xie"
+    ]
+  },
+  {
+    "id": "arxiv:2508.05635",
+    "title": "Genie Envisioner: A Unified World Foundation Platform for Robotic Manipulation",
+    "url": "https://arxiv.org/abs/2508.05635",
+    "arxiv_id": "2508.05635",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "multimodal/world-models",
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2508.05635"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p258",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "video",
+      "text",
+      "action"
+    ],
+    "task_tags": [
+      "generation",
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2508.05635",
+    "canonical_path": "robotics-embodied/papers/arxiv-2508.05635/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2508.05635/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2508.05635/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Yue Liao",
+      "Pengfei Zhou",
+      "Siyuan Huang",
+      "Donglin Yang",
+      "Shengcong Chen",
+      "Yuxin Jiang",
+      "Yue Hu",
+      "Jingbin Cai",
+      "Si Liu",
+      "Jianlan Luo",
+      "Liliang Chen",
+      "Shuicheng Yan",
+      "Maoqing Yao",
+      "Guanghui Ren"
+    ]
+  },
+  {
+    "id": "arxiv:2509.09674",
+    "title": "SimpleVLA-RL: Scaling VLA Training via Reinforcement Learning",
+    "url": "https://arxiv.org/abs/2509.09674",
+    "arxiv_id": "2509.09674",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2509.09674"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p259",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2509.09674",
+    "canonical_path": "robotics-embodied/papers/arxiv-2509.09674/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2509.09674/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2509.09674/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Haozhan Li",
+      "Yuxin Zuo",
+      "Jiale Yu",
+      "Yuhao Zhang",
+      "Zhaohui Yang"
+    ]
+  },
+  {
+    "id": "arxiv:2509.20757",
+    "title": "MASt3R-Fusion: Integrating Feed-Forward Visual Model with IMU, GNSS for High-Functionality SLAM",
+    "url": "https://arxiv.org/abs/2509.20757",
+    "arxiv_id": "2509.20757",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2509.20757"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p260",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2509.20757",
+    "canonical_path": "robotics-embodied/papers/arxiv-2509.20757/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2509.20757/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2509.20757/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Yuxuan Zhou",
+      "Xingxing Li",
+      "Shengyu Li",
+      "Zhuohao Yan",
+      "Chunxi Xia",
+      "Shaoquan Feng"
+    ]
+  },
+  {
+    "id": "arxiv:2510.03342",
+    "title": "Gemini Robotics 1.5: Pushing the Frontier of Generalist Robots with Advanced Embodied Reasoning, Thinking, and Motion Transfer",
+    "url": "https://arxiv.org/abs/2510.03342",
+    "arxiv_id": "2510.03342",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2510.03342"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "official_technical_report",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p261",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "state",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding",
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2510.03342",
+    "canonical_path": "robotics-embodied/papers/arxiv-2510.03342/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2510.03342/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2510.03342/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Gemini Robotics Team (Google DeepMind)"
+    ]
+  },
+  {
+    "id": "arxiv:2510.10125",
+    "title": "Ctrl-World: A Controllable Generative World Model for Robot Manipulation",
+    "url": "https://arxiv.org/abs/2510.10125",
+    "arxiv_id": "2510.10125",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "multimodal/world-models",
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2510.10125"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p262",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "video",
+      "action"
+    ],
+    "task_tags": [
+      "generation",
+      "evaluation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2510.10125",
+    "canonical_path": "robotics-embodied/papers/arxiv-2510.10125/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2510.10125/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2510.10125/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Yanjiang Guo",
+      "Lucy Xiaoyang Shi",
+      "Jianyu Chen",
+      "Chelsea Finn"
+    ]
+  },
+  {
+    "id": "arxiv:2511.14759",
+    "title": "π*0.6: a VLA That Learns From Experience",
+    "url": "https://arxiv.org/abs/2511.14759",
+    "arxiv_id": "2511.14759",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2511.14759"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p263",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2511.14759",
+    "canonical_path": "robotics-embodied/papers/arxiv-2511.14759/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2511.14759/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2511.14759/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Physical Intelligence",
+      "Ali Amin",
+      "Raichelle Aniceto",
+      "Ashwin Balakrishna",
+      "Kevin Black",
+      "Chelsea Finn",
+      "Karol Hausman"
+    ]
+  },
+  {
+    "id": "arxiv:2512.06868",
+    "title": "Dynamic Visual SLAM using a General 3D Prior",
+    "url": "https://arxiv.org/abs/2512.06868",
+    "arxiv_id": "2512.06868",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2512.06868"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p264",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2512.06868",
+    "canonical_path": "robotics-embodied/papers/arxiv-2512.06868/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2512.06868/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2512.06868/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Xingguang Zhong",
+      "Liren Jin",
+      "Marija Popović",
+      "Jens Behley",
+      "Cyrill Stachniss"
+    ]
+  },
+  {
+    "id": "arxiv:2512.08186",
+    "title": "Ground Slow, Move Fast: A Dual-System Foundation Model for Generalizable Vision-and-Language Navigation",
+    "url": "https://arxiv.org/abs/2512.08186",
+    "arxiv_id": "2512.08186",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/navigation-planning"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2512.08186"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p265",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2512.08186",
+    "canonical_path": "robotics-embodied/papers/arxiv-2512.08186/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2512.08186/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2512.08186/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Meng Wei",
+      "Chenyang Wan",
+      "Jiaqi Peng",
+      "Xiqian Yu",
+      "Yuqiang Yang",
+      "Delin Feng",
+      "Wenzhe Cai",
+      "Chenming Zhu",
+      "Tai Wang",
+      "Jiangmiao Pang",
+      "Xihui Liu"
+    ]
+  },
+  {
+    "id": "arxiv:2512.10675",
+    "title": "Evaluating Gemini Robotics Policies in a Veo World Simulator",
+    "url": "https://arxiv.org/abs/2512.10675",
+    "arxiv_id": "2512.10675",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "multimodal/world-models",
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2512.10675"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p266",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "video",
+      "action"
+    ],
+    "task_tags": [
+      "generation",
+      "evaluation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2512.10675",
+    "canonical_path": "robotics-embodied/papers/arxiv-2512.10675/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2512.10675/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2512.10675/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Gemini Robotics Team",
+      "Krzysztof Choromanski",
+      "Coline Devin",
+      "Yilun Du",
+      "Debidatta Dwibedi",
+      "Ruiqi Gao",
+      "Abhishek Jindal",
+      "Thomas Kipf",
+      "Sean Kirmani",
+      "Isabel Leal",
+      "Fangchen Liu",
+      "Anirudha Majumdar",
+      "Andrew Marmon",
+      "Carolina Parada",
+      "Yulia Rubanova",
+      "Dhruv Shah",
+      "Vikas Sindhwani",
+      "Jie Tan",
+      "Fei Xia",
+      "Ted Xiao",
+      "Sherry Yang",
+      "Wenhao Yu",
+      "Allan Zhou"
+    ]
+  },
+  {
+    "id": "arxiv:2601.19887",
+    "title": "VGGT-SLAM 2.0: Real-time Dense Feed-forward Scene Reconstruction",
+    "url": "https://arxiv.org/abs/2601.19887",
+    "arxiv_id": "2601.19887",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2601.19887"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p267",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2601.19887",
+    "canonical_path": "robotics-embodied/papers/arxiv-2601.19887/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2601.19887/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2601.19887/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Dominic Maggio",
+      "Luca Carlone"
+    ]
+  },
+  {
+    "id": "arxiv:2607.10383",
+    "title": "ABot-N1: Toward a General Visual Language Navigation Foundation Model",
+    "url": "https://arxiv.org/abs/2607.10383",
+    "arxiv_id": "2607.10383",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/navigation-planning"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2607.10383"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p268",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2607.10383",
+    "canonical_path": "robotics-embodied/papers/arxiv-2607.10383/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2607.10383/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2607.10383/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Ruiyan Gong",
+      "Yingnan Guo",
+      "Junjun Hu",
+      "Jintao Kong",
+      "Xiaoxu Leng",
+      "Tianlun Li",
+      "Weize Li",
+      "Fei Liu",
+      "Zhicheng Liu",
+      "Jia Lu",
+      "Minghua Luo",
+      "Chenlin Ming",
+      "Yanfen Shen",
+      "Jiyue Tao",
+      "Zhengbo Wang",
+      "Mingyang Yin",
+      "Minqi Gu",
+      "Zihao Guan",
+      "Wei Guo",
+      "Guoqing Liu",
+      "Huachong Pang",
+      "Menglin Yang",
+      "Zeqian Ye",
+      "Xiaoxiao Geng",
+      "Zhining Gu",
+      "Honglin Han",
+      "Di Jing",
+      "Hongyu Pan",
+      "Mingchao Sun",
+      "Kuan Yang",
+      "Jianfang Zhang",
+      "Yanghong Chen",
+      "Ye He",
+      "Wei Mei",
+      "Jiahao Shi",
+      "Xiangpo Yang",
+      "Yanqing Zhu",
+      "Yang Cai",
+      "Jingjing Ma",
+      "Shihui Su",
+      "Zixiao Tang",
+      "Linbo Zheng",
+      "Zedong Chu",
+      "Xiaolong Wu",
+      "Wenbin Tang",
+      "Mu Xu"
+    ]
+  },
+  {
+    "id": "url:https://www-users.cse.umn.edu/~stergios/papers/ICRA07-MSCKF.pdf",
+    "title": "A Multi-State Constraint Kalman Filter for Vision-aided Inertial Navigation",
+    "url": "https://www-users.cse.umn.edu/~stergios/papers/ICRA07-MSCKF.pdf",
+    "arxiv_id": null,
+    "doi": null,
+    "year": "2007",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://www-users.cse.umn.edu/~stergios/papers/ICRA07-MSCKF.pdf"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p269",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/msckf",
+    "canonical_path": "robotics-embodied/papers/msckf/README.md",
+    "canonical_readme": "robotics-embodied/papers/msckf/README.md",
+    "source_path": "robotics-embodied/papers/msckf/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Anastasios I. Mourikis",
+      "Stergios I. Roumeliotis"
+    ]
+  },
+  {
+    "id": "url:https://pgeneva.com/downloads/papers/Geneva2020ICRA.pdf",
+    "title": "OpenVINS: A Research Platform for Visual-Inertial Estimation",
+    "url": "https://pgeneva.com/downloads/papers/Geneva2020ICRA.pdf",
+    "arxiv_id": null,
+    "doi": null,
+    "year": "2020",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://pgeneva.com/downloads/papers/Geneva2020ICRA.pdf"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p270",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/openvins",
+    "canonical_path": "robotics-embodied/papers/openvins/README.md",
+    "canonical_readme": "robotics-embodied/papers/openvins/README.md",
+    "source_path": "robotics-embodied/papers/openvins/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Patrick Geneva",
+      "Kevin Eckenhoff",
+      "Woosik Lee",
+      "Yulin Yang",
+      "Guoquan Huang"
+    ]
+  },
+  {
+    "id": "url:https://www.robots.ox.ac.uk/~gk/publications/KleinMurray2007ISMAR.pdf",
+    "title": "Parallel Tracking and Mapping for Small AR Workspaces",
+    "url": "https://www.robots.ox.ac.uk/~gk/publications/KleinMurray2007ISMAR.pdf",
+    "arxiv_id": null,
+    "doi": null,
+    "year": "2007",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://www.robots.ox.ac.uk/~gk/publications/KleinMurray2007ISMAR.pdf"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p271",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/ptam",
+    "canonical_path": "robotics-embodied/papers/ptam/README.md",
+    "canonical_readme": "robotics-embodied/papers/ptam/README.md",
+    "source_path": "robotics-embodied/papers/ptam/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Georg Klein",
+      "David Murray"
     ]
   }
 ]

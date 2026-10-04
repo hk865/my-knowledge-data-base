@@ -1,6 +1,6 @@
 # 全库论文总目录
 
-共 199 个去重资源（194 篇论文、2 篇官方技术报告、1 个代码仓库、2 篇官方博客）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
+共 271 个去重资源（264 篇论文、4 篇官方技术报告、1 个代码仓库、2 篇官方博客）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
 
 身份核验、助手教学进度和用户阅读状态分开。历史来源保留原角色与证据局限，不将助手推荐写成用户提供，也不将教学完成写成用户已读。
 
@@ -83,7 +83,7 @@
 
 - 标识：arxiv:2412.19437
 - 原文 / 官方入口：https://arxiv.org/abs/2412.19437
-- 主题：llm/posttraining/sft, llm/pretraining, llm/architecture, llm/posttraining/rl, llm/inference
+- 主题：llm/posttraining/sft, llm/pretraining, llm/architecture, llm/posttraining/rl
 - 来源：assistant-provided-exact-link
 - 身份核验：verified_primary_title_and_identifier
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
@@ -899,7 +899,7 @@
 
 - 标识：arxiv:2503.14734
 - 原文 / 官方入口：https://arxiv.org/abs/2503.14734
-- 主题：robotics/control
+- 主题：robotics/control, robotics/embodied-policies
 - 来源：handbook-only, old-file-reference
 - 身份核验：verified_identity
 - 助手教学 / 阅读进度：identity_verified_or_existing_catalog_only
@@ -1331,7 +1331,7 @@
 
 - 标识：url:https://proceedings.mlr.press/v205/agarwal23a/agarwal23a.pdf
 - 原文 / 官方入口：https://proceedings.mlr.press/v205/agarwal23a/agarwal23a.pdf
-- 主题：robotics/control
+- 主题：robotics/control, robotics/perception
 - 来源：assistant-provided-exact-link
 - 身份核验：verified_identity
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
@@ -1866,7 +1866,7 @@
 - [文献卡，暂无独立精读](../robotics-embodied/papers/arxiv-1901.07517/README.md)
 
 <a id="p155"></a>
-## p155 · Recovery RL: Safe Reinforcement Learning With Learned Recovery Zones
+## p155 · Recovery RL: Safe Reinforcement Learning with Learned Recovery Zones
 
 - 标识：arxiv:2010.15920
 - 类型：paper
@@ -1884,7 +1884,7 @@
 - 标识：arxiv:2201.08117
 - 类型：paper
 - 官方入口：https://arxiv.org/abs/2201.08117
-- 主题：robotics/control
+- 主题：robotics/control, robotics/perception
 - 来源：historical_assistant_recommendation
 - 身份核验：official_page_identity_and_abstract_verified
 - 阅读范围：官方身份与摘要核验；未完成全文精读
@@ -2356,6 +2356,726 @@
 - 身份核验：selected_sections_checked_not_full_read
 - 用户阅读状态：unknown
 - [文献卡](../multimodal/papers/veo3-tech-report/README.md)
+
+<a id="p200"></a>
+## p200 · A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning
+
+- 标识：arxiv:1011.0686
+- 原文 / 官方入口：https://arxiv.org/abs/1011.0686
+- 主题：robotics/embodied-policies
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-1011.0686/README.md)
+
+<a id="p201"></a>
+## p201 · ORB-SLAM: a Versatile and Accurate Monocular SLAM System
+
+- 标识：arxiv:1502.00956
+- 原文 / 官方入口：https://arxiv.org/abs/1502.00956
+- 主题：robotics/localization-mapping
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-1502.00956/README.md)
+
+<a id="p202"></a>
+## p202 · You Only Look Once: Unified, Real-Time Object Detection
+
+- 标识：arxiv:1506.02640
+- 原文 / 官方入口：https://arxiv.org/abs/1506.02640
+- 主题：robotics/perception
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-1506.02640/README.md)
+
+<a id="p203"></a>
+## p203 · Direct Sparse Odometry
+
+- 标识：arxiv:1607.02565
+- 原文 / 官方入口：https://arxiv.org/abs/1607.02565
+- 主题：robotics/localization-mapping
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-1607.02565/README.md)
+
+<a id="p204"></a>
+## p204 · ORB-SLAM2: an Open-Source SLAM System for Monocular, Stereo and RGB-D Cameras
+
+- 标识：arxiv:1610.06475
+- 原文 / 官方入口：https://arxiv.org/abs/1610.06475
+- 主题：robotics/localization-mapping
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-1610.06475/README.md)
+
+<a id="p205"></a>
+## p205 · Mask R-CNN
+
+- 标识：arxiv:1703.06870
+- 原文 / 官方入口：https://arxiv.org/abs/1703.06870
+- 主题：robotics/perception
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-1703.06870/README.md)
+
+<a id="p206"></a>
+## p206 · VINS-Mono: A Robust and Versatile Monocular Visual-Inertial State Estimator
+
+- 标识：arxiv:1708.03852
+- 原文 / 官方入口：https://arxiv.org/abs/1708.03852
+- 主题：robotics/localization-mapping
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-1708.03852/README.md)
+
+<a id="p207"></a>
+## p207 · World Models
+
+- 标识：arxiv:1803.10122
+- 原文 / 官方入口：https://arxiv.org/abs/1803.10122
+- 主题：multimodal/world-models, robotics/control
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-1803.10122/README.md)
+
+<a id="p208"></a>
+## p208 · Digging Into Self-Supervised Monocular Depth Estimation
+
+- 标识：arxiv:1806.01260
+- 原文 / 官方入口：https://arxiv.org/abs/1806.01260
+- 主题：robotics/perception
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-1806.01260/README.md)
+
+<a id="p209"></a>
+## p209 · Speaker-Follower Models for Vision-and-Language Navigation
+
+- 标识：arxiv:1806.02724
+- 原文 / 官方入口：https://arxiv.org/abs/1806.02724
+- 主题：robotics/navigation-planning
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-1806.02724/README.md)
+
+<a id="p210"></a>
+## p210 · Crowd-Robot Interaction: Crowd-aware Robot Navigation with Attention-based Deep Reinforcement Learning
+
+- 标识：arxiv:1809.08835
+- 原文 / 官方入口：https://arxiv.org/abs/1809.08835
+- 主题：robotics/navigation-planning
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-1809.08835/README.md)
+
+<a id="p211"></a>
+## p211 · Learning Latent Dynamics for Planning from Pixels
+
+- 标识：arxiv:1811.04551
+- 原文 / 官方入口：https://arxiv.org/abs/1811.04551
+- 主题：multimodal/world-models, robotics/control
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-1811.04551/README.md)
+
+<a id="p212"></a>
+## p212 · PointPillars: Fast Encoders for Object Detection from Point Clouds
+
+- 标识：arxiv:1812.05784
+- 原文 / 官方入口：https://arxiv.org/abs/1812.05784
+- 主题：robotics/perception
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-1812.05784/README.md)
+
+<a id="p213"></a>
+## p213 · Learning agile and dynamic motor skills for legged robots
+
+- 标识：arxiv:1901.08652
+- 原文 / 官方入口：https://arxiv.org/abs/1901.08652
+- 主题：robotics/control
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-1901.08652/README.md)
+
+<a id="p214"></a>
+## p214 · nuScenes: A multimodal dataset for autonomous driving
+
+- 标识：arxiv:1903.11027
+- 原文 / 官方入口：https://arxiv.org/abs/1903.11027
+- 主题：robotics/perception
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-1903.11027/README.md)
+
+<a id="p215"></a>
+## p215 · DD-PPO: Learning Near-Perfect PointGoal Navigators from 2.5 Billion Frames
+
+- 标识：arxiv:1911.00357
+- 原文 / 官方入口：https://arxiv.org/abs/1911.00357
+- 主题：robotics/navigation-planning
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-1911.00357/README.md)
+
+<a id="p216"></a>
+## p216 · ALFRED: A Benchmark for Interpreting Grounded Instructions for Everyday Tasks
+
+- 标识：arxiv:1912.01734
+- 原文 / 官方入口：https://arxiv.org/abs/1912.01734
+- 主题：robotics/embodied-agents
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-1912.01734/README.md)
+
+<a id="p217"></a>
+## p217 · Beyond the Nav-Graph: Vision-and-Language Navigation in Continuous Environments
+
+- 标识：arxiv:2004.02857
+- 原文 / 官方入口：https://arxiv.org/abs/2004.02857
+- 主题：robotics/navigation-planning
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2004.02857/README.md)
+
+<a id="p218"></a>
+## p218 · LIO-SAM: Tightly-coupled Lidar Inertial Odometry via Smoothing and Mapping
+
+- 标识：arxiv:2007.00258
+- 原文 / 官方入口：https://arxiv.org/abs/2007.00258
+- 主题：robotics/localization-mapping
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2007.00258/README.md)
+
+<a id="p219"></a>
+## p219 · Sim-to-Real Transfer for Vision-and-Language Navigation
+
+- 标识：arxiv:2011.03807
+- 原文 / 官方入口：https://arxiv.org/abs/2011.03807
+- 主题：robotics/navigation-planning
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2011.03807/README.md)
+
+<a id="p220"></a>
+## p220 · iMAP: Implicit Mapping and Positioning in Real-Time
+
+- 标识：arxiv:2103.12352
+- 原文 / 官方入口：https://arxiv.org/abs/2103.12352
+- 主题：robotics/localization-mapping
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2103.12352/README.md)
+
+<a id="p221"></a>
+## p221 · FAST-LIO2: Fast Direct LiDAR-inertial Odometry
+
+- 标识：arxiv:2107.06829
+- 原文 / 官方入口：https://arxiv.org/abs/2107.06829
+- 主题：robotics/localization-mapping
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2107.06829/README.md)
+
+<a id="p222"></a>
+## p222 · DROID-SLAM: Deep Visual SLAM for Monocular, Stereo, and RGB-D Cameras
+
+- 标识：arxiv:2108.10869
+- 原文 / 官方入口：https://arxiv.org/abs/2108.10869
+- 主题：robotics/localization-mapping
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2108.10869/README.md)
+
+<a id="p223"></a>
+## p223 · NICE-SLAM: Neural Implicit Scalable Encoding for SLAM
+
+- 标识：arxiv:2112.12130
+- 原文 / 官方入口：https://arxiv.org/abs/2112.12130
+- 主题：robotics/localization-mapping
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2112.12130/README.md)
+
+<a id="p224"></a>
+## p224 · BEVFusion: Multi-Task Multi-Sensor Fusion with Unified Bird's-Eye View Representation
+
+- 标识：arxiv:2205.13542
+- 原文 / 官方入口：https://arxiv.org/abs/2205.13542
+- 主题：robotics/perception
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2205.13542/README.md)
+
+<a id="p225"></a>
+## p225 · DayDreamer: World Models for Physical Robot Learning
+
+- 标识：arxiv:2206.14176
+- 原文 / 官方入口：https://arxiv.org/abs/2206.14176
+- 主题：multimodal/world-models, robotics/control
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2206.14176/README.md)
+
+<a id="p226"></a>
+## p226 · LM-Nav: Robotic Navigation with Large Pre-Trained Models of Language, Vision, and Action
+
+- 标识：arxiv:2207.04429
+- 原文 / 官方入口：https://arxiv.org/abs/2207.04429
+- 主题：robotics/navigation-planning, robotics/embodied-agents
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2207.04429/README.md)
+
+<a id="p227"></a>
+## p227 · Inner Monologue: Embodied Reasoning through Planning with Language Models
+
+- 标识：arxiv:2207.05608
+- 原文 / 官方入口：https://arxiv.org/abs/2207.05608
+- 主题：robotics/embodied-agents
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2207.05608/README.md)
+
+<a id="p228"></a>
+## p228 · Code as Policies: Language Model Programs for Embodied Control
+
+- 标识：arxiv:2209.07753
+- 原文 / 官方入口：https://arxiv.org/abs/2209.07753
+- 主题：robotics/embodied-agents
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2209.07753/README.md)
+
+<a id="p229"></a>
+## p229 · LLM-Planner: Few-Shot Grounded Planning for Embodied Agents with Large Language Models
+
+- 标识：arxiv:2212.04088
+- 原文 / 官方入口：https://arxiv.org/abs/2212.04088
+- 主题：robotics/embodied-agents
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2212.04088/README.md)
+
+<a id="p230"></a>
+## p230 · Learning Universal Policies via Text-Guided Video Generation
+
+- 标识：arxiv:2302.00111
+- 原文 / 官方入口：https://arxiv.org/abs/2302.00111
+- 主题：multimodal/world-models, robotics/embodied-policies
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2302.00111/README.md)
+
+<a id="p231"></a>
+## p231 · ConceptFusion: Open-set Multimodal 3D Mapping
+
+- 标识：arxiv:2302.07241
+- 原文 / 官方入口：https://arxiv.org/abs/2302.07241
+- 主题：robotics/perception, robotics/localization-mapping
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2302.07241/README.md)
+
+<a id="p232"></a>
+## p232 · Segment Anything
+
+- 标识：arxiv:2304.02643
+- 原文 / 官方入口：https://arxiv.org/abs/2304.02643
+- 主题：robotics/perception
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2304.02643/README.md)
+
+<a id="p233"></a>
+## p233 · Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware
+
+- 标识：arxiv:2304.13705
+- 原文 / 官方入口：https://arxiv.org/abs/2304.13705
+- 主题：robotics/embodied-policies
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2304.13705/README.md)
+
+<a id="p234"></a>
+## p234 · ViNT: A Foundation Model for Visual Navigation
+
+- 标识：arxiv:2306.14846
+- 原文 / 官方入口：https://arxiv.org/abs/2306.14846
+- 主题：robotics/navigation-planning
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2306.14846/README.md)
+
+<a id="p235"></a>
+## p235 · VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models
+
+- 标识：arxiv:2307.05973
+- 原文 / 官方入口：https://arxiv.org/abs/2307.05973
+- 主题：robotics/embodied-agents
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2307.05973/README.md)
+
+<a id="p236"></a>
+## p236 · DTC: Deep Tracking Control
+
+- 标识：arxiv:2309.15462
+- 原文 / 官方入口：https://arxiv.org/abs/2309.15462
+- 主题：robotics/control
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2309.15462/README.md)
+
+<a id="p237"></a>
+## p237 · Learning Interactive Real-World Simulators
+
+- 标识：arxiv:2310.06114
+- 原文 / 官方入口：https://arxiv.org/abs/2310.06114
+- 主题：multimodal/world-models, robotics/embodied-policies
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2310.06114/README.md)
+
+<a id="p238"></a>
+## p238 · NoMaD: Goal Masked Diffusion Policies for Navigation and Exploration
+
+- 标识：arxiv:2310.07896
+- 原文 / 官方入口：https://arxiv.org/abs/2310.07896
+- 主题：robotics/navigation-planning
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2310.07896/README.md)
+
+<a id="p239"></a>
+## p239 · TD-MPC2: Scalable, Robust World Models for Continuous Control
+
+- 标识：arxiv:2310.16828
+- 原文 / 官方入口：https://arxiv.org/abs/2310.16828
+- 主题：multimodal/world-models, robotics/control
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2310.16828/README.md)
+
+<a id="p240"></a>
+## p240 · SplaTAM: Splat, Track & Map 3D Gaussians for Dense RGB-D SLAM
+
+- 标识：arxiv:2312.02126
+- 原文 / 官方入口：https://arxiv.org/abs/2312.02126
+- 主题：robotics/localization-mapping
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2312.02126/README.md)
+
+<a id="p241"></a>
+## p241 · VLFM: Vision-Language Frontier Maps for Zero-Shot Semantic Navigation
+
+- 标识：arxiv:2312.03275
+- 原文 / 官方入口：https://arxiv.org/abs/2312.03275
+- 主题：robotics/navigation-planning
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2312.03275/README.md)
+
+<a id="p242"></a>
+## p242 · Gaussian Splatting SLAM
+
+- 标识：arxiv:2312.06741
+- 原文 / 官方入口：https://arxiv.org/abs/2312.06741
+- 主题：robotics/localization-mapping
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2312.06741/README.md)
+
+<a id="p243"></a>
+## p243 · Depth Anything: Unleashing the Power of Large-Scale Unlabeled Data
+
+- 标识：arxiv:2401.10891
+- 原文 / 官方入口：https://arxiv.org/abs/2401.10891
+- 主题：robotics/perception
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2401.10891/README.md)
+
+<a id="p244"></a>
+## p244 · FM-Fusion: Instance-aware Semantic Mapping Boosted by Vision-Language Foundation Models
+
+- 标识：arxiv:2402.04555
+- 原文 / 官方入口：https://arxiv.org/abs/2402.04555
+- 主题：robotics/perception, robotics/localization-mapping
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2402.04555/README.md)
+
+<a id="p245"></a>
+## p245 · Depth Anything V2
+
+- 标识：arxiv:2406.09414
+- 原文 / 官方入口：https://arxiv.org/abs/2406.09414
+- 主题：robotics/perception
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2406.09414/README.md)
+
+<a id="p246"></a>
+## p246 · Diffusion Policy Policy Optimization
+
+- 标识：arxiv:2409.00588
+- 原文 / 官方入口：https://arxiv.org/abs/2409.00588
+- 主题：robotics/embodied-policies
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2409.00588/README.md)
+
+<a id="p247"></a>
+## p247 · Precise and Dexterous Robotic Manipulation via Human-in-the-Loop Reinforcement Learning
+
+- 标识：arxiv:2410.21845
+- 原文 / 官方入口：https://arxiv.org/abs/2410.21845
+- 主题：robotics/embodied-policies
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2410.21845/README.md)
+
+<a id="p248"></a>
+## p248 · NaVILA: Legged Robot Vision-Language-Action Model for Navigation
+
+- 标识：arxiv:2412.04453
+- 原文 / 官方入口：https://arxiv.org/abs/2412.04453
+- 主题：robotics/navigation-planning, robotics/embodied-policies
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2412.04453/README.md)
+
+<a id="p249"></a>
+## p249 · MASt3R-SLAM: Real-Time Dense SLAM with 3D Reconstruction Priors
+
+- 标识：arxiv:2412.12392
+- 原文 / 官方入口：https://arxiv.org/abs/2412.12392
+- 主题：robotics/localization-mapping
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2412.12392/README.md)
+
+<a id="p250"></a>
+## p250 · EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents
+
+- 标识：arxiv:2502.09560
+- 原文 / 官方入口：https://arxiv.org/abs/2502.09560
+- 主题：robotics/embodied-agents
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2502.09560/README.md)
+
+<a id="p251"></a>
+## p251 · Hi Robot: Open-Ended Instruction Following with Hierarchical Vision-Language-Action Models
+
+- 标识：arxiv:2502.19417
+- 原文 / 官方入口：https://arxiv.org/abs/2502.19417
+- 主题：robotics/embodied-agents, robotics/embodied-policies
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2502.19417/README.md)
+
+<a id="p252"></a>
+## p252 · VGGT: Visual Geometry Grounded Transformer
+
+- 标识：arxiv:2503.11651
+- 原文 / 官方入口：https://arxiv.org/abs/2503.11651
+- 主题：robotics/localization-mapping
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2503.11651/README.md)
+
+<a id="p253"></a>
+## p253 · Gemini Robotics: Bringing AI into the Physical World
+
+- 标识：arxiv:2503.20020
+- 原文 / 官方入口：https://arxiv.org/abs/2503.20020
+- 主题：robotics/embodied-policies
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2503.20020/README.md)
+
+<a id="p254"></a>
+## p254 · VGGT-SLAM: Dense RGB SLAM Optimized on the SL(4) Manifold
+
+- 标识：arxiv:2505.12549
+- 原文 / 官方入口：https://arxiv.org/abs/2505.12549
+- 主题：robotics/localization-mapping
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2505.12549/README.md)
+
+<a id="p255"></a>
+## p255 · Knowledge Insulating Vision-Language-Action Models: Train Fast, Run Fast, Generalize Better
+
+- 标识：arxiv:2505.23705
+- 原文 / 官方入口：https://arxiv.org/abs/2505.23705
+- 主题：robotics/embodied-policies
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2505.23705/README.md)
+
+<a id="p256"></a>
+## p256 · V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning
+
+- 标识：arxiv:2506.09985
+- 原文 / 官方入口：https://arxiv.org/abs/2506.09985
+- 主题：multimodal/world-models, robotics/embodied-policies
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2506.09985/README.md)
+
+<a id="p257"></a>
+## p257 · VGGT-Long: Chunk it, Loop it, Align it -- Pushing VGGT's Limits on Kilometer-scale Long RGB Sequences
+
+- 标识：arxiv:2507.16443
+- 原文 / 官方入口：https://arxiv.org/abs/2507.16443
+- 主题：robotics/localization-mapping
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2507.16443/README.md)
+
+<a id="p258"></a>
+## p258 · Genie Envisioner: A Unified World Foundation Platform for Robotic Manipulation
+
+- 标识：arxiv:2508.05635
+- 原文 / 官方入口：https://arxiv.org/abs/2508.05635
+- 主题：multimodal/world-models, robotics/embodied-policies
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2508.05635/README.md)
+
+<a id="p259"></a>
+## p259 · SimpleVLA-RL: Scaling VLA Training via Reinforcement Learning
+
+- 标识：arxiv:2509.09674
+- 原文 / 官方入口：https://arxiv.org/abs/2509.09674
+- 主题：robotics/embodied-policies
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2509.09674/README.md)
+
+<a id="p260"></a>
+## p260 · MASt3R-Fusion: Integrating Feed-Forward Visual Model with IMU, GNSS for High-Functionality SLAM
+
+- 标识：arxiv:2509.20757
+- 原文 / 官方入口：https://arxiv.org/abs/2509.20757
+- 主题：robotics/localization-mapping
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2509.20757/README.md)
+
+<a id="p261"></a>
+## p261 · Gemini Robotics 1.5: Pushing the Frontier of Generalist Robots with Advanced Embodied Reasoning, Thinking, and Motion Transfer
+
+- 标识：arxiv:2510.03342
+- 原文 / 官方入口：https://arxiv.org/abs/2510.03342
+- 主题：robotics/embodied-policies
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2510.03342/README.md)
+
+<a id="p262"></a>
+## p262 · Ctrl-World: A Controllable Generative World Model for Robot Manipulation
+
+- 标识：arxiv:2510.10125
+- 原文 / 官方入口：https://arxiv.org/abs/2510.10125
+- 主题：multimodal/world-models, robotics/embodied-policies
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2510.10125/README.md)
+
+<a id="p263"></a>
+## p263 · π*0.6: a VLA That Learns From Experience
+
+- 标识：arxiv:2511.14759
+- 原文 / 官方入口：https://arxiv.org/abs/2511.14759
+- 主题：robotics/embodied-policies
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2511.14759/README.md)
+
+<a id="p264"></a>
+## p264 · Dynamic Visual SLAM using a General 3D Prior
+
+- 标识：arxiv:2512.06868
+- 原文 / 官方入口：https://arxiv.org/abs/2512.06868
+- 主题：robotics/localization-mapping
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2512.06868/README.md)
+
+<a id="p265"></a>
+## p265 · Ground Slow, Move Fast: A Dual-System Foundation Model for Generalizable Vision-and-Language Navigation
+
+- 标识：arxiv:2512.08186
+- 原文 / 官方入口：https://arxiv.org/abs/2512.08186
+- 主题：robotics/navigation-planning
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2512.08186/README.md)
+
+<a id="p266"></a>
+## p266 · Evaluating Gemini Robotics Policies in a Veo World Simulator
+
+- 标识：arxiv:2512.10675
+- 原文 / 官方入口：https://arxiv.org/abs/2512.10675
+- 主题：multimodal/world-models, robotics/embodied-policies
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2512.10675/README.md)
+
+<a id="p267"></a>
+## p267 · VGGT-SLAM 2.0: Real-time Dense Feed-forward Scene Reconstruction
+
+- 标识：arxiv:2601.19887
+- 原文 / 官方入口：https://arxiv.org/abs/2601.19887
+- 主题：robotics/localization-mapping
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2601.19887/README.md)
+
+<a id="p268"></a>
+## p268 · ABot-N1: Toward a General Visual Language Navigation Foundation Model
+
+- 标识：arxiv:2607.10383
+- 原文 / 官方入口：https://arxiv.org/abs/2607.10383
+- 主题：robotics/navigation-planning
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2607.10383/README.md)
+
+<a id="p269"></a>
+## p269 · A Multi-State Constraint Kalman Filter for Vision-aided Inertial Navigation
+
+- 标识：url:https://www-users.cse.umn.edu/~stergios/papers/ICRA07-MSCKF.pdf
+- 原文 / 官方入口：https://www-users.cse.umn.edu/~stergios/papers/ICRA07-MSCKF.pdf
+- 主题：robotics/localization-mapping
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/msckf/README.md)
+
+<a id="p270"></a>
+## p270 · OpenVINS: A Research Platform for Visual-Inertial Estimation
+
+- 标识：url:https://pgeneva.com/downloads/papers/Geneva2020ICRA.pdf
+- 原文 / 官方入口：https://pgeneva.com/downloads/papers/Geneva2020ICRA.pdf
+- 主题：robotics/localization-mapping
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/openvins/README.md)
+
+<a id="p271"></a>
+## p271 · Parallel Tracking and Mapping for Small AR Workspaces
+
+- 标识：url:https://www.robots.ox.ac.uk/~gk/publications/KleinMurray2007ISMAR.pdf
+- 原文 / 官方入口：https://www.robots.ox.ac.uk/~gk/publications/KleinMurray2007ISMAR.pdf
+- 主题：robotics/localization-mapping
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/ptam/README.md)
 
 ## 2026年10月3日既有条目更新
 

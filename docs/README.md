@@ -22,5 +22,5 @@ docs/ 只放两类东西：全库范围的目录，以及旧路径的转接页�
 
 ## 尚未迁出
 
-- [roadmaps/](roadmaps/)：早期的跨领域路线图。每写完一个领域页或观点页，就吸收对应的路线图并改为转接页。
+- [roadmaps/](roadmaps/)：早期的跨领域路线图。每写完一个领域页或观点页，就吸收对应的路线图并改为转接页；robotics-baselines 与 embodied-baselines 已转接，其余待 LLM 与多模态各方向重写后处理。
 - [deep-readings/training-coverage.md](deep-readings/training-coverage.md) 与 `deep-readings/evidence/beginner-2026-10-02.json`：涉及多篇论文的核验记录，暂留原处。
