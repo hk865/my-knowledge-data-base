@@ -26,7 +26,7 @@
   },
   "fulltext_local_status": "link_only_not_mirrored",
   "fulltext_local_path": null,
-  "source_record_updated": "2026-10-02",
+  "source_record_updated": "2026-10-04",
   "legacy_paths": [
     "docs/deep-readings/mamba.md"
   ],
@@ -40,10 +40,28 @@
   ],
   "original_pdf_url": "https://arxiv.org/pdf/2312.00752v2",
   "topic_paths": [
-    "llm/pretraining",
     "llm/architecture",
+    "llm/pretraining",
     "llm/inference"
   ],
   "fulltext_publication_note": "本仓库仅提供官方原文链接，不公开保存论文PDF。许可核验记录不代表已镜像或已上传。",
-  "verified_original_version": "2312.00752v2"
+  "verified_original_version": "2312.00752v2",
+  "year": 2023,
+  "modality_tags": [
+    "text",
+    "audio"
+  ],
+  "task_tags": [
+    "generation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页元数据（当前版本题名、作者、日期、评注、摘要）与全文 PDF 首页（机构）及支撑卡片句子的选段",
+    "purpose": "文献卡按 STYLE §6 改写：核实题名、年份、作者与\"解决什么 / 核心方法\"两句",
+    "evidence_boundary": "文献卡层面的核验，不是全文精读，未复现。",
+    "verification_status": "identity_and_card_claims_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2312.00752",
+      "https://arxiv.org/pdf/2312.00752"
+    ]
+  }
 }

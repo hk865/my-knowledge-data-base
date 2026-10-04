@@ -6,13 +6,13 @@
   "canonical_folder": "llm/papers/arxiv-2401.06066",
   "official_url": "https://arxiv.org/abs/2401.06066",
   "official_fulltext_url": "https://arxiv.org/pdf/2401.06066",
-  "read_version": null,
-  "version_status": "not_pinned",
-  "reading_depth": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
-  "teaching_status": "not_created",
-  "content_kind": "bibliographic_card",
-  "reading_path": null,
-  "reading_boundary": "这是文献卡，目前没有该论文的独立精读正文。标题、标识或摘要层面的核验不等于全文阅读。",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "full_text_reading_and_evidence_audit",
+  "teaching_status": "technical_reading",
+  "content_kind": "reading",
+  "reading_path": "reading.md",
+  "reading_boundary": "技术精读：v1 全文（正文、附录 A–C）已读；参数账按官方 config.json 手算；\"站在现在看\"部分引用 V2、V3、V3.2、V4、Kimi K2/K3、Qwen3 与 Llama 4 官方博客的指定章节。未复现。",
   "user_reading_status": "not_asserted",
   "independently_reproduced": false,
   "license": {
@@ -22,11 +22,52 @@
   },
   "fulltext_local_status": "official_link_only_pending_license_verification",
   "fulltext_local_path": null,
-  "source_record_updated": "2026-10-02",
+  "source_record_updated": "2026-10-04",
   "legacy_paths": [],
-  "evidence_paths": [],
+  "evidence_paths": [
+    "llm/papers/arxiv-2401.06066/evidence.json",
+    "evidence.json"
+  ],
   "topic_paths": [
     "llm/pretraining",
     "llm/architecture"
+  ],
+  "reading_2026_10_04": {
+    "reading_scope": "v1 全文：§1–9 与附录 A–C；官方 deepseek-moe-16b-base config.json",
+    "source_pdf_sha256": "a64b509e1410d09cf5b70570788d27790985fb9808ce436b9da8de73f2eed651",
+    "method": "下载官方 PDF，用 PyMuPDF 抽取全文文本核对数字；后续报告只读与 MoE 路由、均衡、部署相关的章节",
+    "verification_status": "technical_reading_written",
+    "verification_sources": [
+      "https://arxiv.org/abs/2401.06066v1",
+      "https://arxiv.org/pdf/2401.06066v1",
+      "https://huggingface.co/deepseek-ai/deepseek-moe-16b-base/raw/main/config.json"
+    ],
+    "evidence_boundary": "未复现实验；手算数值在正文标注为示例数值或估算。"
+  },
+  "year": 2024,
+  "authors": [
+    "Damai Dai",
+    "Chengqi Deng",
+    "Chenggang Zhao",
+    "R. X. Xu",
+    "Huazuo Gao",
+    "Deli Chen",
+    "Jiashi Li",
+    "Wangding Zeng",
+    "Xingkai Yu",
+    "Y. Wu",
+    "Zhenda Xie",
+    "Y. K. Li",
+    "Panpan Huang",
+    "Fuli Luo",
+    "Chong Ruan",
+    "Zhifang Sui",
+    "Wenfeng Liang"
+  ],
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "generation"
   ]
 }

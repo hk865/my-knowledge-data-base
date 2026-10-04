@@ -1,0 +1,47 @@
+<svg style="font-family: Noto Sans CJK SC, sans-serif; fill: #142a43" xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900"><defs><marker id="a" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9Z" fill="#6c8294"/></marker></defs><rect width="1440" height="900" fill="#f8fbfd"/>
+<text x="55" y="63" font-size="34" font-weight="700">mHC：残差流加宽成 n 条，层间混合矩阵约束为双随机矩阵</text>
+<text x="55" y="103" font-size="21" fill="#596d80">原创机制图 · 上：一层怎样读、写、混合 n 条流（n = 4）；下：60 个子层连乘后 HC 与 mHC 的差别（示例数值）</text>
+<text x="55" y="160" font-size="25" font-weight="700">A  一层 mHC</text>
+<rect x="55" y="190" width="230" height="250" rx="14" fill="#e5f1fc" stroke="#b7c9d7" stroke-width="1.5"/>
+<text x="77" y="228" font-size="22">残差状态 xₗ（n × C）</text>
+<rect x="85" y="250" width="170" height="34" rx="6" fill="#ffffff" stroke="#b7c9d7"/><text x="150" y="274" font-size="18">流 1</text>
+<rect x="85" y="294" width="170" height="34" rx="6" fill="#ffffff" stroke="#b7c9d7"/><text x="150" y="318" font-size="18">流 2</text>
+<rect x="85" y="338" width="170" height="34" rx="6" fill="#ffffff" stroke="#b7c9d7"/><text x="150" y="362" font-size="18">流 3</text>
+<rect x="85" y="382" width="170" height="34" rx="6" fill="#ffffff" stroke="#b7c9d7"/><text x="150" y="406" font-size="18">流 4</text>
+<rect x="390" y="190" width="300" height="100" rx="14" fill="#fff0cc" stroke="#b7c9d7" stroke-width="1.5"/>
+<text x="410" y="228" font-size="22">H_pre = σ(·)，1 × n</text>
+<text x="410" y="262" font-size="19" fill="#596d80">n 条流加权合成一个 C 维输入</text>
+<rect x="790" y="190" width="280" height="100" rx="14" fill="#dff4ed" stroke="#b7c9d7" stroke-width="1.5"/>
+<text x="810" y="228" font-size="22">子层 F（注意力或 FFN）</text>
+<text x="810" y="262" font-size="18" fill="#596d80">输入输出都是 C 维，内部不变</text>
+<rect x="1150" y="190" width="240" height="100" rx="14" fill="#fff0cc" stroke="#b7c9d7" stroke-width="1.5"/>
+<text x="1170" y="228" font-size="22">H_post = 2σ(·)</text>
+<text x="1170" y="262" font-size="19" fill="#596d80">输出写回 n 条流</text>
+<rect x="390" y="330" width="680" height="110" rx="14" fill="#fde4e4" stroke="#b7c9d7" stroke-width="1.5"/>
+<text x="410" y="368" font-size="22">H_res：n × n，exp 后 Sinkhorn-Knopp 迭代 20 次</text>
+<text x="410" y="402" font-size="19" fill="#596d80">元素非负、每行每列之和为 1（双随机）：各流的凸组合，总和守恒</text>
+<text x="410" y="430" font-size="18" fill="#596d80">三组系数都由 RMSNorm(vec(xₗ)) 经投影 φₗ 算出，n = 4 时输出 24 维</text>
+<path d="M285,250 L390,240" fill="none" stroke="#6c8294" stroke-width="3" marker-end="url(#a)"/>
+<path d="M690,240 L790,240" fill="none" stroke="#6c8294" stroke-width="3" marker-end="url(#a)"/>
+<path d="M1070,240 L1150,240" fill="none" stroke="#6c8294" stroke-width="3" marker-end="url(#a)"/>
+<path d="M285,385 L390,385" fill="none" stroke="#6c8294" stroke-width="3" marker-end="url(#a)"/>
+<polyline points="1270,290 1270,385 1080,385" fill="none" stroke="#6c8294" stroke-width="3" marker-end="url(#a)"/>
+<text x="1110" y="420" font-size="19" fill="#596d80">相加得 xₗ₊₁</text>
+<text x="55" y="510" font-size="25" font-weight="700">B  复合映射：60 个子层连乘（n = 2 与 n = 4 的手算）</text>
+<rect x="55" y="545" width="640" height="300" rx="14" fill="#fde4e4" stroke="#b7c9d7" stroke-width="1.5"/>
+<text x="77" y="585" font-size="23" font-weight="700">HC：混合矩阵无约束</text>
+<text x="77" y="625" font-size="20">每层 H = [[1.0, 0.2], [0.1, 1.0]]，行和 1.2、1.1</text>
+<text x="77" y="660" font-size="20">最大特征值 1 + √0.02 ≈ 1.141</text>
+<text x="77" y="695" font-size="20">H⁶⁰ 的最大行和 ≈ 3377</text>
+<text x="77" y="740" font-size="20" fill="#596d80">原文 27B：复合增益峰值约 3000，</text>
+<text x="77" y="772" font-size="20" fill="#596d80">约第 12k 步损失突升</text>
+<text x="77" y="815" font-size="18" fill="#596d80">与 RNN 的 Jacobian 连乘是同一种稳定性问题</text>
+<rect x="745" y="545" width="640" height="300" rx="14" fill="#dff4ed" stroke="#b7c9d7" stroke-width="1.5"/>
+<text x="767" y="585" font-size="23" font-weight="700">mHC：每层双随机</text>
+<text x="767" y="625" font-size="20">单层接近单位阵：对角 ≈ 0.96，非对角 ≈ 0.013</text>
+<text x="767" y="660" font-size="20">乘积仍双随机，行和、列和恒为 1</text>
+<text x="767" y="695" font-size="20">60 层后第一行 ≈ [0.278, 0.241, 0.241, 0.241]</text>
+<text x="767" y="740" font-size="20" fill="#596d80">原文 27B：复合增益最大约 1.6；</text>
+<text x="767" y="772" font-size="20" fill="#596d80">全深度复合映射接近均匀平均（图 8）</text>
+<text x="767" y="815" font-size="18" fill="#596d80">守恒的是均值与增益，不是逐流的原样直通</text>
+</svg>

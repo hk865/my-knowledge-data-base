@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "paper_key": "arxiv-2606.19348",
+  "title": "DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence",
+  "arxiv_id": "2606.19348",
+  "version": "v1",
+  "source_url": "https://arxiv.org/abs/2606.19348v1",
+  "fulltext_url": "https://arxiv.org/pdf/2606.19348v1",
+  "accessed_at": "2026-10-04",
+  "source_pdf_sha256": "55b2d72f772ac00de2e470b3ee08443c648d971c7f57c52d6202895665e5978d",
+  "page_count": 58,
+  "reading_status": "main_text_and_evaluation_appendix_read",
+  "reading_coverage": {
+    "main": [
+      "Abstract and Figure 1",
+      "§1 Introduction",
+      "§2.1–2.4 Architecture (inherited designs, mHC, CSA, HCA, other details, efficiency, Muon)",
+      "§3.1–3.5 Infrastructure (EP overlap, TileLang, determinism, training framework, KV cache layout, on-disk cache)",
+      "§4.1–4.3 Pre-training (data, model and training setups, instability, base evaluation Table 1)",
+      "§5.1–5.4 Post-training (specialists, OPD, infrastructure, Tables 6–7, Figures 9–10, real-world tasks)",
+      "§6 Conclusion, limitations and future directions"
+    ],
+    "appendices": [
+      "B Evaluation details (Tables 9–14) skimmed"
+    ],
+    "references": "used for provenance (Cheng et al. 2026 = Engram cited as future direction)",
+    "visual_source_pages_checked": [1, 9, 11, 22, 40],
+    "method": "downloaded official PDF v1; extracted full text with PyMuPDF; rendered page 1 for Figure 1; numbers taken from extracted text"
+  },
+  "supplementary_official_sources": [
+    {
+      "id": "hf_config_flash",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash/raw/main/config.json",
+      "used_for": "per-layer compress_ratios (layers 0–1 SWA only; then 21 CSA m=4 and 20 HCA m=128 alternating), num_hash_layers=3, YaRN rope_scaling factor 16 from 65536"
+    },
+    {
+      "id": "hf_config_pro",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/raw/main/config.json",
+      "used_for": "per-layer compress_ratios (layers 0–1 HCA; then 30 CSA and 29 HCA alternating)"
+    },
+    {
+      "id": "flashmla_readme_v4_layout",
+      "url": "https://github.com/deepseek-ai/FlashMLA/tree/ba89a3466e9470ad08ab39738d4e7bb66989e1e7",
+      "used_for": "KV entry bytes: V3.2 656 B (512 FP8 + 4 FP32 scales + 64 BF16 RoPE); V4 584 B (448 FP8 + 128 B BF16 RoPE + 8 B scales); V4.1 FP4 288 B"
+    },
+    {
+      "id": "flashmla_readme_current",
+      "url": "https://github.com/deepseek-ai/FlashMLA",
+      "used_for": "statement that Q-norm in the fused kernel is only used in V4, not V4.1"
+    }
+  ],
+  "claims": [
+    {
+      "id": "scale",
+      "claim": "V4-Pro 1.6T total / 49B activated, 33T tokens; V4-Flash 284B / 13B, 32T tokens; 1M context",
+      "locator": "Abstract; §1; §4.2.1–4.2.2 pp.24–25",
+      "type": "paper_report"
+    },
+    {
+      "id": "efficiency_1m",
+      "claim": "At 1M context: Pro 27% single-token FLOPs and 10% KV cache of V3.2; Flash 10% and 7%; FLOPs in FP8-equivalent; Figure 1 annotations 3.7x/9.8x lower FLOPs, 9.5x/13.7x smaller KV",
+      "locator": "Abstract; §1 p.5; Figure 1",
+      "type": "paper_report_estimate"
+    },
+    {
+      "id": "csa",
+      "claim": "CSA compresses every m tokens into one entry from 2m overlapping entries with learned positional bias; lightning indexer selects top-k; shared-KV MQA; grouped output projection",
+      "locator": "§2.3.1 eq.9–19 pp.9–11",
+      "type": "paper_report"
+    },
+    {
+      "id": "hca",
+      "claim": "HCA compresses every m'=128 tokens without overlap, dense attention over all compressed entries",
+      "locator": "§2.3.2 eq.20–26 pp.11–12",
+      "type": "paper_report"
+    },
+    {
+      "id": "other_details",
+      "claim": "RMSNorm on query heads and compressed KV; partial RoPE on last 64 dims with RoPE(-i) on outputs; 128-token sliding-window branch; learnable sink in softmax denominator",
+      "locator": "§2.3.3 eq.27 pp.12–13",
+      "type": "paper_report"
+    },
+    {
+      "id": "storage_precision",
+      "claim": "BF16 for RoPE dims, FP8 for the rest; indexer attention in FP4; smaller top-k than V3.2; KV about 2% of BF16 GQA8 head-dim-128 baseline at 1M",
+      "locator": "§2.3.4 p.13",
+      "type": "paper_report"
+    },
+    {
+      "id": "configs",
+      "claim": "Flash 43 layers, d=4096, first two layers pure SWA, CSA m=4 top-k 512, HCA m'=128, 64 query heads, head dim 512, 1 shared + 256 routed experts top-6, hash routing first 3 MoE layers, MTP depth 1, mHC n=4 t_max=20; Pro 61 layers, d=7168, first two layers HCA, top-k 1024, 128 heads, 384 routed experts top-6",
+      "locator": "§4.2.1 pp.24–25",
+      "type": "paper_report"
+    },
+    {
+      "id": "moe_changes",
+      "claim": "Affinity Sigmoid -> Sqrt(Softplus); auxiliary-loss-free balancing plus sequence-wise loss 0.0001; node-limit removed; dense FFN in first blocks replaced with hash-routed MoE; MTP unchanged from V3",
+      "locator": "§2.1 p.7; §4.2.2 p.25",
+      "type": "paper_report"
+    },
+    {
+      "id": "muon",
+      "claim": "Muon for most matrices; AdamW for embedding, head, mHC static biases and gates, RMSNorm; hybrid Newton-Schulz 8+2 steps; no QK-Clip because Q/KV RMSNorm",
+      "locator": "§2.4 Algorithm 1 p.14",
+      "type": "paper_report"
+    },
+    {
+      "id": "curriculum",
+      "claim": "4K -> 16K -> 64K -> 1M; Flash dense attention for first 1T tokens, sparse introduced at 64K after indexer warmup; Pro has a longer dense stage (length not given)",
+      "locator": "§4.2.2 pp.25–26",
+      "type": "paper_report"
+    },
+    {
+      "id": "instability",
+      "claim": "Notable loss spikes tied to MoE outliers; Anticipatory Routing (~20% wall-clock overhead when active, triggered only on spikes) and SwiGLU clamping (linear [-10,10], gate upper bound 10); mechanism not understood",
+      "locator": "§4.2.3 p.26; §6 p.44",
+      "type": "paper_report"
+    },
+    {
+      "id": "deployment_cache",
+      "claim": "State cache for SWA and uncompressed tail; blocks of lcm(m,m') tokens; on-disk compressed KV; SWA KV ~8x compressed KV; full / periodic / zero SWA caching, zero requires recomputing n_win x L tokens",
+      "locator": "§3.5.1–3.5.2 pp.21–24",
+      "type": "paper_report"
+    },
+    {
+      "id": "base_eval",
+      "claim": "LongBench-V2 V3.2-Base 40.2, V4-Flash-Base 44.7, V4-Pro-Base 51.5; Flash-Base below V3.2-Base on BigCodeBench 56.8 vs 63.9 and MATH 57.4 vs 60.5",
+      "locator": "Table 1 p.28",
+      "type": "paper_report"
+    },
+    {
+      "id": "long_context_eval",
+      "claim": "MRCR 1M: Opus-4.6 92.9, Gemini-3.1-Pro 76.3, V4-Pro-Max 83.5; CorpusQA 1M: 71.7, 53.8, 62.0; Flash Non-think MRCR 37.5 vs Max 78.7, CorpusQA 15.5 vs 60.5",
+      "locator": "Table 6 p.38; Table 7 p.39",
+      "type": "paper_report"
+    },
+    {
+      "id": "mrcr_curve",
+      "claim": "MRCR 8-needle average MMR, Pro-Max: 0.90/0.85/0.94/0.90/0.92 for 8K–128K, 0.82 at 256K, 0.66 at 512K, 0.59 at 1M; Flash-Max 0.49 at 1M",
+      "locator": "Figure 9 p.40",
+      "type": "paper_report"
+    },
+    {
+      "id": "real_world_limits",
+      "claim": "Opus 4.5 52.0% vs 45.9% on hardest writing prompts; white-collar weaknesses (format constraints, concise summaries, slide aesthetics); coding survey N=85 notes trivial mistakes, vague-prompt misreading, over-thinking",
+      "locator": "§5.4.1 Table 14 p.58; §5.4.3 p.43; §5.4.4 p.44",
+      "type": "paper_report"
+    },
+    {
+      "id": "system_numbers",
+      "claim": "EP fused kernel 1.50–1.73x, up to 1.96x; mHC overhead 6.7% of 1F1B stage; BF16 index scores 2x top-k speedup with 99.7% recall",
+      "locator": "§3.1 p.16; §3.4.2 p.20; §5.2.1 p.33",
+      "type": "paper_report"
+    },
+    {
+      "id": "limitations",
+      "claim": "Architecture relatively complex because many preliminarily validated components retained; stability tricks not understood; future: sparser embedding modules (Engram), low-latency architectures, multimodal",
+      "locator": "§6 pp.44–45",
+      "type": "paper_report"
+    },
+    {
+      "id": "kv_bytes_handcalc",
+      "claim": "Reconstructed global KV bytes/token: V2 69,120 (BF16, 60 layers); V3.2 61 x (656+132) = 48,068; V4-Flash 21 x (584+68)/4 + 20 x 584/128 = 3,514; V4-Pro 30 x 163 + 31 x 4.5625 ~= 5,031; matches V4.1 Figure 1(b) and V4 Figure 1 ratio 9.5x",
+      "locator": "derived from FlashMLA layouts, HF configs; indexer-key bytes (132, 68) are assumptions",
+      "type": "derived_estimate"
+    }
+  ],
+  "boundaries": [
+    "No ablation in the report isolates CSA/HCA vs DSA, mHC, Muon or hash routing",
+    "1M efficiency numbers are estimates against V3.2 extrapolated beyond its 128K limit",
+    "Training compute and hardware not disclosed",
+    "Table 6 MRCR needle setting not specified; Figure 9 is 8-needle"
+  ],
+  "diagram": null,
+  "content_validation": {
+    "no_original_pdf_in_public_output": true,
+    "no_scraped_fulltext_in_public_output": true,
+    "not_a_verbatim_translation": true,
+    "original_explanatory_examples_labeled": true
+  }
+}

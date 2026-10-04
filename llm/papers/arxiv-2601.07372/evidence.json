@@ -1,0 +1,229 @@
+{
+  "schema_version": 1,
+  "paper_key": "arxiv-2601.07372",
+  "title": "Conditional Memory via Scalable Lookup: A New Axis of Sparsity for Large Language Models",
+  "arxiv_id": "2601.07372",
+  "version": "v2",
+  "source_url": "https://arxiv.org/abs/2601.07372v2",
+  "fulltext_url": "https://arxiv.org/pdf/2601.07372v2",
+  "accessed_at": "2026-10-04",
+  "source_pdf_sha256": "8eab2dd35e4557d4142e5959697836f6cf926d0fbc29016257f1eea5be73df5d",
+  "page_count": 35,
+  "reading_status": "main_text_and_appendices_read",
+  "reading_coverage": {
+    "main": [
+      "§1 Introduction",
+      "§2 Architecture (2.1–2.5)",
+      "§3 Scaling Laws and Sparsity Allocation",
+      "§4 Large Scale Pre-training",
+      "§5 Long Context Training",
+      "§6 Analysis (6.1–6.5)",
+      "§7 Related Work",
+      "§8 Conclusion"
+    ],
+    "appendices": [
+      "A Table 5",
+      "B benchmark curves (skimmed)",
+      "C tokenizer compression (heading only)"
+    ],
+    "follow_ups_checked": [
+      {
+        "paper": "DeepSeek-V4 arXiv:2606.19348v1",
+        "sha256": "55b2d72f772ac00de2e470b3ee08443c648d971c7f57c52d6202895665e5978d",
+        "sections": [
+          "§2.1 hash routing",
+          "§4.2.1",
+          "§6 future directions"
+        ]
+      },
+      {
+        "paper": "DeepSeek-V4.1-Flash arXiv:2609.19969",
+        "sha256": "0cfdda19c8e1691b5226dd0d4949e2397051268e8a823c2fb61db94ea20c4ac0",
+        "sections": [
+          "§1",
+          "§2.1",
+          "§2.4.2",
+          "§2.5",
+          "§3.1.3",
+          "§4.2.1–4.2.2",
+          "§6"
+        ]
+      },
+      {
+        "paper": "Tokenizer-Agnostic Engram Module arXiv:2607.29065v1",
+        "sha256": "528f4fe5c512abdcd932df1960da584132b85070437260d5d6618da0809f04f2",
+        "sections": [
+          "full text (9 pages)"
+        ]
+      },
+      {
+        "paper": "Frozen Memory Is Not Enough arXiv:2608.17050v3",
+        "sha256": "58fa33df056c3cdf6f62fc9db345d0179da14a955a957ff3c4606b946d28b560",
+        "sections": [
+          "Abstract",
+          "§1–3",
+          "§4.1–4.5 (selected)",
+          "Appendix H Limitations"
+        ]
+      }
+    ],
+    "method": "downloaded official PDFs from arXiv; extracted full text with PyMuPDF; read sections listed"
+  },
+  "claims": [
+    {
+      "id": "motivation",
+      "claim": "Transformers lack native lookup; entity resolution consumes multiple early layers (Diana example)",
+      "locator": "§1 p2, §6.1 Table 3 p14",
+      "type": "paper_report"
+    },
+    {
+      "id": "tokenizer_compression",
+      "claim": "surjective canonical ID mapping (NFKC, lowercase); 23% effective vocab reduction for 128k tokenizer",
+      "locator": "§2.2 p4, Appendix C p35",
+      "type": "paper_report"
+    },
+    {
+      "id": "hashing",
+      "claim": "K hash heads per order, prime-sized tables, multiplicative-XOR hash; concat to e_t ∈ R^{d_mem}",
+      "locator": "§2.2 Eq.1–2 p4",
+      "type": "paper_report"
+    },
+    {
+      "id": "gating",
+      "claim": "alpha_t = sigmoid(RMSNorm(h)·RMSNorm(W_K e)/sqrt(d)); depthwise causal conv kernel 4, dilation = max order, SiLU; H ← H + Y",
+      "locator": "§2.3 Eq.3–5 p4–5",
+      "type": "paper_report"
+    },
+    {
+      "id": "multibranch",
+      "claim": "shared table and W_V, M distinct W_K across mHC branches (M=4); fused FP8 matmul",
+      "locator": "§2.4 Eq.6 p5–6",
+      "type": "paper_report"
+    },
+    {
+      "id": "system",
+      "claim": "training: sharded tables with All-to-All; inference: prefetch from host memory; Zipf multi-level cache proposed",
+      "locator": "§2.5 p6",
+      "type": "paper_report"
+    },
+    {
+      "id": "allocation",
+      "claim": "U-shape over rho at 2e20 and 6e20 FLOPs; optimum rho≈75–80%; 6e20: 1.7248→1.7109; rho≈40% matches pure MoE",
+      "locator": "§3.1 Fig.3 left p7–8",
+      "type": "paper_report"
+    },
+    {
+      "id": "infinite_memory",
+      "claim": "3B backbone, slots 2.58e5→1e7 (up to ~13B params), log-linear loss; better than OverEncoding",
+      "locator": "§3.2 Fig.3 right p8",
+      "type": "paper_report"
+    },
+    {
+      "id": "main",
+      "claim": "Engram-27B vs MoE-27B (262B tokens, 3.8B act): MMLU 57.4→60.4, BBH 50.9→55.9, CMMLU 57.9→61.9, ARC-C 70.1→73.8, HumanEval 37.8→40.8, MATH 28.3→30.7, CCPM 79.6→87.1, PopQA 19.2→19.4; 72→55 routed experts, 5.7B memory, rho=74.3%",
+      "locator": "Table 1 p9, §4.1 p10",
+      "type": "paper_report"
+    },
+    {
+      "id": "mmlu_discrepancy",
+      "claim": "abstract and §1 state MMLU +3.4; Table 1 and §4.2 give +3.0 (57.4→60.4); reading uses +3.0",
+      "locator": "Abstract p1, §1 p2, Table 1 p9, §4.2 p11",
+      "type": "internal_inconsistency"
+    },
+    {
+      "id": "engram40",
+      "claim": "Engram-40B (18.5B memory) improves most benchmarks; HumanEval 38.4, MBPP 46.2, C3 61.8, MATH 30.6 below Engram-27B; attributed to under-training",
+      "locator": "Table 1 p9, §4.2 p11",
+      "type": "paper_report"
+    },
+    {
+      "id": "long_context",
+      "claim": "32k YaRN extension 5000 steps/30B tokens; MQ-NIAH 84.2→97.0, VT 77.0→87.2 (iso-loss 46k); S-NIAH 100.0 vs 97.6",
+      "locator": "§5 Table 2 p11–13",
+      "type": "paper_report"
+    },
+    {
+      "id": "depth",
+      "claim": "LogitLens lower KL in early layers; CKA: Engram layer 5 ≈ MoE layer 12",
+      "locator": "§6.1 Fig.4 p13, p15",
+      "type": "paper_report"
+    },
+    {
+      "id": "placement",
+      "claim": "3B MoE baseline 1.808; single module best at layer 2 (1.770); layers 2+6 1.768; key components: multi-branch, gating, tokenizer compression; conv minor; 4-gram slightly worse",
+      "locator": "§6.2 Fig.5 p15–16",
+      "type": "paper_report"
+    },
+    {
+      "id": "sensitivity",
+      "claim": "disable Engram at inference: factual 29–44% retained (TriviaQA 29%), reading comprehension 81–93%; MATH 36%, MGSM 44%, GSM8K 62%",
+      "locator": "§6.3 Fig.6 p17",
+      "type": "paper_report"
+    },
+    {
+      "id": "throughput",
+      "claim": "100B Engram in host DRAM, H800: 4B 9031.62→8858.28 tok/s; 8B 6315.52→6140.02 (−2.8%)",
+      "locator": "§6.4 Table 4 p17–18",
+      "type": "paper_report"
+    },
+    {
+      "id": "config",
+      "claim": "Engram-27B: layers [2,15], N-gram [2,3], 8 heads, d_mem 1280, Engram vocab 2,262,400 (40B: 7,239,680), Adam lr ×5, no weight decay, conv zero init, Muon backbone",
+      "locator": "§4.1 p10, Appendix A Table 5 p33",
+      "type": "paper_report"
+    },
+    {
+      "id": "v4",
+      "claim": "V4 does not include Engram; first 3 MoE layers use hash routing by token ID; future work cites more sparse embedding modules (Cheng et al., 2026)",
+      "locator": "V4 §2.1 p7, §4.2.1 p24–25, §6 p45",
+      "type": "follow_up_report"
+    },
+    {
+      "id": "v41",
+      "claim": "V4.1-Flash: 196B Engram in two modules at layers 1 and 14 (zero-indexed), orders {2,3,4}, 8 heads, 2048 dim per order, ~16M entries per head, FP8; conv removed; momentum + Sinkhorn balancing instead of Adam; tables stay in GPU during RL rollouts; lr ×5",
+      "locator": "V4.1 §2.4.2 p13, §2.5 p15, §3.1.3 p18, §4.2.2 p22",
+      "type": "follow_up_report"
+    },
+    {
+      "id": "tae",
+      "claim": "XOR hash couples table to tokenizer; polynomial byte hashing with joint space + 1-gram; mean 0.605 (XOR) vs 0.612 (poly); cross-tokenizer frozen transfer 0.560→0.584; N=1 control no gain; bits/byte with Engram 0.919 vs base 0.861",
+      "locator": "TAE Intro p1, Table 3 p6, Tables 4–5 p7",
+      "type": "follow_up_report"
+    },
+    {
+      "id": "frozen_memory",
+      "claim": "frozen table useful only through target-aligned reader; QA avg 38.8; scratch target memory competitive; Pythia-160M→410M transferred 1.05M params PPL 21.5 at 20M tokens vs scratch 34.6M params 21.6 at 50M; TruthfulQA −0.2 to −0.8 at all scales; whitespace addressing fails on Chinese/Japanese",
+      "locator": "FM Abstract p1, §4.3 Fig.3 p10, §4.5 Table 4 p12, Appendix H p33",
+      "type": "follow_up_report"
+    }
+  ],
+  "hand_calculations": [
+    "params: 2,262,400 rows × 80 dims × 16 subtables × 2 layers ≈ 5.79B (Table 1: 5.7B); 40B config ≈ 18.5B",
+    "expert 3×2560×1536 ≈ 11.8M per layer; ×29 MoE layers ≈ 0.34B; 17 experts ≈ 5.8B",
+    "P_sparse ≈ 26.7−3.8−0.66 ≈ 22.2B; rho ≈ 74.4% (paper 74.3%)",
+    "gate sigma(2)≈0.88, sigma(−2)≈0.12",
+    "per token per Engram layer 1280 numbers ≈ 2.5 KiB at BF16 (precision assumed)",
+    "V4.1: 3×8×16M×256×2 ≈ 196.6B; 6144 FP8 numbers per module per token, ≈12 KiB for two modules",
+    "W_K, W_V projections ≈ 2560×1280×5×2 ≈ 33M activated params (estimate)"
+  ],
+  "boundaries": [
+    "Single training run per config; no error bars",
+    "Sensitivity analysis is post-hoc train–inference inconsistent ablation",
+    "Throughput measured on dense backbones only",
+    "Interpretation of 'Engram Vocab Size' as rows per subtable is inferred",
+    "Official repository code not read"
+  ],
+  "diagram": {
+    "original": true,
+    "format": [
+      "svg"
+    ],
+    "path": "figures/engram-mechanism.svg"
+  },
+  "content_validation": {
+    "no_original_pdf_in_public_output": true,
+    "no_scraped_fulltext_in_public_output": true,
+    "not_a_verbatim_translation": true,
+    "original_explanatory_examples_labeled": true
+  }
+}

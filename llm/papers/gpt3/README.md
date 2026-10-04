@@ -1,25 +1,25 @@
 # Language Models are Few-Shot Learners
 
-[返回大语言模型目录](../../README.md) · [原文与阅读记录](source.json)
+> 状态：技术精读 · 2020 · [原文](https://arxiv.org/abs/2005.14165)
 
-- 稳定标识：arxiv:2005.14165
-- 年份：2020
-- [官方原文页面](https://arxiv.org/abs/2005.14165)
-- [官方全文入口](https://arxiv.org/pdf/2005.14165v4)
-- 阅读版本：v4
-- 方向：cross-domain/agents、cross-domain/model-science、llm/architecture、llm/pretraining
+[返回大语言模型目录](../../README.md)
 
-## 阅读内容与边界
+- **解决什么**：预训练后仍要为每个任务准备成千上万条标注做微调；人只看几个例子或一句说明就能做新任务。
+- **核心方法**：沿用 GPT-2 式的自回归 Transformer，把规模扩到 175B（共训练 8 个规模），评测时完全不更新参数，只在输入里放任务说明和 0 个、1 个或少量示例（上下文学习：模型从提示中的示例推断任务，权重不变）。少样本设置在翻译、问答、完形填空等任务上有时接近此前微调的最好结果，同时报告了仍然吃力的数据集，以及网页训练数据带来的测试污染问题。
+- **为什么在这个库里**：[预训练方向](../../fields/pretraining/README.md)"预训练学到了什么"的历史起点：规模扩大后，任务可以写进提示。它的目标只是续写、不对齐用户意图，这一局限直接引出 [InstructGPT](../instructgpt/README.md)。优先级：必读。
 
-本篇保留现有技术精读，范围与残余边界见正文和证据档案；未独立复现。
+## 阅读入口
 
-- [打开完整技术精读](reading.md)
-- [本篇图解与说明](figures/README.md)
+- [技术精读](reading.md)
+- [图解与说明](figures/README.md)
+- [原文版本与阅读记录](source.json)
 
-## 可选的阅读顺序
+## 阅读顺序
 
-[Attention Is All You Need](../transformer/README.md) → 本篇。这个顺序是教学建议，不表示论文之间的直接历史继承。
+[Attention Is All You Need](../transformer/README.md)（自回归 Transformer 的结构）→ 本篇。
 
-## 原文保存与许可
+## 身份信息
 
-当前以官方原文链接为入口。本地PDF是否保存、对应版本和可再分发许可，以 [source.json](source.json) 为准；没有明确许可时不把第三方论文镜像到公开仓库。
+- 稳定标识：arxiv:2005.14165 · [全文 PDF](https://arxiv.org/pdf/2005.14165v4) · 精读依据 v4
+- 作者：Tom B. Brown、Benjamin Mann、Nick Ryder、Melanie Subbiah、Jared Kaplan 等 31 位（OpenAI）
+- 方向：llm/pretraining、llm/architecture、cross-domain/model-science、cross-domain/agents

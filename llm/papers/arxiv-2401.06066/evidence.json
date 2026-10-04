@@ -1,0 +1,241 @@
+{
+  "schema_version": 1,
+  "paper_key": "arxiv-2401.06066",
+  "title": "DeepSeekMoE: Towards Ultimate Expert Specialization in Mixture-of-Experts Language Models",
+  "arxiv_id": "2401.06066",
+  "version": "v1",
+  "source_url": "https://arxiv.org/abs/2401.06066v1",
+  "fulltext_url": "https://arxiv.org/pdf/2401.06066v1",
+  "accessed_at": "2026-10-04",
+  "source_pdf_sha256": "a64b509e1410d09cf5b70570788d27790985fb9808ce436b9da8de73f2eed651",
+  "page_count": 33,
+  "reading_status": "full_text_read",
+  "reading_coverage": {
+    "main": [
+      "§1 Introduction",
+      "§2 Preliminaries",
+      "§3.1–3.3 Architecture and load balance",
+      "§4 Validation experiments (Tables 1–2, Figures 3–6)",
+      "§5 DeepSeekMoE 16B (Tables 3–4)",
+      "§6 Alignment (Table 5)",
+      "§7 DeepSeekMoE 145B (Table 6)",
+      "§8 Related work",
+      "§9 Conclusion"
+    ],
+    "appendices": [
+      "A Hyper-parameter overview (Table 7)",
+      "B Larger baselines (Tables 8–10)",
+      "C Training curves"
+    ],
+    "official_repository_files": [
+      "https://huggingface.co/deepseek-ai/deepseek-moe-16b-base/raw/main/config.json (hidden 2048, 28 layers, moe_intermediate_size 1408, intermediate_size 10944, 2 shared + 64 routed, 6 per token, vocab 102400, first_k_dense_replace 1)"
+    ],
+    "later_sources_for_hindsight": [
+      {
+        "id": "arxiv:2408.15664",
+        "title": "Auxiliary-Loss-Free Load Balancing Strategy for Mixture-of-Experts",
+        "version": "v1",
+        "sections": [
+          "Algorithm 1",
+          "Figure 4 update rate"
+        ]
+      },
+      {
+        "id": "arxiv:2512.02556",
+        "title": "DeepSeek-V3.2",
+        "version": "v1",
+        "sections": [
+          "§3.1 Keep Routing"
+        ]
+      },
+      {
+        "id": "arxiv:2606.19348",
+        "title": "DeepSeek-V4",
+        "version": "v1",
+        "sections": [
+          "§2.1",
+          "§3.1",
+          "§4.2.1–4.2.3",
+          "§5.2.1",
+          "§6"
+        ]
+      },
+      {
+        "id": "arxiv:2609.19969",
+        "title": "DeepSeek-V4.1-Flash",
+        "version": "v1",
+        "sections": [
+          "§2.1–2.1.1",
+          "DSpark vs MTP paragraph",
+          "§4 hyper-parameters",
+          "§5.2.1 routing replay"
+        ]
+      },
+      {
+        "id": "arxiv:2507.20534",
+        "title": "Kimi K2",
+        "version": "v2",
+        "sections": [
+          "§2.3 Table 2, sparsity scaling law, attention heads",
+          "§2.4.2–2.4.3"
+        ]
+      },
+      {
+        "id": "arxiv:2607.24653",
+        "title": "Kimi K3",
+        "version": "v2",
+        "sections": [
+          "§2.3 Stable LatentMoE",
+          "§2.3.3 Quantile Balancing"
+        ]
+      },
+      {
+        "id": "arxiv:2505.09388",
+        "title": "Qwen3 Technical Report",
+        "version": "v1",
+        "sections": [
+          "§2 Architecture, Table 2"
+        ]
+      },
+      {
+        "id": "url:https://ai.meta.com/blog/llama-4-multimodal-intelligence/",
+        "title": "The Llama 4 herd (official blog, 2025-04-05)",
+        "version": "accessed 2026-10-04",
+        "sections": [
+          "MoE architecture paragraph",
+          "FP8 pre-training paragraph"
+        ]
+      }
+    ],
+    "method": "downloaded official PDF; extracted complete text with PyMuPDF and read all sections; parameter counts recomputed by hand from the official config"
+  },
+  "claims": [
+    {
+      "id": "problem",
+      "claim": "conventional top-1/top-2 MoE with 8–16 experts suffers knowledge hybridity and knowledge redundancy",
+      "locator": "§1 p2",
+      "type": "paper_report"
+    },
+    {
+      "id": "segmentation",
+      "claim": "split each expert into m by shrinking intermediate dim to 1/m, activate mK; C(16,2)=120 vs C(64,8)=4,426,165,368",
+      "locator": "§3.1 eq.6–8 p5–6",
+      "type": "paper_report"
+    },
+    {
+      "id": "shared",
+      "claim": "Ks shared experts always active, routed activations reduced by Ks; prototype credited to DeepSpeed-MoE",
+      "locator": "§3.2 eq.9–11 p6",
+      "type": "paper_report"
+    },
+    {
+      "id": "balance_settings",
+      "claim": "2B alpha1=0.01 no device loss; 16B alpha1=0.001 (higher hurts, no efficiency gain); 145B alpha1=0.003 alpha2=0.05 over 4 devices",
+      "locator": "§4.1.3 p8–9; §5.1.2 p15; §7.1 p22",
+      "type": "paper_report"
+    },
+    {
+      "id": "first_layer_dense",
+      "claim": "first layer kept dense because load balance converges especially slower",
+      "locator": "§5.1.2 p15",
+      "type": "paper_report"
+    },
+    {
+      "id": "table1",
+      "claim": "2B: Pile loss GShard 1.867 vs DeepSeekMoE 1.808; TriviaQA 10.2 vs 16.6",
+      "locator": "Table 1 p10",
+      "type": "paper_report"
+    },
+    {
+      "id": "table2",
+      "claim": "GShard×1.5 Pile 1.808, Dense×16 1.806, DeepSeekMoE 1.808",
+      "locator": "Table 2 p11",
+      "type": "paper_report"
+    },
+    {
+      "id": "shared_ratio",
+      "claim": "1/2/4 shared experts Pile loss 1.808/1.806/1.811; ratio 1:3 adopted",
+      "locator": "§4.4 p12",
+      "type": "paper_report"
+    },
+    {
+      "id": "disable_shared",
+      "claim": "disabling shared expert (+1 routed) Pile loss 1.808→2.414",
+      "locator": "§4.5 p13",
+      "type": "paper_report"
+    },
+    {
+      "id": "16b",
+      "claim": "16.4B total 2.8B active; FLOPs per 4K tokens 74.4T vs DeepSeek 7B 183.5T (40.5%); MMLU 45.0 vs 48.2; TriviaQA 64.8 vs 59.7; ~0.5B attention params vs 2.5B",
+      "locator": "§5.1.2; Table 3 p17; §5.2.1 p17",
+      "type": "paper_report"
+    },
+    {
+      "id": "no_finer",
+      "claim": "finer granularity not used at 16B due to computational efficiency of too small experts",
+      "locator": "§5.1.2 p15",
+      "type": "paper_report"
+    },
+    {
+      "id": "145b",
+      "claim": "245B tokens; 28.5% compute vs DeepSeek 67B; half-activated 142B 18.2%; GShard 137B Pile 1.961 vs 1.876",
+      "locator": "§7, Table 6 p23",
+      "type": "paper_report"
+    },
+    {
+      "id": "param_count",
+      "claim": "hand count from config: expert 8.65M, total ≈16.4B, active ≈2.83B, attention ≈0.47B",
+      "locator": "official config.json",
+      "type": "derived_example"
+    },
+    {
+      "id": "flops_check",
+      "claim": "74.4T/4096 ≈ 18.2 GFLOPs per token ≈ 6×2.8B + attention (training compute)",
+      "locator": "Table 3",
+      "type": "derived_example"
+    }
+  ],
+  "hindsight_claims": [
+    {
+      "claim": "Qwen3-MoE excludes shared experts unlike Qwen2.5-MoE; uses global-batch load balancing loss",
+      "locator": "Qwen3 §2"
+    },
+    {
+      "claim": "Kimi K2: 384 experts, 1 shared, 1 dense layer, no expert grouping; higher sparsity brings infrastructure complexity",
+      "locator": "K2 §2.3 Table 2"
+    },
+    {
+      "claim": "DeepSeek-V4 replaces initial dense FFN layers with hash-routed MoE layers",
+      "locator": "V4 §2.1"
+    },
+    {
+      "claim": "Keep Routing crucial for MoE RL stability since V3-0324",
+      "locator": "V3.2 §3.1"
+    },
+    {
+      "claim": "Llama 4 Maverick: alternating dense/MoE layers, 128 routed + 1 shared, each token to one routed expert",
+      "locator": "Meta official blog 2025-04-05"
+    }
+  ],
+  "boundaries": [
+    "All comparisons retrain baselines on DeepSeek's own corpus; 40% is a training-FLOPs ratio, not latency",
+    "Dense×16 upper bound is a constructed 16-shared-expert model",
+    "Multiple-choice weakness attribution is the authors' hypothesis based on an unpublished internal study",
+    "145B results are preliminary (245B tokens)",
+    "Expert-specialization evidence is indirect (loss sensitivity), not interpretability"
+  ],
+  "diagram": {
+    "original": true,
+    "format": [
+      "svg"
+    ],
+    "visual_qa": "rendered in browser preview and inspected; no clipping or overlap",
+    "path": "figures/deepseekmoe-mechanism.svg"
+  },
+  "content_validation": {
+    "no_original_pdf_in_public_output": true,
+    "no_scraped_fulltext_in_public_output": true,
+    "not_a_verbatim_translation": true,
+    "original_explanatory_examples_labeled": true
+  }
+}

@@ -6,13 +6,13 @@
   "canonical_folder": "llm/papers/arxiv-2412.19437",
   "official_url": "https://arxiv.org/abs/2412.19437",
   "official_fulltext_url": "https://arxiv.org/pdf/2412.19437",
-  "read_version": null,
-  "version_status": "not_pinned",
-  "reading_depth": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
-  "teaching_status": "not_created",
-  "content_kind": "bibliographic_card",
-  "reading_path": null,
-  "reading_boundary": "这是文献卡，目前没有该论文的独立精读正文。标题、标识或摘要层面的核验不等于全文阅读。",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_sections_full_reading_and_evidence_audit",
+  "teaching_status": "technical_reading",
+  "content_kind": "reading",
+  "reading_path": "reading.md",
+  "reading_boundary": "技术精读：v2 的 §1–4（架构、基础设施、FP8、部署、预训练、消融）、§5.4、§6 与附录 B–C 已读，§5.1–5.3 后训练与评测只略读；参数账与每 token 计算按官方 config.json 手算；\"站在现在看\"部分引用 V3.2、V4、V4.1-Flash、Kimi K2/K3、Qwen3 与 Llama 4 官方博客的指定章节。未复现。",
   "user_reading_status": "not_asserted",
   "independently_reproduced": false,
   "license": {
@@ -22,14 +22,18 @@
   },
   "fulltext_local_status": "official_link_only_pending_license_verification",
   "fulltext_local_path": null,
-  "source_record_updated": "2026-10-03",
+  "source_record_updated": "2026-10-04",
   "legacy_paths": [],
-  "evidence_paths": [],
+  "evidence_paths": [
+    "llm/papers/arxiv-2412.19437/evidence.json",
+    "evidence.json"
+  ],
   "topic_paths": [
-    "llm/posttraining/sft",
     "llm/pretraining",
     "llm/architecture",
-    "llm/posttraining/rl"
+    "llm/posttraining/sft",
+    "llm/posttraining/rl",
+    "llm/inference"
   ],
   "verification_2026_10_03": {
     "reading_scope": "§2.2 MTP、§5.4.3 Multi-Token Prediction Evaluation；不是技术报告全文阅读",
@@ -43,5 +47,38 @@
       "https://arxiv.org/html/2412.19437v2"
     ],
     "source_origin": "historical_assistant_recommendation"
+  },
+  "year": 2024,
+  "authors": [
+    "DeepSeek-AI"
+  ],
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "generation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页元数据（当前版本题名、作者、日期、评注、摘要）与全文 PDF 首页（机构）及支撑卡片句子的选段",
+    "purpose": "文献卡按 STYLE §6 改写：核实题名、年份、作者与\"解决什么 / 核心方法\"两句",
+    "evidence_boundary": "文献卡层面的核验，不是全文精读，未复现。",
+    "verification_status": "identity_and_card_claims_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2412.19437",
+      "https://arxiv.org/pdf/2412.19437"
+    ]
+  },
+  "reading_2026_10_04": {
+    "reading_scope": "v2：§1、§2、§3.1–3.5、§4.1–4.5、§5.4.1、§5.4.3、§6、附录 B–C；§5.1–5.3 略读；官方 config.json 与仓库 README",
+    "source_pdf_sha256": "812a3fd645c80725354de9d831a6785503007a60681461407f64e97305fa9330",
+    "method": "下载官方 PDF，用 PyMuPDF 抽取全文文本核对数字；后续报告只读与 MoE 路由、均衡、部署相关的章节",
+    "verification_status": "technical_reading_written",
+    "verification_sources": [
+      "https://arxiv.org/abs/2412.19437v2",
+      "https://arxiv.org/pdf/2412.19437v2",
+      "https://huggingface.co/deepseek-ai/DeepSeek-V3/raw/main/config.json",
+      "https://github.com/deepseek-ai/DeepSeek-V3/blob/main/README.md"
+    ],
+    "evidence_boundary": "未复现实验；手算数值在正文标注为示例数值或估算。"
   }
 }

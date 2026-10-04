@@ -1,0 +1,237 @@
+{
+  "schema_version": 1,
+  "paper_key": "arxiv-2512.24880",
+  "title": "mHC: Manifold-Constrained Hyper-Connections",
+  "arxiv_id": "2512.24880",
+  "version": "v2",
+  "source_url": "https://arxiv.org/abs/2512.24880v2",
+  "fulltext_url": "https://arxiv.org/pdf/2512.24880v2",
+  "accessed_at": "2026-10-04",
+  "source_pdf_sha256": "d849f4709ed29bfb2751f51e24dc836403f31271d1764dddfba0768d326a75d9",
+  "page_count": 19,
+  "reading_status": "main_text_and_appendix_read",
+  "reading_coverage": {
+    "main": [
+      "§1 Introduction",
+      "§2 Related Works",
+      "§3 Preliminary (3.1 Numerical Instability, 3.2 System Overhead)",
+      "§4 Method (4.1–4.3)",
+      "§5 Experiments (5.1–5.4)",
+      "§6 Conclusion and Outlook"
+    ],
+    "appendices": [
+      "A.1 Table 5 model specifications"
+    ],
+    "predecessor": {
+      "paper": "Hyper-Connections arXiv:2409.19606v3 (ICLR 2025)",
+      "sha256": "0cd241378f0ed951356af778399112d722636661efc0087292c07e13bc5fb1e7",
+      "sections": [
+        "§1",
+        "§2.1–2.3",
+        "§3.1–3.2",
+        "§4.1–4.5 (Tables 1–6, Fig.1, Fig.6)"
+      ]
+    },
+    "follow_ups_checked": [
+      {
+        "paper": "DeepSeek-V4 arXiv:2606.19348v1",
+        "sha256": "55b2d72f772ac00de2e470b3ee08443c648d971c7f57c52d6202895665e5978d",
+        "sections": [
+          "Abstract",
+          "§1",
+          "§2.1–2.2",
+          "§2.4",
+          "§3.3 (mHC matmul determinism)",
+          "§3.4.2",
+          "§4.2.1",
+          "§4.2.3",
+          "§6"
+        ]
+      },
+      {
+        "paper": "DeepSeek-V4.1-Flash arXiv:2609.19969",
+        "sha256": "0cfdda19c8e1691b5226dd0d4949e2397051268e8a823c2fb61db94ea20c4ac0",
+        "sections": [
+          "§1",
+          "§2.1",
+          "§2.4.1 Single-Pass mHC",
+          "§4.2.1–4.2.2",
+          "§6"
+        ]
+      },
+      {
+        "paper": "Attention Residuals arXiv:2603.15031v1",
+        "sha256": "444673994328f7be8aee9d96fb240596b6f254f06ebaa53a2673413a244198c9",
+        "sections": [
+          "§4.2 Table 1",
+          "§5.1 Table 2",
+          "§5.3 Table 4",
+          "§6.2",
+          "§7"
+        ]
+      },
+      {
+        "paper": "mHC-lite arXiv:2601.05732",
+        "sections": [
+          "abstract only (arXiv abs page)"
+        ]
+      }
+    ],
+    "method": "downloaded official PDFs from arXiv; extracted full text with PyMuPDF; read sections listed; figure values read from extracted text of Fig.3, Fig.7, Fig.8"
+  },
+  "claims": [
+    {
+      "id": "hc_def",
+      "claim": "HC: residual stream n×C; H_pre 1×n, H_post 1×n, H_res n×n; dynamic = alpha·tanh(theta·RMSNorm(x)) + static bias",
+      "locator": "mHC §1 Eq.3 p3, §3 Eq.5 p5",
+      "type": "paper_report"
+    },
+    {
+      "id": "hc_results",
+      "claim": "HC: OLMoE-1B-7B DHC×4 converges 1.8x faster; ARC-C 41.8→47.8 at 500B tokens; n=1 worse than baseline; init H_res=I",
+      "locator": "HC Fig.1 p1, Table 6 p9, Table 1 p6, §2.3 p4",
+      "type": "paper_report"
+    },
+    {
+      "id": "hc_no_spikes_7b",
+      "claim": "HC paper reports no spikes for OLMo-7B-DHC×4 while baseline spikes",
+      "locator": "HC §4.3 p8",
+      "type": "paper_report"
+    },
+    {
+      "id": "instability",
+      "claim": "27B: HC loss surge around 12k steps correlated with grad norm; composite Amax Gain Magnitude peaks ~3000",
+      "locator": "§3.1 Fig.2–3 p6–7",
+      "type": "paper_report"
+    },
+    {
+      "id": "io",
+      "claim": "per-token residual I/O: residual 2C read + C write; HC (5n+1)C+n²+2n read, (3n+1)C+n²+2n write",
+      "locator": "§3.2 Table 2 p8",
+      "type": "paper_report"
+    },
+    {
+      "id": "constraint",
+      "claim": "H_res projected onto doubly stochastic matrices (Birkhoff polytope); spectral norm ≤1, closed under multiplication; n=1 reduces to identity",
+      "locator": "§4.1 Eq.6 p8",
+      "type": "paper_report"
+    },
+    {
+      "id": "param",
+      "claim": "H_pre=σ, H_post=2σ, H_res=Sinkhorn-Knopp(exp) with t_max=20; φ_l ∈ R^{nC×(n²+2n)}",
+      "locator": "§4.2 Eq.7–9 p9; §4.3.1 Eq.10 p10",
+      "type": "paper_report"
+    },
+    {
+      "id": "fusion",
+      "claim": "fused F_post,res reduces reads (3n+1)C→(n+1)C and writes 3nC→nC",
+      "locator": "§4.3.1 p10",
+      "type": "paper_report"
+    },
+    {
+      "id": "recompute",
+      "claim": "optimal recompute block L_r* ≈ sqrt(nL/(n+2)); aligned with pipeline stages",
+      "locator": "§4.3.2 Eq.20, Table 3 p11",
+      "type": "paper_report"
+    },
+    {
+      "id": "overhead",
+      "claim": "6.7% additional time overhead at n=4 (in-house large-scale training)",
+      "locator": "§1 p4, §4.3 p9",
+      "type": "paper_report"
+    },
+    {
+      "id": "main",
+      "claim": "27B BBH 43.8/48.9/51.0, DROP 47.0/51.6/53.9, MATH 22.0/26.4/26.0 (baseline/HC/mHC); final loss −0.021 vs baseline",
+      "locator": "§5.2 Fig.5 p12, Table 4 p13",
+      "type": "paper_report"
+    },
+    {
+      "id": "ablation_components",
+      "claim": "loss gap: H_res only −0.022; all three −0.027",
+      "locator": "§3 Table 1 p6",
+      "type": "paper_report"
+    },
+    {
+      "id": "scaling",
+      "claim": "compute scaling 3B/9B/27B advantage maintained with marginal attenuation; 3B on 1T tokens",
+      "locator": "§5.3 Fig.6 p13",
+      "type": "paper_report"
+    },
+    {
+      "id": "stability",
+      "claim": "mHC composite gain max ~1.6; backward gain deviates from 1 due to 20 SK iterations",
+      "locator": "§5.4 Fig.7 p14",
+      "type": "paper_report"
+    },
+    {
+      "id": "fig8",
+      "claim": "mHC single-layer mappings near identity (diag ~0.95–1.00); 60-layer composite entries ~0.21–0.29 (near uniform); HC mappings contain large negative entries",
+      "locator": "Fig.8 p14",
+      "type": "paper_figure_values"
+    },
+    {
+      "id": "setup",
+      "claim": "27B: 30 blocks, dim 2560, 72 routed/2 shared experts top-6, MLA, AdamW, 262B tokens; n=4, alpha init 0.01",
+      "locator": "Appendix A.1 Table 5 p19",
+      "type": "paper_report"
+    },
+    {
+      "id": "v4_adopt",
+      "claim": "V4 adopts mHC n_hc=4, t_max=20; mHC static biases and gating factors use AdamW, rest Muon; 6.7% of overlapped 1F1B stage; deterministic split-k for 24-dim output matmul",
+      "locator": "V4 §2.2 p7–8, §2.4 p14, §3.3 p19, §3.4.2 p20, §4.2.1 p24–25",
+      "type": "follow_up_report"
+    },
+    {
+      "id": "v4_spikes",
+      "claim": "V4 still had loss spikes traced to MoE outliers; Anticipatory Routing and SwiGLU clamping; principles not understood",
+      "locator": "V4 §4.2.3 p26, §6 p44",
+      "type": "follow_up_report"
+    },
+    {
+      "id": "v41_singlepass",
+      "claim": "V4 implementation (4n+4)d traffic; Mega-mHC (3n+2)d; Single-Pass mHC (2n+2)d using A_{l−1}; negligible degradation; 45T tokens no instability",
+      "locator": "V4.1 §2.4.1 p12–13, §4.2.2 p22",
+      "type": "follow_up_report"
+    },
+    {
+      "id": "attnres",
+      "claim": "AttnRes: mHC 34d vs Block AttnRes 5.5d I/O; 16-layer val loss baseline 1.766, mHC 1.747, Block 1.746, Full 1.737; (m)HC as depth-wise linear attention; still conditions on predecessor",
+      "locator": "AttnRes Table 1 p8, Table 4 p11, §6.2 p16, §7 p16",
+      "type": "follow_up_report"
+    },
+    {
+      "id": "mhc_lite",
+      "claim": "finite SK iterations leave approximation gap; exact doubly stochastic via convex combination of permutations",
+      "locator": "mHC-lite arXiv:2601.05732 abstract",
+      "type": "follow_up_abstract_only"
+    }
+  ],
+  "hand_calculations": [
+    "n=2 H=[[1,0.2],[0.1,1]]: eigenvalue 1.1414; max row sum of H^60 ≈ 3377",
+    "Sinkhorn on exp([[2,0],[0,0]]): iterations 1–3 and limit a=e/(1+e)≈0.731",
+    "H=0.947I+0.0533J/4: 60-layer composite first row ≈[0.278,0.241,0.241,0.241]",
+    "I/O at C=4096 BF16: 3C=24KiB vs 34C≈272KiB per token per layer",
+    "L_r*=sqrt(4·60/6)≈6.3; stored ≈76C vs 240C",
+    "φ_l params 4·2560·24≈245,760 per layer; ×60 ≈14.7M"
+  ],
+  "boundaries": [
+    "HC baseline in mHC is the authors' reimplementation",
+    "No public experiment above 27B or with n≠4",
+    "V4/V4.1 report no ablation removing mHC",
+    "AttnRes comparison uses unfused I/O count and mHC-lite at scaling sizes"
+  ],
+  "diagram": {
+    "original": true,
+    "format": [
+      "svg"
+    ],
+    "path": "figures/mhc-mechanism.svg"
+  },
+  "content_validation": {
+    "no_original_pdf_in_public_output": true,
+    "no_scraped_fulltext_in_public_output": true,
+    "not_a_verbatim_translation": true,
+    "original_explanatory_examples_labeled": true
+  }
+}
