@@ -7,7 +7,7 @@
 - [官方原文页面](https://aclanthology.org/2025.findings-acl.537/)
 - [官方页面与可用全文](https://aclanthology.org/2025.findings-acl.537/)
 - 阅读版本：未固定版本；请核对官方版本记录
-- 方向：llm/inference、cross-domain/interpretability、cross-domain/evaluation
+- 方向：llm/inference、cross-domain/model-science、cross-domain/evaluation
 
 ## 阅读内容与边界
 

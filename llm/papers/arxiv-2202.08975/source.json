@@ -27,6 +27,6 @@
   "evidence_paths": [],
   "topic_paths": [
     "llm/pretraining",
-    "cross-domain/interpretability"
+    "cross-domain/model-science"
   ]
 }

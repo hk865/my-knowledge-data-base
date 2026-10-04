@@ -11,4 +11,4 @@
 ## 身份信息
 
 - 稳定标识：arxiv:2311.13508 · [全文 PDF](https://arxiv.org/pdf/2311.13508)
-- 方向：llm/architecture、cross-domain/interpretability
+- 方向：llm/architecture、cross-domain/model-science

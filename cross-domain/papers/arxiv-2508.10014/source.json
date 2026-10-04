@@ -26,7 +26,7 @@
   "legacy_paths": [],
   "evidence_paths": [],
   "topic_paths": [
-    "cross-domain/interpretability",
+    "cross-domain/model-science",
     "cross-domain/evaluation"
   ]
 }

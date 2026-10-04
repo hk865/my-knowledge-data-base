@@ -20,7 +20,7 @@
 
 关联判断：理解注意力与后续缓存、结构改动的共同起点；本文不直接解决 KV cache 压缩。阅读状态：摘要与元数据已核验，全文精读待做；你的阅读状态待确认。
 
-### Training Compute Optimal Large Language Models
+### Training Compute-Optimal Large Language Models
 
 原题 Training Compute-Optimal Large Language Models · 2022年 · [原文](https://arxiv.org/abs/2203.15556) · 去重键 arXiv:2203.15556
 

@@ -7,7 +7,7 @@
 - [官方原文页面](https://arxiv.org/abs/2005.14165)
 - [官方全文入口](https://arxiv.org/pdf/2005.14165v4)
 - 阅读版本：v4
-- 方向：cross-domain/agents、cross-domain/interpretability、llm/architecture、llm/pretraining
+- 方向：cross-domain/agents、cross-domain/model-science、llm/architecture、llm/pretraining
 
 ## 阅读内容与边界
 

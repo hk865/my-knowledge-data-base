@@ -27,7 +27,7 @@
   "evidence_paths": [],
   "topic_paths": [
     "llm/inference",
-    "cross-domain/interpretability",
+    "cross-domain/model-science",
     "cross-domain/evaluation"
   ]
 }

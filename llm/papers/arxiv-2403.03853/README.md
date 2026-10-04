@@ -7,7 +7,7 @@
 - [官方原文页面](https://arxiv.org/abs/2403.03853)
 - [官方全文入口](https://arxiv.org/pdf/2403.03853)
 - 阅读版本：未固定版本；请核对官方版本记录
-- 方向：llm/architecture、cross-domain/interpretability
+- 方向：llm/architecture、cross-domain/model-science
 
 ## 阅读内容与边界
 

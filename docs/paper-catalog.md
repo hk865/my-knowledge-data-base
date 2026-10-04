@@ -83,7 +83,7 @@
 
 - 标识：arxiv:2412.19437
 - 原文 / 官方入口：https://arxiv.org/abs/2412.19437
-- 主题：llm/posttraining/sft, llm/pretraining, llm/architecture, llm/posttraining/rl
+- 主题：llm/posttraining/sft, llm/pretraining, llm/architecture, llm/posttraining/rl, llm/inference
 - 来源：assistant-provided-exact-link
 - 身份核验：verified_primary_title_and_identifier
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
@@ -119,7 +119,7 @@
 
 - 标识：arxiv:2402.00838
 - 原文 / 官方入口：https://arxiv.org/abs/2402.00838
-- 主题：llm/pretraining, cross-domain/interpretability
+- 主题：llm/pretraining, cross-domain/model-science
 - 来源：assistant-provided-exact-link
 - 身份核验：verified_primary_title_and_identifier
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
@@ -263,7 +263,7 @@
 
 - 标识：arxiv:2403.03853
 - 原文 / 官方入口：https://arxiv.org/abs/2403.03853
-- 主题：llm/architecture, cross-domain/interpretability
+- 主题：llm/architecture, cross-domain/model-science
 - 来源：assistant-provided-exact-link
 - 身份核验：verified_primary_title_and_identifier
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
@@ -299,7 +299,7 @@
 
 - 标识：arxiv:2209.11895
 - 原文 / 官方入口：https://arxiv.org/abs/2209.11895
-- 主题：cross-domain/interpretability
+- 主题：cross-domain/model-science
 - 来源：assistant-provided-exact-link
 - 身份核验：verified_primary_title_and_identifier
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
@@ -311,7 +311,7 @@
 
 - 标识：arxiv:2012.14913
 - 原文 / 官方入口：https://arxiv.org/abs/2012.14913
-- 主题：cross-domain/interpretability
+- 主题：cross-domain/model-science
 - 来源：assistant-provided-exact-link
 - 身份核验：verified_primary_title_and_identifier
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
@@ -323,7 +323,7 @@
 
 - 标识：arxiv:2202.05262
 - 原文 / 官方入口：https://arxiv.org/abs/2202.05262
-- 主题：cross-domain/interpretability
+- 主题：cross-domain/model-science
 - 来源：assistant-provided-exact-link
 - 身份核验：verified_primary_title_and_identifier
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
@@ -335,7 +335,7 @@
 
 - 标识：arxiv:2311.13508
 - 原文 / 官方入口：https://arxiv.org/abs/2311.13508
-- 主题：llm/architecture, cross-domain/interpretability
+- 主题：llm/architecture, cross-domain/model-science
 - 来源：assistant-provided-exact-link
 - 身份核验：verified_primary_title_and_identifier
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
@@ -347,7 +347,7 @@
 
 - 标识：arxiv:2202.08975
 - 原文 / 官方入口：https://arxiv.org/abs/2202.08975
-- 主题：llm/pretraining, cross-domain/interpretability
+- 主题：llm/pretraining, cross-domain/model-science
 - 来源：assistant-provided-exact-link
 - 身份核验：verified_primary_title_and_identifier
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
@@ -359,7 +359,7 @@
 
 - 标识：arxiv:2312.05092
 - 原文 / 官方入口：https://arxiv.org/abs/2312.05092
-- 主题：cross-domain/interpretability, cross-domain/evaluation
+- 主题：cross-domain/model-science, cross-domain/evaluation
 - 来源：assistant-provided-exact-link
 - 身份核验：verified_primary_title_and_identifier
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
@@ -371,7 +371,7 @@
 
 - 标识：arxiv:2510.01171
 - 原文 / 官方入口：https://arxiv.org/abs/2510.01171
-- 主题：llm/inference, cross-domain/interpretability
+- 主题：llm/inference, cross-domain/model-science
 - 来源：assistant-provided-exact-link
 - 身份核验：verified_primary_title_and_identifier
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
@@ -383,7 +383,7 @@
 
 - 标识：arxiv:2508.10014
 - 原文 / 官方入口：https://arxiv.org/abs/2508.10014
-- 主题：cross-domain/interpretability, cross-domain/evaluation
+- 主题：cross-domain/model-science, cross-domain/evaluation
 - 来源：assistant-provided-exact-link
 - 身份核验：verified_primary_title_and_identifier
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
@@ -395,7 +395,7 @@
 
 - 标识：arxiv:2407.04622
 - 原文 / 官方入口：https://arxiv.org/abs/2407.04622
-- 主题：cross-domain/interpretability, cross-domain/evaluation
+- 主题：cross-domain/model-science, cross-domain/evaluation
 - 来源：assistant-provided-exact-link
 - 身份核验：verified_primary_title_and_identifier
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
@@ -407,7 +407,7 @@
 
 - 标识：arxiv:2405.15793
 - 原文 / 官方入口：https://arxiv.org/abs/2405.15793
-- 主题：llm/inference, cross-domain/agents, cross-domain/interpretability, cross-domain/evaluation
+- 主题：llm/inference, cross-domain/agents, cross-domain/model-science, cross-domain/evaluation
 - 来源：assistant-provided-exact-link
 - 身份核验：verified_primary_title_and_identifier
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
@@ -431,7 +431,7 @@
 
 - 标识：url:https://aclanthology.org/2024.findings-emnlp.882/
 - 原文 / 官方入口：https://aclanthology.org/2024.findings-emnlp.882/
-- 主题：llm/inference, cross-domain/interpretability, cross-domain/evaluation
+- 主题：llm/inference, cross-domain/model-science, cross-domain/evaluation
 - 来源：assistant-provided-exact-link
 - 身份核验：verified_primary_title_and_identifier
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
@@ -443,7 +443,7 @@
 
 - 标识：url:https://aclanthology.org/2025.emnlp-main.504/
 - 原文 / 官方入口：https://aclanthology.org/2025.emnlp-main.504/
-- 主题：llm/inference, cross-domain/interpretability, cross-domain/evaluation
+- 主题：llm/inference, cross-domain/model-science, cross-domain/evaluation
 - 来源：assistant-provided-exact-link
 - 身份核验：verified_primary_title_and_identifier
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
@@ -455,7 +455,7 @@
 
 - 标识：url:https://aclanthology.org/2025.findings-acl.537/
 - 原文 / 官方入口：https://aclanthology.org/2025.findings-acl.537/
-- 主题：llm/inference, cross-domain/interpretability, cross-domain/evaluation
+- 主题：llm/inference, cross-domain/model-science, cross-domain/evaluation
 - 来源：assistant-provided-exact-link
 - 身份核验：verified_primary_title_and_identifier
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
@@ -1363,11 +1363,11 @@
 - [独立讲解](../llm/papers/transformer/reading.md)
 
 <a id="p114"></a>
-## p114 · Training Compute Optimal Large Language Models
+## p114 · Training Compute-Optimal Large Language Models
 
 - 标识：arxiv:2203.15556
 - 原文 / 官方入口：https://arxiv.org/abs/2203.15556
-- 主题：cross-domain/interpretability
+- 主题：cross-domain/training-science
 - 来源：previous-starter
 - 身份核验：verified_starter_metadata
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
@@ -1415,7 +1415,7 @@
 
 - 标识：arxiv:2306.05685
 - 原文 / 官方入口：https://arxiv.org/abs/2306.05685
-- 主题：cross-domain/evaluation, cross-domain/interpretability, llm/posttraining/preferences
+- 主题：cross-domain/evaluation, cross-domain/model-science, llm/posttraining/preferences
 - 来源：new-baseline-selection
 - 身份核验：full_text_reading_and_evidence_audit
 - 助手教学 / 阅读进度：existing_technical_reading
@@ -1523,7 +1523,7 @@
 
 - 标识：arxiv:2005.14165
 - 原文 / 官方入口：https://arxiv.org/abs/2005.14165
-- 主题：cross-domain/agents, cross-domain/interpretability, llm/architecture, llm/pretraining
+- 主题：cross-domain/agents, cross-domain/model-science, llm/architecture, llm/pretraining
 - 来源：new-baseline-selection
 - 身份核验：full_text_reading_and_evidence_audit
 - 助手教学 / 阅读进度：existing_technical_reading
@@ -1986,7 +1986,7 @@
 
 - 标识：arxiv:2304.14767
 - 原文 / 官方入口：https://arxiv.org/abs/2304.14767
-- 主题：cross-domain/interpretability
+- 主题：cross-domain/model-science
 - 来源：style-guide-relation-page-node
 - 身份核验：selected_sections_checked
 - 助手教学 / 阅读进度：文献卡，核对了方法相关章节

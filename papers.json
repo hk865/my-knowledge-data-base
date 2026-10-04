@@ -47,8 +47,12 @@
     "evaluation_tags": [],
     "catalog_anchor": "p001",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
     "baseline_selection": {
       "date": "2026-09-30",
       "role": "experimental_baseline_and_budget_framework",
@@ -154,8 +158,12 @@
     "evaluation_tags": [],
     "catalog_anchor": "p002",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
     "canonical_folder": "llm/papers/arxiv-2502.18080",
     "canonical_path": "llm/papers/arxiv-2502.18080/README.md",
     "canonical_readme": "llm/papers/arxiv-2502.18080/README.md",
@@ -211,8 +219,12 @@
     "evaluation_tags": [],
     "catalog_anchor": "p003",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
     "canonical_folder": "llm/papers/arxiv-2501.19393",
     "canonical_path": "llm/papers/arxiv-2501.19393/README.md",
     "canonical_readme": "llm/papers/arxiv-2501.19393/README.md",
@@ -267,8 +279,13 @@
     "evaluation_tags": [],
     "catalog_anchor": "p004",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "generation"
+    ],
     "canonical_folder": "llm/papers/arxiv-2407.21787",
     "canonical_path": "llm/papers/arxiv-2407.21787/README.md",
     "canonical_readme": "llm/papers/arxiv-2407.21787/README.md",
@@ -329,8 +346,12 @@
     "evaluation_tags": [],
     "catalog_anchor": "p005",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
     "canonical_folder": "llm/papers/arxiv-2407.10671",
     "canonical_path": "llm/papers/arxiv-2407.10671/README.md",
     "canonical_readme": "llm/papers/arxiv-2407.10671/README.md",
@@ -389,8 +410,12 @@
     "evaluation_tags": [],
     "catalog_anchor": "p006",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
     "canonical_folder": "llm/papers/arxiv-2412.15115",
     "canonical_path": "llm/papers/arxiv-2412.15115/README.md",
     "canonical_readme": "llm/papers/arxiv-2412.15115/README.md",
@@ -461,8 +486,12 @@
     "evaluation_tags": [],
     "catalog_anchor": "p007",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
     "canonical_folder": "llm/papers/arxiv-2412.19437",
     "canonical_path": "llm/papers/arxiv-2412.19437/README.md",
     "canonical_readme": "llm/papers/arxiv-2412.19437/README.md",
@@ -560,8 +589,12 @@
       "user_reading_status": "待确认"
     },
     "user_reading_status": "待确认",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
     "assistant_reading_status": "existing_technical_reading",
     "legacy_reading_status": "已完成报告v1全文机制与证据分析；未独立复现；用户阅读状态待确认",
     "canonical_folder": "llm/papers/qwen2.5-1m",
@@ -621,8 +654,13 @@
     "evaluation_tags": [],
     "catalog_anchor": "p009",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text",
+      "audio"
+    ],
+    "task_tags": [
+      "generation"
+    ],
     "baseline_selection": {
       "date": "2026-09-30",
       "role": "method_and_architecture_baseline",
@@ -686,7 +724,7 @@
     "year": "2024",
     "topic_paths": [
       "llm/pretraining",
-      "cross-domain/interpretability"
+      "cross-domain/model-science"
     ],
     "detail_topics": [
       "pretraining/open pipeline",
@@ -721,8 +759,13 @@
     "evaluation_tags": [],
     "catalog_anchor": "p010",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation",
+      "analysis"
+    ],
     "canonical_folder": "llm/papers/arxiv-2402.00838",
     "canonical_path": "llm/papers/arxiv-2402.00838/README.md",
     "canonical_readme": "llm/papers/arxiv-2402.00838/README.md",
@@ -791,8 +834,12 @@
     "evaluation_tags": [],
     "catalog_anchor": "p011",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
     "canonical_folder": "llm/papers/arxiv-2501.12948",
     "canonical_path": "llm/papers/arxiv-2501.12948/README.md",
     "canonical_readme": "llm/papers/arxiv-2501.12948/README.md",
@@ -846,8 +893,12 @@
     "evaluation_tags": [],
     "catalog_anchor": "p012",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
     "canonical_folder": "llm/papers/arxiv-2101.03961",
     "canonical_path": "llm/papers/arxiv-2101.03961/README.md",
     "canonical_readme": "llm/papers/arxiv-2101.03961/README.md",
@@ -901,8 +952,12 @@
     "evaluation_tags": [],
     "catalog_anchor": "p013",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
     "canonical_folder": "llm/papers/arxiv-2401.06066",
     "canonical_path": "llm/papers/arxiv-2401.06066/README.md",
     "canonical_readme": "llm/papers/arxiv-2401.06066/README.md",
@@ -969,8 +1024,12 @@
     "evaluation_tags": [],
     "catalog_anchor": "p014",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
     "baseline_selection": {
       "date": "2026-09-30",
       "role": "representative_system_and_experimental_baseline",
@@ -1068,8 +1127,12 @@
     "evaluation_tags": [],
     "catalog_anchor": "p015",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
     "canonical_folder": "llm/papers/arxiv-2601.07372",
     "canonical_path": "llm/papers/arxiv-2601.07372/README.md",
     "canonical_readme": "llm/papers/arxiv-2601.07372/README.md",
@@ -1122,8 +1185,12 @@
     "evaluation_tags": [],
     "catalog_anchor": "p016",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
     "canonical_folder": "llm/papers/arxiv-2607.29065",
     "canonical_path": "llm/papers/arxiv-2607.29065/README.md",
     "canonical_readme": "llm/papers/arxiv-2607.29065/README.md",
@@ -1178,8 +1245,12 @@
     "evaluation_tags": [],
     "catalog_anchor": "p017",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
     "canonical_folder": "llm/papers/arxiv-2608.17050",
     "canonical_path": "llm/papers/arxiv-2608.17050/README.md",
     "canonical_readme": "llm/papers/arxiv-2608.17050/README.md",
@@ -1235,8 +1306,12 @@
     "evaluation_tags": [],
     "catalog_anchor": "p018",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
     "canonical_folder": "llm/papers/arxiv-2412.09078",
     "canonical_path": "llm/papers/arxiv-2412.09078/README.md",
     "canonical_readme": "llm/papers/arxiv-2412.09078/README.md",
@@ -1294,8 +1369,12 @@
     "evaluation_tags": [],
     "catalog_anchor": "p019",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
     "canonical_folder": "llm/papers/arxiv-2407.18219",
     "canonical_path": "llm/papers/arxiv-2407.18219/README.md",
     "canonical_readme": "llm/papers/arxiv-2407.18219/README.md",
@@ -1349,8 +1428,12 @@
     "evaluation_tags": [],
     "catalog_anchor": "p020",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
     "canonical_folder": "llm/papers/arxiv-2002.10957",
     "canonical_path": "llm/papers/arxiv-2002.10957/README.md",
     "canonical_readme": "llm/papers/arxiv-2002.10957/README.md",
@@ -1405,8 +1488,12 @@
     "evaluation_tags": [],
     "catalog_anchor": "p021",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
     "canonical_folder": "llm/papers/arxiv-1910.01108",
     "canonical_path": "llm/papers/arxiv-1910.01108/README.md",
     "canonical_readme": "llm/papers/arxiv-1910.01108/README.md",
@@ -1426,7 +1513,7 @@
     "year": "2024",
     "topic_paths": [
       "llm/architecture",
-      "cross-domain/interpretability"
+      "cross-domain/model-science"
     ],
     "detail_topics": [
       "architecture/compression/layer pruning",
@@ -1460,8 +1547,13 @@
     "evaluation_tags": [],
     "catalog_anchor": "p022",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation",
+      "analysis"
+    ],
     "canonical_folder": "llm/papers/arxiv-2403.03853",
     "canonical_path": "llm/papers/arxiv-2403.03853/README.md",
     "canonical_readme": "llm/papers/arxiv-2403.03853/README.md",
@@ -1517,8 +1609,13 @@
     "evaluation_tags": [],
     "catalog_anchor": "p023",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "generation"
+    ],
     "canonical_folder": "llm/papers/arxiv-2403.13271",
     "canonical_path": "llm/papers/arxiv-2403.13271/README.md",
     "canonical_readme": "llm/papers/arxiv-2403.13271/README.md",
@@ -1574,8 +1671,13 @@
     "evaluation_tags": [],
     "catalog_anchor": "p024",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
     "canonical_folder": "llm/papers/arxiv-2009.08366",
     "canonical_path": "llm/papers/arxiv-2009.08366/README.md",
     "canonical_readme": "llm/papers/arxiv-2009.08366/README.md",
@@ -1594,7 +1696,7 @@
     "doi": null,
     "year": "2022",
     "topic_paths": [
-      "cross-domain/interpretability"
+      "cross-domain/model-science"
     ],
     "detail_topics": [
       "model science/mechanistic interpretability",
@@ -1628,8 +1730,12 @@
     ],
     "catalog_anchor": "p025",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
     "canonical_folder": "cross-domain/papers/arxiv-2209.11895",
     "canonical_path": "cross-domain/papers/arxiv-2209.11895/README.md",
     "canonical_readme": "cross-domain/papers/arxiv-2209.11895/README.md",
@@ -1648,7 +1754,7 @@
     "doi": null,
     "year": "2020",
     "topic_paths": [
-      "cross-domain/interpretability"
+      "cross-domain/model-science"
     ],
     "detail_topics": [
       "model science/FFN",
@@ -1682,8 +1788,12 @@
     ],
     "catalog_anchor": "p026",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
     "canonical_folder": "cross-domain/papers/arxiv-2012.14913",
     "canonical_path": "cross-domain/papers/arxiv-2012.14913/README.md",
     "canonical_readme": "cross-domain/papers/arxiv-2012.14913/README.md",
@@ -1702,7 +1812,7 @@
     "doi": null,
     "year": "2022",
     "topic_paths": [
-      "cross-domain/interpretability"
+      "cross-domain/model-science"
     ],
     "detail_topics": [
       "model science/causal tracing",
@@ -1738,8 +1848,12 @@
     ],
     "catalog_anchor": "p027",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
     "canonical_folder": "cross-domain/papers/arxiv-2202.05262",
     "canonical_path": "cross-domain/papers/arxiv-2202.05262/README.md",
     "canonical_readme": "cross-domain/papers/arxiv-2202.05262/README.md",
@@ -1759,7 +1873,7 @@
     "year": "2023",
     "topic_paths": [
       "llm/architecture",
-      "cross-domain/interpretability"
+      "cross-domain/model-science"
     ],
     "detail_topics": [
       "model science/code attention"
@@ -1792,8 +1906,12 @@
     ],
     "catalog_anchor": "p028",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "code"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
     "canonical_folder": "llm/papers/arxiv-2311.13508",
     "canonical_path": "llm/papers/arxiv-2311.13508/README.md",
     "canonical_readme": "llm/papers/arxiv-2311.13508/README.md",
@@ -1813,7 +1931,7 @@
     "year": "2022",
     "topic_paths": [
       "llm/pretraining",
-      "cross-domain/interpretability"
+      "cross-domain/model-science"
     ],
     "detail_topics": [
       "model science/code probing"
@@ -1846,8 +1964,12 @@
     ],
     "catalog_anchor": "p029",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "code"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
     "canonical_folder": "llm/papers/arxiv-2202.08975",
     "canonical_path": "llm/papers/arxiv-2202.08975/README.md",
     "canonical_readme": "llm/papers/arxiv-2202.08975/README.md",
@@ -1866,7 +1988,7 @@
     "doi": null,
     "year": "2023",
     "topic_paths": [
-      "cross-domain/interpretability",
+      "cross-domain/model-science",
       "cross-domain/evaluation"
     ],
     "detail_topics": [
@@ -1900,8 +2022,13 @@
     ],
     "catalog_anchor": "p030",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "code"
+    ],
+    "task_tags": [
+      "evaluation",
+      "analysis"
+    ],
     "canonical_folder": "cross-domain/papers/arxiv-2312.05092",
     "canonical_path": "cross-domain/papers/arxiv-2312.05092/README.md",
     "canonical_readme": "cross-domain/papers/arxiv-2312.05092/README.md",
@@ -1921,7 +2048,7 @@
     "year": "2025",
     "topic_paths": [
       "llm/inference",
-      "cross-domain/interpretability"
+      "cross-domain/model-science"
     ],
     "detail_topics": [
       "inference/sampling",
@@ -1955,8 +2082,13 @@
     "evaluation_tags": [],
     "catalog_anchor": "p031",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation",
+      "analysis"
+    ],
     "canonical_folder": "llm/papers/arxiv-2510.01171",
     "canonical_path": "llm/papers/arxiv-2510.01171/README.md",
     "canonical_readme": "llm/papers/arxiv-2510.01171/README.md",
@@ -1975,7 +2107,7 @@
     "doi": null,
     "year": "2025",
     "topic_paths": [
-      "cross-domain/interpretability",
+      "cross-domain/model-science",
       "cross-domain/evaluation"
     ],
     "detail_topics": [
@@ -2010,8 +2142,12 @@
     ],
     "catalog_anchor": "p032",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "evaluation"
+    ],
     "canonical_folder": "cross-domain/papers/arxiv-2508.10014",
     "canonical_path": "cross-domain/papers/arxiv-2508.10014/README.md",
     "canonical_readme": "cross-domain/papers/arxiv-2508.10014/README.md",
@@ -2030,7 +2166,7 @@
     "doi": null,
     "year": "2024",
     "topic_paths": [
-      "cross-domain/interpretability",
+      "cross-domain/model-science",
       "cross-domain/evaluation"
     ],
     "detail_topics": [
@@ -2066,8 +2202,12 @@
     ],
     "catalog_anchor": "p033",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "evaluation"
+    ],
     "canonical_folder": "cross-domain/papers/arxiv-2407.04622",
     "canonical_path": "cross-domain/papers/arxiv-2407.04622/README.md",
     "canonical_readme": "cross-domain/papers/arxiv-2407.04622/README.md",
@@ -2088,7 +2228,7 @@
     "topic_paths": [
       "llm/inference",
       "cross-domain/agents",
-      "cross-domain/interpretability",
+      "cross-domain/model-science",
       "cross-domain/evaluation"
     ],
     "detail_topics": [
@@ -2124,8 +2264,14 @@
     "evaluation_tags": [],
     "catalog_anchor": "p034",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "generation",
+      "decision"
+    ],
     "canonical_folder": "llm/papers/arxiv-2405.15793",
     "canonical_path": "llm/papers/arxiv-2405.15793/README.md",
     "canonical_readme": "llm/papers/arxiv-2405.15793/README.md",
@@ -2179,8 +2325,13 @@
     "evaluation_tags": [],
     "catalog_anchor": "p035",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation",
+      "analysis"
+    ],
     "canonical_folder": "llm/papers/url-https-proceedings.mlr.press-v267-chen25bx.html",
     "canonical_path": "llm/papers/url-https-proceedings.mlr.press-v267-chen25bx.html/README.md",
     "canonical_readme": "llm/papers/url-https-proceedings.mlr.press-v267-chen25bx.html/README.md",
@@ -2200,7 +2351,7 @@
     "year": null,
     "topic_paths": [
       "llm/inference",
-      "cross-domain/interpretability",
+      "cross-domain/model-science",
       "cross-domain/evaluation"
     ],
     "detail_topics": [
@@ -2235,8 +2386,13 @@
     ],
     "catalog_anchor": "p036",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation",
+      "analysis"
+    ],
     "canonical_folder": "llm/papers/url-https-aclanthology.org-2024.findings-emnlp.882",
     "canonical_path": "llm/papers/url-https-aclanthology.org-2024.findings-emnlp.882/README.md",
     "canonical_readme": "llm/papers/url-https-aclanthology.org-2024.findings-emnlp.882/README.md",
@@ -2256,7 +2412,7 @@
     "year": null,
     "topic_paths": [
       "llm/inference",
-      "cross-domain/interpretability",
+      "cross-domain/model-science",
       "cross-domain/evaluation"
     ],
     "detail_topics": [
@@ -2290,8 +2446,12 @@
     ],
     "catalog_anchor": "p037",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
     "canonical_folder": "llm/papers/url-https-aclanthology.org-2025.emnlp-main.504",
     "canonical_path": "llm/papers/url-https-aclanthology.org-2025.emnlp-main.504/README.md",
     "canonical_readme": "llm/papers/url-https-aclanthology.org-2025.emnlp-main.504/README.md",
@@ -2311,7 +2471,7 @@
     "year": null,
     "topic_paths": [
       "llm/inference",
-      "cross-domain/interpretability",
+      "cross-domain/model-science",
       "cross-domain/evaluation"
     ],
     "detail_topics": [
@@ -2345,8 +2505,12 @@
     ],
     "catalog_anchor": "p038",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "evaluation"
+    ],
     "canonical_folder": "llm/papers/url-https-aclanthology.org-2025.findings-acl.537",
     "canonical_path": "llm/papers/url-https-aclanthology.org-2025.findings-acl.537/README.md",
     "canonical_readme": "llm/papers/url-https-aclanthology.org-2025.findings-acl.537/README.md",
@@ -2401,8 +2565,12 @@
     "evaluation_tags": [],
     "catalog_anchor": "p039",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
     "canonical_folder": "llm/papers/arxiv-2402.03620",
     "canonical_path": "llm/papers/arxiv-2402.03620/README.md",
     "canonical_readme": "llm/papers/arxiv-2402.03620/README.md",
@@ -2459,8 +2627,13 @@
     "evaluation_tags": [],
     "catalog_anchor": "p040",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation",
+      "decision"
+    ],
     "baseline_selection": {
       "date": "2026-09-30",
       "role": "method_and_experimental_baseline",
@@ -2572,8 +2745,13 @@
     "evaluation_tags": [],
     "catalog_anchor": "p041",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "canonical_folder": "llm/papers/arxiv-2305.16291",
     "canonical_path": "llm/papers/arxiv-2305.16291/README.md",
     "canonical_readme": "llm/papers/arxiv-2305.16291/README.md",
@@ -2631,8 +2809,13 @@
     "evaluation_tags": [],
     "catalog_anchor": "p042",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "video"
+    ],
+    "task_tags": [
+      "understanding",
+      "generation"
+    ],
     "canonical_folder": "multimodal/papers/arxiv-2210.05861",
     "canonical_path": "multimodal/papers/arxiv-2210.05861/README.md",
     "canonical_readme": "multimodal/papers/arxiv-2210.05861/README.md",
@@ -2692,8 +2875,12 @@
     "evaluation_tags": [],
     "catalog_anchor": "p043",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "video"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
     "canonical_folder": "multimodal/papers/arxiv-2206.07764",
     "canonical_path": "multimodal/papers/arxiv-2206.07764/README.md",
     "canonical_readme": "multimodal/papers/arxiv-2206.07764/README.md",
@@ -2753,8 +2940,14 @@
     "evaluation_tags": [],
     "catalog_anchor": "p044",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "video",
+      "action"
+    ],
+    "task_tags": [
+      "generation",
+      "decision"
+    ],
     "canonical_folder": "multimodal/papers/arxiv-2311.16038",
     "canonical_path": "multimodal/papers/arxiv-2311.16038/README.md",
     "canonical_readme": "multimodal/papers/arxiv-2311.16038/README.md",
@@ -2815,8 +3008,14 @@
     "evaluation_tags": [],
     "catalog_anchor": "p045",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "video",
+      "action"
+    ],
+    "task_tags": [
+      "generation",
+      "decision"
+    ],
     "canonical_folder": "multimodal/papers/arxiv-2408.14197",
     "canonical_path": "multimodal/papers/arxiv-2408.14197/README.md",
     "canonical_readme": "multimodal/papers/arxiv-2408.14197/README.md",
@@ -2884,8 +3083,14 @@
     "evaluation_tags": [],
     "catalog_anchor": "p046",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "image",
+      "action"
+    ],
+    "task_tags": [
+      "generation",
+      "decision"
+    ],
     "note": null,
     "verification": [
       {
@@ -2963,8 +3168,14 @@
     "evaluation_tags": [],
     "catalog_anchor": "p047",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "video",
+      "action"
+    ],
+    "task_tags": [
+      "generation",
+      "decision"
+    ],
     "canonical_folder": "multimodal/papers/arxiv-2507.19468",
     "canonical_path": "multimodal/papers/arxiv-2507.19468/README.md",
     "canonical_readme": "multimodal/papers/arxiv-2507.19468/README.md",
@@ -3024,8 +3235,14 @@
     "evaluation_tags": [],
     "catalog_anchor": "p048",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "image",
+      "action"
+    ],
+    "task_tags": [
+      "understanding",
+      "decision"
+    ],
     "canonical_folder": "multimodal/papers/arxiv-2307.02427",
     "canonical_path": "multimodal/papers/arxiv-2307.02427/README.md",
     "canonical_readme": "multimodal/papers/arxiv-2307.02427/README.md",
@@ -3095,8 +3312,14 @@
     "evaluation_tags": [],
     "catalog_anchor": "p049",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "image",
+      "action"
+    ],
+    "task_tags": [
+      "generation",
+      "decision"
+    ],
     "note": null,
     "verification": [
       {
@@ -3176,8 +3399,13 @@
     "evaluation_tags": [],
     "catalog_anchor": "p050",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "video",
+      "action"
+    ],
+    "task_tags": [
+      "generation"
+    ],
     "canonical_folder": "multimodal/papers/arxiv-2607.04546",
     "canonical_path": "multimodal/papers/arxiv-2607.04546/README.md",
     "canonical_readme": "multimodal/papers/arxiv-2607.04546/README.md",
@@ -3233,8 +3461,14 @@
     "evaluation_tags": [],
     "catalog_anchor": "p051",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "video",
+      "action"
+    ],
+    "task_tags": [
+      "generation",
+      "decision"
+    ],
     "canonical_folder": "multimodal/papers/arxiv-2501.11260",
     "canonical_path": "multimodal/papers/arxiv-2501.11260/README.md",
     "canonical_readme": "multimodal/papers/arxiv-2501.11260/README.md",
@@ -3301,8 +3535,16 @@
     "evaluation_tags": [],
     "catalog_anchor": "p052",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "multimodal"
+    ],
+    "task_tags": [
+      "generation",
+      "decision"
+    ],
     "note": null,
     "verification": [
       {
@@ -3388,8 +3630,14 @@
     "evaluation_tags": [],
     "catalog_anchor": "p053",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "video",
+      "action"
+    ],
+    "task_tags": [
+      "generation",
+      "decision"
+    ],
     "note": null,
     "verification": [
       {
@@ -3477,8 +3725,14 @@
     "evaluation_tags": [],
     "catalog_anchor": "p054",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "image",
+      "action"
+    ],
+    "task_tags": [
+      "understanding",
+      "decision"
+    ],
     "note": null,
     "verification": [
       {
@@ -3565,8 +3819,16 @@
     "evaluation_tags": [],
     "catalog_anchor": "p055",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding",
+      "decision"
+    ],
     "note": null,
     "verification": [
       {
@@ -3652,8 +3914,13 @@
     "evaluation_tags": [],
     "catalog_anchor": "p056",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "video",
+      "action"
+    ],
+    "task_tags": [
+      "generation"
+    ],
     "note": null,
     "verification": [
       {
@@ -3738,8 +4005,14 @@
     "evaluation_tags": [],
     "catalog_anchor": "p057",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "video",
+      "action"
+    ],
+    "task_tags": [
+      "generation",
+      "decision"
+    ],
     "note": null,
     "verification": [
       {
@@ -3826,8 +4099,16 @@
     "evaluation_tags": [],
     "catalog_anchor": "p058",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text",
+      "image",
+      "video",
+      "action",
+      "multimodal"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "note": null,
     "verification": [
       {
@@ -3914,8 +4195,13 @@
     ],
     "catalog_anchor": "p059",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "video",
+      "action"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
     "note": null,
     "verification": [
       {
@@ -4001,8 +4287,14 @@
     ],
     "catalog_anchor": "p060",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "image",
+      "video",
+      "action"
+    ],
+    "task_tags": [
+      "evaluation"
+    ],
     "note": null,
     "verification": [
       {
@@ -4090,8 +4382,14 @@
     "evaluation_tags": [],
     "catalog_anchor": "p061",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "video",
+      "action"
+    ],
+    "task_tags": [
+      "generation",
+      "decision"
+    ],
     "note": "robotics-embodied/papers/2026/zero-wam.md",
     "verification": [
       {
@@ -4186,8 +4484,14 @@
     "evaluation_tags": [],
     "catalog_anchor": "p062",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "video",
+      "action"
+    ],
+    "task_tags": [
+      "understanding",
+      "decision"
+    ],
     "note": null,
     "verification": [
       {
@@ -4260,8 +4564,14 @@
     "evaluation_tags": [],
     "catalog_anchor": "p063",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "video",
+      "action"
+    ],
+    "task_tags": [
+      "generation",
+      "decision"
+    ],
     "canonical_folder": "multimodal/papers/doi-10.1002-smb2.70053",
     "canonical_path": "multimodal/papers/doi-10.1002-smb2.70053/README.md",
     "canonical_readme": "multimodal/papers/doi-10.1002-smb2.70053/README.md",
@@ -4324,8 +4634,15 @@
     "evaluation_tags": [],
     "catalog_anchor": "p064",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "multimodal"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "note": null,
     "verification": [
       "existing-local-baseline-entry; not-reverified-this-pass"
@@ -4400,8 +4717,15 @@
     "evaluation_tags": [],
     "catalog_anchor": "p065",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "multimodal"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "note": null,
     "verification": [
       "existing-local-baseline-entry; not-reverified-this-pass"
@@ -4474,8 +4798,15 @@
     "evaluation_tags": [],
     "catalog_anchor": "p066",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "multimodal"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "note": null,
     "verification": [
       "existing-local-baseline-entry; not-reverified-this-pass"
@@ -4549,8 +4880,14 @@
     "evaluation_tags": [],
     "catalog_anchor": "p067",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "image",
+      "action",
+      "state"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "baseline_selection": {
       "date": "2026-09-30",
       "role": "method_and_experimental_baseline",
@@ -4678,8 +5015,15 @@
     "evaluation_tags": [],
     "catalog_anchor": "p068",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "multimodal"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "note": null,
     "verification": [
       "existing-local-baseline-entry; not-reverified-this-pass"
@@ -4760,8 +5104,15 @@
     "evaluation_tags": [],
     "catalog_anchor": "p069",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "multimodal"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "baseline_selection": {
       "date": "2026-09-30",
       "role": "open_system_and_experimental_baseline",
@@ -4880,8 +5231,16 @@
     "evaluation_tags": [],
     "catalog_anchor": "p070",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "state",
+      "multimodal"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "note": null,
     "verification": [
       "existing-local-baseline-entry; not-reverified-this-pass"
@@ -4953,8 +5312,15 @@
     "evaluation_tags": [],
     "catalog_anchor": "p071",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "multimodal"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "note": null,
     "verification": [
       "existing-local-baseline-entry; not-reverified-this-pass"
@@ -5027,8 +5393,16 @@
     "evaluation_tags": [],
     "catalog_anchor": "p072",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "state",
+      "multimodal"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "note": null,
     "verification": [
       "existing-local-baseline-entry; not-reverified-this-pass"
@@ -5102,8 +5476,16 @@
     "evaluation_tags": [],
     "catalog_anchor": "p073",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "state",
+      "multimodal"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "note": null,
     "verification": [
       "existing-local-baseline-entry; not-reverified-this-pass"
@@ -5176,8 +5558,16 @@
     "evaluation_tags": [],
     "catalog_anchor": "p074",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "state",
+      "multimodal"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "note": null,
     "verification": [
       "existing-local-baseline-entry; not-reverified-this-pass"
@@ -5251,8 +5641,16 @@
     "evaluation_tags": [],
     "catalog_anchor": "p075",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "state",
+      "multimodal"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "note": null,
     "verification": [
       "existing-local-baseline-entry; not-reverified-this-pass"
@@ -5328,8 +5726,16 @@
     "evaluation_tags": [],
     "catalog_anchor": "p076",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "state",
+      "multimodal"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "note": null,
     "verification": [
       "official-identity-verified-this-pass"
@@ -5401,8 +5807,15 @@
     "evaluation_tags": [],
     "catalog_anchor": "p077",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "multimodal"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "note": null,
     "verification": [
       "official-identity-verified-this-pass"
@@ -5476,8 +5889,15 @@
     "evaluation_tags": [],
     "catalog_anchor": "p078",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text",
+      "video",
+      "action",
+      "multimodal"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "note": null,
     "verification": [
       "official-identity-verified-this-pass"
@@ -5550,8 +5970,16 @@
     "evaluation_tags": [],
     "catalog_anchor": "p079",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "state",
+      "multimodal"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "canonical_folder": "robotics-embodied/papers/arxiv-2505.22159",
     "canonical_path": "robotics-embodied/papers/arxiv-2505.22159/README.md",
     "canonical_readme": "robotics-embodied/papers/arxiv-2505.22159/README.md",
@@ -5613,8 +6041,12 @@
     "evaluation_tags": [],
     "catalog_anchor": "p080",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
     "canonical_folder": "robotics-embodied/papers/arxiv-1609.05130",
     "canonical_path": "robotics-embodied/papers/arxiv-1609.05130/README.md",
     "canonical_readme": "robotics-embodied/papers/arxiv-1609.05130/README.md",
@@ -5676,8 +6108,12 @@
     "evaluation_tags": [],
     "catalog_anchor": "p081",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
     "canonical_folder": "robotics-embodied/papers/arxiv-1903.01177",
     "canonical_path": "robotics-embodied/papers/arxiv-1903.01177/README.md",
     "canonical_readme": "robotics-embodied/papers/arxiv-1903.01177/README.md",
@@ -5737,8 +6173,13 @@
     "evaluation_tags": [],
     "catalog_anchor": "p082",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "image",
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
     "canonical_folder": "robotics-embodied/papers/arxiv-1905.00684",
     "canonical_path": "robotics-embodied/papers/arxiv-1905.00684/README.md",
     "canonical_readme": "robotics-embodied/papers/arxiv-1905.00684/README.md",
@@ -5798,8 +6239,13 @@
     "evaluation_tags": [],
     "catalog_anchor": "p083",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "image",
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
     "canonical_folder": "robotics-embodied/papers/arxiv-2311.04477",
     "canonical_path": "robotics-embodied/papers/arxiv-2311.04477/README.md",
     "canonical_readme": "robotics-embodied/papers/arxiv-2311.04477/README.md",
@@ -5859,8 +6305,13 @@
     "evaluation_tags": [],
     "catalog_anchor": "p084",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "image",
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
     "canonical_folder": "robotics-embodied/papers/arxiv-2205.01980",
     "canonical_path": "robotics-embodied/papers/arxiv-2205.01980/README.md",
     "canonical_readme": "robotics-embodied/papers/arxiv-2205.01980/README.md",
@@ -5920,8 +6371,13 @@
     "evaluation_tags": [],
     "catalog_anchor": "p085",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "image",
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
     "canonical_folder": "robotics-embodied/papers/arxiv-2203.07207",
     "canonical_path": "robotics-embodied/papers/arxiv-2203.07207/README.md",
     "canonical_readme": "robotics-embodied/papers/arxiv-2203.07207/README.md",
@@ -5981,8 +6437,13 @@
     "evaluation_tags": [],
     "catalog_anchor": "p086",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "image",
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
     "canonical_folder": "robotics-embodied/papers/arxiv-2505.06748",
     "canonical_path": "robotics-embodied/papers/arxiv-2505.06748/README.md",
     "canonical_readme": "robotics-embodied/papers/arxiv-2505.06748/README.md",
@@ -6049,8 +6510,14 @@
     "evaluation_tags": [],
     "catalog_anchor": "p087",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "image",
+      "video",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "note": null,
     "verification": [
       {
@@ -6135,8 +6602,14 @@
     "evaluation_tags": [],
     "catalog_anchor": "p088",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "image",
+      "action",
+      "state"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "note": null,
     "verification": [
       {
@@ -6221,8 +6694,14 @@
     "evaluation_tags": [],
     "catalog_anchor": "p089",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "image",
+      "video",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "note": null,
     "verification": [
       {
@@ -6307,8 +6786,17 @@
     "evaluation_tags": [],
     "catalog_anchor": "p090",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding",
+      "generation",
+      "decision"
+    ],
     "note": null,
     "verification": [
       {
@@ -6386,8 +6874,13 @@
     "evaluation_tags": [],
     "catalog_anchor": "p091",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "action",
+      "state"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "canonical_folder": "robotics-embodied/papers/arxiv-2211.00458",
     "canonical_path": "robotics-embodied/papers/arxiv-2211.00458/README.md",
     "canonical_readme": "robotics-embodied/papers/arxiv-2211.00458/README.md",
@@ -6447,8 +6940,13 @@
     "evaluation_tags": [],
     "catalog_anchor": "p092",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "action",
+      "state"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "canonical_folder": "robotics-embodied/papers/arxiv-2305.07300",
     "canonical_path": "robotics-embodied/papers/arxiv-2305.07300/README.md",
     "canonical_readme": "robotics-embodied/papers/arxiv-2305.07300/README.md",
@@ -6508,8 +7006,13 @@
     "evaluation_tags": [],
     "catalog_anchor": "p093",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "action",
+      "state"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "canonical_folder": "robotics-embodied/papers/arxiv-2201.00206",
     "canonical_path": "robotics-embodied/papers/arxiv-2201.00206/README.md",
     "canonical_readme": "robotics-embodied/papers/arxiv-2201.00206/README.md",
@@ -6569,8 +7072,13 @@
     "evaluation_tags": [],
     "catalog_anchor": "p094",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "action",
+      "state"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "canonical_folder": "robotics-embodied/papers/arxiv-2011.01387",
     "canonical_path": "robotics-embodied/papers/arxiv-2011.01387/README.md",
     "canonical_readme": "robotics-embodied/papers/arxiv-2011.01387/README.md",
@@ -6630,8 +7138,13 @@
     "evaluation_tags": [],
     "catalog_anchor": "p095",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "action",
+      "state"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "canonical_folder": "robotics-embodied/papers/arxiv-2404.05695",
     "canonical_path": "robotics-embodied/papers/arxiv-2404.05695/README.md",
     "canonical_readme": "robotics-embodied/papers/arxiv-2404.05695/README.md",
@@ -6691,8 +7204,16 @@
     "evaluation_tags": [],
     "catalog_anchor": "p096",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text",
+      "video",
+      "action",
+      "state",
+      "multimodal"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "canonical_folder": "robotics-embodied/papers/arxiv-2412.14172",
     "canonical_path": "robotics-embodied/papers/arxiv-2412.14172/README.md",
     "canonical_readme": "robotics-embodied/papers/arxiv-2412.14172/README.md",
@@ -6752,8 +7273,13 @@
     "evaluation_tags": [],
     "catalog_anchor": "p097",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "action",
+      "state"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "canonical_folder": "robotics-embodied/papers/arxiv-2506.20487",
     "canonical_path": "robotics-embodied/papers/arxiv-2506.20487/README.md",
     "canonical_readme": "robotics-embodied/papers/arxiv-2506.20487/README.md",
@@ -6813,8 +7339,13 @@
     "evaluation_tags": [],
     "catalog_anchor": "p098",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "action",
+      "state"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "canonical_folder": "robotics-embodied/papers/arxiv-2607.15163",
     "canonical_path": "robotics-embodied/papers/arxiv-2607.15163/README.md",
     "canonical_readme": "robotics-embodied/papers/arxiv-2607.15163/README.md",
@@ -6874,8 +7405,13 @@
     "evaluation_tags": [],
     "catalog_anchor": "p099",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "action",
+      "state"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "canonical_folder": "robotics-embodied/papers/arxiv-2501.02116",
     "canonical_path": "robotics-embodied/papers/arxiv-2501.02116/README.md",
     "canonical_readme": "robotics-embodied/papers/arxiv-2501.02116/README.md",
@@ -6943,8 +7479,14 @@
     "evaluation_tags": [],
     "catalog_anchor": "p100",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "image",
+      "action",
+      "state"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "note": null,
     "verification": [
       {
@@ -7030,8 +7572,14 @@
     "evaluation_tags": [],
     "catalog_anchor": "p101",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "image",
+      "action",
+      "state"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "note": null,
     "verification": [
       {
@@ -7109,8 +7657,13 @@
     "evaluation_tags": [],
     "catalog_anchor": "p102",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "action",
+      "state"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "canonical_folder": "robotics-embodied/papers/arxiv-1804.02717",
     "canonical_path": "robotics-embodied/papers/arxiv-1804.02717/README.md",
     "canonical_readme": "robotics-embodied/papers/arxiv-1804.02717/README.md",
@@ -7170,8 +7723,13 @@
     "evaluation_tags": [],
     "catalog_anchor": "p103",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "action",
+      "state"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "canonical_folder": "robotics-embodied/papers/arxiv-2205.01906",
     "canonical_path": "robotics-embodied/papers/arxiv-2205.01906/README.md",
     "canonical_readme": "robotics-embodied/papers/arxiv-2205.01906/README.md",
@@ -7231,8 +7789,13 @@
     "evaluation_tags": [],
     "catalog_anchor": "p104",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "action",
+      "state"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "canonical_folder": "robotics-embodied/papers/arxiv-2412.13196",
     "canonical_path": "robotics-embodied/papers/arxiv-2412.13196/README.md",
     "canonical_readme": "robotics-embodied/papers/arxiv-2412.13196/README.md",
@@ -7292,8 +7855,14 @@
     "evaluation_tags": [],
     "catalog_anchor": "p105",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "action",
+      "state"
+    ],
+    "task_tags": [
+      "generation",
+      "decision"
+    ],
     "canonical_folder": "robotics-embodied/papers/arxiv-2508.08241",
     "canonical_path": "robotics-embodied/papers/arxiv-2508.08241/README.md",
     "canonical_readme": "robotics-embodied/papers/arxiv-2508.08241/README.md",
@@ -7353,8 +7922,13 @@
     "evaluation_tags": [],
     "catalog_anchor": "p106",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "action",
+      "state"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "canonical_folder": "robotics-embodied/papers/arxiv-2510.02252",
     "canonical_path": "robotics-embodied/papers/arxiv-2510.02252/README.md",
     "canonical_readme": "robotics-embodied/papers/arxiv-2510.02252/README.md",
@@ -7414,8 +7988,14 @@
     "evaluation_tags": [],
     "catalog_anchor": "p107",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "image",
+      "action",
+      "state"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "canonical_folder": "robotics-embodied/papers/arxiv-2408.13740",
     "canonical_path": "robotics-embodied/papers/arxiv-2408.13740/README.md",
     "canonical_readme": "robotics-embodied/papers/arxiv-2408.13740/README.md",
@@ -7476,8 +8056,12 @@
     "evaluation_tags": [],
     "catalog_anchor": "p108",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
     "canonical_folder": "robotics-embodied/papers/doi-10.3390-s18093099",
     "canonical_path": "robotics-embodied/papers/doi-10.3390-s18093099/README.md",
     "canonical_readme": "robotics-embodied/papers/doi-10.3390-s18093099/README.md",
@@ -7539,8 +8123,14 @@
     "evaluation_tags": [],
     "catalog_anchor": "p109",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text",
+      "image",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
     "canonical_folder": "robotics-embodied/papers/url-https-github.com-hkust-aerial-robotics-fm-fusion",
     "canonical_path": "robotics-embodied/papers/url-https-github.com-hkust-aerial-robotics-fm-fusion/README.md",
     "canonical_readme": "robotics-embodied/papers/url-https-github.com-hkust-aerial-robotics-fm-fusion/README.md",
@@ -7599,8 +8189,13 @@
     "evaluation_tags": [],
     "catalog_anchor": "p110",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "action",
+      "state"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "canonical_folder": "robotics-embodied/papers/url-https-proceedings.mlr.press-v205-margolis23a-margolis23a",
     "canonical_path": "robotics-embodied/papers/url-https-proceedings.mlr.press-v205-margolis23a-margolis23a/README.md",
     "canonical_readme": "robotics-embodied/papers/url-https-proceedings.mlr.press-v205-margolis23a-margolis23a/README.md",
@@ -7660,8 +8255,14 @@
     "evaluation_tags": [],
     "catalog_anchor": "p111",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "image",
+      "action",
+      "state"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "canonical_folder": "robotics-embodied/papers/url-https-proceedings.mlr.press-v205-agarwal23a-agarwal23a",
     "canonical_path": "robotics-embodied/papers/url-https-proceedings.mlr.press-v205-agarwal23a-agarwal23a/README.md",
     "canonical_readme": "robotics-embodied/papers/url-https-proceedings.mlr.press-v205-agarwal23a-agarwal23a/README.md",
@@ -7720,8 +8321,14 @@
     "evaluation_tags": [],
     "catalog_anchor": "p112",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "image",
+      "action",
+      "state"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "canonical_folder": "robotics-embodied/papers/doi-10.1002-advs.202524345",
     "canonical_path": "robotics-embodied/papers/doi-10.1002-advs.202524345/README.md",
     "canonical_readme": "robotics-embodied/papers/doi-10.1002-advs.202524345/README.md",
@@ -7765,8 +8372,12 @@
     "evaluation_tags": [],
     "catalog_anchor": "p113",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
     "baseline_selection": {
       "date": "2026-09-30",
       "role": "foundational_architecture",
@@ -7819,13 +8430,13 @@
   {
     "original_chat_urls": [],
     "id": "arxiv:2203.15556",
-    "title": "Training Compute Optimal Large Language Models",
+    "title": "Training Compute-Optimal Large Language Models",
     "url": "https://arxiv.org/abs/2203.15556",
     "arxiv_id": "2203.15556",
     "doi": null,
     "year": "2022",
     "topic_paths": [
-      "cross-domain/interpretability"
+      "cross-domain/training-science"
     ],
     "detail_topics": [
       "模型训练与多模态"
@@ -7852,14 +8463,23 @@
     "evaluation_tags": [],
     "catalog_anchor": "p114",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation",
+      "analysis"
+    ],
     "canonical_folder": "cross-domain/papers/arxiv-2203.15556",
     "canonical_path": "cross-domain/papers/arxiv-2203.15556/README.md",
     "canonical_readme": "cross-domain/papers/arxiv-2203.15556/README.md",
     "source_path": "cross-domain/papers/arxiv-2203.15556/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "previous_titles": [
+      "Training Compute Optimal Large Language Models",
+      "An empirical analysis of compute-optimal large language model training"
+    ]
   },
   {
     "original_chat_urls": [],
@@ -7916,8 +8536,12 @@
       "superseded_by": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/deep-readings/instructgpt.md"
     },
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
     "baseline_selection": {
       "date": "2026-09-30",
       "role": "representative_training_pipeline",
@@ -8019,8 +8643,13 @@
     "evaluation_tags": [],
     "catalog_anchor": "p116",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "action",
+      "state"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "baseline_selection": {
       "date": "2026-09-30",
       "role": "system_and_experimental_baseline",
@@ -8123,8 +8752,15 @@
     "evaluation_tags": [],
     "catalog_anchor": "p117",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "image",
+      "action",
+      "state"
+    ],
+    "task_tags": [
+      "generation",
+      "decision"
+    ],
     "baseline_selection": {
       "date": "2026-09-30",
       "role": "representative_system_and_experimental_baseline",
@@ -8204,7 +8840,7 @@
     "resource_kind": "paper",
     "topic_paths": [
       "cross-domain/evaluation",
-      "cross-domain/interpretability",
+      "cross-domain/model-science",
       "llm/posttraining/preferences"
     ],
     "detail_topics": [],
@@ -8256,8 +8892,12 @@
       "user_reading_status": "待确认"
     },
     "user_reading_status": "待确认",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "evaluation"
+    ],
     "assistant_reading_status": "existing_technical_reading",
     "legacy_reading_status": "已完成指定版本全文精读与原创图解；阅读范围及残余边界见证据档案；未独立复现；用户阅读状态待确认",
     "canonical_folder": "cross-domain/papers/llm-judge",
@@ -8331,8 +8971,16 @@
       "user_reading_status": "待确认"
     },
     "user_reading_status": "待确认",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "multimodal"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
     "note": "robotics-embodied/baselines/r2r.md",
     "problem": "见独立讲解的开篇问题",
     "method_summary": "见独立讲解正文",
@@ -8419,8 +9067,15 @@
       "user_reading_status": "待确认"
     },
     "user_reading_status": "待确认",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text",
+      "image",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding",
+      "generation"
+    ],
     "assistant_reading_status": "existing_technical_reading",
     "legacy_reading_status": "已完成指定版本全文精读与原创图解；阅读范围及残余边界见证据档案；未独立复现；用户阅读状态待确认",
     "canonical_folder": "multimodal/papers/llava",
@@ -8494,8 +9149,12 @@
       "user_reading_status": "待确认"
     },
     "user_reading_status": "待确认",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "generation"
+    ],
     "assistant_reading_status": "existing_technical_reading",
     "legacy_reading_status": "已完成指定版本全文精读与原创图解；阅读范围及残余边界见证据档案；未独立复现；用户阅读状态待确认",
     "canonical_folder": "multimodal/papers/ddpm",
@@ -8571,8 +9230,14 @@
       "user_reading_status": "待确认"
     },
     "user_reading_status": "待确认",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text",
+      "video",
+      "multimodal"
+    ],
+    "task_tags": [
+      "generation"
+    ],
     "assistant_reading_status": "existing_technical_reading",
     "legacy_reading_status": "已完成指定版本全文精读与原创图解；阅读范围及残余边界见证据档案；未独立复现；用户阅读状态待确认",
     "canonical_folder": "multimodal/papers/video-diffusion",
@@ -8647,8 +9312,13 @@
       "user_reading_status": "待确认"
     },
     "user_reading_status": "待确认",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "image",
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
     "note": "robotics-embodied/baselines/orb-slam3.md",
     "problem": "见独立讲解的开篇问题",
     "method_summary": "见独立讲解正文",
@@ -8731,8 +9401,13 @@
       "user_reading_status": "待确认"
     },
     "user_reading_status": "待确认",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "action",
+      "state"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "note": "robotics-embodied/baselines/convex-mpc.md",
     "problem": "见独立讲解的开篇问题",
     "method_summary": "见独立讲解正文",
@@ -8816,8 +9491,12 @@
       "user_reading_status": "待确认"
     },
     "user_reading_status": "待确认",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
     "note": "robotics-embodied/baselines/eskf.md",
     "problem": "见独立讲解的开篇问题",
     "method_summary": "见独立讲解正文",
@@ -8896,8 +9575,13 @@
       "user_reading_status": "待确认"
     },
     "user_reading_status": "待确认",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "action",
+      "state"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "note": "robotics-embodied/baselines/rrt-star.md",
     "problem": "见独立讲解的开篇问题",
     "method_summary": "见独立讲解正文",
@@ -8926,7 +9610,7 @@
     "resource_kind": "paper",
     "topic_paths": [
       "cross-domain/agents",
-      "cross-domain/interpretability",
+      "cross-domain/model-science",
       "llm/architecture",
       "llm/pretraining"
     ],
@@ -8981,8 +9665,13 @@
       "user_reading_status": "待确认"
     },
     "user_reading_status": "待确认",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation",
+      "analysis"
+    ],
     "assistant_reading_status": "existing_technical_reading",
     "legacy_reading_status": "已完成指定版本全文精读与原创图解；阅读范围及残余边界见证据档案；未独立复现；用户阅读状态待确认",
     "canonical_folder": "llm/papers/gpt3",
@@ -9056,8 +9745,12 @@
       "user_reading_status": "待确认"
     },
     "user_reading_status": "待确认",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
     "assistant_reading_status": "expanded_beginner_teaching",
     "teaching_status": "expanded_beginner_teaching",
     "teaching_revision": {
@@ -9142,8 +9835,14 @@
       "user_reading_status": "待确认"
     },
     "user_reading_status": "待确认",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "image",
+      "action",
+      "state"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "note": "robotics-embodied/baselines/ppo.md",
     "problem": "见独立讲解的开篇问题",
     "method_summary": "见独立讲解正文",
@@ -9226,8 +9925,12 @@
       "user_reading_status": "待确认"
     },
     "user_reading_status": "待确认",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
     "assistant_reading_status": "expanded_beginner_teaching",
     "teaching_status": "expanded_beginner_teaching",
     "teaching_revision": {
@@ -9313,8 +10016,12 @@
       "user_reading_status": "待确认"
     },
     "user_reading_status": "待确认",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
     "assistant_reading_status": "existing_technical_reading",
     "legacy_reading_status": "已完成指定版本全文精读与原创图解；阅读范围及残余边界见证据档案；未独立复现；用户阅读状态待确认",
     "canonical_folder": "multimodal/papers/mae",
@@ -9393,8 +10100,14 @@
       "user_reading_status": "待确认"
     },
     "user_reading_status": "待确认",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text",
+      "image",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
     "assistant_reading_status": "expanded_beginner_teaching",
     "teaching_status": "expanded_beginner_teaching",
     "teaching_revision": {
@@ -9481,8 +10194,12 @@
       "user_reading_status": "待确认"
     },
     "user_reading_status": "待确认",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
     "assistant_reading_status": "existing_technical_reading",
     "legacy_reading_status": "已完成指定版本全文精读与原创图解；阅读范围及残余边界见证据档案；未独立复现；用户阅读状态待确认",
     "canonical_folder": "multimodal/papers/dino",
@@ -9530,8 +10247,14 @@
     "supervision_tags": [],
     "method_tags": [],
     "evaluation_tags": [],
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "video",
+      "action"
+    ],
+    "task_tags": [
+      "generation",
+      "analysis"
+    ],
     "user_reading_status": "not_asserted",
     "problem": "具体问题与方法见所链接论文；本条仅身份或已有目录核验，尚待独立讲解",
     "method_summary": "未从标题推断未核读的方法细节",
@@ -9580,14 +10303,13 @@
     "method_tags": [],
     "evaluation_tags": [],
     "modality_tags": [
-      "image",
       "text",
-      "action"
+      "image",
+      "action",
+      "multimodal"
     ],
     "task_tags": [
-      "planning",
-      "execution",
-      "memory"
+      "decision"
     ],
     "user_reading_status": "not_asserted",
     "problem": "见独立讲解的开篇问题",
@@ -9640,14 +10362,13 @@
     "method_tags": [],
     "evaluation_tags": [],
     "modality_tags": [
-      "image",
       "text",
-      "action"
+      "image",
+      "action",
+      "multimodal"
     ],
     "task_tags": [
-      "planning",
-      "execution",
-      "memory"
+      "decision"
     ],
     "user_reading_status": "not_asserted",
     "problem": "见独立讲解的开篇问题",
@@ -9700,14 +10421,13 @@
     "method_tags": [],
     "evaluation_tags": [],
     "modality_tags": [
-      "image",
       "text",
-      "action"
+      "image",
+      "action",
+      "multimodal"
     ],
     "task_tags": [
-      "planning",
-      "execution",
-      "memory"
+      "decision"
     ],
     "user_reading_status": "not_asserted",
     "problem": "见独立讲解的开篇问题",
@@ -9760,14 +10480,13 @@
     "method_tags": [],
     "evaluation_tags": [],
     "modality_tags": [
-      "image",
       "text",
-      "action"
+      "video",
+      "multimodal"
     ],
     "task_tags": [
-      "planning",
-      "execution",
-      "memory"
+      "understanding",
+      "decision"
     ],
     "user_reading_status": "not_asserted",
     "problem": "见独立讲解的开篇问题",
@@ -9820,14 +10539,14 @@
     "method_tags": [],
     "evaluation_tags": [],
     "modality_tags": [
-      "image",
       "text",
-      "action"
+      "image",
+      "action",
+      "multimodal"
     ],
     "task_tags": [
-      "planning",
-      "execution",
-      "memory"
+      "understanding",
+      "decision"
     ],
     "user_reading_status": "not_asserted",
     "problem": "见独立讲解的开篇问题",
@@ -9904,8 +10623,12 @@
     "detail_topics": [],
     "method_tags": [],
     "evaluation_tags": [],
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "tabular"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
     "verification_sources": [
       "https://www.cs.cornell.edu/~caruana/compression.kdd06.pdf"
     ],
@@ -9970,8 +10693,13 @@
     "detail_topics": [],
     "method_tags": [],
     "evaluation_tags": [],
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "image",
+      "audio"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
     "verification_sources": [
       "https://arxiv.org/abs/1312.6184"
     ],
@@ -10036,8 +10764,12 @@
     "detail_topics": [],
     "method_tags": [],
     "evaluation_tags": [],
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
     "verification_sources": [
       "https://arxiv.org/abs/1412.6550"
     ],
@@ -10103,8 +10835,13 @@
     "detail_topics": [],
     "method_tags": [],
     "evaluation_tags": [],
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "image",
+      "audio"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
     "verification_sources": [
       "https://arxiv.org/abs/1503.02531"
     ],
@@ -10162,8 +10899,12 @@
     "architecture_tags": [],
     "supervision_tags": [],
     "evaluation_tags": [],
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
     "caveats": [
       "必须能访问两者分布并使用兼容 token 空间；收益取决于接受率、draft 开销与硬件；相同分布不代表相同随机种子的逐字输出。"
     ],
@@ -10221,8 +10962,12 @@
     "architecture_tags": [],
     "supervision_tags": [],
     "evaluation_tags": [],
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
     "caveats": [
       "论文 p=draft、q=target，与 Leviathan 符号相反；低 batch、memory-bound 是批验接近单步成本的条件；benchmark 提升不是通用常数。"
     ],
@@ -10280,8 +11025,12 @@
     "architecture_tags": [],
     "supervision_tags": [],
     "evaluation_tags": [],
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
     "caveats": [
       "需训练目标专用 drafter 并访问内部特征；不是任意黑箱小模型 API；本轮未重现实验。"
     ],
@@ -10339,8 +11088,12 @@
     "architecture_tags": [],
     "supervision_tags": [],
     "evaluation_tags": [],
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
     "caveats": [
       "需 target 内部特征与专门训练；不是“无需验证的 diffusion”；加速表随模型/任务/温度变化。"
     ],
@@ -10398,8 +11151,12 @@
     "architecture_tags": [],
     "supervision_tags": [],
     "evaluation_tags": [],
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
     "caveats": [
       "小模型过度自信仍可能出错；rollback 有重算成本；阈值需要任务权衡。"
     ],
@@ -10457,8 +11214,12 @@
     "architecture_tags": [],
     "supervision_tags": [],
     "evaluation_tags": [],
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
     "caveats": [
       "大模型在接管时真实生成，不是批量裁决所有小模型 token；训练及数学 benchmark 范围有限；低调用比例不等于通用端到端省时比例。"
     ],
@@ -10516,8 +11277,12 @@
     "architecture_tags": [],
     "supervision_tags": [],
     "evaluation_tags": [],
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
     "caveats": [
       "judge 可误接受；论文明确必须测生成质量；8B/405B 的 9.7× 是 HuggingFace 基线，优化 GPT-fast 对照为 3.9×，不可混用。"
     ],
@@ -10574,8 +11339,12 @@
     "architecture_tags": [],
     "supervision_tags": [],
     "evaluation_tags": [],
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
     "caveats": [
       "厂商自报结果；不是 DFlash arXiv v2 的同义名称；博客称 DFlash January 发布而 arXiv v1 为 February，不能混作同一日期。"
     ],
@@ -10633,8 +11402,12 @@
     "architecture_tags": [],
     "supervision_tags": [],
     "evaluation_tags": [],
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
     "caveats": [
       "有理论目标与估计误差界，不等于所有任务质量不降；r 选择改变输出分布。"
     ],
@@ -10691,8 +11464,13 @@
     "architecture_tags": [],
     "supervision_tags": [],
     "evaluation_tags": [],
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "action",
+      "state"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "caveats": [
       "未独立复现实验；摘要级证据不扩大为完整方法或实验结论。"
     ],
@@ -10749,8 +11527,13 @@
     "architecture_tags": [],
     "supervision_tags": [],
     "evaluation_tags": [],
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "action",
+      "state"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "caveats": [
       "未独立复现实验；摘要级证据不扩大为完整方法或实验结论。"
     ],
@@ -10809,8 +11592,14 @@
     "architecture_tags": [],
     "supervision_tags": [],
     "evaluation_tags": [],
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "image",
+      "action",
+      "state"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "caveats": [
       "未独立复现实验；摘要级证据不扩大为完整方法或实验结论。 IEEE直开受限，本轮依据官方索引摘要。"
     ],
@@ -10867,8 +11656,14 @@
     "architecture_tags": [],
     "supervision_tags": [],
     "evaluation_tags": [],
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "image",
+      "action",
+      "state"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "caveats": [
       "未独立复现实验；摘要级证据不扩大为完整方法或实验结论。"
     ],
@@ -10925,8 +11720,13 @@
     "architecture_tags": [],
     "supervision_tags": [],
     "evaluation_tags": [],
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "image",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "caveats": [
       "未独立复现实验；摘要级证据不扩大为完整方法或实验结论。"
     ],
@@ -10983,8 +11783,13 @@
     "architecture_tags": [],
     "supervision_tags": [],
     "evaluation_tags": [],
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "action",
+      "state"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "caveats": [
       "未独立复现实验；摘要级证据不扩大为完整方法或实验结论。"
     ],
@@ -11041,8 +11846,13 @@
     "architecture_tags": [],
     "supervision_tags": [],
     "evaluation_tags": [],
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "action",
+      "state"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "caveats": [
       "未独立复现实验；摘要级证据不扩大为完整方法或实验结论。"
     ],
@@ -11105,8 +11915,14 @@
     "architecture_tags": [],
     "supervision_tags": [],
     "evaluation_tags": [],
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
     "caveats": [
       "未独立复现实验；摘要级证据不扩大为完整方法或实验结论。"
     ],
@@ -11164,8 +11980,12 @@
     "architecture_tags": [],
     "supervision_tags": [],
     "evaluation_tags": [],
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "evaluation"
+    ],
     "caveats": [
       "未独立复现实验；摘要级证据不扩大为完整方法或实验结论。 IEEE直开受限，本轮依据官方索引摘要。"
     ],
@@ -11222,8 +12042,14 @@
     "architecture_tags": [],
     "supervision_tags": [],
     "evaluation_tags": [],
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "image",
+      "action",
+      "state"
+    ],
+    "task_tags": [
+      "decision"
+    ],
     "caveats": [
       "RC车实验，不是四足验证；原历史OpenReview ID与该论文关系仍未知，不标为错配或已恢复原链接。"
     ],
@@ -11270,8 +12096,13 @@
     "evaluation_tags": [],
     "catalog_anchor": "p163",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text",
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
     "canonical_folder": "llm/papers/arxiv-2303.06349",
     "canonical_path": "llm/papers/arxiv-2303.06349/README.md",
     "canonical_readme": "llm/papers/arxiv-2303.06349/README.md",
@@ -11288,7 +12119,7 @@
     "doi": null,
     "year": "2023",
     "topic_paths": [
-      "cross-domain/interpretability"
+      "cross-domain/model-science"
     ],
     "detail_topics": [
       "model science/knowledge representation",
@@ -11312,8 +12143,12 @@
     "evaluation_tags": [],
     "catalog_anchor": "p164",
     "user_reading_status": "unknown",
-    "modality_tags": [],
-    "task_tags": [],
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
     "canonical_folder": "cross-domain/papers/arxiv-2304.14767",
     "canonical_path": "cross-domain/papers/arxiv-2304.14767/README.md",
     "canonical_readme": "cross-domain/papers/arxiv-2304.14767/README.md",

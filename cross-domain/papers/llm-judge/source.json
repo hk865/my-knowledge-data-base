@@ -32,7 +32,7 @@
   ],
   "topic_paths": [
     "cross-domain/evaluation",
-    "cross-domain/interpretability",
+    "cross-domain/model-science",
     "llm/posttraining/preferences"
   ]
 }

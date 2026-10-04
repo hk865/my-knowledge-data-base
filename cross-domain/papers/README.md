@@ -13,7 +13,7 @@
 - [INSPECT: Intrinsic and Systematic Probing Evaluation for Code Transformers](arxiv-2312.05092/README.md) · 2023 · 文献卡，暂无独立精读
 - [PersonaEval: Are LLM Evaluators Human Enough to Judge Role-Play?](arxiv-2508.10014/README.md) · 2025 · 文献卡，暂无独立精读
 - [On scalable oversight with weak LLMs judging strong LLMs](arxiv-2407.04622/README.md) · 2024 · 文献卡，暂无独立精读
-- [Training Compute Optimal Large Language Models](arxiv-2203.15556/README.md) · 2022 · 文献卡，暂无独立精读
+- [Training Compute-Optimal Large Language Models](arxiv-2203.15556/README.md) · 2022 · 文献卡，暂无独立精读
 - [Model Compression](url-cornell-compression.kdd06/README.md) · 2006 · 文献卡，暂无独立精读
 - [Do Deep Nets Really Need to be Deep?](arxiv-1312.6184/README.md) · 2013 · 文献卡，暂无独立精读
 - [FitNets: Hints for Thin Deep Nets](arxiv-1412.6550/README.md) · 2014 · 文献卡，暂无独立精读

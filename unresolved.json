@@ -193,7 +193,7 @@
     "user_reading_status": "unknown",
     "topic_paths": [
       "llm/pretraining",
-      "cross-domain/interpretability",
+      "cross-domain/model-science",
       "cross-domain/knowledge-distillation"
     ],
     "supervision_tags": [
@@ -235,7 +235,7 @@
     "user_reading_status": "unknown",
     "topic_paths": [
       "llm/pretraining",
-      "cross-domain/interpretability",
+      "cross-domain/model-science",
       "cross-domain/knowledge-distillation"
     ],
     "supervision_tags": [

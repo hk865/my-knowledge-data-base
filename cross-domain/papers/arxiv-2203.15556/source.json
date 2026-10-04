@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "resource_id": "arxiv:2203.15556",
-  "title": "Training Compute Optimal Large Language Models",
+  "title": "Training Compute-Optimal Large Language Models",
   "resource_kind": "paper",
   "canonical_folder": "cross-domain/papers/arxiv-2203.15556",
   "official_url": "https://arxiv.org/abs/2203.15556",
@@ -26,6 +26,6 @@
   "legacy_paths": [],
   "evidence_paths": [],
   "topic_paths": [
-    "cross-domain/interpretability"
+    "cross-domain/training-science"
   ]
 }

@@ -32,7 +32,7 @@
   ],
   "topic_paths": [
     "cross-domain/agents",
-    "cross-domain/interpretability",
+    "cross-domain/model-science",
     "llm/architecture",
     "llm/pretraining"
   ]

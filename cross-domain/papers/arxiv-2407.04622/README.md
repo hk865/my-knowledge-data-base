@@ -7,7 +7,7 @@
 - [官方原文页面](https://arxiv.org/abs/2407.04622)
 - [官方全文入口](https://arxiv.org/pdf/2407.04622)
 - 阅读版本：未固定版本；请核对官方版本记录
-- 方向：cross-domain/interpretability、cross-domain/evaluation
+- 方向：cross-domain/model-science、cross-domain/evaluation
 
 ## 阅读内容与边界
 

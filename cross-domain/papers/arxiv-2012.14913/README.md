@@ -11,4 +11,4 @@
 ## 身份信息
 
 - 稳定标识：arxiv:2012.14913 · [全文 PDF](https://arxiv.org/pdf/2012.14913)
-- 方向：cross-domain/interpretability
+- 方向：cross-domain/model-science

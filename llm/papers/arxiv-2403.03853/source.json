@@ -27,6 +27,6 @@
   "evidence_paths": [],
   "topic_paths": [
     "llm/architecture",
-    "cross-domain/interpretability"
+    "cross-domain/model-science"
   ]
 }

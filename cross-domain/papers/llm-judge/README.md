@@ -7,7 +7,7 @@
 - [官方原文页面](https://arxiv.org/abs/2306.05685)
 - [官方全文入口](https://arxiv.org/pdf/2306.05685v4)
 - 阅读版本：v4
-- 方向：cross-domain/evaluation、cross-domain/interpretability、llm/posttraining/preferences
+- 方向：cross-domain/evaluation、cross-domain/model-science、llm/posttraining/preferences
 
 ## 阅读内容与边界
 

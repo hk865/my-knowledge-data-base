@@ -204,16 +204,24 @@
       "label": "跨方向方法与探索",
       "topics": [
         {
+          "id": "cross-domain/training-science",
+          "label": "训练科学",
+          "subtopics": []
+        },
+        {
+          "id": "cross-domain/model-science",
+          "label": "模型科学",
+          "subtopics": [],
+          "aliases": [
+            "cross-domain/interpretability"
+          ]
+        },
+        {
           "id": "cross-domain/agents",
           "label": "Agent 与上下文系统",
           "subtopics": [
             "Agent轨迹与性质验证"
           ]
-        },
-        {
-          "id": "cross-domain/interpretability",
-          "label": "机制与可信解释",
-          "subtopics": []
         },
         {
           "id": "cross-domain/biological-computing",
@@ -289,20 +297,18 @@
       "image",
       "video",
       "audio",
-      "depth",
-      "LiDAR",
-      "IMU",
-      "action"
+      "action",
+      "state",
+      "code",
+      "multimodal",
+      "tabular"
     ],
     "task": [
-      "representation",
-      "alignment",
+      "understanding",
       "generation",
-      "dynamics-prediction",
-      "localization-mapping",
-      "navigation",
-      "control",
-      "manipulation"
+      "decision",
+      "evaluation",
+      "analysis"
     ]
   },
   "notes": [

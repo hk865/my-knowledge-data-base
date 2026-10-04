@@ -28,7 +28,7 @@
   "topic_paths": [
     "llm/inference",
     "cross-domain/agents",
-    "cross-domain/interpretability",
+    "cross-domain/model-science",
     "cross-domain/evaluation"
   ]
 }

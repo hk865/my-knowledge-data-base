@@ -23,7 +23,7 @@
 - [Reasoning Does Not Necessarily Improve Role-Playing Ability](../llm/papers/url-https-aclanthology.org-2025.findings-acl.537/README.md) · 年份见原文 · 文献卡，暂无独立精读
 - [ReAct: Synergizing Reasoning and Acting in Language Models](papers/react/README.md) · 2022 · 技术精读
 - [Voyager: An Open-Ended Embodied Agent with Large Language Models](../llm/papers/arxiv-2305.16291/README.md) · 2023 · 文献卡，暂无独立精读
-- [Training Compute Optimal Large Language Models](papers/arxiv-2203.15556/README.md) · 2022 · 文献卡，暂无独立精读
+- [Training Compute-Optimal Large Language Models](papers/arxiv-2203.15556/README.md) · 2022 · 文献卡，暂无独立精读
 - [Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena](papers/llm-judge/README.md) · 2023 · 技术精读
 - [Language Models are Few-Shot Learners](../llm/papers/gpt3/README.md) · 2020 · 技术精读
 - [Do As I Can, Not As I Say: Grounding Language in Robotic Affordances](../robotics-embodied/papers/saycan/README.md) · 年份见原文 · 选定章节讲解
