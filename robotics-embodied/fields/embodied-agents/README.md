@@ -27,9 +27,9 @@
 
 接口有三种写法，对应主线的三个阶段：**打分选择**（高层从固定技能库中挑，SayCan）、**生成代码或结构**（高层写出调用感知与控制 API 的程序，Code as Policies、VoxPoser）、**语言子任务**（高层输出"拿起砧板"这样的短指令，由训练过的 VLA 执行，Hi Robot、π0.5）。
 
-![具身 Agent 的任务闭环与 VLA 的动作闭环](../../assets/phase3-expansion/embodied-two-feedback-loops.svg)
+![具身 Agent 的任务闭环与 VLA 的动作闭环](figures/embodied-two-feedback-loops.svg)
 
-图：原创接口图。上层根据“杯子已经放入水槽”的证据决定是否换子任务；下层根据新图像和本体状态修正正在执行的动作。把已执行动作、观察时间与成功证据一起返回，才有条件区分“规划选错了”“动作没做成”和“验证看错了”。图示综合本页的 SayCan、Inner Monologue 与分层 VLA 接口，不代表任何一篇论文的完整架构。
+图：原创接口图。上层根据"杯子已经放入水槽"的证据决定是否换子任务；下层根据新图像和本体状态修正正在执行的动作。把已执行动作、观察时间与成功证据一起返回，才有条件区分"规划选错了""动作没做成"和"验证看错了"。图示综合本页的 SayCan、Inner Monologue 与分层 VLA 接口，不代表任何一篇论文的完整架构。
 
 ## 主线历史
 
@@ -160,7 +160,7 @@
 | MEMORA-Bench（2026） | 第一人称视频上的记忆问答与规划 | 规划分数是文本规则指标，不是机器人成功率；主 QA 数字来自条件子集 |
 | ASIMOV-Agentic（2026，Google DeepMind） | 编排器的安全决策：约束遵守、人员接近与硬件状态监测、VLA 可行性判断、含糊指令求助 | 离线单步与多轮；多轮中的 VLA 由模拟器代替；不测功能安全架构 |
 
-2026 年的 RoboDojo [1] 将 Memory（要记住过去观察）与 Long-Horizon（要维持多步进度）分开，提供了检查两类失败的不同任务；VLA-REPLICA [2] 又用重复操作的计数任务检查“做了几次”。`[判断]` 给上层更多推理文本与给下层更长动作块都可能有用，是否记住了事件、是否在正确时刻结束子任务，仍需要分别测试。这两套评测主要测操作策略，完整 Agent 的可行性拒绝与验证恢复还要另设协议。
+2026 年的 RoboDojo [1] 将 Memory（要记住过去观察）与 Long-Horizon（要维持多步进度）分开，提供了检查两类失败的不同任务；VLA-REPLICA [2] 又用重复操作的计数任务检查"做了几次"。`[判断]` 给上层更多推理文本与给下层更长动作块都可能有用，是否记住了事件、是否在正确时刻结束子任务，仍需要分别测试。这两套评测主要测操作策略，完整 Agent 的可行性拒绝与验证恢复还要另设协议。
 
 读数时要分清三对口径：规划成功与执行成功，首回合成功与允许重试的最终成功（RoboSkill），全量与条件子集（MEMORA）。
 
@@ -201,7 +201,7 @@
 
 **判断的支撑论文**（原有主线见 [synthesis.csv](synthesis.csv)，补充评测见 [VLA 综合表](../vla/synthesis.csv)）
 
-- “记忆与多步进度分别测试”：RoboDojo v3 §3.1.1 分设 Memory / Long-Horizon，VLA-REPLICA v1 §4.3 分析重复次数的失败。边界：任务完成或计数失败本身不能定位是记忆表示、语言理解还是动作执行导致；失败归因还需要逐回合证据。
+- "记忆与多步进度分别测试"：RoboDojo v3 §3.1.1 分设 Memory / Long-Horizon，VLA-REPLICA v1 §4.3 分析重复次数的失败。边界：任务完成或计数失败本身不能定位是记忆表示、语言理解还是动作执行导致；失败归因还需要逐回合证据。
 
 
 - "分工在移动"：技能库——SayCan 第 8 节 → Code as Policies 局限 → Voyager 技能库 → RoboSkill；验证——Inner Monologue Table 3 → EmbodiedSkills 表 5；高层——SayCan（冻结 PaLM）→ Hi Robot（GPT-4o 高层明显更差）→ π0.5。反例：EmbodiedBench 与 MEMORA 仍以冻结的通用大模型为高层。
@@ -227,7 +227,7 @@
 - Gemini Robotics 2 安全评测报告的各模型对比图只读了正文文字，图中各模型的柱值没有估读；报告点名的对照模型（Claude Opus 4.8、GPT 5.5）只在一项任务的文字中出现。
 - Gemini Robotics ER 2 没有单独的模型卡；它的"实时视频理解""Gemini Live API 编排"等说法只见于二手报道，未写入。
 
-## 补充参考文献
+**参考文献**
 
 [1] Chen et al. [RoboDojo，arXiv v3，2026-07-08](https://arxiv.org/html/2607.04434v3)，§3.1.1；[文献卡](../../papers/arxiv-2607.04434/README.md)。
 

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="880" viewBox="0 0 1600 880" role="img" aria-labelledby="title desc"><title id="title">新动作还没算完，机器人已经继续执行了</title><desc id="desc">示例：20毫秒控制周期、100毫秒推理延迟，旧队列等待期间执行5步。新块的前5步对应已承诺动作，余下重叠区和新增区分别处理。</desc><defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10Z" fill="#687d92"/></marker></defs><rect width="100%" height="100%" fill="#fafbfe"/>
+<text x="48" y="62" font-family="Noto Sans CJK SC, sans-serif" font-size="36" font-weight="700" fill="#24324a">新动作还没算完，机器人已经继续执行了</text>
+<text x="48" y="108" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#54647b">教学数值：每步 20 ms；推理 100 ms = 5 步；旧块在此刻还剩 15 步</text>
+<path d="M300 172 V690" fill="none" stroke="#687d92" stroke-width="3" stroke-dasharray="8 7"/>
+<text x="290" y="155" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#54647b">0</text>
+<path d="M590 172 V690" fill="none" stroke="#687d92" stroke-width="3" stroke-dasharray="8 7"/>
+<text x="580" y="155" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#54647b">5</text>
+<path d="M880 172 V690" fill="none" stroke="#687d92" stroke-width="3" stroke-dasharray="8 7"/>
+<text x="870" y="155" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#54647b">10</text>
+<path d="M1170 172 V690" fill="none" stroke="#687d92" stroke-width="3" stroke-dasharray="8 7"/>
+<text x="1160" y="155" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#54647b">15</text>
+<path d="M1460 172 V690" fill="none" stroke="#687d92" stroke-width="3" stroke-dasharray="8 7"/>
+<text x="1450" y="155" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#54647b">20</text>
+<text x="1505" y="155" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#54647b">步</text>
+<text x="48" y="220" font-family="Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#24324a">旧队列</text>
+<text x="48" y="258" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#54647b">边算边执行</text>
+<rect x="300" y="190" width="290" height="110" rx="15" fill="#ffe3df" stroke="#cbd3df" stroke-width="1.5"/>
+<rect x="590" y="190" width="580" height="110" rx="15" fill="#fff0d9" stroke="#cbd3df" stroke-width="1.5"/>
+<text x="318" y="232" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#24324a">等待期间执行</text>
+<text x="318" y="267" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#24324a">0 → 5 步</text>
+<text x="612" y="232" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#24324a">5 → 15 步：原来的后续计划</text>
+<text x="612" y="267" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#24324a">新块到达后可重新规划</text>
+<path d="M300 340 H590" fill="none" stroke="#687d92" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="326" y="328" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#54647b">100 ms：生成新块</text>
+<text x="48" y="426" font-family="Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#24324a">推理时 RTC</text>
+<text x="48" y="464" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#54647b">软重叠引导</text>
+<rect x="300" y="386" width="290" height="132" rx="15" fill="#ffe3df" stroke="#cbd3df" stroke-width="1.5"/>
+<rect x="590" y="386" width="580" height="132" rx="15" fill="#fff0d9" stroke="#cbd3df" stroke-width="1.5"/>
+<rect x="1170" y="386" width="290" height="132" rx="15" fill="#e4f4ee" stroke="#cbd3df" stroke-width="1.5"/>
+<text x="316" y="430" font-family="Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#24324a">已承诺前缀</text>
+<text x="316" y="460" font-family="Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#24324a">以旧动作作条件</text>
+<text x="316" y="490" font-family="Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#24324a">此段已由旧队列执行</text>
+<text x="614" y="430" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#24324a">可修改的重叠区</text>
+<text x="614" y="465" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#24324a">离当前越远，引导越弱</text>
+<text x="1188" y="430" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#24324a">新增未来动作</text>
+<text x="1188" y="465" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#24324a">无旧块可参考</text>
+<text x="48" y="591" font-family="Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#24324a">训练时 RTC</text>
+<text x="48" y="629" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#54647b">前缀条件化</text>
+<rect x="300" y="551" width="290" height="115" rx="15" fill="#ffe3df" stroke="#cbd3df" stroke-width="1.5"/>
+<rect x="590" y="551" width="870" height="115" rx="15" fill="#e4f4ee" stroke="#cbd3df" stroke-width="1.5"/>
+<text x="318" y="594" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#24324a">干净前缀</text>
+<text x="318" y="629" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#24324a">保持已承诺动作</text>
+<text x="614" y="594" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#24324a">整个后缀按新观测与前缀生成</text>
+<text x="614" y="629" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#24324a">训练时只对后缀加噪并计算损失</text>
+<path d="M590 700 H1460" fill="none" stroke="#687d92" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="610" y="690" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#54647b">从这里开始，执行新块的后缀</text>
+<text x="48" y="762" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#24324a">颜色表示动作所处的时间区间；“连续供给”还需满足推理完成前旧队列不耗尽</text>
+<text x="48" y="800" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#24324a">RTC 引导生成的前缀是近似匹配；实际执行的已承诺动作来自旧队列</text>
+<text x="48" y="852" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#54647b">原创教学图 · 据 RTC 正式版 §3 与 Training-time RTC v2 §III–IV · 非实测速度图</text>
+</svg>

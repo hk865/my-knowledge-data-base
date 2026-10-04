@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="975" viewBox="0 0 1600 975" role="img" aria-labelledby="title desc"><title id="title">动作表示与执行调度：先分开，再看依赖</title><desc id="desc">四种动作输出机制与部署接口的原创比较图。离散逐维、自回归压缩、连续生成与并行回归分别解决不同问题；异步队列和接续另作设计。</desc><defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10Z" fill="#687d92"/></marker></defs><rect width="100%" height="100%" fill="#fafbfe"/>
+<text x="48" y="62" font-family="Noto Sans CJK SC, sans-serif" font-size="36" font-weight="700" fill="#24324a">动作表示与执行调度：先分开，再看依赖</text>
+<text x="48" y="110" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#54647b">同一条轨迹，可以有不同的学习与生成方式；生成完以后，还要接到机器人正在走的时间轴上</text>
+<text x="65" y="170" font-family="Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#24324a">动作怎样表示</text>
+<text x="410" y="170" font-family="Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#24324a">怎样学习 / 生成</text>
+<text x="975" y="170" font-family="Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#24324a">执行时还要选择什么</text>
+<rect x="48" y="200" width="850" height="125" rx="15" fill="#e7f2ff" stroke="#cbd3df" stroke-width="1.5"/>
+<text x="70" y="242" font-family="Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#24324a">逐维分桶</text>
+<text x="70" y="283" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#54647b">OpenVLA（2024）</text>
+<text x="412" y="244" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#24324a">每个时刻、每个维度 → 桶号</text>
+<text x="412" y="279" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#24324a">交叉熵训练；逐 token 解码</text>
+<path d="M900 262 H948" fill="none" stroke="#687d92" stroke-width="3"/>
+<rect x="48" y="345" width="850" height="125" rx="15" fill="#e7f2ff" stroke="#cbd3df" stroke-width="1.5"/>
+<text x="70" y="387" font-family="Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#24324a">整段动作压缩</text>
+<text x="70" y="428" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#54647b">FAST（2025）</text>
+<text x="412" y="389" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#24324a">时间序列 → DCT 系数 → token</text>
+<text x="412" y="424" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#24324a">压缩重复性；仍可自回归生成</text>
+<path d="M900 407 H948" fill="none" stroke="#687d92" stroke-width="3"/>
+<rect x="48" y="490" width="850" height="125" rx="15" fill="#f0eafa" stroke="#cbd3df" stroke-width="1.5"/>
+<text x="70" y="532" font-family="Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#24324a">连续生成</text>
+<text x="70" y="573" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#54647b">π0 / RTC 所用的策略</text>
+<text x="412" y="534" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#24324a">噪声 → 多步去噪或流积分</text>
+<text x="412" y="569" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#24324a">一次表示整个未来动作块</text>
+<path d="M900 552 H948" fill="none" stroke="#687d92" stroke-width="3"/>
+<rect x="48" y="635" width="850" height="125" rx="15" fill="#e4f4ee" stroke="#cbd3df" stroke-width="1.5"/>
+<text x="70" y="677" font-family="Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#24324a">连续并行回归</text>
+<text x="70" y="718" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#54647b">OpenVLA-OFT（2025）</text>
+<text x="412" y="679" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#24324a">多步连续输出；L1 损失</text>
+<text x="412" y="714" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#24324a">并行输出，不必迭代去噪</text>
+<path d="M900 697 H948" fill="none" stroke="#687d92" stroke-width="3"/>
+<path d="M948 262 V697" fill="none" stroke="#687d92" stroke-width="3"/>
+<path d="M948 480 H983" fill="none" stroke="#687d92" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="990" y="200" width="560" height="560" rx="15" fill="#ffffff" stroke="#cbd3df" stroke-width="1.5"/>
+<text x="1018" y="246" font-family="Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#24324a">① 什么时候取新观测</text>
+<text x="1018" y="285" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#24324a">输出频率、重规划频率</text>
+<text x="1018" y="320" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#24324a">与底层控制频率分别记录</text>
+<text x="1018" y="382" font-family="Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#24324a">② 等待推理时执行什么</text>
+<text x="1018" y="421" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#24324a">旧队列继续执行；预算要留余量</text>
+<text x="1018" y="456" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#24324a">“有动作可取”是第一个条件</text>
+<text x="1018" y="518" font-family="Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#24324a">③ 新块怎样接上旧块</text>
+<text x="1018" y="557" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#24324a">RTC：连续生成的前缀补全</text>
+<text x="1018" y="592" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#24324a">Training-time RTC：训练时学接续</text>
+<text x="1018" y="627" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#24324a">π0-REALFAST：分段分词 + 受限解码</text>
+<text x="1018" y="704" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#24324a">还要测：跳变、反应与任务完成</text>
+<rect x="48" y="809" width="1502" height="104" rx="15" fill="#fff0d9" stroke="#cbd3df" stroke-width="1.5"/>
+<text x="72" y="849" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#24324a">π0.5 / Knowledge Insulation：离散分支可作训练信号，连续分支用于部署</text>
+<text x="72" y="885" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="400" fill="#24324a">π0-REALFAST（2026）：离散自回归也用于部署；因此“输出形式”与“运行方式”要一起读</text>
+<text x="48" y="949" font-family="Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#54647b">原创说明图 · 据 OpenVLA、FAST、OFT、RTC、Training-time RTC、π0-REALFAST；编号来源见正文文末</text>
+</svg>

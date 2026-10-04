@@ -50,7 +50,8 @@
       "https://arxiv.org/html/2511.07820v1"
     ],
     "source_origin": "robotics_recency_audit_2026_10_04",
-    "relation_pages": []
+    "relation_pages": [],
+    "publication_check": "2026-10-04 重新核对 arXiv v4 页的期刊卷期、文章号与 DOI；Science 期刊页未成功打开，未据此升级正式版正文的阅读深度。"
   },
   "modality_tags": [
     "state",
@@ -59,5 +60,7 @@
   ],
   "task_tags": [
     "decision"
-  ]
+  ],
+  "publication_status": "Science Robotics 11(117), eaed4592 (2026)，arXiv v4 摘要页的 Journal reference 与 Related DOI 已核实；期刊全文页面未成功打开",
+  "publication_doi": "10.1126/scirobotics.aed4592"
 }

@@ -160,7 +160,7 @@ Georgia Tech、FAIR、Oregon State 一系在这一阶段做了两件事：把仿
 2. [RRT* 精读](../../papers/rrt-star/reading.md)：经典规划给出的"保证"具体是什么、前提是什么，后面的学习方法都没有这样的保证。
 3. [R2R 精读](../../papers/r2r/reading.md) → [VLN-CE](../../papers/arxiv-2004.02857/README.md) → [Sim-to-Real VLN](../../papers/arxiv-2011.03807/README.md)：同一个任务被三次收回假设，数字一路下降，是理解"成绩建立在什么上"的最好材料。
 4. [ViNT](../../papers/arxiv-2306.14846/README.md) 与 [LM-Nav](../../papers/arxiv-2207.04429/README.md)：真实数据与基础模型拼装两条路，对照着读。
-5. [NaVILA](../../papers/arxiv-2412.04453/README.md) → [DualVLN](../../papers/arxiv-2512.08186/README.md)：两层接口从语言变成像素目标，对应到你熟悉的足式 RL 策略接在哪一层。
+5. [NaVILA](../../papers/arxiv-2412.04453/README.md) → [DualVLN](../../papers/arxiv-2512.08186/README.md)：两层接口从语言变成像素目标，对照足式 RL 策略在分层系统中的接入位置。
 
 基线拆分见 [Baseline 页](BASELINES.md)，按问题排列的学习路线见[路线图](ROADMAP.md)，本方向收录的论文见[论文目录](PAPERS.md)。
 

@@ -32,9 +32,9 @@
 
 ### 动作表示与执行调度分开选择
 
-![动作表示、学习方式与部署接续的分工图](../../assets/phase3-expansion/vla-action-execution-axes.svg)
+![动作表示、学习方式与部署接续的分工图](figures/vla-action-execution-axes.svg)
 
-图：原创机制对照。横向每行是一种输出机制，右侧是把动作送到真实时间轴上的接口。FAST 改压缩，OFT 改并行输出，RTC 改连续生成的接续，π0-REALFAST 同时改分词范围与自回归接续；看“动作是不是 token”只回答了其中一部分。箭头表示信息流，图中没有模型排名。
+图：原创机制对照。横向每行是一种输出机制，右侧是把动作送到真实时间轴上的接口。FAST 改压缩，OFT 改并行输出，RTC（实时动作块接续：旧块执行期间生成能衔接的新块）改连续生成的接续，π0-REALFAST 同时改分词范围与自回归接续；看"动作是不是 token"只回答了其中一部分。箭头表示信息流，图中没有模型排名。
 
 ## 后续工作在改哪个部件
 
@@ -78,7 +78,7 @@
 
 **易误读**
 
-- 新增三行解决的是动作块衔接；队列不断流、动作连贯、及时响应新观测是三个需要分别检查的条件。RTC 的适用范围见正式版 §6，Training-time RTC 的延迟分布与硬前缀限制见 v2 §VI，π0-REALFAST 的外部延迟假设与单臂范围见 v1 §3.3、§6。
+- RTC、Training-time RTC 与 π0-REALFAST 解决的是动作块衔接；队列不断流、动作连贯、及时响应新观测是三个需要分别检查的条件。RTC 的适用范围见正式版 §6，Training-time RTC 的延迟分布与硬前缀限制见 v2 §VI，π0-REALFAST 的外部延迟假设与单臂范围见 v1 §3.3、§6。
 
 - OpenVLA-OFT 摘要中的 76.5% → 97.1% 跨越了输入设置：97.1% 的配置另加了腕部图像与本体状态，同输入下的对照是 π0 的 94.2%（Table I）。表中按同一输入分步写出。
 - FAST 的 750 ms 与 π0 的 100 ms 都是 RTX 4090 上预测 1 秒动作块的时间（FAST Sec. VI-E）；KI 写的"π0 约 10 Hz、自回归 VLA 约 1.3 Hz"是另一种口径（§4）。
@@ -100,7 +100,7 @@
 - π0.7、Qwen-VLA 的训练数据总小时数与混合比例原文未写全，表中只写原文给出的部分。
 - 2026 年补充的五行中，GR00T N1.6/N1.7、Helix 02、Gemini Robotics 2 都只有官方博客或仓库，没有论文；表中只写官方页面明确写出的结构与数字。
 
-## 补充参考文献
+**参考文献**
 
 [1] Black et al. [Real-Time Execution of Action Chunking Flow Policies，NeurIPS 2025 正式版](https://papers.nips.cc/paper_files/paper/2025/file/300ccb2187dedd4edcc07f7e76d8e553-Paper-Conference.pdf)，§3、§6。
 

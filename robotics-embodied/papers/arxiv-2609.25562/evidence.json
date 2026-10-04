@@ -8,7 +8,7 @@
     "https://arxiv.org/html/2609.25562v1",
     "https://github.com/xiaoqi-7/IndustrialVLA-Bench"
   ],
-  "checked_sections": "v1 §1–5、Tables 2–5、App. B–D；官方仓库",
+  "checked_sections": "v1 作者单位、§1–5、Tables 2–5、App. B–D；官方仓库",
   "claim_map": [
     {
       "claim": "接近饱和的常规分数掩盖扰动、语言变化、运行成本与复现证据差异。",
@@ -25,6 +25,10 @@
     {
       "claim": "协议忠实子集的常规/扰动/改写均分跨度为1.36/14.62/23.10个百分点；不是全部6模型直接排名",
       "location": "§1, §4.6, §5"
+    },
+    {
+      "claim": "作者单位包含 Griffith University、Southern University of Science and Technology、Jiangsu University、University of Southern Queensland、The University of Sydney、Norve Labs、ACE Robotics。",
+      "location": "v1 HTML 标题下作者单位区"
     }
   ],
   "openness_boundary": "官方评测仓库公开；原始运行未复现",

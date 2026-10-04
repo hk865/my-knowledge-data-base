@@ -23,7 +23,8 @@
     "Taotao Cai"
   ],
   "topic_paths": [
-    "robotics/embodied-policies"
+    "robotics/embodied-policies",
+    "cross-domain/evaluation"
   ],
   "modality_tags": [
     "text",
@@ -33,12 +34,13 @@
     "multimodal"
   ],
   "task_tags": [
-    "decision"
+    "decision",
+    "evaluation"
   ],
   "content_kind": "bibliographic_card",
   "reading_depth": "selected_sections_checked_not_full_read",
   "reading_path": null,
-  "reading_boundary": "v1 §1–5、Tables 2–5、App. B–D；官方仓库。仅为本次领域增量核对相关章节，不是全文精读；未运行实验。",
+  "reading_boundary": "v1 作者单位、§1–5、Tables 2–5、App. B–D；官方仓库。仅为本次领域增量核对相关章节，不是全文精读；未运行实验。",
   "teaching_status": "not_created",
   "user_reading_status": "not_asserted",
   "independently_reproduced": false,

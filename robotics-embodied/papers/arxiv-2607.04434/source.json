@@ -57,7 +57,8 @@
     "Masayoshi Tomizuka"
   ],
   "topic_paths": [
-    "robotics/embodied-policies"
+    "robotics/embodied-policies",
+    "cross-domain/evaluation"
   ],
   "modality_tags": [
     "text",
@@ -67,7 +68,8 @@
     "multimodal"
   ],
   "task_tags": [
-    "decision"
+    "decision",
+    "evaluation"
   ],
   "content_kind": "bibliographic_card",
   "reading_depth": "selected_sections_checked_not_full_read",

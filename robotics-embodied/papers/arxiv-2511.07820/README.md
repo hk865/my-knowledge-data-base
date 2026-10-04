@@ -10,6 +10,6 @@
 
 ## 身份信息
 
-- 稳定标识：arxiv:2511.07820（NVIDIA，Luo、Yuan 等 28 位作者；v1 2025-11-11，当前 v4 2026-08-13；arXiv 页注明发表于 Science Robotics 第 11 卷第 117 期）
+- 稳定标识：arxiv:2511.07820（NVIDIA，Luo、Yuan 等 28 位作者；v1 2025-11-11，当前 v4 2026-08-13；发表于 [Science Robotics 11(117), eaed4592 (2026)](https://doi.org/10.1126/scirobotics.aed4592)，期刊信息以 arXiv v4 摘要页为据）
 - 全文：[arXiv PDF](https://arxiv.org/pdf/2511.07820)
 - 方向：[运动控制与腿足运动](../../fields/control-locomotion/README.md)（另见[模仿学习与机器人强化学习](../../fields/imitation-reinforcement-learning/README.md)、[VLA](../../fields/vla/README.md)）

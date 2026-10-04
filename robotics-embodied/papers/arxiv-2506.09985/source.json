@@ -82,7 +82,17 @@
     ],
     "source_origin": "phase3_embodied_field_page_synthesis",
     "field_pages": [
-      "robotics-embodied/fields/world-models/README.md"
+      "robotics-embodied/fields/world-models/README.md",
+      "multimodal/fields/video-temporal/README.md"
     ]
-  }
+  },
+  "direction_reading_scopes": [
+    {
+      "direction": "multimodal/video-temporal",
+      "checked_on": "2026-10-04",
+      "source": "https://arxiv.org/abs/2506.09985",
+      "read_version": "v1",
+      "scope": "摘要选读；该方向引用不表示全文精读或独立复现。机器人世界模型方向的更充分核验范围保留在 reading_boundary。"
+    }
+  ]
 }

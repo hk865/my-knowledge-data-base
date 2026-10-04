@@ -77,7 +77,7 @@
 
 - [EgoScale: Scaling Dexterous Manipulation with Diverse Egocentric Human Data](../../papers/arxiv-2602.16710/README.md) · 2026 · 文献卡 · 2 万小时第一视角人类视频，对数线性尺度律（交叉引用 VLA）
 - [Large Behavior Models and Atlas Find New Footing](../../papers/boston-dynamics-atlas-lbm/README.md) · 2025 · 官方博客卡 · Boston Dynamics 与 TRI，人形全身遥操作示范 + 扩散 Transformer
-- [SONIC: Supersizing Motion Tracking for Natural Humanoid Whole-Body Control](../../papers/arxiv-2511.07820/README.md) · 2025 · 文献卡 · 700 小时动作捕捉的通用跟踪器（交叉引用运动控制）
+- [SONIC: Supersizing Motion Tracking for Natural Humanoid Whole-Body Control](../../papers/arxiv-2511.07820/README.md) · 2025 年预印本；Science Robotics 2026 · 文献卡 · 700 小时动作捕捉的通用跟踪器（交叉引用运动控制）
 - [Introducing Helix 02: Full-Body Autonomy](../../papers/figure-helix-02/README.md) · 2026 · 官方博客卡 · 人体动作数据 + 仿真 RL 训练的全身控制器（交叉引用运动控制）
 - [Learning Agile Perceptive Traversal of Sparse 3D Structures for Humanoids](../../papers/arxiv-2608.29769/README.md) · 2026 · 文献卡 · DAgger 模仿特权教师 → 带行为锚定的 PPO（交叉引用运动控制）
 

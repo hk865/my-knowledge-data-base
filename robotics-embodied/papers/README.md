@@ -9,15 +9,15 @@
 - [Quaternion kinematics for the error-state Kalman filter](eskf/README.md) · 2017 · 技术精读
 - [ORB-SLAM3: An Accurate Open-Source Library for Visual, Visual-Inertial and Multi-Map SLAM](orb-slam3/README.md) · 2020 · 技术精读
 - [Sampling-based Algorithms for Optimal Motion Planning](rrt-star/README.md) · 2011 · 技术精读
-- [Dynamic Locomotion in the MIT Cheetah 3 Through Convex Model-Predictive Control](convex-mpc/README.md) · 年份见原文 · 技术精读
+- [Dynamic Locomotion in the MIT Cheetah 3 Through Convex Model-Predictive Control](convex-mpc/README.md) · 2018 · 技术精读
 - [RMA: Rapid Motor Adaptation for Legged Robots](rma/README.md) · 2021 · 技术精读
 - [Vision-and-Language Navigation: Interpreting visually-grounded navigation instructions in real environments](r2r/README.md) · 2017 · 技术精读
 - [Zero-WAM: In-Context World-Action Modeling from Human Videos for Open-Ended Task Generalization](zero-wam/README.md) · 2026 · 选定章节讲解
-- [Do As I Can, Not As I Say: Grounding Language in Robotic Affordances](saycan/README.md) · 年份见原文 · 选定章节讲解
-- [Explore, Execute, Evolve: A Skill Acquisition and Reuse Loop for Embodied Agents](roboskill/README.md) · 年份见原文 · 选定章节讲解
-- [EmbodiedSkills: A Unified Framework for Orchestrating, Training, and Deploying VLA Agents](embodiedskills/README.md) · 年份见原文 · 选定章节讲解
-- [MEMORA: Embodied Action Memory from Egocentric Videos for Reasoning and Planning](memora/README.md) · 年份见原文 · 选定章节讲解
-- [HoloAgent-0: A Unified Embodied Agent Framework with 3D Spatial Memory](holoagent-0/README.md) · 年份见原文 · 选定章节讲解
+- [Do As I Can, Not As I Say: Grounding Language in Robotic Affordances](saycan/README.md) · 2022 · 选定章节讲解
+- [Explore, Execute, Evolve: A Skill Acquisition and Reuse Loop for Embodied Agents](roboskill/README.md) · 2026 · 选定章节讲解
+- [EmbodiedSkills: A Unified Framework for Orchestrating, Training, and Deploying VLA Agents](embodiedskills/README.md) · 2026 · 选定章节讲解
+- [MEMORA: Embodied Action Memory from Egocentric Videos for Reasoning and Planning](memora/README.md) · 2026 · 选定章节讲解
+- [HoloAgent-0: A Unified Embodied Agent Framework with 3D Spatial Memory](holoagent-0/README.md) · 2026 · 选定章节讲解
 - [RT-1: Robotics Transformer for Real-World Control at Scale](arxiv-2212.06817/README.md) · 2022 · 文献卡，暂无独立精读
 - [RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control](arxiv-2307.15818/README.md) · 2023 · 文献卡，暂无独立精读
 - [Open X-Embodiment: Robotic Learning Datasets and RT-X Models](arxiv-2310.08864/README.md) · 2023 · 文献卡，暂无独立精读
@@ -60,11 +60,11 @@
 - [BeyondMimic: From Motion Tracking to Versatile Humanoid Control via Guided Diffusion](arxiv-2508.08241/README.md) · 2025 · 文献卡，暂无独立精读
 - [Retargeting Matters: General Motion Retargeting for Humanoid Motion Tracking](arxiv-2510.02252/README.md) · 2025 · 文献卡，暂无独立精读
 - [PIE: Parkour with Implicit-Explicit Learning Framework for Legged Robots](arxiv-2408.13740/README.md) · 2024 · 文献卡，暂无独立精读
-- [Dense RGB-D Semantic Mapping with Pixel-Voxel Neural Network](doi-10.3390-s18093099/README.md) · 年份见原文 · 文献卡，暂无独立精读
-- [FM-Fusion: Instance-aware Semantic Mapping Boosted by Vision-Language Foundation Models](url-https-github.com-hkust-aerial-robotics-fm-fusion/README.md) · 年份见原文 · 代码仓库卡，不计为论文
-- [Walk These Ways: Tuning Robot Control for Generalization with Multiplicity of Behavior](url-https-proceedings.mlr.press-v205-margolis23a-margolis23a/README.md) · 年份见原文 · 文献卡，暂无独立精读
-- [Legged Locomotion in Challenging Terrains using Egocentric Vision](url-https-proceedings.mlr.press-v205-agarwal23a-agarwal23a/README.md) · 年份见原文 · 文献卡，暂无独立精读
-- [MGDP: Mastering a Generalized Depth Perception Model for Quadruped Locomotion](doi-10.1002-advs.202524345/README.md) · 年份见原文 · 文献卡，暂无独立精读
+- [Dense RGB-D Semantic Mapping with Pixel-Voxel Neural Network](doi-10.3390-s18093099/README.md) · 2018 · 文献卡，暂无独立精读
+- [FM-Fusion: Instance-aware Semantic Mapping Boosted by Vision-Language Foundation Models](url-https-github.com-hkust-aerial-robotics-fm-fusion/README.md) · 2024 · 代码仓库卡，不计为论文
+- [Walk These Ways: Tuning Robot Control for Generalization with Multiplicity of Behavior](url-https-proceedings.mlr.press-v205-margolis23a-margolis23a/README.md) · 2023 · 文献卡，暂无独立精读
+- [Legged Locomotion in Challenging Terrains using Egocentric Vision](url-https-proceedings.mlr.press-v205-agarwal23a-agarwal23a/README.md) · 2023 · 文献卡，暂无独立精读
+- [MGDP: Mastering a Generalized Depth Perception Model for Quadruped Locomotion](doi-10.1002-advs.202524345/README.md) · 2026 · 文献卡，暂无独立精读
 
 ## 2026年10月3日文献增量
 
@@ -161,10 +161,10 @@
 - [Expressive Whole-Body Control for Humanoid Robots](arxiv-2402.16796/README.md) · 2024 · 文献卡，暂无独立精读
 - [Learning Human-to-Humanoid Real-Time Whole-Body Teleoperation](arxiv-2403.04436/README.md) · 2024 · 文献卡，暂无独立精读
 - [OmniH2O: Universal and Dexterous Human-to-Humanoid Whole-Body Teleoperation and Learning](arxiv-2406.08858/README.md) · 2024 · 文献卡，暂无独立精读
-- [Gemini Robotics 2 brings whole body intelligence to robots](gemini-robotics-2/README.md) · 2026 · 文献卡，暂无独立精读
-- [UnifoLM-WLA-1.0](unifolm-wla/README.md) · 2026 · 文献卡，暂无独立精读
-- [Introducing Helix 02: Full-Body Autonomy](figure-helix-02/README.md) · 2026 · 文献卡，暂无独立精读
-- [Large Behavior Models and Atlas Find New Footing](boston-dynamics-atlas-lbm/README.md) · 2025 · 文献卡，暂无独立精读
+- [Gemini Robotics 2 brings whole body intelligence to robots](gemini-robotics-2/README.md) · 2026 · 资料卡，暂无独立精读
+- [UnifoLM-WLA-1.0](unifolm-wla/README.md) · 2026 · 资料卡，暂无独立精读
+- [Introducing Helix 02: Full-Body Autonomy](figure-helix-02/README.md) · 2026 · 资料卡，暂无独立精读
+- [Large Behavior Models and Atlas Find New Footing](boston-dynamics-atlas-lbm/README.md) · 2025 · 资料卡，暂无独立精读
 - [Gemini Robotics 2: Safety Evaluations](gemini-robotics-2-safety/README.md) · 2026 · 文献卡，暂无独立精读
 - [MEM: Multi-Scale Embodied Memory for Vision Language Action Models](arxiv-2603.03596/README.md) · 2026 · 文献卡，暂无独立精读
 - [EgoScale: Scaling Dexterous Manipulation with Diverse Egocentric Human Data](arxiv-2602.16710/README.md) · 2026 · 文献卡，暂无独立精读
@@ -179,6 +179,9 @@
 - [cuVSLAM: CUDA accelerated visual odometry and mapping](arxiv-2506.04359/README.md) · 2025 · 文献卡，暂无独立精读
 - [Robostral Navigate](arxiv-2607.20785/README.md) · 2026 · 文献卡，暂无独立精读
 - [Cosmos Policy: Fine-Tuning Video Models for Visuomotor Control and Planning](arxiv-2601.16163/README.md) · 2026 · 文献卡，暂无独立精读
+
+## 2026年10月4日文献与资料增量
+
 - [Real-Time Execution of Action Chunking Flow Policies](arxiv-2506.07339/README.md) · 2025 · 文献卡，暂无独立精读
 - [Training-Time Action Conditioning for Efficient Real-Time Chunking](arxiv-2512.05964/README.md) · 2025 · 文献卡，暂无独立精读
 - [VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World Evaluation of Vision-Language-Action Models](arxiv-2605.20774/README.md) · 2026 · 文献卡，暂无独立精读

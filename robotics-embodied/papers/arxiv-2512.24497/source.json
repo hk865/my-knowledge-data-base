@@ -30,7 +30,7 @@
   ],
   "content_kind": "bibliographic_card",
   "reading_depth": "selected_sections_checked_not_full_read",
-  "reading_boundary": "arXiv 摘要、v4 §1、§4–6、Table 1–2；官方仓库与 TMLR 目录。正式发表 PDF 被 OpenReview 浏览器验证拦截；不引述正式版性能数字。v4 说明仅增加致谢。 不是独立全文精读，未复现。",
+  "reading_boundary": "arXiv 摘要、v4 §1、§4–6、Table 1–2；官方仓库与 TMLR 目录。正式发表 PDF 被 OpenReview 浏览器验证拦截；不引述正式版性能数字。v4 说明仅增加致谢。未全文精读、未复现。",
   "read_version": "v4",
   "version_status": "checked_v4",
   "latest_checked_version_date": "2026-09-02",

@@ -30,7 +30,7 @@
 | ① + ④ | 去掉解码器，MPPI + 策略先验，多任务 | [TD-MPC2](../../papers/arxiv-2310.16828/README.md) | 一套超参覆盖 104 个任务；只支持连续动作 |
 | ①② + ④ | 文本条件视频扩散 + 逆动力学出动作 | [UniPi](../../papers/arxiv-2302.00111/README.md) | 网络视频知识迁移；生成慢、幻觉 |
 | ④ 用法：仿真器 | 多源数据训练可交互模拟器，在其中训练 VLM 规划器与 RL 策略 | [UniSim](../../papers/arxiv-2310.06114/README.md) | RL 58% → 81%、零样本到真机；编造结果、记忆短 |
-| ① 表示 | 自监督视频特征 + 62 小时无标注机器人视频后训练 | [V-JEPA 2](../../papers/arxiv-2506.09985/README.md) | Franka 零样本抓放 80%/65%；对相机位置敏感，长程误差累积 |
+| ① 表示 | 自监督视频特征 + 62 小时无标注机器人视频后训练 | [V-JEPA 2](../../papers/arxiv-2506.09985/README.md)（JEPA：在特征空间预测未来的联合嵌入预测架构） | Franka 零样本抓放 80%/65%；对相机位置敏感，长程误差累积 |
 | ① 表示 | 在 DINOv2 潜空间上训练大规模视频预测器 | [Back to the Features（DINO-world）](../../../multimodal/papers/arxiv-2507.19468/README.md) | 视频预测基准领先，可微调做动作条件规划 |
 | ① + ④ | 视觉基础模型潜空间里的扩散预测，配合扩散策略 | [LaDi-WM](../../../multimodal/papers/arxiv-2505.11528/README.md) | LIBERO-LONG 提升 27.9%、真实场景 20% |
 | ① 表示 | 对象槽表示 + 基于对象的探索奖励 | [FOCUS](../../../multimodal/papers/arxiv-2307.02427/README.md) | 更一致地探索机器人与物体的交互；真机 Franka |
@@ -51,7 +51,7 @@
 | ⑥ 评估与分析 | 潜在动作模型学到什么；潜在动作表示的 benchmark | [What Do LAMs Learn?](../../../multimodal/papers/arxiv-2506.15691/README.md)、[LARY](../../../multimodal/papers/arxiv-2604.11689/README.md) | 指出可能学到外部噪声；语义表示优于像素表示 |
 | ⑥ 评估 | 比较重建型与语义型潜空间 | [Reconstruction or Semantics?](../../../multimodal/papers/arxiv-2605.06388/README.md) | 视觉保真度不足以挑选世界模型 |
 | ③ 动作条件 + ④ 输出头与用法（2026 年补充） | 不改结构，把动作、本体状态、未来图像与价值编码成"潜在帧"放进视频扩散序列；同一模型出动作、预测未来与价值，best-of-N 规划 | [Cosmos Policy](../../papers/arxiv-2601.16163/README.md) | LIBERO 98.5%、RoboCasa 67.1%，真机 ALOHA 平均 93.6 / 带规划约 5 秒一个动作块，规划需大量 rollout |
-| ①–④ 的设计对照 | 固定潜空间规划配方，分开比较编码器、本体信息、多步训练和优化器 | [JEPA-WMs 系统研究](../../papers/arxiv-2512.24497/README.md) | 得到任务相关的可检验配方 / 最优选项随数据和任务改变 |
+| ①–④ 的设计对照 | 固定 JEPA 潜空间规划配方，分开比较编码器、本体信息、多步训练和优化器 | [JEPA-WMs 系统研究](../../papers/arxiv-2512.24497/README.md) | 得到任务相关的可检验配方 / 最优选项随数据和任务改变 |
 | ④ + ⑥ 规划与诊断 | 分开改变预测展开和目标距离，用准确动力学隔离预测误差 | [The Planning Limits of Latent World Models](../../papers/arxiv-2609.39235/README.md) | 区分预测误差与看得太短 / 经验范围依赖协议；闭环限单臂仿真、子目标来自专家 |
 
 ## 批注

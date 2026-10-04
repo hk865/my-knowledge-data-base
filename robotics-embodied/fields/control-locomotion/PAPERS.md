@@ -72,7 +72,7 @@
 - [BeyondMimic: From Motion Tracking to Versatile Humanoid Control via Guided Diffusion](../../papers/arxiv-2508.08241/README.md) · 2025 · 文献卡 · 动作跟踪 + 引导扩散
 - [Retargeting Matters: General Motion Retargeting for Humanoid Motion Tracking](../../papers/arxiv-2510.02252/README.md) · 2025 · 文献卡 · 重定向质量对跟踪的影响
 - [Scaling Behavior Foundation Model for Humanoid Robots](../../papers/arxiv-2607.15163/README.md) · 2026 · 文献卡 · 行为基础模型的规模化
-- [SONIC: Supersizing Motion Tracking for Natural Humanoid Whole-Body Control](../../papers/arxiv-2511.07820/README.md) · 2025 · 文献卡 · NVIDIA，700 小时动作捕捉的通用跟踪器，上接运动学规划器与 VLA
+- [SONIC: Supersizing Motion Tracking for Natural Humanoid Whole-Body Control](../../papers/arxiv-2511.07820/README.md) · 2025 年预印本；Science Robotics 2026 · 文献卡 · NVIDIA，700 小时动作捕捉的通用跟踪器，上接运动学规划器与 VLA
 - [Introducing Helix 02: Full-Body Autonomy](../../papers/figure-helix-02/README.md) · 2026 · 官方博客卡 · Figure 的 1 kHz 全身控制器 S0（人体动作数据 + 仿真 RL）
 - [Large Behavior Models and Atlas Find New Footing](../../papers/boston-dynamics-atlas-lbm/README.md) · 2025 · 官方博客卡（归属模仿与强化学习方向，在此交叉引用） · 扩散 Transformer 输出脚的位姿，MPC 稳定
 - [Gemini Robotics 2 brings whole body intelligence to robots](../../papers/gemini-robotics-2/README.md) · 2026 · 官方博客卡（归属 VLA 方向，在此交叉引用） · Apollo 2 上的全身移动操作

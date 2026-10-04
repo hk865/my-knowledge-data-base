@@ -27,7 +27,7 @@
   ],
   "content_kind": "bibliographic_card",
   "reading_depth": "selected_sections_checked_not_full_read",
-  "reading_boundary": "arXiv 摘要与 v1 §II-E–F、§III-A/D/F、§IV-A–B；作者项目页。未全文精读、未运行代码。 不是独立全文精读，未复现。",
+  "reading_boundary": "arXiv 摘要与 v1 §II-B/E–F、§III-A/D–F、§IV-A–B；作者项目页。未全文精读、未运行代码或复现实验。",
   "read_version": "v1",
   "version_status": "checked_v1",
   "latest_checked_version_date": "2026-09-25",
@@ -53,7 +53,8 @@
       "https://arxiv.org/html/2609.31577v1",
       "https://zolkin1.github.io/generate-track-improve/"
     ],
-    "reading_scope": "arXiv 摘要与 v1 §II-E–F、§III-A/D/F、§IV-A–B；作者项目页。未全文精读、未运行代码。",
-    "evidence_boundary": "作者实验与公开原文；未独立运行；不把预印本/修订年份改成首发年份。"
+    "reading_scope": "arXiv 摘要与 v1 §II-B/E–F、§III-A/D–F、§IV-A–B；作者项目页。未全文精读、未运行代码。",
+    "evidence_boundary": "作者实验与公开原文；未独立运行；不把预印本/修订年份改成首发年份。",
+    "motion_bricks_section_check": "§II-B 说明 Motion Bricks 参与动作片段构造；§III-E Data Pipeline / Table III 比较本方法与仅用 Motion Bricks 的速度跟踪误差。综合表的对照来源应为 §III-E。"
   }
 }
