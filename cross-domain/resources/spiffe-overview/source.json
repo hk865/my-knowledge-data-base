@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "resource_id": "url:https://spiffe.io/docs/latest/spiffe-about/overview",
+  "title": "SPIFFE Overview",
+  "resource_kind": "official_documentation",
+  "resource_subtype": "official_specification_overview",
+  "canonical_folder": "cross-domain/resources/spiffe-overview",
+  "official_url": "https://spiffe.io/docs/latest/spiffe-about/overview/",
+  "official_fulltext_url": "https://spiffe.io/docs/latest/spiffe-about/overview/",
+  "read_version": "2026-10-04所见动态官方页面；未固定不可变版本",
+  "version_status": "see_read_version_and_date_basis",
+  "reading_depth": "overview_body_and_identity",
+  "reading_scope": "overview_body_and_identity",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "按实际选读范围记录的资料卡；未创建独立reading.md，不增加全文精读数。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "只链接官方或作者原文；未确认再分发许可，不镜像第三方全文。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "topic_paths": [
+    "cross-domain/agents"
+  ],
+  "source_record_updated": "2026-10-04",
+  "verification_2026_10_04": {
+    "reading_scope": "overview_body_and_identity",
+    "verification_status": "verified_primary_page",
+    "verification_sources": [
+      "https://spiffe.io/docs/latest/spiffe-about/overview/"
+    ],
+    "mechanism_summary": "SPIFFE 提供工作负载身份标准与短期 SVID 身份文档，用于服务相互认证。",
+    "evidence_boundary": "身份认证回答是谁；该概述不提供具体业务动作的授权策略。 概述页不是标准全文或独立研究论文；生态表会变化。",
+    "read_version": "2026-10-04所见动态官方页面；未固定不可变版本",
+    "source_origin": "historical_assistant_recommendation",
+    "original_chat_urls": [
+      "https://spiffe.io/docs/latest/spiffe-about/overview/"
+    ]
+  },
+  "year": null,
+  "publication_date": null,
+  "date_basis": "latest 动态概述页，无固定文章发布日期",
+  "source_origin": "historical_assistant_recommendation",
+  "modality_tags": [
+    "text",
+    "code"
+  ],
+  "task_tags": [
+    "analysis"
+  ],
+  "catalog_provenance_2026_10_04": {
+    "reading_scope": "overview_body_and_identity",
+    "mechanism_summary": "SPIFFE 提供工作负载身份标准与短期 SVID 身份文档，用于服务相互认证。",
+    "evidence_boundary": "身份认证回答是谁；该概述不提供具体业务动作的授权策略。 概述页不是标准全文或独立研究论文；生态表会变化。",
+    "read_version": "2026-10-04所见动态官方页面；未固定不可变版本",
+    "verification_status": "verified_primary_page",
+    "verification_sources": [
+      "https://spiffe.io/docs/latest/spiffe-about/overview/"
+    ],
+    "original_chat_urls": [
+      "https://spiffe.io/docs/latest/spiffe-about/overview/"
+    ],
+    "caveats": [
+      "身份认证回答是谁；该概述不提供具体业务动作的授权策略。",
+      "概述页不是标准全文或独立研究论文；生态表会变化。"
+    ],
+    "official_identity": "SPIFFE 项目官方文档域名",
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-04T04:29:29Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接",
+        "relationship": "原始完整公开URL已恢复"
+      }
+    ]
+  }
+}

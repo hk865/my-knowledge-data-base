@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "resource_id": "url:https://docs.kernel.org/userspace-api/landlock.html",
+  "title": "Landlock: unprivileged access control",
+  "resource_kind": "official_documentation",
+  "resource_subtype": "official_kernel_api_documentation",
+  "canonical_folder": "cross-domain/resources/linux-landlock",
+  "official_url": "https://docs.kernel.org/userspace-api/landlock.html",
+  "official_fulltext_url": "https://docs.kernel.org/userspace-api/landlock.html",
+  "read_version": "2026-10-04所见动态官方页面；未固定不可变版本",
+  "version_status": "see_read_version_and_date_basis",
+  "reading_depth": "introduction_rules_layering_inheritance_and_abi_caveats",
+  "reading_scope": "introduction_rules_layering_inheritance_and_abi_caveats",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "按实际选读范围记录的资料卡；未创建独立reading.md，不增加全文精读数。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "只链接官方或作者原文；未确认再分发许可，不镜像第三方全文。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "topic_paths": [
+    "cross-domain/agents"
+  ],
+  "source_record_updated": "2026-10-04",
+  "verification_2026_10_04": {
+    "reading_scope": "introduction_rules_layering_inheritance_and_abi_caveats",
+    "verification_status": "verified_primary_page",
+    "verification_sources": [
+      "https://docs.kernel.org/userspace-api/landlock.html"
+    ],
+    "mechanism_summary": "Landlock 是可叠加 LSM，允许非特权进程收紧自身及后代的访问；路径须同时通过全部 Landlock 层、DAC 和其他 LSM 控制。",
+    "evidence_boundary": "不能扩大已有权限；操作覆盖取决于运行内核、Landlock ABI 与 handled rights。 不应把 latest 文档所列新 ABI 能力当成任意 Linux 主机已支持。",
+    "read_version": "2026-10-04所见动态官方页面；未固定不可变版本",
+    "source_origin": "historical_assistant_recommendation",
+    "original_chat_urls": [
+      "https://docs.kernel.org/userspace-api/landlock.html"
+    ]
+  },
+  "year": null,
+  "publication_date": null,
+  "date_basis": "正文 Date 元数据为 August 2026；滚动文档更新时间，不标成论文发表日",
+  "source_origin": "historical_assistant_recommendation",
+  "modality_tags": [
+    "text",
+    "code"
+  ],
+  "task_tags": [
+    "analysis"
+  ],
+  "catalog_provenance_2026_10_04": {
+    "reading_scope": "introduction_rules_layering_inheritance_and_abi_caveats",
+    "mechanism_summary": "Landlock 是可叠加 LSM，允许非特权进程收紧自身及后代的访问；路径须同时通过全部 Landlock 层、DAC 和其他 LSM 控制。",
+    "evidence_boundary": "不能扩大已有权限；操作覆盖取决于运行内核、Landlock ABI 与 handled rights。 不应把 latest 文档所列新 ABI 能力当成任意 Linux 主机已支持。",
+    "read_version": "2026-10-04所见动态官方页面；未固定不可变版本",
+    "verification_status": "verified_primary_page",
+    "verification_sources": [
+      "https://docs.kernel.org/userspace-api/landlock.html"
+    ],
+    "original_chat_urls": [
+      "https://docs.kernel.org/userspace-api/landlock.html"
+    ],
+    "caveats": [
+      "不能扩大已有权限；操作覆盖取决于运行内核、Landlock ABI 与 handled rights。",
+      "不应把 latest 文档所列新 ABI 能力当成任意 Linux 主机已支持。"
+    ],
+    "official_identity": "Linux 内核官方文档 docs.kernel.org；作者 Mickaël Salaün",
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-04T04:29:29Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接",
+        "relationship": "原始完整公开URL已恢复"
+      }
+    ]
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "resource_id": "url:https://www.analog.com/media/en/training-seminars/tutorials/MT-097.pdf",
+  "title": "MT-097: Dealing with High-Speed Logic",
+  "resource_kind": "official_documentation",
+  "resource_subtype": "official_technical_tutorial",
+  "canonical_folder": "cross-domain/resources/adi-mt-097",
+  "official_url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-097.pdf",
+  "official_fulltext_url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-097.pdf",
+  "read_version": "PDF第1页 Rev.0, 01/09, WK；不扩写未明确署名缩写",
+  "version_status": "see_read_version_and_date_basis",
+  "reading_depth": "technical_tutorial_focused_reading",
+  "reading_scope": "第1–5页边沿/传输线、阻尼、终端及时钟分配；第7–8页LVDS限制概览",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "按实际选读范围记录的资料卡；未创建独立reading.md，不增加全文精读数。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "只链接官方或作者原文；未确认再分发许可，不镜像第三方全文。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "topic_paths": [
+    "cross-domain/engineering-exploration"
+  ],
+  "source_record_updated": "2026-10-04",
+  "verification_2026_10_04": {
+    "reading_scope": "第1–5页边沿/传输线、阻尼、终端及时钟分配；第7–8页LVDS限制概览",
+    "verification_status": "verified_primary_source",
+    "verification_sources": [
+      "https://www.analog.com/media/en/training-seminars/tutorials/MT-097.pdf",
+      "https://www.analog.com/en/resources/packaging-quality-symbols-footprints/package-resources.html"
+    ],
+    "mechanism_summary": "是否需要传输线处理取决于走线传播延迟相对最快边沿的比例，而不只看时钟频率；减慢不必要的快边沿可减轻干扰，但增加延迟，必须回到系统时序预算验证",
+    "evidence_boundary": "完整历史URL未回收；这是由编号/片段定位的关联原始技术资料 2009年器件示例与经验长度不能直接套用所有高速接口；以实际叠层、驱动、负载和规范为准",
+    "read_version": "PDF第1页 Rev.0, 01/09, WK；不扩写未明确署名缩写",
+    "source_origin": "official_associated_discovery_from_historical_fragment",
+    "original_chat_urls": []
+  },
+  "year": "2009",
+  "authors": [],
+  "publication_date": "2009-01",
+  "date_basis": "PDF第1页 Rev.0, 01/09, WK；不扩写未明确署名缩写",
+  "source_origin": "official_associated_discovery_from_historical_fragment",
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "analysis"
+  ],
+  "catalog_provenance_2026_10_04": {
+    "reading_scope": "第1–5页边沿/传输线、阻尼、终端及时钟分配；第7–8页LVDS限制概览",
+    "mechanism_summary": "是否需要传输线处理取决于走线传播延迟相对最快边沿的比例，而不只看时钟频率；减慢不必要的快边沿可减轻干扰，但增加延迟，必须回到系统时序预算验证",
+    "evidence_boundary": "完整历史URL未回收；这是由编号/片段定位的关联原始技术资料 2009年器件示例与经验长度不能直接套用所有高速接口；以实际叠层、驱动、负载和规范为准",
+    "read_version": "PDF第1页 Rev.0, 01/09, WK；不扩写未明确署名缩写",
+    "verification_status": "verified_primary_source",
+    "verification_sources": [
+      "https://www.analog.com/media/en/training-seminars/tutorials/MT-097.pdf",
+      "https://www.analog.com/en/resources/packaging-quality-symbols-footprints/package-resources.html"
+    ],
+    "original_chat_urls": [],
+    "caveats": [
+      "完整历史URL未回收；这是由编号/片段定位的关联原始技术资料",
+      "2009年器件示例与经验长度不能直接套用所有高速接口；以实际叠层、驱动、负载和规范为准"
+    ],
+    "historical_fragment": "media/en/training-seminars/tutorials/MT-097.pdf",
+    "official_identity": "Analog Devices 官方教程PDF，9页",
+    "provenance": [
+      "official_associated_discovery_from_historical_fragment"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-03T10:57:05Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接",
+        "relationship": "只恢复片段；本条为官方关联发现，不宣称原始URL已恢复"
+      }
+    ]
+  }
+}

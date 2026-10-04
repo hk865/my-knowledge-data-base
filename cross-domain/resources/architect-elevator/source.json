@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "resource_id": "url:https://martinfowler.com/articles/architect-elevator.html",
+  "title": "The Architect Elevator — Visiting the upper floors",
+  "resource_kind": "author_article",
+  "resource_subtype": "author_article",
+  "canonical_folder": "cross-domain/resources/architect-elevator",
+  "official_url": "https://martinfowler.com/articles/architect-elevator.html",
+  "official_fulltext_url": "https://martinfowler.com/articles/architect-elevator.html",
+  "read_version": "页面署名日期",
+  "version_status": "see_read_version_and_date_basis",
+  "reading_depth": "engineering_article_focused_reading",
+  "reading_scope": "上下层沟通、延后不可逆决定、适配目的、交付反馈；未作组织案例核验",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "按实际选读范围记录的资料卡；未创建独立reading.md，不增加全文精读数。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "只链接官方或作者原文；未确认再分发许可，不镜像第三方全文。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "topic_paths": [
+    "cross-domain/agents"
+  ],
+  "source_record_updated": "2026-10-04",
+  "verification_2026_10_04": {
+    "reading_scope": "上下层沟通、延后不可逆决定、适配目的、交付反馈；未作组织案例核验",
+    "verification_status": "verified_primary_source",
+    "verification_sources": [
+      "https://martinfowler.com/articles/architect-elevator.html"
+    ],
+    "mechanism_summary": "架构师连接业务策略、组织约束与技术实施，并在正确层面排除阻碍；用模块化和灵活设计减少早期不可逆决策；用交付结果反馈检验架构选择",
+    "evidence_boundary": "不是证明多层管理或多层Agent更优；文中恰指出多次传话失真 架构适配性依赖场景，不提供普适组织模板",
+    "read_version": "页面署名日期",
+    "source_origin": "historical_assistant_recommendation",
+    "original_chat_urls": [
+      "https://martinfowler.com/articles/architect-elevator.html"
+    ]
+  },
+  "year": "2017",
+  "authors": [
+    "Gregor Hohpe"
+  ],
+  "publication_date": "2017-05-24",
+  "date_basis": "页面署名日期",
+  "source_origin": "historical_assistant_recommendation",
+  "modality_tags": [
+    "text",
+    "code"
+  ],
+  "task_tags": [
+    "analysis"
+  ],
+  "catalog_provenance_2026_10_04": {
+    "reading_scope": "上下层沟通、延后不可逆决定、适配目的、交付反馈；未作组织案例核验",
+    "mechanism_summary": "架构师连接业务策略、组织约束与技术实施，并在正确层面排除阻碍；用模块化和灵活设计减少早期不可逆决策；用交付结果反馈检验架构选择",
+    "evidence_boundary": "不是证明多层管理或多层Agent更优；文中恰指出多次传话失真 架构适配性依赖场景，不提供普适组织模板",
+    "read_version": "页面署名日期",
+    "verification_status": "verified_primary_source",
+    "verification_sources": [
+      "https://martinfowler.com/articles/architect-elevator.html"
+    ],
+    "original_chat_urls": [
+      "https://martinfowler.com/articles/architect-elevator.html"
+    ],
+    "caveats": [
+      "不是证明多层管理或多层Agent更优；文中恰指出多次传话失真",
+      "架构适配性依赖场景，不提供普适组织模板"
+    ],
+    "historical_fragment": null,
+    "official_identity": "Gregor Hohpe 署名原文，刊载于 Martin Fowler 网站",
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-04T05:43:30Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接",
+        "relationship": "原始完整公开URL已恢复"
+      }
+    ]
+  }
+}

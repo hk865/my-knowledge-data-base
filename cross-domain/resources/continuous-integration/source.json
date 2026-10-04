@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "resource_id": "url:https://martinfowler.com/articles/continuousIntegration.html",
+  "title": "Continuous Integration",
+  "resource_kind": "author_article",
+  "resource_subtype": "author_article",
+  "canonical_folder": "cross-domain/resources/continuous-integration",
+  "official_url": "https://martinfowler.com/articles/continuousIntegration.html",
+  "official_fulltext_url": "https://martinfowler.com/articles/continuousIntegration.html",
+  "read_version": "本次修订；首版 2000-09-10，重写 2006-05-01",
+  "version_status": "see_read_version_and_date_basis",
+  "reading_depth": "engineering_article_focused_reading",
+  "reading_scope": "定义、主线频繁集成、自测试构建、分层验证、未完成工作隐藏；未运行项目CI",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "按实际选读范围记录的资料卡；未创建独立reading.md，不增加全文精读数。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "只链接官方或作者原文；未确认再分发许可，不镜像第三方全文。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "topic_paths": [
+    "cross-domain/agents"
+  ],
+  "source_record_updated": "2026-10-04",
+  "verification_2026_10_04": {
+    "reading_scope": "定义、主线频繁集成、自测试构建、分层验证、未完成工作隐藏；未运行项目CI",
+    "verification_status": "verified_primary_source",
+    "verification_sources": [
+      "https://martinfowler.com/articles/continuousIntegration.html"
+    ],
+    "mechanism_summary": "CI要求成员至少每天集成到共同代码线，每次用自动构建与测试尽早发现集成错误；快速提交测试与更慢的真实依赖/端到端验证可以分层；作者明确指出测试不能证明不存在缺陷",
+    "evidence_boundary": "绿灯是已有检查的结果，不等于需求语义与所有生产行为正确 网页已多次修订，引用日期须区分首版和当前版",
+    "read_version": "本次修订；首版 2000-09-10，重写 2006-05-01",
+    "source_origin": "historical_assistant_recommendation",
+    "original_chat_urls": [
+      "https://martinfowler.com/articles/continuousIntegration.html"
+    ]
+  },
+  "year": "2000",
+  "authors": [
+    "Martin Fowler"
+  ],
+  "publication_date": "2000-09-10",
+  "date_basis": "本次修订；首版 2000-09-10，重写 2006-05-01",
+  "source_origin": "historical_assistant_recommendation",
+  "modality_tags": [
+    "text",
+    "code"
+  ],
+  "task_tags": [
+    "analysis"
+  ],
+  "catalog_provenance_2026_10_04": {
+    "reading_scope": "定义、主线频繁集成、自测试构建、分层验证、未完成工作隐藏；未运行项目CI",
+    "mechanism_summary": "CI要求成员至少每天集成到共同代码线，每次用自动构建与测试尽早发现集成错误；快速提交测试与更慢的真实依赖/端到端验证可以分层；作者明确指出测试不能证明不存在缺陷",
+    "evidence_boundary": "绿灯是已有检查的结果，不等于需求语义与所有生产行为正确 网页已多次修订，引用日期须区分首版和当前版",
+    "read_version": "本次修订；首版 2000-09-10，重写 2006-05-01",
+    "verification_status": "verified_primary_source",
+    "verification_sources": [
+      "https://martinfowler.com/articles/continuousIntegration.html"
+    ],
+    "original_chat_urls": [
+      "https://martinfowler.com/articles/continuousIntegration.html"
+    ],
+    "caveats": [
+      "绿灯是已有检查的结果，不等于需求语义与所有生产行为正确",
+      "网页已多次修订，引用日期须区分首版和当前版"
+    ],
+    "historical_fragment": null,
+    "official_identity": "Martin Fowler 本人署名原文",
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-04T05:43:30Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接",
+        "relationship": "原始完整公开URL已恢复"
+      }
+    ]
+  }
+}

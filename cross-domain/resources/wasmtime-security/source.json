@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "resource_id": "url:https://docs.wasmtime.dev/security.html",
+  "title": "Security",
+  "resource_kind": "official_documentation",
+  "resource_subtype": "official_runtime_security_documentation",
+  "canonical_folder": "cross-domain/resources/wasmtime-security",
+  "official_url": "https://docs.wasmtime.dev/security.html",
+  "official_fulltext_url": "https://docs.wasmtime.dev/security.html",
+  "read_version": "2026-10-04所见动态官方页面；未固定不可变版本",
+  "version_status": "see_read_version_and_date_basis",
+  "reading_depth": "webassembly_core_defense_in_depth_filesystem_access",
+  "reading_scope": "webassembly_core_defense_in_depth_filesystem_access",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "按实际选读范围记录的资料卡；未创建独立reading.md，不增加全文精读数。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "只链接官方或作者原文；未确认再分发许可，不镜像第三方全文。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "topic_paths": [
+    "cross-domain/agents"
+  ],
+  "source_record_updated": "2026-10-04",
+  "verification_2026_10_04": {
+    "reading_scope": "webassembly_core_defense_in_depth_filesystem_access",
+    "verification_status": "verified_primary_page",
+    "verification_sources": [
+      "https://docs.wasmtime.dev/security.html"
+    ],
+    "mechanism_summary": "Wasm 实例以 imports/exports 与外界交互而非原生任意 syscall；Wasmtime 的 WASI 文件接口使用 capability 模型，仅提供显式授予的文件访问。",
+    "evidence_boundary": "保护依赖宿主暴露接口；不是把任意原生程序原样装进去的 VM。 运行时实现仍可能有缺陷，文档另外列出纵深缓解。 历史没有恢复独立 WASI 原始链接，不能把此页伪装成那条缺失引用。",
+    "read_version": "2026-10-04所见动态官方页面；未固定不可变版本",
+    "source_origin": "historical_assistant_recommendation",
+    "original_chat_urls": [
+      "https://docs.wasmtime.dev/security.html"
+    ]
+  },
+  "year": null,
+  "publication_date": null,
+  "date_basis": "动态运行时文档，无固定发布日期",
+  "source_origin": "historical_assistant_recommendation",
+  "modality_tags": [
+    "text",
+    "code"
+  ],
+  "task_tags": [
+    "analysis"
+  ],
+  "catalog_provenance_2026_10_04": {
+    "reading_scope": "webassembly_core_defense_in_depth_filesystem_access",
+    "mechanism_summary": "Wasm 实例以 imports/exports 与外界交互而非原生任意 syscall；Wasmtime 的 WASI 文件接口使用 capability 模型，仅提供显式授予的文件访问。",
+    "evidence_boundary": "保护依赖宿主暴露接口；不是把任意原生程序原样装进去的 VM。 运行时实现仍可能有缺陷，文档另外列出纵深缓解。 历史没有恢复独立 WASI 原始链接，不能把此页伪装成那条缺失引用。",
+    "read_version": "2026-10-04所见动态官方页面；未固定不可变版本",
+    "verification_status": "verified_primary_page",
+    "verification_sources": [
+      "https://docs.wasmtime.dev/security.html"
+    ],
+    "original_chat_urls": [
+      "https://docs.wasmtime.dev/security.html"
+    ],
+    "caveats": [
+      "保护依赖宿主暴露接口；不是把任意原生程序原样装进去的 VM。",
+      "运行时实现仍可能有缺陷，文档另外列出纵深缓解。",
+      "历史没有恢复独立 WASI 原始链接，不能把此页伪装成那条缺失引用。"
+    ],
+    "official_identity": "Wasmtime 官方项目文档；链接 Bytecode Alliance 历史文章",
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-04T04:29:29Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接",
+        "relationship": "原始完整公开URL已恢复"
+      }
+    ]
+  }
+}

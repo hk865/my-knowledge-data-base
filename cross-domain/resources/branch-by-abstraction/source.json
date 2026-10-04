@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "resource_id": "url:https://martinfowler.com/bliki/BranchByAbstraction.html",
+  "title": "Branch By Abstraction",
+  "resource_kind": "author_article",
+  "resource_subtype": "author_article",
+  "canonical_folder": "cross-domain/resources/branch-by-abstraction",
+  "official_url": "https://martinfowler.com/bliki/BranchByAbstraction.html",
+  "official_fulltext_url": "https://martinfowler.com/bliki/BranchByAbstraction.html",
+  "read_version": "页面署名日期",
+  "version_status": "see_read_version_and_date_basis",
+  "reading_depth": "short_engineering_article_read",
+  "reading_scope": "迁移流程、变体、持续交付条件全文；未跟读外链",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "按实际选读范围记录的资料卡；未创建独立reading.md，不增加全文精读数。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "只链接官方或作者原文；未确认再分发许可，不镜像第三方全文。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "topic_paths": [
+    "cross-domain/agents"
+  ],
+  "source_record_updated": "2026-10-04",
+  "verification_2026_10_04": {
+    "reading_scope": "迁移流程、变体、持续交付条件全文；未跟读外链",
+    "verification_status": "verified_primary_source",
+    "verification_sources": [
+      "https://martinfowler.com/bliki/BranchByAbstraction.html"
+    ],
+    "mechanism_summary": "先用抽象层承接旧实现，再使新旧实现共存，逐段切换并最终删除旧实现；全过程保持可构建、可运行、可发布，降低一次性替换风险",
+    "evidence_boundary": "不是为所有系统保证逐客户切换；原文明确存在必须整体切换的变体 迁移策略不自动解决数据兼容、回滚与外部行为验证",
+    "read_version": "页面署名日期",
+    "source_origin": "historical_assistant_recommendation",
+    "original_chat_urls": [
+      "https://martinfowler.com/bliki/BranchByAbstraction.html"
+    ]
+  },
+  "year": "2014",
+  "authors": [
+    "Martin Fowler"
+  ],
+  "publication_date": "2014-01-07",
+  "date_basis": "页面署名日期",
+  "source_origin": "historical_assistant_recommendation",
+  "modality_tags": [
+    "text",
+    "code"
+  ],
+  "task_tags": [
+    "analysis"
+  ],
+  "catalog_provenance_2026_10_04": {
+    "reading_scope": "迁移流程、变体、持续交付条件全文；未跟读外链",
+    "mechanism_summary": "先用抽象层承接旧实现，再使新旧实现共存，逐段切换并最终删除旧实现；全过程保持可构建、可运行、可发布，降低一次性替换风险",
+    "evidence_boundary": "不是为所有系统保证逐客户切换；原文明确存在必须整体切换的变体 迁移策略不自动解决数据兼容、回滚与外部行为验证",
+    "read_version": "页面署名日期",
+    "verification_status": "verified_primary_source",
+    "verification_sources": [
+      "https://martinfowler.com/bliki/BranchByAbstraction.html"
+    ],
+    "original_chat_urls": [
+      "https://martinfowler.com/bliki/BranchByAbstraction.html"
+    ],
+    "caveats": [
+      "不是为所有系统保证逐客户切换；原文明确存在必须整体切换的变体",
+      "迁移策略不自动解决数据兼容、回滚与外部行为验证"
+    ],
+    "historical_fragment": null,
+    "official_identity": "Martin Fowler 原文；文中把术语命名追溯至Paul Hammant，并致谢Stacy Curl",
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-04T05:43:30Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接",
+        "relationship": "原始完整公开URL已恢复"
+      }
+    ]
+  }
+}

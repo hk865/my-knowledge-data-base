@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "resource_id": "url:https://claude.com/blog/building-multi-agent-systems-when-and-how-to-use-them",
+  "title": "Building multi-agent systems: When and how to use them",
+  "resource_kind": "official_blog",
+  "resource_subtype": "official_blog",
+  "canonical_folder": "cross-domain/resources/building-multi-agent-systems",
+  "official_url": "https://claude.com/blog/building-multi-agent-systems-when-and-how-to-use-them",
+  "official_fulltext_url": "https://claude.com/blog/building-multi-agent-systems-when-and-how-to-use-them",
+  "read_version": "页面 Date 字段；浏览器标题为 When to use multi-agent systems (and when not to)",
+  "version_status": "see_read_version_and_date_basis",
+  "reading_depth": "engineering_article_focused_reading",
+  "reading_scope": "定义、单Agent优先、三种收益条件、上下文拆分、独立核验及限制；示例代码未执行",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "按实际选读范围记录的资料卡；未创建独立reading.md，不增加全文精读数。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "只链接官方或作者原文；未确认再分发许可，不镜像第三方全文。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "topic_paths": [
+    "cross-domain/agents"
+  ],
+  "source_record_updated": "2026-10-04",
+  "verification_2026_10_04": {
+    "reading_scope": "定义、单Agent优先、三种收益条件、上下文拆分、独立核验及限制；示例代码未执行",
+    "verification_status": "verified_primary_source",
+    "verification_sources": [
+      "https://claude.com/blog/building-multi-agent-systems-when-and-how-to-use-them"
+    ],
+    "mechanism_summary": "多Agent的明确收益来自上下文隔离、可独立并行工作、专门工具或领域上下文；按上下文边界拆任务；同一功能的实现和测试通常共享上下文，黑盒核验可独立；核验须有明确标准并检查边界/失败场景，防止过早宣告通过",
+    "evidence_boundary": "工程经验和示意代码，不是经复现的普遍定律 层级深度、工具数、token开销是条件性经验，不能推导越深越强或用户已接受某预算",
+    "read_version": "页面 Date 字段；浏览器标题为 When to use multi-agent systems (and when not to)",
+    "source_origin": "historical_assistant_recommendation",
+    "original_chat_urls": [
+      "https://claude.com/blog/building-multi-agent-systems-when-and-how-to-use-them"
+    ]
+  },
+  "year": "2026",
+  "authors": [
+    "Cara Phillips"
+  ],
+  "publication_date": "2026-01-23",
+  "date_basis": "页面 Date 字段；浏览器标题为 When to use multi-agent systems (and when not to)",
+  "source_origin": "historical_assistant_recommendation",
+  "modality_tags": [
+    "text",
+    "code"
+  ],
+  "task_tags": [
+    "analysis"
+  ],
+  "catalog_provenance_2026_10_04": {
+    "reading_scope": "定义、单Agent优先、三种收益条件、上下文拆分、独立核验及限制；示例代码未执行",
+    "mechanism_summary": "多Agent的明确收益来自上下文隔离、可独立并行工作、专门工具或领域上下文；按上下文边界拆任务；同一功能的实现和测试通常共享上下文，黑盒核验可独立；核验须有明确标准并检查边界/失败场景，防止过早宣告通过",
+    "evidence_boundary": "工程经验和示意代码，不是经复现的普遍定律 层级深度、工具数、token开销是条件性经验，不能推导越深越强或用户已接受某预算",
+    "read_version": "页面 Date 字段；浏览器标题为 When to use multi-agent systems (and when not to)",
+    "verification_status": "verified_primary_source",
+    "verification_sources": [
+      "https://claude.com/blog/building-multi-agent-systems-when-and-how-to-use-them"
+    ],
+    "original_chat_urls": [
+      "https://claude.com/blog/building-multi-agent-systems-when-and-how-to-use-them"
+    ],
+    "caveats": [
+      "工程经验和示意代码，不是经复现的普遍定律",
+      "层级深度、工具数、token开销是条件性经验，不能推导越深越强或用户已接受某预算"
+    ],
+    "historical_fragment": null,
+    "official_identity": "Anthropic 的 Claude 官方开发博客",
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-04T05:43:30Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接",
+        "relationship": "原始完整公开URL已恢复"
+      }
+    ]
+  }
+}

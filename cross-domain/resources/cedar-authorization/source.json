@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "resource_id": "url:https://docs.cedarpolicy.com/auth/authorization.html",
+  "title": "How Cedar authorization works",
+  "resource_kind": "official_documentation",
+  "resource_subtype": "official_authorization_reference",
+  "canonical_folder": "cross-domain/resources/cedar-authorization",
+  "official_url": "https://docs.cedarpolicy.com/auth/authorization.html",
+  "official_fulltext_url": "https://docs.cedarpolicy.com/auth/authorization.html",
+  "read_version": "2026-10-04所见动态官方页面；未固定不可变版本",
+  "version_status": "see_read_version_and_date_basis",
+  "reading_depth": "authorization_algorithm_and_diagnostics_sections",
+  "reading_scope": "authorization_algorithm_and_diagnostics_sections",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "按实际选读范围记录的资料卡；未创建独立reading.md，不增加全文精读数。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "只链接官方或作者原文；未确认再分发许可，不镜像第三方全文。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "topic_paths": [
+    "cross-domain/agents"
+  ],
+  "source_record_updated": "2026-10-04",
+  "verification_2026_10_04": {
+    "reading_scope": "authorization_algorithm_and_diagnostics_sections",
+    "verification_status": "verified_primary_page",
+    "verification_sources": [
+      "https://docs.cedarpolicy.com/auth/authorization.html"
+    ],
+    "mechanism_summary": "应用为 principal/action/resource/context 调用 authorizer；无匹配 permit 默认拒绝，匹配 forbid 优先，错误 policy 被跳过并回报 diagnostics。",
+    "evidence_boundary": "应用必须在动作执行点使用并执行返回结果；决策引擎不是 OS 沙箱。 skip-on-error 不能描述成所有 policy 错误一律 fail-closed。",
+    "read_version": "2026-10-04所见动态官方页面；未固定不可变版本",
+    "source_origin": "historical_assistant_recommendation",
+    "original_chat_urls": [
+      "https://docs.cedarpolicy.com/auth/authorization.html"
+    ]
+  },
+  "year": null,
+  "publication_date": null,
+  "date_basis": "持续更新语言参考页，无固定发布日期",
+  "source_origin": "historical_assistant_recommendation",
+  "modality_tags": [
+    "text",
+    "code"
+  ],
+  "task_tags": [
+    "analysis"
+  ],
+  "catalog_provenance_2026_10_04": {
+    "reading_scope": "authorization_algorithm_and_diagnostics_sections",
+    "mechanism_summary": "应用为 principal/action/resource/context 调用 authorizer；无匹配 permit 默认拒绝，匹配 forbid 优先，错误 policy 被跳过并回报 diagnostics。",
+    "evidence_boundary": "应用必须在动作执行点使用并执行返回结果；决策引擎不是 OS 沙箱。 skip-on-error 不能描述成所有 policy 错误一律 fail-closed。",
+    "read_version": "2026-10-04所见动态官方页面；未固定不可变版本",
+    "verification_status": "verified_primary_page",
+    "verification_sources": [
+      "https://docs.cedarpolicy.com/auth/authorization.html"
+    ],
+    "original_chat_urls": [
+      "https://docs.cedarpolicy.com/auth/authorization.html"
+    ],
+    "caveats": [
+      "应用必须在动作执行点使用并执行返回结果；决策引擎不是 OS 沙箱。",
+      "skip-on-error 不能描述成所有 policy 错误一律 fail-closed。"
+    ],
+    "official_identity": "Cedar 项目官方语言参考文档；页面指向 cedar-docs@amazon.com 与项目 GitHub",
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-04T04:29:29Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接",
+        "relationship": "原始完整公开URL已恢复"
+      }
+    ]
+  }
+}

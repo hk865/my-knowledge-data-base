@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "resource_id": "url:https://man7.org/linux/man-pages/man7/namespaces.7.html",
+  "title": "namespaces(7) — Linux manual page",
+  "resource_kind": "official_documentation",
+  "resource_subtype": "upstream_manual_rendering",
+  "canonical_folder": "cross-domain/resources/linux-namespaces",
+  "official_url": "https://man7.org/linux/man-pages/man7/namespaces.7.html",
+  "official_fulltext_url": "https://man7.org/linux/man-pages/man7/namespaces.7.html",
+  "read_version": "Linux man-pages 6.19",
+  "version_status": "see_read_version_and_date_basis",
+  "reading_depth": "description_namespace_types_and_colophon",
+  "reading_scope": "description_namespace_types_and_colophon",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "按实际选读范围记录的资料卡；未创建独立reading.md，不增加全文精读数。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "只链接官方或作者原文；未确认再分发许可，不镜像第三方全文。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "topic_paths": [
+    "cross-domain/agents"
+  ],
+  "source_record_updated": "2026-10-04",
+  "verification_2026_10_04": {
+    "reading_scope": "description_namespace_types_and_colophon",
+    "verification_status": "verified_primary_page",
+    "verification_sources": [
+      "https://man7.org/linux/man-pages/man7/namespaces.7.html"
+    ],
+    "mechanism_summary": "namespace 将全局系统资源呈现为实例化视图；类型覆盖 PID、mount、network、user 等不同资源。",
+    "evidence_boundary": "资源视图隔离不意味着每种业务访问都获正确授权，也不等于独立内核。 需要按 namespace 类型与配置判断实际边界。",
+    "read_version": "Linux man-pages 6.19",
+    "source_origin": "historical_assistant_recommendation",
+    "original_chat_urls": [
+      "https://man7.org/linux/man-pages/man7/namespaces.7.html"
+    ]
+  },
+  "year": null,
+  "publication_date": null,
+  "date_basis": "所读手册页日期 2026-02-08；Linux man-pages 6.19；HTML 创建/取源 2026-09-09。这些不是论文发布日期。",
+  "source_origin": "historical_assistant_recommendation",
+  "modality_tags": [
+    "text",
+    "code"
+  ],
+  "task_tags": [
+    "analysis"
+  ],
+  "catalog_provenance_2026_10_04": {
+    "reading_scope": "description_namespace_types_and_colophon",
+    "mechanism_summary": "namespace 将全局系统资源呈现为实例化视图；类型覆盖 PID、mount、network、user 等不同资源。",
+    "evidence_boundary": "资源视图隔离不意味着每种业务访问都获正确授权，也不等于独立内核。 需要按 namespace 类型与配置判断实际边界。",
+    "read_version": "Linux man-pages 6.19",
+    "verification_status": "verified_primary_page",
+    "verification_sources": [
+      "https://man7.org/linux/man-pages/man7/namespaces.7.html"
+    ],
+    "original_chat_urls": [
+      "https://man7.org/linux/man-pages/man7/namespaces.7.html"
+    ],
+    "caveats": [
+      "资源视图隔离不意味着每种业务访问都获正确授权，也不等于独立内核。",
+      "需要按 namespace 类型与配置判断实际边界。"
+    ],
+    "official_identity": "man7.org 的 Linux man-pages 上游内容 HTML 呈现；COLOPHON 明示来自 kernel.org man-pages-6.19，不冒称 Linux 内核官网页面",
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-04T04:29:29Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接",
+        "relationship": "原始完整公开URL已恢复"
+      }
+    ]
+  }
+}

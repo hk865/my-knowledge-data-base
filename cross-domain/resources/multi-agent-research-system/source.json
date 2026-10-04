@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "resource_id": "url:https://www.anthropic.com/engineering/multi-agent-research-system",
+  "title": "How we built our multi-agent research system",
+  "resource_kind": "official_blog",
+  "resource_subtype": "official_blog",
+  "canonical_folder": "cross-domain/resources/multi-agent-research-system",
+  "official_url": "https://www.anthropic.com/engineering/multi-agent-research-system",
+  "official_fulltext_url": "https://www.anthropic.com/engineering/multi-agent-research-system",
+  "read_version": "Published Jun 13, 2025",
+  "version_status": "see_read_version_and_date_basis",
+  "reading_depth": "engineering_report_focused_reading",
+  "reading_scope": "架构、分派合同、评估、可靠性及同步瓶颈；内部评估未复现",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "按实际选读范围记录的资料卡；未创建独立reading.md，不增加全文精读数。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "只链接官方或作者原文；未确认再分发许可，不镜像第三方全文。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "topic_paths": [
+    "cross-domain/agents"
+  ],
+  "source_record_updated": "2026-10-04",
+  "verification_2026_10_04": {
+    "reading_scope": "架构、分派合同、评估、可靠性及同步瓶颈；内部评估未复现",
+    "verification_status": "verified_primary_source",
+    "verification_sources": [
+      "https://www.anthropic.com/engineering/multi-agent-research-system"
+    ],
+    "mechanism_summary": "主研究Agent分解问题，独立子Agent搜索并压缩证据，再由主Agent综合和补查；有效分派包含目标、输出格式、工具/来源建议和明确边界；持久状态与检查点支持失败恢复；评估同时检查事实、引文、完整性、来源质量和工具效率，并保留人工测试",
+    "evidence_boundary": "结果针对其研究系统与内部评估，不能外推到任意编码任务 文中指出紧耦合和大量共享上下文不利于多Agent；发布时同步调度存在瓶颈",
+    "read_version": "Published Jun 13, 2025",
+    "source_origin": "historical_assistant_recommendation",
+    "original_chat_urls": [
+      "https://www.anthropic.com/engineering/multi-agent-research-system"
+    ]
+  },
+  "year": "2025",
+  "authors": [],
+  "publication_date": "2025-06-13",
+  "date_basis": "Published Jun 13, 2025",
+  "source_origin": "historical_assistant_recommendation",
+  "modality_tags": [
+    "text",
+    "code"
+  ],
+  "task_tags": [
+    "analysis"
+  ],
+  "catalog_provenance_2026_10_04": {
+    "reading_scope": "架构、分派合同、评估、可靠性及同步瓶颈；内部评估未复现",
+    "mechanism_summary": "主研究Agent分解问题，独立子Agent搜索并压缩证据，再由主Agent综合和补查；有效分派包含目标、输出格式、工具/来源建议和明确边界；持久状态与检查点支持失败恢复；评估同时检查事实、引文、完整性、来源质量和工具效率，并保留人工测试",
+    "evidence_boundary": "结果针对其研究系统与内部评估，不能外推到任意编码任务 文中指出紧耦合和大量共享上下文不利于多Agent；发布时同步调度存在瓶颈",
+    "read_version": "Published Jun 13, 2025",
+    "verification_status": "verified_primary_source",
+    "verification_sources": [
+      "https://www.anthropic.com/engineering/multi-agent-research-system"
+    ],
+    "original_chat_urls": [
+      "https://www.anthropic.com/engineering/multi-agent-research-system"
+    ],
+    "caveats": [
+      "结果针对其研究系统与内部评估，不能外推到任意编码任务",
+      "文中指出紧耦合和大量共享上下文不利于多Agent；发布时同步调度存在瓶颈"
+    ],
+    "historical_fragment": null,
+    "official_identity": "Anthropic 第一方工程报告",
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-04T05:43:30Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接",
+        "relationship": "原始完整公开URL已恢复"
+      }
+    ]
+  }
+}

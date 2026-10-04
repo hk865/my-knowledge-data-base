@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "resource_id": "url:https://github.com/NanmiCoder/dsh-agent-teams",
+  "title": "NanmiCoder/dsh-agent-teams — AgentTeams plugin for DeepSeek Harness",
+  "resource_kind": "repository",
+  "resource_subtype": "repository",
+  "canonical_folder": "cross-domain/resources/dsh-agent-teams",
+  "official_url": "https://github.com/NanmiCoder/dsh-agent-teams",
+  "official_fulltext_url": "https://github.com/NanmiCoder/dsh-agent-teams",
+  "read_version": "抓取时README显示插件v0.1.22；main可变化，未做不可变版本固定",
+  "version_status": "see_read_version_and_date_basis",
+  "reading_depth": "repository_documentation_read_only",
+  "reading_scope": "README、docs/usage.md与质量门禁相关段落；未下载、运行、测试或审计源码",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "按实际选读范围记录的资料卡；未创建独立reading.md，不增加全文精读数。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "只链接官方或作者原文；未确认再分发许可，不镜像第三方全文。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "topic_paths": [
+    "cross-domain/agents"
+  ],
+  "source_record_updated": "2026-10-04",
+  "verification_2026_10_04": {
+    "reading_scope": "README、docs/usage.md与质量门禁相关段落；未下载、运行、测试或审计源码",
+    "verification_status": "verified_primary_source",
+    "verification_sources": [
+      "https://github.com/NanmiCoder/dsh-agent-teams",
+      "https://github.com/NanmiCoder/dsh-agent-teams/blob/main/docs/usage.md",
+      "https://github.com/NanmiCoder/dsh-agent-teams/blob/main/docs/quality-gates.md"
+    ],
+    "mechanism_summary": "文档描述Captain、驻留成员、任务依赖、mailbox及可恢复attempt状态；质量任务使用目标/验收/范围/验证合同；README声明范围控制是完成时审计",
+    "evidence_boundary": "文档主张未做运行验证，不能称已经证实的可靠性保证 同进程序列化不等于跨进程一致性；声明范围不是host写入拦截 用户本轮是在学习协作前提，不代表安装插件、采纳profile或作出CodingPlatform决策",
+    "read_version": "抓取时README显示插件v0.1.22；main可变化，未做不可变版本固定",
+    "source_origin": "historical_assistant_recommendation",
+    "original_chat_urls": [
+      "https://github.com/NanmiCoder/dsh-agent-teams"
+    ]
+  },
+  "year": null,
+  "authors": [
+    "NanmiCoder"
+  ],
+  "publication_date": null,
+  "date_basis": "动态main未锁定commit，不能把抓取日期当发布日期",
+  "source_origin": "historical_assistant_recommendation",
+  "modality_tags": [
+    "text",
+    "code"
+  ],
+  "task_tags": [
+    "analysis"
+  ],
+  "catalog_provenance_2026_10_04": {
+    "reading_scope": "README、docs/usage.md与质量门禁相关段落；未下载、运行、测试或审计源码",
+    "mechanism_summary": "文档描述Captain、驻留成员、任务依赖、mailbox及可恢复attempt状态；质量任务使用目标/验收/范围/验证合同；README声明范围控制是完成时审计",
+    "evidence_boundary": "文档主张未做运行验证，不能称已经证实的可靠性保证 同进程序列化不等于跨进程一致性；声明范围不是host写入拦截 用户本轮是在学习协作前提，不代表安装插件、采纳profile或作出CodingPlatform决策",
+    "read_version": "抓取时README显示插件v0.1.22；main可变化，未做不可变版本固定",
+    "verification_status": "verified_primary_source",
+    "verification_sources": [
+      "https://github.com/NanmiCoder/dsh-agent-teams",
+      "https://github.com/NanmiCoder/dsh-agent-teams/blob/main/docs/usage.md",
+      "https://github.com/NanmiCoder/dsh-agent-teams/blob/main/docs/quality-gates.md"
+    ],
+    "original_chat_urls": [
+      "https://github.com/NanmiCoder/dsh-agent-teams"
+    ],
+    "caveats": [
+      "文档主张未做运行验证，不能称已经证实的可靠性保证",
+      "同进程序列化不等于跨进程一致性；声明范围不是host写入拦截",
+      "用户本轮是在学习协作前提，不代表安装插件、采纳profile或作出CodingPlatform决策"
+    ],
+    "historical_fragment": null,
+    "official_identity": "NanmiCoder 项目的第一方仓库；第三方DeepSeek Harness插件，不能称DeepSeek官方方案",
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-04T05:43:30Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接",
+        "relationship": "原始完整公开URL已恢复"
+      }
+    ]
+  }
+}
