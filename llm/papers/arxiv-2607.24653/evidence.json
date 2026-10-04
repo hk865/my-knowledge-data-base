@@ -1,0 +1,24 @@
+{
+  "training_science_extension_2026_10_04": {
+    "scope": "cross-domain/fields/training-science",
+    "verified_on": "2026-10-04",
+    "reading_kind": "selected_primary_sections_not_full_read",
+    "source": {
+      "resource_id": "arxiv:2607.24653",
+      "version": "v2",
+      "date": "2026-08-07",
+      "url": "https://arxiv.org/html/2607.24653v2",
+      "sections": [
+        "2.5",
+        "3.2",
+        "3.3"
+      ],
+      "supports": [
+        "QKV 按头动量分块正交化",
+        "WSD 与余弦学习率分别寻找最佳参数",
+        "整体规模收益来自多个同时变化的部件"
+      ],
+      "boundary": "报告未隔离整体收益中的每个部件贡献"
+    }
+  }
+}

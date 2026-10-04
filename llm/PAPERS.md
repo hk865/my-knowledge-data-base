@@ -33,10 +33,10 @@
 - [Probing Pretrained Models of Source Code](papers/arxiv-2202.08975/README.md) · 2022 · 文献卡，暂无独立精读
 - [Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity](papers/arxiv-2510.01171/README.md) · 2025 · 文献卡，暂无独立精读
 - [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](papers/arxiv-2405.15793/README.md) · 2024 · 文献卡，暂无独立精读
-- [Do NOT Think That Much for 2+3=? On the Overthinking of Long Reasoning Models](papers/url-https-proceedings.mlr.press-v267-chen25bx.html/README.md) · 年份见原文 · 文献卡，暂无独立精读
-- [Making Reasoning Matter: Measuring and Improving Faithfulness of Chain-of-Thought Reasoning](papers/url-https-aclanthology.org-2024.findings-emnlp.882/README.md) · 年份见原文 · 文献卡，暂无独立精读
-- [Measuring Chain of Thought Faithfulness by Unlearning Reasoning Steps](papers/url-https-aclanthology.org-2025.emnlp-main.504/README.md) · 年份见原文 · 文献卡，暂无独立精读
-- [Reasoning Does Not Necessarily Improve Role-Playing Ability](papers/url-https-aclanthology.org-2025.findings-acl.537/README.md) · 年份见原文 · 文献卡，暂无独立精读
+- [Do NOT Think That Much for 2+3=? On the Overthinking of Long Reasoning Models](papers/url-https-proceedings.mlr.press-v267-chen25bx.html/README.md) · 2025 · 文献卡，暂无独立精读
+- [Making Reasoning Matter: Measuring and Improving Faithfulness of Chain-of-Thought Reasoning](papers/url-https-aclanthology.org-2024.findings-emnlp.882/README.md) · 2024 · 文献卡，暂无独立精读
+- [Measuring Chain of Thought Faithfulness by Unlearning Reasoning Steps](papers/url-https-aclanthology.org-2025.emnlp-main.504/README.md) · 2025 · 文献卡，暂无独立精读
+- [Reasoning Does Not Necessarily Improve Role-Playing Ability](papers/url-https-aclanthology.org-2025.findings-acl.537/README.md) · 2025 · 文献卡，暂无独立精读
 - [Self-Discover: Large Language Models Self-Compose Reasoning Structures](papers/arxiv-2402.03620/README.md) · 2024 · 文献卡，暂无独立精读
 - [ReAct: Synergizing Reasoning and Acting in Language Models](../cross-domain/papers/react/README.md) · 2022 · 技术精读
 - [Voyager: An Open-Ended Embodied Agent with Large Language Models](papers/arxiv-2305.16291/README.md) · 2023 · 文献卡，暂无独立精读
@@ -126,9 +126,9 @@
 - [The Entropy Mechanism of Reinforcement Learning for Reasoning Language Models](papers/arxiv-2505.22617/README.md) · 2025 · 文献卡，暂无独立精读
 - [DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models](papers/arxiv-2512.02556/README.md) · 2025 · 技术精读
 - [DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression](papers/arxiv-2609.19969/README.md) · 2026 · 技术精读
-- [Learning to reason with LLMs](papers/openai-o1/README.md) · 2024 · 文献卡，暂无独立精读
-- [Qwen3.5-397B-A17B](papers/qwen3.5/README.md) · 2026 · 文献卡，暂无独立精读
-- [On-Policy Distillation](papers/thinking-machines-on-policy-distillation/README.md) · 2025 · 文献卡，暂无独立精读
+- [Learning to reason with LLMs](papers/openai-o1/README.md) · 2024 · 资料卡，暂无独立精读
+- [Qwen3.5-397B-A17B](papers/qwen3.5/README.md) · 2026 · 资料卡，暂无独立精读
+- [On-Policy Distillation](papers/thinking-machines-on-policy-distillation/README.md) · 2025 · 资料卡，暂无独立精读
 - [The Art of Scaling Reinforcement Learning Compute for LLMs](papers/arxiv-2510.13786/README.md) · 2025 · 文献卡，暂无独立精读
 - [The MiniMax-M2 Series: Mini Activations Unleashing Max Real-World Intelligence](papers/arxiv-2605.26494/README.md) · 2026 · 文献卡，暂无独立精读
 - [GLM-5: from Vibe Coding to Agentic Engineering](papers/arxiv-2602.15763/README.md) · 2026 · 文献卡，暂无独立精读
@@ -141,6 +141,9 @@
 - [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](papers/arxiv-1810.04805/README.md) · 2018 · 文献卡，暂无独立精读
 - [TinyBERT: Distilling BERT for Natural Language Understanding](papers/arxiv-1909.10351/README.md) · 2019 · 文献卡，暂无独立精读
 - [Transformers are SSMs: Generalized Models and Efficient Algorithms Through Structured State Space Duality](papers/arxiv-2405.21060/README.md) · 2024 · 文献卡，暂无独立精读
+
+## 2026年10月4日文献与资料增量
+
 - [Speculative Speculative Decoding](papers/arxiv-2603.03251/README.md) · 2026 · 文献卡，暂无独立精读
 - [On the Design of Qwen3.8-Next Architecture: Evaluation, Efficiency, and Training Stability](papers/arxiv-2608.30320/README.md) · 2026 · 文献卡，暂无独立精读
 - [Acceptance-Aware Draft Model Training for Speculative Decoding](papers/arxiv-2609.24150/README.md) · 2026 · 文献卡，暂无独立精读

@@ -1,0 +1,31 @@
+{
+  "foundations_extension_2026_10_04": {
+    "scope": [
+      "foundations/fields/architectures/README.md",
+      "foundations/lessons/14-attention-transformer.md",
+      "foundations/lessons/16-vae.md",
+      "foundations/lessons/17-diffusion.md"
+    ],
+    "verified_on": "2026-10-04",
+    "reading_kind": "selected_primary_sections_not_full_read",
+    "new_claim_limits": "不改VAE/DDPM历史定义；不宣称2025方法为当前SOTA；没有复现实验",
+    "source": {
+      "resource_id": "arxiv:2505.06708",
+      "version": "v1",
+      "date": "2025-05-10",
+      "url": "https://arxiv.org/html/2505.06708",
+      "sections": [
+        "abstract",
+        "1",
+        "2.2",
+        "4 overview"
+      ],
+      "supports": [
+        "head-specific sigmoid gate after SDPA",
+        "门控位置比较",
+        "输入相关输出筛选与非线性"
+      ],
+      "boundary": "仅实验模型与设置；不宣称替代所有标准注意力"
+    }
+  }
+}

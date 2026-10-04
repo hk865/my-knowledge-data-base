@@ -1,0 +1,14 @@
+{
+  "review_scope_check_2026_10_04": {
+    "sections": [
+      "abstract",
+      "§1",
+      "§2"
+    ],
+    "supports": "数学蒸馏实验分开测解题、答案标记与停止；小模型思考模式的停止退化与解题改善可并存。",
+    "boundary": "结论限该模型族和已核正文的数学设置；未全读附录或重算置信区间，未复现。",
+    "checked_on": "2026-10-04",
+    "official_url": "https://arxiv.org/html/2609.37326v1",
+    "scope": "review correction: clarify complementary conclusions and link knowledge-distillation"
+  }
+}

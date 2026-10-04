@@ -1,0 +1,31 @@
+{
+  "foundations_extension_2026_10_04": {
+    "scope": [
+      "foundations/fields/architectures/README.md",
+      "foundations/lessons/14-attention-transformer.md",
+      "foundations/lessons/16-vae.md",
+      "foundations/lessons/17-diffusion.md"
+    ],
+    "verified_on": "2026-10-04",
+    "reading_kind": "selected_primary_sections_not_full_read",
+    "new_claim_limits": "不改VAE/DDPM历史定义；不宣称2025方法为当前SOTA；没有复现实验",
+    "source": {
+      "resource_id": "arxiv:2510.26692",
+      "version": "v2",
+      "date": "2025-11-01",
+      "url": "https://arxiv.org/html/2510.26692",
+      "sections": [
+        "abstract",
+        "1",
+        "2.2",
+        "3 equation1",
+        "4 hybrid structure"
+      ],
+      "supports": [
+        "KDA细粒度遗忘与delta rule",
+        "KDA与MLA混合层"
+      ],
+      "boundary": "不把混合模型效果写成纯线性递推的结果"
+    }
+  }
+}

@@ -23,7 +23,9 @@
   "fulltext_local_status": "official_link_only_pending_license_verification",
   "fulltext_local_path": null,
   "legacy_paths": [],
-  "evidence_paths": [],
+  "evidence_paths": [
+    "llm/papers/arxiv-2602.06036/evidence.json"
+  ],
   "topic_paths": [
     "llm/inference"
   ],

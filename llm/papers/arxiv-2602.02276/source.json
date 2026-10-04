@@ -63,5 +63,16 @@
   "task_tags": [
     "generation",
     "decision"
-  ]
+  ],
+  "vlm_direction_reference_2026_10_04": {
+    "checked_on": "2026-10-04",
+    "purpose": "按方向补充问题链与阅读优先级；原有奠基论文保留",
+    "boundary": "只核所列章节或摘要，未复现实验；新卡均为bibliographic_card；原始正式版不可达时不引定量结果。",
+    "source": {
+      "resource_id": "arxiv:2602.02276",
+      "version": "v2",
+      "selected_sections": "§2.1–2.3",
+      "official_url": "https://arxiv.org/abs/2602.02276"
+    }
+  }
 }

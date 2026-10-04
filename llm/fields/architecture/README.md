@@ -1,6 +1,6 @@
 # 架构与效率
 
-> 状态：领域入门页（研究对象变体）· v2 · 依据 [synthesis.csv](synthesis.csv)（23 篇）
+> 状态：领域入门页（研究对象变体）· v2 · 依据 [synthesis.csv](synthesis.csv)（24 篇）
 >
 > 速览：
 > 1. 本方向研究网络结构本身：token 之间怎样交换信息（注意力及其替代），每个 token 怎样被加工（FFN、MoE、查表记忆），几十上百层怎样串起来（归一化与残差），生成时缓存什么（KV 缓存）。它没有专属的 benchmark，好坏只能写成"某类工作负载下、花多少成本、得到多少质量"，所以本页先讲任务和测量，再讲方法谱系与历史。
@@ -122,7 +122,7 @@ benchmark 的替换就是这个方向目标的迁移：WMT 机器翻译的 BLEU�
 
 结论：这条线把整段历史压进一个固定大小的状态，推理时每步的计算与显存都不随长度增长；代价是召回，所以 2024 年以后的生产模型都把它与一小部分精确注意力混合。
 
-这些模型在数学上都是"用上一步的状态和本步输入算新状态"的递推，差别在状态转移怎样设计（[递推状态谱系](../../../foundations/relations/recurrent-state.md)）：线性注意力的转移是单位阵、只累加；S4 与 [LRU](../../papers/arxiv-2303.06349/README.md) 的转移固定、可并行扫描；[Mamba](../../papers/mamba/reading.md) 的转移随输入变化，既能按内容选择又能并行。机制入门见 [SSM、GNN 与 MoE 讲义](../../../foundations/lessons/18-ssm-gnn-moe.md)第 2 节。
+这些模型在数学上都是"用上一步的状态和本步输入算新状态"的递推，差别在状态转移怎样设计（[递推状态谱系](../../../foundations/relations/recurrent-state.md)）：加法式线性注意力的转移是单位阵、只累加；S4 与 [LRU](../../papers/arxiv-2303.06349/README.md) 的转移固定、可并行扫描；[Mamba](../../papers/mamba/reading.md) 的转移随输入变化，既能按内容选择又能并行。机制入门见 [SSM、GNN 与 MoE 讲义](../../../foundations/lessons/18-ssm-gnn-moe.md)第 2 节。
 
 | 节点 | 状态与读取 | 换来什么 | 做不好的地方 |
 |---|---|---|---|
@@ -132,6 +132,7 @@ benchmark 的替换就是这个方向目标的迁移：WMT 机器翻译的 BLEU�
 | [Jamba](../../papers/arxiv-2403.19887/README.md)（AI21 2024） | 注意力:Mamba = 1:7，加 MoE | 256K 上下文 KV 缓存 4GB，Mixtral 为 32GB | 7B 级时 Mamba 层内部出现大激活值与损失尖峰，加 RMSNorm 才稳定 |
 | [Kimi Linear](../../papers/arxiv-2510.26692/README.md)（2025）→ [Kimi K3](../../papers/arxiv-2607.24653/README.md)（2026） | KDA（带逐通道遗忘门的线性注意力）:MLA = 3:1，全局层不用位置编码；K3 最后一层固定为全局注意力 | 相同 1.4T token 配方下超过全 MLA 基线；KV 缓存最多少 75% | 7:1 时分布外验证明显变差；作者把长上下文检索列为纯线性结构的主要瓶颈 |
 | [Qwen3.5](../../papers/qwen3.5/README.md)（2026-02）→ Qwen3.6（2026-04） | Gated DeltaNet:门控注意力 = 3:1（沿用 Qwen3-Next），稠密的 27B 与 MoE 都用 | 原生 262K，可扩展到约 1M | 只有模型卡，没有消融 |
+| [Qwen3.8-Next](../../papers/arxiv-2608.30320/README.md)（2026-08，Flash-Next） | 三层 GDN 递推接一层 QSA（索引小块，再读取选中块内 token 的稀疏注意力），保留 RoPE | 递推层省状态成本，全局层再省读取与索引开销 | NoPE 对照后训练后更容易不停生成；稀疏模块加速与整机吞吐分别测量 |
 | [Nemotron 3](../../papers/arxiv-2512.20856/README.md)（NVIDIA 2025-12） | Mamba-2 与 MoE 交错为主，只留少数注意力层，注意力层不用 RoPE | Nano 吞吐为 Qwen3-30B-A3B 的 3.3 倍（8K 入、16K 出）；1M RULER 54.19 | 白皮书未给出层比例；1M 上仍只有约一半 |
 
 做不好的场景：[Repeat After Me](../../papers/arxiv-2402.01032/README.md) 证明固定状态的模型无法准确复制比状态比特数更长的串，学会复制长度 300 的串所需样本是 Transformer 的 100 倍以上；Jamba 中 1.3B 的纯 Mamba 在 IMDB 上常不按"Positive / Negative"作答，得分 48.8，纯注意力 84.1，混合 90.9；Based 测得召回密集任务上注意力比 Mamba 高 32.2 个百分点。
@@ -262,10 +263,10 @@ benchmark 的替换就是这个方向目标的迁移：WMT 机器翻译的 BLEU�
 | 智谱（GLM） | 不自研注意力，直接采用 DeepSeek 的 DSA，并在 9B 上比较了滑窗与线性注意力 | [GLM-5](../../papers/arxiv-2602.15763/README.md) | 128K 上比稠密低 0.35 分 |
 | MiniMax | 从 Lightning Attention 混合（MiniMax-Text-01）退回全注意力，等基础设施与评测成熟 | [MiniMax-M2](../../papers/arxiv-2605.26494/README.md) | 长序列成本按平方增长 |
 | NVIDIA | Mamba-2 为主的混合加 LatentMoE，全部公开 | [Nemotron 3](../../papers/arxiv-2512.20856/README.md) | 层比例与消融在白皮书中未量化 |
-| 阿里巴巴 Qwen（2026 起） | 从 GQA 稠密/MoE 转为 Gated DeltaNet 3:1 混合 | [Qwen3.5](../../papers/qwen3.5/README.md) | 只有模型卡 |
+| 阿里巴巴 Qwen（2026） | GDN 3:1 混合后，在 Flash-Next 的全局层叠加 QSA 稀疏读取 | [Qwen3.5](../../papers/qwen3.5/README.md)、[Qwen3.8-Next](../../papers/arxiv-2608.30320/README.md) | 3.5 的依据是模型卡；3.8-Next 报告补了结构消融，结论限所测变体 |
 | OpenAI（开放权重） | 窗口层与稠密层交替、GQA、可学习的 sink 偏置、MoE 权重 4 位（MXFP4）后训练量化 | [gpt-oss 模型卡](https://arxiv.org/abs/2508.10925) | 闭源主力模型的结构仍不公开 |
 
-`[判断]` 收敛与分化：MoE 与"少量全局层 + 大量省 KV 的层"已是开源大模型的共同选择；KV 缓存压缩各家都做。分化在三处：长上下文用训练时稀疏（DeepSeek）还是线性混合（Kimi）；注意力汇聚是消除（Qwen）还是显式提供（DeepSeek-V4）；残差流用约束混合（DeepSeek）还是跨层注意力（Kimi）。
+`[判断]` 收敛与分化：MoE 与"少量全局层 + 大量省 KV 的层"已是开源大模型的共同选择；KV 缓存压缩各家都做。分化在三处：长上下文的稀疏读取与递推状态怎样配比或组合（DeepSeek、Kimi、Qwen）；注意力汇聚是消除（Qwen）还是显式提供（DeepSeek-V4）；残差流用约束混合（DeepSeek）还是跨层注意力（Kimi）。
 
 ## 当前开放问题
 
@@ -307,6 +308,7 @@ benchmark 的替换就是这个方向目标的迁移：WMT 机器翻译的 BLEU�
 - 省 KV 的结构挡住其他部件：Kimi K2（MLA 与 QK-Norm，见卡片）、NSA §2（Quest 式逐头选择与 GQA）、NSA §3 的按组共享选择。
 - 共享 KV 在压缩后回来：DeepSeek-V4 §2 中 CSA、HCA 的 "Shared Key-Value MQA"。
 - 推理期稀疏猜不准：NSA §2 与 Table 2、StreamingLLM 卡片的自述局限、V4.1-Flash §1（稀疏注意力 64K 从头训练）。
+- 递推与稀疏可以组合：Qwen3.8-Next §2.1.1–2.1.2。边界：QSA 只对应 Flash-Next；同系列 Qwen3.8-27B 模型卡仍用 GDN 加门控全注意力。
 - 固定状态需要混合：Based §3 与 Theorem 3.1、Repeat After Me §4–5、Jamba §6.2、Kimi Linear §4 与 Table 1、Kimi K3 卡片（最后一层全局）。反例：Mamba 原文的规模定律中纯 Mamba 在 1.3B 以下追平 Transformer++；Jamba Table 5 中 7B、50B token 的纯 Mamba "相当有竞争力"。
 - 早期 MoE 的修补层次与新不稳定：Switch §2.4 与 §8、DeepSeekMoE §1–3、无辅助损失均衡 §1–2、DeepSeek-V4 §4.2.3（见卡片）、Kimi K3 卡片。
 - MoE 挤压注意力：DeepSeekMoE 第 5 节、Kimi K2（见预训练方向"更深更大的网络"一节）。

@@ -225,5 +225,29 @@
     "no_scraped_fulltext_in_public_output": true,
     "not_a_verbatim_translation": true,
     "original_explanatory_examples_labeled": true
+  },
+  "foundations_extension_2026_10_04": {
+    "scope": [
+      "foundations/fields/architectures/README.md",
+      "foundations/lessons/14-attention-transformer.md",
+      "foundations/lessons/16-vae.md",
+      "foundations/lessons/17-diffusion.md"
+    ],
+    "verified_on": "2026-10-04",
+    "reading_kind": "selected_primary_sections_not_full_read",
+    "new_claim_limits": "不改VAE/DDPM历史定义；不宣称2025方法为当前SOTA；没有复现实验",
+    "source": {
+      "resource_id": "arxiv:2601.07372",
+      "url": "https://arxiv.org/html/2601.07372",
+      "sections": [
+        "abstract",
+        "3 sparse allocation"
+      ],
+      "supports": [
+        "N-gram哈希查表的条件记忆",
+        "存储与计算参数分配"
+      ],
+      "boundary": "依赖上下文的计算仍需主干；既有关系页已接2026年后继，本轮不重写"
+    }
   }
 }

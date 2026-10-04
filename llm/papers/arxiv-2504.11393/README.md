@@ -2,9 +2,17 @@
 
 > 状态：文献卡 · 2025 · [原文](https://arxiv.org/abs/2504.11393)
 
+[返回大语言模型目录](../../README.md) · [原文与阅读记录](source.json)
+
 - **解决什么**：训练大模型前，怎样用便宜的小实验选出更好的预训练数据。
 - **核心方法**：把数据配方、模型规模和随机种子交叉控制，直接比较小规模排名与多尺度拟合能否选对目标规模的数据；在其设定下，简单排名是强基线。
-- **为什么在这个库里**：补上[预训练](../../fields/pretraining/README.md)“小模型定数据配方”的证据：先评估是否选对数据，再看能否预测分数。优先级：必读。
+- **为什么在这个库里**：补上[预训练](../../fields/pretraining/README.md)"小模型定数据配方"的证据：先评估是否选对数据，再看能否预测分数。优先级：必读。
+
+## 身份信息
+
+- 作者：Ian Magnusson、Nguyen Tai、Ben Bogin、David Heineman、Jena D. Hwang、Luca Soldaini、Akshita Bhagia、Jiacheng Liu、Dirk Groeneveld、Oyvind Tafjord、Noah A. Smith、Pang Wei Koh、Jesse Dodge
+- 稳定标识：arxiv:2504.11393 · [全文](https://arxiv.org/pdf/2504.11393)
+- 方向：llm/pretraining
 
 ## 批注
 

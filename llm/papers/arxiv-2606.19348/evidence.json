@@ -24,7 +24,13 @@
       "B Evaluation details (Tables 9–14) skimmed"
     ],
     "references": "used for provenance (Cheng et al. 2026 = Engram cited as future direction)",
-    "visual_source_pages_checked": [1, 9, 11, 22, 40],
+    "visual_source_pages_checked": [
+      1,
+      9,
+      11,
+      22,
+      40
+    ],
     "method": "downloaded official PDF v1; extracted full text with PyMuPDF; rendered page 1 for Figure 1; numbers taken from extracted text"
   },
   "supplementary_official_sources": [
@@ -177,5 +183,23 @@
     "no_scraped_fulltext_in_public_output": true,
     "not_a_verbatim_translation": true,
     "original_explanatory_examples_labeled": true
+  },
+  "inference_overview_verification_2026_10_04": {
+    "checked_at": "2026-10-04",
+    "scope": "概览过时结论修正、机制导读扩充与原创图示",
+    "source": {
+      "url": "https://arxiv.org/html/2606.19348v1",
+      "sections": [
+        "5.1.1"
+      ],
+      "supports": "专家 RL 使用不同长度惩罚和上下文窗口，对应三种模式。"
+    },
+    "reading_depth": "selected_sections_checked_not_full_read",
+    "boundaries": [
+      "没有复现性能",
+      "没有审计生产代码",
+      "旧有未改动性能表保留既有证据边界",
+      "新预印本的训练代理目标与部署保真分开解释"
+    ]
   }
 }

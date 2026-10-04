@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="790" viewBox="0 0 1320 790" role="img" aria-labelledby="title desc">
+<title id="title">同样叫验证，保证的对象不同</title>
+<desc id="desc">三条并列流程：草稿 token 经目标概率与残差修正，保持目标分布；答案经测试或评审，检查任务标准；路由决定由哪个模型继续，比较质量和成本。</desc>
+<rect width="1320" height="790" fill="#f7f9fc"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#71889a"/></marker></defs>
+<g font-family="Noto Sans CJK SC, Microsoft YaHei, sans-serif">
+<text x="38" y="58" fill="#18324f" font-size="31" font-weight="bold" text-anchor="start">同样叫“验证”，保证的对象不同</text>
+<text x="40" y="94" fill="#536b80" font-size="21" font-weight="normal" text-anchor="start">先确认在检查什么，再问接受、拒绝或交接意味着什么</text>
+<text x="214" y="143" fill="#536b80" font-size="19" font-weight="bold" text-anchor="start">输入</text>
+<text x="544" y="143" fill="#536b80" font-size="19" font-weight="bold" text-anchor="start">决策依据</text>
+<text x="991" y="143" fill="#536b80" font-size="19" font-weight="bold" text-anchor="start">输出与边界</text>
+<text x="40" y="212" fill="#536b80" font-size="22" font-weight="bold" text-anchor="start">01</text>
+<text x="40" y="254" fill="#18324f" font-size="23" font-weight="bold" text-anchor="start">概率验证</text>
+<rect x="190" y="170" width="275" height="145" rx="12" fill="#e4efff" stroke="#cbd6e0"/>
+<rect x="510" y="170" width="410" height="145" rx="12" fill="#e4efff" stroke="#cbd6e0"/>
+<rect x="965" y="170" width="315" height="145" rx="12" fill="#e4efff" stroke="#cbd6e0"/>
+<path d="M473 242 H501" fill="none" stroke="#71889a" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M928 242 H956" fill="none" stroke="#71889a" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="210" y="218" fill="#18324f" font-size="19" font-weight="normal" text-anchor="start">草稿器提出 token x</text>
+<text x="210" y="253" fill="#18324f" font-size="19" font-weight="normal" text-anchor="start">同时保留实际草稿概率 D</text>
+<text x="530" y="204" fill="#18324f" font-size="19" font-weight="normal" text-anchor="start">目标模型计算同前缀的 T</text>
+<text x="530" y="239" fill="#18324f" font-size="19" font-weight="normal" text-anchor="start">按 min(1, T(x) / D(x)) 接受</text>
+<text x="530" y="274" fill="#18324f" font-size="19" font-weight="normal" text-anchor="start">拒绝时从残差分布补样</text>
+<text x="985" y="218" fill="#18324f" font-size="19" font-weight="bold" text-anchor="start">遵循指定的目标分布 T</text>
+<text x="985" y="253" fill="#18324f" font-size="19" font-weight="normal" text-anchor="start">事实能力来自目标模型</text>
+<text x="40" y="397" fill="#536b80" font-size="22" font-weight="bold" text-anchor="start">02</text>
+<text x="40" y="439" fill="#18324f" font-size="23" font-weight="bold" text-anchor="start">答案验证</text>
+<rect x="190" y="355" width="275" height="145" rx="12" fill="#e1f3ec" stroke="#cbd6e0"/>
+<rect x="510" y="355" width="410" height="145" rx="12" fill="#e1f3ec" stroke="#cbd6e0"/>
+<rect x="965" y="355" width="315" height="145" rx="12" fill="#e1f3ec" stroke="#cbd6e0"/>
+<path d="M473 427 H501" fill="none" stroke="#71889a" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M928 427 H956" fill="none" stroke="#71889a" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="210" y="403" fill="#18324f" font-size="19" font-weight="normal" text-anchor="start">多份答案 / 一份证明</text>
+<text x="210" y="438" fill="#18324f" font-size="19" font-weight="normal" text-anchor="start">待检查的是任务内容</text>
+<text x="530" y="389" fill="#18324f" font-size="19" font-weight="normal" text-anchor="start">测试、规则或评审模型</text>
+<text x="530" y="424" fill="#18324f" font-size="19" font-weight="normal" text-anchor="start">检查答案或推理是否满足标准</text>
+<text x="530" y="459" fill="#18324f" font-size="19" font-weight="normal" text-anchor="start">据此筛选、重排或修改</text>
+<text x="985" y="403" fill="#18324f" font-size="19" font-weight="bold" text-anchor="start">通过所采用的检查标准</text>
+<text x="985" y="438" fill="#18324f" font-size="19" font-weight="normal" text-anchor="start">可靠性取决于验证器</text>
+<text x="40" y="582" fill="#536b80" font-size="22" font-weight="bold" text-anchor="start">03</text>
+<text x="40" y="624" fill="#18324f" font-size="23" font-weight="bold" text-anchor="start">模型路由</text>
+<rect x="190" y="540" width="275" height="145" rx="12" fill="#fff0d2" stroke="#cbd6e0"/>
+<rect x="510" y="540" width="410" height="145" rx="12" fill="#fff0d2" stroke="#cbd6e0"/>
+<rect x="965" y="540" width="315" height="145" rx="12" fill="#fff0d2" stroke="#cbd6e0"/>
+<path d="M473 612 H501" fill="none" stroke="#71889a" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M928 612 H956" fill="none" stroke="#71889a" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="210" y="588" fill="#18324f" font-size="19" font-weight="normal" text-anchor="start">任务 / 当前生成前缀</text>
+<text x="210" y="623" fill="#18324f" font-size="19" font-weight="normal" text-anchor="start">待决定的是谁继续工作</text>
+<text x="530" y="574" fill="#18324f" font-size="19" font-weight="normal" text-anchor="start">置信度、预算或学到的策略</text>
+<text x="530" y="609" fill="#18324f" font-size="19" font-weight="normal" text-anchor="start">选择小模型继续 / 大模型接管</text>
+<text x="530" y="644" fill="#18324f" font-size="19" font-weight="normal" text-anchor="start">交接粒度可为整题或片段</text>
+<text x="985" y="588" fill="#18324f" font-size="19" font-weight="bold" text-anchor="start">任务质量与成本的折中</text>
+<text x="985" y="623" fill="#18324f" font-size="19" font-weight="normal" text-anchor="start">分布目标需要另行说明</text>
+<text x="40" y="738" fill="#18324f" font-size="21" font-weight="normal" text-anchor="start">三者可以组合：逐项写清保证的对象，再比较任务质量、延迟与总成本</text>
+<text x="40" y="768" fill="#536b80" font-size="16" font-weight="normal" text-anchor="start">原创机制图 · 不表示论文实测结果 · 概率验证依据 Leviathan / Chen；路由示例见 RelayLLM</text>
+</g></svg>

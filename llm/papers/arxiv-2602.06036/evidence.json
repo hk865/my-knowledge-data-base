@@ -1,0 +1,23 @@
+{
+  "inference_overview_verification_2026_10_04": {
+    "checked_at": "2026-10-04",
+    "scope": "概览过时结论修正、机制导读扩充与原创图示",
+    "source": {
+      "url": "https://arxiv.org/html/2602.06036",
+      "sections": [
+        "3",
+        "4",
+        "5.5.2",
+        "5.5.4"
+      ],
+      "supports": "块并行草稿、目标特征 KV 注入、草稿成本与接受长度权衡。"
+    },
+    "reading_depth": "selected_sections_checked_not_full_read",
+    "boundaries": [
+      "没有复现性能",
+      "没有审计生产代码",
+      "旧有未改动性能表保留既有证据边界",
+      "新预印本的训练代理目标与部署保真分开解释"
+    ]
+  }
+}

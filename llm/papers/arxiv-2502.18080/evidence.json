@@ -1,0 +1,25 @@
+{
+  "training_science_extension_2026_10_04": {
+    "scope": "cross-domain/fields/training-science",
+    "verified_on": "2026-10-04",
+    "reading_kind": "selected_primary_sections_not_full_read",
+    "source": {
+      "resource_id": "arxiv:2502.18080",
+      "version": "v2",
+      "date": "2025-10-12",
+      "url": "https://arxiv.org/html/2502.18080v2",
+      "sections": [
+        "abstract",
+        "3",
+        "4",
+        "7"
+      ],
+      "supports": [
+        "推理长度可能出现负收益",
+        "TOPS从不同推理强度候选中选择最短正确答案",
+        "局限主要为数学和SFT"
+      ],
+      "boundary": "未推广到一般RL和所有领域；未复现"
+    }
+  }
+}

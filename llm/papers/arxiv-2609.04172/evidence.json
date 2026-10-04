@@ -1,0 +1,15 @@
+{
+  "review_scope_check_2026_10_04": {
+    "sections": [
+      "abstract",
+      "§1",
+      "§4.2",
+      "§5.1–5.3"
+    ],
+    "supports": "少量提示的状态覆盖与学生吸收教师信号的效率是两个轴；提示数量增加后吸收速率仍以相近方式变慢。",
+    "boundary": "仅核文字论证和方法定义，未逐图重算；不是全文精读，未复现。",
+    "checked_on": "2026-10-04",
+    "official_url": "https://arxiv.org/html/2609.04172v1",
+    "scope": "review correction: clarify complementary conclusions and link knowledge-distillation"
+  }
+}

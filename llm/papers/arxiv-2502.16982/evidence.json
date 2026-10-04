@@ -1,0 +1,27 @@
+{
+  "training_science_extension_2026_10_04": {
+    "scope": "cross-domain/fields/training-science",
+    "verified_on": "2026-10-04",
+    "reading_kind": "selected_primary_sections_not_full_read",
+    "source": {
+      "resource_id": "arxiv:2502.16982",
+      "version": "v1",
+      "date": "2025-02-24",
+      "url": "https://arxiv.org/html/2502.16982v1",
+      "sections": [
+        "abstract",
+        "1",
+        "2.2",
+        "3.2",
+        "3.5",
+        "4"
+      ],
+      "supports": [
+        "权重衰减与更新幅度校准使 Muon 规模化",
+        "调参后的 AdamW 与 Muon 计算最优曲线比较",
+        "预训练与微调优化器错配的边界"
+      ],
+      "boundary": "未复现；不把论文模型族内的效率差异称为通用收益"
+    }
+  }
+}

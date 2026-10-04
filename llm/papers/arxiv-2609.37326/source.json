@@ -16,7 +16,8 @@
     "Pascal Bouvry"
   ],
   "topic_paths": [
-    "llm/posttraining/sft"
+    "llm/posttraining/sft",
+    "cross-domain/knowledge-distillation"
   ],
   "modality_tags": [
     "text"
@@ -43,7 +44,9 @@
   "fulltext_local_path": null,
   "source_record_updated": "2026-10-04",
   "legacy_paths": [],
-  "evidence_paths": [],
+  "evidence_paths": [
+    "llm/papers/arxiv-2609.37326/evidence.json"
+  ],
   "verification_2026_10_04": {
     "verification_status": "selected_sections_checked",
     "verification_sources": [

@@ -24,7 +24,13 @@
       "B scaffold and reasoning-effort details skimmed"
     ],
     "references": "used for provenance (YOCO, IndexCache, Kimi-K3, GLM-5)",
-    "visual_source_pages_checked": [1, 5, 7, 10, 11],
+    "visual_source_pages_checked": [
+      1,
+      5,
+      7,
+      10,
+      11
+    ],
     "method": "downloaded official PDF v1; extracted full text with PyMuPDF; rendered pages 1 and 5 to read Figure 1(b) byte values and Figure 2 curves"
   },
   "supplementary_official_sources": [
@@ -161,5 +167,47 @@
     "no_scraped_fulltext_in_public_output": true,
     "not_a_verbatim_translation": true,
     "original_explanatory_examples_labeled": true
+  },
+  "comparative_official_sources_inference_2026_10_04": {
+    "purpose": "仅支撑推理方向对 OpenAI gpt-oss 公开范围的版本比较，不作为 DeepSeek 架构、训练或性能的证据。",
+    "record": {
+      "checked_at": "2026-10-04",
+      "scope": "概览过时结论修正、机制导读扩充与原创图示",
+      "source": {
+        "url": "https://arxiv.org/html/2508.10925v1",
+        "sections": [
+          "2.2",
+          "2.5.1",
+          "2.5.2"
+        ],
+        "supports": "结构、Harmony、低中高推理档位已公开；RL 仅概述与 o3 类似。"
+      },
+      "reading_depth": "selected_sections_checked_not_full_read",
+      "boundaries": [
+        "没有复现性能",
+        "没有审计生产代码",
+        "旧有未改动性能表保留既有证据边界",
+        "新预印本的训练代理目标与部署保真分开解释"
+      ]
+    }
+  },
+  "inference_overview_verification_2026_10_04": {
+    "checked_at": "2026-10-04",
+    "scope": "概览过时结论修正、机制导读扩充与原创图示",
+    "source": {
+      "url": "https://arxiv.org/html/2609.19969v1",
+      "sections": [
+        "2.1",
+        "2.4.3"
+      ],
+      "supports": "预训练移除 MTP；专训 DSpark；条件接受概率结合引擎吞吐曲线选验证长度。"
+    },
+    "reading_depth": "selected_sections_checked_not_full_read",
+    "boundaries": [
+      "没有复现性能",
+      "没有审计生产代码",
+      "旧有未改动性能表保留既有证据边界",
+      "新预印本的训练代理目标与部署保真分开解释"
+    ]
   }
 }

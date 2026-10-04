@@ -25,8 +25,8 @@
     }
   ],
   "original_diagrams": [
-    "assets/long-context/memory-routes-20261004.svg",
-    "assets/long-context/qsa-microblocks-20261004.svg"
+    "llm/fields/long-context/figures/memory-routes-20261004.svg",
+    "llm/fields/long-context/figures/qsa-microblocks-20261004.svg"
   ],
   "not_verified": [
     "完整训练数据配方",
