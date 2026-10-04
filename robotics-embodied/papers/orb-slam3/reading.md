@@ -1,6 +1,6 @@
 # ORB-SLAM3：让几秒前、几分钟前和上一次运行的观测都进入同一个优化
 
-> 状态：技术精读 · v2 · 未复现 · 原文 [arXiv:2007.11898v2](https://arxiv.org/abs/2007.11898) · [证据档案](../../../docs/deep-readings/evidence/orb-slam3.json)
+> 状态：技术精读 · v2 · 未复现 · 原文 [arXiv:2007.11898v2](https://arxiv.org/abs/2007.11898) · [证据档案](evidence.json)
 
 ![ORB-SLAM3 的估计、地图复用与恢复闭环](figures/orb-slam3.png)
 

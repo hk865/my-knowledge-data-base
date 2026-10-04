@@ -27,9 +27,9 @@
     "docs/deep-readings/vit.md"
   ],
   "evidence_paths": [
-    "docs/deep-readings/evidence/vit.json",
-    "../../../docs/deep-readings/evidence/vit.json",
-    "../../../docs/deep-readings/evidence/vit.beginner-revision.json"
+    "multimodal/papers/vit/evidence.json",
+    "evidence.json",
+    "evidence-beginner-revision.json"
   ],
   "topic_paths": [
     "multimodal/alignment",

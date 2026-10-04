@@ -1,15 +1,15 @@
 [
   {
     "title": "研究兴趣与论文知识库",
-    "file": "docs/research-map.md"
+    "file": "perspectives/notes/research-map.md"
   },
   {
     "title": "模型训练与多模态",
-    "file": "docs/model-training-multimodal.md"
+    "file": "perspectives/notes/model-training-multimodal.md"
   },
   {
     "title": "机器人与具身智能",
-    "file": "docs/robotics-embodied.md"
+    "file": "perspectives/notes/robotics-embodied.md"
   },
   {
     "title": "Qwen2.5-1M 全文精读",
@@ -157,127 +157,127 @@
   },
   {
     "title": "深度学习基础学习导航",
-    "file": "docs/foundations/00-learning-navigation.md"
+    "file": "foundations/lessons/00-learning-navigation.md"
   },
   {
     "title": "QKV 为什么已经算出匹配 还要传递内容",
-    "file": "docs/foundations/15-qkv-deep-dive.md"
+    "file": "foundations/lessons/15-qkv-deep-dive.md"
   },
   {
     "title": "梯度 反向传播与 SGD",
-    "file": "docs/foundations/modules/optimization/gradient-sgd.md"
+    "file": "foundations/lessons/modules/optimization/gradient-sgd.md"
   },
   {
     "title": "05b 强化学习导读",
-    "file": "docs/foundations/05b-reinforcement-learning.md"
+    "file": "foundations/lessons/05b-reinforcement-learning.md"
   },
   {
     "title": "05c 迁移与元学习导读",
-    "file": "docs/foundations/05c-transfer-meta-learning.md"
+    "file": "foundations/lessons/05c-transfer-meta-learning.md"
   },
   {
     "title": "05a 分布式训练导读",
-    "file": "docs/foundations/05a-distributed-training.md"
+    "file": "foundations/lessons/05a-distributed-training.md"
   },
   {
     "title": "CNN 从像素窗口到可学习视觉特征",
-    "file": "docs/foundations/11-cnn.md"
+    "file": "foundations/lessons/11-cnn.md"
   },
   {
     "title": "RNN 从连续输入到可学习的历史记忆",
-    "file": "docs/foundations/12-rnn.md"
+    "file": "foundations/lessons/12-rnn.md"
   },
   {
     "title": "Attention 与 Transformer 从信息读取到完整模型",
-    "file": "docs/foundations/14-attention-transformer.md"
+    "file": "foundations/lessons/14-attention-transformer.md"
   },
   {
     "title": "LSTM 从长期记忆问题到门控更新",
-    "file": "docs/foundations/13-lstm.md"
+    "file": "foundations/lessons/13-lstm.md"
   },
   {
     "title": "SSM GNN 与 MoE 的三个独立入门问题",
-    "file": "docs/foundations/18-ssm-gnn-moe.md"
+    "file": "foundations/lessons/18-ssm-gnn-moe.md"
   },
   {
     "title": "VAE 从隐藏原因到可训练的生成模型",
-    "file": "docs/foundations/16-vae.md"
+    "file": "foundations/lessons/16-vae.md"
   },
   {
     "title": "Diffusion 从加噪练习到逐步生成",
-    "file": "docs/foundations/17-diffusion.md"
+    "file": "foundations/lessons/17-diffusion.md"
   },
   {
     "title": "动量与逐坐标自适应优化",
-    "file": "docs/foundations/modules/optimization/momentum.md"
+    "file": "foundations/lessons/modules/optimization/momentum.md"
   },
   {
     "title": "Adam 与 AdamW",
-    "file": "docs/foundations/modules/optimization/adam.md"
+    "file": "foundations/lessons/modules/optimization/adam.md"
   },
   {
     "title": "Muon 与矩阵更新正交化",
-    "file": "docs/foundations/modules/optimization/muon.md"
+    "file": "foundations/lessons/modules/optimization/muon.md"
   },
   {
     "title": "回归与鲁棒损失 从残差到训练分数",
-    "file": "docs/foundations/modules/objectives/01-regression-robustness.md"
+    "file": "foundations/lessons/modules/objectives/01-regression-robustness.md"
   },
   {
     "title": "概率分类 从交叉熵到BCE NLL与KL",
-    "file": "docs/foundations/modules/objectives/02-classification-probabilities.md"
+    "file": "foundations/lessons/modules/objectives/02-classification-probabilities.md"
   },
   {
     "title": "自监督与生成目标 从可见信息到学习信号",
-    "file": "docs/foundations/modules/objectives/03-pretraining-objectives.md"
+    "file": "foundations/lessons/modules/objectives/03-pretraining-objectives.md"
   },
   {
     "title": "机器人与IMU目标 从坐标约定到可观测性",
-    "file": "docs/foundations/modules/objectives/04-robotics-imu.md"
+    "file": "foundations/lessons/modules/objectives/04-robotics-imu.md"
   },
   {
     "title": "参数正则化 从L1 L2到权重衰减",
-    "file": "docs/foundations/modules/objectives/05-regularization.md"
+    "file": "foundations/lessons/modules/objectives/05-regularization.md"
   },
   {
     "title": "样本接口与数据集选择",
-    "file": "docs/foundations/modules/data/01-data-contracts.md"
+    "file": "foundations/lessons/modules/data/01-data-contracts.md"
   },
   {
     "title": "划分同步与最小数据管道",
-    "file": "docs/foundations/modules/data/02-data-pipeline.md"
+    "file": "foundations/lessons/modules/data/02-data-pipeline.md"
   },
   {
     "title": "图像与文本分类的小规模实践",
-    "file": "docs/foundations/modules/data/03-classification-labs.md"
+    "file": "foundations/lessons/modules/data/03-classification-labs.md"
   },
   {
     "title": "IMU窗口怎样对应一个位移标签",
-    "file": "docs/foundations/modules/data/04-imu-lab.md"
+    "file": "foundations/lessons/modules/data/04-imu-lab.md"
   },
   {
     "title": "架构与生成模型 学习地图",
-    "file": "docs/foundations/01-architectures.md"
+    "file": "foundations/lessons/01-architectures.md"
   },
   {
     "title": "优化与训练基础模块导航",
-    "file": "docs/foundations/02-optimization.md"
+    "file": "foundations/lessons/02-optimization.md"
   },
   {
     "title": "任务与训练目标 学习模块导航",
-    "file": "docs/foundations/03-tasks-losses.md"
+    "file": "foundations/lessons/03-tasks-losses.md"
   },
   {
     "title": "数据与数据集模块导航",
-    "file": "docs/foundations/04-data-and-datasets.md"
+    "file": "foundations/lessons/04-data-and-datasets.md"
   },
   {
     "title": "从基础进入进阶",
-    "file": "docs/foundations/05-advanced-bridges.md"
+    "file": "foundations/lessons/05-advanced-bridges.md"
   },
   {
     "title": "十五个代表数据集的选型目录",
-    "file": "docs/foundations/catalog/dataset-selection.md"
+    "file": "foundations/lessons/catalog/dataset-selection.md"
   },
   {
     "title": "机器人与具身分领域阅读",

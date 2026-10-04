@@ -28,8 +28,8 @@
     "robotics-embodied/baselines/r2r.md"
   ],
   "evidence_paths": [
-    "docs/deep-readings/evidence/r2r.json",
-    "../../../docs/deep-readings/evidence/r2r.json"
+    "robotics-embodied/papers/r2r/evidence.json",
+    "evidence.json"
   ],
   "topic_paths": [
     "robotics/navigation-planning"

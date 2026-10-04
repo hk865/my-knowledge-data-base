@@ -27,8 +27,8 @@
     "docs/deep-readings/gpt3.md"
   ],
   "evidence_paths": [
-    "docs/deep-readings/evidence/gpt3.json",
-    "../../../docs/deep-readings/evidence/gpt3.json"
+    "llm/papers/gpt3/evidence.json",
+    "evidence.json"
   ],
   "topic_paths": [
     "cross-domain/agents",

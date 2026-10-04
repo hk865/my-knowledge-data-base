@@ -27,8 +27,8 @@
     "docs/deep-readings/video-diffusion.md"
   ],
   "evidence_paths": [
-    "docs/deep-readings/evidence/video-diffusion.json",
-    "../../../docs/deep-readings/evidence/video-diffusion.json"
+    "multimodal/papers/video-diffusion/evidence.json",
+    "evidence.json"
   ],
   "topic_paths": [
     "multimodal/generation",

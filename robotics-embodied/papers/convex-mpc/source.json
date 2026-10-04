@@ -28,8 +28,8 @@
     "robotics-embodied/baselines/convex-mpc.md"
   ],
   "evidence_paths": [
-    "docs/deep-readings/evidence/convex-mpc.json",
-    "../../../docs/deep-readings/evidence/convex-mpc.json"
+    "robotics-embodied/papers/convex-mpc/evidence.json",
+    "evidence.json"
   ],
   "topic_paths": [
     "multimodal/world-models",

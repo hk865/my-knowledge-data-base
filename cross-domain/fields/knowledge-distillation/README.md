@@ -16,5 +16,5 @@
 
 ## 具体讲解入口
 
-[打开已有独立讲解](../../../docs/foundations/05c-transfer-meta-learning.md)。
+[打开已有独立讲解](../../../foundations/lessons/05c-transfer-meta-learning.md)。
 

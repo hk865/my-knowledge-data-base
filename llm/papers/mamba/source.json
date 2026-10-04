@@ -31,8 +31,8 @@
     "docs/deep-readings/mamba.md"
   ],
   "evidence_paths": [
-    "docs/deep-readings/evidence/mamba.json",
-    "../../../docs/deep-readings/evidence/mamba.json"
+    "llm/papers/mamba/evidence.json",
+    "evidence.json"
   ],
   "authors": [
     "Albert Gu",

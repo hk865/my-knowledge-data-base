@@ -28,8 +28,8 @@
     "robotics-embodied/baselines/ppo.md"
   ],
   "evidence_paths": [
-    "docs/deep-readings/evidence/ppo.json",
-    "../../../docs/deep-readings/evidence/ppo.json"
+    "llm/papers/ppo/evidence.json",
+    "evidence.json"
   ],
   "topic_paths": [
     "llm/posttraining/rl",

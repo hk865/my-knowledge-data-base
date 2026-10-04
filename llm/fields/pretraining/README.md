@@ -21,10 +21,10 @@
 
 ## 技术地基
 
-- **可见性与因果 mask**：每个位置能读哪些位置，决定模型属于 encoder-only、decoder-only 还是 encoder–decoder，也决定能否在一次前向里对所有位置并行计算下一词损失。节点 2–5 的争论都落在这里。[Attention 与 Transformer 讲义](../../../docs/foundations/14-attention-transformer.md)第 7、12、13 节。
-- **注意力（Q、K、V）**：按内容决定读哪里、读什么，是节点 1 取代循环的机制。同一讲义第 3–6 节、[QKV 讲义](../../../docs/foundations/15-qkv-deep-dive.md)；更早的序列模型见 [RNN](../../../docs/foundations/12-rnn.md) 与 [LSTM](../../../docs/foundations/13-lstm.md) 讲义。
-- **自监督训练目标**：下一词预测、遮蔽预测、去噪是让文本自己出题的三种方式，节点 2–5 就是在它们之间选择。[自监督与生成目标](../../../docs/foundations/modules/objectives/03-pretraining-objectives.md)、[目标分区](../../../foundations/fields/objectives/README.md)。
-- **迁移的两种用法**：微调更新权重，in-context learning 只改输入、权重不变；评测采用哪一种，决定了哪种结构胜出（节点 5）。[迁移与元学习讲义](../../../docs/foundations/05c-transfer-meta-learning.md)、[GPT-3 精读](../../papers/gpt3/reading.md)第 2 节。
+- **可见性与因果 mask**：每个位置能读哪些位置，决定模型属于 encoder-only、decoder-only 还是 encoder–decoder，也决定能否在一次前向里对所有位置并行计算下一词损失。节点 2–5 的争论都落在这里。[Attention 与 Transformer 讲义](../../../foundations/lessons/14-attention-transformer.md)第 7、12、13 节。
+- **注意力（Q、K、V）**：按内容决定读哪里、读什么，是节点 1 取代循环的机制。同一讲义第 3–6 节、[QKV 讲义](../../../foundations/lessons/15-qkv-deep-dive.md)；更早的序列模型见 [RNN](../../../foundations/lessons/12-rnn.md) 与 [LSTM](../../../foundations/lessons/13-lstm.md) 讲义。
+- **自监督训练目标**：下一词预测、遮蔽预测、去噪是让文本自己出题的三种方式，节点 2–5 就是在它们之间选择。[自监督与生成目标](../../../foundations/lessons/modules/objectives/03-pretraining-objectives.md)、[目标分区](../../../foundations/fields/objectives/README.md)。
+- **迁移的两种用法**：微调更新权重，in-context learning 只改输入、权重不变；评测采用哪一种，决定了哪种结构胜出（节点 5）。[迁移与元学习讲义](../../../foundations/lessons/05c-transfer-meta-learning.md)、[GPT-3 精读](../../papers/gpt3/reading.md)第 2 节。
 - **数据配方**：去重、质量过滤、各来源的采样比例；训练 token 数按采样次数计，高质量来源会被重复看到。[GPT-3 精读](../../papers/gpt3/reading.md)第 3 节、[数据分区](../../../foundations/fields/data/README.md)。
 - **规模定律与计算预算**：损失随参数量、数据量、算力的幂律变化，以及固定算力下二者怎样配比，决定了节点 4 和节点 6。[训练科学](../../../cross-domain/fields/training-science/README.md)。
 
@@ -51,8 +51,8 @@ benchmark 的替换就是本方向目标的迁移：
 
 ## 阅读顺序
 
-1. [Attention 与 Transformer 讲义](../../../docs/foundations/14-attention-transformer.md)第 7、12、13 节：可见性、因果训练为什么能并行、三种结构；第 13.5 节是本页节点 1–5 的机制版。
-2. [自监督与生成目标](../../../docs/foundations/modules/objectives/03-pretraining-objectives.md)第 1–5 节：下一词与遮蔽两种出题方式。读完做一个小练习：用一段短文本标出输入 token、预测目标和参与损失的位置。
+1. [Attention 与 Transformer 讲义](../../../foundations/lessons/14-attention-transformer.md)第 7、12、13 节：可见性、因果训练为什么能并行、三种结构；第 13.5 节是本页节点 1–5 的机制版。
+2. [自监督与生成目标](../../../foundations/lessons/modules/objectives/03-pretraining-objectives.md)第 1–5 节：下一词与遮蔽两种出题方式。读完做一个小练习：用一段短文本标出输入 token、预测目标和参与损失的位置。
 3. [Attention Is All You Need 精读](../../papers/transformer/reading.md)（[文献卡](../../papers/transformer/README.md)）：节点 1 的原文。
 4. [GPT-3 精读](../../papers/gpt3/reading.md)（[文献卡](../../papers/gpt3/README.md)）：节点 4，也是本方向的基线，先读数据与 few-shot 评估设置（第 3–4 节）。基线拆分见 [Baseline 页](BASELINES.md)。
 5. [Chinchilla 文献卡](../../../cross-domain/papers/arxiv-2203.15556/README.md)，配合[训练科学](../../../cross-domain/fields/training-science/README.md)的规模定律一节：节点 6 与预算问题。
@@ -80,8 +80,8 @@ benchmark 的替换就是本方向目标的迁移：
 
 **与其他论文的关联**
 
-- 节点 1 之前的两步：Seq2seq 在 WMT'14 英→法上，5 个反转源句的 LSTM 集成得 34.81 BLEU，短语统计翻译基线 33.30；只反转源句一项就让 BLEU 从 25.9 升到 30.6。Bahdanau 注意力在全部句子上 RNNsearch-50 得 26.75，同规模无注意力的 RNNencdec-50 为 17.82，并且在 50 词以上的长句上不退化（原文图 2）。机制展开见 [RNN](../../../docs/foundations/12-rnn.md)、[LSTM](../../../docs/foundations/13-lstm.md) 与 [Attention 与 Transformer](../../../docs/foundations/14-attention-transformer.md) 讲义。
-- [Attention 与 Transformer 讲义](../../../docs/foundations/14-attention-transformer.md)第 13.5 节与本页节点 1–5 讲同一件事；两处如有出入，以综合表中的原文出处为准修改。
+- 节点 1 之前的两步：Seq2seq 在 WMT'14 英→法上，5 个反转源句的 LSTM 集成得 34.81 BLEU，短语统计翻译基线 33.30；只反转源句一项就让 BLEU 从 25.9 升到 30.6。Bahdanau 注意力在全部句子上 RNNsearch-50 得 26.75，同规模无注意力的 RNNencdec-50 为 17.82，并且在 50 词以上的长句上不退化（原文图 2）。机制展开见 [RNN](../../../foundations/lessons/12-rnn.md)、[LSTM](../../../foundations/lessons/13-lstm.md) 与 [Attention 与 Transformer](../../../foundations/lessons/14-attention-transformer.md) 讲义。
+- [Attention 与 Transformer 讲义](../../../foundations/lessons/14-attention-transformer.md)第 13.5 节与本页节点 1–5 讲同一件事；两处如有出入，以综合表中的原文出处为准修改。
 - [架构与效率方向](../architecture/README.md)从本页的终点接着讲：LLaMA 在原始 Transformer 上做的三处改动，预归一化（把归一化移到每个子层的输入端）、SwiGLU（一种带门控的 FFN 激活函数）、RoPE（旋转位置编码），原文分别注明借自 GPT-3、PaLM 与 GPT-Neo（LLaMA 2.2 节），后续的 MoE、MLA 与 Mamba 都在这个结构上改部件。
 - [InstructGPT 精读](../../papers/instructgpt/reading.md)：GPT-3 自述下一词目标不区分重要性、缺少目标导向，后训练从这里接手。
 - [深度学习规模化](../../../perspectives/scaling.md)把本页放进跨领域的三阶段总线；[训练科学](../../../cross-domain/fields/training-science/README.md)展开 Kaplan 与 Chinchilla 的分歧。Chinchilla 作者把分歧归于两点：Kaplan 等让所有模型共用固定的训练 token 数与学习率调度，以及其拟合以较小的模型为主（Chinchilla 第 2 节）。[Chinchilla 文献卡](../../../cross-domain/papers/arxiv-2203.15556/README.md)目前只有题录，补精读时"它要解决的问题"应与本页节点 6 一致。

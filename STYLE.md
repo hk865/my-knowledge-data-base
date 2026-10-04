@@ -20,7 +20,7 @@
 
 | 层 | 目录 | 回答的问题 |
 |---|---|---|
-| 基础 | `foundations/`、`docs/foundations/` | 一个机制怎么算、为什么这样设计（不分模态） |
+| 基础 | `foundations/`（概念地图、`lessons/` 讲义、`relations/` 关系页） | 一个机制怎么算、为什么这样设计（不分模态） |
 | 观点 | `perspectives/` | 跨领域、跨模态的现象为什么会这样（论证） |
 | 领域 | `llm/`、`multimodal/`、`robotics-embodied/` | 一个应用领域在解决什么、各家押注什么、用什么衡量 |
 | 跨方向 | `cross-domain/` | 跨领域通用的方法与科学：训练科学、模型科学、评估、Agent、蒸馏 |
@@ -38,7 +38,7 @@
 | 领域入门页、Baseline 页 | 对应的 foundations 模块 | foundations 中讲过的概念（链接即可） | 本领域的任何术语、数据集、团队、benchmark |
 | 论文精读 | 所属领域入门页和 Baseline 页 | 领域页中讲过的术语 | 本篇新引入的术语，以及其他领域的术语 |
 
-两个参照：`docs/foundations/11-cnn.md` 和 `14-attention-transformer.md` 的起点是 foundations 层的正确示范；`robotics-embodied/fields/vla.md` 在领域层却解释"向量""弧度"，属于低于读者写。
+两个参照：`foundations/lessons/11-cnn.md` 和 `14-attention-transformer.md` 的起点是 foundations 层的正确示范；`robotics-embodied/fields/vla.md` 在领域层却解释"向量""弧度"，属于低于读者写。
 
 由此产生三条硬规则：
 
@@ -231,7 +231,7 @@
 
 ### 3.3 示例：机制史与领域史的差别
 
-`docs/foundations/11-cnn.md` 和 `14-attention-transformer.md` 已经做到了"机制史"：每一步都说明解决了什么计算问题。例如 CNN 一篇用"更深却更难训练怎么办"引出 ResNet；Transformer 一篇写出了"固定长度向量瓶颈 → 软对齐（仍是循环网络）→ 注意力成为主体"这条链。这是正确的形式。
+`foundations/lessons/11-cnn.md` 和 `14-attention-transformer.md` 已经做到了"机制史"：每一步都说明解决了什么计算问题。例如 CNN 一篇用"更深却更难训练怎么办"引出 ResNet；Transformer 一篇写出了"固定长度向量瓶颈 → 软对齐（仍是循环网络）→ 注意力成为主体"这条链。这是正确的形式。
 
 但它们只覆盖了历史和技术基础两个维度，缺少目标和团队偏好。下面两个例子展示补上这两个维度后会多出什么。示例中的事实，写入正式页面前必须核实。
 
@@ -657,3 +657,12 @@
 **按证据密度拆分。** 跨方向页里不同模态的差异，先在页内设"不同模态的差异"一节对照着写。某个模态的材料达到 8 篇以上论文，或有了自己的 Baseline 表，再拆成子页（例如 `model-science/vision.md`）。不事先按分类建空目录。
 
 **论文目录不搬家。** 一篇论文改变归属时，只改 `topic_paths` 和标签；旧入口保留为转接页。
+
+**各类文件的固定位置：**
+
+- 基础讲义在 `foundations/lessons/`，概念地图在 `foundations/fields/`，关系页在 `foundations/relations/`。
+- 一篇论文的全部材料在它自己的目录里：文献卡 `README.md`、精读 `reading.md`、元信息 `source.json`、证据档案 `evidence.json`（其他档案为 `evidence-<后缀>`）、图示 `figures/`。
+- `docs/` 只放全库目录（`paper-catalog.md`、`topics.md`、`unresolved.md`）和旧路径的转接页，不放新正文（见 `docs/README.md`）。
+- `tools/` 放维护脚本：`gen_topics.py` 从 `papers.json` 生成 `docs/topics.md`，`check_links.py` 检查全库相对链接。被生成的文件不手改；提交前跑一次链接检查，失效数为 0 才提交。
+
+**搬迁文件时**：先用脚本按搬迁对照表改写全库的相对链接、JSON 路径和指向 GitHub 的绝对链接，再移动文件，原路径的 Markdown 留一个转接页。

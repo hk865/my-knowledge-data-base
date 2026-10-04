@@ -27,8 +27,8 @@
     "docs/deep-readings/dino.md"
   ],
   "evidence_paths": [
-    "docs/deep-readings/evidence/dino.json",
-    "../../../docs/deep-readings/evidence/dino.json"
+    "multimodal/papers/dino/evidence.json",
+    "evidence.json"
   ],
   "topic_paths": [
     "multimodal/visual-representation"

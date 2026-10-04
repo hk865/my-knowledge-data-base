@@ -31,7 +31,7 @@
     "docs/deep-readings/dpo.md"
   ],
   "evidence_paths": [
-    "docs/deep-readings/evidence/dpo.json"
+    "llm/papers/dpo/evidence.json"
   ],
   "authors": [
     "Rafael Rafailov",

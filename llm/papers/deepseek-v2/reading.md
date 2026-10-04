@@ -101,9 +101,9 @@ SFT用150万实例，其中120万helpfulness、30万safety，训练2轮。随后
 
 ## 阅读证据
 
-[证据与覆盖记录](../../../docs/deep-readings/evidence/deepseek-v2.json)提供逐项定位、版本和正文/附录覆盖。本文为原创解读，原PDF与评测模板抓取文本不随交付发布。
+[证据与覆盖记录](evidence.json)提供逐项定位、版本和正文/附录覆盖。本文为原创解读，原PDF与评测模板抓取文本不随交付发布。
 
 
 ## 图解文件与证据索引
 
-[SVG高清图](figures/deepseek-v2-mechanism.svg) · [SVG可编辑图](figures/deepseek-v2-mechanism.svg) · [结构化证据](../../../docs/deep-readings/evidence/deepseek-v2.json)
+[SVG高清图](figures/deepseek-v2-mechanism.svg) · [SVG可编辑图](figures/deepseek-v2-mechanism.svg) · [结构化证据](evidence.json)

@@ -1,9 +1,3 @@
 # LLaVA 阅读覆盖
 
-- 版本：Visual Instruction Tuning，2304.08485v2，25页
-- 正文：§1–6全部阅读，含式(1)–(3)、表1–8
-- 附录：A–F全部阅读，含风险、更多定性结果、训练细节、数据筛选、提示构造与示例
-- 原文视觉复核：PDF页4、7、9、14–21，检查结构图、主要表格和定性示例
-- 原创图：figures/llava.svg，已渲染 figures/llava.png 并打开检查
-- 未完成项：无训练复现、无新评测、无当前checkpoint审计；这些均不冒称已完成
-- 重点边界：本文v2仍为原版LLaVA论文，不能混入LLaVA-1.5的连接器和训练配方
+本页已移至 [multimodal/papers/llava/evidence-coverage.md](../../../multimodal/papers/llava/evidence-coverage.md)。

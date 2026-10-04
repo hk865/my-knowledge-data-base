@@ -31,14 +31,14 @@ ImageNet（2009 年发布、按 WordNet 名词层级组织的大规模标注图�
 
 ### 阶段一：手工特征加小数据（1980–2011）
 
-**上一阶段留下的问题。** 这是起点：模式识别的结果随图案的平移和形变而改变。Neocognitron（1980）交替堆叠"提取特征"和"容忍位置变化"两种层，同一平面内共用连接，这是卷积与权重共享的雏形（[CNN 讲义](../docs/foundations/11-cnn.md)第 6 节）。
+**上一阶段留下的问题。** 这是起点：模式识别的结果随图案的平移和形变而改变。Neocognitron（1980）交替堆叠"提取特征"和"容忍位置变化"两种层，同一平面内共用连接，这是卷积与权重共享的雏形（[CNN 讲义](../foundations/lessons/11-cnn.md)第 6 节）。
 
 **本阶段的变化。** 可学习的卷积网络已经出现（LeNet 1998，用反向传播训练卷积核，在文档识别中落地），视觉主流仍是人设计的特征加浅层分类器，只有分类器从少量标注中学习。
 
 **各领域的表现。**
 
-- 视觉表征：HOG（2005，梯度方向直方图）与 DPM（2010，可变形部件模型）加线性 SVM 主导检测。HOG 的流水线可以读成一个核固定的浅层 CNN（[CNN 讲义](../docs/foundations/11-cnn.md)第 6、9 节）。PASCAL VOC 检测（约 20 类物体的检测 benchmark）在 2010–2012 年停滞（[视觉表征领域页](../multimodal/fields/visual-representation/README.md)）。
-- 语言：序列建模用 [RNN](../docs/foundations/12-rnn.md) 与 [LSTM](../docs/foundations/13-lstm.md)，机器翻译的主流是短语统计翻译，它是 2014 年 Seq2seq 的对照基线（[预训练领域页](../llm/fields/pretraining/README.md)）。
+- 视觉表征：HOG（2005，梯度方向直方图）与 DPM（2010，可变形部件模型）加线性 SVM 主导检测。HOG 的流水线可以读成一个核固定的浅层 CNN（[CNN 讲义](../foundations/lessons/11-cnn.md)第 6、9 节）。PASCAL VOC 检测（约 20 类物体的检测 benchmark）在 2010–2012 年停滞（[视觉表征领域页](../multimodal/fields/visual-representation/README.md)）。
+- 语言：序列建模用 [RNN](../foundations/lessons/12-rnn.md) 与 [LSTM](../foundations/lessons/13-lstm.md)，机器翻译的主流是短语统计翻译，它是 2014 年 Seq2seq 的对照基线（[预训练领域页](../llm/fields/pretraining/README.md)）。
 - 训练科学：深网络要先做逐层无监督预训练才能训好，标准随机初始化直接做梯度下降效果差且原因不明。Glorot 与 Bengio（2010）把"难训"拆成逐层激活饱和与梯度方差两个可测量的量；5 个隐藏层的 tanh 网络在 Shapeset-3×2 上改用归一化初始化后，测试误差从 27.15% 降到 15.60%（[训练科学页](../cross-domain/fields/training-science/README.md)）。
 
 **留下的问题。** 特征受限于人能设计出什么；可学习的深网络缺少数据和算力，也缺少稳定训练的办法。

@@ -92,9 +92,9 @@ Mamba块把输入投影到扩展维度，一支经短因果卷积、SiLU和selec
 
 ## 阅读证据
 
-[证据与覆盖记录](../../../docs/deep-readings/evidence/mamba.json)列出正文、附录和关键数字定位。本文使用原创图解与推导，未重发原PDF、抓取全文或逐字译文。
+[证据与覆盖记录](evidence.json)列出正文、附录和关键数字定位。本文使用原创图解与推导，未重发原PDF、抓取全文或逐字译文。
 
 
 ## 图解文件与证据索引
 
-[SVG高清图](figures/mamba-mechanism.svg) · [SVG可编辑图](figures/mamba-mechanism.svg) · [结构化证据](../../../docs/deep-readings/evidence/mamba.json)
+[SVG高清图](figures/mamba-mechanism.svg) · [SVG可编辑图](figures/mamba-mechanism.svg) · [结构化证据](evidence.json)

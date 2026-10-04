@@ -76,7 +76,7 @@ CNN 与 Transformer 用同一套残差连接传递梯度，真正的差别在归
 
 **与其他页面的关联**
 
-- [CNN 讲义](../docs/foundations/11-cnn.md)第 2–3 节讲卷积的局部性与权重共享，第 6 节讲从 LeNet 到 ViT、ConvNeXt 的机制史；[Transformer 讲义](../docs/foundations/14-attention-transformer.md)第 10.2 节讲残差与 LayerNorm 怎样接成一个块。
+- [CNN 讲义](../foundations/lessons/11-cnn.md)第 2–3 节讲卷积的局部性与权重共享，第 6 节讲从 LeNet 到 ViT、ConvNeXt 的机制史；[Transformer 讲义](../foundations/lessons/14-attention-transformer.md)第 10.2 节讲残差与 LayerNorm 怎样接成一个块。
 - [架构概念地图](../foundations/fields/architectures/README.md) 列出两类主干各自依赖的机制；[注意力与 FFN 的分工谱系](../foundations/relations/attention-ffn-division.md) 讲 Transformer 块内部的分工。
 - [深度学习的规模化](scaling.md) 给出本页所在的总线；[生成的收敛](generative-convergence.md) 展开生成一侧的主干变化。
 

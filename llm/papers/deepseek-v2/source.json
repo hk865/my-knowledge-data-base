@@ -27,8 +27,8 @@
     "docs/deep-readings/deepseek-v2.md"
   ],
   "evidence_paths": [
-    "docs/deep-readings/evidence/deepseek-v2.json",
-    "../../../docs/deep-readings/evidence/deepseek-v2.json"
+    "llm/papers/deepseek-v2/evidence.json",
+    "evidence.json"
   ],
   "topic_paths": [
     "llm/posttraining/sft",

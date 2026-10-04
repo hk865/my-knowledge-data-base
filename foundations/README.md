@@ -1,8 +1,8 @@
 # 深度学习基础
 
-[回到全库](../README.md) · [完整学习导航](../docs/foundations/00-learning-navigation.md)
+[回到全库](../README.md) · [完整学习导航](lessons/00-learning-navigation.md)
 
-这里是24个基础与进阶模块的分层入口。完整讲义在 docs/foundations/ 路径。
+这里是24个基础与进阶模块的分层入口。完整讲义在 [lessons/](lessons/README.md)。
 
 基础层只讲机制：一个计算怎样进行、为什么这样设计，不分模态，也不涉及团队与 benchmark。机制在各领域怎样发展，写在对应的领域页（例如[视觉表征](../multimodal/fields/visual-representation/README.md)、[预训练](../llm/fields/pretraining/README.md)、[训练科学](../cross-domain/fields/training-science/README.md)）；跨领域的论证写在[观点层](../perspectives/README.md)。
 

@@ -73,6 +73,6 @@ GPT-3仍会自相矛盾、编造事实、长文失去连贯，且数据偏见不
 
 ## 图解文件与证据索引
 
-[PNG高清图](figures/gpt3.png) · [SVG可编辑图](figures/gpt3.svg) · [结构化证据](../../../docs/deep-readings/evidence/gpt3.json)
+[PNG高清图](figures/gpt3.png) · [SVG可编辑图](figures/gpt3.svg) · [结构化证据](evidence.json)
 
 来源类型：本次为细分方向新选择的 baseline，不是历史聊天提取。

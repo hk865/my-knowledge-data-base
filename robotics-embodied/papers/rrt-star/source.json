@@ -28,9 +28,9 @@
     "robotics-embodied/baselines/rrt-star.md"
   ],
   "evidence_paths": [
-    "docs/deep-readings/evidence/rrt-star.json",
-    "../../../docs/deep-readings/evidence/rrt-star.json",
-    "../../../docs/deep-readings/evidence/rrt-star-coverage.json"
+    "robotics-embodied/papers/rrt-star/evidence.json",
+    "evidence.json",
+    "evidence-coverage.json"
   ],
   "topic_paths": [
     "robotics/control",

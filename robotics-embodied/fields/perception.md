@@ -27,7 +27,7 @@
 
 ### 2.1 彩色图像与像素索引
 
-一张 RGB 图像记为 $I_t\in\mathbb{R}^{H\times W\times3}$，$t$ 是采集时刻（像素与通道见 [11-cnn](../../docs/foundations/11-cnn.md)）。
+一张 RGB 图像记为 $I_t\in\mathbb{R}^{H\times W\times3}$，$t$ 是采集时刻（像素与通道见 [11-cnn](../../foundations/lessons/11-cnn.md)）。
 
 像素索引写成 $(u,v)$：$u$ 是横向列号，$v$ 是纵向行号，通常原点在图像左上，右和下为正。很多数组访问写作 $I[v,u]$，这与几何公式的 $(u,v)$ 顺序不同。把行列弄反不会触发数学错误，却会把三维位置投到错误方向。
 
@@ -87,7 +87,7 @@ $$R_{MC}=\begin{bmatrix}0&0&1\\-1&0&0\\0&-1&0\end{bmatrix},\qquad t_{MC}=\begin{
 
 $$S_x=\begin{bmatrix}-1&0&1\\-2&0&2\\-1&0&1\end{bmatrix}.$$
 
-把这个固定核在灰度图上做卷积（卷积的逐项计算见 [11-cnn](../../docs/foundations/11-cnn.md) 第 2 节），得到横向亮度变化响应 $G_x$。转置核得到纵向响应 $G_y$；$\sqrt{G_x^2+G_y^2}$ 可作为边缘强度。具体实现可能选择不同归一化，响应值本身不必落在原图的 0 到 255 范围。[2]
+把这个固定核在灰度图上做卷积（卷积的逐项计算见 [11-cnn](../../foundations/lessons/11-cnn.md) 第 2 节），得到横向亮度变化响应 $G_x$。转置核得到纵向响应 $G_y$；$\sqrt{G_x^2+G_y^2}$ 可作为边缘强度。具体实现可能选择不同归一化，响应值本身不必落在原图的 0 到 255 范围。[2]
 
 ![图2 Sobel算子的逐项手算](../assets/field-lessons/perception/02-sobel-worked.svg)
 
@@ -128,7 +128,7 @@ U-Net 的编码—解码结构及跨层连接，是理解逐像素分割的经�
 
 ### 5.2 分类损失怎样改变参数
 
-下面的 softmax 与交叉熵推导见 [分类与概率](../../docs/foundations/modules/objectives/02-classification-probabilities.md)，这里直接用于逐像素分割。设某个像素的类别分数为 $a_c$，softmax 概率为
+下面的 softmax 与交叉熵推导见 [分类与概率](../../foundations/lessons/modules/objectives/02-classification-probabilities.md)，这里直接用于逐像素分割。设某个像素的类别分数为 $a_c$，softmax 概率为
 
 $$p_c=\frac{e^{a_c}}{\sum_k e^{a_k}}.$$
 
@@ -288,7 +288,7 @@ $$\hat p=\frac{z_1/\sigma_1^2+z_2/\sigma_2^2}{1/\sigma_1^2+1/\sigma_2^2}.$$
 - 示意图为本文原创，不是论文实验复现。
 
 **与其他论文的关联**
-- `[结构]` 第四节的 Sobel 固定核与 CNN 第一层的可学习卷积核是同一种运算，区别只在核系数是手工设定还是由损失学出，见 [11-cnn](../../docs/foundations/11-cnn.md)。
+- `[结构]` 第四节的 Sobel 固定核与 CNN 第一层的可学习卷积核是同一种运算，区别只在核系数是手工设定还是由损失学出，见 [11-cnn](../../foundations/lessons/11-cnn.md)。
 - `[结构]` 第七节的逆方差加权，与 [定位与建图](localization-mapping.md) 4.4 节一维卡尔曼修正最小化的是同一个加权平方目标；第三节的针孔反投影在 [具身 Agents](embodied-agents.md) 第三节又用于把像素变成抓取目标点。
 
 ## 参考文献

@@ -18,16 +18,16 @@ h_t = Ā h_{t−1} + B̄ x_t，y_t = C h_t + D x_t
 
 Ā 叫状态转移矩阵（描述旧状态怎样变成新状态），B̄ 描述输入怎样进入状态，C 描述怎样从状态读出输出。
 
-**支撑证据。** [18-ssm-gnn-moe.md](../../docs/foundations/18-ssm-gnn-moe.md) 第 2.1 节用"缓慢降温的房间" h_t = 0.8h_{t−1} + 0.2u_t 手算了这个递推：输入 [1,0,0] 时状态依次为 0.2、0.16、0.128，停止加热后状态仍带着过去输入的影响。
+**支撑证据。** [18-ssm-gnn-moe.md](../lessons/18-ssm-gnn-moe.md) 第 2.1 节用"缓慢降温的房间" h_t = 0.8h_{t−1} + 0.2u_t 手算了这个递推：输入 [1,0,0] 时状态依次为 0.2、0.16、0.128，停止加热后状态仍带着过去输入的影响。
 
 ### 1 RNN：可学习的非线性状态方程
 
-**它是什么。** 循环神经网络（RNN）每步计算 h_t = tanh(W_h h_{t−1} + W_x x_t + b)，W_h、W_x、b 由训练学到，h_t 是运行时状态（[12-rnn.md](../../docs/foundations/12-rnn.md) 第 3 节）。
+**它是什么。** 循环神经网络（RNN）每步计算 h_t = tanh(W_h h_{t−1} + W_x x_t + b)，W_h、W_x、b 由训练学到，h_t 是运行时状态（[12-rnn.md](../lessons/12-rnn.md) 第 3 节）。
 
 **与上一节点的关系。**
 
 - `[结构]` 令 s_t = h_t、u_t = x_t、f(s, u) = tanh(W_h s + W_x u + b)，RNN 就是非线性离散状态方程。参数 W 对应系统的固定系数，h_t 对应系统状态。
-- `[结构]` [12-rnn.md](../../docs/foundations/12-rnn.md) 第 5 节算出的 Jacobian（记录旧状态各分量怎样影响新状态各分量的矩阵）J_t = diag(1 − h_t²) W_h，正是 f 对 s 的偏导，也就是这个系统在当前点的线性化状态转移矩阵：δh_t ≈ J_t δh_{t−1}。
+- `[结构]` [12-rnn.md](../lessons/12-rnn.md) 第 5 节算出的 Jacobian（记录旧状态各分量怎样影响新状态各分量的矩阵）J_t = diag(1 − h_t²) W_h，正是 f 对 s 的偏导，也就是这个系统在当前点的线性化状态转移矩阵：δh_t ≈ J_t δh_{t−1}。
   手算（沿用 12-rnn.md 第 3 节的标量例子 h_t = tanh(0.5h_{t−1} + x_t)，输入 [1,0,0]）：h_2 ≈ 0.3634，h_3 ≈ 0.1797，于是 J_2 = (1 − 0.3634²)×0.5 ≈ 0.434，J_3 = (1 − 0.1797²)×0.5 ≈ 0.484，第 1 步状态的微小变化传到第 3 步时乘上 J_3 J_2 ≈ 0.210。
 - `[结构]` 梯度消失与爆炸就是这个线性化系统的稳定性问题。远期梯度要乘上 J_T J_{T−1} … J_{t+1}：转移矩阵持续把扰动缩小，梯度消失；持续放大，梯度可能爆炸。Pascanu、Mikolov、Bengio（2013）第 2.1 节把条件写成：设 γ 是非线性函数导数绝对值的上界（tanh 为 1，sigmoid 为 1/4），λ₁ 是递推权重矩阵的最大奇异值（矩阵把单位向量最多放大的倍数），则 λ₁ < 1/γ 足以使长程梯度分量按指数消失，λ₁ > 1/γ 是梯度爆炸的必要条件；第 2.2 节再从动力系统的吸引子与分岔角度讨论爆炸。对照上面的手算：W_h = 0.5、γ = 1，λ₁ = 0.5 < 1，每步因子都不超过 0.5，实际算出 0.434 和 0.484。
 - `[结构]` 沿时间的反向传播（BPTT）与最优控制里的伴随（协态）方程是同一个递推。推导如下：把每一步的状态方程当约束，写拉格朗日函数
@@ -37,18 +37,18 @@ h_t = Ā h_{t−1} + B̄ x_t，y_t = C h_t + D x_t
   这正是 BPTT 从后往前累积"损失对状态的梯度"的公式，λ_t 就是 ∂E/∂h_t；参数梯度再由 Σ_t λ_tᵀ ∂f/∂θ 汇总。
 - `[历史]` LeCun（1988，*A Theoretical Framework for Back-Propagation*）用拉格朗日形式推导反向传播，作者在摘要和引言中写明这一形式受最优控制理论启发，并指出最优控制里被反向传播的向量叫协态或伴随状态、对应的反向系统叫伴随系统；他还说明 Bryson 与 Ho（1969）已在最优控制框架下描述过与反向传播相同的过程。LeCun 的推导以多层网络的层序号充当时间，并指出连续时间循环网络与最优控制的类比更直接。
 
-**支撑证据。** [12-rnn.md](../../docs/foundations/12-rnn.md) 第 3、5 节的公式与手算；Pascanu 等 [ICML 2013 正式版](https://proceedings.mlr.press/v28/pascanu13.pdf) 第 2.1–2.2 节（[arXiv:1211.5063](https://arxiv.org/abs/1211.5063)）；LeCun 1988，Proceedings of the 1988 Connectionist Models Summer School，第 21–28 页（[作者主页 PDF](http://yann.lecun.com/exdb/publis/pdf/lecun-88.pdf)）。
+**支撑证据。** [12-rnn.md](../lessons/12-rnn.md) 第 3、5 节的公式与手算；Pascanu 等 [ICML 2013 正式版](https://proceedings.mlr.press/v28/pascanu13.pdf) 第 2.1–2.2 节（[arXiv:1211.5063](https://arxiv.org/abs/1211.5063)）；LeCun 1988，Proceedings of the 1988 Connectionist Models Summer School，第 21–28 页（[作者主页 PDF](http://yann.lecun.com/exdb/publis/pdf/lecun-88.pdf)）。
 
 ### 2 LSTM：给状态开一条接近单位转移的通路
 
-**它是什么。** LSTM 在隐藏状态之外维护记忆单元 c_t，按 c_t = f_t ⊙ c_{t−1} + i_t ⊙ c̃_t 更新；遗忘门 f_t、输入门 i_t 都是 0 到 1 之间、由网络算出的数（[13-lstm.md](../../docs/foundations/13-lstm.md) 第 2–3 节）。⊙ 表示逐分量相乘。
+**它是什么。** LSTM 在隐藏状态之外维护记忆单元 c_t，按 c_t = f_t ⊙ c_{t−1} + i_t ⊙ c̃_t 更新；遗忘门 f_t、输入门 i_t 都是 0 到 1 之间、由网络算出的数（[13-lstm.md](../lessons/13-lstm.md) 第 2–3 节）。⊙ 表示逐分量相乘。
 
 **与上一节点的关系。**
 
 - `[结构]` 只看 c 的直接通路，局部 Jacobian 是 diag(f_t)（13-lstm.md 第 4 节）。普通 RNN 的转移是 diag(1 − h²) W_h，每步都被 W_h 和 tanh 导数重新缩放；LSTM 把这条通路的转移换成门值组成的对角阵。f_t 接近 1 时，这条通路的线性化转移接近单位阵，用上一节点的稳定性语言说，就是把特征值放到 1 附近。手算：f = 0.99 时 100 步后保留 0.99¹⁰⁰ ≈ 0.366，f = 0.9 时只剩约 0.0000266（13-lstm.md 第 4 节）。
 - `[结构]` 门值由 h_{t−1} 和 x_t 共同算出（13-lstm.md 第 3 节），所以转移矩阵本身是状态的函数，整个递推仍是非线性的，只能逐步顺序计算。下一个节点要改的正是这一点。
 
-**支撑证据。** [13-lstm.md](../../docs/foundations/13-lstm.md) 第 2–4 节的公式与保留曲线。
+**支撑证据。** [13-lstm.md](../lessons/13-lstm.md) 第 2–4 节的公式与保留曲线。
 
 ### 3 线性递推与 SSM：S4、LRU
 
@@ -62,7 +62,7 @@ h_t = Ā h_{t−1} + B̄ x_t，y_t = C h_t + D x_t
 - `[结构]` LRU 的指数参数化把上一节点 Pascanu 的稳定条件变成了参数化的一部分：不论参数怎样更新，|λ| < 1 都成立。手算：ν = 0.01 时 |λ| = e^{−0.01} ≈ 0.990，100 步后保留 0.990¹⁰⁰ ≈ 0.368，与 LSTM 中 f = 0.99 的 0.366 几乎相同。LSTM 靠门值把通路的特征值推向 1，LRU 靠初始化和参数化把特征值放在 1 附近，代价是转移固定、不再随内容变化。
 - `[历史]` LRU 的作者包括 S4 的作者 Albert Gu 和梯度消失分析的作者 Razvan Pascanu；论文引言把 RNN 的训练困难归到 Bengio 等 1994、Hochreiter 1991 与 Pascanu 等 2013。论文 §4 的结论是：对角 SSM 的效果来自线性递推、复对角指数参数化，以及离散化附带的归一化与初始化；离散化带来的参数共享和连续时间解释可以去掉而不影响性能。
 
-**支撑证据。** [18-ssm-gnn-moe.md](../../docs/foundations/18-ssm-gnn-moe.md) 第 2.1–2.3 节（状态方程、递推与卷积两种算法）；[LRU 文献卡](../../llm/papers/arxiv-2303.06349/README.md)，[arXiv:2303.06349](https://arxiv.org/abs/2303.06349) §1、§3.3–3.4、§4、Table 3。
+**支撑证据。** [18-ssm-gnn-moe.md](../lessons/18-ssm-gnn-moe.md) 第 2.1–2.3 节（状态方程、递推与卷积两种算法）；[LRU 文献卡](../../llm/papers/arxiv-2303.06349/README.md)，[arXiv:2303.06349](https://arxiv.org/abs/2303.06349) §1、§3.3–3.4、§4、Table 3。
 
 ### 4 Mamba：让转移随输入变化，但不随状态变化
 
@@ -72,7 +72,7 @@ h_t = Ā h_{t−1} + B̄ x_t，y_t = C h_t + D x_t
 
 - `[结构]` Mamba 原文 §3.5.1 的定理 1：当状态维度 N = 1、A = −1、B = 1、Δ_t = softplus(Linear(x_t)) 时，选择性 SSM 的递推就是
   g_t = σ(Linear(x_t))，h_t = (1 − g_t) h_{t−1} + g_t x_t，
-  也就是 RNN 的门控形式（证明在原文附录 C）。推导：零阶保持（ZOH，假设输入在一个采样间隔内不变的离散化方法）给出 Ā = exp(ΔA) = e^{−Δ}，B̄ = (ΔA)^{−1}(exp(ΔA) − 1)·ΔB = 1 − e^{−Δ}；又因为 softplus(z) = ln(1 + e^z)，所以 e^{−softplus(z)} = 1/(1 + e^z) = 1 − σ(z)。令 g = σ(z)，就得到 Ā = 1 − g、B̄ = g。手算：z = 2 时 softplus(2) ≈ 2.127，e^{−2.127} ≈ 0.119，而 1 − σ(2) = 1 − 0.881 = 0.119。[18-ssm-gnn-moe.md](../../docs/foundations/18-ssm-gnn-moe.md) 第 2.3 节用来解释"选择"的门控公式，正是这个定理的结论。
+  也就是 RNN 的门控形式（证明在原文附录 C）。推导：零阶保持（ZOH，假设输入在一个采样间隔内不变的离散化方法）给出 Ā = exp(ΔA) = e^{−Δ}，B̄ = (ΔA)^{−1}(exp(ΔA) − 1)·ΔB = 1 − e^{−Δ}；又因为 softplus(z) = ln(1 + e^z)，所以 e^{−softplus(z)} = 1/(1 + e^z) = 1 − σ(z)。令 g = σ(z)，就得到 Ā = 1 − g、B̄ = g。手算：z = 2 时 softplus(2) ≈ 2.127，e^{−2.127} ≈ 0.119，而 1 − σ(2) = 1 − 0.881 = 0.119。[18-ssm-gnn-moe.md](../lessons/18-ssm-gnn-moe.md) 第 2.3 节用来解释"选择"的门控公式，正是这个定理的结论。
 - `[结构]` 与 LSTM 对照：令 f_t = 1 − g_t、i_t = g_t，LSTM 的 c 通路就成了上式（遗忘门与输入门之和恒为 1 的耦合形式）。差别在于 g_t 只依赖 x_t、不依赖 h_{t−1}，所以每一步仍是仿射映射 (a_t, b_t) = (1 − g_t, g_t x_t)，上一节点的结合律照样成立。转移能随内容变化，同时还能 scan，这是 Mamba 能并行训练的结构前提。
 - `[历史]` Mamba 原文写明，RNN 的经典门控是其选择机制的一个实例，定理 1 推广了 Gu 等 2021 的 Lemma 3.1，并引用 Funahashi 与 Nakamura 1993、Tallec 与 Ollivier 2018 关于"门控对应连续时间系统离散化"的工作（§3.5.1）。附录 B.3 把 QRNN、SRU 等"时间方向上没有非线性的门控 RNN"归为选择性 SSM 的特例，并在讨论 SSM 怎样缓解梯度消失时引用了 Pascanu 等 2013 和 Orvieto 等 2023（即 LRU）。
 - `[经验]` 选择性本身有用：在 Selective Copying 任务（要求跳过随机插入的无关 token 后复制目标 token）上，同样的 Mamba 块内层用固定的 S4 准确率为 56.4%，换成选择性的 S6 为 99.8%（原文 Table 1）。
@@ -88,10 +88,10 @@ T_t = T_{t−1} + φ(k_t) v_tᵀ，z_t = z_{t−1} + φ(k_t)，输出 o_tᵀ = �
 **与上一节点的关系。**
 
 - `[结构]` 与第 3 节的 h_t = Ā h_{t−1} + B̄ x_t 对照：状态 T_t 是一个 r×d_v 的矩阵，转移 Ā 是单位阵（旧状态原样保留，不衰减也不放大），本步写入的是外积 φ(k_t) v_tᵀ，读出时用 φ(q_t) 查询并归一化。按第 1 节的稳定性语言，单位转移的特征值恰好为 1：信息不会消失，但也不会被遗忘。第 3 节的结合律同样成立，所以训练可以并行，生成时每步只更新固定大小的状态。
-  手算（[15-qkv-deep-dive.md](../../docs/foundations/15-qkv-deep-dive.md) 第 10.1 节）：φ(k₁) = 2、v₁ = 10，φ(k₂) = 1、v₂ = 20，则 T = 2×10 + 1×20 = 40，z = 3；φ(q) = 1 时读出 40/3 ≈ 13.33。下一步若写入 φ(k₃) = 1、v₃ = 0，只需 T = 40 + 0 = 40、z = 3 + 1 = 4，读出 10，不必重读前两步。
+  手算（[15-qkv-deep-dive.md](../lessons/15-qkv-deep-dive.md) 第 10.1 节）：φ(k₁) = 2、v₁ = 10，φ(k₂) = 1、v₂ = 20，则 T = 2×10 + 1×20 = 40，z = 3；φ(q) = 1 时读出 40/3 ≈ 13.33。下一步若写入 φ(k₃) = 1、v₃ = 0，只需 T = 40 + 0 = 40、z = 3 + 1 = 4，读出 10，不必重读前两步。
 - `[结构]` 与 Mamba 对照：两者都是"转移不依赖状态"的线性递推，所以都能 scan。Mamba 的转移是随输入变化的衰减，状态按内容选择性遗忘；线性注意力的转移固定为单位阵，状态只累加。
 
-**支撑证据。** [15-qkv-deep-dive.md](../../docs/foundations/15-qkv-deep-dive.md) 第 10.1 节；原文 §3.2–3.4；Mamba 原文附录 B.4 对线性注意力一脉的讨论。
+**支撑证据。** [15-qkv-deep-dive.md](../lessons/15-qkv-deep-dive.md) 第 10.1 节；原文 §3.2–3.4；Mamba 原文附录 B.4 对线性注意力一脉的讨论。
 
 ## 这条链解释了什么
 
@@ -117,17 +117,17 @@ T_t = T_{t−1} + φ(k_t) v_tᵀ，z_t = z_{t−1} + φ(k_t)，输出 o_tᵀ = �
 **易误读**
 
 - Pascanu 等 2013 的 arXiv v2 把条件写成"最大特征值的绝对值"，ICML 2013 正式版（[PMLR v28](https://proceedings.mlr.press/v28/pascanu13.pdf)）第 2.1 节写的是"最大奇异值"，与式 (6) 用 2-范数的证明一致。对非对称矩阵，谱半径不超过最大奇异值，所以引用时以正式版为准。
-- RNN 与状态方程的结构对应，不意味着隐藏状态的某一维带物理单位，也不带来 Kalman 滤波的噪声假设与统计保证（[12-rnn.md](../../docs/foundations/12-rnn.md) 第 7 节、[18-ssm-gnn-moe.md](../../docs/foundations/18-ssm-gnn-moe.md) 第 2.4 节）。
+- RNN 与状态方程的结构对应，不意味着隐藏状态的某一维带物理单位，也不带来 Kalman 滤波的噪声假设与统计保证（[12-rnn.md](../lessons/12-rnn.md) 第 7 节、[18-ssm-gnn-moe.md](../lessons/18-ssm-gnn-moe.md) 第 2.4 节）。
 - LeCun 1988 的推导对象是多层前馈网络，"时间"对应层序号；把伴随方程用到 BPTT，是把时间步当作层看待，推导本身完全相同。
 - Mamba 定理 1 只覆盖 N = 1 的退化情形；完整 Mamba 状态维度更大，B、C 也随输入变化，表达能力不等于一维门控（[Mamba 精读](../../llm/papers/mamba/reading.md) 第 3 节）。
-- "Transformers are RNNs"成立的前提是 φ 为有限维特征；标准 softmax 注意力要精确写成这种形式需要无限维特征，原文 §3.4 只说"理论上"可以（另见 [15-qkv-deep-dive.md](../../docs/foundations/15-qkv-deep-dive.md) 第 10.1 节）。
+- "Transformers are RNNs"成立的前提是 φ 为有限维特征；标准 softmax 注意力要精确写成这种形式需要无限维特征，原文 §3.4 只说"理论上"可以（另见 [15-qkv-deep-dive.md](../lessons/15-qkv-deep-dive.md) 第 10.1 节）。
 - LRU 与 S4 的"相近"指 LRA 上的分类准确率，不涉及语言建模。
 
 **与其他论文的关联**
 
 - [LRU 文献卡](../../llm/papers/arxiv-2303.06349/README.md) 与 [Mamba 精读](../../llm/papers/mamba/reading.md)：Mamba 附录 B.3 引用 LRU，作为"直接分析递推动力学"一路的代表；两篇共享作者 Albert Gu。
 - [注意力与 FFN 的分工谱系](attention-ffn-division.md)：本页第 5 节把注意力写成递推，那一页讨论注意力在 Transformer 内部和 FFN 怎样分工。两页合起来看，线性注意力保留了"按 key 写入、按 query 读出"的寻址方式，代价是把全部历史压进固定大小的状态。
-- [14-attention-transformer.md](../../docs/foundations/14-attention-transformer.md) 第 14.4 节讨论局部、稀疏、线性注意力的成本差别，可与本页第 5 节对照。
+- [14-attention-transformer.md](../lessons/14-attention-transformer.md) 第 14.4 节讨论局部、稀疏、线性注意力的成本差别，可与本页第 5 节对照。
 
 **未核实 / 待验证**
 

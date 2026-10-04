@@ -12,11 +12,11 @@ Transformer 的两种子层分担不同的工作：注意力决定"从当前上�
 
 ### 1 注意力的 A 与 V：读哪里，与读到什么
 
-**它是什么。** 自注意力先用 Q 与 K 的点积算出权重矩阵 A = softmax(QKᵀ/√d_k)，再输出 O = AV。A 的两条轴都是位置，回答"每个位置从哪些位置读、各读多少"；V 是被读取的内容（[15-qkv-deep-dive.md](../../docs/foundations/15-qkv-deep-dive.md) 第 4 节）。
+**它是什么。** 自注意力先用 Q 与 K 的点积算出权重矩阵 A = softmax(QKᵀ/√d_k)，再输出 O = AV。A 的两条轴都是位置，回答"每个位置从哪些位置读、各读多少"；V 是被读取的内容（[15-qkv-deep-dive.md](../lessons/15-qkv-deep-dive.md) 第 4 节）。
 
 **关系。** `[结构]` 注意力把"读哪里"和"读到什么"分成两条通路。手算（15-qkv-deep-dive.md 第 4.4 节与第 5 节）：在原例中第一个位置的输出是 0.731×10 + 0.269×20 ≈ 12.689；把输入矩阵 X 中只被 V 读取的第二列整体乘 10 后，Q、K、A 全部不变，V 变成 [100, 200]ᵀ，同一位置的输出变成约 126.894。同一个 A 对应了两种完全不同的输出，差别全在 V。
 
-**支撑证据。** [15-qkv-deep-dive.md](../../docs/foundations/15-qkv-deep-dive.md) 第 4–5 节；[14-attention-transformer.md](../../docs/foundations/14-attention-transformer.md) 第 4–6 节。
+**支撑证据。** [15-qkv-deep-dive.md](../lessons/15-qkv-deep-dive.md) 第 4–5 节；[14-attention-transformer.md](../lessons/14-attention-transformer.md) 第 4–6 节。
 
 ### 2 Induction Heads：位置关系由一个头建立，内容由另一个头复制
 
@@ -40,7 +40,7 @@ Transformer 的两种子层分担不同的工作：注意力决定"从当前上�
 
 ### 4 FFN 是一张用参数写成的键值表
 
-**它是什么。** FFN（前馈网络）对每个位置独立做两层变换 FFN(x) = f(x W_1) W_2，f 通常是 ReLU（[14-attention-transformer.md](../../docs/foundations/14-attention-transformer.md) 第 10.1 节）。
+**它是什么。** FFN（前馈网络）对每个位置独立做两层变换 FFN(x) = f(x W_1) W_2，f 通常是 ReLU（[14-attention-transformer.md](../lessons/14-attention-transformer.md) 第 10.1 节）。
 
 **与上一节点的关系。**
 
@@ -76,7 +76,7 @@ Transformer 的两种子层分担不同的工作：注意力决定"从当前上�
 
 ### 7 MoE：把 FFN 变大，但每个 token 只读其中一小部分
 
-**它是什么。** 混合专家（MoE）把一层拆成许多"专家"子网络，由路由器为每个 token 只选少数几个专家计算（[18-ssm-gnn-moe.md](../../docs/foundations/18-ssm-gnn-moe.md) 第 4 节）。[Switch Transformer](../../llm/papers/arxiv-2101.03961/README.md)（Fedus、Zoph、Shazeer 2021）每个 token 只选 1 个专家；[DeepSeekMoE](../../llm/papers/arxiv-2401.06066/README.md)（2024）把专家切得更细，并隔离出所有 token 共用的共享专家；[DeepSeek-V2](../../llm/papers/deepseek-v2/README.md)（2024）在整个模型中采用 DeepSeekMoE。
+**它是什么。** 混合专家（MoE）把一层拆成许多"专家"子网络，由路由器为每个 token 只选少数几个专家计算（[18-ssm-gnn-moe.md](../lessons/18-ssm-gnn-moe.md) 第 4 节）。[Switch Transformer](../../llm/papers/arxiv-2101.03961/README.md)（Fedus、Zoph、Shazeer 2021）每个 token 只选 1 个专家；[DeepSeekMoE](../../llm/papers/arxiv-2401.06066/README.md)（2024）把专家切得更细，并隔离出所有 token 共用的共享专家；[DeepSeek-V2](../../llm/papers/deepseek-v2/README.md)（2024）在整个模型中采用 DeepSeekMoE。
 
 **与上一节点的关系。**
 
@@ -130,7 +130,7 @@ Transformer 的两种子层分担不同的工作：注意力决定"从当前上�
 
 - [递推状态谱系](recurrent-state.md)：线性注意力把第 1 节的"按 key 写入、按 query 读出"压进固定大小的递推状态，可与本页对照：本页讨论注意力与 FFN 的分工，那一页讨论注意力本身怎样退化为递推。
 - [Mamba 精读](../../llm/papers/mamba/reading.md)：Mamba 原文 §3.4 把 H3 块与 MLP 块合并成一个同质的块，灵感来自把多头注意力与 MLP 合并的 GAU（原文附录 B.2）；本页讨论的两个子层的分工，在那里被收进同一个块。
-- [14-attention-transformer.md](../../docs/foundations/14-attention-transformer.md) 第 10.1 节与 [18-ssm-gnn-moe.md](../../docs/foundations/18-ssm-gnn-moe.md) 第 4.5 节分别讲 FFN 与 MoE 的位置，本页是两节之间的连接。
+- [14-attention-transformer.md](../lessons/14-attention-transformer.md) 第 10.1 节与 [18-ssm-gnn-moe.md](../lessons/18-ssm-gnn-moe.md) 第 4.5 节分别讲 FFN 与 MoE 的位置，本页是两节之间的连接。
 - Induction head 在上下文中实现"见过 A 后跟 B，就续写 B"的算法，作者强调它不是在背一张固定的 n-gram 统计表；Engram 正好相反，用参数表存储训练语料中的静态 N-gram 模式。前者依赖当前上下文，后者不依赖，二者对应本页的两侧。
 
 **未核实 / 待验证**

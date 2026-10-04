@@ -28,9 +28,9 @@
     "robotics-embodied/baselines/orb-slam3.md"
   ],
   "evidence_paths": [
-    "docs/deep-readings/evidence/orb-slam3.json",
-    "../../../docs/deep-readings/evidence/orb-slam3.json",
-    "../../../docs/deep-readings/evidence/orb-slam3-coverage.json"
+    "robotics-embodied/papers/orb-slam3/evidence.json",
+    "evidence.json",
+    "evidence-coverage.json"
   ],
   "topic_paths": [
     "multimodal/world-models",

@@ -1,7 +1,7 @@
 title,file
-研究兴趣与论文知识库,docs/research-map.md
-模型训练与多模态,docs/model-training-multimodal.md
-机器人与具身智能,docs/robotics-embodied.md
+研究兴趣与论文知识库,perspectives/notes/research-map.md
+模型训练与多模态,perspectives/notes/model-training-multimodal.md
+机器人与具身智能,perspectives/notes/robotics-embodied.md
 Qwen2.5-1M 全文精读,llm/papers/qwen2.5-1m/reading.md
 长上下文 LLM 技术路线图,docs/roadmaps/long-context.md
 Baseline 全文精读与技术路线图,BASELINES.md
@@ -38,37 +38,37 @@ DINO 精读 没有人工标签的教师从哪里来,multimodal/papers/dino/readi
 状态估计运动规划与机器人控制 Baseline,docs/roadmaps/robotics-baselines.md
 语言模型训练与策略优化 Baseline,docs/roadmaps/training-baselines.md
 视觉表征与图文对齐 Baseline,docs/roadmaps/visual-baselines.md
-深度学习基础学习导航,docs/foundations/00-learning-navigation.md
-QKV 为什么已经算出匹配 还要传递内容,docs/foundations/15-qkv-deep-dive.md
-梯度 反向传播与 SGD,docs/foundations/modules/optimization/gradient-sgd.md
-05b 强化学习导读,docs/foundations/05b-reinforcement-learning.md
-05c 迁移与元学习导读,docs/foundations/05c-transfer-meta-learning.md
-05a 分布式训练导读,docs/foundations/05a-distributed-training.md
-CNN 从像素窗口到可学习视觉特征,docs/foundations/11-cnn.md
-RNN 从连续输入到可学习的历史记忆,docs/foundations/12-rnn.md
-Attention 与 Transformer 从信息读取到完整模型,docs/foundations/14-attention-transformer.md
-LSTM 从长期记忆问题到门控更新,docs/foundations/13-lstm.md
-SSM GNN 与 MoE 的三个独立入门问题,docs/foundations/18-ssm-gnn-moe.md
-VAE 从隐藏原因到可训练的生成模型,docs/foundations/16-vae.md
-Diffusion 从加噪练习到逐步生成,docs/foundations/17-diffusion.md
-动量与逐坐标自适应优化,docs/foundations/modules/optimization/momentum.md
-Adam 与 AdamW,docs/foundations/modules/optimization/adam.md
-Muon 与矩阵更新正交化,docs/foundations/modules/optimization/muon.md
-回归与鲁棒损失 从残差到训练分数,docs/foundations/modules/objectives/01-regression-robustness.md
-概率分类 从交叉熵到BCE NLL与KL,docs/foundations/modules/objectives/02-classification-probabilities.md
-自监督与生成目标 从可见信息到学习信号,docs/foundations/modules/objectives/03-pretraining-objectives.md
-机器人与IMU目标 从坐标约定到可观测性,docs/foundations/modules/objectives/04-robotics-imu.md
-参数正则化 从L1 L2到权重衰减,docs/foundations/modules/objectives/05-regularization.md
-样本接口与数据集选择,docs/foundations/modules/data/01-data-contracts.md
-划分同步与最小数据管道,docs/foundations/modules/data/02-data-pipeline.md
-图像与文本分类的小规模实践,docs/foundations/modules/data/03-classification-labs.md
-IMU窗口怎样对应一个位移标签,docs/foundations/modules/data/04-imu-lab.md
-架构与生成模型 学习地图,docs/foundations/01-architectures.md
-优化与训练基础模块导航,docs/foundations/02-optimization.md
-任务与训练目标 学习模块导航,docs/foundations/03-tasks-losses.md
-数据与数据集模块导航,docs/foundations/04-data-and-datasets.md
-从基础进入进阶,docs/foundations/05-advanced-bridges.md
-十五个代表数据集的选型目录,docs/foundations/catalog/dataset-selection.md
+深度学习基础学习导航,foundations/lessons/00-learning-navigation.md
+QKV 为什么已经算出匹配 还要传递内容,foundations/lessons/15-qkv-deep-dive.md
+梯度 反向传播与 SGD,foundations/lessons/modules/optimization/gradient-sgd.md
+05b 强化学习导读,foundations/lessons/05b-reinforcement-learning.md
+05c 迁移与元学习导读,foundations/lessons/05c-transfer-meta-learning.md
+05a 分布式训练导读,foundations/lessons/05a-distributed-training.md
+CNN 从像素窗口到可学习视觉特征,foundations/lessons/11-cnn.md
+RNN 从连续输入到可学习的历史记忆,foundations/lessons/12-rnn.md
+Attention 与 Transformer 从信息读取到完整模型,foundations/lessons/14-attention-transformer.md
+LSTM 从长期记忆问题到门控更新,foundations/lessons/13-lstm.md
+SSM GNN 与 MoE 的三个独立入门问题,foundations/lessons/18-ssm-gnn-moe.md
+VAE 从隐藏原因到可训练的生成模型,foundations/lessons/16-vae.md
+Diffusion 从加噪练习到逐步生成,foundations/lessons/17-diffusion.md
+动量与逐坐标自适应优化,foundations/lessons/modules/optimization/momentum.md
+Adam 与 AdamW,foundations/lessons/modules/optimization/adam.md
+Muon 与矩阵更新正交化,foundations/lessons/modules/optimization/muon.md
+回归与鲁棒损失 从残差到训练分数,foundations/lessons/modules/objectives/01-regression-robustness.md
+概率分类 从交叉熵到BCE NLL与KL,foundations/lessons/modules/objectives/02-classification-probabilities.md
+自监督与生成目标 从可见信息到学习信号,foundations/lessons/modules/objectives/03-pretraining-objectives.md
+机器人与IMU目标 从坐标约定到可观测性,foundations/lessons/modules/objectives/04-robotics-imu.md
+参数正则化 从L1 L2到权重衰减,foundations/lessons/modules/objectives/05-regularization.md
+样本接口与数据集选择,foundations/lessons/modules/data/01-data-contracts.md
+划分同步与最小数据管道,foundations/lessons/modules/data/02-data-pipeline.md
+图像与文本分类的小规模实践,foundations/lessons/modules/data/03-classification-labs.md
+IMU窗口怎样对应一个位移标签,foundations/lessons/modules/data/04-imu-lab.md
+架构与生成模型 学习地图,foundations/lessons/01-architectures.md
+优化与训练基础模块导航,foundations/lessons/02-optimization.md
+任务与训练目标 学习模块导航,foundations/lessons/03-tasks-losses.md
+数据与数据集模块导航,foundations/lessons/04-data-and-datasets.md
+从基础进入进阶,foundations/lessons/05-advanced-bridges.md
+十五个代表数据集的选型目录,foundations/lessons/catalog/dataset-selection.md
 机器人与具身分领域阅读,robotics-embodied/README.md
 运动控制 怎样把想去的位置变成稳定运动,robotics-embodied/fields/control-locomotion.md
 具身 Agents 从一句指令到可验证的行动,robotics-embodied/fields/embodied-agents.md

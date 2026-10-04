@@ -75,6 +75,6 @@ DAVIS-2017采用冻结patch特征做连续帧最近邻传播，ViT-B/16的(J&F)m
 
 ## 图解文件与证据索引
 
-[PNG高清图](figures/dino.png) · [SVG可编辑图](figures/dino.svg) · [结构化证据](../../../docs/deep-readings/evidence/dino.json)
+[PNG高清图](figures/dino.png) · [SVG可编辑图](figures/dino.svg) · [结构化证据](evidence.json)
 
 来源类型：本次为细分方向新选择的 baseline，不是历史聊天提取。

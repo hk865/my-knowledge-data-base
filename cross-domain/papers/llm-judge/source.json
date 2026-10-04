@@ -27,8 +27,8 @@
     "docs/deep-readings/llm-judge.md"
   ],
   "evidence_paths": [
-    "docs/deep-readings/evidence/llm-judge.json",
-    "../../../docs/deep-readings/evidence/llm-judge.json"
+    "cross-domain/papers/llm-judge/evidence.json",
+    "evidence.json"
   ],
   "topic_paths": [
     "cross-domain/evaluation",

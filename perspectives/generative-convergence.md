@@ -10,7 +10,7 @@
 
 **1. 生成式目标本身就是自监督信号（语言 2018 年起，图像 2020 年起，视频 2022 年起）**
 
-下一词预测不需要标注：文本的下一个词就是答案，训练时预测下一词，使用时也是逐词生成，训练形式与使用形式一致。扩散模型的训练目标是预测加进图像里的噪声，答案同样由数据和人为加的噪声给出，生成时把这个预测反复用于去噪（[DDPM 精读](../multimodal/papers/ddpm/reading.md)、[扩散讲义](../docs/foundations/17-diffusion.md)）。Video Diffusion Models（2022，Google）的作者写明，视频生成基本沿用标准的高斯扩散形式，改动只在为适应加速器内存而做的结构调整上（[Video Diffusion 精读](../multimodal/papers/video-diffusion/reading.md)第 1–3 节）。这一点让生成模型直接接上了[规模化](scaling.md)的总线：训练数据的量只受原始数据限制。
+下一词预测不需要标注：文本的下一个词就是答案，训练时预测下一词，使用时也是逐词生成，训练形式与使用形式一致。扩散模型的训练目标是预测加进图像里的噪声，答案同样由数据和人为加的噪声给出，生成时把这个预测反复用于去噪（[DDPM 精读](../multimodal/papers/ddpm/reading.md)、[扩散讲义](../foundations/lessons/17-diffusion.md)）。Video Diffusion Models（2022，Google）的作者写明，视频生成基本沿用标准的高斯扩散形式，改动只在为适应加速器内存而做的结构调整上（[Video Diffusion 精读](../multimodal/papers/video-diffusion/reading.md)第 1–3 节）。这一点让生成模型直接接上了[规模化](scaling.md)的总线：训练数据的量只受原始数据限制。
 
 **2. 主干统一带来可共享的训练配方和规模化性质（2022 年起）**
 
@@ -95,7 +95,7 @@ DiT 的作者把"架构统一"列为用 Transformer 替换 U-Net 的理由：图
 **与其他页面的关联**
 
 - [深度学习的规模化](scaling.md) 的阶段三是本页的上层总线；[CNN 与 Transformer](cnn-vs-transformer.md) 讨论主干转向的结构原因。
-- [DDPM 精读](../multimodal/papers/ddpm/reading.md) 与[扩散讲义](../docs/foundations/17-diffusion.md) 讲去噪目标怎么算；[Video Diffusion 精读](../multimodal/papers/video-diffusion/reading.md) 第 2 节有分解时空注意力的计算量推导。
+- [DDPM 精读](../multimodal/papers/ddpm/reading.md) 与[扩散讲义](../foundations/lessons/17-diffusion.md) 讲去噪目标怎么算；[Video Diffusion 精读](../multimodal/papers/video-diffusion/reading.md) 第 2 节有分解时空注意力的计算量推导。
 - [VLA 领域页](../robotics-embodied/fields/vla.md) 是"离散与连续两种生成过程在一个模型里共存"的实例。
 
 **出处（本库没有单篇目录的论文，正文链接到领域页节点）**

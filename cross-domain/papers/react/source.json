@@ -28,8 +28,8 @@
     "robotics-embodied/baselines/react.md"
   ],
   "evidence_paths": [
-    "docs/deep-readings/evidence/react.json",
-    "../../../docs/deep-readings/evidence/react.json"
+    "cross-domain/papers/react/evidence.json",
+    "evidence.json"
   ],
   "topic_paths": [
     "llm/inference",

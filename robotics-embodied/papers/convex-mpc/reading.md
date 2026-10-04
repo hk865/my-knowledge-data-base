@@ -1,6 +1,6 @@
 # Convex MPC：先固定步态时序和偏航，四足的接触力规划就变成每秒几十次的凸二次规划
 
-> 状态：技术精读 · v2 · 未复现 · 原文 [IROS 2018 作者稿（MIT DSpace）](https://dspace.mit.edu/entities/publication/bc8c7e1e-5830-443f-a879-787947111fcf) · [证据档案](../../../docs/deep-readings/evidence/convex-mpc.json)
+> 状态：技术精读 · v2 · 未复现 · 原文 [IROS 2018 作者稿（MIT DSpace）](https://dspace.mit.edu/entities/publication/bc8c7e1e-5830-443f-a879-787947111fcf) · [证据档案](evidence.json)
 
 ![Convex MPC：状态估计、接触力优化与滚动控制](figures/convex-mpc.svg)
 

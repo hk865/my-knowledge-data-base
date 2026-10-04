@@ -1,6 +1,6 @@
 # RRT*：邻域按 (log n / n)^(1/d) 收缩，每加一个点都重选父节点并重连，采样树的路径代价就会随采样继续下降
 
-> 状态：技术精读 · v2 · 未复现 · 原文 [arXiv:1105.1186v1](https://arxiv.org/abs/1105.1186) · [证据档案](../../../docs/deep-readings/evidence/rrt-star.json)
+> 状态：技术精读 · v2 · 未复现 · 原文 [arXiv:1105.1186v1](https://arxiv.org/abs/1105.1186) · [证据档案](evidence.json)
 
 ![RRT星选择父节点及重连机制](figures/rrt-star.svg)
 

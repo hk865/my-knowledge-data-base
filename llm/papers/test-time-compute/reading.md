@@ -92,9 +92,9 @@ F=M+3\frac{D_{pre}}{D_{inf}}(M-1).
 
 ## 阅读证据
 
-[证据与覆盖记录](../../../docs/deep-readings/evidence/test-time-compute.json)给出版本、章节、附录和关键结果位置。本文仅发布原创图解与精读，没有重发原文或案例截图。
+[证据与覆盖记录](evidence.json)给出版本、章节、附录和关键结果位置。本文仅发布原创图解与精读，没有重发原文或案例截图。
 
 
 ## 图解文件与证据索引
 
-[SVG高清图](figures/test-time-compute-mechanism.svg) · [SVG可编辑图](figures/test-time-compute-mechanism.svg) · [结构化证据](../../../docs/deep-readings/evidence/test-time-compute.json)
+[SVG高清图](figures/test-time-compute-mechanism.svg) · [SVG可编辑图](figures/test-time-compute-mechanism.svg) · [结构化证据](evidence.json)

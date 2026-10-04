@@ -27,8 +27,8 @@
     "docs/deep-readings/llava.md"
   ],
   "evidence_paths": [
-    "docs/deep-readings/evidence/llava.json",
-    "../../../docs/deep-readings/evidence/llava.json"
+    "multimodal/papers/llava/evidence.json",
+    "evidence.json"
   ],
   "topic_paths": [
     "multimodal/generation",

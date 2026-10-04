@@ -10,7 +10,7 @@
 
 ## 主线历史
 
-起点是 2000 年代的手工特征路线：Dalal 与 Triggs（2005，INRIA）的 HOG（梯度方向直方图：统计局部小格内各方向梯度的强弱）加线性 SVM，以及 Felzenszwalb、Girshick 等在 HOG 上搭建的可变形部件模型 DPM（2010）。特征由人设计，只有最后的分类器在学习。卷积网络在 1998 年的 LeNet 中已经能从标注里学卷积核，但只在文档识别这类小规模任务上落地。HOG 为什么相当于一个核固定的浅层 CNN、这些机制怎样一步步演化，见 [CNN 讲义](../../../docs/foundations/11-cnn.md)第 6 节；本节关心的是数据、benchmark 和训练信号怎样改变了这个领域。这条主线也是[深度学习规模化](../../../perspectives/scaling.md)在视觉中的一段：训练信号从人工设计，走到人工标注，再走到数据本身。
+起点是 2000 年代的手工特征路线：Dalal 与 Triggs（2005，INRIA）的 HOG（梯度方向直方图：统计局部小格内各方向梯度的强弱）加线性 SVM，以及 Felzenszwalb、Girshick 等在 HOG 上搭建的可变形部件模型 DPM（2010）。特征由人设计，只有最后的分类器在学习。卷积网络在 1998 年的 LeNet 中已经能从标注里学卷积核，但只在文档识别这类小规模任务上落地。HOG 为什么相当于一个核固定的浅层 CNN、这些机制怎样一步步演化，见 [CNN 讲义](../../../foundations/lessons/11-cnn.md)第 6 节；本节关心的是数据、benchmark 和训练信号怎样改变了这个领域。这条主线也是[深度学习规模化](../../../perspectives/scaling.md)在视觉中的一段：训练信号从人工设计，走到人工标注，再走到数据本身。
 
 1. **ImageNet（2009，Princeton）与 ILSVRC（2010 起每年举办）**。上一阶段留下的问题：特征受限于人能设计出什么，可学习的深网络又缺少足够大的标注数据，各团队也缺一个共同比较的公开 benchmark（HOG 在 MIT 行人库上近乎完美分离后，作者另建了更难的 INRIA 行人库）。改变：以 WordNet 的名词概念为骨架、目标约 5000 万张图的标注图库，以及约 120 万训练图、1000 类的年度竞赛 ILSVRC。图像分类的主战场从此转到 ImageNet，检测仍以 PASCAL VOC 为主。
 2. **AlexNet（2012，Toronto）**。留下的问题：有了数据，在高分辨率图像上大规模训练 CNN 仍然太贵。改变：两块 GPU、ReLU、dropout，加上 ImageNet 规模的数据，在 ILSVRC-2012 上 top-5 测试错误率 15.3%，第二名（Fisher 向量手工特征）为 26.2%。ILSVRC 组织者把 2012 年称为转折点：2013 年绝大多数、2014 年几乎全部参赛方法改用 CNN。[判断] 改变局面的是数据、算力和 benchmark，卷积机制在 LeNet 中已经具备。
@@ -22,11 +22,11 @@
 
 ## 技术地基
 
-- **卷积与它的归纳偏置**：小核在所有位置复用，带来局部性与平移等变；主线前四个节点都建立在它上面，它在小数据下的优势与大数据下的限制，也正是 ViT 之争的焦点。见 [CNN 讲义](../../../docs/foundations/11-cnn.md)第 2–5 节。
-- **残差连接**：让上百层的网络可以训练，ResNet 之后的 CNN 和 ViT 的每个子层都沿用它。见 [CNN 讲义](../../../docs/foundations/11-cnn.md)第 6 节与 [Attention 与 Transformer 讲义](../../../docs/foundations/14-attention-transformer.md)第 10.2 节。
-- **图像块 token 与自注意力**：ViT 把图像变成 token 序列，第一层就能让每个块读取全部块；MAE 能只编码可见块，也依赖这种表示。见 [Attention 与 Transformer 讲义](../../../docs/foundations/14-attention-transformer.md)第 13.4 节。
-- **自监督与弱监督训练信号**：对比学习（MoCo、SimCLR）、遮蔽重建（MAE）、自蒸馏（DINO：学生网络去匹配由自身参数滑动平均得到的教师网络的输出）和图文对比（CLIP）是让数据自己出题的几种方式。架构与训练信号是两条独立的轴，同一个 ViT 可以用标签监督、遮蔽重建或自蒸馏来训练。见[自监督与生成目标](../../../docs/foundations/modules/objectives/03-pretraining-objectives.md)第 5–9 节。
-- **预训练与迁移**：从 R-CNN 起，表征的价值由迁移到下游任务的效果决定；冻结主干只训任务头、部分微调、全量微调是几种不同的适配方式。见[迁移与元学习](../../../docs/foundations/05c-transfer-meta-learning.md)第 2–3 节。
+- **卷积与它的归纳偏置**：小核在所有位置复用，带来局部性与平移等变；主线前四个节点都建立在它上面，它在小数据下的优势与大数据下的限制，也正是 ViT 之争的焦点。见 [CNN 讲义](../../../foundations/lessons/11-cnn.md)第 2–5 节。
+- **残差连接**：让上百层的网络可以训练，ResNet 之后的 CNN 和 ViT 的每个子层都沿用它。见 [CNN 讲义](../../../foundations/lessons/11-cnn.md)第 6 节与 [Attention 与 Transformer 讲义](../../../foundations/lessons/14-attention-transformer.md)第 10.2 节。
+- **图像块 token 与自注意力**：ViT 把图像变成 token 序列，第一层就能让每个块读取全部块；MAE 能只编码可见块，也依赖这种表示。见 [Attention 与 Transformer 讲义](../../../foundations/lessons/14-attention-transformer.md)第 13.4 节。
+- **自监督与弱监督训练信号**：对比学习（MoCo、SimCLR）、遮蔽重建（MAE）、自蒸馏（DINO：学生网络去匹配由自身参数滑动平均得到的教师网络的输出）和图文对比（CLIP）是让数据自己出题的几种方式。架构与训练信号是两条独立的轴，同一个 ViT 可以用标签监督、遮蔽重建或自蒸馏来训练。见[自监督与生成目标](../../../foundations/lessons/modules/objectives/03-pretraining-objectives.md)第 5–9 节。
+- **预训练与迁移**：从 R-CNN 起，表征的价值由迁移到下游任务的效果决定；冻结主干只训任务头、部分微调、全量微调是几种不同的适配方式。见[迁移与元学习](../../../foundations/lessons/05c-transfer-meta-learning.md)第 2–3 节。
 
 ## 主要路线与团队偏好
 
@@ -52,7 +52,7 @@ benchmark 的替换就是这个领域目标的迁移：
 
 ## 阅读顺序
 
-1. [CNN 讲义](../../../docs/foundations/11-cnn.md)第 6 节：主线前四个节点的机制版本，先弄清卷积、残差和"预训练主干迁移"各自解决了什么。
+1. [CNN 讲义](../../../foundations/lessons/11-cnn.md)第 6 节：主线前四个节点的机制版本，先弄清卷积、残差和"预训练主干迁移"各自解决了什么。
 2. [ViT 精读](../../papers/vit/README.md)：主干从卷积转向 Transformer 的节点，也是"归纳偏置与数据规模"这一问题的起点；建议手算一次 token 数 N = HW/P²。
 3. [MAE 精读](../../papers/mae/README.md)：在同一个 ViT 上换成遮蔽重建，看为什么只编码可见块反而更好、为什么线性评测和微调会给出不同排序。
 4. [DINO 精读](../../papers/dino/README.md)：把固定的像素目标换成动态的教师输出，与 MAE 对照阅读。
@@ -82,7 +82,7 @@ benchmark 的替换就是这个领域目标的迁移：
 
 **与其他论文的关联**
 
-- [CNN 讲义](../../../docs/foundations/11-cnn.md)第 6 节与本页主线前四个节点一致，讲的是机制；本页补上了团队与 benchmark 两个维度。两处如有出入，以 [synthesis.csv](synthesis.csv) 中的原文出处为准修改。
+- [CNN 讲义](../../../foundations/lessons/11-cnn.md)第 6 节与本页主线前四个节点一致，讲的是机制；本页补上了团队与 benchmark 两个维度。两处如有出入，以 [synthesis.csv](synthesis.csv) 中的原文出处为准修改。
 - U-Net（2015，Freiburg）的编码–解码结构后来成为扩散模型的去噪主干，见[视觉生成方向](../generation/README.md)；ViT 的切块思路被 DiT 用到图像生成里。
 - CLIP 的图像编码器是 [LLaVA](../../papers/llava/README.md) 等视觉语言模型的视觉输入端，也是 DALL·E 2 生成图像时的条件（见[视觉生成方向](../generation/README.md)）。
 - MoCo、MAE 都以 BERT、GPT 为参照提出问题，语言一侧的对应历史见 [LLM 预训练方向](../../../llm/fields/pretraining/README.md)；训练配方与规模定律见[训练科学](../../../cross-domain/fields/training-science/README.md)。

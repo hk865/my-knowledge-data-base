@@ -119,4 +119,4 @@ ReAct 和 CoT 各有失败方式：ReAct 依赖检索，搜不到就可能卡住
 
 - 附录 C.4 的 Table 7（p.23）标为 Act、图注说没有 thought，但印出的清洗轨迹保留了一句 think；已查看 PDF 确认不是抽取噪声，未核对代码与实际运行的提示。
 - 摘要中 WebShop "高 10 个百分点"的具体对比对象未在 Table 4 中逐项核对（40.0 对 IL 29.1、IL+RL 28.7 的差均大于 10）。
-- 数值出处与页码定位见 [证据档案](../../../docs/deep-readings/evidence/react.json)。
+- 数值出处与页码定位见 [证据档案](evidence.json)。

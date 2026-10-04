@@ -16,7 +16,7 @@
 
 ## 具体讲解入口
 
-[打开已有独立讲解](../../../../docs/foundations/modules/objectives/02-classification-probabilities.md)。
+[打开已有独立讲解](../../../../foundations/lessons/modules/objectives/02-classification-probabilities.md)。
 
 ## 从已有讲解开始
 

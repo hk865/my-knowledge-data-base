@@ -45,9 +45,9 @@
 
 ## 研究问题与日常更新
 
-- [研究兴趣与问题地图](docs/research-map.md)
-- [模型训练与多模态背景](docs/model-training-multimodal.md)
-- [知识蒸馏的历史文献入口](docs/knowledge-distillation/README.md)
+- [研究兴趣与问题地图](perspectives/notes/research-map.md)
+- [模型训练与多模态背景](perspectives/notes/model-training-multimodal.md)
+- [知识蒸馏的历史文献入口](cross-domain/fields/knowledge-distillation/history.md)
 - [每日短报](daily/)
 - [同步与编辑约定](SYNC.md)
 

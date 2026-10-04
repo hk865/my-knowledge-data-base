@@ -14,22 +14,22 @@ DeepMind 手里有一份固定的训练算力，已经用它训出了 280B 参�
 
 节点按问题链排列，年份有交叠。每个节点先写上一个节点留下的问题，再写它改变了什么；逐篇出处在[综合表](synthesis.csv)。
 
-1. **把训练当成测量对象：Glorot 与 Bengio（2010，Montréal）**。问题：2006 年以后，深网络要先做逐层无监督预训练等特殊初始化才能训好；同样的网络从标准随机初始化直接做梯度下降，效果差且原因不明。改变：把“难训”拆成训练中可以测量的量，即逐层激活是否饱和（落进 sigmoid、tanh 两端梯度接近 0 的平坦区）、反传梯度的方差怎样随层变化，再据此推出让方差逐层大致保持的初始化尺度（推导见[优化讲义目录](../../../docs/foundations/02-optimization.md)）。5 个隐藏层的 tanh 网络在 Shapeset-3×2 上，测试误差从 27.15% 降到 15.60%。从这里起，研究训练的方式变成：先测量训练中的统计量，再针对性地改配方。
-2. **优化地形：困住训练的主要是鞍点，各个解之间彼此相连（2014–2018）**。问题：初始化改善之后，训练仍会长时间停在平台上（损失几乎不降），通常的解释是陷进了坏的局部极小。改变：Dauphin 等（2014，Montréal 与 Stanford）依据统计物理和随机矩阵理论论证，在高维问题中，误差远高于全局最小的临界点（梯度为 0 的点）以指数级的概率是鞍点（有的方向向上弯、有的方向向下弯，见[梯度与 SGD 讲义](../../../docs/foundations/modules/optimization/gradient-sgd.md)第 8 节），负曲率方向的比例随误差升高而增加；他们在小网络上测量了这一关系，用它解释平台期，并提出能逃离鞍点的 saddle-free Newton 方法。同年 Choromanska、LeCun 等在球面自旋玻璃模型的简化假设下得到：大网络的低临界值集中在全局最小之上的一条窄带内，带外局部极小的数目随网络规模指数减少。2018 年，Garipov 等（Cornell 与 Samsung AI 等）与 Draxler 等独立发现，分别训练得到的两个解之间存在一条训练损失和测试精度几乎不变的曲线（模式连通，mode connectivity）。
-3. **训练配方的经验规律：先在更大规模上暴露失败，再给出简单规则，之后才被解释（2015–2020）**。问题：地形研究解释了训练为什么通常能找到低损失的解，但没有回答网络变深、批量变大、换成 Transformer 时，初始化和学习率该怎样定。改变：几条经验规律先后出现。He 等（2015，Microsoft Research）报告 30 层 ReLU 网络用 Xavier 初始化完全停滞，按 ReLU 重推方差条件后可以收敛；Goyal 等（2017，Facebook）提出线性缩放规则（mini-batch 乘以 k，学习率也乘以 k）加 5 个 epoch 的渐进预热（学习率从小值逐步升到目标值），ResNet-50 以 mini-batch 8192 在 256 块 GPU 上 1 小时训完 ImageNet，top-1 错误率 23.74%，与 mini-batch 256 的 23.60% 相当，超过约 8k 后误差开始上升。解释往往晚于规则：原始 Transformer（2017）用 4000 步预热，是一条经验配方；Xiong 等（2020，中科院计算所、北京大学、Microsoft Research 等）证明，初始化时层归一化放在残差相加之后（Post-LN）的末层梯度上界与层数 L 无关，放在子层输入处（Pre-LN）的上界按 1/√L 缩小，所以 Post-LN 一开始梯度过大、需要预热，Pre-LN 可以去掉预热。IWSLT14 德→英翻译上，同一个 Post-LN 模型用 Adam 时，去掉预热 BLEU（译文与参考译文的词组重合度）只有 8.45，保留预热约 34。（批归一化、层归一化与 Adam 各自怎么算，见[Transformer 讲义](../../../docs/foundations/14-attention-transformer.md)第 10.2–10.4 节与 [Adam 讲义](../../../docs/foundations/modules/optimization/adam.md)。）
+1. **把训练当成测量对象：Glorot 与 Bengio（2010，Montréal）**。问题：2006 年以后，深网络要先做逐层无监督预训练等特殊初始化才能训好；同样的网络从标准随机初始化直接做梯度下降，效果差且原因不明。改变：把“难训”拆成训练中可以测量的量，即逐层激活是否饱和（落进 sigmoid、tanh 两端梯度接近 0 的平坦区）、反传梯度的方差怎样随层变化，再据此推出让方差逐层大致保持的初始化尺度（推导见[优化讲义目录](../../../foundations/lessons/02-optimization.md)）。5 个隐藏层的 tanh 网络在 Shapeset-3×2 上，测试误差从 27.15% 降到 15.60%。从这里起，研究训练的方式变成：先测量训练中的统计量，再针对性地改配方。
+2. **优化地形：困住训练的主要是鞍点，各个解之间彼此相连（2014–2018）**。问题：初始化改善之后，训练仍会长时间停在平台上（损失几乎不降），通常的解释是陷进了坏的局部极小。改变：Dauphin 等（2014，Montréal 与 Stanford）依据统计物理和随机矩阵理论论证，在高维问题中，误差远高于全局最小的临界点（梯度为 0 的点）以指数级的概率是鞍点（有的方向向上弯、有的方向向下弯，见[梯度与 SGD 讲义](../../../foundations/lessons/modules/optimization/gradient-sgd.md)第 8 节），负曲率方向的比例随误差升高而增加；他们在小网络上测量了这一关系，用它解释平台期，并提出能逃离鞍点的 saddle-free Newton 方法。同年 Choromanska、LeCun 等在球面自旋玻璃模型的简化假设下得到：大网络的低临界值集中在全局最小之上的一条窄带内，带外局部极小的数目随网络规模指数减少。2018 年，Garipov 等（Cornell 与 Samsung AI 等）与 Draxler 等独立发现，分别训练得到的两个解之间存在一条训练损失和测试精度几乎不变的曲线（模式连通，mode connectivity）。
+3. **训练配方的经验规律：先在更大规模上暴露失败，再给出简单规则，之后才被解释（2015–2020）**。问题：地形研究解释了训练为什么通常能找到低损失的解，但没有回答网络变深、批量变大、换成 Transformer 时，初始化和学习率该怎样定。改变：几条经验规律先后出现。He 等（2015，Microsoft Research）报告 30 层 ReLU 网络用 Xavier 初始化完全停滞，按 ReLU 重推方差条件后可以收敛；Goyal 等（2017，Facebook）提出线性缩放规则（mini-batch 乘以 k，学习率也乘以 k）加 5 个 epoch 的渐进预热（学习率从小值逐步升到目标值），ResNet-50 以 mini-batch 8192 在 256 块 GPU 上 1 小时训完 ImageNet，top-1 错误率 23.74%，与 mini-batch 256 的 23.60% 相当，超过约 8k 后误差开始上升。解释往往晚于规则：原始 Transformer（2017）用 4000 步预热，是一条经验配方；Xiong 等（2020，中科院计算所、北京大学、Microsoft Research 等）证明，初始化时层归一化放在残差相加之后（Post-LN）的末层梯度上界与层数 L 无关，放在子层输入处（Pre-LN）的上界按 1/√L 缩小，所以 Post-LN 一开始梯度过大、需要预热，Pre-LN 可以去掉预热。IWSLT14 德→英翻译上，同一个 Post-LN 模型用 Adam 时，去掉预热 BLEU（译文与参考译文的词组重合度）只有 8.45，保留预热约 34。（批归一化、层归一化与 Adam 各自怎么算，见[Transformer 讲义](../../../foundations/lessons/14-attention-transformer.md)第 10.2–10.4 节与 [Adam 讲义](../../../foundations/lessons/modules/optimization/adam.md)。）
 4. **双下降：参数远多于样本的模型为什么还能泛化（2019）**。问题：配方让更大的模型训得动，实践中模型也往往越大越好；这与经典的偏差–方差权衡（模型过大会过拟合）相矛盾。改变：Nakkiran 等（Harvard 与 OpenAI）用有效模型复杂度（训练过程能把训练误差压到约 0 的最大样本数）统一两种说法：在它约等于训练样本数的临界区附近，测试误差随模型变大先升后降；同样的非单调也出现在训练轮数上，甚至出现在样本数上（更多数据反而变差），有标签噪声时最明显。这一现象在 CIFAR 上的 ResNet18 与 5 层 CNN、IWSLT'14 与 WMT'14 上的 Transformer 中都出现。
 5. **规模定律：从“越大越好”到“好多少、预算怎么分”（2020–2022）**。问题：双下降说明临界区之外“更大更好”，但没有给出好多少，也没有说一笔算力该花在参数上还是数据上。改变：Kaplan 等（2020，OpenAI）发现，语言模型的测试交叉熵分别随参数量 N、数据量 D、算力 C 呈幂律下降（例如只受参数量限制时，损失正比于 N 的 −0.076 次方），跨越 7 个以上数量级，而与深宽比关系很弱；据此建议把增加的算力主要用于加大模型（算力增加 10 倍时，参数量加 5.5 倍、训练 token 只加 1.8 倍），并在收敛前停止训练。Hoffmann 等（2022，DeepMind）训练 400 多个从 70M 到 16B 以上参数的模型、用三种方法重新拟合，得到模型大小与训练 token 数应按相同比例增长；按此训练的 Chinchilla 就是开头的例子（[Chinchilla 文献卡](../../papers/arxiv-2203.15556/README.md)）。作者把两家结论的差别归于两点：学习率余弦周期是否与训练 token 数匹配，以及拟合时是否纳入更大的模型。
-6. **本征维度：训练实际用到多少自由度（2018–2021）**。问题：规模定律讲的是从头训练；预训练之后，下游任务常常只有几百到几千条标注，微调数亿参数却不明显过拟合（这正是 Aghajanyan 等引言提出的问题）。改变：Li 等（2018）把网络限制在一个随机子空间里训练，测出解出任务所需的最小子空间维数（本征维度），远小于参数量；Aghajanyan 等（2020，Facebook）在预训练语言模型上测到，RoBERTa-Large 在 MRPC 上只训练 200 个参数（再随机投影回全参数空间），就达到全参数微调 90% 的效果；预训练会持续降低本征维度，相同预训练步数下模型越大本征维度越低。Hu 等（2021，Microsoft）的 LoRA 以这两篇为依据，假设微调时的权重变化是低秩的，冻结原权重、只训练两个小矩阵的乘积，可训练参数比全参数微调少约 10000 倍（从一个线性层推导 LoRA，见[迁移与元学习讲义](../../../docs/foundations/05c-transfer-meta-learning.md)第 4–5 节）。
+6. **本征维度：训练实际用到多少自由度（2018–2021）**。问题：规模定律讲的是从头训练；预训练之后，下游任务常常只有几百到几千条标注，微调数亿参数却不明显过拟合（这正是 Aghajanyan 等引言提出的问题）。改变：Li 等（2018）把网络限制在一个随机子空间里训练，测出解出任务所需的最小子空间维数（本征维度），远小于参数量；Aghajanyan 等（2020，Facebook）在预训练语言模型上测到，RoBERTa-Large 在 MRPC 上只训练 200 个参数（再随机投影回全参数空间），就达到全参数微调 90% 的效果；预训练会持续降低本征维度，相同预训练步数下模型越大本征维度越低。Hu 等（2021，Microsoft）的 LoRA 以这两篇为依据，假设微调时的权重变化是低秩的，冻结原权重、只训练两个小矩阵的乘积，可训练参数比全参数微调少约 10000 倍（从一个线性层推导 LoRA，见[迁移与元学习讲义](../../../foundations/lessons/05c-transfer-meta-learning.md)第 4–5 节）。
 7. **灾难性遗忘与分阶段训练：后一阶段怎样保住前一阶段的能力（2017–2022）**。问题：适配只需改动少量自由度，但顺序训练仍会冲掉已有能力；大模型的训练又恰好分成多个阶段（预训练 → 监督微调 → 人类反馈强化学习）。改变：Kirkpatrick 等（2017，DeepMind）把灾难性遗忘描述为学新任务时改动了对旧任务重要的权重，他们的 EWC 用 Fisher 信息（衡量参数变动对旧任务输出影响大小的量）给重要参数加二次惩罚。InstructGPT（2022，OpenAI）在人类反馈强化学习中对 SFT 模型（先用人工示范答案监督微调得到的模型）加逐 token 的 KL 惩罚（KL 散度衡量两个输出分布的差异；作者写明加它是为了缓解对奖励模型的过度优化），并把预训练数据的似然梯度混进 PPO（一种限制每步策略改动幅度的强化学习算法）的更新，称为 PPO-ptx，由它大幅收回公开 NLP 基准上的能力回退（[InstructGPT 精读](../../../llm/papers/instructgpt/reading.md)第 6、8、11 节）。
 
 ## 技术地基
 
-- **梯度、SGD 与 Adam**：本页的经验规律（学习率随批量缩放、预热、调度）都是关于这些优化器在大规模下怎样表现的规律。[梯度与 SGD 讲义](../../../docs/foundations/modules/optimization/gradient-sgd.md)、[Adam 讲义](../../../docs/foundations/modules/optimization/adam.md)；整个分区的概念地图见[基础分区：优化](../../../foundations/fields/optimization/README.md)。
-- **曲率、Hessian 与鞍点**：Hessian（损失对参数的全部二阶偏导排成的矩阵）的特征值有正有负的临界点就是鞍点，节点 2 的地形研究统计的正是这些特征值。[梯度与 SGD 讲义](../../../docs/foundations/modules/optimization/gradient-sgd.md)第 7–8 节。
-- **残差连接与层归一化**：节点 3 中 Post-LN 与 Pre-LN 的差别，就在归一化放在残差支路的哪一侧。[Transformer 讲义](../../../docs/foundations/14-attention-transformer.md)第 10.2–10.4 节。
-- **交叉熵**：规模定律拟合的对象是留出集上每个 token 的交叉熵。[任务与训练目标模块](../../../docs/foundations/03-tasks-losses.md)。
-- **数据并行与混合精度**：节点 3 的大批量训练建立在多卡合并梯度之上。[分布式训练讲义](../../../docs/foundations/05a-distributed-training.md)第 3、5、8 节。
-- **微调与低秩适配**：节点 6、7 讨论的对象。[迁移与元学习讲义](../../../docs/foundations/05c-transfer-meta-learning.md)第 2–6 节。
+- **梯度、SGD 与 Adam**：本页的经验规律（学习率随批量缩放、预热、调度）都是关于这些优化器在大规模下怎样表现的规律。[梯度与 SGD 讲义](../../../foundations/lessons/modules/optimization/gradient-sgd.md)、[Adam 讲义](../../../foundations/lessons/modules/optimization/adam.md)；整个分区的概念地图见[基础分区：优化](../../../foundations/fields/optimization/README.md)。
+- **曲率、Hessian 与鞍点**：Hessian（损失对参数的全部二阶偏导排成的矩阵）的特征值有正有负的临界点就是鞍点，节点 2 的地形研究统计的正是这些特征值。[梯度与 SGD 讲义](../../../foundations/lessons/modules/optimization/gradient-sgd.md)第 7–8 节。
+- **残差连接与层归一化**：节点 3 中 Post-LN 与 Pre-LN 的差别，就在归一化放在残差支路的哪一侧。[Transformer 讲义](../../../foundations/lessons/14-attention-transformer.md)第 10.2–10.4 节。
+- **交叉熵**：规模定律拟合的对象是留出集上每个 token 的交叉熵。[任务与训练目标模块](../../../foundations/lessons/03-tasks-losses.md)。
+- **数据并行与混合精度**：节点 3 的大批量训练建立在多卡合并梯度之上。[分布式训练讲义](../../../foundations/lessons/05a-distributed-training.md)第 3、5、8 节。
+- **微调与低秩适配**：节点 6、7 讨论的对象。[迁移与元学习讲义](../../../foundations/lessons/05c-transfer-meta-learning.md)第 2–6 节。
 
 ## 主要路线与团队偏好
 
@@ -80,11 +80,11 @@ benchmark 的替换反映了这个方向目标的迁移：从“能不能训起�
 
 ## 阅读顺序
 
-1. [基础分区：优化](../../../foundations/fields/optimization/README.md)与[梯度与 SGD 讲义](../../../docs/foundations/modules/optimization/gradient-sgd.md)第 7–8 节：先掌握优化器怎么算、曲率和鞍点是什么，本页每个节点都把它们当作研究对象。
+1. [基础分区：优化](../../../foundations/fields/optimization/README.md)与[梯度与 SGD 讲义](../../../foundations/lessons/modules/optimization/gradient-sgd.md)第 7–8 节：先掌握优化器怎么算、曲率和鞍点是什么，本页每个节点都把它们当作研究对象。
 2. [Dauphin 等](https://arxiv.org/abs/1406.2572)与 [Garipov 等](https://arxiv.org/abs/1802.10026)：节点 2，地形研究怎样从“测量临界点”走到“发现解之间相连”。
 3. [Attention Is All You Need 精读](../../../llm/papers/transformer/reading.md)第 4 节，再读 [Xiong 等](https://arxiv.org/abs/2002.04745)：节点 3，一条经验配方（预热）怎样在三年后得到解释。
 4. [Chinchilla 文献卡](../../papers/arxiv-2203.15556/README.md)，配合 [Kaplan 等](https://arxiv.org/abs/2001.08361)原文：节点 5，以及规模定律外推边界这个开放问题；读完可接[预训练方向](../../../llm/fields/pretraining/README.md)，看这些配比怎样落到具体模型上。
-5. [迁移与元学习讲义](../../../docs/foundations/05c-transfer-meta-learning.md)第 4–6 节，再读 [InstructGPT 精读](../../../llm/papers/instructgpt/reading.md)第 6、8、11 节：节点 6、7 的两种做法，低秩适配与对偏离加约束。
+5. [迁移与元学习讲义](../../../foundations/lessons/05c-transfer-meta-learning.md)第 4–6 节，再读 [InstructGPT 精读](../../../llm/papers/instructgpt/reading.md)第 6、8、11 节：节点 6、7 的两种做法，低秩适配与对偏离加约束。
 
 ## 批注
 
@@ -128,5 +128,5 @@ benchmark 的替换反映了这个方向目标的迁移：从“能不能训起�
 
 - Choromanska 等的正式发表版本与作者单位；Safran 与 Shamir 的正式发表版本。正文因此未写这几项。
 - Xiong 等 BERT 预训练的加速比例：转述的原句前后矛盾，未写入。
-- 正文没有讨论训练中途的损失尖峰（loss spike）与大模型的训练不稳定，本轮没有选到对应的原文；入门的排查思路见[梯度与 SGD 讲义](../../../docs/foundations/modules/optimization/gradient-sgd.md)第 9 节。
+- 正文没有讨论训练中途的损失尖峰（loss spike）与大模型的训练不稳定，本轮没有选到对应的原文；入门的排查思路见[梯度与 SGD 讲义](../../../foundations/lessons/modules/optimization/gradient-sgd.md)第 9 节。
 - Transformer 语言模型上的模式连通与鞍点测量：本轮没有检索，“不同模态的差异”一节因此写成开放问题。

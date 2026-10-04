@@ -12,7 +12,7 @@
 
 每个节点先写上一个节点留下的问题，再写它改变了什么。语言一侧四个节点的完整证据与手算在[注意力与 FFN 的分工谱系](../../../foundations/relations/attention-ffn-division.md)。
 
-1. **AlexNet 的第一层卷积核（2012，Toronto 的 Krizhevsky、Sutskever、Hinton）**。第一层有 96 个 11×11×3 的卷积核，形状与彩色图像块相同，可以直接画成图片。网络学到了多种对频率和方向有选择性的核，以及各种颜色斑块（原文 §6.1）；Yosinski 等 2014 把这一现象概括为：在自然图像上训练的网络，第一层学到类似 Gabor 滤波器（按特定方向和频率响应的带通滤波器）的特征和颜色斑块。它改变的是：学出来的特征第一次可以直接看，而且与手工设计的方向滤波器相似（[CNN 讲义](../../../docs/foundations/11-cnn.md)第 9 节）。留下的问题：只有第一层的权重与像素处在同一个空间；更深的层，以及输入是离散 token 的语言模型，都没有现成的"图片"可看。
+1. **AlexNet 的第一层卷积核（2012，Toronto 的 Krizhevsky、Sutskever、Hinton）**。第一层有 96 个 11×11×3 的卷积核，形状与彩色图像块相同，可以直接画成图片。网络学到了多种对频率和方向有选择性的核，以及各种颜色斑块（原文 §6.1）；Yosinski 等 2014 把这一现象概括为：在自然图像上训练的网络，第一层学到类似 Gabor 滤波器（按特定方向和频率响应的带通滤波器）的特征和颜色斑块。它改变的是：学出来的特征第一次可以直接看，而且与手工设计的方向滤波器相似（[CNN 讲义](../../../foundations/lessons/11-cnn.md)第 9 节）。留下的问题：只有第一层的权重与像素处在同一个空间；更深的层，以及输入是离散 token 的语言模型，都没有现成的"图片"可看。
 2. **FFN 键值记忆（Geva、Schuster、Berant、Levy，2020 年 arXiv，EMNLP 2021；Tel Aviv University 与 AI2）**。它给深层参数提供了一种读法：在 FFN(x) = f(xW_1)W_2 中，W_1 的每一列是一个 key，W_2 的每一行是一个 value（推导见关系页第 4 节）。key 用训练集中让它激活最强的 25 个前缀来读，value 投影到输出词表上来读。在一个 16 层、WikiText-103 上训练的语言模型里，key 对应人能读懂的模式，低层以浅层模式为主（例如以同一个词结尾），高层以语义模式为主（例如同一话题）；高层 value 把概率集中在紧跟该模式之后可能出现的词上。留下的问题：这些都是相关性的观察，某一次具体预测是否用到了这些记忆，观察回答不了。
 3. **ROME（Meng、Bau、Andonian、Belinkov 2022；MIT CSAIL、Northeastern University、Technion）**。ROME 的相关工作一节写明了转向的理由：探针一类方法的主要局限是与网络的实际行为脱节，因果效应可以避开这类误导性的相关。它的因果追踪（先给输入中的主语加噪声，再把某一层某个位置的激活恢复成干净值，看正确答案的概率恢复多少）在 GPT-2 XL 中发现，事实回忆集中在中间层、主语最后一个 token 的 MLP 上：该位置 MLP 的平均间接效应峰值为 6.6%，同一位置的注意力为 1.6%。ROME 据此把这一层 MLP 当作键值表，用一次秩一更新（只加一个外积矩阵）写入新事实。它把研究从观察推进到干预，并且让干预本身可以用来编辑模型。留下的问题：高层注意力在提示最后一个 token 上的作用同样很大，注意力怎样把事实搬到预测位置，作者只给出了假设。
 4. **Induction Heads（Olsson 等 2022，Anthropic）**。上一节点留下的是注意力一侧的问题：多个注意力头怎样跨层配合，完成一个说得清楚的功能。作者把每个头拆成两个电路（电路：几个跨层配合、合起来实现一个可描述算法的部件）：QK 电路决定看哪里，OV 电路决定看到之后写出什么。上下文学习（不更新参数、只靠提示中的例子学会新模式）中的 [A][B] … [A] → [B] 续写，由前一层的"前一 token 头"与后一层的 induction head 组合完成。这类头形成的时刻，正是训练早期（约 25 亿到 50 亿 token 之间）上下文学习能力骤升的时刻；只有一层的模型两者都不出现。它改变的是：分析单位从单个部件变成跨层组合的电路，一个机制第一次同时对应到一项能力和一个训练时刻。留下的问题：因果证据在小型纯注意力模型上最强，带 MLP 的大模型上是相关性证据（原文摘要）；它研究的是上下文中的复制，与事实回忆还没有接上。
@@ -21,12 +21,12 @@
 
 ## 技术地基
 
-- **注意力的 A 与 V**：A = softmax(QKᵀ/√d_k) 决定每个位置从哪里读、读多少，V 是被读出的内容。induction head 的 QK 与 OV 电路、读出事实的注意力头，都在这两条通路上分析。[QKV 讲义](../../../docs/foundations/15-qkv-deep-dive.md)第 4–5 节、[Transformer 讲义](../../../docs/foundations/14-attention-transformer.md)第 4–6 节。
-- **FFN**：对每个位置独立做的两层变换，是键值记忆读法和 ROME 编辑的对象。[Transformer 讲义](../../../docs/foundations/14-attention-transformer.md)第 10.1 节。
-- **残差连接与残差流**：每个子层把输出加回输入，各层在同一条主表示上逐层累加更新，这条主表示称为残差流。因果追踪恢复的、注意力敲除切断的、投影到词表上读的，都是残差流上的向量。[Transformer 讲义](../../../docs/foundations/14-attention-transformer.md)第 10.2 节。
-- **输出层把向量变成词的分布**：把中间层的向量也乘上输出矩阵，就能读出它偏向哪些词，这就是词表投影（logit lens）。[Transformer 讲义](../../../docs/foundations/14-attention-transformer.md)第 11 节。
-- **卷积核与感受野**：卷积核在所有位置共用，第一层核的形状与图像块相同；感受野（能影响一个输出的输入区域）随层数扩大。ViT 的"注意力距离"就是拿它作参照的。[CNN 讲义](../../../docs/foundations/11-cnn.md)第 2–4 节。
-- **MoE**：路由器为每个 token 只选少数几个专家，稀疏化的对象正是 FFN，是"FFN 存知识"在架构上的近邻。[SSM、GNN 与 MoE 讲义](../../../docs/foundations/18-ssm-gnn-moe.md)第 4 节。
+- **注意力的 A 与 V**：A = softmax(QKᵀ/√d_k) 决定每个位置从哪里读、读多少，V 是被读出的内容。induction head 的 QK 与 OV 电路、读出事实的注意力头，都在这两条通路上分析。[QKV 讲义](../../../foundations/lessons/15-qkv-deep-dive.md)第 4–5 节、[Transformer 讲义](../../../foundations/lessons/14-attention-transformer.md)第 4–6 节。
+- **FFN**：对每个位置独立做的两层变换，是键值记忆读法和 ROME 编辑的对象。[Transformer 讲义](../../../foundations/lessons/14-attention-transformer.md)第 10.1 节。
+- **残差连接与残差流**：每个子层把输出加回输入，各层在同一条主表示上逐层累加更新，这条主表示称为残差流。因果追踪恢复的、注意力敲除切断的、投影到词表上读的，都是残差流上的向量。[Transformer 讲义](../../../foundations/lessons/14-attention-transformer.md)第 10.2 节。
+- **输出层把向量变成词的分布**：把中间层的向量也乘上输出矩阵，就能读出它偏向哪些词，这就是词表投影（logit lens）。[Transformer 讲义](../../../foundations/lessons/14-attention-transformer.md)第 11 节。
+- **卷积核与感受野**：卷积核在所有位置共用，第一层核的形状与图像块相同；感受野（能影响一个输出的输入区域）随层数扩大。ViT 的"注意力距离"就是拿它作参照的。[CNN 讲义](../../../foundations/lessons/11-cnn.md)第 2–4 节。
+- **MoE**：路由器为每个 token 只选少数几个专家，稀疏化的对象正是 FFN，是"FFN 存知识"在架构上的近邻。[SSM、GNN 与 MoE 讲义](../../../foundations/lessons/18-ssm-gnn-moe.md)第 4 节。
 
 ## 主要路线与团队偏好
 
@@ -52,7 +52,7 @@
 
 **早期层在做什么**
 
-- `[经验]` 视觉 CNN：第一层学到对频率和方向有选择性的核与颜色斑块（AlexNet §6.1），Yosinski 等称之为 Gabor 状。手工的 HOG 把方向梯度写死在第一步，可学习的 CNN 由数据把它重新学了出来（[CNN 讲义](../../../docs/foundations/11-cnn.md)第 9 节）。
+- `[经验]` 视觉 CNN：第一层学到对频率和方向有选择性的核与颜色斑块（AlexNet §6.1），Yosinski 等称之为 Gabor 状。手工的 HOG 把方向梯度写死在第一步，可学习的 CNN 由数据把它重新学了出来（[CNN 讲义](../../../foundations/lessons/11-cnn.md)第 9 节）。
 - `[经验]` 视觉 ViT：切块嵌入滤波器的主成分，看上去像描述块内细节结构的一组基函数；最低层里一些头已经看向图像的大部分区域，另一些头始终只看邻近区域；前面接 ResNet 的混合模型里这种局部头较少，作者据此推测它们承担了 CNN 早期卷积层的作用（ViT §4.5、Fig.7；[ViT 精读](../../../multimodal/papers/vit/reading.md)）。
 - `[经验]` 语言：FFN 键值记忆中，低层 key 以浅层模式为主，高层以语义模式为主（Geva 2021）；Engram 的机制分析显示，主干早期层原本也在花容量重建静态的局部模式（关系页第 8 节）。
 - `[判断]` 三处呈现同一种分层：早期层处理局部、浅层的模式，越往上越抽象。承担者不同：CNN 由卷积结构规定局部性，ViT 由一部分注意力头学出局部性，语言模型由低层 FFN 记忆承担，Engram 再把其中的静态部分交给查表。
@@ -75,14 +75,14 @@
 
 ## 阅读顺序
 
-1. [QKV 讲义](../../../docs/foundations/15-qkv-deep-dive.md)第 4–5 节与 [Transformer 讲义](../../../docs/foundations/14-attention-transformer.md)第 10.1 节：先手算一次 A 与 V 的分工和 FFN，本页的机制都发生在这两种子层上。
+1. [QKV 讲义](../../../foundations/lessons/15-qkv-deep-dive.md)第 4–5 节与 [Transformer 讲义](../../../foundations/lessons/14-attention-transformer.md)第 10.1 节：先手算一次 A 与 V 的分工和 FFN，本页的机制都发生在这两种子层上。
 2. [注意力与 FFN 的分工谱系](../../../foundations/relations/attention-ffn-division.md)：语言一侧的主干，把下面四篇串成一条链，每个节点都有手算或原文证据。
 3. [FFN 键值记忆](../../papers/arxiv-2012.14913/README.md)：学会把参数读成键值表，这是 ROME 编辑与 Engram 查表的共同出发点。
 4. [ROME](../../papers/arxiv-2202.05262/README.md)：从观察到干预的转折，也是理解编辑基准的入口。
 5. [Induction Heads](../../papers/arxiv-2209.11895/README.md)：电路这一分析单位，以及机制形成与训练时刻的对应；训练动态一侧接[训练科学](../training-science/README.md)。
 6. [Dissecting Recall](../../papers/arxiv-2304.14767/README.md)：把存储与读出接成一条完整路径。
 
-接着读 [Baseline 页](BASELINES.md)，看后续工作分别在改基线的哪个部件；[路线图](ROADMAP.md)给出检验理解的练习；[论文目录](PAPERS.md)列出本方向全部文献。视觉一侧从 [CNN 讲义](../../../docs/foundations/11-cnn.md)第 9 节与 [ViT 精读](../../../multimodal/papers/vit/reading.md)开始。
+接着读 [Baseline 页](BASELINES.md)，看后续工作分别在改基线的哪个部件；[路线图](ROADMAP.md)给出检验理解的练习；[论文目录](PAPERS.md)列出本方向全部文献。视觉一侧从 [CNN 讲义](../../../foundations/lessons/11-cnn.md)第 9 节与 [ViT 精读](../../../multimodal/papers/vit/reading.md)开始。
 
 ## 批注
 
@@ -106,7 +106,7 @@
 **与其他论文的关联**
 
 - [注意力与 FFN 的分工谱系](../../../foundations/relations/attention-ffn-division.md)：本页语言一侧主线的完整证据；其中 MoE 一节说明为什么稀疏化的对象一直是 FFN。
-- [CNN 讲义](../../../docs/foundations/11-cnn.md)第 9 节"从手工特征到可学习特征"：视觉一侧"第一层学到方向滤波器"的完整论证。
+- [CNN 讲义](../../../foundations/lessons/11-cnn.md)第 9 节"从手工特征到可学习特征"：视觉一侧"第一层学到方向滤波器"的完整论证。
 - [训练科学](../training-science/README.md)：induction head 的形成与上下文学习能力骤升同时发生，是训练动态与内部机制交汇的例子。
 - [ShortGPT](../../../llm/papers/arxiv-2403.03853/README.md)：用 Block Influence 衡量每层的重要性，发现大模型中许多层彼此高度相似、有些层几乎不影响网络功能，直接删层就超过了此前的剪枝方法。它在层的粒度上问"每层在做什么"，可与本页按子层分析的工作对照。
 - [Naturalness of Attention](../../../llm/papers/arxiv-2311.13508/README.md) 与 [Probing Pretrained Models of Source Code](../../../llm/papers/arxiv-2202.08975/README.md)：都问代码模型捕获了哪些语法结构，前者拆开注意力内部的权重与被读出的向量，后者读整层表示。

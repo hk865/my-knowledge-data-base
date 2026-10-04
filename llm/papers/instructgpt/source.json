@@ -27,7 +27,7 @@
     "docs/deep-readings/instructgpt.md"
   ],
   "evidence_paths": [
-    "docs/deep-readings/evidence/instructgpt.json"
+    "llm/papers/instructgpt/evidence.json"
   ],
   "topic_paths": [
     "llm/posttraining/preferences",

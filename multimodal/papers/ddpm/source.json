@@ -27,8 +27,8 @@
     "docs/deep-readings/ddpm.md"
   ],
   "evidence_paths": [
-    "docs/deep-readings/evidence/ddpm.json",
-    "../../../docs/deep-readings/evidence/ddpm.json"
+    "multimodal/papers/ddpm/evidence.json",
+    "evidence.json"
   ],
   "topic_paths": [
     "multimodal/generation",

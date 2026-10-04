@@ -16,7 +16,7 @@
 
 ## 具体讲解入口
 
-[打开已有独立讲解](../../../docs/foundations/modules/data/01-data-contracts.md)。
+[打开已有独立讲解](../../../foundations/lessons/modules/data/01-data-contracts.md)。
 
 ## 从已有讲解开始
 

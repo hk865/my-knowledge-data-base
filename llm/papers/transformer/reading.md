@@ -84,9 +84,9 @@ Adam使用β₁=0.9、β₂=0.98、ε=10⁻⁹；学习率先4000步warmup，再
 
 ## 阅读证据
 
-正文、表格和附录定位见 [证据与覆盖记录](../../../docs/deep-readings/evidence/transformer.json)。本稿是原创技术解读，没有把全文翻译或原图复制作为交付；涉及数值均保留实验条件与原文出处。
+正文、表格和附录定位见 [证据与覆盖记录](evidence.json)。本稿是原创技术解读，没有把全文翻译或原图复制作为交付；涉及数值均保留实验条件与原文出处。
 
 
 ## 图解文件与证据索引
 
-[SVG高清图](figures/transformer-mechanism.svg) · [SVG可编辑图](figures/transformer-mechanism.svg) · [结构化证据](../../../docs/deep-readings/evidence/transformer.json)
+[SVG高清图](figures/transformer-mechanism.svg) · [SVG可编辑图](figures/transformer-mechanism.svg) · [结构化证据](evidence.json)

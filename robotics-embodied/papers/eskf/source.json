@@ -28,9 +28,9 @@
     "robotics-embodied/baselines/eskf.md"
   ],
   "evidence_paths": [
-    "docs/deep-readings/evidence/eskf.json",
-    "../../../docs/deep-readings/evidence/eskf.json",
-    "../../../docs/deep-readings/evidence/eskf-coverage.json"
+    "robotics-embodied/papers/eskf/evidence.json",
+    "evidence.json",
+    "evidence-coverage.json"
   ],
   "topic_paths": [
     "robotics/control",

@@ -67,6 +67,6 @@ MAE要解决的是“如何用无标签图像训练可迁移的大型视觉编�
 
 ## 图解文件与证据索引
 
-[PNG高清图](figures/mae.png) · [SVG可编辑图](figures/mae.svg) · [结构化证据](../../../docs/deep-readings/evidence/mae.json)
+[PNG高清图](figures/mae.png) · [SVG可编辑图](figures/mae.svg) · [结构化证据](evidence.json)
 
 来源类型：本次为细分方向新选择的 baseline，不是历史聊天提取。

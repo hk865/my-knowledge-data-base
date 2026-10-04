@@ -32,8 +32,8 @@
     "robotics-embodied/baselines/openvla.md"
   ],
   "evidence_paths": [
-    "docs/deep-readings/evidence/openvla.json",
-    "../../../docs/deep-readings/evidence/openvla.json"
+    "robotics-embodied/papers/openvla/evidence.json",
+    "evidence.json"
   ],
   "authors": [
     "Moo Jin Kim",

@@ -342,6 +342,6 @@ Cordonnier、Loukas与Jaggi在ICLR 2020的工作已经研究自注意力与卷�
 
 图4： [图示分辨率与计算图](figures/vit-resolution-lesson-beginner-20261002.svg) · [SVG可编辑图](figures/vit-resolution-lesson-beginner-20261002.svg)
 
-[原精读结构化证据](../../../docs/deep-readings/evidence/vit.json) · [本次教学改写核验记录](../../../docs/deep-readings/evidence/vit.beginner-revision.json)
+[原精读结构化证据](evidence.json) · [本次教学改写核验记录](evidence-beginner-revision.json)
 
 来源类型：视觉骨干细分方向的代表性baseline。全部教学手算和分解图均为机制解释，不是新跑分。

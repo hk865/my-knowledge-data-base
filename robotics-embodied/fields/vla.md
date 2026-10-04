@@ -2,7 +2,7 @@
 
 > 状态：逐步讲义 · 依据 π0.5 arXiv:2504.16054v1 与 openpi commit 215abfb · 未复现
 
-本文面向读过 [foundations](../../docs/foundations/README.md) 中注意力与 Transformer、Diffusion、梯度与反向传播模块，但还没有接触机器人学习的读者。我们跟着一个任务走完全过程：**把桌上的红杯放进水槽**。先弄清机器人真正接收和输出什么，再拆开图像、语言、隐状态、动作、训练标签、损失和梯度，最后回到部署时的时间安排。
+本文面向读过 [foundations](../../foundations/lessons/README.md) 中注意力与 Transformer、Diffusion、梯度与反向传播模块，但还没有接触机器人学习的读者。我们跟着一个任务走完全过程：**把桌上的红杯放进水槽**。先弄清机器人真正接收和输出什么，再拆开图像、语言、隐状态、动作、训练标签、损失和梯度，最后回到部署时的时间安排。
 
 核心例子是 Physical Intelligence 的 π0.5。本文把三件事分开：2025 年 4 月原论文的完整训练与高低层推理设计、后来发布模型的说明、以及公开 openpi 代码实际实现的微调路径。正文以原论文讲思想，以固定版本代码解释张量；三者的差异放在文末批注。[1][2]
 
@@ -10,7 +10,7 @@
 
 ## 一 先确定 V L A 各自是什么
 
-**V 是 Vision，视觉。** 它通常来自机器人身上的相机。红杯在图像里是许多像素组成的区域，视觉编码器要从这些像素提取可供后续计算使用的特征（像素数组与卷积特征见 [11-cnn](../../docs/foundations/11-cnn.md)）。
+**V 是 Vision，视觉。** 它通常来自机器人身上的相机。红杯在图像里是许多像素组成的区域，视觉编码器要从这些像素提取可供后续计算使用的特征（像素数组与卷积特征见 [11-cnn](../../foundations/lessons/11-cnn.md)）。
 
 **L 是 Language，语言。** 用户的任务是文字，例如“把红杯放进水槽”。模型还可能生成文字，例如“拿起红杯”，用作下一阶段的子任务。语言既可以是条件输入，也可以是受监督的输出。
 
@@ -77,7 +77,7 @@ A_t = [a_t, a_(t+1), …, a_(t+K−1)]，形状为 K × d
 
 ## 三 一张图片怎样变成视觉 token
 
-现在先暂停动作生成，只追踪红杯图像。token 是序列中的一个处理单元（见 [14-attention-transformer](../../docs/foundations/14-attention-transformer.md) 第 1 节）：语言 token 先是整数 ID，视觉 token 是连续向量。把二者都叫 token，是因为 Transformer 把它们安排在同一个序列里处理。
+现在先暂停动作生成，只追踪红杯图像。token 是序列中的一个处理单元（见 [14-attention-transformer](../../foundations/lessons/14-attention-transformer.md) 第 1 节）：语言 token 先是整数 ID，视觉 token 是连续向量。把二者都叫 token，是因为 Transformer 把它们安排在同一个序列里处理。
 
 ### 3.1 输入数组和 patch
 
@@ -113,7 +113,7 @@ Gemma 主干的隐藏宽度是 2048，而视觉网络输出宽度是 1152。需�
 
 ### 4.1 从句子到整数 再到向量
 
-“拿起红杯”先经过分词器变成整数 ID，再由 embedding 矩阵查表变为向量（分词与嵌入表见 [14-attention-transformer](../../docs/foundations/14-attention-transformer.md) 第 1.1–1.3 节）。PaliGemma 使用 SentencePiece 分词器，切分由它的词表和规则决定。[7]
+“拿起红杯”先经过分词器变成整数 ID，再由 embedding 矩阵查表变为向量（分词与嵌入表见 [14-attention-transformer](../../foundations/lessons/14-attention-transformer.md) 第 1.1–1.3 节）。PaliGemma 使用 SentencePiece 分词器，切分由它的词表和规则决定。[7]
 
 在这里每个 ID 变为 2048 维连续向量；有 M 个有效文本 token，就得到 M×2048 的数组。
 
@@ -133,7 +133,7 @@ Gemma 主干的隐藏宽度是 2048，而视觉网络输出宽度是 1152。需�
 
 ### 5.1 拼接只是排座位 注意力才交换信息
 
-设某一层的输入表示为 X，每一行对应一个 token，经线性映射得到 Q、K、V（推导与手算见 [14-attention-transformer](../../docs/foundations/14-attention-transformer.md) 第 4–7 节和 [15-qkv-deep-dive](../../docs/foundations/15-qkv-deep-dive.md)）。这里 K 在注意力公式中代表键矩阵；正文谈动作长度时会写“动作步数 K”。
+设某一层的输入表示为 X，每一行对应一个 token，经线性映射得到 Q、K、V（推导与手算见 [14-attention-transformer](../../foundations/lessons/14-attention-transformer.md) 第 4–7 节和 [15-qkv-deep-dive](../../foundations/lessons/15-qkv-deep-dive.md)）。这里 K 在注意力公式中代表键矩阵；正文谈动作长度时会写“动作步数 K”。
 
 对某个位置 i，注意力大致执行：
 
@@ -149,7 +149,7 @@ d_h 是一个注意力头的向量宽度；w_ij 是位置 i 从位置 j 读取�
 
 ### 5.2 在 π0.5 里 前缀内部双向读取
 
-图像、输入任务文字和状态构成 prefix，即前缀。这部分使用双向注意力：同一前缀中有效 token 可以互相读取。生成的文本则要遵守自回归约束（见 [14-attention-transformer](../../docs/foundations/14-attention-transformer.md) 中的自回归生成），当前位置只读取已经生成的输出。
+图像、输入任务文字和状态构成 prefix，即前缀。这部分使用双向注意力：同一前缀中有效 token 可以互相读取。生成的文本则要遵守自回归约束（见 [14-attention-transformer](../../foundations/lessons/14-attention-transformer.md) 中的自回归生成），当前位置只读取已经生成的输出。
 
 论文还同时考虑离散 FAST 动作 token 和连续动作 expert token。这两个动作表示都能读条件前缀，彼此之间则**相互屏蔽**：这样连续分支无法从离散的真实动作标签中抄答案，离散分支也读不到带噪真实动作泄漏的未来信息，训练与推理条件保持一致。[1]
 
@@ -163,7 +163,7 @@ d_h 是一个注意力头的向量宽度；w_ij 是位置 i 从位置 j 读取�
 
 **前缀流提供一组带位置和内容的信息，动作流在多层计算中反复查询它。** 每个动作位置也读取同一块中的其他动作位置，协调未来轨迹。
 
-expert 一词在这里表示面向动作 token 的专门参数，按输入模态划分权重（与 MoE 中按 token 内容路由的专家不同，MoE 见 [18-ssm-gnn-moe](../../docs/foundations/18-ssm-gnn-moe.md) 第 4 节）。
+expert 一词在这里表示面向动作 token 的专门参数，按输入模态划分权重（与 MoE 中按 token 内容路由的专家不同，MoE 见 [18-ssm-gnn-moe](../../foundations/lessons/18-ssm-gnn-moe.md) 第 4 节）。
 
 ## 六 连续动作分支到底在预测什么
 
@@ -171,7 +171,7 @@ expert 一词在这里表示面向动作 token 的专门参数，按输入模态
 
 相同场景可能存在多种合理做法。拿杯子可以先稍向左绕，也可以稍向右绕。若直接用均方误差拟合全部真实动作，某些情况下模型可能倾向输出多个方案的平均值，而平均轨迹未必可执行。
 
-生成式动作模型尝试表示一个有多种可能性的条件分布。扩散模型和流匹配模型都能从简单噪声出发，逐步生成结构化连续结果（加噪、逐步去噪与数值求解的基础见 [17-diffusion](../../docs/foundations/17-diffusion.md)）。**π0.5 采用 flow matching（流匹配：训练网络预测把噪声样本沿一条路径搬运到数据样本的向量场），训练目标是 6.2 节的向量场，而不是扩散模型常用的噪声预测。**[1][5]
+生成式动作模型尝试表示一个有多种可能性的条件分布。扩散模型和流匹配模型都能从简单噪声出发，逐步生成结构化连续结果（加噪、逐步去噪与数值求解的基础见 [17-diffusion](../../foundations/lessons/17-diffusion.md)）。**π0.5 采用 flow matching（流匹配：训练网络预测把噪声样本沿一条路径搬运到数据样本的向量场），训练目标是 6.2 节的向量场，而不是扩散模型常用的噪声预测。**[1][5]
 
 ### 6.2 用一套自洽符号理解 flow matching
 
@@ -184,7 +184,7 @@ expert 一词在这里表示面向动作 token 的专门参数，按输入模态
 - U=ε−A 是这条直线路径沿 u 增大方向的目标向量场
 - Vθ(X_u,u,c) 是模型预测的向量场；c 统称图像、任务和状态这些条件
 
-U 的每个数字是“归一化动作对无量纲流时间的变化率”，是生成空间中的数学量（与机械臂或底盘的物理速度无关，即使 A 中含有底盘速度目标）。流时间 u 与机器人物理时间是两条不同的时间轴，见 [17-diffusion](../../docs/foundations/17-diffusion.md) 第 7 节。
+U 的每个数字是“归一化动作对无量纲流时间的变化率”，是生成空间中的数学量（与机械臂或底盘的物理速度无关，即使 A 中含有底盘速度目标）。流时间 u 与机器人物理时间是两条不同的时间轴，见 [17-diffusion](../../foundations/lessons/17-diffusion.md) 第 7 节。
 
 训练让 Vθ 接近 U，部署则从 u=1 向 u=0 反向积分。本文全程使用这一个时间方向。[1][5]
 
@@ -256,7 +256,7 @@ p(z1…zM | c)=∏_j p(zj | c,z1…z(j−1))
 
 ## 八 任务 标签和损失分别从哪里来
 
-“任务传进网络”和“损失反传到网络”是两件相反方向的事：任务文字是前向条件，标签和损失在输出端构造监督，梯度再沿反方向更新参数（损失与梯度的基础见 [03-tasks-losses](../../docs/foundations/03-tasks-losses.md) 和 [梯度、反向传播与 SGD](../../docs/foundations/modules/optimization/gradient-sgd.md)）。下面逐类看监督是怎样构造的。
+“任务传进网络”和“损失反传到网络”是两件相反方向的事：任务文字是前向条件，标签和损失在输出端构造监督，梯度再沿反方向更新参数（损失与梯度的基础见 [03-tasks-losses](../../foundations/lessons/03-tasks-losses.md) 和 [梯度、反向传播与 SGD](../../foundations/lessons/modules/optimization/gradient-sgd.md)）。下面逐类看监督是怎样构造的。
 
 ### 8.1 同一个模型可以面对不同种类的训练样本
 
@@ -272,7 +272,7 @@ p(z1…zM | c)=∏_j p(zj | c,z1…z(j−1))
 
 ### 8.2 文本与 FAST 的交叉熵在输出 logits 上计算
 
-文本 token 与 FAST 动作 token 都在词表 logits 上计算交叉熵（logits、softmax 与交叉熵见 [分类与概率](../../docs/foundations/modules/objectives/02-classification-probabilities.md)）。如果只计算指定输出位置，平均损失可写成：
+文本 token 与 FAST 动作 token 都在词表 logits 上计算交叉熵（logits、softmax 与交叉熵见 [分类与概率](../../foundations/lessons/modules/objectives/02-classification-probabilities.md)）。如果只计算指定输出位置，平均损失可写成：
 
 L_CE = −Σ_j m_j log pθ(y_j | 允许的输入和输出历史) / Σ_j m_j
 
@@ -308,7 +308,7 @@ L_total = L_CE + α L_FM
 
 ∂L_FM/∂θv = (∂L_FM/∂V)(∂V/∂P)(∂P/∂θv)
 
-这就是链式法则（见 [梯度、反向传播与 SGD](../../docs/foundations/modules/optimization/gradient-sgd.md)；同一参数经多条路径影响损失时各条贡献相加）。动作 expert 读取了前缀的键和值，动作误差便可能更新产生这些键和值的 VLM 权重，进而更新图像投影与视觉编码器。模型因此有机会学到更有利于抓取的视觉特征，而不只是保持原来的图像问答表示。
+这就是链式法则（见 [梯度、反向传播与 SGD](../../foundations/lessons/modules/optimization/gradient-sgd.md)；同一参数经多条路径影响损失时各条贡献相加）。动作 expert 读取了前缀的键和值，动作误差便可能更新产生这些键和值的 VLM 权重，进而更新图像投影与视觉编码器。模型因此有机会学到更有利于抓取的视觉特征，而不只是保持原来的图像问答表示。
 
 但这个训练信号也可能扰动预训练能力。一个刚随机初始化的动作 expert 还不擅长利用语义信息，早期传回的梯度未必有助于保留语言跟随能力。这是后来研究 knowledge insulation 的动机之一。[12]
 
@@ -336,7 +336,7 @@ knowledge insulation（知识隔离，Driess 等 2025 提出的训练方式）�
 
 视觉编码器调用里的 train=False 控制的是 dropout 这类训练态行为；参数是否更新，要检查梯度路径与优化器冻结过滤器。
 
-若启用 LoRA（低秩增量适配，见 [05c-transfer-meta-learning](../../docs/foundations/05c-transfer-meta-learning.md) 第 4–5 节），冻结集合又会变化，要按所选配置的 get_freeze_filter 逐项核对：某些模块可能全量训练，某些只训练增量。[5][6]
+若启用 LoRA（低秩增量适配，见 [05c-transfer-meta-learning](../../foundations/lessons/05c-transfer-meta-learning.md) 第 4–5 节），冻结集合又会变化，要按所选配置的 get_freeze_filter 逐项核对：某些模块可能全量训练，某些只训练增量。[5][6]
 
 ## 十 推理时 红杯任务如何真正运行
 
@@ -379,7 +379,7 @@ KV cache 就是第 2 步保存的键和值。由于前缀不能读取动作 toke
 
 ![图6 高层更新 低层chunk推理 50Hz控制与内部flow时间的区别](../assets/field-lessons/vla/06-four-clocks.svg)
 
-**读图 6。** 第一行是语义子任务变化；第二行是何时重新运行低层模型；第三行是控制器何时取出一个动作目标；最后一行是一次模型生成内部的数学流时间。四条时间线各走各的时钟；图中横向间隔只表示层次关系（流时间与物理时间的区分也见 [17-diffusion](../../docs/foundations/17-diffusion.md) 第 7 节）。
+**读图 6。** 第一行是语义子任务变化；第二行是何时重新运行低层模型；第三行是控制器何时取出一个动作目标；最后一行是一次模型生成内部的数学流时间。四条时间线各走各的时钟；图中横向间隔只表示层次关系（流时间与物理时间的区分也见 [17-diffusion](../../foundations/lessons/17-diffusion.md) 第 7 节）。
 
 50 Hz 的控制周期是 20 ms。一次模型调用生成多个未来控制目标，所以一次完整的 VLM+flow 推理可以长于 20 ms。
 

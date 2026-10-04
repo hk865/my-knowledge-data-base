@@ -109,4 +109,4 @@ VLA 方向的整体脉络与这些后续工作的分工，见 [VLA 逐步讲义]
 
 - 未核对官方代码某个 commit、权重下载与当前依赖，未运行 LoRA 或量化实验。
 - RTX 4090 上约 6 Hz 是作者在未使用编译、投机解码等加速手段时的测量，换硬件或实现后不保证。
-- 数值出处与页码定位见 [证据档案](../../../docs/deep-readings/evidence/openvla.json)；机制图源文件见 [SVG](figures/openvla_mechanism.svg)。
+- 数值出处与页码定位见 [证据档案](evidence.json)；机制图源文件见 [SVG](figures/openvla_mechanism.svg)。

@@ -73,7 +73,7 @@
         "完整代码审计"
       ],
       "article_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/deep-readings/test-time-compute.md",
-      "evidence_path": "docs/deep-readings/evidence/test-time-compute.json",
+      "evidence_path": "llm/papers/test-time-compute/evidence.json",
       "diagram_png": "assets/baselines/architecture/test-time-compute-mechanism.png",
       "diagram_svg": "assets/baselines/architecture/test-time-compute-mechanism.svg",
       "roadmap_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/roadmaps/architecture-baselines.md",
@@ -680,7 +680,7 @@
         "完整代码审计"
       ],
       "article_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/deep-readings/mamba.md",
-      "evidence_path": "docs/deep-readings/evidence/mamba.json",
+      "evidence_path": "llm/papers/mamba/evidence.json",
       "diagram_png": "assets/baselines/architecture/mamba-mechanism.png",
       "diagram_svg": "assets/baselines/architecture/mamba-mechanism.svg",
       "roadmap_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/roadmaps/architecture-baselines.md",
@@ -1049,7 +1049,7 @@
         "完整代码审计"
       ],
       "article_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/deep-readings/deepseek-v2.md",
-      "evidence_path": "docs/deep-readings/evidence/deepseek-v2.json",
+      "evidence_path": "llm/papers/deepseek-v2/evidence.json",
       "diagram_png": "assets/baselines/architecture/deepseek-v2-mechanism.png",
       "diagram_svg": "assets/baselines/architecture/deepseek-v2-mechanism.svg",
       "roadmap_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/roadmaps/architecture-baselines.md",
@@ -2653,7 +2653,7 @@
         "完整代码审计"
       ],
       "article_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/deep-readings/react.md",
-      "evidence_path": "docs/deep-readings/evidence/react.json",
+      "evidence_path": "cross-domain/papers/react/evidence.json",
       "diagram_png": "assets/baselines/cross/react.png",
       "diagram_svg": "assets/baselines/cross/react.svg",
       "roadmap_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/roadmaps/cross-baselines.md",
@@ -4907,7 +4907,7 @@
         "完整代码审计"
       ],
       "article_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/deep-readings/diffusion-policy.md",
-      "evidence_path": "docs/deep-readings/evidence/diffusion-policy.json",
+      "evidence_path": "robotics-embodied/papers/diffusion-policy/evidence.json",
       "diagram_png": "assets/baselines/embodied/diffusion_policy_mechanism.png",
       "diagram_svg": "assets/baselines/embodied/diffusion_policy_mechanism.svg",
       "roadmap_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/roadmaps/embodied-baselines.md",
@@ -5134,7 +5134,7 @@
         "完整代码审计"
       ],
       "article_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/deep-readings/openvla.md",
-      "evidence_path": "docs/deep-readings/evidence/openvla.json",
+      "evidence_path": "robotics-embodied/papers/openvla/evidence.json",
       "diagram_png": "assets/baselines/embodied/openvla_mechanism.png",
       "diagram_svg": "assets/baselines/embodied/openvla_mechanism.svg",
       "roadmap_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/roadmaps/embodied-baselines.md",
@@ -8395,7 +8395,7 @@
         "完整代码审计"
       ],
       "article_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/deep-readings/transformer.md",
-      "evidence_path": "docs/deep-readings/evidence/transformer.json",
+      "evidence_path": "llm/papers/transformer/evidence.json",
       "diagram_png": "assets/baselines/architecture/transformer-mechanism.png",
       "diagram_svg": "assets/baselines/architecture/transformer-mechanism.svg",
       "roadmap_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/roadmaps/architecture-baselines.md",
@@ -8562,7 +8562,7 @@
         "完整代码审计"
       ],
       "article_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/deep-readings/instructgpt.md",
-      "evidence_path": "docs/deep-readings/evidence/instructgpt.json",
+      "evidence_path": "llm/papers/instructgpt/evidence.json",
       "diagram_png": "assets/baselines/training/instructgpt.png",
       "diagram_svg": "assets/baselines/training/instructgpt.svg",
       "roadmap_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/roadmaps/training-baselines.md",
@@ -8670,7 +8670,7 @@
         "完整代码审计"
       ],
       "article_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/deep-readings/rma.md",
-      "evidence_path": "docs/deep-readings/evidence/rma.json",
+      "evidence_path": "robotics-embodied/papers/rma/evidence.json",
       "diagram_png": "assets/baselines/cross/rma.png",
       "diagram_svg": "assets/baselines/cross/rma.svg",
       "roadmap_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/roadmaps/cross-baselines.md",
@@ -8780,7 +8780,7 @@
         "完整代码审计"
       ],
       "article_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/deep-readings/dreamerv3.md",
-      "evidence_path": "docs/deep-readings/evidence/dreamerv3.json",
+      "evidence_path": "multimodal/papers/dreamerv3/evidence.json",
       "diagram_png": "assets/baselines/embodied/dreamerv3_mechanism.png",
       "diagram_svg": "assets/baselines/embodied/dreamerv3_mechanism.svg",
       "roadmap_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/roadmaps/embodied-baselines.md",
@@ -8884,7 +8884,7 @@
         "完整代码审计"
       ],
       "article_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/deep-readings/llm-judge.md",
-      "evidence_path": "docs/deep-readings/evidence/llm-judge.json",
+      "evidence_path": "cross-domain/papers/llm-judge/evidence.json",
       "diagram_png": "assets/baselines/cross/llm-judge.png",
       "diagram_svg": "assets/baselines/cross/llm-judge.svg",
       "roadmap_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/roadmaps/cross-baselines.md",
@@ -8963,7 +8963,7 @@
         "完整代码审计"
       ],
       "article_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/deep-readings/r2r.md",
-      "evidence_path": "docs/deep-readings/evidence/r2r.json",
+      "evidence_path": "robotics-embodied/papers/r2r/evidence.json",
       "diagram_png": "assets/baselines/cross/r2r.png",
       "diagram_svg": "assets/baselines/cross/r2r.svg",
       "roadmap_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/roadmaps/cross-baselines.md",
@@ -9059,7 +9059,7 @@
         "完整代码审计"
       ],
       "article_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/deep-readings/llava.md",
-      "evidence_path": "docs/deep-readings/evidence/llava.json",
+      "evidence_path": "multimodal/papers/llava/evidence.json",
       "diagram_png": "assets/baselines/multimodal/llava.png",
       "diagram_svg": "assets/baselines/multimodal/llava.svg",
       "roadmap_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/roadmaps/multimodal-baselines.md",
@@ -9141,7 +9141,7 @@
         "完整代码审计"
       ],
       "article_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/deep-readings/ddpm.md",
-      "evidence_path": "docs/deep-readings/evidence/ddpm.json",
+      "evidence_path": "multimodal/papers/ddpm/evidence.json",
       "diagram_png": "assets/baselines/multimodal/ddpm.png",
       "diagram_svg": "assets/baselines/multimodal/ddpm.svg",
       "roadmap_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/roadmaps/multimodal-baselines.md",
@@ -9222,7 +9222,7 @@
         "完整代码审计"
       ],
       "article_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/deep-readings/video-diffusion.md",
-      "evidence_path": "docs/deep-readings/evidence/video-diffusion.json",
+      "evidence_path": "multimodal/papers/video-diffusion/evidence.json",
       "diagram_png": "assets/baselines/multimodal/video-diffusion.png",
       "diagram_svg": "assets/baselines/multimodal/video-diffusion.svg",
       "roadmap_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/roadmaps/multimodal-baselines.md",
@@ -9304,7 +9304,7 @@
         "完整代码审计"
       ],
       "article_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/deep-readings/orb-slam3.md",
-      "evidence_path": "docs/deep-readings/evidence/orb-slam3.json",
+      "evidence_path": "robotics-embodied/papers/orb-slam3/evidence.json",
       "diagram_png": "assets/baselines/robotics/orb-slam3.png",
       "diagram_svg": "assets/baselines/robotics/orb-slam3.svg",
       "roadmap_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/roadmaps/robotics-baselines.md",
@@ -9393,7 +9393,7 @@
         "完整代码审计"
       ],
       "article_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/deep-readings/convex-mpc.md",
-      "evidence_path": "docs/deep-readings/evidence/convex-mpc.json",
+      "evidence_path": "robotics-embodied/papers/convex-mpc/evidence.json",
       "diagram_png": null,
       "diagram_svg": "assets/baselines/robotics/convex-mpc.svg",
       "roadmap_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/roadmaps/robotics-baselines.md",
@@ -9483,7 +9483,7 @@
         "完整代码审计"
       ],
       "article_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/deep-readings/eskf.md",
-      "evidence_path": "docs/deep-readings/evidence/eskf.json",
+      "evidence_path": "robotics-embodied/papers/eskf/evidence.json",
       "diagram_png": "assets/baselines/robotics/eskf.png",
       "diagram_svg": "assets/baselines/robotics/eskf.svg",
       "roadmap_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/roadmaps/robotics-baselines.md",
@@ -9567,7 +9567,7 @@
         "完整代码审计"
       ],
       "article_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/deep-readings/rrt-star.md",
-      "evidence_path": "docs/deep-readings/evidence/rrt-star.json",
+      "evidence_path": "robotics-embodied/papers/rrt-star/evidence.json",
       "diagram_png": "assets/baselines/robotics/rrt-star.png",
       "diagram_svg": "assets/baselines/robotics/rrt-star.svg",
       "roadmap_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/roadmaps/robotics-baselines.md",
@@ -9657,7 +9657,7 @@
         "完整代码审计"
       ],
       "article_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/deep-readings/gpt3.md",
-      "evidence_path": "docs/deep-readings/evidence/gpt3.json",
+      "evidence_path": "llm/papers/gpt3/evidence.json",
       "diagram_png": "assets/baselines/training/gpt3.png",
       "diagram_svg": "assets/baselines/training/gpt3.svg",
       "roadmap_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/roadmaps/training-baselines.md",
@@ -9737,7 +9737,7 @@
         "完整代码审计"
       ],
       "article_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/deep-readings/dpo.md",
-      "evidence_path": "docs/deep-readings/evidence/dpo.json",
+      "evidence_path": "llm/papers/dpo/evidence.json",
       "diagram_png": "assets/baselines/training/dpo.png",
       "diagram_svg": "assets/baselines/training/dpo.svg",
       "roadmap_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/roadmaps/training-baselines.md",
@@ -9827,7 +9827,7 @@
         "完整代码审计"
       ],
       "article_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/deep-readings/ppo.md",
-      "evidence_path": "docs/deep-readings/evidence/ppo.json",
+      "evidence_path": "llm/papers/ppo/evidence.json",
       "diagram_png": "assets/baselines/training/ppo.png",
       "diagram_svg": "assets/baselines/training/ppo.svg",
       "roadmap_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/roadmaps/training-baselines.md",
@@ -9917,7 +9917,7 @@
         "完整代码审计"
       ],
       "article_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/deep-readings/vit.md",
-      "evidence_path": "docs/deep-readings/evidence/vit.json",
+      "evidence_path": "multimodal/papers/vit/evidence.json",
       "diagram_png": "assets/baselines/visual/vit.png",
       "diagram_svg": "assets/baselines/visual/vit.svg",
       "roadmap_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/roadmaps/visual-baselines.md",
@@ -10008,7 +10008,7 @@
         "完整代码审计"
       ],
       "article_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/deep-readings/mae.md",
-      "evidence_path": "docs/deep-readings/evidence/mae.json",
+      "evidence_path": "multimodal/papers/mae/evidence.json",
       "diagram_png": "assets/baselines/visual/mae.png",
       "diagram_svg": "assets/baselines/visual/mae.svg",
       "roadmap_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/roadmaps/visual-baselines.md",
@@ -10092,7 +10092,7 @@
         "完整代码审计"
       ],
       "article_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/deep-readings/clip.md",
-      "evidence_path": "docs/deep-readings/evidence/clip.json",
+      "evidence_path": "multimodal/papers/clip/evidence.json",
       "diagram_png": "assets/baselines/visual/clip.png",
       "diagram_svg": "assets/baselines/visual/clip.svg",
       "roadmap_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/roadmaps/visual-baselines.md",
@@ -10186,7 +10186,7 @@
         "完整代码审计"
       ],
       "article_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/deep-readings/dino.md",
-      "evidence_path": "docs/deep-readings/evidence/dino.json",
+      "evidence_path": "multimodal/papers/dino/evidence.json",
       "diagram_png": "assets/baselines/visual/dino.png",
       "diagram_svg": "assets/baselines/visual/dino.svg",
       "roadmap_url": "https://github.com/hk865/my-knowledge-data-base/blob/main/docs/roadmaps/visual-baselines.md",

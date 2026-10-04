@@ -1,6 +1,6 @@
 # ESKF 教程：大运动交给四元数名义状态，小误差交给三维切空间里的卡尔曼滤波
 
-> 状态：技术精读 · v2 · 未复现 · 原文 [arXiv:1711.02508v1](https://arxiv.org/abs/1711.02508) · [证据档案](../../../docs/deep-readings/evidence/eskf.json)
+> 状态：技术精读 · v2 · 未复现 · 原文 [arXiv:1711.02508v1](https://arxiv.org/abs/1711.02508) · [证据档案](evidence.json)
 
 ![ESKF的双轨传播与注入重置](figures/eskf.svg)
 

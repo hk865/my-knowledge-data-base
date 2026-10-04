@@ -22,9 +22,9 @@
 
 ## 技术地基
 
-- **潜变量模型与变分下界**：VAE 的 ELBO 是理解 DDPM 训练目标的起点（DDPM 可以读成编码器固定为加噪链、只学解码方向的多层 VAE），LDM 的自编码器也带 KL 正则。见 [VAE 讲义](../../../docs/foundations/16-vae.md)第 4 节。
-- **扩散：加噪、预测噪声、逐步采样**：训练时一步造出任意噪声等级的样本，生成时从纯噪声顺序去噪；预测噪声与估计分数只差一个缩放，这是 DDPM 与 Score SDE 能统一的原因。见[扩散讲义](../../../docs/foundations/17-diffusion.md)第 2–6 节。
-- **去噪主干：U-Net 与 Transformer**："怎样生成"和"用什么网络计算"是两层选择。U-Net 的收缩–扩张结构与跨层拼接见 [CNN 讲义](../../../docs/foundations/11-cnn.md)第 6 节；DiT 的切块与自注意力、LDM 的交叉注意力见 [Attention 与 Transformer 讲义](../../../docs/foundations/14-attention-transformer.md)第 13 节。
+- **潜变量模型与变分下界**：VAE 的 ELBO 是理解 DDPM 训练目标的起点（DDPM 可以读成编码器固定为加噪链、只学解码方向的多层 VAE），LDM 的自编码器也带 KL 正则。见 [VAE 讲义](../../../foundations/lessons/16-vae.md)第 4 节。
+- **扩散：加噪、预测噪声、逐步采样**：训练时一步造出任意噪声等级的样本，生成时从纯噪声顺序去噪；预测噪声与估计分数只差一个缩放，这是 DDPM 与 Score SDE 能统一的原因。见[扩散讲义](../../../foundations/lessons/17-diffusion.md)第 2–6 节。
+- **去噪主干：U-Net 与 Transformer**："怎样生成"和"用什么网络计算"是两层选择。U-Net 的收缩–扩张结构与跨层拼接见 [CNN 讲义](../../../foundations/lessons/11-cnn.md)第 6 节；DiT 的切块与自注意力、LDM 的交叉注意力见 [Attention 与 Transformer 讲义](../../../foundations/lessons/14-attention-transformer.md)第 13 节。
 - **引导**：分类器引导用外部分类器的梯度推动采样；无分类器引导把同一模型的条件预测与无条件预测按权重组合，沿两者之差多走一步。两者都以多样性换保真度和条件遵循，类条件与文本条件的最好结果几乎都用了它。公式与一个视频上的例子见 [Video Diffusion 精读](../../papers/video-diffusion/reading.md)第 5 节。
 
 ## 主要路线与团队偏好
@@ -45,14 +45,14 @@ benchmark 的替换就是这个领域目标的迁移：
 
 ## 当前开放问题
 
-- **采样能否少走几步？** 每一篇扩散论文都自述采样比 GAN 慢。Score SDE 给出的概率流 ODE 可以用通用求解器自适应采样；flow matching 直接回归把噪声推向数据的速度场，直线路径训练和采样更快，机器人里的 π0.5 已用它生成连续动作。入口：[扩散讲义](../../../docs/foundations/17-diffusion.md)第 6.1 节、[Flow Matching 原文](https://arxiv.org/abs/2210.02747)、[VLA 讲义](../../../robotics-embodied/fields/vla.md)第六节。
+- **采样能否少走几步？** 每一篇扩散论文都自述采样比 GAN 慢。Score SDE 给出的概率流 ODE 可以用通用求解器自适应采样；flow matching 直接回归把噪声推向数据的速度场，直线路径训练和采样更快，机器人里的 π0.5 已用它生成连续动作。入口：[扩散讲义](../../../foundations/lessons/17-diffusion.md)第 6.1 节、[Flow Matching 原文](https://arxiv.org/abs/2210.02747)、[VLA 讲义](../../../robotics-embodied/fields/vla.md)第六节。
 - **自动指标怎样跟上条件生成？** FID 衡量分布距离，衡量不了是否听懂了文字。DALL·E 2 第 7 节自述属性绑定和文字渲染较弱；Imagen 第 3 节指出 FID 与感知不完全一致、CLIP 分数不善于计数，于是转向人工评测和 DrawBench。入口：[Imagen 原文](https://arxiv.org/abs/2205.11487)、[DALL·E 2 原文](https://arxiv.org/abs/2204.06125)。
 - **视频生成能否成为可以规划的世界模型？** 好看的视频不等于符合物理、能跟随动作；世界模型要建模"执行某个动作之后会发生什么"。入口：[Video Diffusion 精读](../../papers/video-diffusion/reading.md)第 7 节、[世界模型方向](../world-models/README.md)、[LaDi-WM](../../papers/arxiv-2505.11528/README.md)、[EVA: Aligning Video World Models with Executable Robot Actions via Inverse Dynamics Rewards](../../papers/arxiv-2603.17808/README.md)。
 
 ## 阅读顺序
 
-1. [VAE 讲义](../../../docs/foundations/16-vae.md)：先弄清变分下界里的重建项和 KL 项，DDPM 的训练目标从这里来。
-2. [扩散讲义](../../../docs/foundations/17-diffusion.md)：用一个数字走一遍加噪、预测噪声和逐步采样，再读第 6 节的分数与 flow matching。
+1. [VAE 讲义](../../../foundations/lessons/16-vae.md)：先弄清变分下界里的重建项和 KL 项，DDPM 的训练目标从这里来。
+2. [扩散讲义](../../../foundations/lessons/17-diffusion.md)：用一个数字走一遍加噪、预测噪声和逐步采样，再读第 6 节的分数与 flow matching。
 3. [DDPM 精读](../../papers/ddpm/README.md)：主线第 3 个节点的原文。读完可以做一个检验：用单个带噪样本说明 DDPM 要预测什么，再说明条件输入会怎样改变采样过程。
 4. [Video Diffusion 精读](../../papers/video-diffusion/README.md)：同一套方法扩到视频，并把分类器无关引导和重建引导讲清楚；它也接到[视频与时序方向](../video-temporal/README.md)。
 5. [Diffusion Policy 精读](../../../robotics-embodied/papers/diffusion-policy/README.md)：被去噪的对象从图像换成机器人动作序列，看同一个生成机制在控制中要额外处理什么。
@@ -76,7 +76,7 @@ benchmark 的替换就是这个领域目标的迁移：
 
 **与其他论文的关联**
 
-- U-Net 本是为几十张图的医学分割设计的编码–解码结构，见[视觉表征方向](../visual-representation/README.md)与 [CNN 讲义](../../../docs/foundations/11-cnn.md)第 6 节；DDPM、LDM、Imagen、Video Diffusion 都沿用它作去噪主干，DiT 才换成 Transformer。
+- U-Net 本是为几十张图的医学分割设计的编码–解码结构，见[视觉表征方向](../visual-representation/README.md)与 [CNN 讲义](../../../foundations/lessons/11-cnn.md)第 6 节；DDPM、LDM、Imagen、Video Diffusion 都沿用它作去噪主干，DiT 才换成 Transformer。
 - DALL·E 2 以 [CLIP](../../papers/clip/README.md) 的图像嵌入为条件，视觉表征方向的图文弱监督由此进入生成。
 - [Diffusion Policy](../../../robotics-embodied/papers/diffusion-policy/README.md) 把 DDPM 的去噪机制用于动作序列；[VLA 讲义](../../../robotics-embodied/fields/vla.md)第六节讲 π0.5 的 flow matching 动作头。
 - [DDPM 精读](../../papers/ddpm/reading.md)第 3 节写出了噪声预测与分数的缩放关系，是主线第 3 个节点"两篇可以统一"的推导。

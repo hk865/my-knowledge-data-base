@@ -16,7 +16,7 @@ SFT拟合示范；偏好学习利用回答之间的比较。两者可以顺序�
 
 ## 具体讲解入口
 
-[打开已有独立讲解](../../../../docs/foundations/modules/objectives/03-pretraining-objectives.md)。
+[打开已有独立讲解](../../../../foundations/lessons/modules/objectives/03-pretraining-objectives.md)。
 
 ## 从已有讲解开始
 

@@ -16,7 +16,7 @@ MoE的总参数、激活参数、KV缓存和训练吞吐不是同一指标；架
 
 ## 具体讲解入口
 
-[打开已有独立讲解](../../../docs/foundations/15-qkv-deep-dive.md)。
+[打开已有独立讲解](../../../foundations/lessons/15-qkv-deep-dive.md)。
 
 ## 从已有讲解开始
 

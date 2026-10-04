@@ -278,6 +278,6 @@ Oxford Pets 的人类实验也只覆盖有限任务。人类从零样本到一�
 
 图4： [图示评估协议图](figures/clip-evaluation-lesson-beginner-20261002.svg) · [SVG可编辑图](figures/clip-evaluation-lesson-beginner-20261002.svg)
 
-[原精读结构化证据](../../../docs/deep-readings/evidence/clip.json) · [本次教学改写核验记录](../../../docs/deep-readings/evidence/clip.beginner-revision.json)
+[原精读结构化证据](evidence.json) · [本次教学改写核验记录](evidence-beginner-revision.json)
 
 来源类型：视觉语言细分方向的代表性 baseline。教学算例与原创图是机制解释，不是新增论文实验。

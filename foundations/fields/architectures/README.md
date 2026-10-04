@@ -1,6 +1,6 @@
 # 架构与信息流
 
-[回到基础模块](../../README.md) · [完整讲义目录](../../../docs/foundations/01-architectures.md) · [跨模块关系页](../../relations/README.md)
+[回到基础模块](../../README.md) · [完整讲义目录](../../lessons/01-architectures.md) · [跨模块关系页](../../relations/README.md)
 
 ## 这一分区回答什么
 
@@ -14,19 +14,19 @@
 
 | 交换方式 | 模块 | 它解决的计算问题 | 先读 |
 |---|---|---|---|
-| 固定的局部邻居 | [CNN](../../../docs/foundations/11-cnn.md) | 同一个图案出现在图像任何位置，都能用同一个小核检测出来；参数量与图像大小无关，多层叠加后看到的区域逐层变大 | 无 |
-| 经过一个状态 | [RNN](../../../docs/foundations/12-rnn.md) | 只看当前输入不够时，把任意长的历史压进固定大小的状态，每一步用同一套参数更新它 | 无；第 5 节的梯度部分可先读[梯度与 SGD](../../../docs/foundations/modules/optimization/gradient-sgd.md) |
-| 经过一个状态 | [LSTM](../../../docs/foundations/13-lstm.md) | 让一条线索在状态里跨很多步保留下来：用门决定保留、改写和读出，使记忆通路上每一步乘的因子可以接近 1 | RNN 第 5 节 |
-| 按内容读取任意位置 | [Attention 与 Transformer](../../../docs/foundations/14-attention-transformer.md) | 每个位置在一步之内按内容读取其他任何位置；用 mask（规定哪些位置可读的 0/1 表）控制可见范围，使下一词预测的训练可以并行 | 无 |
-| 按内容读取任意位置 | [QKV](../../../docs/foundations/15-qkv-deep-dive.md) | 为什么要把"和谁匹配"（Q、K）与"读到什么内容"（V）分开，两个匹配投影能否合并成一个矩阵 | Attention 与 Transformer 第 3–6 节 |
-| 线性状态、给定的图、按条件选参数 | [SSM、GNN 与 MoE](../../../docs/foundations/18-ssm-gnn-moe.md) | SSM（状态空间模型）：把递推改成线性，长序列就能按卷积或并行 scan（把逐步递推改写成可并行的前缀运算）计算；GNN（图神经网络）：在任意给定的图上让节点与邻居交换信息；MoE（混合专家）：参数很多，但每个 token（模型处理的基本单位，例如一个词或词片段）只调用其中几组 | SSM 先读 RNN 第 7 节；GNN 先读 QKV 第 4 节；MoE 先读 Attention 与 Transformer 第 10.1 节 |
+| 固定的局部邻居 | [CNN](../../lessons/11-cnn.md) | 同一个图案出现在图像任何位置，都能用同一个小核检测出来；参数量与图像大小无关，多层叠加后看到的区域逐层变大 | 无 |
+| 经过一个状态 | [RNN](../../lessons/12-rnn.md) | 只看当前输入不够时，把任意长的历史压进固定大小的状态，每一步用同一套参数更新它 | 无；第 5 节的梯度部分可先读[梯度与 SGD](../../lessons/modules/optimization/gradient-sgd.md) |
+| 经过一个状态 | [LSTM](../../lessons/13-lstm.md) | 让一条线索在状态里跨很多步保留下来：用门决定保留、改写和读出，使记忆通路上每一步乘的因子可以接近 1 | RNN 第 5 节 |
+| 按内容读取任意位置 | [Attention 与 Transformer](../../lessons/14-attention-transformer.md) | 每个位置在一步之内按内容读取其他任何位置；用 mask（规定哪些位置可读的 0/1 表）控制可见范围，使下一词预测的训练可以并行 | 无 |
+| 按内容读取任意位置 | [QKV](../../lessons/15-qkv-deep-dive.md) | 为什么要把"和谁匹配"（Q、K）与"读到什么内容"（V）分开，两个匹配投影能否合并成一个矩阵 | Attention 与 Transformer 第 3–6 节 |
+| 线性状态、给定的图、按条件选参数 | [SSM、GNN 与 MoE](../../lessons/18-ssm-gnn-moe.md) | SSM（状态空间模型）：把递推改成线性，长序列就能按卷积或并行 scan（把逐步递推改写成可并行的前缀运算）计算；GNN（图神经网络）：在任意给定的图上让节点与邻居交换信息；MoE（混合专家）：参数很多，但每个 token（模型处理的基本单位，例如一个词或词片段）只调用其中几组 | SSM 先读 RNN 第 7 节；GNN 先读 QKV 第 4 节；MoE 先读 Attention 与 Transformer 第 10.1 节 |
 
 ### 怎样生成样本
 
 | 模块 | 它解决的计算问题 | 先读 |
 |---|---|---|
-| [VAE](../../../docs/foundations/16-vae.md) | 用一个隐藏变量产生多个不同的合理样本；真实后验（看到数据后对隐藏变量的判断）算不出来时，用编码器近似它，并优化变分下界 ELBO（对数似然的一个可计算下界） | [概率分类](../../../docs/foundations/modules/objectives/02-classification-probabilities.md)第 8 节的 KL |
-| [Diffusion](../../../docs/foundations/17-diffusion.md) | 把生成拆成从纯噪声出发的逐级去噪；训练时任取一个噪声强度一步加噪，让网络回归加进去的噪声 | VAE 第 4 节 |
+| [VAE](../../lessons/16-vae.md) | 用一个隐藏变量产生多个不同的合理样本；真实后验（看到数据后对隐藏变量的判断）算不出来时，用编码器近似它，并优化变分下界 ELBO（对数似然的一个可计算下界） | [概率分类](../../lessons/modules/objectives/02-classification-probabilities.md)第 8 节的 KL |
+| [Diffusion](../../lessons/17-diffusion.md) | 把生成拆成从纯噪声出发的逐级去噪；训练时任取一个噪声强度一步加噪，让网络回归加进去的噪声 | VAE 第 4 节 |
 
 ### 谁是谁的特例或推广
 
@@ -62,20 +62,20 @@
 
 - [递推状态谱系](../../relations/recurrent-state.md)：把 RNN、LSTM、SSM、Mamba、线性注意力串成一条链，核心问题是状态转移怎样同时做到稳定、按内容选择、可以并行。
 - [注意力与 FFN 的分工谱系](../../relations/attention-ffn-division.md)：从注意力的 A 与 V 走到 FFN 键值记忆、MoE 与 Engram（把静态模式改成查表的记忆模块），说明读取位置与存放知识怎样在模块之间分工。
-- 只涉及两个模块的关系写在各篇末尾：[CNN](../../../docs/foundations/11-cnn.md#9-与其他概念的关系)、[RNN](../../../docs/foundations/12-rnn.md#与其他概念的关系)、[LSTM](../../../docs/foundations/13-lstm.md#与其他概念的关系)、[Attention 与 Transformer](../../../docs/foundations/14-attention-transformer.md#17-与其他概念的关系)、[QKV](../../../docs/foundations/15-qkv-deep-dive.md#与其他概念的关系)、[VAE](../../../docs/foundations/16-vae.md#与其他概念的关系)、[Diffusion](../../../docs/foundations/17-diffusion.md#与其他概念的关系)、[SSM、GNN 与 MoE](../../../docs/foundations/18-ssm-gnn-moe.md#与其他概念的关系)。
-- [优化分区](../optimization/README.md)：梯度沿深度或时间传递时要连乘每层的局部导数（[梯度与 SGD](../../../docs/foundations/modules/optimization/gradient-sgd.md)第 8 节），RNN 第 5 节、LSTM 第 4 节和残差通路都是在改这个连乘。
-- [目标分区](../objectives/README.md)：架构决定网络怎样计算，训练目标决定让它做什么题。因果 mask 让同一个 Transformer 可以用下一词目标并行训练（[自监督与生成目标](../../../docs/foundations/modules/objectives/03-pretraining-objectives.md)第 2–4 节）。
-- [进阶分区](../advanced/README.md)：LoRA 加在 Transformer 的线性层上；上下文学习发生在注意力的计算里，不改权重（[迁移与元学习](../../../docs/foundations/05c-transfer-meta-learning.md)第 4、10 节）。
+- 只涉及两个模块的关系写在各篇末尾：[CNN](../../lessons/11-cnn.md#9-与其他概念的关系)、[RNN](../../lessons/12-rnn.md#与其他概念的关系)、[LSTM](../../lessons/13-lstm.md#与其他概念的关系)、[Attention 与 Transformer](../../lessons/14-attention-transformer.md#17-与其他概念的关系)、[QKV](../../lessons/15-qkv-deep-dive.md#与其他概念的关系)、[VAE](../../lessons/16-vae.md#与其他概念的关系)、[Diffusion](../../lessons/17-diffusion.md#与其他概念的关系)、[SSM、GNN 与 MoE](../../lessons/18-ssm-gnn-moe.md#与其他概念的关系)。
+- [优化分区](../optimization/README.md)：梯度沿深度或时间传递时要连乘每层的局部导数（[梯度与 SGD](../../lessons/modules/optimization/gradient-sgd.md)第 8 节），RNN 第 5 节、LSTM 第 4 节和残差通路都是在改这个连乘。
+- [目标分区](../objectives/README.md)：架构决定网络怎样计算，训练目标决定让它做什么题。因果 mask 让同一个 Transformer 可以用下一词目标并行训练（[自监督与生成目标](../../lessons/modules/objectives/03-pretraining-objectives.md)第 2–4 节）。
+- [进阶分区](../advanced/README.md)：LoRA 加在 Transformer 的线性层上；上下文学习发生在注意力的计算里，不改权重（[迁移与元学习](../../lessons/05c-transfer-meta-learning.md)第 4、10 节）。
 - [数据分区](../data/README.md)：Transformer 的 padding mask 与文本实验中的 masked mean pooling 用的是同一种 0/1 掩码。
 
 ## 阅读顺序
 
-1. [CNN](../../../docs/foundations/11-cnn.md) 第 1–5 节：从一个 [−1,0,1] 核理解卷积、通道、感受野与汇聚。
-2. [RNN](../../../docs/foundations/12-rnn.md) 第 1–5 节，再读第 7 节的状态方程视角；接着读 [LSTM](../../../docs/foundations/13-lstm.md)。
-3. [Attention 与 Transformer](../../../docs/foundations/14-attention-transformer.md) 第 1–12 节：手算一次注意力，再看 mask、多头、FFN、残差与归一化怎样接成一个块；第 13 节区分 encoder 与 decoder。
-4. [QKV](../../../docs/foundations/15-qkv-deep-dive.md)：匹配与内容为什么分开，以及注意力与核回归、线性注意力的关系。
-5. [SSM、GNN 与 MoE](../../../docs/foundations/18-ssm-gnn-moe.md)：读完 2 和 4 再读，三节分别接回 RNN、注意力和 FFN。
-6. [VAE](../../../docs/foundations/16-vae.md)，再读 [Diffusion](../../../docs/foundations/17-diffusion.md)。这条生成线与 1–5 互不依赖，可以单独先读。
+1. [CNN](../../lessons/11-cnn.md) 第 1–5 节：从一个 [−1,0,1] 核理解卷积、通道、感受野与汇聚。
+2. [RNN](../../lessons/12-rnn.md) 第 1–5 节，再读第 7 节的状态方程视角；接着读 [LSTM](../../lessons/13-lstm.md)。
+3. [Attention 与 Transformer](../../lessons/14-attention-transformer.md) 第 1–12 节：手算一次注意力，再看 mask、多头、FFN、残差与归一化怎样接成一个块；第 13 节区分 encoder 与 decoder。
+4. [QKV](../../lessons/15-qkv-deep-dive.md)：匹配与内容为什么分开，以及注意力与核回归、线性注意力的关系。
+5. [SSM、GNN 与 MoE](../../lessons/18-ssm-gnn-moe.md)：读完 2 和 4 再读，三节分别接回 RNN、注意力和 FFN。
+6. [VAE](../../lessons/16-vae.md)，再读 [Diffusion](../../lessons/17-diffusion.md)。这条生成线与 1–5 互不依赖，可以单独先读。
 7. 两张关系页：[递推状态谱系](../../relations/recurrent-state.md)、[注意力与 FFN 的分工谱系](../../relations/attention-ffn-division.md)。
 8. 对照原文看机制：[Attention Is All You Need 精读](../../../llm/papers/transformer/reading.md)、[ViT 精读](../../../multimodal/papers/vit/reading.md)（切块嵌入）、[DDPM 精读](../../../multimodal/papers/ddpm/reading.md)、[Mamba 精读](../../../llm/papers/mamba/reading.md)。
 

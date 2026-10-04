@@ -32,7 +32,7 @@
     "robotics-embodied/baselines/diffusion-policy.md"
   ],
   "evidence_paths": [
-    "docs/deep-readings/evidence/diffusion-policy.json"
+    "robotics-embodied/papers/diffusion-policy/evidence.json"
   ],
   "authors": [
     "Cheng Chi",

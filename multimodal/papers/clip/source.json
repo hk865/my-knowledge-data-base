@@ -27,9 +27,9 @@
     "docs/deep-readings/clip.md"
   ],
   "evidence_paths": [
-    "docs/deep-readings/evidence/clip.json",
-    "../../../docs/deep-readings/evidence/clip.json",
-    "../../../docs/deep-readings/evidence/clip.beginner-revision.json"
+    "multimodal/papers/clip/evidence.json",
+    "evidence.json",
+    "evidence-beginner-revision.json"
   ],
   "topic_paths": [
     "multimodal/alignment",

@@ -27,8 +27,8 @@
     "docs/deep-readings/transformer.md"
   ],
   "evidence_paths": [
-    "docs/deep-readings/evidence/transformer.json",
-    "../../../docs/deep-readings/evidence/transformer.json"
+    "llm/papers/transformer/evidence.json",
+    "evidence.json"
   ],
   "topic_paths": [
     "llm/architecture"

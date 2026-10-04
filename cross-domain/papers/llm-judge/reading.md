@@ -66,11 +66,11 @@ F 才是附带的裁判训练探索：Arena 抽 22K 单轮票，20K 训练、2K 
 
 ## 阅读和证据覆盖
 
-已读正文 §1–7、A 提示模板、B 案例、C 数据收集、D.1–D.4、E 训练、F.1–F.2；参考文献作索引，未复跑评测。精确位置与边界见 [证据文件](../../../docs/deep-readings/evidence/llm-judge.json)。本图原创，原 PDF 与阅读缓存不随交付发布。
+已读正文 §1–7、A 提示模板、B 案例、C 数据收集、D.1–D.4、E 训练、F.1–F.2；参考文献作索引，未复跑评测。精确位置与边界见 [证据文件](evidence.json)。本图原创，原 PDF 与阅读缓存不随交付发布。
 
 
 ## 图解文件与证据索引
 
-[SVG高清图](figures/llm-judge.svg) · [SVG可编辑图](figures/llm-judge.svg) · [结构化证据](../../../docs/deep-readings/evidence/llm-judge.json)
+[SVG高清图](figures/llm-judge.svg) · [SVG可编辑图](figures/llm-judge.svg) · [结构化证据](evidence.json)
 
 来源类型：本次为细分方向新选择的 baseline，不是历史聊天提取。

@@ -27,8 +27,8 @@
     "docs/deep-readings/mae.md"
   ],
   "evidence_paths": [
-    "docs/deep-readings/evidence/mae.json",
-    "../../../docs/deep-readings/evidence/mae.json"
+    "multimodal/papers/mae/evidence.json",
+    "evidence.json"
   ],
   "topic_paths": [
     "multimodal/visual-representation"

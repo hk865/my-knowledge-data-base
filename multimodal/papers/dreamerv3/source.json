@@ -32,7 +32,7 @@
     "robotics-embodied/baselines/dreamerv3.md"
   ],
   "evidence_paths": [
-    "docs/deep-readings/evidence/dreamerv3.json"
+    "multimodal/papers/dreamerv3/evidence.json"
   ],
   "authors": [
     "Danijar Hafner",
