@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2606.13355",
+  "checked_on": "2026-10-04",
+  "version": "arXiv v1",
+  "primary_sources": [
+    "https://arxiv.org/abs/2606.13355",
+    "https://arxiv.org/html/2606.13355v1",
+    "https://oddqueue.github.io/realfast/"
+  ],
+  "checked_sections": "v1 §3.1–3.3、§4.1–4.2、§6、App. A/B；作者项目页",
+  "claim_map": [
+    {
+      "claim": "自回归动作的串行生成怎样在不停止机器人的情况下部署。",
+      "location": "Introduction"
+    },
+    {
+      "claim": "π0-REALFAST 分段 FAST 分词，以队列前缀条件化，用受限解码控制 token 合法性与预算。",
+      "location": "v1 §3.1–3.3、§4.1–4.2、§6、App. A/B；作者项目页"
+    },
+    {
+      "claim": "相对静态单臂桌面；更动态与双臂需更多token；延迟保证依赖外部延迟上界",
+      "location": "Limitations / Discussion / protocol sections specified above"
+    }
+  ],
+  "openness_boundary": "作者项目页已打开；仓库内容与权重开放范围未核实",
+  "not_checked": [
+    "未独立复现",
+    "未运行权重或数据下载",
+    "未审计再分发许可"
+  ]
+}

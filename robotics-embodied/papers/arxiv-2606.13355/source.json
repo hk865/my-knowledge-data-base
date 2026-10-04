@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2606.13355",
+  "title": "Real-Time Execution with Autoregressive Policies",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2606.13355",
+  "official_url": "https://arxiv.org/abs/2606.13355",
+  "official_fulltext_url": "https://arxiv.org/html/2606.13355v1",
+  "read_version": "arXiv v1",
+  "version_status": "pinned_to_opened_primary_source",
+  "version_date": "2026-06-11",
+  "year": 2026,
+  "authors": [
+    "Sangkyu Lee",
+    "Seohyeon Park",
+    "Tackgeun You",
+    "Avi Caciularu",
+    "Idan Szpektor",
+    "Hwasup Lim",
+    "Youngjae Yu"
+  ],
+  "topic_paths": [
+    "robotics/embodied-policies"
+  ],
+  "modality_tags": [
+    "text",
+    "image",
+    "action",
+    "state",
+    "multimodal"
+  ],
+  "task_tags": [
+    "decision"
+  ],
+  "content_kind": "bibliographic_card",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "reading_path": null,
+  "reading_boundary": "v1 §3.1–3.3、§4.1–4.2、§6、App. A/B；作者项目页。仅为本次领域增量核对相关章节，不是全文精读；未运行实验。",
+  "teaching_status": "not_created",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "仅链接官方来源，不再分发原文、权重或数据。"
+  },
+  "fulltext_local_status": "official_link_only",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [
+    "robotics-embodied/papers/arxiv-2606.13355/evidence.json"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2506.07339",
+  "checked_on": "2026-10-04",
+  "version": "NeurIPS 2025 conference version; arXiv v2",
+  "primary_sources": [
+    "https://arxiv.org/abs/2506.07339",
+    "https://papers.nips.cc/paper_files/paper/2025/file/300ccb2187dedd4edcc07f7e76d8e553-Paper-Conference.pdf",
+    "https://papers.nips.cc/paper_files/paper/2025/file/300ccb2187dedd4edcc07f7e76d8e553-Paper-Conference.pdf",
+    "https://huggingface.co/docs/lerobot/rtc"
+  ],
+  "checked_sections": "正式版 §3.1–3.3、§4、§6；arXiv 身份与版本",
+  "claim_map": [
+    {
+      "claim": "大模型生成动作块时，旧动作仍在执行；跨块停顿与跳变影响闭环。",
+      "location": "Introduction"
+    },
+    {
+      "claim": "RTC 把异步接续写成前缀条件补全，在推理时引导连续生成策略接续旧队列。",
+      "location": "正式版 §3.1–3.3、§4、§6；arXiv 身份与版本"
+    },
+    {
+      "claim": "限扩散/flow策略；引导增加计算；真机未覆盖腿足运动",
+      "location": "Limitations / Discussion / protocol sections specified above"
+    }
+  ],
+  "openness_boundary": "论文提供算法；项目博客本次无法读取，代码开放状态未核实",
+  "not_checked": [
+    "未独立复现",
+    "未运行权重或数据下载",
+    "未审计再分发许可"
+  ]
+}

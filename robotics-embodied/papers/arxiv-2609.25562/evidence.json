@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2609.25562",
+  "checked_on": "2026-10-04",
+  "version": "arXiv v1",
+  "primary_sources": [
+    "https://arxiv.org/abs/2609.25562",
+    "https://arxiv.org/html/2609.25562v1",
+    "https://github.com/xiaoqi-7/IndustrialVLA-Bench"
+  ],
+  "checked_sections": "v1 §1–5、Tables 2–5、App. B–D；官方仓库",
+  "claim_map": [
+    {
+      "claim": "接近饱和的常规分数掩盖扰动、语言变化、运行成本与复现证据差异。",
+      "location": "Introduction"
+    },
+    {
+      "claim": "固定检查点，分别报告常规、非语言扰动、同义改写与运行结果，并标注复现等级。",
+      "location": "v1 §1–5、Tables 2–5、App. B–D；官方仓库"
+    },
+    {
+      "claim": "仅LIBERO家族仿真；6条中3条协议忠实、1条近似复现、2条待核；硬件等未归一",
+      "location": "Limitations / Discussion / protocol sections specified above"
+    },
+    {
+      "claim": "协议忠实子集的常规/扰动/改写均分跨度为1.36/14.62/23.10个百分点；不是全部6模型直接排名",
+      "location": "§1, §4.6, §5"
+    }
+  ],
+  "openness_boundary": "官方评测仓库公开；原始运行未复现",
+  "not_checked": [
+    "未独立复现",
+    "未运行权重或数据下载",
+    "未审计再分发许可"
+  ]
+}

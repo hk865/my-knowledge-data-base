@@ -28,7 +28,13 @@
 | 推理调度 | 多久推理一次、一次产出多少、在哪里运行 | 每步自回归解码 7–8 个 token；RT-2-55B 在云端 1–3 Hz，OpenVLA 在 RTX 4090 上约 6 Hz | 一次推理产出 50 步、10 步积分；RTX 4090 上机载推理 73 ms，执行 16–25 步后再推理 |
 | 任务条件 | 用什么告诉模型"做什么" | 一句语言指令 | 一句语言指令；长任务由另一个高层 VLM 拆成子任务指令 |
 
-几个部件之间有依赖：动作表示决定推理调度（离散 token 要逐个解码，连续动作块可以一次出完）；训练目标决定 VLM 的知识能否保住（连续动作头的梯度会改动骨干）。下表按部件分行，同一篇论文改了几个部件，就在几行出现。
+几个部件之间有依赖：动作表示约束推理调度（离散 token 通常逐个解码，连续动作块可并行表示，但是否异步执行、如何接续还要单独设计）；训练目标决定 VLM 的知识能否保住（连续动作头的梯度会改动骨干）。下表按部件分行，同一篇论文改了几个部件，就在几行出现。
+
+### 动作表示与执行调度分开选择
+
+![动作表示、学习方式与部署接续的分工图](../../assets/phase3-expansion/vla-action-execution-axes.svg)
+
+图：原创机制对照。横向每行是一种输出机制，右侧是把动作送到真实时间轴上的接口。FAST 改压缩，OFT 改并行输出，RTC 改连续生成的接续，π0-REALFAST 同时改分词范围与自回归接续；看“动作是不是 token”只回答了其中一部分。箭头表示信息流，图中没有模型排名。
 
 ## 后续工作在改哪个部件
 
@@ -62,12 +68,17 @@
 | 推理调度（2026 年补充） | 全身：上层策略（VLA、视觉运动策略或导航策略）输出全身关节目标或速度指令，下面接单独训练、频率更高的全身控制器 | [Helix 02](../../papers/figure-helix-02/README.md)（S1 200 Hz → S0 1 kHz）、[GR00T N1.6](https://developer.nvidia.com/blog/building-generalist-humanoid-capabilities-with-nvidia-isaac-gr00t-n1-6-using-a-sim-to-real-workflow)（速度指令 → GR00T-WholeBodyControl）、[Gemini Robotics 2](../../papers/gemini-robotics-2/README.md)（未公开下层） | 行走、平衡与操作在一个系统里连起来（Helix 02 的 4 分钟洗碗机任务）。代价：Gemini Robotics 2 地面拾取 45.7%；两层之间的接口各家不同，没有同条件比较 |
 | 训练目标（2026 年补充） | 冻结 VLA，从内部表示压出一个 RL token，只在它上面在线训练小 actor-critic，修正 VLA 提出的动作块 | [RL Token](../../papers/arxiv-2604.23073/README.md) | 每任务约 15 分钟到 5 小时真机数据，精密阶段提速最高约 3 倍，装螺丝 20% → 65%。代价：仍要人给奖励、做干预、切换 RL 与基座策略 |
 | 整体缩放（2026 年补充） | 机载小模型 + 少量示范适配新本体 | [Gemini Robotics On-Device 2](../../papers/gemini-robotics-2/README.md) | 新的双臂本体通常少于 200 条示范、几小时适配。代价：官方没有给出机载版与完整版的对比数字 |
+| 推理调度 | 旧队列执行时生成新块，用已承诺前缀与软重叠引导补全 | [RTC](../../papers/arxiv-2506.07339/README.md) [1]（NeurIPS 2025） | 不重训即可用于扩散 / flow 策略；引导带来额外计算，仅覆盖这类生成策略 |
+| 训练目标 + 推理调度 | 训练时随机模拟延迟，干净前缀作条件，只训练带噪后缀 | [Training-time RTC](../../papers/arxiv-2512.05964/README.md) [2]（2025-12 v2） | 省去推理时的额外引导；要匹配延迟分布，原方法只用硬前缀 |
+| 动作表示 + 推理调度 | 分段 FAST 分词、前缀条件化、预算内的合法 token 解码 | [π0-REALFAST](../../papers/arxiv-2606.13355/README.md) [3]（2026-06 v1） | 自回归动作也可异步接续；要微调并校准延迟预算，证据限于单臂桌面 |
 
 [OpenVLA 精读](../../papers/openvla/reading.md)位于"动作表示 = 离散 token"与"观测表示 = 拼接两种视觉编码器"两格；它的三个限制（单帧、无本体状态、无动作块）分别对应"观测表示 = 加腕部相机与本体状态"和"动作表示 = 连续动作块 + 并行解码"两行。
 
 ## 批注
 
 **易误读**
+
+- 新增三行解决的是动作块衔接；队列不断流、动作连贯、及时响应新观测是三个需要分别检查的条件。RTC 的适用范围见正式版 §6，Training-time RTC 的延迟分布与硬前缀限制见 v2 §VI，π0-REALFAST 的外部延迟假设与单臂范围见 v1 §3.3、§6。
 
 - OpenVLA-OFT 摘要中的 76.5% → 97.1% 跨越了输入设置：97.1% 的配置另加了腕部图像与本体状态，同输入下的对照是 π0 的 94.2%（Table I）。表中按同一输入分步写出。
 - FAST 的 750 ms 与 π0 的 100 ms 都是 RTX 4090 上预测 1 秒动作块的时间（FAST Sec. VI-E）；KI 写的"π0 约 10 Hz、自回归 VLA 约 1.3 Hz"是另一种口径（§4）。
@@ -88,3 +99,11 @@
 - X-Tokenizer 的每块 token 数与编码延迟只在图中，pdftotext 抽取错位，本页未引用。
 - π0.7、Qwen-VLA 的训练数据总小时数与混合比例原文未写全，表中只写原文给出的部分。
 - 2026 年补充的五行中，GR00T N1.6/N1.7、Helix 02、Gemini Robotics 2 都只有官方博客或仓库，没有论文；表中只写官方页面明确写出的结构与数字。
+
+## 补充参考文献
+
+[1] Black et al. [Real-Time Execution of Action Chunking Flow Policies，NeurIPS 2025 正式版](https://papers.nips.cc/paper_files/paper/2025/file/300ccb2187dedd4edcc07f7e76d8e553-Paper-Conference.pdf)，§3、§6。
+
+[2] Black et al. [Training-Time Action Conditioning for Efficient Real-Time Chunking，v2](https://arxiv.org/html/2512.05964v2)，2025-12-09，§IV–VI。
+
+[3] Lee et al. [Real-Time Execution with Autoregressive Policies，v1](https://arxiv.org/html/2606.13355v1)，2026-06-11，§3、§6。

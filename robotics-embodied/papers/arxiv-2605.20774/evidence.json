@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2605.20774",
+  "checked_on": "2026-10-04",
+  "version": "arXiv v1",
+  "primary_sources": [
+    "https://arxiv.org/abs/2605.20774",
+    "https://arxiv.org/html/2605.20774v1",
+    "https://robot-replica.org/vla-replica-materials/index.html"
+  ],
+  "checked_sections": "v1 §3–5、Tables 3–6；作者材料页",
+  "claim_map": [
+    {
+      "claim": "真机评测成本与场景差异妨碍各实验室重复比较。",
+      "location": "Introduction"
+    },
+    {
+      "claim": "用 SO-101、灯箱和场景标定规范搭建可本地复现的域内/域外任务集。",
+      "location": "v1 §3–5、Tables 3–6；作者材料页"
+    },
+    {
+      "claim": "单一低成本桌面本体；规模有限；光照、硬件和摆放仍会产生差异",
+      "location": "Limitations / Discussion / protocol sections specified above"
+    }
+  ],
+  "openness_boundary": "材料页提供数据与代码入口；未下载运行",
+  "not_checked": [
+    "未独立复现",
+    "未运行权重或数据下载",
+    "未审计再分发许可"
+  ]
+}

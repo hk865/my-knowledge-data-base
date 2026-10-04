@@ -74,3 +74,12 @@
 - [Proximal Policy Optimization Algorithms](../../../llm/papers/ppo/README.md) · 2017 · 技术精读 · π*0.6 把它作为对照：flow matching 策略上的 PPO 需要很小的信赖域才稳定
 - [Reconstruction or Semantics? What Makes a Latent Space Useful for Robotic World Models](../../../multimodal/papers/arxiv-2605.06388/README.md) · 2026 · 文献卡 · 视觉潜空间该偏重建还是语义，与 VLA 的视觉骨干选择相关
 - [Dynamic Locomotion in the MIT Cheetah 3 Through Convex Model-Predictive Control](../../papers/convex-mpc/README.md) · 2018 · 技术精读 · VLA 输出之下的经典控制层参照（归属控制方向）
+
+## 8 实时接续与评测条件
+
+- [Real-Time Execution of Action Chunking Flow Policies](../../papers/arxiv-2506.07339/README.md) · 2025 · 文献卡 · 格：推理调度 / 动作条件
+- [Training-Time Action Conditioning for Efficient Real-Time Chunking](../../papers/arxiv-2512.05964/README.md) · 2025 · 文献卡 · 格：推理调度 / 动作条件
+- [Real-Time Execution with Autoregressive Policies](../../papers/arxiv-2606.13355/README.md) · 2026 · 文献卡 · 格：推理调度 / 动作条件
+- [RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies](../../papers/arxiv-2607.04434/README.md) · 2026 · 文献卡 · 评测协议与复现
+- [VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World Evaluation of Vision-Language-Action Models](../../papers/arxiv-2605.20774/README.md) · 2026 · 文献卡 · 评测协议与复现
+- [IndustrialVLA-Bench: A Traceable Multi-Axis Evaluation of Open Robot Policy Models](../../papers/arxiv-2609.25562/README.md) · 2026 · 文献卡 · 评测协议与复现

@@ -27,6 +27,10 @@
 
 接口有三种写法，对应主线的三个阶段：**打分选择**（高层从固定技能库中挑，SayCan）、**生成代码或结构**（高层写出调用感知与控制 API 的程序，Code as Policies、VoxPoser）、**语言子任务**（高层输出"拿起砧板"这样的短指令，由训练过的 VLA 执行，Hi Robot、π0.5）。
 
+![具身 Agent 的任务闭环与 VLA 的动作闭环](../../assets/phase3-expansion/embodied-two-feedback-loops.svg)
+
+图：原创接口图。上层根据“杯子已经放入水槽”的证据决定是否换子任务；下层根据新图像和本体状态修正正在执行的动作。把已执行动作、观察时间与成功证据一起返回，才有条件区分“规划选错了”“动作没做成”和“验证看错了”。图示综合本页的 SayCan、Inner Monologue 与分层 VLA 接口，不代表任何一篇论文的完整架构。
+
 ## 主线历史
 
 结论：每一步都在补上一步的一个缺口：开环 → 闭环；固定技能库 → 可生成、可积累的技能；冻结的通用大模型 → 训练过的高层；无记忆、无验证 → 运行时检查与记忆。
@@ -156,6 +160,8 @@
 | MEMORA-Bench（2026） | 第一人称视频上的记忆问答与规划 | 规划分数是文本规则指标，不是机器人成功率；主 QA 数字来自条件子集 |
 | ASIMOV-Agentic（2026，Google DeepMind） | 编排器的安全决策：约束遵守、人员接近与硬件状态监测、VLA 可行性判断、含糊指令求助 | 离线单步与多轮；多轮中的 VLA 由模拟器代替；不测功能安全架构 |
 
+2026 年的 RoboDojo [1] 将 Memory（要记住过去观察）与 Long-Horizon（要维持多步进度）分开，提供了检查两类失败的不同任务；VLA-REPLICA [2] 又用重复操作的计数任务检查“做了几次”。`[判断]` 给上层更多推理文本与给下层更长动作块都可能有用，是否记住了事件、是否在正确时刻结束子任务，仍需要分别测试。这两套评测主要测操作策略，完整 Agent 的可行性拒绝与验证恢复还要另设协议。
+
 读数时要分清三对口径：规划成功与执行成功，首回合成功与允许重试的最终成功（RoboSkill），全量与条件子集（MEMORA）。
 
 ## 当前开放问题
@@ -164,7 +170,7 @@
 - **长程任务的错误累积怎样控制？** EmbodiedBench 的长程子集、EmbodiedSkills 自述的错误累积。入口：[EmbodiedBench](../../papers/arxiv-2502.09560/README.md)、[EmbodiedSkills](../../papers/embodiedskills/reading.md)。
 - **记忆什么时候该更新、什么时候该怀疑？** 入口：[MEMORA](../../papers/memora/reading.md)、[HoloAgent-0](../../papers/holoagent-0/reading.md)；语言模型一侧的外部记忆见 [Frozen Memory Is Not Enough](../../../llm/papers/arxiv-2608.17050/README.md)。
 - **看不见时怎样验证？** 盒子有盖时一张外部图像无法判断海绵是否在里面（EmbodiedSkills 精读中的例子）；成功检测器的误报会被当成事实（Inner Monologue）。入口：[Inner Monologue](../../papers/arxiv-2207.05608/README.md)。
-- **真实机器人上的长程定量 benchmark 在哪里？** 2026 年的四篇都只有少量真机试验或定性演示。
+- **真实机器人上的长程定量 benchmark 在哪里？** 2026 年的四篇系统论文都只有少量真机试验或定性演示；[RoboDojo](../../papers/arxiv-2607.04434/README.md) 提供了多本体真机操作评测，下一步是把完整 Agent 的规划、执行与验证失败也按回合记录下来。
 - **（2026 年补充）编排器怎样知道 VLA 做得到什么？** ER 2 靠读 VLA 训练指令的摘要判断可行性，摘要越详细越准；但多轮任务里收到置信度反馈后的重规划仍常失败。入口：[Gemini Robotics 2 安全评测](../../papers/gemini-robotics-2-safety/README.md)、[SayCan 精读](../../papers/saycan/reading.md)。
 - **（2026 年补充）安全停机的漏报与误报怎样取舍？** 入口：[Gemini Robotics 2 安全评测](../../papers/gemini-robotics-2-safety/README.md)；功能安全一侧见[运动控制方向](../control-locomotion/README.md)中 Agility Digit 5 的独立安全控制器。
 
@@ -193,7 +199,10 @@
 - Gemini Robotics 1.5 的 22% 对 44.5% 是长时程 agent 实验的总失败率（报告 Table 1）。
 - ASIMOV-Agentic 的 62.0% → 95.8% 是 ER 2 在单步可行性判断上、随"VLA 训练指令摘要"详细程度（DI0 → DI3）的变化；99% 与 96% 是 Apollo 2 实验室测试中 ER 的人员检测与 VLA 的转入安全姿态，分属两个模型。
 
-**判断的支撑论文**（各行见 [synthesis.csv](synthesis.csv)）
+**判断的支撑论文**（原有主线见 [synthesis.csv](synthesis.csv)，补充评测见 [VLA 综合表](../vla/synthesis.csv)）
+
+- “记忆与多步进度分别测试”：RoboDojo v3 §3.1.1 分设 Memory / Long-Horizon，VLA-REPLICA v1 §4.3 分析重复次数的失败。边界：任务完成或计数失败本身不能定位是记忆表示、语言理解还是动作执行导致；失败归因还需要逐回合证据。
+
 
 - "分工在移动"：技能库——SayCan 第 8 节 → Code as Policies 局限 → Voyager 技能库 → RoboSkill；验证——Inner Monologue Table 3 → EmbodiedSkills 表 5；高层——SayCan（冻结 PaLM）→ Hi Robot（GPT-4o 高层明显更差）→ π0.5。反例：EmbodiedBench 与 MEMORA 仍以冻结的通用大模型为高层。
 - Google → PI 一线：作者列表中 Brian Ichter 出现在 SayCan、Inner Monologue、Code as Policies、LM-Nav、RT-2、π0.5、Hi Robot；Karol Hausman 出现在 SayCan、Inner Monologue、Code as Policies、RT-2、π0.5。
@@ -217,3 +226,9 @@
 - EmbodiedSkills 摘要页与 HTML 版首页列出的作者人数不一致，本页只引用 HTML 版的单位信息。
 - Gemini Robotics 2 安全评测报告的各模型对比图只读了正文文字，图中各模型的柱值没有估读；报告点名的对照模型（Claude Opus 4.8、GPT 5.5）只在一项任务的文字中出现。
 - Gemini Robotics ER 2 没有单独的模型卡；它的"实时视频理解""Gemini Live API 编排"等说法只见于二手报道，未写入。
+
+## 补充参考文献
+
+[1] Chen et al. [RoboDojo，arXiv v3，2026-07-08](https://arxiv.org/html/2607.04434v3)，§3.1.1；[文献卡](../../papers/arxiv-2607.04434/README.md)。
+
+[2] Huang et al. [VLA-REPLICA，arXiv v1，2026-05-20](https://arxiv.org/html/2605.20774v1)，§4.3；[文献卡](../../papers/arxiv-2605.20774/README.md)。

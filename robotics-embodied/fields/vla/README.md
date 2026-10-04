@@ -1,10 +1,10 @@
 # 视觉-语言-动作模型（VLA）
 
-> 状态：领域入门页 · v2（2026-10-04 追加第 7 阶段） · 依据 [synthesis.csv](synthesis.csv)（18 行）与本方向论文、官方材料的原文
+> 状态：领域入门页 · v2（2026-10-04 追加第 7 阶段） · 依据 [synthesis.csv](synthesis.csv)（24 行）与本方向论文、官方材料的原文
 >
 > 速览：
 > 1. VLA 要让一个策略听懂自然语言、在没见过的物体和场景里完成操作。办法是从预训练视觉语言模型出发，再用机器人示教教它输出动作；RT-2 第一次证明网页知识能迁移到动作上，没见过任务的成功率从 RT-1 的 32% 提到 62%。
-> 2. 2023–2026 年的主线是动作怎样表示：逐维分桶的离散 token（RT-2、OpenVLA）在 20 Hz 以上的灵巧任务上学不动、推理慢；π0 换成 flow matching 生成的连续动作块；π0.5 与 Knowledge Insulation 收敛到"训练时用离散 token 保住语言模型，部署时只用连续动作头"。
+> 2. 2023–2026 年的主线是动作怎样表示：逐维分桶的离散 token（RT-2、OpenVLA）在 20 Hz 以上的灵巧任务上学不动、推理慢；π0 换成 flow matching 生成的连续动作块；π0.5 与 Knowledge Insulation 采用"训练时用离散 token 保住语言模型，部署时用连续动作头"；2026 年的 π0-REALFAST 又给出了自回归动作实时部署的另一条路线。
 > 3. 每一代都由后来者写出前作的坑：FAST 指出逐维分桶在高频数据上只会复制上一个 token；OpenVLA-OFT 把 OpenVLA 的 4.2 Hz 提到 109.7 Hz；Knowledge Insulation 指出 π0 的动作头梯度损伤语言跟随；π*0.6 指出纯模仿会累积误差，最多做到示范的水平。
 > 4. `[判断]` Google DeepMind 押注自家最大的 VLM 加云端运行，Physical Intelligence 押注自有数据与连续动作头、并把新信息都写进模型的提示，Stanford/Berkeley 押注完全开放与廉价微调，NVIDIA 押注人形与合成数据；2026 年各家都在扩充"任务条件"（子任务、示教、子目标图、元数据）与上下文长度。2026 年中起，Google DeepMind（Gemini Robotics 2）、NVIDIA（GR00T N1.6/N1.7）、Figure（Helix 02）、Unitree（UnifoLM-WLA-1.0）都把 VLA 推到人形全身；Figure 与 NVIDIA 的官方材料写明行走与平衡由下面一层单独训练的全身控制器负责（第 7 阶段）。
 > 5. 衡量方式从自家机器人上的见过 / 没见过任务，迁移到 LIBERO 仿真（已接近饱和，多家在 97%–98%），再到真实家庭、吞吐量、连续运行小时数和"没见过的任务-机器人组合"；π0.7 在没见过的任务上为 60%–80%，见过的常在 90% 以上。
@@ -71,7 +71,7 @@
 - **双系统与小模型**：NVIDIA 的 [GR00T N1](../../papers/arxiv-2503.14734/README.md) 让 VLM 以 10 Hz、动作 DiT（扩散 Transformer，这里用 flow matching 训练）以 120 Hz 分频运行，用人类视频、仿真、生成视频补真机数据；Hugging Face 的 [SmolVLA](../../papers/arxiv-2506.01844/README.md) 只用 0.45B 参数和社区数据，在 LIBERO 上与 π0 相当，用异步推理让任务完成时间缩短约 30%。
 - **闭源大模型**：Google DeepMind 的 [Gemini Robotics](../../papers/arxiv-2503.20020/README.md) 把骨干放在云端（查询延迟压到 160 ms 以下）、动作解码器放在机器人上，端到端约 250 ms，有效 50 Hz。
 
-做不好的场景：π0-FAST 推理一个 1 秒动作块要约 750 ms，π0 约 100 ms，FAST 作者把推理速度列为局限；KI 指出 750 ms 的延迟会造成动力学失配和轨迹变慢。π0.5 自述在陌生的抽屉把手、难打开的柜门上持续失败，手臂挡住污渍时擦不到，高层推理会分心（放东西时反复开关抽屉），只能处理简单的提示，没有记忆。OpenVLA-OFT 自述 L1 回归学到的是中位数，可能表示不了多峰动作。GR00T N1 后训练只用右手数据后丢失了换手能力。SmolVLA 预训练只有一种机器人，只擅长短时程任务。`[判断]` 2025 年的分化并不是路线之争：π0.5、KI 和后来的 π*0.6、π0.7 都同时保留离散 token 与连续动作头，分歧收敛为"离散 token 用于训练、连续动作头用于部署"。
+做不好的场景：π0-FAST 推理一个 1 秒动作块要约 750 ms，π0 约 100 ms，FAST 作者把推理速度列为局限；KI 指出 750 ms 的延迟会造成动力学失配和轨迹变慢。π0.5 自述在陌生的抽屉把手、难打开的柜门上持续失败，手臂挡住污渍时擦不到，高层推理会分心（放东西时反复开关抽屉），只能处理简单的提示，没有记忆。OpenVLA-OFT 自述 L1 回归学到的是中位数，可能表示不了多峰动作。GR00T N1 后训练只用右手数据后丢失了换手能力。SmolVLA 预训练只有一种机器人，只擅长短时程任务。`[判断]` 2025 年的分化并不是路线之争：π0.5、KI 和后来的 π*0.6、π0.7 都同时保留离散 token 与连续动作头，这一支形成了"离散 token 用于训练、连续动作头用于部署"的分工；2026 年 π0-REALFAST 的自回归部署是另一支，见下文的实时执行问题链。
 
 ### 6 从经验、示教与提示里继续学（2025 年底–2026）
 
@@ -102,6 +102,20 @@
 
 benchmark 的替换就是目标的迁移：2022–2023 年在 Google 自家机器人上分见过 / 没见过任务（RT-1、RT-2）；2023–2024 年转向跨实验室的 BridgeData WidowX 桌面任务（RT-X、Octo、OpenVLA）；2024–2025 年微调比较集中到 LIBERO 仿真（OpenVLA-OFT、SmolVLA、KI），真机比较转向按进度打分的长时程灵巧任务（π0）；2025 年起比的是没见过的真实家庭（π0.5）、吞吐量与连续运行时间（π*0.6）、230 个任务的 A/B 测试（Gemini Robotics 1.5）；2026 年比没见过的任务-机器人组合（π0.7）、RoboTwin 2.0 双臂仿真（X-Tokenizer、InternVLA-A1、Qwen-VLA、Zero-WAM）。2026 年中又多出两种口径：Gemini Robotics 2 按"全身操作 / 多指灵巧 / 夹爪灵巧"三类在人形与双臂上分别报告成功率，并另发一个评测编排器安全决策的 ASIMOV-Agentic 基准；EgoScale 用人类动作预测的验证损失来预测真机表现，评测对象从策略延伸到了数据。
 
+### 动作块之后：怎样一边行动，一边重新计算
+
+连续动作块解决了“一次产出多步动作”，部署还要处理两块之间的衔接。**动作前缀**是机器人在下一次推理完成前已经承诺执行的那段旧动作。新块生成时把这段前缀作为条件，才能同时考虑新观测和正在进行的运动。
+
+- **RTC**（NeurIPS 2025 正式版）把衔接写成补全问题：一边执行旧块，一边生成新块；推理延迟期间的动作固定由旧队列执行，后续重叠区用逐渐减弱的引导维持连贯。代价是每步去噪还要计算引导，增加推理开销。[1]
+- **Training-time RTC**（2025-12，v2）在训练时随机模拟延迟，前缀保持干净、只对后缀加噪并计算损失。它把推理时的额外引导换成训练时学会接续；代价是要调整训练，并选择与部署相符的延迟分布。[2]
+- **π0-REALFAST**（2026-06，v1）保留 FAST 的离散自回归输出，将前后两段分别分词，把旧队列前缀作为输入，再用受限解码（一句话：屏蔽无法在剩余预算内组成合法动作的 token）约束生成。它把“分词覆盖多长时间”也变成调度参数；实验范围是相对静态的单臂桌面任务。[3]
+
+![动作队列与模型推理在同一物理时间轴上如何衔接](../../assets/phase3-expansion/vla-rtc-timeline.svg)
+
+图：原创教学示例。控制周期为 20 ms、推理耗时为 100 ms，则等待期间旧队列继续执行 5 步。新块可用时，接入的是对应此刻以后的后缀；调长动作块增加的是可排队的未来动作，改变新观测进入动作的速度则要看重新推理与接续时刻。RTC 与训练时 RTC 对重叠区的处理不同，图中用三种颜色分开表示。
+
+`[判断]` 动作表示和推理调度是两条相互影响的轴。离散压缩、连续生成、并行回归各解决不同问题；把队列、延迟与接续单独列出，才解释得了为什么相同动作头在不同部署流程下表现不同。两条轴的对照见 [Baseline 图](BASELINES.md#动作表示与执行调度分开选择)。
+
 ## 技术地基
 
 - **视觉语言模型的接口**：视觉编码器把图切成 patch 特征，经投影层接进语言模型的词嵌入空间，与文字排成一个序列。VLA 的骨干就是这样一个模型。[LLaVA 精读](../../../multimodal/papers/llava/reading.md)，视觉编码器的性质见[视觉表征方向](../../../multimodal/fields/visual-representation/README.md)。
@@ -113,7 +127,7 @@ benchmark 的替换就是目标的迁移：2022–2023 年在 Google 自家机�
 
 ## 主要路线与团队偏好
 
-结论：动作表示上，离散与连续两条路线在 2025 年合流为"训练时两者都用"；团队之间更大的差别在于数据从哪里来、模型放在哪里跑、是否开放。
+结论：动作表示上，π0.5、KI 一支在 2025 年形成了"训练时两者都用"的配方；团队之间更大的差别在于数据从哪里来、模型放在哪里跑、是否开放。
 
 | 团队 | `[判断]` 押注 | 代表论文 | 代价与做不好的地方 |
 |---|---|---|---|
@@ -126,7 +140,7 @@ benchmark 的替换就是目标的迁移：2022–2023 年在 Google 自家机�
 | Unitree（2026 年补充） | 开放权重、训练代码与数据的人形基础模型，延续它在运动控制上开源整条流水线的做法 | UnifoLM-VLA-0、UnifoLM-WLA-1.0（官方仓库） | 没有技术报告，README 不给具体数字 |
 | Figure AI（2026 年补充） | 三层系统：语义推理、200 Hz 视觉运动策略、1 kHz 学到的全身控制器；触觉与手掌相机进入策略 | Helix、Helix 02（官方博客） | 只有演示，没有成功率与失败分析 |
 
-`[判断]` 收敛的部分：连续动作块成为默认输出（Octo、π 系列、GR00T、SmolVLA、Qwen-VLA、InternVLA-A1）；离散 token 退到训练信号的位置（π0.5、KI、π*0.6、π0.7、X-Tokenizer 部署时也只用连续 flow 头）；高层子任务或思考进入同一个模型（π0.5、Gemini Robotics 1.5）。分化的部分：骨干在云端还是机载（Google 对其他各家）；本体状态与历史要不要输入（π0.7、RoboTTT 加，Octo、Qwen-VLA 慎用）；数据靠自有真机还是合成与人类视频（Physical Intelligence 对 NVIDIA 与 InternVLA）。
+`[判断]` 本页所列 π 系列及相关连续策略的共同选择：连续动作块成为默认输出（Octo、π 系列、GR00T、SmolVLA、Qwen-VLA、InternVLA-A1）；离散 token 退到训练信号的位置（π0.5、KI、π*0.6、π0.7、X-Tokenizer 部署时也只用连续 flow 头）；高层子任务或思考进入同一个模型（π0.5、Gemini Robotics 1.5）。分化的部分：骨干在云端还是机载（Google 对其他各家）；本体状态与历史要不要输入（π0.7、RoboTTT 加，Octo、Qwen-VLA 慎用）；数据靠自有真机还是合成与人类视频（Physical Intelligence 对 NVIDIA 与 InternVLA）。
 
 `[判断]` 2026 年的补充（第 7 阶段的材料）：Google DeepMind 第三次沿用"ER 模型编排 + VLA 执行 + 多本体 motion transfer"（1.5、2），并新增机载的 On-Device 2，云端与机载两条都在做；Physical Intelligence 继续在同一个 π0.6 底座上加部件（MEM 记忆、RL Token 在线精修、π0.7 提示），仍未开放 π0.6 之后的权重；NVIDIA 第三次押注人类与合成数据（GR00T N1 的数据金字塔、EgoScale 的 2 万小时人类视频、GR00T N1.7 把它放进预训练），并开始用自家的 Cosmos-Reason 当 VLM 骨干；人形公司（Figure、NVIDIA）在 VLA 之下都放了一个单独训练的全身控制器。
 
@@ -139,9 +153,19 @@ benchmark 的替换就是目标的迁移：2022–2023 年在 Google 自家机�
 - **真机长时程**：按进度打分（π0 叠衣满分 4、组装纸箱满分 5）；没见过的真实家庭（π0.5）；吞吐量，即每小时成功次数（π*0.6）；连续运行小时数。
 - **口径问题**：OpenVLA 的 WidowX 部分任务允许 0.5 分；OpenVLA-OFT 的 76.5% → 97.1% 同时换了输入；GR00T N1 仿真取最后 5 个 checkpoint 的最高值；很多论文自己重跑对照模型（Gemini Robotics 复现 π0，SmolVLA、BPP 微调 π0 / π0.5 的设置与原作不同）；π0.7 自述难以判定哪些任务真正没见过；每任务 10 次左右的真机试验，几个百分点的差距常在误差之内（OpenVLA 在 Google 机器人上 85.0% 对 78.3%，作者只称"相近"）。离线 token 准确率与闭环成功率是两回事：OpenVLA 的 int8 量化离线准确率接近，闭环成功率却从 71% 掉到 58%，作者归因于推理变慢。
 
+### 2026 年的补充：把“高分”拆成可复现的能力
+
+三项新评测各补了一个缺口，选择时先看自己要回答哪个问题：
+
+- **能力覆盖与真机接口**：RoboDojo（2026-07，v3）在仿真中分开测泛化、记忆、精度、长程与开放指令，包含 42 个仿真任务和 18 个真机任务。成功率衡量整项完成，进度分衡量做到了哪一步；总分按五类能力等权汇总。真机与仿真任务是互补设计，没有逐项配对。[4]
+- **实验室能否复搭**：VLA-REPLICA（2026-05，v1）用 SO-101 单臂、相机和灯箱标准化场景，并固定摆放与标定流程。10 个域内任务测目标场景适配，8 个域外任务测物体变化与新的重复次数；单一桌面本体限定了它的覆盖范围。[5]
+- **同一模型换条件后怎样**：IndustrialVLA-Bench（2026-09，v1）把 LIBERO 常规成功率、LIBERO-Plus 非语言扰动、LIBERO-Para 同义改写和运行成本分别报告。在三项满足其协议证据要求的模型中，常规均分仅跨 1.36 个百分点，而扰动和同义改写均分分别跨 14.62、23.10 个百分点（原文 §1、§4.6；这是指定检查点的差异，不是架构因果结论）。[6]
+
+`[判断]` 比较目标已经从“谁在熟悉场景多成功几次”扩展成“成功依赖哪些条件、别人能否重做”。前两项改变测试环境与能力覆盖，第三项改变比较与证据口径；它们给现有 LIBERO 分数补上不同的信息。
+
 ## 当前开放问题
 
-- **离散与连续怎样分工？** 现在的做法是离散 token 当训练信号、连续头负责部署，但离散 token 本身应该怎样设计（压缩还是对齐语义）还在变。入口：[FAST](../../papers/arxiv-2501.09747/README.md)、[Knowledge Insulation](../../papers/arxiv-2505.23705/README.md)、[X-Tokenizer](../../papers/arxiv-2606.14752/README.md)。
+- **离散与连续怎样分工？** π0.5、KI 一支把离散 token 当训练信号、连续头负责部署；[π0-REALFAST](../../papers/arxiv-2606.13355/README.md) 则保留自回归部署。动作压缩、语言跟随、推理预算和闭环反应需要一起比较。入口：[FAST](../../papers/arxiv-2501.09747/README.md)、[Knowledge Insulation](../../papers/arxiv-2505.23705/README.md)、[X-Tokenizer](../../papers/arxiv-2606.14752/README.md)。
 - **能不能学会新动作，而不只是新物体、新场景？** RT-2 自述学不到新动作，BPP 写明当前 VLA 的零样本能力主要限于新环境与新物体，ICRT 与 BPP 自己也学不会全新原语，π0.7 的新任务要靠人教练。入口：[π0.7](../../papers/arxiv-2604.15483/README.md)、[Behavior Prompting Policy](../../papers/arxiv-2606.30457/README.md)、[Zero-WAM](../../papers/zero-wam/reading.md)。
 - **真机数据之外的数据能顶多少？** 人类视频、仿真、生成视频在 GR00T N1、Qwen-VLA、InternVLA-A1 里占大头，Gemini Robotics 1.5 把"动作数据以外的可扩展数据源"列为局限。入口：[GR00T N1](../../papers/arxiv-2503.14734/README.md)、[InternVLA-A1](../../papers/arxiv-2601.02456/README.md)、[Qwen-VLA](../../papers/arxiv-2605.30280/README.md)。
 - **怎样从部署经验里自主改进？** π*0.6 仍需人工奖励与重置；仿真中的纯 RL 微调受限于基座能否起步。入口：[π*0.6](../../papers/arxiv-2511.14759/README.md)、[SimpleVLA-RL](../../papers/arxiv-2509.09674/README.md)、[模仿与强化学习方向](../imitation-reinforcement-learning/README.md)。
@@ -167,6 +191,10 @@ benchmark 的替换就是目标的迁移：2022–2023 年在 Google 自家机�
 
 **易误读**
 
+- RTC 的“固定前缀”指推理期间旧队列实际执行的动作已经确定；原算法对生成块的引导是近似的，不能把生成前缀逐值完全一致当作保证（正式版 §3.1–3.2）。图中的 20 ms / 100 ms / 5 步都是示例数值。
+- π0-REALFAST 的延迟约束依赖 token 解码耗时和外部延迟的上界假设；其单臂桌面结果不外推到双臂、腿足或强动态环境（§3.3、§6）。
+- IndustrialVLA-Bench 的名称指被评系统的工业发布背景；任务仍全在 LIBERO 家族仿真内。六个条目只有三个处于 protocol-faithful 状态，其余为近似复现或待验证；运行硬件、精度、动作块长度未统一，延迟表不支持跨模型效率排名（§4.1、§5、App. B–D）。
+
 - RT-2 的"62% 对 32%"是没见过的物体、背景、环境三类的平均（Table 4，数字由表格重建并与均值核对）；见过任务上两者相当（91%–93% 对 92%）。
 - RT-1 原文正文写"超过 200 个任务"，附录 D.1 写 744 条指令；没见过的指令正文写 21 条、附录写 53 条。本页写"700 多条指令"，取 Table 1。
 - OpenVLA-OFT 的 26 倍是 LIBERO 上动作生成吞吐（Table II：4.2 Hz → 109.7 Hz），不是端到端控制频率；Sec. II 把延迟写成 0.07 ms，与 Table II 的秒级数值不一致，按表格。
@@ -181,6 +209,9 @@ benchmark 的替换就是目标的迁移：2022–2023 年在 Google 自家机�
 - MEM 的"15 分钟"是单个回合内的任务长度；推理时视频记忆最多 54 秒，更早的事件只保留在文字摘要里。
 
 **判断的支撑论文**
+
+- “表示与调度分开比较”：RTC 正式版 §3、Training-time RTC v2 §IV–VI、π0-REALFAST v1 §3、§6。前两篇用连续生成，后一篇用自回归解码，却都显式处理已承诺动作；边界是它们的基座与评测并非同一套，不能由此宣布某一表示普遍胜出。
+- “评测增加了条件与复现维度”：RoboDojo v3 §3、VLA-REPLICA v1 §3–5、IndustrialVLA-Bench v1 §2–5。边界：三套评测仍各有受控环境与硬件范围，不能汇成通用机器人能力总分。
 
 - 离散 token 在高频上的坑：FAST Sec. I、IV、VI-B（逐维分桶在 20 Hz 清桌、50 Hz 叠 T 恤上完全没有进展；Fig. 3 的样条实验中采样率升高后只会复制第一个动作）；RT-1 以 3 Hz 控制，FAST Table I 中 5 Hz 的 BridgeV2 每秒只有 35 个 token。边界：OpenVLA-OFT 消融显示，即使在 LIBERO 上，离散换连续也只多 5 个百分点（90.2% → 95.3%），慢的主因是逐 token 解码而非离散本身。
 - 连续动作头损伤 VLM：KI §4、Fig. 2、§6；Gemini Robotics §3.3。反例：π0.5 Sec. V-D 中 π0 训练到 300k 步仍不如 π0.5，但那组比较同时换了数据配方，不是单变量。
@@ -202,7 +233,7 @@ benchmark 的替换就是目标的迁移：2022–2023 年在 Google 自家机�
 
 **未核实 / 待验证**
 
-- 本轮读的是各篇 pdftotext 抽取的全文，图中柱值没有估读；π0、π0.5、π*0.6、π0.7 的大部分逐任务分数只在图中，本页只引正文写出的数字。
+- 原有主线依据此前各篇 pdftotext 全文核对，图中柱值没有估读；π0、π0.5、π*0.6、π0.7 的大部分逐任务分数只在图中，本页只引正文写出的数字。
 - openpi 的开放范围以其 GitHub README 为准（π0、π0-FAST、π0.5 的基础模型权重，π0.5 只支持 flow 头）；π0.6、π0.7 是否另有开放渠道未核实。
 - Gemini Robotics On-Device 只在 Gemini Robotics 1.5 报告中作为对照出现，本页没有单独核实它的官方说明。
 - Qwen-VLA、X-Tokenizer 正文只给出项目链接，权重与数据是否开放未核实。
@@ -210,4 +241,20 @@ benchmark 的替换就是目标的迁移：2022–2023 年在 Google 自家机�
 - GR00T N1.6 的全身控制器 GR00T-WholeBodyControl 是否就是 SONIC，官方博客没有写明；GR00T N1.5、N1.6 没有单独的技术报告，本页只引官方博客与 GitHub。
 - Gemini Robotics 2 没有模型卡或技术报告（只有博客与安全评测报告）；VLA 是否在云端运行未写明。
 - Figure Helix 02、Tesla Optimus 的公开材料都没有成功率；Tesla 本轮只找到二手报道，没有官方技术材料，未写入。
-- 2026 年的新评测（RoboDojo、VLA-REPLICA、IndustrialVLA-Bench 等）只看到检索结果，未打开原文。
+- RoboDojo 的论文固定为 v3，官方仓库 2026-09-16–17 又修正了观测帧与 RGB 通道顺序；重做实验时需同时固定数据、资产及 XPolicyLab 版本（官方要求该修正配合 `bb9a0b5` 或更新提交）。本页不抄录持续变化的排行榜名次。[7]
+
+## 补充参考文献
+
+[1] Black, Galliker, Levine. Real-Time Execution of Action Chunking Flow Policies. [NeurIPS 2025 正式版](https://papers.nips.cc/paper_files/paper/2025/file/300ccb2187dedd4edcc07f7e76d8e553-Paper-Conference.pdf)，§3、§6；[文献卡](../../papers/arxiv-2506.07339/README.md)。
+
+[2] Black et al. Training-Time Action Conditioning for Efficient Real-Time Chunking. [arXiv v2，2025-12-09](https://arxiv.org/html/2512.05964v2)，§III–VI；[文献卡](../../papers/arxiv-2512.05964/README.md)。
+
+[3] Lee et al. Real-Time Execution with Autoregressive Policies. [arXiv v1，2026-06-11](https://arxiv.org/html/2606.13355v1)，§3、§6；[作者项目页](https://oddqueue.github.io/realfast/)；[文献卡](../../papers/arxiv-2606.13355/README.md)。
+
+[4] Chen et al. RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies. [arXiv v3，2026-07-08](https://arxiv.org/html/2607.04434v3)，§3；[文献卡](../../papers/arxiv-2607.04434/README.md)。
+
+[5] Huang et al. VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World Evaluation of Vision-Language-Action Models. [arXiv v1，2026-05-20](https://arxiv.org/html/2605.20774v1)，§3–5；[作者材料页](https://robot-replica.org/vla-replica-materials/index.html)；[文献卡](../../papers/arxiv-2605.20774/README.md)。
+
+[6] Wang et al. IndustrialVLA-Bench: A Traceable Multi-Axis Evaluation of Open Robot Policy Models. [arXiv v1，2026-09-22](https://arxiv.org/html/2609.25562v1)，§1–5、App. B–D；[文献卡](../../papers/arxiv-2609.25562/README.md)。
+
+[7] RoboDojo 官方仓库，[2026-09-16–17 更新说明](https://github.com/robodojo-benchmark/RoboDojo#news)。

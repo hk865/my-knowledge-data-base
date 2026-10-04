@@ -179,3 +179,9 @@
 - [cuVSLAM: CUDA accelerated visual odometry and mapping](arxiv-2506.04359/README.md) · 2025 · 文献卡，暂无独立精读
 - [Robostral Navigate](arxiv-2607.20785/README.md) · 2026 · 文献卡，暂无独立精读
 - [Cosmos Policy: Fine-Tuning Video Models for Visuomotor Control and Planning](arxiv-2601.16163/README.md) · 2026 · 文献卡，暂无独立精读
+- [Real-Time Execution of Action Chunking Flow Policies](arxiv-2506.07339/README.md) · 2025 · 文献卡，暂无独立精读
+- [Training-Time Action Conditioning for Efficient Real-Time Chunking](arxiv-2512.05964/README.md) · 2025 · 文献卡，暂无独立精读
+- [VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World Evaluation of Vision-Language-Action Models](arxiv-2605.20774/README.md) · 2026 · 文献卡，暂无独立精读
+- [Real-Time Execution with Autoregressive Policies](arxiv-2606.13355/README.md) · 2026 · 文献卡，暂无独立精读
+- [RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies](arxiv-2607.04434/README.md) · 2026 · 文献卡，暂无独立精读
+- [IndustrialVLA-Bench: A Traceable Multi-Axis Evaluation of Open Robot Policy Models](arxiv-2609.25562/README.md) · 2026 · 文献卡，暂无独立精读

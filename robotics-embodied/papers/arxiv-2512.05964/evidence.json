@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2512.05964",
+  "checked_on": "2026-10-04",
+  "version": "arXiv v2",
+  "primary_sources": [
+    "https://arxiv.org/abs/2512.05964",
+    "https://arxiv.org/html/2512.05964v2"
+  ],
+  "checked_sections": "v2 §III–VI、Algorithm 1",
+  "claim_map": [
+    {
+      "claim": "推理时 RTC 的引导本身又增加延迟。",
+      "location": "Introduction"
+    },
+    {
+      "claim": "随机模拟延迟，前缀不加噪、后缀计算损失，将动作接续学进策略。",
+      "location": "v2 §III–VI、Algorithm 1"
+    },
+    {
+      "claim": "硬前缀灵活性低于软引导；训练延迟分布需匹配部署",
+      "location": "Limitations / Discussion / protocol sections specified above"
+    }
+  ],
+  "openness_boundary": "原文提供训练/采样代码；完整权重与数据未核实",
+  "not_checked": [
+    "未独立复现",
+    "未运行权重或数据下载",
+    "未审计再分发许可"
+  ]
+}
