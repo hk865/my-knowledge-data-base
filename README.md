@@ -49,7 +49,7 @@
 - [模型训练与多模态背景](perspectives/notes/model-training-multimodal.md)
 - [知识蒸馏的历史文献入口](cross-domain/fields/knowledge-distillation/history.md)
 - [每日短报](daily/)
-- [同步与编辑约定](SYNC.md)
+- [写作规范](STYLE.md) · [维护手册](MAINTAINING.md) · [同步约定](SYNC.md)
 
 本仓库为公开学术知识库，不存放原始聊天记录、凭据或无关个人资料。
 
