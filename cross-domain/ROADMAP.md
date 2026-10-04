@@ -8,7 +8,6 @@
 - [评估与监督可靠性](fields/evaluation/ROADMAP.md)
 - [模型科学](fields/model-science/ROADMAP.md)
 - [知识蒸馏](fields/knowledge-distillation/ROADMAP.md)
-- [生物计算探索](fields/biological-computing/ROADMAP.md)
 
 ## 已有完整技术路线
 

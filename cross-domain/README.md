@@ -9,7 +9,6 @@
 - [Agent](fields/agents/README.md)：从提示词搭的 agent 到在后训练里训练 agent 能力；agent 评测就是 RL 环境，环境奖励什么，模型就长成什么样
 - [评估](fields/evaluation/README.md)：评测本身是什么、为什么会失效（污染、饱和、裁判偏差、排行榜），以及"评测即目标"——能自动打分的评测怎样变成奖励和 RL 环境；[分任务能力图](fields/evaluation/domains.md)按代码、科研、医疗、法律、金融、角色扮演、安全等领域对照
 - [知识蒸馏](fields/knowledge-distillation/README.md)：入门、baseline、路线图、论文各有入口
-- [生物计算探索](fields/biological-computing/README.md)：入门、baseline、路线图、论文各有入口
 
 ## 单篇论文目录
 

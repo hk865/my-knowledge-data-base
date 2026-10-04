@@ -235,11 +235,6 @@
           ]
         },
         {
-          "id": "cross-domain/biological-computing",
-          "label": "生物计算探索",
-          "subtopics": []
-        },
-        {
           "id": "cross-domain/evaluation",
           "label": "评估与监督可靠性",
           "subtopics": [
