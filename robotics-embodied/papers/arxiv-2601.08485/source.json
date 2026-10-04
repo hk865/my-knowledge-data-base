@@ -27,5 +27,12 @@
   "evidence_paths": [],
   "topic_paths": [
     "robotics/control"
-  ]
+  ],
+  "authors": [
+    "Chong Zhang",
+    "Victor Klemm",
+    "Fan Yang",
+    "Marco Hutter"
+  ],
+  "year": 2026
 }

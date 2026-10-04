@@ -27,5 +27,12 @@
   "evidence_paths": [],
   "topic_paths": [
     "robotics/embodied-policies"
-  ]
+  ],
+  "authors": [
+    "Austin Patel",
+    "Ben Pekarek",
+    "Joel Enrique Castro Hernandez",
+    "Shuran Song"
+  ],
+  "year": 2026
 }

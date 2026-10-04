@@ -27,5 +27,15 @@
   "evidence_paths": [],
   "topic_paths": [
     "robotics/control"
-  ]
+  ],
+  "authors": [
+    "Qiayuan Liao",
+    "Takara E. Truong",
+    "Xiaoyu Huang",
+    "Yuman Gao",
+    "Guy Tevet",
+    "Koushil Sreenath",
+    "C. Karen Liu"
+  ],
+  "year": 2025
 }

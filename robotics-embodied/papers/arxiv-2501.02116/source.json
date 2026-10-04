@@ -22,10 +22,31 @@
   },
   "fulltext_local_status": "official_link_only_pending_license_verification",
   "fulltext_local_path": null,
-  "source_record_updated": "2026-10-02",
+  "source_record_updated": "2026-10-04",
   "legacy_paths": [],
   "evidence_paths": [],
   "topic_paths": [
     "robotics/control"
+  ],
+  "year": 2025,
+  "authors": [
+    "Zhaoyuan Gu",
+    "Junheng Li",
+    "Wenlan Shen",
+    "Wenhao Yu",
+    "Zhaoming Xie",
+    "Stephen McCrory",
+    "Xianyi Cheng",
+    "Abdulaziz Shamsah",
+    "Robert Griffin",
+    "C. Karen Liu",
+    "Abderrahmane Kheddar",
+    "Xue Bin Peng",
+    "Yuke Zhu",
+    "Guanya Shi",
+    "Quan Nguyen",
+    "Gordon Cheng",
+    "Huijun Gao",
+    "Ye Zhao"
   ]
 }

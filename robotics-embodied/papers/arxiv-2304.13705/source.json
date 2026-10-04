@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2304.13705",
+  "title": "Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2304.13705",
+  "official_url": "https://arxiv.org/abs/2304.13705",
+  "official_fulltext_url": "https://arxiv.org/pdf/2304.13705",
+  "read_version": "v1",
+  "version_status": "checked_current_html",
+  "reading_depth": "selected_method_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了 §I、§IV-A、§V（Table I–II）、§VI 消融、附录 F；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Tony Z. Zhao",
+    "Vikash Kumar",
+    "Sergey Levine",
+    "Chelsea Finn"
+  ],
+  "year": 2023,
+  "topic_paths": [
+    "robotics/embodied-policies"
+  ],
+  "modality_tags": [
+    "image",
+    "action"
+  ],
+  "task_tags": [
+    "decision"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 HTML 全文：§I、§IV-A、§V、§VI、§VII、附录 F",
+    "mechanism_summary": "Stanford、Meta、UC Berkeley。ALOHA 低成本双臂遥操作 + ACT：动作分块（k=100）、时间集成、CVAE。每任务 50 条示范。真实任务四个基线最终成功率为 0，ACT 装电池 96%、开拉链袋 88%；k=1 为 1%，k=100 为 44%；去掉 CVAE（人类数据）35.3%→2%。失败：穿扎带 20%，拆糖纸 0/10。",
+    "publication_note": "arXiv 页面未列会议",
+    "evidence_boundary": "未复现实验；数字取自论文正文或图注。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2304.13705",
+      "https://arxiv.org/html/2304.13705"
+    ],
+    "source_origin": "phase3_field_page_node",
+    "relation_pages": [
+      "robotics-embodied/fields/imitation-reinforcement-learning/README.md"
+    ]
+  }
+}

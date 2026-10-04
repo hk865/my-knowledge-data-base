@@ -27,7 +27,7 @@
   "topic_paths": [
     "robotics/control"
   ],
-  "source_record_updated": "2026-10-03",
+  "source_record_updated": "2026-10-04",
   "verification_2026_10_03": {
     "reading_scope": "官方身份与摘要核验；未完成全文精读",
     "mechanism_summary": "鲁棒本体感知步态的背景文献；摘要支持复杂地形泛化，不直接验证持续受阻后的脱困或递增惩罚。",
@@ -38,5 +38,13 @@
     ],
     "source_origin": "historical_assistant_recommendation",
     "related_paper": null
-  }
+  },
+  "year": 2020,
+  "authors": [
+    "Joonho Lee",
+    "Jemin Hwangbo",
+    "Lorenz Wellhausen",
+    "Vladlen Koltun",
+    "Marco Hutter"
+  ]
 }

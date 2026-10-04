@@ -40,5 +40,13 @@
   "figure_paths": [
     "figures/convex-mpc.svg"
   ],
-  "figure_format": "original_svg"
+  "figure_format": "original_svg",
+  "authors": [
+    "Jared Di Carlo",
+    "Patrick M. Wensing",
+    "Benjamin Katz",
+    "Gerardo Bledt",
+    "Sangbae Kim"
+  ],
+  "year": 2018
 }

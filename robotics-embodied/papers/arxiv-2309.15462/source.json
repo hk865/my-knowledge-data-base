@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2309.15462",
+  "title": "DTC: Deep Tracking Control",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2309.15462",
+  "official_url": "https://arxiv.org/abs/2309.15462",
+  "official_fulltext_url": "https://arxiv.org/pdf/2309.15462",
+  "read_version": "v1",
+  "version_status": "checked_current_html",
+  "reading_depth": "selected_method_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了摘要、Introduction、Results（图 2–7）、Discussion、Materials and Methods；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Fabian Jenelten",
+    "Junzhe He",
+    "Farbod Farshidian",
+    "Marco Hutter"
+  ],
+  "year": 2024,
+  "topic_paths": [
+    "robotics/control"
+  ],
+  "modality_tags": [
+    "state",
+    "action"
+  ],
+  "task_tags": [
+    "decision"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 HTML 全文：Introduction、Results、Discussion、Methods（Motivation、TAMOLS 接口、奖励、训练环境）",
+    "mechanism_summary": "ETH RSL。训练中并行运行轨迹优化 TAMOLS（触地时重解），给出落脚点与触地关节角；RL 策略跟踪这些目标（不看机身位姿参考），非对称 actor-critic；4096 台、14 天训练。对照 TAMOLS、非线性 MPC、Miki 2022、Rudin 2021 及其在 DTC 环境中重训版。0.1 m 缝隙 10/10，Miki 策略后腿掉入缝隙卡住；感知看不见的缝隙使纯模型方法摔倒。局限：不比统一 RL 更省样本；固定小跑；建图漂移 >0.1 m 后崎岖地形成功率线性下降。",
+    "publication_note": "Science Robotics 9(86): eadh5401, 2024",
+    "evidence_boundary": "未复现实验；数字取自论文正文或图注。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2309.15462",
+      "https://arxiv.org/html/2309.15462"
+    ],
+    "source_origin": "phase3_field_page_node",
+    "relation_pages": [
+      "robotics-embodied/fields/control-locomotion/README.md"
+    ]
+  }
+}

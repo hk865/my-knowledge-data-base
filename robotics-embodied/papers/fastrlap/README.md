@@ -1,26 +1,15 @@
 # FastRLAP: A System for Learning High-Speed Driving via Deep RL and Autonomous Practicing
 
-[领域目录](../../README.md) · [原文与阅读记录](source.json)
+> 状态：文献卡 · 2023 · [原文](https://proceedings.mlr.press/v229/stachowicz23a.html)
 
-- 稳定标识：url:https://proceedings.mlr.press/v229/stachowicz23a.html
-- 类型：论文
-- 年份：2023
-- [官方入口](https://proceedings.mlr.press/v229/stachowicz23a.html)
+[返回机器人与具身目录](../../README.md) · [原文版本与阅读记录](source.json)
 
-这是文献卡，没有独立 reading.md，不计为全文精读；用户是否已读未知。
+- **解决什么**：让小型 RC 车只凭视觉、在真实世界里用强化学习学会激进驾驶，不依赖仿真、专家示范或人工重置。
+- **核心方法**：先用离线 RL（IQL，一句话：只从固定数据集学价值函数和策略、不在线交互的强化学习算法）在其他机器人的大规模导航数据集 RECON 上预训练视觉表征；再从一圈慢速示范起步，用 RLPD（一句话：混合在线数据与少量离线数据、用 critic 集成抑制高估的样本高效离策略 RL）在线学习。有限状态机按检查点轮换目标；碰撞（侧向加速度大）或 3 秒不动时切到脚本恢复策略做"伪重置"，同时给固定的卡住惩罚。不到 20 分钟在线训练即学会多条赛道；去掉伪重置的消融会让车卡住，表现同样差。
+- **为什么在这个库里**：[模仿学习与机器人强化学习](../../fields/imitation-reinforcement-learning/README.md)方向"真实世界免重置训练"的例子；在[四足故障后恢复笔记](../../../perspectives/notes/quadruped-recovery.md)里，它是"卡住后怎样回到可学习状态"的轮式对照。优先级：选读。
 
-## 2026年10月3日核验与阅读线索
+## 身份信息
 
-- 阅读范围：Relevant full-text sections reviewed, not exhaustive deep read
-- 核验版本：官方页面当前版本；未固定论文全文版本
-- 来源关系：本轮从官方出版页单独确认；不是已恢复的历史原URL
-
-固定stuck penalty配合FSM pseudo-reset；移除pseudo-reset的消融会卡住。实证为RC车，不是四足。
-
-RC车实验，不是四足验证；原历史OpenReview ID与该论文关系仍未知，不标为错配或已恢复原链接。
-
-官方核验来源：
-- [https://proceedings.mlr.press/v229/stachowicz23a.html](https://proceedings.mlr.press/v229/stachowicz23a.html)
-- [https://proceedings.mlr.press/v229/stachowicz23a/stachowicz23a.pdf](https://proceedings.mlr.press/v229/stachowicz23a/stachowicz23a.pdf)
-
-未独立复现，不镜像PDF。
+- 稳定标识：url:https://proceedings.mlr.press/v229/stachowicz23a.html（Stachowicz、Shah、Bhorkar、Kostrikov、Levine；第 7 届 CoRL，PMLR 229:3100–3111，2023）
+- 全文：[PMLR PDF](https://proceedings.mlr.press/v229/stachowicz23a/stachowicz23a.pdf)
+- 方向：[模仿学习与机器人强化学习](../../fields/imitation-reinforcement-learning/README.md)（另见[运动控制与腿足运动](../../fields/control-locomotion/README.md)、[导航与规划](../../fields/navigation-planning/README.md)）

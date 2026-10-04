@@ -22,10 +22,19 @@
   },
   "fulltext_local_status": "official_link_only_pending_license_verification",
   "fulltext_local_path": null,
-  "source_record_updated": "2026-10-02",
+  "source_record_updated": "2026-10-04",
   "legacy_paths": [],
   "evidence_paths": [],
   "topic_paths": [
     "robotics/control"
+  ],
+  "year": 2024,
+  "authors": [
+    "Shixin Luo",
+    "Songbo Li",
+    "Ruiqi Yu",
+    "Zhicheng Wang",
+    "Jun Wu",
+    "Qiuguo Zhu"
   ]
 }

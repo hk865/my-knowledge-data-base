@@ -27,5 +27,26 @@
   "evidence_paths": [],
   "topic_paths": [
     "robotics/control"
-  ]
+  ],
+  "authors": [
+    "Weishuai Zeng",
+    "Kangning Yin",
+    "Xiaojie Niu",
+    "Shunlin Lu",
+    "Weixiang Zhong",
+    "Jiahe Chen",
+    "Feiyu Jia",
+    "Xiao Chen",
+    "Zirui Wang",
+    "Furui Xu",
+    "Ming Zhou",
+    "Kailin Li",
+    "Weinan Zhang",
+    "He Wang",
+    "Li Yi",
+    "Dahua Lin",
+    "Jiangmiao Pang",
+    "Jingbo Wang"
+  ],
+  "year": 2026
 }

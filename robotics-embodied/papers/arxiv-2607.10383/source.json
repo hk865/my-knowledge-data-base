@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2607.10383",
+  "title": "ABot-N1: Toward a General Visual Language Navigation Foundation Model",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2607.10383",
+  "official_url": "https://arxiv.org/abs/2607.10383",
+  "official_fulltext_url": "https://arxiv.org/pdf/2607.10383v3",
+  "read_version": "v3",
+  "version_status": "checked_v3",
+  "reading_depth": "selected_method_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了arXiv 摘要页 v3；HTML 全文中的问题陈述、数据规模、结果与 benchmark 说明；作者单位未逐一核对。不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Ruiyan Gong",
+    "Yingnan Guo",
+    "Junjun Hu",
+    "Jintao Kong",
+    "Xiaoxu Leng",
+    "Tianlun Li",
+    "Weize Li",
+    "Fei Liu",
+    "Zhicheng Liu",
+    "Jia Lu",
+    "Minghua Luo",
+    "Chenlin Ming",
+    "Yanfen Shen",
+    "Jiyue Tao",
+    "Zhengbo Wang",
+    "Mingyang Yin",
+    "Minqi Gu",
+    "Zihao Guan",
+    "Wei Guo",
+    "Guoqing Liu",
+    "Huachong Pang",
+    "Menglin Yang",
+    "Zeqian Ye",
+    "Xiaoxiao Geng",
+    "Zhining Gu",
+    "Honglin Han",
+    "Di Jing",
+    "Hongyu Pan",
+    "Mingchao Sun",
+    "Kuan Yang",
+    "Jianfang Zhang",
+    "Yanghong Chen",
+    "Ye He",
+    "Wei Mei",
+    "Jiahao Shi",
+    "Xiangpo Yang",
+    "Yanqing Zhu",
+    "Yang Cai",
+    "Jingjing Ma",
+    "Shihui Su",
+    "Zixiao Tang",
+    "Linbo Zheng",
+    "Zedong Chu",
+    "Xiaolong Wu",
+    "Wenbin Tang",
+    "Mu Xu"
+  ],
+  "year": 2026,
+  "topic_paths": [
+    "robotics/navigation-planning"
+  ],
+  "modality_tags": [
+    "image",
+    "text",
+    "action"
+  ],
+  "task_tags": [
+    "decision"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页 v3；HTML 全文中的问题陈述、数据规模、结果与 benchmark 说明；作者单位未逐一核对。",
+    "evidence_boundary": "未复现实验；数字取自论文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2607.10383",
+      "https://export.arxiv.org/api/query?id_list=2607.10383"
+    ],
+    "source_origin": "phase3_embodied_field_page_synthesis",
+    "field_pages": [
+      "robotics-embodied/fields/navigation-planning/README.md"
+    ]
+  }
+}

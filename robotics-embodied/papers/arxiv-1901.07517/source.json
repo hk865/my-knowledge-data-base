@@ -27,7 +27,7 @@
   "topic_paths": [
     "robotics/control"
   ],
-  "source_record_updated": "2026-10-03",
+  "source_record_updated": "2026-10-04",
   "verification_2026_10_03": {
     "reading_scope": "官方身份与摘要核验；未完成全文精读",
     "mechanism_summary": "跌倒起身恢复：3个行为策略和1个选择器分别训练；与站立受阻后的脱困有差异。摘要报告ANYmal恢复试验，不能外推为当前策略的保证。",
@@ -38,5 +38,11 @@
     ],
     "source_origin": "historical_assistant_recommendation",
     "related_paper": null
-  }
+  },
+  "year": 2019,
+  "authors": [
+    "Joonho Lee",
+    "Jemin Hwangbo",
+    "Marco Hutter"
+  ]
 }

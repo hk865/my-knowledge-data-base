@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2505.23705",
+  "title": "Knowledge Insulating Vision-Language-Action Models: Train Fast, Run Fast, Generalize Better",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2505.23705",
+  "official_url": "https://arxiv.org/abs/2505.23705",
+  "official_fulltext_url": "https://arxiv.org/pdf/2505.23705v1",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。v1 全文文本：摘要、§1–2、§4（π0 与 π0-FAST 的问题）、§5（式 4–6，梯度隔离）、§6（DROID、LIBERO Table 1、语言跟随）、§7、App. A–C。不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Danny Driess",
+    "Jost Tobias Springenberg",
+    "Brian Ichter",
+    "Lili Yu",
+    "Adrian Li-Bell",
+    "Karl Pertsch",
+    "Allen Z. Ren",
+    "Homer Walke",
+    "Quan Vuong",
+    "Lucy Xiaoyang Shi",
+    "Sergey Levine"
+  ],
+  "year": 2025,
+  "topic_paths": [
+    "robotics/embodied-policies"
+  ],
+  "modality_tags": [
+    "text",
+    "image",
+    "action",
+    "state",
+    "multimodal"
+  ],
+  "task_tags": [
+    "decision"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "v1 全文文本：摘要、§1–2、§4（π0 与 π0-FAST 的问题）、§5（式 4–6，梯度隔离）、§6（DROID、LIBERO Table 1、语言跟随）、§7、App. A–C。",
+    "mechanism_summary": "VLM 骨干以 FAST token 交叉熵并与网页数据联合训练；flow matching 动作专家对骨干 K/V 做 stop-gradient；推理只用动作专家。π0 需约 7.5 倍步数达到相近表现（图 6b）；DROID 0.55/0.49/0.45（本文/π0/π0-FAST）。局限：训练计算 +20%，语言跟随仍不完美（§7）。",
+    "evidence_boundary": "未复现实验；数字取自原文正文与表格，图中柱值未估读。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2505.23705",
+      "https://arxiv.org/pdf/2505.23705v1"
+    ],
+    "source_origin": "vla_field_page_phase3",
+    "related_pages": [
+      "robotics-embodied/fields/vla/README.md",
+      "robotics-embodied/fields/vla/BASELINES.md"
+    ]
+  }
+}

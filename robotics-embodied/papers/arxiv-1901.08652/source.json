@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:1901.08652",
+  "title": "Learning agile and dynamic motor skills for legged robots",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-1901.08652",
+  "official_url": "https://arxiv.org/abs/1901.08652",
+  "official_fulltext_url": "https://arxiv.org/pdf/1901.08652",
+  "read_version": "v1",
+  "version_status": "checked_current_html",
+  "reading_depth": "selected_method_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了摘要、Introduction、Results、Discussion、Method（执行器建模、训练设置）；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Jemin Hwangbo",
+    "Joonho Lee",
+    "Alexey Dosovitskiy",
+    "Dario Bellicoso",
+    "Vassilios Tsounis",
+    "Vladlen Koltun",
+    "Marco Hutter"
+  ],
+  "year": 2019,
+  "topic_paths": [
+    "robotics/control"
+  ],
+  "modality_tags": [
+    "state",
+    "action"
+  ],
+  "task_tags": [
+    "decision"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 ar5iv 全文：Introduction、Results（Command-conditioned locomotion、High-speed、Recovery）、Discussion、Method",
+    "mechanism_summary": "ETH RSL 与 Intel。执行器网络（3×32 MLP，输入 t、t−0.01、t−0.02 s 的位置误差与速度，4 分钟 400 Hz 数据）替代理想/解析执行器模型；30 个随机惯量模型；TRPO；ANYmal 实机速度跟踪、1.5 m/s 奔跑（比此前纪录高 25%）、倒地起身。理想/解析执行器模型训练的策略在实机上一步都走不出；执行器网络在策略分布上的 RMS 误差从 0.740 升到 0.966 Nm。局限：每任务人工调代价函数与初始分布（约 2 天/1 周），单网络单一行为。",
+    "publication_note": "Science Robotics 4(26): eaau5872, 2019（arXiv Journal reference）",
+    "evidence_boundary": "未复现实验；数字取自论文正文或图注。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/1901.08652",
+      "https://ar5iv.labs.arxiv.org/html/1901.08652"
+    ],
+    "source_origin": "phase3_field_page_node",
+    "relation_pages": [
+      "robotics-embodied/fields/control-locomotion/README.md"
+    ]
+  }
+}

@@ -27,5 +27,20 @@
   "evidence_paths": [],
   "topic_paths": [
     "robotics/embodied-policies"
-  ]
+  ],
+  "authors": [
+    "Jiawen Yu",
+    "Hairuo Liu",
+    "Qiaojun Yu",
+    "Jieji Ren",
+    "Ce Hao",
+    "Haitong Ding",
+    "Guangyu Huang",
+    "Guofan Huang",
+    "Yan Song",
+    "Panpan Cai",
+    "Cewu Lu",
+    "Wenqiang Zhang"
+  ],
+  "year": 2025
 }

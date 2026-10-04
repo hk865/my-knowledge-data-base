@@ -36,5 +36,13 @@
     "multimodal/world-models",
     "robotics/localization-mapping",
     "robotics/perception"
-  ]
+  ],
+  "authors": [
+    "Carlos Campos",
+    "Richard Elvira",
+    "Juan J. Gómez Rodríguez",
+    "José M. M. Montiel",
+    "Juan D. Tardós"
+  ],
+  "year": 2020
 }

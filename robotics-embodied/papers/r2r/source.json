@@ -33,5 +33,17 @@
   ],
   "topic_paths": [
     "robotics/navigation-planning"
-  ]
+  ],
+  "authors": [
+    "Peter Anderson",
+    "Qi Wu",
+    "Damien Teney",
+    "Jake Bruce",
+    "Mark Johnson",
+    "Niko Sünderhauf",
+    "Ian Reid",
+    "Stephen Gould",
+    "Anton van den Hengel"
+  ],
+  "year": 2017
 }

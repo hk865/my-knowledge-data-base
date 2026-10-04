@@ -28,5 +28,13 @@
   "topic_paths": [
     "robotics/perception",
     "robotics/localization-mapping"
-  ]
+  ],
+  "authors": [
+    "Chuhao Liu",
+    "Ke Wang",
+    "Jieqi Shi",
+    "Zhijian Qiao",
+    "Shaojie Shen"
+  ],
+  "year": 2024
 }

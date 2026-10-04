@@ -27,5 +27,19 @@
   "evidence_paths": [],
   "topic_paths": [
     "robotics/control"
-  ]
+  ],
+  "authors": [
+    "Mingqi Yuan",
+    "Tao Yu",
+    "Wenqi Ge",
+    "Xiuyong Yao",
+    "Huijiang Wang",
+    "Jiayu Chen",
+    "Bo Li",
+    "Wei Zhang",
+    "Wenjun Zeng",
+    "Hua Chen",
+    "Xin Jin"
+  ],
+  "year": 2025
 }

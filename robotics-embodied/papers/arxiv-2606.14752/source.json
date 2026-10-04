@@ -27,5 +27,21 @@
   "evidence_paths": [],
   "topic_paths": [
     "robotics/embodied-policies"
-  ]
+  ],
+  "authors": [
+    "Miracle Kang",
+    "Lights Shi",
+    "Lucy Liang",
+    "Roy Gan",
+    "Dongxiu Liu",
+    "Pushi Zhang",
+    "Sylas Chen",
+    "Shawn Qin",
+    "Yinan Zheng",
+    "Jinliang Zheng",
+    "Hao Wang",
+    "Xianyuan Zhan",
+    "Hang Su"
+  ],
+  "year": 2026
 }

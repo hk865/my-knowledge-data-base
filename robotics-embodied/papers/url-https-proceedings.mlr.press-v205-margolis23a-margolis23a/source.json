@@ -27,5 +27,10 @@
   "evidence_paths": [],
   "topic_paths": [
     "robotics/control"
-  ]
+  ],
+  "authors": [
+    "Gabriel B Margolis",
+    "Pulkit Agrawal"
+  ],
+  "year": 2023
 }

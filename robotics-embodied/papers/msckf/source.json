@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "resource_id": "url:https://www-users.cse.umn.edu/~stergios/papers/ICRA07-MSCKF.pdf",
+  "title": "A Multi-State Constraint Kalman Filter for Vision-aided Inertial Navigation",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/msckf",
+  "official_url": "https://www-users.cse.umn.edu/~stergios/papers/ICRA07-MSCKF.pdf",
+  "official_fulltext_url": "https://www-users.cse.umn.edu/~stergios/papers/ICRA07-MSCKF.pdf",
+  "read_version": "官方 PDF",
+  "version_status": "not_pinned",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了官方 PDF 全文：§I–IV、附录；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Anastasios I. Mourikis",
+    "Stergios I. Roumeliotis"
+  ],
+  "year": 2007,
+  "topic_paths": [
+    "robotics/localization-mapping"
+  ],
+  "modality_tags": [
+    "image",
+    "state"
+  ],
+  "task_tags": [
+    "understanding"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "官方 PDF 全文：§I–IV、附录",
+    "venue": "ICRA 2007（据其他论文的参考文献，PDF 页面未印会议名）",
+    "team": "University of Minnesota",
+    "evidence_boundary": "未复现实验；数字取自论文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://www-users.cse.umn.edu/~stergios/papers/ICRA07-MSCKF.pdf"
+    ],
+    "source_origin": "phase3_embodied_localization_perception",
+    "relation_pages": []
+  }
+}

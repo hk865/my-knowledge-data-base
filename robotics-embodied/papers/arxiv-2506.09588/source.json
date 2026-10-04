@@ -27,5 +27,14 @@
   "evidence_paths": [],
   "topic_paths": [
     "robotics/control"
-  ]
+  ],
+  "authors": [
+    "Junzhe He",
+    "Chong Zhang",
+    "Fabian Jenelten",
+    "Ruben Grandia",
+    "Moritz BÄcher",
+    "Marco Hutter"
+  ],
+  "year": 2025
 }

@@ -27,5 +27,18 @@
   "evidence_paths": [],
   "topic_paths": [
     "robotics/control"
-  ]
+  ],
+  "authors": [
+    "Yinzhao Dong",
+    "Ji Ma",
+    "Yidan Lu",
+    "Jiahui Zhang",
+    "Wanyue Li",
+    "Yeke Chen",
+    "Teng Zhang",
+    "Xuechao Chen",
+    "Zhangguo Yu",
+    "Peng Lu"
+  ],
+  "year": 2026
 }

@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "resource_id": "arxiv:2010.15920",
-  "title": "Recovery RL: Safe Reinforcement Learning With Learned Recovery Zones",
+  "title": "Recovery RL: Safe Reinforcement Learning with Learned Recovery Zones",
   "resource_kind": "paper",
   "canonical_folder": "robotics-embodied/papers/arxiv-2010.15920",
   "official_url": "https://ieeexplore.ieee.org/document/9392290/",
@@ -27,7 +27,7 @@
   "topic_paths": [
     "robotics/control"
   ],
-  "source_record_updated": "2026-10-03",
+  "source_record_updated": "2026-10-04",
   "verification_2026_10_03": {
     "reading_scope": "官方身份与摘要核验；未完成全文精读",
     "mechanism_summary": "任务策略与恢复策略分离，离线约束违例数据帮助学习危险区域；与约束安全相关，但不证明任意障碍卡死均可恢复。",
@@ -39,5 +39,18 @@
     ],
     "source_origin": "historical_assistant_recommendation",
     "related_paper": null
-  }
+  },
+  "year": 2021,
+  "authors": [
+    "Brijen Thananjeyan",
+    "Ashwin Balakrishna",
+    "Suraj Nair",
+    "Michael Luo",
+    "Krishnan Srinivasan",
+    "Minho Hwang",
+    "Joseph E. Gonzalez",
+    "Julian Ibarz",
+    "Chelsea Finn",
+    "Ken Goldberg"
+  ]
 }

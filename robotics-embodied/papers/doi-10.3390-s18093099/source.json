@@ -28,5 +28,13 @@
   "topic_paths": [
     "robotics/perception",
     "robotics/localization-mapping"
-  ]
+  ],
+  "authors": [
+    "Cheng Zhao",
+    "Li Sun",
+    "Pulak Purkait",
+    "Tom Duckett",
+    "Rustam Stolkin"
+  ],
+  "year": 2018
 }

@@ -27,5 +27,13 @@
   "evidence_paths": [],
   "topic_paths": [
     "robotics/localization-mapping"
-  ]
+  ],
+  "authors": [
+    "Abdullah Altawaitan",
+    "Jason Stanley",
+    "Sambaran Ghosal",
+    "Thai Duong",
+    "Nikolay Atanasov"
+  ],
+  "year": 2025
 }

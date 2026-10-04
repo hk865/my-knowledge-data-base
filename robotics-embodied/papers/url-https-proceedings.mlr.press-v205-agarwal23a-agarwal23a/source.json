@@ -26,6 +26,14 @@
   "legacy_paths": [],
   "evidence_paths": [],
   "topic_paths": [
-    "robotics/control"
-  ]
+    "robotics/control",
+    "robotics/perception"
+  ],
+  "authors": [
+    "Ananye Agarwal",
+    "Ashish Kumar",
+    "Jitendra Malik",
+    "Deepak Pathak"
+  ],
+  "year": 2023
 }

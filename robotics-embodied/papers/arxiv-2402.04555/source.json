@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2402.04555",
+  "title": "FM-Fusion: Instance-aware Semantic Mapping Boosted by Vision-Language Foundation Models",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2402.04555",
+  "official_url": "https://arxiv.org/abs/2402.04555",
+  "official_fulltext_url": "https://arxiv.org/pdf/2402.04555v2",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了arXiv HTML v2 全文：§I、方法、实验、运行时、局限；GitHub README；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Chuhao Liu",
+    "Ke Wang",
+    "Jieqi Shi",
+    "Zhijian Qiao",
+    "Shaojie Shen"
+  ],
+  "year": 2024,
+  "topic_paths": [
+    "robotics/perception",
+    "robotics/localization-mapping"
+  ],
+  "modality_tags": [
+    "image",
+    "multimodal"
+  ],
+  "task_tags": [
+    "understanding"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv HTML v2 全文：§I、方法、实验、运行时、局限；GitHub README",
+    "venue": "IEEE RA-L vol. 9, no. 3, 2024",
+    "team": "HKUST、长安大学",
+    "evidence_boundary": "未复现实验；数字取自论文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2402.04555",
+      "https://arxiv.org/pdf/2402.04555v2"
+    ],
+    "source_origin": "phase3_embodied_localization_perception",
+    "relation_pages": []
+  }
+}

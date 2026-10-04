@@ -25,9 +25,10 @@
   "legacy_paths": [],
   "evidence_paths": [],
   "topic_paths": [
-    "robotics/control"
+    "robotics/control",
+    "robotics/perception"
   ],
-  "source_record_updated": "2026-10-03",
+  "source_record_updated": "2026-10-04",
   "verification_2026_10_03": {
     "reading_scope": "官方身份与摘要核验；未完成全文精读",
     "mechanism_summary": "循环注意力编码器融合内外感知，提高自然环境鲁棒性；适合检查观测缺失假设，并非持续卡死专项恢复方案。",
@@ -38,5 +39,14 @@
     ],
     "source_origin": "historical_assistant_recommendation",
     "related_paper": null
-  }
+  },
+  "year": 2022,
+  "authors": [
+    "Takahiro Miki",
+    "Joonho Lee",
+    "Jemin Hwangbo",
+    "Lorenz Wellhausen",
+    "Vladlen Koltun",
+    "Marco Hutter"
+  ]
 }

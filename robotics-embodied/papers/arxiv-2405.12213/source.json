@@ -22,10 +22,32 @@
   },
   "fulltext_local_status": "official_link_only_pending_license_verification",
   "fulltext_local_path": null,
-  "source_record_updated": "2026-10-02",
+  "source_record_updated": "2026-10-04",
   "legacy_paths": [],
   "evidence_paths": [],
   "topic_paths": [
     "robotics/embodied-policies"
+  ],
+  "year": 2024,
+  "authors": [
+    "Octo Model Team",
+    "Dibya Ghosh",
+    "Homer Walke",
+    "Karl Pertsch",
+    "Kevin Black",
+    "Oier Mees",
+    "Sudeep Dasari",
+    "Joey Hejna",
+    "Tobias Kreiman",
+    "Charles Xu",
+    "Jianlan Luo",
+    "You Liang Tan",
+    "Lawrence Yunliang Chen",
+    "Pannag Sanketi",
+    "Quan Vuong",
+    "Ted Xiao",
+    "Dorsa Sadigh",
+    "Chelsea Finn",
+    "Sergey Levine"
   ]
 }

@@ -35,5 +35,10 @@
   "topic_paths": [
     "robotics/control",
     "robotics/navigation-planning"
-  ]
+  ],
+  "authors": [
+    "Sertac Karaman",
+    "Emilio Frazzoli"
+  ],
+  "year": 2011
 }

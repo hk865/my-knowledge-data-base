@@ -36,5 +36,9 @@
     "robotics/control",
     "robotics/localization-mapping",
     "robotics/perception"
-  ]
+  ],
+  "authors": [
+    "Joan Solà"
+  ],
+  "year": 2017
 }

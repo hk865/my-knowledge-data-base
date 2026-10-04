@@ -30,5 +30,20 @@
   "topic_paths": [
     "robotics/embodied-agents",
     "cross-domain/agents"
-  ]
+  ],
+  "authors": [
+    "Xiaolin Zhou",
+    "Liu Liu",
+    "Tingyang Xiao",
+    "Wei Feng",
+    "Fa Fu",
+    "Xinrui Meng",
+    "Xinjie Wang",
+    "Jialiang Han",
+    "Boyang Yu",
+    "Yun Du",
+    "Wei Sui",
+    "Zhizhong Su"
+  ],
+  "year": 2026
 }

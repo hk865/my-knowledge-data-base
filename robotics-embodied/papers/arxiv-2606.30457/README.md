@@ -1,20 +1,15 @@
 # Behavior Prompting Policy: Demonstrations as Prompts for Manipulation
 
-[返回机器人与具身目录](../../README.md) · [原文与阅读记录](source.json)
+> 状态：文献卡 · 2026 · [原文](https://arxiv.org/abs/2606.30457)
 
-- 稳定标识：arxiv:2606.30457
-- 年份：2026
-- [官方原文页面](https://arxiv.org/abs/2606.30457)
-- [官方全文入口](https://arxiv.org/pdf/2606.30457)
-- 阅读版本：未固定版本；请核对官方版本记录
-- 方向：robotics/embodied-policies
+[返回机器人与具身目录](../../README.md) · [原文版本与阅读记录](source.json)
 
-## 阅读内容与边界
+- **解决什么**：让机器人在推理时只凭一段人类示范（称为行为提示）就做新任务，不为新任务付出微调成本。
+- **核心方法**：以最接近的前作 [ICRT](../arxiv-2408.15980/README.md)（自回归的上下文视觉运动策略）为参照，提出上下文视觉运动结构 BPP，把行为提示和当前观测翻译成机器人动作；作者发现任务多样性是提示能力的主要来源，为此做了手持采集接口 iPhUMI 收集多样数据，并提出 DrawAnything、LIBERO-Gen 两个测试时泛化基准。在 DrawAnything 未见图形上误差比 ICRT 降低 33.3%。
+- **为什么在这个库里**：[视觉语言动作模型](../../fields/vla/README.md)与[模仿学习与机器人强化学习](../../fields/imitation-reinforcement-learning/README.md)交界处"任务怎样指定"的一条路线：用示范而不是语言指定任务，与 [Zero-WAM](../zero-wam/README.md)（用人类视频做上下文）同属上下文模仿。优先级：存档。
 
-这是文献卡，目前没有该论文的独立精读正文。标题、标识或摘要层面的核验不等于全文阅读。
+## 身份信息
 
-本目录只有文献卡与原文元数据，没有生成 reading.md，也没有把元数据卡计为精读。
-
-## 原文保存与许可
-
-当前以官方原文链接为入口。本地PDF是否保存、对应版本和可再分发许可，以 [source.json](source.json) 为准；没有明确许可时不把第三方论文镜像到公开仓库。
+- 稳定标识：arxiv:2606.30457（Patel、Pekarek、Castro Hernandez、Song；v1，2026-06）
+- 全文：[arXiv PDF](https://arxiv.org/pdf/2606.30457) · 项目页：[behavior-prompting.github.io](https://behavior-prompting.github.io/)
+- 方向：[视觉语言动作模型](../../fields/vla/README.md)（另见[模仿学习与机器人强化学习](../../fields/imitation-reinforcement-learning/README.md)）

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2510.03342",
+  "title": "Gemini Robotics 1.5: Pushing the Frontier of Generalist Robots with Advanced Embodied Reasoning, Thinking, and Motion Transfer",
+  "resource_kind": "official_technical_report",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2510.03342",
+  "official_url": "https://arxiv.org/abs/2510.03342",
+  "official_fulltext_url": "https://arxiv.org/pdf/2510.03342v3",
+  "read_version": "v3",
+  "version_status": "checked_v3",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。v3 全文文本：§1–2（模型分工、thinking、Motion Transfer）、§3（230 任务基准、跨本体、thinking 消融）、§4（ER 1.5）、§5（agent，Table 1）、§6–7、App. B、模型卡。不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Gemini Robotics Team (Google DeepMind)"
+  ],
+  "year": 2025,
+  "topic_paths": [
+    "robotics/embodied-policies"
+  ],
+  "modality_tags": [
+    "text",
+    "image",
+    "action",
+    "state",
+    "multimodal"
+  ],
+  "task_tags": [
+    "understanding",
+    "decision"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "v3 全文文本：§1–2（模型分工、thinking、Motion Transfer）、§3（230 任务基准、跨本体、thinking 消融）、§4（ER 1.5）、§5（agent，Table 1）、§6–7、App. B、模型卡。",
+    "mechanism_summary": "GR 1.5（VLA）输出动作前先写自然语言思考；Motion Transfer 使一个 checkpoint 控制 ALOHA、双臂 Franka、Apollo；GR-ER 1.5 作编排器。agent 总失败率 22% 对 Gemini 2.5 Flash 编排 44.5%（Table 1）。局限：灵巧度与上一代持平（§7）。报告未写参数量、动作表示、延迟。",
+    "evidence_boundary": "未复现实验；数字取自原文正文与表格，图中柱值未估读。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2510.03342",
+      "https://arxiv.org/pdf/2510.03342v3"
+    ],
+    "source_origin": "vla_field_page_phase3",
+    "related_pages": [
+      "robotics-embodied/fields/vla/README.md",
+      "robotics-embodied/fields/vla/BASELINES.md"
+    ]
+  }
+}

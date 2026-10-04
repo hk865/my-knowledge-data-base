@@ -1,25 +1,25 @@
 # Diffusion Policy: Visuomotor Policy Learning via Action Diffusion
 
-[返回机器人与具身目录](../../README.md) · [原文与阅读记录](source.json)
+> 状态：逐步教学版 · 2023 · [原文](https://arxiv.org/abs/2303.04137)
 
-- 稳定标识：arxiv:2303.04137
-- 年份：2023
-- [官方原文页面](https://arxiv.org/abs/2303.04137)
-- [官方全文入口](https://arxiv.org/pdf/2303.04137v5)
-- 阅读版本：v5
-- 方向：robotics/embodied-policies
+[返回机器人与具身目录](../../README.md)
 
-## 阅读内容与边界
+- **解决什么**：从人类示范学视觉运动策略时，同一画面下示范常有几种都正确的做法（多峰）；回归会把它们平均成一个错误动作，逐步独立采样又会在两种做法之间来回跳。
+- **核心方法**：把策略写成以观测为条件的去噪扩散过程：从噪声出发逐步去噪，生成一整段未来动作，再滚动执行（预测一段、只执行前几步、然后重新预测）。相对显式的多峰策略 LSTM-GMM（输出高斯混合）、BET（离散行为类别加修正量）和隐式能量策略 IBC（给观测—动作对打能量分，再搜索低能量动作），在 4 个操作基准的 12 个任务上平均提升 46.9%。
+- **为什么在这个库里**：[模仿学习与机器人强化学习](../../fields/imitation-reinforcement-learning/README.md)方向的生成式策略基线，也是[视觉语言动作模型](../../fields/vla/README.md)方向"动作头 = 扩散 / 流匹配"一格的源头，[π0](../arxiv-2410.24164/README.md) 的流匹配动作专家沿这条路线。优先级：必读。
 
-本篇保留现有技术精读，范围与残余边界见正文和证据档案；未独立复现。
+## 阅读入口
 
-- [打开完整逐步教学版](reading.md)
-- [本篇图解与说明](figures/README.md)
+- [逐步教学版](reading.md)
+- [图解与说明](figures/README.md)
+- [原文版本与阅读记录](source.json)
 
-## 可选的阅读顺序
+## 阅读顺序
 
-[Denoising Diffusion Probabilistic Models](../../../multimodal/papers/ddpm/README.md) → 本篇。这个顺序是教学建议，不表示论文之间的直接历史继承。
+教学顺序：[DDPM](../../../multimodal/papers/ddpm/README.md)（扩散模型怎样从噪声生成数据）→ 本篇。
 
-## 原文保存与许可
+## 身份信息
 
-本篇所读版本的arXiv授权为non-exclusive发布许可；该许可未授予本库公开镜像论文的权限，因此只提供官方全文入口。本地PDF是否保存、对应版本和可再分发许可，以 [source.json](source.json) 为准；没有明确许可时不把第三方论文镜像到公开仓库。
+- 稳定标识：arxiv:2303.04137（Chi、Xu、Feng、Cousineau、Du、Burchfiel、Tedrake、Song；RSS 2023，v5 为期刊扩展版，2024-03）
+- 全文：[arXiv PDF v5](https://arxiv.org/pdf/2303.04137v5)
+- 方向：[模仿学习与机器人强化学习](../../fields/imitation-reinforcement-learning/README.md)（另见[视觉语言动作模型](../../fields/vla/README.md)）

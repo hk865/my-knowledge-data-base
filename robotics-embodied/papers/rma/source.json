@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "resource_id": "arxiv:2107.04034",
-  "title": "RMA Rapid Motor Adaptation for Legged Robots",
+  "title": "RMA: Rapid Motor Adaptation for Legged Robots",
   "resource_kind": "paper",
   "canonical_folder": "robotics-embodied/papers/rma",
   "official_url": "https://arxiv.org/abs/2107.04034",
@@ -33,5 +33,12 @@
   ],
   "topic_paths": [
     "robotics/control"
-  ]
+  ],
+  "authors": [
+    "Ashish Kumar",
+    "Zipeng Fu",
+    "Deepak Pathak",
+    "Jitendra Malik"
+  ],
+  "year": 2021
 }

@@ -27,5 +27,19 @@
   "evidence_paths": [],
   "topic_paths": [
     "robotics/embodied-policies"
-  ]
+  ],
+  "authors": [
+    "Yunfan Jiang",
+    "Yevgen Chebotar",
+    "Ruijie Zheng",
+    "Fengyuan Hu",
+    "Yunhao Ge",
+    "Jimmy Wu",
+    "Tianyuan Dai",
+    "Scott Reed",
+    "Li Fei-Fei",
+    "Yuke Zhu",
+    "Linxi \"Jim\" Fan"
+  ],
+  "year": 2026
 }

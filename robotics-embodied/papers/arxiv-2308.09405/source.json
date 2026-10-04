@@ -27,7 +27,7 @@
   "topic_paths": [
     "robotics/control"
   ],
-  "source_record_updated": "2026-10-03",
+  "source_record_updated": "2026-10-04",
   "verification_2026_10_03": {
     "reading_scope": "官方身份与摘要核验；未完成全文精读",
     "mechanism_summary": "分位数回归分布价值与风险扭曲，实机Aliengo；低概率高风险鲁棒性相关，不等价于增加卡死惩罚。",
@@ -38,5 +38,17 @@
     ],
     "source_origin": "historical_assistant_recommendation",
     "related_paper": null
-  }
+  },
+  "year": 2023,
+  "authors": [
+    "Jiyuan Shi",
+    "Chenjia Bai",
+    "Haoran He",
+    "Lei Han",
+    "Dong Wang",
+    "Bin Zhao",
+    "Mingguo Zhao",
+    "Xiu Li",
+    "Xuelong Li"
+  ]
 }

@@ -27,5 +27,13 @@
   "evidence_paths": [],
   "topic_paths": [
     "robotics/control"
-  ]
+  ],
+  "authors": [
+    "Joao Pedro Araujo",
+    "Yanjie Ze",
+    "Pei Xu",
+    "Jiajun Wu",
+    "C. Karen Liu"
+  ],
+  "year": 2025
 }

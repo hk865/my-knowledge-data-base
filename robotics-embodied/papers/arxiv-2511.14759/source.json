@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2511.14759",
+  "title": "π*0.6: a VLA That Learns From Experience",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2511.14759",
+  "official_url": "https://arxiv.org/abs/2511.14759",
+  "official_fulltext_url": "https://arxiv.org/pdf/2511.14759",
+  "read_version": "v2",
+  "version_status": "checked_current_html",
+  "reading_depth": "selected_method_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了摘要、§II、§IV-A–C、§VI-B–C1、图 7–8、§VII；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": ["Physical Intelligence", "Ali Amin", "Raichelle Aniceto", "Ashwin Balakrishna", "Kevin Black", "Chelsea Finn", "Karol Hausman"],
+  "authors_note": "作者署名 Physical Intelligence 加 56 人，此处只列前几位与部分作者；完整名单见原文。",
+  "year": 2025,
+  "topic_paths": [
+    "robotics/embodied-policies"
+  ],
+  "modality_tags": ["image", "text", "action"],
+  "task_tags": ["decision"],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页（2025-11-18 提交，11-19 修订）与 HTML 全文选段：§II、§IV-A–C、§VI-B–C1、图 7–8、§VII",
+    "mechanism_summary": "RECAP：带结果标签的回合训练多任务分布式价值函数（预测剩余步数）；按优势二值化得到改进指示，作为策略的条件输入；数据为示范、自主执行与专家遥操作纠正。对照：π0.5、π0.6 纯监督、离线 RL + SFT、AWR、PPO。多样衣物折叠与意式咖啡上相对离线 RL + SFT 吞吐量翻倍以上、失败率减半以上（§VI-C1）。局限（§VII）：依赖人工标签、介入与重置；探索基本贪心；分轮离线更新。",
+    "evidence_boundary": "未复现实验；数字取自论文正文与图注。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": ["https://arxiv.org/abs/2511.14759", "https://arxiv.org/html/2511.14759"],
+    "source_origin": "phase3_field_page_node",
+    "relation_pages": ["robotics-embodied/fields/imitation-reinforcement-learning/README.md"]
+  }
+}

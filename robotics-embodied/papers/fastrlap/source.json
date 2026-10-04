@@ -40,5 +40,13 @@
     ],
     "source_origin": "official_related_discovery_2026_10_03",
     "related_unresolved_original_url": "https://openreview.net/pdf?id=z3eGhFTTaQ"
-  }
+  },
+  "authors": [
+    "Kyle Stachowicz",
+    "Dhruv Shah",
+    "Arjun Bhorkar",
+    "Ilya Kostrikov",
+    "Sergey Levine"
+  ],
+  "year": 2023
 }
