@@ -5,9 +5,9 @@
 ## 已取得原始来源的条目
 
 - [Model Compression](https://www.cs.cornell.edu/~caruana/compression.kdd06.pdf)，2006；来源角色：助手引用；阅读状态：待全文教学精读
-- [Do Deep Nets Really Need to be Deep?](https://arxiv.org/abs/1312.6184)，2013；来源角色：助手引用；阅读状态：待全文教学精读
-- [FitNets: Hints for Thin Deep Nets](https://arxiv.org/abs/1412.6550)，2014；来源角色：助手引用；阅读状态：待全文教学精读
-- [Distilling the Knowledge in a Neural Network](https://arxiv.org/abs/1503.02531)，2015；来源角色：助手引用；阅读状态：待全文教学精读
+- [Do Deep Nets Really Need to be Deep?](../../papers/arxiv-1312.6184/README.md)，2013；来源角色：助手引用；阅读状态：待全文教学精读
+- [FitNets: Hints for Thin Deep Nets](../../papers/arxiv-1412.6550/README.md)，2014；来源角色：助手引用；阅读状态：待全文教学精读
+- [Distilling the Knowledge in a Neural Network](../../papers/arxiv-1503.02531/README.md)，2015；来源角色：助手引用；阅读状态：待全文教学精读
 
 ## 待核验与历史问题
 

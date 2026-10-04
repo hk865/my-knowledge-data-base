@@ -1,18 +1,62 @@
-# 评估与监督可靠性：Baseline与对照阅读
+# 评估的基线
 
-[回到入门](README.md) · [阅读路线](ROADMAP.md) · [全部文献](PAPERS.md)
+[回到入门](README.md) · [阅读路线](ROADMAP.md) · [全部文献](PAPERS.md) · [综合表](synthesis.csv)
 
-这些条目用于建立问题、机制或评估的参照。跨方向辅助阅读不是对本方向的完整覆盖，也不代表这些方法在所有任务上都构成可直接比较的实验baseline。
+## 基线是谁、为什么是它
 
-## llm-judge
+评估方向有三条基线，各自定义了一种"怎样判分"，后来的评测几乎都是在其中一条上换部件：
 
-[Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena](../../papers/llm-judge/README.md)
+- **[MMLU](../../papers/arxiv-2009.03300/README.md)（2020，UC Berkeley）：静态选择题。** 57 个学科、14,079 道测试题，只在 zero-/few-shot 下评测，按选项是否匹配判分。它定义了"用一套公开题测预训练知识"的接口：题目固定、判分零成本、任何人可复现。
+- **[MT-Bench 与 Chatbot Arena](../../papers/llm-judge/README.md)（2023，LMSYS）：模型裁判与成对人评。** 80 道多轮开放题由 GPT-4 打分或两两比较；Arena 让用户提问、对两个匿名模型投票。它定义了"没有标准答案时由裁判判分"的接口，并给出检验裁判的办法（与人类比一致率、交换顺序测位置偏差）。
+- **[SWE-bench](../../papers/arxiv-2310.06770/README.md)（2023，Princeton）：执行判分。** 真实仓库的 issue，用修复 PR 带来的单元测试判定。它定义了"让模型在环境中动手、用程序检查结果"的接口，也是代码智能体评测与 RL 训练环境的原型。
 
-以人类偏好对照检查LLM评审可靠性与位置等偏差，区分自动评分与真实质量。
+三条基线对应后训练的三类奖励：规则（选项匹配、程序检查）、模型裁判（奖励模型）、环境中的验证器（见[入门页"评测怎样进入训练"](README.md#评测怎样进入训练)）。
 
-## test-time-compute
+## 基线的结构拆分
 
-[Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters](../../../llm/papers/test-time-compute/README.md)
+一个评测可以拆成五个能单独替换的部件：
 
-以验证器搜索、响应修订、best-of-N和难度条件预算分配建立推理时计算可比较基线。
+| 部件 | 在 MMLU 中 | 在 MT-Bench / Arena 中 | 在 SWE-bench 中 |
+|---|---|---|---|
+| 题目来源 | 公开的考试题，一次性收集 | 研究者写的 80 题 / 用户实时提问 | 公开 GitHub 仓库的已修复 issue |
+| 题目形式 | 四选一 | 多轮开放式回答 | 给代码库与 issue，产出补丁 |
+| 接入方式 | few-shot 提示 | 对话 | 检索或智能体脚手架 |
+| 判分器 | 选项匹配 | GPT-4 裁判 / 众包投票 | fail-to-pass 与回归测试 |
+| 汇总与发布 | 平均准确率；题目全部公开 | 平均分、胜率、Bradley–Terry 排名；题目公开 | 解决率；题目与测试公开（测试不给模型看） |
 
+## 后续工作在改哪个部件
+
+| 部件 | 改法 | 代表 | 改进了什么 / 付出了什么 |
+|---|---|---|---|
+| 题目来源 | 重新出一套同分布的题，不公开 | [GSM1k](../../papers/arxiv-2405.00332/README.md) | 量出污染落差（最多 8 个百分点）/ 只能近似同分布，外部暂时无法复核 |
+| 题目来源 | 按发布日期滚动更新，只用训练截止之后的题 | [LiveCodeBench](../../papers/arxiv-2403.07974/README.md)、[LiveBench](../../papers/arxiv-2406.19314/README.md) | 抗污染 / 越新的模型可用题越少，需要持续维护 |
+| 题目来源 | 专家出题，并用当前最强模型筛掉它们答得出的题 | [GPQA](../../papers/arxiv-2311.12022/README.md)、[HLE](../../papers/arxiv-2501.14249/README.md) | 拉开前沿模型的差距 / 分数被构造压低；GPQA 只有 448 题，统计功效低 |
+| 题目来源 | 保留私有集或延迟公开 | HLE、LiveBench、[OpenAI 2026](../../papers/openai-swe-bench-verified-retired/README.md) | 能检查过拟合 / 外部复核依赖出题方 |
+| 题目形式 | 选项从 4 个扩到 10 个，加推理题 | [MMLU-Pro](../../papers/arxiv-2406.01574/README.md) | 降低猜中率与提示敏感度（波动 4%–5% → 2%）/ 仍是选择题 |
+| 题目形式 | 只出能被程序检查的指令 | [IFEval](../../papers/arxiv-2311.07911/README.md) | 指令遵循可客观判分 / 因此也能直接被训练，Tülu 3 发现各模型过拟合它的 25 类约束 |
+| 接入方式 | 统一提示与场景，所有模型同条件重测 | [HELM](../../papers/arxiv-2211.09110/README.md) | 覆盖率从 17.9% 到 96.0% / 结论依赖提示这一种适配方式 |
+| 接入方式 | 给模型一套操作仓库的工具 | [SWE-agent](../../../llm/papers/arxiv-2405.15793/README.md) | SWE-bench pass@1 到 12.5% / 分数依赖脚手架，同一模型可差十倍 |
+| 判分器 | 回归掉裁判对长度的偏好 | [AlpacaEval-LC](../../papers/arxiv-2404.04475/README.md) | 详略操纵下的胜率波动大幅缩小，与 Arena 相关 0.94 → 0.98 / 只修了长度一个变量 |
+| 判分器 | 弃用 LLM 裁判，只用客观答案 | LiveBench | 不受风格偏差影响 / 开放式任务没法测 |
+| 判分器 | 人工复核单元测试与 issue 描述 | [SWE-bench Verified](../../papers/openai-swe-bench-verified/README.md) | 剔除 68.3% 有问题的样本，GPT-4o 16% → 33.2% / 两年后难题中仍有 59.4% 判分有缺陷 |
+| 汇总与发布 | 审计排行榜的提交、抽样与下架政策 | [The Leaderboard Illusion](../../papers/arxiv-2504.20879/README.md) | 揭示 best-of-N 私下测试与数据不对称 / 只能用公开与抓取数据 |
+| 汇总与发布 | 检验模型是否记住了测试集的顺序 | [Oren 等](../../papers/arxiv-2310.17623/README.md) | 有误报率保证的污染证明 / 只管逐字记忆 |
+
+`[判断]` 改动集中在"题目来源"和"判分器"两个部件：前者对付污染与饱和，后者对付捷径与裁判偏差。这两个部件也是被训练直接利用的部件——题目会进入训练数据，判分器会变成奖励。
+
+## 批注
+
+**易误读**
+
+- SWE-agent 的 12.5% 是原版 SWE-bench 全集上的 pass@1，与 Verified 上的分数不可直接比较。
+- MMLU-Pro 的"波动 4%–5% → 2%"是 24 种提示风格下同一模型的分数波动，不是模型之间的差距。
+
+**与其他论文的关联**
+
+- 判分器与奖励的对应、各部件在训练中被怎样利用，见[入门页](README.md)"评测怎样进入训练"与 [RL 方向](../../../llm/fields/posttraining/rl/README.md)。
+- 各领域评测（角色扮演、安全、代码规范、医疗、法律等）在这张表的哪个部件上做了改动，见[各领域的评测](domains.md)。
+- 智能体评测把"接入方式"换成交互环境，见 [Agent 方向](../agents/README.md)。
+
+**未核实 / 待验证**
+
+- SWE-agent 的数字取自本库[文献卡](../../../llm/papers/arxiv-2405.15793/README.md)，本轮没有重新打开原文。

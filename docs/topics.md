@@ -29,7 +29,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 ## 大语言模型
 
-### 预训练（41）
+### 预训练（43）
 
 细分：训练目标与规模规律；数据选择与混合；课程与持续预训练；数据质量与配比；训练目标与监督位置；长上下文课程
 
@@ -74,8 +74,10 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Qwen3 Technical Report](paper-catalog.md#p332)
 - [DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models](paper-catalog.md#p334)
 - [DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression](paper-catalog.md#p335)
+- [Measuring Massive Multitask Language Understanding](paper-catalog.md#p396)
+- [Evaluating Large Language Models Trained on Code](paper-catalog.md#p397)
 
-### 后训练 监督微调（22）
+### 后训练 监督微调（25）
 
 细分：指令与示范数据；轨迹监督与任务适配
 
@@ -101,8 +103,11 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Tulu 3: Pushing Frontiers in Open Language Model Post-Training](paper-catalog.md#p322)
 - [SFT Memorizes, RL Generalizes: A Comparative Study of Foundation Model Post-training](paper-catalog.md#p326)
 - [Qwen3 Technical Report](paper-catalog.md#p332)
+- [Toolformer: Language Models Can Teach Themselves to Use Tools](paper-catalog.md#p400)
+- [Instruction-Following Evaluation for Large Language Models](paper-catalog.md#p407)
+- [Training Software Engineering Agents and Verifiers with SWE-Gym](paper-catalog.md#p424)
 
-### 后训练 偏好学习（22）
+### 后训练 偏好学习（28）
 
 细分：偏好数据与奖励模型；直接偏好优化
 
@@ -128,8 +133,14 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [SimPO: Simple Preference Optimization with a Reference-Free Reward](paper-catalog.md#p318)
 - [The Llama 3 Herd of Models](paper-catalog.md#p319)
 - [Tulu 3: Pushing Frontiers in Open Language Model Post-Training](paper-catalog.md#p322)
+- [XSTest: A Test Suite for Identifying Exaggerated Safety Behaviours in Large Language Models](paper-catalog.md#p403)
+- [CharacterEval: A Chinese Benchmark for Role-Playing Conversational Agent Evaluation](paper-catalog.md#p411)
+- [HarmBench: A Standardized Evaluation Framework for Automated Red Teaming and Robust Refusal](paper-catalog.md#p412)
+- [Length-Controlled AlpacaEval: A Simple Way to Debias Automatic Evaluators](paper-catalog.md#p415)
+- [LLM Critics Help Catch LLM Bugs](paper-catalog.md#p421)
+- [The Leaderboard Illusion](paper-catalog.md#p429)
 
-### 后训练 强化学习（28）
+### 后训练 强化学习（37）
 
 细分：策略优化算法；结果与过程奖励；轨迹采样与数据回流；奖励与验证器；长轨迹信用分配；探索与轨迹分布
 
@@ -161,6 +172,15 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Learning to reason with LLMs](paper-catalog.md#p336)
 - [Kimi-VL Technical Report](paper-catalog.md#p390)
 - [Qwen3-VL Technical Report](paper-catalog.md#p392)
+- [System Card: Claude Opus 4 & Claude Sonnet 4](paper-catalog.md#p395)
+- [Instruction-Following Evaluation for Large Language Models](paper-catalog.md#p407)
+- [Training Software Engineering Agents and Verifiers with SWE-Gym](paper-catalog.md#p424)
+- [SWE-RL: Advancing LLM Reasoning via Reinforcement Learning on Open Software Evolution](paper-catalog.md#p426)
+- [Monitoring Reasoning Models for Misbehavior and the Risks of Promoting Obfuscation](paper-catalog.md#p427)
+- [HealthBench: Evaluating Large Language Models Towards Improved Human Health](paper-catalog.md#p430)
+- [Generalizing Verifiable Instruction Following](paper-catalog.md#p431)
+- [ImpossibleBench: Measuring LLMs' Propensity of Exploiting Test Cases](paper-catalog.md#p432)
+- [Natural Emergent Misalignment from Reward Hacking in Production RL](paper-catalog.md#p433)
 
 ### 架构与效率（39）
 
@@ -206,7 +226,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models](paper-catalog.md#p334)
 - [DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression](paper-catalog.md#p335)
 
-### 推理时计算（37）
+### 推理时计算（38）
 
 细分：搜索与验证；多路径与多 Agent；预算分配与 token 效率；精确目标分布与投机验证；近似质量协作与关键段接管；MTP草拟与验证接口；精确级联混合分布
 
@@ -247,6 +267,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [KIVI: A Tuning-Free Asymmetric 2bit Quantization for KV Cache](paper-catalog.md#p310)
 - [Kimi k1.5: Scaling Reinforcement Learning with LLMs](paper-catalog.md#p325)
 - [Learning to reason with LLMs](paper-catalog.md#p336)
+- [Reflexion: Language Agents with Verbal Reinforcement Learning](paper-catalog.md#p401)
 
 
 ## 多模态与世界表征
@@ -673,7 +694,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 ## 跨方向方法与探索
 
-### Agent 与上下文系统（12）
+### Agent 与上下文系统（30）
 
 细分：Agent轨迹与性质验证
 
@@ -689,9 +710,27 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [HoloAgent-0: A Unified Embodied Agent Framework with 3D Spatial Memory](paper-catalog.md#p139)
 - [Finding bugs across the Python ecosystem with Claude and property-based testing](paper-catalog.md#p160)
 - [Metamorphic Testing of Multi-Agent LLM Systems: A Trace-Based Behavioral Oracle Framework](paper-catalog.md#p161)
+- [Kimi K2: Open Agentic Intelligence](paper-catalog.md#p184)
+- [System Card: Claude Opus 4 & Claude Sonnet 4](paper-catalog.md#p395)
+- [Toolformer: Language Models Can Teach Themselves to Use Tools](paper-catalog.md#p400)
+- [Reflexion: Language Agents with Verbal Reinforcement Learning](paper-catalog.md#p401)
+- [WebArena: A Realistic Web Environment for Building Autonomous Agents](paper-catalog.md#p402)
+- [SWE-bench: Can Language Models Resolve Real-World GitHub Issues?](paper-catalog.md#p405)
+- [GAIA: a benchmark for General AI Assistants](paper-catalog.md#p410)
+- [OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments](paper-catalog.md#p416)
+- [τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains](paper-catalog.md#p419)
+- [Training Software Engineering Agents and Verifiers with SWE-Gym](paper-catalog.md#p424)
+- [SWE-RL: Advancing LLM Reasoning via Reinforcement Learning on Open Software Evolution](paper-catalog.md#p426)
+- [Monitoring Reasoning Models for Misbehavior and the Risks of Promoting Obfuscation](paper-catalog.md#p427)
+- [MaintainCoder: Maintainable Code Generation Under Dynamic Requirements](paper-catalog.md#p428)
+- [ImpossibleBench: Measuring LLMs' Propensity of Exploiting Test Cases](paper-catalog.md#p432)
+- [Natural Emergent Misalignment from Reward Hacking in Production RL](paper-catalog.md#p433)
+- [Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces](paper-catalog.md#p434)
+- [Introducing SWE-bench Verified](paper-catalog.md#p435)
+- [Why SWE-bench Verified no longer measures frontier coding capabilities](paper-catalog.md#p436)
 
 
-### 模型科学（20）
+### 模型科学（22）
 
 细分：机制可解释性；知识存储、定位与编辑；探针分析；推理忠实性；层冗余与模式坍缩；开放模型与可复现性
 
@@ -715,6 +754,8 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Dissecting Recall of Factual Associations in Auto-Regressive Language Models](paper-catalog.md#p164)
 - [Does Localization Inform Editing? Surprising Differences in Causality-Based Localization vs. Knowledge Editing in Language Models](paper-catalog.md#p176)
 - [Progress Measures for Grokking via Mechanistic Interpretability](paper-catalog.md#p177)
+- [Proving Test Set Contamination in Black Box Language Models](paper-catalog.md#p406)
+- [GPQA: A Graduate-Level Google-Proof Q&A Benchmark](paper-catalog.md#p409)
 
 ### 训练科学（10）
 
@@ -737,7 +778,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 细分：
 
 
-### 评估与监督可靠性（17）
+### 评估与监督可靠性（55）
 
 细分：性质测试、变形测试与行为验证边界
 
@@ -758,6 +799,44 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Do generative video models understand physical principles?](paper-catalog.md#p368)
 - [How Far is Video Generation from World Model: A Physical Law Perspective](paper-catalog.md#p369)
 - [VideoPhy: Evaluating Physical Commonsense for Video Generation](paper-catalog.md#p370)
+- [System Card: Claude Opus 4 & Claude Sonnet 4](paper-catalog.md#p395)
+- [Measuring Massive Multitask Language Understanding](paper-catalog.md#p396)
+- [Evaluating Large Language Models Trained on Code](paper-catalog.md#p397)
+- [Holistic Evaluation of Language Models](paper-catalog.md#p398)
+- [Large Language Models Encode Clinical Knowledge](paper-catalog.md#p399)
+- [WebArena: A Realistic Web Environment for Building Autonomous Agents](paper-catalog.md#p402)
+- [XSTest: A Test Suite for Identifying Exaggerated Safety Behaviours in Large Language Models](paper-catalog.md#p403)
+- [LegalBench: A Collaboratively Built Benchmark for Measuring Legal Reasoning in Large Language Models](paper-catalog.md#p404)
+- [SWE-bench: Can Language Models Resolve Real-World GitHub Issues?](paper-catalog.md#p405)
+- [Proving Test Set Contamination in Black Box Language Models](paper-catalog.md#p406)
+- [Instruction-Following Evaluation for Large Language Models](paper-catalog.md#p407)
+- [FinanceBench: A New Benchmark for Financial Question Answering](paper-catalog.md#p408)
+- [GPQA: A Graduate-Level Google-Proof Q&A Benchmark](paper-catalog.md#p409)
+- [GAIA: a benchmark for General AI Assistants](paper-catalog.md#p410)
+- [CharacterEval: A Chinese Benchmark for Role-Playing Conversational Agent Evaluation](paper-catalog.md#p411)
+- [HarmBench: A Standardized Evaluation Framework for Automated Red Teaming and Robust Refusal](paper-catalog.md#p412)
+- [A StrongREJECT for Empty Jailbreaks](paper-catalog.md#p413)
+- [LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code](paper-catalog.md#p414)
+- [Length-Controlled AlpacaEval: A Simple Way to Debias Automatic Evaluators](paper-catalog.md#p415)
+- [OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments](paper-catalog.md#p416)
+- [A Careful Examination of Large Language Model Performance on Grade School Arithmetic](paper-catalog.md#p417)
+- [MMLU-Pro: A More Robust and Challenging Multi-Task Language Understanding Benchmark](paper-catalog.md#p418)
+- [τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains](paper-catalog.md#p419)
+- [LiveBench: A Challenging, Contamination-Limited LLM Benchmark](paper-catalog.md#p420)
+- [LLM Critics Help Catch LLM Bugs](paper-catalog.md#p421)
+- [Beyond Correctness: Benchmarking Multi-dimensional Code Generation for Large Language Models](paper-catalog.md#p422)
+- [SciCode: A Research Coding Benchmark Curated by Scientists](paper-catalog.md#p423)
+- [Humanity's Last Exam](paper-catalog.md#p425)
+- [Monitoring Reasoning Models for Misbehavior and the Risks of Promoting Obfuscation](paper-catalog.md#p427)
+- [MaintainCoder: Maintainable Code Generation Under Dynamic Requirements](paper-catalog.md#p428)
+- [The Leaderboard Illusion](paper-catalog.md#p429)
+- [HealthBench: Evaluating Large Language Models Towards Improved Human Health](paper-catalog.md#p430)
+- [Generalizing Verifiable Instruction Following](paper-catalog.md#p431)
+- [ImpossibleBench: Measuring LLMs' Propensity of Exploiting Test Cases](paper-catalog.md#p432)
+- [Natural Emergent Misalignment from Reward Hacking in Production RL](paper-catalog.md#p433)
+- [Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces](paper-catalog.md#p434)
+- [Introducing SWE-bench Verified](paper-catalog.md#p435)
+- [Why SWE-bench Verified no longer measures frontier coding capabilities](paper-catalog.md#p436)
 
 
 ### 知识蒸馏与模型压缩（7）
@@ -788,14 +867,14 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 | 模态 \ 任务 | understanding | generation | decision | evaluation | analysis |
 |---|---:|---:|---:|---:|---:|
-| text | [55](#x-text-understanding) | [121](#x-text-generation) | [59](#x-text-decision) | [28](#x-text-evaluation) | [41](#x-text-analysis) |
-| image | [91](#x-image-understanding) | [25](#x-image-generation) | [85](#x-image-decision) | [15](#x-image-evaluation) | [10](#x-image-analysis) |
+| text | [55](#x-text-understanding) | [128](#x-text-generation) | [73](#x-text-decision) | [63](#x-text-evaluation) | [47](#x-text-analysis) |
+| image | [91](#x-image-understanding) | [25](#x-image-generation) | [86](#x-image-decision) | [16](#x-image-evaluation) | [10](#x-image-analysis) |
 | video | [31](#x-video-understanding) | [39](#x-video-generation) | [25](#x-video-decision) | [12](#x-video-evaluation) | [4](#x-video-analysis) |
 | audio | [7](#x-audio-understanding) | [6](#x-audio-generation) | · | [1](#x-audio-evaluation) | · |
 | action | [8](#x-action-understanding) | [33](#x-action-generation) | [127](#x-action-decision) | [9](#x-action-evaluation) | [2](#x-action-analysis) |
 | state | [15](#x-state-understanding) | [2](#x-state-generation) | [64](#x-state-decision) | [1](#x-state-evaluation) | · |
-| code | [1](#x-code-understanding) | [15](#x-code-generation) | [7](#x-code-decision) | [2](#x-code-evaluation) | [4](#x-code-analysis) |
-| multimodal | [48](#x-multimodal-understanding) | [28](#x-multimodal-generation) | [36](#x-multimodal-decision) | [12](#x-multimodal-evaluation) | [7](#x-multimodal-analysis) |
+| code | [1](#x-code-understanding) | [20](#x-code-generation) | [16](#x-code-decision) | [15](#x-code-evaluation) | [7](#x-code-analysis) |
+| multimodal | [48](#x-multimodal-understanding) | [28](#x-multimodal-generation) | [39](#x-multimodal-decision) | [17](#x-multimodal-evaluation) | [7](#x-multimodal-analysis) |
 | tabular | [1](#x-tabular-understanding) | · | · | · | · |
 
 <a id="x-text-understanding"></a>
@@ -860,7 +939,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-text-generation"></a>
 
-### text × generation（121）
+### text × generation（128）
 
 - [Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters](paper-catalog.md#p001)
 - [Towards Thinking-Optimal Scaling of Test-Time Compute for LLM Reasoning](paper-catalog.md#p002)
@@ -983,10 +1062,17 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Gemini: A Family of Highly Capable Multimodal Models](paper-catalog.md#p379)
 - [Chameleon: Mixed-Modal Early-Fusion Foundation Models](paper-catalog.md#p383)
 - [Genie 3: A new frontier for world models](paper-catalog.md#p394)
+- [Evaluating Large Language Models Trained on Code](paper-catalog.md#p397)
+- [Toolformer: Language Models Can Teach Themselves to Use Tools](paper-catalog.md#p400)
+- [Beyond Correctness: Benchmarking Multi-dimensional Code Generation for Large Language Models](paper-catalog.md#p422)
+- [SciCode: A Research Coding Benchmark Curated by Scientists](paper-catalog.md#p423)
+- [SWE-RL: Advancing LLM Reasoning via Reinforcement Learning on Open Software Evolution](paper-catalog.md#p426)
+- [MaintainCoder: Maintainable Code Generation Under Dynamic Requirements](paper-catalog.md#p428)
+- [Generalizing Verifiable Instruction Following](paper-catalog.md#p431)
 
 <a id="x-text-decision"></a>
 
-### text × decision（59）
+### text × decision（73）
 
 - [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](paper-catalog.md#p034)
 - [ReAct: Synergizing Reasoning and Acting in Language Models](paper-catalog.md#p040)
@@ -1047,10 +1133,24 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Qwen2.5-VL Technical Report](paper-catalog.md#p389)
 - [Kimi-VL Technical Report](paper-catalog.md#p390)
 - [Qwen3-VL Technical Report](paper-catalog.md#p392)
+- [System Card: Claude Opus 4 & Claude Sonnet 4](paper-catalog.md#p395)
+- [Toolformer: Language Models Can Teach Themselves to Use Tools](paper-catalog.md#p400)
+- [Reflexion: Language Agents with Verbal Reinforcement Learning](paper-catalog.md#p401)
+- [WebArena: A Realistic Web Environment for Building Autonomous Agents](paper-catalog.md#p402)
+- [SWE-bench: Can Language Models Resolve Real-World GitHub Issues?](paper-catalog.md#p405)
+- [GAIA: a benchmark for General AI Assistants](paper-catalog.md#p410)
+- [OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments](paper-catalog.md#p416)
+- [τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains](paper-catalog.md#p419)
+- [Training Software Engineering Agents and Verifiers with SWE-Gym](paper-catalog.md#p424)
+- [SWE-RL: Advancing LLM Reasoning via Reinforcement Learning on Open Software Evolution](paper-catalog.md#p426)
+- [Monitoring Reasoning Models for Misbehavior and the Risks of Promoting Obfuscation](paper-catalog.md#p427)
+- [ImpossibleBench: Measuring LLMs' Propensity of Exploiting Test Cases](paper-catalog.md#p432)
+- [Natural Emergent Misalignment from Reward Hacking in Production RL](paper-catalog.md#p433)
+- [Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces](paper-catalog.md#p434)
 
 <a id="x-text-evaluation"></a>
 
-### text × evaluation（28）
+### text × evaluation（63）
 
 - [PersonaEval: Are LLM Evaluators Human Enough to Judge Role-Play?](paper-catalog.md#p032)
 - [On scalable oversight with weak LLMs judging strong LLMs](paper-catalog.md#p033)
@@ -1080,10 +1180,45 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Evaluating Object Hallucination in Large Vision-Language Models](paper-catalog.md#p376)
 - [Are We on the Right Way for Evaluating Large Vision-Language Models?](paper-catalog.md#p381)
 - [Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs](paper-catalog.md#p384)
+- [System Card: Claude Opus 4 & Claude Sonnet 4](paper-catalog.md#p395)
+- [Measuring Massive Multitask Language Understanding](paper-catalog.md#p396)
+- [Evaluating Large Language Models Trained on Code](paper-catalog.md#p397)
+- [Holistic Evaluation of Language Models](paper-catalog.md#p398)
+- [Large Language Models Encode Clinical Knowledge](paper-catalog.md#p399)
+- [WebArena: A Realistic Web Environment for Building Autonomous Agents](paper-catalog.md#p402)
+- [XSTest: A Test Suite for Identifying Exaggerated Safety Behaviours in Large Language Models](paper-catalog.md#p403)
+- [LegalBench: A Collaboratively Built Benchmark for Measuring Legal Reasoning in Large Language Models](paper-catalog.md#p404)
+- [SWE-bench: Can Language Models Resolve Real-World GitHub Issues?](paper-catalog.md#p405)
+- [Proving Test Set Contamination in Black Box Language Models](paper-catalog.md#p406)
+- [Instruction-Following Evaluation for Large Language Models](paper-catalog.md#p407)
+- [FinanceBench: A New Benchmark for Financial Question Answering](paper-catalog.md#p408)
+- [GPQA: A Graduate-Level Google-Proof Q&A Benchmark](paper-catalog.md#p409)
+- [GAIA: a benchmark for General AI Assistants](paper-catalog.md#p410)
+- [CharacterEval: A Chinese Benchmark for Role-Playing Conversational Agent Evaluation](paper-catalog.md#p411)
+- [HarmBench: A Standardized Evaluation Framework for Automated Red Teaming and Robust Refusal](paper-catalog.md#p412)
+- [A StrongREJECT for Empty Jailbreaks](paper-catalog.md#p413)
+- [Length-Controlled AlpacaEval: A Simple Way to Debias Automatic Evaluators](paper-catalog.md#p415)
+- [OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments](paper-catalog.md#p416)
+- [A Careful Examination of Large Language Model Performance on Grade School Arithmetic](paper-catalog.md#p417)
+- [MMLU-Pro: A More Robust and Challenging Multi-Task Language Understanding Benchmark](paper-catalog.md#p418)
+- [τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains](paper-catalog.md#p419)
+- [LiveBench: A Challenging, Contamination-Limited LLM Benchmark](paper-catalog.md#p420)
+- [LLM Critics Help Catch LLM Bugs](paper-catalog.md#p421)
+- [Beyond Correctness: Benchmarking Multi-dimensional Code Generation for Large Language Models](paper-catalog.md#p422)
+- [SciCode: A Research Coding Benchmark Curated by Scientists](paper-catalog.md#p423)
+- [Humanity's Last Exam](paper-catalog.md#p425)
+- [MaintainCoder: Maintainable Code Generation Under Dynamic Requirements](paper-catalog.md#p428)
+- [The Leaderboard Illusion](paper-catalog.md#p429)
+- [HealthBench: Evaluating Large Language Models Towards Improved Human Health](paper-catalog.md#p430)
+- [Generalizing Verifiable Instruction Following](paper-catalog.md#p431)
+- [ImpossibleBench: Measuring LLMs' Propensity of Exploiting Test Cases](paper-catalog.md#p432)
+- [Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces](paper-catalog.md#p434)
+- [Introducing SWE-bench Verified](paper-catalog.md#p435)
+- [Why SWE-bench Verified no longer measures frontier coding capabilities](paper-catalog.md#p436)
 
 <a id="x-text-analysis"></a>
 
-### text × analysis（41）
+### text × analysis（47）
 
 - [OLMo: Accelerating the Science of Language Models](paper-catalog.md#p010)
 - [ShortGPT: Layers in Large Language Models are More Redundant Than You Expect](paper-catalog.md#p022)
@@ -1126,6 +1261,12 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Eyes Wide Shut? Exploring the Visual Shortcomings of Multimodal LLMs](paper-catalog.md#p351)
 - [Revealing Single Frame Bias for Video-and-Language Learning](paper-catalog.md#p359)
 - [Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs](paper-catalog.md#p384)
+- [Proving Test Set Contamination in Black Box Language Models](paper-catalog.md#p406)
+- [A Careful Examination of Large Language Model Performance on Grade School Arithmetic](paper-catalog.md#p417)
+- [Monitoring Reasoning Models for Misbehavior and the Risks of Promoting Obfuscation](paper-catalog.md#p427)
+- [The Leaderboard Illusion](paper-catalog.md#p429)
+- [Natural Emergent Misalignment from Reward Hacking in Production RL](paper-catalog.md#p433)
+- [Why SWE-bench Verified no longer measures frontier coding capabilities](paper-catalog.md#p436)
 
 <a id="x-image-understanding"></a>
 
@@ -1255,7 +1396,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-image-decision"></a>
 
-### image × decision（85）
+### image × decision（86）
 
 - [DINO-WM: World Models on Pre-trained Visual Features enable Zero-shot Planning](paper-catalog.md#p046)
 - [FOCUS: Object-Centric World Models for Robotics Manipulation](paper-catalog.md#p048)
@@ -1342,10 +1483,11 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Qwen2.5-VL Technical Report](paper-catalog.md#p389)
 - [Kimi-VL Technical Report](paper-catalog.md#p390)
 - [Qwen3-VL Technical Report](paper-catalog.md#p392)
+- [OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments](paper-catalog.md#p416)
 
 <a id="x-image-evaluation"></a>
 
-### image × evaluation（15）
+### image × evaluation（16）
 
 - [LARY: A Latent Action Representation Yielding Benchmark for Generalizable Vision-to-Action Alignment](paper-catalog.md#p060)
 - [Vision-and-Language Navigation: Interpreting visually-grounded navigation instructions in real environments](paper-catalog.md#p119)
@@ -1362,6 +1504,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Evaluating Object Hallucination in Large Vision-Language Models](paper-catalog.md#p376)
 - [Are We on the Right Way for Evaluating Large Vision-Language Models?](paper-catalog.md#p381)
 - [Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs](paper-catalog.md#p384)
+- [OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments](paper-catalog.md#p416)
 
 <a id="x-image-analysis"></a>
 
@@ -1857,7 +2000,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-code-generation"></a>
 
-### code × generation（15）
+### code × generation（20）
 
 - [Large Language Monkeys: Scaling Inference Compute with Repeated Sampling](paper-catalog.md#p004)
 - [Enhancing Code Generation Performance of Smaller Models by Distilling the Reasoning Ability of LLMs](paper-catalog.md#p023)
@@ -1874,10 +2017,15 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models](paper-catalog.md#p334)
 - [DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression](paper-catalog.md#p335)
 - [Learning to reason with LLMs](paper-catalog.md#p336)
+- [Evaluating Large Language Models Trained on Code](paper-catalog.md#p397)
+- [Beyond Correctness: Benchmarking Multi-dimensional Code Generation for Large Language Models](paper-catalog.md#p422)
+- [SciCode: A Research Coding Benchmark Curated by Scientists](paper-catalog.md#p423)
+- [SWE-RL: Advancing LLM Reasoning via Reinforcement Learning on Open Software Evolution](paper-catalog.md#p426)
+- [MaintainCoder: Maintainable Code Generation Under Dynamic Requirements](paper-catalog.md#p428)
 
 <a id="x-code-decision"></a>
 
-### code × decision（7）
+### code × decision（16）
 
 - [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](paper-catalog.md#p034)
 - [Voyager: An Open-Ended Embodied Agent with Large Language Models](paper-catalog.md#p041)
@@ -1886,22 +2034,47 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Kimi K3: Open Frontier Intelligence](paper-catalog.md#p189)
 - [Code as Policies: Language Model Programs for Embodied Control](paper-catalog.md#p228)
 - [VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models](paper-catalog.md#p235)
+- [System Card: Claude Opus 4 & Claude Sonnet 4](paper-catalog.md#p395)
+- [Reflexion: Language Agents with Verbal Reinforcement Learning](paper-catalog.md#p401)
+- [SWE-bench: Can Language Models Resolve Real-World GitHub Issues?](paper-catalog.md#p405)
+- [Training Software Engineering Agents and Verifiers with SWE-Gym](paper-catalog.md#p424)
+- [SWE-RL: Advancing LLM Reasoning via Reinforcement Learning on Open Software Evolution](paper-catalog.md#p426)
+- [Monitoring Reasoning Models for Misbehavior and the Risks of Promoting Obfuscation](paper-catalog.md#p427)
+- [ImpossibleBench: Measuring LLMs' Propensity of Exploiting Test Cases](paper-catalog.md#p432)
+- [Natural Emergent Misalignment from Reward Hacking in Production RL](paper-catalog.md#p433)
+- [Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces](paper-catalog.md#p434)
 
 <a id="x-code-evaluation"></a>
 
-### code × evaluation（2）
+### code × evaluation（15）
 
 - [INSPECT: Intrinsic and Systematic Probing Evaluation for Code Transformers](paper-catalog.md#p030)
 - [Finding bugs across the Python ecosystem with Claude and property-based testing](paper-catalog.md#p160)
+- [System Card: Claude Opus 4 & Claude Sonnet 4](paper-catalog.md#p395)
+- [Evaluating Large Language Models Trained on Code](paper-catalog.md#p397)
+- [SWE-bench: Can Language Models Resolve Real-World GitHub Issues?](paper-catalog.md#p405)
+- [LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code](paper-catalog.md#p414)
+- [LiveBench: A Challenging, Contamination-Limited LLM Benchmark](paper-catalog.md#p420)
+- [LLM Critics Help Catch LLM Bugs](paper-catalog.md#p421)
+- [Beyond Correctness: Benchmarking Multi-dimensional Code Generation for Large Language Models](paper-catalog.md#p422)
+- [SciCode: A Research Coding Benchmark Curated by Scientists](paper-catalog.md#p423)
+- [MaintainCoder: Maintainable Code Generation Under Dynamic Requirements](paper-catalog.md#p428)
+- [ImpossibleBench: Measuring LLMs' Propensity of Exploiting Test Cases](paper-catalog.md#p432)
+- [Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces](paper-catalog.md#p434)
+- [Introducing SWE-bench Verified](paper-catalog.md#p435)
+- [Why SWE-bench Verified no longer measures frontier coding capabilities](paper-catalog.md#p436)
 
 <a id="x-code-analysis"></a>
 
-### code × analysis（4）
+### code × analysis（7）
 
 - [Naturalness of Attention: Revisiting Attention in Code Language Models](paper-catalog.md#p028)
 - [Probing Pretrained Models of Source Code](paper-catalog.md#p029)
 - [INSPECT: Intrinsic and Systematic Probing Evaluation for Code Transformers](paper-catalog.md#p030)
 - [Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?](paper-catalog.md#p331)
+- [Monitoring Reasoning Models for Misbehavior and the Risks of Promoting Obfuscation](paper-catalog.md#p427)
+- [Natural Emergent Misalignment from Reward Hacking in Production RL](paper-catalog.md#p433)
+- [Why SWE-bench Verified no longer measures frontier coding capabilities](paper-catalog.md#p436)
 
 <a id="x-multimodal-understanding"></a>
 
@@ -1991,7 +2164,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-multimodal-decision"></a>
 
-### multimodal × decision（36）
+### multimodal × decision（39）
 
 - [Object-Centric World Model for Language-Guided Manipulation](paper-catalog.md#p052)
 - [Language-Grounded Hierarchical Planning and Execution with Multi-Robot 3D Scene Graphs](paper-catalog.md#p055)
@@ -2029,10 +2202,13 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Qwen2.5-VL Technical Report](paper-catalog.md#p389)
 - [Kimi-VL Technical Report](paper-catalog.md#p390)
 - [Qwen3-VL Technical Report](paper-catalog.md#p392)
+- [WebArena: A Realistic Web Environment for Building Autonomous Agents](paper-catalog.md#p402)
+- [GAIA: a benchmark for General AI Assistants](paper-catalog.md#p410)
+- [OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments](paper-catalog.md#p416)
 
 <a id="x-multimodal-evaluation"></a>
 
-### multimodal × evaluation（12）
+### multimodal × evaluation（17）
 
 - [Vision-and-Language Navigation: Interpreting visually-grounded navigation instructions in real environments](paper-catalog.md#p119)
 - [DataComp: In search of the next generation of multimodal datasets](paper-catalog.md#p346)
@@ -2046,6 +2222,11 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Evaluating Object Hallucination in Large Vision-Language Models](paper-catalog.md#p376)
 - [Are We on the Right Way for Evaluating Large Vision-Language Models?](paper-catalog.md#p381)
 - [Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs](paper-catalog.md#p384)
+- [WebArena: A Realistic Web Environment for Building Autonomous Agents](paper-catalog.md#p402)
+- [GAIA: a benchmark for General AI Assistants](paper-catalog.md#p410)
+- [HarmBench: A Standardized Evaluation Framework for Automated Red Teaming and Robust Refusal](paper-catalog.md#p412)
+- [OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments](paper-catalog.md#p416)
+- [Humanity's Last Exam](paper-catalog.md#p425)
 
 <a id="x-multimodal-analysis"></a>
 

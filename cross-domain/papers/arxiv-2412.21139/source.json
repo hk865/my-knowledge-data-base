@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2412.21139",
+  "title": "Training Software Engineering Agents and Verifiers with SWE-Gym",
+  "resource_kind": "paper",
+  "canonical_folder": "cross-domain/papers/arxiv-2412.21139",
+  "official_url": "https://arxiv.org/abs/2412.21139",
+  "official_fulltext_url": "https://arxiv.org/pdf/2412.21139",
+  "read_version": "v2（ICML 2025）",
+  "version_status": "checked_arxiv",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。arXiv v1/v2 HTML 全文：§1、§3–3.1、§4.1–4.3、§5.1、Table 3、§6；官方 README。 不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Jiayi Pan",
+    "Xingyao Wang",
+    "Graham Neubig",
+    "Navdeep Jaitly",
+    "Heng Ji",
+    "Alane Suhr",
+    "Yizhe Zhang"
+  ],
+  "year": 2024,
+  "topic_paths": [
+    "cross-domain/agents",
+    "llm/posttraining/rl",
+    "llm/posttraining/sft"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv v1/v2 HTML 全文：§1、§3–3.1、§4.1–4.3、§5.1、Table 3、§6；官方 README。",
+    "mechanism_summary": "2,438 个带可执行环境与测试的真实任务；491 条成功轨迹拒绝采样微调 32B：Verified 7.0→20.6；ORM 验证器 best@16 32.0；在线自我改进 15.3→8.7 失败；局限：环境多样性、忽略人机协作。",
+    "evidence_boundary": "未复现实验；数字取自原文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2412.21139",
+      "https://arxiv.org/pdf/2412.21139"
+    ],
+    "source_origin": "agents_field_phase3_cards",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "text",
+    "code"
+  ],
+  "task_tags": [
+    "decision"
+  ]
+}

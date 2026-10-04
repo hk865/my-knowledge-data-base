@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2308.11462",
+  "title": "LegalBench: A Collaboratively Built Benchmark for Measuring Legal Reasoning in Large Language Models",
+  "resource_kind": "paper",
+  "canonical_folder": "cross-domain/papers/arxiv-2308.11462",
+  "official_url": "https://arxiv.org/abs/2308.11462",
+  "official_fulltext_url": "https://arxiv.org/pdf/2308.11462",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了摘要、§1、§3（六类法律推理与 IRAC 对应）、§5.1 评测设置（指标、人工评分）、§5.2 与表 2–3 结果。不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Neel Guha",
+    "Julian Nyarko",
+    "Daniel E. Ho",
+    "Christopher Ré",
+    "Adam Chilton",
+    "Aditya Narayana",
+    "Alex Chohlas-Wood",
+    "Austin Peters",
+    "Brandon Waldon",
+    "Daniel N. Rockmore",
+    "等 30 位作者"
+  ],
+  "year": 2023,
+  "topic_paths": [
+    "cross-domain/evaluation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "文献卡。核验了摘要、§1、§3（六类法律推理与 IRAC 对应）、§5.1 评测设置（指标、人工评分）、§5.2 与表 2–3 结果。",
+    "mechanism_summary": "协作构建 162 个任务，按美国法学教育常用的 IRAC 框架分为六类法律推理：识别争点、回忆规则、适用规则、得出结论、解释（合同条款等文本）、理解修辞。分类任务用精确匹配与平衡准确率，抽取任务用 F1；\"适用规则\"任务要求写出推理过程，由受过法律训练的人按公开的评分指南人工评分，只评了 GPT-4、GPT-3.5、Claude-1。评测 20 个开源与商用模型：GPT-4 各类最好，但它的\"回忆规则\"只有 59.2，远低于\"得出结论\"的 89.9。作者说明提示没有精调，结果是下限。",
+    "evidence_boundary": "未复现实验；数字取自原文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2308.11462",
+      "https://arxiv.org/pdf/2308.11462v1"
+    ],
+    "source_origin": "evaluation_domains_phase3",
+    "relation_pages": [
+      "cross-domain/fields/evaluation/domains.md"
+    ]
+  },
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "evaluation"
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "resource_id": "url:https://www-cdn.anthropic.com/07b2a3f9902ee19fe39a36ca638e5ae987bc64dd.pdf",
+  "title": "System Card: Claude Opus 4 & Claude Sonnet 4",
+  "resource_kind": "official_technical_report",
+  "canonical_folder": "cross-domain/papers/anthropic-claude-4-system-card",
+  "official_url": "https://www-cdn.anthropic.com/07b2a3f9902ee19fe39a36ca638e5ae987bc64dd.pdf",
+  "official_fulltext_url": "https://www-cdn.anthropic.com/07b2a3f9902ee19fe39a36ca638e5ae987bc64dd.pdf",
+  "read_version": "2025-05",
+  "version_status": "checked_official_pdf",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。官方 PDF 全文抽取后核对 §4.1.9、§6–6.2 与 Table 6.2.A；Claude 3.7 Sonnet 系统卡 §6 作为前情一并核对。 不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Anthropic"
+  ],
+  "year": 2025,
+  "topic_paths": [
+    "cross-domain/agents",
+    "cross-domain/evaluation",
+    "llm/posttraining/rl"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "官方 PDF 全文抽取后核对 §4.1.9、§6–6.2 与 Table 6.2.A；Claude 3.7 Sonnet 系统卡 §6 作为前情一并核对。",
+    "mechanism_summary": "奖励黑客定义与三项缓解；硬编码相对 3.7 平均降 67%/69%；不可能任务 hack 率 47/45/78%，反 hack 提示后 Opus 4 5%、3.7 80%；高主动性行为（锁用户、群发邮件）与大范围清理代码的倾向。",
+    "evidence_boundary": "未复现实验；数字取自原文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://www.anthropic.com/system-cards",
+      "https://www-cdn.anthropic.com/07b2a3f9902ee19fe39a36ca638e5ae987bc64dd.pdf"
+    ],
+    "source_origin": "agents_field_phase3_cards",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "text",
+    "code"
+  ],
+  "task_tags": [
+    "decision",
+    "evaluation"
+  ]
+}

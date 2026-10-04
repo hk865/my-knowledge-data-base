@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2311.07911",
+  "title": "Instruction-Following Evaluation for Large Language Models",
+  "resource_kind": "paper",
+  "canonical_folder": "cross-domain/papers/arxiv-2311.07911",
+  "official_url": "https://arxiv.org/abs/2311.07911",
+  "official_fulltext_url": "https://arxiv.org/pdf/2311.07911",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了摘要、§1–§3（可验证指令列表、严格与宽松指标）、Table 3、§4 讨论。不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Jeffrey Zhou",
+    "Tianjian Lu",
+    "Swaroop Mishra",
+    "Siddhartha Brahma",
+    "Sujoy Basu",
+    "Yi Luan",
+    "Denny Zhou",
+    "Le Hou"
+  ],
+  "year": 2023,
+  "topic_paths": [
+    "cross-domain/evaluation",
+    "llm/posttraining/sft",
+    "llm/posttraining/rl"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "文献卡。核验了摘要、§1–§3（可验证指令列表、严格与宽松指标）、Table 3、§4 讨论。",
+    "mechanism_summary": "只测\"可验证指令\"：能用程序客观检查是否遵守的约束，例如\"写 400 词以上\"\"关键词 AI 至少出现 3 次\"\"全文用 JSON\"。定义 25 类可验证指令，构造 541 条提示，每条含一个或多个指令；报告提示级与指令级的严格准确率，以及先去掉 Markdown 加粗、首行、末行等 8 种变换再判的宽松准确率（宽松版减少误判失败，但会引入误判通过）。GPT-4 提示级严格准确率 76.89%，PaLM 2 S 43.07%。作者承认几乎没有指令能 100% 客观验证，例如加粗后的结束语会被朴素字符串匹配判错。",
+    "evidence_boundary": "未复现实验；数字取自原文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2311.07911",
+      "https://arxiv.org/pdf/2311.07911v1"
+    ],
+    "source_origin": "evaluation_field_rewrite_phase3",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "evaluation"
+  ]
+}

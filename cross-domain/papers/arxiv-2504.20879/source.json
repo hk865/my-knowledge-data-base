@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2504.20879",
+  "title": "The Leaderboard Illusion",
+  "resource_kind": "paper",
+  "canonical_folder": "cross-domain/papers/arxiv-2504.20879",
+  "official_url": "https://arxiv.org/abs/2504.20879",
+  "official_fulltext_url": "https://arxiv.org/pdf/2504.20879",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了摘要、§1、主要发现列表、§3（私下测试与 best-of-N 模拟）、§4.2（Arena 数据训练实验）、§5（下架）、Limitations。不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Shivalika Singh",
+    "Yiyang Nan",
+    "Alex Wang",
+    "Daniel D'Souza",
+    "Sayash Kapoor",
+    "Ahmet Üstün",
+    "Sanmi Koyejo",
+    "Yuntian Deng",
+    "Shayne Longpre",
+    "Noah A. Smith",
+    "等 13 位作者"
+  ],
+  "year": 2025,
+  "topic_paths": [
+    "cross-domain/evaluation",
+    "llm/posttraining/preferences"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "文献卡。核验了摘要、§1、主要发现列表、§3（私下测试与 best-of-N 模拟）、§4.2（Arena 数据训练实验）、§5（下架）、Limitations。",
+    "mechanism_summary": "综合 200 万场对战，审计 2024 年 1 月到 2025 年 4 月间 42 家提供方、243 个模型。发现：少数提供方可以在公开发布前私下测试多个变体、只公布最好的那个（Llama 4 发布前 Meta 测了 27 个私有变体）；这种\"best-of-N 再公布\"违背 Bradley–Terry 排名模型的无偏抽样假设，模拟中测 10 个变体可让最高分提高约 100 分；闭源模型被抽中对战的比例更高、被下架更少，Google 与 OpenAI 估计各拿到约 19.2% 与 20.4% 的对战数据，83 个开放权重模型合计约 29.7%；243 个公开模型中 205 个被静默下架。受控实验：微调数据中 Arena 数据占比从 0 提到 70%，在 ArenaHard 上对 Llama-3.1-8B-Instruct 的胜率从 23.5% 升到 49.9%（相对提升 112%），在其他",
+    "evidence_boundary": "未复现实验；数字取自原文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2504.20879",
+      "https://arxiv.org/pdf/2504.20879v2"
+    ],
+    "source_origin": "evaluation_field_rewrite_phase3",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "evaluation",
+    "analysis"
+  ]
+}

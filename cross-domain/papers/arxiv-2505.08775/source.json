@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2505.08775",
+  "title": "HealthBench: Evaluating Large Language Models Towards Improved Human Health",
+  "resource_kind": "paper",
+  "canonical_folder": "cross-domain/papers/arxiv-2505.08775",
+  "official_url": "https://arxiv.org/abs/2505.08775",
+  "official_fulltext_url": "https://arxiv.org/pdf/2505.08775",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了摘要、§1、§2–§3（评分方法、主题与维度、Consensus 与 Hard 子集）、§6.1–6.6（按主题与维度的结果、worst-at-k、长度分析）、§8.1 元评测、§9 局限、§10 相关工作。不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Rahul K. Arora",
+    "Jason Wei",
+    "Rebecca Soskin Hicks",
+    "Preston Bowman",
+    "Joaquin Quiñonero-Candela",
+    "Foivos Tsimpourlas",
+    "Michael Sharman",
+    "Meghan Shah",
+    "Andrea Vallone",
+    "Alex Beutel",
+    "Johannes Heidecke",
+    "Karan Singhal"
+  ],
+  "year": 2025,
+  "topic_paths": [
+    "cross-domain/evaluation",
+    "llm/posttraining/rl"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "文献卡。核验了摘要、§1、§2–§3（评分方法、主题与维度、Consensus 与 Hard 子集）、§6.1–6.6（按主题与维度的结果、worst-at-k、长度分析）、§8.1 元评测、§9 局限、§10 相关工作。",
+    "mechanism_summary": "5,000 段模型与普通用户或医疗专业人员的多轮对话，每段配一份由医生专门编写的 rubric（评分细则），共 48,562 条不重复的标准，由 262 位、26 个专科的医生在 11 个月里完成；覆盖 7 个主题（全球健康、不确定情况下的回答、按对象调整表达、追问上下文、急症转诊、健康数据处理、回答深度）与 5 个维度（完整性约占 39%，其余为准确性、上下文意识、沟通质量、指令遵循）。GPT-4.1 作为评分模型逐条判断回答是否满足标准；在 34 条医生共识标准上做元评测，它的判定一致性在 7 个主题中的 5 个超过医生个体的平均水平。总分从 GPT-3.5 Turbo 的 0.16 到 o3 的 0.60；各模型最弱的是完整性与上下文意识，o3 的 16 次采样最差得分比平均分低约三分之一。另发布 Consensus 子集与 1,000 例的 Hard 子集（最高 32%）。作者自述：不评估具体工作流与健康结局，只评单个回答。",
+    "evidence_boundary": "未复现实验；数字取自原文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2505.08775",
+      "https://arxiv.org/pdf/2505.08775v1"
+    ],
+    "source_origin": "evaluation_domains_phase3",
+    "relation_pages": [
+      "cross-domain/fields/evaluation/domains.md"
+    ]
+  },
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "evaluation"
+  ]
+}

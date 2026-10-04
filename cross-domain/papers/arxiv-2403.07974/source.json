@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2403.07974",
+  "title": "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code",
+  "resource_kind": "paper",
+  "canonical_folder": "cross-domain/papers/arxiv-2403.07974",
+  "official_url": "https://arxiv.org/abs/2403.07974",
+  "official_fulltext_url": "https://arxiv.org/pdf/2403.07974",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了摘要、§1（四个场景与截止日期切分）、§2 构造、主要发现、Limitations。不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Naman Jain",
+    "King Han",
+    "Alex Gu",
+    "Wen-Ding Li",
+    "Fanjia Yan",
+    "Tianjun Zhang",
+    "Sida Wang",
+    "Armando Solar-Lezama",
+    "Koushik Sen",
+    "Ion Stoica"
+  ],
+  "year": 2024,
+  "topic_paths": [
+    "cross-domain/evaluation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "文献卡。核验了摘要、§1（四个场景与截止日期切分）、§2 构造、主要发现、Limitations。",
+    "mechanism_summary": "持续从 LeetCode、AtCoder、Codeforces 的周赛收集新题并标注发布日期，评测时只用模型训练截止日期之后发布的题；除代码生成外还测自我修复、代码执行、测试输出预测。初版收录 2023 年 5 月到 2024 年 5 月的 500 多题，评测 18 个基座与 34 个指令模型。DeepSeek-Instruct 与 GPT-4o 在各自截止日期之后发布的 LeetCode 题上表现明显下降，作者据此认为它们训练过较早的题；在 HumanEval 上强、在 LiveCodeBench 上弱的主要是微调过的开放模型，可能过拟合了 HumanEval。自述局限：按截止日期切分后题量少（代码生成只剩 349 题，估计 1%–1.5% 的波动），越新的模型可用题越少，计划补充不公开的私有测试集；只测 Python。",
+    "evidence_boundary": "未复现实验；数字取自原文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2403.07974",
+      "https://arxiv.org/pdf/2403.07974v2"
+    ],
+    "source_origin": "evaluation_field_rewrite_phase3",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "code"
+  ],
+  "task_tags": [
+    "evaluation"
+  ]
+}

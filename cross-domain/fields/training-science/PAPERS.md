@@ -50,6 +50,6 @@
 - [Deep Learning without Poor Local Minima](https://arxiv.org/abs/1605.07110) · 2016 · 尚无文献卡
 - [Spurious Local Minima are Common in Two-Layer ReLU Neural Networks](https://arxiv.org/abs/1712.08968) · 2017 · 尚无文献卡
 - [Measuring the Intrinsic Dimension of Objective Landscapes](https://arxiv.org/abs/1804.08838) · 2018 · 尚无文献卡
-- [The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks](https://arxiv.org/abs/1803.03635) · 2018 · 尚无文献卡
+- [The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks](../../papers/arxiv-1803.03635/README.md) · 2018 · 尚无文献卡
 - [The Intrinsic Dimension of Images and Its Impact on Learning](https://arxiv.org/abs/2104.08894) · 2021 · 尚无文献卡
 - [How Does Batch Normalization Help Optimization?](https://arxiv.org/abs/1805.11604) · 2018 · 尚无文献卡

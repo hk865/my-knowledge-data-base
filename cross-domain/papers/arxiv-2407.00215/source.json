@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2407.00215",
+  "title": "LLM Critics Help Catch LLM Bugs",
+  "resource_kind": "paper",
+  "canonical_folder": "cross-domain/papers/arxiv-2407.00215",
+  "official_url": "https://arxiv.org/abs/2407.00215",
+  "official_fulltext_url": "https://arxiv.org/pdf/2407.00215",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了摘要、§1、§2 方法（批评的评价维度、人为插入 bug 的数据采集）、主要结果与局限。不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Nat McAleese",
+    "Rai Michael Pokorny",
+    "Juan Felipe Ceron Uribe",
+    "Evgenia Nitishinskaya",
+    "Maja Trebacz",
+    "Jan Leike"
+  ],
+  "year": 2024,
+  "topic_paths": [
+    "cross-domain/evaluation",
+    "llm/posttraining/preferences"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "文献卡。核验了摘要、§1、§2 方法（批评的评价维度、人为插入 bug 的数据采集）、主要结果与局限。",
+    "mechanism_summary": "用 RLHF 训练\"批评者\"模型（CriticGPT），为真实助手任务中的代码写自然语言批评、指出问题；训练与评测数据包括由标注员有意在代码中插入 bug（tampering）再要求找出。在含自然出现错误的代码上，模型写的批评有 63% 被偏好于人类批评；它找出的插入 bug 多于付费的人类代码审查员；在 ChatGPT 训练数据中被评为\"无缺陷\"的样本里也找出数百个错误。评价批评时同时看全面性、是否幻觉出不存在的 bug、是否挑小毛病；局限是批评者会幻觉 bug、挑刺，可能误导人，人机组合找到的 bug 与模型相当而幻觉更少。",
+    "evidence_boundary": "未复现实验；数字取自原文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2407.00215",
+      "https://arxiv.org/pdf/2407.00215v1"
+    ],
+    "source_origin": "evaluation_domains_phase3",
+    "relation_pages": [
+      "cross-domain/fields/evaluation/domains.md"
+    ]
+  },
+  "modality_tags": [
+    "text",
+    "code"
+  ],
+  "task_tags": [
+    "evaluation"
+  ]
+}

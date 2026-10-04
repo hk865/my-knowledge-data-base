@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2406.19314",
+  "title": "LiveBench: A Challenging, Contamination-Limited LLM Benchmark",
+  "resource_kind": "paper",
+  "canonical_folder": "cross-domain/papers/arxiv-2406.19314",
+  "official_url": "https://arxiv.org/abs/2406.19314",
+  "official_fulltext_url": "https://arxiv.org/pdf/2406.19314",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了摘要、§1、§2（任务类别、更新与延迟发布规则）、§4 与 Arena 对比、附录 LLM 裁判错误率表、§5 局限。不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Colin White",
+    "Samuel Dooley",
+    "Manley Roberts",
+    "Arka Pal",
+    "Ben Feuer",
+    "Siddhartha Jain",
+    "Ravid Shwartz-Ziv",
+    "Neel Jain",
+    "Khalid Saifullah",
+    "Sreemanti Dey",
+    "等 18 位作者"
+  ],
+  "year": 2024,
+  "topic_paths": [
+    "cross-domain/evaluation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "文献卡。核验了摘要、§1、§2（任务类别、更新与延迟发布规则）、§4 与 Arena 对比、附录 LLM 裁判错误率表、§5 局限。",
+    "mechanism_summary": "同时满足三点：题目来自近期信息源并每月更新（新数学竞赛、arXiv 论文、新闻、Kaggle 数据集），全部有客观标准答案、不用 LLM 裁判，覆盖数学、代码、推理、语言、指令遵循、数据分析六类 18 个任务（包括 Big-Bench Hard、AMPS、IFEval 的加难版本）。新题延后一个月才公开，使公开榜单上始终约有 1/6 的题是私有的。顶尖模型低于 70%；与 Chatbot Arena、Arena-Hard 的相关为 0.91、0.88，GPT-4 系列在用 GPT-4 当裁判的 Arena-Hard 上明显更高。附录中让 GPT-4-Turbo 给 AMC、AIME、SMC 与 Zebra 谜题判对错，错判率 10%–46%。自述局限：只有英文；开放式写作这类任务无法定义标准答案；不同模型家族偏好不同的提示格式。",
+    "evidence_boundary": "未复现实验；数字取自原文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2406.19314",
+      "https://arxiv.org/pdf/2406.19314v2"
+    ],
+    "source_origin": "evaluation_field_rewrite_phase3",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "text",
+    "code"
+  ],
+  "task_tags": [
+    "evaluation"
+  ]
+}

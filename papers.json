@@ -15146,7 +15146,8 @@
     "year": "2025",
     "topic_paths": [
       "llm/pretraining",
-      "llm/posttraining/rl"
+      "llm/posttraining/rl",
+      "cross-domain/agents"
     ],
     "detail_topics": [],
     "architecture_tags": [],
@@ -26308,6 +26309,2242 @@
     "authors": [
       "Jack Parker-Holder",
       "Shlomi Fruchter"
+    ]
+  },
+  {
+    "id": "url:https://www-cdn.anthropic.com/07b2a3f9902ee19fe39a36ca638e5ae987bc64dd.pdf",
+    "title": "System Card: Claude Opus 4 & Claude Sonnet 4",
+    "url": "https://www-cdn.anthropic.com/07b2a3f9902ee19fe39a36ca638e5ae987bc64dd.pdf",
+    "arxiv_id": null,
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "cross-domain/agents",
+      "cross-domain/evaluation",
+      "llm/posttraining/rl"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://www-cdn.anthropic.com/07b2a3f9902ee19fe39a36ca638e5ae987bc64dd.pdf"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "official_technical_report",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p395",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "cross-domain/papers/anthropic-claude-4-system-card",
+    "canonical_path": "cross-domain/papers/anthropic-claude-4-system-card/README.md",
+    "canonical_readme": "cross-domain/papers/anthropic-claude-4-system-card/README.md",
+    "source_path": "cross-domain/papers/anthropic-claude-4-system-card/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Anthropic"
+    ]
+  },
+  {
+    "id": "arxiv:2009.03300",
+    "title": "Measuring Massive Multitask Language Understanding",
+    "url": "https://arxiv.org/abs/2009.03300",
+    "arxiv_id": "2009.03300",
+    "doi": null,
+    "year": "2020",
+    "topic_paths": [
+      "cross-domain/evaluation",
+      "llm/pretraining"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2009.03300"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p396",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "evaluation"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2009.03300",
+    "canonical_path": "cross-domain/papers/arxiv-2009.03300/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2009.03300/README.md",
+    "source_path": "cross-domain/papers/arxiv-2009.03300/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Dan Hendrycks",
+      "Collin Burns",
+      "Steven Basart",
+      "Andy Zou",
+      "Mantas Mazeika",
+      "Dawn Song",
+      "Jacob Steinhardt"
+    ]
+  },
+  {
+    "id": "arxiv:2107.03374",
+    "title": "Evaluating Large Language Models Trained on Code",
+    "url": "https://arxiv.org/abs/2107.03374",
+    "arxiv_id": "2107.03374",
+    "doi": null,
+    "year": "2021",
+    "topic_paths": [
+      "cross-domain/evaluation",
+      "llm/pretraining"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2107.03374"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p397",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "generation",
+      "evaluation"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2107.03374",
+    "canonical_path": "cross-domain/papers/arxiv-2107.03374/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2107.03374/README.md",
+    "source_path": "cross-domain/papers/arxiv-2107.03374/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Mark Chen",
+      "Jerry Tworek",
+      "Heewoo Jun",
+      "Qiming Yuan",
+      "Henrique Ponde de Oliveira Pinto",
+      "Jared Kaplan",
+      "Harri Edwards",
+      "Yuri Burda",
+      "Nicholas Joseph",
+      "Greg Brockman",
+      "等 48 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2211.09110",
+    "title": "Holistic Evaluation of Language Models",
+    "url": "https://arxiv.org/abs/2211.09110",
+    "arxiv_id": "2211.09110",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "cross-domain/evaluation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2211.09110"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p398",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "evaluation"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2211.09110",
+    "canonical_path": "cross-domain/papers/arxiv-2211.09110/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2211.09110/README.md",
+    "source_path": "cross-domain/papers/arxiv-2211.09110/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Percy Liang",
+      "Rishi Bommasani",
+      "Tony Lee",
+      "Dimitris Tsipras",
+      "Dilara Soylu",
+      "Michihiro Yasunaga",
+      "Yian Zhang",
+      "Deepak Narayanan",
+      "Yuhuai Wu",
+      "Ananya Kumar",
+      "等 50 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2212.13138",
+    "title": "Large Language Models Encode Clinical Knowledge",
+    "url": "https://arxiv.org/abs/2212.13138",
+    "arxiv_id": "2212.13138",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "cross-domain/evaluation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2212.13138"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p399",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "evaluation"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2212.13138",
+    "canonical_path": "cross-domain/papers/arxiv-2212.13138/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2212.13138/README.md",
+    "source_path": "cross-domain/papers/arxiv-2212.13138/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Karan Singhal",
+      "Shekoofeh Azizi",
+      "Tao Tu",
+      "S. Sara Mahdavi",
+      "Jason Wei",
+      "Hyung Won Chung",
+      "Nathan Scales",
+      "Ajay Tanwani",
+      "Heather Cole-Lewis",
+      "Stephen Pfohl",
+      "等 20 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2302.04761",
+    "title": "Toolformer: Language Models Can Teach Themselves to Use Tools",
+    "url": "https://arxiv.org/abs/2302.04761",
+    "arxiv_id": "2302.04761",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "cross-domain/agents",
+      "llm/posttraining/sft"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2302.04761"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p400",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "decision",
+      "generation"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2302.04761",
+    "canonical_path": "cross-domain/papers/arxiv-2302.04761/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2302.04761/README.md",
+    "source_path": "cross-domain/papers/arxiv-2302.04761/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Timo Schick",
+      "Jane Dwivedi-Yu",
+      "Roberto Dessì",
+      "Roberta Raileanu",
+      "Maria Lomeli",
+      "Luke Zettlemoyer",
+      "Nicola Cancedda",
+      "Thomas Scialom"
+    ]
+  },
+  {
+    "id": "arxiv:2303.11366",
+    "title": "Reflexion: Language Agents with Verbal Reinforcement Learning",
+    "url": "https://arxiv.org/abs/2303.11366",
+    "arxiv_id": "2303.11366",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "cross-domain/agents",
+      "llm/inference"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2303.11366"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p401",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2303.11366",
+    "canonical_path": "cross-domain/papers/arxiv-2303.11366/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2303.11366/README.md",
+    "source_path": "cross-domain/papers/arxiv-2303.11366/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Noah Shinn",
+      "Federico Cassano",
+      "Edward Berman",
+      "Ashwin Gopinath",
+      "Karthik Narasimhan",
+      "Shunyu Yao"
+    ]
+  },
+  {
+    "id": "arxiv:2307.13854",
+    "title": "WebArena: A Realistic Web Environment for Building Autonomous Agents",
+    "url": "https://arxiv.org/abs/2307.13854",
+    "arxiv_id": "2307.13854",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "cross-domain/agents",
+      "cross-domain/evaluation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2307.13854"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p402",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2307.13854",
+    "canonical_path": "cross-domain/papers/arxiv-2307.13854/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2307.13854/README.md",
+    "source_path": "cross-domain/papers/arxiv-2307.13854/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Shuyan Zhou",
+      "Frank F. Xu",
+      "Hao Zhu",
+      "Xuhui Zhou",
+      "Robert Lo",
+      "Abishek Sridhar",
+      "Xianyi Cheng",
+      "Tianyue Ou",
+      "Yonatan Bisk",
+      "Daniel Fried",
+      "等 12 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2308.01263",
+    "title": "XSTest: A Test Suite for Identifying Exaggerated Safety Behaviours in Large Language Models",
+    "url": "https://arxiv.org/abs/2308.01263",
+    "arxiv_id": "2308.01263",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "cross-domain/evaluation",
+      "llm/posttraining/preferences"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2308.01263"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p403",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "evaluation"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2308.01263",
+    "canonical_path": "cross-domain/papers/arxiv-2308.01263/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2308.01263/README.md",
+    "source_path": "cross-domain/papers/arxiv-2308.01263/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Paul Röttger",
+      "Hannah Rose Kirk",
+      "Bertie Vidgen",
+      "Giuseppe Attanasio",
+      "Federico Bianchi",
+      "Dirk Hovy"
+    ]
+  },
+  {
+    "id": "arxiv:2308.11462",
+    "title": "LegalBench: A Collaboratively Built Benchmark for Measuring Legal Reasoning in Large Language Models",
+    "url": "https://arxiv.org/abs/2308.11462",
+    "arxiv_id": "2308.11462",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "cross-domain/evaluation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2308.11462"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p404",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "evaluation"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2308.11462",
+    "canonical_path": "cross-domain/papers/arxiv-2308.11462/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2308.11462/README.md",
+    "source_path": "cross-domain/papers/arxiv-2308.11462/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Neel Guha",
+      "Julian Nyarko",
+      "Daniel E. Ho",
+      "Christopher Ré",
+      "Adam Chilton",
+      "Aditya Narayana",
+      "Alex Chohlas-Wood",
+      "Austin Peters",
+      "Brandon Waldon",
+      "Daniel N. Rockmore",
+      "等 30 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2310.06770",
+    "title": "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?",
+    "url": "https://arxiv.org/abs/2310.06770",
+    "arxiv_id": "2310.06770",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "cross-domain/evaluation",
+      "cross-domain/agents"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2310.06770"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p405",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "code",
+      "text"
+    ],
+    "task_tags": [
+      "evaluation",
+      "decision"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2310.06770",
+    "canonical_path": "cross-domain/papers/arxiv-2310.06770/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2310.06770/README.md",
+    "source_path": "cross-domain/papers/arxiv-2310.06770/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Carlos E. Jimenez",
+      "John Yang",
+      "Alexander Wettig",
+      "Shunyu Yao",
+      "Kexin Pei",
+      "Ofir Press",
+      "Karthik Narasimhan"
+    ]
+  },
+  {
+    "id": "arxiv:2310.17623",
+    "title": "Proving Test Set Contamination in Black Box Language Models",
+    "url": "https://arxiv.org/abs/2310.17623",
+    "arxiv_id": "2310.17623",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "cross-domain/evaluation",
+      "cross-domain/model-science"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2310.17623"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p406",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "evaluation",
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2310.17623",
+    "canonical_path": "cross-domain/papers/arxiv-2310.17623/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2310.17623/README.md",
+    "source_path": "cross-domain/papers/arxiv-2310.17623/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Yonatan Oren",
+      "Nicole Meister",
+      "Niladri Chatterji",
+      "Faisal Ladhak",
+      "Tatsunori B. Hashimoto"
+    ]
+  },
+  {
+    "id": "arxiv:2311.07911",
+    "title": "Instruction-Following Evaluation for Large Language Models",
+    "url": "https://arxiv.org/abs/2311.07911",
+    "arxiv_id": "2311.07911",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "cross-domain/evaluation",
+      "llm/posttraining/sft",
+      "llm/posttraining/rl"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2311.07911"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p407",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "evaluation"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2311.07911",
+    "canonical_path": "cross-domain/papers/arxiv-2311.07911/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2311.07911/README.md",
+    "source_path": "cross-domain/papers/arxiv-2311.07911/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Jeffrey Zhou",
+      "Tianjian Lu",
+      "Swaroop Mishra",
+      "Siddhartha Brahma",
+      "Sujoy Basu",
+      "Yi Luan",
+      "Denny Zhou",
+      "Le Hou"
+    ]
+  },
+  {
+    "id": "arxiv:2311.11944",
+    "title": "FinanceBench: A New Benchmark for Financial Question Answering",
+    "url": "https://arxiv.org/abs/2311.11944",
+    "arxiv_id": "2311.11944",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "cross-domain/evaluation",
+      "llm/long-context"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2311.11944"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p408",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "evaluation"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2311.11944",
+    "canonical_path": "cross-domain/papers/arxiv-2311.11944/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2311.11944/README.md",
+    "source_path": "cross-domain/papers/arxiv-2311.11944/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Pranab Islam",
+      "Anand Kannappan",
+      "Douwe Kiela",
+      "Rebecca Qian",
+      "Nino Scherrer",
+      "Bertie Vidgen"
+    ]
+  },
+  {
+    "id": "arxiv:2311.12022",
+    "title": "GPQA: A Graduate-Level Google-Proof Q&A Benchmark",
+    "url": "https://arxiv.org/abs/2311.12022",
+    "arxiv_id": "2311.12022",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "cross-domain/evaluation",
+      "cross-domain/model-science"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2311.12022"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p409",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "evaluation"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2311.12022",
+    "canonical_path": "cross-domain/papers/arxiv-2311.12022/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2311.12022/README.md",
+    "source_path": "cross-domain/papers/arxiv-2311.12022/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "David Rein",
+      "Betty Li Hou",
+      "Asa Cooper Stickland",
+      "Jackson Petty",
+      "Richard Yuanzhe Pang",
+      "Julien Dirani",
+      "Julian Michael",
+      "Samuel R. Bowman"
+    ]
+  },
+  {
+    "id": "arxiv:2311.12983",
+    "title": "GAIA: a benchmark for General AI Assistants",
+    "url": "https://arxiv.org/abs/2311.12983",
+    "arxiv_id": "2311.12983",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "cross-domain/agents",
+      "cross-domain/evaluation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2311.12983"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p410",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2311.12983",
+    "canonical_path": "cross-domain/papers/arxiv-2311.12983/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2311.12983/README.md",
+    "source_path": "cross-domain/papers/arxiv-2311.12983/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Grégoire Mialon",
+      "Clémentine Fourrier",
+      "Craig Swift",
+      "Thomas Wolf",
+      "Yann LeCun",
+      "Thomas Scialom"
+    ]
+  },
+  {
+    "id": "arxiv:2401.01275",
+    "title": "CharacterEval: A Chinese Benchmark for Role-Playing Conversational Agent Evaluation",
+    "url": "https://arxiv.org/abs/2401.01275",
+    "arxiv_id": "2401.01275",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "cross-domain/evaluation",
+      "llm/posttraining/preferences"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2401.01275"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p411",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "evaluation"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2401.01275",
+    "canonical_path": "cross-domain/papers/arxiv-2401.01275/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2401.01275/README.md",
+    "source_path": "cross-domain/papers/arxiv-2401.01275/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Quan Tu",
+      "Shilong Fan",
+      "Zihang Tian",
+      "Rui Yan"
+    ]
+  },
+  {
+    "id": "arxiv:2402.04249",
+    "title": "HarmBench: A Standardized Evaluation Framework for Automated Red Teaming and Robust Refusal",
+    "url": "https://arxiv.org/abs/2402.04249",
+    "arxiv_id": "2402.04249",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "cross-domain/evaluation",
+      "llm/posttraining/preferences"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2402.04249"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p412",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "evaluation"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2402.04249",
+    "canonical_path": "cross-domain/papers/arxiv-2402.04249/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2402.04249/README.md",
+    "source_path": "cross-domain/papers/arxiv-2402.04249/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Mantas Mazeika",
+      "Long Phan",
+      "Xuwang Yin",
+      "Andy Zou",
+      "Zifan Wang",
+      "Norman Mu",
+      "Elham Sakhaee",
+      "Nathaniel Li",
+      "Steven Basart",
+      "Bo Li",
+      "David Forsyth",
+      "Dan Hendrycks"
+    ]
+  },
+  {
+    "id": "arxiv:2402.10260",
+    "title": "A StrongREJECT for Empty Jailbreaks",
+    "url": "https://arxiv.org/abs/2402.10260",
+    "arxiv_id": "2402.10260",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "cross-domain/evaluation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2402.10260"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p413",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "evaluation"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2402.10260",
+    "canonical_path": "cross-domain/papers/arxiv-2402.10260/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2402.10260/README.md",
+    "source_path": "cross-domain/papers/arxiv-2402.10260/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Alexandra Souly",
+      "Qingyuan Lu",
+      "Dillon Bowen",
+      "Tu Trinh",
+      "Elvis Hsieh",
+      "Sana Pandey",
+      "Pieter Abbeel",
+      "Justin Svegliato",
+      "Scott Emmons",
+      "Olivia Watkins",
+      "Sam Toyer"
+    ]
+  },
+  {
+    "id": "arxiv:2403.07974",
+    "title": "LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code",
+    "url": "https://arxiv.org/abs/2403.07974",
+    "arxiv_id": "2403.07974",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "cross-domain/evaluation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2403.07974"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p414",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "code"
+    ],
+    "task_tags": [
+      "evaluation"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2403.07974",
+    "canonical_path": "cross-domain/papers/arxiv-2403.07974/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2403.07974/README.md",
+    "source_path": "cross-domain/papers/arxiv-2403.07974/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Naman Jain",
+      "King Han",
+      "Alex Gu",
+      "Wen-Ding Li",
+      "Fanjia Yan",
+      "Tianjun Zhang",
+      "Sida Wang",
+      "Armando Solar-Lezama",
+      "Koushik Sen",
+      "Ion Stoica"
+    ]
+  },
+  {
+    "id": "arxiv:2404.04475",
+    "title": "Length-Controlled AlpacaEval: A Simple Way to Debias Automatic Evaluators",
+    "url": "https://arxiv.org/abs/2404.04475",
+    "arxiv_id": "2404.04475",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "cross-domain/evaluation",
+      "llm/posttraining/preferences"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2404.04475"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p415",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "evaluation"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2404.04475",
+    "canonical_path": "cross-domain/papers/arxiv-2404.04475/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2404.04475/README.md",
+    "source_path": "cross-domain/papers/arxiv-2404.04475/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Yann Dubois",
+      "Balázs Galambosi",
+      "Percy Liang",
+      "Tatsunori B. Hashimoto"
+    ]
+  },
+  {
+    "id": "arxiv:2404.07972",
+    "title": "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
+    "url": "https://arxiv.org/abs/2404.07972",
+    "arxiv_id": "2404.07972",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "cross-domain/agents",
+      "cross-domain/evaluation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2404.07972"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p416",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2404.07972",
+    "canonical_path": "cross-domain/papers/arxiv-2404.07972/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2404.07972/README.md",
+    "source_path": "cross-domain/papers/arxiv-2404.07972/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Tianbao Xie",
+      "Danyang Zhang",
+      "Jixuan Chen",
+      "Xiaochuan Li",
+      "Siheng Zhao",
+      "Ruisheng Cao",
+      "Toh Jing Hua",
+      "Zhoujun Cheng",
+      "Dongchan Shin",
+      "Fangyu Lei",
+      "等 17 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2405.00332",
+    "title": "A Careful Examination of Large Language Model Performance on Grade School Arithmetic",
+    "url": "https://arxiv.org/abs/2405.00332",
+    "arxiv_id": "2405.00332",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "cross-domain/evaluation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2405.00332"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p417",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "evaluation",
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2405.00332",
+    "canonical_path": "cross-domain/papers/arxiv-2405.00332/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2405.00332/README.md",
+    "source_path": "cross-domain/papers/arxiv-2405.00332/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Hugh Zhang",
+      "Jeff Da",
+      "Dean Lee",
+      "Vaughn Robinson",
+      "Catherine Wu",
+      "Will Song",
+      "Tiffany Zhao",
+      "Pranav Raja",
+      "Charlotte Zhuang",
+      "Dylan Slack",
+      "等 15 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2406.01574",
+    "title": "MMLU-Pro: A More Robust and Challenging Multi-Task Language Understanding Benchmark",
+    "url": "https://arxiv.org/abs/2406.01574",
+    "arxiv_id": "2406.01574",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "cross-domain/evaluation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2406.01574"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p418",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "evaluation"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2406.01574",
+    "canonical_path": "cross-domain/papers/arxiv-2406.01574/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2406.01574/README.md",
+    "source_path": "cross-domain/papers/arxiv-2406.01574/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Yubo Wang",
+      "Xueguang Ma",
+      "Ge Zhang",
+      "Yuansheng Ni",
+      "Abhranil Chandra",
+      "Shiguang Guo",
+      "Weiming Ren",
+      "Aaran Arulraj",
+      "Xuan He",
+      "Ziyan Jiang",
+      "等 17 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2406.12045",
+    "title": "τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains",
+    "url": "https://arxiv.org/abs/2406.12045",
+    "arxiv_id": "2406.12045",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "cross-domain/agents",
+      "cross-domain/evaluation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2406.12045"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p419",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2406.12045",
+    "canonical_path": "cross-domain/papers/arxiv-2406.12045/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2406.12045/README.md",
+    "source_path": "cross-domain/papers/arxiv-2406.12045/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Shunyu Yao",
+      "Noah Shinn",
+      "Pedram Razavi",
+      "Karthik Narasimhan"
+    ]
+  },
+  {
+    "id": "arxiv:2406.19314",
+    "title": "LiveBench: A Challenging, Contamination-Limited LLM Benchmark",
+    "url": "https://arxiv.org/abs/2406.19314",
+    "arxiv_id": "2406.19314",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "cross-domain/evaluation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2406.19314"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p420",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "evaluation"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2406.19314",
+    "canonical_path": "cross-domain/papers/arxiv-2406.19314/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2406.19314/README.md",
+    "source_path": "cross-domain/papers/arxiv-2406.19314/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Colin White",
+      "Samuel Dooley",
+      "Manley Roberts",
+      "Arka Pal",
+      "Ben Feuer",
+      "Siddhartha Jain",
+      "Ravid Shwartz-Ziv",
+      "Neel Jain",
+      "Khalid Saifullah",
+      "Sreemanti Dey",
+      "等 18 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2407.00215",
+    "title": "LLM Critics Help Catch LLM Bugs",
+    "url": "https://arxiv.org/abs/2407.00215",
+    "arxiv_id": "2407.00215",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "cross-domain/evaluation",
+      "llm/posttraining/preferences"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2407.00215"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p421",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "evaluation"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2407.00215",
+    "canonical_path": "cross-domain/papers/arxiv-2407.00215/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2407.00215/README.md",
+    "source_path": "cross-domain/papers/arxiv-2407.00215/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Nat McAleese",
+      "Rai Michael Pokorny",
+      "Juan Felipe Ceron Uribe",
+      "Evgenia Nitishinskaya",
+      "Maja Trebacz",
+      "Jan Leike"
+    ]
+  },
+  {
+    "id": "arxiv:2407.11470",
+    "title": "Beyond Correctness: Benchmarking Multi-dimensional Code Generation for Large Language Models",
+    "url": "https://arxiv.org/abs/2407.11470",
+    "arxiv_id": "2407.11470",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "cross-domain/evaluation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2407.11470"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p422",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "generation",
+      "evaluation"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2407.11470",
+    "canonical_path": "cross-domain/papers/arxiv-2407.11470/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2407.11470/README.md",
+    "source_path": "cross-domain/papers/arxiv-2407.11470/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Jiasheng Zheng",
+      "Boxi Cao",
+      "Zhengzhao Ma",
+      "Ruotong Pan",
+      "Hongyu Lin",
+      "Yaojie Lu",
+      "Xianpei Han",
+      "Le Sun"
+    ]
+  },
+  {
+    "id": "arxiv:2407.13168",
+    "title": "SciCode: A Research Coding Benchmark Curated by Scientists",
+    "url": "https://arxiv.org/abs/2407.13168",
+    "arxiv_id": "2407.13168",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "cross-domain/evaluation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2407.13168"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p423",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "generation",
+      "evaluation"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2407.13168",
+    "canonical_path": "cross-domain/papers/arxiv-2407.13168/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2407.13168/README.md",
+    "source_path": "cross-domain/papers/arxiv-2407.13168/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Minyang Tian",
+      "Luyu Gao",
+      "Shizhuo Dylan Zhang",
+      "Xinan Chen",
+      "Cunwei Fan",
+      "Xuefei Guo",
+      "Roland Haas",
+      "Pan Ji",
+      "Kittithat Krongchon",
+      "Yao Li",
+      "等 20 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2412.21139",
+    "title": "Training Software Engineering Agents and Verifiers with SWE-Gym",
+    "url": "https://arxiv.org/abs/2412.21139",
+    "arxiv_id": "2412.21139",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "cross-domain/agents",
+      "llm/posttraining/rl",
+      "llm/posttraining/sft"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2412.21139"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p424",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2412.21139",
+    "canonical_path": "cross-domain/papers/arxiv-2412.21139/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2412.21139/README.md",
+    "source_path": "cross-domain/papers/arxiv-2412.21139/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Jiayi Pan",
+      "Xingyao Wang",
+      "Graham Neubig",
+      "Navdeep Jaitly",
+      "Heng Ji",
+      "Alane Suhr",
+      "Yizhe Zhang"
+    ]
+  },
+  {
+    "id": "arxiv:2501.14249",
+    "title": "Humanity's Last Exam",
+    "url": "https://arxiv.org/abs/2501.14249",
+    "arxiv_id": "2501.14249",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "cross-domain/evaluation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2501.14249"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p425",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "evaluation"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2501.14249",
+    "canonical_path": "cross-domain/papers/arxiv-2501.14249/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2501.14249/README.md",
+    "source_path": "cross-domain/papers/arxiv-2501.14249/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Long Phan",
+      "Alice Gatti",
+      "Ziwen Han",
+      "Nathaniel Li",
+      "Josephina Hu",
+      "Hugh Zhang",
+      "Chen Bo Calvin Zhang",
+      "Mohamed Shaaban",
+      "John Ling",
+      "Sean Shi",
+      "等 1158 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2502.18449",
+    "title": "SWE-RL: Advancing LLM Reasoning via Reinforcement Learning on Open Software Evolution",
+    "url": "https://arxiv.org/abs/2502.18449",
+    "arxiv_id": "2502.18449",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "cross-domain/agents",
+      "llm/posttraining/rl"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2502.18449"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p426",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "decision",
+      "generation"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2502.18449",
+    "canonical_path": "cross-domain/papers/arxiv-2502.18449/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2502.18449/README.md",
+    "source_path": "cross-domain/papers/arxiv-2502.18449/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Yuxiang Wei",
+      "Olivier Duchenne",
+      "Jade Copet",
+      "Quentin Carbonneaux",
+      "Lingming Zhang",
+      "Daniel Fried",
+      "Gabriel Synnaeve",
+      "Rishabh Singh",
+      "Sida I. Wang"
+    ]
+  },
+  {
+    "id": "arxiv:2503.11926",
+    "title": "Monitoring Reasoning Models for Misbehavior and the Risks of Promoting Obfuscation",
+    "url": "https://arxiv.org/abs/2503.11926",
+    "arxiv_id": "2503.11926",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "cross-domain/agents",
+      "llm/posttraining/rl",
+      "cross-domain/evaluation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2503.11926"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p427",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "decision",
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2503.11926",
+    "canonical_path": "cross-domain/papers/arxiv-2503.11926/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2503.11926/README.md",
+    "source_path": "cross-domain/papers/arxiv-2503.11926/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Bowen Baker",
+      "Joost Huizinga",
+      "Leo Gao",
+      "Zehao Dou",
+      "Melody Y. Guan",
+      "Aleksander Madry",
+      "Wojciech Zaremba",
+      "Jakub Pachocki",
+      "David Farhi"
+    ]
+  },
+  {
+    "id": "arxiv:2503.24260",
+    "title": "MaintainCoder: Maintainable Code Generation Under Dynamic Requirements",
+    "url": "https://arxiv.org/abs/2503.24260",
+    "arxiv_id": "2503.24260",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "cross-domain/evaluation",
+      "cross-domain/agents"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2503.24260"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p428",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "generation",
+      "evaluation"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2503.24260",
+    "canonical_path": "cross-domain/papers/arxiv-2503.24260/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2503.24260/README.md",
+    "source_path": "cross-domain/papers/arxiv-2503.24260/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Zhengren Wang",
+      "Rui Ling",
+      "Chufan Wang",
+      "Yongan Yu",
+      "Sizhe Wang",
+      "Zhiyu Li",
+      "Feiyu Xiong",
+      "Wentao Zhang"
+    ]
+  },
+  {
+    "id": "arxiv:2504.20879",
+    "title": "The Leaderboard Illusion",
+    "url": "https://arxiv.org/abs/2504.20879",
+    "arxiv_id": "2504.20879",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "cross-domain/evaluation",
+      "llm/posttraining/preferences"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2504.20879"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p429",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "evaluation",
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2504.20879",
+    "canonical_path": "cross-domain/papers/arxiv-2504.20879/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2504.20879/README.md",
+    "source_path": "cross-domain/papers/arxiv-2504.20879/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Shivalika Singh",
+      "Yiyang Nan",
+      "Alex Wang",
+      "Daniel D'Souza",
+      "Sayash Kapoor",
+      "Ahmet Üstün",
+      "Sanmi Koyejo",
+      "Yuntian Deng",
+      "Shayne Longpre",
+      "Noah A. Smith",
+      "等 13 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2505.08775",
+    "title": "HealthBench: Evaluating Large Language Models Towards Improved Human Health",
+    "url": "https://arxiv.org/abs/2505.08775",
+    "arxiv_id": "2505.08775",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "cross-domain/evaluation",
+      "llm/posttraining/rl"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2505.08775"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p430",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "evaluation"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2505.08775",
+    "canonical_path": "cross-domain/papers/arxiv-2505.08775/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2505.08775/README.md",
+    "source_path": "cross-domain/papers/arxiv-2505.08775/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Rahul K. Arora",
+      "Jason Wei",
+      "Rebecca Soskin Hicks",
+      "Preston Bowman",
+      "Joaquin Quiñonero-Candela",
+      "Foivos Tsimpourlas",
+      "Michael Sharman",
+      "Meghan Shah",
+      "Andrea Vallone",
+      "Alex Beutel",
+      "Johannes Heidecke",
+      "Karan Singhal"
+    ]
+  },
+  {
+    "id": "arxiv:2507.02833",
+    "title": "Generalizing Verifiable Instruction Following",
+    "url": "https://arxiv.org/abs/2507.02833",
+    "arxiv_id": "2507.02833",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "cross-domain/evaluation",
+      "llm/posttraining/rl"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2507.02833"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p431",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation",
+      "evaluation"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2507.02833",
+    "canonical_path": "cross-domain/papers/arxiv-2507.02833/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2507.02833/README.md",
+    "source_path": "cross-domain/papers/arxiv-2507.02833/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Valentina Pyatkin",
+      "Saumya Malik",
+      "Victoria Graf",
+      "Hamish Ivison",
+      "Shengyi Huang",
+      "Pradeep Dasigi",
+      "Nathan Lambert",
+      "Hannaneh Hajishirzi"
+    ]
+  },
+  {
+    "id": "arxiv:2510.20270",
+    "title": "ImpossibleBench: Measuring LLMs' Propensity of Exploiting Test Cases",
+    "url": "https://arxiv.org/abs/2510.20270",
+    "arxiv_id": "2510.20270",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "cross-domain/evaluation",
+      "cross-domain/agents",
+      "llm/posttraining/rl"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2510.20270"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p432",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2510.20270",
+    "canonical_path": "cross-domain/papers/arxiv-2510.20270/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2510.20270/README.md",
+    "source_path": "cross-domain/papers/arxiv-2510.20270/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Ziqian Zhong",
+      "Aditi Raghunathan",
+      "Nicholas Carlini"
+    ]
+  },
+  {
+    "id": "arxiv:2511.18397",
+    "title": "Natural Emergent Misalignment from Reward Hacking in Production RL",
+    "url": "https://arxiv.org/abs/2511.18397",
+    "arxiv_id": "2511.18397",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "cross-domain/agents",
+      "llm/posttraining/rl",
+      "cross-domain/evaluation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2511.18397"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p433",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "decision",
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2511.18397",
+    "canonical_path": "cross-domain/papers/arxiv-2511.18397/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2511.18397/README.md",
+    "source_path": "cross-domain/papers/arxiv-2511.18397/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Monte MacDiarmid",
+      "Benjamin Wright",
+      "Jonathan Uesato",
+      "Joe Benton",
+      "Jon Kutasov",
+      "Sara Price",
+      "Naia Bouscal",
+      "Sam Bowman",
+      "Trenton Bricken",
+      "Alex Cloud",
+      "等 22 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2601.11868",
+    "title": "Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces",
+    "url": "https://arxiv.org/abs/2601.11868",
+    "arxiv_id": "2601.11868",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "cross-domain/agents",
+      "cross-domain/evaluation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2601.11868"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p434",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2601.11868",
+    "canonical_path": "cross-domain/papers/arxiv-2601.11868/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2601.11868/README.md",
+    "source_path": "cross-domain/papers/arxiv-2601.11868/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Mike A. Merrill",
+      "Alexander G. Shaw",
+      "Nicholas Carlini",
+      "Boxuan Li",
+      "Harsh Raj",
+      "Ivan Bercovich",
+      "Lin Shi",
+      "Jeong Yeon Shin",
+      "Thomas Walshe",
+      "E. Kelly Buchanan",
+      "等 85 位作者"
+    ]
+  },
+  {
+    "id": "url:https://openai.com/index/introducing-swe-bench-verified/",
+    "title": "Introducing SWE-bench Verified",
+    "url": "https://openai.com/index/introducing-swe-bench-verified/",
+    "arxiv_id": null,
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "cross-domain/evaluation",
+      "cross-domain/agents"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://openai.com/index/introducing-swe-bench-verified/"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "official_blog",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p435",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "code",
+      "text"
+    ],
+    "task_tags": [
+      "evaluation"
+    ],
+    "canonical_folder": "cross-domain/papers/openai-swe-bench-verified",
+    "canonical_path": "cross-domain/papers/openai-swe-bench-verified/README.md",
+    "canonical_readme": "cross-domain/papers/openai-swe-bench-verified/README.md",
+    "source_path": "cross-domain/papers/openai-swe-bench-verified/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Neil Chowdhury",
+      "James Aung",
+      "Chan Jun Shern",
+      "Oliver Jaffe",
+      "Dane Sherburn",
+      "Giulio Starace",
+      "Evan Mays",
+      "Rachel Dias",
+      "Marwan Aljubeh",
+      "Mia Glaese",
+      "等 16 位作者"
+    ]
+  },
+  {
+    "id": "url:https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/",
+    "title": "Why SWE-bench Verified no longer measures frontier coding capabilities",
+    "url": "https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/",
+    "arxiv_id": null,
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "cross-domain/evaluation",
+      "cross-domain/agents"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "official_blog",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p436",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "code",
+      "text"
+    ],
+    "task_tags": [
+      "evaluation",
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/papers/openai-swe-bench-verified-retired",
+    "canonical_path": "cross-domain/papers/openai-swe-bench-verified-retired/README.md",
+    "canonical_readme": "cross-domain/papers/openai-swe-bench-verified-retired/README.md",
+    "source_path": "cross-domain/papers/openai-swe-bench-verified-retired/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "OpenAI"
     ]
   }
 ]

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2311.12022",
+  "title": "GPQA: A Graduate-Level Google-Proof Q&A Benchmark",
+  "resource_kind": "paper",
+  "canonical_folder": "cross-domain/papers/arxiv-2311.12022",
+  "official_url": "https://arxiv.org/abs/2311.12022",
+  "official_fulltext_url": "https://arxiv.org/pdf/2311.12022",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了摘要、§1、§2 数据收集、§3 数据集统计（Diamond 定义）、§4 基线 Table 5、Limitations。不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "David Rein",
+    "Betty Li Hou",
+    "Asa Cooper Stickland",
+    "Jackson Petty",
+    "Richard Yuanzhe Pang",
+    "Julien Dirani",
+    "Julian Michael",
+    "Samuel R. Bowman"
+  ],
+  "year": 2023,
+  "topic_paths": [
+    "cross-domain/evaluation",
+    "cross-domain/model-science"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "文献卡。核验了摘要、§1、§2 数据收集、§3 数据集统计（Diamond 定义）、§4 基线 Table 5、Limitations。",
+    "mechanism_summary": "生物、物理、化学的博士（含在读）出题，经\"专家验证 → 修改 → 第二位专家验证 → 三位非专家验证\"四步；非专家是其他领域的博士，平均每题花 37 分钟、可用除 LLM 以外的任何网络资源。主集 448 题，筛选更严的 Diamond 子集 198 题。专家准确率 65%（扣除事后承认的明显失误为 74%），非专家 34%，GPT-4 few-shot CoT 39%（随机为 25%）。作者请求不要在网上以明文或图片公开题目，并在数据中加入 canary 字符串（一段特殊标记，供训练语料过滤）。自述局限：只有 448 题，要 50%→60% 这种量级的差别才有 80% 的统计功效；专家来自 Upwork，不代表科研实践中的题目分布。",
+    "evidence_boundary": "未复现实验；数字取自原文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2311.12022",
+      "https://arxiv.org/pdf/2311.12022v1"
+    ],
+    "source_origin": "evaluation_field_rewrite_phase3",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "evaluation"
+  ]
+}

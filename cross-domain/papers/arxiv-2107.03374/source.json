@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2107.03374",
+  "title": "Evaluating Large Language Models Trained on Code",
+  "resource_kind": "paper",
+  "canonical_folder": "cross-domain/papers/arxiv-2107.03374",
+  "official_url": "https://arxiv.org/abs/2107.03374",
+  "official_fulltext_url": "https://arxiv.org/pdf/2107.03374",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了摘要、§1、§2（pass@k 与无偏估计、HumanEval 构成）、§3.1 训练数据、§3–§4（Codex、Codex-S 结果）、§5 局限、§7.2 失配与图 12、附录 E。不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Mark Chen",
+    "Jerry Tworek",
+    "Heewoo Jun",
+    "Qiming Yuan",
+    "Henrique Ponde de Oliveira Pinto",
+    "Jared Kaplan",
+    "Harri Edwards",
+    "Yuri Burda",
+    "Nicholas Joseph",
+    "Greg Brockman",
+    "等 48 位作者"
+  ],
+  "year": 2021,
+  "topic_paths": [
+    "cross-domain/evaluation",
+    "llm/pretraining"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "文献卡。核验了摘要、§1、§2（pass@k 与无偏估计、HumanEval 构成）、§3.1 训练数据、§3–§4（Codex、Codex-S 结果）、§5 局限、§7.2 失配与图 12、附录 E。",
+    "mechanism_summary": "发布 HumanEval：164 道手写的 Python 函数题，每题含函数签名、docstring 和平均 7.7 个单元测试；手写是为了避开 GitHub 上已有的答案。指标用 pass@k（每题采 k 个样本、至少一个通过全部测试的概率，文中给出无偏估计），不用 BLEU，因为作者发现正确解与错误解的 BLEU 分布大量重叠。Codex 是在 5,400 万个公开仓库、过滤后 159GB 的 Python 文件上微调的 GPT 系列模型：12B 版本 pass@1 为 28.8%（GPT-3 为 0%，GPT-J 为 11.4%），每题采 100 个样本时 70.2% 的题至少有一个通过；再在正确实现的独立函数上做监督微调得到的 Codex-S 为 37.7%。作者自述的局限：docstring 描述长操作链、把操作绑定到变量时容易出错；§7.2 的\"失配\"：提示中的代码含细微 bug 时，Codex 会写出比自己能力更差的代码，加上\"写正确代码\"的指令也不能消除，且差距随模型增大而扩大。",
+    "evidence_boundary": "未复现实验；数字取自原文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2107.03374",
+      "https://arxiv.org/pdf/2107.03374v2"
+    ],
+    "source_origin": "evaluation_domains_phase3",
+    "relation_pages": [
+      "cross-domain/fields/evaluation/domains.md"
+    ]
+  },
+  "modality_tags": [
+    "text",
+    "code"
+  ],
+  "task_tags": [
+    "generation",
+    "evaluation"
+  ]
+}

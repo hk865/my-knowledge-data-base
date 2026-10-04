@@ -16,6 +16,8 @@
 | 架构与效率 | 注意力及其替代、MoE 与查表记忆、残差与归一化各用什么能力换效率；含 DeepSeek 架构线 | [入门](fields/architecture/README.md) |
 | 推理时计算 | 回答时多花算力（思维链、搜索、长思考）何时有效、何时失效，以及投机解码与服务效率 | [入门](fields/inference/README.md) |
 | 长上下文与记忆 | 位置编码、数据课程、后训练与推理成本四项验收，以及"窗口长度不等于长程能力" | [入门](fields/long-context/README.md) |
+| 评测（跨方向） | 评测怎样定义"好"，为什么会失效；能自动打分的评测怎样变成奖励与 RL 环境，进而塑造模型行为；各领域测什么 | [入门](../cross-domain/fields/evaluation/README.md) |
+| Agent（跨方向） | 编码与工具使用 agent 怎样从提示词走到后训练，agent 环境与奖励黑客 | [入门](../cross-domain/fields/agents/README.md) |
 
 结构与训练的跨领域关系见[注意力与 FFN 的分工](../foundations/relations/attention-ffn-division.md)和[循环状态](../foundations/relations/recurrent-state.md)；训练稳定性、规模定律等跨领域问题见[训练科学](../cross-domain/fields/training-science/README.md)。
 

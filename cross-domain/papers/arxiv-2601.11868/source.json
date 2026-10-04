@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2601.11868",
+  "title": "Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces",
+  "resource_kind": "paper",
+  "canonical_folder": "cross-domain/papers/arxiv-2601.11868",
+  "official_url": "https://arxiv.org/abs/2601.11868",
+  "official_fulltext_url": "https://arxiv.org/pdf/2601.11868",
+  "read_version": "v1",
+  "version_status": "checked_arxiv",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。arXiv v1 全文（pdftotext 抽取）：摘要、§1、§2.1–2.3、§3.1、§4、§5、附录 B.4–B.5、Table 2；官方 README 与 tbench.ai 2.0 发布说明；在线排行榜未读。 不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Mike A. Merrill",
+    "Alexander G. Shaw",
+    "Nicholas Carlini",
+    "Boxuan Li",
+    "Harsh Raj",
+    "Ivan Bercovich",
+    "Lin Shi",
+    "Jeong Yeon Shin",
+    "Thomas Walshe",
+    "E. Kelly Buchanan",
+    "等 85 位作者"
+  ],
+  "year": 2026,
+  "topic_paths": [
+    "cross-domain/agents",
+    "cross-domain/evaluation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv v1 全文（pdftotext 抽取）：摘要、§1、§2.1–2.3、§3.1、§4、§5、附录 B.4–B.5、Table 2；官方 README 与 tbench.ai 2.0 发布说明；在线排行榜未读。",
+    "mechanism_summary": "容器+指令+测试+参考解；2.0 版 89 任务三人审查；对抗作弊 agent 找漏洞；最好 62.9%（GPT-5.2+Codex CLI），开放权重最好 35.7%；模型比框架更重要；局限：外网依赖、污染防护弱、可能仍有坏任务。",
+    "evidence_boundary": "未复现实验；数字取自原文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2601.11868",
+      "https://arxiv.org/pdf/2601.11868"
+    ],
+    "source_origin": "agents_field_phase3_cards",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "text",
+    "code"
+  ],
+  "task_tags": [
+    "decision",
+    "evaluation"
+  ]
+}

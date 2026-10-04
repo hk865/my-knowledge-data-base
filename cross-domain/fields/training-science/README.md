@@ -107,7 +107,7 @@ benchmark 的替换反映了这个方向目标的迁移：从“能不能训起�
 
 1. [基础分区：优化](../../../foundations/fields/optimization/README.md)与[梯度与 SGD 讲义](../../../foundations/lessons/modules/optimization/gradient-sgd.md)第 7–8 节：先掌握优化器怎么算、曲率和鞍点是什么，本页每个节点都把它们当作研究对象。
 2. [Dauphin 等](https://arxiv.org/abs/1406.2572)与 [Garipov 等](https://arxiv.org/abs/1802.10026)：节点 2，地形研究怎样从“测量临界点”走到“发现解之间相连”。
-3. [Attention Is All You Need 精读](../../../llm/papers/transformer/reading.md)第 4 节，再读 [Xiong 等](https://arxiv.org/abs/2002.04745)：节点 3，一条经验配方（预热）怎样在三年后得到解释。
+3. [Attention Is All You Need 精读](../../../llm/papers/transformer/reading.md)第 4 节，再读 [Xiong 等](../../../llm/papers/arxiv-2002.04745/README.md)：节点 3，一条经验配方（预热）怎样在三年后得到解释。
 4. [Chinchilla 文献卡](../../papers/arxiv-2203.15556/README.md)，配合 [Kaplan 等](https://arxiv.org/abs/2001.08361)原文：节点 5，以及规模定律外推边界这个开放问题；读完可接[预训练方向](../../../llm/fields/pretraining/README.md)，看这些配比怎样落到具体模型上。
 5. [迁移与元学习讲义](../../../foundations/lessons/05c-transfer-meta-learning.md)第 4–6 节，再读 [InstructGPT 精读](../../../llm/papers/instructgpt/reading.md)第 6、8、11 节：节点 6、7 的两种做法，低秩适配与对偏离加约束。
 

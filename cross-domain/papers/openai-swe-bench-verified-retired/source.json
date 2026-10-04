@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "resource_id": "url:https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/",
+  "title": "Why SWE-bench Verified no longer measures frontier coding capabilities",
+  "resource_kind": "official_blog",
+  "canonical_folder": "cross-domain/papers/openai-swe-bench-verified-retired",
+  "official_url": "https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/",
+  "official_fulltext_url": "https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/",
+  "read_version": "2026-02-23",
+  "version_status": "checked_2026-02-23",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了官方页面全文（中文版页面 2026-02-23）：背景、过窄与过宽测试、数据污染、讨论。不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "OpenAI"
+  ],
+  "year": 2026,
+  "topic_paths": [
+    "cross-domain/evaluation",
+    "cross-domain/agents"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "文献卡。核验了官方页面全文（中文版页面 2026-02-23）：背景、过窄与过宽测试、数据污染、讨论。",
+    "mechanism_summary": "两项审查。一是复盘 o3 在 64 次独立运行中都没解出的 138 题（约占全集 27.6%），每题至少 6 位工程师审查：59.4% 有实质缺陷，其中 35.5% 的测试过窄（例如测试直接导入 issue 里从未提到的函数名），18.8% 过宽（测试覆盖 issue 没描述的其他修复），5.1% 为其他问题。二是污染：GPT-5.2 解出了此前认定几乎不可能的 31 题，思维链显示它知道相关版本的发布说明；用 GPT-5 作为探测者在 15 轮内诱导 GPT-5.2-Chat、Claude Opus 4.5、Gemini 3 Flash Preview，三家模型都在部分任务上复现出参考补丁或逐字背出任务描述。结论：分数提升越来越反映\"训练时见过多少题\"，OpenAI 停止报告该基准，改报 SWE-bench Pro 的公开子集，并建议发布 benchmark 时用密码保护、训练时严格遵守",
+    "evidence_boundary": "未复现实验；数字取自原文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/"
+    ],
+    "source_origin": "evaluation_field_rewrite_phase3",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "code",
+    "text"
+  ],
+  "task_tags": [
+    "evaluation",
+    "analysis"
+  ]
+}

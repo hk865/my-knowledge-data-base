@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2406.01574",
+  "title": "MMLU-Pro: A More Robust and Challenging Multi-Task Language Understanding Benchmark",
+  "resource_kind": "paper",
+  "canonical_folder": "cross-domain/papers/arxiv-2406.01574",
+  "official_url": "https://arxiv.org/abs/2406.01574",
+  "official_fulltext_url": "https://arxiv.org/pdf/2406.01574",
+  "read_version": "v6",
+  "version_status": "checked_v6",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了摘要、§1（饱和与三点归因）、§3 构造、主要发现、错误分析与 Limitations 一节。不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Yubo Wang",
+    "Xueguang Ma",
+    "Ge Zhang",
+    "Yuansheng Ni",
+    "Abhranil Chandra",
+    "Shiguang Guo",
+    "Weiming Ren",
+    "Aaran Arulraj",
+    "Xuan He",
+    "Ziyan Jiang",
+    "等 17 位作者"
+  ],
+  "year": 2024,
+  "topic_paths": [
+    "cross-domain/evaluation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "文献卡。核验了摘要、§1（饱和与三点归因）、§3 构造、主要发现、错误分析与 Limitations 一节。",
+    "mechanism_summary": "14 个领域 12,000 多题；选项从 4 个扩到 10 个，加入大学难度的推理题，两轮复核（先专家验证，再用当时最强的 LLM 找可疑题、由标注员定向复核）。准确率比 MMLU 下降 16%–33%；24 种提示风格下的分数波动从 4%–5% 降到 2%；思维链（CoT）让 GPT-4o 提高 19%，而在 MMLU 上 CoT 反而有害；GPT-4o 72.6%。对 GPT-4o 的 120 个错例：推理错误 39%，缺领域知识 35%，计算错误 12%。自述局限：仍是选择题，测不到开放式生成；只测文本。",
+    "evidence_boundary": "未复现实验；数字取自原文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2406.01574",
+      "https://arxiv.org/pdf/2406.01574v6"
+    ],
+    "source_origin": "evaluation_field_rewrite_phase3",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "evaluation"
+  ]
+}

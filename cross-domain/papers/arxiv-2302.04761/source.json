@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2302.04761",
+  "title": "Toolformer: Language Models Can Teach Themselves to Use Tools",
+  "resource_kind": "paper",
+  "canonical_folder": "cross-domain/papers/arxiv-2302.04761",
+  "official_url": "https://arxiv.org/abs/2302.04761",
+  "official_fulltext_url": "https://arxiv.org/pdf/2302.04761",
+  "read_version": "v1",
+  "version_status": "checked_arxiv",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。arXiv v1 HTML 全文：§1、§2（过滤准则）、§3（工具）、§4.1–4.2（基线与 Table 3–5）、§7 局限；NeurIPS 2023 页面核对作者。 不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Timo Schick",
+    "Jane Dwivedi-Yu",
+    "Roberto Dessì",
+    "Roberta Raileanu",
+    "Maria Lomeli",
+    "Luke Zettlemoyer",
+    "Nicola Cancedda",
+    "Thomas Scialom"
+  ],
+  "year": 2023,
+  "topic_paths": [
+    "cross-domain/agents",
+    "llm/posttraining/sft"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv v1 HTML 全文：§1、§2（过滤准则）、§3（工具）、§4.1–4.2（基线与 Table 3–5）、§7 局限；NeurIPS 2023 页面核对作者。",
+    "mechanism_summary": "自监督标注 API 调用并按损失下降过滤；GPT-J 基座；5 种工具；数学题超过 GPT-3，开放问答不如；局限：不能链式/交互、措辞敏感、样本效率低、忽略调用成本。",
+    "evidence_boundary": "未复现实验；数字取自原文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2302.04761",
+      "https://arxiv.org/pdf/2302.04761"
+    ],
+    "source_origin": "agents_field_phase3_cards",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "decision",
+    "generation"
+  ]
+}

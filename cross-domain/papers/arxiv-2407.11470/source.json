@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2407.11470",
+  "title": "Beyond Correctness: Benchmarking Multi-dimensional Code Generation for Large Language Models",
+  "resource_kind": "paper",
+  "canonical_folder": "cross-domain/papers/arxiv-2407.11470",
+  "official_url": "https://arxiv.org/abs/2407.11470",
+  "official_fulltext_url": "https://arxiv.org/pdf/2407.11470",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了摘要、§1 主要发现、§3（可读性、可维护性、效率的要求与判定方式）、§4 结论摘要。不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Jiasheng Zheng",
+    "Boxi Cao",
+    "Zhengzhao Ma",
+    "Ruotong Pan",
+    "Hongyu Lin",
+    "Yaojie Lu",
+    "Xianpei Han",
+    "Le Sun"
+  ],
+  "year": 2024,
+  "topic_paths": [
+    "cross-domain/evaluation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "文献卡。核验了摘要、§1 主要发现、§3（可读性、可维护性、效率的要求与判定方式）、§4 结论摘要。",
+    "mechanism_summary": "RACE 测四个维度：Readability、mAintainability、Correctness、Efficiency。可读性拆成代码长度、命名风格（驼峰或下划线）、注释粒度（行级或函数级）；可维护性用可维护性指数 MI（由 Halstead 体积、圈复杂度、代码行数与注释比例算出的 0–100 分）与模块化（要求用 1、2 或 3 个函数实现，用语法树数函数个数）；效率按给定的时间、空间复杂度要求打归一化分。每个维度都写成用户的具体要求，检查代码是否既正确又满足要求，判定用静态分析、正则与语法树。评测 28 个模型：只看正确性的 benchmark 看不到这些缺陷；要求一多，最强的代码模型也明显变差；多数模型有固有的代码风格偏好，用户要求与偏好不一致时难以遵从。",
+    "evidence_boundary": "未复现实验；数字取自原文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2407.11470",
+      "https://arxiv.org/pdf/2407.11470v2"
+    ],
+    "source_origin": "evaluation_domains_phase3",
+    "relation_pages": [
+      "cross-domain/fields/evaluation/domains.md"
+    ]
+  },
+  "modality_tags": [
+    "text",
+    "code"
+  ],
+  "task_tags": [
+    "generation",
+    "evaluation"
+  ]
+}

@@ -48,3 +48,45 @@
 - [Progress Measures for Grokking via Mechanistic Interpretability](papers/arxiv-2301.05217/README.md) · 2023 · 文献卡，暂无独立精读
 - [TPU v4: An Optically Reconfigurable Supercomputer for Machine Learning with Hardware Support for Embeddings](papers/arxiv-2304.01433/README.md) · 2023 · 文献卡，暂无独立精读
 - [How Do Large Language Models Acquire Factual Knowledge During Pretraining?](papers/arxiv-2406.11813/README.md) · 2024 · 文献卡，暂无独立精读
+- [System Card: Claude Opus 4 & Claude Sonnet 4](papers/anthropic-claude-4-system-card/README.md) · 2025 · 文献卡，暂无独立精读
+- [Measuring Massive Multitask Language Understanding](papers/arxiv-2009.03300/README.md) · 2020 · 文献卡，暂无独立精读
+- [Evaluating Large Language Models Trained on Code](papers/arxiv-2107.03374/README.md) · 2021 · 文献卡，暂无独立精读
+- [Holistic Evaluation of Language Models](papers/arxiv-2211.09110/README.md) · 2022 · 文献卡，暂无独立精读
+- [Large Language Models Encode Clinical Knowledge](papers/arxiv-2212.13138/README.md) · 2022 · 文献卡，暂无独立精读
+- [Toolformer: Language Models Can Teach Themselves to Use Tools](papers/arxiv-2302.04761/README.md) · 2023 · 文献卡，暂无独立精读
+- [Reflexion: Language Agents with Verbal Reinforcement Learning](papers/arxiv-2303.11366/README.md) · 2023 · 文献卡，暂无独立精读
+- [WebArena: A Realistic Web Environment for Building Autonomous Agents](papers/arxiv-2307.13854/README.md) · 2023 · 文献卡，暂无独立精读
+- [XSTest: A Test Suite for Identifying Exaggerated Safety Behaviours in Large Language Models](papers/arxiv-2308.01263/README.md) · 2023 · 文献卡，暂无独立精读
+- [LegalBench: A Collaboratively Built Benchmark for Measuring Legal Reasoning in Large Language Models](papers/arxiv-2308.11462/README.md) · 2023 · 文献卡，暂无独立精读
+- [SWE-bench: Can Language Models Resolve Real-World GitHub Issues?](papers/arxiv-2310.06770/README.md) · 2023 · 文献卡，暂无独立精读
+- [Proving Test Set Contamination in Black Box Language Models](papers/arxiv-2310.17623/README.md) · 2023 · 文献卡，暂无独立精读
+- [Instruction-Following Evaluation for Large Language Models](papers/arxiv-2311.07911/README.md) · 2023 · 文献卡，暂无独立精读
+- [FinanceBench: A New Benchmark for Financial Question Answering](papers/arxiv-2311.11944/README.md) · 2023 · 文献卡，暂无独立精读
+- [GPQA: A Graduate-Level Google-Proof Q&A Benchmark](papers/arxiv-2311.12022/README.md) · 2023 · 文献卡，暂无独立精读
+- [GAIA: a benchmark for General AI Assistants](papers/arxiv-2311.12983/README.md) · 2023 · 文献卡，暂无独立精读
+- [CharacterEval: A Chinese Benchmark for Role-Playing Conversational Agent Evaluation](papers/arxiv-2401.01275/README.md) · 2024 · 文献卡，暂无独立精读
+- [HarmBench: A Standardized Evaluation Framework for Automated Red Teaming and Robust Refusal](papers/arxiv-2402.04249/README.md) · 2024 · 文献卡，暂无独立精读
+- [A StrongREJECT for Empty Jailbreaks](papers/arxiv-2402.10260/README.md) · 2024 · 文献卡，暂无独立精读
+- [LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code](papers/arxiv-2403.07974/README.md) · 2024 · 文献卡，暂无独立精读
+- [Length-Controlled AlpacaEval: A Simple Way to Debias Automatic Evaluators](papers/arxiv-2404.04475/README.md) · 2024 · 文献卡，暂无独立精读
+- [OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments](papers/arxiv-2404.07972/README.md) · 2024 · 文献卡，暂无独立精读
+- [A Careful Examination of Large Language Model Performance on Grade School Arithmetic](papers/arxiv-2405.00332/README.md) · 2024 · 文献卡，暂无独立精读
+- [MMLU-Pro: A More Robust and Challenging Multi-Task Language Understanding Benchmark](papers/arxiv-2406.01574/README.md) · 2024 · 文献卡，暂无独立精读
+- [τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains](papers/arxiv-2406.12045/README.md) · 2024 · 文献卡，暂无独立精读
+- [LiveBench: A Challenging, Contamination-Limited LLM Benchmark](papers/arxiv-2406.19314/README.md) · 2024 · 文献卡，暂无独立精读
+- [LLM Critics Help Catch LLM Bugs](papers/arxiv-2407.00215/README.md) · 2024 · 文献卡，暂无独立精读
+- [Beyond Correctness: Benchmarking Multi-dimensional Code Generation for Large Language Models](papers/arxiv-2407.11470/README.md) · 2024 · 文献卡，暂无独立精读
+- [SciCode: A Research Coding Benchmark Curated by Scientists](papers/arxiv-2407.13168/README.md) · 2024 · 文献卡，暂无独立精读
+- [Training Software Engineering Agents and Verifiers with SWE-Gym](papers/arxiv-2412.21139/README.md) · 2024 · 文献卡，暂无独立精读
+- [Humanity's Last Exam](papers/arxiv-2501.14249/README.md) · 2025 · 文献卡，暂无独立精读
+- [SWE-RL: Advancing LLM Reasoning via Reinforcement Learning on Open Software Evolution](papers/arxiv-2502.18449/README.md) · 2025 · 文献卡，暂无独立精读
+- [Monitoring Reasoning Models for Misbehavior and the Risks of Promoting Obfuscation](papers/arxiv-2503.11926/README.md) · 2025 · 文献卡，暂无独立精读
+- [MaintainCoder: Maintainable Code Generation Under Dynamic Requirements](papers/arxiv-2503.24260/README.md) · 2025 · 文献卡，暂无独立精读
+- [The Leaderboard Illusion](papers/arxiv-2504.20879/README.md) · 2025 · 文献卡，暂无独立精读
+- [HealthBench: Evaluating Large Language Models Towards Improved Human Health](papers/arxiv-2505.08775/README.md) · 2025 · 文献卡，暂无独立精读
+- [Generalizing Verifiable Instruction Following](papers/arxiv-2507.02833/README.md) · 2025 · 文献卡，暂无独立精读
+- [ImpossibleBench: Measuring LLMs' Propensity of Exploiting Test Cases](papers/arxiv-2510.20270/README.md) · 2025 · 文献卡，暂无独立精读
+- [Natural Emergent Misalignment from Reward Hacking in Production RL](papers/arxiv-2511.18397/README.md) · 2025 · 文献卡，暂无独立精读
+- [Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces](papers/arxiv-2601.11868/README.md) · 2026 · 文献卡，暂无独立精读
+- [Introducing SWE-bench Verified](papers/openai-swe-bench-verified/README.md) · 2024 · 文献卡，暂无独立精读
+- [Why SWE-bench Verified no longer measures frontier coding capabilities](papers/openai-swe-bench-verified-retired/README.md) · 2026 · 文献卡，暂无独立精读

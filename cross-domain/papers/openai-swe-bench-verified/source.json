@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "resource_id": "url:https://openai.com/index/introducing-swe-bench-verified/",
+  "title": "Introducing SWE-bench Verified",
+  "resource_kind": "official_blog",
+  "canonical_folder": "cross-domain/papers/openai-swe-bench-verified",
+  "official_url": "https://openai.com/index/introducing-swe-bench-verified/",
+  "official_fulltext_url": "https://openai.com/index/introducing-swe-bench-verified/",
+  "read_version": "2024-08-13",
+  "version_status": "checked_2024-08-13",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了官方博客全文：背景、标注标准、构造方法、标注结果、难度分层、Discussion & Limitations。不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Neil Chowdhury",
+    "James Aung",
+    "Chan Jun Shern",
+    "Oliver Jaffe",
+    "Dane Sherburn",
+    "Giulio Starace",
+    "Evan Mays",
+    "Rachel Dias",
+    "Marwan Aljubeh",
+    "Mia Glaese",
+    "等 16 位作者"
+  ],
+  "year": 2024,
+  "topic_paths": [
+    "cross-domain/evaluation",
+    "cross-domain/agents"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "文献卡。核验了官方博客全文：背景、标注标准、构造方法、标注结果、难度分层、Discussion & Limitations。",
+    "mechanism_summary": "93 位有 Python 经验的开发者标注 1,699 个随机抽取的 SWE-bench 测试样本，每个样本由 3 人独立判断\"issue 描述是否不完整\"和\"fail-to-pass 测试是否会把正确解判错\"（各 0–3 级，取 3 人中最严重的）。38.3% 被标为描述不完整，61.1% 被标为测试可能误判正确解，合计 68.3% 被剔除；最终挑出 500 个样本作为 SWE-bench Verified，并配套容器化的评测环境。GPT-4o 在最佳开源脚手架上从原版的 16% 升到 33.2%。讨论一节写明：基于公开 GitHub 的静态数据集很可能已被预训练模型见过；同一模型换脚手架，SWE-bench Lite 上从 2.7% 到 28.3%，所以风险评估要把外部增强也算进去。",
+    "evidence_boundary": "未复现实验；数字取自原文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://openai.com/index/introducing-swe-bench-verified/"
+    ],
+    "source_origin": "evaluation_field_rewrite_phase3",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "code",
+    "text"
+  ],
+  "task_tags": [
+    "evaluation"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2303.11366",
+  "title": "Reflexion: Language Agents with Verbal Reinforcement Learning",
+  "resource_kind": "paper",
+  "canonical_folder": "cross-domain/papers/arxiv-2303.11366",
+  "official_url": "https://arxiv.org/abs/2303.11366",
+  "official_fulltext_url": "https://arxiv.org/pdf/2303.11366",
+  "read_version": "v4",
+  "version_status": "checked_arxiv",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。arXiv v4：摘要、§1、§4.1（ALFWorld）、§4.3 与 Table 1–2（编程与自测假阳性）、§5 局限；官方 GitHub README（许可与成本说明）。 不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Noah Shinn",
+    "Federico Cassano",
+    "Edward Berman",
+    "Ashwin Gopinath",
+    "Karthik Narasimhan",
+    "Shunyu Yao"
+  ],
+  "year": 2023,
+  "topic_paths": [
+    "cross-domain/agents",
+    "llm/inference"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv v4：摘要、§1、§4.1（ALFWorld）、§4.3 与 Table 1–2（编程与自测假阳性）、§5 局限；官方 GitHub README（许可与成本说明）。",
+    "mechanism_summary": "语言反思 + 情景记忆替代权重更新；ALFWorld 130/134；HumanEval 91 vs GPT-4 80；MBPP Python 自测假阳性 16.3% 导致低于 GPT-4（77.1 vs 80.1）；局限：局部最优、记忆窗口、测试驱动的适用面。",
+    "evidence_boundary": "未复现实验；数字取自原文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2303.11366",
+      "https://arxiv.org/pdf/2303.11366"
+    ],
+    "source_origin": "agents_field_phase3_cards",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "text",
+    "code"
+  ],
+  "task_tags": [
+    "decision"
+  ]
+}

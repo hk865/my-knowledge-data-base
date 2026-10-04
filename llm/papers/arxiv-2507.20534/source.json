@@ -41,7 +41,8 @@
   "year": 2025,
   "topic_paths": [
     "llm/pretraining",
-    "llm/posttraining/rl"
+    "llm/posttraining/rl",
+    "cross-domain/agents"
   ],
   "verification_2026_10_04": {
     "reading_scope": "arXiv 摘要页与 v2 PDF 选段：摘要、§1、§2.1（MuonClip、QK-Clip、Figure 2）、§2.2（改写，Table 1）、§2.3（结构、稀疏度规模定律、注意力头数）、§2.5 训练配方、§5 局限、附录 D",

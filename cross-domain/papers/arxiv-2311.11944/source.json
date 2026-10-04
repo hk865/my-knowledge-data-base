@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2311.11944",
+  "title": "FinanceBench: A New Benchmark for Financial Question Answering",
+  "resource_kind": "paper",
+  "canonical_folder": "cross-domain/papers/arxiv-2311.11944",
+  "official_url": "https://arxiv.org/abs/2311.11944",
+  "official_fulltext_url": "https://arxiv.org/pdf/2311.11944",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了摘要、§1、§3 数据构成、§4 模型配置（闭卷、共享/单独向量库、长上下文、oracle）、§5 表 2 结果与讨论。不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Pranab Islam",
+    "Anand Kannappan",
+    "Douwe Kiela",
+    "Rebecca Qian",
+    "Nino Scherrer",
+    "Bertie Vidgen"
+  ],
+  "year": 2023,
+  "topic_paths": [
+    "cross-domain/evaluation",
+    "llm/long-context"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "文献卡。核验了摘要、§1、§3 数据构成、§4 模型配置（闭卷、共享/单独向量库、长上下文、oracle）、§5 表 2 结果与讨论。",
+    "mechanism_summary": "10,231 个关于上市公司公开文件（年报等）的问题，附答案与证据段落；从中抽 150 例，人工复核 16 种模型配置的回答（共 2,400 条）。主表 8 种配置中，GPT-4-Turbo 闭卷只答对 9%；所有文件共用一个向量库检索时 19%（68% 拒答）；每份文件单独一个向量库 50%；把整份文件放进长上下文 79%；直接给证据页（oracle）85%。失败方式不同：Llama 2 多为答错（幻觉），GPT-4-Turbo 在检索设置下多为拒答。作者自述：长上下文做法在企业场景下延迟高，也放不下更大的文件；拿到正确信息后，模型仍会在推理上出错。",
+    "evidence_boundary": "未复现实验；数字取自原文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2311.11944",
+      "https://arxiv.org/pdf/2311.11944v1"
+    ],
+    "source_origin": "evaluation_domains_phase3",
+    "relation_pages": [
+      "cross-domain/fields/evaluation/domains.md"
+    ]
+  },
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "evaluation"
+  ]
+}

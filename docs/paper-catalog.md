@@ -1,6 +1,6 @@
 # 全库论文总目录
 
-共 394 个去重资源（373 篇论文、15 篇官方技术报告、1 个代码仓库、5 篇官方博客）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
+共 436 个去重资源（412 篇论文、16 篇官方技术报告、1 个代码仓库、7 篇官方博客）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
 
 身份核验、助手教学进度和用户阅读状态分开。历史来源保留原角色与证据局限，不将助手推荐写成用户提供，也不将教学完成写成用户已读。
 
@@ -2202,7 +2202,7 @@
 
 - 标识：arxiv:2507.20534
 - 原文 / 官方入口：https://arxiv.org/abs/2507.20534
-- 主题：llm/pretraining, llm/posttraining/rl
+- 主题：llm/pretraining, llm/posttraining/rl, cross-domain/agents
 - 身份核验：selected_sections_checked_not_full_read
 - 用户阅读状态：unknown
 - [文献卡](../llm/papers/arxiv-2507.20534/README.md)
@@ -4306,6 +4306,426 @@
 - 身份核验：selected_sections_checked_not_full_read
 - 用户阅读状态：unknown
 - [文献卡](../multimodal/papers/genie-3-blog/README.md)
+
+<a id="p395"></a>
+## p395 · System Card: Claude Opus 4 & Claude Sonnet 4
+
+- 标识：url:https://www-cdn.anthropic.com/07b2a3f9902ee19fe39a36ca638e5ae987bc64dd.pdf
+- 原文 / 官方入口：https://www-cdn.anthropic.com/07b2a3f9902ee19fe39a36ca638e5ae987bc64dd.pdf
+- 主题：cross-domain/agents, cross-domain/evaluation, llm/posttraining/rl
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/anthropic-claude-4-system-card/README.md)
+
+<a id="p396"></a>
+## p396 · Measuring Massive Multitask Language Understanding
+
+- 标识：arxiv:2009.03300
+- 原文 / 官方入口：https://arxiv.org/abs/2009.03300
+- 主题：cross-domain/evaluation, llm/pretraining
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2009.03300/README.md)
+
+<a id="p397"></a>
+## p397 · Evaluating Large Language Models Trained on Code
+
+- 标识：arxiv:2107.03374
+- 原文 / 官方入口：https://arxiv.org/abs/2107.03374
+- 主题：cross-domain/evaluation, llm/pretraining
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2107.03374/README.md)
+
+<a id="p398"></a>
+## p398 · Holistic Evaluation of Language Models
+
+- 标识：arxiv:2211.09110
+- 原文 / 官方入口：https://arxiv.org/abs/2211.09110
+- 主题：cross-domain/evaluation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2211.09110/README.md)
+
+<a id="p399"></a>
+## p399 · Large Language Models Encode Clinical Knowledge
+
+- 标识：arxiv:2212.13138
+- 原文 / 官方入口：https://arxiv.org/abs/2212.13138
+- 主题：cross-domain/evaluation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2212.13138/README.md)
+
+<a id="p400"></a>
+## p400 · Toolformer: Language Models Can Teach Themselves to Use Tools
+
+- 标识：arxiv:2302.04761
+- 原文 / 官方入口：https://arxiv.org/abs/2302.04761
+- 主题：cross-domain/agents, llm/posttraining/sft
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2302.04761/README.md)
+
+<a id="p401"></a>
+## p401 · Reflexion: Language Agents with Verbal Reinforcement Learning
+
+- 标识：arxiv:2303.11366
+- 原文 / 官方入口：https://arxiv.org/abs/2303.11366
+- 主题：cross-domain/agents, llm/inference
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2303.11366/README.md)
+
+<a id="p402"></a>
+## p402 · WebArena: A Realistic Web Environment for Building Autonomous Agents
+
+- 标识：arxiv:2307.13854
+- 原文 / 官方入口：https://arxiv.org/abs/2307.13854
+- 主题：cross-domain/agents, cross-domain/evaluation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2307.13854/README.md)
+
+<a id="p403"></a>
+## p403 · XSTest: A Test Suite for Identifying Exaggerated Safety Behaviours in Large Language Models
+
+- 标识：arxiv:2308.01263
+- 原文 / 官方入口：https://arxiv.org/abs/2308.01263
+- 主题：cross-domain/evaluation, llm/posttraining/preferences
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2308.01263/README.md)
+
+<a id="p404"></a>
+## p404 · LegalBench: A Collaboratively Built Benchmark for Measuring Legal Reasoning in Large Language Models
+
+- 标识：arxiv:2308.11462
+- 原文 / 官方入口：https://arxiv.org/abs/2308.11462
+- 主题：cross-domain/evaluation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2308.11462/README.md)
+
+<a id="p405"></a>
+## p405 · SWE-bench: Can Language Models Resolve Real-World GitHub Issues?
+
+- 标识：arxiv:2310.06770
+- 原文 / 官方入口：https://arxiv.org/abs/2310.06770
+- 主题：cross-domain/evaluation, cross-domain/agents
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2310.06770/README.md)
+
+<a id="p406"></a>
+## p406 · Proving Test Set Contamination in Black Box Language Models
+
+- 标识：arxiv:2310.17623
+- 原文 / 官方入口：https://arxiv.org/abs/2310.17623
+- 主题：cross-domain/evaluation, cross-domain/model-science
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2310.17623/README.md)
+
+<a id="p407"></a>
+## p407 · Instruction-Following Evaluation for Large Language Models
+
+- 标识：arxiv:2311.07911
+- 原文 / 官方入口：https://arxiv.org/abs/2311.07911
+- 主题：cross-domain/evaluation, llm/posttraining/sft, llm/posttraining/rl
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2311.07911/README.md)
+
+<a id="p408"></a>
+## p408 · FinanceBench: A New Benchmark for Financial Question Answering
+
+- 标识：arxiv:2311.11944
+- 原文 / 官方入口：https://arxiv.org/abs/2311.11944
+- 主题：cross-domain/evaluation, llm/long-context
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2311.11944/README.md)
+
+<a id="p409"></a>
+## p409 · GPQA: A Graduate-Level Google-Proof Q&A Benchmark
+
+- 标识：arxiv:2311.12022
+- 原文 / 官方入口：https://arxiv.org/abs/2311.12022
+- 主题：cross-domain/evaluation, cross-domain/model-science
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2311.12022/README.md)
+
+<a id="p410"></a>
+## p410 · GAIA: a benchmark for General AI Assistants
+
+- 标识：arxiv:2311.12983
+- 原文 / 官方入口：https://arxiv.org/abs/2311.12983
+- 主题：cross-domain/agents, cross-domain/evaluation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2311.12983/README.md)
+
+<a id="p411"></a>
+## p411 · CharacterEval: A Chinese Benchmark for Role-Playing Conversational Agent Evaluation
+
+- 标识：arxiv:2401.01275
+- 原文 / 官方入口：https://arxiv.org/abs/2401.01275
+- 主题：cross-domain/evaluation, llm/posttraining/preferences
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2401.01275/README.md)
+
+<a id="p412"></a>
+## p412 · HarmBench: A Standardized Evaluation Framework for Automated Red Teaming and Robust Refusal
+
+- 标识：arxiv:2402.04249
+- 原文 / 官方入口：https://arxiv.org/abs/2402.04249
+- 主题：cross-domain/evaluation, llm/posttraining/preferences
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2402.04249/README.md)
+
+<a id="p413"></a>
+## p413 · A StrongREJECT for Empty Jailbreaks
+
+- 标识：arxiv:2402.10260
+- 原文 / 官方入口：https://arxiv.org/abs/2402.10260
+- 主题：cross-domain/evaluation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2402.10260/README.md)
+
+<a id="p414"></a>
+## p414 · LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code
+
+- 标识：arxiv:2403.07974
+- 原文 / 官方入口：https://arxiv.org/abs/2403.07974
+- 主题：cross-domain/evaluation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2403.07974/README.md)
+
+<a id="p415"></a>
+## p415 · Length-Controlled AlpacaEval: A Simple Way to Debias Automatic Evaluators
+
+- 标识：arxiv:2404.04475
+- 原文 / 官方入口：https://arxiv.org/abs/2404.04475
+- 主题：cross-domain/evaluation, llm/posttraining/preferences
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2404.04475/README.md)
+
+<a id="p416"></a>
+## p416 · OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments
+
+- 标识：arxiv:2404.07972
+- 原文 / 官方入口：https://arxiv.org/abs/2404.07972
+- 主题：cross-domain/agents, cross-domain/evaluation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2404.07972/README.md)
+
+<a id="p417"></a>
+## p417 · A Careful Examination of Large Language Model Performance on Grade School Arithmetic
+
+- 标识：arxiv:2405.00332
+- 原文 / 官方入口：https://arxiv.org/abs/2405.00332
+- 主题：cross-domain/evaluation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2405.00332/README.md)
+
+<a id="p418"></a>
+## p418 · MMLU-Pro: A More Robust and Challenging Multi-Task Language Understanding Benchmark
+
+- 标识：arxiv:2406.01574
+- 原文 / 官方入口：https://arxiv.org/abs/2406.01574
+- 主题：cross-domain/evaluation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2406.01574/README.md)
+
+<a id="p419"></a>
+## p419 · τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains
+
+- 标识：arxiv:2406.12045
+- 原文 / 官方入口：https://arxiv.org/abs/2406.12045
+- 主题：cross-domain/agents, cross-domain/evaluation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2406.12045/README.md)
+
+<a id="p420"></a>
+## p420 · LiveBench: A Challenging, Contamination-Limited LLM Benchmark
+
+- 标识：arxiv:2406.19314
+- 原文 / 官方入口：https://arxiv.org/abs/2406.19314
+- 主题：cross-domain/evaluation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2406.19314/README.md)
+
+<a id="p421"></a>
+## p421 · LLM Critics Help Catch LLM Bugs
+
+- 标识：arxiv:2407.00215
+- 原文 / 官方入口：https://arxiv.org/abs/2407.00215
+- 主题：cross-domain/evaluation, llm/posttraining/preferences
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2407.00215/README.md)
+
+<a id="p422"></a>
+## p422 · Beyond Correctness: Benchmarking Multi-dimensional Code Generation for Large Language Models
+
+- 标识：arxiv:2407.11470
+- 原文 / 官方入口：https://arxiv.org/abs/2407.11470
+- 主题：cross-domain/evaluation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2407.11470/README.md)
+
+<a id="p423"></a>
+## p423 · SciCode: A Research Coding Benchmark Curated by Scientists
+
+- 标识：arxiv:2407.13168
+- 原文 / 官方入口：https://arxiv.org/abs/2407.13168
+- 主题：cross-domain/evaluation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2407.13168/README.md)
+
+<a id="p424"></a>
+## p424 · Training Software Engineering Agents and Verifiers with SWE-Gym
+
+- 标识：arxiv:2412.21139
+- 原文 / 官方入口：https://arxiv.org/abs/2412.21139
+- 主题：cross-domain/agents, llm/posttraining/rl, llm/posttraining/sft
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2412.21139/README.md)
+
+<a id="p425"></a>
+## p425 · Humanity's Last Exam
+
+- 标识：arxiv:2501.14249
+- 原文 / 官方入口：https://arxiv.org/abs/2501.14249
+- 主题：cross-domain/evaluation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2501.14249/README.md)
+
+<a id="p426"></a>
+## p426 · SWE-RL: Advancing LLM Reasoning via Reinforcement Learning on Open Software Evolution
+
+- 标识：arxiv:2502.18449
+- 原文 / 官方入口：https://arxiv.org/abs/2502.18449
+- 主题：cross-domain/agents, llm/posttraining/rl
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2502.18449/README.md)
+
+<a id="p427"></a>
+## p427 · Monitoring Reasoning Models for Misbehavior and the Risks of Promoting Obfuscation
+
+- 标识：arxiv:2503.11926
+- 原文 / 官方入口：https://arxiv.org/abs/2503.11926
+- 主题：cross-domain/agents, llm/posttraining/rl, cross-domain/evaluation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2503.11926/README.md)
+
+<a id="p428"></a>
+## p428 · MaintainCoder: Maintainable Code Generation Under Dynamic Requirements
+
+- 标识：arxiv:2503.24260
+- 原文 / 官方入口：https://arxiv.org/abs/2503.24260
+- 主题：cross-domain/evaluation, cross-domain/agents
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2503.24260/README.md)
+
+<a id="p429"></a>
+## p429 · The Leaderboard Illusion
+
+- 标识：arxiv:2504.20879
+- 原文 / 官方入口：https://arxiv.org/abs/2504.20879
+- 主题：cross-domain/evaluation, llm/posttraining/preferences
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2504.20879/README.md)
+
+<a id="p430"></a>
+## p430 · HealthBench: Evaluating Large Language Models Towards Improved Human Health
+
+- 标识：arxiv:2505.08775
+- 原文 / 官方入口：https://arxiv.org/abs/2505.08775
+- 主题：cross-domain/evaluation, llm/posttraining/rl
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2505.08775/README.md)
+
+<a id="p431"></a>
+## p431 · Generalizing Verifiable Instruction Following
+
+- 标识：arxiv:2507.02833
+- 原文 / 官方入口：https://arxiv.org/abs/2507.02833
+- 主题：cross-domain/evaluation, llm/posttraining/rl
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2507.02833/README.md)
+
+<a id="p432"></a>
+## p432 · ImpossibleBench: Measuring LLMs' Propensity of Exploiting Test Cases
+
+- 标识：arxiv:2510.20270
+- 原文 / 官方入口：https://arxiv.org/abs/2510.20270
+- 主题：cross-domain/evaluation, cross-domain/agents, llm/posttraining/rl
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2510.20270/README.md)
+
+<a id="p433"></a>
+## p433 · Natural Emergent Misalignment from Reward Hacking in Production RL
+
+- 标识：arxiv:2511.18397
+- 原文 / 官方入口：https://arxiv.org/abs/2511.18397
+- 主题：cross-domain/agents, llm/posttraining/rl, cross-domain/evaluation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2511.18397/README.md)
+
+<a id="p434"></a>
+## p434 · Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces
+
+- 标识：arxiv:2601.11868
+- 原文 / 官方入口：https://arxiv.org/abs/2601.11868
+- 主题：cross-domain/agents, cross-domain/evaluation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2601.11868/README.md)
+
+<a id="p435"></a>
+## p435 · Introducing SWE-bench Verified
+
+- 标识：url:https://openai.com/index/introducing-swe-bench-verified/
+- 原文 / 官方入口：https://openai.com/index/introducing-swe-bench-verified/
+- 主题：cross-domain/evaluation, cross-domain/agents
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/openai-swe-bench-verified/README.md)
+
+<a id="p436"></a>
+## p436 · Why SWE-bench Verified no longer measures frontier coding capabilities
+
+- 标识：url:https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/
+- 原文 / 官方入口：https://openai.com/index/why-we-no-longer-evaluate-swe-bench-verified/
+- 主题：cross-domain/evaluation, cross-domain/agents
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/openai-swe-bench-verified-retired/README.md)
 
 ## 2026年10月3日既有条目更新
 
