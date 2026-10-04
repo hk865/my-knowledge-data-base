@@ -111,3 +111,29 @@ CaMeL：把提示注入防御变成可执行的信息流约束,cross-domain/pape
 视觉语言动作模型：动作表示与实时执行,robotics-embodied/fields/vla/README.md
 LLM 推理：计算预算、草拟与验证,llm/fields/inference/README.md
 长上下文：结构、利用与执行成本,llm/fields/long-context/README.md
+2026-10-04：各方向从经典基线读到 2025–2026,daily/2026-10-04-direction-recency.md
+架构与效率,llm/fields/architecture/README.md
+后训练,llm/fields/posttraining/README.md
+监督微调 SFT,llm/fields/posttraining/sft/README.md
+语言模型强化学习,llm/fields/posttraining/rl/README.md
+偏好学习与奖励模型,llm/fields/posttraining/preferences/README.md
+视觉语言模型（VLM）,multimodal/fields/vlm/README.md
+视频与时序表征,multimodal/fields/video-temporal/README.md
+图文对齐,multimodal/fields/alignment/README.md
+世界模型（多模态侧）,multimodal/fields/world-models/README.md
+运动控制与腿足运动,robotics-embodied/fields/control-locomotion/README.md
+具身 Agent,robotics-embodied/fields/embodied-agents/README.md
+机器人感知,robotics-embodied/fields/perception/README.md
+模仿学习与机器人强化学习,robotics-embodied/fields/imitation-reinforcement-learning/README.md
+世界模型（机器人侧）,robotics-embodied/fields/world-models/README.md
+导航与规划,robotics-embodied/fields/navigation-planning/README.md
+定位与建图,robotics-embodied/fields/localization-mapping/README.md
+知识蒸馏：让一个模型学另一个模型,cross-domain/fields/knowledge-distillation/README.md
+Agent：语言模型智能体,cross-domain/fields/agents/README.md
+机制与可信解释（已并入模型科学）,cross-domain/fields/interpretability/README.md
+评估：评测怎样测量模型，又怎样变成训练目标,cross-domain/fields/evaluation/README.md
+架构与信息流,foundations/fields/architectures/README.md
+任务、损失与监督,foundations/fields/objectives/README.md
+进阶连接,foundations/fields/advanced/README.md
+数据与实验流程,foundations/fields/data/README.md
+优化与参数更新,foundations/fields/optimization/README.md

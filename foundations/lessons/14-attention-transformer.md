@@ -1160,4 +1160,6 @@ Multi-Query Attention，即 MQA，让多个 query 头共享同一组 K/V；Group
 
 本文已经给出理解单次注意力和 Transformer 主干所需的完整基础。若要进一步讨论“Q、K 是否一定要独立投影”“能否改写为一个匹配矩阵”“为什么有匹配还需要 V”等参数化问题，可在读完后继续阅读 [QKV 独立模块](15-qkv-deep-dive.md)。
 
+往近期机制继续时，先读 [Gated Attention（2025）](../../llm/papers/arxiv-2505.06708/README.md)：保留本章的 softmax 读取，在每个头的输出后增加内容门，检验第 9–10 节的计算分工还能怎样改。再读 [Engram（2026）](../../llm/papers/arxiv-2601.07372/README.md)：把第 10.1 节的 FFN 记忆读法推进到显式查表，看静态存储与条件计算如何配合。两篇的机制、证据和阅读位置见[架构地图的近期延伸](../fields/architectures/README.md#学完基础后怎样读-20252026-的机制改动)。
+
 [返回学习导航](00-learning-navigation.md) · [返回架构模块地图](01-architectures.md)

@@ -24,6 +24,13 @@
 - [OLMo: Accelerating the Science of Language Models](../../../llm/papers/arxiv-2402.00838/README.md) · 2024 · 文献卡
 - [2 OLMo 2 Furious](../../../llm/papers/arxiv-2501.00656/README.md) · 2024 · 文献卡
 
+## 2025–2026 的问题线
+
+- [Muon is Scalable for LLM Training](../../../llm/papers/arxiv-2502.16982/README.md) · 2025 · 文献卡；优化器如何改变计算最优曲线
+- [Kimi K3: Open Frontier Intelligence](../../../llm/papers/arxiv-2607.24653/README.md) · 2026 · 文献卡；按头优化与分别调参的规模比较
+- [Olmo 3](../../../llm/papers/arxiv-2512.13961/README.md) · 2025，2026 修订 · 文献卡；开放中间检查点与分阶段训练研究
+- [Towards Thinking-Optimal Scaling of Test-Time Compute for LLM Reasoning](../../../llm/papers/arxiv-2502.18080/README.md) · 2025 · 文献卡；推理长度的收益与过度思考边界
+
 ## 综合表中尚无文献卡的论文
 
 这些论文已按原文填入 [synthesis.csv](synthesis.csv)，仓库里还没有单篇目录。

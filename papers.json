@@ -123,7 +123,8 @@
     "year": "2025",
     "topic_paths": [
       "llm/inference",
-      "llm/posttraining/sft"
+      "llm/posttraining/sft",
+      "cross-domain/training-science"
     ],
     "detail_topics": [
       "inference/test-time scaling",
@@ -15107,7 +15108,8 @@
     "doi": null,
     "year": "2025",
     "topic_paths": [
-      "llm/pretraining"
+      "llm/pretraining",
+      "cross-domain/training-science"
     ],
     "detail_topics": [],
     "architecture_tags": [],
@@ -15500,7 +15502,9 @@
     "topic_paths": [
       "llm/pretraining",
       "llm/architecture",
-      "llm/long-context"
+      "llm/long-context",
+      "cross-domain/training-science",
+      "multimodal/vlm"
     ],
     "detail_topics": [],
     "architecture_tags": [],
@@ -18943,7 +18947,8 @@
     "year": "2025",
     "topic_paths": [
       "multimodal/world-models",
-      "robotics/embodied-policies"
+      "robotics/embodied-policies",
+      "multimodal/video-temporal"
     ],
     "detail_topics": [],
     "architecture_tags": [],
@@ -31278,7 +31283,8 @@
     "year": "2026",
     "topic_paths": [
       "llm/architecture",
-      "llm/long-context"
+      "llm/long-context",
+      "multimodal/vlm"
     ],
     "detail_topics": [],
     "architecture_tags": [],
@@ -31533,7 +31539,8 @@
       "llm/pretraining",
       "llm/posttraining/sft",
       "llm/posttraining/preferences",
-      "llm/posttraining/rl"
+      "llm/posttraining/rl",
+      "cross-domain/training-science"
     ],
     "detail_topics": [],
     "architecture_tags": [],
@@ -31698,7 +31705,8 @@
     "year": "2026",
     "topic_paths": [
       "llm/inference",
-      "llm/posttraining/rl"
+      "llm/posttraining/rl",
+      "multimodal/vlm"
     ],
     "detail_topics": [],
     "architecture_tags": [],
@@ -35521,6 +35529,1057 @@
       "Fei Wang",
       "Shan You",
       "Taotao Cai"
+    ]
+  },
+  {
+    "id": "arxiv:2504.11393",
+    "title": "DataDecide: How to Predict Best Pretraining Data with Small Experiments",
+    "url": "https://arxiv.org/abs/2504.11393",
+    "arxiv_id": "2504.11393",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "llm/pretraining"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2504.11393"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p562",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation",
+      "analysis"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2504.11393",
+    "canonical_path": "llm/papers/arxiv-2504.11393/README.md",
+    "canonical_readme": "llm/papers/arxiv-2504.11393/README.md",
+    "source_path": "llm/papers/arxiv-2504.11393/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Ian Magnusson",
+      "Nguyen Tai",
+      "Ben Bogin",
+      "David Heineman",
+      "Jena D. Hwang",
+      "Luca Soldaini",
+      "Akshita Bhagia",
+      "Jiacheng Liu",
+      "Dirk Groeneveld",
+      "Oyvind Tafjord",
+      "Noah A. Smith",
+      "Pang Wei Koh",
+      "Jesse Dodge"
+    ]
+  },
+  {
+    "id": "arxiv:2506.20920",
+    "title": "FineWeb2: One Pipeline to Scale Them All -- Adapting Pre-Training Data Processing to Every Language",
+    "url": "https://arxiv.org/abs/2506.20920",
+    "arxiv_id": "2506.20920",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "llm/pretraining"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2506.20920"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p563",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation",
+      "analysis"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2506.20920",
+    "canonical_path": "llm/papers/arxiv-2506.20920/README.md",
+    "canonical_readme": "llm/papers/arxiv-2506.20920/README.md",
+    "source_path": "llm/papers/arxiv-2506.20920/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Guilherme Penedo",
+      "Hynek Kydlíček",
+      "Vinko Sabolčec",
+      "Bettina Messmer",
+      "Negar Foroutan",
+      "Amir Hossein Kargaran",
+      "Colin Raffel",
+      "Martin Jaggi",
+      "Leandro Von Werra",
+      "Thomas Wolf"
+    ]
+  },
+  {
+    "id": "arxiv:2606.06888",
+    "title": "Data-Constrained Language Model Pretraining: Improved Regularization and Scaling Laws",
+    "url": "https://arxiv.org/abs/2606.06888",
+    "arxiv_id": "2606.06888",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "llm/pretraining"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2606.06888"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p564",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation",
+      "analysis"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2606.06888",
+    "canonical_path": "llm/papers/arxiv-2606.06888/README.md",
+    "canonical_readme": "llm/papers/arxiv-2606.06888/README.md",
+    "source_path": "llm/papers/arxiv-2606.06888/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Zhiwei Xu",
+      "Shihao Wu",
+      "Hanseul Cho",
+      "Wei Hu",
+      "Yixin Wang"
+    ]
+  },
+  {
+    "id": "arxiv:2609.04172",
+    "title": "Rethinking On-Policy Distillation of Large Language Models II: One Training Example",
+    "url": "https://arxiv.org/abs/2609.04172",
+    "arxiv_id": "2609.04172",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "llm/posttraining/sft"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2609.04172"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p565",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation",
+      "analysis"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2609.04172",
+    "canonical_path": "llm/papers/arxiv-2609.04172/README.md",
+    "canonical_readme": "llm/papers/arxiv-2609.04172/README.md",
+    "source_path": "llm/papers/arxiv-2609.04172/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Zixuan Fu",
+      "Bingxiang He",
+      "Yuxin Zuo",
+      "Haohuan Huang",
+      "Jinqian Zhang",
+      "Ruhang Xiao",
+      "Cheng Qian",
+      "Qinyu Luo",
+      "Huan-ang Gao",
+      "Yudong Wang",
+      "Zhiyuan Liu",
+      "Ning Ding",
+      "Chaojun Xiao"
+    ]
+  },
+  {
+    "id": "arxiv:2609.37326",
+    "title": "Solving Without Stopping: On-Policy Distillation at Small Scale",
+    "url": "https://arxiv.org/abs/2609.37326",
+    "arxiv_id": "2609.37326",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "llm/posttraining/sft"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2609.37326"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p566",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation",
+      "analysis"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2609.37326",
+    "canonical_path": "llm/papers/arxiv-2609.37326/README.md",
+    "canonical_readme": "llm/papers/arxiv-2609.37326/README.md",
+    "source_path": "llm/papers/arxiv-2609.37326/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Hongyang Li",
+      "Yiming Zhu",
+      "Xiao Li",
+      "Caesar Wu",
+      "Said Mammar",
+      "Pascal Bouvry"
+    ]
+  },
+  {
+    "id": "arxiv:2505.13447",
+    "title": "Mean Flows for One-step Generative Modeling",
+    "url": "https://arxiv.org/abs/2505.13447",
+    "arxiv_id": "2505.13447",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "multimodal/generation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2505.13447"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p567",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2505.13447",
+    "canonical_path": "multimodal/papers/arxiv-2505.13447/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2505.13447/README.md",
+    "source_path": "multimodal/papers/arxiv-2505.13447/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Zhengyang Geng",
+      "Mingyang Deng",
+      "Xingjian Bai",
+      "J. Zico Kolter",
+      "Kaiming He"
+    ]
+  },
+  {
+    "id": "arxiv:2507.22062",
+    "title": "Meta CLIP 2: A Worldwide Scaling Recipe",
+    "url": "https://arxiv.org/abs/2507.22062",
+    "arxiv_id": "2507.22062",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "multimodal/alignment"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2507.22062"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p568",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2507.22062",
+    "canonical_path": "multimodal/papers/arxiv-2507.22062/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2507.22062/README.md",
+    "source_path": "multimodal/papers/arxiv-2507.22062/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Yung-Sung Chuang",
+      "Yang Li",
+      "Dong Wang",
+      "Ching-Feng Yeh",
+      "Kehan Lyu",
+      "Ramya Raghavendra",
+      "James Glass",
+      "Lifei Huang",
+      "Jason Weston",
+      "Luke Zettlemoyer",
+      "Xinlei Chen",
+      "Zhuang Liu",
+      "Saining Xie",
+      "Wen-tau Yih",
+      "Shang-Wen Li",
+      "Hu Xu"
+    ]
+  },
+  {
+    "id": "arxiv:2509.24527",
+    "title": "Training Agents Inside of Scalable World Models",
+    "url": "https://arxiv.org/abs/2509.24527",
+    "arxiv_id": "2509.24527",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "multimodal/world-models"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2509.24527"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p569",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "video",
+      "action"
+    ],
+    "task_tags": [
+      "generation",
+      "decision"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2509.24527",
+    "canonical_path": "multimodal/papers/arxiv-2509.24527/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2509.24527/README.md",
+    "source_path": "multimodal/papers/arxiv-2509.24527/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Danijar Hafner",
+      "Wilson Yan",
+      "Timothy Lillicrap"
+    ]
+  },
+  {
+    "id": "arxiv:2510.11690",
+    "title": "Diffusion Transformers with Representation Autoencoders",
+    "url": "https://arxiv.org/abs/2510.11690",
+    "arxiv_id": "2510.11690",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "multimodal/generation",
+      "multimodal/visual-representation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2510.11690"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p570",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2510.11690",
+    "canonical_path": "multimodal/papers/arxiv-2510.11690/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2510.11690/README.md",
+    "source_path": "multimodal/papers/arxiv-2510.11690/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Boyang Zheng",
+      "Nanye Ma",
+      "Shengbang Tong",
+      "Saining Xie"
+    ]
+  },
+  {
+    "id": "arxiv:2511.00062",
+    "title": "World Simulation with Video Foundation Models for Physical AI",
+    "url": "https://arxiv.org/abs/2511.00062",
+    "arxiv_id": "2511.00062",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "multimodal/world-models",
+      "multimodal/generation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2511.00062"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "",
+    "resource_kind": "official_technical_report",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p571",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "video",
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2511.00062",
+    "canonical_path": "multimodal/papers/arxiv-2511.00062/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2511.00062/README.md",
+    "source_path": "multimodal/papers/arxiv-2511.00062/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "NVIDIA",
+      "Arslan Ali",
+      "Junjie Bai",
+      "et al."
+    ]
+  },
+  {
+    "id": "arxiv:2601.04720",
+    "title": "Qwen3-VL-Embedding and Qwen3-VL-Reranker: A Unified Framework for State-of-the-Art Multimodal Retrieval and Ranking",
+    "url": "https://arxiv.org/abs/2601.04720",
+    "arxiv_id": "2601.04720",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "multimodal/alignment",
+      "multimodal/vlm"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2601.04720"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "",
+    "resource_kind": "official_technical_report",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p572",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "image",
+      "video"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2601.04720",
+    "canonical_path": "multimodal/papers/arxiv-2601.04720/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2601.04720/README.md",
+    "source_path": "multimodal/papers/arxiv-2601.04720/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Mingxin Li",
+      "Yanzhao Zhang",
+      "Dingkun Long",
+      "Keqin Chen",
+      "Sibo Song",
+      "Shuai Bai",
+      "Zhibo Yang",
+      "Pengjun Xie",
+      "An Yang",
+      "Dayiheng Liu",
+      "Jingren Zhou",
+      "Junyang Lin"
+    ]
+  },
+  {
+    "id": "arxiv:2601.16208",
+    "title": "Scaling Text-to-Image Diffusion Transformers with Representation Autoencoders",
+    "url": "https://arxiv.org/abs/2601.16208",
+    "arxiv_id": "2601.16208",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "multimodal/generation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2601.16208"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p573",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2601.16208",
+    "canonical_path": "multimodal/papers/arxiv-2601.16208/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2601.16208/README.md",
+    "source_path": "multimodal/papers/arxiv-2601.16208/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Shengbang Tong",
+      "Boyang Zheng",
+      "Ziteng Wang",
+      "Bingda Tang",
+      "Nanye Ma",
+      "Ellis Brown",
+      "Jihan Yang",
+      "Rob Fergus",
+      "Yann LeCun",
+      "Saining Xie"
+    ]
+  },
+  {
+    "id": "arxiv:2606.02800",
+    "title": "Cosmos 3: Omnimodal World Models for Physical AI",
+    "url": "https://arxiv.org/abs/2606.02800",
+    "arxiv_id": "2606.02800",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "multimodal/world-models",
+      "multimodal/generation",
+      "multimodal/vlm"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2606.02800"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "",
+    "resource_kind": "official_technical_report",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p574",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "image",
+      "video",
+      "audio",
+      "action"
+    ],
+    "task_tags": [
+      "understanding",
+      "generation",
+      "decision"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2606.02800",
+    "canonical_path": "multimodal/papers/arxiv-2606.02800/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2606.02800/README.md",
+    "source_path": "multimodal/papers/arxiv-2606.02800/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "NVIDIA",
+      "Aditi",
+      "Niket Agarwal",
+      "et al."
+    ]
+  },
+  {
+    "id": "arxiv:2606.12195",
+    "title": "InternVideo3: Agentify Foundation Models with Multimodal Contextual Reasoning",
+    "url": "https://arxiv.org/abs/2606.12195",
+    "arxiv_id": "2606.12195",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "multimodal/video-temporal",
+      "multimodal/vlm"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2606.12195"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p575",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "video",
+      "text"
+    ],
+    "task_tags": [
+      "understanding",
+      "decision"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2606.12195",
+    "canonical_path": "multimodal/papers/arxiv-2606.12195/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2606.12195/README.md",
+    "source_path": "multimodal/papers/arxiv-2606.12195/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Ziang Yan",
+      "Sheng Xia",
+      "Jiashuo Yu",
+      "Yue Wu",
+      "Tianxiang Jiang",
+      "Songze Li",
+      "Kanghui Tian",
+      "Yicheng Xu",
+      "Yinan He",
+      "Kai Chen",
+      "Limin Wang",
+      "Yu Qiao",
+      "Yi Wang"
+    ]
+  },
+  {
+    "id": "arxiv:2609.25611",
+    "title": "Qwen3.8-Omni: Towards Native Omni-Modal Agents",
+    "url": "https://arxiv.org/abs/2609.25611",
+    "arxiv_id": "2609.25611",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "multimodal/vlm",
+      "multimodal/video-temporal"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2609.25611"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "",
+    "resource_kind": "official_technical_report",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p576",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "image",
+      "video",
+      "audio"
+    ],
+    "task_tags": [
+      "understanding",
+      "decision"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2609.25611",
+    "canonical_path": "multimodal/papers/arxiv-2609.25611/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2609.25611/README.md",
+    "source_path": "multimodal/papers/arxiv-2609.25611/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Qwen Team"
+    ]
+  },
+  {
+    "id": "arxiv:2512.11130",
+    "title": "Fast-FoundationStereo: Real-Time Zero-Shot Stereo Matching",
+    "url": "https://arxiv.org/abs/2512.11130",
+    "arxiv_id": "2512.11130",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/perception",
+      "cross-domain/knowledge-distillation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2512.11130"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p577",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2512.11130",
+    "canonical_path": "robotics-embodied/papers/arxiv-2512.11130/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2512.11130/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2512.11130/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Bowen Wen",
+      "Shaurya Dewan",
+      "Stan Birchfield"
+    ]
+  },
+  {
+    "id": "arxiv:2512.24497",
+    "title": "What Drives Success in Physical Planning with Joint-Embedding Predictive World Models?",
+    "url": "https://arxiv.org/abs/2512.24497",
+    "arxiv_id": "2512.24497",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/embodied-policies",
+      "multimodal/world-models"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2512.24497"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p578",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "video",
+      "action",
+      "state"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2512.24497",
+    "canonical_path": "robotics-embodied/papers/arxiv-2512.24497/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2512.24497/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2512.24497/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Basile Terver",
+      "Tsung-Yen Yang",
+      "Jean Ponce",
+      "Adrien Bardes",
+      "Yann LeCun"
+    ]
+  },
+  {
+    "id": "arxiv:2606.24457",
+    "title": "Lite Any Stereo V2: Faster and Stronger Efficient Zero-Shot Stereo Matching",
+    "url": "https://arxiv.org/abs/2606.24457",
+    "arxiv_id": "2606.24457",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/perception",
+      "cross-domain/knowledge-distillation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2606.24457"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p579",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2606.24457",
+    "canonical_path": "robotics-embodied/papers/arxiv-2606.24457/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2606.24457/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2606.24457/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Junpeng Jing",
+      "Ronglai Zuo",
+      "Zhelun Shen",
+      "Shangchen Zhou",
+      "Rolandos Alexandros Potamias",
+      "Stefanos Zafeiriou",
+      "Krystian Mikolajczyk",
+      "Jiankang Deng"
+    ]
+  },
+  {
+    "id": "arxiv:2609.31577",
+    "title": "Generate, Track, Improve: Perceptive Multi-Skill Humanoid Locomotion with RL-Fine-Tuned Motion Generators",
+    "url": "https://arxiv.org/abs/2609.31577",
+    "arxiv_id": "2609.31577",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/control",
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2609.31577"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p580",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state",
+      "action"
+    ],
+    "task_tags": [
+      "decision",
+      "generation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2609.31577",
+    "canonical_path": "robotics-embodied/papers/arxiv-2609.31577/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2609.31577/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2609.31577/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Zachary Olkin",
+      "William D. Compton",
+      "Aaron D. Ames"
+    ]
+  },
+  {
+    "id": "arxiv:2609.39235",
+    "title": "The Planning Limits of Latent World Models",
+    "url": "https://arxiv.org/abs/2609.39235",
+    "arxiv_id": "2609.39235",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/embodied-policies",
+      "multimodal/world-models"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2609.39235"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p581",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "video",
+      "state",
+      "action"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2609.39235",
+    "canonical_path": "robotics-embodied/papers/arxiv-2609.39235/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2609.39235/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2609.39235/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Ali Alrasheed",
+      "Basim Azam",
+      "Naveed Akhtar"
     ]
   }
 ]

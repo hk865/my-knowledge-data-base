@@ -1,6 +1,6 @@
 # 全库论文总目录
 
-共 561 个去重资源（493 篇论文、29 篇官方技术报告、5 个代码仓库、15 篇官方博客、15 份官方技术文档、4 篇作者文章）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
+共 581 个去重资源（509 篇论文、33 篇官方技术报告、5 个代码仓库、15 篇官方博客、15 份官方技术文档、4 篇作者文章）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
 
 身份核验、助手教学进度和用户阅读状态分开。历史来源保留原角色与证据局限，不将助手推荐写成用户提供，也不将教学完成写成用户已读。
 
@@ -23,7 +23,7 @@
 
 - 标识：arxiv:2502.18080
 - 原文 / 官方入口：https://arxiv.org/abs/2502.18080
-- 主题：llm/inference, llm/posttraining/sft
+- 主题：llm/inference, llm/posttraining/sft, cross-domain/training-science
 - 来源：assistant-provided-exact-link
 - 身份核验：verified_primary_title_and_identifier
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
@@ -2182,7 +2182,7 @@
 
 - 标识：arxiv:2502.16982
 - 原文 / 官方入口：https://arxiv.org/abs/2502.16982
-- 主题：llm/pretraining
+- 主题：llm/pretraining, cross-domain/training-science
 - 身份核验：selected_sections_checked_not_full_read
 - 用户阅读状态：unknown
 - [文献卡](../llm/papers/arxiv-2502.16982/README.md)
@@ -2252,7 +2252,7 @@
 
 - 标识：arxiv:2607.24653
 - 原文 / 官方入口：https://arxiv.org/abs/2607.24653
-- 主题：llm/pretraining, llm/architecture, llm/long-context
+- 主题：llm/pretraining, llm/architecture, llm/long-context, cross-domain/training-science, multimodal/vlm
 - 身份核验：selected_sections_checked_not_full_read
 - 用户阅读状态：unknown
 - [文献卡](../llm/papers/arxiv-2607.24653/README.md)
@@ -2922,7 +2922,7 @@
 
 - 标识：arxiv:2506.09985
 - 原文 / 官方入口：https://arxiv.org/abs/2506.09985
-- 主题：multimodal/world-models, robotics/embodied-policies
+- 主题：multimodal/world-models, robotics/embodied-policies, multimodal/video-temporal
 - 身份核验：selected_method_sections_checked_not_full_read
 - 用户阅读状态：unknown
 - [文献卡](../robotics-embodied/papers/arxiv-2506.09985/README.md)
@@ -5262,7 +5262,7 @@
 
 - 标识：url:https://huggingface.co/Qwen/Qwen3.5-397B-A17B
 - 原文 / 官方入口：https://huggingface.co/Qwen/Qwen3.5-397B-A17B
-- 主题：llm/architecture, llm/long-context
+- 主题：llm/architecture, llm/long-context, multimodal/vlm
 - 身份核验：selected_sections_checked_not_full_read
 - 用户阅读状态：unknown
 - [文献卡](../llm/papers/qwen3.5/README.md)
@@ -5312,7 +5312,7 @@
 
 - 标识：arxiv:2512.13961
 - 原文 / 官方入口：https://arxiv.org/abs/2512.13961
-- 主题：llm/pretraining, llm/posttraining/sft, llm/posttraining/preferences, llm/posttraining/rl
+- 主题：llm/pretraining, llm/posttraining/sft, llm/posttraining/preferences, llm/posttraining/rl, cross-domain/training-science
 - 身份核验：selected_sections_checked_not_full_read
 - 用户阅读状态：unknown
 - [文献卡](../llm/papers/arxiv-2512.13961/README.md)
@@ -5342,7 +5342,7 @@
 
 - 标识：arxiv:2602.02276
 - 原文 / 官方入口：https://arxiv.org/abs/2602.02276
-- 主题：llm/inference, llm/posttraining/rl
+- 主题：llm/inference, llm/posttraining/rl, multimodal/vlm
 - 身份核验：selected_sections_checked_not_full_read
 - 用户阅读状态：unknown
 - [文献卡](../llm/papers/arxiv-2602.02276/README.md)
@@ -5976,6 +5976,206 @@
 - 身份核验：selected_sections_checked_not_full_read
 - 用户阅读状态：unknown
 - [文献卡](../robotics-embodied/papers/arxiv-2609.25562/README.md)
+
+<a id="p562"></a>
+## p562 · DataDecide: How to Predict Best Pretraining Data with Small Experiments
+
+- 标识：arxiv:2504.11393
+- 原文 / 官方入口：https://arxiv.org/abs/2504.11393
+- 主题：llm/pretraining
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2504.11393/README.md)
+
+<a id="p563"></a>
+## p563 · FineWeb2: One Pipeline to Scale Them All -- Adapting Pre-Training Data Processing to Every Language
+
+- 标识：arxiv:2506.20920
+- 原文 / 官方入口：https://arxiv.org/abs/2506.20920
+- 主题：llm/pretraining
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2506.20920/README.md)
+
+<a id="p564"></a>
+## p564 · Data-Constrained Language Model Pretraining: Improved Regularization and Scaling Laws
+
+- 标识：arxiv:2606.06888
+- 原文 / 官方入口：https://arxiv.org/abs/2606.06888
+- 主题：llm/pretraining
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2606.06888/README.md)
+
+<a id="p565"></a>
+## p565 · Rethinking On-Policy Distillation of Large Language Models II: One Training Example
+
+- 标识：arxiv:2609.04172
+- 原文 / 官方入口：https://arxiv.org/abs/2609.04172
+- 主题：llm/posttraining/sft
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2609.04172/README.md)
+
+<a id="p566"></a>
+## p566 · Solving Without Stopping: On-Policy Distillation at Small Scale
+
+- 标识：arxiv:2609.37326
+- 原文 / 官方入口：https://arxiv.org/abs/2609.37326
+- 主题：llm/posttraining/sft
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2609.37326/README.md)
+
+<a id="p567"></a>
+## p567 · Mean Flows for One-step Generative Modeling
+
+- 标识：arxiv:2505.13447
+- 原文 / 官方入口：https://arxiv.org/abs/2505.13447
+- 主题：multimodal/generation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2505.13447/README.md)
+
+<a id="p568"></a>
+## p568 · Meta CLIP 2: A Worldwide Scaling Recipe
+
+- 标识：arxiv:2507.22062
+- 原文 / 官方入口：https://arxiv.org/abs/2507.22062
+- 主题：multimodal/alignment
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2507.22062/README.md)
+
+<a id="p569"></a>
+## p569 · Training Agents Inside of Scalable World Models
+
+- 标识：arxiv:2509.24527
+- 原文 / 官方入口：https://arxiv.org/abs/2509.24527
+- 主题：multimodal/world-models
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2509.24527/README.md)
+
+<a id="p570"></a>
+## p570 · Diffusion Transformers with Representation Autoencoders
+
+- 标识：arxiv:2510.11690
+- 原文 / 官方入口：https://arxiv.org/abs/2510.11690
+- 主题：multimodal/generation, multimodal/visual-representation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2510.11690/README.md)
+
+<a id="p571"></a>
+## p571 · World Simulation with Video Foundation Models for Physical AI
+
+- 标识：arxiv:2511.00062
+- 原文 / 官方入口：https://arxiv.org/abs/2511.00062
+- 主题：multimodal/world-models, multimodal/generation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2511.00062/README.md)
+
+<a id="p572"></a>
+## p572 · Qwen3-VL-Embedding and Qwen3-VL-Reranker: A Unified Framework for State-of-the-Art Multimodal Retrieval and Ranking
+
+- 标识：arxiv:2601.04720
+- 原文 / 官方入口：https://arxiv.org/abs/2601.04720
+- 主题：multimodal/alignment, multimodal/vlm
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2601.04720/README.md)
+
+<a id="p573"></a>
+## p573 · Scaling Text-to-Image Diffusion Transformers with Representation Autoencoders
+
+- 标识：arxiv:2601.16208
+- 原文 / 官方入口：https://arxiv.org/abs/2601.16208
+- 主题：multimodal/generation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2601.16208/README.md)
+
+<a id="p574"></a>
+## p574 · Cosmos 3: Omnimodal World Models for Physical AI
+
+- 标识：arxiv:2606.02800
+- 原文 / 官方入口：https://arxiv.org/abs/2606.02800
+- 主题：multimodal/world-models, multimodal/generation, multimodal/vlm
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2606.02800/README.md)
+
+<a id="p575"></a>
+## p575 · InternVideo3: Agentify Foundation Models with Multimodal Contextual Reasoning
+
+- 标识：arxiv:2606.12195
+- 原文 / 官方入口：https://arxiv.org/abs/2606.12195
+- 主题：multimodal/video-temporal, multimodal/vlm
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2606.12195/README.md)
+
+<a id="p576"></a>
+## p576 · Qwen3.8-Omni: Towards Native Omni-Modal Agents
+
+- 标识：arxiv:2609.25611
+- 原文 / 官方入口：https://arxiv.org/abs/2609.25611
+- 主题：multimodal/vlm, multimodal/video-temporal
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2609.25611/README.md)
+
+<a id="p577"></a>
+## p577 · Fast-FoundationStereo: Real-Time Zero-Shot Stereo Matching
+
+- 标识：arxiv:2512.11130
+- 原文 / 官方入口：https://arxiv.org/abs/2512.11130
+- 主题：robotics/perception, cross-domain/knowledge-distillation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2512.11130/README.md)
+
+<a id="p578"></a>
+## p578 · What Drives Success in Physical Planning with Joint-Embedding Predictive World Models?
+
+- 标识：arxiv:2512.24497
+- 原文 / 官方入口：https://arxiv.org/abs/2512.24497
+- 主题：robotics/embodied-policies, multimodal/world-models
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2512.24497/README.md)
+
+<a id="p579"></a>
+## p579 · Lite Any Stereo V2: Faster and Stronger Efficient Zero-Shot Stereo Matching
+
+- 标识：arxiv:2606.24457
+- 原文 / 官方入口：https://arxiv.org/abs/2606.24457
+- 主题：robotics/perception, cross-domain/knowledge-distillation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2606.24457/README.md)
+
+<a id="p580"></a>
+## p580 · Generate, Track, Improve: Perceptive Multi-Skill Humanoid Locomotion with RL-Fine-Tuned Motion Generators
+
+- 标识：arxiv:2609.31577
+- 原文 / 官方入口：https://arxiv.org/abs/2609.31577
+- 主题：robotics/control, robotics/embodied-policies
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2609.31577/README.md)
+
+<a id="p581"></a>
+## p581 · The Planning Limits of Latent World Models
+
+- 标识：arxiv:2609.39235
+- 原文 / 官方入口：https://arxiv.org/abs/2609.39235
+- 主题：robotics/embodied-policies, multimodal/world-models
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2609.39235/README.md)
 
 ## 2026年10月3日既有条目更新
 
