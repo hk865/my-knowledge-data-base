@@ -34,3 +34,13 @@
 - [PIN-WM: Learning Physics-INformed World Models for Non-Prehensile Manipulation](doi-10.15607-rss.2025.xxi.153/README.md) · 年份见原文 · 文献卡，暂无独立精读
 - [World Models for Robotic Manipulation: A Survey](doi-10.1002-smb2.70053/README.md) · 年份见原文 · 文献卡，暂无独立精读
 - [Reconstruction or Semantics? What Makes a Latent Space Useful for Robotic World Models](arxiv-2605.06388/README.md) · 年份见原文 · 文献卡，暂无独立精读
+- [Imagen Video: High Definition Video Generation with Diffusion Models](arxiv-2210.02303/README.md) · 2022 · 文献卡，暂无独立精读
+- [Genie: Generative Interactive Environments](arxiv-2402.15391/README.md) · 2024 · 文献卡，暂无独立精读
+- [HunyuanVideo: A Systematic Framework For Large Video Generative Models](arxiv-2412.03603/README.md) · 2024 · 文献卡，暂无独立精读
+- [Cosmos World Foundation Model Platform for Physical AI](arxiv-2501.03575/README.md) · 2025 · 文献卡，暂无独立精读
+- [Wan: Open and Advanced Large-Scale Video Generative Models](arxiv-2503.20314/README.md) · 2025 · 文献卡，暂无独立精读
+- [Seedance 1.0: Exploring the Boundaries of Video Generation Models](arxiv-2506.09113/README.md) · 2025 · 文献卡，暂无独立精读
+- [Kling-Omni Technical Report](arxiv-2512.16776/README.md) · 2025 · 文献卡，暂无独立精读
+- [Seedance 2.0: Advancing Video Generation for World Complexity](arxiv-2604.14148/README.md) · 2026 · 文献卡，暂无独立精读
+- [Video generation models as world simulators](sora-tech-report/README.md) · 2024 · 文献卡，暂无独立精读
+- [Veo: a text-to-video generation system](veo3-tech-report/README.md) · 2025 · 文献卡，暂无独立精读

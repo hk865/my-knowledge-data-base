@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2604.14148",
+  "title": "Seedance 2.0: Advancing Video Generation for World Complexity",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2604.14148",
+  "official_url": "https://arxiv.org/abs/2604.14148",
+  "official_fulltext_url": "https://arxiv.org/pdf/2604.14148v1",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "ByteDance Seed"
+  ],
+  "year": 2026,
+  "topic_paths": [
+    "multimodal/generation",
+    "multimodal/video-temporal"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "Sec.1 全文、Sec.2.1 总体评测结论与\"仍需改进\"段、物理规律（Table 17 附近）、编辑与续写评测段落",
+    "mechanism_summary": "2026 年 2 月在中国发布的原生多模态音视频联合生成模型；支持文本、图像、音频、视频四种输入，4–15 秒，480p 与 720p，参考输入最多 3 段视频、9 张图、3 段音频；有 Fast 变体；报告未写结构、参数量与数据；自述仍需改进：轻微形变伪影、边缘情形的运动合理性、高频视觉噪声、音频失真、多人说话时口型错误；物理规律类考题对所有被测模型都难；编辑任务共同失败为不响应编辑或误改非编辑区域；续写有颜色不一致、主体遗漏与重复。",
+    "evidence_boundary": "只写官方材料中明确写出的内容；官方未写的参数量、数据规模等记为开放问题，不推测。未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2604.14148",
+      "https://arxiv.org/pdf/2604.14148v1"
+    ],
+    "source_origin": "review1_generative_convergence_update",
+    "relation_pages": [
+      "perspectives/generative-convergence.md",
+      "multimodal/fields/generation/README.md"
+    ]
+  },
+  "modality_tags": [
+    "video",
+    "audio",
+    "multimodal"
+  ],
+  "task_tags": [
+    "generation"
+  ]
+}

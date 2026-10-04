@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2412.03603",
+  "title": "HunyuanVideo: A Systematic Framework For Large Video Generative Models",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2412.03603",
+  "official_url": "https://arxiv.org/abs/2412.03603",
+  "official_fulltext_url": "https://arxiv.org/pdf/2412.03603v6",
+  "read_version": "v6",
+  "version_status": "checked_v6",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Hunyuan Foundation Model Team (Tencent)"
+  ],
+  "year": 2024,
+  "topic_paths": [
+    "multimodal/generation",
+    "multimodal/video-temporal"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "Abstract、Sec.1、数据过滤与微调数据、模型结构（因果 3D VAE、双流到单流、MLLM 文本编码器）、流匹配训练、缩放实验概述、Sec.6.1 人工评测 Table 3",
+    "mechanism_summary": "13B 参数视频生成模型并开源代码与权重；因果 3D VAE；先双流后单流的 Transformer；decoder-only 多模态大模型作文本编码器；流匹配；视频五阶段逐步提高分辨率（256×256×65 到 720×1280×129），最后用 100 万条人工标注片段微调；自述随意扩大数据、算力、参数效率不够，提出缩放策略最多省 5 倍算力；60 位专业评测者、1533 条提示对比 Gen-3、Luma 1.6 与三个匿名中国商业模型，总体排名第一，优势在运动质量。",
+    "evidence_boundary": "只写官方材料中明确写出的内容；官方未写的参数量、数据规模等记为开放问题，不推测。未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2412.03603",
+      "https://arxiv.org/pdf/2412.03603v6"
+    ],
+    "source_origin": "review1_generative_convergence_update",
+    "relation_pages": [
+      "perspectives/generative-convergence.md",
+      "multimodal/fields/generation/README.md"
+    ]
+  },
+  "modality_tags": [
+    "video",
+    "image",
+    "multimodal"
+  ],
+  "task_tags": [
+    "generation"
+  ]
+}

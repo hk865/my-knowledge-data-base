@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2512.16776",
+  "title": "Kling-Omni Technical Report",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2512.16776",
+  "official_url": "https://arxiv.org/abs/2512.16776",
+  "official_fulltext_url": "https://arxiv.org/pdf/2512.16776v1",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Kling Team, Kuaishou Technology"
+  ],
+  "year": 2025,
+  "topic_paths": [
+    "multimodal/generation",
+    "multimodal/video-temporal"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "Abstract、Sec.1、Sec.2 总体结构、Sec.2.2 蒸馏、Sec.2.3 提示增强、基础设施一节中 VAE/文本编码器与 DiT 训练的流水线描述",
+    "mechanism_summary": "模型 ID Kling-Omni（Kling-O1），2025-12-18；提出多模态视觉语言（MVL）交互：文本作语义骨架，配合参考图像与视频；结构为 MLLM 提示增强器 + 在共享嵌入空间处理视觉与文本 token 的 Omni-Generator + 多模态超分辨率；指令预训练、SFT、强化学习；两阶段蒸馏到 10 步；引言列出现有视频模型的三类短板（任务割裂、文本描述不了精确空间关系与视觉参照、缺乏对物理与逻辑的理解）；参数量与数据规模未写。",
+    "evidence_boundary": "只写官方材料中明确写出的内容；官方未写的参数量、数据规模等记为开放问题，不推测。未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2512.16776",
+      "https://arxiv.org/pdf/2512.16776v1"
+    ],
+    "source_origin": "review1_generative_convergence_update",
+    "relation_pages": [
+      "perspectives/generative-convergence.md",
+      "multimodal/fields/generation/README.md"
+    ]
+  },
+  "modality_tags": [
+    "video",
+    "image",
+    "multimodal"
+  ],
+  "task_tags": [
+    "generation"
+  ]
+}

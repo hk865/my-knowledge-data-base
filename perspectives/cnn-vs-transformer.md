@@ -1,6 +1,13 @@
 # Transformer 靠通用性与可规模化成为通用主干，CNN 在数据少、算力小和端侧场景仍然占优
 
 > 状态：观点 · 草稿 · 2026-10-04
+>
+> 速览：
+> - 两类主干共用同一套残差连接，差别在归纳偏置：卷积把局部性和平移等变写进每一层，自注意力在第一层就让每个位置读取全部位置。
+> - 先验的价值随数据规模变化：在 JFT-300M 的 9M 张子集上，ViT 不如计算量相近的 ResNet，到 90M 张以上反超。
+> - [判断] Transformer 成为通用主干，主要靠跨模态的统一（文本、图像块、图像潜变量、音频都成为 token）和大规模下可预测的扩展。
+> - 在 ImageNet 规模上，配上现代训练配方的 CNN（ConvNeXt）能追平并超过 Swin，两者差距的相当部分来自训练配方与数据。
+> - 数据少时 CNN 仍占优，计算预算小时卷积前端加 Transformer 的混合模型略好；[判断] 端侧与实时场景多用经过系统优化的 CNN。卷积还留在 ViT、DiT、Whisper 等新结构的入口处。
 
 ## 一句话
 
@@ -57,6 +64,7 @@ CNN 与 Transformer 用同一套残差连接传递梯度，真正的差别在归
 - **端侧与实时场景的 CNN 优势，在与视觉 Transformer 同条件对比时还成立吗？** 本库现有的三篇证据都早于 ViT。入口：[视觉表征领域页](../multimodal/fields/visual-representation/README.md)。
 - **注意力的二次方成本，能否换成固定大小的递推状态？** 线性注意力、状态空间模型和 Mamba 都在回答这个问题。入口：[递推状态谱系](../foundations/relations/recurrent-state.md)、[Mamba 精读](../llm/papers/mamba/reading.md)。
 - **视频生成的主干会不会也从卷积 U-Net 转向 Transformer？** 入口：[生成的收敛](generative-convergence.md)。
+- **团队转向 Transformer，是否也因为它上面的基础研究与可解释性研究更多？** 这是用户提出、尚待检验的假说，检验方案见思考笔记[研究方向为何收敛](notes/research-convergence.md)。
 
 ## 批注
 

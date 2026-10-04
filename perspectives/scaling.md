@@ -1,6 +1,12 @@
 # 深度学习走向规模化，靠的是算力、能随数据增长的训练信号和可预测的训练工程
 
 > 状态：观点 · 草稿 · 2026-10-04
+>
+> 速览：
+> - [判断] 规模化靠三件先后到位的事：便宜的大规模矩阵运算（算力）、随原始数据一起增长的训练信号（自监督），以及让大网络稳定训练、结果能事先估计的训练工程。
+> - 算力这条线依次缓解了三个瓶颈：制程让单芯片变强；设计结构（为矩阵乘法特化的计算单元、堆叠在计算芯片旁的高带宽内存）让计算和内存带宽跟上；通信（机内与机间互连）让上千块芯片协同。瓶颈每移动一次，并行方式和模型结构就跟着适应，例如 MoE 的路由被限制在少数节点之内。
+> - 按训练信号的来源分三个阶段：手工特征加小数据、有监督深度学习、自监督预训练与生成。每个阶段做不好的场景，正是下一阶段的出发点。
+> - 语言、视觉和生成在流程、主干部件和训练配方上收敛，在预训练目标的形式、规模定律的成熟度和评测口径上仍然不同。
 
 ## 一句话
 
@@ -11,6 +17,19 @@
 **1. 算力与数据（2009 年起，视觉在先、语言在后）**
 
 ImageNet（2009 年发布、按 WordNet 名词层级组织的大规模标注图库）和以它为基础的 ILSVRC 竞赛（2010 年起每年举办，约 120 万张训练图、1000 类）第一次给出了足以训练深网络的标注量和一个所有团队共用的 benchmark。AlexNet（2012）在两块 GPU 上训练，ILSVRC-2012 的 top-5 错误率为 15.3%，用 Fisher 向量手工特征的第二名为 26.2%（[视觉表征领域页](../multimodal/fields/visual-representation/README.md)的 AlexNet 节点）。此后每一次扩大规模都由更多硬件承接：Goyal 等（2017）用 256 块 GPU、每批 8192 张图，在 1 小时内训完 ResNet-50，top-1 错误率与每批 256 张图的常规训练相当（[训练科学页](../cross-domain/fields/training-science/README.md)）；Video Diffusion Models（2022，Google）附录中的各个视频模型用 64 到 256 个 TPU-v4 芯片训练（[Video Diffusion 精读](../multimodal/papers/video-diffusion/reading.md)第 7 节）。语言一侧的数据来自互联网文本，规模大到 GPT-3 需要专门检查训练语料与测试集的重叠（[GPT-3 精读](../llm/papers/gpt3/reading.md)）。
+
+**算力这条线：制程 → 设计结构（特化、堆叠）→ 通信**
+
+[判断] 算力的增长先后靠三种手段：缩小晶体管；为矩阵乘法专门设计芯片结构，并把内存堆到计算旁边；再把成千上万块芯片高速连起来。每一步缓解一个瓶颈，瓶颈随即移到下一个环节，依次是计算、内存带宽、芯片之间的通信。Sevilla 等（2022）统计 123 个里程碑模型，训练算力在 2010 年以前大致跟随 Moore 定律，约 20 个月翻一番，进入深度学习后约 6 个月翻一番；单芯片工艺跟不上这个速度，差额来自专用设计和更多芯片的并联。
+
+| 步骤 | 缓解的瓶颈 | 代表与原文数字 | 对规模化意味着什么 | 做不好的场景 |
+|---|---|---|---|---|
+| 制程（晶体管工艺） | 单芯片能放多少晶体管、每瓦能做多少运算 | Moore 定律与 Dennard 缩放（晶体管缩小时单位面积功耗大致不变）让通用处理器性能在 1980–2010 年提高约三个数量级（[Hooker 2020](../cross-domain/papers/arxiv-2009.06489/README.md) 转引）。V100 用 12 nm 工艺放下 211 亿个晶体管；[TPU v4](../cross-domain/papers/arxiv-2304.01433/README.md) 从 16 nm 换到 7 nm，矩阵乘法单元数翻倍，相对 TPU v3 的每瓦性能提升中约 40% 来自工艺、其余来自设计 | 通用 GPU 的并行算力让 AlexNet 在两块 GTX 580 上用 5–6 天训完 ImageNet | AlexNet 的单卡显存只有 3GB，作者写明网络大小主要受显存和可忍受的训练时间限制（AlexNet §1、§3.2）。Moore 定律放缓、Dennard 缩放失效之后，通用芯片不再自动变快（Hooker 转引 Hennessy 2019） |
+| 设计结构·特化 | 计算的能效：同样的面积和功耗里放更多乘加单元 | [TPU v1](../cross-domain/papers/arxiv-1704.04760/README.md)（2015 年部署，只做推理）：65,536 个 8 位乘加单元组成脉动阵列（数据按固定节拍在相邻单元之间流动，权重预先载入，每个数从片上缓存读一次就被多次复用），比同期 K80 GPU 与 Haswell CPU 快 15–30 倍，每瓦性能高 30–80 倍。V100 的 Tensor Core（专做小块矩阵乘加的单元，半精度输入、单精度累加）训练峰值最高是上一代 P100 单精度运算的 12 倍 | 稠密矩阵乘法成为最便宜的运算。[判断] 能写成大矩阵乘法的结构（全连接、卷积、注意力的投影与 FFN）在硬件上占便宜 | TPU v1 的六个生产应用中有四个（MLP 与 LSTM）受内存带宽限制，只有 CNN 受计算限制；内存带宽提高 4 倍，性能平均提高约 3 倍，时钟提高 4 倍对 MLP 和 LSTM 几乎无用。偏离矩阵乘法的结构变贵：胶囊网络在 GPU、TPU 上性能断崖式下降，非结构化剪枝不被当时的硬件支持（Hooker）；Switch Transformer 写明加速器仍以稠密矩阵乘法为主 |
+| 设计结构·堆叠 | 内存带宽：把多层 DRAM 堆叠成 HBM（高带宽内存），与计算芯片放进同一个封装；单块裸片的面积受光刻光罩尺寸限制，于是把多块裸片封装成一个芯片（芯粒） | V100：4 个 HBM2 堆栈，每个堆栈 4 层 DRAM，与 GPU 在同一封装内，共 16 GB、900 GB/s。TPU v4：每个封装 4 个 HBM，32 GiB、1200 GB/s。NVIDIA Blackwell：两块达到光罩尺寸上限的裸片以 10 TB/s 的片间互连组成一个 GPU | 受带宽限制的层变快；一块芯片能放下更大的模型分片 | 容量仍跟不上参数增长：Narayanan 等（2021）写明大模型连一台多 GPU 服务器（8 块 80GB A100）都放不下；TPU v4 论文承认它的 HBM 容量小于 A100，在某些情况下会成为限制 |
+| 通信 | 芯片之间的带宽：机内用 NVLink（GPU 之间的直连链路）与 NVSwitch，机间用 InfiniBand；TPU 用片间互连（ICI）直接连成环面网络 | V100 的第二代 NVLink 有六条链路，共 300 GB/s。TPU v3 是 1024 块芯片的 2D 环面，TPU v4 用光路交换机重配出 4096 块芯片的 3D 环面，PaLM 540B 在其上 50 天持续达到峰值浮点性能的 57.8%。NVIDIA 系统是两层网络：NVLink 与 NVSwitch 连 4 到 256 块 GPU，之外用 InfiniBand（TPU v4 §8） | 训练扩到数千块芯片；并行方式按带宽分层，MoE 的路由受最慢一层约束（见下段） | TPU v3 固定的 2D 拓扑阻碍了大语言模型需要的模型切分（TPU v4 §7）。all-to-all 通信比数据并行的 all-reduce 更吃网络的二分带宽（TPU v4 §1 就嵌入查表写明这一点，MoE 的 token 分发是同一种通信模式）。DeepSeek-V3 跨节点专家并行时计算与通信之比约 1:1，通信还要占用 H800 的 132 个流式多处理器（SM）中的 20 个 |
+
+**通信成为瓶颈之后，并行方式和模型结构都按带宽分层。** 这件事从 AlexNet 就开始了：网络被拆到两块 GPU 上，两块卡只在部分层之间交换数据，作者用交叉验证调节层间连接，把通信量控制在计算量中可以接受的比例（AlexNet §3.2）。到了大语言模型，一台服务器内是高带宽的 NVLink，服务器之间是较慢的 InfiniBand。[Narayanan 等](../cross-domain/papers/arxiv-2104.04473/README.md)（2021，NVIDIA、Stanford、Microsoft Research）据此给出经验规则：张量并行（把一层的矩阵乘法拆到多块卡上，每层都要通信）只在一台服务器的 GPU 数以内使用，跨服务器改用流水线并行（按层切分，只在相邻阶段之间传激活）；这样在 3072 块 A100 上训练万亿参数的 GPT，每卡达到理论峰值的 52%（并行方式见[分布式训练讲义](../foundations/lessons/05a-distributed-training.md)）。MoE（每个 token 只激活少数几个专家 FFN，见 [Switch Transformer](../llm/papers/arxiv-2101.03961/README.md)）把参数分散到许多设备上，每层都要做一次 all-to-all（每块卡把 token 发给持有目标专家的卡）。Switch Transformer 把通信成本列为 MoE 难以普及的三个原因之一。DeepSeek-V2 让每个 token 的目标专家最多落在 M 台设备上；DeepSeek-V3 改为最多 4 个节点，理由是机内 NVLink（160 GB/s）约为机间 InfiniBand（50 GB/s）的 3.2 倍，并用 DualPipe 调度让计算与通信重叠（[DeepSeek-V2 精读](../llm/papers/deepseek-v2/reading.md)、[DeepSeek-V3 文献卡](../llm/papers/arxiv-2412.19437/README.md) §3.2）。[判断] 路由由此成为一个同时受模型质量和网络拓扑约束的设计：一个 token 能选哪些专家，部分由硬件决定。
 
 **2. 能随数据增长的训练信号（语言 2018 年起，视觉 2019–2021 年，生成 2020 年起）**
 
@@ -41,6 +60,11 @@ ImageNet（2009 年发布、按 WordNet 名词层级组织的大规模标注图�
 - 语言：序列建模用 [RNN](../foundations/lessons/12-rnn.md) 与 [LSTM](../foundations/lessons/13-lstm.md)，机器翻译的主流是短语统计翻译，它是 2014 年 Seq2seq 的对照基线（[预训练领域页](../llm/fields/pretraining/README.md)）。
 - 训练科学：深网络要先做逐层无监督预训练才能训好，标准随机初始化直接做梯度下降效果差且原因不明。Glorot 与 Bengio（2010）把"难训"拆成逐层激活饱和与梯度方差两个可测量的量；5 个隐藏层的 tanh 网络在 Shapeset-3×2 上改用归一化初始化后，测试误差从 27.15% 降到 15.60%（[训练科学页](../cross-domain/fields/training-science/README.md)）。
 
+**做不好的场景。** 训练科学一侧的失败见上面的 Glorot 与 Bengio；另外两处：
+
+- 检测：R-CNN 引言写明，PASCAL VOC 上的检测成绩在此前几年停滞，最好的方法是把多种低层图像特征与高层上下文组合起来的复杂集成系统。
+- 硬件：Hooker（2020）指出，CPU 一次处理一条指令、需要缓存中间结果，用它训练多层网络很快就耗尽内存带宽。
+
 **留下的问题。** 特征受限于人能设计出什么；可学习的深网络缺少数据和算力，也缺少稳定训练的办法。
 
 ### 阶段二：有监督深度学习（2009–2017）
@@ -54,6 +78,12 @@ ImageNet（2009 年发布、按 WordNet 名词层级组织的大规模标注图�
 - 生成：GAN（2014）让生成器与判别器对抗训练，DCGAN（2015）找到一组能稳定训练的全卷积结构；两篇都自述训练不稳定，以及生成器把许多输入映射到同一张图的模式坍缩（[视觉生成领域页](../multimodal/fields/generation/README.md)的 GAN 节点）。
 - 训练科学：He 等（2015）报告 30 层 ReLU 网络用 Glorot 初始化完全停滞，改用他们的初始化后可以收敛；批归一化让 Inception 网络的一个变体达到原模型精度所需的训练步数少 14 倍；Adam、大批量线性缩放与预热、混合精度和层归一化都在这一阶段出现（[训练科学页](../cross-domain/fields/training-science/README.md)）。
 
+**做不好的场景。** 生成一侧的训练不稳定与模式坍缩见上；另外三处：
+
+- 分布偏移：ImageNet 上训练的 ResNet-101 在 ImageNet 上 top-1 准确率 76.2%，换到同样类别、但图像分布不同的测试集，ImageNet Sketch（素描）上只有 25.2%，ObjectNet 上 32.6%，ImageNet-A 上 2.7%（CLIP 论文 Fig.13，见 [CLIP 精读](../multimodal/papers/clip/reading.md)）。
+- 长句：Seq2seq 把整句压成一个定长向量，句子越长翻译质量下降越快（Bahdanau 等 §1 引 Cho 等 2014），这正是注意力出现的动机。
+- 硬件：显存放不下网络，AlexNet 只能拆到两块 GPU 上（见驱动力 1 的算力线）。
+
 **留下的问题。** 每个新任务、新类别都要重新标注，标注量跟不上模型对数据的需求；语言里各任务的标注数据更少。
 
 ### 阶段三：自监督预训练与生成（2018 年起）
@@ -66,6 +96,13 @@ ImageNet（2009 年发布、按 WordNet 名词层级组织的大规模标注图�
 - 视觉表征（[视觉表征领域页](../multimodal/fields/visual-representation/README.md)）：MoCo（2019）在 7 个检测与分割迁移任务上超过 ImageNet 有监督预训练；ViT（2020）在 JFT-300M（Google 内部约 3 亿张图的标注数据集）上预训练后反超 ResNet（[ViT 精读](../multimodal/papers/vit/reading.md)）；CLIP（2021）用 4 亿对网页图文做对比预训练，在 ImageNet 上零样本（不用该数据集任何训练样本）达到原始 ResNet-50 的水平（[CLIP 精读](../multimodal/papers/clip/reading.md)）；MAE（2021）遮住 75% 的图像块再重建，只用 ImageNet-1K 时把此前最好的 87.1% 提到 87.8%（[MAE 精读](../multimodal/papers/mae/reading.md)）。
 - 生成（[视觉生成领域页](../multimodal/fields/generation/README.md)）：DDPM（2020）把生成拆成从噪声出发的逐级去噪，训练目标是预测加进去的噪声（[DDPM 精读](../multimodal/papers/ddpm/reading.md)）；LDM（2021）把扩散搬到自编码器的低维潜空间；DiT（2022）用 Transformer 替换去噪 U-Net；Video Diffusion Models（2022）把图像扩散扩展到视频块。详见[生成的收敛](generative-convergence.md)。
 - 训练科学（[训练科学页](../cross-domain/fields/training-science/README.md)）：规模定律把"模型多大、数据多少"变成可计算的预算，Chinchilla（70B 参数、1.4T token）与算力相同的 Gopher（DeepMind 此前的语言模型，280B 参数、300B token）相比，MMLU（覆盖多个学科的多选题知识基准）高 7 个百分点；Aghajanyan 等（2020）测到 RoBERTa-Large 在 MRPC（判断两句话是否同义的小规模数据集）上只训练 200 个参数就达到全参数微调 90% 的效果，LoRA（2021）以这类本征维度结果为依据，可训练参数比全参数微调少约 10000 倍。
+
+**做不好的场景。**
+
+- 语言：GPT-3 自述（§5），单样本或少样本时，在 WiC（判断一个词在两个句子里是否用作同一个意思）和 ANLI（对抗构造的自然语言推理）这类“比较”任务上只比随机猜测略好；“把奶酪放进冰箱，它会化吗”这类常识物理问题答不好；预训练看过的文本远多于一个人一生读到的量。
+- 视觉表征：CLIP 自述（§6），零样本在手写数字 MNIST 上只有 88%，不如直接在像素上做逻辑回归；数图中物体个数、区分车型和花的品种都弱；作者估计零样本要达到总体最优水平约需 1000 倍算力，用当时的硬件无法训练。ViT 在 JFT-300M 的 9M 张子集上不如计算量相近的 ResNet（[ViT 精读](../multimodal/papers/vit/reading.md)）。
+- 生成：DDPM 每生成一张图要运行 1000 步网络，对数似然也不如其他基于似然的模型（DDPM §1、§4）。
+- 训练科学：Kaplan 等的规模定律在约 10^12 参数处自相矛盾，Chinchilla 的分析只覆盖不超过一个 epoch 的训练（见下文开放问题）。
 
 **留下的问题。** 见下文"当前开放问题"。
 
@@ -91,6 +128,7 @@ ImageNet（2009 年发布、按 WordNet 名词层级组织的大规模标注图�
 - **人工标注退到哪一步为止？** 预训练已经不靠标注，后训练仍靠人类偏好；InstructGPT 报告单纯调大 KL 系数收不回 DROP、SQuAD 上的能力回退，混入预训练梯度效果更好。入口：[InstructGPT 精读](../llm/papers/instructgpt/reading.md)。
 - **规模的另一条轴：推理时投入的算力。** 入口：[Test-Time Compute 精读](../llm/papers/test-time-compute/reading.md)。
 - **少量参数为什么就够？** 数据一侧的流形假说与参数一侧的本征维度、低秩更新是否同源。入口：[训练科学页](../cross-domain/fields/training-science/README.md)。
+- **学术方向为什么收敛到少数几条路线？** 用户提出的假说：算力、研究者的有效时间与注意力、数据三者之间的关系，决定了学术方向怎样收敛；见思考笔记[研究方向的收敛](notes/research-convergence.md)。
 
 ## 批注
 
@@ -101,6 +139,9 @@ ImageNet（2009 年发布、按 WordNet 名词层级组织的大规模标注图�
 - **过参数化网络里阻碍训练的主要是鞍点。** 支撑：Dauphin 等 2014（随机场模型的理论加小网络实测）、Choromanska 等 2014（自旋玻璃模型下低临界值集中在全局最小之上的窄带）、Garipov 等 2018 与 Draxler 等 2018（CIFAR 上 ResNet、DenseNet 的模式连通）。反例或边界：Safran 与 Shamir 证明两层 ReLU 网络在学生与教师宽度相同时坏局部极小很常见，轻度过参数化后才大幅减少；对一般的非线性网络没有证明。
 - **"预训练再迁移"成为视觉默认流程。** 支撑：R-CNN Sec.1、MoCo Sec.1（把 ImageNet 有监督预训练当作要替代的默认起点）。反例或边界：U-Net（2015）面向只有几十张训练图的医学分割，从头训练。
 - **目标形式的分化源于数据形态。** 支撑：MAE Sec.1 把视觉遮蔽自编码此前落后的原因之一归于卷积不便加入遮蔽标记；DiT Sec.1、LDM Sec.1 都在连续潜空间里做去噪。反例或边界：视频也有先离散化、再用 Transformer 自回归生成的路线（Video Diffusion 对照表中的 VideoGPT，题名即"用 VQ-VAE 与 Transformer 生成视频"），语言也有扩散式生成的尝试（[DFlash 文献卡](../llm/papers/arxiv-2602.06036/README.md)），见[生成的收敛](generative-convergence.md)。
+- **算力线的三步依次缓解计算、内存带宽、通信三个瓶颈。** 支撑：TPU v4 §7（每瓦提升约 40% 来自工艺、其余来自设计）；TPU v1 摘要与 §4、§7（特化后六个应用中四个受内存带宽限制，提高内存带宽收益最大）；Narayanan 等摘要与 §1（显存放不下、机间链路慢于 NVLink）；DeepSeek-V3 §3.2.1–3.2.2、§3.5.1（跨节点通信与计算约 1:1，通信占用 SM）；Sevilla 等摘要（2010 年后训练算力约 6 个月翻一番）。反例或边界：三步是按瓶颈排序，时间上重叠，例如 P100 已经同时带有 HBM2 与 NVLink（V100 白皮书），TPU v1 在 2015 年就是特化芯片；制程也没有停止贡献，Blackwell 仍使用为它定制的 TSMC 4NP 工艺；“差额来自专用设计和更多芯片的并联”没有原文给出定量拆分，Sevilla 等只统计算力总量。
+- **能写成大矩阵乘法的结构在硬件上占便宜。** 支撑：Hooker §4（胶囊网络在加速器上性能断崖，非结构化剪枝与当时的硬件不兼容）；Switch Transformer §1（加速器仍以稠密矩阵乘法为主；MoE 的普及受复杂度、通信成本和训练不稳定所限）。反例或边界：硬件也在向非稠密负载扩展，TPU v4 的 SparseCore 专门加速嵌入查表的稀疏访问，Hooker 也提到支持稀疏的设计已经上市。
+- **MoE 的路由受网络拓扑约束。** 支撑：DeepSeek-V2 §2.2.2（设备受限路由，通信频率与目标专家覆盖的设备数成正比）、DeepSeek-V3 §3.2.2（节点受限路由，NVLink 约为 InfiniBand 的 3.2 倍）。反例或边界：这是 DeepSeek 在 H800 集群（每节点 8 卡）上的设计；高带宽域更大时约束的形式会变，TPU v4 §7.10 写明，NVIDIA GPU 与 TPU v4 上最好的大语言模型并行配置可能很不相同。
 
 **易误读**
 
@@ -123,11 +164,15 @@ ImageNet（2009 年发布、按 WordNet 名词层级组织的大规模标注图�
 - MoCo：https://arxiv.org/abs/1911.05722 ；SimCLR：https://arxiv.org/abs/2002.05709 ；GAN：https://arxiv.org/abs/1406.2661 ；DCGAN：https://arxiv.org/abs/1511.06434 ；LDM：https://arxiv.org/abs/2112.10752 ；DiT：https://arxiv.org/abs/2212.09748
 - Seq2seq：https://arxiv.org/abs/1409.3215 ；Bahdanau 注意力：https://arxiv.org/abs/1409.0473 ；BERT：https://arxiv.org/abs/1810.04805 ；T5：https://arxiv.org/abs/1910.10683 ；GPT：https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf ；Wang 等 2022：https://arxiv.org/abs/2204.05832
 - Glorot 与 Bengio：https://proceedings.mlr.press/v9/glorot10a/glorot10a.pdf ；He 初始化：https://arxiv.org/abs/1502.01852 ；批归一化：https://arxiv.org/abs/1502.03167 ；Adam：https://arxiv.org/abs/1412.6980 ；层归一化：https://arxiv.org/abs/1607.06450 ；Goyal 等：https://arxiv.org/abs/1706.02677 ；Xiong 等：https://arxiv.org/abs/2002.04745 ；Kaplan 等：https://arxiv.org/abs/2001.08361 ；Aghajanyan 等：https://arxiv.org/abs/2012.13255 ；LoRA：https://arxiv.org/abs/2106.09685
+- 硬件：V100 白皮书 https://images.nvidia.com/content/volta-architecture/pdf/volta-architecture-whitepaper.pdf ；NVIDIA Blackwell 架构页 https://www.nvidia.com/en-us/data-center/technologies/blackwell-architecture/ ；Sevilla 等 2022：https://arxiv.org/abs/2202.05924 ；DeepSeek-V2：https://arxiv.org/abs/2405.04434 ；Switch Transformer：https://arxiv.org/abs/2101.03961 。TPU v1、TPU v4、Narayanan 等、Hooker 已有文献卡（正文链接）。
+- 各阶段做不好的场景：CLIP（Fig.13、§6）：https://arxiv.org/abs/2103.00020 ；GPT-3（§5）：https://arxiv.org/abs/2005.14165 ；DDPM：https://arxiv.org/abs/2006.11239
 - Dauphin 等：https://arxiv.org/abs/1406.2572 ；Choromanska 等：https://arxiv.org/abs/1412.0233 ；Garipov 等：https://arxiv.org/abs/1802.10026 ；Draxler 等：https://arxiv.org/abs/1803.00885 ；Safran 与 Shamir：https://arxiv.org/abs/1712.08968
 
 **未核实 / 待验证**
 
 - LeNet（1998）全文本轮没能打开，正文对它的描述沿用 CNN 讲义的写法。
-- TPU 与大规模集群在语言模型训练中的具体用量，本页只引用了 Video Diffusion 附录的芯片数；其他论文的硬件规模没有逐篇核对。
+- 算力线中 Dennard 缩放失效、Moore 定律放缓一句经 Hooker（2020）转引 Hennessy 与 Patterson 2019，后者的 ACM 页面本轮无法访问；1980–2010 年“约三个数量级”同样是 Hooker 转引的数字。
+- 硬件数字只核对了 V100 白皮书、TPU v1 与 TPU v4 论文；Blackwell 只核对了 NVIDIA 架构页面，没有打开它的技术简报。TPU v2、v3 各自引入 HBM 与片间互连的时间，本轮没有找到可打开的一手材料，正文没有写。
+- 各语言模型训练所用的硬件规模，本页只引用了 Video Diffusion 附录、Narayanan 等、PaLM（经 TPU v4 论文转引）与 DeepSeek-V3 的数字，其他论文没有逐篇核对。
 - "端侧与实时场景多用 CNN"所依据的 MobileNet、EfficientNet、YOLO 都早于 ViT，没有同条件对比，见 [CNN 与 Transformer](cnn-vs-transformer.md) 的批注。
 - 本页链接的领域页与训练科学页和本页同期写成；领域页定稿后，需要回头核对各节点的名称与本页一致。

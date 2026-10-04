@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2402.15391",
+  "title": "Genie: Generative Interactive Environments",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2402.15391",
+  "official_url": "https://arxiv.org/abs/2402.15391",
+  "official_fulltext_url": "https://arxiv.org/pdf/2402.15391v1",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Jake Bruce",
+    "Michael Dennis",
+    "Ashley Edwards",
+    "Jack Parker-Holder",
+    "Yuge Shi",
+    "Edward Hughes",
+    "Matthew Lai",
+    "Aditi Mavalankar",
+    "Richie Steigerwald",
+    "Chris Apps",
+    "Yusuf Aytar",
+    "Sarah Bechtle",
+    "Feryal Behbahani",
+    "Stephanie Chan",
+    "Nicolas Heess",
+    "Lucy Gonzalez",
+    "Simon Osindero",
+    "Sherjil Ozair",
+    "Scott Reed",
+    "Jingwei Zhang",
+    "Konrad Zolna",
+    "Jeff Clune",
+    "Nando de Freitas",
+    "Satinder Singh",
+    "Tim Rocktäschel"
+  ],
+  "year": 2024,
+  "topic_paths": [
+    "multimodal/world-models",
+    "multimodal/generation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "Abstract、Sec.1、Sec.2（ST-transformer、潜在动作模型、视频分词器、动力学模型）、Sec.5 结论与局限、发布声明；Genie 2 与 Genie 3 官方博客全文（2024-12-04、2025-08-05）",
+    "mechanism_summary": "11B 参数；从 20 万小时公开游戏视频中筛出 3 万小时 2D 平台游戏；三个组件都用时空（ST）Transformer：VQ-VAE 式视频分词器、无监督潜在动作模型（|A|=8）、MaskGIT 式动力学模型；缩放实验 40M–2.7B；另在 RT-1 机器人视频上训练；局限：会幻想不现实的未来，只有 16 帧记忆，约 1 帧/秒；不发布权重与数据。Genie 2 博客：3D、键鼠可玩、一致最长约一分钟、多数 10–20 秒；自回归潜空间扩散，带因果 mask 的 Transformer 动力学，无分类器引导增强动作可控性；实时版为蒸馏模型、画质下降。Genie 3 博客：文本生成世界，720p、24 帧/秒实时，数分钟内基本一致，视觉记忆约一分钟，一致性为涌现；可提示的世界事件；局限：动作空间有限、多智能体交互难、真实地点不准、文字只在描述给出时清晰、交互只支撑几分钟。",
+    "evidence_boundary": "只写官方材料中明确写出的内容；官方未写的参数量、数据规模等记为开放问题，不推测。未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2402.15391",
+      "https://arxiv.org/pdf/2402.15391v1",
+      "https://deepmind.google/discover/blog/genie-2-a-large-scale-foundation-world-model/",
+      "https://deepmind.google/discover/blog/genie-3-a-new-frontier-for-world-models/"
+    ],
+    "source_origin": "review1_generative_convergence_update",
+    "relation_pages": [
+      "perspectives/generative-convergence.md",
+      "multimodal/fields/generation/README.md"
+    ]
+  },
+  "modality_tags": [
+    "video",
+    "action"
+  ],
+  "task_tags": [
+    "generation"
+  ]
+}

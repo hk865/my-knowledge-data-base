@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:1803.03635",
+  "title": "The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks",
+  "resource_kind": "paper",
+  "canonical_folder": "cross-domain/papers/arxiv-1803.03635",
+  "official_url": "https://arxiv.org/abs/1803.03635",
+  "official_fulltext_url": "https://arxiv.org/pdf/1803.03635",
+  "read_version": "v5",
+  "version_status": "checked_v5",
+  "reading_depth": "selected_method_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验范围：arXiv 摘要页与 v5 PDF 摘要、§1；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Jonathan Frankle",
+    "Michael Carbin"
+  ],
+  "year": 2019,
+  "venue": "ICLR 2019",
+  "topic_paths": [
+    "cross-domain/training-science"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v5 PDF 摘要、§1",
+    "mechanism_summary": "迭代剪枝 + 重置到原始初始化；MNIST、CIFAR10 上 10–20% 大小的可训练子网络；随机重新初始化后变差。",
+    "evidence_boundary": "未复现；结论来自较小的网络与数据集。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/1803.03635",
+      "https://arxiv.org/pdf/1803.03635v5"
+    ],
+    "source_origin": "review1_scaling_training_model_science",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "image"
+  ],
+  "task_tags": [
+    "analysis"
+  ]
+}

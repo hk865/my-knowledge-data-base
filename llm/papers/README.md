@@ -56,3 +56,13 @@
 - [Judge Decoding: Faster Speculative Sampling Requires Going Beyond Model Alignment](arxiv-2501.19309/README.md) · 2025 · 文献卡，非独立全文精读
 - [DFlash 2: Keep Drafting Parallel](dflash-2/README.md) · 2026 · 文献卡，非独立全文精读
 - [Faster Cascades via Speculative Decoding](arxiv-2405.19261/README.md) · 2024 · 文献卡，非独立全文精读
+- [DeepSeek LLM: Scaling Open-Source Language Models with Longtermism](arxiv-2401.02954/README.md) · 2024 · 文献卡，暂无独立精读
+- [Auxiliary-Loss-Free Load Balancing Strategy for Mixture-of-Experts](arxiv-2408.15664/README.md) · 2024 · 文献卡，暂无独立精读
+- [Muon is Scalable for LLM Training](arxiv-2502.16982/README.md) · 2025 · 文献卡，暂无独立精读
+- [Gated Attention for Large Language Models: Non-linearity, Sparsity, and Attention-Sink-Free](arxiv-2505.06708/README.md) · 2025 · 文献卡，暂无独立精读
+- [Kimi K2: Open Agentic Intelligence](arxiv-2507.20534/README.md) · 2025 · 文献卡，暂无独立精读
+- [Kimi Linear: An Expressive, Efficient Attention Architecture](arxiv-2510.26692/README.md) · 2025 · 文献卡，暂无独立精读
+- [mHC: Manifold-Constrained Hyper-Connections](arxiv-2512.24880/README.md) · 2025 · 文献卡，暂无独立精读
+- [Attention Residuals](arxiv-2603.15031/README.md) · 2026 · 文献卡，暂无独立精读
+- [DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence](arxiv-2606.19348/README.md) · 2026 · 文献卡，暂无独立精读
+- [Kimi K3: Open Frontier Intelligence](arxiv-2607.24653/README.md) · 2026 · 文献卡，暂无独立精读

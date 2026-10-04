@@ -29,7 +29,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 ## 大语言模型
 
-### 预训练（15）
+### 预训练（25）
 
 细分：训练目标与规模规律；数据选择与混合；课程与持续预训练；数据质量与配比；训练目标与监督位置；长上下文课程
 
@@ -48,6 +48,16 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [GraphCodeBERT: Pre-training Code Representations with Data Flow](paper-catalog.md#p024)
 - [Probing Pretrained Models of Source Code](paper-catalog.md#p029)
 - [Language Models are Few-Shot Learners](paper-catalog.md#p127)
+- [DeepSeek LLM: Scaling Open-Source Language Models with Longtermism](paper-catalog.md#p180)
+- [Auxiliary-Loss-Free Load Balancing Strategy for Mixture-of-Experts](paper-catalog.md#p181)
+- [Muon is Scalable for LLM Training](paper-catalog.md#p182)
+- [Gated Attention for Large Language Models: Non-linearity, Sparsity, and Attention-Sink-Free](paper-catalog.md#p183)
+- [Kimi K2: Open Agentic Intelligence](paper-catalog.md#p184)
+- [Kimi Linear: An Expressive, Efficient Attention Architecture](paper-catalog.md#p185)
+- [mHC: Manifold-Constrained Hyper-Connections](paper-catalog.md#p186)
+- [Attention Residuals](paper-catalog.md#p187)
+- [DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence](paper-catalog.md#p188)
+- [Kimi K3: Open Frontier Intelligence](paper-catalog.md#p189)
 
 ### 后训练 监督微调（12）
 
@@ -76,7 +86,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena](paper-catalog.md#p118)
 - [Direct Preference Optimization: Your Language Model is Secretly a Reward Model](paper-catalog.md#p128)
 
-### 后训练 强化学习（6）
+### 后训练 强化学习（7）
 
 细分：策略优化算法；结果与过程奖励；轨迹采样与数据回流；奖励与验证器；长轨迹信用分配；探索与轨迹分布
 
@@ -86,8 +96,9 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [DeepSeek-V2: A Strong, Economical, and Efficient Mixture-of-Experts Language Model](paper-catalog.md#p014)
 - [Training language models to follow instructions with human feedback](paper-catalog.md#p115)
 - [Proximal Policy Optimization Algorithms](paper-catalog.md#p129)
+- [Kimi K2: Open Agentic Intelligence](paper-catalog.md#p184)
 
-### 架构与效率（18）
+### 架构与效率（25）
 
 细分：注意力与状态空间模型；稀疏专家与条件计算；KV cache 与压缩；线性与稀疏注意力；因果掩码与复杂度
 
@@ -109,6 +120,13 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Attention Is All You Need](paper-catalog.md#p113)
 - [Language Models are Few-Shot Learners](paper-catalog.md#p127)
 - [Resurrecting Recurrent Neural Networks for Long Sequences](paper-catalog.md#p163)
+- [Auxiliary-Loss-Free Load Balancing Strategy for Mixture-of-Experts](paper-catalog.md#p181)
+- [Gated Attention for Large Language Models: Non-linearity, Sparsity, and Attention-Sink-Free](paper-catalog.md#p183)
+- [Kimi Linear: An Expressive, Efficient Attention Architecture](paper-catalog.md#p185)
+- [mHC: Manifold-Constrained Hyper-Connections](paper-catalog.md#p186)
+- [Attention Residuals](paper-catalog.md#p187)
+- [DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence](paper-catalog.md#p188)
+- [Kimi K3: Open Frontier Intelligence](paper-catalog.md#p189)
 
 ### 推理时计算（29）
 
@@ -169,21 +187,39 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Visual Instruction Tuning](paper-catalog.md#p120)
 - [Learning Transferable Visual Models From Natural Language Supervision](paper-catalog.md#p132)
 
-### 视觉生成（3）
+### 视觉生成（13）
 
 细分：图像生成；视频生成；扩散与 Flow；理解与生成的联合学习
 
 - [Visual Instruction Tuning](paper-catalog.md#p120)
 - [Denoising Diffusion Probabilistic Models](paper-catalog.md#p121)
 - [Video Diffusion Models](paper-catalog.md#p122)
+- [Imagen Video: High Definition Video Generation with Diffusion Models](paper-catalog.md#p190)
+- [Genie: Generative Interactive Environments](paper-catalog.md#p191)
+- [HunyuanVideo: A Systematic Framework For Large Video Generative Models](paper-catalog.md#p192)
+- [Cosmos World Foundation Model Platform for Physical AI](paper-catalog.md#p193)
+- [Wan: Open and Advanced Large-Scale Video Generative Models](paper-catalog.md#p194)
+- [Seedance 1.0: Exploring the Boundaries of Video Generation Models](paper-catalog.md#p195)
+- [Kling-Omni Technical Report](paper-catalog.md#p196)
+- [Seedance 2.0: Advancing Video Generation for World Complexity](paper-catalog.md#p197)
+- [Video generation models as world simulators](paper-catalog.md#p198)
+- [Veo: a text-to-video generation system](paper-catalog.md#p199)
 
-### 视频与时序表征（1）
+### 视频与时序表征（9）
 
 细分：时序对应与记忆；动作条件视频；预测与时间一致性
 
 - [Video Diffusion Models](paper-catalog.md#p122)
+- [Imagen Video: High Definition Video Generation with Diffusion Models](paper-catalog.md#p190)
+- [HunyuanVideo: A Systematic Framework For Large Video Generative Models](paper-catalog.md#p192)
+- [Wan: Open and Advanced Large-Scale Video Generative Models](paper-catalog.md#p194)
+- [Seedance 1.0: Exploring the Boundaries of Video Generation Models](paper-catalog.md#p195)
+- [Kling-Omni Technical Report](paper-catalog.md#p196)
+- [Seedance 2.0: Advancing Video Generation for World Complexity](paper-catalog.md#p197)
+- [Video generation models as world simulators](paper-catalog.md#p198)
+- [Veo: a text-to-video generation system](paper-catalog.md#p199)
 
-### 世界模型（26）
+### 世界模型（29）
 
 细分：预测与潜在动力学；结构化与可干预表征；行动条件与规划；几何与物理约束
 
@@ -213,6 +249,9 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [ORB-SLAM3: An Accurate Open-Source Library for Visual, Visual-Inertial and Multi-Map SLAM](paper-catalog.md#p123)
 - [Dynamic Locomotion in the MIT Cheetah 3 Through Convex Model-Predictive Control](paper-catalog.md#p124)
 - [Reconstruction or Semantics? What Makes a Latent Space Useful for Robotic World Models](paper-catalog.md#p134)
+- [Genie: Generative Interactive Environments](paper-catalog.md#p191)
+- [Cosmos World Foundation Model Platform for Physical AI](paper-catalog.md#p193)
+- [Video generation models as world simulators](paper-catalog.md#p198)
 
 ## 机器人与具身系统
 
@@ -363,7 +402,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Metamorphic Testing of Multi-Agent LLM Systems: A Trace-Based Behavioral Oracle Framework](paper-catalog.md#p161)
 
 
-### 模型科学（18）
+### 模型科学（20）
 
 细分：机制可解释性；知识存储、定位与编辑；探针分析；推理忠实性；层冗余与模式坍缩；开放模型与可复现性
 
@@ -385,12 +424,20 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena](paper-catalog.md#p118)
 - [Language Models are Few-Shot Learners](paper-catalog.md#p127)
 - [Dissecting Recall of Factual Associations in Auto-Regressive Language Models](paper-catalog.md#p164)
+- [Does Localization Inform Editing? Surprising Differences in Causality-Based Localization vs. Knowledge Editing in Language Models](paper-catalog.md#p176)
+- [Progress Measures for Grokking via Mechanistic Interpretability](paper-catalog.md#p177)
 
-### 训练科学（1）
+### 训练科学（7）
 
 细分：规模定律；优化地形；训练动态；双下降；本征维度与参数有效性；遗忘
 
 - [Training Compute-Optimal Large Language Models](paper-catalog.md#p114)
+- [In-Datacenter Performance Analysis of a Tensor Processing Unit](paper-catalog.md#p172)
+- [The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks](paper-catalog.md#p173)
+- [The Hardware Lottery](paper-catalog.md#p174)
+- [Efficient Large-Scale Language Model Training on GPU Clusters Using Megatron-LM](paper-catalog.md#p175)
+- [TPU v4: An Optically Reconfigurable Supercomputer for Machine Learning with Hardware Support for Embeddings](paper-catalog.md#p178)
+- [How Do Large Language Models Acquire Factual Knowledge During Pretraining?](paper-catalog.md#p179)
 
 
 ### 生物计算探索（0）
@@ -439,14 +486,14 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 | 模态 \ 任务 | understanding | generation | decision | evaluation | analysis |
 |---|---:|---:|---:|---:|---:|
-| text | [11](#x-text-understanding) | [45](#x-text-generation) | [30](#x-text-decision) | [7](#x-text-evaluation) | [12](#x-text-analysis) |
-| image | [24](#x-image-understanding) | [7](#x-image-generation) | [48](#x-image-decision) | [3](#x-image-evaluation) | · |
-| video | [4](#x-video-understanding) | [13](#x-video-generation) | [15](#x-video-decision) | [1](#x-video-evaluation) | [2](#x-video-analysis) |
-| audio | [2](#x-audio-understanding) | [1](#x-audio-generation) | · | · | · |
-| action | [6](#x-action-understanding) | [17](#x-action-generation) | [81](#x-action-decision) | [3](#x-action-evaluation) | [2](#x-action-analysis) |
+| text | [11](#x-text-understanding) | [55](#x-text-generation) | [32](#x-text-decision) | [7](#x-text-evaluation) | [20](#x-text-analysis) |
+| image | [24](#x-image-understanding) | [10](#x-image-generation) | [48](#x-image-decision) | [3](#x-image-evaluation) | [3](#x-image-analysis) |
+| video | [4](#x-video-understanding) | [23](#x-video-generation) | [15](#x-video-decision) | [1](#x-video-evaluation) | [2](#x-video-analysis) |
+| audio | [2](#x-audio-understanding) | [3](#x-audio-generation) | · | · | · |
+| action | [6](#x-action-understanding) | [19](#x-action-generation) | [81](#x-action-decision) | [3](#x-action-evaluation) | [2](#x-action-analysis) |
 | state | [7](#x-state-understanding) | [2](#x-state-generation) | [46](#x-state-decision) | [1](#x-state-evaluation) | · |
-| code | [1](#x-code-understanding) | [3](#x-code-generation) | [3](#x-code-decision) | [2](#x-code-evaluation) | [3](#x-code-analysis) |
-| multimodal | [7](#x-multimodal-understanding) | [4](#x-multimodal-generation) | [26](#x-multimodal-decision) | [1](#x-multimodal-evaluation) | · |
+| code | [1](#x-code-understanding) | [7](#x-code-generation) | [5](#x-code-decision) | [2](#x-code-evaluation) | [3](#x-code-analysis) |
+| multimodal | [7](#x-multimodal-understanding) | [13](#x-multimodal-generation) | [27](#x-multimodal-decision) | [1](#x-multimodal-evaluation) | · |
 | tabular | [1](#x-tabular-understanding) | · | · | · | · |
 
 <a id="x-text-understanding"></a>
@@ -467,7 +514,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-text-generation"></a>
 
-### text × generation（45）
+### text × generation（55）
 
 - [Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters](paper-catalog.md#p001)
 - [Towards Thinking-Optimal Scaling of Test-Time Compute for LLM Reasoning](paper-catalog.md#p002)
@@ -514,10 +561,20 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Judge Decoding: Faster Speculative Sampling Requires Going Beyond Model Alignment](paper-catalog.md#p150)
 - [DFlash 2: Keep Drafting Parallel](paper-catalog.md#p151)
 - [Faster Cascades via Speculative Decoding](paper-catalog.md#p152)
+- [DeepSeek LLM: Scaling Open-Source Language Models with Longtermism](paper-catalog.md#p180)
+- [Auxiliary-Loss-Free Load Balancing Strategy for Mixture-of-Experts](paper-catalog.md#p181)
+- [Muon is Scalable for LLM Training](paper-catalog.md#p182)
+- [Gated Attention for Large Language Models: Non-linearity, Sparsity, and Attention-Sink-Free](paper-catalog.md#p183)
+- [Kimi K2: Open Agentic Intelligence](paper-catalog.md#p184)
+- [Kimi Linear: An Expressive, Efficient Attention Architecture](paper-catalog.md#p185)
+- [mHC: Manifold-Constrained Hyper-Connections](paper-catalog.md#p186)
+- [Attention Residuals](paper-catalog.md#p187)
+- [DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence](paper-catalog.md#p188)
+- [Kimi K3: Open Frontier Intelligence](paper-catalog.md#p189)
 
 <a id="x-text-decision"></a>
 
-### text × decision（30）
+### text × decision（32）
 
 - [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](paper-catalog.md#p034)
 - [ReAct: Synergizing Reasoning and Acting in Language Models](paper-catalog.md#p040)
@@ -549,6 +606,8 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [MEMORA: Embodied Action Memory from Egocentric Videos for Reasoning and Planning](paper-catalog.md#p138)
 - [HoloAgent-0: A Unified Embodied Agent Framework with 3D Spatial Memory](paper-catalog.md#p139)
 - [Finding bugs across the Python ecosystem with Claude and property-based testing](paper-catalog.md#p160)
+- [Kimi K2: Open Agentic Intelligence](paper-catalog.md#p184)
+- [Kimi K3: Open Frontier Intelligence](paper-catalog.md#p189)
 
 <a id="x-text-evaluation"></a>
 
@@ -564,7 +623,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-text-analysis"></a>
 
-### text × analysis（12）
+### text × analysis（20）
 
 - [OLMo: Accelerating the Science of Language Models](paper-catalog.md#p010)
 - [ShortGPT: Layers in Large Language Models are More Redundant Than You Expect](paper-catalog.md#p022)
@@ -578,6 +637,14 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Training Compute-Optimal Large Language Models](paper-catalog.md#p114)
 - [Language Models are Few-Shot Learners](paper-catalog.md#p127)
 - [Dissecting Recall of Factual Associations in Auto-Regressive Language Models](paper-catalog.md#p164)
+- [In-Datacenter Performance Analysis of a Tensor Processing Unit](paper-catalog.md#p172)
+- [The Hardware Lottery](paper-catalog.md#p174)
+- [Efficient Large-Scale Language Model Training on GPU Clusters Using Megatron-LM](paper-catalog.md#p175)
+- [Does Localization Inform Editing? Surprising Differences in Causality-Based Localization vs. Knowledge Editing in Language Models](paper-catalog.md#p176)
+- [Progress Measures for Grokking via Mechanistic Interpretability](paper-catalog.md#p177)
+- [TPU v4: An Optically Reconfigurable Supercomputer for Machine Learning with Hardware Support for Embeddings](paper-catalog.md#p178)
+- [How Do Large Language Models Acquire Factual Knowledge During Pretraining?](paper-catalog.md#p179)
+- [Gated Attention for Large Language Models: Non-linearity, Sparsity, and Attention-Sink-Free](paper-catalog.md#p183)
 
 <a id="x-image-understanding"></a>
 
@@ -610,7 +677,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-image-generation"></a>
 
-### image × generation（7）
+### image × generation（10）
 
 - [DINO-WM: World Models on Pre-trained Visual Features enable Zero-shot Planning](paper-catalog.md#p046)
 - [LaDi-WM: A Latent Diffusion-based World Model for Predictive Manipulation](paper-catalog.md#p049)
@@ -619,6 +686,9 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Mastering Diverse Domains through World Models](paper-catalog.md#p117)
 - [Visual Instruction Tuning](paper-catalog.md#p120)
 - [Denoising Diffusion Probabilistic Models](paper-catalog.md#p121)
+- [HunyuanVideo: A Systematic Framework For Large Video Generative Models](paper-catalog.md#p192)
+- [Wan: Open and Advanced Large-Scale Video Generative Models](paper-catalog.md#p194)
+- [Kling-Omni Technical Report](paper-catalog.md#p196)
 
 <a id="x-image-decision"></a>
 
@@ -681,6 +751,14 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Vision-and-Language Navigation: Interpreting visually-grounded navigation instructions in real environments](paper-catalog.md#p119)
 - [Rethinking Robustness Assessment: Adversarial Attacks on Learning-based Quadrupedal Locomotion Controllers](paper-catalog.md#p166)
 
+<a id="x-image-analysis"></a>
+
+### image × analysis（3）
+
+- [In-Datacenter Performance Analysis of a Tensor Processing Unit](paper-catalog.md#p172)
+- [The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks](paper-catalog.md#p173)
+- [The Hardware Lottery](paper-catalog.md#p174)
+
 <a id="x-video-understanding"></a>
 
 ### video × understanding（4）
@@ -692,7 +770,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-video-generation"></a>
 
-### video × generation（13）
+### video × generation（23）
 
 - [SlotFormer: Unsupervised Visual Dynamics Simulation with Object-Centric Models](paper-catalog.md#p042)
 - [OccWorld: Learning a 3D Occupancy World Model for Autonomous Driving](paper-catalog.md#p044)
@@ -707,6 +785,16 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [World Models for Robotic Manipulation: A Survey](paper-catalog.md#p063)
 - [Video Diffusion Models](paper-catalog.md#p122)
 - [Reconstruction or Semantics? What Makes a Latent Space Useful for Robotic World Models](paper-catalog.md#p134)
+- [Imagen Video: High Definition Video Generation with Diffusion Models](paper-catalog.md#p190)
+- [Genie: Generative Interactive Environments](paper-catalog.md#p191)
+- [HunyuanVideo: A Systematic Framework For Large Video Generative Models](paper-catalog.md#p192)
+- [Cosmos World Foundation Model Platform for Physical AI](paper-catalog.md#p193)
+- [Wan: Open and Advanced Large-Scale Video Generative Models](paper-catalog.md#p194)
+- [Seedance 1.0: Exploring the Boundaries of Video Generation Models](paper-catalog.md#p195)
+- [Kling-Omni Technical Report](paper-catalog.md#p196)
+- [Seedance 2.0: Advancing Video Generation for World Complexity](paper-catalog.md#p197)
+- [Video generation models as world simulators](paper-catalog.md#p198)
+- [Veo: a text-to-video generation system](paper-catalog.md#p199)
 
 <a id="x-video-decision"></a>
 
@@ -750,9 +838,11 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-audio-generation"></a>
 
-### audio × generation（1）
+### audio × generation（3）
 
 - [Mamba: Linear-Time Sequence Modeling with Selective State Spaces](paper-catalog.md#p009)
+- [Seedance 2.0: Advancing Video Generation for World Complexity](paper-catalog.md#p197)
+- [Veo: a text-to-video generation system](paper-catalog.md#p199)
 
 <a id="x-action-understanding"></a>
 
@@ -767,7 +857,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-action-generation"></a>
 
-### action × generation（17）
+### action × generation（19）
 
 - [OccWorld: Learning a 3D Occupancy World Model for Autonomous Driving](paper-catalog.md#p044)
 - [Driving in the Occupancy World: Vision-Centric 4D Occupancy Forecasting and Planning via World Models for Autonomous Driving](paper-catalog.md#p045)
@@ -786,6 +876,8 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [BeyondMimic: From Motion Tracking to Versatile Humanoid Control via Guided Diffusion](paper-catalog.md#p105)
 - [Mastering Diverse Domains through World Models](paper-catalog.md#p117)
 - [Reconstruction or Semantics? What Makes a Latent Space Useful for Robotic World Models](paper-catalog.md#p134)
+- [Genie: Generative Interactive Environments](paper-catalog.md#p191)
+- [Cosmos World Foundation Model Platform for Physical AI](paper-catalog.md#p193)
 
 <a id="x-action-decision"></a>
 
@@ -972,19 +1064,25 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-code-generation"></a>
 
-### code × generation（3）
+### code × generation（7）
 
 - [Large Language Monkeys: Scaling Inference Compute with Repeated Sampling](paper-catalog.md#p004)
 - [Enhancing Code Generation Performance of Smaller Models by Distilling the Reasoning Ability of LLMs](paper-catalog.md#p023)
 - [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](paper-catalog.md#p034)
+- [DeepSeek LLM: Scaling Open-Source Language Models with Longtermism](paper-catalog.md#p180)
+- [Kimi K2: Open Agentic Intelligence](paper-catalog.md#p184)
+- [DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence](paper-catalog.md#p188)
+- [Kimi K3: Open Frontier Intelligence](paper-catalog.md#p189)
 
 <a id="x-code-decision"></a>
 
-### code × decision（3）
+### code × decision（5）
 
 - [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](paper-catalog.md#p034)
 - [Voyager: An Open-Ended Embodied Agent with Large Language Models](paper-catalog.md#p041)
 - [Finding bugs across the Python ecosystem with Claude and property-based testing](paper-catalog.md#p160)
+- [Kimi K2: Open Agentic Intelligence](paper-catalog.md#p184)
+- [Kimi K3: Open Frontier Intelligence](paper-catalog.md#p189)
 
 <a id="x-code-evaluation"></a>
 
@@ -1015,16 +1113,25 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-multimodal-generation"></a>
 
-### multimodal × generation（4）
+### multimodal × generation（13）
 
 - [Object-Centric World Model for Language-Guided Manipulation](paper-catalog.md#p052)
 - [InternVLA-A1: Unifying Understanding, Generation and Action for Robotic Manipulation](paper-catalog.md#p090)
 - [Visual Instruction Tuning](paper-catalog.md#p120)
 - [Video Diffusion Models](paper-catalog.md#p122)
+- [Kimi K3: Open Frontier Intelligence](paper-catalog.md#p189)
+- [Imagen Video: High Definition Video Generation with Diffusion Models](paper-catalog.md#p190)
+- [HunyuanVideo: A Systematic Framework For Large Video Generative Models](paper-catalog.md#p192)
+- [Wan: Open and Advanced Large-Scale Video Generative Models](paper-catalog.md#p194)
+- [Seedance 1.0: Exploring the Boundaries of Video Generation Models](paper-catalog.md#p195)
+- [Kling-Omni Technical Report](paper-catalog.md#p196)
+- [Seedance 2.0: Advancing Video Generation for World Complexity](paper-catalog.md#p197)
+- [Video generation models as world simulators](paper-catalog.md#p198)
+- [Veo: a text-to-video generation system](paper-catalog.md#p199)
 
 <a id="x-multimodal-decision"></a>
 
-### multimodal × decision（26）
+### multimodal × decision（27）
 
 - [Object-Centric World Model for Language-Guided Manipulation](paper-catalog.md#p052)
 - [Language-Grounded Hierarchical Planning and Execution with Multi-Robot 3D Scene Graphs](paper-catalog.md#p055)
@@ -1052,6 +1159,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [EmbodiedSkills: A Unified Framework for Orchestrating, Training, and Deploying VLA Agents](paper-catalog.md#p137)
 - [MEMORA: Embodied Action Memory from Egocentric Videos for Reasoning and Planning](paper-catalog.md#p138)
 - [HoloAgent-0: A Unified Embodied Agent Framework with 3D Spatial Memory](paper-catalog.md#p139)
+- [Kimi K3: Open Frontier Intelligence](paper-catalog.md#p189)
 
 <a id="x-multimodal-evaluation"></a>
 

@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2210.02303",
+  "title": "Imagen Video: High Definition Video Generation with Diffusion Models",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2210.02303",
+  "official_url": "https://arxiv.org/abs/2210.02303",
+  "official_fulltext_url": "https://arxiv.org/pdf/2210.02303v1",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Jonathan Ho",
+    "William Chan",
+    "Chitwan Saharia",
+    "Jay Whang",
+    "Ruiqi Gao",
+    "Alexey Gritsenko",
+    "Diederik P. Kingma",
+    "Ben Poole",
+    "Mohammad Norouzi",
+    "David J. Fleet",
+    "Tim Salimans"
+  ],
+  "year": 2022,
+  "topic_paths": [
+    "multimodal/generation",
+    "multimodal/video-temporal"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "Abstract、Sec.1、Sec.2.2–2.3（级联与 Video U-Net）、Sec.3 数据、Sec.4 局限与社会影响、Sec.5",
+    "mechanism_summary": "7 个视频扩散模型的级联（1 个基础模型、3 个空间超分、3 个时间超分），共 11.6B 参数，冻结 T5-XXL 文本编码器；生成 1280×768、24 帧/秒、128 帧（约 5.3 秒）；基础模型用时间注意力，超分模型用时间卷积，最高分辨率超分为全卷积；v-预测参数化与带引导的渐进蒸馏；数据为 1400 万视频–文本对、6000 万图像–文本对（内部）加 LAION-400M；不发布模型与代码。",
+    "evidence_boundary": "只写官方材料中明确写出的内容；官方未写的参数量、数据规模等记为开放问题，不推测。未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2210.02303",
+      "https://arxiv.org/pdf/2210.02303v1"
+    ],
+    "source_origin": "review1_generative_convergence_update",
+    "relation_pages": [
+      "perspectives/generative-convergence.md",
+      "multimodal/fields/generation/README.md"
+    ]
+  },
+  "modality_tags": [
+    "video",
+    "multimodal"
+  ],
+  "task_tags": [
+    "generation"
+  ]
+}

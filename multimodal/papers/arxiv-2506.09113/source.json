@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2506.09113",
+  "title": "Seedance 1.0: Exploring the Boundaries of Video Generation Models",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2506.09113",
+  "official_url": "https://arxiv.org/abs/2506.09113",
+  "official_fulltext_url": "https://arxiv.org/pdf/2506.09113v2",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "ByteDance Seed"
+  ],
+  "year": 2025,
+  "topic_paths": [
+    "multimodal/generation",
+    "multimodal/video-temporal"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "Abstract、Sec.1、Sec.2.1–2.2（VAE 与扩散 Transformer）、Sec.4.4（RLHF 与奖励模型）、Sec.5.1（加速与蒸馏）、Sec.8 结论；扩散日程处的流匹配说明",
+    "mechanism_summary": "VAE 压缩比（时间 4、长宽 16）、通道 48，训练含 L1、KL、LPIPS 与 PatchGAN 式判别器损失；扩散 Transformer 空间层与时间层解耦，空间层用 SD3 的 MMDiT，文本只在空间层交互；微调的 decoder-only 大模型作文本编码器；流匹配加速度预测；三个奖励模型（基础、运动、美学）直接最大化奖励的 RLHF，并对超分精修模型也做 RLHF；TSCD、RayFlow 分数蒸馏与带人类偏好的对抗蒸馏，加速约 10 倍；在 NVIDIA L20 上 41.4 秒生成 5 秒 1080p 视频；原生支持多镜头；参数量与数据规模未写，未单列局限。",
+    "evidence_boundary": "只写官方材料中明确写出的内容；官方未写的参数量、数据规模等记为开放问题，不推测。未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2506.09113",
+      "https://arxiv.org/pdf/2506.09113v2"
+    ],
+    "source_origin": "review1_generative_convergence_update",
+    "relation_pages": [
+      "perspectives/generative-convergence.md",
+      "multimodal/fields/generation/README.md"
+    ]
+  },
+  "modality_tags": [
+    "video",
+    "multimodal"
+  ],
+  "task_tags": [
+    "generation"
+  ]
+}

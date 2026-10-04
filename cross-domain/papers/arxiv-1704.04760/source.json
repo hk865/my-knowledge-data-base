@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:1704.04760",
+  "title": "In-Datacenter Performance Analysis of a Tensor Processing Unit",
+  "resource_kind": "paper",
+  "canonical_folder": "cross-domain/papers/arxiv-1704.04760",
+  "official_url": "https://arxiv.org/abs/1704.04760",
+  "official_fulltext_url": "https://arxiv.org/pdf/1704.04760",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "selected_method_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验范围：arXiv PDF 选段：摘要、§1 要点列表、§2 架构（脉动阵列）、§4 roofline、§7 性能模型（Figure 11 与 TPU' 讨论）、§10 结论；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Norman P. Jouppi",
+    "Cliff Young",
+    "Nishant Patil",
+    "David Patterson",
+    "et al. (Google)"
+  ],
+  "year": 2017,
+  "venue": "ISCA 2017",
+  "topic_paths": [
+    "cross-domain/training-science"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv PDF 选段：摘要、§1 要点列表、§2 架构（脉动阵列）、§4 roofline、§7 性能模型（Figure 11 与 TPU' 讨论）、§10 结论",
+    "mechanism_summary": "65,536 个 8 位 MAC 的脉动阵列，92 TOPS；比 K80 与 Haswell 快 15–30 倍，TOPS/W 高 30–80 倍；六个应用中四个受内存带宽限制；内存带宽 ×4 → 性能约 ×3，时钟 ×4 对 MLP/LSTM 几乎无用；仅用于推理。",
+    "evidence_boundary": "未复现；数字取自原文，比较对象是 2015 年前后同期部署的 Haswell CPU 与 K80 GPU。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/1704.04760",
+      "https://arxiv.org/pdf/1704.04760v1"
+    ],
+    "source_origin": "review1_scaling_training_model_science",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "text",
+    "image"
+  ],
+  "task_tags": [
+    "analysis"
+  ]
+}

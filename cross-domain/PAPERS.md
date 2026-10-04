@@ -40,3 +40,11 @@
 
 - [Finding bugs across the Python ecosystem with Claude and property-based testing](papers/agentic-property-based-testing/README.md) · 2026 · 官方博客，非独立全文精读
 - [Metamorphic Testing of Multi-Agent LLM Systems: A Trace-Based Behavioral Oracle Framework](papers/morphagent/README.md) · 2026 · 文献卡，非独立全文精读
+- [In-Datacenter Performance Analysis of a Tensor Processing Unit](papers/arxiv-1704.04760/README.md) · 2017 · 文献卡，暂无独立精读
+- [The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks](papers/arxiv-1803.03635/README.md) · 2019 · 文献卡，暂无独立精读
+- [The Hardware Lottery](papers/arxiv-2009.06489/README.md) · 2020 · 文献卡，暂无独立精读
+- [Efficient Large-Scale Language Model Training on GPU Clusters Using Megatron-LM](papers/arxiv-2104.04473/README.md) · 2021 · 文献卡，暂无独立精读
+- [Does Localization Inform Editing? Surprising Differences in Causality-Based Localization vs. Knowledge Editing in Language Models](papers/arxiv-2301.04213/README.md) · 2023 · 文献卡，暂无独立精读
+- [Progress Measures for Grokking via Mechanistic Interpretability](papers/arxiv-2301.05217/README.md) · 2023 · 文献卡，暂无独立精读
+- [TPU v4: An Optically Reconfigurable Supercomputer for Machine Learning with Hardware Support for Embeddings](papers/arxiv-2304.01433/README.md) · 2023 · 文献卡，暂无独立精读
+- [How Do Large Language Models Acquire Factual Knowledge During Pretraining?](papers/arxiv-2406.11813/README.md) · 2024 · 文献卡，暂无独立精读

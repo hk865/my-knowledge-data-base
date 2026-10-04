@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2505.06708",
+  "title": "Gated Attention for Large Language Models: Non-linearity, Sparsity, and Attention-Sink-Free",
+  "resource_kind": "paper",
+  "canonical_folder": "llm/papers/arxiv-2505.06708",
+  "official_url": "https://arxiv.org/abs/2505.06708",
+  "official_fulltext_url": "https://arxiv.org/pdf/2505.06708",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了摘要、§1、§2–3（门控位置与 Table 1–2）、§4.1–4.4（非线性、稀疏性、注意力汇聚、上下文扩展 Table 5）、局限；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Zihan Qiu",
+    "Zekun Wang",
+    "Bo Zheng",
+    "Zeyu Huang",
+    "Kaiyue Wen",
+    "Songlin Yang",
+    "Rui Men",
+    "Le Yu",
+    "Fei Huang",
+    "Suozhi Huang",
+    "等 13 位作者"
+  ],
+  "year": 2025,
+  "topic_paths": [
+    "llm/pretraining",
+    "llm/architecture"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v1 PDF 选段：摘要、§1、§2–3（门控位置与 Table 1–2）、§4.1–4.4（非线性、稀疏性、注意力汇聚、上下文扩展 Table 5）、局限",
+    "mechanism_summary": "SDPA 输出后逐头 sigmoid 门最优；首 token 注意力占比 46.7%→4.8%（第 21 层 83%→4%）；基线在提高最大学习率时出现收敛问题；YaRN 扩到 128K 后 RULER 128K 基线 31.65、门控 58.82；32K 内差距小；局限：未从理论上解释注意力汇聚怎样影响长度泛化。",
+    "evidence_boundary": "未复现实验；数字取自论文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2505.06708",
+      "https://arxiv.org/pdf/2505.06708v1"
+    ],
+    "source_origin": "pretraining_field_rewrite_review1",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "generation",
+    "analysis"
+  ]
+}

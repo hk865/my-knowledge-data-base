@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2301.04213",
+  "title": "Does Localization Inform Editing? Surprising Differences in Causality-Based Localization vs. Knowledge Editing in Language Models",
+  "resource_kind": "paper",
+  "canonical_folder": "cross-domain/papers/arxiv-2301.04213",
+  "official_url": "https://arxiv.org/abs/2301.04213",
+  "official_fulltext_url": "https://arxiv.org/pdf/2301.04213",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_method_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验范围：arXiv v2 PDF 选段：摘要、§1、§3–§4 主要结果（Figure 1、Figure 4、Table 1）；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Peter Hase",
+    "Mohit Bansal",
+    "Been Kim",
+    "Asma Ghandeharioun"
+  ],
+  "year": 2023,
+  "venue": "NeurIPS 2023",
+  "topic_paths": [
+    "cross-domain/model-science"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv v2 PDF 选段：摘要、§1、§3–§4 主要结果（Figure 1、Figure 4、Table 1）",
+    "mechanism_summary": "GPT-J、CounterFact；追踪效应与 ROME 编辑成功的线性相关约 −0.13（第 6 层），其他层近 0；层的选择比追踪结果更能预测编辑效果。",
+    "evidence_boundary": "未复现；结论限于 GPT-J 与 CounterFact 中模型答对的事实。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2301.04213",
+      "https://arxiv.org/pdf/2301.04213v2"
+    ],
+    "source_origin": "review1_scaling_training_model_science",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "analysis"
+  ]
+}

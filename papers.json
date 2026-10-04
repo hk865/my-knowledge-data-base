@@ -12540,5 +12540,1466 @@
       "Kenneth O. Stanley",
       "Jeff Clune"
     ]
+  },
+  {
+    "id": "arxiv:1704.04760",
+    "title": "In-Datacenter Performance Analysis of a Tensor Processing Unit",
+    "url": "https://arxiv.org/abs/1704.04760",
+    "arxiv_id": "1704.04760",
+    "doi": null,
+    "year": "2017",
+    "topic_paths": [
+      "cross-domain/training-science"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/1704.04760"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p172",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "image"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-1704.04760",
+    "canonical_path": "cross-domain/papers/arxiv-1704.04760/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-1704.04760/README.md",
+    "source_path": "cross-domain/papers/arxiv-1704.04760/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Norman P. Jouppi",
+      "Cliff Young",
+      "Nishant Patil",
+      "David Patterson",
+      "et al. (Google)"
+    ]
+  },
+  {
+    "id": "arxiv:1803.03635",
+    "title": "The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks",
+    "url": "https://arxiv.org/abs/1803.03635",
+    "arxiv_id": "1803.03635",
+    "doi": null,
+    "year": "2019",
+    "topic_paths": [
+      "cross-domain/training-science"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/1803.03635"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p173",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-1803.03635",
+    "canonical_path": "cross-domain/papers/arxiv-1803.03635/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-1803.03635/README.md",
+    "source_path": "cross-domain/papers/arxiv-1803.03635/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Jonathan Frankle",
+      "Michael Carbin"
+    ]
+  },
+  {
+    "id": "arxiv:2009.06489",
+    "title": "The Hardware Lottery",
+    "url": "https://arxiv.org/abs/2009.06489",
+    "arxiv_id": "2009.06489",
+    "doi": null,
+    "year": "2020",
+    "topic_paths": [
+      "cross-domain/training-science"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2009.06489"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p174",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2009.06489",
+    "canonical_path": "cross-domain/papers/arxiv-2009.06489/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2009.06489/README.md",
+    "source_path": "cross-domain/papers/arxiv-2009.06489/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Sara Hooker"
+    ]
+  },
+  {
+    "id": "arxiv:2104.04473",
+    "title": "Efficient Large-Scale Language Model Training on GPU Clusters Using Megatron-LM",
+    "url": "https://arxiv.org/abs/2104.04473",
+    "arxiv_id": "2104.04473",
+    "doi": null,
+    "year": "2021",
+    "topic_paths": [
+      "cross-domain/training-science"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2104.04473"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p175",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2104.04473",
+    "canonical_path": "cross-domain/papers/arxiv-2104.04473/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2104.04473/README.md",
+    "source_path": "cross-domain/papers/arxiv-2104.04473/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Deepak Narayanan",
+      "Mohammad Shoeybi",
+      "Jared Casper",
+      "Patrick LeGresley",
+      "Mostofa Patwary",
+      "Vijay Korthikanti",
+      "Dmitri Vainbrand",
+      "Prethvi Kashinkunti",
+      "Julie Bernauer",
+      "Bryan Catanzaro",
+      "Amar Phanishayee",
+      "Matei Zaharia"
+    ]
+  },
+  {
+    "id": "arxiv:2301.04213",
+    "title": "Does Localization Inform Editing? Surprising Differences in Causality-Based Localization vs. Knowledge Editing in Language Models",
+    "url": "https://arxiv.org/abs/2301.04213",
+    "arxiv_id": "2301.04213",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "cross-domain/model-science"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2301.04213"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p176",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2301.04213",
+    "canonical_path": "cross-domain/papers/arxiv-2301.04213/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2301.04213/README.md",
+    "source_path": "cross-domain/papers/arxiv-2301.04213/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Peter Hase",
+      "Mohit Bansal",
+      "Been Kim",
+      "Asma Ghandeharioun"
+    ]
+  },
+  {
+    "id": "arxiv:2301.05217",
+    "title": "Progress Measures for Grokking via Mechanistic Interpretability",
+    "url": "https://arxiv.org/abs/2301.05217",
+    "arxiv_id": "2301.05217",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "cross-domain/model-science"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2301.05217"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p177",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2301.05217",
+    "canonical_path": "cross-domain/papers/arxiv-2301.05217/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2301.05217/README.md",
+    "source_path": "cross-domain/papers/arxiv-2301.05217/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Neel Nanda",
+      "Lawrence Chan",
+      "Tom Lieberum",
+      "Jess Smith",
+      "Jacob Steinhardt"
+    ]
+  },
+  {
+    "id": "arxiv:2304.01433",
+    "title": "TPU v4: An Optically Reconfigurable Supercomputer for Machine Learning with Hardware Support for Embeddings",
+    "url": "https://arxiv.org/abs/2304.01433",
+    "arxiv_id": "2304.01433",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "cross-domain/training-science"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2304.01433"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p178",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2304.01433",
+    "canonical_path": "cross-domain/papers/arxiv-2304.01433/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2304.01433/README.md",
+    "source_path": "cross-domain/papers/arxiv-2304.01433/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Norman P. Jouppi",
+      "George Kurian",
+      "Sheng Li",
+      "Peter Ma",
+      "Rahul Nagarajan",
+      "Lifeng Nai",
+      "Nishant Patil",
+      "Suvinay Subramanian",
+      "Andy Swing",
+      "Brian Towles",
+      "Cliff Young",
+      "Xiang Zhou",
+      "Zongwei Zhou",
+      "David Patterson"
+    ]
+  },
+  {
+    "id": "arxiv:2406.11813",
+    "title": "How Do Large Language Models Acquire Factual Knowledge During Pretraining?",
+    "url": "https://arxiv.org/abs/2406.11813",
+    "arxiv_id": "2406.11813",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "cross-domain/training-science"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2406.11813"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p179",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2406.11813",
+    "canonical_path": "cross-domain/papers/arxiv-2406.11813/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2406.11813/README.md",
+    "source_path": "cross-domain/papers/arxiv-2406.11813/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Hoyeon Chang",
+      "Jinho Park",
+      "Seonghyeon Ye",
+      "Sohee Yang",
+      "Youngkyung Seo",
+      "Du-Seong Chang",
+      "Minjoon Seo"
+    ]
+  },
+  {
+    "id": "arxiv:2401.02954",
+    "title": "DeepSeek LLM: Scaling Open-Source Language Models with Longtermism",
+    "url": "https://arxiv.org/abs/2401.02954",
+    "arxiv_id": "2401.02954",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "llm/pretraining"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2401.02954"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p180",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2401.02954",
+    "canonical_path": "llm/papers/arxiv-2401.02954/README.md",
+    "canonical_readme": "llm/papers/arxiv-2401.02954/README.md",
+    "source_path": "llm/papers/arxiv-2401.02954/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "DeepSeek-AI",
+      "Xiao Bi",
+      "Deli Chen",
+      "Guanting Chen",
+      "Shanhuang Chen",
+      "Damai Dai",
+      "Chengqi Deng",
+      "Honghui Ding",
+      "Kai Dong",
+      "Qiushi Du",
+      "等 87 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2408.15664",
+    "title": "Auxiliary-Loss-Free Load Balancing Strategy for Mixture-of-Experts",
+    "url": "https://arxiv.org/abs/2408.15664",
+    "arxiv_id": "2408.15664",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "llm/pretraining",
+      "llm/architecture"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2408.15664"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p181",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2408.15664",
+    "canonical_path": "llm/papers/arxiv-2408.15664/README.md",
+    "canonical_readme": "llm/papers/arxiv-2408.15664/README.md",
+    "source_path": "llm/papers/arxiv-2408.15664/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Lean Wang",
+      "Huazuo Gao",
+      "Chenggang Zhao",
+      "Xu Sun",
+      "Damai Dai"
+    ]
+  },
+  {
+    "id": "arxiv:2502.16982",
+    "title": "Muon is Scalable for LLM Training",
+    "url": "https://arxiv.org/abs/2502.16982",
+    "arxiv_id": "2502.16982",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "llm/pretraining"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2502.16982"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p182",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2502.16982",
+    "canonical_path": "llm/papers/arxiv-2502.16982/README.md",
+    "canonical_readme": "llm/papers/arxiv-2502.16982/README.md",
+    "source_path": "llm/papers/arxiv-2502.16982/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Jingyuan Liu",
+      "Jianlin Su",
+      "Xingcheng Yao",
+      "Zhejun Jiang",
+      "Guokun Lai",
+      "Yulun Du",
+      "Yidao Qin",
+      "Weixin Xu",
+      "Enzhe Lu",
+      "Junjie Yan",
+      "等 28 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2505.06708",
+    "title": "Gated Attention for Large Language Models: Non-linearity, Sparsity, and Attention-Sink-Free",
+    "url": "https://arxiv.org/abs/2505.06708",
+    "arxiv_id": "2505.06708",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "llm/pretraining",
+      "llm/architecture"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2505.06708"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p183",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation",
+      "analysis"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2505.06708",
+    "canonical_path": "llm/papers/arxiv-2505.06708/README.md",
+    "canonical_readme": "llm/papers/arxiv-2505.06708/README.md",
+    "source_path": "llm/papers/arxiv-2505.06708/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Zihan Qiu",
+      "Zekun Wang",
+      "Bo Zheng",
+      "Zeyu Huang",
+      "Kaiyue Wen",
+      "Songlin Yang",
+      "Rui Men",
+      "Le Yu",
+      "Fei Huang",
+      "Suozhi Huang",
+      "等 13 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2507.20534",
+    "title": "Kimi K2: Open Agentic Intelligence",
+    "url": "https://arxiv.org/abs/2507.20534",
+    "arxiv_id": "2507.20534",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "llm/pretraining",
+      "llm/posttraining/rl"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2507.20534"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p184",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "generation",
+      "decision"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2507.20534",
+    "canonical_path": "llm/papers/arxiv-2507.20534/README.md",
+    "canonical_readme": "llm/papers/arxiv-2507.20534/README.md",
+    "source_path": "llm/papers/arxiv-2507.20534/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Kimi Team",
+      "Yifan Bai",
+      "Yiping Bao",
+      "Y. Charles",
+      "Cheng Chen",
+      "Guanduo Chen",
+      "Haiting Chen",
+      "Huarong Chen",
+      "Jiahao Chen",
+      "Ningxin Chen",
+      "等 200 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2510.26692",
+    "title": "Kimi Linear: An Expressive, Efficient Attention Architecture",
+    "url": "https://arxiv.org/abs/2510.26692",
+    "arxiv_id": "2510.26692",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "llm/pretraining",
+      "llm/architecture",
+      "llm/long-context"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2510.26692"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p185",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2510.26692",
+    "canonical_path": "llm/papers/arxiv-2510.26692/README.md",
+    "canonical_readme": "llm/papers/arxiv-2510.26692/README.md",
+    "source_path": "llm/papers/arxiv-2510.26692/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Kimi Team",
+      "Yu Zhang",
+      "Zongyu Lin",
+      "Xingcheng Yao",
+      "Jiaxi Hu",
+      "Fanqing Meng",
+      "Chengyin Liu",
+      "Xin Men",
+      "Songlin Yang",
+      "Zhiyuan Li",
+      "等 60 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2512.24880",
+    "title": "mHC: Manifold-Constrained Hyper-Connections",
+    "url": "https://arxiv.org/abs/2512.24880",
+    "arxiv_id": "2512.24880",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "llm/pretraining",
+      "llm/architecture"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2512.24880"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p186",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2512.24880",
+    "canonical_path": "llm/papers/arxiv-2512.24880/README.md",
+    "canonical_readme": "llm/papers/arxiv-2512.24880/README.md",
+    "source_path": "llm/papers/arxiv-2512.24880/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Zhenda Xie",
+      "Yixuan Wei",
+      "Huanqi Cao",
+      "Chenggang Zhao",
+      "Chengqi Deng",
+      "Jiashi Li",
+      "Damai Dai",
+      "Huazuo Gao",
+      "Jiang Chang",
+      "Kuai Yu",
+      "等 20 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2603.15031",
+    "title": "Attention Residuals",
+    "url": "https://arxiv.org/abs/2603.15031",
+    "arxiv_id": "2603.15031",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "llm/pretraining",
+      "llm/architecture"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2603.15031"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p187",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2603.15031",
+    "canonical_path": "llm/papers/arxiv-2603.15031/README.md",
+    "canonical_readme": "llm/papers/arxiv-2603.15031/README.md",
+    "source_path": "llm/papers/arxiv-2603.15031/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Kimi Team",
+      "Guangyu Chen",
+      "Yu Zhang",
+      "Jianlin Su",
+      "Weixin Xu",
+      "Siyuan Pan",
+      "Yaoyu Wang",
+      "Yucheng Wang",
+      "Guanduo Chen",
+      "Bohong Yin",
+      "等 37 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2606.19348",
+    "title": "DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence",
+    "url": "https://arxiv.org/abs/2606.19348",
+    "arxiv_id": "2606.19348",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "llm/pretraining",
+      "llm/architecture",
+      "llm/long-context"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2606.19348"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p188",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2606.19348",
+    "canonical_path": "llm/papers/arxiv-2606.19348/README.md",
+    "canonical_readme": "llm/papers/arxiv-2606.19348/README.md",
+    "source_path": "llm/papers/arxiv-2606.19348/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "DeepSeek-AI",
+      "Anyi Xu",
+      "Bangcai Lin",
+      "Bing Xue",
+      "Bingxuan Wang",
+      "Bingzheng Xu",
+      "Bochao Wu",
+      "Bowei Zhang",
+      "Chaofan Lin",
+      "Chen Dong",
+      "等 319 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2607.24653",
+    "title": "Kimi K3: Open Frontier Intelligence",
+    "url": "https://arxiv.org/abs/2607.24653",
+    "arxiv_id": "2607.24653",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "llm/pretraining",
+      "llm/architecture",
+      "llm/long-context"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2607.24653"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p189",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code",
+      "multimodal"
+    ],
+    "task_tags": [
+      "generation",
+      "decision"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2607.24653",
+    "canonical_path": "llm/papers/arxiv-2607.24653/README.md",
+    "canonical_readme": "llm/papers/arxiv-2607.24653/README.md",
+    "source_path": "llm/papers/arxiv-2607.24653/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Kimi Team",
+      "Tongtong Bai",
+      "Yifan Bai",
+      "Yiping Bao",
+      "M. C.",
+      "Jianfeng Cai",
+      "Xinyuan Cai",
+      "Peizhou Cao",
+      "Yuxuan Cao",
+      "Ziwei Chai",
+      "等 402 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2210.02303",
+    "title": "Imagen Video: High Definition Video Generation with Diffusion Models",
+    "url": "https://arxiv.org/abs/2210.02303",
+    "arxiv_id": "2210.02303",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "multimodal/generation",
+      "multimodal/video-temporal"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2210.02303"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p190",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "video",
+      "multimodal"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2210.02303",
+    "canonical_path": "multimodal/papers/arxiv-2210.02303/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2210.02303/README.md",
+    "source_path": "multimodal/papers/arxiv-2210.02303/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Jonathan Ho",
+      "William Chan",
+      "Chitwan Saharia",
+      "Jay Whang",
+      "Ruiqi Gao",
+      "Alexey Gritsenko",
+      "Diederik P. Kingma",
+      "Ben Poole",
+      "Mohammad Norouzi",
+      "David J. Fleet",
+      "Tim Salimans"
+    ]
+  },
+  {
+    "id": "arxiv:2402.15391",
+    "title": "Genie: Generative Interactive Environments",
+    "url": "https://arxiv.org/abs/2402.15391",
+    "arxiv_id": "2402.15391",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "multimodal/world-models",
+      "multimodal/generation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2402.15391"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p191",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "video",
+      "action"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2402.15391",
+    "canonical_path": "multimodal/papers/arxiv-2402.15391/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2402.15391/README.md",
+    "source_path": "multimodal/papers/arxiv-2402.15391/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Jake Bruce",
+      "Michael Dennis",
+      "Ashley Edwards",
+      "Jack Parker-Holder",
+      "Yuge Shi",
+      "Edward Hughes",
+      "Matthew Lai",
+      "Aditi Mavalankar",
+      "Richie Steigerwald",
+      "Chris Apps",
+      "Yusuf Aytar",
+      "Sarah Bechtle",
+      "Feryal Behbahani",
+      "Stephanie Chan",
+      "Nicolas Heess",
+      "Lucy Gonzalez",
+      "Simon Osindero",
+      "Sherjil Ozair",
+      "Scott Reed",
+      "Jingwei Zhang",
+      "Konrad Zolna",
+      "Jeff Clune",
+      "Nando de Freitas",
+      "Satinder Singh",
+      "Tim Rocktäschel"
+    ]
+  },
+  {
+    "id": "arxiv:2412.03603",
+    "title": "HunyuanVideo: A Systematic Framework For Large Video Generative Models",
+    "url": "https://arxiv.org/abs/2412.03603",
+    "arxiv_id": "2412.03603",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "multimodal/generation",
+      "multimodal/video-temporal"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2412.03603"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p192",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "video",
+      "image",
+      "multimodal"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2412.03603",
+    "canonical_path": "multimodal/papers/arxiv-2412.03603/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2412.03603/README.md",
+    "source_path": "multimodal/papers/arxiv-2412.03603/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Hunyuan Foundation Model Team (Tencent)"
+    ]
+  },
+  {
+    "id": "arxiv:2501.03575",
+    "title": "Cosmos World Foundation Model Platform for Physical AI",
+    "url": "https://arxiv.org/abs/2501.03575",
+    "arxiv_id": "2501.03575",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "multimodal/world-models",
+      "multimodal/generation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2501.03575"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p193",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "video",
+      "action"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2501.03575",
+    "canonical_path": "multimodal/papers/arxiv-2501.03575/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2501.03575/README.md",
+    "source_path": "multimodal/papers/arxiv-2501.03575/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "NVIDIA"
+    ]
+  },
+  {
+    "id": "arxiv:2503.20314",
+    "title": "Wan: Open and Advanced Large-Scale Video Generative Models",
+    "url": "https://arxiv.org/abs/2503.20314",
+    "arxiv_id": "2503.20314",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "multimodal/generation",
+      "multimodal/video-temporal"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2503.20314"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p194",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "video",
+      "image",
+      "multimodal"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2503.20314",
+    "canonical_path": "multimodal/papers/arxiv-2503.20314/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2503.20314/README.md",
+    "source_path": "multimodal/papers/arxiv-2503.20314/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Wan Team, Alibaba Group"
+    ]
+  },
+  {
+    "id": "arxiv:2506.09113",
+    "title": "Seedance 1.0: Exploring the Boundaries of Video Generation Models",
+    "url": "https://arxiv.org/abs/2506.09113",
+    "arxiv_id": "2506.09113",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "multimodal/generation",
+      "multimodal/video-temporal"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2506.09113"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p195",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "video",
+      "multimodal"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2506.09113",
+    "canonical_path": "multimodal/papers/arxiv-2506.09113/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2506.09113/README.md",
+    "source_path": "multimodal/papers/arxiv-2506.09113/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "ByteDance Seed"
+    ]
+  },
+  {
+    "id": "arxiv:2512.16776",
+    "title": "Kling-Omni Technical Report",
+    "url": "https://arxiv.org/abs/2512.16776",
+    "arxiv_id": "2512.16776",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "multimodal/generation",
+      "multimodal/video-temporal"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2512.16776"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p196",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "video",
+      "image",
+      "multimodal"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2512.16776",
+    "canonical_path": "multimodal/papers/arxiv-2512.16776/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2512.16776/README.md",
+    "source_path": "multimodal/papers/arxiv-2512.16776/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Kling Team, Kuaishou Technology"
+    ]
+  },
+  {
+    "id": "arxiv:2604.14148",
+    "title": "Seedance 2.0: Advancing Video Generation for World Complexity",
+    "url": "https://arxiv.org/abs/2604.14148",
+    "arxiv_id": "2604.14148",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "multimodal/generation",
+      "multimodal/video-temporal"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2604.14148"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p197",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "video",
+      "audio",
+      "multimodal"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2604.14148",
+    "canonical_path": "multimodal/papers/arxiv-2604.14148/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2604.14148/README.md",
+    "source_path": "multimodal/papers/arxiv-2604.14148/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "ByteDance Seed"
+    ]
+  },
+  {
+    "id": "url:https://openai.com/index/video-generation-models-as-world-simulators/",
+    "title": "Video generation models as world simulators",
+    "url": "https://openai.com/index/video-generation-models-as-world-simulators/",
+    "arxiv_id": null,
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "multimodal/generation",
+      "multimodal/video-temporal",
+      "multimodal/world-models"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://openai.com/index/video-generation-models-as-world-simulators/"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "official_technical_report",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p198",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "video",
+      "multimodal"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/sora-tech-report",
+    "canonical_path": "multimodal/papers/sora-tech-report/README.md",
+    "canonical_readme": "multimodal/papers/sora-tech-report/README.md",
+    "source_path": "multimodal/papers/sora-tech-report/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Tim Brooks",
+      "Bill Peebles",
+      "Connor Holmes",
+      "Will DePue",
+      "Yufei Guo",
+      "Li Jing",
+      "David Schnurr",
+      "Joe Taylor",
+      "Troy Luhman",
+      "Eric Luhman",
+      "Clarence Ng",
+      "Ricky Wang",
+      "Aditya Ramesh"
+    ]
+  },
+  {
+    "id": "url:https://storage.googleapis.com/deepmind-media/veo/Veo-3-Tech-Report.pdf",
+    "title": "Veo: a text-to-video generation system",
+    "url": "https://storage.googleapis.com/deepmind-media/veo/Veo-3-Tech-Report.pdf",
+    "arxiv_id": null,
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "multimodal/generation",
+      "multimodal/video-temporal"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://storage.googleapis.com/deepmind-media/veo/Veo-3-Tech-Report.pdf"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "official_technical_report",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p199",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "video",
+      "audio",
+      "multimodal"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/veo3-tech-report",
+    "canonical_path": "multimodal/papers/veo3-tech-report/README.md",
+    "canonical_readme": "multimodal/papers/veo3-tech-report/README.md",
+    "source_path": "multimodal/papers/veo3-tech-report/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Google DeepMind"
+    ]
   }
 ]

@@ -1,6 +1,6 @@
 # 全库论文总目录
 
-共 171 个去重资源（168 篇论文、1 个代码仓库、2 篇官方博客）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
+共 199 个去重资源（194 篇论文、2 篇官方技术报告、1 个代码仓库、2 篇官方博客）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
 
 身份核验、助手教学进度和用户阅读状态分开。历史来源保留原角色与证据局限，不将助手推荐写成用户提供，也不将教学完成写成用户已读。
 
@@ -2076,6 +2076,286 @@
 - 助手教学 / 阅读进度：文献卡，核对了方法相关章节
 - 用户阅读状态：unknown
 - [文献卡（尚无独立精读）](../robotics-embodied/papers/arxiv-2004.12919/README.md)
+
+<a id="p172"></a>
+## p172 · In-Datacenter Performance Analysis of a Tensor Processing Unit
+
+- 标识：arxiv:1704.04760
+- 原文 / 官方入口：https://arxiv.org/abs/1704.04760
+- 主题：cross-domain/training-science
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-1704.04760/README.md)
+
+<a id="p173"></a>
+## p173 · The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks
+
+- 标识：arxiv:1803.03635
+- 原文 / 官方入口：https://arxiv.org/abs/1803.03635
+- 主题：cross-domain/training-science
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-1803.03635/README.md)
+
+<a id="p174"></a>
+## p174 · The Hardware Lottery
+
+- 标识：arxiv:2009.06489
+- 原文 / 官方入口：https://arxiv.org/abs/2009.06489
+- 主题：cross-domain/training-science
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2009.06489/README.md)
+
+<a id="p175"></a>
+## p175 · Efficient Large-Scale Language Model Training on GPU Clusters Using Megatron-LM
+
+- 标识：arxiv:2104.04473
+- 原文 / 官方入口：https://arxiv.org/abs/2104.04473
+- 主题：cross-domain/training-science
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2104.04473/README.md)
+
+<a id="p176"></a>
+## p176 · Does Localization Inform Editing? Surprising Differences in Causality-Based Localization vs. Knowledge Editing in Language Models
+
+- 标识：arxiv:2301.04213
+- 原文 / 官方入口：https://arxiv.org/abs/2301.04213
+- 主题：cross-domain/model-science
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2301.04213/README.md)
+
+<a id="p177"></a>
+## p177 · Progress Measures for Grokking via Mechanistic Interpretability
+
+- 标识：arxiv:2301.05217
+- 原文 / 官方入口：https://arxiv.org/abs/2301.05217
+- 主题：cross-domain/model-science
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2301.05217/README.md)
+
+<a id="p178"></a>
+## p178 · TPU v4: An Optically Reconfigurable Supercomputer for Machine Learning with Hardware Support for Embeddings
+
+- 标识：arxiv:2304.01433
+- 原文 / 官方入口：https://arxiv.org/abs/2304.01433
+- 主题：cross-domain/training-science
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2304.01433/README.md)
+
+<a id="p179"></a>
+## p179 · How Do Large Language Models Acquire Factual Knowledge During Pretraining?
+
+- 标识：arxiv:2406.11813
+- 原文 / 官方入口：https://arxiv.org/abs/2406.11813
+- 主题：cross-domain/training-science
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2406.11813/README.md)
+
+<a id="p180"></a>
+## p180 · DeepSeek LLM: Scaling Open-Source Language Models with Longtermism
+
+- 标识：arxiv:2401.02954
+- 原文 / 官方入口：https://arxiv.org/abs/2401.02954
+- 主题：llm/pretraining
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2401.02954/README.md)
+
+<a id="p181"></a>
+## p181 · Auxiliary-Loss-Free Load Balancing Strategy for Mixture-of-Experts
+
+- 标识：arxiv:2408.15664
+- 原文 / 官方入口：https://arxiv.org/abs/2408.15664
+- 主题：llm/pretraining, llm/architecture
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2408.15664/README.md)
+
+<a id="p182"></a>
+## p182 · Muon is Scalable for LLM Training
+
+- 标识：arxiv:2502.16982
+- 原文 / 官方入口：https://arxiv.org/abs/2502.16982
+- 主题：llm/pretraining
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2502.16982/README.md)
+
+<a id="p183"></a>
+## p183 · Gated Attention for Large Language Models: Non-linearity, Sparsity, and Attention-Sink-Free
+
+- 标识：arxiv:2505.06708
+- 原文 / 官方入口：https://arxiv.org/abs/2505.06708
+- 主题：llm/pretraining, llm/architecture
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2505.06708/README.md)
+
+<a id="p184"></a>
+## p184 · Kimi K2: Open Agentic Intelligence
+
+- 标识：arxiv:2507.20534
+- 原文 / 官方入口：https://arxiv.org/abs/2507.20534
+- 主题：llm/pretraining, llm/posttraining/rl
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2507.20534/README.md)
+
+<a id="p185"></a>
+## p185 · Kimi Linear: An Expressive, Efficient Attention Architecture
+
+- 标识：arxiv:2510.26692
+- 原文 / 官方入口：https://arxiv.org/abs/2510.26692
+- 主题：llm/pretraining, llm/architecture, llm/long-context
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2510.26692/README.md)
+
+<a id="p186"></a>
+## p186 · mHC: Manifold-Constrained Hyper-Connections
+
+- 标识：arxiv:2512.24880
+- 原文 / 官方入口：https://arxiv.org/abs/2512.24880
+- 主题：llm/pretraining, llm/architecture
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2512.24880/README.md)
+
+<a id="p187"></a>
+## p187 · Attention Residuals
+
+- 标识：arxiv:2603.15031
+- 原文 / 官方入口：https://arxiv.org/abs/2603.15031
+- 主题：llm/pretraining, llm/architecture
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2603.15031/README.md)
+
+<a id="p188"></a>
+## p188 · DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence
+
+- 标识：arxiv:2606.19348
+- 原文 / 官方入口：https://arxiv.org/abs/2606.19348
+- 主题：llm/pretraining, llm/architecture, llm/long-context
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2606.19348/README.md)
+
+<a id="p189"></a>
+## p189 · Kimi K3: Open Frontier Intelligence
+
+- 标识：arxiv:2607.24653
+- 原文 / 官方入口：https://arxiv.org/abs/2607.24653
+- 主题：llm/pretraining, llm/architecture, llm/long-context
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2607.24653/README.md)
+
+<a id="p190"></a>
+## p190 · Imagen Video: High Definition Video Generation with Diffusion Models
+
+- 标识：arxiv:2210.02303
+- 原文 / 官方入口：https://arxiv.org/abs/2210.02303
+- 主题：multimodal/generation, multimodal/video-temporal
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2210.02303/README.md)
+
+<a id="p191"></a>
+## p191 · Genie: Generative Interactive Environments
+
+- 标识：arxiv:2402.15391
+- 原文 / 官方入口：https://arxiv.org/abs/2402.15391
+- 主题：multimodal/world-models, multimodal/generation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2402.15391/README.md)
+
+<a id="p192"></a>
+## p192 · HunyuanVideo: A Systematic Framework For Large Video Generative Models
+
+- 标识：arxiv:2412.03603
+- 原文 / 官方入口：https://arxiv.org/abs/2412.03603
+- 主题：multimodal/generation, multimodal/video-temporal
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2412.03603/README.md)
+
+<a id="p193"></a>
+## p193 · Cosmos World Foundation Model Platform for Physical AI
+
+- 标识：arxiv:2501.03575
+- 原文 / 官方入口：https://arxiv.org/abs/2501.03575
+- 主题：multimodal/world-models, multimodal/generation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2501.03575/README.md)
+
+<a id="p194"></a>
+## p194 · Wan: Open and Advanced Large-Scale Video Generative Models
+
+- 标识：arxiv:2503.20314
+- 原文 / 官方入口：https://arxiv.org/abs/2503.20314
+- 主题：multimodal/generation, multimodal/video-temporal
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2503.20314/README.md)
+
+<a id="p195"></a>
+## p195 · Seedance 1.0: Exploring the Boundaries of Video Generation Models
+
+- 标识：arxiv:2506.09113
+- 原文 / 官方入口：https://arxiv.org/abs/2506.09113
+- 主题：multimodal/generation, multimodal/video-temporal
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2506.09113/README.md)
+
+<a id="p196"></a>
+## p196 · Kling-Omni Technical Report
+
+- 标识：arxiv:2512.16776
+- 原文 / 官方入口：https://arxiv.org/abs/2512.16776
+- 主题：multimodal/generation, multimodal/video-temporal
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2512.16776/README.md)
+
+<a id="p197"></a>
+## p197 · Seedance 2.0: Advancing Video Generation for World Complexity
+
+- 标识：arxiv:2604.14148
+- 原文 / 官方入口：https://arxiv.org/abs/2604.14148
+- 主题：multimodal/generation, multimodal/video-temporal
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2604.14148/README.md)
+
+<a id="p198"></a>
+## p198 · Video generation models as world simulators
+
+- 标识：url:https://openai.com/index/video-generation-models-as-world-simulators/
+- 原文 / 官方入口：https://openai.com/index/video-generation-models-as-world-simulators/
+- 主题：multimodal/generation, multimodal/video-temporal, multimodal/world-models
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/sora-tech-report/README.md)
+
+<a id="p199"></a>
+## p199 · Veo: a text-to-video generation system
+
+- 标识：url:https://storage.googleapis.com/deepmind-media/veo/Veo-3-Tech-Report.pdf
+- 原文 / 官方入口：https://storage.googleapis.com/deepmind-media/veo/Veo-3-Tech-Report.pdf
+- 主题：multimodal/generation, multimodal/video-temporal
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/veo3-tech-report/README.md)
 
 ## 2026年10月3日既有条目更新
 

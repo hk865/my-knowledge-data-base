@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "resource_id": "url:https://storage.googleapis.com/deepmind-media/veo/Veo-3-Tech-Report.pdf",
+  "title": "Veo: a text-to-video generation system",
+  "resource_kind": "official_technical_report",
+  "canonical_folder": "multimodal/papers/veo3-tech-report",
+  "official_url": "https://storage.googleapis.com/deepmind-media/veo/Veo-3-Tech-Report.pdf",
+  "official_fulltext_url": "https://storage.googleapis.com/deepmind-media/veo/Veo-3-Tech-Report.pdf",
+  "read_version": null,
+  "version_status": "not_pinned_official_page",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Google DeepMind"
+  ],
+  "year": 2025,
+  "topic_paths": [
+    "multimodal/generation",
+    "multimodal/video-temporal"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "Veo 3 技术报告 PDF 全文（7 页；服务器 Last-Modified 2025-05-27）；Veo 3 模型卡全文（发布 2025-05-23，更新 2026-01-13）；Veo 产品页 https://deepmind.google/models/veo/ 的能力与局限描述",
+    "mechanism_summary": "潜空间扩散，同时对音频时间潜变量与视频时空潜变量去噪；去噪网络基于 Transformer；数据为图像、视频、音频及其标注，用多个 Gemini 模型生成多粒度描述，安全与质量过滤、跨来源语义去重；TPU、JAX、Pathways 训练；模型卡评测用 MovieGenBench（1003 条视频提示、527 条音视频提示）与 VBench I2V 做人工对比；局限：技术报告称文字生成仍差、易有小幻觉、偏爱电影感镜头与频繁切镜，模型卡称复杂场景与复杂运动中保持完整一致仍是挑战，产品页称短语音片段的自然一致仍在改进；参数量与数据规模未写。",
+    "evidence_boundary": "只写官方材料中明确写出的内容；官方未写的参数量、数据规模等记为开放问题，不推测。未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://storage.googleapis.com/deepmind-media/veo/Veo-3-Tech-Report.pdf",
+      "https://storage.googleapis.com/deepmind-media/Model-Cards/Veo-3-Model-Card.pdf",
+      "https://deepmind.google/models/veo/"
+    ],
+    "source_origin": "review1_generative_convergence_update",
+    "relation_pages": [
+      "perspectives/generative-convergence.md",
+      "multimodal/fields/generation/README.md"
+    ]
+  },
+  "year_basis": "技术报告 PDF 无印刷日期；模型卡发布日期 2025-05-23，PDF 服务器 Last-Modified 2025-05-27",
+  "modality_tags": [
+    "video",
+    "audio",
+    "multimodal"
+  ],
+  "task_tags": [
+    "generation"
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2501.03575",
+  "title": "Cosmos World Foundation Model Platform for Physical AI",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2501.03575",
+  "official_url": "https://arxiv.org/abs/2501.03575",
+  "official_fulltext_url": "https://arxiv.org/pdf/2501.03575v3",
+  "read_version": "v3",
+  "version_status": "checked_v3",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "NVIDIA"
+  ],
+  "year": 2025,
+  "topic_paths": [
+    "multimodal/world-models",
+    "multimodal/generation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "Abstract、Sec.1、Fig.1、数据规模（约 2000 万小时原始视频、约 1 亿片段）、Sec.5.3.2 物理对齐评测（Table 20 附近）、结论中的 Limitations 段",
+    "mechanism_summary": "把世界基础模型定义为可后训练成专用世界模型的通用视频世界模型；平台含视频筛选流水线、视频分词器、预训练的扩散与自回归 Transformer 世界模型及后训练示例（相机控制、机器人操作、自动驾驶）；约 2000 万小时原始视频，筛出约 1 亿段片段；开源、开放权重、宽松许可；物理对齐测试中更大的模型画质更好但物理没有更好，所有模型同样难以遵守物理；局限：缺乏物体永久性、接触丰富的动力学不准、指令遵循不一致，逼真不等于遵守重力、光与流体规律，物理保真的人工评测难以定标。",
+    "evidence_boundary": "只写官方材料中明确写出的内容；官方未写的参数量、数据规模等记为开放问题，不推测。未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2501.03575",
+      "https://arxiv.org/pdf/2501.03575v3"
+    ],
+    "source_origin": "review1_generative_convergence_update",
+    "relation_pages": [
+      "perspectives/generative-convergence.md",
+      "multimodal/fields/generation/README.md"
+    ]
+  },
+  "modality_tags": [
+    "video",
+    "action"
+  ],
+  "task_tags": [
+    "generation"
+  ]
+}

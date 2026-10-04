@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2503.20314",
+  "title": "Wan: Open and Advanced Large-Scale Video Generative Models",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2503.20314",
+  "official_url": "https://arxiv.org/abs/2503.20314",
+  "official_fulltext_url": "https://arxiv.org/pdf/2503.20314v2",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Wan Team, Alibaba Group"
+  ],
+  "year": 2025,
+  "topic_paths": [
+    "multimodal/generation",
+    "multimodal/video-temporal"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "Abstract、Sec.1、Wan-VAE 一节、模型结构与流匹配训练目标、文本编码器、Sec.6 局限与结论",
+    "mechanism_summary": "开源 14B 与 1.3B 视频模型（1.3B 只需 8.19 GB 显存）；扩散 Transformer + 流匹配；Wan-VAE 为 3D 因果 VAE，时间压 4 倍、长宽各压 8 倍；umT5 文本编码器；训练数据为数十亿图像与视频；摘要称展示了随数据和模型规模的规模定律，并称是首个能生成中英文画面文字的模型；局限：大幅运动中保持细节难，14B 在单张高端 GPU 上不优化约 30 分钟一段，专门领域（教育、医疗）可能不足。",
+    "evidence_boundary": "只写官方材料中明确写出的内容；官方未写的参数量、数据规模等记为开放问题，不推测。未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2503.20314",
+      "https://arxiv.org/pdf/2503.20314v2"
+    ],
+    "source_origin": "review1_generative_convergence_update",
+    "relation_pages": [
+      "perspectives/generative-convergence.md",
+      "multimodal/fields/generation/README.md"
+    ]
+  },
+  "modality_tags": [
+    "video",
+    "image",
+    "multimodal"
+  ],
+  "task_tags": [
+    "generation"
+  ]
+}

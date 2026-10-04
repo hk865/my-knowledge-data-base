@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2301.05217",
+  "title": "Progress Measures for Grokking via Mechanistic Interpretability",
+  "resource_kind": "paper",
+  "canonical_folder": "cross-domain/papers/arxiv-2301.05217",
+  "official_url": "https://arxiv.org/abs/2301.05217",
+  "official_fulltext_url": "https://arxiv.org/pdf/2301.05217",
+  "read_version": "v3",
+  "version_status": "checked_v3",
+  "reading_depth": "selected_method_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验范围：arXiv v3 PDF 选段：摘要、§1、§5（三个阶段与权重衰减）、§7 局限；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Neel Nanda",
+    "Lawrence Chan",
+    "Tom Lieberum",
+    "Jess Smith",
+    "Jacob Steinhardt"
+  ],
+  "year": 2023,
+  "venue": "ICLR 2023",
+  "topic_paths": [
+    "cross-domain/model-science"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv v3 PDF 选段：摘要、§1、§5（三个阶段与权重衰减）、§7 局限",
+    "mechanism_summary": "模加法小 Transformer；离散傅里叶变换与三角恒等式；进度指标；记忆 → 电路形成 → 清理；权重衰减是 grokking 的必要成分（在该任务上）。",
+    "evidence_boundary": "未复现；作者写明只研究了单一电路解决的简单算法任务，大模型与真实任务另需验证。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2301.05217",
+      "https://arxiv.org/pdf/2301.05217v3"
+    ],
+    "source_origin": "review1_scaling_training_model_science",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "analysis"
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "resource_id": "url:https://openai.com/index/video-generation-models-as-world-simulators/",
+  "title": "Video generation models as world simulators",
+  "resource_kind": "official_technical_report",
+  "canonical_folder": "multimodal/papers/sora-tech-report",
+  "official_url": "https://openai.com/index/video-generation-models-as-world-simulators/",
+  "official_fulltext_url": "https://openai.com/index/video-generation-models-as-world-simulators/",
+  "read_version": null,
+  "version_status": "not_pinned_official_page",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Tim Brooks",
+    "Bill Peebles",
+    "Connor Holmes",
+    "Will DePue",
+    "Yufei Guo",
+    "Li Jing",
+    "David Schnurr",
+    "Joe Taylor",
+    "Troy Luhman",
+    "Eric Luhman",
+    "Clarence Ng",
+    "Ricky Wang",
+    "Aditya Ramesh"
+  ],
+  "year": 2024,
+  "topic_paths": [
+    "multimodal/generation",
+    "multimodal/video-temporal",
+    "multimodal/world-models"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "OpenAI 官方技术报告页面全文（2024-02-15），含 Discussion 与参考文献",
+    "mechanism_summary": "视频压缩网络在时间与空间上同时压缩；把压缩后的表示切成时空 patch 作为 Transformer token；Sora 是扩散 Transformer（引用 DiT）；在原生分辨率、时长与长宽比上训练；用 DALL·E 3 的重新标注技术与 GPT 扩写提示；最长生成一分钟高清视频；自述随规模涌现 3D 一致、物体永久性、简单交互与 Minecraft 模拟；局限：玻璃破碎等基本物理不准，吃东西不总留下正确的状态变化，长视频不连贯、物体凭空出现；报告明说不含模型与实现细节。",
+    "evidence_boundary": "只写官方材料中明确写出的内容；官方未写的参数量、数据规模等记为开放问题，不推测。未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://openai.com/index/video-generation-models-as-world-simulators/",
+      "https://openai.com/index/sora-2/"
+    ],
+    "source_origin": "review1_generative_convergence_update",
+    "relation_pages": [
+      "perspectives/generative-convergence.md",
+      "multimodal/fields/generation/README.md"
+    ]
+  },
+  "published_date": "2024-02-15",
+  "modality_tags": [
+    "video",
+    "multimodal"
+  ],
+  "task_tags": [
+    "generation"
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2304.01433",
+  "title": "TPU v4: An Optically Reconfigurable Supercomputer for Machine Learning with Hardware Support for Embeddings",
+  "resource_kind": "paper",
+  "canonical_folder": "cross-domain/papers/arxiv-2304.01433",
+  "official_url": "https://arxiv.org/abs/2304.01433",
+  "official_fulltext_url": "https://arxiv.org/pdf/2304.01433",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "selected_method_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验范围：arXiv PDF 选段：摘要、§1、§2（OCS、拓扑）、§3 开头（嵌入与 all-to-all）、Table 4 与 §7（与 TPU v3、A100 对比，7.10 HBM 容量，7.11 过度特化）、§8 相关工作、§9 结论；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Norman P. Jouppi",
+    "George Kurian",
+    "Sheng Li",
+    "Peter Ma",
+    "Rahul Nagarajan",
+    "Lifeng Nai",
+    "Nishant Patil",
+    "Suvinay Subramanian",
+    "Andy Swing",
+    "Brian Towles",
+    "Cliff Young",
+    "Xiang Zhou",
+    "Zongwei Zhou",
+    "David Patterson"
+  ],
+  "year": 2023,
+  "venue": "ISCA 2023 (Industry Track)",
+  "topic_paths": [
+    "cross-domain/training-science"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv PDF 选段：摘要、§1、§2（OCS、拓扑）、§3 开头（嵌入与 all-to-all）、Table 4 与 §7（与 TPU v3、A100 对比，7.10 HBM 容量，7.11 过度特化）、§8 相关工作、§9 结论",
+    "mechanism_summary": "OCS 重配 3D 环面，4096 芯片；SparseCore；7 nm；对 TPU v3 性能 2.1×、每瓦 2.7×，每瓦提升约 40% 来自工艺；all-to-all 比 all-reduce 更吃二分带宽；NVIDIA 系统为 NVLink/NVSwitch（4–256 GPU）加 InfiniBand 两层网络；TPU v3 的 2D 固定拓扑阻碍 LLM 切分；HBM 容量在某些情况下可能成为限制；PaLM 57.8% 峰值。",
+    "evidence_boundary": "未复现；与 A100、IPU 的比较是厂商自报，条件见原文 §7。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2304.01433",
+      "https://arxiv.org/pdf/2304.01433v1"
+    ],
+    "source_origin": "review1_scaling_training_model_science",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "analysis"
+  ]
+}

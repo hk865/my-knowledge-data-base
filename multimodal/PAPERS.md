@@ -37,3 +37,13 @@
 - [Learning Transferable Visual Models From Natural Language Supervision](papers/clip/README.md) · 2021 · 逐步教学版
 - [Emerging Properties in Self-Supervised Vision Transformers](papers/dino/README.md) · 2021 · 技术精读
 - [Reconstruction or Semantics? What Makes a Latent Space Useful for Robotic World Models](papers/arxiv-2605.06388/README.md) · 年份见原文 · 文献卡，暂无独立精读
+- [Imagen Video: High Definition Video Generation with Diffusion Models](papers/arxiv-2210.02303/README.md) · 2022 · 文献卡，暂无独立精读
+- [Genie: Generative Interactive Environments](papers/arxiv-2402.15391/README.md) · 2024 · 文献卡，暂无独立精读
+- [HunyuanVideo: A Systematic Framework For Large Video Generative Models](papers/arxiv-2412.03603/README.md) · 2024 · 文献卡，暂无独立精读
+- [Cosmos World Foundation Model Platform for Physical AI](papers/arxiv-2501.03575/README.md) · 2025 · 文献卡，暂无独立精读
+- [Wan: Open and Advanced Large-Scale Video Generative Models](papers/arxiv-2503.20314/README.md) · 2025 · 文献卡，暂无独立精读
+- [Seedance 1.0: Exploring the Boundaries of Video Generation Models](papers/arxiv-2506.09113/README.md) · 2025 · 文献卡，暂无独立精读
+- [Kling-Omni Technical Report](papers/arxiv-2512.16776/README.md) · 2025 · 文献卡，暂无独立精读
+- [Seedance 2.0: Advancing Video Generation for World Complexity](papers/arxiv-2604.14148/README.md) · 2026 · 文献卡，暂无独立精读
+- [Video generation models as world simulators](papers/sora-tech-report/README.md) · 2024 · 文献卡，暂无独立精读
+- [Veo: a text-to-video generation system](papers/veo3-tech-report/README.md) · 2025 · 文献卡，暂无独立精读

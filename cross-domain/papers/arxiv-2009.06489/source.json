@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2009.06489",
+  "title": "The Hardware Lottery",
+  "resource_kind": "paper",
+  "canonical_folder": "cross-domain/papers/arxiv-2009.06489",
+  "official_url": "https://arxiv.org/abs/2009.06489",
+  "official_fulltext_url": "https://arxiv.org/pdf/2009.06489",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_method_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验范围：arXiv v2 PDF：摘要、§1–§4（硬件彩票、软件彩票、专用硬件的回归）；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Sara Hooker"
+  ],
+  "year": 2020,
+  "topic_paths": [
+    "cross-domain/training-science"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv v2 PDF：摘要、§1–§4（硬件彩票、软件彩票、专用硬件的回归）",
+    "mechanism_summary": "hardware lottery 定义；Moore + Dennard 1980–2010 约三个数量级（引 CHM 2020）；Moore 定律终结与 Dennard 缩放失效后转向专用硬件（引 Hennessy 2019）；胶囊网络在加速器上性能断崖；非结构化剪枝、按权重量化与当时硬件不兼容。",
+    "evidence_boundary": "立场性随笔，论据是历史案例而非对照实验；三个数量级等数字为文中转引。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2009.06489",
+      "https://arxiv.org/pdf/2009.06489v2"
+    ],
+    "source_origin": "review1_scaling_training_model_science",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "image",
+    "text"
+  ],
+  "task_tags": [
+    "analysis"
+  ]
+}
