@@ -79,3 +79,6 @@
 - [System Card: Claude Opus 5.5](anthropic-claude-opus-5-5-system-card/README.md) · 2026 · 文献卡，暂无独立精读
 - [Gemini 3.8 Flash Model Card](google-gemini-3-8-flash-model-card/README.md) · 2026 · 文献卡，暂无独立精读
 - [Seed2.0 Model Card: Towards Intelligence Frontier for Real-World Complexity](arxiv-2607.00248/README.md) · 2026 · 文献卡，暂无独立精读
+- [Scaling Laws for Neural Language Models](arxiv-2001.08361/README.md) · 2020 · 文献卡，暂无独立精读
+- [Scaling Laws for Autoregressive Generative Modeling](arxiv-2010.14701/README.md) · 2020 · 文献卡，暂无独立精读
+- [Scaling Vision Transformers](arxiv-2106.04560/README.md) · 2021 · 文献卡，暂无独立精读

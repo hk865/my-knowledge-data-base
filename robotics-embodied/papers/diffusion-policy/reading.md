@@ -300,7 +300,7 @@ Diffusion Policy是一种可表达多种连续行为的动作生成策略。它�
 
 [3] Ho、Jain、Abbeel，Denoising Diffusion Probabilistic Models，2020。本文展开标准加噪记号和历史背景的来源。 [DDPM论文](https://arxiv.org/abs/2006.11239)
 
-[4] Song、Meng、Ermon，Denoising Diffusion Implicit Models，2020预印本，ICLR 2021。用于理解训练日程与采样步数可以解耦。 [DDIM论文](https://arxiv.org/abs/2010.02502)
+[4] Song、Meng、Ermon，Denoising Diffusion Implicit Models，2020预印本，ICLR 2021。用于理解训练日程与采样步数可以解耦。 [DDIM论文](../../../multimodal/papers/arxiv-2010.02502/README.md)
 
 [5] Janner等，Planning with Diffusion for Flexible Behavior Synthesis，ICML 2022。用于区分早期扩散轨迹规划与本文的视觉条件动作策略。 [正式论文页](https://proceedings.mlr.press/v162/janner22a.html)
 

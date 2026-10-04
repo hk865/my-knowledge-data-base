@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2106.04560",
+  "title": "Scaling Vision Transformers",
+  "resource_kind": "paper",
+  "canonical_folder": "cross-domain/papers/arxiv-2106.04560",
+  "official_url": "https://arxiv.org/abs/2106.04560",
+  "official_fulltext_url": "https://arxiv.org/pdf/2106.04560",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了 摘要、§1、§2.1–2.3（错误率与算力的前沿、双饱和幂律、大模型更省样本）、§3.3（JFT-3B）；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Xiaohua Zhai",
+    "Alexander Kolesnikov",
+    "Neil Houlsby",
+    "Lucas Beyer"
+  ],
+  "year": 2021,
+  "topic_paths": [
+    "cross-domain/training-science",
+    "multimodal/visual-representation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv v2 PDF 选段：摘要、§1、§2.1–2.3（错误率与算力的前沿、双饱和幂律、大模型更省样本）、§3.3（JFT-3B）",
+    "mechanism_summary": "模型 5M 到 2B 参数、数据 1M 到 3B 张、算力不足 1 到超过 1 万 TPUv3 核天；错误率对算力的前沿近似双饱和幂律 E = a(C+d)^(-b) + c；小模型加数据无益，大模型在 30–300M 张时仍受数据限制；ViT-G/14（2B）ImageNet top-1 90.45%、10-shot 84.86%；依赖私有 JFT-3B。",
+    "evidence_boundary": "未复现实验；数字取自论文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2106.04560",
+      "https://arxiv.org/pdf/2106.04560v2"
+    ],
+    "source_origin": "knowledge_distillation_and_training_science_phase3_cards",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "image"
+  ],
+  "task_tags": [
+    "understanding",
+    "analysis"
+  ]
+}

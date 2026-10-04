@@ -44,7 +44,7 @@
 - [Natural Emergent Misalignment from Reward Hacking in Production RL](../../papers/arxiv-2511.18397/README.md) · 2025 · 文献卡
 - [Kimi K3: Open Frontier Intelligence](../../../llm/papers/arxiv-2607.24653/README.md) · 2026 · 文献卡（agent RL 中的沙箱隔离）
 - 官方材料（未建卡）：Anthropic 系统卡 [Claude 3.7 Sonnet](https://www-cdn.anthropic.com/9ff93dfa8f445c932415d335c88852ef47f1201e.pdf)、[Claude Sonnet 4.5](https://www-cdn.anthropic.com/963373e433e489a87a10c823c52a0a013e9172dd.pdf)、[Claude Opus 4.5](https://www-cdn.anthropic.com/bf10f64990cfda0ba858290be7b8cc6317685f47.pdf)、[Claude Opus 4.6](https://www-cdn.anthropic.com/6a5fa276ac68b9aeb0c8b6af5fa36326e0e166dd/Claude%20Opus%204.6%20System%20Card.pdf)、[Claude Opus 5.5](https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf)；OpenAI [codex-1 系统卡附录](https://cdn.openai.com/pdf/8df7697b-c1b2-4222-be00-1fd3298f351d/codex_system_card.pdf)、[GPT-5 系统卡](https://cdn.openai.com/gpt-5-system-card.pdf)、[GPT-5.1-Codex-Max 系统卡](https://openai.com/index/gpt-5-1-codex-max-system-card/)
-- 第三方评测（未建卡）：METR [Recent Frontier Models Are Reward Hacking](https://metr.org/blog/2025-06-05-recent-reward-hacking/)（2025-06）、[Measuring AI Ability to Complete Long Software Tasks](https://arxiv.org/abs/2503.14499)
+- 第三方评测（未建卡）：METR [Recent Frontier Models Are Reward Hacking](https://metr.org/blog/2025-06-05-recent-reward-hacking/)（2025-06）、[Measuring AI Ability to Complete Long Software Tasks](../../papers/arxiv-2503.14499/README.md)
 
 ## 验证与测试
 

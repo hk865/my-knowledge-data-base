@@ -17,9 +17,9 @@
 [Sequence to Sequence Learning with Neural Networks](https://arxiv.org/abs/1409.3215)（2014）；
 [Neural Machine Translation by Jointly Learning to Align and Translate](https://arxiv.org/abs/1409.0473)（2014）；
 [Improving Language Understanding by Generative Pre-Training](https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf)（GPT，2018）；
-[BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](https://arxiv.org/abs/1810.04805)（2018）；
+[BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](../../papers/arxiv-1810.04805/README.md)（2018）；
 [Language Models are Unsupervised Multitask Learners](https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf)（GPT-2，2019）；
-[Scaling Laws for Neural Language Models](https://arxiv.org/abs/2001.08361)（2020）；
+[Scaling Laws for Neural Language Models](../../../cross-domain/papers/arxiv-2001.08361/README.md)（2020）；
 [What Language Model Architecture and Pretraining Objective Work Best for Zero-Shot Generalization?](https://arxiv.org/abs/2204.05832)（2022）；
 [LLaMA: Open and Efficient Foundation Language Models](https://arxiv.org/abs/2302.13971)（2023）。
 

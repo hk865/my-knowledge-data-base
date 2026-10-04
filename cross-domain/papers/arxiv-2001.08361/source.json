@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2001.08361",
+  "title": "Scaling Laws for Neural Language Models",
+  "resource_kind": "paper",
+  "canonical_folder": "cross-domain/papers/arxiv-2001.08361",
+  "official_url": "https://arxiv.org/abs/2001.08361",
+  "official_fulltext_url": "https://arxiv.org/pdf/2001.08361",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了 摘要、§1（三条幂律、N^0.74/D、N ∝ C^0.73）、§4 Table 2；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Jared Kaplan",
+    "Sam McCandlish",
+    "Tom Henighan",
+    "Tom B. Brown",
+    "Benjamin Chess",
+    "Rewon Child",
+    "Scott Gray",
+    "Alec Radford",
+    "Jeffrey Wu",
+    "Dario Amodei"
+  ],
+  "year": 2020,
+  "topic_paths": [
+    "cross-domain/training-science",
+    "llm/pretraining"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv v1 PDF 选段：摘要、§1（三条幂律、N^0.74/D、N ∝ C^0.73）、§4 Table 2",
+    "mechanism_summary": "交叉熵损失分别随 N、D、C 呈幂律，跨 7 个以上数量级；形状影响小；αN≈0.076、αD≈0.095、αC^min≈0.050；过拟合由 N^0.74/D 决定（模型加 8 倍、数据约加 5 倍）；计算最优时 N ∝ C^0.73，大模型更省样本，应在收敛前停止。",
+    "evidence_boundary": "未复现实验；数字取自论文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2001.08361",
+      "https://arxiv.org/pdf/2001.08361v1"
+    ],
+    "source_origin": "knowledge_distillation_and_training_science_phase3_cards",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "analysis"
+  ]
+}

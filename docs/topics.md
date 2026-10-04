@@ -29,7 +29,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 ## 大语言模型
 
-### 预训练（45）
+### 预训练（48）
 
 细分：训练目标与规模规律；数据选择与混合；课程与持续预训练；数据质量与配比；训练目标与监督位置；长上下文课程
 
@@ -78,6 +78,9 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Evaluating Large Language Models Trained on Code](paper-catalog.md#p397)
 - [Olmo 3](paper-catalog.md#p495)
 - [NVIDIA Nemotron 3: Efficient and Open Intelligence](paper-catalog.md#p500)
+- [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](paper-catalog.md#p519)
+- [TinyBERT: Distilling BERT for Natural Language Understanding](paper-catalog.md#p520)
+- [Scaling Laws for Neural Language Models](paper-catalog.md#p521)
 
 ### 后训练 监督微调（28）
 
@@ -200,7 +203,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Kimi K2.5: Visual Agentic Intelligence](paper-catalog.md#p498)
 - [NVIDIA Nemotron 3: Efficient and Open Intelligence](paper-catalog.md#p500)
 
-### 架构与效率（43）
+### 架构与效率（44）
 
 细分：注意力与状态空间模型；稀疏专家与条件计算；KV cache 与压缩；线性与稀疏注意力；因果掩码与复杂度
 
@@ -247,6 +250,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [The MiniMax-M2 Series: Mini Activations Unleashing Max Real-World Intelligence](paper-catalog.md#p493)
 - [GLM-5: from Vibe Coding to Agentic Engineering](paper-catalog.md#p494)
 - [NVIDIA Nemotron 3: Efficient and Open Intelligence](paper-catalog.md#p500)
+- [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](paper-catalog.md#p519)
 
 ### 推理时计算（42）
 
@@ -298,7 +302,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 ## 多模态与世界表征
 
-### 视觉表征（31）
+### 视觉表征（32）
 
 细分：视觉编码器；局部与全局表征；自监督视觉学习
 
@@ -333,6 +337,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [A ConvNet for the 2020s](paper-catalog.md#p481)
 - [Very Deep Convolutional Networks for Large-Scale Image Recognition](paper-catalog.md#p482)
 - [Rich feature hierarchies for accurate object detection and semantic segmentation](paper-catalog.md#p483)
+- [Scaling Vision Transformers](paper-catalog.md#p523)
 
 ### 图文对齐（20）
 
@@ -873,7 +878,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Proving Test Set Contamination in Black Box Language Models](paper-catalog.md#p406)
 - [GPQA: A Graduate-Level Google-Proof Q&A Benchmark](paper-catalog.md#p409)
 
-### 训练科学（10）
+### 训练科学（13）
 
 细分：规模定律；优化地形；训练动态；双下降；本征维度与参数有效性；遗忘
 
@@ -887,6 +892,9 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [How Do Large Language Models Acquire Factual Knowledge During Pretraining?](paper-catalog.md#p179)
 - [On Layer Normalization in the Transformer Architecture](paper-catalog.md#p281)
 - [Small-scale proxies for large-scale Transformer training instabilities](paper-catalog.md#p303)
+- [Scaling Laws for Neural Language Models](paper-catalog.md#p521)
+- [Scaling Laws for Autoregressive Generative Modeling](paper-catalog.md#p522)
+- [Scaling Vision Transformers](paper-catalog.md#p523)
 
 
 ### 生物计算探索（0）
@@ -961,7 +969,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Seed2.0 Model Card: Towards Intelligence Frontier for Real-World Complexity](paper-catalog.md#p489)
 
 
-### 知识蒸馏与模型压缩（9）
+### 知识蒸馏与模型压缩（11）
 
 细分：输出分布与软目标；中间特征与提示监督；教师学生迁移；模型压缩历史与来源边界
 
@@ -974,6 +982,8 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Distilling the Knowledge in a Neural Network](paper-catalog.md#p143)
 - [C-RADIOv4 (Tech Report)](paper-catalog.md#p478)
 - [AM-RADIO: Agglomerative Vision Foundation Model -- Reduce All Domains Into One](paper-catalog.md#p479)
+- [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](paper-catalog.md#p519)
+- [TinyBERT: Distilling BERT for Natural Language Understanding](paper-catalog.md#p520)
 
 ## 正交标签
 
@@ -991,19 +1001,19 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 | 模态 \ 任务 | understanding | generation | decision | evaluation | analysis |
 |---|---:|---:|---:|---:|---:|
-| text | [58](#x-text-understanding) | [153](#x-text-generation) | [93](#x-text-decision) | [71](#x-text-evaluation) | [50](#x-text-analysis) |
-| image | [119](#x-image-understanding) | [52](#x-image-generation) | [97](#x-image-decision) | [17](#x-image-evaluation) | [14](#x-image-analysis) |
-| video | [34](#x-video-understanding) | [40](#x-video-generation) | [30](#x-video-decision) | [13](#x-video-evaluation) | [5](#x-video-analysis) |
+| text | [60](#x-text-understanding) | [154](#x-text-generation) | [93](#x-text-decision) | [71](#x-text-evaluation) | [52](#x-text-analysis) |
+| image | [120](#x-image-understanding) | [53](#x-image-generation) | [97](#x-image-decision) | [17](#x-image-evaluation) | [16](#x-image-analysis) |
+| video | [34](#x-video-understanding) | [41](#x-video-generation) | [30](#x-video-decision) | [13](#x-video-evaluation) | [6](#x-video-analysis) |
 | audio | [7](#x-audio-understanding) | [6](#x-audio-generation) | · | [1](#x-audio-evaluation) | · |
 | action | [8](#x-action-understanding) | [34](#x-action-generation) | [139](#x-action-decision) | [10](#x-action-evaluation) | [3](#x-action-analysis) |
 | state | [17](#x-state-understanding) | [2](#x-state-generation) | [68](#x-state-decision) | [1](#x-state-evaluation) | · |
 | code | [1](#x-code-understanding) | [27](#x-code-generation) | [27](#x-code-decision) | [20](#x-code-evaluation) | [7](#x-code-analysis) |
-| multimodal | [54](#x-multimodal-understanding) | [44](#x-multimodal-generation) | [43](#x-multimodal-decision) | [19](#x-multimodal-evaluation) | [8](#x-multimodal-analysis) |
+| multimodal | [54](#x-multimodal-understanding) | [45](#x-multimodal-generation) | [43](#x-multimodal-decision) | [19](#x-multimodal-evaluation) | [9](#x-multimodal-analysis) |
 | tabular | [1](#x-tabular-understanding) | · | · | · | · |
 
 <a id="x-text-understanding"></a>
 
-### text × understanding（58）
+### text × understanding（60）
 
 - [MiniLM: Deep Self-Attention Distillation for Task-Agnostic Compression of Pre-Trained Transformers](paper-catalog.md#p020)
 - [DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter](paper-catalog.md#p021)
@@ -1063,10 +1073,12 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Perception Encoder: The best visual embeddings are not at the output of the network](paper-catalog.md#p449)
 - [HunyuanImage 3.0 Technical Report](paper-catalog.md#p472)
 - [SAM 3: Segment Anything with Concepts](paper-catalog.md#p511)
+- [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](paper-catalog.md#p519)
+- [TinyBERT: Distilling BERT for Natural Language Understanding](paper-catalog.md#p520)
 
 <a id="x-text-generation"></a>
 
-### text × generation（153）
+### text × generation（154）
 
 - [Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters](paper-catalog.md#p001)
 - [Towards Thinking-Optimal Scaling of Test-Time Compute for LLM Reasoning](paper-catalog.md#p002)
@@ -1221,6 +1233,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Kimi K2.5: Visual Agentic Intelligence](paper-catalog.md#p498)
 - [Recursive Language Models](paper-catalog.md#p499)
 - [NVIDIA Nemotron 3: Efficient and Open Intelligence](paper-catalog.md#p500)
+- [Scaling Laws for Autoregressive Generative Modeling](paper-catalog.md#p522)
 
 <a id="x-text-decision"></a>
 
@@ -1398,7 +1411,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-text-analysis"></a>
 
-### text × analysis（50）
+### text × analysis（52）
 
 - [OLMo: Accelerating the Science of Language Models](paper-catalog.md#p010)
 - [ShortGPT: Layers in Large Language Models are More Redundant Than You Expect](paper-catalog.md#p022)
@@ -1450,10 +1463,12 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [The Art of Scaling Reinforcement Learning Compute for LLMs](paper-catalog.md#p492)
 - [Rethinking On-Policy Distillation of Large Language Models: Phenomenology, Mechanism, and Recipe](paper-catalog.md#p496)
 - [EgoScale: Scaling Dexterous Manipulation with Diverse Egocentric Human Data](paper-catalog.md#p507)
+- [Scaling Laws for Neural Language Models](paper-catalog.md#p521)
+- [Scaling Laws for Autoregressive Generative Modeling](paper-catalog.md#p522)
 
 <a id="x-image-understanding"></a>
 
-### image × understanding（119）
+### image × understanding（120）
 
 - [A High-Fidelity Digital Twin for Robotic Manipulation Based on 3D Gaussian Splatting](paper-catalog.md#p054)
 - [Language-Grounded Hierarchical Planning and Execution with Multi-Robot 3D Scene Graphs](paper-catalog.md#p055)
@@ -1574,10 +1589,11 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [MapAnything: Universal Feed-Forward Metric 3D Reconstruction](paper-catalog.md#p514)
 - [AMB3R-SLAM: Kilometer-scale SLAM with Hierarchical Backend](paper-catalog.md#p515)
 - [cuVSLAM: CUDA accelerated visual odometry and mapping](paper-catalog.md#p516)
+- [Scaling Vision Transformers](paper-catalog.md#p523)
 
 <a id="x-image-generation"></a>
 
-### image × generation（52）
+### image × generation（53）
 
 - [DINO-WM: World Models on Pre-trained Visual Features enable Zero-shot Planning](paper-catalog.md#p046)
 - [FOCUS: Object-Centric World Models for Robotics Manipulation](paper-catalog.md#p048)
@@ -1631,6 +1647,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Addendum to GPT-4o System Card: Native image generation](paper-catalog.md#p475)
 - [Gemini 3.1 Flash Image Model Card](paper-catalog.md#p476)
 - [Cosmos Policy: Fine-Tuning Video Models for Visuomotor Control and Planning](paper-catalog.md#p518)
+- [Scaling Laws for Autoregressive Generative Modeling](paper-catalog.md#p522)
 
 <a id="x-image-decision"></a>
 
@@ -1758,7 +1775,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-image-analysis"></a>
 
-### image × analysis（14）
+### image × analysis（16）
 
 - [In-Datacenter Performance Analysis of a Tensor Processing Unit](paper-catalog.md#p172)
 - [The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks](paper-catalog.md#p173)
@@ -1774,6 +1791,8 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Vision Transformers Need Registers](paper-catalog.md#p447)
 - [Scaling Language-Free Visual Representation Learning](paper-catalog.md#p448)
 - [EgoScale: Scaling Dexterous Manipulation with Diverse Egocentric Human Data](paper-catalog.md#p507)
+- [Scaling Laws for Autoregressive Generative Modeling](paper-catalog.md#p522)
+- [Scaling Vision Transformers](paper-catalog.md#p523)
 
 <a id="x-video-understanding"></a>
 
@@ -1816,7 +1835,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-video-generation"></a>
 
-### video × generation（40）
+### video × generation（41）
 
 - [SlotFormer: Unsupervised Visual Dynamics Simulation with Object-Centric Models](paper-catalog.md#p042)
 - [OccWorld: Learning a 3D Occupancy World Model for Autonomous Driving](paper-catalog.md#p044)
@@ -1858,6 +1877,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Genie 2: A large-scale foundation world model](paper-catalog.md#p393)
 - [Genie 3: A new frontier for world models](paper-catalog.md#p394)
 - [Cosmos Policy: Fine-Tuning Video Models for Visuomotor Control and Planning](paper-catalog.md#p518)
+- [Scaling Laws for Autoregressive Generative Modeling](paper-catalog.md#p522)
 
 <a id="x-video-decision"></a>
 
@@ -1914,13 +1934,14 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-video-analysis"></a>
 
-### video × analysis（5）
+### video × analysis（6）
 
 - [What Do Latent Action Models Actually Learn?](paper-catalog.md#p059)
 - [Reconstruction or Semantics? What Makes a Latent Space Useful for Robotic World Models](paper-catalog.md#p134)
 - [Revealing Single Frame Bias for Video-and-Language Learning](paper-catalog.md#p359)
 - [How Far is Video Generation from World Model: A Physical Law Perspective](paper-catalog.md#p369)
 - [EgoScale: Scaling Dexterous Manipulation with Diverse Egocentric Human Data](paper-catalog.md#p507)
+- [Scaling Laws for Autoregressive Generative Modeling](paper-catalog.md#p522)
 
 <a id="x-audio-understanding"></a>
 
@@ -2446,7 +2467,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-multimodal-generation"></a>
 
-### multimodal × generation（44）
+### multimodal × generation（45）
 
 - [Object-Centric World Model for Language-Guided Manipulation](paper-catalog.md#p052)
 - [InternVLA-A1: Unifying Understanding, Generation and Action for Robotic Manipulation](paper-catalog.md#p090)
@@ -2492,6 +2513,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Gemini 3.1 Flash Image Model Card](paper-catalog.md#p476)
 - [Qwen3.5-397B-A17B](paper-catalog.md#p490)
 - [Kimi K2.5: Visual Agentic Intelligence](paper-catalog.md#p498)
+- [Scaling Laws for Autoregressive Generative Modeling](paper-catalog.md#p522)
 
 <a id="x-multimodal-decision"></a>
 
@@ -2567,7 +2589,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-multimodal-analysis"></a>
 
-### multimodal × analysis（8）
+### multimodal × analysis（9）
 
 - [SFT Memorizes, RL Generalizes: A Comparative Study of Foundation Model Post-training](paper-catalog.md#p326)
 - [Reproducible scaling laws for contrastive language-image learning](paper-catalog.md#p339)
@@ -2577,6 +2599,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Revealing Single Frame Bias for Video-and-Language Learning](paper-catalog.md#p359)
 - [Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs](paper-catalog.md#p384)
 - [Scaling Language-Free Visual Representation Learning](paper-catalog.md#p448)
+- [Scaling Laws for Autoregressive Generative Modeling](paper-catalog.md#p522)
 
 <a id="x-tabular-understanding"></a>
 

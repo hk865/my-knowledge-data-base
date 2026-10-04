@@ -32707,5 +32707,275 @@
       "Chelsea Finn",
       "Jinwei Gu"
     ]
+  },
+  {
+    "id": "arxiv:1810.04805",
+    "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+    "url": "https://arxiv.org/abs/1810.04805",
+    "arxiv_id": "1810.04805",
+    "doi": null,
+    "year": "2018",
+    "topic_paths": [
+      "llm/pretraining",
+      "llm/architecture",
+      "cross-domain/knowledge-distillation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/1810.04805"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p519",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "llm/papers/arxiv-1810.04805",
+    "canonical_path": "llm/papers/arxiv-1810.04805/README.md",
+    "canonical_readme": "llm/papers/arxiv-1810.04805/README.md",
+    "source_path": "llm/papers/arxiv-1810.04805/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Jacob Devlin",
+      "Ming-Wei Chang",
+      "Kenton Lee",
+      "Kristina Toutanova"
+    ]
+  },
+  {
+    "id": "arxiv:1909.10351",
+    "title": "TinyBERT: Distilling BERT for Natural Language Understanding",
+    "url": "https://arxiv.org/abs/1909.10351",
+    "arxiv_id": "1909.10351",
+    "doi": null,
+    "year": "2019",
+    "topic_paths": [
+      "cross-domain/knowledge-distillation",
+      "llm/pretraining"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/1909.10351"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p520",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "llm/papers/arxiv-1909.10351",
+    "canonical_path": "llm/papers/arxiv-1909.10351/README.md",
+    "canonical_readme": "llm/papers/arxiv-1909.10351/README.md",
+    "source_path": "llm/papers/arxiv-1909.10351/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Xiaoqi Jiao",
+      "Yichun Yin",
+      "Lifeng Shang",
+      "Xin Jiang",
+      "Xiao Chen",
+      "Linlin Li",
+      "Fang Wang",
+      "Qun Liu"
+    ]
+  },
+  {
+    "id": "arxiv:2001.08361",
+    "title": "Scaling Laws for Neural Language Models",
+    "url": "https://arxiv.org/abs/2001.08361",
+    "arxiv_id": "2001.08361",
+    "doi": null,
+    "year": "2020",
+    "topic_paths": [
+      "cross-domain/training-science",
+      "llm/pretraining"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2001.08361"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p521",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2001.08361",
+    "canonical_path": "cross-domain/papers/arxiv-2001.08361/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2001.08361/README.md",
+    "source_path": "cross-domain/papers/arxiv-2001.08361/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Jared Kaplan",
+      "Sam McCandlish",
+      "Tom Henighan",
+      "Tom B. Brown",
+      "Benjamin Chess",
+      "Rewon Child",
+      "Scott Gray",
+      "Alec Radford",
+      "Jeffrey Wu",
+      "Dario Amodei"
+    ]
+  },
+  {
+    "id": "arxiv:2010.14701",
+    "title": "Scaling Laws for Autoregressive Generative Modeling",
+    "url": "https://arxiv.org/abs/2010.14701",
+    "arxiv_id": "2010.14701",
+    "doi": null,
+    "year": "2020",
+    "topic_paths": [
+      "cross-domain/training-science"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2010.14701"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p522",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "video",
+      "multimodal",
+      "text"
+    ],
+    "task_tags": [
+      "analysis",
+      "generation"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2010.14701",
+    "canonical_path": "cross-domain/papers/arxiv-2010.14701/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2010.14701/README.md",
+    "source_path": "cross-domain/papers/arxiv-2010.14701/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Tom Henighan",
+      "Jared Kaplan",
+      "Mor Katz",
+      "Mark Chen",
+      "Christopher Hesse",
+      "Jacob Jackson",
+      "Heewoo Jun",
+      "Tom B. Brown",
+      "Prafulla Dhariwal",
+      "Scott Gray",
+      "Chris Hallacy",
+      "Benjamin Mann",
+      "Alec Radford",
+      "Aditya Ramesh",
+      "Nick Ryder",
+      "Daniel M. Ziegler",
+      "John Schulman",
+      "Dario Amodei",
+      "Sam McCandlish"
+    ]
+  },
+  {
+    "id": "arxiv:2106.04560",
+    "title": "Scaling Vision Transformers",
+    "url": "https://arxiv.org/abs/2106.04560",
+    "arxiv_id": "2106.04560",
+    "doi": null,
+    "year": "2021",
+    "topic_paths": [
+      "cross-domain/training-science",
+      "multimodal/visual-representation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2106.04560"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p523",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding",
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2106.04560",
+    "canonical_path": "cross-domain/papers/arxiv-2106.04560/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2106.04560/README.md",
+    "source_path": "cross-domain/papers/arxiv-2106.04560/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Xiaohua Zhai",
+      "Alexander Kolesnikov",
+      "Neil Houlsby",
+      "Lucas Beyer"
+    ]
   }
 ]

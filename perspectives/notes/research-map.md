@@ -113,9 +113,9 @@ ViT 属于架构标签，CLIP 是图文对齐方法与模型家族，WM 是世�
 
 #### Agent 与上下文系统
 
-- [Recursive Introspection: Teaching Language Model Agents How to Self-Improve](https://arxiv.org/abs/2407.18219) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-23；标签：iterative fine-tuning, online imitation, environment feedback
+- [Recursive Introspection: Teaching Language Model Agents How to Self-Improve](../../llm/papers/arxiv-2407.18219/README.md) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-23；标签：iterative fine-tuning, online imitation, environment feedback
 
-- [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](https://arxiv.org/abs/2405.15793) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-01
+- [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](../../llm/papers/arxiv-2405.15793/README.md) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-01
 
 - [ReAct: Synergizing Reasoning and Acting in Language Models](https://mlanthology.org/iclr/2023/yao2023iclr-react/) · 2022 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-01
 
@@ -123,29 +123,29 @@ ViT 属于架构标签，CLIP 是图文对齐方法与模型家族，WM 是世�
 
 #### 机制与可信解释
 
-- [OLMo: Accelerating the Science of Language Models](https://arxiv.org/abs/2402.00838) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-30；标签：self-supervised language modeling
+- [OLMo: Accelerating the Science of Language Models](../../llm/papers/arxiv-2402.00838/README.md) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-30；标签：self-supervised language modeling
 
-- [ShortGPT: Layers in Large Language Models are More Redundant Than You Expect](https://arxiv.org/abs/2403.03853) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18
+- [ShortGPT: Layers in Large Language Models are More Redundant Than You Expect](../../llm/papers/arxiv-2403.03853/README.md) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18
 
-- [In-context Learning and Induction Heads](https://arxiv.org/abs/2209.11895) · 2022 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18
+- [In-context Learning and Induction Heads](../../cross-domain/papers/arxiv-2209.11895/README.md) · 2022 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18
 
-- [Transformer Feed-Forward Layers Are Key-Value Memories](https://arxiv.org/abs/2012.14913) · 2020 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18
+- [Transformer Feed-Forward Layers Are Key-Value Memories](../../cross-domain/papers/arxiv-2012.14913/README.md) · 2020 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18
 
-- [Locating and Editing Factual Associations in GPT](https://arxiv.org/abs/2202.05262) · 2022 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18；标签：targeted factual editing
+- [Locating and Editing Factual Associations in GPT](../../cross-domain/papers/arxiv-2202.05262/README.md) · 2022 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18；标签：targeted factual editing
 
-- [Naturalness of Attention: Revisiting Attention in Code Language Models](https://arxiv.org/abs/2311.13508) · 2023 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18
+- [Naturalness of Attention: Revisiting Attention in Code Language Models](../../llm/papers/arxiv-2311.13508/README.md) · 2023 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18
 
-- [Probing Pretrained Models of Source Code](https://arxiv.org/abs/2202.08975) · 2022 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18
+- [Probing Pretrained Models of Source Code](../../llm/papers/arxiv-2202.08975/README.md) · 2022 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18
 
-- [INSPECT: Intrinsic and Systematic Probing Evaluation for Code Transformers](https://arxiv.org/abs/2312.05092) · 2023 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18
+- [INSPECT: Intrinsic and Systematic Probing Evaluation for Code Transformers](../../cross-domain/papers/arxiv-2312.05092/README.md) · 2023 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18
 
-- [Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity](https://arxiv.org/abs/2510.01171) · 2025 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-25
+- [Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity](../../llm/papers/arxiv-2510.01171/README.md) · 2025 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-25
 
-- [PersonaEval: Are LLM Evaluators Human Enough to Judge Role-Play?](https://arxiv.org/abs/2508.10014) · 2025 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-25
+- [PersonaEval: Are LLM Evaluators Human Enough to Judge Role-Play?](../../cross-domain/papers/arxiv-2508.10014/README.md) · 2025 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-25
 
-- [On scalable oversight with weak LLMs judging strong LLMs](https://arxiv.org/abs/2407.04622) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-25
+- [On scalable oversight with weak LLMs judging strong LLMs](../../cross-domain/papers/arxiv-2407.04622/README.md) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-25
 
-- [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](https://arxiv.org/abs/2405.15793) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-01
+- [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](../../llm/papers/arxiv-2405.15793/README.md) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-01
 
 - [Making Reasoning Matter: Measuring and Improving Faithfulness of Chain-of-Thought Reasoning](https://aclanthology.org/2024.findings-emnlp.882/) · 年份待核 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-01
 
@@ -159,13 +159,13 @@ ViT 属于架构标签，CLIP 是图文对齐方法与模型家族，WM 是世�
 
 #### 评估与监督可靠性
 
-- [INSPECT: Intrinsic and Systematic Probing Evaluation for Code Transformers](https://arxiv.org/abs/2312.05092) · 2023 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18
+- [INSPECT: Intrinsic and Systematic Probing Evaluation for Code Transformers](../../cross-domain/papers/arxiv-2312.05092/README.md) · 2023 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18
 
-- [PersonaEval: Are LLM Evaluators Human Enough to Judge Role-Play?](https://arxiv.org/abs/2508.10014) · 2025 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-25
+- [PersonaEval: Are LLM Evaluators Human Enough to Judge Role-Play?](../../cross-domain/papers/arxiv-2508.10014/README.md) · 2025 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-25
 
-- [On scalable oversight with weak LLMs judging strong LLMs](https://arxiv.org/abs/2407.04622) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-25
+- [On scalable oversight with weak LLMs judging strong LLMs](../../cross-domain/papers/arxiv-2407.04622/README.md) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-25
 
-- [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](https://arxiv.org/abs/2405.15793) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-01
+- [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](../../llm/papers/arxiv-2405.15793/README.md) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-01
 
 - [Making Reasoning Matter: Measuring and Improving Faithfulness of Chain-of-Thought Reasoning](https://aclanthology.org/2024.findings-emnlp.882/) · 年份待核 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-01
 

@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:1810.04805",
+  "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+  "resource_kind": "paper",
+  "canonical_folder": "llm/papers/arxiv-1810.04805",
+  "official_url": "https://arxiv.org/abs/1810.04805",
+  "official_fulltext_url": "https://arxiv.org/pdf/1810.04805",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了 摘要、§1、§3（模型规模、遮蔽语言模型的 15% 与 80/10/10 替换、下一句预测）；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Jacob Devlin",
+    "Ming-Wei Chang",
+    "Kenton Lee",
+    "Kristina Toutanova"
+  ],
+  "year": 2018,
+  "topic_paths": [
+    "llm/pretraining",
+    "llm/architecture",
+    "cross-domain/knowledge-distillation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv v2 PDF 选段：摘要、§1、§3（模型规模、遮蔽语言模型的 15% 与 80/10/10 替换、下一句预测）",
+    "mechanism_summary": "双向 Transformer 编码器；遮蔽 15% 的 WordPiece，被选中位置 80% 换 [MASK]、10% 换随机词、10% 不变；下一句预测；BERT-base 110M、BERT-large 340M；GLUE 80.5、MultiNLI 86.7、SQuAD v1.1 F1 93.2、v2.0 F1 83.1。",
+    "evidence_boundary": "未复现实验；数字取自论文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/1810.04805",
+      "https://arxiv.org/pdf/1810.04805v2"
+    ],
+    "source_origin": "knowledge_distillation_and_training_science_phase3_cards",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "understanding"
+  ]
+}

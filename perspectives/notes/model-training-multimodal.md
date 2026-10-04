@@ -22,7 +22,7 @@
 
 ### Training Compute-Optimal Large Language Models
 
-原题 Training Compute-Optimal Large Language Models · 2022年 · [原文](https://arxiv.org/abs/2203.15556) · 去重键 arXiv:2203.15556
+原题 Training Compute-Optimal Large Language Models · 2022年 · [原文](../../cross-domain/papers/arxiv-2203.15556/README.md) · 去重键 arXiv:2203.15556
 
 问题：固定训练算力如何分配模型大小与训练 token。方法：训练多组模型拟合计算最优规模关系，再用 Chinchilla 验证。原文证据：在研究覆盖的训练设置中支持模型大小和 token 协同增长。
 
@@ -50,129 +50,129 @@
 
 #### 预训练
 
-- [Qwen2 Technical Report](https://arxiv.org/abs/2407.10671) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-30；标签：self-supervised pretraining, supervised fine-tuning, preference alignment
+- [Qwen2 Technical Report](../../llm/papers/arxiv-2407.10671/README.md) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-30；标签：self-supervised pretraining, supervised fine-tuning, preference alignment
 
-- [Qwen2.5 Technical Report](https://arxiv.org/abs/2412.15115) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-30；标签：self-supervised pretraining, supervised fine-tuning, reinforcement learning
+- [Qwen2.5 Technical Report](../../llm/papers/arxiv-2412.15115/README.md) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-30；标签：self-supervised pretraining, supervised fine-tuning, reinforcement learning
 
-- [DeepSeek-V3 Technical Report](https://arxiv.org/abs/2412.19437) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-30；标签：self-supervised pretraining, supervised fine-tuning, reinforcement learning
+- [DeepSeek-V3 Technical Report](../../llm/papers/arxiv-2412.19437/README.md) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-30；标签：self-supervised pretraining, supervised fine-tuning, reinforcement learning
 
 - [Qwen2.5-1M Technical Report](https://arxiv.org/abs/2501.15383) · 2025 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-30；标签：self-supervised pretraining, synthetic data, supervised fine-tuning
 
 - [Mamba: Linear-Time Sequence Modeling with Selective State Spaces](https://arxiv.org/abs/2312.00752) · 2023 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-30；标签：self-supervised language modeling
 
-- [OLMo: Accelerating the Science of Language Models](https://arxiv.org/abs/2402.00838) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-30；标签：self-supervised language modeling
+- [OLMo: Accelerating the Science of Language Models](../../llm/papers/arxiv-2402.00838/README.md) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-30；标签：self-supervised language modeling
 
-- [Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity](https://arxiv.org/abs/2101.03961) · 2021 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-12；标签：self-supervised pretraining
+- [Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity](../../llm/papers/arxiv-2101.03961/README.md) · 2021 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-12；标签：self-supervised pretraining
 
-- [DeepSeekMoE: Towards Ultimate Expert Specialization in Mixture-of-Experts Language Models](https://arxiv.org/abs/2401.06066) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-12；标签：self-supervised pretraining
+- [DeepSeekMoE: Towards Ultimate Expert Specialization in Mixture-of-Experts Language Models](../../llm/papers/arxiv-2401.06066/README.md) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-12；标签：self-supervised pretraining
 
 - [DeepSeek-V2: A Strong, Economical, and Efficient Mixture-of-Experts Language Model](https://arxiv.org/abs/2405.04434) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18、2026-09-12；标签：self-supervised pretraining, supervised fine-tuning, reinforcement learning
 
-- [Conditional Memory via Scalable Lookup: A New Axis of Sparsity for Large Language Models](https://arxiv.org/abs/2601.07372) · 2026 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-26；标签：self-supervised language modeling
+- [Conditional Memory via Scalable Lookup: A New Axis of Sparsity for Large Language Models](../../llm/papers/arxiv-2601.07372/README.md) · 2026 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-26；标签：self-supervised language modeling
 
-- [MiniLM: Deep Self-Attention Distillation for Task-Agnostic Compression of Pre-Trained Transformers](https://arxiv.org/abs/2002.10957) · 2020 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18；标签：teacher-student attention distillation
+- [MiniLM: Deep Self-Attention Distillation for Task-Agnostic Compression of Pre-Trained Transformers](../../llm/papers/arxiv-2002.10957/README.md) · 2020 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18；标签：teacher-student attention distillation
 
-- [DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter](https://arxiv.org/abs/1910.01108) · 2019 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18；标签：language modeling, teacher distillation
+- [DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter](../../llm/papers/arxiv-1910.01108/README.md) · 2019 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18；标签：language modeling, teacher distillation
 
-- [GraphCodeBERT: Pre-training Code Representations with Data Flow](https://arxiv.org/abs/2009.08366) · 2020 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18；标签：masked language modeling, structure-aware self-supervision
+- [GraphCodeBERT: Pre-training Code Representations with Data Flow](../../llm/papers/arxiv-2009.08366/README.md) · 2020 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18；标签：masked language modeling, structure-aware self-supervision
 
-- [Probing Pretrained Models of Source Code](https://arxiv.org/abs/2202.08975) · 2022 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18
+- [Probing Pretrained Models of Source Code](../../llm/papers/arxiv-2202.08975/README.md) · 2022 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18
 
 #### 后训练 监督微调
 
-- [Towards Thinking-Optimal Scaling of Test-Time Compute for LLM Reasoning](https://arxiv.org/abs/2502.18080) · 2025 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-01、2026-09-10；标签：teacher-generated reasoning, self-training
+- [Towards Thinking-Optimal Scaling of Test-Time Compute for LLM Reasoning](../../llm/papers/arxiv-2502.18080/README.md) · 2025 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-01、2026-09-10；标签：teacher-generated reasoning, self-training
 
-- [s1: Simple test-time scaling](https://arxiv.org/abs/2501.19393) · 2025 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-10；标签：supervised fine-tuning, synthetic reasoning traces
+- [s1: Simple test-time scaling](../../llm/papers/arxiv-2501.19393/README.md) · 2025 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-10；标签：supervised fine-tuning, synthetic reasoning traces
 
-- [Qwen2 Technical Report](https://arxiv.org/abs/2407.10671) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-30；标签：self-supervised pretraining, supervised fine-tuning, preference alignment
+- [Qwen2 Technical Report](../../llm/papers/arxiv-2407.10671/README.md) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-30；标签：self-supervised pretraining, supervised fine-tuning, preference alignment
 
-- [Qwen2.5 Technical Report](https://arxiv.org/abs/2412.15115) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-30；标签：self-supervised pretraining, supervised fine-tuning, reinforcement learning
+- [Qwen2.5 Technical Report](../../llm/papers/arxiv-2412.15115/README.md) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-30；标签：self-supervised pretraining, supervised fine-tuning, reinforcement learning
 
-- [DeepSeek-V3 Technical Report](https://arxiv.org/abs/2412.19437) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-30；标签：self-supervised pretraining, supervised fine-tuning, reinforcement learning
+- [DeepSeek-V3 Technical Report](../../llm/papers/arxiv-2412.19437/README.md) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-30；标签：self-supervised pretraining, supervised fine-tuning, reinforcement learning
 
 - [Qwen2.5-1M Technical Report](https://arxiv.org/abs/2501.15383) · 2025 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-30；标签：self-supervised pretraining, synthetic data, supervised fine-tuning
 
-- [DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](https://arxiv.org/abs/2501.12948) · 2025 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-05、2026-09-30；标签：reinforcement learning, verifiable reward, supervised fine-tuning, distillation
+- [DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](../../llm/papers/arxiv-2501.12948/README.md) · 2025 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-05、2026-09-30；标签：reinforcement learning, verifiable reward, supervised fine-tuning, distillation
 
 - [DeepSeek-V2: A Strong, Economical, and Efficient Mixture-of-Experts Language Model](https://arxiv.org/abs/2405.04434) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18、2026-09-12；标签：self-supervised pretraining, supervised fine-tuning, reinforcement learning
 
-- [Recursive Introspection: Teaching Language Model Agents How to Self-Improve](https://arxiv.org/abs/2407.18219) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-23；标签：iterative fine-tuning, online imitation, environment feedback
+- [Recursive Introspection: Teaching Language Model Agents How to Self-Improve](../../llm/papers/arxiv-2407.18219/README.md) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-23；标签：iterative fine-tuning, online imitation, environment feedback
 
-- [Enhancing Code Generation Performance of Smaller Models by Distilling the Reasoning Ability of LLMs](https://arxiv.org/abs/2403.13271) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18；标签：teacher-generated plans, multi-task supervised learning
+- [Enhancing Code Generation Performance of Smaller Models by Distilling the Reasoning Ability of LLMs](../../llm/papers/arxiv-2403.13271/README.md) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18；标签：teacher-generated plans, multi-task supervised learning
 
 - [Do NOT Think That Much for 2+3=? On the Overthinking of Long Reasoning Models](https://proceedings.mlr.press/v267/chen25bx.html) · 年份待核 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-01；标签：self-training
 
 #### 后训练 偏好学习
 
-- [Qwen2 Technical Report](https://arxiv.org/abs/2407.10671) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-30；标签：self-supervised pretraining, supervised fine-tuning, preference alignment
+- [Qwen2 Technical Report](../../llm/papers/arxiv-2407.10671/README.md) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-30；标签：self-supervised pretraining, supervised fine-tuning, preference alignment
 
 #### 后训练 强化学习
 
-- [Qwen2.5 Technical Report](https://arxiv.org/abs/2412.15115) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-30；标签：self-supervised pretraining, supervised fine-tuning, reinforcement learning
+- [Qwen2.5 Technical Report](../../llm/papers/arxiv-2412.15115/README.md) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-30；标签：self-supervised pretraining, supervised fine-tuning, reinforcement learning
 
-- [DeepSeek-V3 Technical Report](https://arxiv.org/abs/2412.19437) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-30；标签：self-supervised pretraining, supervised fine-tuning, reinforcement learning
+- [DeepSeek-V3 Technical Report](../../llm/papers/arxiv-2412.19437/README.md) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-30；标签：self-supervised pretraining, supervised fine-tuning, reinforcement learning
 
-- [DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](https://arxiv.org/abs/2501.12948) · 2025 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-05、2026-09-30；标签：reinforcement learning, verifiable reward, supervised fine-tuning, distillation
+- [DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](../../llm/papers/arxiv-2501.12948/README.md) · 2025 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-05、2026-09-30；标签：reinforcement learning, verifiable reward, supervised fine-tuning, distillation
 
 - [DeepSeek-V2: A Strong, Economical, and Efficient Mixture-of-Experts Language Model](https://arxiv.org/abs/2405.04434) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18、2026-09-12；标签：self-supervised pretraining, supervised fine-tuning, reinforcement learning
 
 #### 架构与效率
 
-- [Qwen2 Technical Report](https://arxiv.org/abs/2407.10671) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-30；标签：self-supervised pretraining, supervised fine-tuning, preference alignment
+- [Qwen2 Technical Report](../../llm/papers/arxiv-2407.10671/README.md) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-30；标签：self-supervised pretraining, supervised fine-tuning, preference alignment
 
-- [DeepSeek-V3 Technical Report](https://arxiv.org/abs/2412.19437) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-30；标签：self-supervised pretraining, supervised fine-tuning, reinforcement learning
+- [DeepSeek-V3 Technical Report](../../llm/papers/arxiv-2412.19437/README.md) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-30；标签：self-supervised pretraining, supervised fine-tuning, reinforcement learning
 
 - [Qwen2.5-1M Technical Report](https://arxiv.org/abs/2501.15383) · 2025 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-30；标签：self-supervised pretraining, synthetic data, supervised fine-tuning
 
 - [Mamba: Linear-Time Sequence Modeling with Selective State Spaces](https://arxiv.org/abs/2312.00752) · 2023 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-30；标签：self-supervised language modeling
 
-- [Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity](https://arxiv.org/abs/2101.03961) · 2021 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-12；标签：self-supervised pretraining
+- [Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity](../../llm/papers/arxiv-2101.03961/README.md) · 2021 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-12；标签：self-supervised pretraining
 
-- [DeepSeekMoE: Towards Ultimate Expert Specialization in Mixture-of-Experts Language Models](https://arxiv.org/abs/2401.06066) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-12；标签：self-supervised pretraining
+- [DeepSeekMoE: Towards Ultimate Expert Specialization in Mixture-of-Experts Language Models](../../llm/papers/arxiv-2401.06066/README.md) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-12；标签：self-supervised pretraining
 
 - [DeepSeek-V2: A Strong, Economical, and Efficient Mixture-of-Experts Language Model](https://arxiv.org/abs/2405.04434) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18、2026-09-12；标签：self-supervised pretraining, supervised fine-tuning, reinforcement learning
 
-- [Conditional Memory via Scalable Lookup: A New Axis of Sparsity for Large Language Models](https://arxiv.org/abs/2601.07372) · 2026 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-26；标签：self-supervised language modeling
+- [Conditional Memory via Scalable Lookup: A New Axis of Sparsity for Large Language Models](../../llm/papers/arxiv-2601.07372/README.md) · 2026 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-26；标签：self-supervised language modeling
 
-- [Tokenizer-Agnostic Engram Module](https://arxiv.org/abs/2607.29065) · 2026 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-26；标签：language-model training
+- [Tokenizer-Agnostic Engram Module](../../llm/papers/arxiv-2607.29065/README.md) · 2026 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-26；标签：language-model training
 
-- [Frozen Memory Is Not Enough: Rethinking External Memory as Extraction](https://arxiv.org/abs/2608.17050) · 2026 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-26；标签：reader adaptation
+- [Frozen Memory Is Not Enough: Rethinking External Memory as Extraction](../../llm/papers/arxiv-2608.17050/README.md) · 2026 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-26；标签：reader adaptation
 
-- [MiniLM: Deep Self-Attention Distillation for Task-Agnostic Compression of Pre-Trained Transformers](https://arxiv.org/abs/2002.10957) · 2020 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18；标签：teacher-student attention distillation
+- [MiniLM: Deep Self-Attention Distillation for Task-Agnostic Compression of Pre-Trained Transformers](../../llm/papers/arxiv-2002.10957/README.md) · 2020 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18；标签：teacher-student attention distillation
 
-- [DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter](https://arxiv.org/abs/1910.01108) · 2019 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18；标签：language modeling, teacher distillation
+- [DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter](../../llm/papers/arxiv-1910.01108/README.md) · 2019 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18；标签：language modeling, teacher distillation
 
-- [ShortGPT: Layers in Large Language Models are More Redundant Than You Expect](https://arxiv.org/abs/2403.03853) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18
+- [ShortGPT: Layers in Large Language Models are More Redundant Than You Expect](../../llm/papers/arxiv-2403.03853/README.md) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18
 
-- [GraphCodeBERT: Pre-training Code Representations with Data Flow](https://arxiv.org/abs/2009.08366) · 2020 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18；标签：masked language modeling, structure-aware self-supervision
+- [GraphCodeBERT: Pre-training Code Representations with Data Flow](../../llm/papers/arxiv-2009.08366/README.md) · 2020 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18；标签：masked language modeling, structure-aware self-supervision
 
-- [Naturalness of Attention: Revisiting Attention in Code Language Models](https://arxiv.org/abs/2311.13508) · 2023 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18
+- [Naturalness of Attention: Revisiting Attention in Code Language Models](../../llm/papers/arxiv-2311.13508/README.md) · 2023 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18
 
 #### 推理时计算
 
 - [Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters](https://arxiv.org/abs/2408.03314) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-10；标签：process reward model
 
-- [Towards Thinking-Optimal Scaling of Test-Time Compute for LLM Reasoning](https://arxiv.org/abs/2502.18080) · 2025 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-01、2026-09-10；标签：teacher-generated reasoning, self-training
+- [Towards Thinking-Optimal Scaling of Test-Time Compute for LLM Reasoning](../../llm/papers/arxiv-2502.18080/README.md) · 2025 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-01、2026-09-10；标签：teacher-generated reasoning, self-training
 
-- [s1: Simple test-time scaling](https://arxiv.org/abs/2501.19393) · 2025 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-10；标签：supervised fine-tuning, synthetic reasoning traces
+- [s1: Simple test-time scaling](../../llm/papers/arxiv-2501.19393/README.md) · 2025 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-10；标签：supervised fine-tuning, synthetic reasoning traces
 
-- [Large Language Monkeys: Scaling Inference Compute with Repeated Sampling](https://arxiv.org/abs/2407.21787) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-10；标签：verifiable outcomes
+- [Large Language Monkeys: Scaling Inference Compute with Repeated Sampling](../../llm/papers/arxiv-2407.21787/README.md) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-10；标签：verifiable outcomes
 
 - [Qwen2.5-1M Technical Report](https://arxiv.org/abs/2501.15383) · 2025 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-30；标签：self-supervised pretraining, synthetic data, supervised fine-tuning
 
 - [Mamba: Linear-Time Sequence Modeling with Selective State Spaces](https://arxiv.org/abs/2312.00752) · 2023 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-30；标签：self-supervised language modeling
 
-- [DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](https://arxiv.org/abs/2501.12948) · 2025 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-05、2026-09-30；标签：reinforcement learning, verifiable reward, supervised fine-tuning, distillation
+- [DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](../../llm/papers/arxiv-2501.12948/README.md) · 2025 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-05、2026-09-30；标签：reinforcement learning, verifiable reward, supervised fine-tuning, distillation
 
-- [Forest-of-Thought: Scaling Test-Time Compute for Enhancing LLM Reasoning](https://arxiv.org/abs/2412.09078) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-01
+- [Forest-of-Thought: Scaling Test-Time Compute for Enhancing LLM Reasoning](../../llm/papers/arxiv-2412.09078/README.md) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-01
 
-- [Recursive Introspection: Teaching Language Model Agents How to Self-Improve](https://arxiv.org/abs/2407.18219) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-23；标签：iterative fine-tuning, online imitation, environment feedback
+- [Recursive Introspection: Teaching Language Model Agents How to Self-Improve](../../llm/papers/arxiv-2407.18219/README.md) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-23；标签：iterative fine-tuning, online imitation, environment feedback
 
-- [Enhancing Code Generation Performance of Smaller Models by Distilling the Reasoning Ability of LLMs](https://arxiv.org/abs/2403.13271) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18；标签：teacher-generated plans, multi-task supervised learning
+- [Enhancing Code Generation Performance of Smaller Models by Distilling the Reasoning Ability of LLMs](../../llm/papers/arxiv-2403.13271/README.md) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-18；标签：teacher-generated plans, multi-task supervised learning
 
-- [Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity](https://arxiv.org/abs/2510.01171) · 2025 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-25
+- [Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity](../../llm/papers/arxiv-2510.01171/README.md) · 2025 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-08-25
 
-- [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](https://arxiv.org/abs/2405.15793) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-01
+- [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](../../llm/papers/arxiv-2405.15793/README.md) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-01
 
 - [Do NOT Think That Much for 2+3=? On the Overthinking of Long Reasoning Models](https://proceedings.mlr.press/v267/chen25bx.html) · 年份待核 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-01；标签：self-training
 
@@ -208,43 +208,43 @@
 
 #### 世界模型
 
-- [SlotFormer: Unsupervised Visual Dynamics Simulation with Object-Centric Models](https://arxiv.org/abs/2210.05861) · 2022 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-23；标签：slot transformer, autoregressive dynamics, unsupervised video prediction
+- [SlotFormer: Unsupervised Visual Dynamics Simulation with Object-Centric Models](../../multimodal/papers/arxiv-2210.05861/README.md) · 2022 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-23；标签：slot transformer, autoregressive dynamics, unsupervised video prediction
 
-- [SAVi++: Towards End-to-End Object-Centric Learning from Real-World Videos](https://arxiv.org/abs/2206.07764) · 2022 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-23；标签：slot-based video encoder, depth prediction, sparse LiDAR supervision, no segmentation labels
+- [SAVi++: Towards End-to-End Object-Centric Learning from Real-World Videos](../../multimodal/papers/arxiv-2206.07764/README.md) · 2022 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-23；标签：slot-based video encoder, depth prediction, sparse LiDAR supervision, no segmentation labels
 
-- [OccWorld: Learning a 3D Occupancy World Model for Autonomous Driving](https://arxiv.org/abs/2311.16038) · 2023 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-23；标签：scene tokenizer, GPT-like spatiotemporal transformer, occupancy reconstruction, future token prediction
+- [OccWorld: Learning a 3D Occupancy World Model for Autonomous Driving](../../multimodal/papers/arxiv-2311.16038/README.md) · 2023 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-23；标签：scene tokenizer, GPT-like spatiotemporal transformer, occupancy reconstruction, future token prediction
 
-- [Driving in the Occupancy World: Vision-Centric 4D Occupancy Forecasting and Planning via World Models for Autonomous Driving](https://arxiv.org/abs/2408.14197) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-23；标签：BEV memory, world decoder, action conditioning, occupancy forecasting, flow forecasting
+- [Driving in the Occupancy World: Vision-Centric 4D Occupancy Forecasting and Planning via World Models for Autonomous Driving](../../multimodal/papers/arxiv-2408.14197/README.md) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-23；标签：BEV memory, world decoder, action conditioning, occupancy forecasting, flow forecasting
 
-- [DINO-WM: World Models on Pre-trained Visual Features enable Zero-shot Planning](https://arxiv.org/abs/2411.04983) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-23；标签：DINOv2 patch encoder, action-conditioned predictor, offline trajectory future-feature prediction, pretrained visual features
+- [DINO-WM: World Models on Pre-trained Visual Features enable Zero-shot Planning](../../multimodal/papers/arxiv-2411.04983/README.md) · 2024 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-23；标签：DINOv2 patch encoder, action-conditioned predictor, offline trajectory future-feature prediction, pretrained visual features
 
-- [Back to the Features: DINO as a Foundation for Video World Models](https://arxiv.org/abs/2507.19468) · 2025 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-23；标签：DINOv2 encoder, latent future predictor, uncurated video predictive learning, action-conditioned finetuning
+- [Back to the Features: DINO as a Foundation for Video World Models](../../multimodal/papers/arxiv-2507.19468/README.md) · 2025 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-23；标签：DINOv2 encoder, latent future predictor, uncurated video predictive learning, action-conditioned finetuning
 
-- [FOCUS: Object-Centric World Models for Robotics Manipulation](https://arxiv.org/abs/2307.02427) · 2023 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-23；标签：object-centric world model, model-based agent, model-based reinforcement learning, exploration bonus
+- [FOCUS: Object-Centric World Models for Robotics Manipulation](../../multimodal/papers/arxiv-2307.02427/README.md) · 2023 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-23；标签：object-centric world model, model-based agent, model-based reinforcement learning, exploration bonus
 
-- [LaDi-WM: A Latent Diffusion-based World Model for Predictive Manipulation](https://arxiv.org/abs/2505.11528) · 2025 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-23；标签：latent diffusion, DINO geometric features, CLIP semantic features, diffusion policy, future latent prediction, pretrained visual feature alignment
+- [LaDi-WM: A Latent Diffusion-based World Model for Predictive Manipulation](../../multimodal/papers/arxiv-2505.11528/README.md) · 2025 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-23；标签：latent diffusion, DINO geometric features, CLIP semantic features, diffusion policy, future latent prediction, pretrained visual feature alignment
 
-- [Mask2Real-WM: Segmentation Masks as a Sim-to-Real Bridge for Controllable Dexterous World Models](https://arxiv.org/abs/2607.04546) · 2026 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-23；标签：two-stage mask dynamics, ControlNet, Stable Video Diffusion, simulation pretraining, real-demonstration finetuning, action-conditioned mask prediction
+- [Mask2Real-WM: Segmentation Masks as a Sim-to-Real Bridge for Controllable Dexterous World Models](../../multimodal/papers/arxiv-2607.04546/README.md) · 2026 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-23；标签：two-stage mask dynamics, ControlNet, Stable Video Diffusion, simulation pretraining, real-demonstration finetuning, action-conditioned mask prediction
 
-- [A Survey of World Models for Autonomous Driving](https://arxiv.org/abs/2501.11260) · 2025 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-23；标签：survey
+- [A Survey of World Models for Autonomous Driving](../../multimodal/papers/arxiv-2501.11260/README.md) · 2025 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-23；标签：survey
 
-- [Object-Centric World Model for Language-Guided Manipulation](https://arxiv.org/abs/2503.06170) · 2025 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-04；标签：slot attention, language-conditioned latent predictor, latent future-state prediction
+- [Object-Centric World Model for Language-Guided Manipulation](../../multimodal/papers/arxiv-2503.06170/README.md) · 2025 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-04；标签：slot attention, language-conditioned latent predictor, latent future-state prediction
 
-- [Learning Physics-Guided Residual Dynamics for Deformable Object Simulation](https://arxiv.org/abs/2607.13451) · 2026 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-04；标签：spring-mass simulator, sliding-window transformer, 3D Gaussian Splatting, physics-guided residual dynamics fitting
+- [Learning Physics-Guided Residual Dynamics for Deformable Object Simulation](../../multimodal/papers/arxiv-2607.13451/README.md) · 2026 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-04；标签：spring-mass simulator, sliding-window transformer, 3D Gaussian Splatting, physics-guided residual dynamics fitting
 
-- [A High-Fidelity Digital Twin for Robotic Manipulation Based on 3D Gaussian Splatting](https://arxiv.org/abs/2601.03200) · 2026 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-04；标签：3D Gaussian Splatting, semantic fusion, collision geometry, Unity-ROS2-MoveIt, sparse RGB reconstruction
+- [A High-Fidelity Digital Twin for Robotic Manipulation Based on 3D Gaussian Splatting](../../multimodal/papers/arxiv-2601.03200/README.md) · 2026 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-04；标签：3D Gaussian Splatting, semantic fusion, collision geometry, Unity-ROS2-MoveIt, sparse RGB reconstruction
 
-- [Language-Grounded Hierarchical Planning and Execution with Multi-Robot 3D Scene Graphs](https://arxiv.org/abs/2506.07454) · 2025 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-04；标签：3D scene graph, LLM-to-PDDL, multi-robot mapping, not established from abstract
+- [Language-Grounded Hierarchical Planning and Execution with Multi-Robot 3D Scene Graphs](../../multimodal/papers/arxiv-2506.07454/README.md) · 2025 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-04；标签：3D scene graph, LLM-to-PDDL, multi-robot mapping, not established from abstract
 
-- [EVA: Aligning Video World Models with Executable Robot Actions via Inverse Dynamics Rewards](https://arxiv.org/abs/2603.17808) · 2026 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-04；标签：video generative model, inverse dynamics model, reinforcement-learning post-training, inverse-dynamics action rewards
+- [EVA: Aligning Video World Models with Executable Robot Actions via Inverse Dynamics Rewards](../../multimodal/papers/arxiv-2603.17808/README.md) · 2026 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-04；标签：video generative model, inverse dynamics model, reinforcement-learning post-training, inverse-dynamics action rewards
 
-- [Hydra-0: Action Flow for Generalist World Modeling and Control](https://arxiv.org/abs/2608.18077) · 2026 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-04；标签：action-flow conditioned video model, action head, cross-embodiment action-consequence learning
+- [Hydra-0: Action Flow for Generalist World Modeling and Control](../../multimodal/papers/arxiv-2608.18077/README.md) · 2026 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-04；标签：action-flow conditioned video model, action head, cross-embodiment action-consequence learning
 
-- [UniVLA: Learning to Act Anywhere with Task-centric Latent Actions](https://arxiv.org/abs/2505.06111) · 2025 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-23；标签：DINO-space latent action model, language conditioning, action decoder, internet-video pretraining, task-centric latent action learning
+- [UniVLA: Learning to Act Anywhere with Task-centric Latent Actions](../../multimodal/papers/arxiv-2505.06111/README.md) · 2025 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-23；标签：DINO-space latent action model, language conditioning, action decoder, internet-video pretraining, task-centric latent action learning
 
-- [What Do Latent Action Models Actually Learn?](https://arxiv.org/abs/2506.15691) · 2025 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-23；标签：linear latent-action analysis, PCA connection, auxiliary action prediction
+- [What Do Latent Action Models Actually Learn?](../../multimodal/papers/arxiv-2506.15691/README.md) · 2025 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-23；标签：linear latent-action analysis, PCA connection, auxiliary action prediction
 
-- [LARY: A Latent Action Representation Yielding Benchmark for Generalizable Vision-to-Action Alignment](https://arxiv.org/abs/2604.11689) · 2026 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-23；标签：benchmark, visual and latent-action representations
+- [LARY: A Latent Action Representation Yielding Benchmark for Generalizable Vision-to-Action Alignment](../../multimodal/papers/arxiv-2604.11689/README.md) · 2026 · 聊天助手提供，未表示你采纳 · 聊天日期 2026-09-23；标签：benchmark, visual and latent-action representations
 
 - [Zero-WAM: In-Context World-Action Modeling from Human Videos for Open-Ended Task Generalization](https://arxiv.org/abs/2608.26103) · 2026 · 用户提供 · 聊天日期 2026-08-29；标签：causal video-action model, paired human-robot video learning, in-context future chunk prediction
 

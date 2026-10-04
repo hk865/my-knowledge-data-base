@@ -1,6 +1,6 @@
 # 全库论文总目录
 
-共 518 个去重资源（475 篇论文、29 篇官方技术报告、3 个代码仓库、11 篇官方博客）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
+共 523 个去重资源（480 篇论文、29 篇官方技术报告、3 个代码仓库、11 篇官方博客）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
 
 身份核验、助手教学进度和用户阅读状态分开。历史来源保留原角色与证据局限，不将助手推荐写成用户提供，也不将教学完成写成用户已读。
 
@@ -5546,6 +5546,56 @@
 - 身份核验：selected_sections_checked_not_full_read
 - 用户阅读状态：unknown
 - [文献卡](../robotics-embodied/papers/arxiv-2601.16163/README.md)
+
+<a id="p519"></a>
+## p519 · BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding
+
+- 标识：arxiv:1810.04805
+- 原文 / 官方入口：https://arxiv.org/abs/1810.04805
+- 主题：llm/pretraining, llm/architecture, cross-domain/knowledge-distillation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-1810.04805/README.md)
+
+<a id="p520"></a>
+## p520 · TinyBERT: Distilling BERT for Natural Language Understanding
+
+- 标识：arxiv:1909.10351
+- 原文 / 官方入口：https://arxiv.org/abs/1909.10351
+- 主题：cross-domain/knowledge-distillation, llm/pretraining
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-1909.10351/README.md)
+
+<a id="p521"></a>
+## p521 · Scaling Laws for Neural Language Models
+
+- 标识：arxiv:2001.08361
+- 原文 / 官方入口：https://arxiv.org/abs/2001.08361
+- 主题：cross-domain/training-science, llm/pretraining
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2001.08361/README.md)
+
+<a id="p522"></a>
+## p522 · Scaling Laws for Autoregressive Generative Modeling
+
+- 标识：arxiv:2010.14701
+- 原文 / 官方入口：https://arxiv.org/abs/2010.14701
+- 主题：cross-domain/training-science
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2010.14701/README.md)
+
+<a id="p523"></a>
+## p523 · Scaling Vision Transformers
+
+- 标识：arxiv:2106.04560
+- 原文 / 官方入口：https://arxiv.org/abs/2106.04560
+- 主题：cross-domain/training-science, multimodal/visual-representation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2106.04560/README.md)
 
 ## 2026年10月3日既有条目更新
 

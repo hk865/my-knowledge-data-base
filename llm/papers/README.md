@@ -136,3 +136,5 @@
 - [Kimi K2.5: Visual Agentic Intelligence](arxiv-2602.02276/README.md) · 2026 · 文献卡，暂无独立精读
 - [Recursive Language Models](arxiv-2512.24601/README.md) · 2025 · 文献卡，暂无独立精读
 - [NVIDIA Nemotron 3: Efficient and Open Intelligence](arxiv-2512.20856/README.md) · 2025 · 文献卡，暂无独立精读
+- [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](arxiv-1810.04805/README.md) · 2018 · 文献卡，暂无独立精读
+- [TinyBERT: Distilling BERT for Natural Language Understanding](arxiv-1909.10351/README.md) · 2019 · 文献卡，暂无独立精读
