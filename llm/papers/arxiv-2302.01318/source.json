@@ -27,7 +27,7 @@
   "topic_paths": [
     "llm/inference"
   ],
-  "source_record_updated": "2026-10-03",
+  "source_record_updated": "2026-10-04",
   "verification_2026_10_03": {
     "reading_scope": "Algorithm 2、§4.1–4.2、§5、§6.1；未逐行复核证明",
     "mechanism_summary": "与 Leviathan 独立同期提出同一核心拒绝采样机制；明确 K+1 logits 并行验草稿、首拒绝残差重采样、全接受 bonus token。分布先应用 temperature/top-k/nucleus 再验证。",
@@ -40,5 +40,30 @@
       "https://arxiv.org/html/2302.01318v1"
     ],
     "source_origin": "historical_assistant_recommendation"
+  },
+  "year": 2023,
+  "authors": [
+    "Charlie Chen",
+    "Sebastian Borgeaud",
+    "Geoffrey Irving",
+    "Jean-Baptiste Lespiau",
+    "Laurent Sifre",
+    "John Jumper"
+  ],
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "generation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页元数据（当前版本题名、作者、日期、评注、摘要）与全文 PDF 首页（机构）及支撑卡片句子的选段",
+    "purpose": "文献卡按 STYLE §6 改写：核实题名、年份、作者与\"解决什么 / 核心方法\"两句",
+    "evidence_boundary": "文献卡层面的核验，不是全文精读，未复现。",
+    "verification_status": "identity_and_card_claims_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2302.01318",
+      "https://arxiv.org/pdf/2302.01318"
+    ]
   }
 }

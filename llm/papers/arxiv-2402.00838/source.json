@@ -22,11 +22,43 @@
   },
   "fulltext_local_status": "official_link_only_pending_license_verification",
   "fulltext_local_path": null,
-  "source_record_updated": "2026-10-02",
+  "source_record_updated": "2026-10-04",
   "legacy_paths": [],
   "evidence_paths": [],
   "topic_paths": [
     "llm/pretraining",
+    "cross-domain/training-science",
     "cross-domain/model-science"
-  ]
+  ],
+  "year": 2024,
+  "authors": [
+    "Dirk Groeneveld",
+    "Iz Beltagy",
+    "Pete Walsh",
+    "Akshita Bhagia",
+    "Rodney Kinney",
+    "Oyvind Tafjord",
+    "Ananya Harsh Jha",
+    "Hamish Ivison",
+    "Ian Magnusson",
+    "Yizhong Wang",
+    "等 43 位作者"
+  ],
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "generation",
+    "analysis"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页元数据（当前版本题名、作者、日期、评注、摘要）与全文 PDF 首页（机构）及支撑卡片句子的选段",
+    "purpose": "文献卡按 STYLE §6 改写：核实题名、年份、作者与\"解决什么 / 核心方法\"两句",
+    "evidence_boundary": "文献卡层面的核验，不是全文精读，未复现。",
+    "verification_status": "identity_and_card_claims_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2402.00838",
+      "https://arxiv.org/pdf/2402.00838"
+    ]
+  }
 }

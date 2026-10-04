@@ -27,7 +27,7 @@
   "topic_paths": [
     "llm/inference"
   ],
-  "source_record_updated": "2026-10-03",
+  "source_record_updated": "2026-10-04",
   "verification_2026_10_03": {
     "reading_scope": "§3.2–3.4、§2.3 对比与实验摘要",
     "mechanism_summary": "fallback：小模型最大预测概率低于阈值才调用大模型；大模型并行回看已有草稿；rollback：找到分布距离超阈值的最早位置，删除该处及后缀并由大模型替换。",
@@ -40,5 +40,31 @@
       "https://arxiv.org/html/2302.07863v4"
     ],
     "source_origin": "historical_assistant_recommendation"
+  },
+  "year": 2023,
+  "authors": [
+    "Sehoon Kim",
+    "Karttikeya Mangalam",
+    "Suhong Moon",
+    "Jitendra Malik",
+    "Michael W. Mahoney",
+    "Amir Gholami",
+    "Kurt Keutzer"
+  ],
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "generation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页元数据（当前版本题名、作者、日期、评注、摘要）与全文 PDF 首页（机构）及支撑卡片句子的选段",
+    "purpose": "文献卡按 STYLE §6 改写：核实题名、年份、作者与\"解决什么 / 核心方法\"两句",
+    "evidence_boundary": "文献卡层面的核验，不是全文精读，未复现。",
+    "verification_status": "identity_and_card_claims_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2302.07863",
+      "https://arxiv.org/pdf/2302.07863"
+    ]
   }
 }

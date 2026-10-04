@@ -1,28 +1,15 @@
 # Speculative Decoding with Big Little Decoder
 
-[领域目录](../../README.md) · [原文与阅读记录](source.json)
+> 状态：文献卡 · 2023 · [原文](https://arxiv.org/abs/2302.07863)
 
-- 稳定标识：arxiv:2302.07863
-- 类型：论文
-- 年份：2023
-- [官方入口](https://arxiv.org/abs/2302.07863)
+[返回大语言模型目录](../../README.md) · [原文与阅读记录](source.json)
 
-这是文献卡，没有独立 reading.md，不计为全文精读；用户是否已读未知。
+- **解决什么**：Transformer 生成文本延迟高，需要在不改训练、不改结构的前提下，让大小两个模型协作提速。
+- **核心方法**：提出 BiLD：小模型自回归地生成，大模型只偶尔以非自回归方式并行修正。两条策略协调二者：回退策略在小模型最大预测概率低于阈值时把控制权交给大模型；回滚策略让大模型回看已有草稿，找到两者分布距离超过阈值的最早位置，删去该处及之后的 token 由大模型替换。在机器翻译（IWSLT 2017、WMT 2014 德英）和摘要（XSUM、CNN/DailyMail）上，NVIDIA T4 上最高加速 2.12 倍，生成质量略有下降。
+- **为什么在这个库里**：[推理时计算方向](../../fields/inference/README.md)"近似协作"一格：用两个阈值换质量—延迟折中，不保证大模型原分布。与 [Leviathan 等的投机解码](../arxiv-2211.17192/README.md) 对照，分清"精确验证"与"阈值接管"。优先级：选读。
 
-## 2026年10月3日核验与阅读线索
+## 身份信息
 
-- 阅读范围：§3.2–3.4、§2.3 对比与实验摘要
-- 核验版本：v4 2023-10-12; NeurIPS 2023
-- 来源关系：历史助手推荐，检索摘要回收；不是用户亲自提供的论文，也没有原会话直链
-
-fallback：小模型最大预测概率低于阈值才调用大模型；大模型并行回看已有草稿；rollback：找到分布距离超阈值的最早位置，删除该处及后缀并由大模型替换。
-
-小模型过度自信仍可能出错；rollback 有重算成本；阈值需要任务权衡。
-
-分布或质量保证：阈值质量—延迟折中，不保大模型原分布
-
-官方核验来源：
-- [https://arxiv.org/abs/2302.07863](https://arxiv.org/abs/2302.07863)
-- [https://arxiv.org/html/2302.07863v4](https://arxiv.org/html/2302.07863v4)
-
-未独立复现，不镜像PDF。
+- 稳定标识：arxiv:2302.07863 · [全文 PDF](https://arxiv.org/pdf/2302.07863) · NeurIPS 2023 · 代码开源
+- 作者：Sehoon Kim、Karttikeya Mangalam、Suhong Moon、Jitendra Malik、Michael W. Mahoney、Amir Gholami、Kurt Keutzer（UC Berkeley、ICSI、LBNL）
+- 方向：llm/inference

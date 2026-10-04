@@ -28,5 +28,16 @@
   "topic_paths": [
     "llm/pretraining",
     "cross-domain/model-science"
+  ],
+  "year": 2022,
+  "authors": [
+    "Sergey Troshin",
+    "Nadezhda Chirkova"
+  ],
+  "modality_tags": [
+    "code"
+  ],
+  "task_tags": [
+    "analysis"
   ]
 }

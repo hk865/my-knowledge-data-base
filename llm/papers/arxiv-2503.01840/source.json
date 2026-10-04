@@ -27,7 +27,7 @@
   "topic_paths": [
     "llm/inference"
   ],
-  "source_record_updated": "2026-10-03",
+  "source_record_updated": "2026-10-04",
   "verification_2026_10_03": {
     "reading_scope": "§2.1–2.2、§3.1；训练细节未全文核验",
     "mechanism_summary": "融合目标低/中/高层特征，经 FC 压缩，与采样 token embedding 一起输入轻量 decoder；直接预测 token，自回归后续步使用 draft 输出替代尚未取得的 target 特征；采用动态 draft tree 和 tree attention 并行验证。",
@@ -40,5 +40,28 @@
       "https://arxiv.org/html/2503.01840v1"
     ],
     "source_origin": "historical_assistant_recommendation"
+  },
+  "year": 2025,
+  "authors": [
+    "Yuhui Li",
+    "Fangyun Wei",
+    "Chao Zhang",
+    "Hongyang Zhang"
+  ],
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "generation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页元数据（当前版本题名、作者、日期、评注、摘要）与全文 PDF 首页（机构）及支撑卡片句子的选段",
+    "purpose": "文献卡按 STYLE §6 改写：核实题名、年份、作者与\"解决什么 / 核心方法\"两句",
+    "evidence_boundary": "文献卡层面的核验，不是全文精读，未复现。",
+    "verification_status": "identity_and_card_claims_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2503.01840",
+      "https://arxiv.org/pdf/2503.01840"
+    ]
   }
 }

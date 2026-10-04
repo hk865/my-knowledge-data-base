@@ -1,28 +1,23 @@
 # Fast Inference from Transformers via Speculative Decoding
 
-[领域目录](../../README.md) · [原文与阅读记录](source.json)
+> 状态：文献卡 · 2022 · [原文](https://arxiv.org/abs/2211.17192)
 
-- 稳定标识：arxiv:2211.17192
-- 类型：论文
-- 年份：2022
-- [官方入口](https://arxiv.org/abs/2211.17192)
+[返回大语言模型目录](../../README.md) · [原文与阅读记录](source.json)
 
-这是文献卡，没有独立 reading.md，不计为全文精读；用户是否已读未知。
+- **解决什么**：大型自回归模型生成 K 个 token 要串行运行 K 次，延迟高；希望不改模型、不重新训练，并且不改变输出分布地加速。
+- **核心方法**：分块并行解码（Stern 等 2018）只支持贪心解码、需要额外训练专用模型，也只保证下游质量；本篇提出投机解码：小模型先顺序草拟若干 token，大模型一次前向并行算出这些位置的条件分布，从左到右以 min(1, 大模型概率/小模型概率) 接受；第一次拒绝处丢弃后面的草稿，从归一化的 max(大模型分布−小模型分布, 0) 中补采一个 token；全部接受时再从大模型末位分布多采一个。这种修正的拒绝采样使输出分布与大模型单独采样完全相同。在 T5-XXL 上比标准 T5X 实现快 2–3 倍，输出相同。
+- **为什么在这个库里**：[推理时计算方向](../../fields/inference/README.md)"大小模型协作"一线的起点和"精确目标分布"的参照：后来的 [EAGLE-3](../arxiv-2503.01840/README.md)、[DFlash](../arxiv-2602.06036/README.md) 改草拟器，[Judge Decoding](../arxiv-2501.19309/README.md)、[BiLD](../arxiv-2302.07863/README.md) 放宽验证，[Faster Cascades](../arxiv-2405.19261/README.md) 改目标分布，都以它为对照。[两图机制导读](../../fields/inference/draft-verification-guide.md)有手算示例。优先级：必读。
 
-## 2026年10月3日核验与阅读线索
+## 批注
 
-- 阅读范围：方法 §2.1–2.3、Algorithm 1；未逐行复核附录证明
-- 核验版本：v2 2023-05-18; ICML 2023 / PMLR 202:19274–19286, 2023-07-23–29
-- 来源关系：历史助手推荐，检索摘要回收；不是用户亲自提供的论文，也没有原会话直链
+**易误读**
+- 加速比取决于接受率、草拟开销与硬件；"分布相同"指采样分布相同，不等于同一随机种子下逐字相同（§2–3）。
 
-小模型顺序草拟 K 个 token；大模型并行计算 K+1 个条件分布；从左向右按 min(1,target/draft) 接受。首拒绝处丢弃后缀，按归一化 max(target−draft,0) 补一个 token；全接受则从目标末位分布再采一个尾 token。
+**与其他论文的关联**
+- [Chen 等 2023](../arxiv-2302.01318/README.md) 独立同期提出了同一核心机制，侧重分布式部署。
 
-必须能访问两者分布并使用兼容 token 空间；收益取决于接受率、draft 开销与硬件；相同分布不代表相同随机种子的逐字输出。
+## 身份信息
 
-分布或质量保证：精确目标分布（理想算术），不是语义判卷
-
-官方核验来源：
-- [https://arxiv.org/abs/2211.17192](https://arxiv.org/abs/2211.17192)
-- [https://arxiv.org/html/2211.17192v2](https://arxiv.org/html/2211.17192v2)
-
-未独立复现，不镜像PDF。
+- 稳定标识：arxiv:2211.17192 · [全文 PDF](https://arxiv.org/pdf/2211.17192) · ICML 2023（Oral）
+- 作者：Yaniv Leviathan、Matan Kalman、Yossi Matias（Google Research）
+- 方向：llm/inference

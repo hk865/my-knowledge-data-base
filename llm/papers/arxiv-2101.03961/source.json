@@ -28,5 +28,17 @@
   "topic_paths": [
     "llm/pretraining",
     "llm/architecture"
+  ],
+  "year": 2021,
+  "authors": [
+    "William Fedus",
+    "Barret Zoph",
+    "Noam Shazeer"
+  ],
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "generation"
   ]
 }

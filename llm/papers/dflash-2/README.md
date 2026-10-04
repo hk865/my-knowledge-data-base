@@ -1,27 +1,23 @@
 # DFlash 2: Keep Drafting Parallel
 
-[领域目录](../../README.md) · [原文与阅读记录](source.json)
+> 状态：文献卡 · 2026 · [原文](https://inco.ai/blog/dflash2/)
 
-- 稳定标识：url:https://inco.ai/blog/dflash2
-- 类型：官方博客，非论文
-- 年份：2026
-- [官方入口](https://inco.ai/blog/dflash2/)
+[返回大语言模型目录](../../README.md) · [原文与阅读记录](source.json)
 
-这是文献卡，没有独立 reading.md，不计为全文精读；用户是否已读未知。
+- **解决什么**：DFlash 一次前向草拟一整块 token（一段连续的草稿位置），对块内每个位置独立预测，各位置的首选彼此不连贯（例如相邻两个位置选了同一个词），验证时整块被截断；而且越靠块尾准确率越低。
+- **核心方法**：相对 DFlash 做两处改动。一是路径选择：每个位置保留前 16 个候选，用低秩双线性打分一次性给所有相邻候选对打分，再从最后一个已验证 token 出发沿预先算好的分数选一条路径（贪心、采样，或用拒绝采样恢复精确目标分布）；作者统计，第一个位置的首选正确率为 85.4%，正确 token 落在前 16 个候选中的比例为 99.5%。二是在草拟器中加卷积模块专门处理块内依赖，缓解块尾准确率下降。博客报告每次验证多接受 16%–25% 的输出，每轮延迟约增加 1%。
+- **为什么在这个库里**：[推理时计算方向](../../fields/inference/README.md)草拟器一线的最新厂商进展，作为 [DFlash](../arxiv-2602.06036/README.md) 的后续存档。厂商自报、未经同行评议。优先级：存档。
 
-## 2026年10月3日核验与阅读线索
+## 批注
 
-- 阅读范围：官方博客 path selector 和 local convolution 方法段；非同行评议全文
-- 核验版本：官方博客，无 arXiv/DOI 在该页核实
-- 来源关系：历史助手推荐，检索摘要回收；不是用户亲自提供的论文，也没有原会话直链
+**易误读**
+- 博客写 DFlash 于 1 月发布，而 arXiv v1 日期为 2026-02-05；本篇不是 DFlash 论文 arXiv v2 的别名。
 
-每位置保留 top-16 候选，并行算相邻候选双线性分数，再沿预计算分数选/采路径；加两点动态 depthwise convolution 改善块尾局部依赖，不改验证。
+**未核实 / 待验证**
+- "输出不变、恢复精确目标分布"是博客的表述，实现代码未审计；加速数字为厂商自测。
 
-厂商自报结果；不是 DFlash arXiv v2 的同义名称；博客称 DFlash January 发布而 arXiv v1 为 February，不能混作同一日期。
+## 身份信息
 
-分布或质量保证：官方称 rejection sampling 恢复精确目标分布；未审代码证明
-
-官方核验来源：
-- [https://inco.ai/blog/dflash2/](https://inco.ai/blog/dflash2/)
-
-未独立复现，不镜像PDF。
+- 稳定标识：url:https://inco.ai/blog/dflash2 · [博客全文](https://inco.ai/blog/dflash2/) · 官方博客，2026-08-18
+- 作者：Inco AI（博客引用格式署名）
+- 方向：llm/inference

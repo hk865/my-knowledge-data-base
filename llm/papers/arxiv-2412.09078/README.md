@@ -1,20 +1,15 @@
 # Forest-of-Thought: Scaling Test-Time Compute for Enhancing LLM Reasoning
 
+> 状态：文献卡 · 2024 · [原文](https://arxiv.org/abs/2412.09078)
+
 [返回大语言模型目录](../../README.md) · [原文与阅读记录](source.json)
 
-- 稳定标识：arxiv:2412.09078
-- 年份：2024
-- [官方原文页面](https://arxiv.org/abs/2412.09078)
-- [官方全文入口](https://arxiv.org/pdf/2412.09078)
-- 阅读版本：未固定版本；请核对官方版本记录
+- **解决什么**：CoT 与 ToT（思维树：把推理展开成树并搜索）通常只做一遍推理，走错的路径难以回头修正。
+- **核心方法**：相对单棵 ToT，并行构建多棵推理树做集体决策：用稀疏激活只保留最相关的推理路径，加入实时的动态自我纠错，并用共识引导的决策在正确率与计算量之间权衡。
+- **为什么在这个库里**：[推理时计算方向](../../fields/inference/README.md)中"搜索结构"一支的组合式变体，可与 [Large Language Monkeys](../arxiv-2407.21787/README.md) 的简单重复采样对照，看结构化搜索在同等预算下多出多少。优先级：存档。
+
+## 身份信息
+
+- 稳定标识：arxiv:2412.09078 · [全文 PDF](https://arxiv.org/pdf/2412.09078) · 预印本（v5）
+- 作者：Zhenni Bi、Kai Han、Chuanjian Liu、Yehui Tang、Yunhe Wang（华为诺亚方舟实验室）
 - 方向：llm/inference
-
-## 阅读内容与边界
-
-这是文献卡，目前没有该论文的独立精读正文。标题、标识或摘要层面的核验不等于全文阅读。
-
-本目录只有文献卡与原文元数据，没有生成 reading.md，也没有把元数据卡计为精读。
-
-## 原文保存与许可
-
-当前以官方原文链接为入口。本地PDF是否保存、对应版本和可再分发许可，以 [source.json](source.json) 为准；没有明确许可时不把第三方论文镜像到公开仓库。

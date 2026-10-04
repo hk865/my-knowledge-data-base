@@ -27,7 +27,7 @@
   "topic_paths": [
     "llm/inference"
   ],
-  "source_record_updated": "2026-10-03",
+  "source_record_updated": "2026-10-04",
   "verification_2026_10_03": {
     "reading_scope": "方法 §2.1–2.3、Algorithm 1；未逐行复核附录证明",
     "mechanism_summary": "小模型顺序草拟 K 个 token；大模型并行计算 K+1 个条件分布；从左向右按 min(1,target/draft) 接受。首拒绝处丢弃后缀，按归一化 max(target−draft,0) 补一个 token；全接受则从目标末位分布再采一个尾 token。",
@@ -40,5 +40,27 @@
       "https://arxiv.org/html/2211.17192v2"
     ],
     "source_origin": "historical_assistant_recommendation"
+  },
+  "year": 2022,
+  "authors": [
+    "Yaniv Leviathan",
+    "Matan Kalman",
+    "Yossi Matias"
+  ],
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "generation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页元数据（当前版本题名、作者、日期、评注、摘要）与全文 PDF 首页（机构）及支撑卡片句子的选段",
+    "purpose": "文献卡按 STYLE §6 改写：核实题名、年份、作者与\"解决什么 / 核心方法\"两句",
+    "evidence_boundary": "文献卡层面的核验，不是全文精读，未复现。",
+    "verification_status": "identity_and_card_claims_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2211.17192",
+      "https://arxiv.org/pdf/2211.17192"
+    ]
   }
 }

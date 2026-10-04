@@ -28,5 +28,16 @@
   "topic_paths": [
     "llm/architecture",
     "cross-domain/model-science"
+  ],
+  "year": 2023,
+  "authors": [
+    "Mootez Saad",
+    "Tushar Sharma"
+  ],
+  "modality_tags": [
+    "code"
+  ],
+  "task_tags": [
+    "analysis"
   ]
 }

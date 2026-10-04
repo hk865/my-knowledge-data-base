@@ -1,28 +1,15 @@
 # Faster Cascades via Speculative Decoding
 
-[领域目录](../../README.md) · [原文与阅读记录](source.json)
+> 状态：文献卡 · 2024 · [原文](https://arxiv.org/abs/2405.19261)
 
-- 稳定标识：arxiv:2405.19261
-- 类型：论文
-- 年份：2024
-- [官方入口](https://arxiv.org/abs/2405.19261)
+[返回大语言模型目录](../../README.md) · [原文与阅读记录](source.json)
 
-这是文献卡，没有独立 reading.md，不计为全文精读；用户是否已读未知。
+- **解决什么**：级联（只把"难"的输入交给大模型）与投机解码（大模型并行验证小模型的草稿）各有长处：前者在经验上成本—质量权衡更好，后者在理论上保证质量不变；能否兼得。
+- **核心方法**：用投机执行来实现级联的延迟规则（deferral rule：决定何时交给大模型）：把要精确采样的目标从大模型分布 p 换成小模型分布 q 与 p 按延迟规则组合的分布 π，用 min(1, π/q) 接受、从 max(π−q, 0) 补采。作者刻画了最优延迟规则，并用 plug-in 近似实现。在 Gemma 和 T5 上，成本—质量权衡优于级联和投机解码基线。
+- **为什么在这个库里**：[推理时计算方向](../../fields/inference/README.md)"精确采样混合分布"一格：精确采到的是 π，一般不等于大模型分布。与 [Leviathan 等的投机解码](../arxiv-2211.17192/README.md)（精确保证）和 [BiLD](../arxiv-2302.07863/README.md)（阈值近似）一起读，可分清三类保证。优先级：选读。
 
-## 2026年10月3日核验与阅读线索
+## 身份信息
 
-- 阅读范围：§4.1–4.3、Algorithms 4–5、Lemma 3–5；未逐行审全部证明
-- 核验版本：v2 2024-10-21
-- 来源关系：历史助手推荐，检索摘要回收；不是用户亲自提供的论文，也没有原会话直链
-
-令 π=(1−r)q+r p，用 min(1,π/q) 接受与 max(π−q,0) 残差补采；批量算大模型后应用 deferral。最优规则把质量收益与 TV 距离导致的拒绝成本权衡，实际用概率峰值作 plug-in 估计。
-
-有理论目标与估计误差界，不等于所有任务质量不降；r 选择改变输出分布。
-
-分布或质量保证：精确采样所定义的混合/级联分布 π；不一般等于大模型 p
-
-官方核验来源：
-- [https://arxiv.org/abs/2405.19261](https://arxiv.org/abs/2405.19261)
-- [https://arxiv.org/html/2405.19261v2](https://arxiv.org/html/2405.19261v2)
-
-未独立复现，不镜像PDF。
+- 稳定标识：arxiv:2405.19261 · [全文 PDF](https://arxiv.org/pdf/2405.19261)
+- 作者：Harikrishna Narasimhan、Wittawat Jitkrittum、Ankit Singh Rawat、Seungyeon Kim、Neha Gupta、Aditya Krishna Menon、Sanjiv Kumar（Google Research）
+- 方向：llm/inference

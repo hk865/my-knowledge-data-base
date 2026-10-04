@@ -30,5 +30,18 @@
   ],
   "previous_titles": [
     "Cross-Model Memory Transfer via Target-Side Reader Adaptation"
+  ],
+  "year": 2026,
+  "authors": [
+    "Mingyuan Li",
+    "Guangsheng Yu",
+    "Xu Wang",
+    "Shaoxiong Ji"
+  ],
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "generation"
   ]
 }

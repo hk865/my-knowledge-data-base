@@ -1,28 +1,20 @@
 # EAGLE-3: Scaling up Inference Acceleration of Large Language Models via Training-Time Test
 
-[领域目录](../../README.md) · [原文与阅读记录](source.json)
+> 状态：文献卡 · 2025 · [原文](https://arxiv.org/abs/2503.01840)
 
-- 稳定标识：arxiv:2503.01840
-- 类型：论文
-- 年份：2025
-- [官方入口](https://arxiv.org/abs/2503.01840)
+[返回大语言模型目录](../../README.md) · [原文与阅读记录](source.json)
 
-这是文献卡，没有独立 reading.md，不计为全文精读；用户是否已读未知。
+- **解决什么**：EAGLE 系列是投机解码（草拟器先猜后续 token、目标模型并行验证）的草拟器，在目标模型顶层特征上做特征级的自回归草拟；作者发现扩大训练数据对 EAGLE 的提升有限，原因在于"预测特征"这一约束。
+- **核心方法**：相对 EAGLE 与 EAGLE-2：放弃预测特征，改为直接预测 token；不再只用顶层特征，而是融合目标模型低、中、高三层的特征；训练时模拟推理过程（training-time test：草拟后续步时，用草拟器自己的输出代替尚未得到的目标特征）。验证沿用动态草稿树与树注意力的精确投机验证。最高加速 6.5 倍，约为 EAGLE-2 的 1.4 倍；在 SGLang 中批量为 64 时吞吐提高 1.38 倍。
+- **为什么在这个库里**：[推理时计算方向](../../fields/inference/README.md)"草拟器设计"一格的主流基线，[DFlash](../arxiv-2602.06036/README.md) 以它为主要对照。理解它需要先读 [Leviathan 等的投机解码](../arxiv-2211.17192/README.md)。优先级：必读。
 
-## 2026年10月3日核验与阅读线索
+## 批注
 
-- 阅读范围：§2.1–2.2、§3.1；训练细节未全文核验
-- 核验版本：恢复 v1 2025-03-03；最新 v3 2025-04-23
-- 来源关系：历史助手推荐，检索摘要回收；不是用户亲自提供的论文，也没有原会话直链
+**易误读**
+- 草拟器要针对每个目标模型专门训练，并能读取目标模型的内部特征，不能拿任意黑箱小模型直接替代。
 
-融合目标低/中/高层特征，经 FC 压缩，与采样 token embedding 一起输入轻量 decoder；直接预测 token，自回归后续步使用 draft 输出替代尚未取得的 target 特征；采用动态 draft tree 和 tree attention 并行验证。
+## 身份信息
 
-需训练目标专用 drafter 并访问内部特征；不是任意黑箱小模型 API；本轮未重现实验。
-
-分布或质量保证：沿用精确 speculative verification
-
-官方核验来源：
-- [https://arxiv.org/abs/2503.01840](https://arxiv.org/abs/2503.01840)
-- [https://arxiv.org/html/2503.01840v1](https://arxiv.org/html/2503.01840v1)
-
-未独立复现，不镜像PDF。
+- 稳定标识：arxiv:2503.01840 · [全文 PDF](https://arxiv.org/pdf/2503.01840) · 代码在 SafeAILab/EAGLE
+- 作者：Yuhui Li、Fangyun Wei、Chao Zhang、Hongyang Zhang（北京大学、Microsoft Research、滑铁卢大学、Vector Institute）
+- 方向：llm/inference

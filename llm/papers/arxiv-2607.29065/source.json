@@ -27,5 +27,16 @@
   "evidence_paths": [],
   "topic_paths": [
     "llm/architecture"
+  ],
+  "year": 2026,
+  "authors": [
+    "Jia Peng Lim",
+    "Hai Leong Chieu"
+  ],
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "generation"
   ]
 }

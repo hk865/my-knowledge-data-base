@@ -27,7 +27,7 @@
   "topic_paths": [
     "llm/inference"
   ],
-  "source_record_updated": "2026-10-03",
+  "source_record_updated": "2026-10-04",
   "verification_2026_10_03": {
     "reading_scope": "§2.1–2.3、训练流程摘要；未全文审训练消融",
     "mechanism_summary": "小模型输出 <call>n</call> 暂停，交给大模型续写 n token（或 EOS 提前结束）；调用标记从大模型上下文删除，小模型保留标记及大模型续写后接回；warm-up+GRPO 学习求助。",
@@ -40,5 +40,30 @@
       "https://arxiv.org/html/2601.05167"
     ],
     "source_origin": "historical_assistant_recommendation"
+  },
+  "year": 2026,
+  "authors": [
+    "Chengsong Huang",
+    "Tong Zheng",
+    "Langlin Huang",
+    "Jinyuan Li",
+    "Haolin Liu",
+    "Jiaxin Huang"
+  ],
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "generation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页元数据（当前版本题名、作者、日期、评注、摘要）与全文 PDF 首页（机构）及支撑卡片句子的选段",
+    "purpose": "文献卡按 STYLE §6 改写：核实题名、年份、作者与\"解决什么 / 核心方法\"两句",
+    "evidence_boundary": "文献卡层面的核验，不是全文精读，未复现。",
+    "verification_status": "identity_and_card_claims_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2601.05167",
+      "https://arxiv.org/pdf/2601.05167"
+    ]
   }
 }
