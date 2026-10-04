@@ -100,3 +100,14 @@ Zero WAM 如何把人类示范视频变成机器人动作,robotics-embodied/pape
 预训练方向入门,llm/fields/pretraining/README.md
 视觉表征方向入门,multimodal/fields/visual-representation/README.md
 视觉生成方向入门,multimodal/fields/generation/README.md
+Agent权限、沙箱与协作：从一次工具调用理解边界,cross-domain/fields/agents/permissions-isolation-collaboration.md
+2026年10月4日研究短报,daily/2026-10-04.md
+工程文档、作者文章与代码仓库,cross-domain/resources/README.md
+工程探索：高速电子器件设计与应用,cross-domain/fields/engineering-exploration/README.md
+2026年10月4日公开来源档案,daily/2026-10-04-sources.json
+2026年10月4日原始URL来源缺口,daily/2026-10-04-source-gaps.json
+2026年10月4日 phase3 内容扩展,daily/2026-10-04-phase3-expansion.md
+CaMeL：把提示注入防御变成可执行的信息流约束,cross-domain/papers/camel/reading.md
+视觉语言动作模型：动作表示与实时执行,robotics-embodied/fields/vla/README.md
+LLM 推理：计算预算、草拟与验证,llm/fields/inference/README.md
+长上下文：结构、利用与执行成本,llm/fields/long-context/README.md

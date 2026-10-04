@@ -27,7 +27,7 @@ import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DOMAINS = ['foundations', 'llm', 'multimodal', 'robotics-embodied', 'cross-domain']
-KIND_WORDS = [('paper', '篇论文'), ('official_technical_report', '篇官方技术报告'), ('repository', '个代码仓库'), ('official_blog', '篇官方博客')]
+KIND_WORDS = [('paper', '篇论文'), ('official_technical_report', '篇官方技术报告'), ('repository', '个代码仓库'), ('official_blog', '篇官方博客'), ('official_documentation', '份官方技术文档'), ('author_article', '篇作者文章')]
 
 # Fallback tags by topic path prefix (first match wins for each prefix that applies).
 GUESS = [
@@ -145,8 +145,9 @@ def main():
         folders = args
     else:
         folders = sorted(
-            f'{d}/papers/{name}' for d in DOMAINS if os.path.isdir(path(d, 'papers'))
-            for name in os.listdir(path(d, 'papers')) if os.path.exists(path(d, 'papers', name, 'source.json')))
+            f'{d}/{kind}/{name}' for d in DOMAINS for kind in ['papers', 'resources']
+            if os.path.isdir(path(d, kind))
+            for name in os.listdir(path(d, kind)) if os.path.exists(path(d, kind, name, 'source.json')))
     nxt = max(int(p['catalog_anchor'][1:]) for p in papers if re.match(r'p\d+$', p.get('catalog_anchor', ''))) + 1
     added = []
     for folder in folders:
@@ -168,7 +169,7 @@ def main():
     craw = rd('papers.csv')
     header = next(csv.reader(io.StringIO(craw)))
     buf = io.StringIO()
-    w = csv.writer(buf, lineterminator='\r\n')
+    w = csv.writer(buf, lineterminator='\r\n' if '\r\n' in craw else '\n')
     w.writerow(header)
     for p in papers:
         w.writerow(['' if p.get(c) is None else json.dumps(p[c], ensure_ascii=False)
@@ -191,9 +192,9 @@ def main():
     wr('docs/paper-catalog.md', cat)
 
     for p in added:
-        domain, _, name = p['canonical_folder'].split('/', 2)
+        domain, kind, name = p['canonical_folder'].split('/', 2)
         item = f'- [{p["title"]}]({{}}{name}/README.md) · {p["year"] or "年份见原文"} · 文献卡，暂无独立精读'
-        for listing, prefix in [(f'{domain}/papers/README.md', ''), (f'{domain}/PAPERS.md', 'papers/')]:
+        for listing, prefix in [(f'{domain}/{kind}/README.md', ''), (f'{domain}/PAPERS.md', kind + '/')]:
             if os.path.exists(path(listing)) and f'{prefix}{name}/README.md' not in rd(listing):
                 wr(listing, insert_after_last_item(rd(listing), item.format(prefix)))
 

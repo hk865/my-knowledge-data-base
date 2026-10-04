@@ -28,6 +28,8 @@ def broken_links(path):
         text = f.read()
     base = os.path.dirname(os.path.join(ROOT, path))
     for target in LINK.findall(text):
+        if path == 'STYLE.md' and target == '...':
+            continue
         if target in PLACEHOLDERS or re.match(r'^(https?:|mailto:|#|data:)', target):
             continue
         rel = unquote(target.split('#', 1)[0])

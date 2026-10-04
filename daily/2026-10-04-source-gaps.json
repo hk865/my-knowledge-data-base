@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-04",
+  "record_count": 7,
+  "counting_unit": "historical_source_gap_group_not_paper",
+  "previous_unresolved_record_count": 34,
+  "previous_unresolved_file": "../unresolved.json",
+  "groups": [
+    {
+      "id": "2026-10-04-gap-01",
+      "label": "Analog Devices",
+      "issue_type": "partial_source_url",
+      "original_url": null,
+      "recovered_fragments": [
+        "...",
+        "media/en/training-seminars/tutorials/MT-097.pdf",
+        ".../MT-046.pdf"
+      ],
+      "source_role": "assistant",
+      "source_date": "2026-10-03T10:57:05Z",
+      "historical_original_url_status": "not_recovered",
+      "associated_identity_status": "specific_official_documents_verified",
+      "associated_verified_sources": [
+        {
+          "title": "MT-097: Dealing with High-Speed Logic",
+          "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-097.pdf",
+          "relationship": "official_associated_discovery_from_fragment_not_original_url_recovery"
+        },
+        {
+          "title": "MT-046: Op Amp Settling Time",
+          "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-046.pdf",
+          "relationship": "official_associated_discovery_from_fragment_not_original_url_recovery"
+        }
+      ],
+      "caveat": "对应官方文档身份已核实，原历史完整URL仍缺失；其他省略号不猜补。"
+    },
+    {
+      "id": "2026-10-04-gap-02",
+      "label": "Texas Instruments",
+      "issue_type": "partial_source_url",
+      "original_url": null,
+      "recovered_fragments": [
+        "lit/pdf/scaa082a",
+        "lit/an/spraar7j/spraar7j.pdf"
+      ],
+      "source_role": "assistant",
+      "source_date": "2026-10-03T10:57:05Z",
+      "historical_original_url_status": "not_recovered",
+      "associated_identity_status": "specific_official_documents_verified",
+      "associated_verified_sources": [
+        {
+          "title": "High-Speed Layout Guidelines (SCAA082A)",
+          "url": "https://www.ti.com/lit/an/scaa082a/scaa082a.pdf",
+          "relationship": "official_associated_discovery_from_fragment_not_original_url_recovery"
+        },
+        {
+          "title": "High-Speed Interface Layout Guidelines (SPRAAR7J, Rev. J)",
+          "url": "https://www.ti.com/lit/an/spraar7j/spraar7j.pdf",
+          "relationship": "official_associated_discovery_from_fragment_not_original_url_recovery"
+        }
+      ],
+      "caveat": "对应官方文档身份已核实，原历史完整URL仍缺失；其他省略号不猜补。"
+    },
+    {
+      "id": "2026-10-04-gap-03",
+      "label": "Teledyne LeCroy",
+      "issue_type": "partial_source_url",
+      "original_url": null,
+      "recovered_fragments": [
+        "..."
+      ],
+      "source_role": "assistant",
+      "source_date": "2026-10-03T10:57:05Z",
+      "historical_original_url_status": "not_recovered",
+      "associated_identity_status": "specific_original_document_not_identified",
+      "associated_verified_sources": [],
+      "caveat": "不从品牌、名称或省略号猜补完整历史URL。"
+    },
+    {
+      "id": "2026-10-04-gap-04",
+      "label": "Tektronix其他引用",
+      "issue_type": "partial_source_url",
+      "original_url": null,
+      "recovered_fragments": [
+        "..."
+      ],
+      "source_role": "assistant",
+      "source_date": "2026-10-03T10:57:05Z",
+      "historical_original_url_status": "not_recovered",
+      "associated_identity_status": "specific_original_document_not_identified",
+      "associated_verified_sources": [],
+      "caveat": "不从品牌、名称或省略号猜补完整历史URL。"
+    },
+    {
+      "id": "2026-10-04-gap-05",
+      "label": "Firecracker",
+      "issue_type": "partial_source_url",
+      "original_url": null,
+      "recovered_fragments": [
+        "https://github.com/..."
+      ],
+      "source_role": "assistant",
+      "source_date": "2026-10-04T04:29:29Z",
+      "historical_original_url_status": "not_recovered",
+      "associated_identity_status": "specific_original_document_not_identified",
+      "associated_verified_sources": [],
+      "caveat": "不从品牌、名称或省略号猜补完整历史URL。"
+    },
+    {
+      "id": "2026-10-04-gap-06",
+      "label": "WASI",
+      "issue_type": "missing_standalone_source_url",
+      "original_url": null,
+      "recovered_fragments": [],
+      "source_role": "assistant",
+      "source_date": "2026-10-04T04:29:29Z",
+      "historical_original_url_status": "not_recovered",
+      "associated_identity_status": "related_wasmtime_document_verified_but_not_original_wasi_url",
+      "associated_verified_sources": [],
+      "caveat": "Wasmtime有已核完整URL，但不能代替独立WASI原始链接。"
+    },
+    {
+      "id": "2026-10-04-gap-07",
+      "label": "MCP",
+      "issue_type": "partial_source_url",
+      "original_url": null,
+      "recovered_fragments": [
+        "https://modelcontextprotocol.io/..."
+      ],
+      "source_role": "assistant",
+      "source_date": "2026-10-04T04:29:29Z",
+      "historical_original_url_status": "not_recovered",
+      "associated_identity_status": "specific_original_document_not_identified",
+      "associated_verified_sources": [],
+      "caveat": "不从品牌、名称或省略号猜补完整历史URL。"
+    }
+  ],
+  "notes": [
+    "34项既有待核实记录保留不变；本表另列本日7组原始来源URL缺口。",
+    "两组电子来源各已关联两份具体官方文档，关联文档计入资源库，完整原始URL仍未恢复。",
+    "41表示34项旧记录加7组新来源缺口，不表示41篇论文或41个独立资源。"
+  ]
+}

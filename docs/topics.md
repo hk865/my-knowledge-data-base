@@ -203,7 +203,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Kimi K2.5: Visual Agentic Intelligence](paper-catalog.md#p498)
 - [NVIDIA Nemotron 3: Efficient and Open Intelligence](paper-catalog.md#p500)
 
-### 架构与效率（45）
+### 架构与效率（46）
 
 细分：注意力与状态空间模型；稀疏专家与条件计算；KV cache 与压缩；线性与稀疏注意力；因果掩码与复杂度
 
@@ -252,8 +252,9 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [NVIDIA Nemotron 3: Efficient and Open Intelligence](paper-catalog.md#p500)
 - [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](paper-catalog.md#p519)
 - [Transformers are SSMs: Generalized Models and Efficient Algorithms Through Structured State Space Duality](paper-catalog.md#p524)
+- [On the Design of Qwen3.8-Next Architecture: Evaluation, Efficiency, and Training Stability](paper-catalog.md#p554)
 
-### 推理时计算（42）
+### 推理时计算（44）
 
 细分：搜索与验证；多路径与多 Agent；预算分配与 token 效率；精确目标分布与投机验证；近似质量协作与关键段接管；MTP草拟与验证接口；精确级联混合分布
 
@@ -299,6 +300,36 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [DeepSeekMath-V2: Towards Self-Verifiable Mathematical Reasoning](paper-catalog.md#p497)
 - [Kimi K2.5: Visual Agentic Intelligence](paper-catalog.md#p498)
 - [Recursive Language Models](paper-catalog.md#p499)
+- [Speculative Speculative Decoding](paper-catalog.md#p553)
+- [Acceptance-Aware Draft Model Training for Speculative Decoding](paper-catalog.md#p555)
+
+
+### 长上下文（22）
+
+细分：位置编码与窗口扩展；长数据与训练课程；稀疏与压缩注意力；KV 缓存与推理成本；长上下文评测
+
+- [Kimi Linear: An Expressive, Efficient Attention Architecture](paper-catalog.md#p185)
+- [DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence](paper-catalog.md#p188)
+- [Kimi K3: Open Frontier Intelligence](paper-catalog.md#p189)
+- [RoFormer: Enhanced Transformer with Rotary Position Embedding](paper-catalog.md#p284)
+- [Extending Context Window of Large Language Models via Positional Interpolation](paper-catalog.md#p298)
+- [Lost in the Middle: How Language Models Use Long Contexts](paper-catalog.md#p299)
+- [YaRN: Efficient Context Window Extension of Large Language Models](paper-catalog.md#p301)
+- [Effective Long-Context Scaling of Foundation Models](paper-catalog.md#p304)
+- [Efficient Streaming Language Models with Attention Sinks](paper-catalog.md#p305)
+- [Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context](paper-catalog.md#p313)
+- [Jamba: A Hybrid Transformer-Mamba Language Model](paper-catalog.md#p314)
+- [RULER: What's the Real Context Size of Your Long-Context Language Models?](paper-catalog.md#p315)
+- [Native Sparse Attention: Hardware-Aligned and Natively Trainable Sparse Attention](paper-catalog.md#p327)
+- [Gemma 3 Technical Report](paper-catalog.md#p329)
+- [DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression](paper-catalog.md#p335)
+- [FinanceBench: A New Benchmark for Financial Question Answering](paper-catalog.md#p408)
+- [Qwen3.5-397B-A17B](paper-catalog.md#p490)
+- [GLM-5: from Vibe Coding to Agentic Engineering](paper-catalog.md#p494)
+- [Recursive Language Models](paper-catalog.md#p499)
+- [NVIDIA Nemotron 3: Efficient and Open Intelligence](paper-catalog.md#p500)
+- [Transformers are SSMs: Generalized Models and Efficient Algorithms Through Structured State Space Duality](paper-catalog.md#p524)
+- [On the Design of Qwen3.8-Next Architecture: Evaluation, Efficiency, and Training Stability](paper-catalog.md#p554)
 
 
 ## 多模态与世界表征
@@ -721,7 +752,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Learning Agile Perceptive Traversal of Sparse 3D Structures for Humanoids](paper-catalog.md#p509)
 
 
-### 具身策略与 VLA（60）
+### 具身策略与 VLA（66）
 
 细分：动作表示与生成；跨本体与数据；模型 规划与控制接口；模仿学习；机器人强化学习
 
@@ -785,6 +816,12 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [EgoScale: Scaling Dexterous Manipulation with Diverse Egocentric Human Data](paper-catalog.md#p507)
 - [RL Token: Bootstrapping Online RL with Vision-Language-Action Models](paper-catalog.md#p510)
 - [Cosmos Policy: Fine-Tuning Video Models for Visuomotor Control and Planning](paper-catalog.md#p518)
+- [Real-Time Execution of Action Chunking Flow Policies](paper-catalog.md#p556)
+- [Training-Time Action Conditioning for Efficient Real-Time Chunking](paper-catalog.md#p557)
+- [VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World Evaluation of Vision-Language-Action Models](paper-catalog.md#p558)
+- [Real-Time Execution with Autoregressive Policies](paper-catalog.md#p559)
+- [RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies](paper-catalog.md#p560)
+- [IndustrialVLA-Bench: A Traceable Multi-Axis Evaluation of Open Robot Policy Models](paper-catalog.md#p561)
 
 ### 具身 Agents 与闭环系统（17）
 
@@ -810,7 +847,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 ## 跨方向方法与探索
 
-### Agent 与上下文系统（36）
+### Agent 与上下文系统（60）
 
 细分：Agent轨迹与性质验证
 
@@ -850,6 +887,30 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [System Card: Claude Opus 5.5](paper-catalog.md#p487)
 - [Gemini 3.8 Flash Model Card](paper-catalog.md#p488)
 - [Seed2.0 Model Card: Towards Intelligence Frontier for Real-World Complexity](paper-catalog.md#p489)
+- [Defeating Prompt Injections by Design](paper-catalog.md#p525)
+- [Agent approvals & security](paper-catalog.md#p528)
+- [The Architect Elevator — Visiting the upper floors](paper-catalog.md#p529)
+- [Branch By Abstraction](paper-catalog.md#p530)
+- [Bubblewrap](paper-catalog.md#p531)
+- [Building multi-agent systems: When and how to use them](paper-catalog.md#p532)
+- [How Cedar authorization works](paper-catalog.md#p533)
+- [Continuous Integration](paper-catalog.md#p534)
+- [Docker Engine security](paper-catalog.md#p535)
+- [NanmiCoder/dsh-agent-teams — AgentTeams plugin for DeepSeek Harness](paper-catalog.md#p536)
+- [git-worktree - Manage multiple working trees](paper-catalog.md#p537)
+- [Security Model](paper-catalog.md#p538)
+- [Control Group v2](paper-catalog.md#p539)
+- [Landlock: unprivileged access control](paper-catalog.md#p540)
+- [namespaces(7) — Linux manual page](paper-catalog.md#p541)
+- [Seccomp BPF (SECure COMPuting with filters)](paper-catalog.md#p542)
+- [How we built our multi-agent research system](paper-catalog.md#p543)
+- [Mitigating the risk of prompt injections in browser use](paper-catalog.md#p544)
+- [Running Codex safely at OpenAI](paper-catalog.md#p545)
+- [Scaling the Practice of Architecture, Conversationally](paper-catalog.md#p546)
+- [SPIFFE Overview](paper-catalog.md#p547)
+- [Security](paper-catalog.md#p550)
+- [The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions](paper-catalog.md#p551)
+- [Securing AI Agents with Information-Flow Control](paper-catalog.md#p552)
 
 
 ### 模型科学（22）
@@ -986,6 +1047,16 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding](paper-catalog.md#p519)
 - [TinyBERT: Distilling BERT for Natural Language Understanding](paper-catalog.md#p520)
 
+### 工程探索（临时线索）（4）
+
+细分：高速电子器件设计与应用（探索）
+
+- [MT-046: Op Amp Settling Time](paper-catalog.md#p526)
+- [MT-097: Dealing with High-Speed Logic](paper-catalog.md#p527)
+- [High-Speed Layout Guidelines (SCAA082A)](paper-catalog.md#p548)
+- [High-Speed Interface Layout Guidelines (SPRAAR7J, Rev. J)](paper-catalog.md#p549)
+
+
 ## 正交标签
 
 - architecture：Transformer, ViT, state-space, MoE, dual-encoder, world-model, diffusion, flow
@@ -1002,14 +1073,14 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 | 模态 \ 任务 | understanding | generation | decision | evaluation | analysis |
 |---|---:|---:|---:|---:|---:|
-| text | [60](#x-text-understanding) | [155](#x-text-generation) | [93](#x-text-decision) | [71](#x-text-evaluation) | [52](#x-text-analysis) |
-| image | [120](#x-image-understanding) | [53](#x-image-generation) | [97](#x-image-decision) | [17](#x-image-evaluation) | [16](#x-image-analysis) |
+| text | [60](#x-text-understanding) | [161](#x-text-generation) | [102](#x-text-decision) | [71](#x-text-evaluation) | [77](#x-text-analysis) |
+| image | [120](#x-image-understanding) | [53](#x-image-generation) | [103](#x-image-decision) | [17](#x-image-evaluation) | [16](#x-image-analysis) |
 | video | [34](#x-video-understanding) | [41](#x-video-generation) | [30](#x-video-decision) | [13](#x-video-evaluation) | [6](#x-video-analysis) |
 | audio | [7](#x-audio-understanding) | [6](#x-audio-generation) | · | [1](#x-audio-evaluation) | · |
-| action | [8](#x-action-understanding) | [34](#x-action-generation) | [139](#x-action-decision) | [10](#x-action-evaluation) | [3](#x-action-analysis) |
-| state | [17](#x-state-understanding) | [2](#x-state-generation) | [68](#x-state-decision) | [1](#x-state-evaluation) | · |
-| code | [1](#x-code-understanding) | [27](#x-code-generation) | [27](#x-code-decision) | [20](#x-code-evaluation) | [7](#x-code-analysis) |
-| multimodal | [54](#x-multimodal-understanding) | [45](#x-multimodal-generation) | [43](#x-multimodal-decision) | [20](#x-multimodal-evaluation) | [9](#x-multimodal-analysis) |
+| action | [8](#x-action-understanding) | [34](#x-action-generation) | [145](#x-action-decision) | [10](#x-action-evaluation) | [3](#x-action-analysis) |
+| state | [17](#x-state-understanding) | [2](#x-state-generation) | [74](#x-state-decision) | [1](#x-state-evaluation) | · |
+| code | [1](#x-code-understanding) | [27](#x-code-generation) | [27](#x-code-decision) | [20](#x-code-evaluation) | [28](#x-code-analysis) |
+| multimodal | [54](#x-multimodal-understanding) | [45](#x-multimodal-generation) | [49](#x-multimodal-decision) | [20](#x-multimodal-evaluation) | [9](#x-multimodal-analysis) |
 | tabular | [1](#x-tabular-understanding) | · | · | · | · |
 
 <a id="x-text-understanding"></a>
@@ -1079,7 +1150,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-text-generation"></a>
 
-### text × generation（155）
+### text × generation（161）
 
 - [Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters](paper-catalog.md#p001)
 - [Towards Thinking-Optimal Scaling of Test-Time Compute for LLM Reasoning](paper-catalog.md#p002)
@@ -1236,10 +1307,16 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [NVIDIA Nemotron 3: Efficient and Open Intelligence](paper-catalog.md#p500)
 - [Scaling Laws for Autoregressive Generative Modeling](paper-catalog.md#p522)
 - [Transformers are SSMs: Generalized Models and Efficient Algorithms Through Structured State Space Duality](paper-catalog.md#p524)
+- [Defeating Prompt Injections by Design](paper-catalog.md#p525)
+- [The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions](paper-catalog.md#p551)
+- [Securing AI Agents with Information-Flow Control](paper-catalog.md#p552)
+- [Speculative Speculative Decoding](paper-catalog.md#p553)
+- [On the Design of Qwen3.8-Next Architecture: Evaluation, Efficiency, and Training Stability](paper-catalog.md#p554)
+- [Acceptance-Aware Draft Model Training for Speculative Decoding](paper-catalog.md#p555)
 
 <a id="x-text-decision"></a>
 
-### text × decision（93）
+### text × decision（102）
 
 - [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](paper-catalog.md#p034)
 - [ReAct: Synergizing Reasoning and Acting in Language Models](paper-catalog.md#p040)
@@ -1334,6 +1411,15 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [EgoScale: Scaling Dexterous Manipulation with Diverse Egocentric Human Data](paper-catalog.md#p507)
 - [RL Token: Bootstrapping Online RL with Vision-Language-Action Models](paper-catalog.md#p510)
 - [Robostral Navigate](paper-catalog.md#p517)
+- [Defeating Prompt Injections by Design](paper-catalog.md#p525)
+- [The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions](paper-catalog.md#p551)
+- [Securing AI Agents with Information-Flow Control](paper-catalog.md#p552)
+- [Real-Time Execution of Action Chunking Flow Policies](paper-catalog.md#p556)
+- [Training-Time Action Conditioning for Efficient Real-Time Chunking](paper-catalog.md#p557)
+- [VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World Evaluation of Vision-Language-Action Models](paper-catalog.md#p558)
+- [Real-Time Execution with Autoregressive Policies](paper-catalog.md#p559)
+- [RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies](paper-catalog.md#p560)
+- [IndustrialVLA-Bench: A Traceable Multi-Axis Evaluation of Open Robot Policy Models](paper-catalog.md#p561)
 
 <a id="x-text-evaluation"></a>
 
@@ -1413,7 +1499,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-text-analysis"></a>
 
-### text × analysis（52）
+### text × analysis（77）
 
 - [OLMo: Accelerating the Science of Language Models](paper-catalog.md#p010)
 - [ShortGPT: Layers in Large Language Models are More Redundant Than You Expect](paper-catalog.md#p022)
@@ -1467,6 +1553,31 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [EgoScale: Scaling Dexterous Manipulation with Diverse Egocentric Human Data](paper-catalog.md#p507)
 - [Scaling Laws for Neural Language Models](paper-catalog.md#p521)
 - [Scaling Laws for Autoregressive Generative Modeling](paper-catalog.md#p522)
+- [MT-046: Op Amp Settling Time](paper-catalog.md#p526)
+- [MT-097: Dealing with High-Speed Logic](paper-catalog.md#p527)
+- [Agent approvals & security](paper-catalog.md#p528)
+- [The Architect Elevator — Visiting the upper floors](paper-catalog.md#p529)
+- [Branch By Abstraction](paper-catalog.md#p530)
+- [Bubblewrap](paper-catalog.md#p531)
+- [Building multi-agent systems: When and how to use them](paper-catalog.md#p532)
+- [How Cedar authorization works](paper-catalog.md#p533)
+- [Continuous Integration](paper-catalog.md#p534)
+- [Docker Engine security](paper-catalog.md#p535)
+- [NanmiCoder/dsh-agent-teams — AgentTeams plugin for DeepSeek Harness](paper-catalog.md#p536)
+- [git-worktree - Manage multiple working trees](paper-catalog.md#p537)
+- [Security Model](paper-catalog.md#p538)
+- [Control Group v2](paper-catalog.md#p539)
+- [Landlock: unprivileged access control](paper-catalog.md#p540)
+- [namespaces(7) — Linux manual page](paper-catalog.md#p541)
+- [Seccomp BPF (SECure COMPuting with filters)](paper-catalog.md#p542)
+- [How we built our multi-agent research system](paper-catalog.md#p543)
+- [Mitigating the risk of prompt injections in browser use](paper-catalog.md#p544)
+- [Running Codex safely at OpenAI](paper-catalog.md#p545)
+- [Scaling the Practice of Architecture, Conversationally](paper-catalog.md#p546)
+- [SPIFFE Overview](paper-catalog.md#p547)
+- [High-Speed Layout Guidelines (SCAA082A)](paper-catalog.md#p548)
+- [High-Speed Interface Layout Guidelines (SPRAAR7J, Rev. J)](paper-catalog.md#p549)
+- [Security](paper-catalog.md#p550)
 
 <a id="x-image-understanding"></a>
 
@@ -1653,7 +1764,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-image-decision"></a>
 
-### image × decision（97）
+### image × decision（103）
 
 - [DINO-WM: World Models on Pre-trained Visual Features enable Zero-shot Planning](paper-catalog.md#p046)
 - [FOCUS: Object-Centric World Models for Robotics Manipulation](paper-catalog.md#p048)
@@ -1752,6 +1863,12 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [RL Token: Bootstrapping Online RL with Vision-Language-Action Models](paper-catalog.md#p510)
 - [Robostral Navigate](paper-catalog.md#p517)
 - [Cosmos Policy: Fine-Tuning Video Models for Visuomotor Control and Planning](paper-catalog.md#p518)
+- [Real-Time Execution of Action Chunking Flow Policies](paper-catalog.md#p556)
+- [Training-Time Action Conditioning for Efficient Real-Time Chunking](paper-catalog.md#p557)
+- [VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World Evaluation of Vision-Language-Action Models](paper-catalog.md#p558)
+- [Real-Time Execution with Autoregressive Policies](paper-catalog.md#p559)
+- [RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies](paper-catalog.md#p560)
+- [IndustrialVLA-Bench: A Traceable Multi-Axis Evaluation of Open Robot Policy Models](paper-catalog.md#p561)
 
 <a id="x-image-evaluation"></a>
 
@@ -2028,7 +2145,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-action-decision"></a>
 
-### action × decision（139）
+### action × decision（145）
 
 - [OccWorld: Learning a 3D Occupancy World Model for Autonomous Driving](paper-catalog.md#p044)
 - [Driving in the Occupancy World: Vision-Centric 4D Occupancy Forecasting and Planning via World Models for Autonomous Driving](paper-catalog.md#p045)
@@ -2169,6 +2286,12 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [RL Token: Bootstrapping Online RL with Vision-Language-Action Models](paper-catalog.md#p510)
 - [Robostral Navigate](paper-catalog.md#p517)
 - [Cosmos Policy: Fine-Tuning Video Models for Visuomotor Control and Planning](paper-catalog.md#p518)
+- [Real-Time Execution of Action Chunking Flow Policies](paper-catalog.md#p556)
+- [Training-Time Action Conditioning for Efficient Real-Time Chunking](paper-catalog.md#p557)
+- [VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World Evaluation of Vision-Language-Action Models](paper-catalog.md#p558)
+- [Real-Time Execution with Autoregressive Policies](paper-catalog.md#p559)
+- [RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies](paper-catalog.md#p560)
+- [IndustrialVLA-Bench: A Traceable Multi-Axis Evaluation of Open Robot Policy Models](paper-catalog.md#p561)
 
 <a id="x-action-evaluation"></a>
 
@@ -2224,7 +2347,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-state-decision"></a>
 
-### state × decision（68）
+### state × decision（74）
 
 - [Diffusion Policy: Visuomotor Policy Learning via Action Diffusion](paper-catalog.md#p067)
 - [$π_0$: A Vision-Language-Action Flow Model for General Robot Control](paper-catalog.md#p070)
@@ -2294,6 +2417,12 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Large Behavior Models and Atlas Find New Footing](paper-catalog.md#p504)
 - [SONIC: Supersizing Motion Tracking for Natural Humanoid Whole-Body Control](paper-catalog.md#p508)
 - [Learning Agile Perceptive Traversal of Sparse 3D Structures for Humanoids](paper-catalog.md#p509)
+- [Real-Time Execution of Action Chunking Flow Policies](paper-catalog.md#p556)
+- [Training-Time Action Conditioning for Efficient Real-Time Chunking](paper-catalog.md#p557)
+- [VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World Evaluation of Vision-Language-Action Models](paper-catalog.md#p558)
+- [Real-Time Execution with Autoregressive Policies](paper-catalog.md#p559)
+- [RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies](paper-catalog.md#p560)
+- [IndustrialVLA-Bench: A Traceable Multi-Axis Evaluation of Open Robot Policy Models](paper-catalog.md#p561)
 
 <a id="x-state-evaluation"></a>
 
@@ -2398,7 +2527,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-code-analysis"></a>
 
-### code × analysis（7）
+### code × analysis（28）
 
 - [Naturalness of Attention: Revisiting Attention in Code Language Models](paper-catalog.md#p028)
 - [Probing Pretrained Models of Source Code](paper-catalog.md#p029)
@@ -2407,6 +2536,27 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Monitoring Reasoning Models for Misbehavior and the Risks of Promoting Obfuscation](paper-catalog.md#p427)
 - [Natural Emergent Misalignment from Reward Hacking in Production RL](paper-catalog.md#p433)
 - [Why SWE-bench Verified no longer measures frontier coding capabilities](paper-catalog.md#p436)
+- [Agent approvals & security](paper-catalog.md#p528)
+- [The Architect Elevator — Visiting the upper floors](paper-catalog.md#p529)
+- [Branch By Abstraction](paper-catalog.md#p530)
+- [Bubblewrap](paper-catalog.md#p531)
+- [Building multi-agent systems: When and how to use them](paper-catalog.md#p532)
+- [How Cedar authorization works](paper-catalog.md#p533)
+- [Continuous Integration](paper-catalog.md#p534)
+- [Docker Engine security](paper-catalog.md#p535)
+- [NanmiCoder/dsh-agent-teams — AgentTeams plugin for DeepSeek Harness](paper-catalog.md#p536)
+- [git-worktree - Manage multiple working trees](paper-catalog.md#p537)
+- [Security Model](paper-catalog.md#p538)
+- [Control Group v2](paper-catalog.md#p539)
+- [Landlock: unprivileged access control](paper-catalog.md#p540)
+- [namespaces(7) — Linux manual page](paper-catalog.md#p541)
+- [Seccomp BPF (SECure COMPuting with filters)](paper-catalog.md#p542)
+- [How we built our multi-agent research system](paper-catalog.md#p543)
+- [Mitigating the risk of prompt injections in browser use](paper-catalog.md#p544)
+- [Running Codex safely at OpenAI](paper-catalog.md#p545)
+- [Scaling the Practice of Architecture, Conversationally](paper-catalog.md#p546)
+- [SPIFFE Overview](paper-catalog.md#p547)
+- [Security](paper-catalog.md#p550)
 
 <a id="x-multimodal-understanding"></a>
 
@@ -2519,7 +2669,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-multimodal-decision"></a>
 
-### multimodal × decision（43）
+### multimodal × decision（49）
 
 - [Object-Centric World Model for Language-Guided Manipulation](paper-catalog.md#p052)
 - [Language-Grounded Hierarchical Planning and Execution with Multi-Robot 3D Scene Graphs](paper-catalog.md#p055)
@@ -2564,6 +2714,12 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Seed2.0 Model Card: Towards Intelligence Frontier for Real-World Complexity](paper-catalog.md#p489)
 - [Qwen3.5-397B-A17B](paper-catalog.md#p490)
 - [Kimi K2.5: Visual Agentic Intelligence](paper-catalog.md#p498)
+- [Real-Time Execution of Action Chunking Flow Policies](paper-catalog.md#p556)
+- [Training-Time Action Conditioning for Efficient Real-Time Chunking](paper-catalog.md#p557)
+- [VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World Evaluation of Vision-Language-Action Models](paper-catalog.md#p558)
+- [Real-Time Execution with Autoregressive Policies](paper-catalog.md#p559)
+- [RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies](paper-catalog.md#p560)
+- [IndustrialVLA-Bench: A Traceable Multi-Axis Evaluation of Open Robot Policy Models](paper-catalog.md#p561)
 
 <a id="x-multimodal-evaluation"></a>
 

@@ -402,5 +402,49 @@
   {
     "title": "视觉生成方向入门",
     "file": "multimodal/fields/generation/README.md"
+  },
+  {
+    "title": "Agent权限、沙箱与协作：从一次工具调用理解边界",
+    "file": "cross-domain/fields/agents/permissions-isolation-collaboration.md"
+  },
+  {
+    "title": "2026年10月4日研究短报",
+    "file": "daily/2026-10-04.md"
+  },
+  {
+    "title": "工程文档、作者文章与代码仓库",
+    "file": "cross-domain/resources/README.md"
+  },
+  {
+    "title": "工程探索：高速电子器件设计与应用",
+    "file": "cross-domain/fields/engineering-exploration/README.md"
+  },
+  {
+    "title": "2026年10月4日公开来源档案",
+    "file": "daily/2026-10-04-sources.json"
+  },
+  {
+    "title": "2026年10月4日原始URL来源缺口",
+    "file": "daily/2026-10-04-source-gaps.json"
+  },
+  {
+    "title": "2026年10月4日 phase3 内容扩展",
+    "file": "daily/2026-10-04-phase3-expansion.md"
+  },
+  {
+    "title": "CaMeL：把提示注入防御变成可执行的信息流约束",
+    "file": "cross-domain/papers/camel/reading.md"
+  },
+  {
+    "title": "视觉语言动作模型：动作表示与实时执行",
+    "file": "robotics-embodied/fields/vla/README.md"
+  },
+  {
+    "title": "LLM 推理：计算预算、草拟与验证",
+    "file": "llm/fields/inference/README.md"
+  },
+  {
+    "title": "长上下文：结构、利用与执行成本",
+    "file": "llm/fields/long-context/README.md"
   }
 ]

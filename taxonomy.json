@@ -231,7 +231,9 @@
           "id": "cross-domain/agents",
           "label": "Agent 与上下文系统",
           "subtopics": [
-            "Agent轨迹与性质验证"
+            "Agent轨迹与性质验证",
+            "权限与执行隔离",
+            "协作与软件流程"
           ]
         },
         {
@@ -250,6 +252,14 @@
             "教师学生迁移",
             "模型压缩历史与来源边界"
           ]
+        },
+        {
+          "id": "cross-domain/engineering-exploration",
+          "label": "工程探索（临时线索）",
+          "subtopics": [
+            "高速电子器件设计与应用（探索）"
+          ],
+          "status": "exploratory_not_committed_project"
         }
       ]
     }
@@ -323,5 +333,13 @@
     "推理时搜索、采样和提示属于推理方法；探针与评估属于评估标签，不标为训练监督。",
     "具身Agents强调规划、技能与环境反馈闭环；VLA是策略接口与动作建模方向，两者可交叉。",
     "教学讲义与图表不重复计为论文；教学进度与用户阅读状态分开记录。"
-  ]
+  ],
+  "resource_types": {
+    "paper": "论文",
+    "repository": "代码仓库",
+    "official_blog": "官方博客",
+    "official_documentation": "官方技术文档",
+    "author_article": "作者文章",
+    "official_technical_report": "官方技术报告"
+  }
 }

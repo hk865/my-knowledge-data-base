@@ -33095,5 +33095,2432 @@
       "Tri Dao",
       "Albert Gu"
     ]
+  },
+  {
+    "id": "arxiv:2503.18813",
+    "title": "Defeating Prompt Injections by Design",
+    "url": "https://arxiv.org/abs/2503.18813v2",
+    "arxiv_id": "2503.18813",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "cross-domain/agents"
+    ],
+    "detail_topics": [
+      "权限与执行隔离"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-04T04:29:29Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接",
+        "relationship": "原始完整公开URL已恢复"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2503.18813v2",
+      "https://arxiv.org/html/2503.18813v2"
+    ],
+    "verification_status": "verified_primary_page",
+    "caveats": [
+      "假设用户 prompt 和 memory 未被攻击；纯文本误导、无外泄的错误摘要/钓鱼非目标（§3.1）。",
+      "侧信道、策略覆盖、去密审批疲劳仍是边界（§7、§9）；解释器形式化验证列为未来工作（§10）。",
+      "不能外推为所有语义正确性保证，或替代 OS/VM 沙箱。",
+      "仅核验论文及作者仓库，不运行代码；不混用 v1/v2 指标。"
+    ],
+    "reading_status": "v2_full_text_targeted_read_threat_model_method_limitations_sections_3_5_7_9_10",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p525",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "decision",
+      "generation"
+    ],
+    "canonical_folder": "cross-domain/papers/camel",
+    "canonical_path": "cross-domain/papers/camel/reading.md",
+    "canonical_readme": "cross-domain/papers/camel/README.md",
+    "source_path": "cross-domain/papers/camel/source.json",
+    "legacy_paths": [],
+    "content_kind": "reading",
+    "resource_subtype": "author_preprint",
+    "publication_date": "2025-03-24",
+    "date_basis": "arXiv submission history；方法阅读固定 v2",
+    "reading_scope": "v2_full_text_targeted_read_threat_model_method_limitations_sections_3_5_7_9_10",
+    "mechanism_summary": "CaMeL 分离只看可信请求的 P-LLM 与处理不可信数据、无工具权的 Q-LLM；受限 Python 解释器传播数据来源/读者标签，并在工具调用前执行策略。",
+    "evidence_boundary": "假设用户 prompt 和 memory 未被攻击；纯文本误导、无外泄的错误摘要/钓鱼非目标（§3.1）。 侧信道、策略覆盖、去密审批疲劳仍是边界（§7、§9）；解释器形式化验证列为未来工作（§10）。 不能外推为所有语义正确性保证，或替代 OS/VM 沙箱。 仅核验论文及作者仓库，不运行代码；不混用 v1/v2 指标。",
+    "read_version": "arXiv:2503.18813v2",
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2503.18813"
+    ],
+    "source_origin": "historical_assistant_recommendation",
+    "official_identity": "arXiv 作者提交原始论文；作者来自 Google、Google DeepMind、ETH Zurich，非 arXiv 背书或商业安全认证",
+    "independently_reproduced": false,
+    "checked_at": "2026-10-04",
+    "authors": [
+      "Edoardo Debenedetti",
+      "Ilia Shumailov",
+      "Tianqi Fan",
+      "Jamie Hayes",
+      "Nicholas Carlini",
+      "Daniel Fabian",
+      "Christoph Kern",
+      "Chongyang Shi",
+      "Andreas Terzis",
+      "Florian Tramèr"
+    ]
+  },
+  {
+    "id": "url:https://www.analog.com/media/en/training-seminars/tutorials/MT-046.pdf",
+    "title": "MT-046: Op Amp Settling Time",
+    "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-046.pdf",
+    "arxiv_id": null,
+    "doi": null,
+    "year": "2008",
+    "topic_paths": [
+      "cross-domain/engineering-exploration"
+    ],
+    "detail_topics": [
+      "高速电子器件设计与应用（探索）"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "official_associated_discovery_from_historical_fragment"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-03T10:57:05Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接",
+        "relationship": "只恢复片段；本条为官方关联发现，不宣称原始URL已恢复"
+      }
+    ],
+    "verification_sources": [
+      "https://www.analog.com/media/en/training-seminars/tutorials/MT-046.pdf",
+      "https://www.analog.com/en/solutions/instrumentation-and-measurement/electronic-test-and-measurement/parametric-measurement.html"
+    ],
+    "verification_status": "verified_primary_source",
+    "caveats": [
+      "完整历史URL未回收；编号对应的官方来源已核",
+      "建立时间非线性，不能按单一比例换算不同误差带；旧器件示例不是选型结论"
+    ],
+    "reading_status": "technical_tutorial_text_reading",
+    "resource_kind": "official_documentation",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p526",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/resources/adi-mt-046",
+    "canonical_path": "cross-domain/resources/adi-mt-046/README.md",
+    "canonical_readme": "cross-domain/resources/adi-mt-046/README.md",
+    "source_path": "cross-domain/resources/adi-mt-046/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "resource_subtype": "official_technical_tutorial",
+    "authors": [],
+    "publication_date": "2008-10",
+    "date_basis": "PDF第1页 Rev.0, 10/08, WK；末页版权2009不是版次日期",
+    "reading_scope": "4页文字与图注核对；未复现测量电路或波形",
+    "mechanism_summary": "建立时间指阶跃后输出进入并保持在指定误差带所需时间，比较时必须对齐阶跃幅度和误差带；测量链自身的脉冲平坦度、寄生与示波器过驱恢复会影响读数",
+    "evidence_boundary": "完整历史URL未回收；编号对应的官方来源已核 建立时间非线性，不能按单一比例换算不同误差带；旧器件示例不是选型结论",
+    "read_version": "PDF第1页 Rev.0, 10/08, WK；末页版权2009不是版次日期",
+    "original_chat_urls": [],
+    "source_origin": "official_associated_discovery_from_historical_fragment",
+    "historical_fragment": ".../MT-046.pdf",
+    "mechanism_reading_lead": "模拟高速不只看带宽：检查系统在采样时刻是否已达到所需精度",
+    "official_identity": "Analog Devices 官方教程PDF，4页",
+    "independently_reproduced": false,
+    "checked_at": "2026-10-04"
+  },
+  {
+    "id": "url:https://www.analog.com/media/en/training-seminars/tutorials/MT-097.pdf",
+    "title": "MT-097: Dealing with High-Speed Logic",
+    "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-097.pdf",
+    "arxiv_id": null,
+    "doi": null,
+    "year": "2009",
+    "topic_paths": [
+      "cross-domain/engineering-exploration"
+    ],
+    "detail_topics": [
+      "高速电子器件设计与应用（探索）"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "official_associated_discovery_from_historical_fragment"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-03T10:57:05Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接",
+        "relationship": "只恢复片段；本条为官方关联发现，不宣称原始URL已恢复"
+      }
+    ],
+    "verification_sources": [
+      "https://www.analog.com/media/en/training-seminars/tutorials/MT-097.pdf",
+      "https://www.analog.com/en/resources/packaging-quality-symbols-footprints/package-resources.html"
+    ],
+    "verification_status": "verified_primary_source",
+    "caveats": [
+      "完整历史URL未回收；这是由编号/片段定位的关联原始技术资料",
+      "2009年器件示例与经验长度不能直接套用所有高速接口；以实际叠层、驱动、负载和规范为准"
+    ],
+    "reading_status": "technical_tutorial_focused_reading",
+    "resource_kind": "official_documentation",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p527",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/resources/adi-mt-097",
+    "canonical_path": "cross-domain/resources/adi-mt-097/README.md",
+    "canonical_readme": "cross-domain/resources/adi-mt-097/README.md",
+    "source_path": "cross-domain/resources/adi-mt-097/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "resource_subtype": "official_technical_tutorial",
+    "authors": [],
+    "publication_date": "2009-01",
+    "date_basis": "PDF第1页 Rev.0, 01/09, WK；不扩写未明确署名缩写",
+    "reading_scope": "第1–5页边沿/传输线、阻尼、终端及时钟分配；第7–8页LVDS限制概览",
+    "mechanism_summary": "是否需要传输线处理取决于走线传播延迟相对最快边沿的比例，而不只看时钟频率；减慢不必要的快边沿可减轻干扰，但增加延迟，必须回到系统时序预算验证",
+    "evidence_boundary": "完整历史URL未回收；这是由编号/片段定位的关联原始技术资料 2009年器件示例与经验长度不能直接套用所有高速接口；以实际叠层、驱动、负载和规范为准",
+    "read_version": "PDF第1页 Rev.0, 01/09, WK；不扩写未明确署名缩写",
+    "original_chat_urls": [],
+    "source_origin": "official_associated_discovery_from_historical_fragment",
+    "historical_fragment": "media/en/training-seminars/tutorials/MT-097.pdf",
+    "mechanism_reading_lead": "把“高速”转成边沿时间、物理长度、阻抗和容许时序误差的比较",
+    "official_identity": "Analog Devices 官方教程PDF，9页",
+    "independently_reproduced": false,
+    "checked_at": "2026-10-04"
+  },
+  {
+    "id": "url:https://learn.chatgpt.com/docs/agent-approvals-security",
+    "title": "Agent approvals & security",
+    "url": "https://learn.chatgpt.com/docs/agent-approvals-security",
+    "arxiv_id": null,
+    "doi": null,
+    "year": null,
+    "topic_paths": [
+      "cross-domain/agents"
+    ],
+    "detail_topics": [
+      "权限与执行隔离"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-04T04:29:29Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接",
+        "relationship": "原始完整公开URL已恢复"
+      }
+    ],
+    "verification_sources": [
+      "https://learn.chatgpt.com/docs/agent-approvals-security"
+    ],
+    "verification_status": "verified_primary_page",
+    "caveats": [
+      "产品表面及执行路径不同，不能把本地 shell 网络策略推广到所有外部工具。",
+      "文档是当前快照，旧 URL 迁移状态保留；未调整任何安全设置。"
+    ],
+    "reading_status": "body_sandbox_approvals_network_isolation_sections",
+    "resource_kind": "official_documentation",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p528",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/resources/agent-approvals-security",
+    "canonical_path": "cross-domain/resources/agent-approvals-security/README.md",
+    "canonical_readme": "cross-domain/resources/agent-approvals-security/README.md",
+    "source_path": "cross-domain/resources/agent-approvals-security/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "resource_subtype": "official_product_security_documentation",
+    "publication_date": null,
+    "date_basis": "动态产品文档，无固定文章发布日期；记录 2026-10-04 所见",
+    "reading_scope": "body_sandbox_approvals_network_isolation_sections",
+    "mechanism_summary": "本地 OS 沙箱与动作审批分别约束技术执行面和审批流程；文档明确 command-network 控制自身不关闭 hosted web search、apps 或 MCP。",
+    "evidence_boundary": "产品表面及执行路径不同，不能把本地 shell 网络策略推广到所有外部工具。 文档是当前快照，旧 URL 迁移状态保留；未调整任何安全设置。",
+    "read_version": "2026-10-04所见动态官方页面；未固定不可变版本",
+    "original_chat_urls": [
+      "https://developers.openai.com/codex/agent-approvals-security"
+    ],
+    "source_origin": "historical_assistant_recommendation",
+    "official_identity": "OpenAI 官方开发文档链接跳转至官方 ChatGPT Learn 文档",
+    "independently_reproduced": false,
+    "checked_at": "2026-10-04"
+  },
+  {
+    "id": "url:https://martinfowler.com/articles/architect-elevator.html",
+    "title": "The Architect Elevator — Visiting the upper floors",
+    "url": "https://martinfowler.com/articles/architect-elevator.html",
+    "arxiv_id": null,
+    "doi": null,
+    "year": "2017",
+    "topic_paths": [
+      "cross-domain/agents"
+    ],
+    "detail_topics": [
+      "协作与软件流程"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-04T05:43:30Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接",
+        "relationship": "原始完整公开URL已恢复"
+      }
+    ],
+    "verification_sources": [
+      "https://martinfowler.com/articles/architect-elevator.html"
+    ],
+    "verification_status": "verified_primary_source",
+    "caveats": [
+      "不是证明多层管理或多层Agent更优；文中恰指出多次传话失真",
+      "架构适配性依赖场景，不提供普适组织模板"
+    ],
+    "reading_status": "engineering_article_focused_reading",
+    "resource_kind": "author_article",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p529",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/resources/architect-elevator",
+    "canonical_path": "cross-domain/resources/architect-elevator/README.md",
+    "canonical_readme": "cross-domain/resources/architect-elevator/README.md",
+    "source_path": "cross-domain/resources/architect-elevator/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Gregor Hohpe"
+    ],
+    "resource_subtype": "author_article",
+    "publication_date": "2017-05-24",
+    "date_basis": "页面署名日期",
+    "reading_scope": "上下层沟通、延后不可逆决定、适配目的、交付反馈；未作组织案例核验",
+    "mechanism_summary": "架构师连接业务策略、组织约束与技术实施，并在正确层面排除阻碍；用模块化和灵活设计减少早期不可逆决策；用交付结果反馈检验架构选择",
+    "evidence_boundary": "不是证明多层管理或多层Agent更优；文中恰指出多次传话失真 架构适配性依赖场景，不提供普适组织模板",
+    "read_version": "页面署名日期",
+    "original_chat_urls": [
+      "https://martinfowler.com/articles/architect-elevator.html"
+    ],
+    "source_origin": "historical_assistant_recommendation",
+    "historical_fragment": null,
+    "mechanism_reading_lead": "0到1阶段先澄清目的、约束与可逆性；既有系统阶段看决策是否改善真实交付指标",
+    "official_identity": "Gregor Hohpe 署名原文，刊载于 Martin Fowler 网站",
+    "independently_reproduced": false,
+    "checked_at": "2026-10-04"
+  },
+  {
+    "id": "url:https://martinfowler.com/bliki/BranchByAbstraction.html",
+    "title": "Branch By Abstraction",
+    "url": "https://martinfowler.com/bliki/BranchByAbstraction.html",
+    "arxiv_id": null,
+    "doi": null,
+    "year": "2014",
+    "topic_paths": [
+      "cross-domain/agents"
+    ],
+    "detail_topics": [
+      "协作与软件流程"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-04T05:43:30Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接",
+        "relationship": "原始完整公开URL已恢复"
+      }
+    ],
+    "verification_sources": [
+      "https://martinfowler.com/bliki/BranchByAbstraction.html"
+    ],
+    "verification_status": "verified_primary_source",
+    "caveats": [
+      "不是为所有系统保证逐客户切换；原文明确存在必须整体切换的变体",
+      "迁移策略不自动解决数据兼容、回滚与外部行为验证"
+    ],
+    "reading_status": "short_engineering_article_read",
+    "resource_kind": "author_article",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p530",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/resources/branch-by-abstraction",
+    "canonical_path": "cross-domain/resources/branch-by-abstraction/README.md",
+    "canonical_readme": "cross-domain/resources/branch-by-abstraction/README.md",
+    "source_path": "cross-domain/resources/branch-by-abstraction/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Martin Fowler"
+    ],
+    "resource_subtype": "author_article",
+    "publication_date": "2014-01-07",
+    "date_basis": "页面署名日期",
+    "reading_scope": "迁移流程、变体、持续交付条件全文；未跟读外链",
+    "mechanism_summary": "先用抽象层承接旧实现，再使新旧实现共存，逐段切换并最终删除旧实现；全过程保持可构建、可运行、可发布，降低一次性替换风险",
+    "evidence_boundary": "不是为所有系统保证逐客户切换；原文明确存在必须整体切换的变体 迁移策略不自动解决数据兼容、回滚与外部行为验证",
+    "read_version": "页面署名日期",
+    "original_chat_urls": [
+      "https://martinfowler.com/bliki/BranchByAbstraction.html"
+    ],
+    "source_origin": "historical_assistant_recommendation",
+    "historical_fragment": null,
+    "mechanism_reading_lead": "看迁移中间态如何保持功能，而非只画最终目标结构",
+    "official_identity": "Martin Fowler 原文；文中把术语命名追溯至Paul Hammant，并致谢Stacy Curl",
+    "independently_reproduced": false,
+    "checked_at": "2026-10-04"
+  },
+  {
+    "id": "url:https://github.com/containers/bubblewrap",
+    "title": "Bubblewrap",
+    "url": "https://github.com/containers/bubblewrap",
+    "arxiv_id": null,
+    "doi": null,
+    "year": null,
+    "topic_paths": [
+      "cross-domain/agents"
+    ],
+    "detail_topics": [
+      "权限与执行隔离"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-04T04:29:29Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接",
+        "relationship": "原始完整公开URL已恢复"
+      }
+    ],
+    "verification_sources": [
+      "https://github.com/containers/bubblewrap"
+    ],
+    "verification_status": "verified_primary_page",
+    "caveats": [
+      "不自带可保证所有用途安全的现成策略。",
+      "仅文档阅读，未运行、安装或审核源代码。"
+    ],
+    "reading_status": "repository_readme_security_usage_limitations",
+    "resource_kind": "repository",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p531",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/resources/bubblewrap",
+    "canonical_path": "cross-domain/resources/bubblewrap/README.md",
+    "canonical_readme": "cross-domain/resources/bubblewrap/README.md",
+    "source_path": "cross-domain/resources/bubblewrap/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "resource_subtype": "official_source_repository",
+    "publication_date": null,
+    "date_basis": "仓库和 main README 持续更新；未固定 commit，不编造发布日期",
+    "reading_scope": "repository_readme_security_usage_limitations",
+    "mechanism_summary": "bubblewrap 是构建沙箱的低层工具；保护范围取决于调用参数，策略由包装它的框架决定；暴露的 socket/挂载也可能扩大权限。",
+    "evidence_boundary": "不自带可保证所有用途安全的现成策略。 仅文档阅读，未运行、安装或审核源代码。",
+    "read_version": "2026-10-04所见动态官方页面；未固定不可变版本",
+    "original_chat_urls": [
+      "https://github.com/containers/bubblewrap"
+    ],
+    "source_origin": "historical_assistant_recommendation",
+    "official_identity": "containers/bubblewrap 项目维护者仓库；已读仓库 README",
+    "independently_reproduced": false,
+    "checked_at": "2026-10-04"
+  },
+  {
+    "id": "url:https://claude.com/blog/building-multi-agent-systems-when-and-how-to-use-them",
+    "title": "Building multi-agent systems: When and how to use them",
+    "url": "https://claude.com/blog/building-multi-agent-systems-when-and-how-to-use-them",
+    "arxiv_id": null,
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "cross-domain/agents"
+    ],
+    "detail_topics": [
+      "协作与软件流程"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-04T05:43:30Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接",
+        "relationship": "原始完整公开URL已恢复"
+      }
+    ],
+    "verification_sources": [
+      "https://claude.com/blog/building-multi-agent-systems-when-and-how-to-use-them"
+    ],
+    "verification_status": "verified_primary_source",
+    "caveats": [
+      "工程经验和示意代码，不是经复现的普遍定律",
+      "层级深度、工具数、token开销是条件性经验，不能推导越深越强或用户已接受某预算"
+    ],
+    "reading_status": "engineering_article_focused_reading",
+    "resource_kind": "official_blog",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p532",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/resources/building-multi-agent-systems",
+    "canonical_path": "cross-domain/resources/building-multi-agent-systems/README.md",
+    "canonical_readme": "cross-domain/resources/building-multi-agent-systems/README.md",
+    "source_path": "cross-domain/resources/building-multi-agent-systems/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Cara Phillips"
+    ],
+    "resource_subtype": "official_blog",
+    "publication_date": "2026-01-23",
+    "date_basis": "页面 Date 字段；浏览器标题为 When to use multi-agent systems (and when not to)",
+    "reading_scope": "定义、单Agent优先、三种收益条件、上下文拆分、独立核验及限制；示例代码未执行",
+    "mechanism_summary": "多Agent的明确收益来自上下文隔离、可独立并行工作、专门工具或领域上下文；按上下文边界拆任务；同一功能的实现和测试通常共享上下文，黑盒核验可独立；核验须有明确标准并检查边界/失败场景，防止过早宣告通过",
+    "evidence_boundary": "工程经验和示意代码，不是经复现的普遍定律 层级深度、工具数、token开销是条件性经验，不能推导越深越强或用户已接受某预算",
+    "read_version": "页面 Date 字段；浏览器标题为 When to use multi-agent systems (and when not to)",
+    "original_chat_urls": [
+      "https://claude.com/blog/building-multi-agent-systems-when-and-how-to-use-them"
+    ],
+    "source_origin": "historical_assistant_recommendation",
+    "historical_fragment": null,
+    "mechanism_reading_lead": "先定位单Agent瓶颈，再证明新增协调边界值得；干净API边界比角色名称更重要",
+    "official_identity": "Anthropic 的 Claude 官方开发博客",
+    "independently_reproduced": false,
+    "checked_at": "2026-10-04"
+  },
+  {
+    "id": "url:https://docs.cedarpolicy.com/auth/authorization.html",
+    "title": "How Cedar authorization works",
+    "url": "https://docs.cedarpolicy.com/auth/authorization.html",
+    "arxiv_id": null,
+    "doi": null,
+    "year": null,
+    "topic_paths": [
+      "cross-domain/agents"
+    ],
+    "detail_topics": [
+      "权限与执行隔离"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-04T04:29:29Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接",
+        "relationship": "原始完整公开URL已恢复"
+      }
+    ],
+    "verification_sources": [
+      "https://docs.cedarpolicy.com/auth/authorization.html"
+    ],
+    "verification_status": "verified_primary_page",
+    "caveats": [
+      "应用必须在动作执行点使用并执行返回结果；决策引擎不是 OS 沙箱。",
+      "skip-on-error 不能描述成所有 policy 错误一律 fail-closed。"
+    ],
+    "reading_status": "authorization_algorithm_and_diagnostics_sections",
+    "resource_kind": "official_documentation",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p533",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/resources/cedar-authorization",
+    "canonical_path": "cross-domain/resources/cedar-authorization/README.md",
+    "canonical_readme": "cross-domain/resources/cedar-authorization/README.md",
+    "source_path": "cross-domain/resources/cedar-authorization/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "resource_subtype": "official_authorization_reference",
+    "publication_date": null,
+    "date_basis": "持续更新语言参考页，无固定发布日期",
+    "reading_scope": "authorization_algorithm_and_diagnostics_sections",
+    "mechanism_summary": "应用为 principal/action/resource/context 调用 authorizer；无匹配 permit 默认拒绝，匹配 forbid 优先，错误 policy 被跳过并回报 diagnostics。",
+    "evidence_boundary": "应用必须在动作执行点使用并执行返回结果；决策引擎不是 OS 沙箱。 skip-on-error 不能描述成所有 policy 错误一律 fail-closed。",
+    "read_version": "2026-10-04所见动态官方页面；未固定不可变版本",
+    "original_chat_urls": [
+      "https://docs.cedarpolicy.com/auth/authorization.html"
+    ],
+    "source_origin": "historical_assistant_recommendation",
+    "official_identity": "Cedar 项目官方语言参考文档；页面指向 cedar-docs@amazon.com 与项目 GitHub",
+    "independently_reproduced": false,
+    "checked_at": "2026-10-04"
+  },
+  {
+    "id": "url:https://martinfowler.com/articles/continuousIntegration.html",
+    "title": "Continuous Integration",
+    "url": "https://martinfowler.com/articles/continuousIntegration.html",
+    "arxiv_id": null,
+    "doi": null,
+    "year": "2000",
+    "topic_paths": [
+      "cross-domain/agents"
+    ],
+    "detail_topics": [
+      "协作与软件流程"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-04T05:43:30Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接",
+        "relationship": "原始完整公开URL已恢复"
+      }
+    ],
+    "verification_sources": [
+      "https://martinfowler.com/articles/continuousIntegration.html"
+    ],
+    "verification_status": "verified_primary_source",
+    "caveats": [
+      "绿灯是已有检查的结果，不等于需求语义与所有生产行为正确",
+      "网页已多次修订，引用日期须区分首版和当前版"
+    ],
+    "reading_status": "engineering_article_focused_reading",
+    "resource_kind": "author_article",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p534",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/resources/continuous-integration",
+    "canonical_path": "cross-domain/resources/continuous-integration/README.md",
+    "canonical_readme": "cross-domain/resources/continuous-integration/README.md",
+    "source_path": "cross-domain/resources/continuous-integration/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Martin Fowler"
+    ],
+    "resource_subtype": "author_article",
+    "publication_date": "2000-09-10",
+    "date_basis": "本次修订；首版 2000-09-10，重写 2006-05-01",
+    "reading_scope": "定义、主线频繁集成、自测试构建、分层验证、未完成工作隐藏；未运行项目CI",
+    "mechanism_summary": "CI要求成员至少每天集成到共同代码线，每次用自动构建与测试尽早发现集成错误；快速提交测试与更慢的真实依赖/端到端验证可以分层；作者明确指出测试不能证明不存在缺陷",
+    "evidence_boundary": "绿灯是已有检查的结果，不等于需求语义与所有生产行为正确 网页已多次修订，引用日期须区分首版和当前版",
+    "read_version": "本次修订；首版 2000-09-10，重写 2006-05-01",
+    "original_chat_urls": [
+      "https://martinfowler.com/articles/continuousIntegration.html"
+    ],
+    "source_origin": "historical_assistant_recommendation",
+    "historical_fragment": null,
+    "mechanism_reading_lead": "把集成看作持续交换真实代码和反馈，不把安装CI服务等同CI实践",
+    "official_identity": "Martin Fowler 本人署名原文",
+    "revised_date": "2024-01-18",
+    "independently_reproduced": false,
+    "checked_at": "2026-10-04"
+  },
+  {
+    "id": "url:https://docs.docker.com/engine/security",
+    "title": "Docker Engine security",
+    "url": "https://docs.docker.com/engine/security/",
+    "arxiv_id": null,
+    "doi": null,
+    "year": null,
+    "topic_paths": [
+      "cross-domain/agents"
+    ],
+    "detail_topics": [
+      "权限与执行隔离"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-04T04:29:29Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接",
+        "relationship": "原始完整公开URL已恢复"
+      }
+    ],
+    "verification_sources": [
+      "https://docs.docker.com/engine/security/"
+    ],
+    "verification_status": "verified_primary_page",
+    "caveats": [
+      "容器配置和内核漏洞可能使隔离不完整。",
+      "这是安全总览；其中历史版本叙述不能当当前所有平台默认配置。"
+    ],
+    "reading_status": "namespaces_cgroups_daemon_capabilities_security_sections",
+    "resource_kind": "official_documentation",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p535",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/resources/docker-engine-security",
+    "canonical_path": "cross-domain/resources/docker-engine-security/README.md",
+    "canonical_readme": "cross-domain/resources/docker-engine-security/README.md",
+    "source_path": "cross-domain/resources/docker-engine-security/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "resource_subtype": "official_security_overview",
+    "publication_date": null,
+    "date_basis": "持续更新产品安全文档，无固定文章发布日期",
+    "reading_scope": "namespaces_cgroups_daemon_capabilities_security_sections",
+    "mechanism_summary": "Docker 组合 namespace、cgroup、capabilities 与内核安全机制；cgroup 主要计量/限制资源，不能据此认定跨容器数据访问被授权隔离。；daemon 控制权和主机挂载本身是关键风险面。",
+    "evidence_boundary": "容器配置和内核漏洞可能使隔离不完整。 这是安全总览；其中历史版本叙述不能当当前所有平台默认配置。",
+    "read_version": "2026-10-04所见动态官方页面；未固定不可变版本",
+    "original_chat_urls": [
+      "https://docs.docker.com/engine/security/"
+    ],
+    "source_origin": "historical_assistant_recommendation",
+    "official_identity": "Docker 官方文档 docs.docker.com",
+    "independently_reproduced": false,
+    "checked_at": "2026-10-04"
+  },
+  {
+    "id": "url:https://github.com/NanmiCoder/dsh-agent-teams",
+    "title": "NanmiCoder/dsh-agent-teams — AgentTeams plugin for DeepSeek Harness",
+    "url": "https://github.com/NanmiCoder/dsh-agent-teams",
+    "arxiv_id": null,
+    "doi": null,
+    "year": null,
+    "topic_paths": [
+      "cross-domain/agents"
+    ],
+    "detail_topics": [
+      "协作与软件流程"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-04T05:43:30Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接",
+        "relationship": "原始完整公开URL已恢复"
+      }
+    ],
+    "verification_sources": [
+      "https://github.com/NanmiCoder/dsh-agent-teams",
+      "https://github.com/NanmiCoder/dsh-agent-teams/blob/main/docs/usage.md",
+      "https://github.com/NanmiCoder/dsh-agent-teams/blob/main/docs/quality-gates.md"
+    ],
+    "verification_status": "verified_primary_source",
+    "caveats": [
+      "文档主张未做运行验证，不能称已经证实的可靠性保证",
+      "同进程序列化不等于跨进程一致性；声明范围不是host写入拦截",
+      "用户本轮是在学习协作前提，不代表安装插件、采纳profile或作出CodingPlatform决策"
+    ],
+    "reading_status": "repository_documentation_read_only",
+    "resource_kind": "repository",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p536",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/resources/dsh-agent-teams",
+    "canonical_path": "cross-domain/resources/dsh-agent-teams/README.md",
+    "canonical_readme": "cross-domain/resources/dsh-agent-teams/README.md",
+    "source_path": "cross-domain/resources/dsh-agent-teams/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "NanmiCoder"
+    ],
+    "resource_subtype": "repository",
+    "publication_date": null,
+    "date_basis": "动态main未锁定commit，不能把抓取日期当发布日期",
+    "reading_scope": "README、docs/usage.md与质量门禁相关段落；未下载、运行、测试或审计源码",
+    "mechanism_summary": "文档描述Captain、驻留成员、任务依赖、mailbox及可恢复attempt状态；质量任务使用目标/验收/范围/验证合同；README声明范围控制是完成时审计",
+    "evidence_boundary": "文档主张未做运行验证，不能称已经证实的可靠性保证 同进程序列化不等于跨进程一致性；声明范围不是host写入拦截 用户本轮是在学习协作前提，不代表安装插件、采纳profile或作出CodingPlatform决策",
+    "read_version": "抓取时README显示插件v0.1.22；main可变化，未做不可变版本固定",
+    "original_chat_urls": [
+      "https://github.com/NanmiCoder/dsh-agent-teams"
+    ],
+    "source_origin": "historical_assistant_recommendation",
+    "historical_fragment": null,
+    "mechanism_reading_lead": "从调度状态和结果证据读实现范例，区分“流程门禁”与“真实权限隔离”",
+    "official_identity": "NanmiCoder 项目的第一方仓库；第三方DeepSeek Harness插件，不能称DeepSeek官方方案",
+    "independently_reproduced": false,
+    "checked_at": "2026-10-04"
+  },
+  {
+    "id": "url:https://git-scm.com/docs/git-worktree",
+    "title": "git-worktree - Manage multiple working trees",
+    "url": "https://git-scm.com/docs/git-worktree",
+    "arxiv_id": null,
+    "doi": null,
+    "year": null,
+    "topic_paths": [
+      "cross-domain/agents"
+    ],
+    "detail_topics": [
+      "权限与执行隔离"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-04T04:29:29Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接",
+        "relationship": "原始完整公开URL已恢复"
+      }
+    ],
+    "verification_sources": [
+      "https://git-scm.com/docs/git-worktree"
+    ],
+    "verification_status": "verified_primary_page",
+    "caveats": [
+      "由共享语义可推断：worktree 解决开发并行/文件冲突组织，单独使用不能构成进程、身份或网络安全隔离。",
+      "该安全结论是由官方共享语义作出的工程推论，不是手册声称的安全保证。"
+    ],
+    "reading_status": "name_description_commands_shared_repository",
+    "resource_kind": "official_documentation",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p537",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/resources/git-worktree",
+    "canonical_path": "cross-domain/resources/git-worktree/README.md",
+    "canonical_readme": "cross-domain/resources/git-worktree/README.md",
+    "source_path": "cross-domain/resources/git-worktree/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "resource_subtype": "official_command_manual",
+    "publication_date": null,
+    "date_basis": "页面标注 manual last updated in 2.56.0，版本日期 2026-09-28；这不是 worktree 发明/论文发布日期",
+    "reading_scope": "name_description_commands_shared_repository",
+    "mechanism_summary": "linked worktree 支持同一仓库多个工作目录，除 HEAD、index 等每工作树文件外仍共享仓库内容。",
+    "evidence_boundary": "由共享语义可推断：worktree 解决开发并行/文件冲突组织，单独使用不能构成进程、身份或网络安全隔离。 该安全结论是由官方共享语义作出的工程推论，不是手册声称的安全保证。",
+    "read_version": "2.56.0",
+    "original_chat_urls": [
+      "https://git-scm.com/docs/git-worktree"
+    ],
+    "source_origin": "historical_assistant_recommendation",
+    "official_identity": "Git 官方文档 git-scm.com",
+    "independently_reproduced": false,
+    "checked_at": "2026-10-04"
+  },
+  {
+    "id": "url:https://gvisor.dev/docs/architecture_guide/security",
+    "title": "Security Model",
+    "url": "https://gvisor.dev/docs/architecture_guide/security/",
+    "arxiv_id": null,
+    "doi": null,
+    "year": null,
+    "topic_paths": [
+      "cross-domain/agents"
+    ],
+    "detail_topics": [
+      "权限与执行隔离"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-04T04:29:29Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接",
+        "relationship": "原始完整公开URL已恢复"
+      }
+    ],
+    "verification_sources": [
+      "https://gvisor.dev/docs/architecture_guide/security/"
+    ],
+    "verification_status": "verified_primary_page",
+    "caveats": [
+      "VM/gVisor 安全性取决于实际暴露面，不能仅凭使用虚拟化硬件排序。",
+      "沙箱不是安全架构的替代品，也不会自动禁止已映射文件与网络访问。"
+    ],
+    "reading_status": "threat_model_goals_defense_in_depth_faq",
+    "resource_kind": "official_documentation",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p538",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/resources/gvisor-security",
+    "canonical_path": "cross-domain/resources/gvisor-security/README.md",
+    "canonical_readme": "cross-domain/resources/gvisor-security/README.md",
+    "source_path": "cross-domain/resources/gvisor-security/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "resource_subtype": "official_architecture_documentation",
+    "publication_date": null,
+    "date_basis": "动态架构指南，没有可见固定文章发布日期",
+    "reading_scope": "threat_model_goals_defense_in_depth_faq",
+    "mechanism_summary": "Sentry 重实现应用可见 System API，减少对宿主 API 的直接暴露；VM 则通过 guest OS/虚拟设备改变边界。；资源耗尽仍依赖宿主 cgroup，网络策略需另施加；硬件侧信道不是其一般防护保证。",
+    "evidence_boundary": "VM/gVisor 安全性取决于实际暴露面，不能仅凭使用虚拟化硬件排序。 沙箱不是安全架构的替代品，也不会自动禁止已映射文件与网络访问。",
+    "read_version": "2026-10-04所见动态官方页面；未固定不可变版本",
+    "original_chat_urls": [
+      "https://gvisor.dev/docs/architecture_guide/security/"
+    ],
+    "source_origin": "historical_assistant_recommendation",
+    "official_identity": "gVisor 官方项目文档；版权归 The gVisor Authors",
+    "independently_reproduced": false,
+    "checked_at": "2026-10-04"
+  },
+  {
+    "id": "url:https://docs.kernel.org/admin-guide/cgroup-v2.html",
+    "title": "Control Group v2",
+    "url": "https://docs.kernel.org/admin-guide/cgroup-v2.html",
+    "arxiv_id": null,
+    "doi": null,
+    "year": null,
+    "topic_paths": [
+      "cross-domain/agents"
+    ],
+    "detail_topics": [
+      "权限与执行隔离"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-04T04:29:29Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接",
+        "relationship": "原始完整公开URL已恢复"
+      }
+    ],
+    "verification_sources": [
+      "https://docs.kernel.org/admin-guide/cgroup-v2.html"
+    ],
+    "verification_status": "verified_primary_page",
+    "caveats": [
+      "不是通用用户—动作—资源授权框架。",
+      "不能绝对说它与安全无关：资源耗尽防御及部分 controller 有安全用途；这里反对的是把资源分组当作充分数据隔离。",
+      "未声称逐条审核全部 controller 文档。"
+    ],
+    "reading_status": "authoritative_intro_core_controller_model",
+    "resource_kind": "official_documentation",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p539",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/resources/linux-cgroup-v2",
+    "canonical_path": "cross-domain/resources/linux-cgroup-v2/README.md",
+    "canonical_readme": "cross-domain/resources/linux-cgroup-v2/README.md",
+    "source_path": "cross-domain/resources/linux-cgroup-v2/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "resource_subtype": "official_kernel_admin_reference",
+    "publication_date": null,
+    "date_basis": "页首保留 Date: October, 2015；正文声明未来接口变化须更新本页，不能把现页全内容归为 2015 年固定版本",
+    "reading_scope": "authoritative_intro_core_controller_model",
+    "mechanism_summary": "cgroup 将进程分层组织，以 controller 分配/约束系统资源；下层不能取消上层资源限制。",
+    "evidence_boundary": "不是通用用户—动作—资源授权框架。 不能绝对说它与安全无关：资源耗尽防御及部分 controller 有安全用途；这里反对的是把资源分组当作充分数据隔离。 未声称逐条审核全部 controller 文档。",
+    "read_version": "2026-10-04所见动态官方页面；未固定不可变版本",
+    "original_chat_urls": [
+      "https://docs.kernel.org/admin-guide/cgroup-v2.html"
+    ],
+    "source_origin": "historical_assistant_recommendation",
+    "official_identity": "Linux 内核官方文档 docs.kernel.org；作者 Tejun Heo",
+    "independently_reproduced": false,
+    "checked_at": "2026-10-04"
+  },
+  {
+    "id": "url:https://docs.kernel.org/userspace-api/landlock.html",
+    "title": "Landlock: unprivileged access control",
+    "url": "https://docs.kernel.org/userspace-api/landlock.html",
+    "arxiv_id": null,
+    "doi": null,
+    "year": null,
+    "topic_paths": [
+      "cross-domain/agents"
+    ],
+    "detail_topics": [
+      "权限与执行隔离"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-04T04:29:29Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接",
+        "relationship": "原始完整公开URL已恢复"
+      }
+    ],
+    "verification_sources": [
+      "https://docs.kernel.org/userspace-api/landlock.html"
+    ],
+    "verification_status": "verified_primary_page",
+    "caveats": [
+      "不能扩大已有权限；操作覆盖取决于运行内核、Landlock ABI 与 handled rights。",
+      "不应把 latest 文档所列新 ABI 能力当成任意 Linux 主机已支持。"
+    ],
+    "reading_status": "introduction_rules_layering_inheritance_and_abi_caveats",
+    "resource_kind": "official_documentation",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p540",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/resources/linux-landlock",
+    "canonical_path": "cross-domain/resources/linux-landlock/README.md",
+    "canonical_readme": "cross-domain/resources/linux-landlock/README.md",
+    "source_path": "cross-domain/resources/linux-landlock/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "resource_subtype": "official_kernel_api_documentation",
+    "publication_date": null,
+    "date_basis": "正文 Date 元数据为 August 2026；滚动文档更新时间，不标成论文发表日",
+    "reading_scope": "introduction_rules_layering_inheritance_and_abi_caveats",
+    "mechanism_summary": "Landlock 是可叠加 LSM，允许非特权进程收紧自身及后代的访问；路径须同时通过全部 Landlock 层、DAC 和其他 LSM 控制。",
+    "evidence_boundary": "不能扩大已有权限；操作覆盖取决于运行内核、Landlock ABI 与 handled rights。 不应把 latest 文档所列新 ABI 能力当成任意 Linux 主机已支持。",
+    "read_version": "2026-10-04所见动态官方页面；未固定不可变版本",
+    "original_chat_urls": [
+      "https://docs.kernel.org/userspace-api/landlock.html"
+    ],
+    "source_origin": "historical_assistant_recommendation",
+    "official_identity": "Linux 内核官方文档 docs.kernel.org；作者 Mickaël Salaün",
+    "independently_reproduced": false,
+    "checked_at": "2026-10-04"
+  },
+  {
+    "id": "url:https://man7.org/linux/man-pages/man7/namespaces.7.html",
+    "title": "namespaces(7) — Linux manual page",
+    "url": "https://man7.org/linux/man-pages/man7/namespaces.7.html",
+    "arxiv_id": null,
+    "doi": null,
+    "year": null,
+    "topic_paths": [
+      "cross-domain/agents"
+    ],
+    "detail_topics": [
+      "权限与执行隔离"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-04T04:29:29Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接",
+        "relationship": "原始完整公开URL已恢复"
+      }
+    ],
+    "verification_sources": [
+      "https://man7.org/linux/man-pages/man7/namespaces.7.html"
+    ],
+    "verification_status": "verified_primary_page",
+    "caveats": [
+      "资源视图隔离不意味着每种业务访问都获正确授权，也不等于独立内核。",
+      "需要按 namespace 类型与配置判断实际边界。"
+    ],
+    "reading_status": "description_namespace_types_and_colophon",
+    "resource_kind": "official_documentation",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p541",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/resources/linux-namespaces",
+    "canonical_path": "cross-domain/resources/linux-namespaces/README.md",
+    "canonical_readme": "cross-domain/resources/linux-namespaces/README.md",
+    "source_path": "cross-domain/resources/linux-namespaces/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "resource_subtype": "upstream_manual_rendering",
+    "publication_date": null,
+    "date_basis": "所读手册页日期 2026-02-08；Linux man-pages 6.19；HTML 创建/取源 2026-09-09。这些不是论文发布日期。",
+    "reading_scope": "description_namespace_types_and_colophon",
+    "mechanism_summary": "namespace 将全局系统资源呈现为实例化视图；类型覆盖 PID、mount、network、user 等不同资源。",
+    "evidence_boundary": "资源视图隔离不意味着每种业务访问都获正确授权，也不等于独立内核。 需要按 namespace 类型与配置判断实际边界。",
+    "read_version": "Linux man-pages 6.19",
+    "original_chat_urls": [
+      "https://man7.org/linux/man-pages/man7/namespaces.7.html"
+    ],
+    "source_origin": "historical_assistant_recommendation",
+    "official_identity": "man7.org 的 Linux man-pages 上游内容 HTML 呈现；COLOPHON 明示来自 kernel.org man-pages-6.19，不冒称 Linux 内核官网页面",
+    "independently_reproduced": false,
+    "checked_at": "2026-10-04"
+  },
+  {
+    "id": "url:https://docs.kernel.org/userspace-api/seccomp_filter.html",
+    "title": "Seccomp BPF (SECure COMPuting with filters)",
+    "url": "https://docs.kernel.org/userspace-api/seccomp_filter.html",
+    "arxiv_id": null,
+    "doi": null,
+    "year": null,
+    "topic_paths": [
+      "cross-domain/agents"
+    ],
+    "detail_topics": [
+      "权限与执行隔离"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-04T04:29:29Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接",
+        "relationship": "原始完整公开URL已恢复"
+      }
+    ],
+    "verification_sources": [
+      "https://docs.kernel.org/userspace-api/seccomp_filter.html"
+    ],
+    "verification_status": "verified_primary_page",
+    "caveats": [
+      "BPF 过滤器不能任意解引用用户指针；不能把它直接写成路径级业务授权器。"
+    ],
+    "reading_status": "introduction_what_it_isnt_usage",
+    "resource_kind": "official_documentation",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p542",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/resources/linux-seccomp-bpf",
+    "canonical_path": "cross-domain/resources/linux-seccomp-bpf/README.md",
+    "canonical_readme": "cross-domain/resources/linux-seccomp-bpf/README.md",
+    "source_path": "cross-domain/resources/linux-seccomp-bpf/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "resource_subtype": "official_kernel_api_documentation",
+    "publication_date": null,
+    "date_basis": "滚动内核文档页，无可见固定发布日期",
+    "reading_scope": "introduction_what_it_isnt_usage",
+    "mechanism_summary": "seccomp 以系统调用号/参数等元数据过滤调用，缩小暴露内核面；原文明说 syscall filtering 不是完整沙箱，逻辑行为与信息流还需其他加固/LSM。",
+    "evidence_boundary": "BPF 过滤器不能任意解引用用户指针；不能把它直接写成路径级业务授权器。",
+    "read_version": "2026-10-04所见动态官方页面；未固定不可变版本",
+    "original_chat_urls": [
+      "https://docs.kernel.org/userspace-api/seccomp_filter.html"
+    ],
+    "source_origin": "historical_assistant_recommendation",
+    "official_identity": "Linux 内核官方文档 docs.kernel.org",
+    "independently_reproduced": false,
+    "checked_at": "2026-10-04"
+  },
+  {
+    "id": "url:https://www.anthropic.com/engineering/multi-agent-research-system",
+    "title": "How we built our multi-agent research system",
+    "url": "https://www.anthropic.com/engineering/multi-agent-research-system",
+    "arxiv_id": null,
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "cross-domain/agents"
+    ],
+    "detail_topics": [
+      "协作与软件流程"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-04T05:43:30Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接",
+        "relationship": "原始完整公开URL已恢复"
+      }
+    ],
+    "verification_sources": [
+      "https://www.anthropic.com/engineering/multi-agent-research-system"
+    ],
+    "verification_status": "verified_primary_source",
+    "caveats": [
+      "结果针对其研究系统与内部评估，不能外推到任意编码任务",
+      "文中指出紧耦合和大量共享上下文不利于多Agent；发布时同步调度存在瓶颈"
+    ],
+    "reading_status": "engineering_report_focused_reading",
+    "resource_kind": "official_blog",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p543",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/resources/multi-agent-research-system",
+    "canonical_path": "cross-domain/resources/multi-agent-research-system/README.md",
+    "canonical_readme": "cross-domain/resources/multi-agent-research-system/README.md",
+    "source_path": "cross-domain/resources/multi-agent-research-system/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "resource_subtype": "official_blog",
+    "authors": [],
+    "publication_date": "2025-06-13",
+    "date_basis": "Published Jun 13, 2025",
+    "reading_scope": "架构、分派合同、评估、可靠性及同步瓶颈；内部评估未复现",
+    "mechanism_summary": "主研究Agent分解问题，独立子Agent搜索并压缩证据，再由主Agent综合和补查；有效分派包含目标、输出格式、工具/来源建议和明确边界；持久状态与检查点支持失败恢复；评估同时检查事实、引文、完整性、来源质量和工具效率，并保留人工测试",
+    "evidence_boundary": "结果针对其研究系统与内部评估，不能外推到任意编码任务 文中指出紧耦合和大量共享上下文不利于多Agent；发布时同步调度存在瓶颈",
+    "read_version": "Published Jun 13, 2025",
+    "original_chat_urls": [
+      "https://www.anthropic.com/engineering/multi-agent-research-system"
+    ],
+    "source_origin": "historical_assistant_recommendation",
+    "historical_fragment": null,
+    "mechanism_reading_lead": "重点看任务合同、证据汇总、可恢复执行三个接口如何协同",
+    "official_identity": "Anthropic 第一方工程报告",
+    "independently_reproduced": false,
+    "checked_at": "2026-10-04"
+  },
+  {
+    "id": "url:https://www.anthropic.com/research/prompt-injection-defenses",
+    "title": "Mitigating the risk of prompt injections in browser use",
+    "url": "https://www.anthropic.com/research/prompt-injection-defenses",
+    "arxiv_id": null,
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "cross-domain/agents"
+    ],
+    "detail_topics": [
+      "权限与执行隔离"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-04T04:29:29Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接",
+        "relationship": "原始完整公开URL已恢复"
+      }
+    ],
+    "verification_sources": [
+      "https://www.anthropic.com/research/prompt-injection-defenses"
+    ],
+    "verification_status": "verified_primary_page",
+    "caveats": [
+      "研究/产品博文，不是独立学术论文。",
+      "该文评估的是当时的 Claude 浏览器配置，不可把其中攻击率推广到任意 Agent 或今天的模型。"
+    ],
+    "reading_status": "article_body_and_metadata",
+    "resource_kind": "official_blog",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p544",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/resources/prompt-injection-defenses",
+    "canonical_path": "cross-domain/resources/prompt-injection-defenses/README.md",
+    "canonical_readme": "cross-domain/resources/prompt-injection-defenses/README.md",
+    "source_path": "cross-domain/resources/prompt-injection-defenses/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "resource_subtype": "official_research_blog",
+    "publication_date": "2025-11-24",
+    "date_basis": "页面可见 Nov 24, 2025",
+    "reading_scope": "article_body_and_metadata",
+    "mechanism_summary": "浏览器读取的外部内容可影响动作；文章将模型训练、内容分类器、人类红队结合，并明确提示注入尚未解决。",
+    "evidence_boundary": "研究/产品博文，不是独立学术论文。 该文评估的是当时的 Claude 浏览器配置，不可把其中攻击率推广到任意 Agent 或今天的模型。",
+    "read_version": "2026-10-04所见动态官方页面；未固定不可变版本",
+    "original_chat_urls": [
+      "https://anthropic.com/research/prompt-injection-defenses"
+    ],
+    "source_origin": "historical_assistant_recommendation",
+    "official_identity": "Anthropic 官方域名研究栏目；页面分类为 Product",
+    "independently_reproduced": false,
+    "checked_at": "2026-10-04"
+  },
+  {
+    "id": "url:https://openai.com/index/running-codex-safely",
+    "title": "Running Codex safely at OpenAI",
+    "url": "https://openai.com/index/running-codex-safely/",
+    "arxiv_id": null,
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "cross-domain/agents"
+    ],
+    "detail_topics": [
+      "权限与执行隔离"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-04T04:29:29Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接",
+        "relationship": "原始完整公开URL已恢复"
+      }
+    ],
+    "verification_sources": [
+      "https://openai.com/index/running-codex-safely/"
+    ],
+    "verification_status": "verified_primary_page",
+    "caveats": [
+      "企业部署经验文章，不是论文或通用安全证明。",
+      "内部配置示例不能推定为所有 Codex 环境的实际默认设置；当前产品行为另核对官方文档。"
+    ],
+    "reading_status": "article_body_and_metadata",
+    "resource_kind": "official_blog",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p545",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/resources/running-codex-safely",
+    "canonical_path": "cross-domain/resources/running-codex-safely/README.md",
+    "canonical_readme": "cross-domain/resources/running-codex-safely/README.md",
+    "source_path": "cross-domain/resources/running-codex-safely/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "resource_subtype": "official_engineering_article",
+    "publication_date": "2026-05-08",
+    "date_basis": "文章可见日期 May 8, 2026；并非软件版本日期",
+    "reading_scope": "article_body_and_metadata",
+    "mechanism_summary": "报道 OpenAI 内部部署同时使用执行沙箱、动作审批、出网策略、凭据管理、受管配置及审计遥测。",
+    "evidence_boundary": "企业部署经验文章，不是论文或通用安全证明。 内部配置示例不能推定为所有 Codex 环境的实际默认设置；当前产品行为另核对官方文档。",
+    "read_version": "2026-10-04所见动态官方页面；未固定不可变版本",
+    "original_chat_urls": [
+      "https://openai.com/index/running-codex-safely/"
+    ],
+    "source_origin": "historical_assistant_recommendation",
+    "official_identity": "OpenAI 公司域名，页面作者为 OpenAI",
+    "independently_reproduced": false,
+    "checked_at": "2026-10-04"
+  },
+  {
+    "id": "url:https://martinfowler.com/articles/scaling-architecture-conversationally.html",
+    "title": "Scaling the Practice of Architecture, Conversationally",
+    "url": "https://martinfowler.com/articles/scaling-architecture-conversationally.html",
+    "arxiv_id": null,
+    "doi": null,
+    "year": "2021",
+    "topic_paths": [
+      "cross-domain/agents"
+    ],
+    "detail_topics": [
+      "协作与软件流程"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-04T05:43:30Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接",
+        "relationship": "原始完整公开URL已恢复"
+      }
+    ],
+    "verification_sources": [
+      "https://martinfowler.com/articles/scaling-architecture-conversationally.html"
+    ],
+    "verification_status": "verified_primary_source",
+    "caveats": [
+      "人类组织经验文章，不是多Agent层级效果实验",
+      "文章明确未详细涵盖技术战略与跨职能要求，不能替代这些约束"
+    ],
+    "reading_status": "engineering_article_focused_reading",
+    "resource_kind": "author_article",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p546",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/resources/scaling-architecture-conversationally",
+    "canonical_path": "cross-domain/resources/scaling-architecture-conversationally/README.md",
+    "canonical_readme": "cross-domain/resources/scaling-architecture-conversationally/README.md",
+    "source_path": "cross-domain/resources/scaling-architecture-conversationally/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Andrew Harmel-Law"
+    ],
+    "resource_subtype": "author_article",
+    "publication_date": "2021-12-15",
+    "date_basis": "页面署名日期",
+    "reading_scope": "Advice Process、四项支撑机制、技术策略边界、失败模式重点段落；未做组织实践验证",
+    "mechanism_summary": "决策者须咨询受实质影响者和相关专家，记录意见，但不要求达成共识；ADR、架构咨询论坛、团队共建原则和技术雷达，帮助分散决策保持可追溯和方向一致",
+    "evidence_boundary": "人类组织经验文章，不是多Agent层级效果实验 文章明确未详细涵盖技术战略与跨职能要求，不能替代这些约束",
+    "read_version": "页面署名日期",
+    "original_chat_urls": [
+      "https://martinfowler.com/articles/scaling-architecture-conversationally.html"
+    ],
+    "source_origin": "historical_assistant_recommendation",
+    "historical_fragment": null,
+    "mechanism_reading_lead": "从“谁能决定、必须问谁、如何留下理由”读起，而非复制中央审批层级",
+    "official_identity": "作者署名原文，刊载于 Martin Fowler 网站；不是 Martin Fowler 本人署名",
+    "independently_reproduced": false,
+    "checked_at": "2026-10-04"
+  },
+  {
+    "id": "url:https://spiffe.io/docs/latest/spiffe-about/overview",
+    "title": "SPIFFE Overview",
+    "url": "https://spiffe.io/docs/latest/spiffe-about/overview/",
+    "arxiv_id": null,
+    "doi": null,
+    "year": null,
+    "topic_paths": [
+      "cross-domain/agents"
+    ],
+    "detail_topics": [
+      "权限与执行隔离"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-04T04:29:29Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接",
+        "relationship": "原始完整公开URL已恢复"
+      }
+    ],
+    "verification_sources": [
+      "https://spiffe.io/docs/latest/spiffe-about/overview/"
+    ],
+    "verification_status": "verified_primary_page",
+    "caveats": [
+      "身份认证回答是谁；该概述不提供具体业务动作的授权策略。",
+      "概述页不是标准全文或独立研究论文；生态表会变化。"
+    ],
+    "reading_status": "overview_body_and_identity",
+    "resource_kind": "official_documentation",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p547",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/resources/spiffe-overview",
+    "canonical_path": "cross-domain/resources/spiffe-overview/README.md",
+    "canonical_readme": "cross-domain/resources/spiffe-overview/README.md",
+    "source_path": "cross-domain/resources/spiffe-overview/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "resource_subtype": "official_specification_overview",
+    "publication_date": null,
+    "date_basis": "latest 动态概述页，无固定文章发布日期",
+    "reading_scope": "overview_body_and_identity",
+    "mechanism_summary": "SPIFFE 提供工作负载身份标准与短期 SVID 身份文档，用于服务相互认证。",
+    "evidence_boundary": "身份认证回答是谁；该概述不提供具体业务动作的授权策略。 概述页不是标准全文或独立研究论文；生态表会变化。",
+    "read_version": "2026-10-04所见动态官方页面；未固定不可变版本",
+    "original_chat_urls": [
+      "https://spiffe.io/docs/latest/spiffe-about/overview/"
+    ],
+    "source_origin": "historical_assistant_recommendation",
+    "official_identity": "SPIFFE 项目官方文档域名",
+    "independently_reproduced": false,
+    "checked_at": "2026-10-04"
+  },
+  {
+    "id": "url:https://www.ti.com/lit/an/scaa082a/scaa082a.pdf",
+    "title": "High-Speed Layout Guidelines (SCAA082A)",
+    "url": "https://www.ti.com/lit/an/scaa082a/scaa082a.pdf",
+    "arxiv_id": null,
+    "doi": null,
+    "year": "2006",
+    "topic_paths": [
+      "cross-domain/engineering-exploration"
+    ],
+    "detail_topics": [
+      "高速电子器件设计与应用（探索）"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "official_associated_discovery_from_historical_fragment"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-03T10:57:05Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接",
+        "relationship": "只恢复片段；本条为官方关联发现，不宣称原始URL已恢复"
+      }
+    ],
+    "verification_sources": [
+      "https://www.ti.com/lit/an/scaa082a/scaa082a.pdf"
+    ],
+    "verification_status": "verified_document_id_at_official_pdf_fragment_route_fetch_error",
+    "caveats": [
+      "历史片段对应完整原URL未回收；尝试lit/pdf/scaa082a报Internal Error，不宣称404或已确认跳转",
+      "经验布线规则不能取代目标器件手册、实际叠层与仿真/实测"
+    ],
+    "reading_status": "application_report_selected_sections",
+    "resource_kind": "official_documentation",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p548",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/resources/ti-scaa082a",
+    "canonical_path": "cross-domain/resources/ti-scaa082a/README.md",
+    "canonical_readme": "cross-domain/resources/ti-scaa082a/README.md",
+    "source_path": "cross-domain/resources/ti-scaa082a/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Alexander Weiler",
+      "Alexander Pakosta",
+      "Ankur Verma"
+    ],
+    "resource_subtype": "official_application_report",
+    "publication_date": "2006-11",
+    "date_basis": "SCAA082A — November 2006 — Revised August 2017",
+    "reading_scope": "封面、目录、1.2时钟频谱、1.6回流与环路、2.1设计前置问题；非全篇精读",
+    "mechanism_summary": "快边沿带来高频谐波，信号完整性问题不由基频单独决定；高频回流倾向低阻抗路径；参考平面开槽会绕行并增大环路面积",
+    "evidence_boundary": "历史片段对应完整原URL未回收；尝试lit/pdf/scaa082a报Internal Error，不宣称404或已确认跳转 经验布线规则不能取代目标器件手册、实际叠层与仿真/实测",
+    "read_version": "SCAA082A — November 2006 — Revised August 2017",
+    "original_chat_urls": [],
+    "source_origin": "official_associated_discovery_from_historical_fragment",
+    "historical_fragment": "lit/pdf/scaa082a",
+    "mechanism_reading_lead": "把信号和回流作为完整电流回路审查，再考虑叠层、终端、去耦与布局",
+    "official_identity": "Texas Instruments 官方Application Report，21页",
+    "revised_date": "2017-08",
+    "independently_reproduced": false,
+    "checked_at": "2026-10-04"
+  },
+  {
+    "id": "url:https://www.ti.com/lit/an/spraar7j/spraar7j.pdf",
+    "title": "High-Speed Interface Layout Guidelines (SPRAAR7J, Rev. J)",
+    "url": "https://www.ti.com/lit/an/spraar7j/spraar7j.pdf",
+    "arxiv_id": null,
+    "doi": null,
+    "year": "2018",
+    "topic_paths": [
+      "cross-domain/engineering-exploration"
+    ],
+    "detail_topics": [
+      "高速电子器件设计与应用（探索）"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "official_associated_discovery_from_historical_fragment"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-03T10:57:05Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接",
+        "relationship": "只恢复片段；本条为官方关联发现，不宣称原始URL已恢复"
+      }
+    ],
+    "verification_sources": [
+      "https://www.ti.com/lit/an/spraar7j/spraar7j.pdf"
+    ],
+    "verification_status": "verified_primary_source",
+    "caveats": [
+      "历史完整URL未回收；按片段核得官方对应文档",
+      "面向特定TI SoC/接口环境，附录还含初步数据；数值规则不可作为所有高速设计通则",
+      "已核Rev.J身份，但未证明它是文档的最新修订"
+    ],
+    "reading_status": "application_note_selected_sections",
+    "resource_kind": "official_documentation",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p549",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/resources/ti-spraar7j",
+    "canonical_path": "cross-domain/resources/ti-spraar7j/README.md",
+    "canonical_readme": "cross-domain/resources/ti-spraar7j/README.md",
+    "source_path": "cross-domain/resources/ti-spraar7j/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "resource_subtype": "official_application_note",
+    "authors": [],
+    "publication_date": "2018-11",
+    "date_basis": "SPRAAR7J — November 2018 — Revised February 2023",
+    "reading_scope": "封面、范围、§2.1纤维编织、§2.4参考平面、§3.6–3.10过孔与器件不连续；未逐项应用器件表",
+    "mechanism_summary": "差分对经历不同介质可产生时延偏差，损伤接收端眼图并增加共模噪声；连续参考平面和短过孔残桩有助于控制回流、反射与插损",
+    "evidence_boundary": "历史完整URL未回收；按片段核得官方对应文档 面向特定TI SoC/接口环境，附录还含初步数据；数值规则不可作为所有高速设计通则 已核Rev.J身份，但未证明它是文档的最新修订",
+    "read_version": "SPRAAR7J — November 2018 — Revised February 2023",
+    "original_chat_urls": [],
+    "source_origin": "official_associated_discovery_from_historical_fragment",
+    "historical_fragment": "lit/an/spraar7j/spraar7j.pdf",
+    "mechanism_reading_lead": "由“等长”继续追问电气时延是否相等、参考路径是否连续、垂直过渡是否可控",
+    "official_identity": "Texas Instruments 官方Application Note，21页",
+    "revised_date": "2023-02",
+    "independently_reproduced": false,
+    "checked_at": "2026-10-04"
+  },
+  {
+    "id": "url:https://docs.wasmtime.dev/security.html",
+    "title": "Security",
+    "url": "https://docs.wasmtime.dev/security.html",
+    "arxiv_id": null,
+    "doi": null,
+    "year": null,
+    "topic_paths": [
+      "cross-domain/agents"
+    ],
+    "detail_topics": [
+      "权限与执行隔离"
+    ],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-04T04:29:29Z",
+        "role": "assistant",
+        "evidence_type": "历史检索摘要，非原聊天逐字引文；未取得原会话链接",
+        "relationship": "原始完整公开URL已恢复"
+      }
+    ],
+    "verification_sources": [
+      "https://docs.wasmtime.dev/security.html"
+    ],
+    "verification_status": "verified_primary_page",
+    "caveats": [
+      "保护依赖宿主暴露接口；不是把任意原生程序原样装进去的 VM。",
+      "运行时实现仍可能有缺陷，文档另外列出纵深缓解。",
+      "历史没有恢复独立 WASI 原始链接，不能把此页伪装成那条缺失引用。"
+    ],
+    "reading_status": "webassembly_core_defense_in_depth_filesystem_access",
+    "resource_kind": "official_documentation",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p550",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/resources/wasmtime-security",
+    "canonical_path": "cross-domain/resources/wasmtime-security/README.md",
+    "canonical_readme": "cross-domain/resources/wasmtime-security/README.md",
+    "source_path": "cross-domain/resources/wasmtime-security/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "resource_subtype": "official_runtime_security_documentation",
+    "publication_date": null,
+    "date_basis": "动态运行时文档，无固定发布日期",
+    "reading_scope": "webassembly_core_defense_in_depth_filesystem_access",
+    "mechanism_summary": "Wasm 实例以 imports/exports 与外界交互而非原生任意 syscall；Wasmtime 的 WASI 文件接口使用 capability 模型，仅提供显式授予的文件访问。",
+    "evidence_boundary": "保护依赖宿主暴露接口；不是把任意原生程序原样装进去的 VM。 运行时实现仍可能有缺陷，文档另外列出纵深缓解。 历史没有恢复独立 WASI 原始链接，不能把此页伪装成那条缺失引用。",
+    "read_version": "2026-10-04所见动态官方页面；未固定不可变版本",
+    "original_chat_urls": [
+      "https://docs.wasmtime.dev/security.html"
+    ],
+    "source_origin": "historical_assistant_recommendation",
+    "official_identity": "Wasmtime 官方项目文档；链接 Bytecode Alliance 历史文章",
+    "independently_reproduced": false,
+    "checked_at": "2026-10-04"
+  },
+  {
+    "id": "arxiv:2404.13208",
+    "title": "The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions",
+    "url": "https://arxiv.org/abs/2404.13208",
+    "arxiv_id": "2404.13208",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "cross-domain/agents"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2404.13208"
+    ],
+    "verification_status": "abstract_and_targeted_method_context",
+    "caveats": [],
+    "reading_status": "bibliographic_card_only",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p551",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation",
+      "decision"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2404.13208",
+    "canonical_path": "cross-domain/papers/arxiv-2404.13208/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2404.13208/README.md",
+    "source_path": "cross-domain/papers/arxiv-2404.13208/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Eric Wallace",
+      "Kai Xiao",
+      "Reimar Leike",
+      "Lilian Weng",
+      "Johannes Heidecke",
+      "Alex Beutel"
+    ]
+  },
+  {
+    "id": "arxiv:2505.23643",
+    "title": "Securing AI Agents with Information-Flow Control",
+    "url": "https://arxiv.org/abs/2505.23643",
+    "arxiv_id": "2505.23643",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "cross-domain/agents"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2505.23643"
+    ],
+    "verification_status": "abstract_and_targeted_method_context",
+    "caveats": [],
+    "reading_status": "bibliographic_card_only",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p552",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation",
+      "decision"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2505.23643",
+    "canonical_path": "cross-domain/papers/arxiv-2505.23643/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2505.23643/README.md",
+    "source_path": "cross-domain/papers/arxiv-2505.23643/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Manuel Costa",
+      "Boris Köpf",
+      "Aashish Kolluri",
+      "Andrew Paverd",
+      "Mark Russinovich",
+      "Ahmed Salem",
+      "Shruti Tople",
+      "Lukas Wutschitz",
+      "Santiago Zanella-Béguelin"
+    ]
+  },
+  {
+    "id": "arxiv:2603.03251",
+    "title": "Speculative Speculative Decoding",
+    "url": "https://arxiv.org/abs/2603.03251",
+    "arxiv_id": "2603.03251",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "llm/inference"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2603.03251"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p553",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2603.03251",
+    "canonical_path": "llm/papers/arxiv-2603.03251/README.md",
+    "canonical_readme": "llm/papers/arxiv-2603.03251/README.md",
+    "source_path": "llm/papers/arxiv-2603.03251/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Tanishq Kumar",
+      "Tri Dao",
+      "Avner May"
+    ]
+  },
+  {
+    "id": "arxiv:2608.30320",
+    "title": "On the Design of Qwen3.8-Next Architecture: Evaluation, Efficiency, and Training Stability",
+    "url": "https://arxiv.org/abs/2608.30320",
+    "arxiv_id": "2608.30320",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "llm/architecture",
+      "llm/long-context"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2608.30320"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p554",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2608.30320",
+    "canonical_path": "llm/papers/arxiv-2608.30320/README.md",
+    "canonical_readme": "llm/papers/arxiv-2608.30320/README.md",
+    "source_path": "llm/papers/arxiv-2608.30320/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Qwen Team"
+    ]
+  },
+  {
+    "id": "arxiv:2609.24150",
+    "title": "Acceptance-Aware Draft Model Training for Speculative Decoding",
+    "url": "https://arxiv.org/abs/2609.24150",
+    "arxiv_id": "2609.24150",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "llm/inference"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2609.24150"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p555",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2609.24150",
+    "canonical_path": "llm/papers/arxiv-2609.24150/README.md",
+    "canonical_readme": "llm/papers/arxiv-2609.24150/README.md",
+    "source_path": "llm/papers/arxiv-2609.24150/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Tianhua Xia",
+      "Mugilan Ganesan",
+      "Yifei Feng",
+      "Haiyu Wang",
+      "Maximilian Egger",
+      "Sai Qian Zhang"
+    ]
+  },
+  {
+    "id": "arxiv:2506.07339",
+    "title": "Real-Time Execution of Action Chunking Flow Policies",
+    "url": "https://arxiv.org/abs/2506.07339",
+    "arxiv_id": "2506.07339",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2506.07339"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p556",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "state",
+      "multimodal"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2506.07339",
+    "canonical_path": "robotics-embodied/papers/arxiv-2506.07339/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2506.07339/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2506.07339/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Kevin Black",
+      "Manuel Y. Galliker",
+      "Sergey Levine"
+    ]
+  },
+  {
+    "id": "arxiv:2512.05964",
+    "title": "Training-Time Action Conditioning for Efficient Real-Time Chunking",
+    "url": "https://arxiv.org/abs/2512.05964",
+    "arxiv_id": "2512.05964",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2512.05964"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p557",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "state",
+      "multimodal"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2512.05964",
+    "canonical_path": "robotics-embodied/papers/arxiv-2512.05964/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2512.05964/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2512.05964/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Kevin Black",
+      "Allen Z. Ren",
+      "Michael Equi",
+      "Sergey Levine"
+    ]
+  },
+  {
+    "id": "arxiv:2605.20774",
+    "title": "VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World Evaluation of Vision-Language-Action Models",
+    "url": "https://arxiv.org/abs/2605.20774",
+    "arxiv_id": "2605.20774",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2605.20774"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p558",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "state",
+      "multimodal"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2605.20774",
+    "canonical_path": "robotics-embodied/papers/arxiv-2605.20774/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2605.20774/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2605.20774/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Alex S. Huang",
+      "Jiahui Zhang",
+      "Shiqing Tang",
+      "Yu Xiang"
+    ]
+  },
+  {
+    "id": "arxiv:2606.13355",
+    "title": "Real-Time Execution with Autoregressive Policies",
+    "url": "https://arxiv.org/abs/2606.13355",
+    "arxiv_id": "2606.13355",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2606.13355"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p559",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "state",
+      "multimodal"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2606.13355",
+    "canonical_path": "robotics-embodied/papers/arxiv-2606.13355/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2606.13355/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2606.13355/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Sangkyu Lee",
+      "Seohyeon Park",
+      "Tackgeun You",
+      "Avi Caciularu",
+      "Idan Szpektor",
+      "Hwasup Lim",
+      "Youngjae Yu"
+    ]
+  },
+  {
+    "id": "arxiv:2607.04434",
+    "title": "RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies",
+    "url": "https://arxiv.org/abs/2607.04434",
+    "arxiv_id": "2607.04434",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2607.04434"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p560",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "state",
+      "multimodal"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2607.04434",
+    "canonical_path": "robotics-embodied/papers/arxiv-2607.04434/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2607.04434/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2607.04434/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Tianxing Chen",
+      "Yue Chen",
+      "Zixuan Li",
+      "Junyuan Tang",
+      "Kailun Su",
+      "Haoran Lu",
+      "Weijie Wan",
+      "Baijun Chen",
+      "Songling Liu",
+      "Haowen Yan",
+      "Honghao Su",
+      "Zhiyang Dou",
+      "Kaixuan Wang",
+      "Dandan Zhang",
+      "Yunze Liu",
+      "Yan Qin",
+      "Qiwei Liang",
+      "Qiwei Wu",
+      "Zijian Lin",
+      "Wenwei Lin",
+      "Yuran Wang",
+      "Minghua He",
+      "Tianshu Wu",
+      "Ruihai Wu",
+      "Jingquan Zhou",
+      "Kai-Chong Lei",
+      "Haibao Yu",
+      "Yuanfeng Ji",
+      "Weiyang Jin",
+      "Guanyu Lin",
+      "Xiaofan Li",
+      "Qi Xiong",
+      "Renjing Xu",
+      "Zhongyu Li",
+      "Wenhao Chai",
+      "Enze Xie",
+      "Ziwei Wang",
+      "Yao Mu",
+      "Hao Dong",
+      "Wojciech Matusik",
+      "Mingyu Ding",
+      "Wenbo Ding",
+      "Ping Luo",
+      "Masayoshi Tomizuka"
+    ]
+  },
+  {
+    "id": "arxiv:2609.25562",
+    "title": "IndustrialVLA-Bench: A Traceable Multi-Axis Evaluation of Open Robot Policy Models",
+    "url": "https://arxiv.org/abs/2609.25562",
+    "arxiv_id": "2609.25562",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2609.25562"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p561",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "state",
+      "multimodal"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2609.25562",
+    "canonical_path": "robotics-embodied/papers/arxiv-2609.25562/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2609.25562/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2609.25562/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Yiqi Wang",
+      "Zhifeng Rao",
+      "Jiaqi Zhang",
+      "Xiaoyang Li",
+      "Zhangkai Wu",
+      "Yiqun Duan",
+      "Mingkai Zheng",
+      "Fei Wang",
+      "Shan You",
+      "Taotao Cai"
+    ]
   }
 ]

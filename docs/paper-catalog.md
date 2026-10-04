@@ -1,6 +1,6 @@
 # 全库论文总目录
 
-共 524 个去重资源（481 篇论文、29 篇官方技术报告、3 个代码仓库、11 篇官方博客）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
+共 561 个去重资源（493 篇论文、29 篇官方技术报告、5 个代码仓库、15 篇官方博客、15 份官方技术文档、4 篇作者文章）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
 
 身份核验、助手教学进度和用户阅读状态分开。历史来源保留原角色与证据局限，不将助手推荐写成用户提供，也不将教学完成写成用户已读。
 
@@ -5606,6 +5606,376 @@
 - 身份核验：selected_sections_checked_not_full_read
 - 用户阅读状态：unknown
 - [文献卡](../llm/papers/arxiv-2405.21060/README.md)
+
+<a id="p525"></a>
+## p525 · Defeating Prompt Injections by Design
+
+- 标识：arxiv:2503.18813
+- 原文 / 官方入口：https://arxiv.org/abs/2503.18813v2
+- 主题：cross-domain/agents
+- 身份核验：v2_full_text_targeted_read_threat_model_method_limitations_sections_3_5_7_9_10
+- 用户阅读状态：unknown
+- [独立讲解](../cross-domain/papers/camel/reading.md)
+
+<a id="p526"></a>
+## p526 · MT-046: Op Amp Settling Time
+
+- 标识：url:https://www.analog.com/media/en/training-seminars/tutorials/MT-046.pdf
+- 原文 / 官方入口：https://www.analog.com/media/en/training-seminars/tutorials/MT-046.pdf
+- 主题：cross-domain/engineering-exploration
+- 身份核验：technical_tutorial_text_reading
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/resources/adi-mt-046/README.md)
+
+<a id="p527"></a>
+## p527 · MT-097: Dealing with High-Speed Logic
+
+- 标识：url:https://www.analog.com/media/en/training-seminars/tutorials/MT-097.pdf
+- 原文 / 官方入口：https://www.analog.com/media/en/training-seminars/tutorials/MT-097.pdf
+- 主题：cross-domain/engineering-exploration
+- 身份核验：technical_tutorial_focused_reading
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/resources/adi-mt-097/README.md)
+
+<a id="p528"></a>
+## p528 · Agent approvals & security
+
+- 标识：url:https://learn.chatgpt.com/docs/agent-approvals-security
+- 原文 / 官方入口：https://learn.chatgpt.com/docs/agent-approvals-security
+- 主题：cross-domain/agents
+- 身份核验：body_sandbox_approvals_network_isolation_sections
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/resources/agent-approvals-security/README.md)
+
+<a id="p529"></a>
+## p529 · The Architect Elevator — Visiting the upper floors
+
+- 标识：url:https://martinfowler.com/articles/architect-elevator.html
+- 原文 / 官方入口：https://martinfowler.com/articles/architect-elevator.html
+- 主题：cross-domain/agents
+- 身份核验：engineering_article_focused_reading
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/resources/architect-elevator/README.md)
+
+<a id="p530"></a>
+## p530 · Branch By Abstraction
+
+- 标识：url:https://martinfowler.com/bliki/BranchByAbstraction.html
+- 原文 / 官方入口：https://martinfowler.com/bliki/BranchByAbstraction.html
+- 主题：cross-domain/agents
+- 身份核验：short_engineering_article_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/resources/branch-by-abstraction/README.md)
+
+<a id="p531"></a>
+## p531 · Bubblewrap
+
+- 标识：url:https://github.com/containers/bubblewrap
+- 原文 / 官方入口：https://github.com/containers/bubblewrap
+- 主题：cross-domain/agents
+- 身份核验：repository_readme_security_usage_limitations
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/resources/bubblewrap/README.md)
+
+<a id="p532"></a>
+## p532 · Building multi-agent systems: When and how to use them
+
+- 标识：url:https://claude.com/blog/building-multi-agent-systems-when-and-how-to-use-them
+- 原文 / 官方入口：https://claude.com/blog/building-multi-agent-systems-when-and-how-to-use-them
+- 主题：cross-domain/agents
+- 身份核验：engineering_article_focused_reading
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/resources/building-multi-agent-systems/README.md)
+
+<a id="p533"></a>
+## p533 · How Cedar authorization works
+
+- 标识：url:https://docs.cedarpolicy.com/auth/authorization.html
+- 原文 / 官方入口：https://docs.cedarpolicy.com/auth/authorization.html
+- 主题：cross-domain/agents
+- 身份核验：authorization_algorithm_and_diagnostics_sections
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/resources/cedar-authorization/README.md)
+
+<a id="p534"></a>
+## p534 · Continuous Integration
+
+- 标识：url:https://martinfowler.com/articles/continuousIntegration.html
+- 原文 / 官方入口：https://martinfowler.com/articles/continuousIntegration.html
+- 主题：cross-domain/agents
+- 身份核验：engineering_article_focused_reading
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/resources/continuous-integration/README.md)
+
+<a id="p535"></a>
+## p535 · Docker Engine security
+
+- 标识：url:https://docs.docker.com/engine/security
+- 原文 / 官方入口：https://docs.docker.com/engine/security/
+- 主题：cross-domain/agents
+- 身份核验：namespaces_cgroups_daemon_capabilities_security_sections
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/resources/docker-engine-security/README.md)
+
+<a id="p536"></a>
+## p536 · NanmiCoder/dsh-agent-teams — AgentTeams plugin for DeepSeek Harness
+
+- 标识：url:https://github.com/NanmiCoder/dsh-agent-teams
+- 原文 / 官方入口：https://github.com/NanmiCoder/dsh-agent-teams
+- 主题：cross-domain/agents
+- 身份核验：repository_documentation_read_only
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/resources/dsh-agent-teams/README.md)
+
+<a id="p537"></a>
+## p537 · git-worktree - Manage multiple working trees
+
+- 标识：url:https://git-scm.com/docs/git-worktree
+- 原文 / 官方入口：https://git-scm.com/docs/git-worktree
+- 主题：cross-domain/agents
+- 身份核验：name_description_commands_shared_repository
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/resources/git-worktree/README.md)
+
+<a id="p538"></a>
+## p538 · Security Model
+
+- 标识：url:https://gvisor.dev/docs/architecture_guide/security
+- 原文 / 官方入口：https://gvisor.dev/docs/architecture_guide/security/
+- 主题：cross-domain/agents
+- 身份核验：threat_model_goals_defense_in_depth_faq
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/resources/gvisor-security/README.md)
+
+<a id="p539"></a>
+## p539 · Control Group v2
+
+- 标识：url:https://docs.kernel.org/admin-guide/cgroup-v2.html
+- 原文 / 官方入口：https://docs.kernel.org/admin-guide/cgroup-v2.html
+- 主题：cross-domain/agents
+- 身份核验：authoritative_intro_core_controller_model
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/resources/linux-cgroup-v2/README.md)
+
+<a id="p540"></a>
+## p540 · Landlock: unprivileged access control
+
+- 标识：url:https://docs.kernel.org/userspace-api/landlock.html
+- 原文 / 官方入口：https://docs.kernel.org/userspace-api/landlock.html
+- 主题：cross-domain/agents
+- 身份核验：introduction_rules_layering_inheritance_and_abi_caveats
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/resources/linux-landlock/README.md)
+
+<a id="p541"></a>
+## p541 · namespaces(7) — Linux manual page
+
+- 标识：url:https://man7.org/linux/man-pages/man7/namespaces.7.html
+- 原文 / 官方入口：https://man7.org/linux/man-pages/man7/namespaces.7.html
+- 主题：cross-domain/agents
+- 身份核验：description_namespace_types_and_colophon
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/resources/linux-namespaces/README.md)
+
+<a id="p542"></a>
+## p542 · Seccomp BPF (SECure COMPuting with filters)
+
+- 标识：url:https://docs.kernel.org/userspace-api/seccomp_filter.html
+- 原文 / 官方入口：https://docs.kernel.org/userspace-api/seccomp_filter.html
+- 主题：cross-domain/agents
+- 身份核验：introduction_what_it_isnt_usage
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/resources/linux-seccomp-bpf/README.md)
+
+<a id="p543"></a>
+## p543 · How we built our multi-agent research system
+
+- 标识：url:https://www.anthropic.com/engineering/multi-agent-research-system
+- 原文 / 官方入口：https://www.anthropic.com/engineering/multi-agent-research-system
+- 主题：cross-domain/agents
+- 身份核验：engineering_report_focused_reading
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/resources/multi-agent-research-system/README.md)
+
+<a id="p544"></a>
+## p544 · Mitigating the risk of prompt injections in browser use
+
+- 标识：url:https://www.anthropic.com/research/prompt-injection-defenses
+- 原文 / 官方入口：https://www.anthropic.com/research/prompt-injection-defenses
+- 主题：cross-domain/agents
+- 身份核验：article_body_and_metadata
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/resources/prompt-injection-defenses/README.md)
+
+<a id="p545"></a>
+## p545 · Running Codex safely at OpenAI
+
+- 标识：url:https://openai.com/index/running-codex-safely
+- 原文 / 官方入口：https://openai.com/index/running-codex-safely/
+- 主题：cross-domain/agents
+- 身份核验：article_body_and_metadata
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/resources/running-codex-safely/README.md)
+
+<a id="p546"></a>
+## p546 · Scaling the Practice of Architecture, Conversationally
+
+- 标识：url:https://martinfowler.com/articles/scaling-architecture-conversationally.html
+- 原文 / 官方入口：https://martinfowler.com/articles/scaling-architecture-conversationally.html
+- 主题：cross-domain/agents
+- 身份核验：engineering_article_focused_reading
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/resources/scaling-architecture-conversationally/README.md)
+
+<a id="p547"></a>
+## p547 · SPIFFE Overview
+
+- 标识：url:https://spiffe.io/docs/latest/spiffe-about/overview
+- 原文 / 官方入口：https://spiffe.io/docs/latest/spiffe-about/overview/
+- 主题：cross-domain/agents
+- 身份核验：overview_body_and_identity
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/resources/spiffe-overview/README.md)
+
+<a id="p548"></a>
+## p548 · High-Speed Layout Guidelines (SCAA082A)
+
+- 标识：url:https://www.ti.com/lit/an/scaa082a/scaa082a.pdf
+- 原文 / 官方入口：https://www.ti.com/lit/an/scaa082a/scaa082a.pdf
+- 主题：cross-domain/engineering-exploration
+- 身份核验：application_report_selected_sections
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/resources/ti-scaa082a/README.md)
+
+<a id="p549"></a>
+## p549 · High-Speed Interface Layout Guidelines (SPRAAR7J, Rev. J)
+
+- 标识：url:https://www.ti.com/lit/an/spraar7j/spraar7j.pdf
+- 原文 / 官方入口：https://www.ti.com/lit/an/spraar7j/spraar7j.pdf
+- 主题：cross-domain/engineering-exploration
+- 身份核验：application_note_selected_sections
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/resources/ti-spraar7j/README.md)
+
+<a id="p550"></a>
+## p550 · Security
+
+- 标识：url:https://docs.wasmtime.dev/security.html
+- 原文 / 官方入口：https://docs.wasmtime.dev/security.html
+- 主题：cross-domain/agents
+- 身份核验：webassembly_core_defense_in_depth_filesystem_access
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/resources/wasmtime-security/README.md)
+
+<a id="p551"></a>
+## p551 · The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions
+
+- 标识：arxiv:2404.13208
+- 原文 / 官方入口：https://arxiv.org/abs/2404.13208
+- 主题：cross-domain/agents
+- 身份核验：abstract_and_targeted_method_context
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2404.13208/README.md)
+
+<a id="p552"></a>
+## p552 · Securing AI Agents with Information-Flow Control
+
+- 标识：arxiv:2505.23643
+- 原文 / 官方入口：https://arxiv.org/abs/2505.23643
+- 主题：cross-domain/agents
+- 身份核验：abstract_and_targeted_method_context
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2505.23643/README.md)
+
+<a id="p553"></a>
+## p553 · Speculative Speculative Decoding
+
+- 标识：arxiv:2603.03251
+- 原文 / 官方入口：https://arxiv.org/abs/2603.03251
+- 主题：llm/inference
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2603.03251/README.md)
+
+<a id="p554"></a>
+## p554 · On the Design of Qwen3.8-Next Architecture: Evaluation, Efficiency, and Training Stability
+
+- 标识：arxiv:2608.30320
+- 原文 / 官方入口：https://arxiv.org/abs/2608.30320
+- 主题：llm/architecture, llm/long-context
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2608.30320/README.md)
+
+<a id="p555"></a>
+## p555 · Acceptance-Aware Draft Model Training for Speculative Decoding
+
+- 标识：arxiv:2609.24150
+- 原文 / 官方入口：https://arxiv.org/abs/2609.24150
+- 主题：llm/inference
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2609.24150/README.md)
+
+<a id="p556"></a>
+## p556 · Real-Time Execution of Action Chunking Flow Policies
+
+- 标识：arxiv:2506.07339
+- 原文 / 官方入口：https://arxiv.org/abs/2506.07339
+- 主题：robotics/embodied-policies
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2506.07339/README.md)
+
+<a id="p557"></a>
+## p557 · Training-Time Action Conditioning for Efficient Real-Time Chunking
+
+- 标识：arxiv:2512.05964
+- 原文 / 官方入口：https://arxiv.org/abs/2512.05964
+- 主题：robotics/embodied-policies
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2512.05964/README.md)
+
+<a id="p558"></a>
+## p558 · VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World Evaluation of Vision-Language-Action Models
+
+- 标识：arxiv:2605.20774
+- 原文 / 官方入口：https://arxiv.org/abs/2605.20774
+- 主题：robotics/embodied-policies
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2605.20774/README.md)
+
+<a id="p559"></a>
+## p559 · Real-Time Execution with Autoregressive Policies
+
+- 标识：arxiv:2606.13355
+- 原文 / 官方入口：https://arxiv.org/abs/2606.13355
+- 主题：robotics/embodied-policies
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2606.13355/README.md)
+
+<a id="p560"></a>
+## p560 · RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies
+
+- 标识：arxiv:2607.04434
+- 原文 / 官方入口：https://arxiv.org/abs/2607.04434
+- 主题：robotics/embodied-policies
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2607.04434/README.md)
+
+<a id="p561"></a>
+## p561 · IndustrialVLA-Bench: A Traceable Multi-Axis Evaluation of Open Robot Policy Models
+
+- 标识：arxiv:2609.25562
+- 原文 / 官方入口：https://arxiv.org/abs/2609.25562
+- 主题：robotics/embodied-policies
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2609.25562/README.md)
 
 ## 2026年10月3日既有条目更新
 

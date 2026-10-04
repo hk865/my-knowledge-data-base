@@ -2,7 +2,7 @@
 
 按基础概念、研究领域、细分问题和单篇论文逐层阅读。跨方向的同一论文只维护一个规范目录。
 
-> 收录 524 项资源，其中 41 篇有讲解。
+> 收录 561 项资源，其中 42 篇有讲解。
 
 ## 四层入口
 
@@ -55,4 +55,8 @@
 
 ## 最新短报与机制导读
 
-[2026年10月3日研究短报](daily/2026-10-03.md) · [大小模型草拟与验证机制导读](llm/fields/inference/draft-verification-guide.md)
+[10月4日 phase3 内容扩展](daily/2026-10-04-phase3-expansion.md)：新增材料、阅读入口与本轮改动。
+
+[2026年10月4日研究短报](daily/2026-10-04.md) · [Agent 权限、隔离与协作](cross-domain/fields/agents/permissions-isolation-collaboration.md) · [工程资源](cross-domain/resources/README.md)
+
+[10月3日短报](daily/2026-10-03.md) · [大小模型草拟与验证](llm/fields/inference/draft-verification-guide.md)

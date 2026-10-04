@@ -46,11 +46,13 @@ def main():
     raw = rd('papers.json')
     papers = json.loads(raw)
     changes = []
+    promoted = set()
     for p in papers:
         folder = p.get('canonical_folder')
         if not folder or not os.path.exists(path(folder, 'source.json')):
             continue
         src = json.loads(rd(folder + '/source.json'))
+        was_reading = p.get('content_kind') == 'reading'
         for k in FIELDS:
             if k not in src or src[k] in (None, '', []):
                 continue
@@ -58,6 +60,13 @@ def main():
             if p.get(k) != v:
                 changes.append((p['catalog_anchor'], k, p.get(k), v))
                 p[k] = v
+        # A newly completed reading must become the canonical catalog target.
+        if not was_reading and p.get('content_kind') == 'reading' and os.path.isfile(path(folder, 'reading.md')):
+            promoted.add(p['catalog_anchor'])
+            target = folder + '/reading.md'
+            if p.get('canonical_path') != target:
+                changes.append((p['catalog_anchor'], 'canonical_path', p.get('canonical_path'), target))
+                p['canonical_path'] = target
     for anchor, k, old, new in changes:
         print(f'{anchor} {k}: {str(old)[:50]} -> {str(new)[:50]}')
     print(f'{len(changes)} field changes')
@@ -70,7 +79,7 @@ def main():
     craw = rd('papers.csv')
     header = next(csv.reader(io.StringIO(craw)))
     buf = io.StringIO()
-    w = csv.writer(buf, lineterminator='\r\n')
+    w = csv.writer(buf, lineterminator='\r\n' if '\r\n' in craw else '\n')
     w.writerow(header)
     for p in papers:
         w.writerow(['' if p.get(c) is None else json.dumps(p[c], ensure_ascii=False)
@@ -83,6 +92,10 @@ def main():
         cat = re.sub(rf'(## {a} · )[^\r\n]*', lambda m: m.group(1) + p['title'], cat, count=1)
         cat = re.sub(rf'(<a id="{a}"></a>(?:(?!<a id=).)*?- 主题：)[^\r\n]*',
                      lambda m: m.group(1) + ', '.join(p['topic_paths']), cat, count=1, flags=re.S)
+        if a in promoted:
+            target = p.get('canonical_path') or ''
+            cat = re.sub(rf'(<a id="{a}"></a>(?:(?!<a id=).)*?)- \[(?:文献卡|独立讲解)\]\([^\r\n]*\)',
+                         lambda m: m.group(1) + f'- [独立讲解](../{target})', cat, count=1, flags=re.S)
     wr('docs/paper-catalog.md', cat)
 
     # Paper lists: a card that gained a reading should no longer say it has none.

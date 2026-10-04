@@ -99,6 +99,22 @@ def main():
             j += 1
         lines[j:j] = ["### 训练科学（0）", "", SUBTOPICS_NEW["训练科学"], "", ""]
 
+    # Materialize newly registered taxonomy topics inside their existing domain.
+    for dom in tax["domains"]:
+        for topic in dom["topics"]:
+            if any(re.match(r"^### " + re.escape(topic["label"]) + r"（\d+）$", ln) for ln in lines):
+                continue
+            siblings = {x["label"] for x in dom["topics"]}
+            positions = [i for i, ln in enumerate(lines)
+                         if any(ln.startswith("### " + label + "（") for label in siblings)]
+            if not positions:
+                continue
+            j = max(positions) + 1
+            while j < len(lines) and not lines[j].startswith("## "):
+                j += 1
+            lines[j:j] = ["### " + topic["label"] + "（0）", "",
+                          "细分：" + "；".join(topic.get("subtopics", [])), "", ""]
+
     # regenerate every topic section's count + list
     out = []
     i = 0
