@@ -14,7 +14,7 @@
   "teaching_status": "technical_reading_created",
   "content_kind": "reading",
   "reading_path": "reading.md",
-  "reading_boundary": "独立教学精读，固定 arXiv v2 机制和实验口径；主文与相关附录针对性核查，未对全部附录逐页精读、未审计完整代码、未复现。SaTML 2026 发表状态已由会议信息及作者页面确认，尚未取得与出版记录逐页对照的最终全文，不主张其与 v2 数字完全一致。",
+  "reading_boundary": "独立教学精读，固定 arXiv v2 机制和实验口径；主文与相关附录针对性核查，未对全部附录逐页精读、未审计完整代码、未复现。SaTML 2026 发表状态已由会议信息及作者页面确认，尚未取得与出版记录逐页对照的最终全文，不主张其与 v2 数字完全一致。 §6.5/Figure 13 与附录 F Table 13 的受攻击 token 中位增幅不一致，讲解按正文图示引用并披露该差异。",
   "user_reading_status": "not_asserted",
   "independently_reproduced": false,
   "license": {
@@ -44,7 +44,7 @@
       "https://github.com/google-research/camel-prompt-injection"
     ],
     "mechanism_summary": "CaMeL 分离只看可信请求的 P-LLM 与处理不可信数据、无工具权的 Q-LLM；受限 Python 解释器传播数据来源/读者标签，并在工具调用前执行策略。",
-    "evidence_boundary": "独立教学精读，固定 arXiv v2 机制和实验口径；主文与相关附录针对性核查，未对全部附录逐页精读、未审计完整代码、未复现。SaTML 2026 发表状态已由会议信息及作者页面确认，尚未取得与出版记录逐页对照的最终全文，不主张其与 v2 数字完全一致。",
+    "evidence_boundary": "独立教学精读，固定 arXiv v2 机制和实验口径；主文与相关附录针对性核查，未对全部附录逐页精读、未审计完整代码、未复现。SaTML 2026 发表状态已由会议信息及作者页面确认，尚未取得与出版记录逐页对照的最终全文，不主张其与 v2 数字完全一致。 §6.5/Figure 13 与附录 F Table 13 的受攻击 token 中位增幅不一致，讲解按正文图示引用并披露该差异。",
     "read_version": "arXiv:2503.18813v2",
     "source_origin": "historical_assistant_recommendation",
     "original_chat_urls": [

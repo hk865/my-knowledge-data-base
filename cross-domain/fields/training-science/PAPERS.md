@@ -48,6 +48,10 @@
 - [LoRA: Low-Rank Adaptation of Large Language Models](https://arxiv.org/abs/2106.09685) · 2021 · 尚无文献卡
 - [Overcoming catastrophic forgetting in neural networks](https://arxiv.org/abs/1612.00796) · 2017 · 尚无文献卡
 
+## 优化器规模化的训练报告
+
+- [Kimi K2: Open Agentic Intelligence](../../../llm/papers/arxiv-2507.20534/README.md) · 2025 · 文献卡 · §2.1 的 MuonClip 与稳定性对照
+
 ## 入门页正文引用、尚未进入综合表的论文
 
 这些论文只核对了摘要页或指定段落，仓库里也没有单篇目录。“不同模态的差异”一节的两篇主要证据（Henighan 等、Zhai 等）已有文献卡，见上方单篇目录。

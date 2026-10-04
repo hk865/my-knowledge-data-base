@@ -25,7 +25,9 @@
   "fulltext_local_status": "official_link_only_pending_license_verification",
   "fulltext_local_path": null,
   "legacy_paths": [],
-  "evidence_paths": [],
+  "evidence_paths": [
+    "evidence.json"
+  ],
   "topic_paths": [
     "cross-domain/engineering-exploration"
   ],

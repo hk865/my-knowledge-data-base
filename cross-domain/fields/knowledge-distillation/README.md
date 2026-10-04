@@ -161,6 +161,8 @@ Google 一路的做法：[Gemma 2](../../../llm/papers/arxiv-2408.00118/README.m
 
 `[判断]` 从这一阶段回看，2025 年初"纯 RL 造推理模型"的叙事已经被修正：大规模 RL 主要用来造出各领域的专家和数据，最终发布的模型更多由蒸馏得到。支撑与反例见批注；这一判断在[后训练总览](../../../llm/fields/posttraining/README.md)第 6 节有同一组证据。
 
+**两种新的诊断问题。** [Rethinking OPD II](../../../llm/papers/arxiv-2609.04172/README.md)用极少提示反复采样，考察教师匹配是否受学生吸收速度限制；它仍使用大量 rollout 和逐 token 监督。[Solving Without Stopping](../../../llm/papers/arxiv-2609.37326/README.md)把数学解题、答案提取和停止行为分开，说明同一家族小学生的解题改善可以与停止退化并存。前者研究提示与学习瓶颈，后者研究评测分数背后的行为分解。
+
 ## 不同模态的差异
 
 结论：语言模型蒸馏的是 token 分布，视觉蒸馏的是特征图，机器人蒸馏的是动作策略；三边的"教师"来源不同，坑却很像。
@@ -227,6 +229,8 @@ Google 一路的做法：[Gemma 2](../../../llm/papers/arxiv-2408.00118/README.m
 推理模型的评测口径（温度、采样次数、pass@1 怎样平均）见[后训练总览](../../../llm/fields/posttraining/README.md)"用什么衡量进展"；视觉编码器的评测协议（k 近邻、线性探针、接入 VLM）见[视觉表征方向](../../../multimodal/fields/visual-representation/README.md)。
 
 ## 当前开放问题
+
+- **蒸馏缺的是更多提示，还是更好地吸收教师并交付答案？** [OPD II](../../../llm/papers/arxiv-2609.04172/README.md)比较少量提示与大量在策略轨迹；[Solving Without Stopping](../../../llm/papers/arxiv-2609.37326/README.md)分别测解题与停止。两种诊断应分开，数学小模型结果能否推广到长程 Agent 仍需检验。
 
 - **逐 token 还是全词表？** V4 认为逐 token 估计方差大，K3 认为更细的 top-k 没有优势，两家都没有给出同条件对照。入口：[DeepSeek-V4](../../../llm/papers/arxiv-2606.19348/README.md) §5.1.2、[Kimi K3](../../../llm/papers/arxiv-2607.24653/README.md) §4.1.3、[Li 等](../../../llm/papers/arxiv-2604.13016/README.md)。
 - **on-policy 蒸馏能否扩到长程 agent 任务？** 学生前缀越长，教师的逐 token 信号越不可靠；K3 的 agent 环境要求成百上千次工具调用、数百万累计上下文 token（§1）。入口：[Li 等](../../../llm/papers/arxiv-2604.13016/README.md)第 6 节、[Kimi K3](../../../llm/papers/arxiv-2607.24653/README.md)。

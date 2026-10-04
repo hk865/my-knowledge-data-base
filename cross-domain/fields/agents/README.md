@@ -1,6 +1,6 @@
 # Agent：语言模型智能体
 
-> 状态：领域入门页 · v1 · 依据 [synthesis.csv](synthesis.csv)（15 篇）
+> 状态：领域入门页 · v1 · 依据 [synthesis.csv](synthesis.csv)（18 篇）
 >
 > 速览：
 > 1. Agent（智能体）指模型在一个会对动作作出反应的环境里连续行动，直到完成目标。编码 agent 的环境是代码仓库加容器，动作是读文件、改文件、跑命令，成功由测试判定。主线五步：提示出来的循环（2022–2023）→ 按执行结果判分的真实环境 benchmark（2023–2024）→ 为模型设计接口与脚手架（2024）→ 把 agent 行为训进权重（2024 末–2025）→ 环境本身成为训练目标，环境的漏洞变成模型的行为（2025–2026）。
@@ -164,9 +164,15 @@
 - **沙箱**：容器或虚拟机把 agent 的动作与宿主隔离；训练时它还要把 agent 与验证器隔离（K3）。
 - **pass@k 与 pass^k**：前者是 k 次中至少成功一次，衡量能力上限；后者是 k 次全部成功，衡量可靠性。
 
+## 权限、隔离与协作
+
+完成任务还要约束哪些内容可以指挥动作、哪些数据可以送给谁、执行进程能接触什么资源。[权限、沙箱与协作讲义](permissions-isolation-collaboration.md)用一次代码修改，把授权规则、操作系统隔离、信息流控制（追踪数据来源和允许去向）以及多 Agent 集成串起来。
+
+[Instruction Hierarchy](../../papers/arxiv-2404.13208/README.md)在模型训练阶段教它区分指令优先级；[CaMeL](../../papers/camel/reading.md)在执行阶段追踪值的依赖并检查工具参数；[FIDES](../../papers/arxiv-2505.23643/README.md)研究在信息流约束下向规划器选择性展示外部数据。三者分别控制候选行为、可执行的数据流和安全规划的表达范围；底层沙箱继续约束实际进程。
+
 ## 主要路线与团队偏好
 
-结论：学术团队押注公开的环境、接口与 benchmark；公司团队押注把 agent 行为训进模型，各家公开的重点不同。
+结论：环境与接口、行为训练、部署期权限控制是互补路线。下面的团队表比较环境和训练的持续选择；权限控制另按具体论文设计比较。
 
 | 团队 | `[判断]` 押注 | 代表 | 代价与做不好的地方 |
 |---|---|---|---|
@@ -178,7 +184,9 @@
 | Kimi | 工具与 agent 的大规模合成 + 模拟器 + 真实沙箱；rubric 评委；环境隔离 | K2、K3 | token 过多、工具调用被截断 |
 | Qwen | 环境并行规模（2 万个环境） | Qwen3、Qwen3-Coder | 博客未公开奖励与失败案例 |
 
-`[判断]` 各家公开写明的训练目标不同，这是本页唯一能直接比较的东西：
+**权限控制路线**：OpenAI 的 [Instruction Hierarchy](../../papers/arxiv-2404.13208/README.md)改训练数据，代价包括部分良性边界任务的过度拒绝；Google、Google DeepMind 与 ETH Zurich 的 [CaMeL](../../papers/camel/reading.md)改规划与执行连接，代价是数据依赖任务和策略维护；Microsoft 的 [FIDES](../../papers/arxiv-2505.23643/README.md)以保密性、完整性标签和受约束查看扩展规划能力，代价是保守标签和额外模型调用。这三项是各篇的设计选择，单篇不足以确立团队长期偏好。
+
+`[判断]` 在编码行为训练路线，各家公开写明的训练目标不同：
 - OpenAI 把风格与指令写进了 RL 目标："贴近人的风格与 PR 偏好、严格遵守指令、反复跑测试直到通过"（codex-1），"强调像人的编码风格以提升可用性"（GPT-5-Codex 附录），并为"做不到时体面地失败"（GPT-5）和"不回退用户改动"（GPT-5.1-Codex-Max）单独训练。
 - Anthropic 的系统卡把"测试特例化""越权、破坏性动作"作为单列评测逐代报告，并写明改进主要来自环境与奖励结构、监控，以及接种提示。
 - DeepSeek 与 Kimi 的报告写的是环境数量、可验证性与轨迹筛选，没有单独写风格或与用户交互方面的奖励。
@@ -205,6 +213,8 @@
 
 ## 当前开放问题
 
+- **安全边界怎样兼顾任务表达能力？** [Instruction Hierarchy](../../papers/arxiv-2404.13208/README.md)检验对未见攻击的泛化与过度拒绝；[CaMeL](../../papers/camel/reading.md)暴露固定规划面对外部数据依赖的瓶颈；[FIDES](../../papers/arxiv-2505.23643/README.md)用受约束查看扩大表达范围。需要联合衡量攻击后果、正常任务完成、策略触发与调用成本。
+
 - **怎样构造不能被钻空子的环境？** 对抗式审查任务（[Terminal-Bench](../../papers/arxiv-2601.11868/README.md)）、隔离验证器（[Kimi K3](../../../llm/papers/arxiv-2607.24653/README.md)）、从构造上阻止作弊（[MacDiarmid 等](../../papers/arxiv-2511.18397/README.md)）。
 - **测试看不到的性质怎样进入奖励？** 风格与 PR 偏好（[codex-1](https://openai.com/index/introducing-codex/)）、保护用户改动（[GPT-5.1-Codex-Max 系统卡](https://openai.com/index/gpt-5-1-codex-max-system-card/)）、越权评测（[Claude 4 系统卡](../../papers/anthropic-claude-4-system-card/README.md)）。代码可读性与架构可扩展性目前没有公开的自动判定。
 - **监控能否进入训练而不被优化掉？** [Baker 等](../../papers/arxiv-2503.11926/README.md)给出的答案是"强压力下不能"。
@@ -219,9 +229,13 @@
 4. [SWE-Gym](../../papers/arxiv-2412.21139/README.md) 与 [SWE-RL](../../papers/arxiv-2502.18449/README.md) 对照，再读 [Kimi K2](../../../llm/papers/arxiv-2507.20534/README.md) §3 与 [DeepSeek-V3.2](../../../llm/papers/arxiv-2512.02556/README.md) §3.2：环境与奖励怎样构造。
 5. [Baker 等](../../papers/arxiv-2503.11926/README.md) → [Claude 4 系统卡](../../papers/anthropic-claude-4-system-card/README.md) → [MacDiarmid 等](../../papers/arxiv-2511.18397/README.md)：环境的漏洞怎样变成模型的行为。
 
+6. [权限、沙箱与协作讲义](permissions-isolation-collaboration.md) → [Instruction Hierarchy](../../papers/arxiv-2404.13208/README.md) → [CaMeL](../../papers/camel/reading.md) → [FIDES](../../papers/arxiv-2505.23643/README.md)：从执行边界读到模型训练与信息流控制的互补。
+
 ## 批注
 
 **易误读**
+
+- Instruction Hierarchy 的实证基于 GPT-3.5 Turbo 微调，不构成工具执行的确定性保证；CaMeL 与 FIDES 的保证均依赖其威胁模型、可信标签、策略和执行器。FIDES 的普通规划器与 CaMeL 的原生工具调用对照并非同一实验，不能直接相减两篇的完成率。
 
 - SWE-bench 的分数要连同框架和尝试次数一起读：K2 的 65.8% 是"agent 单次尝试"，71.6% 是多次尝试加内部验证器选择；SWE-RL 的 41.0% 是非交互流水线采 500 个补丁再重排；DeepSeek-V3.2 的 Terminal Bench 2.0 46.4% 用的是 Claude Code 框架，换 Terminus 且用非思考模式为 39.3%。
 - DeepSeek-V3.2 的"1,800 多个环境"只指合成的通用 agent 环境（1,827 个），代码 agent 环境另计"数万个"；8.5 万是四类任务的总数（§3.2.3 Table 1）。
@@ -253,7 +267,3 @@
 - Claude Opus 4.6 GUI 越权评测只有图，没有正文数字；Opus 4.7 的作弊图未给数字；Opus 5.5 之外的 2026 年系统卡（Opus 4.8、Opus 5、Sonnet 5 等）未打开。
 - Anthropic 2025 年 4 月 Claude Code 最佳实践原文中关于测试的建议，原页面已迁移改写，未核实。
 - SWE-agent 各失败类别的完整比例只在图中；Toolformer 是否有官方代码未核实；SWE-RL 与 DeepSeek-V3.2 是否发布权重未在本轮核实。
-
-## 权限、隔离与协作
-
-[从一次工具调用理解边界](permissions-isolation-collaboration.md)：把任务分解、工具授权、执行隔离和结果核验分别放回正确的位置；再用[CaMeL](../../papers/camel/README.md)考察不可信数据怎样影响工具调用。

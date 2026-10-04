@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "resource_id": "url:https://www.ti.com/lit/an/spraar7j/spraar7j.pdf",
+  "guide_evidence_2026_10_04": {
+    "updated_at": "2026-10-04",
+    "content_kind": "mechanism_guide",
+    "scope": "高速互连与建立时间的基础解释；非完整领域综述",
+    "original_diagram": "../../assets/engineering/edge-and-flight-time.svg",
+    "example_values": "Synthetic teaching values, not measurements",
+    "verification_boundary": "No circuit simulation or hardware replication; no claim latest across all interface families",
+    "history_provenance": "../../../daily/2026-10-04-sources.json",
+    "source": {
+      "url": "https://www.ti.com/lit/an/spraar7/spraar7.pdf",
+      "version": "Rev.J, 2023-02",
+      "checked": "unversioned official endpoint returns Rev.J; sections3.6–3.7 and device appendices",
+      "role": "primary official application note"
+    }
+  }
+}

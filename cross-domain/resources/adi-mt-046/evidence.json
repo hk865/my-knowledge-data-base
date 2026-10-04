@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "resource_id": "url:https://www.analog.com/media/en/training-seminars/tutorials/MT-046.pdf",
+  "guide_evidence_2026_10_04": {
+    "updated_at": "2026-10-04",
+    "content_kind": "mechanism_guide",
+    "scope": "高速互连与建立时间的基础解释；非完整领域综述",
+    "original_diagram": "../../assets/engineering/edge-and-flight-time.svg",
+    "example_values": "Synthetic teaching values, not measurements",
+    "verification_boundary": "No circuit simulation or hardware replication; no claim latest across all interface families",
+    "history_provenance": "../../../daily/2026-10-04-sources.json",
+    "source": {
+      "url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-046.pdf",
+      "version": "Rev.0, 2008-10",
+      "checked": "pages1–2 settling definition and measurement",
+      "role": "primary official tutorial"
+    }
+  }
+}

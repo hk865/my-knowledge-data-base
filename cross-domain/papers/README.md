@@ -21,7 +21,7 @@
 
 ## 2026年10月3日文献增量
 
-- [Finding bugs across the Python ecosystem with Claude and property-based testing](agentic-property-based-testing/README.md) · 2026 · 文献卡，非独立全文精读
+- [Finding bugs across the Python ecosystem with Claude and property-based testing](agentic-property-based-testing/README.md) · 2026 · 资料卡，非独立全文精读
 - [Metamorphic Testing of Multi-Agent LLM Systems: A Trace-Based Behavioral Oracle Framework](morphagent/README.md) · 2026 · 文献卡，非独立全文精读
 - [In-Datacenter Performance Analysis of a Tensor Processing Unit](arxiv-1704.04760/README.md) · 2017 · 文献卡，暂无独立精读
 - [The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks](arxiv-1803.03635/README.md) · 2019 · 文献卡，暂无独立精读
@@ -71,8 +71,8 @@
 - [ImpossibleBench: Measuring LLMs' Propensity of Exploiting Test Cases](arxiv-2510.20270/README.md) · 2025 · 文献卡，暂无独立精读
 - [Natural Emergent Misalignment from Reward Hacking in Production RL](arxiv-2511.18397/README.md) · 2025 · 文献卡，暂无独立精读
 - [Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces](arxiv-2601.11868/README.md) · 2026 · 文献卡，暂无独立精读
-- [Introducing SWE-bench Verified](openai-swe-bench-verified/README.md) · 2024 · 文献卡，暂无独立精读
-- [Why SWE-bench Verified no longer measures frontier coding capabilities](openai-swe-bench-verified-retired/README.md) · 2026 · 文献卡，暂无独立精读
+- [Introducing SWE-bench Verified](openai-swe-bench-verified/README.md) · 2024 · 资料卡，暂无独立精读
+- [Why SWE-bench Verified no longer measures frontier coding capabilities](openai-swe-bench-verified-retired/README.md) · 2026 · 资料卡，暂无独立精读
 - [Measuring AI Ability to Complete Long Software Tasks](arxiv-2503.14499/README.md) · 2025 · 文献卡，暂无独立精读
 - [OpenAI GPT-5.6 System Card](openai-gpt-5-6-system-card/README.md) · 2026 · 文献卡，暂无独立精读
 - [OpenAI GPT-6 Astra System Card](openai-gpt-6-astra-system-card/README.md) · 2026 · 文献卡，暂无独立精读
@@ -82,6 +82,9 @@
 - [Scaling Laws for Neural Language Models](arxiv-2001.08361/README.md) · 2020 · 文献卡，暂无独立精读
 - [Scaling Laws for Autoregressive Generative Modeling](arxiv-2010.14701/README.md) · 2020 · 文献卡，暂无独立精读
 - [Scaling Vision Transformers](arxiv-2106.04560/README.md) · 2021 · 文献卡，暂无独立精读
-- [Defeating Prompt Injections by Design](camel/README.md) · 年份见原文 · 文献卡，暂无独立精读
+
+## 2026年10月4日文献与资料增量
+
+- [Defeating Prompt Injections by Design](camel/README.md) · 2025 · 技术精读
 - [The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions](arxiv-2404.13208/README.md) · 2024 · 文献卡，暂无独立精读
 - [Securing AI Agents with Information-Flow Control](arxiv-2505.23643/README.md) · 2025 · 文献卡，暂无独立精读

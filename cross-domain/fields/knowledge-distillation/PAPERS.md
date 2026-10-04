@@ -49,6 +49,11 @@
 
 后训练里的 on-policy 蒸馏与多教师合并的整体脉络见[后训练总览](../../../llm/fields/posttraining/README.md)。
 
+## 在策略蒸馏的学习与停止诊断
+
+- [Rethinking On-Policy Distillation of Large Language Models II: One Training Example](../../../llm/papers/arxiv-2609.04172/README.md) · 2026 · 文献卡 · 少提示重复采样与教师匹配瓶颈
+- [Solving Without Stopping: On-Policy Distillation at Small Scale](../../../llm/papers/arxiv-2609.37326/README.md) · 2026 · 文献卡 · 区分解题、答案提取与停止
+
 ## 正文引用、尚无文献卡的论文
 
 这些论文只核对了入门页所引的段落，仓库里还没有单篇目录。前两篇在 [synthesis.csv](synthesis.csv) 中。

@@ -65,7 +65,7 @@
     },
     {
       "id": "overhead",
-      "claim": "受攻击、Claude3.5Sonnet，中位输入2.82倍/输出2.73倍；用GPT4o tokenizer且排除工具文档",
+      "claim": "受攻击、Claude3.5Sonnet，中位输入2.82倍/输出2.73倍；用GPT4o tokenizer且排除工具文档；Appendix F Table 13 同称受攻击却给输入2.02/输出2.64，中位口径与正文未对齐，原因未说明",
       "location": "§6.5 Figure 13; Appendix F"
     },
     {
@@ -106,7 +106,8 @@
     "原型完整源代码及策略逐行审计",
     "AgentDojo 独立复现与真实成本/延迟",
     "全部附录逐页阅读",
-    "代码许可审计"
+    "代码许可审计",
+    "§6.5 / Figure 13 与 Appendix F Table 13 的受攻击 token 增幅不一致，差异原因未核实"
   ],
   "license": {
     "status": "verified_primary_license_link",

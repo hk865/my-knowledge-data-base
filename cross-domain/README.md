@@ -28,4 +28,4 @@
 
 ## Agent 工程补充
 
-从[一次工具调用的权限与隔离边界](fields/agents/permissions-isolation-collaboration.md)读起，再对照[工程资源](resources/README.md)中的授权策略、系统隔离与集成实践。[高速电子工程探索](fields/engineering-exploration/README.md)提供边沿、建立时间与回流路径的基础材料。
+从[一次工具调用的权限与隔离边界](fields/agents/permissions-isolation-collaboration.md)读起，再对照[工程资源](resources/README.md)中的授权策略、系统隔离与集成实践。[高速电子临时探索](../perspectives/notes/engineering-exploration.md)：资料整理，不推定硬件项目；内容涉及边沿、建立时间与回流路径。

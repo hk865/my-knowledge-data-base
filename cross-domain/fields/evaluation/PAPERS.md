@@ -83,3 +83,9 @@
 - [System Card: Claude Opus 5.5](../../papers/anthropic-claude-opus-5-5-system-card/README.md) · 2026 · 文献卡 · Anthropic 2026-09 系统卡：奖励黑客与判分器意识
 - [Gemini 3.8 Flash Model Card](../../papers/google-gemini-3-8-flash-model-card/README.md) · 2026 · 文献卡 · Google 2026-09 模型卡
 - [Seed2.0 Model Card: Towards Intelligence Frontier for Real-World Complexity](../../papers/arxiv-2607.00248/README.md) · 2026 · 文献卡 · 字节跳动 Seed2.0 模型卡（2026-06）
+
+## 机器人操作的能力覆盖与可复现评测
+
+- [RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies](../../../robotics-embodied/papers/arxiv-2607.04434/README.md) · 2026 · 文献卡 · 仿真能力覆盖与标准化真机接口
+- [VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World Evaluation of Vision-Language-Action Models](../../../robotics-embodied/papers/arxiv-2605.20774/README.md) · 2026 · 文献卡 · 实验室复搭与场景一致性
+- [IndustrialVLA-Bench: A Traceable Multi-Axis Evaluation of Open Robot Policy Models](../../../robotics-embodied/papers/arxiv-2609.25562/README.md) · 2026 · 文献卡 · 多轴结果与复现证据等级

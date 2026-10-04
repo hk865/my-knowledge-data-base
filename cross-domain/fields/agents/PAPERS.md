@@ -70,7 +70,7 @@
 
 ## 权限隔离与软件协作
 
-- [Defeating Prompt Injections by Design](../../papers/camel/README.md) · 2025
+- [Defeating Prompt Injections by Design](../../papers/camel/README.md) · 2025 · 技术精读
 - [Agent approvals & security](../../resources/agent-approvals-security/README.md) · 动态资料
 - [The Architect Elevator — Visiting the upper floors](../../resources/architect-elevator/README.md) · 2017
 - [Branch By Abstraction](../../resources/branch-by-abstraction/README.md) · 2014
