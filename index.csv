@@ -90,3 +90,13 @@ Zero WAM 如何把人类示范视频变成机器人动作,robotics-embodied/pape
 跨模块关系页索引,foundations/relations/README.md
 递推状态谱系,foundations/relations/recurrent-state.md
 注意力与 FFN 的分工谱系,foundations/relations/attention-ffn-division.md
+观点与思考笔记,perspectives/README.md
+观点：深度学习的规模化,perspectives/scaling.md
+观点：CNN 与 Transformer,perspectives/cnn-vs-transformer.md
+观点：生成式建模的收敛,perspectives/generative-convergence.md
+思考笔记：四足策略的故障后恢复,perspectives/notes/quadruped-recovery.md
+训练科学,cross-domain/fields/training-science/README.md
+模型科学,cross-domain/fields/model-science/README.md
+预训练方向入门,llm/fields/pretraining/README.md
+视觉表征方向入门,multimodal/fields/visual-representation/README.md
+视觉生成方向入门,multimodal/fields/generation/README.md

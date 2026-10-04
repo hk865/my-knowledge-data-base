@@ -4,7 +4,7 @@
 
 - [Agent与上下文系统](fields/agents/BASELINES.md)
 - [评估与监督可靠性](fields/evaluation/BASELINES.md)
-- [机制与可信解释](fields/interpretability/BASELINES.md)
+- [模型科学](fields/model-science/BASELINES.md)
 - [知识蒸馏](fields/knowledge-distillation/BASELINES.md)
 - [生物计算探索](fields/biological-computing/BASELINES.md)
 

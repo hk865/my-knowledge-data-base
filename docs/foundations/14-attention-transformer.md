@@ -1110,7 +1110,9 @@ Multi-Query Attention，即 MQA，让多个 query 头共享同一组 K/V；Group
 - [GPT-3 精读](../../llm/papers/gpt3/README.md)：13.5 节 decoder-only 加规模这条路线的节点，其局限一节是“收敛原因”判断的直接证据。
 - [ViT](../../multimodal/papers/vit/README.md)：第 17 节 patch 嵌入与卷积关系的原文。
 - [FFN 键值记忆（Geva 等 2021）](../../cross-domain/papers/arxiv-2012.14913/README.md) 与 [Dissecting Recall（Geva 等 2023）](../../cross-domain/papers/arxiv-2304.14767/README.md)：10.4 节结构对应的经验证据，以及“由注意力参与读出”的补充。
-- [架构方向入门页](../../foundations/fields/architectures/README.md)：把本讲义 13.5 节和 CNN 讲义第 6 节合成一张领域地图，并附逐篇综合表。
+- [预训练方向](../../llm/fields/pretraining/README.md)：本讲义 13.5 节三条路线收敛的领域版本，附逐篇综合表。
+- [观点：深度学习的规模化](../../perspectives/scaling.md)、[观点：CNN 与 Transformer](../../perspectives/cnn-vs-transformer.md)：把本讲义与 CNN 讲义第 6 节放进跨领域的论证。
+- [架构与信息流概念地图](../../foundations/fields/architectures/README.md)：本讲义与其他架构模块的依赖关系。
 
 **未核实 / 待验证**
 

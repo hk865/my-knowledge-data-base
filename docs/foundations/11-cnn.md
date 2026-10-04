@@ -262,7 +262,7 @@ ResNet 与 U-Net 都有跨层通路（残差是相加，U-Net 是把特征拼接
 - `[结构]` **RNN 在时间上共享权重，卷积在空间上共享权重。** [RNN](12-rnn.md) 每一步都用同一套 W_h、W_x 更新状态，卷积层在每个位置都用同一个核；两者都让参数量与序列长度或图像大小无关（本讲义第 3 节的参数公式里没有 H×W）。区别在于 RNN 的每一步还要读取上一步的状态，卷积的各位置之间没有这种依赖。
 - `[结构]` **Transformer 的 FFN 是 1×1 卷积，ViT 的 patch 嵌入是步幅等于核大小的卷积。** 把第 3 节公式中的核高、核宽设为 1，就得到对每个位置做同一个线性变换，这正是 Transformer 中逐位置 FFN 的形式；把核大小和步幅都设为 16，就得到 ViT 把 16×16 图像块映射成 token 的那一步。推导和尺寸验证见 [Attention 与 Transformer](14-attention-transformer.md) 第 17 节。
 - `[历史]` **Transformer 的残差连接引用 ResNet。** Attention Is All You Need 在每个子层外加残差连接，并直接引用 He 等人的 ResNet。第 6 节 ResNet 要解决的“更深反而训练误差更高”，在 Transformer 里对应 [Attention 与 Transformer](14-attention-transformer.md) 第 10.2 节的 y = x + f(x)。
-- `[经验]` **CNN 与 ViT 的优劣取决于数据规模和训练配方。** ViT 在中等规模数据上不如同规模的 ResNet，在 JFT-300M 上反超；ConvNeXt 只换训练配方就让 ResNet-50 提升 2.7 个百分点。[14][15] 这是第 6 节最后一段判断的实验依据；领域层面的对照见[架构方向入门页](../../foundations/fields/architectures/README.md)。
+- `[经验]` **CNN 与 ViT 的优劣取决于数据规模和训练配方。** ViT 在中等规模数据上不如同规模的 ResNet，在 JFT-300M 上反超；ConvNeXt 只换训练配方就让 ResNet-50 提升 2.7 个百分点。[14][15] 这是第 6 节最后一段判断的实验依据；领域层面的对照见[视觉表征方向](../../multimodal/fields/visual-representation/README.md)，跨领域的论证见[观点：CNN 与 Transformer](../../perspectives/cnn-vs-transformer.md)。
 
 ## 批注
 
@@ -283,7 +283,8 @@ ResNet 与 U-Net 都有跨层通路（残差是相加，U-Net 是把特征拼接
 
 - [ViT](../../multimodal/papers/vit/README.md)：第 6 节 ViT 节点与第 9 节 patch 嵌入关系的原文。
 - [Attention 与 Transformer](14-attention-transformer.md) 第 13.5 节：语言模型一侧的架构收敛，可与本讲义第 6 节的 CNN 与 ViT 之争对照。
-- [架构方向入门页](../../foundations/fields/architectures/README.md)：本讲义第 6 节历史链的领域版本，附逐篇综合表 synthesis-cnn.csv。
+- [视觉表征方向](../../multimodal/fields/visual-representation/README.md)：本讲义第 6 节历史链的领域版本，附逐篇综合表 synthesis.csv。
+- [架构与信息流概念地图](../../foundations/fields/architectures/README.md)：本讲义与其他架构模块的依赖关系。
 
 **未核实 / 待验证**
 

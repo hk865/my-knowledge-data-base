@@ -4,9 +4,10 @@
 
 ## 按细分方向学习
 
+- [训练科学](fields/training-science/README.md)：优化地形、规模定律、双下降、本征维度、遗忘
+- [模型科学](fields/model-science/README.md)：表示与知识存放在哪里、注意力与 FFN 的分工、电路、探针与干预、事实回忆与编辑；入门、baseline、路线图、论文各有入口（原"机制与可信解释"已并入）
 - [Agent与上下文系统](fields/agents/README.md)：入门、baseline、路线图、论文各有入口
 - [评估与监督可靠性](fields/evaluation/README.md)：入门、baseline、路线图、论文各有入口
-- [机制与可信解释](fields/interpretability/README.md)：入门、baseline、路线图、论文各有入口
 - [知识蒸馏](fields/knowledge-distillation/README.md)：入门、baseline、路线图、论文各有入口
 - [生物计算探索](fields/biological-computing/README.md)：入门、baseline、路线图、论文各有入口
 

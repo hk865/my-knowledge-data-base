@@ -4,15 +4,19 @@
 
 > 收录 164 项资源，其中 33 篇有讲解。
 
-## 五个主入口
+## 四层入口
 
-- [深度学习基础](foundations/README.md)：24个模块，架构、优化、损失、数据与进阶连接
-- [大语言模型](llm/README.md)：预训练、SFT、偏好学习、强化学习、架构、推理与长上下文
-- [多模态与世界表征](multimodal/README.md)：视觉表征、图文对齐、VLM、生成、视频与世界模型
-- [机器人与具身系统](robotics-embodied/README.md)：感知、状态估计、导航、控制、策略、VLA、世界模型与Agents
-- [跨方向方法与探索](cross-domain/README.md)：Agents、评估、解释性、知识蒸馏与生物计算线索
+建议的阅读顺序：基础 → 观点 → 领域 → 单篇论文；跨方向页在需要时查阅。
 
-每个研究方向都有入门、Baseline、路线图和论文入口。
+- **基础** · [深度学习基础](foundations/README.md)：24 个模块讲机制怎么算，分区页是概念地图，[关系页](foundations/relations/README.md)讲模块之间的结构对应
+- **观点** · [观点与思考笔记](perspectives/README.md)：跨领域的论证，例如[深度学习的规模化](perspectives/scaling.md)、[CNN 与 Transformer](perspectives/cnn-vs-transformer.md)、[生成式建模的收敛](perspectives/generative-convergence.md)
+- **领域**
+  - [大语言模型](llm/README.md)：预训练、SFT、偏好学习、强化学习、架构、推理与长上下文
+  - [多模态与世界表征](multimodal/README.md)：视觉表征、图文对齐、VLM、生成、视频与世界模型
+  - [机器人与具身系统](robotics-embodied/README.md)：感知、状态估计、导航、控制、策略、VLA、世界模型与Agents
+- **跨方向** · [跨方向方法与科学](cross-domain/README.md)：[训练科学](cross-domain/fields/training-science/README.md)、[模型科学](cross-domain/fields/model-science/README.md)、评估、Agents、知识蒸馏与生物计算线索
+
+每个领域方向都有入门、Baseline、路线图和论文入口。按模态（文本、图像、视频、动作等）与任务（理解、生成、决策等）的交叉浏览见[主题目录](docs/topics.md)。
 
 ## 机器人领域教学讲义
 

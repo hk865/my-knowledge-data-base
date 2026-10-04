@@ -362,5 +362,45 @@
   {
     "title": "注意力与 FFN 的分工谱系",
     "file": "foundations/relations/attention-ffn-division.md"
+  },
+  {
+    "title": "观点与思考笔记",
+    "file": "perspectives/README.md"
+  },
+  {
+    "title": "观点：深度学习的规模化",
+    "file": "perspectives/scaling.md"
+  },
+  {
+    "title": "观点：CNN 与 Transformer",
+    "file": "perspectives/cnn-vs-transformer.md"
+  },
+  {
+    "title": "观点：生成式建模的收敛",
+    "file": "perspectives/generative-convergence.md"
+  },
+  {
+    "title": "思考笔记：四足策略的故障后恢复",
+    "file": "perspectives/notes/quadruped-recovery.md"
+  },
+  {
+    "title": "训练科学",
+    "file": "cross-domain/fields/training-science/README.md"
+  },
+  {
+    "title": "模型科学",
+    "file": "cross-domain/fields/model-science/README.md"
+  },
+  {
+    "title": "预训练方向入门",
+    "file": "llm/fields/pretraining/README.md"
+  },
+  {
+    "title": "视觉表征方向入门",
+    "file": "multimodal/fields/visual-representation/README.md"
+  },
+  {
+    "title": "视觉生成方向入门",
+    "file": "multimodal/fields/generation/README.md"
   }
 ]
