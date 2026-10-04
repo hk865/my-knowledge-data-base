@@ -313,9 +313,9 @@
 
 ## 跨方向方法与探索
 
-### Agent 与上下文系统（12）
+### Agent 与上下文系统（34）
 
-细分：Agent轨迹与性质验证
+细分：Agent轨迹与性质验证；权限与执行隔离；协作与软件流程
 
 - [Recursive Introspection: Teaching Language Model Agents How to Self-Improve](paper-catalog.md#p019)
 - [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](paper-catalog.md#p034)
@@ -329,6 +329,28 @@
 - [HoloAgent-0: A Unified Embodied Agent Framework with 3D Spatial Memory](paper-catalog.md#p139)
 - [Finding bugs across the Python ecosystem with Claude and property-based testing](paper-catalog.md#p160)
 - [Metamorphic Testing of Multi-Agent LLM Systems: A Trace-Based Behavioral Oracle Framework](paper-catalog.md#p161)
+- [Running Codex safely at OpenAI](paper-catalog.md#p163)
+- [Mitigating the risk of prompt injections in browser use](paper-catalog.md#p164)
+- [SPIFFE Overview](paper-catalog.md#p165)
+- [How Cedar authorization works](paper-catalog.md#p166)
+- [Docker Engine security](paper-catalog.md#p167)
+- [namespaces(7) — Linux manual page](paper-catalog.md#p168)
+- [Seccomp BPF (SECure COMPuting with filters)](paper-catalog.md#p169)
+- [Landlock: unprivileged access control](paper-catalog.md#p170)
+- [Control Group v2](paper-catalog.md#p171)
+- [Bubblewrap](paper-catalog.md#p172)
+- [Agent approvals & security](paper-catalog.md#p173)
+- [git-worktree - Manage multiple working trees](paper-catalog.md#p174)
+- [Security Model](paper-catalog.md#p175)
+- [Security](paper-catalog.md#p176)
+- [Defeating Prompt Injections by Design](paper-catalog.md#p177)
+- [Scaling the Practice of Architecture, Conversationally](paper-catalog.md#p178)
+- [Building multi-agent systems: When and how to use them](paper-catalog.md#p179)
+- [How we built our multi-agent research system](paper-catalog.md#p180)
+- [Continuous Integration](paper-catalog.md#p181)
+- [The Architect Elevator — Visiting the upper floors](paper-catalog.md#p182)
+- [NanmiCoder/dsh-agent-teams — AgentTeams plugin for DeepSeek Harness](paper-catalog.md#p183)
+- [Branch By Abstraction](paper-catalog.md#p184)
 
 
 ### 机制与可信解释（18）
@@ -383,6 +405,17 @@
 - [Do Deep Nets Really Need to be Deep?](paper-catalog.md#p141)
 - [FitNets: Hints for Thin Deep Nets](paper-catalog.md#p142)
 - [Distilling the Knowledge in a Neural Network](paper-catalog.md#p143)
+
+### 工程探索（临时线索）（4）
+
+细分：高速电子器件设计与应用（探索）
+
+仅作临时探索分类，不表示长期方向或已实施硬件项目。
+
+- [MT-097: Dealing with High-Speed Logic](paper-catalog.md#p185)
+- [MT-046: Op Amp Settling Time](paper-catalog.md#p186)
+- [High-Speed Layout Guidelines (SCAA082A)](paper-catalog.md#p187)
+- [High-Speed Interface Layout Guidelines (SPRAAR7J, Rev. J)](paper-catalog.md#p188)
 
 ## 正交标签
 

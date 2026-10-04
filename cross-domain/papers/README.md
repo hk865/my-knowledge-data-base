@@ -22,3 +22,7 @@
 
 - [Finding bugs across the Python ecosystem with Claude and property-based testing](agentic-property-based-testing/README.md) · 2026 · 文献卡，非独立全文精读
 - [Metamorphic Testing of Multi-Agent LLM Systems: A Trace-Based Behavioral Oracle Framework](morphagent/README.md) · 2026 · 文献卡，非独立全文精读
+
+## 2026年10月4日已核验资源
+
+- [Defeating Prompt Injections by Design](camel/README.md) · 论文 · 资料卡，非新增独立精读

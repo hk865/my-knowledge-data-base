@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "resource_id": "url:https://www.ti.com/lit/an/scaa082a/scaa082a.pdf",
+  "title": "High-Speed Layout Guidelines (SCAA082A)",
+  "resource_kind": "official_documentation",
+  "resource_subtype": "official_application_report",
+  "canonical_folder": "cross-domain/resources/ti-scaa082a",
+  "official_url": "https://www.ti.com/lit/an/scaa082a/scaa082a.pdf",
+  "official_fulltext_url": "https://www.ti.com/lit/an/scaa082a/scaa082a.pdf",
+  "read_version": "SCAA082A — November 2006 — Revised August 2017",
+  "version_status": "see_read_version_and_date_basis",
+  "reading_depth": "application_report_selected_sections",
+  "reading_scope": "封面、目录、1.2时钟频谱、1.6回流与环路、2.1设计前置问题；非全篇精读",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "按实际选读范围记录的资料卡；未创建独立reading.md，不增加全文精读数。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "只链接官方或作者原文；未确认再分发许可，不镜像第三方全文。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "topic_paths": [
+    "cross-domain/engineering-exploration"
+  ],
+  "source_record_updated": "2026-10-04",
+  "verification_2026_10_04": {
+    "reading_scope": "封面、目录、1.2时钟频谱、1.6回流与环路、2.1设计前置问题；非全篇精读",
+    "verification_status": "verified_document_id_at_official_pdf_fragment_route_fetch_error",
+    "verification_sources": [
+      "https://www.ti.com/lit/an/scaa082a/scaa082a.pdf"
+    ],
+    "mechanism_summary": "快边沿带来高频谐波，信号完整性问题不由基频单独决定；高频回流倾向低阻抗路径；参考平面开槽会绕行并增大环路面积",
+    "evidence_boundary": "历史片段对应完整原URL未回收；尝试lit/pdf/scaa082a报Internal Error，不宣称404或已确认跳转 经验布线规则不能取代目标器件手册、实际叠层与仿真/实测",
+    "read_version": "SCAA082A — November 2006 — Revised August 2017",
+    "source_origin": "official_associated_discovery_from_historical_fragment",
+    "original_chat_urls": []
+  }
+}

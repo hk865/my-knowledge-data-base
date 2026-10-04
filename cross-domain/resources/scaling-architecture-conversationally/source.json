@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "resource_id": "url:https://martinfowler.com/articles/scaling-architecture-conversationally.html",
+  "title": "Scaling the Practice of Architecture, Conversationally",
+  "resource_kind": "author_article",
+  "resource_subtype": "author_article",
+  "canonical_folder": "cross-domain/resources/scaling-architecture-conversationally",
+  "official_url": "https://martinfowler.com/articles/scaling-architecture-conversationally.html",
+  "official_fulltext_url": "https://martinfowler.com/articles/scaling-architecture-conversationally.html",
+  "read_version": "页面署名日期",
+  "version_status": "see_read_version_and_date_basis",
+  "reading_depth": "engineering_article_focused_reading",
+  "reading_scope": "Advice Process、四项支撑机制、技术策略边界、失败模式重点段落；未做组织实践验证",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "按实际选读范围记录的资料卡；未创建独立reading.md，不增加全文精读数。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "只链接官方或作者原文；未确认再分发许可，不镜像第三方全文。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "topic_paths": [
+    "cross-domain/agents"
+  ],
+  "source_record_updated": "2026-10-04",
+  "verification_2026_10_04": {
+    "reading_scope": "Advice Process、四项支撑机制、技术策略边界、失败模式重点段落；未做组织实践验证",
+    "verification_status": "verified_primary_source",
+    "verification_sources": [
+      "https://martinfowler.com/articles/scaling-architecture-conversationally.html"
+    ],
+    "mechanism_summary": "决策者须咨询受实质影响者和相关专家，记录意见，但不要求达成共识；ADR、架构咨询论坛、团队共建原则和技术雷达，帮助分散决策保持可追溯和方向一致",
+    "evidence_boundary": "人类组织经验文章，不是多Agent层级效果实验 文章明确未详细涵盖技术战略与跨职能要求，不能替代这些约束",
+    "read_version": "页面署名日期",
+    "source_origin": "historical_assistant_recommendation",
+    "original_chat_urls": [
+      "https://martinfowler.com/articles/scaling-architecture-conversationally.html"
+    ]
+  }
+}

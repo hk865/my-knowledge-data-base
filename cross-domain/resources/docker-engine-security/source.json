@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "resource_id": "url:https://docs.docker.com/engine/security",
+  "title": "Docker Engine security",
+  "resource_kind": "official_documentation",
+  "resource_subtype": "official_security_overview",
+  "canonical_folder": "cross-domain/resources/docker-engine-security",
+  "official_url": "https://docs.docker.com/engine/security/",
+  "official_fulltext_url": "https://docs.docker.com/engine/security/",
+  "read_version": "2026-10-04所见动态官方页面；未固定不可变版本",
+  "version_status": "see_read_version_and_date_basis",
+  "reading_depth": "namespaces_cgroups_daemon_capabilities_security_sections",
+  "reading_scope": "namespaces_cgroups_daemon_capabilities_security_sections",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "按实际选读范围记录的资料卡；未创建独立reading.md，不增加全文精读数。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "只链接官方或作者原文；未确认再分发许可，不镜像第三方全文。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "topic_paths": [
+    "cross-domain/agents"
+  ],
+  "source_record_updated": "2026-10-04",
+  "verification_2026_10_04": {
+    "reading_scope": "namespaces_cgroups_daemon_capabilities_security_sections",
+    "verification_status": "verified_primary_page",
+    "verification_sources": [
+      "https://docs.docker.com/engine/security/"
+    ],
+    "mechanism_summary": "Docker 组合 namespace、cgroup、capabilities 与内核安全机制；cgroup 主要计量/限制资源，不能据此认定跨容器数据访问被授权隔离。；daemon 控制权和主机挂载本身是关键风险面。",
+    "evidence_boundary": "容器配置和内核漏洞可能使隔离不完整。 这是安全总览；其中历史版本叙述不能当当前所有平台默认配置。",
+    "read_version": "2026-10-04所见动态官方页面；未固定不可变版本",
+    "source_origin": "historical_assistant_recommendation",
+    "original_chat_urls": [
+      "https://docs.docker.com/engine/security/"
+    ]
+  }
+}

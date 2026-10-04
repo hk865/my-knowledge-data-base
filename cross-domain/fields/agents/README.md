@@ -24,3 +24,7 @@ Agent研究关注模型怎样利用上下文、调用工具、观察结果并调
 
 1. [ReAct: Synergizing Reasoning and Acting in Language Models](../../papers/react/README.md)
 2. [Do As I Can, Not As I Say: Grounding Language in Robotic Affordances](../../../robotics-embodied/papers/saycan/README.md)
+
+## 权限、隔离与软件协作
+
+[机制导读](permissions-isolation-collaboration.md)与[本轮资料卡](PAPERS.md)把工作负载身份、动作授权、执行沙箱、资源限制、任务分解与集成验收分开。CaMeL方法段选读不计为新增全文精读；工程文档和作者经验不当论文。

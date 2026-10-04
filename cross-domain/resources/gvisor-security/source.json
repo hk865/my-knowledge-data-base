@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "resource_id": "url:https://gvisor.dev/docs/architecture_guide/security",
+  "title": "Security Model",
+  "resource_kind": "official_documentation",
+  "resource_subtype": "official_architecture_documentation",
+  "canonical_folder": "cross-domain/resources/gvisor-security",
+  "official_url": "https://gvisor.dev/docs/architecture_guide/security/",
+  "official_fulltext_url": "https://gvisor.dev/docs/architecture_guide/security/",
+  "read_version": "2026-10-04所见动态官方页面；未固定不可变版本",
+  "version_status": "see_read_version_and_date_basis",
+  "reading_depth": "threat_model_goals_defense_in_depth_faq",
+  "reading_scope": "threat_model_goals_defense_in_depth_faq",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "按实际选读范围记录的资料卡；未创建独立reading.md，不增加全文精读数。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "只链接官方或作者原文；未确认再分发许可，不镜像第三方全文。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "topic_paths": [
+    "cross-domain/agents"
+  ],
+  "source_record_updated": "2026-10-04",
+  "verification_2026_10_04": {
+    "reading_scope": "threat_model_goals_defense_in_depth_faq",
+    "verification_status": "verified_primary_page",
+    "verification_sources": [
+      "https://gvisor.dev/docs/architecture_guide/security/"
+    ],
+    "mechanism_summary": "Sentry 重实现应用可见 System API，减少对宿主 API 的直接暴露；VM 则通过 guest OS/虚拟设备改变边界。；资源耗尽仍依赖宿主 cgroup，网络策略需另施加；硬件侧信道不是其一般防护保证。",
+    "evidence_boundary": "VM/gVisor 安全性取决于实际暴露面，不能仅凭使用虚拟化硬件排序。 沙箱不是安全架构的替代品，也不会自动禁止已映射文件与网络访问。",
+    "read_version": "2026-10-04所见动态官方页面；未固定不可变版本",
+    "source_origin": "historical_assistant_recommendation",
+    "original_chat_urls": [
+      "https://gvisor.dev/docs/architecture_guide/security/"
+    ]
+  }
+}

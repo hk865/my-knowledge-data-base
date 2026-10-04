@@ -19,3 +19,28 @@
 
 - [Finding bugs across the Python ecosystem with Claude and property-based testing](../../papers/agentic-property-based-testing/README.md) · 2026 · 官方博客，非独立全文精读
 - [Metamorphic Testing of Multi-Agent LLM Systems: A Trace-Based Behavioral Oracle Framework](../../papers/morphagent/README.md) · 2026 · 文献卡，非独立全文精读
+
+## 2026年10月4日已核验资源
+
+- [Running Codex safely at OpenAI](../../resources/running-codex-safely/README.md) · 官方博客 · 资料卡，非新增独立精读
+- [Mitigating the risk of prompt injections in browser use](../../resources/prompt-injection-defenses/README.md) · 官方博客 · 资料卡，非新增独立精读
+- [SPIFFE Overview](../../resources/spiffe-overview/README.md) · 官方技术文档 · 资料卡，非新增独立精读
+- [How Cedar authorization works](../../resources/cedar-authorization/README.md) · 官方技术文档 · 资料卡，非新增独立精读
+- [Docker Engine security](../../resources/docker-engine-security/README.md) · 官方技术文档 · 资料卡，非新增独立精读
+- [namespaces(7) — Linux manual page](../../resources/linux-namespaces/README.md) · 官方技术文档 · 资料卡，非新增独立精读
+- [Seccomp BPF (SECure COMPuting with filters)](../../resources/linux-seccomp-bpf/README.md) · 官方技术文档 · 资料卡，非新增独立精读
+- [Landlock: unprivileged access control](../../resources/linux-landlock/README.md) · 官方技术文档 · 资料卡，非新增独立精读
+- [Control Group v2](../../resources/linux-cgroup-v2/README.md) · 官方技术文档 · 资料卡，非新增独立精读
+- [Bubblewrap](../../resources/bubblewrap/README.md) · 代码仓库 · 资料卡，非新增独立精读
+- [Agent approvals & security](../../resources/agent-approvals-security/README.md) · 官方技术文档 · 资料卡，非新增独立精读
+- [git-worktree - Manage multiple working trees](../../resources/git-worktree/README.md) · 官方技术文档 · 资料卡，非新增独立精读
+- [Security Model](../../resources/gvisor-security/README.md) · 官方技术文档 · 资料卡，非新增独立精读
+- [Security](../../resources/wasmtime-security/README.md) · 官方技术文档 · 资料卡，非新增独立精读
+- [Defeating Prompt Injections by Design](../../papers/camel/README.md) · 论文 · 资料卡，非新增独立精读
+- [Scaling the Practice of Architecture, Conversationally](../../resources/scaling-architecture-conversationally/README.md) · 作者文章 · 资料卡，非新增独立精读
+- [Building multi-agent systems: When and how to use them](../../resources/building-multi-agent-systems/README.md) · 官方博客 · 资料卡，非新增独立精读
+- [How we built our multi-agent research system](../../resources/multi-agent-research-system/README.md) · 官方博客 · 资料卡，非新增独立精读
+- [Continuous Integration](../../resources/continuous-integration/README.md) · 作者文章 · 资料卡，非新增独立精读
+- [The Architect Elevator — Visiting the upper floors](../../resources/architect-elevator/README.md) · 作者文章 · 资料卡，非新增独立精读
+- [NanmiCoder/dsh-agent-teams — AgentTeams plugin for DeepSeek Harness](../../resources/dsh-agent-teams/README.md) · 代码仓库 · 资料卡，非新增独立精读
+- [Branch By Abstraction](../../resources/branch-by-abstraction/README.md) · 作者文章 · 资料卡，非新增独立精读

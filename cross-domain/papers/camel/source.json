@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2503.18813",
+  "title": "Defeating Prompt Injections by Design",
+  "resource_kind": "paper",
+  "resource_subtype": "author_preprint",
+  "canonical_folder": "cross-domain/papers/camel",
+  "official_url": "https://arxiv.org/abs/2503.18813v2",
+  "official_fulltext_url": "https://arxiv.org/html/2503.18813v2",
+  "read_version": "arXiv:2503.18813v2",
+  "version_status": "pinned_arxiv_v2",
+  "reading_depth": "v2_full_text_targeted_read_threat_model_method_limitations_sections_3_5_7_9_10",
+  "reading_scope": "v2_full_text_targeted_read_threat_model_method_limitations_sections_3_5_7_9_10",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "按实际选读范围记录的资料卡；未创建独立reading.md，不增加全文精读数。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "只链接官方或作者原文；未确认再分发许可，不镜像第三方全文。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "topic_paths": [
+    "cross-domain/agents"
+  ],
+  "source_record_updated": "2026-10-04",
+  "verification_2026_10_04": {
+    "reading_scope": "v2_full_text_targeted_read_threat_model_method_limitations_sections_3_5_7_9_10",
+    "verification_status": "verified_primary_page",
+    "verification_sources": [
+      "https://arxiv.org/abs/2503.18813v2",
+      "https://arxiv.org/html/2503.18813v2"
+    ],
+    "mechanism_summary": "CaMeL 分离只看可信请求的 P-LLM 与处理不可信数据、无工具权的 Q-LLM；受限 Python 解释器传播数据来源/读者标签，并在工具调用前执行策略。",
+    "evidence_boundary": "假设用户 prompt 和 memory 未被攻击；纯文本误导、无外泄的错误摘要/钓鱼非目标（§3.1）。 侧信道、策略覆盖、去密审批疲劳仍是边界（§7、§9）；解释器形式化验证列为未来工作（§10）。 不能外推为所有语义正确性保证，或替代 OS/VM 沙箱。 仅核验论文及作者仓库，不运行代码；不混用 v1/v2 指标。",
+    "read_version": "arXiv:2503.18813v2",
+    "source_origin": "historical_assistant_recommendation",
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2503.18813"
+    ]
+  }
+}

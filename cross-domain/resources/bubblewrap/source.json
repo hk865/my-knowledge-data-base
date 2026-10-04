@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "resource_id": "url:https://github.com/containers/bubblewrap",
+  "title": "Bubblewrap",
+  "resource_kind": "repository",
+  "resource_subtype": "official_source_repository",
+  "canonical_folder": "cross-domain/resources/bubblewrap",
+  "official_url": "https://github.com/containers/bubblewrap",
+  "official_fulltext_url": "https://github.com/containers/bubblewrap",
+  "read_version": "2026-10-04所见动态官方页面；未固定不可变版本",
+  "version_status": "see_read_version_and_date_basis",
+  "reading_depth": "repository_readme_security_usage_limitations",
+  "reading_scope": "repository_readme_security_usage_limitations",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "按实际选读范围记录的资料卡；未创建独立reading.md，不增加全文精读数。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "只链接官方或作者原文；未确认再分发许可，不镜像第三方全文。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "topic_paths": [
+    "cross-domain/agents"
+  ],
+  "source_record_updated": "2026-10-04",
+  "verification_2026_10_04": {
+    "reading_scope": "repository_readme_security_usage_limitations",
+    "verification_status": "verified_primary_page",
+    "verification_sources": [
+      "https://github.com/containers/bubblewrap"
+    ],
+    "mechanism_summary": "bubblewrap 是构建沙箱的低层工具；保护范围取决于调用参数，策略由包装它的框架决定；暴露的 socket/挂载也可能扩大权限。",
+    "evidence_boundary": "不自带可保证所有用途安全的现成策略。 仅文档阅读，未运行、安装或审核源代码。",
+    "read_version": "2026-10-04所见动态官方页面；未固定不可变版本",
+    "source_origin": "historical_assistant_recommendation",
+    "original_chat_urls": [
+      "https://github.com/containers/bubblewrap"
+    ]
+  }
+}

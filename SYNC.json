@@ -2,7 +2,7 @@
   "schema_version": 3,
   "repository": "hk865/my-knowledge-data-base",
   "branch": "main",
-  "export_date": "2026-10-03",
+  "export_date": "2026-10-04",
   "scope": "Public academic content, directory navigation, official paper links and original illustrations",
   "content_index": "index.json",
   "paper_catalog": "papers.json",

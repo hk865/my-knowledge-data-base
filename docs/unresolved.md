@@ -2,6 +2,17 @@
 
 34 条。保留历史身份与链接缺口；新目录或教学文章不自动清除待核实状态。
 
+
+## 2026年10月4日新增来源URL缺口
+
+本日另有7组原始来源URL缺口：[分组明细](../daily/2026-10-04-source-gaps.json) · [已核来源与阅读范围](../daily/2026-10-04-sources.json)。既有34项记录保留不变，合计是41项/组待核记录，不是41篇论文，也不是41项新增资源。
+
+- Analog Devices、Texas Instruments：两组各已关联2份官方文档，文档身份已核；原历史完整URL仍缺失
+- Teledyne LeCroy、Tektronix其他引用、Firecracker、MCP：4组具体原始来源仍未确认
+- WASI：未恢复独立原始URL；已核Wasmtime页面不能作为替代
+
+以下为原有34项记录。
+
 ## 1. Inference Scaling Laws: An Empirical Analysis of Compute-Optimal Inference for LLM Problem-Solving
 
 - 原记录入口：未恢复完整链接

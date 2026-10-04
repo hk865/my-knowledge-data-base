@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "resource_id": "url:https://www.analog.com/media/en/training-seminars/tutorials/MT-046.pdf",
+  "title": "MT-046: Op Amp Settling Time",
+  "resource_kind": "official_documentation",
+  "resource_subtype": "official_technical_tutorial",
+  "canonical_folder": "cross-domain/resources/adi-mt-046",
+  "official_url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-046.pdf",
+  "official_fulltext_url": "https://www.analog.com/media/en/training-seminars/tutorials/MT-046.pdf",
+  "read_version": "PDF第1页 Rev.0, 10/08, WK；末页版权2009不是版次日期",
+  "version_status": "see_read_version_and_date_basis",
+  "reading_depth": "technical_tutorial_text_reading",
+  "reading_scope": "4页文字与图注核对；未复现测量电路或波形",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "按实际选读范围记录的资料卡；未创建独立reading.md，不增加全文精读数。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "只链接官方或作者原文；未确认再分发许可，不镜像第三方全文。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "topic_paths": [
+    "cross-domain/engineering-exploration"
+  ],
+  "source_record_updated": "2026-10-04",
+  "verification_2026_10_04": {
+    "reading_scope": "4页文字与图注核对；未复现测量电路或波形",
+    "verification_status": "verified_primary_source",
+    "verification_sources": [
+      "https://www.analog.com/media/en/training-seminars/tutorials/MT-046.pdf",
+      "https://www.analog.com/en/solutions/instrumentation-and-measurement/electronic-test-and-measurement/parametric-measurement.html"
+    ],
+    "mechanism_summary": "建立时间指阶跃后输出进入并保持在指定误差带所需时间，比较时必须对齐阶跃幅度和误差带；测量链自身的脉冲平坦度、寄生与示波器过驱恢复会影响读数",
+    "evidence_boundary": "完整历史URL未回收；编号对应的官方来源已核 建立时间非线性，不能按单一比例换算不同误差带；旧器件示例不是选型结论",
+    "read_version": "PDF第1页 Rev.0, 10/08, WK；末页版权2009不是版次日期",
+    "source_origin": "official_associated_discovery_from_historical_fragment",
+    "original_chat_urls": []
+  }
+}

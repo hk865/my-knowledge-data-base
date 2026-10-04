@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "resource_id": "url:https://openai.com/index/running-codex-safely",
+  "title": "Running Codex safely at OpenAI",
+  "resource_kind": "official_blog",
+  "resource_subtype": "official_engineering_article",
+  "canonical_folder": "cross-domain/resources/running-codex-safely",
+  "official_url": "https://openai.com/index/running-codex-safely/",
+  "official_fulltext_url": "https://openai.com/index/running-codex-safely/",
+  "read_version": "2026-10-04所见动态官方页面；未固定不可变版本",
+  "version_status": "see_read_version_and_date_basis",
+  "reading_depth": "article_body_and_metadata",
+  "reading_scope": "article_body_and_metadata",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "按实际选读范围记录的资料卡；未创建独立reading.md，不增加全文精读数。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "只链接官方或作者原文；未确认再分发许可，不镜像第三方全文。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "topic_paths": [
+    "cross-domain/agents"
+  ],
+  "source_record_updated": "2026-10-04",
+  "verification_2026_10_04": {
+    "reading_scope": "article_body_and_metadata",
+    "verification_status": "verified_primary_page",
+    "verification_sources": [
+      "https://openai.com/index/running-codex-safely/"
+    ],
+    "mechanism_summary": "报道 OpenAI 内部部署同时使用执行沙箱、动作审批、出网策略、凭据管理、受管配置及审计遥测。",
+    "evidence_boundary": "企业部署经验文章，不是论文或通用安全证明。 内部配置示例不能推定为所有 Codex 环境的实际默认设置；当前产品行为另核对官方文档。",
+    "read_version": "2026-10-04所见动态官方页面；未固定不可变版本",
+    "source_origin": "historical_assistant_recommendation",
+    "original_chat_urls": [
+      "https://openai.com/index/running-codex-safely/"
+    ]
+  }
+}

@@ -350,5 +350,29 @@
   {
     "title": "2026年10月3日研究短报",
     "file": "daily/2026-10-03.md"
+  },
+  {
+    "title": "Agent权限、沙箱与协作：从一次工具调用理解边界",
+    "file": "cross-domain/fields/agents/permissions-isolation-collaboration.md"
+  },
+  {
+    "title": "2026年10月4日研究短报",
+    "file": "daily/2026-10-04.md"
+  },
+  {
+    "title": "工程文档、作者文章与代码仓库",
+    "file": "cross-domain/resources/README.md"
+  },
+  {
+    "title": "工程探索：高速电子器件设计与应用",
+    "file": "cross-domain/fields/engineering-exploration/README.md"
+  },
+  {
+    "title": "2026年10月4日公开来源档案",
+    "file": "daily/2026-10-04-sources.json"
+  },
+  {
+    "title": "2026年10月4日原始URL来源缺口",
+    "file": "daily/2026-10-04-source-gaps.json"
   }
 ]

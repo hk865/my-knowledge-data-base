@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "resource_id": "url:https://www.ti.com/lit/an/spraar7j/spraar7j.pdf",
+  "title": "High-Speed Interface Layout Guidelines (SPRAAR7J, Rev. J)",
+  "resource_kind": "official_documentation",
+  "resource_subtype": "official_application_note",
+  "canonical_folder": "cross-domain/resources/ti-spraar7j",
+  "official_url": "https://www.ti.com/lit/an/spraar7j/spraar7j.pdf",
+  "official_fulltext_url": "https://www.ti.com/lit/an/spraar7j/spraar7j.pdf",
+  "read_version": "SPRAAR7J — November 2018 — Revised February 2023",
+  "version_status": "see_read_version_and_date_basis",
+  "reading_depth": "application_note_selected_sections",
+  "reading_scope": "封面、范围、§2.1纤维编织、§2.4参考平面、§3.6–3.10过孔与器件不连续；未逐项应用器件表",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "按实际选读范围记录的资料卡；未创建独立reading.md，不增加全文精读数。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "只链接官方或作者原文；未确认再分发许可，不镜像第三方全文。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "topic_paths": [
+    "cross-domain/engineering-exploration"
+  ],
+  "source_record_updated": "2026-10-04",
+  "verification_2026_10_04": {
+    "reading_scope": "封面、范围、§2.1纤维编织、§2.4参考平面、§3.6–3.10过孔与器件不连续；未逐项应用器件表",
+    "verification_status": "verified_primary_source",
+    "verification_sources": [
+      "https://www.ti.com/lit/an/spraar7j/spraar7j.pdf"
+    ],
+    "mechanism_summary": "差分对经历不同介质可产生时延偏差，损伤接收端眼图并增加共模噪声；连续参考平面和短过孔残桩有助于控制回流、反射与插损",
+    "evidence_boundary": "历史完整URL未回收；按片段核得官方对应文档 面向特定TI SoC/接口环境，附录还含初步数据；数值规则不可作为所有高速设计通则 已核Rev.J身份，但未证明它是文档的最新修订",
+    "read_version": "SPRAAR7J — November 2018 — Revised February 2023",
+    "source_origin": "official_associated_discovery_from_historical_fragment",
+    "original_chat_urls": []
+  }
+}

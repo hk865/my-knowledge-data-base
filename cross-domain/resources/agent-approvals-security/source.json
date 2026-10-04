@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "resource_id": "url:https://learn.chatgpt.com/docs/agent-approvals-security",
+  "title": "Agent approvals & security",
+  "resource_kind": "official_documentation",
+  "resource_subtype": "official_product_security_documentation",
+  "canonical_folder": "cross-domain/resources/agent-approvals-security",
+  "official_url": "https://learn.chatgpt.com/docs/agent-approvals-security",
+  "official_fulltext_url": "https://learn.chatgpt.com/docs/agent-approvals-security",
+  "read_version": "2026-10-04所见动态官方页面；未固定不可变版本",
+  "version_status": "see_read_version_and_date_basis",
+  "reading_depth": "body_sandbox_approvals_network_isolation_sections",
+  "reading_scope": "body_sandbox_approvals_network_isolation_sections",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "按实际选读范围记录的资料卡；未创建独立reading.md，不增加全文精读数。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "只链接官方或作者原文；未确认再分发许可，不镜像第三方全文。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "topic_paths": [
+    "cross-domain/agents"
+  ],
+  "source_record_updated": "2026-10-04",
+  "verification_2026_10_04": {
+    "reading_scope": "body_sandbox_approvals_network_isolation_sections",
+    "verification_status": "verified_primary_page",
+    "verification_sources": [
+      "https://learn.chatgpt.com/docs/agent-approvals-security"
+    ],
+    "mechanism_summary": "本地 OS 沙箱与动作审批分别约束技术执行面和审批流程；文档明确 command-network 控制自身不关闭 hosted web search、apps 或 MCP。",
+    "evidence_boundary": "产品表面及执行路径不同，不能把本地 shell 网络策略推广到所有外部工具。 文档是当前快照，旧 URL 迁移状态保留；未调整任何安全设置。",
+    "read_version": "2026-10-04所见动态官方页面；未固定不可变版本",
+    "source_origin": "historical_assistant_recommendation",
+    "original_chat_urls": [
+      "https://developers.openai.com/codex/agent-approvals-security"
+    ]
+  }
+}

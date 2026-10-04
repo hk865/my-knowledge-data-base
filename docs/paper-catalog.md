@@ -1,6 +1,6 @@
-# 全库论文总目录
+# 全库论文与资源总目录
 
-共 162 个去重资源（159 篇论文、1 个代码仓库、2 篇官方博客）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
+共 188 个去重资源（160 篇论文、3 个代码仓库、6 篇官方博客、15 份官方技术文档、4 篇作者文章）；另有34项既有待核实记录及本日7组原始URL缺口（另表，不计为新增论文）。论文按arXiv / DOI归并，工程资源按规范URL去重；同一资源跨主题引用仍只计一次。
 
 身份核验、助手教学进度和用户阅读状态分开。历史来源保留原角色与证据局限，不将助手推荐写成用户提供，也不将教学完成写成用户已读。
 
@@ -1972,3 +1972,341 @@
 ## 2026年10月3日既有条目更新
 
 DeepSeek-V3 的MTP相关方法段获得复核，原条目与旧元数据保留；没有将章节复核升级为整份技术报告全文精读。
+
+<a id="p163"></a>
+## p163 · Running Codex safely at OpenAI
+
+- 标识：url:https://openai.com/index/running-codex-safely
+- 类型：官方博客
+- 原文入口：https://openai.com/index/running-codex-safely/
+- 主题：cross-domain/agents
+- 来源：historical_assistant_recommendation
+- 核验：verified_primary_page
+- 实际阅读范围：article_body_and_metadata
+- 用户阅读状态：unknown
+- [资料卡，暂无独立精读](../cross-domain/resources/running-codex-safely/README.md)
+
+<a id="p164"></a>
+## p164 · Mitigating the risk of prompt injections in browser use
+
+- 标识：url:https://www.anthropic.com/research/prompt-injection-defenses
+- 类型：官方博客
+- 原文入口：https://www.anthropic.com/research/prompt-injection-defenses
+- 主题：cross-domain/agents
+- 来源：historical_assistant_recommendation
+- 核验：verified_primary_page
+- 实际阅读范围：article_body_and_metadata
+- 用户阅读状态：unknown
+- [资料卡，暂无独立精读](../cross-domain/resources/prompt-injection-defenses/README.md)
+
+<a id="p165"></a>
+## p165 · SPIFFE Overview
+
+- 标识：url:https://spiffe.io/docs/latest/spiffe-about/overview
+- 类型：官方技术文档
+- 原文入口：https://spiffe.io/docs/latest/spiffe-about/overview/
+- 主题：cross-domain/agents
+- 来源：historical_assistant_recommendation
+- 核验：verified_primary_page
+- 实际阅读范围：overview_body_and_identity
+- 用户阅读状态：unknown
+- [资料卡，暂无独立精读](../cross-domain/resources/spiffe-overview/README.md)
+
+<a id="p166"></a>
+## p166 · How Cedar authorization works
+
+- 标识：url:https://docs.cedarpolicy.com/auth/authorization.html
+- 类型：官方技术文档
+- 原文入口：https://docs.cedarpolicy.com/auth/authorization.html
+- 主题：cross-domain/agents
+- 来源：historical_assistant_recommendation
+- 核验：verified_primary_page
+- 实际阅读范围：authorization_algorithm_and_diagnostics_sections
+- 用户阅读状态：unknown
+- [资料卡，暂无独立精读](../cross-domain/resources/cedar-authorization/README.md)
+
+<a id="p167"></a>
+## p167 · Docker Engine security
+
+- 标识：url:https://docs.docker.com/engine/security
+- 类型：官方技术文档
+- 原文入口：https://docs.docker.com/engine/security/
+- 主题：cross-domain/agents
+- 来源：historical_assistant_recommendation
+- 核验：verified_primary_page
+- 实际阅读范围：namespaces_cgroups_daemon_capabilities_security_sections
+- 用户阅读状态：unknown
+- [资料卡，暂无独立精读](../cross-domain/resources/docker-engine-security/README.md)
+
+<a id="p168"></a>
+## p168 · namespaces(7) — Linux manual page
+
+- 标识：url:https://man7.org/linux/man-pages/man7/namespaces.7.html
+- 类型：官方技术文档
+- 原文入口：https://man7.org/linux/man-pages/man7/namespaces.7.html
+- 主题：cross-domain/agents
+- 来源：historical_assistant_recommendation
+- 核验：verified_primary_page
+- 实际阅读范围：description_namespace_types_and_colophon
+- 用户阅读状态：unknown
+- [资料卡，暂无独立精读](../cross-domain/resources/linux-namespaces/README.md)
+
+<a id="p169"></a>
+## p169 · Seccomp BPF (SECure COMPuting with filters)
+
+- 标识：url:https://docs.kernel.org/userspace-api/seccomp_filter.html
+- 类型：官方技术文档
+- 原文入口：https://docs.kernel.org/userspace-api/seccomp_filter.html
+- 主题：cross-domain/agents
+- 来源：historical_assistant_recommendation
+- 核验：verified_primary_page
+- 实际阅读范围：introduction_what_it_isnt_usage
+- 用户阅读状态：unknown
+- [资料卡，暂无独立精读](../cross-domain/resources/linux-seccomp-bpf/README.md)
+
+<a id="p170"></a>
+## p170 · Landlock: unprivileged access control
+
+- 标识：url:https://docs.kernel.org/userspace-api/landlock.html
+- 类型：官方技术文档
+- 原文入口：https://docs.kernel.org/userspace-api/landlock.html
+- 主题：cross-domain/agents
+- 来源：historical_assistant_recommendation
+- 核验：verified_primary_page
+- 实际阅读范围：introduction_rules_layering_inheritance_and_abi_caveats
+- 用户阅读状态：unknown
+- [资料卡，暂无独立精读](../cross-domain/resources/linux-landlock/README.md)
+
+<a id="p171"></a>
+## p171 · Control Group v2
+
+- 标识：url:https://docs.kernel.org/admin-guide/cgroup-v2.html
+- 类型：官方技术文档
+- 原文入口：https://docs.kernel.org/admin-guide/cgroup-v2.html
+- 主题：cross-domain/agents
+- 来源：historical_assistant_recommendation
+- 核验：verified_primary_page
+- 实际阅读范围：authoritative_intro_core_controller_model
+- 用户阅读状态：unknown
+- [资料卡，暂无独立精读](../cross-domain/resources/linux-cgroup-v2/README.md)
+
+<a id="p172"></a>
+## p172 · Bubblewrap
+
+- 标识：url:https://github.com/containers/bubblewrap
+- 类型：代码仓库
+- 原文入口：https://github.com/containers/bubblewrap
+- 主题：cross-domain/agents
+- 来源：historical_assistant_recommendation
+- 核验：verified_primary_page
+- 实际阅读范围：repository_readme_security_usage_limitations
+- 用户阅读状态：unknown
+- [资料卡，暂无独立精读](../cross-domain/resources/bubblewrap/README.md)
+
+<a id="p173"></a>
+## p173 · Agent approvals & security
+
+- 标识：url:https://learn.chatgpt.com/docs/agent-approvals-security
+- 类型：官方技术文档
+- 原文入口：https://learn.chatgpt.com/docs/agent-approvals-security
+- 主题：cross-domain/agents
+- 来源：historical_assistant_recommendation
+- 核验：verified_primary_page
+- 实际阅读范围：body_sandbox_approvals_network_isolation_sections
+- 用户阅读状态：unknown
+- [资料卡，暂无独立精读](../cross-domain/resources/agent-approvals-security/README.md)
+
+<a id="p174"></a>
+## p174 · git-worktree - Manage multiple working trees
+
+- 标识：url:https://git-scm.com/docs/git-worktree
+- 类型：官方技术文档
+- 原文入口：https://git-scm.com/docs/git-worktree
+- 主题：cross-domain/agents
+- 来源：historical_assistant_recommendation
+- 核验：verified_primary_page
+- 实际阅读范围：name_description_commands_shared_repository
+- 用户阅读状态：unknown
+- [资料卡，暂无独立精读](../cross-domain/resources/git-worktree/README.md)
+
+<a id="p175"></a>
+## p175 · Security Model
+
+- 标识：url:https://gvisor.dev/docs/architecture_guide/security
+- 类型：官方技术文档
+- 原文入口：https://gvisor.dev/docs/architecture_guide/security/
+- 主题：cross-domain/agents
+- 来源：historical_assistant_recommendation
+- 核验：verified_primary_page
+- 实际阅读范围：threat_model_goals_defense_in_depth_faq
+- 用户阅读状态：unknown
+- [资料卡，暂无独立精读](../cross-domain/resources/gvisor-security/README.md)
+
+<a id="p176"></a>
+## p176 · Security
+
+- 标识：url:https://docs.wasmtime.dev/security.html
+- 类型：官方技术文档
+- 原文入口：https://docs.wasmtime.dev/security.html
+- 主题：cross-domain/agents
+- 来源：historical_assistant_recommendation
+- 核验：verified_primary_page
+- 实际阅读范围：webassembly_core_defense_in_depth_filesystem_access
+- 用户阅读状态：unknown
+- [资料卡，暂无独立精读](../cross-domain/resources/wasmtime-security/README.md)
+
+<a id="p177"></a>
+## p177 · Defeating Prompt Injections by Design
+
+- 标识：arxiv:2503.18813
+- 类型：论文
+- 原文入口：https://arxiv.org/abs/2503.18813v2
+- 主题：cross-domain/agents
+- 来源：historical_assistant_recommendation
+- 核验：verified_primary_page
+- 实际阅读范围：v2_full_text_targeted_read_threat_model_method_limitations_sections_3_5_7_9_10
+- 用户阅读状态：unknown
+- [资料卡，暂无独立精读](../cross-domain/papers/camel/README.md)
+
+<a id="p178"></a>
+## p178 · Scaling the Practice of Architecture, Conversationally
+
+- 标识：url:https://martinfowler.com/articles/scaling-architecture-conversationally.html
+- 类型：作者文章
+- 原文入口：https://martinfowler.com/articles/scaling-architecture-conversationally.html
+- 主题：cross-domain/agents
+- 来源：historical_assistant_recommendation
+- 核验：verified_primary_source
+- 实际阅读范围：Advice Process、四项支撑机制、技术策略边界、失败模式重点段落；未做组织实践验证
+- 用户阅读状态：unknown
+- [资料卡，暂无独立精读](../cross-domain/resources/scaling-architecture-conversationally/README.md)
+
+<a id="p179"></a>
+## p179 · Building multi-agent systems: When and how to use them
+
+- 标识：url:https://claude.com/blog/building-multi-agent-systems-when-and-how-to-use-them
+- 类型：官方博客
+- 原文入口：https://claude.com/blog/building-multi-agent-systems-when-and-how-to-use-them
+- 主题：cross-domain/agents
+- 来源：historical_assistant_recommendation
+- 核验：verified_primary_source
+- 实际阅读范围：定义、单Agent优先、三种收益条件、上下文拆分、独立核验及限制；示例代码未执行
+- 用户阅读状态：unknown
+- [资料卡，暂无独立精读](../cross-domain/resources/building-multi-agent-systems/README.md)
+
+<a id="p180"></a>
+## p180 · How we built our multi-agent research system
+
+- 标识：url:https://www.anthropic.com/engineering/multi-agent-research-system
+- 类型：官方博客
+- 原文入口：https://www.anthropic.com/engineering/multi-agent-research-system
+- 主题：cross-domain/agents
+- 来源：historical_assistant_recommendation
+- 核验：verified_primary_source
+- 实际阅读范围：架构、分派合同、评估、可靠性及同步瓶颈；内部评估未复现
+- 用户阅读状态：unknown
+- [资料卡，暂无独立精读](../cross-domain/resources/multi-agent-research-system/README.md)
+
+<a id="p181"></a>
+## p181 · Continuous Integration
+
+- 标识：url:https://martinfowler.com/articles/continuousIntegration.html
+- 类型：作者文章
+- 原文入口：https://martinfowler.com/articles/continuousIntegration.html
+- 主题：cross-domain/agents
+- 来源：historical_assistant_recommendation
+- 核验：verified_primary_source
+- 实际阅读范围：定义、主线频繁集成、自测试构建、分层验证、未完成工作隐藏；未运行项目CI
+- 用户阅读状态：unknown
+- [资料卡，暂无独立精读](../cross-domain/resources/continuous-integration/README.md)
+
+<a id="p182"></a>
+## p182 · The Architect Elevator — Visiting the upper floors
+
+- 标识：url:https://martinfowler.com/articles/architect-elevator.html
+- 类型：作者文章
+- 原文入口：https://martinfowler.com/articles/architect-elevator.html
+- 主题：cross-domain/agents
+- 来源：historical_assistant_recommendation
+- 核验：verified_primary_source
+- 实际阅读范围：上下层沟通、延后不可逆决定、适配目的、交付反馈；未作组织案例核验
+- 用户阅读状态：unknown
+- [资料卡，暂无独立精读](../cross-domain/resources/architect-elevator/README.md)
+
+<a id="p183"></a>
+## p183 · NanmiCoder/dsh-agent-teams — AgentTeams plugin for DeepSeek Harness
+
+- 标识：url:https://github.com/NanmiCoder/dsh-agent-teams
+- 类型：代码仓库
+- 原文入口：https://github.com/NanmiCoder/dsh-agent-teams
+- 主题：cross-domain/agents
+- 来源：historical_assistant_recommendation
+- 核验：verified_primary_source
+- 实际阅读范围：README、docs/usage.md与质量门禁相关段落；未下载、运行、测试或审计源码
+- 用户阅读状态：unknown
+- [资料卡，暂无独立精读](../cross-domain/resources/dsh-agent-teams/README.md)
+
+<a id="p184"></a>
+## p184 · Branch By Abstraction
+
+- 标识：url:https://martinfowler.com/bliki/BranchByAbstraction.html
+- 类型：作者文章
+- 原文入口：https://martinfowler.com/bliki/BranchByAbstraction.html
+- 主题：cross-domain/agents
+- 来源：historical_assistant_recommendation
+- 核验：verified_primary_source
+- 实际阅读范围：迁移流程、变体、持续交付条件全文；未跟读外链
+- 用户阅读状态：unknown
+- [资料卡，暂无独立精读](../cross-domain/resources/branch-by-abstraction/README.md)
+
+<a id="p185"></a>
+## p185 · MT-097: Dealing with High-Speed Logic
+
+- 标识：url:https://www.analog.com/media/en/training-seminars/tutorials/MT-097.pdf
+- 类型：官方技术文档
+- 原文入口：https://www.analog.com/media/en/training-seminars/tutorials/MT-097.pdf
+- 主题：cross-domain/engineering-exploration
+- 来源：official_associated_discovery_from_historical_fragment
+- 核验：verified_primary_source
+- 实际阅读范围：第1–5页边沿/传输线、阻尼、终端及时钟分配；第7–8页LVDS限制概览
+- 用户阅读状态：unknown
+- [资料卡，暂无独立精读](../cross-domain/resources/adi-mt-097/README.md)
+
+<a id="p186"></a>
+## p186 · MT-046: Op Amp Settling Time
+
+- 标识：url:https://www.analog.com/media/en/training-seminars/tutorials/MT-046.pdf
+- 类型：官方技术文档
+- 原文入口：https://www.analog.com/media/en/training-seminars/tutorials/MT-046.pdf
+- 主题：cross-domain/engineering-exploration
+- 来源：official_associated_discovery_from_historical_fragment
+- 核验：verified_primary_source
+- 实际阅读范围：4页文字与图注核对；未复现测量电路或波形
+- 用户阅读状态：unknown
+- [资料卡，暂无独立精读](../cross-domain/resources/adi-mt-046/README.md)
+
+<a id="p187"></a>
+## p187 · High-Speed Layout Guidelines (SCAA082A)
+
+- 标识：url:https://www.ti.com/lit/an/scaa082a/scaa082a.pdf
+- 类型：官方技术文档
+- 原文入口：https://www.ti.com/lit/an/scaa082a/scaa082a.pdf
+- 主题：cross-domain/engineering-exploration
+- 来源：official_associated_discovery_from_historical_fragment
+- 核验：verified_document_id_at_official_pdf_fragment_route_fetch_error
+- 实际阅读范围：封面、目录、1.2时钟频谱、1.6回流与环路、2.1设计前置问题；非全篇精读
+- 用户阅读状态：unknown
+- [资料卡，暂无独立精读](../cross-domain/resources/ti-scaa082a/README.md)
+
+<a id="p188"></a>
+## p188 · High-Speed Interface Layout Guidelines (SPRAAR7J, Rev. J)
+
+- 标识：url:https://www.ti.com/lit/an/spraar7j/spraar7j.pdf
+- 类型：官方技术文档
+- 原文入口：https://www.ti.com/lit/an/spraar7j/spraar7j.pdf
+- 主题：cross-domain/engineering-exploration
+- 来源：official_associated_discovery_from_historical_fragment
+- 核验：verified_primary_source
+- 实际阅读范围：封面、范围、§2.1纤维编织、§2.4参考平面、§3.6–3.10过孔与器件不连续；未逐项应用器件表
+- 用户阅读状态：unknown
+- [资料卡，暂无独立精读](../cross-domain/resources/ti-spraar7j/README.md)
