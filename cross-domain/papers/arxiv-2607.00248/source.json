@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2607.00248",
+  "title": "Seed2.0 Model Card: Towards Intelligence Frontier for Real-World Complexity",
+  "resource_kind": "official_technical_report",
+  "canonical_folder": "cross-domain/papers/arxiv-2607.00248",
+  "official_url": "https://arxiv.org/abs/2607.00248",
+  "official_fulltext_url": "https://arxiv.org/pdf/2607.00248",
+  "read_version": "v1",
+  "version_status": "checked_arxiv",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。arXiv v1 全文（PyMuPDF 抽取）：§1、§2.1 与图 1、§3 评测体系、§4.1（复杂指令遵循、长上下文）、§4 智能体部分、§6；官方页面核对发布日期；Seed2.1 官方发布博客（2026-06-23）全文。 不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "ByteDance Seed"
+  ],
+  "year": 2026,
+  "topic_paths": [
+    "cross-domain/evaluation",
+    "cross-domain/agents"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv v1 全文（PyMuPDF 抽取）：§1、§2.1 与图 1、§3 评测体系、§4.1（复杂指令遵循、长上下文）、§4 智能体部分、§6；官方页面核对发布日期；Seed2.1 官方发布博客（2026-06-23）全文。",
+    "mechanism_summary": "长程与长尾是智能体做不完真实任务的两个原因；评测体系源自真实用户需求、兼作开发指南；中文复杂指令遵循 912 例 75.26%（+2.37），语气控制 +15.16；社交陪伴为较小使用场景；自述编码落后 Claude、长尾知识落后 Gemini。",
+    "evidence_boundary": "未复现实验；数字取自原文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2607.00248",
+      "https://seed.bytedance.com/en/public_papers/seed2-0-model-card-towards-intelligence-frontier-for-real-world-complexity",
+      "https://seed.bytedance.com/en/blog/seed2-1-officially-released-advancing-ai-productivity"
+    ],
+    "source_origin": "eval_shapes_long_horizon_and_model_behavior_2026_10_04",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "text",
+    "multimodal"
+  ],
+  "task_tags": [
+    "decision",
+    "evaluation"
+  ]
+}

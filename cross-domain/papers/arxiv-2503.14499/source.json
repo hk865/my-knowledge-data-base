@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2503.14499",
+  "title": "Measuring AI Ability to Complete Long Software Tasks",
+  "resource_kind": "paper",
+  "canonical_folder": "cross-domain/papers/arxiv-2503.14499",
+  "official_url": "https://arxiv.org/abs/2503.14499",
+  "official_fulltext_url": "https://arxiv.org/pdf/2503.14499",
+  "read_version": "v4",
+  "version_status": "checked_arxiv",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。arXiv v4 全文（PyMuPDF 抽取）：摘要、§2.1、§3.3、附录 B.2、附录 F.2；METR 官方页面 time-horizons（2026-05-08 更新，含 benchmark_results_1_1.yaml 数据）与 Time Horizon 1.1 博客（2026-01-29）。 不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Thomas Kwa",
+    "Ben West",
+    "Joel Becker",
+    "Amy Deng",
+    "Katharyn Garcia",
+    "Max Hasin",
+    "Sami Jawhar",
+    "Megan Kinniment",
+    "Nate Rush",
+    "Sydney Von Arx",
+    "等 26 位作者"
+  ],
+  "year": 2025,
+  "topic_paths": [
+    "cross-domain/evaluation",
+    "cross-domain/agents"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv v4 全文（PyMuPDF 抽取）：摘要、§2.1、§3.3、附录 B.2、附录 F.2；METR 官方页面 time-horizons（2026-05-08 更新，含 benchmark_results_1_1.yaml 数据）与 Time Horizon 1.1 博客（2026-01-29）。",
+    "mechanism_summary": "50% 时间跨度定义；170 任务、约每 7 个月翻倍；任务全可自动判分、静态、少惩罚；凌乱度每 +1 分成功率约 -8.1%；TH1.1 228 任务、8h+ 任务 31 个仅 5 个有人类实测；每模型约 1000 次运行、1–2 周；16h 以上测量不可靠。",
+    "evidence_boundary": "未复现实验；数字取自原文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2503.14499",
+      "https://arxiv.org/pdf/2503.14499",
+      "https://metr.org/time-horizons/",
+      "https://metr.org/blog/2026-1-29-time-horizon-1-1/",
+      "https://metr.org/assets/benchmark_results_1_1.yaml"
+    ],
+    "source_origin": "eval_shapes_long_horizon_and_model_behavior_2026_10_04",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "text",
+    "code"
+  ],
+  "task_tags": [
+    "decision",
+    "evaluation"
+  ],
+  "previous_titles": [
+    "Measuring AI Ability to Complete Long Tasks"
+  ]
+}

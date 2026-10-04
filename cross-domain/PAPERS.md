@@ -90,3 +90,9 @@
 - [Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces](papers/arxiv-2601.11868/README.md) · 2026 · 文献卡，暂无独立精读
 - [Introducing SWE-bench Verified](papers/openai-swe-bench-verified/README.md) · 2024 · 文献卡，暂无独立精读
 - [Why SWE-bench Verified no longer measures frontier coding capabilities](papers/openai-swe-bench-verified-retired/README.md) · 2026 · 文献卡，暂无独立精读
+- [Measuring AI Ability to Complete Long Software Tasks](papers/arxiv-2503.14499/README.md) · 2025 · 文献卡，暂无独立精读
+- [OpenAI GPT-5.6 System Card](papers/openai-gpt-5-6-system-card/README.md) · 2026 · 文献卡，暂无独立精读
+- [OpenAI GPT-6 Astra System Card](papers/openai-gpt-6-astra-system-card/README.md) · 2026 · 文献卡，暂无独立精读
+- [System Card: Claude Opus 5.5](papers/anthropic-claude-opus-5-5-system-card/README.md) · 2026 · 文献卡，暂无独立精读
+- [Gemini 3.8 Flash Model Card](papers/google-gemini-3-8-flash-model-card/README.md) · 2026 · 文献卡，暂无独立精读
+- [Seed2.0 Model Card: Towards Intelligence Frontier for Real-World Complexity](papers/arxiv-2607.00248/README.md) · 2026 · 文献卡，暂无独立精读

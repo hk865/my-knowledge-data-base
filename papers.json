@@ -30897,5 +30897,304 @@
       "Trevor Darrell",
       "Jitendra Malik"
     ]
+  },
+  {
+    "id": "arxiv:2503.14499",
+    "title": "Measuring AI Ability to Complete Long Software Tasks",
+    "url": "https://arxiv.org/abs/2503.14499",
+    "arxiv_id": "2503.14499",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "cross-domain/evaluation",
+      "cross-domain/agents"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2503.14499"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p484",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2503.14499",
+    "canonical_path": "cross-domain/papers/arxiv-2503.14499/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2503.14499/README.md",
+    "source_path": "cross-domain/papers/arxiv-2503.14499/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Thomas Kwa",
+      "Ben West",
+      "Joel Becker",
+      "Amy Deng",
+      "Katharyn Garcia",
+      "Max Hasin",
+      "Sami Jawhar",
+      "Megan Kinniment",
+      "Nate Rush",
+      "Sydney Von Arx",
+      "等 26 位作者"
+    ],
+    "previous_titles": [
+      "Measuring AI Ability to Complete Long Tasks"
+    ]
+  },
+  {
+    "id": "url:https://deploymentsafety.openai.com/gpt-5-6/gpt-5-6.pdf",
+    "title": "OpenAI GPT-5.6 System Card",
+    "url": "https://deploymentsafety.openai.com/gpt-5-6",
+    "arxiv_id": null,
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "cross-domain/agents",
+      "cross-domain/evaluation",
+      "llm/posttraining/rl"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://deploymentsafety.openai.com/gpt-5-6"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "official_technical_report",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p485",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "cross-domain/papers/openai-gpt-5-6-system-card",
+    "canonical_path": "cross-domain/papers/openai-gpt-5-6-system-card/README.md",
+    "canonical_readme": "cross-domain/papers/openai-gpt-5-6-system-card/README.md",
+    "source_path": "cross-domain/papers/openai-gpt-5-6-system-card/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "OpenAI"
+    ]
+  },
+  {
+    "id": "url:https://deploymentsafety.openai.com/gpt-6-astra/gpt-6-astra.pdf",
+    "title": "OpenAI GPT-6 Astra System Card",
+    "url": "https://deploymentsafety.openai.com/gpt-6-astra",
+    "arxiv_id": null,
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "cross-domain/agents",
+      "cross-domain/evaluation",
+      "llm/posttraining/rl"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://deploymentsafety.openai.com/gpt-6-astra"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "official_technical_report",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p486",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "cross-domain/papers/openai-gpt-6-astra-system-card",
+    "canonical_path": "cross-domain/papers/openai-gpt-6-astra-system-card/README.md",
+    "canonical_readme": "cross-domain/papers/openai-gpt-6-astra-system-card/README.md",
+    "source_path": "cross-domain/papers/openai-gpt-6-astra-system-card/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "OpenAI"
+    ]
+  },
+  {
+    "id": "url:https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf",
+    "title": "System Card: Claude Opus 5.5",
+    "url": "https://www.anthropic.com/system-cards",
+    "arxiv_id": null,
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "cross-domain/agents",
+      "cross-domain/evaluation",
+      "llm/posttraining/rl"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://www.anthropic.com/system-cards"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "official_technical_report",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p487",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "cross-domain/papers/anthropic-claude-opus-5-5-system-card",
+    "canonical_path": "cross-domain/papers/anthropic-claude-opus-5-5-system-card/README.md",
+    "canonical_readme": "cross-domain/papers/anthropic-claude-opus-5-5-system-card/README.md",
+    "source_path": "cross-domain/papers/anthropic-claude-opus-5-5-system-card/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Anthropic"
+    ]
+  },
+  {
+    "id": "url:https://deepmind.google/models/model-cards/gemini-3-8-flash/",
+    "title": "Gemini 3.8 Flash Model Card",
+    "url": "https://deepmind.google/models/model-cards/gemini-3-8-flash/",
+    "arxiv_id": null,
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "cross-domain/evaluation",
+      "cross-domain/agents"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://deepmind.google/models/model-cards/gemini-3-8-flash/"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "official_technical_report",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p488",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "multimodal",
+      "code"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "cross-domain/papers/google-gemini-3-8-flash-model-card",
+    "canonical_path": "cross-domain/papers/google-gemini-3-8-flash-model-card/README.md",
+    "canonical_readme": "cross-domain/papers/google-gemini-3-8-flash-model-card/README.md",
+    "source_path": "cross-domain/papers/google-gemini-3-8-flash-model-card/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Google DeepMind"
+    ]
+  },
+  {
+    "id": "arxiv:2607.00248",
+    "title": "Seed2.0 Model Card: Towards Intelligence Frontier for Real-World Complexity",
+    "url": "https://arxiv.org/abs/2607.00248",
+    "arxiv_id": "2607.00248",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "cross-domain/evaluation",
+      "cross-domain/agents"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2607.00248"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "official_technical_report",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p489",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2607.00248",
+    "canonical_path": "cross-domain/papers/arxiv-2607.00248/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2607.00248/README.md",
+    "source_path": "cross-domain/papers/arxiv-2607.00248/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "ByteDance Seed"
+    ]
   }
 ]

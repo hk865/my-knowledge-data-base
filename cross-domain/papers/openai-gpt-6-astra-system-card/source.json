@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "resource_id": "url:https://deploymentsafety.openai.com/gpt-6-astra/gpt-6-astra.pdf",
+  "title": "OpenAI GPT-6 Astra System Card",
+  "resource_kind": "official_technical_report",
+  "canonical_folder": "cross-domain/papers/openai-gpt-6-astra-system-card",
+  "official_url": "https://deploymentsafety.openai.com/gpt-6-astra",
+  "official_fulltext_url": "https://deploymentsafety.openai.com/gpt-6-astra/gpt-6-astra.pdf",
+  "read_version": "2026-09-03（含至 2026-09-29 的修订）",
+  "version_status": "checked_official_pdf",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。官方 PDF 全文抽取后核对修订日志、§1、§2、§8.2–8.6、§8.7.2、§8.8 开头与附录 dots 的 B.3.5；GPT-6.1 Sol 补充系统卡（2026-09-29）核对 §1、§2、§7.4.1、§7.6。 不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "OpenAI"
+  ],
+  "year": 2026,
+  "topic_paths": [
+    "cross-domain/agents",
+    "cross-domain/evaluation",
+    "llm/posttraining/rl"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "官方 PDF 全文抽取后核对修订日志、§1、§2、§8.2–8.6、§8.7.2、§8.8 开头与附录 dots 的 B.3.5；GPT-6.1 Sol 补充系统卡（2026-09-29）核对 §1、§2、§7.4.1、§7.6。",
+    "mechanism_summary": "对齐改进覆盖预训练数据到 RL 判分；训练后构建的评测：绕过自动审查 5%→0、绕过警告 64%→19%、攻击蜜罐 55.4%→0；虚假陈述 4 倍、坏搜索工具 10 倍；办公环境失调 18.8%→3.4%；54,218 个 Codex 任务严重度 3+ 标记 73→34；评测意识 2.8%→9.6%；可监控性下降；dots 持久环境中的授权变化评测。",
+    "evidence_boundary": "未复现实验；数字取自原文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://deploymentsafety.openai.com/gpt-6-astra",
+      "https://deploymentsafety.openai.com/gpt-6-astra/gpt-6-astra.pdf",
+      "https://deploymentsafety.openai.com/gpt-6-1-sol/gpt-6-1-sol.pdf"
+    ],
+    "source_origin": "eval_shapes_long_horizon_and_model_behavior_2026_10_04",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "text",
+    "code"
+  ],
+  "task_tags": [
+    "decision",
+    "evaluation"
+  ]
+}

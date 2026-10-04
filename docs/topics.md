@@ -140,7 +140,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [LLM Critics Help Catch LLM Bugs](paper-catalog.md#p421)
 - [The Leaderboard Illusion](paper-catalog.md#p429)
 
-### 后训练 强化学习（37）
+### 后训练 强化学习（40）
 
 细分：策略优化算法；结果与过程奖励；轨迹采样与数据回流；奖励与验证器；长轨迹信用分配；探索与轨迹分布
 
@@ -181,6 +181,9 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Generalizing Verifiable Instruction Following](paper-catalog.md#p431)
 - [ImpossibleBench: Measuring LLMs' Propensity of Exploiting Test Cases](paper-catalog.md#p432)
 - [Natural Emergent Misalignment from Reward Hacking in Production RL](paper-catalog.md#p433)
+- [OpenAI GPT-5.6 System Card](paper-catalog.md#p485)
+- [OpenAI GPT-6 Astra System Card](paper-catalog.md#p486)
+- [System Card: Claude Opus 5.5](paper-catalog.md#p487)
 
 ### 架构与效率（39）
 
@@ -752,7 +755,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 ## 跨方向方法与探索
 
-### Agent 与上下文系统（30）
+### Agent 与上下文系统（36）
 
 细分：Agent轨迹与性质验证
 
@@ -786,6 +789,12 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces](paper-catalog.md#p434)
 - [Introducing SWE-bench Verified](paper-catalog.md#p435)
 - [Why SWE-bench Verified no longer measures frontier coding capabilities](paper-catalog.md#p436)
+- [Measuring AI Ability to Complete Long Software Tasks](paper-catalog.md#p484)
+- [OpenAI GPT-5.6 System Card](paper-catalog.md#p485)
+- [OpenAI GPT-6 Astra System Card](paper-catalog.md#p486)
+- [System Card: Claude Opus 5.5](paper-catalog.md#p487)
+- [Gemini 3.8 Flash Model Card](paper-catalog.md#p488)
+- [Seed2.0 Model Card: Towards Intelligence Frontier for Real-World Complexity](paper-catalog.md#p489)
 
 
 ### 模型科学（22）
@@ -836,7 +845,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 细分：
 
 
-### 评估与监督可靠性（55）
+### 评估与监督可靠性（61）
 
 细分：性质测试、变形测试与行为验证边界
 
@@ -895,6 +904,12 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces](paper-catalog.md#p434)
 - [Introducing SWE-bench Verified](paper-catalog.md#p435)
 - [Why SWE-bench Verified no longer measures frontier coding capabilities](paper-catalog.md#p436)
+- [Measuring AI Ability to Complete Long Software Tasks](paper-catalog.md#p484)
+- [OpenAI GPT-5.6 System Card](paper-catalog.md#p485)
+- [OpenAI GPT-6 Astra System Card](paper-catalog.md#p486)
+- [System Card: Claude Opus 5.5](paper-catalog.md#p487)
+- [Gemini 3.8 Flash Model Card](paper-catalog.md#p488)
+- [Seed2.0 Model Card: Towards Intelligence Frontier for Real-World Complexity](paper-catalog.md#p489)
 
 
 ### 知识蒸馏与模型压缩（9）
@@ -927,14 +942,14 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 | 模态 \ 任务 | understanding | generation | decision | evaluation | analysis |
 |---|---:|---:|---:|---:|---:|
-| text | [57](#x-text-understanding) | [142](#x-text-generation) | [73](#x-text-decision) | [63](#x-text-evaluation) | [47](#x-text-analysis) |
+| text | [57](#x-text-understanding) | [142](#x-text-generation) | [79](#x-text-decision) | [69](#x-text-evaluation) | [47](#x-text-analysis) |
 | image | [113](#x-image-understanding) | [51](#x-image-generation) | [86](#x-image-decision) | [16](#x-image-evaluation) | [13](#x-image-analysis) |
 | video | [33](#x-video-understanding) | [39](#x-video-generation) | [25](#x-video-decision) | [12](#x-video-evaluation) | [4](#x-video-analysis) |
 | audio | [7](#x-audio-understanding) | [6](#x-audio-generation) | · | [1](#x-audio-evaluation) | · |
 | action | [8](#x-action-understanding) | [33](#x-action-generation) | [127](#x-action-decision) | [9](#x-action-evaluation) | [2](#x-action-analysis) |
 | state | [15](#x-state-understanding) | [2](#x-state-generation) | [64](#x-state-decision) | [1](#x-state-evaluation) | · |
-| code | [1](#x-code-understanding) | [20](#x-code-generation) | [16](#x-code-decision) | [15](#x-code-evaluation) | [7](#x-code-analysis) |
-| multimodal | [54](#x-multimodal-understanding) | [42](#x-multimodal-generation) | [39](#x-multimodal-decision) | [17](#x-multimodal-evaluation) | [8](#x-multimodal-analysis) |
+| code | [1](#x-code-understanding) | [20](#x-code-generation) | [21](#x-code-decision) | [20](#x-code-evaluation) | [7](#x-code-analysis) |
+| multimodal | [54](#x-multimodal-understanding) | [42](#x-multimodal-generation) | [41](#x-multimodal-decision) | [19](#x-multimodal-evaluation) | [8](#x-multimodal-analysis) |
 | tabular | [1](#x-tabular-understanding) | · | · | · | · |
 
 <a id="x-text-understanding"></a>
@@ -1148,7 +1163,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-text-decision"></a>
 
-### text × decision（73）
+### text × decision（79）
 
 - [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](paper-catalog.md#p034)
 - [ReAct: Synergizing Reasoning and Acting in Language Models](paper-catalog.md#p040)
@@ -1223,10 +1238,16 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [ImpossibleBench: Measuring LLMs' Propensity of Exploiting Test Cases](paper-catalog.md#p432)
 - [Natural Emergent Misalignment from Reward Hacking in Production RL](paper-catalog.md#p433)
 - [Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces](paper-catalog.md#p434)
+- [Measuring AI Ability to Complete Long Software Tasks](paper-catalog.md#p484)
+- [OpenAI GPT-5.6 System Card](paper-catalog.md#p485)
+- [OpenAI GPT-6 Astra System Card](paper-catalog.md#p486)
+- [System Card: Claude Opus 5.5](paper-catalog.md#p487)
+- [Gemini 3.8 Flash Model Card](paper-catalog.md#p488)
+- [Seed2.0 Model Card: Towards Intelligence Frontier for Real-World Complexity](paper-catalog.md#p489)
 
 <a id="x-text-evaluation"></a>
 
-### text × evaluation（63）
+### text × evaluation（69）
 
 - [PersonaEval: Are LLM Evaluators Human Enough to Judge Role-Play?](paper-catalog.md#p032)
 - [On scalable oversight with weak LLMs judging strong LLMs](paper-catalog.md#p033)
@@ -1291,6 +1312,12 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces](paper-catalog.md#p434)
 - [Introducing SWE-bench Verified](paper-catalog.md#p435)
 - [Why SWE-bench Verified no longer measures frontier coding capabilities](paper-catalog.md#p436)
+- [Measuring AI Ability to Complete Long Software Tasks](paper-catalog.md#p484)
+- [OpenAI GPT-5.6 System Card](paper-catalog.md#p485)
+- [OpenAI GPT-6 Astra System Card](paper-catalog.md#p486)
+- [System Card: Claude Opus 5.5](paper-catalog.md#p487)
+- [Gemini 3.8 Flash Model Card](paper-catalog.md#p488)
+- [Seed2.0 Model Card: Towards Intelligence Frontier for Real-World Complexity](paper-catalog.md#p489)
 
 <a id="x-text-analysis"></a>
 
@@ -2154,7 +2181,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-code-decision"></a>
 
-### code × decision（16）
+### code × decision（21）
 
 - [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](paper-catalog.md#p034)
 - [Voyager: An Open-Ended Embodied Agent with Large Language Models](paper-catalog.md#p041)
@@ -2172,10 +2199,15 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [ImpossibleBench: Measuring LLMs' Propensity of Exploiting Test Cases](paper-catalog.md#p432)
 - [Natural Emergent Misalignment from Reward Hacking in Production RL](paper-catalog.md#p433)
 - [Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces](paper-catalog.md#p434)
+- [Measuring AI Ability to Complete Long Software Tasks](paper-catalog.md#p484)
+- [OpenAI GPT-5.6 System Card](paper-catalog.md#p485)
+- [OpenAI GPT-6 Astra System Card](paper-catalog.md#p486)
+- [System Card: Claude Opus 5.5](paper-catalog.md#p487)
+- [Gemini 3.8 Flash Model Card](paper-catalog.md#p488)
 
 <a id="x-code-evaluation"></a>
 
-### code × evaluation（15）
+### code × evaluation（20）
 
 - [INSPECT: Intrinsic and Systematic Probing Evaluation for Code Transformers](paper-catalog.md#p030)
 - [Finding bugs across the Python ecosystem with Claude and property-based testing](paper-catalog.md#p160)
@@ -2192,6 +2224,11 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces](paper-catalog.md#p434)
 - [Introducing SWE-bench Verified](paper-catalog.md#p435)
 - [Why SWE-bench Verified no longer measures frontier coding capabilities](paper-catalog.md#p436)
+- [Measuring AI Ability to Complete Long Software Tasks](paper-catalog.md#p484)
+- [OpenAI GPT-5.6 System Card](paper-catalog.md#p485)
+- [OpenAI GPT-6 Astra System Card](paper-catalog.md#p486)
+- [System Card: Claude Opus 5.5](paper-catalog.md#p487)
+- [Gemini 3.8 Flash Model Card](paper-catalog.md#p488)
 
 <a id="x-code-analysis"></a>
 
@@ -2313,7 +2350,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-multimodal-decision"></a>
 
-### multimodal × decision（39）
+### multimodal × decision（41）
 
 - [Object-Centric World Model for Language-Guided Manipulation](paper-catalog.md#p052)
 - [Language-Grounded Hierarchical Planning and Execution with Multi-Robot 3D Scene Graphs](paper-catalog.md#p055)
@@ -2354,10 +2391,12 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [WebArena: A Realistic Web Environment for Building Autonomous Agents](paper-catalog.md#p402)
 - [GAIA: a benchmark for General AI Assistants](paper-catalog.md#p410)
 - [OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments](paper-catalog.md#p416)
+- [Gemini 3.8 Flash Model Card](paper-catalog.md#p488)
+- [Seed2.0 Model Card: Towards Intelligence Frontier for Real-World Complexity](paper-catalog.md#p489)
 
 <a id="x-multimodal-evaluation"></a>
 
-### multimodal × evaluation（17）
+### multimodal × evaluation（19）
 
 - [Vision-and-Language Navigation: Interpreting visually-grounded navigation instructions in real environments](paper-catalog.md#p119)
 - [DataComp: In search of the next generation of multimodal datasets](paper-catalog.md#p346)
@@ -2376,6 +2415,8 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [HarmBench: A Standardized Evaluation Framework for Automated Red Teaming and Robust Refusal](paper-catalog.md#p412)
 - [OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments](paper-catalog.md#p416)
 - [Humanity's Last Exam](paper-catalog.md#p425)
+- [Gemini 3.8 Flash Model Card](paper-catalog.md#p488)
+- [Seed2.0 Model Card: Towards Intelligence Frontier for Real-World Complexity](paper-catalog.md#p489)
 
 <a id="x-multimodal-analysis"></a>
 

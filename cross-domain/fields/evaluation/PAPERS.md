@@ -74,3 +74,12 @@
 ## 不再列在本方向主线的条目
 
 - [Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters](../../../llm/papers/test-time-compute/README.md)：旧版 Baseline 页把它列为"推理时计算的可比较基线"，它属于[推理时计算方向](../../../llm/fields/inference/README.md)，本方向只在采样口径上引用。
+
+## 2026 年的系统卡与长程评测（时效补充）
+
+- [Measuring AI Ability to Complete Long Software Tasks](../../papers/arxiv-2503.14499/README.md) · 2025 · 文献卡 · 长程能力的时间跨度度量（第三方，METR）
+- [OpenAI GPT-5.6 System Card](../../papers/openai-gpt-5-6-system-card/README.md) · 2026 · 文献卡 · OpenAI 2026-07 系统卡：自主性与越权评测
+- [OpenAI GPT-6 Astra System Card](../../papers/openai-gpt-6-astra-system-card/README.md) · 2026 · 文献卡 · OpenAI 2026-09 系统卡：训练后另造评测、长程任务
+- [System Card: Claude Opus 5.5](../../papers/anthropic-claude-opus-5-5-system-card/README.md) · 2026 · 文献卡 · Anthropic 2026-09 系统卡：奖励黑客与判分器意识
+- [Gemini 3.8 Flash Model Card](../../papers/google-gemini-3-8-flash-model-card/README.md) · 2026 · 文献卡 · Google 2026-09 模型卡
+- [Seed2.0 Model Card: Towards Intelligence Frontier for Real-World Complexity](../../papers/arxiv-2607.00248/README.md) · 2026 · 文献卡 · 字节跳动 Seed2.0 模型卡（2026-06）

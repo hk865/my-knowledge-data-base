@@ -1,6 +1,6 @@
 # 全库论文总目录
 
-共 483 个去重资源（456 篇论文、19 篇官方技术报告、1 个代码仓库、7 篇官方博客）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
+共 489 个去重资源（457 篇论文、24 篇官方技术报告、1 个代码仓库、7 篇官方博客）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
 
 身份核验、助手教学进度和用户阅读状态分开。历史来源保留原角色与证据局限，不将助手推荐写成用户提供，也不将教学完成写成用户已读。
 
@@ -5196,6 +5196,66 @@
 - 身份核验：selected_sections_checked_not_full_read
 - 用户阅读状态：unknown
 - [文献卡](../multimodal/papers/arxiv-1311.2524/README.md)
+
+<a id="p484"></a>
+## p484 · Measuring AI Ability to Complete Long Software Tasks
+
+- 标识：arxiv:2503.14499
+- 原文 / 官方入口：https://arxiv.org/abs/2503.14499
+- 主题：cross-domain/evaluation, cross-domain/agents
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2503.14499/README.md)
+
+<a id="p485"></a>
+## p485 · OpenAI GPT-5.6 System Card
+
+- 标识：url:https://deploymentsafety.openai.com/gpt-5-6/gpt-5-6.pdf
+- 原文 / 官方入口：https://deploymentsafety.openai.com/gpt-5-6
+- 主题：cross-domain/agents, cross-domain/evaluation, llm/posttraining/rl
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/openai-gpt-5-6-system-card/README.md)
+
+<a id="p486"></a>
+## p486 · OpenAI GPT-6 Astra System Card
+
+- 标识：url:https://deploymentsafety.openai.com/gpt-6-astra/gpt-6-astra.pdf
+- 原文 / 官方入口：https://deploymentsafety.openai.com/gpt-6-astra
+- 主题：cross-domain/agents, cross-domain/evaluation, llm/posttraining/rl
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/openai-gpt-6-astra-system-card/README.md)
+
+<a id="p487"></a>
+## p487 · System Card: Claude Opus 5.5
+
+- 标识：url:https://www-cdn.anthropic.com/fc1b44717c85dc068bc6ba5024219938094694bd/Claude%20Opus%205.5%20System%20Card.pdf
+- 原文 / 官方入口：https://www.anthropic.com/system-cards
+- 主题：cross-domain/agents, cross-domain/evaluation, llm/posttraining/rl
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/anthropic-claude-opus-5-5-system-card/README.md)
+
+<a id="p488"></a>
+## p488 · Gemini 3.8 Flash Model Card
+
+- 标识：url:https://deepmind.google/models/model-cards/gemini-3-8-flash/
+- 原文 / 官方入口：https://deepmind.google/models/model-cards/gemini-3-8-flash/
+- 主题：cross-domain/evaluation, cross-domain/agents
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/google-gemini-3-8-flash-model-card/README.md)
+
+<a id="p489"></a>
+## p489 · Seed2.0 Model Card: Towards Intelligence Frontier for Real-World Complexity
+
+- 标识：arxiv:2607.00248
+- 原文 / 官方入口：https://arxiv.org/abs/2607.00248
+- 主题：cross-domain/evaluation, cross-domain/agents
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2607.00248/README.md)
 
 ## 2026年10月3日既有条目更新
 
