@@ -8,6 +8,7 @@
 > - 扩散成为主流靠的是 2021–2022 年的三步：压到潜空间降成本（LDM），接上语言模型做文本条件（DALL·E 2、Imagen），主干换成 Transformer（DiT）；流匹配（2022）与 SD3（2024）再把去噪路径拉直，少走几步。
 > - 自回归路线一直并行（DALL·E 2021、Parti 2022、VAR 2024）；GAN 的判别器转入自编码器训练和少步蒸馏，作为"挑错"的损失项继续使用。
 > - 每一代都有清楚的失败场景：模式坍缩、采样慢、属性绑定错、数不清物体、分不清左右、写不对字。视频、2022 年后的公司模型与世界模型，见续篇[观点页](../../../perspectives/generative-convergence.md)。
+> - 2025–2026 年：多模态大模型成为图像生成器的条件编码器（Qwen-Image）甚至生成器本身（HunyuanImage 3.0、GPT-4o 图像生成），生成与编辑并进同一个模型，扩散模型开始用 GRPO 加奖励模型做强化学习；写字大幅改善，但生僻字、长段小字和左右关系仍在 2026 年官方材料的已知局限里（主线第 10 个节点）。
 
 本页是[多模态总目录](../../README.md)下的一个方向。拆分后的基线见 [Baseline 页](BASELINES.md)，问题路线见[路线图](ROADMAP.md)，收录的全部论文见[论文目录](PAPERS.md)。
 
@@ -33,6 +34,7 @@
 2014  GAN ──── DCGAN(2015) ──── 主导样本质量到 2020 ───────────→ 退为部件：自编码器的判别器损失、少步蒸馏
 2020        DDPM / Score SDE ── ADM(2021) ── LDM(2021) ── DiT(2022) ── 流匹配 / SD3(2024) ──→ 图像与视频的主流
 2021        DALL·E(自回归) ── Parti(2022) ── VAR(2024) ───────────→ 与语言模型统一的路线；视频与世界模型中按帧自回归
+2025        多模态大模型作条件编码器(Qwen-Image) / 在语言模型内部扩散(HunyuanImage 3.0) ──→ 生成与编辑合一，扩散 + GRPO
 ```
 
 | 家族 | 当时做不好的场景（原文证据） | 后来怎样补 | 现在用在哪里（原文证据） |
@@ -41,7 +43,7 @@
 | 扩散 / 流匹配 | 采样慢：DDPM 设 1000 步，在 TPU v3-8 上生成 128 张 256×256 图要 300 秒（附录 B）；像素空间训练常需数百 GPU 天（LDM Sec.1） | 潜空间（LDM）、Transformer 主干（DiT）、直线路径（流匹配、SD3）、蒸馏（ADD） | 图像：SD3 用整流流加 MM-DiT；视频：Veo 3、Sora、HunyuanVideo、Wan、Seedance 1.0 都用潜空间扩散或流匹配加 Transformer（见[观点页](../../../perspectives/generative-convergence.md)） |
 | 自回归 | dVAE 重建丢失文字、细线等细节（DALL·E Fig.1）；计数超过 7 个基本不准、左右关系近乎随机（Parti Sec.6.3）；展平成一维后破坏空间邻近、需要 O(n²) 步（VAR Sec.3） | 更好的分词器（Parti 的 ViT-VQGAN）、由粗到细逐尺度预测（VAR） | VideoPoet（2023）用 decoder-only 语言模型生成视频 token；世界模型 Genie（2024）按帧自回归生成，Genie 2 被官方称为"自回归的潜空间扩散模型"：用带因果 mask 的 Transformer 逐帧往后生成潜变量（见[观点页](../../../perspectives/generative-convergence.md)） |
 
-[判断] 三个家族的分工今天大致是：扩散与流匹配负责"把一段连续信号画好"，自回归负责"沿时间或沿序列往后接"，GAN 的判别器负责"挑局部细节的错"。2024 年之后的大模型常把三者组合在一个系统里。
+[判断] 三个家族的分工今天大致是：扩散与流匹配负责"把一段连续信号画好"，自回归负责"沿时间或沿序列往后接"，GAN 的判别器负责"挑局部细节的错"。2024 年之后的大模型常把三者组合在一个系统里。[判断] 2025 年起分工上多了一层：语言模型（或多模态大模型）负责"理解要画什么"，扩散负责画；在 HunyuanImage 3.0 和 GPT-4o 图像生成里，这两件事已在同一个网络中完成。判别器在蒸馏中仍在用（Seedream 4.0），在自编码器训练中则出现了去掉它的反例（Qwen-Image、Qwen-Image-2.0，见批注）。
 
 ## 主线历史
 
@@ -56,6 +58,7 @@
 7. **DALL·E 2（OpenAI）、Imagen 与 Parti（Google），2022：目标转向任意文字**。留下的问题：类别标签只能指定 1000 种东西，人想用任意文字描述画面。DALL·E 2 先由一个先验根据文字生成 CLIP 图像嵌入，再由扩散解码器根据嵌入生成图像；Imagen 改用只在文本上预训练的冻结 T5-XXL 作文本编码器，发现加大语言模型比加大图像扩散模型更能提升画质和图文对齐；同年 Google 的另一组作者用 Parti 走自回归路线，把 encoder–decoder Transformer 扩到 200 亿参数。三者在 MS-COCO 零样本 FID 上分别为 10.39、7.27 和 7.23。评测随之从 ImageNet FID 迁到 COCO 零样本 FID 加人工评测，Imagen 建了 DrawBench，Parti 建了 PartiPrompts。同年 Google 的 [Video Diffusion](../../papers/video-diffusion/README.md) 把扩散方法扩到视频：把图像 U-Net 扩成空间与时间分解的 3D U-Net，图像和视频联合训练。**做不好**：这一代的失败集中在"听懂复杂的话"。DALL·E 2 第 7 节自述把颜色分别绑定到两个方块上会弄混，难以生成连贯的文字；Imagen 第 6 节自述生成人物时质量明显下降，第 3 节指出 CLIP 分数不善于计数；Parti 第 6.3 节列得最细：颜色串到未指定颜色的物体上，同类物体最多可靠地画到 7 个，多种物体同时计数几乎完全失败，左右关系基本随机，提示说"盘子里没有香蕉"仍会画出香蕉，而且提示越复杂错误越多。
 8. **DiT（2022 年 12 月 arXiv，UC Berkeley 与 NYU）**。留下的问题：从 DDPM 到 LDM，所有扩散模型都用卷积 U-Net 作主干，这种归纳偏置是否必要？改变：在 LDM 的潜空间里，把 U-Net 换成作用于潜变量块的标准 Transformer。12 个模型的计算量与 FID 相关系数为 −0.93，计算量越大样本越好；最大模型在 ImageNet 256×256 类条件生成上把 FID 从 LDM 的 3.60 降到 2.27。作者把"作为 DALL·E 2、Stable Diffusion 这类系统的主干"列为后续工作。**做不好**：论文只在 ImageNet 类条件生成上验证，没有做文本条件；图像编码仍靠现成的卷积 VAE（Sec.3.1），重建上限不变。
 9. **流匹配（2022，Meta FAIR 与 Weizmann）到 SD3（2024，Stability AI）：把路径拉直，并把文本条件放进 Transformer**。留下的问题：扩散只能用少数由扩散过程定义的弯曲路径，训练时间长、采样步数多（Flow Matching Sec.1）；用交叉注意力把固定的文本表示接进模型，文字理解有限（SD3 Sec.1）。改变：流匹配直接回归从噪声到数据的速度场，最优传输路径是直线；在 ImageNet 32×32 上达到同样数值误差约只需扩散模型 60% 的函数调用（Fig.7）。SD3 用整流流（同一类直线路径）训练，并提出 MM-DiT：文本与图像两路 token 各用一套权重，在注意力里双向交换信息；8B 模型在 GenEval 上总分 0.74，高于 DALL·E 3 的 0.67，验证损失随规模平滑下降，图像与视频都未见饱和。同一时期，自回归一侧的 VAR（2024，北京大学与字节跳动）把"下一个 token"改成"下一个尺度"，在 ImageNet 256×256 类条件生成上报告 FID 1.73、比同类自回归基线快约 20 倍。**做不好**：SD3 的 GenEval 分项里，位置关系最好也只有 0.33–0.40，是各项最低的（Table 5）；SD3 第 5.2.1 节说明潜空间方案的质量上限仍受自编码器重建限制；VAR 第 8 节自述还没有做文本到图像和视频。
+10. **2025–2026：语言模型进入生成器，生成与编辑合一，扩散模型做强化学习**（阿里 Qwen、腾讯混元、字节 Seed、美团、OpenAI、Google）。留下的问题：SD3 一代用固定的文本编码器读提示，写字、位置、计数仍是最弱项，编辑要另训模型。改变有三条。其一，多模态大模型（一句话：能同时读图和文字的语言模型）成为条件编码器，或者干脆就是生成器：[Qwen-Image](../../papers/arxiv-2508.02324/README.md)（2025 年 8 月）用冻结的 Qwen2.5-VL 读提示，接 200 亿参数的 MMDiT；[HunyuanImage 3.0](../../papers/arxiv-2509.23951/README.md)（2025 年 9 月）在一个总参数 800 亿以上、每 token 激活 130 亿的 MoE（混合专家：每个 token 只走一部分子网络）语言模型内部对 VAE 潜变量做扩散，文字自回归、图像去噪，画之前可先写一段思维链；OpenAI 的[系统卡](../../papers/gpt-4o-image-generation-system-card/README.md)写明 GPT-4o 图像生成（2025 年 3 月）是"原生嵌入 ChatGPT 的自回归模型"，Google 的 [Gemini 3.1 Flash Image](../../papers/gemini-3-1-flash-image-model-card/README.md)（Nano Banana 2，2026 年 2 月）模型卡只写"基于 Gemini 3 Flash"。其二，编辑成为同一模型的一等任务：Qwen-Image 把输入图同时送进 Qwen2.5-VL（语义）与 VAE（细节）；[Seedream 4.0](../../papers/arxiv-2509.20427/README.md)（2025 年 9 月）把文生图、单图编辑、多图组合放进一次联合后训练；[Qwen-Image-2.0](../../papers/arxiv-2605.10730/README.md)（2026 年 5 月）从预训练起就混入编辑数据（先 1 成，后 3 成）。其三，把多步去噪当作决策过程做强化学习：GRPO（一句话：同一提示采一组图，按组内相对奖励更新）配视觉语言模型打分的奖励模型，Qwen-Image 的 GenEval 从 0.87 升到 0.91，位置一项从 0.76 升到 0.87。写字大幅改善：Qwen-Image 写 3500 个一级常用汉字的单字准确率 97.29%。**做不好**：长尾仍在。Qwen-Image 写 1605 个三级生僻字只对 6.48%（[LongCat-Image](../../papers/arxiv-2512.07584/README.md) 把引号内的文字改为逐字编码后报告 70.3%）；Qwen-Image-2.0 引言列出长文字的字形扭曲与漏字、中英文以外的文字、2K 以上的重复纹理与光照不一致、多实体提示的概念遗漏；Gemini 3.1 Flash Image 模型卡自述小字模糊、长段落、角色不一致、编辑时把输入图原样贴回，以及"偶尔混淆左右"，Parti 2022 年列出的空间关系问题到 2026 年仍在商用模型的已知局限里。强化学习也有坑：[Qwen-Image-2.0-RL](../../papers/arxiv-2606.27608/README.md) 在全部 40 个去噪步上训练，几轮内就出现奖励投机（模型钻奖励模型的空子），无分类器引导在采样和训练中都用会崩溃。评测随之迁移：GenEval 接近饱和，各家改报竞技场 Elo（用户盲选两张图）和自建考题；在 Qwen 团队自己的 Qwen-Image-Bench 上，Qwen-Image-2.0-RL 的 57.84 仍低于 GPT Image 2 的 64.69。
 
 2022 年之后的视频生成、公司模型（Google、OpenAI、字节跳动、快手）与开源视频模型，以及它们怎样走向世界模型，写在续篇[观点页：生成收敛](../../../perspectives/generative-convergence.md)。
 
@@ -111,6 +114,8 @@ benchmark 的替换就是这个领域目标的迁移：
 - ADM-G 的 4.59 是 250 步采样的结果；与上采样扩散模型结合后为 3.94（ADM Table 5、Abstract）。DiT 的 2.27 用了无分类器引导（DiT Table 2）。VAR 的 1.73 是 2B 模型在 ImageNet 256×256 类条件生成上的结果，评测设置以 VAR 原文为准，与 DiT 的数字来自不同论文。
 - Imagen 的 7.27、Parti 的 7.23 与 DALL·E 2 的 10.39 都是 MS-COCO 零样本 FID，但 Imagen 是 FID-30K、引导权重按 Imagen Table 1 的设置，Parti 每条提示采样 16 张再重排（Parti Table 5 说明）；各篇的人工评测协议不同，不能直接合并比较。
 - SD3 的 GenEval 0.74 是 1024² 分辨率加 DPO 偏好对齐后的结果，未对齐的同规模模型在 512² 上为 0.68（SD3 Table 5）。
+- SD3 位置一项的 0.33–0.40（depth 24 以上各设置）是它自己各项里最低的一项，不是领先：同表 DALL·E 3 的位置为 0.43；SD3 总分高于 DALL·E 3，靠的是两物体、计数、颜色与属性绑定（SD3 Table 5）。
+- 2025–2026 年报告里的 GenEval、ChineseWord、竞技场 Elo 多为各家自测或自建考题。同一指标的复测量级一致（Qwen-Image 三级汉字：Qwen 自测 6.48%，LongCat-Image 复测 6.1%），竞技场排名则随时间变（Qwen-Image-2.0 的第 9 名取自 2026-04-22）。
 - GAN 原文的主实验用多层感知机，只有一个 CIFAR-10 版本用了卷积判别器和"反卷积"生成器（GAN Fig.2）；能稳定训练的卷积 GAN 结构来自 DCGAN。
 - DDPM 中的中间状态 xₜ 与图像同维，不是 LDM 那样压缩后的潜变量；"潜空间扩散"专指 LDM 一类先压缩再扩散的做法。
 - 扩散时间与视频帧时间是两根不同的时间轴（Video Diffusion 精读开头的图）。
@@ -118,6 +123,8 @@ benchmark 的替换就是这个领域目标的迁移：
 **判断的支撑论文与反例**（各行见 [synthesis.csv](synthesis.csv)）
 
 - "三个家族今天的分工"：支撑——SD3、Veo 3、Wan 等用扩散或流匹配生成连续信号；Genie 2 是"自回归的潜空间扩散模型"，逐帧生成（官方博客"Diffusion world model"一节）；LDM Sec.3.1、Seedance 1.0 Sec.2.1 与 Sec.5.1、ADD 都把判别器用作损失项。反例：VAR 在 ImageNet 类条件生成上用纯自回归报告了最好的 FID；VideoPoet 用纯自回归生成视频。所以这是 2024 年前后大系统的常见组合，不是唯一可行的组合。
+- "判别器以损失项留在自编码器里"（速览第 4 条与"三个家族的分工"）的反例：Qwen-Image Sec.2.3 报告重建变好后判别器给不出有效指导，只留重建与感知损失；Qwen-Image-2.0 Sec.3.1 认为大规模 VAE 训练中对抗损失基本多余，去掉以求稳定，改加语义对齐损失。边界：两例都出自 Qwen 团队；Seedream 4.0 的蒸馏仍用混合判别器与基于扩散的判别器（Sec.2.3），LongCat-Image 把 AIGC 检测器当奖励模型，"挑错"的判别信号换了位置继续存在。原判断保留，它描述的是 2024 年前后的常见做法。
+- "语言模型负责理解、扩散负责画"：支撑——Qwen-Image Sec.2.2（选 Qwen2.5-VL 的三条理由）、Qwen-Image-2.0 Sec.1（近期框架普遍以视觉语言模型作条件编码器）、HunyuanImage 3.0 Sec.3.1（同一 MoE 语言模型里自回归文字、扩散图像）、GPT-4o 系统卡 Sec.2.1（原生嵌入的自回归模型）。边界：GPT-4o 与 Gemini 图像模型的结构没有公开，"在同一网络中"只能按官方措辞理解；ERNIE-Image 只用 30 亿参数的 Ministral-3 作文本编码器，报告称足以支撑长提示。
 - Google 一批作者留在像素空间并不发布模型：Imagen Sec.1、Sec.4.1、Sec.6；Video Diffusion Sec.1、Sec.6（首页作者均为 google.com 邮箱）。边界：DDPM 的 Ho 当时在 UC Berkeley，DDPM 公开了代码，所以"不发布"是这批作者 2022 年的选择，不是同一个人一贯的做法；同在 Google 的 Parti 走自回归，说明 Google 内部并非只押一条路线。
 - Rombach、Blattmann 一批作者押注潜空间并公开权重：LDM 首页（预训练模型链接）、SD3 Abstract（承诺公开权重）、ADD 首页（代码与权重链接）。边界：三篇中 LDM 出自大学，后两篇出自 Stability AI，单位变化可能本身就改变了发布策略。
 - OpenAI 借判别模型表示驱动生成：ADM Sec.4、Sec.7；DALL·E 2 Abstract、Sec.2、Sec.7。反例：同属 OpenAI 的 CLIP 本身公开了权重，而 DALL·E 2 未声明发布，开放程度并不一致。
@@ -130,10 +137,12 @@ benchmark 的替换就是这个领域目标的迁移：
 - [Diffusion Policy](../../../robotics-embodied/papers/diffusion-policy/README.md) 把 DDPM 的去噪机制用于动作序列；[VLA 讲义](../../../robotics-embodied/fields/vla.md)第六节讲 π0.5 的 flow matching 动作头。
 - [DDPM 精读](../../papers/ddpm/reading.md)第 3 节写出了噪声预测与分数的缩放关系，是主线第 3 个节点"两篇可以统一"的推导。
 - 视频与世界模型方向的新卡：[Imagen Video](../../papers/arxiv-2210.02303/README.md)、[Sora 技术报告](../../papers/sora-tech-report/README.md)、[Veo 3](../../papers/veo3-tech-report/README.md)、[HunyuanVideo](../../papers/arxiv-2412.03603/README.md)、[Wan](../../papers/arxiv-2503.20314/README.md)、[Seedance 1.0](../../papers/arxiv-2506.09113/README.md)、[Seedance 2.0](../../papers/arxiv-2604.14148/README.md)、[Kling-Omni](../../papers/arxiv-2512.16776/README.md)、[Genie](../../papers/arxiv-2402.15391/README.md)、[Cosmos](../../papers/arxiv-2501.03575/README.md)，论证见观点页。
+- HunyuanImage 3.0 延续了[视觉语言模型方向](../vlm/README.md)的早融合路线（[Chameleon](../../papers/arxiv-2405.09818/README.md)），把离散图像 token 换成连续潜变量加扩散。
 
 **出处（本库没有单篇目录的论文）**
 
 - DALL·E：https://arxiv.org/abs/2102.12092 ；Parti：https://arxiv.org/abs/2206.10789 ；Flow Matching：https://arxiv.org/abs/2210.02747 ；SD3：https://arxiv.org/abs/2403.03206 ；VAR：https://arxiv.org/abs/2404.02905 ；ADD：https://arxiv.org/abs/2311.17042
+- Seedream 3.0：https://arxiv.org/abs/2504.11346 ；ERNIE-Image：https://arxiv.org/abs/2605.25347 ；ChatGPT Images 2.0 系统卡（2026-04-21）：https://deploymentsafety.openai.com/chatgpt-images-2-0 ；Gemini 3 Pro Image 模型卡（2025-11）：https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-Pro-Image-Model-Card.pdf
 - GAN：https://arxiv.org/abs/1406.2661 ；DCGAN：https://arxiv.org/abs/1511.06434 ；LDM：https://arxiv.org/abs/2112.10752 ；DiT：https://arxiv.org/abs/2212.09748 ；Imagen：https://arxiv.org/abs/2205.11487 ；DALL·E 2：https://arxiv.org/abs/2204.06125
 
 **未核实 / 待验证**
@@ -144,3 +153,4 @@ benchmark 的替换就是这个领域目标的迁移：
 - Video Diffusion 首页没有印出单位，本页按作者邮箱写作 Google。
 - GLIDE、DDIM、无分类器引导原文（Ho 与 Salimans）、DALL·E 3 技术报告本轮没有打开，本页只引用其他论文对它们的描述（DALL·E 3 的 GenEval 0.67 来自 SD3 Table 5）。
 - VAR"超过 DiT"是 VAR 作者在 ImageNet 类条件生成上的自述，本页没有找到第三方在同一设置下的复现。
+- GPT-4o 图像生成、ChatGPT Images 2.0（GPT Image 2）、Gemini 3 Pro Image、Gemini 3.1 Flash Image、Seedream 4.0/4.5 的结构、参数与数据均未公开；Qwen-Image-2.0 未写参数量。Seedream 5.0 Lite、Gemini 3.1 Flash-Lite Image（2026 年 6 月）、FLUX.2、Z-Image、GLM-Image 的官方材料没有打开；竞技场榜单只按各报告的引用。

@@ -1,6 +1,6 @@
 # 全库论文总目录
 
-共 468 个去重资源（444 篇论文、16 篇官方技术报告、1 个代码仓库、7 篇官方博客）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
+共 476 个去重资源（450 篇论文、18 篇官方技术报告、1 个代码仓库、7 篇官方博客）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
 
 身份核验、助手教学进度和用户阅读状态分开。历史来源保留原角色与证据局限，不将助手推荐写成用户提供，也不将教学完成写成用户已读。
 
@@ -5046,6 +5046,86 @@
 - 身份核验：selected_sections_checked_not_full_read
 - 用户阅读状态：unknown
 - [文献卡](../multimodal/papers/arxiv-2404.02905/README.md)
+
+<a id="p469"></a>
+## p469 · Qwen-Image Technical Report
+
+- 标识：arxiv:2508.02324
+- 原文 / 官方入口：https://arxiv.org/abs/2508.02324
+- 主题：multimodal/generation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2508.02324/README.md)
+
+<a id="p470"></a>
+## p470 · Qwen-Image-2.0 Technical Report
+
+- 标识：arxiv:2605.10730
+- 原文 / 官方入口：https://arxiv.org/abs/2605.10730
+- 主题：multimodal/generation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2605.10730/README.md)
+
+<a id="p471"></a>
+## p471 · Qwen-Image-2.0-RL Technical Report
+
+- 标识：arxiv:2606.27608
+- 原文 / 官方入口：https://arxiv.org/abs/2606.27608
+- 主题：multimodal/generation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2606.27608/README.md)
+
+<a id="p472"></a>
+## p472 · HunyuanImage 3.0 Technical Report
+
+- 标识：arxiv:2509.23951
+- 原文 / 官方入口：https://arxiv.org/abs/2509.23951
+- 主题：multimodal/generation, multimodal/vlm
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2509.23951/README.md)
+
+<a id="p473"></a>
+## p473 · Seedream 4.0: Toward Next-generation Multimodal Image Generation
+
+- 标识：arxiv:2509.20427
+- 原文 / 官方入口：https://arxiv.org/abs/2509.20427
+- 主题：multimodal/generation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2509.20427/README.md)
+
+<a id="p474"></a>
+## p474 · LongCat-Image Technical Report
+
+- 标识：arxiv:2512.07584
+- 原文 / 官方入口：https://arxiv.org/abs/2512.07584
+- 主题：multimodal/generation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2512.07584/README.md)
+
+<a id="p475"></a>
+## p475 · Addendum to GPT-4o System Card: Native image generation
+
+- 标识：url:https://openai.com/index/gpt-4o-image-generation-system-card-addendum/
+- 原文 / 官方入口：https://openai.com/index/gpt-4o-image-generation-system-card-addendum/
+- 主题：multimodal/generation, multimodal/vlm
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/gpt-4o-image-generation-system-card/README.md)
+
+<a id="p476"></a>
+## p476 · Gemini 3.1 Flash Image Model Card
+
+- 标识：url:https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-1-Flash-Image-Model-Card.pdf
+- 原文 / 官方入口：https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-1-Flash-Image-Model-Card.pdf
+- 主题：multimodal/generation, multimodal/vlm
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/gemini-3-1-flash-image-model-card/README.md)
 
 ## 2026年10月3日既有条目更新
 

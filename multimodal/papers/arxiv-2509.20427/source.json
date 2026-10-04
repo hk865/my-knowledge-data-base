@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2509.20427",
+  "title": "Seedream 4.0: Toward Next-generation Multimodal Image Generation",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2509.20427",
+  "official_url": "https://arxiv.org/abs/2509.20427",
+  "official_fulltext_url": "https://arxiv.org/pdf/2509.20427v3",
+  "read_version": "v3",
+  "version_status": "checked_v3",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Yunpeng Chen",
+    "Yu Gao",
+    "Lixue Gong",
+    "Meng Guo",
+    "Qiushan Guo",
+    "Zhiyao Guo",
+    "Xiaoxia Hou",
+    "Weilin Huang",
+    "Yixuan Huang",
+    "Xiaowen Jian",
+    "等 49 位作者"
+  ],
+  "year": 2025,
+  "topic_paths": [
+    "multimodal/generation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv PDF v3：Abstract、Sec.1、Sec.2.1–2.3（数据、后训练、加速）、Sec.3.1–3.2（MagicBench 人评、DreamEval）、Sec.4（Seedream 4.5）、Sec.5；另读 Seedream 3.0（arXiv 2504.11346 v3）Abstract、Sec.1、Sec.2.3 奖励模型扩展、Sec.3.5 与 GPT-4o 对比",
+    "mechanism_summary": "高压缩 VAE + 高效 DiT（>10× 于 3.0）；1K–4K；T2I/单图编辑/多图联合后训练（CT、SFT、RLHF）；Seed1.5-VL 提示工程模型；ADP + ADM 对抗蒸馏、量化、推测解码，2K 1.4 秒；DreamEval 困难档掉分；GPT-Image-1 遵循高一致低，Gemini 2.5 相反；Seedream 4.5 一节。Seedream 3.0：VLM 奖励模型 1B → 20B+，REPA 损失，原生 2K。",
+    "evidence_boundary": "数字取自官方 PDF 正文与表格（PyMuPDF 抽取）；公司模型只写官方材料写明的内容，未写的结构、参数、数据记为未公开。未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2509.20427",
+      "https://arxiv.org/pdf/2509.20427v3"
+    ],
+    "source_origin": "phase3_multimodal_generation_2025_2026_update",
+    "relation_pages": [
+      "multimodal/fields/generation/README.md",
+      "multimodal/fields/generation/BASELINES.md",
+      "multimodal/fields/generation/PAPERS.md"
+    ],
+    "identity_check": "2026-10-04 题名、年份与作者对照 arXiv API 与 PDF 首页；作者超过 12 人时取前 10 位加\"等 N 位作者\"（N 为个人作者数，不含团队署名）。"
+  },
+  "published_date": "2025-09-24",
+  "modality_tags": [
+    "image",
+    "text",
+    "multimodal"
+  ],
+  "task_tags": [
+    "generation"
+  ]
+}

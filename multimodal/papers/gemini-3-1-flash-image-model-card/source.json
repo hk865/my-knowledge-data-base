@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "resource_id": "url:https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-1-Flash-Image-Model-Card.pdf",
+  "title": "Gemini 3.1 Flash Image Model Card",
+  "resource_kind": "official_technical_report",
+  "canonical_folder": "multimodal/papers/gemini-3-1-flash-image-model-card",
+  "official_url": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-1-Flash-Image-Model-Card.pdf",
+  "official_fulltext_url": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-1-Flash-Image-Model-Card.pdf",
+  "read_version": null,
+  "version_status": "not_pinned_official_page",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Google DeepMind"
+  ],
+  "year": 2026,
+  "topic_paths": [
+    "multimodal/generation",
+    "multimodal/vlm"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "官方模型卡 PDF 全文（7 页）：Model Information、Evaluation（Elo 表）、Intended Usage and Limitations；另读 Gemini 3 Pro Image 模型卡（2025-11）全文、Nano Banana 2 官方博客（2026-02-26）、Gemini 2.5 Flash Image 开发者博客（2025-08-26）",
+    "mechanism_summary": "基于 Gemini 3 Flash，结构未公开；GenAI-Bench 总体 Elo 1073（思考 + 检索 1079），Nano Banana Pro 1021、GPT-Image 1.5 1047、Seedream 5.0 Lite 928；局限：小字、长文、角色一致性、涂鸦编辑、原样复制输入、左右混淆、世界知识/3D/事实性。Gemini 3 Pro Image 卡局限相同；Gemini 2.5 Flash Image 博客自述在改进长文字、角色一致性与细节事实性。",
+    "evidence_boundary": "数字取自官方 PDF 正文与表格（PyMuPDF 抽取）；公司模型只写官方材料写明的内容，未写的结构、参数、数据记为未公开。未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-1-Flash-Image-Model-Card.pdf"
+    ],
+    "source_origin": "phase3_multimodal_generation_2025_2026_update",
+    "relation_pages": [
+      "multimodal/fields/generation/README.md",
+      "multimodal/fields/generation/BASELINES.md",
+      "multimodal/fields/generation/PAPERS.md"
+    ],
+    "identity_check": "2026-10-04 题名与日期对照官方 PDF 首页；官方材料不列个人作者，以机构署名。"
+  },
+  "published_date": "2026-02",
+  "modality_tags": [
+    "image",
+    "text",
+    "multimodal"
+  ],
+  "task_tags": [
+    "generation"
+  ]
+}

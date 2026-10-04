@@ -326,7 +326,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [InternVideo2: Scaling Foundation Models for Multimodal Video Understanding](paper-catalog.md#p362)
 - [Perception Encoder: The best visual embeddings are not at the output of the network](paper-catalog.md#p449)
 
-### 视觉语言模型（32）
+### 视觉语言模型（35）
 
 细分：连接器与融合；多模态指令学习；空间与推理能力
 
@@ -362,8 +362,11 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Kimi-VL Technical Report](paper-catalog.md#p390)
 - [InternVL3: Exploring Advanced Training and Test-Time Recipes for Open-Source Multimodal Models](paper-catalog.md#p391)
 - [Qwen3-VL Technical Report](paper-catalog.md#p392)
+- [HunyuanImage 3.0 Technical Report](paper-catalog.md#p472)
+- [Addendum to GPT-4o System Card: Native image generation](paper-catalog.md#p475)
+- [Gemini 3.1 Flash Image Model Card](paper-catalog.md#p476)
 
-### 视觉生成（40）
+### 视觉生成（48）
 
 细分：图像生成；视频生成；扩散与 Flow；理解与生成的联合学习
 
@@ -407,6 +410,14 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Adversarial Diffusion Distillation](paper-catalog.md#p466)
 - [Scaling Rectified Flow Transformers for High-Resolution Image Synthesis](paper-catalog.md#p467)
 - [Visual Autoregressive Modeling: Scalable Image Generation via Next-Scale Prediction](paper-catalog.md#p468)
+- [Qwen-Image Technical Report](paper-catalog.md#p469)
+- [Qwen-Image-2.0 Technical Report](paper-catalog.md#p470)
+- [Qwen-Image-2.0-RL Technical Report](paper-catalog.md#p471)
+- [HunyuanImage 3.0 Technical Report](paper-catalog.md#p472)
+- [Seedream 4.0: Toward Next-generation Multimodal Image Generation](paper-catalog.md#p473)
+- [LongCat-Image Technical Report](paper-catalog.md#p474)
+- [Addendum to GPT-4o System Card: Native image generation](paper-catalog.md#p475)
+- [Gemini 3.1 Flash Image Model Card](paper-catalog.md#p476)
 
 ### 视频与时序表征（29）
 
@@ -903,19 +914,19 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 | 模态 \ 任务 | understanding | generation | decision | evaluation | analysis |
 |---|---:|---:|---:|---:|---:|
-| text | [56](#x-text-understanding) | [134](#x-text-generation) | [73](#x-text-decision) | [63](#x-text-evaluation) | [47](#x-text-analysis) |
-| image | [105](#x-image-understanding) | [43](#x-image-generation) | [86](#x-image-decision) | [16](#x-image-evaluation) | [13](#x-image-analysis) |
+| text | [57](#x-text-understanding) | [142](#x-text-generation) | [73](#x-text-decision) | [63](#x-text-evaluation) | [47](#x-text-analysis) |
+| image | [106](#x-image-understanding) | [51](#x-image-generation) | [86](#x-image-decision) | [16](#x-image-evaluation) | [13](#x-image-analysis) |
 | video | [32](#x-video-understanding) | [39](#x-video-generation) | [25](#x-video-decision) | [12](#x-video-evaluation) | [4](#x-video-analysis) |
 | audio | [7](#x-audio-understanding) | [6](#x-audio-generation) | · | [1](#x-audio-evaluation) | · |
 | action | [8](#x-action-understanding) | [33](#x-action-generation) | [127](#x-action-decision) | [9](#x-action-evaluation) | [2](#x-action-analysis) |
 | state | [15](#x-state-understanding) | [2](#x-state-generation) | [64](#x-state-decision) | [1](#x-state-evaluation) | · |
 | code | [1](#x-code-understanding) | [20](#x-code-generation) | [16](#x-code-decision) | [15](#x-code-evaluation) | [7](#x-code-analysis) |
-| multimodal | [50](#x-multimodal-understanding) | [34](#x-multimodal-generation) | [39](#x-multimodal-decision) | [17](#x-multimodal-evaluation) | [8](#x-multimodal-analysis) |
+| multimodal | [51](#x-multimodal-understanding) | [42](#x-multimodal-generation) | [39](#x-multimodal-decision) | [17](#x-multimodal-evaluation) | [8](#x-multimodal-analysis) |
 | tabular | [1](#x-tabular-understanding) | · | · | · | · |
 
 <a id="x-text-understanding"></a>
 
-### text × understanding（56）
+### text × understanding（57）
 
 - [MiniLM: Deep Self-Attention Distillation for Task-Agnostic Compression of Pre-Trained Transformers](paper-catalog.md#p020)
 - [DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter](paper-catalog.md#p021)
@@ -973,10 +984,11 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [InternVL3: Exploring Advanced Training and Test-Time Recipes for Open-Source Multimodal Models](paper-catalog.md#p391)
 - [Qwen3-VL Technical Report](paper-catalog.md#p392)
 - [Perception Encoder: The best visual embeddings are not at the output of the network](paper-catalog.md#p449)
+- [HunyuanImage 3.0 Technical Report](paper-catalog.md#p472)
 
 <a id="x-text-generation"></a>
 
-### text × generation（134）
+### text × generation（142）
 
 - [Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters](paper-catalog.md#p001)
 - [Towards Thinking-Optimal Scaling of Test-Time Compute for LLM Reasoning](paper-catalog.md#p002)
@@ -1112,6 +1124,14 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding](paper-catalog.md#p461)
 - [Adversarial Diffusion Distillation](paper-catalog.md#p466)
 - [Scaling Rectified Flow Transformers for High-Resolution Image Synthesis](paper-catalog.md#p467)
+- [Qwen-Image Technical Report](paper-catalog.md#p469)
+- [Qwen-Image-2.0 Technical Report](paper-catalog.md#p470)
+- [Qwen-Image-2.0-RL Technical Report](paper-catalog.md#p471)
+- [HunyuanImage 3.0 Technical Report](paper-catalog.md#p472)
+- [Seedream 4.0: Toward Next-generation Multimodal Image Generation](paper-catalog.md#p473)
+- [LongCat-Image Technical Report](paper-catalog.md#p474)
+- [Addendum to GPT-4o System Card: Native image generation](paper-catalog.md#p475)
+- [Gemini 3.1 Flash Image Model Card](paper-catalog.md#p476)
 
 <a id="x-text-decision"></a>
 
@@ -1313,7 +1333,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-image-understanding"></a>
 
-### image × understanding（105）
+### image × understanding（106）
 
 - [A High-Fidelity Digital Twin for Robotic Manipulation Based on 3D Gaussian Splatting](paper-catalog.md#p054)
 - [Language-Grounded Hierarchical Planning and Execution with Multi-Robot 3D Scene Graphs](paper-catalog.md#p055)
@@ -1420,10 +1440,11 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Scaling Language-Free Visual Representation Learning](paper-catalog.md#p448)
 - [Perception Encoder: The best visual embeddings are not at the output of the network](paper-catalog.md#p449)
 - [DINOv3](paper-catalog.md#p450)
+- [HunyuanImage 3.0 Technical Report](paper-catalog.md#p472)
 
 <a id="x-image-generation"></a>
 
-### image × generation（43）
+### image × generation（51）
 
 - [DINO-WM: World Models on Pre-trained Visual Features enable Zero-shot Planning](paper-catalog.md#p046)
 - [FOCUS: Object-Centric World Models for Robotics Manipulation](paper-catalog.md#p048)
@@ -1468,6 +1489,14 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Adversarial Diffusion Distillation](paper-catalog.md#p466)
 - [Scaling Rectified Flow Transformers for High-Resolution Image Synthesis](paper-catalog.md#p467)
 - [Visual Autoregressive Modeling: Scalable Image Generation via Next-Scale Prediction](paper-catalog.md#p468)
+- [Qwen-Image Technical Report](paper-catalog.md#p469)
+- [Qwen-Image-2.0 Technical Report](paper-catalog.md#p470)
+- [Qwen-Image-2.0-RL Technical Report](paper-catalog.md#p471)
+- [HunyuanImage 3.0 Technical Report](paper-catalog.md#p472)
+- [Seedream 4.0: Toward Next-generation Multimodal Image Generation](paper-catalog.md#p473)
+- [LongCat-Image Technical Report](paper-catalog.md#p474)
+- [Addendum to GPT-4o System Card: Native image generation](paper-catalog.md#p475)
+- [Gemini 3.1 Flash Image Model Card](paper-catalog.md#p476)
 
 <a id="x-image-decision"></a>
 
@@ -2157,7 +2186,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-multimodal-understanding"></a>
 
-### multimodal × understanding（50）
+### multimodal × understanding（51）
 
 - [Language-Grounded Hierarchical Planning and Execution with Multi-Robot 3D Scene Graphs](paper-catalog.md#p055)
 - [InternVLA-A1: Unifying Understanding, Generation and Action for Robotic Manipulation](paper-catalog.md#p090)
@@ -2209,10 +2238,11 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Qwen3-VL Technical Report](paper-catalog.md#p392)
 - [Scaling Language-Free Visual Representation Learning](paper-catalog.md#p448)
 - [Perception Encoder: The best visual embeddings are not at the output of the network](paper-catalog.md#p449)
+- [HunyuanImage 3.0 Technical Report](paper-catalog.md#p472)
 
 <a id="x-multimodal-generation"></a>
 
-### multimodal × generation（34）
+### multimodal × generation（42）
 
 - [Object-Centric World Model for Language-Guided Manipulation](paper-catalog.md#p052)
 - [InternVLA-A1: Unifying Understanding, Generation and Action for Robotic Manipulation](paper-catalog.md#p090)
@@ -2248,6 +2278,14 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Photorealistic Text-to-Image Diffusion Models with Deep Language Understanding](paper-catalog.md#p461)
 - [Adversarial Diffusion Distillation](paper-catalog.md#p466)
 - [Scaling Rectified Flow Transformers for High-Resolution Image Synthesis](paper-catalog.md#p467)
+- [Qwen-Image Technical Report](paper-catalog.md#p469)
+- [Qwen-Image-2.0 Technical Report](paper-catalog.md#p470)
+- [Qwen-Image-2.0-RL Technical Report](paper-catalog.md#p471)
+- [HunyuanImage 3.0 Technical Report](paper-catalog.md#p472)
+- [Seedream 4.0: Toward Next-generation Multimodal Image Generation](paper-catalog.md#p473)
+- [LongCat-Image Technical Report](paper-catalog.md#p474)
+- [Addendum to GPT-4o System Card: Native image generation](paper-catalog.md#p475)
+- [Gemini 3.1 Flash Image Model Card](paper-catalog.md#p476)
 
 <a id="x-multimodal-decision"></a>
 

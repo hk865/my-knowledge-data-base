@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2605.10730",
+  "title": "Qwen-Image-2.0 Technical Report",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2605.10730",
+  "official_url": "https://arxiv.org/abs/2605.10730",
+  "official_fulltext_url": "https://arxiv.org/pdf/2605.10730v1",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Bing Zhao",
+    "Chenfei Wu",
+    "Deqing Li",
+    "Hao Meng",
+    "Jiahao Li",
+    "Jie Zhang",
+    "Jingren Zhou",
+    "Junyang Lin",
+    "Kaiyuan Gao",
+    "Kuan Cao",
+    "等 75 位作者"
+  ],
+  "year": 2026,
+  "topic_paths": [
+    "multimodal/generation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv PDF v1：Abstract、Sec.1、Sec.2.1–2.4（数据、标注、六阶段过滤、数据飞轮）、Sec.3.1（VAE，Table 1）、Sec.3.2–3.3（MMDiT、Prompt Enhancer）、Sec.4.1–4.3（Table 2 训练配置、RLHF、DMD 蒸馏）、Sec.5.1–5.2 前半（LMArena、文字渲染定性对比）、Sec.6",
+    "mechanism_summary": "Qwen3-VL 条件编码器（冻结）+ MMDiT（MSRoPE、无偏置调制、SwiGLU）+ f16c64 VAE（残差自编码、语义对齐、去掉对抗损失）；T2I:TI2I 0.9/0.1 → 0.7/0.3，700K + 250K + 10K 步；数据飞轮三通道；五类奖励 + GRPO（混合 CFG）；DMD 4 NFE；LMArena 第 9（2026-04-22）；无局限一节、无参数量。",
+    "evidence_boundary": "数字取自官方 PDF 正文与表格（PyMuPDF 抽取）；公司模型只写官方材料写明的内容，未写的结构、参数、数据记为未公开。未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2605.10730",
+      "https://arxiv.org/pdf/2605.10730v1"
+    ],
+    "source_origin": "phase3_multimodal_generation_2025_2026_update",
+    "relation_pages": [
+      "multimodal/fields/generation/README.md",
+      "multimodal/fields/generation/BASELINES.md",
+      "multimodal/fields/generation/PAPERS.md"
+    ],
+    "identity_check": "2026-10-04 题名、年份与作者对照 arXiv API 与 PDF 首页；作者超过 12 人时取前 10 位加\"等 N 位作者\"（N 为个人作者数，不含团队署名）。"
+  },
+  "published_date": "2026-05-11",
+  "modality_tags": [
+    "image",
+    "text",
+    "multimodal"
+  ],
+  "task_tags": [
+    "generation"
+  ]
+}

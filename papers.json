@@ -30122,5 +30122,428 @@
       "Bingyue Peng",
       "Liwei Wang"
     ]
+  },
+  {
+    "id": "arxiv:2508.02324",
+    "title": "Qwen-Image Technical Report",
+    "url": "https://arxiv.org/abs/2508.02324",
+    "arxiv_id": "2508.02324",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "multimodal/generation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2508.02324"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p469",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2508.02324",
+    "canonical_path": "multimodal/papers/arxiv-2508.02324/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2508.02324/README.md",
+    "source_path": "multimodal/papers/arxiv-2508.02324/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Chenfei Wu",
+      "Jiahao Li",
+      "Jingren Zhou",
+      "Junyang Lin",
+      "Kaiyuan Gao",
+      "Kun Yan",
+      "Shengming Yin",
+      "Shuai Bai",
+      "Xiao Xu",
+      "Yilei Chen",
+      "等 39 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2605.10730",
+    "title": "Qwen-Image-2.0 Technical Report",
+    "url": "https://arxiv.org/abs/2605.10730",
+    "arxiv_id": "2605.10730",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "multimodal/generation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2605.10730"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p470",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2605.10730",
+    "canonical_path": "multimodal/papers/arxiv-2605.10730/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2605.10730/README.md",
+    "source_path": "multimodal/papers/arxiv-2605.10730/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Bing Zhao",
+      "Chenfei Wu",
+      "Deqing Li",
+      "Hao Meng",
+      "Jiahao Li",
+      "Jie Zhang",
+      "Jingren Zhou",
+      "Junyang Lin",
+      "Kaiyuan Gao",
+      "Kuan Cao",
+      "等 75 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2606.27608",
+    "title": "Qwen-Image-2.0-RL Technical Report",
+    "url": "https://arxiv.org/abs/2606.27608",
+    "arxiv_id": "2606.27608",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "multimodal/generation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2606.27608"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p471",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2606.27608",
+    "canonical_path": "multimodal/papers/arxiv-2606.27608/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2606.27608/README.md",
+    "source_path": "multimodal/papers/arxiv-2606.27608/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Yixian Xu",
+      "Kaiyuan Gao",
+      "Yuxiang Chen",
+      "Yilei Chen",
+      "Zecheng Tang",
+      "Zihao Liu",
+      "Zikai Zhou",
+      "Deqing Li",
+      "Hao Meng",
+      "Kuan Cao",
+      "等 28 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2509.23951",
+    "title": "HunyuanImage 3.0 Technical Report",
+    "url": "https://arxiv.org/abs/2509.23951",
+    "arxiv_id": "2509.23951",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "multimodal/generation",
+      "multimodal/vlm"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2509.23951"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p472",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "generation",
+      "understanding"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2509.23951",
+    "canonical_path": "multimodal/papers/arxiv-2509.23951/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2509.23951/README.md",
+    "source_path": "multimodal/papers/arxiv-2509.23951/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Tencent Hunyuan Foundation Model Team"
+    ]
+  },
+  {
+    "id": "arxiv:2509.20427",
+    "title": "Seedream 4.0: Toward Next-generation Multimodal Image Generation",
+    "url": "https://arxiv.org/abs/2509.20427",
+    "arxiv_id": "2509.20427",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "multimodal/generation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2509.20427"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p473",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2509.20427",
+    "canonical_path": "multimodal/papers/arxiv-2509.20427/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2509.20427/README.md",
+    "source_path": "multimodal/papers/arxiv-2509.20427/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Yunpeng Chen",
+      "Yu Gao",
+      "Lixue Gong",
+      "Meng Guo",
+      "Qiushan Guo",
+      "Zhiyao Guo",
+      "Xiaoxia Hou",
+      "Weilin Huang",
+      "Yixuan Huang",
+      "Xiaowen Jian",
+      "等 49 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2512.07584",
+    "title": "LongCat-Image Technical Report",
+    "url": "https://arxiv.org/abs/2512.07584",
+    "arxiv_id": "2512.07584",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "multimodal/generation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2512.07584"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p474",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2512.07584",
+    "canonical_path": "multimodal/papers/arxiv-2512.07584/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2512.07584/README.md",
+    "source_path": "multimodal/papers/arxiv-2512.07584/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Hanghang Ma",
+      "Haoxian Tan",
+      "Jiale Huang",
+      "Junqiang Wu",
+      "Jun-Yan He",
+      "Lishuai Gao",
+      "Songlin Xiao",
+      "Xiaoming Wei",
+      "Xiaoqi Ma",
+      "Xunliang Cai",
+      "Yayong Guan",
+      "Jie Hu"
+    ]
+  },
+  {
+    "id": "url:https://openai.com/index/gpt-4o-image-generation-system-card-addendum/",
+    "title": "Addendum to GPT-4o System Card: Native image generation",
+    "url": "https://openai.com/index/gpt-4o-image-generation-system-card-addendum/",
+    "arxiv_id": null,
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "multimodal/generation",
+      "multimodal/vlm"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://openai.com/index/gpt-4o-image-generation-system-card-addendum/"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "official_technical_report",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p475",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/gpt-4o-image-generation-system-card",
+    "canonical_path": "multimodal/papers/gpt-4o-image-generation-system-card/README.md",
+    "canonical_readme": "multimodal/papers/gpt-4o-image-generation-system-card/README.md",
+    "source_path": "multimodal/papers/gpt-4o-image-generation-system-card/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "OpenAI"
+    ]
+  },
+  {
+    "id": "url:https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-1-Flash-Image-Model-Card.pdf",
+    "title": "Gemini 3.1 Flash Image Model Card",
+    "url": "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-1-Flash-Image-Model-Card.pdf",
+    "arxiv_id": null,
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "multimodal/generation",
+      "multimodal/vlm"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://storage.googleapis.com/deepmind-media/Model-Cards/Gemini-3-1-Flash-Image-Model-Card.pdf"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "official_technical_report",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p476",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "multimodal/papers/gemini-3-1-flash-image-model-card",
+    "canonical_path": "multimodal/papers/gemini-3-1-flash-image-model-card/README.md",
+    "canonical_readme": "multimodal/papers/gemini-3-1-flash-image-model-card/README.md",
+    "source_path": "multimodal/papers/gemini-3-1-flash-image-model-card/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Google DeepMind"
+    ]
   }
 ]

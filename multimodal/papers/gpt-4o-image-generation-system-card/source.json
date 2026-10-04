@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "resource_id": "url:https://openai.com/index/gpt-4o-image-generation-system-card-addendum/",
+  "title": "Addendum to GPT-4o System Card: Native image generation",
+  "resource_kind": "official_technical_report",
+  "canonical_folder": "multimodal/papers/gpt-4o-image-generation-system-card",
+  "official_url": "https://openai.com/index/gpt-4o-image-generation-system-card-addendum/",
+  "official_fulltext_url": "https://cdn.openai.com/11998be9-5319-4302-bfbf-1167e093f1fb/Native_Image_Generation_System_Card.pdf",
+  "read_version": null,
+  "version_status": "not_pinned_official_page",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "OpenAI"
+  ],
+  "year": 2025,
+  "topic_paths": [
+    "multimodal/generation",
+    "multimodal/vlm"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "官方 PDF 全文（13 页）：Sec.1、Sec.2.1（与 DALL·E 的区别、新能力）、Sec.2.2 安全栈、Sec.2.4 偏见、Sec.2.5 来源标注；另读 ChatGPT Images 2.0 系统卡 PDF（2026-04-21，5 页）全文",
+    "mechanism_summary": "\"Unlike DALL·E, which operates as a diffusion model, 4o image generation is an autoregressive model natively embedded within ChatGPT\"；图生图、多图输入、写实、写字与说明图；三层安全栈；偏见优于 DALL·E 3；C2PA。Images 2.0：思考模式（推理、联网搜索、多图），对抗评测安全输出 99.1%（思考模式 99.2%），未写结构。",
+    "evidence_boundary": "数字取自官方 PDF 正文与表格（PyMuPDF 抽取）；公司模型只写官方材料写明的内容，未写的结构、参数、数据记为未公开。未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://openai.com/index/gpt-4o-image-generation-system-card-addendum/",
+      "https://cdn.openai.com/11998be9-5319-4302-bfbf-1167e093f1fb/Native_Image_Generation_System_Card.pdf"
+    ],
+    "source_origin": "phase3_multimodal_generation_2025_2026_update",
+    "relation_pages": [
+      "multimodal/fields/generation/README.md",
+      "multimodal/fields/generation/BASELINES.md",
+      "multimodal/fields/generation/PAPERS.md"
+    ],
+    "identity_check": "2026-10-04 题名与日期对照官方 PDF 首页；官方材料不列个人作者，以机构署名。"
+  },
+  "published_date": "2025-03-25",
+  "modality_tags": [
+    "image",
+    "text",
+    "multimodal"
+  ],
+  "task_tags": [
+    "generation"
+  ]
+}

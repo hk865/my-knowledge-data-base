@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2512.07584",
+  "title": "LongCat-Image Technical Report",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2512.07584",
+  "official_url": "https://arxiv.org/abs/2512.07584",
+  "official_fulltext_url": "https://arxiv.org/pdf/2512.07584v1",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Hanghang Ma",
+    "Haoxian Tan",
+    "Jiale Huang",
+    "Junqiang Wu",
+    "Jun-Yan He",
+    "Lishuai Gao",
+    "Songlin Xiao",
+    "Xiaoming Wei",
+    "Xiaoqi Ma",
+    "Xunliang Cai",
+    "Yayong Guan",
+    "Jie Hu"
+  ],
+  "year": 2025,
+  "topic_paths": [
+    "multimodal/generation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv PDF v1：Abstract、Sec.1、数据过滤与 AIGC 检测、多粒度标注、模型结构（VAE、文本编码器、逐字编码）、训练流程表、RLHF（奖励模型、DPO、GRPO、MPO）、Table 7（ChineseWord）、Table 8、Sec.7",
+    "mechanism_summary": "6B 混合 MM-DiT；Qwen2.5-VL-7B 统一编码器；FLUX.1-dev VAE；引号内文字逐字编码；剔除 AIGC 数据（否则塑料感），RL 用 AIGC 检测器、畸变、偏好、OCR 奖励；DPO、GRPO、MPO；ChineseWord L3 70.3（Seedream 4.0 2.3、Qwen-Image 6.1、HunyuanImage 3.0 4.1）；开放中期检查点与训练代码。",
+    "evidence_boundary": "数字取自官方 PDF 正文与表格（PyMuPDF 抽取）；公司模型只写官方材料写明的内容，未写的结构、参数、数据记为未公开。未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2512.07584",
+      "https://arxiv.org/pdf/2512.07584v1"
+    ],
+    "source_origin": "phase3_multimodal_generation_2025_2026_update",
+    "relation_pages": [
+      "multimodal/fields/generation/README.md",
+      "multimodal/fields/generation/BASELINES.md",
+      "multimodal/fields/generation/PAPERS.md"
+    ],
+    "identity_check": "2026-10-04 题名、年份与作者对照 arXiv API 与 PDF 首页；作者超过 12 人时取前 10 位加\"等 N 位作者\"（N 为个人作者数，不含团队署名）。"
+  },
+  "published_date": "2025-12-08",
+  "modality_tags": [
+    "image",
+    "text",
+    "multimodal"
+  ],
+  "task_tags": [
+    "generation"
+  ]
+}

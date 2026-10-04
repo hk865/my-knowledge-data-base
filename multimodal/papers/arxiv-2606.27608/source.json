@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2606.27608",
+  "title": "Qwen-Image-2.0-RL Technical Report",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2606.27608",
+  "official_url": "https://arxiv.org/abs/2606.27608",
+  "official_fulltext_url": "https://arxiv.org/pdf/2606.27608v1",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Yixian Xu",
+    "Kaiyuan Gao",
+    "Yuxiang Chen",
+    "Yilei Chen",
+    "Zecheng Tang",
+    "Zihao Liu",
+    "Zikai Zhou",
+    "Deqing Li",
+    "Hao Meng",
+    "Kuan Cao",
+    "等 28 位作者"
+  ],
+  "year": 2026,
+  "topic_paths": [
+    "multimodal/generation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv PDF v1 全文（16 页）：Abstract、Sec.1–2（Flow-GRPO、DiffusionNFT 背景）、Sec.3（逐点与成对奖励、各奖励模型）、Sec.4（混合 CFG、异步奖励、多奖励优势、时间步选择、提示筛选、在策略蒸馏）、Sec.5 Table 1 与竞技场 Elo、Sec.7",
+    "mechanism_summary": "VLM 奖励模型（逐点 1–5 分、思维链）；T2I 对齐/美学/人像，编辑遵循/人脸 ID；GRPO 多奖励组内归一化加权；CFG 只用于 rollout；只训高噪声子集时间步（全 40 步训练迅速 reward hacking）；在策略蒸馏合并两教师；Qwen-Image-Bench 55.23 → 57.84（GPT Image 2 64.69）；Elo 1193（+78）、编辑 1349（+93）。",
+    "evidence_boundary": "数字取自官方 PDF 正文与表格（PyMuPDF 抽取）；公司模型只写官方材料写明的内容，未写的结构、参数、数据记为未公开。未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2606.27608",
+      "https://arxiv.org/pdf/2606.27608v1"
+    ],
+    "source_origin": "phase3_multimodal_generation_2025_2026_update",
+    "relation_pages": [
+      "multimodal/fields/generation/README.md",
+      "multimodal/fields/generation/BASELINES.md",
+      "multimodal/fields/generation/PAPERS.md"
+    ],
+    "identity_check": "2026-10-04 题名、年份与作者对照 arXiv API 与 PDF 首页；作者超过 12 人时取前 10 位加\"等 N 位作者\"（N 为个人作者数，不含团队署名）。"
+  },
+  "published_date": "2026-06-25",
+  "modality_tags": [
+    "image",
+    "text",
+    "multimodal"
+  ],
+  "task_tags": [
+    "generation"
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2508.02324",
+  "title": "Qwen-Image Technical Report",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2508.02324",
+  "official_url": "https://arxiv.org/abs/2508.02324",
+  "official_fulltext_url": "https://arxiv.org/pdf/2508.02324v1",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Chenfei Wu",
+    "Jiahao Li",
+    "Jingren Zhou",
+    "Junyang Lin",
+    "Kaiyuan Gao",
+    "Kun Yan",
+    "Shengming Yin",
+    "Shuai Bai",
+    "Xiao Xu",
+    "Yilei Chen",
+    "等 39 位作者"
+  ],
+  "year": 2025,
+  "topic_paths": [
+    "multimodal/generation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv PDF v1：Abstract、Sec.1、Sec.2.1–2.4（MLLM 编码器、VAE、MMDiT、MSRoPE、Table 1）、Sec.3.1（数据分布）、Sec.4 RL（DPO、GRPO）、Sec.5 Table 4（GenEval）、Table 9（ChineseWord）、Table 12（ImgEdit）、Sec.6 Conclusion",
+    "mechanism_summary": "冻结 Qwen2.5-VL 7B 作条件编码器；20B 双流 MMDiT + MSRoPE；Wan-2.1 VAE 冻结编码器、只微调图像解码器，重建提升后对抗损失无效、只用重建 + 感知损失；文字课程学习；编辑双编码（VL 语义 + VAE 细节）；DPO 后 GRPO；GenEval 0.87 → 0.91（位置 0.76 → 0.87）；ChineseWord L1 97.29、L2 40.53、L3 6.48。",
+    "evidence_boundary": "数字取自官方 PDF 正文与表格（PyMuPDF 抽取）；公司模型只写官方材料写明的内容，未写的结构、参数、数据记为未公开。未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2508.02324",
+      "https://arxiv.org/pdf/2508.02324v1"
+    ],
+    "source_origin": "phase3_multimodal_generation_2025_2026_update",
+    "relation_pages": [
+      "multimodal/fields/generation/README.md",
+      "multimodal/fields/generation/BASELINES.md",
+      "multimodal/fields/generation/PAPERS.md"
+    ],
+    "identity_check": "2026-10-04 题名、年份与作者对照 arXiv API 与 PDF 首页；作者超过 12 人时取前 10 位加\"等 N 位作者\"（N 为个人作者数，不含团队署名）。"
+  },
+  "published_date": "2025-08-04",
+  "modality_tags": [
+    "image",
+    "text",
+    "multimodal"
+  ],
+  "task_tags": [
+    "generation"
+  ]
+}

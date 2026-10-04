@@ -137,3 +137,11 @@
 - [Adversarial Diffusion Distillation](papers/arxiv-2311.17042/README.md) · 2023 · 文献卡，暂无独立精读
 - [Scaling Rectified Flow Transformers for High-Resolution Image Synthesis](papers/arxiv-2403.03206/README.md) · 2024 · 文献卡，暂无独立精读
 - [Visual Autoregressive Modeling: Scalable Image Generation via Next-Scale Prediction](papers/arxiv-2404.02905/README.md) · 2024 · 文献卡，暂无独立精读
+- [Qwen-Image Technical Report](papers/arxiv-2508.02324/README.md) · 2025 · 文献卡，暂无独立精读
+- [Qwen-Image-2.0 Technical Report](papers/arxiv-2605.10730/README.md) · 2026 · 文献卡，暂无独立精读
+- [Qwen-Image-2.0-RL Technical Report](papers/arxiv-2606.27608/README.md) · 2026 · 文献卡，暂无独立精读
+- [HunyuanImage 3.0 Technical Report](papers/arxiv-2509.23951/README.md) · 2025 · 文献卡，暂无独立精读
+- [Seedream 4.0: Toward Next-generation Multimodal Image Generation](papers/arxiv-2509.20427/README.md) · 2025 · 文献卡，暂无独立精读
+- [LongCat-Image Technical Report](papers/arxiv-2512.07584/README.md) · 2025 · 文献卡，暂无独立精读
+- [Addendum to GPT-4o System Card: Native image generation](papers/gpt-4o-image-generation-system-card/README.md) · 2025 · 文献卡，暂无独立精读
+- [Gemini 3.1 Flash Image Model Card](papers/gemini-3-1-flash-image-model-card/README.md) · 2026 · 文献卡，暂无独立精读

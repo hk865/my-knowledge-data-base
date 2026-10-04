@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2509.23951",
+  "title": "HunyuanImage 3.0 Technical Report",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2509.23951",
+  "official_url": "https://arxiv.org/abs/2509.23951",
+  "official_fulltext_url": "https://arxiv.org/pdf/2509.23951v3",
+  "read_version": "v3",
+  "version_status": "checked_v3",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Tencent Hunyuan Foundation Model Team"
+  ],
+  "year": 2025,
+  "topic_paths": [
+    "multimodal/generation",
+    "multimodal/vlm"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv PDF v3：Abstract、Sec.1、Sec.2（数据过滤、标注、推理数据）、Sec.3.1（MoE 底座、VAE、双编码、广义因果注意力）、Sec.4 后训练（DPO、MixGRPO、SRPO、ReDA）、Sec.5（SSAE、GSB、专家激活分析）、Sec.6",
+    "mechanism_summary": "Hunyuan-A13B MoE（80B+ 总参，13B 激活，64 选 8）；文字自回归 + 图像 token 在 LLM 内扩散；f16 32 维 VAE + ViT 双编码；广义因果注意力；原生 CoT；DPO → MixGRPO → SRPO + ReDA；约 50 亿张图；GSB 相对 Seedream 4.0 / Nano Banana / GPT-Image 为 +1.17% / +2.64% / +5.00%；深层专家按模态分化。",
+    "evidence_boundary": "数字取自官方 PDF 正文与表格（PyMuPDF 抽取）；公司模型只写官方材料写明的内容，未写的结构、参数、数据记为未公开。未复现实验。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2509.23951",
+      "https://arxiv.org/pdf/2509.23951v3"
+    ],
+    "source_origin": "phase3_multimodal_generation_2025_2026_update",
+    "relation_pages": [
+      "multimodal/fields/generation/README.md",
+      "multimodal/fields/generation/BASELINES.md",
+      "multimodal/fields/generation/PAPERS.md"
+    ],
+    "identity_check": "2026-10-04 题名、年份与作者对照 arXiv API 与 PDF 首页；作者超过 12 人时取前 10 位加\"等 N 位作者\"（N 为个人作者数，不含团队署名）。"
+  },
+  "published_date": "2025-09-28",
+  "modality_tags": [
+    "image",
+    "text",
+    "multimodal"
+  ],
+  "task_tags": [
+    "generation",
+    "understanding"
+  ]
+}
