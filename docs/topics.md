@@ -272,7 +272,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 ## 多模态与世界表征
 
-### 视觉表征（24）
+### 视觉表征（31）
 
 细分：视觉编码器；局部与全局表征；自监督视觉学习
 
@@ -300,6 +300,13 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Scaling Language-Free Visual Representation Learning](paper-catalog.md#p448)
 - [Perception Encoder: The best visual embeddings are not at the output of the network](paper-catalog.md#p449)
 - [DINOv3](paper-catalog.md#p450)
+- [V-JEPA 2.1: Unlocking Dense Features in Video Self-Supervised Learning](paper-catalog.md#p477)
+- [C-RADIOv4 (Tech Report)](paper-catalog.md#p478)
+- [AM-RADIO: Agglomerative Vision Foundation Model -- Reduce All Domains Into One](paper-catalog.md#p479)
+- [RADIO1D: Elastic Representations for Condensed Vision Modeling](paper-catalog.md#p480)
+- [A ConvNet for the 2020s](paper-catalog.md#p481)
+- [Very Deep Convolutional Networks for Large-Scale Image Recognition](paper-catalog.md#p482)
+- [Rich feature hierarchies for accurate object detection and semantic segmentation](paper-catalog.md#p483)
 
 ### 图文对齐（20）
 
@@ -326,7 +333,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [InternVideo2: Scaling Foundation Models for Multimodal Video Understanding](paper-catalog.md#p362)
 - [Perception Encoder: The best visual embeddings are not at the output of the network](paper-catalog.md#p449)
 
-### 视觉语言模型（35）
+### 视觉语言模型（36）
 
 细分：连接器与融合；多模态指令学习；空间与推理能力
 
@@ -365,6 +372,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [HunyuanImage 3.0 Technical Report](paper-catalog.md#p472)
 - [Addendum to GPT-4o System Card: Native image generation](paper-catalog.md#p475)
 - [Gemini 3.1 Flash Image Model Card](paper-catalog.md#p476)
+- [RADIO1D: Elastic Representations for Condensed Vision Modeling](paper-catalog.md#p480)
 
 ### 视觉生成（48）
 
@@ -419,7 +427,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Addendum to GPT-4o System Card: Native image generation](paper-catalog.md#p475)
 - [Gemini 3.1 Flash Image Model Card](paper-catalog.md#p476)
 
-### 视频与时序表征（29）
+### 视频与时序表征（30）
 
 细分：时序对应与记忆；动作条件视频；预测与时间一致性
 
@@ -452,8 +460,9 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Qwen2-VL: Enhancing Vision-Language Model's Perception of the World at Any Resolution](paper-catalog.md#p385)
 - [Qwen2.5-VL Technical Report](paper-catalog.md#p389)
 - [Qwen3-VL Technical Report](paper-catalog.md#p392)
+- [V-JEPA 2.1: Unlocking Dense Features in Video Self-Supervised Learning](paper-catalog.md#p477)
 
-### 世界模型（48）
+### 世界模型（49）
 
 细分：预测与潜在动力学；结构化与可干预表征；行动条件与规划；几何与物理约束
 
@@ -505,10 +514,11 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Diffusion for World Modeling: Visual Details Matter in Atari](paper-catalog.md#p371)
 - [Genie 2: A large-scale foundation world model](paper-catalog.md#p393)
 - [Genie 3: A new frontier for world models](paper-catalog.md#p394)
+- [V-JEPA 2.1: Unlocking Dense Features in Video Self-Supervised Learning](paper-catalog.md#p477)
 
 ## 机器人与具身系统
 
-### 感知与传感融合（25）
+### 感知与传感融合（26）
 
 细分：视觉 深度 LiDAR；惯性与多传感器融合；传统 学习与混合方法
 
@@ -537,6 +547,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Histograms of Oriented Gradients for Human Detection](paper-catalog.md#p437)
 - [DINOv2: Learning Robust Visual Features without Supervision](paper-catalog.md#p446)
 - [DINOv3](paper-catalog.md#p450)
+- [Rich feature hierarchies for accurate object detection and semantic segmentation](paper-catalog.md#p483)
 
 ### 定位与建图（35）
 
@@ -886,7 +897,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Why SWE-bench Verified no longer measures frontier coding capabilities](paper-catalog.md#p436)
 
 
-### 知识蒸馏与模型压缩（7）
+### 知识蒸馏与模型压缩（9）
 
 细分：输出分布与软目标；中间特征与提示监督；教师学生迁移；模型压缩历史与来源边界
 
@@ -897,6 +908,8 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Do Deep Nets Really Need to be Deep?](paper-catalog.md#p141)
 - [FitNets: Hints for Thin Deep Nets](paper-catalog.md#p142)
 - [Distilling the Knowledge in a Neural Network](paper-catalog.md#p143)
+- [C-RADIOv4 (Tech Report)](paper-catalog.md#p478)
+- [AM-RADIO: Agglomerative Vision Foundation Model -- Reduce All Domains Into One](paper-catalog.md#p479)
 
 ## 正交标签
 
@@ -915,13 +928,13 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 | 模态 \ 任务 | understanding | generation | decision | evaluation | analysis |
 |---|---:|---:|---:|---:|---:|
 | text | [57](#x-text-understanding) | [142](#x-text-generation) | [73](#x-text-decision) | [63](#x-text-evaluation) | [47](#x-text-analysis) |
-| image | [106](#x-image-understanding) | [51](#x-image-generation) | [86](#x-image-decision) | [16](#x-image-evaluation) | [13](#x-image-analysis) |
-| video | [32](#x-video-understanding) | [39](#x-video-generation) | [25](#x-video-decision) | [12](#x-video-evaluation) | [4](#x-video-analysis) |
+| image | [113](#x-image-understanding) | [51](#x-image-generation) | [86](#x-image-decision) | [16](#x-image-evaluation) | [13](#x-image-analysis) |
+| video | [33](#x-video-understanding) | [39](#x-video-generation) | [25](#x-video-decision) | [12](#x-video-evaluation) | [4](#x-video-analysis) |
 | audio | [7](#x-audio-understanding) | [6](#x-audio-generation) | · | [1](#x-audio-evaluation) | · |
 | action | [8](#x-action-understanding) | [33](#x-action-generation) | [127](#x-action-decision) | [9](#x-action-evaluation) | [2](#x-action-analysis) |
 | state | [15](#x-state-understanding) | [2](#x-state-generation) | [64](#x-state-decision) | [1](#x-state-evaluation) | · |
 | code | [1](#x-code-understanding) | [20](#x-code-generation) | [16](#x-code-decision) | [15](#x-code-evaluation) | [7](#x-code-analysis) |
-| multimodal | [51](#x-multimodal-understanding) | [42](#x-multimodal-generation) | [39](#x-multimodal-decision) | [17](#x-multimodal-evaluation) | [8](#x-multimodal-analysis) |
+| multimodal | [54](#x-multimodal-understanding) | [42](#x-multimodal-generation) | [39](#x-multimodal-decision) | [17](#x-multimodal-evaluation) | [8](#x-multimodal-analysis) |
 | tabular | [1](#x-tabular-understanding) | · | · | · | · |
 
 <a id="x-text-understanding"></a>
@@ -1333,7 +1346,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-image-understanding"></a>
 
-### image × understanding（106）
+### image × understanding（113）
 
 - [A High-Fidelity Digital Twin for Robotic Manipulation Based on 3D Gaussian Splatting](paper-catalog.md#p054)
 - [Language-Grounded Hierarchical Planning and Execution with Multi-Robot 3D Scene Graphs](paper-catalog.md#p055)
@@ -1441,6 +1454,13 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Perception Encoder: The best visual embeddings are not at the output of the network](paper-catalog.md#p449)
 - [DINOv3](paper-catalog.md#p450)
 - [HunyuanImage 3.0 Technical Report](paper-catalog.md#p472)
+- [V-JEPA 2.1: Unlocking Dense Features in Video Self-Supervised Learning](paper-catalog.md#p477)
+- [C-RADIOv4 (Tech Report)](paper-catalog.md#p478)
+- [AM-RADIO: Agglomerative Vision Foundation Model -- Reduce All Domains Into One](paper-catalog.md#p479)
+- [RADIO1D: Elastic Representations for Condensed Vision Modeling](paper-catalog.md#p480)
+- [A ConvNet for the 2020s](paper-catalog.md#p481)
+- [Very Deep Convolutional Networks for Large-Scale Image Recognition](paper-catalog.md#p482)
+- [Rich feature hierarchies for accurate object detection and semantic segmentation](paper-catalog.md#p483)
 
 <a id="x-image-generation"></a>
 
@@ -1630,7 +1650,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-video-understanding"></a>
 
-### video × understanding（32）
+### video × understanding（33）
 
 - [SlotFormer: Unsupervised Visual Dynamics Simulation with Object-Centric Models](paper-catalog.md#p042)
 - [SAVi++: Towards End-to-End Object-Centric Learning from Real-World Videos](paper-catalog.md#p043)
@@ -1664,6 +1684,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [InternVL3: Exploring Advanced Training and Test-Time Recipes for Open-Source Multimodal Models](paper-catalog.md#p391)
 - [Qwen3-VL Technical Report](paper-catalog.md#p392)
 - [Perception Encoder: The best visual embeddings are not at the output of the network](paper-catalog.md#p449)
+- [V-JEPA 2.1: Unlocking Dense Features in Video Self-Supervised Learning](paper-catalog.md#p477)
 
 <a id="x-video-generation"></a>
 
@@ -2186,7 +2207,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-multimodal-understanding"></a>
 
-### multimodal × understanding（51）
+### multimodal × understanding（54）
 
 - [Language-Grounded Hierarchical Planning and Execution with Multi-Robot 3D Scene Graphs](paper-catalog.md#p055)
 - [InternVLA-A1: Unifying Understanding, Generation and Action for Robotic Manipulation](paper-catalog.md#p090)
@@ -2239,6 +2260,9 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Scaling Language-Free Visual Representation Learning](paper-catalog.md#p448)
 - [Perception Encoder: The best visual embeddings are not at the output of the network](paper-catalog.md#p449)
 - [HunyuanImage 3.0 Technical Report](paper-catalog.md#p472)
+- [C-RADIOv4 (Tech Report)](paper-catalog.md#p478)
+- [AM-RADIO: Agglomerative Vision Foundation Model -- Reduce All Domains Into One](paper-catalog.md#p479)
+- [RADIO1D: Elastic Representations for Condensed Vision Modeling](paper-catalog.md#p480)
 
 <a id="x-multimodal-generation"></a>
 

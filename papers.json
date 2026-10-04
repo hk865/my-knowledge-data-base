@@ -30545,5 +30545,357 @@
     "authors": [
       "Google DeepMind"
     ]
+  },
+  {
+    "id": "arxiv:2603.14482",
+    "title": "V-JEPA 2.1: Unlocking Dense Features in Video Self-Supervised Learning",
+    "url": "https://arxiv.org/abs/2603.14482",
+    "arxiv_id": "2603.14482",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "multimodal/visual-representation",
+      "multimodal/video-temporal",
+      "multimodal/world-models"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2603.14482"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p477",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "video"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2603.14482",
+    "canonical_path": "multimodal/papers/arxiv-2603.14482/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2603.14482/README.md",
+    "source_path": "multimodal/papers/arxiv-2603.14482/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Lorenzo Mur-Labadia",
+      "Matthew Muckley",
+      "Amir Bar",
+      "Mido Assran",
+      "Koustuv Sinha",
+      "Mike Rabbat",
+      "Yann LeCun",
+      "Nicolas Ballas",
+      "Adrien Bardes"
+    ]
+  },
+  {
+    "id": "arxiv:2601.17237",
+    "title": "C-RADIOv4 (Tech Report)",
+    "url": "https://arxiv.org/abs/2601.17237",
+    "arxiv_id": "2601.17237",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "multimodal/visual-representation",
+      "cross-domain/knowledge-distillation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2601.17237"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "official_technical_report",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p478",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2601.17237",
+    "canonical_path": "multimodal/papers/arxiv-2601.17237/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2601.17237/README.md",
+    "source_path": "multimodal/papers/arxiv-2601.17237/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Mike Ranzinger",
+      "Greg Heinrich",
+      "Collin McCarthy",
+      "Jan Kautz",
+      "Andrew Tao",
+      "Bryan Catanzaro",
+      "Pavlo Molchanov"
+    ]
+  },
+  {
+    "id": "arxiv:2312.06709",
+    "title": "AM-RADIO: Agglomerative Vision Foundation Model -- Reduce All Domains Into One",
+    "url": "https://arxiv.org/abs/2312.06709",
+    "arxiv_id": "2312.06709",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "multimodal/visual-representation",
+      "cross-domain/knowledge-distillation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2312.06709"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p479",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2312.06709",
+    "canonical_path": "multimodal/papers/arxiv-2312.06709/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2312.06709/README.md",
+    "source_path": "multimodal/papers/arxiv-2312.06709/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Mike Ranzinger",
+      "Greg Heinrich",
+      "Jan Kautz",
+      "Pavlo Molchanov"
+    ]
+  },
+  {
+    "id": "arxiv:2607.03624",
+    "title": "RADIO1D: Elastic Representations for Condensed Vision Modeling",
+    "url": "https://arxiv.org/abs/2607.03624",
+    "arxiv_id": "2607.03624",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "multimodal/visual-representation",
+      "multimodal/vlm"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2607.03624"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p480",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2607.03624",
+    "canonical_path": "multimodal/papers/arxiv-2607.03624/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2607.03624/README.md",
+    "source_path": "multimodal/papers/arxiv-2607.03624/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Greg Heinrich",
+      "Mike Ranzinger",
+      "Collin McCarthy",
+      "Natan Bagrov",
+      "Eugene Khvedchenya",
+      "Bryan Catanzaro",
+      "Jan Kautz",
+      "Andrew Tao",
+      "Pavlo Molchanov"
+    ]
+  },
+  {
+    "id": "arxiv:2201.03545",
+    "title": "A ConvNet for the 2020s",
+    "url": "https://arxiv.org/abs/2201.03545",
+    "arxiv_id": "2201.03545",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "multimodal/visual-representation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2201.03545"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p481",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2201.03545",
+    "canonical_path": "multimodal/papers/arxiv-2201.03545/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-2201.03545/README.md",
+    "source_path": "multimodal/papers/arxiv-2201.03545/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Zhuang Liu",
+      "Hanzi Mao",
+      "Chao-Yuan Wu",
+      "Christoph Feichtenhofer",
+      "Trevor Darrell",
+      "Saining Xie"
+    ]
+  },
+  {
+    "id": "arxiv:1409.1556",
+    "title": "Very Deep Convolutional Networks for Large-Scale Image Recognition",
+    "url": "https://arxiv.org/abs/1409.1556",
+    "arxiv_id": "1409.1556",
+    "doi": null,
+    "year": "2014",
+    "topic_paths": [
+      "multimodal/visual-representation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/1409.1556"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p482",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-1409.1556",
+    "canonical_path": "multimodal/papers/arxiv-1409.1556/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-1409.1556/README.md",
+    "source_path": "multimodal/papers/arxiv-1409.1556/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Karen Simonyan",
+      "Andrew Zisserman"
+    ]
+  },
+  {
+    "id": "arxiv:1311.2524",
+    "title": "Rich feature hierarchies for accurate object detection and semantic segmentation",
+    "url": "https://arxiv.org/abs/1311.2524",
+    "arxiv_id": "1311.2524",
+    "doi": null,
+    "year": "2013",
+    "topic_paths": [
+      "multimodal/visual-representation",
+      "robotics/perception"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/1311.2524"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p483",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-1311.2524",
+    "canonical_path": "multimodal/papers/arxiv-1311.2524/README.md",
+    "canonical_readme": "multimodal/papers/arxiv-1311.2524/README.md",
+    "source_path": "multimodal/papers/arxiv-1311.2524/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Ross Girshick",
+      "Jeff Donahue",
+      "Trevor Darrell",
+      "Jitendra Malik"
+    ]
   }
 ]

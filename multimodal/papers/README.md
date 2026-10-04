@@ -142,3 +142,10 @@
 - [LongCat-Image Technical Report](arxiv-2512.07584/README.md) · 2025 · 文献卡，暂无独立精读
 - [Addendum to GPT-4o System Card: Native image generation](gpt-4o-image-generation-system-card/README.md) · 2025 · 文献卡，暂无独立精读
 - [Gemini 3.1 Flash Image Model Card](gemini-3-1-flash-image-model-card/README.md) · 2026 · 文献卡，暂无独立精读
+- [V-JEPA 2.1: Unlocking Dense Features in Video Self-Supervised Learning](arxiv-2603.14482/README.md) · 2026 · 文献卡，暂无独立精读
+- [C-RADIOv4 (Tech Report)](arxiv-2601.17237/README.md) · 2026 · 文献卡，暂无独立精读
+- [AM-RADIO: Agglomerative Vision Foundation Model -- Reduce All Domains Into One](arxiv-2312.06709/README.md) · 2023 · 文献卡，暂无独立精读
+- [RADIO1D: Elastic Representations for Condensed Vision Modeling](arxiv-2607.03624/README.md) · 2026 · 文献卡，暂无独立精读
+- [A ConvNet for the 2020s](arxiv-2201.03545/README.md) · 2022 · 文献卡，暂无独立精读
+- [Very Deep Convolutional Networks for Large-Scale Image Recognition](arxiv-1409.1556/README.md) · 2014 · 文献卡，暂无独立精读
+- [Rich feature hierarchies for accurate object detection and semantic segmentation](arxiv-1311.2524/README.md) · 2013 · 文献卡，暂无独立精读

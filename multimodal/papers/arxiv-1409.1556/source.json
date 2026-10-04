@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:1409.1556",
+  "title": "Very Deep Convolutional Networks for Large-Scale Image Recognition",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-1409.1556",
+  "official_url": "https://arxiv.org/abs/1409.1556",
+  "official_fulltext_url": "https://arxiv.org/pdf/1409.1556v6",
+  "read_version": "v6",
+  "version_status": "checked_v6",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Karen Simonyan",
+    "Andrew Zisserman"
+  ],
+  "year": 2014,
+  "topic_paths": [
+    "multimodal/visual-representation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv v6 PDF（ICLR 2015 版）：Abstract、§1、§2.3（3×3 堆叠的讨论）、Table 2（参数量）、§4.3–4.5（单网络与集成结果）、Table 7",
+    "mechanism_summary": "全部 3×3 卷积，堆到 16–19 层；三层 3×3 = 一层 7×7 感受野，参数 27C² 对 49C²；ILSVRC 2014 定位第一、分类第二；单网络 top-5 测试 7.0%（比单个 GoogLeNet 低 0.9），两模型集成 6.8%。",
+    "evidence_boundary": "数字取自原文 PDF 正文与表格（PyMuPDF 抽取）；未复现实验。提交时的 7 模型集成为 7.3%，赛后两模型集成降到 6.8%。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/1409.1556",
+      "https://arxiv.org/pdf/1409.1556v6"
+    ],
+    "source_origin": "phase3_multimodal_visual_representation_extension",
+    "affiliations": "University of Oxford（Visual Geometry Group）",
+    "relation_pages": [
+      "multimodal/fields/visual-representation/README.md",
+      "multimodal/fields/visual-representation/BASELINES.md",
+      "multimodal/fields/visual-representation/PAPERS.md"
+    ]
+  },
+  "modality_tags": [
+    "image"
+  ],
+  "task_tags": [
+    "understanding"
+  ]
+}

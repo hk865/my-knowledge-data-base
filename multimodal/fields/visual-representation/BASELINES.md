@@ -16,7 +16,7 @@
 
 三个基线之前有一个原点：[HOG](../../papers/hog/README.md)（2005，INRIA）的"人设计的特征 + 线性 SVM"。[判断] 后来的线性评测协议保留了这个形式，只是把特征换成学到的；有标签监督的 [AlexNet](../../papers/alexnet/README.md)（2012）第一次让"特征也由数据学出"在 ILSVRC 上胜出。
 
-第三个基线到 2026 年仍是参照：NVIDIA 2026 年 1 月的 [C-RADIOv4](https://arxiv.org/abs/2601.17237) 直接以 SigLIP 2、DINOv3、SAM 3 三个编码器为教师做多教师蒸馏；Meta 2026 年 3 月的 [V-JEPA 2.1](https://arxiv.org/abs/2603.14482) 在冻结评测中以 DINOv3 为图像与密集任务的对照。
+第三个基线到 2026 年仍是参照：NVIDIA 2026 年 1 月的 [C-RADIOv4](../../papers/arxiv-2601.17237/README.md) 直接以 SigLIP 2、DINOv3、SAM 3 三个编码器为教师做多教师蒸馏；Meta 2026 年 3 月的 [V-JEPA 2.1](../../papers/arxiv-2603.14482/README.md) 在冻结评测中以 DINOv3 为图像与密集任务的对照。
 
 ## 基线的结构拆分
 
@@ -55,16 +55,18 @@
 | 训练信号 | sigmoid 对比 + 描述与定位解码 + 自蒸馏与遮蔽预测 | [SigLIP 2](../../papers/arxiv-2502.14786/README.md) | So400m/14 零样本 83.2% → 84.1%，多语言检索 26.6 → 57.5；代价：NaFlex 变体外推不好 |
 | 训练信号（视频） | 管道遮蔽 90%–95% 后重建像素 | [VideoMAE](../../papers/arxiv-2203.12602/README.md) | SSv2 69.6%（从零训练 32.6%）；代价：Kinetics 上时间建模作用不明显 |
 | 训练信号（视频） | 遮掉大块时空区域，在特征空间预测 | [V-JEPA](../../papers/arxiv-2404.08471/README.md) | 冻结评测 SSv2 71.4%（DINOv2 50.6%）；代价：外观为主的 K400 上 82.0% 低于 DINOv2 的 83.4% |
-| 训练信号（图像与视频） | 可见块与被遮块都计入的密集预测损失，在多个中间层加自监督，图像与视频统一训练 | [V-JEPA 2.1](https://arxiv.org/abs/2603.14482)（2026） | 冻结 ADE20K 从 V-JEPA 2 的 24.4 升到 47.9，NYUv2 线性深度 RMSE 0.307（DINOv3 0.309），SSv2 77.7%（DINOv3 71.1%）；代价：ADE20K 与 ImageNet（85.5% 对 88.1%）仍低于 DINOv3 |
-| 训练信号 | 多教师蒸馏：同时模仿图文、自监督、分割三类编码器 | [C-RADIOv4](https://arxiv.org/abs/2601.17237)（2026） | 412M 与 631M 两个尺寸，以 SigLIP 2、DINOv3、SAM 3 为教师，密集任务上与 DINOv3-7B 有竞争力；代价：进步要靠教师更新（作者自述"更好的教师带来更好的学生"），SAM 3 当教师在所选 benchmark 上没有带来提升 |
-| 架构 | 全部用 3×3 卷积，堆到 16–19 层 | [VGG](https://arxiv.org/abs/1409.1556) | 单网络 top-5 7.0%；R-CNN 换成 VGG16 后 VOC2007 58.5% → 66.0%；代价：前向耗时约 7 倍 |
+| 训练信号（图像与视频） | 可见块与被遮块都计入的密集预测损失，在多个中间层加自监督，图像与视频统一训练 | [V-JEPA 2.1](../../papers/arxiv-2603.14482/README.md)（2026） | 冻结 ADE20K 从 V-JEPA 2 的 24.4 升到 47.9，NYUv2 线性深度 RMSE 0.307（DINOv3 0.309），SSv2 77.7%（DINOv3 71.1%）；代价：ADE20K 与 ImageNet（85.5% 对 88.1%）仍低于 DINOv3 |
+| 训练信号 | 多教师蒸馏：同时模仿图文、自监督、分割三类编码器 | [AM-RADIO](../../papers/arxiv-2312.06709/README.md)（2023）→ [C-RADIOv4](../../papers/arxiv-2601.17237/README.md)（2026） | AM-RADIO 只用 DataComp-1B 图像蒸馏 CLIP、DINOv2、SAM，ViT-H 的 k 近邻 86.06 高于 DINOv2 的 83.41；C-RADIOv4 换成 SigLIP 2、DINOv3、SAM 3 为教师，631M 的 ADE20K 线性分割 55.2（DINOv3-7B 55.9）；代价：进步要靠教师更新（作者自述"更好的教师带来更好的学生"），教师的固定模式噪声会被学走（C-RADIOv4 用随机平移的损失压住），AM-RADIO 有随分辨率的"模式切换"，SAM 3 当教师在所选 benchmark 上没有带来提升 |
+| 训练信号 | 先把多个教师蒸馏进 1.9B 的代理教师，再蒸馏到端侧小模型 | [EUPE](https://arxiv.org/abs/2603.22387)（2026，Meta） | 教师为 PEcore-G、PElang-G、DINOv3-H+，ViT-B 学生在分类、密集与 VLM 任务上与同尺寸的专门编码器持平或更好；代价：教师之间会冲突，再加 SigLIP2-G 当教师使 OCR 明显下降 |
+| 训练信号 | 图文对比 + 可见 token 也计入损失的遮蔽自蒸馏（iBOT++） | [TIPSv2](https://arxiv.org/abs/2604.12012)（2026，Google DeepMind） | 出发点：上一代旗舰 TIPS ViT-g 的零样本分割 ADE150 mIoU 只有 2.6，从它蒸馏出的 ViT-L 为 20.8；iBOT++ 把逐块特征与文本的对齐直接放进预训练 |
+| 架构 | 全部用 3×3 卷积，堆到 16–19 层 | [VGG](../../papers/arxiv-1409.1556/README.md) | 单网络 top-5 7.0%；R-CNN 换成 VGG16 后 VOC2007 58.5% → 66.0%；代价：前向耗时约 7 倍 |
 | 架构 | 多分支 Inception 模块，22 层 | [GoogLeNet](https://arxiv.org/abs/1409.4842) | ILSVRC 2014 top-5 6.67%，第一；代价：作者自述设计原则是否真起作用仍需分析 |
 | 架构 | 残差连接 x + F(x) | [ResNet](../../papers/arxiv-1512.03385/README.md) | 34 层 top-1 从普通网络的 28.54% 降到 25.03%，152 层集成 3.57%；代价：1202 层比 110 层差（过拟合） |
 | 架构 | 编码–解码 + 跨层拼接 | [U-Net](https://arxiv.org/abs/1505.04597) | ISBI 细胞追踪 IOU 92%（第二名 83%）；后来成为扩散模型的去噪主干（见[视觉生成方向](../generation/README.md)） |
 | 架构 | 面向端侧：深度可分离卷积、复合缩放、单网络检测 | [MobileNets](https://arxiv.org/abs/1704.04861)、[EfficientNet](https://arxiv.org/abs/1905.11946)、[YOLO](../../../robotics-embodied/papers/arxiv-1506.02640/README.md) | MobileNet 精度与 VGG16 相近、参数少 32 倍；EfficientNet-B7 84.3%，比 GPipe 小 8.4 倍；YOLO 45 FPS、VOC2007 63.4%；代价：都早于 ViT，没有同条件比较 |
 | 架构 | 图像切成 16×16 的块交给 Transformer | [ViT](../../papers/vit/README.md) | 在 JFT-300M 上反超同规模 BiT ResNet；代价：只用 ImageNet 时不如 ResNet；遮蔽块预测自监督只到 79.9% |
 | 架构 | 输入序列加 4 个不对应图块的寄存器 token | [Registers](../../papers/arxiv-2309.16588/README.md) | 消除约 2% 的高范数伪影 token，LOST 物体发现 35.3 → 55.4；代价：计算量增加不到 2% |
-| 架构 | 按 Transformer 的设计逐步现代化 ResNet | [ConvNeXt](https://arxiv.org/abs/2201.03545) | 相近复杂度下 ImageNet、COCO、ADE20K 持平或超过 Swin；代价：深度卷积在同 FLOPs 下的速度与显存问题 |
+| 架构 | 按 Transformer 的设计逐步现代化 ResNet | [ConvNeXt](../../papers/arxiv-2201.03545/README.md) | 相近复杂度下 ImageNet、COCO、ADE20K 持平或超过 Swin；代价：深度卷积在同 FLOPs 下的速度与显存问题 |
 | 数据 | 以 WordNet 为骨架的百万级标注图像 + 年度竞赛 | [ImageNet](https://www.image-net.org/static_files/papers/imagenet_cvpr09.pdf)、[ILSVRC 综述](https://arxiv.org/abs/1409.0575) | 第一个所有团队共用的大规模 benchmark，2014 年几乎所有参赛队伍改用 CNN；代价：单标签 1000 类，外界批评不够难、细粒度类别有标注错误 |
 | 数据 | 3 亿张带噪声标签的非公开图像（JFT-300M） | [ViT](../../papers/vit/README.md) | 让 ViT 反超 CNN；代价：外部团队无法复现同一条件 |
 | 数据 | 公开的 ImageNet-21K + 更强的增强与正则 | [AugReg](../../papers/arxiv-2106.10270/README.md) | 追平或超过 JFT-300M 上的同规模 ViT，相当于数据扩大 10 倍；代价：所需计算差不多 |
@@ -75,13 +77,13 @@
 | 数据 | 54 亿对公开图文 + 视频数据引擎合成的描述 | [Perception Encoder](../../papers/arxiv-2504.13181/README.md) | 零样本 ImageNet 鲁棒性平均 86.6、Kinetics-400 76.9 |
 | 训练配方 | 只用 ImageNet 的强增强与正则 + 向 CNN 教师学习的蒸馏 token | [DeiT](../../papers/arxiv-2012.12877/README.md) | DeiT-B 81.8%，蒸馏后 85.2% 超过 JFT 预训练的 ViT-B（84.15%）；代价：配方极敏感，换 SGD 降到 74.5% |
 | 训练配方 | 系统扫描增强与正则 × 数据量 × 计算 | [AugReg](../../papers/arxiv-2106.10270/README.md) | 发布 5 万多个模型；增强比正则更常有用；代价：没有简单规则，小模型或短训练时加 AugReg 反而有害 |
-| 训练配方 | 给 ResNet-50 换上 Transformer 式配方 | [ConvNeXt](https://arxiv.org/abs/2201.03545) | 76.1% → 78.8%，结构不变 |
+| 训练配方 | 给 ResNet-50 换上 Transformer 式配方 | [ConvNeXt](../../papers/arxiv-2201.03545/README.md) | 76.1% → 78.8%，结构不变 |
 | 训练配方 | 大模型训练后蒸馏成小模型；高分辨率收尾 | [DINOv2](../../papers/arxiv-2304.07193/README.md)、[DINOv3](../../papers/arxiv-2508.10104/README.md) | 一个旗舰模型派生出一族部署用的小模型；代价：DINOv2 的 416 分辨率阶段约为 224 的 3 倍计算 |
 | 训练配方 | 强化纯对比配方：渐进分辨率、LAMB、RoPE、注意力池化等 | [Perception Encoder](../../papers/arxiv-2504.13181/README.md) | 冻结特征 COCO 检测的最好层比原始 CLIP 高近 10 mAP；代价：渐进分辨率与注意力池化把最好的层推向网络深处，最后一层仍需对齐 |
-| 读出接口 | ImageNet 预训练后在检测数据上微调整个主干 | [R-CNN](https://arxiv.org/abs/1311.2524)、[DPM are CNNs](https://arxiv.org/abs/1409.5403) | VOC2007 从 HOG-DPM 的 33.7% 升到 54.2%，其中微调贡献 8.0 个百分点；代价：每张图约 13 秒 |
+| 读出接口 | ImageNet 预训练后在检测数据上微调整个主干 | [R-CNN](../../papers/arxiv-1311.2524/README.md)、[DPM are CNNs](https://arxiv.org/abs/1409.5403) | VOC2007 从 HOG-DPM 的 33.7% 升到 54.2%，其中微调贡献 8.0 个百分点；代价：每张图约 13 秒 |
 | 读出接口 | 冻结 CLIP，取倒数第二层网格特征，经线性投影接语言模型 | [LLaVA](../../papers/llava/README.md) | ScienceQA 上比取最后一层高约 1 个百分点（90.92% 对 89.96%） |
 | 读出接口 | 取中间层，再做语言对齐或空间对齐 | [Perception Encoder](../../papers/arxiv-2504.13181/README.md) | PElang 取第 47 层（共 50 层），DocVQA 94.6；PEspatial 对齐第 41 层与 SAM 2.1，COCO 66.0 box mAP |
-| 读出接口 | 把图像压成可变长度的 1D token 序列，按需取前若干个 | [RADIO1D](https://arxiv.org/abs/2607.03624)（2026） | 接 9B 语言模型时，10 项 VLM benchmark 平均从 1 个 token 的 51.5 到 256 个 token 的 73.3，可按延迟取舍；出发点是 VLM 训练会让视觉特征越来越抽象、空间一致性下降 |
+| 读出接口 | 把图像压成可变长度的 1D token 序列，按需取前若干个 | [RADIO1D](../../papers/arxiv-2607.03624/README.md)（2026） | 接 9B 语言模型时，10 项 VLM benchmark 平均从 1 个 token 的 51.5 到 256 个 token 的 73.3，可按延迟取舍；出发点是 VLM 训练会让视觉特征越来越抽象、空间一致性下降 |
 | 读出接口 | 两种编码器拼接，并随策略全量微调 | [OpenVLA](../../../robotics-embodied/papers/openvla/reading.md) | 语义（SigLIP）与空间（DINOv2）兼得；冻结视觉 47.0% 对全量微调 69.7%（较小的 SigLIP-only 变体） |
 | 读出接口 | 冻结 DINO 特征作为世界模型的状态空间 | [DINO-WM](../../papers/arxiv-2411.04983/README.md)、[Back to the Features](../../papers/arxiv-2507.19468/README.md)、[Reconstruction or Semantics?](../../papers/arxiv-2605.06388/README.md) | DINO-WM 在 Push-T 成功率 0.90（离线训练的 DreamerV3 0.30）；语义型潜空间在规划与策略上普遍好于重建型；代价：需要动作标注，只在少数简单环境验证 |
 | 评测协议 | 以视觉指令微调后的问答作为评测，比较 23 个视觉骨干 | [Cambrian-1](../../papers/arxiv-2406.16860/README.md)、[Web-SSL](../../papers/arxiv-2504.01017/README.md) | 发现多数 benchmark 测不到视觉能力、组合多种编码器有益；代价：结果依赖所选语言模型与指令数据 |
@@ -139,8 +141,8 @@
 
 **未核实 / 待验证**
 
-- 没有单篇目录的论文（DPM、Neocognitron、LeNet、VGG、GoogLeNet、U-Net、MobileNets、EfficientNet、ConvNeXt、R-CNN、DPM are CNNs、ImageNet、ILSVRC 综述、Zeiler 与 Fergus、Geirhos、Kornblith、Raghu）的数字取自 [synthesis.csv](synthesis.csv)，那些行由打开过的原文填写；LeNet 一行除题录外未核实。
+- 没有单篇目录的论文（DPM、Neocognitron、LeNet、GoogLeNet、U-Net、MobileNets、EfficientNet、DPM are CNNs、ImageNet、ILSVRC 综述、Zeiler 与 Fergus、Geirhos、Kornblith、Raghu）的数字取自 [synthesis.csv](synthesis.csv)，那些行由打开过的原文填写；LeNet 一行除题录外未核实。
 - 同为有监督 ResNet-50 的 76.1%、76.3%、79.3% 三个数字分别来自三篇论文的表格，各自的训练配方细节没有逐项核对。
 - MoCo v3 的线性与微调数字转引自 BEiT 附录 Table 9 与 MAE 原文，没有另查 MoCo v3 原文。
 - BEiT 的正式发表出处（通常引作 ICLR 2022）本轮没能打开 OpenReview 页面核对。
-- V-JEPA 2.1、C-RADIOv4、RADIO1D 三行只核对了 arXiv PDF 的摘要、引言与首页图表（V-JEPA 2.1 Fig.2、C-RADIOv4 摘要与 Table 1 标题、RADIO1D 摘要与 Fig.1），本库还没有单篇目录。
+- V-JEPA 2.1、C-RADIOv4、RADIO1D、AM-RADIO 已建文献卡，核对范围见各卡的 source.json；EUPE、TIPSv2 两行只核对了 arXiv PDF 的摘要、引言和所引表格，还没有单篇目录。

@@ -1,6 +1,6 @@
 # 全库论文总目录
 
-共 476 个去重资源（450 篇论文、18 篇官方技术报告、1 个代码仓库、7 篇官方博客）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
+共 483 个去重资源（456 篇论文、19 篇官方技术报告、1 个代码仓库、7 篇官方博客）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
 
 身份核验、助手教学进度和用户阅读状态分开。历史来源保留原角色与证据局限，不将助手推荐写成用户提供，也不将教学完成写成用户已读。
 
@@ -5126,6 +5126,76 @@
 - 身份核验：selected_sections_checked_not_full_read
 - 用户阅读状态：unknown
 - [文献卡](../multimodal/papers/gemini-3-1-flash-image-model-card/README.md)
+
+<a id="p477"></a>
+## p477 · V-JEPA 2.1: Unlocking Dense Features in Video Self-Supervised Learning
+
+- 标识：arxiv:2603.14482
+- 原文 / 官方入口：https://arxiv.org/abs/2603.14482
+- 主题：multimodal/visual-representation, multimodal/video-temporal, multimodal/world-models
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2603.14482/README.md)
+
+<a id="p478"></a>
+## p478 · C-RADIOv4 (Tech Report)
+
+- 标识：arxiv:2601.17237
+- 原文 / 官方入口：https://arxiv.org/abs/2601.17237
+- 主题：multimodal/visual-representation, cross-domain/knowledge-distillation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2601.17237/README.md)
+
+<a id="p479"></a>
+## p479 · AM-RADIO: Agglomerative Vision Foundation Model -- Reduce All Domains Into One
+
+- 标识：arxiv:2312.06709
+- 原文 / 官方入口：https://arxiv.org/abs/2312.06709
+- 主题：multimodal/visual-representation, cross-domain/knowledge-distillation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2312.06709/README.md)
+
+<a id="p480"></a>
+## p480 · RADIO1D: Elastic Representations for Condensed Vision Modeling
+
+- 标识：arxiv:2607.03624
+- 原文 / 官方入口：https://arxiv.org/abs/2607.03624
+- 主题：multimodal/visual-representation, multimodal/vlm
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2607.03624/README.md)
+
+<a id="p481"></a>
+## p481 · A ConvNet for the 2020s
+
+- 标识：arxiv:2201.03545
+- 原文 / 官方入口：https://arxiv.org/abs/2201.03545
+- 主题：multimodal/visual-representation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-2201.03545/README.md)
+
+<a id="p482"></a>
+## p482 · Very Deep Convolutional Networks for Large-Scale Image Recognition
+
+- 标识：arxiv:1409.1556
+- 原文 / 官方入口：https://arxiv.org/abs/1409.1556
+- 主题：multimodal/visual-representation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-1409.1556/README.md)
+
+<a id="p483"></a>
+## p483 · Rich feature hierarchies for accurate object detection and semantic segmentation
+
+- 标识：arxiv:1311.2524
+- 原文 / 官方入口：https://arxiv.org/abs/1311.2524
+- 主题：multimodal/visual-representation, robotics/perception
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../multimodal/papers/arxiv-1311.2524/README.md)
 
 ## 2026年10月3日既有条目更新
 

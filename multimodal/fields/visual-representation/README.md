@@ -5,9 +5,9 @@
 > 速览：
 > - 视觉表征是编码器对一张图的输出 z = f(x)；这个方向没有专属 benchmark，好坏由使用它的任务和评测协议定义，换一个协议排名会翻转（例如 ViT-L 上 MAE 的线性评测低于 MoCo v3，全量微调却高于它）。
 > - 每种方法是"训练信号 × 架构 × 数据"三条轴上的一个点：训练信号决定表征偏向哪些性质，架构决定先验和可扩展性，数据决定信号能放大到多大。
-> - 主线历史是这三条轴的依次移动：手工特征 → ImageNet 与有监督 CNN → 预训练加微调（R-CNN）→ 自监督对比学习 → ViT → CLIP、MAE、DINO 与 ConvNeXt 对 ViT 的四种回答 → DINOv2 的冻结即用。
-> - [判断] 四个趋势：从追求不变性走向逐像素；与语言对齐；从逐任务微调走向一个冻结编码器服务多个任务；训练信号的来源从人转向数据本身。
-> - [判断] 实践中的终点更像按性质组合多种表征，例如 OpenVLA 拼接语义特征（SigLIP）与空间特征（DINOv2）。
+> - 主线历史是这三条轴的依次移动：手工特征 → ImageNet 与有监督 CNN → 预训练加微调（R-CNN）→ 自监督对比学习 → ViT → CLIP、MAE、DINO 与 ConvNeXt 对 ViT 的四种回答 → DINOv2 的冻结即用 → 2024–2026 年为 VLM 与密集任务修补：信号叠加、读中间层、多教师蒸馏。
+> - [判断] 四个趋势：从追求不变性走向逐像素；与语言对齐；从逐任务微调走向一个冻结编码器服务多个任务；训练信号的来源从人转向数据本身。2024 年后加上第五个：密集特征成为一等目标，组合从拼接走向蒸馏。
+> - [判断] 实践中的终点更像按性质组合多种表征，例如 OpenVLA 拼接语义特征（SigLIP）与空间特征（DINOv2）；2026 年改为蒸馏进一个（C-RADIOv4）。
 
 ## 什么是视觉表征
 
@@ -58,7 +58,7 @@
 
 **性质诊断**换一个问法：先构造专门的测试，问表征依赖哪种线索。Geirhos 等（2019，ICLR，University of Tübingen）用风格迁移把一张图的形状和另一张图的纹理合成"线索冲突"图像，让人和 CNN 分类。人类 95.9% 的判断按形状；ImageNet 训练的 ResNet-50 只有 22.1% 按形状（VGG-16 为 17.2%，AlexNet 为 42.9%）。把训练集换成用风格迁移去掉局部纹理线索的 Stylized-ImageNet 后，ResNet-50 按形状的比例升到 81%；与 ImageNet 混合训练的 Shape-ResNet 作为 Faster R-CNN（R-CNN 的后续检测器）主干，VOC2007 检测 mAP50（预测框与真值重叠过半即算检出时的平均精度）从 70.7 升到 75.1，ImageNet-C 平均损坏误差从 76.7 降到 69.3。作者据此认为纹理偏向由 ImageNet 训练数据诱导，而非由 CNN 结构决定。所以表征依赖什么线索，要靠这类专门构造的诊断测试来回答。
 
-benchmark 的替换就是这个方向目标的迁移：MIT 行人库（HOG 近乎完美分离后饱和）→ INRIA 行人库 → PASCAL VOC 检测 → ILSVRC 分类 → COCO 检测、ADE20K 分割等迁移任务 → 30 多个数据集上的零样本（CLIP）→ 冻结特征同时覆盖图像级与像素级任务（DINOv2）。跨论文比较时，骨干与分辨率、预训练数据（是否非公开、是否带文本或标签）、训练计算量和评测协议都要对齐，逐项清单见 [Baseline 页的检查单](BASELINES.md#跨论文比较前的检查单)。
+benchmark 的替换就是这个方向目标的迁移：MIT 行人库（HOG 近乎完美分离后饱和）→ INRIA 行人库 → PASCAL VOC 检测 → ILSVRC 分类 → COCO 检测、ADE20K 分割等迁移任务 → 30 多个数据集上的零样本（CLIP）→ 冻结特征同时覆盖图像级与像素级任务（DINOv2）→ 经语言模型的问答与机器人规划（主线第 8 个节点）。跨论文比较时，骨干与分辨率、预训练数据（是否非公开、是否带文本或标签）、训练计算量和评测协议都要对齐，逐项清单见 [Baseline 页的检查单](BASELINES.md#跨论文比较前的检查单)。
 
 ## 从内部看
 
@@ -114,10 +114,13 @@ benchmark 的替换就是这个方向目标的迁移：MIT 行人库（HOG 近�
 5. **ViT（2020，Google）：架构轴从 CNN 移到 Transformer，数据轴移到 JFT-300M**。留下的问题：卷积的局部性与平移等变是必需的先验，还是可以从数据中学出来？改变：把图像切成 16×16 的块当作 token 序列交给 Transformer，只在 ImageNet 上预训练时不如同规模 ResNet，在 JFT-300M 上反超。它留下两个问题：优势要靠非公开的大规模标注换来；它试的遮蔽块预测自监督只到 ImageNet 79.9%，比有监督预训练低 4 个百分点（ViT §4.6）。
 6. **CLIP、MAE、DINO（2021）与 ConvNeXt（2022）：对 ViT 的四种回答**。CLIP（OpenAI）同时换掉信号和数据：4 亿对网上图文做对比学习，零样本 ImageNet 76.2%，与原始 ResNet-50 相当而没有用它的 128 万张训练图，评测也移到 30 多个数据集上的零样本。MAE（FAIR）只换信号：遮住 75% 的块再重建像素，只用 ImageNet-1K 就让 ViT-H 微调到 87.8%，此前只用这一数据集的最好结果为 87.1%。DINO（FAIR 与 Inria）问"Transformer 在视觉中的成功有限，是否因为预训练用了监督"，改用自蒸馏，得到 k 近邻 78.3% 和能分出物体的注意力图。ConvNeXt（FAIR 与 UC Berkeley）回头检验架构：只给 ResNet-50 换上 Transformer 式训练配方，ImageNet 精度就从 76.1% 升到 78.8%，再逐步借用 Transformer 的设计后，在相近计算量下全面超过 Swin（一种分层的视觉 Transformer）。[判断] CNN 与 Transformer 在视觉表征上的胜负，很大程度取决于数据规模和训练配方，完整论证见[观点页：CNN 与 Transformer](../../../perspectives/cnn-vs-transformer.md)。
 7. **DINOv2（2023，Meta AI Research 与 Inria）：数据轴移到筛选过的大规模无标注图像，使用方式移到"冻结即用"**。留下的问题：2021 年的几种信号各在不同协议上领先，下游往往要为每个任务微调或换编码器；DINO 的结论把"在随机、未筛选的图像上预训练大 ViT"列为下一步。改变：DINOv2 发现需要筛选：从 12 亿张网页图中检索出与 ImageNet-22k 等已筛选数据集相近的 1.42 亿张，训练 10 亿参数的 ViT 再蒸馏成小模型。冻结特征在图像级和像素级的多数 benchmark 上超过 OpenCLIP（CLIP 的开源复现），ImageNet 线性评测比此前最好的自监督特征（iBOT ViT-L/16）高 4.2 个百分点。作者把效果归于四个因素：更好的训练配方、更大的模型、更大的数据和蒸馏。
+8. **DINOv2 之后（2024–2026）：做 VLM 的眼睛、修密集特征、多教师蒸馏**。留下的问题：冻结编码器接进 VLM 后，[MMVP](../../papers/arxiv-2401.06209/README.md) 在 CLIP 认作几乎相同的图片对上测到 LLaVA-1.5 只答对 24.7%（随机为 25%）；规模放大后，[Registers](../../papers/arxiv-2309.16588/README.md) 在大 ViT 中找到约 2% 被挪去存全局信息的高范数 token，[DINOv3](../../papers/arxiv-2508.10104/README.md)（Meta，2025）在 7B 模型上看到 ImageNet 线性评测一路上升、逐块分割却在约 20 万次迭代后下降。改变有三条。信号叠加：[SigLIP 2](../../papers/arxiv-2502.14786/README.md)（Google DeepMind，2025）给图文损失加描述、定位与自蒸馏；DINOv3 用 Gram anchoring（让逐块特征的相似度矩阵贴近早期教师）止住退化；[V-JEPA 2.1](../../papers/arxiv-2603.14482/README.md)（Meta FAIR，2026 年 3 月）让可见块也计入损失，冻结 ADE20K 从 24.4 升到 47.9。读出移到中间层：[Perception Encoder](../../papers/arxiv-2504.13181/README.md)（Meta，2025）发现对比模型最好的特征在中间层。组合从拼接移到蒸馏：NVIDIA 的 [AM-RADIO](../../papers/arxiv-2312.06709/README.md)（2023）把 CLIP、DINOv2、SAM 蒸馏进一个 ViT，[C-RADIOv4](../../papers/arxiv-2601.17237/README.md)（2026 年 1 月）换用 SigLIP 2、DINOv3、SAM 3 为教师，631M 参数的学生 ADE20K 线性分割 55.2，接近 DINOv3-7B 的 55.9。评测随之移到经语言模型的问答（[Cambrian-1](../../papers/arxiv-2406.16860/README.md)、[Web-SSL](../../papers/arxiv-2504.01017/README.md)）和机器人规划。做不好的场景：DINOv3 读文字的分类弱于图文模型（GTSRB 路牌 87.5% 对 Perception Encoder 的 94.8%）；V-JEPA 2.1 在杂乱场景的分割仍落后 DINOv3；[RADIO1D](../../papers/arxiv-2607.03624/README.md)（NVIDIA，2026 年 7 月）的可变长 token 少于 128 个时，OCR（读图中文字）类任务急剧下降。
+
+   [判断] 站在现在看过去，有三个当年没写出的坑。一是"涌现性质"与"冻结即用"绑定在规模和训练长度上：高范数 token 只在 ViT-L 以上、训练过三分之一后出现，密集退化到 7B 长训练才明显，只看 ImageNet 线性评测发现不了。二是只监督被遮块时，没有局部约束的 token 会被挪去汇集全局信息：V-JEPA 2.1 的诊断与 Registers 同源，Google DeepMind 的 [TIPSv2](https://arxiv.org/abs/2604.12012)（2026 年 4 月）独立做了同一修正，还发现上一代旗舰 TIPS ViT-g 的零样本分割远不如从它蒸馏出的 ViT-L（ADE150 mIoU 2.6 对 20.8）。三是蒸馏让学生的上限由教师决定，伪影也一起学走：C-RADIOv4 要靠随机平移的损失才不模仿教师的固定模式噪声，Meta 的 [EUPE](https://arxiv.org/abs/2603.22387)（2026 年 3 月）发现再加一个 CLIP 式教师（SigLIP 2）反而拉低 OCR。RADIO1D 还测到 VLM 微调会抹掉空间结构（相邻块相关性 0.281 → 0.035）。
 
 ## 趋势
 
-以下四条都是跨论文的 `[判断]`，支撑论文和反例列在批注里。观点层从[观点层索引](../../../perspectives/README.md)链接到这里。
+以下五条都是跨论文的 `[判断]`，支撑论文和反例列在批注里。观点层从[观点层索引](../../../perspectives/README.md)链接到这里。
 
 **1. 从追求不变性走向逐像素。** 早期的两种训练信号都在制造不变性：类别标签要求同类图像得到相同输出，对比学习要求一张图的不同增强得到相同特征，评测也以线性评测这类图像级协议为主。之后，评测和使用一步步移到逐像素：R-CNN 把表征用到检测，MoCo、MAE 以 COCO 等检测与分割迁移为主要评价，DINO 展示注意力图能分出物体、逐块特征能做视频对应，DINOv2 直接在冻结的逐块特征上做分割和深度，LLaVA 取网格特征并选保留更多局部细节的倒数第二层。原因在下游：检测、VLM、机器人和生成都需要知道"东西在哪里、长什么样"。Geirhos 等的结果说明，只用 ImageNet 标签追求不变性，网络可以靠纹理这样的捷径达到目标，而形状更强的表征检测也更好。
 
@@ -126,6 +129,8 @@ benchmark 的替换就是这个方向目标的迁移：MIT 行人库（HOG 近�
 **3. 从"预训练后逐任务微调"走向"一个冻结编码器服务多个任务"。** R-CNN 时代每个下游任务都微调主干；CLIP 用零样本省掉了下游训练；DINOv2 把目标直接写成无需微调就能跨图像分布、跨任务使用的通用特征，分类、分割、深度都只在冻结特征上训练线性头或解码头。这一趋势在精细控制上遇到边界：OpenVLA 冻结视觉编码器后成功率明显下降，MAE 也论证线性评测会错过非线性的特征。
 
 **4. 训练信号的来源从人转向数据本身，规模由数据收集和筛选决定。** 数据轴依次是人设计的特征（HOG）、人工类别标签（ImageNet，约 128 万张）、带噪声的大规模标签（JFT-300M）、网上天然图文对（CLIP，4 亿对）、无标注但经过筛选的图像（DINOv2，1.42 亿张）。每一步都把"出题的人"往后撤一层，与[深度学习规模化](../../../perspectives/scaling.md)中语言一侧的路线一致。人的作用从标注转到了筛选：DINOv2 用 ImageNet-22k 等人工整理的数据集作检索查询。
+
+**5. 2024–2026：密集特征成为一等目标，组合从拼接走向蒸馏。** 图文一侧加定位与逐块自蒸馏（SigLIP 2、TIPSv2），自监督一侧修规模放大后的密集退化（DINOv3、V-JEPA 2.1），NVIDIA 与 Meta 都用多教师蒸馏把几种特征压进一个编码器（C-RADIOv4、EUPE）。趋势 1 与趋势 2 在这里合流。
 
 由这四条可以得出一个推论：实践中的终点更像"按性质组合多种表征"，而不是找到唯一最好的表征。OpenVLA 拼接语义特征（SigLIP）与空间特征（DINOv2）；文本到图像生成同时使用可重建的潜空间（LDM 的自编码器）和语义条件（CLIP 或文本编码器）。
 
@@ -136,11 +141,12 @@ benchmark 的替换就是这个方向目标的迁移：MIT 行人库（HOG 近�
 - **视觉自监督**（FAIR 的 MoCo、MAE；Google 的 SimCLR；FAIR 与 Inria 的 DINO、DINOv2）。押注：像语言一样让图像自己提供训练信号，方式是对比两种增强视图、重建遮住的块，或匹配教师网络的输出。代价：对比学习依赖强数据增强和大批量（SimCLR）或大字典（MoCo）；MAE 自述遮住的随机块通常不构成语义单元，重建目标是像素而不是语义实体；DINOv2 需要一套检索筛选流程来准备数据。[判断] FAIR 内部两支选择了不同的评测协议，并且各自选的正好是自己方法占优的协议：He、Girshick 一支（MoCo、MAE）都以 NLP 的 GPT、BERT 为参照提出问题，以"迁移到检测、分割和微调时能否超过 ImageNet 有监督预训练"为主要评价，MAE 还明确批评线性评测；Bojanowski、Joulin、Jégou、Misra、Mairal 同时署名的 DINO 与 DINOv2，以冻结特征的 k 近邻和线性评测为主，DINOv2 把目标定为无需微调的通用特征。MoCo 结论中建议的下一步"遮蔽自编码"由 MAE 实现，DINO 结论中的"更大规模的无筛选预训练"由 DINOv2 实现（改成了筛选数据）。
 - **图文弱监督**（OpenAI 的 [CLIP](../../papers/clip/README.md)）。押注：网上天然配对的图文比固定类别的标注更可扩展，并且直接得到一个用语言指定类别的接口。代价：CLIP 自述零样本只能在给定的概念中选择，细粒度分类和计数较弱，并估计还要约 1000 倍算力才能在零样本上整体达到最优。它的图像编码器后来成为[视觉语言模型](../vlm/README.md)和[图文对齐](../alignment/README.md)的常用起点。
 - **表征分析**（Google Brain 与 Google Research：Kornblith 等 2019 的 CKA，Raghu 等 2021 的 ViT 与 CNN 比较）。押注：用一个对层宽度和随机初始化都稳健的相似度指标，量化比较不同层、不同架构学到的表示。代价：Raghu 等自述 CKA 把比较压缩成一个标量，更细粒度的方法可能看到更多差异。[判断] Kornblith 同时署名两篇，后一篇的作者还包括 ViT 第一作者 Dosovitskiy：同一团队先提出度量，再用它分析自己提出的架构。
+- **多教师蒸馏**（NVIDIA 的 AM-RADIO、C-RADIOv4、RADIO1D）。押注：不另设训练信号，把当时最好的几个编码器蒸馏进一个学生；代价是上限由教师决定。[判断] AM-RADIO §6 与 C-RADIOv4 §1 都写明"更好的教师带来更好的学生"，C-RADIOv4 的主要变化就是换教师。
 
 ## 当前开放问题
 
-- **架构的差别与数据、训练配方、计算量怎样分开？** ViT 与 ConvNeXt 两组结果都说明，主干之争必须和数据规模、训练配方一起看。入口：[ViT 精读](../../papers/vit/reading.md)、[ConvNeXt 原文](https://arxiv.org/abs/2201.03545)、[观点页：CNN 与 Transformer](../../../perspectives/cnn-vs-transformer.md)。
-- **哪种训练信号最适合哪类下游，一个编码器能否兼顾？** 遮蔽重建、对比学习、自蒸馏和图文对比在线性评测、微调、检索、局部对应上各有长处；DINOv2 押注单个冻结编码器，OpenVLA 选择拼接两个。入口：[MAE 精读](../../papers/mae/reading.md)、[DINO 精读](../../papers/dino/reading.md)、[CLIP 精读](../../papers/clip/reading.md)、[DINOv2 原文](../../papers/arxiv-2304.07193/README.md)。
+- **架构的差别与数据、训练配方、计算量怎样分开？** ViT 与 ConvNeXt 两组结果都说明，主干之争必须和数据规模、训练配方一起看。入口：[ViT 精读](../../papers/vit/reading.md)、[ConvNeXt](../../papers/arxiv-2201.03545/README.md)、[观点页：CNN 与 Transformer](../../../perspectives/cnn-vs-transformer.md)。
+- **哪种训练信号最适合哪类下游，一个编码器能否兼顾？** 遮蔽重建、对比学习、自蒸馏和图文对比在线性评测、微调、检索、局部对应上各有长处；DINOv2 押注单个冻结编码器，OpenVLA 选择拼接两个，C-RADIOv4 改为蒸馏进一个。入口：[MAE 精读](../../papers/mae/reading.md)、[DINO 精读](../../papers/dino/reading.md)、[CLIP 精读](../../papers/clip/reading.md)、[DINOv2 原文](../../papers/arxiv-2304.07193/README.md)。
 - **网上预训练的视觉特征够不够支撑机器人？** OpenVLA 的消融中，冻结视觉编码器使成功率从约 70% 降到 47%（较小的 SigLIP-only 变体上的结果）；世界模型一侧则在比较以重建为目标和以语义为目标的潜空间。入口：[OpenVLA 精读](../../../robotics-embodied/papers/openvla/reading.md)、[DINO-WM](../../papers/arxiv-2411.04983/README.md)、[Reconstruction or Semantics? What Makes a Latent Space Useful for Robotic World Models](../../papers/arxiv-2605.06388/README.md)，以及[世界模型方向](../world-models/README.md)。
 - **视觉模型内部的机制能否推进到干预层面？** 视觉一侧的证据目前以可视化、注意力距离、CKA 和探针为主，语言一侧已经能定位并编辑事实所在的 MLP。ViT 的 MLP 能否读成键值记忆、视觉中有没有可干预的电路，入口见[模型科学](../../../cross-domain/fields/model-science/README.md)的"不同模态的差异"与开放问题两节。
 
@@ -165,6 +171,7 @@ benchmark 的替换就是这个方向目标的迁移：MIT 行人库（HOG 近�
 - MAE 的 87.8% 是 ViT-H 在 448 分辨率下微调的结果，224 分辨率为 86.9%（MAE 4.2 节、Table 3）。MAE 线性评测有两个数：73.5% 是 Table 1 默认消融设置（800 epoch）下的 ViT-L，75.8% 是附录 B 的最终设置；与 MoCo v3 的 77.6% 对比时，"微调最后 4 块领先 2.6 个百分点"用的是前一个设置（MAE §4.3、附录 B）。
 - CLIP 的零样本 ImageNet 76.2% 的比较对象是原始的有监督 ResNet-50（CLIP 3.1 节、Table 1）；85.4% 是在同一 CLIP 特征上用 ImageNet 训练集拟合线性头的结果，属于线性评测，不能当作零样本成绩（CLIP §3.3、附录 A.3）。
 - DINO 的 Jaccard 有两套阈值：正文 Fig.4 保留 60% 注意力质量，图中展示的是各模型最好的头；附录 D 比较 MoCo v2、BYOL、SwAV 时文字写的是 80%，表中又重复了正文的数值。本页只把附录数值用来说明"自监督方法都有这一性质"，不与正文数值排名。
+- 节点 8 中 V-JEPA 2.1 的 24.4 → 47.9 比较的是 V-JEPA 2 ViT-g 与 V-JEPA 2.1 ViT-G（Fig.2），§2.2 正文给 V-JEPA 2 的是 22.2；C-RADIOv4 的 55.2 对 55.9 是 512 像素线性探针（Table 2）。
 - Geirhos 等的形状偏好是在 16 个 ImageNet 大类的线索冲突图像上测的，只统计判对形状或纹理之一的试次；检测提升（70.7 → 75.1）用的是 Stylized-ImageNet 与 ImageNet 联合训练、再在 ImageNet 上微调的 Shape-ResNet，单独在 Stylized-ImageNet 上训练的模型 ImageNet 精度更低（Geirhos §3.2–3.3、Table 2）。
 - Kornblith 等的 99.3% 是 CIFAR-10 上 10 个 10 层 CNN 的对应层识别准确率；同一检验用在 Transformer 编码器上时，所有指标都通过（Kornblith §6.1、附录 F.1）。
 - 特征可视化（例如 DINO 的注意力图）好看，不等于所有下游任务都更好；不同评测协议要分开报告。
@@ -184,6 +191,7 @@ benchmark 的替换就是这个方向目标的迁移：MIT 行人库（HOG 近�
 - Girshick 一系的偏好：DPM（PAMI 2010）Sec.8、R-CNN Table 1–2、DPM are CNNs Table 1，三篇都以 PASCAL VOC 为目标、以 DPM 为对照。
 - FAIR 两支自监督的协议偏好：MoCo Sec.1、Sec.4.2、Sec.5；MAE Sec.1、§4.3、Sec.5；DINO Sec.1、Table 2、Sec.6；DINOv2 摘要、Sec.7.1。边界：DINO 也报告了迁移微调（Table 6），MAE 也报告了线性评测（附录 B），偏好指的是主要论据放在哪个协议上；同属 FAIR 的 ConvNeXt 转而检验有监督 CNN 的上限。
 - 表征分析团队：Kornblith 2019 与 Raghu 2021 的作者列表。只有两篇，证据偏弱。
+- 节点 8 与趋势 5：Registers、DINOv3 文献卡所记的出现条件；V-JEPA 2.1 §2.2；TIPSv2 §1、Table 1；C-RADIOv4 §2.3；EUPE Table 3；RADIO1D §2.2。反例：RADIO1D 结论认为 VLM 需要的是可伸缩的摘要表示，而非细致的 2D 局部表示。
 
 **与其他论文的关联**
 
@@ -202,3 +210,4 @@ benchmark 的替换就是这个方向目标的迁移：MIT 行人库（HOG 近�
 - MoCo v3 的 77.6% 与 84.1% 转引自 MAE 原文（Fig.9、附录 B、Table 3），没有另查 MoCo v3 原文。
 - DINOv2 的 LVD-142M 数据是否发布，论文未声明；MobileNet 论文只写了"计划发布模型"，MAE 论文正文未声明代码发布，实际发布情况没有另查。
 - ImageNet-R、ObjectNet 只按 CLIP §3.3 的结果引用，两个数据集的构造方式没有打开原文核对。
+- TIPSv2、EUPE 只读了摘要、引言和所引表格，尚无文献卡；节点 8 中其余论文的数字取自各自文献卡。

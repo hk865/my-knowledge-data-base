@@ -20,12 +20,12 @@
 
 ## 2 预训练加微调（2013–2014）
 
-- [Rich feature hierarchies for accurate object detection and semantic segmentation](https://arxiv.org/abs/1311.2524)（R-CNN） · 2013 · UC Berkeley · 无单篇目录 · 格：读出接口 = 检测数据上微调整个主干
+- [Rich feature hierarchies for accurate object detection and semantic segmentation](../../papers/arxiv-1311.2524/README.md)（R-CNN） · 2013 · UC Berkeley · 文献卡 · 格：读出接口 = 检测数据上微调整个主干
 - [Deformable Part Models are Convolutional Neural Networks](https://arxiv.org/abs/1409.5403) · 2014 · UC Berkeley · 无单篇目录 · 格：读出接口（DPM 展开为 CNN）
 
 ## 3 CNN 内部加深（2014–2019）
 
-- [Very Deep Convolutional Networks for Large-Scale Image Recognition](https://arxiv.org/abs/1409.1556)（VGG） · 2014 · Oxford · 无单篇目录 · 格：架构 = 3×3 卷积堆深
+- [Very Deep Convolutional Networks for Large-Scale Image Recognition](../../papers/arxiv-1409.1556/README.md)（VGG） · 2014 · Oxford · 文献卡 · 格：架构 = 3×3 卷积堆深
 - [Going Deeper with Convolutions](https://arxiv.org/abs/1409.4842)（GoogLeNet） · 2014 · Google · 无单篇目录 · 格：架构 = Inception 模块
 - [Deep Residual Learning for Image Recognition](../../papers/arxiv-1512.03385/README.md)（ResNet） · 2015 · Microsoft Research · 文献卡 · 格：架构 = 残差连接；第一个基线
 - [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597) · 2015 · University of Freiburg · 无单篇目录 · 格：架构 = 编码–解码 + 跨层拼接
@@ -51,7 +51,7 @@
 - [Emerging Properties in Self-Supervised Vision Transformers](../../papers/dino/README.md)（DINO） · 2021 · FAIR、Inria · 技术精读 · 格：训练信号 = 自蒸馏
 - [BEiT: BERT Pre-Training of Image Transformers](../../papers/arxiv-2106.08254/README.md) · 2021 · 哈尔滨工业大学、Microsoft Research · 文献卡 · 格：训练信号 = 遮蔽预测离散视觉 token
 - [Masked Autoencoders Are Scalable Vision Learners](../../papers/mae/README.md)（MAE） · 2021 · FAIR · 技术精读 · 格：训练信号 = 遮蔽重建像素
-- [A ConvNet for the 2020s](https://arxiv.org/abs/2201.03545)（ConvNeXt） · 2022 · FAIR、UC Berkeley · 无单篇目录 · 格：架构 = 现代化 CNN；训练配方 = Transformer 式配方
+- [A ConvNet for the 2020s](../../papers/arxiv-2201.03545/README.md)（ConvNeXt） · 2022 · FAIR、UC Berkeley · 文献卡 · 格：架构 = 现代化 CNN；训练配方 = Transformer 式配方
 
 ## 7 DINOv2 与冻结即用（2023）
 
@@ -60,17 +60,20 @@
 - [DINOv2: Learning Robust Visual Features without Supervision](../../papers/arxiv-2304.07193/README.md) · 2023 · Meta AI Research、Inria · 文献卡 · 格：训练信号、数据、训练配方各一行；第三个基线之一
 - [Vision Transformers Need Registers](../../papers/arxiv-2309.16588/README.md) · 2023 · Meta FAIR、Inria · 文献卡 · 格：架构 = 寄存器 token
 
-## 8 DINOv2 之后：做 VLM 的眼睛与密集特征（2024–2026，入门页主线尚未展开）
+## 8 DINOv2 之后：做 VLM 的眼睛、修密集特征、多教师蒸馏（2024–2026，入门页主线第 8 个节点）
 
+- [AM-RADIO: Agglomerative Vision Foundation Model -- Reduce All Domains Into One](../../papers/arxiv-2312.06709/README.md) · 2023 · NVIDIA · 文献卡 · 格：训练信号 = 多教师蒸馏（起点：CLIP、DINOv2、SAM）
 - [Eyes Wide Shut? Exploring the Visual Shortcomings of Multimodal LLMs](../../papers/arxiv-2401.06209/README.md)（MMVP） · 2024 · NYU、Meta FAIR、UC Berkeley · 文献卡（主页面在图文对齐方向） · 格：评测协议 = CLIP 盲对
 - [Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs](../../papers/arxiv-2406.16860/README.md) · 2024 · NYU · 文献卡（主页面在 [VLM 方向](../vlm/README.md)） · 格：评测协议 = 以问答比较视觉骨干
 - [SigLIP 2: Multilingual Vision-Language Encoders with Improved Semantic Understanding, Localization, and Dense Features](../../papers/arxiv-2502.14786/README.md) · 2025 · Google DeepMind · 文献卡（主页面在图文对齐方向） · 格：训练信号 = 对比 + 描述与定位 + 自蒸馏
 - [Scaling Language-Free Visual Representation Learning](../../papers/arxiv-2504.01017/README.md)（Web-SSL） · 2025 · Meta FAIR、NYU · 文献卡 · 格：数据 = 与 CLIP 同数据；评测协议 = 问答
 - [Perception Encoder: The best visual embeddings are not at the output of the network](../../papers/arxiv-2504.13181/README.md) · 2025 · Meta FAIR · 文献卡 · 格：读出接口 = 中间层 + 对齐；训练配方 = 强化的对比配方
 - [DINOv3](../../papers/arxiv-2508.10104/README.md) · 2025 · Meta AI Research · 文献卡 · 格：训练信号 = Gram anchoring；数据 = LVD-1689M
-- [C-RADIOv4 (Tech Report)](https://arxiv.org/abs/2601.17237) · 2026 · NVIDIA · 无单篇目录，只核对了摘要与 Table 1 · 格：训练信号 = 多教师蒸馏（SigLIP 2、DINOv3、SAM 3）
-- [V-JEPA 2.1: Unlocking Dense Features in Video Self-Supervised Learning](https://arxiv.org/abs/2603.14482) · 2026 · Meta FAIR · 无单篇目录，只核对了摘要与 Fig.2 · 格：训练信号 = 密集预测损失 + 多层自监督
-- [RADIO1D: Elastic Representations for Condensed Vision Modeling](https://arxiv.org/abs/2607.03624) · 2026 · NVIDIA · 无单篇目录，只核对了摘要与 Fig.1 · 格：读出接口 = 可变长 1D token
+- [C-RADIOv4 (Tech Report)](../../papers/arxiv-2601.17237/README.md) · 2026 · NVIDIA · 文献卡 · 格：训练信号 = 多教师蒸馏（SigLIP 2、DINOv3、SAM 3）
+- [V-JEPA 2.1: Unlocking Dense Features in Video Self-Supervised Learning](../../papers/arxiv-2603.14482/README.md) · 2026 · Meta FAIR · 文献卡 · 格：训练信号 = 密集预测损失 + 多层自监督
+- [RADIO1D: Elastic Representations for Condensed Vision Modeling](../../papers/arxiv-2607.03624/README.md) · 2026 · NVIDIA · 文献卡 · 格：读出接口 = 可变长 1D token
+- [Efficient Universal Perception Encoder](https://arxiv.org/abs/2603.22387)（EUPE） · 2026 · Meta Reality Labs、Meta FAIR · 无单篇目录，只核对了摘要、引言与教师组合消融（Table 3） · 格：训练信号 = 多教师蒸馏经代理教师
+- [TIPSv2: Advancing Vision-Language Pretraining with Enhanced Patch-Text Alignment](https://arxiv.org/abs/2604.12012) · 2026 · Google DeepMind · 无单篇目录，只核对了摘要、引言与 Table 1 · 格：训练信号 = 图文对比 + 可见 token 也计入的遮蔽自蒸馏
 
 ## 表征分析与诊断（跨阶段）
 

@@ -79,4 +79,4 @@
 
 ## 读完之后
 
-把 [Baseline 页](BASELINES.md)"后续工作在改哪个部件"一表从上到下过一遍：每一行能说出它改的是五个部件中的哪一个、代价从哪篇后续工作里看出来，这一方向就读通了。2026 年的新材料（[V-JEPA 2.1](https://arxiv.org/abs/2603.14482)、[C-RADIOv4](https://arxiv.org/abs/2601.17237)、[RADIO1D](https://arxiv.org/abs/2607.03624)）可以用同一张表定位：前两者改训练信号，后者改读出接口。
+把 [Baseline 页](BASELINES.md)"后续工作在改哪个部件"一表从上到下过一遍：每一行能说出它改的是五个部件中的哪一个、代价从哪篇后续工作里看出来，这一方向就读通了。2026 年的新材料（[V-JEPA 2.1](../../papers/arxiv-2603.14482/README.md)、[C-RADIOv4](../../papers/arxiv-2601.17237/README.md)、[RADIO1D](../../papers/arxiv-2607.03624/README.md)）可以用同一张表定位：前两者改训练信号，后者改读出接口。

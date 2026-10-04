@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2603.14482",
+  "title": "V-JEPA 2.1: Unlocking Dense Features in Video Self-Supervised Learning",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2603.14482",
+  "official_url": "https://arxiv.org/abs/2603.14482",
+  "official_fulltext_url": "https://arxiv.org/pdf/2603.14482v3",
+  "read_version": "v3",
+  "version_status": "checked_v3",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。只核验了 verification_2026_10_04.reading_scope 所列部分；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Lorenzo Mur-Labadia",
+    "Matthew Muckley",
+    "Amir Bar",
+    "Mido Assran",
+    "Koustuv Sinha",
+    "Mike Rabbat",
+    "Yann LeCun",
+    "Nicolas Ballas",
+    "Adrien Bardes"
+  ],
+  "year": 2026,
+  "topic_paths": [
+    "multimodal/visual-representation",
+    "multimodal/video-temporal",
+    "multimodal/world-models"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv v3 PDF（2026-06-11）：Abstract、§1、§2.1–2.2（V-JEPA 2 密集特征分析与假设）、Fig.2（与 V-JEPA 2、DINOv3 的冻结对比）、§3 中深度与分割结果段落、机器人抓取实验（Table 6）、结论与未来工作",
+    "mechanism_summary": "密集预测损失（可见与被遮 token 都计入）+ 多中间层自监督 + 图像/视频各自分词器 + VisionMix-163M 与 2B ViT-G；ADE20K 24.4→47.9，NYUv2 RMSE 0.307（DINOv3-7B 0.309），SSv2 77.7；Franka 抓取 60%→70%（同规划）/80%（8 步）。",
+    "evidence_boundary": "数字取自原文 PDF 正文与表格（PyMuPDF 抽取）；未复现实验。Fig.2 中 V-JEPA 2 的 ADE20K/NYUv2（24.4/0.642）与 §2.2 文字（22.2/0.682）不同，设置不同；正文一处写抓取提升 10%，Table 6 标题写 20%，分别对应同规划设置与 8 步规划。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2603.14482",
+      "https://arxiv.org/pdf/2603.14482v3"
+    ],
+    "source_origin": "phase3_multimodal_visual_representation_extension",
+    "affiliations": "Meta FAIR（另有 Universidad de Zaragoza 作者）",
+    "relation_pages": [
+      "multimodal/fields/visual-representation/README.md",
+      "multimodal/fields/visual-representation/BASELINES.md",
+      "multimodal/fields/visual-representation/PAPERS.md"
+    ]
+  },
+  "modality_tags": [
+    "image",
+    "video"
+  ],
+  "task_tags": [
+    "understanding"
+  ]
+}
