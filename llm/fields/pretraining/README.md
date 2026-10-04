@@ -86,7 +86,7 @@
 
 对注意力汇聚有两种相反的做法。一种是让它不再需要：[Gated Attention](../../papers/arxiv-2505.06708/README.md) 在注意力输出后加逐头的 sigmoid 门，落在第一个 token 上的注意力从平均 46.7% 降到 4.8%，扩到 128K 后 RULER 在 128K 上从 31.65 提高到 58.82。另一种是显式提供：StreamingLLM 在预训练时给每个样本开头加一个可学习的 sink token（160M 模型上验证）；[DeepSeek-V4](../../papers/arxiv-2606.19348/README.md) 在 softmax 分母里加一个可学习的 sink 项，使一个头的注意力总量可以小于 1，甚至接近 0。`[判断]` 两种做法都让一个头可以"什么也不读"，区别在于这个空位是学出来的还是写进结构的。
 
-另外两种手段从训练方式入手。NSA 让稀疏注意力在预训练时就参与训练：27B 模型、260B token 上，LongBench（长文本理解评测集）平均分比全注意力高 0.032，64K 大海捞针全部位置找回。Engram 把局部的静态模式交给查表，作者认为注意力因此能把容量留给全局，多查询大海捞针从 84.2 提高到 97.0。
+另外两种手段从训练方式入手。NSA 让稀疏注意力在预训练时就参与训练：27B 模型、270B token 上，LongBench（长文本理解评测集）平均分比全注意力高 0.032，64K 大海捞针全部位置找回。Engram 把局部的静态模式交给查表，作者认为注意力因此能把容量留给全局，多查询大海捞针从 84.2 提高到 97.0。
 
 ### ③ 更长更大的注意力：放到预训练末段分级加长
 
@@ -245,10 +245,10 @@ DeepSeek LLM 已用 BF16 训练、FP32 累加梯度。[DeepSeek-V3](../../papers
 
 ## 当前开放问题
 
-- **损失尖峰有没有统一的原理？** PaLM（2022）写明没有找到有原则的缓解办法，DeepSeek-V4（2026）写明两种新技巧的原理仍未充分理解，计划加强内部指标监控。入口：[DeepSeek-V4](../../papers/arxiv-2606.19348/README.md)、[Kimi K2](../../papers/arxiv-2507.20534/README.md)、[Gated Attention](../../papers/arxiv-2505.06708/README.md)、[Wortsman 等](https://arxiv.org/abs/2309.14322)。
+- **损失尖峰有没有统一的原理？** PaLM（2022）写明没有找到有原则的缓解办法，DeepSeek-V4（2026）写明两种新技巧的原理仍未充分理解，计划加强内部指标监控。入口：[DeepSeek-V4](../../papers/arxiv-2606.19348/README.md)、[Kimi K2](../../papers/arxiv-2507.20534/README.md)、[Gated Attention](../../papers/arxiv-2505.06708/README.md)、[Wortsman 等](../../papers/arxiv-2309.14322/README.md)。
 - **知识能否从 FFN 里再拆出去？** Engram 的 U 形分配律、V4 结论中"更稀疏的嵌入模块"、V4.1-Flash 接入 Engram，以及把记忆表做成可移植部件的后续工作。入口：[Engram](../../papers/arxiv-2601.07372/README.md)、[Tokenizer-Agnostic Engram Module](../../papers/arxiv-2607.29065/README.md)、[Frozen Memory Is Not Enough](../../papers/arxiv-2608.17050/README.md)、[关系页](../../../foundations/relations/attention-ffn-division.md)第 8–9 节。
 - **合成与改写数据能走多远？** K2 的改写在 SimpleQA 上有效，作者列出事实准确性、幻觉与规模三个难点；V4 过滤模板化内容以防模型坍缩。入口：[Kimi K2](../../papers/arxiv-2507.20534/README.md)、[Kimi K3](../../papers/arxiv-2607.24653/README.md)。
-- **注意力汇聚该消除还是该保留？** Gated Attention 消除它后长度外推更好，DeepSeek-V4 显式保留可学习的 sink，两者没有同条件对照。入口：[Gated Attention](../../papers/arxiv-2505.06708/README.md)、[StreamingLLM](https://arxiv.org/abs/2309.17453)。
+- **注意力汇聚该消除还是该保留？** Gated Attention 消除它后长度外推更好，DeepSeek-V4 显式保留可学习的 sink，两者没有同条件对照。入口：[Gated Attention](../../papers/arxiv-2505.06708/README.md)、[StreamingLLM](../../papers/arxiv-2309.17453/README.md)。
 - **残差流的两种改法谁更好？** 入口：[mHC](../../papers/arxiv-2512.24880/README.md)、[Attention Residuals](../../papers/arxiv-2603.15031/README.md)。
 - **闭源团队 2023 年以后怎样预训练？** GPT-4 报告声明不公开结构与训练细节，Gemini 1.5 只写明是稀疏 MoE；这一部分只能作为开放问题，不能写成事实。
 
@@ -296,7 +296,7 @@ DeepSeek LLM 已用 BF16 训练、FP32 累加梯度。[DeepSeek-V3](../../papers
 
 **未核实 / 待验证**
 
-- 本轮只核实了各报告中与预训练有关的章节，后训练与评测细节未展开。Wortsman 等只读了摘要；Gemma 3、Gemma 4 的局限一节，Gemini 2.5 与 Kimi K2.5 的报告未打开。
+- 本轮只核实了各报告中与预训练有关的章节，后训练与评测细节未展开。Wortsman 等已核对 §1–§3.4；Gemma 3、Gemma 4 的局限一节，Gemini 2.5 与 Kimi K2.5 的报告未打开。
 - 本轮未检索到 Meta 在 Llama 3 之后发布的官方技术报告，Meta 的路线只写到 Llama 3；OpenAI 在 GPT-4 之后的预训练细节同样没有官方材料可引。
-- DeepSeek-V4.1-Flash 的权重发布情况未核实。
+- DeepSeek-V4.1-Flash 的摘要写明检查点在 Hugging Face 发布；模型页本身未打开。
 - 沿用旧版的待验证项：GPT-2 完整模型的发布时间线；PaLM 自述局限的精确节号；Chinchilla 的 NeurIPS 正式版题名为 *An empirical analysis of compute-optimal large language model training*，与 arXiv 题名不同，本页数字两版一致、表号不同。

@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2411.15124",
+  "title": "Tulu 3: Pushing Frontiers in Open Language Model Post-Training",
+  "resource_kind": "paper",
+  "canonical_folder": "llm/papers/arxiv-2411.15124",
+  "official_url": "https://arxiv.org/abs/2411.15124",
+  "official_fulltext_url": "https://arxiv.org/pdf/2411.15124",
+  "read_version": "v5",
+  "version_status": "checked_current_pdf",
+  "reading_depth": "selected_method_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了 arXiv v5：摘要、§1 贡献列表、§5 偏好微调（长度归一化 DPO、on-policy 数据、PPO 对照）、§6 RLVR（含过度优化段落）、附录 B.4；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Nathan Lambert",
+    "Jacob Morrison",
+    "Valentina Pyatkin",
+    "Shengyi Huang",
+    "Hamish Ivison",
+    "Faeze Brahman",
+    "Lester James V. Miranda",
+    "Alisa Liu",
+    "Nouha Dziri",
+    "Shane Lyu",
+    "等 13 位作者"
+  ],
+  "year": 2024,
+  "topic_paths": [
+    "llm/posttraining/sft",
+    "llm/posttraining/preferences",
+    "llm/posttraining/rl"
+  ],
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "generation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv v5：摘要、§1 贡献列表、§5 偏好微调（长度归一化 DPO、on-policy 数据、PPO 对照）、§6 RLVR（含过度优化段落）、附录 B.4",
+    "mechanism_summary": "AI2、UW。Llama 3.1 基座；SFT → 长度归一化 DPO（含 on-policy 偏好数据）→ RLVR（GSM8K、MATH、可验证 IF 约束共 29,946 条）。开发/未见评测分离。KL 降低后过度优化（附录 B.4 IFEval 怪异输出）。未调优对照下 PPO 平均分与 DPO 相近略低、更贵。数据、代码、评测全部开放。",
+    "evidence_boundary": "未复现实验；数字取自论文正文、表格或图注。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2411.15124",
+      "https://arxiv.org/pdf/2411.15124v5"
+    ],
+    "source_origin": "phase3_field_page_node",
+    "relation_pages": [
+      "llm/fields/posttraining/README.md",
+      "llm/fields/posttraining/preferences/README.md",
+      "llm/fields/posttraining/rl/README.md",
+      "llm/fields/posttraining/sft/README.md"
+    ]
+  }
+}

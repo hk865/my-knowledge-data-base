@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2309.14322",
+  "title": "Small-scale proxies for large-scale Transformer training instabilities",
+  "resource_kind": "paper",
+  "canonical_folder": "llm/papers/arxiv-2309.14322",
+  "official_url": "https://arxiv.org/abs/2309.14322",
+  "official_fulltext_url": "https://arxiv.org/pdf/2309.14322",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了摘要、§1、§2（实验设置、LR sensitivity 定义）、§3.1（注意力 logit 增长、输出 logit 发散）、§3.2–3.3（warm-up、权重衰减、μParam、深度与宽度）、§3.4（由梯度 RMS 预测不稳定）、脚注 1；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Mitchell Wortsman",
+    "Peter J. Liu",
+    "Lechao Xiao",
+    "Katie Everett",
+    "Alex Alemi",
+    "Ben Adlam",
+    "John D. Co-Reyes",
+    "Izzeddin Gur",
+    "Abhishek Kumar",
+    "Roman Novak",
+    "Jeffrey Pennington",
+    "Jascha Sohl-dickstein",
+    "Kelvin Xu",
+    "Jaehoon Lee",
+    "Justin Gilmer",
+    "Simon Kornblith"
+  ],
+  "year": 2023,
+  "topic_paths": [
+    "llm/pretraining",
+    "cross-domain/training-science"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v2 PDF 选段：摘要、§1、§2（实验设置、LR sensitivity 定义）、§3.1（注意力 logit 增长、输出 logit 发散）、§3.2–3.3（warm-up、权重衰减、μParam、深度与宽度）、§3.4（由梯度 RMS 预测不稳定）、脚注 1",
+    "mechanism_summary": "小模型高学习率复现注意力 logit 增长与输出 logit 发散；qk-layernorm 与 z-loss 降低 LR sensitivity，三个数量级学习率内可训（1.2B 模型学习率 0.3 可训）；更长 warm-up、解耦权重衰减降低敏感度；加深比加宽更快提高敏感度；梯度 RMS 随规模下降、逼近 AdamW ε 时层更新可能塌缩；脚注 1：只研究缓慢发散，不研究损失尖峰。",
+    "evidence_boundary": "未复现实验；数字取自论文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2309.14322",
+      "https://arxiv.org/pdf/2309.14322v2"
+    ],
+    "source_origin": "pretraining_field_phase3_cards",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "analysis"
+  ]
+}

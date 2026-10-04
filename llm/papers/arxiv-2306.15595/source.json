@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2306.15595",
+  "title": "Extending Context Window of Large Language Models via Positional Interpolation",
+  "resource_kind": "paper",
+  "canonical_folder": "llm/papers/arxiv-2306.15595",
+  "official_url": "https://arxiv.org/abs/2306.15595",
+  "official_fulltext_url": "https://arxiv.org/pdf/2306.15595",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了 arXiv 摘要页（v2）与正文 §1、§2.3、§3.2–3.5、§5、Table 1、4、5、6；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Shouyuan Chen",
+    "Sherman Wong",
+    "Liangjian Chen",
+    "Yuandong Tian"
+  ],
+  "year": 2023,
+  "topic_paths": [
+    "llm/long-context"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "文献卡。核验了 arXiv 摘要页（v2）与正文 §1、§2.3、§3.2–3.5、§5、Table 1、4、5、6；不是独立全文精读，未复现。",
+    "mechanism_summary": "外推导致注意力分数爆炸（7B 不微调 4096–32768 困惑度 >10³）；直接微调 1 万批次有效窗口 2048→2560；插值上界约小 600 倍；7B–65B 扩到 32768，约 1000 步；passkey 7B/8192：PI 200 步达 8192，FT 1000 步 2304；BoolQ 76.1→73.2/69.8/64.7（8192/16384/32768）。",
+    "evidence_boundary": "未复现实验；数字取自原文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2306.15595",
+      "https://arxiv.org/html/2306.15595"
+    ],
+    "source_origin": "inference_longcontext_field_rewrite",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "generation"
+  ]
+}

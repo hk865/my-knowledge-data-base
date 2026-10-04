@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2303.08774",
+  "title": "GPT-4 Technical Report",
+  "resource_kind": "paper",
+  "canonical_folder": "llm/papers/arxiv-2303.08774",
+  "official_url": "https://arxiv.org/abs/2303.08774",
+  "official_fulltext_url": "https://arxiv.org/pdf/2303.08774",
+  "read_version": "v6",
+  "version_status": "checked_v6",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了§2（范围与不公开声明）、§3（3.1 损失预测、3.2 HumanEval、Hindsight Neglect）、§4 开头（考试能力与 RLHF）、§5（校准，Figure 8）；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "OpenAI",
+    "Josh Achiam",
+    "Steven Adler",
+    "Sandhini Agarwal",
+    "Lama Ahmad",
+    "Ilge Akkaya",
+    "Florencia Leoni Aleman",
+    "Diogo Almeida",
+    "Janko Altenschmidt",
+    "Sam Altman",
+    "等 271 位作者"
+  ],
+  "year": 2023,
+  "topic_paths": [
+    "llm/pretraining"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v6 PDF 选段：§2（范围与不公开声明）、§3（3.1 损失预测、3.2 HumanEval、Hindsight Neglect）、§4 开头（考试能力与 RLHF）、§5（校准，Figure 8）",
+    "mechanism_summary": "下一 token 预测的 Transformer + RLHF；不公开结构与训练细节；最多 1/10,000 算力的模型拟合 L(C)=aC^b+c 预测最终损失；最多 1/1,000 算力预测 HumanEval 子集通过率；Hindsight Neglect 上逆转逆规模趋势；考试能力主要来自预训练；后训练降低校准。",
+    "evidence_boundary": "未复现实验；数字取自论文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2303.08774",
+      "https://arxiv.org/pdf/2303.08774v6"
+    ],
+    "source_origin": "pretraining_field_phase3_cards",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "text",
+    "multimodal"
+  ],
+  "task_tags": [
+    "generation"
+  ]
+}

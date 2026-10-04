@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2609.19969",
+  "title": "DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression",
+  "resource_kind": "paper",
+  "canonical_folder": "llm/papers/arxiv-2609.19969",
+  "official_url": "https://arxiv.org/abs/2609.19969",
+  "official_fulltext_url": "https://arxiv.org/pdf/2609.19969",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "full_text_reading_and_evidence_audit",
+  "teaching_status": "existing_technical_reading",
+  "content_kind": "reading",
+  "reading_path": "reading.md",
+  "reading_boundary": "技术精读。v1 PDF 全文正文（§1–§6）与附录 B 选读；补充核对官方 Hugging Face config.json（层排布、KV/索引来源层、Engram 层）与官方 FlashMLA 仓库的 FP4 条目格式；KV 字节为推算，索引键字节为假设；未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [
+    "llm/papers/arxiv-2609.19969/evidence.json",
+    "evidence.json"
+  ],
+  "authors": [
+    "DeepSeek-AI",
+    "Anyi Xu",
+    "B. Li",
+    "Bangcai Lin",
+    "Bing Xue",
+    "BingCheng Xian",
+    "Bingzheng Xu",
+    "Bochao Wu",
+    "Bowei Zhang",
+    "Boyi Deng",
+    "等 582 位作者"
+  ],
+  "year": 2026,
+  "topic_paths": [
+    "llm/pretraining",
+    "llm/architecture",
+    "llm/long-context"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v1 PDF 选段：摘要、§1、§2 开头（总体结构、CED、去掉 MTP 改用 DSpark）、§2.4.2（Engram）、§6（结论与局限）",
+    "mechanism_summary": "552B 骨干 + 196B Engram 参数；CED：20 层因果编码器 + 20 层解码器，预填充激活 8B、解码 16B；CSA2 跨层复用全局 KV 与索引；FP4 全局 KV，约 890 B/token（V4-Flash 的约 1/4）；SWA Bounded Replay 使持久 KV 约为 1/8；骨干预训练去掉 MTP、用 DSpark 投机解码；45T token 多模态预训练，稀疏注意力在 64K 从头训练、无稠密预热；局限：鲁棒性边界未刻画，CSA2 选择误差与 SWA 近似重建可能在未测试边界情形下降能力。",
+    "evidence_boundary": "未复现实验；数字取自论文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2609.19969",
+      "https://arxiv.org/pdf/2609.19969v1"
+    ],
+    "source_origin": "pretraining_field_phase3_cards",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "text",
+    "code",
+    "multimodal"
+  ],
+  "task_tags": [
+    "generation"
+  ],
+  "reading_2026_10_04": {
+    "reading_scope": "§1–§6 全文；附录 B 选读；图 1(b)、图 2 渲染核对",
+    "evidence_boundary": "未复现；数字取自论文正文、表格与图；逐层排布与条目字节取自官方 config.json 与 FlashMLA 说明。",
+    "verification_status": "full_text_checked",
+    "verification_sources": [
+      "https://arxiv.org/pdf/2609.19969v1",
+      "https://github.com/deepseek-ai/FlashMLA"
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="430" viewBox="0 0 780 430" font-family="sans-serif">
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="390" y="24" text-anchor="middle" font-size="15" font-weight="bold">NSA：一个查询在 64K 上下文里读哪些 KV（示例数值，按原文 §3.1 的超参手算）</text>
+
+<!-- sequence bar -->
+<text x="20" y="62" font-size="12">历史 KV</text>
+<rect x="90" y="48" width="620" height="22" fill="#f4f4f4" stroke="#999"/>
+<text x="90" y="86" font-size="10" fill="#555">位置 0</text>
+<text x="710" y="86" font-size="10" fill="#555" text-anchor="end">位置 65535（当前查询之前）</text>
+<!-- initial block -->
+<rect x="90" y="48" width="8" height="22" fill="#ff7f0e"/>
+<!-- selected blocks -->
+<rect x="190" y="48" width="8" height="22" fill="#ff7f0e"/>
+<rect x="262" y="48" width="8" height="22" fill="#ff7f0e"/>
+<rect x="270" y="48" width="8" height="22" fill="#ff7f0e"/>
+<rect x="388" y="48" width="8" height="22" fill="#ff7f0e"/>
+<rect x="470" y="48" width="8" height="22" fill="#ff7f0e"/>
+<rect x="560" y="48" width="8" height="22" fill="#ff7f0e"/>
+<rect x="612" y="48" width="8" height="22" fill="#ff7f0e"/>
+<rect x="690" y="48" width="12" height="22" fill="#ff7f0e"/>
+<!-- window -->
+<rect x="702" y="48" width="8" height="22" fill="#2ca02c" opacity="0.8"/>
+
+<!-- branch 1 -->
+<rect x="20" y="110" width="230" height="150" rx="8" fill="#eaf2fb" stroke="#1f77b4"/>
+<text x="135" y="132" text-anchor="middle" font-size="13" font-weight="bold" fill="#1f77b4">① 压缩分支 cmp</text>
+<text x="32" y="155" font-size="11">每 32 个 key 用小 MLP φ 压成 1 个，</text>
+<text x="32" y="172" font-size="11">相邻块步长 16（块间重叠一半）</text>
+<text x="32" y="194" font-size="11">读取：⌊(65536−32)/16⌋ = 4094 个</text>
+<text x="32" y="216" font-size="11">作用：粗看全局</text>
+<text x="32" y="238" font-size="11" fill="#c00">副产品：对压缩块的注意力分数</text>
+<text x="32" y="253" font-size="11" fill="#c00">→ 免费给选择分支打分</text>
+
+<!-- branch 2 -->
+<rect x="275" y="110" width="230" height="150" rx="8" fill="#fff3e6" stroke="#ff7f0e"/>
+<text x="390" y="132" text-anchor="middle" font-size="13" font-weight="bold" fill="#c85f00">② 选择分支 slc</text>
+<text x="287" y="155" font-size="11">按 64 个 token 一块切分，</text>
+<text x="287" y="172" font-size="11">块分数 = 压缩分数换算后，同一 GQA</text>
+<text x="287" y="189" font-size="11">组内 16 个头相加；取前 16 块</text>
+<text x="287" y="211" font-size="11">（含固定的开头 1 块与最近 2 块）</text>
+<text x="287" y="233" font-size="11">读取：16 × 64 = 1024 个原始 KV</text>
+<text x="287" y="253" font-size="11">作用：精读重要片段</text>
+
+<!-- branch 3 -->
+<rect x="530" y="110" width="230" height="150" rx="8" fill="#eaf7ea" stroke="#2ca02c"/>
+<text x="645" y="132" text-anchor="middle" font-size="13" font-weight="bold" fill="#1d7a1d">③ 滑动窗口分支 win</text>
+<text x="542" y="155" font-size="11">只看最近 w = 512 个 token</text>
+<text x="542" y="177" font-size="11">读取：512 个</text>
+<text x="542" y="199" font-size="11">作用：承担局部模式，</text>
+<text x="542" y="216" font-size="11">免得其他两路被局部捷径带偏</text>
+<text x="542" y="238" font-size="11">三路各有独立的 K、V 投影</text>
+
+<!-- arrows to gate -->
+<line x1="135" y1="260" x2="360" y2="318" stroke="#555" stroke-width="1.5"/>
+<line x1="390" y1="260" x2="390" y2="318" stroke="#555" stroke-width="1.5"/>
+<line x1="645" y1="260" x2="420" y2="318" stroke="#555" stroke-width="1.5"/>
+<rect x="230" y="318" width="320" height="44" rx="8" fill="#f7f7f7" stroke="#333"/>
+<text x="390" y="337" text-anchor="middle" font-size="12">输出 = g_cmp·o_cmp + g_slc·o_slc + g_win·o_win</text>
+<text x="390" y="354" text-anchor="middle" font-size="11" fill="#555">门值 g ∈ [0,1]，由当前 token 的特征经 MLP + sigmoid 得到</text>
+
+<text x="20" y="390" font-size="12">合计每个查询读 4094 + 1024 + 512 ≈ 5630 个 KV（原文表 4 记为 5632），全注意力要读 65536 个：解码访存约少 11.6 倍。</text>
+<text x="20" y="410" font-size="11" fill="#555">上方色块示意被读到的位置（橙：选中块，绿：窗口）；压缩分支覆盖全长，只是粒度粗。图为原创示意，不按比例。</text>
+</svg>

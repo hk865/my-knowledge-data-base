@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2504.13837",
+  "title": "Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?",
+  "resource_kind": "paper",
+  "canonical_folder": "llm/papers/arxiv-2504.13837",
+  "official_url": "https://arxiv.org/abs/2504.13837",
+  "official_fulltext_url": "https://arxiv.org/pdf/2504.13837",
+  "read_version": "v5",
+  "version_status": "checked_current_pdf",
+  "reading_depth": "selected_method_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了 arXiv v5：摘要、§1、表 1 实验设定、§7 Conclusion and Limitations；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Yang Yue",
+    "Zhiqi Chen",
+    "Rui Lu",
+    "Andrew Zhao",
+    "Zhaokai Wang",
+    "Yang Yue",
+    "Shiji Song",
+    "Gao Huang"
+  ],
+  "year": 2025,
+  "topic_paths": [
+    "llm/posttraining/rl"
+  ],
+  "modality_tags": [
+    "text",
+    "code",
+    "image"
+  ],
+  "task_tags": [
+    "generation",
+    "analysis"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv v5：摘要、§1、表 1 实验设定、§7 Conclusion and Limitations",
+    "mechanism_summary": "清华 LeapLab、上海交大。大 k 的 pass@k 测能力边界；多模型族、六种算法（PPO、GRPO、Reinforce++、RLOO、ReMax、DAPO）、数学/代码/视觉；RLVR 小 k 更好，大 k 基座更高；RLVR 路径已在基座分布中，训练越久边界越窄；算法间差别小；蒸馏能扩大边界。局限：最强模型与流程多为闭源。",
+    "evidence_boundary": "未复现实验；数字取自论文正文、表格或图注。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2504.13837",
+      "https://arxiv.org/pdf/2504.13837v5"
+    ],
+    "source_origin": "phase3_field_page_node",
+    "relation_pages": [
+      "llm/fields/posttraining/README.md",
+      "llm/fields/posttraining/rl/README.md"
+    ]
+  }
+}

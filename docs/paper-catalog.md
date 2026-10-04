@@ -1,6 +1,6 @@
 # 全库论文总目录
 
-共 277 个去重资源（270 篇论文、4 篇官方技术报告、1 个代码仓库、2 篇官方博客）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
+共 336 个去重资源（326 篇论文、6 篇官方技术报告、1 个代码仓库、3 篇官方博客）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
 
 身份核验、助手教学进度和用户阅读状态分开。历史来源保留原角色与证据局限，不将助手推荐写成用户提供，也不将教学完成写成用户已读。
 
@@ -23,7 +23,7 @@
 
 - 标识：arxiv:2502.18080
 - 原文 / 官方入口：https://arxiv.org/abs/2502.18080
-- 主题：llm/posttraining/sft, llm/inference
+- 主题：llm/inference, llm/posttraining/sft
 - 来源：assistant-provided-exact-link
 - 身份核验：verified_primary_title_and_identifier
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
@@ -59,7 +59,7 @@
 
 - 标识：arxiv:2407.10671
 - 原文 / 官方入口：https://arxiv.org/abs/2407.10671
-- 主题：llm/posttraining/sft, llm/posttraining/preferences, llm/pretraining, llm/architecture
+- 主题：llm/pretraining, llm/architecture, llm/posttraining/sft, llm/posttraining/preferences
 - 来源：assistant-provided-exact-link
 - 身份核验：verified_primary_title_and_identifier
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
@@ -71,7 +71,7 @@
 
 - 标识：arxiv:2412.15115
 - 原文 / 官方入口：https://arxiv.org/abs/2412.15115
-- 主题：llm/posttraining/sft, llm/pretraining, llm/posttraining/rl
+- 主题：llm/pretraining, llm/posttraining/sft, llm/posttraining/preferences, llm/posttraining/rl
 - 来源：assistant-provided-exact-link
 - 身份核验：verified_primary_title_and_identifier
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
@@ -83,7 +83,7 @@
 
 - 标识：arxiv:2412.19437
 - 原文 / 官方入口：https://arxiv.org/abs/2412.19437
-- 主题：llm/posttraining/sft, llm/pretraining, llm/architecture, llm/posttraining/rl
+- 主题：llm/pretraining, llm/architecture, llm/posttraining/sft, llm/posttraining/rl, llm/inference
 - 来源：assistant-provided-exact-link
 - 身份核验：verified_primary_title_and_identifier
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
@@ -95,7 +95,7 @@
 
 - 标识：arxiv:2501.15383
 - 原文 / 官方入口：https://arxiv.org/abs/2501.15383
-- 主题：llm/posttraining/sft, llm/pretraining, llm/architecture, llm/inference, llm/posttraining/preferences
+- 主题：llm/pretraining, llm/architecture, llm/inference, llm/posttraining/sft, llm/posttraining/preferences
 - 来源：assistant-provided-exact-link
 - 身份核验：full_report_v1_reading_and_evidence_audit
 - 助手教学 / 阅读进度：existing_technical_reading
@@ -107,7 +107,7 @@
 
 - 标识：arxiv:2312.00752
 - 原文 / 官方入口：https://arxiv.org/abs/2312.00752
-- 主题：llm/pretraining, llm/architecture, llm/inference
+- 主题：llm/architecture, llm/pretraining, llm/inference
 - 来源：assistant-provided-exact-link
 - 身份核验：full_text_reading_and_evidence_audit
 - 助手教学 / 阅读进度：existing_technical_reading
@@ -119,7 +119,7 @@
 
 - 标识：arxiv:2402.00838
 - 原文 / 官方入口：https://arxiv.org/abs/2402.00838
-- 主题：llm/pretraining, cross-domain/model-science
+- 主题：llm/pretraining, cross-domain/training-science, cross-domain/model-science
 - 来源：assistant-provided-exact-link
 - 身份核验：verified_primary_title_and_identifier
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
@@ -131,7 +131,7 @@
 
 - 标识：arxiv:2501.12948
 - 原文 / 官方入口：https://arxiv.org/abs/2501.12948
-- 主题：llm/posttraining/sft, llm/posttraining/rl, llm/inference
+- 主题：llm/posttraining/rl, llm/posttraining/sft, llm/inference
 - 来源：assistant-provided-exact-link
 - 身份核验：verified_primary_title_and_identifier
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
@@ -167,7 +167,7 @@
 
 - 标识：arxiv:2405.04434
 - 原文 / 官方入口：https://arxiv.org/abs/2405.04434
-- 主题：llm/posttraining/sft, llm/pretraining, llm/architecture, llm/posttraining/rl
+- 主题：llm/architecture, llm/pretraining, llm/posttraining/sft, llm/posttraining/rl
 - 来源：assistant-provided-exact-link
 - 身份核验：full_text_reading_and_evidence_audit
 - 助手教学 / 阅读进度：existing_technical_reading
@@ -227,7 +227,7 @@
 
 - 标识：arxiv:2407.18219
 - 原文 / 官方入口：https://arxiv.org/abs/2407.18219
-- 主题：llm/posttraining/sft, llm/inference, cross-domain/agents
+- 主题：llm/inference, llm/posttraining/sft, cross-domain/agents
 - 来源：assistant-provided-exact-link
 - 身份核验：verified_primary_title_and_identifier
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
@@ -239,7 +239,7 @@
 
 - 标识：arxiv:2002.10957
 - 原文 / 官方入口：https://arxiv.org/abs/2002.10957
-- 主题：llm/pretraining, llm/architecture
+- 主题：cross-domain/knowledge-distillation, llm/pretraining, llm/architecture
 - 来源：assistant-provided-exact-link
 - 身份核验：verified_primary_title_and_identifier
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
@@ -251,7 +251,7 @@
 
 - 标识：arxiv:1910.01108
 - 原文 / 官方入口：https://arxiv.org/abs/1910.01108
-- 主题：llm/pretraining, llm/architecture
+- 主题：cross-domain/knowledge-distillation, llm/pretraining, llm/architecture
 - 来源：assistant-provided-exact-link
 - 身份核验：verified_primary_title_and_identifier
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
@@ -275,7 +275,7 @@
 
 - 标识：arxiv:2403.13271
 - 原文 / 官方入口：https://arxiv.org/abs/2403.13271
-- 主题：llm/posttraining/sft, llm/inference
+- 主题：llm/posttraining/sft, cross-domain/knowledge-distillation, llm/inference
 - 来源：assistant-provided-exact-link
 - 身份核验：verified_primary_title_and_identifier
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
@@ -371,7 +371,7 @@
 
 - 标识：arxiv:2510.01171
 - 原文 / 官方入口：https://arxiv.org/abs/2510.01171
-- 主题：llm/inference, cross-domain/model-science
+- 主题：llm/inference, llm/posttraining/preferences, cross-domain/model-science
 - 来源：assistant-provided-exact-link
 - 身份核验：verified_primary_title_and_identifier
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
@@ -407,7 +407,7 @@
 
 - 标识：arxiv:2405.15793
 - 原文 / 官方入口：https://arxiv.org/abs/2405.15793
-- 主题：llm/inference, cross-domain/agents, cross-domain/model-science, cross-domain/evaluation
+- 主题：cross-domain/agents, llm/inference, cross-domain/evaluation, cross-domain/model-science
 - 来源：assistant-provided-exact-link
 - 身份核验：verified_primary_title_and_identifier
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
@@ -419,7 +419,7 @@
 
 - 标识：url:https://proceedings.mlr.press/v267/chen25bx.html
 - 原文 / 官方入口：https://proceedings.mlr.press/v267/chen25bx.html
-- 主题：llm/posttraining/sft, llm/inference
+- 主题：llm/inference, llm/posttraining/preferences
 - 来源：assistant-provided-exact-link
 - 身份核验：verified_primary_title_and_identifier
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
@@ -455,7 +455,7 @@
 
 - 标识：url:https://aclanthology.org/2025.findings-acl.537/
 - 原文 / 官方入口：https://aclanthology.org/2025.findings-acl.537/
-- 主题：llm/inference, cross-domain/model-science, cross-domain/evaluation
+- 主题：llm/inference, cross-domain/evaluation, cross-domain/model-science
 - 来源：assistant-provided-exact-link
 - 身份核验：verified_primary_title_and_identifier
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
@@ -491,7 +491,7 @@
 
 - 标识：arxiv:2305.16291
 - 原文 / 官方入口：https://mlanthology.org/tmlr/2024/wang2024tmlr-voyager/
-- 主题：llm/inference, cross-domain/agents
+- 主题：cross-domain/agents, llm/inference
 - 来源：assistant-provided-exact-link
 - 身份核验：verified_primary_title_and_identifier
 - 助手教学 / 阅读进度：仅身份或摘要核验，未声明全文精读
@@ -1379,7 +1379,7 @@
 
 - 标识：arxiv:2203.02155
 - 原文 / 官方入口：https://arxiv.org/abs/2203.02155
-- 主题：llm/posttraining/preferences, llm/posttraining/sft, llm/posttraining/rl
+- 主题：llm/posttraining/sft, llm/posttraining/preferences, llm/posttraining/rl
 - 来源：previous-starter
 - 身份核验：full_text_reading_and_evidence_audit
 - 助手教学 / 阅读进度：expanded_beginner_teaching
@@ -1523,7 +1523,7 @@
 
 - 标识：arxiv:2005.14165
 - 原文 / 官方入口：https://arxiv.org/abs/2005.14165
-- 主题：cross-domain/agents, cross-domain/model-science, llm/architecture, llm/pretraining
+- 主题：llm/pretraining, llm/architecture, cross-domain/model-science, cross-domain/agents
 - 来源：new-baseline-selection
 - 身份核验：full_text_reading_and_evidence_audit
 - 助手教学 / 阅读进度：existing_technical_reading
@@ -3136,6 +3136,596 @@
 - 身份核验：selected_sections_checked_not_full_read
 - 用户阅读状态：unknown
 - [文献卡](../robotics-embodied/papers/arxiv-2406.08858/README.md)
+
+<a id="p278"></a>
+## p278 · Deep reinforcement learning from human preferences
+
+- 标识：arxiv:1706.03741
+- 原文 / 官方入口：https://arxiv.org/abs/1706.03741
+- 主题：llm/posttraining/preferences, llm/posttraining/rl
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-1706.03741/README.md)
+
+<a id="p279"></a>
+## p279 · Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer
+
+- 标识：arxiv:1910.10683
+- 原文 / 官方入口：https://arxiv.org/abs/1910.10683
+- 主题：llm/pretraining
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-1910.10683/README.md)
+
+<a id="p280"></a>
+## p280 · Fast Transformer Decoding: One Write-Head is All You Need
+
+- 标识：arxiv:1911.02150
+- 原文 / 官方入口：https://arxiv.org/abs/1911.02150
+- 主题：llm/architecture, llm/inference
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-1911.02150/README.md)
+
+<a id="p281"></a>
+## p281 · On Layer Normalization in the Transformer Architecture
+
+- 标识：arxiv:2002.04745
+- 原文 / 官方入口：https://arxiv.org/abs/2002.04745
+- 主题：llm/architecture, cross-domain/training-science
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2002.04745/README.md)
+
+<a id="p282"></a>
+## p282 · Transformers are RNNs: Fast Autoregressive Transformers with Linear Attention
+
+- 标识：arxiv:2006.16236
+- 原文 / 官方入口：https://arxiv.org/abs/2006.16236
+- 主题：llm/architecture
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2006.16236/README.md)
+
+<a id="p283"></a>
+## p283 · Learning to summarize from human feedback
+
+- 标识：arxiv:2009.01325
+- 原文 / 官方入口：https://arxiv.org/abs/2009.01325
+- 主题：llm/posttraining/preferences, llm/posttraining/rl
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2009.01325/README.md)
+
+<a id="p284"></a>
+## p284 · RoFormer: Enhanced Transformer with Rotary Position Embedding
+
+- 标识：arxiv:2104.09864
+- 原文 / 官方入口：https://arxiv.org/abs/2104.09864
+- 主题：llm/long-context, llm/architecture
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2104.09864/README.md)
+
+<a id="p285"></a>
+## p285 · Finetuned Language Models Are Zero-Shot Learners
+
+- 标识：arxiv:2109.01652
+- 原文 / 官方入口：https://arxiv.org/abs/2109.01652
+- 主题：llm/posttraining/sft
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2109.01652/README.md)
+
+<a id="p286"></a>
+## p286 · Chain-of-Thought Prompting Elicits Reasoning in Large Language Models
+
+- 标识：arxiv:2201.11903
+- 原文 / 官方入口：https://arxiv.org/abs/2201.11903
+- 主题：llm/inference
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2201.11903/README.md)
+
+<a id="p287"></a>
+## p287 · Self-Consistency Improves Chain of Thought Reasoning in Language Models
+
+- 标识：arxiv:2203.11171
+- 原文 / 官方入口：https://arxiv.org/abs/2203.11171
+- 主题：llm/inference
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2203.11171/README.md)
+
+<a id="p288"></a>
+## p288 · PaLM: Scaling Language Modeling with Pathways
+
+- 标识：arxiv:2204.02311
+- 原文 / 官方入口：https://arxiv.org/abs/2204.02311
+- 主题：llm/pretraining
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2204.02311/README.md)
+
+<a id="p289"></a>
+## p289 · Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback
+
+- 标识：arxiv:2204.05862
+- 原文 / 官方入口：https://arxiv.org/abs/2204.05862
+- 主题：llm/posttraining/preferences, llm/posttraining/rl
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2204.05862/README.md)
+
+<a id="p290"></a>
+## p290 · Scaling Laws for Reward Model Overoptimization
+
+- 标识：arxiv:2210.10760
+- 原文 / 官方入口：https://arxiv.org/abs/2210.10760
+- 主题：llm/posttraining/preferences, llm/posttraining/rl
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2210.10760/README.md)
+
+<a id="p291"></a>
+## p291 · Scaling Instruction-Finetuned Language Models
+
+- 标识：arxiv:2210.11416
+- 原文 / 官方入口：https://arxiv.org/abs/2210.11416
+- 主题：llm/posttraining/sft
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2210.11416/README.md)
+
+<a id="p292"></a>
+## p292 · Constitutional AI: Harmlessness from AI Feedback
+
+- 标识：arxiv:2212.08073
+- 原文 / 官方入口：https://arxiv.org/abs/2212.08073
+- 主题：llm/posttraining/preferences
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2212.08073/README.md)
+
+<a id="p293"></a>
+## p293 · Self-Instruct: Aligning Language Models with Self-Generated Instructions
+
+- 标识：arxiv:2212.10560
+- 原文 / 官方入口：https://arxiv.org/abs/2212.10560
+- 主题：llm/posttraining/sft
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2212.10560/README.md)
+
+<a id="p294"></a>
+## p294 · GPT-4 Technical Report
+
+- 标识：arxiv:2303.08774
+- 原文 / 官方入口：https://arxiv.org/abs/2303.08774
+- 主题：llm/pretraining
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2303.08774/README.md)
+
+<a id="p295"></a>
+## p295 · LIMA: Less Is More for Alignment
+
+- 标识：arxiv:2305.11206
+- 原文 / 官方入口：https://arxiv.org/abs/2305.11206
+- 主题：llm/posttraining/sft
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2305.11206/README.md)
+
+<a id="p296"></a>
+## p296 · GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints
+
+- 标识：arxiv:2305.13245
+- 原文 / 官方入口：https://arxiv.org/abs/2305.13245
+- 主题：llm/inference, llm/architecture
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2305.13245/README.md)
+
+<a id="p297"></a>
+## p297 · Let's Verify Step by Step
+
+- 标识：arxiv:2305.20050
+- 原文 / 官方入口：https://arxiv.org/abs/2305.20050
+- 主题：llm/posttraining/rl, llm/posttraining/preferences
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2305.20050/README.md)
+
+<a id="p298"></a>
+## p298 · Extending Context Window of Large Language Models via Positional Interpolation
+
+- 标识：arxiv:2306.15595
+- 原文 / 官方入口：https://arxiv.org/abs/2306.15595
+- 主题：llm/long-context
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2306.15595/README.md)
+
+<a id="p299"></a>
+## p299 · Lost in the Middle: How Language Models Use Long Contexts
+
+- 标识：arxiv:2307.03172
+- 原文 / 官方入口：https://arxiv.org/abs/2307.03172
+- 主题：llm/pretraining, llm/long-context, cross-domain/evaluation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2307.03172/README.md)
+
+<a id="p300"></a>
+## p300 · Llama 2: Open Foundation and Fine-Tuned Chat Models
+
+- 标识：arxiv:2307.09288
+- 原文 / 官方入口：https://arxiv.org/abs/2307.09288
+- 主题：llm/posttraining/sft, llm/posttraining/preferences, llm/posttraining/rl
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2307.09288/README.md)
+
+<a id="p301"></a>
+## p301 · YaRN: Efficient Context Window Extension of Large Language Models
+
+- 标识：arxiv:2309.00071
+- 原文 / 官方入口：https://arxiv.org/abs/2309.00071
+- 主题：llm/long-context
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2309.00071/README.md)
+
+<a id="p302"></a>
+## p302 · Efficient Memory Management for Large Language Model Serving with PagedAttention
+
+- 标识：arxiv:2309.06180
+- 原文 / 官方入口：https://arxiv.org/abs/2309.06180
+- 主题：llm/inference
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2309.06180/README.md)
+
+<a id="p303"></a>
+## p303 · Small-scale proxies for large-scale Transformer training instabilities
+
+- 标识：arxiv:2309.14322
+- 原文 / 官方入口：https://arxiv.org/abs/2309.14322
+- 主题：llm/pretraining, cross-domain/training-science
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2309.14322/README.md)
+
+<a id="p304"></a>
+## p304 · Effective Long-Context Scaling of Foundation Models
+
+- 标识：arxiv:2309.16039
+- 原文 / 官方入口：https://arxiv.org/abs/2309.16039
+- 主题：llm/long-context, llm/pretraining
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2309.16039/README.md)
+
+<a id="p305"></a>
+## p305 · Efficient Streaming Language Models with Attention Sinks
+
+- 标识：arxiv:2309.17453
+- 原文 / 官方入口：https://arxiv.org/abs/2309.17453
+- 主题：llm/pretraining, llm/long-context
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2309.17453/README.md)
+
+<a id="p306"></a>
+## p306 · A Long Way to Go: Investigating Length Correlations in RLHF
+
+- 标识：arxiv:2310.03716
+- 原文 / 官方入口：https://arxiv.org/abs/2310.03716
+- 主题：llm/posttraining/preferences
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2310.03716/README.md)
+
+<a id="p307"></a>
+## p307 · A General Theoretical Paradigm to Understand Learning from Human Preferences
+
+- 标识：arxiv:2310.12036
+- 原文 / 官方入口：https://arxiv.org/abs/2310.12036
+- 主题：llm/posttraining/preferences
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2310.12036/README.md)
+
+<a id="p308"></a>
+## p308 · Zephyr: Direct Distillation of LM Alignment
+
+- 标识：arxiv:2310.16944
+- 原文 / 官方入口：https://arxiv.org/abs/2310.16944
+- 主题：llm/posttraining/preferences, llm/posttraining/sft
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2310.16944/README.md)
+
+<a id="p309"></a>
+## p309 · Repeat After Me: Transformers are Better than State Space Models at Copying
+
+- 标识：arxiv:2402.01032
+- 原文 / 官方入口：https://arxiv.org/abs/2402.01032
+- 主题：llm/architecture
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2402.01032/README.md)
+
+<a id="p310"></a>
+## p310 · KIVI: A Tuning-Free Asymmetric 2bit Quantization for KV Cache
+
+- 标识：arxiv:2402.02750
+- 原文 / 官方入口：https://arxiv.org/abs/2402.02750
+- 主题：llm/inference
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2402.02750/README.md)
+
+<a id="p311"></a>
+## p311 · DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models
+
+- 标识：arxiv:2402.03300
+- 原文 / 官方入口：https://arxiv.org/abs/2402.03300
+- 主题：llm/posttraining/rl, llm/pretraining
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2402.03300/README.md)
+
+<a id="p312"></a>
+## p312 · Simple linear attention language models balance the recall-throughput tradeoff
+
+- 标识：arxiv:2402.18668
+- 原文 / 官方入口：https://arxiv.org/abs/2402.18668
+- 主题：llm/architecture
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2402.18668/README.md)
+
+<a id="p313"></a>
+## p313 · Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context
+
+- 标识：arxiv:2403.05530
+- 原文 / 官方入口：https://arxiv.org/abs/2403.05530
+- 主题：llm/long-context
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2403.05530/README.md)
+
+<a id="p314"></a>
+## p314 · Jamba: A Hybrid Transformer-Mamba Language Model
+
+- 标识：arxiv:2403.19887
+- 原文 / 官方入口：https://arxiv.org/abs/2403.19887
+- 主题：llm/architecture, llm/long-context
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2403.19887/README.md)
+
+<a id="p315"></a>
+## p315 · RULER: What's the Real Context Size of Your Long-Context Language Models?
+
+- 标识：arxiv:2404.06654
+- 原文 / 官方入口：https://arxiv.org/abs/2404.06654
+- 主题：llm/long-context, cross-domain/evaluation
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2404.06654/README.md)
+
+<a id="p316"></a>
+## p316 · Is DPO Superior to PPO for LLM Alignment? A Comprehensive Study
+
+- 标识：arxiv:2404.10719
+- 原文 / 官方入口：https://arxiv.org/abs/2404.10719
+- 主题：llm/posttraining/preferences, llm/posttraining/rl
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2404.10719/README.md)
+
+<a id="p317"></a>
+## p317 · Does Fine-Tuning LLMs on New Knowledge Encourage Hallucinations?
+
+- 标识：arxiv:2405.05904
+- 原文 / 官方入口：https://arxiv.org/abs/2405.05904
+- 主题：llm/posttraining/sft
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2405.05904/README.md)
+
+<a id="p318"></a>
+## p318 · SimPO: Simple Preference Optimization with a Reference-Free Reward
+
+- 标识：arxiv:2405.14734
+- 原文 / 官方入口：https://arxiv.org/abs/2405.14734
+- 主题：llm/posttraining/preferences
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2405.14734/README.md)
+
+<a id="p319"></a>
+## p319 · The Llama 3 Herd of Models
+
+- 标识：arxiv:2407.21783
+- 原文 / 官方入口：https://arxiv.org/abs/2407.21783
+- 主题：llm/pretraining, llm/posttraining/sft, llm/posttraining/preferences
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2407.21783/README.md)
+
+<a id="p320"></a>
+## p320 · Gemma 2: Improving Open Language Models at a Practical Size
+
+- 标识：arxiv:2408.00118
+- 原文 / 官方入口：https://arxiv.org/abs/2408.00118
+- 主题：llm/pretraining, llm/architecture
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2408.00118/README.md)
+
+<a id="p321"></a>
+## p321 · Hyper-Connections
+
+- 标识：arxiv:2409.19606
+- 原文 / 官方入口：https://arxiv.org/abs/2409.19606
+- 主题：llm/architecture
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2409.19606/README.md)
+
+<a id="p322"></a>
+## p322 · Tulu 3: Pushing Frontiers in Open Language Model Post-Training
+
+- 标识：arxiv:2411.15124
+- 原文 / 官方入口：https://arxiv.org/abs/2411.15124
+- 主题：llm/posttraining/sft, llm/posttraining/preferences, llm/posttraining/rl
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2411.15124/README.md)
+
+<a id="p323"></a>
+## p323 · OpenAI o1 System Card
+
+- 标识：arxiv:2412.16720
+- 原文 / 官方入口：https://arxiv.org/abs/2412.16720
+- 主题：llm/posttraining/rl
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2412.16720/README.md)
+
+<a id="p324"></a>
+## p324 · 2 OLMo 2 Furious
+
+- 标识：arxiv:2501.00656
+- 原文 / 官方入口：https://arxiv.org/abs/2501.00656
+- 主题：llm/pretraining
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2501.00656/README.md)
+
+<a id="p325"></a>
+## p325 · Kimi k1.5: Scaling Reinforcement Learning with LLMs
+
+- 标识：arxiv:2501.12599
+- 原文 / 官方入口：https://arxiv.org/abs/2501.12599
+- 主题：llm/posttraining/rl, llm/inference
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2501.12599/README.md)
+
+<a id="p326"></a>
+## p326 · SFT Memorizes, RL Generalizes: A Comparative Study of Foundation Model Post-training
+
+- 标识：arxiv:2501.17161
+- 原文 / 官方入口：https://arxiv.org/abs/2501.17161
+- 主题：llm/posttraining/sft, llm/posttraining/rl
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2501.17161/README.md)
+
+<a id="p327"></a>
+## p327 · Native Sparse Attention: Hardware-Aligned and Natively Trainable Sparse Attention
+
+- 标识：arxiv:2502.11089
+- 原文 / 官方入口：https://arxiv.org/abs/2502.11089
+- 主题：llm/pretraining, llm/architecture, llm/long-context
+- 身份核验：full_text_reading_and_evidence_audit
+- 用户阅读状态：unknown
+- [独立讲解](../llm/papers/arxiv-2502.11089/reading.md)
+
+<a id="p328"></a>
+## p328 · DAPO: An Open-Source LLM Reinforcement Learning System at Scale
+
+- 标识：arxiv:2503.14476
+- 原文 / 官方入口：https://arxiv.org/abs/2503.14476
+- 主题：llm/posttraining/rl
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2503.14476/README.md)
+
+<a id="p329"></a>
+## p329 · Gemma 3 Technical Report
+
+- 标识：arxiv:2503.19786
+- 原文 / 官方入口：https://arxiv.org/abs/2503.19786
+- 主题：llm/pretraining, llm/architecture, llm/long-context
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2503.19786/README.md)
+
+<a id="p330"></a>
+## p330 · Understanding R1-Zero-Like Training: A Critical Perspective
+
+- 标识：arxiv:2503.20783
+- 原文 / 官方入口：https://arxiv.org/abs/2503.20783
+- 主题：llm/posttraining/rl
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2503.20783/README.md)
+
+<a id="p331"></a>
+## p331 · Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?
+
+- 标识：arxiv:2504.13837
+- 原文 / 官方入口：https://arxiv.org/abs/2504.13837
+- 主题：llm/posttraining/rl
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2504.13837/README.md)
+
+<a id="p332"></a>
+## p332 · Qwen3 Technical Report
+
+- 标识：arxiv:2505.09388
+- 原文 / 官方入口：https://arxiv.org/abs/2505.09388
+- 主题：llm/pretraining, llm/posttraining/sft, llm/posttraining/rl
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2505.09388/README.md)
+
+<a id="p333"></a>
+## p333 · The Entropy Mechanism of Reinforcement Learning for Reasoning Language Models
+
+- 标识：arxiv:2505.22617
+- 原文 / 官方入口：https://arxiv.org/abs/2505.22617
+- 主题：llm/posttraining/rl
+- 身份核验：selected_method_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/arxiv-2505.22617/README.md)
+
+<a id="p334"></a>
+## p334 · DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models
+
+- 标识：arxiv:2512.02556
+- 原文 / 官方入口：https://arxiv.org/abs/2512.02556
+- 主题：llm/pretraining, llm/architecture, llm/posttraining/rl
+- 身份核验：architecture_full_read_posttraining_partial_with_evidence_audit
+- 用户阅读状态：unknown
+- [独立讲解](../llm/papers/arxiv-2512.02556/reading.md)
+
+<a id="p335"></a>
+## p335 · DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression
+
+- 标识：arxiv:2609.19969
+- 原文 / 官方入口：https://arxiv.org/abs/2609.19969
+- 主题：llm/pretraining, llm/architecture, llm/long-context
+- 身份核验：full_text_reading_and_evidence_audit
+- 用户阅读状态：unknown
+- [独立讲解](../llm/papers/arxiv-2609.19969/reading.md)
+
+<a id="p336"></a>
+## p336 · Learning to reason with LLMs
+
+- 标识：url:https://openai.com/index/learning-to-reason-with-llms/
+- 原文 / 官方入口：https://openai.com/index/learning-to-reason-with-llms/
+- 主题：llm/inference, llm/posttraining/rl
+- 身份核验：selected_sections_checked_not_full_read
+- 用户阅读状态：unknown
+- [文献卡](../llm/papers/openai-o1/README.md)
 
 ## 2026年10月3日既有条目更新
 

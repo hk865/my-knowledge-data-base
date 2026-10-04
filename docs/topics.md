@@ -29,7 +29,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 ## 大语言模型
 
-### 预训练（25）
+### 预训练（41）
 
 细分：训练目标与规模规律；数据选择与混合；课程与持续预训练；数据质量与配比；训练目标与监督位置；长上下文课程
 
@@ -58,8 +58,24 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Attention Residuals](paper-catalog.md#p187)
 - [DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence](paper-catalog.md#p188)
 - [Kimi K3: Open Frontier Intelligence](paper-catalog.md#p189)
+- [Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer](paper-catalog.md#p279)
+- [PaLM: Scaling Language Modeling with Pathways](paper-catalog.md#p288)
+- [GPT-4 Technical Report](paper-catalog.md#p294)
+- [Lost in the Middle: How Language Models Use Long Contexts](paper-catalog.md#p299)
+- [Small-scale proxies for large-scale Transformer training instabilities](paper-catalog.md#p303)
+- [Effective Long-Context Scaling of Foundation Models](paper-catalog.md#p304)
+- [Efficient Streaming Language Models with Attention Sinks](paper-catalog.md#p305)
+- [DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models](paper-catalog.md#p311)
+- [The Llama 3 Herd of Models](paper-catalog.md#p319)
+- [Gemma 2: Improving Open Language Models at a Practical Size](paper-catalog.md#p320)
+- [2 OLMo 2 Furious](paper-catalog.md#p324)
+- [Native Sparse Attention: Hardware-Aligned and Natively Trainable Sparse Attention](paper-catalog.md#p327)
+- [Gemma 3 Technical Report](paper-catalog.md#p329)
+- [Qwen3 Technical Report](paper-catalog.md#p332)
+- [DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models](paper-catalog.md#p334)
+- [DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression](paper-catalog.md#p335)
 
-### 后训练 监督微调（12）
+### 后训练 监督微调（22）
 
 细分：指令与示范数据；轨迹监督与任务适配
 
@@ -73,20 +89,47 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [DeepSeek-V2: A Strong, Economical, and Efficient Mixture-of-Experts Language Model](paper-catalog.md#p014)
 - [Recursive Introspection: Teaching Language Model Agents How to Self-Improve](paper-catalog.md#p019)
 - [Enhancing Code Generation Performance of Smaller Models by Distilling the Reasoning Ability of LLMs](paper-catalog.md#p023)
-- [Do NOT Think That Much for 2+3=? On the Overthinking of Long Reasoning Models](paper-catalog.md#p035)
 - [Training language models to follow instructions with human feedback](paper-catalog.md#p115)
+- [Finetuned Language Models Are Zero-Shot Learners](paper-catalog.md#p285)
+- [Scaling Instruction-Finetuned Language Models](paper-catalog.md#p291)
+- [Self-Instruct: Aligning Language Models with Self-Generated Instructions](paper-catalog.md#p293)
+- [LIMA: Less Is More for Alignment](paper-catalog.md#p295)
+- [Llama 2: Open Foundation and Fine-Tuned Chat Models](paper-catalog.md#p300)
+- [Zephyr: Direct Distillation of LM Alignment](paper-catalog.md#p308)
+- [Does Fine-Tuning LLMs on New Knowledge Encourage Hallucinations?](paper-catalog.md#p317)
+- [The Llama 3 Herd of Models](paper-catalog.md#p319)
+- [Tulu 3: Pushing Frontiers in Open Language Model Post-Training](paper-catalog.md#p322)
+- [SFT Memorizes, RL Generalizes: A Comparative Study of Foundation Model Post-training](paper-catalog.md#p326)
+- [Qwen3 Technical Report](paper-catalog.md#p332)
 
-### 后训练 偏好学习（5）
+### 后训练 偏好学习（22）
 
 细分：偏好数据与奖励模型；直接偏好优化
 
 - [Qwen2 Technical Report](paper-catalog.md#p005)
+- [Qwen2.5 Technical Report](paper-catalog.md#p006)
 - [Qwen2.5-1M Technical Report](paper-catalog.md#p008)
+- [Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity](paper-catalog.md#p031)
+- [Do NOT Think That Much for 2+3=? On the Overthinking of Long Reasoning Models](paper-catalog.md#p035)
 - [Training language models to follow instructions with human feedback](paper-catalog.md#p115)
 - [Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena](paper-catalog.md#p118)
 - [Direct Preference Optimization: Your Language Model is Secretly a Reward Model](paper-catalog.md#p128)
+- [Deep reinforcement learning from human preferences](paper-catalog.md#p278)
+- [Learning to summarize from human feedback](paper-catalog.md#p283)
+- [Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback](paper-catalog.md#p289)
+- [Scaling Laws for Reward Model Overoptimization](paper-catalog.md#p290)
+- [Constitutional AI: Harmlessness from AI Feedback](paper-catalog.md#p292)
+- [Let's Verify Step by Step](paper-catalog.md#p297)
+- [Llama 2: Open Foundation and Fine-Tuned Chat Models](paper-catalog.md#p300)
+- [A Long Way to Go: Investigating Length Correlations in RLHF](paper-catalog.md#p306)
+- [A General Theoretical Paradigm to Understand Learning from Human Preferences](paper-catalog.md#p307)
+- [Zephyr: Direct Distillation of LM Alignment](paper-catalog.md#p308)
+- [Is DPO Superior to PPO for LLM Alignment? A Comprehensive Study](paper-catalog.md#p316)
+- [SimPO: Simple Preference Optimization with a Reference-Free Reward](paper-catalog.md#p318)
+- [The Llama 3 Herd of Models](paper-catalog.md#p319)
+- [Tulu 3: Pushing Frontiers in Open Language Model Post-Training](paper-catalog.md#p322)
 
-### 后训练 强化学习（7）
+### 后训练 强化学习（26）
 
 细分：策略优化算法；结果与过程奖励；轨迹采样与数据回流；奖励与验证器；长轨迹信用分配；探索与轨迹分布
 
@@ -97,8 +140,27 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Training language models to follow instructions with human feedback](paper-catalog.md#p115)
 - [Proximal Policy Optimization Algorithms](paper-catalog.md#p129)
 - [Kimi K2: Open Agentic Intelligence](paper-catalog.md#p184)
+- [Deep reinforcement learning from human preferences](paper-catalog.md#p278)
+- [Learning to summarize from human feedback](paper-catalog.md#p283)
+- [Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback](paper-catalog.md#p289)
+- [Scaling Laws for Reward Model Overoptimization](paper-catalog.md#p290)
+- [Let's Verify Step by Step](paper-catalog.md#p297)
+- [Llama 2: Open Foundation and Fine-Tuned Chat Models](paper-catalog.md#p300)
+- [DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models](paper-catalog.md#p311)
+- [Is DPO Superior to PPO for LLM Alignment? A Comprehensive Study](paper-catalog.md#p316)
+- [Tulu 3: Pushing Frontiers in Open Language Model Post-Training](paper-catalog.md#p322)
+- [OpenAI o1 System Card](paper-catalog.md#p323)
+- [Kimi k1.5: Scaling Reinforcement Learning with LLMs](paper-catalog.md#p325)
+- [SFT Memorizes, RL Generalizes: A Comparative Study of Foundation Model Post-training](paper-catalog.md#p326)
+- [DAPO: An Open-Source LLM Reinforcement Learning System at Scale](paper-catalog.md#p328)
+- [Understanding R1-Zero-Like Training: A Critical Perspective](paper-catalog.md#p330)
+- [Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?](paper-catalog.md#p331)
+- [Qwen3 Technical Report](paper-catalog.md#p332)
+- [The Entropy Mechanism of Reinforcement Learning for Reasoning Language Models](paper-catalog.md#p333)
+- [DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models](paper-catalog.md#p334)
+- [Learning to reason with LLMs](paper-catalog.md#p336)
 
-### 架构与效率（25）
+### 架构与效率（39）
 
 细分：注意力与状态空间模型；稀疏专家与条件计算；KV cache 与压缩；线性与稀疏注意力；因果掩码与复杂度
 
@@ -127,8 +189,22 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Attention Residuals](paper-catalog.md#p187)
 - [DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence](paper-catalog.md#p188)
 - [Kimi K3: Open Frontier Intelligence](paper-catalog.md#p189)
+- [Fast Transformer Decoding: One Write-Head is All You Need](paper-catalog.md#p280)
+- [On Layer Normalization in the Transformer Architecture](paper-catalog.md#p281)
+- [Transformers are RNNs: Fast Autoregressive Transformers with Linear Attention](paper-catalog.md#p282)
+- [RoFormer: Enhanced Transformer with Rotary Position Embedding](paper-catalog.md#p284)
+- [GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints](paper-catalog.md#p296)
+- [Repeat After Me: Transformers are Better than State Space Models at Copying](paper-catalog.md#p309)
+- [Simple linear attention language models balance the recall-throughput tradeoff](paper-catalog.md#p312)
+- [Jamba: A Hybrid Transformer-Mamba Language Model](paper-catalog.md#p314)
+- [Gemma 2: Improving Open Language Models at a Practical Size](paper-catalog.md#p320)
+- [Hyper-Connections](paper-catalog.md#p321)
+- [Native Sparse Attention: Hardware-Aligned and Natively Trainable Sparse Attention](paper-catalog.md#p327)
+- [Gemma 3 Technical Report](paper-catalog.md#p329)
+- [DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models](paper-catalog.md#p334)
+- [DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression](paper-catalog.md#p335)
 
-### 推理时计算（28）
+### 推理时计算（37）
 
 细分：搜索与验证；多路径与多 Agent；预算分配与 token 效率；精确目标分布与投机验证；近似质量协作与关键段接管；MTP草拟与验证接口；精确级联混合分布
 
@@ -136,6 +212,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Towards Thinking-Optimal Scaling of Test-Time Compute for LLM Reasoning](paper-catalog.md#p002)
 - [s1: Simple test-time scaling](paper-catalog.md#p003)
 - [Large Language Monkeys: Scaling Inference Compute with Repeated Sampling](paper-catalog.md#p004)
+- [DeepSeek-V3 Technical Report](paper-catalog.md#p007)
 - [Qwen2.5-1M Technical Report](paper-catalog.md#p008)
 - [Mamba: Linear-Time Sequence Modeling with Selective State Spaces](paper-catalog.md#p009)
 - [DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](paper-catalog.md#p011)
@@ -160,6 +237,14 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Judge Decoding: Faster Speculative Sampling Requires Going Beyond Model Alignment](paper-catalog.md#p150)
 - [DFlash 2: Keep Drafting Parallel](paper-catalog.md#p151)
 - [Faster Cascades via Speculative Decoding](paper-catalog.md#p152)
+- [Fast Transformer Decoding: One Write-Head is All You Need](paper-catalog.md#p280)
+- [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](paper-catalog.md#p286)
+- [Self-Consistency Improves Chain of Thought Reasoning in Language Models](paper-catalog.md#p287)
+- [GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints](paper-catalog.md#p296)
+- [Efficient Memory Management for Large Language Model Serving with PagedAttention](paper-catalog.md#p302)
+- [KIVI: A Tuning-Free Asymmetric 2bit Quantization for KV Cache](paper-catalog.md#p310)
+- [Kimi k1.5: Scaling Reinforcement Learning with LLMs](paper-catalog.md#p325)
+- [Learning to reason with LLMs](paper-catalog.md#p336)
 
 
 ## 多模态与世界表征
@@ -523,10 +608,11 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Does Localization Inform Editing? Surprising Differences in Causality-Based Localization vs. Knowledge Editing in Language Models](paper-catalog.md#p176)
 - [Progress Measures for Grokking via Mechanistic Interpretability](paper-catalog.md#p177)
 
-### 训练科学（7）
+### 训练科学（10）
 
 细分：规模定律；优化地形；训练动态；双下降；本征维度与参数有效性；遗忘
 
+- [OLMo: Accelerating the Science of Language Models](paper-catalog.md#p010)
 - [Training Compute-Optimal Large Language Models](paper-catalog.md#p114)
 - [In-Datacenter Performance Analysis of a Tensor Processing Unit](paper-catalog.md#p172)
 - [The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks](paper-catalog.md#p173)
@@ -534,6 +620,8 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Efficient Large-Scale Language Model Training on GPU Clusters Using Megatron-LM](paper-catalog.md#p175)
 - [TPU v4: An Optically Reconfigurable Supercomputer for Machine Learning with Hardware Support for Embeddings](paper-catalog.md#p178)
 - [How Do Large Language Models Acquire Factual Knowledge During Pretraining?](paper-catalog.md#p179)
+- [On Layer Normalization in the Transformer Architecture](paper-catalog.md#p281)
+- [Small-scale proxies for large-scale Transformer training instabilities](paper-catalog.md#p303)
 
 
 ### 生物计算探索（0）
@@ -541,7 +629,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 细分：
 
 
-### 评估与监督可靠性（10）
+### 评估与监督可靠性（12）
 
 细分：性质测试、变形测试与行为验证边界
 
@@ -555,12 +643,17 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena](paper-catalog.md#p118)
 - [Finding bugs across the Python ecosystem with Claude and property-based testing](paper-catalog.md#p160)
 - [Metamorphic Testing of Multi-Agent LLM Systems: A Trace-Based Behavioral Oracle Framework](paper-catalog.md#p161)
+- [Lost in the Middle: How Language Models Use Long Contexts](paper-catalog.md#p299)
+- [RULER: What's the Real Context Size of Your Long-Context Language Models?](paper-catalog.md#p315)
 
 
-### 知识蒸馏与模型压缩（4）
+### 知识蒸馏与模型压缩（7）
 
 细分：输出分布与软目标；中间特征与提示监督；教师学生迁移；模型压缩历史与来源边界
 
+- [MiniLM: Deep Self-Attention Distillation for Task-Agnostic Compression of Pre-Trained Transformers](paper-catalog.md#p020)
+- [DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter](paper-catalog.md#p021)
+- [Enhancing Code Generation Performance of Smaller Models by Distilling the Reasoning Ability of LLMs](paper-catalog.md#p023)
 - [Model Compression](paper-catalog.md#p140)
 - [Do Deep Nets Really Need to be Deep?](paper-catalog.md#p141)
 - [FitNets: Hints for Thin Deep Nets](paper-catalog.md#p142)
@@ -582,19 +675,19 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 | 模态 \ 任务 | understanding | generation | decision | evaluation | analysis |
 |---|---:|---:|---:|---:|---:|
-| text | [14](#x-text-understanding) | [58](#x-text-generation) | [54](#x-text-decision) | [11](#x-text-evaluation) | [20](#x-text-analysis) |
-| image | [58](#x-image-understanding) | [12](#x-image-generation) | [79](#x-image-decision) | [7](#x-image-evaluation) | [3](#x-image-analysis) |
-| video | [7](#x-video-understanding) | [29](#x-video-generation) | [19](#x-video-decision) | [5](#x-video-evaluation) | [2](#x-video-analysis) |
-| audio | [2](#x-audio-understanding) | [3](#x-audio-generation) | · | · | · |
-| action | [9](#x-action-understanding) | [27](#x-action-generation) | [124](#x-action-decision) | [9](#x-action-evaluation) | [2](#x-action-analysis) |
-| state | [15](#x-state-understanding) | [2](#x-state-generation) | [63](#x-state-decision) | [1](#x-state-evaluation) | · |
-| code | [1](#x-code-understanding) | [7](#x-code-generation) | [7](#x-code-decision) | [2](#x-code-evaluation) | [3](#x-code-analysis) |
-| multimodal | [11](#x-multimodal-understanding) | [13](#x-multimodal-generation) | [31](#x-multimodal-decision) | [1](#x-multimodal-evaluation) | · |
+| text | [18](#x-text-understanding) | [110](#x-text-generation) | [55](#x-text-decision) | [15](#x-text-evaluation) | [35](#x-text-analysis) |
+| image | [59](#x-image-understanding) | [15](#x-image-generation) | [81](#x-image-decision) | [7](#x-image-evaluation) | [5](#x-image-analysis) |
+| video | [8](#x-video-understanding) | [30](#x-video-generation) | [19](#x-video-decision) | [5](#x-video-evaluation) | [2](#x-video-analysis) |
+| audio | [4](#x-audio-understanding) | [5](#x-audio-generation) | · | · | · |
+| action | [9](#x-action-understanding) | [27](#x-action-generation) | [125](#x-action-decision) | [9](#x-action-evaluation) | [2](#x-action-analysis) |
+| state | [15](#x-state-understanding) | [2](#x-state-generation) | [64](#x-state-decision) | [1](#x-state-evaluation) | · |
+| code | [1](#x-code-understanding) | [15](#x-code-generation) | [7](#x-code-decision) | [2](#x-code-evaluation) | [4](#x-code-analysis) |
+| multimodal | [12](#x-multimodal-understanding) | [18](#x-multimodal-generation) | [32](#x-multimodal-decision) | [1](#x-multimodal-evaluation) | [1](#x-multimodal-analysis) |
 | tabular | [1](#x-tabular-understanding) | · | · | · | · |
 
 <a id="x-text-understanding"></a>
 
-### text × understanding（14）
+### text × understanding（18）
 
 - [MiniLM: Deep Self-Attention Distillation for Task-Agnostic Compression of Pre-Trained Transformers](paper-catalog.md#p020)
 - [DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter](paper-catalog.md#p021)
@@ -610,10 +703,14 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [ConceptFusion: Open-set Multimodal 3D Mapping](paper-catalog.md#p231)
 - [Gemini Robotics: Bringing AI into the Physical World](paper-catalog.md#p253)
 - [Gemini Robotics 1.5: Pushing the Frontier of Generalist Robots with Advanced Embodied Reasoning, Thinking, and Motion Transfer](paper-catalog.md#p261)
+- [Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer](paper-catalog.md#p279)
+- [Transformers are RNNs: Fast Autoregressive Transformers with Linear Attention](paper-catalog.md#p282)
+- [RoFormer: Enhanced Transformer with Rotary Position Embedding](paper-catalog.md#p284)
+- [Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context](paper-catalog.md#p313)
 
 <a id="x-text-generation"></a>
 
-### text × generation（58）
+### text × generation（110）
 
 - [Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters](paper-catalog.md#p001)
 - [Towards Thinking-Optimal Scaling of Test-Time Compute for LLM Reasoning](paper-catalog.md#p002)
@@ -673,10 +770,62 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Learning Universal Policies via Text-Guided Video Generation](paper-catalog.md#p230)
 - [Learning Interactive Real-World Simulators](paper-catalog.md#p237)
 - [Genie Envisioner: A Unified World Foundation Platform for Robotic Manipulation](paper-catalog.md#p258)
+- [Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer](paper-catalog.md#p279)
+- [Fast Transformer Decoding: One Write-Head is All You Need](paper-catalog.md#p280)
+- [Transformers are RNNs: Fast Autoregressive Transformers with Linear Attention](paper-catalog.md#p282)
+- [Learning to summarize from human feedback](paper-catalog.md#p283)
+- [RoFormer: Enhanced Transformer with Rotary Position Embedding](paper-catalog.md#p284)
+- [Finetuned Language Models Are Zero-Shot Learners](paper-catalog.md#p285)
+- [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](paper-catalog.md#p286)
+- [Self-Consistency Improves Chain of Thought Reasoning in Language Models](paper-catalog.md#p287)
+- [PaLM: Scaling Language Modeling with Pathways](paper-catalog.md#p288)
+- [Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback](paper-catalog.md#p289)
+- [Scaling Laws for Reward Model Overoptimization](paper-catalog.md#p290)
+- [Scaling Instruction-Finetuned Language Models](paper-catalog.md#p291)
+- [Constitutional AI: Harmlessness from AI Feedback](paper-catalog.md#p292)
+- [Self-Instruct: Aligning Language Models with Self-Generated Instructions](paper-catalog.md#p293)
+- [GPT-4 Technical Report](paper-catalog.md#p294)
+- [LIMA: Less Is More for Alignment](paper-catalog.md#p295)
+- [GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints](paper-catalog.md#p296)
+- [Let's Verify Step by Step](paper-catalog.md#p297)
+- [Extending Context Window of Large Language Models via Positional Interpolation](paper-catalog.md#p298)
+- [Llama 2: Open Foundation and Fine-Tuned Chat Models](paper-catalog.md#p300)
+- [YaRN: Efficient Context Window Extension of Large Language Models](paper-catalog.md#p301)
+- [Efficient Memory Management for Large Language Model Serving with PagedAttention](paper-catalog.md#p302)
+- [Effective Long-Context Scaling of Foundation Models](paper-catalog.md#p304)
+- [Efficient Streaming Language Models with Attention Sinks](paper-catalog.md#p305)
+- [A Long Way to Go: Investigating Length Correlations in RLHF](paper-catalog.md#p306)
+- [A General Theoretical Paradigm to Understand Learning from Human Preferences](paper-catalog.md#p307)
+- [Zephyr: Direct Distillation of LM Alignment](paper-catalog.md#p308)
+- [KIVI: A Tuning-Free Asymmetric 2bit Quantization for KV Cache](paper-catalog.md#p310)
+- [DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models](paper-catalog.md#p311)
+- [Simple linear attention language models balance the recall-throughput tradeoff](paper-catalog.md#p312)
+- [Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context](paper-catalog.md#p313)
+- [Jamba: A Hybrid Transformer-Mamba Language Model](paper-catalog.md#p314)
+- [Is DPO Superior to PPO for LLM Alignment? A Comprehensive Study](paper-catalog.md#p316)
+- [Does Fine-Tuning LLMs on New Knowledge Encourage Hallucinations?](paper-catalog.md#p317)
+- [SimPO: Simple Preference Optimization with a Reference-Free Reward](paper-catalog.md#p318)
+- [The Llama 3 Herd of Models](paper-catalog.md#p319)
+- [Gemma 2: Improving Open Language Models at a Practical Size](paper-catalog.md#p320)
+- [Hyper-Connections](paper-catalog.md#p321)
+- [Tulu 3: Pushing Frontiers in Open Language Model Post-Training](paper-catalog.md#p322)
+- [OpenAI o1 System Card](paper-catalog.md#p323)
+- [2 OLMo 2 Furious](paper-catalog.md#p324)
+- [Kimi k1.5: Scaling Reinforcement Learning with LLMs](paper-catalog.md#p325)
+- [Native Sparse Attention: Hardware-Aligned and Natively Trainable Sparse Attention](paper-catalog.md#p327)
+- [DAPO: An Open-Source LLM Reinforcement Learning System at Scale](paper-catalog.md#p328)
+- [Gemma 3 Technical Report](paper-catalog.md#p329)
+- [Understanding R1-Zero-Like Training: A Critical Perspective](paper-catalog.md#p330)
+- [Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?](paper-catalog.md#p331)
+- [Qwen3 Technical Report](paper-catalog.md#p332)
+- [The Entropy Mechanism of Reinforcement Learning for Reasoning Language Models](paper-catalog.md#p333)
+- [DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models](paper-catalog.md#p334)
+- [DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression](paper-catalog.md#p335)
+- [Learning to reason with LLMs](paper-catalog.md#p336)
 
 <a id="x-text-decision"></a>
 
-### text × decision（54）
+### text × decision（55）
 
 - [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](paper-catalog.md#p034)
 - [ReAct: Synergizing Reasoning and Acting in Language Models](paper-catalog.md#p040)
@@ -732,13 +881,15 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [π*0.6: a VLA That Learns From Experience](paper-catalog.md#p263)
 - [Ground Slow, Move Fast: A Dual-System Foundation Model for Generalizable Vision-and-Language Navigation](paper-catalog.md#p265)
 - [ABot-N1: Toward a General Visual Language Navigation Foundation Model](paper-catalog.md#p268)
+- [SFT Memorizes, RL Generalizes: A Comparative Study of Foundation Model Post-training](paper-catalog.md#p326)
 
 <a id="x-text-evaluation"></a>
 
-### text × evaluation（11）
+### text × evaluation（15）
 
 - [PersonaEval: Are LLM Evaluators Human Enough to Judge Role-Play?](paper-catalog.md#p032)
 - [On scalable oversight with weak LLMs judging strong LLMs](paper-catalog.md#p033)
+- [Measuring Chain of Thought Faithfulness by Unlearning Reasoning Steps](paper-catalog.md#p037)
 - [Reasoning Does Not Necessarily Improve Role-Playing Ability](paper-catalog.md#p038)
 - [Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena](paper-catalog.md#p118)
 - [Vision-and-Language Navigation: Interpreting visually-grounded navigation instructions in real environments](paper-catalog.md#p119)
@@ -748,10 +899,13 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Beyond the Nav-Graph: Vision-and-Language Navigation in Continuous Environments](paper-catalog.md#p217)
 - [EmbodiedBench: Comprehensive Benchmarking Multi-modal Large Language Models for Vision-Driven Embodied Agents](paper-catalog.md#p250)
 - [Genie Envisioner: A Unified World Foundation Platform for Robotic Manipulation](paper-catalog.md#p258)
+- [Let's Verify Step by Step](paper-catalog.md#p297)
+- [Lost in the Middle: How Language Models Use Long Contexts](paper-catalog.md#p299)
+- [RULER: What's the Real Context Size of Your Long-Context Language Models?](paper-catalog.md#p315)
 
 <a id="x-text-analysis"></a>
 
-### text × analysis（20）
+### text × analysis（35）
 
 - [OLMo: Accelerating the Science of Language Models](paper-catalog.md#p010)
 - [ShortGPT: Layers in Large Language Models are More Redundant Than You Expect](paper-catalog.md#p022)
@@ -762,6 +916,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Do NOT Think That Much for 2+3=? On the Overthinking of Long Reasoning Models](paper-catalog.md#p035)
 - [Making Reasoning Matter: Measuring and Improving Faithfulness of Chain-of-Thought Reasoning](paper-catalog.md#p036)
 - [Measuring Chain of Thought Faithfulness by Unlearning Reasoning Steps](paper-catalog.md#p037)
+- [Reasoning Does Not Necessarily Improve Role-Playing Ability](paper-catalog.md#p038)
 - [Training Compute-Optimal Large Language Models](paper-catalog.md#p114)
 - [Language Models are Few-Shot Learners](paper-catalog.md#p127)
 - [Dissecting Recall of Factual Associations in Auto-Regressive Language Models](paper-catalog.md#p164)
@@ -773,10 +928,24 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [TPU v4: An Optically Reconfigurable Supercomputer for Machine Learning with Hardware Support for Embeddings](paper-catalog.md#p178)
 - [How Do Large Language Models Acquire Factual Knowledge During Pretraining?](paper-catalog.md#p179)
 - [Gated Attention for Large Language Models: Non-linearity, Sparsity, and Attention-Sink-Free](paper-catalog.md#p183)
+- [On Layer Normalization in the Transformer Architecture](paper-catalog.md#p281)
+- [Scaling Laws for Reward Model Overoptimization](paper-catalog.md#p290)
+- [Lost in the Middle: How Language Models Use Long Contexts](paper-catalog.md#p299)
+- [Small-scale proxies for large-scale Transformer training instabilities](paper-catalog.md#p303)
+- [Efficient Streaming Language Models with Attention Sinks](paper-catalog.md#p305)
+- [A Long Way to Go: Investigating Length Correlations in RLHF](paper-catalog.md#p306)
+- [A General Theoretical Paradigm to Understand Learning from Human Preferences](paper-catalog.md#p307)
+- [Repeat After Me: Transformers are Better than State Space Models at Copying](paper-catalog.md#p309)
+- [Simple linear attention language models balance the recall-throughput tradeoff](paper-catalog.md#p312)
+- [Does Fine-Tuning LLMs on New Knowledge Encourage Hallucinations?](paper-catalog.md#p317)
+- [SFT Memorizes, RL Generalizes: A Comparative Study of Foundation Model Post-training](paper-catalog.md#p326)
+- [Understanding R1-Zero-Like Training: A Critical Perspective](paper-catalog.md#p330)
+- [Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?](paper-catalog.md#p331)
+- [The Entropy Mechanism of Reinforcement Learning for Reasoning Language Models](paper-catalog.md#p333)
 
 <a id="x-image-understanding"></a>
 
-### image × understanding（58）
+### image × understanding（59）
 
 - [FOCUS: Object-Centric World Models for Robotics Manipulation](paper-catalog.md#p048)
 - [A High-Fidelity Digital Twin for Robotic Manipulation Based on 3D Gaussian Splatting](paper-catalog.md#p054)
@@ -836,10 +1005,11 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [A Multi-State Constraint Kalman Filter for Vision-aided Inertial Navigation](paper-catalog.md#p269)
 - [OpenVINS: A Research Platform for Visual-Inertial Estimation](paper-catalog.md#p270)
 - [Parallel Tracking and Mapping for Small AR Workspaces](paper-catalog.md#p271)
+- [Transformers are RNNs: Fast Autoregressive Transformers with Linear Attention](paper-catalog.md#p282)
 
 <a id="x-image-generation"></a>
 
-### image × generation（12）
+### image × generation（15）
 
 - [DINO-WM: World Models on Pre-trained Visual Features enable Zero-shot Planning](paper-catalog.md#p046)
 - [LaDi-WM: A Latent Diffusion-based World Model for Predictive Manipulation](paper-catalog.md#p049)
@@ -853,10 +1023,13 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Kling-Omni Technical Report](paper-catalog.md#p196)
 - [World Models](paper-catalog.md#p207)
 - [Learning Latent Dynamics for Planning from Pixels](paper-catalog.md#p211)
+- [Transformers are RNNs: Fast Autoregressive Transformers with Linear Attention](paper-catalog.md#p282)
+- [Hyper-Connections](paper-catalog.md#p321)
+- [Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?](paper-catalog.md#p331)
 
 <a id="x-image-decision"></a>
 
-### image × decision（79）
+### image × decision（81）
 
 - [DINO-WM: World Models on Pre-trained Visual Features enable Zero-shot Planning](paper-catalog.md#p046)
 - [FOCUS: Object-Centric World Models for Robotics Manipulation](paper-catalog.md#p048)
@@ -937,6 +1110,8 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [ABot-N1: Toward a General Visual Language Navigation Foundation Model](paper-catalog.md#p268)
 - [Learning Human-to-Humanoid Real-Time Whole-Body Teleoperation](paper-catalog.md#p276)
 - [OmniH2O: Universal and Dexterous Human-to-Humanoid Whole-Body Teleoperation and Learning](paper-catalog.md#p277)
+- [Deep reinforcement learning from human preferences](paper-catalog.md#p278)
+- [SFT Memorizes, RL Generalizes: A Comparative Study of Foundation Model Post-training](paper-catalog.md#p326)
 
 <a id="x-image-evaluation"></a>
 
@@ -952,15 +1127,17 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-image-analysis"></a>
 
-### image × analysis（3）
+### image × analysis（5）
 
 - [In-Datacenter Performance Analysis of a Tensor Processing Unit](paper-catalog.md#p172)
 - [The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks](paper-catalog.md#p173)
 - [The Hardware Lottery](paper-catalog.md#p174)
+- [SFT Memorizes, RL Generalizes: A Comparative Study of Foundation Model Post-training](paper-catalog.md#p326)
+- [Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?](paper-catalog.md#p331)
 
 <a id="x-video-understanding"></a>
 
-### video × understanding（7）
+### video × understanding（8）
 
 - [SlotFormer: Unsupervised Visual Dynamics Simulation with Object-Centric Models](paper-catalog.md#p042)
 - [SAVi++: Towards End-to-End Object-Centric Learning from Real-World Videos](paper-catalog.md#p043)
@@ -969,10 +1146,11 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Digging Into Self-Supervised Monocular Depth Estimation](paper-catalog.md#p208)
 - [nuScenes: A multimodal dataset for autonomous driving](paper-catalog.md#p214)
 - [V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning](paper-catalog.md#p256)
+- [Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context](paper-catalog.md#p313)
 
 <a id="x-video-generation"></a>
 
-### video × generation（29）
+### video × generation（30）
 
 - [SlotFormer: Unsupervised Visual Dynamics Simulation with Object-Centric Models](paper-catalog.md#p042)
 - [OccWorld: Learning a 3D Occupancy World Model for Autonomous Driving](paper-catalog.md#p044)
@@ -1003,6 +1181,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Genie Envisioner: A Unified World Foundation Platform for Robotic Manipulation](paper-catalog.md#p258)
 - [Ctrl-World: A Controllable Generative World Model for Robot Manipulation](paper-catalog.md#p262)
 - [Evaluating Gemini Robotics Policies in a Veo World Simulator](paper-catalog.md#p266)
+- [Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context](paper-catalog.md#p313)
 
 <a id="x-video-decision"></a>
 
@@ -1047,18 +1226,22 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-audio-understanding"></a>
 
-### audio × understanding（2）
+### audio × understanding（4）
 
 - [Do Deep Nets Really Need to be Deep?](paper-catalog.md#p141)
 - [Distilling the Knowledge in a Neural Network](paper-catalog.md#p143)
+- [Transformers are RNNs: Fast Autoregressive Transformers with Linear Attention](paper-catalog.md#p282)
+- [Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context](paper-catalog.md#p313)
 
 <a id="x-audio-generation"></a>
 
-### audio × generation（3）
+### audio × generation（5）
 
 - [Mamba: Linear-Time Sequence Modeling with Selective State Spaces](paper-catalog.md#p009)
 - [Seedance 2.0: Advancing Video Generation for World Complexity](paper-catalog.md#p197)
 - [Veo: a text-to-video generation system](paper-catalog.md#p199)
+- [Transformers are RNNs: Fast Autoregressive Transformers with Linear Attention](paper-catalog.md#p282)
+- [Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context](paper-catalog.md#p313)
 
 <a id="x-action-understanding"></a>
 
@@ -1108,7 +1291,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-action-decision"></a>
 
-### action × decision（124）
+### action × decision（125）
 
 - [OccWorld: Learning a 3D Occupancy World Model for Autonomous Driving](paper-catalog.md#p044)
 - [Driving in the Occupancy World: Vision-Centric 4D Occupancy Forecasting and Planning via World Models for Autonomous Driving](paper-catalog.md#p045)
@@ -1234,6 +1417,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Expressive Whole-Body Control for Humanoid Robots](paper-catalog.md#p275)
 - [Learning Human-to-Humanoid Real-Time Whole-Body Teleoperation](paper-catalog.md#p276)
 - [OmniH2O: Universal and Dexterous Human-to-Humanoid Whole-Body Teleoperation and Learning](paper-catalog.md#p277)
+- [Deep reinforcement learning from human preferences](paper-catalog.md#p278)
 
 <a id="x-action-evaluation"></a>
 
@@ -1285,7 +1469,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-state-decision"></a>
 
-### state × decision（63）
+### state × decision（64）
 
 - [Diffusion Policy: Visuomotor Policy Learning via Action Diffusion](paper-catalog.md#p067)
 - [$π_0$: A Vision-Language-Action Flow Model for General Robot Control](paper-catalog.md#p070)
@@ -1350,6 +1534,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Expressive Whole-Body Control for Humanoid Robots](paper-catalog.md#p275)
 - [Learning Human-to-Humanoid Real-Time Whole-Body Teleoperation](paper-catalog.md#p276)
 - [OmniH2O: Universal and Dexterous Human-to-Humanoid Whole-Body Teleoperation and Learning](paper-catalog.md#p277)
+- [Deep reinforcement learning from human preferences](paper-catalog.md#p278)
 
 <a id="x-state-evaluation"></a>
 
@@ -1365,7 +1550,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-code-generation"></a>
 
-### code × generation（7）
+### code × generation（15）
 
 - [Large Language Monkeys: Scaling Inference Compute with Repeated Sampling](paper-catalog.md#p004)
 - [Enhancing Code Generation Performance of Smaller Models by Distilling the Reasoning Ability of LLMs](paper-catalog.md#p023)
@@ -1374,6 +1559,14 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Kimi K2: Open Agentic Intelligence](paper-catalog.md#p184)
 - [DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence](paper-catalog.md#p188)
 - [Kimi K3: Open Frontier Intelligence](paper-catalog.md#p189)
+- [PaLM: Scaling Language Modeling with Pathways](paper-catalog.md#p288)
+- [Is DPO Superior to PPO for LLM Alignment? A Comprehensive Study](paper-catalog.md#p316)
+- [The Llama 3 Herd of Models](paper-catalog.md#p319)
+- [Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?](paper-catalog.md#p331)
+- [Qwen3 Technical Report](paper-catalog.md#p332)
+- [DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models](paper-catalog.md#p334)
+- [DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression](paper-catalog.md#p335)
+- [Learning to reason with LLMs](paper-catalog.md#p336)
 
 <a id="x-code-decision"></a>
 
@@ -1396,15 +1589,16 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-code-analysis"></a>
 
-### code × analysis（3）
+### code × analysis（4）
 
 - [Naturalness of Attention: Revisiting Attention in Code Language Models](paper-catalog.md#p028)
 - [Probing Pretrained Models of Source Code](paper-catalog.md#p029)
 - [INSPECT: Intrinsic and Systematic Probing Evaluation for Code Transformers](paper-catalog.md#p030)
+- [Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?](paper-catalog.md#p331)
 
 <a id="x-multimodal-understanding"></a>
 
-### multimodal × understanding（11）
+### multimodal × understanding（12）
 
 - [Language-Grounded Hierarchical Planning and Execution with Multi-Robot 3D Scene Graphs](paper-catalog.md#p055)
 - [InternVLA-A1: Unifying Understanding, Generation and Action for Robotic Manipulation](paper-catalog.md#p090)
@@ -1417,10 +1611,11 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [FM-Fusion: Instance-aware Semantic Mapping Boosted by Vision-Language Foundation Models](paper-catalog.md#p244)
 - [Gemini Robotics: Bringing AI into the Physical World](paper-catalog.md#p253)
 - [Gemini Robotics 1.5: Pushing the Frontier of Generalist Robots with Advanced Embodied Reasoning, Thinking, and Motion Transfer](paper-catalog.md#p261)
+- [Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context](paper-catalog.md#p313)
 
 <a id="x-multimodal-generation"></a>
 
-### multimodal × generation（13）
+### multimodal × generation（18）
 
 - [Object-Centric World Model for Language-Guided Manipulation](paper-catalog.md#p052)
 - [InternVLA-A1: Unifying Understanding, Generation and Action for Robotic Manipulation](paper-catalog.md#p090)
@@ -1435,10 +1630,15 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Seedance 2.0: Advancing Video Generation for World Complexity](paper-catalog.md#p197)
 - [Video generation models as world simulators](paper-catalog.md#p198)
 - [Veo: a text-to-video generation system](paper-catalog.md#p199)
+- [GPT-4 Technical Report](paper-catalog.md#p294)
+- [Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context](paper-catalog.md#p313)
+- [Kimi k1.5: Scaling Reinforcement Learning with LLMs](paper-catalog.md#p325)
+- [Gemma 3 Technical Report](paper-catalog.md#p329)
+- [DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression](paper-catalog.md#p335)
 
 <a id="x-multimodal-decision"></a>
 
-### multimodal × decision（31）
+### multimodal × decision（32）
 
 - [Object-Centric World Model for Language-Guided Manipulation](paper-catalog.md#p052)
 - [Language-Grounded Hierarchical Planning and Execution with Multi-Robot 3D Scene Graphs](paper-catalog.md#p055)
@@ -1471,12 +1671,19 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Knowledge Insulating Vision-Language-Action Models: Train Fast, Run Fast, Generalize Better](paper-catalog.md#p255)
 - [Gemini Robotics 1.5: Pushing the Frontier of Generalist Robots with Advanced Embodied Reasoning, Thinking, and Motion Transfer](paper-catalog.md#p261)
 - [OmniH2O: Universal and Dexterous Human-to-Humanoid Whole-Body Teleoperation and Learning](paper-catalog.md#p277)
+- [SFT Memorizes, RL Generalizes: A Comparative Study of Foundation Model Post-training](paper-catalog.md#p326)
 
 <a id="x-multimodal-evaluation"></a>
 
 ### multimodal × evaluation（1）
 
 - [Vision-and-Language Navigation: Interpreting visually-grounded navigation instructions in real environments](paper-catalog.md#p119)
+
+<a id="x-multimodal-analysis"></a>
+
+### multimodal × analysis（1）
+
+- [SFT Memorizes, RL Generalizes: A Comparative Study of Foundation Model Post-training](paper-catalog.md#p326)
 
 <a id="x-tabular-understanding"></a>
 

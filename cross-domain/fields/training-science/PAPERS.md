@@ -16,6 +16,10 @@
 - [Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters](../../../llm/papers/test-time-compute/README.md) · 2024 · 技术精读
 - [An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale](../../../multimodal/papers/vit/README.md) · 2020 · 逐步教学版
 - [OpenVLA: An Open-Source Vision-Language-Action Model](../../../robotics-embodied/papers/openvla/README.md) · 2024 · 技术精读
+- [On Layer Normalization in the Transformer Architecture](../../../llm/papers/arxiv-2002.04745/README.md) · 2020 · 文献卡
+- [Small-scale proxies for large-scale Transformer training instabilities](../../../llm/papers/arxiv-2309.14322/README.md) · 2023 · 文献卡
+- [OLMo: Accelerating the Science of Language Models](../../../llm/papers/arxiv-2402.00838/README.md) · 2024 · 文献卡
+- [2 OLMo 2 Furious](../../../llm/papers/arxiv-2501.00656/README.md) · 2024 · 文献卡
 
 ## 综合表中尚无文献卡的论文
 
@@ -25,7 +29,6 @@
 - [Delving Deep into Rectifiers: Surpassing Human-Level Performance on ImageNet Classification](https://arxiv.org/abs/1502.01852) · 2015 · 尚无文献卡
 - [Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift](https://arxiv.org/abs/1502.03167) · 2015 · 尚无文献卡
 - [Layer Normalization](https://arxiv.org/abs/1607.06450) · 2016 · 尚无文献卡
-- [On Layer Normalization in the Transformer Architecture](https://arxiv.org/abs/2002.04745) · 2020 · 尚无文献卡
 - [Adam: A Method for Stochastic Optimization](https://arxiv.org/abs/1412.6980) · 2014 · 尚无文献卡
 - [Accurate, Large Minibatch SGD: Training ImageNet in 1 Hour](https://arxiv.org/abs/1706.02677) · 2017 · 尚无文献卡
 - [Identifying and attacking the saddle point problem in high-dimensional non-convex optimization](https://arxiv.org/abs/1406.2572) · 2014 · 尚无文献卡

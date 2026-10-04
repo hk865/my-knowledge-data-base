@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2501.17161",
+  "title": "SFT Memorizes, RL Generalizes: A Comparative Study of Foundation Model Post-training",
+  "resource_kind": "paper",
+  "canonical_folder": "llm/papers/arxiv-2501.17161",
+  "official_url": "https://arxiv.org/abs/2501.17161",
+  "official_fulltext_url": "https://arxiv.org/pdf/2501.17161",
+  "read_version": "v2",
+  "version_status": "checked_current_pdf",
+  "reading_depth": "selected_method_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了 arXiv v2：摘要、§1、§5.4、§6 Conclusion, Discussion, and Limitations；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Tianzhe Chu",
+    "Yuexiang Zhai",
+    "Jihan Yang",
+    "Shengbang Tong",
+    "Saining Xie",
+    "Dale Schuurmans",
+    "Quoc V. Le",
+    "Sergey Levine",
+    "Yi Ma"
+  ],
+  "year": 2025,
+  "topic_paths": [
+    "llm/posttraining/sft",
+    "llm/posttraining/rl"
+  ],
+  "modality_tags": [
+    "text",
+    "image",
+    "multimodal"
+  ],
+  "task_tags": [
+    "decision",
+    "analysis"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv v2：摘要、§1、§5.4、§6 Conclusion, Discussion, and Limitations",
+    "mechanism_summary": "HKU、UC Berkeley、Google DeepMind、NYU、U Alberta。GeneralPoints（文本与图像）、V-IRL 导航；Llama-3.2-Vision-11B 同一初始化下比较 SFT 与结果奖励 RL：RL 在规则与视觉变体上泛化，SFT 记忆；SFT 稳定输出格式，是 RL 的前提；RL 救不回过拟合的检查点。",
+    "evidence_boundary": "未复现实验；数字取自论文正文、表格或图注。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2501.17161",
+      "https://arxiv.org/pdf/2501.17161v2"
+    ],
+    "source_origin": "phase3_field_page_node",
+    "relation_pages": [
+      "llm/fields/posttraining/README.md",
+      "llm/fields/posttraining/rl/README.md",
+      "llm/fields/posttraining/sft/README.md"
+    ]
+  }
+}

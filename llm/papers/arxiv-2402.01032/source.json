@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2402.01032",
+  "title": "Repeat After Me: Transformers are Better than State Space Models at Copying",
+  "resource_kind": "paper",
+  "canonical_folder": "llm/papers/arxiv-2402.01032",
+  "official_url": "https://arxiv.org/abs/2402.01032",
+  "official_fulltext_url": "https://arxiv.org/pdf/2402.01032",
+  "read_version": "v2",
+  "version_status": "checked_v2",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了arXiv 摘要页与 v2 PDF（ICML 2024）：摘要、§1、§4 合成复制实验（Figure 1）、§5 预训练模型对比（电话簿、复制、SQuAD）；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Samy Jelassi",
+    "David Brandfonbrener",
+    "Sham M. Kakade",
+    "Eran Malach"
+  ],
+  "year": 2024,
+  "topic_paths": [
+    "llm/architecture"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v2 PDF（ICML 2024）：摘要、§1、§4 合成复制实验（Figure 1）、§5 预训练模型对比（电话簿、复制、SQuAD）",
+    "mechanism_summary": "GSSM（固定大小状态的模型）无法准确复制比状态比特数更长的串；两层 Transformer 可复制长度随头数指数增长的串；复制长度 300 的串，Transformer 所需样本比最好的 GSSM 少 100 倍；Pile 上 Mamba 困惑度更低，但电话簿查找中 Pythia-410M 在列表足够长时超过 Mamba-2.8B；SQuAD 上 Mamba 随段落变长下降更快。",
+    "evidence_boundary": "未复现实验；数字取自原文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2402.01032",
+      "https://arxiv.org/pdf/2402.01032v2"
+    ],
+    "source_origin": "architecture_field_rewrite_phase3",
+    "team": "Harvard University（Kempner Institute、CMSA）",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "analysis"
+  ]
+}

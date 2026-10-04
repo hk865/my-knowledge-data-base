@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2503.19786",
+  "title": "Gemma 3 Technical Report",
+  "resource_kind": "paper",
+  "canonical_folder": "llm/papers/arxiv-2503.19786",
+  "official_url": "https://arxiv.org/abs/2503.19786",
+  "official_fulltext_url": "https://arxiv.org/pdf/2503.19786",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了§1、§2（结构、QK-norm、5:1 交错、长上下文与 RoPE）、§2.2 预训练（token 量、蒸馏）、§5.2–5.3（局部/全局比例消融、KV 缓存显存、长上下文）；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Gemma Team",
+    "Aishwarya Kamath",
+    "Johan Ferret",
+    "Shreya Pathak",
+    "Nino Vieillard",
+    "Ramona Merhej",
+    "Sarah Perrin",
+    "Tatiana Matejovicova",
+    "Alexandre Ramé",
+    "Morgane Rivière",
+    "等 206 位作者"
+  ],
+  "year": 2025,
+  "topic_paths": [
+    "llm/pretraining",
+    "llm/architecture",
+    "llm/long-context"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v1 PDF 选段：§1、§2（结构、QK-norm、5:1 交错、长上下文与 RoPE）、§2.2 预训练（token 量、蒸馏）、§5.2–5.3（局部/全局比例消融、KV 缓存显存、长上下文）",
+    "mechanism_summary": "局部:全局 5:1，局部窗口 1024；消融 7:1 困惑度变化很小；32K 时纯全局 KV 缓存开销约 60%，局部层更多且 sw=1024 时降到 <15%（图 5；图 4 图例与图注对比例的写法不一致）；QK-norm 替代软截断；32K 预训练，末段全局层 RoPE 基频 10K→1M、缩放因子 8 扩到 128K（1B 为 32K）；蒸馏每 token 采样 256 个 logit；27B 14T、12B 12T、4B 4T token。",
+    "evidence_boundary": "未复现实验；数字取自论文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2503.19786",
+      "https://arxiv.org/pdf/2503.19786v1"
+    ],
+    "source_origin": "pretraining_field_phase3_cards",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "text",
+    "multimodal"
+  ],
+  "task_tags": [
+    "generation"
+  ]
+}

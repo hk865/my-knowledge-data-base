@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "paper_key": "arxiv-2609.19969",
+  "title": "DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression",
+  "arxiv_id": "2609.19969",
+  "version": "v1",
+  "source_url": "https://arxiv.org/abs/2609.19969v1",
+  "fulltext_url": "https://arxiv.org/pdf/2609.19969v1",
+  "accessed_at": "2026-10-04",
+  "source_pdf_sha256": "0cfdda19c8e1691b5226dd0d4949e2397051268e8a823c2fb61db94ea20c4ac0",
+  "page_count": 51,
+  "reading_status": "main_text_read",
+  "reading_coverage": {
+    "main": [
+      "Abstract and Figure 1",
+      "§1 Introduction and Figure 2",
+      "§2.1–2.5 Architecture (overview, multimodal, CED, CSA2 modes, hierarchical sparse indexer, Single-Pass mHC, Engram, DSpark, FP4 main KV, optimization)",
+      "§3.1–3.2 Infrastructure (CSA2 training, Engram, persistent KV cache, SWA Bounded Replay)",
+      "§4.1–4.3 Pre-training (data, setups, Table 1, Figure 6)",
+      "§5.1–5.3 Post-training (task synthesis, RL, async infrastructure, OPD, Tables 3–4, Figures 9–10)",
+      "§6 Conclusion, limitations and future directions"
+    ],
+    "appendices": [
+      "B scaffold and reasoning-effort details skimmed"
+    ],
+    "references": "used for provenance (YOCO, IndexCache, Kimi-K3, GLM-5)",
+    "visual_source_pages_checked": [1, 5, 7, 10, 11],
+    "method": "downloaded official PDF v1; extracted full text with PyMuPDF; rendered pages 1 and 5 to read Figure 1(b) byte values and Figure 2 curves"
+  },
+  "supplementary_official_sources": [
+    {
+      "id": "hf_config",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/raw/main/config.json",
+      "used_for": "compress_ratios (2 SWA, 18 encoder m=2, 20 decoder m=1), kv_source_layer_ids [2,8,14,20], index_source_layer_ids, candidate 2048 blocks x 8, engram_layer_ids [1,14]; no num_hash_layers field"
+    },
+    {
+      "id": "flashmla_readme",
+      "url": "https://github.com/deepseek-ai/FlashMLA",
+      "used_for": "V4.1 FP4 entry 288 B (256 B e2m1 + 32 E4M3 scales per 16 values); V4.1 FP8 entry 528 B; Q-norm only used in V4, not V4.1"
+    }
+  ],
+  "claims": [
+    {
+      "id": "scale",
+      "claim": "552B backbone + 196B Engram; 8B activated in prefill, 16B in decode; up to 1M context; 45T multimodal tokens",
+      "locator": "Abstract; §2.1 p.7; §4.2.1 pp.21–22",
+      "type": "paper_report"
+    },
+    {
+      "id": "kv_footprint",
+      "claim": "Global KV 890 bytes/token (always in HBM), ~1/4 of V4-Flash; persistent KV ~1/8 of V4-Flash; Figure 1(b): V1 389,120, V3.2 48,068, V4-Flash 3,514, V4.1-Flash 890 bytes",
+      "locator": "Abstract; Figure 1(b) p.1; §3.2.1 p.19",
+      "type": "paper_report"
+    },
+    {
+      "id": "ced",
+      "claim": "20-layer causal encoder + 20-layer decoder; decoder global KV projected from layer L/2 hidden states; prefill complexity O(NL) -> O(NL/2 + n_win L/2); inspired by YOCO",
+      "locator": "§2.2 eq.1 p.9",
+      "type": "paper_report"
+    },
+    {
+      "id": "csa2",
+      "claim": "Full / Reindex / Reuse modes; each layer keeps own query and SWA KV; CSA2 removes overlapping compression and absolute positional embedding; indexer K projected from main KV; pure CSA2 replaces CSA–HCA hybrid",
+      "locator": "§1 p.4; §2.3–2.3.1 pp.9–11",
+      "type": "paper_report"
+    },
+    {
+      "id": "layout",
+      "claim": "Layers 1–2 SWA; 18 encoder layers m=2 in 3 groups of 6 (Full + 5 Reuse); 20 decoder layers m=1 in 5 groups of 4 (first group Full, others Reindex, rest Reuse); 32 indexer heads, top-k 512; 64 query heads, head dim 512; 1 shared + 384 routed experts top-6, expert dim 2304; SwiGLU clamp 10",
+      "locator": "§4.2.1 pp.21–22",
+      "type": "paper_report"
+    },
+    {
+      "id": "hier_indexer",
+      "claim": "First decoder Full layer selects 2,048 blocks x 8 positions = 16,384 candidates; Reindex layers score only candidates; introduced in post-training, training-aware",
+      "locator": "§2.3.2 pp.11–12",
+      "type": "paper_report"
+    },
+    {
+      "id": "fp4_kv",
+      "claim": "E2M1 with one E4M3 scale per 16 channels (NVFP4 without global scale); max 448x6=2688 vs norm bound sqrt(512)~22.6, observed ~10; QAT in post-training; quantize after RoPE; SWA KV kept FP8; nearly halves storage vs V4 FP8 main KV; 'marginal' degradation",
+      "locator": "§1 p.4; §2.4.4 p.14",
+      "type": "paper_report"
+    },
+    {
+      "id": "bounded_replay",
+      "claim": "Exact SWA reconstruction needs L x n_win tokens; bounded replay uses last n_win tokens with truncated window; approximate, outputs depend on cache-hit position; 'negligible' / 'barely compromises' quality; decoder replay simulated in post-training",
+      "locator": "§1 p.5; §2.2 p.9; §3.2.2 p.20",
+      "type": "paper_report"
+    },
+    {
+      "id": "v4_deployment_pit",
+      "claim": "In V4 deployment SWA KV accounted for nearly half of persistent KV cache; V4's Zero SWA Caching exact recovery proved prohibitive in production; V4.1 moves SWA KV to 10% host-DRAM pool with minute TTL, global KV kept >=72h",
+      "locator": "§3.2.1 p.19",
+      "type": "paper_report"
+    },
+    {
+      "id": "decode_flops",
+      "claim": "Context 4K -> 1M increases single-token decode FLOPs by only 1/4; FLOPs weighted BF16/FP8/FP4 as 1/0.5/0.25",
+      "locator": "§1 p.5; Figure 2 p.5",
+      "type": "paper_report_estimate"
+    },
+    {
+      "id": "extensions",
+      "claim": "Single-Pass mHC traffic (4n+4)d -> (2n+2)d with negligible degradation; Engram 2 modules at layers 1 and 14, N-gram {2,3,4}, 8 heads, ~16M entries per head, FP8, short conv removed; DSpark 3 blocks, 5 draft positions, trained after pretraining with frozen backbone; MTP omitted in backbone pretraining",
+      "locator": "§2.1 p.8; §2.4.1–2.4.3 pp.12–14",
+      "type": "paper_report"
+    },
+    {
+      "id": "optimization",
+      "claim": "Head-wise Muon for Q and K (validated in GLM 5 and Kimi-K3); momentum + Sinkhorn balancing for embeddings, prediction head and Engram tables; Engram LR x5",
+      "locator": "§2.5 pp.14–16; §4.2.2 p.22",
+      "type": "paper_report"
+    },
+    {
+      "id": "training",
+      "claim": "Sparse attention trained from scratch at 64K without dense warmup; 1M at 34T tokens; batch 100.6M tokens; no instability; text:multimodal 7:1",
+      "locator": "§1 p.6; §4.1 p.21; §4.2.2 p.22",
+      "type": "paper_report"
+    },
+    {
+      "id": "base_eval",
+      "claim": "V4-Flash / V4-Pro / V4.1-Flash base: MMLU-Pro 68.3/73.5/74.1; SimpleQA 30.1/55.2/42.3; LongBench-V2 44.7/51.5/45.2; MGSM 85.7/84.4/80.2",
+      "locator": "Table 1 p.24",
+      "type": "paper_report"
+    },
+    {
+      "id": "posttrain_eval",
+      "claim": "DeepSWE 74.2 (V4-Flash 54.4); Terminal-Bench 2.1 90.6 (82.7); Terminal-Bench 4.0 31.2 vs Opus-5 51.8; ExploitGym 15.3 vs GPT-5.6 Sol 33.7; scaffold spread DeepSWE 65.5–74.2; no MRCR/CorpusQA reported",
+      "locator": "Table 3 p.33; Table 4 p.35",
+      "type": "paper_report"
+    },
+    {
+      "id": "post_training_recipe",
+      "claim": "No post-training algorithmic innovation; gains attributed essentially to data/environment pipelines; final OPD with over 40 teachers",
+      "locator": "§5.1 p.25; §5.2.4 p.31",
+      "type": "paper_report"
+    },
+    {
+      "id": "limitations",
+      "claim": "Robustness boundaries not fully characterized; CSA2 selection errors and approximate SWA reconstruction may degrade capability in untested boundary cases; gap to frontier closed models on hardest tasks",
+      "locator": "§6 p.37",
+      "type": "paper_report"
+    },
+    {
+      "id": "kv_bytes_handcalc",
+      "claim": "890 = 2.5 entries/token x (288 FP4 main KV + 68 MXFP4 indexer key); V4-Flash 3,514 = 21 x (584+68)/4 + 20 x 584/128",
+      "locator": "derived from FlashMLA layouts and HF configs; indexer-key bytes are an assumption",
+      "type": "derived_estimate"
+    }
+  ],
+  "boundaries": [
+    "Compression costs (FP4 KV, bounded replay, CED, CSA2 reuse) are reported only qualitatively; no ablation numbers",
+    "No measured latency, TTFT or throughput; decode FLOPs are estimates",
+    "Base comparisons change data, scale, modality and Engram simultaneously",
+    "Training compute and hardware not disclosed"
+  ],
+  "diagram": null,
+  "content_validation": {
+    "no_original_pdf_in_public_output": true,
+    "no_scraped_fulltext_in_public_output": true,
+    "not_a_verbatim_translation": true,
+    "original_explanatory_examples_labeled": true
+  }
+}

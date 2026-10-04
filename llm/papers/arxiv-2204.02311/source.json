@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2204.02311",
+  "title": "PaLM: Scaling Language Modeling with Pathways",
+  "resource_kind": "paper",
+  "canonical_folder": "llm/papers/arxiv-2204.02311",
+  "official_url": "https://arxiv.org/abs/2204.02311",
+  "official_fulltext_url": "https://arxiv.org/pdf/2204.02311",
+  "read_version": "v5",
+  "version_status": "checked_v5",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了摘要、§1、§2（结构）、§3（数据）、§4（训练基础设施）、§5（训练设置与 z-loss、5.1 训练不稳定）、§6.1（英语 NLP 任务、6.1.2 微调）；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Aakanksha Chowdhery",
+    "Sharan Narang",
+    "Jacob Devlin",
+    "Maarten Bosma",
+    "Gaurav Mishra",
+    "Adam Roberts",
+    "Paul Barham",
+    "Hyung Won Chung",
+    "Charles Sutton",
+    "Sebastian Gehrmann",
+    "等 57 位作者"
+  ],
+  "year": 2022,
+  "topic_paths": [
+    "llm/pretraining"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v5 PDF 选段：摘要、§1、§2（结构）、§3（数据）、§4（训练基础设施）、§5（训练设置与 z-loss、5.1 训练不稳定）、§6.1（英语 NLP 任务、6.1.2 微调）",
+    "mechanism_summary": "540B 稠密 decoder-only，780B token，6144 TPU v4；SwiGLU、并行层（约 15% 加速）、多查询注意力、无偏置；z-loss = 1e-4·log²Z；few-shot 29 个任务中 28 个领先；约 20 次损失尖峰，从尖峰前约 100 步重启、跳过 200–500 批；同批次从更早检查点训练不出尖峰；未找到有原则的缓解办法；6.1.2：同等训练成本下 encoder-decoder 在分类微调上通常更好。",
+    "evidence_boundary": "未复现实验；数字取自论文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2204.02311",
+      "https://arxiv.org/pdf/2204.02311v5"
+    ],
+    "source_origin": "pretraining_field_phase3_cards",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "text",
+    "code"
+  ],
+  "task_tags": [
+    "generation"
+  ]
+}

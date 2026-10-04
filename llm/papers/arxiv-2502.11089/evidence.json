@@ -1,0 +1,186 @@
+{
+  "schema_version": 1,
+  "paper_key": "arxiv-2502.11089",
+  "title": "Native Sparse Attention: Hardware-Aligned and Natively Trainable Sparse Attention",
+  "arxiv_id": "2502.11089",
+  "version": "ACL 2025 正式版（Proceedings of ACL 2025, Volume 1: Long Papers, pp. 23078–23097）；对照 arXiv v2 与 v1",
+  "source_url": "https://aclanthology.org/2025.acl-long.1126/",
+  "fulltext_url": "https://aclanthology.org/2025.acl-long.1126.pdf",
+  "arxiv_fulltext_url": "https://arxiv.org/pdf/2502.11089v2",
+  "accessed_at": "2026-10-04",
+  "source_pdf_sha256": {
+    "acl_2025": "63200b0e4ae73018c7b23968f4fffb0e6145d4fc4f61c0f36e3fe044957d1a39",
+    "arxiv_v2": "2314e53e3c122a839b14724e4a5096a208f0317d02cca21cc6962e52e070c74e",
+    "arxiv_v1": "d96f7b38fa7480cbb8add18fba1307249175865a6674583ccbd5db14b5a13aa2"
+  },
+  "page_count": {
+    "acl_2025": 20,
+    "arxiv_v2": 25
+  },
+  "reading_status": "full_text_read",
+  "reading_coverage": {
+    "main": [
+      "§1 Introduction",
+      "§2 Methodology（2.1–2.4）",
+      "§3 Experiments（3.1–3.3）",
+      "§4 Efficiency Analysis",
+      "Conclusion",
+      "Limitations（只见于 ACL 正式版）"
+    ],
+    "appendices": [
+      "A Related Works",
+      "B Rethinking Sparse Attention Methods",
+      "C Details of Backbone",
+      "D Training loss curve",
+      "E Challenges with Alternative Token Selection Strategies",
+      "F Visualization"
+    ],
+    "skipped": [
+      "G Example of AIME Results（解题样例）"
+    ],
+    "section_mapping_note": "ACL 版把 arXiv v2 的 §2（Rethinking）移到附录 B、§6.1 移到附录 E、§6.2 移到附录 F、§7 移到附录 A；arXiv 的 §3/§4/§5 对应 ACL 的 §2/§3/§4。图号不同：ACL 图 4 = 大海捞针（arXiv 图 5），ACL 图 5 = 内核速度（arXiv 图 6），ACL 图 6 = 损失曲线（arXiv 图 4）。",
+    "method": "下载 ACL 正式版与 arXiv v1、v2 的 PDF，用 PyMuPDF 抽取全文，逐版本比对数字"
+  },
+  "claims": [
+    {
+      "id": "motivation_latency",
+      "claim": "理论估算：64K 上下文解码时注意力占总延迟 70–80%",
+      "locator": "ACL §1；arXiv v2 §1 p2",
+      "type": "paper_report"
+    },
+    {
+      "id": "posthoc_coverage",
+      "claim": "引用 MagicPIG：top 20% 的注意力只覆盖约 70% 的注意力分数，检索头容易在推理时被剪掉",
+      "locator": "ACL 附录 B.2；arXiv v2 §2.2 p4",
+      "type": "paper_citation"
+    },
+    {
+      "id": "framework",
+      "claim": "输出 = Σ_{cmp,slc,win} 门值 × Attn；门值由 MLP + sigmoid 得到；三路有独立的 K、V",
+      "locator": "ACL §2.2 式 5、§2.3.3；arXiv v2 §3.2、§3.3.3",
+      "type": "paper_report"
+    },
+    {
+      "id": "selection",
+      "claim": "选择块分数由压缩分支的注意力分数换算（式 8–9），GQA 组内各头相加（式 10），取 top-n 块（式 11–12）",
+      "locator": "ACL §2.3.2；arXiv v2 §3.3.2 p7–8",
+      "type": "paper_report"
+    },
+    {
+      "id": "hyperparams",
+      "claim": "l=32，d=16，l′=64，n=16（含固定的开头 1 块与最近 2 块），w=512",
+      "locator": "ACL §3.1；arXiv v2 §4.1 p10",
+      "type": "paper_report"
+    },
+    {
+      "id": "backbone",
+      "claim": "27B 总参数、3B 激活；30 层，隐藏维度 2560；GQA 4 组共 64 头；dq=dk=192、dv=128；DeepSeekMoE 72 路由 + 2 共享、top-6；第一层 MoE 换成 SwiGLU MLP 以保证训练稳定",
+      "locator": "ACL 附录 C；arXiv v2 §4.1 p9",
+      "type": "paper_report"
+    },
+    {
+      "id": "pretrain_tokens",
+      "claim": "两个模型都在 8K 长度文本上预训练 270B token，再在 32K 上用 YaRN 继续训练并 SFT。引言写作 260B token；arXiv v1、v2 与 ACL 版都有这一内部不一致。精读取实验设置一节的 270B。",
+      "locator": "270B：ACL §3.1 p6、arXiv v2 §4.1 p10、arXiv v1 §4.1；260B：ACL §1 p2、arXiv v2 §1 p3、arXiv v1 §1",
+      "type": "paper_report_internal_inconsistency"
+    },
+    {
+      "id": "general_eval",
+      "claim": "表 1 平均 0.456（NSA）对 0.443（全注意力），9 项中 7 项更高；GSM8K +0.034，DROP +0.042",
+      "locator": "ACL 表 1、§3.3；arXiv v2 表 1 p10",
+      "type": "paper_report"
+    },
+    {
+      "id": "longbench",
+      "claim": "LongBench 平均：NSA 0.469，全注意力 0.437，Exact-Top 0.423，Quest 0.392，InfLLM 0.383，H2O 0.303；基线预算 2560 token 等于 NSA 在 32K 上的平均读取量；剔除了所有模型都低分的子集",
+      "locator": "ACL 表 2、§3.3；arXiv v2 表 2 p11–12",
+      "type": "paper_report"
+    },
+    {
+      "id": "niah",
+      "claim": "64K 大海捞针全部位置找回",
+      "locator": "ACL 图 4；arXiv v2 图 5 p12",
+      "type": "paper_report"
+    },
+    {
+      "id": "aime",
+      "claim": "用 DeepSeek-R1 的 10B token、32K 长度数学推理轨迹做蒸馏 SFT；AIME 24 在 8K 上限 0.121 对 0.046，16K 上限 0.146 对 0.092；每题 16 个样本，温度 0.7、top-p 0.95",
+      "locator": "ACL 表 3、§3.3；arXiv v2 表 3 p12–13",
+      "type": "paper_report"
+    },
+    {
+      "id": "kernel_speed",
+      "claim": "A100 上 Triton 内核对 Triton 版 FlashAttention-2：8K/16K/32K/64K 前向 2.1/3.8/6.3/9.0 倍，反向 1.1/2.0/3.4/6.0 倍",
+      "locator": "ACL 图 5、§4.1；arXiv v2 图 6、§5.1 p13",
+      "type": "paper_report"
+    },
+    {
+      "id": "decode_access",
+      "claim": "每次解码的访存量（等效 token 数）：NSA 2048/2560/3584/5632，全注意力 8192/16384/32768/65536；预期加速 4/6.4/9.1/11.6 倍",
+      "locator": "ACL 表 4、§4.2；arXiv v2 表 4 p14",
+      "type": "paper_report"
+    },
+    {
+      "id": "alt_selection",
+      "claim": "3B 模型上，用 KL 散度监督的辅助损失打分器与 Quest 式免参数打分（含先用全注意力 1000 步的冷启动）的训练损失都高于 NSA",
+      "locator": "ACL 附录 E 图 7；arXiv v2 §6.1 图 7 p15",
+      "type": "paper_report"
+    },
+    {
+      "id": "limitations",
+      "claim": "只研究单层内的稀疏，跨层稀疏留待以后；Triton 实现比原生 CUDA 内核多一层抽象开销",
+      "locator": "ACL Limitations p9（arXiv v2 无此节）",
+      "type": "paper_report"
+    },
+    {
+      "id": "handcalc_reads",
+      "claim": "手算复现表 4：64K 时 4094+1024+512=5630，8K 时 510+1024+512=2046；选中块与窗口共 1536 个 token 的固定开销使 s 约 1.6K 以下时读取量超过全注意力",
+      "locator": "reading.md 机制第 6 小节",
+      "type": "original_calculation"
+    },
+    {
+      "id": "later_dsa",
+      "claim": "V3.2-Exp 官方 README 称 DSA 首次实现细粒度稀疏注意力；Kimi Linear §7.1 称 DSA 回到 token 级稀疏，并认为 NSA 的效率依赖头数较多的 GQA",
+      "locator": "https://github.com/deepseek-ai/DeepSeek-V3.2-Exp README；arXiv:2510.26692 §7.1",
+      "type": "later_work"
+    },
+    {
+      "id": "later_v4",
+      "claim": "V4 的 CSA 每 4 个 token 压成一项，在压缩项上做 DSA 式 top-k，另加 128 token 滑动窗口分支",
+      "locator": "arXiv:2606.19348 §2.3、§4.2.1",
+      "type": "later_work"
+    },
+    {
+      "id": "later_v41",
+      "claim": "V4.1-Flash：稀疏注意力降低计算后，存储与搬运成为更突出的瓶颈；跨层复用 KV 与索引；分层稀疏索引器以 2048 块 × 8 位置为候选池；结论提醒 CSA2 选择误差可能在未测试的边界情形下损害能力",
+      "locator": "arXiv:2609.19969 §1、§2.3.1–2.3.2、§6",
+      "type": "later_work"
+    },
+    {
+      "id": "minimax_blog",
+      "claim": "MiniMax 预训练负责人：线性注意力混合模型在 MMLU/BBH/MATH/LongBench 上看似与全注意力相当，规模放大后暴露多跳推理缺陷；M2 采用全注意力",
+      "locator": "https://www.minimax.io/news/why-did-m2-end-up-as-a-full-attention-model（2025-10-29）第 III、V 节",
+      "type": "official_blog_other_team"
+    }
+  ],
+  "boundaries": [
+    "实验只在 27B/3B 规模、64K 以内",
+    "加速比是 A100 上的内核级对比或由访存量推出，不是端到端吞吐",
+    "原文未讨论 KV 缓存的存储量；精读中'选择分支仍需保存全长原始 K、V'是按结构推算的判断",
+    "单次训练对比，没有方差"
+  ],
+  "diagram": {
+    "original": true,
+    "format": [
+      "svg"
+    ],
+    "visual_qa": "在浏览器中渲染，逐条检查文字边界框未越出分支框与画布",
+    "path": "figures/nsa-three-branches.svg"
+  },
+  "content_validation": {
+    "no_original_pdf_in_public_output": true,
+    "no_scraped_fulltext_in_public_output": true,
+    "not_a_verbatim_translation": true,
+    "original_explanatory_examples_labeled": true
+  }
+}

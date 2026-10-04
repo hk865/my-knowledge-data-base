@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2201.11903",
+  "title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+  "resource_kind": "paper",
+  "canonical_folder": "llm/papers/arxiv-2201.11903",
+  "official_url": "https://arxiv.org/abs/2201.11903",
+  "official_fulltext_url": "https://arxiv.org/pdf/2201.11903",
+  "read_version": "v6",
+  "version_status": "checked_v6",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了 arXiv 摘要页（v6）与 PDF 正文 §1、§3.1–3.2、§6、§8、Table 1、Figure 2；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Jason Wei",
+    "Xuezhi Wang",
+    "Dale Schuurmans",
+    "Maarten Bosma",
+    "Brian Ichter",
+    "Fei Xia",
+    "Ed H. Chi",
+    "Quoc V. Le",
+    "Denny Zhou"
+  ],
+  "year": 2022,
+  "topic_paths": [
+    "llm/inference"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "文献卡。核验了 arXiv 摘要页（v6）与 PDF 正文 §1、§3.1–3.2、§6、§8、Table 1、Figure 2；不是独立全文精读，未复现。",
+    "mechanism_summary": "示例改为 ⟨输入, 推理链, 输出⟩；PaLM 540B GSM8K 17.9→56.9（标准提示 vs CoT，8 个示例、贪心），此前最好 55（微调 GPT-3 + verifier）；约 100B 以上才有收益；局限：不保证推理正确、微调标注成本高、大模型部署贵。",
+    "evidence_boundary": "未复现实验；数字取自原文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2201.11903",
+      "https://arxiv.org/pdf/2201.11903v6"
+    ],
+    "source_origin": "inference_longcontext_field_rewrite",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "generation"
+  ]
+}

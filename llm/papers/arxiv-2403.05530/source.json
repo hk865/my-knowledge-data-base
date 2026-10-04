@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2403.05530",
+  "title": "Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context",
+  "resource_kind": "official_technical_report",
+  "canonical_folder": "llm/papers/arxiv-2403.05530",
+  "official_url": "https://arxiv.org/abs/2403.05530",
+  "official_fulltext_url": "https://arxiv.org/pdf/2403.05530",
+  "read_version": "v5",
+  "version_status": "checked_v5",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "官方技术报告。核验了 arXiv 摘要页（v5）与正文 §1、§3.1–3.2、§5 开头、§5.2.1（文本/视频/音频/多针）、§5.2.2.1（MTOB）、§10、Table 4–5；作者总数与是否开放未核实；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Gemini Team, Google",
+    "Petko Georgiev",
+    "Ving Ian Lei",
+    "Ryan Burnell",
+    "Libin Bai",
+    "Anmol Gulati",
+    "Garrett Tanzer",
+    "Damien Vincent",
+    "Zhufeng Pan",
+    "Shibo Wang",
+    "等约 1100 位作者"
+  ],
+  "year": 2024,
+  "topic_paths": [
+    "llm/long-context"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "官方技术报告。核验了 arXiv 摘要页（v5）与正文 §1、§3.1–3.2、§5 开头、§5.2.1（文本/视频/音频/多针）、§5.2.2.1（MTOB）、§10、Table 4–5；作者总数与是否开放未核实；不是独立全文精读，未复现。",
+    "mechanism_summary": "稀疏 MoE，长上下文架构细节未公开；文本 NIAH 530K 内 100%、1M >99.7%、10M 99.2%；视频 10.5h、音频 107h；100 针时 128K 内约 70%、1M >60%（GPT-4 Turbo 128K 约 50%）；Kalamang eng→kgv 5.46 vs 人类 5.60；呼吁多针与复杂推理评测。",
+    "evidence_boundary": "未复现实验；数字取自原文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2403.05530",
+      "https://arxiv.org/html/2403.05530v5"
+    ],
+    "source_origin": "inference_longcontext_field_rewrite",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "text",
+    "video",
+    "audio",
+    "multimodal"
+  ],
+  "task_tags": [
+    "understanding",
+    "generation"
+  ]
+}

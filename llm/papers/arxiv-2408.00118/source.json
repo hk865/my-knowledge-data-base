@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2408.00118",
+  "title": "Gemma 2: Improving Open Language Models at a Practical Size",
+  "resource_kind": "paper",
+  "canonical_folder": "llm/papers/arxiv-2408.00118",
+  "official_url": "https://arxiv.org/abs/2408.00118",
+  "official_fulltext_url": "https://arxiv.org/pdf/2408.00118",
+  "read_version": "v3",
+  "version_status": "checked_v3",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了§1、§2（结构：局部/全局交替、logit 软截断）、§3（预训练数据量、3.2 知识蒸馏）、§5 消融（蒸馏对从头训练、滑动窗口）、§9 结论；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Gemma Team",
+    "Morgane Riviere",
+    "Shreya Pathak",
+    "Pier Giuseppe Sessa",
+    "Cassidy Hardin",
+    "Surya Bhupatiraju",
+    "Léonard Hussenot",
+    "Thomas Mesnard",
+    "Bobak Shahriari",
+    "Alexandre Ramé",
+    "等 188 位作者"
+  ],
+  "year": 2024,
+  "topic_paths": [
+    "llm/pretraining",
+    "llm/architecture"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v3 PDF 选段：§1、§2（结构：局部/全局交替、logit 软截断）、§3（预训练数据量、3.2 知识蒸馏）、§5 消融（蒸馏对从头训练、滑动窗口）、§9 结论",
+    "mechanism_summary": "2B/9B 以 27B 教师分布蒸馏，token 量超过计算最优 50 倍以上；27B 13T、9B 8T、2B 2T token；每隔一层局部（4096）/全局（8192）；GQA；logit soft-capping 注意力 50、最终层 30；动机：小模型仍训练不足（引言）；Table 6：2B 蒸馏（7B 教师）优于从头训练。",
+    "evidence_boundary": "未复现实验；数字取自论文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2408.00118",
+      "https://arxiv.org/pdf/2408.00118v3"
+    ],
+    "source_origin": "pretraining_field_phase3_cards",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "generation"
+  ]
+}

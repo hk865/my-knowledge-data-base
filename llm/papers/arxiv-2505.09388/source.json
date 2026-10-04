@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2505.09388",
+  "title": "Qwen3 Technical Report",
+  "resource_kind": "paper",
+  "canonical_folder": "llm/papers/arxiv-2505.09388",
+  "official_url": "https://arxiv.org/abs/2505.09388",
+  "official_fulltext_url": "https://arxiv.org/pdf/2505.09388",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了§1、§2（结构，Table 1–2）、§3（预训练数据、三阶段预训练、超参规模定律）；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "An Yang",
+    "Anfeng Li",
+    "Baosong Yang",
+    "Beichen Zhang",
+    "Binyuan Hui",
+    "Bo Zheng",
+    "Bowen Yu",
+    "Chang Gao",
+    "Chengen Huang",
+    "Chenxu Lv",
+    "等 50 位作者"
+  ],
+  "year": 2025,
+  "topic_paths": [
+    "llm/pretraining",
+    "llm/posttraining/sft",
+    "llm/posttraining/rl"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v1 PDF 选段：§1、§2（结构，Table 1–2）、§3（预训练数据、三阶段预训练、超参规模定律）",
+    "mechanism_summary": "约 36T token、119 种语言；Qwen2.5-VL 抽取 PDF 文本，Qwen2.5-Math/Coder 合成数据；S1 >30T @4,096，S2 约 5T 高质量（STEM/代码/推理/合成）并加快学习率衰减，S3 数千亿 token @32,768，ABF 基频 10,000→1,000,000，YaRN+DCA 推理时 4 倍；去掉 QKV 偏置、加 QK-Norm；MoE 128 专家激活 8、无共享专家、全局批次负载均衡损失；分阶段的超参规模定律；旗舰 235B-A22B。",
+    "evidence_boundary": "未复现实验；数字取自论文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2505.09388",
+      "https://arxiv.org/pdf/2505.09388v1"
+    ],
+    "source_origin": "pretraining_field_phase3_cards",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "text",
+    "code"
+  ],
+  "task_tags": [
+    "generation"
+  ]
+}

@@ -10,16 +10,16 @@
 - [Large Language Monkeys: Scaling Inference Compute with Repeated Sampling](papers/arxiv-2407.21787/README.md) · 2024 · 文献卡，暂无独立精读
 - [Qwen2 Technical Report](papers/arxiv-2407.10671/README.md) · 2024 · 文献卡，暂无独立精读
 - [Qwen2.5 Technical Report](papers/arxiv-2412.15115/README.md) · 2024 · 文献卡，暂无独立精读
-- [DeepSeek-V3 Technical Report](papers/arxiv-2412.19437/README.md) · 2024 · 文献卡，暂无独立精读
+- [DeepSeek-V3 Technical Report](papers/arxiv-2412.19437/README.md) · 2024 · 技术精读
 - [Qwen2.5-1M Technical Report](papers/qwen2.5-1m/README.md) · 2025 · 技术精读
 - [Mamba: Linear-Time Sequence Modeling with Selective State Spaces](papers/mamba/README.md) · 2023 · 技术精读
 - [OLMo: Accelerating the Science of Language Models](papers/arxiv-2402.00838/README.md) · 2024 · 文献卡，暂无独立精读
 - [DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](papers/arxiv-2501.12948/README.md) · 2025 · 文献卡，暂无独立精读
 - [Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity](papers/arxiv-2101.03961/README.md) · 2021 · 文献卡，暂无独立精读
 - [Resurrecting Recurrent Neural Networks for Long Sequences](papers/arxiv-2303.06349/README.md) · 2023 · 文献卡，暂无独立精读
-- [DeepSeekMoE: Towards Ultimate Expert Specialization in Mixture-of-Experts Language Models](papers/arxiv-2401.06066/README.md) · 2024 · 文献卡，暂无独立精读
+- [DeepSeekMoE: Towards Ultimate Expert Specialization in Mixture-of-Experts Language Models](papers/arxiv-2401.06066/README.md) · 2024 · 技术精读
 - [DeepSeek-V2: A Strong, Economical, and Efficient Mixture-of-Experts Language Model](papers/deepseek-v2/README.md) · 2024 · 技术精读
-- [Conditional Memory via Scalable Lookup: A New Axis of Sparsity for Large Language Models](papers/arxiv-2601.07372/README.md) · 2026 · 文献卡，暂无独立精读
+- [Conditional Memory via Scalable Lookup: A New Axis of Sparsity for Large Language Models](papers/arxiv-2601.07372/README.md) · 2026 · 技术精读
 - [Tokenizer-Agnostic Engram Module](papers/arxiv-2607.29065/README.md) · 2026 · 文献卡，暂无独立精读
 - [Frozen Memory Is Not Enough: Rethinking External Memory as Extraction](papers/arxiv-2608.17050/README.md) · 2026 · 文献卡，暂无独立精读
 - [Forest-of-Thought: Scaling Test-Time Compute for Enhancing LLM Reasoning](papers/arxiv-2412.09078/README.md) · 2024 · 文献卡，暂无独立精读
@@ -64,7 +64,66 @@
 - [Gated Attention for Large Language Models: Non-linearity, Sparsity, and Attention-Sink-Free](papers/arxiv-2505.06708/README.md) · 2025 · 文献卡，暂无独立精读
 - [Kimi K2: Open Agentic Intelligence](papers/arxiv-2507.20534/README.md) · 2025 · 文献卡，暂无独立精读
 - [Kimi Linear: An Expressive, Efficient Attention Architecture](papers/arxiv-2510.26692/README.md) · 2025 · 文献卡，暂无独立精读
-- [mHC: Manifold-Constrained Hyper-Connections](papers/arxiv-2512.24880/README.md) · 2025 · 文献卡，暂无独立精读
+- [mHC: Manifold-Constrained Hyper-Connections](papers/arxiv-2512.24880/README.md) · 2025 · 技术精读
 - [Attention Residuals](papers/arxiv-2603.15031/README.md) · 2026 · 文献卡，暂无独立精读
-- [DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence](papers/arxiv-2606.19348/README.md) · 2026 · 文献卡，暂无独立精读
+- [DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence](papers/arxiv-2606.19348/README.md) · 2026 · 技术精读
 - [Kimi K3: Open Frontier Intelligence](papers/arxiv-2607.24653/README.md) · 2026 · 文献卡，暂无独立精读
+- [Deep reinforcement learning from human preferences](papers/arxiv-1706.03741/README.md) · 2017 · 文献卡，暂无独立精读
+- [Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer](papers/arxiv-1910.10683/README.md) · 2019 · 文献卡，暂无独立精读
+- [Fast Transformer Decoding: One Write-Head is All You Need](papers/arxiv-1911.02150/README.md) · 2019 · 文献卡，暂无独立精读
+- [On Layer Normalization in the Transformer Architecture](papers/arxiv-2002.04745/README.md) · 2020 · 文献卡，暂无独立精读
+- [Transformers are RNNs: Fast Autoregressive Transformers with Linear Attention](papers/arxiv-2006.16236/README.md) · 2020 · 文献卡，暂无独立精读
+- [Learning to summarize from human feedback](papers/arxiv-2009.01325/README.md) · 2020 · 文献卡，暂无独立精读
+- [RoFormer: Enhanced Transformer with Rotary Position Embedding](papers/arxiv-2104.09864/README.md) · 2021 · 文献卡，暂无独立精读
+- [Finetuned Language Models Are Zero-Shot Learners](papers/arxiv-2109.01652/README.md) · 2021 · 文献卡，暂无独立精读
+- [Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](papers/arxiv-2201.11903/README.md) · 2022 · 文献卡，暂无独立精读
+- [Self-Consistency Improves Chain of Thought Reasoning in Language Models](papers/arxiv-2203.11171/README.md) · 2022 · 文献卡，暂无独立精读
+- [PaLM: Scaling Language Modeling with Pathways](papers/arxiv-2204.02311/README.md) · 2022 · 文献卡，暂无独立精读
+- [Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback](papers/arxiv-2204.05862/README.md) · 2022 · 文献卡，暂无独立精读
+- [Scaling Laws for Reward Model Overoptimization](papers/arxiv-2210.10760/README.md) · 2022 · 文献卡，暂无独立精读
+- [Scaling Instruction-Finetuned Language Models](papers/arxiv-2210.11416/README.md) · 2022 · 文献卡，暂无独立精读
+- [Constitutional AI: Harmlessness from AI Feedback](papers/arxiv-2212.08073/README.md) · 2022 · 文献卡，暂无独立精读
+- [Self-Instruct: Aligning Language Models with Self-Generated Instructions](papers/arxiv-2212.10560/README.md) · 2022 · 文献卡，暂无独立精读
+- [GPT-4 Technical Report](papers/arxiv-2303.08774/README.md) · 2023 · 文献卡，暂无独立精读
+- [LIMA: Less Is More for Alignment](papers/arxiv-2305.11206/README.md) · 2023 · 文献卡，暂无独立精读
+- [GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints](papers/arxiv-2305.13245/README.md) · 2023 · 文献卡，暂无独立精读
+- [Let's Verify Step by Step](papers/arxiv-2305.20050/README.md) · 2023 · 文献卡，暂无独立精读
+- [Extending Context Window of Large Language Models via Positional Interpolation](papers/arxiv-2306.15595/README.md) · 2023 · 文献卡，暂无独立精读
+- [Lost in the Middle: How Language Models Use Long Contexts](papers/arxiv-2307.03172/README.md) · 2023 · 文献卡，暂无独立精读
+- [Llama 2: Open Foundation and Fine-Tuned Chat Models](papers/arxiv-2307.09288/README.md) · 2023 · 文献卡，暂无独立精读
+- [YaRN: Efficient Context Window Extension of Large Language Models](papers/arxiv-2309.00071/README.md) · 2023 · 文献卡，暂无独立精读
+- [Efficient Memory Management for Large Language Model Serving with PagedAttention](papers/arxiv-2309.06180/README.md) · 2023 · 文献卡，暂无独立精读
+- [Small-scale proxies for large-scale Transformer training instabilities](papers/arxiv-2309.14322/README.md) · 2023 · 文献卡，暂无独立精读
+- [Effective Long-Context Scaling of Foundation Models](papers/arxiv-2309.16039/README.md) · 2023 · 文献卡，暂无独立精读
+- [Efficient Streaming Language Models with Attention Sinks](papers/arxiv-2309.17453/README.md) · 2023 · 文献卡，暂无独立精读
+- [A Long Way to Go: Investigating Length Correlations in RLHF](papers/arxiv-2310.03716/README.md) · 2023 · 文献卡，暂无独立精读
+- [A General Theoretical Paradigm to Understand Learning from Human Preferences](papers/arxiv-2310.12036/README.md) · 2023 · 文献卡，暂无独立精读
+- [Zephyr: Direct Distillation of LM Alignment](papers/arxiv-2310.16944/README.md) · 2023 · 文献卡，暂无独立精读
+- [Repeat After Me: Transformers are Better than State Space Models at Copying](papers/arxiv-2402.01032/README.md) · 2024 · 文献卡，暂无独立精读
+- [KIVI: A Tuning-Free Asymmetric 2bit Quantization for KV Cache](papers/arxiv-2402.02750/README.md) · 2024 · 文献卡，暂无独立精读
+- [DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models](papers/arxiv-2402.03300/README.md) · 2024 · 文献卡，暂无独立精读
+- [Simple linear attention language models balance the recall-throughput tradeoff](papers/arxiv-2402.18668/README.md) · 2024 · 文献卡，暂无独立精读
+- [Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context](papers/arxiv-2403.05530/README.md) · 2024 · 文献卡，暂无独立精读
+- [Jamba: A Hybrid Transformer-Mamba Language Model](papers/arxiv-2403.19887/README.md) · 2024 · 文献卡，暂无独立精读
+- [RULER: What's the Real Context Size of Your Long-Context Language Models?](papers/arxiv-2404.06654/README.md) · 2024 · 文献卡，暂无独立精读
+- [Is DPO Superior to PPO for LLM Alignment? A Comprehensive Study](papers/arxiv-2404.10719/README.md) · 2024 · 文献卡，暂无独立精读
+- [Does Fine-Tuning LLMs on New Knowledge Encourage Hallucinations?](papers/arxiv-2405.05904/README.md) · 2024 · 文献卡，暂无独立精读
+- [SimPO: Simple Preference Optimization with a Reference-Free Reward](papers/arxiv-2405.14734/README.md) · 2024 · 文献卡，暂无独立精读
+- [The Llama 3 Herd of Models](papers/arxiv-2407.21783/README.md) · 2024 · 文献卡，暂无独立精读
+- [Gemma 2: Improving Open Language Models at a Practical Size](papers/arxiv-2408.00118/README.md) · 2024 · 文献卡，暂无独立精读
+- [Hyper-Connections](papers/arxiv-2409.19606/README.md) · 2024 · 文献卡，暂无独立精读
+- [Tulu 3: Pushing Frontiers in Open Language Model Post-Training](papers/arxiv-2411.15124/README.md) · 2024 · 文献卡，暂无独立精读
+- [OpenAI o1 System Card](papers/arxiv-2412.16720/README.md) · 2024 · 文献卡，暂无独立精读
+- [2 OLMo 2 Furious](papers/arxiv-2501.00656/README.md) · 2024 · 文献卡，暂无独立精读
+- [Kimi k1.5: Scaling Reinforcement Learning with LLMs](papers/arxiv-2501.12599/README.md) · 2025 · 文献卡，暂无独立精读
+- [SFT Memorizes, RL Generalizes: A Comparative Study of Foundation Model Post-training](papers/arxiv-2501.17161/README.md) · 2025 · 文献卡，暂无独立精读
+- [Native Sparse Attention: Hardware-Aligned and Natively Trainable Sparse Attention](papers/arxiv-2502.11089/README.md) · 2025 · 技术精读
+- [DAPO: An Open-Source LLM Reinforcement Learning System at Scale](papers/arxiv-2503.14476/README.md) · 2025 · 文献卡，暂无独立精读
+- [Gemma 3 Technical Report](papers/arxiv-2503.19786/README.md) · 2025 · 文献卡，暂无独立精读
+- [Understanding R1-Zero-Like Training: A Critical Perspective](papers/arxiv-2503.20783/README.md) · 2025 · 文献卡，暂无独立精读
+- [Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?](papers/arxiv-2504.13837/README.md) · 2025 · 文献卡，暂无独立精读
+- [Qwen3 Technical Report](papers/arxiv-2505.09388/README.md) · 2025 · 文献卡，暂无独立精读
+- [The Entropy Mechanism of Reinforcement Learning for Reasoning Language Models](papers/arxiv-2505.22617/README.md) · 2025 · 文献卡，暂无独立精读
+- [DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models](papers/arxiv-2512.02556/README.md) · 2025 · 技术精读
+- [DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression](papers/arxiv-2609.19969/README.md) · 2026 · 技术精读
+- [Learning to reason with LLMs](papers/openai-o1/README.md) · 2024 · 文献卡，暂无独立精读

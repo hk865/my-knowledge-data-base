@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "resource_id": "url:https://openai.com/index/learning-to-reason-with-llms/",
+  "title": "Learning to reason with LLMs",
+  "resource_kind": "official_blog",
+  "canonical_folder": "llm/papers/openai-o1",
+  "official_url": "https://openai.com/index/learning-to-reason-with-llms/",
+  "official_fulltext_url": "https://openai.com/index/learning-to-reason-with-llms/",
+  "read_version": "2024-09-12",
+  "version_status": "checked_page_2024-09-12",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "官方博客。核验了 2024-09-12 页面正文、\"Hiding the Chains of Thought\"一节与 Appendix A 表格；结构与训练细节原文未公开。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "OpenAI"
+  ],
+  "year": 2024,
+  "topic_paths": [
+    "llm/inference",
+    "llm/posttraining/rl"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "官方博客。核验了 2024-09-12 页面正文、\"Hiding the Chains of Thought\"一节与 Appendix A 表格；结构与训练细节原文未公开。",
+    "mechanism_summary": "o1 性能随 RL 训练算力与思考时间平滑提升；AIME 2024：GPT-4o 12%（附表 pass@1 9.3），o1 74%/83%（cons@64）/93%（1000 样本重排）；Codeforces 第 89 百分位（Elo 1673）；IOI 专训模型另计；不展示原始 CoT，改展示摘要；o1-preview 在部分自然语言任务上不受偏好。",
+    "evidence_boundary": "未复现实验；数字取自原文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://openai.com/index/learning-to-reason-with-llms/"
+    ],
+    "source_origin": "inference_longcontext_field_rewrite",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "text",
+    "code"
+  ],
+  "task_tags": [
+    "generation"
+  ]
+}

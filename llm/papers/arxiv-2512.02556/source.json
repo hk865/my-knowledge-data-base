@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2512.02556",
+  "title": "DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models",
+  "resource_kind": "paper",
+  "canonical_folder": "llm/papers/arxiv-2512.02556",
+  "official_url": "https://arxiv.org/abs/2512.02556",
+  "official_fulltext_url": "https://arxiv.org/pdf/2512.02556",
+  "read_version": "v1",
+  "version_status": "checked_v1",
+  "reading_depth": "architecture_full_read_posttraining_partial_with_evidence_audit",
+  "teaching_status": "technical_reading",
+  "content_kind": "reading",
+  "reading_path": "reading.md",
+  "reading_boundary": "技术精读，侧重架构。通读 §1、§2（DSA、继续预训练、对照评测、推理成本）、§3.1、§4.1 与 §4.4 中和上下文上限相关的部分、§5、附录 A；另读官方 config.json、推理示例代码与 V3.2-Exp 仓库 README；§4.2–4.3 与附录 B–D 未展开；未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [
+    "llm/papers/arxiv-2512.02556/evidence.json"
+  ],
+  "authors": [
+    "DeepSeek-AI",
+    "Aixin Liu",
+    "Aoxue Mei",
+    "Bangcai Lin",
+    "Bing Xue",
+    "Bingxuan Wang",
+    "Bingzheng Xu",
+    "Bochao Wu",
+    "Bowei Zhang",
+    "Chaofan Lin",
+    "等 254 位作者"
+  ],
+  "year": 2025,
+  "topic_paths": [
+    "llm/pretraining",
+    "llm/architecture",
+    "llm/posttraining/rl"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v1 PDF 选段：§1、§2（DSA、在 MLA 下实例化、稠密预热与稀疏训练两段、复杂度）、§4 的搜索智能体与工具调用评测说明、§5 结论与局限",
+    "mechanism_summary": "从 V3.1-Terminus（128K）继续预训练；DSA = 闪电索引器 + top-k（2048）KV；MLA 的 MQA 模式；稠密预热 1000 步 × 16 × 128K = 2.1B token；稀疏训练 943.7B token；主注意力 O(L²)→O(Lk)，索引器仍 O(L²)；后训练 RL 算力 >10% 预训练成本；局限：世界知识广度落后、token 效率、复杂任务；128K 上限使 20%+ 搜索测试超长。",
+    "evidence_boundary": "未复现实验；数字取自论文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2512.02556",
+      "https://arxiv.org/pdf/2512.02556v1"
+    ],
+    "source_origin": "pretraining_field_phase3_cards",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "text",
+    "code"
+  ],
+  "task_tags": [
+    "generation"
+  ]
+}

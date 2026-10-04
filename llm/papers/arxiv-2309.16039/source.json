@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2309.16039",
+  "title": "Effective Long-Context Scaling of Foundation Models",
+  "resource_kind": "paper",
+  "canonical_folder": "llm/papers/arxiv-2309.16039",
+  "official_url": "https://arxiv.org/abs/2309.16039",
+  "official_fulltext_url": "https://arxiv.org/pdf/2309.16039",
+  "read_version": "v3",
+  "version_status": "checked_v3",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了 arXiv 摘要页（v3）与正文 §1、§2.1–2.2、§3.1、§4.1、§4.2、§4.4、§5、§6、Table 1、Table 4；模型是否开放未核实；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Wenhan Xiong",
+    "Jingyu Liu",
+    "Igor Molybog",
+    "Hejia Zhang",
+    "Prajjwal Bhargava",
+    "Rui Hou",
+    "Louis Martin",
+    "Rashi Rungta",
+    "Karthik Abinav Sankararaman",
+    "Barlas Oguz",
+    "等 21 位作者"
+  ],
+  "year": 2023,
+  "topic_paths": [
+    "llm/long-context",
+    "llm/pretraining"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "文献卡。核验了 arXiv 摘要页（v3）与正文 §1、§2.1–2.2、§3.1、§4.1、§4.2、§4.4、§5、§6、Table 1、Table 4；模型是否开放未核实；不是独立全文精读，未复现。",
+    "mechanism_summary": "持续预训练 400B token；7B/13B 32,768、34B/70B 16,384；ABF 基频 10,000→500,000；长度分布调整无明显收益、质量更重要；继续训练省约 40% FLOPs；70B MMLU 71.7 vs 68.9；ZeroSCROLLS 37.7 vs gpt-3.5-turbo-16k 36.7、Claude 39.1；局限：功能有限、tokenizer 多约 10% token、幻觉。",
+    "evidence_boundary": "未复现实验；数字取自原文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2309.16039",
+      "https://arxiv.org/html/2309.16039"
+    ],
+    "source_origin": "inference_longcontext_field_rewrite",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "generation"
+  ]
+}

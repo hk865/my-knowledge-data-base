@@ -1,23 +1,51 @@
-# 监督微调 SFT：阅读与问题路线
+# SFT 路线图
 
-[回到入门](README.md) · [Baseline](BASELINES.md) · [全部文献](PAPERS.md)
+> 状态：路线图 · v1
 
-## 第一步：限定问题
+[入门页](README.md) · [Baseline](BASELINES.md) · [论文目录](PAPERS.md) · [后训练总览](../README.md)
 
-监督微调用示范告诉模型在什么上下文里产生什么回应。理解它时要同时看数据的角色标记、损失掩码、示范质量和部署任务，而不能只把它当成继续训练若干轮。
+结论：五步，按"先会构造一条 SFT 样本 → 知道示范从哪来、要多少 → 知道什么不该教 → 看 SFT 怎样变成冷启动与蒸馏 → 在受控实验里比较 SFT 与 RL"排列。每一步有一个能动手检验的问题。
 
-## 第二步：沿具体文章拆机制
+## 第 1 步：一条 SFT 样本怎样变成损失
 
-[Language Models are Few-Shot Learners](../../../papers/gpt3/README.md) → [Training language models to follow instructions with human feedback](../../../papers/instructgpt/README.md)
+读 [InstructGPT 精读](../../../papers/instructgpt/reading.md)第 3–4 节，对照[自监督与生成目标](../../../../foundations/lessons/modules/objectives/03-pretraining-objectives.md)第 2–3 节。
 
-这个次序是教学建议，表示先理解的概念与后续比较对象，不表示作者之间存在直接技术继承。
+为什么在这里：SFT 与预训练用同一个损失，区别只在"哪些 token 参与计算"；不先弄清这一点，后面的模板、打包、格式 token 问题都无从谈起。精读第 4.3 节还会让你看到第一个坑：验证损失与人评分开走。
 
-## 第三步：做能检验理解的工作
+检验：给一段两轮对话（用户、助手、用户、助手）标出哪些 token 参与损失；再说明把三条短对话打包进一个序列时，为什么要额外的掩码让它们互相不可见（DeepSeek-V3 §5.1）。
 
-给一个多轮对话标出仅对回答计算损失的token，再对照InstructGPT的SFT阶段。
+## 第 2 步：示范从哪来、要多少
 
-## 第四步：保留边界
+读 [FLAN](../../../papers/arxiv-2109.01652/README.md) → [Flan-PaLM](../../../papers/arxiv-2210.11416/README.md) → [LIMA](../../../papers/arxiv-2305.11206/README.md)，再读 [Llama 2](../../../papers/arxiv-2307.09288/README.md) 第 3.1 节。
 
-SFT拟合示范；偏好学习利用回答之间的比较。两者可以顺序组合，但监督对象不同。
+为什么在这里：这四篇给出了示范来源与规模的两极：1,836 个任务的公开数据，与 1,000 条、27,540 条精选数据。它们的结论并不矛盾，因为目标不同（zero-shot 任务泛化对比对话帮助性）。
 
-记录原文支持的事实、自己的解释和仍需实验验证的假设；没有独立运行实验时，不写成已复现。
+检验：用一句话分别说出 FLAN"8B 以下受损"、Flan-PaLM"加 9 个思维链数据集"、LIMA"表层对齐假说"各自的实验条件；再解释为什么 Llama 2 认为 SFT 的上限是最好的标注员。
+
+## 第 3 步：什么不该放进 SFT
+
+读 [Gekhman 等](../../../papers/arxiv-2405.05904/README.md)，再读 [Llama 3](../../../papers/arxiv-2407.21783/README.md) 第 4.3.6 节与 [DeepSeek LLM](../../../papers/arxiv-2401.02954/README.md) 的对齐一节。
+
+为什么在这里：这一步回答总览页"SFT 学不到新知识反而可能增加幻觉"的来源；Llama 3 的知识探针是把它落到数据流程里的做法，DeepSeek LLM 的重复率是另一个由数据引起的退化。
+
+检验：为自己的一个 SFT 数据集设计一个"未知事实"过滤器：怎样判断基座知不知道（Gekhman 用不同的少样本提示让基座贪心解码与带温度采样，按答对的比例分档），判断为不知道时是删掉、改成拒答，还是保留并早停。
+
+## 第 4 步：SFT 变成冷启动与蒸馏
+
+读 [DeepSeek-R1](../../../papers/arxiv-2501.12948/README.md) 第 3 节、附录 B.3 与附录 F，对照 [Qwen3](../../../papers/arxiv-2505.09388/README.md) 第 4.1、4.5 节与 [s1](../../../papers/arxiv-2501.19393/README.md)。
+
+为什么在这里：这是 [Baseline 页](BASELINES.md)第二个基线的出处；Qwen3 把蒸馏推进到 on-policy，s1 说明 1,000 条推理数据加推理时控制就能走很远。
+
+检验：解释两件事：R1-Distill-Qwen-32B 为什么好于在同一基座上直接做 1 万步以上 RL 的 Qwen2.5-32B-Zero（附录 F.1）；R1 Dev1 为什么在冷启动之后 AIME 反而从 77.9% 掉到 59.0%（Table 3）。
+
+## 第 5 步：SFT 与 RL 的分工
+
+读 [SFT Memorizes, RL Generalizes](../../../papers/arxiv-2501.17161/README.md)，对照 [Qwen3](../../../papers/arxiv-2505.09388/README.md) Table 21 与 [Yue 等](../../../papers/arxiv-2504.13837/README.md)。
+
+为什么在这里：前四步都是 SFT 自己的视角，这一步把它放回整条后训练流水线；三篇合起来回答"什么时候用 SFT、什么时候用 RL、什么时候用蒸馏"。
+
+检验：从同一个检查点出发，分别做 SFT（离线蒸馏）、RL、on-policy 蒸馏，预测 pass@1 与 pass@64 各自怎样变化，并用 Qwen3 Table 21 的数字核对。
+
+## 动手时先查什么
+
+在自己的模型上做 SFT 时，先核对四件事再谈调参：对话模板与特殊 token 是否与推理时一致（Llama 3 发现格式 token 会引起结尾重复）；损失掩码是否只覆盖回答；打包时样本是否互相隔离；训练集与评测集是否去重（Tulu 3 的做法）。训练中除了看损失，还要看重复率、平均回答长度和一组未见评测，因为验证损失与回答质量会分开走。

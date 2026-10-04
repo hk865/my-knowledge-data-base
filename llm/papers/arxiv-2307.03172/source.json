@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2307.03172",
+  "title": "Lost in the Middle: How Language Models Use Long Contexts",
+  "resource_kind": "paper",
+  "canonical_folder": "llm/papers/arxiv-2307.03172",
+  "official_url": "https://arxiv.org/abs/2307.03172",
+  "official_fulltext_url": "https://arxiv.org/pdf/2307.03172",
+  "read_version": "v3",
+  "version_status": "checked_v3",
+  "reading_depth": "selected_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了摘要、§1、§2（多文档问答设置、Table 1 闭卷与 oracle、结果）、§3（键值检索）、§4（架构、query-aware contextualization、指令微调）；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Nelson F. Liu",
+    "Kevin Lin",
+    "John Hewitt",
+    "Ashwin Paranjape",
+    "Michele Bevilacqua",
+    "Fabio Petroni",
+    "Percy Liang"
+  ],
+  "year": 2023,
+  "topic_paths": [
+    "llm/pretraining",
+    "llm/long-context",
+    "cross-domain/evaluation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v3 PDF 选段：摘要、§1、§2（多文档问答设置、Table 1 闭卷与 oracle、结果）、§3（键值检索）、§4（架构、query-aware contextualization、指令微调）",
+    "mechanism_summary": "多文档问答（10/20/30 篇，1 篇含答案）与键值检索；U 形位置曲线；GPT-3.5-Turbo 中间位置低于闭卷 56.1%；扩展上下文版本与原版几乎相同；encoder-decoder 仅在训练长度内稳健；query-aware contextualization 使键值检索近乎完美、对多文档问答影响很小；基座模型同样 U 形。",
+    "evidence_boundary": "未复现实验；数字取自论文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2307.03172",
+      "https://arxiv.org/pdf/2307.03172v3"
+    ],
+    "source_origin": "pretraining_field_phase3_cards",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "evaluation",
+    "analysis"
+  ]
+}

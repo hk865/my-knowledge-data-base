@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2310.16944",
+  "title": "Zephyr: Direct Distillation of LM Alignment",
+  "resource_kind": "paper",
+  "canonical_folder": "llm/papers/arxiv-2310.16944",
+  "official_url": "https://arxiv.org/abs/2310.16944",
+  "official_fulltext_url": "https://arxiv.org/pdf/2310.16944",
+  "read_version": "v1",
+  "version_status": "checked_current_pdf",
+  "reading_depth": "selected_method_sections_checked_not_full_read",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "reading_boundary": "文献卡。核验了 arXiv v1：摘要、§2–3 方法、§5 过拟合讨论、§6 Conclusions and Limitations；不是独立全文精读，未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "authors": [
+    "Lewis Tunstall",
+    "Edward Beeching",
+    "Nathan Lambert",
+    "Nazneen Rajani",
+    "Kashif Rasul",
+    "Younes Belkada",
+    "Shengyi Huang",
+    "Leandro von Werra",
+    "Clémentine Fourrier",
+    "Nathan Habib",
+    "等 4 位作者"
+  ],
+  "year": 2023,
+  "topic_paths": [
+    "llm/posttraining/preferences",
+    "llm/posttraining/sft"
+  ],
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "generation"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv v1：摘要、§2–3 方法、§5 过拟合讨论、§6 Conclusions and Limitations",
+    "mechanism_summary": "Hugging Face H4。Mistral-7B；dSFT + 蒸馏 DPO（UltraFeedback，GPT-4 打分）；无人工标注、训练中不采样；MT-Bench 超 Llama2-Chat-70B。DPO 一个 epoch 后训练集准确率 100% 仍不伤 MT-Bench；SFT 超过一个 epoch 时 DPO 越训越差。局限：GPT-4 评委偏向其蒸馏模型与冗长回答；数学、代码弱。代码、模型、数据公开。",
+    "evidence_boundary": "未复现实验；数字取自论文正文、表格或图注。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2310.16944",
+      "https://arxiv.org/pdf/2310.16944v1"
+    ],
+    "source_origin": "phase3_field_page_node",
+    "relation_pages": [
+      "llm/fields/posttraining/README.md",
+      "llm/fields/posttraining/preferences/README.md",
+      "llm/fields/posttraining/sft/README.md"
+    ]
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2502.11089",
+  "title": "Native Sparse Attention: Hardware-Aligned and Natively Trainable Sparse Attention",
+  "resource_kind": "paper",
+  "canonical_folder": "llm/papers/arxiv-2502.11089",
+  "official_url": "https://arxiv.org/abs/2502.11089",
+  "official_fulltext_url": "https://arxiv.org/pdf/2502.11089",
+  "read_version": "ACL 2025 正式版；对照 arXiv v2、v1",
+  "version_status": "checked_acl2025_v2_v1",
+  "reading_depth": "full_text_reading_and_evidence_audit",
+  "teaching_status": "technical_reading",
+  "content_kind": "reading",
+  "reading_path": "reading.md",
+  "reading_boundary": "技术精读。通读 ACL 2025 正式版正文、Limitations 与附录 A–F（附录 G 解题样例未读），并与 arXiv v1、v2 逐项比对数字；后续工作只按 V3.2、V4、V4.1-Flash、Kimi Linear 原文与 MiniMax 官方博客的相关段落引用；未复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+  },
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-04",
+  "legacy_paths": [],
+  "evidence_paths": [
+    "llm/papers/arxiv-2502.11089/evidence.json"
+  ],
+  "authors": [
+    "Jingyang Yuan",
+    "Huazuo Gao",
+    "Damai Dai",
+    "Junyu Luo",
+    "Liang Zhao",
+    "Zhengyan Zhang",
+    "Zhenda Xie",
+    "Y. X. Wei",
+    "Lean Wang",
+    "Zhiping Xiao",
+    "Yuqing Wang",
+    "Chong Ruan",
+    "Ming Zhang",
+    "Wenfeng Liang",
+    "Wangding Zeng"
+  ],
+  "year": 2025,
+  "topic_paths": [
+    "llm/pretraining",
+    "llm/architecture",
+    "llm/long-context"
+  ],
+  "verification_2026_10_04": {
+    "reading_scope": "arXiv 摘要页与 v2 PDF 选段：摘要、§1、§2（推理时稀疏的问题）、§3.3（压缩、选择、滑动窗口三分支）、§4（4.1 预训练设置、4.3 LongBench 与大海捞针）、§5（训练与解码速度）",
+    "mechanism_summary": "三分支（压缩/选择/滑动窗口）+ 门控；GQA 组内一致的块选择；27B 总参数/3B 激活，30 层，260B token；第一层 MoE 换为 SwiGLU MLP；LongBench 平均 0.469（比全注意力 +0.032）；64K 大海捞针全部找回；64K 解码 11.6×、前向 9.0×、反向 6.0×。",
+    "evidence_boundary": "未复现实验；数字取自论文正文与表格。",
+    "verification_status": "selected_sections_checked",
+    "verification_sources": [
+      "https://arxiv.org/abs/2502.11089",
+      "https://arxiv.org/pdf/2502.11089v2"
+    ],
+    "source_origin": "pretraining_field_phase3_cards",
+    "relation_pages": []
+  },
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "generation"
+  ]
+}

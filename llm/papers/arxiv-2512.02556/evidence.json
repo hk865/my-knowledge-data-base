@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "paper_key": "arxiv-2512.02556",
+  "title": "DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models",
+  "arxiv_id": "2512.02556",
+  "version": "v1",
+  "source_url": "https://arxiv.org/abs/2512.02556v1",
+  "fulltext_url": "https://arxiv.org/pdf/2512.02556v1",
+  "accessed_at": "2026-10-04",
+  "source_pdf_sha256": "2bec0671778769c159ec389412727d1f3d4889fe1c71564b61edaa24705bd17b",
+  "page_count": 23,
+  "reading_status": "architecture_sections_full_read_posttraining_skimmed",
+  "reading_coverage": {
+    "main": [
+      "§1 Introduction",
+      "§2 Architecture（2.1 DSA、2.1.1 继续预训练、2.2 对照评测、2.3 推理成本）",
+      "§3 Post-Training（3.1 GRPO 稳定技巧通读；3.2 工具使用中的思考只读与上下文相关的部分）",
+      "§4.1 主要结果（智能体评测中与 128K 上限相关的说明）",
+      "§4.4 搜索智能体的上下文管理",
+      "§5 Conclusion, Limitation, and Future Work"
+    ],
+    "appendices": [
+      "A MHA and MQA Modes of MLA"
+    ],
+    "skipped": [
+      "§4.2 Speciale 结果、§4.3 合成任务实验、附录 B–D 的模板与评测细节"
+    ],
+    "official_supplements": [
+      "https://huggingface.co/deepseek-ai/DeepSeek-V3.2/raw/main/config.json（索引器 64 头、128 维、top-k 2048；61 层；128 个注意力头；kv_lora_rank 512、qk_rope_head_dim 64、qk_nope_head_dim 128、v_head_dim 128）",
+      "https://huggingface.co/deepseek-ai/DeepSeek-V3.2-Exp/tree/main/inference（model.py：索引 key 以 FP8 缓存、每 128 维一个 FP32 缩放因子；注释称线上部署用 FP8 KV 缓存）",
+      "https://github.com/deepseek-ai/DeepSeek-V3.2-Exp README（V3.1-Terminus 与 V3.2-Exp 对照表；2025-11-17 索引器 RoPE 排布更正；内核位于 DeepGEMM、FlashMLA、TileLang）"
+    ],
+    "visual_source_pages_checked": [
+      4,
+      6
+    ],
+    "method": "下载官方 PDF，用 PyMuPDF 抽取全文；图 3 的曲线数值从 PDF 矢量路径坐标换算；读取官方配置、推理示例代码与仓库 README"
+  },
+  "claims": [
+    {
+      "id": "only_change",
+      "claim": "相对 V3.1-Terminus 唯一的结构改动是通过继续训练引入 DSA；V3.2 与 V3.2-Exp 结构完全相同",
+      "locator": "§2.1 p3",
+      "type": "paper_report"
+    },
+    {
+      "id": "indexer",
+      "claim": "索引分数 I_{t,s} = Σ_j w_{t,j} · ReLU(q_{t,j} · k_s)；ReLU 为吞吐；索引器头少、可用 FP8；按 top-k 索引分数取 KV",
+      "locator": "§2.1 式 1–2 p3",
+      "type": "paper_report"
+    },
+    {
+      "id": "mqa_mode",
+      "claim": "DSA 基于 MLA 的 MQA 模式实现，每个潜向量被全部查询头共享；引用 NSA 说明 KV 项必须被多个查询共享才高效；V3.1-Terminus 训练与预填充用 MHA 模式、解码用 MQA 模式",
+      "locator": "§2.1 p3；附录 A 图 7 p20",
+      "type": "paper_report"
+    },
+    {
+      "id": "warmup",
+      "claim": "稠密预热：冻结索引器外全部参数，以各头注意力分数之和 L1 归一化为目标、KL 损失；学习率 1e-3，1000 步 × 16 × 128K = 2.1B token",
+      "locator": "§2.1.1 式 3 p4",
+      "type": "paper_report"
+    },
+    {
+      "id": "sparse_training",
+      "claim": "稀疏训练：每个查询选 2048 个 KV；索引器输入断开梯度、只受 KL（限于选中集合）训练；学习率 7.3e-6，15000 步 × 480 × 128K = 943.7B token；数据分布与 V3.1-Terminus 的 128K 扩展数据一致",
+      "locator": "§2.1.1 式 4 p4",
+      "type": "paper_report"
+    },
+    {
+      "id": "parity",
+      "claim": "V3.2-Exp 与 V3.1-Terminus 在短、长上下文任务上无明显退化；ChatbotArena Elo 接近；作者引用 AA-LCR 推理模式高 4 分、Fiction.liveBench 更好",
+      "locator": "§2.2 p5",
+      "type": "paper_report"
+    },
+    {
+      "id": "parity_numbers",
+      "claim": "官方仓库对照表：MMLU-Pro 85.0/85.0，GPQA-Diamond 80.7/79.9，HLE 21.7/19.8，HMMT 2025 86.1/83.6，Codeforces 2046/2121，BrowseComp 38.5/40.1（V3.1-Terminus/V3.2-Exp）",
+      "locator": "github.com/deepseek-ai/DeepSeek-V3.2-Exp README Evaluation 表",
+      "type": "official_repository"
+    },
+    {
+      "id": "complexity",
+      "claim": "主注意力 O(L²) → O(Lk)；索引器仍为 O(L²) 但计算量远小于 MLA；短序列预填充专门用掩码 MHA 模式模拟 DSA",
+      "locator": "§2.3 p5",
+      "type": "paper_report"
+    },
+    {
+      "id": "cost_curve",
+      "claim": "图 3（H800，2 美元/GPU 小时，按实际服务估算）：128K 位置预填充约 0.67 → 0.19 美元/百万 token，解码约 2.16 → 0.25；位置 0 附近 V3.2 更高（预填充约 0.061 对 0.053，解码约 0.095 对 0.070）；交叉点约 10K（预填充）、约 5K（解码）；V3.2 预填充曲线拐点约 6.6K",
+      "locator": "图 3 p6；数值由 PDF 矢量路径坐标换算，原文未列",
+      "type": "figure_reading"
+    },
+    {
+      "id": "handcalc",
+      "claim": "按官方配置手算 128K 单查询单层：稠密 MHA 模式 10.7 GFLOPs；DSA 主注意力 0.57 + 索引器 2.15 = 2.72 GFLOPs；解码读取 151 MB 对 19.7 MB（BF16 潜向量、132 B 索引 key）；计算交叉点约 8.7K，读取交叉点约 2.3K",
+      "locator": "reading.md 机制第 5 小节；figures/dsa-cost-vs-length.svg",
+      "type": "original_calculation"
+    },
+    {
+      "id": "rl_stability",
+      "claim": "GRPO 稳定技巧：无偏 KL 估计、按策略偏离屏蔽负优势序列（以推理框架返回的采样概率计算）、Keep Routing（自 V3-0324 起，对 MoE 强化学习稳定性至关重要）、Keep Sampling Mask；未提及注意力 top-k 选择的训推一致",
+      "locator": "§3.1 p7–8",
+      "type": "paper_report"
+    },
+    {
+      "id": "agent_context_limit",
+      "claim": "最大上下文 128K，搜索智能体评测 20% 以上样例超长；BrowseComp 无上下文管理 51.4、有为 67.6；MCP 评测中冗余自我验证使轨迹超过 128K",
+      "locator": "§4.1 p14、表 2 p13；§4.4 p16–17",
+      "type": "paper_report"
+    },
+    {
+      "id": "posttrain_compute",
+      "claim": "后训练算力超过预训练成本的 10%；1,800 多个环境、8.5 万条复杂提示",
+      "locator": "§1 p2；§3.2.3 表 1 p10",
+      "type": "paper_report"
+    },
+    {
+      "id": "limitations",
+      "claim": "总训练 FLOPs 较少导致世界知识广度落后；token 效率低；复杂任务仍落后",
+      "locator": "§5 p17–18",
+      "type": "paper_report"
+    },
+    {
+      "id": "rope_fix",
+      "claim": "2025-11-17：早先推理示例代码中索引器 RoPE 输入排布有误（索引器要求非交错、MLA 要求交错），可能导致性能下降，已修正",
+      "locator": "github.com/deepseek-ai/DeepSeek-V3.2-Exp README Update",
+      "type": "official_repository"
+    },
+    {
+      "id": "later_v4",
+      "claim": "V4：top-k 降为 512（Flash）/1024（Pro），以提高短、中长度文本效率；索引器注意力用 FP4，加速超长上下文；CSA 先压缩 4 倍再索引并加 128 滑窗；索引器 QK 路径 FP4 QAT 且索引分数 FP32→BF16 后 top-k 选择器提速 2 倍、KV 召回率保持 99.7%；强化学习采样用与部署一致的 FP4 索引器 QK 路径；预训练前 1T token 稠密、64K 时转稀疏；1M 下 KV 缓存为 V3.2 的 10%；MRCR 超过 128K 可见下降",
+      "locator": "arXiv:2606.19348 §1、§2.3、§2.3.4、§4.2.1–4.2.2、§5.2.1、§5.3.2 图 9",
+      "type": "later_work"
+    },
+    {
+      "id": "later_v41",
+      "claim": "V4.1-Flash：剩余索引器仍扫全部可见上下文，极长上下文下仍是主要计算瓶颈 → 分层稀疏索引器（训练与推理以相同方式施加）；稀疏注意力从头训练、无稠密预热；稀疏注意力降低计算后存储与搬运成为瓶颈；结论提醒选择误差风险",
+      "locator": "arXiv:2609.19969 §1、§2.3.2、§4.2.2、§6",
+      "type": "later_work"
+    },
+    {
+      "id": "other_teams",
+      "claim": "Kimi Linear §7.1：稀疏注意力更擅长找回细节但需存全部 KV、表达上限为全注意力；MiniMax 官方博客：M2 采用全注意力，继续训练成 SWA 混合失败，检索头与归纳头在预训练早期形成",
+      "locator": "arXiv:2510.26692 §7.1；https://www.minimax.io/news/why-did-m2-end-up-as-a-full-attention-model 第 III、V 节",
+      "type": "later_work"
+    }
+  ],
+  "boundaries": [
+    "论文未给出参数量；671B/37B 取自 V3 摘要，官方配置的层数与专家布局与 V3 一致",
+    "图 3 为按租价估算的服务成本，不是延迟；本页数值来自矢量坐标换算",
+    "手算只含注意力核心，不含投影、MoE、top-k 排序与内核开销；按 BF16 缓存计，线上 FP8 部署时比值不同",
+    "索引器召回率、选错案例在 V3.2 中均未报告"
+  ],
+  "diagram": {
+    "original": true,
+    "format": [
+      "svg"
+    ],
+    "visual_qa": "在浏览器中渲染，检查文字边界框与坐标轴",
+    "path": "figures/dsa-cost-vs-length.svg"
+  },
+  "content_validation": {
+    "no_original_pdf_in_public_output": true,
+    "no_scraped_fulltext_in_public_output": true,
+    "not_a_verbatim_translation": true,
+    "original_explanatory_examples_labeled": true
+  }
+}

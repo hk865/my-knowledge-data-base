@@ -103,7 +103,13 @@
     "legacy_paths": [
       "docs/deep-readings/test-time-compute.md"
     ],
-    "content_kind": "reading"
+    "content_kind": "reading",
+    "authors": [
+      "Charlie Snell",
+      "Jaehoon Lee",
+      "Kelvin Xu",
+      "Aviral Kumar"
+    ]
   },
   {
     "original_chat_urls": [
@@ -116,8 +122,8 @@
     "doi": null,
     "year": "2025",
     "topic_paths": [
-      "llm/posttraining/sft",
-      "llm/inference"
+      "llm/inference",
+      "llm/posttraining/sft"
     ],
     "detail_topics": [
       "inference/test-time scaling",
@@ -169,7 +175,13 @@
     "canonical_readme": "llm/papers/arxiv-2502.18080/README.md",
     "source_path": "llm/papers/arxiv-2502.18080/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Wenkai Yang",
+      "Shuming Ma",
+      "Yankai Lin",
+      "Furu Wei"
+    ]
   },
   {
     "original_chat_urls": [
@@ -230,7 +242,19 @@
     "canonical_readme": "llm/papers/arxiv-2501.19393/README.md",
     "source_path": "llm/papers/arxiv-2501.19393/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Niklas Muennighoff",
+      "Zitong Yang",
+      "Weijia Shi",
+      "Xiang Lisa Li",
+      "Li Fei-Fei",
+      "Hannaneh Hajishirzi",
+      "Luke Zettlemoyer",
+      "Percy Liang",
+      "Emmanuel Candès",
+      "Tatsunori Hashimoto"
+    ]
   },
   {
     "original_chat_urls": [
@@ -291,7 +315,16 @@
     "canonical_readme": "llm/papers/arxiv-2407.21787/README.md",
     "source_path": "llm/papers/arxiv-2407.21787/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Bradley Brown",
+      "Jordan Juravsky",
+      "Ryan Ehrlich",
+      "Ronald Clark",
+      "Quoc V. Le",
+      "Christopher Ré",
+      "Azalia Mirhoseini"
+    ]
   },
   {
     "original_chat_urls": [
@@ -304,10 +337,10 @@
     "doi": null,
     "year": "2024",
     "topic_paths": [
-      "llm/posttraining/sft",
-      "llm/posttraining/preferences",
       "llm/pretraining",
-      "llm/architecture"
+      "llm/architecture",
+      "llm/posttraining/sft",
+      "llm/posttraining/preferences"
     ],
     "detail_topics": [
       "pretraining/general language",
@@ -357,7 +390,20 @@
     "canonical_readme": "llm/papers/arxiv-2407.10671/README.md",
     "source_path": "llm/papers/arxiv-2407.10671/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "An Yang",
+      "Baosong Yang",
+      "Binyuan Hui",
+      "Bo Zheng",
+      "Bowen Yu",
+      "Chang Zhou",
+      "Chengpeng Li",
+      "Chengyuan Li",
+      "Dayiheng Liu",
+      "Fei Huang",
+      "等 62 位作者"
+    ]
   },
   {
     "original_chat_urls": [
@@ -370,8 +416,9 @@
     "doi": null,
     "year": "2024",
     "topic_paths": [
-      "llm/posttraining/sft",
       "llm/pretraining",
+      "llm/posttraining/sft",
+      "llm/posttraining/preferences",
       "llm/posttraining/rl"
     ],
     "detail_topics": [
@@ -421,7 +468,20 @@
     "canonical_readme": "llm/papers/arxiv-2412.15115/README.md",
     "source_path": "llm/papers/arxiv-2412.15115/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Qwen Team",
+      "An Yang",
+      "Baosong Yang",
+      "Beichen Zhang",
+      "Binyuan Hui",
+      "Bo Zheng",
+      "Bowen Yu",
+      "Chengyuan Li",
+      "Dayiheng Liu",
+      "Fei Huang",
+      "等 42 位作者"
+    ]
   },
   {
     "original_chat_urls": [
@@ -435,10 +495,11 @@
     "doi": null,
     "year": "2024",
     "topic_paths": [
-      "llm/posttraining/sft",
       "llm/pretraining",
       "llm/architecture",
-      "llm/posttraining/rl"
+      "llm/posttraining/sft",
+      "llm/posttraining/rl",
+      "llm/inference"
     ],
     "detail_topics": [
       "pretraining/multi-token prediction",
@@ -496,7 +557,7 @@
     "canonical_readme": "llm/papers/arxiv-2412.19437/README.md",
     "source_path": "llm/papers/arxiv-2412.19437/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card",
+    "content_kind": "reading",
     "verification_2026_10_03": {
       "reading_scope": "§2.2 MTP、§5.4.3 Multi-Token Prediction Evaluation；不是技术报告全文阅读",
       "mechanism_summary": "顺序 MTP 模块融合前一深度表示与后续 token embedding，共享 embedding 和输出头，保留因果链；主目标是增强训练，推理可丢弃模块或将其作为草拟模块复用。",
@@ -505,7 +566,10 @@
       "read_version": "v2 2025-02-18",
       "verification_status": "official_identity_and_selected_method_sections_verified",
       "source_origin": "historical_assistant_recommendation"
-    }
+    },
+    "authors": [
+      "DeepSeek-AI"
+    ]
   },
   {
     "original_chat_urls": [
@@ -518,10 +582,10 @@
     "doi": null,
     "year": "2025",
     "topic_paths": [
-      "llm/posttraining/sft",
       "llm/pretraining",
       "llm/architecture",
       "llm/inference",
+      "llm/posttraining/sft",
       "llm/posttraining/preferences"
     ],
     "detail_topics": [
@@ -603,7 +667,20 @@
     "legacy_paths": [
       "docs/deep-readings/qwen2.5-1m.md"
     ],
-    "content_kind": "reading"
+    "content_kind": "reading",
+    "authors": [
+      "An Yang",
+      "Bowen Yu",
+      "Chengyuan Li",
+      "Dayiheng Liu",
+      "Fei Huang",
+      "Haoyan Huang",
+      "Jiandong Jiang",
+      "Jianhong Tu",
+      "Jianwei Zhang",
+      "Jingren Zhou",
+      "等 28 位作者"
+    ]
   },
   {
     "original_chat_urls": [
@@ -616,8 +693,8 @@
     "doi": null,
     "year": "2023",
     "topic_paths": [
-      "llm/pretraining",
       "llm/architecture",
+      "llm/pretraining",
       "llm/inference"
     ],
     "detail_topics": [
@@ -727,6 +804,7 @@
     "year": "2024",
     "topic_paths": [
       "llm/pretraining",
+      "cross-domain/training-science",
       "cross-domain/model-science"
     ],
     "detail_topics": [
@@ -774,7 +852,20 @@
     "canonical_readme": "llm/papers/arxiv-2402.00838/README.md",
     "source_path": "llm/papers/arxiv-2402.00838/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Dirk Groeneveld",
+      "Iz Beltagy",
+      "Pete Walsh",
+      "Akshita Bhagia",
+      "Rodney Kinney",
+      "Oyvind Tafjord",
+      "Ananya Harsh Jha",
+      "Hamish Ivison",
+      "Ian Magnusson",
+      "Yizhong Wang",
+      "等 43 位作者"
+    ]
   },
   {
     "original_chat_urls": [
@@ -788,8 +879,8 @@
     "doi": "10.1038/s41586-025-09422-z",
     "year": "2025",
     "topic_paths": [
-      "llm/posttraining/sft",
       "llm/posttraining/rl",
+      "llm/posttraining/sft",
       "llm/inference"
     ],
     "detail_topics": [
@@ -848,7 +939,10 @@
     "canonical_readme": "llm/papers/arxiv-2501.12948/README.md",
     "source_path": "llm/papers/arxiv-2501.12948/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "DeepSeek-AI"
+    ]
   },
   {
     "original_chat_urls": [
@@ -907,7 +1001,12 @@
     "canonical_readme": "llm/papers/arxiv-2101.03961/README.md",
     "source_path": "llm/papers/arxiv-2101.03961/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "William Fedus",
+      "Barret Zoph",
+      "Noam Shazeer"
+    ]
   },
   {
     "original_chat_urls": [
@@ -966,7 +1065,26 @@
     "canonical_readme": "llm/papers/arxiv-2401.06066/README.md",
     "source_path": "llm/papers/arxiv-2401.06066/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "reading",
+    "authors": [
+      "Damai Dai",
+      "Chengqi Deng",
+      "Chenggang Zhao",
+      "R. X. Xu",
+      "Huazuo Gao",
+      "Deli Chen",
+      "Jiashi Li",
+      "Wangding Zeng",
+      "Xingkai Yu",
+      "Y. Wu",
+      "Zhenda Xie",
+      "Y. K. Li",
+      "Panpan Huang",
+      "Fuli Luo",
+      "Chong Ruan",
+      "Zhifang Sui",
+      "Wenfeng Liang"
+    ]
   },
   {
     "original_chat_urls": [
@@ -979,9 +1097,9 @@
     "doi": null,
     "year": "2024",
     "topic_paths": [
-      "llm/posttraining/sft",
-      "llm/pretraining",
       "llm/architecture",
+      "llm/pretraining",
+      "llm/posttraining/sft",
       "llm/posttraining/rl"
     ],
     "detail_topics": [
@@ -1082,7 +1200,10 @@
     "legacy_paths": [
       "docs/deep-readings/deepseek-v2.md"
     ],
-    "content_kind": "reading"
+    "content_kind": "reading",
+    "authors": [
+      "DeepSeek-AI"
+    ]
   },
   {
     "original_chat_urls": [
@@ -1141,7 +1262,20 @@
     "canonical_readme": "llm/papers/arxiv-2601.07372/README.md",
     "source_path": "llm/papers/arxiv-2601.07372/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "reading",
+    "authors": [
+      "Xin Cheng",
+      "Rui Tian",
+      "Wangding Zeng",
+      "Damai Dai",
+      "Qinyu Chen",
+      "Bingxuan Wang",
+      "Zhenda Xie",
+      "Kezhao Huang",
+      "Xingkai Yu",
+      "Chengqi Deng",
+      "等 21 位作者"
+    ]
   },
   {
     "original_chat_urls": [
@@ -1199,7 +1333,11 @@
     "canonical_readme": "llm/papers/arxiv-2607.29065/README.md",
     "source_path": "llm/papers/arxiv-2607.29065/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Jia Peng Lim",
+      "Hai Leong Chieu"
+    ]
   },
   {
     "original_chat_urls": [
@@ -1262,6 +1400,12 @@
     "content_kind": "bibliographic_card",
     "previous_titles": [
       "Cross-Model Memory Transfer via Target-Side Reader Adaptation"
+    ],
+    "authors": [
+      "Mingyuan Li",
+      "Guangsheng Yu",
+      "Xu Wang",
+      "Shaoxiong Ji"
     ]
   },
   {
@@ -1320,7 +1464,14 @@
     "canonical_readme": "llm/papers/arxiv-2412.09078/README.md",
     "source_path": "llm/papers/arxiv-2412.09078/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Zhenni Bi",
+      "Kai Han",
+      "Chuanjian Liu",
+      "Yehui Tang",
+      "Yunhe Wang"
+    ]
   },
   {
     "original_chat_urls": [
@@ -1333,8 +1484,8 @@
     "doi": null,
     "year": "2024",
     "topic_paths": [
-      "llm/posttraining/sft",
       "llm/inference",
+      "llm/posttraining/sft",
       "cross-domain/agents"
     ],
     "detail_topics": [
@@ -1383,7 +1534,13 @@
     "canonical_readme": "llm/papers/arxiv-2407.18219/README.md",
     "source_path": "llm/papers/arxiv-2407.18219/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Yuxiao Qu",
+      "Tianjun Zhang",
+      "Naman Garg",
+      "Aviral Kumar"
+    ]
   },
   {
     "original_chat_urls": [
@@ -1396,6 +1553,7 @@
     "doi": null,
     "year": "2020",
     "topic_paths": [
+      "cross-domain/knowledge-distillation",
       "llm/pretraining",
       "llm/architecture"
     ],
@@ -1442,7 +1600,15 @@
     "canonical_readme": "llm/papers/arxiv-2002.10957/README.md",
     "source_path": "llm/papers/arxiv-2002.10957/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Wenhui Wang",
+      "Furu Wei",
+      "Li Dong",
+      "Hangbo Bao",
+      "Nan Yang",
+      "Ming Zhou"
+    ]
   },
   {
     "original_chat_urls": [
@@ -1455,6 +1621,7 @@
     "doi": null,
     "year": "2019",
     "topic_paths": [
+      "cross-domain/knowledge-distillation",
       "llm/pretraining",
       "llm/architecture"
     ],
@@ -1502,7 +1669,13 @@
     "canonical_readme": "llm/papers/arxiv-1910.01108/README.md",
     "source_path": "llm/papers/arxiv-1910.01108/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Victor Sanh",
+      "Lysandre Debut",
+      "Julien Chaumond",
+      "Thomas Wolf"
+    ]
   },
   {
     "original_chat_urls": [
@@ -1562,7 +1735,17 @@
     "canonical_readme": "llm/papers/arxiv-2403.03853/README.md",
     "source_path": "llm/papers/arxiv-2403.03853/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Xin Men",
+      "Mingyu Xu",
+      "Qingyu Zhang",
+      "Bingning Wang",
+      "Hongyu Lin",
+      "Yaojie Lu",
+      "Xianpei Han",
+      "Weipeng Chen"
+    ]
   },
   {
     "original_chat_urls": [
@@ -1576,6 +1759,7 @@
     "year": "2024",
     "topic_paths": [
       "llm/posttraining/sft",
+      "cross-domain/knowledge-distillation",
       "llm/inference"
     ],
     "detail_topics": [
@@ -1624,7 +1808,16 @@
     "canonical_readme": "llm/papers/arxiv-2403.13271/README.md",
     "source_path": "llm/papers/arxiv-2403.13271/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Zhihong Sun",
+      "Chen Lyu",
+      "Bolun Li",
+      "Yao Wan",
+      "Hongyu Zhang",
+      "Ge Li",
+      "Zhi Jin"
+    ]
   },
   {
     "original_chat_urls": [
@@ -1686,7 +1879,27 @@
     "canonical_readme": "llm/papers/arxiv-2009.08366/README.md",
     "source_path": "llm/papers/arxiv-2009.08366/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Daya Guo",
+      "Shuo Ren",
+      "Shuai Lu",
+      "Zhangyin Feng",
+      "Duyu Tang",
+      "Shujie Liu",
+      "Long Zhou",
+      "Nan Duan",
+      "Alexey Svyatkovskiy",
+      "Shengyu Fu",
+      "Michele Tufano",
+      "Shao Kun Deng",
+      "Colin Clement",
+      "Dawn Drain",
+      "Neel Sundaresan",
+      "Jian Yin",
+      "Daxin Jiang",
+      "Ming Zhou"
+    ]
   },
   {
     "original_chat_urls": [
@@ -1920,7 +2133,11 @@
     "canonical_readme": "llm/papers/arxiv-2311.13508/README.md",
     "source_path": "llm/papers/arxiv-2311.13508/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Mootez Saad",
+      "Tushar Sharma"
+    ]
   },
   {
     "original_chat_urls": [
@@ -1978,7 +2195,11 @@
     "canonical_readme": "llm/papers/arxiv-2202.08975/README.md",
     "source_path": "llm/papers/arxiv-2202.08975/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Sergey Troshin",
+      "Nadezhda Chirkova"
+    ]
   },
   {
     "original_chat_urls": [
@@ -2051,6 +2272,7 @@
     "year": "2025",
     "topic_paths": [
       "llm/inference",
+      "llm/posttraining/preferences",
       "cross-domain/model-science"
     ],
     "detail_topics": [
@@ -2097,7 +2319,16 @@
     "canonical_readme": "llm/papers/arxiv-2510.01171/README.md",
     "source_path": "llm/papers/arxiv-2510.01171/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Jiayi Zhang",
+      "Simon Yu",
+      "Derek Chong",
+      "Anthony Sicilia",
+      "Michael R. Tomz",
+      "Christopher D. Manning",
+      "Weiyan Shi"
+    ]
   },
   {
     "original_chat_urls": [
@@ -2229,10 +2460,10 @@
     "doi": null,
     "year": "2024",
     "topic_paths": [
-      "llm/inference",
       "cross-domain/agents",
-      "cross-domain/model-science",
-      "cross-domain/evaluation"
+      "llm/inference",
+      "cross-domain/evaluation",
+      "cross-domain/model-science"
     ],
     "detail_topics": [
       "agents/code",
@@ -2280,7 +2511,16 @@
     "canonical_readme": "llm/papers/arxiv-2405.15793/README.md",
     "source_path": "llm/papers/arxiv-2405.15793/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "John Yang",
+      "Carlos E. Jimenez",
+      "Alexander Wettig",
+      "Kilian Lieret",
+      "Shunyu Yao",
+      "Karthik Narasimhan",
+      "Ofir Press"
+    ]
   },
   {
     "original_chat_urls": [
@@ -2291,10 +2531,10 @@
     "url": "https://proceedings.mlr.press/v267/chen25bx.html",
     "arxiv_id": null,
     "doi": null,
-    "year": null,
+    "year": "2025",
     "topic_paths": [
-      "llm/posttraining/sft",
-      "llm/inference"
+      "llm/inference",
+      "llm/posttraining/preferences"
     ],
     "detail_topics": [
       "inference/reasoning efficiency",
@@ -2340,7 +2580,26 @@
     "canonical_readme": "llm/papers/url-https-proceedings.mlr.press-v267-chen25bx.html/README.md",
     "source_path": "llm/papers/url-https-proceedings.mlr.press-v267-chen25bx.html/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "previous_titles": [
+      "Do NOT Think That Much for 2+3=? On the Overthinking of o1-Like LLMs"
+    ],
+    "authors": [
+      "Xingyu Chen",
+      "Jiahao Xu",
+      "Tian Liang",
+      "Zhiwei He",
+      "Jianhui Pang",
+      "Dian Yu",
+      "Linfeng Song",
+      "Qiuzhi Liu",
+      "Mengfei Zhou",
+      "Zhuosheng Zhang",
+      "Rui Wang",
+      "Zhaopeng Tu",
+      "Haitao Mi",
+      "Dong Yu"
+    ]
   },
   {
     "original_chat_urls": [
@@ -2351,7 +2610,7 @@
     "url": "https://aclanthology.org/2024.findings-emnlp.882/",
     "arxiv_id": null,
     "doi": null,
-    "year": null,
+    "year": "2024",
     "topic_paths": [
       "llm/inference",
       "cross-domain/model-science",
@@ -2401,7 +2660,13 @@
     "canonical_readme": "llm/papers/url-https-aclanthology.org-2024.findings-emnlp.882/README.md",
     "source_path": "llm/papers/url-https-aclanthology.org-2024.findings-emnlp.882/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Debjit Paul",
+      "Robert West",
+      "Antoine Bosselut",
+      "Boi Faltings"
+    ]
   },
   {
     "original_chat_urls": [
@@ -2412,7 +2677,7 @@
     "url": "https://aclanthology.org/2025.emnlp-main.504/",
     "arxiv_id": null,
     "doi": null,
-    "year": null,
+    "year": "2025",
     "topic_paths": [
       "llm/inference",
       "cross-domain/model-science",
@@ -2453,14 +2718,21 @@
       "text"
     ],
     "task_tags": [
-      "analysis"
+      "analysis",
+      "evaluation"
     ],
     "canonical_folder": "llm/papers/url-https-aclanthology.org-2025.emnlp-main.504",
     "canonical_path": "llm/papers/url-https-aclanthology.org-2025.emnlp-main.504/README.md",
     "canonical_readme": "llm/papers/url-https-aclanthology.org-2025.emnlp-main.504/README.md",
     "source_path": "llm/papers/url-https-aclanthology.org-2025.emnlp-main.504/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Martin Tutek",
+      "Fateme Hashemi Chaleshtori",
+      "Ana Marasović",
+      "Yonatan Belinkov"
+    ]
   },
   {
     "original_chat_urls": [
@@ -2471,11 +2743,11 @@
     "url": "https://aclanthology.org/2025.findings-acl.537/",
     "arxiv_id": null,
     "doi": null,
-    "year": null,
+    "year": "2025",
     "topic_paths": [
       "llm/inference",
-      "cross-domain/model-science",
-      "cross-domain/evaluation"
+      "cross-domain/evaluation",
+      "cross-domain/model-science"
     ],
     "detail_topics": [
       "model science/evaluation/roleplay"
@@ -2512,14 +2784,20 @@
       "text"
     ],
     "task_tags": [
-      "evaluation"
+      "evaluation",
+      "analysis"
     ],
     "canonical_folder": "llm/papers/url-https-aclanthology.org-2025.findings-acl.537",
     "canonical_path": "llm/papers/url-https-aclanthology.org-2025.findings-acl.537/README.md",
     "canonical_readme": "llm/papers/url-https-aclanthology.org-2025.findings-acl.537/README.md",
     "source_path": "llm/papers/url-https-aclanthology.org-2025.findings-acl.537/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Xiachong Feng",
+      "Longxu Dou",
+      "Lingpeng Kong"
+    ]
   },
   {
     "original_chat_urls": [
@@ -2579,7 +2857,19 @@
     "canonical_readme": "llm/papers/arxiv-2402.03620/README.md",
     "source_path": "llm/papers/arxiv-2402.03620/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Pei Zhou",
+      "Jay Pujara",
+      "Xiang Ren",
+      "Xinyun Chen",
+      "Heng-Tze Cheng",
+      "Quoc V. Le",
+      "Ed H. Chi",
+      "Denny Zhou",
+      "Swaroop Mishra",
+      "Huaixiu Steven Zheng"
+    ]
   },
   {
     "original_chat_urls": [
@@ -2712,8 +3002,8 @@
     "doi": null,
     "year": "2023",
     "topic_paths": [
-      "llm/inference",
-      "cross-domain/agents"
+      "cross-domain/agents",
+      "llm/inference"
     ],
     "detail_topics": [
       "agents/reasoning and acting",
@@ -2760,7 +3050,17 @@
     "canonical_readme": "llm/papers/arxiv-2305.16291/README.md",
     "source_path": "llm/papers/arxiv-2305.16291/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card"
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Guanzhi Wang",
+      "Yuqi Xie",
+      "Yunfan Jiang",
+      "Ajay Mandlekar",
+      "Chaowei Xiao",
+      "Yuke Zhu",
+      "Linxi Fan",
+      "Anima Anandkumar"
+    ]
   },
   {
     "original_chat_urls": [
@@ -8730,8 +9030,8 @@
     "catalog_anchor": "p103",
     "user_reading_status": "unknown",
     "modality_tags": [
-      "action",
-      "state"
+      "state",
+      "action"
     ],
     "task_tags": [
       "decision"
@@ -9508,7 +9808,17 @@
     "legacy_paths": [
       "docs/deep-readings/transformer.md"
     ],
-    "content_kind": "reading"
+    "content_kind": "reading",
+    "authors": [
+      "Ashish Vaswani",
+      "Noam Shazeer",
+      "Niki Parmar",
+      "Jakob Uszkoreit",
+      "Llion Jones",
+      "Aidan N. Gomez",
+      "Lukasz Kaiser",
+      "Illia Polosukhin"
+    ]
   },
   {
     "original_chat_urls": [],
@@ -9573,8 +9883,8 @@
     "doi": null,
     "year": "2022",
     "topic_paths": [
-      "llm/posttraining/preferences",
       "llm/posttraining/sft",
+      "llm/posttraining/preferences",
       "llm/posttraining/rl"
     ],
     "detail_topics": [
@@ -9687,7 +9997,29 @@
     "legacy_paths": [
       "docs/deep-readings/instructgpt.md"
     ],
-    "content_kind": "reading"
+    "content_kind": "reading",
+    "authors": [
+      "Long Ouyang",
+      "Jeff Wu",
+      "Xu Jiang",
+      "Diogo Almeida",
+      "Carroll L. Wainwright",
+      "Pamela Mishkin",
+      "Chong Zhang",
+      "Sandhini Agarwal",
+      "Katarina Slama",
+      "Alex Ray",
+      "John Schulman",
+      "Jacob Hilton",
+      "Fraser Kelton",
+      "Luke Miller",
+      "Maddie Simens",
+      "Amanda Askell",
+      "Peter Welinder",
+      "Paul Christiano",
+      "Jan Leike",
+      "Ryan Lowe"
+    ]
   },
   {
     "original_chat_urls": [],
@@ -10736,10 +11068,10 @@
     "year": "2020",
     "resource_kind": "paper",
     "topic_paths": [
-      "cross-domain/agents",
-      "cross-domain/model-science",
+      "llm/pretraining",
       "llm/architecture",
-      "llm/pretraining"
+      "cross-domain/model-science",
+      "cross-domain/agents"
     ],
     "detail_topics": [],
     "architecture_tags": [
@@ -10808,7 +11140,20 @@
     "legacy_paths": [
       "docs/deep-readings/gpt3.md"
     ],
-    "content_kind": "reading"
+    "content_kind": "reading",
+    "authors": [
+      "Tom B. Brown",
+      "Benjamin Mann",
+      "Nick Ryder",
+      "Melanie Subbiah",
+      "Jared Kaplan",
+      "Prafulla Dhariwal",
+      "Arvind Neelakantan",
+      "Pranav Shyam",
+      "Girish Sastry",
+      "Amanda Askell",
+      "等 31 位作者"
+    ]
   },
   {
     "id": "arxiv:2305.18290",
@@ -10994,7 +11339,14 @@
       "docs/deep-readings/ppo.md",
       "robotics-embodied/baselines/ppo.md"
     ],
-    "content_kind": "reading"
+    "content_kind": "reading",
+    "authors": [
+      "John Schulman",
+      "Filip Wolski",
+      "Prafulla Dhariwal",
+      "Alec Radford",
+      "Oleg Klimov"
+    ]
   },
   {
     "id": "arxiv:2010.11929",
@@ -12153,7 +12505,12 @@
     "canonical_readme": "llm/papers/arxiv-2211.17192/README.md",
     "source_path": "llm/papers/arxiv-2211.17192/source.json",
     "legacy_paths": [],
-    "catalog_anchor": "p144"
+    "catalog_anchor": "p144",
+    "authors": [
+      "Yaniv Leviathan",
+      "Matan Kalman",
+      "Yossi Matias"
+    ]
   },
   {
     "id": "arxiv:2302.01318",
@@ -12216,7 +12573,15 @@
     "canonical_readme": "llm/papers/arxiv-2302.01318/README.md",
     "source_path": "llm/papers/arxiv-2302.01318/source.json",
     "legacy_paths": [],
-    "catalog_anchor": "p145"
+    "catalog_anchor": "p145",
+    "authors": [
+      "Charlie Chen",
+      "Sebastian Borgeaud",
+      "Geoffrey Irving",
+      "Jean-Baptiste Lespiau",
+      "Laurent Sifre",
+      "John Jumper"
+    ]
   },
   {
     "id": "arxiv:2503.01840",
@@ -12279,7 +12644,13 @@
     "canonical_readme": "llm/papers/arxiv-2503.01840/README.md",
     "source_path": "llm/papers/arxiv-2503.01840/source.json",
     "legacy_paths": [],
-    "catalog_anchor": "p146"
+    "catalog_anchor": "p146",
+    "authors": [
+      "Yuhui Li",
+      "Fangyun Wei",
+      "Chao Zhang",
+      "Hongyang Zhang"
+    ]
   },
   {
     "id": "arxiv:2602.06036",
@@ -12342,7 +12713,12 @@
     "canonical_readme": "llm/papers/arxiv-2602.06036/README.md",
     "source_path": "llm/papers/arxiv-2602.06036/source.json",
     "legacy_paths": [],
-    "catalog_anchor": "p147"
+    "catalog_anchor": "p147",
+    "authors": [
+      "Jian Chen",
+      "Yesheng Liang",
+      "Zhijian Liu"
+    ]
   },
   {
     "id": "arxiv:2302.07863",
@@ -12405,7 +12781,16 @@
     "canonical_readme": "llm/papers/arxiv-2302.07863/README.md",
     "source_path": "llm/papers/arxiv-2302.07863/source.json",
     "legacy_paths": [],
-    "catalog_anchor": "p148"
+    "catalog_anchor": "p148",
+    "authors": [
+      "Sehoon Kim",
+      "Karttikeya Mangalam",
+      "Suhong Moon",
+      "Jitendra Malik",
+      "Michael W. Mahoney",
+      "Amir Gholami",
+      "Kurt Keutzer"
+    ]
   },
   {
     "id": "arxiv:2601.05167",
@@ -12468,7 +12853,15 @@
     "canonical_readme": "llm/papers/arxiv-2601.05167/README.md",
     "source_path": "llm/papers/arxiv-2601.05167/source.json",
     "legacy_paths": [],
-    "catalog_anchor": "p149"
+    "catalog_anchor": "p149",
+    "authors": [
+      "Chengsong Huang",
+      "Tong Zheng",
+      "Langlin Huang",
+      "Jinyuan Li",
+      "Haolin Liu",
+      "Jiaxin Huang"
+    ]
   },
   {
     "id": "arxiv:2501.19309",
@@ -12531,7 +12924,18 @@
     "canonical_readme": "llm/papers/arxiv-2501.19309/README.md",
     "source_path": "llm/papers/arxiv-2501.19309/source.json",
     "legacy_paths": [],
-    "catalog_anchor": "p150"
+    "catalog_anchor": "p150",
+    "authors": [
+      "Gregor Bachmann",
+      "Sotiris Anagnostidis",
+      "Albert Pumarola",
+      "Markos Georgopoulos",
+      "Artsiom Sanakoyeu",
+      "Yuming Du",
+      "Edgar Schönfeld",
+      "Ali Thabet",
+      "Jonas Kohler"
+    ]
   },
   {
     "id": "url:https://inco.ai/blog/dflash2",
@@ -12593,7 +12997,10 @@
     "canonical_readme": "llm/papers/dflash-2/README.md",
     "source_path": "llm/papers/dflash-2/source.json",
     "legacy_paths": [],
-    "catalog_anchor": "p151"
+    "catalog_anchor": "p151",
+    "authors": [
+      "Inco AI"
+    ]
   },
   {
     "id": "arxiv:2405.19261",
@@ -12656,7 +13063,16 @@
     "canonical_readme": "llm/papers/arxiv-2405.19261/README.md",
     "source_path": "llm/papers/arxiv-2405.19261/source.json",
     "legacy_paths": [],
-    "catalog_anchor": "p152"
+    "catalog_anchor": "p152",
+    "authors": [
+      "Harikrishna Narasimhan",
+      "Wittawat Jitkrittum",
+      "Ankit Singh Rawat",
+      "Seungyeon Kim",
+      "Neha Gupta",
+      "Aditya Krishna Menon",
+      "Sanjiv Kumar"
+    ]
   },
   {
     "id": "arxiv:2010.11251",
@@ -14606,7 +15022,7 @@
     "canonical_readme": "llm/papers/arxiv-2512.24880/README.md",
     "source_path": "llm/papers/arxiv-2512.24880/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card",
+    "content_kind": "reading",
     "authors": [
       "Zhenda Xie",
       "Yixuan Wei",
@@ -14718,7 +15134,7 @@
     "canonical_readme": "llm/papers/arxiv-2606.19348/README.md",
     "source_path": "llm/papers/arxiv-2606.19348/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card",
+    "content_kind": "reading",
     "authors": [
       "DeepSeek-AI",
       "Anyi Xu",
@@ -19326,6 +19742,3135 @@
       "Kris Kitani",
       "Changliu Liu",
       "Guanya Shi"
+    ]
+  },
+  {
+    "id": "arxiv:1706.03741",
+    "title": "Deep reinforcement learning from human preferences",
+    "url": "https://arxiv.org/abs/1706.03741",
+    "arxiv_id": "1706.03741",
+    "doi": null,
+    "year": "2017",
+    "topic_paths": [
+      "llm/posttraining/preferences",
+      "llm/posttraining/rl"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/1706.03741"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p278",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "llm/papers/arxiv-1706.03741",
+    "canonical_path": "llm/papers/arxiv-1706.03741/README.md",
+    "canonical_readme": "llm/papers/arxiv-1706.03741/README.md",
+    "source_path": "llm/papers/arxiv-1706.03741/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Paul Christiano",
+      "Jan Leike",
+      "Tom B. Brown",
+      "Miljan Martic",
+      "Shane Legg",
+      "Dario Amodei"
+    ]
+  },
+  {
+    "id": "arxiv:1910.10683",
+    "title": "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer",
+    "url": "https://arxiv.org/abs/1910.10683",
+    "arxiv_id": "1910.10683",
+    "doi": null,
+    "year": "2019",
+    "topic_paths": [
+      "llm/pretraining"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/1910.10683"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p279",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "understanding",
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-1910.10683",
+    "canonical_path": "llm/papers/arxiv-1910.10683/README.md",
+    "canonical_readme": "llm/papers/arxiv-1910.10683/README.md",
+    "source_path": "llm/papers/arxiv-1910.10683/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Colin Raffel",
+      "Noam Shazeer",
+      "Adam Roberts",
+      "Katherine Lee",
+      "Sharan Narang",
+      "Michael Matena",
+      "Yanqi Zhou",
+      "Wei Li",
+      "Peter J. Liu"
+    ]
+  },
+  {
+    "id": "arxiv:1911.02150",
+    "title": "Fast Transformer Decoding: One Write-Head is All You Need",
+    "url": "https://arxiv.org/abs/1911.02150",
+    "arxiv_id": "1911.02150",
+    "doi": null,
+    "year": "2019",
+    "topic_paths": [
+      "llm/architecture",
+      "llm/inference"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/1911.02150"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p280",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-1911.02150",
+    "canonical_path": "llm/papers/arxiv-1911.02150/README.md",
+    "canonical_readme": "llm/papers/arxiv-1911.02150/README.md",
+    "source_path": "llm/papers/arxiv-1911.02150/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Noam Shazeer"
+    ]
+  },
+  {
+    "id": "arxiv:2002.04745",
+    "title": "On Layer Normalization in the Transformer Architecture",
+    "url": "https://arxiv.org/abs/2002.04745",
+    "arxiv_id": "2002.04745",
+    "doi": null,
+    "year": "2020",
+    "topic_paths": [
+      "llm/architecture",
+      "cross-domain/training-science"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2002.04745"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p281",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2002.04745",
+    "canonical_path": "llm/papers/arxiv-2002.04745/README.md",
+    "canonical_readme": "llm/papers/arxiv-2002.04745/README.md",
+    "source_path": "llm/papers/arxiv-2002.04745/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Ruibin Xiong",
+      "Yunchang Yang",
+      "Di He",
+      "Kai Zheng",
+      "Shuxin Zheng",
+      "Chen Xing",
+      "Huishuai Zhang",
+      "Yanyan Lan",
+      "Liwei Wang",
+      "Tie-Yan Liu"
+    ]
+  },
+  {
+    "id": "arxiv:2006.16236",
+    "title": "Transformers are RNNs: Fast Autoregressive Transformers with Linear Attention",
+    "url": "https://arxiv.org/abs/2006.16236",
+    "arxiv_id": "2006.16236",
+    "doi": null,
+    "year": "2020",
+    "topic_paths": [
+      "llm/architecture"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2006.16236"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p282",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "image",
+      "audio"
+    ],
+    "task_tags": [
+      "generation",
+      "understanding"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2006.16236",
+    "canonical_path": "llm/papers/arxiv-2006.16236/README.md",
+    "canonical_readme": "llm/papers/arxiv-2006.16236/README.md",
+    "source_path": "llm/papers/arxiv-2006.16236/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Angelos Katharopoulos",
+      "Apoorv Vyas",
+      "Nikolaos Pappas",
+      "François Fleuret"
+    ]
+  },
+  {
+    "id": "arxiv:2009.01325",
+    "title": "Learning to summarize from human feedback",
+    "url": "https://arxiv.org/abs/2009.01325",
+    "arxiv_id": "2009.01325",
+    "doi": null,
+    "year": "2020",
+    "topic_paths": [
+      "llm/posttraining/preferences",
+      "llm/posttraining/rl"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2009.01325"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p283",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2009.01325",
+    "canonical_path": "llm/papers/arxiv-2009.01325/README.md",
+    "canonical_readme": "llm/papers/arxiv-2009.01325/README.md",
+    "source_path": "llm/papers/arxiv-2009.01325/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Nisan Stiennon",
+      "Long Ouyang",
+      "Jeff Wu",
+      "Daniel M. Ziegler",
+      "Ryan Lowe",
+      "Chelsea Voss",
+      "Alec Radford",
+      "Dario Amodei",
+      "Paul Christiano"
+    ]
+  },
+  {
+    "id": "arxiv:2104.09864",
+    "title": "RoFormer: Enhanced Transformer with Rotary Position Embedding",
+    "url": "https://arxiv.org/abs/2104.09864",
+    "arxiv_id": "2104.09864",
+    "doi": null,
+    "year": "2021",
+    "topic_paths": [
+      "llm/long-context",
+      "llm/architecture"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2104.09864"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p284",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "understanding",
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2104.09864",
+    "canonical_path": "llm/papers/arxiv-2104.09864/README.md",
+    "canonical_readme": "llm/papers/arxiv-2104.09864/README.md",
+    "source_path": "llm/papers/arxiv-2104.09864/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Jianlin Su",
+      "Yu Lu",
+      "Shengfeng Pan",
+      "Ahmed Murtadha",
+      "Bo Wen",
+      "Yunfeng Liu"
+    ]
+  },
+  {
+    "id": "arxiv:2109.01652",
+    "title": "Finetuned Language Models Are Zero-Shot Learners",
+    "url": "https://arxiv.org/abs/2109.01652",
+    "arxiv_id": "2109.01652",
+    "doi": null,
+    "year": "2021",
+    "topic_paths": [
+      "llm/posttraining/sft"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2109.01652"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p285",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2109.01652",
+    "canonical_path": "llm/papers/arxiv-2109.01652/README.md",
+    "canonical_readme": "llm/papers/arxiv-2109.01652/README.md",
+    "source_path": "llm/papers/arxiv-2109.01652/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Jason Wei",
+      "Maarten Bosma",
+      "Vincent Y. Zhao",
+      "Kelvin Guu",
+      "Adams Wei Yu",
+      "Brian Lester",
+      "Nan Du",
+      "Andrew M. Dai",
+      "Quoc V. Le"
+    ]
+  },
+  {
+    "id": "arxiv:2201.11903",
+    "title": "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+    "url": "https://arxiv.org/abs/2201.11903",
+    "arxiv_id": "2201.11903",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "llm/inference"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2201.11903"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p286",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2201.11903",
+    "canonical_path": "llm/papers/arxiv-2201.11903/README.md",
+    "canonical_readme": "llm/papers/arxiv-2201.11903/README.md",
+    "source_path": "llm/papers/arxiv-2201.11903/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Jason Wei",
+      "Xuezhi Wang",
+      "Dale Schuurmans",
+      "Maarten Bosma",
+      "Brian Ichter",
+      "Fei Xia",
+      "Ed H. Chi",
+      "Quoc V. Le",
+      "Denny Zhou"
+    ]
+  },
+  {
+    "id": "arxiv:2203.11171",
+    "title": "Self-Consistency Improves Chain of Thought Reasoning in Language Models",
+    "url": "https://arxiv.org/abs/2203.11171",
+    "arxiv_id": "2203.11171",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "llm/inference"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2203.11171"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p287",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2203.11171",
+    "canonical_path": "llm/papers/arxiv-2203.11171/README.md",
+    "canonical_readme": "llm/papers/arxiv-2203.11171/README.md",
+    "source_path": "llm/papers/arxiv-2203.11171/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Xuezhi Wang",
+      "Jason Wei",
+      "Dale Schuurmans",
+      "Quoc Le",
+      "Ed Chi",
+      "Sharan Narang",
+      "Aakanksha Chowdhery",
+      "Denny Zhou"
+    ]
+  },
+  {
+    "id": "arxiv:2204.02311",
+    "title": "PaLM: Scaling Language Modeling with Pathways",
+    "url": "https://arxiv.org/abs/2204.02311",
+    "arxiv_id": "2204.02311",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "llm/pretraining"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2204.02311"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p288",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2204.02311",
+    "canonical_path": "llm/papers/arxiv-2204.02311/README.md",
+    "canonical_readme": "llm/papers/arxiv-2204.02311/README.md",
+    "source_path": "llm/papers/arxiv-2204.02311/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Aakanksha Chowdhery",
+      "Sharan Narang",
+      "Jacob Devlin",
+      "Maarten Bosma",
+      "Gaurav Mishra",
+      "Adam Roberts",
+      "Paul Barham",
+      "Hyung Won Chung",
+      "Charles Sutton",
+      "Sebastian Gehrmann",
+      "等 57 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2204.05862",
+    "title": "Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback",
+    "url": "https://arxiv.org/abs/2204.05862",
+    "arxiv_id": "2204.05862",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "llm/posttraining/preferences",
+      "llm/posttraining/rl"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2204.05862"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p289",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2204.05862",
+    "canonical_path": "llm/papers/arxiv-2204.05862/README.md",
+    "canonical_readme": "llm/papers/arxiv-2204.05862/README.md",
+    "source_path": "llm/papers/arxiv-2204.05862/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Yuntao Bai",
+      "Andy Jones",
+      "Kamal Ndousse",
+      "Amanda Askell",
+      "Anna Chen",
+      "Nova DasSarma",
+      "Dawn Drain",
+      "Stanislav Fort",
+      "Deep Ganguli",
+      "Tom Henighan",
+      "等 21 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2210.10760",
+    "title": "Scaling Laws for Reward Model Overoptimization",
+    "url": "https://arxiv.org/abs/2210.10760",
+    "arxiv_id": "2210.10760",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "llm/posttraining/preferences",
+      "llm/posttraining/rl"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2210.10760"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p290",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation",
+      "analysis"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2210.10760",
+    "canonical_path": "llm/papers/arxiv-2210.10760/README.md",
+    "canonical_readme": "llm/papers/arxiv-2210.10760/README.md",
+    "source_path": "llm/papers/arxiv-2210.10760/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Leo Gao",
+      "John Schulman",
+      "Jacob Hilton"
+    ]
+  },
+  {
+    "id": "arxiv:2210.11416",
+    "title": "Scaling Instruction-Finetuned Language Models",
+    "url": "https://arxiv.org/abs/2210.11416",
+    "arxiv_id": "2210.11416",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "llm/posttraining/sft"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2210.11416"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p291",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2210.11416",
+    "canonical_path": "llm/papers/arxiv-2210.11416/README.md",
+    "canonical_readme": "llm/papers/arxiv-2210.11416/README.md",
+    "source_path": "llm/papers/arxiv-2210.11416/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Hyung Won Chung",
+      "Le Hou",
+      "Shayne Longpre",
+      "Barret Zoph",
+      "Yi Tay",
+      "William Fedus",
+      "Yunxuan Li",
+      "Xuezhi Wang",
+      "Mostafa Dehghani",
+      "Siddhartha Brahma",
+      "等 25 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2212.08073",
+    "title": "Constitutional AI: Harmlessness from AI Feedback",
+    "url": "https://arxiv.org/abs/2212.08073",
+    "arxiv_id": "2212.08073",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "llm/posttraining/preferences"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2212.08073"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p292",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2212.08073",
+    "canonical_path": "llm/papers/arxiv-2212.08073/README.md",
+    "canonical_readme": "llm/papers/arxiv-2212.08073/README.md",
+    "source_path": "llm/papers/arxiv-2212.08073/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Yuntao Bai",
+      "Saurav Kadavath",
+      "Sandipan Kundu",
+      "Amanda Askell",
+      "Jackson Kernion",
+      "Andy Jones",
+      "Anna Chen",
+      "Anna Goldie",
+      "Azalia Mirhoseini",
+      "Cameron McKinnon",
+      "等 41 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2212.10560",
+    "title": "Self-Instruct: Aligning Language Models with Self-Generated Instructions",
+    "url": "https://arxiv.org/abs/2212.10560",
+    "arxiv_id": "2212.10560",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "llm/posttraining/sft"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2212.10560"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p293",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2212.10560",
+    "canonical_path": "llm/papers/arxiv-2212.10560/README.md",
+    "canonical_readme": "llm/papers/arxiv-2212.10560/README.md",
+    "source_path": "llm/papers/arxiv-2212.10560/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Yizhong Wang",
+      "Yeganeh Kordi",
+      "Swaroop Mishra",
+      "Alisa Liu",
+      "Noah A. Smith",
+      "Daniel Khashabi",
+      "Hannaneh Hajishirzi"
+    ]
+  },
+  {
+    "id": "arxiv:2303.08774",
+    "title": "GPT-4 Technical Report",
+    "url": "https://arxiv.org/abs/2303.08774",
+    "arxiv_id": "2303.08774",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "llm/pretraining"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2303.08774"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p294",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2303.08774",
+    "canonical_path": "llm/papers/arxiv-2303.08774/README.md",
+    "canonical_readme": "llm/papers/arxiv-2303.08774/README.md",
+    "source_path": "llm/papers/arxiv-2303.08774/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "OpenAI",
+      "Josh Achiam",
+      "Steven Adler",
+      "Sandhini Agarwal",
+      "Lama Ahmad",
+      "Ilge Akkaya",
+      "Florencia Leoni Aleman",
+      "Diogo Almeida",
+      "Janko Altenschmidt",
+      "Sam Altman",
+      "等 271 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2305.11206",
+    "title": "LIMA: Less Is More for Alignment",
+    "url": "https://arxiv.org/abs/2305.11206",
+    "arxiv_id": "2305.11206",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "llm/posttraining/sft"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2305.11206"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p295",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2305.11206",
+    "canonical_path": "llm/papers/arxiv-2305.11206/README.md",
+    "canonical_readme": "llm/papers/arxiv-2305.11206/README.md",
+    "source_path": "llm/papers/arxiv-2305.11206/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Chunting Zhou",
+      "Pengfei Liu",
+      "Puxin Xu",
+      "Srini Iyer",
+      "Jiao Sun",
+      "Yuning Mao",
+      "Xuezhe Ma",
+      "Avia Efrat",
+      "Ping Yu",
+      "Lili Yu",
+      "等 5 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2305.13245",
+    "title": "GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints",
+    "url": "https://arxiv.org/abs/2305.13245",
+    "arxiv_id": "2305.13245",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "llm/inference",
+      "llm/architecture"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2305.13245"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p296",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2305.13245",
+    "canonical_path": "llm/papers/arxiv-2305.13245/README.md",
+    "canonical_readme": "llm/papers/arxiv-2305.13245/README.md",
+    "source_path": "llm/papers/arxiv-2305.13245/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Joshua Ainslie",
+      "James Lee-Thorp",
+      "Michiel de Jong",
+      "Yury Zemlyanskiy",
+      "Federico Lebrón",
+      "Sumit Sanghai"
+    ]
+  },
+  {
+    "id": "arxiv:2305.20050",
+    "title": "Let's Verify Step by Step",
+    "url": "https://arxiv.org/abs/2305.20050",
+    "arxiv_id": "2305.20050",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "llm/posttraining/rl",
+      "llm/posttraining/preferences"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2305.20050"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p297",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation",
+      "evaluation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2305.20050",
+    "canonical_path": "llm/papers/arxiv-2305.20050/README.md",
+    "canonical_readme": "llm/papers/arxiv-2305.20050/README.md",
+    "source_path": "llm/papers/arxiv-2305.20050/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Hunter Lightman",
+      "Vineet Kosaraju",
+      "Yura Burda",
+      "Harri Edwards",
+      "Bowen Baker",
+      "Teddy Lee",
+      "Jan Leike",
+      "John Schulman",
+      "Ilya Sutskever",
+      "Karl Cobbe"
+    ]
+  },
+  {
+    "id": "arxiv:2306.15595",
+    "title": "Extending Context Window of Large Language Models via Positional Interpolation",
+    "url": "https://arxiv.org/abs/2306.15595",
+    "arxiv_id": "2306.15595",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "llm/long-context"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2306.15595"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p298",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2306.15595",
+    "canonical_path": "llm/papers/arxiv-2306.15595/README.md",
+    "canonical_readme": "llm/papers/arxiv-2306.15595/README.md",
+    "source_path": "llm/papers/arxiv-2306.15595/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Shouyuan Chen",
+      "Sherman Wong",
+      "Liangjian Chen",
+      "Yuandong Tian"
+    ]
+  },
+  {
+    "id": "arxiv:2307.03172",
+    "title": "Lost in the Middle: How Language Models Use Long Contexts",
+    "url": "https://arxiv.org/abs/2307.03172",
+    "arxiv_id": "2307.03172",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "llm/pretraining",
+      "llm/long-context",
+      "cross-domain/evaluation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2307.03172"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p299",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "evaluation",
+      "analysis"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2307.03172",
+    "canonical_path": "llm/papers/arxiv-2307.03172/README.md",
+    "canonical_readme": "llm/papers/arxiv-2307.03172/README.md",
+    "source_path": "llm/papers/arxiv-2307.03172/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Nelson F. Liu",
+      "Kevin Lin",
+      "John Hewitt",
+      "Ashwin Paranjape",
+      "Michele Bevilacqua",
+      "Fabio Petroni",
+      "Percy Liang"
+    ]
+  },
+  {
+    "id": "arxiv:2307.09288",
+    "title": "Llama 2: Open Foundation and Fine-Tuned Chat Models",
+    "url": "https://arxiv.org/abs/2307.09288",
+    "arxiv_id": "2307.09288",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "llm/posttraining/sft",
+      "llm/posttraining/preferences",
+      "llm/posttraining/rl"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2307.09288"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p300",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2307.09288",
+    "canonical_path": "llm/papers/arxiv-2307.09288/README.md",
+    "canonical_readme": "llm/papers/arxiv-2307.09288/README.md",
+    "source_path": "llm/papers/arxiv-2307.09288/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Hugo Touvron",
+      "Louis Martin",
+      "Kevin Stone",
+      "Peter Albert",
+      "Amjad Almahairi",
+      "Yasmine Babaei",
+      "Nikolay Bashlykov",
+      "Soumya Batra",
+      "Prajjwal Bhargava",
+      "Shruti Bhosale",
+      "等 58 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2309.00071",
+    "title": "YaRN: Efficient Context Window Extension of Large Language Models",
+    "url": "https://arxiv.org/abs/2309.00071",
+    "arxiv_id": "2309.00071",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "llm/long-context"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2309.00071"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p301",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2309.00071",
+    "canonical_path": "llm/papers/arxiv-2309.00071/README.md",
+    "canonical_readme": "llm/papers/arxiv-2309.00071/README.md",
+    "source_path": "llm/papers/arxiv-2309.00071/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Bowen Peng",
+      "Jeffrey Quesnelle",
+      "Honglu Fan",
+      "Enrico Shippole"
+    ]
+  },
+  {
+    "id": "arxiv:2309.06180",
+    "title": "Efficient Memory Management for Large Language Model Serving with PagedAttention",
+    "url": "https://arxiv.org/abs/2309.06180",
+    "arxiv_id": "2309.06180",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "llm/inference"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2309.06180"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p302",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2309.06180",
+    "canonical_path": "llm/papers/arxiv-2309.06180/README.md",
+    "canonical_readme": "llm/papers/arxiv-2309.06180/README.md",
+    "source_path": "llm/papers/arxiv-2309.06180/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Woosuk Kwon",
+      "Zhuohan Li",
+      "Siyuan Zhuang",
+      "Ying Sheng",
+      "Lianmin Zheng",
+      "Cody Hao Yu",
+      "Joseph E. Gonzalez",
+      "Hao Zhang",
+      "Ion Stoica"
+    ]
+  },
+  {
+    "id": "arxiv:2309.14322",
+    "title": "Small-scale proxies for large-scale Transformer training instabilities",
+    "url": "https://arxiv.org/abs/2309.14322",
+    "arxiv_id": "2309.14322",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "llm/pretraining",
+      "cross-domain/training-science"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2309.14322"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p303",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2309.14322",
+    "canonical_path": "llm/papers/arxiv-2309.14322/README.md",
+    "canonical_readme": "llm/papers/arxiv-2309.14322/README.md",
+    "source_path": "llm/papers/arxiv-2309.14322/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Mitchell Wortsman",
+      "Peter J. Liu",
+      "Lechao Xiao",
+      "Katie Everett",
+      "Alex Alemi",
+      "Ben Adlam",
+      "John D. Co-Reyes",
+      "Izzeddin Gur",
+      "Abhishek Kumar",
+      "Roman Novak",
+      "Jeffrey Pennington",
+      "Jascha Sohl-dickstein",
+      "Kelvin Xu",
+      "Jaehoon Lee",
+      "Justin Gilmer",
+      "Simon Kornblith"
+    ]
+  },
+  {
+    "id": "arxiv:2309.16039",
+    "title": "Effective Long-Context Scaling of Foundation Models",
+    "url": "https://arxiv.org/abs/2309.16039",
+    "arxiv_id": "2309.16039",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "llm/long-context",
+      "llm/pretraining"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2309.16039"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p304",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2309.16039",
+    "canonical_path": "llm/papers/arxiv-2309.16039/README.md",
+    "canonical_readme": "llm/papers/arxiv-2309.16039/README.md",
+    "source_path": "llm/papers/arxiv-2309.16039/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Wenhan Xiong",
+      "Jingyu Liu",
+      "Igor Molybog",
+      "Hejia Zhang",
+      "Prajjwal Bhargava",
+      "Rui Hou",
+      "Louis Martin",
+      "Rashi Rungta",
+      "Karthik Abinav Sankararaman",
+      "Barlas Oguz",
+      "等 21 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2309.17453",
+    "title": "Efficient Streaming Language Models with Attention Sinks",
+    "url": "https://arxiv.org/abs/2309.17453",
+    "arxiv_id": "2309.17453",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "llm/pretraining",
+      "llm/long-context"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2309.17453"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p305",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation",
+      "analysis"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2309.17453",
+    "canonical_path": "llm/papers/arxiv-2309.17453/README.md",
+    "canonical_readme": "llm/papers/arxiv-2309.17453/README.md",
+    "source_path": "llm/papers/arxiv-2309.17453/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Guangxuan Xiao",
+      "Yuandong Tian",
+      "Beidi Chen",
+      "Song Han",
+      "Mike Lewis"
+    ]
+  },
+  {
+    "id": "arxiv:2310.03716",
+    "title": "A Long Way to Go: Investigating Length Correlations in RLHF",
+    "url": "https://arxiv.org/abs/2310.03716",
+    "arxiv_id": "2310.03716",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "llm/posttraining/preferences"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2310.03716"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p306",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation",
+      "analysis"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2310.03716",
+    "canonical_path": "llm/papers/arxiv-2310.03716/README.md",
+    "canonical_readme": "llm/papers/arxiv-2310.03716/README.md",
+    "source_path": "llm/papers/arxiv-2310.03716/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Prasann Singhal",
+      "Tanya Goyal",
+      "Jiacheng Xu",
+      "Greg Durrett"
+    ]
+  },
+  {
+    "id": "arxiv:2310.12036",
+    "title": "A General Theoretical Paradigm to Understand Learning from Human Preferences",
+    "url": "https://arxiv.org/abs/2310.12036",
+    "arxiv_id": "2310.12036",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "llm/posttraining/preferences"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2310.12036"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p307",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation",
+      "analysis"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2310.12036",
+    "canonical_path": "llm/papers/arxiv-2310.12036/README.md",
+    "canonical_readme": "llm/papers/arxiv-2310.12036/README.md",
+    "source_path": "llm/papers/arxiv-2310.12036/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Mohammad Gheshlaghi Azar",
+      "Mark Rowland",
+      "Bilal Piot",
+      "Daniel Guo",
+      "Daniele Calandriello",
+      "Michal Valko",
+      "Rémi Munos"
+    ]
+  },
+  {
+    "id": "arxiv:2310.16944",
+    "title": "Zephyr: Direct Distillation of LM Alignment",
+    "url": "https://arxiv.org/abs/2310.16944",
+    "arxiv_id": "2310.16944",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "llm/posttraining/preferences",
+      "llm/posttraining/sft"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2310.16944"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p308",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2310.16944",
+    "canonical_path": "llm/papers/arxiv-2310.16944/README.md",
+    "canonical_readme": "llm/papers/arxiv-2310.16944/README.md",
+    "source_path": "llm/papers/arxiv-2310.16944/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Lewis Tunstall",
+      "Edward Beeching",
+      "Nathan Lambert",
+      "Nazneen Rajani",
+      "Kashif Rasul",
+      "Younes Belkada",
+      "Shengyi Huang",
+      "Leandro von Werra",
+      "Clémentine Fourrier",
+      "Nathan Habib",
+      "等 4 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2402.01032",
+    "title": "Repeat After Me: Transformers are Better than State Space Models at Copying",
+    "url": "https://arxiv.org/abs/2402.01032",
+    "arxiv_id": "2402.01032",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "llm/architecture"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2402.01032"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p309",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2402.01032",
+    "canonical_path": "llm/papers/arxiv-2402.01032/README.md",
+    "canonical_readme": "llm/papers/arxiv-2402.01032/README.md",
+    "source_path": "llm/papers/arxiv-2402.01032/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Samy Jelassi",
+      "David Brandfonbrener",
+      "Sham M. Kakade",
+      "Eran Malach"
+    ]
+  },
+  {
+    "id": "arxiv:2402.02750",
+    "title": "KIVI: A Tuning-Free Asymmetric 2bit Quantization for KV Cache",
+    "url": "https://arxiv.org/abs/2402.02750",
+    "arxiv_id": "2402.02750",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "llm/inference"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2402.02750"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p310",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2402.02750",
+    "canonical_path": "llm/papers/arxiv-2402.02750/README.md",
+    "canonical_readme": "llm/papers/arxiv-2402.02750/README.md",
+    "source_path": "llm/papers/arxiv-2402.02750/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Zirui Liu",
+      "Jiayi Yuan",
+      "Hongye Jin",
+      "Shaochen Zhong",
+      "Zhaozhuo Xu",
+      "Vladimir Braverman",
+      "Beidi Chen",
+      "Xia Hu"
+    ]
+  },
+  {
+    "id": "arxiv:2402.03300",
+    "title": "DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models",
+    "url": "https://arxiv.org/abs/2402.03300",
+    "arxiv_id": "2402.03300",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "llm/posttraining/rl",
+      "llm/pretraining"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2402.03300"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p311",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2402.03300",
+    "canonical_path": "llm/papers/arxiv-2402.03300/README.md",
+    "canonical_readme": "llm/papers/arxiv-2402.03300/README.md",
+    "source_path": "llm/papers/arxiv-2402.03300/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Zhihong Shao",
+      "Peiyi Wang",
+      "Qihao Zhu",
+      "Runxin Xu",
+      "Junxiao Song",
+      "Xiao Bi",
+      "Haowei Zhang",
+      "Mingchuan Zhang",
+      "Y. K. Li",
+      "Y. Wu",
+      "Daya Guo"
+    ]
+  },
+  {
+    "id": "arxiv:2402.18668",
+    "title": "Simple linear attention language models balance the recall-throughput tradeoff",
+    "url": "https://arxiv.org/abs/2402.18668",
+    "arxiv_id": "2402.18668",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "llm/architecture"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2402.18668"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p312",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation",
+      "analysis"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2402.18668",
+    "canonical_path": "llm/papers/arxiv-2402.18668/README.md",
+    "canonical_readme": "llm/papers/arxiv-2402.18668/README.md",
+    "source_path": "llm/papers/arxiv-2402.18668/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Simran Arora",
+      "Sabri Eyuboglu",
+      "Michael Zhang",
+      "Aman Timalsina",
+      "Silas Alberti",
+      "Dylan Zinsley",
+      "James Zou",
+      "Atri Rudra",
+      "Christopher Ré"
+    ]
+  },
+  {
+    "id": "arxiv:2403.05530",
+    "title": "Gemini 1.5: Unlocking multimodal understanding across millions of tokens of context",
+    "url": "https://arxiv.org/abs/2403.05530",
+    "arxiv_id": "2403.05530",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "llm/long-context"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2403.05530"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "official_technical_report",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p313",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "video",
+      "audio",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding",
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2403.05530",
+    "canonical_path": "llm/papers/arxiv-2403.05530/README.md",
+    "canonical_readme": "llm/papers/arxiv-2403.05530/README.md",
+    "source_path": "llm/papers/arxiv-2403.05530/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Gemini Team, Google",
+      "Petko Georgiev",
+      "Ving Ian Lei",
+      "Ryan Burnell",
+      "Libin Bai",
+      "Anmol Gulati",
+      "Garrett Tanzer",
+      "Damien Vincent",
+      "Zhufeng Pan",
+      "Shibo Wang",
+      "等约 1100 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2403.19887",
+    "title": "Jamba: A Hybrid Transformer-Mamba Language Model",
+    "url": "https://arxiv.org/abs/2403.19887",
+    "arxiv_id": "2403.19887",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "llm/architecture",
+      "llm/long-context"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2403.19887"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p314",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2403.19887",
+    "canonical_path": "llm/papers/arxiv-2403.19887/README.md",
+    "canonical_readme": "llm/papers/arxiv-2403.19887/README.md",
+    "source_path": "llm/papers/arxiv-2403.19887/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Opher Lieber",
+      "Barak Lenz",
+      "Hofit Bata",
+      "Gal Cohen",
+      "Jhonathan Osin",
+      "Itay Dalmedigos",
+      "Erez Safahi",
+      "Shaked Meirom",
+      "Yonatan Belinkov",
+      "Shai Shalev-Shwartz",
+      "等（共 22 位作者）"
+    ]
+  },
+  {
+    "id": "arxiv:2404.06654",
+    "title": "RULER: What's the Real Context Size of Your Long-Context Language Models?",
+    "url": "https://arxiv.org/abs/2404.06654",
+    "arxiv_id": "2404.06654",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "llm/long-context",
+      "cross-domain/evaluation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2404.06654"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p315",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "evaluation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2404.06654",
+    "canonical_path": "llm/papers/arxiv-2404.06654/README.md",
+    "canonical_readme": "llm/papers/arxiv-2404.06654/README.md",
+    "source_path": "llm/papers/arxiv-2404.06654/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Cheng-Ping Hsieh",
+      "Simeng Sun",
+      "Samuel Kriman",
+      "Shantanu Acharya",
+      "Dima Rekesh",
+      "Fei Jia",
+      "Yang Zhang",
+      "Boris Ginsburg"
+    ]
+  },
+  {
+    "id": "arxiv:2404.10719",
+    "title": "Is DPO Superior to PPO for LLM Alignment? A Comprehensive Study",
+    "url": "https://arxiv.org/abs/2404.10719",
+    "arxiv_id": "2404.10719",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "llm/posttraining/preferences",
+      "llm/posttraining/rl"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2404.10719"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p316",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2404.10719",
+    "canonical_path": "llm/papers/arxiv-2404.10719/README.md",
+    "canonical_readme": "llm/papers/arxiv-2404.10719/README.md",
+    "source_path": "llm/papers/arxiv-2404.10719/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Shusheng Xu",
+      "Wei Fu",
+      "Jiaxuan Gao",
+      "Wenjie Ye",
+      "Weilin Liu",
+      "Zhiyu Mei",
+      "Guangju Wang",
+      "Chao Yu",
+      "Yi Wu"
+    ]
+  },
+  {
+    "id": "arxiv:2405.05904",
+    "title": "Does Fine-Tuning LLMs on New Knowledge Encourage Hallucinations?",
+    "url": "https://arxiv.org/abs/2405.05904",
+    "arxiv_id": "2405.05904",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "llm/posttraining/sft"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2405.05904"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p317",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation",
+      "analysis"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2405.05904",
+    "canonical_path": "llm/papers/arxiv-2405.05904/README.md",
+    "canonical_readme": "llm/papers/arxiv-2405.05904/README.md",
+    "source_path": "llm/papers/arxiv-2405.05904/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Zorik Gekhman",
+      "Gal Yona",
+      "Roee Aharoni",
+      "Matan Eyal",
+      "Amir Feder",
+      "Roi Reichart",
+      "Jonathan Herzig"
+    ]
+  },
+  {
+    "id": "arxiv:2405.14734",
+    "title": "SimPO: Simple Preference Optimization with a Reference-Free Reward",
+    "url": "https://arxiv.org/abs/2405.14734",
+    "arxiv_id": "2405.14734",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "llm/posttraining/preferences"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2405.14734"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p318",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2405.14734",
+    "canonical_path": "llm/papers/arxiv-2405.14734/README.md",
+    "canonical_readme": "llm/papers/arxiv-2405.14734/README.md",
+    "source_path": "llm/papers/arxiv-2405.14734/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Yu Meng",
+      "Mengzhou Xia",
+      "Danqi Chen"
+    ]
+  },
+  {
+    "id": "arxiv:2407.21783",
+    "title": "The Llama 3 Herd of Models",
+    "url": "https://arxiv.org/abs/2407.21783",
+    "arxiv_id": "2407.21783",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "llm/pretraining",
+      "llm/posttraining/sft",
+      "llm/posttraining/preferences"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2407.21783"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p319",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2407.21783",
+    "canonical_path": "llm/papers/arxiv-2407.21783/README.md",
+    "canonical_readme": "llm/papers/arxiv-2407.21783/README.md",
+    "source_path": "llm/papers/arxiv-2407.21783/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Aaron Grattafiori",
+      "Abhimanyu Dubey",
+      "Abhinav Jauhri",
+      "Abhinav Pandey",
+      "Abhishek Kadian",
+      "Ahmad Al-Dahle",
+      "Aiesha Letman",
+      "Akhil Mathur",
+      "Alan Schelten",
+      "Alex Vaughan",
+      "等 551 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2408.00118",
+    "title": "Gemma 2: Improving Open Language Models at a Practical Size",
+    "url": "https://arxiv.org/abs/2408.00118",
+    "arxiv_id": "2408.00118",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "llm/pretraining",
+      "llm/architecture"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2408.00118"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p320",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2408.00118",
+    "canonical_path": "llm/papers/arxiv-2408.00118/README.md",
+    "canonical_readme": "llm/papers/arxiv-2408.00118/README.md",
+    "source_path": "llm/papers/arxiv-2408.00118/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Gemma Team",
+      "Morgane Riviere",
+      "Shreya Pathak",
+      "Pier Giuseppe Sessa",
+      "Cassidy Hardin",
+      "Surya Bhupatiraju",
+      "Léonard Hussenot",
+      "Thomas Mesnard",
+      "Bobak Shahriari",
+      "Alexandre Ramé",
+      "等 188 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2409.19606",
+    "title": "Hyper-Connections",
+    "url": "https://arxiv.org/abs/2409.19606",
+    "arxiv_id": "2409.19606",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "llm/architecture"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2409.19606"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p321",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "image"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2409.19606",
+    "canonical_path": "llm/papers/arxiv-2409.19606/README.md",
+    "canonical_readme": "llm/papers/arxiv-2409.19606/README.md",
+    "source_path": "llm/papers/arxiv-2409.19606/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Defa Zhu",
+      "Hongzhi Huang",
+      "Zihao Huang",
+      "Yutao Zeng",
+      "Yunyao Mao",
+      "Banggu Wu",
+      "Qiyang Min",
+      "Xun Zhou"
+    ]
+  },
+  {
+    "id": "arxiv:2411.15124",
+    "title": "Tulu 3: Pushing Frontiers in Open Language Model Post-Training",
+    "url": "https://arxiv.org/abs/2411.15124",
+    "arxiv_id": "2411.15124",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "llm/posttraining/sft",
+      "llm/posttraining/preferences",
+      "llm/posttraining/rl"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2411.15124"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p322",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2411.15124",
+    "canonical_path": "llm/papers/arxiv-2411.15124/README.md",
+    "canonical_readme": "llm/papers/arxiv-2411.15124/README.md",
+    "source_path": "llm/papers/arxiv-2411.15124/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Nathan Lambert",
+      "Jacob Morrison",
+      "Valentina Pyatkin",
+      "Shengyi Huang",
+      "Hamish Ivison",
+      "Faeze Brahman",
+      "Lester James V. Miranda",
+      "Alisa Liu",
+      "Nouha Dziri",
+      "Shane Lyu",
+      "等 13 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2412.16720",
+    "title": "OpenAI o1 System Card",
+    "url": "https://arxiv.org/abs/2412.16720",
+    "arxiv_id": "2412.16720",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "llm/posttraining/rl"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2412.16720"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "official_technical_report",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p323",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2412.16720",
+    "canonical_path": "llm/papers/arxiv-2412.16720/README.md",
+    "canonical_readme": "llm/papers/arxiv-2412.16720/README.md",
+    "source_path": "llm/papers/arxiv-2412.16720/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "OpenAI",
+      "Aaron Jaech",
+      "Adam Kalai",
+      "Adam Lerer",
+      "Adam Richardson",
+      "Ahmed El-Kishky",
+      "Aiden Low",
+      "Alec Helyar",
+      "Aleksander Madry",
+      "Alex Beutel",
+      "等 254 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2501.00656",
+    "title": "2 OLMo 2 Furious",
+    "url": "https://arxiv.org/abs/2501.00656",
+    "arxiv_id": "2501.00656",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "llm/pretraining"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2501.00656"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p324",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2501.00656",
+    "canonical_path": "llm/papers/arxiv-2501.00656/README.md",
+    "canonical_readme": "llm/papers/arxiv-2501.00656/README.md",
+    "source_path": "llm/papers/arxiv-2501.00656/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Team OLMo",
+      "Pete Walsh",
+      "Luca Soldaini",
+      "Dirk Groeneveld",
+      "Kyle Lo",
+      "Shane Arora",
+      "Akshita Bhagia",
+      "Yuling Gu",
+      "Shengyi Huang",
+      "Matt Jordan",
+      "等 33 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2501.12599",
+    "title": "Kimi k1.5: Scaling Reinforcement Learning with LLMs",
+    "url": "https://arxiv.org/abs/2501.12599",
+    "arxiv_id": "2501.12599",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "llm/posttraining/rl",
+      "llm/inference"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2501.12599"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p325",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2501.12599",
+    "canonical_path": "llm/papers/arxiv-2501.12599/README.md",
+    "canonical_readme": "llm/papers/arxiv-2501.12599/README.md",
+    "source_path": "llm/papers/arxiv-2501.12599/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Kimi Team",
+      "Angang Du",
+      "Bofei Gao",
+      "Bowei Xing",
+      "Changjiu Jiang",
+      "Cheng Chen",
+      "Cheng Li",
+      "Chenjun Xiao",
+      "Chenzhuang Du",
+      "Chonghua Liao",
+      "等 96 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2501.17161",
+    "title": "SFT Memorizes, RL Generalizes: A Comparative Study of Foundation Model Post-training",
+    "url": "https://arxiv.org/abs/2501.17161",
+    "arxiv_id": "2501.17161",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "llm/posttraining/sft",
+      "llm/posttraining/rl"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2501.17161"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p326",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "image",
+      "multimodal"
+    ],
+    "task_tags": [
+      "decision",
+      "analysis"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2501.17161",
+    "canonical_path": "llm/papers/arxiv-2501.17161/README.md",
+    "canonical_readme": "llm/papers/arxiv-2501.17161/README.md",
+    "source_path": "llm/papers/arxiv-2501.17161/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Tianzhe Chu",
+      "Yuexiang Zhai",
+      "Jihan Yang",
+      "Shengbang Tong",
+      "Saining Xie",
+      "Dale Schuurmans",
+      "Quoc V. Le",
+      "Sergey Levine",
+      "Yi Ma"
+    ]
+  },
+  {
+    "id": "arxiv:2502.11089",
+    "title": "Native Sparse Attention: Hardware-Aligned and Natively Trainable Sparse Attention",
+    "url": "https://arxiv.org/abs/2502.11089",
+    "arxiv_id": "2502.11089",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "llm/pretraining",
+      "llm/architecture",
+      "llm/long-context"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2502.11089"
+    ],
+    "verification_status": "full_text_reading_and_evidence_audit",
+    "caveats": [],
+    "reading_status": "technical_reading",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p327",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2502.11089",
+    "canonical_path": "llm/papers/arxiv-2502.11089/reading.md",
+    "canonical_readme": "llm/papers/arxiv-2502.11089/README.md",
+    "source_path": "llm/papers/arxiv-2502.11089/source.json",
+    "legacy_paths": [],
+    "content_kind": "reading",
+    "authors": [
+      "Jingyang Yuan",
+      "Huazuo Gao",
+      "Damai Dai",
+      "Junyu Luo",
+      "Liang Zhao",
+      "Zhengyan Zhang",
+      "Zhenda Xie",
+      "Y. X. Wei",
+      "Lean Wang",
+      "Zhiping Xiao",
+      "Yuqing Wang",
+      "Chong Ruan",
+      "Ming Zhang",
+      "Wenfeng Liang",
+      "Wangding Zeng"
+    ]
+  },
+  {
+    "id": "arxiv:2503.14476",
+    "title": "DAPO: An Open-Source LLM Reinforcement Learning System at Scale",
+    "url": "https://arxiv.org/abs/2503.14476",
+    "arxiv_id": "2503.14476",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "llm/posttraining/rl"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2503.14476"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p328",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2503.14476",
+    "canonical_path": "llm/papers/arxiv-2503.14476/README.md",
+    "canonical_readme": "llm/papers/arxiv-2503.14476/README.md",
+    "source_path": "llm/papers/arxiv-2503.14476/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Qiying Yu",
+      "Zheng Zhang",
+      "Ruofei Zhu",
+      "Yufeng Yuan",
+      "Xiaochen Zuo",
+      "Yu Yue",
+      "Weinan Dai",
+      "Tiantian Fan",
+      "Gaohong Liu",
+      "Lingjun Liu",
+      "等 25 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2503.19786",
+    "title": "Gemma 3 Technical Report",
+    "url": "https://arxiv.org/abs/2503.19786",
+    "arxiv_id": "2503.19786",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "llm/pretraining",
+      "llm/architecture",
+      "llm/long-context"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2503.19786"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p329",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2503.19786",
+    "canonical_path": "llm/papers/arxiv-2503.19786/README.md",
+    "canonical_readme": "llm/papers/arxiv-2503.19786/README.md",
+    "source_path": "llm/papers/arxiv-2503.19786/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Gemma Team",
+      "Aishwarya Kamath",
+      "Johan Ferret",
+      "Shreya Pathak",
+      "Nino Vieillard",
+      "Ramona Merhej",
+      "Sarah Perrin",
+      "Tatiana Matejovicova",
+      "Alexandre Ramé",
+      "Morgane Rivière",
+      "等 206 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2503.20783",
+    "title": "Understanding R1-Zero-Like Training: A Critical Perspective",
+    "url": "https://arxiv.org/abs/2503.20783",
+    "arxiv_id": "2503.20783",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "llm/posttraining/rl"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2503.20783"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p330",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation",
+      "analysis"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2503.20783",
+    "canonical_path": "llm/papers/arxiv-2503.20783/README.md",
+    "canonical_readme": "llm/papers/arxiv-2503.20783/README.md",
+    "source_path": "llm/papers/arxiv-2503.20783/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Zichen Liu",
+      "Changyu Chen",
+      "Wenjun Li",
+      "Penghui Qi",
+      "Tianyu Pang",
+      "Chao Du",
+      "Wee Sun Lee",
+      "Min Lin"
+    ]
+  },
+  {
+    "id": "arxiv:2504.13837",
+    "title": "Does Reinforcement Learning Really Incentivize Reasoning Capacity in LLMs Beyond the Base Model?",
+    "url": "https://arxiv.org/abs/2504.13837",
+    "arxiv_id": "2504.13837",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "llm/posttraining/rl"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2504.13837"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p331",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code",
+      "image"
+    ],
+    "task_tags": [
+      "generation",
+      "analysis"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2504.13837",
+    "canonical_path": "llm/papers/arxiv-2504.13837/README.md",
+    "canonical_readme": "llm/papers/arxiv-2504.13837/README.md",
+    "source_path": "llm/papers/arxiv-2504.13837/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Yang Yue",
+      "Zhiqi Chen",
+      "Rui Lu",
+      "Andrew Zhao",
+      "Zhaokai Wang",
+      "Yang Yue",
+      "Shiji Song",
+      "Gao Huang"
+    ]
+  },
+  {
+    "id": "arxiv:2505.09388",
+    "title": "Qwen3 Technical Report",
+    "url": "https://arxiv.org/abs/2505.09388",
+    "arxiv_id": "2505.09388",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "llm/pretraining",
+      "llm/posttraining/sft",
+      "llm/posttraining/rl"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2505.09388"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p332",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2505.09388",
+    "canonical_path": "llm/papers/arxiv-2505.09388/README.md",
+    "canonical_readme": "llm/papers/arxiv-2505.09388/README.md",
+    "source_path": "llm/papers/arxiv-2505.09388/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "An Yang",
+      "Anfeng Li",
+      "Baosong Yang",
+      "Beichen Zhang",
+      "Binyuan Hui",
+      "Bo Zheng",
+      "Bowen Yu",
+      "Chang Gao",
+      "Chengen Huang",
+      "Chenxu Lv",
+      "等 50 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2505.22617",
+    "title": "The Entropy Mechanism of Reinforcement Learning for Reasoning Language Models",
+    "url": "https://arxiv.org/abs/2505.22617",
+    "arxiv_id": "2505.22617",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "llm/posttraining/rl"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2505.22617"
+    ],
+    "verification_status": "selected_method_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p333",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "generation",
+      "analysis"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2505.22617",
+    "canonical_path": "llm/papers/arxiv-2505.22617/README.md",
+    "canonical_readme": "llm/papers/arxiv-2505.22617/README.md",
+    "source_path": "llm/papers/arxiv-2505.22617/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Ganqu Cui",
+      "Yuchen Zhang",
+      "Jiacheng Chen",
+      "Lifan Yuan",
+      "Zhi Wang",
+      "Yuxin Zuo",
+      "Haozhan Li",
+      "Yuchen Fan",
+      "Huayu Chen",
+      "Weize Chen",
+      "等 7 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2512.02556",
+    "title": "DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models",
+    "url": "https://arxiv.org/abs/2512.02556",
+    "arxiv_id": "2512.02556",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "llm/pretraining",
+      "llm/architecture",
+      "llm/posttraining/rl"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2512.02556"
+    ],
+    "verification_status": "architecture_full_read_posttraining_partial_with_evidence_audit",
+    "caveats": [],
+    "reading_status": "technical_reading",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p334",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2512.02556",
+    "canonical_path": "llm/papers/arxiv-2512.02556/reading.md",
+    "canonical_readme": "llm/papers/arxiv-2512.02556/README.md",
+    "source_path": "llm/papers/arxiv-2512.02556/source.json",
+    "legacy_paths": [],
+    "content_kind": "reading",
+    "authors": [
+      "DeepSeek-AI",
+      "Aixin Liu",
+      "Aoxue Mei",
+      "Bangcai Lin",
+      "Bing Xue",
+      "Bingxuan Wang",
+      "Bingzheng Xu",
+      "Bochao Wu",
+      "Bowei Zhang",
+      "Chaofan Lin",
+      "等 254 位作者"
+    ]
+  },
+  {
+    "id": "arxiv:2609.19969",
+    "title": "DeepSeek-V4.1-Flash: Pushing the Limits of KV Cache Compression",
+    "url": "https://arxiv.org/abs/2609.19969",
+    "arxiv_id": "2609.19969",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "llm/pretraining",
+      "llm/architecture",
+      "llm/long-context"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2609.19969"
+    ],
+    "verification_status": "full_text_reading_and_evidence_audit",
+    "caveats": [],
+    "reading_status": "existing_technical_reading",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p335",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code",
+      "multimodal"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/arxiv-2609.19969",
+    "canonical_path": "llm/papers/arxiv-2609.19969/reading.md",
+    "canonical_readme": "llm/papers/arxiv-2609.19969/README.md",
+    "source_path": "llm/papers/arxiv-2609.19969/source.json",
+    "legacy_paths": [],
+    "content_kind": "reading",
+    "authors": [
+      "DeepSeek-AI",
+      "Anyi Xu",
+      "B. Li",
+      "Bangcai Lin",
+      "Bing Xue",
+      "BingCheng Xian",
+      "Bingzheng Xu",
+      "Bochao Wu",
+      "Bowei Zhang",
+      "Boyi Deng",
+      "等 582 位作者"
+    ]
+  },
+  {
+    "id": "url:https://openai.com/index/learning-to-reason-with-llms/",
+    "title": "Learning to reason with LLMs",
+    "url": "https://openai.com/index/learning-to-reason-with-llms/",
+    "arxiv_id": null,
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "llm/inference",
+      "llm/posttraining/rl"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://openai.com/index/learning-to-reason-with-llms/"
+    ],
+    "verification_status": "selected_sections_checked_not_full_read",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "official_blog",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p336",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "llm/papers/openai-o1",
+    "canonical_path": "llm/papers/openai-o1/README.md",
+    "canonical_readme": "llm/papers/openai-o1/README.md",
+    "source_path": "llm/papers/openai-o1/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "OpenAI"
     ]
   }
 ]

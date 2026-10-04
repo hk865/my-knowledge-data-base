@@ -7,7 +7,8 @@ source.json is the source of truth for a paper's identity. For every entry in pa
 folder has a source.json, this copies over: title, previous_titles, year, authors, topic_paths,
 modality_tags, task_tags, resource_kind and content_kind (only fields present in source.json).
 It then rewrites papers.csv, updates the title and topic lines in docs/paper-catalog.md, and
-regenerates docs/topics.md. Run it after editing cards; new folders are added with
+regenerates docs/topics.md; it also marks cards that gained a reading in the domain paper lists and refreshes
+the resource and reading counts in the READMEs. Run it after editing cards; new folders are added with
 tools/register_paper.py instead.
 """
 import csv
@@ -55,7 +56,7 @@ def main():
     for anchor, k, old, new in changes:
         print(f'{anchor} {k}: {str(old)[:50]} -> {str(new)[:50]}')
     print(f'{len(changes)} field changes')
-    if dry or not changes:
+    if dry:
         return
 
     eol = '\r\n' if '\r\n' in raw else '\n'
@@ -78,6 +79,31 @@ def main():
         cat = re.sub(rf'(<a id="{a}"></a>(?:(?!<a id=).)*?- 主题：)[^\r\n]*',
                      lambda m: m.group(1) + ', '.join(p['topic_paths']), cat, count=1, flags=re.S)
     wr('docs/paper-catalog.md', cat)
+
+    # Paper lists: a card that gained a reading should no longer say it has none.
+    for p in papers:
+        folder = p.get('canonical_folder') or ''
+        if p.get('content_kind') != 'reading' or '/papers/' not in folder:
+            continue
+        domain, name = folder.split('/papers/')
+        for listing, prefix in [(f'{domain}/papers/README.md', ''), (f'{domain}/PAPERS.md', 'papers/')]:
+            if os.path.exists(path(listing)):
+                t = rd(listing)
+                wr(listing, t.replace(f']({prefix}{name}/README.md) · {p.get("year") or "年份见原文"} · 文献卡，暂无独立精读',
+                                      f']({prefix}{name}/README.md) · {p.get("year") or "年份见原文"} · 技术精读'))
+
+    # Resource and reading counts in the root and domain READMEs.
+    reads_all = sum(1 for p in papers if p.get('content_kind') == 'reading')
+    t = rd('README.md')
+    t = re.sub(r'收录 \d+ 项资源，其中 \d+ 篇有讲解', f'收录 {len(papers)} 项资源，其中 {reads_all} 篇有讲解', t, count=1)
+    wr('README.md', t)
+    for domain in sorted({(p.get('canonical_folder') or '').split('/')[0] for p in papers} - {''}):
+        f = f'{domain}/README.md'
+        if not os.path.exists(path(f)):
+            continue
+        own = [p for p in papers if (p.get('canonical_folder') or '').startswith(domain + '/')]
+        reads = sum(1 for p in own if p.get('content_kind') == 'reading')
+        wr(f, re.sub(r'本领域收录 \d+ 项资源，其中 \d+ 篇有讲解', f'本领域收录 {len(own)} 项资源，其中 {reads} 篇有讲解', rd(f), count=1))
 
     subprocess.run([sys.executable, path('tools', 'gen_topics.py')], check=True, stdout=subprocess.DEVNULL)
     print('papers.json, papers.csv, paper-catalog.md and topics.md updated')
