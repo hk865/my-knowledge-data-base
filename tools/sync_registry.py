@@ -6,10 +6,12 @@ Usage:
 source.json is the source of truth for a paper's identity. For every entry in papers.json whose
 folder has a source.json, this copies over: title, previous_titles, year, authors, topic_paths,
 modality_tags, task_tags, resource_kind and content_kind (only fields present in source.json).
-It then rewrites papers.csv, updates the title and topic lines in docs/paper-catalog.md, and
-regenerates docs/topics.md; it also marks cards that gained a reading in the domain paper lists and refreshes
-the resource and reading counts in the READMEs. Run it after editing cards; new folders are added with
-tools/register_paper.py instead.
+It then rewrites papers.csv, updates anchored entries in docs/paper-catalog.md, and regenerates
+docs/topics.md. Domain inventories have their year and generated card labels refreshed by link,
+including cross-references and resources; curated descriptions and section order are preserved.
+Reading links and resource counts are reconciled even when source fields have not changed.
+--dry reports pending registry/list/catalog changes without writing or running generators.
+Run it after editing cards; new folders are added with tools/register_paper.py instead.
 """
 import csv
 import io
@@ -18,6 +20,8 @@ import os
 import re
 import subprocess
 import sys
+
+from registry_common import eol, listing_paths, update_catalog, update_listing
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FIELDS = ['title', 'previous_titles', 'year', 'authors', 'topic_paths', 'modality_tags', 'task_tags',
@@ -29,11 +33,13 @@ def path(*p):
 
 
 def rd(f):
-    return io.open(path(f), encoding='utf-8', newline='').read()
+    with io.open(path(f), encoding='utf-8', newline='') as stream:
+        return stream.read()
 
 
 def wr(f, t):
-    io.open(path(f), 'w', encoding='utf-8', newline='').write(t)
+    with io.open(path(f), 'w', encoding='utf-8', newline='') as stream:
+        stream.write(t)
 
 
 def main():
@@ -46,13 +52,11 @@ def main():
     raw = rd('papers.json')
     papers = json.loads(raw)
     changes = []
-    promoted = set()
     for p in papers:
         folder = p.get('canonical_folder')
         if not folder or not os.path.exists(path(folder, 'source.json')):
             continue
         src = json.loads(rd(folder + '/source.json'))
-        was_reading = p.get('content_kind') == 'reading'
         for k in FIELDS:
             if k not in src or src[k] in (None, '', []):
                 continue
@@ -60,21 +64,27 @@ def main():
             if p.get(k) != v:
                 changes.append((p['catalog_anchor'], k, p.get(k), v))
                 p[k] = v
-        # A newly completed reading must become the canonical catalog target.
-        if not was_reading and p.get('content_kind') == 'reading' and os.path.isfile(path(folder, 'reading.md')):
-            promoted.add(p['catalog_anchor'])
+        # Reconcile every reading, including entries whose kind was already updated.
+        if p.get('content_kind') == 'reading' and os.path.isfile(path(folder, 'reading.md')):
             target = folder + '/reading.md'
-            if p.get('canonical_path') != target:
-                changes.append((p['catalog_anchor'], 'canonical_path', p.get('canonical_path'), target))
-                p['canonical_path'] = target
+        elif p.get('content_kind') == 'bibliographic_card':
+            target = folder + '/README.md'
+        else:
+            continue
+        if p.get('canonical_path') != target:
+            changes.append((p['catalog_anchor'], 'canonical_path', p.get('canonical_path'), target))
+            p['canonical_path'] = target
     for anchor, k, old, new in changes:
         print(f'{anchor} {k}: {str(old)[:50]} -> {str(new)[:50]}')
     print(f'{len(changes)} field changes')
-    if dry:
-        return
+    updates = {}
 
-    eol = '\r\n' if '\r\n' in raw else '\n'
-    wr('papers.json', json.dumps(papers, ensure_ascii=False, indent=2).replace('\n', eol) + eol)
+    def stage(filename, text):
+        if rd(filename) != text:
+            updates[filename] = text
+
+    newline = eol(raw)
+    stage('papers.json', json.dumps(papers, ensure_ascii=False, indent=2).replace('\n', newline) + newline)
 
     craw = rd('papers.csv')
     header = next(csv.reader(io.StringIO(craw)))
@@ -84,44 +94,35 @@ def main():
     for p in papers:
         w.writerow(['' if p.get(c) is None else json.dumps(p[c], ensure_ascii=False)
                     if isinstance(p.get(c), (list, dict)) else str(p[c]) for c in header])
-    wr('papers.csv', buf.getvalue())
+    stage('papers.csv', buf.getvalue())
 
-    cat = rd('docs/paper-catalog.md')
-    for p in papers:
-        a = p['catalog_anchor']
-        cat = re.sub(rf'(## {a} · )[^\r\n]*', lambda m: m.group(1) + p['title'], cat, count=1)
-        cat = re.sub(rf'(<a id="{a}"></a>(?:(?!<a id=).)*?- 主题：)[^\r\n]*',
-                     lambda m: m.group(1) + ', '.join(p['topic_paths']), cat, count=1, flags=re.S)
-        if a in promoted:
-            target = p.get('canonical_path') or ''
-            cat = re.sub(rf'(<a id="{a}"></a>(?:(?!<a id=).)*?)- \[(?:文献卡|独立讲解)\]\([^\r\n]*\)',
-                         lambda m: m.group(1) + f'- [独立讲解](../{target})', cat, count=1, flags=re.S)
-    wr('docs/paper-catalog.md', cat)
+    stage('docs/paper-catalog.md', update_catalog(rd('docs/paper-catalog.md'), papers))
 
-    # Paper lists: a card that gained a reading should no longer say it has none.
-    for p in papers:
-        folder = p.get('canonical_folder') or ''
-        if p.get('content_kind') != 'reading' or '/papers/' not in folder:
-            continue
-        domain, name = folder.split('/papers/')
-        for listing, prefix in [(f'{domain}/papers/README.md', ''), (f'{domain}/PAPERS.md', 'papers/')]:
-            if os.path.exists(path(listing)):
-                t = rd(listing)
-                wr(listing, t.replace(f']({prefix}{name}/README.md) · {p.get("year") or "年份见原文"} · 文献卡，暂无独立精读',
-                                      f']({prefix}{name}/README.md) · {p.get("year") or "年份见原文"} · 技术精读'))
+    domains = {(p.get('canonical_folder') or '').split('/')[0] for p in papers} - {''}
+    for listing in listing_paths(ROOT, domains):
+        stage(listing, update_listing(rd(listing), listing, papers))
 
     # Resource and reading counts in the root and domain READMEs.
     reads_all = sum(1 for p in papers if p.get('content_kind') == 'reading')
     t = rd('README.md')
     t = re.sub(r'收录 \d+ 项资源，其中 \d+ 篇有讲解', f'收录 {len(papers)} 项资源，其中 {reads_all} 篇有讲解', t, count=1)
-    wr('README.md', t)
-    for domain in sorted({(p.get('canonical_folder') or '').split('/')[0] for p in papers} - {''}):
+    stage('README.md', t)
+    for domain in sorted(domains):
         f = f'{domain}/README.md'
         if not os.path.exists(path(f)):
             continue
         own = [p for p in papers if (p.get('canonical_folder') or '').startswith(domain + '/')]
         reads = sum(1 for p in own if p.get('content_kind') == 'reading')
-        wr(f, re.sub(r'本领域收录 \d+ 项资源，其中 \d+ 篇有讲解', f'本领域收录 {len(own)} 项资源，其中 {reads} 篇有讲解', rd(f), count=1))
+        stage(f, re.sub(r'本领域收录 \d+ 项资源，其中 \d+ 篇有讲解', f'本领域收录 {len(own)} 项资源，其中 {reads} 篇有讲解', rd(f), count=1))
+
+    for filename in updates:
+        print(('would update ' if dry else 'updating ') + filename)
+    print(f'{len(updates)} registry/catalog/list/count files need update')
+    if dry:
+        print('nothing written; docs/topics.md regeneration is not run in dry mode')
+        return
+    for filename, text in updates.items():
+        wr(filename, text)
 
     subprocess.run([sys.executable, path('tools', 'gen_topics.py')], check=True, stdout=subprocess.DEVNULL)
     print('papers.json, papers.csv, paper-catalog.md and topics.md updated')

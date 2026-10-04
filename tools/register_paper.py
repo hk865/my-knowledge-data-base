@@ -1,7 +1,7 @@
 """Register paper folders in every index of the repository.
 
 Usage:
-    python tools/register_paper.py [--dry] [folder ...]
+    python tools/register_paper.py [--dry] [--date YYYY-MM-DD] [folder ...]
 
 Without folders, every `<domain>/papers/<name>/source.json` whose folder is not yet in
 papers.json is registered. For each new paper this script:
@@ -13,11 +13,14 @@ papers.json is registered. For each new paper this script:
 5. regenerates docs/topics.md with tools/gen_topics.py.
 
 Tags: `modality_tags` and `task_tags` are read from source.json when present; otherwise they
-are guessed from topic_paths and printed so they can be corrected (edit source.json and
-papers.json, then rerun tools/gen_topics.py). Direction pages (`fields/<x>/PAPERS.md`) are
-not touched: the page author decides where a paper belongs.
+are guessed from topic_paths and printed so they can be corrected (edit source.json, then
+run tools/sync_registry.py). Direction pages (`fields/<x>/PAPERS.md`) are not touched:
+the page author decides where a paper belongs. New list entries go into today's dated
+section; --date overrides that registration date without changing publication years.
 """
+import argparse
 import csv
+from datetime import date
 import io
 import json
 import os
@@ -25,9 +28,10 @@ import re
 import subprocess
 import sys
 
+from registry_common import catalog_label, eol, insert_dated_item, list_status, update_catalog
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DOMAINS = ['foundations', 'llm', 'multimodal', 'robotics-embodied', 'cross-domain']
-KIND_WORDS = [('paper', '篇论文'), ('official_technical_report', '篇官方技术报告'), ('repository', '个代码仓库'), ('official_blog', '篇官方博客'), ('official_documentation', '份官方技术文档'), ('author_article', '篇作者文章')]
 
 # Fallback tags by topic path prefix (first match wins for each prefix that applies).
 GUESS = [
@@ -51,15 +55,13 @@ def path(*p):
 
 
 def rd(f):
-    return io.open(path(f), encoding='utf-8', newline='').read()
+    with io.open(path(f), encoding='utf-8', newline='') as stream:
+        return stream.read()
 
 
 def wr(f, t):
-    io.open(path(f), 'w', encoding='utf-8', newline='').write(t)
-
-
-def eol(t):
-    return '\r\n' if '\r\n' in t else '\n'
+    with io.open(path(f), 'w', encoding='utf-8', newline='') as stream:
+        stream.write(t)
 
 
 def dump_json(obj, like):
@@ -122,22 +124,16 @@ def entry_from(folder, src, anchor):
     return e, guessed
 
 
-def insert_after_last_item(text, line):
-    n = eol(text)
-    lines = text.split(n)
-    last = max((i for i, l in enumerate(lines) if l.startswith('- [')), default=len(lines) - 1)
-    lines.insert(last + 1, line)
-    return n.join(lines)
-
-
 def main():
     if hasattr(sys.stdout, 'reconfigure'):
         sys.stdout.reconfigure(encoding='utf-8')
-    if '-h' in sys.argv or '--help' in sys.argv:
-        print(__doc__)
-        return
-    dry = '--dry' in sys.argv
-    args = [a.replace('\\', '/').rstrip('/') for a in sys.argv[1:] if a != '--dry']
+    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument('--dry', action='store_true', help='preview without writing')
+    parser.add_argument('--date', type=date.fromisoformat, default=date.today(), help='registration date (YYYY-MM-DD)')
+    parser.add_argument('folders', nargs='*')
+    options = parser.parse_args()
+    dry = options.dry
+    args = [a.replace('\\', '/').rstrip('/') for a in options.folders]
     raw = rd('papers.json')
     papers = json.loads(raw)
     known = {p.get('canonical_folder') for p in papers} | {p['id'] for p in papers}
@@ -148,7 +144,7 @@ def main():
             f'{d}/{kind}/{name}' for d in DOMAINS for kind in ['papers', 'resources']
             if os.path.isdir(path(d, kind))
             for name in os.listdir(path(d, kind)) if os.path.exists(path(d, kind, name, 'source.json')))
-    nxt = max(int(p['catalog_anchor'][1:]) for p in papers if re.match(r'p\d+$', p.get('catalog_anchor', ''))) + 1
+    nxt = max((int(p['catalog_anchor'][1:]) for p in papers if re.match(r'p\d+$', p.get('catalog_anchor', ''))), default=0) + 1
     added = []
     for folder in folders:
         src = json.loads(rd(folder + '/source.json'))
@@ -157,7 +153,9 @@ def main():
         e, guessed = entry_from(folder, src, 'p%03d' % nxt)
         nxt += 1
         added.append(e)
+        known.update((folder, src['resource_id']))
         print(f"{e['catalog_anchor']} {folder} | {e['title'][:60]} | {e['year']} | "
+              f"{list_status(e)} | date={options.date} | "
               f"modality={e['modality_tags']} task={e['task_tags']}{' (guessed)' if guessed else ''}")
     if dry or not added:
         print(f'{len(added)} new; nothing written' if dry else 'nothing to register')
@@ -183,22 +181,23 @@ def main():
         block += n.join([f'<a id="{p["catalog_anchor"]}"></a>', f'## {p["catalog_anchor"]} · {p["title"]}', '',
                          f'- 标识：{p["id"]}', f'- 原文 / 官方入口：{p["url"]}', f'- 主题：{", ".join(p["topic_paths"])}',
                          f'- 身份核验：{p["verification_status"]}', '- 用户阅读状态：unknown',
-                         f'- [{"独立讲解" if p["content_kind"] == "reading" else "文献卡"}](../{p["canonical_path"]})', '', ''])
-    marker = '## 2026年10月3日既有条目更新'
-    cat = cat.replace(marker, block + marker, 1) if marker in cat else cat.rstrip() + n + n + block
-    counts = {k: sum(1 for p in papers if p.get('resource_kind', 'paper') == k) for k, _ in KIND_WORDS}
-    parts = '、'.join(f'{counts[k]} {w}' for k, w in KIND_WORDS if counts[k])
-    cat = re.sub(r'共 \d+ 个去重资源（[^）]*）', f'共 {len(papers)} 个去重资源（{parts}）', cat, count=1)
+                         f'- [{catalog_label(p)}](../{p["canonical_path"]})', '', ''])
+    # Dated maintenance notes follow the anchored catalog; never hardcode a day.
+    marker = re.search(r'^## \d{4}年\d{1,2}月\d{1,2}日', cat, re.M)
+    cat = cat[:marker.start()] + block + cat[marker.start():] if marker else cat.rstrip() + n + n + block
+    cat = update_catalog(cat, papers)
     wr('docs/paper-catalog.md', cat)
 
     for p in added:
         domain, kind, name = p['canonical_folder'].split('/', 2)
-        item = f'- [{p["title"]}]({{}}{name}/README.md) · {p["year"] or "年份见原文"} · 文献卡，暂无独立精读'
         for listing, prefix in [(f'{domain}/{kind}/README.md', ''), (f'{domain}/PAPERS.md', kind + '/')]:
             if os.path.exists(path(listing)) and f'{prefix}{name}/README.md' not in rd(listing):
-                wr(listing, insert_after_last_item(rd(listing), item.format(prefix)))
+                item = f'- [{p["title"]}]({prefix}{name}/README.md) · {p["year"] or "年份见原文"} · {list_status(p)}'
+                wr(listing, insert_dated_item(rd(listing), item, options.date))
 
     t = rd('README.md')
+    reads = sum(1 for p in papers if p.get('content_kind') == 'reading')
+    t = re.sub(r'收录 \d+ 项资源，其中 \d+ 篇有讲解', f'收录 {len(papers)} 项资源，其中 {reads} 篇有讲解', t, count=1)
     wr('README.md', re.sub(r'收录 \d+ 项资源', f'收录 {len(papers)} 项资源', t, count=1))
     for domain in DOMAINS:
         f = f'{domain}/README.md'

@@ -13,7 +13,7 @@ from urllib.parse import unquote
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LINK = re.compile(r'(?:\]\(|src=")([^)"\s]+)')
 # Placeholders used inside STYLE.md templates.
-PLACEHOLDERS = {'<官方链接>'}
+PLACEHOLDERS = {'STYLE.md': {'<官方链接>', '...'}}
 
 
 def markdown_files():
@@ -28,9 +28,7 @@ def broken_links(path):
         text = f.read()
     base = os.path.dirname(os.path.join(ROOT, path))
     for target in LINK.findall(text):
-        if path == 'STYLE.md' and target == '...':
-            continue
-        if target in PLACEHOLDERS or re.match(r'^(https?:|mailto:|#|data:)', target):
+        if target in PLACEHOLDERS.get(os.path.normpath(path), set()) or re.match(r'^(https?:|mailto:|#|data:)', target):
             continue
         rel = unquote(target.split('#', 1)[0])
         if rel and not os.path.exists(os.path.join(base, rel)):
