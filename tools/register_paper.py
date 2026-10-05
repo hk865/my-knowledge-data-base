@@ -27,6 +27,7 @@ import os
 import re
 import subprocess
 import sys
+from urllib.parse import urlsplit
 
 from registry_common import catalog_label, eol, insert_dated_item, list_status, update_catalog
 
@@ -91,6 +92,43 @@ def year_of(src, folder):
     return ''
 
 
+def public_source_urls(values):
+    """Keep paper/source links, not private conversation permalinks."""
+    if not isinstance(values, list):
+        return []
+    private_hosts = ('chatgpt.com', 'chat.openai.com', 'claude.ai', 'gemini.google.com')
+    result = []
+    for value in values:
+        if not isinstance(value, str):
+            continue
+        try:
+            parsed = urlsplit(value)
+            host = parsed.hostname or ''
+        except ValueError:
+            continue
+        if (parsed.scheme in ('http', 'https') and host and not parsed.username and not parsed.password
+                and not any(host == domain or host.endswith('.' + domain) for domain in private_hosts)):
+            result.append(value)
+    return result
+
+
+def public_chat_evidence(values):
+    """Export only academic provenance metadata, never raw chats or private IDs."""
+    if not isinstance(values, list):
+        return []
+    fields = ('role', 'date', 'association', 'message_time_association', 'evidence_type', 'relationship')
+    result = []
+    for value in values:
+        if not isinstance(value, dict):
+            continue
+        item = {key: value[key] for key in fields if isinstance(value.get(key), str)}
+        if isinstance(value.get('messageTimes'), list):
+            item['messageTimes'] = [time for time in value['messageTimes'] if isinstance(time, str)]
+        if item:
+            result.append(item)
+    return result
+
+
 def entry_from(folder, src, anchor):
     rid = src['resource_id']
     topics = src.get('topic_paths') or []
@@ -107,8 +145,10 @@ def entry_from(folder, src, anchor):
         'doi': rid.split(':', 1)[1] if rid.startswith('doi:') else None,
         'year': year_of(src, folder), 'topic_paths': topics, 'detail_topics': [],
         'architecture_tags': [], 'supervision_tags': [], 'provenance': [src.get('source_origin', 'repository-maintenance')],
-        'chat_evidence': [], 'verification_sources': [src.get('official_url')],
-        'verification_status': src.get('reading_depth', ''), 'caveats': [],
+        'chat_evidence': public_chat_evidence(src.get('chat_evidence', [])),
+        'verification_sources': public_source_urls(src.get('verification_sources', [src.get('official_url')])),
+        'verification_status': src.get('verification_status') or 'not_recorded', 'caveats': [],
+        'assistant_reading_status': src.get('reading_depth') or 'not_recorded',
         'reading_status': src.get('teaching_status', ''), 'resource_kind': src.get('resource_kind', 'paper'),
         'method_tags': [], 'evaluation_tags': [], 'catalog_anchor': anchor, 'user_reading_status': 'unknown',
         'modality_tags': mod, 'task_tags': task,
@@ -121,6 +161,13 @@ def entry_from(folder, src, anchor):
         e['authors'] = src['authors']
     if src.get('previous_titles'):
         e['previous_titles'] = src['previous_titles']
+    if 'original_chat_urls' in src:
+        e['original_chat_urls'] = public_source_urls(src['original_chat_urls'])
+    for key in ('reading_scope', 'read_version'):
+        if key in src:
+            e[key] = src[key]
+    if 'reading_scope' not in src and 'reading_boundary' in src:
+        e['reading_scope'] = src['reading_boundary']
     return e, guessed
 
 

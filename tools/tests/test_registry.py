@@ -113,6 +113,81 @@ class FormattingTests(unittest.TestCase):
         self.assertIn('- [资料卡，暂无独立精读](../cross-domain/resources/guide/README.md)', result)
 
 
+class EntryProvenanceTests(unittest.TestCase):
+    def entry(self, **overrides):
+        source = {
+            'resource_id': 'arxiv:2503.18813', 'title': 'Example paper', 'year': 2025,
+            'official_url': 'https://arxiv.org/abs/2503.18813',
+            'modality_tags': ['text'], 'task_tags': ['analysis'],
+        }
+        source.update(overrides)
+        result, _ = register_paper.entry_from('cross-domain/papers/example', source, 'p001')
+        return result
+
+    def test_abstract_read_is_separate_from_explicit_identity_verification(self):
+        entry = self.entry(verification_status='verified_primary_title_and_identifier',
+                           reading_depth='abstract_read_not_full_text', reading_scope='arXiv abstract only',
+                           read_version='v2', teaching_status='not_created')
+        self.assertEqual(entry['verification_status'], 'verified_primary_title_and_identifier')
+        self.assertEqual(entry['assistant_reading_status'], 'abstract_read_not_full_text')
+        self.assertEqual(entry['reading_scope'], 'arXiv abstract only')
+        self.assertEqual(entry['read_version'], 'v2')
+        self.assertEqual(entry['reading_status'], 'not_created')
+        self.assertEqual(entry['user_reading_status'], 'unknown')
+
+    def test_identity_is_not_inferred_from_reading_depth_or_nested_verification(self):
+        entry = self.entry(reading_depth='full_text_read', reading_boundary='Main text and appendix',
+                           verification_2026_10_05={'verification_status': 'verified_primary_title_and_identifier'})
+        self.assertEqual(entry['verification_status'], 'not_recorded')
+        self.assertEqual(entry['assistant_reading_status'], 'full_text_read')
+        self.assertEqual(entry['reading_scope'], 'Main text and appendix')
+        self.assertNotIn('verification_2026_10_05', entry)
+        for value in ('', None):
+            self.assertEqual(self.entry(verification_status=value)['verification_status'], 'not_recorded')
+
+    def test_id_only_evidence_preserves_empty_original_urls_and_chat_metadata(self):
+        evidence = {
+            'role': 'assistant', 'date': '2026-10-04T18:17:14Z',
+            'messageTimes': ['2026-10-04T18:17:14Z', '2026-10-04T18:23:34Z'],
+            'association': 'identifier_only', 'message_time_association': 'uncertain_one_of_two_candidate_messages',
+            'evidence_type': 'recovered_summary', 'relationship': 'Identifier recovered; no exact URL recovered',
+        }
+        entry = self.entry(original_chat_urls=[], chat_evidence=[dict(evidence,
+                           conversation_id='private-id', conversation_url='https://chatgpt.com/c/private-id',
+                           conversation_title='Private title', evidence='Raw transcript',
+                           user_question_summary='Private user context')])
+        self.assertEqual(entry['original_chat_urls'], [])
+        self.assertEqual(entry['chat_evidence'], [evidence])
+        self.assertNotIn('private-id', json.dumps(entry))
+        self.assertNotIn('Raw transcript', json.dumps(entry))
+
+    def test_supplied_academic_urls_and_verification_sources_are_preserved(self):
+        original = ['https://arxiv.org/pdf/2503.18813v1']
+        verified = ['https://arxiv.org/abs/2503.18813', 'https://arxiv.org/pdf/2503.18813v2']
+        entry = self.entry(original_chat_urls=original, verification_sources=verified)
+        self.assertEqual(entry['original_chat_urls'], original)
+        self.assertEqual(entry['verification_sources'], verified)
+        self.assertEqual(self.entry(verification_sources=[])['verification_sources'], [])
+        self.assertEqual(self.entry()['verification_sources'], ['https://arxiv.org/abs/2503.18813'])
+        self.assertNotIn('original_chat_urls', self.entry())
+
+    def test_private_chat_urls_and_arbitrary_nested_metadata_are_not_exported(self):
+        public = 'https://arxiv.org/abs/2503.18813'
+        urls = [public, 'https://chatgpt.com/c/private-id', 'https://chat.openai.com/c/private-id',
+                'https://claude.ai/chat/private-id', 'https://gemini.google.com/app/private-id',
+                'file:///private/chat.json', 'https://user:secret@example.org/paper', None]
+        entry = self.entry(original_chat_urls=urls, verification_sources=urls,
+                           chat_evidence=[{'role': 'assistant', 'association': {'conversation_id': 'private-id'},
+                                           'messageTimes': ['2026-10-04T18:17:14Z', {'conversation_id': 'private-id'}]},
+                                          {'conversation_id': 'private-id'}, 'Raw transcript'],
+                           raw_transcript='Raw transcript', conversation_id='private-id')
+        self.assertEqual(entry['original_chat_urls'], [public])
+        self.assertEqual(entry['verification_sources'], [public])
+        self.assertEqual(entry['chat_evidence'], [{'role': 'assistant', 'messageTimes': ['2026-10-04T18:17:14Z']}])
+        self.assertNotIn('private-id', json.dumps(entry))
+        self.assertNotIn('raw_transcript', entry)
+
+
 class ScriptTests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
@@ -183,6 +258,31 @@ class ScriptTests(unittest.TestCase):
         self.assertEqual(before, self.snapshot())
         self.assertIn('技术精读 | date=2026-10-04', output)
         generator.assert_not_called()
+
+    def test_registration_preserves_existing_records_and_source_rationale(self):
+        existing = paper('cross-domain/papers/existing', id='arxiv:2401.00001',
+                         verification_status='historical_status', assistant_reading_status='historical_reading',
+                         chat_evidence=[{'date': '2025-01-01', 'role': 'user', 'evidence': 'Existing provenance'}])
+        self.write_json('papers.json', [existing])
+        item = paper()
+        self.source(item)
+        source_path = item['canonical_folder'] + '/source.json'
+        source = json.loads(self.read(source_path))
+        source.update(verification_status='verified_primary_title_and_identifier',
+                      reading_depth='abstract_read_not_full_text', original_chat_urls=[],
+                      chat_evidence=[{'date': '2026-10-04', 'role': 'assistant', 'conversation_id': 'private-id'}],
+                      selection_rationale='Existing rationale retained in source')
+        self.write_json(source_path, source)
+        source_before = self.read(source_path)
+        self.run_script(register_paper, '--date', '2026-10-05', item['canonical_folder'])
+        entries = json.loads(self.read('papers.json'))
+        self.assertEqual(entries[0], existing)
+        self.assertEqual(entries[1]['verification_status'], 'verified_primary_title_and_identifier')
+        self.assertEqual(entries[1]['assistant_reading_status'], 'abstract_read_not_full_text')
+        self.assertEqual(entries[1]['original_chat_urls'], [])
+        self.assertEqual(entries[1]['chat_evidence'], [{'role': 'assistant', 'date': '2026-10-04'}])
+        self.assertEqual(self.read(source_path), source_before)
+        self.assertIn('身份核验：verified_primary_title_and_identifier', self.read('docs/paper-catalog.md'))
 
     def test_sync_recovers_stale_reading_link_placeholder_and_is_idempotent(self):
         item = paper(canonical_path='cross-domain/papers/camel/README.md')
