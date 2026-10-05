@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "resource_id": "url:https://triton-lang.org/main/getting-started/tutorials/02-fused-softmax.html",
+  "title": "Fused Softmax",
+  "resource_kind": "official_documentation",
+  "resource_subtype": "official_tutorial",
+  "canonical_folder": "cross-domain/resources/triton-fused-softmax",
+  "official_url": "https://triton-lang.org/main/getting-started/tutorials/02-fused-softmax.html",
+  "official_fulltext_url": "https://triton-lang.org/main/getting-started/tutorials/02-fused-softmax.html",
+  "year": null,
+  "authors": [],
+  "author_attribution_status": "本次页面未见个人署名；不推定作者",
+  "publisher": "Triton",
+  "publication_date": null,
+  "topic_paths": [
+    "cross-domain/training-science"
+  ],
+  "modality_tags": [
+    "code"
+  ],
+  "task_tags": [
+    "analysis"
+  ],
+  "source_origin": "historical_assistant_recommendation",
+  "original_chat_urls": [
+    "https://triton-lang.org/main/getting-started/tutorials/02-fused-softmax.html"
+  ],
+  "chat_evidence": [
+    {
+      "role": "assistant",
+      "messageTimes": [
+        "2026-10-04T18:17:14Z",
+        "2026-10-04T18:23:34Z"
+      ],
+      "message_time_association": "uncertain_one_of_two_candidate_messages",
+      "evidence_type": "主任务转交的历史检索恢复结果；本任务未取得逐条原始消息",
+      "relationship": "已恢复此完整官方 URL；尚未确定此 URL 对应两个候选时间中的哪一条消息",
+      "user_interest_scope": "概念学习：算子、具体实现与调度的分工；硬件和任务变化的影响。未据此推定内核开发项目或长期方向。"
+    }
+  ],
+  "content_kind": "bibliographic_card",
+  "reading_depth": "selected_documentation_sections",
+  "reading_path": null,
+  "teaching_status": "not_created",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "accessed_on": "2026-10-05",
+  "source_record_updated": "2026-10-05",
+  "verification_status": "verified_primary_page",
+  "verification_sources": [
+    "https://triton-lang.org/main/getting-started/tutorials/02-fused-softmax.html"
+  ],
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "只保留摘要与官方链接；未镜像全文或示例代码。"
+  },
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "date_basis": "main 分支滚动文档；本次页面未见发布日期或更新日期，year/publication_date 保持空值。访问日不是出版年。",
+  "read_version": "main（URL 指向滚动文档；未固定发布版本或提交 SHA）",
+  "version_status": "rolling_main_undated_unpinned",
+  "reading_scope": "导言、Motivations、Compute Kernel 及设备属性/启动封装；查看 Unit Test 与 Benchmark 设置和页面结果，不逐项复核性能表。",
+  "reading_boundary": "概念选读；未运行示例、未复现实验、未做跨硬件兼容性测试；无独立 reading.md，不计全文精读。",
+  "mechanism_summary": "将一行 softmax 的求最大值、指数、求和与归一化融合进一个 kernel，减少中间数据搬运；示例根据行宽和设备资源选择执行配置。",
+  "evidence_boundary": "示例针对行能放入 GPU 片上存储的矩阵。页面性能文字和表格不能据此推为任意形状、任意硬件上都优于 torch.softmax；本卡不引用加速倍数。",
+  "interpretive_boundary": "硬件和输入形状影响实现配置，但并不意味着运算定义随硬件改变。是否需要重写须看后端支持和输入是否超出实现适用范围，这是概念推论，不是跨设备保证。",
+  "known_newer_material_not_opened": "未查到本页有更晚的独立版本标记；未展开相邻自动调优教程或追溯源码提交，不能声称已核对最新提交。",
+  "topic_scope_note": "通用张量运算与计算实现的概念资料，归作训练科学的实现背景；不限于 LLM，不据此新建长期研究方向。",
+  "assistant_reading_status": "selected_documentation_sections"
+}

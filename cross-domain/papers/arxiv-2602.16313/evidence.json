@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2602.16313",
+  "title": "MemoryArena: Benchmarking Agent Memory in Interdependent Multi-Session Agentic Tasks",
+  "checked_on": "2026-10-05",
+  "read_version": "arXiv:2602.16313v2",
+  "reading_scope": "arXiv abstract and metadata；HTML §1 excerpt；HTML §3.1 selected task descriptions；HTML §§4.1–4.4 and §4.6；HTML §4.5 latency table excerpt and discussion; only some Table 3 rows read; appendix not audited；PDF targeted text check: page 6 §4.1 versus page 7 Table 3 model label; not full PDF reading",
+  "independently_reproduced": false,
+  "primary_sources": [
+    {
+      "url": "https://arxiv.org/abs/2602.16313v2",
+      "supports": [
+        "canonical metadata title",
+        "version",
+        "dates",
+        "venue comment"
+      ],
+      "locator": "Title; Comments; Submission history"
+    },
+    {
+      "url": "https://arxiv.org/html/2602.16313v2",
+      "supports": [
+        "task outcomes",
+        "metrics",
+        "model-label inconsistency",
+        "external-memory limits"
+      ],
+      "locator": "§4.1–4.6; Table 3; Table 4"
+    },
+    {
+      "url": "https://arxiv.org/html/2602.16313v2",
+      "supports": [
+        "task design"
+      ],
+      "locator": "§3.1 selected task descriptions"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2602.16313v2",
+      "supports": [
+        "task-agent label inconsistency also present in official PDF"
+      ],
+      "locator": "PDF page 6 §4.1 versus page 7 Table 3"
+    }
+  ],
+  "claims": [
+    {
+      "id": "identity",
+      "claim": "MemoryArena: Benchmarking Agent Memory in Interdependent Multi-Session Agentic Tasks；2602.16313v2；版本日期 2026-09-17",
+      "url": "https://arxiv.org/abs/2602.16313v2",
+      "location": "Title; Authors; Submission history"
+    },
+    {
+      "id": "problem",
+      "claim": "会背历史不等于能利用历史完成后续任务。",
+      "source_refs": [
+        "https://arxiv.org/abs/2602.16313v2",
+        "https://arxiv.org/html/2602.16313v2",
+        "https://arxiv.org/pdf/2602.16313v2"
+      ]
+    },
+    {
+      "id": "mechanism",
+      "claim": "将跨会话、显式依赖的子任务放入 Memory–Agent–Environment 循环，联合评估购物、旅行计划、渐进搜索及数理推导。",
+      "source_refs": [
+        "https://arxiv.org/abs/2602.16313v2",
+        "https://arxiv.org/html/2602.16313v2",
+        "https://arxiv.org/pdf/2602.16313v2"
+      ]
+    },
+    {
+      "id": "limits",
+      "claim": "§4.1 写 GPT-5-mini，Table 3 caption／延迟表写 gpt-5.1-mini，须核代码厘清；这些任务不直接覆盖真实网络安全或大系统工程。未复现。",
+      "source_refs": [
+        "https://arxiv.org/abs/2602.16313v2",
+        "https://arxiv.org/html/2602.16313v2",
+        "https://arxiv.org/pdf/2602.16313v2"
+      ]
+    },
+    {
+      "id": "reported_evidence",
+      "claim": "作者报告外部记忆不普遍胜过长上下文；随依赖加深，各方案仍退化。评测区分任务成功、子任务进度与延迟。",
+      "source_refs": [
+        "https://arxiv.org/abs/2602.16313v2",
+        "https://arxiv.org/html/2602.16313v2",
+        "https://arxiv.org/pdf/2602.16313v2"
+      ]
+    }
+  ],
+  "source_caveats": [
+    {
+      "kind": "source_internal_model_label_inconsistency",
+      "detail": "§4.1 says GPT-5-mini task agent; Table 3 caption and Table 4 label gpt-5.1-mini. Avoid precise model-controlled claims until code/config is checked."
+    }
+  ],
+  "unverified": [
+    "全文逐页精读",
+    "独立实验复现",
+    "完整源码审计",
+    "再分发许可"
+  ],
+  "editorial_mapping": {
+    "guide": "cross-domain/fields/agents/memory-evidence-loop.md",
+    "status": "editorial_teaching_proposal_not_author_architecture_or_user_adoption"
+  }
+}

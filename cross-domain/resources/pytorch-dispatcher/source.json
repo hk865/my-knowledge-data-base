@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "resource_id": "url:https://docs.pytorch.org/tutorials/advanced/dispatcher.html",
+  "title": "Registering a Dispatched Operator in C++",
+  "resource_kind": "official_documentation",
+  "resource_subtype": "official_tutorial",
+  "canonical_folder": "cross-domain/resources/pytorch-dispatcher",
+  "official_url": "https://docs.pytorch.org/tutorials/advanced/dispatcher.html",
+  "official_fulltext_url": "https://docs.pytorch.org/tutorials/advanced/dispatcher.html",
+  "year": "2020",
+  "authors": [],
+  "author_attribution_status": "本次页面未见个人署名；不推定作者",
+  "publisher": "PyTorch",
+  "publication_date": "2020-07-22",
+  "topic_paths": [
+    "cross-domain/training-science"
+  ],
+  "modality_tags": [
+    "code"
+  ],
+  "task_tags": [
+    "analysis"
+  ],
+  "source_origin": "historical_assistant_recommendation",
+  "original_chat_urls": [
+    "https://docs.pytorch.org/tutorials/advanced/dispatcher.html"
+  ],
+  "chat_evidence": [
+    {
+      "role": "assistant",
+      "messageTimes": [
+        "2026-10-04T18:17:14Z",
+        "2026-10-04T18:23:34Z"
+      ],
+      "message_time_association": "uncertain_one_of_two_candidate_messages",
+      "evidence_type": "主任务转交的历史检索恢复结果；本任务未取得逐条原始消息",
+      "relationship": "已恢复此完整官方 URL；尚未确定此 URL 对应两个候选时间中的哪一条消息",
+      "user_interest_scope": "概念学习：算子、具体实现与调度的分工；硬件和任务变化的影响。未据此推定内核开发项目或长期方向。"
+    }
+  ],
+  "content_kind": "bibliographic_card",
+  "reading_depth": "selected_documentation_sections",
+  "reading_path": null,
+  "teaching_status": "not_created",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "accessed_on": "2026-10-05",
+  "source_record_updated": "2026-10-05",
+  "verification_status": "verified_primary_page",
+  "verification_sources": [
+    "https://docs.pytorch.org/tutorials/advanced/dispatcher.html",
+    "https://docs.pytorch.org/tutorials/advanced/custom_ops_landing_page.html"
+  ],
+  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_path": null,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "只保留摘要与官方链接；未镜像全文或示例代码。"
+  },
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "date_basis": "页面 Created On 2020-07-22；Last Updated 2024-07-22；Last Verified 2024-11-05。year 对应创建年，不是当前软件版本年份。",
+  "last_updated": "2024-07-22",
+  "official_last_verified": "2024-11-05",
+  "read_version": "未固定版本的 URL；本次网页标题显示 PyTorch Tutorials 2.14.0+cu130",
+  "version_status": "unversioned_url_observed_site_build_not_tutorial_revision",
+  "document_status": "deprecated_since_pytorch_2.4",
+  "reading_scope": "标题、日期、弃用提示、导言、Defining schema and backend implementations、Adding autograd support 与 Going beyond autograd 的机制解释；另读替代入口的当前指南选择与 When should I create a Custom Operator。",
+  "reading_boundary": "概念选读；未逐段核验全部 Autocast/Batched/Tracer 示例，未编译运行，未生成独立精读；不能把弃用教程当作当前实现规范。",
+  "mechanism_summary": "算子规定运算；同一算子可注册不同后端实现。dispatcher 依据张量参数和运行状态选择 dispatch key 对应的 kernel。",
+  "interpretive_boundary": "把运算定义、实现选择与硬件资源安排区分开，是据上述机制作出的教学解释；文档不提供全系统资源调度模型。",
+  "current_implementation_entry": {
+    "title": "PyTorch Custom Operators",
+    "url": "https://docs.pytorch.org/tutorials/advanced/custom_ops_landing_page.html",
+    "last_updated": "2026-06-16",
+    "accessed_on": "2026-10-05",
+    "discovery_origin": "new_verification_following_official_deprecation_notice_not_recovered_chat_url",
+    "reading_scope": "入口介绍、Python/C++ 路线、When should I create a Custom Operator",
+    "scope_note": "内置算子组合可表达的运算，官方建议写 Python 函数；接入外部实现时再按需要注册自定义算子。",
+    "not_opened": [
+      "该入口链接的 Custom Python Operators 分教程",
+      "该入口链接的 Custom C++ and CUDA Operators 分教程",
+      "The Custom Operators Manual"
+    ]
+  },
+  "topic_scope_note": "通用张量运算与计算实现的概念资料，归作训练科学的实现背景；不限于 LLM，不据此新建长期研究方向。",
+  "assistant_reading_status": "selected_documentation_sections"
+}

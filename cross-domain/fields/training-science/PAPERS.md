@@ -64,3 +64,8 @@
 - [The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks](../../papers/arxiv-1803.03635/README.md) · 2018 · 文献卡
 - [The Intrinsic Dimension of Images and Its Impact on Learning](https://arxiv.org/abs/2104.08894) · 2021 · 尚无文献卡
 - [How Does Batch Normalization Help Optimization?](https://arxiv.org/abs/1805.11604) · 2018 · 尚无文献卡
+
+## 计算实现的概念资料
+
+- [Registering a Dispatched Operator in C++](../../resources/pytorch-dispatcher/README.md) · 2020 · 资料卡 · 官方已弃用的概念入口，现行实现入口在卡内另列
+- [Fused Softmax](../../resources/triton-fused-softmax/README.md) · 年份未注明 · 资料卡 · 运算融合、内存读写与硬件实现的教学示例

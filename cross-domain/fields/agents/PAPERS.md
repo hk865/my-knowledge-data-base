@@ -95,3 +95,27 @@
 
 - [The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions](../../papers/arxiv-2404.13208/README.md) · 2024 · 文献卡
 - [Securing AI Agents with Information-Flow Control](../../papers/arxiv-2505.23643/README.md) · 2025 · 文献卡
+
+## 持久记忆与工作上下文
+
+- [Memory in the Age of AI Agents](../../papers/arxiv-2512.13564/README.md) · 2025 · 文献卡
+- [Hindsight is 20/20: Building Agent Memory that Retains, Recalls, and Reflects](../../papers/arxiv-2512.12818/README.md) · 2025 · 文献卡
+- [MemRL: Self-Evolving Agents via Runtime Reinforcement Learning on Episodic Memory](../../papers/arxiv-2601.03192/README.md) · 2026 · 文献卡
+- [Multi-Agent Memory from a Computer Architecture Perspective: Visions and Challenges Ahead](../../papers/arxiv-2603.10062/README.md) · 2026 · 文献卡
+- [PROJECTMEM: A Local-First, Event-Sourced Memory and Judgment Layer for AI Coding Agents](../../papers/arxiv-2606.12329/README.md) · 2026 · 文献卡 · 当前 v2；本地事件历史
+- [SWE-MeM: Learning Adaptive Memory Management for Long-Horizon Coding Agents](../../papers/arxiv-2606.28434/README.md) · 2026 · 文献卡 · 任务内压缩；交叉归入长上下文与强化学习
+- [AutoPentester: An LLM Agent-based Framework for Automated Pentesting](../../papers/arxiv-2510.05605/README.md) · 2025 · 文献卡
+
+## 跨会话记忆与协作评测
+
+- [MemoryArena: Benchmarking Agent Memory in Interdependent Multi-Session Agentic Tasks](../../papers/arxiv-2602.16313/README.md) · 2026 · 文献卡 · 跨会话行动；交叉归入评估方向
+- [DreamBench-SWE: A Multi-Session Memory-Hygiene Benchmark for Software Agents](../../papers/arxiv-2608.20664/README.md) · 2026 · 文献卡 · 软件任务的记忆卫生；交叉归入评估方向
+- [MemoryLake on MemoryArena: A Matched Study of Agent Memory Backends](../../papers/arxiv-2608.13883/README.md) · 2026 · 文献卡 · 记忆后端匹配比较；交叉归入评估方向
+- [Towards a Science of Scaling Agent Systems](../../papers/arxiv-2512.08296/README.md) · 2025 · 文献卡 · 协作架构与任务结构；当前 v3
+- [The Illusion of Multi-Agent Advantage](../../papers/arxiv-2606.13003/README.md) · 2026 · 文献卡 · 自动生成架构与强单智能体对照
+
+## 运行时组件组合
+
+- [A Programming Paradigm for Spatiotemporal Composability](../../papers/arxiv-2608.25512/README.md) · 2026 · 文献卡 · Cordis；运行时生命周期
+
+这些工作在[工程记忆讲义](memory-evidence-loop.md)中按记录、检索、当前核验和任务效果连接。

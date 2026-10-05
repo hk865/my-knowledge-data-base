@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2606.12329",
+  "title": "PROJECTMEM: A Local-First, Event-Sourced Memory and Judgment Layer for AI Coding Agents",
+  "checked_on": "2026-10-05",
+  "read_version": "arXiv:2606.12329v2",
+  "reading_scope": "v1/v2 摘要对照；v2 §2、§6、附录 B 定向机制选读；未全文精读、未源码审计或独立复现",
+  "independently_reproduced": false,
+  "primary_sources": [
+    {
+      "url": "https://arxiv.org/abs/2606.12329v2",
+      "locator": "Title; Abstract; Submission history",
+      "supports": [
+        "identity",
+        "version",
+        "dates"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/html/2606.12329v2",
+      "locator": "v1/v2 摘要对照；v2 §2、§6、附录 B 定向机制选读；未全文精读、未源码审计或独立复现",
+      "supports": [
+        "problem",
+        "method",
+        "limits"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "identity",
+      "claim": "PROJECTMEM: A Local-First, Event-Sourced Memory and Judgment Layer for AI Coding Agents；2606.12329v2；版本日期 2026-09-30",
+      "url": "https://arxiv.org/abs/2606.12329v2",
+      "location": "Title; Authors; Submission history"
+    },
+    {
+      "id": "problem",
+      "claim": "跨会话开发会遗失为什么这样改、哪些尝试失败，以及旧决策何时作废。",
+      "source_refs": [
+        "https://arxiv.org/abs/2606.12329v2",
+        "https://arxiv.org/html/2606.12329v2"
+      ]
+    },
+    {
+      "id": "mechanism",
+      "claim": "用本地只追加事件保存 issue、attempt、fix、decision、note，确定性生成摘要；编辑前按文件调取历史警告，决策通过 supersedes 显式替代旧记录。",
+      "source_refs": [
+        "https://arxiv.org/abs/2606.12329v2",
+        "https://arxiv.org/html/2606.12329v2"
+      ]
+    },
+    {
+      "id": "limits",
+      "claim": "v2 明确是可行性研究：没有证明能减少重复失败。precheck 只按文件读取日志和 git 元数据，不比对新修改的语义，默认 hook 只警告；新项目缺历史、摘要会增长、多人并发与脱敏仍有边界。",
+      "source_refs": [
+        "https://arxiv.org/abs/2606.12329v2",
+        "https://arxiv.org/html/2606.12329v2"
+      ]
+    }
+  ],
+  "source_caveats": [],
+  "unverified": [
+    "全文逐页精读",
+    "独立实验复现",
+    "完整源码审计",
+    "再分发许可"
+  ],
+  "editorial_mapping": {
+    "guide": "cross-domain/fields/agents/memory-evidence-loop.md",
+    "status": "editorial_teaching_proposal_not_author_architecture_or_user_adoption"
+  },
+  "version_note": "保留聊天原 v1 链接；当前核验依据 v2。不要把 v1 的 10 项目/207 事件与 v2 的 27 项目/3,228 事件混写。v2 为六个月作者自用记录，不是受控防重试实验。"
+}

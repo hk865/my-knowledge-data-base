@@ -43,3 +43,11 @@
 ## 工程安全与集成
 
 先读[权限、隔离与协作](permissions-isolation-collaboration.md)，再比较[CaMeL](../../papers/camel/README.md)的数据流策略、[Cedar](../../resources/cedar-authorization/README.md)的工具授权与[持续集成](../../resources/continuous-integration/README.md)的结果验证：三者解决不同层次的问题。
+
+## 工程记忆：从证据回到行动
+
+先读[工程记忆讲义](memory-evidence-loop.md)，再读 [MemoryArena](../../papers/arxiv-2602.16313/README.md) 的任务依赖与评测设计、[Hindsight](../../papers/arxiv-2512.12818/README.md) 的记忆对象和检索。前者回答“记忆是否改变后续结果”，后者回答“信息怎样被组织和找到”。
+
+**检验题**：沿讲义里的日期测试，分别指出观察、解释、当前接口约定和旧经验；如果模块已经重写，哪条记录应该保留作历史，哪条结论需要重新验证？为什么检索到一段很相似的失败总结，还不足以决定本次修改？
+
+按问题选读：[PROJECTMEM](../../papers/arxiv-2606.12329/README.md) 看事件历史与决策替代，[MemRL](../../papers/arxiv-2601.03192/README.md) 看经验效用，[SWE-MeM](../../papers/arxiv-2606.28434/README.md) 看任务内压缩；用 [DreamBench-SWE](../../papers/arxiv-2608.20664/README.md) 和 [MemoryLake](../../papers/arxiv-2608.13883/README.md) 检查比较对象与证据边界。

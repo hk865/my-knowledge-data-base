@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2608.25512",
+  "title": "A Programming Paradigm for Spatiotemporal Composability",
+  "resource_kind": "paper",
+  "canonical_folder": "cross-domain/papers/arxiv-2608.25512",
+  "official_url": "https://arxiv.org/abs/2608.25512",
+  "official_fulltext_url": "https://arxiv.org/pdf/2608.25512v1",
+  "year": 2026,
+  "authors": [
+    "Yifan Shi",
+    "Wei Zhang",
+    "Tianyi Cui"
+  ],
+  "read_version": "arXiv:2608.25512v1",
+  "latest_arxiv_version_checked": "v1",
+  "latest_arxiv_version_date": "2026-08-26",
+  "first_submitted_date": "2026-08-26",
+  "version_status": "latest_arxiv_version_checked_on_2026_10_05",
+  "reading_depth": "abstract_and_targeted_primary_source_verification",
+  "reading_scope": "摘要、导言定向片段与一手仓库 README；未通读 92 页正文和证明，未运行代码",
+  "reading_boundary": "摘要、导言定向片段与一手仓库 README；未通读 92 页正文和证明，未运行代码。仅据实际覆盖范围编写文献卡；没有独立全文精读、完整代码审计或实验复现。",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "user_reading_status": "not_asserted",
+  "user_adoption": "not_established",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "仅保存原创卡片与官方链接，不镜像论文全文或复用论文原图。"
+  },
+  "fulltext_local_status": "official_link_only_not_mirrored_in_repository",
+  "fulltext_local_path": null,
+  "source_origin": "historical_assistant_exact_url",
+  "source_record_updated": "2026-10-05",
+  "topic_paths": [
+    "cross-domain/agents"
+  ],
+  "modality_tags": [
+    "code"
+  ],
+  "task_tags": [
+    "analysis"
+  ],
+  "legacy_paths": [],
+  "evidence_paths": [
+    "evidence.json"
+  ],
+  "chat_provenance": {
+    "source_role": "assistant",
+    "relationship": "historical_assistant_reference_or_recommendation",
+    "historical_message_time_utc": "2026-10-04T09:53:57Z",
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2608.25512",
+      "https://arxiv.org/pdf/2608.25512"
+    ],
+    "observed_arxiv_identifier": "2608.25512",
+    "evidence_type": "historical_message_retrieval_reports_exact_url_and_title",
+    "original_conversation_url": null,
+    "evidence_boundary": "历史检索返回的学术书目摘要；未取得可打开的原会话链接，不是完整逐字聊天记录。",
+    "user_provided": false,
+    "user_adoption": "not_established",
+    "canonical_url_basis": "independently_verified_official_arxiv_identity"
+  },
+  "verification_2026_10_05": {
+    "verification_status": "primary_identity_version_and_scoped_content_verified",
+    "verification_sources": [
+      "https://arxiv.org/abs/2608.25512v1",
+      "https://arxiv.org/pdf/2608.25512v1",
+      "https://arxiv.org/abs/2608.25512",
+      "https://github.com/deepseek-ai/deepseek-harness",
+      "https://github.com/cordiverse/cordis"
+    ],
+    "reading_scope": "摘要、导言定向片段与一手仓库 README；未通读 92 页正文和证明，未运行代码",
+    "mechanism_summary": "把可撤销 effect、响应式 coeffect 和统一 context 组合成动态组件演算，并在 Cordis 中实现。",
+    "evidence_boundary": "理论保证有其 context 中介和可撤销性前提；本次未审计证明，也不能把它外推为任意外部副作用均可回滚。Cordis 官方仓库仍提示 API 不稳定。",
+    "read_version": "arXiv:2608.25512v1"
+  },
+  "primary_relationship_evidence": [
+    {
+      "url": "https://arxiv.org/abs/2608.25512",
+      "location": "abstract",
+      "claim": "Paper explicitly identifies Cordis as its implementation."
+    },
+    {
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "location": "README introduction",
+      "claim": "Official README explicitly identifies dsh, Cordis, and this paper in the same architecture description.",
+      "short_exact_excerpt": "powered by Cordis, whose design is described in A Programming Paradigm for Spatiotemporal Composability"
+    },
+    {
+      "url": "https://github.com/cordiverse/cordis",
+      "location": "README",
+      "claim": "Cordis README links the paper and warns that its API is not stable."
+    }
+  ],
+  "verification_status": "primary_identity_version_and_scoped_content_verified",
+  "verification_sources": [
+    "https://arxiv.org/abs/2608.25512v1",
+    "https://arxiv.org/pdf/2608.25512v1",
+    "https://arxiv.org/abs/2608.25512",
+    "https://github.com/deepseek-ai/deepseek-harness",
+    "https://github.com/cordiverse/cordis"
+  ],
+  "original_chat_urls": [
+    "https://arxiv.org/abs/2608.25512",
+    "https://arxiv.org/pdf/2608.25512"
+  ],
+  "chat_evidence": [
+    {
+      "date": "2026-10-04T09:53:57Z",
+      "role": "assistant",
+      "evidence_type": "historical_message_retrieval_reports_exact_url_and_title",
+      "relationship": "historical_assistant_reference_or_recommendation"
+    }
+  ],
+  "assistant_reading_status": "abstract_and_targeted_primary_source_verification"
+}

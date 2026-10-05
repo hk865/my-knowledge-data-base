@@ -1,6 +1,6 @@
 # Agent：语言模型智能体
 
-> 状态：领域入门页 · v1 · 依据 [synthesis.csv](synthesis.csv)（18 篇）
+> 状态：领域入门页 · v1 · 依据 [synthesis.csv](synthesis.csv)（31 篇）
 >
 > 速览：
 > 1. Agent（智能体）指模型在一个会对动作作出反应的环境里连续行动，直到完成目标。编码 agent 的环境是代码仓库加容器，动作是读文件、改文件、跑命令，成功由测试判定。主线五步：提示出来的循环（2022–2023）→ 按执行结果判分的真实环境 benchmark（2023–2024）→ 为模型设计接口与脚手架（2024）→ 把 agent 行为训进权重（2024 末–2025）→ 环境本身成为训练目标，环境的漏洞变成模型的行为（2025–2026）。
@@ -170,6 +170,22 @@
 
 [Instruction Hierarchy](../../papers/arxiv-2404.13208/README.md)在模型训练阶段教它区分指令优先级；[CaMeL](../../papers/camel/reading.md)在执行阶段追踪值的依赖并检查工具参数；[FIDES](../../papers/arxiv-2505.23643/README.md)研究在信息流约束下向规划器选择性展示外部数据。三者分别控制候选行为、可执行的数据流和安全规划的表达范围；底层沙箱继续约束实际进程。
 
+## 持久记忆：让过去的结果改变下一步行动
+
+结论：工程记忆有四个不同的工作位置：记录已经发生的事、找到当前需要的经验、决定当前窗口保留什么、验证经验在新版本下是否仍适用。贯穿算例见[工程记忆讲义](memory-evidence-loop.md)：一次带时区的日期测试失败，怎样通过任务节点和局部模块关系进入下一次修复。
+
+[Memory in the Age of AI Agents](../../papers/arxiv-2512.13564/README.md) 用载体、功能与动态过程组织记忆。沿着已有的 [Reflexion](../../papers/arxiv-2303.11366/README.md) 基线看，问题从“失败后写下什么”延伸为“下次怎样找到、怎样检查”：
+
+- **事实与经验怎样组织**：[Hindsight](../../papers/arxiv-2512.12818/README.md) 区分世界事实、经历、归纳观察和观点，结合实体、时间和多路检索；[PROJECTMEM](../../papers/arxiv-2606.12329/README.md) 保存只追加的工程事件，以摘要和决策替代关系形成当前视图。
+- **取什么、当前保留什么**：[MemRL](../../papers/arxiv-2601.03192/README.md) 在语义相似度之外，用环境反馈更新经验效用；[SWE-MeM](../../papers/arxiv-2606.28434/README.md) 学习任务进行中的压缩时机、范围和方式。前者选择经验，后者管理工作上下文。
+- **任务怎样消费证据**：[AutoPentester](../../papers/arxiv-2510.05605/README.md) 展示安全测试中的任务树、结果验证和重复步骤识别；[MemoryArena](../../papers/arxiv-2602.16313/README.md) 与 [DreamBench-SWE](../../papers/arxiv-2608.20664/README.md) 则让后续任务依赖早期会话信息，用实际结果检验记忆。
+
+[判断] 面向局部架构和任务节点，记录格式的价值是让相关证据可检索、可追溯、可重新验证。PROJECTMEM 的编辑前检查给出历史提示，调用者仍需判断当前代码；因此“避免重复失败”应作为待检验的任务效果，不能仅由存在事件日志推出。
+
+多个 Agent 共享记录，又引入可见性、版本和冲突问题。[体系结构视角的记忆论文](../../papers/arxiv-2603.10062/README.md) 提供设计议程；[Scaling Agent Systems](../../papers/arxiv-2512.08296/README.md) 与 [The Illusion of Multi-Agent Advantage](../../papers/arxiv-2606.13003/README.md) 提醒比较协作收益时保留有力单 Agent 对照和协调成本。[MemoryLake on MemoryArena](../../papers/arxiv-2608.13883/README.md) 进一步显示比较对象可能是整套记忆后端，写入、检索、预算和提示组装共同变化，需要把结论限定在实际受控的变量上。
+
+组件怎样随依赖变化启停，是另一层系统问题。[Cordis 论文](../../papers/arxiv-2608.25512/README.md) 研究可撤销作用与响应式依赖；[DeepSeek Harness 官方说明](https://github.com/deepseek-ai/deepseek-harness) 明确写其由 Cordis 驱动。这个关联解释运行时组件生命周期，长期经验的检索与证据有效性仍属于上面的记忆层。
+
 ## 主要路线与团队偏好
 
 结论：环境与接口、行为训练、部署期权限控制是互补路线。下面的团队表比较环境和训练的持续选择；权限控制另按具体论文设计比较。
@@ -213,6 +229,8 @@
 
 ## 当前开放问题
 
+- **怎样证明历史改善了下一次行动？** [MemoryArena](../../papers/arxiv-2602.16313/README.md) 与 [DreamBench-SWE](../../papers/arxiv-2608.20664/README.md) 让任务跨会话依赖；还需比较错误复用、重复失败、延迟与成本，并核查代码变化后的证据有效性。
+
 - **安全边界怎样兼顾任务表达能力？** [Instruction Hierarchy](../../papers/arxiv-2404.13208/README.md)检验对未见攻击的泛化与过度拒绝；[CaMeL](../../papers/camel/reading.md)暴露固定规划面对外部数据依赖的瓶颈；[FIDES](../../papers/arxiv-2505.23643/README.md)用受约束查看扩大表达范围。需要联合衡量攻击后果、正常任务完成、策略触发与调用成本。
 
 - **怎样构造不能被钻空子的环境？** 对抗式审查任务（[Terminal-Bench](../../papers/arxiv-2601.11868/README.md)）、隔离验证器（[Kimi K3](../../../llm/papers/arxiv-2607.24653/README.md)）、从构造上阻止作弊（[MacDiarmid 等](../../papers/arxiv-2511.18397/README.md)）。
@@ -231,9 +249,13 @@
 
 6. [权限、沙箱与协作讲义](permissions-isolation-collaboration.md) → [Instruction Hierarchy](../../papers/arxiv-2404.13208/README.md) → [CaMeL](../../papers/camel/reading.md) → [FIDES](../../papers/arxiv-2505.23643/README.md)：从执行边界读到模型训练与信息流控制的互补。
 
+7. [工程记忆讲义](memory-evidence-loop.md) → [MemoryArena](../../papers/arxiv-2602.16313/README.md) → [Hindsight](../../papers/arxiv-2512.12818/README.md)：先看历史怎样进入行动，再读评测和信息组织。
+
 ## 批注
 
 **易误读**
+
+- PROJECTMEM v2 是可行性研究，文件历史 precheck 不判断补丁的语义重复；MemoryArena v2 存在模型标签不一致，Hindsight 的部分外部对照采用不同评判模型。MemoryLake 的后端比较未匹配成本，也不是仅改变记忆表示的单因素消融；Illusion 的结论只覆盖所测自动生成架构。各自边界见对应文献卡与[工程记忆讲义批注](memory-evidence-loop.md#批注)。
 
 - Instruction Hierarchy 的实证基于 GPT-3.5 Turbo 微调，不构成工具执行的确定性保证；CaMeL 与 FIDES 的保证均依赖其威胁模型、可信标签、策略和执行器。FIDES 的普通规划器与 CaMeL 的原生工具调用对照并非同一实验，不能直接相减两篇的完成率。
 

@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2608.25512",
+  "title": "A Programming Paradigm for Spatiotemporal Composability",
+  "checked_on": "2026-10-05",
+  "read_version": "arXiv:2608.25512v1",
+  "reading_scope": "摘要、导言定向片段与一手仓库 README；未通读 92 页正文和证明，未运行代码",
+  "independently_reproduced": false,
+  "primary_sources": [
+    {
+      "url": "https://arxiv.org/abs/2608.25512v1",
+      "locator": "Title; Abstract; Submission history",
+      "supports": [
+        "identity",
+        "version",
+        "dates"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/pdf/2608.25512v1",
+      "locator": "摘要、导言定向片段与一手仓库 README；未通读 92 页正文和证明，未运行代码",
+      "supports": [
+        "problem",
+        "method",
+        "limits"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.25512",
+      "locator": "abstract",
+      "supports": [
+        "Paper explicitly identifies Cordis as its implementation."
+      ]
+    },
+    {
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "locator": "README introduction",
+      "supports": [
+        "Official README explicitly identifies dsh, Cordis, and this paper in the same architecture description."
+      ]
+    },
+    {
+      "url": "https://github.com/cordiverse/cordis",
+      "locator": "README",
+      "supports": [
+        "Cordis README links the paper and warns that its API is not stable."
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "identity",
+      "claim": "A Programming Paradigm for Spatiotemporal Composability；2608.25512v1；版本日期 2026-08-26",
+      "url": "https://arxiv.org/abs/2608.25512v1",
+      "location": "Title; Authors; Submission history"
+    },
+    {
+      "id": "problem",
+      "claim": "动态组件既要能卸载并清理自身影响，又要能随依赖变化正确启停。",
+      "source_refs": [
+        "https://arxiv.org/abs/2608.25512v1",
+        "https://arxiv.org/pdf/2608.25512v1",
+        "https://arxiv.org/abs/2608.25512",
+        "https://github.com/deepseek-ai/deepseek-harness",
+        "https://github.com/cordiverse/cordis"
+      ]
+    },
+    {
+      "id": "mechanism",
+      "claim": "把可撤销 effect、响应式 coeffect 和统一 context 组合成动态组件演算，并在 Cordis 中实现。",
+      "source_refs": [
+        "https://arxiv.org/abs/2608.25512v1",
+        "https://arxiv.org/pdf/2608.25512v1",
+        "https://arxiv.org/abs/2608.25512",
+        "https://github.com/deepseek-ai/deepseek-harness",
+        "https://github.com/cordiverse/cordis"
+      ]
+    },
+    {
+      "id": "limits",
+      "claim": "理论保证有其 context 中介和可撤销性前提；本次未审计证明，也不能把它外推为任意外部副作用均可回滚。Cordis 官方仓库仍提示 API 不稳定。",
+      "source_refs": [
+        "https://arxiv.org/abs/2608.25512v1",
+        "https://arxiv.org/pdf/2608.25512v1",
+        "https://arxiv.org/abs/2608.25512",
+        "https://github.com/deepseek-ai/deepseek-harness",
+        "https://github.com/cordiverse/cordis"
+      ]
+    }
+  ],
+  "source_caveats": [],
+  "unverified": [
+    "全文逐页精读",
+    "独立实验复现",
+    "完整源码审计",
+    "再分发许可"
+  ],
+  "editorial_mapping": {
+    "guide": "cross-domain/fields/agents/README.md",
+    "status": "editorial_teaching_proposal_not_author_architecture_or_user_adoption"
+  },
+  "primary_relationship_evidence": [
+    {
+      "url": "https://arxiv.org/abs/2608.25512",
+      "location": "abstract",
+      "claim": "Paper explicitly identifies Cordis as its implementation."
+    },
+    {
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "location": "README introduction",
+      "claim": "Official README explicitly identifies dsh, Cordis, and this paper in the same architecture description.",
+      "short_exact_excerpt": "powered by Cordis, whose design is described in A Programming Paradigm for Spatiotemporal Composability"
+    },
+    {
+      "url": "https://github.com/cordiverse/cordis",
+      "location": "README",
+      "claim": "Cordis README links the paper and warns that its API is not stable."
+    }
+  ]
+}

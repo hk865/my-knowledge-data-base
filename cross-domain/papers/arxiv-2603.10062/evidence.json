@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2603.10062",
+  "title": "Multi-Agent Memory from a Computer Architecture Perspective: Visions and Challenges Ahead",
+  "checked_on": "2026-10-05",
+  "read_version": "arXiv:2603.10062v2",
+  "reading_scope": "arXiv abstract and metadata；HTML §§1–7 main prose; figures only by captions, not visual analysis; references not audited",
+  "independently_reproduced": false,
+  "primary_sources": [
+    {
+      "url": "https://arxiv.org/abs/2603.10062v2",
+      "supports": [
+        "identity",
+        "version",
+        "dates",
+        "position-paper status"
+      ],
+      "locator": "Abstract; Submission history"
+    },
+    {
+      "url": "https://arxiv.org/html/2603.10062v2",
+      "supports": [
+        "shared vs distributed"
+      ],
+      "locator": "§3"
+    },
+    {
+      "url": "https://arxiv.org/html/2603.10062v2",
+      "supports": [
+        "visibility/order versus read-time conflict resolution"
+      ],
+      "locator": "§6"
+    }
+  ],
+  "claims": [
+    {
+      "id": "identity",
+      "claim": "Multi-Agent Memory from a Computer Architecture Perspective: Visions and Challenges Ahead；2603.10062v2；版本日期 2026-03-30",
+      "url": "https://arxiv.org/abs/2603.10062v2",
+      "location": "Title; Authors; Submission history"
+    },
+    {
+      "id": "problem",
+      "claim": "多个 Agent 共享或同步记忆时会遇到旧读、覆盖和语义冲突。",
+      "source_refs": [
+        "https://arxiv.org/abs/2603.10062v2",
+        "https://arxiv.org/html/2603.10062v2"
+      ]
+    },
+    {
+      "id": "mechanism",
+      "claim": "立场论文用共享／分布式存储与 I/O／cache／memory 层次解释系统设计，并区分更新时的可见性／顺序与读取时的冲突处理。",
+      "source_refs": [
+        "https://arxiv.org/abs/2603.10062v2",
+        "https://arxiv.org/html/2603.10062v2"
+      ]
+    },
+    {
+      "id": "limits",
+      "claim": "不能把作者提出的缺口写成已经建成的统一标准，也不能由架构类比推导 Agent 必须采用某种硬件一致性模型。",
+      "source_refs": [
+        "https://arxiv.org/abs/2603.10062v2",
+        "https://arxiv.org/html/2603.10062v2"
+      ]
+    },
+    {
+      "id": "reported_evidence",
+      "claim": "主要贡献是问题定义与设计议程，不是经过性能实验验证的记忆协议。",
+      "source_refs": [
+        "https://arxiv.org/abs/2603.10062v2",
+        "https://arxiv.org/html/2603.10062v2"
+      ]
+    }
+  ],
+  "source_caveats": [],
+  "unverified": [
+    "全文逐页精读",
+    "独立实验复现",
+    "完整源码审计",
+    "再分发许可"
+  ],
+  "editorial_mapping": {
+    "guide": "cross-domain/fields/agents/memory-evidence-loop.md",
+    "status": "editorial_teaching_proposal_not_author_architecture_or_user_adoption"
+  }
+}

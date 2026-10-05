@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2512.08296",
+  "title": "Towards a Science of Scaling Agent Systems",
+  "checked_on": "2026-10-05",
+  "read_version": "arXiv:2512.08296v3",
+  "reading_scope": "arXiv abstract；arXiv metadata and submission history",
+  "independently_reproduced": false,
+  "primary_sources": [
+    {
+      "url": "https://arxiv.org/abs/2512.08296v3",
+      "supports": [
+        "identity",
+        "version",
+        "dates",
+        "260 configurations and six benchmarks",
+        "architecture-task dependence"
+      ],
+      "locator": "Abstract; Submission history"
+    }
+  ],
+  "claims": [
+    {
+      "id": "identity",
+      "claim": "Towards a Science of Scaling Agent Systems；2512.08296v3；版本日期 2026-04-08",
+      "url": "https://arxiv.org/abs/2512.08296v3",
+      "location": "Title; Authors; Submission history"
+    },
+    {
+      "id": "problem",
+      "claim": "增加 Agent 数或协作层级，并不保证任务成功率增加。",
+      "source_refs": [
+        "https://arxiv.org/abs/2512.08296v3"
+      ]
+    },
+    {
+      "id": "mechanism",
+      "claim": "v3 摘要描述 260 个配置、六个基准和五类架构的受控比较，建模能力、协调方式与任务结构的关系。",
+      "source_refs": [
+        "https://arxiv.org/abs/2512.08296v3"
+      ]
+    },
+    {
+      "id": "limits",
+      "claim": "不能推成固定 Agent 数、固定层级或跨所有任务通用的扩展定律；未审阅完整设置和回归诊断。旧版本数字不可混入 v3。",
+      "source_refs": [
+        "https://arxiv.org/abs/2512.08296v3"
+      ]
+    },
+    {
+      "id": "reported_evidence",
+      "claim": "摘要报告收益依任务而变，工具密集任务可能付出协调开销；这是作者的实验结论，本次仅核读摘要。",
+      "source_refs": [
+        "https://arxiv.org/abs/2512.08296v3"
+      ]
+    }
+  ],
+  "source_caveats": [
+    {
+      "kind": "version_sensitive_claims",
+      "detail": "Use v3 figures (260 configurations, six benchmarks; cross-validated R² 0.373 / capability-metric variant 0.413 if needed). Do not silently reuse v1/v2 numeric claims."
+    }
+  ],
+  "unverified": [
+    "全文逐页精读",
+    "独立实验复现",
+    "完整源码审计",
+    "再分发许可"
+  ],
+  "editorial_mapping": {
+    "guide": "cross-domain/fields/agents/README.md",
+    "status": "editorial_teaching_proposal_not_author_architecture_or_user_adoption"
+  }
+}

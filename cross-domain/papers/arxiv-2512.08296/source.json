@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2512.08296",
+  "title": "Towards a Science of Scaling Agent Systems",
+  "resource_kind": "paper",
+  "canonical_folder": "cross-domain/papers/arxiv-2512.08296",
+  "official_url": "https://arxiv.org/abs/2512.08296",
+  "official_fulltext_url": "https://arxiv.org/pdf/2512.08296v3",
+  "year": 2025,
+  "authors": [
+    "Yubin Kim",
+    "Ken Gu",
+    "Chanwoo Park",
+    "Chunjong Park",
+    "Samuel Schmidgall",
+    "A. Ali Heydari",
+    "Yao Yan",
+    "Zhihan Zhang",
+    "Yuchen Zhuang",
+    "Yun Liu",
+    "Mark Malhotra",
+    "Paul Pu Liang",
+    "Hae Won Park",
+    "Yuzhe Yang",
+    "Xuhai Xu",
+    "Yilun Du",
+    "Shwetak Patel",
+    "Tim Althoff",
+    "Daniel McDuff",
+    "Xin Liu"
+  ],
+  "read_version": "arXiv:2512.08296v3",
+  "latest_arxiv_version_checked": "v3",
+  "latest_arxiv_version_date": "2026-04-08",
+  "first_submitted_date": "2025-12-09",
+  "version_status": "latest_arxiv_version_checked_on_2026_10_05",
+  "reading_depth": "abstract_read",
+  "reading_scope": "arXiv abstract；arXiv metadata and submission history",
+  "reading_boundary": "arXiv abstract；arXiv metadata and submission history。仅据实际覆盖范围编写文献卡；没有独立全文精读、完整代码审计或实验复现。",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "user_reading_status": "not_asserted",
+  "user_adoption": "not_established",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "仅保存原创卡片与官方链接，不镜像论文全文或复用论文原图。"
+  },
+  "fulltext_local_status": "official_link_only_not_mirrored_in_repository",
+  "fulltext_local_path": null,
+  "source_origin": "historical_assistant_exact_url",
+  "source_record_updated": "2026-10-05",
+  "topic_paths": [
+    "cross-domain/evaluation",
+    "cross-domain/agents"
+  ],
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "evaluation",
+    "decision"
+  ],
+  "legacy_paths": [],
+  "evidence_paths": [
+    "evidence.json"
+  ],
+  "chat_provenance": {
+    "source_role": "assistant",
+    "relationship": "historical_assistant_reference_or_recommendation",
+    "historical_message_time_utc": "2026-10-05T05:50:45Z",
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2512.08296?utm_source=chatgpt.com"
+    ],
+    "observed_arxiv_identifier": "2512.08296",
+    "evidence_type": "historical_message_retrieval_reports_exact_url_and_title",
+    "original_conversation_url": null,
+    "evidence_boundary": "历史检索返回的学术书目摘要；未取得可打开的原会话链接，不是完整逐字聊天记录。",
+    "user_provided": false,
+    "user_adoption": "not_established",
+    "canonical_url_basis": "independently_verified_official_arxiv_identity"
+  },
+  "verification_2026_10_05": {
+    "verification_status": "primary_identity_version_and_scoped_content_verified",
+    "verification_sources": [
+      "https://arxiv.org/abs/2512.08296v3"
+    ],
+    "reading_scope": "arXiv abstract；arXiv metadata and submission history",
+    "mechanism_summary": "v3 摘要描述 260 个配置、六个基准和五类架构的受控比较，建模能力、协调方式与任务结构的关系。",
+    "evidence_boundary": "不能推成固定 Agent 数、固定层级或跨所有任务通用的扩展定律；未审阅完整设置和回归诊断。旧版本数字不可混入 v3。",
+    "read_version": "arXiv:2512.08296v3"
+  },
+  "source_caveats": [
+    {
+      "kind": "version_sensitive_claims",
+      "detail": "Use v3 figures (260 configurations, six benchmarks; cross-validated R² 0.373 / capability-metric variant 0.413 if needed). Do not silently reuse v1/v2 numeric claims."
+    }
+  ],
+  "verification_status": "primary_identity_version_and_scoped_content_verified",
+  "verification_sources": [
+    "https://arxiv.org/abs/2512.08296v3"
+  ],
+  "original_chat_urls": [
+    "https://arxiv.org/abs/2512.08296?utm_source=chatgpt.com"
+  ],
+  "chat_evidence": [
+    {
+      "date": "2026-10-05T05:50:45Z",
+      "role": "assistant",
+      "evidence_type": "historical_message_retrieval_reports_exact_url_and_title",
+      "relationship": "historical_assistant_reference_or_recommendation"
+    }
+  ],
+  "assistant_reading_status": "abstract_read"
+}

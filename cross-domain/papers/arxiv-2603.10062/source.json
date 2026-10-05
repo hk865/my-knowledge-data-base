@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2603.10062",
+  "title": "Multi-Agent Memory from a Computer Architecture Perspective: Visions and Challenges Ahead",
+  "resource_kind": "paper",
+  "canonical_folder": "cross-domain/papers/arxiv-2603.10062",
+  "official_url": "https://arxiv.org/abs/2603.10062",
+  "official_fulltext_url": "https://arxiv.org/html/2603.10062v2",
+  "year": 2026,
+  "authors": [
+    "Zhongming Yu",
+    "Naicheng Yu",
+    "Hejia Zhang",
+    "Wentao Ni",
+    "Mingrui Yin",
+    "Jiaying Yang",
+    "Yujie Zhao",
+    "Jishen Zhao"
+  ],
+  "read_version": "arXiv:2603.10062v2",
+  "latest_arxiv_version_checked": "v2",
+  "latest_arxiv_version_date": "2026-03-30",
+  "first_submitted_date": "2026-03-09",
+  "version_status": "latest_arxiv_version_checked_on_2026_10_05",
+  "reading_depth": "selected_sections_read",
+  "reading_scope": "arXiv abstract and metadata；HTML §§1–7 main prose; figures only by captions, not visual analysis; references not audited",
+  "reading_boundary": "arXiv abstract and metadata；HTML §§1–7 main prose; figures only by captions, not visual analysis; references not audited。仅据实际覆盖范围编写文献卡；没有独立全文精读、完整代码审计或实验复现。",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "user_reading_status": "not_asserted",
+  "user_adoption": "not_established",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "仅保存原创卡片与官方链接，不镜像论文全文或复用论文原图。"
+  },
+  "fulltext_local_status": "official_link_only_not_mirrored_in_repository",
+  "fulltext_local_path": null,
+  "source_origin": "historical_assistant_exact_url",
+  "source_record_updated": "2026-10-05",
+  "topic_paths": [
+    "cross-domain/agents"
+  ],
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "analysis"
+  ],
+  "legacy_paths": [],
+  "evidence_paths": [
+    "evidence.json"
+  ],
+  "chat_provenance": {
+    "source_role": "assistant",
+    "relationship": "historical_assistant_reference_or_recommendation",
+    "historical_message_time_utc": "2026-10-05T05:50:45Z",
+    "original_chat_urls": [
+      "https://arxiv.org/html/2603.10062"
+    ],
+    "observed_arxiv_identifier": "2603.10062",
+    "evidence_type": "historical_message_retrieval_reports_exact_url_and_title",
+    "original_conversation_url": null,
+    "evidence_boundary": "历史检索返回的学术书目摘要；未取得可打开的原会话链接，不是完整逐字聊天记录。",
+    "user_provided": false,
+    "user_adoption": "not_established",
+    "canonical_url_basis": "independently_verified_official_arxiv_identity"
+  },
+  "verification_2026_10_05": {
+    "verification_status": "primary_identity_version_and_scoped_content_verified",
+    "verification_sources": [
+      "https://arxiv.org/abs/2603.10062v2",
+      "https://arxiv.org/html/2603.10062v2"
+    ],
+    "reading_scope": "arXiv abstract and metadata；HTML §§1–7 main prose; figures only by captions, not visual analysis; references not audited",
+    "mechanism_summary": "立场论文用共享／分布式存储与 I/O／cache／memory 层次解释系统设计，并区分更新时的可见性／顺序与读取时的冲突处理。",
+    "evidence_boundary": "不能把作者提出的缺口写成已经建成的统一标准，也不能由架构类比推导 Agent 必须采用某种硬件一致性模型。",
+    "read_version": "arXiv:2603.10062v2"
+  },
+  "verification_status": "primary_identity_version_and_scoped_content_verified",
+  "verification_sources": [
+    "https://arxiv.org/abs/2603.10062v2",
+    "https://arxiv.org/html/2603.10062v2"
+  ],
+  "original_chat_urls": [
+    "https://arxiv.org/html/2603.10062"
+  ],
+  "chat_evidence": [
+    {
+      "date": "2026-10-05T05:50:45Z",
+      "role": "assistant",
+      "evidence_type": "historical_message_retrieval_reports_exact_url_and_title",
+      "relationship": "historical_assistant_reference_or_recommendation"
+    }
+  ],
+  "assistant_reading_status": "selected_sections_read"
+}

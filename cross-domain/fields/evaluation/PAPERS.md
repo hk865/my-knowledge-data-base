@@ -89,3 +89,11 @@
 - [RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies](../../../robotics-embodied/papers/arxiv-2607.04434/README.md) · 2026 · 文献卡 · 仿真能力覆盖与标准化真机接口
 - [VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World Evaluation of Vision-Language-Action Models](../../../robotics-embodied/papers/arxiv-2605.20774/README.md) · 2026 · 文献卡 · 实验室复搭与场景一致性
 - [IndustrialVLA-Bench: A Traceable Multi-Axis Evaluation of Open Robot Policy Models](../../../robotics-embodied/papers/arxiv-2609.25562/README.md) · 2026 · 文献卡 · 多轴结果与复现证据等级
+
+## 跨会话记忆与等预算协作比较
+
+- [Towards a Science of Scaling Agent Systems](../../papers/arxiv-2512.08296/README.md) · 2025 · 文献卡
+- [MemoryArena: Benchmarking Agent Memory in Interdependent Multi-Session Agentic Tasks](../../papers/arxiv-2602.16313/README.md) · 2026 · 文献卡
+- [The Illusion of Multi-Agent Advantage](../../papers/arxiv-2606.13003/README.md) · 2026 · 文献卡
+- [MemoryLake on MemoryArena: A Matched Study of Agent Memory Backends](../../papers/arxiv-2608.13883/README.md) · 2026 · 文献卡
+- [DreamBench-SWE: A Multi-Session Memory-Hygiene Benchmark for Software Agents](../../papers/arxiv-2608.20664/README.md) · 2026 · 文献卡

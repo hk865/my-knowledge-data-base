@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2606.13003",
+  "title": "The Illusion of Multi-Agent Advantage",
+  "checked_on": "2026-10-05",
+  "read_version": "arXiv:2606.13003v2",
+  "reading_scope": "arXiv abstract；arXiv metadata and submission history",
+  "independently_reproduced": false,
+  "primary_sources": [
+    {
+      "url": "https://arxiv.org/abs/2606.13003v2",
+      "supports": [
+        "identity",
+        "version",
+        "dates",
+        "abstract-level method",
+        "abstract-level evidence and limitations"
+      ],
+      "locator": "Title; Abstract; Submission history"
+    }
+  ],
+  "claims": [
+    {
+      "id": "identity",
+      "claim": "The Illusion of Multi-Agent Advantage；2606.13003v2；版本日期 2026-06-13",
+      "url": "https://arxiv.org/abs/2606.13003v2",
+      "location": "Title; Authors; Submission history"
+    },
+    {
+      "id": "problem",
+      "claim": "自动生成的多 Agent 架构可能只增加复杂度和成本，现有比较又未控制有力单 Agent 基线。",
+      "source_refs": [
+        "https://arxiv.org/abs/2606.13003v2"
+      ]
+    },
+    {
+      "id": "mechanism",
+      "claim": "对照 CoT 加 self-consistency 的单 Agent，评估推理及交互任务；另建具有分解、上下文隔离和并行潜力的合成诊断集。",
+      "source_refs": [
+        "https://arxiv.org/abs/2606.13003v2"
+      ]
+    },
+    {
+      "id": "limits",
+      "claim": "批评对象是所测自动生成架构，不能改写成多 Agent 普遍无用；本次未审阅全文、成本核算或消融。",
+      "source_refs": [
+        "https://arxiv.org/abs/2606.13003v2"
+      ]
+    },
+    {
+      "id": "reported_evidence",
+      "claim": "摘要称所测自动架构不敌单 Agent 对照，而专家设计架构在诊断集优于自动架构。",
+      "source_refs": [
+        "https://arxiv.org/abs/2606.13003v2"
+      ]
+    }
+  ],
+  "source_caveats": [
+    {
+      "kind": "scope_limit",
+      "detail": "Findings concern evaluated automatically generated MAS and specified task sets; expert-architected MAS does better on their diagnostic synthetic dataset. Not evidence that all MAS are inferior."
+    }
+  ],
+  "unverified": [
+    "全文逐页精读",
+    "独立实验复现",
+    "完整源码审计",
+    "再分发许可"
+  ],
+  "editorial_mapping": {
+    "guide": "cross-domain/fields/agents/README.md",
+    "status": "editorial_teaching_proposal_not_author_architecture_or_user_adoption"
+  }
+}

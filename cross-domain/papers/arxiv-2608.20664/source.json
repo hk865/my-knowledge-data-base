@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2608.20664",
+  "title": "DreamBench-SWE: A Multi-Session Memory-Hygiene Benchmark for Software Agents",
+  "resource_kind": "paper",
+  "canonical_folder": "cross-domain/papers/arxiv-2608.20664",
+  "official_url": "https://arxiv.org/abs/2608.20664",
+  "official_fulltext_url": "https://arxiv.org/pdf/2608.20664v1",
+  "year": 2026,
+  "authors": [
+    "Sarthak Singh"
+  ],
+  "read_version": "arXiv:2608.20664v1",
+  "latest_arxiv_version_checked": "v1",
+  "latest_arxiv_version_date": "2026-08-21",
+  "first_submitted_date": "2026-08-21",
+  "version_status": "latest_arxiv_version_checked_on_2026_10_05",
+  "reading_depth": "abstract_and_official_release_verification",
+  "reading_scope": "摘要、版本史和论文直链的 v2.1.0 证据发布页；未通读 67 页和实验产物",
+  "reading_boundary": "摘要、版本史和论文直链的 v2.1.0 证据发布页；未通读 67 页和实验产物。仅据实际覆盖范围编写文献卡；没有独立全文精读、完整代码审计或实验复现。",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "user_reading_status": "not_asserted",
+  "user_adoption": "not_established",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "仅保存原创卡片与官方链接，不镜像论文全文或复用论文原图。"
+  },
+  "fulltext_local_status": "official_link_only_not_mirrored_in_repository",
+  "fulltext_local_path": null,
+  "source_origin": "historical_assistant_exact_url",
+  "source_record_updated": "2026-10-05",
+  "topic_paths": [
+    "cross-domain/evaluation",
+    "cross-domain/agents"
+  ],
+  "modality_tags": [
+    "text",
+    "code"
+  ],
+  "task_tags": [
+    "evaluation",
+    "decision"
+  ],
+  "legacy_paths": [],
+  "evidence_paths": [
+    "evidence.json"
+  ],
+  "chat_provenance": {
+    "source_role": "assistant",
+    "relationship": "historical_assistant_reference_or_recommendation",
+    "historical_message_time_utc": "2026-10-05T06:11:17Z",
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2608.20664"
+    ],
+    "observed_arxiv_identifier": "2608.20664",
+    "evidence_type": "historical_message_retrieval_reports_exact_url_and_title",
+    "original_conversation_url": null,
+    "evidence_boundary": "历史检索返回的学术书目摘要；未取得可打开的原会话链接，不是完整逐字聊天记录。",
+    "user_provided": false,
+    "user_adoption": "not_established",
+    "canonical_url_basis": "independently_verified_official_arxiv_identity"
+  },
+  "verification_2026_10_05": {
+    "verification_status": "primary_identity_version_and_scoped_content_verified",
+    "verification_sources": [
+      "https://arxiv.org/abs/2608.20664v1",
+      "https://arxiv.org/abs/2608.20664",
+      "https://github.com/iroiro147/dreambench-swe/releases/tag/v2.1.0"
+    ],
+    "reading_scope": "摘要、版本史和论文直链的 v2.1.0 证据发布页；未通读 67 页和实验产物",
+    "mechanism_summary": "设置后续任务依赖早期会话信息的序列，用可执行隐藏判据评分，并报告预注册的后继审计。",
+    "evidence_boundary": "作者明确不主张记忆方法间普遍优越、等价或广泛产品泛化；不应据单一配置结果宣称某记忆产品最好。",
+    "read_version": "arXiv:2608.20664v1"
+  },
+  "version_note": "arXiv 当前为 v1；v2.0.5/v2.1.0 是基准/证据发布版本，不能写成 arXiv v2。",
+  "verification_status": "primary_identity_version_and_scoped_content_verified",
+  "verification_sources": [
+    "https://arxiv.org/abs/2608.20664v1",
+    "https://arxiv.org/abs/2608.20664",
+    "https://github.com/iroiro147/dreambench-swe/releases/tag/v2.1.0"
+  ],
+  "original_chat_urls": [
+    "https://arxiv.org/abs/2608.20664"
+  ],
+  "chat_evidence": [
+    {
+      "date": "2026-10-05T06:11:17Z",
+      "role": "assistant",
+      "evidence_type": "historical_message_retrieval_reports_exact_url_and_title",
+      "relationship": "historical_assistant_reference_or_recommendation"
+    }
+  ],
+  "assistant_reading_status": "abstract_and_official_release_verification"
+}

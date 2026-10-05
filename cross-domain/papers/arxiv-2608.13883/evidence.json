@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2608.13883",
+  "title": "MemoryLake on MemoryArena: A Matched Study of Agent Memory Backends",
+  "checked_on": "2026-10-05",
+  "read_version": "arXiv:2608.13883v1",
+  "reading_scope": "arXiv abstract；arXiv metadata and submission history",
+  "independently_reproduced": false,
+  "primary_sources": [
+    {
+      "url": "https://arxiv.org/abs/2608.13883v1",
+      "supports": [
+        "identity",
+        "version",
+        "dates",
+        "abstract-level method",
+        "abstract-level evidence and limitations"
+      ],
+      "locator": "Title; Abstract; Submission history"
+    }
+  ],
+  "claims": [
+    {
+      "id": "identity",
+      "claim": "MemoryLake on MemoryArena: A Matched Study of Agent Memory Backends；2608.13883v1；版本日期 2026-08-14",
+      "url": "https://arxiv.org/abs/2608.13883v1",
+      "location": "Title; Authors; Submission history"
+    },
+    {
+      "id": "problem",
+      "claim": "需要在同一任务代理及样本上比较记忆后端，而不只测事后问答。",
+      "source_refs": [
+        "https://arxiv.org/abs/2608.13883v1"
+      ]
+    },
+    {
+      "id": "mechanism",
+      "claim": "在 MemoryArena 五个评测域，以同框架、请求模型别名、样本和评分代码比较 MemoryLake、Mem0、向量 RAG 与长上下文。",
+      "source_refs": [
+        "https://arxiv.org/abs/2608.13883v1"
+      ]
+    },
+    {
+      "id": "limits",
+      "claim": "整套后端同时改变写入、检索、预算和提示组装，并非结构单因素或成本匹配实验；区间重叠且无配对显著性检验，不能宣称通用 SOTA。",
+      "source_refs": [
+        "https://arxiv.org/abs/2608.13883v1"
+      ]
+    },
+    {
+      "id": "reported_evidence",
+      "claim": "共享样本的五域等权成功率事后汇总为 20.5%，最佳对照为 13.6%；作者同时报告任务差异和不确定性。",
+      "source_refs": [
+        "https://arxiv.org/abs/2608.13883v1"
+      ]
+    }
+  ],
+  "source_caveats": [
+    {
+      "kind": "explicit_comparison_limits",
+      "detail": "Paper abstract explicitly limits conclusions to workload-dependent observed performance; not representation-only, not cost matched, confidence intervals overlap and no paired significance tests."
+    },
+    {
+      "kind": "separate_run_not_comparator",
+      "detail": "59/221 (26.7%) progressive-query result is MemoryLake-only and must not be compared against baseline scores from the smaller shared set."
+    }
+  ],
+  "unverified": [
+    "全文逐页精读",
+    "独立实验复现",
+    "完整源码审计",
+    "再分发许可"
+  ],
+  "editorial_mapping": {
+    "guide": "cross-domain/fields/agents/memory-evidence-loop.md",
+    "status": "editorial_teaching_proposal_not_author_architecture_or_user_adoption"
+  }
+}

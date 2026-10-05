@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2512.13564",
+  "title": "Memory in the Age of AI Agents",
+  "resource_kind": "paper",
+  "canonical_folder": "cross-domain/papers/arxiv-2512.13564",
+  "official_url": "https://arxiv.org/abs/2512.13564",
+  "official_fulltext_url": "https://arxiv.org/pdf/2512.13564v2",
+  "year": 2025,
+  "authors": [
+    "Yuyang Hu",
+    "Shichun Liu",
+    "Yanwei Yue",
+    "Guibin Zhang",
+    "Boyang Liu",
+    "Fangyi Zhu",
+    "Jiahang Lin",
+    "Honglin Guo",
+    "Shihan Dou",
+    "Zhiheng Xi",
+    "Senjie Jin",
+    "Jiejun Tan",
+    "Yanbin Yin",
+    "Jiongnan Liu",
+    "Zeyu Zhang",
+    "Zhongxiang Sun",
+    "Yutao Zhu",
+    "Hao Sun",
+    "Boci Peng",
+    "Zhenrong Cheng",
+    "Xuanbo Fan",
+    "Jiaxin Guo",
+    "Xinlei Yu",
+    "Zhenhong Zhou",
+    "Zewen Hu",
+    "Jiahao Huo",
+    "Junhao Wang",
+    "Yuwei Niu",
+    "Yu Wang",
+    "Zhenfei Yin",
+    "Xiaobin Hu",
+    "Yue Liao",
+    "Qiankun Li",
+    "Kun Wang",
+    "Wangchunshu Zhou",
+    "Yixin Liu",
+    "Dawei Cheng",
+    "Qi Zhang",
+    "Tao Gui",
+    "Shirui Pan",
+    "Yan Zhang",
+    "Philip Torr",
+    "Zhicheng Dou",
+    "Ji-Rong Wen",
+    "Xuanjing Huang",
+    "Yu-Gang Jiang",
+    "Shuicheng Yan"
+  ],
+  "read_version": "arXiv:2512.13564v2",
+  "latest_arxiv_version_checked": "v2",
+  "latest_arxiv_version_date": "2026-01-13",
+  "first_submitted_date": "2025-12-15",
+  "version_status": "latest_arxiv_version_checked_on_2026_10_05",
+  "reading_depth": "abstract_read",
+  "reading_scope": "arXiv abstract；arXiv metadata and submission history",
+  "reading_boundary": "arXiv abstract；arXiv metadata and submission history。仅据实际覆盖范围编写文献卡；没有独立全文精读、完整代码审计或实验复现。",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "user_reading_status": "not_asserted",
+  "user_adoption": "not_established",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "仅保存原创卡片与官方链接，不镜像论文全文或复用论文原图。"
+  },
+  "fulltext_local_status": "official_link_only_not_mirrored_in_repository",
+  "fulltext_local_path": null,
+  "source_origin": "historical_assistant_exact_url",
+  "source_record_updated": "2026-10-05",
+  "topic_paths": [
+    "cross-domain/agents"
+  ],
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "analysis"
+  ],
+  "legacy_paths": [],
+  "evidence_paths": [
+    "evidence.json"
+  ],
+  "chat_provenance": {
+    "source_role": "assistant",
+    "relationship": "historical_assistant_reference_or_recommendation",
+    "historical_message_time_utc": "2026-10-05T05:50:45Z",
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2512.13564"
+    ],
+    "observed_arxiv_identifier": "2512.13564",
+    "evidence_type": "historical_message_retrieval_reports_exact_url_and_title",
+    "original_conversation_url": null,
+    "evidence_boundary": "历史检索返回的学术书目摘要；未取得可打开的原会话链接，不是完整逐字聊天记录。",
+    "user_provided": false,
+    "user_adoption": "not_established",
+    "canonical_url_basis": "independently_verified_official_arxiv_identity"
+  },
+  "verification_2026_10_05": {
+    "verification_status": "primary_identity_version_and_scoped_content_verified",
+    "verification_sources": [
+      "https://arxiv.org/abs/2512.13564v2"
+    ],
+    "reading_scope": "arXiv abstract；arXiv metadata and submission history",
+    "mechanism_summary": "综述以载体（token、参数、隐状态）、功能（事实、经验、工作记忆）和动态过程（形成、演化、检索）组织研究，并区分 Agent memory、RAG 与 context engineering。",
+    "evidence_boundary": "分类框架不是经验证的跨领域统一记忆标准，也不证明所有系统必须实现每一类型。",
+    "read_version": "arXiv:2512.13564v2"
+  },
+  "verification_status": "primary_identity_version_and_scoped_content_verified",
+  "verification_sources": [
+    "https://arxiv.org/abs/2512.13564v2"
+  ],
+  "original_chat_urls": [
+    "https://arxiv.org/abs/2512.13564"
+  ],
+  "chat_evidence": [
+    {
+      "date": "2026-10-05T05:50:45Z",
+      "role": "assistant",
+      "evidence_type": "historical_message_retrieval_reports_exact_url_and_title",
+      "relationship": "historical_assistant_reference_or_recommendation"
+    }
+  ],
+  "assistant_reading_status": "abstract_read"
+}

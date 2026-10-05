@@ -88,3 +88,19 @@
 - [Defeating Prompt Injections by Design](camel/README.md) · 2025 · 技术精读
 - [The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions](arxiv-2404.13208/README.md) · 2024 · 文献卡，暂无独立精读
 - [Securing AI Agents with Information-Flow Control](arxiv-2505.23643/README.md) · 2025 · 文献卡，暂无独立精读
+
+## 2026年10月5日文献与资料增量
+
+- [AutoPentester: An LLM Agent-based Framework for Automated Pentesting](arxiv-2510.05605/README.md) · 2025 · 文献卡，暂无独立精读
+- [Towards a Science of Scaling Agent Systems](arxiv-2512.08296/README.md) · 2025 · 文献卡，暂无独立精读
+- [Hindsight is 20/20: Building Agent Memory that Retains, Recalls, and Reflects](arxiv-2512.12818/README.md) · 2025 · 文献卡，暂无独立精读
+- [Memory in the Age of AI Agents](arxiv-2512.13564/README.md) · 2025 · 文献卡，暂无独立精读
+- [MemRL: Self-Evolving Agents via Runtime Reinforcement Learning on Episodic Memory](arxiv-2601.03192/README.md) · 2026 · 文献卡，暂无独立精读
+- [MemoryArena: Benchmarking Agent Memory in Interdependent Multi-Session Agentic Tasks](arxiv-2602.16313/README.md) · 2026 · 文献卡，暂无独立精读
+- [Multi-Agent Memory from a Computer Architecture Perspective: Visions and Challenges Ahead](arxiv-2603.10062/README.md) · 2026 · 文献卡，暂无独立精读
+- [PROJECTMEM: A Local-First, Event-Sourced Memory and Judgment Layer for AI Coding Agents](arxiv-2606.12329/README.md) · 2026 · 文献卡，暂无独立精读
+- [The Illusion of Multi-Agent Advantage](arxiv-2606.13003/README.md) · 2026 · 文献卡，暂无独立精读
+- [SWE-MeM: Learning Adaptive Memory Management for Long-Horizon Coding Agents](arxiv-2606.28434/README.md) · 2026 · 文献卡，暂无独立精读
+- [MemoryLake on MemoryArena: A Matched Study of Agent Memory Backends](arxiv-2608.13883/README.md) · 2026 · 文献卡，暂无独立精读
+- [DreamBench-SWE: A Multi-Session Memory-Hygiene Benchmark for Software Agents](arxiv-2608.20664/README.md) · 2026 · 文献卡，暂无独立精读
+- [A Programming Paradigm for Spatiotemporal Composability](arxiv-2608.25512/README.md) · 2026 · 文献卡，暂无独立精读

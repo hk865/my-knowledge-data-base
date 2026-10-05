@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2510.05605",
+  "title": "AutoPentester: An LLM Agent-based Framework for Automated Pentesting",
+  "checked_on": "2026-10-05",
+  "read_version": "arXiv:2510.05605v1",
+  "reading_scope": "摘要、§III 机制段和 §IV 评估范围定向选读；未全文精读、未运行、未复现",
+  "independently_reproduced": false,
+  "primary_sources": [
+    {
+      "url": "https://arxiv.org/abs/2510.05605v1",
+      "locator": "Title; Abstract; Submission history",
+      "supports": [
+        "identity",
+        "version",
+        "dates"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/html/2510.05605v1",
+      "locator": "摘要、§III 机制段和 §IV 评估范围定向选读；未全文精读、未运行、未复现",
+      "supports": [
+        "problem",
+        "method",
+        "limits"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "identity",
+      "claim": "AutoPentester: An LLM Agent-based Framework for Automated Pentesting；2510.05605v1；版本日期 2025-10-07",
+      "url": "https://arxiv.org/abs/2510.05605v1",
+      "location": "Title; Authors; Submission history"
+    },
+    {
+      "id": "problem",
+      "claim": "安全测试智能体会丢失累积发现、重复失败路径，并依赖人工把工具输出接回后续决策。",
+      "source_refs": [
+        "https://arxiv.org/abs/2510.05605v1",
+        "https://arxiv.org/html/2510.05605v1"
+      ]
+    },
+    {
+      "id": "mechanism",
+      "claim": "把子任务与发现写入持续更新的任务树，工具结果先经验证与摘要再反馈给规划；另设重复步骤识别。",
+      "source_refs": [
+        "https://arxiv.org/abs/2510.05605v1",
+        "https://arxiv.org/html/2510.05605v1"
+      ]
+    },
+    {
+      "id": "limits",
+      "claim": "证据来自 HTB 和构造的脆弱虚拟机及论文自己的比较，不能证明真实生产系统的可靠性，也不直接验证跨会话通用图记忆。",
+      "source_refs": [
+        "https://arxiv.org/abs/2510.05605v1",
+        "https://arxiv.org/html/2510.05605v1"
+      ]
+    }
+  ],
+  "source_caveats": [],
+  "unverified": [
+    "全文逐页精读",
+    "独立实验复现",
+    "完整源码审计",
+    "再分发许可"
+  ],
+  "editorial_mapping": {
+    "guide": "cross-domain/fields/agents/memory-evidence-loop.md",
+    "status": "editorial_teaching_proposal_not_author_architecture_or_user_adoption"
+  }
+}

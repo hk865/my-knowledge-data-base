@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2608.20664",
+  "title": "DreamBench-SWE: A Multi-Session Memory-Hygiene Benchmark for Software Agents",
+  "checked_on": "2026-10-05",
+  "read_version": "arXiv:2608.20664v1",
+  "reading_scope": "摘要、版本史和论文直链的 v2.1.0 证据发布页；未通读 67 页和实验产物",
+  "independently_reproduced": false,
+  "primary_sources": [
+    {
+      "url": "https://arxiv.org/abs/2608.20664v1",
+      "locator": "Title; Abstract; Submission history",
+      "supports": [
+        "identity",
+        "version",
+        "dates"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.20664",
+      "locator": "摘要、版本史和论文直链的 v2.1.0 证据发布页；未通读 67 页和实验产物",
+      "supports": [
+        "problem",
+        "method",
+        "limits"
+      ]
+    },
+    {
+      "url": "https://github.com/iroiro147/dreambench-swe/releases/tag/v2.1.0",
+      "locator": "v2.1.0 release",
+      "supports": [
+        "evidence release identity; separate from arXiv version"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "identity",
+      "claim": "DreamBench-SWE: A Multi-Session Memory-Hygiene Benchmark for Software Agents；2608.20664v1；版本日期 2026-08-21",
+      "url": "https://arxiv.org/abs/2608.20664v1",
+      "location": "Title; Authors; Submission history"
+    },
+    {
+      "id": "problem",
+      "claim": "要测跨会话记忆是否保留之后任务必须用到、又不能从当前代码重新推导的证据。",
+      "source_refs": [
+        "https://arxiv.org/abs/2608.20664v1",
+        "https://arxiv.org/abs/2608.20664",
+        "https://github.com/iroiro147/dreambench-swe/releases/tag/v2.1.0"
+      ]
+    },
+    {
+      "id": "mechanism",
+      "claim": "设置后续任务依赖早期会话信息的序列，用可执行隐藏判据评分，并报告预注册的后继审计。",
+      "source_refs": [
+        "https://arxiv.org/abs/2608.20664v1",
+        "https://arxiv.org/abs/2608.20664",
+        "https://github.com/iroiro147/dreambench-swe/releases/tag/v2.1.0"
+      ]
+    },
+    {
+      "id": "limits",
+      "claim": "作者明确不主张记忆方法间普遍优越、等价或广泛产品泛化；不应据单一配置结果宣称某记忆产品最好。",
+      "source_refs": [
+        "https://arxiv.org/abs/2608.20664v1",
+        "https://arxiv.org/abs/2608.20664",
+        "https://github.com/iroiro147/dreambench-swe/releases/tag/v2.1.0"
+      ]
+    }
+  ],
+  "source_caveats": [],
+  "unverified": [
+    "全文逐页精读",
+    "独立实验复现",
+    "完整源码审计",
+    "再分发许可"
+  ],
+  "editorial_mapping": {
+    "guide": "cross-domain/fields/agents/memory-evidence-loop.md",
+    "status": "editorial_teaching_proposal_not_author_architecture_or_user_adoption"
+  },
+  "version_note": "arXiv 当前为 v1；v2.0.5/v2.1.0 是基准/证据发布版本，不能写成 arXiv v2。"
+}

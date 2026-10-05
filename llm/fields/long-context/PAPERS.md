@@ -60,3 +60,7 @@
 ## 2026年10月4日补充
 
 - [On the Design of Qwen3.8-Next Architecture: Evaluation, Efficiency, and Training Stability](../../papers/arxiv-2608.30320/README.md) · 2026 · 文献卡
+
+## 任务内的自适应记忆压缩
+
+- [SWE-MeM: Learning Adaptive Memory Management for Long-Horizon Coding Agents](../../../cross-domain/papers/arxiv-2606.28434/README.md) · 2026 · 文献卡

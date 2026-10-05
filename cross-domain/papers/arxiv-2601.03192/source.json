@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2601.03192",
+  "title": "MemRL: Self-Evolving Agents via Runtime Reinforcement Learning on Episodic Memory",
+  "resource_kind": "paper",
+  "canonical_folder": "cross-domain/papers/arxiv-2601.03192",
+  "official_url": "https://arxiv.org/abs/2601.03192",
+  "official_fulltext_url": "https://arxiv.org/html/2601.03192v2",
+  "year": 2026,
+  "authors": [
+    "Shengtao Zhang",
+    "Jiaqian Wang",
+    "Ruiwen Zhou",
+    "Junwei Liao",
+    "Yuchen Feng",
+    "Zhuo Li",
+    "Yujie Zheng",
+    "Weinan Zhang",
+    "Ying Wen",
+    "Zhiyu Li",
+    "Feiyu Xiong",
+    "Yutao Qi",
+    "Bo Tang",
+    "Muning Wen"
+  ],
+  "read_version": "arXiv:2601.03192v2",
+  "latest_arxiv_version_checked": "v2",
+  "latest_arxiv_version_date": "2026-02-12",
+  "first_submitted_date": "2026-01-06",
+  "version_status": "latest_arxiv_version_checked_on_2026_10_05",
+  "reading_depth": "selected_sections_read",
+  "reading_scope": "arXiv abstract and metadata；HTML §§3.1–4.3；HTML §6",
+  "reading_boundary": "arXiv abstract and metadata；HTML §§3.1–4.3；HTML §6。仅据实际覆盖范围编写文献卡；没有独立全文精读、完整代码审计或实验复现。",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "user_reading_status": "not_asserted",
+  "user_adoption": "not_established",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "仅保存原创卡片与官方链接，不镜像论文全文或复用论文原图。"
+  },
+  "fulltext_local_status": "official_link_only_not_mirrored_in_repository",
+  "fulltext_local_path": null,
+  "source_origin": "historical_assistant_exact_url",
+  "source_record_updated": "2026-10-05",
+  "topic_paths": [
+    "cross-domain/agents",
+    "llm/inference"
+  ],
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "decision"
+  ],
+  "legacy_paths": [],
+  "evidence_paths": [
+    "evidence.json"
+  ],
+  "chat_provenance": {
+    "source_role": "assistant",
+    "relationship": "historical_assistant_reference_or_recommendation",
+    "historical_message_time_utc": "2026-10-05T05:50:45Z",
+    "original_chat_urls": [
+      "https://arxiv.org/html/2601.03192"
+    ],
+    "observed_arxiv_identifier": "2601.03192",
+    "evidence_type": "historical_message_retrieval_reports_exact_url_and_title",
+    "original_conversation_url": null,
+    "evidence_boundary": "历史检索返回的学术书目摘要；未取得可打开的原会话链接，不是完整逐字聊天记录。",
+    "user_provided": false,
+    "user_adoption": "not_established",
+    "canonical_url_basis": "independently_verified_official_arxiv_identity"
+  },
+  "verification_2026_10_05": {
+    "verification_status": "primary_identity_version_and_scoped_content_verified",
+    "verification_sources": [
+      "https://arxiv.org/abs/2601.03192v2",
+      "https://arxiv.org/html/2601.03192v2"
+    ],
+    "reading_scope": "arXiv abstract and metadata；HTML §§3.1–4.3；HTML §6",
+    "mechanism_summary": "冻结模型权重，保存 Intent–Experience–Utility；先按相似度召回，再按相似度与效用综合选择，用环境反馈更新记忆效用。",
+    "evidence_boundary": "§6 承认长轨迹噪声、多条经验的信用分配歧义及低任务相似度限制。效用分数不等于事实可信度。",
+    "read_version": "arXiv:2601.03192v2"
+  },
+  "verification_status": "primary_identity_version_and_scoped_content_verified",
+  "verification_sources": [
+    "https://arxiv.org/abs/2601.03192v2",
+    "https://arxiv.org/html/2601.03192v2"
+  ],
+  "original_chat_urls": [
+    "https://arxiv.org/html/2601.03192"
+  ],
+  "chat_evidence": [
+    {
+      "date": "2026-10-05T05:50:45Z",
+      "role": "assistant",
+      "evidence_type": "historical_message_retrieval_reports_exact_url_and_title",
+      "relationship": "historical_assistant_reference_or_recommendation"
+    }
+  ],
+  "assistant_reading_status": "selected_sections_read"
+}

@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2512.12818",
+  "title": "Hindsight is 20/20: Building Agent Memory that Retains, Recalls, and Reflects",
+  "resource_kind": "paper",
+  "canonical_folder": "cross-domain/papers/arxiv-2512.12818",
+  "official_url": "https://arxiv.org/abs/2512.12818",
+  "official_fulltext_url": "https://arxiv.org/html/2512.12818v1",
+  "year": 2025,
+  "authors": [
+    "Chris Latimer",
+    "Nicoló Boschi",
+    "Andrew Neeser",
+    "Chris Bartholomew",
+    "Gaurav Srivastava",
+    "Xuan Wang",
+    "Naren Ramakrishnan"
+  ],
+  "read_version": "arXiv:2512.12818v1",
+  "latest_arxiv_version_checked": "v1",
+  "latest_arxiv_version_date": "2025-12-14",
+  "first_submitted_date": "2025-12-14",
+  "version_status": "latest_arxiv_version_checked_on_2026_10_05",
+  "reading_depth": "selected_sections_read",
+  "reading_scope": "arXiv abstract and metadata；HTML §1 excerpt and §2；HTML §§3.1–3.4；HTML §§4.1.1–4.1.4 and opening of §4.1.5；HTML §§5.4–5.5 and §5.6 excerpt；HTML §§7.1–7.3; Table 3 and opening discussion of §7.4；Figure captions read; figure images not visually reviewed; code and appendices not audited；PDF targeted text check: page 18, §7.3 budget placeholder; not full PDF reading",
+  "reading_boundary": "arXiv abstract and metadata；HTML §1 excerpt and §2；HTML §§3.1–3.4；HTML §§4.1.1–4.1.4 and opening of §4.1.5；HTML §§5.4–5.5 and §5.6 excerpt；HTML §§7.1–7.3; Table 3 and opening discussion of §7.4；Figure captions read; figure images not visually reviewed; code and appendices not audited；PDF targeted text check: page 18, §7.3 budget placeholder; not full PDF reading。仅据实际覆盖范围编写文献卡；没有独立全文精读、完整代码审计或实验复现。",
+  "teaching_status": "not_created",
+  "content_kind": "bibliographic_card",
+  "reading_path": null,
+  "user_reading_status": "not_asserted",
+  "user_adoption": "not_established",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "仅保存原创卡片与官方链接，不镜像论文全文或复用论文原图。"
+  },
+  "fulltext_local_status": "official_link_only_not_mirrored_in_repository",
+  "fulltext_local_path": null,
+  "source_origin": "historical_assistant_exact_url",
+  "source_record_updated": "2026-10-05",
+  "topic_paths": [
+    "cross-domain/agents"
+  ],
+  "modality_tags": [
+    "text"
+  ],
+  "task_tags": [
+    "decision"
+  ],
+  "legacy_paths": [],
+  "evidence_paths": [
+    "evidence.json"
+  ],
+  "chat_provenance": {
+    "source_role": "assistant",
+    "relationship": "historical_assistant_reference_or_recommendation",
+    "historical_message_time_utc": "2026-10-05T05:50:45Z",
+    "original_chat_urls": [
+      "https://arxiv.org/html/2512.12818"
+    ],
+    "observed_arxiv_identifier": "2512.12818",
+    "evidence_type": "historical_message_retrieval_reports_exact_url_and_title",
+    "original_conversation_url": null,
+    "evidence_boundary": "历史检索返回的学术书目摘要；未取得可打开的原会话链接，不是完整逐字聊天记录。",
+    "user_provided": false,
+    "user_adoption": "not_established",
+    "canonical_url_basis": "independently_verified_official_arxiv_identity"
+  },
+  "verification_2026_10_05": {
+    "verification_status": "primary_identity_version_and_scoped_content_verified",
+    "verification_sources": [
+      "https://arxiv.org/abs/2512.12818v1",
+      "https://arxiv.org/html/2512.12818v1",
+      "https://arxiv.org/pdf/2512.12818v1"
+    ],
+    "reading_scope": "arXiv abstract and metadata；HTML §1 excerpt and §2；HTML §§3.1–3.4；HTML §§4.1.1–4.1.4 and opening of §4.1.5；HTML §§5.4–5.5 and §5.6 excerpt；HTML §§7.1–7.3; Table 3 and opening discussion of §7.4；Figure captions read; figure images not visually reviewed; code and appendices not audited；PDF targeted text check: page 18, §7.3 budget placeholder; not full PDF reading",
+    "mechanism_summary": "将 world、experience、observation、opinion 分网，以 retain／recall／reflect 操作；记忆带实体和时间，检索结合语义、关键词、图及时间线索。",
+    "evidence_boundary": "§7.3 检索预算仍有占位符；部分外部基线未重跑且 judge 不同，跨系统胜负不能视为严格匹配实验。未复现或审计代码。",
+    "read_version": "arXiv:2512.12818v1"
+  },
+  "source_caveats": [
+    {
+      "kind": "reproducibility_gap",
+      "detail": "§7.3 retrieval budgets are literally left as <add> tokens for both datasets."
+    },
+    {
+      "kind": "comparison_confound",
+      "detail": "§7.3 imports LongMemEval external baselines using their published GPT-4o judge; Hindsight uses GPT-OSS-120B judge. LoCoMo baselines are explicitly reported reference points, not independently reproduced by the authors."
+    }
+  ],
+  "verification_status": "primary_identity_version_and_scoped_content_verified",
+  "verification_sources": [
+    "https://arxiv.org/abs/2512.12818v1",
+    "https://arxiv.org/html/2512.12818v1",
+    "https://arxiv.org/pdf/2512.12818v1"
+  ],
+  "original_chat_urls": [
+    "https://arxiv.org/html/2512.12818"
+  ],
+  "chat_evidence": [
+    {
+      "date": "2026-10-05T05:50:45Z",
+      "role": "assistant",
+      "evidence_type": "historical_message_retrieval_reports_exact_url_and_title",
+      "relationship": "historical_assistant_reference_or_recommendation"
+    }
+  ],
+  "assistant_reading_status": "selected_sections_read"
+}

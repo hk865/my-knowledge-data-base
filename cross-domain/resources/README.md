@@ -29,3 +29,8 @@
 - [MT-046: Op Amp Settling Time](adi-mt-046/README.md) · 官方技术文档
 - [High-Speed Layout Guidelines (SCAA082A)](ti-scaa082a/README.md) · 官方技术文档
 - [High-Speed Interface Layout Guidelines (SPRAAR7J, Rev. J)](ti-spraar7j/README.md) · 官方技术文档
+
+## 2026年10月5日文献与资料增量
+
+- [Registering a Dispatched Operator in C++](pytorch-dispatcher/README.md) · 2020 · 资料卡，暂无独立精读
+- [Fused Softmax](triton-fused-softmax/README.md) · 年份见原文 · 资料卡，暂无独立精读

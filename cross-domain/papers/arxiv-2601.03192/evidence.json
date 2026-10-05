@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2601.03192",
+  "title": "MemRL: Self-Evolving Agents via Runtime Reinforcement Learning on Episodic Memory",
+  "checked_on": "2026-10-05",
+  "read_version": "arXiv:2601.03192v2",
+  "reading_scope": "arXiv abstract and metadata；HTML §§3.1–4.3；HTML §6",
+  "independently_reproduced": false,
+  "primary_sources": [
+    {
+      "url": "https://arxiv.org/abs/2601.03192v2",
+      "supports": [
+        "identity",
+        "version",
+        "dates",
+        "evaluated benchmark names"
+      ],
+      "locator": "Abstract; Submission history"
+    },
+    {
+      "url": "https://arxiv.org/html/2601.03192v2",
+      "supports": [
+        "triplet",
+        "two-phase retrieval",
+        "runtime utility update"
+      ],
+      "locator": "§4.1–4.3"
+    },
+    {
+      "url": "https://arxiv.org/html/2601.03192v2",
+      "supports": [
+        "noise",
+        "credit assignment ambiguity",
+        "task-similarity limitation"
+      ],
+      "locator": "§6"
+    }
+  ],
+  "claims": [
+    {
+      "id": "identity",
+      "claim": "MemRL: Self-Evolving Agents via Runtime Reinforcement Learning on Episodic Memory；2601.03192v2；版本日期 2026-02-12",
+      "url": "https://arxiv.org/abs/2601.03192v2",
+      "location": "Title; Authors; Submission history"
+    },
+    {
+      "id": "problem",
+      "claim": "语义相似的旧经验不一定能改善当前行动。",
+      "source_refs": [
+        "https://arxiv.org/abs/2601.03192v2",
+        "https://arxiv.org/html/2601.03192v2"
+      ]
+    },
+    {
+      "id": "mechanism",
+      "claim": "冻结模型权重，保存 Intent–Experience–Utility；先按相似度召回，再按相似度与效用综合选择，用环境反馈更新记忆效用。",
+      "source_refs": [
+        "https://arxiv.org/abs/2601.03192v2",
+        "https://arxiv.org/html/2601.03192v2"
+      ]
+    },
+    {
+      "id": "limits",
+      "claim": "§6 承认长轨迹噪声、多条经验的信用分配歧义及低任务相似度限制。效用分数不等于事实可信度。",
+      "source_refs": [
+        "https://arxiv.org/abs/2601.03192v2",
+        "https://arxiv.org/html/2601.03192v2"
+      ]
+    },
+    {
+      "id": "reported_evidence",
+      "claim": "摘要列出 HLE、BigCodeBench、ALFWorld 和 Lifelong Agent Bench；本次未审阅完整实验表，不转述跨基准增益数字。",
+      "source_refs": [
+        "https://arxiv.org/abs/2601.03192v2",
+        "https://arxiv.org/html/2601.03192v2"
+      ]
+    }
+  ],
+  "source_caveats": [],
+  "unverified": [
+    "全文逐页精读",
+    "独立实验复现",
+    "完整源码审计",
+    "再分发许可"
+  ],
+  "editorial_mapping": {
+    "guide": "cross-domain/fields/agents/memory-evidence-loop.md",
+    "status": "editorial_teaching_proposal_not_author_architecture_or_user_adoption"
+  }
+}

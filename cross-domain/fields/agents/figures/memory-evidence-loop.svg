@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1320" height="760" viewBox="0 0 1320 760" role="img" aria-labelledby="title desc">
+<title id="title">Agent 工程记忆：任务与局部架构引导检索，当前执行决定能否复用</title>
+<desc id="desc">原创教学流程图。旧失败在代码版本和环境下形成证据记录，按新任务与局部模块关系检索；核对当前代码并重跑测试后，才能复用结论或标记失效。此图是教学提案，并非任何论文的完整架构。</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#536579" stroke-width="1.5"/></marker><marker id="green" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#26775e" stroke-width="1.5"/></marker></defs>
+<rect width="1320" height="760" fill="#f8fafc"/>
+<g font-family="Noto Sans CJK SC, Noto Serif CJK SC, sans-serif" fill="#15283b">
+<text x="42" y="52" font-size="28" font-weight="700">经验进入下一次行动，要经过当前证据</text>
+<text x="42" y="85" font-size="17" fill="#526476">原创教学设计 · 示例：时间解析测试 · 箭头表示信息流，不表示实验增益</text>
+
+<rect x="42" y="120" width="385" height="143" rx="14" fill="#eaf1fa" stroke="#7f9ec2" stroke-width="1.5"/>
+<text x="62" y="154" font-size="21" font-weight="700">新任务节点 T1</text>
+<text x="62" y="185" font-size="17">目标：保留带时区输入的语义</text>
+<text x="62" y="212" font-size="17">基线：当前提交 C1</text>
+<text x="62" y="239" font-size="17">接口、依赖、验收条件和证据入口</text>
+<rect x="466" y="120" width="475" height="143" rx="14" fill="#eaf1fa" stroke="#7f9ec2" stroke-width="1.5"/>
+<text x="486" y="154" font-size="21" font-weight="700">局部架构图</text>
+<text x="486" y="185" font-size="17">任务 → 接口层 → 时间解析模块 → 回归测试</text>
+<text x="486" y="212" font-size="17">边表示真实调用或验证依赖</text>
+<text x="486" y="239" font-size="17">模块变更 → 找到需要重新核查的旧结论</text>
+<rect x="980" y="120" width="298" height="143" rx="14" fill="#eaf1fa" stroke="#7f9ec2" stroke-width="1.5"/>
+<text x="1000" y="154" font-size="21" font-weight="700">共享范围</text>
+<text x="1000" y="185" font-size="17">谁能读写这份记忆</text>
+<text x="1000" y="212" font-size="17">版本何时对其他任务可见</text>
+<text x="1000" y="239" font-size="17">不同结论保留各自证据</text>
+<path d="M427,188 H457" fill="none" stroke="#536579" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M941,188 H971" fill="none" stroke="#536579" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="42" y="337" width="216" height="163" rx="14" fill="#eaf1fa" stroke="#7f9ec2" stroke-width="1.5"/>
+<text x="62" y="371" font-size="21" font-weight="700">1 旧任务失败</text>
+<text x="62" y="402" font-size="17">提交 C0 的测试</text>
+<text x="62" y="429" font-size="17">期望与实际不同</text>
+<text x="62" y="456" font-size="17">保留原始输出</text>
+<rect x="297" y="337" width="216" height="163" rx="14" fill="#eaf1fa" stroke="#7f9ec2" stroke-width="1.5"/>
+<text x="317" y="371" font-size="21" font-weight="700">2 形成记忆</text>
+<text x="317" y="402" font-size="17">事件 + 证据指针</text>
+<text x="317" y="429" font-size="17">适用条件 + 假说</text>
+<text x="317" y="456" font-size="17">事实与解释分开</text>
+<rect x="552" y="337" width="216" height="163" rx="14" fill="#eaf1fa" stroke="#7f9ec2" stroke-width="1.5"/>
+<text x="572" y="371" font-size="21" font-weight="700">3 检索候选</text>
+<text x="572" y="402" font-size="17">任务与模块筛选</text>
+<text x="572" y="429" font-size="17">症状和语义召回</text>
+<text x="572" y="456" font-size="17">保留证据链</text>
+<rect x="807" y="337" width="216" height="163" rx="14" fill="#fff3df" stroke="#d1a24c" stroke-width="1.5"/>
+<text x="827" y="371" font-size="21" font-weight="700">4 当前核查</text>
+<text x="827" y="402" font-size="17">读取 C1 的实现</text>
+<text x="827" y="429" font-size="17">重跑相关测试</text>
+<text x="827" y="456" font-size="17">核对接口与环境</text>
+<rect x="1062" y="337" width="216" height="163" rx="14" fill="#eaf4ef" stroke="#68a88b" stroke-width="1.5"/>
+<text x="1082" y="371" font-size="21" font-weight="700">5 决定用途</text>
+<text x="1082" y="402" font-size="17">成立：复用经验</text>
+<text x="1082" y="429" font-size="17">变化：更新前提</text>
+<text x="1082" y="456" font-size="17">冲突：标记失效</text>
+<path d="M258,417 H287" fill="none" stroke="#536579" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M513,417 H542" fill="none" stroke="#536579" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M768,417 H797" fill="none" stroke="#536579" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M1023,417 H1052" fill="none" stroke="#536579" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M235,263 V300 H660 V327" fill="none" stroke="#536579" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M760,263 V295 H915 V327" fill="none" stroke="#536579" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="45" y="305" font-size="16" fill="#526476">任务决定查询</text>
+<text x="966" y="307" font-size="16" fill="#526476">架构决定核查范围</text>
+<path d="M1170,500 V563 H405 V510" fill="none" stroke="#26775e" stroke-width="2.5" marker-end="url(#green)"/>
+<text x="530" y="548" font-size="18" fill="#26775e">写回新版本、测试回执与适用边界，保留旧事件</text>
+<rect x="42" y="615" width="598" height="106" rx="14" fill="#ffffff" stroke="#aebdcb" stroke-width="1.5"/>
+<text x="62" y="649" font-size="21" font-weight="700">结构化记录的作用</text>
+<text x="62" y="680" font-size="17">让检索、追溯与失效检查可执行</text>
+<text x="62" y="707" font-size="17">内容的效用仍需后续任务验证</text>
+<rect x="676" y="615" width="602" height="106" rx="14" fill="#ffffff" stroke="#aebdcb" stroke-width="1.5"/>
+<text x="696" y="649" font-size="21" font-weight="700">记忆的边界</text>
+<text x="696" y="680" font-size="17">旧结论提供候选线索</text>
+<text x="696" y="707" font-size="17">当前代码和执行结果提供当前证据</text>
+</g></svg>

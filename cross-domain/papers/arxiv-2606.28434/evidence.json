@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2606.28434",
+  "title": "SWE-MeM: Learning Adaptive Memory Management for Long-Horizon Coding Agents",
+  "checked_on": "2026-10-05",
+  "read_version": "arXiv:2606.28434v1",
+  "reading_scope": "摘要及 PDF 定向评估/压缩示例片段；未通读 30 页，未复现",
+  "independently_reproduced": false,
+  "primary_sources": [
+    {
+      "url": "https://arxiv.org/abs/2606.28434v1",
+      "locator": "Title; Abstract; Submission history",
+      "supports": [
+        "identity",
+        "version",
+        "dates"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/pdf/2606.28434v1",
+      "locator": "摘要及 PDF 定向评估/压缩示例片段；未通读 30 页，未复现",
+      "supports": [
+        "problem",
+        "method",
+        "limits"
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "identity",
+      "claim": "SWE-MeM: Learning Adaptive Memory Management for Long-Horizon Coding Agents；2606.28434v1；版本日期 2026-06-26",
+      "url": "https://arxiv.org/abs/2606.28434v1",
+      "location": "Title; Authors; Submission history"
+    },
+    {
+      "id": "problem",
+      "claim": "长程修复任务的交互历史太长且噪声多，固定时间和粒度的压缩会浪费上下文或丢失关键证据。",
+      "source_refs": [
+        "https://arxiv.org/abs/2606.28434v1",
+        "https://arxiv.org/pdf/2606.28434v1"
+      ]
+    },
+    {
+      "id": "mechanism",
+      "claim": "训练智能体决定何时、压缩哪段以及如何压缩，结合合成轨迹与 Memory-aware GRPO 联合优化记忆管理和问题解决。",
+      "source_refs": [
+        "https://arxiv.org/abs/2606.28434v1",
+        "https://arxiv.org/pdf/2606.28434v1"
+      ]
+    },
+    {
+      "id": "limits",
+      "claim": "主要研究任务进行中的上下文管理；摘要报告的 SWE-bench 成绩不能当成本地持久图记忆或跨项目经验迁移效果。官方代码地址本次未核实。",
+      "source_refs": [
+        "https://arxiv.org/abs/2606.28434v1",
+        "https://arxiv.org/pdf/2606.28434v1"
+      ]
+    }
+  ],
+  "source_caveats": [],
+  "unverified": [
+    "全文逐页精读",
+    "独立实验复现",
+    "完整源码审计",
+    "再分发许可"
+  ],
+  "editorial_mapping": {
+    "guide": "cross-domain/fields/agents/memory-evidence-loop.md",
+    "status": "editorial_teaching_proposal_not_author_architecture_or_user_adoption"
+  }
+}

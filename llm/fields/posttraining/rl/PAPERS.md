@@ -65,3 +65,7 @@
 ## 跨领域的对照
 
 - [SimpleVLA-RL: Scaling VLA Training via Reinforcement Learning](../../../../robotics-embodied/papers/arxiv-2509.09674/README.md) · 2025 · 文献卡（归机器人与具身） · 把 GRPO 与 DAPO 式的探索技巧搬到 VLA 上
+
+## 记忆管理与任务奖励
+
+- [SWE-MeM: Learning Adaptive Memory Management for Long-Horizon Coding Agents](../../../../cross-domain/papers/arxiv-2606.28434/README.md) · 2026 · 文献卡
