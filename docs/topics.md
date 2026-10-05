@@ -155,7 +155,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Olmo 3](paper-catalog.md#p495)
 - [DeepSeekMath-V2: Towards Self-Verifiable Mathematical Reasoning](paper-catalog.md#p497)
 
-### 后训练 强化学习（48）
+### 后训练 强化学习（49）
 
 细分：策略优化算法；结果与过程奖励；轨迹采样与数据回流；奖励与验证器；长轨迹信用分配；探索与轨迹分布
 
@@ -207,6 +207,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [DeepSeekMath-V2: Towards Self-Verifiable Mathematical Reasoning](paper-catalog.md#p497)
 - [Kimi K2.5: Visual Agentic Intelligence](paper-catalog.md#p498)
 - [NVIDIA Nemotron 3: Efficient and Open Intelligence](paper-catalog.md#p500)
+- [SWE-MeM: Learning Adaptive Memory Management for Long-Horizon Coding Agents](paper-catalog.md#p591)
 
 ### 架构与效率（46）
 
@@ -259,7 +260,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Transformers are SSMs: Generalized Models and Efficient Algorithms Through Structured State Space Duality](paper-catalog.md#p524)
 - [On the Design of Qwen3.8-Next Architecture: Evaluation, Efficiency, and Training Stability](paper-catalog.md#p554)
 
-### 推理时计算（44）
+### 推理时计算（45）
 
 细分：搜索与验证；多路径与多 Agent；预算分配与 token 效率；精确目标分布与投机验证；近似质量协作与关键段接管；MTP草拟与验证接口；精确级联混合分布
 
@@ -307,9 +308,10 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Recursive Language Models](paper-catalog.md#p499)
 - [Speculative Speculative Decoding](paper-catalog.md#p553)
 - [Acceptance-Aware Draft Model Training for Speculative Decoding](paper-catalog.md#p555)
+- [MemRL: Self-Evolving Agents via Runtime Reinforcement Learning on Episodic Memory](paper-catalog.md#p586)
 
 
-### 长上下文（22）
+### 长上下文（23）
 
 细分：位置编码与窗口扩展；长数据与训练课程；稀疏与压缩注意力；KV 缓存与推理成本；长上下文评测
 
@@ -335,6 +337,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [NVIDIA Nemotron 3: Efficient and Open Intelligence](paper-catalog.md#p500)
 - [Transformers are SSMs: Generalized Models and Efficient Algorithms Through Structured State Space Duality](paper-catalog.md#p524)
 - [On the Design of Qwen3.8-Next Architecture: Evaluation, Efficiency, and Training Stability](paper-catalog.md#p554)
+- [SWE-MeM: Learning Adaptive Memory Management for Long-Horizon Coding Agents](paper-catalog.md#p591)
 
 
 ## 多模态与世界表征
@@ -881,7 +884,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 ## 跨方向方法与探索
 
-### Agent 与上下文系统（60）
+### Agent 与上下文系统（73）
 
 细分：Agent轨迹与性质验证
 
@@ -945,6 +948,19 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Security](paper-catalog.md#p550)
 - [The Instruction Hierarchy: Training LLMs to Prioritize Privileged Instructions](paper-catalog.md#p551)
 - [Securing AI Agents with Information-Flow Control](paper-catalog.md#p552)
+- [AutoPentester: An LLM Agent-based Framework for Automated Pentesting](paper-catalog.md#p582)
+- [Towards a Science of Scaling Agent Systems](paper-catalog.md#p583)
+- [Hindsight is 20/20: Building Agent Memory that Retains, Recalls, and Reflects](paper-catalog.md#p584)
+- [Memory in the Age of AI Agents](paper-catalog.md#p585)
+- [MemRL: Self-Evolving Agents via Runtime Reinforcement Learning on Episodic Memory](paper-catalog.md#p586)
+- [MemoryArena: Benchmarking Agent Memory in Interdependent Multi-Session Agentic Tasks](paper-catalog.md#p587)
+- [Multi-Agent Memory from a Computer Architecture Perspective: Visions and Challenges Ahead](paper-catalog.md#p588)
+- [PROJECTMEM: A Local-First, Event-Sourced Memory and Judgment Layer for AI Coding Agents](paper-catalog.md#p589)
+- [The Illusion of Multi-Agent Advantage](paper-catalog.md#p590)
+- [SWE-MeM: Learning Adaptive Memory Management for Long-Horizon Coding Agents](paper-catalog.md#p591)
+- [MemoryLake on MemoryArena: A Matched Study of Agent Memory Backends](paper-catalog.md#p592)
+- [DreamBench-SWE: A Multi-Session Memory-Hygiene Benchmark for Software Agents](paper-catalog.md#p593)
+- [A Programming Paradigm for Spatiotemporal Composability](paper-catalog.md#p594)
 
 
 ### 模型科学（22）
@@ -974,7 +990,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Proving Test Set Contamination in Black Box Language Models](paper-catalog.md#p406)
 - [GPQA: A Graduate-Level Google-Proof Q&A Benchmark](paper-catalog.md#p409)
 
-### 训练科学（18）
+### 训练科学（20）
 
 细分：规模定律；优化地形；训练动态；双下降；本征维度与参数有效性；遗忘
 
@@ -996,6 +1012,8 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Scaling Laws for Neural Language Models](paper-catalog.md#p521)
 - [Scaling Laws for Autoregressive Generative Modeling](paper-catalog.md#p522)
 - [Scaling Vision Transformers](paper-catalog.md#p523)
+- [Registering a Dispatched Operator in C++](paper-catalog.md#p595)
+- [Fused Softmax](paper-catalog.md#p596)
 
 
 ### 生物计算探索（0）
@@ -1003,7 +1021,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 细分：
 
 
-### 评估与监督可靠性（64）
+### 评估与监督可靠性（69）
 
 细分：性质测试、变形测试与行为验证边界
 
@@ -1071,6 +1089,11 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World Evaluation of Vision-Language-Action Models](paper-catalog.md#p558)
 - [RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies](paper-catalog.md#p560)
 - [IndustrialVLA-Bench: A Traceable Multi-Axis Evaluation of Open Robot Policy Models](paper-catalog.md#p561)
+- [Towards a Science of Scaling Agent Systems](paper-catalog.md#p583)
+- [MemoryArena: Benchmarking Agent Memory in Interdependent Multi-Session Agentic Tasks](paper-catalog.md#p587)
+- [The Illusion of Multi-Agent Advantage](paper-catalog.md#p590)
+- [MemoryLake on MemoryArena: A Matched Study of Agent Memory Backends](paper-catalog.md#p592)
+- [DreamBench-SWE: A Multi-Session Memory-Hygiene Benchmark for Software Agents](paper-catalog.md#p593)
 
 
 ### 知识蒸馏与模型压缩（15）
@@ -1119,13 +1142,13 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 | 模态 \ 任务 | understanding | generation | decision | evaluation | analysis |
 |---|---:|---:|---:|---:|---:|
-| text | [65](#x-text-understanding) | [169](#x-text-generation) | [105](#x-text-decision) | [74](#x-text-evaluation) | [82](#x-text-analysis) |
+| text | [65](#x-text-understanding) | [169](#x-text-generation) | [115](#x-text-decision) | [79](#x-text-evaluation) | [84](#x-text-analysis) |
 | image | [127](#x-image-understanding) | [60](#x-image-generation) | [110](#x-image-decision) | [22](#x-image-evaluation) | [16](#x-image-analysis) |
 | video | [38](#x-video-understanding) | [44](#x-video-generation) | [36](#x-video-decision) | [15](#x-video-evaluation) | [6](#x-video-analysis) |
 | audio | [9](#x-audio-understanding) | [7](#x-audio-generation) | [2](#x-audio-decision) | [1](#x-audio-evaluation) | · |
 | action | [9](#x-action-understanding) | [37](#x-action-generation) | [150](#x-action-decision) | [15](#x-action-evaluation) | [3](#x-action-analysis) |
 | state | [17](#x-state-understanding) | [3](#x-state-generation) | [77](#x-state-decision) | [6](#x-state-evaluation) | · |
-| code | [1](#x-code-understanding) | [27](#x-code-generation) | [27](#x-code-decision) | [20](#x-code-evaluation) | [28](#x-code-analysis) |
+| code | [1](#x-code-understanding) | [27](#x-code-generation) | [31](#x-code-decision) | [21](#x-code-evaluation) | [31](#x-code-analysis) |
 | multimodal | [54](#x-multimodal-understanding) | [45](#x-multimodal-generation) | [49](#x-multimodal-decision) | [23](#x-multimodal-evaluation) | [9](#x-multimodal-analysis) |
 | tabular | [1](#x-tabular-understanding) | · | · | · | · |
 
@@ -1375,7 +1398,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-text-decision"></a>
 
-### text × decision（105）
+### text × decision（115）
 
 - [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](paper-catalog.md#p034)
 - [ReAct: Synergizing Reasoning and Acting in Language Models](paper-catalog.md#p040)
@@ -1482,10 +1505,20 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Cosmos 3: Omnimodal World Models for Physical AI](paper-catalog.md#p574)
 - [InternVideo3: Agentify Foundation Models with Multimodal Contextual Reasoning](paper-catalog.md#p575)
 - [Qwen3.8-Omni: Towards Native Omni-Modal Agents](paper-catalog.md#p576)
+- [AutoPentester: An LLM Agent-based Framework for Automated Pentesting](paper-catalog.md#p582)
+- [Towards a Science of Scaling Agent Systems](paper-catalog.md#p583)
+- [Hindsight is 20/20: Building Agent Memory that Retains, Recalls, and Reflects](paper-catalog.md#p584)
+- [MemRL: Self-Evolving Agents via Runtime Reinforcement Learning on Episodic Memory](paper-catalog.md#p586)
+- [MemoryArena: Benchmarking Agent Memory in Interdependent Multi-Session Agentic Tasks](paper-catalog.md#p587)
+- [PROJECTMEM: A Local-First, Event-Sourced Memory and Judgment Layer for AI Coding Agents](paper-catalog.md#p589)
+- [The Illusion of Multi-Agent Advantage](paper-catalog.md#p590)
+- [SWE-MeM: Learning Adaptive Memory Management for Long-Horizon Coding Agents](paper-catalog.md#p591)
+- [MemoryLake on MemoryArena: A Matched Study of Agent Memory Backends](paper-catalog.md#p592)
+- [DreamBench-SWE: A Multi-Session Memory-Hygiene Benchmark for Software Agents](paper-catalog.md#p593)
 
 <a id="x-text-evaluation"></a>
 
-### text × evaluation（74）
+### text × evaluation（79）
 
 - [PersonaEval: Are LLM Evaluators Human Enough to Judge Role-Play?](paper-catalog.md#p032)
 - [On scalable oversight with weak LLMs judging strong LLMs](paper-catalog.md#p033)
@@ -1561,10 +1594,15 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World Evaluation of Vision-Language-Action Models](paper-catalog.md#p558)
 - [RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies](paper-catalog.md#p560)
 - [IndustrialVLA-Bench: A Traceable Multi-Axis Evaluation of Open Robot Policy Models](paper-catalog.md#p561)
+- [Towards a Science of Scaling Agent Systems](paper-catalog.md#p583)
+- [MemoryArena: Benchmarking Agent Memory in Interdependent Multi-Session Agentic Tasks](paper-catalog.md#p587)
+- [The Illusion of Multi-Agent Advantage](paper-catalog.md#p590)
+- [MemoryLake on MemoryArena: A Matched Study of Agent Memory Backends](paper-catalog.md#p592)
+- [DreamBench-SWE: A Multi-Session Memory-Hygiene Benchmark for Software Agents](paper-catalog.md#p593)
 
 <a id="x-text-analysis"></a>
 
-### text × analysis（82）
+### text × analysis（84）
 
 - [OLMo: Accelerating the Science of Language Models](paper-catalog.md#p010)
 - [ShortGPT: Layers in Large Language Models are More Redundant Than You Expect](paper-catalog.md#p022)
@@ -1648,6 +1686,8 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Data-Constrained Language Model Pretraining: Improved Regularization and Scaling Laws](paper-catalog.md#p564)
 - [Rethinking On-Policy Distillation of Large Language Models II: One Training Example](paper-catalog.md#p565)
 - [Solving Without Stopping: On-Policy Distillation at Small Scale](paper-catalog.md#p566)
+- [Memory in the Age of AI Agents](paper-catalog.md#p585)
+- [Multi-Agent Memory from a Computer Architecture Perspective: Visions and Challenges Ahead](paper-catalog.md#p588)
 
 <a id="x-image-understanding"></a>
 
@@ -2614,7 +2654,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-code-decision"></a>
 
-### code × decision（27）
+### code × decision（31）
 
 - [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](paper-catalog.md#p034)
 - [Voyager: An Open-Ended Embodied Agent with Large Language Models](paper-catalog.md#p041)
@@ -2643,10 +2683,14 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Kimi K2.5: Visual Agentic Intelligence](paper-catalog.md#p498)
 - [Recursive Language Models](paper-catalog.md#p499)
 - [NVIDIA Nemotron 3: Efficient and Open Intelligence](paper-catalog.md#p500)
+- [AutoPentester: An LLM Agent-based Framework for Automated Pentesting](paper-catalog.md#p582)
+- [PROJECTMEM: A Local-First, Event-Sourced Memory and Judgment Layer for AI Coding Agents](paper-catalog.md#p589)
+- [SWE-MeM: Learning Adaptive Memory Management for Long-Horizon Coding Agents](paper-catalog.md#p591)
+- [DreamBench-SWE: A Multi-Session Memory-Hygiene Benchmark for Software Agents](paper-catalog.md#p593)
 
 <a id="x-code-evaluation"></a>
 
-### code × evaluation（20）
+### code × evaluation（21）
 
 - [INSPECT: Intrinsic and Systematic Probing Evaluation for Code Transformers](paper-catalog.md#p030)
 - [Finding bugs across the Python ecosystem with Claude and property-based testing](paper-catalog.md#p160)
@@ -2668,10 +2712,11 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [OpenAI GPT-6 Astra System Card](paper-catalog.md#p486)
 - [System Card: Claude Opus 5.5](paper-catalog.md#p487)
 - [Gemini 3.8 Flash Model Card](paper-catalog.md#p488)
+- [DreamBench-SWE: A Multi-Session Memory-Hygiene Benchmark for Software Agents](paper-catalog.md#p593)
 
 <a id="x-code-analysis"></a>
 
-### code × analysis（28）
+### code × analysis（31）
 
 - [Naturalness of Attention: Revisiting Attention in Code Language Models](paper-catalog.md#p028)
 - [Probing Pretrained Models of Source Code](paper-catalog.md#p029)
@@ -2701,6 +2746,9 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Scaling the Practice of Architecture, Conversationally](paper-catalog.md#p546)
 - [SPIFFE Overview](paper-catalog.md#p547)
 - [Security](paper-catalog.md#p550)
+- [A Programming Paradigm for Spatiotemporal Composability](paper-catalog.md#p594)
+- [Registering a Dispatched Operator in C++](paper-catalog.md#p595)
+- [Fused Softmax](paper-catalog.md#p596)
 
 <a id="x-multimodal-understanding"></a>
 

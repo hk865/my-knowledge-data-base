@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-05",
+  "scope": "来源链缺口，不与论文身份核验混为一谈",
+  "items": [
+    {
+      "resource_id": "arxiv:2608.13883",
+      "gap": "聊天检索仅恢复 arXiv ID 和题名，未恢复原始 URL",
+      "identity_status": "官方 arXiv 题名与标识已核验",
+      "handling": "original_chat_urls 保持空数组，官方入口为独立核验所得，不伪称聊天原链接"
+    },
+    {
+      "resource_id": "arxiv:2606.13003",
+      "gap": "聊天检索仅恢复 arXiv ID 和题名，未恢复原始 URL",
+      "identity_status": "官方 arXiv 题名与标识已核验",
+      "handling": "original_chat_urls 保持空数组，官方入口为独立核验所得，不伪称聊天原链接"
+    },
+    {
+      "scope": "本日13篇论文",
+      "gap": "检索未返回可打开的原始会话链接",
+      "handling": "保留可得日期、消息角色和检索证据类型，不编造会话URL"
+    },
+    {
+      "scope": "PyTorch/Triton两项资料",
+      "gap": "两条文档URL与18:17:14Z、18:23:34Z两个助手消息的逐条对应未确定",
+      "handling": "记录候选时间集合，不将每个URL强配单一消息时间"
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "schema_version": 3,
   "repository": "hk865/my-knowledge-data-base",
   "branch": "main",
-  "export_date": "2026-10-04",
+  "export_date": "2026-10-05",
   "scope": "Public academic content, directory navigation, official paper links and original illustrations",
   "content_index": "index.json",
   "paper_catalog": "papers.json",
@@ -12,5 +12,13 @@
     "force_push": false,
     "source_deletion_does_not_delete_repository_files": true
   },
-  "privacy": "Private source addresses, identifiers and internal synchronization baselines are not included in the public export."
+  "privacy": "Private source addresses, identifiers and internal synchronization baselines are not included in the public export.",
+  "latest_update": {
+    "date": "2026-10-05",
+    "mode": "verified_academic_additions_and_curated_navigation",
+    "daily": "daily/2026-10-05.md",
+    "sources": "daily/2026-10-05-sources.json",
+    "legacy_page_exports": "paused_missing_previous_pure_source_baseline",
+    "preserved_existing_content": true
+  }
 }

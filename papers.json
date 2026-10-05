@@ -36590,5 +36590,1069 @@
       "Basim Azam",
       "Naveed Akhtar"
     ]
+  },
+  {
+    "id": "arxiv:2510.05605",
+    "title": "AutoPentester: An LLM Agent-based Framework for Automated Pentesting",
+    "url": "https://arxiv.org/abs/2510.05605",
+    "arxiv_id": "2510.05605",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "cross-domain/agents"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "historical_assistant_exact_url"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-05T06:11:17Z",
+        "role": "assistant",
+        "evidence_type": "historical_message_retrieval_reports_exact_url_and_title",
+        "relationship": "historical_assistant_reference_or_recommendation"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2510.05605v1",
+      "https://arxiv.org/html/2510.05605v1"
+    ],
+    "verification_status": "primary_identity_version_and_scoped_content_verified",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p582",
+    "user_reading_status": "not_asserted",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2510.05605",
+    "canonical_path": "cross-domain/papers/arxiv-2510.05605/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2510.05605/README.md",
+    "source_path": "cross-domain/papers/arxiv-2510.05605/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Yasod Ginige",
+      "Akila Niroshan",
+      "Sajal Jain",
+      "Suranga Seneviratne"
+    ],
+    "assistant_reading_status": "abstract_and_selected_mechanism_sections",
+    "reading_scope": "摘要、§III 机制段和 §IV 评估范围定向选读；未全文精读、未运行、未复现",
+    "read_version": "arXiv:2510.05605v1",
+    "original_chat_urls": [
+      "https://arxiv.org/html/2510.05605v1"
+    ],
+    "evidence_boundary": "证据来自 HTB 和构造的脆弱虚拟机及论文自己的比较，不能证明真实生产系统的可靠性，也不直接验证跨会话通用图记忆。",
+    "source_origin": "historical_assistant_exact_url",
+    "independently_reproduced": false
+  },
+  {
+    "id": "arxiv:2512.08296",
+    "title": "Towards a Science of Scaling Agent Systems",
+    "url": "https://arxiv.org/abs/2512.08296",
+    "arxiv_id": "2512.08296",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "cross-domain/evaluation",
+      "cross-domain/agents"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "historical_assistant_exact_url"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-05T05:50:45Z",
+        "role": "assistant",
+        "evidence_type": "historical_message_retrieval_reports_exact_url_and_title",
+        "relationship": "historical_assistant_reference_or_recommendation"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2512.08296v3"
+    ],
+    "verification_status": "primary_identity_version_and_scoped_content_verified",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p583",
+    "user_reading_status": "not_asserted",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "evaluation",
+      "decision"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2512.08296",
+    "canonical_path": "cross-domain/papers/arxiv-2512.08296/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2512.08296/README.md",
+    "source_path": "cross-domain/papers/arxiv-2512.08296/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Yubin Kim",
+      "Ken Gu",
+      "Chanwoo Park",
+      "Chunjong Park",
+      "Samuel Schmidgall",
+      "A. Ali Heydari",
+      "Yao Yan",
+      "Zhihan Zhang",
+      "Yuchen Zhuang",
+      "Yun Liu",
+      "Mark Malhotra",
+      "Paul Pu Liang",
+      "Hae Won Park",
+      "Yuzhe Yang",
+      "Xuhai Xu",
+      "Yilun Du",
+      "Shwetak Patel",
+      "Tim Althoff",
+      "Daniel McDuff",
+      "Xin Liu"
+    ],
+    "assistant_reading_status": "abstract_read",
+    "reading_scope": "arXiv abstract；arXiv metadata and submission history",
+    "read_version": "arXiv:2512.08296v3",
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2512.08296?utm_source=chatgpt.com"
+    ],
+    "evidence_boundary": "不能推成固定 Agent 数、固定层级或跨所有任务通用的扩展定律；未审阅完整设置和回归诊断。旧版本数字不可混入 v3。",
+    "source_origin": "historical_assistant_exact_url",
+    "independently_reproduced": false
+  },
+  {
+    "id": "arxiv:2512.12818",
+    "title": "Hindsight is 20/20: Building Agent Memory that Retains, Recalls, and Reflects",
+    "url": "https://arxiv.org/abs/2512.12818",
+    "arxiv_id": "2512.12818",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "cross-domain/agents"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "historical_assistant_exact_url"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-05T05:50:45Z",
+        "role": "assistant",
+        "evidence_type": "historical_message_retrieval_reports_exact_url_and_title",
+        "relationship": "historical_assistant_reference_or_recommendation"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2512.12818v1",
+      "https://arxiv.org/html/2512.12818v1",
+      "https://arxiv.org/pdf/2512.12818v1"
+    ],
+    "verification_status": "primary_identity_version_and_scoped_content_verified",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p584",
+    "user_reading_status": "not_asserted",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2512.12818",
+    "canonical_path": "cross-domain/papers/arxiv-2512.12818/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2512.12818/README.md",
+    "source_path": "cross-domain/papers/arxiv-2512.12818/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Chris Latimer",
+      "Nicoló Boschi",
+      "Andrew Neeser",
+      "Chris Bartholomew",
+      "Gaurav Srivastava",
+      "Xuan Wang",
+      "Naren Ramakrishnan"
+    ],
+    "assistant_reading_status": "selected_sections_read",
+    "reading_scope": "arXiv abstract and metadata；HTML §1 excerpt and §2；HTML §§3.1–3.4；HTML §§4.1.1–4.1.4 and opening of §4.1.5；HTML §§5.4–5.5 and §5.6 excerpt；HTML §§7.1–7.3; Table 3 and opening discussion of §7.4；Figure captions read; figure images not visually reviewed; code and appendices not audited；PDF targeted text check: page 18, §7.3 budget placeholder; not full PDF reading",
+    "read_version": "arXiv:2512.12818v1",
+    "original_chat_urls": [
+      "https://arxiv.org/html/2512.12818"
+    ],
+    "evidence_boundary": "§7.3 检索预算仍有占位符；部分外部基线未重跑且 judge 不同，跨系统胜负不能视为严格匹配实验。未复现或审计代码。",
+    "source_origin": "historical_assistant_exact_url",
+    "independently_reproduced": false
+  },
+  {
+    "id": "arxiv:2512.13564",
+    "title": "Memory in the Age of AI Agents",
+    "url": "https://arxiv.org/abs/2512.13564",
+    "arxiv_id": "2512.13564",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "cross-domain/agents"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "historical_assistant_exact_url"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-05T05:50:45Z",
+        "role": "assistant",
+        "evidence_type": "historical_message_retrieval_reports_exact_url_and_title",
+        "relationship": "historical_assistant_reference_or_recommendation"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2512.13564v2"
+    ],
+    "verification_status": "primary_identity_version_and_scoped_content_verified",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p585",
+    "user_reading_status": "not_asserted",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2512.13564",
+    "canonical_path": "cross-domain/papers/arxiv-2512.13564/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2512.13564/README.md",
+    "source_path": "cross-domain/papers/arxiv-2512.13564/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Yuyang Hu",
+      "Shichun Liu",
+      "Yanwei Yue",
+      "Guibin Zhang",
+      "Boyang Liu",
+      "Fangyi Zhu",
+      "Jiahang Lin",
+      "Honglin Guo",
+      "Shihan Dou",
+      "Zhiheng Xi",
+      "Senjie Jin",
+      "Jiejun Tan",
+      "Yanbin Yin",
+      "Jiongnan Liu",
+      "Zeyu Zhang",
+      "Zhongxiang Sun",
+      "Yutao Zhu",
+      "Hao Sun",
+      "Boci Peng",
+      "Zhenrong Cheng",
+      "Xuanbo Fan",
+      "Jiaxin Guo",
+      "Xinlei Yu",
+      "Zhenhong Zhou",
+      "Zewen Hu",
+      "Jiahao Huo",
+      "Junhao Wang",
+      "Yuwei Niu",
+      "Yu Wang",
+      "Zhenfei Yin",
+      "Xiaobin Hu",
+      "Yue Liao",
+      "Qiankun Li",
+      "Kun Wang",
+      "Wangchunshu Zhou",
+      "Yixin Liu",
+      "Dawei Cheng",
+      "Qi Zhang",
+      "Tao Gui",
+      "Shirui Pan",
+      "Yan Zhang",
+      "Philip Torr",
+      "Zhicheng Dou",
+      "Ji-Rong Wen",
+      "Xuanjing Huang",
+      "Yu-Gang Jiang",
+      "Shuicheng Yan"
+    ],
+    "assistant_reading_status": "abstract_read",
+    "reading_scope": "arXiv abstract；arXiv metadata and submission history",
+    "read_version": "arXiv:2512.13564v2",
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2512.13564"
+    ],
+    "evidence_boundary": "分类框架不是经验证的跨领域统一记忆标准，也不证明所有系统必须实现每一类型。",
+    "source_origin": "historical_assistant_exact_url",
+    "independently_reproduced": false
+  },
+  {
+    "id": "arxiv:2601.03192",
+    "title": "MemRL: Self-Evolving Agents via Runtime Reinforcement Learning on Episodic Memory",
+    "url": "https://arxiv.org/abs/2601.03192",
+    "arxiv_id": "2601.03192",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "cross-domain/agents",
+      "llm/inference"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "historical_assistant_exact_url"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-05T05:50:45Z",
+        "role": "assistant",
+        "evidence_type": "historical_message_retrieval_reports_exact_url_and_title",
+        "relationship": "historical_assistant_reference_or_recommendation"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2601.03192v2",
+      "https://arxiv.org/html/2601.03192v2"
+    ],
+    "verification_status": "primary_identity_version_and_scoped_content_verified",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p586",
+    "user_reading_status": "not_asserted",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2601.03192",
+    "canonical_path": "cross-domain/papers/arxiv-2601.03192/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2601.03192/README.md",
+    "source_path": "cross-domain/papers/arxiv-2601.03192/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Shengtao Zhang",
+      "Jiaqian Wang",
+      "Ruiwen Zhou",
+      "Junwei Liao",
+      "Yuchen Feng",
+      "Zhuo Li",
+      "Yujie Zheng",
+      "Weinan Zhang",
+      "Ying Wen",
+      "Zhiyu Li",
+      "Feiyu Xiong",
+      "Yutao Qi",
+      "Bo Tang",
+      "Muning Wen"
+    ],
+    "assistant_reading_status": "selected_sections_read",
+    "reading_scope": "arXiv abstract and metadata；HTML §§3.1–4.3；HTML §6",
+    "read_version": "arXiv:2601.03192v2",
+    "original_chat_urls": [
+      "https://arxiv.org/html/2601.03192"
+    ],
+    "evidence_boundary": "§6 承认长轨迹噪声、多条经验的信用分配歧义及低任务相似度限制。效用分数不等于事实可信度。",
+    "source_origin": "historical_assistant_exact_url",
+    "independently_reproduced": false
+  },
+  {
+    "id": "arxiv:2602.16313",
+    "title": "MemoryArena: Benchmarking Agent Memory in Interdependent Multi-Session Agentic Tasks",
+    "url": "https://arxiv.org/abs/2602.16313",
+    "arxiv_id": "2602.16313",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "cross-domain/evaluation",
+      "cross-domain/agents"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "historical_assistant_exact_url"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-05T05:50:45Z",
+        "role": "assistant",
+        "evidence_type": "historical_message_retrieval_reports_exact_url_and_title",
+        "relationship": "historical_assistant_reference_or_recommendation"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2602.16313v2",
+      "https://arxiv.org/html/2602.16313v2",
+      "https://arxiv.org/pdf/2602.16313v2"
+    ],
+    "verification_status": "primary_identity_version_and_scoped_content_verified",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p587",
+    "user_reading_status": "not_asserted",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "evaluation",
+      "decision"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2602.16313",
+    "canonical_path": "cross-domain/papers/arxiv-2602.16313/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2602.16313/README.md",
+    "source_path": "cross-domain/papers/arxiv-2602.16313/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Zexue He",
+      "Yu Wang",
+      "Churan Zhi",
+      "Yuanzhe Hu",
+      "Tzu-Ping Chen",
+      "Lang Yin",
+      "Ze Chen",
+      "Tong Arthur Wu",
+      "Siru Ouyang",
+      "Zihan Wang",
+      "Jiaxin Pei",
+      "Julian McAuley",
+      "Yejin Choi",
+      "Alex Pentland"
+    ],
+    "assistant_reading_status": "selected_sections_read",
+    "reading_scope": "arXiv abstract and metadata；HTML §1 excerpt；HTML §3.1 selected task descriptions；HTML §§4.1–4.4 and §4.6；HTML §4.5 latency table excerpt and discussion; only some Table 3 rows read; appendix not audited；PDF targeted text check: page 6 §4.1 versus page 7 Table 3 model label; not full PDF reading",
+    "read_version": "arXiv:2602.16313v2",
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2602.16313"
+    ],
+    "evidence_boundary": "§4.1 写 GPT-5-mini，Table 3 caption／延迟表写 gpt-5.1-mini，须核代码厘清；这些任务不直接覆盖真实网络安全或大系统工程。未复现。",
+    "source_origin": "historical_assistant_exact_url",
+    "independently_reproduced": false
+  },
+  {
+    "id": "arxiv:2603.10062",
+    "title": "Multi-Agent Memory from a Computer Architecture Perspective: Visions and Challenges Ahead",
+    "url": "https://arxiv.org/abs/2603.10062",
+    "arxiv_id": "2603.10062",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "cross-domain/agents"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "historical_assistant_exact_url"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-05T05:50:45Z",
+        "role": "assistant",
+        "evidence_type": "historical_message_retrieval_reports_exact_url_and_title",
+        "relationship": "historical_assistant_reference_or_recommendation"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2603.10062v2",
+      "https://arxiv.org/html/2603.10062v2"
+    ],
+    "verification_status": "primary_identity_version_and_scoped_content_verified",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p588",
+    "user_reading_status": "not_asserted",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2603.10062",
+    "canonical_path": "cross-domain/papers/arxiv-2603.10062/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2603.10062/README.md",
+    "source_path": "cross-domain/papers/arxiv-2603.10062/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Zhongming Yu",
+      "Naicheng Yu",
+      "Hejia Zhang",
+      "Wentao Ni",
+      "Mingrui Yin",
+      "Jiaying Yang",
+      "Yujie Zhao",
+      "Jishen Zhao"
+    ],
+    "assistant_reading_status": "selected_sections_read",
+    "reading_scope": "arXiv abstract and metadata；HTML §§1–7 main prose; figures only by captions, not visual analysis; references not audited",
+    "read_version": "arXiv:2603.10062v2",
+    "original_chat_urls": [
+      "https://arxiv.org/html/2603.10062"
+    ],
+    "evidence_boundary": "不能把作者提出的缺口写成已经建成的统一标准，也不能由架构类比推导 Agent 必须采用某种硬件一致性模型。",
+    "source_origin": "historical_assistant_exact_url",
+    "independently_reproduced": false
+  },
+  {
+    "id": "arxiv:2606.12329",
+    "title": "PROJECTMEM: A Local-First, Event-Sourced Memory and Judgment Layer for AI Coding Agents",
+    "url": "https://arxiv.org/abs/2606.12329",
+    "arxiv_id": "2606.12329",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "cross-domain/agents"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "historical_assistant_exact_url"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-05T06:11:17Z",
+        "role": "assistant",
+        "evidence_type": "historical_message_retrieval_reports_exact_url_and_title",
+        "relationship": "historical_assistant_reference_or_recommendation"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2606.12329v2",
+      "https://arxiv.org/html/2606.12329v2"
+    ],
+    "verification_status": "primary_identity_version_and_scoped_content_verified",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p589",
+    "user_reading_status": "not_asserted",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2606.12329",
+    "canonical_path": "cross-domain/papers/arxiv-2606.12329/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2606.12329/README.md",
+    "source_path": "cross-domain/papers/arxiv-2606.12329/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Ripon Chandra Malo",
+      "Tong Qiu"
+    ],
+    "assistant_reading_status": "selected_mechanism_and_limitations_reading",
+    "reading_scope": "v1/v2 摘要对照；v2 §2、§6、附录 B 定向机制选读；未全文精读、未源码审计或独立复现",
+    "read_version": "arXiv:2606.12329v2",
+    "original_chat_urls": [
+      "https://arxiv.org/html/2606.12329v1"
+    ],
+    "evidence_boundary": "v2 明确是可行性研究：没有证明能减少重复失败。precheck 只按文件读取日志和 git 元数据，不比对新修改的语义，默认 hook 只警告；新项目缺历史、摘要会增长、多人并发与脱敏仍有边界。",
+    "source_origin": "historical_assistant_exact_url",
+    "independently_reproduced": false
+  },
+  {
+    "id": "arxiv:2606.13003",
+    "title": "The Illusion of Multi-Agent Advantage",
+    "url": "https://arxiv.org/abs/2606.13003",
+    "arxiv_id": "2606.13003",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "cross-domain/evaluation",
+      "cross-domain/agents"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "historical_assistant_identifier_only"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-05T05:50:45Z",
+        "role": "assistant",
+        "evidence_type": "historical_message_retrieval_reports_identifier_and_title_only",
+        "relationship": "historical_assistant_reference_or_recommendation"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2606.13003v2"
+    ],
+    "verification_status": "primary_identity_version_and_scoped_content_verified",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p590",
+    "user_reading_status": "not_asserted",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "evaluation",
+      "decision"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2606.13003",
+    "canonical_path": "cross-domain/papers/arxiv-2606.13003/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2606.13003/README.md",
+    "source_path": "cross-domain/papers/arxiv-2606.13003/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Prathyusha Jwalapuram",
+      "Hehai Lin",
+      "Chuyuan Li",
+      "Fangkai Jiao",
+      "Sudong Wang",
+      "Yifei Ming",
+      "Zixuan Ke",
+      "Chengwei Qin",
+      "Giuseppe Carenini",
+      "Shafiq Joty"
+    ],
+    "assistant_reading_status": "abstract_read",
+    "reading_scope": "arXiv abstract；arXiv metadata and submission history",
+    "read_version": "arXiv:2606.13003v2",
+    "original_chat_urls": [],
+    "evidence_boundary": "批评对象是所测自动生成架构，不能改写成多 Agent 普遍无用；本次未审阅全文、成本核算或消融。",
+    "source_origin": "historical_assistant_identifier_only",
+    "independently_reproduced": false
+  },
+  {
+    "id": "arxiv:2606.28434",
+    "title": "SWE-MeM: Learning Adaptive Memory Management for Long-Horizon Coding Agents",
+    "url": "https://arxiv.org/abs/2606.28434",
+    "arxiv_id": "2606.28434",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "cross-domain/agents",
+      "llm/long-context",
+      "llm/posttraining/rl"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "historical_assistant_exact_url"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-05T06:11:17Z",
+        "role": "assistant",
+        "evidence_type": "historical_message_retrieval_reports_exact_url_and_title",
+        "relationship": "historical_assistant_reference_or_recommendation"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2606.28434v1",
+      "https://arxiv.org/pdf/2606.28434v1"
+    ],
+    "verification_status": "primary_identity_version_and_scoped_content_verified",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p591",
+    "user_reading_status": "not_asserted",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2606.28434",
+    "canonical_path": "cross-domain/papers/arxiv-2606.28434/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2606.28434/README.md",
+    "source_path": "cross-domain/papers/arxiv-2606.28434/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Shuzheng Gao",
+      "Wenhao Zeng",
+      "Zhaojian Yu",
+      "Jianqiao Wangni",
+      "Chaozheng Wang",
+      "Kai Cai",
+      "Shilin He",
+      "Michael R. Lyu"
+    ],
+    "assistant_reading_status": "abstract_and_targeted_pdf_excerpt_verification",
+    "reading_scope": "摘要及 PDF 定向评估/压缩示例片段；未通读 30 页，未复现",
+    "read_version": "arXiv:2606.28434v1",
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2606.28434"
+    ],
+    "evidence_boundary": "主要研究任务进行中的上下文管理；摘要报告的 SWE-bench 成绩不能当成本地持久图记忆或跨项目经验迁移效果。官方代码地址本次未核实。",
+    "source_origin": "historical_assistant_exact_url",
+    "independently_reproduced": false
+  },
+  {
+    "id": "arxiv:2608.13883",
+    "title": "MemoryLake on MemoryArena: A Matched Study of Agent Memory Backends",
+    "url": "https://arxiv.org/abs/2608.13883",
+    "arxiv_id": "2608.13883",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "cross-domain/evaluation",
+      "cross-domain/agents"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "historical_assistant_identifier_only"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-05T05:50:45Z",
+        "role": "assistant",
+        "evidence_type": "historical_message_retrieval_reports_identifier_and_title_only",
+        "relationship": "historical_assistant_reference_or_recommendation"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2608.13883v1"
+    ],
+    "verification_status": "primary_identity_version_and_scoped_content_verified",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p592",
+    "user_reading_status": "not_asserted",
+    "modality_tags": [
+      "text"
+    ],
+    "task_tags": [
+      "evaluation",
+      "decision"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2608.13883",
+    "canonical_path": "cross-domain/papers/arxiv-2608.13883/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2608.13883/README.md",
+    "source_path": "cross-domain/papers/arxiv-2608.13883/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Chaoqun Zhan",
+      "Qiang Zhou",
+      "Guannan Li",
+      "Zhenqiang Huang",
+      "Qianjin Wang"
+    ],
+    "assistant_reading_status": "abstract_read",
+    "reading_scope": "arXiv abstract；arXiv metadata and submission history",
+    "read_version": "arXiv:2608.13883v1",
+    "original_chat_urls": [],
+    "evidence_boundary": "整套后端同时改变写入、检索、预算和提示组装，并非结构单因素或成本匹配实验；区间重叠且无配对显著性检验，不能宣称通用 SOTA。",
+    "source_origin": "historical_assistant_identifier_only",
+    "independently_reproduced": false
+  },
+  {
+    "id": "arxiv:2608.20664",
+    "title": "DreamBench-SWE: A Multi-Session Memory-Hygiene Benchmark for Software Agents",
+    "url": "https://arxiv.org/abs/2608.20664",
+    "arxiv_id": "2608.20664",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "cross-domain/evaluation",
+      "cross-domain/agents"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "historical_assistant_exact_url"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-05T06:11:17Z",
+        "role": "assistant",
+        "evidence_type": "historical_message_retrieval_reports_exact_url_and_title",
+        "relationship": "historical_assistant_reference_or_recommendation"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2608.20664v1",
+      "https://arxiv.org/abs/2608.20664",
+      "https://github.com/iroiro147/dreambench-swe/releases/tag/v2.1.0"
+    ],
+    "verification_status": "primary_identity_version_and_scoped_content_verified",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p593",
+    "user_reading_status": "not_asserted",
+    "modality_tags": [
+      "text",
+      "code"
+    ],
+    "task_tags": [
+      "evaluation",
+      "decision"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2608.20664",
+    "canonical_path": "cross-domain/papers/arxiv-2608.20664/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2608.20664/README.md",
+    "source_path": "cross-domain/papers/arxiv-2608.20664/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Sarthak Singh"
+    ],
+    "assistant_reading_status": "abstract_and_official_release_verification",
+    "reading_scope": "摘要、版本史和论文直链的 v2.1.0 证据发布页；未通读 67 页和实验产物",
+    "read_version": "arXiv:2608.20664v1",
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2608.20664"
+    ],
+    "evidence_boundary": "作者明确不主张记忆方法间普遍优越、等价或广泛产品泛化；不应据单一配置结果宣称某记忆产品最好。",
+    "source_origin": "historical_assistant_exact_url",
+    "independently_reproduced": false
+  },
+  {
+    "id": "arxiv:2608.25512",
+    "title": "A Programming Paradigm for Spatiotemporal Composability",
+    "url": "https://arxiv.org/abs/2608.25512",
+    "arxiv_id": "2608.25512",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "cross-domain/agents"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "historical_assistant_exact_url"
+    ],
+    "chat_evidence": [
+      {
+        "date": "2026-10-04T09:53:57Z",
+        "role": "assistant",
+        "evidence_type": "historical_message_retrieval_reports_exact_url_and_title",
+        "relationship": "historical_assistant_reference_or_recommendation"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2608.25512v1",
+      "https://arxiv.org/pdf/2608.25512v1",
+      "https://arxiv.org/abs/2608.25512",
+      "https://github.com/deepseek-ai/deepseek-harness",
+      "https://github.com/cordiverse/cordis"
+    ],
+    "verification_status": "primary_identity_version_and_scoped_content_verified",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p594",
+    "user_reading_status": "not_asserted",
+    "modality_tags": [
+      "code"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/papers/arxiv-2608.25512",
+    "canonical_path": "cross-domain/papers/arxiv-2608.25512/README.md",
+    "canonical_readme": "cross-domain/papers/arxiv-2608.25512/README.md",
+    "source_path": "cross-domain/papers/arxiv-2608.25512/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Yifan Shi",
+      "Wei Zhang",
+      "Tianyi Cui"
+    ],
+    "assistant_reading_status": "abstract_and_targeted_primary_source_verification",
+    "reading_scope": "摘要、导言定向片段与一手仓库 README；未通读 92 页正文和证明，未运行代码",
+    "read_version": "arXiv:2608.25512v1",
+    "original_chat_urls": [
+      "https://arxiv.org/abs/2608.25512",
+      "https://arxiv.org/pdf/2608.25512"
+    ],
+    "evidence_boundary": "理论保证有其 context 中介和可撤销性前提；本次未审计证明，也不能把它外推为任意外部副作用均可回滚。Cordis 官方仓库仍提示 API 不稳定。",
+    "source_origin": "historical_assistant_exact_url",
+    "independently_reproduced": false
+  },
+  {
+    "id": "url:https://docs.pytorch.org/tutorials/advanced/dispatcher.html",
+    "title": "Registering a Dispatched Operator in C++",
+    "url": "https://docs.pytorch.org/tutorials/advanced/dispatcher.html",
+    "arxiv_id": null,
+    "doi": null,
+    "year": "2020",
+    "topic_paths": [
+      "cross-domain/training-science"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "chat_evidence": [
+      {
+        "role": "assistant",
+        "messageTimes": [
+          "2026-10-04T18:17:14Z",
+          "2026-10-04T18:23:34Z"
+        ],
+        "message_time_association": "uncertain_one_of_two_candidate_messages",
+        "evidence_type": "主任务转交的历史检索恢复结果；本任务未取得逐条原始消息",
+        "relationship": "已恢复此完整官方 URL；尚未确定此 URL 对应两个候选时间中的哪一条消息",
+        "user_interest_scope": "概念学习：算子、具体实现与调度的分工；硬件和任务变化的影响。未据此推定内核开发项目或长期方向。"
+      }
+    ],
+    "verification_sources": [
+      "https://docs.pytorch.org/tutorials/advanced/dispatcher.html",
+      "https://docs.pytorch.org/tutorials/advanced/custom_ops_landing_page.html"
+    ],
+    "verification_status": "verified_primary_page",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "official_documentation",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p595",
+    "user_reading_status": "not_asserted",
+    "modality_tags": [
+      "code"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/resources/pytorch-dispatcher",
+    "canonical_path": "cross-domain/resources/pytorch-dispatcher/README.md",
+    "canonical_readme": "cross-domain/resources/pytorch-dispatcher/README.md",
+    "source_path": "cross-domain/resources/pytorch-dispatcher/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "assistant_reading_status": "selected_documentation_sections",
+    "reading_scope": "标题、日期、弃用提示、导言、Defining schema and backend implementations、Adding autograd support 与 Going beyond autograd 的机制解释；另读替代入口的当前指南选择与 When should I create a Custom Operator。",
+    "read_version": "未固定版本的 URL；本次网页标题显示 PyTorch Tutorials 2.14.0+cu130",
+    "original_chat_urls": [
+      "https://docs.pytorch.org/tutorials/advanced/dispatcher.html"
+    ],
+    "evidence_boundary": "概念选读；未逐段核验全部 Autocast/Batched/Tracer 示例，未编译运行，未生成独立精读；不能把弃用教程当作当前实现规范。",
+    "source_origin": "historical_assistant_recommendation",
+    "independently_reproduced": false
+  },
+  {
+    "id": "url:https://triton-lang.org/main/getting-started/tutorials/02-fused-softmax.html",
+    "title": "Fused Softmax",
+    "url": "https://triton-lang.org/main/getting-started/tutorials/02-fused-softmax.html",
+    "arxiv_id": null,
+    "doi": null,
+    "year": "",
+    "topic_paths": [
+      "cross-domain/training-science"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "historical_assistant_recommendation"
+    ],
+    "chat_evidence": [
+      {
+        "role": "assistant",
+        "messageTimes": [
+          "2026-10-04T18:17:14Z",
+          "2026-10-04T18:23:34Z"
+        ],
+        "message_time_association": "uncertain_one_of_two_candidate_messages",
+        "evidence_type": "主任务转交的历史检索恢复结果；本任务未取得逐条原始消息",
+        "relationship": "已恢复此完整官方 URL；尚未确定此 URL 对应两个候选时间中的哪一条消息",
+        "user_interest_scope": "概念学习：算子、具体实现与调度的分工；硬件和任务变化的影响。未据此推定内核开发项目或长期方向。"
+      }
+    ],
+    "verification_sources": [
+      "https://triton-lang.org/main/getting-started/tutorials/02-fused-softmax.html"
+    ],
+    "verification_status": "verified_primary_page",
+    "caveats": [],
+    "reading_status": "not_created",
+    "resource_kind": "official_documentation",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p596",
+    "user_reading_status": "not_asserted",
+    "modality_tags": [
+      "code"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
+    "canonical_folder": "cross-domain/resources/triton-fused-softmax",
+    "canonical_path": "cross-domain/resources/triton-fused-softmax/README.md",
+    "canonical_readme": "cross-domain/resources/triton-fused-softmax/README.md",
+    "source_path": "cross-domain/resources/triton-fused-softmax/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "assistant_reading_status": "selected_documentation_sections",
+    "reading_scope": "导言、Motivations、Compute Kernel 及设备属性/启动封装；查看 Unit Test 与 Benchmark 设置和页面结果，不逐项复核性能表。",
+    "read_version": "main（URL 指向滚动文档；未固定发布版本或提交 SHA）",
+    "original_chat_urls": [
+      "https://triton-lang.org/main/getting-started/tutorials/02-fused-softmax.html"
+    ],
+    "evidence_boundary": "概念选读；未运行示例、未复现实验、未做跨硬件兼容性测试；无独立 reading.md，不计全文精读。",
+    "source_origin": "historical_assistant_recommendation",
+    "independently_reproduced": false
   }
 ]

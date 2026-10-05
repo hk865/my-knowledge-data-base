@@ -1,6 +1,6 @@
 # 全库论文总目录
 
-共 581 个去重资源（509 篇论文、33 篇官方技术报告、5 个代码仓库、15 篇官方博客、15 份官方技术文档、4 篇作者文章）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
+共 596 个去重资源（522 篇论文、33 篇官方技术报告、5 个代码仓库、15 篇官方博客、17 份官方技术文档、4 篇作者文章）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
 
 身份核验、助手教学进度和用户阅读状态分开。历史来源保留原角色与证据局限，不将助手推荐写成用户提供，也不将教学完成写成用户已读。
 
@@ -6176,6 +6176,156 @@
 - 身份核验：selected_sections_checked_not_full_read
 - 用户阅读状态：unknown
 - [文献卡](../robotics-embodied/papers/arxiv-2609.39235/README.md)
+
+<a id="p582"></a>
+## p582 · AutoPentester: An LLM Agent-based Framework for Automated Pentesting
+
+- 标识：arxiv:2510.05605
+- 原文 / 官方入口：https://arxiv.org/abs/2510.05605
+- 主题：cross-domain/agents
+- 身份核验：abstract_and_selected_mechanism_sections
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2510.05605/README.md)
+
+<a id="p583"></a>
+## p583 · Towards a Science of Scaling Agent Systems
+
+- 标识：arxiv:2512.08296
+- 原文 / 官方入口：https://arxiv.org/abs/2512.08296
+- 主题：cross-domain/evaluation, cross-domain/agents
+- 身份核验：abstract_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2512.08296/README.md)
+
+<a id="p584"></a>
+## p584 · Hindsight is 20/20: Building Agent Memory that Retains, Recalls, and Reflects
+
+- 标识：arxiv:2512.12818
+- 原文 / 官方入口：https://arxiv.org/abs/2512.12818
+- 主题：cross-domain/agents
+- 身份核验：selected_sections_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2512.12818/README.md)
+
+<a id="p585"></a>
+## p585 · Memory in the Age of AI Agents
+
+- 标识：arxiv:2512.13564
+- 原文 / 官方入口：https://arxiv.org/abs/2512.13564
+- 主题：cross-domain/agents
+- 身份核验：abstract_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2512.13564/README.md)
+
+<a id="p586"></a>
+## p586 · MemRL: Self-Evolving Agents via Runtime Reinforcement Learning on Episodic Memory
+
+- 标识：arxiv:2601.03192
+- 原文 / 官方入口：https://arxiv.org/abs/2601.03192
+- 主题：cross-domain/agents, llm/inference
+- 身份核验：selected_sections_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2601.03192/README.md)
+
+<a id="p587"></a>
+## p587 · MemoryArena: Benchmarking Agent Memory in Interdependent Multi-Session Agentic Tasks
+
+- 标识：arxiv:2602.16313
+- 原文 / 官方入口：https://arxiv.org/abs/2602.16313
+- 主题：cross-domain/evaluation, cross-domain/agents
+- 身份核验：selected_sections_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2602.16313/README.md)
+
+<a id="p588"></a>
+## p588 · Multi-Agent Memory from a Computer Architecture Perspective: Visions and Challenges Ahead
+
+- 标识：arxiv:2603.10062
+- 原文 / 官方入口：https://arxiv.org/abs/2603.10062
+- 主题：cross-domain/agents
+- 身份核验：selected_sections_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2603.10062/README.md)
+
+<a id="p589"></a>
+## p589 · PROJECTMEM: A Local-First, Event-Sourced Memory and Judgment Layer for AI Coding Agents
+
+- 标识：arxiv:2606.12329
+- 原文 / 官方入口：https://arxiv.org/abs/2606.12329
+- 主题：cross-domain/agents
+- 身份核验：selected_mechanism_and_limitations_reading
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2606.12329/README.md)
+
+<a id="p590"></a>
+## p590 · The Illusion of Multi-Agent Advantage
+
+- 标识：arxiv:2606.13003
+- 原文 / 官方入口：https://arxiv.org/abs/2606.13003
+- 主题：cross-domain/evaluation, cross-domain/agents
+- 身份核验：abstract_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2606.13003/README.md)
+
+<a id="p591"></a>
+## p591 · SWE-MeM: Learning Adaptive Memory Management for Long-Horizon Coding Agents
+
+- 标识：arxiv:2606.28434
+- 原文 / 官方入口：https://arxiv.org/abs/2606.28434
+- 主题：cross-domain/agents, llm/long-context, llm/posttraining/rl
+- 身份核验：abstract_and_targeted_pdf_excerpt_verification
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2606.28434/README.md)
+
+<a id="p592"></a>
+## p592 · MemoryLake on MemoryArena: A Matched Study of Agent Memory Backends
+
+- 标识：arxiv:2608.13883
+- 原文 / 官方入口：https://arxiv.org/abs/2608.13883
+- 主题：cross-domain/evaluation, cross-domain/agents
+- 身份核验：abstract_read
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2608.13883/README.md)
+
+<a id="p593"></a>
+## p593 · DreamBench-SWE: A Multi-Session Memory-Hygiene Benchmark for Software Agents
+
+- 标识：arxiv:2608.20664
+- 原文 / 官方入口：https://arxiv.org/abs/2608.20664
+- 主题：cross-domain/evaluation, cross-domain/agents
+- 身份核验：abstract_and_official_release_verification
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2608.20664/README.md)
+
+<a id="p594"></a>
+## p594 · A Programming Paradigm for Spatiotemporal Composability
+
+- 标识：arxiv:2608.25512
+- 原文 / 官方入口：https://arxiv.org/abs/2608.25512
+- 主题：cross-domain/agents
+- 身份核验：abstract_and_targeted_primary_source_verification
+- 用户阅读状态：unknown
+- [文献卡](../cross-domain/papers/arxiv-2608.25512/README.md)
+
+<a id="p595"></a>
+## p595 · Registering a Dispatched Operator in C++
+
+- 标识：url:https://docs.pytorch.org/tutorials/advanced/dispatcher.html
+- 原文 / 官方入口：https://docs.pytorch.org/tutorials/advanced/dispatcher.html
+- 主题：cross-domain/training-science
+- 身份核验：selected_documentation_sections
+- 用户阅读状态：unknown
+- [资料卡](../cross-domain/resources/pytorch-dispatcher/README.md)
+
+<a id="p596"></a>
+## p596 · Fused Softmax
+
+- 标识：url:https://triton-lang.org/main/getting-started/tutorials/02-fused-softmax.html
+- 原文 / 官方入口：https://triton-lang.org/main/getting-started/tutorials/02-fused-softmax.html
+- 主题：cross-domain/training-science
+- 身份核验：selected_documentation_sections
+- 用户阅读状态：unknown
+- [资料卡](../cross-domain/resources/triton-fused-softmax/README.md)
 
 ## 2026年10月3日既有条目更新
 

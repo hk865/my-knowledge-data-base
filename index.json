@@ -554,5 +554,17 @@
   {
     "title": "2026年10月4日审核修订说明",
     "file": "daily/2026-10-04-review.md"
+  },
+  {
+    "title": "2026年10月5日研究短报",
+    "file": "daily/2026-10-05.md"
+  },
+  {
+    "title": "Agent 工程记忆：从一次失败到下一次可靠复用",
+    "file": "cross-domain/fields/agents/memory-evidence-loop.md"
+  },
+  {
+    "title": "Agent 记忆：历史怎样回到新任务里",
+    "file": "perspectives/notes/agent-memory-questions.md"
   }
 ]
