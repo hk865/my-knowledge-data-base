@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2511.14178",
+  "title": "Towards Deploying VLA without Fine-Tuning: Plug-and-Play Inference-Time VLA Policy Steering via Embodied Evolutionary Diffusion",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2511.14178",
+  "official_url": "https://arxiv.org/abs/2511.14178",
+  "official_fulltext_url": "https://arxiv.org/html/2511.14178v2",
+  "read_version": "v2",
+  "version_status": "latest_arxiv_version_checked_on_2026_10_06",
+  "first_submitted": "2025-11-18",
+  "version_date": "2026-04-16",
+  "year": 2025,
+  "authors": [
+    "Zhuo Li",
+    "Junjia Liu",
+    "Zhipeng Dong",
+    "Tao Teng",
+    "Quentin Rouxel",
+    "Darwin Caldwell",
+    "Fei Chen"
+  ],
+  "topic_paths": [
+    "robotics/embodied-agents",
+    "robotics/embodied-policies"
+  ],
+  "modality_tags": [
+    "text",
+    "image",
+    "action",
+    "state",
+    "multimodal"
+  ],
+  "task_tags": [
+    "decision",
+    "evaluation"
+  ],
+  "content_kind": "reading",
+  "reading_depth": "technical_methods_experiments",
+  "reading_path": "reading.md",
+  "reading_boundary": "Read §I–V including full methods and Algorithm1, experiments TablesI–V and figure captions in official HTML; checked official8-page PDF text and absence of separate appendix. Read official project page. Did not inspect unreleased implementation or independently verify publisher final version. No claim of reading unavailable appendix.",
+  "teaching_status": "technical_reading_with_explicit_scope",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "仅链接官方来源，不再分发论文、权重或数据。"
+  },
+  "fulltext_local_status": "official_link_only",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-06",
+  "legacy_paths": [],
+  "evidence_paths": [
+    "robotics-embodied/papers/arxiv-2511.14178/evidence.json"
+  ],
+  "source_origin": "new-baseline-selection",
+  "discovery_provenance": {
+    "role": "assistant",
+    "association": "new_research_discovery",
+    "date": "2026-10-06",
+    "user_reading_or_endorsement": "not_asserted"
+  },
+  "verification_status": "official_identity_and_selected_fulltext_sections_checked",
+  "verification_sources": [
+    "https://arxiv.org/abs/2511.14178",
+    "https://arxiv.org/html/2511.14178v2",
+    "https://rip4kobe.github.io/vla-pilot/",
+    "https://arxiv.org/pdf/2511.14178v2"
+  ],
+  "research_role": "2025_historical_mechanism",
+  "intervention": "black_box_reward_evolutionary_action_optimization",
+  "training_boundary": "新增steering无部署训练，GPT-4o冻结；DiVLA/RDT-1B的既有训练不被免训练表述覆盖。",
+  "project_url": "https://rip4kobe.github.io/vla-pilot/",
+  "code_url": null,
+  "affiliations": [
+    "Chinese University of Hong Kong",
+    "Istituto Italiano di Tecnologia"
+  ]
+}

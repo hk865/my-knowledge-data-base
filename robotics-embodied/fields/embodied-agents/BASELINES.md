@@ -43,6 +43,23 @@
 | ⑤ 记忆（2026 年补充） | 高层策略自己改写一段文字摘要作长时记忆，配合视频短时记忆 | [MEM](../../papers/arxiv-2603.03596/README.md) | 约 15 分钟的真机任务 / 只在一个回合内 |
 | ② 技能接口 | 用人类视频作为新任务说明，预测机器人视频再解码动作 | [Zero-WAM](../../papers/zero-wam/reading.md) | 未见任务 47.0%；属于[世界模型方向](../world-models/README.md)的动作生成底座 |
 
+### 通用模型与动作模型之间的可替换接口
+
+这张表把“高层是否冻结”与“干预发生在哪里”分开；先选需要改的接口，再读具体模型。
+
+| 部件 | 改法 | 代表论文 | 改进了什么 / 付出了什么 |
+|---|---|---|---|
+| ① + ② + ⑤ 编排与经验 | 现成 Agent 调用 VLA 原语、解析工具并使用执行经验 | [HarnessVLA](../../papers/arxiv-2607.08448/reading.md) | 复用通用模型与已有技能 / 工具覆盖、历史质量与调用预算影响结果 |
+| ② + ③ 代码与物理接口 | 冻结 Agent 生成控制程序，或通过有类型参数调用固定规划模板 | [Agent as Policy](../../papers/arxiv-2609.12541/README.md)、[MCP + MTC](../../papers/arxiv-2608.29379/README.md) | 将模型推理接入物理计算 / 需准备接口、状态机或平台约定 |
+| ② + ④ 测试反馈 | 在局部执行或仿真后修改程序；ENPIRE 还组织低层策略训练 | [Local Coding](../../papers/arxiv-2609.26499/README.md)、[SimEX](../../papers/arxiv-2609.38982/README.md)、[ENPIRE](../../papers/arxiv-2606.19980/README.md) | 不更新通用模型参数也能适配 / 试验次数、人工重置、仿真差距仍有成本 |
+| ③ 初始环境 | VLM 决定移除对象，经 SAM3、三维定位、IK 整理后再交给 VLA | [StageCraft](../../papers/arxiv-2603.20659/README.md) | 减少干扰与遮挡 / 需成功上下文与移动对象的可行性，低层先经任务微调 |
+| ② 动作生成 | VLM 生成可微奖励或粗方向，以数值工具引导动作生成 | [VLS](../../papers/arxiv-2602.03973/reading.md)、[FRS](../../papers/arxiv-2606.13675/README.md) | 更靠近连续动作的接口 / 受奖励、几何和动作先验限制 |
+| ② + ③ 候选搜索 | 黑盒奖励下迭代变异，或仿真结果与语言计划对齐后筛选 | [VLA-Pilot](../../papers/arxiv-2511.14178/reading.md)、[SEAL](../../papers/arxiv-2510.16281/README.md) | 2025 年的两种前史；一个优化候选，一个验证候选 / 额外延迟与候选覆盖限制 |
+| ③ 专用动作工具 | 学习代理、相对动作critic，或组合世界模型与冻结评分器 | [PPS](../../papers/arxiv-2609.09148/README.md)、[VLA-ATTC](../../papers/arxiv-2605.01194/README.md)、[ViTaL](../../papers/arxiv-2606.14981/README.md) | 可减少昂贵搜索或改善候选评价 / 有专门训练条件，完整 LLM Agent 效果需另测 |
+| ① + ④ 训练型对照 | 修改 π0.5 高层并训练 Florence-2 critic，按事件重规划 | [Critic in the Loop](../../papers/arxiv-2603.05185/README.md) | 更密集的进度与异常监控 / 需任务与恢复示范，区别于冻结通用模型外挂 |
+
+接口的前向流程与手算见[动作模型干预讲义](action-model-intervention.md)；领域问题链见[入门页](README.md)。
+
 ## 批注
 
 **易误读**

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="850" viewBox="0 0 1440 850" role="img" aria-labelledby="title desc"><title id="title">跨本体复用从任务关系开始</title><desc id="desc">共享语言与任务约束分别进入不同机器人的能力查询、动作适配及控制器。任务规格可以复用，动作数组和执行可行性须针对本体检查。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10Z" fill="#708499"/></marker></defs>
+<rect width="1440" height="850" fill="#fafbfe"/>
+<text x="45" y="58" font-family="Noto Sans CJK SC, sans-serif" font-size="32" font-weight="700" fill="#25344a">跨本体复用从任务关系开始</text>
+<text x="45" y="109" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#53667d">同一目标，在不同身体上可能需要不同抓法、路径与执行策略</text>
+<rect x="315" y="145" width="810" height="137" rx="14" fill="#f0eafa" stroke="#cad5e1" stroke-width="1.5"/>
+<text x="337" y="184" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#25344a">共享的任务规格</text>
+<text x="337" y="223" font-family="Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#25344a">C7 → T4；杯口朝上；避开 V2；以真实观察验证完成</text>
+<path d="M545 282 V335 H350 V366" fill="none" stroke="#708499" stroke-width="3"  marker-end="url(#arrow)"/>
+<path d="M895 282 V335 H1090 V366" fill="none" stroke="#708499" stroke-width="3"  marker-end="url(#arrow)"/>
+<rect x="45" y="375" width="610" height="175" rx="14" fill="#e8f2ff" stroke="#cad5e1" stroke-width="1.5"/>
+<text x="67" y="414" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#25344a">本体 A：固定单臂</text>
+<text x="67" y="453" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#25344a">机器人模型、夹爪与标定 A</text>
+<text x="67" y="485" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#25344a">查询可达性 / 持物碰撞 / 当前能力</text>
+<text x="67" y="517" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#25344a">可能选择外侧抓取与绕行路径</text>
+<rect x="785" y="375" width="610" height="175" rx="14" fill="#e8f2ff" stroke="#cad5e1" stroke-width="1.5"/>
+<text x="807" y="414" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#25344a">本体 B：双臂移动平台</text>
+<text x="807" y="453" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#25344a">机器人模型、双臂与底盘标定 B</text>
+<text x="807" y="485" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#25344a">查询哪只手可达 / 底盘位置 / 自碰撞</text>
+<text x="807" y="517" font-family="Noto Sans CJK SC, sans-serif" font-size="23" font-weight="400" fill="#25344a">可能先移动底盘，再由另一只手抓取</text>
+<path d="M350 550 V592" fill="none" stroke="#708499" stroke-width="3"  marker-end="url(#arrow)"/>
+<path d="M1090 550 V592" fill="none" stroke="#708499" stroke-width="3"  marker-end="url(#arrow)"/>
+<rect x="45" y="602" width="610" height="140" rx="14" fill="#e5f4ed" stroke="#cad5e1" stroke-width="1.5"/>
+<text x="67" y="641" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#25344a">动作适配 A 与控制器 A</text>
+<text x="67" y="680" font-family="Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#25344a">动作维度、单位、参考系、执行频率 A</text>
+<text x="67" y="712" font-family="Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#25344a">策略权重 / 适配器 / 规划器对应本体 A</text>
+<rect x="785" y="602" width="610" height="140" rx="14" fill="#e5f4ed" stroke="#cad5e1" stroke-width="1.5"/>
+<text x="807" y="641" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#25344a">动作适配 B 与控制器 B</text>
+<text x="807" y="680" font-family="Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#25344a">动作维度、单位、参考系、执行频率 B</text>
+<text x="807" y="712" font-family="Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#25344a">策略权重 / 适配器 / 规划器对应本体 B</text>
+<text x="45" y="798" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#25344a">迁移评测分别留出：任务组合、场景几何、本体与接触技能</text>
+<text x="45" y="836" font-family="Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#53667d">原创接口分工 · 可行性和动作策略可通过仿真、示教或适配训练获得</text>
+</svg>

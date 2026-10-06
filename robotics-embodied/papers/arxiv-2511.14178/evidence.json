@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2511.14178",
+  "checked_on": "2026-10-06",
+  "version": "v2",
+  "primary_sources": [
+    "https://arxiv.org/abs/2511.14178",
+    "https://arxiv.org/html/2511.14178v2",
+    "https://rip4kobe.github.io/vla-pilot/",
+    "https://arxiv.org/pdf/2511.14178v2"
+  ],
+  "checked_sections": "Read §I–V including full methods and Algorithm1, experiments TablesI–V and figure captions in official HTML; checked official8-page PDF text and absence of separate appendix. Read official project page. Did not inspect unreleased implementation or independently verify publisher final version. No claim of reading unavailable appendix.",
+  "claim_map": [
+    {
+      "claim": "视觉语言模型生成黑盒奖励，候选经softmax选优、加噪与原策略去噪迭代，执行反馈用于反思和奖励更新。",
+      "location": "III-B–D",
+      "source_url": "https://arxiv.org/html/2511.14178v2"
+    },
+    {
+      "claim": "DOBOT六任务平均DiVLA 31%→62%、RDT 30%→60%；Franka另有四任务部署实验。",
+      "location": "IV, Tables I–V",
+      "source_url": "https://arxiv.org/html/2511.14178v2"
+    },
+    {
+      "claim": "steering step约2.41秒；论文评估不含π0.5。",
+      "location": "IV–V",
+      "source_url": "https://arxiv.org/html/2511.14178v2"
+    }
+  ],
+  "training_boundary": "新增steering无部署训练，GPT-4o冻结；DiVLA/RDT-1B的既有训练不被免训练表述覆盖。",
+  "openness_boundary": "项目页标示Code (Coming soon)；未确认可用代码，未复现。",
+  "not_checked": [
+    "首发2025-11-18，2026-04-16为v2修订；不计作2026首次提出的方法。",
+    "两平台实验不支持任意本体适配；flow matching移植没有本文实证。",
+    "关键点奖励对延迟效果和形变物体的表达有限。",
+    "未审计再分发许可。",
+    "Exact per-policy action dimensions, normalization, action chunk horizons, cross-robot adapters and retry parameters not specified in paper",
+    "No independent publisher-final text check",
+    "No implementation/reproduction, project code currently coming soon",
+    "Hxd tensor teaching view and dual-arm coordinate example are explanatory conventions rather than claimed exact experimental tensors",
+    "Project FAQ broadly describes OOD relative to VLA pretraining, but reading follows precise paper §IV-A verifier-based definition"
+  ],
+  "teaching_evidence": [
+    {
+      "claim": "EPS-CoT uses GPT4o; DINO/SAM keypoint grounding; output is non-differentiable black-box reward code",
+      "location": "§III-B and §IV-A",
+      "source_url": "https://arxiv.org/html/2511.14178v2"
+    },
+    {
+      "claim": "Evolution uses softmax(tau*reward) probabilistic elite resampling followed by truncated forward noising and frozen-policy reverse denoising; no reward/action gradients",
+      "location": "§III-C; Eq4–7; Algorithm1",
+      "source_url": "https://arxiv.org/html/2511.14178v2"
+    },
+    {
+      "claim": "32 initial candidates,10 evolution rounds",
+      "location": "§IV-A",
+      "source_url": "https://arxiv.org/html/2511.14178v2"
+    },
+    {
+      "claim": "Post-execution reflection input is original action,selected action,new context,reasoning history; regenerate reward/retry up to max retries",
+      "location": "§III-D; Algorithm1",
+      "source_url": "https://arxiv.org/html/2511.14178v2"
+    },
+    {
+      "claim": "DiVLA and RDT-1B on DOBOT dual-arm X-Trainer; main robot means0.31->0.62 and0.30->0.60 MSR",
+      "location": "§IV-A; TableII",
+      "source_url": "https://arxiv.org/html/2511.14178v2"
+    },
+    {
+      "claim": "Second real platform Franka Panda,DiVLA four single-arm tasks improves21–31pp",
+      "location": "TableIV; §IV-B",
+      "source_url": "https://arxiv.org/html/2511.14178v2"
+    },
+    {
+      "claim": "Simulation mean0.65; no evolution0.54; no EPS-CoT0.57; no reflection0.60",
+      "location": "TableI",
+      "source_url": "https://arxiv.org/html/2511.14178v2"
+    },
+    {
+      "claim": "MSR is full manipulation success; SOA is keypoint-threshold alignment; zipper DiVLA+method SOA0.55 vs MSR0.39",
+      "location": "§IV-A; TableII",
+      "source_url": "https://arxiv.org/html/2511.14178v2"
+    },
+    {
+      "claim": "2.41 seconds/steering step; truncation beyond5 hurts in reported sensitivity",
+      "location": "TableV; Fig9",
+      "source_url": "https://arxiv.org/html/2511.14178v2"
+    },
+    {
+      "claim": "OOD defined relative to baseline external verifier training exposure",
+      "location": "§IV-A task settings",
+      "source_url": "https://arxiv.org/html/2511.14178v2"
+    },
+    {
+      "claim": "Project code link still labelled Coming soon",
+      "location": "official project page",
+      "source_url": "https://arxiv.org/html/2511.14178v2"
+    }
+  ],
+  "source_scopes": [
+    {
+      "url": "https://arxiv.org/html/2511.14178v2",
+      "parts": "§I–V; Algorithm1; TablesI–V; Fig6–9"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2511.14178v2",
+      "parts": "version/authorship and main paper; ends with references, no appendix"
+    },
+    {
+      "url": "https://rip4kobe.github.io/vla-pilot/",
+      "parts": "project title, acceptance statement, Code(Coming soon), limitations"
+    }
+  ]
+}

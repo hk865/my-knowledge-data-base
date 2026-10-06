@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2606.13675",
+  "checked_on": "2026-10-06",
+  "version": "v2",
+  "primary_sources": [
+    "https://arxiv.org/abs/2606.13675",
+    "https://arxiv.org/html/2606.13675v2",
+    "https://flow-reversal-steering.github.io/"
+  ],
+  "checked_sections": "4.1-4.3; 5.1-5.5; Appendix D.2/E/F",
+  "claim_map": [
+    {
+      "claim": "Gemini-ER-1.6提供粗笛卡尔方向或交还基座，参考动作经reverse flow与forward denoising产生动作。",
+      "location": "4.1–4.3; Appendix D/E",
+      "source_url": "https://arxiv.org/html/2606.13675v2"
+    },
+    {
+      "claim": "精确逆流再正流重建输入；有限步求解产生扰动，改善可行性是经验发现。",
+      "location": "4; Appendix F",
+      "source_url": "https://arxiv.org/html/2606.13675v2"
+    },
+    {
+      "claim": "LIBERO评VLM引导；六项真机任务主要每任务10条人类引导成功轨迹训练DSBC。",
+      "location": "5.1–5.5",
+      "source_url": "https://arxiv.org/html/2606.13675v2"
+    }
+  ],
+  "training_boundary": "zero-shot FRS不新增训练；DSBC/DSRL+FRS训练辅助动作侧模块，通用VLM不更新。真机主结果为人类引导后训练DSBC。",
+  "openness_boundary": "Project explicitly Code (Coming soon)",
+  "not_checked": [
+    "真机DSBC收益不能归因为通用VLM在线闭环。",
+    "需要访问velocity接口与统一动作坐标；两遍积分与调用时间要计入预算。",
+    "没有将动作映射到安全集合的数学保证。",
+    "未独立复现，未审计再分发许可。"
+  ]
+}

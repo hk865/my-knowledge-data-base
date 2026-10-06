@@ -37654,5 +37654,968 @@
     "evidence_boundary": "概念选读；未运行示例、未复现实验、未做跨硬件兼容性测试；无独立 reading.md，不计全文精读。",
     "source_origin": "historical_assistant_recommendation",
     "independently_reproduced": false
+  },
+  {
+    "id": "arxiv:2603.20659",
+    "title": "StageCraft: Execution Aware Mitigation of Distractor and Obstruction Failures in VLA Models",
+    "url": "https://arxiv.org/abs/2603.20659",
+    "arxiv_id": "2603.20659",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/embodied-agents",
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "role": "assistant",
+        "date": "2026-10-06",
+        "association": "先前助手推荐的相关文献，已按原文独立核对；不表示已识别特定未提供的报告。"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2603.20659",
+      "https://arxiv.org/html/2603.20659v3",
+      "https://stagecraft-decorator.github.io/stagecraft/"
+    ],
+    "verification_status": "official_identity_and_selected_fulltext_sections_checked",
+    "caveats": [],
+    "assistant_reading_status": "selected_method_and_evaluation_sections_checked_not_full_read",
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p597",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "state",
+      "multimodal"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2603.20659",
+    "canonical_path": "robotics-embodied/papers/arxiv-2603.20659/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2603.20659/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2603.20659/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Kartikay Milind Pangaonkar",
+      "Prabin Rath",
+      "Omkar Patil",
+      "Nakul Gopalan"
+    ],
+    "read_version": "v3",
+    "reading_scope": "核对v3的III; IV-A-B; limitations及所列官方来源；选定机制与实验章节核验，未完整审计全部附录，未复现。"
+  },
+  {
+    "id": "arxiv:2603.05185",
+    "title": "Critic in the Loop: A Tri-System VLA Framework for Robust Long-Horizon Manipulation",
+    "url": "https://arxiv.org/abs/2603.05185",
+    "arxiv_id": "2603.05185",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/embodied-agents",
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "role": "assistant",
+        "date": "2026-10-06",
+        "association": "先前助手推荐的相关文献，已按原文独立核对；不表示已识别特定未提供的报告。"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2603.05185",
+      "https://arxiv.org/html/2603.05185v1"
+    ],
+    "verification_status": "official_identity_and_selected_fulltext_sections_checked",
+    "caveats": [],
+    "assistant_reading_status": "selected_method_and_evaluation_sections_checked_not_full_read",
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p598",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "state",
+      "multimodal"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2603.05185",
+    "canonical_path": "robotics-embodied/papers/arxiv-2603.05185/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2603.05185/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2603.05185/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Pengfei Yi",
+      "Yingjie Ma",
+      "Wenjiang Xu",
+      "Yanan Hao",
+      "Shuai Gan",
+      "Wanting Li",
+      "Shanlin Zhong"
+    ],
+    "read_version": "v1",
+    "reading_scope": "核对v1的3.2-3.5; 4.1-4.3/Tables 1-2及所列官方来源；选定机制与实验章节核验，未完整审计全部附录，未复现。"
+  },
+  {
+    "id": "arxiv:2510.16281",
+    "title": "Do What You Say: Steering Vision-Language-Action Models via Runtime Reasoning-Action Alignment Verification",
+    "url": "https://arxiv.org/abs/2510.16281",
+    "arxiv_id": "2510.16281",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/embodied-agents",
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "role": "assistant",
+        "date": "2026-10-06",
+        "association": "先前助手推荐的相关文献，已按原文独立核对；不表示已识别特定未提供的报告。"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2510.16281",
+      "https://arxiv.org/html/2510.16281v2",
+      "https://yilin-wu98.github.io/steering-reasoning-vla/",
+      "https://github.com/NVlabs/actalign"
+    ],
+    "verification_status": "official_identity_and_selected_fulltext_sections_checked",
+    "caveats": [],
+    "assistant_reading_status": "selected_method_and_evaluation_sections_checked_not_full_read",
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p599",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "state",
+      "multimodal"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2510.16281",
+    "canonical_path": "robotics-embodied/papers/arxiv-2510.16281/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2510.16281/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2510.16281/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Yilin Wu",
+      "Anqi Li",
+      "Tucker Hermans",
+      "Fabio Ramos",
+      "Andrea Bajcsy",
+      "Claudia Pérez-D'Arpino"
+    ],
+    "read_version": "v2",
+    "reading_scope": "核对v2的IV-A-B; V; VI; Appendix A及所列官方来源；选定机制与实验章节核验，未完整审计全部附录，未复现。"
+  },
+  {
+    "id": "arxiv:2602.03973",
+    "title": "VLS: Steering Pretrained Robot Policies via Vision-Language Models",
+    "url": "https://arxiv.org/abs/2602.03973",
+    "arxiv_id": "2602.03973",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/embodied-agents",
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "new-baseline-selection"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2602.03973",
+      "https://arxiv.org/html/2602.03973v1",
+      "https://vision-language-steering.github.io/webpage/",
+      "https://github.com/Vision-Language-Steering/code",
+      "https://arxiv.org/pdf/2602.03973v1",
+      "https://github.com/Vision-Language-Steering/code/tree/b6e87edc217a2a7682caadba285677fc79eb6f81"
+    ],
+    "verification_status": "official_identity_and_selected_fulltext_sections_checked",
+    "caveats": [],
+    "assistant_reading_status": "technical_methods_experiments_and_selected_official_code",
+    "reading_status": "technical_reading_with_explicit_scope",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p600",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "state",
+      "multimodal"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2602.03973",
+    "canonical_path": "robotics-embodied/papers/arxiv-2602.03973/reading.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2602.03973/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2602.03973/source.json",
+    "legacy_paths": [],
+    "content_kind": "reading",
+    "authors": [
+      "Shuo Liu",
+      "Ishneet Sukhvinder Singh",
+      "Yiqing Xu",
+      "Jiafei Duan",
+      "Ranjay Krishna"
+    ],
+    "read_version": "v1",
+    "reading_scope": "Read the accessible main-paper problem formulation, methods and algorithm, experiments and limitations (§III–VI) in official HTML; cross-checked PDF Fig.4–5 visually. The 11-page PDF ends after references and contains no actual appendix despite Appendix references. No full-paper/appendix-reading claim. Read official code methods named below, not entire repository."
+  },
+  {
+    "id": "arxiv:2511.14178",
+    "title": "Towards Deploying VLA without Fine-Tuning: Plug-and-Play Inference-Time VLA Policy Steering via Embodied Evolutionary Diffusion",
+    "url": "https://arxiv.org/abs/2511.14178",
+    "arxiv_id": "2511.14178",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/embodied-agents",
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "new-baseline-selection"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2511.14178",
+      "https://arxiv.org/html/2511.14178v2",
+      "https://rip4kobe.github.io/vla-pilot/",
+      "https://arxiv.org/pdf/2511.14178v2"
+    ],
+    "verification_status": "official_identity_and_selected_fulltext_sections_checked",
+    "caveats": [],
+    "assistant_reading_status": "technical_methods_experiments",
+    "reading_status": "technical_reading_with_explicit_scope",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p601",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "state",
+      "multimodal"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2511.14178",
+    "canonical_path": "robotics-embodied/papers/arxiv-2511.14178/reading.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2511.14178/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2511.14178/source.json",
+    "legacy_paths": [],
+    "content_kind": "reading",
+    "authors": [
+      "Zhuo Li",
+      "Junjia Liu",
+      "Zhipeng Dong",
+      "Tao Teng",
+      "Quentin Rouxel",
+      "Darwin Caldwell",
+      "Fei Chen"
+    ],
+    "read_version": "v2",
+    "reading_scope": "Read §I–V including full methods and Algorithm1, experiments TablesI–V and figure captions in official HTML; checked official8-page PDF text and absence of separate appendix. Read official project page. Did not inspect unreleased implementation or independently verify publisher final version. No claim of reading unavailable appendix."
+  },
+  {
+    "id": "arxiv:2605.01194",
+    "title": "VLA-ATTC: Adaptive Test-Time Compute for VLA Models with Relative Action Critic Model",
+    "url": "https://arxiv.org/abs/2605.01194",
+    "arxiv_id": "2605.01194",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/embodied-agents",
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "new-baseline-selection"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2605.01194",
+      "https://arxiv.org/html/2605.01194v2"
+    ],
+    "verification_status": "official_identity_and_selected_fulltext_sections_checked",
+    "caveats": [],
+    "assistant_reading_status": "selected_method_and_evaluation_sections_checked_not_full_read",
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p602",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "state",
+      "multimodal"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2605.01194",
+    "canonical_path": "robotics-embodied/papers/arxiv-2605.01194/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2605.01194/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2605.01194/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Wenhao Li",
+      "Xiu Su",
+      "Yichao Cao",
+      "Hongyan Xu",
+      "Xiaobo Xia",
+      "Shan You",
+      "Yi Chen",
+      "Chang Xu"
+    ],
+    "read_version": "v2",
+    "reading_scope": "核对v2的4.1-4.4; 5/Tables 1-3及所列官方来源；选定机制与实验章节核验，未完整审计全部附录，未复现。"
+  },
+  {
+    "id": "arxiv:2607.08448",
+    "title": "Harness VLA: Steering Frozen VLAs into Reliable Manipulation Primitives via Memory-Guided Agents",
+    "url": "https://arxiv.org/abs/2607.08448",
+    "arxiv_id": "2607.08448",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/embodied-agents",
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "role": "assistant",
+        "date": "2026-10-06",
+        "association": "先前助手推荐的相关文献，已按原文独立核对；不表示用户已阅读或认可。"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2607.08448",
+      "https://arxiv.org/html/2607.08448v5"
+    ],
+    "verification_status": "official_identity_and_selected_fulltext_sections_checked",
+    "caveats": [],
+    "assistant_reading_status": "selected_sections_technical",
+    "reading_status": "technical_reading_with_explicit_scope",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p603",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "state",
+      "multimodal"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2607.08448",
+    "canonical_path": "robotics-embodied/papers/arxiv-2607.08448/reading.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2607.08448/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2607.08448/source.json",
+    "legacy_paths": [],
+    "content_kind": "reading",
+    "authors": [
+      "Yixian Zhang",
+      "Huanming Zhang",
+      "Feng Gao",
+      "Xiao Li",
+      "Zhihao Liu",
+      "Yi Nie",
+      "Chunyang Zhu",
+      "Jiaxing Qiu",
+      "Yuchen Yan",
+      "Jiyuan Liu",
+      "Wenhao Tang",
+      "Jiaji Rao",
+      "Zhengru Fang",
+      "Changxu Wei",
+      "Yu Wang",
+      "Wenbo Ding",
+      "Chao Yu"
+    ],
+    "read_version": "v5",
+    "reading_scope": "独立核读v5方法§2、评估§3及表2–6、真机/Flash§4及表7、局限§6；附录A–E核查协议/接口/数据与权重，F使用统计，G选择与计时，H GPT-6 Astra结果；非逐页逐引用全文审计，未执行代码或复现"
+  },
+  {
+    "id": "arxiv:2606.13675",
+    "title": "Improving Robotic Generalist Policies via Flow Reversal Steering",
+    "url": "https://arxiv.org/abs/2606.13675",
+    "arxiv_id": "2606.13675",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/embodied-agents",
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "role": "assistant",
+        "date": "2026-10-06",
+        "association": "先前助手推荐的相关文献，已按原文独立核对；不表示用户已阅读或认可。"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2606.13675",
+      "https://arxiv.org/html/2606.13675v2",
+      "https://flow-reversal-steering.github.io/"
+    ],
+    "verification_status": "official_identity_and_selected_fulltext_sections_checked",
+    "caveats": [],
+    "assistant_reading_status": "selected_method_and_evaluation_sections_checked_not_full_read",
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p604",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "state",
+      "multimodal"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2606.13675",
+    "canonical_path": "robotics-embodied/papers/arxiv-2606.13675/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2606.13675/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2606.13675/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Andy Tang",
+      "William Chen",
+      "Andrew Wagenmaker",
+      "Chelsea Finn",
+      "Sergey Levine"
+    ],
+    "read_version": "v2",
+    "reading_scope": "核对v2的4.1-4.3; 5.1-5.5; Appendix D.2/E/F及所列官方来源；选定章节核验，未完整审计全部附录，未复现。"
+  },
+  {
+    "id": "arxiv:2609.09148",
+    "title": "Proxy Policy Steering",
+    "url": "https://arxiv.org/abs/2609.09148",
+    "arxiv_id": "2609.09148",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/embodied-agents",
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "role": "assistant",
+        "date": "2026-10-06",
+        "association": "先前助手推荐的相关文献，已按原文独立核对；不表示用户已阅读或认可。"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2609.09148",
+      "https://arxiv.org/html/2609.09148v3",
+      "https://ppsteering.github.io/"
+    ],
+    "verification_status": "official_identity_and_selected_fulltext_sections_checked",
+    "caveats": [],
+    "assistant_reading_status": "selected_method_and_evaluation_sections_checked_not_full_read",
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p605",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "state",
+      "multimodal"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2609.09148",
+    "canonical_path": "robotics-embodied/papers/arxiv-2609.09148/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2609.09148/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2609.09148/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Chuanruo Ning",
+      "Tianrui Wang",
+      "Wei-Chiu Ma",
+      "Kuan Fang"
+    ],
+    "read_version": "v3",
+    "reading_scope": "核对v3的4.1-4.3; 5; 6; Appendix C/D及所列官方来源；选定章节核验，未完整审计全部附录，未复现。"
+  },
+  {
+    "id": "arxiv:2606.14981",
+    "title": "Inference-time Policy Steering via Vision and Touch",
+    "url": "https://arxiv.org/abs/2606.14981",
+    "arxiv_id": "2606.14981",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/embodied-agents",
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "assistant-provided-exact-link"
+    ],
+    "chat_evidence": [
+      {
+        "role": "assistant",
+        "date": "2026-10-06",
+        "association": "先前助手推荐的相关文献，已按原文独立核对；不表示用户已阅读或认可。"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2606.14981",
+      "https://arxiv.org/html/2606.14981v1",
+      "https://yilin-wu98.github.io/vital_website/"
+    ],
+    "verification_status": "official_identity_and_selected_fulltext_sections_checked",
+    "caveats": [],
+    "assistant_reading_status": "selected_method_and_evaluation_sections_checked_not_full_read",
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p606",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "state",
+      "multimodal"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2606.14981",
+    "canonical_path": "robotics-embodied/papers/arxiv-2606.14981/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2606.14981/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2606.14981/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Yilin Wu",
+      "Zilin Si",
+      "Zeynep Temel",
+      "Oliver Kroemer",
+      "Andrea Bajcsy"
+    ],
+    "read_version": "v1",
+    "reading_scope": "核对v1的4.1-4.4; 5; Appendix A/B/C.2/D及所列官方来源；选定章节核验，未完整审计全部附录，未复现。"
+  },
+  {
+    "id": "arxiv:2609.12541",
+    "title": "Agent as Policy for Robotic Manipulation",
+    "url": "https://arxiv.org/abs/2609.12541",
+    "arxiv_id": "2609.12541",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/embodied-agents",
+      "robotics/navigation-planning"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "new-baseline-selection"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2609.12541",
+      "https://arxiv.org/html/2609.12541v3",
+      "https://agent-as-policy-2026.github.io/",
+      "https://github.com/agent-as-policy-2026/agent-as-policy"
+    ],
+    "verification_status": "official_identity_and_selected_fulltext_sections_checked",
+    "caveats": [],
+    "assistant_reading_status": "selected_method_and_evaluation_sections_checked_not_full_read",
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p607",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "state",
+      "multimodal",
+      "code"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2609.12541",
+    "canonical_path": "robotics-embodied/papers/arxiv-2609.12541/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2609.12541/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2609.12541/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Mengzhao Jia",
+      "Yang Lin",
+      "Xixin Zhang",
+      "Zhihan Zhang",
+      "Xiaobai Liu",
+      "Meng Jiang"
+    ],
+    "read_version": "v3",
+    "reading_scope": "核对v3的3.1-3.3; 4.1-4.4; Appendix A; Appendix E; Appendix F; Appendix H; official project; official code README及所列官方来源；选定章节核验，未完整审计全部附录，未复现。"
+  },
+  {
+    "id": "arxiv:2609.38982",
+    "title": "SimEX: Simulation-Integrated Robotics AutoResearch",
+    "url": "https://arxiv.org/abs/2609.38982",
+    "arxiv_id": "2609.38982",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/embodied-agents",
+      "robotics/navigation-planning"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "new-baseline-selection"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2609.38982",
+      "https://arxiv.org/html/2609.38982v1"
+    ],
+    "verification_status": "official_identity_and_selected_fulltext_sections_checked",
+    "caveats": [],
+    "assistant_reading_status": "selected_method_and_evaluation_sections_checked_not_full_read",
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p608",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "state",
+      "multimodal",
+      "code"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2609.38982",
+    "canonical_path": "robotics-embodied/papers/arxiv-2609.38982/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2609.38982/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2609.38982/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Jiaheng Hu",
+      "Roberto Martin-Martin",
+      "Peter Stone",
+      "Rocky Duan",
+      "Zhenyu Jiang",
+      "Guanya Shi"
+    ],
+    "read_version": "v1",
+    "reading_scope": "核对v1的2.1-2.4; 3.1-3.4; 5; Appendix A.2 interface context及所列官方来源；选定章节核验，未完整审计全部附录，未复现。"
+  },
+  {
+    "id": "arxiv:2606.19980",
+    "title": "ENPIRE: Agentic Robot Policy Self-Improvement in the Real World",
+    "url": "https://arxiv.org/abs/2606.19980",
+    "arxiv_id": "2606.19980",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/embodied-agents",
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "new-baseline-selection"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2606.19980",
+      "https://arxiv.org/html/2606.19980v2",
+      "https://research.nvidia.com/labs/gear/enpire/",
+      "https://github.com/NVlabs/ENPIRE"
+    ],
+    "verification_status": "official_identity_and_selected_fulltext_sections_checked",
+    "caveats": [],
+    "assistant_reading_status": "selected_method_and_evaluation_sections_checked_not_full_read",
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p609",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "state",
+      "multimodal",
+      "code"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2606.19980",
+    "canonical_path": "robotics-embodied/papers/arxiv-2606.19980/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2606.19980/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2606.19980/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Wenli Xiao",
+      "Jia Xie",
+      "Tonghe Zhang",
+      "Haotian Lin",
+      "Letian Max Fu",
+      "Haoru Xue",
+      "Jalen Lu",
+      "Yi Yang",
+      "Cunxi Dai",
+      "Zi Wang",
+      "Jimmy Wu",
+      "Guanzhi Wang",
+      "S. Shankar Sastry",
+      "Ken Goldberg",
+      "Linxi Jim Fan",
+      "Yuke Zhu",
+      "Guanya Shi"
+    ],
+    "read_version": "v2",
+    "reading_scope": "核对v2的2; 3.1-3.6; 4; Appendix B.3-B.6; official project's pass@8 explanation; official code README environment boundary及所列官方来源；选定章节核验，未完整审计全部附录，未复现。"
+  },
+  {
+    "id": "arxiv:2609.26499",
+    "title": "Generalizing Manipulation Skills with a Local Coding Agent",
+    "url": "https://arxiv.org/abs/2609.26499",
+    "arxiv_id": "2609.26499",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/embodied-agents",
+      "robotics/navigation-planning"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "new-baseline-selection"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2609.26499",
+      "https://arxiv.org/html/2609.26499v1",
+      "https://rtalwar2.github.io/agentic-coding-for-robot-manipulation/"
+    ],
+    "verification_status": "official_identity_and_selected_fulltext_sections_checked",
+    "caveats": [],
+    "assistant_reading_status": "selected_method_and_evaluation_sections_checked_not_full_read",
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p610",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "state",
+      "multimodal",
+      "code"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2609.26499",
+    "canonical_path": "robotics-embodied/papers/arxiv-2609.26499/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2609.26499/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2609.26499/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Raman Talwar",
+      "Elias Nijs",
+      "Andreas Verleysen",
+      "Francis wyffels"
+    ],
+    "read_version": "v1",
+    "reading_scope": "核对v1的III; IV; V; VI; project release statement及所列官方来源；选定章节核验，未完整审计全部附录，未复现。"
+  },
+  {
+    "id": "arxiv:2608.29379",
+    "title": "Bridging Semantics and Physics with Constrained LLMs for Safe and Trustworthy Robotic Manipulation",
+    "url": "https://arxiv.org/abs/2608.29379",
+    "arxiv_id": "2608.29379",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/embodied-agents",
+      "robotics/navigation-planning"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "new-baseline-selection"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2608.29379",
+      "https://arxiv.org/html/2608.29379v1"
+    ],
+    "verification_status": "official_identity_and_selected_fulltext_sections_checked",
+    "caveats": [],
+    "assistant_reading_status": "selected_method_and_evaluation_sections_checked_not_full_read",
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p611",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "state",
+      "multimodal",
+      "code"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2608.29379",
+    "canonical_path": "robotics-embodied/papers/arxiv-2608.29379/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2608.29379/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2608.29379/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Wenhao Hong",
+      "Lan Wei",
+      "Dandan Zhang"
+    ],
+    "read_version": "v1",
+    "reading_scope": "核对v1的3; 4.1-4.6; 5及所列官方来源；选定章节核验，未完整审计全部附录，未复现。"
   }
 ]

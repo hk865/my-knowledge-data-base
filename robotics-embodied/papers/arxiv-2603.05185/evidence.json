@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2603.05185",
+  "checked_on": "2026-10-06",
+  "version": "v1",
+  "primary_sources": [
+    "https://arxiv.org/abs/2603.05185",
+    "https://arxiv.org/html/2603.05185v1"
+  ],
+  "checked_sections": "3.2-3.5; 4.1-4.3/Tables 1-2",
+  "claim_map": [
+    {
+      "claim": "修改后的π0.5产生离散子任务，flow expert执行；Florence-2 critic触发事件驱动重规划。",
+      "location": "3.2–3.5",
+      "source_url": "https://arxiv.org/html/2603.05185v1"
+    },
+    {
+      "claim": "每个长程任务200条遥操作轨迹，倒杯恢复另有100条示范。",
+      "location": "4.1–4.3",
+      "source_url": "https://arxiv.org/html/2603.05185v1"
+    },
+    {
+      "claim": "评估为同一Cobot Magic ALOHA双臂平台上的两个任务，每场景10次；左臂迁移需要相关训练数据。",
+      "location": "4, Tables 1–2",
+      "source_url": "https://arxiv.org/html/2603.05185v1"
+    }
+  ],
+  "training_boundary": "修改π0.5的高层生成并训练Florence-2的language/projection模块，视觉塔冻结；不是冻结通用聊天LLM直接调整动作。",
+  "openness_boundary": "本次未核实作者可用代码仓库；未复现。",
+  "not_checked": [
+    "本体内左右臂迁移不等于陌生机器人本体适配。",
+    "人工核验的标签、恢复示范和启发式规则均是系统条件。",
+    "持续critic监控没有给出安全证明。",
+    "未审计再分发许可。"
+  ]
+}

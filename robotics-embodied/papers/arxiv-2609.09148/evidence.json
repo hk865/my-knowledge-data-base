@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2609.09148",
+  "checked_on": "2026-10-06",
+  "version": "v3",
+  "primary_sources": [
+    "https://arxiv.org/abs/2609.09148",
+    "https://arxiv.org/html/2609.09148v3",
+    "https://ppsteering.github.io/"
+  ],
+  "checked_sections": "4.1-4.3; 5; 6; Appendix C/D",
+  "claim_map": [
+    {
+      "claim": "两个代理分别估计reference与task速度，向基座速度加入缩放的差值。",
+      "location": "4.1–4.3",
+      "source_url": "https://arxiv.org/html/2609.09148v3"
+    },
+    {
+      "claim": "实验覆盖八项真机和四项仿真任务，任务代理使用每任务50条示范。",
+      "location": "5; Appendix C/D",
+      "source_url": "https://arxiv.org/html/2609.09148v3"
+    },
+    {
+      "claim": "代理结构与动作表示、flow schedule匹配是机制条件，主证据为单任务适配。",
+      "location": "4–6",
+      "source_url": "https://arxiv.org/html/2609.09148v3"
+    }
+  ],
+  "training_boundary": "两个32M代理需要训练，包含其视觉编码器；参考代理蒸馏基座，任务代理用每任务50条示范适配，基座冻结。",
+  "openness_boundary": "Project official Code link exists; repository target not yet inspected",
+  "not_checked": [
+    "没有高层通用LLM Agent实验。",
+    "多任务与跨本体迁移仍需验证。",
+    "项目存在Code入口，但本次未审核仓库实现或复现。",
+    "未独立复现，未审计再分发许可。"
+  ]
+}

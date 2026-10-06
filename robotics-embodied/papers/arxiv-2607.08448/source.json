@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2607.08448",
+  "title": "Harness VLA: Steering Frozen VLAs into Reliable Manipulation Primitives via Memory-Guided Agents",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2607.08448",
+  "official_url": "https://arxiv.org/abs/2607.08448",
+  "official_fulltext_url": "https://arxiv.org/html/2607.08448v5",
+  "read_version": "v5",
+  "version_status": "latest_arxiv_version_checked_on_2026_10_06",
+  "first_submitted": "2026-07-09",
+  "version_date": "2026-09-24",
+  "year": 2026,
+  "authors": [
+    "Yixian Zhang",
+    "Huanming Zhang",
+    "Feng Gao",
+    "Xiao Li",
+    "Zhihao Liu",
+    "Yi Nie",
+    "Chunyang Zhu",
+    "Jiaxing Qiu",
+    "Yuchen Yan",
+    "Jiyuan Liu",
+    "Wenhao Tang",
+    "Jiaji Rao",
+    "Zhengru Fang",
+    "Changxu Wei",
+    "Yu Wang",
+    "Wenbo Ding",
+    "Chao Yu"
+  ],
+  "affiliations": [
+    "Tsinghua University",
+    "Striding AI",
+    "Purdue University",
+    "Institute of Automation, Chinese Academy of Sciences",
+    "Infinigence AI",
+    "Hong Kong University of Science and Technology",
+    "Zhongguancun Academy"
+  ],
+  "topic_paths": [
+    "robotics/embodied-agents",
+    "robotics/embodied-policies"
+  ],
+  "modality_tags": [
+    "text",
+    "image",
+    "action",
+    "state",
+    "multimodal"
+  ],
+  "task_tags": [
+    "decision",
+    "evaluation"
+  ],
+  "content_kind": "reading",
+  "reading_depth": "selected_sections_technical",
+  "reading_path": "reading.md",
+  "reading_boundary": "独立核读v5方法§2、评估§3及表2–6、真机/Flash§4及表7、局限§6；附录A–E核查协议/接口/数据与权重，F使用统计，G选择与计时，H GPT-6 Astra结果；非逐页逐引用全文审计，未执行代码或复现",
+  "teaching_status": "technical_reading_with_explicit_scope",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "verified_link_only",
+    "identifier": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidence_url": "https://arxiv.org/abs/2607.08448",
+    "checked_at": "2026-10-06",
+    "note": "已核对arXiv原文许可入口；本库仍仅链接官方原文，不镜像PDF。"
+  },
+  "fulltext_local_status": "official_link_only",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-06",
+  "legacy_paths": [],
+  "evidence_paths": [
+    "robotics-embodied/papers/arxiv-2607.08448/evidence.json"
+  ],
+  "source_origin": "assistant-provided-exact-link",
+  "discovery_provenance": {
+    "role": "assistant",
+    "association": "prior_assistant_reference",
+    "date": "2026-10-06",
+    "user_reading_or_endorsement": "not_asserted"
+  },
+  "verification_status": "official_identity_and_selected_fulltext_sections_checked",
+  "verification_sources": [
+    "https://arxiv.org/abs/2607.08448",
+    "https://arxiv.org/html/2607.08448v5"
+  ],
+  "research_role": "2026_recent_main",
+  "intervention": "agent_orchestrates_vla_and_analytic_tools",
+  "training_boundary": "Agent与调用期VLA权重不更新；动作基座已有训练，任务记忆来自探索，不能等同零数据部署。",
+  "project_url": "https://harnessvla.github.io/",
+  "code_url": "https://github.com/RLinf/RPent",
+  "chat_evidence": [
+    {
+      "role": "assistant",
+      "date": "2026-10-06",
+      "association": "先前助手推荐的相关文献，已按原文独立核对；不表示用户已阅读或认可。"
+    }
+  ]
+}

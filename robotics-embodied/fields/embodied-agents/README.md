@@ -1,12 +1,12 @@
 # 具身 Agent
 
-> 状态：领域入门页 · v2（2026-10-04 追加第 6 阶段） · 依据 [synthesis.csv](synthesis.csv)（14 行）
+> 状态：领域入门页 · v3 · 2026-10-06
 >
 > 速览：
 > 1. 具身 Agent 把长程任务拆成两层：大模型在高层理解指令、拆子任务、选技能；底层技能（RL 策略、VLA（视觉语言动作模型，一句话：从图像和指令直接输出机器人动作的模型）、运动规划器或一段程序）把每个子任务做出来。本方向的难点几乎都在两层之间：技能库覆盖不到、执行后没验证、长程错误累积、记忆过期。
-> 2. 主线五步：长程任务基准（ALFRED）→ 语言打分乘可行性打分（SayCan）→ 闭环反馈与重规划（Inner Monologue、LLM-Planner）→ 用代码和价值图绕过固定技能库（Code as Policies、Voyager、VoxPoser）→ 训练出来的分层 VLA（Hi Robot、π0.5）→ 2026 年的 Agent 运行时、技能积累与记忆（EmbodiedSkills、RoboSkill、MEMORA、HoloAgent-0）。
+> 2. 主线：长程任务基准（ALFRED）→ 语言打分乘可行性打分（SayCan）→ 闭环反馈与重规划（Inner Monologue、LLM-Planner）→ 用代码和价值图绕过固定技能库（Code as Policies、Voyager、VoxPoser）→ 训练出来的分层 VLA（Hi Robot、π0.5）→ 2026 年的 Agent 运行时、技能积累与记忆（EmbodiedSkills、RoboSkill、MEMORA、HoloAgent-0）。
 > 3. 每一步的失败都有数字：SayCan 规划成功 84%、执行成功 74%，长程指令执行只有 47%，错误中 65% 来自语言模型；同一批扰动下开环 SayCan 30.8%，加闭环反馈 60.4%；EmbodiedBench 中最强模型从基础子集 96% 降到长程子集 58%；EmbodiedSkills 去掉中间验证，成功率从 86.2% 跌到 48.2%；依赖记忆的任务只有 12.5%。
-> 4. `[判断]` 分工在移动：技能库从人写的固定集合，变成代码生成、执行后积累；验证从可选的反馈变成运行时的必经步骤；高层从冻结的通用大模型，变成与底层同一家族、在机器人数据上训练的 VLM。
+> 4. `[判断]` 分工在移动：技能库从人写的固定集合，变成代码生成、执行后积累；验证从可选的反馈变成运行时的必经步骤。高层同时存在两条路：在机器人数据上训练 VLM，或保持通用模型冻结、让它调工具和动作策略；后一条在 2026 年把接口推进到动作引导、代码测试与执行经验修正。
 > 5. `[判断]` Google 机器人团队与后来的 Physical Intelligence 一线（Ichter 等）从"冻结 LLM + 技能库"走到"分层 VLA"；Wenlong Huang 一线（Inner Monologue、Code as Policies、VoxPoser）押注让大模型生成可执行的结构；2026 年的中国团队押注 Agent 运行时、技能积累与记忆这些"中间层"。Google DeepMind 在 Gemini Robotics 1.5 与 2 中两次采用"具身推理模型编排、VLA 当工具"的结构，2026 年 7 月的安全评测又把"这个子任务该不该交给 VLA"交给编排器判断（第 6 阶段）。
 
 本页是[机器人与具身](../../README.md)领域的具身 Agent 方向。机制与手算（目标写成可验证的物理状态、像素到三维点、SayCan 的选择、执行后的证据、调度器与验证器样本怎样训练）在[具身 Agent 讲义](../embodied-agents.md)，本页不重复，只讲领域地图。不限于机器人的 Agent 方法（ReAct、工具调用、轨迹验证）在[跨方向 Agent 页](../../../cross-domain/fields/agents/README.md)；单个技能怎样从图像和语言出动作在 [VLA](../vla/README.md)；按指令走到某处在[导航与规划](../navigation-planning/README.md)。
@@ -30,6 +30,24 @@
 ![具身 Agent 的任务闭环与 VLA 的动作闭环](figures/embodied-two-feedback-loops.svg)
 
 图：原创接口图。上层根据"杯子已经放入水槽"的证据决定是否换子任务；下层根据新图像和本体状态修正正在执行的动作。把已执行动作、观察时间与成功证据一起返回，才有条件区分"规划选错了""动作没做成"和"验证看错了"。图示综合本页的 SayCan、Inner Monologue 与分层 VLA 接口，不代表任何一篇论文的完整架构。
+
+## 当前接口地图：通用大模型怎样参与机器人任务
+
+本方向按“通用模型与机器人怎样形成行动闭环”组织。通用 LLM/VLM（能处理多种任务的语言或视觉语言模型）可以负责理解、规划、写代码、提出约束、检查执行，也可以调用动作策略。动作模型干预是其中一条支线；完整系统还需要感知、状态估计、工具执行和恢复。
+
+先分开两条轴：**训练哪一层**，以及**运行时改哪一个量**。同样冻结高层模型，可以修改语言子任务、工具程序、初始场景、动作噪声或候选排序；同样使用 π0.5，也可能调用原策略、引导其生成，或先对低层做任务适配。
+
+| 参与位置 | 通用模型输出什么 | 工具或动作模块负责什么 | 代表与代价 |
+|---|---|---|---|
+| 任务编排与技能调用 | 子任务、调用参数、失败后新的尝试 | 几何计算、技能执行、返回观测 | [HarnessVLA](../../papers/arxiv-2607.08448/reading.md)：把 VLA 原语和解析工具交给现成 Agent；仍受技能覆盖与调用成本限制 |
+| 代码与物理接口 | 程序，或受类型约束的对象与技能参数 | 坐标、碰撞、轨迹和真实执行 | [Agent as Policy](../../papers/arxiv-2609.12541/README.md)、[MCP + MTC](../../papers/arxiv-2608.29379/README.md)：前者可写程序，后者按固定状态机调用模板；部署需准备具体工具约定 |
+| 测试驱动的策略改进 | 根据 rollout 或仿真反馈修订程序 | 运行策略、测量误差、生成可检查的失败证据 | [Local Coding](../../papers/arxiv-2609.26499/README.md)、[SimEX](../../papers/arxiv-2609.38982/README.md)、[ENPIRE](../../papers/arxiv-2606.19980/README.md)：通用模型参数保持不变，ENPIRE还训练低层策略；物理试验与仿真成本仍在 |
+| 动作生成时引导 | 可微奖励程序，或任务相关的粗粒度修正 | 数值优化器、π0.5 等策略产生连续动作 | [VLS](../../papers/arxiv-2602.03973/reading.md)、[FRS](../../papers/arxiv-2606.13675/README.md)：借到语言与视觉推理，增益仍受动作先验和计算预算约束 |
+| 候选验证 | 评价预测结果与语言计划是否一致 | 仿真提供候选执行后的观测 | [SEAL](../../papers/arxiv-2510.16281/README.md)：运行期由 GPT-4o 选择，低层推理型 π0 先经过训练 |
+
+另有一组**可调用的专用工具与对照**：[VLA-ATTC](../../papers/arxiv-2605.01194/README.md)训练相对动作 critic（给两个候选动作作比较的评分模型），[PPS](../../papers/arxiv-2609.09148/README.md)训练小型动作代理，[ViTaL](../../papers/arxiv-2606.14981/README.md)组合世界模型与视觉触觉评分。它们提供候选评价或动作修正组件，论文实验并非通用 LLM 在线编排。
+
+`[判断]` 当前值得比较的单位是“模型能力 × 工具接口 × 可获得的反馈”，而非只比较高层模型名称。依据是同一类通用模型在上述系统中承担的输出不同：代码、奖励和语言计划会进入不同的物理执行链。更完整的输入、输出、梯度与手算见[通用模型怎样干预动作模型](action-model-intervention.md)。
 
 ## 主线历史
 
@@ -125,6 +143,19 @@
 
 `[判断]` 站在现在看过去：公司系统回到了 SayCan 的结构，只是三件事都换了实现。SayCan 用价值函数估计"这个技能现在能不能成功"，ER 2 改为读 VLA 训练指令的摘要来判断可行性（62.0% → 95.8%），这是同一个"可行性打分"问题的工具调用形式；Inner Monologue 的闭环反馈变成了编排器对任务进度和关键事件的时间定位；而 SayCan 没有的"安全"成了编排器的必备职责。依据是 Gemini Robotics 1.5 报告、Gemini Robotics 2 博客与安全评测报告；反例是 π0.5 与 MEM 把高层和底层放进同一个模型，不经过工具调用。
 
+### 7 冻结通用模型，通过工具与动作接口扩展能力（2026）
+
+第 4 阶段把高层装进训练过的 VLA，第 5–6 阶段把中间层变得可运行；另一条并行路线保留通用模型的现成能力，把适配工作放在工具、代码、奖励与执行反馈上。
+
+- **把 VLA 变成可调用的技能。** [HarnessVLA](../../papers/arxiv-2607.08448/reading.md)（7 月首发，9 月修订）给现成 Agent 提供 VLA 原语、解析工具与记忆。[Agent as Policy](../../papers/arxiv-2609.12541/README.md)（9 月）则把代码 Agent 接到运动学、感知和执行接口上。两者把“模型知道什么”转成“能调用什么、能检查什么”。
+- **把一次执行变成下一次改进的证据。** [ENPIRE](../../papers/arxiv-2606.19980/README.md)（6 月首发）和 [Local Coding](../../papers/arxiv-2609.26499/README.md)（9 月）探索代码生成与测试反馈，其中 ENPIRE 还让 Agent 组织低层 actor/critic 的训练；[SimEX](../../papers/arxiv-2609.38982/README.md)（9 月）让 Agent 在仿真中做实验，再把得到的程序部署到真实机器人。这些系统公开的优化对象是外部程序、执行方法，以及 ENPIRE 的低层策略参数；SimEX 与 ENPIRE 未报告通用模型微调，本页据此归入高层不更新的路线。
+- **把推理结果送进动作生成。** [VLS](../../papers/arxiv-2602.03973/reading.md)（2 月）让 VLM 生成可微奖励并引导采样；[FRS](../../papers/arxiv-2606.13675/README.md)（6 月）把 VLM 的粗粒度修正转成动作生成中的干预。这条线比只选子任务更靠近连续控制，但仍让专门动作模块承担运动先验。
+- **把物理检查独立出来。** [MCP + MTC](../../papers/arxiv-2608.29379/README.md)（8 月）把任务组织与运动规划通过工具协议连接；[PPS](../../papers/arxiv-2609.09148/README.md)、[ViTaL](../../papers/arxiv-2606.14981/README.md)代表可供编排系统借用的动作代理、世界模型和评分组件，它们各自的评测并非完整通用 LLM Agent 的评测。
+
+做不好的场景：现有真机证据仍依赖指定平台、技能库、传感器与人工重置；仿真里的多次尝试成功率、执行一次的成功率和真实部署成本需要分别报告。冻结高层可减少重新训练通用模型的需求，无法省去坐标标定、工具正确性、动作可行性与失败恢复的验证。
+
+`[判断]` 这条路线的变化是把“适配”从模型权重扩展到程序、约束和实验过程。证据来自上述方法各自修改的对象，尚不能据此判断它们比所有训练型 VLA 更通用；两类方法的机器人、数据与试验预算并不统一。
+
 ## 技术地基
 
 - **大语言模型与上下文学习**：SayCan、Inner Monologue、LLM-Planner 都靠少样本提示让冻结的 LLM 输出计划。见 [GPT-3 精读](../../../llm/papers/gpt3/reading.md)。
@@ -164,7 +195,13 @@
 
 读数时要分清三对口径：规划成功与执行成功，首回合成功与允许重试的最终成功（RoboSkill），全量与条件子集（MEMORA）。
 
+对于冻结模型加工具的系统，还要记录**尝试预算与模型调用时间**：ENPIRE 的 pass@8 是每子任务至多八次依赖失败历史的重试口径；SimEX 的测试前适应试验与正式评估分开；Agent as Policy 的跨身体演示与主平台定量表分开。对于动作干预，应同时给“同一基座直接执行”的对照、额外工具或训练成本、每步延迟，才能判断增益来自更好的选择、更多试验还是更强的低层策略。
+
 ## 当前开放问题
+
+- **通用模型应输出代码、语言子任务，还是动作约束？** 入口：[HarnessVLA](../../papers/arxiv-2607.08448/reading.md)、[Agent as Policy](../../papers/arxiv-2609.12541/README.md)、[VLS](../../papers/arxiv-2602.03973/reading.md)。比较时保持底层能力和试验预算相近，才能定位接口的贡献。
+- **哪些执行证据能稳定改善下一次尝试？** 入口：[Local Coding](../../papers/arxiv-2609.26499/README.md)、[SimEX](../../papers/arxiv-2609.38982/README.md)、[ENPIRE](../../papers/arxiv-2606.19980/README.md)。重点看反馈是否能区分感知、计划、控制错误，以及失败经验能否迁移。
+- **换机器人后，哪些部分真能复用？** 通用推理、任务程序、动作表示、控制器要分别测。入口：[Agent as Policy](../../papers/arxiv-2609.12541/README.md)与[VLA-Pilot](../../papers/arxiv-2511.14178/reading.md)；少量第二平台演示只覆盖所展示的接口。
 
 - **技能库覆盖不到的任务怎么办？** 入口：[Code as Policies](../../papers/arxiv-2209.07753/README.md)、[VoxPoser](../../papers/arxiv-2307.05973/README.md)、[RoboSkill](../../papers/roboskill/reading.md)、用人类视频说明新任务的 [Zero-WAM](../../papers/zero-wam/reading.md)。
 - **长程任务的错误累积怎样控制？** EmbodiedBench 的长程子集、EmbodiedSkills 自述的错误累积。入口：[EmbodiedBench](../../papers/arxiv-2502.09560/README.md)、[EmbodiedSkills](../../papers/embodiedskills/reading.md)。
@@ -183,11 +220,17 @@
 5. [EmbodiedSkills 精读](../../papers/embodiedskills/reading.md) → [RoboSkill 精读](../../papers/roboskill/reading.md) → [MEMORA 精读](../../papers/memora/reading.md)：2026 年的中间层，注意每篇实验口径的限定。
 6. （2026 年补充）[Gemini Robotics 1.5](../../papers/arxiv-2510.03342/README.md) → [Gemini Robotics 2 安全评测](../../papers/gemini-robotics-2-safety/README.md)：公司系统里的编排器，对照 SayCan 看"可行性打分"变成了什么。
 
+已有闭环基础后，可走专题路线：[动作模型干预讲义](action-model-intervention.md) → [VLS 精读](../../papers/arxiv-2602.03973/reading.md) → [HarnessVLA 精读](../../papers/arxiv-2607.08448/reading.md)。前者讲接口位置，中者讲动作生成中的数值引导，后者回到完整 Agent 的工具与经验闭环。[VLA-Pilot](../../papers/arxiv-2511.14178/reading.md)作为 2025 年的黑盒搜索前史对照。
+
 基线拆分见 [Baseline 页](BASELINES.md)，按问题排列的学习路线见[路线图](ROADMAP.md)，本方向收录的论文见[论文目录](PAPERS.md)。
 
 ## 批注
 
 **易误读**
+
+- 新增文献的首发日期与当前版本日期分别记录：StageCraft 首发于 2026 年 3 月，9 月为修订；SEAL 与 VLA-Pilot 首发于 2025 年，2026 年修订仍按前史阅读。
+- StageCraft 冻结新增高层模块，但其实验低层 VLA 先经任务全量微调；Critic in the Loop 的高层和 critic 经过训练；PPS 与 VLA-ATTC 是专用动作工具，不直接证明通用 LLM 编排能力。
+- Agent as Policy 的官网与 arXiv v3 试验数不同，此处以论文版本为准；跨身体附录是有限定性演示。ENPIRE 的多次尝试指标不当作单次真机成功率。
 
 - SayCan 的 84%/74% 是模拟厨房 101 条指令上的 PaLM-SayCan；真实厨房为 81%/60%（SayCan Table 2）。"65% 来自语言模型"是对失败案例的归因比例，不是总体错误率（第 5.1 节）。
 - Inner Monologue 的 30.8% 与 60.4% 是在人为加入扰动的真实厨房设置下测的（Table 3）。
@@ -199,7 +242,10 @@
 - Gemini Robotics 1.5 的 22% 对 44.5% 是长时程 agent 实验的总失败率（报告 Table 1）。
 - ASIMOV-Agentic 的 62.0% → 95.8% 是 ER 2 在单步可行性判断上、随"VLA 训练指令摘要"详细程度（DI0 → DI3）的变化；99% 与 96% 是 Apollo 2 实验室测试中 ER 的人员检测与 VLA 的转入安全姿态，分属两个模型。
 
-**判断的支撑论文**（原有主线见 [synthesis.csv](synthesis.csv)，补充评测见 [VLA 综合表](../vla/synthesis.csv)）
+**判断的支撑论文**（主线与新接口见 [synthesis.csv](synthesis.csv)，补充评测见 [VLA 综合表](../vla/synthesis.csv)）
+
+- “冻结模型与工具接口形成并行路线”：HarnessVLA 的 Agent—VLA 原语接口、Agent as Policy 的代码与执行接口、VLS 的奖励引导、Local Coding/SimEX 的执行反馈。反例：Critic in the Loop 修改并训练高层结构；PPS、VLA-ATTC、ViTaL 的某些组件需要训练，因此这里只把它们列为可比较的工具组件。
+- “适配对象扩展到程序、约束和实验过程”：ENPIRE、Local Coding、SimEX 分别提供测试或执行反馈驱动的程序改进；VLS/FRS 改生成过程。边界：这说明接口的不同，不是同条件排名或任意未见技能保证。
 
 - "记忆与多步进度分别测试"：RoboDojo v3 §3.1.1 分设 Memory / Long-Horizon，VLA-REPLICA v1 §4.3 分析重复次数的失败。边界：任务完成或计数失败本身不能定位是记忆表示、语言理解还是动作执行导致；失败归因还需要逐回合证据。
 

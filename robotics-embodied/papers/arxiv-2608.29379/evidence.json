@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2608.29379",
+  "checked_on": "2026-10-06",
+  "version": "v1",
+  "primary_sources": [
+    "https://arxiv.org/abs/2608.29379",
+    "https://arxiv.org/html/2608.29379v1"
+  ],
+  "checked_sections": "3; 4.1-4.6; 5",
+  "claim_map": [
+    {
+      "claim": "LLM输入结构化对象与状态，输出对象ID和有限技能参数；固定模板组织执行次序。",
+      "location": "3",
+      "source_url": "https://arxiv.org/html/2608.29379v1"
+    },
+    {
+      "claim": "MCP验证字段与引用，MTC验证当前代理场景中的IK和碰撞；感知采用YOLO/RGB-D与圆柱代理。",
+      "location": "3.2–3.4",
+      "source_url": "https://arxiv.org/html/2608.29379v1"
+    },
+    {
+      "claim": "UFactory850四种倾倒各十次，平均72.5%；新增抓放模板9/10，感知位姿错误仍造成过碰撞。",
+      "location": "4.1–4.6",
+      "source_url": "https://arxiv.org/html/2608.29379v1"
+    },
+    {
+      "claim": "完整系统与FSM/BT、LLM w/o task graph比较。",
+      "location": "§4, Table 2",
+      "source_url": "https://arxiv.org/html/2608.29379v1"
+    }
+  ],
+  "training_boundary": "方法使用现成Claude Sonnet4与固定工具模板，未报告LLM微调或新动作训练；增加技能需同时增加schema和MTC模板。",
+  "openness_boundary": "未核实完整可用代码；具体发布边界见not_checked。",
+  "not_checked": [
+    "有限状态模板不是通用新技能自动生成。",
+    "通过几何模型检查不能保证感知有误的真实世界安全。",
+    "未预测流体动力学；官方可用代码未核实。",
+    "未独立复现，未审计再分发许可。"
+  ],
+  "additional_check": "2026-10-06：按原文实验表补核基线与比较范围，未将Related Work引用当成实验对照。"
+}

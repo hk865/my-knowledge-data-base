@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2510.16281",
+  "checked_on": "2026-10-06",
+  "version": "v2",
+  "primary_sources": [
+    "https://arxiv.org/abs/2510.16281",
+    "https://arxiv.org/html/2510.16281v2",
+    "https://yilin-wu98.github.io/steering-reasoning-vla/",
+    "https://github.com/NVlabs/actalign"
+  ],
+  "checked_sections": "IV-A-B; V; VI; Appendix A",
+  "claim_map": [
+    {
+      "claim": "以推理标注数据微调π0，联合文字交叉熵和动作flow-matching损失。",
+      "location": "IV-A; Appendix A",
+      "source_url": "https://arxiv.org/html/2510.16281v2"
+    },
+    {
+      "claim": "候选并行仿真到下一think阶段，GPT-4o比较初始图像、预测结果与子计划再选择。",
+      "location": "IV-B",
+      "source_url": "https://arxiv.org/html/2510.16281v2"
+    },
+    {
+      "claim": "评估为LIBERO扰动与新行为组合；learned world model与真实数字孪生接入是后续方向。",
+      "location": "V–VI",
+      "source_url": "https://arxiv.org/html/2510.16281v2"
+    }
+  ],
+  "training_boundary": "先端到端微调π0以联合生成推理文本与动作；运行期GPT-4o作验证器。未把整个系统标成免训练。",
+  "openness_boundary": "官方策略代码NVlabs/actalign已提供；未下载运行。",
+  "not_checked": [
+    "未评估π0.5；未验证真机世界模型接入。",
+    "候选集缺少正确行为时，验证器无法补出新动作；仿真误差与遮挡影响选择。",
+    "单次GPT-4o查询约7–10秒，不能和异步摊销步延迟混用。",
+    "未审计再分发许可。"
+  ]
+}

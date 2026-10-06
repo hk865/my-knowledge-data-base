@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2603.20659",
+  "checked_on": "2026-10-06",
+  "version": "v3",
+  "primary_sources": [
+    "https://arxiv.org/abs/2603.20659",
+    "https://arxiv.org/html/2603.20659v3",
+    "https://stagecraft-decorator.github.io/stagecraft/"
+  ],
+  "checked_sections": "III; IV-A-B; limitations",
+  "claim_map": [
+    {
+      "claim": "VLM由带成功标签的rollout初始场景推断最少移除集合，经SAM3与标定的三维位置调用IK pick-and-place。",
+      "location": "III",
+      "source_url": "https://arxiv.org/html/2603.20659v3"
+    },
+    {
+      "claim": "π0.5与SmolVLA先在10个任务、每任务60条示范上全量微调。",
+      "location": "IV-A–B",
+      "source_url": "https://arxiv.org/html/2603.20659v3"
+    },
+    {
+      "claim": "三项Franka任务的干预针对未见干扰或阻挡对象；不是生成新的操作技能。",
+      "location": "IV; VI",
+      "source_url": "https://arxiv.org/html/2603.20659v3"
+    }
+  ],
+  "training_boundary": "新增StageCraft外部模块不训练；底层π0.5/SmolVLA先在任务示范上全量微调，不能称原版通用策略直接部署。",
+  "openness_boundary": "官方项目与提示词可访问；未确认完整可运行发布。",
+  "not_checked": [
+    "2026-03首发，2026-09-24为v3修订；两种日期分别记录。",
+    "需要已有成功上下文、可靠感知和移除技能；并非所有环境允许搬走物体。",
+    "未知物体的保守移除不等于已识别因果影响；试验范围有限。",
+    "未审计再分发许可。"
+  ]
+}

@@ -251,6 +251,8 @@
 
 7. [工程记忆讲义](memory-evidence-loop.md) → [MemoryArena](../../papers/arxiv-2602.16313/README.md) → [Hindsight](../../papers/arxiv-2512.12818/README.md)：先看历史怎样进入行动，再读评测和信息组织。
 
+机器人中的工具调用还需处理坐标、碰撞、执行误差和重置成本，见[具身 Agent 接口地图](../../../robotics-embodied/fields/embodied-agents/README.md)与[HarnessVLA 精读](../../../robotics-embodied/papers/arxiv-2607.08448/reading.md)。
+
 ## 批注
 
 **易误读**

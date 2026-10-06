@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2609.12541",
+  "checked_on": "2026-10-06",
+  "version": "v3",
+  "primary_sources": [
+    "https://arxiv.org/abs/2609.12541",
+    "https://arxiv.org/html/2609.12541v3",
+    "https://agent-as-policy-2026.github.io/",
+    "https://github.com/agent-as-policy-2026/agent-as-policy"
+  ],
+  "checked_sections": "3.1-3.3; 4.1-4.4; Appendix A; Appendix E; Appendix F; Appendix H; official project; official code README",
+  "claim_map": [
+    {
+      "claim": "Agent使用图像、标定、机器人状态和接口文档，输出几何/控制程序和末端、关节、夹爪请求。",
+      "location": "3.1–3.3; Appendix A",
+      "source_url": "https://arxiv.org/html/2609.12541v3"
+    },
+    {
+      "claim": "主实验采用YAM单臂或双臂；跨身体附录仅展示P7与RealHand L6抓瓶和抬升。",
+      "location": "4; Appendix H",
+      "source_url": "https://arxiv.org/html/2609.12541v3"
+    },
+    {
+      "claim": "arXiv v3投掷结果9/10，官网仍是2/2；定量对照应固定论文版本。",
+      "location": "Table 1; official project",
+      "source_url": "https://arxiv.org/html/2609.12541v3"
+    },
+    {
+      "claim": "主基线为GaP和ASPIRE，统一使用GPT-6 Astra high；ASPIRE分别报告纯执行和包括仿真/真机准备的成本。",
+      "location": "§4.2.3, Table 3; Appendix J",
+      "source_url": "https://arxiv.org/html/2609.12541v3"
+    },
+    {
+      "claim": "Table 2的双对装配任务，GPT-6 Astra在low/medium/high各5次中均完成5次；不是全任务跨模型统计。",
+      "location": "§4.2.2, Table 2",
+      "source_url": "https://arxiv.org/html/2609.12541v3"
+    }
+  ],
+  "training_boundary": "§3.1明确通用模型参数固定；没有独立训练的动作策略。程序、工作记录与经验文件可以变化。",
+  "openness_boundary": "官方代码可访问，未运行。",
+  "not_checked": [
+    "成功任务可能耗时数十分钟；LLM不在伺服频率输出动作。",
+    "跨身体定性演示不构成统计迁移基准。",
+    "部分任务提供示范或参考资料；不能概括为无数据新技能。",
+    "未独立复现，未审计再分发许可。"
+  ],
+  "additional_check": "2026-10-06：按原文实验表补核基线与比较范围，未将Related Work引用当成实验对照。"
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2609.26499",
+  "checked_on": "2026-10-06",
+  "version": "v1",
+  "primary_sources": [
+    "https://arxiv.org/abs/2609.26499",
+    "https://arxiv.org/html/2609.26499v1",
+    "https://rtalwar2.github.io/agentic-coding-for-robot-manipulation/"
+  ],
+  "checked_sections": "III; IV; V; VI; project release statement",
+  "claim_map": [
+    {
+      "claim": "本地模型通过look、state、TCP/关节控制、夹爪、像素定位、颜色检测与接触下降等九工具执行。",
+      "location": "III",
+      "source_url": "https://arxiv.org/html/2609.26499v1"
+    },
+    {
+      "claim": "UR3e上九种任务各五次，无操作员介入完成30/45。",
+      "location": "IV–V",
+      "source_url": "https://arxiv.org/html/2609.26499v1"
+    },
+    {
+      "claim": "TCP边界检查仍出现夹爪身体碰撞；第二轮选最快和最慢的成功轨迹继续测试。",
+      "location": "V",
+      "source_url": "https://arxiv.org/html/2609.26499v1"
+    }
+  ],
+  "training_boundary": "模型、接口与六份手写技能保持固定；没有新增神经感知训练。会话内程序与第二轮复用不等于参数更新。",
+  "openness_boundary": "未核实完整可用代码；具体发布边界见not_checked。",
+  "not_checked": [
+    "只评颜色、大小、形状与任务变化，未评光照、材质、杂乱或身体迁移。",
+    "第二轮不是无偏的新任务总体评测。",
+    "项目提供日志、提示与技能，未发布完整平台/Agent代码。",
+    "未独立复现，未审计再分发许可。"
+  ]
+}

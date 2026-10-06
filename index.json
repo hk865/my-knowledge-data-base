@@ -566,5 +566,21 @@
   {
     "title": "Agent 记忆：历史怎样回到新任务里",
     "file": "perspectives/notes/agent-memory-questions.md"
+  },
+  {
+    "title": "冻结的 LLM 怎样帮助动作模型完成新任务",
+    "file": "robotics-embodied/fields/embodied-agents/action-model-intervention.md"
+  },
+  {
+    "title": "VLS：把语言要求写成奖励，在动作生成过程中沿梯度纠偏",
+    "file": "robotics-embodied/papers/arxiv-2602.03973/reading.md"
+  },
+  {
+    "title": "VLA-Pilot：让大模型写评分程序，用进化搜索改进动作候选",
+    "file": "robotics-embodied/papers/arxiv-2511.14178/reading.md"
+  },
+  {
+    "title": "Harness VLA：让通用大模型安排接触，让冻结策略专心动手",
+    "file": "robotics-embodied/papers/arxiv-2607.08448/reading.md"
   }
 ]

@@ -23,9 +23,13 @@
 
 和四足实验直接相关的问题，见思考笔记[四足策略的故障后恢复](../perspectives/notes/quadruped-recovery.md)。
 
+## 通用大模型参与机器人任务
+
+[具身 Agent 地图](fields/embodied-agents/README.md)把规划、工具、验证、动作干预与执行经验连成闭环。[动作模型干预讲义](fields/embodied-agents/action-model-intervention.md)进一步对照奖励梯度、噪声接口、候选选择和小模型适配；专题阅读从[VLS](papers/arxiv-2602.03973/reading.md)与[HarnessVLA](papers/arxiv-2607.08448/reading.md)进入。
+
 ## 单篇论文目录
 
-本领域收录 183 项资源，其中 14 篇有讲解；其他方向的相关论文通过索引交叉引用。
+本领域收录 198 项资源，其中 17 篇有讲解；其他方向的相关论文通过索引交叉引用。
 
 - [浏览本领域论文与跨方向引用](PAPERS.md)
 - [直接浏览单篇文件夹](papers/README.md)

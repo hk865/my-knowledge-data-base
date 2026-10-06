@@ -141,3 +141,7 @@ Agent：语言模型智能体,cross-domain/fields/agents/README.md
 2026年10月5日研究短报,daily/2026-10-05.md
 Agent 工程记忆：从一次失败到下一次可靠复用,cross-domain/fields/agents/memory-evidence-loop.md
 Agent 记忆：历史怎样回到新任务里,perspectives/notes/agent-memory-questions.md
+冻结的 LLM 怎样帮助动作模型完成新任务,robotics-embodied/fields/embodied-agents/action-model-intervention.md
+VLS：把语言要求写成奖励，在动作生成过程中沿梯度纠偏,robotics-embodied/papers/arxiv-2602.03973/reading.md
+VLA-Pilot：让大模型写评分程序，用进化搜索改进动作候选,robotics-embodied/papers/arxiv-2511.14178/reading.md
+Harness VLA：让通用大模型安排接触，让冻结策略专心动手,robotics-embodied/papers/arxiv-2607.08448/reading.md

@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2606.14981",
+  "checked_on": "2026-10-06",
+  "version": "v1",
+  "primary_sources": [
+    "https://arxiv.org/abs/2606.14981",
+    "https://arxiv.org/html/2606.14981v1",
+    "https://yilin-wu98.github.io/vital_website/"
+  ],
+  "checked_sections": "4.1-4.4; 5; Appendix A/B/C.2/D",
+  "claim_map": [
+    {
+      "claim": "离线VLM给出阶段目标，视觉预测由RoboMeter比较；触觉latent与CLIP文本嵌入形成奖励。",
+      "location": "4.1–4.4; Appendix A/B",
+      "source_url": "https://arxiv.org/html/2606.14981v1"
+    },
+    {
+      "claim": "先作视觉候选选择，再partial noise并用触觉梯度作局部编辑。",
+      "location": "4",
+      "source_url": "https://arxiv.org/html/2606.14981v1"
+    },
+    {
+      "claim": "Franka擦拭、移液、插入各20次，基座为任务训练的Diffusion Policy。",
+      "location": "5; Appendix C.2/D",
+      "source_url": "https://arxiv.org/html/2606.14981v1"
+    }
+  ],
+  "training_boundary": "低层Diffusion U-Net与视觉触觉世界模型需要训练；DINOv3/AnyTouch2等编码器及在线评分组件冻结。VLM离线描述阶段目标，不是持续在线规划。",
+  "openness_boundary": "Project Code Coming Soon",
+  "not_checked": [
+    "不是π0.5实验，也未证明通用LLM持续在线规划或跨本体迁移。",
+    "主文250额外rollout与擦拭附录280额外rollout的数量不同，复现前需确认。",
+    "世界模型接触预测与触觉编码器覆盖限制结果。",
+    "未独立复现，未审计再分发许可。"
+  ]
+}

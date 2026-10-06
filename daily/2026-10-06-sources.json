@@ -1,0 +1,1309 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-06",
+  "as_of_utc": "2026-10-06T08:30:00Z",
+  "purpose": "Daily candidate archive; candidate inclusion is not formal knowledge-base admission",
+  "weekly_review_date": "2026-10-11",
+  "deduplication_baseline": {
+    "existing_main_resources": 596,
+    "separately_prepared_local_resources": 611,
+    "prepared_pack_new_resources": 15,
+    "prepared_does_not_mean_published": true,
+    "archive_generation_snapshot": true,
+    "publication_resource_count": 611
+  },
+  "coverage": "Bounded historical reference recovery plus targeted current primary-source search; not exhaustive chat history or daily arXiv coverage.",
+  "source_handling": "Public literature URLs and source-category provenance only. No private conversation URLs, message content, account identifiers or credentials.",
+  "reading_policy": "Identity verification, selected-section review, pre-existing catalog readings and user reading status are separate. Recovered assistant references do not imply user adoption.",
+  "recommended_ids": [
+    "arxiv:2609.32154",
+    "arxiv:2609.30946"
+  ],
+  "counts": {
+    "recovered_references": 34,
+    "identity_supported_records": 24,
+    "unverified_identity_or_project_leads": 16,
+    "screened_other_leads": 3,
+    "status_counts": {
+      "待周整理": 11,
+      "已在库": 13
+    },
+    "status_counts_at_archive_generation": {
+      "待周整理": 11,
+      "已在库": 6,
+      "定向整理完成，公开待发布": 7
+    }
+  },
+  "records": [
+    {
+      "id": "arxiv:1512.02363",
+      "title": "On-Manifold Preintegration for Real-Time Visual-Inertial Odometry",
+      "resource_kind": "paper",
+      "canonical_url": "https://arxiv.org/abs/1512.02363",
+      "identity_status": "primary_title_identifier_date_verified",
+      "provenance": [
+        "recovered_prior_assistant_reference"
+      ],
+      "recovered_literature_urls": [
+        "https://arxiv.org/html/1512.02363v3"
+      ],
+      "reading_depth": "abstract_and_metadata_only",
+      "user_reading_status": "unknown",
+      "deduplication": {
+        "main_catalog_match": false,
+        "prepared_targeted_pack_match": false
+      },
+      "status": "待周整理",
+      "new_formal_admission": false,
+      "original_literature_url_recovery_status": "recovered_from_summary_not_raw_transcript",
+      "stable_conversation_permalink_recovered": false,
+      "arxiv_id": "1512.02363",
+      "first_submission_date": "2015-12-08",
+      "verified_current_version": "v3",
+      "primary_verification_url": "https://arxiv.org/abs/1512.02363",
+      "dedup_match_basis": "no_match"
+    },
+    {
+      "id": "arxiv:1905.13002",
+      "title": "Temporal Parallelization of Bayesian Smoothers",
+      "resource_kind": "paper",
+      "canonical_url": "https://arxiv.org/abs/1905.13002",
+      "identity_status": "primary_title_identifier_date_verified",
+      "provenance": [
+        "recovered_prior_assistant_reference"
+      ],
+      "recovered_literature_urls": [
+        "https://arxiv.org/abs/1905.13002"
+      ],
+      "reading_depth": "abstract_and_metadata_only",
+      "user_reading_status": "unknown",
+      "deduplication": {
+        "main_catalog_match": false,
+        "prepared_targeted_pack_match": false
+      },
+      "status": "待周整理",
+      "new_formal_admission": false,
+      "original_literature_url_recovery_status": "recovered_from_summary_not_raw_transcript",
+      "stable_conversation_permalink_recovered": false,
+      "arxiv_id": "1905.13002",
+      "first_submission_date": "2019-05-30",
+      "verified_current_version": "v2",
+      "primary_verification_url": "https://arxiv.org/abs/1905.13002",
+      "dedup_match_basis": "no_match"
+    },
+    {
+      "id": "arxiv:2408.14035",
+      "title": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry",
+      "resource_kind": "paper",
+      "canonical_url": "https://arxiv.org/abs/2408.14035",
+      "identity_status": "primary_title_identifier_date_verified",
+      "provenance": [
+        "recovered_prior_assistant_reference"
+      ],
+      "recovered_literature_urls": [
+        "https://arxiv.org/html/2408.14035v2"
+      ],
+      "reading_depth": "abstract_and_metadata_only",
+      "user_reading_status": "unknown",
+      "deduplication": {
+        "main_catalog_match": false,
+        "prepared_targeted_pack_match": false
+      },
+      "status": "待周整理",
+      "new_formal_admission": false,
+      "original_literature_url_recovery_status": "recovered_from_summary_not_raw_transcript",
+      "stable_conversation_permalink_recovered": false,
+      "arxiv_id": "2408.14035",
+      "first_submission_date": "2024-08-26",
+      "verified_current_version": "v2",
+      "primary_verification_url": "https://arxiv.org/abs/2408.14035",
+      "dedup_match_basis": "no_match"
+    },
+    {
+      "id": "arxiv:2606.19555",
+      "title": "SCAN-Planner: Spatial Collision-Aware Local Planning for Route-Guided Long-Range Quadruped Navigation",
+      "resource_kind": "paper",
+      "canonical_url": "https://arxiv.org/abs/2606.19555",
+      "identity_status": "primary_title_identifier_version_date_verified",
+      "provenance": [
+        "recovered_prior_assistant_reference"
+      ],
+      "recovered_literature_urls": [
+        "https://www.alphaxiv.org/abs/2606.19555v1",
+        "https://github.com/wuyi2121/SCAN-Planner"
+      ],
+      "reading_depth": "Methods IV/V and experiments VI examined",
+      "user_reading_status": "unknown",
+      "deduplication": {
+        "main_catalog_match": false,
+        "prepared_targeted_pack_match": false
+      },
+      "status": "待周整理",
+      "new_formal_admission": false,
+      "original_literature_url_recovery_status": "recovered_from_summary_not_raw_transcript",
+      "stable_conversation_permalink_recovered": false,
+      "arxiv_id": "2606.19555",
+      "first_submission_date": "2026-06-17",
+      "verified_current_version": "v1",
+      "primary_verification_url": "https://arxiv.org/abs/2606.19555",
+      "dedup_match_basis": "no_match",
+      "version_date": "2026-06-17",
+      "primary_sources": [
+        "https://arxiv.org/abs/2606.19555",
+        "https://arxiv.org/html/2606.19555v1"
+      ],
+      "daily_role": "recovered-assistant-reference-context",
+      "limitations": [
+        "Yaw-aware twin-cylinder footprint; collision-check yaw is induced from position-trajectory tangent and execution heading follows that tangent.",
+        "Velocity/acceleration penalties do not constitute a measured controller-response or delay model.",
+        "Do not identify the user’s planner as SCAN or SCPN without further evidence."
+      ],
+      "not_done": [
+        "independent_reproduction",
+        "complete_proof_audit"
+      ]
+    },
+    {
+      "id": "arxiv:2604.07599",
+      "title": "SANDO: Safe Autonomous Trajectory Planning for Dynamic Unknown Environments",
+      "resource_kind": "paper",
+      "canonical_url": "https://arxiv.org/abs/2604.07599",
+      "identity_status": "primary_title_identifier_version_date_verified",
+      "provenance": [
+        "recovered_prior_assistant_reference",
+        "recovered_user_project_lead_paper_identity_checked_separately"
+      ],
+      "recovered_literature_urls": [
+        "https://arxiv.org/abs/2604.07599",
+        "https://github.com/mit-acl/sando"
+      ],
+      "reading_depth": "Identity/version, safety assumptions VIII, hardware/limitations selectively checked",
+      "user_reading_status": "unknown",
+      "deduplication": {
+        "main_catalog_match": false,
+        "prepared_targeted_pack_match": false
+      },
+      "status": "待周整理",
+      "new_formal_admission": false,
+      "original_literature_url_recovery_status": "recovered_from_summary_not_raw_transcript",
+      "stable_conversation_permalink_recovered": false,
+      "arxiv_id": "2604.07599",
+      "first_submission_date": "2026-04-08",
+      "verified_current_version": "v3",
+      "primary_verification_url": "https://arxiv.org/abs/2604.07599",
+      "dedup_match_basis": "no_match",
+      "version_date": "2026-09-25",
+      "primary_sources": [
+        "https://arxiv.org/abs/2604.07599",
+        "https://arxiv.org/html/2604.07599v3",
+        "https://github.com/mit-acl/sando"
+      ],
+      "daily_role": "historical-user-linked-context",
+      "limitations": [
+        "Originally UAV trajectory planning; not a newly discovered user-unseen topic.",
+        "Assumption 4 is perfect trajectory tracking; sufficiently large combined estimation/tracking-error inflation can preserve conditional bounds.",
+        "Recursive feasibility remains open.",
+        "Six-joint arm transfer is an engineering extension requiring whole-arm collision and joint/dynamic constraints; not demonstrated by the paper."
+      ],
+      "not_done": [
+        "independent_reproduction",
+        "complete_proof_audit"
+      ]
+    },
+    {
+      "id": "arxiv:2209.07753",
+      "title": "Code as Policies: Language Model Programs for Embodied Control",
+      "resource_kind": "paper",
+      "canonical_url": "https://arxiv.org/abs/2209.07753",
+      "identity_status": "reused_local_catalog_metadata_via_title_alias",
+      "provenance": [
+        "recovered_prior_assistant_reference"
+      ],
+      "recovered_literature_urls": [
+        "https://code-as-policies.github.io"
+      ],
+      "reading_depth": "selected_method_sections_checked_not_full_read",
+      "user_reading_status": "unknown",
+      "deduplication": {
+        "main_catalog_match": true,
+        "prepared_targeted_pack_match": false
+      },
+      "status": "已在库",
+      "new_formal_admission": false,
+      "original_literature_url_recovery_status": "recovered_from_summary_not_raw_transcript",
+      "stable_conversation_permalink_recovered": false,
+      "arxiv_id": "2209.07753",
+      "dedup_match_basis": "normalized_title_alias",
+      "recovered_reference_kind": "project",
+      "chat_shared_arxiv_id": false
+    },
+    {
+      "id": "arxiv:2307.05973",
+      "title": "VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models",
+      "resource_kind": "paper",
+      "canonical_url": "https://arxiv.org/abs/2307.05973",
+      "identity_status": "reused_local_catalog_metadata",
+      "provenance": [
+        "recovered_prior_assistant_reference"
+      ],
+      "recovered_literature_urls": [
+        "https://arxiv.org/abs/2307.05973"
+      ],
+      "reading_depth": "selected_method_sections_checked_not_full_read",
+      "user_reading_status": "unknown",
+      "deduplication": {
+        "main_catalog_match": true,
+        "prepared_targeted_pack_match": false
+      },
+      "status": "已在库",
+      "new_formal_admission": false,
+      "original_literature_url_recovery_status": "recovered_from_summary_not_raw_transcript",
+      "stable_conversation_permalink_recovered": false,
+      "arxiv_id": "2307.05973",
+      "dedup_match_basis": "stable_arxiv_identifier"
+    },
+    {
+      "id": "arxiv:2307.15818",
+      "title": "RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control",
+      "resource_kind": "paper",
+      "canonical_url": "https://arxiv.org/abs/2307.15818",
+      "identity_status": "reused_local_catalog_metadata_via_title_alias",
+      "provenance": [
+        "recovered_prior_assistant_reference"
+      ],
+      "recovered_literature_urls": [
+        "https://robotics-transformer2.github.io"
+      ],
+      "reading_depth": "identity_verified_or_existing_catalog_only",
+      "user_reading_status": "unknown",
+      "deduplication": {
+        "main_catalog_match": true,
+        "prepared_targeted_pack_match": false
+      },
+      "status": "已在库",
+      "new_formal_admission": false,
+      "original_literature_url_recovery_status": "recovered_from_summary_not_raw_transcript",
+      "stable_conversation_permalink_recovered": false,
+      "arxiv_id": "2307.15818",
+      "dedup_match_basis": "normalized_title_alias",
+      "recovered_reference_kind": "project",
+      "chat_shared_arxiv_id": false
+    },
+    {
+      "id": "arxiv:2410.24164",
+      "title": "$π_0$: A Vision-Language-Action Flow Model for General Robot Control",
+      "resource_kind": "paper",
+      "canonical_url": "https://arxiv.org/abs/2410.24164",
+      "identity_status": "reused_local_catalog_metadata",
+      "provenance": [
+        "recovered_prior_assistant_reference"
+      ],
+      "recovered_literature_urls": [
+        "https://arxiv.org/html/2410.24164v4"
+      ],
+      "reading_depth": "identity_verified_or_existing_catalog_only",
+      "user_reading_status": "unknown",
+      "deduplication": {
+        "main_catalog_match": true,
+        "prepared_targeted_pack_match": false
+      },
+      "status": "已在库",
+      "new_formal_admission": false,
+      "original_literature_url_recovery_status": "recovered_from_summary_not_raw_transcript",
+      "stable_conversation_permalink_recovered": false,
+      "arxiv_id": "2410.24164",
+      "dedup_match_basis": "stable_arxiv_identifier"
+    },
+    {
+      "id": "arxiv:2504.16054",
+      "title": "π0.5: a Vision-Language-Action Model with Open-World Generalization",
+      "resource_kind": "paper",
+      "canonical_url": "https://arxiv.org/abs/2504.16054",
+      "identity_status": "reused_local_catalog_metadata",
+      "provenance": [
+        "recovered_prior_assistant_reference"
+      ],
+      "recovered_literature_urls": [
+        "https://arxiv.org/abs/2504.16054"
+      ],
+      "reading_depth": "identity_verified_or_existing_catalog_only",
+      "user_reading_status": "unknown",
+      "deduplication": {
+        "main_catalog_match": true,
+        "prepared_targeted_pack_match": false
+      },
+      "status": "已在库",
+      "new_formal_admission": false,
+      "original_literature_url_recovery_status": "recovered_from_summary_not_raw_transcript",
+      "stable_conversation_permalink_recovered": false,
+      "arxiv_id": "2504.16054",
+      "dedup_match_basis": "stable_arxiv_identifier"
+    },
+    {
+      "id": "arxiv:2603.20659",
+      "title": "StageCraft: Execution Aware Mitigation of Distractor and Obstruction Failures in VLA Models",
+      "resource_kind": "paper",
+      "canonical_url": "https://arxiv.org/abs/2603.20659",
+      "identity_status": "reused_local_catalog_metadata",
+      "provenance": [
+        "recovered_prior_assistant_reference"
+      ],
+      "recovered_literature_urls": [
+        "https://arxiv.org/html/2603.20659v3"
+      ],
+      "reading_depth": "selected_method_and_evaluation_sections_checked_not_full_read",
+      "user_reading_status": "unknown",
+      "deduplication": {
+        "main_catalog_match": false,
+        "prepared_targeted_pack_match": true
+      },
+      "status": "已在库",
+      "new_formal_admission": false,
+      "original_literature_url_recovery_status": "recovered_from_summary_not_raw_transcript",
+      "stable_conversation_permalink_recovered": false,
+      "arxiv_id": "2603.20659",
+      "dedup_match_basis": "stable_arxiv_identifier",
+      "status_at_archive_generation": "定向整理完成，公开待发布",
+      "status_at_archive_generation_as_of_utc": "2026-10-06T08:30:00Z",
+      "admission_basis": "separate_15_paper_targeted_research_pack_in_same_publication"
+    },
+    {
+      "id": "arxiv:2603.05185",
+      "title": "Critic in the Loop: A Tri-System VLA Framework for Robust Long-Horizon Manipulation",
+      "resource_kind": "paper",
+      "canonical_url": "https://arxiv.org/abs/2603.05185",
+      "identity_status": "reused_local_catalog_metadata",
+      "provenance": [
+        "recovered_prior_assistant_reference"
+      ],
+      "recovered_literature_urls": [
+        "https://arxiv.org/html/2603.05185v1"
+      ],
+      "reading_depth": "selected_method_and_evaluation_sections_checked_not_full_read",
+      "user_reading_status": "unknown",
+      "deduplication": {
+        "main_catalog_match": false,
+        "prepared_targeted_pack_match": true
+      },
+      "status": "已在库",
+      "new_formal_admission": false,
+      "original_literature_url_recovery_status": "recovered_from_summary_not_raw_transcript",
+      "stable_conversation_permalink_recovered": false,
+      "arxiv_id": "2603.05185",
+      "dedup_match_basis": "stable_arxiv_identifier",
+      "status_at_archive_generation": "定向整理完成，公开待发布",
+      "status_at_archive_generation_as_of_utc": "2026-10-06T08:30:00Z",
+      "admission_basis": "separate_15_paper_targeted_research_pack_in_same_publication"
+    },
+    {
+      "id": "arxiv:2510.16281",
+      "title": "Do What You Say: Steering Vision-Language-Action Models via Runtime Reasoning-Action Alignment Verification",
+      "resource_kind": "paper",
+      "canonical_url": "https://arxiv.org/abs/2510.16281",
+      "identity_status": "reused_local_catalog_metadata",
+      "provenance": [
+        "recovered_prior_assistant_reference"
+      ],
+      "recovered_literature_urls": [
+        "https://arxiv.org/abs/2510.16281"
+      ],
+      "reading_depth": "selected_method_and_evaluation_sections_checked_not_full_read",
+      "user_reading_status": "unknown",
+      "deduplication": {
+        "main_catalog_match": false,
+        "prepared_targeted_pack_match": true
+      },
+      "status": "已在库",
+      "new_formal_admission": false,
+      "original_literature_url_recovery_status": "recovered_from_summary_not_raw_transcript",
+      "stable_conversation_permalink_recovered": false,
+      "arxiv_id": "2510.16281",
+      "dedup_match_basis": "stable_arxiv_identifier",
+      "status_at_archive_generation": "定向整理完成，公开待发布",
+      "status_at_archive_generation_as_of_utc": "2026-10-06T08:30:00Z",
+      "admission_basis": "separate_15_paper_targeted_research_pack_in_same_publication"
+    },
+    {
+      "id": "arxiv:2607.08448",
+      "title": "Harness VLA: Steering Frozen VLAs into Reliable Manipulation Primitives via Memory-Guided Agents",
+      "resource_kind": "paper",
+      "canonical_url": "https://arxiv.org/abs/2607.08448",
+      "identity_status": "reused_local_catalog_metadata",
+      "provenance": [
+        "recovered_prior_assistant_reference"
+      ],
+      "recovered_literature_urls": [
+        "https://arxiv.org/html/2607.08448v1"
+      ],
+      "reading_depth": "selected_sections_technical",
+      "user_reading_status": "unknown",
+      "deduplication": {
+        "main_catalog_match": false,
+        "prepared_targeted_pack_match": true
+      },
+      "status": "已在库",
+      "new_formal_admission": false,
+      "original_literature_url_recovery_status": "recovered_from_summary_not_raw_transcript",
+      "stable_conversation_permalink_recovered": false,
+      "arxiv_id": "2607.08448",
+      "dedup_match_basis": "stable_arxiv_identifier",
+      "status_at_archive_generation": "定向整理完成，公开待发布",
+      "status_at_archive_generation_as_of_utc": "2026-10-06T08:30:00Z",
+      "admission_basis": "separate_15_paper_targeted_research_pack_in_same_publication"
+    },
+    {
+      "id": "arxiv:2606.13675",
+      "title": "Improving Robotic Generalist Policies via Flow Reversal Steering",
+      "resource_kind": "paper",
+      "canonical_url": "https://arxiv.org/abs/2606.13675",
+      "identity_status": "reused_local_catalog_metadata",
+      "provenance": [
+        "recovered_prior_assistant_reference"
+      ],
+      "recovered_literature_urls": [
+        "https://arxiv.org/html/2606.13675v2"
+      ],
+      "reading_depth": "selected_method_and_evaluation_sections_checked_not_full_read",
+      "user_reading_status": "unknown",
+      "deduplication": {
+        "main_catalog_match": false,
+        "prepared_targeted_pack_match": true
+      },
+      "status": "已在库",
+      "new_formal_admission": false,
+      "original_literature_url_recovery_status": "recovered_from_summary_not_raw_transcript",
+      "stable_conversation_permalink_recovered": false,
+      "arxiv_id": "2606.13675",
+      "dedup_match_basis": "stable_arxiv_identifier",
+      "status_at_archive_generation": "定向整理完成，公开待发布",
+      "status_at_archive_generation_as_of_utc": "2026-10-06T08:30:00Z",
+      "admission_basis": "separate_15_paper_targeted_research_pack_in_same_publication"
+    },
+    {
+      "id": "arxiv:2609.09148",
+      "title": "Proxy Policy Steering",
+      "resource_kind": "paper",
+      "canonical_url": "https://arxiv.org/abs/2609.09148",
+      "identity_status": "reused_local_catalog_metadata",
+      "provenance": [
+        "recovered_prior_assistant_reference"
+      ],
+      "recovered_literature_urls": [
+        "https://arxiv.org/html/2609.09148v3"
+      ],
+      "reading_depth": "selected_method_and_evaluation_sections_checked_not_full_read",
+      "user_reading_status": "unknown",
+      "deduplication": {
+        "main_catalog_match": false,
+        "prepared_targeted_pack_match": true
+      },
+      "status": "已在库",
+      "new_formal_admission": false,
+      "original_literature_url_recovery_status": "recovered_from_summary_not_raw_transcript",
+      "stable_conversation_permalink_recovered": false,
+      "arxiv_id": "2609.09148",
+      "dedup_match_basis": "stable_arxiv_identifier",
+      "status_at_archive_generation": "定向整理完成，公开待发布",
+      "status_at_archive_generation_as_of_utc": "2026-10-06T08:30:00Z",
+      "admission_basis": "separate_15_paper_targeted_research_pack_in_same_publication"
+    },
+    {
+      "id": "arxiv:2606.14981",
+      "title": "Inference-time Policy Steering via Vision and Touch",
+      "resource_kind": "paper",
+      "canonical_url": "https://arxiv.org/abs/2606.14981",
+      "identity_status": "reused_local_catalog_metadata",
+      "provenance": [
+        "recovered_prior_assistant_reference"
+      ],
+      "recovered_literature_urls": [
+        "https://arxiv.org/html/2606.14981v1"
+      ],
+      "reading_depth": "selected_method_and_evaluation_sections_checked_not_full_read",
+      "user_reading_status": "unknown",
+      "deduplication": {
+        "main_catalog_match": false,
+        "prepared_targeted_pack_match": true
+      },
+      "status": "已在库",
+      "new_formal_admission": false,
+      "original_literature_url_recovery_status": "recovered_from_summary_not_raw_transcript",
+      "stable_conversation_permalink_recovered": false,
+      "arxiv_id": "2606.14981",
+      "dedup_match_basis": "stable_arxiv_identifier",
+      "status_at_archive_generation": "定向整理完成，公开待发布",
+      "status_at_archive_generation_as_of_utc": "2026-10-06T08:30:00Z",
+      "admission_basis": "separate_15_paper_targeted_research_pack_in_same_publication"
+    },
+    {
+      "id": "arxiv:2604.15483",
+      "title": "$π_{0.7}$: a Steerable Generalist Robotic Foundation Model with Emergent Capabilities",
+      "resource_kind": "paper",
+      "canonical_url": "https://arxiv.org/abs/2604.15483",
+      "identity_status": "reused_local_catalog_metadata",
+      "provenance": [
+        "recovered_prior_assistant_reference"
+      ],
+      "recovered_literature_urls": [],
+      "reading_depth": "identity_verified_or_existing_catalog_only",
+      "user_reading_status": "unknown",
+      "deduplication": {
+        "main_catalog_match": true,
+        "prepared_targeted_pack_match": false
+      },
+      "status": "已在库",
+      "new_formal_admission": false,
+      "original_literature_url_recovery_status": "original_url_not_recovered_identity_separately_matched",
+      "stable_conversation_permalink_recovered": false,
+      "arxiv_id": "2604.15483",
+      "dedup_match_basis": "stable_arxiv_identifier"
+    },
+    {
+      "id": "arxiv:2609.32154",
+      "arxiv_id": "2609.32154",
+      "title": "GAUGE: Planner-Conditioned Active Calibration of Opaque Quadruped Velocity Interfaces",
+      "resource_kind": "paper",
+      "canonical_url": "https://arxiv.org/abs/2609.32154",
+      "first_submission_date": "2026-09-26",
+      "verified_current_version": "v1",
+      "version_date": "2026-09-26",
+      "identity_status": "primary_title_identifier_version_date_verified",
+      "primary_sources": [
+        "https://arxiv.org/abs/2609.32154",
+        "https://arxiv.org/html/2609.32154v1"
+      ],
+      "reading_depth": "Methods, experiments, comparison protocol, and limitations examined in primary HTML; not reproduced",
+      "user_reading_status": "unknown",
+      "deduplication": {
+        "main_catalog_match": false,
+        "prepared_targeted_pack_match": false
+      },
+      "status": "待周整理",
+      "new_formal_admission": false,
+      "daily_role": "recommended-daily-lead",
+      "limitations": [
+        "Steady response, fixed gait/controller; rapid transients, history dependence and controller switching need additional state or separate models.",
+        "Broad-uniform command support reverses the accuracy ordering.",
+        "Hardware route cells occur once; response-error gains are descriptive, not replicated selector superiority. Autonomous residual-triggered hardware recovery remains unquantified."
+      ],
+      "not_done": [
+        "independent_reproduction",
+        "complete_proof_audit"
+      ],
+      "provenance": [
+        "independent_current_primary_source_discovery"
+      ],
+      "mechanism": "Keep the locomotion controller fixed; fit a Bayesian command-to-realized-velocity map. Select calibration commands by expected reduction of uncertainty weighted by the downstream planner command distribution. Use bounded inverse compensation; retain a separate execution filter.",
+      "code": {
+        "author_link": "https://github.com/EurekaZang/CalibAgent",
+        "checked_at": "2026-10-06T08:22:30Z",
+        "status": "404 via web and GitHub API; usable public code not verified"
+      }
+    },
+    {
+      "id": "arxiv:2609.32158",
+      "arxiv_id": "2609.32158",
+      "title": "FutureRay: Control-Aligned Future Range for Agile Quadruped Navigation",
+      "resource_kind": "paper",
+      "canonical_url": "https://arxiv.org/abs/2609.32158",
+      "first_submission_date": "2026-09-26",
+      "verified_current_version": "v1",
+      "version_date": "2026-09-26",
+      "identity_status": "primary_title_identifier_version_date_verified",
+      "primary_sources": [
+        "https://arxiv.org/abs/2609.32158",
+        "https://arxiv.org/html/2609.32158v1"
+      ],
+      "reading_depth": "Methods, experiments, comparison protocol, and limitations examined in primary HTML; not reproduced",
+      "user_reading_status": "unknown",
+      "deduplication": {
+        "main_catalog_match": false,
+        "prepared_targeted_pack_match": false
+      },
+      "status": "待周整理",
+      "new_formal_admission": false,
+      "daily_role": "secondary-delay-and-clearance-interface",
+      "limitations": [
+        "One simulator seed and procedural families shared with training; hardware trials qualitative.",
+        "Joint range/risk packet changes together, so does not isolate range prediction alone.",
+        "Same nominal future sensor forecast evaluates every heading; not action-conditioned rollout.",
+        "Reaction/braking assumptions are not certified robust tracking bounds."
+      ],
+      "not_done": [
+        "independent_reproduction",
+        "complete_proof_audit"
+      ],
+      "provenance": [
+        "independent_current_primary_source_discovery"
+      ],
+      "mechanism": "Forecast directional ranges and encounter risk from range history and ego motion. Query footprint corridors and a reaction-then-braking speed bound; penalize heading/command changes before a fixed locomotion policy.",
+      "code": {
+        "status": "No primary code release verified"
+      }
+    },
+    {
+      "id": "arxiv:2609.38928",
+      "arxiv_id": "2609.38928",
+      "title": "Local-Minimum Escaper: Programmatic Subgoal Generation for Robust Navigation in Unknown Environments",
+      "resource_kind": "paper",
+      "canonical_url": "https://arxiv.org/abs/2609.38928",
+      "first_submission_date": "2026-09-30",
+      "verified_current_version": "v1",
+      "version_date": "2026-09-30",
+      "identity_status": "primary_title_identifier_version_date_verified",
+      "primary_sources": [
+        "https://arxiv.org/abs/2609.38928",
+        "https://arxiv.org/html/2609.38928v1"
+      ],
+      "reading_depth": "Methods, experiments, comparison protocol, and limitations examined in primary HTML; not reproduced",
+      "user_reading_status": "unknown",
+      "deduplication": {
+        "main_catalog_match": false,
+        "prepared_targeted_pack_match": false
+      },
+      "status": "待周整理",
+      "new_formal_admission": false,
+      "daily_role": "secondary-subgoal-switching-and-recovery",
+      "limitations": [
+        "Weights/thresholds are fitted using Bayesian optimization; training-free means no additional retraining for tested transfer, not no optimization ever.",
+        "DWA is the authors’ reimplementation; global-planner numbers are borrowed rather than matched reruns.",
+        "Circular/conservatively inflated footprint and 2D scan; no learned actuator delay model or global completeness proof."
+      ],
+      "not_done": [
+        "independent_reproduction",
+        "complete_proof_audit"
+      ],
+      "provenance": [
+        "independent_current_primary_source_discovery"
+      ],
+      "mechanism": "Score locally sampled subgoals using obstacle geometry, visibility, target progress and recent-position avoidance. Retain the previous subgoal unless reached or a new candidate improves the score enough; a local controller executes it.",
+      "code": {
+        "status": "No primary code release verified"
+      }
+    },
+    {
+      "id": "arxiv:2609.21690",
+      "arxiv_id": "2609.21690",
+      "title": "RAYA: Learning Where and When to Intervene for Robot Recovery",
+      "resource_kind": "paper",
+      "canonical_url": "https://arxiv.org/abs/2609.21690",
+      "first_submission_date": "2026-09-18",
+      "verified_current_version": "v1",
+      "version_date": "2026-09-18",
+      "identity_status": "primary_title_identifier_version_date_verified",
+      "primary_sources": [
+        "https://arxiv.org/abs/2609.21690",
+        "https://arxiv.org/html/2609.21690v1",
+        "https://raya-control.github.io/",
+        "https://github.com/RAYA-CONTROL/RAYA"
+      ],
+      "reading_depth": "Methods, experiments, comparison protocol, and limitations examined in primary HTML; not reproduced",
+      "user_reading_status": "unknown",
+      "deduplication": {
+        "main_catalog_match": false,
+        "prepared_targeted_pack_match": false
+      },
+      "status": "待周整理",
+      "new_formal_admission": false,
+      "daily_role": "screened-reserve-not-needed-in-todays-list",
+      "limitations": [
+        "Empirical recoverability prediction; bounded modification guarantee preserves original constraints, not a universal physical safety guarantee.",
+        "Legged locomotion/contact-rich manipulation are future work."
+      ],
+      "not_done": [
+        "independent_reproduction",
+        "complete_proof_audit"
+      ],
+      "provenance": [
+        "independent_current_primary_source_discovery"
+      ],
+      "mechanism": "Insert learned finite-horizon recoverability inside MPC and conditionally reweight tracking versus recovery objectives."
+    },
+    {
+      "id": "arxiv:2609.30946",
+      "arxiv_id": "2609.30946",
+      "title": "OneWorld: Learning Consistent Physics Across Actions in World Models",
+      "resource_kind": "paper",
+      "canonical_url": "https://arxiv.org/abs/2609.30946",
+      "first_submission_date": "2026-09-25",
+      "verified_current_version": "v1",
+      "version_date": "2026-09-25",
+      "identity_status": "primary_title_identifier_version_date_verified",
+      "provenance": [
+        "independent_current_primary_source_discovery"
+      ],
+      "primary_sources": [
+        {
+          "url": "https://arxiv.org/abs/2609.30946",
+          "role": "identity_and_version"
+        },
+        {
+          "url": "https://arxiv.org/html/2609.30946v1",
+          "role": "methods_results_limits",
+          "read_sections": [
+            "3.1–3.5",
+            "4.1–4.4",
+            "Tables 1–2",
+            "Appendix A.1–2",
+            "Appendix B.1–3",
+            "Appendix D.4–7",
+            "Appendix E.1–5"
+          ]
+        }
+      ],
+      "reading_depth": "selected_methods_experiments_and_limitations_not_full_read",
+      "user_reading_status": "unknown",
+      "deduplication": {
+        "main_catalog_match": false,
+        "prepared_targeted_pack_match": false
+      },
+      "status": "待周整理",
+      "new_formal_admission": false,
+      "daily_role": "recommended",
+      "code_status": "no_author_link_verified",
+      "not_done": [
+        "full_proof_audit",
+        "code_audit",
+        "independent_reproduction",
+        "real_robot_test"
+      ],
+      "mechanism": "A mechanism interpreter estimates distributions of latent physical mechanisms from action-outcome branches. Prior-corrected compatibility training and sampling guidance encourage branches to be explainable by a common world.",
+      "comparison": "Same ACWM-DiT backbone and matched budgets; separate simulator-fitting evaluation tests cross-branch consistency.",
+      "limitations": [
+        "Core proposed-method evidence is from controlled simulators with grouped interventions.",
+        "Learned coordinates are not identified physical parameters.",
+        "BAIR/RoboNet evaluate the backbone rather than the proposed consistency mechanism.",
+        "No demonstrated closed-loop real-robot planning gain.",
+        "No verified author code release."
+      ]
+    },
+    {
+      "id": "arxiv:2609.36333",
+      "arxiv_id": "2609.36333",
+      "title": "ATLAS: Aligned Transport of Latent Structure for Reliable World Model Planning",
+      "resource_kind": "paper",
+      "canonical_url": "https://arxiv.org/abs/2609.36333",
+      "first_submission_date": "2026-09-28",
+      "verified_current_version": "v2",
+      "version_date": "2026-09-30",
+      "identity_status": "primary_title_identifier_version_date_verified",
+      "provenance": [
+        "independent_current_primary_source_discovery"
+      ],
+      "primary_sources": [
+        {
+          "url": "https://arxiv.org/abs/2609.36333",
+          "role": "identity_and_version"
+        },
+        {
+          "url": "https://arxiv.org/html/2609.36333v2",
+          "role": "methods_results_limits",
+          "read_sections": [
+            "3.1–3.3",
+            "4.1–4.2",
+            "5",
+            "Appendix A",
+            "Table 1",
+            "Table 2",
+            "Table 3",
+            "Section 3.3 theorem statement and stated conditions"
+          ]
+        },
+        {
+          "url": "https://github.com/Annie969/atlas-world-model",
+          "role": "author_linked_code_readme",
+          "read_sections": [
+            "README objective",
+            "README setup and shared settings",
+            "repository file listing"
+          ],
+          "code_executed": false
+        }
+      ],
+      "reading_depth": "selected_methods_experiments_and_limitations_not_full_read",
+      "user_reading_status": "unknown",
+      "deduplication": {
+        "main_catalog_match": false,
+        "prepared_targeted_pack_match": false
+      },
+      "status": "待周整理",
+      "new_formal_admission": false,
+      "daily_role": "reserve_not_recommended_for_today",
+      "code_status": "public_author_linked_repository_verified_readme_only",
+      "not_done": [
+        "full_proof_audit",
+        "implementation_audit",
+        "independent_reproduction"
+      ],
+      "limitations": [
+        "The reported OOD split is the higher-novelty half under a median split, not a separately held-out distribution.",
+        "Training seed is fixed; evaluation seeds vary.",
+        "The theorem is conditional finite-candidate selection relative to anchor geometry, not unconditional success.",
+        "Repository README inspected but implementation unexecuted."
+      ]
+    }
+  ],
+  "unverified_leads": [
+    {
+      "id": "github:mit-acl/faster",
+      "title": "FASTER",
+      "resource_kind": "project",
+      "canonical_url": "https://github.com/mit-acl/faster",
+      "identity_status": "exact_project_link_recovered_paper_identity_not_verified",
+      "provenance": [
+        "recovered_prior_assistant_reference"
+      ],
+      "recovered_literature_urls": [
+        "https://github.com/mit-acl/faster"
+      ],
+      "reading_depth": "identity_or_project_lead_only_methods_not_checked",
+      "user_reading_status": "unknown",
+      "deduplication": {
+        "main_catalog_match": false,
+        "prepared_targeted_pack_match": false
+      },
+      "status": "待核实线索",
+      "new_formal_admission": false,
+      "original_literature_url_recovery_status": "recovered_from_summary_not_raw_transcript",
+      "stable_conversation_permalink_recovered": false,
+      "dedup_match_basis": "no_match",
+      "title_status": "recovered_label_not_primary_verified"
+    },
+    {
+      "id": "github:mit-acl/dynus",
+      "title": "DYNUS",
+      "resource_kind": "project",
+      "canonical_url": "https://github.com/mit-acl/dynus",
+      "identity_status": "exact_project_link_recovered_paper_identity_not_verified",
+      "provenance": [
+        "recovered_prior_assistant_reference"
+      ],
+      "recovered_literature_urls": [
+        "https://github.com/mit-acl/dynus"
+      ],
+      "reading_depth": "identity_or_project_lead_only_methods_not_checked",
+      "user_reading_status": "unknown",
+      "deduplication": {
+        "main_catalog_match": false,
+        "prepared_targeted_pack_match": false
+      },
+      "status": "待核实线索",
+      "new_formal_admission": false,
+      "original_literature_url_recovery_status": "recovered_from_summary_not_raw_transcript",
+      "stable_conversation_permalink_recovered": false,
+      "dedup_match_basis": "no_match",
+      "title_status": "recovered_label_not_primary_verified"
+    },
+    {
+      "id": "arxiv:2309.16650",
+      "title": "ConceptGraphs",
+      "resource_kind": "paper",
+      "canonical_url": "https://arxiv.org/abs/2309.16650",
+      "identity_status": "prior_assistant_label_pending_primary_verification",
+      "provenance": [
+        "recovered_prior_assistant_reference"
+      ],
+      "recovered_literature_urls": [
+        "https://arxiv.org/abs/2309.16650"
+      ],
+      "reading_depth": "identity_or_project_lead_only_methods_not_checked",
+      "user_reading_status": "unknown",
+      "deduplication": {
+        "main_catalog_match": false,
+        "prepared_targeted_pack_match": false
+      },
+      "status": "待核实线索",
+      "new_formal_admission": false,
+      "original_literature_url_recovery_status": "recovered_from_summary_not_raw_transcript",
+      "stable_conversation_permalink_recovered": false,
+      "arxiv_id": "2309.16650",
+      "dedup_match_basis": "no_match",
+      "title_status": "recovered_label_not_primary_verified"
+    },
+    {
+      "id": "arxiv:2303.03378",
+      "title": "PaLM-E",
+      "resource_kind": "paper",
+      "canonical_url": "https://arxiv.org/abs/2303.03378",
+      "identity_status": "prior_assistant_label_pending_primary_verification",
+      "provenance": [
+        "recovered_prior_assistant_reference"
+      ],
+      "recovered_literature_urls": [
+        "https://arxiv.org/abs/2303.03378"
+      ],
+      "reading_depth": "identity_or_project_lead_only_methods_not_checked",
+      "user_reading_status": "unknown",
+      "deduplication": {
+        "main_catalog_match": false,
+        "prepared_targeted_pack_match": false
+      },
+      "status": "待核实线索",
+      "new_formal_admission": false,
+      "original_literature_url_recovery_status": "recovered_from_summary_not_raw_transcript",
+      "stable_conversation_permalink_recovered": false,
+      "arxiv_id": "2303.03378",
+      "dedup_match_basis": "no_match",
+      "title_status": "recovered_label_not_primary_verified"
+    },
+    {
+      "id": "arxiv:2409.01652",
+      "title": "ReKep",
+      "resource_kind": "paper",
+      "canonical_url": "https://arxiv.org/abs/2409.01652",
+      "identity_status": "prior_assistant_label_pending_primary_verification",
+      "provenance": [
+        "recovered_prior_assistant_reference"
+      ],
+      "recovered_literature_urls": [
+        "https://arxiv.org/abs/2409.01652"
+      ],
+      "reading_depth": "identity_or_project_lead_only_methods_not_checked",
+      "user_reading_status": "unknown",
+      "deduplication": {
+        "main_catalog_match": false,
+        "prepared_targeted_pack_match": false
+      },
+      "status": "待核实线索",
+      "new_formal_admission": false,
+      "original_literature_url_recovery_status": "recovered_from_summary_not_raw_transcript",
+      "stable_conversation_permalink_recovered": false,
+      "arxiv_id": "2409.01652",
+      "dedup_match_basis": "no_match",
+      "title_status": "recovered_label_not_primary_verified"
+    },
+    {
+      "id": "arxiv:2503.15558",
+      "title": "Cosmos-Reason1",
+      "resource_kind": "paper",
+      "canonical_url": "https://arxiv.org/abs/2503.15558",
+      "identity_status": "prior_assistant_label_pending_primary_verification",
+      "provenance": [
+        "recovered_prior_assistant_reference"
+      ],
+      "recovered_literature_urls": [
+        "https://arxiv.org/html/2503.15558v1"
+      ],
+      "reading_depth": "identity_or_project_lead_only_methods_not_checked",
+      "user_reading_status": "unknown",
+      "deduplication": {
+        "main_catalog_match": false,
+        "prepared_targeted_pack_match": false
+      },
+      "status": "待核实线索",
+      "new_formal_admission": false,
+      "original_literature_url_recovery_status": "recovered_from_summary_not_raw_transcript",
+      "stable_conversation_permalink_recovered": false,
+      "arxiv_id": "2503.15558",
+      "dedup_match_basis": "no_match",
+      "title_status": "recovered_label_not_primary_verified"
+    },
+    {
+      "id": "arxiv:2310.12931",
+      "title": "Eureka",
+      "resource_kind": "paper",
+      "canonical_url": "https://arxiv.org/abs/2310.12931",
+      "identity_status": "prior_assistant_label_pending_primary_verification",
+      "provenance": [
+        "recovered_prior_assistant_reference"
+      ],
+      "recovered_literature_urls": [
+        "https://arxiv.org/abs/2310.12931"
+      ],
+      "reading_depth": "identity_or_project_lead_only_methods_not_checked",
+      "user_reading_status": "unknown",
+      "deduplication": {
+        "main_catalog_match": false,
+        "prepared_targeted_pack_match": false
+      },
+      "status": "待核实线索",
+      "new_formal_admission": false,
+      "original_literature_url_recovery_status": "recovered_from_summary_not_raw_transcript",
+      "stable_conversation_permalink_recovered": false,
+      "arxiv_id": "2310.12931",
+      "dedup_match_basis": "no_match",
+      "title_status": "recovered_label_not_primary_verified"
+    },
+    {
+      "id": "arxiv:2607.26991",
+      "title": "RL²-VLA: Adaptive RL Latent Compositional Steering with Test-Time Scaling for Vision-Language-Action Models",
+      "resource_kind": "paper",
+      "canonical_url": "https://arxiv.org/abs/2607.26991",
+      "identity_status": "prior_assistant_label_pending_primary_verification",
+      "provenance": [
+        "recovered_prior_assistant_reference"
+      ],
+      "recovered_literature_urls": [
+        "https://arxiv.org/html/2607.26991v2"
+      ],
+      "reading_depth": "identity_or_project_lead_only_methods_not_checked",
+      "user_reading_status": "unknown",
+      "deduplication": {
+        "main_catalog_match": false,
+        "prepared_targeted_pack_match": false
+      },
+      "status": "待核实线索",
+      "new_formal_admission": false,
+      "original_literature_url_recovery_status": "recovered_from_summary_not_raw_transcript",
+      "stable_conversation_permalink_recovered": false,
+      "arxiv_id": "2607.26991",
+      "dedup_match_basis": "no_match",
+      "title_status": "recovered_label_not_primary_verified"
+    },
+    {
+      "id": "arxiv:2609.21220",
+      "title": "Safe Real-Time Policy Steering via Noise-Space Trajectory Optimization for One-Step Generative Policies",
+      "resource_kind": "paper",
+      "canonical_url": "https://arxiv.org/abs/2609.21220",
+      "identity_status": "prior_assistant_label_pending_primary_verification",
+      "provenance": [
+        "recovered_prior_assistant_reference"
+      ],
+      "recovered_literature_urls": [
+        "https://arxiv.org/html/2609.21220v1"
+      ],
+      "reading_depth": "identity_or_project_lead_only_methods_not_checked",
+      "user_reading_status": "unknown",
+      "deduplication": {
+        "main_catalog_match": false,
+        "prepared_targeted_pack_match": false
+      },
+      "status": "待核实线索",
+      "new_formal_admission": false,
+      "original_literature_url_recovery_status": "recovered_from_summary_not_raw_transcript",
+      "stable_conversation_permalink_recovered": false,
+      "arxiv_id": "2609.21220",
+      "dedup_match_basis": "no_match",
+      "title_status": "recovered_label_not_primary_verified"
+    },
+    {
+      "id": "arxiv:2606.13672",
+      "title": "WEAVER, Better, Faster, Longer: An Effective World Model for Robotic Manipulation",
+      "resource_kind": "paper",
+      "canonical_url": "https://arxiv.org/abs/2606.13672",
+      "identity_status": "prior_assistant_label_pending_primary_verification",
+      "provenance": [
+        "recovered_prior_assistant_reference"
+      ],
+      "recovered_literature_urls": [
+        "https://arxiv.org/html/2606.13672v2"
+      ],
+      "reading_depth": "identity_or_project_lead_only_methods_not_checked",
+      "user_reading_status": "unknown",
+      "deduplication": {
+        "main_catalog_match": false,
+        "prepared_targeted_pack_match": false
+      },
+      "status": "待核实线索",
+      "new_formal_admission": false,
+      "original_literature_url_recovery_status": "recovered_from_summary_not_raw_transcript",
+      "stable_conversation_permalink_recovered": false,
+      "arxiv_id": "2606.13672",
+      "dedup_match_basis": "no_match",
+      "title_status": "recovered_label_not_primary_verified"
+    },
+    {
+      "id": "arxiv:2606.31132",
+      "title": "ELASTIC: Efficiently Learning to Adaptively Scale Test-Time Compute for Generative Control Policies",
+      "resource_kind": "paper",
+      "canonical_url": "https://arxiv.org/abs/2606.31132",
+      "identity_status": "prior_assistant_label_pending_primary_verification",
+      "provenance": [
+        "recovered_prior_assistant_reference"
+      ],
+      "recovered_literature_urls": [
+        "https://arxiv.org/abs/2606.31132"
+      ],
+      "reading_depth": "identity_or_project_lead_only_methods_not_checked",
+      "user_reading_status": "unknown",
+      "deduplication": {
+        "main_catalog_match": false,
+        "prepared_targeted_pack_match": false
+      },
+      "status": "待核实线索",
+      "new_formal_admission": false,
+      "original_literature_url_recovery_status": "recovered_from_summary_not_raw_transcript",
+      "stable_conversation_permalink_recovered": false,
+      "arxiv_id": "2606.31132",
+      "dedup_match_basis": "no_match",
+      "title_status": "recovered_label_not_primary_verified"
+    },
+    {
+      "id": "arxiv:2609.35690",
+      "title": "APPL: Agent Priors-guided Policy Learning",
+      "resource_kind": "paper",
+      "canonical_url": "https://arxiv.org/abs/2609.35690",
+      "identity_status": "prior_assistant_label_pending_primary_verification",
+      "provenance": [
+        "recovered_prior_assistant_reference"
+      ],
+      "recovered_literature_urls": [
+        "https://arxiv.org/abs/2609.35690"
+      ],
+      "reading_depth": "identity_or_project_lead_only_methods_not_checked",
+      "user_reading_status": "unknown",
+      "deduplication": {
+        "main_catalog_match": false,
+        "prepared_targeted_pack_match": false
+      },
+      "status": "待核实线索",
+      "new_formal_admission": false,
+      "original_literature_url_recovery_status": "recovered_from_summary_not_raw_transcript",
+      "stable_conversation_permalink_recovered": false,
+      "arxiv_id": "2609.35690",
+      "dedup_match_basis": "no_match",
+      "title_status": "recovered_label_not_primary_verified"
+    },
+    {
+      "id": "arxiv:2606.12299",
+      "title": "Learning What to Say to Your VLA: Mostly Harmless Vision Language Action Model Steering",
+      "resource_kind": "paper",
+      "canonical_url": "https://arxiv.org/abs/2606.12299",
+      "identity_status": "prior_assistant_label_pending_primary_verification",
+      "provenance": [
+        "recovered_prior_assistant_reference"
+      ],
+      "recovered_literature_urls": [
+        "https://arxiv.org/abs/2606.12299"
+      ],
+      "reading_depth": "identity_or_project_lead_only_methods_not_checked",
+      "user_reading_status": "unknown",
+      "deduplication": {
+        "main_catalog_match": false,
+        "prepared_targeted_pack_match": false
+      },
+      "status": "待核实线索",
+      "new_formal_admission": false,
+      "original_literature_url_recovery_status": "recovered_from_summary_not_raw_transcript",
+      "stable_conversation_permalink_recovered": false,
+      "arxiv_id": "2606.12299",
+      "dedup_match_basis": "no_match",
+      "title_status": "recovered_label_not_primary_verified"
+    },
+    {
+      "id": "arxiv:2502.01828",
+      "title": "FOREWARN",
+      "resource_kind": "paper",
+      "canonical_url": "https://arxiv.org/abs/2502.01828",
+      "identity_status": "prior_assistant_label_pending_primary_verification",
+      "provenance": [
+        "recovered_prior_assistant_reference"
+      ],
+      "recovered_literature_urls": [],
+      "reading_depth": "identity_or_project_lead_only_methods_not_checked",
+      "user_reading_status": "unknown",
+      "deduplication": {
+        "main_catalog_match": false,
+        "prepared_targeted_pack_match": false
+      },
+      "status": "待核实线索",
+      "new_formal_admission": false,
+      "original_literature_url_recovery_status": "original_url_not_recovered_identity_separately_matched",
+      "stable_conversation_permalink_recovered": false,
+      "arxiv_id": "2502.01828",
+      "dedup_match_basis": "no_match",
+      "title_status": "recovered_label_not_primary_verified"
+    },
+    {
+      "id": "arxiv:2602.12281",
+      "title": "CoVer",
+      "resource_kind": "paper",
+      "canonical_url": "https://arxiv.org/abs/2602.12281",
+      "identity_status": "prior_assistant_label_pending_primary_verification",
+      "provenance": [
+        "recovered_prior_assistant_reference"
+      ],
+      "recovered_literature_urls": [],
+      "reading_depth": "identity_or_project_lead_only_methods_not_checked",
+      "user_reading_status": "unknown",
+      "deduplication": {
+        "main_catalog_match": false,
+        "prepared_targeted_pack_match": false
+      },
+      "status": "待核实线索",
+      "new_formal_admission": false,
+      "original_literature_url_recovery_status": "original_url_not_recovered_identity_separately_matched",
+      "stable_conversation_permalink_recovered": false,
+      "arxiv_id": "2602.12281",
+      "dedup_match_basis": "no_match",
+      "title_status": "recovered_label_not_primary_verified"
+    },
+    {
+      "id": "arxiv:2406.01967",
+      "title": "DrEureka",
+      "resource_kind": "paper",
+      "canonical_url": "https://arxiv.org/abs/2406.01967",
+      "identity_status": "prior_assistant_label_pending_primary_verification",
+      "provenance": [
+        "recovered_prior_assistant_reference"
+      ],
+      "recovered_literature_urls": [],
+      "reading_depth": "identity_or_project_lead_only_methods_not_checked",
+      "user_reading_status": "unknown",
+      "deduplication": {
+        "main_catalog_match": false,
+        "prepared_targeted_pack_match": false
+      },
+      "status": "待核实线索",
+      "new_formal_admission": false,
+      "original_literature_url_recovery_status": "original_url_not_recovered_identity_separately_matched",
+      "stable_conversation_permalink_recovered": false,
+      "arxiv_id": "2406.01967",
+      "dedup_match_basis": "no_match",
+      "title_status": "recovered_label_not_primary_verified"
+    }
+  ],
+  "screened_other_leads": [
+    {
+      "id": "arxiv:2609.04348",
+      "title": "Object Concepts Emerge from Motion",
+      "source_url": "https://arxiv.org/html/2609.04348v1",
+      "reading_depth": "abstract_and_selected_sections_III-C_III-D",
+      "status": "初筛线索，未纳入今日推荐",
+      "reason": "Useful visual-pretraining lead; downstream comparisons not audited in this bounded pass",
+      "provenance": [
+        "independent_current_search"
+      ],
+      "new_formal_admission": false
+    },
+    {
+      "id": "arxiv:2609.29171",
+      "title": "Representation World Model: Learning States, Transition and Executable Plans in Representation",
+      "source_url": "https://arxiv.org/abs/2609.29171",
+      "reading_depth": "identity_and_abstract_screen",
+      "status": "初筛线索，未纳入今日推荐",
+      "reason": "Not needed to fill daily quota; method/result review remains",
+      "provenance": [
+        "independent_current_search"
+      ],
+      "new_formal_admission": false
+    },
+    {
+      "id": "arxiv:2609.28159",
+      "title": "Depth-Guided Contrastive Learning for 2D Representations with 3D Spatial Awareness",
+      "source_url": "https://arxiv.org/abs/2609.28159",
+      "reading_depth": "primary_search_abstract_only",
+      "status": "初筛线索，未纳入今日推荐",
+      "reason": "Search lead only; not promoted without selected-method review",
+      "provenance": [
+        "independent_current_search"
+      ],
+      "new_formal_admission": false
+    }
+  ],
+  "source_gap_file": "2026-10-06-source-gaps.json",
+  "preparation_scope": {
+    "formal_admissions": 0,
+    "paper_directories_changed": false,
+    "catalog_or_index_changed": false,
+    "github_writes": false,
+    "as_of_utc": "2026-10-06T08:30:00Z"
+  },
+  "publication_scope": {
+    "branch": "main",
+    "daily_formal_admissions": 0,
+    "separate_targeted_pack_admissions": 15,
+    "overlap_records_already_included_by_targeted_pack": 7,
+    "status_basis": "repository_state_in_this_atomic_publication"
+  }
+}

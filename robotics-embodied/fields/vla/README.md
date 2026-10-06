@@ -187,6 +187,8 @@ benchmark 的替换就是目标的迁移：2022–2023 年在 Google 自家机�
 
 按问题排列的练习见[路线图](ROADMAP.md)，各篇在基线的哪一格见 [Baseline 页](BASELINES.md)。
 
+通用模型怎样调用已有 VLA、在生成过程中引导动作，以及把哪些适配放到小模块，见[具身 Agent 的动作接口讲义](../embodied-agents/action-model-intervention.md)。
+
 ## 批注
 
 **易误读**

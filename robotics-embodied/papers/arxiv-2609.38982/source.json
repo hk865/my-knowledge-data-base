@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2609.38982",
+  "title": "SimEX: Simulation-Integrated Robotics AutoResearch",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2609.38982",
+  "official_url": "https://arxiv.org/abs/2609.38982",
+  "official_fulltext_url": "https://arxiv.org/html/2609.38982v1",
+  "read_version": "v1",
+  "version_status": "latest_arxiv_version_checked_on_2026_10_06",
+  "first_submitted": "2026-09-30",
+  "version_date": "2026-09-30",
+  "year": 2026,
+  "authors": [
+    "Jiaheng Hu",
+    "Roberto Martin-Martin",
+    "Peter Stone",
+    "Rocky Duan",
+    "Zhenyu Jiang",
+    "Guanya Shi"
+  ],
+  "affiliations": [
+    "Amazon FAR (Frontier AI & Robotics)",
+    "The University of Texas at Austin",
+    "Carnegie Mellon University"
+  ],
+  "topic_paths": [
+    "robotics/embodied-agents",
+    "robotics/navigation-planning"
+  ],
+  "modality_tags": [
+    "text",
+    "image",
+    "action",
+    "state",
+    "multimodal",
+    "code"
+  ],
+  "task_tags": [
+    "decision",
+    "evaluation"
+  ],
+  "content_kind": "bibliographic_card",
+  "reading_depth": "selected_method_and_evaluation_sections_checked_not_full_read",
+  "reading_path": null,
+  "reading_boundary": "核对v1的2.1-2.4; 3.1-3.4; 5; Appendix A.2 interface context及所列官方来源；选定章节核验，未完整审计全部附录，未复现。",
+  "teaching_status": "not_created",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "仅链接官方来源，不再分发论文、权重或数据。"
+  },
+  "fulltext_local_status": "official_link_only",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-06",
+  "legacy_paths": [],
+  "evidence_paths": [
+    "robotics-embodied/papers/arxiv-2609.38982/evidence.json"
+  ],
+  "source_origin": "new-baseline-selection",
+  "discovery_provenance": {
+    "role": "assistant",
+    "association": "new_research_discovery",
+    "date": "2026-10-06",
+    "user_reading_or_endorsement": "not_asserted"
+  },
+  "verification_status": "official_identity_and_selected_fulltext_sections_checked",
+  "verification_sources": [
+    "https://arxiv.org/abs/2609.38982",
+    "https://arxiv.org/html/2609.38982v1"
+  ],
+  "research_role": "2026_recent_main",
+  "intervention": "simulation_experiments_and_code_toolbox_updates",
+  "training_boundary": "方法明确修改代码工具箱、文字技能和模拟器参数，未报告LLM权重训练；冻结高层分类据此推断。没有神经世界模型训练loss。",
+  "project_url": "https://robo-simex.github.io/",
+  "code_url": null
+}

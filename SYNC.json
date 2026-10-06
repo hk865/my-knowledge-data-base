@@ -2,7 +2,7 @@
   "schema_version": 3,
   "repository": "hk865/my-knowledge-data-base",
   "branch": "main",
-  "export_date": "2026-10-05",
+  "export_date": "2026-10-06",
   "scope": "Public academic content, directory navigation, official paper links and original illustrations",
   "content_index": "index.json",
   "paper_catalog": "papers.json",
@@ -14,11 +14,24 @@
   },
   "privacy": "Private source addresses, identifiers and internal synchronization baselines are not included in the public export.",
   "latest_update": {
-    "date": "2026-10-05",
-    "mode": "verified_academic_additions_and_curated_navigation",
-    "daily": "daily/2026-10-05.md",
-    "sources": "daily/2026-10-05-sources.json",
+    "date": "2026-10-06",
+    "mode": "requested_embodied_agent_research_and_daily_candidate_archive",
+    "entry": "robotics-embodied/fields/embodied-agents/README.md",
+    "mechanism_guide": "robotics-embodied/fields/embodied-agents/action-model-intervention.md",
+    "publication_scope": "user_approved_main_update",
+    "last_daily": {
+      "date": "2026-10-06",
+      "daily": "daily/2026-10-06.md",
+      "sources": "daily/2026-10-06-sources.json",
+      "source_gaps": "daily/2026-10-06-source-gaps.json"
+    },
+    "daily_automation_admission": "daily_candidates_only; formal_admissions_limited_to_separate_15_paper_research_pack",
     "legacy_page_exports": "paused_missing_previous_pure_source_baseline",
-    "preserved_existing_content": true
+    "preserved_existing_content": true,
+    "previous_daily": {
+      "date": "2026-10-05",
+      "daily": "daily/2026-10-05.md",
+      "sources": "daily/2026-10-05-sources.json"
+    }
   }
 }

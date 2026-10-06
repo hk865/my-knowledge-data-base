@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1480" height="1070" viewBox="0 0 1480 1070" role="img" aria-labelledby="title desc">
+<title id="title">Harness VLA：固定原语、可重试接触与外部记忆</title>
+<desc id="desc">参考种子上探索并建立任务及跨任务记忆，正式评估时由通用多模态规划器读取实时感知和记忆，每轮输出一条结构化JSON原语。解析控制完成接触前准备和搬运，冻结VLA完成局部接触动作，环境返回观测后验证进展，失败则重新定位和准备再试。模型权重在评估阶段固定。</desc>
+<defs>
+  <style>
+    text{font-family:"Noto Sans CJK SC",sans-serif;fill:#183348}
+    .title{font-size:34px;font-weight:700}.subtitle{font-size:19px;fill:#566c7e}
+    .label{font-size:24px;font-weight:700}.body{font-size:21px}.small{font-size:18px}
+    .tiny{font-size:17px}.line{fill:none;stroke:#3b6686;stroke-width:3;stroke-linejoin:round;marker-end:url(#arrow)}
+    .memoryline{fill:none;stroke:#8463a8;stroke-width:3;stroke-dasharray:8 6;marker-end:url(#purplearrow)}
+  </style>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#3b6686"/></marker>
+  <marker id="purplearrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#8463a8"/></marker>
+</defs>
+<rect width="1480" height="1070" fill="#f7fafc"/>
+<text x="55" y="58" class="title">Harness VLA：把接触技能放进可验证的工具闭环</text>
+<text x="55" y="91" class="subtitle">原创机制示意 · 高层决定何时、何处调用；连续动作块在 VLA 工具内部生成</text>
+
+<rect x="45" y="123" width="1390" height="202" rx="18" fill="#f0ebf8" stroke="#c4b2da" stroke-width="2"/>
+<text x="65" y="157" class="label" fill="#69468e">参考探索：seed 0，可重置</text>
+<rect x="70" y="181" width="380" height="117" rx="12" fill="#ffffff" stroke="#c4b2da"/>
+<text x="91" y="214" class="body">尝试原语组合与准备姿态</text>
+<text x="91" y="245" class="body">观察失败 → 修正 → 完成任务</text>
+<text x="91" y="278" class="small">这一参考种子的成功不计入正式成绩</text>
+<path d="M454 238 L528 238" class="memoryline"/>
+<rect x="540" y="181" width="410" height="117" rx="12" fill="#ffffff" stroke="#c4b2da"/>
+<text x="561" y="214" class="label">任务记忆</text>
+<text x="561" y="246" class="body">JSONL：原语顺序与调用参数</text>
+<text x="561" y="277" class="small">JSON：策略、结果与失败说明</text>
+<rect x="980" y="181" width="425" height="117" rx="12" fill="#ffffff" stroke="#c4b2da"/>
+<text x="1001" y="214" class="label">跨任务记忆</text>
+<text x="1001" y="246" class="body">成功条件与可复用失败规则</text>
+<text x="1001" y="277" class="small">例如：夹爪闭合后仍需检查是否空抓</text>
+<path d="M950 239 L973 239" class="memoryline"/>
+
+<text x="60" y="372" class="label">正式评估：新初始种子，禁止重置</text>
+<text x="685" y="423" class="small" fill="#69468e">检索操作结构；位置由当前感知重新绑定</text>
+<path d="M746 301 L746 394 L283 394 L283 432" class="memoryline"/>
+<path d="M1193 301 L1193 393 L746 393" fill="none" stroke="#8463a8" stroke-width="3" stroke-dasharray="8 6"/>
+
+<rect x="60" y="445" width="375" height="307" rx="16" fill="#e9f2fa" stroke="#6b99ba" stroke-width="2"/>
+<text x="85" y="486" class="label">1 通用多模态规划器</text>
+<text x="85" y="525" class="body">任务：把黑碗放到木托盘</text>
+<text x="85" y="559" class="body">输入：RGB-D、本体状态、记忆</text>
+<line x1="85" y1="581" x2="409" y2="581" stroke="#b3cadb"/>
+<text x="85" y="616" class="body">认目标、查世界坐标、选下一步</text>
+<text x="85" y="652" class="label">2 输出一个 JSON 调用</text>
+<text x="85" y="688" class="small">原语名 + 参数 + 预算 / 返回条件</text>
+<text x="85" y="723" class="small">每次执行后重新读取证据</text>
+
+<rect x="552" y="436" width="407" height="167" rx="16" fill="#e8f3f9" stroke="#6b99ba" stroke-width="2"/>
+<text x="577" y="476" class="label">3a 解析原语：准备与搬运</text>
+<text x="577" y="512" class="body">move_to / 调腕 / 移动底盘等</text>
+<text x="577" y="547" class="body">空间目标 → 已有控制器</text>
+<text x="577" y="580" class="small">调整局部起始条件，让接触更可行</text>
+
+<rect x="552" y="650" width="407" height="172" rx="16" fill="#fff0df" stroke="#d99149" stroke-width="2"/>
+<text x="577" y="690" class="label">3b vla_act：局部接触尝试</text>
+<text x="577" y="727" class="body">文字 + 实时观测 → 冻结 VLA</text>
+<text x="577" y="763" class="body">输出连续动作块，执行到返回条件</text>
+<text x="577" y="797" class="small">抓取、受约束放置、抽屉操作等</text>
+
+<path d="M436 599 L492 599 L492 518 L540 518" class="line"/>
+<path d="M492 599 L492 736 L540 736" class="line"/>
+<text x="455" y="856" class="small">按任务阶段选择其中一个原语；准备与接触可交替多轮</text>
+
+<rect x="1080" y="520" width="337" height="211" rx="16" fill="#edf5ee" stroke="#89ab8b" stroke-width="2"/>
+<text x="1105" y="562" class="label">4 环境执行与返回</text>
+<text x="1105" y="600" class="body">原语结束 → 新观测</text>
+<text x="1105" y="636" class="body">状态、日志、耗用步数</text>
+<text x="1105" y="673" class="body">整项任务成功判据</text>
+<text x="1105" y="705" class="small">局部返回条件 ≠ 任务已完成</text>
+<path d="M960 518 L1018 518 L1018 586 L1069 586" class="line"/>
+<path d="M960 736 L1018 736 L1018 666 L1069 666" class="line"/>
+
+<rect x="200" y="902" width="1128" height="83" rx="13" fill="#ffffff" stroke="#9ab1c1" stroke-width="2"/>
+<text x="226" y="938" class="label">5 检查证据 → 继续 / 重新准备再试 / 成功结束</text>
+<text x="226" y="967" class="small">空抓示例：夹爪闭合而物体未随动 → 重新定位 → 调整准备姿态 → 再次 vla_act</text>
+<path d="M1249 733 L1249 890" class="line"/>
+<path d="M200 944 L115 944 L115 764" class="line"/>
+<text x="63" y="1031" class="small">评估时：高层未报告任务权重微调；VLA 后端已学过动作且冻结；原语词表固定；可复用经验保存在外部记忆</text>
+</svg>

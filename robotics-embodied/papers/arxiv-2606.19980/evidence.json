@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2606.19980",
+  "checked_on": "2026-10-06",
+  "version": "v2",
+  "primary_sources": [
+    "https://arxiv.org/abs/2606.19980",
+    "https://arxiv.org/html/2606.19980v2",
+    "https://research.nvidia.com/labs/gear/enpire/",
+    "https://github.com/NVlabs/ENPIRE"
+  ],
+  "checked_sections": "2; 3.1-3.6; 4; Appendix B.3-B.6; official project's pass@8 explanation; official code README environment boundary",
+  "claim_map": [
+    {
+      "claim": "先以人反馈建立reset/reward/safety环境边界，再固定环境API供Agent修改动作策略与训练代码。",
+      "location": "2; 3.1–3.6",
+      "source_url": "https://arxiv.org/html/2606.19980v2"
+    },
+    {
+      "claim": "动作侧包含BC、在线/离线RL及配方调整，方法没有单一统一训练损失。",
+      "location": "3; Appendix B.3–B.6",
+      "source_url": "https://arxiv.org/html/2606.19980v2"
+    },
+    {
+      "claim": "官方项目澄清99%为pass@8，即每子任务最多八次依赖失败历史的重试。",
+      "location": "official project results / pass@8 explanation",
+      "source_url": "https://research.nvidia.com/labs/gear/enpire/"
+    },
+    {
+      "claim": "1/4/8的扩展规模是同类YAM机器人站数量，不是机器人本体种类。",
+      "location": "§3.3",
+      "source_url": "https://arxiv.org/html/2606.19980v2"
+    },
+    {
+      "claim": "RoboCasa365中的Fig.6比较GR00T和零样本工具使用CaP-X；附录C比较视觉输入与Agent运行框架。",
+      "location": "§3.5, Fig.6; Appendix C",
+      "source_url": "https://arxiv.org/html/2606.19980v2"
+    }
+  ],
+  "training_boundary": "未报告coding LLM微调；更新对象包含低层actor/critic、BC/RL配方与数据混合，不能缩写成只微调VLA动作头。",
+  "openness_boundary": "官方代码可访问，未运行。",
+  "not_checked": [
+    "环境与奖励设置需要人反馈及成功/失败视频，非全流程零人或零数据。",
+    "pass@8允许最多八次基于失败历史的尝试，不是一次成功率。",
+    "多台同类平台不能当作多种机器人身体迁移。",
+    "未独立复现，未审计再分发许可。"
+  ],
+  "additional_check": "2026-10-06：按原文实验表补核基线与比较范围，未将Related Work引用当成实验对照。"
+}

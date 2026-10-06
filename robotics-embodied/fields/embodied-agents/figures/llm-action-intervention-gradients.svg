@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="810" viewBox="0 0 1440 810" role="img" aria-labelledby="title desc"><title id="title">两种梯度分别改变动作样本与模型参数</title><desc id="desc">上方推理链中大模型生成奖励程序，梯度只对动作样本求导。下方训练链从验证数据计算损失，优化器更新允许训练的参数。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10Z" fill="#708499"/></marker></defs>
+<rect width="1440" height="810" fill="#fafbfe"/>
+<text x="45" y="58" font-family="Noto Sans CJK SC, sans-serif" font-size="32" font-weight="700" fill="#25344a">两种梯度分别改变动作样本与模型参数</text>
+<text x="45" y="109" font-family="Noto Sans CJK SC, sans-serif" font-size="24" font-weight="400" fill="#53667d">先问优化变量是什么，再看有没有反向传播</text>
+<text x="45" y="164" font-family="Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#25344a">推理时：把这一份动作改好</text>
+<rect x="45" y="192" width="300" height="148" rx="14" fill="#f0eafa" stroke="#cad5e1" stroke-width="1.5"/>
+<text x="67" y="231" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#25344a">冻结 LLM / VLM</text>
+<text x="67" y="270" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#25344a">输出奖励程序 R</text>
+<text x="67" y="302" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#25344a">模型本身在计算图外</text>
+<rect x="435" y="192" width="300" height="148" rx="14" fill="#e8f2ff" stroke="#cad5e1" stroke-width="1.5"/>
+<text x="457" y="231" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#25344a">奖励程序 R(A)</text>
+<text x="457" y="270" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#25344a">输入动作候选 A</text>
+<text x="457" y="302" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#25344a">输出标量评分</text>
+<rect x="825" y="192" width="240" height="148" rx="14" fill="#e5f4ed" stroke="#cad5e1" stroke-width="1.5"/>
+<text x="847" y="231" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#25344a">对 A 求导</text>
+<text x="847" y="270" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#25344a">g = ∂R / ∂A</text>
+<text x="847" y="302" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#25344a">沿评分上升方向</text>
+<rect x="1155" y="192" width="240" height="148" rx="14" fill="#fff1dc" stroke="#cad5e1" stroke-width="1.5"/>
+<text x="1177" y="231" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#25344a">更新候选</text>
+<text x="1177" y="270" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#25344a">得到新动作 A′</text>
+<text x="1177" y="302" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#25344a">θ 保持不变</text>
+<path d="M345 268 H425" fill="none" stroke="#708499" stroke-width="3"  marker-end="url(#arrow)"/>
+<path d="M735 268 H815" fill="none" stroke="#708499" stroke-width="3"  marker-end="url(#arrow)"/>
+<path d="M1065 268 H1145" fill="none" stroke="#708499" stroke-width="3"  marker-end="url(#arrow)"/>
+<text x="435" y="381" font-family="Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#53667d">梯度穿过奖励代码及所需的可微几何映射，终点是 A</text>
+<text x="45" y="471" font-family="Noto Sans CJK SC, sans-serif" font-size="27" font-weight="700" fill="#25344a">训练时：让未来的动作分布变好</text>
+<rect x="45" y="500" width="300" height="150" rx="14" fill="#e8f2ff" stroke="#cad5e1" stroke-width="1.5"/>
+<text x="67" y="539" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#25344a">经过验证的数据</text>
+<text x="67" y="578" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#25344a">观察、状态、子目标</text>
+<text x="67" y="610" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#25344a">参考动作或交互回报</text>
+<rect x="435" y="500" width="300" height="150" rx="14" fill="#e5f4ed" stroke="#cad5e1" stroke-width="1.5"/>
+<text x="457" y="539" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#25344a">动作模型 πθ,φ</text>
+<text x="457" y="578" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#25344a">θ：底座参数</text>
+<text x="457" y="610" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#25344a">φ：动作适配器参数</text>
+<rect x="825" y="500" width="240" height="150" rx="14" fill="#e8f2ff" stroke="#cad5e1" stroke-width="1.5"/>
+<text x="847" y="539" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#25344a">训练损失 L</text>
+<text x="847" y="578" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#25344a">模仿 / 流匹配</text>
+<text x="847" y="610" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#25344a">或具体 RL 目标</text>
+<rect x="1155" y="500" width="240" height="150" rx="14" fill="#fff1dc" stroke="#cad5e1" stroke-width="1.5"/>
+<text x="1177" y="539" font-family="Noto Sans CJK SC, sans-serif" font-size="25" font-weight="700" fill="#25344a">优化器</text>
+<text x="1177" y="578" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#25344a">计算 ∂L / ∂φ</text>
+<text x="1177" y="610" font-family="Noto Sans CJK SC, sans-serif" font-size="21" font-weight="400" fill="#25344a">更新允许的参数</text>
+<path d="M345 575 H425" fill="none" stroke="#708499" stroke-width="3"  marker-end="url(#arrow)"/>
+<path d="M735 575 H815" fill="none" stroke="#708499" stroke-width="3"  marker-end="url(#arrow)"/>
+<path d="M1065 575 H1145" fill="none" stroke="#708499" stroke-width="3"  marker-end="url(#arrow)"/>
+<path d="M1275 650 V703 H585 V660" fill="none" stroke="#708499" stroke-width="3"  marker-end="url(#arrow)"/>
+<text x="700" y="740" font-family="Noto Sans CJK SC, sans-serif" font-size="22" font-weight="400" fill="#53667d">例如只更新 φ，保留 θ；高层 LLM 仍然冻结</text>
+<text x="45" y="785" font-family="Noto Sans CJK SC, sans-serif" font-size="20" font-weight="400" fill="#53667d">原创教学对照 · 具体训练目标与可训练模块由所选动作模型及实验设置决定</text>
+</svg>

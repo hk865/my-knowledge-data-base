@@ -1,6 +1,6 @@
 # 全库论文总目录
 
-共 596 个去重资源（522 篇论文、33 篇官方技术报告、5 个代码仓库、15 篇官方博客、17 份官方技术文档、4 篇作者文章）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
+共 611 个去重资源（537 篇论文、33 篇官方技术报告、5 个代码仓库、15 篇官方博客、17 份官方技术文档、4 篇作者文章）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
 
 身份核验、助手教学进度和用户阅读状态分开。历史来源保留原角色与证据局限，不将助手推荐写成用户提供，也不将教学完成写成用户已读。
 
@@ -6326,6 +6326,156 @@
 - 身份核验：selected_documentation_sections
 - 用户阅读状态：unknown
 - [资料卡](../cross-domain/resources/triton-fused-softmax/README.md)
+
+<a id="p597"></a>
+## p597 · StageCraft: Execution Aware Mitigation of Distractor and Obstruction Failures in VLA Models
+
+- 标识：arxiv:2603.20659
+- 原文 / 官方入口：https://arxiv.org/abs/2603.20659
+- 主题：robotics/embodied-agents, robotics/embodied-policies
+- 身份核验：official_identity_and_selected_fulltext_sections_checked
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2603.20659/README.md)
+
+<a id="p598"></a>
+## p598 · Critic in the Loop: A Tri-System VLA Framework for Robust Long-Horizon Manipulation
+
+- 标识：arxiv:2603.05185
+- 原文 / 官方入口：https://arxiv.org/abs/2603.05185
+- 主题：robotics/embodied-agents, robotics/embodied-policies
+- 身份核验：official_identity_and_selected_fulltext_sections_checked
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2603.05185/README.md)
+
+<a id="p599"></a>
+## p599 · Do What You Say: Steering Vision-Language-Action Models via Runtime Reasoning-Action Alignment Verification
+
+- 标识：arxiv:2510.16281
+- 原文 / 官方入口：https://arxiv.org/abs/2510.16281
+- 主题：robotics/embodied-agents, robotics/embodied-policies
+- 身份核验：official_identity_and_selected_fulltext_sections_checked
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2510.16281/README.md)
+
+<a id="p600"></a>
+## p600 · VLS: Steering Pretrained Robot Policies via Vision-Language Models
+
+- 标识：arxiv:2602.03973
+- 原文 / 官方入口：https://arxiv.org/abs/2602.03973
+- 主题：robotics/embodied-agents, robotics/embodied-policies
+- 身份核验：official_identity_and_selected_fulltext_sections_checked
+- 用户阅读状态：unknown
+- [独立讲解](../robotics-embodied/papers/arxiv-2602.03973/reading.md)
+
+<a id="p601"></a>
+## p601 · Towards Deploying VLA without Fine-Tuning: Plug-and-Play Inference-Time VLA Policy Steering via Embodied Evolutionary Diffusion
+
+- 标识：arxiv:2511.14178
+- 原文 / 官方入口：https://arxiv.org/abs/2511.14178
+- 主题：robotics/embodied-agents, robotics/embodied-policies
+- 身份核验：official_identity_and_selected_fulltext_sections_checked
+- 用户阅读状态：unknown
+- [独立讲解](../robotics-embodied/papers/arxiv-2511.14178/reading.md)
+
+<a id="p602"></a>
+## p602 · VLA-ATTC: Adaptive Test-Time Compute for VLA Models with Relative Action Critic Model
+
+- 标识：arxiv:2605.01194
+- 原文 / 官方入口：https://arxiv.org/abs/2605.01194
+- 主题：robotics/embodied-agents, robotics/embodied-policies
+- 身份核验：official_identity_and_selected_fulltext_sections_checked
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2605.01194/README.md)
+
+<a id="p603"></a>
+## p603 · Harness VLA: Steering Frozen VLAs into Reliable Manipulation Primitives via Memory-Guided Agents
+
+- 标识：arxiv:2607.08448
+- 原文 / 官方入口：https://arxiv.org/abs/2607.08448
+- 主题：robotics/embodied-agents, robotics/embodied-policies
+- 身份核验：official_identity_and_selected_fulltext_sections_checked
+- 用户阅读状态：unknown
+- [独立讲解](../robotics-embodied/papers/arxiv-2607.08448/reading.md)
+
+<a id="p604"></a>
+## p604 · Improving Robotic Generalist Policies via Flow Reversal Steering
+
+- 标识：arxiv:2606.13675
+- 原文 / 官方入口：https://arxiv.org/abs/2606.13675
+- 主题：robotics/embodied-agents, robotics/embodied-policies
+- 身份核验：official_identity_and_selected_fulltext_sections_checked
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2606.13675/README.md)
+
+<a id="p605"></a>
+## p605 · Proxy Policy Steering
+
+- 标识：arxiv:2609.09148
+- 原文 / 官方入口：https://arxiv.org/abs/2609.09148
+- 主题：robotics/embodied-agents, robotics/embodied-policies
+- 身份核验：official_identity_and_selected_fulltext_sections_checked
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2609.09148/README.md)
+
+<a id="p606"></a>
+## p606 · Inference-time Policy Steering via Vision and Touch
+
+- 标识：arxiv:2606.14981
+- 原文 / 官方入口：https://arxiv.org/abs/2606.14981
+- 主题：robotics/embodied-agents, robotics/embodied-policies
+- 身份核验：official_identity_and_selected_fulltext_sections_checked
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2606.14981/README.md)
+
+<a id="p607"></a>
+## p607 · Agent as Policy for Robotic Manipulation
+
+- 标识：arxiv:2609.12541
+- 原文 / 官方入口：https://arxiv.org/abs/2609.12541
+- 主题：robotics/embodied-agents, robotics/navigation-planning
+- 身份核验：official_identity_and_selected_fulltext_sections_checked
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2609.12541/README.md)
+
+<a id="p608"></a>
+## p608 · SimEX: Simulation-Integrated Robotics AutoResearch
+
+- 标识：arxiv:2609.38982
+- 原文 / 官方入口：https://arxiv.org/abs/2609.38982
+- 主题：robotics/embodied-agents, robotics/navigation-planning
+- 身份核验：official_identity_and_selected_fulltext_sections_checked
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2609.38982/README.md)
+
+<a id="p609"></a>
+## p609 · ENPIRE: Agentic Robot Policy Self-Improvement in the Real World
+
+- 标识：arxiv:2606.19980
+- 原文 / 官方入口：https://arxiv.org/abs/2606.19980
+- 主题：robotics/embodied-agents, robotics/embodied-policies
+- 身份核验：official_identity_and_selected_fulltext_sections_checked
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2606.19980/README.md)
+
+<a id="p610"></a>
+## p610 · Generalizing Manipulation Skills with a Local Coding Agent
+
+- 标识：arxiv:2609.26499
+- 原文 / 官方入口：https://arxiv.org/abs/2609.26499
+- 主题：robotics/embodied-agents, robotics/navigation-planning
+- 身份核验：official_identity_and_selected_fulltext_sections_checked
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2609.26499/README.md)
+
+<a id="p611"></a>
+## p611 · Bridging Semantics and Physics with Constrained LLMs for Safe and Trustworthy Robotic Manipulation
+
+- 标识：arxiv:2608.29379
+- 原文 / 官方入口：https://arxiv.org/abs/2608.29379
+- 主题：robotics/embodied-agents, robotics/navigation-planning
+- 身份核验：official_identity_and_selected_fulltext_sections_checked
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2608.29379/README.md)
 
 ## 2026年10月3日既有条目更新
 

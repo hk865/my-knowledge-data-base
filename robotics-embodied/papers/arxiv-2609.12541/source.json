@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2609.12541",
+  "title": "Agent as Policy for Robotic Manipulation",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2609.12541",
+  "official_url": "https://arxiv.org/abs/2609.12541",
+  "official_fulltext_url": "https://arxiv.org/html/2609.12541v3",
+  "read_version": "v3",
+  "version_status": "latest_arxiv_version_checked_on_2026_10_06",
+  "first_submitted": "2026-09-11",
+  "version_date": "2026-09-28",
+  "year": 2026,
+  "authors": [
+    "Mengzhao Jia",
+    "Yang Lin",
+    "Xixin Zhang",
+    "Zhihan Zhang",
+    "Xiaobai Liu",
+    "Meng Jiang"
+  ],
+  "affiliations": [
+    "University of Notre Dame",
+    "University of California San Diego",
+    "San Diego State University"
+  ],
+  "topic_paths": [
+    "robotics/embodied-agents",
+    "robotics/navigation-planning"
+  ],
+  "modality_tags": [
+    "text",
+    "image",
+    "action",
+    "state",
+    "multimodal",
+    "code"
+  ],
+  "task_tags": [
+    "decision",
+    "evaluation"
+  ],
+  "content_kind": "bibliographic_card",
+  "reading_depth": "selected_method_and_evaluation_sections_checked_not_full_read",
+  "reading_path": null,
+  "reading_boundary": "核对v3的3.1-3.3; 4.1-4.4; Appendix A; Appendix E; Appendix F; Appendix H; official project; official code README及所列官方来源；选定章节核验，未完整审计全部附录，未复现。",
+  "teaching_status": "not_created",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "仅链接官方来源，不再分发论文、权重或数据。"
+  },
+  "fulltext_local_status": "official_link_only",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-06",
+  "legacy_paths": [],
+  "evidence_paths": [
+    "robotics-embodied/papers/arxiv-2609.12541/evidence.json"
+  ],
+  "source_origin": "new-baseline-selection",
+  "discovery_provenance": {
+    "role": "assistant",
+    "association": "new_research_discovery",
+    "date": "2026-10-06",
+    "user_reading_or_endorsement": "not_asserted"
+  },
+  "verification_status": "official_identity_and_selected_fulltext_sections_checked",
+  "verification_sources": [
+    "https://arxiv.org/abs/2609.12541",
+    "https://arxiv.org/html/2609.12541v3",
+    "https://agent-as-policy-2026.github.io/",
+    "https://github.com/agent-as-policy-2026/agent-as-policy"
+  ],
+  "research_role": "2026_recent_main",
+  "intervention": "runtime_coding_with_geometric_robot_api",
+  "training_boundary": "§3.1明确通用模型参数固定；没有独立训练的动作策略。程序、工作记录与经验文件可以变化。",
+  "project_url": "https://agent-as-policy-2026.github.io/",
+  "code_url": "https://github.com/agent-as-policy-2026/agent-as-policy"
+}

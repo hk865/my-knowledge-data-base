@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2605.01194",
+  "checked_on": "2026-10-06",
+  "version": "v2",
+  "primary_sources": [
+    "https://arxiv.org/abs/2605.01194",
+    "https://arxiv.org/html/2605.01194v2"
+  ],
+  "checked_sections": "4.1-4.4; 5/Tables 1-3",
+  "claim_map": [
+    {
+      "claim": "以DTW比较两条动作块，超过不确定度阈值时增加候选；RAC做成对动作比较。",
+      "location": "4.1–4.4",
+      "source_url": "https://arxiv.org/html/2605.01194v2"
+    },
+    {
+      "claim": "π0.5在LIBERO-LONG从90.6%提高到按需版94.0%、每步筛选版95.4%。",
+      "location": "5, Tables 1–3",
+      "source_url": "https://arxiv.org/html/2605.01194v2"
+    },
+    {
+      "claim": "实机Piper从52%提高到62.0%或62.7%；偏好标签来自专家动作及不同生成步数的候选。",
+      "location": "4–5",
+      "source_url": "https://arxiv.org/html/2605.01194v2"
+    }
+  ],
+  "training_boundary": "RAC与新增query token需要训练；已读章节不足以确认整个backbone冻结掩码。它是专用critic，不是通用LLM编排器。",
+  "openness_boundary": "论文承诺开源；本次未确认官方可用仓库。",
+  "not_checked": [
+    "摘要的失败率减半对应每步筛选版，不能套用按需版。",
+    "未核实backbone冻结掩码；未复现。",
+    "有限任务与Piper实验不证明未见技能或跨本体泛化。",
+    "未审计再分发许可。"
+  ]
+}

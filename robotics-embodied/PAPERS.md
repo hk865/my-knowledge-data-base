@@ -231,3 +231,21 @@
 - [Lite Any Stereo V2: Faster and Stronger Efficient Zero-Shot Stereo Matching](papers/arxiv-2606.24457/README.md) · 2026 · 文献卡，暂无独立精读
 - [Generate, Track, Improve: Perceptive Multi-Skill Humanoid Locomotion with RL-Fine-Tuned Motion Generators](papers/arxiv-2609.31577/README.md) · 2026 · 文献卡，暂无独立精读
 - [The Planning Limits of Latent World Models](papers/arxiv-2609.39235/README.md) · 2026 · 文献卡，暂无独立精读
+
+## 2026年10月6日文献与资料增量
+
+- [StageCraft: Execution Aware Mitigation of Distractor and Obstruction Failures in VLA Models](papers/arxiv-2603.20659/README.md) · 2026 · 文献卡，暂无独立精读
+- [Critic in the Loop: A Tri-System VLA Framework for Robust Long-Horizon Manipulation](papers/arxiv-2603.05185/README.md) · 2026 · 文献卡，暂无独立精读
+- [Do What You Say: Steering Vision-Language-Action Models via Runtime Reasoning-Action Alignment Verification](papers/arxiv-2510.16281/README.md) · 2025 · 文献卡，暂无独立精读
+- [VLS: Steering Pretrained Robot Policies via Vision-Language Models](papers/arxiv-2602.03973/README.md) · 2026 · 技术精读
+- [Towards Deploying VLA without Fine-Tuning: Plug-and-Play Inference-Time VLA Policy Steering via Embodied Evolutionary Diffusion](papers/arxiv-2511.14178/README.md) · 2025 · 技术精读
+- [VLA-ATTC: Adaptive Test-Time Compute for VLA Models with Relative Action Critic Model](papers/arxiv-2605.01194/README.md) · 2026 · 文献卡，暂无独立精读
+- [Harness VLA: Steering Frozen VLAs into Reliable Manipulation Primitives via Memory-Guided Agents](papers/arxiv-2607.08448/README.md) · 2026 · 技术精读
+- [Improving Robotic Generalist Policies via Flow Reversal Steering](papers/arxiv-2606.13675/README.md) · 2026 · 文献卡，暂无独立精读
+- [Proxy Policy Steering](papers/arxiv-2609.09148/README.md) · 2026 · 文献卡，暂无独立精读
+- [Inference-time Policy Steering via Vision and Touch](papers/arxiv-2606.14981/README.md) · 2026 · 文献卡，暂无独立精读
+- [Agent as Policy for Robotic Manipulation](papers/arxiv-2609.12541/README.md) · 2026 · 文献卡，暂无独立精读
+- [SimEX: Simulation-Integrated Robotics AutoResearch](papers/arxiv-2609.38982/README.md) · 2026 · 文献卡，暂无独立精读
+- [ENPIRE: Agentic Robot Policy Self-Improvement in the Real World](papers/arxiv-2606.19980/README.md) · 2026 · 文献卡，暂无独立精读
+- [Generalizing Manipulation Skills with a Local Coding Agent](papers/arxiv-2609.26499/README.md) · 2026 · 文献卡，暂无独立精读
+- [Bridging Semantics and Physics with Constrained LLMs for Safe and Trustworthy Robotic Manipulation](papers/arxiv-2608.29379/README.md) · 2026 · 文献卡，暂无独立精读

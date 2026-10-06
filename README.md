@@ -2,7 +2,7 @@
 
 按基础概念、研究领域、细分问题和单篇论文逐层阅读。跨方向的同一论文只维护一个规范目录。
 
-> 收录 596 项资源，其中 42 篇有讲解。
+> 收录 611 项资源，其中 45 篇有讲解。
 
 ## 四层入口
 
@@ -54,6 +54,8 @@
 本仓库为公开学术知识库，不存放原始聊天记录、凭据或无关个人资料。
 
 ## 最新短报与机制导读
+
+[具身 Agent 接口地图](robotics-embodied/fields/embodied-agents/README.md)：通用模型参与规划、工具执行、验证与动作引导；[冻结 LLM 与动作模型机制讲义](robotics-embodied/fields/embodied-agents/action-model-intervention.md)。
 
 [10月5日研究短报](daily/2026-10-05.md)：Agent 记忆的历史证据、Cordis 组件生命周期与算子实现入口。
 

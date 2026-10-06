@@ -22,7 +22,7 @@
   },
   "fulltext_local_status": "official_link_only_pending_license_verification",
   "fulltext_local_path": null,
-  "source_record_updated": "2026-10-04",
+  "source_record_updated": "2026-10-06",
   "legacy_paths": [],
   "evidence_paths": [],
   "topic_paths": [
@@ -66,5 +66,16 @@
     "Haohuan Wang",
     "Lili Yu",
     "Ury Zhilinsky"
+  ],
+  "reference_label_corrections": [
+    {
+      "date": "2026-10-06",
+      "source_role": "retrieved_prior_assistant_reference",
+      "incorrect_label": "Knowledge Insulation",
+      "verified_resource_id": "arxiv:2504.16054",
+      "verified_title": "$π_{0.5}$: a Vision-Language-Action Model with Open-World Generalization",
+      "primary_source": "https://arxiv.org/abs/2504.16054",
+      "scope": "检索返回标签错配；未获完整原回答，不能判定错配源于原回答还是检索摘要。规范目录身份不变，错误标签不记作本论文曾用题名，亦不据此建立另一篇论文身份。"
+    }
   ]
 }

@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2602.03973",
+  "title": "VLS: Steering Pretrained Robot Policies via Vision-Language Models",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2602.03973",
+  "official_url": "https://arxiv.org/abs/2602.03973",
+  "official_fulltext_url": "https://arxiv.org/html/2602.03973v1",
+  "read_version": "v1",
+  "version_status": "latest_arxiv_version_checked_on_2026_10_06",
+  "first_submitted": "2026-02-03",
+  "version_date": "2026-02-03",
+  "year": 2026,
+  "authors": [
+    "Shuo Liu",
+    "Ishneet Sukhvinder Singh",
+    "Yiqing Xu",
+    "Jiafei Duan",
+    "Ranjay Krishna"
+  ],
+  "topic_paths": [
+    "robotics/embodied-agents",
+    "robotics/embodied-policies"
+  ],
+  "modality_tags": [
+    "text",
+    "image",
+    "action",
+    "state",
+    "multimodal"
+  ],
+  "task_tags": [
+    "decision",
+    "evaluation"
+  ],
+  "content_kind": "reading",
+  "reading_depth": "technical_methods_experiments_and_selected_official_code",
+  "reading_path": "reading.md",
+  "reading_boundary": "Read the accessible main-paper problem formulation, methods and algorithm, experiments and limitations (§III–VI) in official HTML; cross-checked PDF Fig.4–5 visually. The 11-page PDF ends after references and contains no actual appendix despite Appendix references. No full-paper/appendix-reading claim. Read official code methods named below, not entire repository.",
+  "teaching_status": "technical_reading_with_explicit_scope",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "仅链接官方来源，不再分发论文、权重或数据。"
+  },
+  "fulltext_local_status": "official_link_only",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-06",
+  "legacy_paths": [],
+  "evidence_paths": [
+    "robotics-embodied/papers/arxiv-2602.03973/evidence.json"
+  ],
+  "source_origin": "new-baseline-selection",
+  "discovery_provenance": {
+    "role": "assistant",
+    "association": "new_research_discovery",
+    "date": "2026-10-06",
+    "user_reading_or_endorsement": "not_asserted"
+  },
+  "verification_status": "official_identity_and_selected_fulltext_sections_checked",
+  "verification_sources": [
+    "https://arxiv.org/abs/2602.03973",
+    "https://arxiv.org/html/2602.03973v1",
+    "https://vision-language-steering.github.io/webpage/",
+    "https://github.com/Vision-Language-Steering/code",
+    "https://arxiv.org/pdf/2602.03973v1",
+    "https://github.com/Vision-Language-Steering/code/tree/b6e87edc217a2a7682caadba285677fc79eb6f81"
+  ],
+  "research_role": "2026_current_mechanism",
+  "intervention": "action_denoising_gradient",
+  "training_boundary": "部署引导冻结动作策略；VLM生成奖励程序，梯度经过程序而非VLM。基座既有训练与部署时免训练分开记录。",
+  "project_url": "https://vision-language-steering.github.io/webpage/",
+  "code_url": "https://github.com/Vision-Language-Steering/code",
+  "affiliations": [
+    "University of Washington",
+    "University of Oxford",
+    "National University of Singapore",
+    "Allen Institute for AI"
+  ]
+}

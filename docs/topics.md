@@ -694,7 +694,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [AMB3R-SLAM: Kilometer-scale SLAM with Hierarchical Backend](paper-catalog.md#p515)
 - [cuVSLAM: CUDA accelerated visual odometry and mapping](paper-catalog.md#p516)
 
-### 导航与规划（20）
+### 导航与规划（24）
 
 细分：几何与运动规划；视觉语言导航；VLA 与 VLN 的任务边界
 
@@ -718,6 +718,10 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Ground Slow, Move Fast: A Dual-System Foundation Model for Generalizable Vision-and-Language Navigation](paper-catalog.md#p265)
 - [ABot-N1: Toward a General Visual Language Navigation Foundation Model](paper-catalog.md#p268)
 - [Robostral Navigate](paper-catalog.md#p517)
+- [Agent as Policy for Robotic Manipulation](paper-catalog.md#p607)
+- [SimEX: Simulation-Integrated Robotics AutoResearch](paper-catalog.md#p608)
+- [Generalizing Manipulation Skills with a Local Coding Agent](paper-catalog.md#p610)
+- [Bridging Semantics and Physics with Constrained LLMs for Safe and Trustworthy Robotic Manipulation](paper-catalog.md#p611)
 
 
 ### 运动控制（60）
@@ -786,7 +790,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Generate, Track, Improve: Perceptive Multi-Skill Humanoid Locomotion with RL-Fine-Tuned Motion Generators](paper-catalog.md#p580)
 
 
-### 具身策略与 VLA（69）
+### 具身策略与 VLA（80）
 
 细分：动作表示与生成；跨本体与数据；模型 规划与控制接口；模仿学习；机器人强化学习
 
@@ -859,8 +863,19 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [What Drives Success in Physical Planning with Joint-Embedding Predictive World Models?](paper-catalog.md#p578)
 - [Generate, Track, Improve: Perceptive Multi-Skill Humanoid Locomotion with RL-Fine-Tuned Motion Generators](paper-catalog.md#p580)
 - [The Planning Limits of Latent World Models](paper-catalog.md#p581)
+- [StageCraft: Execution Aware Mitigation of Distractor and Obstruction Failures in VLA Models](paper-catalog.md#p597)
+- [Critic in the Loop: A Tri-System VLA Framework for Robust Long-Horizon Manipulation](paper-catalog.md#p598)
+- [Do What You Say: Steering Vision-Language-Action Models via Runtime Reasoning-Action Alignment Verification](paper-catalog.md#p599)
+- [VLS: Steering Pretrained Robot Policies via Vision-Language Models](paper-catalog.md#p600)
+- [Towards Deploying VLA without Fine-Tuning: Plug-and-Play Inference-Time VLA Policy Steering via Embodied Evolutionary Diffusion](paper-catalog.md#p601)
+- [VLA-ATTC: Adaptive Test-Time Compute for VLA Models with Relative Action Critic Model](paper-catalog.md#p602)
+- [Harness VLA: Steering Frozen VLAs into Reliable Manipulation Primitives via Memory-Guided Agents](paper-catalog.md#p603)
+- [Improving Robotic Generalist Policies via Flow Reversal Steering](paper-catalog.md#p604)
+- [Proxy Policy Steering](paper-catalog.md#p605)
+- [Inference-time Policy Steering via Vision and Touch](paper-catalog.md#p606)
+- [ENPIRE: Agentic Robot Policy Self-Improvement in the Real World](paper-catalog.md#p609)
 
-### 具身 Agents 与闭环系统（17）
+### 具身 Agents 与闭环系统（32）
 
 细分：任务理解与技能选择；行动记忆与空间记忆；规划—执行—反馈；技能获取与复用；VLA策略编排与部署
 
@@ -881,6 +896,21 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Hi Robot: Open-Ended Instruction Following with Hierarchical Vision-Language-Action Models](paper-catalog.md#p251)
 - [Gemini Robotics 2: Safety Evaluations](paper-catalog.md#p505)
 - [MEM: Multi-Scale Embodied Memory for Vision Language Action Models](paper-catalog.md#p506)
+- [StageCraft: Execution Aware Mitigation of Distractor and Obstruction Failures in VLA Models](paper-catalog.md#p597)
+- [Critic in the Loop: A Tri-System VLA Framework for Robust Long-Horizon Manipulation](paper-catalog.md#p598)
+- [Do What You Say: Steering Vision-Language-Action Models via Runtime Reasoning-Action Alignment Verification](paper-catalog.md#p599)
+- [VLS: Steering Pretrained Robot Policies via Vision-Language Models](paper-catalog.md#p600)
+- [Towards Deploying VLA without Fine-Tuning: Plug-and-Play Inference-Time VLA Policy Steering via Embodied Evolutionary Diffusion](paper-catalog.md#p601)
+- [VLA-ATTC: Adaptive Test-Time Compute for VLA Models with Relative Action Critic Model](paper-catalog.md#p602)
+- [Harness VLA: Steering Frozen VLAs into Reliable Manipulation Primitives via Memory-Guided Agents](paper-catalog.md#p603)
+- [Improving Robotic Generalist Policies via Flow Reversal Steering](paper-catalog.md#p604)
+- [Proxy Policy Steering](paper-catalog.md#p605)
+- [Inference-time Policy Steering via Vision and Touch](paper-catalog.md#p606)
+- [Agent as Policy for Robotic Manipulation](paper-catalog.md#p607)
+- [SimEX: Simulation-Integrated Robotics AutoResearch](paper-catalog.md#p608)
+- [ENPIRE: Agentic Robot Policy Self-Improvement in the Real World](paper-catalog.md#p609)
+- [Generalizing Manipulation Skills with a Local Coding Agent](paper-catalog.md#p610)
+- [Bridging Semantics and Physics with Constrained LLMs for Safe and Trustworthy Robotic Manipulation](paper-catalog.md#p611)
 
 ## 跨方向方法与探索
 
@@ -1142,14 +1172,14 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 | 模态 \ 任务 | understanding | generation | decision | evaluation | analysis |
 |---|---:|---:|---:|---:|---:|
-| text | [65](#x-text-understanding) | [169](#x-text-generation) | [115](#x-text-decision) | [79](#x-text-evaluation) | [84](#x-text-analysis) |
-| image | [127](#x-image-understanding) | [60](#x-image-generation) | [110](#x-image-decision) | [22](#x-image-evaluation) | [16](#x-image-analysis) |
+| text | [65](#x-text-understanding) | [169](#x-text-generation) | [130](#x-text-decision) | [94](#x-text-evaluation) | [84](#x-text-analysis) |
+| image | [127](#x-image-understanding) | [60](#x-image-generation) | [125](#x-image-decision) | [37](#x-image-evaluation) | [16](#x-image-analysis) |
 | video | [38](#x-video-understanding) | [44](#x-video-generation) | [36](#x-video-decision) | [15](#x-video-evaluation) | [6](#x-video-analysis) |
 | audio | [9](#x-audio-understanding) | [7](#x-audio-generation) | [2](#x-audio-decision) | [1](#x-audio-evaluation) | · |
-| action | [9](#x-action-understanding) | [37](#x-action-generation) | [150](#x-action-decision) | [15](#x-action-evaluation) | [3](#x-action-analysis) |
-| state | [17](#x-state-understanding) | [3](#x-state-generation) | [77](#x-state-decision) | [6](#x-state-evaluation) | · |
-| code | [1](#x-code-understanding) | [27](#x-code-generation) | [31](#x-code-decision) | [21](#x-code-evaluation) | [31](#x-code-analysis) |
-| multimodal | [54](#x-multimodal-understanding) | [45](#x-multimodal-generation) | [49](#x-multimodal-decision) | [23](#x-multimodal-evaluation) | [9](#x-multimodal-analysis) |
+| action | [9](#x-action-understanding) | [37](#x-action-generation) | [165](#x-action-decision) | [30](#x-action-evaluation) | [3](#x-action-analysis) |
+| state | [17](#x-state-understanding) | [3](#x-state-generation) | [92](#x-state-decision) | [21](#x-state-evaluation) | · |
+| code | [1](#x-code-understanding) | [27](#x-code-generation) | [36](#x-code-decision) | [26](#x-code-evaluation) | [31](#x-code-analysis) |
+| multimodal | [54](#x-multimodal-understanding) | [45](#x-multimodal-generation) | [64](#x-multimodal-decision) | [38](#x-multimodal-evaluation) | [9](#x-multimodal-analysis) |
 | tabular | [1](#x-tabular-understanding) | · | · | · | · |
 
 <a id="x-text-understanding"></a>
@@ -1398,7 +1428,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-text-decision"></a>
 
-### text × decision（115）
+### text × decision（130）
 
 - [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](paper-catalog.md#p034)
 - [ReAct: Synergizing Reasoning and Acting in Language Models](paper-catalog.md#p040)
@@ -1515,10 +1545,25 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [SWE-MeM: Learning Adaptive Memory Management for Long-Horizon Coding Agents](paper-catalog.md#p591)
 - [MemoryLake on MemoryArena: A Matched Study of Agent Memory Backends](paper-catalog.md#p592)
 - [DreamBench-SWE: A Multi-Session Memory-Hygiene Benchmark for Software Agents](paper-catalog.md#p593)
+- [StageCraft: Execution Aware Mitigation of Distractor and Obstruction Failures in VLA Models](paper-catalog.md#p597)
+- [Critic in the Loop: A Tri-System VLA Framework for Robust Long-Horizon Manipulation](paper-catalog.md#p598)
+- [Do What You Say: Steering Vision-Language-Action Models via Runtime Reasoning-Action Alignment Verification](paper-catalog.md#p599)
+- [VLS: Steering Pretrained Robot Policies via Vision-Language Models](paper-catalog.md#p600)
+- [Towards Deploying VLA without Fine-Tuning: Plug-and-Play Inference-Time VLA Policy Steering via Embodied Evolutionary Diffusion](paper-catalog.md#p601)
+- [VLA-ATTC: Adaptive Test-Time Compute for VLA Models with Relative Action Critic Model](paper-catalog.md#p602)
+- [Harness VLA: Steering Frozen VLAs into Reliable Manipulation Primitives via Memory-Guided Agents](paper-catalog.md#p603)
+- [Improving Robotic Generalist Policies via Flow Reversal Steering](paper-catalog.md#p604)
+- [Proxy Policy Steering](paper-catalog.md#p605)
+- [Inference-time Policy Steering via Vision and Touch](paper-catalog.md#p606)
+- [Agent as Policy for Robotic Manipulation](paper-catalog.md#p607)
+- [SimEX: Simulation-Integrated Robotics AutoResearch](paper-catalog.md#p608)
+- [ENPIRE: Agentic Robot Policy Self-Improvement in the Real World](paper-catalog.md#p609)
+- [Generalizing Manipulation Skills with a Local Coding Agent](paper-catalog.md#p610)
+- [Bridging Semantics and Physics with Constrained LLMs for Safe and Trustworthy Robotic Manipulation](paper-catalog.md#p611)
 
 <a id="x-text-evaluation"></a>
 
-### text × evaluation（79）
+### text × evaluation（94）
 
 - [PersonaEval: Are LLM Evaluators Human Enough to Judge Role-Play?](paper-catalog.md#p032)
 - [On scalable oversight with weak LLMs judging strong LLMs](paper-catalog.md#p033)
@@ -1599,6 +1644,21 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [The Illusion of Multi-Agent Advantage](paper-catalog.md#p590)
 - [MemoryLake on MemoryArena: A Matched Study of Agent Memory Backends](paper-catalog.md#p592)
 - [DreamBench-SWE: A Multi-Session Memory-Hygiene Benchmark for Software Agents](paper-catalog.md#p593)
+- [StageCraft: Execution Aware Mitigation of Distractor and Obstruction Failures in VLA Models](paper-catalog.md#p597)
+- [Critic in the Loop: A Tri-System VLA Framework for Robust Long-Horizon Manipulation](paper-catalog.md#p598)
+- [Do What You Say: Steering Vision-Language-Action Models via Runtime Reasoning-Action Alignment Verification](paper-catalog.md#p599)
+- [VLS: Steering Pretrained Robot Policies via Vision-Language Models](paper-catalog.md#p600)
+- [Towards Deploying VLA without Fine-Tuning: Plug-and-Play Inference-Time VLA Policy Steering via Embodied Evolutionary Diffusion](paper-catalog.md#p601)
+- [VLA-ATTC: Adaptive Test-Time Compute for VLA Models with Relative Action Critic Model](paper-catalog.md#p602)
+- [Harness VLA: Steering Frozen VLAs into Reliable Manipulation Primitives via Memory-Guided Agents](paper-catalog.md#p603)
+- [Improving Robotic Generalist Policies via Flow Reversal Steering](paper-catalog.md#p604)
+- [Proxy Policy Steering](paper-catalog.md#p605)
+- [Inference-time Policy Steering via Vision and Touch](paper-catalog.md#p606)
+- [Agent as Policy for Robotic Manipulation](paper-catalog.md#p607)
+- [SimEX: Simulation-Integrated Robotics AutoResearch](paper-catalog.md#p608)
+- [ENPIRE: Agentic Robot Policy Self-Improvement in the Real World](paper-catalog.md#p609)
+- [Generalizing Manipulation Skills with a Local Coding Agent](paper-catalog.md#p610)
+- [Bridging Semantics and Physics with Constrained LLMs for Safe and Trustworthy Robotic Manipulation](paper-catalog.md#p611)
 
 <a id="x-text-analysis"></a>
 
@@ -1888,7 +1948,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-image-decision"></a>
 
-### image × decision（110）
+### image × decision（125）
 
 - [DINO-WM: World Models on Pre-trained Visual Features enable Zero-shot Planning](paper-catalog.md#p046)
 - [FOCUS: Object-Centric World Models for Robotics Manipulation](paper-catalog.md#p048)
@@ -2000,10 +2060,25 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [What Drives Success in Physical Planning with Joint-Embedding Predictive World Models?](paper-catalog.md#p578)
 - [Generate, Track, Improve: Perceptive Multi-Skill Humanoid Locomotion with RL-Fine-Tuned Motion Generators](paper-catalog.md#p580)
 - [The Planning Limits of Latent World Models](paper-catalog.md#p581)
+- [StageCraft: Execution Aware Mitigation of Distractor and Obstruction Failures in VLA Models](paper-catalog.md#p597)
+- [Critic in the Loop: A Tri-System VLA Framework for Robust Long-Horizon Manipulation](paper-catalog.md#p598)
+- [Do What You Say: Steering Vision-Language-Action Models via Runtime Reasoning-Action Alignment Verification](paper-catalog.md#p599)
+- [VLS: Steering Pretrained Robot Policies via Vision-Language Models](paper-catalog.md#p600)
+- [Towards Deploying VLA without Fine-Tuning: Plug-and-Play Inference-Time VLA Policy Steering via Embodied Evolutionary Diffusion](paper-catalog.md#p601)
+- [VLA-ATTC: Adaptive Test-Time Compute for VLA Models with Relative Action Critic Model](paper-catalog.md#p602)
+- [Harness VLA: Steering Frozen VLAs into Reliable Manipulation Primitives via Memory-Guided Agents](paper-catalog.md#p603)
+- [Improving Robotic Generalist Policies via Flow Reversal Steering](paper-catalog.md#p604)
+- [Proxy Policy Steering](paper-catalog.md#p605)
+- [Inference-time Policy Steering via Vision and Touch](paper-catalog.md#p606)
+- [Agent as Policy for Robotic Manipulation](paper-catalog.md#p607)
+- [SimEX: Simulation-Integrated Robotics AutoResearch](paper-catalog.md#p608)
+- [ENPIRE: Agentic Robot Policy Self-Improvement in the Real World](paper-catalog.md#p609)
+- [Generalizing Manipulation Skills with a Local Coding Agent](paper-catalog.md#p610)
+- [Bridging Semantics and Physics with Constrained LLMs for Safe and Trustworthy Robotic Manipulation](paper-catalog.md#p611)
 
 <a id="x-image-evaluation"></a>
 
-### image × evaluation（22）
+### image × evaluation（37）
 
 - [LARY: A Latent Action Representation Yielding Benchmark for Generalizable Vision-to-Action Alignment](paper-catalog.md#p060)
 - [Vision-and-Language Navigation: Interpreting visually-grounded navigation instructions in real environments](paper-catalog.md#p119)
@@ -2027,6 +2102,21 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [IndustrialVLA-Bench: A Traceable Multi-Axis Evaluation of Open Robot Policy Models](paper-catalog.md#p561)
 - [What Drives Success in Physical Planning with Joint-Embedding Predictive World Models?](paper-catalog.md#p578)
 - [The Planning Limits of Latent World Models](paper-catalog.md#p581)
+- [StageCraft: Execution Aware Mitigation of Distractor and Obstruction Failures in VLA Models](paper-catalog.md#p597)
+- [Critic in the Loop: A Tri-System VLA Framework for Robust Long-Horizon Manipulation](paper-catalog.md#p598)
+- [Do What You Say: Steering Vision-Language-Action Models via Runtime Reasoning-Action Alignment Verification](paper-catalog.md#p599)
+- [VLS: Steering Pretrained Robot Policies via Vision-Language Models](paper-catalog.md#p600)
+- [Towards Deploying VLA without Fine-Tuning: Plug-and-Play Inference-Time VLA Policy Steering via Embodied Evolutionary Diffusion](paper-catalog.md#p601)
+- [VLA-ATTC: Adaptive Test-Time Compute for VLA Models with Relative Action Critic Model](paper-catalog.md#p602)
+- [Harness VLA: Steering Frozen VLAs into Reliable Manipulation Primitives via Memory-Guided Agents](paper-catalog.md#p603)
+- [Improving Robotic Generalist Policies via Flow Reversal Steering](paper-catalog.md#p604)
+- [Proxy Policy Steering](paper-catalog.md#p605)
+- [Inference-time Policy Steering via Vision and Touch](paper-catalog.md#p606)
+- [Agent as Policy for Robotic Manipulation](paper-catalog.md#p607)
+- [SimEX: Simulation-Integrated Robotics AutoResearch](paper-catalog.md#p608)
+- [ENPIRE: Agentic Robot Policy Self-Improvement in the Real World](paper-catalog.md#p609)
+- [Generalizing Manipulation Skills with a Local Coding Agent](paper-catalog.md#p610)
+- [Bridging Semantics and Physics with Constrained LLMs for Safe and Trustworthy Robotic Manipulation](paper-catalog.md#p611)
 
 <a id="x-image-analysis"></a>
 
@@ -2310,7 +2400,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-action-decision"></a>
 
-### action × decision（150）
+### action × decision（165）
 
 - [OccWorld: Learning a 3D Occupancy World Model for Autonomous Driving](paper-catalog.md#p044)
 - [Driving in the Occupancy World: Vision-Centric 4D Occupancy Forecasting and Planning via World Models for Autonomous Driving](paper-catalog.md#p045)
@@ -2462,10 +2552,25 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [What Drives Success in Physical Planning with Joint-Embedding Predictive World Models?](paper-catalog.md#p578)
 - [Generate, Track, Improve: Perceptive Multi-Skill Humanoid Locomotion with RL-Fine-Tuned Motion Generators](paper-catalog.md#p580)
 - [The Planning Limits of Latent World Models](paper-catalog.md#p581)
+- [StageCraft: Execution Aware Mitigation of Distractor and Obstruction Failures in VLA Models](paper-catalog.md#p597)
+- [Critic in the Loop: A Tri-System VLA Framework for Robust Long-Horizon Manipulation](paper-catalog.md#p598)
+- [Do What You Say: Steering Vision-Language-Action Models via Runtime Reasoning-Action Alignment Verification](paper-catalog.md#p599)
+- [VLS: Steering Pretrained Robot Policies via Vision-Language Models](paper-catalog.md#p600)
+- [Towards Deploying VLA without Fine-Tuning: Plug-and-Play Inference-Time VLA Policy Steering via Embodied Evolutionary Diffusion](paper-catalog.md#p601)
+- [VLA-ATTC: Adaptive Test-Time Compute for VLA Models with Relative Action Critic Model](paper-catalog.md#p602)
+- [Harness VLA: Steering Frozen VLAs into Reliable Manipulation Primitives via Memory-Guided Agents](paper-catalog.md#p603)
+- [Improving Robotic Generalist Policies via Flow Reversal Steering](paper-catalog.md#p604)
+- [Proxy Policy Steering](paper-catalog.md#p605)
+- [Inference-time Policy Steering via Vision and Touch](paper-catalog.md#p606)
+- [Agent as Policy for Robotic Manipulation](paper-catalog.md#p607)
+- [SimEX: Simulation-Integrated Robotics AutoResearch](paper-catalog.md#p608)
+- [ENPIRE: Agentic Robot Policy Self-Improvement in the Real World](paper-catalog.md#p609)
+- [Generalizing Manipulation Skills with a Local Coding Agent](paper-catalog.md#p610)
+- [Bridging Semantics and Physics with Constrained LLMs for Safe and Trustworthy Robotic Manipulation](paper-catalog.md#p611)
 
 <a id="x-action-evaluation"></a>
 
-### action × evaluation（15）
+### action × evaluation（30）
 
 - [LARY: A Latent Action Representation Yielding Benchmark for Generalizable Vision-to-Action Alignment](paper-catalog.md#p060)
 - [Vision-and-Language Navigation: Interpreting visually-grounded navigation instructions in real environments](paper-catalog.md#p119)
@@ -2482,6 +2587,21 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [IndustrialVLA-Bench: A Traceable Multi-Axis Evaluation of Open Robot Policy Models](paper-catalog.md#p561)
 - [What Drives Success in Physical Planning with Joint-Embedding Predictive World Models?](paper-catalog.md#p578)
 - [The Planning Limits of Latent World Models](paper-catalog.md#p581)
+- [StageCraft: Execution Aware Mitigation of Distractor and Obstruction Failures in VLA Models](paper-catalog.md#p597)
+- [Critic in the Loop: A Tri-System VLA Framework for Robust Long-Horizon Manipulation](paper-catalog.md#p598)
+- [Do What You Say: Steering Vision-Language-Action Models via Runtime Reasoning-Action Alignment Verification](paper-catalog.md#p599)
+- [VLS: Steering Pretrained Robot Policies via Vision-Language Models](paper-catalog.md#p600)
+- [Towards Deploying VLA without Fine-Tuning: Plug-and-Play Inference-Time VLA Policy Steering via Embodied Evolutionary Diffusion](paper-catalog.md#p601)
+- [VLA-ATTC: Adaptive Test-Time Compute for VLA Models with Relative Action Critic Model](paper-catalog.md#p602)
+- [Harness VLA: Steering Frozen VLAs into Reliable Manipulation Primitives via Memory-Guided Agents](paper-catalog.md#p603)
+- [Improving Robotic Generalist Policies via Flow Reversal Steering](paper-catalog.md#p604)
+- [Proxy Policy Steering](paper-catalog.md#p605)
+- [Inference-time Policy Steering via Vision and Touch](paper-catalog.md#p606)
+- [Agent as Policy for Robotic Manipulation](paper-catalog.md#p607)
+- [SimEX: Simulation-Integrated Robotics AutoResearch](paper-catalog.md#p608)
+- [ENPIRE: Agentic Robot Policy Self-Improvement in the Real World](paper-catalog.md#p609)
+- [Generalizing Manipulation Skills with a Local Coding Agent](paper-catalog.md#p610)
+- [Bridging Semantics and Physics with Constrained LLMs for Safe and Trustworthy Robotic Manipulation](paper-catalog.md#p611)
 
 <a id="x-action-analysis"></a>
 
@@ -2523,7 +2643,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-state-decision"></a>
 
-### state × decision（77）
+### state × decision（92）
 
 - [Diffusion Policy: Visuomotor Policy Learning via Action Diffusion](paper-catalog.md#p067)
 - [$π_0$: A Vision-Language-Action Flow Model for General Robot Control](paper-catalog.md#p070)
@@ -2602,10 +2722,25 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [What Drives Success in Physical Planning with Joint-Embedding Predictive World Models?](paper-catalog.md#p578)
 - [Generate, Track, Improve: Perceptive Multi-Skill Humanoid Locomotion with RL-Fine-Tuned Motion Generators](paper-catalog.md#p580)
 - [The Planning Limits of Latent World Models](paper-catalog.md#p581)
+- [StageCraft: Execution Aware Mitigation of Distractor and Obstruction Failures in VLA Models](paper-catalog.md#p597)
+- [Critic in the Loop: A Tri-System VLA Framework for Robust Long-Horizon Manipulation](paper-catalog.md#p598)
+- [Do What You Say: Steering Vision-Language-Action Models via Runtime Reasoning-Action Alignment Verification](paper-catalog.md#p599)
+- [VLS: Steering Pretrained Robot Policies via Vision-Language Models](paper-catalog.md#p600)
+- [Towards Deploying VLA without Fine-Tuning: Plug-and-Play Inference-Time VLA Policy Steering via Embodied Evolutionary Diffusion](paper-catalog.md#p601)
+- [VLA-ATTC: Adaptive Test-Time Compute for VLA Models with Relative Action Critic Model](paper-catalog.md#p602)
+- [Harness VLA: Steering Frozen VLAs into Reliable Manipulation Primitives via Memory-Guided Agents](paper-catalog.md#p603)
+- [Improving Robotic Generalist Policies via Flow Reversal Steering](paper-catalog.md#p604)
+- [Proxy Policy Steering](paper-catalog.md#p605)
+- [Inference-time Policy Steering via Vision and Touch](paper-catalog.md#p606)
+- [Agent as Policy for Robotic Manipulation](paper-catalog.md#p607)
+- [SimEX: Simulation-Integrated Robotics AutoResearch](paper-catalog.md#p608)
+- [ENPIRE: Agentic Robot Policy Self-Improvement in the Real World](paper-catalog.md#p609)
+- [Generalizing Manipulation Skills with a Local Coding Agent](paper-catalog.md#p610)
+- [Bridging Semantics and Physics with Constrained LLMs for Safe and Trustworthy Robotic Manipulation](paper-catalog.md#p611)
 
 <a id="x-state-evaluation"></a>
 
-### state × evaluation（6）
+### state × evaluation（21）
 
 - [Rethinking Robustness Assessment: Adversarial Attacks on Learning-based Quadrupedal Locomotion Controllers](paper-catalog.md#p166)
 - [VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World Evaluation of Vision-Language-Action Models](paper-catalog.md#p558)
@@ -2613,6 +2748,21 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [IndustrialVLA-Bench: A Traceable Multi-Axis Evaluation of Open Robot Policy Models](paper-catalog.md#p561)
 - [What Drives Success in Physical Planning with Joint-Embedding Predictive World Models?](paper-catalog.md#p578)
 - [The Planning Limits of Latent World Models](paper-catalog.md#p581)
+- [StageCraft: Execution Aware Mitigation of Distractor and Obstruction Failures in VLA Models](paper-catalog.md#p597)
+- [Critic in the Loop: A Tri-System VLA Framework for Robust Long-Horizon Manipulation](paper-catalog.md#p598)
+- [Do What You Say: Steering Vision-Language-Action Models via Runtime Reasoning-Action Alignment Verification](paper-catalog.md#p599)
+- [VLS: Steering Pretrained Robot Policies via Vision-Language Models](paper-catalog.md#p600)
+- [Towards Deploying VLA without Fine-Tuning: Plug-and-Play Inference-Time VLA Policy Steering via Embodied Evolutionary Diffusion](paper-catalog.md#p601)
+- [VLA-ATTC: Adaptive Test-Time Compute for VLA Models with Relative Action Critic Model](paper-catalog.md#p602)
+- [Harness VLA: Steering Frozen VLAs into Reliable Manipulation Primitives via Memory-Guided Agents](paper-catalog.md#p603)
+- [Improving Robotic Generalist Policies via Flow Reversal Steering](paper-catalog.md#p604)
+- [Proxy Policy Steering](paper-catalog.md#p605)
+- [Inference-time Policy Steering via Vision and Touch](paper-catalog.md#p606)
+- [Agent as Policy for Robotic Manipulation](paper-catalog.md#p607)
+- [SimEX: Simulation-Integrated Robotics AutoResearch](paper-catalog.md#p608)
+- [ENPIRE: Agentic Robot Policy Self-Improvement in the Real World](paper-catalog.md#p609)
+- [Generalizing Manipulation Skills with a Local Coding Agent](paper-catalog.md#p610)
+- [Bridging Semantics and Physics with Constrained LLMs for Safe and Trustworthy Robotic Manipulation](paper-catalog.md#p611)
 
 <a id="x-code-understanding"></a>
 
@@ -2654,7 +2804,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-code-decision"></a>
 
-### code × decision（31）
+### code × decision（36）
 
 - [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](paper-catalog.md#p034)
 - [Voyager: An Open-Ended Embodied Agent with Large Language Models](paper-catalog.md#p041)
@@ -2687,10 +2837,15 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [PROJECTMEM: A Local-First, Event-Sourced Memory and Judgment Layer for AI Coding Agents](paper-catalog.md#p589)
 - [SWE-MeM: Learning Adaptive Memory Management for Long-Horizon Coding Agents](paper-catalog.md#p591)
 - [DreamBench-SWE: A Multi-Session Memory-Hygiene Benchmark for Software Agents](paper-catalog.md#p593)
+- [Agent as Policy for Robotic Manipulation](paper-catalog.md#p607)
+- [SimEX: Simulation-Integrated Robotics AutoResearch](paper-catalog.md#p608)
+- [ENPIRE: Agentic Robot Policy Self-Improvement in the Real World](paper-catalog.md#p609)
+- [Generalizing Manipulation Skills with a Local Coding Agent](paper-catalog.md#p610)
+- [Bridging Semantics and Physics with Constrained LLMs for Safe and Trustworthy Robotic Manipulation](paper-catalog.md#p611)
 
 <a id="x-code-evaluation"></a>
 
-### code × evaluation（21）
+### code × evaluation（26）
 
 - [INSPECT: Intrinsic and Systematic Probing Evaluation for Code Transformers](paper-catalog.md#p030)
 - [Finding bugs across the Python ecosystem with Claude and property-based testing](paper-catalog.md#p160)
@@ -2713,6 +2868,11 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [System Card: Claude Opus 5.5](paper-catalog.md#p487)
 - [Gemini 3.8 Flash Model Card](paper-catalog.md#p488)
 - [DreamBench-SWE: A Multi-Session Memory-Hygiene Benchmark for Software Agents](paper-catalog.md#p593)
+- [Agent as Policy for Robotic Manipulation](paper-catalog.md#p607)
+- [SimEX: Simulation-Integrated Robotics AutoResearch](paper-catalog.md#p608)
+- [ENPIRE: Agentic Robot Policy Self-Improvement in the Real World](paper-catalog.md#p609)
+- [Generalizing Manipulation Skills with a Local Coding Agent](paper-catalog.md#p610)
+- [Bridging Semantics and Physics with Constrained LLMs for Safe and Trustworthy Robotic Manipulation](paper-catalog.md#p611)
 
 <a id="x-code-analysis"></a>
 
@@ -2861,7 +3021,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-multimodal-decision"></a>
 
-### multimodal × decision（49）
+### multimodal × decision（64）
 
 - [Object-Centric World Model for Language-Guided Manipulation](paper-catalog.md#p052)
 - [Language-Grounded Hierarchical Planning and Execution with Multi-Robot 3D Scene Graphs](paper-catalog.md#p055)
@@ -2912,10 +3072,25 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Real-Time Execution with Autoregressive Policies](paper-catalog.md#p559)
 - [RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies](paper-catalog.md#p560)
 - [IndustrialVLA-Bench: A Traceable Multi-Axis Evaluation of Open Robot Policy Models](paper-catalog.md#p561)
+- [StageCraft: Execution Aware Mitigation of Distractor and Obstruction Failures in VLA Models](paper-catalog.md#p597)
+- [Critic in the Loop: A Tri-System VLA Framework for Robust Long-Horizon Manipulation](paper-catalog.md#p598)
+- [Do What You Say: Steering Vision-Language-Action Models via Runtime Reasoning-Action Alignment Verification](paper-catalog.md#p599)
+- [VLS: Steering Pretrained Robot Policies via Vision-Language Models](paper-catalog.md#p600)
+- [Towards Deploying VLA without Fine-Tuning: Plug-and-Play Inference-Time VLA Policy Steering via Embodied Evolutionary Diffusion](paper-catalog.md#p601)
+- [VLA-ATTC: Adaptive Test-Time Compute for VLA Models with Relative Action Critic Model](paper-catalog.md#p602)
+- [Harness VLA: Steering Frozen VLAs into Reliable Manipulation Primitives via Memory-Guided Agents](paper-catalog.md#p603)
+- [Improving Robotic Generalist Policies via Flow Reversal Steering](paper-catalog.md#p604)
+- [Proxy Policy Steering](paper-catalog.md#p605)
+- [Inference-time Policy Steering via Vision and Touch](paper-catalog.md#p606)
+- [Agent as Policy for Robotic Manipulation](paper-catalog.md#p607)
+- [SimEX: Simulation-Integrated Robotics AutoResearch](paper-catalog.md#p608)
+- [ENPIRE: Agentic Robot Policy Self-Improvement in the Real World](paper-catalog.md#p609)
+- [Generalizing Manipulation Skills with a Local Coding Agent](paper-catalog.md#p610)
+- [Bridging Semantics and Physics with Constrained LLMs for Safe and Trustworthy Robotic Manipulation](paper-catalog.md#p611)
 
 <a id="x-multimodal-evaluation"></a>
 
-### multimodal × evaluation（23）
+### multimodal × evaluation（38）
 
 - [On scalable oversight with weak LLMs judging strong LLMs](paper-catalog.md#p033)
 - [Vision-and-Language Navigation: Interpreting visually-grounded navigation instructions in real environments](paper-catalog.md#p119)
@@ -2940,6 +3115,21 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World Evaluation of Vision-Language-Action Models](paper-catalog.md#p558)
 - [RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies](paper-catalog.md#p560)
 - [IndustrialVLA-Bench: A Traceable Multi-Axis Evaluation of Open Robot Policy Models](paper-catalog.md#p561)
+- [StageCraft: Execution Aware Mitigation of Distractor and Obstruction Failures in VLA Models](paper-catalog.md#p597)
+- [Critic in the Loop: A Tri-System VLA Framework for Robust Long-Horizon Manipulation](paper-catalog.md#p598)
+- [Do What You Say: Steering Vision-Language-Action Models via Runtime Reasoning-Action Alignment Verification](paper-catalog.md#p599)
+- [VLS: Steering Pretrained Robot Policies via Vision-Language Models](paper-catalog.md#p600)
+- [Towards Deploying VLA without Fine-Tuning: Plug-and-Play Inference-Time VLA Policy Steering via Embodied Evolutionary Diffusion](paper-catalog.md#p601)
+- [VLA-ATTC: Adaptive Test-Time Compute for VLA Models with Relative Action Critic Model](paper-catalog.md#p602)
+- [Harness VLA: Steering Frozen VLAs into Reliable Manipulation Primitives via Memory-Guided Agents](paper-catalog.md#p603)
+- [Improving Robotic Generalist Policies via Flow Reversal Steering](paper-catalog.md#p604)
+- [Proxy Policy Steering](paper-catalog.md#p605)
+- [Inference-time Policy Steering via Vision and Touch](paper-catalog.md#p606)
+- [Agent as Policy for Robotic Manipulation](paper-catalog.md#p607)
+- [SimEX: Simulation-Integrated Robotics AutoResearch](paper-catalog.md#p608)
+- [ENPIRE: Agentic Robot Policy Self-Improvement in the Real World](paper-catalog.md#p609)
+- [Generalizing Manipulation Skills with a Local Coding Agent](paper-catalog.md#p610)
+- [Bridging Semantics and Physics with Constrained LLMs for Safe and Trustworthy Robotic Manipulation](paper-catalog.md#p611)
 
 <a id="x-multimodal-analysis"></a>
 

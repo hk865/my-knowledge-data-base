@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2608.29379",
+  "title": "Bridging Semantics and Physics with Constrained LLMs for Safe and Trustworthy Robotic Manipulation",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2608.29379",
+  "official_url": "https://arxiv.org/abs/2608.29379",
+  "official_fulltext_url": "https://arxiv.org/html/2608.29379v1",
+  "read_version": "v1",
+  "version_status": "latest_arxiv_version_checked_on_2026_10_06",
+  "first_submitted": "2026-08-29",
+  "version_date": "2026-08-29",
+  "year": 2026,
+  "authors": [
+    "Wenhao Hong",
+    "Lan Wei",
+    "Dandan Zhang"
+  ],
+  "affiliations": [
+    "Imperial College London"
+  ],
+  "topic_paths": [
+    "robotics/embodied-agents",
+    "robotics/navigation-planning"
+  ],
+  "modality_tags": [
+    "text",
+    "image",
+    "action",
+    "state",
+    "multimodal",
+    "code"
+  ],
+  "task_tags": [
+    "decision",
+    "evaluation"
+  ],
+  "content_kind": "bibliographic_card",
+  "reading_depth": "selected_method_and_evaluation_sections_checked_not_full_read",
+  "reading_path": null,
+  "reading_boundary": "核对v1的3; 4.1-4.6; 5及所列官方来源；选定章节核验，未完整审计全部附录，未复现。",
+  "teaching_status": "not_created",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "仅链接官方来源，不再分发论文、权重或数据。"
+  },
+  "fulltext_local_status": "official_link_only",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-10-06",
+  "legacy_paths": [],
+  "evidence_paths": [
+    "robotics-embodied/papers/arxiv-2608.29379/evidence.json"
+  ],
+  "source_origin": "new-baseline-selection",
+  "discovery_provenance": {
+    "role": "assistant",
+    "association": "new_research_discovery",
+    "date": "2026-10-06",
+    "user_reading_or_endorsement": "not_asserted"
+  },
+  "verification_status": "official_identity_and_selected_fulltext_sections_checked",
+  "verification_sources": [
+    "https://arxiv.org/abs/2608.29379",
+    "https://arxiv.org/html/2608.29379v1"
+  ],
+  "research_role": "2026_recent_toolchain_companion",
+  "intervention": "typed_tool_calls_and_motion_planning_checks",
+  "training_boundary": "方法使用现成Claude Sonnet4与固定工具模板，未报告LLM微调或新动作训练；增加技能需同时增加schema和MTC模板。",
+  "project_url": null,
+  "code_url": null
+}

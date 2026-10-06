@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2607.08448",
+  "checked_on": "2026-10-06",
+  "version": "v5",
+  "primary_sources": [
+    "https://arxiv.org/abs/2607.08448",
+    "https://arxiv.org/html/2607.08448v5"
+  ],
+  "checked_sections": "独立核读v5方法§2、评估§3及表2–6、真机/Flash§4及表7、局限§6；附录A–E核查协议/接口/数据与权重，F使用统计，G选择与计时，H GPT-6 Astra结果；非逐页逐引用全文审计，未执行代码或复现",
+  "claim_map": [
+    {
+      "claim": "Agent输出固定工具库调用；vla_act用于短时接触技能，解析工具完成定位、姿态、夹爪等阶段。",
+      "location": "2–3",
+      "source_url": "https://arxiv.org/html/2607.08448v5"
+    },
+    {
+      "claim": "LIBERO采用π0.5-SFT、RoboCasa采用RLDX-1、RoboTwin采用作者后训练LingBot-VLA。",
+      "location": "4; Appendix D",
+      "source_url": "https://arxiv.org/html/2607.08448v5"
+    },
+    {
+      "claim": "Appendix H评估GPT-6 Astra，LIBERO-Pro 741/800、RoboCasa365 148/250；沿用有记忆的主实验协议。",
+      "location": "Appendix H",
+      "source_url": "https://arxiv.org/html/2607.08448v5"
+    }
+  ],
+  "training_boundary": "Agent与调用期VLA权重不更新；动作基座已有训练，任务记忆来自探索，不能等同零数据部署。",
+  "openness_boundary": "Paper links official code; project web tool failed; code not executed",
+  "not_checked": [
+    "严格无记忆与few-shot/bootstrap memory口径不同。",
+    "摘要与正文的平均提升口径存在差异；只引用指定表格或明确分母的结果。",
+    "收益混合工具、重试、记忆与底层能力；不能全部归因于直接轨迹修改。",
+    "未独立复现。",
+    "Astra成绩不是完全无记忆zero-shot",
+    "不同模型记忆文件是否完全相同未披露，不能称严格单变量API置换",
+    "π0.5-SFT和LingBot后训练先于freeze，不是所有网络从未做机器人训练",
+    "VLA行动作块；通用planner输出固定原语JSON",
+    "Flash选择/计时口径与在线结果不可混同",
+    "最终任务成功判据不等于单个primitive结束条件",
+    "官方代码运行和逐项stop predicate实现",
+    "现实传感器误差及碰撞约束下效果",
+    "同一记忆文件的跨planner配对实验",
+    "memory/staging/analytic/retry独立正交消融"
+  ],
+  "teaching_evidence": [
+    {
+      "claim": "固定JSON原语接口；高层选择工具和参数，VLA内部输出动作块；解析控制承担staging、运输、姿态调整等",
+      "location": "§2.3, Table 1; Appendix B",
+      "source_url": "https://arxiv.org/html/2607.08448v5#S2.SS3",
+      "evidence_type": "direct"
+    },
+    {
+      "claim": "few-shot为seed0引导探索/允许reset建任务记忆，正式评估held-out种子禁止reset并缩减预算",
+      "location": "§2.2; Appendix C.1–C.3",
+      "source_url": "https://arxiv.org/html/2607.08448v5#S2.SS2",
+      "evidence_type": "direct"
+    },
+    {
+      "claim": "高层通用模型没有本文任务权重微调的报告；Astra作为Codex planner，low reasoning",
+      "location": "§3.1; Appendix H",
+      "source_url": "https://arxiv.org/html/2607.08448v5#A8",
+      "evidence_type": "direct configuration / no task-finetuning reported"
+    },
+    {
+      "claim": "LIBERO与Pro的动作后端是pi05_libero130_fullshot π0.5-SFT，已在LIBERO130训练；RoboCasa为RLDX-1；RoboTwin为作者后训练LingBot，Harness评估均冻结",
+      "location": "§3.1; Appendix D.1–D.3",
+      "source_url": "https://arxiv.org/html/2607.08448v5#A4",
+      "evidence_type": "direct"
+    },
+    {
+      "claim": "Astra LIBERO-Pro 741/800=92.63%，比较GPT5.5 72.1%，Opus4.7 82.4%；直接同VLA baseline 50.0%",
+      "location": "Tables 3 and 21",
+      "source_url": "https://arxiv.org/html/2607.08448v5#A8",
+      "evidence_type": "direct"
+    },
+    {
+      "claim": "Astra RoboCasa 148/250=59.2%，Composite-Unseen42.5%，Composite-Seen43.75%；GPT5.5对应57.2/13.8/61.3；RLDX直接baseline总体30.0",
+      "location": "Tables 4 and 22; Appendix C.3",
+      "source_url": "https://arxiv.org/html/2607.08448v5#A8",
+      "evidence_type": "direct"
+    },
+    {
+      "claim": "RoboCasa三个子集18/16/16任务各5seeds，因此90/80/80trials；unseen是pretraining task template未见，不是planner无seed0参考探索",
+      "location": "Appendix C.3 explicitly applies same protocol to GPT5.5, Opus4.7 and Astra",
+      "source_url": "https://arxiv.org/html/2607.08448v5#A3.SS3",
+      "evidence_type": "direct"
+    },
+    {
+      "claim": "无目标设置TSM与GM的严格zero-shot仅报告LIBERO-Pro Goal：GoalS31 vsfewshot87；GoalT79 vs87（CC）",
+      "location": "Tables 3 and 5",
+      "source_url": "https://arxiv.org/html/2607.08448v5#S3.SS2",
+      "evidence_type": "direct"
+    },
+    {
+      "claim": "RoboTwin的zero-shot指clean-to-randomized迁移，已有clean TSM，无randomized bootstrap；同底层LingBot50.4→CC58.4",
+      "location": "§3.2 Table 6; Appendix C.4",
+      "source_url": "https://arxiv.org/html/2607.08448v5#A3.SS4",
+      "evidence_type": "direct"
+    },
+    {
+      "claim": "Fig4限制调用次数显示重试有用；不是staging-vs-retry独立正交消融；Fig6完成归因与AppendixF使用占比是相关统计",
+      "location": "§3.3 Figs 4–7 and Appendix F",
+      "source_url": "https://arxiv.org/html/2607.08448v5#S3.SS3",
+      "evidence_type": "direct observations with explicitly marked interpretation limits"
+    },
+    {
+      "claim": "真机双Franka、GPT5.5/frozen desk-clearing π0.5是定性演示，人工reset和成功判断，attempt内部无reset",
+      "location": "§4 real-world deployment",
+      "source_url": "https://arxiv.org/html/2607.08448v5#S4",
+      "evidence_type": "direct"
+    },
+    {
+      "claim": "Flash max卡同seeds选择与报告；Flash工具耗时与Codex planner耗时不同，不可推端到端加速",
+      "location": "§4 Table7; Appendix G",
+      "source_url": "https://arxiv.org/html/2607.08448v5#A7",
+      "evidence_type": "direct"
+    }
+  ],
+  "source_inconsistencies": [
+    {
+      "location": "arXiv abs vs HTML §1/§3.2/Table4",
+      "detail": "本次arXiv摘要页RoboCasa headline为25.4pp；HTML§1/§3.2为27.1pp，§3.2段落57.1/48.6，Table4/22则57.2/48.8；reading选表值与明确分母，不沿用这些headline差值"
+    },
+    {
+      "location": "Table3 headline versus RATS",
+      "detail": "RATS仅六cells，Harness总体八cells，38.6pp不是同一完整评估矩阵；reading优先同底层πRLinf50.0 baseline"
+    }
+  ]
+}

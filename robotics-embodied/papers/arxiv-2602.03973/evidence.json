@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2602.03973",
+  "checked_on": "2026-10-06",
+  "version": "v1",
+  "primary_sources": [
+    "https://arxiv.org/abs/2602.03973",
+    "https://arxiv.org/html/2602.03973v1",
+    "https://vision-language-steering.github.io/webpage/",
+    "https://github.com/Vision-Language-Steering/code",
+    "https://arxiv.org/pdf/2602.03973v1",
+    "https://github.com/Vision-Language-Steering/code/tree/b6e87edc217a2a7682caadba285677fc79eb6f81"
+  ],
+  "checked_sections": "Read the accessible main-paper problem formulation, methods and algorithm, experiments and limitations (§III–VI) in official HTML; cross-checked PDF Fig.4–5 visually. The 11-page PDF ends after references and contains no actual appendix despite Appendix references. No full-paper/appendix-reading claim. Read official code methods named below, not entire repository.",
+  "claim_map": [
+    {
+      "claim": "RGB-D与指令经关键点构建，VLM生成分阶段可微奖励；奖励梯度进入动作去噪或flow速度更新。",
+      "location": "III-C; IV",
+      "source_url": "https://arxiv.org/html/2602.03973v1"
+    },
+    {
+      "claim": "LIBERO-PRO表中LeRobot π0.5总体成功率23.69%→36.81%；这是对同一基座添加VLS的比较。",
+      "location": "V, Table I",
+      "source_url": "https://arxiv.org/html/2602.03973v1"
+    },
+    {
+      "claim": "Franka实验使用冻结π0.5；多候选与重采样引入额外推理成本。",
+      "location": "V–VI",
+      "source_url": "https://arxiv.org/html/2602.03973v1"
+    }
+  ],
+  "training_boundary": "部署引导冻结动作策略；VLM生成奖励程序，梯度经过程序而非VLM。基座既有训练与部署时免训练分开记录。",
+  "openness_boundary": "官方代码仓库可访问，未运行。",
+  "not_checked": [
+    "未独立复现；未完整审计附录。",
+    "奖励程序、关键点与坐标映射可能出错；动作先验覆盖和运行时间限制部署。",
+    "VLM具体实验型号未从作者README支持列表反推。",
+    "未审计再分发许可。",
+    "No appendix present in public v1 PDF/HTML",
+    "Current official code need not reproduce exact historical experiment configuration",
+    "No benchmark execution or real-robot reproduction",
+    "Exact experimental VLM model and thresholds not inferred from code defaults",
+    "No safety guarantees inferred from geometric reward"
+  ],
+  "teaching_evidence": [
+    {
+      "claim": "VLM emits differentiable PyTorch reward; VLM generation is off-graph; rewards are differentiated with respect to sampled actions",
+      "location": "§IV-A2, Eq.7",
+      "source_url": "https://arxiv.org/html/2602.03973v1"
+    },
+    {
+      "claim": "RGB-D/SAM/DINOv2 features produce 3D keypoints; stage-specific rewards guide action denoising",
+      "location": "§IV-A; Fig.2",
+      "source_url": "https://arxiv.org/html/2602.03973v1"
+    },
+    {
+      "claim": "Gradient guidance, candidate diversity and FK resampling are distinct mechanisms",
+      "location": "§IV-B; Algorithm 1",
+      "source_url": "https://arxiv.org/html/2602.03973v1"
+    },
+    {
+      "claim": "LeRobot pi0.5 with/without VLS is 23.69 to36.81 average SR, +13.12pp; other TableI models are unsteered comparisons",
+      "location": "Table I; §V-A–B",
+      "source_url": "https://arxiv.org/html/2602.03973v1"
+    },
+    {
+      "claim": "CALVIN ablation full88%, no gradient17.3%, no FK85.3%, no RBF86.0%",
+      "location": "Fig.4; PDF page8 visual check",
+      "source_url": "https://arxiv.org/pdf/2602.03973v1"
+    },
+    {
+      "claim": "Real Franka uses frozen pi0.5. Fig5 score awards0.5 for grasping correct object and1 for full task, so69% ID and40% mug-OOD are partial-credit score means, not established full-success rates",
+      "location": "Fig.5 caption; PDF page8 visual check",
+      "source_url": "https://arxiv.org/pdf/2602.03973v1"
+    },
+    {
+      "claim": "At pinned official code commit, sample.detach().requires_grad_(True) through action postprocessing and EE mapping; autograd.grad(reward,sample) and normalized gradient; no_grad base sampling; xyz-only corrections",
+      "location": "core/diffusion_policy_steer.py: _compute_keypoint_gradient/_guided_conditional_sample; core/pi05_steer.py: _compute_keypoint_gradient/_sample_actions_guided",
+      "source_url": "https://github.com/Vision-Language-Steering/code/tree/b6e87edc217a2a7682caadba285677fc79eb6f81",
+      "paper_comparison_url": "https://arxiv.org/html/2602.03973v1"
+    },
+    {
+      "claim": "Flow code uses negative dt1->0 and subtracts reward gradient from velocity; paper Eq5 displays plus. Explained at convention level rather than silently merging",
+      "location": "core/pi05_steer.py lines203–279; paper Eq5",
+      "source_url": "https://github.com/Vision-Language-Steering/code/tree/b6e87edc217a2a7682caadba285677fc79eb6f81",
+      "paper_comparison_url": "https://arxiv.org/html/2602.03973v1"
+    },
+    {
+      "claim": "Paper Eq10 sigmoid has sign/normalization ambiguity for negative rewards, whereas code decreasing sigmoid in normalized progress matches stated intention",
+      "location": "paper Eq10; core/pi05_steer.py and core/diffusion_policy_steer.py guidance_strength calculation",
+      "source_url": "https://github.com/Vision-Language-Steering/code/tree/b6e87edc217a2a7682caadba285677fc79eb6f81",
+      "paper_comparison_url": "https://arxiv.org/html/2602.03973v1"
+    }
+  ],
+  "source_scopes": [
+    {
+      "url": "https://arxiv.org/html/2602.03973v1",
+      "parts": "§III–VI; Algorithm 1; Table I; Fig.3–5"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2602.03973v1",
+      "parts": "11 pages inspected for appendix absence; page 8 Fig.4–5 visually cross-checked"
+    },
+    {
+      "url": "https://github.com/Vision-Language-Steering/code/tree/b6e87edc217a2a7682caadba285677fc79eb6f81",
+      "parts": "core/diffusion_policy_steer.py; core/pi05_steer.py; vlm_query/guidance_template.txt; vlm_query/guidance_template_libero.txt"
+    }
+  ]
+}
