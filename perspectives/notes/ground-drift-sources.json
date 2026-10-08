@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-08",
+  "status": "research_candidate_not_formally_registered",
+  "resources": [
+    {
+      "resource_id": "arxiv:2610.05546",
+      "title": "GR-LIO: A Local Ground-Aware LiDAR-Inertial Odometry System Using Body-to-Ground Height",
+      "year": 2026,
+      "first_public_date": "2026-10-04",
+      "authors": [
+        "Zhixin Zhang",
+        "Yang Song",
+        "Liang Zhao",
+        "Nathan Shankar",
+        "Barry Lennox",
+        "Pawel Ladosz"
+      ],
+      "official_url": "https://arxiv.org/abs/2610.05546",
+      "official_fulltext_url": "https://arxiv.org/html/2610.05546v1",
+      "version": "v1",
+      "reading_depth": "selected_sections",
+      "reading_boundary": "Abstract, Note to Practitioners, III, IV including IV-D; selected V-E efficiency discussion. No independent reproduction or full equation audit.",
+      "license": "not_audited",
+      "claims": [
+        {
+          "claim": "Body-ground geometry and local planar motion assumptions",
+          "section": "III, Note to Practitioners"
+        },
+        {
+          "claim": "Ground-point residuals avoid nearest-neighbor association and planar update targets vertical drift",
+          "section": "III, V-E"
+        },
+        {
+          "claim": "Disable ground-aware update when planar consistency fails",
+          "section": "IV-D"
+        }
+      ],
+      "open_questions": [
+        "Quadruped gait, body-ground height variation and independent ground normal estimation require separate validation.",
+        "Full mathematical consistency and implementation have not been audited.",
+        "Potential plane-offset sign inconsistency in v1 HTML Eq. 5 under Eq. 1 convention; Eq. 20 and Eq. 23 require cross-check. Implementation and PDF not audited."
+      ]
+    }
+  ]
+}
