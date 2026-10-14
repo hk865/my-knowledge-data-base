@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-08",
+  "as_of_utc": "2026-10-08T08:50:00Z",
+  "weekly_review_date": "2026-10-11",
+  "weekly_timezone": "Asia/Singapore",
+  "purpose": "Daily candidate archive only; not formal knowledge-base admission",
+  "coverage": "Bounded recent-conversation reference retrieval and independent first-party research across temporal robot action verification and video world-model diagnostics; not exhaustive.",
+  "source_handling": "Only public literature links and categorical provenance; no private identifiers, raw conversations, personal details or mirrored PDFs.",
+  "deduplication_baseline": {
+    "main_commit": "2fd4703e218bb91ba280a22740c372b5fa16bee0",
+    "catalog_resources": 611,
+    "recommended_ids_present_in_main_catalog": [],
+    "recent_daily_candidates_checked_through": "2026-10-07"
+  },
+  "chat_recovery": {
+    "status": "specific_identifiers_recovered_from_search_summary_not_raw_transcript",
+    "direct_user_selected_paper_recovered": "arxiv:2610.05546",
+    "handling": "GR-LIO already handled separately; no repeated daily recommendation. Other recovered assistant citations are not treated as user selections.",
+    "new_user_selected_recommendations": 0
+  },
+  "recommended_ids": [
+    "arxiv:2609.39038",
+    "arxiv:2610.07355"
+  ],
+  "records": [
+    {
+      "id": "arxiv:2609.39038",
+      "title": "Looking Back to Move Forward: Temporal Verification for Generative Robot Policies",
+      "authors": [
+        "Haoxuan Wang",
+        "Wayne Wu",
+        "Yan Yan",
+        "Bolei Zhou"
+      ],
+      "first_submission_date": "2026-09-30",
+      "verified_current_version": "v1",
+      "version_date": "2026-09-30",
+      "official_url": "https://arxiv.org/abs/2609.39038",
+      "official_fulltext_url": "https://arxiv.org/html/2609.39038v1",
+      "project_url": "https://hatchetproject.github.io/tev/",
+      "identity_status": "primary_title_identifier_version_date_verified",
+      "provenance": [
+        "independent_current_search"
+      ],
+      "status": "待周整理",
+      "new_formal_admission": false,
+      "user_selection_status": "not_established",
+      "user_reading_status": "unknown",
+      "suggested_topic_paths": [
+        "robotics/embodied-policies",
+        "robotics/embodied-agents"
+      ],
+      "reading_depth": "selected_method_experiment_and_appendix_review",
+      "reading_boundary": "Abstract record, methods 4.1–4.3, experiments 5, ablations, implementation and latency Appendix B, official project page. No independent reproduction or code execution.",
+      "license": "CC-BY-4.0 as shown on arXiv HTML; no source material mirrored",
+      "baseline_change": "Frozen pi0.5 plus learned history-conditioned candidate ranking and optional generation-time guidance.",
+      "claim_status": "Experimental numbers are author-reported. Prioritizing verification-only under tight latency is an inference from their ablation, not a guaranteed deployment result.",
+      "key_limits": [
+        "Learned compatibility is not a formal safety guarantee.",
+        "Verifier requires training; no extra expert demonstrations does not mean training-free.",
+        "Real-world completion scores are not binary success rates.",
+        "No quadruped recovery validation."
+      ]
+    },
+    {
+      "id": "arxiv:2610.07355",
+      "title": "Tracking Is Not Permanence: What Video World Models Keep of a Hidden Object",
+      "authors": [
+        "Peng Xie",
+        "Amr Alanwar"
+      ],
+      "first_submission_date": "2026-10-05",
+      "verified_current_version": "v1",
+      "version_date": "2026-10-05",
+      "official_url": "https://arxiv.org/abs/2610.07355",
+      "official_fulltext_url": "https://arxiv.org/html/2610.07355v1",
+      "identity_status": "primary_title_identifier_version_date_verified",
+      "provenance": [
+        "independent_current_search"
+      ],
+      "status": "待周整理",
+      "new_formal_admission": false,
+      "user_selection_status": "not_established",
+      "user_reading_status": "unknown",
+      "suggested_topic_paths": [
+        "multimodal/world-models",
+        "multimodal/video-temporal",
+        "cross-domain/evaluation"
+      ],
+      "reading_depth": "selected_method_experiment_and_appendix_review",
+      "reading_boundary": "Methods 3–3.5, results 4–4.6, Table 1, limitations 5 and Appendix J, benchmark protocol and Table 10. No independent reproduction.",
+      "license": "arXiv perpetual non-exclusive license as shown on HTML; no source material mirrored",
+      "baseline_change": "Paired hidden-object state readouts separate encoder information from predictor retention, beyond whole-video physics scores.",
+      "claim_status": "Readout and curriculum findings are author-reported on specified checkpoints. Using matched occlusion controls for robot world-model evaluation is a research suggestion.",
+      "key_limits": [
+        "Main tests use synthetic scenes; readout thresholds do not establish zero residual information.",
+        "Mask geometry and scoring protocol affect conclusions.",
+        "Training and test share a renderer; no IntPhys 2 improvement.",
+        "V-JEPA 2-AC and V-JEPA 2.1 not tested."
+      ]
+    }
+  ],
+  "publication_scope": {
+    "branch": "research-daily-2026-10-08",
+    "base": "main",
+    "merge_requires_user_approval": true,
+    "files": [
+      "daily/2026-10-08.md",
+      "daily/2026-10-08-sources.json"
+    ],
+    "formal_admissions": 0,
+    "paper_cards_or_catalog_taxonomy_roadmaps_changed": false,
+    "old_page_exports_unchanged": true
+  }
+}
