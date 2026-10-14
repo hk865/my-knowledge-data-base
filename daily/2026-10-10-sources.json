@@ -1,0 +1,214 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-10",
+  "as_of_utc": "2026-10-10T08:41:30Z",
+  "weekly_review_date": "2026-10-11",
+  "weekly_timezone": "Asia/Singapore",
+  "purpose": "Daily candidate archive only; no formal admission",
+  "deduplication": {
+    "main_commit": "2fd4703e218bb91ba280a22740c372b5fa16bee0",
+    "catalog_resources": 611,
+    "recent_daily_checked_through": "2026-10-09",
+    "pending_daily_commits": [
+      "10412550b111eede6489b20490c4c161f27aa4a0",
+      "7908e62575c94106892a46e1bd430f22d37e245a"
+    ],
+    "weekly_record": "No weekly directory in main; first consolidation scheduled for 2026-10-11",
+    "recommended_ids_present_in_main": []
+  },
+  "chat_recovery": {
+    "status": "Global Search returned unavailable for this conversation",
+    "coverage": "Only bounded context and existing topic pages were available; not exhaustive chat history",
+    "original_urls_recovered_from_search": 0,
+    "contextual_reference_count": 1,
+    "source_role": "Assistant reference supplied in current context, not an adopted user choice",
+    "private_source_details_excluded": true
+  },
+  "recommended_ids": [
+    "arxiv:2609.39924",
+    "arxiv:2609.32158"
+  ],
+  "records": [
+    {
+      "id": "arxiv:2609.39924",
+      "title": "CoVisco: Codec-Native Vision Encoder with Native Token Compression for Unified Image-Video Understanding",
+      "authors": [
+        "Yulong Liu",
+        "Xiaotian Han",
+        "Junyuan Shang",
+        "Yuchen Ding",
+        "Zhenyu Zhang",
+        "Shuohuan Wang",
+        "Guibo Zhu",
+        "Sirui Han",
+        "Dianhai Yu"
+      ],
+      "first_submission_date": "2026-09-30",
+      "verified_current_version": "v1",
+      "version_date": "2026-09-30",
+      "official_url": "https://arxiv.org/abs/2609.39924",
+      "official_fulltext_url": "https://arxiv.org/html/2609.39924v1",
+      "project_url": "https://github.com/ernie-research/CoVisco",
+      "origin": "independent_web_discovery",
+      "admission_status": "待周整理",
+      "reading_depth": "selected_methods_experiments_appendices",
+      "reading_boundary": "Sections 3 and 4; conclusion; appendices A.3, C, D; official repository README; no independent reproduction",
+      "suggested_topic_paths": [
+        "multimodal/video-temporal",
+        "multimodal/visual-representation",
+        "multimodal/vlm"
+      ],
+      "suggested_entry_paths": [
+        "multimodal/fields/video-temporal/README.md",
+        "multimodal/fields/visual-representation/README.md"
+      ],
+      "architecture_tags": [
+        "ViT",
+        "segmented-attention",
+        "abstract-token-interface"
+      ],
+      "supervision_tags": [
+        "contrastive",
+        "instruction-tuning"
+      ],
+      "modality_tags": [
+        "image",
+        "video",
+        "text"
+      ],
+      "task_tags": [
+        "understanding"
+      ],
+      "selection_reason": "Separates internal fine-grained representation from the token budget exposed to a language model.",
+      "evidence_locations": [
+        "Section 3.2-3.6: abstract-mediated cross-segment communication and selectable patch output",
+        "Section 4.2/Table 3: matched codec input at 504 resolution; 400 LLM output tokens versus 10,368 ViT input tokens",
+        "Appendix D: same language backbone, projector family and instruction data"
+      ],
+      "limitations": [
+        "Compact-token results vary by task; image OCR transfer remains weak.",
+        "Input and output token budgets differ; no 26-fold end-to-end speed claim is supported.",
+        "Codec comparisons and uniform-frame comparisons have different sampling assumptions."
+      ],
+      "code_status": "Official repository and README verified; encoder weights linked by README; not downloaded or executed",
+      "user_adopted": false,
+      "independently_reproduced": false,
+      "license": "not_audited"
+    },
+    {
+      "id": "arxiv:2609.32158",
+      "title": "FutureRay: Control-Aligned Future Range for Agile Quadruped Navigation",
+      "authors": [
+        "Tianhao Zang",
+        "Shanze Wang",
+        "Ziqian Wang",
+        "Liyou Luo",
+        "Zihan Liu",
+        "Xingjian Xie",
+        "Wei Zhang"
+      ],
+      "first_submission_date": "2026-09-26",
+      "verified_current_version": "v1",
+      "version_date": "2026-09-26",
+      "official_url": "https://arxiv.org/abs/2609.32158",
+      "official_fulltext_url": "https://arxiv.org/html/2609.32158v1",
+      "origin": "independent_web_discovery",
+      "admission_status": "待周整理",
+      "reading_depth": "selected_methods_experiments_limitations",
+      "reading_boundary": "III-VII and conclusion; no independent reproduction",
+      "suggested_topic_paths": [
+        "robotics/navigation-planning",
+        "robotics/perception",
+        "robotics/control"
+      ],
+      "suggested_entry_paths": [
+        "robotics-embodied/fields/navigation-planning/README.md",
+        "robotics-embodied/fields/perception/README.md"
+      ],
+      "architecture_tags": [
+        "GRU",
+        "range-prediction",
+        "fixed-locomotion-policy"
+      ],
+      "supervision_tags": [
+        "supervised-simulation"
+      ],
+      "modality_tags": [
+        "image",
+        "state",
+        "action"
+      ],
+      "task_tags": [
+        "decision"
+      ],
+      "selection_reason": "Tests a forecasting interface under fixed perception, planning and locomotion, linking prediction errors to clearance and braking.",
+      "evidence_locations": [
+        "IV-A/B: five-frame history; shared 0.5-second range forecast; footprint and reaction-braking queries",
+        "VI-A/Table I: 60 paired scenes, one simulator seed; range and risk packet is changed jointly",
+        "VII: qualitative onboard hardware deployment"
+      ],
+      "limitations": [
+        "The shared forecast is not recomputed for each candidate future pose.",
+        "The controlled experiment changes range and risk together.",
+        "Paired scenes share training procedural families; one simulator seed; hardware trials are qualitative.",
+        "Released-checkpoint transfer comparison is separate from matched-planner ablation."
+      ],
+      "code_status": "No author project or code release established in the opened arXiv sources",
+      "user_adopted": false,
+      "independently_reproduced": false,
+      "license": "not_audited"
+    }
+  ],
+  "contextual_reference_leads": [
+    {
+      "id": "arxiv:2201.08117",
+      "title": "Learning robust perceptive locomotion for quadrupedal robots in the wild",
+      "official_url": "https://arxiv.org/abs/2201.08117",
+      "project_url": "https://leggedrobotics.github.io/rl-perceptiveloco/",
+      "origin": "assistant_reference_supplied_in_current_context",
+      "admission_status": "已在库",
+      "canonical_folder": "robotics-embodied/papers/arxiv-2201.08117",
+      "role": "Historical baseline, not a newly published paper or user-selected long-term direction",
+      "official_identity_verified": true,
+      "reading_depth": "identity_abstract_and_project_page_only_in_this_pass",
+      "user_adopted": false
+    }
+  ],
+  "search_notes": {
+    "rotation": [
+      "multimodal visual representation",
+      "video temporal compression",
+      "robot navigation predictive perception"
+    ],
+    "not_selected": [
+      {
+        "id": "arxiv:2609.25450",
+        "title": "REDACT: Robust Perceptive Locomotion under Unseen Visual Corruption",
+        "reason": "Official identity and partial method checked; close to yesterday's depth robustness theme, deferred to keep today's rotation broader."
+      },
+      {
+        "id": "arxiv:2610.02718",
+        "title": "Revisiting Visual Representation Enhancement of VLMs via Kernel Canonical Correlation Analysis",
+        "reason": "Method-reading alternative; CoVisco selected for today's video representation slot."
+      }
+    ],
+    "previous_daily_exclusions": [
+      "arxiv:2603.15826",
+      "arxiv:2609.29092",
+      "arxiv:2609.39038",
+      "arxiv:2610.07355",
+      "arxiv:2609.36543",
+      "arxiv:2610.04372",
+      "arxiv:2609.32154",
+      "arxiv:2609.30946"
+    ],
+    "scope": "Targeted bounded search, not exhaustive coverage"
+  },
+  "publication_policy": {
+    "new_independent_files_only": true,
+    "legacy_exports": "remain paused",
+    "main_merge": "requires explicit owner approval",
+    "raw_chat_or_private_identifiers": false,
+    "pdf_mirrors": false
+  }
+}
