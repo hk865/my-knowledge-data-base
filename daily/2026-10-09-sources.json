@@ -1,0 +1,255 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-09",
+  "as_of_utc": "2026-10-09T08:15:00Z",
+  "weekly_review_date": "2026-10-11",
+  "weekly_timezone": "Asia/Singapore",
+  "purpose": "Daily candidate archive only; no formal admission",
+  "deduplication": {
+    "main_commit": "2fd4703e218bb91ba280a22740c372b5fa16bee0",
+    "catalog_resources": 611,
+    "recent_private_daily_checked_through": "2026-10-08",
+    "public_pending_daily_commit": "10412550b111eede6489b20490c4c161f27aa4a0",
+    "weekly_record": "No completed weekly consolidation found; first scheduled 2026-10-11",
+    "recommended_ids_present_in_main": []
+  },
+  "chat_recovery": {
+    "status": "Search unavailable for this conversation",
+    "window_start": "2026-10-08T08:50:00Z",
+    "window_end": "2026-10-09T08:15:00Z",
+    "coverage": "Bounded contextual identifiers only; not recovered raw messages or exhaustive history",
+    "original_urls_recovered": 0,
+    "source_role": "Prior assistant citations relayed in context; not user selections",
+    "private_source_details_excluded": true
+  },
+  "recommended_ids": [
+    "arxiv:2603.15826",
+    "arxiv:2609.29092"
+  ],
+  "records": [
+    {
+      "id": "arxiv:2603.15826",
+      "title": "Robust Dynamic Object Detection in Cluttered Indoor Scenes via Learned Spatiotemporal Cues",
+      "authors": [
+        "Juan Rached",
+        "Yixuan Jia",
+        "Kota Kondo",
+        "Jonathan P. How"
+      ],
+      "first_submission_date": "2026-03-16",
+      "verified_current_version": "v1",
+      "version_date": "2026-03-16",
+      "official_url": "https://arxiv.org/abs/2603.15826",
+      "official_fulltext_url": "https://arxiv.org/html/2603.15826v1",
+      "origin": "independent_web_discovery",
+      "admission_status": "待周整理",
+      "reading_depth": "selected_methods_experiments_limitations",
+      "reading_boundary": "III including fusion; IV setup, failure analysis, Tables I-III; no independent reproduction",
+      "suggested_topic_paths": [
+        "robotics/perception",
+        "robotics/localization-mapping"
+      ],
+      "architecture_tags": [
+        "PointPillars",
+        "LSTM"
+      ],
+      "supervision_tags": [
+        "supervised"
+      ],
+      "modality_tags": [
+        "state"
+      ],
+      "task_tags": [
+        "understanding",
+        "evaluation"
+      ],
+      "selection_reason": "Explicit multi-frame and ego-motion mechanism with a geometric-only ablation; useful counterpoint to category-only filtering.",
+      "evidence_locations": [
+        "III-B: T=3 temporal model with body-frame velocity",
+        "III-C: 2D recovery of unmatched existing tracks; previous z",
+        "Table I: 31-obstacle human case at distThresh=0.25m, Dynablox recall 0.43 versus STORM 0.55",
+        "IV-C/D: sensing platform placed centrally in indoor experiments",
+        "Table III: GridNet mean 69.46 ms on tested laptop"
+      ],
+      "limitations": [
+        "Detection metrics do not establish improved SLAM or full navigation.",
+        "Reliance on prior tracks and height continuity; limited evidence for moving-ego localization errors.",
+        "Code marked to be released soon in paper; repository release not independently established."
+      ],
+      "user_adopted": false,
+      "independently_reproduced": false,
+      "license": "not_audited"
+    },
+    {
+      "id": "arxiv:2609.29092",
+      "title": "DAWN: Noise-Robust Quadruped Parkour via Depth-Denoising World Models",
+      "authors": [
+        "Yohan Choi",
+        "Min-Jun Kim",
+        "Jin-Sung Kim",
+        "Yong-Jae Kim",
+        "Youn-Hee Han"
+      ],
+      "first_submission_date": "2026-09-24",
+      "verified_current_version": "v1",
+      "version_date": "2026-09-24",
+      "official_url": "https://arxiv.org/abs/2609.29092",
+      "official_fulltext_url": "https://arxiv.org/html/2609.29092v1",
+      "project_url": "https://dawn-parkour.github.io/",
+      "origin": "independent_web_discovery",
+      "admission_status": "待周整理",
+      "reading_depth": "selected_methods_experiments_limitations",
+      "reading_boundary": "III, IV setup and ablations, Table II/III, IV-H and conclusion; no independent training or reproduction",
+      "suggested_topic_paths": [
+        "robotics/control",
+        "robotics/perception",
+        "multimodal/visual-representation",
+        "multimodal/world-models"
+      ],
+      "architecture_tags": [
+        "world-model",
+        "RSSM"
+      ],
+      "supervision_tags": [
+        "contrastive",
+        "reinforcement-learning"
+      ],
+      "modality_tags": [
+        "image",
+        "state",
+        "action"
+      ],
+      "task_tags": [
+        "decision"
+      ],
+      "selection_reason": "Training-objective change isolated against noise-only and single-component ablations without extra deployed module.",
+      "evidence_locations": [
+        "III-B/C: noisy input, clean reconstruction target and clean/noisy embedding alignment",
+        "Table I/III: shared architecture, changed training signals",
+        "IV-C: hardest-level full method +11.5 percentage points versus noise-only training",
+        "IV-H: outdoor 70 cm gap 60%, ten trials per difficulty",
+        "Conclusion: noise model targets D435i"
+      ],
+      "limitations": [
+        "Small per-condition hardware sample.",
+        "No universal unseen-noise guarantee; other depth sensors remain future work.",
+        "Not evaluated as dynamic-object filtering or localization correction."
+      ],
+      "user_adopted": false,
+      "independently_reproduced": false,
+      "license": "not_audited"
+    }
+  ],
+  "contextual_reference_leads": [
+    {
+      "id": "arxiv:2408.14035",
+      "title": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry",
+      "official_url": "https://arxiv.org/abs/2408.14035",
+      "origin": "assistant_reference_identifier_in_context",
+      "original_chat_url": null,
+      "original_message_date": null,
+      "official_identity_verified": true,
+      "reading_depth": "identity_and_abstract_only",
+      "admission_status": "仅作线索",
+      "user_adopted": false
+    },
+    {
+      "id": "arxiv:2007.11898",
+      "title": "ORB-SLAM3: An Accurate Open-Source Library for Visual, Visual-Inertial and Multi-Map SLAM",
+      "official_url": "https://arxiv.org/abs/2007.11898",
+      "origin": "assistant_reference_identifier_in_context",
+      "original_chat_url": null,
+      "original_message_date": null,
+      "official_identity_verified": true,
+      "reading_depth": "identity_and_abstract_only",
+      "admission_status": "已在库",
+      "user_adopted": false
+    },
+    {
+      "id": "arxiv:2209.12435",
+      "title": "STD: Stable Triangle Descriptor for 3D place recognition",
+      "official_url": "https://arxiv.org/abs/2209.12435",
+      "origin": "assistant_reference_identifier_in_context",
+      "original_chat_url": null,
+      "original_message_date": null,
+      "official_identity_verified": true,
+      "reading_depth": "identity_and_abstract_only",
+      "admission_status": "仅作线索",
+      "user_adopted": false
+    },
+    {
+      "id": "arxiv:2304.10049",
+      "title": "Dynablox: Real-time Detection of Diverse Dynamic Objects in Complex Environments",
+      "official_url": "https://arxiv.org/abs/2304.10049",
+      "origin": "assistant_reference_identifier_in_context",
+      "original_chat_url": null,
+      "original_message_date": null,
+      "official_identity_verified": true,
+      "reading_depth": "identity_and_abstract_only",
+      "admission_status": "仅作线索",
+      "user_adopted": false
+    },
+    {
+      "id": "arxiv:1712.07629",
+      "title": "SuperPoint: Self-Supervised Interest Point Detection and Description",
+      "official_url": "https://arxiv.org/abs/1712.07629",
+      "origin": "assistant_reference_identifier_in_context",
+      "original_chat_url": null,
+      "original_message_date": null,
+      "official_identity_verified": true,
+      "reading_depth": "identity_and_abstract_only",
+      "admission_status": "仅作线索",
+      "user_adopted": false
+    },
+    {
+      "id": "arxiv:2306.13643",
+      "title": "LightGlue: Local Feature Matching at Light Speed",
+      "official_url": "https://arxiv.org/abs/2306.13643",
+      "origin": "assistant_reference_identifier_in_context",
+      "original_chat_url": null,
+      "original_message_date": null,
+      "official_identity_verified": true,
+      "reading_depth": "identity_and_abstract_only",
+      "admission_status": "仅作线索",
+      "user_adopted": false
+    }
+  ],
+  "search_notes": {
+    "rotation": [
+      "perception and dynamic filtering",
+      "localization",
+      "legged control",
+      "multimodal visual representation"
+    ],
+    "not_selected": [
+      {
+        "id": "arxiv:2610.05546",
+        "reason": "Already handled separately; no new verified version."
+      },
+      {
+        "id": "arxiv:2609.39038",
+        "reason": "Yesterday candidate; no material new evidence."
+      },
+      {
+        "id": "arxiv:2610.07355",
+        "reason": "Yesterday candidate; no material new evidence."
+      },
+      {
+        "id": "doi:10.3390/s26123717",
+        "reason": "Publisher open failed; search preview insufficient for recommendation."
+      },
+      {
+        "id": "arxiv:2610.02728",
+        "reason": "Identity/abstract discovery only; platform-specific and lower immediate relevance."
+      }
+    ],
+    "multimodal": "Targeted recent representation queries did not yield a stronger fully verified distinct candidate within this bounded pass; DAWN intersects visual representation and control. No exhaustive coverage claimed."
+  },
+  "publication_policy": {
+    "new_independent_files_only": true,
+    "legacy_exports": "remain paused",
+    "main_merge": "requires explicit owner approval",
+    "raw_chat_or_private_identifiers": false,
+    "pdf_mirrors": false
+  }
+}
