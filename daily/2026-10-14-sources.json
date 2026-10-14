@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-14",
+  "as_of_utc": "2026-10-14T08:48:00Z",
+  "scope": "Daily candidate only; no formal admission",
+  "sources": [
+    {
+      "resource_id": "arxiv:2610.10297",
+      "title": "Energy-Efficient Gait Adaptation via Hierarchical Reinforcement Learning for Quadrupedal Locomotion Across Diverse Terrains",
+      "resource_kind": "paper",
+      "first_submitted": "2026-10-07",
+      "version": "v1",
+      "version_date": "2026-10-07",
+      "official_url": "https://arxiv.org/abs/2610.10297",
+      "official_fulltext_url": "https://arxiv.org/html/2610.10297v1",
+      "authors": [
+        "Ammar Issa",
+        "Anubhav Singh",
+        "Anton Tsaritsin",
+        "Sergey Kolyubin"
+      ],
+      "discovery_channel": "proactive primary-source search",
+      "status": "待周整理",
+      "topic_paths": [
+        "robotics/control",
+        "robotics/embodied-policies"
+      ],
+      "architecture_tags": [
+        "hierarchical-policy"
+      ],
+      "supervision_tags": [
+        "reinforcement-learning"
+      ],
+      "modality_tags": [
+        "state",
+        "action"
+      ],
+      "task_tags": [
+        "decision",
+        "evaluation"
+      ],
+      "reading_depth": "selected_method_experiment_and_limitation_sections",
+      "checked_sections": [
+        "II-B to II-E",
+        "III-A evaluation protocol",
+        "Tables II and III",
+        "III-B3",
+        "III-C",
+        "IV"
+      ],
+      "reading_boundary": "Not a complete technical proof audit, source code audit or independent reproduction.",
+      "baseline_fairness": "Evaluation terrains and command distributions matched according to III-A2; equal total training compute not established. WTW fixed-trot, AER and F&E are evaluated baselines.",
+      "claim_locations": {
+        "hierarchy": "II-B to II-D",
+        "staged_training": "II-E",
+        "low_speed_AER_advantage": "Table III and III-B2",
+        "slope_low_speed_falls": "Table II",
+        "AlienGo_deployment": "III-B3",
+        "update_frequency_limit": "IV"
+      },
+      "analysis_boundary": "Zero-speed parking metrics and application to navigation are analyst suggestions, not paper experiments or user adoption.",
+      "user_adoption": "not_inferred",
+      "license": "not_audited"
+    }
+  ],
+  "discovery_log": [
+    {
+      "resource_id": "arxiv:2602.00678",
+      "official_url": "https://arxiv.org/abs/2602.00678",
+      "version": "v4",
+      "version_date": "2026-05-10",
+      "status": "仅作线索",
+      "reason": "RoboGauge evaluation theme relevant; older than selected work and not needed to fill today's quota. Identity and selected text inspected, not recommended."
+    },
+    {
+      "resource_id": "arxiv:2603.17092",
+      "official_url": "https://arxiv.org/abs/2603.17092",
+      "version": "v1",
+      "version_date": "2026-03-17",
+      "status": "仅作线索",
+      "reason": "Abstract-only safe adaptation lead; no full method assessment today."
+    }
+  ],
+  "deduplication": {
+    "main_sha": "f0e77f099918ee84345b55b6e186404c14db4cc4",
+    "checked": "Main daily Markdown files through October 8, PRs 1-6, current research homepage and robotics reading entry",
+    "candidate_matches": [],
+    "formal_catalog_checked": false,
+    "limitation": "Formal catalog/provenance review remains paused; no claim of exhaustive deduplication."
+  },
+  "chat_recovery": {
+    "status": "unavailable",
+    "queries": [
+      "arxiv.org",
+      "论文"
+    ],
+    "result": "Search service returned errors; no newly recovered paper URL claimed.",
+    "scope": "Not exhaustive history or realtime synchronization."
+  },
+  "publication_scope": "Two independent new daily files; no formal catalog, domain text or legacy source exports."
+}
