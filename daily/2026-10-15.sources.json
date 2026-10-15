@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-15",
+  "as_of_utc": "2026-10-15T08:13:00Z",
+  "scope": "Daily candidates only; no formal admission",
+  "sources": [
+    {
+      "resource_id": "arxiv:2610.06616",
+      "title": "Video Encoders Built on Image Representations",
+      "resource_kind": "paper",
+      "first_submitted": "2026-10-05",
+      "version": "v1",
+      "version_date": "2026-10-05",
+      "official_url": "https://arxiv.org/abs/2610.06616",
+      "official_fulltext_url": "https://arxiv.org/html/2610.06616v1",
+      "discovery_channel": "proactive primary-source search",
+      "status": "待周整理",
+      "topic_paths": [
+        "multimodal/visual-representation",
+        "multimodal/video-temporal",
+        "multimodal/vlm"
+      ],
+      "reading_depth": "selected_method_experiment_and_limitation_sections",
+      "checked_sections": [
+        "method",
+        "Table 3",
+        "Appendix C.1 training-fair comparison",
+        "Appendix C.2 ablations"
+      ],
+      "baseline_fairness": "Full method includes a trained temporal refiner unlike training-free baselines; C.1 selection-only ablation isolates most of the gain.",
+      "evidence_boundary": "Video understanding benchmark results; no robot closed-loop evidence or independent reproduction.",
+      "user_adoption": "not_inferred"
+    },
+    {
+      "resource_id": "arxiv:2610.06805",
+      "title": "H-JEPA: End-to-End Learning of Hierarchical World Models for Visual Planning",
+      "resource_kind": "paper",
+      "first_submitted": "2026-10-05",
+      "version": "v1",
+      "version_date": "2026-10-05",
+      "official_url": "https://arxiv.org/abs/2610.06805",
+      "official_fulltext_url": "https://arxiv.org/html/2610.06805v1",
+      "discovery_channel": "proactive primary-source search",
+      "status": "待周整理",
+      "topic_paths": [
+        "multimodal/world-models",
+        "robotics/navigation-planning"
+      ],
+      "reading_depth": "selected_method_experiment_and_limitation_sections",
+      "checked_sections": [
+        "2.2 hierarchical planning",
+        "3 learned abstractions",
+        "4.1-4.3 planning experiments",
+        "DROID evaluation boundary"
+      ],
+      "baseline_fairness": "HWM matched implementation, training settings and data at each depth; planner compute curves reported. Deeper Push-T sees fewer usable transitions, an explicit confound.",
+      "evidence_boundary": "Closed-loop simulations; real-robot DROID videos evaluated offline open-loop, not real hardware closed-loop demonstration. Not independently reproduced.",
+      "user_adoption": "not_inferred"
+    }
+  ],
+  "deduplication": {
+    "main_sha": "f0e77f099918ee84345b55b6e186404c14db4cc4",
+    "checked": [
+      "recursive main tree",
+      "docs/paper-catalog.md",
+      "main daily records",
+      "open draft PRs 3-7 candidate source records",
+      "research homepage and relevant topic pages"
+    ],
+    "candidate_matches": [],
+    "limitation": "papers.json fetch returned empty content; formal catalog check used readable Markdown catalog plus paths. No claim of exhaustive chat or alternate-title deduplication."
+  },
+  "chat_recovery": {
+    "status": "unavailable",
+    "queries": [
+      "arxiv"
+    ],
+    "result": "Saved-conversation search returned an error. No newly recovered chat paper URL claimed.",
+    "scope": "Current accessible context does not establish a complete interval since last successful chat recovery."
+  },
+  "weekly_catchup": {
+    "status": "pending",
+    "reason": "Legacy source baseline/provenance remains unresolved; no legacy export, official admission or completion marker written."
+  },
+  "publication_scope": "Two independent new daily files in a review branch; no formal catalog/domain/roadmap/legacy baseline edits."
+}
