@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-17",
+  "timezone": "Asia/Shanghai",
+  "scope": "daily_candidates_only",
+  "deduplication": {
+    "main_commit": "f0e77f099918ee84345b55b6e186404c14db4cc4",
+    "catalog_count": 611,
+    "catalog_blob_sha": "7cb3d736ba190b66b082b72f4efcdefee237e96b",
+    "checked": [
+      "main full papers.json with verified Git blob hash",
+      "main recursive tree not truncated",
+      "daily main and PR3–9 candidate records",
+      "private homepage and two related topic pages"
+    ],
+    "candidate_matches": []
+  },
+  "candidates": [
+    {
+      "resource_id": "arxiv:2610.09411",
+      "title": "Shared Geometry As A Rosetta Stone: Cross-Modal Alignment Without Paired Data",
+      "first_submitted": "2026-10-07T04:12:30Z",
+      "version": "v2",
+      "version_date": "2026-10-08T13:12:22Z",
+      "official_url": "https://arxiv.org/abs/2610.09411",
+      "fulltext": "https://arxiv.org/html/2610.09411v2",
+      "code": "https://github.com/dominik-schnaus/unpaired-rosetta",
+      "discovery": "active_primary_source_search",
+      "status": "待周整理",
+      "reading_depth": "selected_method_experiments_limitations",
+      "sections": [
+        "Algorithms 1–2",
+        "4.1–4.3",
+        "5",
+        "initialization and solver ablations"
+      ],
+      "topic_paths": [
+        "multimodal/visual-representation",
+        "multimodal/alignment"
+      ],
+      "architecture_tags": [
+        "dual-encoder"
+      ],
+      "supervision_tags": [
+        "unsupervised-alignment"
+      ],
+      "modality_tags": [
+        "image",
+        "text"
+      ],
+      "task_tags": [
+        "understanding"
+      ],
+      "baseline": "mini-vec2vec",
+      "fairness": "Five seeds and common hyperparameters; classification data reserved for evaluation; cross-dataset image/text alignment. CLIP reference is not equal-budget.",
+      "boundary": "Coarse semantic correspondence; paired samples needed for paired CKA evaluation; no independent reproduction."
+    },
+    {
+      "resource_id": "arxiv:2610.21306",
+      "title": "VLA-Δ: Learning Physical State Transition for Vision-Language-Action Models",
+      "first_submitted": "2026-10-15",
+      "version": "v1",
+      "version_date": "2026-10-15",
+      "official_url": "https://arxiv.org/abs/2610.21306",
+      "fulltext": "https://arxiv.org/html/2610.21306v1",
+      "code": "https://github.com/ZJU-OmniAI/VLA-Delta",
+      "discovery": "active_primary_source_search",
+      "status": "待周整理",
+      "reading_depth": "selected_method_experiments_limitations",
+      "sections": [
+        "2",
+        "3 Tables 1–3",
+        "real-robot setup",
+        "Appendix C"
+      ],
+      "topic_paths": [
+        "robotics/embodied-policies",
+        "multimodal/vlm"
+      ],
+      "architecture_tags": [
+        "Transformer"
+      ],
+      "supervision_tags": [
+        "imitation",
+        "supervised"
+      ],
+      "modality_tags": [
+        "image",
+        "text",
+        "state",
+        "action"
+      ],
+      "task_tags": [
+        "decision"
+      ],
+      "baseline": "Difference Queries Only with pretraining and action supervision",
+      "fairness": "Within-paper ablation 96.45 vs98.40 on LIBERO; cross-method data and compute not assumed identical; multi-seed uncertainty not established.",
+      "boundary": "Manipulation simulation and PiPER 200 physical trials, not legged control; real avoidance42.5%; no reproduction.",
+      "identity_note": "Use official submission date; HTML manuscript month field differs."
+    }
+  ],
+  "chat_recovery": {
+    "scope": "Bounded search for recent LSTM/Transformer discussion after previous daily check; not exhaustive or full-history synchronization.",
+    "exact_original_message_urls_recovered": 0,
+    "source_gap": "Search index resolves explicit official paper URLs, but original message reader renders citation markers rather than those URLs.",
+    "leads": [
+      {
+        "title": "The Best of Both Worlds: Combining Recent Advances in Neural Machine Translation",
+        "resource_id": "doi:10.18653/v1/P18-1008",
+        "official_url": "https://aclanthology.org/P18-1008/",
+        "publication_date": "2018-07",
+        "version": "ACL2018 proceedings",
+        "chat_date": "2026-10-16T13:46:29.793074Z",
+        "origin": "assistant recommendation in search index",
+        "original_paper_url_recovered": false,
+        "official_identity_verified": true,
+        "reading_depth": "metadata_and_abstract",
+        "status": "仅作线索",
+        "topic_paths": [
+          "llm/architecture"
+        ]
+      },
+      {
+        "title": "Temporal Fusion Transformers for Interpretable Multi-horizon Time Series Forecasting",
+        "resource_id": "arxiv:1912.09363",
+        "official_url": "https://arxiv.org/abs/1912.09363",
+        "first_submitted": "2019-12-19",
+        "version": "v3",
+        "version_date": "2020-09-27",
+        "chat_date": "2026-10-16T13:46:29.793074Z",
+        "origin": "assistant recommendation in search index",
+        "original_paper_url_recovered": false,
+        "official_identity_verified": true,
+        "reading_depth": "metadata_and_abstract",
+        "status": "仅作线索",
+        "topic_paths": [
+          "cross-domain/model-science"
+        ]
+      }
+    ],
+    "user_adoption": "not_inferred",
+    "privacy": "No private conversation URLs, IDs, or raw transcript in public export."
+  },
+  "weekly_catchup": {
+    "due_date": "2026-10-11",
+    "status": "incomplete",
+    "last_verified_success": null,
+    "checked": "Main has no weekly record; prior daily records consistently mark catchup incomplete. Candidate duplication reviewed.",
+    "legacy_export_blocker": "Previous verified pure-source baseline unavailable; preserve manual edits.",
+    "remaining": [
+      "Formal candidate selection and cards",
+      "Cross-topic synthesis and roadmap integration",
+      "Verified weekly public/private publication"
+    ],
+    "covered_through": null
+  },
+  "publication": {
+    "branch": "research-daily-2026-10-17",
+    "main_merge": false,
+    "new_files_only": true
+  }
+}
