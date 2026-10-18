@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2610.13929",
+  "checked_on": "2026-10-18",
+  "version": "arXiv v1",
+  "primary_sources": [
+    "https://arxiv.org/abs/2610.13929",
+    "https://arxiv.org/abs/2610.13929v1",
+    "https://arxiv.org/html/2610.13929v1",
+    "https://arxiv.org/pdf/2610.13929v1",
+    "https://changhaowang.github.io/chronospolicy/"
+  ],
+  "checked_sections": "§3–5；附录 A–C；表 1–9。表 3–5 交叉核对官方 HTML 与 PDF 文本；未作截图视觉核查。",
+  "identity": {
+    "title": "Chronos Policy: Learning Robot Policies on Physical Time",
+    "version_date": "2026-10-09",
+    "submitted_at": "2026-10-09T17:55:20Z",
+    "latest_version_on_check_date": "v1",
+    "authors": [
+      "Changhao Wang",
+      "Jaden Clark",
+      "Shuran Song"
+    ],
+    "source_location": "arXiv abstract page: title, authors, submission history",
+    "newer_official_material_known_but_unopened": []
+  },
+  "claim_map": [
+    {
+      "id": "chronos-time",
+      "claim": "观测使用采集时刻，动作使用请求执行时刻；以请求时刻为共同原点，时间仅进入 RoPE，注意力含物理时间差。",
+      "location": "§3.1–3.2，式 2–6；附录 A.2",
+      "interpretation_limit": "采集时刻不等于送达时刻；请求执行时刻不等于测得的实际执行时刻。"
+    },
+    {
+      "id": "chronos-randomization",
+      "claim": "采样频率、送达延迟与动作起点随机化；被选观测保留原采集时间。",
+      "location": "§3.3；附录 B.2",
+      "interpretation_limit": "[判断] 完整方法相对原始 DP 的差异同时包含数据时序分布和显式时间，不能把总增益全归于 RoPE。"
+    },
+    {
+      "id": "chronos-matched",
+      "claim": "DP 与 Chronos 使用同一 16 层、宽 512、8 头骨干；仿真预测长度 16、动作频率 20 Hz；AddTime/RoPE 共享数据、token 布局、扩散条件和随机化。",
+      "location": "附录 A.1–A.3，表 1",
+      "interpretation_limit": "[判断] 这支持比较时间表示，不能推出模型推理速度更快；传感器频率变化与送达延迟在观测扰动条件中共同变化，结果也不能单独归因于其中一项。"
+    },
+    {
+      "id": "chronos-sim-protocol",
+      "claim": "表 3 每方法每条件为 3 个训练种子 × 3 个配对评测批次 × 50 回合；先平均评测批次，再跨训练种子报均值和样本标准差。表 4 为 3 个训练种子，每种子每条件 50 回合。",
+      "location": "附录 B.1；表 3、4 表注",
+      "interpretation_limit": "450 回合不是 450 个独立训练模型；标准差不是置信区间。"
+    },
+    {
+      "id": "chronos-key-results",
+      "location": "表 3；PDF 第 16 页",
+      "metric": "success rate percent; mean and sample SD across 3 training seeds",
+      "results": [
+        {
+          "task": "Conveyor",
+          "condition": "inference delay 0–200 ms",
+          "DP": [
+            1.8,
+            1.5
+          ],
+          "RoPE_with_randomization": [
+            76.4,
+            3.4
+          ]
+        },
+        {
+          "task": "Conveyor",
+          "condition": "combined",
+          "DP": [
+            0.0,
+            0.0
+          ],
+          "DP_with_randomization": [
+            0.2,
+            0.4
+          ],
+          "RoPE_without_randomization": [
+            10.7,
+            0.7
+          ],
+          "AddTime": [
+            7.8,
+            2.0
+          ],
+          "RoPE_with_randomization": [
+            32.7,
+            5.7
+          ]
+        },
+        {
+          "task": "Pivoting",
+          "condition": "nominal",
+          "DP": [
+            61.6,
+            11.3
+          ],
+          "DP_with_randomization": [
+            29.8,
+            14.5
+          ]
+        }
+      ],
+      "condition_boundary": "Combined = large observation variation + inference delay 0–200 ms；不能与仅注入推理延迟的条件混写。"
+    },
+    {
+      "id": "chronos-counterexample",
+      "claim": "Threading 联合扰动：DP 77.3±8.1%，Chronos 63.3±3.1%。",
+      "location": "表 4；PDF 第 16 页",
+      "interpretation_limit": "[判断] 平均指标不能替代任务级回归检查；不据此另作未经统计检验的显著性结论。"
+    },
+    {
+      "id": "chronos-rtc",
+      "claim": "真机 DP、DP+RTC 和 Chronos 均异步执行；RTC 适配 DP 的 DDIM，RTC/Chronos 均用已完成请求估计推理延迟。",
+      "location": "§3.4、§4.5；附录 A.2",
+      "interpretation_limit": "仿真使用注入延迟设定动作起点；真机未来延迟须估计。对照是本文 RTC 实现，不能外推所有 RTC 配置。"
+    },
+    {
+      "id": "chronos-real-score",
+      "claim": "真机任务分数为 100×(完整成功数+0.5×部分成功数)/试验数；每方法每条件 Dynamic Cup/Peg Insertion 各 10 次，Pivoting 20 次。",
+      "location": "附录 C.1、C.3；表 5、7–9",
+      "interpretation_limit": "分数不是完整成功比例；真机 nominal 保留系统自然延迟，扰动条件在其上加延迟。"
+    },
+    {
+      "id": "chronos-scope",
+      "claim": "可变控制频率和时间缩放在结论中列为未来工作；实验任务为操作。",
+      "location": "§4.1、§4.5、§5",
+      "interpretation_limit": "[判断] 可将采集时间和计划执行时间视为策略接口设计候选，但四足迁移、时钟漂移容错和消息队列修复仍需独立实验。"
+    }
+  ],
+  "original_assessment": {
+    "priority": "选读",
+    "judgment": "时间戳把“策略能否解释旧观测”变成可干预变量。下一步有价值的验证是固定控制频率与共同延迟轨迹，分别移除采集时刻、动作查询时刻、随机化，再看闭环成功和动作接续；现有结果尚不能把这些问题合成一种通用实时控制解法。",
+    "supported_by": [
+      "chronos-matched",
+      "chronos-key-results",
+      "chronos-counterexample",
+      "chronos-rtc"
+    ]
+  },
+  "openness_boundary": "2026-10-18 官方项目页代码入口仍标 Coming soon；未核实存在可下载的代码、权重或数据。",
+  "not_checked": [
+    "未全文精读",
+    "未独立复现或运行训练/部署",
+    "未审计代码、权重与数据许可",
+    "未系统检索所有后续工作",
+    "未验证四足迁移或变频控制",
+    "未核查实际端到端延迟分布、时钟漂移或网络队列恢复"
+  ]
+}

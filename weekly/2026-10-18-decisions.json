@@ -1,0 +1,142 @@
+{
+  "date": "2026-10-18",
+  "timezone": "UTC+08:00",
+  "main_baseline": "f0e77f099918ee84345b55b6e186404c14db4cc4",
+  "coverage": [
+    {
+      "date": "2026-10-08",
+      "branch": "research-daily-2026-10-08",
+      "path": "daily/2026-10-08-sources.json",
+      "sha": "10412550b111eede6489b20490c4c161f27aa4a0"
+    },
+    {
+      "date": "2026-10-09",
+      "branch": "research-daily-2026-10-09",
+      "path": "daily/2026-10-09-sources.json",
+      "sha": "7908e62575c94106892a46e1bd430f22d37e245a"
+    },
+    {
+      "date": "2026-10-10",
+      "branch": "research-daily-2026-10-10",
+      "path": "daily/2026-10-10-sources.json",
+      "sha": "9b824bbe2c3b07ea397024d48c2e6441b6629462"
+    },
+    {
+      "date": "2026-10-12",
+      "branch": "research-daily-2026-10-12",
+      "path": "daily/2026-10-12-sources.json",
+      "sha": "ab6820cbeb413949f0713549ce1ffc685c543dcb"
+    },
+    {
+      "date": "2026-10-13",
+      "branch": "research-daily-2026-10-13",
+      "path": "daily/2026-10-13-sources.json",
+      "sha": "2b6655bbbadbc62be19d2c1ece0b7a9bea9d838d"
+    },
+    {
+      "date": "2026-10-14",
+      "branch": "research-daily-2026-10-14",
+      "path": "daily/2026-10-14-sources.json",
+      "sha": "51e31fb6cf8e932be38ea4c7f964fdfbf18c91fd"
+    },
+    {
+      "date": "2026-10-15",
+      "branch": "research-daily-2026-10-15",
+      "path": "daily/2026-10-15.sources.json",
+      "sha": "3c69e71b5819d5f7566b3a7ca147774935794f8c"
+    },
+    {
+      "date": "2026-10-16",
+      "branch": "research-daily-2026-10-16",
+      "path": "daily/2026-10-16.sources.json",
+      "sha": "59832382f3f5ddfd1ecb63cb7fa06c11a79981a2"
+    },
+    {
+      "date": "2026-10-17",
+      "branch": "research-daily-2026-10-17",
+      "path": "daily/2026-10-17.sources.json",
+      "sha": "f51626a7b5eff0e933f7b8bd190cb679a7498171"
+    }
+  ],
+  "selected_ids": [
+    "arxiv:2609.13289",
+    "arxiv:2510.23176",
+    "arxiv:2610.13929"
+  ],
+  "deferred": [
+    {
+      "id": "arxiv:2609.39038",
+      "reason": "待细读时序验证器和延迟权衡，与本轮控制时间链交叉；不自动由推荐转正式卡"
+    },
+    {
+      "id": "arxiv:2610.07355",
+      "reason": "待建立世界模型遮挡诊断的独立综合线；保留负结果价值"
+    },
+    {
+      "id": "arxiv:2603.15826",
+      "reason": "动态点过滤与定位收益尚需区分；暂缓"
+    },
+    {
+      "id": "arxiv:2609.29092",
+      "reason": "待结合噪声模型与已有WMP条目系统比较"
+    },
+    {
+      "id": "arxiv:2609.39924",
+      "reason": "待与10月15日视频编码器形成同预算比较"
+    },
+    {
+      "id": "arxiv:2609.32158",
+      "reason": "未来距离与风险联合输出贡献尚未分离；导航专题继续核验"
+    },
+    {
+      "id": "arxiv:2408.14035",
+      "reason": "main注册表未命中该标识；作为基础定位候选保留，待核查官方版本与原有定位专题，未新增正式卡"
+    },
+    {
+      "id": "arxiv:2507.15496",
+      "reason": "稀疏深度基线较弱，暂不作为优先沉淀"
+    },
+    {
+      "id": "arxiv:2610.08780",
+      "reason": "深度辅助收益与闭环控制收益需区分，待世界模型专题"
+    },
+    {
+      "id": "arxiv:2610.12465",
+      "reason": "课程采样与训练预算对照需专题核验"
+    },
+    {
+      "id": "arxiv:2610.03395",
+      "reason": "全状态重置与仿真前提限制，暂缓"
+    },
+    {
+      "id": "arxiv:2610.10297",
+      "reason": "分层能效控制与本轮瞬态问题不同，保留候选"
+    },
+    {
+      "id": "arxiv:2610.06616",
+      "reason": "与CoVisco需同口径比较，保留视频表征候选"
+    },
+    {
+      "id": "arxiv:2610.06805",
+      "reason": "层级世界模型有价值，待跨任务退化分析补完"
+    },
+    {
+      "id": "arxiv:2610.02110",
+      "reason": "玻璃建图证据主要来自回放，闭环导航收益未量化，待感知专题"
+    },
+    {
+      "id": "arxiv:2610.09411",
+      "reason": "昨日已推荐，无实质更新，不重复推送；待对齐专题"
+    },
+    {
+      "id": "arxiv:2610.21306",
+      "reason": "昨日已推荐，待跨种子与训练成本证据复核"
+    }
+  ],
+  "coverage_status": "partial_weekly_consolidation; 2026-10-11 backlog carried; no prior verified successful weekly record found in inspected main/daily branches",
+  "pending": [
+    "remaining candidate full-text rechecks and domain integration",
+    "main merge requires owner approval under MAINTAINING",
+    "old private-page pure-source baseline unresolved"
+  ]
+}
