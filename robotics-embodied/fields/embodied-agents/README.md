@@ -222,6 +222,8 @@
 
 已有闭环基础后，可走专题路线：[动作模型干预讲义](action-model-intervention.md) → [VLS 精读](../../papers/arxiv-2602.03973/reading.md) → [HarnessVLA 精读](../../papers/arxiv-2607.08448/reading.md)。前者讲接口位置，中者讲动作生成中的数值引导，后者回到完整 Agent 的工具与经验闭环。[VLA-Pilot](../../papers/arxiv-2511.14178/reading.md)作为 2025 年的黑盒搜索前史对照。
 
+低算力导航的接口实现见[工具接口与动态时空信息](tool-interfaces-and-4d-observations.md)：比较多帧、视频与结构化状态，给出最小工具契约、动态对象示例及分阶段验证方案。
+
 基线拆分见 [Baseline 页](BASELINES.md)，按问题排列的学习路线见[路线图](ROADMAP.md)，本方向收录的论文见[论文目录](PAPERS.md)。
 
 ## 批注
