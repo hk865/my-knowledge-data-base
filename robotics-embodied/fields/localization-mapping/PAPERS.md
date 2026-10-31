@@ -59,3 +59,20 @@
 - [ConceptFusion: Open-set Multimodal 3D Mapping](../../papers/arxiv-2302.07241/README.md) · 2023 · 文献卡
 - [FM-Fusion: Instance-aware Semantic Mapping Boosted by Vision-Language Foundation Models](../../papers/arxiv-2402.04555/README.md) · 2024 · 文献卡
 - [FM-Fusion 代码仓库](../../papers/url-https-github.com-hkust-aerial-robotics-fm-fusion/README.md) · 代码仓库卡，不计为论文
+
+## 动态多传感器可靠性与离线训练
+
+- [FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry](../../papers/arxiv-2408.14035/README.md) · 2024 · 文献卡
+- [Omni-LIVO: Robust RGB-Colored Multi-Camera Visual-Inertial-LiDAR Odometry via Photometric Migration and ESIKF Fusion](../../papers/arxiv-2509.15673/README.md) · 2026 · 文献卡
+- [DROID-SLAM in the Wild](../../papers/arxiv-2603.19076/README.md) · 2026 · 文献卡
+- [RADIO-ViPE: Online Tightly Coupled Multi-Modal Fusion for Open-Vocabulary Semantic SLAM in Dynamic Environments](../../papers/arxiv-2604.26067/README.md) · 2026 · 文献卡
+- [WildGS-SLAM: Monocular Gaussian Splatting SLAM in Dynamic Environments](../../papers/arxiv-2504.03886/README.md) · 2025 · 文献卡
+- [DAGS-SLAM: Dynamic-Aware 3DGS SLAM via Spatiotemporal Motion Probability and Uncertainty-Aware Scheduling](../../papers/arxiv-2602.21644/README.md) · 2026 · 文献卡
+- [DynoSAM: Open-Source Smoothing and Mapping Framework for Dynamic SLAM](../../papers/arxiv-2501.11893/README.md) · 2025 · 文献卡
+- [TLIO: Tight Learned Inertial Odometry](../../papers/arxiv-2007.01867/README.md) · 2020 · 文献卡
+- [AirIMU: Learning Uncertainty Propagation for Inertial Odometry](../../papers/arxiv-2310.04874/README.md) · 2023 · 文献卡
+- [Backprop KF: Learning Discriminative Deterministic State Estimators](../../papers/arxiv-1605.07148/README.md) · 2016 · 文献卡
+- [On-Manifold Preintegration for Real-Time Visual-Inertial Odometry](../../papers/arxiv-1512.02363/README.md) · 2017 · 文献卡
+- [Dynamic-LIVO: A Dynamic-Aware LiDAR-Inertial-Visual Odometry System Using Spatio-Temporal Normals](../../papers/arxiv-2609.19336/README.md) · 2026 · 文献卡
+- [RT-LIVO: Semantic and Motion-Aware LiDAR-Inertial-Visual Odometry for Robust Mapping in Dynamic Environments](../../papers/doi-10.2139-ssrn.7602304/README.md) · 2026 · 文献卡
+- [Towards Robust Sensor-Fusion Ground SLAM: A Comprehensive Benchmark and A Resilient Framework](../../papers/arxiv-2507.08364/README.md) · 2025 · 文献卡

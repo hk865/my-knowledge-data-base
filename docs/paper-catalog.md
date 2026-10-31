@@ -1,6 +1,6 @@
 # 全库论文总目录
 
-共 611 个去重资源（537 篇论文、33 篇官方技术报告、5 个代码仓库、15 篇官方博客、17 份官方技术文档、4 篇作者文章）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
+共 625 个去重资源（551 篇论文、33 篇官方技术报告、5 个代码仓库、15 篇官方博客、17 份官方技术文档、4 篇作者文章）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
 
 身份核验、助手教学进度和用户阅读状态分开。历史来源保留原角色与证据局限，不将助手推荐写成用户提供，也不将教学完成写成用户已读。
 
@@ -6476,6 +6476,146 @@
 - 身份核验：official_identity_and_selected_fulltext_sections_checked
 - 用户阅读状态：unknown
 - [文献卡](../robotics-embodied/papers/arxiv-2608.29379/README.md)
+
+<a id="p612"></a>
+## p612 · FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry
+
+- 标识：arxiv:2408.14035
+- 原文 / 官方入口：https://arxiv.org/abs/2408.14035
+- 主题：robotics/localization-mapping
+- 身份核验：bibliographic_and_method_scope_checked
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2408.14035/README.md)
+
+<a id="p613"></a>
+## p613 · Omni-LIVO: Robust RGB-Colored Multi-Camera Visual-Inertial-LiDAR Odometry via Photometric Migration and ESIKF Fusion
+
+- 标识：arxiv:2509.15673
+- 原文 / 官方入口：https://arxiv.org/abs/2509.15673
+- 主题：robotics/localization-mapping
+- 身份核验：bibliographic_and_method_scope_checked
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2509.15673/README.md)
+
+<a id="p614"></a>
+## p614 · DROID-SLAM in the Wild
+
+- 标识：arxiv:2603.19076
+- 原文 / 官方入口：https://arxiv.org/abs/2603.19076
+- 主题：robotics/localization-mapping
+- 身份核验：bibliographic_and_method_scope_checked
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2603.19076/README.md)
+
+<a id="p615"></a>
+## p615 · RADIO-ViPE: Online Tightly Coupled Multi-Modal Fusion for Open-Vocabulary Semantic SLAM in Dynamic Environments
+
+- 标识：arxiv:2604.26067
+- 原文 / 官方入口：https://arxiv.org/abs/2604.26067
+- 主题：robotics/localization-mapping
+- 身份核验：bibliographic_and_method_scope_checked
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2604.26067/README.md)
+
+<a id="p616"></a>
+## p616 · WildGS-SLAM: Monocular Gaussian Splatting SLAM in Dynamic Environments
+
+- 标识：arxiv:2504.03886
+- 原文 / 官方入口：https://arxiv.org/abs/2504.03886
+- 主题：robotics/localization-mapping
+- 身份核验：bibliographic_and_method_scope_checked
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2504.03886/README.md)
+
+<a id="p617"></a>
+## p617 · DAGS-SLAM: Dynamic-Aware 3DGS SLAM via Spatiotemporal Motion Probability and Uncertainty-Aware Scheduling
+
+- 标识：arxiv:2602.21644
+- 原文 / 官方入口：https://arxiv.org/abs/2602.21644
+- 主题：robotics/localization-mapping
+- 身份核验：bibliographic_and_method_scope_checked
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2602.21644/README.md)
+
+<a id="p618"></a>
+## p618 · DynoSAM: Open-Source Smoothing and Mapping Framework for Dynamic SLAM
+
+- 标识：arxiv:2501.11893
+- 原文 / 官方入口：https://arxiv.org/abs/2501.11893
+- 主题：robotics/localization-mapping
+- 身份核验：bibliographic_and_method_scope_checked
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2501.11893/README.md)
+
+<a id="p619"></a>
+## p619 · TLIO: Tight Learned Inertial Odometry
+
+- 标识：arxiv:2007.01867
+- 原文 / 官方入口：https://arxiv.org/abs/2007.01867
+- 主题：robotics/localization-mapping
+- 身份核验：bibliographic_and_method_scope_checked
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2007.01867/README.md)
+
+<a id="p620"></a>
+## p620 · AirIMU: Learning Uncertainty Propagation for Inertial Odometry
+
+- 标识：arxiv:2310.04874
+- 原文 / 官方入口：https://arxiv.org/abs/2310.04874
+- 主题：robotics/localization-mapping
+- 身份核验：bibliographic_and_method_scope_checked
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2310.04874/README.md)
+
+<a id="p621"></a>
+## p621 · Backprop KF: Learning Discriminative Deterministic State Estimators
+
+- 标识：arxiv:1605.07148
+- 原文 / 官方入口：https://arxiv.org/abs/1605.07148
+- 主题：robotics/localization-mapping
+- 身份核验：bibliographic_and_method_scope_checked
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-1605.07148/README.md)
+
+<a id="p622"></a>
+## p622 · On-Manifold Preintegration for Real-Time Visual-Inertial Odometry
+
+- 标识：arxiv:1512.02363
+- 原文 / 官方入口：https://arxiv.org/abs/1512.02363
+- 主题：robotics/localization-mapping
+- 身份核验：bibliographic_and_method_scope_checked
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-1512.02363/README.md)
+
+<a id="p623"></a>
+## p623 · Dynamic-LIVO: A Dynamic-Aware LiDAR-Inertial-Visual Odometry System Using Spatio-Temporal Normals
+
+- 标识：arxiv:2609.19336
+- 原文 / 官方入口：https://arxiv.org/abs/2609.19336
+- 主题：robotics/localization-mapping
+- 身份核验：bibliographic_and_method_scope_checked
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2609.19336/README.md)
+
+<a id="p624"></a>
+## p624 · RT-LIVO: Semantic and Motion-Aware LiDAR-Inertial-Visual Odometry for Robust Mapping in Dynamic Environments
+
+- 标识：doi:10.2139/ssrn.7602304
+- 原文 / 官方入口：https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7602304
+- 主题：robotics/localization-mapping
+- 身份核验：bibliographic_and_method_scope_checked
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/doi-10.2139-ssrn.7602304/README.md)
+
+<a id="p625"></a>
+## p625 · Towards Robust Sensor-Fusion Ground SLAM: A Comprehensive Benchmark and A Resilient Framework
+
+- 标识：arxiv:2507.08364
+- 原文 / 官方入口：https://arxiv.org/abs/2507.08364
+- 主题：robotics/localization-mapping
+- 身份核验：bibliographic_and_method_scope_checked
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2507.08364/README.md)
 
 ## 2026年10月3日既有条目更新
 

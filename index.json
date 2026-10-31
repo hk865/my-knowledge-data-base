@@ -586,5 +586,9 @@
   {
     "title": "地面约束能修正哪一种定位漂移",
     "file": "perspectives/notes/ground-drift-constraints.md"
+  },
+  {
+    "title": "动态语义与学习辅助融合 SLAM 研究总结与开工方案",
+    "file": "robotics-embodied/fields/localization-mapping/dynamic-neural-fusion-plan.md"
   }
 ]
