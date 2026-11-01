@@ -1,0 +1,315 @@
+[
+  {
+    "id": "2204.01691",
+    "slug": "saycan",
+    "label": "SayCan",
+    "version": "v2",
+    "official_url": "https://arxiv.org/abs/2204.01691v2",
+    "official_pdf_url": "https://arxiv.org/pdf/2204.01691v2",
+    "checked_at": "2026-11-01",
+    "pdf_local_retained": true,
+    "pdf_published": false,
+    "license_urls": [
+      "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+    ],
+    "status": "license_identified"
+  },
+  {
+    "id": "2207.05608",
+    "slug": "inner_monologue",
+    "label": "Inner Monologue",
+    "version": "v1",
+    "official_url": "https://arxiv.org/abs/2207.05608v1",
+    "official_pdf_url": "https://arxiv.org/pdf/2207.05608v1",
+    "checked_at": "2026-11-01",
+    "pdf_local_retained": true,
+    "pdf_published": false,
+    "license_urls": [
+      "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+    ],
+    "status": "license_identified"
+  },
+  {
+    "id": "2209.07753",
+    "slug": "code_as_policies",
+    "label": "Code as Policies",
+    "version": "v4",
+    "official_url": "https://arxiv.org/abs/2209.07753v4",
+    "official_pdf_url": "https://arxiv.org/pdf/2209.07753v4",
+    "checked_at": "2026-11-01",
+    "pdf_local_retained": true,
+    "pdf_published": false,
+    "license_urls": [
+      "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+    ],
+    "status": "license_identified"
+  },
+  {
+    "id": "2209.11302",
+    "slug": "progprompt",
+    "label": "ProgPrompt",
+    "version": "v1",
+    "official_url": "https://arxiv.org/abs/2209.11302v1",
+    "official_pdf_url": "https://arxiv.org/pdf/2209.11302v1",
+    "checked_at": "2026-11-01",
+    "pdf_local_retained": true,
+    "pdf_published": false,
+    "license_urls": [
+      "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+    ],
+    "status": "license_identified"
+  },
+  {
+    "id": "2307.05973",
+    "slug": "voxposer",
+    "label": "VoxPoser",
+    "version": "v2",
+    "official_url": "https://arxiv.org/abs/2307.05973v2",
+    "official_pdf_url": "https://arxiv.org/pdf/2307.05973v2",
+    "checked_at": "2026-11-01",
+    "pdf_local_retained": true,
+    "pdf_published": false,
+    "license_urls": [
+      "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+    ],
+    "status": "license_identified"
+  },
+  {
+    "id": "2409.01652",
+    "slug": "rekep",
+    "label": "ReKep",
+    "version": "v2",
+    "official_url": "https://arxiv.org/abs/2409.01652v2",
+    "official_pdf_url": "https://arxiv.org/pdf/2409.01652v2",
+    "checked_at": "2026-11-01",
+    "pdf_local_retained": true,
+    "pdf_published": false,
+    "license_urls": [
+      "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+    ],
+    "status": "license_identified"
+  },
+  {
+    "id": "2504.16054",
+    "slug": "pi05",
+    "label": "π0.5（VLA 背景）",
+    "version": "v1",
+    "official_url": "https://arxiv.org/abs/2504.16054v1",
+    "official_pdf_url": "https://arxiv.org/pdf/2504.16054v1",
+    "checked_at": "2026-11-01",
+    "pdf_local_retained": true,
+    "pdf_published": false,
+    "license_urls": [
+      "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+    ],
+    "status": "license_identified"
+  },
+  {
+    "id": "2509.18597",
+    "slug": "lyra",
+    "label": "LYRA（2025 v2）",
+    "version": "v2",
+    "official_url": "https://arxiv.org/abs/2509.18597v2",
+    "official_pdf_url": "https://arxiv.org/pdf/2509.18597v2",
+    "checked_at": "2026-11-01",
+    "pdf_local_retained": true,
+    "pdf_published": false,
+    "license_urls": [
+      "http://creativecommons.org/licenses/by/4.0/"
+    ],
+    "status": "license_identified"
+  },
+  {
+    "id": "2603.04466",
+    "slug": "act_observe_rewrite",
+    "label": "Act-Observe-Rewrite",
+    "version": "v1",
+    "official_url": "https://arxiv.org/abs/2603.04466v1",
+    "official_pdf_url": "https://arxiv.org/pdf/2603.04466v1",
+    "checked_at": "2026-11-01",
+    "pdf_local_retained": true,
+    "pdf_published": false,
+    "license_urls": [
+      "http://creativecommons.org/licenses/by/4.0/"
+    ],
+    "status": "license_identified"
+  },
+  {
+    "id": "2603.22435",
+    "slug": "cap_x",
+    "label": "CaP-X",
+    "version": "v2",
+    "official_url": "https://arxiv.org/abs/2603.22435v2",
+    "official_pdf_url": "https://arxiv.org/pdf/2603.22435v2",
+    "checked_at": "2026-11-01",
+    "pdf_local_retained": true,
+    "pdf_published": false,
+    "license_urls": [
+      "http://creativecommons.org/licenses/by/4.0/"
+    ],
+    "status": "license_identified"
+  },
+  {
+    "id": "2604.18791",
+    "slug": "helm",
+    "label": "HELM",
+    "version": "v1",
+    "official_url": "https://arxiv.org/abs/2604.18791v1",
+    "official_pdf_url": "https://arxiv.org/pdf/2604.18791v1",
+    "checked_at": "2026-11-01",
+    "pdf_local_retained": true,
+    "pdf_published": false,
+    "license_urls": [
+      "http://creativecommons.org/licenses/by/4.0/"
+    ],
+    "status": "license_identified"
+  },
+  {
+    "id": "2606.19980",
+    "slug": "enpire",
+    "label": "ENPIRE",
+    "version": "v2",
+    "official_url": "https://arxiv.org/abs/2606.19980v2",
+    "official_pdf_url": "https://arxiv.org/pdf/2606.19980v2",
+    "checked_at": "2026-11-01",
+    "pdf_local_retained": true,
+    "pdf_published": false,
+    "license_urls": [
+      "http://creativecommons.org/licenses/by/4.0/"
+    ],
+    "status": "license_identified"
+  },
+  {
+    "id": "2607.00272",
+    "slug": "aspire",
+    "label": "ASPIRE",
+    "version": "v2",
+    "official_url": "https://arxiv.org/abs/2607.00272v2",
+    "official_pdf_url": "https://arxiv.org/pdf/2607.00272v2",
+    "checked_at": "2026-11-01",
+    "pdf_local_retained": true,
+    "pdf_published": false,
+    "status": "license_not_confirmed",
+    "error": "URLError: <urlopen error timed out>"
+  },
+  {
+    "id": "2607.08448",
+    "slug": "harness_vla",
+    "label": "Harness VLA / RPent",
+    "version": "v5",
+    "official_url": "https://arxiv.org/abs/2607.08448v5",
+    "official_pdf_url": "https://arxiv.org/pdf/2607.08448v5",
+    "checked_at": "2026-11-01",
+    "pdf_local_retained": true,
+    "pdf_published": false,
+    "license_urls": [
+      "http://creativecommons.org/licenses/by/4.0/"
+    ],
+    "status": "license_identified"
+  },
+  {
+    "id": "2609.12541",
+    "slug": "agent_as_policy",
+    "label": "Agent as Policy",
+    "version": "v3",
+    "official_url": "https://arxiv.org/abs/2609.12541v3",
+    "official_pdf_url": "https://arxiv.org/pdf/2609.12541v3",
+    "checked_at": "2026-11-01",
+    "pdf_local_retained": true,
+    "pdf_published": false,
+    "license_urls": [
+      "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+    ],
+    "status": "license_identified"
+  },
+  {
+    "id": "2609.33807",
+    "slug": "codeactionbench",
+    "label": "CodeActionBench",
+    "version": "v1",
+    "official_url": "https://arxiv.org/abs/2609.33807v1",
+    "official_pdf_url": "https://arxiv.org/pdf/2609.33807v1",
+    "checked_at": "2026-11-01",
+    "pdf_local_retained": true,
+    "pdf_published": false,
+    "license_urls": [
+      "http://creativecommons.org/licenses/by/4.0/"
+    ],
+    "status": "license_identified"
+  },
+  {
+    "id": "2609.37810",
+    "slug": "roboskill",
+    "label": "RoboSkill",
+    "version": "v1",
+    "official_url": "https://arxiv.org/abs/2609.37810v1",
+    "official_pdf_url": "https://arxiv.org/pdf/2609.37810v1",
+    "checked_at": "2026-11-01",
+    "pdf_local_retained": true,
+    "pdf_published": false,
+    "license_urls": [
+      "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+    ],
+    "status": "license_identified"
+  },
+  {
+    "id": "2609.39018",
+    "slug": "urai",
+    "label": "URAI",
+    "version": "v1",
+    "official_url": "https://arxiv.org/abs/2609.39018v1",
+    "official_pdf_url": "https://arxiv.org/pdf/2609.39018v1",
+    "checked_at": "2026-11-01",
+    "pdf_local_retained": true,
+    "pdf_published": false,
+    "license_urls": [
+      "http://creativecommons.org/licenses/by/4.0/"
+    ],
+    "status": "license_identified"
+  },
+  {
+    "id": "2610.02459",
+    "slug": "openrua",
+    "label": "OpenRUA",
+    "version": "v1",
+    "official_url": "https://arxiv.org/abs/2610.02459v1",
+    "official_pdf_url": "https://arxiv.org/pdf/2610.02459v1",
+    "checked_at": "2026-11-01",
+    "pdf_local_retained": true,
+    "pdf_published": false,
+    "license_urls": [
+      "http://creativecommons.org/licenses/by/4.0/"
+    ],
+    "status": "license_identified"
+  },
+  {
+    "id": "2610.22496",
+    "slug": "rax",
+    "label": "RAX",
+    "version": "v1",
+    "official_url": "https://arxiv.org/abs/2610.22496v1",
+    "official_pdf_url": "https://arxiv.org/pdf/2610.22496v1",
+    "checked_at": "2026-11-01",
+    "pdf_local_retained": true,
+    "pdf_published": false,
+    "license_urls": [
+      "http://creativecommons.org/licenses/by/4.0/"
+    ],
+    "status": "license_identified"
+  },
+  {
+    "id": "2610.28589",
+    "slug": "agenticroborl",
+    "label": "AgenticRoboRL",
+    "version": "v2",
+    "official_url": "https://arxiv.org/abs/2610.28589v2",
+    "official_pdf_url": "https://arxiv.org/pdf/2610.28589v2",
+    "checked_at": "2026-11-01",
+    "pdf_local_retained": true,
+    "pdf_published": false,
+    "license_urls": [
+      "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+    ],
+    "status": "license_identified"
+  }
+]

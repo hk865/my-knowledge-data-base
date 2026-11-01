@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2510.23176",
+  "checked_on": "2026-10-18",
+  "version": "v2",
+  "primary_sources": [
+    "https://arxiv.org/abs/2510.23176v2",
+    "https://arxiv.org/html/2510.23176v2",
+    "https://arnavsukhija.github.io/projects/tarc/"
+  ],
+  "checked_sections": "Abstract; §2–5; §7; Appendix A training remark; B.1/B.2; selected Go1 comparisons in C.1/C.2; official project page",
+  "reading_status": "selected_sections_checked_not_full_read",
+  "independently_reproduced": false,
+  "claim_map": [
+    {
+      "id": "tarc-mechanism",
+      "claim": "策略输出动作与保持时长；按查询代价或查询预算学习更新时机，保持期间沿用原动作。",
+      "location": "§3.1–3.3",
+      "source_url": "https://arnavsukhija.github.io/projects/tarc/",
+      "interpretation_limit": "此处的持续时间由策略主动选择，不等于未知通信延迟。"
+    },
+    {
+      "id": "tarc-baselines",
+      "claim": "Go1 比较固定 50 Hz 和平均频率匹配的 20 Hz PPO；奖励、域随机化、低层 PD 保持相同。",
+      "location": "§4; §5.1; Appendix B.2",
+      "source_url": "https://arxiv.org/html/2510.23176v2",
+      "interpretation_limit": "主文与 20 Hz 基线的均值差置信区间包含零，主要优势为跨种子一致性；正文不写成显著提高均值。"
+    },
+    {
+      "id": "tarc-timing",
+      "claim": "Appendix A 将决策间折扣按实际保持步数用于 TD 残差与 GAE。",
+      "location": "Appendix A, Remark (training)",
+      "source_url": "https://arxiv.org/html/2510.23176v2",
+      "interpretation_limit": "仅换部署循环频率不构成对整套训练方法的实现。"
+    },
+    {
+      "id": "tarc-boundary",
+      "claim": "真机包含平缓转向、变速、跑后转向；评估为短时实验。保持期间的扰动等到下一决策点响应，方法无显式安全约束。",
+      "location": "§4; §5.2; §7; Appendix B.2.2",
+      "source_url": "https://arxiv.org/html/2510.23176v2",
+      "interpretation_limit": "降低查询量是推理成本代理量，不等于已测得整机节能或停止安全保证。"
+    }
+  ],
+  "baseline_fairness": "同平均频率基线有助于区分自适应调度与单纯降频；主文优先看去掉查询惩罚的任务回报，再看查询数量。",
+  "not_checked": [
+    "未独立核对会议论文集正文。",
+    "未审计代码实现、平台时间戳机制、网络丢包或乱序处理。",
+    "未独立复现，也未进行长期能耗测量。"
+  ],
+  "analysis_boundary": "专题中的停止触发、日志对齐、时间戳消融及仿真测试顺序属于 [判断]，不是 TARC 已验证结论。"
+}

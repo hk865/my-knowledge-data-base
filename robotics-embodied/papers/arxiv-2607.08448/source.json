@@ -62,12 +62,12 @@
   "user_reading_status": "not_asserted",
   "independently_reproduced": false,
   "license": {
-    "status": "verified_link_only",
-    "identifier": "CC-BY-4.0",
-    "license_url": "https://creativecommons.org/licenses/by/4.0/",
-    "evidence_url": "https://arxiv.org/abs/2607.08448",
-    "checked_at": "2026-10-06",
-    "note": "已核对arXiv原文许可入口；本库仍仅链接官方原文，不镜像PDF。"
+    "status": "license_identified",
+    "license_urls": [
+      "http://creativecommons.org/licenses/by/4.0/"
+    ],
+    "checked_at": "2026-11-01",
+    "note": "仅链接官方原文，不镜像 PDF；arXiv nonexclusive-distrib 不作为第三方全文再发布授权。"
   },
   "fulltext_local_status": "official_link_only",
   "fulltext_local_path": null,
@@ -99,5 +99,16 @@
       "date": "2026-10-06",
       "association": "先前助手推荐的相关文献，已按原文独立核对；不表示用户已阅读或认可。"
     }
-  ]
+  ],
+  "supplementary_readings": [
+    "robotics-embodied/papers/arxiv-2607.08448/reading-2026-10-30.md"
+  ],
+  "reading_pack_2026_10_30": {
+    "read_version": "v5",
+    "version_date": "2026-09-24",
+    "reading_boundary": "原文方法、主要实验与相关附录定向阅读（方法、评估协议、memory 与 primitive 附录）；非逐页通读，未复现。",
+    "original_checked_at": "2026-10-30",
+    "local_pdf_retained": true,
+    "public_pdf_mirror": false
+  }
 }

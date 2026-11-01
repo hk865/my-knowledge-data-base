@@ -146,3 +146,48 @@ VLS：把语言要求写成奖励，在动作生成过程中沿梯度纠偏,robo
 VLA-Pilot：让大模型写评分程序，用进化搜索改进动作候选,robotics-embodied/papers/arxiv-2511.14178/reading.md
 Harness VLA：让通用大模型安排接触，让冻结策略专心动手,robotics-embodied/papers/arxiv-2607.08448/reading.md
 地面约束能修正哪一种定位漂移,perspectives/notes/ground-drift-constraints.md
+面向机器人导航 Agent 的工具接口与动态时空信息,robotics-embodied/fields/embodied-agents/tool-interfaces-and-4d-observations.md
+动态语义与学习辅助融合 SLAM 研究总结与开工方案,robotics-embodied/fields/localization-mapping/dynamic-neural-fusion-plan.md
+机械臂 Embodied Agent：从选技能到积累可执行经验,robotics-embodied/fields/embodied-agents/reading-pack-2026-10-30/发展路线.md
+机械臂 Embodied Agent 研究资料库,robotics-embodied/fields/embodied-agents/reading-pack-2026-10-30/README.md
+来源、版本与发布许可,robotics-embodied/fields/embodied-agents/reading-pack-2026-10-30/来源与版本.md
+扩展阅读：与主线相邻，但解决的是不同问题,robotics-embodied/fields/embodied-agents/reading-pack-2026-10-30/扩展阅读与边界.md
+本项目下一步：先定位收益，再选择改进层,robotics-embodied/fields/embodied-agents/reading-pack-2026-10-30/研究选项与公平对照.md
+SayCan：语言计划怎样受技能可行性约束,robotics-embodied/papers/saycan/reading-2026-10-30.md
+Inner Monologue：执行反馈怎样改变下一步计划,robotics-embodied/papers/arxiv-2207.05608/reading.md
+Code as Policies：程序怎样表达空间计算与反馈,robotics-embodied/papers/arxiv-2209.07753/reading.md
+ProgPrompt：程序计划怎样检查前提并恢复,robotics-embodied/papers/arxiv-2209.11302/reading.md
+VoxPoser：语言怎样转成可优化的三维目标,robotics-embodied/papers/arxiv-2307.05973/reading.md
+ReKep：关键点关系怎样约束连续动作,robotics-embodied/papers/arxiv-2409.01652/reading.md
+π0.5（VLA 背景）：训练的动作底座负责哪一层,robotics-embodied/papers/arxiv-2504.16054/reading.md
+LYRA（2025 v2）：人类纠错怎样沉淀为代码技能,robotics-embodied/papers/arxiv-2509.18597/reading.md
+Act-Observe-Rewrite：回合间怎样改写完整控制程序,robotics-embodied/papers/arxiv-2603.04466/reading.md
+CaP-X：怎样拆开接口、感知与 Agent 能力,robotics-embodied/papers/arxiv-2603.22435/reading.md
+HELM：记忆与验证器怎样选择动作,robotics-embodied/papers/arxiv-2604.18791/reading.md
+ENPIRE：Agent 怎样组织真机策略改进,robotics-embodied/papers/arxiv-2606.19980/reading.md
+ASPIRE：失败诊断怎样变成验证过的技能,robotics-embodied/papers/arxiv-2607.00272/reading.md
+Harness VLA / RPent：怎样把冻结 VLA 变成可编排原语,robotics-embodied/papers/arxiv-2607.08448/reading-2026-10-30.md
+Agent as Policy：通用 Agent 能否直接写操作程序,robotics-embodied/papers/arxiv-2609.12541/reading.md
+CodeActionBench：怎样公平评估代码操作 Agent,robotics-embodied/papers/arxiv-2609.33807/reading.md
+RoboSkill：探索经验怎样复用于下一次执行,robotics-embodied/papers/roboskill/reading-2026-10-30.md
+URAI：工具生成与运行时决策怎样分工,robotics-embodied/papers/arxiv-2609.39018/reading.md
+OpenRUA：通用 Agent 怎样使用原生机器人接口,robotics-embodied/papers/arxiv-2610.02459/reading.md
+RAX：在线探索怎样留下可复用程序,robotics-embodied/papers/arxiv-2610.22496/reading.md
+AgenticRoboRL：怎样只训练高层工具规划器,robotics-embodied/papers/arxiv-2610.28589/reading.md
+公开资料包校验记录,robotics-embodied/fields/embodied-agents/reading-pack-2026-10-30/校验记录.md
+2026年10月8日研究短报,daily/2026-10-08.md
+2026-10-14 研究短报,daily/2026-10-14.md
+2026年10月16日研究短报,daily/2026-10-16.md
+2026-10-10 研究短报,daily/2026-10-10.md
+2026年10月1日研究短报,daily/2026-10-01.md
+2026年10月18日研究短报与周整理,daily/2026-10-18.md
+2026-10-13 研究短报,daily/2026-10-13.md
+2026年10月15日：视频证据怎样保留，长程目标怎样下传,daily/2026-10-15.md
+2026年10月2日研究短报,daily/2026-10-02.md
+2026-10-12 研究短报,daily/2026-10-12.md
+2026年10月17日研究短报,daily/2026-10-17.md
+2026-10-09 研究短报,daily/2026-10-09.md
+2026年10月6日研究短报,daily/2026-10-06.md
+2026年10月18日周整理,weekly/2026-10-18.md
+四足速度瞬态：把命令变化与更新时间分开,robotics-embodied/fields/control-locomotion/time-and-command.md
+知识库分支整合审计：2026-11-01,docs/branch-integration-2026-11-01.md

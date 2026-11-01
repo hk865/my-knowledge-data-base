@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2604.18791",
+  "title": "HELM: Harness-Enhanced Long-horizon Memory for Vision-Language-Action Manipulation",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2604.18791",
+  "official_url": "https://arxiv.org/abs/2604.18791v1",
+  "official_fulltext_url": "https://arxiv.org/pdf/2604.18791v1",
+  "read_version": "v1",
+  "first_submitted": "2026-04-20",
+  "version_date": "2026-04-20",
+  "year": 2026,
+  "authors": [
+    "Zeng, Zijian",
+    "Ding, Fei",
+    "Yang, Huiming",
+    "Li, Xianwei"
+  ],
+  "topic_paths": [
+    "robotics/embodied-agents"
+  ],
+  "modality_tags": [
+    "text",
+    "image",
+    "action",
+    "code"
+  ],
+  "task_tags": [
+    "decision",
+    "evaluation"
+  ],
+  "content_kind": "reading",
+  "reading_path": "robotics-embodied/papers/arxiv-2604.18791/reading.md",
+  "reading_depth": "selected_sections",
+  "reading_boundary": "原文方法、主要实验与相关附录定向阅读（方法、训练设置、仿真实验与消融）；非逐页通读，未复现。",
+  "independently_reproduced": false,
+  "supplementary_readings": [
+    "robotics-embodied/papers/arxiv-2604.18791/reading.md"
+  ],
+  "license": {
+    "status": "license_identified",
+    "license_urls": [
+      "http://creativecommons.org/licenses/by/4.0/"
+    ],
+    "checked_at": "2026-11-01",
+    "note": "仅链接官方原文，不镜像 PDF；arXiv nonexclusive-distrib 不作为第三方全文再发布授权。"
+  },
+  "reading_pack_2026_10_30": {
+    "read_version": "v1",
+    "version_date": "2026-04-20",
+    "reading_boundary": "原文方法、主要实验与相关附录定向阅读（方法、训练设置、仿真实验与消融）；非逐页通读，未复现。",
+    "original_checked_at": "2026-10-30",
+    "local_pdf_retained": true,
+    "public_pdf_mirror": false
+  }
+}

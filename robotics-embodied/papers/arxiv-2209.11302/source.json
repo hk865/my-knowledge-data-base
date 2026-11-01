@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2209.11302",
+  "title": "ProgPrompt: Generating Situated Robot Task Plans using Large Language Models",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2209.11302",
+  "official_url": "https://arxiv.org/abs/2209.11302v1",
+  "official_fulltext_url": "https://arxiv.org/pdf/2209.11302v1",
+  "read_version": "v1",
+  "first_submitted": "2022-09-22",
+  "version_date": "2022-09-22",
+  "year": 2022,
+  "authors": [
+    "Singh, Ishika",
+    "Blukis, Valts",
+    "Mousavian, Arsalan",
+    "Goyal, Ankit",
+    "Xu, Danfei",
+    "Tremblay, Jonathan",
+    "Fox, Dieter",
+    "Thomason, Jesse",
+    "Garg, Animesh"
+  ],
+  "topic_paths": [
+    "robotics/embodied-agents"
+  ],
+  "modality_tags": [
+    "text",
+    "image",
+    "action",
+    "code"
+  ],
+  "task_tags": [
+    "decision",
+    "evaluation"
+  ],
+  "content_kind": "reading",
+  "reading_path": "robotics-embodied/papers/arxiv-2209.11302/reading.md",
+  "reading_depth": "selected_sections",
+  "reading_boundary": "原文方法、主要实验与相关附录定向阅读（方法、§IV-B、§V-C）；非逐页通读，未复现。",
+  "independently_reproduced": false,
+  "supplementary_readings": [
+    "robotics-embodied/papers/arxiv-2209.11302/reading.md"
+  ],
+  "license": {
+    "status": "license_identified",
+    "license_urls": [
+      "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+    ],
+    "checked_at": "2026-11-01",
+    "note": "仅链接官方原文，不镜像 PDF；arXiv nonexclusive-distrib 不作为第三方全文再发布授权。"
+  },
+  "reading_pack_2026_10_30": {
+    "read_version": "v1",
+    "version_date": "2022-09-22",
+    "reading_boundary": "原文方法、主要实验与相关附录定向阅读（方法、§IV-B、§V-C）；非逐页通读，未复现。",
+    "original_checked_at": "2026-10-30",
+    "local_pdf_retained": true,
+    "public_pdf_mirror": false
+  }
+}

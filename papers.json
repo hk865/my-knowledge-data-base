@@ -6541,11 +6541,11 @@
     "teaching_status": "identity_verified_or_existing_catalog_only",
     "legacy_reading_status": "用户阅读状态待确认；本次核验题名与链接，不等于全文精读或独立复现",
     "canonical_folder": "robotics-embodied/papers/arxiv-2504.16054",
-    "canonical_path": "robotics-embodied/papers/arxiv-2504.16054/README.md",
+    "canonical_path": "robotics-embodied/papers/arxiv-2504.16054/reading.md",
     "canonical_readme": "robotics-embodied/papers/arxiv-2504.16054/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2504.16054/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card",
+    "content_kind": "reading",
     "authors": [
       "Physical Intelligence",
       "Kevin Black",
@@ -17482,11 +17482,11 @@
       "decision"
     ],
     "canonical_folder": "robotics-embodied/papers/arxiv-2207.05608",
-    "canonical_path": "robotics-embodied/papers/arxiv-2207.05608/README.md",
+    "canonical_path": "robotics-embodied/papers/arxiv-2207.05608/reading.md",
     "canonical_readme": "robotics-embodied/papers/arxiv-2207.05608/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2207.05608/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card",
+    "content_kind": "reading",
     "authors": [
       "Wenlong Huang",
       "Fei Xia",
@@ -17544,11 +17544,11 @@
       "decision"
     ],
     "canonical_folder": "robotics-embodied/papers/arxiv-2209.07753",
-    "canonical_path": "robotics-embodied/papers/arxiv-2209.07753/README.md",
+    "canonical_path": "robotics-embodied/papers/arxiv-2209.07753/reading.md",
     "canonical_readme": "robotics-embodied/papers/arxiv-2209.07753/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2209.07753/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card",
+    "content_kind": "reading",
     "authors": [
       "Jacky Liang",
       "Wenlong Huang",
@@ -17904,11 +17904,11 @@
       "decision"
     ],
     "canonical_folder": "robotics-embodied/papers/arxiv-2307.05973",
-    "canonical_path": "robotics-embodied/papers/arxiv-2307.05973/README.md",
+    "canonical_path": "robotics-embodied/papers/arxiv-2307.05973/reading.md",
     "canonical_readme": "robotics-embodied/papers/arxiv-2307.05973/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2307.05973/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card",
+    "content_kind": "reading",
     "authors": [
       "Wenlong Huang",
       "Chen Wang",
@@ -38353,11 +38353,11 @@
       "evaluation"
     ],
     "canonical_folder": "robotics-embodied/papers/arxiv-2609.12541",
-    "canonical_path": "robotics-embodied/papers/arxiv-2609.12541/README.md",
+    "canonical_path": "robotics-embodied/papers/arxiv-2609.12541/reading.md",
     "canonical_readme": "robotics-embodied/papers/arxiv-2609.12541/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2609.12541/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card",
+    "content_kind": "reading",
     "authors": [
       "Mengzhao Jia",
       "Yang Lin",
@@ -38475,11 +38475,11 @@
       "evaluation"
     ],
     "canonical_folder": "robotics-embodied/papers/arxiv-2606.19980",
-    "canonical_path": "robotics-embodied/papers/arxiv-2606.19980/README.md",
+    "canonical_path": "robotics-embodied/papers/arxiv-2606.19980/reading.md",
     "canonical_readme": "robotics-embodied/papers/arxiv-2606.19980/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2606.19980/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card",
+    "content_kind": "reading",
     "authors": [
       "Wenli Xiao",
       "Jia Xie",
@@ -38617,5 +38617,1641 @@
     ],
     "read_version": "v1",
     "reading_scope": "核对v1的3; 4.1-4.6; 5及所列官方来源；选定章节核验，未完整审计全部附录，未复现。"
+  },
+  {
+    "id": "arxiv:2408.14035",
+    "title": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry",
+    "url": "https://arxiv.org/abs/2408.14035",
+    "arxiv_id": "2408.14035",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2408.14035",
+      "https://github.com/hku-mars/FAST-LIVO2"
+    ],
+    "verification_status": "bibliographic_and_method_scope_checked",
+    "caveats": [],
+    "assistant_reading_status": "abstract_and_official_materials_checked",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p612",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2408.14035",
+    "canonical_path": "robotics-embodied/papers/arxiv-2408.14035/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2408.14035/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2408.14035/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Chunran Zheng",
+      "Wei Xu",
+      "Zuhao Zou",
+      "Tong Hua",
+      "Chongjian Yuan",
+      "Dongjiao He",
+      "Bingyang Zhou",
+      "Zheng Liu",
+      "Jiarong Lin",
+      "Fangcheng Zhu",
+      "Yunfan Ren",
+      "Rong Wang",
+      "Fanle Meng",
+      "Fu Zhang"
+    ],
+    "read_version": "v2",
+    "reading_scope": "核验论文摘要与公开官方材料、作为项目方案的文献定位；未进行全文精读或独立复现。"
+  },
+  {
+    "id": "arxiv:2509.15673",
+    "title": "Omni-LIVO: Robust RGB-Colored Multi-Camera Visual-Inertial-LiDAR Odometry via Photometric Migration and ESIKF Fusion",
+    "url": "https://arxiv.org/abs/2509.15673",
+    "arxiv_id": "2509.15673",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2509.15673",
+      "https://github.com/elon876/Omni-LIVO"
+    ],
+    "verification_status": "bibliographic_and_method_scope_checked",
+    "caveats": [],
+    "assistant_reading_status": "abstract_and_official_materials_checked",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p613",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2509.15673",
+    "canonical_path": "robotics-embodied/papers/arxiv-2509.15673/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2509.15673/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2509.15673/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Yinong Cao",
+      "Chenyang Zhang",
+      "Xin He",
+      "Yuwei Chen",
+      "Chengyu Pu",
+      "Bingtao Wang",
+      "Kaile Wu",
+      "Shouzheng Zhu",
+      "Fei Han",
+      "Shijie Liu",
+      "Chunlai Li",
+      "Jianyu Wang"
+    ],
+    "read_version": "v5",
+    "reading_scope": "核验论文摘要与公开官方材料、作为项目方案的文献定位；未进行全文精读或独立复现。"
+  },
+  {
+    "id": "arxiv:2603.19076",
+    "title": "DROID-SLAM in the Wild",
+    "url": "https://arxiv.org/abs/2603.19076",
+    "arxiv_id": "2603.19076",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2603.19076",
+      "https://github.com/MoyangLi00/DROID-W"
+    ],
+    "verification_status": "bibliographic_and_method_scope_checked",
+    "caveats": [],
+    "assistant_reading_status": "abstract_and_official_materials_checked",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p614",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2603.19076",
+    "canonical_path": "robotics-embodied/papers/arxiv-2603.19076/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2603.19076/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2603.19076/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Moyang Li",
+      "Zihan Zhu",
+      "Marc Pollefeys",
+      "Daniel Barath"
+    ],
+    "read_version": "v1",
+    "reading_scope": "核验论文摘要与公开官方材料、作为项目方案的文献定位；未进行全文精读或独立复现。"
+  },
+  {
+    "id": "arxiv:2604.26067",
+    "title": "RADIO-ViPE: Online Tightly Coupled Multi-Modal Fusion for Open-Vocabulary Semantic SLAM in Dynamic Environments",
+    "url": "https://arxiv.org/abs/2604.26067",
+    "arxiv_id": "2604.26067",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2604.26067",
+      "https://github.com/be2rlab/QUORUM"
+    ],
+    "verification_status": "bibliographic_and_method_scope_checked",
+    "caveats": [],
+    "assistant_reading_status": "abstract_and_official_materials_checked",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p615",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2604.26067",
+    "canonical_path": "robotics-embodied/papers/arxiv-2604.26067/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2604.26067/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2604.26067/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Zaid Nasser",
+      "Mikhail Iumanov",
+      "Tianhao Li",
+      "Maxim Popov",
+      "Jaafar Mahmoud",
+      "Sergey Kolyubin"
+    ],
+    "read_version": "v1",
+    "reading_scope": "核验论文摘要与公开官方材料、作为项目方案的文献定位；未进行全文精读或独立复现。"
+  },
+  {
+    "id": "arxiv:2504.03886",
+    "title": "WildGS-SLAM: Monocular Gaussian Splatting SLAM in Dynamic Environments",
+    "url": "https://arxiv.org/abs/2504.03886",
+    "arxiv_id": "2504.03886",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2504.03886",
+      "https://github.com/GradientSpaces/WildGS-SLAM"
+    ],
+    "verification_status": "bibliographic_and_method_scope_checked",
+    "caveats": [],
+    "assistant_reading_status": "abstract_and_official_materials_checked",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p616",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2504.03886",
+    "canonical_path": "robotics-embodied/papers/arxiv-2504.03886/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2504.03886/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2504.03886/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Jianhao Zheng",
+      "Zihan Zhu",
+      "Valentin Bieri",
+      "Marc Pollefeys",
+      "Songyou Peng",
+      "Iro Armeni"
+    ],
+    "read_version": "v1",
+    "reading_scope": "核验论文摘要与公开官方材料、作为项目方案的文献定位；未进行全文精读或独立复现。"
+  },
+  {
+    "id": "arxiv:2602.21644",
+    "title": "DAGS-SLAM: Dynamic-Aware 3DGS SLAM via Spatiotemporal Motion Probability and Uncertainty-Aware Scheduling",
+    "url": "https://arxiv.org/abs/2602.21644",
+    "arxiv_id": "2602.21644",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2602.21644"
+    ],
+    "verification_status": "bibliographic_and_method_scope_checked",
+    "caveats": [],
+    "assistant_reading_status": "abstract_and_official_materials_checked",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p617",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2602.21644",
+    "canonical_path": "robotics-embodied/papers/arxiv-2602.21644/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2602.21644/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2602.21644/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Li Zhang",
+      "Yu-An Liu",
+      "Xijia Jiang",
+      "Conghao Huang",
+      "Danyang Li",
+      "Yanyong Zhang"
+    ],
+    "read_version": "v2",
+    "reading_scope": "核验论文摘要与公开官方材料、作为项目方案的文献定位；未进行全文精读或独立复现。"
+  },
+  {
+    "id": "arxiv:2501.11893",
+    "title": "DynoSAM: Open-Source Smoothing and Mapping Framework for Dynamic SLAM",
+    "url": "https://arxiv.org/abs/2501.11893",
+    "arxiv_id": "2501.11893",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2501.11893",
+      "https://github.com/ACFR-RPG/DynOSAM"
+    ],
+    "verification_status": "bibliographic_and_method_scope_checked",
+    "caveats": [],
+    "assistant_reading_status": "abstract_and_official_materials_checked",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p618",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2501.11893",
+    "canonical_path": "robotics-embodied/papers/arxiv-2501.11893/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2501.11893/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2501.11893/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Jesse Morris",
+      "Yiduo Wang",
+      "Mikolaj Kliniewski",
+      "Viorela Ila"
+    ],
+    "read_version": "v3",
+    "reading_scope": "核验论文摘要与公开官方材料、作为项目方案的文献定位；未进行全文精读或独立复现。"
+  },
+  {
+    "id": "arxiv:2007.01867",
+    "title": "TLIO: Tight Learned Inertial Odometry",
+    "url": "https://arxiv.org/abs/2007.01867",
+    "arxiv_id": "2007.01867",
+    "doi": null,
+    "year": "2020",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2007.01867",
+      "https://github.com/CathIAS/TLIO"
+    ],
+    "verification_status": "bibliographic_and_method_scope_checked",
+    "caveats": [],
+    "assistant_reading_status": "abstract_and_official_materials_checked",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p619",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2007.01867",
+    "canonical_path": "robotics-embodied/papers/arxiv-2007.01867/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2007.01867/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2007.01867/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Wenxin Liu",
+      "David Caruso",
+      "Eddy Ilg",
+      "Jing Dong",
+      "Anastasios I. Mourikis",
+      "Kostas Daniilidis",
+      "Vijay Kumar",
+      "Jakob Engel"
+    ],
+    "read_version": "v3",
+    "reading_scope": "核验论文摘要与公开官方材料、作为项目方案的文献定位；未进行全文精读或独立复现。"
+  },
+  {
+    "id": "arxiv:2310.04874",
+    "title": "AirIMU: Learning Uncertainty Propagation for Inertial Odometry",
+    "url": "https://arxiv.org/abs/2310.04874",
+    "arxiv_id": "2310.04874",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2310.04874"
+    ],
+    "verification_status": "bibliographic_and_method_scope_checked",
+    "caveats": [],
+    "assistant_reading_status": "abstract_and_official_materials_checked",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p620",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2310.04874",
+    "canonical_path": "robotics-embodied/papers/arxiv-2310.04874/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2310.04874/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2310.04874/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Yuheng Qiu",
+      "Chen Wang",
+      "Can Xu",
+      "Yutian Chen",
+      "Xunfei Zhou",
+      "Youjie Xia",
+      "Sebastian Scherer"
+    ],
+    "read_version": "v4",
+    "reading_scope": "核验论文摘要与公开官方材料、作为项目方案的文献定位；未进行全文精读或独立复现。"
+  },
+  {
+    "id": "arxiv:1605.07148",
+    "title": "Backprop KF: Learning Discriminative Deterministic State Estimators",
+    "url": "https://arxiv.org/abs/1605.07148",
+    "arxiv_id": "1605.07148",
+    "doi": null,
+    "year": "2016",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/1605.07148"
+    ],
+    "verification_status": "bibliographic_and_method_scope_checked",
+    "caveats": [],
+    "assistant_reading_status": "abstract_and_official_materials_checked",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p621",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-1605.07148",
+    "canonical_path": "robotics-embodied/papers/arxiv-1605.07148/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-1605.07148/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-1605.07148/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Tuomas Haarnoja",
+      "Anurag Ajay",
+      "Sergey Levine",
+      "Pieter Abbeel"
+    ],
+    "read_version": "v4",
+    "reading_scope": "核验论文摘要与公开官方材料、作为项目方案的文献定位；未进行全文精读或独立复现。"
+  },
+  {
+    "id": "arxiv:1512.02363",
+    "title": "On-Manifold Preintegration for Real-Time Visual-Inertial Odometry",
+    "url": "https://arxiv.org/abs/1512.02363",
+    "arxiv_id": "1512.02363",
+    "doi": null,
+    "year": "2017",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/1512.02363"
+    ],
+    "verification_status": "bibliographic_and_method_scope_checked",
+    "caveats": [],
+    "assistant_reading_status": "abstract_and_official_materials_checked",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p622",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-1512.02363",
+    "canonical_path": "robotics-embodied/papers/arxiv-1512.02363/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-1512.02363/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-1512.02363/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Christian Forster",
+      "Luca Carlone",
+      "Frank Dellaert",
+      "Davide Scaramuzza"
+    ],
+    "read_version": "v3",
+    "reading_scope": "核验论文摘要与公开官方材料、作为项目方案的文献定位；未进行全文精读或独立复现。"
+  },
+  {
+    "id": "arxiv:2609.19336",
+    "title": "Dynamic-LIVO: A Dynamic-Aware LiDAR-Inertial-Visual Odometry System Using Spatio-Temporal Normals",
+    "url": "https://arxiv.org/abs/2609.19336",
+    "arxiv_id": "2609.19336",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2609.19336"
+    ],
+    "verification_status": "bibliographic_and_method_scope_checked",
+    "caveats": [],
+    "assistant_reading_status": "abstract_and_official_materials_checked",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p623",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2609.19336",
+    "canonical_path": "robotics-embodied/papers/arxiv-2609.19336/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2609.19336/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2609.19336/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Zhixin Zhang",
+      "Samuel Ahiwe",
+      "Matthew Hale",
+      "Liang Zhao",
+      "Pawel Ladosz"
+    ],
+    "reading_scope": "核验摘要与公开材料，未全文精读或独立复现。"
+  },
+  {
+    "id": "doi:10.2139/ssrn.7602304",
+    "title": "RT-LIVO: Semantic and Motion-Aware LiDAR-Inertial-Visual Odometry for Robust Mapping in Dynamic Environments",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7602304",
+    "arxiv_id": null,
+    "doi": "10.2139/ssrn.7602304",
+    "year": "2026",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7602304"
+    ],
+    "verification_status": "bibliographic_and_method_scope_checked",
+    "caveats": [],
+    "assistant_reading_status": "abstract_only",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p624",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/doi-10.2139-ssrn.7602304",
+    "canonical_path": "robotics-embodied/papers/doi-10.2139-ssrn.7602304/README.md",
+    "canonical_readme": "robotics-embodied/papers/doi-10.2139-ssrn.7602304/README.md",
+    "source_path": "robotics-embodied/papers/doi-10.2139-ssrn.7602304/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Yuxiang Yang",
+      "Siyu Xie",
+      "Tianrui Zhou",
+      "Hanling Chen",
+      "Ran Zhou",
+      "Chiang Liu",
+      "Yuhao Yang",
+      "Gun Li"
+    ],
+    "reading_scope": "核验 SSRN 搜索索引所载元数据和摘要；直接全文访问返回403，全文未读。"
+  },
+  {
+    "id": "arxiv:2507.08364",
+    "title": "Towards Robust Sensor-Fusion Ground SLAM: A Comprehensive Benchmark and A Resilient Framework",
+    "url": "https://arxiv.org/abs/2507.08364",
+    "arxiv_id": "2507.08364",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2507.08364",
+      "https://github.com/sjtuyinjie/M3DGR",
+      "https://sjtuyinjie.github.io/M3DGR-website/"
+    ],
+    "verification_status": "bibliographic_and_method_scope_checked",
+    "caveats": [],
+    "assistant_reading_status": "abstract_and_official_materials_checked",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p625",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2507.08364",
+    "canonical_path": "robotics-embodied/papers/arxiv-2507.08364/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2507.08364/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2507.08364/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Deteng Zhang",
+      "Junjie Zhang",
+      "Yan Sun",
+      "Tao Li",
+      "Hao Yin",
+      "Hongzhao Xie",
+      "Jie Yin"
+    ],
+    "reading_scope": "核验摘要、官方数据集页面及标定说明；未全文精读，未下载或审计数据。"
+  },
+  {
+    "id": "arxiv:2209.11302",
+    "title": "ProgPrompt: Generating Situated Robot Task Plans using Large Language Models",
+    "url": "https://arxiv.org/abs/2209.11302v1",
+    "arxiv_id": "2209.11302",
+    "doi": null,
+    "year": "2022",
+    "topic_paths": [
+      "robotics/embodied-agents"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2209.11302v1"
+    ],
+    "verification_status": "not_recorded",
+    "caveats": [],
+    "assistant_reading_status": "selected_sections",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p626",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "code"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2209.11302",
+    "canonical_path": "robotics-embodied/papers/arxiv-2209.11302/reading.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2209.11302/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2209.11302/source.json",
+    "legacy_paths": [],
+    "content_kind": "reading",
+    "authors": [
+      "Singh, Ishika",
+      "Blukis, Valts",
+      "Mousavian, Arsalan",
+      "Goyal, Ankit",
+      "Xu, Danfei",
+      "Tremblay, Jonathan",
+      "Fox, Dieter",
+      "Thomason, Jesse",
+      "Garg, Animesh"
+    ],
+    "read_version": "v1",
+    "reading_scope": "原文方法、主要实验与相关附录定向阅读（方法、§IV-B、§V-C）；非逐页通读，未复现。"
+  },
+  {
+    "id": "arxiv:2409.01652",
+    "title": "ReKep: Spatio-Temporal Reasoning of Relational Keypoint Constraints for Robotic Manipulation",
+    "url": "https://arxiv.org/abs/2409.01652v2",
+    "arxiv_id": "2409.01652",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "robotics/embodied-agents"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2409.01652v2"
+    ],
+    "verification_status": "not_recorded",
+    "caveats": [],
+    "assistant_reading_status": "selected_sections",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p627",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "code"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2409.01652",
+    "canonical_path": "robotics-embodied/papers/arxiv-2409.01652/reading.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2409.01652/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2409.01652/source.json",
+    "legacy_paths": [],
+    "content_kind": "reading",
+    "authors": [
+      "Huang, Wenlong",
+      "Wang, Chen",
+      "Li, Yunzhu",
+      "Zhang, Ruohan",
+      "Fei-Fei, Li"
+    ],
+    "read_version": "v2",
+    "reading_scope": "原文方法、主要实验与相关附录定向阅读（§3–5、附录 A.11）；非逐页通读，未复现。"
+  },
+  {
+    "id": "arxiv:2509.18597",
+    "title": "Growing with Your Embodied Agent: A Human-in-the-Loop Lifelong Code Generation Framework for Long-Horizon Manipulation Skills",
+    "url": "https://arxiv.org/abs/2509.18597v2",
+    "arxiv_id": "2509.18597",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/embodied-agents"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2509.18597v2"
+    ],
+    "verification_status": "not_recorded",
+    "caveats": [],
+    "assistant_reading_status": "selected_sections",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p628",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "code"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2509.18597",
+    "canonical_path": "robotics-embodied/papers/arxiv-2509.18597/reading.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2509.18597/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2509.18597/source.json",
+    "legacy_paths": [],
+    "content_kind": "reading",
+    "authors": [
+      "Meng, Yuan",
+      "Sun, Zhenguo",
+      "Fest, Max",
+      "Li, Xukun",
+      "Bing, Zhenshan",
+      "Knoll, Alois"
+    ],
+    "read_version": "v2",
+    "reading_scope": "原文方法、主要实验与相关附录定向阅读（v2 §2–3、附录 C；未用 v3 结果）；非逐页通读，未复现。"
+  },
+  {
+    "id": "arxiv:2510.23176",
+    "title": "TARC: Time-Adaptive Robotic Control",
+    "url": "https://arxiv.org/abs/2510.23176",
+    "arxiv_id": "2510.23176",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "active-web-discovery"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2510.23176",
+      "https://arxiv.org/html/2510.23176v2",
+      "https://arnavsukhija.github.io/projects/tarc/"
+    ],
+    "verification_status": "official_identity_and_selected_sections_checked",
+    "caveats": [],
+    "assistant_reading_status": "selected_sections_checked_not_full_read",
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p629",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "state",
+      "action",
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2510.23176",
+    "canonical_path": "robotics-embodied/papers/arxiv-2510.23176/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2510.23176/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2510.23176/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Arnav Sukhija",
+      "Lenart Treven",
+      "Jin Cheng",
+      "Florian Dörfler",
+      "Stelian Coros",
+      "Andreas Krause"
+    ],
+    "read_version": "v2",
+    "reading_scope": "核对 arXiv v2 摘要与版本、§2–5、§7、Appendix A 的时间折扣说明、Appendix B.1/B.2、C.1/C.2 相关 Go1 对照文字，以及作者项目页。重点为可变保持时长、同平均频率基线、真机短时评估和安全边界；未全文精读、未逐项复核图像和全部附录，未运行代码或复现实验。"
+  },
+  {
+    "id": "arxiv:2603.04466",
+    "title": "Act-Observe-Rewrite: Multimodal Coding Agents as In-Context Policy Learners for Robot Manipulation",
+    "url": "https://arxiv.org/abs/2603.04466v1",
+    "arxiv_id": "2603.04466",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/embodied-agents"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2603.04466v1"
+    ],
+    "verification_status": "not_recorded",
+    "caveats": [],
+    "assistant_reading_status": "selected_sections",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p630",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "code"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2603.04466",
+    "canonical_path": "robotics-embodied/papers/arxiv-2603.04466/reading.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2603.04466/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2603.04466/source.json",
+    "legacy_paths": [],
+    "content_kind": "reading",
+    "authors": [
+      "Kumar, Vaishak"
+    ],
+    "read_version": "v1",
+    "reading_scope": "原文方法、主要实验与相关附录定向阅读（方法、robosuite 三任务实验、观测与控制接口）；非逐页通读，未复现。"
+  },
+  {
+    "id": "arxiv:2603.22435",
+    "title": "CaP-X: A Framework for Benchmarking and Improving Coding Agents for Robot Manipulation",
+    "url": "https://arxiv.org/abs/2603.22435v2",
+    "arxiv_id": "2603.22435",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/embodied-agents"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2603.22435v2"
+    ],
+    "verification_status": "not_recorded",
+    "caveats": [],
+    "assistant_reading_status": "selected_sections",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p631",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "code"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2603.22435",
+    "canonical_path": "robotics-embodied/papers/arxiv-2603.22435/reading.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2603.22435/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2603.22435/source.json",
+    "legacy_paths": [],
+    "content_kind": "reading",
+    "authors": [
+      "Fu, Letian",
+      "Yu, Justin",
+      "El-Refai, Karim",
+      "Kou, Ethan",
+      "Xue, Haoru",
+      "Huang, Huang",
+      "Xiao, Wenli",
+      "Wang, Guanzhi",
+      "Niu, Dantong",
+      "Li, Fei-Fei",
+      "Shi, Guanya",
+      "Wu, Jiajun",
+      "Sastry, Shankar",
+      "Zhu, Yuke",
+      "Goldberg, Ken",
+      "Fan, Linxi \"Jim\""
+    ],
+    "read_version": "v2",
+    "reading_scope": "原文方法、主要实验与相关附录定向阅读（CaP-Gym、Bench、Agent0、CaP-RL 与附录协议）；非逐页通读，未复现。"
+  },
+  {
+    "id": "arxiv:2604.18791",
+    "title": "HELM: Harness-Enhanced Long-horizon Memory for Vision-Language-Action Manipulation",
+    "url": "https://arxiv.org/abs/2604.18791v1",
+    "arxiv_id": "2604.18791",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/embodied-agents"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2604.18791v1"
+    ],
+    "verification_status": "not_recorded",
+    "caveats": [],
+    "assistant_reading_status": "selected_sections",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p632",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "code"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2604.18791",
+    "canonical_path": "robotics-embodied/papers/arxiv-2604.18791/reading.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2604.18791/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2604.18791/source.json",
+    "legacy_paths": [],
+    "content_kind": "reading",
+    "authors": [
+      "Zeng, Zijian",
+      "Ding, Fei",
+      "Yang, Huiming",
+      "Li, Xianwei"
+    ],
+    "read_version": "v1",
+    "reading_scope": "原文方法、主要实验与相关附录定向阅读（方法、训练设置、仿真实验与消融）；非逐页通读，未复现。"
+  },
+  {
+    "id": "arxiv:2607.00272",
+    "title": "ASPIRE: Agentic /Skills Discovery for Robotics",
+    "url": "https://arxiv.org/abs/2607.00272v2",
+    "arxiv_id": "2607.00272",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/embodied-agents"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2607.00272v2"
+    ],
+    "verification_status": "not_recorded",
+    "caveats": [],
+    "assistant_reading_status": "selected_sections",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p633",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "code"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2607.00272",
+    "canonical_path": "robotics-embodied/papers/arxiv-2607.00272/reading.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2607.00272/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2607.00272/source.json",
+    "legacy_paths": [],
+    "content_kind": "reading",
+    "authors": [
+      "Lu, Runyu",
+      "Wu, Yubo",
+      "Kou, Ethan",
+      "Lin, Haotian",
+      "Fu, Letian",
+      "Xiao, Wenli",
+      "Mandlekar, Ajay",
+      "Xu, Yinzhen",
+      "Shi, Guanya",
+      "Goldberg, Ken",
+      "Chen, Ang",
+      "Chowdhury, Mosharaf",
+      "Kautz, Jan",
+      "Zhu, Yuke",
+      "Fan, Linxi \"Jim\"",
+      "Wang, Guanzhi"
+    ],
+    "read_version": "v2",
+    "reading_scope": "原文方法、主要实验与相关附录定向阅读（方法、实验、debug/verifier/held-out 评估附录）；非逐页通读，未复现。"
+  },
+  {
+    "id": "arxiv:2609.13289",
+    "title": "Extending the Speed Limit of Quadrupedal Locomotion via Refined Actuator Modeling and Adaptive Command Scheduling",
+    "url": "https://arxiv.org/abs/2609.13289",
+    "arxiv_id": "2609.13289",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/control"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "active-web-discovery"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2609.13289",
+      "https://arxiv.org/html/2609.13289v1",
+      "https://doi.org/10.1109/LRA.2026.3726387"
+    ],
+    "verification_status": "official_identity_and_selected_sections_checked",
+    "caveats": [],
+    "assistant_reading_status": "selected_sections_checked_not_full_read",
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p634",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "state",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2609.13289",
+    "canonical_path": "robotics-embodied/papers/arxiv-2609.13289/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2609.13289/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2609.13289/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Yucheng Tao",
+      "Shaowen Cheng",
+      "Guorong Lan",
+      "Yanyan Yuan",
+      "Yongbin Jin",
+      "Hongtao Wang"
+    ],
+    "read_version": "v1",
+    "reading_scope": "核对 arXiv v1 摘要、引言、II-B、III 的执行器模型概述与 III-B-3、IV-A/B/C/D、Tables II/III；重点为 ACS 定义、同平台消融和瞬态评估边界。未全文精读、未审计全部推导，未运行代码或复现实验。"
+  },
+  {
+    "id": "arxiv:2609.33807",
+    "title": "CodeActionBench: Evaluating Agentic Code-as-Policy for Embodied Manipulation",
+    "url": "https://arxiv.org/abs/2609.33807v1",
+    "arxiv_id": "2609.33807",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/embodied-agents"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2609.33807v1"
+    ],
+    "verification_status": "not_recorded",
+    "caveats": [],
+    "assistant_reading_status": "selected_sections",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p635",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "code"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2609.33807",
+    "canonical_path": "robotics-embodied/papers/arxiv-2609.33807/reading.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2609.33807/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2609.33807/source.json",
+    "legacy_paths": [],
+    "content_kind": "reading",
+    "authors": [
+      "Lyu, Yiheng",
+      "Jiang, Xueying",
+      "Li, Wenhao",
+      "Lu, Shijian",
+      "Zhang, Gongjie"
+    ],
+    "read_version": "v1",
+    "reading_scope": "原文方法、主要实验与相关附录定向阅读（25 任务协议、模型配置、结果与限制）；非逐页通读，未复现。"
+  },
+  {
+    "id": "arxiv:2609.39018",
+    "title": "Make Code as Policy Great Again: Frontier Agents Write, Call, and Evolve Robot Tools",
+    "url": "https://arxiv.org/abs/2609.39018v1",
+    "arxiv_id": "2609.39018",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/embodied-agents"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2609.39018v1"
+    ],
+    "verification_status": "not_recorded",
+    "caveats": [],
+    "assistant_reading_status": "selected_sections",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p636",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "code"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2609.39018",
+    "canonical_path": "robotics-embodied/papers/arxiv-2609.39018/reading.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2609.39018/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2609.39018/source.json",
+    "legacy_paths": [],
+    "content_kind": "reading",
+    "authors": [
+      "Ge, Shijia",
+      "Zhou, Alex",
+      "Zeng, Jianshu",
+      "Wan, Yexing",
+      "Wu, Di",
+      "Zheng, Zelin",
+      "Wang, Yazhe",
+      "Jia, Zhiqi",
+      "Shangguan, Xuan",
+      "Zhu, Jay",
+      "Liu, Yijun",
+      "He, Lingyu",
+      "Wu, Sihang",
+      "He, Xiao",
+      "Gao, Hongcheng"
+    ],
+    "read_version": "v1",
+    "reading_scope": "原文方法、主要实验与相关附录定向阅读（方法、RoboDojo 实验与工具消融、真机边界）；非逐页通读，未复现。"
+  },
+  {
+    "id": "arxiv:2610.02459",
+    "title": "OpenRUA: Robot-Use Agents Are Zero-Shot Visuomotor Policies",
+    "url": "https://arxiv.org/abs/2610.02459v1",
+    "arxiv_id": "2610.02459",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/embodied-agents"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2610.02459v1"
+    ],
+    "verification_status": "not_recorded",
+    "caveats": [],
+    "assistant_reading_status": "selected_sections",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p637",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "code"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2610.02459",
+    "canonical_path": "robotics-embodied/papers/arxiv-2610.02459/reading.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2610.02459/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2610.02459/source.json",
+    "legacy_paths": [],
+    "content_kind": "reading",
+    "authors": [
+      "Chu, Zhaoyang",
+      "Barr, Earl T.",
+      "Goues, Claire Le",
+      "O'Hearn, Peter",
+      "Harman, Mark",
+      "Sarro, Federica",
+      "Ye, He"
+    ],
+    "read_version": "v1",
+    "reading_scope": "原文方法、主要实验与相关附录定向阅读（方法、CaP/LIBERO/RoboCasa 协议与结果表）；非逐页通读，未复现。"
+  },
+  {
+    "id": "arxiv:2610.13929",
+    "title": "Chronos Policy: Learning Robot Policies on Physical Time",
+    "url": "https://arxiv.org/abs/2610.13929",
+    "arxiv_id": "2610.13929",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "active-web-discovery"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2610.13929",
+      "https://arxiv.org/html/2610.13929v1",
+      "https://arxiv.org/pdf/2610.13929v1",
+      "https://changhaowang.github.io/chronospolicy/"
+    ],
+    "verification_status": "primary_sources_selected_sections_checked",
+    "caveats": [],
+    "assistant_reading_status": "selected_sections_checked_not_full_read",
+    "reading_status": "not_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p638",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2610.13929",
+    "canonical_path": "robotics-embodied/papers/arxiv-2610.13929/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2610.13929/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2610.13929/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Changhao Wang",
+      "Jaden Clark",
+      "Shuran Song"
+    ],
+    "original_chat_urls": [],
+    "reading_scope": "官方核验选读：§3–5、附录 A–C；重点为时间戳/RoPE、同骨干同频率与延迟对照边界。不是全文精读或复现。",
+    "read_version": "arXiv v1"
+  },
+  {
+    "id": "arxiv:2610.22496",
+    "title": "Scaling Online Exploration for Robot Agents",
+    "url": "https://arxiv.org/abs/2610.22496v1",
+    "arxiv_id": "2610.22496",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/embodied-agents"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2610.22496v1"
+    ],
+    "verification_status": "not_recorded",
+    "caveats": [],
+    "assistant_reading_status": "selected_sections",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p639",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "code"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2610.22496",
+    "canonical_path": "robotics-embodied/papers/arxiv-2610.22496/reading.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2610.22496/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2610.22496/source.json",
+    "legacy_paths": [],
+    "content_kind": "reading",
+    "authors": [
+      "Huang, Runhan",
+      "Zhang, Xiangcheng",
+      "Chen, Haoyu",
+      "Li, Yitong",
+      "Wang, Yen-Jen",
+      "Lyu, Bohan",
+      "Ye, Haotian",
+      "Hong, Chuye",
+      "Wang, Yixuan",
+      "Su, Chloe",
+      "Xiong, Haoyu",
+      "Wu, Yangzhen",
+      "Xie, Enze",
+      "Manderson, Travis",
+      "Ermon, Stefano",
+      "Abbeel, Pieter",
+      "Torralba, Antonio",
+      "Song, Dawn",
+      "Ye, Weirui",
+      "Du, Yilun"
+    ],
+    "read_version": "v1",
+    "reading_scope": "原文方法、主要实验与相关附录定向阅读（方法、主要实验、附录 C/G；定向阅读而非 77 页逐页通读）；非逐页通读，未复现。"
+  },
+  {
+    "id": "arxiv:2610.28589",
+    "title": "AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics",
+    "url": "https://arxiv.org/abs/2610.28589v2",
+    "arxiv_id": "2610.28589",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/embodied-agents"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2610.28589v2"
+    ],
+    "verification_status": "not_recorded",
+    "caveats": [],
+    "assistant_reading_status": "selected_sections",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p640",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "image",
+      "action",
+      "code"
+    ],
+    "task_tags": [
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2610.28589",
+    "canonical_path": "robotics-embodied/papers/arxiv-2610.28589/reading.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2610.28589/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2610.28589/source.json",
+    "legacy_paths": [],
+    "content_kind": "reading",
+    "authors": [
+      "Liu, Xinxin",
+      "Xu, Bingxin",
+      "Bao, Wenrui",
+      "Li, Ming",
+      "Bao, Wentao",
+      "Chen, Chen",
+      "Shang, Yuzhang"
+    ],
+    "read_version": "v2",
+    "reading_scope": "原文方法、主要实验与相关附录定向阅读（§3–4 与训练/评估设置；官方 README 发布范围）；非逐页通读，未复现。"
   }
 ]

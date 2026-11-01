@@ -19,3 +19,5 @@
 - 稳定标识：arxiv:2609.37810（Xie、Chen、Cao、Lu、Wu、Jiang；v1，2026-09）
 - 全文：[arXiv PDF v1](https://arxiv.org/pdf/2609.37810v1)
 - 方向：[具身 Agents](../../fields/embodied-agents/README.md)（跨领域另见[智能体](../../../cross-domain/fields/agents/README.md)）
+
+- [机械臂执行与公平评测补充解读](reading-2026-10-30.md)

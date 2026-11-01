@@ -73,3 +73,27 @@
 
 - [Towards Deploying VLA without Fine-Tuning: Plug-and-Play Inference-Time VLA Policy Steering via Embodied Evolutionary Diffusion](../../papers/arxiv-2511.14178/README.md) · 2025 · 技术精读 · 2026 年 4 月 v2；黑盒奖励与进化搜索
 - [Do What You Say: Steering Vision-Language-Action Models via Runtime Reasoning-Action Alignment Verification](../../papers/arxiv-2510.16281/README.md) · 2025 · 文献卡 · 2026 年 1 月 v2；推理与动作对齐验证
+
+## 2026-11-01 机械臂资料包
+
+- [SayCan](../../papers/saycan/reading-2026-10-30.md)
+- [Inner Monologue](../../papers/arxiv-2207.05608/reading.md)
+- [Code as Policies](../../papers/arxiv-2209.07753/reading.md)
+- [ProgPrompt](../../papers/arxiv-2209.11302/reading.md)
+- [VoxPoser](../../papers/arxiv-2307.05973/reading.md)
+- [ReKep](../../papers/arxiv-2409.01652/reading.md)
+- [π0.5（VLA 背景）](../../papers/arxiv-2504.16054/reading.md)
+- [LYRA（2025 v2）](../../papers/arxiv-2509.18597/reading.md)
+- [Act-Observe-Rewrite](../../papers/arxiv-2603.04466/reading.md)
+- [CaP-X](../../papers/arxiv-2603.22435/reading.md)
+- [HELM](../../papers/arxiv-2604.18791/reading.md)
+- [ENPIRE](../../papers/arxiv-2606.19980/reading.md)
+- [ASPIRE](../../papers/arxiv-2607.00272/reading.md)
+- [Harness VLA / RPent](../../papers/arxiv-2607.08448/reading-2026-10-30.md)
+- [Agent as Policy](../../papers/arxiv-2609.12541/reading.md)
+- [CodeActionBench](../../papers/arxiv-2609.33807/reading.md)
+- [RoboSkill](../../papers/roboskill/reading-2026-10-30.md)
+- [URAI](../../papers/arxiv-2609.39018/reading.md)
+- [OpenRUA](../../papers/arxiv-2610.02459/reading.md)
+- [RAX](../../papers/arxiv-2610.22496/reading.md)
+- [AgenticRoboRL](../../papers/arxiv-2610.28589/reading.md)

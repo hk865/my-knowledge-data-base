@@ -51,17 +51,20 @@
     "decision",
     "evaluation"
   ],
-  "content_kind": "bibliographic_card",
-  "reading_depth": "selected_method_and_evaluation_sections_checked_not_full_read",
-  "reading_path": null,
-  "reading_boundary": "核对v2的2; 3.1-3.6; 4; Appendix B.3-B.6; official project's pass@8 explanation; official code README environment boundary及所列官方来源；选定章节核验，未完整审计全部附录，未复现。",
+  "content_kind": "reading",
+  "reading_depth": "selected_sections",
+  "reading_path": "robotics-embodied/papers/arxiv-2606.19980/reading.md",
+  "reading_boundary": "原文方法、主要实验与相关附录定向阅读（方法、实验、安全与 reset/reward 接口附录）；非逐页通读，未复现。",
   "teaching_status": "not_created",
   "user_reading_status": "not_asserted",
   "independently_reproduced": false,
   "license": {
-    "status": "not_audited",
-    "license_url": null,
-    "note": "仅链接官方来源，不再分发论文、权重或数据。"
+    "status": "license_identified",
+    "license_urls": [
+      "http://creativecommons.org/licenses/by/4.0/"
+    ],
+    "checked_at": "2026-11-01",
+    "note": "仅链接官方原文，不镜像 PDF；arXiv nonexclusive-distrib 不作为第三方全文再发布授权。"
   },
   "fulltext_local_status": "official_link_only",
   "fulltext_local_path": null,
@@ -88,5 +91,16 @@
   "intervention": "agent_guided_action_policy_training_and_experiments",
   "training_boundary": "未报告coding LLM微调；更新对象包含低层actor/critic、BC/RL配方与数据混合，不能缩写成只微调VLA动作头。",
   "project_url": "https://research.nvidia.com/labs/gear/enpire/",
-  "code_url": "https://github.com/NVlabs/ENPIRE"
+  "code_url": "https://github.com/NVlabs/ENPIRE",
+  "supplementary_readings": [
+    "robotics-embodied/papers/arxiv-2606.19980/reading.md"
+  ],
+  "reading_pack_2026_10_30": {
+    "read_version": "v2",
+    "version_date": "2026-09-20",
+    "reading_boundary": "原文方法、主要实验与相关附录定向阅读（方法、实验、安全与 reset/reward 接口附录）；非逐页通读，未复现。",
+    "original_checked_at": "2026-10-30",
+    "local_pdf_retained": true,
+    "public_pdf_mirror": false
+  }
 }

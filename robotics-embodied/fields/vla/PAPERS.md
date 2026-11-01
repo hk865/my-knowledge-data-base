@@ -83,3 +83,7 @@
 - [RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation of Generalist Robot Manipulation Policies](../../papers/arxiv-2607.04434/README.md) · 2026 · 文献卡 · 评测协议与复现
 - [VLA-REPLICA: A Low-Cost, Reproducible Benchmark for Real-World Evaluation of Vision-Language-Action Models](../../papers/arxiv-2605.20774/README.md) · 2026 · 文献卡 · 评测协议与复现
 - [IndustrialVLA-Bench: A Traceable Multi-Axis Evaluation of Open Robot Policy Models](../../papers/arxiv-2609.25562/README.md) · 2026 · 文献卡 · 评测协议与复现
+
+## 2026-11-01 时间接口交叉阅读
+
+[Chronos Policy](../../papers/arxiv-2610.13929/README.md)：观测采集与动作执行时间的编码，详见[控制时间专题](../control-locomotion/time-and-command.md)。

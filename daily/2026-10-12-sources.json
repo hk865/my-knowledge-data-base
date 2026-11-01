@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-12",
+  "scope": "Daily candidates only; no formal catalog admission",
+  "sources": [
+    {
+      "resource_id": "arxiv:2408.14035",
+      "title": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry",
+      "first_submitted": "2024-08-26",
+      "version": "v2",
+      "version_date": "2024-08-28",
+      "discovery_channel": "topic-directed official-source verification",
+      "status": "待周整理",
+      "topic_paths": [
+        "robotics/localization-mapping",
+        "robotics/perception"
+      ],
+      "reading_depth": "Selected sections V-B, V-E, VI, VII, IX-A and sequential-update discussion; not independently reproduced",
+      "evidence_boundary": "Geometry is built from LiDAR; image photometric updates constrain state. Default normal refinement is off. This brief does not claim visual densification of the map.",
+      "official_url": "https://arxiv.org/abs/2408.14035",
+      "official_fulltext_url": "https://arxiv.org/html/2408.14035v2"
+    },
+    {
+      "resource_id": "arxiv:2507.15496",
+      "title": "Dense-depth map guided deep Lidar-Visual Odometry with Sparse Point Clouds and Images",
+      "first_submitted": "2025-07-21",
+      "version": "v1",
+      "version_date": "2025-07-21",
+      "discovery_channel": "topic-directed official-source verification",
+      "status": "待周整理",
+      "topic_paths": [
+        "robotics/localization-mapping",
+        "robotics/perception"
+      ],
+      "reading_depth": "Selected methods III-A/III-D/III-E, experiments IV and conclusion; not independently reproduced",
+      "evidence_boundary": "Table IV on KITTI 09-10 reports translation 3.26% for sparse-depth input and 0.96% for completed depth. Sparse baseline fills missing depth with a default value. Trained on 00-08; does not validate quadruped deployment or integration into FAST-LIVO2.",
+      "official_url": "https://arxiv.org/abs/2507.15496",
+      "official_fulltext_url": "https://arxiv.org/html/2507.15496v1"
+    },
+    {
+      "resource_id": "arxiv:2610.08780",
+      "title": "DepthWorld: 3D World Model for Robot Manipulation",
+      "first_submitted": "2026-10-06",
+      "version": "v1",
+      "version_date": "2026-10-06",
+      "discovery_channel": "proactive official-paper search",
+      "status": "待周整理",
+      "topic_paths": [
+        "multimodal/world-models",
+        "robotics/perception"
+      ],
+      "reading_depth": "Selected methods, matched RGB-only comparison in Table 2, appendices C.8 and D.3-D.4 and limitations; not independently reproduced",
+      "evidence_boundary": "Same training steps do not establish equal compute. Test trajectories share robots and labs with training. Depth reference is learned stereo reconstructed through the VAE. No closed-loop success-rate gain is established.",
+      "official_url": "https://arxiv.org/abs/2610.08780",
+      "official_fulltext_url": "https://arxiv.org/html/2610.08780v1",
+      "official_project_url": "https://jaibardhan.com/depthworld/"
+    },
+    {
+      "resource_id": "arxiv:2207.12520",
+      "title": "3D Lidar Reconstruction with Probabilistic Depth Completion for Robotic Navigation",
+      "first_submitted": "2022-07-25",
+      "version": "v1",
+      "version_date": "2022-07-25",
+      "discovery_channel": "topic-directed official-source verification",
+      "status": "仅作线索",
+      "topic_paths": [
+        "robotics/perception",
+        "robotics/navigation-planning"
+      ],
+      "reading_depth": "Official abstract and fulltext identity/section overview; not a full method audit",
+      "evidence_boundary": "Historical probabilistic depth-completion and mapping reference; not proof that completed geometry improves LIO pose estimation.",
+      "official_url": "https://arxiv.org/abs/2207.12520"
+    },
+    {
+      "resource_id": "arxiv:1807.00275",
+      "title": "Self-supervised Sparse-to-Dense: Self-supervised Depth Completion from LiDAR and Monocular Camera",
+      "first_submitted": "2018-07-01",
+      "version": "v2",
+      "version_date": "2018-07-03",
+      "discovery_channel": "topic-directed official-source verification",
+      "status": "仅作线索",
+      "topic_paths": [
+        "robotics/perception"
+      ],
+      "reading_depth": "Official abstract and version history only",
+      "evidence_boundary": "Historical self-supervised depth-completion reference; not current-state evidence or an independently reproduced result.",
+      "official_url": "https://arxiv.org/abs/1807.00275"
+    }
+  ],
+  "deduplication": {
+    "formal_resource_count_checked": 611,
+    "existing_formal_matches": [],
+    "recent_candidates_not_repeated": [
+      "arxiv:2609.32154",
+      "arxiv:2609.29092",
+      "arxiv:2610.07355",
+      "arxiv:2609.39924",
+      "arxiv:2609.32158",
+      "arxiv:2603.15826",
+      "arxiv:2609.39038"
+    ]
+  }
+}

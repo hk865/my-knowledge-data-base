@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2609.13289",
+  "checked_on": "2026-10-18",
+  "version": "v1",
+  "primary_sources": [
+    "https://arxiv.org/abs/2609.13289v1",
+    "https://arxiv.org/html/2609.13289v1"
+  ],
+  "checked_sections": "Abstract; I; II-B; III actuator-model overview and III-B-3; IV-A/B/C/D; Tables II/III",
+  "reading_status": "selected_sections_checked_not_full_read",
+  "independently_reproduced": false,
+  "claim_map": [
+    {
+      "id": "acs-mechanism",
+      "claim": "ACS 用当前实际速度而非上一条命令定义下一条命令的局部邻域；执行器模型细化高速电压耦合与磁饱和。",
+      "location": "III; III-B-3 Eq. 8",
+      "source_url": "https://arxiv.org/html/2609.13289v1",
+      "interpretation_limit": "邻域调度是命令分布设计；本页不把它称为安全保证或停止控制器。"
+    },
+    {
+      "id": "acs-baseline",
+      "claim": "同平台消融保持奖励、命令范围、训练预算及评估协议，分别替换执行器模型或 ACS；组合基线同时替换两者。",
+      "location": "IV-A; Table II",
+      "source_url": "https://arxiv.org/html/2609.13289v1",
+      "interpretation_limit": "组合基线的变化不能单独归因于 ACS；固定加速度调度训练崩溃，表中没有可比较的有效结果。"
+    },
+    {
+      "id": "acs-transient",
+      "claim": "仿真与室外评估包含加速、稳态和减速；仿真稳定性用俯仰与横滚角速度平方积分衡量。",
+      "location": "IV-B Eq. 9; IV-D",
+      "source_url": "https://arxiv.org/html/2609.13289v1",
+      "interpretation_limit": "Table II 组合基线的归一化积分低于 Ours，但最高速度也较低；不能写成所有指标全面更优。"
+    }
+  ],
+  "baseline_fairness": "作者报告同平台同预算组件消融，辨析依据为 IV-A；跨平台速度排行不能隔离算法贡献。",
+  "not_checked": [
+    "IEEE 正式版正文未取得，未核对它与 arXiv v1 的差异。",
+    "未验证低速零命令停稳、反向切换、网络乱序或丢包。",
+    "未运行训练或真机实验；未审计再分发许可。"
+  ],
+  "analysis_boundary": "time-and-command.md 中的日志字段、停止指标及实验顺序均为标有 [判断] 的诊断建议，不是本文已验证结果。"
+}

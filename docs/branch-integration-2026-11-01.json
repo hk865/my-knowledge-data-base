@@ -1,0 +1,522 @@
+{
+  "date": "2026-11-01",
+  "repository": "hk865/my-knowledge-data-base",
+  "original_main": "f0e77f099918ee84345b55b6e186404c14db4cc4",
+  "integration_branch": "integrate-knowledge-branches-2026-11-01",
+  "topic_branches_audited": 17,
+  "already_merged_branches": 5,
+  "newly_merged_branches": 12,
+  "unique_commits_absorbed": 13,
+  "same_content_only_branches": 0,
+  "unmerged_branches": [],
+  "semantic_conflicts": [],
+  "original_branches_preserved": true,
+  "force_push_used": false,
+  "resource_count": 640,
+  "branches": [
+    {
+      "branch": "embodied-agents-2026-10-06",
+      "tip": "98378d80b76a6ad41464d5ffe52c1e8071225752",
+      "already_in_main": true,
+      "counts": "5\t0",
+      "commits": [],
+      "files": [],
+      "commits_not_in_original_main": [],
+      "unique_commit_count": 0,
+      "classification": "already_in_main",
+      "integration_merge_commit": null,
+      "fully_ancestor_of_integration": true,
+      "not_merged_reason": null
+    },
+    {
+      "branch": "phase3",
+      "tip": "2352c92ebcef6f3cbb02762e9ec96e2926665faf",
+      "already_in_main": true,
+      "counts": "25\t0",
+      "commits": [],
+      "files": [],
+      "commits_not_in_original_main": [],
+      "unique_commit_count": 0,
+      "classification": "already_in_main",
+      "integration_merge_commit": null,
+      "fully_ancestor_of_integration": true,
+      "not_merged_reason": null
+    },
+    {
+      "branch": "phase3-expand-2026-10-04",
+      "tip": "536a982e2b46abae7c93992d868361d9c8d9dcf5",
+      "already_in_main": true,
+      "counts": "8\t0",
+      "commits": [],
+      "files": [],
+      "commits_not_in_original_main": [],
+      "unique_commit_count": 0,
+      "classification": "already_in_main",
+      "integration_merge_commit": null,
+      "fully_ancestor_of_integration": true,
+      "not_merged_reason": null
+    },
+    {
+      "branch": "research-action-priors-2026-10-09",
+      "tip": "2fd4703e218bb91ba280a22740c372b5fa16bee0",
+      "already_in_main": true,
+      "counts": "4\t0",
+      "commits": [],
+      "files": [],
+      "commits_not_in_original_main": [],
+      "unique_commit_count": 0,
+      "classification": "already_in_main",
+      "integration_merge_commit": null,
+      "fully_ancestor_of_integration": true,
+      "not_merged_reason": null
+    },
+    {
+      "branch": "research-daily-2026-10-08",
+      "tip": "10412550b111eede6489b20490c4c161f27aa4a0",
+      "already_in_main": true,
+      "counts": "3\t0",
+      "commits": [],
+      "files": [],
+      "commits_not_in_original_main": [],
+      "unique_commit_count": 0,
+      "classification": "already_in_main",
+      "integration_merge_commit": null,
+      "fully_ancestor_of_integration": true,
+      "not_merged_reason": null
+    },
+    {
+      "branch": "research-daily-2026-10-09",
+      "tip": "7908e62575c94106892a46e1bd430f22d37e245a",
+      "already_in_main": false,
+      "counts": "4\t1",
+      "commits": [
+        "7908e62 归档 2026-10-09 感知与四足控制候选短报"
+      ],
+      "files": [
+        "A\tdaily/2026-10-09-sources.json",
+        "A\tdaily/2026-10-09.md"
+      ],
+      "commits_not_in_original_main": [
+        "7908e62575c94106892a46e1bd430f22d37e245a"
+      ],
+      "unique_commit_count": 1,
+      "classification": "unique_academic_content_merged",
+      "integration_merge_commit": "08044ac3128e1f940ffe9d2841d36dd06b9869b3",
+      "fully_ancestor_of_integration": true,
+      "not_merged_reason": null
+    },
+    {
+      "branch": "research-daily-2026-10-10",
+      "tip": "9b824bbe2c3b07ea397024d48c2e6441b6629462",
+      "already_in_main": false,
+      "counts": "4\t1",
+      "commits": [
+        "9b824bb docs: archive 2026-10-10 video representation and predictive navigation brief"
+      ],
+      "files": [
+        "A\tdaily/2026-10-10-sources.json",
+        "A\tdaily/2026-10-10.md"
+      ],
+      "commits_not_in_original_main": [
+        "9b824bbe2c3b07ea397024d48c2e6441b6629462"
+      ],
+      "unique_commit_count": 1,
+      "classification": "unique_academic_content_merged",
+      "integration_merge_commit": "d66044aeb10bcc7d51239db7e6357c70ecd04beb",
+      "fully_ancestor_of_integration": true,
+      "not_merged_reason": null
+    },
+    {
+      "branch": "research-daily-2026-10-12",
+      "tip": "ab6820cbeb413949f0713549ce1ffc685c543dcb",
+      "already_in_main": false,
+      "counts": "4\t1",
+      "commits": [
+        "ab6820c docs: archive October 12 geometry and world-model research brief"
+      ],
+      "files": [
+        "A\tdaily/2026-10-12-sources.json",
+        "A\tdaily/2026-10-12.md"
+      ],
+      "commits_not_in_original_main": [
+        "ab6820cbeb413949f0713549ce1ffc685c543dcb"
+      ],
+      "unique_commit_count": 1,
+      "classification": "unique_academic_content_merged",
+      "integration_merge_commit": "f58173a378a3a153aac596001e1ff75277eba7bf",
+      "fully_ancestor_of_integration": true,
+      "not_merged_reason": null
+    },
+    {
+      "branch": "research-daily-2026-10-13",
+      "tip": "2b6655bbbadbc62be19d2c1ece0b7a9bea9d838d",
+      "already_in_main": false,
+      "counts": "4\t1",
+      "commits": [
+        "2b6655b docs: archive 2026-10-13 robot curriculum research brief"
+      ],
+      "files": [
+        "A\tdaily/2026-10-13-sources.json",
+        "A\tdaily/2026-10-13.md"
+      ],
+      "commits_not_in_original_main": [
+        "2b6655bbbadbc62be19d2c1ece0b7a9bea9d838d"
+      ],
+      "unique_commit_count": 1,
+      "classification": "unique_academic_content_merged",
+      "integration_merge_commit": "ee5aea8874d922c1588e919200b36a2f2d996227",
+      "fully_ancestor_of_integration": true,
+      "not_merged_reason": null
+    },
+    {
+      "branch": "research-daily-2026-10-14",
+      "tip": "51e31fb6cf8e932be38ea4c7f964fdfbf18c91fd",
+      "already_in_main": false,
+      "counts": "0\t1",
+      "commits": [
+        "51e31fb docs: archive 2026-10-14 hierarchical locomotion candidate brief"
+      ],
+      "files": [
+        "A\tdaily/2026-10-14-sources.json",
+        "A\tdaily/2026-10-14.md"
+      ],
+      "commits_not_in_original_main": [
+        "51e31fb6cf8e932be38ea4c7f964fdfbf18c91fd"
+      ],
+      "unique_commit_count": 1,
+      "classification": "unique_academic_content_merged",
+      "integration_merge_commit": "2384d6e6266adfe70b71424b6ca1aad64e1641b7",
+      "fully_ancestor_of_integration": true,
+      "not_merged_reason": null
+    },
+    {
+      "branch": "research-daily-2026-10-15",
+      "tip": "3c69e71b5819d5f7566b3a7ca147774935794f8c",
+      "already_in_main": false,
+      "counts": "0\t1",
+      "commits": [
+        "3c69e71 docs: add October 15 video representation and hierarchical planning candidates"
+      ],
+      "files": [
+        "A\tdaily/2026-10-15.md",
+        "A\tdaily/2026-10-15.sources.json"
+      ],
+      "commits_not_in_original_main": [
+        "3c69e71b5819d5f7566b3a7ca147774935794f8c"
+      ],
+      "unique_commit_count": 1,
+      "classification": "unique_academic_content_merged",
+      "integration_merge_commit": "d98277406edb6a55fa4a8a0a8a1aecff17d45641",
+      "fully_ancestor_of_integration": true,
+      "not_merged_reason": null
+    },
+    {
+      "branch": "research-daily-2026-10-16",
+      "tip": "59832382f3f5ddfd1ecb63cb7fa06c11a79981a2",
+      "already_in_main": false,
+      "counts": "0\t1",
+      "commits": [
+        "5983238 docs: 2026-10-16 时序鲁棒策略与玻璃地图候选短报"
+      ],
+      "files": [
+        "A\tdaily/2026-10-16.md",
+        "A\tdaily/2026-10-16.sources.json"
+      ],
+      "commits_not_in_original_main": [
+        "59832382f3f5ddfd1ecb63cb7fa06c11a79981a2"
+      ],
+      "unique_commit_count": 1,
+      "classification": "unique_academic_content_merged",
+      "integration_merge_commit": "b5173a54b7f06606809f85ff863803e98ff2e318",
+      "fully_ancestor_of_integration": true,
+      "not_merged_reason": null
+    },
+    {
+      "branch": "research-daily-2026-10-17",
+      "tip": "f51626a7b5eff0e933f7b8bd190cb679a7498171",
+      "already_in_main": false,
+      "counts": "0\t1",
+      "commits": [
+        "f51626a docs: archive October 17 multimodal alignment and VLA candidates"
+      ],
+      "files": [
+        "A\tdaily/2026-10-17.md",
+        "A\tdaily/2026-10-17.sources.json"
+      ],
+      "commits_not_in_original_main": [
+        "f51626a7b5eff0e933f7b8bd190cb679a7498171"
+      ],
+      "unique_commit_count": 1,
+      "classification": "unique_academic_content_merged",
+      "integration_merge_commit": "fc1d38925e0ebcdb5354330e35e5cdacfd3f3343",
+      "fully_ancestor_of_integration": true,
+      "not_merged_reason": null
+    },
+    {
+      "branch": "research-dynamic-slam-2026-10-31",
+      "tip": "83a9e9e0370fc8b3d1600bc26ab57287762ab4b0",
+      "already_in_main": false,
+      "counts": "0\t1",
+      "commits": [
+        "83a9e9e docs: add dynamic neural fusion SLAM research plan and 14 reference cards"
+      ],
+      "files": [
+        "M\tREADME.md",
+        "M\tdocs/paper-catalog.md",
+        "M\tdocs/topics.md",
+        "M\tindex.csv",
+        "M\tindex.json",
+        "M\tpapers.csv",
+        "M\tpapers.json",
+        "M\trobotics-embodied/PAPERS.md",
+        "M\trobotics-embodied/README.md",
+        "M\trobotics-embodied/fields/localization-mapping/BASELINES.md",
+        "M\trobotics-embodied/fields/localization-mapping/PAPERS.md",
+        "M\trobotics-embodied/fields/localization-mapping/README.md",
+        "A\trobotics-embodied/fields/localization-mapping/dynamic-neural-fusion-plan.md",
+        "M\trobotics-embodied/papers/README.md",
+        "A\trobotics-embodied/papers/arxiv-1512.02363/README.md",
+        "A\trobotics-embodied/papers/arxiv-1512.02363/source.json",
+        "A\trobotics-embodied/papers/arxiv-1605.07148/README.md",
+        "A\trobotics-embodied/papers/arxiv-1605.07148/source.json",
+        "A\trobotics-embodied/papers/arxiv-2007.01867/README.md",
+        "A\trobotics-embodied/papers/arxiv-2007.01867/source.json",
+        "A\trobotics-embodied/papers/arxiv-2310.04874/README.md",
+        "A\trobotics-embodied/papers/arxiv-2310.04874/source.json",
+        "A\trobotics-embodied/papers/arxiv-2408.14035/README.md",
+        "A\trobotics-embodied/papers/arxiv-2408.14035/source.json",
+        "A\trobotics-embodied/papers/arxiv-2501.11893/README.md",
+        "A\trobotics-embodied/papers/arxiv-2501.11893/source.json",
+        "A\trobotics-embodied/papers/arxiv-2504.03886/README.md",
+        "A\trobotics-embodied/papers/arxiv-2504.03886/source.json",
+        "A\trobotics-embodied/papers/arxiv-2507.08364/README.md",
+        "A\trobotics-embodied/papers/arxiv-2507.08364/source.json",
+        "A\trobotics-embodied/papers/arxiv-2509.15673/README.md",
+        "A\trobotics-embodied/papers/arxiv-2509.15673/source.json",
+        "A\trobotics-embodied/papers/arxiv-2602.21644/README.md",
+        "A\trobotics-embodied/papers/arxiv-2602.21644/source.json",
+        "A\trobotics-embodied/papers/arxiv-2603.19076/README.md",
+        "A\trobotics-embodied/papers/arxiv-2603.19076/source.json",
+        "A\trobotics-embodied/papers/arxiv-2604.26067/README.md",
+        "A\trobotics-embodied/papers/arxiv-2604.26067/source.json",
+        "A\trobotics-embodied/papers/arxiv-2609.19336/README.md",
+        "A\trobotics-embodied/papers/arxiv-2609.19336/source.json",
+        "A\trobotics-embodied/papers/doi-10.2139-ssrn.7602304/README.md",
+        "A\trobotics-embodied/papers/doi-10.2139-ssrn.7602304/source.json"
+      ],
+      "commits_not_in_original_main": [
+        "83a9e9e0370fc8b3d1600bc26ab57287762ab4b0"
+      ],
+      "unique_commit_count": 1,
+      "classification": "unique_academic_content_merged",
+      "integration_merge_commit": "c34d709bdcf741e15da7db0fc44a58d9c98f96cb",
+      "fully_ancestor_of_integration": true,
+      "not_merged_reason": null
+    },
+    {
+      "branch": "research-embodied-papers-2026-11-01",
+      "tip": "09e68a92eca0fbed5dc0c219f148c252043a223d",
+      "already_in_main": false,
+      "counts": "0\t1",
+      "commits": [
+        "09e68a9 Publish embodied manipulation reading pack and canonical paper entries"
+      ],
+      "files": [
+        "M\tREADME.md",
+        "M\tdocs/paper-catalog.md",
+        "M\tdocs/topics.md",
+        "M\tindex.csv",
+        "M\tindex.json",
+        "M\tpapers.csv",
+        "M\tpapers.json",
+        "M\trobotics-embodied/PAPERS.md",
+        "M\trobotics-embodied/README.md",
+        "M\trobotics-embodied/fields/embodied-agents/PAPERS.md",
+        "M\trobotics-embodied/fields/embodied-agents/README.md",
+        "A\trobotics-embodied/fields/embodied-agents/reading-pack-2026-10-30/README.md",
+        "A\trobotics-embodied/fields/embodied-agents/reading-pack-2026-10-30/license-audit.json",
+        "A\trobotics-embodied/fields/embodied-agents/reading-pack-2026-10-30/manifest.json",
+        "A\trobotics-embodied/fields/embodied-agents/reading-pack-2026-10-30/publication-audit.json",
+        "A\trobotics-embodied/fields/embodied-agents/reading-pack-2026-10-30/tools/validate_publication.py",
+        "A\t\"robotics-embodied/fields/embodied-agents/reading-pack-2026-10-30/\\345\\217\\221\\345\\261\\225\\350\\267\\257\\347\\272\\277.md\"",
+        "A\t\"robotics-embodied/fields/embodied-agents/reading-pack-2026-10-30/\\346\\211\\251\\345\\261\\225\\351\\230\\205\\350\\257\\273\\344\\270\\216\\350\\276\\271\\347\\225\\214.md\"",
+        "A\t\"robotics-embodied/fields/embodied-agents/reading-pack-2026-10-30/\\346\\235\\245\\346\\272\\220\\344\\270\\216\\347\\211\\210\\346\\234\\254.md\"",
+        "A\t\"robotics-embodied/fields/embodied-agents/reading-pack-2026-10-30/\\346\\240\\241\\351\\252\\214\\350\\256\\260\\345\\275\\225.md\"",
+        "A\t\"robotics-embodied/fields/embodied-agents/reading-pack-2026-10-30/\\347\\240\\224\\347\\251\\266\\351\\200\\211\\351\\241\\271\\344\\270\\216\\345\\205\\254\\345\\271\\263\\345\\257\\271\\347\\205\\247.md\"",
+        "M\trobotics-embodied/papers/README.md",
+        "M\trobotics-embodied/papers/arxiv-2207.05608/README.md",
+        "A\trobotics-embodied/papers/arxiv-2207.05608/reading.md",
+        "M\trobotics-embodied/papers/arxiv-2207.05608/source.json",
+        "M\trobotics-embodied/papers/arxiv-2209.07753/README.md",
+        "A\trobotics-embodied/papers/arxiv-2209.07753/reading.md",
+        "M\trobotics-embodied/papers/arxiv-2209.07753/source.json",
+        "A\trobotics-embodied/papers/arxiv-2209.11302/README.md",
+        "A\trobotics-embodied/papers/arxiv-2209.11302/reading.md",
+        "A\trobotics-embodied/papers/arxiv-2209.11302/source.json",
+        "M\trobotics-embodied/papers/arxiv-2307.05973/README.md",
+        "A\trobotics-embodied/papers/arxiv-2307.05973/reading.md",
+        "M\trobotics-embodied/papers/arxiv-2307.05973/source.json",
+        "A\trobotics-embodied/papers/arxiv-2409.01652/README.md",
+        "A\trobotics-embodied/papers/arxiv-2409.01652/reading.md",
+        "A\trobotics-embodied/papers/arxiv-2409.01652/source.json",
+        "M\trobotics-embodied/papers/arxiv-2504.16054/README.md",
+        "A\trobotics-embodied/papers/arxiv-2504.16054/reading.md",
+        "M\trobotics-embodied/papers/arxiv-2504.16054/source.json",
+        "A\trobotics-embodied/papers/arxiv-2509.18597/README.md",
+        "A\trobotics-embodied/papers/arxiv-2509.18597/reading.md",
+        "A\trobotics-embodied/papers/arxiv-2509.18597/source.json",
+        "A\trobotics-embodied/papers/arxiv-2603.04466/README.md",
+        "A\trobotics-embodied/papers/arxiv-2603.04466/reading.md",
+        "A\trobotics-embodied/papers/arxiv-2603.04466/source.json",
+        "A\trobotics-embodied/papers/arxiv-2603.22435/README.md",
+        "A\trobotics-embodied/papers/arxiv-2603.22435/reading.md",
+        "A\trobotics-embodied/papers/arxiv-2603.22435/source.json",
+        "A\trobotics-embodied/papers/arxiv-2604.18791/README.md",
+        "A\trobotics-embodied/papers/arxiv-2604.18791/reading.md",
+        "A\trobotics-embodied/papers/arxiv-2604.18791/source.json",
+        "M\trobotics-embodied/papers/arxiv-2606.19980/README.md",
+        "A\trobotics-embodied/papers/arxiv-2606.19980/reading.md",
+        "M\trobotics-embodied/papers/arxiv-2606.19980/source.json",
+        "A\trobotics-embodied/papers/arxiv-2607.00272/README.md",
+        "A\trobotics-embodied/papers/arxiv-2607.00272/reading.md",
+        "A\trobotics-embodied/papers/arxiv-2607.00272/source.json",
+        "M\trobotics-embodied/papers/arxiv-2607.08448/README.md",
+        "A\trobotics-embodied/papers/arxiv-2607.08448/reading-2026-10-30.md",
+        "M\trobotics-embodied/papers/arxiv-2607.08448/source.json",
+        "M\trobotics-embodied/papers/arxiv-2609.12541/README.md",
+        "A\trobotics-embodied/papers/arxiv-2609.12541/reading.md",
+        "M\trobotics-embodied/papers/arxiv-2609.12541/source.json",
+        "A\trobotics-embodied/papers/arxiv-2609.33807/README.md",
+        "A\trobotics-embodied/papers/arxiv-2609.33807/reading.md",
+        "A\trobotics-embodied/papers/arxiv-2609.33807/source.json",
+        "A\trobotics-embodied/papers/arxiv-2609.39018/README.md",
+        "A\trobotics-embodied/papers/arxiv-2609.39018/reading.md",
+        "A\trobotics-embodied/papers/arxiv-2609.39018/source.json",
+        "A\trobotics-embodied/papers/arxiv-2610.02459/README.md",
+        "A\trobotics-embodied/papers/arxiv-2610.02459/reading.md",
+        "A\trobotics-embodied/papers/arxiv-2610.02459/source.json",
+        "A\trobotics-embodied/papers/arxiv-2610.22496/README.md",
+        "A\trobotics-embodied/papers/arxiv-2610.22496/reading.md",
+        "A\trobotics-embodied/papers/arxiv-2610.22496/source.json",
+        "A\trobotics-embodied/papers/arxiv-2610.28589/README.md",
+        "A\trobotics-embodied/papers/arxiv-2610.28589/reading.md",
+        "A\trobotics-embodied/papers/arxiv-2610.28589/source.json",
+        "M\trobotics-embodied/papers/roboskill/README.md",
+        "A\trobotics-embodied/papers/roboskill/reading-2026-10-30.md",
+        "M\trobotics-embodied/papers/roboskill/source.json",
+        "M\trobotics-embodied/papers/saycan/README.md",
+        "A\trobotics-embodied/papers/saycan/reading-2026-10-30.md",
+        "M\trobotics-embodied/papers/saycan/source.json"
+      ],
+      "commits_not_in_original_main": [
+        "09e68a92eca0fbed5dc0c219f148c252043a223d"
+      ],
+      "unique_commit_count": 1,
+      "classification": "unique_academic_content_merged",
+      "integration_merge_commit": "5234ce5c80fd0d73212e342f0cdfcc1b64bb923b",
+      "fully_ancestor_of_integration": true,
+      "not_merged_reason": null
+    },
+    {
+      "branch": "research-robot-agent-tools-2026-10-24",
+      "tip": "0b4534ebbe20c90f565d5b3e744c6f3854751339",
+      "already_in_main": false,
+      "counts": "0\t2",
+      "commits": [
+        "0b4534e docs: clarify first-use technical terms in report",
+        "67724bc docs: add robot Agent tool interfaces and dynamic observations report"
+      ],
+      "files": [
+        "M\tindex.csv",
+        "M\tindex.json",
+        "M\trobotics-embodied/fields/embodied-agents/README.md",
+        "A\trobotics-embodied/fields/embodied-agents/tool-interfaces-and-4d-observations.md"
+      ],
+      "commits_not_in_original_main": [
+        "67724bc9abac699770551fa00d37a36f02ea293e",
+        "0b4534ebbe20c90f565d5b3e744c6f3854751339"
+      ],
+      "unique_commit_count": 2,
+      "classification": "unique_academic_content_merged",
+      "integration_merge_commit": "70bde69da8b179a5190fd61d7f5bd69b1e30dd3c",
+      "fully_ancestor_of_integration": true,
+      "not_merged_reason": null
+    },
+    {
+      "branch": "research-weekly-2026-10-18",
+      "tip": "948fb982019fdf4996991ad5508db309fa4f0aff",
+      "already_in_main": false,
+      "counts": "0\t1",
+      "commits": [
+        "948fb98 docs: publish Oct 18 digest and partial weekly research cards"
+      ],
+      "files": [
+        "A\tdaily/2026-10-18.md",
+        "A\tdaily/2026-10-18.sources.json",
+        "A\trobotics-embodied/fields/control-locomotion/time-and-command.md",
+        "A\trobotics-embodied/papers/arxiv-2510.23176/README.md",
+        "A\trobotics-embodied/papers/arxiv-2510.23176/evidence.json",
+        "A\trobotics-embodied/papers/arxiv-2510.23176/source.json",
+        "A\trobotics-embodied/papers/arxiv-2609.13289/README.md",
+        "A\trobotics-embodied/papers/arxiv-2609.13289/evidence.json",
+        "A\trobotics-embodied/papers/arxiv-2609.13289/source.json",
+        "A\trobotics-embodied/papers/arxiv-2610.13929/README.md",
+        "A\trobotics-embodied/papers/arxiv-2610.13929/evidence.json",
+        "A\trobotics-embodied/papers/arxiv-2610.13929/source.json",
+        "A\tsync/new-content/2026-10-18-published-source-snapshot.json",
+        "A\tweekly/2026-10-18-decisions.json",
+        "A\tweekly/2026-10-18.md"
+      ],
+      "commits_not_in_original_main": [
+        "948fb982019fdf4996991ad5508db309fa4f0aff"
+      ],
+      "unique_commit_count": 1,
+      "classification": "unique_academic_content_merged",
+      "integration_merge_commit": "36c32e364001a2791ad1f5812f9dd616cc1c384d",
+      "fully_ancestor_of_integration": true,
+      "not_merged_reason": null
+    }
+  ],
+  "conflict_resolution": {
+    "index.json/index.csv": "Union by canonical file path, preserving source titles.",
+    "papers.json/papers.csv": "Keep existing registered entries; register 12 manipulation and 3 weekly paper cards using source.json. Preserve 14 SLAM cards and refresh 6 existing readings.",
+    "docs/paper-catalog.md/docs/topics.md": "Regenerated via existing registry tools to remove duplicate catalog anchors and reconcile counts.",
+    "README.md and domain inventories": "Preserve academic sections and both navigation additions; refresh generated counts.",
+    "weekly_publication_gap": "Register 3 existing cards and link the control timing topic; retain original historical evidence snapshots."
+  },
+  "checks": {
+    "registry_regression_tests_passed": 24,
+    "registration_dry_run_new_entries": 0,
+    "registry_sync_dry_run_pending_changes": 0,
+    "json_schema_and_identity_audit": {
+      "all_json_parsed": 787,
+      "incoming_source_records_checked": 38,
+      "registered_resources": 640,
+      "unique_resource_ids": true,
+      "unique_canonical_folders": true,
+      "unique_catalog_anchors": true,
+      "paper_json_csv_consistent": true,
+      "content_json_csv_consistent": true,
+      "canonical_targets_exist": true
+    },
+    "relative_links": {
+      "markdown_files_checked": 1089,
+      "broken_links": 0
+    },
+    "secrets_and_private_data": {
+      "new_or_changed_files_scanned": 155,
+      "pattern_matches": 0,
+      "new_pdf_mirrors": 0
+    },
+    "source_preservation": {
+      "incoming_added_files_unchanged": 112,
+      "intentional_reconciliations": [
+        "robotics-embodied/papers/arxiv-2510.23176/source.json",
+        "robotics-embodied/papers/arxiv-2609.13289/source.json",
+        "robotics-embodied/papers/arxiv-2610.13929/source.json",
+        "weekly/2026-10-18.md"
+      ],
+      "existing_three_readings_unchanged": true
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2610.22496",
+  "title": "Scaling Online Exploration for Robot Agents",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2610.22496",
+  "official_url": "https://arxiv.org/abs/2610.22496v1",
+  "official_fulltext_url": "https://arxiv.org/pdf/2610.22496v1",
+  "read_version": "v1",
+  "first_submitted": "2026-10-15",
+  "version_date": "2026-10-15",
+  "year": 2026,
+  "authors": [
+    "Huang, Runhan",
+    "Zhang, Xiangcheng",
+    "Chen, Haoyu",
+    "Li, Yitong",
+    "Wang, Yen-Jen",
+    "Lyu, Bohan",
+    "Ye, Haotian",
+    "Hong, Chuye",
+    "Wang, Yixuan",
+    "Su, Chloe",
+    "Xiong, Haoyu",
+    "Wu, Yangzhen",
+    "Xie, Enze",
+    "Manderson, Travis",
+    "Ermon, Stefano",
+    "Abbeel, Pieter",
+    "Torralba, Antonio",
+    "Song, Dawn",
+    "Ye, Weirui",
+    "Du, Yilun"
+  ],
+  "topic_paths": [
+    "robotics/embodied-agents"
+  ],
+  "modality_tags": [
+    "text",
+    "image",
+    "action",
+    "code"
+  ],
+  "task_tags": [
+    "decision",
+    "evaluation"
+  ],
+  "content_kind": "reading",
+  "reading_path": "robotics-embodied/papers/arxiv-2610.22496/reading.md",
+  "reading_depth": "selected_sections",
+  "reading_boundary": "原文方法、主要实验与相关附录定向阅读（方法、主要实验、附录 C/G；定向阅读而非 77 页逐页通读）；非逐页通读，未复现。",
+  "independently_reproduced": false,
+  "supplementary_readings": [
+    "robotics-embodied/papers/arxiv-2610.22496/reading.md"
+  ],
+  "license": {
+    "status": "license_identified",
+    "license_urls": [
+      "http://creativecommons.org/licenses/by/4.0/"
+    ],
+    "checked_at": "2026-11-01",
+    "note": "仅链接官方原文，不镜像 PDF；arXiv nonexclusive-distrib 不作为第三方全文再发布授权。"
+  },
+  "reading_pack_2026_10_30": {
+    "read_version": "v1",
+    "version_date": "2026-10-15",
+    "reading_boundary": "原文方法、主要实验与相关附录定向阅读（方法、主要实验、附录 C/G；定向阅读而非 77 页逐页通读）；非逐页通读，未复现。",
+    "original_checked_at": "2026-10-30",
+    "local_pdf_retained": true,
+    "public_pdf_mirror": false
+  }
+}

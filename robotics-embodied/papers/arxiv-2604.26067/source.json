@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2604.26067",
+  "title": "RADIO-ViPE: Online Tightly Coupled Multi-Modal Fusion for Open-Vocabulary Semantic SLAM in Dynamic Environments",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2604.26067",
+  "official_url": "https://arxiv.org/abs/2604.26067",
+  "official_fulltext_url": "https://arxiv.org/pdf/2604.26067v1",
+  "year": 2026,
+  "authors": [
+    "Zaid Nasser",
+    "Mikhail Iumanov",
+    "Tianhao Li",
+    "Maxim Popov",
+    "Jaafar Mahmoud",
+    "Sergey Kolyubin"
+  ],
+  "topic_paths": [
+    "robotics/localization-mapping"
+  ],
+  "modality_tags": [
+    "image",
+    "state"
+  ],
+  "task_tags": [
+    "understanding"
+  ],
+  "content_kind": "bibliographic_card",
+  "reading_depth": "abstract_and_official_materials_checked",
+  "reading_boundary": "核验论文摘要与公开官方材料、作为项目方案的文献定位；未进行全文精读或独立复现。",
+  "read_version": "v1",
+  "license": {
+    "status": "not_audited"
+  },
+  "source_record_updated": "2026-10-31",
+  "verification_sources": [
+    "https://arxiv.org/abs/2604.26067",
+    "https://github.com/be2rlab/QUORUM"
+  ],
+  "verification_status": "bibliographic_and_method_scope_checked",
+  "evidence_paths": [],
+  "independently_reproduced": false,
+  "official_code_url": "https://github.com/be2rlab/QUORUM",
+  "project_alias": "QUORUM"
+}

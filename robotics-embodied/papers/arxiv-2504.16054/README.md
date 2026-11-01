@@ -15,3 +15,5 @@
 - 作者：Physical Intelligence、Kevin Black 等（共 36 位作者）
 - 全文：[arXiv PDF](https://arxiv.org/pdf/2504.16054)
 - 方向：[视觉语言动作模型](../../fields/vla/README.md)、[模仿学习与机器人强化学习](../../fields/imitation-reinforcement-learning/README.md)
+
+- [机械臂执行与公平评测补充解读](reading.md)
