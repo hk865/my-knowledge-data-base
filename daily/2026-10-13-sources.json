@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-13",
+  "as_of_utc": "2026-10-13T08:59:00Z",
+  "scope": "Daily candidates only; no formal catalog admission",
+  "sources": [
+    {
+      "resource_id": "arxiv:2610.12465",
+      "title": "A Balanced Data Diet: Addressing the Exploration Bottleneck in Mega-Scale RL for Robot Control",
+      "resource_kind": "paper",
+      "first_submitted": "2026-10-08",
+      "version": "v1",
+      "version_date": "2026-10-08",
+      "official_url": "https://arxiv.org/abs/2610.12465",
+      "official_fulltext_url": "https://arxiv.org/html/2610.12465v1",
+      "official_project_url": "https://sgs-rl.github.io/",
+      "discovery_channel": "topic-directed official-source verification",
+      "status": "待周整理",
+      "topic_paths": [
+        "robotics/control",
+        "robotics/embodied-policies"
+      ],
+      "reading_depth": "Selected sections 2, 3.2, 4.3, 4.5 and appendices A.2, B.1-B.4, C.1/C.3/C.5; not a complete line-by-line reading or independent reproduction",
+      "reading_boundary": "Paper methods and reported comparisons checked; implementation unavailable on project website at access time. No independent reproduction.",
+      "mechanism": "Fixed configuration pool; mean success over latest H=100 episodes; smoothed Beta-shaped weights with a nonzero floor and temperature. PPO unchanged; only reset selection changes.",
+      "baseline_fairness": "Same-scale comparisons hold PPO settings fixed. Across environment scales batch grows while PPO iterations and minibatch counts are fixed, so this is not equal total interactions or compute. SFL comparison is limited to 4K/32K locomotion using default SFL hyperparameters while SGS had a small grid search.",
+      "evidence_boundary": "Near-goal resets and gravity curriculum provide structural assistance. Removing near-goal resets prevents rod-in-hole learning in the reported three-seed ablation. No semantic instruction benchmark; only manipulation has real-hardware validation.",
+      "key_evidence": [
+        {
+          "location": "Section 4.3 and project Scaling",
+          "claim": "At about 1M environments locomotion SGS success 0.73 +/-0.01 versus PLR 0.54 +/-0.13; three-seed 95% confidence intervals as reported."
+        },
+        {
+          "location": "Appendix B.3 Table 4",
+          "claim": "Full reset pool yields 96.0% on Reaching evaluation for rod-in-hole; without Near-Goal training resets this is 0%."
+        },
+        {
+          "location": "Section 4.5 Table 2",
+          "claim": "UR5e real success: nut 18/48, rod 30/49, gear 47/50. Multiple attempts allowed; not a sampler ablation."
+        }
+      ],
+      "code_status": "Project site states Code (coming soon), checked 2026-10-13",
+      "license": "not_audited",
+      "user_adoption": "not_inferred"
+    },
+    {
+      "resource_id": "arxiv:2610.03395",
+      "title": "Bidirectional Voronoi-biased Exploration Curriculum for Reinforcement Learning",
+      "resource_kind": "paper",
+      "first_submitted": "2026-10-02",
+      "version": "v1",
+      "version_date": "2026-10-02",
+      "official_url": "https://arxiv.org/abs/2610.03395",
+      "official_fulltext_url": "https://arxiv.org/html/2610.03395v1",
+      "discovery_channel": "proactive official-paper search",
+      "status": "待周整理",
+      "topic_paths": [
+        "robotics/control",
+        "robotics/embodied-policies"
+      ],
+      "reading_depth": "Official HTML main text and appendices A.1-A.3 inspected, emphasizing sections 3-6 and A.2; not a line-by-line technical reproduction",
+      "reading_boundary": "No source-code execution or independent reproduction; hardware transfer not tested.",
+      "mechanism": "One goal-conditioned PPO policy trained on backward-expanded starts and forward-expanded goals. Voronoi-biased seed selection, arbitrary simulator reset and Gaussian random actions generate candidate states; rollout returns filter learnable frontiers.",
+      "baseline_fairness": "PPO hyperparameters, parallel environment counts and simulation steps per training iteration matched. Single-direction ablations retain full environment budget. Random walks add approximately 28% wall-clock overhead; inclusive total interaction and wall-clock learning curves are not established.",
+      "key_evidence": [
+        {
+          "location": "Section 5.1",
+          "claim": "0.4m box-climbing reaches 95% success in approximately 65% fewer iterations than the best compared reference-free curriculum."
+        },
+        {
+          "location": "Section 5 Table 1",
+          "claim": "Bidirectional versus one-direction ablations use the same full environment budget per variant."
+        },
+        {
+          "location": "Sections 3.1 and 6, Appendix A.2",
+          "claim": "Requires full simulator state resets, one known full goal state, known position projection and bounded sampleable task space; all evaluations are simulation."
+        }
+      ],
+      "evidence_boundary": "No demonstration is needed by BVER, but explicit reset and geometry priors remain. Newly generated states are not guaranteed solvable. Scanned terrain experiments are simulation, not real hardware.",
+      "license": "not_audited",
+      "user_adoption": "not_inferred"
+    }
+  ],
+  "deduplication": {
+    "formal_resource_count_checked": 611,
+    "existing_formal_matches": [],
+    "recent_draft_prs_checked": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "recent_candidate_matches": [],
+    "formal_admission_performed": false
+  },
+  "publication_scope": "Two new daily files only; no changes to existing pages, indexes or synchronization metadata. Private conversation provenance is not included."
+}
