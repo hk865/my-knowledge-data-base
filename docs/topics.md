@@ -738,7 +738,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Bridging Semantics and Physics with Constrained LLMs for Safe and Trustworthy Robotic Manipulation](paper-catalog.md#p611)
 
 
-### 运动控制（60）
+### 运动控制（62）
 
 细分：经典与最优控制；腿足策略与适应；sim to real；风险敏感策略与恢复控制；恢复控制与自主练习
 
@@ -802,9 +802,11 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [SONIC: Supersizing Motion Tracking for Natural Humanoid Whole-Body Control](paper-catalog.md#p508)
 - [Learning Agile Perceptive Traversal of Sparse 3D Structures for Humanoids](paper-catalog.md#p509)
 - [Generate, Track, Improve: Perceptive Multi-Skill Humanoid Locomotion with RL-Fine-Tuned Motion Generators](paper-catalog.md#p580)
+- [TARC: Time-Adaptive Robotic Control](paper-catalog.md#p629)
+- [Extending the Speed Limit of Quadrupedal Locomotion via Refined Actuator Modeling and Adaptive Command Scheduling](paper-catalog.md#p634)
 
 
-### 具身策略与 VLA（80）
+### 具身策略与 VLA（81）
 
 细分：动作表示与生成；跨本体与数据；模型 规划与控制接口；模仿学习；机器人强化学习
 
@@ -888,8 +890,9 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Proxy Policy Steering](paper-catalog.md#p605)
 - [Inference-time Policy Steering via Vision and Touch](paper-catalog.md#p606)
 - [ENPIRE: Agentic Robot Policy Self-Improvement in the Real World](paper-catalog.md#p609)
+- [Chronos Policy: Learning Robot Policies on Physical Time](paper-catalog.md#p638)
 
-### 具身 Agents 与闭环系统（32）
+### 具身 Agents 与闭环系统（44）
 
 细分：任务理解与技能选择；行动记忆与空间记忆；规划—执行—反馈；技能获取与复用；VLA策略编排与部署
 
@@ -925,6 +928,18 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [ENPIRE: Agentic Robot Policy Self-Improvement in the Real World](paper-catalog.md#p609)
 - [Generalizing Manipulation Skills with a Local Coding Agent](paper-catalog.md#p610)
 - [Bridging Semantics and Physics with Constrained LLMs for Safe and Trustworthy Robotic Manipulation](paper-catalog.md#p611)
+- [ProgPrompt: Generating Situated Robot Task Plans using Large Language Models](paper-catalog.md#p626)
+- [ReKep: Spatio-Temporal Reasoning of Relational Keypoint Constraints for Robotic Manipulation](paper-catalog.md#p627)
+- [Growing with Your Embodied Agent: A Human-in-the-Loop Lifelong Code Generation Framework for Long-Horizon Manipulation Skills](paper-catalog.md#p628)
+- [Act-Observe-Rewrite: Multimodal Coding Agents as In-Context Policy Learners for Robot Manipulation](paper-catalog.md#p630)
+- [CaP-X: A Framework for Benchmarking and Improving Coding Agents for Robot Manipulation](paper-catalog.md#p631)
+- [HELM: Harness-Enhanced Long-horizon Memory for Vision-Language-Action Manipulation](paper-catalog.md#p632)
+- [ASPIRE: Agentic /Skills Discovery for Robotics](paper-catalog.md#p633)
+- [CodeActionBench: Evaluating Agentic Code-as-Policy for Embodied Manipulation](paper-catalog.md#p635)
+- [Make Code as Policy Great Again: Frontier Agents Write, Call, and Evolve Robot Tools](paper-catalog.md#p636)
+- [OpenRUA: Robot-Use Agents Are Zero-Shot Visuomotor Policies](paper-catalog.md#p637)
+- [Scaling Online Exploration for Robot Agents](paper-catalog.md#p639)
+- [AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics](paper-catalog.md#p640)
 
 ## 跨方向方法与探索
 
@@ -1186,14 +1201,14 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 | 模态 \ 任务 | understanding | generation | decision | evaluation | analysis |
 |---|---:|---:|---:|---:|---:|
-| text | [65](#x-text-understanding) | [169](#x-text-generation) | [130](#x-text-decision) | [94](#x-text-evaluation) | [84](#x-text-analysis) |
-| image | [139](#x-image-understanding) | [60](#x-image-generation) | [125](#x-image-decision) | [37](#x-image-evaluation) | [16](#x-image-analysis) |
+| text | [65](#x-text-understanding) | [169](#x-text-generation) | [143](#x-text-decision) | [106](#x-text-evaluation) | [84](#x-text-analysis) |
+| image | [139](#x-image-understanding) | [60](#x-image-generation) | [139](#x-image-decision) | [49](#x-image-evaluation) | [16](#x-image-analysis) |
 | video | [38](#x-video-understanding) | [44](#x-video-generation) | [36](#x-video-decision) | [15](#x-video-evaluation) | [6](#x-video-analysis) |
 | audio | [9](#x-audio-understanding) | [7](#x-audio-generation) | [2](#x-audio-decision) | [1](#x-audio-evaluation) | · |
-| action | [9](#x-action-understanding) | [37](#x-action-generation) | [165](#x-action-decision) | [30](#x-action-evaluation) | [3](#x-action-analysis) |
-| state | [31](#x-state-understanding) | [3](#x-state-generation) | [92](#x-state-decision) | [21](#x-state-evaluation) | · |
-| code | [1](#x-code-understanding) | [27](#x-code-generation) | [36](#x-code-decision) | [26](#x-code-evaluation) | [31](#x-code-analysis) |
-| multimodal | [54](#x-multimodal-understanding) | [45](#x-multimodal-generation) | [64](#x-multimodal-decision) | [38](#x-multimodal-evaluation) | [9](#x-multimodal-analysis) |
+| action | [9](#x-action-understanding) | [37](#x-action-generation) | [180](#x-action-decision) | [42](#x-action-evaluation) | [3](#x-action-analysis) |
+| state | [31](#x-state-understanding) | [3](#x-state-generation) | [95](#x-state-decision) | [21](#x-state-evaluation) | · |
+| code | [1](#x-code-understanding) | [27](#x-code-generation) | [48](#x-code-decision) | [38](#x-code-evaluation) | [31](#x-code-analysis) |
+| multimodal | [54](#x-multimodal-understanding) | [45](#x-multimodal-generation) | [65](#x-multimodal-decision) | [38](#x-multimodal-evaluation) | [9](#x-multimodal-analysis) |
 | tabular | [1](#x-tabular-understanding) | · | · | · | · |
 
 <a id="x-text-understanding"></a>
@@ -1442,7 +1457,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-text-decision"></a>
 
-### text × decision（130）
+### text × decision（143）
 
 - [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](paper-catalog.md#p034)
 - [ReAct: Synergizing Reasoning and Acting in Language Models](paper-catalog.md#p040)
@@ -1574,10 +1589,23 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [ENPIRE: Agentic Robot Policy Self-Improvement in the Real World](paper-catalog.md#p609)
 - [Generalizing Manipulation Skills with a Local Coding Agent](paper-catalog.md#p610)
 - [Bridging Semantics and Physics with Constrained LLMs for Safe and Trustworthy Robotic Manipulation](paper-catalog.md#p611)
+- [ProgPrompt: Generating Situated Robot Task Plans using Large Language Models](paper-catalog.md#p626)
+- [ReKep: Spatio-Temporal Reasoning of Relational Keypoint Constraints for Robotic Manipulation](paper-catalog.md#p627)
+- [Growing with Your Embodied Agent: A Human-in-the-Loop Lifelong Code Generation Framework for Long-Horizon Manipulation Skills](paper-catalog.md#p628)
+- [TARC: Time-Adaptive Robotic Control](paper-catalog.md#p629)
+- [Act-Observe-Rewrite: Multimodal Coding Agents as In-Context Policy Learners for Robot Manipulation](paper-catalog.md#p630)
+- [CaP-X: A Framework for Benchmarking and Improving Coding Agents for Robot Manipulation](paper-catalog.md#p631)
+- [HELM: Harness-Enhanced Long-horizon Memory for Vision-Language-Action Manipulation](paper-catalog.md#p632)
+- [ASPIRE: Agentic /Skills Discovery for Robotics](paper-catalog.md#p633)
+- [CodeActionBench: Evaluating Agentic Code-as-Policy for Embodied Manipulation](paper-catalog.md#p635)
+- [Make Code as Policy Great Again: Frontier Agents Write, Call, and Evolve Robot Tools](paper-catalog.md#p636)
+- [OpenRUA: Robot-Use Agents Are Zero-Shot Visuomotor Policies](paper-catalog.md#p637)
+- [Scaling Online Exploration for Robot Agents](paper-catalog.md#p639)
+- [AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics](paper-catalog.md#p640)
 
 <a id="x-text-evaluation"></a>
 
-### text × evaluation（94）
+### text × evaluation（106）
 
 - [PersonaEval: Are LLM Evaluators Human Enough to Judge Role-Play?](paper-catalog.md#p032)
 - [On scalable oversight with weak LLMs judging strong LLMs](paper-catalog.md#p033)
@@ -1673,6 +1701,18 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [ENPIRE: Agentic Robot Policy Self-Improvement in the Real World](paper-catalog.md#p609)
 - [Generalizing Manipulation Skills with a Local Coding Agent](paper-catalog.md#p610)
 - [Bridging Semantics and Physics with Constrained LLMs for Safe and Trustworthy Robotic Manipulation](paper-catalog.md#p611)
+- [ProgPrompt: Generating Situated Robot Task Plans using Large Language Models](paper-catalog.md#p626)
+- [ReKep: Spatio-Temporal Reasoning of Relational Keypoint Constraints for Robotic Manipulation](paper-catalog.md#p627)
+- [Growing with Your Embodied Agent: A Human-in-the-Loop Lifelong Code Generation Framework for Long-Horizon Manipulation Skills](paper-catalog.md#p628)
+- [Act-Observe-Rewrite: Multimodal Coding Agents as In-Context Policy Learners for Robot Manipulation](paper-catalog.md#p630)
+- [CaP-X: A Framework for Benchmarking and Improving Coding Agents for Robot Manipulation](paper-catalog.md#p631)
+- [HELM: Harness-Enhanced Long-horizon Memory for Vision-Language-Action Manipulation](paper-catalog.md#p632)
+- [ASPIRE: Agentic /Skills Discovery for Robotics](paper-catalog.md#p633)
+- [CodeActionBench: Evaluating Agentic Code-as-Policy for Embodied Manipulation](paper-catalog.md#p635)
+- [Make Code as Policy Great Again: Frontier Agents Write, Call, and Evolve Robot Tools](paper-catalog.md#p636)
+- [OpenRUA: Robot-Use Agents Are Zero-Shot Visuomotor Policies](paper-catalog.md#p637)
+- [Scaling Online Exploration for Robot Agents](paper-catalog.md#p639)
+- [AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics](paper-catalog.md#p640)
 
 <a id="x-text-analysis"></a>
 
@@ -1974,7 +2014,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-image-decision"></a>
 
-### image × decision（125）
+### image × decision（139）
 
 - [DINO-WM: World Models on Pre-trained Visual Features enable Zero-shot Planning](paper-catalog.md#p046)
 - [FOCUS: Object-Centric World Models for Robotics Manipulation](paper-catalog.md#p048)
@@ -2101,10 +2141,24 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [ENPIRE: Agentic Robot Policy Self-Improvement in the Real World](paper-catalog.md#p609)
 - [Generalizing Manipulation Skills with a Local Coding Agent](paper-catalog.md#p610)
 - [Bridging Semantics and Physics with Constrained LLMs for Safe and Trustworthy Robotic Manipulation](paper-catalog.md#p611)
+- [ProgPrompt: Generating Situated Robot Task Plans using Large Language Models](paper-catalog.md#p626)
+- [ReKep: Spatio-Temporal Reasoning of Relational Keypoint Constraints for Robotic Manipulation](paper-catalog.md#p627)
+- [Growing with Your Embodied Agent: A Human-in-the-Loop Lifelong Code Generation Framework for Long-Horizon Manipulation Skills](paper-catalog.md#p628)
+- [TARC: Time-Adaptive Robotic Control](paper-catalog.md#p629)
+- [Act-Observe-Rewrite: Multimodal Coding Agents as In-Context Policy Learners for Robot Manipulation](paper-catalog.md#p630)
+- [CaP-X: A Framework for Benchmarking and Improving Coding Agents for Robot Manipulation](paper-catalog.md#p631)
+- [HELM: Harness-Enhanced Long-horizon Memory for Vision-Language-Action Manipulation](paper-catalog.md#p632)
+- [ASPIRE: Agentic /Skills Discovery for Robotics](paper-catalog.md#p633)
+- [CodeActionBench: Evaluating Agentic Code-as-Policy for Embodied Manipulation](paper-catalog.md#p635)
+- [Make Code as Policy Great Again: Frontier Agents Write, Call, and Evolve Robot Tools](paper-catalog.md#p636)
+- [OpenRUA: Robot-Use Agents Are Zero-Shot Visuomotor Policies](paper-catalog.md#p637)
+- [Chronos Policy: Learning Robot Policies on Physical Time](paper-catalog.md#p638)
+- [Scaling Online Exploration for Robot Agents](paper-catalog.md#p639)
+- [AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics](paper-catalog.md#p640)
 
 <a id="x-image-evaluation"></a>
 
-### image × evaluation（37）
+### image × evaluation（49）
 
 - [LARY: A Latent Action Representation Yielding Benchmark for Generalizable Vision-to-Action Alignment](paper-catalog.md#p060)
 - [Vision-and-Language Navigation: Interpreting visually-grounded navigation instructions in real environments](paper-catalog.md#p119)
@@ -2143,6 +2197,18 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [ENPIRE: Agentic Robot Policy Self-Improvement in the Real World](paper-catalog.md#p609)
 - [Generalizing Manipulation Skills with a Local Coding Agent](paper-catalog.md#p610)
 - [Bridging Semantics and Physics with Constrained LLMs for Safe and Trustworthy Robotic Manipulation](paper-catalog.md#p611)
+- [ProgPrompt: Generating Situated Robot Task Plans using Large Language Models](paper-catalog.md#p626)
+- [ReKep: Spatio-Temporal Reasoning of Relational Keypoint Constraints for Robotic Manipulation](paper-catalog.md#p627)
+- [Growing with Your Embodied Agent: A Human-in-the-Loop Lifelong Code Generation Framework for Long-Horizon Manipulation Skills](paper-catalog.md#p628)
+- [Act-Observe-Rewrite: Multimodal Coding Agents as In-Context Policy Learners for Robot Manipulation](paper-catalog.md#p630)
+- [CaP-X: A Framework for Benchmarking and Improving Coding Agents for Robot Manipulation](paper-catalog.md#p631)
+- [HELM: Harness-Enhanced Long-horizon Memory for Vision-Language-Action Manipulation](paper-catalog.md#p632)
+- [ASPIRE: Agentic /Skills Discovery for Robotics](paper-catalog.md#p633)
+- [CodeActionBench: Evaluating Agentic Code-as-Policy for Embodied Manipulation](paper-catalog.md#p635)
+- [Make Code as Policy Great Again: Frontier Agents Write, Call, and Evolve Robot Tools](paper-catalog.md#p636)
+- [OpenRUA: Robot-Use Agents Are Zero-Shot Visuomotor Policies](paper-catalog.md#p637)
+- [Scaling Online Exploration for Robot Agents](paper-catalog.md#p639)
+- [AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics](paper-catalog.md#p640)
 
 <a id="x-image-analysis"></a>
 
@@ -2426,7 +2492,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-action-decision"></a>
 
-### action × decision（165）
+### action × decision（180）
 
 - [OccWorld: Learning a 3D Occupancy World Model for Autonomous Driving](paper-catalog.md#p044)
 - [Driving in the Occupancy World: Vision-Centric 4D Occupancy Forecasting and Planning via World Models for Autonomous Driving](paper-catalog.md#p045)
@@ -2593,10 +2659,25 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [ENPIRE: Agentic Robot Policy Self-Improvement in the Real World](paper-catalog.md#p609)
 - [Generalizing Manipulation Skills with a Local Coding Agent](paper-catalog.md#p610)
 - [Bridging Semantics and Physics with Constrained LLMs for Safe and Trustworthy Robotic Manipulation](paper-catalog.md#p611)
+- [ProgPrompt: Generating Situated Robot Task Plans using Large Language Models](paper-catalog.md#p626)
+- [ReKep: Spatio-Temporal Reasoning of Relational Keypoint Constraints for Robotic Manipulation](paper-catalog.md#p627)
+- [Growing with Your Embodied Agent: A Human-in-the-Loop Lifelong Code Generation Framework for Long-Horizon Manipulation Skills](paper-catalog.md#p628)
+- [TARC: Time-Adaptive Robotic Control](paper-catalog.md#p629)
+- [Act-Observe-Rewrite: Multimodal Coding Agents as In-Context Policy Learners for Robot Manipulation](paper-catalog.md#p630)
+- [CaP-X: A Framework for Benchmarking and Improving Coding Agents for Robot Manipulation](paper-catalog.md#p631)
+- [HELM: Harness-Enhanced Long-horizon Memory for Vision-Language-Action Manipulation](paper-catalog.md#p632)
+- [ASPIRE: Agentic /Skills Discovery for Robotics](paper-catalog.md#p633)
+- [Extending the Speed Limit of Quadrupedal Locomotion via Refined Actuator Modeling and Adaptive Command Scheduling](paper-catalog.md#p634)
+- [CodeActionBench: Evaluating Agentic Code-as-Policy for Embodied Manipulation](paper-catalog.md#p635)
+- [Make Code as Policy Great Again: Frontier Agents Write, Call, and Evolve Robot Tools](paper-catalog.md#p636)
+- [OpenRUA: Robot-Use Agents Are Zero-Shot Visuomotor Policies](paper-catalog.md#p637)
+- [Chronos Policy: Learning Robot Policies on Physical Time](paper-catalog.md#p638)
+- [Scaling Online Exploration for Robot Agents](paper-catalog.md#p639)
+- [AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics](paper-catalog.md#p640)
 
 <a id="x-action-evaluation"></a>
 
-### action × evaluation（30）
+### action × evaluation（42）
 
 - [LARY: A Latent Action Representation Yielding Benchmark for Generalizable Vision-to-Action Alignment](paper-catalog.md#p060)
 - [Vision-and-Language Navigation: Interpreting visually-grounded navigation instructions in real environments](paper-catalog.md#p119)
@@ -2628,6 +2709,18 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [ENPIRE: Agentic Robot Policy Self-Improvement in the Real World](paper-catalog.md#p609)
 - [Generalizing Manipulation Skills with a Local Coding Agent](paper-catalog.md#p610)
 - [Bridging Semantics and Physics with Constrained LLMs for Safe and Trustworthy Robotic Manipulation](paper-catalog.md#p611)
+- [ProgPrompt: Generating Situated Robot Task Plans using Large Language Models](paper-catalog.md#p626)
+- [ReKep: Spatio-Temporal Reasoning of Relational Keypoint Constraints for Robotic Manipulation](paper-catalog.md#p627)
+- [Growing with Your Embodied Agent: A Human-in-the-Loop Lifelong Code Generation Framework for Long-Horizon Manipulation Skills](paper-catalog.md#p628)
+- [Act-Observe-Rewrite: Multimodal Coding Agents as In-Context Policy Learners for Robot Manipulation](paper-catalog.md#p630)
+- [CaP-X: A Framework for Benchmarking and Improving Coding Agents for Robot Manipulation](paper-catalog.md#p631)
+- [HELM: Harness-Enhanced Long-horizon Memory for Vision-Language-Action Manipulation](paper-catalog.md#p632)
+- [ASPIRE: Agentic /Skills Discovery for Robotics](paper-catalog.md#p633)
+- [CodeActionBench: Evaluating Agentic Code-as-Policy for Embodied Manipulation](paper-catalog.md#p635)
+- [Make Code as Policy Great Again: Frontier Agents Write, Call, and Evolve Robot Tools](paper-catalog.md#p636)
+- [OpenRUA: Robot-Use Agents Are Zero-Shot Visuomotor Policies](paper-catalog.md#p637)
+- [Scaling Online Exploration for Robot Agents](paper-catalog.md#p639)
+- [AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics](paper-catalog.md#p640)
 
 <a id="x-action-analysis"></a>
 
@@ -2683,7 +2776,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-state-decision"></a>
 
-### state × decision（92）
+### state × decision（95）
 
 - [Diffusion Policy: Visuomotor Policy Learning via Action Diffusion](paper-catalog.md#p067)
 - [$π_0$: A Vision-Language-Action Flow Model for General Robot Control](paper-catalog.md#p070)
@@ -2777,6 +2870,9 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [ENPIRE: Agentic Robot Policy Self-Improvement in the Real World](paper-catalog.md#p609)
 - [Generalizing Manipulation Skills with a Local Coding Agent](paper-catalog.md#p610)
 - [Bridging Semantics and Physics with Constrained LLMs for Safe and Trustworthy Robotic Manipulation](paper-catalog.md#p611)
+- [TARC: Time-Adaptive Robotic Control](paper-catalog.md#p629)
+- [Extending the Speed Limit of Quadrupedal Locomotion via Refined Actuator Modeling and Adaptive Command Scheduling](paper-catalog.md#p634)
+- [Chronos Policy: Learning Robot Policies on Physical Time](paper-catalog.md#p638)
 
 <a id="x-state-evaluation"></a>
 
@@ -2844,7 +2940,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-code-decision"></a>
 
-### code × decision（36）
+### code × decision（48）
 
 - [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](paper-catalog.md#p034)
 - [Voyager: An Open-Ended Embodied Agent with Large Language Models](paper-catalog.md#p041)
@@ -2882,10 +2978,22 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [ENPIRE: Agentic Robot Policy Self-Improvement in the Real World](paper-catalog.md#p609)
 - [Generalizing Manipulation Skills with a Local Coding Agent](paper-catalog.md#p610)
 - [Bridging Semantics and Physics with Constrained LLMs for Safe and Trustworthy Robotic Manipulation](paper-catalog.md#p611)
+- [ProgPrompt: Generating Situated Robot Task Plans using Large Language Models](paper-catalog.md#p626)
+- [ReKep: Spatio-Temporal Reasoning of Relational Keypoint Constraints for Robotic Manipulation](paper-catalog.md#p627)
+- [Growing with Your Embodied Agent: A Human-in-the-Loop Lifelong Code Generation Framework for Long-Horizon Manipulation Skills](paper-catalog.md#p628)
+- [Act-Observe-Rewrite: Multimodal Coding Agents as In-Context Policy Learners for Robot Manipulation](paper-catalog.md#p630)
+- [CaP-X: A Framework for Benchmarking and Improving Coding Agents for Robot Manipulation](paper-catalog.md#p631)
+- [HELM: Harness-Enhanced Long-horizon Memory for Vision-Language-Action Manipulation](paper-catalog.md#p632)
+- [ASPIRE: Agentic /Skills Discovery for Robotics](paper-catalog.md#p633)
+- [CodeActionBench: Evaluating Agentic Code-as-Policy for Embodied Manipulation](paper-catalog.md#p635)
+- [Make Code as Policy Great Again: Frontier Agents Write, Call, and Evolve Robot Tools](paper-catalog.md#p636)
+- [OpenRUA: Robot-Use Agents Are Zero-Shot Visuomotor Policies](paper-catalog.md#p637)
+- [Scaling Online Exploration for Robot Agents](paper-catalog.md#p639)
+- [AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics](paper-catalog.md#p640)
 
 <a id="x-code-evaluation"></a>
 
-### code × evaluation（26）
+### code × evaluation（38）
 
 - [INSPECT: Intrinsic and Systematic Probing Evaluation for Code Transformers](paper-catalog.md#p030)
 - [Finding bugs across the Python ecosystem with Claude and property-based testing](paper-catalog.md#p160)
@@ -2913,6 +3021,18 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [ENPIRE: Agentic Robot Policy Self-Improvement in the Real World](paper-catalog.md#p609)
 - [Generalizing Manipulation Skills with a Local Coding Agent](paper-catalog.md#p610)
 - [Bridging Semantics and Physics with Constrained LLMs for Safe and Trustworthy Robotic Manipulation](paper-catalog.md#p611)
+- [ProgPrompt: Generating Situated Robot Task Plans using Large Language Models](paper-catalog.md#p626)
+- [ReKep: Spatio-Temporal Reasoning of Relational Keypoint Constraints for Robotic Manipulation](paper-catalog.md#p627)
+- [Growing with Your Embodied Agent: A Human-in-the-Loop Lifelong Code Generation Framework for Long-Horizon Manipulation Skills](paper-catalog.md#p628)
+- [Act-Observe-Rewrite: Multimodal Coding Agents as In-Context Policy Learners for Robot Manipulation](paper-catalog.md#p630)
+- [CaP-X: A Framework for Benchmarking and Improving Coding Agents for Robot Manipulation](paper-catalog.md#p631)
+- [HELM: Harness-Enhanced Long-horizon Memory for Vision-Language-Action Manipulation](paper-catalog.md#p632)
+- [ASPIRE: Agentic /Skills Discovery for Robotics](paper-catalog.md#p633)
+- [CodeActionBench: Evaluating Agentic Code-as-Policy for Embodied Manipulation](paper-catalog.md#p635)
+- [Make Code as Policy Great Again: Frontier Agents Write, Call, and Evolve Robot Tools](paper-catalog.md#p636)
+- [OpenRUA: Robot-Use Agents Are Zero-Shot Visuomotor Policies](paper-catalog.md#p637)
+- [Scaling Online Exploration for Robot Agents](paper-catalog.md#p639)
+- [AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics](paper-catalog.md#p640)
 
 <a id="x-code-analysis"></a>
 
@@ -3061,7 +3181,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-multimodal-decision"></a>
 
-### multimodal × decision（64）
+### multimodal × decision（65）
 
 - [Object-Centric World Model for Language-Guided Manipulation](paper-catalog.md#p052)
 - [Language-Grounded Hierarchical Planning and Execution with Multi-Robot 3D Scene Graphs](paper-catalog.md#p055)
@@ -3127,6 +3247,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [ENPIRE: Agentic Robot Policy Self-Improvement in the Real World](paper-catalog.md#p609)
 - [Generalizing Manipulation Skills with a Local Coding Agent](paper-catalog.md#p610)
 - [Bridging Semantics and Physics with Constrained LLMs for Safe and Trustworthy Robotic Manipulation](paper-catalog.md#p611)
+- [TARC: Time-Adaptive Robotic Control](paper-catalog.md#p629)
 
 <a id="x-multimodal-evaluation"></a>
 

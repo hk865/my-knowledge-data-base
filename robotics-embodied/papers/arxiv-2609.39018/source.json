@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2609.39018",
+  "title": "Make Code as Policy Great Again: Frontier Agents Write, Call, and Evolve Robot Tools",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2609.39018",
+  "official_url": "https://arxiv.org/abs/2609.39018v1",
+  "official_fulltext_url": "https://arxiv.org/pdf/2609.39018v1",
+  "read_version": "v1",
+  "first_submitted": "2026-09-30",
+  "version_date": "2026-09-30",
+  "year": 2026,
+  "authors": [
+    "Ge, Shijia",
+    "Zhou, Alex",
+    "Zeng, Jianshu",
+    "Wan, Yexing",
+    "Wu, Di",
+    "Zheng, Zelin",
+    "Wang, Yazhe",
+    "Jia, Zhiqi",
+    "Shangguan, Xuan",
+    "Zhu, Jay",
+    "Liu, Yijun",
+    "He, Lingyu",
+    "Wu, Sihang",
+    "He, Xiao",
+    "Gao, Hongcheng"
+  ],
+  "topic_paths": [
+    "robotics/embodied-agents"
+  ],
+  "modality_tags": [
+    "text",
+    "image",
+    "action",
+    "code"
+  ],
+  "task_tags": [
+    "decision",
+    "evaluation"
+  ],
+  "content_kind": "reading",
+  "reading_path": "robotics-embodied/papers/arxiv-2609.39018/reading.md",
+  "reading_depth": "selected_sections",
+  "reading_boundary": "原文方法、主要实验与相关附录定向阅读（方法、RoboDojo 实验与工具消融、真机边界）；非逐页通读，未复现。",
+  "independently_reproduced": false,
+  "supplementary_readings": [
+    "robotics-embodied/papers/arxiv-2609.39018/reading.md"
+  ],
+  "license": {
+    "status": "license_identified",
+    "license_urls": [
+      "http://creativecommons.org/licenses/by/4.0/"
+    ],
+    "checked_at": "2026-11-01",
+    "note": "仅链接官方原文，不镜像 PDF；arXiv nonexclusive-distrib 不作为第三方全文再发布授权。"
+  },
+  "reading_pack_2026_10_30": {
+    "read_version": "v1",
+    "version_date": "2026-09-30",
+    "reading_boundary": "原文方法、主要实验与相关附录定向阅读（方法、RoboDojo 实验与工具消融、真机边界）；非逐页通读，未复现。",
+    "original_checked_at": "2026-10-30",
+    "local_pdf_retained": true,
+    "public_pdf_mirror": false
+  }
+}

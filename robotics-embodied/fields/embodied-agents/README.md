@@ -280,3 +280,7 @@
 [1] Chen et al. [RoboDojo，arXiv v3，2026-07-08](https://arxiv.org/html/2607.04434v3)，§3.1.1；[文献卡](../../papers/arxiv-2607.04434/README.md)。
 
 [2] Huang et al. [VLA-REPLICA，arXiv v1，2026-05-20](https://arxiv.org/html/2605.20774v1)，§4.3；[文献卡](../../papers/arxiv-2605.20774/README.md)。
+
+## 2026-11-01 资料增量
+
+[机械臂论文资料包：规划、反馈、代码策略与 VLA 编排](reading-pack-2026-10-30/README.md)。

@@ -1,6 +1,6 @@
 # 全库论文总目录
 
-共 625 个去重资源（551 篇论文、33 篇官方技术报告、5 个代码仓库、15 篇官方博客、17 份官方技术文档、4 篇作者文章）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
+共 640 个去重资源（566 篇论文、33 篇官方技术报告、5 个代码仓库、15 篇官方博客、17 份官方技术文档、4 篇作者文章）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
 
 身份核验、助手教学进度和用户阅读状态分开。历史来源保留原角色与证据局限，不将助手推荐写成用户提供，也不将教学完成写成用户已读。
 
@@ -880,7 +880,7 @@
 - 身份核验：verified_identity
 - 助手教学 / 阅读进度：identity_verified_or_existing_catalog_only
 - 用户阅读状态：unknown
-- [文献卡（尚无独立精读）](../robotics-embodied/papers/arxiv-2504.16054/README.md)
+- [独立讲解](../robotics-embodied/papers/arxiv-2504.16054/reading.md)
 
 <a id="p074"></a>
 ## p074 · SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics
@@ -2635,7 +2635,7 @@
 - 主题：robotics/embodied-agents
 - 身份核验：selected_method_sections_checked_not_full_read
 - 用户阅读状态：unknown
-- [文献卡](../robotics-embodied/papers/arxiv-2207.05608/README.md)
+- [独立讲解](../robotics-embodied/papers/arxiv-2207.05608/reading.md)
 
 <a id="p228"></a>
 ## p228 · Code as Policies: Language Model Programs for Embodied Control
@@ -2645,7 +2645,7 @@
 - 主题：robotics/embodied-agents
 - 身份核验：selected_method_sections_checked_not_full_read
 - 用户阅读状态：unknown
-- [文献卡](../robotics-embodied/papers/arxiv-2209.07753/README.md)
+- [独立讲解](../robotics-embodied/papers/arxiv-2209.07753/reading.md)
 
 <a id="p229"></a>
 ## p229 · LLM-Planner: Few-Shot Grounded Planning for Embodied Agents with Large Language Models
@@ -2715,7 +2715,7 @@
 - 主题：robotics/embodied-agents
 - 身份核验：selected_method_sections_checked_not_full_read
 - 用户阅读状态：unknown
-- [文献卡](../robotics-embodied/papers/arxiv-2307.05973/README.md)
+- [独立讲解](../robotics-embodied/papers/arxiv-2307.05973/reading.md)
 
 <a id="p236"></a>
 ## p236 · DTC: Deep Tracking Control
@@ -6435,7 +6435,7 @@
 - 主题：robotics/embodied-agents, robotics/navigation-planning
 - 身份核验：official_identity_and_selected_fulltext_sections_checked
 - 用户阅读状态：unknown
-- [文献卡](../robotics-embodied/papers/arxiv-2609.12541/README.md)
+- [独立讲解](../robotics-embodied/papers/arxiv-2609.12541/reading.md)
 
 <a id="p608"></a>
 ## p608 · SimEX: Simulation-Integrated Robotics AutoResearch
@@ -6455,7 +6455,7 @@
 - 主题：robotics/embodied-agents, robotics/embodied-policies
 - 身份核验：official_identity_and_selected_fulltext_sections_checked
 - 用户阅读状态：unknown
-- [文献卡](../robotics-embodied/papers/arxiv-2606.19980/README.md)
+- [独立讲解](../robotics-embodied/papers/arxiv-2606.19980/reading.md)
 
 <a id="p610"></a>
 ## p610 · Generalizing Manipulation Skills with a Local Coding Agent
@@ -6616,6 +6616,156 @@
 - 身份核验：bibliographic_and_method_scope_checked
 - 用户阅读状态：unknown
 - [文献卡](../robotics-embodied/papers/arxiv-2507.08364/README.md)
+
+<a id="p626"></a>
+## p626 · ProgPrompt: Generating Situated Robot Task Plans using Large Language Models
+
+- 标识：arxiv:2209.11302
+- 原文 / 官方入口：https://arxiv.org/abs/2209.11302v1
+- 主题：robotics/embodied-agents
+- 身份核验：not_recorded
+- 用户阅读状态：unknown
+- [独立讲解](../robotics-embodied/papers/arxiv-2209.11302/reading.md)
+
+<a id="p627"></a>
+## p627 · ReKep: Spatio-Temporal Reasoning of Relational Keypoint Constraints for Robotic Manipulation
+
+- 标识：arxiv:2409.01652
+- 原文 / 官方入口：https://arxiv.org/abs/2409.01652v2
+- 主题：robotics/embodied-agents
+- 身份核验：not_recorded
+- 用户阅读状态：unknown
+- [独立讲解](../robotics-embodied/papers/arxiv-2409.01652/reading.md)
+
+<a id="p628"></a>
+## p628 · Growing with Your Embodied Agent: A Human-in-the-Loop Lifelong Code Generation Framework for Long-Horizon Manipulation Skills
+
+- 标识：arxiv:2509.18597
+- 原文 / 官方入口：https://arxiv.org/abs/2509.18597v2
+- 主题：robotics/embodied-agents
+- 身份核验：not_recorded
+- 用户阅读状态：unknown
+- [独立讲解](../robotics-embodied/papers/arxiv-2509.18597/reading.md)
+
+<a id="p629"></a>
+## p629 · TARC: Time-Adaptive Robotic Control
+
+- 标识：arxiv:2510.23176
+- 原文 / 官方入口：https://arxiv.org/abs/2510.23176
+- 主题：robotics/control
+- 身份核验：official_identity_and_selected_sections_checked
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2510.23176/README.md)
+
+<a id="p630"></a>
+## p630 · Act-Observe-Rewrite: Multimodal Coding Agents as In-Context Policy Learners for Robot Manipulation
+
+- 标识：arxiv:2603.04466
+- 原文 / 官方入口：https://arxiv.org/abs/2603.04466v1
+- 主题：robotics/embodied-agents
+- 身份核验：not_recorded
+- 用户阅读状态：unknown
+- [独立讲解](../robotics-embodied/papers/arxiv-2603.04466/reading.md)
+
+<a id="p631"></a>
+## p631 · CaP-X: A Framework for Benchmarking and Improving Coding Agents for Robot Manipulation
+
+- 标识：arxiv:2603.22435
+- 原文 / 官方入口：https://arxiv.org/abs/2603.22435v2
+- 主题：robotics/embodied-agents
+- 身份核验：not_recorded
+- 用户阅读状态：unknown
+- [独立讲解](../robotics-embodied/papers/arxiv-2603.22435/reading.md)
+
+<a id="p632"></a>
+## p632 · HELM: Harness-Enhanced Long-horizon Memory for Vision-Language-Action Manipulation
+
+- 标识：arxiv:2604.18791
+- 原文 / 官方入口：https://arxiv.org/abs/2604.18791v1
+- 主题：robotics/embodied-agents
+- 身份核验：not_recorded
+- 用户阅读状态：unknown
+- [独立讲解](../robotics-embodied/papers/arxiv-2604.18791/reading.md)
+
+<a id="p633"></a>
+## p633 · ASPIRE: Agentic /Skills Discovery for Robotics
+
+- 标识：arxiv:2607.00272
+- 原文 / 官方入口：https://arxiv.org/abs/2607.00272v2
+- 主题：robotics/embodied-agents
+- 身份核验：not_recorded
+- 用户阅读状态：unknown
+- [独立讲解](../robotics-embodied/papers/arxiv-2607.00272/reading.md)
+
+<a id="p634"></a>
+## p634 · Extending the Speed Limit of Quadrupedal Locomotion via Refined Actuator Modeling and Adaptive Command Scheduling
+
+- 标识：arxiv:2609.13289
+- 原文 / 官方入口：https://arxiv.org/abs/2609.13289
+- 主题：robotics/control
+- 身份核验：official_identity_and_selected_sections_checked
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2609.13289/README.md)
+
+<a id="p635"></a>
+## p635 · CodeActionBench: Evaluating Agentic Code-as-Policy for Embodied Manipulation
+
+- 标识：arxiv:2609.33807
+- 原文 / 官方入口：https://arxiv.org/abs/2609.33807v1
+- 主题：robotics/embodied-agents
+- 身份核验：not_recorded
+- 用户阅读状态：unknown
+- [独立讲解](../robotics-embodied/papers/arxiv-2609.33807/reading.md)
+
+<a id="p636"></a>
+## p636 · Make Code as Policy Great Again: Frontier Agents Write, Call, and Evolve Robot Tools
+
+- 标识：arxiv:2609.39018
+- 原文 / 官方入口：https://arxiv.org/abs/2609.39018v1
+- 主题：robotics/embodied-agents
+- 身份核验：not_recorded
+- 用户阅读状态：unknown
+- [独立讲解](../robotics-embodied/papers/arxiv-2609.39018/reading.md)
+
+<a id="p637"></a>
+## p637 · OpenRUA: Robot-Use Agents Are Zero-Shot Visuomotor Policies
+
+- 标识：arxiv:2610.02459
+- 原文 / 官方入口：https://arxiv.org/abs/2610.02459v1
+- 主题：robotics/embodied-agents
+- 身份核验：not_recorded
+- 用户阅读状态：unknown
+- [独立讲解](../robotics-embodied/papers/arxiv-2610.02459/reading.md)
+
+<a id="p638"></a>
+## p638 · Chronos Policy: Learning Robot Policies on Physical Time
+
+- 标识：arxiv:2610.13929
+- 原文 / 官方入口：https://arxiv.org/abs/2610.13929
+- 主题：robotics/embodied-policies
+- 身份核验：primary_sources_selected_sections_checked
+- 用户阅读状态：unknown
+- [文献卡](../robotics-embodied/papers/arxiv-2610.13929/README.md)
+
+<a id="p639"></a>
+## p639 · Scaling Online Exploration for Robot Agents
+
+- 标识：arxiv:2610.22496
+- 原文 / 官方入口：https://arxiv.org/abs/2610.22496v1
+- 主题：robotics/embodied-agents
+- 身份核验：not_recorded
+- 用户阅读状态：unknown
+- [独立讲解](../robotics-embodied/papers/arxiv-2610.22496/reading.md)
+
+<a id="p640"></a>
+## p640 · AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics
+
+- 标识：arxiv:2610.28589
+- 原文 / 官方入口：https://arxiv.org/abs/2610.28589v2
+- 主题：robotics/embodied-agents
+- 身份核验：not_recorded
+- 用户阅读状态：unknown
+- [独立讲解](../robotics-embodied/papers/arxiv-2610.28589/reading.md)
 
 ## 2026年10月3日既有条目更新
 

@@ -25,7 +25,7 @@
 - [$π_0$: A Vision-Language-Action Flow Model for General Robot Control](arxiv-2410.24164/README.md) · 2024 · 文献卡，暂无独立精读
 - [FAST: Efficient Action Tokenization for Vision-Language-Action Models](arxiv-2501.09747/README.md) · 2025 · 文献卡，暂无独立精读
 - [Fine-Tuning Vision-Language-Action Models: Optimizing Speed and Success](arxiv-2502.19645/README.md) · 2025 · 文献卡，暂无独立精读
-- [$π_{0.5}$: a Vision-Language-Action Model with Open-World Generalization](arxiv-2504.16054/README.md) · 2025 · 文献卡，暂无独立精读
+- [$π_{0.5}$: a Vision-Language-Action Model with Open-World Generalization](arxiv-2504.16054/README.md) · 2025 · 技术精读
 - [SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics](arxiv-2506.01844/README.md) · 2025 · 文献卡，暂无独立精读
 - [GR00T N1: An Open Foundation Model for Generalist Humanoid Robots](arxiv-2503.14734/README.md) · 2025 · 文献卡，暂无独立精读
 - [$π_{0.7}$: a Steerable Generalist Robotic Foundation Model with Emergent Capabilities](arxiv-2604.15483/README.md) · 2026 · 文献卡，暂无独立精读
@@ -110,15 +110,15 @@
 - [BEVFusion: Multi-Task Multi-Sensor Fusion with Unified Bird's-Eye View Representation](arxiv-2205.13542/README.md) · 2022 · 文献卡，暂无独立精读
 - [DayDreamer: World Models for Physical Robot Learning](arxiv-2206.14176/README.md) · 2022 · 文献卡，暂无独立精读
 - [LM-Nav: Robotic Navigation with Large Pre-Trained Models of Language, Vision, and Action](arxiv-2207.04429/README.md) · 2022 · 文献卡，暂无独立精读
-- [Inner Monologue: Embodied Reasoning through Planning with Language Models](arxiv-2207.05608/README.md) · 2022 · 文献卡，暂无独立精读
-- [Code as Policies: Language Model Programs for Embodied Control](arxiv-2209.07753/README.md) · 2022 · 文献卡，暂无独立精读
+- [Inner Monologue: Embodied Reasoning through Planning with Language Models](arxiv-2207.05608/README.md) · 2022 · 技术精读
+- [Code as Policies: Language Model Programs for Embodied Control](arxiv-2209.07753/README.md) · 2022 · 技术精读
 - [LLM-Planner: Few-Shot Grounded Planning for Embodied Agents with Large Language Models](arxiv-2212.04088/README.md) · 2022 · 文献卡，暂无独立精读
 - [Learning Universal Policies via Text-Guided Video Generation](arxiv-2302.00111/README.md) · 2023 · 文献卡，暂无独立精读
 - [ConceptFusion: Open-set Multimodal 3D Mapping](arxiv-2302.07241/README.md) · 2023 · 文献卡，暂无独立精读
 - [Segment Anything](arxiv-2304.02643/README.md) · 2023 · 文献卡，暂无独立精读
 - [Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware](arxiv-2304.13705/README.md) · 2023 · 文献卡，暂无独立精读
 - [ViNT: A Foundation Model for Visual Navigation](arxiv-2306.14846/README.md) · 2023 · 文献卡，暂无独立精读
-- [VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models](arxiv-2307.05973/README.md) · 2023 · 文献卡，暂无独立精读
+- [VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language Models](arxiv-2307.05973/README.md) · 2023 · 技术精读
 - [DTC: Deep Tracking Control](arxiv-2309.15462/README.md) · 2024 · 文献卡，暂无独立精读
 - [Learning Interactive Real-World Simulators](arxiv-2310.06114/README.md) · 2023 · 文献卡，暂无独立精读
 - [NoMaD: Goal Masked Diffusion Policies for Navigation and Exploration](arxiv-2310.07896/README.md) · 2023 · 文献卡，暂无独立精读
@@ -206,9 +206,9 @@
 - [Improving Robotic Generalist Policies via Flow Reversal Steering](arxiv-2606.13675/README.md) · 2026 · 文献卡，暂无独立精读
 - [Proxy Policy Steering](arxiv-2609.09148/README.md) · 2026 · 文献卡，暂无独立精读
 - [Inference-time Policy Steering via Vision and Touch](arxiv-2606.14981/README.md) · 2026 · 文献卡，暂无独立精读
-- [Agent as Policy for Robotic Manipulation](arxiv-2609.12541/README.md) · 2026 · 文献卡，暂无独立精读
+- [Agent as Policy for Robotic Manipulation](arxiv-2609.12541/README.md) · 2026 · 技术精读
 - [SimEX: Simulation-Integrated Robotics AutoResearch](arxiv-2609.38982/README.md) · 2026 · 文献卡，暂无独立精读
-- [ENPIRE: Agentic Robot Policy Self-Improvement in the Real World](arxiv-2606.19980/README.md) · 2026 · 文献卡，暂无独立精读
+- [ENPIRE: Agentic Robot Policy Self-Improvement in the Real World](arxiv-2606.19980/README.md) · 2026 · 技术精读
 - [Generalizing Manipulation Skills with a Local Coding Agent](arxiv-2609.26499/README.md) · 2026 · 文献卡，暂无独立精读
 - [Bridging Semantics and Physics with Constrained LLMs for Safe and Trustworthy Robotic Manipulation](arxiv-2608.29379/README.md) · 2026 · 文献卡，暂无独立精读
 
@@ -228,3 +228,21 @@
 - [Dynamic-LIVO: A Dynamic-Aware LiDAR-Inertial-Visual Odometry System Using Spatio-Temporal Normals](arxiv-2609.19336/README.md) · 2026 · 文献卡，暂无独立精读
 - [RT-LIVO: Semantic and Motion-Aware LiDAR-Inertial-Visual Odometry for Robust Mapping in Dynamic Environments](doi-10.2139-ssrn.7602304/README.md) · 2026 · 文献卡，暂无独立精读
 - [Towards Robust Sensor-Fusion Ground SLAM: A Comprehensive Benchmark and A Resilient Framework](arxiv-2507.08364/README.md) · 2025 · 文献卡，暂无独立精读
+
+## 2026年11月1日文献与资料增量
+
+- [ProgPrompt: Generating Situated Robot Task Plans using Large Language Models](arxiv-2209.11302/README.md) · 2022 · 技术精读
+- [ReKep: Spatio-Temporal Reasoning of Relational Keypoint Constraints for Robotic Manipulation](arxiv-2409.01652/README.md) · 2024 · 技术精读
+- [Growing with Your Embodied Agent: A Human-in-the-Loop Lifelong Code Generation Framework for Long-Horizon Manipulation Skills](arxiv-2509.18597/README.md) · 2025 · 技术精读
+- [TARC: Time-Adaptive Robotic Control](arxiv-2510.23176/README.md) · 2025 · 文献卡，暂无独立精读
+- [Act-Observe-Rewrite: Multimodal Coding Agents as In-Context Policy Learners for Robot Manipulation](arxiv-2603.04466/README.md) · 2026 · 技术精读
+- [CaP-X: A Framework for Benchmarking and Improving Coding Agents for Robot Manipulation](arxiv-2603.22435/README.md) · 2026 · 技术精读
+- [HELM: Harness-Enhanced Long-horizon Memory for Vision-Language-Action Manipulation](arxiv-2604.18791/README.md) · 2026 · 技术精读
+- [ASPIRE: Agentic /Skills Discovery for Robotics](arxiv-2607.00272/README.md) · 2026 · 技术精读
+- [Extending the Speed Limit of Quadrupedal Locomotion via Refined Actuator Modeling and Adaptive Command Scheduling](arxiv-2609.13289/README.md) · 2026 · 文献卡，暂无独立精读
+- [CodeActionBench: Evaluating Agentic Code-as-Policy for Embodied Manipulation](arxiv-2609.33807/README.md) · 2026 · 技术精读
+- [Make Code as Policy Great Again: Frontier Agents Write, Call, and Evolve Robot Tools](arxiv-2609.39018/README.md) · 2026 · 技术精读
+- [OpenRUA: Robot-Use Agents Are Zero-Shot Visuomotor Policies](arxiv-2610.02459/README.md) · 2026 · 技术精读
+- [Chronos Policy: Learning Robot Policies on Physical Time](arxiv-2610.13929/README.md) · 2026 · 文献卡，暂无独立精读
+- [Scaling Online Exploration for Robot Agents](arxiv-2610.22496/README.md) · 2026 · 技术精读
+- [AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics](arxiv-2610.28589/README.md) · 2026 · 技术精读
