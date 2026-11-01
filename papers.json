@@ -38617,5 +38617,762 @@
     ],
     "read_version": "v1",
     "reading_scope": "核对v1的3; 4.1-4.6; 5及所列官方来源；选定章节核验，未完整审计全部附录，未复现。"
+  },
+  {
+    "id": "arxiv:2408.14035",
+    "title": "FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry",
+    "url": "https://arxiv.org/abs/2408.14035",
+    "arxiv_id": "2408.14035",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2408.14035",
+      "https://github.com/hku-mars/FAST-LIVO2"
+    ],
+    "verification_status": "bibliographic_and_method_scope_checked",
+    "caveats": [],
+    "assistant_reading_status": "abstract_and_official_materials_checked",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p612",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2408.14035",
+    "canonical_path": "robotics-embodied/papers/arxiv-2408.14035/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2408.14035/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2408.14035/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Chunran Zheng",
+      "Wei Xu",
+      "Zuhao Zou",
+      "Tong Hua",
+      "Chongjian Yuan",
+      "Dongjiao He",
+      "Bingyang Zhou",
+      "Zheng Liu",
+      "Jiarong Lin",
+      "Fangcheng Zhu",
+      "Yunfan Ren",
+      "Rong Wang",
+      "Fanle Meng",
+      "Fu Zhang"
+    ],
+    "read_version": "v2",
+    "reading_scope": "核验论文摘要与公开官方材料、作为项目方案的文献定位；未进行全文精读或独立复现。"
+  },
+  {
+    "id": "arxiv:2509.15673",
+    "title": "Omni-LIVO: Robust RGB-Colored Multi-Camera Visual-Inertial-LiDAR Odometry via Photometric Migration and ESIKF Fusion",
+    "url": "https://arxiv.org/abs/2509.15673",
+    "arxiv_id": "2509.15673",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2509.15673",
+      "https://github.com/elon876/Omni-LIVO"
+    ],
+    "verification_status": "bibliographic_and_method_scope_checked",
+    "caveats": [],
+    "assistant_reading_status": "abstract_and_official_materials_checked",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p613",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2509.15673",
+    "canonical_path": "robotics-embodied/papers/arxiv-2509.15673/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2509.15673/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2509.15673/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Yinong Cao",
+      "Chenyang Zhang",
+      "Xin He",
+      "Yuwei Chen",
+      "Chengyu Pu",
+      "Bingtao Wang",
+      "Kaile Wu",
+      "Shouzheng Zhu",
+      "Fei Han",
+      "Shijie Liu",
+      "Chunlai Li",
+      "Jianyu Wang"
+    ],
+    "read_version": "v5",
+    "reading_scope": "核验论文摘要与公开官方材料、作为项目方案的文献定位；未进行全文精读或独立复现。"
+  },
+  {
+    "id": "arxiv:2603.19076",
+    "title": "DROID-SLAM in the Wild",
+    "url": "https://arxiv.org/abs/2603.19076",
+    "arxiv_id": "2603.19076",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2603.19076",
+      "https://github.com/MoyangLi00/DROID-W"
+    ],
+    "verification_status": "bibliographic_and_method_scope_checked",
+    "caveats": [],
+    "assistant_reading_status": "abstract_and_official_materials_checked",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p614",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2603.19076",
+    "canonical_path": "robotics-embodied/papers/arxiv-2603.19076/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2603.19076/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2603.19076/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Moyang Li",
+      "Zihan Zhu",
+      "Marc Pollefeys",
+      "Daniel Barath"
+    ],
+    "read_version": "v1",
+    "reading_scope": "核验论文摘要与公开官方材料、作为项目方案的文献定位；未进行全文精读或独立复现。"
+  },
+  {
+    "id": "arxiv:2604.26067",
+    "title": "RADIO-ViPE: Online Tightly Coupled Multi-Modal Fusion for Open-Vocabulary Semantic SLAM in Dynamic Environments",
+    "url": "https://arxiv.org/abs/2604.26067",
+    "arxiv_id": "2604.26067",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2604.26067",
+      "https://github.com/be2rlab/QUORUM"
+    ],
+    "verification_status": "bibliographic_and_method_scope_checked",
+    "caveats": [],
+    "assistant_reading_status": "abstract_and_official_materials_checked",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p615",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2604.26067",
+    "canonical_path": "robotics-embodied/papers/arxiv-2604.26067/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2604.26067/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2604.26067/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Zaid Nasser",
+      "Mikhail Iumanov",
+      "Tianhao Li",
+      "Maxim Popov",
+      "Jaafar Mahmoud",
+      "Sergey Kolyubin"
+    ],
+    "read_version": "v1",
+    "reading_scope": "核验论文摘要与公开官方材料、作为项目方案的文献定位；未进行全文精读或独立复现。"
+  },
+  {
+    "id": "arxiv:2504.03886",
+    "title": "WildGS-SLAM: Monocular Gaussian Splatting SLAM in Dynamic Environments",
+    "url": "https://arxiv.org/abs/2504.03886",
+    "arxiv_id": "2504.03886",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2504.03886",
+      "https://github.com/GradientSpaces/WildGS-SLAM"
+    ],
+    "verification_status": "bibliographic_and_method_scope_checked",
+    "caveats": [],
+    "assistant_reading_status": "abstract_and_official_materials_checked",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p616",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2504.03886",
+    "canonical_path": "robotics-embodied/papers/arxiv-2504.03886/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2504.03886/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2504.03886/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Jianhao Zheng",
+      "Zihan Zhu",
+      "Valentin Bieri",
+      "Marc Pollefeys",
+      "Songyou Peng",
+      "Iro Armeni"
+    ],
+    "read_version": "v1",
+    "reading_scope": "核验论文摘要与公开官方材料、作为项目方案的文献定位；未进行全文精读或独立复现。"
+  },
+  {
+    "id": "arxiv:2602.21644",
+    "title": "DAGS-SLAM: Dynamic-Aware 3DGS SLAM via Spatiotemporal Motion Probability and Uncertainty-Aware Scheduling",
+    "url": "https://arxiv.org/abs/2602.21644",
+    "arxiv_id": "2602.21644",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2602.21644"
+    ],
+    "verification_status": "bibliographic_and_method_scope_checked",
+    "caveats": [],
+    "assistant_reading_status": "abstract_and_official_materials_checked",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p617",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2602.21644",
+    "canonical_path": "robotics-embodied/papers/arxiv-2602.21644/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2602.21644/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2602.21644/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Li Zhang",
+      "Yu-An Liu",
+      "Xijia Jiang",
+      "Conghao Huang",
+      "Danyang Li",
+      "Yanyong Zhang"
+    ],
+    "read_version": "v2",
+    "reading_scope": "核验论文摘要与公开官方材料、作为项目方案的文献定位；未进行全文精读或独立复现。"
+  },
+  {
+    "id": "arxiv:2501.11893",
+    "title": "DynoSAM: Open-Source Smoothing and Mapping Framework for Dynamic SLAM",
+    "url": "https://arxiv.org/abs/2501.11893",
+    "arxiv_id": "2501.11893",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2501.11893",
+      "https://github.com/ACFR-RPG/DynOSAM"
+    ],
+    "verification_status": "bibliographic_and_method_scope_checked",
+    "caveats": [],
+    "assistant_reading_status": "abstract_and_official_materials_checked",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p618",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2501.11893",
+    "canonical_path": "robotics-embodied/papers/arxiv-2501.11893/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2501.11893/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2501.11893/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Jesse Morris",
+      "Yiduo Wang",
+      "Mikolaj Kliniewski",
+      "Viorela Ila"
+    ],
+    "read_version": "v3",
+    "reading_scope": "核验论文摘要与公开官方材料、作为项目方案的文献定位；未进行全文精读或独立复现。"
+  },
+  {
+    "id": "arxiv:2007.01867",
+    "title": "TLIO: Tight Learned Inertial Odometry",
+    "url": "https://arxiv.org/abs/2007.01867",
+    "arxiv_id": "2007.01867",
+    "doi": null,
+    "year": "2020",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2007.01867",
+      "https://github.com/CathIAS/TLIO"
+    ],
+    "verification_status": "bibliographic_and_method_scope_checked",
+    "caveats": [],
+    "assistant_reading_status": "abstract_and_official_materials_checked",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p619",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2007.01867",
+    "canonical_path": "robotics-embodied/papers/arxiv-2007.01867/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2007.01867/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2007.01867/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Wenxin Liu",
+      "David Caruso",
+      "Eddy Ilg",
+      "Jing Dong",
+      "Anastasios I. Mourikis",
+      "Kostas Daniilidis",
+      "Vijay Kumar",
+      "Jakob Engel"
+    ],
+    "read_version": "v3",
+    "reading_scope": "核验论文摘要与公开官方材料、作为项目方案的文献定位；未进行全文精读或独立复现。"
+  },
+  {
+    "id": "arxiv:2310.04874",
+    "title": "AirIMU: Learning Uncertainty Propagation for Inertial Odometry",
+    "url": "https://arxiv.org/abs/2310.04874",
+    "arxiv_id": "2310.04874",
+    "doi": null,
+    "year": "2023",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2310.04874"
+    ],
+    "verification_status": "bibliographic_and_method_scope_checked",
+    "caveats": [],
+    "assistant_reading_status": "abstract_and_official_materials_checked",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p620",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2310.04874",
+    "canonical_path": "robotics-embodied/papers/arxiv-2310.04874/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2310.04874/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2310.04874/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Yuheng Qiu",
+      "Chen Wang",
+      "Can Xu",
+      "Yutian Chen",
+      "Xunfei Zhou",
+      "Youjie Xia",
+      "Sebastian Scherer"
+    ],
+    "read_version": "v4",
+    "reading_scope": "核验论文摘要与公开官方材料、作为项目方案的文献定位；未进行全文精读或独立复现。"
+  },
+  {
+    "id": "arxiv:1605.07148",
+    "title": "Backprop KF: Learning Discriminative Deterministic State Estimators",
+    "url": "https://arxiv.org/abs/1605.07148",
+    "arxiv_id": "1605.07148",
+    "doi": null,
+    "year": "2016",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/1605.07148"
+    ],
+    "verification_status": "bibliographic_and_method_scope_checked",
+    "caveats": [],
+    "assistant_reading_status": "abstract_and_official_materials_checked",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p621",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-1605.07148",
+    "canonical_path": "robotics-embodied/papers/arxiv-1605.07148/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-1605.07148/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-1605.07148/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Tuomas Haarnoja",
+      "Anurag Ajay",
+      "Sergey Levine",
+      "Pieter Abbeel"
+    ],
+    "read_version": "v4",
+    "reading_scope": "核验论文摘要与公开官方材料、作为项目方案的文献定位；未进行全文精读或独立复现。"
+  },
+  {
+    "id": "arxiv:1512.02363",
+    "title": "On-Manifold Preintegration for Real-Time Visual-Inertial Odometry",
+    "url": "https://arxiv.org/abs/1512.02363",
+    "arxiv_id": "1512.02363",
+    "doi": null,
+    "year": "2017",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/1512.02363"
+    ],
+    "verification_status": "bibliographic_and_method_scope_checked",
+    "caveats": [],
+    "assistant_reading_status": "abstract_and_official_materials_checked",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p622",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-1512.02363",
+    "canonical_path": "robotics-embodied/papers/arxiv-1512.02363/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-1512.02363/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-1512.02363/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Christian Forster",
+      "Luca Carlone",
+      "Frank Dellaert",
+      "Davide Scaramuzza"
+    ],
+    "read_version": "v3",
+    "reading_scope": "核验论文摘要与公开官方材料、作为项目方案的文献定位；未进行全文精读或独立复现。"
+  },
+  {
+    "id": "arxiv:2609.19336",
+    "title": "Dynamic-LIVO: A Dynamic-Aware LiDAR-Inertial-Visual Odometry System Using Spatio-Temporal Normals",
+    "url": "https://arxiv.org/abs/2609.19336",
+    "arxiv_id": "2609.19336",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2609.19336"
+    ],
+    "verification_status": "bibliographic_and_method_scope_checked",
+    "caveats": [],
+    "assistant_reading_status": "abstract_and_official_materials_checked",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p623",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2609.19336",
+    "canonical_path": "robotics-embodied/papers/arxiv-2609.19336/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2609.19336/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2609.19336/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Zhixin Zhang",
+      "Samuel Ahiwe",
+      "Matthew Hale",
+      "Liang Zhao",
+      "Pawel Ladosz"
+    ],
+    "reading_scope": "核验摘要与公开材料，未全文精读或独立复现。"
+  },
+  {
+    "id": "doi:10.2139/ssrn.7602304",
+    "title": "RT-LIVO: Semantic and Motion-Aware LiDAR-Inertial-Visual Odometry for Robust Mapping in Dynamic Environments",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7602304",
+    "arxiv_id": null,
+    "doi": "10.2139/ssrn.7602304",
+    "year": "2026",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7602304"
+    ],
+    "verification_status": "bibliographic_and_method_scope_checked",
+    "caveats": [],
+    "assistant_reading_status": "abstract_only",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p624",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/doi-10.2139-ssrn.7602304",
+    "canonical_path": "robotics-embodied/papers/doi-10.2139-ssrn.7602304/README.md",
+    "canonical_readme": "robotics-embodied/papers/doi-10.2139-ssrn.7602304/README.md",
+    "source_path": "robotics-embodied/papers/doi-10.2139-ssrn.7602304/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Yuxiang Yang",
+      "Siyu Xie",
+      "Tianrui Zhou",
+      "Hanling Chen",
+      "Ran Zhou",
+      "Chiang Liu",
+      "Yuhao Yang",
+      "Gun Li"
+    ],
+    "reading_scope": "核验 SSRN 搜索索引所载元数据和摘要；直接全文访问返回403，全文未读。"
+  },
+  {
+    "id": "arxiv:2507.08364",
+    "title": "Towards Robust Sensor-Fusion Ground SLAM: A Comprehensive Benchmark and A Resilient Framework",
+    "url": "https://arxiv.org/abs/2507.08364",
+    "arxiv_id": "2507.08364",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2507.08364",
+      "https://github.com/sjtuyinjie/M3DGR",
+      "https://sjtuyinjie.github.io/M3DGR-website/"
+    ],
+    "verification_status": "bibliographic_and_method_scope_checked",
+    "caveats": [],
+    "assistant_reading_status": "abstract_and_official_materials_checked",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p625",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2507.08364",
+    "canonical_path": "robotics-embodied/papers/arxiv-2507.08364/README.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2507.08364/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2507.08364/source.json",
+    "legacy_paths": [],
+    "content_kind": "bibliographic_card",
+    "authors": [
+      "Deteng Zhang",
+      "Junjie Zhang",
+      "Yan Sun",
+      "Tao Li",
+      "Hao Yin",
+      "Hongzhao Xie",
+      "Jie Yin"
+    ],
+    "reading_scope": "核验摘要、官方数据集页面及标定说明；未全文精读，未下载或审计数据。"
   }
 ]

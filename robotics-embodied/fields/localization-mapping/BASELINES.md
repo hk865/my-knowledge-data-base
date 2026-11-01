@@ -78,3 +78,7 @@
 
 - MSCKF、OpenVINS、PTAM 的会议名来自二手来源；FAST-LIO2、DS-VIO 的正式发表处未核实。
 - LIO-SAM、iMAP 的卡片按原文选段核实，未做全文精读。
+
+## 动态 LiDAR–视觉–惯性项目对照
+
+[开工方案](dynamic-neural-fusion-plan.md)将 [FAST-LIVO2](../../papers/arxiv-2408.14035/README.md)作为工程基座，优先比较 [Dynamic-LIVO](../../papers/arxiv-2609.19336/README.md)的几何动态筛选、[RT-LIVO](../../papers/doi-10.2139-ssrn.7602304/README.md)的语义运动筛选与视觉调权，以及 [Omni-LIVO](../../papers/arxiv-2509.15673/README.md)的相机级可靠性处理。RT-LIVO 目前仅核验摘要，不能据此声称完整复现。视觉与高斯路线作为机制参考，不与不同传感器配置直接排名。

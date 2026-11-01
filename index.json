@@ -590,5 +590,9 @@
   {
     "title": "面向机器人导航 Agent 的工具接口与动态时空信息",
     "file": "robotics-embodied/fields/embodied-agents/tool-interfaces-and-4d-observations.md"
+  },
+  {
+    "title": "动态语义与学习辅助融合 SLAM 研究总结与开工方案",
+    "file": "robotics-embodied/fields/localization-mapping/dynamic-neural-fusion-plan.md"
   }
 ]

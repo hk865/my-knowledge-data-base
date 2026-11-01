@@ -147,3 +147,4 @@ VLA-Pilot：让大模型写评分程序，用进化搜索改进动作候选,robo
 Harness VLA：让通用大模型安排接触，让冻结策略专心动手,robotics-embodied/papers/arxiv-2607.08448/reading.md
 地面约束能修正哪一种定位漂移,perspectives/notes/ground-drift-constraints.md
 面向机器人导航 Agent 的工具接口与动态时空信息,robotics-embodied/fields/embodied-agents/tool-interfaces-and-4d-observations.md
+动态语义与学习辅助融合 SLAM 研究总结与开工方案,robotics-embodied/fields/localization-mapping/dynamic-neural-fusion-plan.md

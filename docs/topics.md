@@ -650,7 +650,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Fast-FoundationStereo: Real-Time Zero-Shot Stereo Matching](paper-catalog.md#p577)
 - [Lite Any Stereo V2: Faster and Stronger Efficient Zero-Shot Stereo Matching](paper-catalog.md#p579)
 
-### 定位与建图（39）
+### 定位与建图（53）
 
 细分：里程计与状态估计；SLAM 与地图
 
@@ -693,6 +693,20 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [MapAnything: Universal Feed-Forward Metric 3D Reconstruction](paper-catalog.md#p514)
 - [AMB3R-SLAM: Kilometer-scale SLAM with Hierarchical Backend](paper-catalog.md#p515)
 - [cuVSLAM: CUDA accelerated visual odometry and mapping](paper-catalog.md#p516)
+- [FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry](paper-catalog.md#p612)
+- [Omni-LIVO: Robust RGB-Colored Multi-Camera Visual-Inertial-LiDAR Odometry via Photometric Migration and ESIKF Fusion](paper-catalog.md#p613)
+- [DROID-SLAM in the Wild](paper-catalog.md#p614)
+- [RADIO-ViPE: Online Tightly Coupled Multi-Modal Fusion for Open-Vocabulary Semantic SLAM in Dynamic Environments](paper-catalog.md#p615)
+- [WildGS-SLAM: Monocular Gaussian Splatting SLAM in Dynamic Environments](paper-catalog.md#p616)
+- [DAGS-SLAM: Dynamic-Aware 3DGS SLAM via Spatiotemporal Motion Probability and Uncertainty-Aware Scheduling](paper-catalog.md#p617)
+- [DynoSAM: Open-Source Smoothing and Mapping Framework for Dynamic SLAM](paper-catalog.md#p618)
+- [TLIO: Tight Learned Inertial Odometry](paper-catalog.md#p619)
+- [AirIMU: Learning Uncertainty Propagation for Inertial Odometry](paper-catalog.md#p620)
+- [Backprop KF: Learning Discriminative Deterministic State Estimators](paper-catalog.md#p621)
+- [On-Manifold Preintegration for Real-Time Visual-Inertial Odometry](paper-catalog.md#p622)
+- [Dynamic-LIVO: A Dynamic-Aware LiDAR-Inertial-Visual Odometry System Using Spatio-Temporal Normals](paper-catalog.md#p623)
+- [RT-LIVO: Semantic and Motion-Aware LiDAR-Inertial-Visual Odometry for Robust Mapping in Dynamic Environments](paper-catalog.md#p624)
+- [Towards Robust Sensor-Fusion Ground SLAM: A Comprehensive Benchmark and A Resilient Framework](paper-catalog.md#p625)
 
 ### 导航与规划（24）
 
@@ -1173,11 +1187,11 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 | 模态 \ 任务 | understanding | generation | decision | evaluation | analysis |
 |---|---:|---:|---:|---:|---:|
 | text | [65](#x-text-understanding) | [169](#x-text-generation) | [130](#x-text-decision) | [94](#x-text-evaluation) | [84](#x-text-analysis) |
-| image | [127](#x-image-understanding) | [60](#x-image-generation) | [125](#x-image-decision) | [37](#x-image-evaluation) | [16](#x-image-analysis) |
+| image | [139](#x-image-understanding) | [60](#x-image-generation) | [125](#x-image-decision) | [37](#x-image-evaluation) | [16](#x-image-analysis) |
 | video | [38](#x-video-understanding) | [44](#x-video-generation) | [36](#x-video-decision) | [15](#x-video-evaluation) | [6](#x-video-analysis) |
 | audio | [9](#x-audio-understanding) | [7](#x-audio-generation) | [2](#x-audio-decision) | [1](#x-audio-evaluation) | · |
 | action | [9](#x-action-understanding) | [37](#x-action-generation) | [165](#x-action-decision) | [30](#x-action-evaluation) | [3](#x-action-analysis) |
-| state | [17](#x-state-understanding) | [3](#x-state-generation) | [92](#x-state-decision) | [21](#x-state-evaluation) | · |
+| state | [31](#x-state-understanding) | [3](#x-state-generation) | [92](#x-state-decision) | [21](#x-state-evaluation) | · |
 | code | [1](#x-code-understanding) | [27](#x-code-generation) | [36](#x-code-decision) | [26](#x-code-evaluation) | [31](#x-code-analysis) |
 | multimodal | [54](#x-multimodal-understanding) | [45](#x-multimodal-generation) | [64](#x-multimodal-decision) | [38](#x-multimodal-evaluation) | [9](#x-multimodal-analysis) |
 | tabular | [1](#x-tabular-understanding) | · | · | · | · |
@@ -1751,7 +1765,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-image-understanding"></a>
 
-### image × understanding（127）
+### image × understanding（139）
 
 - [A High-Fidelity Digital Twin for Robotic Manipulation Based on 3D Gaussian Splatting](paper-catalog.md#p054)
 - [Language-Grounded Hierarchical Planning and Execution with Multi-Robot 3D Scene Graphs](paper-catalog.md#p055)
@@ -1880,6 +1894,18 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Qwen3.8-Omni: Towards Native Omni-Modal Agents](paper-catalog.md#p576)
 - [Fast-FoundationStereo: Real-Time Zero-Shot Stereo Matching](paper-catalog.md#p577)
 - [Lite Any Stereo V2: Faster and Stronger Efficient Zero-Shot Stereo Matching](paper-catalog.md#p579)
+- [FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry](paper-catalog.md#p612)
+- [Omni-LIVO: Robust RGB-Colored Multi-Camera Visual-Inertial-LiDAR Odometry via Photometric Migration and ESIKF Fusion](paper-catalog.md#p613)
+- [DROID-SLAM in the Wild](paper-catalog.md#p614)
+- [RADIO-ViPE: Online Tightly Coupled Multi-Modal Fusion for Open-Vocabulary Semantic SLAM in Dynamic Environments](paper-catalog.md#p615)
+- [WildGS-SLAM: Monocular Gaussian Splatting SLAM in Dynamic Environments](paper-catalog.md#p616)
+- [DAGS-SLAM: Dynamic-Aware 3DGS SLAM via Spatiotemporal Motion Probability and Uncertainty-Aware Scheduling](paper-catalog.md#p617)
+- [DynoSAM: Open-Source Smoothing and Mapping Framework for Dynamic SLAM](paper-catalog.md#p618)
+- [Backprop KF: Learning Discriminative Deterministic State Estimators](paper-catalog.md#p621)
+- [On-Manifold Preintegration for Real-Time Visual-Inertial Odometry](paper-catalog.md#p622)
+- [Dynamic-LIVO: A Dynamic-Aware LiDAR-Inertial-Visual Odometry System Using Spatio-Temporal Normals](paper-catalog.md#p623)
+- [RT-LIVO: Semantic and Motion-Aware LiDAR-Inertial-Visual Odometry for Robust Mapping in Dynamic Environments](paper-catalog.md#p624)
+- [Towards Robust Sensor-Fusion Ground SLAM: A Comprehensive Benchmark and A Resilient Framework](paper-catalog.md#p625)
 
 <a id="x-image-generation"></a>
 
@@ -2613,7 +2639,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-state-understanding"></a>
 
-### state × understanding（17）
+### state × understanding（31）
 
 - [DS-VIO: Robust and Efficient Stereo Visual Inertial Odometry based on Dual Stage EKF](paper-catalog.md#p082)
 - [PLV-IEKF: Consistent Visual-Inertial Odometry using Points, Lines, and Vanishing Points](paper-catalog.md#p083)
@@ -2632,6 +2658,20 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [OpenVINS: A Research Platform for Visual-Inertial Estimation](paper-catalog.md#p270)
 - [AMB3R-SLAM: Kilometer-scale SLAM with Hierarchical Backend](paper-catalog.md#p515)
 - [cuVSLAM: CUDA accelerated visual odometry and mapping](paper-catalog.md#p516)
+- [FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry](paper-catalog.md#p612)
+- [Omni-LIVO: Robust RGB-Colored Multi-Camera Visual-Inertial-LiDAR Odometry via Photometric Migration and ESIKF Fusion](paper-catalog.md#p613)
+- [DROID-SLAM in the Wild](paper-catalog.md#p614)
+- [RADIO-ViPE: Online Tightly Coupled Multi-Modal Fusion for Open-Vocabulary Semantic SLAM in Dynamic Environments](paper-catalog.md#p615)
+- [WildGS-SLAM: Monocular Gaussian Splatting SLAM in Dynamic Environments](paper-catalog.md#p616)
+- [DAGS-SLAM: Dynamic-Aware 3DGS SLAM via Spatiotemporal Motion Probability and Uncertainty-Aware Scheduling](paper-catalog.md#p617)
+- [DynoSAM: Open-Source Smoothing and Mapping Framework for Dynamic SLAM](paper-catalog.md#p618)
+- [TLIO: Tight Learned Inertial Odometry](paper-catalog.md#p619)
+- [AirIMU: Learning Uncertainty Propagation for Inertial Odometry](paper-catalog.md#p620)
+- [Backprop KF: Learning Discriminative Deterministic State Estimators](paper-catalog.md#p621)
+- [On-Manifold Preintegration for Real-Time Visual-Inertial Odometry](paper-catalog.md#p622)
+- [Dynamic-LIVO: A Dynamic-Aware LiDAR-Inertial-Visual Odometry System Using Spatio-Temporal Normals](paper-catalog.md#p623)
+- [RT-LIVO: Semantic and Motion-Aware LiDAR-Inertial-Visual Odometry for Robust Mapping in Dynamic Environments](paper-catalog.md#p624)
+- [Towards Robust Sensor-Fusion Ground SLAM: A Comprehensive Benchmark and A Resilient Framework](paper-catalog.md#p625)
 
 <a id="x-state-generation"></a>
 

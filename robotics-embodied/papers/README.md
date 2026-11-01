@@ -211,3 +211,20 @@
 - [ENPIRE: Agentic Robot Policy Self-Improvement in the Real World](arxiv-2606.19980/README.md) · 2026 · 文献卡，暂无独立精读
 - [Generalizing Manipulation Skills with a Local Coding Agent](arxiv-2609.26499/README.md) · 2026 · 文献卡，暂无独立精读
 - [Bridging Semantics and Physics with Constrained LLMs for Safe and Trustworthy Robotic Manipulation](arxiv-2608.29379/README.md) · 2026 · 文献卡，暂无独立精读
+
+## 2026年10月31日文献与资料增量
+
+- [FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry](arxiv-2408.14035/README.md) · 2024 · 文献卡，暂无独立精读
+- [Omni-LIVO: Robust RGB-Colored Multi-Camera Visual-Inertial-LiDAR Odometry via Photometric Migration and ESIKF Fusion](arxiv-2509.15673/README.md) · 2026 · 文献卡，暂无独立精读
+- [DROID-SLAM in the Wild](arxiv-2603.19076/README.md) · 2026 · 文献卡，暂无独立精读
+- [RADIO-ViPE: Online Tightly Coupled Multi-Modal Fusion for Open-Vocabulary Semantic SLAM in Dynamic Environments](arxiv-2604.26067/README.md) · 2026 · 文献卡，暂无独立精读
+- [WildGS-SLAM: Monocular Gaussian Splatting SLAM in Dynamic Environments](arxiv-2504.03886/README.md) · 2025 · 文献卡，暂无独立精读
+- [DAGS-SLAM: Dynamic-Aware 3DGS SLAM via Spatiotemporal Motion Probability and Uncertainty-Aware Scheduling](arxiv-2602.21644/README.md) · 2026 · 文献卡，暂无独立精读
+- [DynoSAM: Open-Source Smoothing and Mapping Framework for Dynamic SLAM](arxiv-2501.11893/README.md) · 2025 · 文献卡，暂无独立精读
+- [TLIO: Tight Learned Inertial Odometry](arxiv-2007.01867/README.md) · 2020 · 文献卡，暂无独立精读
+- [AirIMU: Learning Uncertainty Propagation for Inertial Odometry](arxiv-2310.04874/README.md) · 2023 · 文献卡，暂无独立精读
+- [Backprop KF: Learning Discriminative Deterministic State Estimators](arxiv-1605.07148/README.md) · 2016 · 文献卡，暂无独立精读
+- [On-Manifold Preintegration for Real-Time Visual-Inertial Odometry](arxiv-1512.02363/README.md) · 2017 · 文献卡，暂无独立精读
+- [Dynamic-LIVO: A Dynamic-Aware LiDAR-Inertial-Visual Odometry System Using Spatio-Temporal Normals](arxiv-2609.19336/README.md) · 2026 · 文献卡，暂无独立精读
+- [RT-LIVO: Semantic and Motion-Aware LiDAR-Inertial-Visual Odometry for Robust Mapping in Dynamic Environments](doi-10.2139-ssrn.7602304/README.md) · 2026 · 文献卡，暂无独立精读
+- [Towards Robust Sensor-Fusion Ground SLAM: A Comprehensive Benchmark and A Resilient Framework](arxiv-2507.08364/README.md) · 2025 · 文献卡，暂无独立精读
