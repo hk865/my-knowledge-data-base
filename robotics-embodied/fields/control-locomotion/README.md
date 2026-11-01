@@ -486,3 +486,7 @@ Lee 2019 的起身失败、Extreme Parkour 的撞墙重试，都说明这类状�
 - Boston Dynamics Atlas 产品化博客的发布日期未从页面读出；Atlas 大行为模型博客只记到 2025 年 8 月。
 - Tesla Optimus 本轮只找到二手报道，没有官方技术材料，未写入；Unitree 2026 年的 UnifoLM-WLA-1.0 见 [VLA 方向](../vla/README.md)，它是否包含行走控制 README 没有写明。
 - 同期的人形感知运动与动作跟踪论文（RPL arXiv:2602.03002、PGMT arXiv:2609.08511、Any2Track、Humanoid-GPT 等）只看到检索结果，未打开原文，未收录。
+
+## 2026-11-01 控制时间专题
+
+[控制命令与更新时间](time-and-command.md)比较 ACS 的命令调度、TARC 的动作保持时间，以及 Chronos 的物理时间编码；三张文献卡已登记，论文证据与迁移假设分别保留。

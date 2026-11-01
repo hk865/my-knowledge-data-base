@@ -64,5 +64,7 @@
   "architecture_tags": [],
   "supervision_tags": [
     "reinforcement-learning"
-  ]
+  ],
+  "status": "已登记正式论文目录；2026-11-01分支整合",
+  "registry_integration_date": "2026-11-01"
 }

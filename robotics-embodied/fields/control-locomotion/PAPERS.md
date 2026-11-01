@@ -106,3 +106,9 @@
 ## 后续问题与近期方法
 
 - [Generate, Track, Improve：感知参考生成与 RL 精修](../../papers/arxiv-2609.31577/README.md) · 2026 · 文献卡
+
+## 2026-11-01 周整理补充登记
+
+- [ACS：执行器模型与自适应命令调度](../../papers/arxiv-2609.13289/README.md)
+- [TARC：Time-Adaptive Robotic Control](../../papers/arxiv-2510.23176/README.md)
+- [Chronos Policy：物理时间编码](../../papers/arxiv-2610.13929/README.md)

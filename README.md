@@ -74,3 +74,7 @@
 ## 2026-11-01 具身论文资料增量
 
 [机械臂具身 Agent：21 篇论文与中文解读](robotics-embodied/fields/embodied-agents/reading-pack-2026-10-30/README.md)。
+
+## 2026-11-01 分支资料整合
+
+[分支整合审计](docs/branch-integration-2026-11-01.md)：17 个主题分支逐一核对，保留原始分支与历史；入口包括[每日短报](daily/)、[周整理](weekly/2026-10-18.md)、[动态 SLAM 方案](robotics-embodied/fields/localization-mapping/dynamic-neural-fusion-plan.md)与[机械臂论文资料包](robotics-embodied/fields/embodied-agents/reading-pack-2026-10-30/README.md)。

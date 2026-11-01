@@ -90,3 +90,7 @@
 - 参考动作进入训练信号的三步：[DeepMimic](../../papers/arxiv-1804.02717/README.md) 逐片段跟踪 → [AMP](../../papers/arxiv-2104.02180/README.md) 分布匹配 → [ASE](../../papers/arxiv-2205.01906/README.md) 预训练可复用的技能嵌入（ASE 仍归在"用 RL 跟踪参考动作"一行）；四足上的应用先是 [Peng 2020](../../papers/arxiv-2004.00784/README.md) 的逐帧跟踪，后是 [Escontrela 2022](../../papers/arxiv-2203.15103/README.md) 的风格奖励；人形上是 [ExBody](../../papers/arxiv-2402.16796/README.md)、[H2O](../../papers/arxiv-2403.04436/README.md)、[BeyondMimic](../../papers/arxiv-2508.08241/README.md)。失败场景见[入门页](README.md)主线历史中的插叙。
 - 表中有三处是模仿学习：训练信号里的参考动作各行、系统结构里的 OmniH2O、观测里各教师-学生工作的学生一侧。为什么运动控制绕不开它们，见[入门页](README.md#为什么绕不开模仿学习)；观测各行沿"从本体状态到环境状态"的排列见[入门页](README.md#从本体状态到环境状态)。
 - 各格的失败场景与"站在现在看过去"的分析在[入门页](README.md)的主线历史一节。
+
+## 2026-11-01 控制时间专题
+
+[控制命令与更新时间](time-and-command.md)比较 ACS 的命令调度、TARC 的动作保持时间，以及 Chronos 的物理时间编码；三张文献卡已登记，论文证据与迁移假设分别保留。
