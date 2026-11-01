@@ -1,0 +1,186 @@
+{
+  "date": "2026-10-16",
+  "timezone": "Asia/Shanghai",
+  "record_kind": "daily_candidates_not_formal_catalog",
+  "dedup": {
+    "main_commit": "f0e77f099918ee84345b55b6e186404c14db4cc4",
+    "catalog_count": 611,
+    "checked": [
+      "papers.json",
+      "recursive main tree",
+      "private research homepage and robotics topic pages",
+      "daily 2026-10-08 main",
+      "PR3–8 daily MD"
+    ],
+    "candidate_matches": 0
+  },
+  "chat_recovery": {
+    "scope": "关键词arxiv的可检索会话首批命中，回读两组近期相关消息；未遍历全部历史，时间覆盖不完整。上次成功完整检查边界未知，不声称完成增量同步。",
+    "new_exact_links_recovered": 0,
+    "search_index_vs_message_gap": true,
+    "leads": [
+      {
+        "title": "Text-to-CAD Generation Through Infusing Visual Feedback in Large Language Models",
+        "arxiv_id": "2501.19054",
+        "official_url": "https://arxiv.org/abs/2501.19054",
+        "version": "v3",
+        "version_date": "2025-06-05",
+        "chat_date": "2026-10-15T04:21:42.785470Z",
+        "origin": "assistant recommendation indexed in chat search",
+        "evidence": "检索索引包含论文ID；原消息回读只见CADFusion名称及引用标记，没有显式论文URL。",
+        "original_paper_url_recovered": false,
+        "reading_depth": "official identity and abstract only",
+        "status": "仅作线索",
+        "interest": "CAD生成与工具反馈，保留独立探索，不提升为长期项目"
+      },
+      {
+        "title": "Draft: A Parametric Tool for Robot Design Exploration",
+        "arxiv_id": "2609.38405",
+        "official_url": "https://arxiv.org/abs/2609.38405",
+        "version": "v1",
+        "version_date": "2026-09-29",
+        "chat_date": "2026-10-14T14:56:07.650684Z",
+        "origin": "assistant recommendation indexed in chat search",
+        "evidence": "检索索引包含论文ID；原消息回读未恢复显式论文URL/ID。",
+        "original_paper_url_recovered": false,
+        "reading_depth": "official identity and abstract only",
+        "status": "仅作线索"
+      }
+    ],
+    "privacy": "不公开原会话地址、标识或全文；日期与来源类别保留。"
+  },
+  "candidates": [
+    {
+      "id": "arxiv:2610.13929",
+      "title": "Chronos Policy: Learning Robot Policies on Physical Time",
+      "authors": [
+        "Changhao Wang",
+        "Jaden Clark",
+        "Shuran Song"
+      ],
+      "first_submitted": "2026-10-09T17:55:20Z",
+      "read_version": "v1",
+      "version_verified_at": "2026-10-16",
+      "sources": [
+        "https://arxiv.org/abs/2610.13929",
+        "https://arxiv.org/html/2610.13929v1"
+      ],
+      "origin": "active_web_discovery",
+      "status": "待周整理",
+      "reading_depth": "selected_method_experiments_limitations",
+      "sections": [
+        "3",
+        "4",
+        "5",
+        "Appendix B Tables 3–4",
+        "Appendix C setup and scoring"
+      ],
+      "not_done": [
+        "full-text exhaustive reading",
+        "code audit",
+        "reproduction"
+      ],
+      "suggested_topics": [
+        "robotics/embodied-policies",
+        "robotics/control",
+        "multimodal/video-temporal"
+      ],
+      "tags": {
+        "architecture": [
+          "diffusion",
+          "Transformer"
+        ],
+        "supervision": [
+          "imitation-learning"
+        ],
+        "modalities": [
+          "image",
+          "state",
+          "force-torque",
+          "action"
+        ],
+        "tasks": [
+          "manipulation",
+          "temporal-robustness"
+        ]
+      },
+      "baseline": "Diffusion Policy; DP+temporal randomization; additive time encoding; RTC in real world",
+      "evidence_boundary": "作者报告的三种子仿真与真机任务；真机分数含半分部分成功；未证明足式导航、可变动作频率或通信基础设施修复。",
+      "analysis": "优先检查时间的表示与随机化是否协同；不能把仅加入延迟训练自动解释为充分鲁棒。",
+      "user_selected": false
+    },
+    {
+      "id": "arxiv:2610.02110",
+      "title": "GlassGuard: Verified Glass Plane Mapping for Robot Navigation",
+      "authors": [
+        "Hanwen Guo",
+        "Zhengzhi Lin",
+        "Yusen Xie",
+        "Ji Zhang"
+      ],
+      "first_submitted": "2026-10-01T17:31:23Z",
+      "read_version": "v1",
+      "version_verified_at": "2026-10-16",
+      "sources": [
+        "https://arxiv.org/abs/2610.02110",
+        "https://arxiv.org/html/2610.02110v1"
+      ],
+      "origin": "active_web_discovery",
+      "status": "待周整理",
+      "reading_depth": "selected_method_experiments_limitations",
+      "sections": [
+        "IV",
+        "V Tables I–V",
+        "VI"
+      ],
+      "not_done": [
+        "full-text exhaustive reading",
+        "code audit",
+        "reproduction"
+      ],
+      "suggested_topics": [
+        "robotics/perception",
+        "robotics/localization-mapping",
+        "robotics/navigation-planning"
+      ],
+      "tags": {
+        "architecture": [
+          "vision-foundation-model",
+          "geometric-verification"
+        ],
+        "supervision": [
+          "distillation"
+        ],
+        "modalities": [
+          "image",
+          "LiDAR"
+        ],
+        "tasks": [
+          "glass-mapping",
+          "navigation"
+        ]
+      },
+      "baseline": "MonoGlass3D; GlassRecon; matched pinhole FOV comparison plus separate panorama variant",
+      "evidence_boundary": "九场景录制数据回放；当前地图覆盖和任何帧检出不同；0.2–2m体素尺度敏感；规划效果为定性，非闭环成功率。",
+      "analysis": "保留漏检与误堵两侧代价，以及多视角验证的负面覆盖权衡；不能据此认定现有Go2故障由同一原因造成。",
+      "user_selected": false
+    }
+  ],
+  "weekly_catchup": {
+    "due_date": "2026-10-11",
+    "status": "incomplete",
+    "safe_work": "已复核近期短报/待审分支与当前目录的候选重复情况；今日材料只进入候选层。",
+    "blocked_old_export": "Missing verified previous pure-source snapshot; preserve existing manual edits.",
+    "not_completed": [
+      "formal selection and source-card integration for overdue week",
+      "cross-topic synthesis and ROADMAP updates",
+      "public/private weekly publication"
+    ],
+    "covered_through": null
+  },
+  "publication_intent": {
+    "branch": "research-daily-2026-10-16",
+    "main_merge": false,
+    "new_files_only": true
+  }
+}
