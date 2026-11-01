@@ -16,9 +16,12 @@
   "user_reading_status": "not_asserted",
   "independently_reproduced": false,
   "license": {
-    "status": "not_audited",
-    "license_url": null,
-    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+    "status": "license_identified",
+    "license_urls": [
+      "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+    ],
+    "checked_at": "2026-11-01",
+    "note": "仅链接官方原文，不镜像 PDF；arXiv nonexclusive-distrib 不作为第三方全文再发布授权。"
   },
   "fulltext_local_status": "official_link_only_pending_license_verification",
   "fulltext_local_path": null,
@@ -78,5 +81,16 @@
     "Mengyuan Yan",
     "Andy Zeng"
   ],
-  "year": 2022
+  "year": 2022,
+  "supplementary_readings": [
+    "robotics-embodied/papers/saycan/reading-2026-10-30.md"
+  ],
+  "reading_pack_2026_10_30": {
+    "read_version": "v2",
+    "version_date": "2022-08-16",
+    "reading_boundary": "原文方法、主要实验与相关附录定向阅读（§3–4、实验与限制）；非逐页通读，未复现。",
+    "original_checked_at": "2026-10-30",
+    "local_pdf_retained": true,
+    "public_pdf_mirror": false
+  }
 }

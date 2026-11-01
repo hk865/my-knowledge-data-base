@@ -8,17 +8,20 @@
   "official_fulltext_url": "https://arxiv.org/pdf/2209.07753v4",
   "read_version": "v4",
   "version_status": "checked_v4",
-  "reading_depth": "selected_method_sections_checked_not_full_read",
+  "reading_depth": "selected_sections",
   "teaching_status": "not_created",
-  "content_kind": "bibliographic_card",
-  "reading_path": null,
-  "reading_boundary": "文献卡。核验了arXiv 摘要页 v4；ar5iv 全文中的方法、RoboCodeGen 与 HumanEval 结果、局限。不是独立全文精读，未复现。",
+  "content_kind": "reading",
+  "reading_path": "robotics-embodied/papers/arxiv-2209.07753/reading.md",
+  "reading_boundary": "原文方法、主要实验与相关附录定向阅读（§III、§V 与示例程序）；非逐页通读，未复现。",
   "user_reading_status": "not_asserted",
   "independently_reproduced": false,
   "license": {
-    "status": "not_audited",
-    "license_url": null,
-    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+    "status": "license_identified",
+    "license_urls": [
+      "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+    ],
+    "checked_at": "2026-11-01",
+    "note": "仅链接官方原文，不镜像 PDF；arXiv nonexclusive-distrib 不作为第三方全文再发布授权。"
   },
   "fulltext_local_status": "official_link_only_pending_license_verification",
   "fulltext_local_path": null,
@@ -59,5 +62,16 @@
     "field_pages": [
       "robotics-embodied/fields/embodied-agents/README.md"
     ]
+  },
+  "supplementary_readings": [
+    "robotics-embodied/papers/arxiv-2209.07753/reading.md"
+  ],
+  "reading_pack_2026_10_30": {
+    "read_version": "v4",
+    "version_date": "2023-05-25",
+    "reading_boundary": "原文方法、主要实验与相关附录定向阅读（§III、§V 与示例程序）；非逐页通读，未复现。",
+    "original_checked_at": "2026-10-30",
+    "local_pdf_retained": true,
+    "public_pdf_mirror": false
   }
 }

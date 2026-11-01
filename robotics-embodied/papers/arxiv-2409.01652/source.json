@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2409.01652",
+  "title": "ReKep: Spatio-Temporal Reasoning of Relational Keypoint Constraints for Robotic Manipulation",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2409.01652",
+  "official_url": "https://arxiv.org/abs/2409.01652v2",
+  "official_fulltext_url": "https://arxiv.org/pdf/2409.01652v2",
+  "read_version": "v2",
+  "first_submitted": "2024-09-03",
+  "version_date": "2024-11-12",
+  "year": 2024,
+  "authors": [
+    "Huang, Wenlong",
+    "Wang, Chen",
+    "Li, Yunzhu",
+    "Zhang, Ruohan",
+    "Fei-Fei, Li"
+  ],
+  "topic_paths": [
+    "robotics/embodied-agents"
+  ],
+  "modality_tags": [
+    "text",
+    "image",
+    "action",
+    "code"
+  ],
+  "task_tags": [
+    "decision",
+    "evaluation"
+  ],
+  "content_kind": "reading",
+  "reading_path": "robotics-embodied/papers/arxiv-2409.01652/reading.md",
+  "reading_depth": "selected_sections",
+  "reading_boundary": "原文方法、主要实验与相关附录定向阅读（§3–5、附录 A.11）；非逐页通读，未复现。",
+  "independently_reproduced": false,
+  "supplementary_readings": [
+    "robotics-embodied/papers/arxiv-2409.01652/reading.md"
+  ],
+  "license": {
+    "status": "license_identified",
+    "license_urls": [
+      "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+    ],
+    "checked_at": "2026-11-01",
+    "note": "仅链接官方原文，不镜像 PDF；arXiv nonexclusive-distrib 不作为第三方全文再发布授权。"
+  },
+  "reading_pack_2026_10_30": {
+    "read_version": "v2",
+    "version_date": "2024-11-12",
+    "reading_boundary": "原文方法、主要实验与相关附录定向阅读（§3–5、附录 A.11）；非逐页通读，未复现。",
+    "original_checked_at": "2026-10-30",
+    "local_pdf_retained": true,
+    "public_pdf_mirror": false
+  }
+}

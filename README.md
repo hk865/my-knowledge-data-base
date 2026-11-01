@@ -2,7 +2,7 @@
 
 按基础概念、研究领域、细分问题和单篇论文逐层阅读。跨方向的同一论文只维护一个规范目录。
 
-> 收录 611 项资源，其中 45 篇有讲解。
+> 收录 623 项资源，其中 63 篇有讲解。
 
 ## 四层入口
 
@@ -70,3 +70,7 @@
 [2026年10月4日研究短报](daily/2026-10-04.md) · [Agent 权限、隔离与协作](cross-domain/fields/agents/permissions-isolation-collaboration.md) · [工程资源](cross-domain/resources/README.md)
 
 [10月3日短报](daily/2026-10-03.md) · [大小模型草拟与验证](llm/fields/inference/draft-verification-guide.md)
+
+## 2026-11-01 资料增量
+
+[机械臂具身 Agent：21 篇论文与中文解读](robotics-embodied/fields/embodied-agents/reading-pack-2026-10-30/README.md)。

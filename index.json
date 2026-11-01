@@ -586,5 +586,113 @@
   {
     "title": "地面约束能修正哪一种定位漂移",
     "file": "perspectives/notes/ground-drift-constraints.md"
+  },
+  {
+    "title": "机械臂 Embodied Agent：从选技能到积累可执行经验",
+    "file": "robotics-embodied/fields/embodied-agents/reading-pack-2026-10-30/发展路线.md"
+  },
+  {
+    "title": "机械臂 Embodied Agent 研究资料库",
+    "file": "robotics-embodied/fields/embodied-agents/reading-pack-2026-10-30/README.md"
+  },
+  {
+    "title": "来源、版本与发布许可",
+    "file": "robotics-embodied/fields/embodied-agents/reading-pack-2026-10-30/来源与版本.md"
+  },
+  {
+    "title": "扩展阅读：与主线相邻，但解决的是不同问题",
+    "file": "robotics-embodied/fields/embodied-agents/reading-pack-2026-10-30/扩展阅读与边界.md"
+  },
+  {
+    "title": "本项目下一步：先定位收益，再选择改进层",
+    "file": "robotics-embodied/fields/embodied-agents/reading-pack-2026-10-30/研究选项与公平对照.md"
+  },
+  {
+    "title": "SayCan：语言计划怎样受技能可行性约束",
+    "file": "robotics-embodied/papers/saycan/reading-2026-10-30.md"
+  },
+  {
+    "title": "Inner Monologue：执行反馈怎样改变下一步计划",
+    "file": "robotics-embodied/papers/arxiv-2207.05608/reading.md"
+  },
+  {
+    "title": "Code as Policies：程序怎样表达空间计算与反馈",
+    "file": "robotics-embodied/papers/arxiv-2209.07753/reading.md"
+  },
+  {
+    "title": "ProgPrompt：程序计划怎样检查前提并恢复",
+    "file": "robotics-embodied/papers/arxiv-2209.11302/reading.md"
+  },
+  {
+    "title": "VoxPoser：语言怎样转成可优化的三维目标",
+    "file": "robotics-embodied/papers/arxiv-2307.05973/reading.md"
+  },
+  {
+    "title": "ReKep：关键点关系怎样约束连续动作",
+    "file": "robotics-embodied/papers/arxiv-2409.01652/reading.md"
+  },
+  {
+    "title": "π0.5（VLA 背景）：训练的动作底座负责哪一层",
+    "file": "robotics-embodied/papers/arxiv-2504.16054/reading.md"
+  },
+  {
+    "title": "LYRA（2025 v2）：人类纠错怎样沉淀为代码技能",
+    "file": "robotics-embodied/papers/arxiv-2509.18597/reading.md"
+  },
+  {
+    "title": "Act-Observe-Rewrite：回合间怎样改写完整控制程序",
+    "file": "robotics-embodied/papers/arxiv-2603.04466/reading.md"
+  },
+  {
+    "title": "CaP-X：怎样拆开接口、感知与 Agent 能力",
+    "file": "robotics-embodied/papers/arxiv-2603.22435/reading.md"
+  },
+  {
+    "title": "HELM：记忆与验证器怎样选择动作",
+    "file": "robotics-embodied/papers/arxiv-2604.18791/reading.md"
+  },
+  {
+    "title": "ENPIRE：Agent 怎样组织真机策略改进",
+    "file": "robotics-embodied/papers/arxiv-2606.19980/reading.md"
+  },
+  {
+    "title": "ASPIRE：失败诊断怎样变成验证过的技能",
+    "file": "robotics-embodied/papers/arxiv-2607.00272/reading.md"
+  },
+  {
+    "title": "Harness VLA / RPent：怎样把冻结 VLA 变成可编排原语",
+    "file": "robotics-embodied/papers/arxiv-2607.08448/reading-2026-10-30.md"
+  },
+  {
+    "title": "Agent as Policy：通用 Agent 能否直接写操作程序",
+    "file": "robotics-embodied/papers/arxiv-2609.12541/reading.md"
+  },
+  {
+    "title": "CodeActionBench：怎样公平评估代码操作 Agent",
+    "file": "robotics-embodied/papers/arxiv-2609.33807/reading.md"
+  },
+  {
+    "title": "RoboSkill：探索经验怎样复用于下一次执行",
+    "file": "robotics-embodied/papers/roboskill/reading-2026-10-30.md"
+  },
+  {
+    "title": "URAI：工具生成与运行时决策怎样分工",
+    "file": "robotics-embodied/papers/arxiv-2609.39018/reading.md"
+  },
+  {
+    "title": "OpenRUA：通用 Agent 怎样使用原生机器人接口",
+    "file": "robotics-embodied/papers/arxiv-2610.02459/reading.md"
+  },
+  {
+    "title": "RAX：在线探索怎样留下可复用程序",
+    "file": "robotics-embodied/papers/arxiv-2610.22496/reading.md"
+  },
+  {
+    "title": "AgenticRoboRL：怎样只训练高层工具规划器",
+    "file": "robotics-embodied/papers/arxiv-2610.28589/reading.md"
+  },
+  {
+    "title": "公开资料包校验记录",
+    "file": "robotics-embodied/fields/embodied-agents/reading-pack-2026-10-30/校验记录.md"
   }
 ]

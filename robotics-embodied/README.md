@@ -29,7 +29,7 @@
 
 ## 单篇论文目录
 
-本领域收录 198 项资源，其中 17 篇有讲解；其他方向的相关论文通过索引交叉引用。
+本领域收录 210 项资源，其中 35 篇有讲解；其他方向的相关论文通过索引交叉引用。
 
 - [浏览本领域论文与跨方向引用](PAPERS.md)
 - [直接浏览单篇文件夹](papers/README.md)
@@ -50,3 +50,7 @@
 - [具身Agents完整路线图](roadmaps/embodied-agents.md)
 
 原baselines/和papers/2026/路径保留为单篇规范目录入口，避免已有链接失效。
+
+## 2026-11-01 资料增量
+
+[机械臂具身 Agent 论文资料包](fields/embodied-agents/reading-pack-2026-10-30/README.md)。

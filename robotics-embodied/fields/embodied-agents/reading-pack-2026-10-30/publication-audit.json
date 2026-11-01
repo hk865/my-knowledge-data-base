@@ -1,0 +1,20 @@
+{
+  "checked_at": "2026-11-01",
+  "paper_count": 21,
+  "new_paper_folders": 12,
+  "existing_paper_folders": 9,
+  "original_readings_preserved": 3,
+  "published_readings": 21,
+  "overview_documents": 6,
+  "pdf_mirrors": 0,
+  "local_pdfs_retained": 21,
+  "original_local_scripts_retained_not_published": 4,
+  "portable_public_validation_scripts": 1,
+  "privacy_pattern_issues": [],
+  "license_counts": {
+    "cc_by": 10,
+    "arxiv_nonexclusive": 10,
+    "unconfirmed": 1
+  },
+  "scope": "Original public notes and overviews, canonical metadata, official links; no original fulltext, private snapshots, account data or execution logs."
+}

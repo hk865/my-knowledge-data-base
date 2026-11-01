@@ -16,13 +16,12 @@
   "user_reading_status": "not_asserted",
   "independently_reproduced": false,
   "license": {
-    "status": "verified_link_only",
-    "identifier": "arXiv-nonexclusive-distrib-1.0",
-    "license_url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/license.html",
-    "evidence_url": "https://arxiv.org/abs/2609.37810v1",
-    "verification_method": "Opened this version’s Access Paper > view license link and read the destination license; applies to deposited full text, not merely site metadata",
-    "checked_at": "2026-10-02",
-    "note": "The arXiv non-exclusive submission license grants distribution to arXiv, not a public repository mirror; no separate full-text redistribution license verified."
+    "status": "license_identified",
+    "license_urls": [
+      "http://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+    ],
+    "checked_at": "2026-11-01",
+    "note": "仅链接官方原文，不镜像 PDF；arXiv nonexclusive-distrib 不作为第三方全文再发布授权。"
   },
   "fulltext_local_status": "official_link_only_redistribution_not_granted",
   "fulltext_local_path": null,
@@ -44,5 +43,16 @@
     "robotics/embodied-agents",
     "cross-domain/agents"
   ],
-  "year": 2026
+  "year": 2026,
+  "supplementary_readings": [
+    "robotics-embodied/papers/roboskill/reading-2026-10-30.md"
+  ],
+  "reading_pack_2026_10_30": {
+    "read_version": "v1",
+    "version_date": "2026-09-29",
+    "reading_boundary": "原文方法、主要实验与相关附录定向阅读（方法、LIBERO/真机协议、跨 Agent/任务消融）；非逐页通读，未复现。",
+    "original_checked_at": "2026-10-30",
+    "local_pdf_retained": true,
+    "public_pdf_mirror": false
+  }
 }

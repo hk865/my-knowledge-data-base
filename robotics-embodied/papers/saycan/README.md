@@ -19,3 +19,5 @@
 - 稳定标识：arxiv:2204.01691（Ahn 等 45 位作者；当前 v2，2022-08，增加 PaLM 结果与开源仿真环境）
 - 全文：[arXiv PDF v2](https://arxiv.org/pdf/2204.01691v2)
 - 方向：[具身 Agents](../../fields/embodied-agents/README.md)（跨领域另见[智能体](../../../cross-domain/fields/agents/README.md)）
+
+- [机械臂执行与公平评测补充解读](reading-2026-10-30.md)
