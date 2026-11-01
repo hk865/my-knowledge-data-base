@@ -586,5 +586,9 @@
   {
     "title": "地面约束能修正哪一种定位漂移",
     "file": "perspectives/notes/ground-drift-constraints.md"
+  },
+  {
+    "title": "面向机器人导航 Agent 的工具接口与动态时空信息",
+    "file": "robotics-embodied/fields/embodied-agents/tool-interfaces-and-4d-observations.md"
   }
 ]
