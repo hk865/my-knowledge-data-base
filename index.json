@@ -818,5 +818,17 @@
   {
     "title": "Structuring Sparsity 精读",
     "file": "multimodal/papers/arxiv-2606.25234/reading.md"
+  },
+  {
+    "title": "SplaTAM 精读",
+    "file": "robotics-embodied/papers/arxiv-2312.02126/reading.md"
+  },
+  {
+    "title": "Gaussian Splatting SLAM 精读",
+    "file": "robotics-embodied/papers/arxiv-2312.06741/reading.md"
+  },
+  {
+    "title": "ORB-SLAM3 与 VINS-Mono 对照",
+    "file": "robotics-embodied/fields/localization-mapping/orb-slam3-vins-mono.md"
   }
 ]

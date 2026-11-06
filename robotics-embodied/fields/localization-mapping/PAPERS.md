@@ -1,6 +1,6 @@
 # 定位与建图：论文与资源
 
-[回到入门](README.md) · [Baseline](BASELINES.md) · [路线图](ROADMAP.md)
+[回到入门](README.md) · [Baseline](BASELINES.md) · [路线图](ROADMAP.md) · [ORB-SLAM3 与 VINS-Mono 对照](orb-slam3-vins-mono.md)
 
 以下每项链接到唯一的单篇目录，按[入门页](README.md)主线历史的阶段分组。跨方向出现是交叉引用，不重复计算资源。
 
@@ -30,8 +30,8 @@
 - [DROID-SLAM: Deep Visual SLAM for Monocular, Stereo, and RGB-D Cameras](../../papers/arxiv-2108.10869/README.md) · 2021 · 文献卡
 - [NICE-SLAM: Neural Implicit Scalable Encoding for SLAM](../../papers/arxiv-2112.12130/README.md) · 2021 · 文献卡
 - [A Self-Supervised, Differentiable Kalman Filter for Uncertainty-Aware Visual-Inertial Odometry](../../papers/arxiv-2203.07207/README.md) · 2022 · 文献卡
-- [SplaTAM: Splat, Track & Map 3D Gaussians for Dense RGB-D SLAM](../../papers/arxiv-2312.02126/README.md) · 2023 · 文献卡
-- [Gaussian Splatting SLAM](../../papers/arxiv-2312.06741/README.md) · 2023 · 文献卡
+- [SplaTAM: Splat, Track & Map 3D Gaussians for Dense RGB-D SLAM](../../papers/arxiv-2312.02126/README.md) · 2024 · 技术精读
+- [Gaussian Splatting SLAM](../../papers/arxiv-2312.06741/README.md) · 2024 · 技术精读
 
 - [GS-SDF: LiDAR-Augmented Gaussian Splatting and Neural SDF for Geometrically Consistent Rendering and Reconstruction](../../papers/arxiv-2503.10170/README.md) · 技术精读
 - [Real-Time LiDAR Gaussian Splatting SLAM](../../papers/arxiv-2607.04127/README.md) · 技术精读

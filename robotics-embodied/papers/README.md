@@ -123,9 +123,9 @@
 - [Learning Interactive Real-World Simulators](arxiv-2310.06114/README.md) · 2023 · 文献卡，暂无独立精读
 - [NoMaD: Goal Masked Diffusion Policies for Navigation and Exploration](arxiv-2310.07896/README.md) · 2023 · 文献卡，暂无独立精读
 - [TD-MPC2: Scalable, Robust World Models for Continuous Control](arxiv-2310.16828/README.md) · 2023 · 文献卡，暂无独立精读
-- [SplaTAM: Splat, Track & Map 3D Gaussians for Dense RGB-D SLAM](arxiv-2312.02126/README.md) · 2023 · 文献卡，暂无独立精读
+- [SplaTAM: Splat, Track & Map 3D Gaussians for Dense RGB-D SLAM](arxiv-2312.02126/README.md) · 2024 · 技术精读
 - [VLFM: Vision-Language Frontier Maps for Zero-Shot Semantic Navigation](arxiv-2312.03275/README.md) · 2023 · 文献卡，暂无独立精读
-- [Gaussian Splatting SLAM](arxiv-2312.06741/README.md) · 2023 · 文献卡，暂无独立精读
+- [Gaussian Splatting SLAM](arxiv-2312.06741/README.md) · 2024 · 技术精读
 - [Depth Anything: Unleashing the Power of Large-Scale Unlabeled Data](arxiv-2401.10891/README.md) · 2024 · 文献卡，暂无独立精读
 - [FM-Fusion: Instance-aware Semantic Mapping Boosted by Vision-Language Foundation Models](arxiv-2402.04555/README.md) · 2024 · 文献卡，暂无独立精读
 - [Depth Anything V2](arxiv-2406.09414/README.md) · 2024 · 文献卡，暂无独立精读

@@ -18123,7 +18123,7 @@
     "url": "https://arxiv.org/abs/2312.02126",
     "arxiv_id": "2312.02126",
     "doi": null,
-    "year": "2023",
+    "year": "2024",
     "topic_paths": [
       "robotics/localization-mapping"
     ],
@@ -18135,11 +18135,12 @@
     ],
     "chat_evidence": [],
     "verification_sources": [
-      "https://arxiv.org/abs/2312.02126"
+      "https://openaccess.thecvf.com/content/CVPR2024/html/Keetha_SplaTAM_Splat_Track__Map_3D_Gaussians_for_Dense_RGB-D_CVPR_2024_paper.html",
+      "https://openaccess.thecvf.com/content/CVPR2024/papers/Keetha_SplaTAM_Splat_Track__Map_3D_Gaussians_for_Dense_RGB-D_CVPR_2024_paper.pdf"
     ],
-    "verification_status": "selected_sections_checked_not_full_read",
+    "verification_status": "full_text_and_supplement_checked_not_reproduced",
     "caveats": [],
-    "reading_status": "not_created",
+    "reading_status": "technical_reading_created",
     "resource_kind": "paper",
     "method_tags": [],
     "evaluation_tags": [],
@@ -18152,11 +18153,11 @@
       "understanding"
     ],
     "canonical_folder": "robotics-embodied/papers/arxiv-2312.02126",
-    "canonical_path": "robotics-embodied/papers/arxiv-2312.02126/README.md",
+    "canonical_path": "robotics-embodied/papers/arxiv-2312.02126/reading.md",
     "canonical_readme": "robotics-embodied/papers/arxiv-2312.02126/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2312.02126/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card",
+    "content_kind": "reading",
     "authors": [
       "Nikhil Keetha",
       "Jay Karhade",
@@ -18165,7 +18166,8 @@
       "Sebastian Scherer",
       "Deva Ramanan",
       "Jonathon Luiten"
-    ]
+    ],
+    "reading_scope": "阅读全文正文、方法与主要实验，并阅读正式版补充材料S1–S3及其表S.1–S.2；关键结果表已查看原页。未运行或独立复现。"
   },
   {
     "id": "arxiv:2312.03275",
@@ -18223,7 +18225,7 @@
     "url": "https://arxiv.org/abs/2312.06741",
     "arxiv_id": "2312.06741",
     "doi": null,
-    "year": "2023",
+    "year": "2024",
     "topic_paths": [
       "robotics/localization-mapping"
     ],
@@ -18235,11 +18237,12 @@
     ],
     "chat_evidence": [],
     "verification_sources": [
-      "https://arxiv.org/abs/2312.06741"
+      "https://arxiv.org/abs/2312.06741",
+      "https://openaccess.thecvf.com/content/CVPR2024/papers/Matsuki_Gaussian_Splatting_SLAM_CVPR_2024_paper.pdf"
     ],
-    "verification_status": "selected_sections_checked_not_full_read",
+    "verification_status": "full_text_and_supplement_checked_not_reproduced",
     "caveats": [],
-    "reading_status": "not_created",
+    "reading_status": "technical_reading_created",
     "resource_kind": "paper",
     "method_tags": [],
     "evaluation_tags": [],
@@ -18252,17 +18255,18 @@
       "understanding"
     ],
     "canonical_folder": "robotics-embodied/papers/arxiv-2312.06741",
-    "canonical_path": "robotics-embodied/papers/arxiv-2312.06741/README.md",
+    "canonical_path": "robotics-embodied/papers/arxiv-2312.06741/reading.md",
     "canonical_readme": "robotics-embodied/papers/arxiv-2312.06741/README.md",
     "source_path": "robotics-embodied/papers/arxiv-2312.06741/source.json",
     "legacy_paths": [],
-    "content_kind": "bibliographic_card",
+    "content_kind": "reading",
     "authors": [
       "Hidenobu Matsuki",
       "Riku Murai",
       "Paul H. J. Kelly",
       "Andrew J. Davison"
-    ]
+    ],
+    "reading_scope": "完整精读 CVPR 2024 正式正文 §1–5、图1–7、表1–6；精读正式补充 §6–9及§11、表7–16和关键图。对照 arXiv v2；核对官方 main 的跟踪、关键帧和后端局部优化逻辑。未独立复现，未遍历CUDA内核，未审计补充视频。"
   },
   {
     "id": "arxiv:2401.10891",

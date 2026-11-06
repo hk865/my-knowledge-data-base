@@ -2765,7 +2765,7 @@
 - 主题：robotics/localization-mapping
 - 身份核验：selected_sections_checked_not_full_read
 - 用户阅读状态：unknown
-- [文献卡](../robotics-embodied/papers/arxiv-2312.02126/README.md)
+- [独立讲解](../robotics-embodied/papers/arxiv-2312.02126/reading.md)
 
 <a id="p241"></a>
 ## p241 · VLFM: Vision-Language Frontier Maps for Zero-Shot Semantic Navigation
@@ -2785,7 +2785,7 @@
 - 主题：robotics/localization-mapping
 - 身份核验：selected_sections_checked_not_full_read
 - 用户阅读状态：unknown
-- [文献卡](../robotics-embodied/papers/arxiv-2312.06741/README.md)
+- [独立讲解](../robotics-embodied/papers/arxiv-2312.06741/reading.md)
 
 <a id="p243"></a>
 ## p243 · Depth Anything: Unleashing the Power of Large-Scale Unlabeled Data

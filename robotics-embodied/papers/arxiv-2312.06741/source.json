@@ -5,24 +5,24 @@
   "resource_kind": "paper",
   "canonical_folder": "robotics-embodied/papers/arxiv-2312.06741",
   "official_url": "https://arxiv.org/abs/2312.06741",
-  "official_fulltext_url": "https://arxiv.org/pdf/2312.06741v2",
-  "read_version": "v2",
-  "version_status": "checked_v2",
-  "reading_depth": "selected_sections_checked_not_full_read",
-  "teaching_status": "not_created",
-  "content_kind": "bibliographic_card",
-  "reading_path": null,
-  "reading_boundary": "文献卡。核验了arXiv HTML v2 全文（含补充材料）、Tab.1–6、14；不是独立全文精读，未复现。",
+  "official_fulltext_url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Matsuki_Gaussian_Splatting_SLAM_CVPR_2024_paper.pdf",
+  "read_version": "CVPR 2024 accepted proceedings version; arXiv v2 cross-checked",
+  "version_status": "formal_publication_and_latest_arxiv_checked",
+  "reading_depth": "full_main_text_technical_reading",
+  "teaching_status": "technical_reading_created",
+  "content_kind": "reading",
+  "reading_path": "reading.md",
+  "reading_boundary": "完整精读 CVPR 2024 正式正文 §1–5、图1–7、表1–6；精读正式补充 §6–9及§11、表7–16和关键图。对照 arXiv v2；核对官方 main 的跟踪、关键帧和后端局部优化逻辑。未独立复现，未遍历CUDA内核，未审计补充视频。",
   "user_reading_status": "not_asserted",
   "independently_reproduced": false,
   "license": {
     "status": "not_audited",
-    "license_url": null,
-    "note": "可公开阅读不等于允许镜像；未确认再分发许可前仅提供官方原文链接。"
+    "license_url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/license.html",
+    "note": "arXiv页面标注perpetual non-exclusive license；未据此认定拥有全文再分发许可。PDF只用于临时阅读，不写入知识库。"
   },
-  "fulltext_local_status": "official_link_only_pending_license_verification",
+  "fulltext_local_status": "official_link_only_not_mirrored",
   "fulltext_local_path": null,
-  "source_record_updated": "2026-10-04",
+  "source_record_updated": "2026-11-06",
   "legacy_paths": [],
   "evidence_paths": [],
   "authors": [
@@ -31,7 +31,7 @@
     "Paul H. J. Kelly",
     "Andrew J. Davison"
   ],
-  "year": 2023,
+  "year": 2024,
   "topic_paths": [
     "robotics/localization-mapping"
   ],
@@ -53,5 +53,36 @@
     ],
     "source_origin": "phase3_embodied_localization_perception",
     "relation_pages": []
-  }
+  },
+  "original_pdf_url": "https://openaccess.thecvf.com/content/CVPR2024/papers/Matsuki_Gaussian_Splatting_SLAM_CVPR_2024_paper.pdf",
+  "supplement_url": "https://openaccess.thecvf.com/content/CVPR2024/supplemental/Matsuki_Gaussian_Splatting_SLAM_CVPR_2024_supplemental.pdf",
+  "verified_original_version": "CVPR 2024 pp.18039–18048; arXiv:2312.06741v2 (2024-04-14)",
+  "venue": "CVPR 2024 Highlight",
+  "version_notes": [
+    "arXiv 页面最新版本为 v2，2024-04-14；正式 CVPR 正文、独立补充和 arXiv v2 均已取得并核对关键公式与引用数据。",
+    "正式正文表5的 Replica PSNR/SSIM 38.94/0.968 与正式补充表7的37.50/0.960不一致，补充表15又使用38.94/0.968；arXiv v2亦存在同样差异。正文按正式正文表5引用，批注明示冲突。",
+    "正式补充表10标题为Replica office1，计时正文§8.6.2为office2；未擅自确定序列。",
+    "官方main的slam_frontend.py、slam_backend.py和README只读核对，未锁定历史提交；README加速分支10 FPS不是论文测量，未复现。"
+  ],
+  "verification_2026_11_06": {
+    "verification_status": "full_main_text_and_key_supplement_read",
+    "reading_scope": "正式正文全部，补充实现、评估、消融、雅可比与局限；关键图表视觉核对；arXiv v2核心结果对照；官方前后端代码只读检查。",
+    "evidence_boundary": "实验全部取作者报告；没有把rendering FPS解释为tracking或完整SLAM FPS；未运行代码和性能测试。",
+    "verification_sources": [
+      "https://openaccess.thecvf.com/content/CVPR2024/papers/Matsuki_Gaussian_Splatting_SLAM_CVPR_2024_paper.pdf",
+      "https://openaccess.thecvf.com/content/CVPR2024/supplemental/Matsuki_Gaussian_Splatting_SLAM_CVPR_2024_supplemental.pdf",
+      "https://arxiv.org/abs/2312.06741",
+      "https://arxiv.org/pdf/2312.06741v2",
+      "https://github.com/muskie82/MonoGS/blob/main/utils/slam_frontend.py",
+      "https://github.com/muskie82/MonoGS/blob/main/utils/slam_backend.py",
+      "https://github.com/muskie82/MonoGS"
+    ],
+    "related_primary_sources": [
+      "https://arxiv.org/html/2312.02126v3",
+      "https://arxiv.org/abs/2503.10170",
+      "https://arxiv.org/abs/2507.04004v3"
+    ]
+  },
+  "first_submission_year": 2023,
+  "publication_year": 2024
 }
