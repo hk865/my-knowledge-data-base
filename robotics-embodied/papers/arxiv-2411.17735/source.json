@@ -1,0 +1,193 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2411.17735",
+  "title": "3D-Mem: 3D Scene Memory for Embodied Exploration and Reasoning",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2411.17735",
+  "canonical_folder_status": "proposed_new_folder_no_matching_entry_in_checked_catalog",
+  "official_url": "https://arxiv.org/abs/2411.17735",
+  "official_fulltext_url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Yang_3D-Mem_3D_Scene_Memory_for_Embodied_Exploration_and_Reasoning_CVPR_2025_paper.pdf",
+  "official_publication_url": "https://openaccess.thecvf.com/content/CVPR2025/html/Yang_3D-Mem_3D_Scene_Memory_for_Embodied_Exploration_and_Reasoning_CVPR_2025_paper.html",
+  "official_supplement_url": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Yang_3D-Mem_3D_Scene_CVPR_2025_supplemental.zip",
+  "official_project_url": "https://umass-embodied-agi.github.io/3D-Mem/",
+  "official_code_url": "https://github.com/UMass-Embodied-AGI/3D-Mem",
+  "read_version": "CVPR 2025 accepted version and official supplementary material; cross-checked arXiv v5 (2025-04-04)",
+  "version_status": "verified_official_publication_and_current_arxiv_version",
+  "year": 2025,
+  "first_preprint_year": 2024,
+  "authors": [
+    "Yuncong Yang",
+    "Han Yang",
+    "Jiachen Zhou",
+    "Peihao Chen",
+    "Hongxin Zhang",
+    "Yilun Du",
+    "Chuang Gan"
+  ],
+  "equal_contribution_authors": [
+    "Yuncong Yang",
+    "Han Yang"
+  ],
+  "venue": "CVPR 2025",
+  "pages": "17294–17303",
+  "arxiv_categories": [
+    "cs.CV",
+    "cs.RO"
+  ],
+  "reading_depth": "full_main_text_relevant_supplementary_sections_and_selected_official_code",
+  "content_kind": "reading",
+  "reading_path": "reading.md",
+  "teaching_status": "original_technical_deep_reading",
+  "verification_status": "official_identity_fulltext_core_mechanisms_and_protocols_verified",
+  "verification_sources": [
+    "https://arxiv.org/abs/2411.17735",
+    "https://openaccess.thecvf.com/content/CVPR2025/html/Yang_3D-Mem_3D_Scene_Memory_for_Embodied_Exploration_and_Reasoning_CVPR_2025_paper.html",
+    "https://openaccess.thecvf.com/content/CVPR2025/papers/Yang_3D-Mem_3D_Scene_Memory_for_Embodied_Exploration_and_Reasoning_CVPR_2025_paper.pdf",
+    "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Yang_3D-Mem_3D_Scene_CVPR_2025_supplemental.zip",
+    "https://umass-embodied-agi.github.io/3D-Mem/",
+    "https://github.com/UMass-Embodied-AGI/3D-Mem/tree/f445e0828a2c5d5845ccdbd0992fc5eed871d19a",
+    "https://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+    "https://github.com/UMass-Embodied-AGI/3D-Mem/blob/f445e0828a2c5d5845ccdbd0992fc5eed871d19a/LICENSE"
+  ],
+  "source_origin": "independent_official_fulltext_and_code_review",
+  "reading_boundary": "以CVPR正式版主文为准，阅读方法、主实验、讨论，以及正式补充材料§6–15中的全集结果、失败分析、前沿与评测实现、训练说明、消融和提示词；用arXiv v5核对部分文本和提示词。视觉核对主文Fig.2/更新公式与补充Fig.14–15/Table7，未逐张审计全部图片或观看演示视频。静态阅读指定官方提交的聚类、记忆更新、预筛选、提示和评测入口，不声称完整代码审计。未运行论文代码、未下载权重或数据集、未复现实验。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "verified_arxiv_nonexclusive_distribution_not_general_redistribution_permission",
+    "identifier": "arXiv non-exclusive license to distribute 1.0",
+    "license_url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+    "evidence_url": "https://arxiv.org/abs/2411.17735",
+    "verification_method": "Read current arXiv abstract page (v5) view-license target and license text; separately read CVF publication copyright notice, official repository LICENSE and project website footer.",
+    "checked_at": "2026-11-06",
+    "note": "arXiv许可只确认投稿者授予arXiv分发权。CVF说明作者或其他权利人保留版权，未核到本论文的通用CC再分发授权。官方代码MIT和项目网站CC-BY-SA-4.0均不等于论文许可；仓库仅放原创精读和官方原文链接，不镜像论文。"
+  },
+  "code_license": {
+    "identifier": "MIT",
+    "evidence_url": "https://github.com/UMass-Embodied-AGI/3D-Mem/blob/f445e0828a2c5d5845ccdbd0992fc5eed871d19a/LICENSE",
+    "copyright_notice": "Copyright (c) Meta Platforms, Inc. and affiliates.",
+    "note": "记录仓库根LICENSE的实际文字；未审计全部第三方组件和模型、数据的各自许可。"
+  },
+  "fulltext_local_status": "link_only_not_mirrored",
+  "fulltext_local_path": null,
+  "fulltext_publication_note": "只合并reading.md与source.json；分析临时目录中的原文PDF、官方补充PDF和代码副本不作为仓库交付或公开镜像。",
+  "source_record_updated": "2026-11-06",
+  "evidence_paths": [],
+  "topic_paths": [
+    "robotics/localization-mapping"
+  ],
+  "modality_tags": [
+    "text",
+    "image",
+    "multimodal"
+  ],
+  "task_tags": [
+    "understanding",
+    "decision",
+    "evaluation"
+  ],
+  "method_tags": [
+    "co-visibility clustering",
+    "image scene memory",
+    "frontier exploration",
+    "category-based memory retrieval",
+    "incremental mapping"
+  ],
+  "code_reading": {
+    "repository": "https://github.com/UMass-Embodied-AGI/3D-Mem",
+    "commit": "f445e0828a2c5d5845ccdbd0992fc5eed871d19a",
+    "commit_date": "2025-10-02T18:37:25Z",
+    "files_read_relevant_functions": [
+      "README.md",
+      "LICENSE",
+      "src/hierarchy_clustering.py",
+      "src/scene_aeqa.py",
+      "src/query_vlm_aeqa.py",
+      "src/query_vlm_goatbench.py",
+      "src/eval_utils_gpt_aeqa.py",
+      "src/tsdf_planner.py",
+      "cfg/eval_aeqa.yaml",
+      "cfg/eval_goatbench.yaml",
+      "run_goatbench_evaluation.py",
+      "src/logger_goatbench.py"
+    ],
+    "observations": [
+      "SceneHierarchicalClustering.select_frame checks co-visibility, sorts by number of detected objects then cluster-object confidence sum, and prefers already-selected eligible frames before choosing the highest-ranked new frame.",
+      "Scene.update_snapshots reclusters the affected old snapshot clusters together with updated/new object IDs and asserts coverage/disjointness.",
+      "Prefiltering keeps snapshots whose assigned object categories intersect selected top-K categories; K counts categories, not snapshots.",
+      "A-EQA default config selects aeqa_questions-41.json, not the 184-question main-paper subset.",
+      "GOAT evaluation selects one episode per scene via split; current max-step budget is max(int(sqrt(scene_size)*ratio),50), differing from the supplementary text maximum-50 description.",
+      "GOAT logger separately reports success_by_snapshot and success_by_distance; the published paper describes distance-threshold success. Reproduction must select the matching metric."
+    ]
+  },
+  "evidence_summary": [
+    {
+      "claim": "Snapshot formulation, unique object ownership, co-visibility clustering and local incremental update",
+      "source": "https://openaccess.thecvf.com/content/CVPR2025/papers/Yang_3D-Mem_3D_Scene_Memory_for_Embodied_Exploration_and_Reasoning_CVPR_2025_paper.pdf",
+      "locations": [
+        "§3.1",
+        "Algorithm 1",
+        "§3.2.2",
+        "Fig.2"
+      ]
+    },
+    {
+      "claim": "Prefiltering is top-K category selection, followed by snapshot inclusion on category intersection",
+      "source": "https://openaccess.thecvf.com/content/CVPR2025/papers/Yang_3D-Mem_3D_Scene_Memory_for_Embodied_Exploration_and_Reasoning_CVPR_2025_paper.pdf",
+      "locations": [
+        "§3.2.3"
+      ]
+    },
+    {
+      "claim": "A-EQA 184-question subset; shared-framework CG object-crop comparison; 52.6/42.0 vs 47.2/33.3",
+      "source": "https://openaccess.thecvf.com/content/CVPR2025/papers/Yang_3D-Mem_3D_Scene_Memory_for_Embodied_Exploration_and_Reasoning_CVPR_2025_paper.pdf",
+      "locations": [
+        "§4.1",
+        "Table 1"
+      ]
+    },
+    {
+      "claim": "EM-EQA 57.2 with 3.1 frames vs 48.1 with 3.0 frames, both image methods use GPT-4o",
+      "source": "https://openaccess.thecvf.com/content/CVPR2025/papers/Yang_3D-Mem_3D_Scene_Memory_for_Embodied_Exploration_and_Reasoning_CVPR_2025_paper.pdf",
+      "locations": [
+        "§4.2",
+        "Table 2"
+      ]
+    },
+    {
+      "claim": "GOAT subset has 36 scenes and 278 subtasks; memory 69.1/48.9 vs clearing 58.6/38.5",
+      "source": "https://openaccess.thecvf.com/content/CVPR2025/papers/Yang_3D-Mem_3D_Scene_Memory_for_Embodied_Exploration_and_Reasoning_CVPR_2025_paper.pdf",
+      "locations": [
+        "§4.3",
+        "Table 3"
+      ]
+    },
+    {
+      "claim": "Full-set results differ from subsets; supplementary Table 7 nearest-frontier ablation",
+      "source": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Yang_3D-Mem_3D_Scene_CVPR_2025_supplemental.zip",
+      "locations": [
+        "§6",
+        "§13.2",
+        "Table 7"
+      ]
+    },
+    {
+      "claim": "Static environment assumption; precise pose needed; moving objects not robust; global navmesh shortest path; planar frontier limitations",
+      "source": "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Yang_3D-Mem_3D_Scene_CVPR_2025_supplemental.zip",
+      "locations": [
+        "§7.3",
+        "§9",
+        "§11"
+      ]
+    }
+  ],
+  "known_boundaries": [
+    "The reported lifelong setting is same-scene sequential navigation; dynamic object identity/state histories were not evaluated.",
+    "Algorithm 1 is a compact-cover heuristic; no global-minimum snapshot-count guarantee was found.",
+    "Selected snapshot counts are prompt/memory-representation efficiency evidence, not a bound on all retained runtime state.",
+    "A-EQA mixes reproduced subset results and inherited full-set baseline scores; full-set supplementary evaluation only reports 3D-Mem.",
+    "Global navmesh planning and different baseline navigation stacks prevent treating all GOAT numbers as a controlled memory-only comparison.",
+    "Prefiltering removal was not evaluated because all-input prompts exceeded context; LLaVA-7B was additionally fine-tuned.",
+    "No user hypotheses or suggested future extensions are recorded as paper facts."
+  ]
+}

@@ -88,7 +88,7 @@ ATE RMSE 衡量对齐后估计轨迹的位置误差；本文统计关键帧，�
 
 **与其他论文的关联**
 - [SplaTAM](../arxiv-2312.02126/reading.md)是同期 RGB-D 路线：用累计不透明度的 silhouette 判断哪里已建图，并以球形高斯减少参数。MonoGS 则保留各向异性、加软球形正则，通过多视图共视与剪枝应对无深度初始化；“都用高斯”之外，区别在于几何证据从哪里来。[SplaTAM §3](https://arxiv.org/html/2312.02126v3)
-- [GS-SDF](../arxiv-2503.10170/reading.md)将高斯与 LiDAR 训练的 SDF 联合，弥补分散基元欠缺连续表面约束的问题；MonoGS 的 E_iso 只约束单个基元形状，这两种正则解决的几何层次不同。[GS-SDF 原文](https://arxiv.org/abs/2503.10170)
+- [GS-SDF](../arxiv-2503.10170/reading.md)将高斯与 LiDAR 训练的 SDF 联合，弥补分散基元欠缺连续表面约束的问题；MonoGS 的 E_iso 只约束单个基元形状，这两种正则解决的几何层次不同。[GS-SDF 原文](../arxiv-2503.10170/README.md)
 - [Gaussian-LIC2](../arxiv-2507.04004/reading.md)在连续时间多传感器估计中纳入高斯光度约束，是“地图反过来帮助定位”的另一种实现，而非对 MonoGS 室内单目结果的同条件替换。[Gaussian-LIC2 v3](https://arxiv.org/abs/2507.04004v3)
 
 **未核实 / 待验证**

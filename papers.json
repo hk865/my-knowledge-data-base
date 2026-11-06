@@ -41000,5 +41000,319 @@
     ],
     "read_version": "v3",
     "reading_scope": "已精读原文方法、实现与核心实验表，并写独立机制算例；未运行代码或独立复现，未声称逐图审计全部附录。"
+  },
+  {
+    "id": "arxiv:2309.16650",
+    "title": "ConceptGraphs: Open-Vocabulary 3D Scene Graphs for Perception and Planning",
+    "url": "https://arxiv.org/abs/2309.16650",
+    "arxiv_id": "2309.16650",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "robotics/localization-mapping",
+      "robotics/perception",
+      "robotics/embodied-agents"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "recent_scene_representation_discussion_then_independent_fulltext_and_code_review"
+    ],
+    "chat_evidence": [
+      {
+        "role": "assistant",
+        "date": "2026-11-01",
+        "association": "在三维语义地图如何转为对象与关系表示的讨论中作为相关方法引用；不表示用户已阅读或认可论文结论。"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2309.16650",
+      "https://arxiv.org/pdf/2309.16650v1",
+      "https://concept-graphs.github.io/",
+      "https://concept-graphs.github.io/assets/pdf/2023-ConceptGraphs.pdf",
+      "https://github.com/concept-graphs/concept-graphs/tree/93277a02bd89171f8121e84203121cf7af9ebb5d"
+    ],
+    "verification_status": "official_identity_main_text_appendices_and_targeted_code_checked_not_reproduced",
+    "caveats": [],
+    "assistant_reading_status": "full_main_text_appendices_and_targeted_official_code",
+    "reading_status": "technical_reading_with_geometry_association_example_evidence_and_update_boundaries",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p654",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding",
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2309.16650",
+    "canonical_path": "robotics-embodied/papers/arxiv-2309.16650/reading.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2309.16650/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2309.16650/source.json",
+    "legacy_paths": [],
+    "content_kind": "reading",
+    "authors": [
+      "Qiao Gu",
+      "Alihusein Kuwajerwala",
+      "Sacha Morin",
+      "Krishna Murthy Jatavallabhula",
+      "Bipasha Sen",
+      "Aditya Agarwal",
+      "Corban Rivera",
+      "William Paul",
+      "Kirsty Ellis",
+      "Rama Chellappa",
+      "Chuang Gan",
+      "Celso Miguel de Melo",
+      "Joshua B. Tenenbaum",
+      "Antonio Torralba",
+      "Florian Shkurti",
+      "Liam Paull"
+    ],
+    "read_version": "v1",
+    "reading_scope": "阅读arXiv v1全部正文§I–V、附录A1–A6和参考文献列表；对照项目PDF，视觉复核方法图Fig.2和Table I–III；抽查官方main固定提交93277a02bd89171f8121e84203121cf7af9ebb5d的对象关联、特征融合、周期后处理、候选边与关系提示。未逐篇核读所有参考文献，未审计独立Jackal仓库或ali-dev重构，未运行模型、API及机器人实验。"
+  },
+  {
+    "id": "arxiv:2403.17846",
+    "title": "Hierarchical Open-Vocabulary 3D Scene Graphs for Language-Grounded Robot Navigation",
+    "url": "https://www.roboticsproceedings.org/rss20/p077.html",
+    "arxiv_id": "2403.17846",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "robotics/localization-mapping",
+      "robotics/navigation-planning"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "recent_scene_graph_discussion_then_independent_published_fulltext_and_official_code_review"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://www.roboticsproceedings.org/rss20/p077.html",
+      "https://www.roboticsproceedings.org/rss20/p077.pdf",
+      "https://arxiv.org/abs/2403.17846",
+      "https://arxiv.org/html/2403.17846v2",
+      "https://arxiv.org/licenses/nonexclusive-distrib/1.0/license.html",
+      "https://hovsg.github.io/",
+      "https://github.com/hovsg/HOV-SG/tree/d6e65a53c8be6faec3f01f00d1644d967f89e605",
+      "https://github.com/hovsg/HOV-SG/blob/d6e65a53c8be6faec3f01f00d1644d967f89e605/LICENSE"
+    ],
+    "verification_status": "official_identity_published_main_text_relevant_supplementary_and_selected_official_code_checked_not_reproduced",
+    "caveats": [],
+    "assistant_reading_status": "published_main_text_core_method_all_main_experiment_tables_relevant_supplementary_sections_selected_official_code",
+    "reading_status": "technical_reading_with_equations_numeric_examples_evidence_and_code_boundaries",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p655",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding",
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2403.17846",
+    "canonical_path": "robotics-embodied/papers/arxiv-2403.17846/reading.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2403.17846/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2403.17846/source.json",
+    "legacy_paths": [],
+    "content_kind": "reading",
+    "authors": [
+      "Abdelrhman Werby",
+      "Chenguang Huang",
+      "Martin Büchner",
+      "Abhinav Valada",
+      "Wolfram Burgard"
+    ],
+    "read_version": "RSS 2024 published main paper; arXiv v2 supplementary material (2024-06-03)",
+    "reading_scope": "已阅读 RSS 正式正文的机制、全部主实验表、结论，以及 arXiv v2 S.1-A/B、S.2-A–H 的相关文字和表注；核对作者、版本及论文/代码许可；静态抽查官方建图、查询、特征过滤和评价实现。未运行论文代码、下载模型权重或数据集、独立复现实验，未逐帧审计视频或完整审计代码。"
+  },
+  {
+    "id": "arxiv:2411.17735",
+    "title": "3D-Mem: 3D Scene Memory for Embodied Exploration and Reasoning",
+    "url": "https://arxiv.org/abs/2411.17735",
+    "arxiv_id": "2411.17735",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "independent_official_fulltext_and_code_review"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2411.17735",
+      "https://openaccess.thecvf.com/content/CVPR2025/html/Yang_3D-Mem_3D_Scene_Memory_for_Embodied_Exploration_and_Reasoning_CVPR_2025_paper.html",
+      "https://openaccess.thecvf.com/content/CVPR2025/papers/Yang_3D-Mem_3D_Scene_Memory_for_Embodied_Exploration_and_Reasoning_CVPR_2025_paper.pdf",
+      "https://openaccess.thecvf.com/content/CVPR2025/supplemental/Yang_3D-Mem_3D_Scene_CVPR_2025_supplemental.zip",
+      "https://umass-embodied-agi.github.io/3D-Mem/",
+      "https://github.com/UMass-Embodied-AGI/3D-Mem/tree/f445e0828a2c5d5845ccdbd0992fc5eed871d19a",
+      "https://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+      "https://github.com/UMass-Embodied-AGI/3D-Mem/blob/f445e0828a2c5d5845ccdbd0992fc5eed871d19a/LICENSE"
+    ],
+    "verification_status": "official_identity_fulltext_core_mechanisms_and_protocols_verified",
+    "caveats": [],
+    "assistant_reading_status": "full_main_text_relevant_supplementary_sections_and_selected_official_code",
+    "reading_status": "original_technical_deep_reading",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p656",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "text",
+      "image",
+      "multimodal"
+    ],
+    "task_tags": [
+      "understanding",
+      "decision",
+      "evaluation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2411.17735",
+    "canonical_path": "robotics-embodied/papers/arxiv-2411.17735/reading.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2411.17735/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2411.17735/source.json",
+    "legacy_paths": [],
+    "content_kind": "reading",
+    "authors": [
+      "Yuncong Yang",
+      "Han Yang",
+      "Jiachen Zhou",
+      "Peihao Chen",
+      "Hongxin Zhang",
+      "Yilun Du",
+      "Chuang Gan"
+    ],
+    "read_version": "CVPR 2025 accepted version and official supplementary material; cross-checked arXiv v5 (2025-04-04)",
+    "reading_scope": "以CVPR正式版主文为准，阅读方法、主实验、讨论，以及正式补充材料§6–15中的全集结果、失败分析、前沿与评测实现、训练说明、消融和提示词；用arXiv v5核对部分文本和提示词。视觉核对主文Fig.2/更新公式与补充Fig.14–15/Table7，未逐张审计全部图片或观看演示视频。静态阅读指定官方提交的聚类、记忆更新、预筛选、提示和评测入口，不声称完整代码审计。未运行论文代码、未下载权重或数据集、未复现实验。"
+  },
+  {
+    "id": "arxiv:2608.16889",
+    "title": "Don't Drop the BATON: Long-Horizon Robot Manipulation via Agentic Subtask Exploration and Transition-aware Memory",
+    "url": "https://arxiv.org/abs/2608.16889v3",
+    "arxiv_id": "2608.16889",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/embodied-agents",
+      "cross-domain/agents"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2608.16889v3"
+    ],
+    "verification_status": "not_recorded",
+    "caveats": [],
+    "assistant_reading_status": "fulltext",
+    "reading_status": "fulltext_technical_reading",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p657",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "action",
+      "multimodal"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2608.16889",
+    "canonical_path": "robotics-embodied/papers/arxiv-2608.16889/reading.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2608.16889/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2608.16889/source.json",
+    "legacy_paths": [],
+    "content_kind": "reading",
+    "authors": [
+      "Bingxin Xu",
+      "Yuzhang Shang",
+      "Emilio Ferrara"
+    ],
+    "read_version": "v3",
+    "reading_scope": "阅读全文§1–5、图1–4、表1–3与参考文献。v3 PDF共12页，正文为第1–9页，参考文献为第10–12页，无附录；用本地PDF文本核读并渲染核查图2的记忆读写时机。另核RoboMemArena v1 §3.4的TSR/CSR定义，阅读本库Harness VLA与RoboSkill精读用于关系对照。未运行实现或复现实验。"
+  },
+  {
+    "id": "arxiv:2609.29204",
+    "title": "AdaHVLA: Adaptive Harnesses for Long-Horizon Vision-Language-Action Execution",
+    "url": "https://arxiv.org/abs/2609.29204v1",
+    "arxiv_id": "2609.29204",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/embodied-agents",
+      "cross-domain/agents"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2609.29204v1",
+      "https://arxiv.org/pdf/2609.29204v1",
+      "https://arxiv.org/html/2609.29204v1",
+      "https://github.com/Haaareally/AdaHVLA-Adaptive_Harness_VLA/blob/7a9cf102ce381c1f889b4cc00383be6d28a5fe88/README.md"
+    ],
+    "verification_status": "not_recorded",
+    "caveats": [],
+    "assistant_reading_status": "full_text",
+    "reading_status": "full_text_technical_reading",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p658",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "action",
+      "multimodal"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2609.29204",
+    "canonical_path": "robotics-embodied/papers/arxiv-2609.29204/reading.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2609.29204/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2609.29204/source.json",
+    "legacy_paths": [],
+    "content_kind": "reading",
+    "authors": [
+      "Junyi Tang",
+      "Jie Peng",
+      "Zezhen Ding",
+      "Yuan Shen",
+      "Tianlong Chen"
+    ],
+    "read_version": "v1",
+    "reading_scope": "通读 arXiv v1 全文9页、方法与全部实验讨论，核对表I–II，并查看图2、图3–4、图5页面图像。该版本无单独附录。补读作者仓库README，未审计实现源码或运行代码；相关论文仅核对比较所需方法章节。"
   }
 ]

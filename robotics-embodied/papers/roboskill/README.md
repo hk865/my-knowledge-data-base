@@ -21,3 +21,5 @@
 - 方向：[具身 Agents](../../fields/embodied-agents/README.md)（跨领域另见[智能体](../../../cross-domain/fields/agents/README.md)）
 
 - [机械臂执行与公平评测补充解读](reading-2026-10-30.md)
+
+[补充精读：实验归因与迁移](reading-evidence.md)

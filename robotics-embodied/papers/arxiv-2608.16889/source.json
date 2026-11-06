@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2608.16889",
+  "title": "Don't Drop the BATON: Long-Horizon Robot Manipulation via Agentic Subtask Exploration and Transition-aware Memory",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2608.16889",
+  "official_url": "https://arxiv.org/abs/2608.16889v3",
+  "official_fulltext_url": "https://arxiv.org/pdf/2608.16889v3",
+  "official_html_url": "https://arxiv.org/html/2608.16889v3",
+  "read_version": "v3",
+  "version_date": "2026-09-30",
+  "version_status": "latest_verified",
+  "first_submitted": "2026-08-17",
+  "year": 2026,
+  "authors": [
+    "Bingxin Xu",
+    "Yuzhang Shang",
+    "Emilio Ferrara"
+  ],
+  "topic_paths": [
+    "robotics/embodied-agents",
+    "cross-domain/agents"
+  ],
+  "content_kind": "reading",
+  "reading_path": "reading.md",
+  "reading_depth": "fulltext",
+  "teaching_status": "fulltext_technical_reading",
+  "reading_boundary": "阅读全文§1–5、图1–4、表1–3与参考文献。v3 PDF共12页，正文为第1–9页，参考文献为第10–12页，无附录；用本地PDF文本核读并渲染核查图2的记忆读写时机。另核RoboMemArena v1 §3.4的TSR/CSR定义，阅读本库Harness VLA与RoboSkill精读用于关系对照。未运行实现或复现实验。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "original_checked_at": "2026-11-06",
+  "source_record_updated": "2026-11-06",
+  "license": {
+    "status": "license_identified",
+    "license_urls": [
+      "https://arxiv.org/licenses/nonexclusive-distrib/1.0/license.html"
+    ],
+    "checked_at": "2026-11-06",
+    "note": "arXiv non-exclusive distribution license不授予第三方全文再发布权限。仅发布独立中文讲解并链接官方原文；阅读用PDF、提取文本和截图已移出交付目录，不作为公开附件。"
+  },
+  "fulltext_local_status": "official_link_only_redistribution_not_granted",
+  "fulltext_local_path": null,
+  "local_reading_cache_retained": true,
+  "public_pdf_mirror": false,
+  "official_code_url": null,
+  "code_status": "no_official_code_link_identified_in_v3",
+  "evidence_paths": [],
+  "related_readings": [
+    "robotics-embodied/papers/arxiv-2607.08448/reading.md",
+    "robotics-embodied/papers/roboskill/reading.md",
+    "robotics-embodied/papers/embodiedskills/reading.md"
+  ],
+  "primary_sources": [
+    {
+      "url": "https://arxiv.org/abs/2608.16889v3",
+      "scope": "identity, authors, version history, license link"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2608.16889v3",
+      "scope": "full paper, all method and experiment sections, figures and tables"
+    },
+    {
+      "url": "https://arxiv.org/html/2608.16889v3",
+      "scope": "cross-check methods and numerical results"
+    },
+    {
+      "url": "https://arxiv.org/html/2605.10921v1#S3.SS4",
+      "scope": "benchmark TSR and CSR definitions, equations 4 and 5"
+    },
+    {
+      "url": "https://arxiv.org/abs/2607.08448v5",
+      "scope": "verify direct predecessor identity and frozen-VLA agentic control approach"
+    }
+  ],
+  "audit_notes": [
+    "摘要37.7%与29.7%是相对于FrameSamp+Modul的相对提升；主表绝对增幅为17.4与19.0个百分点。",
+    "Harness VLA与BATON均使用LIBERO技能记忆、参考seed和每任务20个探索episode，不能解释为完全冷启动的KT实证。",
+    "CSR依据RoboMemArena原文先按单任务/回合阶段数归一再平均，非把所有阶段合并计数。",
+    "去lookahead同时禁用scheduler并只保留首个成功策略，未分开这两项贡献。",
+    "未发现置信区间、独立探索重复方差、端到端时间/token成本或验证器校准实验。"
+  ],
+  "modality_tags": [
+    "image",
+    "text",
+    "action",
+    "multimodal"
+  ],
+  "task_tags": [
+    "decision"
+  ]
+}

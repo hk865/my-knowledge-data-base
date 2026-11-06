@@ -364,10 +364,10 @@ Agent 如果选择改走另一通道，可提交：
 建议先读 1–4 理解工具与执行，再读 5–9 理解空间记忆，最后读 10–17 选择视频路线与评测。文档类来源按调研时版本使用；项目页与论文只证明各自条件下的能力，不意味着系统可直接兼容或达到同样实时性。
 
 1. **SayCan**，2022。先看语言相关性与技能可执行性怎样结合，理解为何动作前置检查不可缺。项目与论文：[项目](https://say-can.github.io/)；[论文](https://arxiv.org/abs/2204.01691)。
-2. **Code as Policies**，2022。看高层语言怎样组合低层原语；不要把程序生成能力当成任意代码安全执行许可。[项目](https://code-as-policies.github.io/)；[论文](https://arxiv.org/abs/2209.07753)。
+2. **Code as Policies**，2022。看高层语言怎样组合低层原语；不要把程序生成能力当成任意代码安全执行许可。[项目](https://code-as-policies.github.io/)；[论文](../../papers/arxiv-2209.07753/README.md)。
 3. **ROS 2 Actions**，2019–2020 设计文档。用于目标、反馈、结果与取消语义；上层仍需定义超时、重试和业务状态。[官方设计](https://design.ros2.org/articles/actions.html)。
 4. **Nav2 Collision Monitor**，官方文档。用于理解独立近场保护的分工，同时阅读其非硬实时安全认证的限制。[官方文档](https://docs.nav2.org/rolling/configuration_and_development/configuration_guide/core_servers/collision_monitor/configuring_collision_monitor_node/)。
-5. **ConceptGraphs**，2023 预印本、ICRA 2024。对象中心开放词汇三维表示的起点；重点看多视角关联，不预设动态预测能力。[项目](https://concept-graphs.github.io/)；[论文](https://arxiv.org/abs/2309.16650)。
+5. **ConceptGraphs**，2023 预印本、ICRA 2024。对象中心开放词汇三维表示的起点；重点看多视角关联，不预设动态预测能力。[项目](https://concept-graphs.github.io/)；[论文](../../papers/arxiv-2309.16650/README.md)。
 6. **SayPlan**，CoRL 2023。最值得借鉴的是层次子图查询、经典规划与反馈修正，而非一次把全部场景传给 LLM。[项目](https://sayplan.github.io/)；[正式论文](https://proceedings.mlr.press/v229/rana23a.html)。
 7. **Khronos**，RSS 2024。阅读快慢变化分离与时空度量语义地图；完整系统集成和版本依赖需单独评估。[论文](https://arxiv.org/abs/2402.13817)；[官方代码](https://github.com/MIT-SPARK/Khronos)。
 8. **DovSG**，2024 预印本。阅读对象变化后的局部图更新；不要将任务间物品变化直接等同于高速行人避障。[项目](https://bjhyzj.github.io/dovsg-web/)；[论文](https://arxiv.org/abs/2410.11989)。

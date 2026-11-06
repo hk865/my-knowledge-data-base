@@ -299,3 +299,8 @@
 - [DashGaussian: Optimizing 3D Gaussian Splatting in 200 Seconds](papers/arxiv-2503.18402/README.md) · 2025 · 技术精读
 - [3DGS-LM: Faster Gaussian-Splatting Optimization with Levenberg-Marquardt](papers/arxiv-2409.12892/README.md) · 2025 · 技术精读
 - [Speedy-Splat: Fast 3D Gaussian Splatting with Sparse Pixels and Sparse Primitives](papers/arxiv-2412.00578/README.md) · 2025 · 技术精读
+- [ConceptGraphs: Open-Vocabulary 3D Scene Graphs for Perception and Planning](papers/arxiv-2309.16650/README.md) · 2024 · 技术精读
+- [Hierarchical Open-Vocabulary 3D Scene Graphs for Language-Grounded Robot Navigation](papers/arxiv-2403.17846/README.md) · 2024 · 技术精读
+- [3D-Mem: 3D Scene Memory for Embodied Exploration and Reasoning](papers/arxiv-2411.17735/README.md) · 2025 · 技术精读
+- [Don't Drop the BATON: Long-Horizon Robot Manipulation via Agentic Subtask Exploration and Transition-aware Memory](papers/arxiv-2608.16889/README.md) · 2026 · 技术精读
+- [AdaHVLA: Adaptive Harnesses for Long-Horizon Vision-Language-Action Execution](papers/arxiv-2609.29204/README.md) · 2026 · 技术精读

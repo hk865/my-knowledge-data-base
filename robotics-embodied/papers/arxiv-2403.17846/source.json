@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2403.17846",
+  "title": "Hierarchical Open-Vocabulary 3D Scene Graphs for Language-Grounded Robot Navigation",
+  "short_name": "HOV-SG",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2403.17846",
+  "canonical_folder_status": "proposed_new_folder_no_existing_entry_found_in_papers_json_2026-11-06",
+  "official_url": "https://www.roboticsproceedings.org/rss20/p077.html",
+  "official_fulltext_url": "https://www.roboticsproceedings.org/rss20/p077.pdf",
+  "arxiv_url": "https://arxiv.org/abs/2403.17846",
+  "supplementary_fulltext_url": "https://arxiv.org/html/2403.17846v2",
+  "read_version": "RSS 2024 published main paper; arXiv v2 supplementary material (2024-06-03)",
+  "version_status": "published_main_text_verified_arxiv_latest_version_v2_verified",
+  "year": 2024,
+  "authors": [
+    "Abdelrhman Werby",
+    "Chenguang Huang",
+    "Martin Büchner",
+    "Abhinav Valada",
+    "Wolfram Burgard"
+  ],
+  "equal_contribution_authors": [
+    "Abdelrhman Werby",
+    "Chenguang Huang",
+    "Martin Büchner"
+  ],
+  "venue": "Robotics: Science and Systems XX (RSS 2024)",
+  "doi": "10.15607/RSS.2024.XX.077",
+  "arxiv_categories": [
+    "cs.RO",
+    "cs.AI",
+    "cs.CL",
+    "cs.CV",
+    "cs.LG"
+  ],
+  "reading_depth": "published_main_text_core_method_all_main_experiment_tables_relevant_supplementary_sections_selected_official_code",
+  "content_kind": "reading",
+  "reading_path": "reading.md",
+  "reading_boundary": "已阅读 RSS 正式正文的机制、全部主实验表、结论，以及 arXiv v2 S.1-A/B、S.2-A–H 的相关文字和表注；核对作者、版本及论文/代码许可；静态抽查官方建图、查询、特征过滤和评价实现。未运行论文代码、下载模型权重或数据集、独立复现实验，未逐帧审计视频或完整审计代码。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "verified_arxiv_license_and_official_code_license_separately",
+    "checked_at": "2026-11-06",
+    "paper": {
+      "scope": "arXiv v2 deposit",
+      "name": "arXiv.org perpetual non-exclusive license",
+      "url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/license.html"
+    },
+    "code": {
+      "name": "MIT",
+      "url": "https://github.com/hovsg/HOV-SG/blob/d6e65a53c8be6faec3f01f00d1644d967f89e605/LICENSE",
+      "commit": "d6e65a53c8be6faec3f01f00d1644d967f89e605"
+    },
+    "note": "RSS 会议页与作者项目页核实正式出版信息；未在 RSS 页面核验额外的全文再分发许可。交付包只放原创精读及官方全文链接，不镜像原论文、代码、权重或数据。网站模板 CC BY-SA 不作为论文许可。"
+  },
+  "official_project_url": "https://hovsg.github.io/",
+  "official_code_url": "https://github.com/hovsg/HOV-SG",
+  "code_snapshot": {
+    "commit": "d6e65a53c8be6faec3f01f00d1644d967f89e605",
+    "commit_date": "2026-01-19T08:58:18Z",
+    "url": "https://github.com/hovsg/HOV-SG/tree/d6e65a53c8be6faec3f01f00d1644d967f89e605",
+    "files_inspected": [
+      "README.md",
+      "LICENSE",
+      "application/create_graph.py",
+      "config/create_graph.yaml",
+      "hovsg/graph/graph.py",
+      "hovsg/utils/graph_utils.py",
+      "hovsg/eval/hm3dsem_evaluator.py"
+    ],
+    "scope": "selected static reading, not full audit; current implementation may differ from publication experiments",
+    "observed_differences": [
+      "feats_denoise_dbscan currently returns the largest cluster mean; paper says to select the feature closest to that mean.",
+      "query_room default view_embedding branch iterates self.rooms rather than the floor-filtered rooms_list and returns three rooms; no execution test was performed.",
+      "Current object semantic evaluation call does not filter assignment indices to IoU>0.5 before semantic scoring as described in paper; AUC uses k increments of 10 and trapezoidal integration. No inference is made about the original experiment code."
+    ]
+  },
+  "key_evidence": [
+    {
+      "claim": "Object feature and hierarchy mechanism",
+      "location": "RSS §III-A/B, equations (1)–(2), Figures 2–5",
+      "source_url": "https://www.roboticsproceedings.org/rss20/p077.pdf"
+    },
+    {
+      "claim": "Point semantics and component ablations",
+      "location": "RSS Tables I and VIII",
+      "source_url": "https://www.roboticsproceedings.org/rss20/p077.pdf"
+    },
+    {
+      "claim": "Floor/room classification and semantic ranking",
+      "location": "RSS Tables II–IV; arXiv v2 S.2-A–D",
+      "source_url": "https://arxiv.org/html/2403.17846v2"
+    },
+    {
+      "claim": "Hierarchical retrieval distinct from navigation",
+      "location": "RSS §IV-B4/Table V and §IV-C/Table VI; arXiv v2 S.2-E/G/H",
+      "source_url": "https://www.roboticsproceedings.org/rss20/p077.pdf"
+    },
+    {
+      "claim": "Memory measurement and static/non-real-time limits",
+      "location": "RSS §IV-D/Table VII; §V",
+      "source_url": "https://www.roboticsproceedings.org/rss20/p077.pdf"
+    },
+    {
+      "claim": "Part-level hierarchy remains a future direction",
+      "location": "arXiv v2 S.2-F",
+      "source_url": "https://arxiv.org/html/2403.17846v2"
+    }
+  ],
+  "fulltext_local_status": "link_only_not_mirrored_in_deliverable",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-11-06",
+  "evidence_paths": [],
+  "topic_paths": [
+    "robotics/localization-mapping",
+    "robotics/navigation-planning"
+  ],
+  "modality_tags": [
+    "image",
+    "text",
+    "multimodal"
+  ],
+  "task_tags": [
+    "understanding",
+    "decision"
+  ],
+  "method_tags": [
+    "hierarchical scene graph",
+    "open-vocabulary mapping",
+    "CLIP",
+    "SAM",
+    "Voronoi navigation graph"
+  ],
+  "evaluation_tags": [
+    "Replica",
+    "ScanNet",
+    "HM3DSem",
+    "real-world Spot navigation"
+  ],
+  "related_primary_sources": [
+    {
+      "name": "ConceptGraphs",
+      "url": "https://arxiv.org/abs/2309.16650"
+    },
+    {
+      "name": "Hydra (RSS 2022)",
+      "url": "https://arxiv.org/abs/2201.13360"
+    },
+    {
+      "name": "VLMaps",
+      "url": "https://arxiv.org/abs/2210.05714"
+    },
+    {
+      "name": "MoMa-LLM",
+      "url": "https://arxiv.org/abs/2403.08605"
+    }
+  ],
+  "verification_status": "official_identity_published_main_text_relevant_supplementary_and_selected_official_code_checked_not_reproduced",
+  "verification_sources": [
+    "https://www.roboticsproceedings.org/rss20/p077.html",
+    "https://www.roboticsproceedings.org/rss20/p077.pdf",
+    "https://arxiv.org/abs/2403.17846",
+    "https://arxiv.org/html/2403.17846v2",
+    "https://arxiv.org/licenses/nonexclusive-distrib/1.0/license.html",
+    "https://hovsg.github.io/",
+    "https://github.com/hovsg/HOV-SG/tree/d6e65a53c8be6faec3f01f00d1644d967f89e605",
+    "https://github.com/hovsg/HOV-SG/blob/d6e65a53c8be6faec3f01f00d1644d967f89e605/LICENSE"
+  ],
+  "source_origin": "recent_scene_graph_discussion_then_independent_published_fulltext_and_official_code_review",
+  "teaching_status": "technical_reading_with_equations_numeric_examples_evidence_and_code_boundaries"
+}

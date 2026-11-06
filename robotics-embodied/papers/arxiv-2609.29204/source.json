@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2609.29204",
+  "title": "AdaHVLA: Adaptive Harnesses for Long-Horizon Vision-Language-Action Execution",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2609.29204",
+  "official_url": "https://arxiv.org/abs/2609.29204v1",
+  "official_fulltext_url": "https://arxiv.org/pdf/2609.29204v1",
+  "official_html_url": "https://arxiv.org/html/2609.29204v1",
+  "original_pdf_url": "https://arxiv.org/pdf/2609.29204v1",
+  "read_version": "v1",
+  "version_date": "2026-09-24",
+  "version_status": "official_arxiv_v1_verified",
+  "reading_depth": "full_text",
+  "teaching_status": "full_text_technical_reading",
+  "content_kind": "reading",
+  "reading_path": "reading.md",
+  "reading_boundary": "通读 arXiv v1 全文9页、方法与全部实验讨论，核对表I–II，并查看图2、图3–4、图5页面图像。该版本无单独附录。补读作者仓库README，未审计实现源码或运行代码；相关论文仅核对比较所需方法章节。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "authors": [
+    "Junyi Tang",
+    "Jie Peng",
+    "Zezhen Ding",
+    "Yuan Shen",
+    "Tianlong Chen"
+  ],
+  "year": 2026,
+  "topic_paths": [
+    "robotics/embodied-agents",
+    "cross-domain/agents"
+  ],
+  "license": {
+    "status": "license_identified",
+    "license_id": "CC-BY-4.0",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "checked_at": "2026-11-06",
+    "note": "arXiv v1官方页面标示CC BY 4.0。知识库仅放原创精读与官方链接，不随交付镜像PDF、原文提取文本或论文图像。"
+  },
+  "fulltext_local_status": "official_link_only_in_deliverable",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-11-06",
+  "original_checked_at": "2026-11-06",
+  "duplicate_check": {
+    "query": "AdaHVLA OR 2609.29204",
+    "result": "no_existing_entry_or_reading_found_in_repository"
+  },
+  "code_repository": {
+    "url": "https://github.com/Haaareally/AdaHVLA-Adaptive_Harness_VLA",
+    "checked_commit": "7a9cf102ce381c1f889b4cc00383be6d28a5fe88",
+    "checked_paths": [
+      "README.md"
+    ],
+    "scope": "官方README称发布Go2仿真导航示例；未验证完整操作与真机复现。",
+    "license_id": "Apache-2.0"
+  },
+  "verification_sources": [
+    "https://arxiv.org/abs/2609.29204v1",
+    "https://arxiv.org/pdf/2609.29204v1",
+    "https://arxiv.org/html/2609.29204v1",
+    "https://github.com/Haaareally/AdaHVLA-Adaptive_Harness_VLA/blob/7a9cf102ce381c1f889b4cc00383be6d28a5fe88/README.md"
+  ],
+  "key_evidence": [
+    {
+      "claim": "适配分析、源码修改与行为评估分离；按触发与预先分歧设置归因门。",
+      "location": "Section III-D, Equation 3, Figure 2"
+    },
+    {
+      "claim": "修订图保留代码、假设、运行证据及评估关系，跨任务保留代码与适配记忆；运行状态重置。",
+      "location": "Section III-E"
+    },
+    {
+      "claim": "导航22.5%到57.5%是初始与sol Max适配harness的测试均值；40实例×3轮共120次测试，提升35个百分点。",
+      "location": "Section IV-B/C, Table I"
+    },
+    {
+      "claim": "操作最多提升30.8个百分点对应π0.5的L1条件25.0%到55.8%；并非三种backbone平均增益。",
+      "location": "Section IV-D, Table II"
+    },
+    {
+      "claim": "同配置适配重启三次，每次至多16候选含初始；表中30次适配评估并非总探索rollout预算。",
+      "location": "Section IV-B"
+    },
+    {
+      "claim": "图消融仍保留版本与回退；SR Select仅限制候选选择所用信息；执行消融不重新适配。",
+      "location": "Section V-B, Figure 4"
+    }
+  ],
+  "related_sources_checked": [
+    {
+      "resource_id": "arxiv:2502.19417",
+      "url": "https://arxiv.org/html/2502.19417v1#S4",
+      "scope": "高层VLM与低层VLA的语言指令接口"
+    },
+    {
+      "resource_id": "arxiv:2609.37810",
+      "url": "https://arxiv.org/html/2609.37810v1#S3.SS4",
+      "scope": "技能包的文本、实际执行代码与支持记录；同时核对本库既有两篇精读避免重复"
+    }
+  ],
+  "caveats": [
+    "未复现实验或审计适配代码。",
+    "论文未披露完整适配搜索的总rollout、模型token调用、墙钟时间和费用。",
+    "三轮重复使用相同任务划分；未确认跨场景严格隔离。",
+    "真机提供轨迹案例，没有总体成功率的量化对照。",
+    "官方示例配置的预算默认值不等同于论文实验预算。"
+  ],
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "modality_tags": [
+    "image",
+    "text",
+    "action",
+    "multimodal"
+  ],
+  "task_tags": [
+    "decision"
+  ]
+}

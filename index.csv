@@ -207,3 +207,9 @@ Structuring Sparsity 精读,multimodal/papers/arxiv-2606.25234/reading.md
 SplaTAM 精读,robotics-embodied/papers/arxiv-2312.02126/reading.md
 Gaussian Splatting SLAM 精读,robotics-embodied/papers/arxiv-2312.06741/reading.md
 ORB-SLAM3 与 VINS-Mono 对照,robotics-embodied/fields/localization-mapping/orb-slam3-vins-mono.md
+ConceptGraphs: Open-Vocabulary 3D Scene Graphs for Perception and Planning 精读,robotics-embodied/papers/arxiv-2309.16650/reading.md
+Hierarchical Open-Vocabulary 3D Scene Graphs for Language-Grounded Robot Navigation 精读,robotics-embodied/papers/arxiv-2403.17846/reading.md
+3D-Mem: 3D Scene Memory for Embodied Exploration and Reasoning 精读,robotics-embodied/papers/arxiv-2411.17735/reading.md
+Don't Drop the BATON: Long-Horizon Robot Manipulation via Agentic Subtask Exploration and Transition-aware Memory 精读,robotics-embodied/papers/arxiv-2608.16889/reading.md
+AdaHVLA: Adaptive Harnesses for Long-Horizon Vision-Language-Action Execution 精读,robotics-embodied/papers/arxiv-2609.29204/reading.md
+RoboSkill 实验与迁移补充精读,robotics-embodied/papers/roboskill/reading-evidence.md

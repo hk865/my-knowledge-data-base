@@ -614,7 +614,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 ## 机器人与具身系统
 
-### 感知与传感融合（33）
+### 感知与传感融合（34）
 
 细分：视觉 深度 LiDAR；惯性与多传感器融合；传统 学习与混合方法
 
@@ -651,8 +651,9 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Fast-FoundationStereo: Real-Time Zero-Shot Stereo Matching](paper-catalog.md#p577)
 - [Lite Any Stereo V2: Faster and Stronger Efficient Zero-Shot Stereo Matching](paper-catalog.md#p579)
 - [Foundation4D: Towards a unified perception and reconstruction model for autonomous vehicles](paper-catalog.md#p645)
+- [ConceptGraphs: Open-Vocabulary 3D Scene Graphs for Perception and Planning](paper-catalog.md#p654)
 
-### 定位与建图（65）
+### 定位与建图（68）
 
 细分：里程计与状态估计；SLAM 与地图
 
@@ -721,8 +722,11 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [DashGaussian: Optimizing 3D Gaussian Splatting in 200 Seconds](paper-catalog.md#p651)
 - [3DGS-LM: Faster Gaussian-Splatting Optimization with Levenberg-Marquardt](paper-catalog.md#p652)
 - [Speedy-Splat: Fast 3D Gaussian Splatting with Sparse Pixels and Sparse Primitives](paper-catalog.md#p653)
+- [ConceptGraphs: Open-Vocabulary 3D Scene Graphs for Perception and Planning](paper-catalog.md#p654)
+- [Hierarchical Open-Vocabulary 3D Scene Graphs for Language-Grounded Robot Navigation](paper-catalog.md#p655)
+- [3D-Mem: 3D Scene Memory for Embodied Exploration and Reasoning](paper-catalog.md#p656)
 
-### 导航与规划（24）
+### 导航与规划（25）
 
 细分：几何与运动规划；视觉语言导航；VLA 与 VLN 的任务边界
 
@@ -750,6 +754,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [SimEX: Simulation-Integrated Robotics AutoResearch](paper-catalog.md#p608)
 - [Generalizing Manipulation Skills with a Local Coding Agent](paper-catalog.md#p610)
 - [Bridging Semantics and Physics with Constrained LLMs for Safe and Trustworthy Robotic Manipulation](paper-catalog.md#p611)
+- [Hierarchical Open-Vocabulary 3D Scene Graphs for Language-Grounded Robot Navigation](paper-catalog.md#p655)
 
 
 ### 运动控制（62）
@@ -906,7 +911,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [ENPIRE: Agentic Robot Policy Self-Improvement in the Real World](paper-catalog.md#p609)
 - [Chronos Policy: Learning Robot Policies on Physical Time](paper-catalog.md#p638)
 
-### 具身 Agents 与闭环系统（44）
+### 具身 Agents 与闭环系统（47）
 
 细分：任务理解与技能选择；行动记忆与空间记忆；规划—执行—反馈；技能获取与复用；VLA策略编排与部署
 
@@ -954,10 +959,13 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [OpenRUA: Robot-Use Agents Are Zero-Shot Visuomotor Policies](paper-catalog.md#p637)
 - [Scaling Online Exploration for Robot Agents](paper-catalog.md#p639)
 - [AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics](paper-catalog.md#p640)
+- [ConceptGraphs: Open-Vocabulary 3D Scene Graphs for Perception and Planning](paper-catalog.md#p654)
+- [Don't Drop the BATON: Long-Horizon Robot Manipulation via Agentic Subtask Exploration and Transition-aware Memory](paper-catalog.md#p657)
+- [AdaHVLA: Adaptive Harnesses for Long-Horizon Vision-Language-Action Execution](paper-catalog.md#p658)
 
 ## 跨方向方法与探索
 
-### Agent 与上下文系统（73）
+### Agent 与上下文系统（75）
 
 细分：Agent轨迹与性质验证
 
@@ -1034,6 +1042,8 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [MemoryLake on MemoryArena: A Matched Study of Agent Memory Backends](paper-catalog.md#p592)
 - [DreamBench-SWE: A Multi-Session Memory-Hygiene Benchmark for Software Agents](paper-catalog.md#p593)
 - [A Programming Paradigm for Spatiotemporal Composability](paper-catalog.md#p594)
+- [Don't Drop the BATON: Long-Horizon Robot Manipulation via Agentic Subtask Exploration and Transition-aware Memory](paper-catalog.md#p657)
+- [AdaHVLA: Adaptive Harnesses for Long-Horizon Vision-Language-Action Execution](paper-catalog.md#p658)
 
 
 ### 模型科学（22）
@@ -1215,19 +1225,19 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 | 模态 \ 任务 | understanding | generation | decision | evaluation | analysis |
 |---|---:|---:|---:|---:|---:|
-| text | [65](#x-text-understanding) | [169](#x-text-generation) | [143](#x-text-decision) | [106](#x-text-evaluation) | [84](#x-text-analysis) |
-| image | [146](#x-image-understanding) | [66](#x-image-generation) | [139](#x-image-decision) | [49](#x-image-evaluation) | [17](#x-image-analysis) |
+| text | [68](#x-text-understanding) | [169](#x-text-generation) | [148](#x-text-decision) | [107](#x-text-evaluation) | [84](#x-text-analysis) |
+| image | [149](#x-image-understanding) | [66](#x-image-generation) | [144](#x-image-decision) | [50](#x-image-evaluation) | [17](#x-image-analysis) |
 | video | [39](#x-video-understanding) | [45](#x-video-generation) | [36](#x-video-decision) | [15](#x-video-evaluation) | [6](#x-video-analysis) |
 | audio | [9](#x-audio-understanding) | [7](#x-audio-generation) | [2](#x-audio-decision) | [1](#x-audio-evaluation) | · |
-| action | [9](#x-action-understanding) | [37](#x-action-generation) | [180](#x-action-decision) | [42](#x-action-evaluation) | [3](#x-action-analysis) |
+| action | [9](#x-action-understanding) | [37](#x-action-generation) | [182](#x-action-decision) | [42](#x-action-evaluation) | [3](#x-action-analysis) |
 | state | [37](#x-state-understanding) | [3](#x-state-generation) | [95](#x-state-decision) | [21](#x-state-evaluation) | · |
 | code | [1](#x-code-understanding) | [27](#x-code-generation) | [48](#x-code-decision) | [38](#x-code-evaluation) | [31](#x-code-analysis) |
-| multimodal | [54](#x-multimodal-understanding) | [45](#x-multimodal-generation) | [65](#x-multimodal-decision) | [38](#x-multimodal-evaluation) | [9](#x-multimodal-analysis) |
+| multimodal | [57](#x-multimodal-understanding) | [45](#x-multimodal-generation) | [70](#x-multimodal-decision) | [39](#x-multimodal-evaluation) | [9](#x-multimodal-analysis) |
 | tabular | [1](#x-tabular-understanding) | · | · | · | · |
 
 <a id="x-text-understanding"></a>
 
-### text × understanding（65）
+### text × understanding（68）
 
 - [MiniLM: Deep Self-Attention Distillation for Task-Agnostic Compression of Pre-Trained Transformers](paper-catalog.md#p020)
 - [DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter](paper-catalog.md#p021)
@@ -1294,6 +1304,9 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Cosmos 3: Omnimodal World Models for Physical AI](paper-catalog.md#p574)
 - [InternVideo3: Agentify Foundation Models with Multimodal Contextual Reasoning](paper-catalog.md#p575)
 - [Qwen3.8-Omni: Towards Native Omni-Modal Agents](paper-catalog.md#p576)
+- [ConceptGraphs: Open-Vocabulary 3D Scene Graphs for Perception and Planning](paper-catalog.md#p654)
+- [Hierarchical Open-Vocabulary 3D Scene Graphs for Language-Grounded Robot Navigation](paper-catalog.md#p655)
+- [3D-Mem: 3D Scene Memory for Embodied Exploration and Reasoning](paper-catalog.md#p656)
 
 <a id="x-text-generation"></a>
 
@@ -1471,7 +1484,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-text-decision"></a>
 
-### text × decision（143）
+### text × decision（148）
 
 - [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](paper-catalog.md#p034)
 - [ReAct: Synergizing Reasoning and Acting in Language Models](paper-catalog.md#p040)
@@ -1616,10 +1629,15 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [OpenRUA: Robot-Use Agents Are Zero-Shot Visuomotor Policies](paper-catalog.md#p637)
 - [Scaling Online Exploration for Robot Agents](paper-catalog.md#p639)
 - [AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics](paper-catalog.md#p640)
+- [ConceptGraphs: Open-Vocabulary 3D Scene Graphs for Perception and Planning](paper-catalog.md#p654)
+- [Hierarchical Open-Vocabulary 3D Scene Graphs for Language-Grounded Robot Navigation](paper-catalog.md#p655)
+- [3D-Mem: 3D Scene Memory for Embodied Exploration and Reasoning](paper-catalog.md#p656)
+- [Don't Drop the BATON: Long-Horizon Robot Manipulation via Agentic Subtask Exploration and Transition-aware Memory](paper-catalog.md#p657)
+- [AdaHVLA: Adaptive Harnesses for Long-Horizon Vision-Language-Action Execution](paper-catalog.md#p658)
 
 <a id="x-text-evaluation"></a>
 
-### text × evaluation（106）
+### text × evaluation（107）
 
 - [PersonaEval: Are LLM Evaluators Human Enough to Judge Role-Play?](paper-catalog.md#p032)
 - [On scalable oversight with weak LLMs judging strong LLMs](paper-catalog.md#p033)
@@ -1727,6 +1745,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [OpenRUA: Robot-Use Agents Are Zero-Shot Visuomotor Policies](paper-catalog.md#p637)
 - [Scaling Online Exploration for Robot Agents](paper-catalog.md#p639)
 - [AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics](paper-catalog.md#p640)
+- [3D-Mem: 3D Scene Memory for Embodied Exploration and Reasoning](paper-catalog.md#p656)
 
 <a id="x-text-analysis"></a>
 
@@ -1819,7 +1838,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-image-understanding"></a>
 
-### image × understanding（146）
+### image × understanding（149）
 
 - [A High-Fidelity Digital Twin for Robotic Manipulation Based on 3D Gaussian Splatting](paper-catalog.md#p054)
 - [Language-Grounded Hierarchical Planning and Execution with Multi-Robot 3D Scene Graphs](paper-catalog.md#p055)
@@ -1967,6 +1986,9 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Gaussian-LIC: Real-Time Photo-Realistic SLAM with Gaussian Splatting and LiDAR-Inertial-Camera Fusion](paper-catalog.md#p646)
 - [Gaussian-LIC2: LiDAR-Inertial-Camera Gaussian Splatting SLAM](paper-catalog.md#p647)
 - [AI-IO: An Aerodynamics-Inspired Real-Time Inertial Odometry for Quadrotors](paper-catalog.md#p648)
+- [ConceptGraphs: Open-Vocabulary 3D Scene Graphs for Perception and Planning](paper-catalog.md#p654)
+- [Hierarchical Open-Vocabulary 3D Scene Graphs for Language-Grounded Robot Navigation](paper-catalog.md#p655)
+- [3D-Mem: 3D Scene Memory for Embodied Exploration and Reasoning](paper-catalog.md#p656)
 
 <a id="x-image-generation"></a>
 
@@ -2041,7 +2063,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-image-decision"></a>
 
-### image × decision（139）
+### image × decision（144）
 
 - [DINO-WM: World Models on Pre-trained Visual Features enable Zero-shot Planning](paper-catalog.md#p046)
 - [FOCUS: Object-Centric World Models for Robotics Manipulation](paper-catalog.md#p048)
@@ -2182,10 +2204,15 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Chronos Policy: Learning Robot Policies on Physical Time](paper-catalog.md#p638)
 - [Scaling Online Exploration for Robot Agents](paper-catalog.md#p639)
 - [AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics](paper-catalog.md#p640)
+- [ConceptGraphs: Open-Vocabulary 3D Scene Graphs for Perception and Planning](paper-catalog.md#p654)
+- [Hierarchical Open-Vocabulary 3D Scene Graphs for Language-Grounded Robot Navigation](paper-catalog.md#p655)
+- [3D-Mem: 3D Scene Memory for Embodied Exploration and Reasoning](paper-catalog.md#p656)
+- [Don't Drop the BATON: Long-Horizon Robot Manipulation via Agentic Subtask Exploration and Transition-aware Memory](paper-catalog.md#p657)
+- [AdaHVLA: Adaptive Harnesses for Long-Horizon Vision-Language-Action Execution](paper-catalog.md#p658)
 
 <a id="x-image-evaluation"></a>
 
-### image × evaluation（49）
+### image × evaluation（50）
 
 - [LARY: A Latent Action Representation Yielding Benchmark for Generalizable Vision-to-Action Alignment](paper-catalog.md#p060)
 - [Vision-and-Language Navigation: Interpreting visually-grounded navigation instructions in real environments](paper-catalog.md#p119)
@@ -2236,6 +2263,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [OpenRUA: Robot-Use Agents Are Zero-Shot Visuomotor Policies](paper-catalog.md#p637)
 - [Scaling Online Exploration for Robot Agents](paper-catalog.md#p639)
 - [AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics](paper-catalog.md#p640)
+- [3D-Mem: 3D Scene Memory for Embodied Exploration and Reasoning](paper-catalog.md#p656)
 
 <a id="x-image-analysis"></a>
 
@@ -2522,7 +2550,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-action-decision"></a>
 
-### action × decision（180）
+### action × decision（182）
 
 - [OccWorld: Learning a 3D Occupancy World Model for Autonomous Driving](paper-catalog.md#p044)
 - [Driving in the Occupancy World: Vision-Centric 4D Occupancy Forecasting and Planning via World Models for Autonomous Driving](paper-catalog.md#p045)
@@ -2704,6 +2732,8 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Chronos Policy: Learning Robot Policies on Physical Time](paper-catalog.md#p638)
 - [Scaling Online Exploration for Robot Agents](paper-catalog.md#p639)
 - [AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics](paper-catalog.md#p640)
+- [Don't Drop the BATON: Long-Horizon Robot Manipulation via Agentic Subtask Exploration and Transition-aware Memory](paper-catalog.md#p657)
+- [AdaHVLA: Adaptive Harnesses for Long-Horizon Vision-Language-Action Execution](paper-catalog.md#p658)
 
 <a id="x-action-evaluation"></a>
 
@@ -3108,7 +3138,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-multimodal-understanding"></a>
 
-### multimodal × understanding（54）
+### multimodal × understanding（57）
 
 - [Language-Grounded Hierarchical Planning and Execution with Multi-Robot 3D Scene Graphs](paper-catalog.md#p055)
 - [InternVLA-A1: Unifying Understanding, Generation and Action for Robotic Manipulation](paper-catalog.md#p090)
@@ -3164,6 +3194,9 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [C-RADIOv4 (Tech Report)](paper-catalog.md#p478)
 - [AM-RADIO: Agglomerative Vision Foundation Model -- Reduce All Domains Into One](paper-catalog.md#p479)
 - [RADIO1D: Elastic Representations for Condensed Vision Modeling](paper-catalog.md#p480)
+- [ConceptGraphs: Open-Vocabulary 3D Scene Graphs for Perception and Planning](paper-catalog.md#p654)
+- [Hierarchical Open-Vocabulary 3D Scene Graphs for Language-Grounded Robot Navigation](paper-catalog.md#p655)
+- [3D-Mem: 3D Scene Memory for Embodied Exploration and Reasoning](paper-catalog.md#p656)
 
 <a id="x-multimodal-generation"></a>
 
@@ -3217,7 +3250,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-multimodal-decision"></a>
 
-### multimodal × decision（65）
+### multimodal × decision（70）
 
 - [Object-Centric World Model for Language-Guided Manipulation](paper-catalog.md#p052)
 - [Language-Grounded Hierarchical Planning and Execution with Multi-Robot 3D Scene Graphs](paper-catalog.md#p055)
@@ -3284,10 +3317,15 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Generalizing Manipulation Skills with a Local Coding Agent](paper-catalog.md#p610)
 - [Bridging Semantics and Physics with Constrained LLMs for Safe and Trustworthy Robotic Manipulation](paper-catalog.md#p611)
 - [TARC: Time-Adaptive Robotic Control](paper-catalog.md#p629)
+- [ConceptGraphs: Open-Vocabulary 3D Scene Graphs for Perception and Planning](paper-catalog.md#p654)
+- [Hierarchical Open-Vocabulary 3D Scene Graphs for Language-Grounded Robot Navigation](paper-catalog.md#p655)
+- [3D-Mem: 3D Scene Memory for Embodied Exploration and Reasoning](paper-catalog.md#p656)
+- [Don't Drop the BATON: Long-Horizon Robot Manipulation via Agentic Subtask Exploration and Transition-aware Memory](paper-catalog.md#p657)
+- [AdaHVLA: Adaptive Harnesses for Long-Horizon Vision-Language-Action Execution](paper-catalog.md#p658)
 
 <a id="x-multimodal-evaluation"></a>
 
-### multimodal × evaluation（38）
+### multimodal × evaluation（39）
 
 - [On scalable oversight with weak LLMs judging strong LLMs](paper-catalog.md#p033)
 - [Vision-and-Language Navigation: Interpreting visually-grounded navigation instructions in real environments](paper-catalog.md#p119)
@@ -3327,6 +3365,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [ENPIRE: Agentic Robot Policy Self-Improvement in the Real World](paper-catalog.md#p609)
 - [Generalizing Manipulation Skills with a Local Coding Agent](paper-catalog.md#p610)
 - [Bridging Semantics and Physics with Constrained LLMs for Safe and Trustworthy Robotic Manipulation](paper-catalog.md#p611)
+- [3D-Mem: 3D Scene Memory for Embodied Exploration and Reasoning](paper-catalog.md#p656)
 
 <a id="x-multimodal-analysis"></a>
 

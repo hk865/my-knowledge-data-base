@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2309.16650",
+  "title": "ConceptGraphs: Open-Vocabulary 3D Scene Graphs for Perception and Planning",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2309.16650",
+  "official_url": "https://arxiv.org/abs/2309.16650",
+  "official_fulltext_url": "https://arxiv.org/pdf/2309.16650v1",
+  "read_version": "v1",
+  "version_status": "arxiv_v1_only_version_listed_checked_on_2026_11_06",
+  "first_submitted": "2023-09-28",
+  "version_date": "2023-09-28",
+  "year": 2024,
+  "authors": [
+    "Qiao Gu",
+    "Alihusein Kuwajerwala",
+    "Sacha Morin",
+    "Krishna Murthy Jatavallabhula",
+    "Bipasha Sen",
+    "Aditya Agarwal",
+    "Corban Rivera",
+    "William Paul",
+    "Kirsty Ellis",
+    "Rama Chellappa",
+    "Chuang Gan",
+    "Celso Miguel de Melo",
+    "Joshua B. Tenenbaum",
+    "Antonio Torralba",
+    "Florian Shkurti",
+    "Liam Paull"
+  ],
+  "author_name_note": "Alihusein Kuwajerwala is the name in current arXiv metadata and project author list; the PDF and BibTeX also use Ali Kuwajerwala.",
+  "publication_status": {
+    "venue": "ICRA 2024",
+    "pages": "5021-5028",
+    "basis": "Official project labels ICRA 2024 and supplies proceedings BibTeX.",
+    "final_publisher_version_checked": false
+  },
+  "topic_paths": [
+    "robotics/localization-mapping",
+    "robotics/perception",
+    "robotics/embodied-agents"
+  ],
+  "modality_tags": [
+    "image",
+    "text",
+    "multimodal"
+  ],
+  "task_tags": [
+    "understanding",
+    "decision"
+  ],
+  "content_kind": "reading",
+  "reading_depth": "full_main_text_appendices_and_targeted_official_code",
+  "reading_path": "reading.md",
+  "reading_boundary": "阅读arXiv v1全部正文§I–V、附录A1–A6和参考文献列表；对照项目PDF，视觉复核方法图Fig.2和Table I–III；抽查官方main固定提交93277a02bd89171f8121e84203121cf7af9ebb5d的对象关联、特征融合、周期后处理、候选边与关系提示。未逐篇核读所有参考文献，未审计独立Jackal仓库或ali-dev重构，未运行模型、API及机器人实验。",
+  "teaching_status": "technical_reading_with_geometry_association_example_evidence_and_update_boundaries",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "license_identified",
+    "license_urls": [
+      "https://arxiv.org/licenses/nonexclusive-distrib/1.0/"
+    ],
+    "checked_at": "2026-11-06",
+    "note": "arXiv v1为non-exclusive distribution license；网页模板CC BY-SA不视为论文再分发许可。本库仅发布原创解读与官方链接，不镜像PDF。"
+  },
+  "code_license": {
+    "spdx_id": "MIT",
+    "license_url": "https://github.com/concept-graphs/concept-graphs/blob/93277a02bd89171f8121e84203121cf7af9ebb5d/LICENSE",
+    "checked_at": "2026-11-06"
+  },
+  "fulltext_local_status": "read_locally_official_fulltext_not_for_public_mirror",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-11-06",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "source_origin": "recent_scene_representation_discussion_then_independent_fulltext_and_code_review",
+  "verification_status": "official_identity_main_text_appendices_and_targeted_code_checked_not_reproduced",
+  "verification_sources": [
+    "https://arxiv.org/abs/2309.16650",
+    "https://arxiv.org/pdf/2309.16650v1",
+    "https://concept-graphs.github.io/",
+    "https://concept-graphs.github.io/assets/pdf/2023-ConceptGraphs.pdf",
+    "https://github.com/concept-graphs/concept-graphs/tree/93277a02bd89171f8121e84203121cf7af9ebb5d"
+  ],
+  "project_url": "https://concept-graphs.github.io/",
+  "code_url": "https://github.com/concept-graphs/concept-graphs",
+  "code_commit": "93277a02bd89171f8121e84203121cf7af9ebb5d",
+  "research_role": "object_centric_open_vocabulary_3d_map_and_language_query_baseline",
+  "training_boundary": "三维建图与查询复用预训练SAM/CLIP/LLaVA/GPT-4，不为本方法训练新三维模型；不表示基础模型无训练或推理无成本。",
+  "chat_evidence": [
+    {
+      "role": "assistant",
+      "date": "2026-11-01",
+      "association": "在三维语义地图如何转为对象与关系表示的讨论中作为相关方法引用；不表示用户已阅读或认可论文结论。"
+    }
+  ],
+  "implementation_caveats": [
+    "原文对象几何/特征增量融合，caption在序列处理后生成，关系边另行推断；不能笼统等同完整高频动态语义更新。",
+    "主分支关系提示限定四种on/in方向关系与none；任意关系扩展不是默认已实现能力。",
+    "原文关联分数与当前代码分数缩放/配置不同；阈值需配套核验。",
+    "附录A5明确真机导航只用对象集合O_T；Table III主要比较对象特征检索与对象caption语言推理，没有分离关系边的因果收益。",
+    "真实导航和操作是演示，检索R@k与节点/边精确率不可当作机器人任务成功率。"
+  ]
+}

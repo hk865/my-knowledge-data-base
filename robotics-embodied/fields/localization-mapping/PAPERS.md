@@ -73,6 +73,10 @@
 - [FM-Fusion: Instance-aware Semantic Mapping Boosted by Vision-Language Foundation Models](../../papers/arxiv-2402.04555/README.md) · 2024 · 文献卡
 - [FM-Fusion 代码仓库](../../papers/url-https-github.com-hkust-aerial-robotics-fm-fusion/README.md) · 代码仓库卡，不计为论文
 
+- [ConceptGraphs: Open-Vocabulary 3D Scene Graphs for Perception and Planning](../../papers/arxiv-2309.16650/README.md) · 技术精读
+- [Hierarchical Open-Vocabulary 3D Scene Graphs for Language-Grounded Robot Navigation](../../papers/arxiv-2403.17846/README.md) · 技术精读
+- [3D-Mem: 3D Scene Memory for Embodied Exploration and Reasoning](../../papers/arxiv-2411.17735/README.md) · 技术精读
+
 ## 动态多传感器可靠性与离线训练
 
 - [FAST-LIVO2: Fast, Direct LiDAR-Inertial-Visual Odometry](../../papers/arxiv-2408.14035/README.md) · 2024 · 文献卡

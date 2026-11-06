@@ -1,6 +1,6 @@
 # 全库论文总目录
 
-共 653 个去重资源（579 篇论文、33 篇官方技术报告、5 个代码仓库、15 篇官方博客、17 份官方技术文档、4 篇作者文章）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
+共 658 个去重资源（584 篇论文、33 篇官方技术报告、5 个代码仓库、15 篇官方博客、17 份官方技术文档、4 篇作者文章）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
 
 身份核验、助手教学进度和用户阅读状态分开。历史来源保留原角色与证据局限，不将助手推荐写成用户提供，也不将教学完成写成用户已读。
 
@@ -6896,6 +6896,56 @@
 - 身份核验：not_recorded
 - 用户阅读状态：unknown
 - [独立讲解](../robotics-embodied/papers/arxiv-2412.00578/reading.md)
+
+<a id="p654"></a>
+## p654 · ConceptGraphs: Open-Vocabulary 3D Scene Graphs for Perception and Planning
+
+- 标识：arxiv:2309.16650
+- 原文 / 官方入口：https://arxiv.org/abs/2309.16650
+- 主题：robotics/localization-mapping, robotics/perception, robotics/embodied-agents
+- 身份核验：official_identity_main_text_appendices_and_targeted_code_checked_not_reproduced
+- 用户阅读状态：unknown
+- [独立讲解](../robotics-embodied/papers/arxiv-2309.16650/reading.md)
+
+<a id="p655"></a>
+## p655 · Hierarchical Open-Vocabulary 3D Scene Graphs for Language-Grounded Robot Navigation
+
+- 标识：arxiv:2403.17846
+- 原文 / 官方入口：https://www.roboticsproceedings.org/rss20/p077.html
+- 主题：robotics/localization-mapping, robotics/navigation-planning
+- 身份核验：official_identity_published_main_text_relevant_supplementary_and_selected_official_code_checked_not_reproduced
+- 用户阅读状态：unknown
+- [独立讲解](../robotics-embodied/papers/arxiv-2403.17846/reading.md)
+
+<a id="p656"></a>
+## p656 · 3D-Mem: 3D Scene Memory for Embodied Exploration and Reasoning
+
+- 标识：arxiv:2411.17735
+- 原文 / 官方入口：https://arxiv.org/abs/2411.17735
+- 主题：robotics/localization-mapping
+- 身份核验：official_identity_fulltext_core_mechanisms_and_protocols_verified
+- 用户阅读状态：unknown
+- [独立讲解](../robotics-embodied/papers/arxiv-2411.17735/reading.md)
+
+<a id="p657"></a>
+## p657 · Don't Drop the BATON: Long-Horizon Robot Manipulation via Agentic Subtask Exploration and Transition-aware Memory
+
+- 标识：arxiv:2608.16889
+- 原文 / 官方入口：https://arxiv.org/abs/2608.16889v3
+- 主题：robotics/embodied-agents, cross-domain/agents
+- 身份核验：not_recorded
+- 用户阅读状态：unknown
+- [独立讲解](../robotics-embodied/papers/arxiv-2608.16889/reading.md)
+
+<a id="p658"></a>
+## p658 · AdaHVLA: Adaptive Harnesses for Long-Horizon Vision-Language-Action Execution
+
+- 标识：arxiv:2609.29204
+- 原文 / 官方入口：https://arxiv.org/abs/2609.29204v1
+- 主题：robotics/embodied-agents, cross-domain/agents
+- 身份核验：not_recorded
+- 用户阅读状态：unknown
+- [独立讲解](../robotics-embodied/papers/arxiv-2609.29204/reading.md)
 
 ## 2026年10月3日既有条目更新
 

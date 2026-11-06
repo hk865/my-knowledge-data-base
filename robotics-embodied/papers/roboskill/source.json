@@ -45,7 +45,8 @@
   ],
   "year": 2026,
   "supplementary_readings": [
-    "robotics-embodied/papers/roboskill/reading-2026-10-30.md"
+    "robotics-embodied/papers/roboskill/reading-2026-10-30.md",
+    "robotics-embodied/papers/roboskill/reading-evidence.md"
   ],
   "reading_pack_2026_10_30": {
     "read_version": "v1",
@@ -54,5 +55,27 @@
     "original_checked_at": "2026-10-30",
     "local_pdf_retained": true,
     "public_pdf_mirror": false
+  },
+  "verification_2026_11_06": {
+    "read_version": "v1",
+    "version_date": "2026-09-29",
+    "reading_scope": "全文正文与补充§1–9、Tables1–16，重点全量核对代码/触觉消融、seed协议、同任务/异任务/跨agent迁移、技能选择与迭代结果。",
+    "verification_sources": [
+      "https://arxiv.org/abs/2609.37810v1",
+      "https://arxiv.org/pdf/2609.37810v1",
+      "https://arxiv.org/html/2609.37810v1"
+    ],
+    "independently_reproduced": false,
+    "scope_boundary": "只补原有两页欠缺的实验归因与迁移成本，不重建同一论文目录、不覆盖机制教学。",
+    "new_artifact": "reading-evidence.md",
+    "new_artifact_destination": "robotics-embodied/papers/roboskill/reading-evidence.md",
+    "preserve_existing_reading": true,
+    "new_findings": [
+      "仿真去触觉条件同时移除全部力信号和夹爪状态，不能隔离纯触觉收益。",
+      "Table15所有Agent选择均将同任务技能列第一，检索主要是在同任务技能上添加补充。",
+      "主比较40 cells排除seed0；跨Agent50 cells含seed0；更新实验另用100–104。",
+      "代码消融并非所有Agent首回合成功率都提高；真实RemoveStringFromNeedle由7/10降至5/10。",
+      "未报告充分构建技能成本的摊销曲线；新页成本公式为明确标注的工程推导。"
+    ]
   }
 }
