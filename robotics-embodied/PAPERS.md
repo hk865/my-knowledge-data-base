@@ -307,3 +307,6 @@
 - [Scan Context: Egocentric Spatial Descriptor for Place Recognition Within 3D Point Cloud Map](papers/scan-context/README.md) · 2018 · 技术精读
 - [TIC-VLA: A Think-in-Control Vision-Language-Action Model for Robot Navigation in Dynamic Environments](papers/arxiv-2602.02459/README.md) · 2026 · 技术精读
 - [NavVerse: Benchmarking Indoor-to-Outdoor Embodied Navigation in Continuous Robot Simulation](papers/arxiv-2607.19695/README.md) · 2026 · 技术精读
+- [Graph-of-Mark: Promote Spatial Reasoning in Multimodal Language Models with Graph-Based Visual Prompting](papers/arxiv-2603.06663/README.md) · 2026 · 技术精读
+- [SceneScript: Reconstructing Scenes With An Autoregressive Structured Language Model](papers/arxiv-2403.13064/README.md) · 2024 · 技术精读
+- [Structured Interfaces for Automated Reasoning with 3D Scene Graphs](papers/arxiv-2510.16643/README.md) · 2026 · 技术精读

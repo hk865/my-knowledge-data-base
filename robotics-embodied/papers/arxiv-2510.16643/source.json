@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "resource_kind": "paper",
+  "content_kind": "reading",
+  "reading_path": "reading.md",
+  "reading_depth": "fulltext",
+  "teaching_status": "fulltext_technical_reading",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "original_checked_at": "2026-11-06",
+  "source_record_updated": "2026-11-06",
+  "fulltext_local_status": "official_link_only_no_public_mirror",
+  "fulltext_local_path": null,
+  "local_reading_cache_retained": true,
+  "public_pdf_mirror": false,
+  "evidence_paths": [],
+  "resource_id": "arxiv:2510.16643",
+  "title": "Structured Interfaces for Automated Reasoning with 3D Scene Graphs",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2510.16643",
+  "official_url": "https://arxiv.org/abs/2510.16643v1",
+  "official_fulltext_url": "https://robustrobotics.github.io/papers/ray_icra26.pdf",
+  "arxiv_fulltext_url": "https://arxiv.org/pdf/2510.16643v1",
+  "official_html_url": "https://arxiv.org/html/2510.16643v1",
+  "read_version": "ICRA 2026 author-posted paper with appendices; arXiv v1 cross-check",
+  "version_status": "author_posted_conference_version_read",
+  "arxiv_latest_verified": "v1",
+  "first_submitted": "2025-10-18",
+  "year": 2026,
+  "first_submission_year": 2025,
+  "venue": "ICRA 2026",
+  "publication_evidence": "https://robustrobotics.github.io/publications.html",
+  "publisher_final_pagination_verified": false,
+  "authors": [
+    "Aaron Ray",
+    "Jacob Arkin",
+    "Harel Biggie",
+    "Chuchu Fan",
+    "Luca Carlone",
+    "Nicholas Roy"
+  ],
+  "topic_paths": [
+    "robotics/embodied-agents",
+    "robotics/navigation-planning",
+    "cross-domain/agents"
+  ],
+  "reading_boundary": "阅读全文作者实验室ICRA2026条目链接的25页PDF，正文§I–VII、表I–IV、附录A–E含SLDP比较语法、任务实例、完整Cypher提示和Python接口说明；另全文读arXiv v1并比对方法和主表。实验室发表列表确认ICRA2026；未核IEEE最终排版。核官方Heracles与Heracles Agents固定提交README；未运行数据库、代码或机器人实验。",
+  "official_code_url": "https://github.com/GoldenZephyr/heracles",
+  "official_agent_code_url": "https://github.com/GoldenZephyr/heracles_agents",
+  "code_commits": {
+    "heracles": "75be71bc0500e8e7d6ab54cbbbd45bb167250fe8",
+    "heracles_agents": "8c7017ee797c104ba5e275f4d37cec8b3b87afe8"
+  },
+  "code_status": "official_repositories_available_readmes_checked",
+  "license": {
+    "status": "arxiv_license_identified_publisher_terms_not_asserted",
+    "arxiv_license": "CC BY-SA 4.0",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by-sa/4.0/"
+    ],
+    "note": "仅交付独立中文讲解与官方链接，原论文PDF、截图及提取文本不进入交付目录。"
+  },
+  "related_readings": [
+    "robotics-embodied/papers/arxiv-2403.13064/reading.md",
+    "robotics-embodied/papers/arxiv-2603.06663/reading.md"
+  ],
+  "primary_sources": [
+    {
+      "url": "https://arxiv.org/abs/2510.16643v1",
+      "scope": "version history, authors and arXiv license"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2510.16643v1",
+      "scope": "full main paper and appendices A–E"
+    },
+    {
+      "url": "https://robustrobotics.github.io/publications.html",
+      "scope": "author lab lists ICRA2026 and links author paper"
+    },
+    {
+      "url": "https://robustrobotics.github.io/papers/ray_icra26.pdf",
+      "scope": "conference author version, complete methods, all tables and appendices"
+    },
+    {
+      "url": "https://github.com/GoldenZephyr/heracles/blob/75be71bc0500e8e7d6ab54cbbbd45bb167250fe8/README.md",
+      "scope": "database integration and query example implementation overview"
+    },
+    {
+      "url": "https://github.com/GoldenZephyr/heracles_agents/blob/8c7017ee797c104ba5e275f4d37cec8b3b87afe8/README.md",
+      "scope": "agent framework implementation overview"
+    }
+  ],
+  "audit_notes": [
+    "作者ICRA2026PDF与arXiv v1方法和表I–IV主要结果一致，正文无需继续标为纯预印本。",
+    "场景图已给定；实验不测感知建图质量。",
+    "唯一符号不等于跨会话持久实体身份；P与p分属不同空间层且大小写敏感。",
+    "大图全属性约1700万token与主表筛字段文字基线582202token口径不同。",
+    "表IV按I+T合计3991vs582202约146倍，仅为报告输入量之比，不是总费用或延迟比。",
+    "PDDL翻译正确可以没有可行计划，主表非真实机器人完成成功率。",
+    "只测一小一大两图；无同信息量图文格式消融、系统级动态身份或更新正确率实验。",
+    "附录SLDP展开出现Line，实际语法和提示定义List。"
+  ],
+  "modality_tags": [
+    "text",
+    "code"
+  ],
+  "task_tags": [
+    "understanding",
+    "decision"
+  ]
+}

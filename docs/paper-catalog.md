@@ -1,6 +1,6 @@
 # 全库论文总目录
 
-共 661 个去重资源（587 篇论文、33 篇官方技术报告、5 个代码仓库、15 篇官方博客、17 份官方技术文档、4 篇作者文章）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
+共 667 个去重资源（593 篇论文、33 篇官方技术报告、5 个代码仓库、15 篇官方博客、17 份官方技术文档、4 篇作者文章）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
 
 身份核验、助手教学进度和用户阅读状态分开。历史来源保留原角色与证据局限，不将助手推荐写成用户提供，也不将教学完成写成用户已读。
 
@@ -6976,6 +6976,66 @@
 - 身份核验：not_recorded
 - 用户阅读状态：unknown
 - [独立讲解](../robotics-embodied/papers/arxiv-2607.19695/reading.md)
+
+<a id="p662"></a>
+## p662 · How Much 3D Do Video Foundation Models Encode?
+
+- 标识：arxiv:2512.19949
+- 原文 / 官方入口：https://arxiv.org/abs/2512.19949
+- 主题：multimodal/video-temporal, multimodal/world-models, robotics/localization-mapping
+- 身份核验：official_identity_published_main_text_supplement_and_targeted_code_checked_not_reproduced
+- 用户阅读状态：unknown
+- [独立讲解](../multimodal/papers/arxiv-2512.19949/reading.md)
+
+<a id="p663"></a>
+## p663 · The Invisible Hand of Physics: When Video Diffusion Models Know More Than They Show
+
+- 标识：arxiv:2606.05328
+- 原文 / 官方入口：https://arxiv.org/abs/2606.05328
+- 主题：multimodal/video-temporal, multimodal/world-models, cross-domain/model-science
+- 身份核验：official_identity_full_arxiv_v2_appendices_and_targeted_official_code_checked_not_reproduced
+- 用户阅读状态：unknown
+- [独立讲解](../multimodal/papers/arxiv-2606.05328/reading.md)
+
+<a id="p664"></a>
+## p664 · Does Physics Live in the Activations? Localizing Physical Quantities in Video Diffusion Models
+
+- 标识：arxiv:2610.03154
+- 原文 / 官方入口：https://arxiv.org/abs/2610.03154
+- 主题：multimodal/video-temporal, multimodal/world-models, cross-domain/model-science
+- 身份核验：official_identity_full_text_and_project_checked_experiment_code_unavailable_not_reproduced
+- 用户阅读状态：unknown
+- [独立讲解](../multimodal/papers/arxiv-2610.03154/reading.md)
+
+<a id="p665"></a>
+## p665 · Graph-of-Mark: Promote Spatial Reasoning in Multimodal Language Models with Graph-Based Visual Prompting
+
+- 标识：arxiv:2603.06663
+- 原文 / 官方入口：https://doi.org/10.1609/aaai.v40i36.40329
+- 主题：multimodal/vlm, robotics/perception
+- 身份核验：not_recorded
+- 用户阅读状态：unknown
+- [独立讲解](../robotics-embodied/papers/arxiv-2603.06663/reading.md)
+
+<a id="p666"></a>
+## p666 · SceneScript: Reconstructing Scenes With An Autoregressive Structured Language Model
+
+- 标识：arxiv:2403.13064
+- 原文 / 官方入口：https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/7833_ECCV_2024_paper.php
+- 主题：robotics/perception, multimodal/world-models
+- 身份核验：not_recorded
+- 用户阅读状态：unknown
+- [独立讲解](../robotics-embodied/papers/arxiv-2403.13064/reading.md)
+
+<a id="p667"></a>
+## p667 · Structured Interfaces for Automated Reasoning with 3D Scene Graphs
+
+- 标识：arxiv:2510.16643
+- 原文 / 官方入口：https://arxiv.org/abs/2510.16643v1
+- 主题：robotics/embodied-agents, robotics/navigation-planning, cross-domain/agents
+- 身份核验：not_recorded
+- 用户阅读状态：unknown
+- [独立讲解](../robotics-embodied/papers/arxiv-2510.16643/reading.md)
 
 ## 2026年10月3日既有条目更新
 

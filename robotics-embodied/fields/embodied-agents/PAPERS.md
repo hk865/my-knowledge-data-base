@@ -100,3 +100,9 @@
 - [OpenRUA](../../papers/arxiv-2610.02459/reading.md)
 - [RAX](../../papers/arxiv-2610.22496/reading.md)
 - [AgenticRoboRL](../../papers/arxiv-2610.28589/reading.md)
+
+## 场景结构与推理接口
+
+- [Graph-of-Mark: Promote Spatial Reasoning in Multimodal Language Models with Graph-Based Visual Prompting](../../papers/arxiv-2603.06663/README.md) · 技术精读
+- [SceneScript: Reconstructing Scenes With An Autoregressive Structured Language Model](../../papers/arxiv-2403.13064/README.md) · 技术精读
+- [Structured Interfaces for Automated Reasoning with 3D Scene Graphs](../../papers/arxiv-2510.16643/README.md) · 技术精读

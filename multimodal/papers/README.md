@@ -163,3 +163,6 @@
 ## 2026年11月6日文献与资料增量
 
 - [Structuring Sparsity: Block-Sparse Featurizers Capture Visual Concept Manifolds](arxiv-2606.25234/README.md) · 2026 · 技术精读
+- [How Much 3D Do Video Foundation Models Encode?](arxiv-2512.19949/README.md) · 2026 · 技术精读
+- [The Invisible Hand of Physics: When Video Diffusion Models Know More Than They Show](arxiv-2606.05328/README.md) · 2026 · 技术精读
+- [Does Physics Live in the Activations? Localizing Physical Quantities in Video Diffusion Models](arxiv-2610.03154/README.md) · 2026 · 技术精读

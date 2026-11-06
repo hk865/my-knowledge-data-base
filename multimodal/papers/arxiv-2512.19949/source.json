@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2512.19949",
+  "title": "How Much 3D Do Video Foundation Models Encode?",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2512.19949",
+  "official_url": "https://arxiv.org/abs/2512.19949",
+  "official_fulltext_url": "https://openaccess.thecvf.com/content/CVPR2026/papers/Huang_How_Much_3D_Do_Video_Foundation_Models_Encode_CVPR_2026_paper.pdf",
+  "read_version": "CVPR 2026 open-access accepted version and official supplementary material",
+  "version_status": "formal_CVPR_2026_main_and_supplement_read_arxiv_v1_metadata_checked",
+  "first_submitted": "2025-12-23",
+  "version_date": "2025-12-23",
+  "year": 2026,
+  "authors": [
+    "Zixuan Huang",
+    "Xiang Li",
+    "Zhaoyang Lv",
+    "James M. Rehg"
+  ],
+  "author_contribution_note": "Zixuan Huang and Xiang Li are equal contributors.",
+  "publication_status": {
+    "venue": "CVPR 2026",
+    "month": "June",
+    "pages": "384-394",
+    "basis": "CVF open-access proceedings entry and official paper watermark; CVF says identical to accepted version apart from watermark.",
+    "final_publisher_version_checked": false
+  },
+  "topic_paths": [
+    "multimodal/video-temporal",
+    "multimodal/world-models",
+    "robotics/localization-mapping"
+  ],
+  "modality_tags": [
+    "video",
+    "image",
+    "multimodal"
+  ],
+  "task_tags": [
+    "understanding",
+    "evaluation"
+  ],
+  "content_kind": "reading",
+  "reading_depth": "full_published_main_text_official_supplement_and_targeted_official_code",
+  "reading_path": "reading.md",
+  "reading_boundary": "完整阅读CVPR 2026开放版正文§1–5及参考文献列表、官方补充A–I；视觉核对图5与补充表4/5；核对arXiv身份、版本记录和许可，未逐段比对arXiv v1全文。抽查官方固定提交84ea53707f4c19179cb0b6bf71a8119ba7accf51的README、Wan抽取、读出网络、标签生成、数据采样、损失与评估配置。未逐篇核读所有参考文献，未运行模型、数据下载、训练或评测。",
+  "teaching_status": "technical_reading_with_coordinate_and_auc_examples_evidence_table_and_readout_causality_cost_boundaries",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "license_identified",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "checked_at": "2026-11-06",
+    "note": "arXiv元数据标明CC BY 4.0；CVF页面另提示版权归作者或其他权利人。本库仅发布原创解读与官方链接，不镜像PDF。"
+  },
+  "code_license": {
+    "spdx_id": "CC-BY-NC-4.0",
+    "license_url": "https://github.com/zxhuang1698/VidFM3D/blob/84ea53707f4c19179cb0b6bf71a8119ba7accf51/LICENSE",
+    "checked_at": "2026-11-06",
+    "note": "主项目为CC BY-NC 4.0；第三方依赖与基础模型各保留自身许可。"
+  },
+  "fulltext_local_status": "read_locally_official_fulltext_not_for_public_mirror",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-11-06",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "source_origin": "recent_video_geometry_discussion_then_independent_published_fulltext_and_official_code_review",
+  "verification_status": "official_identity_published_main_text_supplement_and_targeted_code_checked_not_reproduced",
+  "verification_sources": [
+    "https://arxiv.org/abs/2512.19949",
+    "https://openaccess.thecvf.com/content/CVPR2026/html/Huang_How_Much_3D_Do_Video_Foundation_Models_Encode_CVPR_2026_paper.html",
+    "https://openaccess.thecvf.com/content/CVPR2026/papers/Huang_How_Much_3D_Do_Video_Foundation_Models_Encode_CVPR_2026_paper.pdf",
+    "https://openaccess.thecvf.com/content/CVPR2026/supplemental/Huang_How_Much_3D_CVPR_2026_supplemental.pdf",
+    "https://vidfm-3d-probe.github.io/",
+    "https://github.com/zxhuang1698/VidFM3D/tree/84ea53707f4c19179cb0b6bf71a8119ba7accf51"
+  ],
+  "project_url": "https://vidfm-3d-probe.github.io/",
+  "code_url": "https://github.com/zxhuang1698/VidFM3D",
+  "code_commit": "84ea53707f4c19179cb0b6bf71a8119ba7accf51",
+  "research_role": "supervised_geometry_readout_benchmark_of_frozen_video_foundation_features",
+  "training_boundary": "视频底座冻结，新增四轮交替注意力和三个输出头接受点图/深度/相机监督；主要标签由VGGT生成。只说明部分底座不需新增三维预训练，不说明整个方法无三维监督。",
+  "chat_evidence": [
+    {
+      "role": "assistant",
+      "date": "2026-11-03",
+      "association": "模型内部三维表征讨论中作为首篇直接相关文献；区别可读出、显式表示、生成依赖与16GB硬件成本，不表示用户已读或采纳结论。"
+    }
+  ],
+  "implementation_caveats": [
+    "四帧读出的特征来自底座处理的多帧窗口，可能访问查询时刻之后的帧；不是只看当前与过去帧的在线因果评估。",
+    "主要比较同类监督读出器而非各模型原生几何输出；Fast3R和Aether包含三维相关训练。",
+    "点图归一化并相似对齐；表中点误差乘10；相机AUC以旋转与平移方向角联合定义。",
+    "迁移实验重训两种VGGT分支，不能等同超过公开全数据预训练VGGT。",
+    "原文图5噪声比例与代码scheduler索引需核对，README默认不代表通用三维层。",
+    "补充F时间窗口拼接与当前DINO默认fold_stride=1需核对正式实验配置。",
+    "表4未给足计时硬件和显存条件；缓存大小估算不代表峰值显存或16GB可运行性。"
+  ],
+  "arxiv_version": "v1",
+  "version_date_note": "version_date denotes arXiv v1 date; the primary reading is the June 2026 CVPR accepted paper plus official supplement, not a claimed arXiv v2."
+}

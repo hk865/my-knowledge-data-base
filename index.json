@@ -866,5 +866,29 @@
   {
     "title": "NavVerse 精读",
     "file": "robotics-embodied/papers/arxiv-2607.19695/reading.md"
+  },
+  {
+    "title": "How Much 3D Do Video Foundation Models Encode? 精读",
+    "file": "multimodal/papers/arxiv-2512.19949/reading.md"
+  },
+  {
+    "title": "The Invisible Hand of Physics: When Video Diffusion Models Know More Than They Show 精读",
+    "file": "multimodal/papers/arxiv-2606.05328/reading.md"
+  },
+  {
+    "title": "Does Physics Live in the Activations? Localizing Physical Quantities in Video Diffusion Models 精读",
+    "file": "multimodal/papers/arxiv-2610.03154/reading.md"
+  },
+  {
+    "title": "Graph-of-Mark: Promote Spatial Reasoning in Multimodal Language Models with Graph-Based Visual Prompting 精读",
+    "file": "robotics-embodied/papers/arxiv-2603.06663/reading.md"
+  },
+  {
+    "title": "SceneScript: Reconstructing Scenes With An Autoregressive Structured Language Model 精读",
+    "file": "robotics-embodied/papers/arxiv-2403.13064/reading.md"
+  },
+  {
+    "title": "Structured Interfaces for Automated Reasoning with 3D Scene Graphs 精读",
+    "file": "robotics-embodied/papers/arxiv-2510.16643/reading.md"
   }
 ]

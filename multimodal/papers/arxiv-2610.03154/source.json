@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2610.03154",
+  "title": "Does Physics Live in the Activations? Localizing Physical Quantities in Video Diffusion Models",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2610.03154",
+  "official_url": "https://arxiv.org/abs/2610.03154",
+  "official_fulltext_url": "https://arxiv.org/pdf/2610.03154v1",
+  "read_version": "arXiv v1, 22 pages including Appendices A-C",
+  "version_status": "only_arxiv_v1_listed_no_formal_publication_verified_on_2026_11_06",
+  "first_submitted": "2026-10-02",
+  "version_date": "2026-10-02",
+  "submission_timestamp_utc": "2026-10-02T11:26:09Z",
+  "year": 2026,
+  "authors": [
+    "Jonas Kneifl",
+    "Jakub Skalski",
+    "Bartłomiej Twardowski",
+    "Kamil Deja"
+  ],
+  "publication_status": {
+    "venue": null,
+    "status": "preprint",
+    "basis": "arXiv lists only v1, PDF is labelled Preprint, and author project states code/data links will be available upon publication. No formal venue or publisher version was verified.",
+    "final_publisher_version_checked": false,
+    "checked_at": "2026-11-06"
+  },
+  "topic_paths": [
+    "multimodal/video-temporal",
+    "multimodal/world-models",
+    "cross-domain/model-science"
+  ],
+  "modality_tags": [
+    "video",
+    "image"
+  ],
+  "task_tags": [
+    "understanding",
+    "generation",
+    "analysis"
+  ],
+  "content_kind": "reading",
+  "reading_depth": "full_main_text_appendices_official_project_and_targeted_presentation_script",
+  "reading_path": "reading.md",
+  "reading_boundary": "逐页读取arXiv v1全部22页：引言、§1–5、声明、参考文献列表、Appendices A.1–A.2、B.1–B.2.2与C；检查Fig.2–5及Table A.1–A.2、B.1–B.2、C.1，视觉复核第22页Table C.1。读取官方项目HTML和extrapolation.js，后者仅呈现论文表格。未获得实验源码、原始数据或模型抓取日志，未运行底座、探针、模拟器或干预。关联论文仅核读与比较相关的官方摘要、方法段落或正式会议条目，不声称完成这些关联论文的全文精读。",
+  "teaching_status": "technical_reading_with_affine_calibration_example_one_evidence_table_causal_and_compute_boundaries",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "license_identified",
+    "spdx_id": "CC-BY-4.0",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "checked_at": "2026-11-06",
+    "note": "由arXiv版本页view license链接核实。交付仅含原创中文分析与来源链接，不镜像PDF。"
+  },
+  "code_license": {
+    "status": "experiment_code_not_released_or_linked",
+    "spdx_id": null,
+    "license_url": null,
+    "checked_at": "2026-11-06",
+    "note": "官方项目的Code/Data按钮无href且aria-disabled=true。网页页脚CC BY-SA 4.0及模板链接不视为未发布实验代码的许可。"
+  },
+  "fulltext_local_status": "official_fulltext_read_temporarily_no_pdf_in_deliverable",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-11-06",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "source_origin": "recent_video_geometry_discussion_then_independent_fulltext_and_official_project_review",
+  "verification_status": "official_identity_full_text_and_project_checked_experiment_code_unavailable_not_reproduced",
+  "verification_sources": [
+    "https://arxiv.org/abs/2610.03154",
+    "https://arxiv.org/pdf/2610.03154v1",
+    "https://creativecommons.org/licenses/by/4.0/",
+    "https://physics-in-activations.github.io/",
+    "https://physics-in-activations.github.io/static/js/extrapolation.js",
+    "https://arxiv.org/abs/2602.07050",
+    "https://arxiv.org/html/2512.19949v1",
+    "https://arxiv.org/html/2606.05328v2",
+    "https://proceedings.mlr.press/v267/kang25g.html"
+  ],
+  "project_url": "https://physics-in-activations.github.io/",
+  "code_url": null,
+  "code_commit": null,
+  "code_version_status": "not_available_no_experiment_repository_linked_from_official_project",
+  "project_script_read": {
+    "url": "https://physics-in-activations.github.io/static/js/extrapolation.js",
+    "sha256": "71f82ff4b6a23ea4e6efb9c4160b1fc53ffd36a113592d7eaf136596ff3eb2af",
+    "scope": "Static browser visualization of Table B.2, not probe fitting or transfer evaluation code."
+  },
+  "official_pdf_sha256": "195c88ba19a7d7f5556b5f20931e04c69cfc0bdd8a7798ed56aebc82ae1c82d0",
+  "official_project_html_sha256": "2dfa80c9878d2d177cdefcba007ee4d948030206e731aa4686e02eda6dca2c0d",
+  "research_role": "linear_physical_quantity_probe_object_localization_transfer_and_limited_direction_steering",
+  "training_boundary": "Three frozen video DiTs; new ridge probes are supervised by synthetic physical labels. Target-scene affine transfer calibration uses ten labelled target videos. No backbone training or fine-tuning is performed for the study.",
+  "model_checkpoints": [
+    {
+      "model": "Wan 2.1 14B",
+      "checkpoint": "Wan-AI/Wan2.1-I2V-14B-480P-Diffusers",
+      "frames": 81,
+      "resolution": [
+        480,
+        832
+      ],
+      "blocks": 40
+    },
+    {
+      "model": "CogVideoX-1.5 5B",
+      "checkpoint": "zai-org/CogVideoX1.5-5B-I2V",
+      "frames": 81,
+      "resolution": [
+        768,
+        1360
+      ],
+      "blocks": 42
+    },
+    {
+      "model": "Open-Sora 2.0 11B",
+      "checkpoint": "hpcai-tech/Open-Sora-v2",
+      "configuration": "HunyuanVAE",
+      "frames": 81,
+      "resolution": [
+        480,
+        832
+      ],
+      "blocks": 57
+    }
+  ],
+  "hardware_and_compute": {
+    "reported_gpu_model": null,
+    "reported_peak_memory": null,
+    "reported_walltime_or_gpu_hours": null,
+    "basis": "No explicit hardware configuration or quantitative compute budget found in the complete paper. Acknowledgments name PLGrid, WCSS and LEONARDO allocations.",
+    "derived_not_measured": [
+      "Wan/Open-Sora token count: 21*30*52=32760 per video.",
+      "CogVideoX token count: 11*48*85=44880 per video.",
+      "14B parameters at two bytes per parameter require about 28 GB for weights alone; not a GPU-memory requirement."
+    ]
+  },
+  "duplicate_check": {
+    "queries": [
+      "Does Physics Live in the Activations",
+      "2610.03154"
+    ],
+    "result": "No matching title or identifier before drafting.",
+    "checked_at": "2026-11-06"
+  },
+  "implementation_caveats": [
+    "Main probes use forward-noised labelled videos and a single denoising pass, not the models own sampling trajectories.",
+    "High linear decodability establishes readout accessibility, not factorized explicit state or physical law implementation. Weak pooled input baselines cannot establish absence of all physical information in the complete input.",
+    "ROI centers and projected radii are simulator-provided. Mass is tied to rendered radius through a constant-density relation.",
+    "Single token-frames include temporally compressed information, and DiT attention sees the complete clip; anticipation probes are not past-only prediction tests.",
+    "Cross-scene results include ten-video target-label affine calibration; calibration-versus-test isolation is not sufficiently specified in the accessible paper, and no experiment code is available to resolve it.",
+    "Only left-versus-right rolling direction steering was demonstrated; pooled high-score probes fail as broadcast steering vectors.",
+    "Table C.1 states 52 seeds but reports CogVideoX prompt flip ratio 0.017, which cannot be obtained as one integer count divided by 52. Values are quoted as reported, and the exact denominator or aggregation remains unresolved.",
+    "Reversed steering produces zero rightward flips but leaves only 0.77/0.50/0.33 of videos classified left, so zero flips does not establish preserved generation quality.",
+    "Source code is not publicly linked; standardized-to-raw weight conversion, practical SLERP norm handling, and hyperparameter selection remain unaudited."
+  ]
+}

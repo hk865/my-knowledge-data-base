@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "resource_kind": "paper",
+  "content_kind": "reading",
+  "reading_path": "reading.md",
+  "reading_depth": "fulltext",
+  "teaching_status": "fulltext_technical_reading",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "original_checked_at": "2026-11-06",
+  "source_record_updated": "2026-11-06",
+  "fulltext_local_status": "official_link_only_no_public_mirror",
+  "fulltext_local_path": null,
+  "local_reading_cache_retained": true,
+  "public_pdf_mirror": false,
+  "evidence_paths": [],
+  "resource_id": "arxiv:2403.13064",
+  "title": "SceneScript: Reconstructing Scenes With An Autoregressive Structured Language Model",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2403.13064",
+  "official_url": "https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/7833_ECCV_2024_paper.php",
+  "official_fulltext_url": "https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/07833.pdf",
+  "official_supplement_url": "https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/07833-supp.pdf",
+  "arxiv_url": "https://arxiv.org/abs/2403.13064v1",
+  "official_html_url": "https://arxiv.org/html/2403.13064v1",
+  "read_version": "ECCV 2024 formal main paper and supplementary; arXiv v1 cross-check",
+  "version_status": "formal_publication_read",
+  "arxiv_latest_verified": "v1",
+  "first_submitted": "2024-03-19",
+  "year": 2024,
+  "venue": "ECCV 2024",
+  "doi": "10.1007/978-3-031-73030-6_14",
+  "authors": [
+    "Armen Avetisyan",
+    "Christopher Xie",
+    "Henry Howard-Jenkins",
+    "Tsun-Yi Yang",
+    "Samir Aroudj",
+    "Suvam Patra",
+    "Fuyang Zhang",
+    "Duncan Frost",
+    "Luke Holland",
+    "Campbell Orme",
+    "Jakob Engel",
+    "Edward Miller",
+    "Richard Newcombe",
+    "Vasileios Balntas"
+  ],
+  "topic_paths": [
+    "robotics/perception",
+    "multimodal/world-models"
+  ],
+  "reading_boundary": "阅读全文ECCV官方17页主文§1–9及参考文献、18页补充材料§A–H及参考文献；另读arXiv v1 35页并比对主要方法与表2–3。核对官方代码README关于公开ASE和专有数据模型的区别。用PDF文本核读并渲染复核正式表2；未运行模型、训练或复现实验。",
+  "official_code_url": "https://github.com/facebookresearch/scenescript",
+  "code_commit": "516472d0e62ebbf866f1125cd98c85dec315c100",
+  "code_status": "official_inference_code_available_readme_only_checked",
+  "license": {
+    "status": "arxiv_license_identified_formal_publisher_terms_not_asserted",
+    "arxiv_license": "CC BY 4.0",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by/4.0/"
+    ],
+    "code_and_models_license": "CC BY-NC per official README",
+    "note": "仅交付独立中文讲解与官方链接，交付目录不含原文PDF、截图或提取文本。代码/模型与ASE数据协议不等同于论文许可。"
+  },
+  "related_readings": [
+    "robotics-embodied/papers/arxiv-2603.06663/reading.md",
+    "robotics-embodied/papers/arxiv-2510.16643/reading.md"
+  ],
+  "primary_sources": [
+    {
+      "url": "https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/7833_ECCV_2024_paper.php",
+      "scope": "formal venue, DOI, paper and supplement links"
+    },
+    {
+      "url": "https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/07833.pdf",
+      "scope": "formal main paper, all methods and experiments"
+    },
+    {
+      "url": "https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/07833-supp.pdf",
+      "scope": "all supplemental sections A–H, training, tokenization, failure cases, extensions and evaluation"
+    },
+    {
+      "url": "https://arxiv.org/abs/2403.13064v1",
+      "scope": "version history, author identity, arxiv license"
+    },
+    {
+      "url": "https://github.com/facebookresearch/scenescript/blob/516472d0e62ebbf866f1125cd98c85dec315c100/README.md",
+      "scope": "released model variants, website demo proprietary dataset boundary, code license"
+    }
+  ],
+  "audit_notes": [
+    "输入假设已定位图像，主体点云来自MPS视觉惯性恢复；非端到端从无位姿视频完成SLAM。",
+    "命令ID用于单次程序引用；没有跨巡视持久ID实验。",
+    "语言扩展要同步增加训练标签和训练，非零样本schema修改。",
+    "实际词表及序列长2048；抽象语言任意长不等于模型无限长。",
+    "检测用F1而非自己的mAP，因为没有跨场景可比较的检测置信度。",
+    "正式表3ScanNet结果低于SoftGroup；不能复述为所有数据集SOTA。",
+    "官方README明确网站演示用内部专有数据模型，不能全部归于公开ASE；ASE标注缺失注记是截至2024-09-17的历史说明。",
+    "正式PDF保留未渲染LaTeX和Appendix ??，相关配置由正式补充对应章节确认。"
+  ],
+  "modality_tags": [
+    "image",
+    "code"
+  ],
+  "task_tags": [
+    "understanding",
+    "generation"
+  ]
+}

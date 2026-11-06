@@ -1,0 +1,378 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2606.05328",
+  "arxiv_id": "2606.05328",
+  "title": "The Invisible Hand of Physics: When Video Diffusion Models Know More Than They Show",
+  "resource_kind": "paper",
+  "authors": [
+    "Parsa Esmati",
+    "Somjit Nath",
+    "Katja Hofmann",
+    "Derek Nowrouzezahrai",
+    "Samira Ebrahimi Kahou",
+    "Majid Mirmehdi"
+  ],
+  "year": 2026,
+  "official_url": "https://arxiv.org/abs/2606.05328",
+  "official_fulltext_url": "https://arxiv.org/html/2606.05328v2",
+  "official_html_url": "https://arxiv.org/html/2606.05328v2",
+  "official_pdf_url": "https://arxiv.org/pdf/2606.05328v2",
+  "official_repository_url": "https://github.com/ParsaEsmati/videodiffusionphysics",
+  "official_project_url": null,
+  "read_version": "v2",
+  "version_status": "official_arxiv_v2_latest_verified; proceedings_final_not_verified",
+  "arxiv_submission_date": "2026-06-03",
+  "arxiv_revision_date": "2026-10-09",
+  "reading_depth": "full_text_reading_and_selected_code_static_audit",
+  "teaching_status": "technical_reading",
+  "content_kind": "reading",
+  "reading_path": "reading.md",
+  "canonical_folder": "multimodal/papers/arxiv-2606.05328",
+  "reading_boundary": "已读官方arXiv v2 HTML正文§1–5、Limitations与附录A–F全文，核对公式和图注；未逐图视觉校验或读取PDF。只读审计官方仓库固定提交的README、LICENSE及探针、反演、干预相关函数，未运行模型或复现图表。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "repository_read_commit": "3acbcb78b14436ed2654da8eb9f575c112adb71f",
+  "source_record_updated": "2026-11-06",
+  "repository_prior_status": "Exact title and arXiv ID absent from the existing knowledge repository in recursive case-insensitive content search, including readings and indexes.",
+  "topic_paths": [
+    "multimodal/video-temporal",
+    "multimodal/world-models",
+    "cross-domain/model-science"
+  ],
+  "modality_tags": [
+    "video"
+  ],
+  "task_tags": [
+    "understanding",
+    "evaluation",
+    "analysis"
+  ],
+  "paper": {
+    "version": "v2",
+    "version_url": "https://arxiv.org/abs/2606.05328v2",
+    "submitted_at": "2026-06-03T18:11:51Z",
+    "revised_at": "2026-10-09T09:38:45Z",
+    "versions_observed": [
+      "v1",
+      "v2"
+    ],
+    "authors": [
+      "Parsa Esmati",
+      "Somjit Nath",
+      "Katja Hofmann",
+      "Derek Nowrouzezahrai",
+      "Samira Ebrahimi Kahou",
+      "Majid Mirmehdi"
+    ],
+    "affiliations": [
+      "University of Bristol",
+      "McGill University",
+      "Mila–Quebec AI Institute",
+      "Microsoft Research",
+      "University of Calgary"
+    ],
+    "equal_contribution": [
+      "Parsa Esmati",
+      "Somjit Nath"
+    ],
+    "equal_supervision": [
+      "Samira Ebrahimi Kahou",
+      "Majid Mirmehdi"
+    ],
+    "doi": "10.48550/arXiv.2606.05328",
+    "publication": "Official author repository states accepted at NeurIPS 2026 (Spotlight). Official NeurIPS 2026 downloads index lists the exact title.",
+    "official_conference_listing": "https://neurips.cc/Downloads/2026",
+    "official_conference_item": "https://neurips.cc/virtual/2026/poster/149891",
+    "publication_version_boundary": "Conference detail page could not be fetched. No proceedings camera-ready full text was verified; all paper numbers are taken from arXiv v2, not asserted to be a separate final proceedings version.",
+    "html_sha256": "5275ab37606c363578cd33a384c02b1aacdf638535135726b6937aa3f63775c3"
+  },
+  "license": {
+    "status": "paper_license_verified; code_license_verified",
+    "paper_license": "arXiv.org perpetual non-exclusive license",
+    "license_url": "https://info.arxiv.org/help/license/index.html#licenses-available",
+    "paper_license_evidence": "https://arxiv.org/html/2606.05328v2",
+    "code_license": "MIT",
+    "code_license_url": "https://github.com/ParsaEsmati/videodiffusionphysics/blob/3acbcb78b14436ed2654da8eb9f575c112adb71f/LICENSE",
+    "code_copyright": "Copyright (c) 2026 Parsa Esmati, Somjit Nath",
+    "note": "arXiv perpetual non-exclusive license does not establish permission to mirror the paper. Repository MIT applies to its software; it is not assumed to cover model checkpoints, benchmark data or paper PDF. No PDF uploaded or placed in the knowledge repository.",
+    "license_urls": [
+      "https://info.arxiv.org/help/license/index.html#licenses-available"
+    ],
+    "checked_at": "2026-11-06"
+  },
+  "fulltext_local_status": "official_link_only_in_deliverable; transient_HTML_cache_kept_separately",
+  "fulltext_local_path": null,
+  "legacy_paths": [],
+  "reading": {
+    "read_scope": [
+      "arXiv v2 title/author/version/license metadata",
+      "Main text sections 1–5 and Limitations",
+      "Appendices A–F, including error derivation, dataset protocol, IntPhys 2, probe weights and reproducibility details",
+      "All figure captions and embedded equations; figure images not independently visually audited",
+      "Selected fixed-commit source functions and README/LICENSE"
+    ],
+    "not_read_or_run": [
+      "No paper PDF downloaded or uploaded",
+      "No model checkpoint downloaded",
+      "No benchmark videos downloaded",
+      "No environment installed, model inference, probe training or intervention executed",
+      "No claimed independent reproduction",
+      "No separate final NeurIPS proceedings PDF verified"
+    ],
+    "numeric_scope": "All reported experiment scores are author results. Scalar Euler example is explicitly illustrative; 9.91 percentage-point difference is arithmetic from the reported comparison."
+  },
+  "release_audit": {
+    "repository": "ParsaEsmati/videodiffusionphysics",
+    "head_commit": "3acbcb78b14436ed2654da8eb9f575c112adb71f",
+    "commit_date": "2026-10-09T16:12:02Z",
+    "commit_message": "Fix overview link in README.md",
+    "head_confirmed_via": "https://api.github.com/repos/ParsaEsmati/videodiffusionphysics/commits/main",
+    "tree_url": "https://api.github.com/repos/ParsaEsmati/videodiffusionphysics/git/trees/3acbcb78b14436ed2654da8eb9f575c112adb71f?recursive=1",
+    "files_read": [
+      {
+        "path": "README.md",
+        "scope": "full README",
+        "url": "https://github.com/ParsaEsmati/videodiffusionphysics/blob/3acbcb78b14436ed2654da8eb9f575c112adb71f/README.md"
+      },
+      {
+        "path": "LICENSE",
+        "scope": "full license",
+        "url": "https://github.com/ParsaEsmati/videodiffusionphysics/blob/3acbcb78b14436ed2654da8eb9f575c112adb71f/LICENSE"
+      },
+      {
+        "path": "probe_pairwise.py",
+        "scope": "scenario grouping, train/validation splitting, per-video and pairwise metrics, CLI defaults and multiseed loop",
+        "url": "https://github.com/ParsaEsmati/videodiffusionphysics/blob/3acbcb78b14436ed2654da8eb9f575c112adb71f/probe_pairwise.py"
+      },
+      {
+        "path": "intervention.py",
+        "scope": "noise hook lifecycle, inversion scorer, scene loop, generator and scoring call scope",
+        "url": "https://github.com/ParsaEsmati/videodiffusionphysics/blob/3acbcb78b14436ed2654da8eb9f575c112adb71f/intervention.py"
+      },
+      {
+        "path": "inference.py",
+        "scope": "selected extraction pooling, frame/solver CLI defaults, inversion setup and model imports",
+        "url": "https://github.com/ParsaEsmati/videodiffusionphysics/blob/3acbcb78b14436ed2654da8eb9f575c112adb71f/inference.py"
+      },
+      {
+        "path": "models/integrators.py",
+        "scope": "full Euler/Heun integrator",
+        "url": "https://github.com/ParsaEsmati/videodiffusionphysics/blob/3acbcb78b14436ed2654da8eb9f575c112adb71f/models/integrators.py"
+      },
+      {
+        "path": "models/wan_inversion.py",
+        "scope": "selected transformer reuse and call sites; not full-line review",
+        "url": "https://github.com/ParsaEsmati/videodiffusionphysics/blob/3acbcb78b14436ed2654da8eb9f575c112adb71f/models/wan_inversion.py"
+      },
+      {
+        "path": "data_pipeline/probe_dataset.py",
+        "scope": "ProbeDataset token pooling and debug toggle defaults",
+        "url": "https://github.com/ParsaEsmati/videodiffusionphysics/blob/3acbcb78b14436ed2654da8eb9f575c112adb71f/data_pipeline/probe_dataset.py"
+      }
+    ],
+    "downloaded_but_not_substantively_audited": [
+      "probe_regress.py",
+      "create_intphys_csv.py",
+      "create_inflevel_csv.py"
+    ],
+    "checkpoint_names_from_readme": [
+      "Wan-AI/Wan2.1-T2V-1.3B-Diffusers",
+      "THUDM/CogVideoX-2b",
+      "Lightricks/LTX-Video"
+    ],
+    "checkpoint_revision_status": "Not pinned or downloaded in this audit; names are repository documentation, not verified actual run revisions.",
+    "separate_project_site": "Not found in paper or official repository; official repository serves as project release."
+  },
+  "paper_protocol": {
+    "backbones": [
+      "WAN-1.3B",
+      "CogVideoX-2B",
+      "LTX-2B"
+    ],
+    "baseline_encoders": [
+      "V-JEPA 2 ViT-L",
+      "V-JEPA 2 ViT-g",
+      "VideoMAE Large",
+      "VideoMAE Giant"
+    ],
+    "datasets": [
+      "IntPhys dev/validation: O1 object permanence, O2 shape constancy, O3 spatiotemporal continuity",
+      "InfLevel-Lab: gravity, solidity, continuity",
+      "IntPhys 2: permanence, immutability, solidity, continuity",
+      "PhyWorld parabolic-motion subset: initial position and velocity regression"
+    ],
+    "full_clip_features": true,
+    "online_future_prediction_evaluated": false,
+    "probe_supervision": "Binary plausibility labels or known initial position/velocity; frozen pretrained backbones.",
+    "feature_pooling": "Mean over tokens; one feature vector per video per transformer block and inversion step.",
+    "paper_validation_fraction": 0.4,
+    "paper_split_seed": 42,
+    "paper_probe_batch_size": 4,
+    "paper_probe_epochs": 50,
+    "paper_probe_optimizer": "Adam",
+    "paper_probe_learning_rate": 0.001,
+    "main_inversion_steps": 100,
+    "main_probe_step": 50,
+    "paper_guidance_scale": 1.0,
+    "paper_resolution": [
+      256,
+      256
+    ],
+    "paper_frames": {
+      "WAN": 81,
+      "CogVideoX": 81,
+      "LTX": 97
+    },
+    "blocks_hidden_dim": {
+      "WAN": [
+        30,
+        1536
+      ],
+      "CogVideoX": [
+        30,
+        1920
+      ],
+      "LTX": [
+        28,
+        2048
+      ]
+    },
+    "headline_aggregation": "Per-video supervised probe accuracy, mean over blocks at midpoint and over categories of IntPhys and InfLevel; not best-block, not generated-video success rate.",
+    "error_bars": "Standard error of mean across 5 seeds reported in figure captions; Appendix F fixed seed 42 leaves exact multi-seed split-vs-initialization protocol to reconcile.",
+    "hardware": "Single NVIDIA GH200 GPU per job, 96 GB memory; all inference, probe and intervention experiments.",
+    "wall_time": null,
+    "total_gpu_hours": null,
+    "measured_peak_vram": null,
+    "consumer_gpu_feasibility": "Not established by paper.",
+    "source": "https://arxiv.org/html/2606.05328v2#A6"
+  },
+  "key_evidence": [
+    {
+      "claim": "Strong linear decodability under the headline protocol",
+      "location": "Section 4.1, Figure 2",
+      "numbers": "WAN 81.27%; V-JEPA 2 ViT-L 71.36%; VAE near 50%",
+      "url": "https://arxiv.org/html/2606.05328v2#S4.SS1"
+    },
+    {
+      "claim": "Readable layers differ from perturbation-sensitive layers",
+      "location": "Sections 4.1–4.2, Figures 4–5",
+      "numbers": "WAN readout best block 22; strongest intervention shifts early, around blocks 3–5; 180 plausible WAN scenes",
+      "url": "https://arxiv.org/html/2606.05328v2#S4.SS2"
+    },
+    {
+      "claim": "Known initial conditions are linearly readable from full videos",
+      "location": "Section 4.4, Figure 6",
+      "numbers": "x0 R² approximately 1; v0 WAN 0.88, wider models approximately 0.99",
+      "url": "https://arxiv.org/html/2606.05328v2#S4.SS4"
+    },
+    {
+      "claim": "Trajectory discretization matters beyond endpoint reconstruction",
+      "location": "Section 4.5, Figures 8–9",
+      "numbers": "WAN 100-step accuracy approximately 0.82 versus 20-step 0.57; Heun partially improves short inversion",
+      "url": "https://arxiv.org/html/2606.05328v2#S4.SS5"
+    },
+    {
+      "claim": "Harder benchmark limits broad ranking claims",
+      "location": "Appendix D, Figure 14",
+      "numbers": "IntPhys 2 scores approximately 55–68%; diffusion models comparable to encoders, LTX strongest diffusion model",
+      "url": "https://arxiv.org/html/2606.05328v2#A4"
+    }
+  ],
+  "reproduction_risks": [
+    {
+      "issue": "Noise hook also covers scoring inversion in public implementation",
+      "evidence": "intervention.py lines 222–223 enter noise_intervention around generate_and_score. generate_and_score (lines 208–213) calls both pipeline generation and probe_surprise. probe_surprise reinverts through the same pipeline (lines 153–170); hook removed only at context exit (lines 129–133). models/wan_inversion.py uses pipeline.transformer.",
+      "url": "https://github.com/ParsaEsmati/videodiffusionphysics/blob/3acbcb78b14436ed2654da8eb9f575c112adb71f/intervention.py#L208-L223",
+      "consequence": "Public default surprise shift mixes generation changes with direct perturbation of measurement features. Static control-flow finding; no assertion that paper Figure 5 was produced by this exact code or that numerical impact has been measured.",
+      "proposed_check": "End intervention hook before reinversion scoring; add generation-only, scoring-only, both and neither controls, then verify external physical metrics."
+    },
+    {
+      "issue": "Paper and executable default probe configurations differ",
+      "paper": "40% validation, batch4, fixed split seed42",
+      "code": "CLI default20% validation, batch32; README examples supply seeds0,1,2,3,4 and do not override val-split or batch-size.",
+      "url": "https://github.com/ParsaEsmati/videodiffusionphysics/blob/3acbcb78b14436ed2654da8eb9f575c112adb71f/probe_pairwise.py#L445-L477",
+      "positive_control": "Code groups videos by scenario before splitting, keeping plausible/implausible variants on the same side.",
+      "consequence": "README default commands cannot be asserted to reproduce the published protocol; use explicit configuration and saved split manifest."
+    },
+    {
+      "issue": "Heun has greater network-evaluation cost than Euler",
+      "evidence": "models/integrators.py computes a second prediction at Euler-proposed state for every Heun step except the last. Euler needs one prediction per step.",
+      "url": "https://github.com/ParsaEsmati/videodiffusionphysics/blob/3acbcb78b14436ed2654da8eb9f575c112adb71f/models/integrators.py",
+      "consequence": "Paper Section 3.1 one-evaluation description applies to its displayed Euler approximation; equal step counts are not equal NFE."
+    },
+    {
+      "issue": "README frame examples differ from Appendix F",
+      "paper": "81 WAN/CogVideoX frames, 97 LTX frames",
+      "readme": "Example inversion commands use --num-frames 100.",
+      "url": "https://github.com/ParsaEsmati/videodiffusionphysics/blob/3acbcb78b14436ed2654da8eb9f575c112adb71f/README.md",
+      "consequence": "Actual model-specific frame normalization and published run settings need verification; do not silently substitute README counts for paper protocol."
+    }
+  ],
+  "interpretive_boundaries": [
+    "Chance linear probing of VAE latents is not absence of physical information in the latent representation.",
+    "Linear readout of full-video initial conditions does not establish explicit physical laws or causal future prediction.",
+    "Noise interventions evaluate a learned probe proxy; generic image degradation and measurement contamination require controls.",
+    "Three-backbone width correlation is confounded with training data, architecture and autoencoder; it is not a controlled scaling law.",
+    "No PDF mirror; paper and code licenses have different scopes."
+  ],
+  "related_papers": [
+    {
+      "title": "Seeking Physics in Diffusion Noise",
+      "url": "https://arxiv.org/abs/2603.14294",
+      "relation": "Concurrent physics probing; the current paper Section 2 explicitly contrasts direct-noise states with recovered generation trajectories.",
+      "verification_scope": "Official arXiv identity/abstract/version; comparison mechanism also read in current paper Section 2."
+    },
+    {
+      "title": "How Much 3D Do Video Foundation Models Encode?",
+      "url": "https://arxiv.org/abs/2512.19949",
+      "relation": "Shallow readout of 3D properties from frozen video foundation model features; related representation-use claim, different probe capacity and target.",
+      "verification_scope": "Official arXiv identity and abstract; not independently full-text-read for this artifact."
+    },
+    {
+      "title": "Does Physics Live in the Activations? Localizing Physical Quantities in Video Diffusion Models",
+      "url": "https://arxiv.org/abs/2610.03154",
+      "relation": "Physical-quantity readout, token localization and steering directions; potential next step from decodability toward controllability.",
+      "verification_scope": "Official arXiv title, authors, version and abstract; claims explicitly bounded to abstract-level description, not reproduced."
+    }
+  ],
+  "unresolved": [
+    "Final NeurIPS proceedings text not verified",
+    "Published multi-seed split vs initialization protocol not fully specified",
+    "Published Figure 5 run code/configuration not proven identical to audited public commit",
+    "No timings, total compute or peak measured VRAM",
+    "No inference or intervention run to quantify public hook-scope issue"
+  ],
+  "deliverables": {
+    "reading": "reading.md",
+    "metadata": "source.json",
+    "han_character_count": 3827,
+    "main_han_character_count": 3107
+  },
+  "first_submitted": "2026-06-03",
+  "version_date": "2026-10-09",
+  "publication_status": {
+    "venue": "NeurIPS 2026",
+    "presentation": "Spotlight",
+    "basis": "Official author repository states accepted at NeurIPS 2026 (Spotlight). Official NeurIPS 2026 downloads index lists the exact title.",
+    "final_publisher_version_checked": false,
+    "version_boundary": "Conference detail page could not be fetched. No proceedings camera-ready full text was verified; all paper numbers are taken from arXiv v2, not asserted to be a separate final proceedings version."
+  },
+  "source_origin": "recent_video_geometry_discussion_then_independent_fulltext_and_official_code_review",
+  "verification_status": "official_identity_full_arxiv_v2_appendices_and_targeted_official_code_checked_not_reproduced",
+  "verification_sources": [
+    "https://arxiv.org/abs/2606.05328",
+    "https://arxiv.org/html/2606.05328v2",
+    "https://github.com/ParsaEsmati/videodiffusionphysics/tree/3acbcb78b14436ed2654da8eb9f575c112adb71f",
+    "https://neurips.cc/Downloads/2026",
+    "https://neurips.cc/virtual/2026/poster/149891"
+  ],
+  "code_url": "https://github.com/ParsaEsmati/videodiffusionphysics",
+  "code_commit": "3acbcb78b14436ed2654da8eb9f575c112adb71f",
+  "project_url": null,
+  "evidence_paths": [],
+  "code_license": {
+    "spdx_id": "MIT",
+    "license_url": "https://github.com/ParsaEsmati/videodiffusionphysics/blob/3acbcb78b14436ed2654da8eb9f575c112adb71f/LICENSE",
+    "checked_at": "2026-11-06"
+  }
+}

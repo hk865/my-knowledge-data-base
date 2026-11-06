@@ -408,7 +408,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Meta CLIP 2: A Worldwide Scaling Recipe](paper-catalog.md#p568)
 - [Qwen3-VL-Embedding and Qwen3-VL-Reranker: A Unified Framework for State-of-the-Art Multimodal Retrieval and Ranking](paper-catalog.md#p572)
 
-### 视觉语言模型（43）
+### 视觉语言模型（44）
 
 细分：连接器与融合；多模态指令学习；空间与推理能力
 
@@ -455,6 +455,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Cosmos 3: Omnimodal World Models for Physical AI](paper-catalog.md#p574)
 - [InternVideo3: Agentify Foundation Models with Multimodal Contextual Reasoning](paper-catalog.md#p575)
 - [Qwen3.8-Omni: Towards Native Omni-Modal Agents](paper-catalog.md#p576)
+- [Graph-of-Mark: Promote Spatial Reasoning in Multimodal Language Models with Graph-Based Visual Prompting](paper-catalog.md#p665)
 
 ### 视觉生成（53）
 
@@ -514,7 +515,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Scaling Text-to-Image Diffusion Transformers with Representation Autoencoders](paper-catalog.md#p573)
 - [Cosmos 3: Omnimodal World Models for Physical AI](paper-catalog.md#p574)
 
-### 视频与时序表征（33）
+### 视频与时序表征（36）
 
 细分：时序对应与记忆；动作条件视频；预测与时间一致性
 
@@ -551,8 +552,11 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [V-JEPA 2.1: Unlocking Dense Features in Video Self-Supervised Learning](paper-catalog.md#p477)
 - [InternVideo3: Agentify Foundation Models with Multimodal Contextual Reasoning](paper-catalog.md#p575)
 - [Qwen3.8-Omni: Towards Native Omni-Modal Agents](paper-catalog.md#p576)
+- [How Much 3D Do Video Foundation Models Encode?](paper-catalog.md#p662)
+- [The Invisible Hand of Physics: When Video Diffusion Models Know More Than They Show](paper-catalog.md#p663)
+- [Does Physics Live in the Activations? Localizing Physical Quantities in Video Diffusion Models](paper-catalog.md#p664)
 
-### 世界模型（55）
+### 世界模型（59）
 
 细分：预测与潜在动力学；结构化与可干预表征；行动条件与规划；几何与物理约束
 
@@ -611,10 +615,14 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Cosmos 3: Omnimodal World Models for Physical AI](paper-catalog.md#p574)
 - [What Drives Success in Physical Planning with Joint-Embedding Predictive World Models?](paper-catalog.md#p578)
 - [The Planning Limits of Latent World Models](paper-catalog.md#p581)
+- [How Much 3D Do Video Foundation Models Encode?](paper-catalog.md#p662)
+- [The Invisible Hand of Physics: When Video Diffusion Models Know More Than They Show](paper-catalog.md#p663)
+- [Does Physics Live in the Activations? Localizing Physical Quantities in Video Diffusion Models](paper-catalog.md#p664)
+- [SceneScript: Reconstructing Scenes With An Autoregressive Structured Language Model](paper-catalog.md#p666)
 
 ## 机器人与具身系统
 
-### 感知与传感融合（35）
+### 感知与传感融合（37）
 
 细分：视觉 深度 LiDAR；惯性与多传感器融合；传统 学习与混合方法
 
@@ -653,8 +661,10 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Foundation4D: Towards a unified perception and reconstruction model for autonomous vehicles](paper-catalog.md#p645)
 - [ConceptGraphs: Open-Vocabulary 3D Scene Graphs for Perception and Planning](paper-catalog.md#p654)
 - [Scan Context: Egocentric Spatial Descriptor for Place Recognition Within 3D Point Cloud Map](paper-catalog.md#p659)
+- [Graph-of-Mark: Promote Spatial Reasoning in Multimodal Language Models with Graph-Based Visual Prompting](paper-catalog.md#p665)
+- [SceneScript: Reconstructing Scenes With An Autoregressive Structured Language Model](paper-catalog.md#p666)
 
-### 定位与建图（69）
+### 定位与建图（70）
 
 细分：里程计与状态估计；SLAM 与地图
 
@@ -727,8 +737,9 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Hierarchical Open-Vocabulary 3D Scene Graphs for Language-Grounded Robot Navigation](paper-catalog.md#p655)
 - [3D-Mem: 3D Scene Memory for Embodied Exploration and Reasoning](paper-catalog.md#p656)
 - [Scan Context: Egocentric Spatial Descriptor for Place Recognition Within 3D Point Cloud Map](paper-catalog.md#p659)
+- [How Much 3D Do Video Foundation Models Encode?](paper-catalog.md#p662)
 
-### 导航与规划（27）
+### 导航与规划（28）
 
 细分：几何与运动规划；视觉语言导航；VLA 与 VLN 的任务边界
 
@@ -759,6 +770,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Hierarchical Open-Vocabulary 3D Scene Graphs for Language-Grounded Robot Navigation](paper-catalog.md#p655)
 - [TIC-VLA: A Think-in-Control Vision-Language-Action Model for Robot Navigation in Dynamic Environments](paper-catalog.md#p660)
 - [NavVerse: Benchmarking Indoor-to-Outdoor Embodied Navigation in Continuous Robot Simulation](paper-catalog.md#p661)
+- [Structured Interfaces for Automated Reasoning with 3D Scene Graphs](paper-catalog.md#p667)
 
 
 ### 运动控制（62）
@@ -916,7 +928,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Chronos Policy: Learning Robot Policies on Physical Time](paper-catalog.md#p638)
 - [TIC-VLA: A Think-in-Control Vision-Language-Action Model for Robot Navigation in Dynamic Environments](paper-catalog.md#p660)
 
-### 具身 Agents 与闭环系统（47）
+### 具身 Agents 与闭环系统（48）
 
 细分：任务理解与技能选择；行动记忆与空间记忆；规划—执行—反馈；技能获取与复用；VLA策略编排与部署
 
@@ -967,10 +979,11 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [ConceptGraphs: Open-Vocabulary 3D Scene Graphs for Perception and Planning](paper-catalog.md#p654)
 - [Don't Drop the BATON: Long-Horizon Robot Manipulation via Agentic Subtask Exploration and Transition-aware Memory](paper-catalog.md#p657)
 - [AdaHVLA: Adaptive Harnesses for Long-Horizon Vision-Language-Action Execution](paper-catalog.md#p658)
+- [Structured Interfaces for Automated Reasoning with 3D Scene Graphs](paper-catalog.md#p667)
 
 ## 跨方向方法与探索
 
-### Agent 与上下文系统（75）
+### Agent 与上下文系统（76）
 
 细分：Agent轨迹与性质验证
 
@@ -1049,9 +1062,10 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [A Programming Paradigm for Spatiotemporal Composability](paper-catalog.md#p594)
 - [Don't Drop the BATON: Long-Horizon Robot Manipulation via Agentic Subtask Exploration and Transition-aware Memory](paper-catalog.md#p657)
 - [AdaHVLA: Adaptive Harnesses for Long-Horizon Vision-Language-Action Execution](paper-catalog.md#p658)
+- [Structured Interfaces for Automated Reasoning with 3D Scene Graphs](paper-catalog.md#p667)
 
 
-### 模型科学（22）
+### 模型科学（24）
 
 细分：机制可解释性；知识存储、定位与编辑；探针分析；推理忠实性；层冗余与模式坍缩；开放模型与可复现性
 
@@ -1077,6 +1091,8 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Progress Measures for Grokking via Mechanistic Interpretability](paper-catalog.md#p177)
 - [Proving Test Set Contamination in Black Box Language Models](paper-catalog.md#p406)
 - [GPQA: A Graduate-Level Google-Proof Q&A Benchmark](paper-catalog.md#p409)
+- [The Invisible Hand of Physics: When Video Diffusion Models Know More Than They Show](paper-catalog.md#p663)
+- [Does Physics Live in the Activations? Localizing Physical Quantities in Video Diffusion Models](paper-catalog.md#p664)
 
 ### 训练科学（20）
 
@@ -1230,19 +1246,19 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 | 模态 \ 任务 | understanding | generation | decision | evaluation | analysis |
 |---|---:|---:|---:|---:|---:|
-| text | [68](#x-text-understanding) | [169](#x-text-generation) | [150](#x-text-decision) | [107](#x-text-evaluation) | [84](#x-text-analysis) |
-| image | [150](#x-image-understanding) | [66](#x-image-generation) | [146](#x-image-decision) | [50](#x-image-evaluation) | [17](#x-image-analysis) |
-| video | [39](#x-video-understanding) | [45](#x-video-generation) | [36](#x-video-decision) | [15](#x-video-evaluation) | [6](#x-video-analysis) |
+| text | [70](#x-text-understanding) | [169](#x-text-generation) | [151](#x-text-decision) | [107](#x-text-evaluation) | [85](#x-text-analysis) |
+| image | [154](#x-image-understanding) | [68](#x-image-generation) | [146](#x-image-decision) | [51](#x-image-evaluation) | [19](#x-image-analysis) |
+| video | [42](#x-video-understanding) | [46](#x-video-generation) | [36](#x-video-decision) | [17](#x-video-evaluation) | [8](#x-video-analysis) |
 | audio | [9](#x-audio-understanding) | [7](#x-audio-generation) | [2](#x-audio-decision) | [1](#x-audio-evaluation) | · |
 | action | [9](#x-action-understanding) | [37](#x-action-generation) | [184](#x-action-decision) | [42](#x-action-evaluation) | [3](#x-action-analysis) |
 | state | [38](#x-state-understanding) | [3](#x-state-generation) | [95](#x-state-decision) | [21](#x-state-evaluation) | · |
-| code | [1](#x-code-understanding) | [27](#x-code-generation) | [48](#x-code-decision) | [38](#x-code-evaluation) | [31](#x-code-analysis) |
-| multimodal | [57](#x-multimodal-understanding) | [45](#x-multimodal-generation) | [70](#x-multimodal-decision) | [39](#x-multimodal-evaluation) | [9](#x-multimodal-analysis) |
+| code | [3](#x-code-understanding) | [28](#x-code-generation) | [49](#x-code-decision) | [38](#x-code-evaluation) | [31](#x-code-analysis) |
+| multimodal | [59](#x-multimodal-understanding) | [45](#x-multimodal-generation) | [70](#x-multimodal-decision) | [40](#x-multimodal-evaluation) | [10](#x-multimodal-analysis) |
 | tabular | [1](#x-tabular-understanding) | · | · | · | · |
 
 <a id="x-text-understanding"></a>
 
-### text × understanding（68）
+### text × understanding（70）
 
 - [MiniLM: Deep Self-Attention Distillation for Task-Agnostic Compression of Pre-Trained Transformers](paper-catalog.md#p020)
 - [DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter](paper-catalog.md#p021)
@@ -1312,6 +1328,8 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [ConceptGraphs: Open-Vocabulary 3D Scene Graphs for Perception and Planning](paper-catalog.md#p654)
 - [Hierarchical Open-Vocabulary 3D Scene Graphs for Language-Grounded Robot Navigation](paper-catalog.md#p655)
 - [3D-Mem: 3D Scene Memory for Embodied Exploration and Reasoning](paper-catalog.md#p656)
+- [Graph-of-Mark: Promote Spatial Reasoning in Multimodal Language Models with Graph-Based Visual Prompting](paper-catalog.md#p665)
+- [Structured Interfaces for Automated Reasoning with 3D Scene Graphs](paper-catalog.md#p667)
 
 <a id="x-text-generation"></a>
 
@@ -1489,7 +1507,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-text-decision"></a>
 
-### text × decision（150）
+### text × decision（151）
 
 - [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](paper-catalog.md#p034)
 - [ReAct: Synergizing Reasoning and Acting in Language Models](paper-catalog.md#p040)
@@ -1641,6 +1659,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [AdaHVLA: Adaptive Harnesses for Long-Horizon Vision-Language-Action Execution](paper-catalog.md#p658)
 - [TIC-VLA: A Think-in-Control Vision-Language-Action Model for Robot Navigation in Dynamic Environments](paper-catalog.md#p660)
 - [NavVerse: Benchmarking Indoor-to-Outdoor Embodied Navigation in Continuous Robot Simulation](paper-catalog.md#p661)
+- [Structured Interfaces for Automated Reasoning with 3D Scene Graphs](paper-catalog.md#p667)
 
 <a id="x-text-evaluation"></a>
 
@@ -1756,7 +1775,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-text-analysis"></a>
 
-### text × analysis（84）
+### text × analysis（85）
 
 - [OLMo: Accelerating the Science of Language Models](paper-catalog.md#p010)
 - [ShortGPT: Layers in Large Language Models are More Redundant Than You Expect](paper-catalog.md#p022)
@@ -1842,10 +1861,11 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Solving Without Stopping: On-Policy Distillation at Small Scale](paper-catalog.md#p566)
 - [Memory in the Age of AI Agents](paper-catalog.md#p585)
 - [Multi-Agent Memory from a Computer Architecture Perspective: Visions and Challenges Ahead](paper-catalog.md#p588)
+- [Graph-of-Mark: Promote Spatial Reasoning in Multimodal Language Models with Graph-Based Visual Prompting](paper-catalog.md#p665)
 
 <a id="x-image-understanding"></a>
 
-### image × understanding（150）
+### image × understanding（154）
 
 - [A High-Fidelity Digital Twin for Robotic Manipulation Based on 3D Gaussian Splatting](paper-catalog.md#p054)
 - [Language-Grounded Hierarchical Planning and Execution with Multi-Robot 3D Scene Graphs](paper-catalog.md#p055)
@@ -1997,10 +2017,14 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Hierarchical Open-Vocabulary 3D Scene Graphs for Language-Grounded Robot Navigation](paper-catalog.md#p655)
 - [3D-Mem: 3D Scene Memory for Embodied Exploration and Reasoning](paper-catalog.md#p656)
 - [Scan Context: Egocentric Spatial Descriptor for Place Recognition Within 3D Point Cloud Map](paper-catalog.md#p659)
+- [How Much 3D Do Video Foundation Models Encode?](paper-catalog.md#p662)
+- [Does Physics Live in the Activations? Localizing Physical Quantities in Video Diffusion Models](paper-catalog.md#p664)
+- [Graph-of-Mark: Promote Spatial Reasoning in Multimodal Language Models with Graph-Based Visual Prompting](paper-catalog.md#p665)
+- [SceneScript: Reconstructing Scenes With An Autoregressive Structured Language Model](paper-catalog.md#p666)
 
 <a id="x-image-generation"></a>
 
-### image × generation（66）
+### image × generation（68）
 
 - [DINO-WM: World Models on Pre-trained Visual Features enable Zero-shot Planning](paper-catalog.md#p046)
 - [FOCUS: Object-Centric World Models for Robotics Manipulation](paper-catalog.md#p048)
@@ -2068,6 +2092,8 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [DashGaussian: Optimizing 3D Gaussian Splatting in 200 Seconds](paper-catalog.md#p651)
 - [3DGS-LM: Faster Gaussian-Splatting Optimization with Levenberg-Marquardt](paper-catalog.md#p652)
 - [Speedy-Splat: Fast 3D Gaussian Splatting with Sparse Pixels and Sparse Primitives](paper-catalog.md#p653)
+- [Does Physics Live in the Activations? Localizing Physical Quantities in Video Diffusion Models](paper-catalog.md#p664)
+- [SceneScript: Reconstructing Scenes With An Autoregressive Structured Language Model](paper-catalog.md#p666)
 
 <a id="x-image-decision"></a>
 
@@ -2222,7 +2248,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-image-evaluation"></a>
 
-### image × evaluation（50）
+### image × evaluation（51）
 
 - [LARY: A Latent Action Representation Yielding Benchmark for Generalizable Vision-to-Action Alignment](paper-catalog.md#p060)
 - [Vision-and-Language Navigation: Interpreting visually-grounded navigation instructions in real environments](paper-catalog.md#p119)
@@ -2274,10 +2300,11 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Scaling Online Exploration for Robot Agents](paper-catalog.md#p639)
 - [AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics](paper-catalog.md#p640)
 - [3D-Mem: 3D Scene Memory for Embodied Exploration and Reasoning](paper-catalog.md#p656)
+- [How Much 3D Do Video Foundation Models Encode?](paper-catalog.md#p662)
 
 <a id="x-image-analysis"></a>
 
-### image × analysis（17）
+### image × analysis（19）
 
 - [In-Datacenter Performance Analysis of a Tensor Processing Unit](paper-catalog.md#p172)
 - [The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks](paper-catalog.md#p173)
@@ -2296,10 +2323,12 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Scaling Laws for Autoregressive Generative Modeling](paper-catalog.md#p522)
 - [Scaling Vision Transformers](paper-catalog.md#p523)
 - [Structuring Sparsity: Block-Sparse Featurizers Capture Visual Concept Manifolds](paper-catalog.md#p644)
+- [Does Physics Live in the Activations? Localizing Physical Quantities in Video Diffusion Models](paper-catalog.md#p664)
+- [Graph-of-Mark: Promote Spatial Reasoning in Multimodal Language Models with Graph-Based Visual Prompting](paper-catalog.md#p665)
 
 <a id="x-video-understanding"></a>
 
-### video × understanding（39）
+### video × understanding（42）
 
 - [SlotFormer: Unsupervised Visual Dynamics Simulation with Object-Centric Models](paper-catalog.md#p042)
 - [SAVi++: Towards End-to-End Object-Centric Learning from Real-World Videos](paper-catalog.md#p043)
@@ -2340,10 +2369,13 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [InternVideo3: Agentify Foundation Models with Multimodal Contextual Reasoning](paper-catalog.md#p575)
 - [Qwen3.8-Omni: Towards Native Omni-Modal Agents](paper-catalog.md#p576)
 - [Foundation4D: Towards a unified perception and reconstruction model for autonomous vehicles](paper-catalog.md#p645)
+- [How Much 3D Do Video Foundation Models Encode?](paper-catalog.md#p662)
+- [The Invisible Hand of Physics: When Video Diffusion Models Know More Than They Show](paper-catalog.md#p663)
+- [Does Physics Live in the Activations? Localizing Physical Quantities in Video Diffusion Models](paper-catalog.md#p664)
 
 <a id="x-video-generation"></a>
 
-### video × generation（45）
+### video × generation（46）
 
 - [SlotFormer: Unsupervised Visual Dynamics Simulation with Object-Centric Models](paper-catalog.md#p042)
 - [OccWorld: Learning a 3D Occupancy World Model for Autonomous Driving](paper-catalog.md#p044)
@@ -2390,6 +2422,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [World Simulation with Video Foundation Models for Physical AI](paper-catalog.md#p571)
 - [Cosmos 3: Omnimodal World Models for Physical AI](paper-catalog.md#p574)
 - [Foundation4D: Towards a unified perception and reconstruction model for autonomous vehicles](paper-catalog.md#p645)
+- [Does Physics Live in the Activations? Localizing Physical Quantities in Video Diffusion Models](paper-catalog.md#p664)
 
 <a id="x-video-decision"></a>
 
@@ -2434,7 +2467,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-video-evaluation"></a>
 
-### video × evaluation（15）
+### video × evaluation（17）
 
 - [LARY: A Latent Action Representation Yielding Benchmark for Generalizable Vision-to-Action Alignment](paper-catalog.md#p060)
 - [nuScenes: A multimodal dataset for autonomous driving](paper-catalog.md#p214)
@@ -2451,10 +2484,12 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Gemini Robotics 2: Safety Evaluations](paper-catalog.md#p505)
 - [What Drives Success in Physical Planning with Joint-Embedding Predictive World Models?](paper-catalog.md#p578)
 - [The Planning Limits of Latent World Models](paper-catalog.md#p581)
+- [How Much 3D Do Video Foundation Models Encode?](paper-catalog.md#p662)
+- [The Invisible Hand of Physics: When Video Diffusion Models Know More Than They Show](paper-catalog.md#p663)
 
 <a id="x-video-analysis"></a>
 
-### video × analysis（6）
+### video × analysis（8）
 
 - [What Do Latent Action Models Actually Learn?](paper-catalog.md#p059)
 - [Reconstruction or Semantics? What Makes a Latent Space Useful for Robotic World Models](paper-catalog.md#p134)
@@ -2462,6 +2497,8 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [How Far is Video Generation from World Model: A Physical Law Perspective](paper-catalog.md#p369)
 - [EgoScale: Scaling Dexterous Manipulation with Diverse Egocentric Human Data](paper-catalog.md#p507)
 - [Scaling Laws for Autoregressive Generative Modeling](paper-catalog.md#p522)
+- [The Invisible Hand of Physics: When Video Diffusion Models Know More Than They Show](paper-catalog.md#p663)
+- [Does Physics Live in the Activations? Localizing Physical Quantities in Video Diffusion Models](paper-catalog.md#p664)
 
 <a id="x-audio-understanding"></a>
 
@@ -2981,13 +3018,15 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-code-understanding"></a>
 
-### code × understanding（1）
+### code × understanding（3）
 
 - [GraphCodeBERT: Pre-training Code Representations with Data Flow](paper-catalog.md#p024)
+- [SceneScript: Reconstructing Scenes With An Autoregressive Structured Language Model](paper-catalog.md#p666)
+- [Structured Interfaces for Automated Reasoning with 3D Scene Graphs](paper-catalog.md#p667)
 
 <a id="x-code-generation"></a>
 
-### code × generation（27）
+### code × generation（28）
 
 - [Large Language Monkeys: Scaling Inference Compute with Repeated Sampling](paper-catalog.md#p004)
 - [Enhancing Code Generation Performance of Smaller Models by Distilling the Reasoning Ability of LLMs](paper-catalog.md#p023)
@@ -3016,10 +3055,11 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Kimi K2.5: Visual Agentic Intelligence](paper-catalog.md#p498)
 - [Recursive Language Models](paper-catalog.md#p499)
 - [NVIDIA Nemotron 3: Efficient and Open Intelligence](paper-catalog.md#p500)
+- [SceneScript: Reconstructing Scenes With An Autoregressive Structured Language Model](paper-catalog.md#p666)
 
 <a id="x-code-decision"></a>
 
-### code × decision（48）
+### code × decision（49）
 
 - [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](paper-catalog.md#p034)
 - [Voyager: An Open-Ended Embodied Agent with Large Language Models](paper-catalog.md#p041)
@@ -3069,6 +3109,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [OpenRUA: Robot-Use Agents Are Zero-Shot Visuomotor Policies](paper-catalog.md#p637)
 - [Scaling Online Exploration for Robot Agents](paper-catalog.md#p639)
 - [AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics](paper-catalog.md#p640)
+- [Structured Interfaces for Automated Reasoning with 3D Scene Graphs](paper-catalog.md#p667)
 
 <a id="x-code-evaluation"></a>
 
@@ -3151,7 +3192,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-multimodal-understanding"></a>
 
-### multimodal × understanding（57）
+### multimodal × understanding（59）
 
 - [Language-Grounded Hierarchical Planning and Execution with Multi-Robot 3D Scene Graphs](paper-catalog.md#p055)
 - [InternVLA-A1: Unifying Understanding, Generation and Action for Robotic Manipulation](paper-catalog.md#p090)
@@ -3210,6 +3251,8 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [ConceptGraphs: Open-Vocabulary 3D Scene Graphs for Perception and Planning](paper-catalog.md#p654)
 - [Hierarchical Open-Vocabulary 3D Scene Graphs for Language-Grounded Robot Navigation](paper-catalog.md#p655)
 - [3D-Mem: 3D Scene Memory for Embodied Exploration and Reasoning](paper-catalog.md#p656)
+- [How Much 3D Do Video Foundation Models Encode?](paper-catalog.md#p662)
+- [Graph-of-Mark: Promote Spatial Reasoning in Multimodal Language Models with Graph-Based Visual Prompting](paper-catalog.md#p665)
 
 <a id="x-multimodal-generation"></a>
 
@@ -3338,7 +3381,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-multimodal-evaluation"></a>
 
-### multimodal × evaluation（39）
+### multimodal × evaluation（40）
 
 - [On scalable oversight with weak LLMs judging strong LLMs](paper-catalog.md#p033)
 - [Vision-and-Language Navigation: Interpreting visually-grounded navigation instructions in real environments](paper-catalog.md#p119)
@@ -3379,10 +3422,11 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Generalizing Manipulation Skills with a Local Coding Agent](paper-catalog.md#p610)
 - [Bridging Semantics and Physics with Constrained LLMs for Safe and Trustworthy Robotic Manipulation](paper-catalog.md#p611)
 - [3D-Mem: 3D Scene Memory for Embodied Exploration and Reasoning](paper-catalog.md#p656)
+- [How Much 3D Do Video Foundation Models Encode?](paper-catalog.md#p662)
 
 <a id="x-multimodal-analysis"></a>
 
-### multimodal × analysis（9）
+### multimodal × analysis（10）
 
 - [SFT Memorizes, RL Generalizes: A Comparative Study of Foundation Model Post-training](paper-catalog.md#p326)
 - [Reproducible scaling laws for contrastive language-image learning](paper-catalog.md#p339)
@@ -3393,6 +3437,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Cambrian-1: A Fully Open, Vision-Centric Exploration of Multimodal LLMs](paper-catalog.md#p384)
 - [Scaling Language-Free Visual Representation Learning](paper-catalog.md#p448)
 - [Scaling Laws for Autoregressive Generative Modeling](paper-catalog.md#p522)
+- [Graph-of-Mark: Promote Spatial Reasoning in Multimodal Language Models with Graph-Based Visual Prompting](paper-catalog.md#p665)
 
 <a id="x-tabular-understanding"></a>
 

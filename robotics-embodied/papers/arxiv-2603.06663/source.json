@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2603.06663",
+  "title": "Graph-of-Mark: Promote Spatial Reasoning in Multimodal Language Models with Graph-Based Visual Prompting",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2603.06663",
+  "official_url": "https://doi.org/10.1609/aaai.v40i36.40329",
+  "official_fulltext_url": "https://arxiv.org/pdf/2603.06663v2",
+  "official_html_url": "https://arxiv.org/html/2603.06663v2",
+  "arxiv_url": "https://arxiv.org/abs/2603.06663v2",
+  "read_version": "v2",
+  "version_date": "2026-03-26",
+  "version_status": "latest_verified",
+  "first_submitted": "2026-03-02",
+  "year": 2026,
+  "authors": [
+    "Giacomo Frisoni",
+    "Lorenzo Molfetta",
+    "Mattia Buzzoni",
+    "Gianluca Moro"
+  ],
+  "publication": {
+    "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+    "conference": "AAAI 2026",
+    "volume": "40",
+    "issue": "36",
+    "pages": "30726–30734",
+    "doi": "10.1609/aaai.v40i36.40329",
+    "status": "published_bibliography_verified_author_aaai_copy_read",
+    "metadata_source": "https://arxiv.org/abs/2603.06663v2",
+    "author_published_manuscript_url": "https://github.com/disi-unibo-nlp/graph-of-marks/blob/main/paper/graph_of_marks_AAAI26.pdf",
+    "author_supplementary_url": "https://github.com/disi-unibo-nlp/graph-of-marks/blob/main/paper/graph_of_marks_AAAI26_supplementary.pdf",
+    "publisher_copy_status": "Publisher landing page returned Access Denied; final publisher-hosted PDF not inspected."
+  },
+  "topic_paths": [
+    "multimodal/vlm",
+    "robotics/perception"
+  ],
+  "content_kind": "reading",
+  "reading_path": "reading.md",
+  "reading_depth": "fulltext",
+  "teaching_status": "fulltext_technical_reading",
+  "reading_boundary": "完整阅读arXiv v2共14页：正文§1–6、表1–2、图1–4、参考文献、附录A算法1–5、附录B提示模板及附录C案例图7–8。另读取作者GitHub提供的9页AAAI26主文与5页补充，文本比对并渲染核查主文第6–7页表2和图3–4，核心方法与实验图表一致；两版相关工作与引用存在修订、补充材料图号重新编号。出版商落地页拒绝访问，未读取出版商托管最终PDF。阅读SoM元数据/摘要与本库ConceptGraphs、3D-Mem精读用于关系定位；检查官方代码仓库README，未运行代码或复现实验。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "original_checked_at": "2026-11-06",
+  "source_record_updated": "2026-11-06",
+  "license": {
+    "status": "license_identified",
+    "license_urls": [
+      "https://arxiv.org/licenses/nonexclusive-distrib/1.0/license.html",
+      "https://github.com/disi-unibo-nlp/graph-of-marks/blob/main/LICENSE"
+    ],
+    "checked_at": "2026-11-06",
+    "note": "arXiv为非独占发布许可；AAAI作者稿首页声明Copyright 2026 AAAI，All rights reserved。代码仓库README标MIT，但不据此认定论文PDF可再发布。交付目录仅独立中文讲解与元数据，官方论文链接保留；PDF、文本、核图缓存位于交付目录外。"
+  },
+  "fulltext_local_status": "official_link_only_redistribution_not_granted",
+  "fulltext_local_path": null,
+  "local_reading_cache_retained": true,
+  "public_pdf_mirror": false,
+  "official_code_url": "https://github.com/disi-unibo-nlp/graph-of-marks",
+  "code_status": "official_repository_readme_inspected_not_executed",
+  "evidence_paths": [],
+  "related_readings": [
+    "robotics-embodied/papers/arxiv-2309.16650/reading.md",
+    "robotics-embodied/papers/arxiv-2411.17735/reading.md"
+  ],
+  "primary_sources": [
+    {
+      "url": "https://arxiv.org/abs/2603.06663v2",
+      "scope": "identity, authors, two-version submission history, formal AAAI citation and DOI, arXiv license"
+    },
+    {
+      "url": "https://arxiv.org/pdf/2603.06663v2",
+      "scope": "complete 14-page text and appendix; rendered Table 2, Figures 3–4 and qualitative Figures 7–8"
+    },
+    {
+      "url": "https://arxiv.org/html/2603.06663v2",
+      "scope": "section navigation and method cross-check"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/disi-unibo-nlp/graph-of-marks/main/paper/graph_of_marks_AAAI26.pdf",
+      "scope": "author-provided 9-page AAAI manuscript, copyright and main methods/experimental tables cross-check"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/disi-unibo-nlp/graph-of-marks/main/paper/graph_of_marks_AAAI26_supplementary.pdf",
+      "scope": "complete author-provided 5-page supplementary algorithms, prompt templates and qualitative examples"
+    },
+    {
+      "url": "https://github.com/disi-unibo-nlp/graph-of-marks",
+      "scope": "official implementation link, MIT claim and mismatch between present defaults and paper experiment configuration"
+    },
+    {
+      "url": "https://arxiv.org/abs/2310.11441",
+      "scope": "direct predecessor SoM identity and mark-to-region grounding mechanism"
+    }
+  ],
+  "audit_notes": [
+    "Table 2 has nine VQA model-dataset combinations; each best-performing configuration includes relation labels, contrary to §5 claim that textual IDs without relation labels generally achieve top performance.",
+    "Figure 4 Gemma/GQA visual+text bar is lower than visual-only, contrary to §5 claim that combining modalities always produces gains.",
+    "Gemma VQAv2 raw 59.9 to 71.9 is +12.0 percentage points; abstract says up to 11 percentage points.",
+    "RefCOCOg threshold is IoU>=0.9. Table 2 omits raw/segmentation-only results because ID-output setup does not apply; Figure 4 nevertheless shows corresponding raw-image bar without explaining a comparable protocol.",
+    "27 decoding conditions combine seed, temperature and top-p; reported standard deviation is across these settings, not independent dataset bootstrap confidence intervals.",
+    "Algorithm settings selected using preliminary Qwen-2.5-VL runs on GQA; validation/test separation of that selection is not specified.",
+    "Visual SG only still includes textual object names and relation labels rendered into pixels; it is not a language-free spatial-reasoning condition.",
+    "Scene graph construction introduces detector labels, depth estimates, relation rules and query filtering; existing experiments do not isolate a pure equal-information format intervention.",
+    "No temporal identity consistency or real robot execution experiment; stable IDs across frames in reading are explicitly an engineering extension.",
+    "Appendix Algorithm 3 fallback retains objects but does not explicitly restore all relations, whereas main text states both should be retained. Directional sign versus head-tail tuple convention requires implementation unit tests.",
+    "Current repository README names Depth Anything V2, YOLOv8-only defaults and WBF IoU 0.55; paper uses MiDaS, a three-detector ensemble and overlap threshold 0.9. Do not reproduce Table 2 with current defaults without configuration verification.",
+    "Author-provided AAAI manuscript and arXiv v2 differ mainly in related-work descriptions/citations, reference fixes, symbols and appendix numbering; key methods and Table 2/Figures 3–4 match on inspection."
+  ],
+  "modality_tags": [
+    "image",
+    "text",
+    "multimodal"
+  ],
+  "task_tags": [
+    "understanding",
+    "analysis"
+  ]
+}

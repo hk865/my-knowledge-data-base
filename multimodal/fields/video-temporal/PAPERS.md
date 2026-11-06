@@ -67,3 +67,9 @@
 - [Qwen3-VL](../../papers/arxiv-2511.21631/README.md)：Qwen2.5-VL 时间位置方案的直接后继，必读
 - [InternVideo3](../../papers/arxiv-2606.12195/README.md)：缓存压缩与多轮视频取证，选读
 - [Qwen3.8-Omni](../../papers/arxiv-2609.25611/README.md)：需要声音与工具闭环时交叉阅读，选读
+
+## 视频模型内部几何与物理表征
+
+- [How Much 3D Do Video Foundation Models Encode?](../../papers/arxiv-2512.19949/README.md) · 技术精读
+- [The Invisible Hand of Physics: When Video Diffusion Models Know More Than They Show](../../papers/arxiv-2606.05328/README.md) · 技术精读
+- [Does Physics Live in the Activations? Localizing Physical Quantities in Video Diffusion Models](../../papers/arxiv-2610.03154/README.md) · 技术精读
