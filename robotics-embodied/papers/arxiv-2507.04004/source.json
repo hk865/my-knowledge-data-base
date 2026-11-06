@@ -1,0 +1,67 @@
+{
+  "topic_paths": [
+    "robotics/localization-mapping"
+  ],
+  "source_type": "paper",
+  "repository": "https://github.com/APRIL-ZJU/Gaussian-LIC",
+  "repository_commit": "793b9bcb5dfdf8d114f3626b010c7fdb9df04740",
+  "verified_at": "2026-11-06",
+  "reading_status": "read",
+  "verification": "Read full PDF methods, experiments and relevant supplementary material; checked arXiv history and official code.",
+  "title": "Gaussian-LIC2: LiDAR-Inertial-Camera Gaussian Splatting SLAM",
+  "short_title": "Gaussian-LIC2",
+  "authors": [
+    "Xiaolei Lang",
+    "Jiajun Lv",
+    "Kai Tang",
+    "Laijian Li",
+    "Jianxin Huang",
+    "Lina Liu",
+    "Yong Liu",
+    "Xingxing Zuo"
+  ],
+  "venue": "The International Journal of Robotics Research (IJRR), accepted",
+  "year": 2026,
+  "arxiv_id": "2507.04004",
+  "arxiv_version": "v3",
+  "version_date": "2026-08-05",
+  "first_submission_date": "2025-07-05",
+  "url": "https://arxiv.org/abs/2507.04004",
+  "pdf_url": "https://arxiv.org/pdf/2507.04004v3",
+  "project_url": "https://xingxingzuo.github.io/gaussian_lic2/",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2507.04004",
+  "publication_caveat": "arXiv says accepted by IJRR and repository says IJRR 2026; PDF DOI remains ToBeAssigned, so no final DOI, volume or pages asserted.",
+  "schema_version": 1,
+  "resource_id": "arxiv:2507.04004",
+  "resource_kind": "paper",
+  "official_url": "https://arxiv.org/abs/2507.04004v3",
+  "official_fulltext_url": "https://arxiv.org/pdf/2507.04004v3",
+  "original_pdf_url": "https://arxiv.org/pdf/2507.04004v3",
+  "read_version": "v3",
+  "verified_original_version": "2507.04004v3",
+  "version_status": "verified_arxiv_fixed_version",
+  "reading_depth": "full_main_text_technical_reading",
+  "teaching_status": "technical_reading_created",
+  "content_kind": "reading",
+  "reading_path": "reading.md",
+  "reading_boundary": "已阅读全文方法、实验和相关补充材料，并核对固定提交实现；未本地运行或独立复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "fulltext_local_status": "official_link_only_not_mirrored",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-11-06",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "未单独核验再分发许可，本次只提供官方原文链接，不公开镜像PDF。"
+  },
+  "modality_tags": [
+    "image",
+    "state"
+  ],
+  "task_tags": [
+    "understanding"
+  ]
+}

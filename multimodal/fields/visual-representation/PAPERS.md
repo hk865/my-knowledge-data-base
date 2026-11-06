@@ -94,3 +94,7 @@
 ## 生成任务对表征的使用
 
 - [Diffusion Transformers with Representation Autoencoders](../../papers/arxiv-2510.11690/README.md)（RAE） · 2025 · New York University · 文献卡 · 冻结视觉表征并训练解码器，把表征用作扩散潜空间；主归属[视觉生成](../generation/README.md)
+
+## 视觉概念结构与稀疏表征
+
+- [Structuring Sparsity: Block-Sparse Featurizers Capture Visual Concept Manifolds](../../papers/arxiv-2606.25234/README.md) · 2026 · 技术精读

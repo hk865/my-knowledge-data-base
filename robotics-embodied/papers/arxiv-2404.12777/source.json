@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2404.12777",
+  "title": "EfficientGS: Streamlining Gaussian Splatting for Large-Scale High-Resolution Scene Representation",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2404.12777",
+  "official_url": "https://arxiv.org/abs/2404.12777",
+  "official_fulltext_url": "https://arxiv.org/html/2404.12777v1",
+  "read_version": "v1",
+  "version_status": "verified_original_version",
+  "year": 2024,
+  "authors": [
+    "Wenkai Liu",
+    "Tao Guan",
+    "Bin Zhu",
+    "Lili Ju",
+    "Zikai Song",
+    "Dan Li",
+    "Yuesong Wang",
+    "Wei Yang"
+  ],
+  "venue": null,
+  "arxiv_categories": [
+    "cs.CV"
+  ],
+  "reading_depth": "fulltext_core_method_implementation_selected_experiments_and_limitations",
+  "content_kind": "reading",
+  "reading_path": "reading.md",
+  "reading_boundary": "已精读原文方法、实现与核心实验表，并写独立机制算例；未运行代码或独立复现，未声称逐图审计全部附录。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "not_reverified_for_this_package",
+    "checked_at": "2026-11-06",
+    "note": "本包仅放原创精读及官方原文链接，不镜像论文全文；未用未核验许可主张全文再分发权。"
+  },
+  "fulltext_local_status": "link_only_not_mirrored",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-11-06",
+  "evidence_paths": [],
+  "publication_note": "实际阅读版本为2024年arXiv v1；未核对后续期刊版差异，不把本稿数字冒充后续正式版。",
+  "topic_paths": [
+    "robotics/localization-mapping"
+  ],
+  "modality_tags": [
+    "image"
+  ],
+  "task_tags": [
+    "generation"
+  ]
+}

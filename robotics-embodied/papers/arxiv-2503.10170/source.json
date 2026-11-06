@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "resource_kind": "paper",
+  "reading_depth": "full_main_text_technical_reading",
+  "teaching_status": "technical_reading_created",
+  "content_kind": "reading",
+  "reading_path": "reading.md",
+  "reading_boundary": "已阅读正文全部方法、实验、主要图表与局限；未独立复现实验。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "fulltext_local_status": "official_link_only_not_mirrored",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-11-06",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "topic_paths": [
+    "robotics/localization-mapping"
+  ],
+  "resource_id": "arxiv:2503.10170",
+  "title": "GS-SDF: LiDAR-Augmented Gaussian Splatting and Neural SDF for Geometrically Consistent Rendering and Reconstruction",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2503.10170",
+  "official_url": "https://arxiv.org/abs/2503.10170",
+  "official_fulltext_url": "https://arxiv.org/pdf/2503.10170v2",
+  "original_pdf_url": "https://arxiv.org/pdf/2503.10170v2",
+  "read_version": "v2",
+  "verified_original_version": "2503.10170v2",
+  "version_status": "verified_arxiv_fixed_version",
+  "authors": [
+    "Jianheng Liu",
+    "Yunfei Wan",
+    "Bowen Wang",
+    "Chunran Zheng",
+    "Jiarong Lin",
+    "Fu Zhang"
+  ],
+  "year": 2025,
+  "venue": "IROS 2025",
+  "license": {
+    "status": "not_audited",
+    "license_url": null,
+    "note": "arXiv HTML 标注 perpetual non-exclusive license；不据此镜像论文全文。"
+  },
+  "version_notes": [
+    "arXiv v2 2025-07-29，论文注明 IROS2025；未取得出版社正式排版全文比较。",
+    "官方 README BibTeX 错填 arXiv:2108.10470，正确身份是2503.10170。",
+    "核对官方代码固定提交 a7372eb911f3d92a0200c6989ba131072622e3fd：颜色预热冻结/解冻、BCE 参数次序、冻结SDF开关；未安装运行。",
+    "当前代码默认值与论文超参存在差别，例如 COLMAP 示例SDF5000步、base.yaml detach_sdf_grad 注释与默认值差异。"
+  ],
+  "modality_tags": [
+    "image",
+    "state"
+  ],
+  "task_tags": [
+    "understanding"
+  ]
+}

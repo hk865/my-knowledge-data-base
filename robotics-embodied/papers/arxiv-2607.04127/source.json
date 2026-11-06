@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "resource_kind": "paper",
+  "reading_depth": "full_main_text_technical_reading",
+  "teaching_status": "technical_reading_created",
+  "content_kind": "reading",
+  "reading_path": "reading.md",
+  "reading_boundary": "已阅读正文全部方法、实验、主要图表与局限；未独立复现实验。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "fulltext_local_status": "official_link_only_not_mirrored",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-11-06",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "topic_paths": [
+    "robotics/localization-mapping"
+  ],
+  "resource_id": "arxiv:2607.04127",
+  "title": "Real-Time LiDAR Gaussian Splatting SLAM",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2607.04127",
+  "official_url": "https://arxiv.org/abs/2607.04127",
+  "official_fulltext_url": "https://arxiv.org/pdf/2607.04127v1",
+  "original_pdf_url": "https://arxiv.org/pdf/2607.04127v1",
+  "read_version": "v1",
+  "verified_original_version": "2607.04127v1",
+  "version_status": "verified_arxiv_fixed_version",
+  "authors": [
+    "SeungJun Tak",
+    "Yewon Jeon",
+    "Jaeik Hwang",
+    "Suk Min Hwang",
+    "Seongbo Ha",
+    "Hyeonwoo Yu"
+  ],
+  "year": 2026,
+  "venue": "ECCV 2026（官方仓库标注）",
+  "license": {
+    "status": "not_audited",
+    "identifier": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "note": "arXiv HTML 标注 CC BY 4.0；尚未单独打开许可目的页，本次只保存官方链接。"
+  },
+  "version_notes": [
+    "arXiv v1 2026-07-05，摘要页短标题不含副标题，全文与官方仓库含副标题。",
+    "官方仓库链接 Springer DOI 10.1007/978-3-032-37595-7_34，未取得出版社全文与arXiv逐项比对。",
+    "Keble主实验和消融表ATE数值不同，正文按表格分别引用。"
+  ],
+  "modality_tags": [
+    "image",
+    "state"
+  ],
+  "task_tags": [
+    "understanding"
+  ],
+  "previous_titles": [
+    "Real-Time LiDAR Gaussian Splatting SLAM via Geometry-Aware Covariance Coupling"
+  ]
+}

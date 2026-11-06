@@ -766,5 +766,57 @@
   {
     "title": "知识库分支整合审计：2026-11-01",
     "file": "docs/branch-integration-2026-11-01.md"
+  },
+  {
+    "title": "GS-SDF: LiDAR-Augmented Gaussian Splatting and Neural SDF for Geometrically Consistent Rendering and Reconstruction 精读",
+    "file": "robotics-embodied/papers/arxiv-2503.10170/reading.md"
+  },
+  {
+    "title": "Real-Time LiDAR Gaussian Splatting SLAM 精读",
+    "file": "robotics-embodied/papers/arxiv-2607.04127/reading.md"
+  },
+  {
+    "title": "Ultra-Fusion: A Resilient Tightly-Coupled Multi-Sensor Fusion SLAM Framework under Sensor Degradation and Spatiotemporal Perturbation for Intelligent Transportation Systems 精读",
+    "file": "robotics-embodied/papers/arxiv-2606.21223/reading.md"
+  },
+  {
+    "title": "Foundation4D: Towards a unified perception and reconstruction model for autonomous vehicles 精读",
+    "file": "robotics-embodied/papers/arxiv-2610.30340/reading.md"
+  },
+  {
+    "title": "Gaussian-LIC: Real-Time Photo-Realistic SLAM with Gaussian Splatting and LiDAR-Inertial-Camera Fusion 精读",
+    "file": "robotics-embodied/papers/arxiv-2404.06926/reading.md"
+  },
+  {
+    "title": "Gaussian-LIC2: LiDAR-Inertial-Camera Gaussian Splatting SLAM 精读",
+    "file": "robotics-embodied/papers/arxiv-2507.04004/reading.md"
+  },
+  {
+    "title": "AI-IO: An Aerodynamics-Inspired Real-Time Inertial Odometry for Quadrotors 精读",
+    "file": "robotics-embodied/papers/arxiv-2603.00597/reading.md"
+  },
+  {
+    "title": "EfficientGS: Streamlining Gaussian Splatting for Large-Scale High-Resolution Scene Representation 精读",
+    "file": "robotics-embodied/papers/arxiv-2404.12777/reading.md"
+  },
+  {
+    "title": "Taming 3DGS: High-Quality Radiance Fields with Limited Resources 精读",
+    "file": "robotics-embodied/papers/arxiv-2406.15643/reading.md"
+  },
+  {
+    "title": "DashGaussian: Optimizing 3D Gaussian Splatting in 200 Seconds 精读",
+    "file": "robotics-embodied/papers/arxiv-2503.18402/reading.md"
+  },
+  {
+    "title": "3DGS-LM: Faster Gaussian-Splatting Optimization with Levenberg-Marquardt 精读",
+    "file": "robotics-embodied/papers/arxiv-2409.12892/reading.md"
+  },
+  {
+    "title": "Speedy-Splat: Fast 3D Gaussian Splatting with Sparse Pixels and Sparse Primitives 精读",
+    "file": "robotics-embodied/papers/arxiv-2412.00578/reading.md"
+  },
+  {
+    "title": "Structuring Sparsity 精读",
+    "file": "multimodal/papers/arxiv-2606.25234/reading.md"
   }
 ]

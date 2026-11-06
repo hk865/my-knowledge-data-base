@@ -162,3 +162,7 @@
 - [Cosmos 3: Omnimodal World Models for Physical AI](papers/arxiv-2606.02800/README.md) · 2026 · 文献卡，暂无独立精读
 - [InternVideo3: Agentify Foundation Models with Multimodal Contextual Reasoning](papers/arxiv-2606.12195/README.md) · 2026 · 文献卡，暂无独立精读
 - [Qwen3.8-Omni: Towards Native Omni-Modal Agents](papers/arxiv-2609.25611/README.md) · 2026 · 文献卡，暂无独立精读
+
+## 2026年11月6日文献与资料增量
+
+- [Structuring Sparsity: Block-Sparse Featurizers Capture Visual Concept Manifolds](papers/arxiv-2606.25234/README.md) · 2026 · 技术精读

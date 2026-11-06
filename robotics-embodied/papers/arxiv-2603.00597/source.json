@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2603.00597",
+  "title": "AI-IO: An Aerodynamics-Inspired Real-Time Inertial Odometry for Quadrotors",
+  "resource_kind": "paper",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2603.00597",
+  "official_url": "https://arxiv.org/abs/2603.00597",
+  "official_fulltext_url": "https://arxiv.org/html/2603.00597v1",
+  "read_version": "v1",
+  "version_status": "latest_arxiv_version_v1_checked_on_2026_11_06",
+  "first_submitted": "2026-02-28",
+  "version_date": "2026-02-28",
+  "year": 2026,
+  "authors": [
+    "Jiahao Cui",
+    "Feng Yu",
+    "Linzuo Zhang",
+    "Yu Hu",
+    "Danping Zou"
+  ],
+  "equal_contribution_authors": [
+    "Jiahao Cui",
+    "Feng Yu"
+  ],
+  "corresponding_authors": [
+    "Danping Zou"
+  ],
+  "affiliations": [
+    "Shanghai Key Laboratory of Navigation and Location-Based Services, Shanghai Jiao Tong University"
+  ],
+  "publication_status": {
+    "venue": "ICRA 2026",
+    "basis": "Official project page labels ICRA 2026; repository description agrees.",
+    "final_publisher_version_checked": false,
+    "publisher_doi_verified": false
+  },
+  "topic_paths": [
+    "robotics/localization-mapping"
+  ],
+  "modality_tags": [
+    "image",
+    "state"
+  ],
+  "task_tags": [
+    "understanding"
+  ],
+  "content_kind": "reading",
+  "reading_depth": "full_main_text_figures_tables_and_core_code_reviewed",
+  "reading_path": "reading.md",
+  "reading_boundary": "逐节阅读 arXiv v1 正文§I–V与参考文献，核对Fig.1–9及Table I–II；读取arXiv HTML/PDF和官方项目PDF，视觉复核方法图与公式所在PDF页；对照官方代码固定提交5866134d5e9e20c082a32f06a59e99abb9049a15的网络、输入/标签、数据预处理、损失、不确定性参数化、EKF传播/更新、GT初始化及误差统计实现。未逐条核读全部引用文献，未下载并运行权重/完整数据，未复现实验或实飞。",
+  "teaching_status": "technical_reading_with_equations_numeric_examples_evidence_and_code_boundaries",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "license_identified",
+    "license_urls": [
+      "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+    ],
+    "checked_at": "2026-11-06",
+    "note": "arXiv v1标注CC BY-NC-ND 4.0；本库仅发布原创中文解读和官方链接，不镜像论文PDF。代码仓库MIT许可与论文许可分开记录。"
+  },
+  "code_license": {
+    "spdx_id": "MIT",
+    "license_url": "https://github.com/SJTU-ViSYS-team/AI-IO/blob/5866134d5e9e20c082a32f06a59e99abb9049a15/LICENSE",
+    "checked_at": "2026-11-06"
+  },
+  "fulltext_local_status": "read_locally_official_fulltext_not_for_public_mirror",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-11-06",
+  "legacy_paths": [],
+  "evidence_paths": [],
+  "source_origin": "recent_user_discussion_then_independent_fulltext_and_official_code_review",
+  "verification_status": "official_identity_full_main_text_and_core_code_checked_not_reproduced",
+  "verification_sources": [
+    "https://arxiv.org/abs/2603.00597",
+    "https://arxiv.org/html/2603.00597v1",
+    "https://arxiv.org/pdf/2603.00597v1",
+    "https://csfalpha.github.io/AI-IO.github.io/",
+    "https://csfalpha.github.io/AI-IO.github.io/static/AI-IO_paper.pdf",
+    "https://github.com/SJTU-ViSYS-team/AI-IO/tree/5866134d5e9e20c082a32f06a59e99abb9049a15"
+  ],
+  "project_url": "https://csfalpha.github.io/AI-IO.github.io/",
+  "code_url": "https://github.com/SJTU-ViSYS-team/AI-IO",
+  "code_commit": "5866134d5e9e20c082a32f06a59e99abb9049a15",
+  "research_role": "quadrotor_learned_inertial_velocity_with_rotor_measurements",
+  "training_boundary": "有监督学习机体系速度与对角不确定性；推理期包含转速经验归一化统计更新；气动方程指导输入设计，未作为显式PINN残差损失。",
+  "chat_evidence": [
+    {
+      "role": "user",
+      "date": "2026-11-05",
+      "association": "询问上海交通大学、无人机IMU、阻力与运动预测相关论文；本篇为核对该线索后的相关文献，不表示用户已阅读或认可全部结论。"
+    }
+  ],
+  "implementation_caveats": [
+    "Table I与Table II中的Net结果使用真值姿态转换预测速度；不能等同完整独立姿态估计。",
+    "main_filter.py默认开启真值初始状态与离线IMU偏置标定。",
+    "论文式(4)旋转指数的时间步位置与官方正确实现有排版差异；式(9)协方差更新右乘逆矩阵写法与标准Joseph形式及代码实现不一致。",
+    "转速归一化update在eval时仍调用；批量测试与逐次在线输入应明确并统一统计量更新协议。",
+    "二次阻力符号、旋转参考系项的完整推导、未知风和未知气动参数下的系统可观测性需要进一步核实。"
+  ]
+}

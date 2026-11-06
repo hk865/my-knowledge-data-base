@@ -1,6 +1,6 @@
 # 全库论文总目录
 
-共 640 个去重资源（566 篇论文、33 篇官方技术报告、5 个代码仓库、15 篇官方博客、17 份官方技术文档、4 篇作者文章）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
+共 653 个去重资源（579 篇论文、33 篇官方技术报告、5 个代码仓库、15 篇官方博客、17 份官方技术文档、4 篇作者文章）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
 
 身份核验、助手教学进度和用户阅读状态分开。历史来源保留原角色与证据局限，不将助手推荐写成用户提供，也不将教学完成写成用户已读。
 
@@ -6766,6 +6766,136 @@
 - 身份核验：not_recorded
 - 用户阅读状态：unknown
 - [独立讲解](../robotics-embodied/papers/arxiv-2610.28589/reading.md)
+
+<a id="p641"></a>
+## p641 · GS-SDF: LiDAR-Augmented Gaussian Splatting and Neural SDF for Geometrically Consistent Rendering and Reconstruction
+
+- 标识：arxiv:2503.10170
+- 原文 / 官方入口：https://arxiv.org/abs/2503.10170
+- 主题：robotics/localization-mapping
+- 身份核验：not_recorded
+- 用户阅读状态：unknown
+- [独立讲解](../robotics-embodied/papers/arxiv-2503.10170/reading.md)
+
+<a id="p642"></a>
+## p642 · Real-Time LiDAR Gaussian Splatting SLAM
+
+- 标识：arxiv:2607.04127
+- 原文 / 官方入口：https://arxiv.org/abs/2607.04127
+- 主题：robotics/localization-mapping
+- 身份核验：not_recorded
+- 用户阅读状态：unknown
+- [独立讲解](../robotics-embodied/papers/arxiv-2607.04127/reading.md)
+
+<a id="p643"></a>
+## p643 · Ultra-Fusion: A Resilient Tightly-Coupled Multi-Sensor Fusion SLAM Framework under Sensor Degradation and Spatiotemporal Perturbation for Intelligent Transportation Systems
+
+- 标识：arxiv:2606.21223
+- 原文 / 官方入口：https://arxiv.org/abs/2606.21223
+- 主题：robotics/localization-mapping
+- 身份核验：not_recorded
+- 用户阅读状态：unknown
+- [独立讲解](../robotics-embodied/papers/arxiv-2606.21223/reading.md)
+
+<a id="p644"></a>
+## p644 · Structuring Sparsity: Block-Sparse Featurizers Capture Visual Concept Manifolds
+
+- 标识：arxiv:2606.25234
+- 原文 / 官方入口：https://arxiv.org/abs/2606.25234
+- 主题：multimodal/visual-representation
+- 身份核验：not_recorded
+- 用户阅读状态：unknown
+- [独立讲解](../multimodal/papers/arxiv-2606.25234/reading.md)
+
+<a id="p645"></a>
+## p645 · Foundation4D: Towards a unified perception and reconstruction model for autonomous vehicles
+
+- 标识：arxiv:2610.30340
+- 原文 / 官方入口：https://arxiv.org/abs/2610.30340v1
+- 主题：robotics/perception, robotics/localization-mapping
+- 身份核验：not_recorded
+- 用户阅读状态：unknown
+- [独立讲解](../robotics-embodied/papers/arxiv-2610.30340/reading.md)
+
+<a id="p646"></a>
+## p646 · Gaussian-LIC: Real-Time Photo-Realistic SLAM with Gaussian Splatting and LiDAR-Inertial-Camera Fusion
+
+- 标识：arxiv:2404.06926
+- 原文 / 官方入口：https://arxiv.org/abs/2404.06926v3
+- 主题：robotics/localization-mapping
+- 身份核验：not_recorded
+- 用户阅读状态：unknown
+- [独立讲解](../robotics-embodied/papers/arxiv-2404.06926/reading.md)
+
+<a id="p647"></a>
+## p647 · Gaussian-LIC2: LiDAR-Inertial-Camera Gaussian Splatting SLAM
+
+- 标识：arxiv:2507.04004
+- 原文 / 官方入口：https://arxiv.org/abs/2507.04004v3
+- 主题：robotics/localization-mapping
+- 身份核验：not_recorded
+- 用户阅读状态：unknown
+- [独立讲解](../robotics-embodied/papers/arxiv-2507.04004/reading.md)
+
+<a id="p648"></a>
+## p648 · AI-IO: An Aerodynamics-Inspired Real-Time Inertial Odometry for Quadrotors
+
+- 标识：arxiv:2603.00597
+- 原文 / 官方入口：https://arxiv.org/abs/2603.00597
+- 主题：robotics/localization-mapping
+- 身份核验：official_identity_full_main_text_and_core_code_checked_not_reproduced
+- 用户阅读状态：unknown
+- [独立讲解](../robotics-embodied/papers/arxiv-2603.00597/reading.md)
+
+<a id="p649"></a>
+## p649 · EfficientGS: Streamlining Gaussian Splatting for Large-Scale High-Resolution Scene Representation
+
+- 标识：arxiv:2404.12777
+- 原文 / 官方入口：https://arxiv.org/abs/2404.12777
+- 主题：robotics/localization-mapping
+- 身份核验：not_recorded
+- 用户阅读状态：unknown
+- [独立讲解](../robotics-embodied/papers/arxiv-2404.12777/reading.md)
+
+<a id="p650"></a>
+## p650 · Taming 3DGS: High-Quality Radiance Fields with Limited Resources
+
+- 标识：arxiv:2406.15643
+- 原文 / 官方入口：https://arxiv.org/abs/2406.15643
+- 主题：robotics/localization-mapping
+- 身份核验：not_recorded
+- 用户阅读状态：unknown
+- [独立讲解](../robotics-embodied/papers/arxiv-2406.15643/reading.md)
+
+<a id="p651"></a>
+## p651 · DashGaussian: Optimizing 3D Gaussian Splatting in 200 Seconds
+
+- 标识：arxiv:2503.18402
+- 原文 / 官方入口：https://arxiv.org/abs/2503.18402
+- 主题：robotics/localization-mapping
+- 身份核验：not_recorded
+- 用户阅读状态：unknown
+- [独立讲解](../robotics-embodied/papers/arxiv-2503.18402/reading.md)
+
+<a id="p652"></a>
+## p652 · 3DGS-LM: Faster Gaussian-Splatting Optimization with Levenberg-Marquardt
+
+- 标识：arxiv:2409.12892
+- 原文 / 官方入口：https://arxiv.org/abs/2409.12892
+- 主题：robotics/localization-mapping
+- 身份核验：not_recorded
+- 用户阅读状态：unknown
+- [独立讲解](../robotics-embodied/papers/arxiv-2409.12892/reading.md)
+
+<a id="p653"></a>
+## p653 · Speedy-Splat: Fast 3D Gaussian Splatting with Sparse Pixels and Sparse Primitives
+
+- 标识：arxiv:2412.00578
+- 原文 / 官方入口：https://arxiv.org/abs/2412.00578
+- 主题：robotics/localization-mapping
+- 身份核验：not_recorded
+- 用户阅读状态：unknown
+- [独立讲解](../robotics-embodied/papers/arxiv-2412.00578/reading.md)
 
 ## 2026年10月3日既有条目更新
 

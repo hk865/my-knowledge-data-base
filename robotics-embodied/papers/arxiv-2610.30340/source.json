@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2610.30340",
+  "title": "Foundation4D: Towards a unified perception and reconstruction model for autonomous vehicles",
+  "resource_kind": "paper",
+  "publication_type": "arxiv_preprint_white_paper",
+  "publication_status": "arxiv_v1; no peer-reviewed venue asserted",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2610.30340",
+  "official_url": "https://arxiv.org/abs/2610.30340v1",
+  "official_fulltext_url": "https://arxiv.org/html/2610.30340v1",
+  "original_pdf_url": "https://arxiv.org/pdf/2610.30340v1",
+  "project_url": "https://research.nvidia.com/labs/sil/projects/foundation4d/",
+  "read_version": "v1",
+  "verified_original_version": "2610.30340v1",
+  "version_status": "verified_arxiv_single_version",
+  "year": 2026,
+  "published_date": "2026-10-21",
+  "arxiv_categories": [
+    "cs.CV"
+  ],
+  "authors": [
+    "NVIDIA",
+    "Sérgio Agostinho",
+    "Maximilian Apodaca",
+    "Emmanuel Attia",
+    "Guillem Braso",
+    "George Dong",
+    "Ilya Fedorov",
+    "Michele Fenzi",
+    "Gang Huang",
+    "Jiahui Huang",
+    "Shengyu Huang",
+    "Bingxin Ke",
+    "Laura Leal-Taixé",
+    "Kuan-Ting Lee",
+    "Mingxuan Liu",
+    "Tian Liu",
+    "Tim Meinhardt",
+    "Aljoša Ošep",
+    "Naveen Kumar Rai",
+    "Kefei Ren",
+    "Cristiano Saltori",
+    "Keqiang Wu",
+    "Ning Xu",
+    "Fei Xue",
+    "Jin-Bey Yu",
+    "Lei Zhang",
+    "Qunjie Zhou"
+  ],
+  "author_note": "The paper title page uses NVIDIA as group author; the arXiv author listing names 26 individual contributors after NVIDIA. Appendix A groups contributions by role.",
+  "reading_depth": "fulltext_core_methods_training_selected_experiments_and_limitations",
+  "content_kind": "reading",
+  "reading_path": "reading.md",
+  "reading_boundary": "已阅读§3架构与任务损失、§4训练阶段/冻结/加权、§7.1消融/§7.4高斯评估/§7.5多任务与速度、§8流程及§9局限，并核对官方项目；未逐表审计全部基准，未运行代码。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "verified_redistributable",
+    "identifier": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidence_url": "https://arxiv.org/abs/2610.30340v1",
+    "verification_method": "Opened the arXiv Access Paper view-license link and read its CC BY 4.0 destination; applies to this deposited version.",
+    "checked_at": "2026-11-06"
+  },
+  "fulltext_local_status": "link_only_not_mirrored",
+  "fulltext_local_path": null,
+  "fulltext_publication_note": "仅提供官方原文链接，不公开镜像论文PDF。",
+  "source_record_updated": "2026-11-06",
+  "evidence_paths": [],
+  "unverified": [
+    "Loss-weight search process and candidate ranges",
+    "Gaussian-head warm-up update count",
+    "Equal-budget freeze/unfreeze ablation",
+    "From-scratch joint four-task training benefit"
+  ],
+  "topic_paths": [
+    "robotics/perception",
+    "robotics/localization-mapping"
+  ],
+  "modality_tags": [
+    "video",
+    "image"
+  ],
+  "task_tags": [
+    "understanding",
+    "generation"
+  ]
+}

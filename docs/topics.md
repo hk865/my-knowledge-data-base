@@ -342,7 +342,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 ## 多模态与世界表征
 
-### 视觉表征（33）
+### 视觉表征（34）
 
 细分：视觉编码器；局部与全局表征；自监督视觉学习
 
@@ -379,6 +379,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Rich feature hierarchies for accurate object detection and semantic segmentation](paper-catalog.md#p483)
 - [Scaling Vision Transformers](paper-catalog.md#p523)
 - [Diffusion Transformers with Representation Autoencoders](paper-catalog.md#p570)
+- [Structuring Sparsity: Block-Sparse Featurizers Capture Visual Concept Manifolds](paper-catalog.md#p644)
 
 ### 图文对齐（22）
 
@@ -613,7 +614,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 ## 机器人与具身系统
 
-### 感知与传感融合（32）
+### 感知与传感融合（33）
 
 细分：视觉 深度 LiDAR；惯性与多传感器融合；传统 学习与混合方法
 
@@ -649,8 +650,9 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [FoundationStereo: Zero-Shot Stereo Matching](paper-catalog.md#p513)
 - [Fast-FoundationStereo: Real-Time Zero-Shot Stereo Matching](paper-catalog.md#p577)
 - [Lite Any Stereo V2: Faster and Stronger Efficient Zero-Shot Stereo Matching](paper-catalog.md#p579)
+- [Foundation4D: Towards a unified perception and reconstruction model for autonomous vehicles](paper-catalog.md#p645)
 
-### 定位与建图（53）
+### 定位与建图（65）
 
 细分：里程计与状态估计；SLAM 与地图
 
@@ -707,6 +709,18 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Dynamic-LIVO: A Dynamic-Aware LiDAR-Inertial-Visual Odometry System Using Spatio-Temporal Normals](paper-catalog.md#p623)
 - [RT-LIVO: Semantic and Motion-Aware LiDAR-Inertial-Visual Odometry for Robust Mapping in Dynamic Environments](paper-catalog.md#p624)
 - [Towards Robust Sensor-Fusion Ground SLAM: A Comprehensive Benchmark and A Resilient Framework](paper-catalog.md#p625)
+- [GS-SDF: LiDAR-Augmented Gaussian Splatting and Neural SDF for Geometrically Consistent Rendering and Reconstruction](paper-catalog.md#p641)
+- [Real-Time LiDAR Gaussian Splatting SLAM](paper-catalog.md#p642)
+- [Ultra-Fusion: A Resilient Tightly-Coupled Multi-Sensor Fusion SLAM Framework under Sensor Degradation and Spatiotemporal Perturbation for Intelligent Transportation Systems](paper-catalog.md#p643)
+- [Foundation4D: Towards a unified perception and reconstruction model for autonomous vehicles](paper-catalog.md#p645)
+- [Gaussian-LIC: Real-Time Photo-Realistic SLAM with Gaussian Splatting and LiDAR-Inertial-Camera Fusion](paper-catalog.md#p646)
+- [Gaussian-LIC2: LiDAR-Inertial-Camera Gaussian Splatting SLAM](paper-catalog.md#p647)
+- [AI-IO: An Aerodynamics-Inspired Real-Time Inertial Odometry for Quadrotors](paper-catalog.md#p648)
+- [EfficientGS: Streamlining Gaussian Splatting for Large-Scale High-Resolution Scene Representation](paper-catalog.md#p649)
+- [Taming 3DGS: High-Quality Radiance Fields with Limited Resources](paper-catalog.md#p650)
+- [DashGaussian: Optimizing 3D Gaussian Splatting in 200 Seconds](paper-catalog.md#p651)
+- [3DGS-LM: Faster Gaussian-Splatting Optimization with Levenberg-Marquardt](paper-catalog.md#p652)
+- [Speedy-Splat: Fast 3D Gaussian Splatting with Sparse Pixels and Sparse Primitives](paper-catalog.md#p653)
 
 ### 导航与规划（24）
 
@@ -1202,11 +1216,11 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 | 模态 \ 任务 | understanding | generation | decision | evaluation | analysis |
 |---|---:|---:|---:|---:|---:|
 | text | [65](#x-text-understanding) | [169](#x-text-generation) | [143](#x-text-decision) | [106](#x-text-evaluation) | [84](#x-text-analysis) |
-| image | [139](#x-image-understanding) | [60](#x-image-generation) | [139](#x-image-decision) | [49](#x-image-evaluation) | [16](#x-image-analysis) |
-| video | [38](#x-video-understanding) | [44](#x-video-generation) | [36](#x-video-decision) | [15](#x-video-evaluation) | [6](#x-video-analysis) |
+| image | [146](#x-image-understanding) | [66](#x-image-generation) | [139](#x-image-decision) | [49](#x-image-evaluation) | [17](#x-image-analysis) |
+| video | [39](#x-video-understanding) | [45](#x-video-generation) | [36](#x-video-decision) | [15](#x-video-evaluation) | [6](#x-video-analysis) |
 | audio | [9](#x-audio-understanding) | [7](#x-audio-generation) | [2](#x-audio-decision) | [1](#x-audio-evaluation) | · |
 | action | [9](#x-action-understanding) | [37](#x-action-generation) | [180](#x-action-decision) | [42](#x-action-evaluation) | [3](#x-action-analysis) |
-| state | [31](#x-state-understanding) | [3](#x-state-generation) | [95](#x-state-decision) | [21](#x-state-evaluation) | · |
+| state | [37](#x-state-understanding) | [3](#x-state-generation) | [95](#x-state-decision) | [21](#x-state-evaluation) | · |
 | code | [1](#x-code-understanding) | [27](#x-code-generation) | [48](#x-code-decision) | [38](#x-code-evaluation) | [31](#x-code-analysis) |
 | multimodal | [54](#x-multimodal-understanding) | [45](#x-multimodal-generation) | [65](#x-multimodal-decision) | [38](#x-multimodal-evaluation) | [9](#x-multimodal-analysis) |
 | tabular | [1](#x-tabular-understanding) | · | · | · | · |
@@ -1805,7 +1819,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-image-understanding"></a>
 
-### image × understanding（139）
+### image × understanding（146）
 
 - [A High-Fidelity Digital Twin for Robotic Manipulation Based on 3D Gaussian Splatting](paper-catalog.md#p054)
 - [Language-Grounded Hierarchical Planning and Execution with Multi-Robot 3D Scene Graphs](paper-catalog.md#p055)
@@ -1946,10 +1960,17 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Dynamic-LIVO: A Dynamic-Aware LiDAR-Inertial-Visual Odometry System Using Spatio-Temporal Normals](paper-catalog.md#p623)
 - [RT-LIVO: Semantic and Motion-Aware LiDAR-Inertial-Visual Odometry for Robust Mapping in Dynamic Environments](paper-catalog.md#p624)
 - [Towards Robust Sensor-Fusion Ground SLAM: A Comprehensive Benchmark and A Resilient Framework](paper-catalog.md#p625)
+- [GS-SDF: LiDAR-Augmented Gaussian Splatting and Neural SDF for Geometrically Consistent Rendering and Reconstruction](paper-catalog.md#p641)
+- [Real-Time LiDAR Gaussian Splatting SLAM](paper-catalog.md#p642)
+- [Ultra-Fusion: A Resilient Tightly-Coupled Multi-Sensor Fusion SLAM Framework under Sensor Degradation and Spatiotemporal Perturbation for Intelligent Transportation Systems](paper-catalog.md#p643)
+- [Foundation4D: Towards a unified perception and reconstruction model for autonomous vehicles](paper-catalog.md#p645)
+- [Gaussian-LIC: Real-Time Photo-Realistic SLAM with Gaussian Splatting and LiDAR-Inertial-Camera Fusion](paper-catalog.md#p646)
+- [Gaussian-LIC2: LiDAR-Inertial-Camera Gaussian Splatting SLAM](paper-catalog.md#p647)
+- [AI-IO: An Aerodynamics-Inspired Real-Time Inertial Odometry for Quadrotors](paper-catalog.md#p648)
 
 <a id="x-image-generation"></a>
 
-### image × generation（60）
+### image × generation（66）
 
 - [DINO-WM: World Models on Pre-trained Visual Features enable Zero-shot Planning](paper-catalog.md#p046)
 - [FOCUS: Object-Centric World Models for Robotics Manipulation](paper-catalog.md#p048)
@@ -2011,6 +2032,12 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Scaling Text-to-Image Diffusion Transformers with Representation Autoencoders](paper-catalog.md#p573)
 - [Cosmos 3: Omnimodal World Models for Physical AI](paper-catalog.md#p574)
 - [Generate, Track, Improve: Perceptive Multi-Skill Humanoid Locomotion with RL-Fine-Tuned Motion Generators](paper-catalog.md#p580)
+- [Foundation4D: Towards a unified perception and reconstruction model for autonomous vehicles](paper-catalog.md#p645)
+- [EfficientGS: Streamlining Gaussian Splatting for Large-Scale High-Resolution Scene Representation](paper-catalog.md#p649)
+- [Taming 3DGS: High-Quality Radiance Fields with Limited Resources](paper-catalog.md#p650)
+- [DashGaussian: Optimizing 3D Gaussian Splatting in 200 Seconds](paper-catalog.md#p651)
+- [3DGS-LM: Faster Gaussian-Splatting Optimization with Levenberg-Marquardt](paper-catalog.md#p652)
+- [Speedy-Splat: Fast 3D Gaussian Splatting with Sparse Pixels and Sparse Primitives](paper-catalog.md#p653)
 
 <a id="x-image-decision"></a>
 
@@ -2212,7 +2239,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-image-analysis"></a>
 
-### image × analysis（16）
+### image × analysis（17）
 
 - [In-Datacenter Performance Analysis of a Tensor Processing Unit](paper-catalog.md#p172)
 - [The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks](paper-catalog.md#p173)
@@ -2230,10 +2257,11 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [EgoScale: Scaling Dexterous Manipulation with Diverse Egocentric Human Data](paper-catalog.md#p507)
 - [Scaling Laws for Autoregressive Generative Modeling](paper-catalog.md#p522)
 - [Scaling Vision Transformers](paper-catalog.md#p523)
+- [Structuring Sparsity: Block-Sparse Featurizers Capture Visual Concept Manifolds](paper-catalog.md#p644)
 
 <a id="x-video-understanding"></a>
 
-### video × understanding（38）
+### video × understanding（39）
 
 - [SlotFormer: Unsupervised Visual Dynamics Simulation with Object-Centric Models](paper-catalog.md#p042)
 - [SAVi++: Towards End-to-End Object-Centric Learning from Real-World Videos](paper-catalog.md#p043)
@@ -2273,10 +2301,11 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Cosmos 3: Omnimodal World Models for Physical AI](paper-catalog.md#p574)
 - [InternVideo3: Agentify Foundation Models with Multimodal Contextual Reasoning](paper-catalog.md#p575)
 - [Qwen3.8-Omni: Towards Native Omni-Modal Agents](paper-catalog.md#p576)
+- [Foundation4D: Towards a unified perception and reconstruction model for autonomous vehicles](paper-catalog.md#p645)
 
 <a id="x-video-generation"></a>
 
-### video × generation（44）
+### video × generation（45）
 
 - [SlotFormer: Unsupervised Visual Dynamics Simulation with Object-Centric Models](paper-catalog.md#p042)
 - [OccWorld: Learning a 3D Occupancy World Model for Autonomous Driving](paper-catalog.md#p044)
@@ -2322,6 +2351,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Training Agents Inside of Scalable World Models](paper-catalog.md#p569)
 - [World Simulation with Video Foundation Models for Physical AI](paper-catalog.md#p571)
 - [Cosmos 3: Omnimodal World Models for Physical AI](paper-catalog.md#p574)
+- [Foundation4D: Towards a unified perception and reconstruction model for autonomous vehicles](paper-catalog.md#p645)
 
 <a id="x-video-decision"></a>
 
@@ -2732,7 +2762,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-state-understanding"></a>
 
-### state × understanding（31）
+### state × understanding（37）
 
 - [DS-VIO: Robust and Efficient Stereo Visual Inertial Odometry based on Dual Stage EKF](paper-catalog.md#p082)
 - [PLV-IEKF: Consistent Visual-Inertial Odometry using Points, Lines, and Vanishing Points](paper-catalog.md#p083)
@@ -2765,6 +2795,12 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Dynamic-LIVO: A Dynamic-Aware LiDAR-Inertial-Visual Odometry System Using Spatio-Temporal Normals](paper-catalog.md#p623)
 - [RT-LIVO: Semantic and Motion-Aware LiDAR-Inertial-Visual Odometry for Robust Mapping in Dynamic Environments](paper-catalog.md#p624)
 - [Towards Robust Sensor-Fusion Ground SLAM: A Comprehensive Benchmark and A Resilient Framework](paper-catalog.md#p625)
+- [GS-SDF: LiDAR-Augmented Gaussian Splatting and Neural SDF for Geometrically Consistent Rendering and Reconstruction](paper-catalog.md#p641)
+- [Real-Time LiDAR Gaussian Splatting SLAM](paper-catalog.md#p642)
+- [Ultra-Fusion: A Resilient Tightly-Coupled Multi-Sensor Fusion SLAM Framework under Sensor Degradation and Spatiotemporal Perturbation for Intelligent Transportation Systems](paper-catalog.md#p643)
+- [Gaussian-LIC: Real-Time Photo-Realistic SLAM with Gaussian Splatting and LiDAR-Inertial-Camera Fusion](paper-catalog.md#p646)
+- [Gaussian-LIC2: LiDAR-Inertial-Camera Gaussian Splatting SLAM](paper-catalog.md#p647)
+- [AI-IO: An Aerodynamics-Inspired Real-Time Inertial Odometry for Quadrotors](paper-catalog.md#p648)
 
 <a id="x-state-generation"></a>
 

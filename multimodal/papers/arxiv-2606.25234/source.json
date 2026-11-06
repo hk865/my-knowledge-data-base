@@ -1,0 +1,57 @@
+{
+  "authors": [
+    "Thomas Fel",
+    "Matthew Kowal",
+    "Mozes Jacobs",
+    "Dron Hazra",
+    "Usha Bhalla",
+    "Lee Sharkey",
+    "Lucius Bushnaq",
+    "Satchel Grant",
+    "Tal Haklay",
+    "Thomas Icard",
+    "Can Rager",
+    "Michael Pearce",
+    "Daniel Wurgaft",
+    "Aiden Swann",
+    "Fenil Doshi",
+    "Siddharth Boppana",
+    "Curt Tigges",
+    "Nick Cammarata",
+    "Thomas Serre",
+    "Vasudev Shyam",
+    "Owen Lewis",
+    "Thomas McGrath",
+    "Jack Merullo",
+    "Ekdeep Singh Lubana",
+    "Atticus Geiger"
+  ],
+  "title": "Structuring Sparsity: Block-Sparse Featurizers Capture Visual Concept Manifolds",
+  "read_version": "v1",
+  "reading_depth": "full_text_technical_reading",
+  "reading_boundary": "已阅读正文与附录、核验相关图和代码差异；未复现实验。",
+  "license": {
+    "status": "verified",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "schema_version": 1,
+  "resource_id": "arxiv:2606.25234",
+  "resource_kind": "paper",
+  "canonical_folder": "multimodal/papers/arxiv-2606.25234",
+  "official_url": "https://arxiv.org/abs/2606.25234",
+  "official_fulltext_url": "https://arxiv.org/pdf/2606.25234v1",
+  "content_kind": "reading",
+  "reading_path": "reading.md",
+  "year": 2026,
+  "source_record_updated": "2026-11-06",
+  "independently_reproduced": false,
+  "topic_paths": [
+    "multimodal/visual-representation"
+  ],
+  "modality_tags": [
+    "image"
+  ],
+  "task_tags": [
+    "analysis"
+  ]
+}

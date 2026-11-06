@@ -40253,5 +40253,748 @@
     ],
     "read_version": "v2",
     "reading_scope": "原文方法、主要实验与相关附录定向阅读（§3–4 与训练/评估设置；官方 README 发布范围）；非逐页通读，未复现。"
+  },
+  {
+    "id": "arxiv:2503.10170",
+    "title": "GS-SDF: LiDAR-Augmented Gaussian Splatting and Neural SDF for Geometrically Consistent Rendering and Reconstruction",
+    "url": "https://arxiv.org/abs/2503.10170",
+    "arxiv_id": "2503.10170",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2503.10170"
+    ],
+    "verification_status": "not_recorded",
+    "caveats": [],
+    "assistant_reading_status": "full_main_text_technical_reading",
+    "reading_status": "technical_reading_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p641",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2503.10170",
+    "canonical_path": "robotics-embodied/papers/arxiv-2503.10170/reading.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2503.10170/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2503.10170/source.json",
+    "legacy_paths": [],
+    "content_kind": "reading",
+    "authors": [
+      "Jianheng Liu",
+      "Yunfei Wan",
+      "Bowen Wang",
+      "Chunran Zheng",
+      "Jiarong Lin",
+      "Fu Zhang"
+    ],
+    "read_version": "v2",
+    "reading_scope": "已阅读正文全部方法、实验、主要图表与局限；未独立复现实验。"
+  },
+  {
+    "id": "arxiv:2607.04127",
+    "title": "Real-Time LiDAR Gaussian Splatting SLAM",
+    "url": "https://arxiv.org/abs/2607.04127",
+    "arxiv_id": "2607.04127",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2607.04127"
+    ],
+    "verification_status": "not_recorded",
+    "caveats": [],
+    "assistant_reading_status": "full_main_text_technical_reading",
+    "reading_status": "technical_reading_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p642",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2607.04127",
+    "canonical_path": "robotics-embodied/papers/arxiv-2607.04127/reading.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2607.04127/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2607.04127/source.json",
+    "legacy_paths": [],
+    "content_kind": "reading",
+    "authors": [
+      "SeungJun Tak",
+      "Yewon Jeon",
+      "Jaeik Hwang",
+      "Suk Min Hwang",
+      "Seongbo Ha",
+      "Hyeonwoo Yu"
+    ],
+    "previous_titles": [
+      "Real-Time LiDAR Gaussian Splatting SLAM via Geometry-Aware Covariance Coupling"
+    ],
+    "read_version": "v1",
+    "reading_scope": "已阅读正文全部方法、实验、主要图表与局限；未独立复现实验。"
+  },
+  {
+    "id": "arxiv:2606.21223",
+    "title": "Ultra-Fusion: A Resilient Tightly-Coupled Multi-Sensor Fusion SLAM Framework under Sensor Degradation and Spatiotemporal Perturbation for Intelligent Transportation Systems",
+    "url": "https://arxiv.org/abs/2606.21223",
+    "arxiv_id": "2606.21223",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2606.21223"
+    ],
+    "verification_status": "not_recorded",
+    "caveats": [],
+    "assistant_reading_status": "full_text_reading_and_evidence_audit",
+    "reading_status": "technical_reading",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p643",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2606.21223",
+    "canonical_path": "robotics-embodied/papers/arxiv-2606.21223/reading.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2606.21223/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2606.21223/source.json",
+    "legacy_paths": [],
+    "content_kind": "reading",
+    "authors": [
+      "Yihong Tian",
+      "Junjie Zhang",
+      "Liuyang Li",
+      "Deteng Zhang",
+      "Yunfei Zuo",
+      "Jie Yin"
+    ],
+    "read_version": "v1",
+    "reading_scope": "已读官方19页PDF与HTML的正文和补充材料，并核对公开仓库README、发布说明、安装和打包脚本；官方ROS1 v0.1.3运行包已校验SHA256并只读解包核对配置，未安装或运行。核心估计器源码未公开，因此无法逐行核验FRS与OSC实现；未独立复现实验。"
+  },
+  {
+    "id": "arxiv:2606.25234",
+    "title": "Structuring Sparsity: Block-Sparse Featurizers Capture Visual Concept Manifolds",
+    "url": "https://arxiv.org/abs/2606.25234",
+    "arxiv_id": "2606.25234",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "multimodal/visual-representation"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2606.25234"
+    ],
+    "verification_status": "not_recorded",
+    "caveats": [],
+    "assistant_reading_status": "full_text_technical_reading",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p644",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "analysis"
+    ],
+    "canonical_folder": "multimodal/papers/arxiv-2606.25234",
+    "canonical_path": "multimodal/papers/arxiv-2606.25234/reading.md",
+    "canonical_readme": "multimodal/papers/arxiv-2606.25234/README.md",
+    "source_path": "multimodal/papers/arxiv-2606.25234/source.json",
+    "legacy_paths": [],
+    "content_kind": "reading",
+    "authors": [
+      "Thomas Fel",
+      "Matthew Kowal",
+      "Mozes Jacobs",
+      "Dron Hazra",
+      "Usha Bhalla",
+      "Lee Sharkey",
+      "Lucius Bushnaq",
+      "Satchel Grant",
+      "Tal Haklay",
+      "Thomas Icard",
+      "Can Rager",
+      "Michael Pearce",
+      "Daniel Wurgaft",
+      "Aiden Swann",
+      "Fenil Doshi",
+      "Siddharth Boppana",
+      "Curt Tigges",
+      "Nick Cammarata",
+      "Thomas Serre",
+      "Vasudev Shyam",
+      "Owen Lewis",
+      "Thomas McGrath",
+      "Jack Merullo",
+      "Ekdeep Singh Lubana",
+      "Atticus Geiger"
+    ],
+    "read_version": "v1",
+    "reading_scope": "已阅读正文与附录、核验相关图和代码差异；未复现实验。"
+  },
+  {
+    "id": "arxiv:2610.30340",
+    "title": "Foundation4D: Towards a unified perception and reconstruction model for autonomous vehicles",
+    "url": "https://arxiv.org/abs/2610.30340v1",
+    "arxiv_id": "2610.30340",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/perception",
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2610.30340v1"
+    ],
+    "verification_status": "not_recorded",
+    "caveats": [],
+    "assistant_reading_status": "fulltext_core_methods_training_selected_experiments_and_limitations",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p645",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "video",
+      "image"
+    ],
+    "task_tags": [
+      "understanding",
+      "generation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2610.30340",
+    "canonical_path": "robotics-embodied/papers/arxiv-2610.30340/reading.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2610.30340/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2610.30340/source.json",
+    "legacy_paths": [],
+    "content_kind": "reading",
+    "authors": [
+      "NVIDIA",
+      "Sérgio Agostinho",
+      "Maximilian Apodaca",
+      "Emmanuel Attia",
+      "Guillem Braso",
+      "George Dong",
+      "Ilya Fedorov",
+      "Michele Fenzi",
+      "Gang Huang",
+      "Jiahui Huang",
+      "Shengyu Huang",
+      "Bingxin Ke",
+      "Laura Leal-Taixé",
+      "Kuan-Ting Lee",
+      "Mingxuan Liu",
+      "Tian Liu",
+      "Tim Meinhardt",
+      "Aljoša Ošep",
+      "Naveen Kumar Rai",
+      "Kefei Ren",
+      "Cristiano Saltori",
+      "Keqiang Wu",
+      "Ning Xu",
+      "Fei Xue",
+      "Jin-Bey Yu",
+      "Lei Zhang",
+      "Qunjie Zhou"
+    ],
+    "read_version": "v1",
+    "reading_scope": "已阅读§3架构与任务损失、§4训练阶段/冻结/加权、§7.1消融/§7.4高斯评估/§7.5多任务与速度、§8流程及§9局限，并核对官方项目；未逐表审计全部基准，未运行代码。"
+  },
+  {
+    "id": "arxiv:2404.06926",
+    "title": "Gaussian-LIC: Real-Time Photo-Realistic SLAM with Gaussian Splatting and LiDAR-Inertial-Camera Fusion",
+    "url": "https://arxiv.org/abs/2404.06926v3",
+    "arxiv_id": "2404.06926",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2404.06926v3"
+    ],
+    "verification_status": "not_recorded",
+    "caveats": [],
+    "assistant_reading_status": "full_main_text_technical_reading",
+    "reading_status": "technical_reading_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p646",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2404.06926",
+    "canonical_path": "robotics-embodied/papers/arxiv-2404.06926/reading.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2404.06926/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2404.06926/source.json",
+    "legacy_paths": [],
+    "content_kind": "reading",
+    "authors": [
+      "Xiaolei Lang",
+      "Laijian Li",
+      "Chenming Wu",
+      "Chen Zhao",
+      "Lina Liu",
+      "Yong Liu",
+      "Jiajun Lv",
+      "Xingxing Zuo"
+    ],
+    "read_version": "v3",
+    "reading_scope": "已阅读全文方法、实验和相关补充材料，并核对固定提交实现；未本地运行或独立复现。"
+  },
+  {
+    "id": "arxiv:2507.04004",
+    "title": "Gaussian-LIC2: LiDAR-Inertial-Camera Gaussian Splatting SLAM",
+    "url": "https://arxiv.org/abs/2507.04004v3",
+    "arxiv_id": "2507.04004",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2507.04004v3"
+    ],
+    "verification_status": "not_recorded",
+    "caveats": [],
+    "assistant_reading_status": "full_main_text_technical_reading",
+    "reading_status": "technical_reading_created",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p647",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2507.04004",
+    "canonical_path": "robotics-embodied/papers/arxiv-2507.04004/reading.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2507.04004/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2507.04004/source.json",
+    "legacy_paths": [],
+    "content_kind": "reading",
+    "authors": [
+      "Xiaolei Lang",
+      "Jiajun Lv",
+      "Kai Tang",
+      "Laijian Li",
+      "Jianxin Huang",
+      "Lina Liu",
+      "Yong Liu",
+      "Xingxing Zuo"
+    ],
+    "read_version": "v3",
+    "reading_scope": "已阅读全文方法、实验和相关补充材料，并核对固定提交实现；未本地运行或独立复现。"
+  },
+  {
+    "id": "arxiv:2603.00597",
+    "title": "AI-IO: An Aerodynamics-Inspired Real-Time Inertial Odometry for Quadrotors",
+    "url": "https://arxiv.org/abs/2603.00597",
+    "arxiv_id": "2603.00597",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "recent_user_discussion_then_independent_fulltext_and_official_code_review"
+    ],
+    "chat_evidence": [
+      {
+        "role": "user",
+        "date": "2026-11-05",
+        "association": "询问上海交通大学、无人机IMU、阻力与运动预测相关论文；本篇为核对该线索后的相关文献，不表示用户已阅读或认可全部结论。"
+      }
+    ],
+    "verification_sources": [
+      "https://arxiv.org/abs/2603.00597",
+      "https://arxiv.org/html/2603.00597v1",
+      "https://arxiv.org/pdf/2603.00597v1",
+      "https://csfalpha.github.io/AI-IO.github.io/",
+      "https://csfalpha.github.io/AI-IO.github.io/static/AI-IO_paper.pdf",
+      "https://github.com/SJTU-ViSYS-team/AI-IO/tree/5866134d5e9e20c082a32f06a59e99abb9049a15"
+    ],
+    "verification_status": "official_identity_full_main_text_and_core_code_checked_not_reproduced",
+    "caveats": [],
+    "assistant_reading_status": "full_main_text_figures_tables_and_core_code_reviewed",
+    "reading_status": "technical_reading_with_equations_numeric_examples_evidence_and_code_boundaries",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p648",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2603.00597",
+    "canonical_path": "robotics-embodied/papers/arxiv-2603.00597/reading.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2603.00597/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2603.00597/source.json",
+    "legacy_paths": [],
+    "content_kind": "reading",
+    "authors": [
+      "Jiahao Cui",
+      "Feng Yu",
+      "Linzuo Zhang",
+      "Yu Hu",
+      "Danping Zou"
+    ],
+    "read_version": "v1",
+    "reading_scope": "逐节阅读 arXiv v1 正文§I–V与参考文献，核对Fig.1–9及Table I–II；读取arXiv HTML/PDF和官方项目PDF，视觉复核方法图与公式所在PDF页；对照官方代码固定提交5866134d5e9e20c082a32f06a59e99abb9049a15的网络、输入/标签、数据预处理、损失、不确定性参数化、EKF传播/更新、GT初始化及误差统计实现。未逐条核读全部引用文献，未下载并运行权重/完整数据，未复现实验或实飞。"
+  },
+  {
+    "id": "arxiv:2404.12777",
+    "title": "EfficientGS: Streamlining Gaussian Splatting for Large-Scale High-Resolution Scene Representation",
+    "url": "https://arxiv.org/abs/2404.12777",
+    "arxiv_id": "2404.12777",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2404.12777"
+    ],
+    "verification_status": "not_recorded",
+    "caveats": [],
+    "assistant_reading_status": "fulltext_core_method_implementation_selected_experiments_and_limitations",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p649",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2404.12777",
+    "canonical_path": "robotics-embodied/papers/arxiv-2404.12777/reading.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2404.12777/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2404.12777/source.json",
+    "legacy_paths": [],
+    "content_kind": "reading",
+    "authors": [
+      "Wenkai Liu",
+      "Tao Guan",
+      "Bin Zhu",
+      "Lili Ju",
+      "Zikai Song",
+      "Dan Li",
+      "Yuesong Wang",
+      "Wei Yang"
+    ],
+    "read_version": "v1",
+    "reading_scope": "已精读原文方法、实现与核心实验表，并写独立机制算例；未运行代码或独立复现，未声称逐图审计全部附录。"
+  },
+  {
+    "id": "arxiv:2406.15643",
+    "title": "Taming 3DGS: High-Quality Radiance Fields with Limited Resources",
+    "url": "https://arxiv.org/abs/2406.15643",
+    "arxiv_id": "2406.15643",
+    "doi": null,
+    "year": "2024",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2406.15643"
+    ],
+    "verification_status": "not_recorded",
+    "caveats": [],
+    "assistant_reading_status": "fulltext_core_method_implementation_selected_experiments_and_limitations",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p650",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2406.15643",
+    "canonical_path": "robotics-embodied/papers/arxiv-2406.15643/reading.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2406.15643/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2406.15643/source.json",
+    "legacy_paths": [],
+    "content_kind": "reading",
+    "authors": [
+      "Saswat Subhajyoti Mallick",
+      "Rahul Goel",
+      "Bernhard Kerbl",
+      "Francisco Vicente Carrasco",
+      "Markus Steinberger",
+      "Fernando de la Torre"
+    ],
+    "read_version": "SA 2024 author version",
+    "reading_scope": "已精读原文方法、实现与核心实验表，并写独立机制算例；未运行代码或独立复现，未声称逐图审计全部附录。"
+  },
+  {
+    "id": "arxiv:2503.18402",
+    "title": "DashGaussian: Optimizing 3D Gaussian Splatting in 200 Seconds",
+    "url": "https://arxiv.org/abs/2503.18402",
+    "arxiv_id": "2503.18402",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2503.18402"
+    ],
+    "verification_status": "not_recorded",
+    "caveats": [],
+    "assistant_reading_status": "fulltext_core_method_implementation_selected_experiments_and_limitations",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p651",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2503.18402",
+    "canonical_path": "robotics-embodied/papers/arxiv-2503.18402/reading.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2503.18402/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2503.18402/source.json",
+    "legacy_paths": [],
+    "content_kind": "reading",
+    "authors": [
+      "Youyu Chen",
+      "Junjun Jiang",
+      "Kui Jiang",
+      "Xiao Tang",
+      "Zhihao Li",
+      "Xianming Liu",
+      "Yinyu Nie"
+    ],
+    "read_version": "v1",
+    "reading_scope": "已精读原文方法、实现与核心实验表，并写独立机制算例；未运行代码或独立复现，未声称逐图审计全部附录。"
+  },
+  {
+    "id": "arxiv:2409.12892",
+    "title": "3DGS-LM: Faster Gaussian-Splatting Optimization with Levenberg-Marquardt",
+    "url": "https://arxiv.org/abs/2409.12892",
+    "arxiv_id": "2409.12892",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2409.12892"
+    ],
+    "verification_status": "not_recorded",
+    "caveats": [],
+    "assistant_reading_status": "fulltext_core_method_implementation_selected_experiments_and_limitations",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p652",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2409.12892",
+    "canonical_path": "robotics-embodied/papers/arxiv-2409.12892/reading.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2409.12892/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2409.12892/source.json",
+    "legacy_paths": [],
+    "content_kind": "reading",
+    "authors": [
+      "Lukas Höllein",
+      "Aljaž Božič",
+      "Michael Zollhöfer",
+      "Matthias Nießner"
+    ],
+    "read_version": "v2",
+    "reading_scope": "已精读原文方法、实现与核心实验表，并写独立机制算例；未运行代码或独立复现，未声称逐图审计全部附录。"
+  },
+  {
+    "id": "arxiv:2412.00578",
+    "title": "Speedy-Splat: Fast 3D Gaussian Splatting with Sparse Pixels and Sparse Primitives",
+    "url": "https://arxiv.org/abs/2412.00578",
+    "arxiv_id": "2412.00578",
+    "doi": null,
+    "year": "2025",
+    "topic_paths": [
+      "robotics/localization-mapping"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2412.00578"
+    ],
+    "verification_status": "not_recorded",
+    "caveats": [],
+    "assistant_reading_status": "fulltext_core_method_implementation_selected_experiments_and_limitations",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p653",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image"
+    ],
+    "task_tags": [
+      "generation"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2412.00578",
+    "canonical_path": "robotics-embodied/papers/arxiv-2412.00578/reading.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2412.00578/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2412.00578/source.json",
+    "legacy_paths": [],
+    "content_kind": "reading",
+    "authors": [
+      "Alex Hanson",
+      "Allen Tu",
+      "Geng Lin",
+      "Vasu Singla",
+      "Matthias Zwicker",
+      "Tom Goldstein"
+    ],
+    "read_version": "v3",
+    "reading_scope": "已精读原文方法、实现与核心实验表，并写独立机制算例；未运行代码或独立复现，未声称逐图审计全部附录。"
   }
 ]

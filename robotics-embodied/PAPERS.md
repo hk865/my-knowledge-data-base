@@ -284,3 +284,18 @@
 - [Chronos Policy: Learning Robot Policies on Physical Time](papers/arxiv-2610.13929/README.md) · 2026 · 文献卡，暂无独立精读
 - [Scaling Online Exploration for Robot Agents](papers/arxiv-2610.22496/README.md) · 2026 · 技术精读
 - [AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics](papers/arxiv-2610.28589/README.md) · 2026 · 技术精读
+
+## 2026年11月6日文献与资料增量
+
+- [GS-SDF: LiDAR-Augmented Gaussian Splatting and Neural SDF for Geometrically Consistent Rendering and Reconstruction](papers/arxiv-2503.10170/README.md) · 2025 · 技术精读
+- [Real-Time LiDAR Gaussian Splatting SLAM](papers/arxiv-2607.04127/README.md) · 2026 · 技术精读
+- [Ultra-Fusion: A Resilient Tightly-Coupled Multi-Sensor Fusion SLAM Framework under Sensor Degradation and Spatiotemporal Perturbation for Intelligent Transportation Systems](papers/arxiv-2606.21223/README.md) · 2026 · 技术精读
+- [Foundation4D: Towards a unified perception and reconstruction model for autonomous vehicles](papers/arxiv-2610.30340/README.md) · 2026 · 技术精读
+- [Gaussian-LIC: Real-Time Photo-Realistic SLAM with Gaussian Splatting and LiDAR-Inertial-Camera Fusion](papers/arxiv-2404.06926/README.md) · 2025 · 技术精读
+- [Gaussian-LIC2: LiDAR-Inertial-Camera Gaussian Splatting SLAM](papers/arxiv-2507.04004/README.md) · 2026 · 技术精读
+- [AI-IO: An Aerodynamics-Inspired Real-Time Inertial Odometry for Quadrotors](papers/arxiv-2603.00597/README.md) · 2026 · 技术精读
+- [EfficientGS: Streamlining Gaussian Splatting for Large-Scale High-Resolution Scene Representation](papers/arxiv-2404.12777/README.md) · 2024 · 技术精读
+- [Taming 3DGS: High-Quality Radiance Fields with Limited Resources](papers/arxiv-2406.15643/README.md) · 2024 · 技术精读
+- [DashGaussian: Optimizing 3D Gaussian Splatting in 200 Seconds](papers/arxiv-2503.18402/README.md) · 2025 · 技术精读
+- [3DGS-LM: Faster Gaussian-Splatting Optimization with Levenberg-Marquardt](papers/arxiv-2409.12892/README.md) · 2025 · 技术精读
+- [Speedy-Splat: Fast 3D Gaussian Splatting with Sparse Pixels and Sparse Primitives](papers/arxiv-2412.00578/README.md) · 2025 · 技术精读

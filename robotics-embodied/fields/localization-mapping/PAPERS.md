@@ -33,6 +33,19 @@
 - [SplaTAM: Splat, Track & Map 3D Gaussians for Dense RGB-D SLAM](../../papers/arxiv-2312.02126/README.md) · 2023 · 文献卡
 - [Gaussian Splatting SLAM](../../papers/arxiv-2312.06741/README.md) · 2023 · 文献卡
 
+- [GS-SDF: LiDAR-Augmented Gaussian Splatting and Neural SDF for Geometrically Consistent Rendering and Reconstruction](../../papers/arxiv-2503.10170/README.md) · 技术精读
+- [Real-Time LiDAR Gaussian Splatting SLAM](../../papers/arxiv-2607.04127/README.md) · 技术精读
+- [Ultra-Fusion: A Resilient Tightly-Coupled Multi-Sensor Fusion SLAM Framework under Sensor Degradation and Spatiotemporal Perturbation for Intelligent Transportation Systems](../../papers/arxiv-2606.21223/README.md) · 技术精读
+- [Foundation4D: Towards a unified perception and reconstruction model for autonomous vehicles](../../papers/arxiv-2610.30340/README.md) · 技术精读
+- [Gaussian-LIC: Real-Time Photo-Realistic SLAM with Gaussian Splatting and LiDAR-Inertial-Camera Fusion](../../papers/arxiv-2404.06926/README.md) · 技术精读
+- [Gaussian-LIC2: LiDAR-Inertial-Camera Gaussian Splatting SLAM](../../papers/arxiv-2507.04004/README.md) · 技术精读
+- [AI-IO: An Aerodynamics-Inspired Real-Time Inertial Odometry for Quadrotors](../../papers/arxiv-2603.00597/README.md) · 技术精读
+- [EfficientGS: Streamlining Gaussian Splatting for Large-Scale High-Resolution Scene Representation](../../papers/arxiv-2404.12777/README.md) · 技术精读
+- [Taming 3DGS: High-Quality Radiance Fields with Limited Resources](../../papers/arxiv-2406.15643/README.md) · 技术精读
+- [DashGaussian: Optimizing 3D Gaussian Splatting in 200 Seconds](../../papers/arxiv-2503.18402/README.md) · 技术精读
+- [3DGS-LM: Faster Gaussian-Splatting Optimization with Levenberg-Marquardt](../../papers/arxiv-2409.12892/README.md) · 技术精读
+- [Speedy-Splat: Fast 3D Gaussian Splatting with Sparse Pixels and Sparse Primitives](../../papers/arxiv-2412.00578/README.md) · 技术精读
+
 ## 前馈 3D 模型与 2024–2026 年的方向
 
 - [MASt3R-SLAM: Real-Time Dense SLAM with 3D Reconstruction Priors](../../papers/arxiv-2412.12392/README.md) · 2024 · 文献卡
