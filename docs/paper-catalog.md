@@ -1,6 +1,6 @@
 # 全库论文总目录
 
-共 658 个去重资源（584 篇论文、33 篇官方技术报告、5 个代码仓库、15 篇官方博客、17 份官方技术文档、4 篇作者文章）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
+共 661 个去重资源（587 篇论文、33 篇官方技术报告、5 个代码仓库、15 篇官方博客、17 份官方技术文档、4 篇作者文章）；另有 34 条待核实记录。按 arXiv / DOI 归并；同一论文跨主题出现仍只计一次。
 
 身份核验、助手教学进度和用户阅读状态分开。历史来源保留原角色与证据局限，不将助手推荐写成用户提供，也不将教学完成写成用户已读。
 
@@ -6946,6 +6946,36 @@
 - 身份核验：not_recorded
 - 用户阅读状态：unknown
 - [独立讲解](../robotics-embodied/papers/arxiv-2609.29204/reading.md)
+
+<a id="p659"></a>
+## p659 · Scan Context: Egocentric Spatial Descriptor for Place Recognition Within 3D Point Cloud Map
+
+- 标识：doi:10.1109/IROS.2018.8593953
+- 原文 / 官方入口：https://doi.org/10.1109/IROS.2018.8593953
+- 主题：robotics/localization-mapping, robotics/perception
+- 身份核验：not_recorded
+- 用户阅读状态：unknown
+- [独立讲解](../robotics-embodied/papers/scan-context/reading.md)
+
+<a id="p660"></a>
+## p660 · TIC-VLA: A Think-in-Control Vision-Language-Action Model for Robot Navigation in Dynamic Environments
+
+- 标识：arxiv:2602.02459
+- 原文 / 官方入口：https://arxiv.org/abs/2602.02459
+- 主题：robotics/navigation-planning, robotics/embodied-policies
+- 身份核验：not_recorded
+- 用户阅读状态：unknown
+- [独立讲解](../robotics-embodied/papers/arxiv-2602.02459/reading.md)
+
+<a id="p661"></a>
+## p661 · NavVerse: Benchmarking Indoor-to-Outdoor Embodied Navigation in Continuous Robot Simulation
+
+- 标识：arxiv:2607.19695
+- 原文 / 官方入口：https://arxiv.org/abs/2607.19695
+- 主题：robotics/navigation-planning
+- 身份核验：not_recorded
+- 用户阅读状态：unknown
+- [独立讲解](../robotics-embodied/papers/arxiv-2607.19695/reading.md)
 
 ## 2026年10月3日既有条目更新
 

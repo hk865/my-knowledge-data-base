@@ -14,6 +14,8 @@
 - [EqVIO: An Equivariant Filter for Visual Inertial Odometry](../../papers/arxiv-2205.01980/README.md) · 2022 · 文献卡
 - [PLV-IEKF: Consistent Visual-Inertial Odometry using Points, Lines, and Vanishing Points](../../papers/arxiv-2311.04477/README.md) · 2023 · 文献卡
 
+- [Scan Context](../../papers/scan-context/README.md) · 2018 · 技术精读
+
 ## 关键帧优化与视觉惯性
 
 - [Parallel Tracking and Mapping for Small AR Workspaces](../../papers/ptam/README.md) · 2007 · 文献卡

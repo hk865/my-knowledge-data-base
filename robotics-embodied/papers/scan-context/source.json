@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "resource_id": "doi:10.1109/IROS.2018.8593953",
+  "title": "Scan Context: Egocentric Spatial Descriptor for Place Recognition Within 3D Point Cloud Map",
+  "resource_kind": "paper",
+  "publication_type": "conference_paper",
+  "canonical_folder": "robotics-embodied/papers/scan-context",
+  "official_url": "https://doi.org/10.1109/IROS.2018.8593953",
+  "publisher_url": "https://ieeexplore.ieee.org/abstract/document/8593953",
+  "official_fulltext_url": "https://gisbi-kim.github.io/publications/gkim-2018-iros.pdf",
+  "author_publication_url": "https://gisbi-kim.github.io/publication/kim2018scan/",
+  "code_url": "https://github.com/gisbi-kim/scancontext",
+  "doi": "10.1109/IROS.2018.8593953",
+  "read_version": "IROS 2018 author-posted conference paper, 8 pages",
+  "version_status": "author_public_copy_not_byte_compared_with_publisher_version",
+  "year": 2018,
+  "conference_date": "2018-10-01/2018-10-05",
+  "venue": "2018 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)",
+  "pages": "4802-4809",
+  "authors": [
+    "Giseop Kim",
+    "Ayoung Kim"
+  ],
+  "affiliations_in_read_version": [
+    "KAIST"
+  ],
+  "topic_paths": [
+    "robotics/localization-mapping",
+    "robotics/perception"
+  ],
+  "reading_depth": "full_text_methods_and_experiments_with_independent_worked_examples",
+  "content_kind": "reading",
+  "reading_path": "reading.md",
+  "reading_boundary": "已阅读8页作者公开稿的引言、相关工作、方法、实验与结论，核对公式1–10、图5–8、表I–II；公式与实验取自该版本。独立推导了分箱、旋转匹配及yaw误差算例。未运行代码或复现实验，未数字化PR曲线，未逐项审计代码实现。Scan Context++仅核对承接、方法概览与局限段落，不计为完成独立精读。AMCL与MCL来源仅用于层级解释。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "license": {
+    "status": "paper_redistribution_license_not_verified",
+    "checked_at": "2026-11-06",
+    "note": "论文仅提供作者及出版社链接，不镜像全文。官方代码仓库README声明代码为CC-BY-NC-SA-4.0，该代码许可不被当作2018论文PDF的再分发许可。"
+  },
+  "fulltext_local_status": "link_only_not_mirrored",
+  "fulltext_local_path": null,
+  "source_record_updated": "2026-11-06",
+  "evidence_paths": [
+    "evidence.json"
+  ],
+  "verification_sources": [
+    "https://ieeexplore.ieee.org/abstract/document/8593953",
+    "https://gisbi-kim.github.io/publication/kim2018scan/",
+    "https://gisbi-kim.github.io/publications/gkim-2018-iros.pdf",
+    "https://github.com/gisbi-kim/scancontext"
+  ],
+  "related_sources_read_selectively": [
+    {
+      "url": "https://arxiv.org/html/2109.13494v1",
+      "scope": "Scan Context++ sections I, IV–V, VIII-H and nearby methodological context; not a standalone completed reading"
+    },
+    {
+      "url": "https://api.nav2.org/nav2-rolling/html/md_nav2_amcl_README.html",
+      "scope": "AMCL task definition"
+    },
+    {
+      "url": "https://docs.nav2.org/rolling/configuration_and_development/configuration_guide/others/configuring_amcl/",
+      "scope": "AMCL motion model, particle population, initialization and recovery parameter descriptions"
+    },
+    {
+      "url": "https://robots.stanford.edu/papers/fox.aaai99.pdf",
+      "scope": "MCL global localization definition and recursive belief equations"
+    },
+    {
+      "url": "https://pointclouds.org/documentation/classpcl_1_1_iterative_closest_point.html",
+      "scope": "ICP source/target, transform, correspondence and iterative registration interfaces"
+    }
+  ],
+  "unverified": [
+    "Byte-for-byte or textual differences between author PDF and IEEE version of record",
+    "All-zero-column implementation and exact root-shift offset set",
+    "All current code changes relative to the 2018 method",
+    "Independent reproduction and full SLAM relocalization success rate",
+    "Paper full-text redistribution rights"
+  ],
+  "modality_tags": [
+    "image",
+    "state"
+  ],
+  "task_tags": [
+    "understanding"
+  ]
+}

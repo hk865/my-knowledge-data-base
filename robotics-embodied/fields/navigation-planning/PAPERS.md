@@ -34,3 +34,8 @@
 - [ABot-N1: Toward a General Visual Language Navigation Foundation Model](../../papers/arxiv-2607.10383/README.md) · 2026 · 文献卡
 - [Robostral Navigate](../../papers/arxiv-2607.20785/README.md) · 2026 · 文献卡 · Mistral AI，单目 RGB、纯仿真数据的双系统导航
 - [Building Generalist Humanoid Capabilities with NVIDIA Isaac GR00T N1.6 Using a Sim-to-Real Workflow](https://developer.nvidia.com/blog/building-generalist-humanoid-capabilities-with-nvidia-isaac-gr00t-n1-6-using-a-sim-to-real-workflow) · 2026 · NVIDIA 技术博客（外部链接，不建卡） · 合成数据训练的导航策略 COMPASS 给人形全身控制器发速度指令
+
+## 动态场景与连续仿真基准
+
+- [TIC-VLA / DynaNav](../../papers/arxiv-2602.02459/README.md) · 2026 · 技术精读
+- [NavVerse](../../papers/arxiv-2607.19695/README.md) · 2026 · 技术精读

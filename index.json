@@ -854,5 +854,17 @@
   {
     "title": "RoboSkill 实验与迁移补充精读",
     "file": "robotics-embodied/papers/roboskill/reading-evidence.md"
+  },
+  {
+    "title": "Scan Context 精读",
+    "file": "robotics-embodied/papers/scan-context/reading.md"
+  },
+  {
+    "title": "TIC-VLA 精读",
+    "file": "robotics-embodied/papers/arxiv-2602.02459/reading.md"
+  },
+  {
+    "title": "NavVerse 精读",
+    "file": "robotics-embodied/papers/arxiv-2607.19695/reading.md"
   }
 ]

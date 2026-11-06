@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "resource_id": "doi:10.1109/IROS.2018.8593953",
+  "read_source_url": "https://gisbi-kim.github.io/publications/gkim-2018-iros.pdf",
+  "page_index_convention": "one_based_pdf_pages",
+  "claims": [
+    {"claim": "Polar bins with maximum z; empty bins zero; 20 rings, 60 sectors", "locator": "section III-A, equations 1–4", "pages": [3]},
+    {"claim": "Eight neighbor root-shift augmentations; assumes similar visibility, with intersection caveat", "locator": "section III-A following equation 4", "pages": [3]},
+    {"claim": "Columnwise cosine distance and exhaustive cyclic shifts; coarse yaw used for ICP initialization", "locator": "section III-B, equations 5–7", "pages": [3,4]},
+    {"claim": "Ring key uses row nonzero ratio, not row mean; KD tree candidates and threshold selection", "locator": "section III-C, equations 8–10", "pages": [4]},
+    {"claim": "Twelve sequences; 4m true-positive criterion, exclusion of 50 neighboring nodes, K=10/50, 80m range", "locator": "table I and section IV-A", "pages": [5]},
+    {"claim": "PR comparison; larger candidate set improves performance in reported evaluation; indoor and repetitive structure limitations", "locator": "section IV-B, figures 5–6", "pages": [5,6]},
+    {"claim": "KITTI08 yaw initialized versus uninitialized point-to-point ICP", "locator": "section IV-C, figures 7–8", "pages": [7]},
+    {"claim": "Table II reports augmentation-inclusive descriptor time and tree-inclusive search time; single descriptor 14.3ms", "locator": "section IV-D and table II", "pages": [7]},
+    {"claim": "Additional semantic channels as future extension", "locator": "section V", "pages": [7]}
+  ],
+  "original_analysis_not_reported_paper_results": [
+    "12m/3ring/4sector point-bin example",
+    "2ring/4sector cosine and rotation worked example",
+    "Idealized 3-degree yaw error implies about 1.05m lateral displacement at 20m",
+    "Distinction between invariant retrieval key and shift-optimized invariant score",
+    "Layered Scan Context/ICP/AMCL interface and suggested deployment metrics",
+    "Formula-based cautions about full-zero columns, positive column scaling, coordinate conventions and roll/pitch"
+  ],
+  "not_done": ["independent reproduction", "curve digitization", "complete code audit", "publisher-author PDF difference audit"]
+}

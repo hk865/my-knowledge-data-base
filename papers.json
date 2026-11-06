@@ -41314,5 +41314,172 @@
     ],
     "read_version": "v1",
     "reading_scope": "通读 arXiv v1 全文9页、方法与全部实验讨论，核对表I–II，并查看图2、图3–4、图5页面图像。该版本无单独附录。补读作者仓库README，未审计实现源码或运行代码；相关论文仅核对比较所需方法章节。"
+  },
+  {
+    "id": "doi:10.1109/IROS.2018.8593953",
+    "title": "Scan Context: Egocentric Spatial Descriptor for Place Recognition Within 3D Point Cloud Map",
+    "url": "https://doi.org/10.1109/IROS.2018.8593953",
+    "arxiv_id": null,
+    "doi": "10.1109/IROS.2018.8593953",
+    "year": "2018",
+    "topic_paths": [
+      "robotics/localization-mapping",
+      "robotics/perception"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://ieeexplore.ieee.org/abstract/document/8593953",
+      "https://gisbi-kim.github.io/publication/kim2018scan/",
+      "https://gisbi-kim.github.io/publications/gkim-2018-iros.pdf",
+      "https://github.com/gisbi-kim/scancontext"
+    ],
+    "verification_status": "not_recorded",
+    "caveats": [],
+    "assistant_reading_status": "full_text_methods_and_experiments_with_independent_worked_examples",
+    "reading_status": "",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p659",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "state"
+    ],
+    "task_tags": [
+      "understanding"
+    ],
+    "canonical_folder": "robotics-embodied/papers/scan-context",
+    "canonical_path": "robotics-embodied/papers/scan-context/reading.md",
+    "canonical_readme": "robotics-embodied/papers/scan-context/README.md",
+    "source_path": "robotics-embodied/papers/scan-context/source.json",
+    "legacy_paths": [],
+    "content_kind": "reading",
+    "authors": [
+      "Giseop Kim",
+      "Ayoung Kim"
+    ],
+    "read_version": "IROS 2018 author-posted conference paper, 8 pages",
+    "reading_scope": "已阅读8页作者公开稿的引言、相关工作、方法、实验与结论，核对公式1–10、图5–8、表I–II；公式与实验取自该版本。独立推导了分箱、旋转匹配及yaw误差算例。未运行代码或复现实验，未数字化PR曲线，未逐项审计代码实现。Scan Context++仅核对承接、方法概览与局限段落，不计为完成独立精读。AMCL与MCL来源仅用于层级解释。"
+  },
+  {
+    "id": "arxiv:2602.02459",
+    "title": "TIC-VLA: A Think-in-Control Vision-Language-Action Model for Robot Navigation in Dynamic Environments",
+    "url": "https://arxiv.org/abs/2602.02459",
+    "arxiv_id": "2602.02459",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/navigation-planning",
+      "robotics/embodied-policies"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2602.02459",
+      "https://arxiv.org/pdf/2602.02459v2",
+      "https://ucla-mobility.github.io/TIC-VLA/",
+      "https://github.com/ucla-mobility/TIC-VLA/tree/9fa6f8b66b9e121d5df5df071297bba8e5353ebb",
+      "https://huggingface.co/datasets/handsomeYun/TIC-VLA/tree/671de608f39ccae41b66cbb24ab923c0275f8fb4"
+    ],
+    "verification_status": "not_recorded",
+    "caveats": [],
+    "assistant_reading_status": "full_text_reading_and_selected_source_audit",
+    "reading_status": "technical_reading",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p660",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2602.02459",
+    "canonical_path": "robotics-embodied/papers/arxiv-2602.02459/reading.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2602.02459/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2602.02459/source.json",
+    "legacy_paths": [],
+    "content_kind": "reading",
+    "authors": [
+      "Zhiyu Huang",
+      "Yun Zhang",
+      "Johnson Liu",
+      "Rui Song",
+      "Chen Tang",
+      "Jiaqi Ma"
+    ],
+    "read_version": "v2",
+    "reading_scope": "已读官方v2完整24页PDF及HTML正文与附录A–E；核对项目页、固定提交源码、训练配置、85回合YAML及官方HF文件树与数据卡。未安装或运行仿真、未加载权重、未下载全量数据，未独立复现实验。"
+  },
+  {
+    "id": "arxiv:2607.19695",
+    "title": "NavVerse: Benchmarking Indoor-to-Outdoor Embodied Navigation in Continuous Robot Simulation",
+    "url": "https://arxiv.org/abs/2607.19695",
+    "arxiv_id": "2607.19695",
+    "doi": null,
+    "year": "2026",
+    "topic_paths": [
+      "robotics/navigation-planning"
+    ],
+    "detail_topics": [],
+    "architecture_tags": [],
+    "supervision_tags": [],
+    "provenance": [
+      "repository-maintenance"
+    ],
+    "chat_evidence": [],
+    "verification_sources": [
+      "https://arxiv.org/abs/2607.19695"
+    ],
+    "verification_status": "not_recorded",
+    "caveats": [],
+    "assistant_reading_status": "full_text_reading_and_selected_source_asset_audit",
+    "reading_status": "technical_reading",
+    "resource_kind": "paper",
+    "method_tags": [],
+    "evaluation_tags": [],
+    "catalog_anchor": "p661",
+    "user_reading_status": "unknown",
+    "modality_tags": [
+      "image",
+      "text",
+      "action"
+    ],
+    "task_tags": [
+      "decision"
+    ],
+    "canonical_folder": "robotics-embodied/papers/arxiv-2607.19695",
+    "canonical_path": "robotics-embodied/papers/arxiv-2607.19695/reading.md",
+    "canonical_readme": "robotics-embodied/papers/arxiv-2607.19695/README.md",
+    "source_path": "robotics-embodied/papers/arxiv-2607.19695/source.json",
+    "legacy_paths": [],
+    "content_kind": "reading",
+    "authors": [
+      "Junzhe Wu",
+      "Yue Hu",
+      "Zeyu Han",
+      "Po-Hsun Chang",
+      "Yinan Dong",
+      "Behrad Rabiei",
+      "Maani Ghaffari"
+    ],
+    "read_version": "v1",
+    "reading_scope": "已读官方25页PDF与HTML正文及附录A–E；视觉核对关键PDF页面；核对固定提交源码、基线入口、控制与频率协议、HF文件清单、样例episode及数据包checksum。未安装运行仿真或基线、未加载权重、未下载大场景包，未独立复现。"
   }
 ]

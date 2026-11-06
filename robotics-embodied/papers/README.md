@@ -266,3 +266,6 @@
 - [3D-Mem: 3D Scene Memory for Embodied Exploration and Reasoning](arxiv-2411.17735/README.md) · 2025 · 技术精读
 - [Don't Drop the BATON: Long-Horizon Robot Manipulation via Agentic Subtask Exploration and Transition-aware Memory](arxiv-2608.16889/README.md) · 2026 · 技术精读
 - [AdaHVLA: Adaptive Harnesses for Long-Horizon Vision-Language-Action Execution](arxiv-2609.29204/README.md) · 2026 · 技术精读
+- [Scan Context: Egocentric Spatial Descriptor for Place Recognition Within 3D Point Cloud Map](scan-context/README.md) · 2018 · 技术精读
+- [TIC-VLA: A Think-in-Control Vision-Language-Action Model for Robot Navigation in Dynamic Environments](arxiv-2602.02459/README.md) · 2026 · 技术精读
+- [NavVerse: Benchmarking Indoor-to-Outdoor Embodied Navigation in Continuous Robot Simulation](arxiv-2607.19695/README.md) · 2026 · 技术精读

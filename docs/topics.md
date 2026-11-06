@@ -614,7 +614,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 ## 机器人与具身系统
 
-### 感知与传感融合（34）
+### 感知与传感融合（35）
 
 细分：视觉 深度 LiDAR；惯性与多传感器融合；传统 学习与混合方法
 
@@ -652,8 +652,9 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Lite Any Stereo V2: Faster and Stronger Efficient Zero-Shot Stereo Matching](paper-catalog.md#p579)
 - [Foundation4D: Towards a unified perception and reconstruction model for autonomous vehicles](paper-catalog.md#p645)
 - [ConceptGraphs: Open-Vocabulary 3D Scene Graphs for Perception and Planning](paper-catalog.md#p654)
+- [Scan Context: Egocentric Spatial Descriptor for Place Recognition Within 3D Point Cloud Map](paper-catalog.md#p659)
 
-### 定位与建图（68）
+### 定位与建图（69）
 
 细分：里程计与状态估计；SLAM 与地图
 
@@ -725,8 +726,9 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [ConceptGraphs: Open-Vocabulary 3D Scene Graphs for Perception and Planning](paper-catalog.md#p654)
 - [Hierarchical Open-Vocabulary 3D Scene Graphs for Language-Grounded Robot Navigation](paper-catalog.md#p655)
 - [3D-Mem: 3D Scene Memory for Embodied Exploration and Reasoning](paper-catalog.md#p656)
+- [Scan Context: Egocentric Spatial Descriptor for Place Recognition Within 3D Point Cloud Map](paper-catalog.md#p659)
 
-### 导航与规划（25）
+### 导航与规划（27）
 
 细分：几何与运动规划；视觉语言导航；VLA 与 VLN 的任务边界
 
@@ -755,6 +757,8 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Generalizing Manipulation Skills with a Local Coding Agent](paper-catalog.md#p610)
 - [Bridging Semantics and Physics with Constrained LLMs for Safe and Trustworthy Robotic Manipulation](paper-catalog.md#p611)
 - [Hierarchical Open-Vocabulary 3D Scene Graphs for Language-Grounded Robot Navigation](paper-catalog.md#p655)
+- [TIC-VLA: A Think-in-Control Vision-Language-Action Model for Robot Navigation in Dynamic Environments](paper-catalog.md#p660)
+- [NavVerse: Benchmarking Indoor-to-Outdoor Embodied Navigation in Continuous Robot Simulation](paper-catalog.md#p661)
 
 
 ### 运动控制（62）
@@ -825,7 +829,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Extending the Speed Limit of Quadrupedal Locomotion via Refined Actuator Modeling and Adaptive Command Scheduling](paper-catalog.md#p634)
 
 
-### 具身策略与 VLA（81）
+### 具身策略与 VLA（82）
 
 细分：动作表示与生成；跨本体与数据；模型 规划与控制接口；模仿学习；机器人强化学习
 
@@ -910,6 +914,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Inference-time Policy Steering via Vision and Touch](paper-catalog.md#p606)
 - [ENPIRE: Agentic Robot Policy Self-Improvement in the Real World](paper-catalog.md#p609)
 - [Chronos Policy: Learning Robot Policies on Physical Time](paper-catalog.md#p638)
+- [TIC-VLA: A Think-in-Control Vision-Language-Action Model for Robot Navigation in Dynamic Environments](paper-catalog.md#p660)
 
 ### 具身 Agents 与闭环系统（47）
 
@@ -1225,12 +1230,12 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 | 模态 \ 任务 | understanding | generation | decision | evaluation | analysis |
 |---|---:|---:|---:|---:|---:|
-| text | [68](#x-text-understanding) | [169](#x-text-generation) | [148](#x-text-decision) | [107](#x-text-evaluation) | [84](#x-text-analysis) |
-| image | [149](#x-image-understanding) | [66](#x-image-generation) | [144](#x-image-decision) | [50](#x-image-evaluation) | [17](#x-image-analysis) |
+| text | [68](#x-text-understanding) | [169](#x-text-generation) | [150](#x-text-decision) | [107](#x-text-evaluation) | [84](#x-text-analysis) |
+| image | [150](#x-image-understanding) | [66](#x-image-generation) | [146](#x-image-decision) | [50](#x-image-evaluation) | [17](#x-image-analysis) |
 | video | [39](#x-video-understanding) | [45](#x-video-generation) | [36](#x-video-decision) | [15](#x-video-evaluation) | [6](#x-video-analysis) |
 | audio | [9](#x-audio-understanding) | [7](#x-audio-generation) | [2](#x-audio-decision) | [1](#x-audio-evaluation) | · |
-| action | [9](#x-action-understanding) | [37](#x-action-generation) | [182](#x-action-decision) | [42](#x-action-evaluation) | [3](#x-action-analysis) |
-| state | [37](#x-state-understanding) | [3](#x-state-generation) | [95](#x-state-decision) | [21](#x-state-evaluation) | · |
+| action | [9](#x-action-understanding) | [37](#x-action-generation) | [184](#x-action-decision) | [42](#x-action-evaluation) | [3](#x-action-analysis) |
+| state | [38](#x-state-understanding) | [3](#x-state-generation) | [95](#x-state-decision) | [21](#x-state-evaluation) | · |
 | code | [1](#x-code-understanding) | [27](#x-code-generation) | [48](#x-code-decision) | [38](#x-code-evaluation) | [31](#x-code-analysis) |
 | multimodal | [57](#x-multimodal-understanding) | [45](#x-multimodal-generation) | [70](#x-multimodal-decision) | [39](#x-multimodal-evaluation) | [9](#x-multimodal-analysis) |
 | tabular | [1](#x-tabular-understanding) | · | · | · | · |
@@ -1484,7 +1489,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-text-decision"></a>
 
-### text × decision（148）
+### text × decision（150）
 
 - [SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering](paper-catalog.md#p034)
 - [ReAct: Synergizing Reasoning and Acting in Language Models](paper-catalog.md#p040)
@@ -1634,6 +1639,8 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [3D-Mem: 3D Scene Memory for Embodied Exploration and Reasoning](paper-catalog.md#p656)
 - [Don't Drop the BATON: Long-Horizon Robot Manipulation via Agentic Subtask Exploration and Transition-aware Memory](paper-catalog.md#p657)
 - [AdaHVLA: Adaptive Harnesses for Long-Horizon Vision-Language-Action Execution](paper-catalog.md#p658)
+- [TIC-VLA: A Think-in-Control Vision-Language-Action Model for Robot Navigation in Dynamic Environments](paper-catalog.md#p660)
+- [NavVerse: Benchmarking Indoor-to-Outdoor Embodied Navigation in Continuous Robot Simulation](paper-catalog.md#p661)
 
 <a id="x-text-evaluation"></a>
 
@@ -1838,7 +1845,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-image-understanding"></a>
 
-### image × understanding（149）
+### image × understanding（150）
 
 - [A High-Fidelity Digital Twin for Robotic Manipulation Based on 3D Gaussian Splatting](paper-catalog.md#p054)
 - [Language-Grounded Hierarchical Planning and Execution with Multi-Robot 3D Scene Graphs](paper-catalog.md#p055)
@@ -1989,6 +1996,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [ConceptGraphs: Open-Vocabulary 3D Scene Graphs for Perception and Planning](paper-catalog.md#p654)
 - [Hierarchical Open-Vocabulary 3D Scene Graphs for Language-Grounded Robot Navigation](paper-catalog.md#p655)
 - [3D-Mem: 3D Scene Memory for Embodied Exploration and Reasoning](paper-catalog.md#p656)
+- [Scan Context: Egocentric Spatial Descriptor for Place Recognition Within 3D Point Cloud Map](paper-catalog.md#p659)
 
 <a id="x-image-generation"></a>
 
@@ -2063,7 +2071,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-image-decision"></a>
 
-### image × decision（144）
+### image × decision（146）
 
 - [DINO-WM: World Models on Pre-trained Visual Features enable Zero-shot Planning](paper-catalog.md#p046)
 - [FOCUS: Object-Centric World Models for Robotics Manipulation](paper-catalog.md#p048)
@@ -2209,6 +2217,8 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [3D-Mem: 3D Scene Memory for Embodied Exploration and Reasoning](paper-catalog.md#p656)
 - [Don't Drop the BATON: Long-Horizon Robot Manipulation via Agentic Subtask Exploration and Transition-aware Memory](paper-catalog.md#p657)
 - [AdaHVLA: Adaptive Harnesses for Long-Horizon Vision-Language-Action Execution](paper-catalog.md#p658)
+- [TIC-VLA: A Think-in-Control Vision-Language-Action Model for Robot Navigation in Dynamic Environments](paper-catalog.md#p660)
+- [NavVerse: Benchmarking Indoor-to-Outdoor Embodied Navigation in Continuous Robot Simulation](paper-catalog.md#p661)
 
 <a id="x-image-evaluation"></a>
 
@@ -2550,7 +2560,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-action-decision"></a>
 
-### action × decision（182）
+### action × decision（184）
 
 - [OccWorld: Learning a 3D Occupancy World Model for Autonomous Driving](paper-catalog.md#p044)
 - [Driving in the Occupancy World: Vision-Centric 4D Occupancy Forecasting and Planning via World Models for Autonomous Driving](paper-catalog.md#p045)
@@ -2734,6 +2744,8 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [AgenticRoboRL: Bringing Coding-Agent Post-Training to Agentic Robotics](paper-catalog.md#p640)
 - [Don't Drop the BATON: Long-Horizon Robot Manipulation via Agentic Subtask Exploration and Transition-aware Memory](paper-catalog.md#p657)
 - [AdaHVLA: Adaptive Harnesses for Long-Horizon Vision-Language-Action Execution](paper-catalog.md#p658)
+- [TIC-VLA: A Think-in-Control Vision-Language-Action Model for Robot Navigation in Dynamic Environments](paper-catalog.md#p660)
+- [NavVerse: Benchmarking Indoor-to-Outdoor Embodied Navigation in Continuous Robot Simulation](paper-catalog.md#p661)
 
 <a id="x-action-evaluation"></a>
 
@@ -2792,7 +2804,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 
 <a id="x-state-understanding"></a>
 
-### state × understanding（37）
+### state × understanding（38）
 
 - [DS-VIO: Robust and Efficient Stereo Visual Inertial Odometry based on Dual Stage EKF](paper-catalog.md#p082)
 - [PLV-IEKF: Consistent Visual-Inertial Odometry using Points, Lines, and Vanishing Points](paper-catalog.md#p083)
@@ -2831,6 +2843,7 @@ task 标签写论文的方法服务于哪类任务；论文的主要贡献是分
 - [Gaussian-LIC: Real-Time Photo-Realistic SLAM with Gaussian Splatting and LiDAR-Inertial-Camera Fusion](paper-catalog.md#p646)
 - [Gaussian-LIC2: LiDAR-Inertial-Camera Gaussian Splatting SLAM](paper-catalog.md#p647)
 - [AI-IO: An Aerodynamics-Inspired Real-Time Inertial Odometry for Quadrotors](paper-catalog.md#p648)
+- [Scan Context: Egocentric Spatial Descriptor for Place Recognition Within 3D Point Cloud Map](paper-catalog.md#p659)
 
 <a id="x-state-generation"></a>
 

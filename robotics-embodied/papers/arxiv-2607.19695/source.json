@@ -1,0 +1,416 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2607.19695",
+  "arxiv_id": "2607.19695",
+  "title": "NavVerse: Benchmarking Indoor-to-Outdoor Embodied Navigation in Continuous Robot Simulation",
+  "resource_kind": "paper",
+  "authors": [
+    "Junzhe Wu",
+    "Yue Hu",
+    "Zeyu Han",
+    "Po-Hsun Chang",
+    "Yinan Dong",
+    "Behrad Rabiei",
+    "Maani Ghaffari"
+  ],
+  "year": 2026,
+  "official_url": "https://arxiv.org/abs/2607.19695",
+  "official_fulltext_url": "https://arxiv.org/pdf/2607.19695v1",
+  "official_html_url": "https://arxiv.org/html/2607.19695v1",
+  "official_project_url": "https://umich-curly.github.io/NavVerse-Benchmark/",
+  "read_version": "v1",
+  "version_status": "official_arxiv_v1_latest_checked",
+  "arxiv_submission_date": "2026-07-22",
+  "reading_depth": "full_text_reading_and_selected_source_asset_audit",
+  "teaching_status": "technical_reading",
+  "content_kind": "reading",
+  "reading_path": "reading.md",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2607.19695",
+  "reading_boundary": "已读官方25页PDF与HTML正文及附录A–E；视觉核对关键PDF页面；核对固定提交源码、基线入口、控制与频率协议、HF文件清单、样例episode及数据包checksum。未安装运行仿真或基线、未加载权重、未下载大场景包，未独立复现。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "official_repository_url": "https://github.com/UMich-CURLY/NavVerse-Benchmark",
+  "repository_read_commit": "8b89bfee4f6d55de6e8e767516313b8c8941098b",
+  "official_dataset_url": "https://huggingface.co/datasets/tccoin/navverse-benchmark",
+  "dataset_read_revision": "df7e4cf2ebe630d313c9cb28d77cc74410e14784",
+  "source_record_updated": "2026-11-06",
+  "repository_prior_status": "not_found_in_papers_json_index_json_or_robotics_embodied_recursive_content_search",
+  "topic_paths": [
+    "robotics/navigation-planning"
+  ],
+  "modality_tags": [
+    "image",
+    "text",
+    "action"
+  ],
+  "task_tags": [
+    "decision"
+  ],
+  "paper": {
+    "short_name": "NavVerse",
+    "title": "NavVerse: Benchmarking Indoor-to-Outdoor Embodied Navigation in Continuous Robot Simulation",
+    "arxiv_id": "2607.19695",
+    "canonical_url": "https://arxiv.org/abs/2607.19695",
+    "version": "v1",
+    "version_url": "https://arxiv.org/abs/2607.19695v1",
+    "submitted_at": "2026-07-22T02:53:46Z",
+    "latest_version_verified": "v1",
+    "versions_observed": [
+      "v1"
+    ],
+    "authors": [
+      "Junzhe Wu",
+      "Yue Hu",
+      "Zeyu Han",
+      "Po-Hsun Chang",
+      "Yinan Dong",
+      "Behrad Rabiei",
+      "Maani Ghaffari"
+    ],
+    "affiliations": {
+      "Junzhe Wu": "University of Michigan, Ann Arbor",
+      "Yue Hu": "University of Michigan, Ann Arbor",
+      "Zeyu Han": "Tsinghua University",
+      "Po-Hsun Chang": "University of Michigan, Ann Arbor",
+      "Yinan Dong": "University of Michigan, Ann Arbor",
+      "Behrad Rabiei": "University of Michigan, Ann Arbor",
+      "Maani Ghaffari": "University of Michigan, Ann Arbor"
+    },
+    "doi": "10.48550/arXiv.2607.19695",
+    "pdf_url": "https://arxiv.org/pdf/2607.19695v1",
+    "html_url": "https://arxiv.org/html/2607.19695v1",
+    "pdf_pages": 25,
+    "pdf_sha256": "9e578a0112fb1c6b3969bc02b262c7f35fa90e3321692f5dfa0ad033fef1fc68",
+    "html_sha256": "6357e3e3088b0fcd5a631a84ea955474c79d8b625f42a5f4d969c8082cd86054",
+    "project_url": "https://umich-curly.github.io/NavVerse-Benchmark/",
+    "publication_note": "官方项目页的搜索索引显示 Accepted at CoRL 2026；项目页当前为JS应用，直接HTTP只返回入口壳。精读以可核实的arXiv v1为准，未核实正式会议论文集版本。",
+    "paper_license": "arXiv.org perpetual non-exclusive license"
+  },
+  "reading": {
+    "status": "技术精读",
+    "revision": "v1",
+    "reproduced": false,
+    "checked_at": "2026-11-06T15:59:38.868606+00:00",
+    "read_scope": [
+      "官方HTML正文第1–5节全文",
+      "附录A–E全文，含接口、频率、场景构建、任务生成、数据统计与oracle实验",
+      "官方25页PDF下载与文本抽取；对照主要实验表与附录",
+      "PDF第1、8页渲染并视觉检查，核对作者顺序、机体图示及表6–8"
+    ],
+    "retrieval_methods": [
+      "arXiv abs/html/pdf",
+      "官方GitHub只读API、固定commit原始文件",
+      "Hugging Face只读API、固定revision文件列表、数据卡、样例episode JSON和checksum下载",
+      "搜索仅用于定位官方项目及相关论文，主要判断使用原始来源"
+    ],
+    "reproduction_scope": "未安装或运行NavVerse、Isaac Sim和各基线；未加载权重；未下载或解压281GB场景大包；未复现作者表格。",
+    "author_results_distinction": "正文全部实测指标均为作者报告；12/68、2/55、加权值35.77%及机制示例为基于公式/表格的算术解释，非新实验。",
+    "notes": "HTML在嵌套表格的交叉引用上出现转换错位，例如§4.4多个链接指表8；PDF分别正确指表6、7、8。正文表号以PDF为准，未将HTML转换错误归咎于作者。"
+  },
+  "task_and_model": {
+    "contribution_type": "benchmark / simulation scenes / executable evaluation protocol; no newly proposed NavVerse high-level navigation model",
+    "tasks": {
+      "ObjNav": "类别物体搜索，可到达任意合法实例",
+      "PlaceNav": "室外功能场所搜索，仅室外与室内到室外",
+      "VLN": "路线语言指令导航"
+    },
+    "paper_baselines": [
+      "SGImagineNav (modular)",
+      "PoliFormer (RL)",
+      "UniNaVid (VLA)",
+      "LongNav-R1 (VLA-RL)"
+    ],
+    "vln_only_baseline": "UniNaVid",
+    "zero_shot": "Four pretrained baselines evaluated with common physics stack; do not infer training on the released NavVerse train split."
+  },
+  "embodiments": {
+    "primary": {
+      "name": "Boston Dynamics Spot",
+      "type": "quadruped / 四足",
+      "setting": "simulation",
+      "coverage": "main task experiments",
+      "source": "https://arxiv.org/html/2607.19695v1#A1.SS1"
+    },
+    "secondary": {
+      "name": "Turtlebot",
+      "type": "wheeled / 轮式",
+      "setting": "simulation",
+      "coverage": "oracle-trajectory friction diagnostic, PDF Table 7",
+      "source": "https://arxiv.org/pdf/2607.19695v1#page=8"
+    },
+    "unevaluated": "Humanoid/bipedal and additional embodiments described as extensible interfaces only.",
+    "no_hardware_experiment_claim": "本文没有真实机器人定量实验。仓库内Spot README描述上游AI Institute/Spot RL硬件部署致谢，real_world_exp_server存在亦不构成本论文硬件实验结果。"
+  },
+  "runtime": {
+    "physics_hz": 200,
+    "physics_dt_seconds": 0.005,
+    "low_level_control_hz": 50,
+    "observation_fps": 10,
+    "rendering_throughput_fps": 20,
+    "rendering_throughput_hardware": "RTX 4090; approximate",
+    "discrete_action_sim_seconds": "approximately 1 s, until motion primitive completes",
+    "high_level_policy_hz": "not reported per baseline",
+    "llm_vlm_inference_hz": "not reported",
+    "end_to_end_wall_clock_latency": "not reported",
+    "simulator": "Isaac Sim 5.1.0",
+    "robotics_stack": "Isaac Lab 2.3.0",
+    "large_evaluation_hardware": "4 NVIDIA L40S",
+    "parallelism": "up to 3 simulations per 48 GB L40S as reported by authors",
+    "peak_sim_memory_gb": {
+      "indoor": 9,
+      "outdoor_and_mixed": 13
+    },
+    "source_sections": [
+      "Appendix A.1",
+      "Appendix A.3",
+      "Appendix A.7"
+    ],
+    "source_urls": [
+      "https://arxiv.org/html/2607.19695v1#A1.SS1",
+      "https://arxiv.org/html/2607.19695v1#A1.SS3",
+      "https://arxiv.org/html/2607.19695v1#A1.SS7"
+    ],
+    "caution": "Do not equate simulation/control/rendering rates with VLA decision frequency or guaranteed wall-clock real time."
+  },
+  "paper_protocol": {
+    "scene_counts": {
+      "indoor": 100,
+      "outdoor": 50,
+      "indoor_to_outdoor": 50
+    },
+    "episode_counts": {
+      "train": 9100,
+      "eval": 900,
+      "total": 10000,
+      "objnav": 4027,
+      "placenav": 2973,
+      "vln": 3000
+    },
+    "eval_counts": {
+      "ObjNav": {
+        "indoor": 150,
+        "outdoor": 82,
+        "indoor_to_outdoor": 95
+      },
+      "PlaceNav": {
+        "indoor": 0,
+        "outdoor": 68,
+        "indoor_to_outdoor": 55
+      },
+      "VLN": {
+        "indoor": 150,
+        "outdoor": 150,
+        "indoor_to_outdoor": 150
+      }
+    },
+    "source": "https://arxiv.org/html/2607.19695v1#A4.T13",
+    "split_type": "scene-disjoint",
+    "task_generation": "5–50 m reference paths; successful physics rollout, >5 and <=100 simulation seconds, >5 and <50 m travel, no failure termination",
+    "evaluation_timeout_seconds": 300,
+    "observations": "forward RGB-D 640×480, ground-truth robot base pose, camera calibration and robot size; no added depth noise; no IMU",
+    "discrete_translation_m": {
+      "indoor": 0.25,
+      "outdoor": 1.0,
+      "indoor_to_outdoor": 1.0
+    },
+    "metric_cautions": [
+      "Success distance subtracts goal size radius before applying 1.0+robot radius; Spot radius 0.6m.",
+      "Table 5 failures are conditional percentages among failed episodes.",
+      "Table 4 post-exit failure proportions condition on failed episodes reaching outdoors.",
+      "CR is trajectory collision incidence, not per-step count.",
+      "CE is distinct visited 1m grid cells per path meter."
+    ]
+  },
+  "release_audit": {
+    "github": {
+      "repository": "UMich-CURLY/NavVerse-Benchmark",
+      "url": "https://github.com/UMich-CURLY/NavVerse-Benchmark",
+      "head_commit": "8b89bfee4f6d55de6e8e767516313b8c8941098b",
+      "head_confirmed_via": "https://api.github.com/repos/UMich-CURLY/NavVerse-Benchmark/commits/main",
+      "commit_author_at": "2026-09-30T05:02:26Z",
+      "commit_committer_at": "2026-09-30T06:26:15Z",
+      "commit_subject": "Release NavVerse benchmark source",
+      "code_status": "Public source files for simulator, robot wrappers, controller, task/scene utilities and several baseline adapters are present.",
+      "code_license": "Apache-2.0; Isaac Lab-derived code BSD-3-Clause, TidyBot meshes MIT, other components separate",
+      "sources": [
+        "https://github.com/UMich-CURLY/NavVerse-Benchmark/blob/8b89bfee4f6d55de6e8e767516313b8c8941098b/README.md",
+        "https://github.com/UMich-CURLY/NavVerse-Benchmark/blob/8b89bfee4f6d55de6e8e767516313b8c8941098b/LICENSE",
+        "https://github.com/UMich-CURLY/NavVerse-Benchmark/blob/8b89bfee4f6d55de6e8e767516313b8c8941098b/licenses/THIRD_PARTY_NOTICES.md",
+        "https://github.com/UMich-CURLY/NavVerse-Benchmark/blob/8b89bfee4f6d55de6e8e767516313b8c8941098b/navverse/launcher/registry.py"
+      ],
+      "baseline_gaps": [
+        "SGImagineNav is not registered in current public AGENT_REGISTRY and no corresponding adapter was located in full public repository tree. Its separate official SGImagineNav repository exists for HM3D experiments, which is not evidence of a NavVerse adapter.",
+        "PoliFormer registration says it has not passed public clean-install and action-mapping checks.",
+        "UniNaVid README notes upstream package/version declarations prevent a clean pip check."
+      ],
+      "sgimaginenav_separate_repo": "https://github.com/UMich-CURLY/SGImagineNav"
+    },
+    "dataset": {
+      "repository": "tccoin/navverse-benchmark",
+      "revision": "df7e4cf2ebe630d313c9cb28d77cc74410e14784",
+      "revision_last_modified": "2026-08-16T10:08:28.000Z",
+      "private": false,
+      "gated": false,
+      "api_url": "https://huggingface.co/api/datasets/tccoin/navverse-benchmark",
+      "fixed_tree_url": "https://huggingface.co/datasets/tccoin/navverse-benchmark/tree/df7e4cf2ebe630d313c9cb28d77cc74410e14784",
+      "fixed_card_url": "https://huggingface.co/datasets/tccoin/navverse-benchmark/blob/df7e4cf2ebe630d313c9cb28d77cc74410e14784/README.md",
+      "current_runnable_archive": "navverse_v1_july23.tar.gz",
+      "archive_bytes": 281206626350,
+      "archive_expected_sha256": "902fcca6009f7a6c6099473dc5516adbdeaa32cd834950c912a9f340d427ce24",
+      "archive_integrity_verified_locally": false,
+      "checksum_downloaded": true,
+      "assets_listed": [
+        "current runnable scene tar.gz",
+        "prebuilt navmesh assets as specified in data card and downloader validation",
+        "per-scene episode JSON",
+        "versioned split text files",
+        "SFT parquet shards",
+        "raw meshes and older scene packages"
+      ],
+      "actual_sample_download": {
+        "file": "episodes/grCommercial/grCommercial_scene1.json",
+        "bytes": 251890,
+        "parsed_episode_count": 50,
+        "url": "https://huggingface.co/datasets/tccoin/navverse-benchmark/resolve/df7e4cf2ebe630d313c9cb28d77cc74410e14784/episodes/grCommercial/grCommercial_scene1.json"
+      },
+      "package_scene_inventory": {
+        "commercial_indoor": 30,
+        "outdoor": 52,
+        "indoor_to_outdoor": 52
+      },
+      "scene_inventory_evidence": [
+        "https://github.com/UMich-CURLY/NavVerse-Benchmark/blob/8b89bfee4f6d55de6e8e767516313b8c8941098b/scripts/download_navverse_data.py",
+        "https://huggingface.co/datasets/tccoin/navverse-benchmark/blob/df7e4cf2ebe630d313c9cb28d77cc74410e14784/README.md"
+      ],
+      "license_note": "Dataset card does not establish a single permissive license for all redistributed upstream assets; do not extend source Apache-2.0 to scenes and external software.",
+      "scope_limit": "File presence, sizes, API openness, one parsed episode sample and checksum verified; full archive extraction and completeness not tested."
+    },
+    "weights": {
+      "spot_locomotion": {
+        "path": "navverse/robots/spot/model_dec7.pt",
+        "bytes": 37917913,
+        "git_blob_sha": "66d57fa29e546e232b96c2c6f3016772c775063f",
+        "url": "https://github.com/UMich-CURLY/NavVerse-Benchmark/blob/8b89bfee4f6d55de6e8e767516313b8c8941098b/navverse/robots/spot/model_dec7.pt",
+        "status": "file exists in official public Git tree; not downloaded or loaded",
+        "license": "README explicitly distinguishes project-provided checkpoint from source-code license"
+      },
+      "uninavid": {
+        "repository": "Jzzhang/Uni-NaVid",
+        "revision": "0437222534b2a19abeb20710bfd53c44c5bf3dd4",
+        "status": "public, ungated API; two pytorch_model shards listed under uninavid-7b-full-224-video-fps-1-grid-2; not downloaded/loaded",
+        "source": "https://huggingface.co/api/models/Jzzhang/Uni-NaVid",
+        "bridge_docs": "https://github.com/UMich-CURLY/NavVerse-Benchmark/blob/8b89bfee4f6d55de6e8e767516313b8c8941098b/baselines/uninavid/README.md"
+      },
+      "longnav_r1": {
+        "repository": "Aasdfip/hm3d_rpp_ke_standard-checkpoint_231",
+        "revision": "de338927c8c96d1629ded0d042581776a960a465",
+        "status": "public, ungated API; adapter_config.json and adapter_model.safetensors present; base model also required; not downloaded/loaded",
+        "source": "https://huggingface.co/api/models/Aasdfip/hm3d_rpp_ke_standard-checkpoint_231",
+        "bridge_docs": "https://github.com/UMich-CURLY/NavVerse-Benchmark/blob/8b89bfee4f6d55de6e8e767516313b8c8941098b/baselines/longnav_r1/README.md",
+        "upstream_code_commit": "927b4a4c972e4cce5ea7c4c8cb0fd12a5ce4cbf0"
+      },
+      "poliformer": {
+        "status": "official bridge/setup script points to separate checkpoint download and expects baselines/submodules/poliformer/ckpt/text_nav/model.ckpt; checkpoint availability was not independently downloaded/verified",
+        "source": "https://github.com/UMich-CURLY/NavVerse-Benchmark/blob/8b89bfee4f6d55de6e8e767516313b8c8941098b/baselines/poliformer/poliformer_setup.sh"
+      },
+      "new_navverse_navigation_checkpoint": "not applicable: paper proposes a benchmark, not a new high-level navigation policy"
+    },
+    "paper_release_mismatch": {
+      "paper": "100 indoor/50 outdoor/50 hybrid scenes; 9,100 train/900 eval episodes",
+      "released_runnable_scene_package": "30 commercial indoor/52 outdoor/52 hybrid",
+      "released_manifest": {
+        "train_episodes": 6541,
+        "test_episodes": 1546,
+        "total_episodes": 8087,
+        "train_scenes": 103,
+        "test_scenes": 25,
+        "source_indoor_scenes": 24,
+        "source_outdoor_scenes": 52,
+        "source_hybrid_scenes": 52,
+        "other_subsets": [
+          450,
+          500
+        ]
+      },
+      "source": "https://github.com/UMich-CURLY/NavVerse-Benchmark/blob/8b89bfee4f6d55de6e8e767516313b8c8941098b/episodes/split_manifest.json",
+      "interpretation": "Current release manifest and runnable scene inventory do not directly match paper Table 13. Do not claim exact table reproduction from the default released split. Additional legacy/helper episodes exist but were not reconciled into the paper split."
+    }
+  },
+  "key_evidence": [
+    {
+      "claim": "UniNaVid leads overall task success but all baseline success rates are low",
+      "source": "https://arxiv.org/html/2607.19695v1#S4.T2",
+      "numbers": "ObjNav SR 11.62/SPL2.58; PlaceNav SR11.38/SPL3.30; VLN SR10.67/SPL3.21, all percent"
+    },
+    {
+      "claim": "SGImagineNav has lowest collision incidence",
+      "source": "https://arxiv.org/html/2607.19695v1#S4.T4.fig1",
+      "numbers": "CR0.21 ObjNav; CR0.05 PlaceNav"
+    },
+    {
+      "claim": "Exit finding and post-exit exploration are distinct bottlenecks",
+      "source": "https://arxiv.org/html/2607.19695v1#S4.T4.fig2",
+      "numbers": "UniNaVid mixed ObjNav not-reached-outdoor48.42%; SGImagineNav25.26%; UniNaVid PlaceNav CE1.26 pre-exit ->0.81 post-exit"
+    },
+    {
+      "claim": "PlaceNav outdoor-to-hybrid success drop",
+      "source": "https://arxiv.org/html/2607.19695v1#S4.T2",
+      "numbers": "UniNaVid17.65% ->3.64%, 14.01 percentage points; table13 denominator68 vs55; approximately12 vs2 successes"
+    },
+    {
+      "claim": "Oracle path execution depends on robot body and friction",
+      "source": "https://arxiv.org/pdf/2607.19695v1#page=8",
+      "numbers": "Table7 Spot SR100% at mu0.5/1.0, speed1.46/1.49m/s; Turtlebot SR30.75%/47.50%, speed0.36/0.58m/s"
+    },
+    {
+      "claim": "Known goal and known path separate navigation burdens",
+      "source": "https://arxiv.org/html/2607.19695v1#A5.T14",
+      "numbers": "SGImagineNav mixed PlaceNav NoGT3.64%, GTGoal20%, GTTrajectory100%"
+    }
+  ],
+  "unresolved": [
+    {
+      "issue": "Table14 GTGoal PlaceNav all-scenes aggregate denominator unclear",
+      "evidence": "Using Table13 domain counts, (48.53*68+20*55)/123 = 35.77268292682927%, not Table14 overall46.58%.",
+      "handling": "reading cites domain-level values and flags aggregate as unresolved, without inventing a corrected author result."
+    },
+    {
+      "issue": "Pure outdoor vs hybrid causality not isolated",
+      "evidence": "No length/category-matched intervention or confidence intervals reported in paper; action translation differs between indoor-only0.25m and hybrid1m."
+    },
+    {
+      "issue": "High-level VLA or LLM throughput not given",
+      "evidence": "A.7 rates cover simulation/rendering; A.3 covers low-level stack."
+    },
+    {
+      "issue": "Spot vs Turtlebot attribution",
+      "evidence": "Table7 diagnostic does not separately identify controller quality, body geometry and oracle-feasibility filtering effects."
+    }
+  ],
+  "related_papers": [
+    {
+      "name": "VLN-PE",
+      "arxiv_id": "2507.13019",
+      "url": "https://arxiv.org/abs/2507.13019v2",
+      "relation": "Earlier physically embodied indoor VLN evaluation; NavVerse extends connected domains and task/metric coverage."
+    },
+    {
+      "name": "Uni-NaVid",
+      "arxiv_id": "2412.06224",
+      "url": "https://arxiv.org/abs/2412.06224v2",
+      "relation": "Unified video VLA task interface used as strongest zero-shot baseline."
+    },
+    {
+      "name": "SGImagineNav",
+      "arxiv_id": "2508.06990",
+      "url": "https://arxiv.org/abs/2508.06990",
+      "relation": "Hierarchical imaginative scene graph modular baseline; lower collision and higher exit reach but weak search success."
+    }
+  ],
+  "deliverables": {
+    "reading": "reading.md",
+    "metadata": "source.json",
+    "han_character_count": 3628,
+    "main_han_character_count": 3014
+  }
+}

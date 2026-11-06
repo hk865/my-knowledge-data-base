@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "resource_id": "arxiv:2602.02459",
+  "arxiv_id": "2602.02459",
+  "title": "TIC-VLA: A Think-in-Control Vision-Language-Action Model for Robot Navigation in Dynamic Environments",
+  "resource_kind": "paper",
+  "authors": [
+    "Zhiyu Huang",
+    "Yun Zhang",
+    "Johnson Liu",
+    "Rui Song",
+    "Chen Tang",
+    "Jiaqi Ma"
+  ],
+  "equal_contribution_authors": [
+    "Zhiyu Huang",
+    "Yun Zhang"
+  ],
+  "year": 2026,
+  "official_url": "https://arxiv.org/abs/2602.02459",
+  "official_fulltext_url": "https://arxiv.org/pdf/2602.02459v2",
+  "official_html_url": "https://arxiv.org/html/2602.02459v2",
+  "official_project_url": "https://ucla-mobility.github.io/TIC-VLA/",
+  "read_version": "v2",
+  "version_status": "official_arxiv_v2_latest_checked",
+  "arxiv_submission_date": "2026-02-02",
+  "arxiv_version_date": "2026-05-29",
+  "publication_venue": "ICML 2026",
+  "publication_status": "conference_version_identified_in_official_arxiv_record_and_pdf",
+  "formal_proceedings_url": null,
+  "reading_depth": "full_text_reading_and_selected_source_audit",
+  "teaching_status": "technical_reading",
+  "content_kind": "reading",
+  "reading_path": "reading.md",
+  "canonical_folder": "robotics-embodied/papers/arxiv-2602.02459",
+  "reading_boundary": "已读官方v2完整24页PDF及HTML正文与附录A–E；核对项目页、固定提交源码、训练配置、85回合YAML及官方HF文件树与数据卡。未安装或运行仿真、未加载权重、未下载全量数据，未独立复现实验。",
+  "user_reading_status": "not_asserted",
+  "independently_reproduced": false,
+  "official_repository_url": "https://github.com/ucla-mobility/TIC-VLA",
+  "repository_read_commit": "9fa6f8b66b9e121d5df5df071297bba8e5353ebb",
+  "repository_commit_date": "2026-07-09T17:23:52Z",
+  "official_dataset_url": "https://huggingface.co/datasets/handsomeYun/TIC-VLA",
+  "dataset_read_revision": "671de608f39ccae41b66cbb24ab923c0275f8fb4",
+  "asset_release_status": {
+    "model_code": "public_source_read",
+    "supervised_training": "public_entrypoints_read",
+    "rl_fine_tuning": "public_entrypoints_and_docs_read",
+    "benchmark": "public_runner_and_85_episode_config_read",
+    "scene_assets": "local_USD_and_vehicle_assets_listed_and_selected_USD_downloaded; NVIDIA_remote_asset_dependencies_present",
+    "dataset": "six_public_zip_files_listed; not_downloaded",
+    "checkpoint": "TIC-VLA-model.ckpt_publicly_listed; not_loaded",
+    "checkpoint_bytes": 1938501547,
+    "no_github_releases_at_check": true
+  },
+  "platforms": {
+    "simulation_supported": [
+      "Nova Carter wheeled",
+      "Boston Dynamics Spot quadruped"
+    ],
+    "public_full_config": {
+      "episode_count": 85,
+      "robot_counts": {
+        "nova_carter": 85
+      },
+      "success_threshold_counts_m": {
+        "1.5": 75,
+        "4": 7,
+        "1": 2,
+        "2": 1
+      }
+    },
+    "real_world_evaluation": "Unitree Go2 quadruped"
+  },
+  "paper_code_differences": [
+    "论文附录A为三维动作增量并积分、Δθ运动偏移、六层动作头；当前公开模型直接预测二维相对航点、状态不含单独Δθ、默认三层。",
+    "论文附录D人距碰撞阈值0.5m；当前benchmark.py为0.2m，物理碰撞还要求至少10N连续100帧。",
+    "论文描述支持跨平台任务；当前公开85回合完整配置全部选择Nova Carter。",
+    "当前离线动作加载器用未来0.1s位姿差分构造当前速度，部署需要测得速度；分布影响待验证。"
+  ],
+  "license": {
+    "code": "UCLA Academic Software License",
+    "code_license_url": "https://github.com/ucla-mobility/TIC-VLA/blob/9fa6f8b66b9e121d5df5df071297bba8e5353ebb/LICENSE.md",
+    "code_restrictions": "academic/nonprofit educational or academic research use; onward transfer including derivatives prohibited; commercial licensing separately required",
+    "dataset_card_declared": "CC-BY-4.0",
+    "dataset_license_note": "数据卡声明不替代上游SCAND、GND及第三方场景资产许可核对。",
+    "paper_mirror_permission": "not_audited_no_mirror_deliverable"
+  },
+  "source_record_updated": "2026-11-06",
+  "repository_prior_status": "not_found_in_papers_json_index_json_or_robotics_embodied_recursive_content_search",
+  "verification_sources": [
+    "https://arxiv.org/abs/2602.02459",
+    "https://arxiv.org/pdf/2602.02459v2",
+    "https://ucla-mobility.github.io/TIC-VLA/",
+    "https://github.com/ucla-mobility/TIC-VLA/tree/9fa6f8b66b9e121d5df5df071297bba8e5353ebb",
+    "https://huggingface.co/datasets/handsomeYun/TIC-VLA/tree/671de608f39ccae41b66cbb24ab923c0275f8fb4"
+  ],
+  "paper_pdf_sha256": "60f904399be4c8cc530e2e14e89afca9c0d5b7acfd6cc86f22cac38c5d47b104",
+  "topic_paths": [
+    "robotics/navigation-planning",
+    "robotics/embodied-policies"
+  ],
+  "modality_tags": [
+    "image",
+    "text",
+    "action"
+  ],
+  "task_tags": [
+    "decision"
+  ],
+  "reading_status": "technical_reading_v1_unreproduced",
+  "evaluation_baselines": {
+    "point_goal_privileged_references": [
+      "BC",
+      "RL",
+      "NavDP"
+    ],
+    "language_guided": [
+      "Uni-NaVid",
+      "NaVILA",
+      "DualVLN",
+      "OmniVLA",
+      "MobileVLA-R1"
+    ],
+    "main_simulation_protocol": "85 episodes; one fixed random seed; L40S; 10 Hz action / approximately 0.5 Hz VLM; language baselines fine-tuned on same data",
+    "real_world_protocol": "four tasks, five trials each, Unitree Go2; RTX4060, OrinNX, A6000 compute variants"
+  }
+}
